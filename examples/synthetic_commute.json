@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "name": "synthetic_single_origin_commute",
+  "description": "Ten fictional workers assigned across workplace destinations and commute modes. All values are synthetic and uncalibrated.",
+  "data_classification": "synthetic",
+  "origin_id": "home_example",
+  "row_axis": "workplace_destination",
+  "column_axis": "usual_commute_mode",
+  "row_labels": ["work_near", "work_mid", "work_far"],
+  "column_labels": ["drive_alone", "carpool_2", "transit", "walk", "wfh"],
+  "row_sums": [4, 3, 3],
+  "column_sums": [4, 1, 2, 1, 2],
+  "lower_bounds": [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0]],
+  "upper_bounds": [[4, 1, 2, 1, 2], [3, 1, 2, 0, 2], [3, 1, 0, 0, 2]],
+  "activities": [[4, 2, 3, 4, 1], [4, 2, 3, 1, 2], [3, 2, 1, 1, 4]],
+  "target_law": "conditional_poisson",
+  "factorial_weight": true,
+  "comparison_law": "uniform_tables",
+  "feasible_table": [[1, 0, 1, 1, 1], [1, 1, 1, 0, 0], [2, 0, 0, 0, 1]],
+  "structural_zero_reasons": [
+    {"row": "work_mid", "column": "walk", "reason": "Walking excluded by synthetic model design."},
+    {"row": "work_far", "column": "walk", "reason": "Walking excluded by synthetic model design."},
+    {"row": "work_far", "column": "transit", "reason": "Transit excluded by synthetic model design."}
+  ],
+  "one_way_distance_miles": [2, 8, 15],
+  "commute_legs_per_workday": 2,
+  "workdays_per_year": 220,
+  "vehicle_per_worker_by_mode": [1, "1/2", 0, 0, 0],
+  "metric_name": "annual_household_attributed_commute_vehicle_miles",
+  "metric_unit": "vehicle_miles_per_year",
+  "metric_formula": "sum(X[row,mode] * one_way_distance_miles[row] * commute_legs_per_workday * workdays_per_year * vehicle_per_worker_by_mode[mode])",
+  "expected_reference": {
+    "method": "independent_exhaustive_enumeration",
+    "feasible_table_count": 42,
+    "conditional_poisson_normalizer": "582288",
+    "uniform_metric_mean": "18700",
+    "conditional_poisson_metric_mean": "196016150/12131",
+    "minimum_metric": "9460",
+    "maximum_metric": "25080"
+  },
+  "assumptions": [
+    "The cohort and exact margins are stipulated synthetic controls, not combined source observations.",
+    "Work-from-home entries retain a workplace association but contribute no workplace-commute mileage.",
+    "Two-person carpool mileage is attributed equally; the other rider may be outside this cohort.",
+    "Car and carpool use the same stipulated distance to each destination.",
+    "Transit, walking, and work from home contribute zero household automobile VMT; this is not a claim of zero transit emissions.",
+    "Workday counts, distances, bounds, and activities are illustrative and have no empirical calibration.",
+    "Commute VMT excludes non-work household travel.",
+    "The feasible table is a witness, not observed truth."
+  ]
+}
