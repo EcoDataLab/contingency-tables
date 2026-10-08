@@ -1,0 +1,296 @@
+{
+  "review_date": "2026-10-08",
+  "repository": "openai/math",
+  "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "files": [
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/algorithms.tex",
+      "blob_sha": "878d6bf097d032795e18c38b5c8755b981b9dd13",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/algorithms.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/dense.tex",
+      "blob_sha": "9716aa67ee344ffde0cccbe78f2a6440bdd520c8",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/dense.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/introduction.tex",
+      "blob_sha": "9825492b8833df461c6d7e6da3eafdae27210946",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/introduction.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/model-and-graph.tex",
+      "blob_sha": "9ee2e42b26900fc8eac9696c16a14a3c9bc28dcc",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/model-and-graph.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/signatures.tex",
+      "blob_sha": "4c2453c4774d835147994fca7b7ec38d4bd49770",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/signatures.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/transport.tex",
+      "blob_sha": "7150a8c3f67a549982461c776d327e93a595d3f5",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/transport.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/algorithm.tex",
+      "blob_sha": "31f912279fa1864d90fa24dae29ea2eb50cc9d5f",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/algorithm.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/evaluation.tex",
+      "blob_sha": "842540122e17df963786bb287f8db18d95b1a25e",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/evaluation.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/flows.tex",
+      "blob_sha": "3a412f9dc21b22fff4f9b4543d8e7596a5890788",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/flows.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/history.tex",
+      "blob_sha": "7c5ac3a212e12f5b7917e9c106adb43a1213405a",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/history.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/integer-signatures.tex",
+      "blob_sha": "e5ebb3416dfb04c9407c2f7986645f58d38d6dcc",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/integer-signatures.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/introduction.tex",
+      "blob_sha": "bfec0ddf288fa29053e052dc0ed6c6055ddd583d",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/introduction.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/scales.tex",
+      "blob_sha": "072019f3ae88e07e5c7351247512a61366e47dc1",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/scales.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/signatures.tex",
+      "blob_sha": "2186619797f79ab45a61daae9be69f51b4d1ae50",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/signatures.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/transport.tex",
+      "blob_sha": "6baed076ac7df8365e5901ca3a7118e763fdcf46",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/transport.tex"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperContextTransport.lean",
+      "blob_sha": "aa0878cf70d3262e9adeca70192ac31e9f6f0b7b",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperContextTransport.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperExposureVariance.lean",
+      "blob_sha": "301210ee17a827d316103fb1d3618f7a5d95ea10",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperExposureVariance.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperTransversalVariance.lean",
+      "blob_sha": "09518421efd6319e106e6b1b37314cd6df8d7c14",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperTransversalVariance.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperFullVariance.lean",
+      "blob_sha": "652fb8e5649e7d544803f9544bc62c21c8c2b81a",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperFullVariance.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperOuterBudget.lean",
+      "blob_sha": "5449a66bf8673bd3fbb168860665aea89f8e0bad",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperOuterBudget.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/ExactSamplingParameters.lean",
+      "blob_sha": "0a47883baf7dae9aa771f6fcf5bb9d6a5c15f444",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Sampling/ExactSamplingParameters.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/ExactExpectedTime.lean",
+      "blob_sha": "c32108113f58676a614321529c8771c8dce4827d",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Sampling/ExactExpectedTime.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallGraphProfiles.lean",
+      "blob_sha": "2b49d21000bf5e85ba449a38a3caca74e05ce123",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallGraphProfiles.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerRootTransport.lean",
+      "blob_sha": "7b6fc0793da871ec5c65993bcde9b6dd49cd561c",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerRootTransport.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerLeafEnergy.lean",
+      "blob_sha": "84e8b64c5c033d7c0e3c549f2f7a9095e927e2e6",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerLeafEnergy.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ContextChildVariance.lean",
+      "blob_sha": "35445d4268aac6ce86d2cb19dc36d5fd7ed89119",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Transport/ContextChildVariance.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperBinaryParameters.lean",
+      "blob_sha": "45c1c6e1d204bea773d5b768c8b43ce87c9f3301",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperBinaryParameters.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/AllSamplingMachine.lean",
+      "blob_sha": "993fa31b3a79687d406971b64614b7c5f0a88f74",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Sampling/AllSamplingMachine.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/ExactSamplingMachine.lean",
+      "blob_sha": "f36f9cd7577503ebc165c217ae8659dfc7f8812b",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Sampling/ExactSamplingMachine.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Counting/CountingMainMachine.lean",
+      "blob_sha": "fdee08cf606e335ea3d68698d171c041c59f2af0",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Counting/CountingMainMachine.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Dense/FiniteBoxPrekopa.lean",
+      "blob_sha": "b21e76b324edff9e7ef8260af9b7995d07e4e426",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Dense/FiniteBoxPrekopa.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Dense/FiniteCheegerProof.lean",
+      "blob_sha": "026833748838e7918740e23cbab37e21e8c09492",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Dense/FiniteCheegerProof.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/EdmondsKarpBound.lean",
+      "blob_sha": "c68c4c3bae2abeae5796094d93cb8dace5ccb15f",
+      "review_scope": "selected Lean source inspection; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Transport/EdmondsKarpBound.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean",
+      "blob_sha": "088d181b4e2cd032a8477807e460707c985cd1d9",
+      "review_scope": "theorem interface or verification instructions inspected; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/ComparatorChallenges/ContingencyTables.lean",
+      "blob_sha": "898c717347f72973521c92597d7aee9818eb13b4",
+      "review_scope": "theorem interface or verification instructions inspected; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/ContingencyTables.lean"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/ComparatorChallenges/ContingencyTables.json",
+      "blob_sha": "3679538ca2b993d66451e3f75dc18796c8570529",
+      "review_scope": "theorem interface or verification instructions inspected; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/ContingencyTables.json"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/docs/115.md",
+      "blob_sha": "1aa44edde15aa918b1f0773087ebfb3e98df810c",
+      "review_scope": "theorem interface or verification instructions inspected; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/115.md"
+    },
+    {
+      "repository": "openai/math",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+      "path": "lean/ComparatorChallenges/README.md",
+      "blob_sha": "8ce7be24bf62c66104be5f733d168301ead4e4f3",
+      "review_scope": "theorem interface or verification instructions inspected; not compiled",
+      "url": "https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/ComparatorChallenges/README.md"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+Contingency tables research
+Copyright 2026 EcoDataLab contributors
+
+This project builds on the OpenAI mathematics repository, specifically result
+#115 and its sampling and counting manuscripts, pinned at commit
+fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.
+Upstream: https://github.com/openai/math
+Upstream license: Apache License, Version 2.0.
+
+The 115/ directory preserves the initial GPT-6.1 Sol review and its finite
+audit artifacts, provided by Ben Gould on October 8, 2026. It contains
+research hypotheses, not a certificate of the complete upstream proof.
+Follow-up research and implementation use OpenAI Codex assistance.
+Classical dynamic programming, concentration inequalities, and cycle heat-bath
+moves are not claimed as newly invented by this project.
+
