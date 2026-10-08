@@ -3,3 +3,6 @@ import Math115.GlobalDisplayOwnership
 import Math115.WidthWeightedTransport
 import Math115.RepairCoefficient
 import Math115.UpstreamOwnershipBridge
+import Math115.SmallEntryTail
+import Math115.PaddedMarginBridge
+import Math115.PhysicalLeafEnergy

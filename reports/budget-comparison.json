@@ -106,6 +106,172 @@
     }
   },
   "inner_counting": {
+    "annealing_step_comparison": {
+      "1": {
+        "full_schedule_reused_at_this_step_bin_transitions": "6043093179238290988990464000000",
+        "indexed_schedule_bin_transitions": "2959611885157585571020800000",
+        "same_step_bin_transition_bound_reduction": {
+          "approx_display_only": 2041.8532610793743,
+          "exact_fraction": "21058414942040/10313383113"
+        },
+        "schedule": {
+          "allocation": "by_range",
+          "annealing_height": "100",
+          "annealing_step": "1",
+          "average_tail_bits": "24",
+          "bin_scale": "1000",
+          "concentration": "bernstein",
+          "concentration_denominator": "18238807/41698800",
+          "correction_lower_bound": "9/20",
+          "correction_samples": "66266315",
+          "correction_support_policy": "source_lipschitz",
+          "correction_upper_bound": "10/9",
+          "dimension": "19",
+          "draw_error_bits": "54",
+          "failure_probability": "1/1000000",
+          "inverse_gap_bound": "273302945792000000",
+          "log2_inverse_min_mass_bound": "191",
+          "ratio_concentration_denominator": "9017/36036",
+          "ratio_samples_per_average": "37909272",
+          "relative_accuracy": "1/1000",
+          "sigma": "1/3003",
+          "sigma_policy": "product",
+          "steps_per_bin_sample": "28409841215078400000",
+          "total_draw_bound": "1363235572"
+        }
+      },
+      "10": {
+        "full_schedule_reused_at_this_step_bin_transitions": "25832979588974330876264448000000",
+        "indexed_schedule_bin_transitions": "240626002436767241102950400000",
+        "same_step_bin_transition_bound_reduction": {
+          "approx_display_only": 107.35739000510901,
+          "exact_fraction": "135030584645670/1257767021341"
+        },
+        "schedule": {
+          "allocation": "by_range",
+          "annealing_height": "100",
+          "annealing_step": "10",
+          "average_tail_bits": "27",
+          "bin_scale": "1000",
+          "concentration": "bernstein",
+          "concentration_denominator": "18228607/41698800",
+          "correction_lower_bound": "9/20",
+          "correction_samples": "1192126593",
+          "correction_support_policy": "source_lipschitz",
+          "correction_upper_bound": "10/9",
+          "dimension": "19",
+          "draw_error_bits": "58",
+          "failure_probability": "1/1000000",
+          "inverse_gap_bound": "273302945792000000",
+          "log2_inverse_min_mass_bound": "200",
+          "ratio_concentration_denominator": "9011/36036",
+          "ratio_samples_per_average": "681912832",
+          "relative_accuracy": "1/1000",
+          "sigma": "1/12012",
+          "sigma_policy": "product",
+          "steps_per_bin_sample": "30035993742540800000",
+          "total_draw_bound": "30661660180"
+        }
+      },
+      "100": {
+        "full_schedule_reused_at_this_step_bin_transitions": "223731843686334729749004288000000",
+        "indexed_schedule_bin_transitions": "223731843686334729749004288000000",
+        "same_step_bin_transition_bound_reduction": {
+          "approx_display_only": 1.0,
+          "exact_fraction": "1"
+        },
+        "schedule": {
+          "allocation": "by_range",
+          "annealing_height": "100",
+          "annealing_step": "100",
+          "average_tail_bits": "30",
+          "bin_scale": "1000",
+          "concentration": "bernstein",
+          "concentration_denominator": "18225607/41698800",
+          "correction_lower_bound": "9/20",
+          "correction_samples": "95685523537",
+          "correction_support_policy": "source_lipschitz",
+          "correction_upper_bound": "10/9",
+          "dimension": "19",
+          "draw_error_bits": "66",
+          "failure_probability": "1/1000000",
+          "inverse_gap_bound": "273302945792000000",
+          "log2_inverse_min_mass_bound": "290",
+          "ratio_concentration_denominator": "153157/612612",
+          "ratio_samples_per_average": "54731726049",
+          "relative_accuracy": "1/1000",
+          "sigma": "1/102102",
+          "sigma_policy": "product",
+          "steps_per_bin_sample": "40175533031424000000",
+          "total_draw_bound": "7386883075640"
+        }
+      },
+      "50": {
+        "full_schedule_reused_at_this_step_bin_transitions": "113788030298912285930815488000000",
+        "indexed_schedule_bin_transitions": "24912786657077045944437964800000",
+        "same_step_bin_transition_bound_reduction": {
+          "approx_display_only": 4.5674549324889835,
+          "exact_fraction": "198259027819090/43406893061789"
+        },
+        "schedule": {
+          "allocation": "by_range",
+          "annealing_height": "100",
+          "annealing_step": "50",
+          "average_tail_bits": "29",
+          "bin_scale": "1000",
+          "concentration": "bernstein",
+          "concentration_denominator": "78979297/180694800",
+          "correction_lower_bound": "9/20",
+          "correction_samples": "24040222849",
+          "correction_support_policy": "source_lipschitz",
+          "correction_upper_bound": "10/9",
+          "dimension": "19",
+          "draw_error_bits": "64",
+          "failure_probability": "1/1000000",
+          "inverse_gap_bound": "273302945792000000",
+          "log2_inverse_min_mass_bound": "240",
+          "ratio_concentration_denominator": "39041/156156",
+          "ratio_samples_per_average": "13750963760",
+          "relative_accuracy": "1/1000",
+          "sigma": "1/52052",
+          "sigma_policy": "product",
+          "steps_per_bin_sample": "35010107355955200000",
+          "total_draw_bound": "1168352644980"
+        }
+      }
+    },
+    "correction_rounding_budgets": {
+      "product_sigma": {
+        "bisection_steps": "26",
+        "computed_correction_lower_bound": "102101/816816",
+        "computed_correction_upper_bound": "204206/51051",
+        "exponent_rounding_error_bound": "1/8388608",
+        "grid_denominator": "4194304",
+        "pointwise_relative_error_bound": "1/2097152",
+        "root_absolute_error_bound": "1/16777216",
+        "sigma": "1/102102"
+      },
+      "product_sigma_sharp_support": {
+        "bisection_steps": "26",
+        "computed_correction_lower_bound": "306303/680680",
+        "computed_correction_upper_bound": "510515/459459",
+        "exponent_rounding_error_bound": "1/8388608",
+        "grid_denominator": "4194304",
+        "pointwise_relative_error_bound": "1/2097152",
+        "root_absolute_error_bound": "1/16777216",
+        "sigma": "1/102102"
+      },
+      "source_sigma": {
+        "bisection_steps": "32",
+        "computed_correction_lower_bound": "5049999/40400000",
+        "computed_correction_upper_bound": "5050001/1262500",
+        "exponent_rounding_error_bound": "1/536870912",
+        "grid_denominator": "268435456",
+        "pointwise_relative_error_bound": "1/134217728",
+        "root_absolute_error_bound": "1/1073741824",
+        "sigma": "1/5050000"
+      }
+    },
     "extracted_inverse_gap_improvement_factor": {
       "approx_display_only": 95.367431640625,
       "exact_fraction": "390625/4096"
@@ -123,6 +289,46 @@
       "theta": "1/1000000",
       "xi": "1/1000"
     },
+    "previous_to_product_bin_transition_bound_ratio": {
+      "approx_display_only": 2584.092627218315,
+      "exact_fraction": "535761931737812500/207330776805219"
+    },
+    "previous_to_product_correction_sample_ratio": {
+      "approx_display_only": 2446.2932773305606,
+      "exact_fraction": "8041657699512500/3287282753067"
+    },
+    "previous_to_product_draw_bound_ratio": {
+      "approx_display_only": 2446.290949588837,
+      "exact_fraction": "725924889834375/296745115276"
+    },
+    "previous_to_product_ratio_sample_ratio": {
+      "approx_display_only": 2446.2629879447454,
+      "exact_fraction": "831603700000/339948609"
+    },
+    "previous_to_product_sigma_ratio": {
+      "approx_display_only": 49.460343577990635,
+      "exact_fraction": "2525000/51051"
+    },
+    "product_error_certificate": {
+      "factor_count_bound": "102",
+      "lower_product_bound": "1000/1001",
+      "requested_lower_bound": "999/1000",
+      "requested_upper_bound": "1001/1000",
+      "sum_of_factor_tolerances": "1/1001",
+      "upper_product_bound": "1001/1000"
+    },
+    "product_to_sharp_support_bin_transition_bound_ratio": {
+      "approx_display_only": 1.5955882723695056,
+      "exact_fraction": "621992330415657/389820068990590"
+    },
+    "product_to_sharp_support_correction_sample_ratio": {
+      "approx_display_only": 34.35506889185659,
+      "exact_fraction": "3287282753067/95685523537"
+    },
+    "product_to_sharp_support_draw_bound_ratio": {
+      "approx_display_only": 9.641255579244374,
+      "exact_fraction": "1780470691656/184672076891"
+    },
     "published": {
       "draw_bound": "5203020050000000000000000000000",
       "samples_per_average": "2575752500000000000000000000",
@@ -132,77 +338,146 @@
       "bernstein_by_range": {
         "allocation": "by_range",
         "annealing_height": "100",
+        "annealing_step": "100",
         "average_tail_bits": "30",
         "bin_scale": "1000",
         "concentration": "bernstein",
         "concentration_denominator": "909947123/60600000",
+        "correction_lower_bound": "1/8",
         "correction_samples": "8041657699512500",
+        "correction_support_policy": "published",
+        "correction_upper_bound": "4",
         "dimension": "19",
         "draw_error_bits": "81",
         "failure_probability": "1/1000000",
         "inverse_gap_bound": "273302945792000000",
+        "log2_inverse_min_mass_bound": "290",
         "ratio_concentration_denominator": "1893751/7575000",
         "ratio_samples_per_average": "133888195700000",
         "relative_accuracy": "1/1000",
         "sigma": "1/5050000",
+        "sigma_policy": "source",
         "steps_per_bin_sample": "43045213962240000000",
         "total_draw_bound": "174221973560250000"
       },
       "bernstein_common": {
         "allocation": "common",
         "annealing_height": "100",
+        "annealing_step": "100",
         "average_tail_bits": "30",
         "bin_scale": "1000",
         "concentration": "bernstein",
         "concentration_denominator": "909947123/60600000",
+        "correction_lower_bound": "1/8",
         "correction_samples": "8041657699512500",
+        "correction_support_policy": "published",
+        "correction_upper_bound": "4",
         "dimension": "19",
         "draw_error_bits": "83",
         "failure_probability": "1/1000000",
         "inverse_gap_bound": "273302945792000000",
+        "log2_inverse_min_mass_bound": "290",
         "ratio_concentration_denominator": "1893751/7575000",
         "ratio_samples_per_average": "8041657699512500",
         "relative_accuracy": "1/1000",
         "sigma": "1/5050000",
+        "sigma_policy": "source",
         "steps_per_bin_sample": "43427838086348800000",
         "total_draw_bound": "964998923941500000"
+      },
+      "bernstein_product_by_range": {
+        "allocation": "by_range",
+        "annealing_height": "100",
+        "annealing_step": "100",
+        "average_tail_bits": "30",
+        "bin_scale": "1000",
+        "concentration": "bernstein",
+        "concentration_denominator": "147182017/9801792",
+        "correction_lower_bound": "1/8",
+        "correction_samples": "3287282753067",
+        "correction_support_policy": "published",
+        "correction_upper_bound": "4",
+        "dimension": "19",
+        "draw_error_bits": "69",
+        "failure_probability": "1/1000000",
+        "inverse_gap_bound": "273302945792000000",
+        "log2_inverse_min_mass_bound": "290",
+        "ratio_concentration_denominator": "153157/612612",
+        "ratio_samples_per_average": "54731726049",
+        "relative_accuracy": "1/1000",
+        "sigma": "1/102102",
+        "sigma_policy": "product",
+        "steps_per_bin_sample": "40749469217587200000",
+        "total_draw_bound": "71218827666240"
+      },
+      "bernstein_product_sharp_support": {
+        "allocation": "by_range",
+        "annealing_height": "100",
+        "annealing_step": "100",
+        "average_tail_bits": "30",
+        "bin_scale": "1000",
+        "concentration": "bernstein",
+        "concentration_denominator": "18225607/41698800",
+        "correction_lower_bound": "9/20",
+        "correction_samples": "95685523537",
+        "correction_support_policy": "source_lipschitz",
+        "correction_upper_bound": "10/9",
+        "dimension": "19",
+        "draw_error_bits": "66",
+        "failure_probability": "1/1000000",
+        "inverse_gap_bound": "273302945792000000",
+        "log2_inverse_min_mass_bound": "290",
+        "ratio_concentration_denominator": "153157/612612",
+        "ratio_samples_per_average": "54731726049",
+        "relative_accuracy": "1/1000",
+        "sigma": "1/102102",
+        "sigma_policy": "product",
+        "steps_per_bin_sample": "40175533031424000000",
+        "total_draw_bound": "7386883075640"
       },
       "hoeffding_common": {
         "allocation": "common",
         "annealing_height": "100",
+        "annealing_step": "100",
         "average_tail_bits": "30",
         "bin_scale": "1000",
         "concentration": "hoeffding",
         "concentration_denominator": "961/2",
+        "correction_lower_bound": "1/8",
         "correction_samples": "257332976250000000",
+        "correction_support_policy": "published",
+        "correction_upper_bound": "4",
         "dimension": "19",
         "draw_error_bits": "88",
         "failure_probability": "1/1000000",
         "inverse_gap_bound": "273302945792000000",
+        "log2_inverse_min_mass_bound": "290",
         "ratio_concentration_denominator": "1/2",
         "ratio_samples_per_average": "257332976250000000",
         "relative_accuracy": "1/1000",
         "sigma": "1/5050000",
+        "sigma_policy": "source",
         "steps_per_bin_sample": "44384398396620800000",
         "total_draw_bound": "30879957150000000000"
       }
     },
     "review_to_refined_bin_transition_bound_ratio": {
-      "approx_display_only": 42911976.39699345,
-      "exact_fraction": "728415156250000000/16974635461"
+      "approx_display_only": 176932424967.2913,
+      "exact_fraction": "6897181010742187500000000/38982006899059"
     },
     "review_to_refined_correction_sample_ratio": {
-      "approx_display_only": 97.42230138040983,
-      "exact_fraction": "620544000000/6369629861"
+      "approx_display_only": 8187620.980064535,
+      "exact_fraction": "783436800000000000/95685523537"
     },
     "review_to_refined_draw_bound_ratio": {
-      "approx_display_only": 9083.48300538979,
-      "exact_fraction": "20891648000000/2299960047"
+      "approx_display_only": 214236819.48057482,
+      "exact_fraction": "39563558400000000000/184672076891"
     },
     "review_to_refined_ratio_sample_ratio": {
-      "approx_display_only": 5851.425481566931,
-      "exact_fraction": "77568000000/13256257"
-    }
+      "approx_display_only": 14314125.582273941,
+      "exact_fraction": "261145600000000000/18243908683"
+    },
+    "sharp_support_hypotheses": "Requires the original source bin populations N>=100*d*B, at most d free coordinates, and scaled penalty Lipschitz<=1/8; abstract d,B,H inputs alone do not certify these facts."
   },
   "outer_sampling": {
     "initial_review_existing_gap": {
@@ -292,5 +567,5 @@
     "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
     "upstream_repository": "https://github.com/openai/math"
   },
-  "schema_version": 1
+  "schema_version": 3
 }

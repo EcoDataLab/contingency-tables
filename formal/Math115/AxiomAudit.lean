@@ -13,3 +13,60 @@ import Math115
 #print axioms OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_widths
 #print axioms OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_widths
 #print axioms Math115.GlobalDisplayOwnership.edge_owner_unique_upstream
+
+-- Actual ordinary-table incidence, shifted fibers, tails, and expectation.
+#print axioms Math115.SmallEntrySwitching.all_donor_incidence_bound
+#print axioms Math115.SmallEntrySwitching.donor_capacity_sum_lower
+#print axioms Math115.SmallEntrySwitching.donor_capacity_sum_lower_of_margins
+#print axioms Math115.SmallEntrySwitching.all_donor_small_entry_count_refined
+#print axioms Math115.SmallEntrySwitching.all_donor_small_entry_count
+#print axioms Math115.SmallEntrySwitching.all_donor_small_entry_probability_refined
+#print axioms Math115.SmallEntrySwitching.all_donor_small_entry_probability
+#print axioms Math115.SmallEntryTail.shiftEquiv
+#print axioms Math115.SmallEntryTail.shiftPositiveEquiv
+#print axioms Math115.SmallEntryTail.survival_step
+#print axioms Math115.SmallEntryTail.survival_step_real
+#print axioms Math115.SmallEntryTail.small_card_add_survival
+#print axioms Math115.SmallEntryTail.all_donor_small_entry_count_strong
+#print axioms Math115.SmallEntryTail.all_donor_small_entry_probability_strong
+#print axioms Math115.SmallEntryTail.all_donor_survival_product_count
+#print axioms Math115.SmallEntryTail.all_donor_small_entry_probability_product
+#print axioms Math115.SmallEntryTail.survival_sum_le_entry_sum
+#print axioms Math115.SmallEntryTail.all_donor_entry_sum_lower
+#print axioms Math115.SmallEntryTail.all_donor_entry_mean_lower
+#print axioms Math115.SurvivalAlgebra.nat_lower_tail_linear_bound
+#print axioms Math115.SurvivalAlgebra.nat_survival_product_bound
+#print axioms Math115.SurvivalAlgebra.nat_mean_tail_sum_bound
+
+-- Scale arithmetic and the actual successful-unpadding count.
+#print axioms Math115.DenseScaleConditions.width_bounds
+#print axioms Math115.proposed_dense_scales
+#print axioms Math115.proposed_padding_scales
+#print axioms Math115.sharper_enlarged_margin_padding_scales
+#print axioms Math115.shape_aware_linear_tail_budget
+#print axioms Math115.shape_aware_linear_unpadding_error_le_half
+#print axioms Math115.PaddedMarginBridge.marked_incident_margins
+#print axioms Math115.PaddedMarginBridge.large_padding_good_card
+#print axioms Math115.PaddedMarginBridge.enlarged_bad_count
+#print axioms Math115.PaddedMarginBridge.sharper_padded_count_le_twice_original
+#print axioms Math115.PaddedMarginBridge.enlarged_bad_count_strong
+#print axioms Math115.PaddedMarginBridge.shape_aware_padded_count_le_twice_original
+
+-- Literal physical leaf energy, hard limits, and global adjacent contrasts.
+#print axioms Math115.PhysicalLeafEnergy.leafEnergySum_eq_physicalLeafEnergy
+#print axioms Math115.PhysicalLeafEnergy.physicalLeafEnergy_tendsto
+#print axioms Math115.PhysicalLeafEnergy.leafEnergySum_truncate_eq
+#print axioms Math115.PhysicalLeafEnergy.physicalLeafEdges_subset
+#print axioms Math115.PhysicalLeafEnergy.physicalLeafEdges_owner_unique
+#print axioms Math115.PhysicalLeafEnergy.owner_unique
+#print axioms Math115.PhysicalLeafEnergy.ownerEdges_pairwiseDisjoint
+#print axioms Math115.PhysicalLeafEnergy.sum_ownerEnergy_le_physicalEnergy
+#print axioms Math115.PhysicalLeafEnergy.sum_ownerEnergy_hardMarginal_le
+#print axioms Math115.PhysicalLeafEnergy.leafEnergySum_tendsto
+#print axioms Math115.PhysicalLeafEnergy.integer_root_leaf_transport_quarter_limit
+#print axioms Math115.PhysicalLeafEnergy.integer_box_root_leaf_transport_quarter_limit
+#print axioms Math115.PhysicalLeafEnergy.context_box_leaf_transport_quarter
+#print axioms Math115.PhysicalLeafEnergy.repaired_root_transport_quarter
+#print axioms Math115.PhysicalLeafEnergy.adjacent_physical_leaf_transport_quarter
+#print axioms Math115.PhysicalLeafEnergy.ownerContrast_le_ownerEnergy
+#print axioms Math115.PhysicalLeafEnergy.sum_ownerContrast_le_physicalEnergy

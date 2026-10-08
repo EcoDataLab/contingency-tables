@@ -58,6 +58,14 @@ $$
 
 The same law follows from independent Poisson cell counts conditioned on the controls. The factorials count the different labeled assignments leading to the same aggregate matrix. Dropping them changes the law. For the uncapped `2 × 2` problem with both margins `(2,2)` and every activity equal to one, the three feasible tables have uniform probabilities `(1/3,1/3,1/3)` but conditional-Poisson probabilities `(1/6,2/3,1/6)` in order of the top-left entry `0,1,2`.
 
+**A rare-category example.** Let both margin vectors be `(a,M)`, with `M≥a≥1`. Every ordinary feasible table has the form
+
+$$
+\begin{pmatrix}x&a-x\\a-x&M-a+x\end{pmatrix},\qquad x=0,\ldots,a.
+$$
+
+Uniform aggregate tables give `E[x]=a/2`, independently of `M`. This attains the [sharp ordinary-table mean bound](small-entry-formalization.md). Under ordinary independent-worker allocation, `E[x]=a²/(a+M)`, which tends to zero as `M` increases. For the synthetic choice `a=10,M=990`, those means are **5** and **0.1**, despite identical controls and support. This is an exact model comparison, not evidence that either law describes a particular workforce. Better uniform-table sampling cannot decide the appropriate behavioral or uncertainty model by itself.
+
 A gravity-style choice `a[d,m] = exp(-beta[m] * travel_time[d,m])` is one possible model, with behavior and route assumptions requiring empirical support. Work-from-home activity needs its own model. Missing route data is a missing predictor, not a reason to assign zero probability.
 
 **Row and column scaling invariance.** For either the product-activity law or the factorial law, replacing `a[d,m]` by `u[d] * a[d,m] * v[m]` multiplies every feasible table's unnormalized weight by the same number,
@@ -123,6 +131,12 @@ Transit, walking, and cycling contribute zero to **household automobile VMT**, b
 **Commute VMT is one component of household travel.** It must not replace total household VMT, which also includes shopping, personal services, leisure, and other travel. Likewise, a change in modeled commute allocation is not automatically a causal effect of a housing or transportation policy. Resident-attributed and workplace-attributed summaries are alternative allocations of the same flows and should not be added together.
 
 For any linear metric `g(X) = sum(q[i,j] * X[i,j])`, exact cell expectations give the mean, but the metric variance requires cell covariances or direct ensemble evaluation. Preserve complete table draws: resampling cells independently destroys their shared constraints and covariance. In general, nonlinear footprint calculations satisfy `E[f(X)] != f(E[X])`. Preserve paired control/factor draws when estimating differences between scenarios.
+
+The reference tools now support three distinct questions:
+
+- For the range permitted by reconciled controls and hard bounds, use [certified linear optimization](linear-bounds.md); no allocation law is needed.
+- For linear means and variances under ordinary conditional-worker independence, use [exact full-covariance moments](worker-baseline.md); neither sampling nor table enumeration is needed.
+- For bounded, structurally constrained or interaction-weighted laws, use the exact small-fiber benchmark and [certified finite cycle comparisons](cycle-mixtures.md) to evaluate the chosen algorithm. The ordinary worker formula does not apply unchanged.
 
 ## 6. Public synthetic benchmark
 

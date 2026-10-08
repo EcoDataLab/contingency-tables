@@ -18,7 +18,7 @@
   "source_sha256": {
     "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019",
     "src/contingency115/kernels.py": "6931734601d48bcbff0b2261932f212f4201a910078c08c03a1b213f7cf12187",
-    "src/contingency115/optimize.py": "4ee72acb00cb83d0b45867cfd13130121dea3fb56099d4c13903bf5c4d31f9c9",
+    "src/contingency115/optimize.py": "db0690c995a4719adb23dd26a12da6d0243c8aa5e065e22f5410ad7ce8060107",
     "experiments/independent_crosscheck.py": "d7eb189cbe45e4907251e035f161a326128cb74975ac52cb672a6546521a77ae"
   }
 }

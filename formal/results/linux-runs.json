@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "observed_utc": "2026-10-08T21:43:24.964273+00:00",
+  "repository": "https://github.com/EcoDataLab/contingency-tables",
+  "workflow": ".github/workflows/formal-linux.yml",
+  "checked_repository_commit": "5e5d6ef9aa36f7e2a744f3fb8605448529f8be66",
+  "all_runs_finished": false,
+  "scope_boundary": "These runs concern only their recorded repository commit; later local or unpublished Lean additions are not covered. Focused/full are compiler and axiom-audit checks, not secure Comparator replay.",
+  "runs": [
+    {
+      "id": 37847572556,
+      "head_sha": "5e5d6ef9aa36f7e2a744f3fb8605448529f8be66",
+      "head_branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-08T21:33:04Z",
+      "run_started_at": "2026-10-08T21:33:04Z",
+      "updated_at": "2026-10-08T21:40:53Z",
+      "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847572556",
+      "run_attempt": 1,
+      "scope": "focused",
+      "api_source": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/runs/37847572556",
+      "jobs": [
+        {
+          "id": 113552176365,
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-08T21:33:08Z",
+          "completed_at": "2026-10-08T21:40:52Z",
+          "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847572556/job/113552176365",
+          "runner_name": "GitHub Actions 1000000093",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1,
+              "started_at": "2026-10-08T21:33:09Z",
+              "completed_at": "2026-10-08T21:33:09Z"
+            },
+            {
+              "name": "Check out the selected commit without retained credentials",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2,
+              "started_at": "2026-10-08T21:33:09Z",
+              "completed_at": "2026-10-08T21:33:10Z"
+            },
+            {
+              "name": "Record the fresh environment and exact source inputs",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3,
+              "started_at": "2026-10-08T21:33:10Z",
+              "completed_at": "2026-10-08T21:33:10Z"
+            },
+            {
+              "name": "Require the actual strict Linux sandbox before downloading proof dependencies",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 4,
+              "started_at": "2026-10-08T21:33:10Z",
+              "completed_at": "2026-10-08T21:33:10Z"
+            },
+            {
+              "name": "Install the pinned Lean toolchain and trusted Mathlib cache locally",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5,
+              "started_at": "2026-10-08T21:33:10Z",
+              "completed_at": "2026-10-08T21:35:05Z"
+            },
+            {
+              "name": "Build the pinned Comparator, exporter, and strict Landrun adapter",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 6,
+              "started_at": "2026-10-08T21:35:05Z",
+              "completed_at": "2026-10-08T21:35:05Z"
+            },
+            {
+              "name": "Run the selected verification scope",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7,
+              "started_at": "2026-10-08T21:35:05Z",
+              "completed_at": "2026-10-08T21:40:49Z"
+            },
+            {
+              "name": "Record the outcome without upgrading the verification claim",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8,
+              "started_at": "2026-10-08T21:40:49Z",
+              "completed_at": "2026-10-08T21:40:49Z"
+            },
+            {
+              "name": "Preserve logs and provenance even when a check fails",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9,
+              "started_at": "2026-10-08T21:40:49Z",
+              "completed_at": "2026-10-08T21:40:50Z"
+            },
+            {
+              "name": "Post Check out the selected commit without retained credentials",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 18,
+              "started_at": "2026-10-08T21:40:50Z",
+              "completed_at": "2026-10-08T21:40:51Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 19,
+              "started_at": "2026-10-08T21:40:51Z",
+              "completed_at": "2026-10-08T21:40:51Z"
+            }
+          ]
+        }
+      ],
+      "artifacts": [
+        {
+          "id": 11580398642,
+          "name": "math115-linux-focused-37847572556-1",
+          "digest": "sha256:7fe55d83b37c913fb5d58ebff2a65514cfd74774fd9b851c8ea8e92075f1f61e",
+          "size_in_bytes": 6277,
+          "created_at": "2026-10-08T21:40:50Z",
+          "expires_at": "2026-11-07T21:40:50Z",
+          "expired": false,
+          "archive_download_url": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/artifacts/11580398642/zip"
+        }
+      ]
+    },
+    {
+      "id": 37847722684,
+      "head_sha": "5e5d6ef9aa36f7e2a744f3fb8605448529f8be66",
+      "head_branch": "main",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-08T21:34:22Z",
+      "run_started_at": "2026-10-08T21:34:22Z",
+      "updated_at": "2026-10-08T21:34:35Z",
+      "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684",
+      "run_attempt": 1,
+      "scope": "comparator",
+      "api_source": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/runs/37847722684",
+      "jobs": [
+        {
+          "id": 113552675743,
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "failure",
+          "started_at": "2026-10-08T21:34:27Z",
+          "completed_at": "2026-10-08T21:34:35Z",
+          "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684/job/113552675743",
+          "runner_name": "GitHub Actions 1000000094",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1,
+              "started_at": "2026-10-08T21:34:28Z",
+              "completed_at": "2026-10-08T21:34:29Z"
+            },
+            {
+              "name": "Check out the selected commit without retained credentials",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2,
+              "started_at": "2026-10-08T21:34:29Z",
+              "completed_at": "2026-10-08T21:34:29Z"
+            },
+            {
+              "name": "Record the fresh environment and exact source inputs",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3,
+              "started_at": "2026-10-08T21:34:29Z",
+              "completed_at": "2026-10-08T21:34:30Z"
+            },
+            {
+              "name": "Require the actual strict Linux sandbox before downloading proof dependencies",
+              "status": "completed",
+              "conclusion": "failure",
+              "number": 4,
+              "started_at": "2026-10-08T21:34:30Z",
+              "completed_at": "2026-10-08T21:34:30Z"
+            },
+            {
+              "name": "Install the pinned Lean toolchain and trusted Mathlib cache locally",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 5,
+              "started_at": "2026-10-08T21:34:30Z",
+              "completed_at": "2026-10-08T21:34:30Z"
+            },
+            {
+              "name": "Build the pinned Comparator, exporter, and strict Landrun adapter",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 6,
+              "started_at": "2026-10-08T21:34:30Z",
+              "completed_at": "2026-10-08T21:34:30Z"
+            },
+            {
+              "name": "Run the selected verification scope",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 7,
+              "started_at": "2026-10-08T21:34:30Z",
+              "completed_at": "2026-10-08T21:34:30Z"
+            },
+            {
+              "name": "Record the outcome without upgrading the verification claim",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8,
+              "started_at": "2026-10-08T21:34:30Z",
+              "completed_at": "2026-10-08T21:34:30Z"
+            },
+            {
+              "name": "Preserve logs and provenance even when a check fails",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9,
+              "started_at": "2026-10-08T21:34:30Z",
+              "completed_at": "2026-10-08T21:34:31Z"
+            },
+            {
+              "name": "Post Check out the selected commit without retained credentials",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 18,
+              "started_at": "2026-10-08T21:34:31Z",
+              "completed_at": "2026-10-08T21:34:31Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 19,
+              "started_at": "2026-10-08T21:34:31Z",
+              "completed_at": "2026-10-08T21:34:31Z"
+            }
+          ]
+        }
+      ],
+      "artifacts": [
+        {
+          "id": 11580441426,
+          "name": "math115-linux-comparator-37847722684-1",
+          "digest": "sha256:154ca7973e6517b6bcf4ebcb14b31d764b1ae6a4c26766c859e8a3b6187b2e4e",
+          "size_in_bytes": 1831,
+          "created_at": "2026-10-08T21:34:31Z",
+          "expires_at": "2026-11-07T21:34:30Z",
+          "expired": false,
+          "archive_download_url": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/artifacts/11580441426/zip"
+        }
+      ],
+      "preflight_failure": {
+        "measured_landlock_abi": 7,
+        "required_minimum_abi": 9,
+        "exact_log_message": "Strict pinned Landrun needs Landlock ABI >= 9; found 7, errno=0. No best-effort fallback.",
+        "log_provenance": "Authenticated GitHub job-step text read in the browser by the parent agent; run/job status and artifact metadata independently verified through the public API.",
+        "job_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684/job/113552675743",
+        "interpretation": "Sandbox prerequisite unavailable; no Lean dependency download, proof compilation, or Comparator replay ran."
+      }
+    },
+    {
+      "id": 37847944509,
+      "scope": "full",
+      "head_sha": "5e5d6ef9aa36f7e2a744f3fb8605448529f8be66",
+      "status": "in_progress",
+      "conclusion": null,
+      "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509",
+      "api_source": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/runs/37847944509/jobs",
+      "last_observed_stage": "Run the selected verification scope",
+      "stage_observed_utc": "2026-10-08T21:42:19.493678+00:00"
+    }
+  ],
+  "focused_axiom_audit": {
+    "source_url": "https://raw.githubusercontent.com/EcoDataLab/contingency-tables/5e5d6ef9aa36f7e2a744f3fb8605448529f8be66/formal/Math115/AxiomAudit.lean",
+    "source_sha256": "d794453c2b8513778fbafb0a554dc41e048a2bb00298fd8dbc43d6a86943c721",
+    "declarations": [
+      "OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy",
+      "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport",
+      "OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quadratic",
+      "OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quarter",
+      "OAI.ContingencyTables.IntegerWeightedTransport.correctionKernel_upper_quarter",
+      "OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_quarter",
+      "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_quarter",
+      "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport_quarter",
+      "OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_widths",
+      "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_widths",
+      "Math115.GlobalDisplayOwnership.edge_owner_unique_upstream"
+    ]
+  }
+}

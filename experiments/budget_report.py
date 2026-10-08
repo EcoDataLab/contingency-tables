@@ -15,7 +15,7 @@ from math import log10
 from pathlib import Path
 
 from contingency115.budgets import (
-    ceil_fraction, ceil_log2, counting_bin_gap_bound, dense_schedule,
+    ceil_fraction, ceil_log2, correction_rounding_budget, counting_bin_gap_bound, dense_schedule,
     dyadic_denominator_budget, exact_correction_schedule, inner_counting_schedule,
     outer_schedule, sampling_dense_gap_bound, sampling_small_gap_bound,
     table_count_upper_bound,
@@ -86,14 +86,22 @@ def report() -> dict:
     review_q = (inner_d+1)*(height+1)*review_n
     review_steps = old_inner_gap*(height+inner_d*inner_b+ceil_log2(8*review_q/theta))
     improved_inner = {
-        "hoeffding_common": inner_counting_schedule(inner_d, inner_b, height, xi, theta, concentration="hoeffding", allocation="common"),
-        "bernstein_common": inner_counting_schedule(inner_d, inner_b, height, xi, theta, allocation="common"),
-        "bernstein_by_range": inner_counting_schedule(inner_d, inner_b, height, xi, theta),
+        "hoeffding_common": inner_counting_schedule(inner_d, inner_b, height, xi, theta, concentration="hoeffding", allocation="common", sigma_policy="source", correction_support="published"),
+        "bernstein_common": inner_counting_schedule(inner_d, inner_b, height, xi, theta, allocation="common", sigma_policy="source", correction_support="published"),
+        "bernstein_by_range": inner_counting_schedule(inner_d, inner_b, height, xi, theta, sigma_policy="source", correction_support="published"),
+        "bernstein_product_by_range": inner_counting_schedule(inner_d, inner_b, height, xi, theta, sigma_policy="product", correction_support="published"),
+        "bernstein_product_sharp_support": inner_counting_schedule(inner_d, inner_b, height, xi, theta),
     }
-    best = improved_inner["bernstein_by_range"]
+    previous = improved_inner["bernstein_by_range"]
+    product_policy = improved_inner["bernstein_product_by_range"]
+    best = improved_inner["bernstein_product_sharp_support"]
+    indexed_schedules = {
+        step: inner_counting_schedule(inner_d, inner_b, height, xi, theta, annealing_step=step)
+        for step in (1, 10, 50, 100)
+    }
 
     return {
-        "schema_version": 1,
+        "schema_version": 3,
         "provenance": {
             "upstream_repository": "https://github.com/openai/math",
             "upstream_commit": UPSTREAM_COMMIT,
@@ -148,6 +156,37 @@ def report() -> dict:
             "published": exact_record({"samples_per_average": old_n, "draw_bound": old_q, "steps_per_bin_sample": old_steps}),
             "initial_review": exact_record({"samples_per_average": review_n, "draw_bound": review_q, "steps_per_bin_sample": review_steps}),
             "refinements": {name: exact_record(asdict(schedule)) for name, schedule in improved_inner.items()},
+            "correction_rounding_budgets": {
+                "source_sigma": exact_record(asdict(correction_rounding_budget(previous.sigma))),
+                "product_sigma": exact_record(asdict(correction_rounding_budget(product_policy.sigma))),
+                "product_sigma_sharp_support": exact_record(asdict(correction_rounding_budget(best.sigma, correction_bounds=(best.correction_lower_bound, best.correction_upper_bound)))),
+            },
+            "sharp_support_hypotheses": "Requires the original source bin populations N>=100*d*B, at most d free coordinates, and scaled penalty Lipschitz<=1/8; abstract d,B,H inputs alone do not certify these facts.",
+            "product_error_certificate": exact_record({
+                "factor_count_bound": height+2,
+                "sum_of_factor_tolerances": (height+2)*best.sigma,
+                "lower_product_bound": 1-(height+2)*best.sigma,
+                "upper_product_bound": 1/(1-(height+2)*best.sigma),
+                "requested_lower_bound": 1-xi,
+                "requested_upper_bound": 1+xi,
+            }),
+            "previous_to_product_sigma_ratio": ratio(product_policy.sigma.numerator*previous.sigma.denominator, product_policy.sigma.denominator*previous.sigma.numerator),
+            "previous_to_product_correction_sample_ratio": ratio(previous.correction_samples, product_policy.correction_samples),
+            "previous_to_product_ratio_sample_ratio": ratio(previous.ratio_samples_per_average, product_policy.ratio_samples_per_average),
+            "previous_to_product_draw_bound_ratio": ratio(previous.total_draw_bound, product_policy.total_draw_bound),
+            "previous_to_product_bin_transition_bound_ratio": ratio((height*previous.ratio_samples_per_average+previous.correction_samples)*previous.steps_per_bin_sample, (height*product_policy.ratio_samples_per_average+product_policy.correction_samples)*product_policy.steps_per_bin_sample),
+            "product_to_sharp_support_correction_sample_ratio": ratio(product_policy.correction_samples, best.correction_samples),
+            "product_to_sharp_support_draw_bound_ratio": ratio(product_policy.total_draw_bound, best.total_draw_bound),
+            "product_to_sharp_support_bin_transition_bound_ratio": ratio((height*product_policy.ratio_samples_per_average+product_policy.correction_samples)*product_policy.steps_per_bin_sample, (height*best.ratio_samples_per_average+best.correction_samples)*best.steps_per_bin_sample),
+            "annealing_step_comparison": {
+                str(step): {
+                    "schedule": exact_record(asdict(schedule)),
+                    "full_schedule_reused_at_this_step_bin_transitions": str((step*best.ratio_samples_per_average+best.correction_samples)*best.steps_per_bin_sample),
+                    "indexed_schedule_bin_transitions": str((step*schedule.ratio_samples_per_average+schedule.correction_samples)*schedule.steps_per_bin_sample),
+                    "same_step_bin_transition_bound_reduction": ratio((step*best.ratio_samples_per_average+best.correction_samples)*best.steps_per_bin_sample, (step*schedule.ratio_samples_per_average+schedule.correction_samples)*schedule.steps_per_bin_sample),
+                }
+                for step, schedule in indexed_schedules.items()
+            },
             "review_to_refined_correction_sample_ratio": ratio(review_n, best.correction_samples),
             "review_to_refined_ratio_sample_ratio": ratio(review_n, best.ratio_samples_per_average),
             "review_to_refined_draw_bound_ratio": ratio(review_q, best.total_draw_bound),

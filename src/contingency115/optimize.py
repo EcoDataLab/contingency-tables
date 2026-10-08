@@ -12,6 +12,7 @@ from __future__ import annotations
 from collections import deque
 from dataclasses import dataclass
 from fractions import Fraction
+from math import lcm
 from typing import Sequence
 
 from .tables import ComputationBudgetExceeded, InfeasibleTableError, Table, TableProblem
@@ -188,16 +189,16 @@ class _Arc:
     to: int
     reverse: int
     capacity: int
-    cost: Fraction
+    cost: int
 
 
-def _distances(graph: list[list[_Arc]], source: int | None, budget: _WorkBudget) -> list[Fraction | None]:
+def _distances(graph: list[list[_Arc]], source: int | None, budget: _WorkBudget) -> list[int | None]:
     # source=None is a zero-cost supersource to every node. Its distances are
     # feasible potentials exactly when the residual network has no negative cycle.
     size = len(graph)
-    distances: list[Fraction | None] = ([Fraction(0)] * size if source is None else [None] * size)
+    distances: list[int | None] = ([0] * size if source is None else [None] * size)
     if source is not None:
-        distances[source] = Fraction(0)
+        distances[source] = 0
     for _ in range(size):
         changed = False
         for u, arcs in enumerate(graph):
@@ -220,8 +221,15 @@ def _optimize(problem: TableProblem, costs: Costs, maximize: bool, budget: _Work
     m, n = problem.shape
     source, sink = m + n, m + n + 1
     graph: list[list[_Arc]] = [[] for _ in range(sink + 1)]
+    # Multiplication by this positive common denominator preserves all path
+    # comparisons, ties, and optima. Integer path arithmetic avoids repeated
+    # Fraction normalization; returned potentials are divided back exactly.
+    denominator = 1
+    for row in costs:
+        for value in row:
+            denominator = lcm(denominator, value.denominator)
 
-    def edge(u: int, v: int, capacity: int, cost: Fraction) -> _Arc:
+    def edge(u: int, v: int, capacity: int, cost: int) -> _Arc:
         forward = _Arc(v, len(graph[v]), capacity, cost)
         backward = _Arc(u, len(graph[u]), 0, -cost)
         graph[u].append(forward)
@@ -230,17 +238,18 @@ def _optimize(problem: TableProblem, costs: Costs, maximize: bool, budget: _Work
 
     for i, amount in enumerate(rows):
         if amount:
-            edge(source, i, amount, Fraction(0))
+            edge(source, i, amount, 0)
     for j, amount in enumerate(columns):
         if amount:
-            edge(m + j, sink, amount, Fraction(0))
+            edge(m + j, sink, amount, 0)
     sign = -1 if maximize else 1
     cells: list[tuple[int, int, _Arc]] = []
     for i in range(m):
         for j in range(n):
             capacity = problem.upper_bounds[i][j] - problem.lower_bounds[i][j]
             if capacity:
-                cells.append((i, j, edge(i, m + j, capacity, sign * costs[i][j])))
+                integer_cost = costs[i][j].numerator * (denominator // costs[i][j].denominator)
+                cells.append((i, j, edge(i, m + j, capacity, sign * integer_cost)))
 
     required, flow, augmentations = sum(rows), 0, 0
     while flow < required:
@@ -291,8 +300,8 @@ def _optimize(problem: TableProblem, costs: Costs, maximize: bool, budget: _Work
     assert all(p is not None for p in potentials)
     certificate = LinearCertificate(
         maximize,
-        tuple(Fraction(potentials[i]) for i in range(m)),
-        tuple(Fraction(potentials[m + j]) for j in range(n)),
+        tuple(Fraction(potentials[i], denominator) for i in range(m)),
+        tuple(Fraction(potentials[m + j], denominator) for j in range(n)),
         sum((costs[i][j] * table[i][j] for i in range(m) for j in range(n)), Fraction(0)),
     )
     if not verify_optimality(problem, costs, table, certificate):

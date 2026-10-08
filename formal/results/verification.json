@@ -1,5 +1,7 @@
 {
   "recorded_date": "2026-10-08",
+  "checkpoint": 2,
+  "prior_checkpoint_commit": "25b857bcdd641523c8ebb0d943c06e45013e2b06",
   "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "lean_toolchain": "leanprover/lean4:v4.34.1",
   "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
@@ -7,10 +9,12 @@
   "upstream_tracked_source_clean": true,
   "focused_manifest_entries_match_upstream": true,
   "focused_manifest_entry_count": 9,
-  "upstream_focused_baseline": {
+  "focused_dependency_closure": {
     "status": "passed",
-    "original_module_count": 25,
-    "log": "formal/results/upstream-focused-baseline.log"
+    "original_module_count": 86,
+    "entry_module": "Math115",
+    "provenance": "formal/results/provenance.json",
+    "log": "formal/results/focused.log"
   },
   "checks": {
     "standalone": {
@@ -68,7 +72,7 @@
     },
     "focused": {
       "status": "passed",
-      "completed_at_utc": "2026-10-08T19:06:26Z",
+      "completed_at_utc": "2026-10-08T21:52:20Z",
       "log": "formal/results/focused.log",
       "audited_declarations": [
         {
@@ -157,40 +161,462 @@
             "propext",
             "Quot.sound"
           ]
+        },
+        {
+          "name": "Math115.SmallEntrySwitching.all_donor_incidence_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntrySwitching.donor_capacity_sum_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntrySwitching.donor_capacity_sum_lower_of_margins",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntrySwitching.all_donor_small_entry_count_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntrySwitching.all_donor_small_entry_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntrySwitching.all_donor_small_entry_probability_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntrySwitching.all_donor_small_entry_probability",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.shiftEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.shiftPositiveEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.survival_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.survival_step_real",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.small_card_add_survival",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.all_donor_small_entry_count_strong",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.all_donor_small_entry_probability_strong",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.all_donor_survival_product_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.all_donor_small_entry_probability_product",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.survival_sum_le_entry_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.all_donor_entry_sum_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallEntryTail.all_donor_entry_mean_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SurvivalAlgebra.nat_lower_tail_linear_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SurvivalAlgebra.nat_survival_product_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SurvivalAlgebra.nat_mean_tail_sum_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseScaleConditions.width_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.proposed_dense_scales",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.proposed_padding_scales",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.sharper_enlarged_margin_padding_scales",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.shape_aware_linear_tail_budget",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.shape_aware_linear_unpadding_error_le_half",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddedMarginBridge.marked_incident_margins",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddedMarginBridge.large_padding_good_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddedMarginBridge.enlarged_bad_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddedMarginBridge.sharper_padded_count_le_twice_original",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddedMarginBridge.enlarged_bad_count_strong",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddedMarginBridge.shape_aware_padded_count_le_twice_original",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.leafEnergySum_eq_physicalLeafEnergy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.physicalLeafEnergy_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.leafEnergySum_truncate_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.physicalLeafEdges_subset",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.physicalLeafEdges_owner_unique",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.owner_unique",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.ownerEdges_pairwiseDisjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.sum_ownerEnergy_le_physicalEnergy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.sum_ownerEnergy_hardMarginal_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.leafEnergySum_tendsto",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.integer_root_leaf_transport_quarter_limit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.integer_box_root_leaf_transport_quarter_limit",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.context_box_leaf_transport_quarter",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.repaired_root_transport_quarter",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.adjacent_physical_leaf_transport_quarter",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.ownerContrast_le_ownerEnergy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLeafEnergy.sum_ownerContrast_le_physicalEnergy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
         }
       ]
     }
   },
-  "new_audited_declaration_count": 15,
+  "new_audited_declaration_count": 66,
   "original_audited_declaration_count": 2,
+  "linux_verification": {
+    "record": "formal/results/linux-runs.json",
+    "source_commit": "5e5d6ef9aa36f7e2a744f3fb8605448529f8be66",
+    "scope_note": "Linux runs at the earlier published commit do not verify these second-checkpoint additions."
+  },
   "full_unconditional_and_challenge_build": {
-    "status": "not_run"
+    "status": "running_on_linux_at_prior_commit",
+    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509"
   },
   "secure_comparator": {
-    "status": "not_run",
-    "platform_preflight_exit_code": 2,
-    "reason": "The real Landrun sandbox requires Linux; the local host is macOS.",
-    "log": "formal/results/comparator.log"
+    "status": "unsupported_runner_preflight",
+    "landlock_abi_found": 7,
+    "required_abi": 9,
+    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684"
   },
   "limits": [
     "The focused harness is separate from the complete upstream Lake package.",
     "Official Mathlib cached artifacts are trusted.",
-    "Global physical context embeddings and proposed mixing/runtime exponents are not formally established here.",
-    "The original three sampling/counting machine theorems are not independently reverified by this run."
+    "The actual local hard transport and global adjacent-contrast sum compile; full exposure, repair, and chain comparison are not established by this checkpoint.",
+    "The combined d^25 result, revised sampler machine and bit runtime remain unverified.",
+    "The original three sampling/counting machine theorems are not independently reverified by this focused run."
   ],
   "source_sha256": {
-    "formal/Math115.lean": "231cfc2882b41d39809e7e91dab46c641a05e6bbeba6b062f2ba131786ffdc9c",
-    "formal/Math115/AxiomAudit.lean": "d794453c2b8513778fbafb0a554dc41e048a2bb00298fd8dbc43d6a86943c721",
+    "formal/Math115/AxiomAudit.lean": "dc48ffdb202bde6b81769ed3aef573eab6c64ccfe45e2dbd1066ff9611b43ec1",
     "formal/Math115/GlobalDisplayOwnership.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
+    "formal/Math115/PaddedMarginBridge.lean": "0e015eeb217967669054b9492281c020c0281075336e9712e03c2b623bda0c4b",
+    "formal/Math115/PhysicalLeafEnergy.lean": "7c32ff73a592051eb81b69485820fa2dfcbadc5be7c0081c9f4a6bf52d88e55b",
     "formal/Math115/QuadraticCoefficient.lean": "9d023785b272aeb6b819aaa1bc42c7c04f8419522799b64e0b66bb355b91a46a",
     "formal/Math115/RepairCoefficient.lean": "cf1275943fb03dce29c9641d758e56531ee6c2fa42b13dc09110e2d7823ffd60",
+    "formal/Math115/ScaleCertificate.lean": "4b1bce04461a4a3f86a17050c90132f869222aac2ded61c021f05039761b1095",
+    "formal/Math115/SmallEntrySwitching.lean": "a0cd85439dccaf5c67ef291fae631f41c6585581f1c4af323c22f04768571f64",
+    "formal/Math115/SmallEntryTail.lean": "e6398d28accdb3e169389ec5ebb473d4b3ca9b630c3ad861fb7d3fe3ebf3d7f6",
     "formal/Math115/StandaloneAxiomAudit.lean": "32c7c21d8a51930b1592db0c484ced0f8416114a6944a09534a27783bc5b7285",
+    "formal/Math115/SurvivalAlgebra.lean": "b7cb5f1d6e71581b1c0475544fd9b3f52483818e3dbdd1d8597aa67e80fe68e4",
+    "formal/Math115/SwitchingFiniteSums.lean": "ba773afb67c596abcd35a6c331ed38b1f544d253e432865c98a28ab0117a4e14",
     "formal/Math115/TransportRefinement.lean": "04b50163b67e1ef21f07b379f1daeb857d53f3dbd188aa857e8327ced7cb9dfc",
     "formal/Math115/UpstreamAxiomAudit.lean": "3abf27c5a83cc3bc1c1d6fe2ebce1c300a41132fe3c7d840e7f40663d0fbd0cb",
     "formal/Math115/UpstreamOwnershipBridge.lean": "9d8229c0a5556c05d539634d32ba69e547b358b8de6275c9b5f01c7cdec1a7bf",
     "formal/Math115/WidthWeightedTransport.lean": "fad07f17b6b4e1c674a48cada9e2c0cc688f36e66bc689928025d86e15698d5c",
-    "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+    "formal/Math115.lean": "1c0607c0c5e46a38ebd472787af2f1965401f07cb137f891ae6609c62902dbf7",
     "formal/lake-manifest.json": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+    "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
     "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
     "scripts/bootstrap_lean.sh": "3a6f786a74e64e1a08a91dffd45171c481ae4099832ceadf8a6aa9ce4f1950e8",
     "scripts/verify_lean.sh": "5f632a716551ba589da2aa021e753efdcf917f75ea78d2d9e574ce1ff06605b9"

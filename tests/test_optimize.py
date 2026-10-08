@@ -3,6 +3,7 @@
 from dataclasses import replace
 from fractions import Fraction
 from itertools import product
+from math import lcm
 import json
 from pathlib import Path
 import random
@@ -136,6 +137,24 @@ class LinearBoundsTests(unittest.TestCase):
         self.assertEqual(shifted.maximum.value, original.maximum.value + shift)
         self.assertEqual(transposed.minimum.value, original.minimum.value)
         self.assertEqual(transposed.maximum.value, original.maximum.value)
+
+    def test_clearing_coprime_denominators_preserves_exact_results(self):
+        problem = TableProblem([3, 2], [2, 3], lower_bounds=[[1, 0], [0, 0]])
+        huge = 1 << 200
+        costs = [[Fraction(huge, 101), Fraction(-huge + 1, 103)],
+                 [Fraction(huge + 3, 107), Fraction(-huge + 5, 109)]]
+        denominator = lcm(*(value.denominator for row in costs for value in row))
+        scaled = [[int(value * denominator) for value in row] for row in costs]
+        original, integer = linear_bounds(problem, costs), linear_bounds(problem, scaled)
+        self.assertEqual(original.work_used, integer.work_used)
+        for exact, cleared in ((original.minimum, integer.minimum), (original.maximum, integer.maximum)):
+            self.assertEqual(exact.table, cleared.table)
+            self.assertEqual(exact.value * denominator, cleared.value)
+            self.assertEqual(tuple(p * denominator for p in exact.certificate.row_potentials),
+                             cleared.certificate.row_potentials)
+            self.assertEqual(tuple(p * denominator for p in exact.certificate.column_potentials),
+                             cleared.certificate.column_potentials)
+            self.assertTrue(verify_optimality(problem, costs, exact.table, exact.certificate))
 
     def test_deterministic_input_validation(self):
         problem = TableProblem([1, 1], [1, 1])

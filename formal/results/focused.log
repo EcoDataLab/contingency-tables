@@ -1,10 +1,23 @@
-Verification started: 2026-10-08T19:02:03Z
+Verification started: 2026-10-08T21:49:09Z
 Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
 Build completed successfully (8948 jobs).
-✔ [8953/8956] Built Math115.TransportRefinement (70s)
-✔ [8954/8956] Built Math115.WidthWeightedTransport (45s)
-✔ [8955/8956] Built Math115 (76s)
-Build completed successfully (8956 jobs).
+⚠ [9022/9024] Replayed Math115.PhysicalLeafEnergy
+warning: Math115/PhysicalLeafEnergy.lean:154:0: automatically included section variable(s) unused in theorem `Math115.PhysicalLeafEnergy.physical_display_special`:
+  [Fintype I]
+  [Fintype J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [Fintype J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Math115/PhysicalLeafEnergy.lean:413:0: automatically included section variable(s) unused in theorem `Math115.PhysicalLeafEnergy.context_box_leaf_transport_quarter`:
+  [LinearOrder I]
+  [LinearOrder J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder I] [LinearOrder J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9023/9024] Built Math115 (62s)
+Build completed successfully (9024 jobs).
 'OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy' depends on axioms: [propext,
  Classical.choice,
  Quot.sound]
@@ -36,5 +49,86 @@ Build completed successfully (8956 jobs).
  Classical.choice,
  Quot.sound]
 'Math115.GlobalDisplayOwnership.edge_owner_unique_upstream' depends on axioms: [propext, Quot.sound]
-Axiom allowlist passed for 11 declarations.
-Verification completed: 2026-10-08T19:06:26Z
+'Math115.SmallEntrySwitching.all_donor_incidence_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntrySwitching.donor_capacity_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntrySwitching.donor_capacity_sum_lower_of_margins' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntrySwitching.all_donor_small_entry_count_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntrySwitching.all_donor_small_entry_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntrySwitching.all_donor_small_entry_probability_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntrySwitching.all_donor_small_entry_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntryTail.shiftEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.shiftPositiveEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.survival_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.survival_step_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.small_card_add_survival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.all_donor_small_entry_count_strong' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.all_donor_small_entry_probability_strong' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntryTail.all_donor_survival_product_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.all_donor_small_entry_probability_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntryTail.survival_sum_le_entry_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.all_donor_entry_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.all_donor_entry_mean_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SurvivalAlgebra.nat_lower_tail_linear_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SurvivalAlgebra.nat_survival_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SurvivalAlgebra.nat_mean_tail_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DenseScaleConditions.width_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.proposed_dense_scales' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.proposed_padding_scales' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.sharper_enlarged_margin_padding_scales' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.shape_aware_linear_tail_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.shape_aware_linear_unpadding_error_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddedMarginBridge.marked_incident_margins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddedMarginBridge.large_padding_good_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddedMarginBridge.enlarged_bad_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddedMarginBridge.sharper_padded_count_le_twice_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PaddedMarginBridge.enlarged_bad_count_strong' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddedMarginBridge.shape_aware_padded_count_le_twice_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.leafEnergySum_eq_physicalLeafEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.physicalLeafEnergy_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.leafEnergySum_truncate_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.physicalLeafEdges_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.physicalLeafEdges_owner_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.owner_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.ownerEdges_pairwiseDisjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.sum_ownerEnergy_le_physicalEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.sum_ownerEnergy_hardMarginal_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.leafEnergySum_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.integer_root_leaf_transport_quarter_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.integer_box_root_leaf_transport_quarter_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.context_box_leaf_transport_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.repaired_root_transport_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.adjacent_physical_leaf_transport_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.ownerContrast_le_ownerEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.sum_ownerContrast_le_physicalEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Axiom allowlist passed for 62 declarations.
+Verification completed: 2026-10-08T21:52:20Z

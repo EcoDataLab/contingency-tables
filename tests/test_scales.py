@@ -9,11 +9,20 @@ from contingency115.scales import (
     evaluate_polynomial,
     proposed_scale_certificates,
     proposed_scales,
+    padded_margin_scale_probability_bounds,
+    padded_margin_scale_residuals,
     reference_adjustment,
     scale_probability_bounds,
     scale_residuals,
+    shape_aware_scales,
+    shape_aware_scale_probability_bounds,
+    sharper_scales,
+    sharper_scale_certificates,
     small_entry_bound,
+    small_entry_bound_linear,
     small_entry_bound_refined,
+    small_entry_mean_lower_bound,
+    small_entry_tail_product_bound,
     switching_outdegree,
 )
 
@@ -62,7 +71,16 @@ class SwitchingTests(unittest.TestCase):
                                 rows, columns, margin, threshold))
                             self.assertLessEqual(actual, small_entry_bound_refined(
                                 rows, columns, margin, threshold))
+                            product_bound = small_entry_tail_product_bound(
+                                rows, columns, margin, threshold)
+                            linear_bound = small_entry_bound_linear(rows, columns, margin, threshold)
+                            self.assertLessEqual(actual, product_bound)
+                            self.assertLessEqual(product_bound, linear_bound)
+                            self.assertLessEqual(linear_bound, small_entry_bound_refined(
+                                rows, columns, margin, threshold))
                             checked += 1
+                        mean = Fraction(sum(table[i][j] for table in tables), len(tables))
+                        self.assertGreaterEqual(mean, small_entry_mean_lower_bound(rows, columns, margin))
         self.assertGreater(checked, 10_000)
 
     def test_refined_bound_is_exact_at_zero_for_balanced_two_by_two(self):
@@ -72,6 +90,20 @@ class SwitchingTests(unittest.TestCase):
             probability = Fraction(sum(t[0][0] == 0 for t in tables), len(tables))
             self.assertEqual(probability, small_entry_bound_refined(2, 2, margin, 1))
             self.assertLess(probability, small_entry_bound(2, 2, margin, 1))
+
+    def test_product_and_mean_bounds_have_exact_composition_witnesses(self):
+        # First row is any weak composition of a among e+1 columns; the
+        # second row is then fixed by column margins all equal to a.
+        for e in range(1, 5):
+            for a in range(1, 9):
+                first_rows = list(compositions(a, e + 1))
+                mean = Fraction(sum(row[0] for row in first_rows), len(first_rows))
+                self.assertEqual(mean, small_entry_mean_lower_bound(2, e + 1, a))
+                for threshold in range(1, a + 1):
+                    actual = Fraction(sum(row[0] < threshold for row in first_rows), len(first_rows))
+                    self.assertEqual(actual, small_entry_tail_product_bound(2, e + 1, a, threshold))
+                    if e == 1:
+                        self.assertEqual(actual, small_entry_bound_linear(2, 2, a, threshold))
 
     def test_switching_labels_determine_source(self):
         # Exhaustively check the incidence multigraph, without assuming that
@@ -197,6 +229,34 @@ class ScaleCertificateTests(unittest.TestCase):
         for d in (0, 13, 14.0, True):
             with self.assertRaises(ValueError):
                 proposed_scales(d)
+
+    def test_sharper_enlarged_margin_certificates(self):
+        certificates = sharper_scale_certificates()
+        self.assertTrue(all(c.verify() for c in certificates))
+        for d in (14, 19, 22, 100, 10**6):
+            s = sharper_scales(d)
+            residuals = padded_margin_scale_residuals(s)
+            self.assertEqual(set(residuals), {c.name for c in certificates})
+            for c in certificates:
+                self.assertEqual(evaluate_polynomial(c.coefficients, d), residuals[c.name])
+            self.assertLess(padded_margin_scale_probability_bounds(s)["unpadding_bad_fraction"],
+                            Fraction(1, 2))
+            # The stronger construction needs the enlarged-margin premise.
+            self.assertLess(scale_residuals(s)["half_unpadding_success_new_switching"], 0)
+
+    def test_shape_aware_threshold_and_deterministic_dimensions(self):
+        for rows, columns in product(range(1, 11), repeat=2):
+            s = shape_aware_scales(rows, columns)
+            bounds = shape_aware_scale_probability_bounds(rows, columns)
+            self.assertLessEqual(bounds["unpadding_bad_fraction"], Fraction(1, 2))
+            self.assertGreaterEqual(s.U, 2 * s.L)
+            self.assertLessEqual(s.U, sharper_scales(s.d).U)
+            if rows == 1 or columns == 1:
+                self.assertEqual(s.U, 2 * s.L)
+                self.assertEqual(bounds["unpadding_bad_fraction"], 0)
+        for shape in ((0, 2), (2, 0), (-1, 2), (2.0, 2)):
+            with self.assertRaises(ValueError):
+                shape_aware_scales(*shape)
 
 
 if __name__ == "__main__":

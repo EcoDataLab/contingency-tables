@@ -20,5 +20,6 @@ jobs:
       - run: python 115/audit115.py --output /tmp/audit115-rerun.json
       - run: python scripts/verify_sources.py --bundle-only
       - run: python experiments/independent_crosscheck.py --output /tmp/independent-crosscheck.json
+      - run: PYTHONPATH=src python -S experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json
       - run: python examples/sparse_commute.py --output /tmp/sparse-commute.json
       - run: python examples/linear_metric_bounds.py --output /tmp/linear-bounds.json

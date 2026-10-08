@@ -12,6 +12,7 @@ audit:
 verify: test audit
 	$(PYTHON) scripts/verify_sources.py --bundle-only
 	$(PYTHON) experiments/independent_crosscheck.py
+	$(PYTHON) -S experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json
 
 sources:
 	$(PYTHON) scripts/verify_sources.py
@@ -24,3 +25,7 @@ reports:
 	$(PYTHON) experiments/budget_report.py --output reports/budget-comparison.json
 	$(PYTHON) examples/sparse_commute.py --spectral --output reports/sparse-commute.json
 	$(PYTHON) examples/linear_metric_bounds.py --output reports/linear-bounds.json
+	$(PYTHON) experiments/padding_barrier.py --output reports/padding-barrier.json
+	$(PYTHON) experiments/worker_baseline.py --output reports/worker-baseline.json
+	$(PYTHON) experiments/commute_scaling.py --output reports/commute-scaling.json
+	$(PYTHON) experiments/cycle_mixtures.py --output reports/cycle-mixtures.json

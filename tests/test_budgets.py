@@ -10,6 +10,7 @@ from contingency115.budgets import (
     LN2_UPPER,
     ceil_fraction,
     ceil_log2,
+    correction_rounding_budget,
     counting_bin_gap_bound,
     dense_schedule,
     domination_accuracy_bits,
@@ -21,6 +22,7 @@ from contingency115.budgets import (
     mixing_steps,
     outer_schedule,
     rare_branch_gate,
+    relative_concentration_denominator,
     residual_weights,
     sampling_dense_gap_bound,
     sampling_dense_mass_bound,
@@ -52,6 +54,23 @@ def enumerate_count(rows, columns):
     )
 
 
+def reference_rounded_power(beta, sigma):
+    """Run the source's rational-grid/bisection construction on modest cases."""
+    budget = correction_rounding_budget(sigma)
+    scaled = beta * budget.grid_denominator
+    # Round nearest; ties go upward. Both endpoints -2 and 2 are on the grid.
+    exponent = (2*scaled.numerator + scaled.denominator) // (2*scaled.denominator)
+    target = two_power(exponent)
+    low, high = F(0), F(8)
+    for _ in range(budget.bisection_steps):
+        midpoint = (low + high) / 2
+        if midpoint**budget.grid_denominator < target:
+            low = midpoint
+        else:
+            high = midpoint
+    return (low + high) / 2
+
+
 class ExactArithmeticTests(unittest.TestCase):
     def test_logarithms_and_ceilings_without_float(self):
         values = [F(p, q) for p in range(1, 71) for q in range(1, 51)]
@@ -78,6 +97,15 @@ class ExactArithmeticTests(unittest.TestCase):
             lambda: inner_counting_schedule(2, 16, 4, F(1, 10), 0.01),
             lambda: inner_counting_schedule(2, 16, 4, F(1, 10), F(1, 10), concentration="invalid"),
             lambda: inner_counting_schedule(2, 16, 4, F(1, 10), F(1, 10), allocation="invalid"),
+            lambda: inner_counting_schedule(2, 16, 4, F(1, 10), F(1, 10), sigma_policy="invalid"),
+            lambda: correction_rounding_budget(0),
+            lambda: correction_rounding_budget(F(1, 10) + F(1, 10**12)),
+            lambda: inner_counting_schedule(2, 16, 4, F(1, 10), F(1, 10), annealing_step=5),
+            lambda: inner_counting_schedule(2, 16, 4, F(1, 10), F(1, 10), annealing_step=-1),
+            lambda: inner_counting_schedule(2, 16, 4, F(1, 10), F(1, 10), correction_support=(1, 1)),
+            lambda: inner_counting_schedule(2, 16, 4, F(1, 10), F(1, 10), correction_support=(1, 0)),
+            lambda: inner_counting_schedule(2, 16, 4, F(1, 10), F(1, 10), correction_support=(0.1, 1)),
+            lambda: inner_counting_schedule(2, 16, 4, F(1, 10), F(1, 10), correction_support="unknown"),
         ):
             with self.assertRaises((TypeError, ValueError)):
                 call()
@@ -233,8 +261,8 @@ class CountingBudgetTests(unittest.TestCase):
 
     def test_concentration_coupling_and_mixing_allocations(self):
         for height, xi, theta in product((0, 1, 17, 10**4), (F(1, 8), F(1, 1000)), (F(1, 8), F(1, 10**9))):
-            for method in ("hoeffding", "bernstein"):
-                s = inner_counting_schedule(7, 1001, height, xi, theta, concentration=method)
+            for method, policy in product(("hoeffding", "bernstein"), ("source", "product")):
+                s = inner_counting_schedule(7, 1001, height, xi, theta, concentration=method, sigma_policy=policy)
                 exponent = s.samples_per_average * s.sigma**2 / s.concentration_denominator
                 self.assertGreaterEqual(exponent, LN2_UPPER*s.average_tail_bits)
                 ratio_exponent = s.ratio_samples_per_average * s.sigma**2 / s.ratio_concentration_denominator
@@ -245,9 +273,144 @@ class CountingBudgetTests(unittest.TestCase):
                 mass = height + 7*ceil_log2(1001)
                 self.assertGreaterEqual(F(s.steps_per_bin_sample)/s.inverse_gap_bound, LN2_UPPER*(F(mass, 2)+s.draw_error_bits-1))
                 if method == "bernstein":
-                    self.assertLess(s.concentration_denominator, 16)
+                    self.assertLess(s.concentration_denominator, 16 if policy == "source" else 18)
                     review_samples = ceil_fraction(1024 * s.average_tail_bits / s.sigma**2)
                     self.assertLess(64*s.samples_per_average, review_samples)
+
+    def test_product_policy_all_factors_at_boundary(self):
+        near_quarter = F(1, 4) - F(1, 10**12)
+        for height, xi in product((0, 1, 2, 17, 100), (F(1, 10**9), F(1, 8), near_quarter)):
+            s = inner_counting_schedule(2, 5, height, xi, F(1, 10))
+            self.assertEqual(s.sigma_policy, "product")
+            self.assertLess(s.sigma, F(1, 10))
+            factor_count = height + 2
+            self.assertEqual(factor_count*s.sigma, xi/(1+xi))
+            self.assertGreaterEqual((1-s.sigma)**factor_count, 1-xi)
+            self.assertLessEqual((1+s.sigma)**factor_count, 1+xi)
+            # Independent check of the geometric-series certificate, including
+            # all empirical averages and one numerical correction factor.
+            self.assertEqual(1/(1-factor_count*s.sigma), 1+xi)
+            source = inner_counting_schedule(2, 5, height, xi, F(1, 10), sigma_policy="source")
+            self.assertLess(source.sigma, s.sigma)
+            self.assertLess(s.correction_samples, source.correction_samples)
+            self.assertLess(s.ratio_samples_per_average, source.ratio_samples_per_average)
+
+        boundary = inner_counting_schedule(2, 5, 0, near_quarter, F(1, 10), correction_support="published")
+        self.assertGreater(boundary.concentration_denominator, 16)
+        self.assertLess(boundary.concentration_denominator, 18)
+        # Reusing the old common constant 16 would understate the tail bound.
+        self.assertEqual(boundary.concentration_denominator, F(961, 64)+F(62, 3)*boundary.sigma)
+
+    def test_source_sigma_policy_compatibility(self):
+        s = inner_counting_schedule(19, 1000, 100, F(1, 1000), F(1, 10**6), sigma_policy="source", correction_support="published")
+        self.assertEqual(s.sigma, F(1, 5_050_000))
+        self.assertEqual(s.sigma_policy, "source")
+        # Values from the first independently reviewed checkpoint's report.
+        self.assertEqual(s.ratio_samples_per_average, 133_888_195_700_000)
+        self.assertEqual(s.correction_samples, 8_041_657_699_512_500)
+
+    def test_correction_rounding_bounds_cover_the_larger_sigma_range(self):
+        for sigma in (F(1, 201), F(1, 16), F(1, 10), F(999999, 10**7)):
+            budget = correction_rounding_budget(sigma)
+            self.assertGreaterEqual(budget.grid_denominator*sigma, 32)
+            self.assertLess(budget.grid_denominator*sigma, 64)
+            self.assertLessEqual(budget.exponent_rounding_error_bound, sigma/64)
+            self.assertLessEqual(budget.root_absolute_error_bound, sigma/128)
+            self.assertLessEqual(budget.pointwise_relative_error_bound, sigma/16)
+            self.assertGreater(budget.computed_correction_lower_bound, F(1, 16))
+            self.assertLess(budget.computed_correction_upper_bound, 8)
+
+    def test_actual_rational_bisection_at_exponent_and_rounding_boundaries(self):
+        for sigma in (F(1, 16), F(1, 10)):
+            grid = correction_rounding_budget(sigma).grid_denominator
+            betas = (
+                F(-2), F(2), F(-1, 3), F(0), F(1, 7),
+                F(-1, 2*grid), F(1, 2*grid), F(2)-F(1, 2*grid),
+            )
+            for beta in betas:
+                returned = reference_rounded_power(beta, sigma)
+                # Compare with irrational 2**beta by raising positive
+                # rational endpoints to beta.denominator: no float oracle.
+                target_power = two_power(beta.numerator)
+                self.assertLessEqual((returned/(1+sigma))**beta.denominator, target_power)
+                self.assertGreaterEqual((returned/(1-sigma))**beta.denominator, target_power)
+                self.assertGreater(returned, 0)
+
+    def test_sharp_source_support_population_and_floor_bounds(self):
+        for dimension, bins in product((1, 2, 5, 19), (1, 2, 7, 11)):
+            for remainder in range(bins):
+                width = 100*dimension*bins + remainder
+                populations = [
+                    ceil_fraction(F(width*(v+1), bins)) - ceil_fraction(F(width*v, bins))
+                    for v in range(bins)
+                ]
+                factors = [F(bins*population, width) for population in populations]
+                self.assertGreaterEqual(min(factors), 1-F(1, 100*dimension))
+                self.assertLessEqual(max(factors), 1+F(1, 100*dimension))
+                self.assertGreaterEqual(min(factors)**dimension, F(99, 100))
+                self.assertLessEqual(max(factors)**dimension, F(100, 99))
+
+        self.assertGreater(F(11, 10)**8, 2)
+        for corner, difference in product(
+            (F(0), F(1, 7), F(7, 8), F(1), F(17, 9), F(2)),
+            (F(-1, 8), F(-1, 100), F(0), F(1, 100), F(1, 8)),
+        ):
+            point = corner+difference
+            if point < 0:
+                continue
+            floor_corner = corner.numerator//corner.denominator
+            beta = floor_corner-point
+            self.assertGreaterEqual(beta, F(-9, 8))
+            self.assertLessEqual(beta, F(1, 8))
+            for alpha in (F(99, 100), F(1), F(100, 99)):
+                # Exact comparison with alpha*2**beta, without evaluating it.
+                target = two_power(beta.numerator)
+                self.assertLessEqual((F(9, 20)/alpha)**beta.denominator, target)
+                self.assertLessEqual(target, (F(10, 9)/alpha)**beta.denominator)
+
+    def test_sharp_source_concentration_constants(self):
+        support = (F(9, 20), F(10, 9))
+        for sigma in (F(1, 10**6), F(1, 200), F(1, 10)):
+            self.assertEqual(
+                relative_concentration_denominator(support, sigma),
+                F(14161, 32400)+F(238, 243)*sigma,
+            )
+            self.assertEqual(
+                relative_concentration_denominator(support, sigma, method="hoeffding"),
+                F(14161, 13122),
+            )
+        sharp = inner_counting_schedule(19, 1000, 100, F(1, 1000), F(1, 10**6))
+        published = inner_counting_schedule(19, 1000, 100, F(1, 1000), F(1, 10**6), correction_support="published")
+        self.assertEqual(sharp.correction_support_policy, "source_lipschitz")
+        self.assertLess(sharp.correction_samples, published.correction_samples)
+        self.assertEqual(sharp.ratio_samples_per_average, published.ratio_samples_per_average)
+
+    def test_actual_annealing_step_controls_counts_and_mass(self):
+        for height in (1, 10, 1000):
+            full = inner_counting_schedule(7, 1001, height, F(1, 10), F(1, 1000))
+            self.assertEqual(full, inner_counting_schedule(7, 1001, height, F(1, 10), F(1, 1000), annealing_step=height))
+            for step in sorted({0, 1, height//2, height}):
+                s = inner_counting_schedule(7, 1001, height, F(1, 10), F(1, 1000), annealing_step=step)
+                self.assertEqual(s.annealing_step, step)
+                self.assertEqual((step+2)*s.sigma, F(1, 11))
+                self.assertEqual(s.log2_inverse_min_mass_bound, step+7*10)
+                self.assertEqual(s.total_draw_bound, step*s.ratio_samples_per_average+8*s.correction_samples)
+                self.assertLessEqual(2*(step+1)*two_power(-s.average_tail_bits), F(1, 4000))
+                self.assertLessEqual(s.correction_samples, full.correction_samples)
+                self.assertLessEqual(s.steps_per_bin_sample, full.steps_per_bin_sample)
+                source = inner_counting_schedule(7, 1001, height, F(1, 10), F(1, 1000), annealing_step=step, sigma_policy="source")
+                self.assertEqual(source.sigma, F(1, 10)/(50*(height+1)))
+
+    def test_custom_support_narrower_than_ratio_range(self):
+        args = (7, 1001, 100, F(1, 10), F(1, 1000))
+        by_range = inner_counting_schedule(*args, correction_support=(F(1), F(101, 100)))
+        common = inner_counting_schedule(*args, correction_support=(F(1), F(101, 100)), allocation="common")
+        self.assertEqual(by_range.correction_support_policy, "caller_supplied")
+        self.assertLess(by_range.correction_samples, by_range.ratio_samples_per_average)
+        self.assertEqual(by_range.samples_per_average, by_range.ratio_samples_per_average)
+        self.assertEqual(common.correction_samples, by_range.ratio_samples_per_average)
+        self.assertEqual(common.ratio_samples_per_average, by_range.ratio_samples_per_average)
+        self.assertEqual(common.total_draw_bound, 108*common.samples_per_average)
 
     def test_common_allocation_remains_available(self):
         common = inner_counting_schedule(7, 1001, 100, F(1, 10), F(1, 1000), allocation="common")

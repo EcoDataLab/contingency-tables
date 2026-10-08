@@ -108,8 +108,12 @@ affect the cost of those operations.
 Subtract each lower bound from its cell and from the corresponding margins.
 Build a flow network with source-to-row residual supplies, bounded row-to-column
 cell arcs, and column-to-sink residual demands. For a maximum, negate the costs.
-Starting with zero residual flow, repeatedly find a shortest augmenting path
-with exact Bellman–Ford relaxation and send the path's whole bottleneck amount.
+Multiply rational costs by their positive common denominator, so path arithmetic
+uses exact Python integers. Starting with zero residual flow, repeatedly find
+a shortest augmenting path with exact Bellman–Ford relaxation and send the
+path's whole bottleneck amount. Divide final potentials by that denominator
+before certification. Scaling preserves all path comparisons and ties; it
+changes neither feasible tables nor the optimum of the original objective.
 The initial residual graph has no directed cycles. Shortest-path augmentation
 preserves the absence of negative residual cycles. At full flow, a final
 Bellman–Ford pass from an implicit zero-cost supersource produces potentials

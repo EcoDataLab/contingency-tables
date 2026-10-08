@@ -6,12 +6,163 @@
   "harness": "Focused Lake package; unchanged upstream source via srcDir; only mathlib dependency closure retained",
   "upstream_lake_manifest_sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794",
   "upstream_lakefile_sha256": "4cca977ebece444b6c999d99755c1ad3c93119bafc127ea761f7f703c7279e74",
+  "focused_entry_module": "Math115",
   "upstream_modules": [
     {
       "module": "OAI.Combinatorics.ContingencyTables.Machines.BinaryContraction",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Machines/BinaryContraction.lean",
       "git_blob": "43d6a9e4dff93d09d826ede6b6903cf0c185fcaf",
       "sha256": "677899d6bc0b7c051598b8547fbdfb65d7d80a7d23834c8947ee33576f1c370f"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Model",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Model.lean",
+      "git_blob": "752af7a458733e26a31cf1c1bf12a87a9cac8a54",
+      "sha256": "97c51e87779c92b84451fe14e9df423e9bc26832d716db669a88a1c6f778487e"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Rooted.LargePairEnumeration",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Rooted/LargePairEnumeration.lean",
+      "git_blob": "02e066562e7ad255b6fe6b18a3f6d1b4f864d15a",
+      "sha256": "69d4ae13eb8056228b2135e8d8d9d6614431277cd50c2d8bc8075a4c6b14eccb"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperChildMass",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperChildMass.lean",
+      "git_blob": "cd0785b76dae99e72ed3efa93b15a347701daeed",
+      "sha256": "f5199fc8cb652e798c286270a8626b880fd311a1386f4ab7cdebafc6e320b2bd"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextBox",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperContextBox.lean",
+      "git_blob": "4ec10ca8dafeeda827e4fa1a6d23bffb4a45c1cf",
+      "sha256": "4919f7d0d3f84f831a449635929313da07c182fd1dfba807a16436620bc32667"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextChildren",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperContextChildren.lean",
+      "git_blob": "b5d0f88914a78d2a89886696f80662b4bdefd857",
+      "sha256": "8aca603574ff73c064dec146b6e64dec05fede84a6127ad30f0c4fbbba14d9c2"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperContextTransport.lean",
+      "git_blob": "aa0878cf70d3262e9adeca70192ac31e9f6f0b7b",
+      "sha256": "850f54a7357940e927a1d5c4e151c9e200a5f49d4606d58de6589340a942c7c0"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPhysicalMarginal",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperPhysicalMarginal.lean",
+      "git_blob": "1d4f3fc91262023f524af3abab90b4dc75c4022d",
+      "sha256": "2391c2494674ed67c7453e3ac8c124f9bc51497542b012bfc7390062c41efb10"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperProfiles",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperProfiles.lean",
+      "git_blob": "7f1c62b2207c0009bb30bf9f6bb719657d8cdf17",
+      "sha256": "50506cb5625f741a42c647598f97fad7680125798e4b385ad738a33ef996a78b"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PaddedCompletions",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PaddedCompletions.lean",
+      "git_blob": "6c913b082097c59132d5d824cd99d5ea04c5b32d",
+      "sha256": "7a38c3bf97f89412b129160eacc2dba21ef882f19e27132b14761ad55a05f768"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.Padding",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/Padding.lean",
+      "git_blob": "eeaf4a48ce566c5362aab5995828c15bb52591d5",
+      "sha256": "8866171a96b5f669b2f614d328373cf670aa8c90055b3b9a764032504511aacd"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalCompletionFibres",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalCompletionFibres.lean",
+      "git_blob": "e11a368132e1b06827e47ee953bc5f2a72f34cf5",
+      "sha256": "8b3286ec5cb4ba91e48735d686ebcaa122bf6f6fc58c017d71f626acf869b8e5"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalGraphVertices",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalGraphVertices.lean",
+      "git_blob": "5d323f0979af4d407bb0eede2846867e49aed55b",
+      "sha256": "46604608610d807e5e1e3ff1ad03a460fb50e50cd6a505236936ae926d7e3df4"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalLargeProfiles",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalLargeProfiles.lean",
+      "git_blob": "d65c6c2de1c19e9563e7ba0ca5bc7169c0e00062",
+      "sha256": "8ecdaf8c3fd6858bfa53186eb9f94d9ddc2bb51ba1832731e9a3abd6e5b4eb07"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalPrefixEnergies",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalPrefixEnergies.lean",
+      "git_blob": "8e1816845059f2ca37b9846a65b0e5b7e564111b",
+      "sha256": "19faafec41db41e984f97e85d15cf2e3a9ee527eb12b0dd953dde70b2cbfbe5c"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.Repair",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/Repair.lean",
+      "git_blob": "bbdb5e2e5356f8dcb2a8f7c22f426a547bba686b",
+      "sha256": "96ea87f7574e6a68de9ea84a3912c078f0dd293c356f19d9842dbb177c30a102"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.RepairFibres",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/RepairFibres.lean",
+      "git_blob": "dd0af7433f0cf4a49403c4bfdfff9566b3400c67",
+      "sha256": "c71b019450ef9418420b1d59ba7118fa25dd430f16953459f3a91eb5ebe6f98c"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.RepairPrefixes",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/RepairPrefixes.lean",
+      "git_blob": "23d305dbbf8421a545227c9643a87dfb5d53befb",
+      "sha256": "f9f3b65c8002b8691d0a707dd5665128b9e27b19a0e41a9ad2945df191a545af"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.RepairResiduals",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/RepairResiduals.lean",
+      "git_blob": "fff410edae5f381c01bbbc66ffb80a420877ff8b",
+      "sha256": "ad866941cb7bcfcc55ed1e5b7768d4e1a10cf573b9c138dd60d231a25a30ead4"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCoordinates",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallContextCoordinates.lean",
+      "git_blob": "27108ac1449fd156aa2d713951df971ac5977c6b",
+      "sha256": "ba02fc80426b24f63bcd58b9a5f7d5fe87a788a7a4f1db34ac89f532d5ca1fb5"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCount",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallContextCount.lean",
+      "git_blob": "42c255bc960c235c4e1a3a5fe2031e43606df5ba",
+      "sha256": "909e0a6d404cb3d11e8994b85d77ed1363465abc466572d5a4f3bc12a388ca30"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextEnumeration",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallContextEnumeration.lean",
+      "git_blob": "f3d8c513181eb2d86cec7d5f4e602fe7a3cb20cc",
+      "sha256": "9363678bf856046edc24adda1f841d414ff7991493378185fe132bdebf8eee19"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextFibres",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallContextFibres.lean",
+      "git_blob": "7c9980d60a85f033be9fc2d5304308cadef8ba8b",
+      "sha256": "12cd5efe09a11915043b172b444631ec32c81639c3cf23612d73cbc2ec84d84a"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallEntries",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallEntries.lean",
+      "git_blob": "1d7834f76b992d0f31f466171415a9f06b6c15cb",
+      "sha256": "7bae5af21a726740af6bf58e97a5012353b94b20d68190b5860fba4d4d3373a8"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallGraphProfiles",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallGraphProfiles.lean",
+      "git_blob": "2b49d21000bf5e85ba449a38a3caca74e05ce123",
+      "sha256": "3e2fa1bbdf183b367f1bc7edcb78a4208224ac8269b0bfbf371bae2e16c2ba8f"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.AuxiliaryRepairMass",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/AuxiliaryRepairMass.lean",
+      "git_blob": "45734616007f76725ff91c672275c5413622e0ea",
+      "sha256": "7f5d1dba74c186e79ecb92369d2e63f06e614007c1d6b9c147c2ddddb63f0b90"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedBox",
@@ -38,10 +189,112 @@
       "sha256": "c1fafd4defcf300e29ba035319df3cd8f056e52b183a84645abfb76704828f85"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.CompletionCounts",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionCounts.lean",
+      "git_blob": "6c99ed8630d08bca8e06b7421699283c9482585f",
+      "sha256": "bfd2ea90b912e638d3dbebe1d336159af1e220873b4a4f1a92a23c7eee4ef6b3"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ContextAdjacentTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ContextAdjacentTransport.lean",
+      "git_blob": "98c82dc250b179a42b00a0d2b60751a1d8aa654f",
+      "sha256": "2a4f3dc9ac181ec349c8f95ab19f48cf62f54e5fadbf05d63e5a8ec4c58edf09"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ContextChildVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ContextChildVariance.lean",
+      "git_blob": "35445d4268aac6ce86d2cb19dc36d5fd7ed89119",
+      "sha256": "bb5c0ff2bcb4bc3d2005539c49c13f81f57b24997fd91f33d852025a8b4e081a"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ContextGraphEnergy",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ContextGraphEnergy.lean",
+      "git_blob": "447dd18d8ab1abadd1e20f44d20e5539fd2960fd",
+      "sha256": "50ceeb0a1a995c39068187591180baeb80a56b65adeaf62ab3e15d83877a4f3f"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ContextGraphMembership",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ContextGraphMembership.lean",
+      "git_blob": "9d3aacfb6531dd76a4a083eee3fbaee4eaa3604c",
+      "sha256": "5e3e3df2adbd185ae23fe0f3ab3ae51df78c226b49c9642f10811876f7e9dbf2"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.EqualityReindex",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/EqualityReindex.lean",
+      "git_blob": "d3eec7f0d99b68473e655b0d9635eb34dd21898d",
+      "sha256": "b206bf774b400a46aeb543f99d5b7236e9106200218e77f8cc88939a538c1f5b"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.EqualitySoftening",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/EqualitySoftening.lean",
+      "git_blob": "84226a21f8e250bec9051d38064062038a478c95",
+      "sha256": "db7fc24874a550723def32b3e8ded927fc6fe64c36671e9fae6ddf15fafa38e9"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ExcessContextDefects",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ExcessContextDefects.lean",
+      "git_blob": "13097f6a10dbdf71bc36263b1d6b2718dc7d4114",
+      "sha256": "28d938d14e2d390813a4fac0667eb68bb5b79a7c04bf3df3727ea7422349f99f"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ExcessContextProfiles",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ExcessContextProfiles.lean",
+      "git_blob": "892b7d3f3f45a49555ff65b4294d52abf9fef92c",
+      "sha256": "192f4ee54db4e3fe6e085262701427f767c56eb6cd357074a0d6bf99e788d006"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ExcessPairCoordinates",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ExcessPairCoordinates.lean",
+      "git_blob": "f494e5e616f19e2e6dd42229351291ea5278fe4c",
+      "sha256": "1251f57362c4c68913c760408397d4e53f77d2c5bc0ca915efb39a6b00a22b45"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.FactorialSignatures",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FactorialSignatures.lean",
       "git_blob": "3fb805fdeedde6d632ece3f08bf1ae261b1a64ae",
       "sha256": "771558a0fd9206079ba087504e341dd93db6ee509878644104c02bebafe6da02"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteExposureVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteExposureVariance.lean",
+      "git_blob": "c974e17beb1ab332bf108e6eab383e20c59b4d94",
+      "sha256": "5386fb72e7934174e4e888b614e32886348a5e25b536a02395f7ad5fe8ee2173"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.HardZeroTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/HardZeroTransport.lean",
+      "git_blob": "4599181764cb7380512c59cb51b27b1d6743bc5f",
+      "sha256": "80c619f42b3cb9a308a3b51d1693da2a8a383399bf7f6a57098a47c1c9d19aec"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerAuxiliaryEnumeration",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerAuxiliaryEnumeration.lean",
+      "git_blob": "567682cebb54c33fca5d3ff4ed7e0ecde5039d05",
+      "sha256": "e38baf92e9a61594e551e1b3d2e64bbf4686e9656b746322349b799ff16d3a42"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerBoxTruncation",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerBoxTruncation.lean",
+      "git_blob": "77308fe982f96ec24dd1a100f80cb80ae0b2ced5",
+      "sha256": "823e1362bb9f5b39940eb53dbd74faeb05251e726c4b6571960d0563e5e2f9d4"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerChildLogConcavity",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerChildLogConcavity.lean",
+      "git_blob": "8cb7f9ae727641a3b3008deab30d5157dbdbbb12",
+      "sha256": "130ff4ec2cd0fc2f24ec0f8abc216ae9d57b6eb56a3c6baac39a805050646891"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerChildVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerChildVariance.lean",
+      "git_blob": "59ea82a92dd65b089b060b3c5a5c19bf23287a86",
+      "sha256": "3eaaf9d6343329b9a5959e1e620fcaa897386bfab80cf77f4d1a9d6863d8f9c2"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerContextSlices",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerContextSlices.lean",
+      "git_blob": "0e500cca26354975e91637c9b3633dd95baa3339",
+      "sha256": "b15e979afd19a0777f0e355468cea93409a39e8fe62b886260417e0a1a347ee3"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerCorrectionKernel",
@@ -66,6 +319,12 @@
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerFutureSquare.lean",
       "git_blob": "0446d9d8fa340bfa51eb8bff927c10f741be1646",
       "sha256": "de59d422a3b651ef9af78b6a685caf1c4722620e2e8de3135ac9fa5bdab20261"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerGraphTruncation",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerGraphTruncation.lean",
+      "git_blob": "ba4365efb471ffdaea3d8f1596a4356ed4e5066f",
+      "sha256": "3b2b2af2e168962da2ef7e980afb0728f0ec73d04816d9b4c4ce22b85a47e95d"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafEnergy",
@@ -128,10 +387,34 @@
       "sha256": "6b87a57ce4fb2c6569e34dfdd7148068920b7af8c66f2c8ce36a9bfa36426a20"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceRestriction",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerSliceRestriction.lean",
+      "git_blob": "7ead3faa40fa92024a61455f446523879237871d",
+      "sha256": "d91a44d917224fc00c4fa18ee9b872019bb4403fe44a5bc9a0629c783b1e5408"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportCoefficient",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerTransportCoefficient.lean",
+      "git_blob": "75dbb1bad21f9d9fd63757317a7238d1ac7a2c84",
+      "sha256": "6d1fe5668298810d7968bb611d47c78005ad7624294245a40ff02fc6d5b78e0a"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLevels",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerTransportLevels.lean",
       "git_blob": "8957667f17b62c2e1aeec101817dc2b4c29191e5",
       "sha256": "2c7defba22393aeeb2439583618b9c06de809fa3f48d7b3616457b0a937fc34d"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLimit",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerTransportLimit.lean",
+      "git_blob": "5167ec91fc4b371bc76ebcbed334e1bed3e88eef",
+      "sha256": "5c1fdcdcb2b748e07b004cb48d9eaf286e680b8c36fef9ae9af86e451319bdee"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerTruncatedTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerTruncatedTransport.lean",
+      "git_blob": "af5a1eb54a155614ee09bce860afafc829d71ece",
+      "sha256": "473f8ef5a8f1765f6aa709541e8492fb959cb36c7921d2cca32b2a6c9fdab118"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerWeightedTransport",
@@ -140,16 +423,100 @@
       "sha256": "dcfb78c959570ab16eb43ee719077e45c1623c08890c11032c8bfb458ae00a42"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.LabelledFactorial",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/LabelledFactorial.lean",
+      "git_blob": "ed90b28bdbee893cf27f428b025da70771201552",
+      "sha256": "d210e0c4398130f4db63c6d41b74abee0dace12efe3b553a807c1419ade02131"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.LaminarSignature",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/LaminarSignature.lean",
+      "git_blob": "f069f200d9b4966656117b4d0a73a8317a6d5fc1",
+      "sha256": "c7362950007744d5276f3ea4b96c8e4771c3dc66d64f56516670e90fb6cb48b1"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.LineUnarySignature",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/LineUnarySignature.lean",
+      "git_blob": "99093ed18e8825a8e50365326accd5e589a2b741",
+      "sha256": "e5c2301032dbcb5fd5f987fe189c021132e31df6ae894e9c9ae9447dbaa9f847"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.NestedPenaltyApplication",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/NestedPenaltyApplication.lean",
+      "git_blob": "c334eb8373339d2a53bd5f5b0e0d68fcf34de01d",
+      "sha256": "c8d3377e5e60116a46835ab0a58ee05b4cb62f4b3b1334b978289dac8b249150"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.NestedProductSignature",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/NestedProductSignature.lean",
+      "git_blob": "172ec92cfd05701fbaf1817947851beadb8df87b",
+      "sha256": "bddee1d5cc75e852cc3096546b01f79d1fc64d29f8f6806e030d8861621dc996"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.NestedReindex",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/NestedReindex.lean",
+      "git_blob": "25cd006b9e19eacdd0bd5b0e678b8d0a0d3db57a",
+      "sha256": "ba4128f0037ae3ef1d4b3cd836cf563f1bdeb245ea1fa4bd32785b48967c5c40"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.PositiveSequenceMinimum",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/PositiveSequenceMinimum.lean",
+      "git_blob": "af931ccb783e9bffdb4463e2acd3d3f4043dec6b",
+      "sha256": "e398395a92e06782a7489bc4b788c489280b674517d252cf55e20ced9f6fa7d2"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ProductIntegerSignature",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ProductIntegerSignature.lean",
+      "git_blob": "1c116114dce4860fd9e7c6f0e1c600dd8805779c",
+      "sha256": "481a996ec2ceb45f30704983172fdbd0066b1109230f8f0e64d21d8555471dc4"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.QuadraticTransport",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/QuadraticTransport.lean",
       "git_blob": "3dfebeb58050b944d221aa1863fe7161cf122667",
       "sha256": "bd21390413f074c3703297688190db6e8520a801a344bef0ea931c543960dbd5"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RecursiveSignedTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RecursiveSignedTransport.lean",
+      "git_blob": "904f3412bc55d238c3cfd4174f72d37377b725b8",
+      "sha256": "789cede9f5e728a3ab317901a6b3696066fea620d423bf3505273eb193195e46"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ReflectedNested",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ReflectedNested.lean",
+      "git_blob": "32cbe839fb3399d298a8ab40919178f9a8459732",
+      "sha256": "f8c0c12b7d9ccd810b0e21462d8fa632a1aebd42f136c854af5cb9ce3e9b472f"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ReflectedSlices",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ReflectedSlices.lean",
+      "git_blob": "90235319fc2f77369c7c406d1a575dcc08c01ed8",
+      "sha256": "ba0783b2f1fcc775d1abf8e2ad7b0f8a7efe359502aa21850cbd6460ffa48318"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RowColumnPenalties",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RowColumnPenalties.lean",
+      "git_blob": "9e66f3c38f9f354a145b197b44ec406bf2e22804",
+      "sha256": "33945321e8e8a8121f7b8b5ed3dac3c76aa183bccab7b549d6ba86e0a87a0a24"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ScalarPenalty",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ScalarPenalty.lean",
+      "git_blob": "7660c203e31729b0b3292e9b9c190adc61cf1bba",
+      "sha256": "9571337add7f121d548868acc3aba36bea779d67c50b65843b9f4586d7a61206"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.SignedTransport",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/SignedTransport.lean",
       "git_blob": "bef383cd6b71855b1dd94b53e201337497499c23",
       "sha256": "617edb66c51ee7803771fc34aef89f71d04a654eb3fa31fb562028d41bbbad9f"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.SliceFactorial",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/SliceFactorial.lean",
+      "git_blob": "65b0d2578b93df90de456588d13987c350149810",
+      "sha256": "8da7c2cc28b1171a446fd689c24a682a26a6d2f33931ec45a6f11211bd3e5151"
     },
     {
       "module": "OAI.Combinatorics.MatroidCounting.CommonBases",
@@ -161,14 +528,26 @@
   "external_imports": [
     "Lean.Elab.Tactic.Omega",
     "Mathlib",
+    "Mathlib.Algebra.BigOperators.Field",
     "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
     "Mathlib.Algebra.BigOperators.Intervals",
     "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.Order.BigOperators.Group.Finset",
     "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
     "Mathlib.Basic.Real.Basic",
+    "Mathlib.Data.Finset.Pi",
+    "Mathlib.Data.Fintype.BigOperators",
+    "Mathlib.Data.Fintype.Sum",
+    "Mathlib.Data.Nat.Cast.Order.Field",
     "Mathlib.LinearAlgebra.BilinearForm.Basic",
+    "Mathlib.LinearAlgebra.Matrix.BilinearForm",
+    "Mathlib.Logic.Equiv.Fin.Basic",
+    "Mathlib.SetTheory.Cardinal.Finite",
+    "Mathlib.Tactic",
     "Mathlib.Tactic.FieldSimp",
     "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
     "Mathlib.Tactic.Positivity",
     "Mathlib.Tactic.Ring"
   ]

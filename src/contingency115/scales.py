@@ -40,6 +40,34 @@ def proposed_scales(d: int) -> SamplingScales:
     return SamplingScales(d, 16 * d**2, 16 * d**3, 32 * d**3, 128 * d**5)
 
 
+def sharper_scales(d: int) -> SamplingScales:
+    """Use U=64d^5 with the marked cell's own padding in the margin bound.
+
+    Apply the switching lemma at a=U+L, t=L. The resulting denominator
+    is U+1, and this constructor must not be tested against the older
+    U-L+1 sufficient condition.
+    """
+    base = proposed_scales(d)
+    return SamplingScales(d, base.A, base.B, base.L, 64 * d**5)
+
+
+def shape_aware_scales(rows: int, columns: int) -> SamplingScales:
+    """An explicit threshold using full dimensions and the linear tail bound.
+
+    This uses mn as an upper bound on large-cell count, so there is no
+    circular dependence on the large rectangle selected by U. Singleton
+    dimensions have e=0 and use U=2L; their actual sampling problem is
+    deterministic. Empty dimensions bypass the sampler and are not inputs.
+    """
+    if any(type(v) is not int or v < 1 for v in (rows, columns)):
+        raise ValueError("shape-aware scales require positive integer dimensions")
+    d = 10 + (rows + 1) * (columns + 1)
+    base = proposed_scales(d)
+    e = (rows - 1) * (columns - 1)
+    threshold = max(2 * base.L, 2 * base.L * rows * columns * e - base.L - e)
+    return SamplingScales(d, base.A, base.B, base.L, threshold)
+
+
 def small_entry_bound(rows: int, columns: int, minimum_margin: int,
                       threshold: int) -> Fraction:
     """Unclipped all-switchings bound for a marked cell of an unrestricted fiber.
@@ -68,6 +96,45 @@ def small_entry_bound_refined(rows: int, columns: int, minimum_margin: int,
     small_entry_bound(rows, columns, minimum_margin, threshold)
     e = (rows - 1) * (columns - 1)
     return Fraction(threshold * e, minimum_margin - threshold + 1 + e)
+
+
+def small_entry_tail_product_bound(rows: int, columns: int, minimum_margin: int,
+                                    threshold: int) -> Fraction:
+    """Upper bound 1-product((a-k)/(a+e-k), k=0..t-1) for P(Xij<t).
+
+    Conditioning on Xij>=k and subtracting k in that cell gives another
+    unrestricted uniform fiber; apply the refined zero-entry bound there.
+    Same domain and model restrictions as ``small_entry_bound``.
+    """
+    small_entry_bound(rows, columns, minimum_margin, threshold)
+    e = (rows - 1) * (columns - 1)
+    survival = Fraction(1)
+    for k in range(threshold):
+        survival *= Fraction(minimum_margin - k, minimum_margin + e - k)
+    return 1 - survival
+
+
+def small_entry_bound_linear(rows: int, columns: int, minimum_margin: int,
+                              threshold: int) -> Fraction:
+    """The simplified, unclipped tail bound t*e/(a+e).
+
+    This follows from the conditional-shift survival product. It is exact
+    for every threshold in equal-margin 2x2 tables. When e=0 the event is
+    empty; both this expression and the product bound give zero.
+    """
+    small_entry_bound(rows, columns, minimum_margin, threshold)
+    e = (rows - 1) * (columns - 1)
+    return Fraction(threshold * e, minimum_margin + e)
+
+
+def small_entry_mean_lower_bound(rows: int, columns: int,
+                                 minimum_margin: int) -> Fraction:
+    """E[Xij] >= a/(e+1), by summing the conditional-shift survival bound."""
+    if any(type(v) is not int for v in (rows, columns, minimum_margin)):
+        raise ValueError("all arguments must be integers")
+    if rows < 1 or columns < 1 or minimum_margin < 0:
+        raise ValueError("require positive dimensions and nonnegative margin")
+    return Fraction(minimum_margin, (rows - 1) * (columns - 1) + 1)
 
 
 def switching_outdegree(table: Sequence[Sequence[int]], row: int, column: int) -> int:
@@ -149,6 +216,30 @@ def scale_probability_bounds(s: SamplingScales) -> dict[str, Fraction]:
     }
 
 
+def padded_margin_scale_residuals(s: SamplingScales) -> dict[str, int]:
+    """The enlarged-margin sufficient conditions, with denominator U+1."""
+    result = scale_residuals(s)
+    del result["half_unpadding_success_new_switching"]
+    result["half_unpadding_success_enlarged_margins"] = s.U + 1 - 2 * s.L * s.d**2
+    return result
+
+
+def padded_margin_scale_probability_bounds(s: SamplingScales) -> dict[str, Fraction]:
+    """Use actual enlarged margin >=U+L at every padded marked cell."""
+    result = scale_probability_bounds(s)
+    result["unpadding_bad_fraction"] = Fraction(s.L * s.d**2, s.U + 1)
+    return result
+
+
+def shape_aware_scale_probability_bounds(rows: int, columns: int) -> dict[str, Fraction]:
+    """Bounds for shape_aware_scales using the stronger linear tail lemma."""
+    s = shape_aware_scales(rows, columns)
+    result = padded_margin_scale_probability_bounds(s)
+    e = (rows - 1) * (columns - 1)
+    result["unpadding_bad_fraction"] = Fraction(rows * columns * s.L * e, s.U + s.L + e)
+    return result
+
+
 # Polynomials have integer coefficients in ascending powers of d. The tiny
 # exact certificate format intentionally needs no symbolic algebra dependency.
 Polynomial = tuple[int, ...]
@@ -201,8 +292,19 @@ def proposed_scale_certificates() -> tuple[PolynomialCertificate, ...]:
     coefficients are nonnegative. This certifies a universal arithmetic
     statement, rather than testing finitely many dimension values.
     """
+    return _scale_certificates(128, False)
+
+
+def sharper_scale_certificates() -> tuple[PolynomialCertificate, ...]:
+    """Universal certificate for the U=64d^5 enlarged-margin construction."""
+    return _scale_certificates(64, True)
+
+
+def _scale_certificates(threshold_coefficient: int, enlarged_margin: bool
+                         ) -> tuple[PolynomialCertificate, ...]:
     one, d, d2, d3 = (1,), (0, 1), (0, 0, 1), (0, 0, 0, 1)
-    A, B, L, U = _scale(d2, 16), _scale(d3, 16), _scale(d3, 32), (0, 0, 0, 0, 0, 128)
+    A, B, L = _scale(d2, 16), _scale(d3, 16), _scale(d3, 32)
+    U = (0, 0, 0, 0, 0, threshold_coefficient)
     sub = lambda a, b: _add(a, _scale(b, -1))
     residuals = {
         "positive_integer_widths": sub(L, _scale(B, 2)),
@@ -217,6 +319,10 @@ def proposed_scale_certificates() -> tuple[PolynomialCertificate, ...]:
         "old_small_entry_lemma_domain": sub(L, _scale(d, 4)),
         "directional_half_acceptance_old_switching": sub(L, _scale(d3, 16)),
     }
+    if enlarged_margin:
+        del residuals["half_unpadding_success_new_switching"]
+        residuals["half_unpadding_success_enlarged_margins"] = sub(
+            _add(U, one), _scale(_mul(L, d2), 2))
     result = []
     for name, coefficients in residuals.items():
         shifted = tuple(sum(coefficients[j] * comb(j, k) * 14 ** (j - k)

@@ -38,6 +38,11 @@ polynomial certificates valid for every integer `d ≥ 14`. They do not
 certify the full analytic or machine implementation theorem. The upstream
 source and original review have not been altered.
 
+The [formal follow-up](scale-formalization.md) adds compiled numerical
+interfaces, a stronger optional `U=64d⁵` construction using the marked
+cell's own padding, and a further shape-aware threshold. The `128d⁵`
+construction below remains available as a conservative comparison.
+
 ## 1. Count every switching, instead of selecting one donor pair
 
 Let `Ω` be the nonempty finite set of all nonnegative integer `m × n`
@@ -307,8 +312,8 @@ The source's repair injection gives `Λ≤(1+d²)Z₀` for arbitrary positive
 powers. Its capacity proof uses the fact that a small cell has an
 incident original margin **strictly below `U`**. The source's bijection
 between successful enlarged tables and original tables also remains
-valid. At least half of all enlarged tables are successful by (9), and
-their count bounds `Z₀` above. Consequently stationary unpadding success
+valid. If `F` is the total enlarged-table count and `S` the successful
+count, then `F≥Z₀` and (9) gives `S≥F/2≥Z₀/2`. Consequently stationary unpadding success
 is at least `1/[2(1+d²)]` with exactly uniform output conditional on
 success, just as in the source.
 
@@ -333,7 +338,7 @@ Run:
 PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_scales.py' -v
 ```
 
-The nine tests pass. They include:
+The twelve current tests pass. The original audit checks include:
 
 - Every unrestricted fiber with total `0,…,6` in shapes `1×1,1×3,3×1,
   2×2,2×3,3×2,3×3`: 2,835 fibers, 7,238 tables, and 20,083 exact

@@ -30,7 +30,7 @@ dependency revisions:
 | Elan installer | `v4.2.4`, platform archive SHA-256 checked |
 
 [`formal/results/provenance.json`](../formal/results/provenance.json) records
-the 25 original source modules in the focused dependency closure, their Git
+the 86 original source modules in the expanded focused dependency closure, their Git
 blob IDs and SHA-256 hashes, and the original build-file hashes.
 [`formal/lake-manifest.json`](../formal/lake-manifest.json) contains the relevant
 dependency entries from the original manifest. We do not run `lake update`.
@@ -96,15 +96,42 @@ proves that an unordered exchange edge identifies the full display and then its
 unique overfull slot, adjacent level, and fixed-order prefix. Slot widths may
 differ and may be zero. Maximum recovery itself is already in the upstream
 proof; the new theorem allows the special slot and prefix to vary globally.
-The abstraction uses the same pointwise unit-removal operation. It does not
-yet verify each physical context's mapping into that abstraction.
+The abstraction uses the same pointwise unit-removal operation. The physical
+bridge below now supplies the actual context mapping.
+
+[`SmallEntrySwitching.lean`](../formal/Math115/SmallEntrySwitching.lean) counts
+actual four-cycle incidences, using a recoverable injection and the original
+table margin equations. [`SmallEntryTail.lean`](../formal/Math115/SmallEntryTail.lean)
+builds actual shifted-fiber bijections and proves the strong linear tail,
+finite-product survival bound, and mean bound. The supporting finite-sum and
+survival algebra modules contain the remaining arithmetic steps. See the
+[formal statement guide](small-entry-formalization.md) for hypotheses,
+zero cases, and exact exports.
+
+[`ScaleCertificate.lean`](../formal/Math115/ScaleCertificate.lean) discharges
+the generic scale arithmetic. [`PaddedMarginBridge.lean`](../formal/Math115/PaddedMarginBridge.lean)
+connects it to actual enlarged margins, marked-cell counts, a finite union
+bound, and the successful-padding bijection. Both `U=64d⁵` and the explicit
+shape-aware threshold yield enlarged-table count at most twice the original
+count under their stated margin hypotheses. The [scale guide](scale-formalization.md)
+separates these actual-table conclusions from generic arithmetic interfaces.
+
+[`PhysicalLeafEnergy.lean`](../formal/Math115/PhysicalLeafEnergy.lean) retains
+literal leaf edges through the actual physical embedding and the hard-weight
+limit. It uses the boxed auxiliary kernel required by the source repair
+injection, handles zero-child contrasts, proves unique ownership across
+prefixes, and sums all adjacent contrasts with coefficient
+`2+(p−1)(U+1)²/2` against physical energy. This is the continuous quarter
+coefficient; it does not claim the additional discrete-floor refinement.
+The [physical integration note](physical-transport-integration.md) records the
+exact interfaces and remaining exposure, repair, and chain-comparison steps.
 
 ## Verification levels
 
 - `standalone` compiles the sharp coefficient, repaired scalar bound, and global ownership abstraction
   without importing the large upstream proof tree, then checks their axioms.
 - `focused` compiles the unchanged upstream leaf-energy and root-transport
-  modules, then the new refinement, and checks the printed transitive axiom
+  modules, then all refinements imported by `Math115`, and checks their printed transitive axiom
   dependencies against `propext`, `Classical.choice`, and `Quot.sound`.
 - `full` attempts the unchanged `UnconditionalMain` and Comparator challenge
   modules (a much larger dependency closure), then audits the three original
@@ -124,18 +151,19 @@ additional verification level.
 
 ## Recorded outcome
 
-All focused checks passed on 8 October 2026 with Lean 4.34.1:
+The second local focused checkpoint passed on 8 October 2026 with Lean 4.34.1:
 
 | Check | Outcome | Evidence |
 |---|---|---|
-| Unchanged upstream dependency closure | All 25 original modules compiled, through `IntegerLeafEnergy` and `IntegerRootTransport` | [Original build log](../formal/results/upstream-focused-baseline.log) |
+| Unchanged upstream dependency closure | 86 original modules in the expanded import closure; source hashes and Git blobs recorded | [Provenance](../formal/results/provenance.json) and [focused build log](../formal/results/focused.log) |
 | Standalone refinements | Six exported declarations compiled and passed the axiom allowlist at 18:56:17 UTC | [Standalone log](../formal/results/standalone.log) |
-| Integrated refinements | Quarter coefficient, leaf-energy bound, actual-width extension, and upstream ownership bridge compiled | [Focused log](../formal/results/focused.log) |
-| Focused axiom audit | Nine new declarations and two original baseline declarations passed at 19:06:26 UTC | [Focused log](../formal/results/focused.log) |
-| Full `UnconditionalMain` / challenge build | Not run | Separate `full` mode is provided |
-| Secure Comparator | Not run; platform preflight exits 2 on macOS | [Comparator preflight log](../formal/results/comparator.log) |
+| Integrated refinements | Transport/ownership, actual switching and tails, scale/padding, and physical hard-limit/global-contrast modules compiled | [Focused log](../formal/results/focused.log) |
+| Focused axiom audit | 60 new declarations and two original baseline declarations passed at 21:52:20 UTC | [Focused log](../formal/results/focused.log) |
+| Earlier published focused checkpoint on fresh Linux | Passed at commit `5e5d6ef`; excludes the subsequent additions in this local checkpoint | [Run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847572556) |
+| Full original `UnconditionalMain` / challenge build | Running on Linux at `5e5d6ef`; no successful full-build claim yet | [Run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509) |
+| Secure Comparator | Hosted runner preflight failed: Landlock ABI 7, required ABI 9; expensive replay skipped | [Run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684) |
 
-The 17 audited declarations comprise 15 new declarations and two original
+The 68 audited declarations comprise 66 new declarations and two original
 baseline declarations. All depend only on the standard allowed axioms
 `propext`, `Classical.choice`, and `Quot.sound`; the ownership theorems use only
 `propext` and `Quot.sound`. No admissions occur in the new proof files.
@@ -144,7 +172,9 @@ declarations, axioms, source-file hashes, and verification scope.
 
 The unchanged source tree was clean before verification, and all nine focused
 dependency manifest entries match the original entries exactly. This validates
-the local transport improvements and abstract ownership results; it does not
-certify the proposed global mixing exponents, the full sampler, or new physical
-context embeddings. The original three sampling/counting machine theorems have
-not been independently reverified by this focused run.
+the local transport improvements, actual table tail and padding results,
+physical embeddings, and global adjacent-contrast sum. It does not certify the
+proposed global mixing exponents or full sampler. The original three
+sampling/counting machine theorems have not been independently reverified by
+this focused run. [Linux provenance](../formal/results/linux-runs.json) records
+separate workflow outcomes at their own source commit.

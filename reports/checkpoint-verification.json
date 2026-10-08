@@ -1,6 +1,8 @@
 {
-  "recorded_at_utc": "2026-10-08T19:02:42.221042+00:00",
-  "scope": "Python research checkpoint; not a full sampler or Lean verification receipt.",
+  "schema_version": 2,
+  "recorded_at_utc": "2026-10-08T21:52:38.043464+00:00",
+  "scope": "Second Python research checkpoint; exact covered test files and final source hashes listed below. Not a full sampler or Lean verification receipt.",
+  "prior_checkpoint_commit": "25b857bcdd641523c8ebb0d943c06e45013e2b06",
   "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "environment": {
     "python": "3.14.3",
@@ -10,23 +12,48 @@
   },
   "observed_checks": [
     {
-      "command": "python -m unittest discover -s tests -v",
+      "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v",
       "exit_code": 0,
-      "tests_passed": 78
+      "tests_passed": 128,
+      "covered_test_files": [
+        "tests/test_budgets.py",
+        "tests/test_commute_scaling.py",
+        "tests/test_kernels.py",
+        "tests/test_mixtures.py",
+        "tests/test_optimize.py",
+        "tests/test_padding_barrier.py",
+        "tests/test_scales.py",
+        "tests/test_tables.py",
+        "tests/test_transport_bounds.py",
+        "tests/test_workers.py"
+      ]
     },
     {
-      "command": "python experiments/independent_crosscheck.py --output reports/independent-crosscheck.json",
+      "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -p test_mixtures.py -v",
+      "exit_code": 0,
+      "tests_passed": 10,
+      "reason": "Recheck after renaming certificate-size metadata; final source hashes below."
+    },
+    {
+      "command": "PYTHONPATH=src .venv/bin/python -S experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json",
+      "exit_code": 0,
+      "verified_gap_intervals": 8,
+      "verified_family_upper_bounds": 4,
+      "verified_strict_improvements": 6
+    },
+    {
+      "command": "PYTHONPATH=src .venv/bin/python experiments/independent_crosscheck.py --output reports/independent-crosscheck.json",
       "exit_code": 0,
       "report": "reports/independent-crosscheck.json"
     },
     {
-      "command": "python scripts/verify_sources.py --checkout .upstream/openai-math",
+      "command": "PYTHONPATH=src .venv/bin/python scripts/verify_sources.py --checkout .upstream/openai-math",
       "exit_code": 0,
       "bundle_sha256_verified": 5,
       "upstream_git_blobs_verified": 38
     },
     {
-      "command": "python 115/audit115.py --output .local/audit115-rerun.json",
+      "command": "PYTHONPATH=src .venv/bin/python 115/audit115.py --output .local/audit115-rerun.json",
       "exit_code": 0,
       "parameter_cases": 100,
       "path_sequences": 896,
@@ -34,20 +61,12 @@
       "spectral_instances": 5
     },
     {
-      "command": "python experiments/scale_report.py --output reports/scale-certificates.json",
+      "command": "PYTHONPATH=src .venv/bin/python experiments/scale_report.py --output reports/scale-certificates.json",
       "exit_code": 0
     },
     {
-      "command": "python experiments/budget_report.py --output reports/budget-comparison.json",
-      "exit_code": 0
-    },
-    {
-      "command": "python examples/sparse_commute.py --spectral --output reports/sparse-commute.json",
-      "exit_code": 0
-    },
-    {
-      "command": "python examples/linear_metric_bounds.py --output reports/linear-bounds.json",
-      "exit_code": 0
+      "check": "Saved report source hashes agree with current files",
+      "verified_hashes": 22
     }
   ],
   "source_sha256": {
@@ -55,34 +74,50 @@
     "examples/linear_metric_bounds.py": "e8fb39733559466bdd13eacea739d66e5eedcaa7c0e2f6e1ae3d8ae558511157",
     "examples/sparse_commute.py": "82198032e99be337930d07a333511ac92ba514b868475c32f5cba68fe9d38c72",
     "examples/synthetic_commute.json": "9f70e117500284a4101d018145d60a644ca0fb1bd2e3a5b11b1b3f1269734c0e",
-    "experiments/budget_report.py": "3cf1a5be795cccec487730f95d11519f3d94b5b33102b493b87f8e97c0f26bff",
+    "experiments/budget_report.py": "71767d9b4ff3ac811a8ede0b60a1091794e1dfb5c4bfce31520d848f967c2531",
+    "experiments/commute_scaling.py": "b119730964bd59df605c9ae2e3f782e83d8d6520adbccd8521a74d2c5417955b",
+    "experiments/cycle_mixtures.py": "7b568ac2e2a4c2ae43d647b84c75c0bcda1d7eac434fa2d8cba2412df1f8ab49",
     "experiments/independent_crosscheck.py": "d7eb189cbe45e4907251e035f161a326128cb74975ac52cb672a6546521a77ae",
-    "experiments/scale_report.py": "bbe3f0d5e9a0c3e5ee2da207a561aca7e4f742cb8765d0a36a2feab57acbae41",
+    "experiments/padding_barrier.py": "15d23781ac4133c5066d66fdd492191e9a15fca18fab1a6dc797319f4ed85b25",
+    "experiments/scale_report.py": "d294edcf4cf4b8de5de73cd914df36ce909ffc7e74fb8bcee4e834020b1f68be",
+    "experiments/worker_baseline.py": "0814aa468e9f3708b2b304fabb259b8ff372bf91837a2ba54660c95a3bbf80da",
     "scripts/verify_sources.py": "9087c31a728fa637641361c4c12c35bc728919e75a4759bad93d4a75b1caa536",
     "src/contingency115/__init__.py": "7996514dfb27c1af0089fce91a4119a49d72df1d24d24dcdd1ab2d22c7e23ca9",
-    "src/contingency115/budgets.py": "5fde0a4b343faf1024a016499e80930775b0e23f71a0065144cd2eac7d67d763",
+    "src/contingency115/budgets.py": "0faba8878f641d31822e7002f69065e76208fe35c36c7c4835d8183ddfcdfee4",
     "src/contingency115/kernels.py": "6931734601d48bcbff0b2261932f212f4201a910078c08c03a1b213f7cf12187",
-    "src/contingency115/optimize.py": "4ee72acb00cb83d0b45867cfd13130121dea3fb56099d4c13903bf5c4d31f9c9",
-    "src/contingency115/scales.py": "a8f58dccfad66782ce0bb46c44cdaa8ef8a6b6f1e60c879751a1991fdb35a4d4",
+    "src/contingency115/mixtures.py": "01643fa7e2fd80c15115baa655a74c817b2a5260c5bffa0bee7dbe4cc5303bf3",
+    "src/contingency115/optimize.py": "db0690c995a4719adb23dd26a12da6d0243c8aa5e065e22f5410ad7ce8060107",
+    "src/contingency115/padding.py": "690ed0a14caa7f8a1f1087769961fb4787f0a25855d1863d1c7062ad64d9287c",
+    "src/contingency115/scales.py": "d025091f7ba521ba467e60761aea4f92459dec528bc0e7cedf3f39dd83ef5ca6",
     "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019",
     "src/contingency115/transport_bounds.py": "44551ab0d8b367323f534a5c0a7aab48633af4fc654bdb1f2d6dc8266c290b96",
-    "tests/test_budgets.py": "a8964ed3dcc175269d50a43322f8f0d74995559fdc6937c851c3f7304d0a4353",
+    "src/contingency115/workers.py": "4158516c6a5e84f5e3d50a6192ac7eaa0dc5d4929737b4ec2f8a173e82fb78b2",
+    "tests/test_budgets.py": "445e744b6d0bb7a3dbb192f2f324a40918ec01307d195293d2563289cb538645",
+    "tests/test_commute_scaling.py": "720767f83addbc104a8e959d646eef683a1389122edab77dfc5052ac11ebe61b",
     "tests/test_kernels.py": "5f4392b355bfe4155639909123ccbd53de93532c23f73497704d0c1a746affb2",
-    "tests/test_optimize.py": "90b5d4460e483071c2d44bdbe2aa10018c101e87ec47246bcafef04c25becab2",
-    "tests/test_scales.py": "fdde61e0b46a4c924ac17f12b2a3495791e9eb1a31bffb2a5eb1028d6622a1cd",
+    "tests/test_mixtures.py": "b0fca2958814ce8f084c8970be61529630281ddd2b5bc733a359a1ac16a31a1d",
+    "tests/test_optimize.py": "00578d8d9c488c434083e4cd9a36fedc9aea0608f4be4366e212c4019677cbed",
+    "tests/test_padding_barrier.py": "abca8453fc0c9ce0f4ec3b0c2b9c2fa4f2d16b172cf66a281ff79ba43682194a",
+    "tests/test_scales.py": "a4ba9efbbf118173b9700a66a22ec44d31bd6babc708468cea651ba44d3d6f3b",
     "tests/test_tables.py": "2c3edc49820bd07497f351d54b576a3bf9436b0c40f3dba02a35e2bb5141dd30",
-    "tests/test_transport_bounds.py": "2f0e703dda6afa8875abdb86f2b3f7b94144977a78db93841afee69ed51473db"
+    "tests/test_transport_bounds.py": "2f0e703dda6afa8875abdb86f2b3f7b94144977a78db93841afee69ed51473db",
+    "tests/test_workers.py": "78b044cf6c5ade47e4fb080d3428457d891ce9d89a13ac88e528ae25b291b7d4"
   },
   "report_sha256": {
-    "reports/budget-comparison.json": "121f5ec12241dce85e6cb28a399ffdb10b38df52416108305021db944baee7cd",
-    "reports/independent-crosscheck.json": "a11305edcd940575768b1084713355ff993ce230832442d7f002ea3ebf38a33c",
+    "reports/budget-comparison.json": "2c4953e51108c4932b983997ce9cf3fd7c902bd7077a1df008901049435266d0",
+    "reports/independent-crosscheck.json": "5e45ff9f992f7014ace040d599a9099f383d88f346536fe760a64e83cb9df809",
     "reports/linear-bounds.json": "8ebc585fcbf7f921f6d9779d3d6576ac95898c2e280947febeca9c40841838da",
-    "reports/scale-certificates.json": "07a31614a5ec13a3fde5e0c63942c16599671f4c4de8ce9509c6de1d4c85749d",
-    "reports/sparse-commute.json": "f7f0ea71b6ed8c269a300808468cb56281b10cbcc01049cd4193f225875e10a4"
+    "reports/scale-certificates.json": "33bc5b81aea62e22a4ed3f2879c20c53147b1d983031e5669aed06250de7bf51",
+    "reports/sparse-commute.json": "f7f0ea71b6ed8c269a300808468cb56281b10cbcc01049cd4193f225875e10a4",
+    "reports/commute-scaling.json": "5b2840ddfc2ad3edf816cc170ed90360339863bf97140c1a6c99636c78d8fc28",
+    "reports/worker-baseline.json": "9cf536c90b13939892129d972a0b614467041f8cd4d41eb246a1882c1bebee96",
+    "reports/padding-barrier.json": "a2006026cefaec96feaece207c82b55ab01646386f874564d28690515682ce2a",
+    "reports/cycle-mixtures.json": "beeeb453184a9c30418072c585e9069ea73dd7d8face3f1a275d2ed4b9690636"
   },
   "limitations": [
     "Finite exact oracles are bounded checks, not universal correctness proofs.",
-    "Spectral diagnostics use floating-point eigensolvers.",
+    "Cycle search is numerical; saved spectral intervals and fixed-catalog upper bounds replay with exact rational arithmetic.",
+    "Synthetic timings are local measurements. Benchmark work limits and target laws are explicit.",
     "Full sampler integration, revised machine cost proof and complete Lean/Comparator verification remain open."
   ]
 }

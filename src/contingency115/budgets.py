@@ -379,16 +379,94 @@ def counting_bin_gap_bound(d: int, bin_scale: int, *, sharp_constant: bool = Tru
     return 2 * (constant * d**2 * bin_scale) ** 2
 
 
+def _support_bounds(bounds: tuple[int | Fraction, int | Fraction]) -> tuple[Fraction, Fraction]:
+    if not isinstance(bounds, tuple) or len(bounds) != 2:
+        raise TypeError("support must be a pair of exact rational endpoints")
+    lower, upper = (_rational("support endpoint", value) for value in bounds)
+    if not 0 < lower < upper:
+        raise ValueError("support endpoints must satisfy 0 < lower < upper")
+    return lower, upper
+
+
+def relative_concentration_denominator(
+    bounds: tuple[int | Fraction, int | Fraction],
+    sigma: int | Fraction,
+    *,
+    method: Literal["hoeffding", "bernstein"] = "bernstein",
+) -> Fraction:
+    """C for a tail <= 2*exp(-N*sigma**2/C), conditional on given support.
+
+    Requires independent samples of a random variable in [lower,upper].
+    The supplied range is a hypothesis; this function does not certify it.
+    """
+    lower, upper = _support_bounds(bounds)
+    sigma = _rational("sigma", sigma)
+    if sigma <= 0:
+        raise ValueError("sigma must be positive")
+    width = upper - lower
+    if method == "hoeffding":
+        return width**2 / (2 * lower**2)
+    if method == "bernstein":
+        return width**2 / (2 * lower * upper) + Fraction(2, 3) * (width / lower) * sigma
+    raise ValueError("method must be 'hoeffding' or 'bernstein'")
+
+
+@dataclass(frozen=True)
+class CorrectionRoundingBudget:
+    sigma: Fraction
+    grid_denominator: int
+    bisection_steps: int
+    exponent_rounding_error_bound: Fraction
+    root_absolute_error_bound: Fraction
+    pointwise_relative_error_bound: Fraction
+    computed_correction_lower_bound: Fraction
+    computed_correction_upper_bound: Fraction
+
+
+def correction_rounding_budget(
+    sigma: int | Fraction,
+    *,
+    correction_bounds: tuple[int | Fraction, int | Fraction] = (Fraction(1, 8), Fraction(4)),
+) -> CorrectionRoundingBudget:
+    """The manuscript's deterministic correction arithmetic, for sigma<=1/10.
+
+    Requires beta in [-2,2], nearest-grid rounding, exact power comparisons
+    in bisection on [0,8], and the final interval midpoint. It does not
+    execute bisection or evaluate the ideal (possibly irrational) observable.
+    The interval bounds require the supplied positive exact correction support.
+    A custom support does not establish the beta or bisection hypotheses.
+    """
+    sigma = _rational("sigma", sigma)
+    if not 0 < sigma <= Fraction(1, 10):
+        raise ValueError("sigma must lie in (0, 1/10]")
+    lower, upper = _support_bounds(correction_bounds)
+    grid = 1 << ceil_log2(32 / sigma)
+    depth = ceil_log2(512 / sigma)
+    exponent_error = Fraction(1, 2 * grid)
+    root_error = Fraction(4, 1 << depth)
+    # e^u-1 <= 2u for 0<=u<=1/2. The ideal 2**beta is >=1/4.
+    relative_error = 2 * exponent_error + 4 * root_error
+    return CorrectionRoundingBudget(
+        sigma, grid, depth, exponent_error, root_error, relative_error,
+        (1 - sigma) * lower, (1 + sigma) * upper,
+    )
+
+
 @dataclass(frozen=True)
 class InnerCountingSchedule:
     dimension: int
     bin_scale: int
     annealing_height: int
+    annealing_step: int
     relative_accuracy: Fraction
     failure_probability: Fraction
+    sigma_policy: str
     sigma: Fraction
     concentration: str
     allocation: str
+    correction_support_policy: str
+    correction_lower_bound: Fraction
+    correction_upper_bound: Fraction
     concentration_denominator: Fraction
     ratio_concentration_denominator: Fraction
     average_tail_bits: int
@@ -397,12 +475,13 @@ class InnerCountingSchedule:
     total_draw_bound: int
     draw_error_bits: int
     inverse_gap_bound: Fraction
+    log2_inverse_min_mass_bound: int
     steps_per_bin_sample: int
 
     @property
     def samples_per_average(self) -> int:
         """Common sufficient maximum; range-specific ratio counts may be less."""
-        return self.correction_samples
+        return max(self.ratio_samples_per_average, self.correction_samples)
 
 
 def inner_counting_schedule(
@@ -414,15 +493,25 @@ def inner_counting_schedule(
     *,
     concentration: Literal["hoeffding", "bernstein"] = "bernstein",
     allocation: Literal["common", "by_range"] = "by_range",
+    sigma_policy: Literal["source", "product"] = "product",
+    correction_support: Literal["published", "source_lipschitz"] | tuple[int | Fraction, int | Fraction] = "source_lipschitz",
+    annealing_step: int | None = None,
     inverse_gap_bound: int | Fraction | None = None,
 ) -> InnerCountingSchedule:
     """Independent inner-oracle averages; not an outer-trajectory guarantee.
 
-    Requires ideal observables in [1/8,4] (ratios in [1/2,1]), fresh
-    independent samples, <= H+1 averages, the original coupling/rounding,
-    and pi_min**-1 <= 2**H * B**d for each bin chain. By default, the
-    narrower ratio range receives fewer samples. Only correction samples
-    need offsets; Q=H*N_ratio+(d+1)*N_correction bounds all draws.
+    Requires positive supported corrections (ratios in [1/2,1]), fresh
+    independent samples, <= j+1 averages, and the original coupling and
+    deterministic correction arithmetic (see correction_rounding_budget),
+    and pi_min**-1 <= 2**j * B**d for each used bin chain. Here j defaults
+    to H but may be a specified annealing_step <= H. Only correction
+    samples need offsets; Q=j*N_ratio+(d+1)*N_correction bounds all draws.
+    The default product policy spends more of the proved product-error
+    allowance; sigma_policy='source' reproduces the previous 50*(H+1) rule.
+    Default source_lipschitz support [9/20,10/9] additionally requires the
+    original bin populations N>=100*d*B and scaled penalty Lipschitz<=1/8.
+    'published' keeps [1/8,4]; a rational endpoint pair is an unverified
+    caller-supplied support bound. This API does not prove bin geometry.
     """
     _integer("d", d, 1)
     _integer("bin_scale", bin_scale, 1)
@@ -432,32 +521,43 @@ def inner_counting_schedule(
     if not (0 < xi < Fraction(1, 4) and 0 < theta < Fraction(1, 4)):
         raise ValueError("accuracy and failure probability must lie in (0, 1/4)")
     height = annealing_height
-    sigma = xi / (50 * (height + 1))
-    if concentration == "hoeffding":
-        denominator = Fraction(961, 2)
-        ratio_denominator = Fraction(1, 2)
-    elif concentration == "bernstein":
-        denominator = Fraction(961, 64) + Fraction(62, 3) * sigma
-        ratio_denominator = Fraction(1, 4) + Fraction(2, 3) * sigma
+    step = height if annealing_step is None else _integer("annealing_step", annealing_step)
+    if step > height:
+        raise ValueError("annealing_step must not exceed annealing_height")
+    if sigma_policy == "source":
+        sigma = xi / (50 * (height + 1))
+    elif sigma_policy == "product":
+        sigma = xi / ((step + 2) * (1 + xi))
     else:
-        raise ValueError("concentration must be 'hoeffding' or 'bernstein'")
-    average_bits = ceil_log2(8 * (height + 1) / theta)
+        raise ValueError("sigma_policy must be 'source' or 'product'")
+    if correction_support == "published":
+        support_policy, lower, upper = "published", Fraction(1, 8), Fraction(4)
+    elif correction_support == "source_lipschitz":
+        support_policy, lower, upper = "source_lipschitz", Fraction(9, 20), Fraction(10, 9)
+    elif isinstance(correction_support, tuple):
+        lower, upper = _support_bounds(correction_support)
+        support_policy = "caller_supplied"
+    else:
+        raise ValueError("correction_support must be a named policy or a rational endpoint pair")
+    denominator = relative_concentration_denominator((lower, upper), sigma, method=concentration)
+    ratio_denominator = relative_concentration_denominator((Fraction(1, 2), Fraction(1)), sigma, method=concentration)
+    average_bits = ceil_log2(8 * (step + 1) / theta)
     samples = ceil_fraction(LN2_UPPER * denominator * average_bits / sigma**2)
+    ratio_samples = ceil_fraction(LN2_UPPER * ratio_denominator * average_bits / sigma**2)
     if allocation == "common":
-        ratio_samples = samples
-    elif allocation == "by_range":
-        ratio_samples = ceil_fraction(LN2_UPPER * ratio_denominator * average_bits / sigma**2)
-    else:
+        samples = ratio_samples = max(samples, ratio_samples)
+    elif allocation != "by_range":
         raise ValueError("allocation must be 'common' or 'by_range'")
-    draws = height * ratio_samples + (d + 1) * samples
+    draws = step * ratio_samples + (d + 1) * samples
     draw_bits = ceil_log2(8 * draws / theta)
     gap = _rational(
         "inverse_gap_bound",
         counting_bin_gap_bound(d, bin_scale) if inverse_gap_bound is None else inverse_gap_bound,
     )
-    mass_bits = height + d * ceil_log2(bin_scale)
+    mass_bits = step + d * ceil_log2(bin_scale)
     steps = mixing_steps(gap, mass_bits, draw_bits)
     return InnerCountingSchedule(
-        d, bin_scale, height, xi, theta, sigma, concentration, allocation, denominator,
-        ratio_denominator, average_bits, ratio_samples, samples, draws, draw_bits, gap, steps,
+        d, bin_scale, height, step, xi, theta, sigma_policy, sigma, concentration, allocation,
+        support_policy, lower, upper, denominator, ratio_denominator, average_bits,
+        ratio_samples, samples, draws, draw_bits, gap, mass_bits, steps,
     )

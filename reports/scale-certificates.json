@@ -1,10 +1,10 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "arithmetic_status": "All shifted coefficients are checked nonnegative; these polynomial inequalities hold for every d>=14.",
   "mathematical_status": "New gap allowances are conditional on source lemmas and the manuscript derivations in docs/transport-localization.md and docs/scale-audit.md.",
   "scope": "Ideal small-chain inverse gap, not complete sampler bit complexity, observed gap, or measured runtime.",
-  "proof_integration": "Full physical-context, scale, machine and Comparator integration remains open.",
+  "proof_integration": "Actual ordinary-table switching, product/linear tails and mean, and both U=64d^5 and shape-aware enlarged-margin padding counts compile in Lean. Full transport, revised machine and Comparator integration remains open; see the formal verification ledger for exact checked sources.",
   "reproduce": "PYTHONPATH=src python3 experiments/scale_report.py --output reports/scale-certificates.json",
   "universal_certificates": [
     {
@@ -164,6 +164,164 @@
       ]
     }
   ],
+  "sharper_universal_certificates": [
+    {
+      "name": "positive_integer_widths",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "shifted_coefficients": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "half_inner_volume",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        8
+      ],
+      "shifted_coefficients": [
+        21952,
+        4704,
+        336,
+        8
+      ]
+    },
+    {
+      "name": "within_bin_comparison",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "shifted_coefficients": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "layer_sum_normalizer",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "shifted_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "directional_half_acceptance_new_switching",
+      "lower": 14,
+      "coefficients": [
+        0,
+        -4,
+        0,
+        32
+      ],
+      "shifted_coefficients": [
+        87752,
+        18812,
+        1344,
+        32
+      ]
+    },
+    {
+      "name": "unpadding_threshold_at_most_half_margin",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        -64,
+        0,
+        64
+      ],
+      "shifted_coefficients": [
+        34245120,
+        12255488,
+        1753472,
+        125376,
+        4480,
+        64
+      ]
+    },
+    {
+      "name": "old_small_entry_lemma_domain",
+      "lower": 14,
+      "coefficients": [
+        0,
+        -4,
+        0,
+        32
+      ],
+      "shifted_coefficients": [
+        87752,
+        18812,
+        1344,
+        32
+      ]
+    },
+    {
+      "name": "directional_half_acceptance_old_switching",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        16
+      ],
+      "shifted_coefficients": [
+        43904,
+        9408,
+        672,
+        16
+      ]
+    },
+    {
+      "name": "half_unpadding_success_enlarged_margins",
+      "lower": 14,
+      "coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "shifted_coefficients": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
   "illustrative_comparisons": [
     {
       "d": 14,
@@ -175,6 +333,13 @@
         "L": 87808,
         "U": 68841472
       },
+      "sharper_enlarged_margin_scales": {
+        "d": 14,
+        "A": 3136,
+        "B": 43904,
+        "L": 87808,
+        "U": 34420736
+      },
       "probability_and_geometry_bounds": {
         "inner_volume_loss": "1/4",
         "log_density_change_per_bin": "1",
@@ -182,6 +347,14 @@
         "directional_completion_rejection": "1/3136",
         "best_edge_orientation_rejection": "1/6272",
         "unpadding_bad_fraction": "17210368/68753665"
+      },
+      "sharper_probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/3136",
+        "best_edge_orientation_rejection": "1/6272",
+        "unpadding_bad_fraction": "17210368/34420737"
       },
       "inverse_gap_allowances": {
         "source_explicit_original_scales": {
@@ -199,6 +372,10 @@
         "localized_new_scales": {
           "exact_integer": "335120582931961634357554515706818964992",
           "log10_display_only": 38.525201102795734
+        },
+        "localized_enlarged_margin_scales": {
+          "exact_integer": "20945037345998403621964129767414347264",
+          "log10_display_only": 37.32108113906566
         }
       }
     },
@@ -212,6 +389,13 @@
         "L": 219488,
         "U": 316940672
       },
+      "sharper_enlarged_margin_scales": {
+        "d": 19,
+        "A": 5776,
+        "B": 109744,
+        "L": 219488,
+        "U": 158470336
+      },
       "probability_and_geometry_bounds": {
         "inner_volume_loss": "1/4",
         "log_density_change_per_bin": "1",
@@ -219,6 +403,14 @@
         "directional_completion_rejection": "1/5776",
         "best_edge_orientation_rejection": "1/11552",
         "unpadding_bad_fraction": "79235168/316721185"
+      },
+      "sharper_probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/5776",
+        "best_edge_orientation_rejection": "1/11552",
+        "unpadding_bad_fraction": "79235168/158470337"
       },
       "inverse_gap_allowances": {
         "source_explicit_original_scales": {
@@ -236,6 +428,10 @@
         "localized_new_scales": {
           "exact_integer": "719673824545075154876722410024905254434176",
           "log10_display_only": 41.8571357071305
+        },
+        "localized_enlarged_margin_scales": {
+          "exact_integer": "44979614459821458825120428200966233404544",
+          "log10_display_only": 40.653015728585395
         }
       }
     },
@@ -249,6 +445,13 @@
         "L": 864000,
         "U": 3110400000
       },
+      "sharper_enlarged_margin_scales": {
+        "d": 30,
+        "A": 14400,
+        "B": 432000,
+        "L": 864000,
+        "U": 1555200000
+      },
       "probability_and_geometry_bounds": {
         "inner_volume_loss": "1/4",
         "log_density_change_per_bin": "1",
@@ -256,6 +459,14 @@
         "directional_completion_rejection": "1/14400",
         "best_edge_orientation_rejection": "1/28800",
         "unpadding_bad_fraction": "777600000/3109536001"
+      },
+      "sharper_probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/14400",
+        "best_edge_orientation_rejection": "1/28800",
+        "unpadding_bad_fraction": "777600000/1555200001"
       },
       "inverse_gap_allowances": {
         "source_explicit_original_scales": {
@@ -273,6 +484,10 @@
         "localized_new_scales": {
           "exact_integer": "68088476069037143466531632584492600625496307200",
           "log10_display_only": 46.833073614069455
+        },
+        "localized_enlarged_margin_scales": {
+          "exact_integer": "4255529758419306182292684965422529335802304000",
+          "log10_display_only": 45.62895363183241
         }
       }
     },
@@ -286,6 +501,13 @@
         "L": 32000000,
         "U": 1280000000000
       },
+      "sharper_enlarged_margin_scales": {
+        "d": 100,
+        "A": 160000,
+        "B": 16000000,
+        "L": 32000000,
+        "U": 640000000000
+      },
       "probability_and_geometry_bounds": {
         "inner_volume_loss": "1/4",
         "log_density_change_per_bin": "1",
@@ -293,6 +515,14 @@
         "directional_completion_rejection": "1/160000",
         "best_edge_orientation_rejection": "1/320000",
         "unpadding_bad_fraction": "320000000000/1279968000001"
+      },
+      "sharper_probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/160000",
+        "best_edge_orientation_rejection": "1/320000",
+        "unpadding_bad_fraction": "320000000000/640000000001"
       },
       "inverse_gap_allowances": {
         "source_explicit_original_scales": {
@@ -310,8 +540,176 @@
         "localized_new_scales": {
           "exact_integer": "841984529716354201241519130653333910970869478208064800000000",
           "log10_display_only": 59.92530411202157
+        },
+        "localized_enlarged_margin_scales": {
+          "exact_integer": "52624033107395475155190022663333477747381105871240382720000",
+          "log10_display_only": 58.72118412936666
         }
       }
     }
-  ]
+  ],
+  "shape_aware_comparisons": [
+    {
+      "rows": 1,
+      "columns": 1,
+      "donor_pairs_per_marked_cell": 0,
+      "large_cell_count_allowance": 1,
+      "scales": {
+        "d": 14,
+        "A": 3136,
+        "B": 43904,
+        "L": 87808,
+        "U": 175616
+      },
+      "threshold_formula": "max(2L, 2L*mn*(m-1)*(n-1)-L-(m-1)*(n-1))",
+      "probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/3136",
+        "best_edge_orientation_rejection": "1/6272",
+        "unpadding_bad_fraction": "0"
+      },
+      "localized_inverse_gap_allowance": {
+        "exact_integer": "14192674241122370349064120832",
+        "small_slot_allowance": "p=d; singleton shapes are deterministic and need no gap estimate"
+      }
+    },
+    {
+      "rows": 2,
+      "columns": 2,
+      "donor_pairs_per_marked_cell": 1,
+      "large_cell_count_allowance": 4,
+      "scales": {
+        "d": 19,
+        "A": 5776,
+        "B": 109744,
+        "L": 219488,
+        "U": 1536415
+      },
+      "threshold_formula": "max(2L, 2L*mn*(m-1)*(n-1)-L-(m-1)*(n-1))",
+      "probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/5776",
+        "best_edge_orientation_rejection": "1/11552",
+        "unpadding_bad_fraction": "1/2"
+      },
+      "localized_inverse_gap_allowance": {
+        "exact_integer": "397428316874550020986565182038400",
+        "small_slot_allowance": "p=d; singleton shapes are deterministic and need no gap estimate"
+      }
+    },
+    {
+      "rows": 2,
+      "columns": 3,
+      "donor_pairs_per_marked_cell": 2,
+      "large_cell_count_allowance": 6,
+      "scales": {
+        "d": 22,
+        "A": 7744,
+        "B": 170368,
+        "L": 340736,
+        "U": 7836926
+      },
+      "threshold_formula": "max(2L, 2L*mn*(m-1)*(n-1)-L-(m-1)*(n-1))",
+      "probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/7744",
+        "best_edge_orientation_rejection": "1/15488",
+        "unpadding_bad_fraction": "1/2"
+      },
+      "localized_inverse_gap_allowance": {
+        "exact_integer": "568039813089777736808795559760935424",
+        "small_slot_allowance": "p=d; singleton shapes are deterministic and need no gap estimate"
+      }
+    },
+    {
+      "rows": 3,
+      "columns": 5,
+      "donor_pairs_per_marked_cell": 8,
+      "large_cell_count_allowance": 15,
+      "scales": {
+        "d": 34,
+        "A": 18496,
+        "B": 628864,
+        "L": 1257728,
+        "U": 300596984
+      },
+      "threshold_formula": "max(2L, 2L*mn*(m-1)*(n-1)-L-(m-1)*(n-1))",
+      "probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/18496",
+        "best_edge_orientation_rejection": "1/36992",
+        "unpadding_bad_fraction": "1/2"
+      },
+      "localized_inverse_gap_allowance": {
+        "exact_integer": "11192832077427850447630355667717222246668800",
+        "small_slot_allowance": "p=d; singleton shapes are deterministic and need no gap estimate"
+      }
+    },
+    {
+      "rows": 5,
+      "columns": 50,
+      "donor_pairs_per_marked_cell": 196,
+      "large_cell_count_allowance": 250,
+      "scales": {
+        "d": 316,
+        "A": 1597696,
+        "B": 504871936,
+        "L": 1009743872,
+        "U": 98953889711932
+      },
+      "threshold_formula": "max(2L, 2L*mn*(m-1)*(n-1)-L-(m-1)*(n-1))",
+      "probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/1597696",
+        "best_edge_orientation_rejection": "1/3195392",
+        "unpadding_bad_fraction": "1/2"
+      },
+      "localized_inverse_gap_allowance": {
+        "exact_integer": "9606566154478271236445446846364943383986351626072841668533556545820672",
+        "small_slot_allowance": "p=d; singleton shapes are deterministic and need no gap estimate"
+      }
+    },
+    {
+      "rows": 5,
+      "columns": 300,
+      "donor_pairs_per_marked_cell": 1196,
+      "large_cell_count_allowance": 1500,
+      "scales": {
+        "d": 1816,
+        "A": 52765696,
+        "B": 95822503936,
+        "L": 191645007872,
+        "U": 687622096599726932
+      },
+      "threshold_formula": "max(2L, 2L*mn*(m-1)*(n-1)-L-(m-1)*(n-1))",
+      "probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/52765696",
+        "best_edge_orientation_rejection": "1/105531392",
+        "unpadding_bad_fraction": "1/2"
+      },
+      "localized_inverse_gap_allowance": {
+        "exact_integer": "141140027659309668288984910030540104028013363507295233457140916114679581517504982937968640",
+        "small_slot_allowance": "p=d; singleton shapes are deterministic and need no gap estimate"
+      }
+    }
+  ],
+  "source_sha256": {
+    "experiments/scale_report.py": "d294edcf4cf4b8de5de73cd914df36ce909ffc7e74fb8bcee4e834020b1f68be",
+    "src/contingency115/scales.py": "d025091f7ba521ba467e60761aea4f92459dec528bc0e7cedf3f39dd83ef5ca6",
+    "src/contingency115/transport_bounds.py": "44551ab0d8b367323f534a5c0a7aab48633af4fc654bdb1f2d6dc8266c290b96",
+    "src/contingency115/budgets.py": "0faba8878f641d31822e7002f69065e76208fe35c36c7c4835d8183ddfcdfee4"
+  }
 }
