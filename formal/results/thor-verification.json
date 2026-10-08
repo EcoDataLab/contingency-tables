@@ -1,0 +1,3191 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/EcoDataLab/contingency-tables",
+  "source_commit": "b14082b286b99d0b1ef84efcf59e4d202493d16b",
+  "scope": "Independent native Windows Python verification and focused Lean compiler check; no secure Comparator claim.",
+  "environment": {
+    "host_label": "Thor",
+    "os": "Windows 11 Pro",
+    "os_version": "10.0.26200",
+    "architecture": "x86_64",
+    "logical_processors": 24,
+    "powershell_version": "5.1.26100.9549",
+    "git_version": "2.52.0.windows.1",
+    "curl_version": "8.21.0",
+    "tar_version": "3.8.8"
+  },
+  "tooling": {
+    "python_version": "3.14.8",
+    "python_sha256": "4873947a8afc037846b180312b83c744a4146a851cfd316a75c3125a4d8299da",
+    "python_source": "https://www.python.org/ftp/python/3.14.8/windows-3.14.8.json",
+    "lean_version": "4.34.1",
+    "lean_sha256": "667394ecf6708a228221eb4919c0bdb419966b7408bcf3089a9096a6f4ae62c9",
+    "lean_source": "https://api.github.com/repos/leanprover/lean4/releases/tags/v4.34.1",
+    "lean_proof_probe": "passed",
+    "global_configuration_changed": false
+  },
+  "isolation": {
+    "portable_project_directory": true,
+    "global_path_or_profile_changed": false,
+    "admin_or_reboot_required": false,
+    "wsl_installed": false,
+    "user_processes_stopped": false,
+    "checkout_core_autocrlf_false": "repository local only",
+    "remaining_project_lean_or_lake_processes_after_verification": 0
+  },
+  "python_verification": {
+    "source_commit": "b14082b286b99d0b1ef84efcf59e4d202493d16b",
+    "python_version": "3.14.8",
+    "started_utc": "2026-10-08T22:04:06.488030+00:00",
+    "checks": {
+      "exact_checkout": {
+        "git_blobs_verified": 109,
+        "index_tree_matches_commit": true
+      },
+      "unittest": {
+        "exit_code": 0,
+        "elapsed_seconds": 2.2308765000198036,
+        "log_sha256": "3635fd387a280fe70aa905d5eb41fe0fbea641cfdf2483936abbb9d15e7d3369",
+        "tests_run": 128
+      },
+      "cycle_certificate": {
+        "exit_code": 0,
+        "elapsed_seconds": 2.735679999983404,
+        "log_sha256": "776023371be1c7083a22c57ef5ac9f60faefd9f36dc1cea0e7acdd4b0ea6c47c",
+        "result": {
+          "verified_gap_intervals": 8,
+          "verified_family_upper_bounds": 4,
+          "verified_strict_improvements": 6,
+          "intervals": {
+            "uniform_tables": {
+              "equal_rectangles": {
+                "lower_float64_display": 0.103869,
+                "upper_float64_display": 0.10387023209121576
+              },
+              "tuned_rectangles": {
+                "lower_float64_display": 0.164036,
+                "upper_float64_display": 0.16403716288355116,
+                "all_allowed_mixtures_upper_float64_display": 0.164046117414259
+              },
+              "equal_simple_cycles": {
+                "lower_float64_display": 0.097826,
+                "upper_float64_display": 0.0978275415725478
+              },
+              "tuned_simple_cycles": {
+                "lower_float64_display": 0.169974,
+                "upper_float64_display": 0.16997546269570155,
+                "all_allowed_mixtures_upper_float64_display": 0.16997812992983594
+              }
+            },
+            "conditional_poisson": {
+              "equal_rectangles": {
+                "lower_float64_display": 0.111515,
+                "upper_float64_display": 0.11151639753948363
+              },
+              "tuned_rectangles": {
+                "lower_float64_display": 0.176501,
+                "upper_float64_display": 0.17650211810357713,
+                "all_allowed_mixtures_upper_float64_display": 0.17650653395062768
+              },
+              "equal_simple_cycles": {
+                "lower_float64_display": 0.104207,
+                "upper_float64_display": 0.10420836153286263
+              },
+              "tuned_simple_cycles": {
+                "lower_float64_display": 0.18358,
+                "upper_float64_display": 0.18358187818894106,
+                "all_allowed_mixtures_upper_float64_display": 0.18358337881682502
+              }
+            }
+          }
+        }
+      },
+      "source_verification": {
+        "exit_code": 0,
+        "elapsed_seconds": 6.6664212999749,
+        "log_sha256": "adc2aa6f3eb76476d3cde9c90d7bbb881ebbdedd314a7324391f8012476ec438",
+        "result": {
+          "bundle_sha256_verified": 5,
+          "upstream_git_blobs_verified": 38
+        }
+      },
+      "saved_report_source_hashes": {
+        "hashes_verified": 51,
+        "receipts": [
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "115/audit115.py",
+            "sha256": "5c900bd639905c55411ba9751a2076568555b59e9f14e9cacef4df3b803bad33"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "examples/linear_metric_bounds.py",
+            "sha256": "e8fb39733559466bdd13eacea739d66e5eedcaa7c0e2f6e1ae3d8ae558511157"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "examples/sparse_commute.py",
+            "sha256": "82198032e99be337930d07a333511ac92ba514b868475c32f5cba68fe9d38c72"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "examples/synthetic_commute.json",
+            "sha256": "9f70e117500284a4101d018145d60a644ca0fb1bd2e3a5b11b1b3f1269734c0e"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "experiments/budget_report.py",
+            "sha256": "71767d9b4ff3ac811a8ede0b60a1091794e1dfb5c4bfce31520d848f967c2531"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "experiments/commute_scaling.py",
+            "sha256": "b119730964bd59df605c9ae2e3f782e83d8d6520adbccd8521a74d2c5417955b"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "experiments/cycle_mixtures.py",
+            "sha256": "7b568ac2e2a4c2ae43d647b84c75c0bcda1d7eac434fa2d8cba2412df1f8ab49"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "experiments/independent_crosscheck.py",
+            "sha256": "d7eb189cbe45e4907251e035f161a326128cb74975ac52cb672a6546521a77ae"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "experiments/padding_barrier.py",
+            "sha256": "15d23781ac4133c5066d66fdd492191e9a15fca18fab1a6dc797319f4ed85b25"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "experiments/scale_report.py",
+            "sha256": "d294edcf4cf4b8de5de73cd914df36ce909ffc7e74fb8bcee4e834020b1f68be"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "experiments/worker_baseline.py",
+            "sha256": "0814aa468e9f3708b2b304fabb259b8ff372bf91837a2ba54660c95a3bbf80da"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "scripts/verify_sources.py",
+            "sha256": "9087c31a728fa637641361c4c12c35bc728919e75a4759bad93d4a75b1caa536"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "src/contingency115/__init__.py",
+            "sha256": "7996514dfb27c1af0089fce91a4119a49d72df1d24d24dcdd1ab2d22c7e23ca9"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "src/contingency115/budgets.py",
+            "sha256": "0faba8878f641d31822e7002f69065e76208fe35c36c7c4835d8183ddfcdfee4"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "src/contingency115/kernels.py",
+            "sha256": "6931734601d48bcbff0b2261932f212f4201a910078c08c03a1b213f7cf12187"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "src/contingency115/mixtures.py",
+            "sha256": "01643fa7e2fd80c15115baa655a74c817b2a5260c5bffa0bee7dbe4cc5303bf3"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "src/contingency115/optimize.py",
+            "sha256": "db0690c995a4719adb23dd26a12da6d0243c8aa5e065e22f5410ad7ce8060107"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "src/contingency115/padding.py",
+            "sha256": "690ed0a14caa7f8a1f1087769961fb4787f0a25855d1863d1c7062ad64d9287c"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "src/contingency115/scales.py",
+            "sha256": "d025091f7ba521ba467e60761aea4f92459dec528bc0e7cedf3f39dd83ef5ca6"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "src/contingency115/tables.py",
+            "sha256": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "src/contingency115/transport_bounds.py",
+            "sha256": "44551ab0d8b367323f534a5c0a7aab48633af4fc654bdb1f2d6dc8266c290b96"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "src/contingency115/workers.py",
+            "sha256": "4158516c6a5e84f5e3d50a6192ac7eaa0dc5d4929737b4ec2f8a173e82fb78b2"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "tests/test_budgets.py",
+            "sha256": "445e744b6d0bb7a3dbb192f2f324a40918ec01307d195293d2563289cb538645"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "tests/test_commute_scaling.py",
+            "sha256": "720767f83addbc104a8e959d646eef683a1389122edab77dfc5052ac11ebe61b"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "tests/test_kernels.py",
+            "sha256": "5f4392b355bfe4155639909123ccbd53de93532c23f73497704d0c1a746affb2"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "tests/test_mixtures.py",
+            "sha256": "b0fca2958814ce8f084c8970be61529630281ddd2b5bc733a359a1ac16a31a1d"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "tests/test_optimize.py",
+            "sha256": "00578d8d9c488c434083e4cd9a36fedc9aea0608f4be4366e212c4019677cbed"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "tests/test_padding_barrier.py",
+            "sha256": "abca8453fc0c9ce0f4ec3b0c2b9c2fa4f2d16b172cf66a281ff79ba43682194a"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "tests/test_scales.py",
+            "sha256": "a4ba9efbbf118173b9700a66a22ec44d31bd6babc708468cea651ba44d3d6f3b"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "tests/test_tables.py",
+            "sha256": "2c3edc49820bd07497f351d54b576a3bf9436b0c40f3dba02a35e2bb5141dd30"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "tests/test_transport_bounds.py",
+            "sha256": "2f0e703dda6afa8875abdb86f2b3f7b94144977a78db93841afee69ed51473db"
+          },
+          {
+            "report": "reports/checkpoint-verification.json",
+            "source": "tests/test_workers.py",
+            "sha256": "78b044cf6c5ade47e4fb080d3428457d891ce9d89a13ac88e528ae25b291b7d4"
+          },
+          {
+            "report": "reports/cycle-mixtures.json",
+            "source": "src/contingency115/tables.py",
+            "sha256": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019"
+          },
+          {
+            "report": "reports/cycle-mixtures.json",
+            "source": "src/contingency115/kernels.py",
+            "sha256": "6931734601d48bcbff0b2261932f212f4201a910078c08c03a1b213f7cf12187"
+          },
+          {
+            "report": "reports/cycle-mixtures.json",
+            "source": "src/contingency115/mixtures.py",
+            "sha256": "01643fa7e2fd80c15115baa655a74c817b2a5260c5bffa0bee7dbe4cc5303bf3"
+          },
+          {
+            "report": "reports/cycle-mixtures.json",
+            "source": "experiments/cycle_mixtures.py",
+            "sha256": "7b568ac2e2a4c2ae43d647b84c75c0bcda1d7eac434fa2d8cba2412df1f8ab49"
+          },
+          {
+            "report": "reports/independent-crosscheck.json",
+            "source": "src/contingency115/tables.py",
+            "sha256": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019"
+          },
+          {
+            "report": "reports/independent-crosscheck.json",
+            "source": "src/contingency115/kernels.py",
+            "sha256": "6931734601d48bcbff0b2261932f212f4201a910078c08c03a1b213f7cf12187"
+          },
+          {
+            "report": "reports/independent-crosscheck.json",
+            "source": "src/contingency115/optimize.py",
+            "sha256": "db0690c995a4719adb23dd26a12da6d0243c8aa5e065e22f5410ad7ce8060107"
+          },
+          {
+            "report": "reports/independent-crosscheck.json",
+            "source": "experiments/independent_crosscheck.py",
+            "sha256": "d7eb189cbe45e4907251e035f161a326128cb74975ac52cb672a6546521a77ae"
+          },
+          {
+            "report": "reports/padding-barrier.json",
+            "source": "src/contingency115/padding.py",
+            "sha256": "690ed0a14caa7f8a1f1087769961fb4787f0a25855d1863d1c7062ad64d9287c"
+          },
+          {
+            "report": "reports/padding-barrier.json",
+            "source": "tests/test_padding_barrier.py",
+            "sha256": "abca8453fc0c9ce0f4ec3b0c2b9c2fa4f2d16b172cf66a281ff79ba43682194a"
+          },
+          {
+            "report": "reports/padding-barrier.json",
+            "source": "experiments/padding_barrier.py",
+            "sha256": "15d23781ac4133c5066d66fdd492191e9a15fca18fab1a6dc797319f4ed85b25"
+          },
+          {
+            "report": "reports/padding-barrier.json",
+            "source": "docs/padding-barrier.md",
+            "sha256": "31f6d8d81e92c6d06aca139e18e954e74f082e3a291646cfb814261a8524ab43"
+          },
+          {
+            "report": "reports/scale-certificates.json",
+            "source": "experiments/scale_report.py",
+            "sha256": "d294edcf4cf4b8de5de73cd914df36ce909ffc7e74fb8bcee4e834020b1f68be"
+          },
+          {
+            "report": "reports/scale-certificates.json",
+            "source": "src/contingency115/scales.py",
+            "sha256": "d025091f7ba521ba467e60761aea4f92459dec528bc0e7cedf3f39dd83ef5ca6"
+          },
+          {
+            "report": "reports/scale-certificates.json",
+            "source": "src/contingency115/transport_bounds.py",
+            "sha256": "44551ab0d8b367323f534a5c0a7aab48633af4fc654bdb1f2d6dc8266c290b96"
+          },
+          {
+            "report": "reports/scale-certificates.json",
+            "source": "src/contingency115/budgets.py",
+            "sha256": "0faba8878f641d31822e7002f69065e76208fe35c36c7c4835d8183ddfcdfee4"
+          },
+          {
+            "report": "reports/worker-baseline.json",
+            "source": "src/contingency115/workers.py",
+            "sha256": "4158516c6a5e84f5e3d50a6192ac7eaa0dc5d4929737b4ec2f8a173e82fb78b2"
+          },
+          {
+            "report": "reports/worker-baseline.json",
+            "source": "tests/test_workers.py",
+            "sha256": "78b044cf6c5ade47e4fb080d3428457d891ce9d89a13ac88e528ae25b291b7d4"
+          },
+          {
+            "report": "reports/worker-baseline.json",
+            "source": "experiments/worker_baseline.py",
+            "sha256": "0814aa468e9f3708b2b304fabb259b8ff372bf91837a2ba54660c95a3bbf80da"
+          }
+        ]
+      },
+      "local_upstream_checkout_hashes": {
+        "result": {
+          "bundle_sha256_verified": 5,
+          "upstream_git_blobs_verified": 38
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 0.2934848999720998,
+        "log_sha256": "adc2aa6f3eb76476d3cde9c90d7bbb881ebbdedd314a7324391f8012476ec438"
+      }
+    },
+    "completed_utc": "2026-10-08T22:04:18.686989+00:00"
+  },
+  "checkout_newline_resolution": {
+    "initial_certificate_replay": "Fixture hash rejected Windows CRLF conversion.",
+    "diagnosis": "Initial working bytes became identical to committed bytes after CRLF-to-LF normalization.",
+    "resolution": "Restored exact Git archive bytes and disabled autocrlf only in this isolated checkout; reran all checks.",
+    "all_109_git_blob_hashes_verified": true,
+    "index_tree_matches_source_commit": true,
+    "checkout_clean_after_restoration": true
+  },
+  "dependencies": [
+    {
+      "name": "openai-math",
+      "repository": "https://github.com/openai/math.git",
+      "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+    },
+    {
+      "name": "mathlib",
+      "repository": "https://github.com/leanprover-community/mathlib4.git",
+      "commit": "d13f23b723b8a846827a245b89c10fc7d3f11612"
+    },
+    {
+      "name": "plausible",
+      "repository": "https://github.com/leanprover-community/plausible",
+      "commit": "118aa17ee84656b8bd727fef7c458ee8c833385c"
+    },
+    {
+      "name": "LeanSearchClient",
+      "repository": "https://github.com/leanprover-community/LeanSearchClient",
+      "commit": "ddf04cf3949fa556442341e87d47f9f6e6074707"
+    },
+    {
+      "name": "importGraph",
+      "repository": "https://github.com/leanprover-community/import-graph",
+      "commit": "e928b72544873815af278d38681b31c0293588e3"
+    },
+    {
+      "name": "proofwidgets",
+      "repository": "https://github.com/leanprover-community/ProofWidgets4",
+      "commit": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5"
+    },
+    {
+      "name": "aesop",
+      "repository": "https://github.com/leanprover-community/aesop",
+      "commit": "355695d523e41d0554926416cba2a2b3544fbbc9"
+    },
+    {
+      "name": "Qq",
+      "repository": "https://github.com/leanprover-community/quote4",
+      "commit": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259"
+    },
+    {
+      "name": "batteries",
+      "repository": "https://github.com/leanprover-community/batteries",
+      "commit": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2"
+    },
+    {
+      "name": "Cli",
+      "repository": "https://github.com/leanprover/lean4-cli",
+      "commit": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204"
+    }
+  ],
+  "formal_source_sha256": {
+    "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+    "formal/lake-manifest.json": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+    "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "formal/Math115/AxiomAudit.lean": "dc48ffdb202bde6b81769ed3aef573eab6c64ccfe45e2dbd1066ff9611b43ec1",
+    "formal/Math115/GlobalDisplayOwnership.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
+    "formal/Math115/PaddedMarginBridge.lean": "0e015eeb217967669054b9492281c020c0281075336e9712e03c2b623bda0c4b",
+    "formal/Math115/PhysicalLeafEnergy.lean": "7c32ff73a592051eb81b69485820fa2dfcbadc5be7c0081c9f4a6bf52d88e55b",
+    "formal/Math115/QuadraticCoefficient.lean": "9d023785b272aeb6b819aaa1bc42c7c04f8419522799b64e0b66bb355b91a46a",
+    "formal/Math115/RepairCoefficient.lean": "cf1275943fb03dce29c9641d758e56531ee6c2fa42b13dc09110e2d7823ffd60",
+    "formal/Math115/ScaleCertificate.lean": "4b1bce04461a4a3f86a17050c90132f869222aac2ded61c021f05039761b1095",
+    "formal/Math115/SmallEntrySwitching.lean": "a0cd85439dccaf5c67ef291fae631f41c6585581f1c4af323c22f04768571f64",
+    "formal/Math115/SmallEntryTail.lean": "e6398d28accdb3e169389ec5ebb473d4b3ca9b630c3ad861fb7d3fe3ebf3d7f6",
+    "formal/Math115/StandaloneAxiomAudit.lean": "32c7c21d8a51930b1592db0c484ced0f8416114a6944a09534a27783bc5b7285",
+    "formal/Math115/SurvivalAlgebra.lean": "b7cb5f1d6e71581b1c0475544fd9b3f52483818e3dbdd1d8597aa67e80fe68e4",
+    "formal/Math115/SwitchingFiniteSums.lean": "ba773afb67c596abcd35a6c331ed38b1f544d253e432865c98a28ab0117a4e14",
+    "formal/Math115/TransportRefinement.lean": "04b50163b67e1ef21f07b379f1daeb857d53f3dbd188aa857e8327ced7cb9dfc",
+    "formal/Math115/UpstreamAxiomAudit.lean": "3abf27c5a83cc3bc1c1d6fe2ebce1c300a41132fe3c7d840e7f40663d0fbd0cb",
+    "formal/Math115/UpstreamOwnershipBridge.lean": "9d8229c0a5556c05d539634d32ba69e547b358b8de6275c9b5f01c7cdec1a7bf",
+    "formal/Math115/WidthWeightedTransport.lean": "fad07f17b6b4e1c674a48cada9e2c0cc688f36e66bc689928025d86e15698d5c",
+    "formal/Math115.lean": "1c0607c0c5e46a38ebd472787af2f1965401f07cb137f891ae6609c62902dbf7"
+  },
+  "lean_verification": {
+    "status": "passed",
+    "std_probe": "Compiled import Std example to an olean with the native Windows Lean 4.34.1 executable.",
+    "focused_build_passed": true,
+    "axiom_audit_passed": true,
+    "official_mathlib_cache": "trusted upstream artifacts; no kernel replay claimed",
+    "plan": {
+      "source_commit": "b14082b286b99d0b1ef84efcf59e4d202493d16b",
+      "cache_compile_order": [
+        "Cache.Cli",
+        "Cache.Lean",
+        "Batteries.Tactic.OpenPrivate",
+        "Cache.IO",
+        "Cache.Hashing",
+        "Cache.Env",
+        "Cache.Infra",
+        "Cache.Requests",
+        "Cache.Marker",
+        "Cache.Upload.Dest",
+        "Cache.Upload.Curl",
+        "Cache.Upload.Azure",
+        "Cache.Upload.Rclone",
+        "Cache.Upload.S3",
+        "Cache.Upload.Defs",
+        "Cache.Upload",
+        "Cache.Query",
+        "Cache.Warning",
+        "Cache.Main"
+      ],
+      "focused_compile_order": [
+        "OAI.Combinatorics.ContingencyTables.Transport.QuadraticTransport",
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedSummation",
+        "OAI.Combinatorics.MatroidCounting.CommonBases",
+        "OAI.Combinatorics.ContingencyTables.Machines.BinaryContraction",
+        "OAI.Combinatorics.ContingencyTables.Transport.FactorialSignatures",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerMarginal",
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedBox",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerReflection",
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedFamily",
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedEnumeration",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerWeightedTransport",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureSquare",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureKernel",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceReindex",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerExposure",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerPairRecursion",
+        "OAI.Combinatorics.ContingencyTables.Transport.SignedTransport",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafTransport",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursiveFlow",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafEnergy",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerCorrectionKernel",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursivePotential",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLevels",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRootEstimate",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRootTransport",
+        "Math115.QuadraticCoefficient",
+        "Math115.TransportRefinement",
+        "Math115.GlobalDisplayOwnership",
+        "Math115.WidthWeightedTransport",
+        "Math115.RepairCoefficient",
+        "Math115.UpstreamOwnershipBridge",
+        "OAI.Combinatorics.ContingencyTables.Model",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallEntries",
+        "Math115.SwitchingFiniteSums",
+        "Math115.SmallEntrySwitching",
+        "Math115.SurvivalAlgebra",
+        "Math115.SmallEntryTail",
+        "Math115.ScaleCertificate",
+        "OAI.Combinatorics.ContingencyTables.Sampling.Padding",
+        "Math115.PaddedMarginBridge",
+        "OAI.Combinatorics.ContingencyTables.Rooted.LargePairEnumeration",
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalLargeProfiles",
+        "OAI.Combinatorics.ContingencyTables.Transport.LaminarSignature",
+        "OAI.Combinatorics.ContingencyTables.Transport.LineUnarySignature",
+        "OAI.Combinatorics.ContingencyTables.Transport.ProductIntegerSignature",
+        "OAI.Combinatorics.ContingencyTables.Transport.NestedProductSignature",
+        "OAI.Combinatorics.ContingencyTables.Transport.ScalarPenalty",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerBoxTruncation",
+        "OAI.Combinatorics.ContingencyTables.Transport.LabelledFactorial",
+        "OAI.Combinatorics.ContingencyTables.Transport.SliceFactorial",
+        "OAI.Combinatorics.ContingencyTables.Transport.RecursiveSignedTransport",
+        "OAI.Combinatorics.ContingencyTables.Transport.HardZeroTransport",
+        "OAI.Combinatorics.ContingencyTables.Transport.NestedPenaltyApplication",
+        "OAI.Combinatorics.ContingencyTables.Transport.RowColumnPenalties",
+        "OAI.Combinatorics.ContingencyTables.Sampling.PaddedCompletions",
+        "OAI.Combinatorics.ContingencyTables.Transport.CompletionCounts",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperProfiles",
+        "OAI.Combinatorics.ContingencyTables.Transport.EqualitySoftening",
+        "OAI.Combinatorics.ContingencyTables.Transport.ReflectedSlices",
+        "OAI.Combinatorics.ContingencyTables.Transport.EqualityReindex",
+        "OAI.Combinatorics.ContingencyTables.Transport.ReflectedNested",
+        "OAI.Combinatorics.ContingencyTables.Transport.NestedReindex",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPhysicalMarginal",
+        "OAI.Combinatorics.ContingencyTables.Sampling.Repair",
+        "OAI.Combinatorics.ContingencyTables.Sampling.RepairPrefixes",
+        "OAI.Combinatorics.ContingencyTables.Sampling.RepairResiduals",
+        "OAI.Combinatorics.ContingencyTables.Sampling.RepairFibres",
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalCompletionFibres",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextFibres",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCoordinates",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceRestriction",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerContextSlices",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLimit",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextTransport",
+        "OAI.Combinatorics.ContingencyTables.Transport.PositiveSequenceMinimum",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerChildLogConcavity",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextChildren",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCount",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextEnumeration",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTruncatedTransport",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerAuxiliaryEnumeration",
+        "OAI.Combinatorics.ContingencyTables.Transport.ExcessPairCoordinates",
+        "OAI.Combinatorics.ContingencyTables.Transport.ExcessContextProfiles",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallGraphProfiles",
+        "OAI.Combinatorics.ContingencyTables.Transport.ExcessContextDefects",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperChildMass",
+        "OAI.Combinatorics.ContingencyTables.Transport.AuxiliaryRepairMass",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerGraphTruncation",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextBox",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportCoefficient",
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextAdjacentTransport",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerChildVariance",
+        "OAI.Combinatorics.ContingencyTables.Transport.FiniteExposureVariance",
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextChildVariance",
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextGraphMembership",
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalGraphVertices",
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextGraphEnergy",
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalPrefixEnergies",
+        "Math115.PhysicalLeafEnergy",
+        "Math115"
+      ],
+      "project_module_count": 100,
+      "upstream_module_count": 86,
+      "refinement_module_count": 14,
+      "compiler_process_limit": 1,
+      "threads_per_compiler": 2,
+      "lake_manifest_sha256": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+      "driver_sha256": "cec440ee135ae34526b44063907d662b2592deb4ed846f29d452e079477c9492"
+    },
+    "full_original_theorem_build": "not run on Thor",
+    "comparator": "not run; strict Linux sandbox is unavailable on this native Windows host",
+    "cache_bootstrap": {
+      "passed": true,
+      "source_modules_compiled": 19,
+      "steps": [
+        {
+          "module": "Cache.Cli",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Cli"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 22.189425499993376,
+          "log_sha256": "7a1c47bcdfe0562663e0c5a7423e8f1367b5b0e5de0f37a3cbaf042413f2c02f"
+        },
+        {
+          "module": "Cache.Lean",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Lean"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.988527699955739,
+          "log_sha256": "c7211dae90bf51d69ce153dafcfe5cb8a64fc40e333f96c3844f67b872726feb"
+        },
+        {
+          "module": "Batteries.Tactic.OpenPrivate",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Batteries.Tactic.OpenPrivate"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.814387499995064,
+          "log_sha256": "170057da7a62922cac5c8300b52b2b3382d6bf7b497ce672f57b8bbf141cc7c3"
+        },
+        {
+          "module": "Cache.IO",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.IO"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 3.046052800025791,
+          "log_sha256": "4990b55906f0cd1bd31259a9c3486bcb2b20f3ff41f7f6cef9ed2675deb7d971"
+        },
+        {
+          "module": "Cache.Hashing",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Hashing"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.6020096000283957,
+          "log_sha256": "a126e9b19c2e106936f01f8f8bfdee4550bc8ed9efe9e95200755f49defec7a9"
+        },
+        {
+          "module": "Cache.Env",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Env"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 1.8696721000014804,
+          "log_sha256": "4a50f2c1c2583b537f0cb6af9f1473b3714775670e8575ab9f443668da9e6148"
+        },
+        {
+          "module": "Cache.Infra",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Infra"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.08714980003424,
+          "log_sha256": "af48e65d27ab2d3ef9ed742037f1e39c4ae10d560228500abbcfa9a7e31e26c4"
+        },
+        {
+          "module": "Cache.Requests",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Requests"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 3.243492499983404,
+          "log_sha256": "2b3831a2dccb1a764aa01c8dd40df67a6ff88cc1cf8363659d8439ea74278e08"
+        },
+        {
+          "module": "Cache.Marker",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Marker"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.3549662999575958,
+          "log_sha256": "b452d585bdbe3c14fa7aab55ed64d9b4bc16134a771632286bf190ad371b4b23"
+        },
+        {
+          "module": "Cache.Upload.Dest",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Upload.Dest"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.397913000022527,
+          "log_sha256": "7a639126eb9896a88599781c43933deb47953a053d283378ee61932ab0c4448d"
+        },
+        {
+          "module": "Cache.Upload.Curl",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Upload.Curl"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.4228957999730483,
+          "log_sha256": "dbc84abadbff5adf775f0514036916503b16aa72121a86f378bc1e58455d1faf"
+        },
+        {
+          "module": "Cache.Upload.Azure",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Upload.Azure"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.3463861999916844,
+          "log_sha256": "fc37216b372c0d1dcd2f1d6681ea785cbe05e56c5eb04998dcba42f286ebc72f"
+        },
+        {
+          "module": "Cache.Upload.Rclone",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Upload.Rclone"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.392802299989853,
+          "log_sha256": "859c232f4bc83be6ab0e88f417e29073bb414a84d0918baee99b5e4eaac80faa"
+        },
+        {
+          "module": "Cache.Upload.S3",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Upload.S3"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.397480799991172,
+          "log_sha256": "496f38cc3b1cc4a1868f401355bddbe667d5bd8fc1174d4c3c0fe9a9ea017bb1"
+        },
+        {
+          "module": "Cache.Upload.Defs",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Upload.Defs"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.3960495000355877,
+          "log_sha256": "936d065d5de0f463bbaf76bdef832fad856548ea3c28b5d3926e35532c0f64fe"
+        },
+        {
+          "module": "Cache.Upload",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Upload"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.319697199971415,
+          "log_sha256": "7a3c72dc10052b0f0e0e142286bdeda7f8252f856868583dc2665cc58ae68864"
+        },
+        {
+          "module": "Cache.Query",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Query"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.417475700029172,
+          "log_sha256": "cc6467e81a8a065808861a204af62179e4142e208df0d9cd7a8f3b9f37b6a72f"
+        },
+        {
+          "module": "Cache.Warning",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Warning"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.4099980000173673,
+          "log_sha256": "e57ee8126dbf84546461b82e9328999c50cdac002037d4619150d68094fb46dd"
+        },
+        {
+          "module": "Cache.Main",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Cache.Main"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 2.7321985000162385,
+          "log_sha256": "cca4cd4ae208a29b004ac10226dd13c6112cadc6d6bb7f07856a9bcf52b05541"
+        },
+        {
+          "action": "official_mathlib_cache_get",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "exe",
+            "cache",
+            "get"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 181.00525579997338,
+          "log_sha256": "a4b2980184f00a96310cf26e1862f8d13779c00c929445d0f806a47cd64cc689"
+        }
+      ],
+      "completed_utc": "2026-10-08T22:11:39.280860+00:00",
+      "downloaded_and_decompressed_files": 8908
+    },
+    "verification": {
+      "passed": true,
+      "source_commit": "b14082b286b99d0b1ef84efcf59e4d202493d16b",
+      "finished_utc": "2026-10-08T22:47:25.650130+00:00",
+      "fresh_project_modules": 100,
+      "fresh_original_modules": 86,
+      "fresh_refinement_modules": 14,
+      "audited_declarations": 68,
+      "axiom_audits": {
+        "passed": true,
+        "audited_declarations": 68,
+        "focused_declarations": 62,
+        "standalone_declarations": 6,
+        "audits": [
+          {
+            "scope": "focused",
+            "source_file": "Math115/AxiomAudit.lean",
+            "audited_declarations": 62,
+            "declarations": [
+              {
+                "name": "OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quadratic",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quarter",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "OAI.ContingencyTables.IntegerWeightedTransport.correctionKernel_upper_quarter",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_quarter",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_quarter",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport_quarter",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_widths",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_widths",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.GlobalDisplayOwnership.edge_owner_unique_upstream",
+                "axioms": [
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntrySwitching.all_donor_incidence_bound",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntrySwitching.donor_capacity_sum_lower",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntrySwitching.donor_capacity_sum_lower_of_margins",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntrySwitching.all_donor_small_entry_count_refined",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntrySwitching.all_donor_small_entry_count",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntrySwitching.all_donor_small_entry_probability_refined",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntrySwitching.all_donor_small_entry_probability",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.shiftEquiv",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.shiftPositiveEquiv",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.survival_step",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.survival_step_real",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.small_card_add_survival",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.all_donor_small_entry_count_strong",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.all_donor_small_entry_probability_strong",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.all_donor_survival_product_count",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.all_donor_small_entry_probability_product",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.survival_sum_le_entry_sum",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.all_donor_entry_sum_lower",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SmallEntryTail.all_donor_entry_mean_lower",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SurvivalAlgebra.nat_lower_tail_linear_bound",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SurvivalAlgebra.nat_survival_product_bound",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.SurvivalAlgebra.nat_mean_tail_sum_bound",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.DenseScaleConditions.width_bounds",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.proposed_dense_scales",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.proposed_padding_scales",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.sharper_enlarged_margin_padding_scales",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.shape_aware_linear_tail_budget",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.shape_aware_linear_unpadding_error_le_half",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PaddedMarginBridge.marked_incident_margins",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PaddedMarginBridge.large_padding_good_card",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PaddedMarginBridge.enlarged_bad_count",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PaddedMarginBridge.sharper_padded_count_le_twice_original",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PaddedMarginBridge.enlarged_bad_count_strong",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PaddedMarginBridge.shape_aware_padded_count_le_twice_original",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.leafEnergySum_eq_physicalLeafEnergy",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.physicalLeafEnergy_tendsto",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.leafEnergySum_truncate_eq",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.physicalLeafEdges_subset",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.physicalLeafEdges_owner_unique",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.owner_unique",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.ownerEdges_pairwiseDisjoint",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.sum_ownerEnergy_le_physicalEnergy",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.sum_ownerEnergy_hardMarginal_le",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.leafEnergySum_tendsto",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.integer_root_leaf_transport_quarter_limit",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.integer_box_root_leaf_transport_quarter_limit",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.context_box_leaf_transport_quarter",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.repaired_root_transport_quarter",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.adjacent_physical_leaf_transport_quarter",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.ownerContrast_le_ownerEnergy",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.PhysicalLeafEnergy.sum_ownerContrast_le_physicalEnergy",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              }
+            ],
+            "allowed_axioms": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "command": [
+              "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+              "env",
+              "lean",
+              "Math115/AxiomAudit.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 16.511156199965626,
+            "log_sha256": "f2a0ce38d267f3138a4833dc48f0540cbf2af2b142214ec0a6cede9a03f3e740"
+          },
+          {
+            "scope": "standalone",
+            "source_file": "Math115/StandaloneAxiomAudit.lean",
+            "audited_declarations": 6,
+            "declarations": [
+              {
+                "name": "Math115.pair_product_le_quarter_square",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.pair_product_eq_quarter_square_iff",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.GlobalDisplayOwnership.edge_owner_unique",
+                "axioms": [
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.GlobalDisplayOwnership.edge_prefix_unique",
+                "axioms": [
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.min_mass_repair_bound",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              {
+                "name": "Math115.min_mass_quarter_repair_bound",
+                "axioms": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              }
+            ],
+            "allowed_axioms": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "command": [
+              "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+              "env",
+              "lean",
+              "Math115/StandaloneAxiomAudit.lean"
+            ],
+            "exit_code": 0,
+            "elapsed_seconds": 9.512497999996413,
+            "log_sha256": "76ed8154d04c3c409c797cbe91add60ba7ba627b7f443f8d0bd908ec263cf4f1"
+          }
+        ],
+        "audit_driver_sha256": "4ec8963b1e9d6697df46777f559c28a2e76975611807df3990ea12c615e6c72f",
+        "initial_wrapper_count_mismatch": "The original wrapper expected all 68 declarations in AxiomAudit.lean. Published sources split them into 62 focused and 6 standalone. All 100 module builds and the first focused Lean audit had exit code 0; this corrected checker runs both unchanged audit files and verifies every requested declaration name.",
+        "completed_utc": "2026-10-08T22:46:59.333281+00:00"
+      },
+      "steps": [
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.QuadraticTransport",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.QuadraticTransport"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 17.144768600002863,
+          "log_sha256": "fa78ac7f755fa402aee7d6bc42bea6b58a94cf0e8423ecf7637e2833ffa684fd"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedSummation",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.BalancedSummation"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 7.8665495999739505,
+          "log_sha256": "e701d9a4dced781abaa127806b1a60fa0e6b923d42c5b3fa964f44560107c7b9"
+        },
+        {
+          "module": "OAI.Combinatorics.MatroidCounting.CommonBases",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.MatroidCounting.CommonBases"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 130.32420509995427,
+          "log_sha256": "46a78ae8f4b6768ddabf03164a21325a58d9436a878411d1681c384aaf4ee8c4"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Machines.BinaryContraction",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Machines.BinaryContraction"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 22.06893199996557,
+          "log_sha256": "81faf9a86e684eded7d980f431f8f67382d8f51b12ff2b315299dad557f38b91"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.FactorialSignatures",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.FactorialSignatures"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 21.767170500010252,
+          "log_sha256": "4a9ace2b21f122dd08287d5de0d90c59d0a8fe0893cbf48f928e7657b36e0a39"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerMarginal",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerMarginal"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.946725799993146,
+          "log_sha256": "f31a7dc4633dde5954a8f6f9e9b579df93336cca89648ada248f6b2cc4d09e6b"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedBox",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.BalancedBox"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.393865499994718,
+          "log_sha256": "1990e92dbedc801799f5707444bd1ba323e504a3b70b42d2fe7c5d0af6531fe7"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerReflection",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerReflection"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.628072599996813,
+          "log_sha256": "dc418f17c817b53d19c5d7bb5f76e2424cef95c0957cf09c0d661b567a535368"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedFamily",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.BalancedFamily"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.39473389997147,
+          "log_sha256": "b94c8b8ec8b20331a9c6b1c69215941de0ed66e1ab5293c47e622756f9697f0e"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedEnumeration",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.BalancedEnumeration"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.299292900017463,
+          "log_sha256": "c4cd629002f3b4c28eca0bcd0937d119643ff68b4d5fa9c8f8fc0e494632a4f6"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerWeightedTransport",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerWeightedTransport"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.33445029996801,
+          "log_sha256": "fdbf18ded7845dd35862c50ed741ef19daf783b2174249f228bfc2f97b90df6e"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureSquare",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureSquare"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 21.15585690003354,
+          "log_sha256": "4cb6c92e0317f0e36e1aded8284b5b0cbddcaaad3243d2eda430babece73255b"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureKernel",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureKernel"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.506357499980368,
+          "log_sha256": "3e8b147b36b351409507c60ad15a32eb4f1c8aaa0767627f4502e41c477c0245"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceReindex",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceReindex"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.085300600039773,
+          "log_sha256": "01ace429fe3f53b1fbb7a76b361b6f3defa3982388bbcb42009fcc8b2cf8a972"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerExposure",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerExposure"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.15998249995755,
+          "log_sha256": "c75a9a832ab72007345a04c3b7cbd353d17e3e1925fd7f535fadfd4fd4158ea8"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerPairRecursion",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerPairRecursion"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.875065999978688,
+          "log_sha256": "6e12a8e73204c82dc1c5f019c8dae01a3613739a176381542135b4c941f6de83"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.SignedTransport",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.SignedTransport"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 7.218364100030158,
+          "log_sha256": "7ae3060440bcb8263c8275194851a69a9971adb5744876b02781070fb15100ff"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafTransport",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafTransport"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.29251130000921,
+          "log_sha256": "21b988e86cbce7f97c7142d9f13d2b1d8695e495146ea64f2ac35e2a5c96000d"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursiveFlow",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursiveFlow"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.500410599983297,
+          "log_sha256": "d5086e2aa15bc758835d388b1fcb3b26acada30f3f011fd790cc7f0b2a153ba3"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafEnergy",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafEnergy"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.54869070003042,
+          "log_sha256": "786d61da0a62f8684bb340d5ef852db390c4d550ad91b318c15caae521d4b1de"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerCorrectionKernel",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerCorrectionKernel"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.090497499972116,
+          "log_sha256": "25ccc44f3fded423ab5d24049c242ee462f6a150e18c5f604eb5f2fd615c500f"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursivePotential",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursivePotential"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.83881200000178,
+          "log_sha256": "bad9e0dc27930cbbf49cf276802a3b71af843c75ebde2101bb2b5af46226b514"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLevels",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLevels"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.368227700004354,
+          "log_sha256": "f84f323d11d3347039762ea31fabfb1048dfb1a9cf317f21dd825b797ccd08ed"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerRootEstimate",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerRootEstimate"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 20.192680799984373,
+          "log_sha256": "f80a4595983377ef3dc4033c4d9020f3f2bff73e51683f729a995fe69698afae"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerRootTransport",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerRootTransport"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 20.1822956999531,
+          "log_sha256": "e76ef246f57aee857eb75b2105c1719181faa3d7a1f8f22e756e08af674ad451"
+        },
+        {
+          "module": "Math115.QuadraticCoefficient",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.QuadraticCoefficient"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 10.83573630003957,
+          "log_sha256": "eaee5e52e1453e424e68a00018767479a8be4aaf51f73b63f282e0a1387d74ec"
+        },
+        {
+          "module": "Math115.TransportRefinement",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.TransportRefinement"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.806815100018866,
+          "log_sha256": "7dc5687099eceb90678551c61af8d6d0d943d55eb29cb696d1061608868d9197"
+        },
+        {
+          "module": "Math115.GlobalDisplayOwnership",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.GlobalDisplayOwnership"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 10.416082300012931,
+          "log_sha256": "39982f446aeac070886b0d293558fe2d6cd222815cbaa2d52b038bbf814ec064"
+        },
+        {
+          "module": "Math115.WidthWeightedTransport",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.WidthWeightedTransport"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.85879450000357,
+          "log_sha256": "8c6470c84844fc98d8634345dca4ee907ffb6ae5a0bb04363f2b84d8fca049cf"
+        },
+        {
+          "module": "Math115.RepairCoefficient",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.RepairCoefficient"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 10.859262400015723,
+          "log_sha256": "ea68517c1663df8729da8acfe020c03811894b15b551d718a1640c6be5f10fa8"
+        },
+        {
+          "module": "Math115.UpstreamOwnershipBridge",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.UpstreamOwnershipBridge"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.16256130003603,
+          "log_sha256": "dcf2ed85d727018c21abf1f42b36d5da1d3c068c071a4e87efc7c98d898b18ab"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Model",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Model"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 6.154893900034949,
+          "log_sha256": "5a748848561d6f241f8099c5824bc37b5e6676166cf370e510e4ae8c0449a01d"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallEntries",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.SmallEntries"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 8.099724799976684,
+          "log_sha256": "d85eb7417de531924c749fc7568a635cf227578d627abf0aff432a42727d6732"
+        },
+        {
+          "module": "Math115.SwitchingFiniteSums",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.SwitchingFiniteSums"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 10.386094199959189,
+          "log_sha256": "2a2597af3d638c36d52748a009d28cf73c0e0e51079fbf1842e4b4605dc4bb77"
+        },
+        {
+          "module": "Math115.SmallEntrySwitching",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.SmallEntrySwitching"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 10.849345399998128,
+          "log_sha256": "5846d9e84f0014e23855254cb6fa9369246b19a8d634201ac899badd58c0526f"
+        },
+        {
+          "module": "Math115.SurvivalAlgebra",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.SurvivalAlgebra"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 10.753934799984563,
+          "log_sha256": "ed5afa325a6591910be22b1e69f7ee49c4bdadaa6c1cab88d42352668806829b"
+        },
+        {
+          "module": "Math115.SmallEntryTail",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.SmallEntryTail"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 11.618904899980407,
+          "log_sha256": "b72226f5750aa00df8616247128f4ac92672635027d4b33c09ece3b3c776183f"
+        },
+        {
+          "module": "Math115.ScaleCertificate",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.ScaleCertificate"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 11.730677700019442,
+          "log_sha256": "b36241b465b5e70c83060ef2ee65c4dd5d4813f30ad4ba2909e39f70434916e4"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.Padding",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.Padding"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 7.119175200001337,
+          "log_sha256": "cb502b025a7d3b21e224e654b7ea538cb9310bdd301d539990d55ddc446aaf7a"
+        },
+        {
+          "module": "Math115.PaddedMarginBridge",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.PaddedMarginBridge"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 10.476993699965533,
+          "log_sha256": "badf9dc4f4d0ad160fedf9fd8af79a48520bfda88fbfa50e57d384e03ee6a65e"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Rooted.LargePairEnumeration",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Rooted.LargePairEnumeration"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.222447899985127,
+          "log_sha256": "d229fe19439aa4c7b70a0e721acbad6ab68cdb3d620f99a1447011a9951516d1"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalLargeProfiles",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.PhysicalLargeProfiles"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.094481599982828,
+          "log_sha256": "0b72c0186b59e85886f50ac2fb9d970cdfa389251e21f54fd1bcb904f76402fe"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.LaminarSignature",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.LaminarSignature"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 8.431278499949258,
+          "log_sha256": "05939f53caa8c12723cc5dc2894030761f990ceb589942a84eed7c6612382eca"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.LineUnarySignature",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.LineUnarySignature"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 8.221594600006938,
+          "log_sha256": "495e5e97353ad82c696de2a3bac704b431e76faf2c08677806141dedd69c2e64"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.ProductIntegerSignature",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.ProductIntegerSignature"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.437747499963734,
+          "log_sha256": "85c39c1807ca29dbdc14718f48d675dfd6c87b64ec8bb83e4de867cd3b851eb5"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.NestedProductSignature",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.NestedProductSignature"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 20.872629199991934,
+          "log_sha256": "75b33188a05f6708b32627a7d8458459298e63754ddd3ac259c893ee31b77bf8"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.ScalarPenalty",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.ScalarPenalty"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.708076200040523,
+          "log_sha256": "f8a6d06609f0049d1fc219cc147cb72a849f1ef53e9dc83d2737d96f02fe7809"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerBoxTruncation",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerBoxTruncation"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.388864700042177,
+          "log_sha256": "2d4c6bafaec7c19b02af9739cbf85abfaf47d0dab4cf31a72b380f5c0d271ef5"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.LabelledFactorial",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.LabelledFactorial"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.612085699976888,
+          "log_sha256": "172721c16f08825c4de01667128ec2e6d63f10529e3c05c66a24e067c0484ea6"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.SliceFactorial",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.SliceFactorial"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.182026499998756,
+          "log_sha256": "ffaae5129a33f8900017ca666b6a8ddbc738134969d3372958ee132243350884"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.RecursiveSignedTransport",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.RecursiveSignedTransport"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 22.34012069995515,
+          "log_sha256": "56d53a8fa35319639db360876013860ae3fdb355808b5c8f5a8c33411fa26fae"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.HardZeroTransport",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.HardZeroTransport"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.6274367000442,
+          "log_sha256": "9cd78a6bdc2308d5c2805c19edda53d59a0790ccb7ef39c69a92c7704975012e"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.NestedPenaltyApplication",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.NestedPenaltyApplication"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.543313500005752,
+          "log_sha256": "053cd0c10b962c45ea75eb57ceec06529354f78ad343f9666ce23abadaa228e4"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.RowColumnPenalties",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.RowColumnPenalties"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 20.291904100042302,
+          "log_sha256": "426a154a09fa4c4cd9b9f95d3d76af1145db0dde3870ca2f595cebca2c4af6a5"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.PaddedCompletions",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.PaddedCompletions"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.394406600040384,
+          "log_sha256": "89f7a79d256d44395beb4deaea333bce0b808ab6b20bf88e28dee823b78286ca"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.CompletionCounts",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.CompletionCounts"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 20.10761950002052,
+          "log_sha256": "62f03f63824afbed43a1bed1d98326b25910a69fc68feb37c131397819bd5a6a"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperProfiles",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperProfiles"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.643741599982604,
+          "log_sha256": "72265441f786b6efed37d19e0c72fdaa097d0718e22a010deb1755ba429f6125"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.EqualitySoftening",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.EqualitySoftening"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.51941639999859,
+          "log_sha256": "082fab72f3fdac08bbda4d2825fe990037ca5e3edce52315b7f34ba0cc85177c"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.ReflectedSlices",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.ReflectedSlices"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 20.071182399988174,
+          "log_sha256": "2ded53c7ac511e9922c0787cc96b72ce34cd86c8401f96a27fcb113acfc10c31"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.EqualityReindex",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.EqualityReindex"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 18.84372710000025,
+          "log_sha256": "fff9f4116128e2d13234348e048d2b6dbcbac2bc0d60302157cda50107536ff2"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.ReflectedNested",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.ReflectedNested"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.454079999995884,
+          "log_sha256": "88c3ee929c4d299ed5c73e49d55c8836776c9b7f22ee68342b5de93f3f1bd28c"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.NestedReindex",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.NestedReindex"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.192358900036197,
+          "log_sha256": "1afbe3f0fe885726116166e5eaa4ac622567f5535f3f6aae710c76fa93130b23"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPhysicalMarginal",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPhysicalMarginal"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 24.915232700004708,
+          "log_sha256": "719426ec95cda1c9531d56da34111c55adbbf666af907228cf4483e20a295c08"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.Repair",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.Repair"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 6.580538899987005,
+          "log_sha256": "8e077fe91026bf6b0f0162c946eecfb0d2183cdcc54b62d110b9e1808890d756"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.RepairPrefixes",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.RepairPrefixes"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 6.4608531999983825,
+          "log_sha256": "ef347ee3bf73c241416d91f0c74afc82ebe07b31cef642810457ed89c90d8eef"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.RepairResiduals",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.RepairResiduals"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.29273430001922,
+          "log_sha256": "089e72fafdfe14e34f6e2fd606fc39e08c21ce16846de8cfc8ae8637e20d64ff"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.RepairFibres",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.RepairFibres"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 20.599924199981615,
+          "log_sha256": "7ad901d1e2b57137c6d298f934075ebd2d77df7010751de961bf338d363f6345"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalCompletionFibres",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.PhysicalCompletionFibres"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.67727939999895,
+          "log_sha256": "5dc4f9b69aaea3937e92635359e4660a7380c2782f0ac087f58cd3e550e9d785"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextFibres",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.SmallContextFibres"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.497544199984986,
+          "log_sha256": "f3a34f0d88db2e3c8e478f33a025c0aa31723ecb35a6e0ee48fa9e4e13a3a55e"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCoordinates",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCoordinates"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.635032700025477,
+          "log_sha256": "8c4c4bb42874b8f2e5e6b8a0f6e8441178909550e8b453d9613e3d4a5631ec3c"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceRestriction",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceRestriction"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.43600890005473,
+          "log_sha256": "170e1282bff71dba7a1312245378c25f2182e650597a86f00e3f68231102b294"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerContextSlices",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerContextSlices"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.417176399962045,
+          "log_sha256": "2406b54f7d130cf6796233a237cd95fd90a9628bbb82f8b568a6c2ea484357a5"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLimit",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLimit"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.73319260001881,
+          "log_sha256": "4d6554ff947f95d819faf81aa7e7174eb98338872b6bc55f3ca2e370eb112190"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextTransport",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextTransport"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.651224000030197,
+          "log_sha256": "c8681213f467a34f97a684a49d5c3d987103336288c71b803b865b21ae0809b0"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.PositiveSequenceMinimum",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.PositiveSequenceMinimum"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 6.565404599998146,
+          "log_sha256": "069eb2170123cc104b51caf5a6fc0fe98026892a67fbc14726eb7a92bdab158e"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerChildLogConcavity",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerChildLogConcavity"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.63733570004115,
+          "log_sha256": "ff7c966b286c8461ccc84a7c704d54fe7cb0c667e2887d5d3b1a16c35b26552e"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextChildren",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextChildren"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 18.97893829998793,
+          "log_sha256": "06620b7e9f9da64bf40dbffc82a5c51740e62281ed740078f8e01aa4b4782e28"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCount",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCount"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.75738949998049,
+          "log_sha256": "c8452447eb0fb3660e9fdf008854a2627b0fa5d6aaa57da8138416f58a18be46"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextEnumeration",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.SmallContextEnumeration"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.509565499960445,
+          "log_sha256": "a3b8ecde072a67704f9cef67d09bd770c2b0beb5af71f594837c340b04cf2123"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerTruncatedTransport",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerTruncatedTransport"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.509901400015224,
+          "log_sha256": "d38f1aad1438aad73f71f878f25e250f6dd365b5f89faa1a68453008db4b7d24"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerAuxiliaryEnumeration",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerAuxiliaryEnumeration"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.279569200007245,
+          "log_sha256": "3e23fe37bc8963a4efce885a76cb27914ca741b1674d5ba897e0c13c43c200bd"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.ExcessPairCoordinates",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.ExcessPairCoordinates"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.436236699984875,
+          "log_sha256": "903a2ff5ead7ee85bd51aec9eb72795d3e5f4f7074f1c353ec8abd6c0c67c6cf"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.ExcessContextProfiles",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.ExcessContextProfiles"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.606223599985242,
+          "log_sha256": "472176bee775b39ec63480377469f246cb0cf51c206d9a2f28eacabd7f9d0b34"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallGraphProfiles",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.SmallGraphProfiles"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.28911720000906,
+          "log_sha256": "61ab5f25dfacdb55a18dd7f90d89dcc2d34998b7c85bdec951992482c13f447e"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.ExcessContextDefects",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.ExcessContextDefects"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.312507800001185,
+          "log_sha256": "4399b503e40d8514efbade2cb347ee2d8d4af41cdeca511f938eaf6ddd674ccf"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperChildMass",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperChildMass"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.44296590000158,
+          "log_sha256": "a3848a080ed607e2ac7e86ce942d9375f1efd07a6e919d188affd48cb9e3957a"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.AuxiliaryRepairMass",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.AuxiliaryRepairMass"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.546174000017345,
+          "log_sha256": "34087346ffecc0456c114c69a9ff032444d5e9b4dba3434bbeda11be7eadf06c"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerGraphTruncation",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerGraphTruncation"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.304443300003186,
+          "log_sha256": "d52b1184374a3e5b10b9bf664d0d41d5eed56abc0a6f1126c46fe0341437c0a6"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextBox",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextBox"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.69702049996704,
+          "log_sha256": "0622384206625ce1e1c58a7435c1aa75ad32494b0e19cda37305d6dca4dee606"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportCoefficient",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportCoefficient"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.97521930001676,
+          "log_sha256": "9fce0d17b64e60bed2560672ee4d631858df34a58e9818937e0ffd756a6d4337"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.ContextAdjacentTransport",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.ContextAdjacentTransport"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.844895700050984,
+          "log_sha256": "d2e347b15afe3f2b009965595cd7f6991f7f35157be92a08a676193b8af98eb6"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerChildVariance",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.IntegerChildVariance"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 20.507291099987924,
+          "log_sha256": "331692f23ac40901aaa3dd7fc92341457bd7e16dc2b62fc33a1f80e354734055"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteExposureVariance",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.FiniteExposureVariance"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.31731100002071,
+          "log_sha256": "b21730877021f462cf69ce6675d766f07f56e92e08197589dd196c51bb789557"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.ContextChildVariance",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.ContextChildVariance"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.810312299989164,
+          "log_sha256": "77c919595074b753de7574111b20ed8b8217edb0f62532c3476906d419748546"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.ContextGraphMembership",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.ContextGraphMembership"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.634242999949493,
+          "log_sha256": "6149a279e98275930f429007a3ebc5150341cc83a18a4ced3d5d7506fa5c4ce2"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalGraphVertices",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.PhysicalGraphVertices"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 19.837197899993043,
+          "log_sha256": "f9fe9bf49142af05dd3773b9c8129805c748196afeb5b55e98da458c4b1f516d"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Transport.ContextGraphEnergy",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Transport.ContextGraphEnergy"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 21.538804300013,
+          "log_sha256": "70e9abc26abac422f10f5848269a40c843d9974cd7d37fda2660211c5b8d843a"
+        },
+        {
+          "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalPrefixEnergies",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+OAI.Combinatorics.ContingencyTables.Sampling.PhysicalPrefixEnergies"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 21.506986800057348,
+          "log_sha256": "6afa40a90abbfb1dafb2d8205320d69a20a9bd5df45c2b84a66993c0487ac7ac"
+        },
+        {
+          "module": "Math115.PhysicalLeafEnergy",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115.PhysicalLeafEnergy"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 21.28835639997851,
+          "log_sha256": "cbc0d6ae455537e34ff411a80dbeed7647b78a14cf405da815d84fd391088a5c"
+        },
+        {
+          "module": "Math115",
+          "command": [
+            "<research>\\tools\\lean-4.34.1-windows\\bin\\lake.exe",
+            "--no-ansi",
+            "build",
+            "+Math115"
+          ],
+          "exit_code": 0,
+          "elapsed_seconds": 18.868500699987635,
+          "log_sha256": "261811b58af963098e8b681f5230c8f397a58913e7544f13686835f83702cf40"
+        }
+      ],
+      "module_build_seconds_sum": 1884.4120102999732,
+      "source_sha256_by_module": {
+        "OAI.Combinatorics.ContingencyTables.Transport.QuadraticTransport": "bd21390413f074c3703297688190db6e8520a801a344bef0ea931c543960dbd5",
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedSummation": "c1fafd4defcf300e29ba035319df3cd8f056e52b183a84645abfb76704828f85",
+        "OAI.Combinatorics.MatroidCounting.CommonBases": "0e5fa4d146154656ca6f89fad0d255159ca3e895b76b8bc3af731882e28725a9",
+        "OAI.Combinatorics.ContingencyTables.Machines.BinaryContraction": "677899d6bc0b7c051598b8547fbdfb65d7d80a7d23834c8947ee33576f1c370f",
+        "OAI.Combinatorics.ContingencyTables.Transport.FactorialSignatures": "771558a0fd9206079ba087504e341dd93db6ee509878644104c02bebafe6da02",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerMarginal": "6df5d9d4fece5b32507fc8fde11a987b102c2722eff7989a97218c43c339c489",
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedBox": "07ddb01ee816f869dc0281e7712b5501d49a602dea626931d4fdf59c74ff5d1a",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerReflection": "d7d7219f8ab8a6e83f8dc637755e9286ece28038f4de2cabc57ae115b4efb359",
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedFamily": "30de4bedeb8e5dc9028d9ad00153abefcee961a8b4b1086e1ad0341f2d050917",
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedEnumeration": "c63d2edbeaf457835fe9d0767a2731c86842b60178847c94022afeb7e1f5979a",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerWeightedTransport": "dcfb78c959570ab16eb43ee719077e45c1623c08890c11032c8bfb458ae00a42",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureSquare": "de59d422a3b651ef9af78b6a685caf1c4722620e2e8de3135ac9fa5bdab20261",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureKernel": "d7c28a4d445f73dd903c6e3c7061fed0df036abfa1cb8b3f3d1616c1fb85c406",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceReindex": "6b87a57ce4fb2c6569e34dfdd7148068920b7af8c66f2c8ce36a9bfa36426a20",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerExposure": "3ca48964f2ed5138b5b2944a38123e1762af120b47af05282a0806bfac28e305",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerPairRecursion": "9d9d0e591f95218d88b619413732fb045b62d472188742230d023605cfa1777b",
+        "OAI.Combinatorics.ContingencyTables.Transport.SignedTransport": "617edb66c51ee7803771fc34aef89f71d04a654eb3fa31fb562028d41bbbad9f",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafTransport": "1fd02e86396c398b3d99f44b18893bd43b4626b447c274fa64395f6509e8a4d6",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursiveFlow": "25a34320580e0853976d6ffc6724d881d130aa29fa90cdbe9fb1708400e38ac3",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafEnergy": "4b211f2b01925228cdbdfd630fe460a01c1820734842cc3890bf390369c57657",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerCorrectionKernel": "2825ea18244c670a6322c98bb8f6d73074969b5b7b8ff7d3eadf1344e5d4c0df",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursivePotential": "5e738402ade4d237d3465fcad0f47e9b59a8bbd8d4071c430cd3f50f9b250075",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLevels": "2c7defba22393aeeb2439583618b9c06de809fa3f48d7b3616457b0a937fc34d",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRootEstimate": "bc10f1a5aa554b2997a683fcdb6fbc3ca05d861349e227cf784ce60f91308478",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRootTransport": "363ab4669ef3f07b43d0de61a38f97e7b9e13ee0e3448f47576d735b0772bcc2",
+        "Math115.QuadraticCoefficient": "9d023785b272aeb6b819aaa1bc42c7c04f8419522799b64e0b66bb355b91a46a",
+        "Math115.TransportRefinement": "04b50163b67e1ef21f07b379f1daeb857d53f3dbd188aa857e8327ced7cb9dfc",
+        "Math115.GlobalDisplayOwnership": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
+        "Math115.WidthWeightedTransport": "fad07f17b6b4e1c674a48cada9e2c0cc688f36e66bc689928025d86e15698d5c",
+        "Math115.RepairCoefficient": "cf1275943fb03dce29c9641d758e56531ee6c2fa42b13dc09110e2d7823ffd60",
+        "Math115.UpstreamOwnershipBridge": "9d8229c0a5556c05d539634d32ba69e547b358b8de6275c9b5f01c7cdec1a7bf",
+        "OAI.Combinatorics.ContingencyTables.Model": "97c51e87779c92b84451fe14e9df423e9bc26832d716db669a88a1c6f778487e",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallEntries": "7bae5af21a726740af6bf58e97a5012353b94b20d68190b5860fba4d4d3373a8",
+        "Math115.SwitchingFiniteSums": "ba773afb67c596abcd35a6c331ed38b1f544d253e432865c98a28ab0117a4e14",
+        "Math115.SmallEntrySwitching": "a0cd85439dccaf5c67ef291fae631f41c6585581f1c4af323c22f04768571f64",
+        "Math115.SurvivalAlgebra": "b7cb5f1d6e71581b1c0475544fd9b3f52483818e3dbdd1d8597aa67e80fe68e4",
+        "Math115.SmallEntryTail": "e6398d28accdb3e169389ec5ebb473d4b3ca9b630c3ad861fb7d3fe3ebf3d7f6",
+        "Math115.ScaleCertificate": "4b1bce04461a4a3f86a17050c90132f869222aac2ded61c021f05039761b1095",
+        "OAI.Combinatorics.ContingencyTables.Sampling.Padding": "8866171a96b5f669b2f614d328373cf670aa8c90055b3b9a764032504511aacd",
+        "Math115.PaddedMarginBridge": "0e015eeb217967669054b9492281c020c0281075336e9712e03c2b623bda0c4b",
+        "OAI.Combinatorics.ContingencyTables.Rooted.LargePairEnumeration": "69d4ae13eb8056228b2135e8d8d9d6614431277cd50c2d8bc8075a4c6b14eccb",
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalLargeProfiles": "8ecdaf8c3fd6858bfa53186eb9f94d9ddc2bb51ba1832731e9a3abd6e5b4eb07",
+        "OAI.Combinatorics.ContingencyTables.Transport.LaminarSignature": "c7362950007744d5276f3ea4b96c8e4771c3dc66d64f56516670e90fb6cb48b1",
+        "OAI.Combinatorics.ContingencyTables.Transport.LineUnarySignature": "e5c2301032dbcb5fd5f987fe189c021132e31df6ae894e9c9ae9447dbaa9f847",
+        "OAI.Combinatorics.ContingencyTables.Transport.ProductIntegerSignature": "481a996ec2ceb45f30704983172fdbd0066b1109230f8f0e64d21d8555471dc4",
+        "OAI.Combinatorics.ContingencyTables.Transport.NestedProductSignature": "bddee1d5cc75e852cc3096546b01f79d1fc64d29f8f6806e030d8861621dc996",
+        "OAI.Combinatorics.ContingencyTables.Transport.ScalarPenalty": "9571337add7f121d548868acc3aba36bea779d67c50b65843b9f4586d7a61206",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerBoxTruncation": "823e1362bb9f5b39940eb53dbd74faeb05251e726c4b6571960d0563e5e2f9d4",
+        "OAI.Combinatorics.ContingencyTables.Transport.LabelledFactorial": "d210e0c4398130f4db63c6d41b74abee0dace12efe3b553a807c1419ade02131",
+        "OAI.Combinatorics.ContingencyTables.Transport.SliceFactorial": "8da7c2cc28b1171a446fd689c24a682a26a6d2f33931ec45a6f11211bd3e5151",
+        "OAI.Combinatorics.ContingencyTables.Transport.RecursiveSignedTransport": "789cede9f5e728a3ab317901a6b3696066fea620d423bf3505273eb193195e46",
+        "OAI.Combinatorics.ContingencyTables.Transport.HardZeroTransport": "80c619f42b3cb9a308a3b51d1693da2a8a383399bf7f6a57098a47c1c9d19aec",
+        "OAI.Combinatorics.ContingencyTables.Transport.NestedPenaltyApplication": "c8d3377e5e60116a46835ab0a58ee05b4cb62f4b3b1334b978289dac8b249150",
+        "OAI.Combinatorics.ContingencyTables.Transport.RowColumnPenalties": "33945321e8e8a8121f7b8b5ed3dac3c76aa183bccab7b549d6ba86e0a87a0a24",
+        "OAI.Combinatorics.ContingencyTables.Sampling.PaddedCompletions": "7a38c3bf97f89412b129160eacc2dba21ef882f19e27132b14761ad55a05f768",
+        "OAI.Combinatorics.ContingencyTables.Transport.CompletionCounts": "bfd2ea90b912e638d3dbebe1d336159af1e220873b4a4f1a92a23c7eee4ef6b3",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperProfiles": "50506cb5625f741a42c647598f97fad7680125798e4b385ad738a33ef996a78b",
+        "OAI.Combinatorics.ContingencyTables.Transport.EqualitySoftening": "db7fc24874a550723def32b3e8ded927fc6fe64c36671e9fae6ddf15fafa38e9",
+        "OAI.Combinatorics.ContingencyTables.Transport.ReflectedSlices": "ba0783b2f1fcc775d1abf8e2ad7b0f8a7efe359502aa21850cbd6460ffa48318",
+        "OAI.Combinatorics.ContingencyTables.Transport.EqualityReindex": "b206bf774b400a46aeb543f99d5b7236e9106200218e77f8cc88939a538c1f5b",
+        "OAI.Combinatorics.ContingencyTables.Transport.ReflectedNested": "f8c0c12b7d9ccd810b0e21462d8fa632a1aebd42f136c854af5cb9ce3e9b472f",
+        "OAI.Combinatorics.ContingencyTables.Transport.NestedReindex": "ba4128f0037ae3ef1d4b3cd836cf563f1bdeb245ea1fa4bd32785b48967c5c40",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPhysicalMarginal": "2391c2494674ed67c7453e3ac8c124f9bc51497542b012bfc7390062c41efb10",
+        "OAI.Combinatorics.ContingencyTables.Sampling.Repair": "96ea87f7574e6a68de9ea84a3912c078f0dd293c356f19d9842dbb177c30a102",
+        "OAI.Combinatorics.ContingencyTables.Sampling.RepairPrefixes": "f9f3b65c8002b8691d0a707dd5665128b9e27b19a0e41a9ad2945df191a545af",
+        "OAI.Combinatorics.ContingencyTables.Sampling.RepairResiduals": "ad866941cb7bcfcc55ed1e5b7768d4e1a10cf573b9c138dd60d231a25a30ead4",
+        "OAI.Combinatorics.ContingencyTables.Sampling.RepairFibres": "c71b019450ef9418420b1d59ba7118fa25dd430f16953459f3a91eb5ebe6f98c",
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalCompletionFibres": "8b3286ec5cb4ba91e48735d686ebcaa122bf6f6fc58c017d71f626acf869b8e5",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextFibres": "12cd5efe09a11915043b172b444631ec32c81639c3cf23612d73cbc2ec84d84a",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCoordinates": "ba02fc80426b24f63bcd58b9a5f7d5fe87a788a7a4f1db34ac89f532d5ca1fb5",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceRestriction": "d91a44d917224fc00c4fa18ee9b872019bb4403fe44a5bc9a0629c783b1e5408",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerContextSlices": "b15e979afd19a0777f0e355468cea93409a39e8fe62b886260417e0a1a347ee3",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLimit": "5c1fdcdcb2b748e07b004cb48d9eaf286e680b8c36fef9ae9af86e451319bdee",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextTransport": "850f54a7357940e927a1d5c4e151c9e200a5f49d4606d58de6589340a942c7c0",
+        "OAI.Combinatorics.ContingencyTables.Transport.PositiveSequenceMinimum": "e398395a92e06782a7489bc4b788c489280b674517d252cf55e20ced9f6fa7d2",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerChildLogConcavity": "130ff4ec2cd0fc2f24ec0f8abc216ae9d57b6eb56a3c6baac39a805050646891",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextChildren": "8aca603574ff73c064dec146b6e64dec05fede84a6127ad30f0c4fbbba14d9c2",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCount": "909e0a6d404cb3d11e8994b85d77ed1363465abc466572d5a4f3bc12a388ca30",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextEnumeration": "9363678bf856046edc24adda1f841d414ff7991493378185fe132bdebf8eee19",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTruncatedTransport": "473f8ef5a8f1765f6aa709541e8492fb959cb36c7921d2cca32b2a6c9fdab118",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerAuxiliaryEnumeration": "e38baf92e9a61594e551e1b3d2e64bbf4686e9656b746322349b799ff16d3a42",
+        "OAI.Combinatorics.ContingencyTables.Transport.ExcessPairCoordinates": "1251f57362c4c68913c760408397d4e53f77d2c5bc0ca915efb39a6b00a22b45",
+        "OAI.Combinatorics.ContingencyTables.Transport.ExcessContextProfiles": "192f4ee54db4e3fe6e085262701427f767c56eb6cd357074a0d6bf99e788d006",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallGraphProfiles": "3e2fa1bbdf183b367f1bc7edcb78a4208224ac8269b0bfbf371bae2e16c2ba8f",
+        "OAI.Combinatorics.ContingencyTables.Transport.ExcessContextDefects": "28d938d14e2d390813a4fac0667eb68bb5b79a7c04bf3df3727ea7422349f99f",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperChildMass": "f5199fc8cb652e798c286270a8626b880fd311a1386f4ab7cdebafc6e320b2bd",
+        "OAI.Combinatorics.ContingencyTables.Transport.AuxiliaryRepairMass": "7f5d1dba74c186e79ecb92369d2e63f06e614007c1d6b9c147c2ddddb63f0b90",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerGraphTruncation": "3b2b2af2e168962da2ef7e980afb0728f0ec73d04816d9b4c4ce22b85a47e95d",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextBox": "4919f7d0d3f84f831a449635929313da07c182fd1dfba807a16436620bc32667",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportCoefficient": "6d1fe5668298810d7968bb611d47c78005ad7624294245a40ff02fc6d5b78e0a",
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextAdjacentTransport": "2a4f3dc9ac181ec349c8f95ab19f48cf62f54e5fadbf05d63e5a8ec4c58edf09",
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerChildVariance": "3eaaf9d6343329b9a5959e1e620fcaa897386bfab80cf77f4d1a9d6863d8f9c2",
+        "OAI.Combinatorics.ContingencyTables.Transport.FiniteExposureVariance": "5386fb72e7934174e4e888b614e32886348a5e25b536a02395f7ad5fe8ee2173",
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextChildVariance": "bb5c0ff2bcb4bc3d2005539c49c13f81f57b24997fd91f33d852025a8b4e081a",
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextGraphMembership": "5e3e3df2adbd185ae23fe0f3ab3ae51df78c226b49c9642f10811876f7e9dbf2",
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalGraphVertices": "46604608610d807e5e1e3ff1ad03a460fb50e50cd6a505236936ae926d7e3df4",
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextGraphEnergy": "50ceeb0a1a995c39068187591180baeb80a56b65adeaf62ab3e15d83877a4f3f",
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalPrefixEnergies": "19faafec41db41e984f97e85d15cf2e3a9ee527eb12b0dd953dde70b2cbfbe5c",
+        "Math115.PhysicalLeafEnergy": "7c32ff73a592051eb81b69485820fa2dfcbadc5be7c0081c9f4a6bf52d88e55b",
+        "Math115": "1c0607c0c5e46a38ebd472787af2f1965401f07cb137f891ae6609c62902dbf7"
+      },
+      "olean_artifacts_by_module": {
+        "OAI.Combinatorics.ContingencyTables.Transport.QuadraticTransport": {
+          "sha256": "8e28ba892596d7baf03c6f3a6723ee2dff22ada5b73809660391b43ad617ceb1",
+          "bytes": 751048
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedSummation": {
+          "sha256": "0219be207e658c5d78779f2072fa6269826c637417c71a324902c53f11e9d24c",
+          "bytes": 852224
+        },
+        "OAI.Combinatorics.MatroidCounting.CommonBases": {
+          "sha256": "b35bea915c4c6bb9a4e901e8194d67b118062dde0dde55a9909a76fba545c71e",
+          "bytes": 74421120
+        },
+        "OAI.Combinatorics.ContingencyTables.Machines.BinaryContraction": {
+          "sha256": "bcd71c0144bbab23b6a0741518a6361e5ea2a6e7bd13cc7a12661a55d349e50f",
+          "bytes": 1151928
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.FactorialSignatures": {
+          "sha256": "518585a37bcc8c3246c35f3f2d85ef6a2b3fa2568bff39c71136684749c0789d",
+          "bytes": 1789296
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerMarginal": {
+          "sha256": "7aa7f9f773c1b1579c9cf658c02f7f7b63f4c1aec84f39615410eab156463f6e",
+          "bytes": 818784
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedBox": {
+          "sha256": "19220aeeb861869d4a002df79e56e2aa12b9eb4704cf7048bdf6ce76ccf709a8",
+          "bytes": 261448
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerReflection": {
+          "sha256": "d3b9691c4bf1a6a3eabde64c3f5abe50df0ada16024fcf1e28bce40960e5b069",
+          "bytes": 373280
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedFamily": {
+          "sha256": "cf9c828a2946b2943c9875380a8d21cc42d8519013761fb70c1feef5ca586852",
+          "bytes": 286432
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.BalancedEnumeration": {
+          "sha256": "6e2ca26a99c8a6eb7d18d5dd1791f06e3318a9ea0dda0af20d55b28626edd9f0",
+          "bytes": 192888
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerWeightedTransport": {
+          "sha256": "9ebfbe77419064e86ee0d253dd788a19eb8f3ea40b837e5aa6c410b6794aa053",
+          "bytes": 81904
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureSquare": {
+          "sha256": "bbfaf6f3630d0a92f293f9698c0b6fbbdb8180acd51586b72502d43bf4b78ca9",
+          "bytes": 854680
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureKernel": {
+          "sha256": "46ad493e5bf747e145b07961a3856fc9fe4944368b199f9ce05b07cda5952d39",
+          "bytes": 203688
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceReindex": {
+          "sha256": "b3fce66517ee5a9054e23e5d954bf5f149b4916f45eae98a15dd27e6341a4c01",
+          "bytes": 118952
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerExposure": {
+          "sha256": "7c1d62cc4b73864d3fa49ba67753cec8bfe54ef197be5c1bfc9f975babaaee1e",
+          "bytes": 184672
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerPairRecursion": {
+          "sha256": "9c4121eb288f2235d2659c31da4a52f3a5810bdee762e74721baf4fbcc48b5fc",
+          "bytes": 541288
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.SignedTransport": {
+          "sha256": "d69247e99dc86058181bc8f51a5cde13ce2bf3400a1138681863f3d3c170301a",
+          "bytes": 513712
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafTransport": {
+          "sha256": "c14c753db578edf6c6700f768637aea77d4c4c1189d28483e7add6a4a29fa0fb",
+          "bytes": 186824
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursiveFlow": {
+          "sha256": "e455661a7847029840152dc07a8ac9375b0f43a7d735834f7317667f62f888df",
+          "bytes": 402224
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafEnergy": {
+          "sha256": "76618ded25d133d10379fdc768237fb2458dff5220e1e7d623ca80a4b8ba1c14",
+          "bytes": 543520
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerCorrectionKernel": {
+          "sha256": "ad76e4d66f7fd7dd078d583252c595483b477cb56e9daca7afd75142f0368f60",
+          "bytes": 240536
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursivePotential": {
+          "sha256": "53be28a7184776e8e7e12b543f8b9f290e2f787ae2afcb7c67b8cdf49f94bee3",
+          "bytes": 560888
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLevels": {
+          "sha256": "8128d10f5514a0b9f2cd011e46bda2a1a9eba66a8cf73f2c92c7f3e4b2b97312",
+          "bytes": 132848
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRootEstimate": {
+          "sha256": "51bf48793d5f9dfa3c9b9d985759622085d3c9c75a3fc60a7c46bb57b5dcf4ad",
+          "bytes": 400552
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerRootTransport": {
+          "sha256": "e0062840353ececb95676c9383758b392fb1ed0ccea803ae5083eb083c42aa0b",
+          "bytes": 428736
+        },
+        "Math115.QuadraticCoefficient": {
+          "sha256": "bb1cf10d9f08a63e2d1e4fb4b6f8e0383ce7e3bdfab9550abac5df800eb595a1",
+          "bytes": 165224
+        },
+        "Math115.TransportRefinement": {
+          "sha256": "10916bd9d67edef0e624994d9fa8f57cfbe547ebf0816bacd2c42c14e0dbdd89",
+          "bytes": 378216
+        },
+        "Math115.GlobalDisplayOwnership": {
+          "sha256": "84a1cfa19df212a0b941fd12bf8ccf7111db3cbf85aee4cb7b3e65d05055d84b",
+          "bytes": 111272
+        },
+        "Math115.WidthWeightedTransport": {
+          "sha256": "d8b91dcb2e2db81827d1e76dba91960acf291f842784dbfa29a1268d2f249f9e",
+          "bytes": 229600
+        },
+        "Math115.RepairCoefficient": {
+          "sha256": "baa23f0e2793a8c9f051125ae0c18510559db88da21556e508b5ce33b72db157",
+          "bytes": 240648
+        },
+        "Math115.UpstreamOwnershipBridge": {
+          "sha256": "e189550c0e56cf7c2afe12db4e97d42fe13b69267776f2e4dbd15ad70847df7d",
+          "bytes": 27160
+        },
+        "OAI.Combinatorics.ContingencyTables.Model": {
+          "sha256": "7dae9001fe72a82d6c33d52214c8989936861163ab387a75e07556a7374b1e5a",
+          "bytes": 311264
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallEntries": {
+          "sha256": "bb24d9c74e99435b3fb5123ef50e850e966a6d4623dc9997de527d97c74e90bc",
+          "bytes": 748888
+        },
+        "Math115.SwitchingFiniteSums": {
+          "sha256": "b59c076d53ddf753abc3f5dd8426c84742a3c5b818886d059058aa6178ee6728",
+          "bytes": 162200
+        },
+        "Math115.SmallEntrySwitching": {
+          "sha256": "d154210d4401d21c39f7e427350259a30a1896fb0bb75db081eea91f92b947d8",
+          "bytes": 571752
+        },
+        "Math115.SurvivalAlgebra": {
+          "sha256": "eab88e440b34df850854d66e2c248f993ea4045ad7379e13057fc27708e906db",
+          "bytes": 290032
+        },
+        "Math115.SmallEntryTail": {
+          "sha256": "ab2fb82a68c7687005e60230c12f04293a8f7e866267a9f82b76e1c6a818fd6e",
+          "bytes": 927872
+        },
+        "Math115.ScaleCertificate": {
+          "sha256": "104e03438ac6d68639942a57499a46233a3da8e7d07580618c33f4840e526f7d",
+          "bytes": 987040
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.Padding": {
+          "sha256": "9966ee2f55bc2fc9ef8f893b925680f75c19ce2b27d6a8d838b4feb424165240",
+          "bytes": 391392
+        },
+        "Math115.PaddedMarginBridge": {
+          "sha256": "c83000142d5cd77aca21b8525603735ec712e52993968601826756185f85be83",
+          "bytes": 256088
+        },
+        "OAI.Combinatorics.ContingencyTables.Rooted.LargePairEnumeration": {
+          "sha256": "0e599f90144e8e353ac375f9fc6372bd633f7fcf57da6b67d0f55f22410fdc2a",
+          "bytes": 327720
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalLargeProfiles": {
+          "sha256": "5a3711562908ead9a3b98157ceb304ee494c96ca6e4f9e578d8f8fdcb25485f8",
+          "bytes": 144576
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.LaminarSignature": {
+          "sha256": "1e402439fd8f6f29ef3ddd6b57915157215daccb689317d275c1c1f6855181cb",
+          "bytes": 616136
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.LineUnarySignature": {
+          "sha256": "b418a8625d32c114f7f7a30637ee6619b5f36d26a6bfb84610b78b5f2bf55aaf",
+          "bytes": 409440
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.ProductIntegerSignature": {
+          "sha256": "86285284caf8cab703808228bb2926434f9860ae133dfe3355220c0865a3d4ce",
+          "bytes": 501584
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.NestedProductSignature": {
+          "sha256": "95c925597464d2dc38e8daedd50a6634f02f2167d1954a52d222241626c8f3b2",
+          "bytes": 885368
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.ScalarPenalty": {
+          "sha256": "b5d4fe3648e7e58519270dd7ffcd495a67bb45329b8f415a2d2f66ce12a0be2e",
+          "bytes": 303944
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerBoxTruncation": {
+          "sha256": "7a71c07f9a3eadd2208e1f30c14cfdc66710058fe4273072d70c221b0a2446be",
+          "bytes": 123376
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.LabelledFactorial": {
+          "sha256": "84427edb89b7752493b587a4104105e7d7eca408ddad4c2e770dc5bb8a5cd541",
+          "bytes": 478904
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.SliceFactorial": {
+          "sha256": "76b0ca3d41c140223101ada9196b855136484597c8273a740ab0fc7b38e863d9",
+          "bytes": 104672
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.RecursiveSignedTransport": {
+          "sha256": "97c6bc9a82ef8727d907a142d61318755fb74f0ae7033cfbb38023f287c851fc",
+          "bytes": 1342824
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.HardZeroTransport": {
+          "sha256": "a0c83fc5bb057cf8c44d09394246a936e930a9a3c4ba86c4c409c18874d62a2b",
+          "bytes": 168880
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.NestedPenaltyApplication": {
+          "sha256": "556313102b815fb43d716d78e258408ee5c45ba6cea1b163a2bba59199a7a656",
+          "bytes": 286352
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.RowColumnPenalties": {
+          "sha256": "0e8cc63232dd5b9650d084c30ef766e8f566ec896b9b96b6ee130b66a3c657a5",
+          "bytes": 535136
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.PaddedCompletions": {
+          "sha256": "a9dc1e0792db38d0e1010f5b982ac6c94b2163aa3b688258cded2b84fa91f691",
+          "bytes": 303032
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.CompletionCounts": {
+          "sha256": "c30a4e7359fb76fb55c64b5a2ec0fe3863a637993ab964233f9db7ff160fa67a",
+          "bytes": 461768
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperProfiles": {
+          "sha256": "3acfc384c35c5e6d6595163817893905a46f2d0e2fdad5c0fa81e2674e75482a",
+          "bytes": 200984
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.EqualitySoftening": {
+          "sha256": "0a72ac5fae33e95a81312dc83b75983e6f72180ead743278df103a88c88a5d51",
+          "bytes": 318616
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.ReflectedSlices": {
+          "sha256": "f9a1653bcd12be1b843665153ac05e190efaebf11aba1b0a0040deafd2f6c7d6",
+          "bytes": 348032
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.EqualityReindex": {
+          "sha256": "4d5627c732802a775506b50ba1001a85a62bfcfca81c0f945dd8c1005062032f",
+          "bytes": 92288
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.ReflectedNested": {
+          "sha256": "081d133a99402bc073d8d4a5fe02c1fe882f818359eacf0531c4287b99a18847",
+          "bytes": 216824
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.NestedReindex": {
+          "sha256": "0ff55c102aa48d921dc95fc31f6277e2c6a76721b8b73fcb5fe246bc39a0987d",
+          "bytes": 128528
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPhysicalMarginal": {
+          "sha256": "47702f962eb9c5e76d64372f8d8e0b92a7d081c31bb38023120130ba6d38f1ed",
+          "bytes": 297424
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.Repair": {
+          "sha256": "a99bd8060f16d4f88435d4f22d05186beb3d13fe05b58adccb6e88e25ff5119d",
+          "bytes": 267416
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.RepairPrefixes": {
+          "sha256": "9c8a8ad6f53276f02c58d67f88577a545ca85a05daa0ad43570e6a56765a8eb0",
+          "bytes": 127528
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.RepairResiduals": {
+          "sha256": "c77556117254ffb74e0407d914a8f996f0b9e6e2a5d5ee27e083150c1b594d98",
+          "bytes": 199264
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.RepairFibres": {
+          "sha256": "0cac4aa81c868ad3ee78db4de8a4210434ab65bce1f2366527dc3be1e2366f8f",
+          "bytes": 242512
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalCompletionFibres": {
+          "sha256": "213b79caa0974666634115fa753e4007bdf0524ccf0439b684e16fdcba553504",
+          "bytes": 946192
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextFibres": {
+          "sha256": "384fd36774ce26339d2d0e3ea720a0efd2cb7d06a62a96fb2de89387ed0e991f",
+          "bytes": 313392
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCoordinates": {
+          "sha256": "c277cfe597b8e90e6452c8d28d692680cb3ee3f9ffd74dbab937a221f2e0263c",
+          "bytes": 319144
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceRestriction": {
+          "sha256": "5704291330cc7209873db5b0c78e160b8965d675933ac2f704a5bec47ed6379c",
+          "bytes": 134520
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerContextSlices": {
+          "sha256": "1697eb6e50899643aff8ad7e6dd11e3433138251f2635d02ea54751d55b74368",
+          "bytes": 43640
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLimit": {
+          "sha256": "e06a81480efdbf115c091142eab75471d33b49b71bfcf105a34e0fed0c90b929",
+          "bytes": 224464
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextTransport": {
+          "sha256": "eafa947752d866581d082f46294072c6d3e605d9af31e517f61b183a996406de",
+          "bytes": 101264
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.PositiveSequenceMinimum": {
+          "sha256": "f7a9d5dd9ac5911612df351ff5a2dfaeaeb6931ea05fd9aa1d8e8e677d0e2446",
+          "bytes": 153416
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerChildLogConcavity": {
+          "sha256": "d9199c300158d5c958c82e1f5421e618b54ddc11be3476e1fc553f8fa55c970a",
+          "bytes": 326800
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextChildren": {
+          "sha256": "4665e3d656274fc5f6dc37db740808cda83c7830efec88ee4b10bede3cef129f",
+          "bytes": 38248
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCount": {
+          "sha256": "c8c29927a4de5aa01e8bec2ca9406b639289a7190cede763ac8d4ca109587d8f",
+          "bytes": 679056
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextEnumeration": {
+          "sha256": "8963eee15fef4c3de05de7292bf7abf4d8e7d4ac561219272918f4e2c2357d71",
+          "bytes": 541936
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTruncatedTransport": {
+          "sha256": "9d6063054f0a910d3137918e9d8b1a618b139da29234c967e4c07923b37100e8",
+          "bytes": 269256
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerAuxiliaryEnumeration": {
+          "sha256": "863d5f136686aacc4bd8c311c83c63faef2dfe320f70b52da58e6f5a953a9749",
+          "bytes": 390112
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.ExcessPairCoordinates": {
+          "sha256": "9dbbf53b6ad51ad87819359983d9686a8e06a5b0a316c130ca8d89a156c93d39",
+          "bytes": 230088
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.ExcessContextProfiles": {
+          "sha256": "782d52d7eb15d5576305965088dabd00260aa09d264a1f6f54e05a771dcf352d",
+          "bytes": 368440
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallGraphProfiles": {
+          "sha256": "84c6ae522b02850d593eaed6e421c714319da97447759dc970de7b0c7e831f34",
+          "bytes": 173800
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.ExcessContextDefects": {
+          "sha256": "c1bdf26b01b595c5a1a4042ec8df810296de9b2ff38b3b1f4ca8fc69e3b4eec1",
+          "bytes": 343696
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperChildMass": {
+          "sha256": "571ad1a1e0d5768d1a36309116fcf28c58b95956330fb7f1a976b752ef6a3752",
+          "bytes": 71704
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.AuxiliaryRepairMass": {
+          "sha256": "1962fcca169930064e97f7b41d930560227d145f987311035310bbccc880e41e",
+          "bytes": 308216
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerGraphTruncation": {
+          "sha256": "d6dbf965e62a5d50e5066e66ac8743bd0b91b19bd32fbe55ebe138d34f6f6f11",
+          "bytes": 75920
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextBox": {
+          "sha256": "69fb1c47a872121fcad5c79082b26a024b342445413db29fc5ac322ed8049a9d",
+          "bytes": 77120
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportCoefficient": {
+          "sha256": "0945d9073550b7c2e942a5ea3c9e7412e4d7fdc2954798442cb0cd1a28395ff3",
+          "bytes": 261856
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextAdjacentTransport": {
+          "sha256": "5057cb5966decaa1199ff403da9c106dd45f1d3a0f37efa7745c27f14a8f2ecd",
+          "bytes": 330792
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.IntegerChildVariance": {
+          "sha256": "104ee5731f45cf9c5a5186458879e8a106c5def23009122dd69aec6fa7b8a8fa",
+          "bytes": 720824
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.FiniteExposureVariance": {
+          "sha256": "99abd899caeb496ade1734cf686540505ac23d4e1e7edaddcb9aa65a01f0343c",
+          "bytes": 220488
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextChildVariance": {
+          "sha256": "3e2d40fa495c4609a35355f325f4f55411e5d3ab73afe1b64b104d610028d6d1",
+          "bytes": 202440
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextGraphMembership": {
+          "sha256": "85e551edf81bc11dfe5c330fba78e42ba04e3da1c285582a96ea9c198a70c3d8",
+          "bytes": 493848
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalGraphVertices": {
+          "sha256": "63d0aadb54787fa2fa249bd27edfd3ac792057aeec367972fcf062069955b335",
+          "bytes": 89432
+        },
+        "OAI.Combinatorics.ContingencyTables.Transport.ContextGraphEnergy": {
+          "sha256": "399c75dfae822bb8820b2172b01ebeca2264843a8790a333550b404be364e148",
+          "bytes": 177968
+        },
+        "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalPrefixEnergies": {
+          "sha256": "3fb04251ce35e3f046b2bd186a928862e16f1ce12dbb611a4028c10f939ac59c",
+          "bytes": 239840
+        },
+        "Math115.PhysicalLeafEnergy": {
+          "sha256": "8fa4a4f6738b2c8f36645051f64141fbdc6e0d49af3494688980684298a87a77",
+          "bytes": 1215664
+        },
+        "Math115": {
+          "sha256": "4d3549eca352367f5b5784cd09c1a572eb95a277e712c933836e6cd64e7d6966",
+          "bytes": 2360
+        }
+      },
+      "post_build_git_blobs_verified": 109,
+      "post_build_compiled_source_git_blobs_verified": 100,
+      "all_dependency_pins_unchanged": true,
+      "all_formal_source_hashes_unchanged": true,
+      "checkout_clean": true,
+      "canonical_log_hashes_verified": 125,
+      "log_canonicalization": "UTF-8, LF line endings; absolute research paths replaced before hashing with <workspace> or <research>"
+    },
+    "scope": "Fresh compilation of the published focused closure and both printed-axiom audits; official Mathlib cache trusted; no full original theorem or secure Comparator replay.",
+    "resource_settings": {
+      "module_builds": "sequential in dependency order",
+      "lean_num_threads_environment": "2",
+      "resource_values_are_single_observations_not_peak_measurements": true,
+      "sampled_compiler_working_set_bytes": 6866071552,
+      "sampled_free_memory_gib": 4.75
+    }
+  },
+  "completed_utc": "2026-10-08T22:47:25.650130+00:00",
+  "log_digest_encoding": "SHA256 of UTF-8 sanitized log text with LF line endings; all 125 retained canonical log files were read back and matched.",
+  "local_receipt_validation": {
+    "compiled_source_hashes_checked_against_pinned_git_objects": 100,
+    "formal_input_hashes_checked_against_checkpoint_git_objects": 20,
+    "audit_names_matched_to_published_source": 68,
+    "native_olean_artifact_hashes_independently_read_back": 100,
+    "reproduction_snippet_powershell_syntax_errors": 0
+  }
+}

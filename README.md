@@ -2,21 +2,22 @@
 
 An open EcoDataLab research project building on [OpenAI result #115](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/115.md): sampling and counting integer tables with fixed margins and cell bounds.
 
-The research gives sharp ordinary-table tail and mean bounds, compiled Lean proofs of those bounds and their padding application, and a conditional **O(d²⁵) bound on the ideal small-chain inverse spectral gap**, compared with the source's explicit O(d¹²⁶). The full modified sampler and its bit complexity have not been formally verified.
+The research now includes a **Lean-verified O(d²⁵) bound on an actual ideal small-chain inverse spectral gap**. At cutoff `U=47d⁵` and padding `L=32d³`, the coefficient is `1024·47⁴d²⁵`. The theorem assumes a nonempty physical state space and chosen large reference row and column. Here `d=10+(m+1)(n+1)`. The full modified finite-bit sampler and its runtime remain open.
 
-The repository also supplies exact reference samplers, certified cycle-mixture comparisons, linear bounds with checkable certificates, and a classical worker-allocation baseline with exact metric means and variances. The optimization and ordinary worker tools handle much larger synthetic cases than exhaustive table enumeration.
+The repository also supplies sharp ordinary-table tail and mean bounds, exact samplers for small or structurally decomposable fibers, certified cycle-mixture comparisons, linear bounds, and a classical worker-allocation baseline with exact metric moments. [Practical uses](docs/practical-use.md) explains which probability law and tool fit each problem. Competitiveness of the complete #115 sampler against established application software has not been demonstrated.
 
 ## What improved
 
 | Result | Evidence and scope |
 | --- | --- |
 | Sharp small-entry tail and mean bounds | Actual-table Lean proofs of the survival product, its linear bound, and the mean bound; attaining examples and exact finite checks |
-| Localized transport: O(d⁸⁵) at original scales | Global edge-ownership argument and sharper path/root/repair constants, conditional on the source lemmas |
-| Smaller scales: O(d²⁵) ideal inverse gap | Actual padding-count theorem for U=64d⁵ and a smaller shape-aware threshold; full transport and program integration remain open |
+| Original ideal chains: O(d⁸⁵) inverse gap | Compiled physical path, exposure, and full-variance proofs give `1024d⁸⁵` for the literal source completion chain and `512d⁸⁵` for its all-small unit chain |
+| Reduced ideal chain: O(d²⁵) inverse gap | Actual source completion-chain construction at `U=47d⁵, L=32d³`, with verified capacity, acceptance, stationary-law, and energy interfaces |
+| Smaller padding threshold | Actual ordinary-table counts prove half unpadding acceptance at `U=47d⁵`, with a smaller shape-aware alternative |
 | Limit of this padding construction | A counting argument forces U=Ω(Ln²) in a 2×n family if acceptance stays bounded away from zero |
-| Smaller accuracy and counting-estimator budgets | Exact integer/rational utilities, concentration and coupling derivations; changed-law tabulation and machine costs remain obligations |
-| Lean refinements | Quarter transport coefficient, retained leaf energy, actual widths and ownership, ordinary-table switching and tails, scale interfaces and padding count; exact audit scope in the verification ledger |
-| Exact reference algorithms | Uniform and weighted small-fiber laws, structural zeros and lower bounds, resource-limit failures, and independent enumeration oracles |
+| Smaller accuracy and counting-estimator budgets | Exact rational allocations and independent-block median schedules; transition allowances and observable-evaluation costs are reported separately |
+| Lean verification | 154 audited declarations: 148 focused and six standalone, all using standard foundational axioms; exact scope in the verification ledger |
+| Exact reference algorithms | Uniform and weighted small-fiber DP, cactus cycle coordinates, and graph-block factorization, with explicit work limits |
 | Exact feasible metric range | Rational min-cost flow with primal/dual and infeasibility-cut certificates; no table enumeration |
 | Better fixed cycle mixtures | Exact certificates: over 63% larger gap on the 42-table fixture, beating every rectangle-only mixture; no general mixing or runtime claim |
 | Ordinary worker baseline | Classical inverse-factorial law, exact integer draws, and full-covariance linear moments without sampling; excludes bounds and interaction weights |
@@ -25,10 +26,13 @@ The repository also supplies exact reference samplers, certified cycle-mixture c
 
 - [Original research review](115/115-contingency-tables-review.md) and [source manifest](115/source-manifest.json): the preserved October 8, 2026 handoff, including hypotheses to test.
 - [Research status](docs/status.md): current results, limitations, and next proof obligations.
+- [Verified reduced ideal chain](docs/reduced-small-chain.md), [original-chain comparison](docs/small-chain-gap.md), and [sequential padding](docs/sequential-padding.md).
 - [Transport proof](docs/transport-localization.md), [switching and scale proof](docs/scale-audit.md), [error budgets](docs/error-budgets.md), and [independent mathematical review](docs/independent-review.md).
 - [Sharp tail formalization](docs/small-entry-formalization.md), [actual padding bridge](docs/scale-formalization.md), [padding obstruction](docs/padding-barrier.md), and [second independent review](docs/second-checkpoint-review.md).
 - [Formal verification](docs/formal-verification.md): compiler outcomes, exact pins, and remaining integration work.
+- [Third independent review](docs/third-checkpoint-review.md), [fourth review](docs/fourth-checkpoint-review.md), and [defect-transport research](docs/defect-transport-research.md): checked improvements and limits of the current repair method.
 - [Reference sampler](docs/sampler.md), [linear bounds](docs/linear-bounds.md), and [independent implementation audit](docs/independent-implementation-review.md).
+- [Cactus sampler](docs/cactus-sampler.md), [graph-block sampler](docs/block-sampler.md), and [correlated-observation budgets](docs/block-budgets.md).
 - [Certified cycle mixtures](docs/cycle-mixtures.md), [ordinary worker baseline](docs/worker-baseline.md), and [larger synthetic commuting benchmarks](docs/commute-scaling.md).
 - [CBEI and commuting applications](docs/cbei-use-cases.md): target laws, source reconciliation, and a public synthetic example.
 - [Contributing](CONTRIBUTING.md): welcome to mathematical corrections, counterexamples, formal proofs, implementations, and reproducible benchmarks.
@@ -47,7 +51,7 @@ python3 scripts/verify_sources.py
 
 The archived audit and numerical mixture search need NumPy. Saved mixture certificates replay using only exact standard-library arithmetic. Source verification downloads only files in the pinned manifest and checks their Git blob hashes. It does not execute upstream code.
 
-The [Python verification receipt](reports/checkpoint-verification.json) records 128 passing tests, independent audit results, the runtime environment, and SHA-256 hashes of the checked sources. [Lean receipts](formal/results/) record the separate formal checks.
+The third checkpoint passed **188 Python tests** and **154 Lean declaration audits**. The [Python receipt](reports/checkpoint-verification.json) and [Lean receipts](formal/results/) record their environments, source hashes, and exact scope.
 
 Generate the research reports:
 
@@ -57,6 +61,10 @@ python3 experiments/budget_report.py --output reports/budget-comparison.json
 python3 examples/sparse_commute.py --spectral --output reports/sparse-commute.json
 python3 examples/linear_metric_bounds.py --output reports/linear-bounds.json
 python3 experiments/padding_barrier.py --output reports/padding-barrier.json
+python3 experiments/padding_growth.py --output reports/padding-growth.json
+python3 experiments/block_budget_report.py --output reports/block-budget-comparison.json
+python3 examples/cactus_commute.py --output reports/cactus-commute.json
+python3 examples/block_factorization.py --output reports/block-factorization.json
 python3 experiments/worker_baseline.py --output reports/worker-baseline.json
 python3 experiments/commute_scaling.py --output reports/commute-scaling.json
 python3 experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json
@@ -82,7 +90,7 @@ bash scripts/verify_lean.sh standalone
 bash scripts/verify_lean.sh focused
 ```
 
-The [manual Linux workflow](docs/linux-verification.md) separates focused proofs, the original full theorem build, and strict Comparator replay. The tested hosted runner lacks the sandbox ABI required for Comparator; focused Lean compilation is a different verification level.
+The [Linux verification record](docs/linux-verification.md) includes a successful full original-theorem build at commit `5e5d6ef`, auditing all three original exports. Thor separately reproduced the earlier `b14082b` checkpoint: 128 tests, 100 focused modules, and 68 audits. Those runs do not cover this checkpoint's later additions. Strict Comparator replay remains unavailable on the tested hosted runner because its sandbox ABI is too old; no Comparator pass is claimed.
 
 ## A concrete CBEI example
 

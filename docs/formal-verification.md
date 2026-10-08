@@ -1,7 +1,9 @@
 # Formal verification of the #115 refinements
 
-The formal work is additive to OpenAI's pinned #115 source. It does not replace
-the sampler, change its target law, or claim a new machine runtime exponent.
+The formal work is additive to OpenAI's pinned #115 source. It now proves
+sharper Poincare bounds for the unchanged original ideal chains and an actual
+reduced-scale ideal chain. Finite-bit sampler runtime and secure Comparator
+verification remain separate from these results.
 
 ## Reproduction
 
@@ -30,8 +32,9 @@ dependency revisions:
 | Elan installer | `v4.2.4`, platform archive SHA-256 checked |
 
 [`formal/results/provenance.json`](../formal/results/provenance.json) records
-the 86 original source modules in the expanded focused dependency closure, their Git
-blob IDs and SHA-256 hashes, and the original build-file hashes.
+the pinned original source modules, their Git blob IDs and SHA-256 hashes, and
+the original build-file hashes. The checkpoint-specific closure counts are
+reported below.
 [`formal/lake-manifest.json`](../formal/lake-manifest.json) contains the relevant
 dependency entries from the original manifest. We do not run `lake update`.
 The separate harness avoids the original package configuration's eager cloning
@@ -70,8 +73,9 @@ original interface with the sharper coefficient.
 
 These statements use the same positivity, signature, width, and root-balance
 hypotheses as the original transport theorem. They introduce no new axioms or
-admissions. This is a local transport refinement; transferring it through all
-contexts, parameter schedules, and the concrete sampler requires further work.
+admissions. The physical exposure and ideal-chain integrations below now transfer this
+refinement through the actual contexts. The complete finite-bit sampler at the
+new scales remains separate.
 
 [`WidthWeightedTransport.lean`](../formal/Math115/WidthWeightedTransport.lean)
 retains each slot's actual coefficient `(U + 1)^2/4` before summing auxiliary
@@ -124,7 +128,70 @@ prefixes, and sums all adjacent contrasts with coefficient
 `2+(p−1)(U+1)²/2` against physical energy. This is the continuous quarter
 coefficient; it does not claim the additional discrete-floor refinement.
 The [physical integration note](physical-transport-integration.md) records the
-exact interfaces and remaining exposure, repair, and chain-comparison steps.
+exact interfaces. Exposure, the original repair extension, and ideal-chain
+comparison are now checked in the additional modules below.
+
+[`PaddingGrowth.lean`](../formal/Math115/PaddingGrowth.lean) and
+[`PaddingGrowthAlgebra.lean`](../formal/Math115/PaddingGrowthAlgebra.lean)
+strengthen the padding result by iterating actual ordinary-fiber count ratios.
+They verify `U=47d⁵`, a shape-dependent threshold, and the zero-donor case.
+The earlier `U=64d⁵` certificate remains valid. See the
+[sequential-padding proof](sequential-padding.md).
+
+[`PathVariance.lean`](../formal/Math115/PathVariance.lean), with
+[`PathDistanceSum.lean`](../formal/Math115/PathDistanceSum.lean), proves the
+weighted path-variance coefficient `U(U+1)/2` and its sharper mode-dependent
+form. The actual child-weight wrappers use the source's global minimum
+property, which retains the required interval support and handles zero weights.
+[`PhysicalExposureVariance.lean`](../formal/Math115/PhysicalExposureVariance.lean)
+combines this with the globally owned physical leaf energies.
+[`PhysicalFullVariance.lean`](../formal/Math115/PhysicalFullVariance.lean)
+then uses the unchanged source repair extension and positive-support encoding.
+For `p` small cells, the resulting actual-state coefficient is
+
+$$
+K_{p,U}=(1+2p^2)\frac{U(U+1)}2
+\left(2+\frac{(p-1)_+(U+1)^2}{2}\right)+2.
+$$
+
+The [path proof](path-variance-formalization.md) and
+[physical exposure integration](physical-exposure-integration.md) give the
+precise hypotheses and exports.
+
+[`CompletionAdjustment.lean`](../formal/Math115/CompletionAdjustment.lean)
+checks the actual source exchange and repair translations: entry magnitude at
+most one, support at most three, and negative support at most two, including
+reverse repairs and the singleton/empty cases.
+[`ReferenceEdgeAcceptance.lean`](../formal/Math115/ReferenceEdgeAcceptance.lean)
+uses the ordinary-table small-entry theorem to prove actual half acceptance for
+free padding `L ≥ 3e`, where `e` is the product of the numbers of nonreference
+large rows and columns. This includes the singleton `L=e=0` case. See the
+[adjustment](completion-adjustment-formalization.md) and
+[acceptance](reference-edge-acceptance.md) notes.
+
+[`SmallChainGap.lean`](../formal/Math115/SmallChainGap.lean) and
+[`AllSmallChainGap.lean`](../formal/Math115/AllSmallChainGap.lean) preserve the
+literal source chain definitions at `U=d²⁰`, `L=d¹²`. They prove exact
+coefficients `2K/β` and `K/β`, respectively, and the conservative bounds
+`1024d⁸⁵` for `paperSmallChain` and `512d⁸⁵` for `unitSmallChain`.
+The [original-chain comparison](small-chain-gap.md) distinguishes these bounds
+from the source's displayed `d¹⁶⁰` allowance and its unweakened intermediate
+calculation.
+
+[`ReducedSmallChain.lean`](../formal/Math115/ReducedSmallChain.lean) constructs
+an actual ideal completion chain with free `U,L`, the source physical graph,
+its stationary completion weights, and the proved acceptance comparison.
+For `U ≥ 2`, `L ≥ 3d`, it proves `1024d⁵U⁴`; at `U=47d⁵`, `L=32d³`, this gives
+`1024·47⁴d²⁵`. The theorem explicitly assumes a nonempty positive-weight state
+space and a chosen large reference row and column. It does not cover the
+missing-reference branch or discharge nonemptiness from equal total margins.
+The [reduced-chain guide](reduced-small-chain.md) separates this checked
+ideal-chain result from finite-bit oracle implementation and end-to-end sampler
+runtime.
+
+Two later local drafts, `RepairVarianceRefinement.lean` and
+`ReducedAllSmallChain.lean`, are **uncompiled** and excluded from this checkpoint
+and its verified declaration counts.
 
 ## Verification levels
 
@@ -133,7 +200,7 @@ exact interfaces and remaining exposure, repair, and chain-comparison steps.
 - `focused` compiles the unchanged upstream leaf-energy and root-transport
   modules, then all refinements imported by `Math115`, and checks their printed transitive axiom
   dependencies against `propext`, `Classical.choice`, and `Quot.sound`.
-- `full` attempts the unchanged `UnconditionalMain` and Comparator challenge
+- `full` compiles the unchanged `UnconditionalMain` and Comparator challenge
   modules (a much larger dependency closure), then audits the three original
   exported sampling/counting theorems. This is Lean compilation and an axiom
   audit, not a Comparator pass.
@@ -151,30 +218,44 @@ additional verification level.
 
 ## Recorded outcome
 
-The second local focused checkpoint passed on 8 October 2026 with Lean 4.34.1:
+The third local checkpoint passed on 8 October 2026 at
+**23:41:37.968534 UTC**, with Lean 4.34.1. This was a fresh aggregate
+`Math115.lean` compilation followed by fresh focused and standalone axiom
+audits, using existing compiled dependency outputs. It was **not a fresh build
+of the complete dependency closure**.
 
 | Check | Outcome | Evidence |
 |---|---|---|
-| Unchanged upstream dependency closure | 86 original modules in the expanded import closure; source hashes and Git blobs recorded | [Provenance](../formal/results/provenance.json) and [focused build log](../formal/results/focused.log) |
-| Standalone refinements | Six exported declarations compiled and passed the axiom allowlist at 18:56:17 UTC | [Standalone log](../formal/results/standalone.log) |
-| Integrated refinements | Transport/ownership, actual switching and tails, scale/padding, and physical hard-limit/global-contrast modules compiled | [Focused log](../formal/results/focused.log) |
-| Focused axiom audit | 60 new declarations and two original baseline declarations passed at 21:52:20 UTC | [Focused log](../formal/results/focused.log) |
-| Earlier published focused checkpoint on fresh Linux | Passed at commit `5e5d6ef`; excludes the subsequent additions in this local checkpoint | [Run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847572556) |
-| Full original `UnconditionalMain` / challenge build | Running on Linux at `5e5d6ef`; no successful full-build claim yet | [Run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509) |
-| Secure Comparator | Hosted runner preflight failed: Landlock ABI 7, required ABI 9; expensive replay skipped | [Run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684) |
+| Checkpoint 3 aggregate | `Math115.lean` compiled; both axiom audits passed | [Third-checkpoint log](../formal/results/third-checkpoint.log) |
+| Checkpoint 3 dependency inventory | 193 local modules: 168 unchanged upstream and 25 `Math115`; 42 trusted external import entries in the plan | [Verification scope](../formal/results/verification.json) and [source provenance](../formal/results/provenance.json) |
+| Checkpoint 3 focused audit | 148 selected declarations passed | [Third-checkpoint log](../formal/results/third-checkpoint.log) |
+| Checkpoint 3 standalone audit | Six selected declarations passed | [Third-checkpoint log](../formal/results/third-checkpoint.log) |
+| Checkpoint 2, historical local result | 86 upstream modules in its import closure; 62 focused and six standalone audited declarations | [Historical focused log](../formal/results/focused.log) and [standalone log](../formal/results/standalone.log) |
+| Earlier focused Linux run | Passed at `5e5d6ef`; excludes subsequent local additions | [Run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847572556) |
+| Full original Linux build and audit | **Passed** at `5e5d6ef`: unchanged `UnconditionalMain`/challenge closure and all three original exported sampling/counting theorem audits | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509) and [Linux receipts](../formal/results/linux-runs.json) |
+| Earlier independent Thor run | At `b14082b`: 100 freshly compiled local modules, 128 Python tests, and 68 audited declarations; excludes checkpoint 3 additions | [Thor verification](thor-verification.md) and [receipt](../formal/results/thor-verification.json) |
+| Strict Comparator | Not passed: hosted runner reported Landlock ABI 7, while ABI 9 was required; strict replay was skipped | [Preflight run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684) |
 
-The 68 audited declarations comprise 66 new declarations and two original
-baseline declarations. All depend only on the standard allowed axioms
-`propext`, `Classical.choice`, and `Quot.sound`; the ownership theorems use only
-`propext` and `Quot.sound`. No admissions occur in the new proof files.
+The checkpoint 3 total is **154 selected declarations: 148 focused plus six
+standalone, comprising 152 new declarations and two original baseline
+declarations**. Every audited declaration uses only the standard allowed
+axioms `propext`, `Classical.choice`, and `Quot.sound` (some use fewer).
+The separate successful full-original Linux run audited the three original
+sampling/counting exports to the same standard axiom allowlist. That workflow
+is a distinct verification result at its recorded commit; its success is not a
+Comparator pass and is not a fresh Linux verification of the new checkpoint 3
+refinements.
+
 [`verification.json`](../formal/results/verification.json) records the exact
-declarations, axioms, source-file hashes, and verification scope.
+selected declarations, axioms, source-file hashes, and verification scope.
+`focused.log` remains historical checkpoint 2 evidence; the current aggregate
+and fresh audits are in `third-checkpoint.log`. The source pin and unchanged
+upstream files are recorded in provenance, and the focused dependency manifest
+retains the original revision entries.
 
-The unchanged source tree was clean before verification, and all nine focused
-dependency manifest entries match the original entries exactly. This validates
-the local transport improvements, actual table tail and padding results,
-physical embeddings, and global adjacent-contrast sum. It does not certify the
-proposed global mixing exponents or full sampler. The original three
-sampling/counting machine theorems have not been independently reverified by
-this focused run. [Linux provenance](../formal/results/linux-runs.json) records
-separate workflow outcomes at their own source commit.
+This checkpoint verifies the actual table tail and padding results, the
+localized physical variance bound, the original-chain improvements, and the
+reduced reference-branch ideal-chain `d²⁵` bound with its explicit assumptions.
+It does not establish a new end-to-end finite-bit sampler runtime, independently
+replay the trusted external Mathlib cache, or provide strict Comparator
+certification.

@@ -1,0 +1,691 @@
+{
+  "cases": [
+    {
+      "common_margin": 1,
+      "defect_states": 12,
+      "defect_to_transversal_mass_ratio": "6",
+      "dimension": 2,
+      "exchange_edges": 24,
+      "full_graph_edges": 28,
+      "incoming_support_identity_checked": true,
+      "independent_state_enumeration_equal": true,
+      "literal_doubled_edge_crosscheck": true,
+      "maximum_generic_type_count": 12,
+      "maximum_incoming_repairs": 6,
+      "minimum_incoming_repairs": 6,
+      "observables": {
+        "first_repaired_cell": {
+          "defect_to_defect_energy": "8",
+          "transversal_to_defect_energy": "0",
+          "unnormalized_graph_energy": "8",
+          "unnormalized_variance": "7/2",
+          "variance_over_energy": "7/16"
+        },
+        "first_row_view_cell": {
+          "defect_to_defect_energy": "4",
+          "transversal_to_defect_energy": "4",
+          "unnormalized_graph_energy": "8",
+          "unnormalized_variance": "7/2",
+          "variance_over_energy": "7/16"
+        },
+        "zero_projection_within_type": {
+          "defect_to_defect_energy": "0",
+          "projected_variance": "0",
+          "transversal_to_defect_energy": "0",
+          "unnormalized_graph_energy": "0",
+          "unnormalized_variance": "0",
+          "variance_over_energy": null
+        }
+      },
+      "reference_capacity": 2,
+      "small_cells_p": 4,
+      "transversal_neighbors_per_defect": 1,
+      "transversal_states": 2,
+      "within_same_defect_type_edges": 0,
+      "within_type_variance_witness": null
+    },
+    {
+      "common_margin": 2,
+      "defect_states": 24,
+      "defect_to_transversal_mass_ratio": "8",
+      "dimension": 2,
+      "exchange_edges": 48,
+      "full_graph_edges": 56,
+      "incoming_support_identity_checked": true,
+      "independent_state_enumeration_equal": true,
+      "literal_doubled_edge_crosscheck": true,
+      "maximum_generic_type_count": 12,
+      "maximum_incoming_repairs": 12,
+      "minimum_incoming_repairs": 6,
+      "observables": {
+        "first_repaired_cell": {
+          "defect_to_defect_energy": "16",
+          "transversal_to_defect_energy": "0",
+          "unnormalized_graph_energy": "16",
+          "unnormalized_variance": "14",
+          "variance_over_energy": "7/8"
+        },
+        "first_row_view_cell": {
+          "defect_to_defect_energy": "8",
+          "transversal_to_defect_energy": "8",
+          "unnormalized_graph_energy": "16",
+          "unnormalized_variance": "14",
+          "variance_over_energy": "7/8"
+        },
+        "zero_projection_within_type": {
+          "defect_to_defect_energy": "0",
+          "projected_variance": "0",
+          "transversal_to_defect_energy": "6",
+          "unnormalized_graph_energy": "6",
+          "unnormalized_variance": "6",
+          "variance_over_energy": "1"
+        }
+      },
+      "reference_capacity": 3,
+      "small_cells_p": 4,
+      "transversal_neighbors_per_defect": 1,
+      "transversal_states": 3,
+      "within_same_defect_type_edges": 0,
+      "within_type_variance_witness": {
+        "negative_positive_cells": [
+          0,
+          1
+        ],
+        "row_column_views_1": [
+          0,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "row_column_views_2": [
+          1,
+          1,
+          0,
+          2,
+          2,
+          0,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "common_margin": 4,
+      "defect_states": 48,
+      "defect_to_transversal_mass_ratio": "48/5",
+      "dimension": 2,
+      "exchange_edges": 96,
+      "full_graph_edges": 112,
+      "incoming_support_identity_checked": true,
+      "independent_state_enumeration_equal": true,
+      "literal_doubled_edge_crosscheck": true,
+      "maximum_generic_type_count": 12,
+      "maximum_incoming_repairs": 12,
+      "minimum_incoming_repairs": 6,
+      "observables": {
+        "first_repaired_cell": {
+          "defect_to_defect_energy": "32",
+          "transversal_to_defect_energy": "0",
+          "unnormalized_graph_energy": "32",
+          "unnormalized_variance": "82",
+          "variance_over_energy": "41/16"
+        },
+        "first_row_view_cell": {
+          "defect_to_defect_energy": "16",
+          "transversal_to_defect_energy": "16",
+          "unnormalized_graph_energy": "32",
+          "unnormalized_variance": "82",
+          "variance_over_energy": "41/16"
+        },
+        "zero_projection_within_type": {
+          "defect_to_defect_energy": "0",
+          "projected_variance": "0",
+          "transversal_to_defect_energy": "60",
+          "unnormalized_graph_energy": "60",
+          "unnormalized_variance": "60",
+          "variance_over_energy": "1"
+        }
+      },
+      "reference_capacity": 5,
+      "small_cells_p": 4,
+      "transversal_neighbors_per_defect": 1,
+      "transversal_states": 5,
+      "within_same_defect_type_edges": 0,
+      "within_type_variance_witness": {
+        "negative_positive_cells": [
+          0,
+          1
+        ],
+        "row_column_views_1": [
+          0,
+          4,
+          3,
+          1,
+          1,
+          3,
+          3,
+          1
+        ],
+        "row_column_views_2": [
+          3,
+          1,
+          0,
+          4,
+          4,
+          0,
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "common_margin": 8,
+      "defect_states": 96,
+      "defect_to_transversal_mass_ratio": "32/3",
+      "dimension": 2,
+      "exchange_edges": 192,
+      "full_graph_edges": 224,
+      "incoming_support_identity_checked": true,
+      "independent_state_enumeration_equal": true,
+      "literal_doubled_edge_crosscheck": true,
+      "maximum_generic_type_count": 12,
+      "maximum_incoming_repairs": 12,
+      "minimum_incoming_repairs": 6,
+      "observables": {
+        "first_repaired_cell": {
+          "defect_to_defect_energy": "64",
+          "transversal_to_defect_energy": "0",
+          "unnormalized_graph_energy": "64",
+          "unnormalized_variance": "588",
+          "variance_over_energy": "147/16"
+        },
+        "first_row_view_cell": {
+          "defect_to_defect_energy": "32",
+          "transversal_to_defect_energy": "32",
+          "unnormalized_graph_energy": "64",
+          "unnormalized_variance": "588",
+          "variance_over_energy": "147/16"
+        },
+        "zero_projection_within_type": {
+          "defect_to_defect_energy": "0",
+          "projected_variance": "0",
+          "transversal_to_defect_energy": "504",
+          "unnormalized_graph_energy": "504",
+          "unnormalized_variance": "504",
+          "variance_over_energy": "1"
+        }
+      },
+      "reference_capacity": 9,
+      "small_cells_p": 4,
+      "transversal_neighbors_per_defect": 1,
+      "transversal_states": 9,
+      "within_same_defect_type_edges": 0,
+      "within_type_variance_witness": {
+        "negative_positive_cells": [
+          0,
+          1
+        ],
+        "row_column_views_1": [
+          0,
+          8,
+          7,
+          1,
+          1,
+          7,
+          7,
+          1
+        ],
+        "row_column_views_2": [
+          7,
+          1,
+          0,
+          8,
+          8,
+          0,
+          0,
+          8
+        ]
+      }
+    },
+    {
+      "common_margin": 1,
+      "defect_states": 144,
+      "defect_to_transversal_mass_ratio": "24",
+      "dimension": 3,
+      "exchange_edges": 432,
+      "full_graph_edges": 504,
+      "incoming_support_identity_checked": true,
+      "independent_state_enumeration_equal": true,
+      "literal_doubled_edge_crosscheck": true,
+      "maximum_generic_type_count": 72,
+      "maximum_incoming_repairs": 24,
+      "minimum_incoming_repairs": 24,
+      "observables": {
+        "first_repaired_cell": {
+          "defect_to_defect_energy": "48",
+          "transversal_to_defect_energy": "0",
+          "unnormalized_graph_energy": "48",
+          "unnormalized_variance": "100/3",
+          "variance_over_energy": "25/36"
+        },
+        "first_row_view_cell": {
+          "defect_to_defect_energy": "40",
+          "transversal_to_defect_energy": "24",
+          "unnormalized_graph_energy": "64",
+          "unnormalized_variance": "100/3",
+          "variance_over_energy": "25/48"
+        },
+        "zero_projection_within_type": {
+          "defect_to_defect_energy": "12",
+          "projected_variance": "0",
+          "transversal_to_defect_energy": "16",
+          "unnormalized_graph_energy": "28",
+          "unnormalized_variance": "16",
+          "variance_over_energy": "4/7"
+        }
+      },
+      "reference_capacity": 2,
+      "small_cells_p": 9,
+      "transversal_neighbors_per_defect": 1,
+      "transversal_states": 6,
+      "within_same_defect_type_edges": 0,
+      "within_type_variance_witness": {
+        "negative_positive_cells": [
+          1,
+          3
+        ],
+        "row_column_views_1": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "row_column_views_2": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "common_margin": 2,
+      "defect_states": 792,
+      "defect_to_transversal_mass_ratio": "264/7",
+      "dimension": 3,
+      "exchange_edges": 2610,
+      "full_graph_edges": 3006,
+      "incoming_support_identity_checked": true,
+      "independent_state_enumeration_equal": true,
+      "literal_doubled_edge_crosscheck": false,
+      "maximum_generic_type_count": 72,
+      "maximum_incoming_repairs": 48,
+      "minimum_incoming_repairs": 24,
+      "observables": {
+        "first_repaired_cell": {
+          "defect_to_defect_energy": "336",
+          "transversal_to_defect_energy": "0",
+          "unnormalized_graph_energy": "336",
+          "unnormalized_variance": "1088/3",
+          "variance_over_energy": "68/63"
+        },
+        "first_row_view_cell": {
+          "defect_to_defect_energy": "246",
+          "transversal_to_defect_energy": "132",
+          "unnormalized_graph_energy": "378",
+          "unnormalized_variance": "1124/3",
+          "variance_over_energy": "562/567"
+        },
+        "zero_projection_within_type": {
+          "defect_to_defect_energy": "12816/121",
+          "projected_variance": "0",
+          "transversal_to_defect_energy": "3072/11",
+          "unnormalized_graph_energy": "46608/121",
+          "unnormalized_variance": "3072/11",
+          "variance_over_energy": "704/971"
+        }
+      },
+      "reference_capacity": 3,
+      "small_cells_p": 9,
+      "transversal_neighbors_per_defect": 1,
+      "transversal_states": 21,
+      "within_same_defect_type_edges": 0,
+      "within_type_variance_witness": {
+        "negative_positive_cells": [
+          0,
+          1
+        ],
+        "row_column_views_1": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "row_column_views_2": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "common_margin": 3,
+      "defect_states": 2520,
+      "defect_to_transversal_mass_ratio": "504/11",
+      "dimension": 3,
+      "exchange_edges": 8712,
+      "full_graph_edges": 9972,
+      "incoming_support_identity_checked": true,
+      "independent_state_enumeration_equal": true,
+      "literal_doubled_edge_crosscheck": false,
+      "maximum_generic_type_count": 72,
+      "maximum_incoming_repairs": 72,
+      "minimum_incoming_repairs": 24,
+      "observables": {
+        "first_repaired_cell": {
+          "defect_to_defect_energy": "1200",
+          "transversal_to_defect_energy": "0",
+          "unnormalized_graph_energy": "1200",
+          "unnormalized_variance": "1968",
+          "variance_over_energy": "41/25"
+        },
+        "first_row_view_cell": {
+          "defect_to_defect_energy": "828",
+          "transversal_to_defect_energy": "420",
+          "unnormalized_graph_energy": "1248",
+          "unnormalized_variance": "2028",
+          "variance_over_energy": "13/8"
+        },
+        "zero_projection_within_type": {
+          "defect_to_defect_energy": "19704/49",
+          "projected_variance": "0",
+          "transversal_to_defect_energy": "12000/7",
+          "unnormalized_graph_energy": "103704/49",
+          "unnormalized_variance": "12000/7",
+          "variance_over_energy": "3500/4321"
+        }
+      },
+      "reference_capacity": 4,
+      "small_cells_p": 9,
+      "transversal_neighbors_per_defect": 1,
+      "transversal_states": 55,
+      "within_same_defect_type_edges": 0,
+      "within_type_variance_witness": {
+        "negative_positive_cells": [
+          0,
+          1
+        ],
+        "row_column_views_1": [
+          0,
+          1,
+          2,
+          0,
+          2,
+          1,
+          2,
+          1,
+          0,
+          1,
+          0,
+          2,
+          0,
+          2,
+          1,
+          2,
+          1,
+          0
+        ],
+        "row_column_views_2": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "common_margin": 1,
+      "defect_states": 1440,
+      "defect_to_transversal_mass_ratio": "60",
+      "dimension": 4,
+      "exchange_edges": 5760,
+      "full_graph_edges": 6624,
+      "incoming_support_identity_checked": true,
+      "independent_state_enumeration_equal": true,
+      "literal_doubled_edge_crosscheck": false,
+      "maximum_generic_type_count": 240,
+      "maximum_incoming_repairs": 60,
+      "minimum_incoming_repairs": 60,
+      "observables": {
+        "first_repaired_cell": {
+          "defect_to_defect_energy": "288",
+          "transversal_to_defect_energy": "0",
+          "unnormalized_graph_energy": "288",
+          "unnormalized_variance": "549/2",
+          "variance_over_energy": "61/64"
+        },
+        "first_row_view_cell": {
+          "defect_to_defect_energy": "324",
+          "transversal_to_defect_energy": "144",
+          "unnormalized_graph_energy": "468",
+          "unnormalized_variance": "549/2",
+          "variance_over_energy": "61/104"
+        },
+        "zero_projection_within_type": {
+          "defect_to_defect_energy": "96",
+          "projected_variance": "0",
+          "transversal_to_defect_energy": "180",
+          "unnormalized_graph_energy": "276",
+          "unnormalized_variance": "180",
+          "variance_over_energy": "15/23"
+        }
+      },
+      "reference_capacity": 2,
+      "small_cells_p": 16,
+      "transversal_neighbors_per_defect": 1,
+      "transversal_states": 24,
+      "within_same_defect_type_edges": 0,
+      "within_type_variance_witness": {
+        "negative_positive_cells": [
+          1,
+          4
+        ],
+        "row_column_views_1": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "row_column_views_2": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ]
+      }
+    }
+  ],
+  "data": "Synthetic integer margins only; all weights are one because the large block is empty",
+  "fixed_defect_exposure_obstruction": {
+    "capacity": 2,
+    "display_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "interpretation": "The ordinary-slot leaf removal produces two negative and two positive slots, outside the actual one-defect graph; this is a combinatorial template, not a physical-weight assertion",
+    "occupancies_after_ordinary_slot_3_removal": [
+      1,
+      3,
+      3,
+      1
+    ],
+    "occupancies_before_removal": [
+      1,
+      3,
+      3,
+      2
+    ]
+  },
+  "generic_repair_only_counterexample": {
+    "base_variance": "2",
+    "construction": "Two unit-weight base vertices joined by an edge, with D unit-weight defect leaves at each; observable is +1/-1 on a base vertex and all its leaves",
+    "full_variance": "2(D+1)",
+    "graph_energy": "4",
+    "interpretation": "A D-independent repair-only extension is false; this graph omits the physical defect-to-defect exchange structure",
+    "repair_energy": "0"
+  },
+  "limitations": [
+    "No eigenvalues are estimated and no general spectral-gap conclusion is inferred from observable ratios",
+    "Repair-load and neighbor obstructions do not disprove improvement through defect-to-defect edges",
+    "The CommonBases defect-mean result controls a projected observable, leaving the within-type term unresolved for a full #115 gap"
+  ],
+  "reproduce": "PYTHONPATH=src python3 experiments/defect_transport.py --output reports/defect-transport-research.json",
+  "schema_version": 1,
+  "status": "Exact small-instance evidence and method obstructions; no new gap bound or Lean theorem",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+}

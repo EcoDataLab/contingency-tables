@@ -5,7 +5,18 @@ TASK_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 export ELAN_HOME="$TASK_ROOT/.tools/elan"
 export MATHLIB_CACHE_DIR="$TASK_ROOT/.tools/mathlib-cache"
 VERIFY_SCOPE="${1:-focused}"
+VERIFY_MODE="${2:-parallel}"
+if [[ $# -gt 2 || ! "$VERIFY_SCOPE" =~ ^(standalone|focused|full|comparator)$ || \
+      ! "$VERIFY_MODE" =~ ^(parallel|--serial)$ ]]; then
+  echo "Usage: $0 [standalone|focused|full|comparator] [--serial]" >&2
+  exit 2
+fi
+if [[ "$VERIFY_SCOPE" == comparator && "$VERIFY_MODE" == --serial ]]; then
+  echo "Serial compilation is not Comparator replay; use a fresh Comparator environment." >&2
+  exit 2
+fi
 VERIFY_LOG="$TASK_ROOT/formal/results/$VERIFY_SCOPE.log"
+[[ "$VERIFY_MODE" != --serial ]] || VERIFY_LOG="$TASK_ROOT/formal/results/$VERIFY_SCOPE-serial.log"
 mkdir -p "$TASK_ROOT/formal/results"
 
 audit_axioms() {
@@ -30,28 +41,46 @@ PY
 git -C "$TASK_ROOT/.upstream/openai-math" diff --quiet
 git -C "$TASK_ROOT/.upstream/openai-math" diff --cached --quiet
 cmp "$TASK_ROOT/formal/lean-toolchain" "$TASK_ROOT/.upstream/openai-math/lean/lean-toolchain"
+export ELAN_TOOLCHAIN="$(cat "$TASK_ROOT/formal/lean-toolchain")"
+
+serial_build() {
+  python3 "$TASK_ROOT/scripts/build_lean_serial.py" "$VERIFY_SCOPE"
+}
 
 verify() {
   cd "$TASK_ROOT/formal"
   date -u '+Verification started: %Y-%m-%dT%H:%M:%SZ'
+  printf 'Verification scope: %s; build mode: %s\n' "$VERIFY_SCOPE" "$VERIFY_MODE"
   "$ELAN_HOME/bin/lake" env lean --version
   case "$VERIFY_SCOPE" in
     standalone)
-      "$ELAN_HOME/bin/lake" build Math115.QuadraticCoefficient Math115.GlobalDisplayOwnership \
-        Math115.RepairCoefficient
+      if [[ "$VERIFY_MODE" == --serial ]]; then
+        serial_build
+      else
+        "$ELAN_HOME/bin/lake" build Math115.QuadraticCoefficient Math115.GlobalDisplayOwnership \
+          Math115.RepairCoefficient
+      fi
       audit_axioms Math115/StandaloneAxiomAudit.lean
       ;;
     focused)
-      "$ELAN_HOME/bin/lake" build \
-        OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafEnergy \
-        OAI.Combinatorics.ContingencyTables.Transport.IntegerRootTransport
-      "$ELAN_HOME/bin/lake" build Math115
+      if [[ "$VERIFY_MODE" == --serial ]]; then
+        serial_build
+      else
+        "$ELAN_HOME/bin/lake" build \
+          OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafEnergy \
+          OAI.Combinatorics.ContingencyTables.Transport.IntegerRootTransport
+        "$ELAN_HOME/bin/lake" build Math115
+      fi
       audit_axioms Math115/AxiomAudit.lean
       ;;
     full)
-      "$ELAN_HOME/bin/lake" build \
-        OAI.Combinatorics.ContingencyTables.UnconditionalMain \
-        ComparatorChallenges.ContingencyTables
+      if [[ "$VERIFY_MODE" == --serial ]]; then
+        serial_build
+      else
+        "$ELAN_HOME/bin/lake" build \
+          OAI.Combinatorics.ContingencyTables.UnconditionalMain \
+          ComparatorChallenges.ContingencyTables
+      fi
       audit_axioms Math115/UpstreamAxiomAudit.lean
       ;;
     comparator)
@@ -69,7 +98,6 @@ verify() {
         "$ELAN_HOME/bin/lake" env comparator \
           ../.upstream/openai-math/lean/ComparatorChallenges/ContingencyTables.json
       ;;
-    *) echo "Usage: $0 [standalone|focused|full|comparator]" >&2; return 2 ;;
   esac
   date -u '+Verification completed: %Y-%m-%dT%H:%M:%SZ'
 }

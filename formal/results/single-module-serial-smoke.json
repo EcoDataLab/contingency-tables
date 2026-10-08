@@ -1,0 +1,117 @@
+{
+  "audit_source": null,
+  "axiom_audit": "not_run_by_this_helper",
+  "claim": "One module only; neither standalone scope nor a printed-axiom audit was checked.",
+  "commands": [
+    {
+      "argv": [
+        "lake",
+        "--no-cache",
+        "--no-build",
+        "build",
+        "+Math115.QuadraticCoefficient:deps"
+      ],
+      "elapsed_seconds": 5.817,
+      "module": "Math115.QuadraticCoefficient",
+      "returncode": 0,
+      "stage": "dependencies_current",
+      "started_at": "2026-10-08T23:35:54.009045Z",
+      "status": "passed"
+    },
+    {
+      "argv": [
+        "lake",
+        "--no-cache",
+        "build",
+        "+Math115.QuadraticCoefficient:olean"
+      ],
+      "elapsed_seconds": 2.588,
+      "module": "Math115.QuadraticCoefficient",
+      "returncode": 0,
+      "stage": "module_build",
+      "started_at": "2026-10-08T23:35:59.827002Z",
+      "status": "passed"
+    }
+  ],
+  "completed_at": "2026-10-08T23:36:02.417690Z",
+  "created_at": "2026-10-08T23:35:54.002155Z",
+  "input_sha256": {
+    ".tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake": "c8c24f1398162ab4004e2a869952d8469f54293651151feaad4526f2b8474c6e",
+    ".tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+    ".upstream/openai-math/lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "formal/.lake/packages/Cli/lake-manifest.json": "f608bac5ccb22b59292584eb7fb4497c327e780a17e7afb8d584ce5d79ad0b70",
+    "formal/.lake/packages/Cli/lakefile.toml": "188aaec6ddb57f411c11b95c3ece85ff26ab9ae8085371fee47e1dc855c4e186",
+    "formal/.lake/packages/LeanSearchClient/lake-manifest.json": "a9b5fc5e76254f415e49b04b7049f58c6cb42e76a0e31b0aed2ddf4af6882033",
+    "formal/.lake/packages/LeanSearchClient/lakefile.toml": "cb5d6c80c4ffd4b3be99294a911ebf2f6a2fee4eb9f840d96f0f813bd484c05d",
+    "formal/.lake/packages/Qq/lake-manifest.json": "460e7ce76c58edfd8ba59428f23e908c5860e8bbca8883ff6c1262980e364d30",
+    "formal/.lake/packages/Qq/lakefile.toml": "42826e4e06221f41fcd863e19d937a0a68be7d54df90abd7800a3c09f4557a15",
+    "formal/.lake/packages/aesop/lake-manifest.json": "a117544a235d32538b71b83eee5bf68a12459ccbb434a8746d5e0bf692e8f442",
+    "formal/.lake/packages/aesop/lakefile.toml": "054f79cdcc1a5e15d1856aac6bf3375cbe12de657926218962401efed2a08119",
+    "formal/.lake/packages/batteries/lake-manifest.json": "67a8bbfcd0c742e05e198714b2d0f3602a3103d838e7427d773a5587555f88a2",
+    "formal/.lake/packages/batteries/lakefile.toml": "acadcd8beb13a53a4ac9399e6706c829309d2380f338d13b037886666f978015",
+    "formal/.lake/packages/importGraph/lake-manifest.json": "25db37d6fd5de31cec58ce45367b022b21859d74856e35452dc7d388122ed107",
+    "formal/.lake/packages/importGraph/lakefile.toml": "a48a5617c553b9fb528d6da7d4e15b1a61fff3326d6eab6399176d9e22e2bb53",
+    "formal/.lake/packages/mathlib/Mathlib/Tactic.lean": "f45622ca1381833c77e9659a0b2ec07e5b667d0d4667cb2a28a58e9540634e85",
+    "formal/.lake/packages/mathlib/lake-manifest.json": "8f67b2cf24143ac091cdb425e886c2164b2fc2d6fbccd6db9454b697f9541a67",
+    "formal/.lake/packages/mathlib/lakefile.lean": "274e720ccc7dbabeb9fbf362290dc7e5ed2c5175fbade0ef20cc19b1331affaf",
+    "formal/.lake/packages/plausible/lake-manifest.json": "99a17603b60cd9af445e5689b572b8441aaeaed149f3760dc52595a0c4b128db",
+    "formal/.lake/packages/plausible/lakefile.toml": "4147957012320a3afe8f041662202b7a3453c8a0df4311c1698da029a3b4834f",
+    "formal/.lake/packages/proofwidgets/lake-manifest.json": "cfa8a1535cd79fbd868bcc67eb22efdab57568248a437fa5dda567234f1f03e2",
+    "formal/.lake/packages/proofwidgets/lakefile.lean": "0a319fffbf511dab4c3307dc105f8e8fdb4f6160020995cef5f442061cc0abca",
+    "formal/Math115/GlobalDisplayOwnership.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
+    "formal/Math115/QuadraticCoefficient.lean": "9d023785b272aeb6b819aaa1bc42c7c04f8419522799b64e0b66bb355b91a46a",
+    "formal/Math115/RepairCoefficient.lean": "cf1275943fb03dce29c9641d758e56531ee6c2fa42b13dc09110e2d7823ffd60",
+    "formal/Math115/StandaloneAxiomAudit.lean": "32c7c21d8a51930b1592db0c484ced0f8416114a6944a09534a27783bc5b7285",
+    "formal/lake-manifest.json": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+    "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+    "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "scripts/build_lean_serial.py": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c",
+    "scripts/verify_lean.sh": "5a7d2600d387a3f729c0a143d507bd0535f69dbc6b2818ddcd83aa6f0ccd32f2"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "modules": [
+    {
+      "imports": [
+        "Init",
+        "Mathlib.Tactic"
+      ],
+      "name": "Math115.QuadraticCoefficient",
+      "source": "formal/Math115/QuadraticCoefficient.lean"
+    }
+  ],
+  "original_planning_scope": "standalone",
+  "package_revisions": {
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5"
+  },
+  "roots": [
+    "Math115.QuadraticCoefficient"
+  ],
+  "schema_version": 1,
+  "scope": "single_module_smoke",
+  "started_at": "2026-10-08T23:35:54.008190Z",
+  "status": "build_completed",
+  "stdout_log": "formal/results/single-module-serial-smoke.log",
+  "stdout_provenance": "Exact process stdout returned by exec session 4135, saved after completion; no repeated build.",
+  "trust_boundary": "Official Mathlib/dependency cache and Lean bootstrap binaries remain trusted; not Comparator replay",
+  "trusted_external_imports": {
+    "Init": {
+      "olean": ".tools/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean/Init.olean",
+      "owner": "Lean toolchain",
+      "trust": "existing toolchain/package artifact; checked by Lake --no-build at execution"
+    },
+    "Mathlib.Tactic": {
+      "olean": "formal/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean",
+      "owner": "mathlib",
+      "trust": "existing toolchain/package artifact; checked by Lake --no-build at execution"
+    }
+  },
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+}

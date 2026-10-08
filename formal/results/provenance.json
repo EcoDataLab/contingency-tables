@@ -9,10 +9,22 @@
   "focused_entry_module": "Math115",
   "upstream_modules": [
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.PublishedCheeger",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Dense/PublishedCheeger.lean",
+      "git_blob": "56709c3e76502b649ab87530216b415a65a4e8eb",
+      "sha256": "c26f622c5ee74c9d353d9d991e6490994634145b2eefff4bdbbcdb83d91e64ae"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Machines.BinaryContraction",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Machines/BinaryContraction.lean",
       "git_blob": "43d6a9e4dff93d09d826ede6b6903cf0c185fcaf",
       "sha256": "677899d6bc0b7c051598b8547fbdfb65d7d80a7d23834c8947ee33576f1c370f"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FiniteFairBits",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Machines/FiniteFairBits.lean",
+      "git_blob": "b4cc398b442e6890d050da612d589202bcb86e98",
+      "sha256": "c6cc3d3518b6d9356b1a775866f4887b5a48f49cbf4871e5a8d8e67581dddfc7"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Model",
@@ -25,6 +37,18 @@
       "path": "lean/OAI/Combinatorics/ContingencyTables/Rooted/LargePairEnumeration.lean",
       "git_blob": "02e066562e7ad255b6fe6b18a3f6d1b4f864d15a",
       "sha256": "69d4ae13eb8056228b2135e8d8d9d6614431277cd50c2d8bc8075a4c6b14eccb"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.AllSmallChain",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/AllSmallChain.lean",
+      "git_blob": "0345d4666a89877d318bdef234b1f8decc9a4e6d",
+      "sha256": "e7ab9b7c094d898ba3f6e440b9172f51cb1529b785601a0b6281b8b6454d5a3e"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.AllSmallFibres",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/AllSmallFibres.lean",
+      "git_blob": "96a850ef0a2a36a5c6bea0333a45320d34e518c6",
+      "sha256": "5ebeb7fdff3ba2fc466d3e2d6f1fc18a368d2d2eeddcff995af50d6203e20fad"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperChildMass",
@@ -51,16 +75,70 @@
       "sha256": "850f54a7357940e927a1d5c4e151c9e200a5f49d4606d58de6589340a942c7c0"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperExposureVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperExposureVariance.lean",
+      "git_blob": "301210ee17a827d316103fb1d3618f7a5d95ea10",
+      "sha256": "97571a7bce583bdd5320e6c4896adfd2e5325dfe0d2f318301c0671e0df2ef63"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperFullVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperFullVariance.lean",
+      "git_blob": "652fb8e5649e7d544803f9544bc62c21c8c2b81a",
+      "sha256": "f62daa41609b211d912aa8a96fd9fc293d9881df919b10d075f89a0aef8d8d78"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperJointLaw",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperJointLaw.lean",
+      "git_blob": "9a0f277b747fa18d1406d9a4db0e0577d5ff9941",
+      "sha256": "dbcf4b820fa0216f8db871d6e838499500e405498ffe3740d6e10782884d9e8f"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPhysicalMarginal",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperPhysicalMarginal.lean",
       "git_blob": "1d4f3fc91262023f524af3abab90b4dc75c4022d",
       "sha256": "2391c2494674ed67c7453e3ac8c124f9bc51497542b012bfc7390062c41efb10"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPhysicalVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperPhysicalVariance.lean",
+      "git_blob": "86b24cdc77a21f42888476e063aa916960a8d50d",
+      "sha256": "e578df7f7b55a01721119219ff62ca0bb1a03ac7c112b72b771944b84d751ff2"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperProfiles",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperProfiles.lean",
       "git_blob": "7f1c62b2207c0009bb30bf9f6bb719657d8cdf17",
       "sha256": "50506cb5625f741a42c647598f97fad7680125798e4b385ad738a33ef996a78b"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperRationalMixing",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperRationalMixing.lean",
+      "git_blob": "d08e55ccd876059bb8887dd81afbb6c7f41b76fc",
+      "sha256": "817fe71cac7899d9f83d7656270747ed54bb3d43a17c3baa028dcb24b6f477f7"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperSmallChain",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperSmallChain.lean",
+      "git_blob": "23801a26181ebe0d1a466efe34928191e7d224ed",
+      "sha256": "57205f9bd9be9bb8bdb2427bf16d330c11eb2dc71656c316e7d7c61a2a313757"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperSmallKernel",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperSmallKernel.lean",
+      "git_blob": "b2d3b27faeb30ee5c6b35e9c8cf6a163b287eed1",
+      "sha256": "7ce15d4f4f5ed2e4723d5398b8e130bf6420bdc6377e5c64f7c0be010476c2fd"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperSmallMixing",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperSmallMixing.lean",
+      "git_blob": "2ddeb86b0e761919e38557103e97f6d2bc905920",
+      "sha256": "219a0c61f1ec19e8b694dd110658185c211e6b5620629a303e46a375804fe942"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperTransversalVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperTransversalVariance.lean",
+      "git_blob": "09518421efd6319e106e6b1b37314cd6df8d7c14",
+      "sha256": "789dbf75bac7b4b2bbbe9d59ba92fe968960ea9fa7c4985192d6402ab8664641"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Sampling.PaddedCompletions",
@@ -81,6 +159,30 @@
       "sha256": "8b3286ec5cb4ba91e48735d686ebcaa122bf6f6fc58c017d71f626acf869b8e5"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalContextVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalContextVariance.lean",
+      "git_blob": "ae2770ffd37a7923bed217e070ef2e67a0cd63cd",
+      "sha256": "98a88dda81a69d7322506b964f264ece734e155b58269b2d3548681fbfb20c04"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalEdgeMargins",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalEdgeMargins.lean",
+      "git_blob": "5c5bf1ae76daa7aa6cc50fb4f255b13504061da8",
+      "sha256": "5aa94b987b425960b26b6bc64df60f237d6bfcb912430bd0e6b28a546e258bdd"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalExchangeMargins",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalExchangeMargins.lean",
+      "git_blob": "c1075c7cf8a57dc6bb2cfe36962d14a1b0d0abd2",
+      "sha256": "75f7d2ecbc94d72e4c0c2fc75ea4d16ec428bd97412c5d9be3523814447ffe19"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalGraphDegree",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalGraphDegree.lean",
+      "git_blob": "f0206ecd36c65e84eedf15b09060d701dfc5659c",
+      "sha256": "5c67dbb7e433f9b057165c5e9d7876bacc35a1735e6ebe5224ef9ce2f6e910ad"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalGraphVertices",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalGraphVertices.lean",
       "git_blob": "5d323f0979af4d407bb0eede2846867e49aed55b",
@@ -93,10 +195,64 @@
       "sha256": "8ecdaf8c3fd6858bfa53186eb9f94d9ddc2bb51ba1832731e9a3abd6e5b4eb07"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalMassBound",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalMassBound.lean",
+      "git_blob": "1b0fda2e2225333217c64a2ab8df18098e8616e2",
+      "sha256": "7f920e3b650be47e143e2c5a146210667a34e5936b1d6b53158f54a252472697"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalOriginalResiduals",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalOriginalResiduals.lean",
+      "git_blob": "031546d45e6f7a5860a52be59808a8de888ff9f1",
+      "sha256": "461d3828a3546573b1ad4e74a61d8b5385777935da5d4b73f7fcc4d736304b50"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalPaperCapacity",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalPaperCapacity.lean",
+      "git_blob": "d892051281235dd5fe51b99fd9ef7d625239f6a8",
+      "sha256": "a972458ba5b3f5043d66b20ac7b18a8bd4484fa8e4808656dc311fc5f64300c1"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalPrefixEnergies",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalPrefixEnergies.lean",
       "git_blob": "8e1816845059f2ca37b9846a65b0e5b7e564111b",
       "sha256": "19faafec41db41e984f97e85d15cf2e3a9ee527eb12b0dd953dde70b2cbfbe5c"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalRepairGraph",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalRepairGraph.lean",
+      "git_blob": "886cb88db4afb9cd44b5354833b4afbb3f4db071",
+      "sha256": "8cc79c2170df6849793167ddc8cfbe4929eef39e0ce4530e15ad03e61411f670"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalRepairMargins",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalRepairMargins.lean",
+      "git_blob": "490fbd47aab86c99bcfd5cc827cde341c36f20f4",
+      "sha256": "cfa33df3a964eb3753602630ad96286750c63f1fd0f77ac9ea8d4a5d33cd2862"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalRepairMass",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalRepairMass.lean",
+      "git_blob": "6b3a3b21f5d7c36aadfc1b3bd95f91cd09fdd1ac",
+      "sha256": "6a3285f880f2cebb19d629313e0c27b57ece30be27e1518e22b33d9f705d23d8"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalResidualMargins",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalResidualMargins.lean",
+      "git_blob": "dfa96135d14f693b41d7f0a7b2edf5480fa2a4fc",
+      "sha256": "60c726f90050e42b81b789e09608afe684a03ff7ef65a215fbf057f036efe837"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalSmallEnergy",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalSmallEnergy.lean",
+      "git_blob": "b606539d20f056ab4148eee740e13f9cd73249c6",
+      "sha256": "fa8d4e57bd4a948c373e8750bcb3ec7698598c8e26cdf4e4f8b0e5fbdf2af42d"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PhysicalSmallGraph",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalSmallGraph.lean",
+      "git_blob": "61c09dad1db7da25c54e5b1a1f89b1fc29eca925",
+      "sha256": "d3780154ef57f6474d531139125a7fc85c4cd17692a6cd309038a95dbaea0704"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Sampling.Repair",
@@ -111,6 +267,12 @@
       "sha256": "c71b019450ef9418420b1d59ba7118fa25dd430f16953459f3a91eb5ebe6f98c"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.RepairLargeMass",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/RepairLargeMass.lean",
+      "git_blob": "aedd4baeea276a714b71e765780876e51286146b",
+      "sha256": "f98bf8c832d4fed1b10520f3e0baee0938f7b089fd98ac98276d7a3a36c41c5b"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Sampling.RepairPrefixes",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/RepairPrefixes.lean",
       "git_blob": "23d305dbbf8421a545227c9643a87dfb5d53befb",
@@ -121,6 +283,36 @@
       "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/RepairResiduals.lean",
       "git_blob": "fff410edae5f381c01bbbc66ffb80a420877ff8b",
       "sha256": "ad866941cb7bcfcc55ed1e5b7768d4e1a10cf573b9c138dd60d231a25a30ead4"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.RepairSmallMargins",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/RepairSmallMargins.lean",
+      "git_blob": "e3d2640c218f83222e7a2699fe8d89bb5aeed526",
+      "sha256": "3cf82a7719d290d22f252f46df09bfbe3df03d650ce7deddc95e577fe702781c"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ResidualMixture",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/ResidualMixture.lean",
+      "git_blob": "be3835c565501810a2dcf8ebe965a2d2103de306",
+      "sha256": "637e5efc26a58e50b4b396ba6c7f60b30711a2c0ecfe77fd8feff871152b3973"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallBalancedEncoding",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallBalancedEncoding.lean",
+      "git_blob": "5333061212e30b96474d0ea89f25d7c7861e0dbe",
+      "sha256": "2a69431b76bbc340cbd2e1b37f86c6ed5cc72e9e89c3ef9bffc3f155a1fe9e2e"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallChainBudget",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallChainBudget.lean",
+      "git_blob": "0d09681f16427245affc0beec7fc1cb0f47e4cec",
+      "sha256": "815d370f3d8ed67b56469cda859fa605efa047d819d0ec2cb0d969d8a5d0dee3"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallCompletionAcceptance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallCompletionAcceptance.lean",
+      "git_blob": "cbbe31a07eec73345457787ebaeddb46033bea60",
+      "sha256": "d2aad67576e3328d49f6d317e5a0422623e4040ffc95df643cc05422e34c669f"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCoordinates",
@@ -147,6 +339,12 @@
       "sha256": "12cd5efe09a11915043b172b444631ec32c81639c3cf23612d73cbc2ec84d84a"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallCoordinateSums",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallCoordinateSums.lean",
+      "git_blob": "95cb20bc409052b27e5935444997948b86671ecb",
+      "sha256": "a18401bb49ef7cb64c3894e04eb84b6c1f6e4f4f0497a72712ef9a9f45fa460c"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallEntries",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallEntries.lean",
       "git_blob": "1d7834f76b992d0f31f466171415a9f06b6c15cb",
@@ -157,6 +355,42 @@
       "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallGraphProfiles.lean",
       "git_blob": "2b49d21000bf5e85ba449a38a3caca74e05ce123",
       "sha256": "3e2fa1bbdf183b367f1bc7edcb78a4208224ac8269b0bfbf371bae2e16c2ba8f"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallProfileEncoding",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallProfileEncoding.lean",
+      "git_blob": "8abf21d1bbc9ae481fafb10d8dff37ad38c45f54",
+      "sha256": "1ba571b7399f4e695aa483ee7b92e13524d9e98e85de7ffdf95a51aba710eebc"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallProfileRepair",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallProfileRepair.lean",
+      "git_blob": "ebfffddc422db42470304292e570289458d2e2b1",
+      "sha256": "76878940638fc532da40f53540320849cfba5f3dedde4c2e19181b908ba63f31"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallProposal",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallProposal.lean",
+      "git_blob": "612cb86ab9aa639dcdd814a0c6f0e2318033b271",
+      "sha256": "6f7d9890bb55100df5b0ef8680fd67a620085091e5947a907d9f281992375098"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallRepairCapacity",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallRepairCapacity.lean",
+      "git_blob": "0a4b14a137dd28e2d213bac8b5de6d2b528bd537",
+      "sha256": "5c42fd698c7e046647ba19bf5e3b0c6d1d2fc3f9e852bbbb3948442c8293aa71"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallRepairWords",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallRepairWords.lean",
+      "git_blob": "f0b4b79b7b339b1d7e71552cfad385e5365bdd0a",
+      "sha256": "b4d94ee5536059ffd258fbbb6af588d8eeff00b10661e7fe20269de0b5e545ae"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.UnitGraphEnergy",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Sampling/UnitGraphEnergy.lean",
+      "git_blob": "3828dee990abdeaf66672d18ebf905bd7f0f7a79",
+      "sha256": "0301ee7105dbad047254f2dea5672796fc6b9dbf3615b310a8e44732bf2cd650"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.AuxiliaryRepairMass",
@@ -189,10 +423,34 @@
       "sha256": "c1fafd4defcf300e29ba035319df3cd8f056e52b183a84645abfb76704828f85"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ChoiceContextEnumeration",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ChoiceContextEnumeration.lean",
+      "git_blob": "aa6f7a559e90884d74db02d433f9b3dd237089be",
+      "sha256": "eaa76a81b4dae4c13a68273609d4cbdb56e0dc5e066f8c970f84472e07077068"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.CompletionChainFlow",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionChainFlow.lean",
+      "git_blob": "3fbdc9b9966721dd6d0453fba53a53422a32fc3a",
+      "sha256": "36cef957c1ebd0b675403670d97ad960a31849dbda96628aeb55c2d5d2db7ecf"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.CompletionCounts",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionCounts.lean",
       "git_blob": "6c99ed8630d08bca8e06b7421699283c9482585f",
       "sha256": "bfd2ea90b912e638d3dbebe1d336159af1e220873b4a4f1a92a23c7eee4ef6b3"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.CompletionEnergyComparison",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionEnergyComparison.lean",
+      "git_blob": "71bbcccae9cf2704bb15be6943966779c4d2dfcb",
+      "sha256": "4606c99e2726cfc602ec7663e74b9f35a7ed96dd74fc47be5d084bf91bda4885"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.CompletionFibreEquiv",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionFibreEquiv.lean",
+      "git_blob": "af7dfb146260ca857ee55b34e62a1e0583fe6e56",
+      "sha256": "c51b64d573e7ffd514f5cadf86086ea1d771983770ec9294ce8e66685c515ec4"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.ContextAdjacentTransport",
@@ -217,6 +475,12 @@
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ContextGraphMembership.lean",
       "git_blob": "9d3aacfb6531dd76a4a083eee3fbaee4eaa3604c",
       "sha256": "5e3e3df2adbd185ae23fe0f3ab3ae51df78c226b49c9642f10811876f7e9dbf2"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ContextWeightedEnumeration",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ContextWeightedEnumeration.lean",
+      "git_blob": "b237ca5a0da3b77e9d1cb0d22f186caed10229ab",
+      "sha256": "3c474469b97d2cdc25340125041cc8f629ff4a9749206ead65b3841bd739c354"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.EqualityReindex",
@@ -255,10 +519,106 @@
       "sha256": "771558a0fd9206079ba087504e341dd93db6ee509878644104c02bebafe6da02"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteChainGraphComparison",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteChainGraphComparison.lean",
+      "git_blob": "c3e126524518307d486d91fe50c452eb68803694",
+      "sha256": "603ef3306f2ea85f27ef09fff992704ca73727b32ebe1597310f6728e0612051"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteChainWeightVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteChainWeightVariance.lean",
+      "git_blob": "e6cb286aa17c66594acd67080446deeda7c5f134",
+      "sha256": "22fabadc6029170504da3e9ab9043ee1736f00f2b882676bf49f6a31712eb788"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteChoiceFibres",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteChoiceFibres.lean",
+      "git_blob": "45911926bf50339fd8cc843da0993a0d1397c19b",
+      "sha256": "bfa01d11fb80eb7999e4c072b146a963f422fccaa88b99e551b516eeeb9eb234"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteDependentLaw",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteDependentLaw.lean",
+      "git_blob": "5555ac340485e10d84adeb91953770123c489cff",
+      "sha256": "e5914043eb3c200cbe5b25a7339af3fab88561066d4f79e837ae635bfb34f555"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteExchangeDegree",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteExchangeDegree.lean",
+      "git_blob": "099e846c311397907a119b83c98af80bdf8140ea",
+      "sha256": "00a4c4515008d60c7668210259ee941a687531575c33005e5e86926dc94d04d5"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteExchangeObservables",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteExchangeObservables.lean",
+      "git_blob": "3b718035263c577e65a1dca5dcada6a1929a5646",
+      "sha256": "e2e9768d43049e5c71061503eac6d3299a9672343f2e57361ce69fb9b3eac545"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteExposureBudget",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteExposureBudget.lean",
+      "git_blob": "1881a0ce92eac0df8946f3eae0bb204f58a10bb5",
+      "sha256": "3549d22e99d52062dd05faa03783e0c5e32f99d4e5cc453ea5cacbdcc018cc70"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteExposureVariance",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteExposureVariance.lean",
       "git_blob": "c974e17beb1ab332bf108e6eab383e20c59b4d94",
       "sha256": "5386fb72e7934174e4e888b614e32886348a5e25b536a02395f7ad5fe8ee2173"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteGraphPoincareBudget",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteGraphPoincareBudget.lean",
+      "git_blob": "eb7c372972c60b63d656c7a8861264576dc7769f",
+      "sha256": "49962f9683f76b845212c3e6e0785cc336132101443f5bd3fe1e666f8dfb6904"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FinitePartitionVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FinitePartitionVariance.lean",
+      "git_blob": "f13d26e56704bfa92a77865dc7b24bd74bc20d87",
+      "sha256": "d54fb7f49c6fc723e7ca395dbcd10ce282071cc58e307803e0ac548d5de468fb"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FinitePrefixVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FinitePrefixVariance.lean",
+      "git_blob": "58483fae285409e910eb17312155dba9aa9a86ae",
+      "sha256": "84d42e5ec3da783680e6edc2068d6211ef7517dab563983e7ac7118961deac50"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteRepairDegree",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteRepairDegree.lean",
+      "git_blob": "2a4d73a3a38e140187e46033ec090255eca86811",
+      "sha256": "fe79b32c3a6670e0c0701b0e7dd8d244f06a90e307bea06c9eba68bf0a27c855"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteRepairVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteRepairVariance.lean",
+      "git_blob": "c9bbf67b3b8d54ce587bacf47e9fef5907ac31c3",
+      "sha256": "e2172a8a39258e3dfe8cb5b214539175831b695189f5ef09c1c991461135312b"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteSupportEnergy",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteSupportEnergy.lean",
+      "git_blob": "1c3013134f1609efddd64ece46dcace028170998",
+      "sha256": "72bb335ff4e54a75d9c46824a222d684c8c9b0645be8bbcf8ec0d354a27694bf"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteSupportVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteSupportVariance.lean",
+      "git_blob": "ba3fbd782b350f520d68549a54c318a1e35dce2c",
+      "sha256": "b6babfa3aa621dd1a46ffa9492bd8821351dcb0ea7acdf9bb31b6384bc16b346"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteSymmetricEnergy",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteSymmetricEnergy.lean",
+      "git_blob": "691d38763cf4cd585ad3801710984223ba0b16bf",
+      "sha256": "51b6de3c544ac3431f9255052056a37512c0bc84234a0fa6f71aed890fbe789c"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FirstSuccess",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FirstSuccess.lean",
+      "git_blob": "7aa2a4173b6ca15fbf686d2bfc8ae831190f7450",
+      "sha256": "ed0cccfc4705fcdf875f6cf09fae8451857b81eb37aaa348fdf03078fb027eb7"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.HardZeroTransport",
@@ -441,6 +801,12 @@
       "sha256": "e5c2301032dbcb5fd5f987fe189c021132e31df6ae894e9c9ae9447dbaa9f847"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.MetropolisChain",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/MetropolisChain.lean",
+      "git_blob": "b732474573c2ab8e24b8b77edf16b0fca5926409",
+      "sha256": "756332324b3840b6f6425e724c4893ee7eec73b11bf2e037ed37408cd120e942"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.NestedPenaltyApplication",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/NestedPenaltyApplication.lean",
       "git_blob": "c334eb8373339d2a53bd5f5b0e0d68fcf34de01d",
@@ -477,10 +843,70 @@
       "sha256": "bd21390413f074c3703297688190db6e8520a801a344bef0ea931c543960dbd5"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RationalChainCast",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RationalChainCast.lean",
+      "git_blob": "0f2a4dbd2c900fb7800a2ed8d67316d6bdb98e53",
+      "sha256": "47a5bbd3c63fc5314edb084de045f66d5a44771a0594fda17f5b1ffb2e81d40e"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RationalMapProducts",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RationalMapProducts.lean",
+      "git_blob": "dd4dd3f3b061cbc9d92b276e790e854932fa0387",
+      "sha256": "208e45ee96e44bd654051b619ba4c9d241647680b2fb0e93139e717053e7fd70"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RationalProducts",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RationalProducts.lean",
+      "git_blob": "a2e789240fabde1caa1e6616b7d4349b8da52fee",
+      "sha256": "c17f72e6a766f143d01f298066753f7d9f78934dd405c5b6fe804a7f47414985"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RationalReindex",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RationalReindex.lean",
+      "git_blob": "3f4c23220f414c69d3349306974d763777cd72fd",
+      "sha256": "f3494e0bca89fc9c600c3cec92a20c3c62612de2c15a876908eca5df81521b55"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RationalWalks",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RationalWalks.lean",
+      "git_blob": "5fa28876f690709707e48e4f3e8a38b5f5d9eeda",
+      "sha256": "6f6b12287081bdd0732fc9576bf327897a07b8588ca63612cab4919ff1c65a37"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RawSmallChoiceProperties",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RawSmallChoiceProperties.lean",
+      "git_blob": "2b4c3ee5cfae17375b421d1b7f3734e71c910f80",
+      "sha256": "59e40c8117c4cbd34ef9b4cfd53091b327789149a661746edff105c35d753a48"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RectangleCompletions",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RectangleCompletions.lean",
+      "git_blob": "e9a87da271429ef20e048b8395630f13c4276196",
+      "sha256": "0068cd86b1b2667e60b9c522d6253a527f601d97e4927bf3b0847fe9dee78812"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.RecursiveSignedTransport",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RecursiveSignedTransport.lean",
       "git_blob": "904f3412bc55d238c3cfd4174f72d37377b725b8",
       "sha256": "789cede9f5e728a3ab317901a6b3696066fea620d423bf3505273eb193195e46"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ReferenceCompletionBlock",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ReferenceCompletionBlock.lean",
+      "git_blob": "ba2abb096ad576653139bce381a2603d94d614a3",
+      "sha256": "9d06712527becf29a0e3765a928c810e02f5a63419695cc28ba4a8bb1fd180c6"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ReferenceCompletionBounds",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ReferenceCompletionBounds.lean",
+      "git_blob": "dd0a5dae5326ba11a09ddf2bfa8a8e5f5111fdf2",
+      "sha256": "85f9a0d6fa98658abd83ca8651b287640e8bd77f0821ed639acbf02d027153ed"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ReferenceEdgeAcceptance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ReferenceEdgeAcceptance.lean",
+      "git_blob": "8626f28bfa5cb812133a9e2d230ba391cf60763f",
+      "sha256": "3c5af87724cf81a57a5e6b952e8449ddf337bf3cfc54e763ad0f859cfcc8cc0f"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.ReflectedNested",
@@ -495,16 +921,40 @@
       "sha256": "ba0783b2f1fcc775d1abf8e2ad7b0f8a7efe359502aa21850cbd6460ffa48318"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RejectionLaw",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RejectionLaw.lean",
+      "git_blob": "7f53eb0c637dcc714fc415b68786a0f5e6e0c572",
+      "sha256": "d0ad6765eb54964f094a63733eeaa001967e5b3d46ae1658c1437fae5dd80bb6"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.RowColumnPenalties",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RowColumnPenalties.lean",
       "git_blob": "9e66f3c38f9f354a145b197b44ec406bf2e22804",
       "sha256": "33945321e8e8a8121f7b8b5ed3dac3c76aa183bccab7b549d6ba86e0a87a0a24"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RowMajorEnumeration",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RowMajorEnumeration.lean",
+      "git_blob": "a8c471ceeba1cc2800b4ab70ed2cd2a2fc9f0163",
+      "sha256": "497f297bf9ff5527da0a7cc0288f3c43b700f9258f70425b4263c626120c224c"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RowMajorPrefixFibres",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RowMajorPrefixFibres.lean",
+      "git_blob": "bd6f7534b5cc089a9ec70afe5c7f97f5bc15a644",
+      "sha256": "3b15a27eb65f142740aec405ff5f355330e8ff70bc321d0e2604368579848f27"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.ScalarPenalty",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/ScalarPenalty.lean",
       "git_blob": "7660c203e31729b0b3292e9b9c190adc61cf1bba",
       "sha256": "9571337add7f121d548868acc3aba36bea779d67c50b65843b9f4586d7a61206"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.SignedMarginTranslation",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/SignedMarginTranslation.lean",
+      "git_blob": "d09f5ab8b2d959ce3b21a616d82a5e990e2f4486",
+      "sha256": "5822fd22880c81cc30bb819a5ff4f9382655d140c499456dc6e7ab9eae197979"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.SignedTransport",
@@ -519,6 +969,48 @@
       "sha256": "8da7c2cc28b1171a446fd689c24a682a26a6d2f33931ec45a6f11211bd3e5151"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.TableMarginTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/TableMarginTransport.lean",
+      "git_blob": "34a21c3be7b73db074af502fd6b228fb1de891e4",
+      "sha256": "4101049a192cd58c9c9d2700763d7b5c94ef4cad546f55f4be9069f7ab1240d9"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.TableReindex",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/TableReindex.lean",
+      "git_blob": "787c6a9882e6700b5502fd804a4e1d2dbe4a7fcb",
+      "sha256": "13fb9ad5feff769d56126f2817a3e205a6df6dfd4cfd8639c35c5387d459491f"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.TranslatedCompletionAcceptance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/TranslatedCompletionAcceptance.lean",
+      "git_blob": "7355457719b63051c36f42df3066d0aee5eadaa7",
+      "sha256": "b5367d84f72da19a3ff00b11e9dbde5c535ceaa6c229f8c37c502856ef66b419"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.TranslatedCompletionChain",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/TranslatedCompletionChain.lean",
+      "git_blob": "f4c3f28f7d7b46a9ebc9e2e10f58cecb48e3d04c",
+      "sha256": "0311e8e1249e9cec93c3ea131e6202c073a8515d39455832260c243f7f75bb40"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.TranslatedCompletionCounts",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/TranslatedCompletionCounts.lean",
+      "git_blob": "3dce227d0959ae2343dcf9f146269338c7ba7c40",
+      "sha256": "862943a62b1ec192d4537d9b7fd236b922754a37834ffd6705883cfbbbc68bec"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.TranslatedCompletions",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/TranslatedCompletions.lean",
+      "git_blob": "5e9085197eb4c5ecc8632c1cf650400f3525dceb",
+      "sha256": "baacb842ff4877525e0218fef237c50cdce3274c070918aea540a85b75e9961a"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.WordContextVariance",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/WordContextVariance.lean",
+      "git_blob": "b76b4cc44d839be0520cda642ff9c7f795e4ab06",
+      "sha256": "4af766f6e06ebf30703ddbcf504fb5436fafcff3cad52cf153e6e9667c6c2dda"
+    },
+    {
       "module": "OAI.Combinatorics.MatroidCounting.CommonBases",
       "path": "lean/OAI/Combinatorics/MatroidCounting/CommonBases.lean",
       "git_blob": "83e7e510797b85b7ef65b93d5983303245c3246b",
@@ -526,29 +1018,48 @@
     }
   ],
   "external_imports": [
+    "Init",
     "Lean.Elab.Tactic.Omega",
     "Mathlib",
     "Mathlib.Algebra.BigOperators.Field",
+    "Mathlib.Algebra.BigOperators.Fin",
     "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Pi",
+    "Mathlib.Algebra.BigOperators.GroupWithZero.Finset",
     "Mathlib.Algebra.BigOperators.Intervals",
     "Mathlib.Algebra.BigOperators.Ring.Finset",
     "Mathlib.Algebra.Order.BigOperators.Group.Finset",
+    "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
     "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.Order.Ring.Abs",
     "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
     "Mathlib.Basic.Real.Basic",
+    "Mathlib.Data.Fin.Tuple.Basic",
     "Mathlib.Data.Finset.Pi",
     "Mathlib.Data.Fintype.BigOperators",
+    "Mathlib.Data.Fintype.Card",
+    "Mathlib.Data.Fintype.Sort",
     "Mathlib.Data.Fintype.Sum",
     "Mathlib.Data.Nat.Cast.Order.Field",
+    "Mathlib.Data.Nat.Dist",
+    "Mathlib.Data.Nat.Log",
+    "Mathlib.Data.Prod.Lex",
+    "Mathlib.Data.Rat.Cast.Order",
     "Mathlib.LinearAlgebra.BilinearForm.Basic",
     "Mathlib.LinearAlgebra.Matrix.BilinearForm",
     "Mathlib.Logic.Equiv.Fin.Basic",
+    "Mathlib.Logic.Equiv.Option",
     "Mathlib.SetTheory.Cardinal.Finite",
     "Mathlib.Tactic",
+    "Mathlib.Tactic.ByContra",
+    "Mathlib.Tactic.Convert",
     "Mathlib.Tactic.FieldSimp",
     "Mathlib.Tactic.Linarith",
     "Mathlib.Tactic.NormNum",
     "Mathlib.Tactic.Positivity",
-    "Mathlib.Tactic.Ring"
-  ]
+    "Mathlib.Tactic.Push",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.SplitIfs"
+  ],
+  "closure_note": "193 source modules in the compiler-free dependency plan: 168 unchanged upstream and 25 local Math115 modules; dependency cache remains trusted."
 }

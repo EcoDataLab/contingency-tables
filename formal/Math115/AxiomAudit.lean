@@ -70,3 +70,107 @@ import Math115
 #print axioms Math115.PhysicalLeafEnergy.adjacent_physical_leaf_transport_quarter
 #print axioms Math115.PhysicalLeafEnergy.ownerContrast_le_ownerEnergy
 #print axioms Math115.PhysicalLeafEnergy.sum_ownerContrast_le_physicalEnergy
+
+-- Sharper path variance, including hard zeros.
+#print axioms Math115.PathDistanceSum.sum_values_eq_triangle
+#print axioms Math115.PathDistanceSum.sum_dist_eq_two_triangles
+#print axioms Math115.PathDistanceSum.sum_dist_eq_triangle_sub
+#print axioms Math115.PathDistanceSum.sum_dist_le_triangle
+#print axioms Math115.PathVariance.pathEnergy_nonneg
+#print axioms Math115.PathVariance.weighted_pair_path_bound
+#print axioms Math115.PathVariance.centered_at_mode_term
+#print axioms Math115.PathVariance.weighted_path_variance_mode
+#print axioms Math115.PathVariance.weighted_path_variance_mode_sharp
+#print axioms Math115.PathVariance.weighted_path_variance_bound
+#print axioms Math115.PathVariance.weighted_path_variance_of_adjacent
+#print axioms Math115.PathVariance.child_variance_path_bound
+#print axioms Math115.PathVariance.child_variance_limit_path_bound
+
+-- Exact exposure telescoping and actual physical transversal.
+#print axioms Math115.PhysicalExposureVariance.variance_eq_sum_prefixContribution
+#print axioms Math115.PhysicalExposureVariance.canonical_context_variance_le_contrasts
+#print axioms Math115.PhysicalExposureVariance.canonical_eliminate_eq_word_fibre
+#print axioms Math115.PhysicalExposureVariance.word_context_variance_le_ownerContrasts
+#print axioms Math115.PhysicalExposureVariance.prefixContribution_le_ownerContrasts
+#print axioms Math115.PhysicalExposureVariance.variance_le_sum_ownerContrasts
+#print axioms Math115.PhysicalExposureVariance.physical_transversal_variance_localized
+
+-- Full physical variance, including actual defect repair.
+#print axioms Math115.PhysicalFullVariance.physical_full_variance_localized
+#print axioms Math115.PhysicalFullVariance.physical_variance_localized
+
+-- Sequential ordinary-table padding and exact rational envelope.
+#print axioms Math115.PaddingGrowthAlgebra.envelope_eq
+#print axioms Math115.PaddingGrowthAlgebra.envelope_step
+#print axioms Math115.PaddingGrowthAlgebra.one_add_pow_le_envelope
+#print axioms Math115.PaddingGrowthAlgebra.envelope_32_div_47
+#print axioms Math115.PaddingGrowthAlgebra.envelope_le_10147_div_5123
+#print axioms Math115.PaddingGrowthAlgebra.one_add_pow_le_10147_div_5123
+#print axioms Math115.PaddingGrowthAlgebra.one_add_pow_lt_two
+#print axioms Math115.PaddingGrowthAlgebra.count_le_twice_of_growth
+#print axioms Math115.PaddingGrowth.one_unit_count_growth
+#print axioms Math115.PaddingGrowth.one_cell_count_growth
+#print axioms Math115.PaddingGrowth.largePadding_insert
+#print axioms Math115.PaddingGrowth.paddedRows_insert
+#print axioms Math115.PaddingGrowth.paddedColumns_insert
+#print axioms Math115.PaddingGrowth.large_padding_count_growth
+#print axioms Math115.PaddingGrowth.large_padding_count_eq_of_zero_donors
+#print axioms Math115.PaddingGrowth.sequential_scale_budget
+#print axioms Math115.PaddingGrowth.sequential_padded_count_le_twice_original
+#print axioms Math115.PaddingGrowth.sequential_shape_scale_budget
+#print axioms Math115.PaddingGrowth.sequential_shape_padded_count_le_twice_original
+
+-- Actual completion adjustments and degenerate geometry.
+#print axioms Math115.CompletionAdjustment.elementary_star_bounds
+#print axioms Math115.CompletionAdjustment.elementary_star_reverse_bounds
+#print axioms Math115.CompletionAdjustment.exchange_selected_sum_abs_le_one
+#print axioms Math115.CompletionAdjustment.exchange_residual_margins_one
+#print axioms Math115.CompletionAdjustment.exchange_reference_adjustment_bounds
+#print axioms Math115.CompletionAdjustment.repair_residual_formula
+#print axioms Math115.CompletionAdjustment.repair_reference_adjustment_bounds
+#print axioms Math115.CompletionAdjustment.row_major_repair_conditional
+#print axioms Math115.CompletionAdjustment.repaired_profile_prefix
+#print axioms Math115.CompletionAdjustment.translation_rejection_iff
+#print axioms Math115.CompletionAdjustment.singleton_translation_nonnegative
+#print axioms Math115.CompletionAdjustment.empty_rectangle_card_one
+#print axioms Math115.CompletionAdjustment.physical_empty_completion_weight
+#print axioms Math115.CompletionAdjustment.repair_reference_elementary
+#print axioms Math115.CompletionAdjustment.repair_reverse_reference_adjustment_bounds
+
+-- Actual edge acceptance with a free padding parameter.
+#print axioms Math115.ReferenceEdgeAcceptance.zero_entry_count
+#print axioms Math115.ReferenceEdgeAcceptance.rejected_card_eq_zero_union
+#print axioms Math115.ReferenceEdgeAcceptance.rejected_count
+#print axioms Math115.ReferenceEdgeAcceptance.rejected_count_le_two
+#print axioms Math115.ReferenceEdgeAcceptance.rejected_add_accepted
+#print axioms Math115.ReferenceEdgeAcceptance.rejection_probability_le
+#print axioms Math115.ReferenceEdgeAcceptance.accepted_half_count
+#print axioms Math115.ReferenceEdgeAcceptance.betweenAcceptedEquiv
+#print axioms Math115.ReferenceEdgeAcceptance.singleton_between_accepted_card
+#print axioms Math115.ReferenceEdgeAcceptance.between_accepted_half_count
+#print axioms Math115.ReferenceEdgeAcceptance.designated_repair_adjustment_bounds
+#print axioms Math115.ReferenceEdgeAcceptance.physical_reference_adjustment_bounds
+#print axioms Math115.ReferenceEdgeAcceptance.reference_edge_acceptance_reduced
+
+-- Actual original reference chain and polynomial comparison.
+#print axioms Math115.SmallChainGap.fullConstant_le_polynomial
+#print axioms Math115.SmallChainGap.smallProposal_localized_budget
+#print axioms Math115.SmallChainGap.chain_poincare_localized
+#print axioms Math115.SmallChainGap.paper_state_variance_localized
+#print axioms Math115.SmallChainGap.paperSmallChain_poincare_exact
+#print axioms Math115.SmallChainGap.paperSmallChain_poincare_d85
+
+-- Actual original all-small unit chain.
+#print axioms Math115.SmallChainGap.unitSmallChain_poincare_exact
+#print axioms Math115.SmallChainGap.unitSmallChain_poincare_d85
+
+-- Actual reduced ideal completion chain and d^25 specialization.
+#print axioms Math115.ReducedSmallChain.chain
+#print axioms Math115.ReducedSmallChain.chain_pi
+#print axioms Math115.ReducedSmallChain.state_variance_localized
+#print axioms Math115.ReducedSmallChain.nonreference_product_le_allowance
+#print axioms Math115.ReducedSmallChain.chain_energy_lower
+#print axioms Math115.ReducedSmallChain.chain_poincare_exact
+#print axioms Math115.ReducedSmallChain.chain_poincare_polynomial
+#print axioms Math115.ReducedSmallChain.reducedChain
+#print axioms Math115.ReducedSmallChain.reducedChain_poincare_d25

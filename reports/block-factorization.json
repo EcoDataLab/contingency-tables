@@ -1,0 +1,339 @@
+{
+  "schema_version": 1,
+  "scope": "Classical block/circulation factorization with exact cycle factors and budgeted DP; no general polynomial-time or wall-clock speedup claim.",
+  "data_classification": "Synthetic graph-family benchmark; not a calibrated commuting model or real CBEI input.",
+  "target_law": "Unit-activity conditional-Poisson law restricted to the stated structural zeros and caps; distinct from an ordinary unconstrained worker urn.",
+  "source_sha256": {
+    "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019",
+    "src/contingency115/cactus.py": "e681481e114407a4bab77e7bb017ca2a2c5427bbb6055511bc167caa96a736e6",
+    "src/contingency115/block_sampler.py": "2141ef42f23d91538162632d118d75637c3b24f78079952f08affb6a89671116",
+    "examples/block_factorization.py": "ca769f4afabebf137c83b4daa2fded72a67fd358e6a2f500222562478adf2adf"
+  },
+  "cases": [
+    {
+      "complex_blocks": 1,
+      "shape": [
+        2,
+        3
+      ],
+      "total_count_in_margins": 6,
+      "construction": "Each K2,3 block has local row margins (3,3), column margins (2,2,2), and caps 2; all blocks share the first row.",
+      "factor_count": 1,
+      "table_count": "7",
+      "table_count_bits": 3,
+      "uniform_preparation": {
+        "dp_states": 9,
+        "dp_transitions": 14,
+        "cycle_line_states": 0,
+        "cycle_weight_evaluations": 0,
+        "cycle_stored_weight_bits": 0,
+        "prepared_factors": 1,
+        "complete": true,
+        "failed": false,
+        "factor_count": 1,
+        "cycle_factors": 0,
+        "dp_factors": 1,
+        "fixed_cells_including_bridges": 0
+      },
+      "conditional_poisson_normalizer": "5/2",
+      "weighted_preparation": {
+        "dp_states": 9,
+        "dp_transitions": 14,
+        "cycle_line_states": 0,
+        "cycle_weight_evaluations": 0,
+        "cycle_stored_weight_bits": 0,
+        "prepared_factors": 1,
+        "complete": true,
+        "failed": false,
+        "factor_count": 1,
+        "cycle_factors": 0,
+        "dp_factors": 1,
+        "fixed_cells_including_bridges": 0
+      },
+      "budget": {
+        "dp_states_total": 9,
+        "dp_transitions_total": 14
+      },
+      "whole_table_dp_under_same_state_transition_allowances": {
+        "status": "complete",
+        "count": "7",
+        "stats": {
+          "states_visited": 9,
+          "transitions_visited": 14,
+          "complete": true
+        }
+      },
+      "rank_round_trips": [
+        {
+          "rank": "0",
+          "table_sha256": "e6f7a7be791aee452ea9fa05e67a8de661b78196dae19d22100869eee881f2b0"
+        },
+        {
+          "rank": "3",
+          "table_sha256": "4bf994429e904d636ddceb4967ed28bd1846d3b653d9dc8c36dd0234aa4ae4d4"
+        },
+        {
+          "rank": "6",
+          "table_sha256": "e50642936aa5d694a4abf49d003fe291e7d375bac6351022e001147059861cf3"
+        }
+      ],
+      "exhaustive_small_crosscheck": {
+        "tables_checked": 7,
+        "count_and_all_weighted_probabilities_match_whole_table_dp": true
+      }
+    },
+    {
+      "complex_blocks": 2,
+      "shape": [
+        3,
+        6
+      ],
+      "total_count_in_margins": 12,
+      "construction": "Each K2,3 block has local row margins (3,3), column margins (2,2,2), and caps 2; all blocks share the first row.",
+      "factor_count": 2,
+      "table_count": "49",
+      "table_count_bits": 6,
+      "uniform_preparation": {
+        "dp_states": 18,
+        "dp_transitions": 28,
+        "cycle_line_states": 0,
+        "cycle_weight_evaluations": 0,
+        "cycle_stored_weight_bits": 0,
+        "prepared_factors": 2,
+        "complete": true,
+        "failed": false,
+        "factor_count": 2,
+        "cycle_factors": 0,
+        "dp_factors": 2,
+        "fixed_cells_including_bridges": 6
+      },
+      "conditional_poisson_normalizer": "25/4",
+      "weighted_preparation": {
+        "dp_states": 18,
+        "dp_transitions": 28,
+        "cycle_line_states": 0,
+        "cycle_weight_evaluations": 0,
+        "cycle_stored_weight_bits": 0,
+        "prepared_factors": 2,
+        "complete": true,
+        "failed": false,
+        "factor_count": 2,
+        "cycle_factors": 0,
+        "dp_factors": 2,
+        "fixed_cells_including_bridges": 6
+      },
+      "budget": {
+        "dp_states_total": 18,
+        "dp_transitions_total": 28
+      },
+      "whole_table_dp_under_same_state_transition_allowances": {
+        "status": "budget_exhausted",
+        "count": null,
+        "reason": "exact DP exceeded max_states=18; no result is available",
+        "stats": {
+          "states_visited": 18,
+          "transitions_visited": 18,
+          "complete": false
+        }
+      },
+      "rank_round_trips": [
+        {
+          "rank": "0",
+          "table_sha256": "7091b17789ab54e3d1fa89e48451ed9fe230fa606d971897d5497fa9dba2774b"
+        },
+        {
+          "rank": "24",
+          "table_sha256": "58f6d39f56d3810eebc96557113dcde915af36b41b5a08820248fe1c567e946b"
+        },
+        {
+          "rank": "48",
+          "table_sha256": "ccb331799a2fe294ad6ef1609f2c2a2699e18da5cfa80cbcac0b0b2f27c8381e"
+        }
+      ],
+      "exhaustive_small_crosscheck": {
+        "tables_checked": 49,
+        "count_and_all_weighted_probabilities_match_whole_table_dp": true
+      }
+    },
+    {
+      "complex_blocks": 10,
+      "shape": [
+        11,
+        30
+      ],
+      "total_count_in_margins": 60,
+      "construction": "Each K2,3 block has local row margins (3,3), column margins (2,2,2), and caps 2; all blocks share the first row.",
+      "factor_count": 10,
+      "table_count": "282475249",
+      "table_count_bits": 29,
+      "uniform_preparation": {
+        "dp_states": 90,
+        "dp_transitions": 140,
+        "cycle_line_states": 0,
+        "cycle_weight_evaluations": 0,
+        "cycle_stored_weight_bits": 0,
+        "prepared_factors": 10,
+        "complete": true,
+        "failed": false,
+        "factor_count": 10,
+        "cycle_factors": 0,
+        "dp_factors": 10,
+        "fixed_cells_including_bridges": 270
+      },
+      "conditional_poisson_normalizer": "9765625/1024",
+      "weighted_preparation": {
+        "dp_states": 90,
+        "dp_transitions": 140,
+        "cycle_line_states": 0,
+        "cycle_weight_evaluations": 0,
+        "cycle_stored_weight_bits": 0,
+        "prepared_factors": 10,
+        "complete": true,
+        "failed": false,
+        "factor_count": 10,
+        "cycle_factors": 0,
+        "dp_factors": 10,
+        "fixed_cells_including_bridges": 270
+      },
+      "budget": {
+        "dp_states_total": 90,
+        "dp_transitions_total": 140
+      },
+      "whole_table_dp_under_same_state_transition_allowances": {
+        "status": "budget_exhausted",
+        "count": null,
+        "reason": "exact DP exceeded max_states=90; no result is available",
+        "stats": {
+          "states_visited": 90,
+          "transitions_visited": 90,
+          "complete": false
+        }
+      },
+      "rank_round_trips": [
+        {
+          "rank": "0",
+          "table_sha256": "1a823dc6e9c0a1d3e03826cc912a37e1b60ee06bb7cc1fc18bf1c40fd6ddb236"
+        },
+        {
+          "rank": "141237624",
+          "table_sha256": "b50d11e8f787b65136ab74e5dbdf0cf1cfc4cbcf2ca0b4a0d94837a562e6b31e"
+        },
+        {
+          "rank": "282475248",
+          "table_sha256": "c5f606b46da42c26874ebea5416e8af66cb40a4b3712d2105c10c9c7e0f90a40"
+        }
+      ],
+      "exhaustive_small_crosscheck": null
+    },
+    {
+      "complex_blocks": 50,
+      "shape": [
+        51,
+        150
+      ],
+      "total_count_in_margins": 300,
+      "construction": "Each K2,3 block has local row margins (3,3), column margins (2,2,2), and caps 2; all blocks share the first row.",
+      "factor_count": 50,
+      "table_count": "1798465042647412146620280340569649349251249",
+      "table_count_bits": 141,
+      "uniform_preparation": {
+        "dp_states": 450,
+        "dp_transitions": 700,
+        "cycle_line_states": 0,
+        "cycle_weight_evaluations": 0,
+        "cycle_stored_weight_bits": 0,
+        "prepared_factors": 50,
+        "complete": true,
+        "failed": false,
+        "factor_count": 50,
+        "cycle_factors": 0,
+        "dp_factors": 50,
+        "fixed_cells_including_bridges": 7350
+      },
+      "conditional_poisson_normalizer": "88817841970012523233890533447265625/1125899906842624",
+      "weighted_preparation": {
+        "dp_states": 450,
+        "dp_transitions": 700,
+        "cycle_line_states": 0,
+        "cycle_weight_evaluations": 0,
+        "cycle_stored_weight_bits": 0,
+        "prepared_factors": 50,
+        "complete": true,
+        "failed": false,
+        "factor_count": 50,
+        "cycle_factors": 0,
+        "dp_factors": 50,
+        "fixed_cells_including_bridges": 7350
+      },
+      "budget": {
+        "dp_states_total": 450,
+        "dp_transitions_total": 700
+      },
+      "whole_table_dp_under_same_state_transition_allowances": {
+        "status": "budget_exhausted",
+        "count": null,
+        "reason": "exact DP exceeded max_states=450; no result is available",
+        "stats": {
+          "states_visited": 450,
+          "transitions_visited": 450,
+          "complete": false
+        }
+      },
+      "rank_round_trips": [
+        {
+          "rank": "0",
+          "table_sha256": "767600697d2f66981a7f52a95a4eb5f1c653e186a25bc8d19ef8dd0fe2430591"
+        },
+        {
+          "rank": "899232521323706073310140170284824674625624",
+          "table_sha256": "d7e4e503bfbc48d9cedf112128888b67a5e272aabb0dca70bfbc5612f6748274"
+        },
+        {
+          "rank": "1798465042647412146620280340569649349251248",
+          "table_sha256": "f203d4dc187a64e7579f7f09bcebb2f8f62169bd72c32d98a435ce5f08a72319"
+        }
+      ],
+      "exhaustive_small_crosscheck": null
+    }
+  ],
+  "large_cycle_complex_block_hybrid": {
+    "description": "One huge single-cycle interval and one K2,3 complex block share a row.",
+    "cycle_width_parameter": "1606938044258990275541962092341162602522202993782792835301393",
+    "cycle_parameter_bits": 201,
+    "table_count": "11248566309812931928793734646388138217655420956479549847109758",
+    "expected_count_formula": "7 * (width + 1)",
+    "uniform_preparation": {
+      "dp_states": 9,
+      "dp_transitions": 14,
+      "cycle_line_states": 0,
+      "cycle_weight_evaluations": 0,
+      "cycle_stored_weight_bits": 0,
+      "prepared_factors": 2,
+      "complete": true,
+      "failed": false,
+      "factor_count": 2,
+      "cycle_factors": 1,
+      "dp_factors": 1,
+      "fixed_cells_including_bridges": 5
+    },
+    "rank_round_trips_verified": true,
+    "weighted_negative_control": {
+      "status": "preflight_rejected",
+      "reason": "block weight preflight exceeded cell magnitude or raw-cell coefficient bits",
+      "stats": {
+        "dp_states": 0,
+        "dp_transitions": 0,
+        "cycle_line_states": 0,
+        "cycle_weight_evaluations": 0,
+        "cycle_stored_weight_bits": 0,
+        "prepared_factors": 0,
+        "complete": false,
+        "failed": true,
+        "factor_count": 2,
+        "cycle_factors": 1,
+        "dp_factors": 1,
+        "fixed_cells_including_bridges": 5
+      }
+    }
+  }
+}

@@ -1,0 +1,525 @@
+{
+  "schema_version": 1,
+  "scope": "Exact sampling for bounded cactus variable support; synthetic illustration, not the general #115 sampler.",
+  "data_classification": "All controls, activities, distances, and zeros are fictional and uncalibrated.",
+  "row_labels": [
+    "work_central",
+    "work_west",
+    "work_east"
+  ],
+  "column_labels": [
+    "drive_alone",
+    "carpool_2",
+    "transit",
+    "wfh"
+  ],
+  "row_sums": [
+    4,
+    3,
+    2
+  ],
+  "column_sums": [
+    2,
+    2,
+    3,
+    2
+  ],
+  "lower_bounds": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "upper_bounds": [
+    [
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      2
+    ]
+  ],
+  "activities": [
+    [
+      4,
+      1,
+      3,
+      1
+    ],
+    [
+      2,
+      3,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      2,
+      4
+    ]
+  ],
+  "fixed_positive_cell": {
+    "row": 1,
+    "column": 2,
+    "value": 1
+  },
+  "source_sha256": {
+    "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019",
+    "src/contingency115/cactus.py": "e681481e114407a4bab77e7bb017ca2a2c5427bbb6055511bc167caa96a736e6",
+    "examples/cactus_commute.py": "dbb41e085d9e12ad47d9d1d722f4144d1fac967cd35c9f3f137b48f5e1c4116c"
+  },
+  "uniform": {
+    "table_count": 9,
+    "stats": {
+      "feasible": true,
+      "support_checked": true,
+      "variable_edges": 8,
+      "cycle_count": 2,
+      "bridge_edges": 0,
+      "count_bit_length": 4
+    },
+    "base_table": [
+      [
+        0,
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0
+      ]
+    ],
+    "cycle_coordinates": [
+      {
+        "cells": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            -1
+          ],
+          [
+            1,
+            0,
+            -1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "lower": 0,
+        "upper": 2
+      },
+      {
+        "cells": [
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            3,
+            -1
+          ],
+          [
+            2,
+            2,
+            -1
+          ],
+          [
+            2,
+            3,
+            1
+          ]
+        ],
+        "lower": 0,
+        "upper": 2
+      }
+    ],
+    "tables_in_coordinate_rank_order": [
+      [
+        [
+          0,
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2
+        ]
+      ]
+    ],
+    "metric_mean": "7260",
+    "matches_exact_dp": true
+  },
+  "metric": {
+    "name": "annual_attributed_commute_vehicle_miles",
+    "unit": "vehicle_miles_per_year",
+    "coefficient_matrix": [
+      [
+        "1320",
+        "660",
+        "0",
+        "0"
+      ],
+      [
+        "3520",
+        "1760",
+        "0",
+        "0"
+      ],
+      [
+        "6600",
+        "3300",
+        "0",
+        "0"
+      ]
+    ],
+    "assumptions": "One-way distances 3/8/15 miles; two legs on 220 days; two-person carpool gets half vehicle attribution; transit/WFH contribute no household auto VMT.",
+    "minimum": "6160",
+    "maximum": "8360"
+  },
+  "weighted_laws": {
+    "aggregate_activity": {
+      "normalizer": "29584",
+      "support_count": 9,
+      "preparation_plan": {
+        "line_states": 6,
+        "cell_weight_evaluations": 28,
+        "largest_cell_value": 2,
+        "stored_coefficient_bits_bound": 204
+      },
+      "cycle_parameter_probabilities": [
+        [
+          "1/43",
+          "6/43",
+          "36/43"
+        ],
+        [
+          "1/43",
+          "6/43",
+          "36/43"
+        ]
+      ],
+      "table_probabilities_in_rank_order": [
+        "1/1849",
+        "6/1849",
+        "36/1849",
+        "6/1849",
+        "36/1849",
+        "216/1849",
+        "36/1849",
+        "216/1849",
+        "1296/1849"
+      ],
+      "metric_mean": "273680/43",
+      "metric_variance": "442860000/1849",
+      "matches_exact_dp": true,
+      "seeded_example_table": [
+        [
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2
+        ]
+      ]
+    },
+    "conditional_poisson": {
+      "normalizer": "3721",
+      "support_count": 9,
+      "preparation_plan": {
+        "line_states": 6,
+        "cell_weight_evaluations": 28,
+        "largest_cell_value": 2,
+        "stored_coefficient_bits_bound": 588
+      },
+      "cycle_parameter_probabilities": [
+        [
+          "1/61",
+          "24/61",
+          "36/61"
+        ],
+        [
+          "1/61",
+          "24/61",
+          "36/61"
+        ]
+      ],
+      "table_probabilities_in_rank_order": [
+        "1/3721",
+        "24/3721",
+        "36/3721",
+        "24/3721",
+        "576/3721",
+        "864/3721",
+        "36/3721",
+        "864/3721",
+        "1296/3721"
+      ],
+      "metric_mean": "404360/61",
+      "metric_variance": "1248720000/3721",
+      "matches_exact_dp": true,
+      "seeded_example_table": [
+        [
+          2,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  "binary_margin_example": {
+    "width": "1606938044258990275541962092341162602522202993782792835301393",
+    "width_bits": 201,
+    "table_count": "2582249878086908589655919172003011874329705792829223512830717206310240945666760705264969635133828630743679352514818343236",
+    "count_bits": 401,
+    "cycle_count": 2,
+    "checked_ranks": [
+      "0",
+      "1",
+      "1606938044258990275541962092341162602522202993782792835301393",
+      "1606938044258990275541962092341162602522202993782792835301394",
+      "1291124939043454294827959586001505937164852896414611756415358603155120472833380352632484817566914315371839676257409171618",
+      "2582249878086908589655919172003011874329705792829223512830717206310240945666760705264969635133828630743679352514818343235"
+    ],
+    "round_trips_and_feasibility_verified": true,
+    "line_values_enumerated_by_uniform_sampler": 0,
+    "weighted_default_budget_rejection": "cactus weight plan exceeds line-state or cell-evaluation budget"
+  }
+}

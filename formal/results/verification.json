@@ -1,7 +1,7 @@
 {
   "recorded_date": "2026-10-08",
-  "checkpoint": 2,
-  "prior_checkpoint_commit": "25b857bcdd641523c8ebb0d943c06e45013e2b06",
+  "checkpoint": 3,
+  "prior_checkpoint_commit": "b14082b286b99d0b1ef84efcf59e4d202493d16b",
   "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "lean_toolchain": "leanprover/lean4:v4.34.1",
   "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
@@ -10,17 +10,21 @@
   "focused_manifest_entries_match_upstream": true,
   "focused_manifest_entry_count": 9,
   "focused_dependency_closure": {
-    "status": "passed",
-    "original_module_count": 86,
+    "status": "integrated_aggregate_compilation_and_fresh_axiom_audit_passed",
+    "original_module_count": 168,
+    "local_module_count": 25,
+    "trusted_external_import_count": 42,
     "entry_module": "Math115",
     "provenance": "formal/results/provenance.json",
-    "log": "formal/results/focused.log"
+    "log": "formal/results/third-checkpoint.log",
+    "scope_note": "Dependencies were compiled in sequential author checks. This receipt records a fresh integrated Math115 aggregate compilation and both transitive axiom audits, not a fresh rebuild of the entire dependency closure."
   },
   "checks": {
     "standalone": {
       "status": "passed",
-      "completed_at_utc": "2026-10-08T18:56:17Z",
-      "log": "formal/results/standalone.log",
+      "completed_at_utc": "2026-10-08T23:41:37.968534+00:00",
+      "log": "formal/results/third-checkpoint.log",
+      "log_sha256": "1bda56e01858f035b9c8ae36e5f81c4b4c448c4fab91a19338789377f02b9fcb",
       "audited_declarations": [
         {
           "name": "Math115.pair_product_le_quarter_square",
@@ -72,8 +76,9 @@
     },
     "focused": {
       "status": "passed",
-      "completed_at_utc": "2026-10-08T21:52:20Z",
-      "log": "formal/results/focused.log",
+      "completed_at_utc": "2026-10-08T23:41:37.968534+00:00",
+      "log": "formal/results/third-checkpoint.log",
+      "log_sha256": "1bda56e01858f035b9c8ae36e5f81c4b4c448c4fab91a19338789377f02b9fcb",
       "audited_declarations": [
         {
           "name": "OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy",
@@ -569,20 +574,707 @@
             "Classical.choice",
             "Quot.sound"
           ]
+        },
+        {
+          "name": "Math115.PathDistanceSum.sum_values_eq_triangle",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathDistanceSum.sum_dist_eq_two_triangles",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathDistanceSum.sum_dist_eq_triangle_sub",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathDistanceSum.sum_dist_le_triangle",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathVariance.pathEnergy_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathVariance.weighted_pair_path_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathVariance.centered_at_mode_term",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathVariance.weighted_path_variance_mode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathVariance.weighted_path_variance_mode_sharp",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathVariance.weighted_path_variance_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathVariance.weighted_path_variance_of_adjacent",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathVariance.child_variance_path_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PathVariance.child_variance_limit_path_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalExposureVariance.variance_eq_sum_prefixContribution",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalExposureVariance.canonical_context_variance_le_contrasts",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalExposureVariance.canonical_eliminate_eq_word_fibre",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalExposureVariance.word_context_variance_le_ownerContrasts",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalExposureVariance.prefixContribution_le_ownerContrasts",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalExposureVariance.variance_le_sum_ownerContrasts",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalExposureVariance.physical_transversal_variance_localized",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFullVariance.physical_full_variance_localized",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFullVariance.physical_variance_localized",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowthAlgebra.envelope_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowthAlgebra.envelope_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowthAlgebra.one_add_pow_le_envelope",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowthAlgebra.envelope_32_div_47",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowthAlgebra.envelope_le_10147_div_5123",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowthAlgebra.one_add_pow_le_10147_div_5123",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowthAlgebra.one_add_pow_lt_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowthAlgebra.count_le_twice_of_growth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowth.one_unit_count_growth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowth.one_cell_count_growth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowth.largePadding_insert",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowth.paddedRows_insert",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowth.paddedColumns_insert",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowth.large_padding_count_growth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowth.large_padding_count_eq_of_zero_donors",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowth.sequential_scale_budget",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowth.sequential_padded_count_le_twice_original",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowth.sequential_shape_scale_budget",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PaddingGrowth.sequential_shape_padded_count_le_twice_original",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.elementary_star_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.elementary_star_reverse_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.exchange_selected_sum_abs_le_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.exchange_residual_margins_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.exchange_reference_adjustment_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.repair_residual_formula",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.repair_reference_adjustment_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.row_major_repair_conditional",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.repaired_profile_prefix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.translation_rejection_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.singleton_translation_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.empty_rectangle_card_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.physical_empty_completion_weight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.repair_reference_elementary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAdjustment.repair_reverse_reference_adjustment_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.zero_entry_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.rejected_card_eq_zero_union",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.rejected_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.rejected_count_le_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.rejected_add_accepted",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.rejection_probability_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.accepted_half_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.betweenAcceptedEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.singleton_between_accepted_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.between_accepted_half_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.designated_repair_adjustment_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.physical_reference_adjustment_bounds",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReferenceEdgeAcceptance.reference_edge_acceptance_reduced",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallChainGap.fullConstant_le_polynomial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallChainGap.smallProposal_localized_budget",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallChainGap.chain_poincare_localized",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallChainGap.paper_state_variance_localized",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallChainGap.paperSmallChain_poincare_exact",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallChainGap.paperSmallChain_poincare_d85",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallChainGap.unitSmallChain_poincare_exact",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.SmallChainGap.unitSmallChain_poincare_d85",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedSmallChain.chain",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedSmallChain.chain_pi",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedSmallChain.state_variance_localized",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedSmallChain.nonreference_product_le_allowance",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedSmallChain.chain_energy_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedSmallChain.chain_poincare_exact",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedSmallChain.chain_poincare_polynomial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedSmallChain.reducedChain",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedSmallChain.reducedChain_poincare_d25",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
         }
       ]
     }
   },
-  "new_audited_declaration_count": 66,
+  "new_audited_declaration_count": 152,
   "original_audited_declaration_count": 2,
   "linux_verification": {
     "record": "formal/results/linux-runs.json",
     "source_commit": "5e5d6ef9aa36f7e2a744f3fb8605448529f8be66",
-    "scope_note": "Linux runs at the earlier published commit do not verify these second-checkpoint additions."
+    "scope_note": "Separate earlier-commit Linux checks do not verify the third-checkpoint additions."
   },
   "full_unconditional_and_challenge_build": {
-    "status": "running_on_linux_at_prior_commit",
-    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509"
+    "status": "passed_on_linux_at_prior_commit",
+    "source_commit": "5e5d6ef9aa36f7e2a744f3fb8605448529f8be66",
+    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509",
+    "raw_log": "formal/results/linux-full-5e5d6ef/verification.log",
+    "original_machine_exports_audited": 3
   },
   "secure_comparator": {
     "status": "unsupported_runner_preflight",
@@ -592,19 +1284,31 @@
   },
   "limits": [
     "The focused harness is separate from the complete upstream Lake package.",
-    "Official Mathlib cached artifacts are trusted.",
-    "The actual local hard transport and global adjacent-contrast sum compile; full exposure, repair, and chain comparison are not established by this checkpoint.",
-    "The combined d^25 result, revised sampler machine and bit runtime remain unverified.",
-    "The original three sampling/counting machine theorems are not independently reverified by this focused run."
+    "Official Mathlib cached artifacts and Lean bootstrap binaries are trusted.",
+    "The actual reduced ideal completion chain has a proved d^25 inverse-gap bound under explicit nonempty physical-state and large-reference row/column hypotheses.",
+    "The reduced all-small branch, automatic branch selection, revised finite-bit sampler, exact-output-law correction, and end-to-end bit-runtime proof are not established by this checkpoint.",
+    "The separate original Linux machine theorem audit does not verify a modified sampler or a secure Comparator replay."
   ],
   "source_sha256": {
-    "formal/Math115/AxiomAudit.lean": "dc48ffdb202bde6b81769ed3aef573eab6c64ccfe45e2dbd1066ff9611b43ec1",
+    "formal/Math115.lean": "bc69d75dbaf6aeecb75b724e678d7c5d39964c0453389b8aebcf8c94330afac3",
+    "formal/Math115/AllSmallChainGap.lean": "f87775c41d272d968362036e8082fe748031244b52cbe6b743e18f40b775a288",
+    "formal/Math115/AxiomAudit.lean": "1ba0d0d831afbc64c97787cf30d6b0e6335c27aaa6e3cb4d7258201a6e9b50bf",
+    "formal/Math115/CompletionAdjustment.lean": "714934dc14bca5589b40de0952db8dfd17ead1aa93f71306fbf120d832e47192",
     "formal/Math115/GlobalDisplayOwnership.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
     "formal/Math115/PaddedMarginBridge.lean": "0e015eeb217967669054b9492281c020c0281075336e9712e03c2b623bda0c4b",
+    "formal/Math115/PaddingGrowth.lean": "deece6445719c3e56b5b87576c2ec2aed62d11c9c4d525fd02a3c11918831750",
+    "formal/Math115/PaddingGrowthAlgebra.lean": "d9ddbad574efaf8786d1e994964f6ed1c54c82f1b26ef068bd5c3dee042d1ab4",
+    "formal/Math115/PathDistanceSum.lean": "1bdd44f56da123a0a09911baf79210ece88e5667ab825e15a5641c97feadf959",
+    "formal/Math115/PathVariance.lean": "90fa3bf35868c990bc4144035b8361f06f9c7526ae40f37f6b5828edfaab59a0",
+    "formal/Math115/PhysicalExposureVariance.lean": "3a4a0cba124f381f27fc31fb3a0f3a40490419a36834903eaa10c5a9c907ea55",
+    "formal/Math115/PhysicalFullVariance.lean": "1d38c1d7d0ca468744c3a4e2864d560acb6d2aabf34c086ac38a6c4747c1ccd1",
     "formal/Math115/PhysicalLeafEnergy.lean": "7c32ff73a592051eb81b69485820fa2dfcbadc5be7c0081c9f4a6bf52d88e55b",
     "formal/Math115/QuadraticCoefficient.lean": "9d023785b272aeb6b819aaa1bc42c7c04f8419522799b64e0b66bb355b91a46a",
+    "formal/Math115/ReducedSmallChain.lean": "8fc9d8478ac28a297ace0079e93cf64c0d36cceb52b2f2d5470f4d30d2096680",
+    "formal/Math115/ReferenceEdgeAcceptance.lean": "3e9973e6c5b97356d1222fc301f4cf5dfd4865045b0b89ae25b4c3e5cf8f93b8",
     "formal/Math115/RepairCoefficient.lean": "cf1275943fb03dce29c9641d758e56531ee6c2fa42b13dc09110e2d7823ffd60",
     "formal/Math115/ScaleCertificate.lean": "4b1bce04461a4a3f86a17050c90132f869222aac2ded61c021f05039761b1095",
+    "formal/Math115/SmallChainGap.lean": "b990ce70866c30ac6a03c7197d9a9d6c73fbe8af27cfc62196d6174f9e973bfa",
     "formal/Math115/SmallEntrySwitching.lean": "a0cd85439dccaf5c67ef291fae631f41c6585581f1c4af323c22f04768571f64",
     "formal/Math115/SmallEntryTail.lean": "e6398d28accdb3e169389ec5ebb473d4b3ca9b630c3ad861fb7d3fe3ebf3d7f6",
     "formal/Math115/StandaloneAxiomAudit.lean": "32c7c21d8a51930b1592db0c484ced0f8416114a6944a09534a27783bc5b7285",
@@ -614,11 +1318,16 @@
     "formal/Math115/UpstreamAxiomAudit.lean": "3abf27c5a83cc3bc1c1d6fe2ebce1c300a41132fe3c7d840e7f40663d0fbd0cb",
     "formal/Math115/UpstreamOwnershipBridge.lean": "9d8229c0a5556c05d539634d32ba69e547b358b8de6275c9b5f01c7cdec1a7bf",
     "formal/Math115/WidthWeightedTransport.lean": "fad07f17b6b4e1c674a48cada9e2c0cc688f36e66bc689928025d86e15698d5c",
-    "formal/Math115.lean": "1c0607c0c5e46a38ebd472787af2f1965401f07cb137f891ae6609c62902dbf7",
     "formal/lake-manifest.json": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
     "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
     "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
     "scripts/bootstrap_lean.sh": "3a6f786a74e64e1a08a91dffd45171c481ae4099832ceadf8a6aa9ce4f1950e8",
-    "scripts/verify_lean.sh": "5f632a716551ba589da2aa021e753efdcf917f75ea78d2d9e574ce1ff06605b9"
+    "scripts/build_lean_serial.py": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c",
+    "scripts/verify_lean.sh": "5a7d2600d387a3f729c0a143d507bd0535f69dbc6b2818ddcd83aa6f0ccd32f2"
+  },
+  "thor_verification": {
+    "source_commit": "b14082b286b99d0b1ef84efcf59e4d202493d16b",
+    "record": "formal/results/thor-verification.json",
+    "scope_note": "Separate Windows check: 128 Python tests, 100 Lean source modules, 68 selected declarations at checkpoint 2."
   }
 }

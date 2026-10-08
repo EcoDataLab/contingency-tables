@@ -132,11 +132,12 @@ Transit, walking, and cycling contribute zero to **household automobile VMT**, b
 
 For any linear metric `g(X) = sum(q[i,j] * X[i,j])`, exact cell expectations give the mean, but the metric variance requires cell covariances or direct ensemble evaluation. Preserve complete table draws: resampling cells independently destroys their shared constraints and covariance. In general, nonlinear footprint calculations satisfy `E[f(X)] != f(E[X])`. Preserve paired control/factor draws when estimating differences between scenarios.
 
-The reference tools now support three distinct questions:
+The reference tools support several distinct questions:
 
 - For the range permitted by reconciled controls and hard bounds, use [certified linear optimization](linear-bounds.md); no allocation law is needed.
 - For linear means and variances under ordinary conditional-worker independence, use [exact full-covariance moments](worker-baseline.md); neither sampling nor table enumeration is needed.
 - For bounded, structurally constrained or interaction-weighted laws, use the exact small-fiber benchmark and [certified finite cycle comparisons](cycle-mixtures.md) to evaluate the chosen algorithm. The ordinary worker formula does not apply unchanged.
+- If the variable-cell graph consists of cycles that share no edges, the [cactus sampler](cactus-sampler.md) counts and draws uniform tables through independent integer coordinates. This can handle enormous fibers without enumeration. Product-weight draws have separate, explicit work limits. Use this shortcut only when the justified support already has that structure; introducing hard zeros to make computation easier changes the model.
 
 ## 6. Public synthetic benchmark
 

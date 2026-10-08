@@ -1,0 +1,1431 @@
+{
+  "cases": [
+    {
+      "block_variants": {
+        "eighth_exact_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 24.57088929899492,
+            "exact_fraction": "2351078406344/95685523537"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 24.57088929899492,
+            "exact_fraction": "2351078406344/95685523537"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 24.570786839648203,
+            "exact_fraction": "3763188/153157"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-197554377632407910753501184000000",
+            "correction_evaluations": "2255392882807",
+            "mean_divisions": "4242",
+            "median_comparison_bound": "91203",
+            "ratio_evaluations": "129006984806700",
+            "rational_accumulations": "131262377689507",
+            "scalar_offset_draws": "42852464773333"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 8.546734173026394,
+            "exact_fraction": "38982006899059/4561041224622"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "43",
+            "burn_in_steps": "40749469217587200000",
+            "correction_observations_per_block": "54676242008",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "69",
+            "lag_error_bits": "1",
+            "median_failure_bound": "84310803278668748310197018603/85070591730234615865843651857942052864",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "29",
+            "observation_spacing": "191312062054400000",
+            "ratio_observations_per_block": "31274455212",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "4343",
+            "total_coupled_draw_bound": "44670489724879",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "26177466053926818995503104000000",
+              "correction_evaluations": "2351078406344",
+              "mean_divisions": "4343",
+              "median_comparison_bound": "91203",
+              "ratio_evaluations": "134480157411600",
+              "rational_accumulations": "136831235817944",
+              "scalar_offset_draws": "44670489720536"
+            }
+          }
+        },
+        "eighth_exact_lag2": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 13.65049405479745,
+            "exact_fraction": "1306154670172/95685523537"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 13.65049405479745,
+            "exact_fraction": "1306154670172/95685523537"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 13.650437133137892,
+            "exact_fraction": "2090660/153157"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-194645770314323321644541542400000",
+            "correction_evaluations": "1210469146635",
+            "mean_divisions": "4242",
+            "median_comparison_bound": "91203",
+            "ratio_evaluations": "69238025957100",
+            "rational_accumulations": "70448495103735",
+            "scalar_offset_draws": "22998913786065"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 7.692060761341017,
+            "exact_fraction": "584730103485885/76017353688187"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "43",
+            "burn_in_steps": "40558157155532800000",
+            "correction_observations_per_block": "30375690004",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "68",
+            "lag_error_bits": "2",
+            "median_failure_bound": "84310803278668748310197018603/85070591730234615865843651857942052864",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "29",
+            "observation_spacing": "382624124108800000",
+            "ratio_observations_per_block": "17374697340",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "4343",
+            "total_coupled_draw_bound": "24816938737611",
+            "variance_inflation_bound": "5/3",
+            "work": {
+              "bin_transitions": "29086073372011408104462745600000",
+              "correction_evaluations": "1306154670172",
+              "mean_divisions": "4343",
+              "median_comparison_bound": "91203",
+              "ratio_evaluations": "74711198562000",
+              "rational_accumulations": "76017353232172",
+              "scalar_offset_draws": "24816938733268"
+            }
+          }
+        },
+        "eighth_exact_lag4": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 9.282335957388096,
+            "exact_fraction": "888185175729/95685523537"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 9.282335957388096,
+            "exact_fraction": "888185175729/95685523537"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 9.282297251162285,
+            "exact_fraction": "22088528272/2379640263"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-184174783963063794404635443200000",
+            "correction_evaluations": "792499652192",
+            "mean_divisions": "4242",
+            "median_comparison_bound": "91203",
+            "ratio_evaluations": "45330442420700",
+            "rational_accumulations": "46122942072892",
+            "scalar_offset_draws": "15057493391648"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 5.655927039357681,
+            "exact_fraction": "1169460206971770/206767201704317"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "43",
+            "burn_in_steps": "40366845093478400000",
+            "correction_observations_per_block": "20655469203",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "67",
+            "lag_error_bits": "4",
+            "median_failure_bound": "84310803278668748310197018603/85070591730234615865843651857942052864",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "29",
+            "observation_spacing": "765248248217600000",
+            "ratio_observations_per_block": "11814794192",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "4343",
+            "total_coupled_draw_bound": "16875518343194",
+            "variance_inflation_bound": "17/15",
+            "work": {
+              "bin_transitions": "39557059723270935344368844800000",
+              "correction_evaluations": "888185175729",
+              "mean_divisions": "4343",
+              "median_comparison_bound": "91203",
+              "ratio_evaluations": "50803615025600",
+              "rational_accumulations": "51691800201329",
+              "scalar_offset_draws": "16875518338851"
+            }
+          }
+        },
+        "eighth_hoeffding_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 41.71337020527045,
+            "exact_fraction": "3991365666584/95685523537"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 41.71337020527045,
+            "exact_fraction": "3991365666584/95685523537"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 41.71319626265858,
+            "exact_fraction": "6388668/153157"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-179291029221280981574274252800000",
+            "correction_evaluations": "3895680143047",
+            "mean_divisions": "7272",
+            "median_comparison_bound": "265428",
+            "ratio_evaluations": "222830350442700",
+            "rational_accumulations": "226726030585747",
+            "scalar_offset_draws": "74017922717893"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 5.034377663403702,
+            "exact_fraction": "1169460206971770/232294890284633"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "73",
+            "burn_in_steps": "40940781279641600000",
+            "correction_observations_per_block": "54676242008",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "70",
+            "lag_error_bits": "1",
+            "median_failure_bound": "668534319827714012292147853691105417451143982791629/210624583337114373395836055367340864637790190801098222508621955072",
+            "median_policy": "hoeffding",
+            "median_tail_bits": "29",
+            "observation_spacing": "191312062054400000",
+            "ratio_observations_per_block": "31274455212",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "7373",
+            "total_coupled_draw_bound": "75835947672469",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "44440814465053748174730035200000",
+              "correction_evaluations": "3991365666584",
+              "mean_divisions": "7373",
+              "median_comparison_bound": "265428",
+              "ratio_evaluations": "228303523047600",
+              "rational_accumulations": "232294888714184",
+              "scalar_offset_draws": "75835947665096"
+            }
+          }
+        },
+        "quarter_exact_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 34.57066982765564,
+            "exact_fraction": "3307912641484/95685523537"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 34.57066982765564,
+            "exact_fraction": "3307912641484/95685523537"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 34.57052566973759,
+            "exact_fraction": "5294718/153157"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-186900757478909400002959769600000",
+            "correction_evaluations": "3212227117947",
+            "mean_divisions": "12120",
+            "median_comparison_bound": "733260",
+            "ratio_evaluations": "183737281427700",
+            "rational_accumulations": "186949508545647",
+            "scalar_offset_draws": "61032315240993"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 6.074538296978852,
+            "exact_fraction": "584730103485885/96259184632468"
+          },
+          "schedule": {
+            "block_failure_bound": "1/4",
+            "blocks_per_average": "121",
+            "burn_in_steps": "40749469217587200000",
+            "correction_observations_per_block": "27338121004",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "69",
+            "lag_error_bits": "1",
+            "median_failure_bound": "744389982485474492704717701118208023088832061228881626159094001/441711766194596082395824375185729628956870974218904739530401550323154944",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "29",
+            "observation_spacing": "191312062054400000",
+            "ratio_observations_per_block": "15637227606",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "12221",
+            "total_coupled_draw_bound": "62850340200417",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "36831086207425329746044518400000",
+              "correction_evaluations": "3307912641484",
+              "mean_divisions": "12221",
+              "median_comparison_bound": "733260",
+              "ratio_evaluations": "189210454032600",
+              "rational_accumulations": "192518366674084",
+              "scalar_offset_draws": "62850340188196"
+            }
+          }
+        }
+      },
+      "eighth_over_quarter_work_ratios": {
+        "bin_transitions": {
+          "approx_display_only": 0.7107437968704087,
+          "exact_fraction": "34207809184665/48129592316234"
+        },
+        "correction_evaluations": {
+          "approx_display_only": 0.7107438016528925,
+          "exact_fraction": "86/121"
+        },
+        "mean_divisions": {
+          "approx_display_only": 0.35537190082644626,
+          "exact_fraction": "43/121"
+        },
+        "median_comparison_bound": {
+          "approx_display_only": 0.1243801652892562,
+          "exact_fraction": "301/2420"
+        },
+        "ratio_evaluations": {
+          "approx_display_only": 0.7107438016528925,
+          "exact_fraction": "86/121"
+        },
+        "rational_accumulations": {
+          "approx_display_only": 0.7107438016528925,
+          "exact_fraction": "86/121"
+        },
+        "scalar_offset_draws": {
+          "approx_display_only": 0.7107438016528925,
+          "exact_fraction": "86/121"
+        }
+      },
+      "independent_reference": {
+        "allocation": "by_range",
+        "annealing_height": "100",
+        "annealing_step": "100",
+        "average_tail_bits": "30",
+        "bin_scale": "1000",
+        "concentration": "bernstein",
+        "concentration_denominator": "18225607/41698800",
+        "correction_lower_bound": "9/20",
+        "correction_samples": "95685523537",
+        "correction_support_policy": "source_lipschitz",
+        "correction_upper_bound": "10/9",
+        "dimension": "19",
+        "draw_error_bits": "66",
+        "failure_probability": "1/1000000",
+        "inverse_gap_bound": "273302945792000000",
+        "log2_inverse_min_mass_bound": "290",
+        "ratio_concentration_denominator": "153157/612612",
+        "ratio_samples_per_average": "54731726049",
+        "relative_accuracy": "1/1000",
+        "sigma": "1/102102",
+        "sigma_policy": "product",
+        "steps_per_bin_sample": "40175533031424000000",
+        "total_draw_bound": "7386883075640"
+      },
+      "independent_work": {
+        "bin_transitions": "223731843686334729749004288000000",
+        "correction_evaluations": "95685523537",
+        "mean_divisions": "101",
+        "median_comparison_bound": "0",
+        "ratio_evaluations": "5473172604900",
+        "rational_accumulations": "5568858128437",
+        "scalar_offset_draws": "1818024947203"
+      },
+      "interpretation": "Abstract conditional parameter tuple, not a constructed contingency-table instance.",
+      "name": "height_100_full_index",
+      "parameters": {
+        "annealing_height": "100",
+        "bin_scale": "1000",
+        "d": "19",
+        "failure_probability": "1/1000000",
+        "relative_accuracy": "1/1000"
+      }
+    },
+    {
+      "block_variants": {
+        "eighth_exact_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 24.55597905984066,
+            "exact_fraction": "27864283723741008/1134725015681041"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 24.55597905984066,
+            "exact_fraction": "27864283723741008/1134725015681041"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 24.55597801557352,
+            "exact_fraction": "3984547315908159/162263841146182"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-6402743324833303095237470995664076800000",
+            "correction_evaluations": "26729558708059967",
+            "mean_divisions": "520052",
+            "median_comparison_bound": "13781378",
+            "ratio_evaluations": "152891338990479080000",
+            "rational_accumulations": "152918068549187139967",
+            "scalar_offset_draws": "507861615453139373"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 210.94659706028324,
+            "exact_fraction": "33626945761070138192380/159409756922793125283"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "53",
+            "burn_in_steps": "990231233193574400000",
+            "correction_observations_per_block": "525741202334736",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "82",
+            "lag_error_bits": "1",
+            "median_failure_bound": "1314878039287740441240117119833542845/91343852333181432387730302044767688728495783936",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "36",
+            "observation_spacing": "191312062054400000",
+            "ratio_observations_per_block": "300720552144012",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "530053",
+            "total_coupled_draw_bound": "529421390751609205",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "30497009308490218373915009561395200000",
+              "correction_evaluations": "27864283723741008",
+              "mean_divisions": "530053",
+              "median_comparison_bound": "13781378",
+              "ratio_evaluations": "159381892636326360000",
+              "rational_accumulations": "159409756920050101008",
+              "scalar_offset_draws": "529421390751079152"
+            }
+          }
+        },
+        "eighth_exact_lag2": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 13.642210588800367,
+            "exact_fraction": "15480157624300560/1134725015681041"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 13.642210588800367,
+            "exact_fraction": "15480157624300560/1134725015681041"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 13.642210008651954,
+            "exact_fraction": "2213637397726755/162263841146182"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-6399354768243529359743691464795750400000",
+            "correction_evaluations": "14345432608619519",
+            "mean_divisions": "520052",
+            "median_comparison_bound": "13781378",
+            "ratio_evaluations": "82054942263222920000",
+            "rational_accumulations": "82069287695831539519",
+            "scalar_offset_draws": "272563219563770861"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 189.85193735458273,
+            "exact_fraction": "33626945761070138192380/177121952136130965289"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "53",
+            "burn_in_steps": "990039921131520000000",
+            "correction_observations_per_block": "292078445741520",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "81",
+            "lag_error_bits": "2",
+            "median_failure_bound": "1314878039287740441240117119833542845/91343852333181432387730302044767688728495783936",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "36",
+            "observation_spacing": "382624124108800000",
+            "ratio_observations_per_block": "167066973413340",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "530053",
+            "total_coupled_draw_bound": "294122994862240693",
+            "variance_inflation_bound": "5/3",
+            "work": {
+              "bin_transitions": "33885565898263953867694540429721600000",
+              "correction_evaluations": "15480157624300560",
+              "mean_divisions": "530053",
+              "median_comparison_bound": "13781378",
+              "ratio_evaluations": "88545495909070200000",
+              "rational_accumulations": "88560976066694500560",
+              "scalar_offset_draws": "294122994861710640"
+            }
+          }
+        },
+        "eighth_exact_lag4": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 9.276703200384269,
+            "exact_fraction": "10526507184524402/1134725015681041"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 9.276703200384269,
+            "exact_fraction": "10526507184524402/1134725015681041"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 9.276702805883394,
+            "exact_fraction": "752636715227102/81131920573091"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-6387155964520343060175836020316569600000",
+            "correction_evaluations": "9391782168843361",
+            "mean_divisions": "520052",
+            "median_comparison_bound": "13781378",
+            "ratio_evaluations": "53720383572320880000",
+            "rational_accumulations": "53729775354489723361",
+            "scalar_offset_draws": "178443861208023859"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 139.59701276129428,
+            "exact_fraction": "33626945761070138192380/240885854904151641671"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "53",
+            "burn_in_steps": "990039921131520000000",
+            "correction_observations_per_block": "198613343104234",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "81",
+            "lag_error_bits": "4",
+            "median_failure_bound": "1314878039287740441240117119833542845/91343852333181432387730302044767688728495783936",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "36",
+            "observation_spacing": "765248248217600000",
+            "ratio_observations_per_block": "113605541921072",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "530053",
+            "total_coupled_draw_bound": "200003636506493691",
+            "variance_inflation_bound": "17/15",
+            "work": {
+              "bin_transitions": "46084369621450253435549984908902400000",
+              "correction_evaluations": "10526507184524402",
+              "mean_divisions": "530053",
+              "median_comparison_bound": "13781378",
+              "ratio_evaluations": "60210937218168160000",
+              "rational_accumulations": "60221463725352684402",
+              "scalar_offset_draws": "200003636505963638"
+            }
+          }
+        },
+        "eighth_hoeffding_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 42.1621527253868,
+            "exact_fraction": "47842449412460976/1134725015681041"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 42.1621527253868,
+            "exact_fraction": "47842449412460976/1134725015681041"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 42.16215093239982,
+            "exact_fraction": "6841392561276273/162263841146182"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-6380877544574385406065542291469107200000",
+            "correction_evaluations": "46707724396779935",
+            "mean_divisions": "900090",
+            "median_comparison_bound": "40954095",
+            "ratio_evaluations": "267165148805203640000",
+            "rational_accumulations": "267211856529600419935",
+            "scalar_offset_draws": "887446763538818765"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 122.85900707906565,
+            "exact_fraction": "1200962348609647792585/9775126603756214714"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "91",
+            "burn_in_steps": "990422545255628800000",
+            "correction_observations_per_block": "525741202334736",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "83",
+            "lag_error_bits": "1",
+            "median_failure_bound": "1589683177827655347585319736023523412935841713145632188077542047/948568795032094272909893509191171341133987714380927500611236528192824358010355712",
+            "median_policy": "hoeffding",
+            "median_tail_bits": "36",
+            "observation_spacing": "191312062054400000",
+            "ratio_observations_per_block": "300720552144012",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "910091",
+            "total_coupled_draw_bound": "909006538837668635",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "52362789567407907545843713756364800000",
+              "correction_evaluations": "47842449412460976",
+              "mean_divisions": "910091",
+              "median_comparison_bound": "40954095",
+              "ratio_evaluations": "273655702451050920000",
+              "rational_accumulations": "273703544900463380976",
+              "scalar_offset_draws": "909006538836758544"
+            }
+          }
+        },
+        "quarter_exact_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 35.90732787052172,
+            "exact_fraction": "40744943180942040/1134725015681041"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 35.90732787052172,
+            "exact_fraction": "40744943180942040/1134725015681041"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 35.907326343527316,
+            "exact_fraction": "11652921395580465/324527682292364"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-6388645650718233358928642744254464000000",
+            "correction_evaluations": "39610218165260999",
+            "mean_divisions": "1540154",
+            "median_comparison_bound": "119361935",
+            "ratio_evaluations": "226567874265762020000",
+            "rational_accumulations": "226607484483927280999",
+            "scalar_offset_draws": "752594145139958981"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 144.2602534710007,
+            "exact_fraction": "1681347288053506909619/11654958643140692216"
+          },
+          "schedule": {
+            "block_failure_bound": "1/4",
+            "blocks_per_average": "155",
+            "burn_in_steps": "990422545255628800000",
+            "correction_observations_per_block": "262870601167368",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "83",
+            "lag_error_bits": "1",
+            "median_failure_bound": "1468071731258178794937126266764975189539866294430709999800440082387528257801526301/130370302485407109521180524058200202307293977194619920040712988758680403184853549195737432064",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "36",
+            "observation_spacing": "191312062054400000",
+            "ratio_observations_per_block": "150360276072006",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "1550155",
+            "total_coupled_draw_bound": "774153920439448915",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "44594683423559954682743260971008000000",
+              "correction_evaluations": "40744943180942040",
+              "mean_divisions": "1550155",
+              "median_comparison_bound": "119361935",
+              "ratio_evaluations": "233058427911609300000",
+              "rational_accumulations": "233099172854790242040",
+              "scalar_offset_draws": "774153920437898760"
+            }
+          }
+        }
+      },
+      "eighth_over_quarter_work_ratios": {
+        "bin_transitions": {
+          "approx_display_only": 0.6838709677301633,
+          "exact_fraction": "159409756922793125283/233099172862813844320"
+        },
+        "correction_evaluations": {
+          "approx_display_only": 0.6838709677419355,
+          "exact_fraction": "106/155"
+        },
+        "mean_divisions": {
+          "approx_display_only": 0.3419354838709677,
+          "exact_fraction": "53/155"
+        },
+        "median_comparison_bound": {
+          "approx_display_only": 0.11545873481357352,
+          "exact_fraction": "1378/11935"
+        },
+        "ratio_evaluations": {
+          "approx_display_only": 0.6838709677419355,
+          "exact_fraction": "106/155"
+        },
+        "rational_accumulations": {
+          "approx_display_only": 0.6838709677419355,
+          "exact_fraction": "106/155"
+        },
+        "scalar_offset_draws": {
+          "approx_display_only": 0.6838709677419355,
+          "exact_fraction": "106/155"
+        }
+      },
+      "independent_reference": {
+        "allocation": "by_range",
+        "annealing_height": "10000",
+        "annealing_step": "10000",
+        "average_tail_bits": "37",
+        "bin_scale": "1000",
+        "concentration": "bernstein",
+        "concentration_denominator": "30381426869/69511899600",
+        "correction_lower_bound": "9/20",
+        "correction_samples": "1134725015681041",
+        "correction_support_policy": "source_lipschitz",
+        "correction_upper_bound": "10/9",
+        "dimension": "19",
+        "draw_error_bits": "86",
+        "failure_probability": "1/1000000",
+        "inverse_gap_bound": "273302945792000000",
+        "log2_inverse_min_mass_bound": "10190",
+        "ratio_concentration_denominator": "15018007/60072012",
+        "ratio_samples_per_average": "649055364584728",
+        "relative_accuracy": "1/1000",
+        "sigma": "1/10012002",
+        "sigma_policy": "product",
+        "steps_per_bin_sample": "990996481441792000000",
+        "total_draw_bound": "6513248146160900820"
+      },
+      "independent_work": {
+        "bin_transitions": "6433240334141793313611386005225472000000",
+        "correction_evaluations": "1134725015681041",
+        "mean_divisions": "10001",
+        "median_comparison_bound": "0",
+        "ratio_evaluations": "6490553645847280000",
+        "rational_accumulations": "6491688370862961041",
+        "scalar_offset_draws": "21559775297939779"
+      },
+      "interpretation": "Abstract conditional parameter tuple, not a constructed contingency-table instance.",
+      "name": "height_10000_full_index",
+      "parameters": {
+        "annealing_height": "10000",
+        "bin_scale": "1000",
+        "d": "19",
+        "failure_probability": "1/1000000",
+        "relative_accuracy": "1/1000"
+      }
+    },
+    {
+      "block_variants": {
+        "eighth_exact_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 23.55385242109811,
+            "exact_fraction": "1560827004/66266315"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 23.55385242109811,
+            "exact_fraction": "1560827004/66266315"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 23.550515319840486,
+            "exact_fraction": "297594297/12636424"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-2490204803738747220787200000",
+            "correction_evaluations": "1494560689",
+            "mean_divisions": "64",
+            "median_comparison_bound": "1056",
+            "ratio_evaluations": "854873619",
+            "rational_accumulations": "2349434308",
+            "scalar_offset_draws": "28396653091"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 6.305000504491344,
+            "exact_fraction": "937580283/148704236"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "33",
+            "burn_in_steps": "29175089463296000000",
+            "correction_observations_per_block": "47297788",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "58",
+            "lag_error_bits": "1",
+            "median_failure_bound": "22158225041811719389463/316912650057057350374175801344",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "23",
+            "observation_spacing": "191312062054400000",
+            "ratio_observations_per_block": "27054027",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "66",
+            "total_coupled_draw_bound": "29655713142",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "469407081418838350233600000",
+              "correction_evaluations": "1560827004",
+              "mean_divisions": "66",
+              "median_comparison_bound": "1056",
+              "ratio_evaluations": "892782891",
+              "rational_accumulations": "2453609895",
+              "scalar_offset_draws": "29655713076"
+            }
+          }
+        },
+        "eighth_exact_lag2": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 13.085473622609014,
+            "exact_fraction": "867126117/66266315"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 13.085473622609014,
+            "exact_fraction": "867126117/66266315"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 13.083619622133604,
+            "exact_fraction": "165330165/12636424"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-2438048697756814304870400000",
+            "correction_evaluations": "800859802",
+            "mean_divisions": "64",
+            "median_comparison_bound": "1056",
+            "ratio_evaluations": "458081223",
+            "rational_accumulations": "1258941025",
+            "scalar_offset_draws": "15216336238"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 5.674503026003267,
+            "exact_fraction": "312526761/55075618"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "33",
+            "burn_in_steps": "28983777401241600000",
+            "correction_observations_per_block": "26276549",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "57",
+            "lag_error_bits": "2",
+            "median_failure_bound": "22158225041811719389463/316912650057057350374175801344",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "23",
+            "observation_spacing": "382624124108800000",
+            "ratio_observations_per_block": "15030015",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "66",
+            "total_coupled_draw_bound": "16475396289",
+            "variance_inflation_bound": "5/3",
+            "work": {
+              "bin_transitions": "521563187400771266150400000",
+              "correction_evaluations": "867126117",
+              "mean_divisions": "66",
+              "median_comparison_bound": "1056",
+              "ratio_evaluations": "495990495",
+              "rational_accumulations": "1363116612",
+              "scalar_offset_draws": "16475396223"
+            }
+          }
+        },
+        "eighth_exact_lag4": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 8.898121904017147,
+            "exact_fraction": "589645749/66266315"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 8.898121904017147,
+            "exact_fraction": "589645749/66266315"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 8.8968620394504,
+            "exact_fraction": "112424521/12636424"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-2250286642987598453145600000",
+            "correction_evaluations": "523379434",
+            "mean_divisions": "64",
+            "median_comparison_bound": "1056",
+            "ratio_evaluations": "299364291",
+            "rational_accumulations": "822743725",
+            "scalar_offset_draws": "9944209246"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 4.172432770196448,
+            "exact_fraction": "937580283/224708302"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "33",
+            "burn_in_steps": "28983777401241600000",
+            "correction_observations_per_block": "17868053",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "57",
+            "lag_error_bits": "4",
+            "median_failure_bound": "22158225041811719389463/316912650057057350374175801344",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "23",
+            "observation_spacing": "765248248217600000",
+            "ratio_observations_per_block": "10220411",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "66",
+            "total_coupled_draw_bound": "11203269297",
+            "variance_inflation_bound": "17/15",
+            "work": {
+              "bin_transitions": "709325242169987117875200000",
+              "correction_evaluations": "589645749",
+              "mean_divisions": "66",
+              "median_comparison_bound": "1056",
+              "ratio_evaluations": "337273563",
+              "rational_accumulations": "926919312",
+              "scalar_offset_draws": "11203269231"
+            }
+          }
+        },
+        "eighth_hoeffding_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 42.11143311650874,
+            "exact_fraction": "2790569492/66266315"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 42.11143311650874,
+            "exact_fraction": "2790569492/66266315"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 42.10546678395723,
+            "exact_fraction": "532062531/12636424"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-2120368898833930046668800000",
+            "correction_evaluations": "2724303177",
+            "mean_divisions": "116",
+            "median_comparison_bound": "3422",
+            "ratio_evaluations": "1558278321",
+            "rational_accumulations": "4282581498",
+            "scalar_offset_draws": "51761760363"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 3.5265256110418135,
+            "exact_fraction": "10313383113/2924516720"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "59",
+            "burn_in_steps": "29366401525350400000",
+            "correction_observations_per_block": "47297788",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "59",
+            "lag_error_bits": "1",
+            "median_failure_bound": "13715201564859562133606106169876063688257/11972621413014756705924586149611790497021399392059392",
+            "median_policy": "hoeffding",
+            "median_tail_bits": "23",
+            "observation_spacing": "191312062054400000",
+            "ratio_observations_per_block": "27054027",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "118",
+            "total_coupled_draw_bound": "53020820466",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "839242986323655524352000000",
+              "correction_evaluations": "2790569492",
+              "mean_divisions": "118",
+              "median_comparison_bound": "3422",
+              "ratio_evaluations": "1596187593",
+              "rational_accumulations": "4386757085",
+              "scalar_offset_draws": "53020820348"
+            }
+          }
+        },
+        "quarter_exact_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 33.18951932063825,
+            "exact_fraction": "2199347142/66266315"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 33.18951932063825,
+            "exact_fraction": "2199347142/66266315"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 33.18481826820626,
+            "exact_fraction": "209668717/6318212"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "-2298171894096051516211200000",
+            "correction_evaluations": "2133080827",
+            "mean_divisions": "184",
+            "median_comparison_bound": "8556",
+            "ratio_evaluations": "1220103030",
+            "rational_accumulations": "3353183857",
+            "scalar_offset_draws": "40528535713"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 4.474497951670194,
+            "exact_fraction": "3437794371/768308402"
+          },
+          "schedule": {
+            "block_failure_bound": "1/4",
+            "blocks_per_average": "93",
+            "burn_in_steps": "29366401525350400000",
+            "correction_observations_per_block": "23648894",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "59",
+            "lag_error_bits": "1",
+            "median_failure_bound": "655987199742080991225510443730497407984751682895/6129982163463555433433388108601236734474956488734408704",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "23",
+            "observation_spacing": "191312062054400000",
+            "ratio_observations_per_block": "13527014",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "186",
+            "total_coupled_draw_bound": "41787595884",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "661439991061534054809600000",
+              "correction_evaluations": "2199347142",
+              "mean_divisions": "186",
+              "median_comparison_bound": "8556",
+              "ratio_evaluations": "1258012302",
+              "rational_accumulations": "3457359444",
+              "scalar_offset_draws": "41787595698"
+            }
+          }
+        }
+      },
+      "eighth_over_quarter_work_ratios": {
+        "bin_transitions": {
+          "approx_display_only": 0.7096744795631342,
+          "exact_fraction": "817873298/1152462603"
+        },
+        "correction_evaluations": {
+          "approx_display_only": 0.7096774193548387,
+          "exact_fraction": "22/31"
+        },
+        "mean_divisions": {
+          "approx_display_only": 0.3548387096774194,
+          "exact_fraction": "11/31"
+        },
+        "median_comparison_bound": {
+          "approx_display_only": 0.12342215988779803,
+          "exact_fraction": "88/713"
+        },
+        "ratio_evaluations": {
+          "approx_display_only": 0.7096773931229807,
+          "exact_fraction": "297594297/419337434"
+        },
+        "rational_accumulations": {
+          "approx_display_only": 0.7096774098099822,
+          "exact_fraction": "74351815/104768468"
+        },
+        "scalar_offset_draws": {
+          "approx_display_only": 0.7096774193548387,
+          "exact_fraction": "22/31"
+        }
+      },
+      "independent_reference": {
+        "allocation": "by_range",
+        "annealing_height": "100",
+        "annealing_step": "1",
+        "average_tail_bits": "24",
+        "bin_scale": "1000",
+        "concentration": "bernstein",
+        "concentration_denominator": "18238807/41698800",
+        "correction_lower_bound": "9/20",
+        "correction_samples": "66266315",
+        "correction_support_policy": "source_lipschitz",
+        "correction_upper_bound": "10/9",
+        "dimension": "19",
+        "draw_error_bits": "54",
+        "failure_probability": "1/1000000",
+        "inverse_gap_bound": "273302945792000000",
+        "log2_inverse_min_mass_bound": "191",
+        "ratio_concentration_denominator": "9017/36036",
+        "ratio_samples_per_average": "37909272",
+        "relative_accuracy": "1/1000",
+        "sigma": "1/3003",
+        "sigma_policy": "product",
+        "steps_per_bin_sample": "28409841215078400000",
+        "total_draw_bound": "1363235572"
+      },
+      "independent_work": {
+        "bin_transitions": "2959611885157585571020800000",
+        "correction_evaluations": "66266315",
+        "mean_divisions": "2",
+        "median_comparison_bound": "0",
+        "ratio_evaluations": "37909272",
+        "rational_accumulations": "104175587",
+        "scalar_offset_draws": "1259059985"
+      },
+      "interpretation": "Abstract conditional parameter tuple, not a constructed contingency-table instance.",
+      "name": "height_100_actual_index_1",
+      "parameters": {
+        "annealing_height": "100",
+        "annealing_step": "1",
+        "bin_scale": "1000",
+        "d": "19",
+        "failure_probability": "1/1000000",
+        "relative_accuracy": "1/1000"
+      }
+    },
+    {
+      "block_variants": {
+        "eighth_exact_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 14.903225806451612,
+            "exact_fraction": "462/31"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 14.903225806451612,
+            "exact_fraction": "462/31"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 14.5565749235474,
+            "exact_fraction": "4760/327"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "6147",
+            "correction_evaluations": "7758",
+            "mean_divisions": "12",
+            "median_comparison_bound": "42",
+            "ratio_evaluations": "4433",
+            "rational_accumulations": "12191",
+            "scalar_offset_draws": "7758"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 0.7680552411138782,
+            "exact_fraction": "6785/8834"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "7",
+            "burn_in_steps": "27",
+            "correction_observations_per_block": "1188",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "19",
+            "lag_error_bits": "1",
+            "median_failure_bound": "3271/524288",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "6",
+            "observation_spacing": "2",
+            "ratio_observations_per_block": "680",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "14",
+            "total_coupled_draw_bound": "8330",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "26502",
+              "correction_evaluations": "8316",
+              "mean_divisions": "14",
+              "median_comparison_bound": "42",
+              "ratio_evaluations": "4760",
+              "rational_accumulations": "13076",
+              "scalar_offset_draws": "8316"
+            }
+          }
+        },
+        "eighth_exact_lag2": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 8.279569892473118,
+            "exact_fraction": "770/93"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 8.279569892473118,
+            "exact_fraction": "770/93"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 8.091743119266056,
+            "exact_fraction": "882/109"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "1765",
+            "correction_evaluations": "4062",
+            "mean_divisions": "12",
+            "median_comparison_bound": "42",
+            "ratio_evaluations": "2319",
+            "rational_accumulations": "6381",
+            "scalar_offset_draws": "4062"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 0.9202079566003617,
+            "exact_fraction": "4071/4424"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "7",
+            "burn_in_steps": "26",
+            "correction_observations_per_block": "660",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "18",
+            "lag_error_bits": "2",
+            "median_failure_bound": "3271/524288",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "6",
+            "observation_spacing": "3",
+            "ratio_observations_per_block": "378",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "14",
+            "total_coupled_draw_bound": "4634",
+            "variance_inflation_bound": "5/3",
+            "work": {
+              "bin_transitions": "22120",
+              "correction_evaluations": "4620",
+              "mean_divisions": "14",
+              "median_comparison_bound": "42",
+              "ratio_evaluations": "2646",
+              "rational_accumulations": "7266",
+              "scalar_offset_draws": "4620"
+            }
+          }
+        },
+        "eighth_exact_lag4": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 5.632616487455197,
+            "exact_fraction": "3143/558"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 5.632616487455197,
+            "exact_fraction": "3143/558"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 5.5015290519877675,
+            "exact_fraction": "1799/327"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "9549",
+            "correction_evaluations": "2585",
+            "mean_divisions": "12",
+            "median_comparison_bound": "42",
+            "ratio_evaluations": "1472",
+            "rational_accumulations": "4057",
+            "scalar_offset_draws": "2585"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 0.6806781701444623,
+            "exact_fraction": "6785/9968"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "7",
+            "burn_in_steps": "24",
+            "correction_observations_per_block": "449",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "17",
+            "lag_error_bits": "4",
+            "median_failure_bound": "3271/524288",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "6",
+            "observation_spacing": "6",
+            "ratio_observations_per_block": "257",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "14",
+            "total_coupled_draw_bound": "3157",
+            "variance_inflation_bound": "17/15",
+            "work": {
+              "bin_transitions": "29904",
+              "correction_evaluations": "3143",
+              "mean_divisions": "14",
+              "median_comparison_bound": "42",
+              "ratio_evaluations": "1799",
+              "rational_accumulations": "4942",
+              "scalar_offset_draws": "3143"
+            }
+          }
+        },
+        "eighth_hoeffding_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 31.93548387096774,
+            "exact_fraction": "990/31"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 31.93548387096774,
+            "exact_fraction": "990/31"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 31.192660550458715,
+            "exact_fraction": "3400/109"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "36465",
+            "correction_evaluations": "17262",
+            "mean_divisions": "28",
+            "median_comparison_bound": "210",
+            "ratio_evaluations": "9873",
+            "rational_accumulations": "27135",
+            "scalar_offset_draws": "17262"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 0.3582365364308342,
+            "exact_fraction": "1357/3788"
+          },
+          "schedule": {
+            "block_failure_bound": "1/8",
+            "blocks_per_average": "15",
+            "burn_in_steps": "28",
+            "correction_observations_per_block": "1188",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "20",
+            "lag_error_bits": "1",
+            "median_failure_bound": "742780319/4398046511104",
+            "median_policy": "hoeffding",
+            "median_tail_bits": "6",
+            "observation_spacing": "2",
+            "ratio_observations_per_block": "680",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "30",
+            "total_coupled_draw_bound": "17850",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "56820",
+              "correction_evaluations": "17820",
+              "mean_divisions": "30",
+              "median_comparison_bound": "210",
+              "ratio_evaluations": "10200",
+              "rational_accumulations": "28020",
+              "scalar_offset_draws": "17820"
+            }
+          }
+        },
+        "quarter_exact_lag1": {
+          "block_correction_evaluations_over_independent": {
+            "approx_display_only": 18.096774193548388,
+            "exact_fraction": "561/31"
+          },
+          "block_offset_draws_over_independent": {
+            "approx_display_only": 18.096774193548388,
+            "exact_fraction": "561/31"
+          },
+          "block_ratio_evaluations_over_independent": {
+            "approx_display_only": 17.67584097859327,
+            "exact_fraction": "5780/327"
+          },
+          "change_from_independent_work": {
+            "bin_transitions": "12251",
+            "correction_evaluations": "9540",
+            "mean_divisions": "32",
+            "median_comparison_bound": "272",
+            "ratio_evaluations": "5453",
+            "rational_accumulations": "14993",
+            "scalar_offset_draws": "9540"
+          },
+          "independent_transitions_over_block_transitions": {
+            "approx_display_only": 0.6242716064528001,
+            "exact_fraction": "20355/32606"
+          },
+          "schedule": {
+            "block_failure_bound": "1/4",
+            "blocks_per_average": "17",
+            "burn_in_steps": "27",
+            "correction_observations_per_block": "594",
+            "correction_relative_variance_bound": "14161/64800",
+            "draw_error_bits": "19",
+            "lag_error_bits": "1",
+            "median_failure_bound": "106384445/8589934592",
+            "median_policy": "exact_binomial",
+            "median_tail_bits": "6",
+            "observation_spacing": "2",
+            "ratio_observations_per_block": "340",
+            "ratio_relative_variance_bound": "1/8",
+            "total_blocks": "34",
+            "total_coupled_draw_bound": "10132",
+            "variance_inflation_bound": "3",
+            "work": {
+              "bin_transitions": "32606",
+              "correction_evaluations": "10098",
+              "mean_divisions": "34",
+              "median_comparison_bound": "272",
+              "ratio_evaluations": "5780",
+              "rational_accumulations": "15878",
+              "scalar_offset_draws": "10098"
+            }
+          }
+        }
+      },
+      "eighth_over_quarter_work_ratios": {
+        "bin_transitions": {
+          "approx_display_only": 0.8127951910691283,
+          "exact_fraction": "1893/2329"
+        },
+        "correction_evaluations": {
+          "approx_display_only": 0.8235294117647058,
+          "exact_fraction": "14/17"
+        },
+        "mean_divisions": {
+          "approx_display_only": 0.4117647058823529,
+          "exact_fraction": "7/17"
+        },
+        "median_comparison_bound": {
+          "approx_display_only": 0.15441176470588236,
+          "exact_fraction": "21/136"
+        },
+        "ratio_evaluations": {
+          "approx_display_only": 0.8235294117647058,
+          "exact_fraction": "14/17"
+        },
+        "rational_accumulations": {
+          "approx_display_only": 0.8235294117647058,
+          "exact_fraction": "14/17"
+        },
+        "scalar_offset_draws": {
+          "approx_display_only": 0.8235294117647058,
+          "exact_fraction": "14/17"
+        }
+      },
+      "independent_reference": {
+        "allocation": "by_range",
+        "annealing_height": "1",
+        "annealing_step": "1",
+        "average_tail_bits": "7",
+        "bin_scale": "2",
+        "concentration": "bernstein",
+        "concentration_denominator": "60962867/121402800",
+        "correction_lower_bound": "9/20",
+        "correction_samples": "558",
+        "correction_support_policy": "source_lipschitz",
+        "correction_upper_bound": "10/9",
+        "dimension": "1",
+        "draw_error_bits": "16",
+        "failure_probability": "1/5",
+        "inverse_gap_bound": "2",
+        "log2_inverse_min_mass_bound": "2",
+        "ratio_concentration_denominator": "4411/14988",
+        "ratio_samples_per_average": "327",
+        "relative_accuracy": "249/1000",
+        "sigma": "83/1249",
+        "sigma_policy": "product",
+        "steps_per_bin_sample": "23",
+        "total_draw_bound": "1443"
+      },
+      "independent_work": {
+        "bin_transitions": "20355",
+        "correction_evaluations": "558",
+        "mean_divisions": "2",
+        "median_comparison_bound": "0",
+        "ratio_evaluations": "327",
+        "rational_accumulations": "885",
+        "scalar_offset_draws": "558"
+      },
+      "interpretation": "Abstract conditional parameter tuple, not a constructed contingency-table instance.",
+      "name": "low_mixing_cost_tradeoff",
+      "parameters": {
+        "annealing_height": "1",
+        "bin_scale": "2",
+        "d": "1",
+        "failure_probability": "1/5",
+        "inverse_gap_bound": "2",
+        "relative_accuracy": "249/1000"
+      }
+    }
+  ],
+  "claim_status": {
+    "level": "Conditional analytic schedule with exact arithmetic and finite-law checks",
+    "not_claimed": [
+      "Measured runtime improvement or universal practical speedup",
+      "Implemented physical bin oracle, complete sampler, or FPRAS",
+      "New compiled Lean theorem or replacement of the existing Lean oracle interface",
+      "A certified gap or verified physical geometry for the illustrative parameter tuples"
+    ],
+    "required_hypotheses": [
+      "Certified common inverse spectral gap bound for the actual fixed finite lazy reversible bin kernels",
+      "The stated minimum mass and observable support bounds",
+      "Independent blocks and exact transitions within every block",
+      "Fresh conditional offset randomness, independent of future transition randomness",
+      "The source correction-rounding hypotheses for the claimed positive rational oracle output"
+    ]
+  },
+  "numeric_convention": "Schedule values and ratios are exact strings. Only fields explicitly named approx_display_only use floating point.",
+  "provenance": {
+    "finite_law_tests": "tests/test_block_budgets.py",
+    "implementation": "src/contingency115/block_budgets.py",
+    "proof": "docs/block-budgets.md",
+    "reproduce": "PYTHONPATH=src python3 experiments/block_budget_report.py --output reports/block-budget-comparison.json",
+    "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "upstream_repository": "https://github.com/openai/math",
+    "upstream_section": "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/evaluation.tex"
+  },
+  "schema_version": 1,
+  "work_accounting": {
+    "bin_transitions": "Exact ideal-kernel transition calls, including each independent block's burn-in",
+    "correction_evaluations": "One source correction arithmetic evaluation per recorded correction-bin observation",
+    "limitations": "These are separate operation allowances, not equally priced machine steps. Operand sizes, evaluation internals, array moves, and final product work must be included for a complete machine-cost comparison. No timings were collected.",
+    "mean_divisions": "One division by the deterministic observation count per block mean",
+    "median_comparison_bound": "At most M(M-1)/2 rational comparisons per factor using explicit insertion",
+    "ratio_evaluations": "One exact ratio evaluation per recorded ratio-bin observation",
+    "rational_accumulations": "One addition-to-sum allowance per observation",
+    "scalar_offset_draws": "Uniform upper allowance d per correction evaluation, coupled to exact conditional offsets"
+  }
+}

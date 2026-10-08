@@ -1,0 +1,2605 @@
+{
+  "schema_version": 1,
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "scope": "Ordinary uniform nonnegative integer tables; all marked cells have both original incident margins >=U. No cell caps, structural zeros, or nonuniform weights.",
+  "count_statement": "N_padded/N_original <= (1+e/(U+1))^(gL) <= E(gLe/(U+1)) for a nonempty original fiber and rate<3.",
+  "proof_status": "Exact arithmetic and finite-fiber replay; mathematical derivation and current Lean status are recorded in docs/sequential-padding.md and docs/formal-verification.md.",
+  "sampler_scope": "A stronger count/acceptance bound for the existing uniform padding construction. This alone does not implement or verify the revised sampler or its bit complexity.",
+  "envelope": {
+    "formula": "E(t)=(t^2+4t+6)/(6-2t)",
+    "domain": "0<=t<3",
+    "recurrence_cross_multiplied_difference": "(6-2t)(6-2t-2x)*(E(t+x)-(1+x)E(t)) = 2*x*t^3+x^2*(2*t^2+6*t+18)",
+    "recurrence_domain": "t>=0, x>=0, t+x<3",
+    "universal_rate_allowance": "32/47",
+    "growth_upper_bound": "10147/5123",
+    "acceptance_lower_bound": "5123/10147"
+  },
+  "threshold_comparisons": [
+    {
+      "d": 14,
+      "marked_cell_and_donor_allowances": "g<=d and e<=d; upper allowances, not an asserted table shape",
+      "first_checkpoint_U": 68841472,
+      "second_checkpoint_U": 34420736,
+      "sequential_scales": {
+        "d": 14,
+        "A": 3136,
+        "B": 43904,
+        "L": 87808,
+        "U": 25277728
+      },
+      "bound": {
+        "unit_increments": 1229312,
+        "donor_pairs": 14,
+        "minimum_margin": 25277728,
+        "rate": "17210368/25277729",
+        "count_growth_upper_bound": "2935067170128579/1481851731898051",
+        "acceptance_lower_bound": "1481851731898051/2935067170128579"
+      }
+    },
+    {
+      "d": 19,
+      "marked_cell_and_donor_allowances": "g<=d and e<=d; upper allowances, not an asserted table shape",
+      "first_checkpoint_U": 316940672,
+      "second_checkpoint_U": 158470336,
+      "sequential_scales": {
+        "d": 19,
+        "A": 5776,
+        "B": 109744,
+        "L": 219488,
+        "U": 116376653
+      },
+      "bound": {
+        "unit_increments": 4170272,
+        "donor_pairs": 19,
+        "minimum_margin": 116376653,
+        "rate": "39617584/58188327",
+        "count_growth_upper_bound": "15552982543659251/7852363264434819",
+        "acceptance_lower_bound": "7852363264434819/15552982543659251"
+      }
+    },
+    {
+      "d": 30,
+      "marked_cell_and_donor_allowances": "g<=d and e<=d; upper allowances, not an asserted table shape",
+      "first_checkpoint_U": 3110400000,
+      "second_checkpoint_U": 1555200000,
+      "sequential_scales": {
+        "d": 30,
+        "A": 14400,
+        "B": 432000,
+        "L": 864000,
+        "U": 1142100000
+      },
+      "bound": {
+        "unit_increments": 25920000,
+        "donor_pairs": 30,
+        "minimum_margin": 1142100000,
+        "rate": "777600000/1142100001",
+        "count_growth_upper_bound": "1997234012802600001/1008360092025000001",
+        "acceptance_lower_bound": "1008360092025000001/1997234012802600001"
+      }
+    },
+    {
+      "d": 100,
+      "marked_cell_and_donor_allowances": "g<=d and e<=d; upper allowances, not an asserted table shape",
+      "first_checkpoint_U": 1280000000000,
+      "second_checkpoint_U": 640000000000,
+      "sequential_scales": {
+        "d": 100,
+        "A": 160000,
+        "B": 16000000,
+        "L": 32000000,
+        "U": 470000000000
+      },
+      "bound": {
+        "unit_increments": 3200000000,
+        "donor_pairs": 100,
+        "minimum_margin": 470000000000,
+        "rate": "320000000000/470000000001",
+        "count_growth_upper_bound": "1014700000003460000000003/512300000002500000000003",
+        "acceptance_lower_bound": "512300000002500000000003/1014700000003460000000003"
+      }
+    },
+    {
+      "d": 100000000000000000000,
+      "marked_cell_and_donor_allowances": "g<=d and e<=d; upper allowances, not an asserted table shape",
+      "first_checkpoint_U": 1280000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+      "second_checkpoint_U": 640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+      "sequential_scales": {
+        "d": 100000000000000000000,
+        "A": 160000000000000000000000000000000000000000,
+        "B": 16000000000000000000000000000000000000000000000000000000000000,
+        "L": 32000000000000000000000000000000000000000000000000000000000000,
+        "U": 470000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+      },
+      "bound": {
+        "unit_increments": 3200000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "donor_pairs": 100000000000000000000,
+        "minimum_margin": 470000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "rate": "320000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000/470000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+        "count_growth_upper_bound": "1014700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003460000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003/512300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003",
+        "acceptance_lower_bound": "512300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003/1014700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003460000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003"
+      }
+    }
+  ],
+  "shape_aware_comparisons": [
+    {
+      "rows": 1,
+      "columns": 1,
+      "marked_cell_allowance": 1,
+      "donor_pairs": 0,
+      "previous_shape_U": 175616,
+      "sequential_scales": {
+        "d": 14,
+        "A": 3136,
+        "B": 43904,
+        "L": 87808,
+        "U": 175616
+      },
+      "bound": {
+        "unit_increments": 87808,
+        "donor_pairs": 0,
+        "minimum_margin": 175616,
+        "rate": "0",
+        "count_growth_upper_bound": "1",
+        "acceptance_lower_bound": "1"
+      }
+    },
+    {
+      "rows": 1,
+      "columns": 20,
+      "marked_cell_allowance": 20,
+      "donor_pairs": 0,
+      "previous_shape_U": 8998912,
+      "sequential_scales": {
+        "d": 52,
+        "A": 43264,
+        "B": 2249728,
+        "L": 4499456,
+        "U": 8998912
+      },
+      "bound": {
+        "unit_increments": 89989120,
+        "donor_pairs": 0,
+        "minimum_margin": 8998912,
+        "rate": "0",
+        "count_growth_upper_bound": "1",
+        "acceptance_lower_bound": "1"
+      }
+    },
+    {
+      "rows": 2,
+      "columns": 2,
+      "marked_cell_allowance": 4,
+      "donor_pairs": 1,
+      "previous_shape_U": 1536415,
+      "sequential_scales": {
+        "d": 19,
+        "A": 5776,
+        "B": 109744,
+        "L": 219488,
+        "U": 1289491
+      },
+      "bound": {
+        "unit_increments": 877952,
+        "donor_pairs": 1,
+        "minimum_margin": 1289491,
+        "rate": "32/47",
+        "count_growth_upper_bound": "10147/5123",
+        "acceptance_lower_bound": "5123/10147"
+      }
+    },
+    {
+      "rows": 2,
+      "columns": 3,
+      "marked_cell_allowance": 6,
+      "donor_pairs": 2,
+      "previous_shape_U": 7836926,
+      "sequential_scales": {
+        "d": 22,
+        "A": 7744,
+        "B": 170368,
+        "L": 340736,
+        "U": 6005471
+      },
+      "bound": {
+        "unit_increments": 2044416,
+        "donor_pairs": 2,
+        "minimum_margin": 6005471,
+        "rate": "32/47",
+        "count_growth_upper_bound": "10147/5123",
+        "acceptance_lower_bound": "5123/10147"
+      }
+    },
+    {
+      "rows": 3,
+      "columns": 5,
+      "marked_cell_allowance": 15,
+      "donor_pairs": 8,
+      "previous_shape_U": 300596984,
+      "sequential_scales": {
+        "d": 34,
+        "A": 18496,
+        "B": 628864,
+        "L": 1257728,
+        "U": 221674559
+      },
+      "bound": {
+        "unit_increments": 18865920,
+        "donor_pairs": 8,
+        "minimum_margin": 221674559,
+        "rate": "32/47",
+        "count_growth_upper_bound": "10147/5123",
+        "acceptance_lower_bound": "5123/10147"
+      }
+    },
+    {
+      "rows": 5,
+      "columns": 50,
+      "marked_cell_allowance": 250,
+      "donor_pairs": 196,
+      "previous_shape_U": 98953889711932,
+      "sequential_scales": {
+        "d": 316,
+        "A": 1597696,
+        "B": 504871936,
+        "L": 1009743872,
+        "U": 72670004287999
+      },
+      "bound": {
+        "unit_increments": 252435968000,
+        "donor_pairs": 196,
+        "minimum_margin": 72670004287999,
+        "rate": "32/47",
+        "count_growth_upper_bound": "10147/5123",
+        "acceptance_lower_bound": "5123/10147"
+      }
+    },
+    {
+      "rows": 5,
+      "columns": 300,
+      "marked_cell_allowance": 1500,
+      "donor_pairs": 1196,
+      "previous_shape_U": 687622096599726932,
+      "sequential_scales": {
+        "d": 1816,
+        "A": 52765696,
+        "B": 95822503936,
+        "L": 191645007872,
+        "U": 504972617929727999
+      },
+      "bound": {
+        "unit_increments": 287467511808000,
+        "donor_pairs": 1196,
+        "minimum_margin": 504972617929727999,
+        "rate": "32/47",
+        "count_growth_upper_bound": "10147/5123",
+        "acceptance_lower_bound": "5123/10147"
+      }
+    }
+  ],
+  "actual_fiber_replay": {
+    "row_sums": [
+      13,
+      13
+    ],
+    "column_sums": [
+      9,
+      9,
+      8
+    ],
+    "original_count": 70,
+    "cases": [
+      {
+        "marked_mask_row_major": 0,
+        "padding": 1,
+        "minimum_original_incident_margin": 0,
+        "padded_rows": [
+          13,
+          13
+        ],
+        "padded_columns": [
+          9,
+          9,
+          8
+        ],
+        "enlarged_count": 70,
+        "actual_enlarged_to_original_ratio": "1",
+        "telescoped_power_bound": "1",
+        "envelope_bound": "1"
+      },
+      {
+        "marked_mask_row_major": 0,
+        "padding": 2,
+        "minimum_original_incident_margin": 0,
+        "padded_rows": [
+          13,
+          13
+        ],
+        "padded_columns": [
+          9,
+          9,
+          8
+        ],
+        "enlarged_count": 70,
+        "actual_enlarged_to_original_ratio": "1",
+        "telescoped_power_bound": "1",
+        "envelope_bound": "1"
+      },
+      {
+        "marked_mask_row_major": 1,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          14,
+          13
+        ],
+        "padded_columns": [
+          10,
+          9,
+          8
+        ],
+        "enlarged_count": 74,
+        "actual_enlarged_to_original_ratio": "37/35",
+        "telescoped_power_bound": "6/5",
+        "envelope_bound": "171/140"
+      },
+      {
+        "marked_mask_row_major": 1,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          13
+        ],
+        "padded_columns": [
+          11,
+          9,
+          8
+        ],
+        "enlarged_count": 77,
+        "actual_enlarged_to_original_ratio": "11/10",
+        "telescoped_power_bound": "36/25",
+        "envelope_bound": "97/65"
+      },
+      {
+        "marked_mask_row_major": 2,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          14,
+          13
+        ],
+        "padded_columns": [
+          9,
+          10,
+          8
+        ],
+        "enlarged_count": 74,
+        "actual_enlarged_to_original_ratio": "37/35",
+        "telescoped_power_bound": "6/5",
+        "envelope_bound": "171/140"
+      },
+      {
+        "marked_mask_row_major": 2,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          13
+        ],
+        "padded_columns": [
+          9,
+          11,
+          8
+        ],
+        "enlarged_count": 77,
+        "actual_enlarged_to_original_ratio": "11/10",
+        "telescoped_power_bound": "36/25",
+        "envelope_bound": "97/65"
+      },
+      {
+        "marked_mask_row_major": 3,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          13
+        ],
+        "padded_columns": [
+          10,
+          10,
+          8
+        ],
+        "enlarged_count": 78,
+        "actual_enlarged_to_original_ratio": "39/35",
+        "telescoped_power_bound": "36/25",
+        "envelope_bound": "97/65"
+      },
+      {
+        "marked_mask_row_major": 3,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          17,
+          13
+        ],
+        "padded_columns": [
+          11,
+          11,
+          8
+        ],
+        "enlarged_count": 84,
+        "actual_enlarged_to_original_ratio": "6/5",
+        "telescoped_power_bound": "1296/625",
+        "envelope_bound": "123/55"
+      },
+      {
+        "marked_mask_row_major": 4,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          13
+        ],
+        "padded_columns": [
+          9,
+          9,
+          9
+        ],
+        "enlarged_count": 75,
+        "actual_enlarged_to_original_ratio": "15/14",
+        "telescoped_power_bound": "11/9",
+        "envelope_bound": "281/225"
+      },
+      {
+        "marked_mask_row_major": 4,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          13
+        ],
+        "padded_columns": [
+          9,
+          9,
+          10
+        ],
+        "enlarged_count": 79,
+        "actual_enlarged_to_original_ratio": "79/70",
+        "telescoped_power_bound": "121/81",
+        "envelope_bound": "323/207"
+      },
+      {
+        "marked_mask_row_major": 5,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          13
+        ],
+        "padded_columns": [
+          10,
+          9,
+          9
+        ],
+        "enlarged_count": 79,
+        "actual_enlarged_to_original_ratio": "79/70",
+        "telescoped_power_bound": "121/81",
+        "envelope_bound": "323/207"
+      },
+      {
+        "marked_mask_row_major": 5,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          13
+        ],
+        "padded_columns": [
+          11,
+          9,
+          10
+        ],
+        "enlarged_count": 86,
+        "actual_enlarged_to_original_ratio": "43/35",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 6,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          13
+        ],
+        "padded_columns": [
+          9,
+          10,
+          9
+        ],
+        "enlarged_count": 79,
+        "actual_enlarged_to_original_ratio": "79/70",
+        "telescoped_power_bound": "121/81",
+        "envelope_bound": "323/207"
+      },
+      {
+        "marked_mask_row_major": 6,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          13
+        ],
+        "padded_columns": [
+          9,
+          11,
+          10
+        ],
+        "enlarged_count": 86,
+        "actual_enlarged_to_original_ratio": "43/35",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 7,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          16,
+          13
+        ],
+        "padded_columns": [
+          10,
+          10,
+          9
+        ],
+        "enlarged_count": 83,
+        "actual_enlarged_to_original_ratio": "83/70",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 7,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          19,
+          13
+        ],
+        "padded_columns": [
+          11,
+          11,
+          10
+        ],
+        "enlarged_count": 93,
+        "actual_enlarged_to_original_ratio": "93/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 8,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          13,
+          14
+        ],
+        "padded_columns": [
+          10,
+          9,
+          8
+        ],
+        "enlarged_count": 74,
+        "actual_enlarged_to_original_ratio": "37/35",
+        "telescoped_power_bound": "6/5",
+        "envelope_bound": "171/140"
+      },
+      {
+        "marked_mask_row_major": 8,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          13,
+          15
+        ],
+        "padded_columns": [
+          11,
+          9,
+          8
+        ],
+        "enlarged_count": 77,
+        "actual_enlarged_to_original_ratio": "11/10",
+        "telescoped_power_bound": "36/25",
+        "envelope_bound": "97/65"
+      },
+      {
+        "marked_mask_row_major": 9,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          14,
+          14
+        ],
+        "padded_columns": [
+          11,
+          9,
+          8
+        ],
+        "enlarged_count": 78,
+        "actual_enlarged_to_original_ratio": "39/35",
+        "telescoped_power_bound": "36/25",
+        "envelope_bound": "97/65"
+      },
+      {
+        "marked_mask_row_major": 9,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          13,
+          9,
+          8
+        ],
+        "enlarged_count": 84,
+        "actual_enlarged_to_original_ratio": "6/5",
+        "telescoped_power_bound": "1296/625",
+        "envelope_bound": "123/55"
+      },
+      {
+        "marked_mask_row_major": 10,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          14,
+          14
+        ],
+        "padded_columns": [
+          10,
+          10,
+          8
+        ],
+        "enlarged_count": 79,
+        "actual_enlarged_to_original_ratio": "79/70",
+        "telescoped_power_bound": "36/25",
+        "envelope_bound": "97/65"
+      },
+      {
+        "marked_mask_row_major": 10,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          11,
+          11,
+          8
+        ],
+        "enlarged_count": 88,
+        "actual_enlarged_to_original_ratio": "44/35",
+        "telescoped_power_bound": "1296/625",
+        "envelope_bound": "123/55"
+      },
+      {
+        "marked_mask_row_major": 11,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          14
+        ],
+        "padded_columns": [
+          11,
+          10,
+          8
+        ],
+        "enlarged_count": 83,
+        "actual_enlarged_to_original_ratio": "83/70",
+        "telescoped_power_bound": "216/125",
+        "envelope_bound": "73/40"
+      },
+      {
+        "marked_mask_row_major": 11,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          17,
+          15
+        ],
+        "padded_columns": [
+          13,
+          11,
+          8
+        ],
+        "enlarged_count": 95,
+        "actual_enlarged_to_original_ratio": "19/14",
+        "telescoped_power_bound": "46656/15625",
+        "envelope_bound": "17/5"
+      },
+      {
+        "marked_mask_row_major": 12,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          14
+        ],
+        "padded_columns": [
+          10,
+          9,
+          9
+        ],
+        "enlarged_count": 80,
+        "actual_enlarged_to_original_ratio": "8/7",
+        "telescoped_power_bound": "121/81",
+        "envelope_bound": "323/207"
+      },
+      {
+        "marked_mask_row_major": 12,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          11,
+          9,
+          10
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 13,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          14
+        ],
+        "padded_columns": [
+          11,
+          9,
+          9
+        ],
+        "enlarged_count": 84,
+        "actual_enlarged_to_original_ratio": "6/5",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 13,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          15
+        ],
+        "padded_columns": [
+          13,
+          9,
+          10
+        ],
+        "enlarged_count": 97,
+        "actual_enlarged_to_original_ratio": "97/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 14,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          14
+        ],
+        "padded_columns": [
+          10,
+          10,
+          9
+        ],
+        "enlarged_count": 85,
+        "actual_enlarged_to_original_ratio": "17/14",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 14,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          15
+        ],
+        "padded_columns": [
+          11,
+          11,
+          10
+        ],
+        "enlarged_count": 101,
+        "actual_enlarged_to_original_ratio": "101/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 15,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          16,
+          14
+        ],
+        "padded_columns": [
+          11,
+          10,
+          9
+        ],
+        "enlarged_count": 89,
+        "actual_enlarged_to_original_ratio": "89/70",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 15,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          19,
+          15
+        ],
+        "padded_columns": [
+          13,
+          11,
+          10
+        ],
+        "enlarged_count": 108,
+        "actual_enlarged_to_original_ratio": "54/35",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 16,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          13,
+          14
+        ],
+        "padded_columns": [
+          9,
+          10,
+          8
+        ],
+        "enlarged_count": 74,
+        "actual_enlarged_to_original_ratio": "37/35",
+        "telescoped_power_bound": "6/5",
+        "envelope_bound": "171/140"
+      },
+      {
+        "marked_mask_row_major": 16,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          13,
+          15
+        ],
+        "padded_columns": [
+          9,
+          11,
+          8
+        ],
+        "enlarged_count": 77,
+        "actual_enlarged_to_original_ratio": "11/10",
+        "telescoped_power_bound": "36/25",
+        "envelope_bound": "97/65"
+      },
+      {
+        "marked_mask_row_major": 17,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          14,
+          14
+        ],
+        "padded_columns": [
+          10,
+          10,
+          8
+        ],
+        "enlarged_count": 79,
+        "actual_enlarged_to_original_ratio": "79/70",
+        "telescoped_power_bound": "36/25",
+        "envelope_bound": "97/65"
+      },
+      {
+        "marked_mask_row_major": 17,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          11,
+          11,
+          8
+        ],
+        "enlarged_count": 88,
+        "actual_enlarged_to_original_ratio": "44/35",
+        "telescoped_power_bound": "1296/625",
+        "envelope_bound": "123/55"
+      },
+      {
+        "marked_mask_row_major": 18,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          14,
+          14
+        ],
+        "padded_columns": [
+          9,
+          11,
+          8
+        ],
+        "enlarged_count": 78,
+        "actual_enlarged_to_original_ratio": "39/35",
+        "telescoped_power_bound": "36/25",
+        "envelope_bound": "97/65"
+      },
+      {
+        "marked_mask_row_major": 18,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          9,
+          13,
+          8
+        ],
+        "enlarged_count": 84,
+        "actual_enlarged_to_original_ratio": "6/5",
+        "telescoped_power_bound": "1296/625",
+        "envelope_bound": "123/55"
+      },
+      {
+        "marked_mask_row_major": 19,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          14
+        ],
+        "padded_columns": [
+          10,
+          11,
+          8
+        ],
+        "enlarged_count": 83,
+        "actual_enlarged_to_original_ratio": "83/70",
+        "telescoped_power_bound": "216/125",
+        "envelope_bound": "73/40"
+      },
+      {
+        "marked_mask_row_major": 19,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          17,
+          15
+        ],
+        "padded_columns": [
+          11,
+          13,
+          8
+        ],
+        "enlarged_count": 95,
+        "actual_enlarged_to_original_ratio": "19/14",
+        "telescoped_power_bound": "46656/15625",
+        "envelope_bound": "17/5"
+      },
+      {
+        "marked_mask_row_major": 20,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          14
+        ],
+        "padded_columns": [
+          9,
+          10,
+          9
+        ],
+        "enlarged_count": 80,
+        "actual_enlarged_to_original_ratio": "8/7",
+        "telescoped_power_bound": "121/81",
+        "envelope_bound": "323/207"
+      },
+      {
+        "marked_mask_row_major": 20,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          9,
+          11,
+          10
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 21,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          14
+        ],
+        "padded_columns": [
+          10,
+          10,
+          9
+        ],
+        "enlarged_count": 85,
+        "actual_enlarged_to_original_ratio": "17/14",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 21,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          15
+        ],
+        "padded_columns": [
+          11,
+          11,
+          10
+        ],
+        "enlarged_count": 101,
+        "actual_enlarged_to_original_ratio": "101/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 22,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          14
+        ],
+        "padded_columns": [
+          9,
+          11,
+          9
+        ],
+        "enlarged_count": 84,
+        "actual_enlarged_to_original_ratio": "6/5",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 22,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          15
+        ],
+        "padded_columns": [
+          9,
+          13,
+          10
+        ],
+        "enlarged_count": 97,
+        "actual_enlarged_to_original_ratio": "97/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 23,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          16,
+          14
+        ],
+        "padded_columns": [
+          10,
+          11,
+          9
+        ],
+        "enlarged_count": 89,
+        "actual_enlarged_to_original_ratio": "89/70",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 23,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          19,
+          15
+        ],
+        "padded_columns": [
+          11,
+          13,
+          10
+        ],
+        "enlarged_count": 108,
+        "actual_enlarged_to_original_ratio": "54/35",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 24,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          13,
+          15
+        ],
+        "padded_columns": [
+          10,
+          10,
+          8
+        ],
+        "enlarged_count": 78,
+        "actual_enlarged_to_original_ratio": "39/35",
+        "telescoped_power_bound": "36/25",
+        "envelope_bound": "97/65"
+      },
+      {
+        "marked_mask_row_major": 24,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          13,
+          17
+        ],
+        "padded_columns": [
+          11,
+          11,
+          8
+        ],
+        "enlarged_count": 84,
+        "actual_enlarged_to_original_ratio": "6/5",
+        "telescoped_power_bound": "1296/625",
+        "envelope_bound": "123/55"
+      },
+      {
+        "marked_mask_row_major": 25,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          14,
+          15
+        ],
+        "padded_columns": [
+          11,
+          10,
+          8
+        ],
+        "enlarged_count": 83,
+        "actual_enlarged_to_original_ratio": "83/70",
+        "telescoped_power_bound": "216/125",
+        "envelope_bound": "73/40"
+      },
+      {
+        "marked_mask_row_major": 25,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          17
+        ],
+        "padded_columns": [
+          13,
+          11,
+          8
+        ],
+        "enlarged_count": 95,
+        "actual_enlarged_to_original_ratio": "19/14",
+        "telescoped_power_bound": "46656/15625",
+        "envelope_bound": "17/5"
+      },
+      {
+        "marked_mask_row_major": 26,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          14,
+          15
+        ],
+        "padded_columns": [
+          10,
+          11,
+          8
+        ],
+        "enlarged_count": 83,
+        "actual_enlarged_to_original_ratio": "83/70",
+        "telescoped_power_bound": "216/125",
+        "envelope_bound": "73/40"
+      },
+      {
+        "marked_mask_row_major": 26,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          17
+        ],
+        "padded_columns": [
+          11,
+          13,
+          8
+        ],
+        "enlarged_count": 95,
+        "actual_enlarged_to_original_ratio": "19/14",
+        "telescoped_power_bound": "46656/15625",
+        "envelope_bound": "17/5"
+      },
+      {
+        "marked_mask_row_major": 27,
+        "padding": 1,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          11,
+          11,
+          8
+        ],
+        "enlarged_count": 88,
+        "actual_enlarged_to_original_ratio": "44/35",
+        "telescoped_power_bound": "1296/625",
+        "envelope_bound": "123/55"
+      },
+      {
+        "marked_mask_row_major": 27,
+        "padding": 2,
+        "minimum_original_incident_margin": 9,
+        "padded_rows": [
+          17,
+          17
+        ],
+        "padded_columns": [
+          13,
+          13,
+          8
+        ],
+        "enlarged_count": 106,
+        "actual_enlarged_to_original_ratio": "53/35",
+        "telescoped_power_bound": "1679616/390625",
+        "envelope_bound": "187/35"
+      },
+      {
+        "marked_mask_row_major": 28,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          15
+        ],
+        "padded_columns": [
+          10,
+          10,
+          9
+        ],
+        "enlarged_count": 85,
+        "actual_enlarged_to_original_ratio": "17/14",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 28,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          17
+        ],
+        "padded_columns": [
+          11,
+          11,
+          10
+        ],
+        "enlarged_count": 101,
+        "actual_enlarged_to_original_ratio": "101/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 29,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          11,
+          10,
+          9
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 29,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          17
+        ],
+        "padded_columns": [
+          13,
+          11,
+          10
+        ],
+        "enlarged_count": 112,
+        "actual_enlarged_to_original_ratio": "8/5",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 30,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          10,
+          11,
+          9
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 30,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          17
+        ],
+        "padded_columns": [
+          11,
+          13,
+          10
+        ],
+        "enlarged_count": 112,
+        "actual_enlarged_to_original_ratio": "8/5",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 31,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          16,
+          15
+        ],
+        "padded_columns": [
+          11,
+          11,
+          9
+        ],
+        "enlarged_count": 95,
+        "actual_enlarged_to_original_ratio": "19/14",
+        "telescoped_power_bound": "161051/59049",
+        "envelope_bound": "473/153"
+      },
+      {
+        "marked_mask_row_major": 31,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          19,
+          17
+        ],
+        "padded_columns": [
+          13,
+          13,
+          10
+        ],
+        "enlarged_count": 123,
+        "actual_enlarged_to_original_ratio": "123/70",
+        "telescoped_power_bound": "25937424601/3486784401",
+        "envelope_bound": "803/63"
+      },
+      {
+        "marked_mask_row_major": 32,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          13,
+          14
+        ],
+        "padded_columns": [
+          9,
+          9,
+          9
+        ],
+        "enlarged_count": 75,
+        "actual_enlarged_to_original_ratio": "15/14",
+        "telescoped_power_bound": "11/9",
+        "envelope_bound": "281/225"
+      },
+      {
+        "marked_mask_row_major": 32,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          13,
+          15
+        ],
+        "padded_columns": [
+          9,
+          9,
+          10
+        ],
+        "enlarged_count": 79,
+        "actual_enlarged_to_original_ratio": "79/70",
+        "telescoped_power_bound": "121/81",
+        "envelope_bound": "323/207"
+      },
+      {
+        "marked_mask_row_major": 33,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          14
+        ],
+        "padded_columns": [
+          10,
+          9,
+          9
+        ],
+        "enlarged_count": 80,
+        "actual_enlarged_to_original_ratio": "8/7",
+        "telescoped_power_bound": "121/81",
+        "envelope_bound": "323/207"
+      },
+      {
+        "marked_mask_row_major": 33,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          11,
+          9,
+          10
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 34,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          14
+        ],
+        "padded_columns": [
+          9,
+          10,
+          9
+        ],
+        "enlarged_count": 80,
+        "actual_enlarged_to_original_ratio": "8/7",
+        "telescoped_power_bound": "121/81",
+        "envelope_bound": "323/207"
+      },
+      {
+        "marked_mask_row_major": 34,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          9,
+          11,
+          10
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 35,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          14
+        ],
+        "padded_columns": [
+          10,
+          10,
+          9
+        ],
+        "enlarged_count": 85,
+        "actual_enlarged_to_original_ratio": "17/14",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 35,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          15
+        ],
+        "padded_columns": [
+          11,
+          11,
+          10
+        ],
+        "enlarged_count": 101,
+        "actual_enlarged_to_original_ratio": "101/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 36,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          14
+        ],
+        "padded_columns": [
+          9,
+          9,
+          10
+        ],
+        "enlarged_count": 80,
+        "actual_enlarged_to_original_ratio": "8/7",
+        "telescoped_power_bound": "121/81",
+        "envelope_bound": "323/207"
+      },
+      {
+        "marked_mask_row_major": 36,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          9,
+          9,
+          12
+        ],
+        "enlarged_count": 88,
+        "actual_enlarged_to_original_ratio": "44/35",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 37,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          14
+        ],
+        "padded_columns": [
+          10,
+          9,
+          10
+        ],
+        "enlarged_count": 85,
+        "actual_enlarged_to_original_ratio": "17/14",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 37,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          15
+        ],
+        "padded_columns": [
+          11,
+          9,
+          12
+        ],
+        "enlarged_count": 99,
+        "actual_enlarged_to_original_ratio": "99/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 38,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          14
+        ],
+        "padded_columns": [
+          9,
+          10,
+          10
+        ],
+        "enlarged_count": 85,
+        "actual_enlarged_to_original_ratio": "17/14",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 38,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          15
+        ],
+        "padded_columns": [
+          9,
+          11,
+          12
+        ],
+        "enlarged_count": 99,
+        "actual_enlarged_to_original_ratio": "99/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 39,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          16,
+          14
+        ],
+        "padded_columns": [
+          10,
+          10,
+          10
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 39,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          19,
+          15
+        ],
+        "padded_columns": [
+          11,
+          11,
+          12
+        ],
+        "enlarged_count": 110,
+        "actual_enlarged_to_original_ratio": "11/7",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 40,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          13,
+          15
+        ],
+        "padded_columns": [
+          10,
+          9,
+          9
+        ],
+        "enlarged_count": 79,
+        "actual_enlarged_to_original_ratio": "79/70",
+        "telescoped_power_bound": "121/81",
+        "envelope_bound": "323/207"
+      },
+      {
+        "marked_mask_row_major": 40,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          13,
+          17
+        ],
+        "padded_columns": [
+          11,
+          9,
+          10
+        ],
+        "enlarged_count": 86,
+        "actual_enlarged_to_original_ratio": "43/35",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 41,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          15
+        ],
+        "padded_columns": [
+          11,
+          9,
+          9
+        ],
+        "enlarged_count": 84,
+        "actual_enlarged_to_original_ratio": "6/5",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 41,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          17
+        ],
+        "padded_columns": [
+          13,
+          9,
+          10
+        ],
+        "enlarged_count": 97,
+        "actual_enlarged_to_original_ratio": "97/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 42,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          15
+        ],
+        "padded_columns": [
+          10,
+          10,
+          9
+        ],
+        "enlarged_count": 85,
+        "actual_enlarged_to_original_ratio": "17/14",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 42,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          17
+        ],
+        "padded_columns": [
+          11,
+          11,
+          10
+        ],
+        "enlarged_count": 101,
+        "actual_enlarged_to_original_ratio": "101/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 43,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          11,
+          10,
+          9
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 43,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          17
+        ],
+        "padded_columns": [
+          13,
+          11,
+          10
+        ],
+        "enlarged_count": 112,
+        "actual_enlarged_to_original_ratio": "8/5",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 44,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          15
+        ],
+        "padded_columns": [
+          10,
+          9,
+          10
+        ],
+        "enlarged_count": 85,
+        "actual_enlarged_to_original_ratio": "17/14",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 44,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          17
+        ],
+        "padded_columns": [
+          11,
+          9,
+          12
+        ],
+        "enlarged_count": 99,
+        "actual_enlarged_to_original_ratio": "99/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 45,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          11,
+          9,
+          10
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 45,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          17
+        ],
+        "padded_columns": [
+          13,
+          9,
+          12
+        ],
+        "enlarged_count": 110,
+        "actual_enlarged_to_original_ratio": "11/7",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 46,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          10,
+          10,
+          10
+        ],
+        "enlarged_count": 91,
+        "actual_enlarged_to_original_ratio": "13/10",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 46,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          17
+        ],
+        "padded_columns": [
+          11,
+          11,
+          12
+        ],
+        "enlarged_count": 114,
+        "actual_enlarged_to_original_ratio": "57/35",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 47,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          16,
+          15
+        ],
+        "padded_columns": [
+          11,
+          10,
+          10
+        ],
+        "enlarged_count": 96,
+        "actual_enlarged_to_original_ratio": "48/35",
+        "telescoped_power_bound": "161051/59049",
+        "envelope_bound": "473/153"
+      },
+      {
+        "marked_mask_row_major": 47,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          19,
+          17
+        ],
+        "padded_columns": [
+          13,
+          11,
+          12
+        ],
+        "enlarged_count": 125,
+        "actual_enlarged_to_original_ratio": "25/14",
+        "telescoped_power_bound": "25937424601/3486784401",
+        "envelope_bound": "803/63"
+      },
+      {
+        "marked_mask_row_major": 48,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          13,
+          15
+        ],
+        "padded_columns": [
+          9,
+          10,
+          9
+        ],
+        "enlarged_count": 79,
+        "actual_enlarged_to_original_ratio": "79/70",
+        "telescoped_power_bound": "121/81",
+        "envelope_bound": "323/207"
+      },
+      {
+        "marked_mask_row_major": 48,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          13,
+          17
+        ],
+        "padded_columns": [
+          9,
+          11,
+          10
+        ],
+        "enlarged_count": 86,
+        "actual_enlarged_to_original_ratio": "43/35",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 49,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          15
+        ],
+        "padded_columns": [
+          10,
+          10,
+          9
+        ],
+        "enlarged_count": 85,
+        "actual_enlarged_to_original_ratio": "17/14",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 49,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          17
+        ],
+        "padded_columns": [
+          11,
+          11,
+          10
+        ],
+        "enlarged_count": 101,
+        "actual_enlarged_to_original_ratio": "101/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 50,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          15
+        ],
+        "padded_columns": [
+          9,
+          11,
+          9
+        ],
+        "enlarged_count": 84,
+        "actual_enlarged_to_original_ratio": "6/5",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 50,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          17
+        ],
+        "padded_columns": [
+          9,
+          13,
+          10
+        ],
+        "enlarged_count": 97,
+        "actual_enlarged_to_original_ratio": "97/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 51,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          10,
+          11,
+          9
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 51,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          17
+        ],
+        "padded_columns": [
+          11,
+          13,
+          10
+        ],
+        "enlarged_count": 112,
+        "actual_enlarged_to_original_ratio": "8/5",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 52,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          15
+        ],
+        "padded_columns": [
+          9,
+          10,
+          10
+        ],
+        "enlarged_count": 85,
+        "actual_enlarged_to_original_ratio": "17/14",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 52,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          17
+        ],
+        "padded_columns": [
+          9,
+          11,
+          12
+        ],
+        "enlarged_count": 99,
+        "actual_enlarged_to_original_ratio": "99/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 53,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          10,
+          10,
+          10
+        ],
+        "enlarged_count": 91,
+        "actual_enlarged_to_original_ratio": "13/10",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 53,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          17
+        ],
+        "padded_columns": [
+          11,
+          11,
+          12
+        ],
+        "enlarged_count": 114,
+        "actual_enlarged_to_original_ratio": "57/35",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 54,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          15
+        ],
+        "padded_columns": [
+          9,
+          11,
+          10
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 54,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          17
+        ],
+        "padded_columns": [
+          9,
+          13,
+          12
+        ],
+        "enlarged_count": 110,
+        "actual_enlarged_to_original_ratio": "11/7",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 55,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          16,
+          15
+        ],
+        "padded_columns": [
+          10,
+          11,
+          10
+        ],
+        "enlarged_count": 96,
+        "actual_enlarged_to_original_ratio": "48/35",
+        "telescoped_power_bound": "161051/59049",
+        "envelope_bound": "473/153"
+      },
+      {
+        "marked_mask_row_major": 55,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          19,
+          17
+        ],
+        "padded_columns": [
+          11,
+          13,
+          12
+        ],
+        "enlarged_count": 125,
+        "actual_enlarged_to_original_ratio": "25/14",
+        "telescoped_power_bound": "25937424601/3486784401",
+        "envelope_bound": "803/63"
+      },
+      {
+        "marked_mask_row_major": 56,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          13,
+          16
+        ],
+        "padded_columns": [
+          10,
+          10,
+          9
+        ],
+        "enlarged_count": 83,
+        "actual_enlarged_to_original_ratio": "83/70",
+        "telescoped_power_bound": "1331/729",
+        "envelope_bound": "41/21"
+      },
+      {
+        "marked_mask_row_major": 56,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          13,
+          19
+        ],
+        "padded_columns": [
+          11,
+          11,
+          10
+        ],
+        "enlarged_count": 93,
+        "actual_enlarged_to_original_ratio": "93/70",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 57,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          16
+        ],
+        "padded_columns": [
+          11,
+          10,
+          9
+        ],
+        "enlarged_count": 89,
+        "actual_enlarged_to_original_ratio": "89/70",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 57,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          19
+        ],
+        "padded_columns": [
+          13,
+          11,
+          10
+        ],
+        "enlarged_count": 108,
+        "actual_enlarged_to_original_ratio": "54/35",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 58,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          16
+        ],
+        "padded_columns": [
+          10,
+          11,
+          9
+        ],
+        "enlarged_count": 89,
+        "actual_enlarged_to_original_ratio": "89/70",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 58,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          19
+        ],
+        "padded_columns": [
+          11,
+          13,
+          10
+        ],
+        "enlarged_count": 108,
+        "actual_enlarged_to_original_ratio": "54/35",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 59,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          16
+        ],
+        "padded_columns": [
+          11,
+          11,
+          9
+        ],
+        "enlarged_count": 95,
+        "actual_enlarged_to_original_ratio": "19/14",
+        "telescoped_power_bound": "161051/59049",
+        "envelope_bound": "473/153"
+      },
+      {
+        "marked_mask_row_major": 59,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          19
+        ],
+        "padded_columns": [
+          13,
+          13,
+          10
+        ],
+        "enlarged_count": 123,
+        "actual_enlarged_to_original_ratio": "123/70",
+        "telescoped_power_bound": "25937424601/3486784401",
+        "envelope_bound": "803/63"
+      },
+      {
+        "marked_mask_row_major": 60,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          14,
+          16
+        ],
+        "padded_columns": [
+          10,
+          10,
+          10
+        ],
+        "enlarged_count": 90,
+        "actual_enlarged_to_original_ratio": "9/7",
+        "telescoped_power_bound": "14641/6561",
+        "envelope_bound": "419/171"
+      },
+      {
+        "marked_mask_row_major": 60,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          19
+        ],
+        "padded_columns": [
+          11,
+          11,
+          12
+        ],
+        "enlarged_count": 110,
+        "actual_enlarged_to_original_ratio": "11/7",
+        "telescoped_power_bound": "214358881/43046721",
+        "envelope_bound": "659/99"
+      },
+      {
+        "marked_mask_row_major": 61,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          16
+        ],
+        "padded_columns": [
+          11,
+          10,
+          10
+        ],
+        "enlarged_count": 96,
+        "actual_enlarged_to_original_ratio": "48/35",
+        "telescoped_power_bound": "161051/59049",
+        "envelope_bound": "473/153"
+      },
+      {
+        "marked_mask_row_major": 61,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          19
+        ],
+        "padded_columns": [
+          13,
+          11,
+          12
+        ],
+        "enlarged_count": 125,
+        "actual_enlarged_to_original_ratio": "25/14",
+        "telescoped_power_bound": "25937424601/3486784401",
+        "envelope_bound": "803/63"
+      },
+      {
+        "marked_mask_row_major": 62,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          15,
+          16
+        ],
+        "padded_columns": [
+          10,
+          11,
+          10
+        ],
+        "enlarged_count": 96,
+        "actual_enlarged_to_original_ratio": "48/35",
+        "telescoped_power_bound": "161051/59049",
+        "envelope_bound": "473/153"
+      },
+      {
+        "marked_mask_row_major": 62,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          17,
+          19
+        ],
+        "padded_columns": [
+          11,
+          13,
+          12
+        ],
+        "enlarged_count": 125,
+        "actual_enlarged_to_original_ratio": "25/14",
+        "telescoped_power_bound": "25937424601/3486784401",
+        "envelope_bound": "803/63"
+      },
+      {
+        "marked_mask_row_major": 63,
+        "padding": 1,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          16,
+          16
+        ],
+        "padded_columns": [
+          11,
+          11,
+          10
+        ],
+        "enlarged_count": 102,
+        "actual_enlarged_to_original_ratio": "51/35",
+        "telescoped_power_bound": "1771561/531441",
+        "envelope_bound": "59/15"
+      },
+      {
+        "marked_mask_row_major": 63,
+        "padding": 2,
+        "minimum_original_incident_margin": 8,
+        "padded_rows": [
+          19,
+          19
+        ],
+        "padded_columns": [
+          13,
+          13,
+          12
+        ],
+        "enlarged_count": 140,
+        "actual_enlarged_to_original_ratio": "2",
+        "telescoped_power_bound": "3138428376721/282429536481",
+        "envelope_bound": "107/3"
+      }
+    ]
+  },
+  "reproduce": "PYTHONPATH=src python3 experiments/padding_growth.py --output reports/padding-growth.json",
+  "source_sha256": {
+    "experiments/padding_growth.py": "16b39255cc1f5605a198228c8d236397bad29aa4639b3aae0497552198cb451b",
+    "src/contingency115/padding_growth.py": "d82dace90dd78480fbfb65bcb02f099d1d717c6f8fb98e444f2bd431336fdca7",
+    "src/contingency115/scales.py": "d025091f7ba521ba467e60761aea4f92459dec528bc0e7cedf3f39dd83ef5ca6",
+    "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019"
+  }
+}
