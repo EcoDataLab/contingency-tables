@@ -1,0 +1,296 @@
+{
+  "claim_status": {
+    "arithmetic": "Exact integer/Fraction schedules; floating display fields are labeled.",
+    "cost": "Counts and ratios are theorem-schedule allowances, not measured runtime or end-to-end bit-cost improvements.",
+    "exactness_obligation": "Every changed sampler must tabulate its actual new law, including all fallback mass; revised machine costs remain to prove.",
+    "formal_verification": "No new Lean proof or modified Comparator result is claimed by this report.",
+    "implementation": "Schedule utilities and small exact-law checks; no full universal sampler or FPRAS implementation.",
+    "mathematics": "Analytic refinements conditional on the stated chain, independence, mass, success, and cost hypotheses."
+  },
+  "dense_sampling": {
+    "bin_transition_reserved_bits": {
+      "adjacent_exponent_bound": 9,
+      "published": 19808800
+    },
+    "extracted_inverse_gap_improvement_factor": {
+      "approx_display_only": 4238.552517361111,
+      "exact_fraction": "9765625/2304"
+    },
+    "initial_review": {
+      "draw_error_bits": {
+        "bit_length": 6,
+        "exact_integer": "37",
+        "log10_approx_display_only": 1.568201724
+      },
+      "steps_per_trial": {
+        "bit_length": 147,
+        "exact_integer": "119138359546253531951005310489354560000000000",
+        "log10_approx_display_only": 44.076051616
+      },
+      "trials": {
+        "bit_length": 11,
+        "exact_integer": "1408",
+        "log10_approx_display_only": 3.148602655
+      }
+    },
+    "input": {
+      "d": 19,
+      "h": 20,
+      "scales": "A=d^4, B=d^8"
+    },
+    "published": {
+      "offset_extra_bits": {
+        "bit_length": 8,
+        "exact_integer": "156",
+        "log10_approx_display_only": 2.193124598
+      },
+      "steps_per_trial": {
+        "bit_length": 222,
+        "exact_integer": "3820486215876225902150020846497768585889227778635058968631722849441",
+        "log10_approx_display_only": 66.582118637
+      },
+      "trials": {
+        "bit_length": 22,
+        "exact_integer": "2736741",
+        "log10_approx_display_only": 6.437233699
+      }
+    },
+    "refined": {
+      "accuracy_bits": "20",
+      "dimension": "19",
+      "draw_error_bits": "37",
+      "inverse_gap_bound": "2837947968591819167416035072540672",
+      "log2_inverse_min_mass_bound": "9905080",
+      "steps_per_trial": "9838607098947618183419246120796233819751",
+      "trials": "986"
+    },
+    "review_to_refined_steps_ratio": {
+      "approx_display_only": 12109.270992130289,
+      "exact_fraction": "119138359546253531951005310489354560000000000/9838607098947618183419246120796233819751"
+    }
+  },
+  "exact_correction": {
+    "certified_cost_exponent_assumed": 500,
+    "count_bound": 4,
+    "expected_exponential_cost_multiplier": "1 with zero slack bits; 2^(-s) with s slack bits",
+    "gate_expected_reads": "2 - 2^(1-D), strictly below 2; worst case D",
+    "initial_review": {
+      "accuracy_bits": 989977,
+      "gate_bits": 988001
+    },
+    "published": {
+      "accuracy_bits": 1017696497792,
+      "gate_bits": 508848248896
+    },
+    "published_to_refined_accuracy_bits_ratio": {
+      "approx_display_only": 1030055.0988682209,
+      "exact_fraction": "508848248896/494001"
+    },
+    "refined_generic": {
+      "accuracy_bits": "989976",
+      "binary_length": "104",
+      "cost_slack_bits": "0",
+      "count_upper_bound": null,
+      "dimension": "19",
+      "gate_bits": "988000",
+      "rare_cost_exponent": "500"
+    },
+    "refined_with_count_bound": {
+      "accuracy_bits": "988002",
+      "binary_length": "104",
+      "cost_slack_bits": "0",
+      "count_upper_bound": "4",
+      "dimension": "19",
+      "gate_bits": "988000",
+      "rare_cost_exponent": "500"
+    }
+  },
+  "inner_counting": {
+    "extracted_inverse_gap_improvement_factor": {
+      "approx_display_only": 95.367431640625,
+      "exact_fraction": "390625/4096"
+    },
+    "initial_review": {
+      "draw_bound": "1582542336000000000000",
+      "samples_per_average": "783436800000000000",
+      "steps_per_bin_sample": "500276254800000000000000"
+    },
+    "input": {
+      "B": 1000,
+      "H": 100,
+      "d": 19,
+      "status": "Abstract oracle-parameter illustration, not a complete source instance or measured run.",
+      "theta": "1/1000000",
+      "xi": "1/1000"
+    },
+    "published": {
+      "draw_bound": "5203020050000000000000000000000",
+      "samples_per_average": "2575752500000000000000000000",
+      "steps_per_bin_sample": "2169800882995360000000000000000000497878348400000000000000"
+    },
+    "refinements": {
+      "bernstein_by_range": {
+        "allocation": "by_range",
+        "annealing_height": "100",
+        "average_tail_bits": "30",
+        "bin_scale": "1000",
+        "concentration": "bernstein",
+        "concentration_denominator": "909947123/60600000",
+        "correction_samples": "8041657699512500",
+        "dimension": "19",
+        "draw_error_bits": "81",
+        "failure_probability": "1/1000000",
+        "inverse_gap_bound": "273302945792000000",
+        "ratio_concentration_denominator": "1893751/7575000",
+        "ratio_samples_per_average": "133888195700000",
+        "relative_accuracy": "1/1000",
+        "sigma": "1/5050000",
+        "steps_per_bin_sample": "43045213962240000000",
+        "total_draw_bound": "174221973560250000"
+      },
+      "bernstein_common": {
+        "allocation": "common",
+        "annealing_height": "100",
+        "average_tail_bits": "30",
+        "bin_scale": "1000",
+        "concentration": "bernstein",
+        "concentration_denominator": "909947123/60600000",
+        "correction_samples": "8041657699512500",
+        "dimension": "19",
+        "draw_error_bits": "83",
+        "failure_probability": "1/1000000",
+        "inverse_gap_bound": "273302945792000000",
+        "ratio_concentration_denominator": "1893751/7575000",
+        "ratio_samples_per_average": "8041657699512500",
+        "relative_accuracy": "1/1000",
+        "sigma": "1/5050000",
+        "steps_per_bin_sample": "43427838086348800000",
+        "total_draw_bound": "964998923941500000"
+      },
+      "hoeffding_common": {
+        "allocation": "common",
+        "annealing_height": "100",
+        "average_tail_bits": "30",
+        "bin_scale": "1000",
+        "concentration": "hoeffding",
+        "concentration_denominator": "961/2",
+        "correction_samples": "257332976250000000",
+        "dimension": "19",
+        "draw_error_bits": "88",
+        "failure_probability": "1/1000000",
+        "inverse_gap_bound": "273302945792000000",
+        "ratio_concentration_denominator": "1/2",
+        "ratio_samples_per_average": "257332976250000000",
+        "relative_accuracy": "1/1000",
+        "sigma": "1/5050000",
+        "steps_per_bin_sample": "44384398396620800000",
+        "total_draw_bound": "30879957150000000000"
+      }
+    },
+    "review_to_refined_bin_transition_bound_ratio": {
+      "approx_display_only": 42911976.39699345,
+      "exact_fraction": "728415156250000000/16974635461"
+    },
+    "review_to_refined_correction_sample_ratio": {
+      "approx_display_only": 97.42230138040983,
+      "exact_fraction": "620544000000/6369629861"
+    },
+    "review_to_refined_draw_bound_ratio": {
+      "approx_display_only": 9083.48300538979,
+      "exact_fraction": "20891648000000/2299960047"
+    },
+    "review_to_refined_ratio_sample_ratio": {
+      "approx_display_only": 5851.425481566931,
+      "exact_fraction": "77568000000/13256257"
+    }
+  },
+  "outer_sampling": {
+    "initial_review_existing_gap": {
+      "dense_accuracy_bits": {
+        "bit_length": 10,
+        "exact_integer": "594",
+        "log10_approx_display_only": 2.773786445
+      },
+      "steps_per_trial": {
+        "bit_length": 558,
+        "exact_integer": "542762614819536380331421911995296579489167086734158932650327164564995353364746600093291874012567456897387099588055038945223211848363169842218159276192176647829764551680",
+        "log10_approx_display_only": 167.734609926
+      },
+      "trials": {
+        "bit_length": 14,
+        "exact_integer": "15928",
+        "log10_approx_display_only": 4.202161247
+      }
+    },
+    "input": {
+      "b": 104,
+      "columns": [
+        3,
+        3
+      ],
+      "d": 19,
+      "k": 20,
+      "note": "Literal manuscript scales on a four-table fiber, used only to illustrate schedule slack.",
+      "rows": [
+        3,
+        3
+      ]
+    },
+    "published": {
+      "dense_accuracy_bits": {
+        "bit_length": 31,
+        "exact_integer": "2003815696",
+        "log10_approx_display_only": 9.301857774
+      },
+      "steps_per_trial": {
+        "bit_length": 864,
+        "exact_integer": "86609107028777804103527031078987320347333316711018035922826771902183764694969210284463830950864721660376863356921791990478515104761951999212717537947312225436107441705970269623209652901904517913615815232194513431553660004914613784045702514422569180997288271376",
+        "log10_approx_display_only": 259.937563561
+      },
+      "trials": {
+        "bit_length": 22,
+        "exact_integer": "2736741",
+        "log10_approx_display_only": 6.437233699
+      }
+    },
+    "published_to_refined_steps_ratio": {
+      "approx_display_only": 4.5206269924828396e+92,
+      "exact_fraction": "14994651493901974394654956904256807539358261203431100402151449429048435715888021171132934721410097240369955567334105261509438210658232686844307052968717490553342701126379894325347931596590117367315757484798219084410259696141726763165807222026068071502300601/33169406630619931235558416311772010758161799630004779291643348916127883257266336272986505007035094596221655795385857986146402995297389493050242434935334356043804872"
+    },
+    "refined_existing_gap": {
+      "accuracy_bits": "20",
+      "binary_length": "104",
+      "dense_accuracy_bits": "592",
+      "dimension": "19",
+      "inverse_gap_bound": "136098950556553756351911211633725320834796160164031828648527373261031934143617502530915715650092140646285631792390932533907525538706913200155004833548690232655407360",
+      "steps_per_trial": "191586492698460722816585412616795134139142554662907605188531983339554653693970358312770052920634706387776283874148715727981623700837721711858200304186491240509016940672",
+      "trial_mixing_bits": "36",
+      "trials": "11150"
+    },
+    "review_to_refined_steps_ratio": {
+      "approx_display_only": 2.8329899836612915,
+      "exact_fraction": "39880/14077"
+    },
+    "updated_denominator_budget": {
+      "bin_transition_bits": "9",
+      "dense_call_bits": "2356699644425414771453194674761865799448701024",
+      "dense_trial_bits": "88557780115189191772628689116258296988152",
+      "outer_call_bits": "5034356784293798003283507367655823053451915724177589534870363802493699350836898128813216027400087026400623749983438329063429573110185824648038193092015765522396562552411582477454488850914189583924418359887138631944000",
+      "outer_trial_bits": "451511819219174708814664337906351843358916208446420586087028143721408013527972926350961078690590764699607511209276980185060948261003212972918223595696481212770992157166958069726859986629075299006674292366559518560",
+      "scalar_offset_bits": "716"
+    }
+  },
+  "provenance": {
+    "derivations": "docs/error-budgets.md",
+    "initial_review": "115/115-contingency-tables-review.md, sections 5 and 6",
+    "reproduce": "PYTHONPATH=src python3 experiments/budget_report.py --output reports/budget-comparison.json",
+    "sources": [
+      "preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/algorithms.tex",
+      "preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/dense.tex",
+      "preprints/An-FPRAS-for-Cell-Bounded-Contingency-Tables-September-24-2026/build/sections/evaluation.tex"
+    ],
+    "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "upstream_repository": "https://github.com/openai/math"
+  },
+  "schema_version": 1
+}

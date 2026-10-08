@@ -13,4 +13,4 @@ dist/
 tmp/
 overview.pdf
 *.log
-
+!formal/results/*.log

@@ -1,0 +1,266 @@
+{
+  "assumptions": [
+    "The cohort and exact margins are stipulated synthetic controls, not combined source observations.",
+    "Work-from-home entries retain a workplace association but contribute no workplace-commute mileage.",
+    "Two-person carpool mileage is attributed equally; the other rider may be outside this cohort.",
+    "Car and carpool use the same stipulated distance to each destination.",
+    "Transit, walking, and work from home contribute zero household automobile VMT; this is not a claim of zero transit emissions.",
+    "Workday counts, distances, bounds, and activities are illustrative and have no empirical calibration.",
+    "Commute VMT excludes non-work household travel.",
+    "The feasible table is a witness, not observed truth."
+  ],
+  "input": {
+    "data_classification": "synthetic",
+    "file": "examples/synthetic_commute.json",
+    "fixture_name": "synthetic_single_origin_commute",
+    "sha256": "9f70e117500284a4101d018145d60a644ca0fb1bd2e3a5b11b1b3f1269734c0e"
+  },
+  "interpretation": "Sharp possible endpoints under these controls; not a confidence interval.",
+  "max_work": 2000000,
+  "maximum": {
+    "certificate": {
+      "bound": "25080",
+      "column_potentials": [
+        "-5060",
+        "-3300",
+        "-1540",
+        "0",
+        "-1540"
+      ],
+      "kind": "bounded_table_dual_potentials_v1",
+      "maximize": true,
+      "reduced_coefficients": [
+        [
+          "2640",
+          "1320",
+          "0",
+          "-1540",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1540",
+          "0"
+        ],
+        [
+          "-1540",
+          "0",
+          "1540",
+          "0",
+          "1540"
+        ]
+      ],
+      "row_potentials": [
+        "-1540",
+        "-1540",
+        "0"
+      ],
+      "signed_dual": "-25080",
+      "signed_primal": "-25080"
+    },
+    "table": [
+      [
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "value": "25080",
+    "verification": {
+      "optimality_verified": true,
+      "serialized_witness_and_certificate_verified": true,
+      "signed_primal_equals_signed_dual": true
+    },
+    "work": {
+      "augmentations": 7,
+      "residual_arc_examinations": 1171
+    }
+  },
+  "method": "exact_rational_successive_shortest_path_with_independent_certificates",
+  "metric": {
+    "coefficients": [
+      [
+        "880",
+        "440",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "3520",
+        "1760",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "6600",
+        "3300",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "name": "annual_household_attributed_commute_vehicle_miles",
+    "unit": "vehicle_miles_per_year"
+  },
+  "minimum": {
+    "certificate": {
+      "bound": "9460",
+      "column_potentials": [
+        "0",
+        "-1760",
+        "-880",
+        "0",
+        "-3520"
+      ],
+      "kind": "bounded_table_dual_potentials_v1",
+      "maximize": false,
+      "reduced_coefficients": [
+        [
+          "0",
+          "1320",
+          "0",
+          "-880",
+          "2640"
+        ],
+        [
+          "0",
+          "0",
+          "-2640",
+          "-3520",
+          "0"
+        ],
+        [
+          "1540",
+          "0",
+          "-4180",
+          "-5060",
+          "-1540"
+        ]
+      ],
+      "row_potentials": [
+        "-880",
+        "-3520",
+        "-5060"
+      ],
+      "signed_dual": "9460",
+      "signed_primal": "9460"
+    },
+    "table": [
+      [
+        3,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        2
+      ]
+    ],
+    "value": "9460",
+    "verification": {
+      "optimality_verified": true,
+      "serialized_witness_and_certificate_verified": true,
+      "signed_primal_equals_signed_dual": true
+    },
+    "work": {
+      "augmentations": 9,
+      "residual_arc_examinations": 1804
+    }
+  },
+  "probability_law_required": false,
+  "problem": {
+    "column_sums": [
+      4,
+      1,
+      2,
+      1,
+      2
+    ],
+    "lower_bounds": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "row_sums": [
+      4,
+      3,
+      3
+    ],
+    "upper_bounds": [
+      [
+        4,
+        1,
+        2,
+        1,
+        2
+      ],
+      [
+        3,
+        1,
+        2,
+        0,
+        2
+      ],
+      [
+        3,
+        1,
+        0,
+        0,
+        2
+      ]
+    ]
+  },
+  "schema_version": 1,
+  "status": "optimal",
+  "work_used": 2975
+}

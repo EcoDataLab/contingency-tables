@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "arithmetic_status": "All shifted coefficients are checked nonnegative; these polynomial inequalities hold for every d>=14.",
+  "mathematical_status": "New gap allowances are conditional on source lemmas and the manuscript derivations in docs/transport-localization.md and docs/scale-audit.md.",
+  "scope": "Ideal small-chain inverse gap, not complete sampler bit complexity, observed gap, or measured runtime.",
+  "proof_integration": "Full physical-context, scale, machine and Comparator integration remains open.",
+  "reproduce": "PYTHONPATH=src python3 experiments/scale_report.py --output reports/scale-certificates.json",
+  "universal_certificates": [
+    {
+      "name": "positive_integer_widths",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "shifted_coefficients": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "half_inner_volume",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        8
+      ],
+      "shifted_coefficients": [
+        21952,
+        4704,
+        336,
+        8
+      ]
+    },
+    {
+      "name": "within_bin_comparison",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "shifted_coefficients": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "layer_sum_normalizer",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "shifted_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "directional_half_acceptance_new_switching",
+      "lower": 14,
+      "coefficients": [
+        0,
+        -4,
+        0,
+        32
+      ],
+      "shifted_coefficients": [
+        87752,
+        18812,
+        1344,
+        32
+      ]
+    },
+    {
+      "name": "half_unpadding_success_new_switching",
+      "lower": 14,
+      "coefficients": [
+        1,
+        0,
+        0,
+        -32,
+        0,
+        64
+      ],
+      "shifted_coefficients": [
+        34332929,
+        12274304,
+        1754816,
+        125408,
+        4480,
+        64
+      ]
+    },
+    {
+      "name": "unpadding_threshold_at_most_half_margin",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        -64,
+        0,
+        128
+      ],
+      "shifted_coefficients": [
+        68665856,
+        24548608,
+        3509632,
+        250816,
+        8960,
+        128
+      ]
+    },
+    {
+      "name": "old_small_entry_lemma_domain",
+      "lower": 14,
+      "coefficients": [
+        0,
+        -4,
+        0,
+        32
+      ],
+      "shifted_coefficients": [
+        87752,
+        18812,
+        1344,
+        32
+      ]
+    },
+    {
+      "name": "directional_half_acceptance_old_switching",
+      "lower": 14,
+      "coefficients": [
+        0,
+        0,
+        0,
+        16
+      ],
+      "shifted_coefficients": [
+        43904,
+        9408,
+        672,
+        16
+      ]
+    }
+  ],
+  "illustrative_comparisons": [
+    {
+      "d": 14,
+      "small_slot_allowance": "p=d is a conservative upper allowance, not an asserted table shape",
+      "proposed_scales": {
+        "d": 14,
+        "A": 3136,
+        "B": 43904,
+        "L": 87808,
+        "U": 68841472
+      },
+      "probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/3136",
+        "best_edge_orientation_rejection": "1/6272",
+        "unpadding_bad_fraction": "17210368/68753665"
+      },
+      "inverse_gap_allowances": {
+        "source_explicit_original_scales": {
+          "exact_integer": "2651788821036189784361551802879809123337039934371105151310757080062690685571722745233791509562860114254163872980082457684122102550933007095666959360",
+          "log10_display_only": 147.42353893545277
+        },
+        "localized_original_scales": {
+          "exact_integer": "731212060501707502508686191061229708919151906408684521593683339402314264424574181085986189437163008",
+          "log10_display_only": 98.86404334597269
+        },
+        "source_transport_new_scales": {
+          "exact_integer": "822764566917796279799151989161997132860648487506149237760",
+          "log10_display_only": 56.915275580150265
+        },
+        "localized_new_scales": {
+          "exact_integer": "335120582931961634357554515706818964992",
+          "log10_display_only": 38.525201102795734
+        }
+      }
+    },
+    {
+      "d": 19,
+      "small_slot_allowance": "p=d is a conservative upper allowance, not an asserted table shape",
+      "proposed_scales": {
+        "d": 19,
+        "A": 5776,
+        "B": 109744,
+        "L": 219488,
+        "U": 316940672
+      },
+      "probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/5776",
+        "best_edge_orientation_rejection": "1/11552",
+        "unpadding_bad_fraction": "79235168/316721185"
+      },
+      "inverse_gap_allowances": {
+        "source_explicit_original_scales": {
+          "exact_integer": "136098950556553756351911211633725320834796160164031828648527373261031934143617502530915715650092140646285631792390932533907525538706913200155004833548690232655407360",
+          "log10_display_only": 164.13385477642115
+        },
+        "localized_original_scales": {
+          "exact_integer": "142400620463091612581309384572939763406026950896426620007285212617202369234237478139903252872257781547259521152",
+          "log10_display_only": 110.15351188159796
+        },
+        "source_transport_new_scales": {
+          "exact_integer": "48897934761030769493367813175391463543833732719277944774946560",
+          "log10_display_only": 61.68929051677538
+        },
+        "localized_new_scales": {
+          "exact_integer": "719673824545075154876722410024905254434176",
+          "log10_display_only": 41.8571357071305
+        }
+      }
+    },
+    {
+      "d": 30,
+      "small_slot_allowance": "p=d is a conservative upper allowance, not an asserted table shape",
+      "proposed_scales": {
+        "d": 30,
+        "A": 14400,
+        "B": 432000,
+        "L": 864000,
+        "U": 3110400000
+      },
+      "probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/14400",
+        "best_edge_orientation_rejection": "1/28800",
+        "unpadding_bad_fraction": "777600000/3109536001"
+      },
+      "inverse_gap_allowances": {
+        "source_explicit_original_scales": {
+          "exact_integer": "1342206256956503753760179643971592806846370758245504288856048335681275187924380585790373374894321685287934450563707884378397999231501181761547008001562589988461407232000000000000746910950400",
+          "log10_display_only": 189.12781925903352
+        },
+        "localized_original_scales": {
+          "exact_integer": "10752489279869655389877923923109256370876424397706637450822750006542147474358434076287381762143582350589541343620244144428684800",
+          "log10_display_only": 127.03150901823885
+        },
+        "source_transport_new_scales": {
+          "exact_integer": "676341681644988231952739311124397715018682074179875274621674910950400",
+          "log10_display_only": 68.83016615298885
+        },
+        "localized_new_scales": {
+          "exact_integer": "68088476069037143466531632584492600625496307200",
+          "log10_display_only": 46.833073614069455
+        }
+      }
+    },
+    {
+      "d": 100,
+      "small_slot_allowance": "p=d is a conservative upper allowance, not an asserted table shape",
+      "proposed_scales": {
+        "d": 100,
+        "A": 160000,
+        "B": 16000000,
+        "L": 32000000,
+        "U": 1280000000000
+      },
+      "probability_and_geometry_bounds": {
+        "inner_volume_loss": "1/4",
+        "log_density_change_per_bin": "1",
+        "layer_exponent_sum": "1/4",
+        "directional_completion_rejection": "1/160000",
+        "best_edge_orientation_rejection": "1/320000",
+        "unpadding_bad_fraction": "320000000000/1279968000001"
+      },
+      "inverse_gap_allowances": {
+        "source_explicit_original_scales": {
+          "exact_integer": "1024051200000000000000000000000000000000614430720000000000000000000000000000000153607680000000000000000000000000000000020481024000000000000000000000000000000001536076800000000000000000000000000000000061443072000000000000000000000000000000001024051202560000",
+          "log10_display_only": 255.01032167082107
+        },
+        "localized_original_scales": {
+          "exact_integer": "3136636800000000000000000000000000000000940991040000000000000000000000000000000064126790399838392000300974597373869238667885106173662845275778432661305451985506131157760000",
+          "log10_display_only": 171.49646423342907
+        },
+        "source_transport_new_scales": {
+          "exact_integer": "4503824807372976203584503098707625945031820443673167082291207864713216001024051202560000",
+          "log10_display_only": 87.6535814887103
+        },
+        "localized_new_scales": {
+          "exact_integer": "841984529716354201241519130653333910970869478208064800000000",
+          "log10_display_only": 59.92530411202157
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "recorded_at_utc": "2026-10-08T19:02:42.221042+00:00",
+  "scope": "Python research checkpoint; not a full sampler or Lean verification receipt.",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "environment": {
+    "python": "3.14.3",
+    "numpy": "2.5.3",
+    "platform": "Darwin",
+    "architecture": "arm64"
+  },
+  "observed_checks": [
+    {
+      "command": "python -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests_passed": 78
+    },
+    {
+      "command": "python experiments/independent_crosscheck.py --output reports/independent-crosscheck.json",
+      "exit_code": 0,
+      "report": "reports/independent-crosscheck.json"
+    },
+    {
+      "command": "python scripts/verify_sources.py --checkout .upstream/openai-math",
+      "exit_code": 0,
+      "bundle_sha256_verified": 5,
+      "upstream_git_blobs_verified": 38
+    },
+    {
+      "command": "python 115/audit115.py --output .local/audit115-rerun.json",
+      "exit_code": 0,
+      "parameter_cases": 100,
+      "path_sequences": 896,
+      "integer_leaf_edges": 2968,
+      "spectral_instances": 5
+    },
+    {
+      "command": "python experiments/scale_report.py --output reports/scale-certificates.json",
+      "exit_code": 0
+    },
+    {
+      "command": "python experiments/budget_report.py --output reports/budget-comparison.json",
+      "exit_code": 0
+    },
+    {
+      "command": "python examples/sparse_commute.py --spectral --output reports/sparse-commute.json",
+      "exit_code": 0
+    },
+    {
+      "command": "python examples/linear_metric_bounds.py --output reports/linear-bounds.json",
+      "exit_code": 0
+    }
+  ],
+  "source_sha256": {
+    "115/audit115.py": "5c900bd639905c55411ba9751a2076568555b59e9f14e9cacef4df3b803bad33",
+    "examples/linear_metric_bounds.py": "e8fb39733559466bdd13eacea739d66e5eedcaa7c0e2f6e1ae3d8ae558511157",
+    "examples/sparse_commute.py": "82198032e99be337930d07a333511ac92ba514b868475c32f5cba68fe9d38c72",
+    "examples/synthetic_commute.json": "9f70e117500284a4101d018145d60a644ca0fb1bd2e3a5b11b1b3f1269734c0e",
+    "experiments/budget_report.py": "3cf1a5be795cccec487730f95d11519f3d94b5b33102b493b87f8e97c0f26bff",
+    "experiments/independent_crosscheck.py": "d7eb189cbe45e4907251e035f161a326128cb74975ac52cb672a6546521a77ae",
+    "experiments/scale_report.py": "bbe3f0d5e9a0c3e5ee2da207a561aca7e4f742cb8765d0a36a2feab57acbae41",
+    "scripts/verify_sources.py": "9087c31a728fa637641361c4c12c35bc728919e75a4759bad93d4a75b1caa536",
+    "src/contingency115/__init__.py": "7996514dfb27c1af0089fce91a4119a49d72df1d24d24dcdd1ab2d22c7e23ca9",
+    "src/contingency115/budgets.py": "5fde0a4b343faf1024a016499e80930775b0e23f71a0065144cd2eac7d67d763",
+    "src/contingency115/kernels.py": "6931734601d48bcbff0b2261932f212f4201a910078c08c03a1b213f7cf12187",
+    "src/contingency115/optimize.py": "4ee72acb00cb83d0b45867cfd13130121dea3fb56099d4c13903bf5c4d31f9c9",
+    "src/contingency115/scales.py": "a8f58dccfad66782ce0bb46c44cdaa8ef8a6b6f1e60c879751a1991fdb35a4d4",
+    "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019",
+    "src/contingency115/transport_bounds.py": "44551ab0d8b367323f534a5c0a7aab48633af4fc654bdb1f2d6dc8266c290b96",
+    "tests/test_budgets.py": "a8964ed3dcc175269d50a43322f8f0d74995559fdc6937c851c3f7304d0a4353",
+    "tests/test_kernels.py": "5f4392b355bfe4155639909123ccbd53de93532c23f73497704d0c1a746affb2",
+    "tests/test_optimize.py": "90b5d4460e483071c2d44bdbe2aa10018c101e87ec47246bcafef04c25becab2",
+    "tests/test_scales.py": "fdde61e0b46a4c924ac17f12b2a3495791e9eb1a31bffb2a5eb1028d6622a1cd",
+    "tests/test_tables.py": "2c3edc49820bd07497f351d54b576a3bf9436b0c40f3dba02a35e2bb5141dd30",
+    "tests/test_transport_bounds.py": "2f0e703dda6afa8875abdb86f2b3f7b94144977a78db93841afee69ed51473db"
+  },
+  "report_sha256": {
+    "reports/budget-comparison.json": "121f5ec12241dce85e6cb28a399ffdb10b38df52416108305021db944baee7cd",
+    "reports/independent-crosscheck.json": "a11305edcd940575768b1084713355ff993ce230832442d7f002ea3ebf38a33c",
+    "reports/linear-bounds.json": "8ebc585fcbf7f921f6d9779d3d6576ac95898c2e280947febeca9c40841838da",
+    "reports/scale-certificates.json": "07a31614a5ec13a3fde5e0c63942c16599671f4c4de8ce9509c6de1d4c85749d",
+    "reports/sparse-commute.json": "f7f0ea71b6ed8c269a300808468cb56281b10cbcc01049cd4193f225875e10a4"
+  },
+  "limitations": [
+    "Finite exact oracles are bounded checks, not universal correctness proofs.",
+    "Spectral diagnostics use floating-point eigensolvers.",
+    "Full sampler integration, revised machine cost proof and complete Lean/Comparator verification remain open."
+  ]
+}

@@ -1,0 +1,40 @@
+Verification started: 2026-10-08T19:02:03Z
+Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+Build completed successfully (8948 jobs).
+✔ [8953/8956] Built Math115.TransportRefinement (70s)
+✔ [8954/8956] Built Math115.WidthWeightedTransport (45s)
+✔ [8955/8956] Built Math115 (76s)
+Build completed successfully (8956 jobs).
+'OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.correctionKernel_upper_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_widths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_widths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.GlobalDisplayOwnership.edge_owner_unique_upstream' depends on axioms: [propext, Quot.sound]
+Axiom allowlist passed for 11 declarations.
+Verification completed: 2026-10-08T19:06:26Z

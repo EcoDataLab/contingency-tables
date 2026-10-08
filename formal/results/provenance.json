@@ -1,0 +1,175 @@
+{
+  "upstream_repository": "https://github.com/openai/math",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "harness": "Focused Lake package; unchanged upstream source via srcDir; only mathlib dependency closure retained",
+  "upstream_lake_manifest_sha256": "cf6105a25d9dca2f166b241d9191bd12c7e13305890dc9c4d0952351cccc0794",
+  "upstream_lakefile_sha256": "4cca977ebece444b6c999d99755c1ad3c93119bafc127ea761f7f703c7279e74",
+  "upstream_modules": [
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.BinaryContraction",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Machines/BinaryContraction.lean",
+      "git_blob": "43d6a9e4dff93d09d826ede6b6903cf0c185fcaf",
+      "sha256": "677899d6bc0b7c051598b8547fbdfb65d7d80a7d23834c8947ee33576f1c370f"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedBox",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/BalancedBox.lean",
+      "git_blob": "ed91b7a93485c20dbe37bd4e8766f8b0dc6fca5b",
+      "sha256": "07ddb01ee816f869dc0281e7712b5501d49a602dea626931d4fdf59c74ff5d1a"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedEnumeration",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/BalancedEnumeration.lean",
+      "git_blob": "06e04ed6faaeb8aaf4d2c19b3a26577c39c0f154",
+      "sha256": "c63d2edbeaf457835fe9d0767a2731c86842b60178847c94022afeb7e1f5979a"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedFamily",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/BalancedFamily.lean",
+      "git_blob": "8b1fe62f9b77b4934bd5a153207d6ea654aa78e6",
+      "sha256": "30de4bedeb8e5dc9028d9ad00153abefcee961a8b4b1086e1ad0341f2d050917"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedSummation",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/BalancedSummation.lean",
+      "git_blob": "4e772cd46746e8ee5cf29d0047b2d42fbd6473af",
+      "sha256": "c1fafd4defcf300e29ba035319df3cd8f056e52b183a84645abfb76704828f85"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FactorialSignatures",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FactorialSignatures.lean",
+      "git_blob": "3fb805fdeedde6d632ece3f08bf1ae261b1a64ae",
+      "sha256": "771558a0fd9206079ba087504e341dd93db6ee509878644104c02bebafe6da02"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerCorrectionKernel",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerCorrectionKernel.lean",
+      "git_blob": "3b9ce4e8918861f2c35f8e26d6f3e1e344cac7b2",
+      "sha256": "2825ea18244c670a6322c98bb8f6d73074969b5b7b8ff7d3eadf1344e5d4c0df"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerExposure",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerExposure.lean",
+      "git_blob": "bc4fcf43f7e08d6b83f498e02d54488c71c67171",
+      "sha256": "3ca48964f2ed5138b5b2944a38123e1762af120b47af05282a0806bfac28e305"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureKernel",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerFutureKernel.lean",
+      "git_blob": "ab8a28bd3920f691182c6f5324716aeb66083d3b",
+      "sha256": "d7c28a4d445f73dd903c6e3c7061fed0df036abfa1cb8b3f3d1616c1fb85c406"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureSquare",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerFutureSquare.lean",
+      "git_blob": "0446d9d8fa340bfa51eb8bff927c10f741be1646",
+      "sha256": "de59d422a3b651ef9af78b6a685caf1c4722620e2e8de3135ac9fa5bdab20261"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafEnergy",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerLeafEnergy.lean",
+      "git_blob": "84e8b64c5c033d7c0e3c549f2f7a9095e927e2e6",
+      "sha256": "4b211f2b01925228cdbdfd630fe460a01c1820734842cc3890bf390369c57657"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerLeafTransport.lean",
+      "git_blob": "6b0cefd7421602a40b56a605a8711e2ccf2ffd32",
+      "sha256": "1fd02e86396c398b3d99f44b18893bd43b4626b447c274fa64395f6509e8a4d6"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerMarginal",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerMarginal.lean",
+      "git_blob": "a4a497884a0c6f0abd382883b78eda2b522132c0",
+      "sha256": "6df5d9d4fece5b32507fc8fde11a987b102c2722eff7989a97218c43c339c489"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerPairRecursion",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerPairRecursion.lean",
+      "git_blob": "7df52f46429d6e9f2fea1a473a5e83a98245d463",
+      "sha256": "9d9d0e591f95218d88b619413732fb045b62d472188742230d023605cfa1777b"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursiveFlow",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerRecursiveFlow.lean",
+      "git_blob": "aa9e3f319f3a5f4d93046eeb8cabaf12ba37fea1",
+      "sha256": "25a34320580e0853976d6ffc6724d881d130aa29fa90cdbe9fb1708400e38ac3"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursivePotential",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerRecursivePotential.lean",
+      "git_blob": "9171f31c9d4355bd282be112a6b9614ace17ef0f",
+      "sha256": "5e738402ade4d237d3465fcad0f47e9b59a8bbd8d4071c430cd3f50f9b250075"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerReflection",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerReflection.lean",
+      "git_blob": "87370e1c638d097b7f17f45d83ca82f6076229a9",
+      "sha256": "d7d7219f8ab8a6e83f8dc637755e9286ece28038f4de2cabc57ae115b4efb359"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerRootEstimate",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerRootEstimate.lean",
+      "git_blob": "0ba5866e44d66df0fe029838773feabb41153c03",
+      "sha256": "bc10f1a5aa554b2997a683fcdb6fbc3ca05d861349e227cf784ce60f91308478"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerRootTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerRootTransport.lean",
+      "git_blob": "7b6fc0793da871ec5c65993bcde9b6dd49cd561c",
+      "sha256": "363ab4669ef3f07b43d0de61a38f97e7b9e13ee0e3448f47576d735b0772bcc2"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceReindex",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerSliceReindex.lean",
+      "git_blob": "17ad5efc814196aecc439fc06baeb86c2a421e75",
+      "sha256": "6b87a57ce4fb2c6569e34dfdd7148068920b7af8c66f2c8ce36a9bfa36426a20"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLevels",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerTransportLevels.lean",
+      "git_blob": "8957667f17b62c2e1aeec101817dc2b4c29191e5",
+      "sha256": "2c7defba22393aeeb2439583618b9c06de809fa3f48d7b3616457b0a937fc34d"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.IntegerWeightedTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/IntegerWeightedTransport.lean",
+      "git_blob": "a20fab1674405c460f2b9819ea6d35f69f9c0e40",
+      "sha256": "dcfb78c959570ab16eb43ee719077e45c1623c08890c11032c8bfb458ae00a42"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.QuadraticTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/QuadraticTransport.lean",
+      "git_blob": "3dfebeb58050b944d221aa1863fe7161cf122667",
+      "sha256": "bd21390413f074c3703297688190db6e8520a801a344bef0ea931c543960dbd5"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.SignedTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/SignedTransport.lean",
+      "git_blob": "bef383cd6b71855b1dd94b53e201337497499c23",
+      "sha256": "617edb66c51ee7803771fc34aef89f71d04a654eb3fa31fb562028d41bbbad9f"
+    },
+    {
+      "module": "OAI.Combinatorics.MatroidCounting.CommonBases",
+      "path": "lean/OAI/Combinatorics/MatroidCounting/CommonBases.lean",
+      "git_blob": "83e7e510797b85b7ef65b93d5983303245c3246b",
+      "sha256": "0e5fa4d146154656ca6f89fad0d255159ca3e895b76b8bc3af731882e28725a9"
+    }
+  ],
+  "external_imports": [
+    "Lean.Elab.Tactic.Omega",
+    "Mathlib",
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic",
+    "Mathlib.Algebra.BigOperators.Intervals",
+    "Mathlib.Algebra.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+    "Mathlib.Basic.Real.Basic",
+    "Mathlib.LinearAlgebra.BilinearForm.Basic",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring"
+  ]
+}

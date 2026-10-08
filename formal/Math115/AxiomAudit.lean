@@ -1,0 +1,15 @@
+import Math115
+
+-- Every line must contain only the three standard axioms allowed upstream:
+-- propext, Classical.choice, Quot.sound.  A sorryAx is a verification failure.
+#print axioms OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy
+#print axioms OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport
+#print axioms OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quadratic
+#print axioms OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quarter
+#print axioms OAI.ContingencyTables.IntegerWeightedTransport.correctionKernel_upper_quarter
+#print axioms OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_quarter
+#print axioms OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_quarter
+#print axioms OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport_quarter
+#print axioms OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_widths
+#print axioms OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_widths
+#print axioms Math115.GlobalDisplayOwnership.edge_owner_unique_upstream

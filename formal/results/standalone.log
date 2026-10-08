@@ -1,0 +1,13 @@
+Verification started: 2026-10-08T18:55:45Z
+Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+✔ [3093/3094] Built Math115.RepairCoefficient (8.3s)
+✔ [3094/3094] Built Math115.GlobalDisplayOwnership (8.3s)
+Build completed successfully (3094 jobs).
+'Math115.pair_product_le_quarter_square' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.pair_product_eq_quarter_square_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.GlobalDisplayOwnership.edge_owner_unique' depends on axioms: [propext, Quot.sound]
+'Math115.GlobalDisplayOwnership.edge_prefix_unique' depends on axioms: [propext, Quot.sound]
+'Math115.min_mass_repair_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.min_mass_quarter_repair_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Axiom allowlist passed for 6 declarations.
+Verification completed: 2026-10-08T18:56:17Z

@@ -21,12 +21,12 @@ The useful mathematical scope is also precise. Result #115's [exact uniform samp
 
 Fix a home area `o`. Let `N[o,d]` be the chosen integer total assigned to workplace destination `d`, and let `M[o,m]` be the chosen integer home-area total in mode `m`. Define
 
-\[
+$$
 \Omega_o=\left\{X\in\mathbb Z_{\ge0}^{D\times K}:
 \sum_m X_{dm}=N_{od},\quad
 \sum_d X_{dm}=M_{om},\quad
 \ell_{dm}\le X_{dm}\le b_{dm}\right\}.
-\]
+$$
 
 Include work from home as a column if the cohort includes those workers. A work-from-home entry retains a workplace association for bookkeeping but contributes no journey to that workplace under this model. Hybrid attendance belongs in a separate attendance model; a usual-mode estimate is not a count of remote days.
 
@@ -44,17 +44,17 @@ Different laws answer different questions even when they have identical support.
 
 **Uniform tables:**
 
-\[
+$$
 \pi_U(X)=|\Omega_o|^{-1}.
-\]
+$$
 
 This gives each aggregate matrix equal probability. It is a valuable reference law and an exact computational benchmark. Marginal constraints alone do not make it a scientifically preferred uncertainty distribution.
 
 **Conditional independent-worker choices:** Suppose the `N[o,d]` members of each row independently choose modes with positive relative activities `a[d,m]`, then condition on the column totals and cell bounds. The row multinomial coefficients give
 
-\[
+$$
 \pi_P(X)=Z^{-1}\prod_{d,m}\frac{a_{dm}^{X_{dm}}}{X_{dm}!},\qquad X\in\Omega_o.
-\]
+$$
 
 The same law follows from independent Poisson cell counts conditioned on the controls. The factorials count the different labeled assignments leading to the same aggregate matrix. Dropping them changes the law. For the uncapped `2 × 2` problem with both margins `(2,2)` and every activity equal to one, the three feasible tables have uniform probabilities `(1/3,1/3,1/3)` but conditional-Poisson probabilities `(1/6,2/3,1/6)` in order of the top-left entry `0,1,2`.
 
@@ -62,9 +62,9 @@ A gravity-style choice `a[d,m] = exp(-beta[m] * travel_time[d,m])` is one possib
 
 **Row and column scaling invariance.** For either the product-activity law or the factorial law, replacing `a[d,m]` by `u[d] * a[d,m] * v[m]` multiplies every feasible table's unnormalized weight by the same number,
 
-\[
+$$
 \prod_d u_d^{N_{od}}\prod_m v_m^{M_{om}}.
-\]
+$$
 
 Thus row normalizers and IPF mode multipliers cancel after conditioning on the corresponding exact margins. Association information remains in interaction odds, such as `a[i,j]a[k,l]/(a[i,l]a[k,j])`. This is both a computational simplification and a useful invariance test. Margins already encode the calibrated mode totals; extra multipliers cannot create new conditional information.
 
@@ -112,9 +112,9 @@ An output should identify the control realization, target law, method, random se
 
 For mode-specific one-way route distance `D[o,d,m]` in miles, attendance `A[o,d,m]` in commute workdays per year, legs per day `L[o,d,m]`, and vehicles attributable per worker `v[o,d,m]`, annual household-attributed commute VMT is
 
-\[
+$$
 V(X)=\sum_{o,d,m}X_{odm}D_{odm}A_{odm}L_{odm}v_{odm}.
-\]
+$$
 
 For a drive-alone category, `v = 1`; for a two-person carpool, `v = 1/2` under equal allocation of shared mileage. Taking an average occupancy and dividing all person-miles by it generally differs from summing occupancy-category person-miles divided by their own occupancies. Keep the convention explicit. Work-from-home entries have zero workplace-commute mileage in this calculation. A round-trip factor of two and a fixed annual workday count are assumptions, not information contained in LODES.
 

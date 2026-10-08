@@ -1,0 +1,198 @@
+{
+  "recorded_date": "2026-10-08",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "host_platform": "Darwin arm64",
+  "upstream_tracked_source_clean": true,
+  "focused_manifest_entries_match_upstream": true,
+  "focused_manifest_entry_count": 9,
+  "upstream_focused_baseline": {
+    "status": "passed",
+    "original_module_count": 25,
+    "log": "formal/results/upstream-focused-baseline.log"
+  },
+  "checks": {
+    "standalone": {
+      "status": "passed",
+      "completed_at_utc": "2026-10-08T18:56:17Z",
+      "log": "formal/results/standalone.log",
+      "audited_declarations": [
+        {
+          "name": "Math115.pair_product_le_quarter_square",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.pair_product_eq_quarter_square_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.GlobalDisplayOwnership.edge_owner_unique",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.GlobalDisplayOwnership.edge_prefix_unique",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.min_mass_repair_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.min_mass_quarter_repair_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ]
+    },
+    "focused": {
+      "status": "passed",
+      "completed_at_utc": "2026-10-08T19:06:26Z",
+      "log": "formal/results/focused.log",
+      "audited_declarations": [
+        {
+          "name": "OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quadratic",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quarter",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "OAI.ContingencyTables.IntegerWeightedTransport.correctionKernel_upper_quarter",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_quarter",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_quarter",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport_quarter",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_widths",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_widths",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.GlobalDisplayOwnership.edge_owner_unique_upstream",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ]
+    }
+  },
+  "new_audited_declaration_count": 15,
+  "original_audited_declaration_count": 2,
+  "full_unconditional_and_challenge_build": {
+    "status": "not_run"
+  },
+  "secure_comparator": {
+    "status": "not_run",
+    "platform_preflight_exit_code": 2,
+    "reason": "The real Landrun sandbox requires Linux; the local host is macOS.",
+    "log": "formal/results/comparator.log"
+  },
+  "limits": [
+    "The focused harness is separate from the complete upstream Lake package.",
+    "Official Mathlib cached artifacts are trusted.",
+    "Global physical context embeddings and proposed mixing/runtime exponents are not formally established here.",
+    "The original three sampling/counting machine theorems are not independently reverified by this run."
+  ],
+  "source_sha256": {
+    "formal/Math115.lean": "231cfc2882b41d39809e7e91dab46c641a05e6bbeba6b062f2ba131786ffdc9c",
+    "formal/Math115/AxiomAudit.lean": "d794453c2b8513778fbafb0a554dc41e048a2bb00298fd8dbc43d6a86943c721",
+    "formal/Math115/GlobalDisplayOwnership.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
+    "formal/Math115/QuadraticCoefficient.lean": "9d023785b272aeb6b819aaa1bc42c7c04f8419522799b64e0b66bb355b91a46a",
+    "formal/Math115/RepairCoefficient.lean": "cf1275943fb03dce29c9641d758e56531ee6c2fa42b13dc09110e2d7823ffd60",
+    "formal/Math115/StandaloneAxiomAudit.lean": "32c7c21d8a51930b1592db0c484ced0f8416114a6944a09534a27783bc5b7285",
+    "formal/Math115/TransportRefinement.lean": "04b50163b67e1ef21f07b379f1daeb857d53f3dbd188aa857e8327ced7cb9dfc",
+    "formal/Math115/UpstreamAxiomAudit.lean": "3abf27c5a83cc3bc1c1d6fe2ebce1c300a41132fe3c7d840e7f40663d0fbd0cb",
+    "formal/Math115/UpstreamOwnershipBridge.lean": "9d8229c0a5556c05d539634d32ba69e547b358b8de6275c9b5f01c7cdec1a7bf",
+    "formal/Math115/WidthWeightedTransport.lean": "fad07f17b6b4e1c674a48cada9e2c0cc688f36e66bc689928025d86e15698d5c",
+    "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+    "formal/lake-manifest.json": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+    "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+    "scripts/bootstrap_lean.sh": "3a6f786a74e64e1a08a91dffd45171c481ae4099832ceadf8a6aa9ce4f1950e8",
+    "scripts/verify_lean.sh": "5f632a716551ba589da2aa021e753efdcf917f75ea78d2d9e574ce1ff06605b9"
+  }
+}

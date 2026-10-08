@@ -1,0 +1,10 @@
+import Math115.QuadraticCoefficient
+import Math115.GlobalDisplayOwnership
+import Math115.RepairCoefficient
+
+#print axioms Math115.pair_product_le_quarter_square
+#print axioms Math115.pair_product_eq_quarter_square_iff
+#print axioms Math115.GlobalDisplayOwnership.edge_owner_unique
+#print axioms Math115.GlobalDisplayOwnership.edge_prefix_unique
+#print axioms Math115.min_mass_repair_bound
+#print axioms Math115.min_mass_quarter_repair_bound
