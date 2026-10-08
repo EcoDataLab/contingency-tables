@@ -1,0 +1,146 @@
+name: Manual Linux formal verification
+run-name: Linux ${{ inputs.scope }} verification at ${{ github.sha }}
+
+# Deliberately manual: the full closure is expensive, and Comparator must start
+# in a fresh job that has not compiled the submitted proof beforehand.
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: 'focused: refinements; full: original theorem build; comparator: strict sandbox and replay'
+        type: choice
+        required: true
+        default: focused
+        options:
+          - focused
+          - full
+          - comparator
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    env:
+      VERIFY_SCOPE: ${{ inputs.scope }}
+      VERIFICATION_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out the selected commit without retained credentials
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Record the fresh environment and exact source inputs
+        id: environment
+        run: |
+          set -euo pipefail
+          case "$VERIFY_SCOPE" in focused|full|comparator) ;; *) exit 2 ;; esac
+          test "$(id -u)" -ne 0
+          test ! -d formal/.lake
+          mkdir -p .tools/linux-verification
+          python3 - <<'PY'
+          import datetime, hashlib, json, os, pathlib, platform, subprocess
+          root = pathlib.Path.cwd()
+          files = [root / "formal/lakefile.lean", root / "formal/lake-manifest.json", root / "formal/lean-toolchain"]
+          files += sorted((root / "formal").rglob("*.lean"))
+          record = {
+              "started_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+              "repository_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
+              "scope": os.environ["VERIFY_SCOPE"], "run_url": os.environ["VERIFICATION_RUN_URL"],
+              "runner_label": "ubuntu-24.04", "kernel": platform.release(), "machine": platform.machine(),
+              "image_version": os.environ.get("ImageVersion"), "uid": os.getuid(),
+              "mathlib_cache": "official upstream cache trusted; no cross-job proof artifacts restored",
+              "source_sha256": {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
+          }
+          pathlib.Path(".tools/linux-verification/environment.json").write_text(json.dumps(record, indent=2) + "\n")
+          print(json.dumps(record, indent=2))
+          PY
+          df -h .
+
+      - name: Require the actual strict Linux sandbox before downloading proof dependencies
+        id: sandbox
+        if: inputs.scope == 'comparator'
+        timeout-minutes: 5
+        run: |
+          set -euo pipefail
+          scripts/bootstrap_comparator.sh preflight 2>&1 | tee .tools/linux-verification/sandbox-preflight.log
+
+      - name: Install the pinned Lean toolchain and trusted Mathlib cache locally
+        id: bootstrap
+        timeout-minutes: 40
+        run: |
+          set -euo pipefail
+          scripts/bootstrap_lean.sh 2>&1 | tee .tools/linux-verification/bootstrap-lean.log
+          git diff --exit-code -- formal/lakefile.lean formal/lake-manifest.json formal/lean-toolchain
+
+      - name: Build the pinned Comparator, exporter, and strict Landrun adapter
+        id: comparator_tools
+        if: inputs.scope == 'comparator'
+        timeout-minutes: 30
+        run: |
+          set -euo pipefail
+          scripts/bootstrap_comparator.sh bootstrap 2>&1 | tee .tools/linux-verification/bootstrap-comparator.log
+
+      - name: Run the selected verification scope
+        id: verification
+        timeout-minutes: 280
+        run: |
+          set -euo pipefail
+          # Leave time within the six-hour job limit to upload failure evidence.
+          if [[ "$VERIFY_SCOPE" == comparator ]]; then
+            timeout --signal=TERM --kill-after=60s 270m scripts/bootstrap_comparator.sh verify \
+              2>&1 | tee .tools/linux-verification/verification.log
+          else
+            timeout --signal=TERM --kill-after=60s 270m scripts/verify_lean.sh "$VERIFY_SCOPE" \
+              2>&1 | tee .tools/linux-verification/verification.log
+          fi
+          git diff --exit-code -- formal/lakefile.lean formal/lake-manifest.json formal/lean-toolchain
+
+      - name: Record the outcome without upgrading the verification claim
+        if: always()
+        env:
+          ENVIRONMENT_OUTCOME: ${{ steps.environment.outcome }}
+          SANDBOX_OUTCOME: ${{ steps.sandbox.outcome }}
+          BOOTSTRAP_OUTCOME: ${{ steps.bootstrap.outcome }}
+          TOOLS_OUTCOME: ${{ steps.comparator_tools.outcome }}
+          VERIFICATION_OUTCOME: ${{ steps.verification.outcome }}
+        run: |
+          mkdir -p .tools/linux-verification
+          python3 - <<'PY'
+          import datetime, json, os, pathlib
+          scope = os.environ["VERIFY_SCOPE"]
+          steps = {key: os.environ[key] for key in (
+              "ENVIRONMENT_OUTCOME", "SANDBOX_OUTCOME", "BOOTSTRAP_OUTCOME", "TOOLS_OUTCOME", "VERIFICATION_OUTCOME")}
+          passed = steps["VERIFICATION_OUTCOME"] == "success"
+          if scope == "comparator":
+              passed = passed and all(steps[key] == "success" for key in steps)
+          claim = {
+              "focused": "Focused Lean compilation and printed-axiom audit only; no Comparator replay.",
+              "full": "Original theorem-closure Lean compilation and printed-axiom audit only; no Comparator replay.",
+              "comparator": "Original three theorems: strict sandboxed Comparator built-in-kernel replay; Nanoda disabled.",
+          }[scope] if passed else "No successful verification claim for this run; inspect the failing step."
+          result = {"scope": scope, "passed": passed, "claim": claim, "step_outcomes": steps,
+                    "finished_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                    "run_url": os.environ["VERIFICATION_RUN_URL"]}
+          pathlib.Path(".tools/linux-verification/outcome.json").write_text(json.dumps(result, indent=2) + "\n")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as stream:
+              stream.write(f"**{scope}: {'passed' if passed else 'not verified'}**\n\n{claim}\n\n")
+              stream.write("Fresh job; project and dependency source pins retained. Official Mathlib cache is trusted.\n")
+          print(json.dumps(result, indent=2))
+          PY
+
+      - name: Preserve logs and provenance even when a check fails
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: math115-linux-${{ inputs.scope }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: .tools/linux-verification/
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30
