@@ -43,3 +43,4 @@ overview.pdf
 !formal/results/completion-program/*.log
 !formal/results/completion-aggregate/*.log
 !formal/results/completion-physical-bridges/*.log
+!formal/results/linux-focused-895b45c/*.log

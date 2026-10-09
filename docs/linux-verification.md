@@ -184,3 +184,31 @@ This run excludes the six standalone audits, subsequent dense-sampler and
 finite-bit bridges, and strict Comparator replay. The separate
 [Python CI](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963605116)
 passed on Python 3.10, 3.12, and 3.13.
+
+## Completed completion-aggregate Linux build
+
+[Focused run 37991819113](https://github.com/EcoDataLab/contingency-tables/actions/runs/37991819113)
+passed at `895b45c8bcb0ca7f60e7a6b0b91af89b2ac7c566` on 9 October 2026 UTC.
+The fresh job took 26 minutes 54 seconds; the recorded verification block took 24 minutes
+49 seconds. All **863 selected focused declarations** passed the exact ordered
+standard-axiom audit. The [saved receipt](../formal/results/linux-focused-895b45c/verification.json)
+matches **111 environment-recorded source hashes** to that exact commit.
+The source inventory includes saved evidence and separately audited modules;
+it does not assert that every recorded file was compiled by this focused run.
+
+The original downloaded artifact archive matches GitHub's reported SHA-256,
+`a5fd4bf10ba3ef65ee26f58a6bb11c67bc7b556b2a05cc6786d4ac3824821493`.
+The receipt binds the authenticated run, job, and artifact metadata to those
+archive bytes. Original environment, outcome, bootstrap, and verification
+files are retained alongside the exact committed audit driver and extracted
+audit reports. The separate normalized bootstrap log replaces each of 69
+bare carriage returns with a newline, preserving every progress segment;
+the original bytes and both hashes remain recorded. The proof log requires
+no such transformation.
+
+This rebuild used a fresh project closure on Ubuntu 24.04 and trusted the
+official Mathlib cache. It excludes the six standalone declarations, the
+separately published 46 encoded-program and 193 physical-bridge audits, the
+full original three-export audit, and strict Comparator replay. It supplies
+independent compilation evidence for the expanded completion aggregate,
+without adding a whole-sampler runtime or practical-performance claim.

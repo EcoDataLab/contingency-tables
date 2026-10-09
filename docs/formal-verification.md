@@ -11,7 +11,7 @@ all-state physical oracle. The encoded completion routine also has exact
 output semantics and polynomial charged cost in supplied input. Concrete encoded outer-program identification,
 complete sampler runtime, and secure Comparator verification remain open.
 
-The current [completion aggregate](../formal/results/completion-aggregate/verification.json) passed **869 named declaration audits: 863 focused plus six standalone**. It adds 231 previously isolated declarations across nine modules to the default focused target. The 46 declarations of `CompletionSamplerProgram` and `CompletionSamplerSemantics` remain separately audited and excluded. Aggregate compilation and audits reused validated dependency objects; this is not a fresh dependency-closure rebuild. All selected declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. No fresh Linux or Comparator result is claimed for this expanded aggregate.
+The current [completion aggregate](../formal/results/completion-aggregate/verification.json) passed **869 named declaration audits: 863 focused plus six standalone**. It adds 231 previously isolated declarations across nine modules to the default focused target. The 46 declarations of `CompletionSamplerProgram` and `CompletionSamplerSemantics` remain separately audited and excluded. Aggregate compilation and audits reused validated dependency objects; this is not a fresh dependency-closure rebuild. All selected declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. A subsequent [fresh Linux project build](../formal/results/linux-focused-895b45c/verification.json) passed all 863 focused audits at `895b45c`, with 111 recorded source hashes checked against that exact commit. It trusts the official Mathlib cache and excludes the six standalone and 46+193 isolated audits. Strict Comparator verification remains open.
 
 The [Boolean codec/retry module](completion-boolean-program.md)
 passed 25 declaration audits and six native Lean evaluations after checkpoint
@@ -423,6 +423,7 @@ Those integrated checks use existing compiled dependency outputs. This is
 
 | Check | Outcome | Evidence |
 |---|---|---|
+| Independent completion-aggregate Linux build | Fresh focused project build and all 863 focused audits passed at `895b45c`; 111 recorded source hashes match that commit; excludes standalone and isolated audits | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37991819113) and [receipt](../formal/results/linux-focused-895b45c/verification.json) |
 | Checkpoint 8 aggregate | `Math115.lean` compiled; both axiom audits passed | [Eighth-checkpoint log](../formal/results/eighth-checkpoint.log) |
 | Checkpoint 8 dependency inventory | 228 source modules: 178 unchanged upstream and 50 local; 50 trusted external import entries | [Verification scope](../formal/results/verification.json) and [source provenance](../formal/results/provenance.json) |
 | Checkpoint 8 focused audit | 632 selected declarations passed | [Eighth-checkpoint log](../formal/results/eighth-checkpoint.log) |

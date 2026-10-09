@@ -1,0 +1,14 @@
+{
+  "scope": "focused",
+  "passed": true,
+  "claim": "Focused Lean compilation and printed-axiom audit only; no Comparator replay.",
+  "step_outcomes": {
+    "ENVIRONMENT_OUTCOME": "success",
+    "SANDBOX_OUTCOME": "skipped",
+    "BOOTSTRAP_OUTCOME": "success",
+    "TOOLS_OUTCOME": "skipped",
+    "VERIFICATION_OUTCOME": "success"
+  },
+  "finished_utc": "2026-10-09T21:37:35.571315+00:00",
+  "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37991819113"
+}

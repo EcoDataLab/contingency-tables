@@ -1,6 +1,6 @@
 # Research status
 
-Updated October 9, 2026 UTC — completion aggregate with 863 focused and six standalone audits; 46 encoded-program and 193 physical-bridge audits remain isolated.
+Updated October 9, 2026 UTC — completion aggregate with 863 focused and six standalone audits; fresh Linux replication of the 863 focused audits passed. The 46 encoded-program and 193 physical-bridge audits remain isolated.
 
 The main ideal-chain bound is now **`80,000d¹⁷`**, for all ordinary equal-total margins, with automatic choice of the reference-completion or empty-block unit branch. Here `d=10+(m+1)(n+1)`. The [completion-oracle formalization](completion-oracle-formalization.md) proves the full finite-table preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at the smaller outer scales. The new [dense completion family](completion-dense-law.md) discharges its fine-law accuracy premise using the pinned canonical sampler, assembles the all-state physical oracle, and proves the resulting normalized outer-law error. Finite-bit outer-program identification and complete machine runtime remain open. All upstream comparisons use `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; the preserved [initial review](../115/115-contingency-tables-review.md) is unchanged.
 
@@ -62,7 +62,7 @@ Uniform aggregate tables and conditional individual assignments are different la
 
 ## Verification and remaining work
 
-The current [completion aggregate](../formal/results/completion-aggregate/verification.json) passed **869 named declaration audits: 863 focused and six standalone**. The default focused target now includes the nine previously isolated modules for Boolean retries, binary-list decoding, schedule and bit arithmetic, input-size bounds, and dense physical completions, totaling 231 declarations. Compilation and audits reused validated dependency objects; this was not a fresh dependency-closure rebuild. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. The 46 encoded completion-program declarations remain isolated and excluded from these counts. Fresh Linux verification of the expanded aggregate and strict Comparator replay remain pending.
+The current [completion aggregate](../formal/results/completion-aggregate/verification.json) passed **869 named declaration audits: 863 focused and six standalone**. The default focused target now includes the nine previously isolated modules for Boolean retries, binary-list decoding, schedule and bit arithmetic, input-size bounds, and dense physical completions, totaling 231 declarations. Compilation and audits reused validated dependency objects; this was not a fresh dependency-closure rebuild. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. The 46 encoded completion-program declarations remain isolated and excluded from these counts. A subsequent fresh Linux project build passed all 863 focused audits at `895b45c`, as recorded below. Strict Comparator replay remains unverified.
 
 The [Boolean codec/retry module](completion-boolean-program.md) has
 passed direct local compilation, 25 standard-axiom declaration audits, six
@@ -161,11 +161,13 @@ The seventh checkpoint is published at `5b3703234e7f6cd88e6b6f6b3dab85510ba4366f
 
 The eighth checkpoint is published at `0aa5a61140712ada44893b03d805a756e0e9823a`; its [three-version Python CI](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963605116) passed. The fresh [focused Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963647335) passed at that exact commit in 14 minutes 9 seconds. The [saved receipt](../formal/results/linux-focused-0aa5a61/verification.json) checks all 632 focused audits and matches 73 environment-recorded source hashes to that commit. It excludes the six standalone audits, later additions, and strict Comparator replay. The source/document review snapshots belong to the proof commit; publication updates change status metadata separately.
 
+The expanded [focused Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37991819113) passed at `895b45c8bcb0ca7f60e7a6b0b91af89b2ac7c566`. The job took 26 minutes 54 seconds, including 24 minutes 49 seconds for verification. Its [receipt](../formal/results/linux-focused-895b45c/verification.json) independently checks all 863 ordered audits and matches 111 recorded source hashes to that exact commit. The downloaded artifact bytes match GitHub's SHA-256 digest; original logs and a lossless bootstrap-progress normalization are retained. The project closure was rebuilt on Linux, with the official Mathlib cache trusted. The run excludes the six standalone audits, the isolated 46+193 declarations, the full original three-export audit, and strict Comparator replay.
+
 Next work:
 
 1. Identify the actual Boolean transition step and complete outer walk with the verified proposal and physical completion laws.
 2. Identify initialization and the proved schedule with finite-bit programs; compose reserved-bit, completion, and outer-walk costs in the fresh-bit public machine. The complete runtime exponent remains open.
-3. Reproduce the new oracle additions on Linux and complete strict Comparator replay on an environment meeting its sandbox requirements.
+3. Integrate and reproduce the remaining isolated program proofs on Linux, then complete strict Comparator replay on an environment meeting its sandbox requirements.
 4. Close the gap between the free-cutoff `U⁴` upper allowance and the explicit `Ω(U²)` chain obstruction, or improve the transition rule with a justified target law and cost.
 5. Expand same-law tests to application-scale methods, including all setup and tuning costs. Empirical competitiveness of the complete #115 sampler remains unknown.
 
