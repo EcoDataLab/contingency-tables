@@ -135,10 +135,16 @@ the canonical table reindexing, rational dyadic conversion, pinned analytic
 premise discharge, and all-state physical `OracleFamily` assembly. It also
 handles the unique-completion branches and normalized outer error law.
 
+The [46-declaration encoded completion checkpoint](completion-sampler-program.md)
+now composes the dense realizer, binary-list decoder and Boolean retries.
+It proves exact whole-word and prefix output semantics, computes its own
+coarse fallback, and bounds charged execution plus output weight in the
+complete supplied input.
+
 1. Identify computed large-row/column lists and reference indices with the
    noncomputable reindexing used by the proved probability laws.
-2. Compose the binary-list decoder, Boolean retries and dense realizer,
-   then identify the complete encoded outer walk and fresh random segments.
+2. Identify the complete encoded outer walk and its fresh random segments
+   with the proved transition and terminal laws.
 3. Charge the reserved bits, arithmetic, dense calls and outer walk in the
    literal public random-machine model.
 

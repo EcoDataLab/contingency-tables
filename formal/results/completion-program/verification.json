@@ -1,0 +1,626 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T20:47:02.682924+00:00",
+  "module_count": 2,
+  "total_audited_declarations": 46,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "compiler_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+  "lake_sha256": "9780a6abfb6d751c7958f2fd7f696154bdda8b46c0de9755c4080ffb8a8788e6",
+  "platform": "Native Windows x86_64-w64-windows-gnu on Thor",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_checkout_base_commit": "b021f227a21c7e9252eae78c55ab09c404cc66cd",
+  "source_freeze": {
+    "formal/Math115/CompletionSamplerProgram.lean": "b2f2dd678bff288d8298ea267adac03da78d458ec89d934c2bb7c5fe6c109e42",
+    "formal/Math115/CompletionSamplerSemantics.lean": "0cf2fc168303f1dde8ff0cba7aacfe6f650acc20f87218dbd8c9ae11bcc787c7"
+  },
+  "method": "Program reused its hash-verified successful origin compile; Semantics compiled freshly. Both received fresh direct Lean named axiom audits. No new compiler invocation was performed during public packaging.",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "strict_audit_method": "Frozen checker requires exactly one report per requested declaration in order, permits only the standard three axioms, and rejects any additional compiler output.",
+  "strict_checker_sha256": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+  "modules": [
+    {
+      "module": "Math115.CompletionSamplerProgram",
+      "namespace": "Math115.CompletionSamplerProgram",
+      "source": "formal/Math115/CompletionSamplerProgram.lean",
+      "source_snapshot": "CompletionSamplerProgram-Source.lean",
+      "source_sha256": "b2f2dd678bff288d8298ea267adac03da78d458ec89d934c2bb7c5fe6c109e42",
+      "olean_sha256": "ed4a49097d4a688867797b4ae92efecb631299320a5bb5eb9a491c41278353e1",
+      "ilean_sha256": "46b64e9b1de2fca43d9cd3123f36c63f2d6d0672f8b749ac6244b158b6bd2d93",
+      "ilean_evidence": "Successful origin compile receipt attestation; the Program ilean artifact is not in the authenticated component archive.",
+      "closure_sha256": "2eab64425c73350e2c8a9ee2d7cba30c8af2b2c11416a20f865aae1b2d193503",
+      "direct_imports": [
+        "Init",
+        "Math115.LatticeCompletionProgram",
+        "OAI.Combinatorics.ContingencyTables.Dense.DenseReservedWord",
+        "OAI.Combinatorics.ContingencyTables.Machines.FirstSuccessProgram",
+        "OAI.Combinatorics.ContingencyTables.Machines.BooleanChunkProgram"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.LatticeCompletionProgram": "1160621ce0bba55cccc0cee0ab7beac443af6f577131a09b7c597f2be4cc1adb",
+        "OAI.Combinatorics.ContingencyTables.Dense.DenseReservedWord": "e8cb80c424815d7a7c26c88b87597e83f01e6bfca05509f41bdf59976a4a4e8e",
+        "OAI.Combinatorics.ContingencyTables.Machines.FirstSuccessProgram": "892f6d72ff9bb0476596b73e7d7209c5c22db8987197795f4af59d6e05cea3ea",
+        "OAI.Combinatorics.ContingencyTables.Machines.BooleanChunkProgram": "c1ee0954f94c9bbabeaaa83dcbedc0831c97d21a07cdc041412ce2b9dd494bf5"
+      },
+      "dependency_olean_sha256": {
+        "Math115.LatticeCompletionProgram": "cd1af795511710e0d496e75c221ebd54f9e8e17c7212e92d143a8ce460255d01",
+        "OAI.Combinatorics.ContingencyTables.Dense.DenseReservedWord": "007fafc3fd50f6fbb0e48b16fc209282231971966a98b98dcca0a5f8c09c45d6",
+        "OAI.Combinatorics.ContingencyTables.Machines.BooleanChunkProgram": "e66f0994bbdf3f7655f36a97aca3b8b8c9541d35517daf36b8a216bfd813119f",
+        "OAI.Combinatorics.ContingencyTables.Machines.FirstSuccessProgram": "8f0420f17fa2993f5cb3a7a8f481735a3e33d14931eb50775560f3ff91d498fa"
+      },
+      "declaration_count": 32,
+      "declarations": [
+        {
+          "name": "Math115.CompletionSamplerProgram.Parameters",
+          "axioms": []
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.InnerParameters",
+          "axioms": []
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.retriesRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_retries",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.precisionRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_precision",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.powerTwelveRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_powerTwelve",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.dilateEntry",
+          "axioms": []
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.dilateEntryRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_dilateEntry",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.dilateList",
+          "axioms": []
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.dilateListRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_dilateList",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.prepare",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.prepareRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_prepare",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.trial",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.trialRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_trial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.wordWidth",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.wordWidthRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_wordWidth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.bitCount",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.bitCountRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_bitCount",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.reservedWords",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.reservedWordsRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_reservedWords",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.draw",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.drawRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_draw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": true,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<origin-workspace>/formal",
+          "-o",
+          "<origin-build>/attempts/Math115.CompletionSamplerProgram/648989f08e484d398b2bedb869cb62c9/module.olean",
+          "-i",
+          "<origin-build>/attempts/Math115.CompletionSamplerProgram/648989f08e484d398b2bedb869cb62c9/module.ilean",
+          "<origin-workspace>/formal/Math115/CompletionSamplerProgram.lean"
+        ],
+        "original_compile_receipt_sha256": "8070a2ebc2fdbf9c873e482a00eeb8ca218a6a9a8661537c0a3f9e493f4c95a0",
+        "log": "CompletionSamplerProgram-compile.log",
+        "log_kind": "cache_reuse_marker",
+        "published_log_sha256": "178fa90f9d5addaecb6e526068e97f96b554f98ec3347b1cbce205cb567ecfe5",
+        "original_native_log_sha256": "05f06b9607c89f24462d31f00d5f3dd10ef23aeeefceb86f4a50a78b4776f526",
+        "log_sanitization": [
+          {
+            "kind": "private_path_prefix_replacement",
+            "replacement": "<build>",
+            "count": 1
+          }
+        ],
+        "reuse_registered_at_utc": "2026-10-09T20:14:33.998999+00:00",
+        "origin_compile": {
+          "started_at_utc": "2026-10-09T20:06:28.088303+00:00",
+          "completed_at_utc": "2026-10-09T20:07:12.211530+00:00",
+          "elapsed_seconds": 44.12290939997183,
+          "exit_code": 0,
+          "source_unchanged": true,
+          "reused": false,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "origin_compile_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<origin-workspace>/formal",
+          "-o",
+          "<origin-build>/attempts/Math115.CompletionSamplerProgram/648989f08e484d398b2bedb869cb62c9/module.olean",
+          "-i",
+          "<origin-build>/attempts/Math115.CompletionSamplerProgram/648989f08e484d398b2bedb869cb62c9/module.ilean",
+          "<origin-workspace>/formal/Math115/CompletionSamplerProgram.lean"
+        ],
+        "origin_receipt_evidence": "Selected successful origin record in authenticated bootstrap manifest; original empty compiler log digest is attested by this record, not published as an independently delivered raw log.",
+        "bootstrap_manifest_sha256": "2e9d4bcfac142f874be9d9e177bfbcbc991b152e4009b98b34cf6933c2c7b2b0",
+        "reuse_marker_note": "This delivered log records cache reuse, not a new compiler invocation. The batch4 receipt inherits origin start time and duration; its completion timestamp registers reuse."
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "invocation_attempted": true,
+        "started_at_utc": "2026-10-09T20:24:57.525243+00:00",
+        "completed_at_utc": "2026-10-09T20:25:25.219775+00:00",
+        "elapsed_seconds": 27.68871310004033,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<audit-drivers>",
+          "<audit-drivers>/Audit_CompletionSamplerProgram.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<packages>/LeanSearchClient/.lake/build/lib/lean;<packages>/Qq/.lake/build/lib/lean;<packages>/aesop/.lake/build/lib/lean;<packages>/batteries/.lake/build/lib/lean;<packages>/importGraph/.lake/build/lib/lean;<packages>/mathlib/.lake/build/lib/lean;<packages>/plausible/.lake/build/lib/lean;<packages>/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "CompletionSamplerProgram-AxiomCheck.lean",
+        "driver_sha256": "1a6a5e82239ec0e8374c2410b328eb1a5761986e017276f26b03596c3f7326a8",
+        "log": "CompletionSamplerProgram-axiom-audit.log",
+        "log_sha256": "dcc66ccb1ed3f15d145d7e4b9f7dcf610820f2bfd621553ff503d6f601be7169",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "371296c93339cc0a29ce2553ed7e9600d9ba75a73702bd98d975faf76516d5e8",
+        "checks": {
+          "strict_named_report_count": 32,
+          "reports_exact_name_order": true,
+          "no_extra_compiler_output": true,
+          "only_standard_axioms": true,
+          "no_sorryAx": true,
+          "expected_before_after_snapshots_identical": true,
+          "input_snapshot_entry_count": 1059,
+          "original_input_snapshot_canonical_json_sha256": "f832713b3554d4a99c849bf70128e72ae5bbd73486acf483e5d28ce4451b617f",
+          "original_completed_record_sha256": "9e4f024c0cdbf97368dab2deace725e9675547df95dee9c8a1b98e9bc424ec19"
+        }
+      }
+    },
+    {
+      "module": "Math115.CompletionSamplerSemantics",
+      "namespace": "Math115.CompletionSamplerSemantics",
+      "source": "formal/Math115/CompletionSamplerSemantics.lean",
+      "source_snapshot": "CompletionSamplerSemantics-Source.lean",
+      "source_sha256": "0cf2fc168303f1dde8ff0cba7aacfe6f650acc20f87218dbd8c9ae11bcc787c7",
+      "olean_sha256": "d0920372c346c5b7479fe85d496bf850121bbfe7eb9fb4281a1dfe7a5168c592",
+      "ilean_sha256": "94d2d1dfcd0176ad40558e711cf313be328d2a5b8bdc65125b971c7bc59b53ad",
+      "ilean_evidence": "Rehashed delivered native artifact; binary not copied into public bundle.",
+      "closure_sha256": "f0d37414b216ee1431a8514fce69e40194030b4321e4aa9b5d3741479ab4e4f2",
+      "direct_imports": [
+        "Init",
+        "Math115.CompletionSamplerProgram",
+        "Math115.DenseLatticeCompletionProvedInputs"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.CompletionSamplerProgram": "b2f2dd678bff288d8298ea267adac03da78d458ec89d934c2bb7c5fe6c109e42",
+        "Math115.DenseLatticeCompletionProvedInputs": "907f8d4426a19404b1f4fed5fc37296cc8506f2b91306c7b47f10b55f5016941"
+      },
+      "dependency_olean_sha256": {
+        "Math115.CompletionSamplerProgram": "ed4a49097d4a688867797b4ae92efecb631299320a5bb5eb9a491c41278353e1",
+        "Math115.DenseLatticeCompletionProvedInputs": "c108e37662c1f555825847fe44a0492a786973a1a68fd982830f2b71bb8b5583"
+      },
+      "declaration_count": 14,
+      "declarations": [
+        {
+          "name": "Math115.CompletionSamplerSemantics.parameters",
+          "axioms": []
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.prepare_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.wordWidth_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.bitCount_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.trial_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.reservedWords_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.greedyFallback_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.programTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.draw_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.draw_prefix_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.padded_programTable_law",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.programTable_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.padded_programTable_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.draw_semantics",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": false,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<workspace>/formal",
+          "-o",
+          "<build>/attempts/Math115.CompletionSamplerSemantics/4338f1d35719483883383f10044c0913/module.olean",
+          "-i",
+          "<build>/attempts/Math115.CompletionSamplerSemantics/4338f1d35719483883383f10044c0913/module.ilean",
+          "<workspace>/formal/Math115/CompletionSamplerSemantics.lean"
+        ],
+        "original_compile_receipt_sha256": "26cae34c265f4373b64a35c7942402954dc464dfb29505df159b73cc9e4f402e",
+        "log": "CompletionSamplerSemantics-compile.log",
+        "log_kind": "native_compiler_stdout_stderr",
+        "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "original_native_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "log_sanitization": [],
+        "started_at_utc": "2026-10-09T20:14:35.615144+00:00",
+        "completed_at_utc": "2026-10-09T20:15:06.389970+00:00",
+        "elapsed_seconds": 30.774590499990154
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "invocation_attempted": true,
+        "started_at_utc": "2026-10-09T20:25:10.184908+00:00",
+        "completed_at_utc": "2026-10-09T20:25:37.463439+00:00",
+        "elapsed_seconds": 27.273338600003626,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<audit-drivers>",
+          "<audit-drivers>/Audit_CompletionSamplerSemantics.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<packages>/LeanSearchClient/.lake/build/lib/lean;<packages>/Qq/.lake/build/lib/lean;<packages>/aesop/.lake/build/lib/lean;<packages>/batteries/.lake/build/lib/lean;<packages>/importGraph/.lake/build/lib/lean;<packages>/mathlib/.lake/build/lib/lean;<packages>/plausible/.lake/build/lib/lean;<packages>/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "CompletionSamplerSemantics-AxiomCheck.lean",
+        "driver_sha256": "82c6dd053dadbbeae2e835bd2d8e54b39df17ce4aad6a860d4b77de2f6b75b2e",
+        "log": "CompletionSamplerSemantics-axiom-audit.log",
+        "log_sha256": "636ae76d8fd3922853357b82de6f45fa17eeb0c7426136ba5348baab381575ad",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "f99c843fcbc264b86f4ed7e88d28eb7adb2ebad67c4fbfb05361b87e3fd89282",
+        "checks": {
+          "strict_named_report_count": 14,
+          "reports_exact_name_order": true,
+          "no_extra_compiler_output": true,
+          "only_standard_axioms": true,
+          "no_sorryAx": true,
+          "expected_before_after_snapshots_identical": true,
+          "input_snapshot_entry_count": 1089,
+          "original_input_snapshot_canonical_json_sha256": "d71442d6b30e0a2c532fe8294bc9599a7d46344c7ff0abfcb9f9a5a9a1a0052d",
+          "original_completed_record_sha256": "0878f5cf972ede0de7ed186b4d0897149b1dc33ec51d25e45a0cf923eb91bad0"
+        }
+      }
+    }
+  ],
+  "runtime_provenance": "runtime-provenance.json",
+  "independent_review": "source-review.json",
+  "original_archive_sha256": "4b7d428ab30a507c5fdb74d5d9709de72927183afe1d9c1de1bf64372d62254a",
+  "original_archive_manifest_sha256": "b71a35042d6c8723d43650557dac599bbca722676688e805e0ead2c5ec4db395",
+  "scope": "Actual encoded completion draw, signed lattice decoder and bounded retry, with exact whole/prefix word identities and accuracy under explicit valid-table dimension and strong-margin hypotheses.",
+  "representation_boundary": "Pointwise MatrixCode equality is proved; variation is stated on the finite Table type, without a Fintype instance on infinite list-matrix codes.",
+  "cost_boundary": "Polynomial charged tree execution cost plus encoded output weight in the complete encoded input, including the supplied Boolean list. No bank-generation cost, final public runtime exponent, measured speed or early-stop savings.",
+  "compile_warning_count": 0,
+  "compile_log_boundary": "Program origin stdout/stderr is empty by authenticated successful receipt; its delivered final-batch log is a reuse marker. Semantics delivered compiler stdout/stderr is empty.",
+  "surrounding_build_boundary": "The surrounding native build contained failed or blocked drafts. This selected checkpoint does not certify whole-build success or other component sources.",
+  "excluded_from_checkpoint": [
+    "Computed physical list-order bridge",
+    "Profile or unit walk",
+    "Terminal reconstruction",
+    "Outer retry/schedule assembly",
+    "Public RandomMachine and public parser/printer cost",
+    "Git publication and aggregate audit counts"
+  ],
+  "artifacts_sha256": {
+    "CompletionSamplerProgram-AxiomCheck.lean": "1a6a5e82239ec0e8374c2410b328eb1a5761986e017276f26b03596c3f7326a8",
+    "CompletionSamplerProgram-Source.lean": "b2f2dd678bff288d8298ea267adac03da78d458ec89d934c2bb7c5fe6c109e42",
+    "CompletionSamplerProgram-axiom-audit.log": "dcc66ccb1ed3f15d145d7e4b9f7dcf610820f2bfd621553ff503d6f601be7169",
+    "CompletionSamplerProgram-compile.log": "178fa90f9d5addaecb6e526068e97f96b554f98ec3347b1cbce205cb567ecfe5",
+    "CompletionSamplerSemantics-AxiomCheck.lean": "82c6dd053dadbbeae2e835bd2d8e54b39df17ce4aad6a860d4b77de2f6b75b2e",
+    "CompletionSamplerSemantics-Source.lean": "0cf2fc168303f1dde8ff0cba7aacfe6f650acc20f87218dbd8c9ae11bcc787c7",
+    "CompletionSamplerSemantics-axiom-audit.log": "636ae76d8fd3922853357b82de6f45fa17eeb0c7426136ba5348baab381575ad",
+    "CompletionSamplerSemantics-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime-provenance.json": "f7e31ceba151a6b6a2a70d430b40106e43d072b5e066802d1e36633dd2311099",
+    "source-review.json": "afd0c818876963e0922b6da5565b5d02da65b3937888dbac8de56da57bb9402b"
+  },
+  "guide": {
+    "path": "../../../docs/completion-sampler-program.md",
+    "sha256": "abff24687ad58b516cf0ff197aba93184a0955e649a99d778453b3e849ed32a1"
+  }
+}

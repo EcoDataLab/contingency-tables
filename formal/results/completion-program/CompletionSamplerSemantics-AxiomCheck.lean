@@ -1,0 +1,15 @@
+import Math115.CompletionSamplerSemantics
+#print axioms Math115.CompletionSamplerSemantics.parameters
+#print axioms Math115.CompletionSamplerSemantics.prepare_code
+#print axioms Math115.CompletionSamplerSemantics.wordWidth_code
+#print axioms Math115.CompletionSamplerSemantics.bitCount_code
+#print axioms Math115.CompletionSamplerSemantics.trial_code
+#print axioms Math115.CompletionSamplerSemantics.reservedWords_code
+#print axioms Math115.CompletionSamplerSemantics.greedyFallback_code
+#print axioms Math115.CompletionSamplerSemantics.programTable
+#print axioms Math115.CompletionSamplerSemantics.draw_code
+#print axioms Math115.CompletionSamplerSemantics.draw_prefix_code
+#print axioms Math115.CompletionSamplerSemantics.padded_programTable_law
+#print axioms Math115.CompletionSamplerSemantics.programTable_variation
+#print axioms Math115.CompletionSamplerSemantics.padded_programTable_variation
+#print axioms Math115.CompletionSamplerSemantics.draw_semantics

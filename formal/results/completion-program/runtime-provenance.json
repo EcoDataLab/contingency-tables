@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "method": "Authenticated native Windows direct pinned Lean compile and fresh named axiom audits; no lake build.",
+  "prepared_at_utc": "2026-10-09T20:47:02.682924+00:00",
+  "compiler_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+  "lake_sha256": "9780a6abfb6d751c7958f2fd7f696154bdda8b46c0de9755c4080ffb8a8788e6",
+  "source_checkout_base_commit": "b021f227a21c7e9252eae78c55ab09c404cc66cd",
+  "package_revisions": {
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5"
+  },
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "archive_sha256": "4b7d428ab30a507c5fdb74d5d9709de72927183afe1d9c1de1bf64372d62254a",
+  "archive_entry_count": 123,
+  "manifested_artifact_count": 122,
+  "all_manifested_archive_bytes_rehashed": true,
+  "original_archive_manifest_sha256": "b71a35042d6c8723d43650557dac599bbca722676688e805e0ead2c5ec4db395",
+  "original_build_environment_sha256": "6ab0a717aa9bd826b9730451bf07863c00ca0e912736e05216d3ddf6f60d942c",
+  "original_frozen_build_environment_sha256": "1b4273bbd7ce1edbe9bb8d9eaba02c2b5e3beec1596163c43e70a0d2f6bce16d",
+  "original_frozen_build_plan_sha256": "68c0965492b88c9880d8e9e91a435615f23c067651498f0f657560fdef0c9695",
+  "original_runtime_plan_sha256": "a4607d1ea87996a6720245c9e055bbc71e1dcc3c4326a37a1e73f487f39b3517",
+  "original_frozen_audit_context_sha256": "6e2e63f3d4acaa6d14a874d2026f8c7519ab3b31d465ea8b5a56d0d5c5600a29",
+  "original_bootstrap_manifest_sha256": "2e9d4bcfac142f874be9d9e177bfbcbc991b152e4009b98b34cf6933c2c7b2b0",
+  "native_build_driver_sha256": "b235f69465cc1eb938b78d276e0751624a3550d9ee9e5b4b7178613a3071b37b",
+  "strict_checker_sha256": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+  "original_audit_watcher_sha256": "65f55fb38406b5fb2cd839b716d002dd639df750ae5428b08e3236538d5b9404",
+  "trusted_external_objects": {
+    "Init": {
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Lean.Elab.Tactic.Omega": {
+      "sha256": "7f58793e49ecdb4e6406a4f1579f508f115cbfb7d339600277716fa4127e64e0",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib": {
+      "sha256": "065be85a86482547d3349f913e9aedc228bd81c651937d0a7e0550a112ef94fc",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.BigOperators.Field": {
+      "sha256": "3fb12bb39219861b6d8151d8e571b64b1d841264217e0b13094d498bb2174813",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.BigOperators.Fin": {
+      "sha256": "beffc6565902630cc3603b2fa9a45fe22d6136d366b9bd9736beeff736bacda9",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.BigOperators.Group.Finset.Basic": {
+      "sha256": "5ea4cfa15d460fb3df56f390b461aa7412a62c7a4941a3a89d7d06df5f38c4d9",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.BigOperators.Group.Finset.Pi": {
+      "sha256": "899b17d04ba6fb6733a6cc6b0feda9e042e75d30799d6f1a615724ddb27d8a62",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise": {
+      "sha256": "e8513efcd1f6d34bde6737e82d961bcde2a33e436a6028f79532f3cb5aeca312",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.BigOperators.GroupWithZero.Finset": {
+      "sha256": "22baaea5854d70f2ee911012f0f8398aaa87b828c5928cd22d81702ecc8a99d5",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.BigOperators.Intervals": {
+      "sha256": "4502f3556d02345f32620ff4524f40a35e4b1f9e37a4e425a7f330501f6b4ad0",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.BigOperators.Ring.Finset": {
+      "sha256": "461ea90da5b2f88be1d114dac7f7d23de296aa4ba529e3b55380dbcf2277fad8",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.Group.Pointwise.Set.Scalar": {
+      "sha256": "3529be8e36c34b652a558815320abc04f9587f41ecb045e28b3611fbae63d3e3",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.Order.BigOperators.Group.Finset": {
+      "sha256": "2a0b6e659009651c2d1aa5fe860539707d2c1732f403845147cf4073d056673c",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset": {
+      "sha256": "29a686966fd9d517cd850bc0806ad3e16ecdecf1fa51f53ad4016e0a79a20218",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.Order.BigOperators.Ring.Finset": {
+      "sha256": "4e66c01a7aa9090bdc756fe055fb7dee07fc9297866a92e038a4f092dce6f956",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.Order.Field.Basic": {
+      "sha256": "c286f2536db31c7d4f1248c33056a5e1e1ced2bd97053efb56f6dc0487cedb4f",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.Order.Field.GeomSum": {
+      "sha256": "cf92e25a5d98e38aaa9cf0db426b7a3f93ffa8608c3419f860cd3bb74744fe23",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.Order.Floor.Ring": {
+      "sha256": "6b81f99ba125912ce9f64fb29c37d8473ea5c930e57ca653b1e95fb6ab1629a7",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.Order.Floor.Semifield": {
+      "sha256": "372fd5866813c96f2ca583e4c5005420d3c9cef27d7080d98f8123d99a8f842e",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Algebra.Order.Ring.Abs": {
+      "sha256": "1612e1b11b01ca6b22b55c8cebd8108845adcd78f4b04a93df4f153df3cbeea3",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Analysis.Convex.Basic": {
+      "sha256": "519f9c01b21a388fe4f5222cbc23ad932b985e7c8adc94fb0a6e13d4e2629277",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Analysis.Convex.Function": {
+      "sha256": "f44d1e10f21be0721e74d393a28ab5fdacb1d9fce4133ecbe4822076f943830d",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Analysis.InnerProductSpace.EuclideanDist": {
+      "sha256": "b7731526a1b43f95212d01b8e9cbf246d693520026d193750cc9806d5f54c050",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Analysis.MeanInequalities": {
+      "sha256": "70cadea93cc44067b6628d36dc0ad06eb0f937430d5213f34234ec1cfdf5e2df",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Analysis.Real.Sqrt": {
+      "sha256": "21ac690317f99521c969009314c2235b32ae3f9e2bffe05e3526fe91063540b3",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Analysis.SpecialFunctions.Exp": {
+      "sha256": "6cf6b3c5d471b5d23f1d8d3787454cebe31fab864a7834ec76fb4e96de2ae310",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Analysis.SpecialFunctions.Log.Basic": {
+      "sha256": "b5e6f29c201a62428e3acdeee42aa5292a431d7c01f4c5e8e0f77f3b313ad5fc",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics": {
+      "sha256": "ef1c1c8ef19cb27f6160713deebe9c40bdac36080741105c0ed9e1a381d95097",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Analysis.SpecialFunctions.Pow.Continuity": {
+      "sha256": "e9cee5aca2d920f969ed5b7d108400db837df5240b2cb8d32f959a2ed1bd64fb",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Analysis.SpecialFunctions.Pow.Real": {
+      "sha256": "863667dea1fd13a2b76b34c8971a7020a8d45158d0506aa75983dc05e057c02d",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Basic.Real.Basic": {
+      "sha256": "8b978f5d5394b775791d41cd7b519779652b140a0ef13920e7971a7d904937e6",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Fin.Tuple.Basic": {
+      "sha256": "3401cd026447514de8b674e9fde2d1f5d88e50a78ea7a763f398ad923f4bfbb2",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Finset.Basic": {
+      "sha256": "dc7f3a9e7c1d42d4368df52f6cfb6633060ae91a224e29e373d025490a8dad8c",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Finset.Lattice.Fold": {
+      "sha256": "32425599d1e7e638b415f05ec3edde107858fe59702665c0f9f4bff6297f4b0a",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Finset.Max": {
+      "sha256": "d361715d0956ea2ec20c02e0778d38935d4e87fe34d79f53fc356fd0363e181a",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Finset.Pi": {
+      "sha256": "06b32b8c903e5c37c542d42a18252f57f1e312dc4d02e66421a8b89ee75949d5",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Fintype.Basic": {
+      "sha256": "0c03eabb5f2d930207b0b2e7f3aa282180582cb31c0e3f63586a79482cefa8d0",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Fintype.BigOperators": {
+      "sha256": "e84c0b84943410792a3fbf3b31acb938d9d55568e8f9187acf91188ec556e0b8",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Fintype.Card": {
+      "sha256": "eede1b09aa34b0139ed57873e7b36dbfcef596e2b0eb4eaaee8353ed232a0355",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Fintype.EquivFin": {
+      "sha256": "41e11fcf3d29b9942e77f149d7846063c35c308093af69a6d2b4a1dc280becfb",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Fintype.Fin": {
+      "sha256": "1333cbb6f9eb4af6efb64c6ea6f53a9df4918dd5154b868444dceaea6abfde8a",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Fintype.Pi": {
+      "sha256": "989dde07a8c6da29a1ae20b5752fdee3cbffd5754728d397ef3cfff5ea2c96be",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Fintype.Sort": {
+      "sha256": "cd8ec2f747f71973476ad734d3fa69a0ffb38f5187238f9e1c6c07f702b0b29f",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Fintype.Sum": {
+      "sha256": "7fa7a6c5ed52fd51daabe2c5f13596c63dba326d102d04b64b5057ca24e0147f",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Int.Interval": {
+      "sha256": "2ea51c685333af321548b70f5f11c0cd1e1df28dbdd508f64c01ef4ea539877f",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Int.Lemmas": {
+      "sha256": "4f58d180787dafbfa9111d3dcb56ff60b1c6764da5f7483223583f1c3b06a5c5",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.List.Nodup": {
+      "sha256": "138aa760d8f7a9b6129e11bdafa89ee7a1b13c754857285f73d919b93e94c42e",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.List.NodupEquivFin": {
+      "sha256": "355a2b493c27b6ba08e305ebf4757ad76ac73d4c943698ad4a29eb4546cad2c7",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Nat.Cast.Order.Field": {
+      "sha256": "96aa546b2a86943359a81447cb07f5d24826a69859f8429b38c4d6d4570392ba",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Nat.Dist": {
+      "sha256": "9dd1bfb06030d9b6bd724ed04d93238d84a008307e9d6fa32a6a3243f7b98080",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Nat.Log": {
+      "sha256": "8c48f6c70f8a10b9055a00b85444216db1e483ab051c4733ecf4e59b9b205cc6",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Nat.Size": {
+      "sha256": "84dd5a163efb4344e9af491039f356fb4135dd8f7ebf430f6044cc0589d39faa",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Prod.Lex": {
+      "sha256": "578b2b272192b5e016c0496d6c4021c746883a9c88b3fec301d241d01919373f",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Rat.Cast.Order": {
+      "sha256": "061e89214c1ad83342221e4d32e1ff4102f26b497b537b2266dc7a782aef0c09",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Data.Rat.Floor": {
+      "sha256": "9ee7a1d1a38658a63e4c416414574288f4ca1af70de0ecb7656ed311209e8d68",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.LinearAlgebra.BilinearForm.Basic": {
+      "sha256": "b6ded06a71f39ac747e2cc01bd58a6c12159c4fd817abb28f7fbc61fbe0b8723",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.LinearAlgebra.Matrix.BilinearForm": {
+      "sha256": "8232ae67ea8ce4763539d41357d7d3a5ebe2ebdb2293659d9ac0f7a974f28ef3",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Logic.Equiv.Fin.Basic": {
+      "sha256": "5256e11ee94d5c91366e788838432b9466d51182695c52280caec02000d7cb2b",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Logic.Equiv.Option": {
+      "sha256": "b5e2ef2e17ae6bac465e9466cca84bebb8ec026f30f0eac45cd92510d70438c2",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Logic.Equiv.Set": {
+      "sha256": "7ed567b4d40884a61e92f6d70fa9f9e7f8b0825f60be5cf87fb0aef08fbcd3ba",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.MeasureTheory.Constructions.Pi": {
+      "sha256": "e46f1ccd5b1be9c2688ce1e819e26ba1c27957ae3a557df71b4cbd4f4d326738",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.MeasureTheory.Function.LocallyIntegrable": {
+      "sha256": "9f2aa6c1169eb332794abadbcc77ef8151124cd3062d1ffe9bc253cfae0c9c6f",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.MeasureTheory.Integral.Bochner.Set": {
+      "sha256": "8b068cc6010c1bd37f19cc80ee68ffc6922ef3f7ef35d952ae69d7c0ee54e9f2",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic": {
+      "sha256": "54f36d322d3de468d4a45a06f9dc9ee38cedd87ef69ba1a4d6e79a5fb964f89b",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.MeasureTheory.Integral.Layercake": {
+      "sha256": "2c905308260e40ecd36ee72f998ad9fb163561390bfbbdb0680dc34414f9ef03",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.MeasureTheory.Integral.Lebesgue.Basic": {
+      "sha256": "427332f288c7b359f913718bcae6c43f6c745955024631d40a72315d32aeb891",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.MeasureTheory.Measure.Lebesgue.Basic": {
+      "sha256": "9a8f1b587ce8b9e04cb227c9c536acab18106332a5c478e9babfe50ccb9991e6",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar": {
+      "sha256": "175823753386a02b9e56227473d150b395b2e9eb50890dcc43a0cf3c0bf582fe",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Order.Interval.Finset.Nat": {
+      "sha256": "3d35194e4babe298d07700dac0e19610f1c9088f7d079aa42ca9f52477af0bbb",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.SetTheory.Cardinal.Finite": {
+      "sha256": "80272f953a4193784a11324991b568b626169c8995b5b7f0ab1c8dac2e2bdb3d",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Tactic": {
+      "sha256": "3c0883be0b7edd978e28e331e53ee7e872b44bb3e6bce93dc97045f27779bf90",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Tactic.ByContra": {
+      "sha256": "1ea49e77f4a017e0df5ac702cd4a71557363b621f3e106ba8718dea0741cb75a",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Tactic.Convert": {
+      "sha256": "19eae96db070d73505d7fde611dfa20b0fcc5a57cf472071627924f883801633",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Tactic.FieldSimp": {
+      "sha256": "b8dbb458e3a8186460623d9126edab45ac05f1fb0f712203006157199b09ce5c",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Tactic.Linarith": {
+      "sha256": "e57e08793afc08cea4bf3e4b4821151c1edc506c884ab6f37f158bb60e67ab54",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Tactic.NormNum": {
+      "sha256": "325bbf27940bd90c94aafe405e154131ffec26fccef767b5d1206148c8c239f9",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Tactic.Positivity": {
+      "sha256": "644d0a9de60f611ce7bed05f116fb8dd319402844fa3a154158e873e04b3f3e4",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Tactic.Push": {
+      "sha256": "529d64b59aea1b4ab9af1723cd7892b46c30e8edb8de483045520653d74157ba",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Tactic.Ring": {
+      "sha256": "301e95fbad73634f1e47fe918723c2d5443cec154d15622c3475e766e9405077",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Tactic.SplitIfs": {
+      "sha256": "9c68ab2d31f52569a972ee078fb3cbcfea93689ea084d74f73f671fc46a8cc2a",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Topology.Algebra.Monoid": {
+      "sha256": "69dfa51476a22e6a352c8f15098ceecf6d64e5b1472e121baba22ac5c1a07a51",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Mathlib.Topology.Order.Lattice": {
+      "sha256": "1d6f0d308496706380685c58f8c60472ed7c047caa6d18376f2d9bd07c1459b8",
+      "trust": "official pinned external package/toolchain cache"
+    }
+  },
+  "environment_scope": "Compiler/import-significant settings, not full process-environment byte identity.",
+  "trust_boundary": "Pinned official external toolchain/package cache is trusted. Ancestor source inventory and successful receipts were independently reconstructed; ancestor objects were rehashed by the authenticated exporter, not all delivered for local readback.",
+  "privacy": "Curated component-only metadata. Native private filesystem prefixes are replaced with labeled locations in selected commands and the reuse log. Raw metadata digests bind the authenticated unredacted receipts; global private source inventories and unrelated draft evidence are excluded."
+}

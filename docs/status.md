@@ -1,6 +1,6 @@
 # Research status
 
-Updated October 9, 2026 UTC — eighth verified checkpoint, plus isolated Boolean codec/retry, binary-list decoder, schedule arithmetic, input-size, and all-state dense completion components.
+Updated October 9, 2026 UTC — eighth verified checkpoint, plus isolated Boolean codec/retry, binary-list decoder, schedule arithmetic, input-size, all-state dense completion, and encoded completion program components.
 
 The main ideal-chain bound is now **`80,000d¹⁷`**, for all ordinary equal-total margins, with automatic choice of the reference-completion or empty-block unit branch. Here `d=10+(m+1)(n+1)`. The [completion-oracle formalization](completion-oracle-formalization.md) proves the full finite-table preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at the smaller outer scales. The new [dense completion family](completion-dense-law.md) discharges its fine-law accuracy premise using the pinned canonical sampler, assembles the all-state physical oracle, and proves the resulting normalized outer-law error. Finite-bit outer-program identification and complete machine runtime remain open. All upstream comparisons use `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; the preserved [initial review](../115/115-contingency-tables-review.md) is unchanged.
 
@@ -74,9 +74,9 @@ direct compilation, 52 standard-axiom audits, nine native boundary checks,
 and independent source/evidence review. It proves exact agreement with the
 table decoder and polynomial charged TreeTyped work in the binary input
 size. Its [receipt](../formal/results/lattice-decoder/verification.json)
-is also isolated from the aggregate and Linux results. Completion/retry
-cost composition and the complete outer word program remain unverified
-in the published work.
+is also isolated from the aggregate and Linux results. The subsequent
+completion program below composes this decoder with dense calls and retries;
+the complete outer word program remains unverified in the published work.
 
 The [schedule arithmetic](completion-schedules.md) adds 56 isolated audited
 declarations across two compiled modules. Explicit natural walk/retry counts
@@ -114,6 +114,20 @@ concrete encoded walker and public random machine remain unverified. These
 66 successful audits do not certify other drafts in the surrounding native
 build and do not change the aggregate or Linux counts below.
 
+The [encoded completion program](completion-sampler-program.md) adds 46
+strictly audited declarations across two compiled modules. It computes the
+dilated margins, canonical dense draws, signed decoding, retry word bank,
+and greedy coarse fallback. Exact whole-word and prefix identities connect
+the actual list output to the analyzed completion law and its `2^-h` error
+under the stated dimension and residual-margin conditions. Its polynomial
+cost bound includes execution and output weight in the complete supplied
+input, including the Boolean list; every reserved trial is evaluated before
+the first accepted result is selected. The [receipt](../formal/results/completion-program/verification.json)
+records the two exact sources and named audit evidence. The computed physical
+list-order bridge, complete outer walk, and fresh-bit public machine remain
+separate obligations. These audits also remain separate from the aggregate
+and Linux counts below.
+
 The integrated eighth checkpoint passed **638 Lean declaration audits**: 632 focused plus six standalone, comprising 636 new declarations and two original source statements. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. This checkpoint adds 212 declarations across nine modules for actual finite fibers, prefix-coordinate geometry, the full count bound, quarter acceptance, and retry accuracy. Aggregate compilation and audits used the existing dependency objects; this is not a fresh dependency-closure rebuild.
 
 The unchanged Python implementation retains the seventh checkpoint's **237 passing tests**. All 62 recorded Python source hashes and 20 report hashes were checked again, along with the pinned source bundle. The historical lattice report contains 13 completed tiny fibers, 293 fine tables, one retained budget failure, and ten actual-scale codec roundtrips. Universal acceptance is now a Lean theorem under its stated hypotheses; those finite checks remain separate implementation evidence.
@@ -133,7 +147,7 @@ The eighth checkpoint is published at `0aa5a61140712ada44893b03d805a756e0e9823a`
 Next work:
 
 1. Identify the computed list order, reference indices, and finite-bit completion program with the verified all-state dense completion law.
-2. Compose the verified binary-list decoder with dense draws and retries, and identify neighbor generation, initialization, and the proved scalar schedule with finite-bit programs; combine reserved-bit, arithmetic, and dense realizer costs. The complete runtime exponent remains open.
+2. Identify neighbor generation, initialization, the outer walk, and the proved scalar schedule with finite-bit programs; compose the verified completion program with reserved-bit and outer-walk costs. The complete runtime exponent remains open.
 3. Reproduce the new oracle additions on Linux and complete strict Comparator replay on an environment meeting its sandbox requirements.
 4. Close the gap between the free-cutoff `U⁴` upper allowance and the explicit `Ω(U²)` chain obstruction, or improve the transition rule with a justified target law and cost.
 5. Expand same-law tests to application-scale methods, including all setup and tuning costs. Empirical competitiveness of the complete #115 sampler remains unknown.

@@ -1,0 +1,16 @@
+'Math115.CompletionSamplerSemantics.parameters' does not depend on any axioms
+'Math115.CompletionSamplerSemantics.prepare_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionSamplerSemantics.wordWidth_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionSamplerSemantics.bitCount_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionSamplerSemantics.trial_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionSamplerSemantics.reservedWords_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionSamplerSemantics.greedyFallback_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionSamplerSemantics.programTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionSamplerSemantics.draw_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionSamplerSemantics.draw_prefix_code' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionSamplerSemantics.padded_programTable_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionSamplerSemantics.programTable_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionSamplerSemantics.padded_programTable_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionSamplerSemantics.draw_semantics' depends on axioms: [propext, Classical.choice, Quot.sound]

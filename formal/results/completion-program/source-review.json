@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "reviewer": "codec_program",
+  "reviewed_at_utc": "2026-10-09T20:41:20.809307+00:00",
+  "public_evidence_prepared_at_utc": "2026-10-09T20:47:02.682924+00:00",
+  "review_method": "Independent source/math contract review, authenticated archive and frozen ancestor-source reconstruction, strict reparse of all 46 named native reports. No reviewer Lean invocation.",
+  "original_review_sha256": "0a92cbf7cffe910a86ef89bbe0f2f0437023d1817ddbb30ca87f8a1331aacbc8",
+  "original_source_review_sha256": "71b0ae3e94262d5d4d0f1da022f01fa5d333274ccb3fa3b0ade3dc50c5b82bbc",
+  "original_archive_sha256": "4b7d428ab30a507c5fdb74d5d9709de72927183afe1d9c1de1bf64372d62254a",
+  "original_archive_manifest_sha256": "b71a35042d6c8723d43650557dac599bbca722676688e805e0ead2c5ec4db395",
+  "scope": "Two frozen completion sampler modules, 46 audited declarations; no whole-build or outer-machine certification.",
+  "findings": [],
+  "modules": [
+    {
+      "module": "Math115.CompletionSamplerProgram",
+      "source_sha256": "b2f2dd678bff288d8298ea267adac03da78d458ec89d934c2bb7c5fe6c109e42",
+      "olean_sha256": "ed4a49097d4a688867797b4ae92efecb631299320a5bb5eb9a491c41278353e1",
+      "export_count": 32,
+      "audit_driver_sha256": "1a6a5e82239ec0e8374c2410b328eb1a5761986e017276f26b03596c3f7326a8",
+      "audit_log_sha256": "dcc66ccb1ed3f15d145d7e4b9f7dcf610820f2bfd621553ff503d6f601be7169",
+      "original_compile_log_sha256": "05f06b9607c89f24462d31f00d5f3dd10ef23aeeefceb86f4a50a78b4776f526",
+      "compile_reused": true
+    },
+    {
+      "module": "Math115.CompletionSamplerSemantics",
+      "source_sha256": "0cf2fc168303f1dde8ff0cba7aacfe6f650acc20f87218dbd8c9ae11bcc787c7",
+      "olean_sha256": "d0920372c346c5b7479fe85d496bf850121bbfe7eb9fb4281a1dfe7a5168c592",
+      "export_count": 14,
+      "audit_driver_sha256": "82c6dd053dadbbeae2e835bd2d8e54b39df17ce4aad6a860d4b77de2f6b75b2e",
+      "audit_log_sha256": "636ae76d8fd3922853357b82de6f45fa17eeb0c7426136ba5348baab381575ad",
+      "original_compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_reused": false
+    }
+  ],
+  "evidence_checks": {
+    "all_archive_manifest_and_extracted_bytes_match": true,
+    "source_matches_actual_frozen_native_source": true,
+    "every46_report_exact_name_order_only_standard_axioms": true,
+    "no_sorryAx_or_extra_audit_output": true,
+    "all_planned_exports_covered32plus14": true,
+    "source_object_compile_audit_driver_log_receipts_bound": true,
+    "native_plan_runtime_context_and_full_inventory_reconstructed": true,
+    "ancestor_source_records_and_local_current_hashes_verified": 497,
+    "project_upstream_dependency_maps_complete_and_successful": true,
+    "all_native_audit_expected_before_after_inputs_equal_reconstructed_exact_inventory": true,
+    "official_external_runtime_cache_still_trusted": true,
+    "ancestor_objects_rehashed_by_reviewed_authenticated_exporter_not_all_copied_or_locally_rehashed": true,
+    "program_prior_compile_vs_reuse_and_semantics_fresh_compile_distinguished": true,
+    "historical_failed_batch3_phantom_audit_not_used_as_pass": true,
+    "reviewer_Lean_Lake_SSH_source_public_Git_mutations": 0
+  },
+  "transitive_ancestor_source_count": 497,
+  "omitted_transitive_source_inventory_canonical_json_sha256": "c37cea19615289b63efab3cc40e655e3e6994aa36036fa1d0a63be8ae67c7af4",
+  "pins": {
+    "lean": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+    "lean_executable_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "upstream": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+  },
+  "boundaries": [
+    "Polynomial cost is in the complete encoded input including supplied random word, not a polynomial in log of an implicitly enormous bank length.",
+    "No final physical/reference list-order/neighbor initialization/reconstruction or adaptive outer walk/retry semantics is proved by these two modules.",
+    "No final public literal RandomMachine or parser/printer/public-size cost instantiation, full runtime exponent, measured speed, whole batch success, aggregate or Linux count increase is claimed.",
+    "Degree62 fine-word allowance, degree85 reserved-bank allowance and degree170 public-size allowance remain distinct from the program polynomial whose degree is not extracted here."
+  ],
+  "mathematical_contracts": {
+    "actual_program_input": "Parameters=((coarse row list,coarse column list),(binary d,binary h)); draw input additionally supplies a literal Bool list. No fine table, accuracy premise, feasible table witness or precomputed fine margins is a program input.",
+    "preparation": "k=d^12; each row becomes k*(entry+2*column-list-length) and each column k*(entry+2*row-list-length). q=h+2+clog2(4*(h+2)); inner canonical parameters retain d and q. prepare_code preserves exact original finite row/column order through Option encoding.",
+    "fine_trial": "Unchanged canonicalDenseDraw computes its origin, internal fallback and normalized draw; verified natural signed-test-before-truncation decoder returns Option MatrixCode. trial_code is exact success/rejection equality to CompletionBooleanRetry.tableTrial.map matrixCode.",
+    "reserved_words": "wordWidth is computed canonicalBitCount; bitCount=J*wordWidth, J=4(h+2). reservedWords first takes supplied prefix bitCount, then enumerates exactly floor(prefix.length/wordWidth) complete contiguous words in original order. Zero width gives no words. Arbitrary short words give fewer complete trials; surplus suffix bits add no trials. Valid finite words have positive width and exactly J segments.",
+    "greedy_fallback": "draw computes unchanged GreedyFeasibleTable.listMatrix on original coarse lists. Semantics proves exact identity with a feasible typed table on equal-total margins. All-rejection mass is returned there; a successful result numerically equal to fallback remains a success.",
+    "retry_evaluation": "FirstSuccessProgram.retry maps trial across all reserved words, then firstSome selects the first some and defaults to greedy fallback. The realizer evaluates the map/filter list; no early-stop cost saving is established.",
+    "exact_word_law": "draw_code matches every uniform-bank input pointwise to matrixCode(programTable). programTable is precisely DenseLatticeCompletion.completionDraw with computed greedy coarse fallback. Imported completionDraw_law/flat product-word equivalence gives normalized independent retry law, not conditioning on acceptance. No artificial Fintype instance for infinite MatrixCode space is used.",
+    "long_reserved_words": "draw_prefix_code proves actual list draw ignores bits beyond computed width; padded_programTable_law proves uniform N-bit prefix has exactly the original typed law for any N>=completionBits. Accuracy follows unchanged for supplied state-independent reservations. These statements do not by themselves construct the adaptive outer word bank.",
+    "accuracy_hypotheses": "d>=14, nonempty full dimensions m+1,n+1<=d, free m*n<=d-1, equal totals, each R_i>=(n+1)*3d and P_j>=(m+1)*3d. h is any Nat, including0. programTable_variation/padded_programTable_variation/draw_semantics prove full normalized TV<=2^-h. Analytic inputs, count comparison, ideal quarter acceptance and fine-law accuracy are discharged by existing published proved modules.",
+    "polynomial_charged_cost": "polynomial_draw is an actual PolynomialTime drawRealizer witness in pinned TreeTyped: there exists Nat polynomial P with F.cost x+weight(draw x)<=P.eval(weight x), for every input, including malformed lists/parameters/words. Input weight includes binary margins,d,h and the whole supplied Bool list. Output size and all intermediate sizes are charged by polynomial composition.",
+    "numeric_dimension_safety": "d^12 and J are arithmetic binary outputs. No List.range of unrestricted binary d,h,J or bitCount is generated. Rows/columns enumerate supplied list lengths; completeWordRows range bound is prefix.length/wordWidth<=supplied.length<=input weight. takeFast consumes at most the actual list rather than iterating to huge binary width.",
+    "totality_boundary": "All-natural list functions and supplied-word recursion are total on arbitrary/malformed inputs. Typed feasibility, positive width and accuracy are asserted only under stated valid margins/dimension/word assumptions; total malformed output need not be a feasible table."
+  },
+  "publication_readback": "The independent native/source review is complete. Final publication artifact readback is a separate receipt."
+}

@@ -7,7 +7,8 @@ with stationary success, uniform-output, finite-walk output-error, and
 approximate-completion interface proofs. The dilated completion law now has
 full finite-table counting, geometric acceptance, and bounded-retry accuracy
 proofs. The new dense specialization supplies the accurate fine law and
-all-state physical oracle. Concrete encoded outer-program identification,
+all-state physical oracle. The encoded completion routine also has exact
+output semantics and polynomial charged cost in supplied input. Concrete encoded outer-program identification,
 complete sampler runtime, and secure Comparator verification remain open.
 
 An additional isolated [Boolean codec/retry module](completion-boolean-program.md)
@@ -51,6 +52,19 @@ variable warnings remain in the compile logs; all named audit logs contain
 only axiom reports. The final encoded walker and public-machine cost are
 not yet verified, and these 66 audits do not change the aggregate or Linux
 counts.
+
+The [encoded completion program](completion-sampler-program.md) adds two
+isolated modules with 32+14 standard-axiom audits. Their actual compiled
+list routine combines computed dense inputs and draws, signed decoding,
+bounded retries and a computed greedy fallback. Whole-word and prefix
+identities establish the actual output law, including fallback error, under
+the proved completion hypotheses. Its polynomial charged-cost proof includes
+execution and output weight in the full input with supplied Boolean bits;
+it evaluates all reserved trials before selecting the first success.
+The [receipt](../formal/results/completion-program/verification.json) preserves
+source, object, dependency and audit hashes. The physical list-order bridge,
+outer program and public random-machine composition remain separate. These
+46 audits do not change the aggregate or Linux counts.
 
 ## Reproduction
 
@@ -438,6 +452,8 @@ checkpoint adds the full finite accepted-table equivalence, geometric
 count comparison, quarter acceptance, and actual bounded-retry completion
 accuracy conditional on fine-law accuracy. The separate 66-declaration dense
 completion receipt now instantiates the canonical dense law and every physical
-oracle. Neither the eighth checkpoint nor that isolated receipt proves the
+oracle. The subsequent 46-declaration encoded completion receipt identifies
+the list program with that completion law and proves its polynomial charged
+cost for supplied input. These receipts do not yet prove the
 complete encoded outer program or its machine runtime. Official Mathlib cache
 artifacts and Lean bootstrap binaries remain trusted.

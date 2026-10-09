@@ -40,3 +40,4 @@ overview.pdf
 !formal/results/completion-schedules/*.log
 !formal/results/completion-input-size/*.log
 !formal/results/completion-dense-law/*.log
+!formal/results/completion-program/*.log
