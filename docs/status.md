@@ -66,6 +66,8 @@ The [independent focused Linux run](https://github.com/EcoDataLab/contingency-ta
 
 The fifth checkpoint is published at `7ad5c81117bbaa869da751b1f92a9213ddefdd22`; its [Python CI](https://github.com/EcoDataLab/contingency-tables/actions/runs/37924518733) and fresh [focused Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37924611391) passed. The [Linux receipt](../formal/results/linux-focused-7ad5c81/verification.json) checks all 279 focused audits and matches 45 environment-recorded source hashes to that commit. This covers the stationary-output additions, but excludes the six standalone audits and subsequent finite-walk work.
 
+The sixth checkpoint is published at `e5d5dd3e81b5eac0e3f42841530286b56bcb96e5` and its [Python CI](https://github.com/EcoDataLab/contingency-tables/actions/runs/37927196970) passed. A separate [focused Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37927276465) is in progress for that exact commit. Its final proof receipt is pending; the 324-declaration local result above is already complete.
+
 Next work:
 
 1. Identify an operational proposal/draw/test routine with the new rational transition law, including initialization and neighbor generation, then charge its exact completion-oracle calls. Extend the output bound to explicitly approximate transition and terminal-completion laws.

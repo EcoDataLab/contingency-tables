@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "observed_utc": "2026-10-09T11:52:17.011742+00:00",
+  "observed_utc": "2026-10-09T12:02:14.018383+00:00",
   "repository": "https://github.com/EcoDataLab/contingency-tables",
   "workflow": ".github/workflows/formal-linux.yml",
-  "all_runs_finished": true,
-  "scope_boundary": "Each run covers only its recorded source commit. The 7ad5c81 focused run verifies checkpoint 5 including the stationary-output additions; subsequent sources require separate checks. Focused/full builds are not strict Comparator replay.",
+  "all_runs_finished": false,
+  "scope_boundary": "Each run covers only its recorded source commit. Checkpoint 5 at 7ad5c81 passed focused Linux verification; checkpoint 6 at e5d5dd3 has a separate in-progress focused run. Focused/full builds are not strict Comparator replay.",
   "runs": [
     {
       "id": 37847572556,
@@ -692,6 +692,119 @@
         "archive_downloaded": false,
         "scope": "Checkpoint 5 focused proof closure; excludes separate standalone audit and later finite-walk additions."
       }
+    },
+    {
+      "id": 37927276465,
+      "head_sha": "e5d5dd3e81b5eac0e3f42841530286b56bcb96e5",
+      "head_branch": "main",
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-10-09T12:00:41Z",
+      "run_started_at": "2026-10-09T12:00:41Z",
+      "updated_at": "2026-10-09T12:00:47Z",
+      "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37927276465",
+      "run_attempt": 1,
+      "scope": "focused",
+      "api_source": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/runs/37927276465",
+      "jobs": [
+        {
+          "id": 113809143652,
+          "name": "verify",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-10-09T12:00:47Z",
+          "completed_at": null,
+          "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37927276465/job/113809143652",
+          "runner_name": "GitHub Actions 1000000113",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1,
+              "started_at": "2026-10-09T12:00:47Z",
+              "completed_at": "2026-10-09T12:00:48Z"
+            },
+            {
+              "name": "Check out the selected commit without retained credentials",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2,
+              "started_at": "2026-10-09T12:00:48Z",
+              "completed_at": "2026-10-09T12:00:49Z"
+            },
+            {
+              "name": "Record the fresh environment and exact source inputs",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3,
+              "started_at": "2026-10-09T12:00:49Z",
+              "completed_at": "2026-10-09T12:00:49Z"
+            },
+            {
+              "name": "Require the actual strict Linux sandbox before downloading proof dependencies",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 4,
+              "started_at": "2026-10-09T12:00:49Z",
+              "completed_at": "2026-10-09T12:00:49Z"
+            },
+            {
+              "name": "Install the pinned Lean toolchain and trusted Mathlib cache locally",
+              "status": "in_progress",
+              "conclusion": null,
+              "number": 5,
+              "started_at": "2026-10-09T12:00:49Z",
+              "completed_at": null
+            },
+            {
+              "name": "Build the pinned Comparator, exporter, and strict Landrun adapter",
+              "status": "pending",
+              "conclusion": null,
+              "number": 6,
+              "started_at": null,
+              "completed_at": null
+            },
+            {
+              "name": "Run the selected verification scope",
+              "status": "pending",
+              "conclusion": null,
+              "number": 7,
+              "started_at": null,
+              "completed_at": null
+            },
+            {
+              "name": "Record the outcome without upgrading the verification claim",
+              "status": "pending",
+              "conclusion": null,
+              "number": 8,
+              "started_at": null,
+              "completed_at": null
+            },
+            {
+              "name": "Preserve logs and provenance even when a check fails",
+              "status": "pending",
+              "conclusion": null,
+              "number": 9,
+              "started_at": null,
+              "completed_at": null
+            },
+            {
+              "name": "Post Check out the selected commit without retained credentials",
+              "status": "pending",
+              "conclusion": null,
+              "number": 18,
+              "started_at": null,
+              "completed_at": null
+            }
+          ]
+        }
+      ],
+      "artifacts": [],
+      "verification_boundary": "Dispatched for checkpoint 6. No successful Linux proof or axiom result claimed while the run is incomplete."
     }
   ],
   "focused_axiom_audit": {
