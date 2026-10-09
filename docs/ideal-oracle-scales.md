@@ -87,8 +87,10 @@ separate defect-mass factor, yielding a lower bound
 those arguments to free scales and prove the sharper actual-cell bound
 `1/[2(1+p²)]` at these ideal parameters. They identify the physical chain's
 stationary law, prove uniform conditional output, and bound independent
-stationary retries. A finite-walk output law and complete finite-bit sampler
-remain separate integration work.
+stationary retries. The subsequent [finite-walk modules](physical-finite-walk.md)
+combine these inputs with the actual rational transition law and explicit
+mixing/retry schedules. Completion-oracle implementation and a complete
+finite-bit sampler remain separate integration work.
 
 ## Why the dense-compatible result remains separate
 

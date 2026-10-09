@@ -73,13 +73,20 @@ of the output conditional on a successful stationary trial. The fallback
 mixture is relevant for bounded retries even when every successful trial
 has the correct law.
 
+The [stationary-rejection obstruction](stationary-success-obstruction.md)
+shows that this quadratic dependence on `p` is necessary in worst-case order
+for the unchanged rule, already at the smaller ideal scales. It is a
+separate reviewed counting argument with exact finite examples.
+
 These are stationary-law and independent-trial results. They do not assert
 mixing from an arbitrary initial state at arbitrary `U,L`, implement the
 finite-bit completion oracle, account for an approximate terminal draw,
 construct the complete correction program, or establish its machine cost.
-The ideal `d¹⁷` chain theorem remains a separate inverse-gap bound. Additional
-cell constraints or structural zeros require separate feasibility and
-sampling guarantees.
+The subsequent [finite-walk proof](physical-finite-walk.md) combines these
+stationary inputs with the ideal `d¹⁷` chain bound, giving an output-error
+guarantee for independent restarted finite walks and exact completions.
+Additional cell constraints or structural zeros require separate feasibility
+and sampling guarantees.
 
 The [module receipt](../formal/results/stationary-output/verification.json)
 retains direct compilation commands, source hashes, diagnostics, and isolated

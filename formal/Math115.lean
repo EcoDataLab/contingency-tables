@@ -24,3 +24,5 @@ import Math115.ReducedRepairRefinement
 import Math115.PhysicalStationaryMass
 import Math115.PhysicalStationarySuccess
 import Math115.PhysicalStationaryLaw
+import Math115.PhysicalRationalKernel
+import Math115.PhysicalFiniteWalk

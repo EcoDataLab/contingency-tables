@@ -1,7 +1,7 @@
 {
   "recorded_date": "2026-10-09",
-  "checkpoint": 5,
-  "prior_checkpoint_commit": "d2e8b0be8e65fdf94b800df60296d8dd49098b62",
+  "checkpoint": 6,
+  "prior_checkpoint_commit": "7ad5c81117bbaa869da751b1f92a9213ddefdd22",
   "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "lean_toolchain": "leanprover/lean4:v4.34.1",
   "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
@@ -11,20 +11,20 @@
   "focused_manifest_entry_count": 9,
   "focused_dependency_closure": {
     "status": "integrated_aggregate_compilation_and_fresh_axiom_audit_passed",
-    "original_module_count": 172,
-    "local_module_count": 35,
+    "original_module_count": 175,
+    "local_module_count": 37,
     "trusted_external_import_count": 45,
     "entry_module": "Math115",
     "provenance": "formal/results/provenance.json",
-    "log": "formal/results/fifth-checkpoint.log",
-    "scope_note": "Three new modules compiled serially; fresh integrated aggregate and both audits use existing dependency outputs. This is not a full dependency rebuild."
+    "log": "formal/results/sixth-checkpoint.log",
+    "scope_note": "Two new modules compiled serially and three missing unchanged generic imports restored. Fresh aggregate and both audits use existing dependency outputs; this is not a full dependency rebuild."
   },
   "checks": {
     "standalone": {
       "status": "passed",
-      "completed_at_utc": "2026-10-09T11:30:58.102538+00:00",
-      "log": "formal/results/fifth-checkpoint.log",
-      "log_sha256": "5097b8f38843596a79d21e2ea2e0b4536cb6991cf718dcfc1e1456eb99c3eef6",
+      "completed_at_utc": "2026-10-09T11:56:45.071413+00:00",
+      "log": "formal/results/sixth-checkpoint.log",
+      "log_sha256": "a48c8d44b2003040881d034cb6b18bd96b3f33fc4d5427dea391e4d450aed90e",
       "audited_declarations": [
         {
           "name": "Math115.pair_product_le_quarter_square",
@@ -76,9 +76,9 @@
     },
     "focused": {
       "status": "passed",
-      "completed_at_utc": "2026-10-09T11:30:50.224991+00:00",
-      "log": "formal/results/fifth-checkpoint.log",
-      "log_sha256": "5097b8f38843596a79d21e2ea2e0b4536cb6991cf718dcfc1e1456eb99c3eef6",
+      "completed_at_utc": "2026-10-09T11:56:34.563461+00:00",
+      "log": "formal/results/sixth-checkpoint.log",
+      "log_sha256": "a48c8d44b2003040881d034cb6b18bd96b3f33fc4d5427dea391e4d450aed90e",
       "audited_declarations": [
         {
           "name": "OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy",
@@ -2291,18 +2291,330 @@
             "Classical.choice",
             "Quot.sound"
           ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.proposalRat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.proposalRat_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.lawOfCast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.referenceMoveRat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.referenceTransitionRat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.referenceMoveRat_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.referenceTransitionRat_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.referenceTransitionLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.unitMoveRat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.unitTransitionRat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.unitMoveRat_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.unitTransitionRat_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.unitTransitionLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.selectedTransitionLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.selectedTransitionLaw_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.selectedWalkLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRationalKernel.selectedWalkLaw_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.capacityBound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.massAllowance",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.massAllowance_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.capacity_le_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.weight_at_least_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.total_mass_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.selectedChain_pi_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.selectedWalkLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.walkJointLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.walkJointLaw_variation_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.walkJointLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.outerLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.outerLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.initialState",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.idealGapAllowance",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.idealGapAllowance_at_least_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.successAllowance",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.successAllowance_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.idealOuterLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.idealOuterLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.exp_neg_steps_le_inverse",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalFiniteWalk.idealOuterLaw_variation_of_log_schedule",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
         }
       ]
     }
   },
-  "new_audited_declaration_count": 283,
+  "new_audited_declaration_count": 322,
   "original_audited_declaration_count": 2,
   "linux_verification": {
     "record": "formal/results/linux-runs.json",
-    "source_commit": "d2e8b0be8e65fdf94b800df60296d8dd49098b62",
-    "focused_record": "formal/results/linux-focused-d2e8b0b/verification.json",
-    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37890362781",
-    "scope_note": "Fresh Linux focused build and 226-declaration audit passed for checkpoint 4 at d2e8b0b. Checkpoint 5 additions and the standalone audit are not covered by this run."
+    "source_commit": "7ad5c81117bbaa869da751b1f92a9213ddefdd22",
+    "focused_record": "formal/results/linux-focused-7ad5c81/verification.json",
+    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37924611391",
+    "scope_note": "Fresh Linux focused build and 279-declaration audit passed for checkpoint 5 at 7ad5c81. The separate standalone audit and checkpoint 6 finite-walk additions are excluded."
   },
   "full_unconditional_and_challenge_build": {
     "status": "passed_on_linux_at_prior_commit",
@@ -2320,15 +2632,15 @@
   "limits": [
     "Official Mathlib cached artifacts and Lean bootstrap binaries remain trusted.",
     "The d17 and d25 theorems bound actual ideal auxiliary-chain inverse gaps; final wrappers require equal ordinary total margins.",
-    "The new output proofs cover independent exact stationary state/completion trials, including the actual selected-chain stationary law and geometric fallback error.",
-    "A matching finite-walk output-error theorem, modified finite-bit completion sampler, output correction, and complete machine-runtime proof remain open.",
+    "New finite-walk output laws use a supplied feasible fallback, independent fresh restarted attempts, and exact conditional terminal completions.",
+    "Explicit real-log sufficient schedules do not establish executable proposal/draw/test identification, completion-oracle implementation, finite-bit correction, or complete machine cost.",
     "The smaller ideal-only scales violate the retained sufficient dense-completion interface.",
     "Earlier focused/full Linux checks cover their recorded source commits, not later additions or strict Comparator replay."
   ],
   "source_sha256": {
-    "formal/Math115.lean": "bf49f252230e70e7441cc80c5b4c6f431ebed1daf74235e1669b35c135c2ece4",
+    "formal/Math115.lean": "42f4291cda0d487e3753138654bc90cfb6ec1c90b89f5a03aebd9e9028d9b479",
     "formal/Math115/AllSmallChainGap.lean": "f87775c41d272d968362036e8082fe748031244b52cbe6b743e18f40b775a288",
-    "formal/Math115/AxiomAudit.lean": "b7c3b71f27a323932868112b77b0567434bc52af0af4a224e9f6ea12e0590e1d",
+    "formal/Math115/AxiomAudit.lean": "333d0a08461aea83528a11a574709be564249b502bf86d280cdc0e0c6deea846",
     "formal/Math115/CompletionAdjustment.lean": "714934dc14bca5589b40de0952db8dfd17ead1aa93f71306fbf120d832e47192",
     "formal/Math115/GlobalDisplayOwnership.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
     "formal/Math115/IdealOracleScales.lean": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf",
@@ -2339,8 +2651,10 @@
     "formal/Math115/PathDistanceSum.lean": "1bdd44f56da123a0a09911baf79210ece88e5667ab825e15a5641c97feadf959",
     "formal/Math115/PathVariance.lean": "90fa3bf35868c990bc4144035b8361f06f9c7526ae40f37f6b5828edfaab59a0",
     "formal/Math115/PhysicalExposureVariance.lean": "3a4a0cba124f381f27fc31fb3a0f3a40490419a36834903eaa10c5a9c907ea55",
+    "formal/Math115/PhysicalFiniteWalk.lean": "b9189d0b75ca37f59d8ced4cfbdc2cf51c53521c368e94352bd33245618ff0ad",
     "formal/Math115/PhysicalFullVariance.lean": "1d38c1d7d0ca468744c3a4e2864d560acb6d2aabf34c086ac38a6c4747c1ccd1",
     "formal/Math115/PhysicalLeafEnergy.lean": "7c32ff73a592051eb81b69485820fa2dfcbadc5be7c0081c9f4a6bf52d88e55b",
+    "formal/Math115/PhysicalRationalKernel.lean": "8d9ef088f46cbfb5c44b56dea1cdf54d50829d348a4013b5903a7ff6e4d01c00",
     "formal/Math115/PhysicalRepairRefinement.lean": "99f41e25d64b06ec9399fe55899e0dd256bb36642365955bcbe7d585c730bb5a",
     "formal/Math115/PhysicalStateNonempty.lean": "eef39955559dfa4563cbf65437c0fcf699e1662430bb576f9c1b71f7538d6a31",
     "formal/Math115/PhysicalStationaryLaw.lean": "ce1b601cbc1d7cac6a9823c08333856c9b4e7e95b62ce3a36cbb0dc4dc72375f",
@@ -2390,9 +2704,9 @@
         ".lake/build/lib/lean/Math115.olean",
         "Math115.lean"
       ],
-      "started_at_utc": "2026-10-09T11:29:34.704389+00:00",
-      "completed_at_utc": "2026-10-09T11:30:19.915223+00:00",
-      "elapsed_seconds": 45.21002779202536,
+      "started_at_utc": "2026-10-09T11:54:10.853443+00:00",
+      "completed_at_utc": "2026-10-09T11:55:25.030105+00:00",
+      "elapsed_seconds": 74.17623466718942,
       "exit_code": 0
     },
     {
@@ -2405,9 +2719,9 @@
         "-DautoImplicit=false",
         "Math115/AxiomAudit.lean"
       ],
-      "started_at_utc": "2026-10-09T11:30:19.919583+00:00",
-      "completed_at_utc": "2026-10-09T11:30:50.224991+00:00",
-      "elapsed_seconds": 30.304808750050142,
+      "started_at_utc": "2026-10-09T11:55:25.030965+00:00",
+      "completed_at_utc": "2026-10-09T11:56:34.563461+00:00",
+      "elapsed_seconds": 69.53217720799148,
       "exit_code": 0
     },
     {
@@ -2420,15 +2734,22 @@
         "-DautoImplicit=false",
         "Math115/StandaloneAxiomAudit.lean"
       ],
-      "started_at_utc": "2026-10-09T11:30:50.232675+00:00",
-      "completed_at_utc": "2026-10-09T11:30:58.102538+00:00",
-      "elapsed_seconds": 7.869755916995928,
+      "started_at_utc": "2026-10-09T11:56:34.565989+00:00",
+      "completed_at_utc": "2026-10-09T11:56:45.071413+00:00",
+      "elapsed_seconds": 10.505365832941607,
       "exit_code": 0
     }
   ],
   "new_module_verification": {
-    "record": "formal/results/stationary-output/verification.json",
-    "sha256": "6d93f6fd1c4e070e4ea11311a5502548cdf439b3ffc48d7cee3e492a0f825dcb",
-    "independent_source_review": "formal/results/stationary-output-review.json"
-  }
+    "record": "formal/results/finite-walk/verification.json",
+    "sha256": "346da571e8c4a66e4dd17d89d030d2004e04b877653bf08cfb85ecacf10de6d5",
+    "independent_source_review": "formal/results/finite-walk-review.json"
+  },
+  "prior_module_verifications": [
+    {
+      "record": "formal/results/stationary-output/verification.json",
+      "sha256": "6d93f6fd1c4e070e4ea11311a5502548cdf439b3ffc48d7cee3e492a0f825dcb",
+      "independent_source_review": "formal/results/stationary-output-review.json"
+    }
+  ]
 }

@@ -1,0 +1,129 @@
+{
+  "cases": [
+    {
+      "common_margin": 1,
+      "count_based_unpadding_success": "1",
+      "dimension": 2,
+      "lower_bound": "1/13",
+      "mean_support": "2",
+      "original_tables": 2,
+      "physical_defects": 12,
+      "physical_normalizer": 14,
+      "small_cells": 4,
+      "stationary_success": "1/7",
+      "upper_bound": "1/7"
+    },
+    {
+      "common_margin": 2,
+      "count_based_unpadding_success": "1",
+      "dimension": 2,
+      "lower_bound": "1/13",
+      "mean_support": "8/3",
+      "original_tables": 3,
+      "physical_defects": 24,
+      "physical_normalizer": 27,
+      "small_cells": 4,
+      "stationary_success": "1/9",
+      "upper_bound": "1/9"
+    },
+    {
+      "common_margin": 4,
+      "count_based_unpadding_success": "1",
+      "dimension": 2,
+      "lower_bound": "1/13",
+      "mean_support": "16/5",
+      "original_tables": 5,
+      "physical_defects": 48,
+      "physical_normalizer": 53,
+      "small_cells": 4,
+      "stationary_success": "5/53",
+      "upper_bound": "5/53"
+    },
+    {
+      "common_margin": 8,
+      "count_based_unpadding_success": "1",
+      "dimension": 2,
+      "lower_bound": "1/13",
+      "mean_support": "32/9",
+      "original_tables": 9,
+      "physical_defects": 96,
+      "physical_normalizer": 105,
+      "small_cells": 4,
+      "stationary_success": "3/35",
+      "upper_bound": "3/35"
+    },
+    {
+      "common_margin": 1,
+      "count_based_unpadding_success": "1",
+      "dimension": 3,
+      "lower_bound": "1/73",
+      "mean_support": "3",
+      "original_tables": 6,
+      "physical_defects": 144,
+      "physical_normalizer": 150,
+      "small_cells": 9,
+      "stationary_success": "1/25",
+      "upper_bound": "5/77"
+    },
+    {
+      "common_margin": 2,
+      "count_based_unpadding_success": "1",
+      "dimension": 3,
+      "lower_bound": "1/73",
+      "mean_support": "33/7",
+      "original_tables": 21,
+      "physical_defects": 792,
+      "physical_normalizer": 813,
+      "small_cells": 9,
+      "stationary_success": "7/271",
+      "upper_bound": "1/25"
+    },
+    {
+      "common_margin": 3,
+      "count_based_unpadding_success": "1",
+      "dimension": 3,
+      "lower_bound": "1/73",
+      "mean_support": "63/11",
+      "original_tables": 55,
+      "physical_defects": 2520,
+      "physical_normalizer": 2575,
+      "small_cells": 9,
+      "stationary_success": "11/515",
+      "upper_bound": "7/223"
+    },
+    {
+      "common_margin": 1,
+      "count_based_unpadding_success": "1",
+      "dimension": 4,
+      "lower_bound": "1/241",
+      "mean_support": "4",
+      "original_tables": 24,
+      "physical_defects": 1440,
+      "physical_normalizer": 1464,
+      "small_cells": 16,
+      "stationary_success": "1/61",
+      "upper_bound": "1/25"
+    }
+  ],
+  "formula": "s = 1 / (1 + (p-1) * E_uniform[positive_cells])",
+  "ideal_scale_family": {
+    "claim": "p^2 * stationary_success tends to 1 as n tends to infinity",
+    "evidence": "Reviewed mathematical squeeze argument in docs/stationary-success-obstruction.md; this family is not enumerated here.",
+    "parameters": "n>=2, p=n^2, d=10+(n+1)^2, M=d^3, U=5*d^3, L=3*d"
+  },
+  "limits": [
+    "The defect/support identity uses the unchanged physical state space and success rule, with unit completion weights and no large block.",
+    "The lower success bound here uses P=N and the off-diagonal defect labels; the general stationary theorem has different hypotheses and constants.",
+    "A small stationary success probability is not a mixing, physical-clock, bit-runtime, or all-samplers lower bound."
+  ],
+  "reproduce": "PYTHONPATH=src python3 experiments/stationary_success.py --output reports/stationary-success.json",
+  "schema_version": 1,
+  "scope": "Fresh exact graph enumeration in eight synthetic all-small instances; not a Lean theorem or a runtime benchmark.",
+  "source_sha256": {
+    "experiments/defect_transport.py": "096f1ceb5f43076ef8e480175a0cb2bf94d9343bb61fd293881f391d7077a689",
+    "experiments/stationary_success.py": "2e2ba485e6b805cd1a34d1c350602ca61f54ea3a0d441dff26249a440552ede5",
+    "formal/Math115/SmallEntrySwitching.lean": "a0cd85439dccaf5c67ef291fae631f41c6585581f1c4af323c22f04768571f64",
+    "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019"
+  },
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+}

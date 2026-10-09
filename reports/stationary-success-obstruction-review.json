@@ -1,0 +1,63 @@
+{
+  "status": "independent_review_passed_at_recorded_hashes",
+  "reviewed_at": "2026-10-09T11:45:37.500614+00:00",
+  "review_mode": "Independent mathematical derivation, interface, experiment, and saved-artifact review; only this report was written.",
+  "lean_compiler_invoked_by_reviewer": false,
+  "reviewed_source_sha256": {
+    "docs/stationary-success-obstruction.md": "674131f5aa4c8c91aa881cee430d88f119d0fb606339a3af6e258b187d238a39",
+    "experiments/stationary_success.py": "2e2ba485e6b805cd1a34d1c350602ca61f54ea3a0d441dff26249a440552ede5",
+    "reports/stationary-success.json": "e51fd9d0df21e16edebc9929edb7f3bb1f4be0d4cf64d52fac67f6a674b62741"
+  },
+  "reference_source_sha256": {
+    "docs/defect-transport-research.md": "cb1e9b5e5c97cf1bd0db262f4e6db91be53033135d5658dd56eefe1cc43666f8",
+    "experiments/defect_transport.py": "096f1ceb5f43076ef8e480175a0cb2bf94d9343bb61fd293881f391d7077a689",
+    "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019",
+    "formal/Math115/SmallEntrySwitching.lean": "a0cd85439dccaf5c67ef291fae631f41c6585581f1c4af323c22f04768571f64",
+    "formal/Math115/PhysicalStationaryLaw.lean": "ce1b601cbc1d7cac6a9823c08333856c9b4e7e95b62ce3a36cbb0dc4dc72375f"
+  },
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "scope": {
+    "family": "Unrestricted ordinary uniform n-by-n nonnegative integer tables with equal positive margins M, n>=2 and M<U, embedded in the unchanged all-small physical state space.",
+    "law": "The actual stationary physical success rule, with unit completion weights, no large block, and independent complete trials with a fixed original-table fallback.",
+    "ideal_parameters": "p=n^2, e=(n-1)^2, d=10+(n+1)^2, M=d^3, U=5*d^3, L=3*d.",
+    "conclusions": "The unchanged stationary success probability satisfies p^2*s -> 1 on this ideal-scale family. Fixed error 0<epsilon<1/2 therefore requires at least order p^2 independent stationary trials under the fixed-fallback rule.",
+    "evidence_split": "The universal asymptotic conclusion is a reviewed mathematical squeeze argument. The saved experiment enumerates only eight bounded synthetic cases; it does not enumerate the large M=d^3 family."
+  },
+  "findings": [],
+  "validated_points": [
+    "The refined entry theorem is applied with incident-margin lower bound a0=M and threshold t=1. M>=1 verifies t<=a0; equal row/column totals ensure a nonempty ordinary table fibre. The event A_ij<1 is exactly A_ij=0.",
+    "Pr(A_ij=0)<=e/(M+e) gives p*M/(M+e)<=E_uniform|supp(A)|<=p by summing indicators; no independence of entries is assumed.",
+    "For inverse repair x=A+e_b-e_v, q=A+e_a-e_v with v=(row(b),col(a)) and a!=b, feasibility is equivalent to A_v>0, including v=a or v=b. The first row totals and second column totals remain M, so all entries stay at most M<U.",
+    "For each receiver v there are n choices of the row of a and n choices of the column of b; only a=b=v is excluded. Unique ordered labels and repaired table recover the defect, giving exactly D/N=(p-1)*E_uniform|supp(A)|.",
+    "The large block is empty, padding is vacuous, every physical completion weight is one, and success is balance. Thus P=N, Z=N+D and s=N/(N+D). Defective states remain in the stationary denominator.",
+    "Since s=1/(1+(p-1)*E|supp(A)|) decreases with the mean support, the lower and upper bounds have the correct orientation: 1/(1+p*(p-1))<=s<=(M+e)/(M+e+p*(p-1)*M).",
+    "For equal-margin 2-by-2 tables, N=M+1 and D=12*M. The refined upper bound equals the exact success (M+1)/(13*M+1).",
+    "At the actual ideal scales, e<=d and M=d^3 imply M/(M+e)>=d^2/(d^2+1). The resulting lower and upper bounds on p^2*s both tend to one as n grows.",
+    "The output fibres are nontrivial: a variable top-left 2-by-2 equal-margin block with M on the remaining diagonal gives M+1 distinct original tables, so N>=M+1>=2.",
+    "The exact independent-retry mixture has TV error (1-s)^R*(1-1/N) against uniform output for a fixed point fallback. With 0<epsilon<1/2 fixed, s asymptotic to p^(-2) and N>=2 imply an order-p^2 lower requirement on trial count.",
+    "The document explicitly excludes mixing-time, physical-clock, bit-runtime, and all-samplers lower bounds and identifies a changed fallback law as a different method.",
+    "The experiment invokes the existing independent physical-state geometry checks, derives success and rational bounds exactly, and distinguishes its eight bounded cases from the non-enumerated asymptotic family.",
+    "The fresh independently reproduced report exactly matches the saved JSON, and all four source hashes recorded in that saved JSON match current files."
+  ],
+  "execution_evidence": {
+    "script": "experiments/stationary_success.py",
+    "mode": "Fresh independent rerun without an output file and with bytecode writes disabled.",
+    "returncode": 0,
+    "case_count": 8,
+    "fresh_report_equals_saved_report": true,
+    "saved_source_hashes_match_current_files": true,
+    "rational_inequality_assertions_passed": true,
+    "large_ideal_family_enumerated": false,
+    "runtime_benchmark_claim": false
+  },
+  "resolved_precision_note": "The final document explicitly requires fixed target error 0<epsilon<1/2. Zero-error finite-retry claims are not made.",
+  "remaining_boundaries": [
+    "No new Lean theorem or kernel/axiom verification of the combined obstruction was performed or claimed; this review combines the existing exact count derivation with the existing entry-bound interface.",
+    "The exact support identity is specific to the unrestricted, unit-weight all-small physical family. Bounded, weighted, or structurally constrained table laws need separate analysis.",
+    "The asymptotic family is not established by extrapolating the eight enumerated cases. Its proof uses the support identity and the analytic bounds at growing dimensions and margins.",
+    "The independent stationary-trial count obstruction is not a lower bound for finite-walk mixing, the cost of producing a stationary trial, machine runtime, or arbitrary sampling algorithms.",
+    "A nontrivial original table fibre and a fixed point fallback are essential to the stated fallback-TV implication. A target-uniform fallback or a changed success/state rule is outside this obstruction.",
+    "The review is valid only at the recorded hashes; later changes require renewed review."
+  ],
+  "source_freeze": "The artifact author confirmed the three reviewed artifacts frozen after the positive-error precision edit; recorded hashes were checked by local readback."
+}

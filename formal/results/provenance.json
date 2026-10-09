@@ -555,6 +555,12 @@
       "sha256": "bfa01d11fb80eb7999e4c072b146a963f422fccaa88b99e551b516eeeb9eb234"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteDependentApproximation",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteDependentApproximation.lean",
+      "git_blob": "3bb11e170f00ac5499620a0cc80d5a58547cc5be",
+      "sha256": "4a926e34151527ce118dd7281372b5677bf00082b93f58017af135c2318ccdb8"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteDependentLaw",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteDependentLaw.lean",
       "git_blob": "5555ac340485e10d84adeb91953770123c489cff",
@@ -867,6 +873,12 @@
       "sha256": "47a5bbd3c63fc5314edb084de045f66d5a44771a0594fda17f5b1ffb2e81d40e"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RationalChainMixing",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RationalChainMixing.lean",
+      "git_blob": "9a17da246a09712d017a0163d9058a61b3276e08",
+      "sha256": "fc291e9c4175f6845456856f0506d7dd804f9468f9b57b503373cba45db41bbb"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.RationalMapProducts",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RationalMapProducts.lean",
       "git_blob": "dd4dd3f3b061cbc9d92b276e790e854932fa0387",
@@ -883,6 +895,12 @@
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RationalReindex.lean",
       "git_blob": "3f4c23220f414c69d3349306974d763777cd72fd",
       "sha256": "f3494e0bca89fc9c600c3cec92a20c3c62612de2c15a876908eca5df81521b55"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.RationalWalkApproximation",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/RationalWalkApproximation.lean",
+      "git_blob": "bbc5a4ce8a94a06713122ed64fae7731ea9a0a25",
+      "sha256": "65cef24976113f8418a85a04c9d104d2a7338dfbd2af92c3988e31eca2c84aeb"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.RationalWalks",
@@ -1088,5 +1106,5 @@
     "Mathlib.Tactic.Ring",
     "Mathlib.Tactic.SplitIfs"
   ],
-  "closure_note": "207 source modules in the compiler-free dependency plan: 172 unchanged upstream and 35 local Math115 modules; 45 trusted external import entries. Dependency cache remains trusted."
+  "closure_note": "212 source modules in the compiler-free dependency plan: 175 unchanged upstream and 37 local Math115 modules; 45 trusted external import entries. Dependency cache remains trusted."
 }

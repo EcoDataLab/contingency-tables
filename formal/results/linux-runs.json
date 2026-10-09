@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "observed_utc": "2026-10-09T11:11:19.157901+00:00",
+  "observed_utc": "2026-10-09T11:52:17.011742+00:00",
   "repository": "https://github.com/EcoDataLab/contingency-tables",
   "workflow": ".github/workflows/formal-linux.yml",
   "all_runs_finished": true,
-  "scope_boundary": "Each run covers only its recorded source commit. The d2e8b0b focused run verifies checkpoint 4 refinements; subsequent sources require separate checks. Focused/full builds are not strict Comparator replay.",
+  "scope_boundary": "Each run covers only its recorded source commit. The 7ad5c81 focused run verifies checkpoint 5 including the stationary-output additions; subsequent sources require separate checks. Focused/full builds are not strict Comparator replay.",
   "runs": [
     {
       "id": 37847572556,
@@ -554,6 +554,144 @@
         "source_hashes_matched_to_commit": 39,
         "log_source": "Authenticated GitHub connector job logs; artifact archive not downloaded or digest-verified."
       }
+    },
+    {
+      "id": 37924611391,
+      "head_sha": "7ad5c81117bbaa869da751b1f92a9213ddefdd22",
+      "head_branch": "main",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-09T11:34:52Z",
+      "run_started_at": "2026-10-09T11:34:52Z",
+      "updated_at": "2026-10-09T11:46:49Z",
+      "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37924611391",
+      "run_attempt": 1,
+      "scope": "focused",
+      "api_source": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/runs/37924611391",
+      "jobs": [
+        {
+          "id": 113800448000,
+          "name": "verify",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-10-09T11:34:56Z",
+          "completed_at": "2026-10-09T11:46:48Z",
+          "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37924611391/job/113800448000",
+          "runner_name": "GitHub Actions 1000000109",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "steps": [
+            {
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 1,
+              "started_at": "2026-10-09T11:34:57Z",
+              "completed_at": "2026-10-09T11:34:58Z"
+            },
+            {
+              "name": "Check out the selected commit without retained credentials",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 2,
+              "started_at": "2026-10-09T11:34:58Z",
+              "completed_at": "2026-10-09T11:35:00Z"
+            },
+            {
+              "name": "Record the fresh environment and exact source inputs",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 3,
+              "started_at": "2026-10-09T11:35:00Z",
+              "completed_at": "2026-10-09T11:35:00Z"
+            },
+            {
+              "name": "Require the actual strict Linux sandbox before downloading proof dependencies",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 4,
+              "started_at": "2026-10-09T11:35:00Z",
+              "completed_at": "2026-10-09T11:35:00Z"
+            },
+            {
+              "name": "Install the pinned Lean toolchain and trusted Mathlib cache locally",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 5,
+              "started_at": "2026-10-09T11:35:00Z",
+              "completed_at": "2026-10-09T11:37:13Z"
+            },
+            {
+              "name": "Build the pinned Comparator, exporter, and strict Landrun adapter",
+              "status": "completed",
+              "conclusion": "skipped",
+              "number": 6,
+              "started_at": "2026-10-09T11:37:13Z",
+              "completed_at": "2026-10-09T11:37:13Z"
+            },
+            {
+              "name": "Run the selected verification scope",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 7,
+              "started_at": "2026-10-09T11:37:13Z",
+              "completed_at": "2026-10-09T11:46:44Z"
+            },
+            {
+              "name": "Record the outcome without upgrading the verification claim",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 8,
+              "started_at": "2026-10-09T11:46:44Z",
+              "completed_at": "2026-10-09T11:46:44Z"
+            },
+            {
+              "name": "Preserve logs and provenance even when a check fails",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 9,
+              "started_at": "2026-10-09T11:46:44Z",
+              "completed_at": "2026-10-09T11:46:45Z"
+            },
+            {
+              "name": "Post Check out the selected commit without retained credentials",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 18,
+              "started_at": "2026-10-09T11:46:45Z",
+              "completed_at": "2026-10-09T11:46:45Z"
+            },
+            {
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success",
+              "number": 19,
+              "started_at": "2026-10-09T11:46:45Z",
+              "completed_at": "2026-10-09T11:46:45Z"
+            }
+          ]
+        }
+      ],
+      "artifacts": [
+        {
+          "id": 11614515260,
+          "name": "math115-linux-focused-37924611391-1",
+          "digest": "sha256:d623eda873c48e771b0e497f547aebbd3d29dd000ff79c91200990985310a9b3",
+          "size_in_bytes": 12553,
+          "created_at": "2026-10-09T11:46:45Z",
+          "expires_at": "2026-11-08T11:46:44Z",
+          "expired": false,
+          "archive_download_url": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/artifacts/11614515260/zip"
+        }
+      ],
+      "persisted_verification": {
+        "receipt": "formal/results/linux-focused-7ad5c81/verification.json",
+        "audit_declarations": 279,
+        "source_hashes_verified_against_commit": 45,
+        "archive_downloaded": false,
+        "scope": "Checkpoint 5 focused proof closure; excludes separate standalone audit and later finite-walk additions."
+      }
     }
   ],
   "focused_axiom_audit": {
@@ -600,6 +738,7 @@
   },
   "checked_repository_commits": [
     "5e5d6ef9aa36f7e2a744f3fb8605448529f8be66",
-    "d2e8b0be8e65fdf94b800df60296d8dd49098b62"
+    "d2e8b0be8e65fdf94b800df60296d8dd49098b62",
+    "7ad5c81117bbaa869da751b1f92a9213ddefdd22"
   ]
 }

@@ -1,0 +1,127 @@
+{
+  "status": "source_review_passed_at_recorded_hashes",
+  "reviewed_at": "2026-10-09T11:58:10.245806+00:00",
+  "review_mode": "Independent read-only mathematical and interface review. Only this report was written; no source, aggregate, audit, receipt, or compiler changes.",
+  "lean_compiler_invoked_by_reviewer": false,
+  "compilation_and_axiom_verification": "Outside this source review. Author compilation and isolated/integrated axiom audits have separate receipts; this report does not reproduce or certify those execution results.",
+  "base_published_checkpoint": "7ad5c81117bbaa869da751b1f92a9213ddefdd22",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "reviewed_source_sha256": {
+    "formal/Math115/PhysicalRationalKernel.lean": "8d9ef088f46cbfb5c44b56dea1cdf54d50829d348a4013b5903a7ff6e4d01c00",
+    "formal/Math115/PhysicalFiniteWalk.lean": "b9189d0b75ca37f59d8ced4cfbdc2cf51c53521c368e94352bd33245618ff0ad"
+  },
+  "reference_source_sha256": {
+    "formal/Math115/PhysicalStationaryLaw.lean": "ce1b601cbc1d7cac6a9823c08333856c9b4e7e95b62ce3a36cbb0dc4dc72375f",
+    "formal/Math115/PhysicalStateNonempty.lean": "eef39955559dfa4563cbf65437c0fcf699e1662430bb576f9c1b71f7538d6a31",
+    "formal/Math115/ReducedAllSmallChain.lean": "0ba3ec59f6fa2f7e44939d28465ad190fcf82b4e1dae8f436ab959369964db58",
+    "formal/Math115/IdealRepairRefinement.lean": "7728c29d949bbf0b2cefa4feea9e38cc971df2c70ea069a77dfd53162418ed93",
+    ".upstream/openai-math/lean/OAI/Combinatorics/MatroidCounting/CommonBases.lean": "0e5fa4d146154656ca6f89fad0d255159ca3e895b76b8bc3af731882e28725a9",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalMassBound.lean": "7f920e3b650be47e143e2c5a146210667a34e5936b1d6b53158f54a252472697",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/RationalChainMixing.lean": "fc291e9c4175f6845456856f0506d7dd804f9468f9b57b503373cba45db41bbb",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/RationalChainCast.lean": "47a5bbd3c63fc5314edb084de045f66d5a44771a0594fda17f5b1ffb2e81d40e",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/RationalWalks.lean": "6f6b12287081bdd0732fc9576bf327897a07b8588ca63612cab4919ff1c65a37",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteDependentApproximation.lean": "4a926e34151527ce118dd7281372b5677bf00082b93f58017af135c2318ccdb8",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/RejectionLaw.lean": "d0ad6765eb54964f094a63733eeaa001967e5b3d46ae1658c1437fae5dd80bb6",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/TranslatedCompletionChain.lean": "0311e8e1249e9cec93c3ea131e6202c073a8515d39455832260c243f7f75bb40",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/MetropolisChain.lean": "756332324b3840b6f6425e724c4893ee7eec73b11bf2e037ed37408cd120e942"
+  },
+  "reviewed_declarations": [
+    "Math115.PhysicalRationalKernel.proposalRat",
+    "Math115.PhysicalRationalKernel.proposalRat_cast",
+    "Math115.PhysicalRationalKernel.lawOfCast",
+    "Math115.PhysicalRationalKernel.referenceMoveRat",
+    "Math115.PhysicalRationalKernel.referenceTransitionRat",
+    "Math115.PhysicalRationalKernel.referenceMoveRat_cast",
+    "Math115.PhysicalRationalKernel.referenceTransitionRat_cast",
+    "Math115.PhysicalRationalKernel.referenceTransitionLaw",
+    "Math115.PhysicalRationalKernel.unitMoveRat",
+    "Math115.PhysicalRationalKernel.unitTransitionRat",
+    "Math115.PhysicalRationalKernel.unitMoveRat_cast",
+    "Math115.PhysicalRationalKernel.unitTransitionRat_cast",
+    "Math115.PhysicalRationalKernel.unitTransitionLaw",
+    "Math115.PhysicalRationalKernel.selectedTransitionLaw",
+    "Math115.PhysicalRationalKernel.selectedTransitionLaw_cast",
+    "Math115.PhysicalRationalKernel.selectedWalkLaw",
+    "Math115.PhysicalRationalKernel.selectedWalkLaw_cast",
+    "Math115.PhysicalFiniteWalk.capacityBound",
+    "Math115.PhysicalFiniteWalk.massAllowance",
+    "Math115.PhysicalFiniteWalk.massAllowance_positive",
+    "Math115.PhysicalFiniteWalk.capacity_le_bound",
+    "Math115.PhysicalFiniteWalk.weight_at_least_one",
+    "Math115.PhysicalFiniteWalk.total_mass_le",
+    "Math115.PhysicalFiniteWalk.selectedChain_pi_lower",
+    "Math115.PhysicalFiniteWalk.selectedWalkLaw_variation",
+    "Math115.PhysicalFiniteWalk.walkJointLaw",
+    "Math115.PhysicalFiniteWalk.walkJointLaw_variation_le",
+    "Math115.PhysicalFiniteWalk.walkJointLaw_variation",
+    "Math115.PhysicalFiniteWalk.outerLaw",
+    "Math115.PhysicalFiniteWalk.outerLaw_variation",
+    "Math115.PhysicalFiniteWalk.initialState",
+    "Math115.PhysicalFiniteWalk.idealGapAllowance",
+    "Math115.PhysicalFiniteWalk.idealGapAllowance_at_least_one",
+    "Math115.PhysicalFiniteWalk.successAllowance",
+    "Math115.PhysicalFiniteWalk.successAllowance_positive",
+    "Math115.PhysicalFiniteWalk.idealOuterLaw",
+    "Math115.PhysicalFiniteWalk.idealOuterLaw_variation",
+    "Math115.PhysicalFiniteWalk.exp_neg_steps_le_inverse",
+    "Math115.PhysicalFiniteWalk.idealOuterLaw_variation_of_log_schedule"
+  ],
+  "findings": [],
+  "conclusion": "No substantive mathematical or interface findings at the recorded source hashes.",
+  "checked_interfaces": [
+    {
+      "topic": "Selected reference/unit rational kernel",
+      "assessment": "Reference accepted-count moves match completionMove; weight-one unit moves match MetropolisChain.move. Diagonal holds match FiniteChain.ofMoves. The selected law uses the exact same existence predicate and Classical.choice references as the actual selectedChain. lawOfCast transports actual chain nonnegativity and row normalization."
+    },
+    {
+      "topic": "Actual minimum stationary mass",
+      "assessment": "capacityBound=N+d*L+U+2 dominates the literal paperCapacity. physical_total_mass_le supplies Z<=B=(capacityBound+1)^(2d). Positive physical completion-fibre cardinality gives weight>=1, hence pi>=1/B. The argument applies to this integer-count law, not arbitrary positive real weights."
+    },
+    {
+      "topic": "Generic walk hypotheses",
+      "assessment": "The walk bound explicitly requires Nonempty actual physical states, K>=1, and a Poincare inequality for every observable on the actual selected chain. Generic finite-chain laziness/reversibility are inherited from that chain. No extra irreducibility or non-singleton assertion is inferred."
+    },
+    {
+      "topic": "Terminal conditional completion TV lift",
+      "assessment": "walkJointLaw uses the exact uniform law on each actual terminal Fibre. variation_dependentJoint contracts state-walk TV because both conditional kernels coincide. No approximation-error term is silently discarded."
+    },
+    {
+      "topic": "Independent restarts and rejection",
+      "assessment": "outerLaw is retryLaw of a fixed finite-walk/fresh-completion trial law, thus independent fresh trials restart at the same positive state. retryLaw_variation charges R times per-trial TV before the success test; no success-probability conditioning division or persistent-chain independence is assumed."
+    },
+    {
+      "topic": "Equal total margins and degenerate types",
+      "assessment": "The ideal wrapper discharges ordinary and physical nonemptiness from equal totals and constructs its positive start from the supplied feasible fallback through originalStateSuccessEquiv. Empty row/column types, zero margins, p=0, singleton state spaces, and missing reference rows/columns remain allowed. Generic T=0 or R=0 error bounds are conservative and valid; the epsilon schedule separately states R>0."
+    },
+    {
+      "topic": "Actual ideal K,S,B specialization",
+      "assessment": "At U=5d^3,L=3d, the actual refined Poincare theorem supplies K=128*5^4*d^17=80000*d^17, the proved stationary success allowance is S=2*(1+p^2), and B=(N+d*L+U+3)^(2d). K>=1,S>0,B>0 are justified without a positive-dimension/nonempty-index assumption."
+    },
+    {
+      "topic": "Epsilon schedule",
+      "assessment": "For epsilon>0 and natural R>0,T, the explicit sufficient inequalities R>=S*log(2/epsilon) and T>=K*log(2*R*B/epsilon) make each error contribution at most epsilon/2. Negative logarithms when epsilon is large cause no gap; epsilon<=1 is not required. This is a sufficient-inequality theorem, not an executable natural-ceiling/logarithm scheduler."
+    }
+  ],
+  "scope_limits": [
+    "Exact rational transition probabilities and exact conditional terminal completion laws are mathematical finite-law constructions. No oracle operation implementation, neighbor enumeration cost, completion sampling cost, or random-bit cost is inferred from the rational law definitions.",
+    "Approximate transition/completion oracles require separate operational identification and error bounds. A terminal conditional approximation generally adds a walk-law-weighted conditional TV term; the current theorem deliberately uses exact uniform terminal fibres.",
+    "Consecutive samples of one persistent chain or reused randomness do not instantiate the independent restarted retry law.",
+    "The real-log sufficient schedule does not establish a bit-computable scheduler, full finite-bit correction program, machine runtime, or practical competitiveness.",
+    "The reviewer ran no Lean/compiler, axiom audit, tests, simulation, or schedule. Compilation/audit claims must be attached to their separate author/integration receipts."
+  ],
+  "reviewed_document_sha256": {
+    "docs/physical-finite-walk.md": "b45a0013eeb3376461b3c9d71a5203f63f724cee68b5ec7f55731c70a704edea"
+  },
+  "documentation_assessment": {
+    "findings": [],
+    "conclusion": "No substantive claim-wording findings at the recorded document hash.",
+    "checked_claims": [
+      "The final opening links separate author compile/audit receipts, integrated aggregate/audit log, and this independent source review; this reviewer did not reproduce compiler/audit execution.",
+      "All formulas retain actual K=80000*d^17, S=2*(1+p^2), B=(N+dL+U+3)^(2d), independent R-fold restarts, RT transitions, and the dimension factor in log B.",
+      "The epsilon paragraph states epsilon>0,R>0 and sufficient log-step inequalities. Its natural-ceiling statement for 0 < epsilon <= 1 is a mathematical sufficient choice; the reviewed Lean theorem does not implement a bit-computable logarithm/ceiling scheduler.",
+      "The terminal completion is exact conditional uniform. Consecutive persistent-chain observations are explicitly outside the independent retry theorem.",
+      "The R(T+1) completion-call ceiling is expressly prospective and conditional on proving an operational realization has the same law; it charges no oracle/arithmetic/bit/initialization cost.",
+      "No operational completion oracle, finite-bit correction/runtime, practical competitiveness, general exact-uniform sampler, or weighted/constrained-table extension is claimed."
+    ]
+  }
+}

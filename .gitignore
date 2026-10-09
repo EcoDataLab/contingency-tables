@@ -18,3 +18,5 @@ overview.pdf
 !formal/results/ideal-oracle-scales/*.log
 !formal/results/linux-focused-d2e8b0b/*.log
 !formal/results/stationary-output/*.log
+!formal/results/linux-focused-7ad5c81/*.log
+!formal/results/finite-walk/*.log
