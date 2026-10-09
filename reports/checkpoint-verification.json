@@ -480,15 +480,16 @@
   "publication": {
     "source_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
     "commit_url": "https://github.com/EcoDataLab/contingency-tables/commit/5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
-    "observed_at_utc": "2026-10-09T12:50:49.193278+00:00",
+    "observed_at_utc": "2026-10-09T16:30:29.902883+00:00",
     "python_ci": {
       "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932442921",
       "status": "passed"
     },
     "focused_linux": {
       "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805",
-      "status": "in_progress",
-      "result": "pending"
+      "status": "passed",
+      "result": "420 focused declaration audits passed; 55 source hashes matched to the exact commit",
+      "receipt": "formal/results/linux-focused-5b37032/verification.json"
     }
   }
 }

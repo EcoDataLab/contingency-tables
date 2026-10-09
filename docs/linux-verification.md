@@ -131,6 +131,25 @@ or digest verification. All audits passed the foundational-axiom allowlist.
 This run excludes the six standalone audits, later completion-oracle additions,
 and strict Comparator replay; official Mathlib cache artifacts remain trusted.
 
+## Independent checkpoint 7 replication
+
+[Focused run 37932487805](https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805)
+passed at `5b3703234e7f6cd88e6b6f6b3dab85510ba4366f` on 9 October 2026 UTC.
+The fresh job took 14 minutes 59 seconds and audited all **420 selected focused
+declarations**, including the actual and approximate completion laws, integer
+codec core, and dilated physical margins. The
+[saved receipt](../formal/results/linux-focused-5b37032/verification.json)
+matches **55 environment-recorded source hashes** to that exact commit.
+
+The complete [verification log](../formal/results/linux-focused-5b37032/verification.log)
+was retrieved through the authenticated GitHub job-log connector. Timestamp
+prefixes were removed; environment and outcome JSON were parsed from the same
+decoded log. The artifact archive digest remains API metadata only, without
+archive download or digest verification. All audits passed the foundational
+axiom allowlist. This covers checkpoint 7 only: it excludes the six standalone
+audits, subsequent source additions, and strict Comparator replay. Official
+Mathlib cache artifacts remain trusted.
+
 ## Completed original Linux build
 
 [Full run 37847944509](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509) passed at repository commit `5e5d6ef9aa36f7e2a744f3fb8605448529f8be66`. The original theorem closure completed 10,221 Lake jobs, including trusted cached dependency jobs. The raw log prints `boundedSampling`, `exactSampling`, and `counting`, each with only `propext`, `Classical.choice`, and `Quot.sound`, and confirms the three-declaration allowlist. The verification step took 47 minutes 29 seconds.

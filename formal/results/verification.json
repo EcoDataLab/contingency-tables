@@ -3388,10 +3388,10 @@
   "original_audited_declaration_count": 2,
   "linux_verification": {
     "record": "formal/results/linux-runs.json",
-    "source_commit": "e5d5dd3e81b5eac0e3f42841530286b56bcb96e5",
-    "focused_record": "formal/results/linux-focused-e5d5dd3/verification.json",
-    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37927276465",
-    "scope_note": "Fresh Linux focused build and 318-declaration audit passed for checkpoint 6 at e5d5dd3. The separate standalone audit and checkpoint 7 oracle additions are excluded."
+    "source_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
+    "focused_record": "formal/results/linux-focused-5b37032/verification.json",
+    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805",
+    "scope_note": "Fresh Linux focused build and 420-declaration audit passed for checkpoint 7 at 5b37032. Excludes the separate standalone audit and subsequent additions."
   },
   "full_unconditional_and_challenge_build": {
     "status": "passed_on_linux_at_prior_commit",
@@ -3551,15 +3551,16 @@
   "publication": {
     "source_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
     "commit_url": "https://github.com/EcoDataLab/contingency-tables/commit/5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
-    "observed_at_utc": "2026-10-09T12:50:49.193278+00:00",
+    "observed_at_utc": "2026-10-09T16:30:29.902883+00:00",
     "python_ci": {
       "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932442921",
       "status": "passed"
     },
     "focused_linux": {
       "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805",
-      "status": "in_progress",
-      "result": "pending"
+      "status": "passed",
+      "result": "420 focused declaration audits passed; 55 source hashes matched to the exact commit",
+      "receipt": "formal/results/linux-focused-5b37032/verification.json"
     }
   }
 }
