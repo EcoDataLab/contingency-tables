@@ -1,0 +1,467 @@
+{
+  "schema_version": 1,
+  "status": "passed_isolated_input_size_modules",
+  "recorded_at_utc": "2026-10-09T19:37:57.169745+00:00",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "platform": "local macOS arm64",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "method": "Direct pinned Lean -j1 -DautoImplicit=false on actual source modules; no Lake build. Two upstream prerequisites restored for EncodingSize; no additional restoration for PublicSize. Existing pinned dependency objects and official package cache trusted; not a fresh dependency closure, cross-host reproduction, or Comparator replay.",
+  "module_count": 2,
+  "total_audited_declarations": 32,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "strict_audit_method": "scripts/check_lean_axioms.py checks the preserved actual audit logs: every requested declaration exactly once in driver order, no other compiler output, standard axiom allowlist. Author checkers were supplemented by this stricter readback and independent review.",
+  "strict_checker_sha256": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+  "modules": [
+    {
+      "module": "Math115.CompletionEncodingSize",
+      "namespace": "Math115.CompletionEncodingSize",
+      "source": "formal/Math115/CompletionEncodingSize.lean",
+      "source_sha256": "6fe3bbf11d4271959fccdc0b1f294f7ac0bab37418c5b7e4f71efd240650520e",
+      "olean_sha256": "726f81620777ca57ddb2b485a8b16daf8cb2783952bd3e7cafd01ad6f16b6195",
+      "ilean_sha256": "7277542e7cf88aae7d18cfa832b9220358a3c66b1ec53043fd6fe036924c9f85",
+      "declaration_count": 25,
+      "declarations": [
+        {
+          "name": "Math115.CompletionEncodingSize.Margins",
+          "axioms": []
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.WordInput",
+          "axioms": []
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.dimension",
+          "axioms": []
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.massTotal",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.measure",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.bankCoefficient",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.inputEnvelope",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.pow_two_add_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.nat_succ_le_pow_weight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.sum_add_two_le_pow_weight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.clog_sum_add_two_le_weight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.margin_weight_at_least_three",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.measure_at_least_six",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.dimension_at_least_eleven",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.dimension_le_weight_square",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.binary_mass_le_weight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.combinedSize_le_twice_measure_square",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.bank_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.input_weight_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.reserved_program_work",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.weight_nat_list_le_word_length",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.margin_weight_le_literal_length",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.measure_le_literal_length_numeric",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.dimension_ofFn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionEncodingSize.massTotal_ofFn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "started_at_utc": "2026-10-09T19:15:06.994051+00:00",
+        "finished_at_utc": "2026-10-09T19:16:06.581920+00:00",
+        "elapsed_seconds": 59.58700712490827,
+        "argv_sanitized": [
+          "<workspace>/.tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+          "-j1",
+          "-DautoImplicit=false",
+          "--root=<workspace>/formal",
+          "-o",
+          "<workspace>/.local/completion-encoding-size/module-02-CompletionEncodingSize/module.olean",
+          "-i",
+          "<workspace>/.local/completion-encoding-size/module-02-CompletionEncodingSize/module.ilean",
+          "<workspace>/formal/Math115/CompletionEncodingSize.lean"
+        ],
+        "path_sanitization": "Original absolute workspace paths replaced by <workspace>; options and argument order preserved. Objects were emitted to an isolated local output directory, then copied into the existing dependency cache for imports.",
+        "log": "formal/results/completion-input-size/CompletionEncodingSize-compile.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "log_empty": true,
+        "authored_phase_file_sha256": "333b5299e7c2f0639eb6b084379c914db3fa54157fcd74c7ed31212ef8a58682"
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "driver": "formal/results/completion-input-size/EncodingSizeAxiomCheck.lean",
+        "driver_sha256": "47774fd5818107753dc1c83ed6ccab75e0e6b491522e5f7d815df22b158affaf",
+        "log": "formal/results/completion-input-size/CompletionEncodingSize-axiom-audit.log",
+        "log_sha256": "1a4a50b5ea5527dc4d0c2a7c41205ddea12983de468602c18cc962ab1cfa109d",
+        "argv_sanitized": [
+          "<workspace>/.tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+          "-j1",
+          "-DautoImplicit=false",
+          "<workspace>/.local/completion-encoding-size/CompletionEncodingSizeAudit.lean"
+        ],
+        "started_at_utc": "2026-10-09T19:16:44.623766+00:00",
+        "finished_at_utc": "2026-10-09T19:17:35.523270+00:00",
+        "elapsed_seconds": 50.899504,
+        "declared_and_reported_count": 25,
+        "exact_named_order": true,
+        "only_allowlisted_axioms": true,
+        "sorryAx_absent": true,
+        "driver_copy_matches_executed_bytes": true,
+        "authored_execution_receipt_sha256": "3ce4029395819ffbd6acc09149b1849d845a4dfa938f6870091a7d23e0183d5f",
+        "authored_checker_receipt_sha256": "baa6ccd15f022cf3a56876738e16cc48f80f5c4049c73869d6161ff4532471a3"
+      },
+      "environment_receipt_sha256": "e7506b784a2f4732a4262aa60ebe9942cb9c64b9247d23a277b735aace199078",
+      "authored_runner_sha256": "ce90c14dd65da53e3d7da3fc644a74963d18dcab91cd7841087f2d581776d485",
+      "authored_checker_sha256": "f8104855553e6cd98600398b47c3e84e2d7dca4696a3c53e3663daecf8de1ba1",
+      "direct_imports": [
+        "Math115.CompletionRandomBudgetArithmetic",
+        "OAI.Combinatorics.MatchingCount.Complexity.TreeCostMeasure",
+        "OAI.Combinatorics.ContingencyTables.Machines.PublicInputLength"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.CompletionRandomBudgetArithmetic": "278c031d594e109bbce1e3bd96459a08b30dde9dc4506f61beb341b40e48ef0a",
+        "OAI.Combinatorics.MatchingCount.Complexity.TreeCostMeasure": "f009e790f58cc1cc931e95229ef43de128b0ee5013084dda1f68fc56fe4c3aef",
+        "OAI.Combinatorics.ContingencyTables.Machines.PublicInputLength": "3bb1983124bf270888bd3d066b27b9fbcf5a30ce7f934e6a6a26034263aa7862"
+      },
+      "direct_dependency_olean_sha256": {
+        "Math115.CompletionRandomBudgetArithmetic": "e651ab2d582194742d845f37f23a2d6fc615225472ecd5940d70e943c9f21c25",
+        "OAI.Combinatorics.MatchingCount.Complexity.TreeCostMeasure": "22d8a3d5f522a94327e55d2bfaddbd58a6fd2fe24447e756586ec8c5b87f6436",
+        "OAI.Combinatorics.ContingencyTables.Machines.PublicInputLength": "d8fa831d88c487ffc7dfeff61bb29d04431a7585671360c940bd7c714a29f251"
+      }
+    },
+    {
+      "module": "Math115.CompletionPublicSize",
+      "namespace": "Math115.CompletionPublicSize",
+      "source": "formal/Math115/CompletionPublicSize.lean",
+      "source_sha256": "b7d04bd5956a33ddbdd04c36e8b4a79f571d4109c7e297af04e38c1734a9eb30",
+      "olean_sha256": "009b4ec9771492a3c6440a42d251b746ae091f26e1f43f466711f108b954abe3",
+      "ilean_sha256": "d2f899d7ecd503c00ffc6d65695fa30c0554de87703069e81009422a31889246",
+      "declaration_count": 7,
+      "declarations": [
+        {
+          "name": "Math115.CompletionPublicSize.bankCoefficient",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.CompletionPublicSize.wordMeasureCoefficient",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.CompletionPublicSize.clog_mass_add_two_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionPublicSize.samplingSize_at_least_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionPublicSize.combinedSize_public_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionPublicSize.reservation_public_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionPublicSize.literal_input_and_bank_public_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "started_at_utc": "2026-10-09T19:26:42.951307+00:00",
+        "finished_at_utc": "2026-10-09T19:27:30.037337+00:00",
+        "elapsed_seconds": 47.08595212502405,
+        "argv_sanitized": [
+          "<workspace>/.tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+          "-j1",
+          "-DautoImplicit=false",
+          "--root=<workspace>/formal",
+          "-o",
+          "<workspace>/.local/completion-public-size/module-02-CompletionPublicSize/module.olean",
+          "-i",
+          "<workspace>/.local/completion-public-size/module-02-CompletionPublicSize/module.ilean",
+          "<workspace>/formal/Math115/CompletionPublicSize.lean"
+        ],
+        "path_sanitization": "Original absolute workspace paths replaced by <workspace>; options and argument order preserved. Objects were emitted to an isolated local output directory, then copied into the existing dependency cache for imports.",
+        "log": "formal/results/completion-input-size/CompletionPublicSize-compile.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "log_empty": true,
+        "authored_phase_file_sha256": "3381319155325587ebf469d6c4699a62a5c93a1ad83e7ebb7bc52b10961a1395"
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "driver": "formal/results/completion-input-size/PublicSizeAxiomCheck.lean",
+        "driver_sha256": "b898ef5698c05ca9f1990037fa9a52cbbd1ccefc1de29cd2b0646854260e365d",
+        "log": "formal/results/completion-input-size/CompletionPublicSize-axiom-audit.log",
+        "log_sha256": "0341e2999f0f9cab2bc700707fa170003aab61d095efcd3e485ee6f340690b33",
+        "argv_sanitized": [
+          "<workspace>/.tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+          "-j1",
+          "-DautoImplicit=false",
+          "<workspace>/.local/completion-public-size/CompletionPublicSizeAudit.lean"
+        ],
+        "started_at_utc": "2026-10-09T19:29:21.637688+00:00",
+        "finished_at_utc": "2026-10-09T19:30:19.799347+00:00",
+        "elapsed_seconds": 58.161659,
+        "declared_and_reported_count": 7,
+        "exact_named_order": true,
+        "only_allowlisted_axioms": true,
+        "sorryAx_absent": true,
+        "driver_copy_matches_executed_bytes": true,
+        "authored_execution_receipt_sha256": "66a6f7b8ba80cd2ebc85cdd3172036486c8287366b441d48f9c91bdbfb2b6f6d",
+        "authored_checker_receipt_sha256": "f13ac80bcc925fc8026c691ce6ebb65c740546363aa4c3414cd893b6c73575dd"
+      },
+      "environment_receipt_sha256": "5fe2e92675452441a7bdfe04e5c17d5d60634c1459fca41e0991e9746809ad01",
+      "authored_runner_sha256": "34f2f0fd8d713568054cde716a94b777a3e25fda858ea19cba102894a0416ac8",
+      "authored_checker_sha256": "07efa4749836f88b3e3e724d5026fb4e9492840841aeb149ee3a963b4c932bea",
+      "direct_imports": [
+        "Math115.CompletionEncodingSize"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.CompletionEncodingSize": "6fe3bbf11d4271959fccdc0b1f294f7ac0bab37418c5b7e4f71efd240650520e"
+      },
+      "direct_dependency_olean_sha256": {
+        "Math115.CompletionEncodingSize": "726f81620777ca57ddb2b485a8b16daf8cb2783952bd3e7cafd01ad6f16b6195"
+      }
+    }
+  ],
+  "prerequisite_restorations": [
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.AlgorithmStatements",
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/AlgorithmStatements.lean",
+      "source_sha256": "7d5682872dfecf8d6c433347d0f6d2ceb305f84392951d57942aa0fe2f3c3501",
+      "olean_sha256": "07c078ef6c5dc3090a9f53ef36fa4ac9c2ce5891f95ced608de93419f227d781",
+      "ilean_sha256": "e6f0a966b7b9b119481a2005097e2c641a8adcb64714ef0affc4d6fa2b5b261a",
+      "exit_code": 0,
+      "source_unchanged": true,
+      "elapsed_seconds": 57.83998850011267,
+      "started_at_utc": "2026-10-09T19:12:17.813986+00:00",
+      "finished_at_utc": "2026-10-09T19:13:15.654685+00:00",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_log_empty": true
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.PublicInputLength",
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Machines/PublicInputLength.lean",
+      "source_sha256": "3bb1983124bf270888bd3d066b27b9fbcf5a30ce7f934e6a6a26034263aa7862",
+      "olean_sha256": "d8fa831d88c487ffc7dfeff61bb29d04431a7585671360c940bd7c714a29f251",
+      "ilean_sha256": "4051469e823e2bd0c3480c41bf2c749d8c602c6bf61f3218cbe82eacfd2bdb46",
+      "exit_code": 0,
+      "source_unchanged": true,
+      "elapsed_seconds": 15.654588708886877,
+      "started_at_utc": "2026-10-09T19:13:15.666117+00:00",
+      "finished_at_utc": "2026-10-09T19:13:31.321147+00:00",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compile_log_empty": true
+    }
+  ],
+  "prerequisite_author_receipt_sha256": "d2a56c5a9ced873fd7d5cf6ab61e52f82178a795d08d32805972a427d54049a7",
+  "scope": "Encoded margin/input size, entire supplied reserved bank, generic polynomial-time deterministic realizer composition, and direct public sampling-size scalar bounds.",
+  "precision_measure": "numeric h; not binary length log(h)",
+  "reservation_bound": {
+    "C": "12672000000 * 37^62",
+    "encoding_measure": "s=weight(margin list pair)+h+3",
+    "encoding_bound": "W <= C * 2^85 * s^170; p<=dimension",
+    "public_measure": "S=m+n+clog2(rowTotal+1)+h+1",
+    "public_bound": "W <= C * 5^85 * S^170; h>=1, p<=dimension",
+    "literal_input_and_bank_bound": "18*encodeSamplingInput.length+1+W <= (C*5^85+91)*S^170; equal row/column totals, h>=1, p<=dimension",
+    "quantity": "Reserved fair bits and input allowances; degree170 is not an instantiated sampler runtime exponent."
+  },
+  "generic_cost_composition": {
+    "hypothesis": "Supplied deterministic TreeTyped realizer F for f, with a PolynomialTime F witness; supplied Boolean word within reservation; p<=dimension.",
+    "conclusion": "For some polynomial P, F.cost(input)+weight(f(input))<=P(weight(margin pair)+numeric h+3).",
+    "witness": "If Q is the supplied realizer cost-plus-output polynomial, P=Q.comp inputEnvelope.",
+    "sampler_instantiation": false
+  },
+  "excluded_from_checkpoint": [
+    "Full physical sampler cost or accuracy theorem",
+    "Specific sampler PolynomialTime witness",
+    "Uniform fresh-coin generation or time-indexed random-tape law",
+    "Public parser/printer/RandomMachine instantiation",
+    "BoundedSamplingStatement",
+    "Fresh dependency-closure/cross-host/Comparator validation"
+  ],
+  "python_checkpoint": "No Python sampler test suite or benchmark rerun for this source/evidence publication.",
+  "independent_review": "formal/results/completion-input-size/source-review.json",
+  "artifacts_sha256": {
+    "formal/results/completion-input-size/EncodingSizeAxiomCheck.lean": "47774fd5818107753dc1c83ed6ccab75e0e6b491522e5f7d815df22b158affaf",
+    "formal/results/completion-input-size/CompletionEncodingSize-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/completion-input-size/CompletionEncodingSize-axiom-audit.log": "1a4a50b5ea5527dc4d0c2a7c41205ddea12983de468602c18cc962ab1cfa109d",
+    "formal/results/completion-input-size/PublicSizeAxiomCheck.lean": "b898ef5698c05ca9f1990037fa9a52cbbd1ccefc1de29cd2b0646854260e365d",
+    "formal/results/completion-input-size/CompletionPublicSize-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/completion-input-size/CompletionPublicSize-axiom-audit.log": "0341e2999f0f9cab2bc700707fa170003aab61d095efcd3e485ee6f340690b33",
+    "formal/results/completion-input-size/source-review.json": "a7fa3ab8fe54d109c9cf1df532a5422ae81477285823f53269bab31fe2b741db",
+    "docs/completion-input-size.md": "7cb81361acc5a0db05fcc302866fd348c77cd6c85fd9a2475a90330a73ff4e59"
+  }
+}

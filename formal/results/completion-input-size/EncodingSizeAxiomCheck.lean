@@ -1,0 +1,27 @@
+import Math115.CompletionEncodingSize
+
+#print axioms Math115.CompletionEncodingSize.Margins
+#print axioms Math115.CompletionEncodingSize.WordInput
+#print axioms Math115.CompletionEncodingSize.dimension
+#print axioms Math115.CompletionEncodingSize.massTotal
+#print axioms Math115.CompletionEncodingSize.measure
+#print axioms Math115.CompletionEncodingSize.bankCoefficient
+#print axioms Math115.CompletionEncodingSize.inputEnvelope
+#print axioms Math115.CompletionEncodingSize.pow_two_add_le
+#print axioms Math115.CompletionEncodingSize.nat_succ_le_pow_weight
+#print axioms Math115.CompletionEncodingSize.sum_add_two_le_pow_weight
+#print axioms Math115.CompletionEncodingSize.clog_sum_add_two_le_weight
+#print axioms Math115.CompletionEncodingSize.margin_weight_at_least_three
+#print axioms Math115.CompletionEncodingSize.measure_at_least_six
+#print axioms Math115.CompletionEncodingSize.dimension_at_least_eleven
+#print axioms Math115.CompletionEncodingSize.dimension_le_weight_square
+#print axioms Math115.CompletionEncodingSize.binary_mass_le_weight
+#print axioms Math115.CompletionEncodingSize.combinedSize_le_twice_measure_square
+#print axioms Math115.CompletionEncodingSize.bank_bound
+#print axioms Math115.CompletionEncodingSize.input_weight_bound
+#print axioms Math115.CompletionEncodingSize.reserved_program_work
+#print axioms Math115.CompletionEncodingSize.weight_nat_list_le_word_length
+#print axioms Math115.CompletionEncodingSize.margin_weight_le_literal_length
+#print axioms Math115.CompletionEncodingSize.measure_le_literal_length_numeric
+#print axioms Math115.CompletionEncodingSize.dimension_ofFn
+#print axioms Math115.CompletionEncodingSize.massTotal_ofFn

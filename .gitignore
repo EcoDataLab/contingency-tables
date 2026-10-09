@@ -38,3 +38,4 @@ overview.pdf
 !formal/results/completion-boolean-retry/*.log
 !formal/results/lattice-decoder/*.log
 !formal/results/completion-schedules/*.log
+!formal/results/completion-input-size/*.log

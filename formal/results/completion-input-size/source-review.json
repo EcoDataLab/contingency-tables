@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T19:39:28.103725+00:00",
+  "review_method": "Independent read-only mathematical/source review and hash-qualified readback of authored compiler/audit receipts. Actual compile and audit runs were performed by module authors; reviewers did not rerun them.",
+  "compiler_invoked_by_reviewer": false,
+  "source_edits_by_reviewer": false,
+  "source_publication_preparation": "Public driver/log copies preserve executed bytes; private absolute paths omitted. The stricter repository audit parser was separately applied to both raw logs.",
+  "modules": [
+    {
+      "module": "Math115.CompletionEncodingSize",
+      "source": "formal/Math115/CompletionEncodingSize.lean",
+      "source_sha256": "6fe3bbf11d4271959fccdc0b1f294f7ac0bab37418c5b7e4f71efd240650520e",
+      "olean_sha256": "726f81620777ca57ddb2b485a8b16daf8cb2783952bd3e7cafd01ad6f16b6195",
+      "ilean_sha256": "7277542e7cf88aae7d18cfa832b9220358a3c66b1ec53043fd6fe036924c9f85",
+      "declaration_count": 25,
+      "original_review_sha256": "3f6962123fcb1f5d5fd0ba91e6f0ba6de773c068a337832f4f7cbcb1ec0bf44d",
+      "reviewed_at_utc": "2026-10-09T19:25:00.243174+00:00",
+      "audit_driver": "formal/results/completion-input-size/EncodingSizeAxiomCheck.lean",
+      "audit_driver_sha256": "47774fd5818107753dc1c83ed6ccab75e0e6b491522e5f7d815df22b158affaf",
+      "compile_log": "formal/results/completion-input-size/CompletionEncodingSize-compile.log",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "audit_log": "formal/results/completion-input-size/CompletionEncodingSize-axiom-audit.log",
+      "audit_log_sha256": "1a4a50b5ea5527dc4d0c2a7c41205ddea12983de468602c18cc962ab1cfa109d",
+      "findings": [],
+      "strict_audit_checks": {
+        "actual_driver_order_exact": true,
+        "every_current_source_export_once": true,
+        "raw_output_contains_only_the_25_axiom_reports": true,
+        "only_standard_axioms": true,
+        "no_sorryAx": true,
+        "independent_parser_stricter_than_author_set_match_checker": true
+      },
+      "evidence_checks": {
+        "actual_source_compiled_directly": true,
+        "final_compile_log_empty": true,
+        "compiled_source_hash_matches_current": true,
+        "audited_import_is_actual_cached_compiled_module": true,
+        "source_object_ilean_compiler_driver_and_audit_log_hashes_match": true,
+        "prerequisite_restores": 2,
+        "full_dependency_closure_not_rebuilt": true
+      },
+      "mathematical_review": [
+        {
+          "topic": "Natural and list encodings",
+          "result": "For any x, x+1<=2^weight(x) follows from Nat.lt_size_self and binary size<=tree weight. Head+tail induction gives sum(xs)+2<=2^weight(xs), including the empty list. Ceiling-log then bounds clog2(sum(xs)+2) by list encoding weight."
+        },
+        {
+          "topic": "Dimensions and mass",
+          "result": "Margins are a pair of actual natural lists. E=weight(a)>=3. d=10+(rowLength+1)(columnLength+1)>=11 and d<=10+E^2. M=rowSum and clog2(M+2)<=E; no balanced-margin premise is needed for these size facts. ofFn bridges preserve the original Fin m/Fin n dimensions and exact row total."
+        },
+        {
+          "topic": "Numeric precision",
+          "result": "S=E+h+3>=6 uses numeric h. This is deliberately not a polynomial-in-log(h) assertion despite binary encoding of the precision field."
+        },
+        {
+          "topic": "Combined reservation measure",
+          "result": "N=d+clog2(M+2)+h+3<=S^2+S+10<=2S^2. Under the explicit p<=d hypothesis, prior reserved-bank arithmetic gives length<=C*2^85*S^170. The exponent170 is the bank/input-size conversion, not a final runtime degree."
+        },
+        {
+          "topic": "Complete supplied-word input weight",
+          "result": "weight(((a,h),bs))=2+E+weight(h)+weight(bs)<=E+4h+4+4length(bs)<=4S+4*C*2^85*S^170. The input envelope pays the entire supplied bank and pair/list/natural encoding constants."
+        },
+        {
+          "topic": "Generic work bridge",
+          "result": "reserved_program_work quantifies over any supplied deterministic Realizer f with PolynomialTime F, arbitrary Codec output B, p<=dimension(a), and bs.length<=the complete reservation. It preserves F.cost+weight(f input). Extracting Q and taking P=Q.comp(inputEnvelope) is justified by polynomial monotonicity. Feasibility, balanced totals, uniform randomness, TV, coin generation, public printing, and a specific physical sampler are not hypotheses or conclusions."
+        },
+        {
+          "topic": "Literal margin conversion",
+          "result": "Each public natural word has length Nat.size+1, so tree list weight<=4*natural-word total length+1. Two encoded dimension words absorb the pair/list constants, giving E<=4*encodeMargins.length and S<=4*(encodeMargins.length+h+3), including zero dimensions. This source does not export a conversion to Algorithms.samplingSize or instantiate BoundedSamplingStatement; the imported upstream input-length theorem and plan remain separate routes."
+        }
+      ],
+      "independent_arithmetic_checks": {
+        "cases": 300,
+        "method": "Independent integer calculation of actual binary tree-size formula on empty, zero, unequal, and large-natural margin lists; no bit bank or sampler executed",
+        "result": "All mass-log, dimensional, measure, and literal-margin inequalities passed."
+      },
+      "scope_limits": [
+        "This is a generic deterministic cost-and-output remeasurement bridge, not a final compiled physical sampler cost theorem.",
+        "The supplied Boolean list is part of the deterministic input; actual fresh coin generation and time-indexed tape law require separate execution/machine composition.",
+        "A full runtime degree would depend on the supplied realizer polynomial witness; neither degree85 nor degree170 is that degree.",
+        "The current LatticeSamplerCost draft and public parser/printer/RandomMachine instantiation remain outside this compiled module.",
+        "Compilation and axiom evidence were independently hash-checked, not rerun by this reviewer.",
+        "Existing pinned dependency objects, Lean kernel/toolchain, and official package cache remain trusted; no fresh full closure, cross-host reproduction, or Comparator replay is claimed."
+      ]
+    },
+    {
+      "module": "Math115.CompletionPublicSize",
+      "source": "formal/Math115/CompletionPublicSize.lean",
+      "source_sha256": "b7d04bd5956a33ddbdd04c36e8b4a79f571d4109c7e297af04e38c1734a9eb30",
+      "olean_sha256": "009b4ec9771492a3c6440a42d251b746ae091f26e1f43f466711f108b954abe3",
+      "ilean_sha256": "d2f899d7ecd503c00ffc6d65695fa30c0554de87703069e81009422a31889246",
+      "declaration_count": 7,
+      "original_review_sha256": "35a471d094bf0419915d26c39da8322e0d371a5427d53e4797ce3c43207e403b",
+      "reviewed_at_utc": "2026-10-09T19:37:16.001684+00:00",
+      "audit_driver": "formal/results/completion-input-size/PublicSizeAxiomCheck.lean",
+      "audit_driver_sha256": "b898ef5698c05ca9f1990037fa9a52cbbd1ccefc1de29cd2b0646854260e365d",
+      "compile_log": "formal/results/completion-input-size/CompletionPublicSize-compile.log",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "audit_log": "formal/results/completion-input-size/CompletionPublicSize-axiom-audit.log",
+      "audit_log_sha256": "0341e2999f0f9cab2bc700707fa170003aab61d095efcd3e485ee6f340690b33",
+      "findings": [],
+      "evidence_checks": {
+        "actual_source_direct_compile_exit_zero": true,
+        "final_compile_log_empty": true,
+        "source_unchanged_and_object_ilean_match": true,
+        "compiler_binary_version_and_pin_match": true,
+        "all_seven_source_exports_exactly_match_executed_driver": true,
+        "all_audit_reports_exact_order_and_no_extra_output": true,
+        "only_standard_three_axioms_no_sorryAx": true,
+        "already_reviewed_EncodingSize_source_and_object_unchanged": true,
+        "author_initial_prerequisite_restore_count": 0
+      },
+      "hypothesis_review": [
+        {
+          "theorem": "clog_mass_add_two_le",
+          "premises": "M natural; no equal-total or precision premise",
+          "result": "clog2(M+2)<=clog2(M+1)+1 follows from M+2<=2(M+1), monotonicity, product ceiling-log, and clog2(2)=1; zero totals and binary power boundaries included."
+        },
+        {
+          "theorems": [
+            "samplingSize_at_least_two",
+            "combinedSize_public_bound"
+          ],
+          "premises": "row margins r:Fin m->Nat, column count n, numeric h>=1; no column margins or equal-total premise needed",
+          "result": "S=m+n+clog2(M+1)+h+1>=2. Both m+1 and n+1<=S; d<=10+S^2. The mass-size/precision part<=S+3, hence N<=S^2+S+13<=5S^2. The final inequality is valid at the minimum S=2; h=0 is not covered."
+        },
+        {
+          "theorem": "reservation_public_bound",
+          "premises": "p<=actual dimensionAllowance(Fin m,Fin n), numeric h>=1",
+          "result": "d>=11 is supplied by the exact dimension allowance. W<=C*N^85 and N<=5*S^2 give W<=C*5^85*S^170. Equal totals are unnecessary for this scalar count expression; actual catalogue identification remains separate."
+        },
+        {
+          "theorem": "literal_input_and_bank_public_bound",
+          "premises": "explicit equal row/column totals, p<=actual dimension, numeric h>=1",
+          "result": "Balanced totals are retained where the existing encodeSamplingInput_length lemma bounds both margin lists by the row total. With length<=5*S^2, S^2<=S^170 and 1<=S^170, 18*length+1+W<=(C*5^85+91)*S^170. The 91 is exactly 18*5+1."
+        }
+      ],
+      "composition_review": [
+        "The public S is exactly Algorithms.samplingSize and uses numeric h, matching the h>=1/equal-total domain of the original BoundedSamplingStatement.",
+        "The earlier CompletionEncodingSize already bounds supplied deterministic cost PLUS output weight in encoded margins plus numeric h. This module supplies the previously missing scalar comparison to the original public sampling size, while importing the unchanged compiled core.",
+        "For balanced margins and h>=1, the existing E<=4*literalMarginLength and encodeSamplingInput_length<=5*Spublic^2 imply E+h+3<=21*Spublic^2: literalMarginLength<=fullInputLength, and h+3<=Spublic+2<=Spublic^2. Thus the earlier generic work witness can mathematically be remeasured by polynomial composition/monotonicity. This cost theorem in public size is not itself one of the seven compiled exports.",
+        "LiteralCodec.weight_word in the pinned source is exactly 18*literal-symbol length+1. The final scalar theorem therefore bounds literal input tree weight plus the complete reservation length; it is not the nested Bool-list input weight itself, whose 4*word-length bound is paid inside the existing finite-word execution machinery.",
+        "No actual sampler realizer, coin-generation cost, printer/parser, fixed RandomMachine, output feasibility, TV, or BoundedSamplingStatement instantiation is asserted by these seven exports. Those still require the separate physical/program composition.",
+        "Exponent170 is a conservative public-measure bank/input allowance. A final runtime polynomial would depend on its separately instantiated machine/realizer witness; no final runtime degree follows here."
+      ],
+      "independent_arithmetic_checks": {
+        "reservation_cases": 3240,
+        "balanced_literal_cases": 2865,
+        "domains": "m,n in0,1,2,5,10,64; row entries0,1,2,2^64-1,2^64,2^256; h in1,2,10,64,4096; p in0,floor(d/2),d; balanced columns concentrate total in first column or use empty zero-total columns",
+        "result": "All log-gap, public combined-size, reservation, balanced input-length and literal-input-plus-bank inequalities passed. No bank/program/sampler execution."
+      },
+      "scope_limits": [
+        "Existing cached dependencies/toolchain/mathlib remain trusted; no fresh full closure, Linux, Thor, or Comparator verification performed by reviewer.",
+        "Compile and audit evidence was independently hash-checked and parsed, not rerun.",
+        "Equal-total and h>=1 hypotheses have not been removed; malformed/unbalanced public input lengths are outside the final literal bound.",
+        "Degree170 is not an optimized or measured runtime exponent.",
+        "No source edits, public edits, commits, or remote machine changes were performed."
+      ]
+    }
+  ],
+  "evidence_checks": {
+    "source_object_ilean_compiler_driver_and_log_hashes_match": true,
+    "original_independent_review_hashes_match": true,
+    "all_reviewed_artifacts_still_match_frozen_hashes": true,
+    "clean_compile_logs_empty": true,
+    "exact_named_audits_25_plus_7": true,
+    "all_current_source_exports_requested_once": true,
+    "exact_report_order_and_no_extra_compiler_output": true,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "no_sorryAx": true,
+    "actual_imported_cached_objects_match_compiled_attempt_objects": true,
+    "numeric_precision_and_balanced_total_premises_preserved": true,
+    "generic_realizer_work_not_an_instantiated_sampler": true
+  },
+  "mathematical_scope": "Encoded margins and deterministic supplied-word cost remeasurement; scalar whole-bank and literal-input allowance in Algorithms.samplingSize. The public-size scalar exports do not themselves export a composed public-size sampler cost theorem.",
+  "limits": [
+    "Existing dependency objects, official package cache, and pinned Lean kernel/toolchain remain trusted.",
+    "Two upstream prerequisites were restored for EncodingSize, not a full closure rebuild. PublicSize required no further restoration.",
+    "No fresh dependency-closure, cross-host, or Comparator reproduction is claimed.",
+    "Numeric h is included in the size measure; no polynomial-in-log(h) assertion.",
+    "Degree170 is a reservation/input allowance exponent, not a final machine runtime exponent.",
+    "Supplied deterministic realizer cost includes output weight; a specific sampler witness, fresh random tape, parser/printer and public RandomMachine remain separate work.",
+    "Independent integer boundary checks supplement source review; they are not sampler runs or performance measurements."
+  ]
+}

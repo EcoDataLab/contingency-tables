@@ -1,0 +1,9 @@
+'Math115.CompletionPublicSize.bankCoefficient' depends on axioms: [propext]
+'Math115.CompletionPublicSize.wordMeasureCoefficient' depends on axioms: [propext]
+'Math115.CompletionPublicSize.clog_mass_add_two_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionPublicSize.samplingSize_at_least_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionPublicSize.combinedSize_public_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionPublicSize.reservation_public_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionPublicSize.literal_input_and_bank_public_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

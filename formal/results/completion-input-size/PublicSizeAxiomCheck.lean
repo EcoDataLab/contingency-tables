@@ -1,0 +1,9 @@
+import Math115.CompletionPublicSize
+
+#print axioms Math115.CompletionPublicSize.bankCoefficient
+#print axioms Math115.CompletionPublicSize.wordMeasureCoefficient
+#print axioms Math115.CompletionPublicSize.clog_mass_add_two_le
+#print axioms Math115.CompletionPublicSize.samplingSize_at_least_two
+#print axioms Math115.CompletionPublicSize.combinedSize_public_bound
+#print axioms Math115.CompletionPublicSize.reservation_public_bound
+#print axioms Math115.CompletionPublicSize.literal_input_and_bank_public_bound

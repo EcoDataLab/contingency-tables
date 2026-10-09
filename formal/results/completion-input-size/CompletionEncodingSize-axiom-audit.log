@@ -1,0 +1,27 @@
+'Math115.CompletionEncodingSize.Margins' does not depend on any axioms
+'Math115.CompletionEncodingSize.WordInput' does not depend on any axioms
+'Math115.CompletionEncodingSize.dimension' does not depend on any axioms
+'Math115.CompletionEncodingSize.massTotal' depends on axioms: [propext]
+'Math115.CompletionEncodingSize.measure' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionEncodingSize.bankCoefficient' depends on axioms: [propext]
+'Math115.CompletionEncodingSize.inputEnvelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionEncodingSize.pow_two_add_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionEncodingSize.nat_succ_le_pow_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionEncodingSize.sum_add_two_le_pow_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionEncodingSize.clog_sum_add_two_le_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionEncodingSize.margin_weight_at_least_three' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionEncodingSize.measure_at_least_six' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionEncodingSize.dimension_at_least_eleven' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionEncodingSize.dimension_le_weight_square' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionEncodingSize.binary_mass_le_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionEncodingSize.combinedSize_le_twice_measure_square' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionEncodingSize.bank_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionEncodingSize.input_weight_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionEncodingSize.reserved_program_work' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionEncodingSize.weight_nat_list_le_word_length' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionEncodingSize.margin_weight_le_literal_length' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionEncodingSize.measure_le_literal_length_numeric' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionEncodingSize.dimension_ofFn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionEncodingSize.massTotal_ofFn' depends on axioms: [propext, Classical.choice, Quot.sound]

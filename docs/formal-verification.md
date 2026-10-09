@@ -29,6 +29,16 @@ The [receipt](../formal/results/completion-schedules/verification.json)
 does not cover the separate physical wrappers or the final outer program.
 These 56 declarations have not changed the aggregate or Linux counts above.
 
+The [input-size proofs](completion-input-size.md) add two more isolated modules
+with 25+7 standard-axiom audits and empty successful compile logs. They connect
+binary margins and the reserved bank to the original public sampling-size
+measure, with numeric precision `h`, and provide generic cost composition for
+a supplied deterministic polynomial-time realizer. Equal totals are explicit
+in the literal public-input bound. The [receipt](../formal/results/completion-input-size/verification.json)
+and independent frozen-source review cover these 32 declarations. The complete
+sampler and random-machine cost composition remain separate; the aggregate
+and Linux counts remain unchanged.
+
 ## Reproduction
 
 From the repository root, with Git, curl, Python 3, and a C toolchain installed:

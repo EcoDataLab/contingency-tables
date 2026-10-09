@@ -24,6 +24,7 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 | Executable Boolean codec and retries | 25 additional isolated Lean audits identify the signed decoder and consecutive independent word bank with the retry law for a supplied fine draw; six native evaluations passed |
 | Binary-list completion decoder | 52 additional isolated Lean audits prove exact decoding and polynomial charged machine cost in the binary input size; nine native boundary checks passed |
 | Explicit error and random-bit schedules | 56 additional isolated Lean audits bound all four scalar errors and the entire reserved bit bank; connecting these schedules to the complete physical program remains separate |
+| Encoded input and public-size bounds | 32 additional isolated Lean audits bound the reserved bank in the original sampling-size measure and give cost composition for a supplied polynomial-time realizer; precision is measured by numeric `h` |
 | Limit of stationary rejection | A reviewed ideal-scale family has `p²s→1`, so the unchanged rule's quadratic stationary-trial cost is unavoidable in worst-case order; eight exact finite checks |
 | Smaller padding threshold | Actual ordinary-table counts prove half unpadding acceptance at `U=47d⁵`, with a smaller shape-aware alternative |
 | Limit of this padding construction | A counting argument forces U=Ω(Ln²) in a 2×n family if acceptance stays bounded away from zero |
@@ -46,6 +47,7 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 - [Executable Boolean codec and retries](docs/completion-boolean-program.md): the additional signed decoder, independent word bank, frozen proof receipt, and native evaluations.
 - [Binary-list completion decoder](docs/completion-list-decoder.md): exact encoded table semantics and a polynomial charged machine-cost proof for the decoder.
 - [Explicit completion schedules](docs/completion-schedules.md): walk lengths, separate transition/terminal precisions, and a proved polynomial allowance for reserved random bits.
+- [Completion input-size bounds](docs/completion-input-size.md): binary margin encodings, the public sampling-size measure, and generic deterministic cost composition.
 - [Stationary-rejection obstruction](docs/stationary-success-obstruction.md): why the extra defect mass can force quadratic retries even when ordinary unpadding always succeeds.
 - [Dense-compatible ideal chain](docs/reduced-small-chain.md), [original-chain comparison](docs/small-chain-gap.md), and [sequential padding](docs/sequential-padding.md).
 - [Transport proof](docs/transport-localization.md), [switching and scale proof](docs/scale-audit.md), [error budgets](docs/error-budgets.md), and [independent mathematical review](docs/independent-review.md).
