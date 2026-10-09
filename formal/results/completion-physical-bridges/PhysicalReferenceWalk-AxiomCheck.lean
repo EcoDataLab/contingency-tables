@@ -1,0 +1,22 @@
+import Math115.PhysicalReferenceWalk
+#print axioms Math115.PhysicalReferenceWalk.referenceTransitionLaw_cast
+#print axioms Math115.PhysicalReferenceWalk.referenceStationaryLaw_cast
+#print axioms Math115.PhysicalReferenceWalk.referenceChain_pi_lower
+#print axioms Math115.PhysicalReferenceWalk.referenceWalkLaw
+#print axioms Math115.PhysicalReferenceWalk.referenceWalkLaw_cast
+#print axioms Math115.PhysicalReferenceWalk.referenceWalkLaw_variation
+#print axioms Math115.PhysicalReferenceWalk.referenceJointLaw
+#print axioms Math115.PhysicalReferenceWalk.referenceJointLaw_variation_le
+#print axioms Math115.PhysicalReferenceWalk.referenceJointLaw_variation
+#print axioms Math115.PhysicalReferenceWalk.referenceOuterLaw
+#print axioms Math115.PhysicalReferenceWalk.referenceOuterLaw_variation
+#print axioms Math115.PhysicalReferenceWalk.referenceApproximateJoint_variation
+#print axioms Math115.PhysicalReferenceWalk.referenceApproximateOuter_variation_le
+#print axioms Math115.PhysicalReferenceWalk.referenceApproximateOuter_variation
+#print axioms Math115.PhysicalReferenceWalk.idealReference_poincare
+#print axioms Math115.PhysicalReferenceWalk.idealReferenceOuterLaw
+#print axioms Math115.PhysicalReferenceWalk.idealReferenceOuterLaw_variation
+#print axioms Math115.PhysicalReferenceWalk.idealReferenceOracleOuterLaw
+#print axioms Math115.PhysicalReferenceWalk.idealReferenceOracleOuterLaw_variation
+#print axioms Math115.PhysicalReferenceWalk.denseReferenceOuterLaw
+#print axioms Math115.PhysicalReferenceWalk.denseReferenceOuterLaw_variation

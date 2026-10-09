@@ -1,0 +1,57 @@
+'Math115.PhysicalEmptyCompletion.ReconstructionInput' does not depend on any axioms
+'Math115.PhysicalEmptyCompletion.retainedData' does not depend on any axioms
+'Math115.PhysicalEmptyCompletion.retainedDataRealizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.polynomial_retainedData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.rowInput' does not depend on any axioms
+'Math115.PhysicalEmptyCompletion.rowInputRealizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.polynomial_rowInput' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.columnInput' does not depend on any axioms
+'Math115.PhysicalEmptyCompletion.columnInputRealizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.polynomial_columnInput' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.reconstructViews' depends on axioms: [propext]
+'Math115.PhysicalEmptyCompletion.reconstructViewsRealizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.polynomial_reconstructViews' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.retainedData_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.storedRows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.storedColumns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.allSmallCompletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.allSmallCompletion_views' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.allSmallCompletion_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.allSmallCompletion_column' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.allSmallCompletion_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.allSmallCompletion_pointLaw_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalEmptyCompletion.allSmall_of_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.emptyCompletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.emptyCompletion_views' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.emptyCompletion_pointLaw_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalEmptyCompletion.empty_of_not_both' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.emptyCompletionOfNotBoth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.emptyCompletionOfNotBoth_views' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalEmptyCompletion.emptyCompletionOfNotBoth_pointLaw_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalEmptyCompletion.idealEmptyCompletion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.idealEmptyCompletion_pointLaw_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalEmptyCompletion.profileInput' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.reconstructViews_profile_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalEmptyCompletion.computedInput' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalEmptyCompletion.computedInput_eq_profileInput' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalEmptyCompletion.reconstructViews_computed_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalEmptyCompletion.reconstructViews_computed_not_both_code' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalEmptyCompletion.empty_of_no_large_lists' depends on axioms: [propext, Quot.sound]

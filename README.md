@@ -23,6 +23,7 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 | Completion oracle at `L=3d` | Lean proves the full accepted-preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at `k=d¹²` |
 | Canonical dense completion at every state | 66 Lean audits included in the focused aggregate discharge the fine-law accuracy premise, assemble the actual physical completion family, and prove its normalized outer-law error; encoded outer-program and runtime integration remain open |
 | Encoded completion program | 46 additional isolated Lean audits connect the computed dense draws, signed decoder, retries, and computed fallback to the analyzed output law, with polynomial charged cost in the full supplied input |
+| Computed physical completion bridges | 193 additional isolated Lean audits connect actual large-index lists and completion outputs to each physical fiber, identify computed proposal laws, and specialize finite-law schedules and empty completions; the full Boolean walker remains separate |
 | Executable Boolean codec and retries | 25 Lean audits included in the focused aggregate identify the signed decoder and consecutive independent word bank with the retry law for a supplied fine draw; six native evaluations passed |
 | Binary-list completion decoder | 52 Lean audits included in the focused aggregate prove exact decoding and polynomial charged machine cost in the binary input size; nine native boundary checks passed |
 | Explicit error and random-bit schedules | 56 Lean audits included in the focused aggregate bound all four scalar errors and the entire reserved bit bank; connecting these schedules to the complete physical program remains separate |
@@ -31,7 +32,7 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 | Smaller padding threshold | Actual ordinary-table counts prove half unpadding acceptance at `U=47d⁵`, with a smaller shape-aware alternative |
 | Limit of this padding construction | A counting argument forces U=Ω(Ln²) in a 2×n family if acceptance stays bounded away from zero |
 | Smaller accuracy and counting-estimator budgets | Exact rational allocations and independent-block median schedules; transition allowances and observable-evaluation costs are reported separately |
-| Lean verification | 869 integrated declaration audits: 863 focused and six standalone, using standard foundational axioms; the new encoded completion program has 46 separate isolated audits |
+| Lean verification | 869 integrated declaration audits: 863 focused and six standalone; 46 encoded-program and 193 physical-bridge audits remain separate, all using standard foundational axioms |
 | Exact reference algorithms | Uniform and weighted small-fiber DP, cactus cycle coordinates, and graph-block factorization, with explicit work limits |
 | Exact feasible metric range | Rational min-cost flow with primal/dual and infeasibility-cut certificates; no table enumeration |
 | Better fixed cycle mixtures | Exact certificates: over 63% larger gap on the 42-table fixture, beating every rectangle-only mixture; no general mixing or runtime claim |
@@ -48,6 +49,7 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 - [Completion by dilation and rounding](docs/completion-oracle-dilation.md), its [finite-table and geometry proofs](docs/completion-oracle-formalization.md), and [approximate-oracle error propagation](docs/physical-approximate-oracle.md): the completion route at the smaller outer scales and its remaining program obligations.
 - [Canonical dense completion laws](docs/completion-dense-law.md): the pinned dense draw, analytic premise discharge, all-state residual inputs, and instantiated outer probability law.
 - [Encoded completion program](docs/completion-sampler-program.md): computed dense inputs, exact whole-word and prefix semantics, computed fallback, and polynomial charged cost.
+- [Computed physical bridges](docs/completion-physical-bridges.md): actual list ordering, proposal laws, physical completion accuracy, finite-law schedules, and empty-block reconstruction.
 - [Executable Boolean codec and retries](docs/completion-boolean-program.md): the additional signed decoder, independent word bank, frozen proof receipt, and native evaluations.
 - [Binary-list completion decoder](docs/completion-list-decoder.md): exact encoded table semantics and a polynomial charged machine-cost proof for the decoder.
 - [Explicit completion schedules](docs/completion-schedules.md): walk lengths, separate transition/terminal precisions, and a proved polynomial allowance for reserved random bits.
@@ -79,7 +81,7 @@ python3 scripts/verify_sources.py
 
 The archived audit and numerical mixture search need NumPy. Saved mixture certificates replay using only exact standard-library arithmetic. Source verification downloads only files in the pinned manifest and checks their Git blob hashes. It does not execute upstream code.
 
-The current [completion aggregate](formal/results/completion-aggregate/verification.json) passed **869 Lean declaration audits: 863 focused plus six standalone**. It integrates 231 previously isolated declarations across nine modules into the default focused target. The encoded completion program's 46 audits remain separate. The aggregate reused validated dependency objects; fresh Linux verification of this expanded scope remains pending.
+The current [completion aggregate](formal/results/completion-aggregate/verification.json) passed **869 Lean declaration audits: 863 focused plus six standalone**. It integrates 231 previously isolated declarations across nine modules into the default focused target. The encoded completion program's 46 audits and the [physical bridges' 193 audits](formal/results/completion-physical-bridges/verification.json) remain separate. These scopes contain disjoint named declarations. The aggregate reused validated dependency objects; fresh Linux verification of this expanded scope remains pending.
 
 The historical eighth checkpoint passed **638 Lean declaration audits**, adding 212 declarations across nine modules. The unchanged Python sources retain the seventh checkpoint's **237 passing tests**; source-hash continuity was checked again. The [Python receipt](reports/checkpoint-verification.json) and [Lean receipts](formal/results/) record environments, source hashes, and exact scope.
 

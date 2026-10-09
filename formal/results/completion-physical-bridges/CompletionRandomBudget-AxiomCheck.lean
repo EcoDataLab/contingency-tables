@@ -1,0 +1,7 @@
+import Math115.CompletionRandomBudget
+#print axioms Math115.CompletionRandomBudget.physicalSmallCount_le_dimension
+#print axioms Math115.CompletionRandomBudget.completionReservation_eq_reserved
+#print axioms Math115.CompletionRandomBudget.physicalTotalReservedBits
+#print axioms Math115.CompletionRandomBudget.physicalTotalReservedBits_eq_reservation
+#print axioms Math115.CompletionRandomBudget.physicalTotalReservedBits_separated
+#print axioms Math115.CompletionRandomBudget.physicalTotalReservedBits_combined

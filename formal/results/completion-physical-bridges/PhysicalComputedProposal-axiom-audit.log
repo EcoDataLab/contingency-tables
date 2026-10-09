@@ -1,0 +1,91 @@
+'Math115.PhysicalComputedProposal.profileRows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.profileColumns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.ProfileFeasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.profile_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.physicalProfile_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.profileFeasible_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.stateOfFeasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.stateOfFeasible_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.profileFeasible_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.decodeProfile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.decodeProfile_eq_some_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.profileFeasible_of_lineTests' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalComputedProposal.profileFeasible_lineTests' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.profileTest_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.profileTest_code_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.ArithmeticRepair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.ArithmeticEdge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.arithmeticRepair_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.arithmeticEdge_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.mem_rawCodeNeighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.mem_codeNeighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.physicalProposalLaw_mass_some' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalComputedProposal.stateCode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.stateCodeData' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.decodeStateCode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.decode_stateCode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.stateCode_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.decodeStateCode_eq_some_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalComputedProposal.codeNeighborStates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.codeNeighborStates_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.mem_codeNeighborStates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.codeNeighborStates_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.codeNeighborStates_codes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.codeNeighbors_decode_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.decodedCodeProposal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.decodedCodeProposal_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.decodedCodeProposal_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.decodedCodeProposal_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.computedCatalog' depends on axioms: [propext]
+'Math115.PhysicalComputedProposal.computedCatalog_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.mem_computedCatalog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.catalogCell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.catalogCell_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.catalogCell_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.computedCellEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.computedCellEquiv_catalog' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.computedStateCode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.computedProposal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.computedProposal_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.computedProposal_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.cubeNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.polynomial_cubeNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.idealMarginThreshold' depends on axioms: [propext]
+'Math115.PhysicalComputedProposal.idealMarginThresholdRealizer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalComputedProposal.polynomial_idealMarginThreshold' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalComputedProposal.idealMarginCatalog' depends on axioms: [propext]
+'Math115.PhysicalComputedProposal.idealMarginCatalogRealizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.polynomial_idealMarginCatalog' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalComputedProposal.idealPrepareProfileInput' depends on axioms: [propext]
+'Math115.PhysicalComputedProposal.idealPrepareProfileInputRealizer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalComputedProposal.polynomial_idealPrepareProfileInput' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalComputedProposal.idealPreparedProposal' depends on axioms: [propext]
+'Math115.PhysicalComputedProposal.idealPreparedProposalRealizer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalComputedProposal.polynomial_idealPreparedProposal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalComputedProposal.idealMarginThreshold_ofFn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.idealPrepareProfileInput_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalComputedProposal.idealPreparedProposal_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.idealComputedProposal_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalComputedProposal.idealPreparedProposal_law' depends on axioms: [propext, Classical.choice, Quot.sound]

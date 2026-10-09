@@ -1,0 +1,16 @@
+'Math115.CompletionRandomBudget.physicalSmallCount_le_dimension' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionRandomBudget.completionReservation_eq_reserved' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionRandomBudget.physicalTotalReservedBits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.physicalTotalReservedBits_eq_reservation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionRandomBudget.physicalTotalReservedBits_separated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionRandomBudget.physicalTotalReservedBits_combined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

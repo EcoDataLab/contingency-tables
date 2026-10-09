@@ -1,0 +1,6 @@
+'Math115.CompletionOuterSchedule.denseOuterLaw_explicit_accuracy_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionOuterSchedule.denseOuterLaw_explicit_accuracy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

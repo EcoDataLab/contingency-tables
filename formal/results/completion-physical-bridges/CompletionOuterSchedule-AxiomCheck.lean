@@ -1,0 +1,3 @@
+import Math115.CompletionOuterSchedule
+#print axioms Math115.CompletionOuterSchedule.denseOuterLaw_explicit_accuracy_half
+#print axioms Math115.CompletionOuterSchedule.denseOuterLaw_explicit_accuracy

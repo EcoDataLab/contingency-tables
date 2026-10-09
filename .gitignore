@@ -42,3 +42,4 @@ overview.pdf
 !formal/results/completion-dense-law/*.log
 !formal/results/completion-program/*.log
 !formal/results/completion-aggregate/*.log
+!formal/results/completion-physical-bridges/*.log

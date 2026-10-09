@@ -1,0 +1,32 @@
+'Math115.AdaptiveDenseCompletion.denseRows_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.denseColumns_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.fineBits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.fineBits_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.fineDraw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.fineDraw_canonicalCode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.fineDraw_matrixCode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.fineLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.fineLaw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.fineBits_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.completionLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.completionLaw_variation_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.AdaptiveDenseCompletion.completionLaw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.completionBits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.completionBits_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.completionDraw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.completionDraw_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.completionDraw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.table_subsingleton_of_row_card_le_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.AdaptiveDenseCompletion.table_subsingleton_of_column_card_le_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.AdaptiveDenseCompletion.table_subsingleton_of_zero_tail' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.AdaptiveDenseCompletion.singletonDraw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.singletonDraw_pointLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AdaptiveDenseCompletion.singletonDraw_law' depends on axioms: [propext, Classical.choice, Quot.sound]

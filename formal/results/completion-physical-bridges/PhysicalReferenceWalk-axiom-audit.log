@@ -1,0 +1,35 @@
+'Math115.PhysicalReferenceWalk.referenceTransitionLaw_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceStationaryLaw_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceChain_pi_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceWalkLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceWalkLaw_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceWalkLaw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceJointLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceJointLaw_variation_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceJointLaw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceOuterLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceOuterLaw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceApproximateJoint_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceApproximateOuter_variation_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalReferenceWalk.referenceApproximateOuter_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalReferenceWalk.idealReference_poincare' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.idealReferenceOuterLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.idealReferenceOuterLaw_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalReferenceWalk.idealReferenceOracleOuterLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.idealReferenceOracleOuterLaw_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalReferenceWalk.denseReferenceOuterLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceWalk.denseReferenceOuterLaw_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

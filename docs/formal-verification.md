@@ -68,10 +68,27 @@ the proved completion hypotheses. Its polynomial charged-cost proof includes
 execution and output weight in the full input with supplied Boolean bits;
 it evaluates all reserved trials before selecting the first success.
 The [receipt](../formal/results/completion-program/verification.json) preserves
-source, object, dependency and audit hashes. The physical list-order bridge,
-outer program and public random-machine composition remain separate. These
+source, object, dependency and audit hashes. The physical list-order bridge
+is covered by the subsequent checkpoint below; outer-program and public
+random-machine composition remain separate. These
 46 audits remain isolated, excluded from the current 863 focused and six
 standalone counts and from the historical Linux result.
+
+The [computed physical bridges](completion-physical-bridges.md) add seven
+isolated modules with `24+2+6+69+21+32+39=193` standard-axiom audits.
+They verify computed physical proposals, actual large-list ordering and
+all-state completion accuracy, reference-walk and explicit finite-law schedule
+specializations, and unique empty-block reconstruction. Adaptive dense
+parameters remain supplied under explicit conditions. The
+[receipt](../formal/results/completion-physical-bridges/verification.json)
+binds seven exact sources, seven delivered objects, raw compiler and audit
+logs, and the authenticated 564-module dependency closure. Six objects were
+reused with verified hashes; `ListedLatticeCompletion` was freshly compiled
+with one retained style warning. Earlier fresh predecessor receipts for
+`AdaptiveDenseCompletion` and `CompletionRandomBudget` attest log hashes;
+those earlier logs were not delivered. The 193 names are disjoint from the
+869 aggregate and the isolated 46. Neither the complete Boolean walker nor
+its public-machine runtime is certified by this scope.
 
 ## Reproduction
 
@@ -464,6 +481,8 @@ accuracy conditional on fine-law accuracy. The separate 66-declaration dense
 completion receipt now instantiates the canonical dense law and every physical
 oracle. The subsequent 46-declaration encoded completion receipt identifies
 the list program with that completion law and proves its polynomial charged
-cost for supplied input. These receipts do not yet prove the
+cost for supplied input. The subsequent 193-declaration physical-bridge receipt
+connects actual list ordering and computed proposals to the physical laws.
+These receipts do not yet prove the
 complete encoded outer program or its machine runtime. Official Mathlib cache
 artifacts and Lean bootstrap binaries remain trusted.

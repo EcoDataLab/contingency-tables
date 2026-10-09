@@ -146,9 +146,15 @@ It proves exact whole-word and prefix output semantics, computes its own
 coarse fallback, and bounds charged execution plus output weight in the
 complete supplied input.
 
-1. Identify computed large-row/column lists and reference indices with the
-   noncomputable reindexing used by the proved probability laws.
-2. Identify the complete encoded outer walk and its fresh random segments
+The [193-declaration physical-bridge checkpoint](completion-physical-bridges.md)
+identifies the actual large-row/column lists and reference indices, connects
+the encoded completion output to every physical reference fiber, and proves
+the computed proposal law. It also specializes the finite-law schedule and
+reconstructs unique empty-block completions.
+
+1. Identify the Boolean transition step and complete encoded outer walk
+   with the proved physical proposal and completion laws.
+2. Identify the outer walk's initialization and fresh random segments
    with the proved transition and terminal laws.
 3. Charge the reserved bits, arithmetic, dense calls and outer walk in the
    literal public random-machine model.

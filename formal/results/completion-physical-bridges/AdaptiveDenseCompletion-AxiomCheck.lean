@@ -1,0 +1,25 @@
+import Math115.AdaptiveDenseCompletion
+#print axioms Math115.AdaptiveDenseCompletion.denseRows_lower
+#print axioms Math115.AdaptiveDenseCompletion.denseColumns_lower
+#print axioms Math115.AdaptiveDenseCompletion.fineBits
+#print axioms Math115.AdaptiveDenseCompletion.fineBits_pos
+#print axioms Math115.AdaptiveDenseCompletion.fineDraw
+#print axioms Math115.AdaptiveDenseCompletion.fineDraw_canonicalCode
+#print axioms Math115.AdaptiveDenseCompletion.fineDraw_matrixCode
+#print axioms Math115.AdaptiveDenseCompletion.fineLaw
+#print axioms Math115.AdaptiveDenseCompletion.fineLaw_variation
+#print axioms Math115.AdaptiveDenseCompletion.fineBits_polynomial
+#print axioms Math115.AdaptiveDenseCompletion.completionLaw
+#print axioms Math115.AdaptiveDenseCompletion.completionLaw_variation_half
+#print axioms Math115.AdaptiveDenseCompletion.completionLaw_variation
+#print axioms Math115.AdaptiveDenseCompletion.completionBits
+#print axioms Math115.AdaptiveDenseCompletion.completionBits_bound
+#print axioms Math115.AdaptiveDenseCompletion.completionDraw
+#print axioms Math115.AdaptiveDenseCompletion.completionDraw_law
+#print axioms Math115.AdaptiveDenseCompletion.completionDraw_variation
+#print axioms Math115.AdaptiveDenseCompletion.table_subsingleton_of_row_card_le_one
+#print axioms Math115.AdaptiveDenseCompletion.table_subsingleton_of_column_card_le_one
+#print axioms Math115.AdaptiveDenseCompletion.table_subsingleton_of_zero_tail
+#print axioms Math115.AdaptiveDenseCompletion.singletonDraw
+#print axioms Math115.AdaptiveDenseCompletion.singletonDraw_pointLaw
+#print axioms Math115.AdaptiveDenseCompletion.singletonDraw_law

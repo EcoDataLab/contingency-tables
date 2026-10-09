@@ -1,0 +1,2540 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T21:22:39.305346+00:00",
+  "module_count": 7,
+  "total_audited_declarations": 193,
+  "count_arithmetic": "24+2+6+69+21+32+39=193 distinct named declarations",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "compiler_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+  "lake_sha256": "9780a6abfb6d751c7958f2fd7f696154bdda8b46c0de9755c4080ffb8a8788e6",
+  "platform": "Native Windows x86_64-w64-windows-gnu on Thor",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_checkout_base_commit": "b021f227a21c7e9252eae78c55ab09c404cc66cd",
+  "source_freeze": {
+    "formal/Math115/AdaptiveDenseCompletion.lean": "baf0166e2effbd3ab8c63644b40a96db70408215565b8293160b70507500f902",
+    "formal/Math115/CompletionOuterSchedule.lean": "be195d72cbeeb2ecea322ab52d46c36edd9ebebae32b2918d9c54600ff39ef97",
+    "formal/Math115/CompletionRandomBudget.lean": "6171f85f8d0c2e26304c4b30fb53e18d00ed74ec1b79661e466710a7704e1eb9",
+    "formal/Math115/PhysicalComputedProposal.lean": "5f2b0aaadd8a807ce2f7bbd67f6bf32543028cb70b6b159b7bdf2a70c390103a",
+    "formal/Math115/PhysicalReferenceWalk.lean": "b079d4782aee9231cd3356e4e734873976111fab5ee1b150cc36f45d98639c4a",
+    "formal/Math115/ListedLatticeCompletion.lean": "0ea157c4a458949c5b9dc8d8dceeaa93b2bd3ab9858b446e846f1357efda99bc",
+    "formal/Math115/PhysicalEmptyCompletion.lean": "2caa6e7704b069b6fe926dc70014dc015196179f7acb341f6c8072e0ce6395bd"
+  },
+  "method": "Six authenticated reused objects and one fresh compile; seven fresh direct Lean named audits. No Lean invocation during packaging.",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "strict_checker_sha256": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+  "strict_audit_method": "One ordered report for each named request, only the standard three axioms, and no additional output; all 193 raw/public reports were reparsed.",
+  "modules": [
+    {
+      "module": "Math115.AdaptiveDenseCompletion",
+      "source": "formal/Math115/AdaptiveDenseCompletion.lean",
+      "source_snapshot": "AdaptiveDenseCompletion-Source.lean",
+      "source_sha256": "baf0166e2effbd3ab8c63644b40a96db70408215565b8293160b70507500f902",
+      "olean_sha256": "2ee2569ac7a417da2f960928525a1779486ebd2b4e73ae266e67653d30305c66",
+      "ilean_sha256": "7581d7eb0f2b0b2f9c031748d00ce78280238921ca167486be718911e6198918",
+      "ilean_evidence": "Fresh immediate predecessor receipt attestation; ilean bytes are not delivered.",
+      "closure_sha256": "d65f3dc64bed62dccdb92003cddbf56c87064b20af04649407dee03f832b3066",
+      "authenticated_internal_closure_modules_including_self": 488,
+      "direct_imports": [
+        "Init",
+        "Math115.DenseLatticeCompletion",
+        "OAI.Combinatorics.ContingencyTables.Transport.FiniteDeterministicJoint"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.DenseLatticeCompletion": "91d13fa3d07c04904ccc1136e52aa50a69aa691b583805973ab77f37e08d7516",
+        "OAI.Combinatorics.ContingencyTables.Transport.FiniteDeterministicJoint": "e648a00cf92f4cf8e5bedd3bc7ad8a219f47d24c1a00d2e88c0f9f7462158ded"
+      },
+      "dependency_olean_sha256": {
+        "Math115.DenseLatticeCompletion": "1a7efac2f6ea11535495cd5b43a96ede0ed506d7100881a1bebc536bc1bb4e4b",
+        "OAI.Combinatorics.ContingencyTables.Transport.FiniteDeterministicJoint": "8ee5fadec9b97dfeec4c17cd60bcaacd5beea0d3cdb231e4a3037eec5b212849"
+      },
+      "declaration_count": 24,
+      "declarations": [
+        {
+          "name": "Math115.AdaptiveDenseCompletion.denseRows_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.denseColumns_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.fineBits",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.fineBits_pos",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.fineDraw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.fineDraw_canonicalCode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.fineDraw_matrixCode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.fineLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.fineLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.fineBits_polynomial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.completionLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.completionLaw_variation_half",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.completionLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.completionBits",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.completionBits_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.completionDraw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.completionDraw_law",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.completionDraw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.table_subsingleton_of_row_card_le_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.table_subsingleton_of_column_card_le_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.table_subsingleton_of_zero_tail",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.singletonDraw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.singletonDraw_pointLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.AdaptiveDenseCompletion.singletonDraw_law",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": true,
+        "original_compile_receipt_sha256": "fbda12784b659d2ca2eb028ad5df83c1cb6794e2a5787ba1bc3062cbadb65bbf",
+        "log": "AdaptiveDenseCompletion-compile.log",
+        "log_kind": "cache_reuse_marker",
+        "original_delivered_log_sha256": "8f8926018c43759c95da6b217b12ed6e3d363619206da30d7448583a730194fd",
+        "published_log_sha256": "e5c593b0dee716b343260f58bac825b22631b6ea9cfc8e53bd2aaae9d0c2896a",
+        "log_sanitization": [
+          {
+            "kind": "private_path_prefix_replacement",
+            "replacement": "<build>",
+            "count": 1
+          }
+        ],
+        "reuse_registered_at_utc": "2026-10-09T20:39:21.291913+00:00",
+        "bootstrap_manifest_sha256": "6b0b342b6f0510362658001aa8c26cf9f6fe8ffe28279eed6887996c21e20527",
+        "inherited_historical_metadata": {
+          "started_at_utc": "2026-10-09T20:32:24.922473+00:00",
+          "elapsed_seconds": 31.64604690001579
+        },
+        "inherited_historical_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-5>/formal",
+          "-o",
+          "<historical-build-5>/attempts/Math115.AdaptiveDenseCompletion/77539b5a922244f19d113bfebb8a77e7/module.olean",
+          "-i",
+          "<historical-build-5>/attempts/Math115.AdaptiveDenseCompletion/77539b5a922244f19d113bfebb8a77e7/module.ilean",
+          "<historical-workspace-5>/formal/Math115/AdaptiveDenseCompletion.lean"
+        ],
+        "immediate_predecessor_record": {
+          "module": "Math115.AdaptiveDenseCompletion",
+          "source": "formal/Math115/AdaptiveDenseCompletion.lean",
+          "source_sha256": "baf0166e2effbd3ab8c63644b40a96db70408215565b8293160b70507500f902",
+          "olean_sha256": "2ee2569ac7a417da2f960928525a1779486ebd2b4e73ae266e67653d30305c66",
+          "closure_sha256": "d65f3dc64bed62dccdb92003cddbf56c87064b20af04649407dee03f832b3066",
+          "exit_code": 0,
+          "source_unchanged": true,
+          "reused": false,
+          "started_at_utc": "2026-10-09T20:32:24.922473+00:00",
+          "completed_at_utc": "2026-10-09T20:32:56.568942+00:00",
+          "elapsed_seconds": 31.64604690001579,
+          "log_sha256": "7a000c409735dc78ec1f837981da90fdb4eaf0d6e7b691c817bcc72c01d2e85f",
+          "ilean_sha256": "7581d7eb0f2b0b2f9c031748d00ce78280238921ca167486be718911e6198918"
+        },
+        "immediate_predecessor_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-5>/formal",
+          "-o",
+          "<historical-build-5>/attempts/Math115.AdaptiveDenseCompletion/77539b5a922244f19d113bfebb8a77e7/module.olean",
+          "-i",
+          "<historical-build-5>/attempts/Math115.AdaptiveDenseCompletion/77539b5a922244f19d113bfebb8a77e7/module.ilean",
+          "<historical-workspace-5>/formal/Math115/AdaptiveDenseCompletion.lean"
+        ],
+        "compile_evidence_boundary": "No new compiler invocation occurred for this module in batch6. Its delivered log is a reuse marker. Inherited start/duration/argv are historical metadata, not batch6 elapsed execution. A fresh immediate predecessor is attested only by its successful bootstrap receipt and log digest; predecessor raw log bytes are not delivered. A reused predecessor does not establish a new origin compilation."
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "invocation_attempted": true,
+        "started_at_utc": "2026-10-09T20:44:44.933830+00:00",
+        "completed_at_utc": "2026-10-09T20:45:33.008353+00:00",
+        "elapsed_seconds": 48.07034099998418,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<audit-drivers>",
+          "<audit-drivers>/Audit_AdaptiveDenseCompletion.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<packages>/LeanSearchClient/.lake/build/lib/lean;<packages>/Qq/.lake/build/lib/lean;<packages>/aesop/.lake/build/lib/lean;<packages>/batteries/.lake/build/lib/lean;<packages>/importGraph/.lake/build/lib/lean;<packages>/mathlib/.lake/build/lib/lean;<packages>/plausible/.lake/build/lib/lean;<packages>/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "AdaptiveDenseCompletion-AxiomCheck.lean",
+        "driver_sha256": "f4ed86843b4dd14f68c27341e8274f366e995ee11c4815b2e7c9214841e92211",
+        "log": "AdaptiveDenseCompletion-axiom-audit.log",
+        "log_sha256": "9b3d82a1401107ba211415873de471c5fa8184ec78696f0696cc6c210e3638a0",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "ca744aa4ba90bdfe3b75cc37eb9ae677941b5099fe508ab8ced8777c723b5796",
+        "checks": {
+          "strict_named_report_count": 24,
+          "exact_name_order": true,
+          "no_extra_output": true,
+          "only_standard_axioms": true,
+          "no_sorryAx": true,
+          "expected_before_after_snapshots_identical": true,
+          "input_snapshot_entry_count": 1071,
+          "input_snapshot_canonical_json_sha256": "4727f90981bb783cc778319287dc024a55925982eb8ff60e02f2973996165990",
+          "exact_runtime_and_closure_snapshot_reconstructed": true,
+          "completed_record_sha256": "e5c00ec55ddda68b5d259846f22a8e2db370b26d28c887e21b04734a4d284bf5"
+        }
+      }
+    },
+    {
+      "module": "Math115.CompletionOuterSchedule",
+      "source": "formal/Math115/CompletionOuterSchedule.lean",
+      "source_snapshot": "CompletionOuterSchedule-Source.lean",
+      "source_sha256": "be195d72cbeeb2ecea322ab52d46c36edd9ebebae32b2918d9c54600ff39ef97",
+      "olean_sha256": "c3f8e2ecc3a538fb6d1a2a734e5cd8144ae90237e5ece1457f6bbe4f977ae8f1",
+      "ilean_sha256": null,
+      "ilean_evidence": "No ilean artifact delivered for this reused object.",
+      "closure_sha256": "c7cc26f90c4a6c57e9cec942c6858f05a93f219595edb3824b121a038b3e375a",
+      "authenticated_internal_closure_modules_including_self": 535,
+      "direct_imports": [
+        "Init",
+        "Math115.CompletionScheduleArithmetic",
+        "Math115.PhysicalLatticeCompletion"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.CompletionScheduleArithmetic": "44c756f1118b48055ed01f709927d28dd1927f00087fe975c4c71558b1c263f2",
+        "Math115.PhysicalLatticeCompletion": "0f384aeedafd1d37faa84886238a53a6c321f4f46b2f56113c8808a21d36b465"
+      },
+      "dependency_olean_sha256": {
+        "Math115.CompletionScheduleArithmetic": "85fee1332f4c5533a63c2ac0c63caa8a2367c6e26270d302fb89d491f63751fa",
+        "Math115.PhysicalLatticeCompletion": "af83870ec5c732dc1292f10dc41363b1e8e45f8fb6aada78d08347c20f3f50a3"
+      },
+      "declaration_count": 2,
+      "declarations": [
+        {
+          "name": "Math115.CompletionOuterSchedule.denseOuterLaw_explicit_accuracy_half",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionOuterSchedule.denseOuterLaw_explicit_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": true,
+        "original_compile_receipt_sha256": "38a555d64f0135aec9ba7fb17a8bc0f02064b24fe4f7f27690fba1413d054d21",
+        "log": "CompletionOuterSchedule-compile.log",
+        "log_kind": "cache_reuse_marker",
+        "original_delivered_log_sha256": "a48a4584cabce5a6f593c827f6d696c7144d62eaa0d78efe164c82c5d1fb0b7b",
+        "published_log_sha256": "436b80df0a702dd90422d93892986d76763e2ba87a371c3d05cae215f1817b60",
+        "log_sanitization": [
+          {
+            "kind": "private_path_prefix_replacement",
+            "replacement": "<build>",
+            "count": 1
+          }
+        ],
+        "reuse_registered_at_utc": "2026-10-09T20:39:21.325511+00:00",
+        "bootstrap_manifest_sha256": "6b0b342b6f0510362658001aa8c26cf9f6fe8ffe28279eed6887996c21e20527",
+        "inherited_historical_metadata": {
+          "started_at_utc": "2026-10-09T20:14:35.595755+00:00",
+          "elapsed_seconds": 31.396033399971202
+        },
+        "inherited_historical_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-4>/formal",
+          "-o",
+          "<historical-build-4>/attempts/Math115.CompletionOuterSchedule/e103451834724acbbbace442c17ac69f/module.olean",
+          "-i",
+          "<historical-build-4>/attempts/Math115.CompletionOuterSchedule/e103451834724acbbbace442c17ac69f/module.ilean",
+          "<historical-workspace-4>/formal/Math115/CompletionOuterSchedule.lean"
+        ],
+        "immediate_predecessor_record": {
+          "module": "Math115.CompletionOuterSchedule",
+          "source": "formal/Math115/CompletionOuterSchedule.lean",
+          "source_sha256": "be195d72cbeeb2ecea322ab52d46c36edd9ebebae32b2918d9c54600ff39ef97",
+          "olean_sha256": "c3f8e2ecc3a538fb6d1a2a734e5cd8144ae90237e5ece1457f6bbe4f977ae8f1",
+          "closure_sha256": "c7cc26f90c4a6c57e9cec942c6858f05a93f219595edb3824b121a038b3e375a",
+          "exit_code": 0,
+          "source_unchanged": true,
+          "reused": true,
+          "started_at_utc": "2026-10-09T20:14:35.595755+00:00",
+          "completed_at_utc": "2026-10-09T20:32:23.667212+00:00",
+          "elapsed_seconds": 31.396033399971202,
+          "log_sha256": "3d2c7da6d1a6c8bb336b0f6068401c30e885bdab8f99b921024e25b4d046dc57"
+        },
+        "immediate_predecessor_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-4>/formal",
+          "-o",
+          "<historical-build-4>/attempts/Math115.CompletionOuterSchedule/e103451834724acbbbace442c17ac69f/module.olean",
+          "-i",
+          "<historical-build-4>/attempts/Math115.CompletionOuterSchedule/e103451834724acbbbace442c17ac69f/module.ilean",
+          "<historical-workspace-4>/formal/Math115/CompletionOuterSchedule.lean"
+        ],
+        "compile_evidence_boundary": "No new compiler invocation occurred for this module in batch6. Its delivered log is a reuse marker. Inherited start/duration/argv are historical metadata, not batch6 elapsed execution. A fresh immediate predecessor is attested only by its successful bootstrap receipt and log digest; predecessor raw log bytes are not delivered. A reused predecessor does not establish a new origin compilation."
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "invocation_attempted": true,
+        "started_at_utc": "2026-10-09T20:44:44.934590+00:00",
+        "completed_at_utc": "2026-10-09T20:45:32.780777+00:00",
+        "elapsed_seconds": 47.823523200000636,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<audit-drivers>",
+          "<audit-drivers>/Audit_CompletionOuterSchedule.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<packages>/LeanSearchClient/.lake/build/lib/lean;<packages>/Qq/.lake/build/lib/lean;<packages>/aesop/.lake/build/lib/lean;<packages>/batteries/.lake/build/lib/lean;<packages>/importGraph/.lake/build/lib/lean;<packages>/mathlib/.lake/build/lib/lean;<packages>/plausible/.lake/build/lib/lean;<packages>/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "CompletionOuterSchedule-AxiomCheck.lean",
+        "driver_sha256": "c581bac4cc1f22b7c34516fbc5b94896b7ffc54feed73e7d0b62fd4a78155c3f",
+        "log": "CompletionOuterSchedule-axiom-audit.log",
+        "log_sha256": "16826a6016961a6bd8b4c5bb30d1b3edcb57216cf9d5d3e1945961e61d92de7a",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "b67575dbeb24fb0fd31e3ee492c36d9f7640e42cb1343d4d1d4bcc3fccde1e26",
+        "checks": {
+          "strict_named_report_count": 2,
+          "exact_name_order": true,
+          "no_extra_output": true,
+          "only_standard_axioms": true,
+          "no_sorryAx": true,
+          "expected_before_after_snapshots_identical": true,
+          "input_snapshot_entry_count": 1165,
+          "input_snapshot_canonical_json_sha256": "2a9267628b008ba39769aa9856db8d9f42cce34409dc21f8cdf4057c3130abc7",
+          "exact_runtime_and_closure_snapshot_reconstructed": true,
+          "completed_record_sha256": "798666b382d9e74d843c8ab4a1737b9999c67b0cbfb59016bca6869f80f7b817"
+        }
+      }
+    },
+    {
+      "module": "Math115.CompletionRandomBudget",
+      "source": "formal/Math115/CompletionRandomBudget.lean",
+      "source_snapshot": "CompletionRandomBudget-Source.lean",
+      "source_sha256": "6171f85f8d0c2e26304c4b30fb53e18d00ed74ec1b79661e466710a7704e1eb9",
+      "olean_sha256": "607479cc567ce72e1586d6a3ecc46d9e3e569c78b136ad264e969d5ce31affb8",
+      "ilean_sha256": "64963d63dc2d189ae13e401da836fff4c3fe396c84bfe068532144a16b78980d",
+      "ilean_evidence": "Fresh immediate predecessor receipt attestation; ilean bytes are not delivered.",
+      "closure_sha256": "e86c1b73a9e65d5f80180c0f81157ca5b2ec62d427fa1c23dc86321d23493c28",
+      "authenticated_internal_closure_modules_including_self": 537,
+      "direct_imports": [
+        "Init",
+        "Math115.CompletionRandomBudgetArithmetic",
+        "Math115.CompletionOuterSchedule"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.CompletionRandomBudgetArithmetic": "278c031d594e109bbce1e3bd96459a08b30dde9dc4506f61beb341b40e48ef0a",
+        "Math115.CompletionOuterSchedule": "be195d72cbeeb2ecea322ab52d46c36edd9ebebae32b2918d9c54600ff39ef97"
+      },
+      "dependency_olean_sha256": {
+        "Math115.CompletionOuterSchedule": "c3f8e2ecc3a538fb6d1a2a734e5cd8144ae90237e5ece1457f6bbe4f977ae8f1",
+        "Math115.CompletionRandomBudgetArithmetic": "e651ab2d582194742d845f37f23a2d6fc615225472ecd5940d70e943c9f21c25"
+      },
+      "declaration_count": 6,
+      "declarations": [
+        {
+          "name": "Math115.CompletionRandomBudget.physicalSmallCount_le_dimension",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRandomBudget.completionReservation_eq_reserved",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRandomBudget.physicalTotalReservedBits",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRandomBudget.physicalTotalReservedBits_eq_reservation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRandomBudget.physicalTotalReservedBits_separated",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRandomBudget.physicalTotalReservedBits_combined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": true,
+        "original_compile_receipt_sha256": "81d48989bb0eae8bb604d46a93c194f903255701c27709b9decb0dc3664fb229",
+        "log": "CompletionRandomBudget-compile.log",
+        "log_kind": "cache_reuse_marker",
+        "original_delivered_log_sha256": "fcece5fcba81b9d9d9900d2067c2e38de379b19d09cfbc3da6c9afee9241b897",
+        "published_log_sha256": "202269036ac9a4d2cf15f74f8f7e9f6a7bf5ae01834953970d2b448c7c193b0a",
+        "log_sanitization": [
+          {
+            "kind": "private_path_prefix_replacement",
+            "replacement": "<build>",
+            "count": 1
+          }
+        ],
+        "reuse_registered_at_utc": "2026-10-09T20:39:21.361544+00:00",
+        "bootstrap_manifest_sha256": "6b0b342b6f0510362658001aa8c26cf9f6fe8ffe28279eed6887996c21e20527",
+        "inherited_historical_metadata": {
+          "started_at_utc": "2026-10-09T20:32:24.940591+00:00",
+          "elapsed_seconds": 31.70876309997402
+        },
+        "inherited_historical_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-5>/formal",
+          "-o",
+          "<historical-build-5>/attempts/Math115.CompletionRandomBudget/1a48212b2a5e409da50e8166c962a9e1/module.olean",
+          "-i",
+          "<historical-build-5>/attempts/Math115.CompletionRandomBudget/1a48212b2a5e409da50e8166c962a9e1/module.ilean",
+          "<historical-workspace-5>/formal/Math115/CompletionRandomBudget.lean"
+        ],
+        "immediate_predecessor_record": {
+          "module": "Math115.CompletionRandomBudget",
+          "source": "formal/Math115/CompletionRandomBudget.lean",
+          "source_sha256": "6171f85f8d0c2e26304c4b30fb53e18d00ed74ec1b79661e466710a7704e1eb9",
+          "olean_sha256": "607479cc567ce72e1586d6a3ecc46d9e3e569c78b136ad264e969d5ce31affb8",
+          "closure_sha256": "e86c1b73a9e65d5f80180c0f81157ca5b2ec62d427fa1c23dc86321d23493c28",
+          "exit_code": 0,
+          "source_unchanged": true,
+          "reused": false,
+          "started_at_utc": "2026-10-09T20:32:24.940591+00:00",
+          "completed_at_utc": "2026-10-09T20:32:56.649603+00:00",
+          "elapsed_seconds": 31.70876309997402,
+          "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ilean_sha256": "64963d63dc2d189ae13e401da836fff4c3fe396c84bfe068532144a16b78980d"
+        },
+        "immediate_predecessor_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-5>/formal",
+          "-o",
+          "<historical-build-5>/attempts/Math115.CompletionRandomBudget/1a48212b2a5e409da50e8166c962a9e1/module.olean",
+          "-i",
+          "<historical-build-5>/attempts/Math115.CompletionRandomBudget/1a48212b2a5e409da50e8166c962a9e1/module.ilean",
+          "<historical-workspace-5>/formal/Math115/CompletionRandomBudget.lean"
+        ],
+        "compile_evidence_boundary": "No new compiler invocation occurred for this module in batch6. Its delivered log is a reuse marker. Inherited start/duration/argv are historical metadata, not batch6 elapsed execution. A fresh immediate predecessor is attested only by its successful bootstrap receipt and log digest; predecessor raw log bytes are not delivered. A reused predecessor does not establish a new origin compilation."
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "invocation_attempted": true,
+        "started_at_utc": "2026-10-09T20:44:44.935234+00:00",
+        "completed_at_utc": "2026-10-09T20:45:32.678903+00:00",
+        "elapsed_seconds": 47.72625780000817,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<audit-drivers>",
+          "<audit-drivers>/Audit_CompletionRandomBudget.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<packages>/LeanSearchClient/.lake/build/lib/lean;<packages>/Qq/.lake/build/lib/lean;<packages>/aesop/.lake/build/lib/lean;<packages>/batteries/.lake/build/lib/lean;<packages>/importGraph/.lake/build/lib/lean;<packages>/mathlib/.lake/build/lib/lean;<packages>/plausible/.lake/build/lib/lean;<packages>/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "CompletionRandomBudget-AxiomCheck.lean",
+        "driver_sha256": "f06c72cf3799ca90e5cdac162b3650e3dc09c4e90d546df305f3079b346a62ef",
+        "log": "CompletionRandomBudget-axiom-audit.log",
+        "log_sha256": "5e06681fe2e3e680afc8ee7aecebbbd47bdcf4e4f8ecc511bba9b171e5bc4b6e",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "a88f67368e0789d83e430e41489492a96c40f2cb1e2b56aeef24a84b84d17fe0",
+        "checks": {
+          "strict_named_report_count": 6,
+          "exact_name_order": true,
+          "no_extra_output": true,
+          "only_standard_axioms": true,
+          "no_sorryAx": true,
+          "expected_before_after_snapshots_identical": true,
+          "input_snapshot_entry_count": 1169,
+          "input_snapshot_canonical_json_sha256": "2e1914d1534d8f9cc5ef5e39536c1db4d9b8fa2af42c9f5421c223ae31731d69",
+          "exact_runtime_and_closure_snapshot_reconstructed": true,
+          "completed_record_sha256": "eff6b442fa5839552a3a5f1f0eb04e2799614f0908a8382ae4c86090c30ba7a8"
+        }
+      }
+    },
+    {
+      "module": "Math115.PhysicalComputedProposal",
+      "source": "formal/Math115/PhysicalComputedProposal.lean",
+      "source_snapshot": "PhysicalComputedProposal-Source.lean",
+      "source_sha256": "5f2b0aaadd8a807ce2f7bbd67f6bf32543028cb70b6b159b7bdf2a70c390103a",
+      "olean_sha256": "eb6f32e03db94bcbfcca576993481197aa34f7935bf92b288c936507f84e5599",
+      "ilean_sha256": null,
+      "ilean_evidence": "No ilean artifact delivered for this reused object.",
+      "closure_sha256": "a4efc9edfb1ac44ee1f8a1158e80a7e502e18842a8fe38d1364c0baf4611da4a",
+      "authenticated_internal_closure_modules_including_self": 461,
+      "direct_imports": [
+        "Init",
+        "Math115.PhysicalCompletionOracle",
+        "Math115.IdealOracleScales",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPreparedProposal"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.PhysicalCompletionOracle": "44d6b7d22d92d79c6ab993ac31c31c7b448894e0a9118b21d155f25d83c4ded3",
+        "Math115.IdealOracleScales": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPreparedProposal": "e36c3719dfa5130203da5e55648e0c541da18bc6f0ae034c2d5f4d18a8075f24"
+      },
+      "dependency_olean_sha256": {
+        "Math115.IdealOracleScales": "14db7c54fcb5744f847ceaba1d9fdfb58bc7e4b2442edeb236a98d4ec269773e",
+        "Math115.PhysicalCompletionOracle": "691193bddf4160656b04220c517db8cf20ea825a6f712e106d1272fe9d680da2",
+        "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPreparedProposal": "ce1ce193f58865c4169222f3d8f2f6211f794353dfe7d0346430cdb0a906184f"
+      },
+      "declaration_count": 69,
+      "declarations": [
+        {
+          "name": "Math115.PhysicalComputedProposal.profileRows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.profileColumns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.ProfileFeasible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.profile_capacity",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.physicalProfile_feasible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.profileFeasible_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.stateOfFeasible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.stateOfFeasible_profile",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.profileFeasible_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.decodeProfile",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.decodeProfile_eq_some_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.profileFeasible_of_lineTests",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.profileFeasible_lineTests",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.profileTest_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.profileTest_code_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.ArithmeticRepair",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.ArithmeticEdge",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.arithmeticRepair_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.arithmeticEdge_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.mem_rawCodeNeighbors",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.mem_codeNeighbors",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.physicalProposalLaw_mass_some",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.stateCode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.stateCodeData",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.decodeStateCode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.decode_stateCode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.stateCode_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.decodeStateCode_eq_some_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.codeNeighborStates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.codeNeighborStates_nodup",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.mem_codeNeighborStates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.codeNeighborStates_length",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.codeNeighborStates_codes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.codeNeighbors_decode_total",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.decodedCodeProposal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.decodedCodeProposal_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.decodedCodeProposal_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.decodedCodeProposal_law",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.computedCatalog",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.computedCatalog_nodup",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.mem_computedCatalog",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.catalogCell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.catalogCell_coordinates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.catalogCell_bijective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.computedCellEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.computedCellEquiv_catalog",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.computedStateCode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.computedProposal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.computedProposal_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.computedProposal_law",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.cubeNat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.polynomial_cubeNat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealMarginThreshold",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealMarginThresholdRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.polynomial_idealMarginThreshold",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealMarginCatalog",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealMarginCatalogRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.polynomial_idealMarginCatalog",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealPrepareProfileInput",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealPrepareProfileInputRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.polynomial_idealPrepareProfileInput",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealPreparedProposal",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealPreparedProposalRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.polynomial_idealPreparedProposal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealMarginThreshold_ofFn",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealPrepareProfileInput_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealPreparedProposal_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealComputedProposal_law",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalComputedProposal.idealPreparedProposal_law",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": true,
+        "original_compile_receipt_sha256": "593df8d8a55ae188cbce8d54dde74c3f1825264d5d2b98441182fbaa294ce972",
+        "log": "PhysicalComputedProposal-compile.log",
+        "log_kind": "cache_reuse_marker",
+        "original_delivered_log_sha256": "7d84b6587649bf59ccfcfc1c7d669ce314a3b59c9c04964f6e11f88f62a0e177",
+        "published_log_sha256": "4f97ff05a86daf5308e473d580d7ef925c643487571c57d23b0faa033fa1a8c7",
+        "log_sanitization": [
+          {
+            "kind": "private_path_prefix_replacement",
+            "replacement": "<build>",
+            "count": 1
+          }
+        ],
+        "reuse_registered_at_utc": "2026-10-09T20:39:19.207115+00:00",
+        "bootstrap_manifest_sha256": "6b0b342b6f0510362658001aa8c26cf9f6fe8ffe28279eed6887996c21e20527",
+        "inherited_historical_metadata": {
+          "started_at_utc": "2026-10-09T20:06:28.106783+00:00",
+          "elapsed_seconds": 35.57228939997731
+        },
+        "inherited_historical_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-3>/formal",
+          "-o",
+          "<historical-build-3>/attempts/Math115.PhysicalComputedProposal/608d689fc0fd4f0e8dc6e69fc7541655/module.olean",
+          "-i",
+          "<historical-build-3>/attempts/Math115.PhysicalComputedProposal/608d689fc0fd4f0e8dc6e69fc7541655/module.ilean",
+          "<historical-workspace-3>/formal/Math115/PhysicalComputedProposal.lean"
+        ],
+        "immediate_predecessor_record": {
+          "module": "Math115.PhysicalComputedProposal",
+          "source": "formal/Math115/PhysicalComputedProposal.lean",
+          "source_sha256": "5f2b0aaadd8a807ce2f7bbd67f6bf32543028cb70b6b159b7bdf2a70c390103a",
+          "olean_sha256": "eb6f32e03db94bcbfcca576993481197aa34f7935bf92b288c936507f84e5599",
+          "closure_sha256": "a4efc9edfb1ac44ee1f8a1158e80a7e502e18842a8fe38d1364c0baf4611da4a",
+          "exit_code": 0,
+          "source_unchanged": true,
+          "reused": true,
+          "started_at_utc": "2026-10-09T20:06:28.106783+00:00",
+          "completed_at_utc": "2026-10-09T20:32:21.294791+00:00",
+          "elapsed_seconds": 35.57228939997731,
+          "log_sha256": "f8fdcf2fb4967aaa18dcffc57429f3e07a4135bd8992d4c0eb329bb0046733a0"
+        },
+        "immediate_predecessor_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-3>/formal",
+          "-o",
+          "<historical-build-3>/attempts/Math115.PhysicalComputedProposal/608d689fc0fd4f0e8dc6e69fc7541655/module.olean",
+          "-i",
+          "<historical-build-3>/attempts/Math115.PhysicalComputedProposal/608d689fc0fd4f0e8dc6e69fc7541655/module.ilean",
+          "<historical-workspace-3>/formal/Math115/PhysicalComputedProposal.lean"
+        ],
+        "compile_evidence_boundary": "No new compiler invocation occurred for this module in batch6. Its delivered log is a reuse marker. Inherited start/duration/argv are historical metadata, not batch6 elapsed execution. A fresh immediate predecessor is attested only by its successful bootstrap receipt and log digest; predecessor raw log bytes are not delivered. A reused predecessor does not establish a new origin compilation."
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "invocation_attempted": true,
+        "started_at_utc": "2026-10-09T20:46:18.453754+00:00",
+        "completed_at_utc": "2026-10-09T20:46:59.698823+00:00",
+        "elapsed_seconds": 41.234738099970855,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<audit-drivers>",
+          "<audit-drivers>/Audit_PhysicalComputedProposal.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<packages>/LeanSearchClient/.lake/build/lib/lean;<packages>/Qq/.lake/build/lib/lean;<packages>/aesop/.lake/build/lib/lean;<packages>/batteries/.lake/build/lib/lean;<packages>/importGraph/.lake/build/lib/lean;<packages>/mathlib/.lake/build/lib/lean;<packages>/plausible/.lake/build/lib/lean;<packages>/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "PhysicalComputedProposal-AxiomCheck.lean",
+        "driver_sha256": "a6d63f106b0c67246305f47df4b17a180aa7da5151d7f9212d21115edb68b54a",
+        "log": "PhysicalComputedProposal-axiom-audit.log",
+        "log_sha256": "4c37bd194b6f14e1d089987e87af9c649b69dae4d5a3b5ff650ac5036e47ff23",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "826e8345b25f8f46577c4940e5025e48c439e17b020e2ba206cd99ff43657dbb",
+        "checks": {
+          "strict_named_report_count": 69,
+          "exact_name_order": true,
+          "no_extra_output": true,
+          "only_standard_axioms": true,
+          "no_sorryAx": true,
+          "expected_before_after_snapshots_identical": true,
+          "input_snapshot_entry_count": 1017,
+          "input_snapshot_canonical_json_sha256": "2f043ef96f9f7463d08ddf38145c4dbc872f9ecb8318757191596ae6d658abd1",
+          "exact_runtime_and_closure_snapshot_reconstructed": true,
+          "completed_record_sha256": "5f9bae7a0bb712eb8060cc2c5846dc146cf2daaef2a08505892ecb314a99187d"
+        }
+      }
+    },
+    {
+      "module": "Math115.PhysicalReferenceWalk",
+      "source": "formal/Math115/PhysicalReferenceWalk.lean",
+      "source_snapshot": "PhysicalReferenceWalk-Source.lean",
+      "source_sha256": "b079d4782aee9231cd3356e4e734873976111fab5ee1b150cc36f45d98639c4a",
+      "olean_sha256": "5862766e0ca51e3921d6bf58c7cee306ab71a77bcb6f83b2a96139c783251e7f",
+      "ilean_sha256": null,
+      "ilean_evidence": "No ilean artifact delivered for this reused object.",
+      "closure_sha256": "dbaa442f5ed3fbac556df2b914ce36c4b0c8e2db97bb0183de07ae1384f821ce",
+      "authenticated_internal_closure_modules_including_self": 534,
+      "direct_imports": [
+        "Init",
+        "Math115.PhysicalLatticeCompletion"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.PhysicalLatticeCompletion": "0f384aeedafd1d37faa84886238a53a6c321f4f46b2f56113c8808a21d36b465"
+      },
+      "dependency_olean_sha256": {
+        "Math115.PhysicalLatticeCompletion": "af83870ec5c732dc1292f10dc41363b1e8e45f8fb6aada78d08347c20f3f50a3"
+      },
+      "declaration_count": 21,
+      "declarations": [
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceTransitionLaw_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceStationaryLaw_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceChain_pi_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceWalkLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceWalkLaw_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceWalkLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceJointLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceJointLaw_variation_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceJointLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceOuterLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceOuterLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceApproximateJoint_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceApproximateOuter_variation_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.referenceApproximateOuter_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.idealReference_poincare",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.idealReferenceOuterLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.idealReferenceOuterLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.idealReferenceOracleOuterLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.idealReferenceOracleOuterLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.denseReferenceOuterLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalReferenceWalk.denseReferenceOuterLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": true,
+        "original_compile_receipt_sha256": "a7037514121f6dbac6fe58c2855eaee5c05fd86161a5375118346f12ba911281",
+        "log": "PhysicalReferenceWalk-compile.log",
+        "log_kind": "cache_reuse_marker",
+        "original_delivered_log_sha256": "f5d0a1e503cb83c11dfbff9c486e978fbb39f24545e3eb3209b2ffb320f57d07",
+        "published_log_sha256": "646e24b5c9a23eae4e0751a10c9788e31970de48c002943320393cbbafa3be4c",
+        "log_sanitization": [
+          {
+            "kind": "private_path_prefix_replacement",
+            "replacement": "<build>",
+            "count": 1
+          }
+        ],
+        "reuse_registered_at_utc": "2026-10-09T20:39:21.094516+00:00",
+        "bootstrap_manifest_sha256": "6b0b342b6f0510362658001aa8c26cf9f6fe8ffe28279eed6887996c21e20527",
+        "inherited_historical_metadata": {
+          "started_at_utc": "2026-10-09T20:06:28.126949+00:00",
+          "elapsed_seconds": 30.15882589999819
+        },
+        "inherited_historical_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-3>/formal",
+          "-o",
+          "<historical-build-3>/attempts/Math115.PhysicalReferenceWalk/996d48b7b21642a180a54cbb99616f81/module.olean",
+          "-i",
+          "<historical-build-3>/attempts/Math115.PhysicalReferenceWalk/996d48b7b21642a180a54cbb99616f81/module.ilean",
+          "<historical-workspace-3>/formal/Math115/PhysicalReferenceWalk.lean"
+        ],
+        "immediate_predecessor_record": {
+          "module": "Math115.PhysicalReferenceWalk",
+          "source": "formal/Math115/PhysicalReferenceWalk.lean",
+          "source_sha256": "b079d4782aee9231cd3356e4e734873976111fab5ee1b150cc36f45d98639c4a",
+          "olean_sha256": "5862766e0ca51e3921d6bf58c7cee306ab71a77bcb6f83b2a96139c783251e7f",
+          "closure_sha256": "dbaa442f5ed3fbac556df2b914ce36c4b0c8e2db97bb0183de07ae1384f821ce",
+          "exit_code": 0,
+          "source_unchanged": true,
+          "reused": true,
+          "started_at_utc": "2026-10-09T20:06:28.126949+00:00",
+          "completed_at_utc": "2026-10-09T20:32:23.460742+00:00",
+          "elapsed_seconds": 30.15882589999819,
+          "log_sha256": "1bcf582e248296bb93a7e94cd6b79607e8085ff99851fe9b9fc6080b7b24a9f8"
+        },
+        "immediate_predecessor_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-3>/formal",
+          "-o",
+          "<historical-build-3>/attempts/Math115.PhysicalReferenceWalk/996d48b7b21642a180a54cbb99616f81/module.olean",
+          "-i",
+          "<historical-build-3>/attempts/Math115.PhysicalReferenceWalk/996d48b7b21642a180a54cbb99616f81/module.ilean",
+          "<historical-workspace-3>/formal/Math115/PhysicalReferenceWalk.lean"
+        ],
+        "compile_evidence_boundary": "No new compiler invocation occurred for this module in batch6. Its delivered log is a reuse marker. Inherited start/duration/argv are historical metadata, not batch6 elapsed execution. A fresh immediate predecessor is attested only by its successful bootstrap receipt and log digest; predecessor raw log bytes are not delivered. A reused predecessor does not establish a new origin compilation."
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "invocation_attempted": true,
+        "started_at_utc": "2026-10-09T20:46:20.059516+00:00",
+        "completed_at_utc": "2026-10-09T20:47:01.174166+00:00",
+        "elapsed_seconds": 41.0612087000045,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<audit-drivers>",
+          "<audit-drivers>/Audit_PhysicalReferenceWalk.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<packages>/LeanSearchClient/.lake/build/lib/lean;<packages>/Qq/.lake/build/lib/lean;<packages>/aesop/.lake/build/lib/lean;<packages>/batteries/.lake/build/lib/lean;<packages>/importGraph/.lake/build/lib/lean;<packages>/mathlib/.lake/build/lib/lean;<packages>/plausible/.lake/build/lib/lean;<packages>/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "PhysicalReferenceWalk-AxiomCheck.lean",
+        "driver_sha256": "c1956cf3fbea1e220b3d2a56be9682176264023d6f2462ea6497d822fc20ce0c",
+        "log": "PhysicalReferenceWalk-axiom-audit.log",
+        "log_sha256": "f5474d8e9afe60345b592d1a79f1c0575d8da07811a00fb276e3bf611ceb3901",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "fa2c091c5bcc846da92c186ee3356187a63eea0cc3ac9966517ca42535102868",
+        "checks": {
+          "strict_named_report_count": 21,
+          "exact_name_order": true,
+          "no_extra_output": true,
+          "only_standard_axioms": true,
+          "no_sorryAx": true,
+          "expected_before_after_snapshots_identical": true,
+          "input_snapshot_entry_count": 1163,
+          "input_snapshot_canonical_json_sha256": "5a649f65e82ffbbdf2af839b7a2fe0f1dd198216d068241fa8cf9fcf62c68864",
+          "exact_runtime_and_closure_snapshot_reconstructed": true,
+          "completed_record_sha256": "55480e5e758a128131f3bb2b9e13a2a84025ea2d6ba754cb06c5230ac38899d7"
+        }
+      }
+    },
+    {
+      "module": "Math115.ListedLatticeCompletion",
+      "source": "formal/Math115/ListedLatticeCompletion.lean",
+      "source_snapshot": "ListedLatticeCompletion-Source.lean",
+      "source_sha256": "0ea157c4a458949c5b9dc8d8dceeaa93b2bd3ab9858b446e846f1357efda99bc",
+      "olean_sha256": "0861dc7c52044555919775c08743f02e61f9e5e662d51f113b9d18a1c5043178",
+      "ilean_sha256": "379c545660da1b526668e2fc9341091125a5d2c9ef7f641a29fc1bcd6b27e60a",
+      "ilean_evidence": "Rehashed delivered native artifact; binary not copied into public bundle.",
+      "closure_sha256": "177384216a1a125015473232d006475f0e5653a38c92f2b1816727c9b4e77efd",
+      "authenticated_internal_closure_modules_including_self": 545,
+      "direct_imports": [
+        "Init",
+        "Math115.CompletionSamplerSemantics",
+        "Math115.PhysicalReferenceWalk",
+        "OAI.Combinatorics.ContingencyTables.Transport.ListedCompletion"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.CompletionSamplerSemantics": "0cf2fc168303f1dde8ff0cba7aacfe6f650acc20f87218dbd8c9ae11bcc787c7",
+        "Math115.PhysicalReferenceWalk": "b079d4782aee9231cd3356e4e734873976111fab5ee1b150cc36f45d98639c4a",
+        "OAI.Combinatorics.ContingencyTables.Transport.ListedCompletion": "9431bd25610e4fee9deaf9d65e6e1d099616626db910240ba106096af9f003c4"
+      },
+      "dependency_olean_sha256": {
+        "Math115.CompletionSamplerSemantics": "d0920372c346c5b7479fe85d496bf850121bbfe7eb9fb4281a1dfe7a5168c592",
+        "Math115.PhysicalReferenceWalk": "5862766e0ca51e3921d6bf58c7cee306ab71a77bcb6f83b2a96139c783251e7f",
+        "OAI.Combinatorics.ContingencyTables.Transport.ListedCompletion": "00d8002dfa69127dfa4462597bca15c6723b6d4f5b049a4f7e6623bd0c2b2514"
+      },
+      "declaration_count": 32,
+      "declarations": [
+        {
+          "name": "Math115.ListedLatticeCompletion.tailCount",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.tailCount_eq_referenceFree",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.fullCount_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.coarseRows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.coarseColumns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.coarse_totals",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.parameters_listed",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.coarseRows_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.coarseColumns_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.dimensions",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.free_dimension",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.dimension_fourteen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.coarse_row_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.coarse_column_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.coarse_row_upper",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.dense_row_upper",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.fineBits_le_reserved",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.completionBits_le_reserved",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.finiteFibreEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.finiteFibreEquiv_entry",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.programTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.programTable_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.programTable_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.completionDraw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.completionLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.completionLaw_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.oracleFamily",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.oracleFamily_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.referenceDraw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.referenceDraw_law",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.outerLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ListedLatticeCompletion.outerLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": false,
+        "original_compile_receipt_sha256": "50d0a262a948fe2f26d3271f10469325d2b4d6c66c71f5f22047734bbfb60cac",
+        "log": "ListedLatticeCompletion-compile.log",
+        "log_kind": "native_compiler_stdout_stderr",
+        "original_delivered_log_sha256": "2956dd81795d1b7b31f80a0b63bd374bee47007474a43b7417b63e162e8f2b2e",
+        "published_log_sha256": "38a53c7d488fde40e28869ee58f2750b6118628dae2dfc408a4a21c1a9ba86b9",
+        "log_sanitization": [
+          {
+            "kind": "private_path_prefix_replacement",
+            "replacement": "<workspace>",
+            "count": 1
+          }
+        ],
+        "started_at_utc": "2026-10-09T20:39:22.613134+00:00",
+        "completed_at_utc": "2026-10-09T20:39:58.138708+00:00",
+        "elapsed_seconds": 35.525313000020105,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<workspace>/formal",
+          "-o",
+          "<build>/attempts/Math115.ListedLatticeCompletion/082c3e5ad95844a7adf17f4db4fe5896/module.olean",
+          "-i",
+          "<build>/attempts/Math115.ListedLatticeCompletion/082c3e5ad95844a7adf17f4db4fe5896/module.ilean",
+          "<workspace>/formal/Math115/ListedLatticeCompletion.lean"
+        ],
+        "warning_count": 1
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "invocation_attempted": true,
+        "started_at_utc": "2026-10-09T20:46:17.870012+00:00",
+        "completed_at_utc": "2026-10-09T20:46:59.666780+00:00",
+        "elapsed_seconds": 41.78950529999565,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<audit-drivers>",
+          "<audit-drivers>/Audit_ListedLatticeCompletion.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<packages>/LeanSearchClient/.lake/build/lib/lean;<packages>/Qq/.lake/build/lib/lean;<packages>/aesop/.lake/build/lib/lean;<packages>/batteries/.lake/build/lib/lean;<packages>/importGraph/.lake/build/lib/lean;<packages>/mathlib/.lake/build/lib/lean;<packages>/plausible/.lake/build/lib/lean;<packages>/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "ListedLatticeCompletion-AxiomCheck.lean",
+        "driver_sha256": "262a260047a0445045a8a188d7cb3601905e00c6945757488a26ff32dfd7ad0c",
+        "log": "ListedLatticeCompletion-axiom-audit.log",
+        "log_sha256": "4033d4d086b6e6aa475c9d67f8af8a54cadca6e8e96f801c7bdee90a9af356fd",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "89ca0b26fa9f91dbd05dff181981885488d33c4a5c753451cb9a36d80148bf1d",
+        "checks": {
+          "strict_named_report_count": 32,
+          "exact_name_order": true,
+          "no_extra_output": true,
+          "only_standard_axioms": true,
+          "no_sorryAx": true,
+          "expected_before_after_snapshots_identical": true,
+          "input_snapshot_entry_count": 1185,
+          "input_snapshot_canonical_json_sha256": "3c7ab5297c27c29c3d87736d00b14049e784ce77efa6971eb7e7c10cad72d3d5",
+          "exact_runtime_and_closure_snapshot_reconstructed": true,
+          "completed_record_sha256": "05d138b0e246f86f3abc365ff94d7cb7d1f3a913fc8c96dda557385b87f81dff"
+        }
+      }
+    },
+    {
+      "module": "Math115.PhysicalEmptyCompletion",
+      "source": "formal/Math115/PhysicalEmptyCompletion.lean",
+      "source_snapshot": "PhysicalEmptyCompletion-Source.lean",
+      "source_sha256": "2caa6e7704b069b6fe926dc70014dc015196179f7acb341f6c8072e0ce6395bd",
+      "olean_sha256": "723c0fc332299a34facd95697b3899e10c7d5447f6dfc09964056e6ffb9eacaf",
+      "ilean_sha256": null,
+      "ilean_evidence": "No ilean artifact delivered for this reused object.",
+      "closure_sha256": "d7687d0420e4982f70930c63f53400a91979db9942521e603f552c7f6b62715e",
+      "authenticated_internal_closure_modules_including_self": 528,
+      "direct_imports": [
+        "Init",
+        "Math115.PhysicalComputedProposal",
+        "OAI.Combinatorics.ContingencyTables.Sampling.AllSmallFibres",
+        "OAI.Combinatorics.ContingencyTables.Sampling.OuterMatrixSemantics",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallComplementProgram",
+        "OAI.Combinatorics.ContingencyTables.Transport.FiniteDeterministicJoint"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.PhysicalComputedProposal": "5f2b0aaadd8a807ce2f7bbd67f6bf32543028cb70b6b159b7bdf2a70c390103a",
+        "OAI.Combinatorics.ContingencyTables.Sampling.AllSmallFibres": "5ebeb7fdff3ba2fc466d3e2d6f1fc18a368d2d2eeddcff995af50d6203e20fad",
+        "OAI.Combinatorics.ContingencyTables.Sampling.OuterMatrixSemantics": "1b5193795394b7470cfff2a0ab590e3bc53d8b93343e5d22e570ebd22a37e26b",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallComplementProgram": "745c4a6c68ea553daea93e4370ba3e9329bf1fccd3813e4c76f2be0d0b943549",
+        "OAI.Combinatorics.ContingencyTables.Transport.FiniteDeterministicJoint": "e648a00cf92f4cf8e5bedd3bc7ad8a219f47d24c1a00d2e88c0f9f7462158ded"
+      },
+      "dependency_olean_sha256": {
+        "Math115.PhysicalComputedProposal": "eb6f32e03db94bcbfcca576993481197aa34f7935bf92b288c936507f84e5599",
+        "OAI.Combinatorics.ContingencyTables.Sampling.AllSmallFibres": "b4756b3599a33be6c7f6ac9f4598b585bb7715d1a199277fa03390de329737bf",
+        "OAI.Combinatorics.ContingencyTables.Sampling.OuterMatrixSemantics": "6ada4e29abac9ed11bd3d52d831c3ce2dc5dd86d588f9790808973d3c041aca0",
+        "OAI.Combinatorics.ContingencyTables.Sampling.SmallComplementProgram": "64172932fb0cb73494acb7544041dd59877cf4eb4dc1ae04e5f41e9587af394f",
+        "OAI.Combinatorics.ContingencyTables.Transport.FiniteDeterministicJoint": "8ee5fadec9b97dfeec4c17cd60bcaacd5beea0d3cdb231e4a3037eec5b212849"
+      },
+      "declaration_count": 39,
+      "declarations": [
+        {
+          "name": "Math115.PhysicalEmptyCompletion.ReconstructionInput",
+          "axioms": []
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.retainedData",
+          "axioms": []
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.retainedDataRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.polynomial_retainedData",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.rowInput",
+          "axioms": []
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.rowInputRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.polynomial_rowInput",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.columnInput",
+          "axioms": []
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.columnInputRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.polynomial_columnInput",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.reconstructViews",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.reconstructViewsRealizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.polynomial_reconstructViews",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.retainedData_entry",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.storedRows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.storedColumns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.allSmallCompletion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.allSmallCompletion_views",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.allSmallCompletion_row",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.allSmallCompletion_column",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.allSmallCompletion_unique",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.allSmallCompletion_pointLaw_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.allSmall_of_empty",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.emptyCompletion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.emptyCompletion_views",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.emptyCompletion_pointLaw_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.empty_of_not_both",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.emptyCompletionOfNotBoth",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.emptyCompletionOfNotBoth_views",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.emptyCompletionOfNotBoth_pointLaw_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.idealEmptyCompletion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.idealEmptyCompletion_pointLaw_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.profileInput",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.reconstructViews_profile_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.computedInput",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.computedInput_eq_profileInput",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.reconstructViews_computed_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.reconstructViews_computed_not_both_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalEmptyCompletion.empty_of_no_large_lists",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": true,
+        "original_compile_receipt_sha256": "1ddfb8d2b8c4a59b68be480d024ee1820738884f66aca5b70390afb468391c9d",
+        "log": "PhysicalEmptyCompletion-compile.log",
+        "log_kind": "cache_reuse_marker",
+        "original_delivered_log_sha256": "ec5549eeb19c73716f8f7ced16150662f4800feb4274b7393d5f8b89edcfc3c5",
+        "published_log_sha256": "208b8120b7e77ddbf3c16ca4fab5beff3ae543694d2c2cf86c2a269f3a02a371",
+        "log_sanitization": [
+          {
+            "kind": "private_path_prefix_replacement",
+            "replacement": "<build>",
+            "count": 1
+          }
+        ],
+        "reuse_registered_at_utc": "2026-10-09T20:39:21.878503+00:00",
+        "bootstrap_manifest_sha256": "6b0b342b6f0510362658001aa8c26cf9f6fe8ffe28279eed6887996c21e20527",
+        "inherited_historical_metadata": {
+          "started_at_utc": "2026-10-09T20:07:03.739011+00:00",
+          "elapsed_seconds": 24.65586080000503
+        },
+        "inherited_historical_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-3>/formal",
+          "-o",
+          "<historical-build-3>/attempts/Math115.PhysicalEmptyCompletion/e7e4c966e25f44ac91c428327d0cad07/module.olean",
+          "-i",
+          "<historical-build-3>/attempts/Math115.PhysicalEmptyCompletion/e7e4c966e25f44ac91c428327d0cad07/module.ilean",
+          "<historical-workspace-3>/formal/Math115/PhysicalEmptyCompletion.lean"
+        ],
+        "immediate_predecessor_record": {
+          "module": "Math115.PhysicalEmptyCompletion",
+          "source": "formal/Math115/PhysicalEmptyCompletion.lean",
+          "source_sha256": "2caa6e7704b069b6fe926dc70014dc015196179f7acb341f6c8072e0ce6395bd",
+          "olean_sha256": "723c0fc332299a34facd95697b3899e10c7d5447f6dfc09964056e6ffb9eacaf",
+          "closure_sha256": "d7687d0420e4982f70930c63f53400a91979db9942521e603f552c7f6b62715e",
+          "exit_code": 0,
+          "source_unchanged": true,
+          "reused": true,
+          "started_at_utc": "2026-10-09T20:07:03.739011+00:00",
+          "completed_at_utc": "2026-10-09T20:32:24.184095+00:00",
+          "elapsed_seconds": 24.65586080000503,
+          "log_sha256": "54cbd3eef7a6beb058c68d255fd9be4c20a4a19d6358f0a3ad952b58e6bf221c"
+        },
+        "immediate_predecessor_argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<historical-workspace-3>/formal",
+          "-o",
+          "<historical-build-3>/attempts/Math115.PhysicalEmptyCompletion/e7e4c966e25f44ac91c428327d0cad07/module.olean",
+          "-i",
+          "<historical-build-3>/attempts/Math115.PhysicalEmptyCompletion/e7e4c966e25f44ac91c428327d0cad07/module.ilean",
+          "<historical-workspace-3>/formal/Math115/PhysicalEmptyCompletion.lean"
+        ],
+        "compile_evidence_boundary": "No new compiler invocation occurred for this module in batch6. Its delivered log is a reuse marker. Inherited start/duration/argv are historical metadata, not batch6 elapsed execution. A fresh immediate predecessor is attested only by its successful bootstrap receipt and log digest; predecessor raw log bytes are not delivered. A reused predecessor does not establish a new origin compilation."
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "invocation_attempted": true,
+        "started_at_utc": "2026-10-09T20:46:19.197503+00:00",
+        "completed_at_utc": "2026-10-09T20:47:01.095213+00:00",
+        "elapsed_seconds": 41.89110140001867,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<audit-drivers>",
+          "<audit-drivers>/Audit_PhysicalEmptyCompletion.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<packages>/LeanSearchClient/.lake/build/lib/lean;<packages>/Qq/.lake/build/lib/lean;<packages>/aesop/.lake/build/lib/lean;<packages>/batteries/.lake/build/lib/lean;<packages>/importGraph/.lake/build/lib/lean;<packages>/mathlib/.lake/build/lib/lean;<packages>/plausible/.lake/build/lib/lean;<packages>/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "PhysicalEmptyCompletion-AxiomCheck.lean",
+        "driver_sha256": "fc45208cec60f2f1c93a3f1c8015843493c5737838a60856d4e8cc7304a07222",
+        "log": "PhysicalEmptyCompletion-axiom-audit.log",
+        "log_sha256": "0af3fcbc4b9d063d590afb67291909d205878512e427bee22905604efb6d8164",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "1304eed828dbc9bda7543c7e7a2b5af16a3c33089ae24284ff71aed4f2f6c427",
+        "checks": {
+          "strict_named_report_count": 39,
+          "exact_name_order": true,
+          "no_extra_output": true,
+          "only_standard_axioms": true,
+          "no_sorryAx": true,
+          "expected_before_after_snapshots_identical": true,
+          "input_snapshot_entry_count": 1151,
+          "input_snapshot_canonical_json_sha256": "f42bc76feb2c1c7106e2c49a0928e728515243115c73df3d9106de8a7b2387d2",
+          "exact_runtime_and_closure_snapshot_reconstructed": true,
+          "completed_record_sha256": "0324bd8ec7afcfa8efc8c7559b6801c91b76e445e80e645bdf5cde9b73131803"
+        }
+      }
+    }
+  ],
+  "runtime_provenance": "runtime-provenance.json",
+  "source_closure": "source-closure.json",
+  "independent_review": "source-review.json",
+  "original_archive_sha256": "923e5e1f31795d12a8acf08e1f6e7eac6fc975c1e1f9191aadd789af818295b9",
+  "original_archive_manifest_sha256": "d83a590519fa1bc644972587651355607ddef838db3cedfa16b3a0fa3afbe3a3",
+  "original_module_summary_sha256": "ea8e4c8bfe82c4dbe2719cb5cf5aedac5f85c69e885b3e41a2b1d82494e7402b",
+  "audited_declarations": "audited-declarations.tsv",
+  "scope": "Computed physical proposal, chosen list-order program/completion fibre bridge, supplied-reference finite-law bounds, exact empty completion fibre, physical schedule/reservation wrappers, and a conditional independent-dilation Boolean completion variant.",
+  "representation_boundary": "Typed catalogue/fibre/reference equivalences are semantic packaging. Proposal and completion pointwise identities concern executable list-code programs. Empty completion is a RowColumnPair/Fibre and requires a separate balance test to yield an ordinary Table.",
+  "cost_boundary": "Component preparation/proposal/reconstruction charged-cost realizers and reserved Boolean-bit allowances are separate from full outer-program execution, bank generation, public-size machine cost, and measured performance.",
+  "aggregate_boundary": "This separate 193-name component checkpoint does not update aggregate869 or assert Linux integration. The separately verified sampler46 is imported where needed but not counted among these 193 names.",
+  "compile_warning_count_fresh_selected": 1,
+  "historical_warning_boundary": "One fresh ListedLatticeCompletion style warning is preserved. Historical predecessor log digests do not supply their raw bytes or establish a warning count for undelivered origin logs.",
+  "surrounding_build_boundary": {
+    "planned_modules": 685,
+    "completed_modules": 669,
+    "failed_modules": 1,
+    "blocked_modules": 15,
+    "status": "failed",
+    "audit_wrapper_status": "failed",
+    "selected_passed_audits": 7,
+    "archive_passed_audits": 18,
+    "archive_blocked_audits": 16,
+    "archive_failed_audits": 0,
+    "original_build_status_sha256": "93dae52a2f06f1d2474b7843ab0b5a716d9343e3fd15b2b0011c4055bedcbc0d",
+    "original_audit_status_sha256": "e6e5a8216bbd612c11887ee319c3fa80637bafb985f691f3169c7743dd450d76",
+    "scope": "Wider build/audit wrapper failed; selected seven audits passed. No whole-build certification."
+  },
+  "excluded_from_checkpoint": [
+    "PhysicalReferenceBoolean",
+    "Whole Boolean outer walker",
+    "Unit/profile loop program identification",
+    "Public sampling RandomMachine and runtime exponent",
+    "Fresh full dependency rebuild",
+    "Linux or aggregate count integration",
+    "Automatic D/g/k selection or measured speed improvement"
+  ],
+  "artifacts_sha256": {
+    "AdaptiveDenseCompletion-AxiomCheck.lean": "f4ed86843b4dd14f68c27341e8274f366e995ee11c4815b2e7c9214841e92211",
+    "AdaptiveDenseCompletion-Source.lean": "baf0166e2effbd3ab8c63644b40a96db70408215565b8293160b70507500f902",
+    "AdaptiveDenseCompletion-axiom-audit.log": "9b3d82a1401107ba211415873de471c5fa8184ec78696f0696cc6c210e3638a0",
+    "AdaptiveDenseCompletion-compile.log": "e5c593b0dee716b343260f58bac825b22631b6ea9cfc8e53bd2aaae9d0c2896a",
+    "CompletionOuterSchedule-AxiomCheck.lean": "c581bac4cc1f22b7c34516fbc5b94896b7ffc54feed73e7d0b62fd4a78155c3f",
+    "CompletionOuterSchedule-Source.lean": "be195d72cbeeb2ecea322ab52d46c36edd9ebebae32b2918d9c54600ff39ef97",
+    "CompletionOuterSchedule-axiom-audit.log": "16826a6016961a6bd8b4c5bb30d1b3edcb57216cf9d5d3e1945961e61d92de7a",
+    "CompletionOuterSchedule-compile.log": "436b80df0a702dd90422d93892986d76763e2ba87a371c3d05cae215f1817b60",
+    "CompletionRandomBudget-AxiomCheck.lean": "f06c72cf3799ca90e5cdac162b3650e3dc09c4e90d546df305f3079b346a62ef",
+    "CompletionRandomBudget-Source.lean": "6171f85f8d0c2e26304c4b30fb53e18d00ed74ec1b79661e466710a7704e1eb9",
+    "CompletionRandomBudget-axiom-audit.log": "5e06681fe2e3e680afc8ee7aecebbbd47bdcf4e4f8ecc511bba9b171e5bc4b6e",
+    "CompletionRandomBudget-compile.log": "202269036ac9a4d2cf15f74f8f7e9f6a7bf5ae01834953970d2b448c7c193b0a",
+    "ListedLatticeCompletion-AxiomCheck.lean": "262a260047a0445045a8a188d7cb3601905e00c6945757488a26ff32dfd7ad0c",
+    "ListedLatticeCompletion-Source.lean": "0ea157c4a458949c5b9dc8d8dceeaa93b2bd3ab9858b446e846f1357efda99bc",
+    "ListedLatticeCompletion-axiom-audit.log": "4033d4d086b6e6aa475c9d67f8af8a54cadca6e8e96f801c7bdee90a9af356fd",
+    "ListedLatticeCompletion-compile.log": "38a53c7d488fde40e28869ee58f2750b6118628dae2dfc408a4a21c1a9ba86b9",
+    "PhysicalComputedProposal-AxiomCheck.lean": "a6d63f106b0c67246305f47df4b17a180aa7da5151d7f9212d21115edb68b54a",
+    "PhysicalComputedProposal-Source.lean": "5f2b0aaadd8a807ce2f7bbd67f6bf32543028cb70b6b159b7bdf2a70c390103a",
+    "PhysicalComputedProposal-axiom-audit.log": "4c37bd194b6f14e1d089987e87af9c649b69dae4d5a3b5ff650ac5036e47ff23",
+    "PhysicalComputedProposal-compile.log": "4f97ff05a86daf5308e473d580d7ef925c643487571c57d23b0faa033fa1a8c7",
+    "PhysicalEmptyCompletion-AxiomCheck.lean": "fc45208cec60f2f1c93a3f1c8015843493c5737838a60856d4e8cc7304a07222",
+    "PhysicalEmptyCompletion-Source.lean": "2caa6e7704b069b6fe926dc70014dc015196179f7acb341f6c8072e0ce6395bd",
+    "PhysicalEmptyCompletion-axiom-audit.log": "0af3fcbc4b9d063d590afb67291909d205878512e427bee22905604efb6d8164",
+    "PhysicalEmptyCompletion-compile.log": "208b8120b7e77ddbf3c16ca4fab5beff3ae543694d2c2cf86c2a269f3a02a371",
+    "PhysicalReferenceWalk-AxiomCheck.lean": "c1956cf3fbea1e220b3d2a56be9682176264023d6f2462ea6497d822fc20ce0c",
+    "PhysicalReferenceWalk-Source.lean": "b079d4782aee9231cd3356e4e734873976111fab5ee1b150cc36f45d98639c4a",
+    "PhysicalReferenceWalk-axiom-audit.log": "f5474d8e9afe60345b592d1a79f1c0575d8da07811a00fb276e3bf611ceb3901",
+    "PhysicalReferenceWalk-compile.log": "646e24b5c9a23eae4e0751a10c9788e31970de48c002943320393cbbafa3be4c",
+    "audited-declarations.tsv": "2b646ff7f5547b6c6ddec00a01ade5d8d514ebb5bc59ceb983918a7e64ee0cef",
+    "runtime-provenance.json": "0da238c620812b94d74c1b3a33a3937a7c68173efd45c8a790f31e8886bd03e9",
+    "source-closure.json": "12e479472a2b4ca3d6be866fb0a6e619a36fb8df6ef12c69f65e0ff0eeacd8a3",
+    "source-review.json": "dc63a918c6664553c873c43e8a692a30a891de798967c12b02d8fbc954949ead"
+  },
+  "guide": {
+    "path": "../../../docs/completion-physical-bridges.md",
+    "sha256": "fd2fc4a8f487a47ba577dc18f245f6c3bd0d7988fb3241406d7ede841ce95ebd"
+  }
+}

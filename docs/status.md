@@ -1,6 +1,6 @@
 # Research status
 
-Updated October 9, 2026 UTC — completion aggregate with 863 focused and six standalone audits; 46 encoded completion-program audits remain isolated.
+Updated October 9, 2026 UTC — completion aggregate with 863 focused and six standalone audits; 46 encoded-program and 193 physical-bridge audits remain isolated.
 
 The main ideal-chain bound is now **`80,000d¹⁷`**, for all ordinary equal-total margins, with automatic choice of the reference-completion or empty-block unit branch. Here `d=10+(m+1)(n+1)`. The [completion-oracle formalization](completion-oracle-formalization.md) proves the full finite-table preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at the smaller outer scales. The new [dense completion family](completion-dense-law.md) discharges its fine-law accuracy premise using the pinned canonical sampler, assembles the all-state physical oracle, and proves the resulting normalized outer-law error. Finite-bit outer-program identification and complete machine runtime remain open. All upstream comparisons use `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; the preserved [initial review](../115/115-contingency-tables-review.md) is unchanged.
 
@@ -125,10 +125,25 @@ under the stated dimension and residual-margin conditions. Its polynomial
 cost bound includes execution and output weight in the complete supplied
 input, including the Boolean list; every reserved trial is evaluated before
 the first accepted result is selected. The [receipt](../formal/results/completion-program/verification.json)
-records the two exact sources and named audit evidence. The computed physical
-list-order bridge, complete outer walk, and fresh-bit public machine remain
-separate obligations. These 46 audits remain isolated, outside the current 863 focused and six
+records the two exact sources and named audit evidence. The subsequent physical
+bridges below identify the computed list order. The complete outer walk and
+fresh-bit public machine remain separate obligations. These 46 audits remain isolated, outside the current 863 focused and six
 standalone audits and the historical Linux result.
+
+The [computed physical bridges](completion-physical-bridges.md) add 193
+standard-axiom audits across seven compiled modules. They connect the actual
+large-row and large-column list ordering to the completion program's output
+and prove its accuracy for every physical reference fiber. They also identify
+computed small-state and neighbor catalogues with the normalized proposal law,
+specialize the explicit schedule to the physical finite-law sampler, and
+reconstruct unique empty-block completions. The general adaptive dilation
+theorems retain explicit hypotheses; automatic parameter selection is not
+installed. The [receipt](../formal/results/completion-physical-bridges/verification.json)
+records six validated object reuses and one fresh compilation with a retained
+style warning. The 193 names are disjoint from the 869 aggregate and 46 encoded
+program names and remain outside those aggregates and Linux verification.
+The Boolean step, complete outer program, and public machine still need their
+own compiled identification and cost proofs.
 
 The historical integrated eighth checkpoint passed **638 Lean declaration audits**: 632 focused plus six standalone, comprising 636 new declarations and two original source statements. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. This checkpoint adds 212 declarations across nine modules for actual finite fibers, prefix-coordinate geometry, the full count bound, quarter acceptance, and retry accuracy. Aggregate compilation and audits used the existing dependency objects; this is not a fresh dependency-closure rebuild.
 
@@ -148,8 +163,8 @@ The eighth checkpoint is published at `0aa5a61140712ada44893b03d805a756e0e9823a`
 
 Next work:
 
-1. Identify the computed list order, reference indices, and finite-bit completion program with the verified all-state dense completion law.
-2. Identify neighbor generation, initialization, the outer walk, and the proved scalar schedule with finite-bit programs; compose the verified completion program with reserved-bit and outer-walk costs. The complete runtime exponent remains open.
+1. Identify the actual Boolean transition step and complete outer walk with the verified proposal and physical completion laws.
+2. Identify initialization and the proved schedule with finite-bit programs; compose reserved-bit, completion, and outer-walk costs in the fresh-bit public machine. The complete runtime exponent remains open.
 3. Reproduce the new oracle additions on Linux and complete strict Comparator replay on an environment meeting its sandbox requirements.
 4. Close the gap between the free-cutoff `U⁴` upper allowance and the explicit `Ω(U²)` chain obstruction, or improve the transition rule with a justified target law and cost.
 5. Expand same-law tests to application-scale methods, including all setup and tuning costs. Empirical competitiveness of the complete #115 sampler remains unknown.
