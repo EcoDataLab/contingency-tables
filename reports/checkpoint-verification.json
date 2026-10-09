@@ -1,8 +1,8 @@
 {
-  "schema_version": 4,
-  "recorded_at_utc": "2026-10-09T05:45:47.689667+00:00",
-  "scope": "Fourth Python research checkpoint; 230 tests, exact certificate/report replays, and source-hash verification. Not a complete finite-bit sampler or a Lean receipt.",
-  "prior_checkpoint_commit": "b3723253f424ab5bf1c8f63443467f18b387222d",
+  "schema_version": 5,
+  "recorded_at_utc": "2026-10-09T11:31:34.120098+00:00",
+  "scope": "Fifth research checkpoint: unchanged Python sources, 230 fresh tests, pinned source verification, and saved report/source hash verification. Lean proof results are recorded separately.",
+  "prior_checkpoint_commit": "d2e8b0be8e65fdf94b800df60296d8dd49098b62",
   "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "environment": {
     "python": "3.14.3",
@@ -15,7 +15,7 @@
       "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v",
       "exit_code": 0,
       "tests_passed": 230,
-      "elapsed_seconds": 3.369,
+      "elapsed_seconds": 3.687,
       "covered_test_files": [
         "tests/test_block_budgets.py",
         "tests/test_block_sampler.py",
@@ -40,58 +40,16 @@
       ]
     },
     {
-      "check": "Fresh deterministic full-report replay",
-      "source": "examples/cactus_commute.py",
-      "function": "run",
-      "report": "reports/cactus-commute.json",
-      "status": "passed"
-    },
-    {
-      "check": "Fresh deterministic full-report replay",
-      "source": "examples/block_factorization.py",
-      "function": "run",
-      "report": "reports/block-factorization.json",
-      "status": "passed"
-    },
-    {
-      "check": "Fresh deterministic full-report replay",
-      "source": "experiments/block_budget_report.py",
-      "function": "report",
-      "report": "reports/block-budget-comparison.json",
-      "status": "passed"
-    },
-    {
-      "check": "Fresh deterministic full-report replay",
-      "source": "experiments/defect_transport.py",
-      "function": "report",
-      "report": "reports/defect-transport-research.json",
-      "status": "passed"
-    },
-    {
-      "check": "Fresh deterministic full-report replay",
-      "source": "experiments/padding_growth.py",
-      "function": "run",
-      "report": "reports/padding-growth.json",
-      "status": "passed"
-    },
-    {
-      "check": "Independent graph, harmonic, censor, Poisson and Rayleigh certificate replay for margins 1..6, covered in full suite",
-      "report": "reports/ideal-two-by-two.json",
-      "test": "tests/test_ideal_two_by_two.py",
-      "status": "passed"
-    },
-    {
-      "check": "Saved benchmark current-source hash verification; timings retained from original run, not replayed here",
-      "report": "reports/sampler-benchmarks.json",
-      "source_hashes_verified": 8,
-      "case_count": 18,
-      "status": "passed"
-    },
-    {
       "command": "PYTHONPATH=src .venv/bin/python scripts/verify_sources.py --checkout .upstream/openai-math",
       "exit_code": 0,
       "bundle_sha256_verified": 5,
       "upstream_git_blobs_verified": 38
+    },
+    {
+      "check": "All saved Python source and report hashes still match checkpoint 4; no benchmark retiming or extra full-report replay claimed.",
+      "source_hashes_verified": 58,
+      "report_hashes_verified": 16,
+      "status": "passed"
     }
   ],
   "source_sha256": {
@@ -313,6 +271,94 @@
         }
       ],
       "note": "Checks recorded at checkpoint 3; preserved as historical evidence."
+    },
+    {
+      "source_commit": "d2e8b0be8e65fdf94b800df60296d8dd49098b62",
+      "checks": [
+        {
+          "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v",
+          "exit_code": 0,
+          "tests_passed": 230,
+          "elapsed_seconds": 3.369,
+          "covered_test_files": [
+            "tests/test_block_budgets.py",
+            "tests/test_block_sampler.py",
+            "tests/test_budgets.py",
+            "tests/test_build_lean_serial.py",
+            "tests/test_cactus.py",
+            "tests/test_chain_diagnostics.py",
+            "tests/test_commute_scaling.py",
+            "tests/test_ideal_chain.py",
+            "tests/test_ideal_two_by_two.py",
+            "tests/test_kernels.py",
+            "tests/test_lean_axiom_audit.py",
+            "tests/test_mixtures.py",
+            "tests/test_optimize.py",
+            "tests/test_padding_barrier.py",
+            "tests/test_padding_growth.py",
+            "tests/test_sampler_benchmarks.py",
+            "tests/test_scales.py",
+            "tests/test_tables.py",
+            "tests/test_transport_bounds.py",
+            "tests/test_workers.py"
+          ]
+        },
+        {
+          "check": "Fresh deterministic full-report replay",
+          "source": "examples/cactus_commute.py",
+          "function": "run",
+          "report": "reports/cactus-commute.json",
+          "status": "passed"
+        },
+        {
+          "check": "Fresh deterministic full-report replay",
+          "source": "examples/block_factorization.py",
+          "function": "run",
+          "report": "reports/block-factorization.json",
+          "status": "passed"
+        },
+        {
+          "check": "Fresh deterministic full-report replay",
+          "source": "experiments/block_budget_report.py",
+          "function": "report",
+          "report": "reports/block-budget-comparison.json",
+          "status": "passed"
+        },
+        {
+          "check": "Fresh deterministic full-report replay",
+          "source": "experiments/defect_transport.py",
+          "function": "report",
+          "report": "reports/defect-transport-research.json",
+          "status": "passed"
+        },
+        {
+          "check": "Fresh deterministic full-report replay",
+          "source": "experiments/padding_growth.py",
+          "function": "run",
+          "report": "reports/padding-growth.json",
+          "status": "passed"
+        },
+        {
+          "check": "Independent graph, harmonic, censor, Poisson and Rayleigh certificate replay for margins 1..6, covered in full suite",
+          "report": "reports/ideal-two-by-two.json",
+          "test": "tests/test_ideal_two_by_two.py",
+          "status": "passed"
+        },
+        {
+          "check": "Saved benchmark current-source hash verification; timings retained from original run, not replayed here",
+          "report": "reports/sampler-benchmarks.json",
+          "source_hashes_verified": 8,
+          "case_count": 18,
+          "status": "passed"
+        },
+        {
+          "command": "PYTHONPATH=src .venv/bin/python scripts/verify_sources.py --checkout .upstream/openai-math",
+          "exit_code": 0,
+          "bundle_sha256_verified": 5,
+          "upstream_git_blobs_verified": 38
+        }
+      ],
+      "note": "Checks recorded at checkpoint 4; retained as historical evidence."
     }
   ]
 }

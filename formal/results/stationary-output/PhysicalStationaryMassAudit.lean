@@ -1,0 +1,9 @@
+import Math115.PhysicalStationaryMass
+#print axioms Math115.PhysicalStationaryMass.physical_mass_eq_profiles
+#print axioms Math115.PhysicalStationaryMass.physical_mass_eq_words_defects
+#print axioms Math115.PhysicalStationaryMass.defect_mass_le_words
+#print axioms Math115.PhysicalStationaryMass.normalizer
+#print axioms Math115.PhysicalStationaryMass.normalizer_le_padded_count
+#print axioms Math115.PhysicalStationaryMass.normalizer_le_original_count
+#print axioms Math115.PhysicalStationaryMass.normalizer_positive
+#print axioms Math115.PhysicalStationaryMass.success_ratio_lower

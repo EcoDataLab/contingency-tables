@@ -70,6 +70,31 @@ The helper's 16 orchestration tests use temporary sources and mocked subprocesse
 
 A subsequent real single-module smoke check passed for `Math115.QuadraticCoefficient`: the dependency guard took 5.817 seconds and the explicit module target took 2.588 seconds. The exact commands, input hashes, statuses, and stdout are retained in `formal/results/single-module-serial-smoke.json` and `.log`. This checked one module and did not run an axiom audit or the full serial scope.
 
+## Independent checkpoint 4 replication
+
+[Focused run 37890362781](https://github.com/EcoDataLab/contingency-tables/actions/runs/37890362781)
+passed at `d2e8b0be8e65fdf94b800df60296d8dd49098b62` on 9 October 2026 UTC.
+The fresh Linux job took 9 minutes 21 seconds. It compiled the focused proof
+closure and audited all **226 selected focused declarations**, including the
+new `d¹⁷` chain bounds and automatic feasibility/branch proofs. Every audited
+declaration uses only the allowed foundational axioms or a subset. This run
+did not invoke the separate six-declaration standalone audit.
+
+The [saved receipt](../formal/results/linux-focused-d2e8b0b/verification.json)
+records the run, exact declarations, and **39 environment-recorded source
+hashes checked against that Git commit**. The complete verification step was
+retrieved through the authenticated GitHub job-log connector and preserved
+with timestamp prefixes removed. Environment and outcome records were parsed
+from the same job transcript. The artifact archive digest is recorded as API
+metadata; this run's archive was not downloaded or digest-verified.
+
+The [verification log](../formal/results/linux-focused-d2e8b0b/verification.log)
+records two successful Lake invocations ending at 8,948 and 9,124 jobs; these
+counts include trusted dependency-cache jobs and are not counts of newly
+proved theorems. Official Mathlib cache artifacts remain trusted. This
+replication covers the stated checkpoint, not later source additions, an
+outer finite-bit sampler, or strict Comparator replay.
+
 ## Completed original Linux build
 
 [Full run 37847944509](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509) passed at repository commit `5e5d6ef9aa36f7e2a744f3fb8605448529f8be66`. The original theorem closure completed 10,221 Lake jobs, including trusted cached dependency jobs. The raw log prints `boundedSampling`, `exactSampling`, and `counting`, each with only `propext`, `Classical.choice`, and `Quot.sound`, and confirms the three-declaration allowlist. The verification step took 47 minutes 29 seconds.

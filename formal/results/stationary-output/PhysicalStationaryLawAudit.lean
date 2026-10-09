@@ -1,0 +1,21 @@
+import Math115.PhysicalStationaryLaw
+#print axioms Math115.PhysicalStationaryLaw.fibre_card_weight
+#print axioms Math115.PhysicalStationaryLaw.fibreNonempty
+#print axioms Math115.PhysicalStationaryLaw.stateJoint_card
+#print axioms Math115.PhysicalStationaryLaw.stationaryRat
+#print axioms Math115.PhysicalStationaryLaw.stationaryRat_cast
+#print axioms Math115.PhysicalStationaryLaw.stationaryLaw
+#print axioms Math115.PhysicalStationaryLaw.jointLaw
+#print axioms Math115.PhysicalStationaryLaw.jointLaw_uniform
+#print axioms Math115.PhysicalStationaryLaw.stationary_trial_mass
+#print axioms Math115.PhysicalStationaryLaw.stationary_trial_mass_real
+#print axioms Math115.PhysicalStationaryLaw.stationary_failure_mass
+#print axioms Math115.PhysicalStationaryLaw.stationary_success_probability
+#print axioms Math115.PhysicalStationaryLaw.stationary_success_lower
+#print axioms Math115.PhysicalStationaryLaw.stationary_success_probability_lower
+#print axioms Math115.PhysicalStationaryLaw.stationary_retry_mass
+#print axioms Math115.PhysicalStationaryLaw.stationary_retry_variation
+#print axioms Math115.PhysicalStationaryLaw.ideal_padded_count
+#print axioms Math115.PhysicalStationaryLaw.ideal_stationary_success_lower
+#print axioms Math115.PhysicalStationaryLaw.ideal_stationary_success_probability_lower
+#print axioms Math115.PhysicalStationaryLaw.ideal_stationary_retry_variation

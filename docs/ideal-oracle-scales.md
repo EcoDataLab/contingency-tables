@@ -82,9 +82,13 @@ chain succeeds with probability one half. That chain contains additional
 defect states and uses completion-count weights. The pinned source's
 original stationary-success proof combines the padding ratio with a
 separate defect-mass factor, yielding a lower bound
-`1/[2(1+d²)]`. The generic physical mass and balanced-pair arguments are
-available, but this module does not specialize and prove that stationary
-success theorem at the ideal scales, or prove a revised outer output law.
+`1/[2(1+d²)]`. The subsequent
+[stationary-output modules](physical-stationary-success.md) now transfer
+those arguments to free scales and prove the sharper actual-cell bound
+`1/[2(1+p²)]` at these ideal parameters. They identify the physical chain's
+stationary law, prove uniform conditional output, and bound independent
+stationary retries. A finite-walk output law and complete finite-bit sampler
+remain separate integration work.
 
 ## Why the dense-compatible result remains separate
 

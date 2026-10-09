@@ -21,3 +21,6 @@ import Math115.IdealOracleScales
 import Math115.PhysicalRepairRefinement
 import Math115.IdealRepairRefinement
 import Math115.ReducedRepairRefinement
+import Math115.PhysicalStationaryMass
+import Math115.PhysicalStationarySuccess
+import Math115.PhysicalStationaryLaw

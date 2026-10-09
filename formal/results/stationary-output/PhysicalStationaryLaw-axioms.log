@@ -1,0 +1,30 @@
+'Math115.PhysicalStationaryLaw.fibre_card_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.fibreNonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stateJoint_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationaryRat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationaryRat_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationaryLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.jointLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.jointLaw_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_trial_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_trial_mass_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_failure_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_success_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_success_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_success_probability_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_retry_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_retry_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.ideal_padded_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.ideal_stationary_success_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationaryLaw.ideal_stationary_success_probability_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationaryLaw.ideal_stationary_retry_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -405,6 +405,12 @@
       "sha256": "07ddb01ee816f869dc0281e7712b5501d49a602dea626931d4fdf59c74ff5d1a"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedCompletionMass",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/BalancedCompletionMass.lean",
+      "git_blob": "5c72b29976262fdb9e16940093660ffe0299977a",
+      "sha256": "83bc1e159246dae16a7a9ce580ff0cf993a79b22c832f28bbf448812bfb57da8"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedEnumeration",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/BalancedEnumeration.lean",
       "git_blob": "06e04ed6faaeb8aaf4d2c19b3a26577c39c0f154",
@@ -415,6 +421,12 @@
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/BalancedFamily.lean",
       "git_blob": "8b1fe62f9b77b4934bd5a153207d6ea654aa78e6",
       "sha256": "30de4bedeb8e5dc9028d9ad00153abefcee961a8b4b1086e1ad0341f2d050917"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedJointConstruction",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/BalancedJointConstruction.lean",
+      "git_blob": "f62529201811bbf21b6ad462135fad963992f299",
+      "sha256": "6d0eb25ad61f00b40ce752a89ae58fdd9fdbd69951053f11cdc299946de9f9aa"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.BalancedSummation",
@@ -451,6 +463,12 @@
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionFibreEquiv.lean",
       "git_blob": "af7dfb146260ca857ee55b34e62a1e0583fe6e56",
       "sha256": "c51b64d573e7ffd514f5cadf86086ea1d771983770ec9294ce8e66685c515ec4"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.CompletionFibreTransport",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionFibreTransport.lean",
+      "git_blob": "405d4f84de1e5c1350c5a275378e893afe45c6ba",
+      "sha256": "e80eb3c221d08f7838251e3cf504b41ad1fa2086d7821c86937bdfd7d9caef37"
     },
     {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.ContextAdjacentTransport",
@@ -1005,6 +1023,12 @@
       "sha256": "baacb842ff4877525e0218fef237c50cdce3274c070918aea540a85b75e9961a"
     },
     {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.UniformPartialRejection",
+      "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/UniformPartialRejection.lean",
+      "git_blob": "a4323507b46fdff4cb8d7fa2c1f7ff4c7e303821",
+      "sha256": "3253cbd62b1d307f25c2948973e401fe70e9c716517fce6ba89884f592b2ce0f"
+    },
+    {
       "module": "OAI.Combinatorics.ContingencyTables.Transport.WordContextVariance",
       "path": "lean/OAI/Combinatorics/ContingencyTables/Transport/WordContextVariance.lean",
       "git_blob": "b76b4cc44d839be0520cda642ff9c7f795e4ab06",
@@ -1031,8 +1055,10 @@
     "Mathlib.Algebra.Order.BigOperators.Group.Finset",
     "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
     "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
+    "Mathlib.Algebra.Order.Field.Basic",
     "Mathlib.Algebra.Order.Ring.Abs",
     "Mathlib.Analysis.Real.Sqrt",
+    "Mathlib.Analysis.SpecialFunctions.Exp",
     "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
     "Mathlib.Basic.Real.Basic",
     "Mathlib.Data.Fin.Tuple.Basic",
@@ -1062,5 +1088,5 @@
     "Mathlib.Tactic.Ring",
     "Mathlib.Tactic.SplitIfs"
   ],
-  "closure_note": "200 source modules in the compiler-free dependency plan: 168 unchanged upstream and 32 local Math115 modules; 43 trusted external import entries. Dependency cache remains trusted."
+  "closure_note": "207 source modules in the compiler-free dependency plan: 172 unchanged upstream and 35 local Math115 modules; 45 trusted external import entries. Dependency cache remains trusted."
 }

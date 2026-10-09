@@ -1,0 +1,26 @@
+import Math115.PhysicalStationarySuccess
+#print axioms Math115.PhysicalStationarySuccess.paddedTable_small_rows
+#print axioms Math115.PhysicalStationarySuccess.paddedTable_small_columns
+#print axioms Math115.PhysicalStationarySuccess.originalJoint
+#print axioms Math115.PhysicalStationarySuccess.originalJoint_projection
+#print axioms Math115.PhysicalStationarySuccess.large_padding_rows
+#print axioms Math115.PhysicalStationarySuccess.large_padding_columns
+#print axioms Math115.PhysicalStationarySuccess.large
+#print axioms Math115.PhysicalStationarySuccess.jointTable
+#print axioms Math115.PhysicalStationarySuccess.originalSuccessfulJoint
+#print axioms Math115.PhysicalStationarySuccess.unpadSuccessfulJoint
+#print axioms Math115.PhysicalStationarySuccess.unpadSuccessfulJoint_val
+#print axioms Math115.PhysicalStationarySuccess.successfulJointEquiv
+#print axioms Math115.PhysicalStationarySuccess.stateJointProjection
+#print axioms Math115.PhysicalStationarySuccess.stateJointProjection_injective
+#print axioms Math115.PhysicalStationarySuccess.jointState
+#print axioms Math115.PhysicalStationarySuccess.jointEmbedding
+#print axioms Math115.PhysicalStationarySuccess.jointEmbedding_injective
+#print axioms Math115.PhysicalStationarySuccess.jointEmbedding_balanced
+#print axioms Math115.PhysicalStationarySuccess.balancedJointFromState
+#print axioms Math115.PhysicalStationarySuccess.balancedJointFromState_projection
+#print axioms Math115.PhysicalStationarySuccess.embedding_fromState
+#print axioms Math115.PhysicalStationarySuccess.fromState_embedding
+#print axioms Math115.PhysicalStationarySuccess.StateJointSuccess
+#print axioms Math115.PhysicalStationarySuccess.successStateEquiv
+#print axioms Math115.PhysicalStationarySuccess.originalStateSuccessEquiv

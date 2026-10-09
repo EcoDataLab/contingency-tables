@@ -1,0 +1,623 @@
+{
+  "status": "passed",
+  "source_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "scope": "Direct serial author module compilation using existing compiled dependencies, no aggregate/dependency-closure rebuild or Comparator replay.",
+  "source_sha256": {
+    "formal/Math115/PhysicalStationaryMass.lean": "3f33393f684062936200fa54270537e84f7b6abc9d71fa6be3f84c3d38b76e8b",
+    "formal/Math115/PhysicalStationarySuccess.lean": "d6743fe2c6eff224572c4f2d114af00e3895951389109869bed7f8ce6616c2b3",
+    "formal/Math115/PhysicalStationaryLaw.lean": "ce1b601cbc1d7cac6a9823c08333856c9b4e7e95b62ce3a36cbb0dc4dc72375f"
+  },
+  "compilations": [
+    {
+      "module": "PhysicalStationaryMass",
+      "command": [
+        "../.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-o",
+        ".lake/build/lib/lean/Math115/PhysicalStationaryMass.olean",
+        "-i",
+        ".lake/build/lib/lean/Math115/PhysicalStationaryMass.ilean",
+        "Math115/PhysicalStationaryMass.lean"
+      ],
+      "cwd": "formal",
+      "environment": {
+        "ELAN_HOME": "<repo>/.tools/elan"
+      },
+      "exit_code": 0,
+      "started_at_utc": null,
+      "finished_at_utc": null,
+      "elapsed_seconds": null,
+      "timing_note": "Precise subprocess timing was not captured for this direct author compilation.",
+      "source_sha256": "3f33393f684062936200fa54270537e84f7b6abc9d71fa6be3f84c3d38b76e8b",
+      "log_path": "formal/results/stationary-output/PhysicalStationaryMass-compile.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "PhysicalStationarySuccess",
+      "command": [
+        "../.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-o",
+        ".lake/build/lib/lean/Math115/PhysicalStationarySuccess.olean",
+        "-i",
+        ".lake/build/lib/lean/Math115/PhysicalStationarySuccess.ilean",
+        "Math115/PhysicalStationarySuccess.lean"
+      ],
+      "cwd": "formal",
+      "environment": {
+        "ELAN_HOME": "<repo>/.tools/elan"
+      },
+      "exit_code": 0,
+      "started_at_utc": null,
+      "finished_at_utc": null,
+      "elapsed_seconds": null,
+      "timing_note": "Precise subprocess timing was not captured for this direct author compilation.",
+      "source_sha256": "d6743fe2c6eff224572c4f2d114af00e3895951389109869bed7f8ce6616c2b3",
+      "log_path": "formal/results/stationary-output/PhysicalStationarySuccess-compile.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "module": "PhysicalStationaryLaw",
+      "command": [
+        "../.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-o",
+        ".lake/build/lib/lean/Math115/PhysicalStationaryLaw.olean",
+        "-i",
+        ".lake/build/lib/lean/Math115/PhysicalStationaryLaw.ilean",
+        "Math115/PhysicalStationaryLaw.lean"
+      ],
+      "cwd": "formal",
+      "environment": {
+        "ELAN_HOME": "<repo>/.tools/elan"
+      },
+      "exit_code": 0,
+      "started_at_utc": "2026-10-09T11:24:51.432356+00:00",
+      "finished_at_utc": "2026-10-09T11:25:47.617680+00:00",
+      "elapsed_seconds": 56.183353374945,
+      "source_sha256": "ce1b601cbc1d7cac6a9823c08333856c9b4e7e95b62ce3a36cbb0dc4dc72375f",
+      "log_path": "formal/results/stationary-output/PhysicalStationaryLaw-compile.log",
+      "log_sha256": "347ff7cf1fb57dbe1027ad14a06047155698c3dd675f1afbad9a327ce92fee54"
+    }
+  ],
+  "isolated_axiom_audits": [
+    {
+      "module": "PhysicalStationaryMass",
+      "command": [
+        "../.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "../.local/stationary-success/PhysicalStationaryMassAudit.lean"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-09T11:26:37.258244+00:00",
+      "finished_at_utc": "2026-10-09T11:27:33.514567+00:00",
+      "elapsed_seconds": 56.255961999995634,
+      "source_sha256": "3f33393f684062936200fa54270537e84f7b6abc9d71fa6be3f84c3d38b76e8b",
+      "log_path": "formal/results/stationary-output/PhysicalStationaryMass-axioms.log",
+      "declarations": [
+        {
+          "name": "Math115.PhysicalStationaryMass.physical_mass_eq_profiles",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.physical_mass_eq_words_defects",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.defect_mass_le_words",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.normalizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.normalizer_le_padded_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.normalizer_le_original_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.normalizer_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.success_ratio_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "audit_source": "formal/results/stationary-output/PhysicalStationaryMassAudit.lean",
+      "log_sha256": "89bc373163c018edcd436f9927864f7d85269c73e7a7144787d838375892e2ca",
+      "reproduction_command": [
+        "../.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "../formal/results/stationary-output/PhysicalStationaryMassAudit.lean"
+      ]
+    },
+    {
+      "module": "PhysicalStationarySuccess",
+      "command": [
+        "../.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "../.local/stationary-success/PhysicalStationarySuccessAudit.lean"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-09T11:27:33.515325+00:00",
+      "finished_at_utc": "2026-10-09T11:28:22.601209+00:00",
+      "elapsed_seconds": 49.08568908297457,
+      "source_sha256": "d6743fe2c6eff224572c4f2d114af00e3895951389109869bed7f8ce6616c2b3",
+      "log_path": "formal/results/stationary-output/PhysicalStationarySuccess-axioms.log",
+      "declarations": [
+        {
+          "name": "Math115.PhysicalStationarySuccess.paddedTable_small_rows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.paddedTable_small_columns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.originalJoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.originalJoint_projection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.large_padding_rows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.large_padding_columns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.large",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.jointTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.originalSuccessfulJoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.unpadSuccessfulJoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.unpadSuccessfulJoint_val",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.successfulJointEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.stateJointProjection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.stateJointProjection_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.jointState",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.jointEmbedding",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.jointEmbedding_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.jointEmbedding_balanced",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.balancedJointFromState",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.balancedJointFromState_projection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.embedding_fromState",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.fromState_embedding",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.StateJointSuccess",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.successStateEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.originalStateSuccessEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "audit_source": "formal/results/stationary-output/PhysicalStationarySuccessAudit.lean",
+      "log_sha256": "f66a1bcf3c7fb1c71bb8b41ffd780d760a103de3a5effc31cc1b515b4fd3719f",
+      "reproduction_command": [
+        "../.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "../formal/results/stationary-output/PhysicalStationarySuccessAudit.lean"
+      ]
+    },
+    {
+      "module": "PhysicalStationaryLaw",
+      "command": [
+        "../.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "../.local/stationary-success/PhysicalStationaryLawAudit.lean"
+      ],
+      "exit_code": 0,
+      "started_at_utc": "2026-10-09T11:28:22.602079+00:00",
+      "finished_at_utc": "2026-10-09T11:29:10.978349+00:00",
+      "elapsed_seconds": 48.37608929211274,
+      "source_sha256": "ce1b601cbc1d7cac6a9823c08333856c9b4e7e95b62ce3a36cbb0dc4dc72375f",
+      "log_path": "formal/results/stationary-output/PhysicalStationaryLaw-axioms.log",
+      "declarations": [
+        {
+          "name": "Math115.PhysicalStationaryLaw.fibre_card_weight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.fibreNonempty",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stateJoint_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationaryRat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationaryRat_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationaryLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.jointLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.jointLaw_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_trial_mass",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_trial_mass_real",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_failure_mass",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_success_probability",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_success_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_success_probability_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_retry_mass",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_retry_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.ideal_padded_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.ideal_stationary_success_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.ideal_stationary_success_probability_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.ideal_stationary_retry_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "audit_source": "formal/results/stationary-output/PhysicalStationaryLawAudit.lean",
+      "log_sha256": "808ef3485ce36a1ddc6d6d0377cf5a8157060f048f332d32ebc8d56ac375f67c",
+      "reproduction_command": [
+        "../.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "../formal/results/stationary-output/PhysicalStationaryLawAudit.lean"
+      ]
+    }
+  ],
+  "audited_declarations": 53,
+  "file_sha256": {
+    "formal/results/stationary-output/PhysicalStationaryMass-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/stationary-output/PhysicalStationarySuccess-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/stationary-output/PhysicalStationaryLaw-compile.log": "347ff7cf1fb57dbe1027ad14a06047155698c3dd675f1afbad9a327ce92fee54",
+    "formal/results/stationary-output/PhysicalStationaryMassAudit.lean": "b4aa51f4b6b4990fb708a72e64c92810c3586340e9d6d13b34eb453e16e90151",
+    "formal/results/stationary-output/PhysicalStationaryMass-axioms.log": "89bc373163c018edcd436f9927864f7d85269c73e7a7144787d838375892e2ca",
+    "formal/results/stationary-output/PhysicalStationarySuccessAudit.lean": "4d2f5bc6eb91867a461fa59cfaf994c97d210891191fa21235c5445c25e45446",
+    "formal/results/stationary-output/PhysicalStationarySuccess-axioms.log": "f66a1bcf3c7fb1c71bb8b41ffd780d760a103de3a5effc31cc1b515b4fd3719f",
+    "formal/results/stationary-output/PhysicalStationaryLawAudit.lean": "5165549a6c605c5a6b76106f84cb1e4e4b0a441ed91e7a5e78214fa35e551877",
+    "formal/results/stationary-output/PhysicalStationaryLaw-axioms.log": "808ef3485ce36a1ddc6d6d0377cf5a8157060f048f332d32ebc8d56ac375f67c"
+  },
+  "limits": [
+    "Existing dependency objects and official Mathlib cache are trusted.",
+    "Independent exact stationary trials, not finite-walk output or finite-bit sampler cost.",
+    "Fresh aggregate verification is recorded separately in formal/results/verification.json."
+  ]
+}

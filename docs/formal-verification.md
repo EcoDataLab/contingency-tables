@@ -1,8 +1,9 @@
 # Formal verification of the #115 refinements
 
 The formal work is additive to OpenAI's pinned #115 source. It now proves
-sharper Poincare bounds for the unchanged original ideal chains and an actual
-parameterized ideal chains at both dense-compatible and smaller ideal-only scales. Finite-bit sampler runtime and secure Comparator
+sharper Poincare bounds for the unchanged original ideal chains and actual
+parameterized ideal chains at both dense-compatible and smaller ideal-only scales,
+with stationary success and uniform-output proofs. Finite-bit sampler runtime and secure Comparator
 verification remain separate from these results.
 
 ## Reproduction
@@ -224,6 +225,25 @@ supplies the dense-compatible `128·47⁴d²⁵` bound (unit: `64·47⁴d²⁵`)
 Both include final automatic wrappers requiring only equal ordinary totals.
 Neither is a finite-bit completion or outer sampler theorem.
 
+[`PhysicalStationaryMass.lean`](../formal/Math115/PhysicalStationaryMass.lean)
+keeps the actual completion multiplicities and proves `Z≤(1+p²)P` for the
+physical normalizer, arbitrary cutoff and padding, and ordinary padded-table
+count `P`. Equal ordinary total margins supply positive normalization for the
+probability statements.
+[`PhysicalStationarySuccess.lean`](../formal/Math115/PhysicalStationarySuccess.lean)
+constructs a bijection between original tables and successful actual
+state/completion pairs. Success requires both a balanced state and sufficient
+large-cell entries to unpad; all completions remain in the joint space.
+[`PhysicalStationaryLaw.lean`](../formal/Math115/PhysicalStationaryLaw.lean)
+identifies its rational state law with the selected chain's actual stationary
+law, proves the dependent joint law uniform, and gives table mass `1/Z` and
+total success `N/Z`. At `U=5d³,L=3d`, success is at least `1/[2(1+p²)]`.
+Independent stationary retries have an exact uniform/fallback mixture and
+total variation error at most `exp(−n/[2(1+p²)])`. The
+[stationary-output guide](physical-stationary-success.md) gives the scope and
+named interfaces; none of these statements assumes a finite walk has already
+reached stationarity.
+
 ## Verification levels
 
 - `standalone` compiles the sharp coefficient, repaired scalar bound, and global ownership abstraction
@@ -249,7 +269,7 @@ additional verification level.
 
 ## Recorded outcome
 
-The fourth local checkpoint passed on 9 October 2026 UTC with Lean 4.34.1.
+The fifth local checkpoint passed on 9 October 2026 UTC with Lean 4.34.1.
 New modules were compiled serially, followed by a fresh aggregate
 `Math115.lean` compilation and fresh focused and standalone axiom audits.
 Those integrated checks use existing compiled dependency outputs. This is
@@ -257,10 +277,12 @@ Those integrated checks use existing compiled dependency outputs. This is
 
 | Check | Outcome | Evidence |
 |---|---|---|
-| Checkpoint 4 aggregate | `Math115.lean` compiled; both axiom audits passed | [Fourth-checkpoint log](../formal/results/fourth-checkpoint.log) |
-| Checkpoint 4 dependency inventory | 200 source modules: 168 unchanged upstream and 32 local; 43 trusted external import entries | [Verification scope](../formal/results/verification.json) and [source provenance](../formal/results/provenance.json) |
-| Checkpoint 4 focused audit | 226 selected declarations passed | [Fourth-checkpoint log](../formal/results/fourth-checkpoint.log) |
-| Checkpoint 4 standalone audit | Six selected declarations passed | [Fourth-checkpoint log](../formal/results/fourth-checkpoint.log) |
+| Checkpoint 5 aggregate | `Math115.lean` compiled; both axiom audits passed | [Fifth-checkpoint log](../formal/results/fifth-checkpoint.log) |
+| Checkpoint 5 dependency inventory | 207 source modules: 172 unchanged upstream and 35 local; 45 trusted external import entries | [Verification scope](../formal/results/verification.json) and [source provenance](../formal/results/provenance.json) |
+| Checkpoint 5 focused audit | 279 selected declarations passed | [Fifth-checkpoint log](../formal/results/fifth-checkpoint.log) |
+| Checkpoint 5 standalone audit | Six selected declarations passed | [Fifth-checkpoint log](../formal/results/fifth-checkpoint.log) |
+| Checkpoint 4, historical local result | Aggregate and 232 audits passed, using the then-current dependencies | [Fourth-checkpoint log](../formal/results/fourth-checkpoint.log) |
+| Independent checkpoint 4 Linux build | Fresh focused build and all 226 focused audits passed at `d2e8b0b`; excludes the stationary-output additions | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37890362781) and [receipt](../formal/results/linux-focused-d2e8b0b/verification.json) |
 | Checkpoint 3, historical local result | Aggregate and 154 audits passed, using the then-current dependencies | [Historical third-checkpoint log](../formal/results/third-checkpoint.log) |
 | Checkpoint 2, historical local result | 86 upstream modules in its import closure; 62 focused and six standalone audited declarations | [Historical focused log](../formal/results/focused.log) and [standalone log](../formal/results/standalone.log) |
 | Earlier focused Linux run | Passed at `5e5d6ef`; excludes subsequent local additions | [Run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847572556) |
@@ -268,22 +290,25 @@ Those integrated checks use existing compiled dependency outputs. This is
 | Earlier independent Thor run | At `b14082b`: 128 Python tests, 100 freshly compiled source modules, and 68 audited declarations | [Thor verification](thor-verification.md) and [receipt](../formal/results/thor-verification.json) |
 | Strict Comparator | Not passed: hosted runner reported Landlock ABI 7, while ABI 9 was required | [Preflight run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684) |
 
-The checkpoint 4 total is **232 selected declarations: 226 focused plus six
-standalone, comprising 230 new declarations and two original baseline
+The checkpoint 5 total is **285 selected declarations: 279 focused plus six
+standalone, comprising 283 new declarations and two original baseline
 declarations**. All use only the standard allowed axioms `propext`,
 `Classical.choice`, and `Quot.sound`, or subsets.
 
 [`verification.json`](../formal/results/verification.json) records the exact
 selected declarations, axioms, source hashes, and verification scope.
 Historical logs are retained; current aggregate compilation and fresh audits
-are in `fourth-checkpoint.log`. The source pin and unchanged upstream files
+are in `fifth-checkpoint.log`. The source pin and unchanged upstream files
 are recorded in provenance, and the focused manifest retains the original
 revision entries. The separate successful original-theorem Linux run audits
 three original sampling/counting exports at its own recorded commit. It is
-neither a Comparator pass nor a Linux verification of these new refinements.
+neither a Comparator pass nor a Linux verification of later refinements. The
+separate checkpoint-4 focused Linux run covers its exact recorded sources;
+its 39 environment-recorded source hashes were checked against `d2e8b0b`.
 
 This checkpoint verifies ideal-chain variance bounds, ordinary-table padding,
-automatic branch selection, and physical feasibility. It does not verify a
-modified finite-bit sampler, a stationary physical output-success theorem at
-the new scales, or a complete machine runtime. Official Mathlib cache artifacts
+automatic branch selection, physical feasibility, and the actual stationary
+physical success/output law. A matching finite-walk law and output-error
+bound at the new scales remain to be integrated. It does not verify a
+modified finite-bit sampler or a complete machine runtime. Official Mathlib cache artifacts
 and Lean bootstrap binaries remain trusted.

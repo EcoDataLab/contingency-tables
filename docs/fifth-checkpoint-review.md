@@ -111,7 +111,7 @@ theorem. Root integration also corrected the comparison prose: the saved
 benchmark uses a full-line heat bath with no added holding probability, so
 on a single rectangle it gives iid uniform draws and variance inflation one.
 
-## Remaining boundaries
+## Boundaries at this checkpoint
 
 The new ideal scales violate the retained sufficient dense-completion
 interface. Stationary physical success and the outer output law at free
@@ -120,3 +120,9 @@ sampler, machine-runtime proof, general practical speed advantage, or
 extension to arbitrary bounded/weighted models follows from this checkpoint.
 Earlier Linux/Thor checks and strict Comparator limitations retain the
 separate scope recorded in the formal ledger.
+
+Subsequent checkpoint 5 adds the
+[stationary success and output proof](physical-stationary-success.md), with
+its own [independent source review](../formal/results/stationary-output-review.json).
+It closes the stationary-law part of the integration above; finite-walk
+output approximation and finite-bit implementation remain open.

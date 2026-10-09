@@ -1,0 +1,10 @@
+'Math115.PhysicalStationaryMass.physical_mass_eq_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.physical_mass_eq_words_defects' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationaryMass.defect_mass_le_words' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.normalizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.normalizer_le_padded_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.normalizer_le_original_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.normalizer_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.success_ratio_lower' depends on axioms: [propext, Classical.choice, Quot.sound]

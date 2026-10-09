@@ -266,3 +266,62 @@ import Math115
 #print axioms Math115.ReducedRepairRefinement.reducedUnitChain_poincare_d25_refined
 #print axioms Math115.ReducedRepairRefinement.reducedSelectedChain_poincare_d25_refined
 #print axioms Math115.ReducedRepairRefinement.feasibleReducedChain_poincare_d25_refined
+
+-- PhysicalStationaryMass: checkpoint 5 stationary output additions.
+#print axioms Math115.PhysicalStationaryMass.physical_mass_eq_profiles
+#print axioms Math115.PhysicalStationaryMass.physical_mass_eq_words_defects
+#print axioms Math115.PhysicalStationaryMass.defect_mass_le_words
+#print axioms Math115.PhysicalStationaryMass.normalizer
+#print axioms Math115.PhysicalStationaryMass.normalizer_le_padded_count
+#print axioms Math115.PhysicalStationaryMass.normalizer_le_original_count
+#print axioms Math115.PhysicalStationaryMass.normalizer_positive
+#print axioms Math115.PhysicalStationaryMass.success_ratio_lower
+
+-- PhysicalStationarySuccess: checkpoint 5 stationary output additions.
+#print axioms Math115.PhysicalStationarySuccess.paddedTable_small_rows
+#print axioms Math115.PhysicalStationarySuccess.paddedTable_small_columns
+#print axioms Math115.PhysicalStationarySuccess.originalJoint
+#print axioms Math115.PhysicalStationarySuccess.originalJoint_projection
+#print axioms Math115.PhysicalStationarySuccess.large_padding_rows
+#print axioms Math115.PhysicalStationarySuccess.large_padding_columns
+#print axioms Math115.PhysicalStationarySuccess.large
+#print axioms Math115.PhysicalStationarySuccess.jointTable
+#print axioms Math115.PhysicalStationarySuccess.originalSuccessfulJoint
+#print axioms Math115.PhysicalStationarySuccess.unpadSuccessfulJoint
+#print axioms Math115.PhysicalStationarySuccess.unpadSuccessfulJoint_val
+#print axioms Math115.PhysicalStationarySuccess.successfulJointEquiv
+#print axioms Math115.PhysicalStationarySuccess.stateJointProjection
+#print axioms Math115.PhysicalStationarySuccess.stateJointProjection_injective
+#print axioms Math115.PhysicalStationarySuccess.jointState
+#print axioms Math115.PhysicalStationarySuccess.jointEmbedding
+#print axioms Math115.PhysicalStationarySuccess.jointEmbedding_injective
+#print axioms Math115.PhysicalStationarySuccess.jointEmbedding_balanced
+#print axioms Math115.PhysicalStationarySuccess.balancedJointFromState
+#print axioms Math115.PhysicalStationarySuccess.balancedJointFromState_projection
+#print axioms Math115.PhysicalStationarySuccess.embedding_fromState
+#print axioms Math115.PhysicalStationarySuccess.fromState_embedding
+#print axioms Math115.PhysicalStationarySuccess.StateJointSuccess
+#print axioms Math115.PhysicalStationarySuccess.successStateEquiv
+#print axioms Math115.PhysicalStationarySuccess.originalStateSuccessEquiv
+
+-- PhysicalStationaryLaw: checkpoint 5 stationary output additions.
+#print axioms Math115.PhysicalStationaryLaw.fibre_card_weight
+#print axioms Math115.PhysicalStationaryLaw.fibreNonempty
+#print axioms Math115.PhysicalStationaryLaw.stateJoint_card
+#print axioms Math115.PhysicalStationaryLaw.stationaryRat
+#print axioms Math115.PhysicalStationaryLaw.stationaryRat_cast
+#print axioms Math115.PhysicalStationaryLaw.stationaryLaw
+#print axioms Math115.PhysicalStationaryLaw.jointLaw
+#print axioms Math115.PhysicalStationaryLaw.jointLaw_uniform
+#print axioms Math115.PhysicalStationaryLaw.stationary_trial_mass
+#print axioms Math115.PhysicalStationaryLaw.stationary_trial_mass_real
+#print axioms Math115.PhysicalStationaryLaw.stationary_failure_mass
+#print axioms Math115.PhysicalStationaryLaw.stationary_success_probability
+#print axioms Math115.PhysicalStationaryLaw.stationary_success_lower
+#print axioms Math115.PhysicalStationaryLaw.stationary_success_probability_lower
+#print axioms Math115.PhysicalStationaryLaw.stationary_retry_mass
+#print axioms Math115.PhysicalStationaryLaw.stationary_retry_variation
+#print axioms Math115.PhysicalStationaryLaw.ideal_padded_count
+#print axioms Math115.PhysicalStationaryLaw.ideal_stationary_success_lower
+#print axioms Math115.PhysicalStationaryLaw.ideal_stationary_success_probability_lower
+#print axioms Math115.PhysicalStationaryLaw.ideal_stationary_retry_variation

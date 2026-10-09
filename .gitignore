@@ -16,3 +16,5 @@ overview.pdf
 !formal/results/*.log
 !formal/results/linux-full-5e5d6ef/*.log
 !formal/results/ideal-oracle-scales/*.log
+!formal/results/linux-focused-d2e8b0b/*.log
+!formal/results/stationary-output/*.log

@@ -1,7 +1,7 @@
 {
   "recorded_date": "2026-10-09",
-  "checkpoint": 4,
-  "prior_checkpoint_commit": "b3723253f424ab5bf1c8f63443467f18b387222d",
+  "checkpoint": 5,
+  "prior_checkpoint_commit": "d2e8b0be8e65fdf94b800df60296d8dd49098b62",
   "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "lean_toolchain": "leanprover/lean4:v4.34.1",
   "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
@@ -11,20 +11,20 @@
   "focused_manifest_entry_count": 9,
   "focused_dependency_closure": {
     "status": "integrated_aggregate_compilation_and_fresh_axiom_audit_passed",
-    "original_module_count": 168,
-    "local_module_count": 32,
-    "trusted_external_import_count": 43,
+    "original_module_count": 172,
+    "local_module_count": 35,
+    "trusted_external_import_count": 45,
     "entry_module": "Math115",
     "provenance": "formal/results/provenance.json",
-    "log": "formal/results/fourth-checkpoint.log",
-    "scope_note": "Seven new modules compiled in serial author checks; this receipt records a fresh integrated aggregate and both audits using existing dependency outputs, not a full dependency rebuild."
+    "log": "formal/results/fifth-checkpoint.log",
+    "scope_note": "Three new modules compiled serially; fresh integrated aggregate and both audits use existing dependency outputs. This is not a full dependency rebuild."
   },
   "checks": {
     "standalone": {
       "status": "passed",
-      "completed_at_utc": "2026-10-09T05:43:40.974695+00:00",
-      "log": "formal/results/fourth-checkpoint.log",
-      "log_sha256": "9299e325714c15684d074a0c577c95f5552c3eeb0ec77a8fbc6558f3005f94fd",
+      "completed_at_utc": "2026-10-09T11:30:58.102538+00:00",
+      "log": "formal/results/fifth-checkpoint.log",
+      "log_sha256": "5097b8f38843596a79d21e2ea2e0b4536cb6991cf718dcfc1e1456eb99c3eef6",
       "audited_declarations": [
         {
           "name": "Math115.pair_product_le_quarter_square",
@@ -76,9 +76,9 @@
     },
     "focused": {
       "status": "passed",
-      "completed_at_utc": "2026-10-09T05:43:25.521841+00:00",
-      "log": "formal/results/fourth-checkpoint.log",
-      "log_sha256": "9299e325714c15684d074a0c577c95f5552c3eeb0ec77a8fbc6558f3005f94fd",
+      "completed_at_utc": "2026-10-09T11:30:50.224991+00:00",
+      "log": "formal/results/fifth-checkpoint.log",
+      "log_sha256": "5097b8f38843596a79d21e2ea2e0b4536cb6991cf718dcfc1e1456eb99c3eef6",
       "audited_declarations": [
         {
           "name": "OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy",
@@ -1867,16 +1867,442 @@
             "Classical.choice",
             "Quot.sound"
           ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.physical_mass_eq_profiles",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.physical_mass_eq_words_defects",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.defect_mass_le_words",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.normalizer",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.normalizer_le_padded_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.normalizer_le_original_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.normalizer_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryMass.success_ratio_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.paddedTable_small_rows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.paddedTable_small_columns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.originalJoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.originalJoint_projection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.large_padding_rows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.large_padding_columns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.large",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.jointTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.originalSuccessfulJoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.unpadSuccessfulJoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.unpadSuccessfulJoint_val",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.successfulJointEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.stateJointProjection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.stateJointProjection_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.jointState",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.jointEmbedding",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.jointEmbedding_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.jointEmbedding_balanced",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.balancedJointFromState",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.balancedJointFromState_projection",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.embedding_fromState",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.fromState_embedding",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.StateJointSuccess",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.successStateEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationarySuccess.originalStateSuccessEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.fibre_card_weight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.fibreNonempty",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stateJoint_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationaryRat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationaryRat_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationaryLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.jointLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.jointLaw_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_trial_mass",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_trial_mass_real",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_failure_mass",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_success_probability",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_success_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_success_probability_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_retry_mass",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.stationary_retry_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.ideal_padded_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.ideal_stationary_success_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.ideal_stationary_success_probability_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStationaryLaw.ideal_stationary_retry_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
         }
       ]
     }
   },
-  "new_audited_declaration_count": 230,
+  "new_audited_declaration_count": 283,
   "original_audited_declaration_count": 2,
   "linux_verification": {
     "record": "formal/results/linux-runs.json",
-    "source_commit": "5e5d6ef9aa36f7e2a744f3fb8605448529f8be66",
-    "scope_note": "Separate earlier-commit Linux checks do not verify checkpoint 4 additions."
+    "source_commit": "d2e8b0be8e65fdf94b800df60296d8dd49098b62",
+    "focused_record": "formal/results/linux-focused-d2e8b0b/verification.json",
+    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37890362781",
+    "scope_note": "Fresh Linux focused build and 226-declaration audit passed for checkpoint 4 at d2e8b0b. Checkpoint 5 additions and the standalone audit are not covered by this run."
   },
   "full_unconditional_and_challenge_build": {
     "status": "passed_on_linux_at_prior_commit",
@@ -1893,15 +2319,16 @@
   },
   "limits": [
     "Official Mathlib cached artifacts and Lean bootstrap binaries remain trusted.",
-    "The d17 and d25 theorems bound actual ideal auxiliary-chain inverse gaps; final wrappers require only equal ordinary total margins.",
+    "The d17 and d25 theorems bound actual ideal auxiliary-chain inverse gaps; final wrappers require equal ordinary total margins.",
+    "The new output proofs cover independent exact stationary state/completion trials, including the actual selected-chain stationary law and geometric fallback error.",
+    "A matching finite-walk output-error theorem, modified finite-bit completion sampler, output correction, and complete machine-runtime proof remain open.",
     "The smaller ideal-only scales violate the retained sufficient dense-completion interface.",
-    "A stationary physical output-success theorem, modified finite-bit sampler, output correction, and complete machine-runtime proof at the new scales remain open.",
-    "Earlier full-original Linux verification is not verification of a modified sampler or strict Comparator replay."
+    "Earlier focused/full Linux checks cover their recorded source commits, not later additions or strict Comparator replay."
   ],
   "source_sha256": {
-    "formal/Math115.lean": "483b5646b74679514caf06f13853c9b309e0193573c97bd1098f57269554e34c",
+    "formal/Math115.lean": "bf49f252230e70e7441cc80c5b4c6f431ebed1daf74235e1669b35c135c2ece4",
     "formal/Math115/AllSmallChainGap.lean": "f87775c41d272d968362036e8082fe748031244b52cbe6b743e18f40b775a288",
-    "formal/Math115/AxiomAudit.lean": "ac4f2b5b77688615fa72de35138a748b0b7356271d9074e2c36cf10042557e5a",
+    "formal/Math115/AxiomAudit.lean": "b7c3b71f27a323932868112b77b0567434bc52af0af4a224e9f6ea12e0590e1d",
     "formal/Math115/CompletionAdjustment.lean": "714934dc14bca5589b40de0952db8dfd17ead1aa93f71306fbf120d832e47192",
     "formal/Math115/GlobalDisplayOwnership.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
     "formal/Math115/IdealOracleScales.lean": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf",
@@ -1916,6 +2343,9 @@
     "formal/Math115/PhysicalLeafEnergy.lean": "7c32ff73a592051eb81b69485820fa2dfcbadc5be7c0081c9f4a6bf52d88e55b",
     "formal/Math115/PhysicalRepairRefinement.lean": "99f41e25d64b06ec9399fe55899e0dd256bb36642365955bcbe7d585c730bb5a",
     "formal/Math115/PhysicalStateNonempty.lean": "eef39955559dfa4563cbf65437c0fcf699e1662430bb576f9c1b71f7538d6a31",
+    "formal/Math115/PhysicalStationaryLaw.lean": "ce1b601cbc1d7cac6a9823c08333856c9b4e7e95b62ce3a36cbb0dc4dc72375f",
+    "formal/Math115/PhysicalStationaryMass.lean": "3f33393f684062936200fa54270537e84f7b6abc9d71fa6be3f84c3d38b76e8b",
+    "formal/Math115/PhysicalStationarySuccess.lean": "d6743fe2c6eff224572c4f2d114af00e3895951389109869bed7f8ce6616c2b3",
     "formal/Math115/QuadraticCoefficient.lean": "9d023785b272aeb6b819aaa1bc42c7c04f8419522799b64e0b66bb355b91a46a",
     "formal/Math115/ReducedAllSmallChain.lean": "0ba3ec59f6fa2f7e44939d28465ad190fcf82b4e1dae8f436ab959369964db58",
     "formal/Math115/ReducedRepairRefinement.lean": "816e8acb57279f019167817c023ee492d441ae9c43bdc60342cbb3a6dc5803f3",
@@ -1951,7 +2381,7 @@
     {
       "scope": "aggregate",
       "command": [
-        "<workspace>/.tools/elan/bin/lake",
+        "../.tools/elan/bin/lake",
         "env",
         "lean",
         "-j1",
@@ -1960,37 +2390,45 @@
         ".lake/build/lib/lean/Math115.olean",
         "Math115.lean"
       ],
-      "exit_code": 0,
-      "elapsed_seconds": 48.745,
-      "completed_at_utc": "2026-10-09T05:43:00.096671+00:00"
+      "started_at_utc": "2026-10-09T11:29:34.704389+00:00",
+      "completed_at_utc": "2026-10-09T11:30:19.915223+00:00",
+      "elapsed_seconds": 45.21002779202536,
+      "exit_code": 0
     },
     {
       "scope": "focused",
       "command": [
-        "<workspace>/.tools/elan/bin/lake",
+        "../.tools/elan/bin/lake",
         "env",
         "lean",
         "-j1",
         "-DautoImplicit=false",
         "Math115/AxiomAudit.lean"
       ],
-      "exit_code": 0,
-      "elapsed_seconds": 25.423,
-      "completed_at_utc": "2026-10-09T05:43:25.521841+00:00"
+      "started_at_utc": "2026-10-09T11:30:19.919583+00:00",
+      "completed_at_utc": "2026-10-09T11:30:50.224991+00:00",
+      "elapsed_seconds": 30.304808750050142,
+      "exit_code": 0
     },
     {
       "scope": "standalone",
       "command": [
-        "<workspace>/.tools/elan/bin/lake",
+        "../.tools/elan/bin/lake",
         "env",
         "lean",
         "-j1",
         "-DautoImplicit=false",
         "Math115/StandaloneAxiomAudit.lean"
       ],
-      "exit_code": 0,
-      "elapsed_seconds": 15.452,
-      "completed_at_utc": "2026-10-09T05:43:40.974695+00:00"
+      "started_at_utc": "2026-10-09T11:30:50.232675+00:00",
+      "completed_at_utc": "2026-10-09T11:30:58.102538+00:00",
+      "elapsed_seconds": 7.869755916995928,
+      "exit_code": 0
     }
-  ]
+  ],
+  "new_module_verification": {
+    "record": "formal/results/stationary-output/verification.json",
+    "sha256": "6d93f6fd1c4e070e4ea11311a5502548cdf439b3ffc48d7cee3e492a0f825dcb",
+    "independent_source_review": "formal/results/stationary-output-review.json"
+  }
 }

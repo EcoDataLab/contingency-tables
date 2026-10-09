@@ -4,6 +4,8 @@ An open EcoDataLab research project building on [OpenAI result #115](https://git
 
 The research now includes a **Lean-verified `80,000d¹⁷` inverse-gap bound for an actual ideal auxiliary chain**, where `d=10+(m+1)(n+1)`. It covers all ordinary equal-total margins through automatic branch selection and a proved state-existence construction. These ideal-only scales fall outside the retained finite-bit dense-completion interface; the separate dense-compatible bound is `128·47⁴d²⁵`. The complete modified finite-bit sampler and its runtime remain open.
 
+The stationary output rule is now also proved: each accepted table is uniform, and an exact stationary trial succeeds with probability at least `1/[2(1+p²)]` at the smaller ideal scales, where `p` is the number of small cells. The proof retains all completion multiplicities and defect states. Turning this stationary guarantee into a finite-walk sampler is the next integration step.
+
 The repository also supplies sharp ordinary-table tail and mean bounds, exact samplers for small or structurally decomposable fibers, certified cycle-mixture comparisons, linear bounds, and a classical worker-allocation baseline with exact metric moments. [Practical uses](docs/practical-use.md) explains which probability law and tool fit each problem. Competitiveness of the complete #115 sampler against established application software has not been demonstrated.
 
 ## What improved
@@ -15,10 +17,11 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 | Ideal-only chain: O(d¹⁷) inverse gap | `80,000d¹⁷` at `U=5d³, L=3d`; equal ordinary totals suffice, including empty dimensions; exact completion is an oracle operation |
 | Dense-compatible chain: O(d²⁵) inverse gap | `128·47⁴d²⁵` at `U=47d⁵, L=32d³`; same automatic branch and feasibility coverage |
 | Sharper physical repair | Square-root cross-term bound plus tighter polynomial arithmetic reduce the previous conservative chain coefficient eightfold |
+| Stationary success and uniform output | Lean proofs give exact table mass `1/Z`, success `N/Z`, and an independent-retry error bound; ideal-scale success is at least `1/[2(1+p²)]` |
 | Smaller padding threshold | Actual ordinary-table counts prove half unpadding acceptance at `U=47d⁵`, with a smaller shape-aware alternative |
 | Limit of this padding construction | A counting argument forces U=Ω(Ln²) in a 2×n family if acceptance stays bounded away from zero |
 | Smaller accuracy and counting-estimator budgets | Exact rational allocations and independent-block median schedules; transition allowances and observable-evaluation costs are reported separately |
-| Lean verification | 232 audited declarations: 226 focused and six standalone, all using standard foundational axioms; exact scope in the verification ledger |
+| Lean verification | 285 audited declarations: 279 focused and six standalone, all using standard foundational axioms; exact scope in the verification ledger |
 | Exact reference algorithms | Uniform and weighted small-fiber DP, cactus cycle coordinates, and graph-block factorization, with explicit work limits |
 | Exact feasible metric range | Rational min-cost flow with primal/dual and infeasibility-cut certificates; no table enumeration |
 | Better fixed cycle mixtures | Exact certificates: over 63% larger gap on the 42-table fixture, beating every rectangle-only mixture; no general mixing or runtime claim |
@@ -30,6 +33,7 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 - [Original research review](115/115-contingency-tables-review.md) and [source manifest](115/source-manifest.json): the preserved October 8, 2026 handoff, including hypotheses to test.
 - [Research status](docs/status.md): current results, limitations, and next proof obligations.
 - [Ideal-only scales and dense-interface limit](docs/ideal-oracle-scales.md), [sharper physical repair](docs/physical-repair-refinement.md), and [automatic branches and feasibility](docs/reduced-all-small-chain.md).
+- [Stationary success and uniform output](docs/physical-stationary-success.md): completion counts, the exact output bijection, and independent stationary retries.
 - [Dense-compatible ideal chain](docs/reduced-small-chain.md), [original-chain comparison](docs/small-chain-gap.md), and [sequential padding](docs/sequential-padding.md).
 - [Transport proof](docs/transport-localization.md), [switching and scale proof](docs/scale-audit.md), [error budgets](docs/error-budgets.md), and [independent mathematical review](docs/independent-review.md).
 - [Sharp tail formalization](docs/small-entry-formalization.md), [actual padding bridge](docs/scale-formalization.md), [padding obstruction](docs/padding-barrier.md), and [second independent review](docs/second-checkpoint-review.md).
@@ -56,7 +60,7 @@ python3 scripts/verify_sources.py
 
 The archived audit and numerical mixture search need NumPy. Saved mixture certificates replay using only exact standard-library arithmetic. Source verification downloads only files in the pinned manifest and checks their Git blob hashes. It does not execute upstream code.
 
-The fourth checkpoint passed **230 Python tests** and **232 Lean declaration audits**. The [Python receipt](reports/checkpoint-verification.json) and [Lean receipts](formal/results/) record their environments, source hashes, and exact scope.
+The fifth checkpoint passed **230 Python tests** and **285 Lean declaration audits**. The [Python receipt](reports/checkpoint-verification.json) and [Lean receipts](formal/results/) record their environments, source hashes, and exact scope.
 
 Generate the research reports:
 
@@ -97,7 +101,7 @@ bash scripts/verify_lean.sh standalone
 bash scripts/verify_lean.sh focused
 ```
 
-The [Linux verification record](docs/linux-verification.md) includes a successful full original-theorem build at commit `5e5d6ef`, auditing all three original exports. Thor separately reproduced the earlier `b14082b` checkpoint: 128 tests, 100 focused modules, and 68 audits. Those runs do not cover this checkpoint's later additions. Strict Comparator replay remains unavailable on the tested hosted runner because its sandbox ABI is too old; no Comparator pass is claimed.
+The [Linux verification record](docs/linux-verification.md) includes an independent focused build at `d2e8b0b`, with all 226 checkpoint-4 focused audits passing, and a successful full original-theorem build at `5e5d6ef`, auditing all three original exports. Thor separately reproduced the earlier `b14082b` checkpoint: 128 tests, 100 focused modules, and 68 audits. These runs do not cover the fifth checkpoint's stationary-output additions. Strict Comparator replay remains unavailable on the tested hosted runner because its sandbox ABI is too old; no Comparator pass is claimed.
 
 ## A concrete CBEI example
 
