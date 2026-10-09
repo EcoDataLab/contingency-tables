@@ -72,6 +72,8 @@ The fifth checkpoint is published at `7ad5c81117bbaa869da751b1f92a9213ddefdd22`;
 
 The sixth checkpoint is published at `e5d5dd3e81b5eac0e3f42841530286b56bcb96e5`; its [Python CI](https://github.com/EcoDataLab/contingency-tables/actions/runs/37927196970) and [focused Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37927276465) passed. The [Linux receipt](../formal/results/linux-focused-e5d5dd3/verification.json) checks all 318 focused audits and matches 48 environment-recorded source hashes to that exact commit. It excludes the six standalone audits and later completion-oracle additions.
 
+The seventh checkpoint is published at `5b3703234e7f6cd88e6b6f6b3dab85510ba4366f`, and its [three-version Python CI](https://github.com/EcoDataLab/contingency-tables/actions/runs/37932442921) passed. A fresh [focused Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805) is in progress for that exact source revision; its proof outcome is pending. The local integrated 426-declaration audit above is complete.
+
 Next work:
 
 1. Prove the full finite-table equal-preimage bijection and lattice-cell volume/count inequalities for the dilated completion law, then formalize the quarter-success retry schedule and instantiate the approximate-oracle interface.
