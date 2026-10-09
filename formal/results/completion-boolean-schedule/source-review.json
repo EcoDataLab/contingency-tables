@@ -1,0 +1,64 @@
+{
+  "status": "baseline_archive_authentication_passed",
+  "reviews": [
+    {
+      "module": "Math115.PhysicalReferenceBoolean",
+      "review_sha256": "522d35861222c760d66f36ccf1717ad8ccae4eb0de8dc8d04e4ea0f6abe1a5a2",
+      "result": {
+        "result": "Independently authenticated added passed baseline PhysicalReferenceBoolean16",
+        "archive_sha256": "14ad2c6ef14b9062f1c366ccbefbb0b4adabd3a43fb6a26a380d5e3e3ffabd07",
+        "raw_zip_entries": 23,
+        "manifest_entries": 22,
+        "all_zip_and_extracted_bytes_verified": true,
+        "source_sha256": "3f465cb573045370252e6eaad81c7d8a7b5b297aa7fd48e948868ef8aa8e534e",
+        "olean_sha256": "3b99813ab24af6b5b31c611b4cfd8eb98079844a5e34c1d49838c075067fa029",
+        "compile_exit0_source_unchanged": true,
+        "audit_exit0_exact16_order_allowlist": true,
+        "reconstructed_internal_closure_modules": 551,
+        "complete_before_expected_after_input_map_entries": 1197,
+        "complete_graph_parent_object_hashes_verified": true,
+        "checker_sha256": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+        "authority_limit": "Archived actual native compilation/audit evidence verified; no re-execution or success implied for other downstream modules."
+      }
+    },
+    {
+      "module": "Math115.LatticeScheduleProgram",
+      "review_sha256": "4e0a6fa5c34deced06de34c2a368d63e520d7016b816b0ef218d1067731c3775",
+      "result": {
+        "result": "Independently authenticated LatticeScheduleProgram105 as added passed baseline",
+        "zip_sha256": "8cdbf379c73110b751df541ce72c257f223fca18eb9ce96d7821fc6576a8d02d",
+        "raw_entries": 23,
+        "manifest_entries": 22,
+        "all_archived_and_extracted_bytes_verified": true,
+        "source_sha256": "6f4269c7366956bda9b4a1ccb2f81d89b31834ba1c12585fcd788a1fd248a359",
+        "olean_sha256": "46388470d516fcb9a34bb8c9fc48ee5c11de554cb04ea374558e8243b645eac1",
+        "compile_exit0_source_unchanged": true,
+        "strict105_reports_exact_order_allowlist": true,
+        "dependency_closure_modules": 566,
+        "complete_input_hash_map_entries": 1227,
+        "complete_parent_object_hashes_verified": true,
+        "before_expected_after_maps_match_complete_reconstruction": true,
+        "authority": "Authenticates existing native compile/audit/archive evidence; no new compiler execution or downstream success claim."
+      }
+    },
+    {
+      "module": "Math115.PhysicalBooleanSampler",
+      "review_sha256": "ebf0d530f195a2eccd24fbe4cd27c8f5f4bac0e71cb628ba3a00164e4e82d960",
+      "result": {
+        "result": "Independently authenticated PhysicalBooleanSampler13 as added passed baseline",
+        "zip_sha256": "6c536080622e9353132c4b0a25a1264c11da5746051c299be256084bf01ac3b8",
+        "raw_zip_entries": 23,
+        "manifest_entries": 22,
+        "all_archive_and_extracted_bytes_verified": true,
+        "source_sha256": "a676bb44fd5a60a0f45e082061c4947279ffc7da253527d2504a3620bfffe935",
+        "olean_sha256": "3b13795d4834cf621291e01847842355a020eebe183ab3c871efb107753bc36a",
+        "compile_exit0_source_unchanged": true,
+        "strict13_exact_reports_order_allowlist": true,
+        "dependency_closure_modules": 566,
+        "complete_before_expected_after_map_entries": 1227,
+        "exact_parent_object_hashes_verified": true
+      }
+    }
+  ],
+  "boundary": "These independent reviews authenticate selected existing native evidence; no reexecution or downstream whole-build success is implied."
+}

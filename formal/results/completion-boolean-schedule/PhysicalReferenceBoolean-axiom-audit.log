@@ -1,0 +1,18 @@
+'Math115.PhysicalReferenceBoolean.stepBits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.attemptBits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.outerBits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.bitStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.bitStep_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.flatWalk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.flatWalk_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.terminalLaw_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.jointDraw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.jointDraw_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.outerDraw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.outerDraw_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.initializedDraw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.initializedDraw_law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.initializedDraw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalReferenceBoolean.initializedDraw_explicit_accuracy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,17 @@
+import Math115.PhysicalReferenceBoolean
+#print axioms Math115.PhysicalReferenceBoolean.stepBits
+#print axioms Math115.PhysicalReferenceBoolean.attemptBits
+#print axioms Math115.PhysicalReferenceBoolean.outerBits
+#print axioms Math115.PhysicalReferenceBoolean.bitStep
+#print axioms Math115.PhysicalReferenceBoolean.bitStep_law
+#print axioms Math115.PhysicalReferenceBoolean.flatWalk
+#print axioms Math115.PhysicalReferenceBoolean.flatWalk_law
+#print axioms Math115.PhysicalReferenceBoolean.terminalLaw_eq
+#print axioms Math115.PhysicalReferenceBoolean.jointDraw
+#print axioms Math115.PhysicalReferenceBoolean.jointDraw_law
+#print axioms Math115.PhysicalReferenceBoolean.outerDraw
+#print axioms Math115.PhysicalReferenceBoolean.outerDraw_law
+#print axioms Math115.PhysicalReferenceBoolean.initializedDraw
+#print axioms Math115.PhysicalReferenceBoolean.initializedDraw_law
+#print axioms Math115.PhysicalReferenceBoolean.initializedDraw_variation
+#print axioms Math115.PhysicalReferenceBoolean.initializedDraw_explicit_accuracy

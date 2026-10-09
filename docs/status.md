@@ -1,6 +1,6 @@
 # Research status
 
-Updated October 9, 2026 UTC — completion aggregate with 863 focused and six standalone audits; fresh Linux replication of the 863 focused audits passed. The 46 encoded-program and 193 physical-bridge audits remain isolated.
+Updated October 9, 2026 UTC — 134 additional isolated audits close the typed Boolean sampler's both-branch accuracy and computed schedule. The completion aggregate remains 863 focused plus six standalone audits, with fresh Linux replication of the 863 focused audits. The 46 encoded-program, 193 physical-bridge, and new 134 audits remain separate components.
 
 The main ideal-chain bound is now **`80,000d¹⁷`**, for all ordinary equal-total margins, with automatic choice of the reference-completion or empty-block unit branch. Here `d=10+(m+1)(n+1)`. The [completion-oracle formalization](completion-oracle-formalization.md) proves the full finite-table preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at the smaller outer scales. The new [dense completion family](completion-dense-law.md) discharges its fine-law accuracy premise using the pinned canonical sampler, assembles the all-state physical oracle, and proves the resulting normalized outer-law error. Finite-bit outer-program identification and complete machine runtime remain open. All upstream comparisons use `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; the preserved [initial review](../115/115-contingency-tables-review.md) is unchanged.
 
@@ -23,7 +23,7 @@ The new [stationary-output proof](physical-stationary-success.md) transfers that
 
 For `n` independent exact stationary trials and a fixed feasible fallback table, the output law is exactly `(1−(1−N/Z)^n)Uniform+(1−N/Z)^n PointFallback`. Its total variation distance from uniform is at most `exp(−n/[2(1+p²)])` at the ideal scales. The general mass and output statements allow `U=0`, `L=0`, zero margins, and empty index types; the probability bounds discharge positivity from equal totals.
 
-The new [finite-walk proof](physical-finite-walk.md) removes the stationary-start assumption at the ideal scales. It identifies the exact rational transition law with the actual selected chain, bounds its least stationary probability, and appends a fresh uniform terminal completion. With `R` independent restarted attempts of `T` transitions each, a supplied feasible fallback, `K=80,000d¹⁷`, `S=2(1+p²)`, and `B=(M+dL+U+3)^(2d)` where `M=∑r_i`, the output error is at most `exp(−R/S)+RB exp(−T/K)`. The explicit inequalities `R≥S log(2/ε)` and `T≥K log(2RB/ε)`, with `ε>0` and `R>0`, give error at most `ε`. These are noncomputable finite rational laws with exact completion oracles. The subsequent approximate-oracle proof identifies the proposal/draw/test law; a computable scheduler, the finite-bit program identification, and machine cost remain open. In particular, `log B` contains a factor `2d` that must stay in any transition-work comparison.
+The new [finite-walk proof](physical-finite-walk.md) removes the stationary-start assumption at the ideal scales. It identifies the exact rational transition law with the actual selected chain, bounds its least stationary probability, and appends a fresh uniform terminal completion. With `R` independent restarted attempts of `T` transitions each, a supplied feasible fallback, `K=80,000d¹⁷`, `S=2(1+p²)`, and `B=(M+dL+U+3)^(2d)` where `M=∑r_i`, the output error is at most `exp(−R/S)+RB exp(−T/K)`. The explicit inequalities `R≥S log(2/ε)` and `T≥K log(2RB/ε)`, with `ε>0` and `R>0`, give error at most `ε`. These are noncomputable finite rational laws with exact completion oracles. The subsequent approximate-oracle proof identifies the proposal/draw/test law; the Boolean-law checkpoint below supplies a computable numeric schedule, while literal encoded-program identification and complete machine cost remain open. In particular, `log B` contains a factor `2d` that must stay in any transition-work comparison.
 
 The [approximate-oracle proof](physical-approximate-oracle.md) identifies the actual dyadic proposal, completion draw, and signed translation test. Normalized approximate completion laws add at most `R(Tγζstep+ζterminal)` to the finite-walk output bound, where `γ=(5d²+1)β≤1/2`. Holding proposals incur no completion error. The proof allows separate transition and terminal precision, requires uniform conditional accuracy for every visited state, and accounts for failures through the normalized output law. It needs no stationary-law or reversibility assumption for the approximate chain. The empty-block branch retains its exact unit law and unique completion.
 
@@ -145,6 +145,20 @@ program names and remain outside those aggregates and Linux verification.
 The Boolean step, complete outer program, and public machine still need their
 own compiled identification and cost proofs.
 
+The [both-branch Boolean law and computed schedule](completion-boolean-schedule.md)
+add **134 standard-axiom audits** across three freshly compiled modules.
+The typed finite-word sampler automatically selects its reference or unit
+branch, initializes from a greedy feasible table, and returns a feasible table
+for every fixed word. Its scheduled output law is within `2^-h` of uniform for
+all equal-total natural margins and natural `h`, including zero margins and
+empty dimensions. The numeric schedule and reserved-width computation have
+polynomial charged-cost proofs. The typed sampler remains noncomputable;
+identification with the literal encoded walker and its complete machine cost
+remain open. The [receipt](../formal/results/completion-boolean-schedule/verification.json)
+retains nine warnings and the failed surrounding batches while identifying the
+three successful compilations and exact 16+105+13 audits. These names are
+disjoint from 869+46+193 and remain outside the aggregate and Linux scopes.
+
 The historical integrated eighth checkpoint passed **638 Lean declaration audits**: 632 focused plus six standalone, comprising 636 new declarations and two original source statements. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. This checkpoint adds 212 declarations across nine modules for actual finite fibers, prefix-coordinate geometry, the full count bound, quarter acceptance, and retry accuracy. Aggregate compilation and audits used the existing dependency objects; this is not a fresh dependency-closure rebuild.
 
 The unchanged Python implementation retains the seventh checkpoint's **237 passing tests**. All 62 recorded Python source hashes and 20 report hashes were checked again, along with the pinned source bundle. The historical lattice report contains 13 completed tiny fibers, 293 fine tables, one retained budget failure, and ten actual-scale codec roundtrips. Universal acceptance is now a Lean theorem under its stated hypotheses; those finite checks remain separate implementation evidence.
@@ -161,12 +175,12 @@ The seventh checkpoint is published at `5b3703234e7f6cd88e6b6f6b3dab85510ba4366f
 
 The eighth checkpoint is published at `0aa5a61140712ada44893b03d805a756e0e9823a`; its [three-version Python CI](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963605116) passed. The fresh [focused Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963647335) passed at that exact commit in 14 minutes 9 seconds. The [saved receipt](../formal/results/linux-focused-0aa5a61/verification.json) checks all 632 focused audits and matches 73 environment-recorded source hashes to that commit. It excludes the six standalone audits, later additions, and strict Comparator replay. The source/document review snapshots belong to the proof commit; publication updates change status metadata separately.
 
-The expanded [focused Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37991819113) passed at `895b45c8bcb0ca7f60e7a6b0b91af89b2ac7c566`. The job took 26 minutes 54 seconds, including 24 minutes 49 seconds for verification. Its [receipt](../formal/results/linux-focused-895b45c/verification.json) independently checks all 863 ordered audits and matches 111 recorded source hashes to that exact commit. The downloaded artifact bytes match GitHub's SHA-256 digest; original logs and a lossless bootstrap-progress normalization are retained. The project closure was rebuilt on Linux, with the official Mathlib cache trusted. The run excludes the six standalone audits, the isolated 46+193 declarations, the full original three-export audit, and strict Comparator replay.
+The expanded [focused Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37991819113) passed at `895b45c8bcb0ca7f60e7a6b0b91af89b2ac7c566`. The job took 26 minutes 54 seconds, including 24 minutes 49 seconds for verification. Its [receipt](../formal/results/linux-focused-895b45c/verification.json) independently checks all 863 ordered audits and matches 111 recorded source hashes to that exact commit. The downloaded artifact bytes match GitHub's SHA-256 digest; original logs and a lossless bootstrap-progress normalization are retained. The project closure was rebuilt on Linux, with the official Mathlib cache trusted. The run excludes the six standalone audits, the isolated 46+193+134 declarations, the full original three-export audit, and strict Comparator replay.
 
 Next work:
 
-1. Identify the actual Boolean transition step and complete outer walk with the verified proposal and physical completion laws.
-2. Identify initialization and the proved schedule with finite-bit programs; compose reserved-bit, completion, and outer-walk costs in the fresh-bit public machine. The complete runtime exponent remains open.
+1. Identify the literal encoded Boolean transition step and complete outer walk with the verified both-branch typed word law; resolve the current profile-step proof compilation failure.
+2. Connect the compiled numeric schedule and initialization to the complete finite-bit program; compose reserved-bit, completion, and outer-walk costs in the fresh-bit public machine. The complete runtime exponent remains open.
 3. Integrate and reproduce the remaining isolated program proofs on Linux, then complete strict Comparator replay on an environment meeting its sandbox requirements.
 4. Close the gap between the free-cutoff `U⁴` upper allowance and the explicit `Ω(U²)` chain obstruction, or improve the transition rule with a justified target law and cost.
 5. Expand same-law tests to application-scale methods, including all setup and tuning costs. Empirical competitiveness of the complete #115 sampler remains unknown.

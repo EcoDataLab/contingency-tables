@@ -8,10 +8,12 @@ approximate-completion interface proofs. The dilated completion law now has
 full finite-table counting, geometric acceptance, and bounded-retry accuracy
 proofs. The new dense specialization supplies the accurate fine law and
 all-state physical oracle. The encoded completion routine also has exact
-output semantics and polynomial charged cost in supplied input. Concrete encoded outer-program identification,
+output semantics and polynomial charged cost in supplied input. The both-branch
+typed Boolean sampler now has pointwise feasible output and scheduled accuracy,
+and its numeric schedule has polynomial charged cost. Concrete encoded outer-program identification,
 complete sampler runtime, and secure Comparator verification remain open.
 
-The current [completion aggregate](../formal/results/completion-aggregate/verification.json) passed **869 named declaration audits: 863 focused plus six standalone**. It adds 231 previously isolated declarations across nine modules to the default focused target. The 46 declarations of `CompletionSamplerProgram` and `CompletionSamplerSemantics` remain separately audited and excluded. Aggregate compilation and audits reused validated dependency objects; this is not a fresh dependency-closure rebuild. All selected declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. A subsequent [fresh Linux project build](../formal/results/linux-focused-895b45c/verification.json) passed all 863 focused audits at `895b45c`, with 111 recorded source hashes checked against that exact commit. It trusts the official Mathlib cache and excludes the six standalone and 46+193 isolated audits. Strict Comparator verification remains open.
+The current [completion aggregate](../formal/results/completion-aggregate/verification.json) passed **869 named declaration audits: 863 focused plus six standalone**. It adds 231 previously isolated declarations across nine modules to the default focused target. The 46 declarations of `CompletionSamplerProgram` and `CompletionSamplerSemantics` remain separately audited and excluded. Aggregate compilation and audits reused validated dependency objects; this is not a fresh dependency-closure rebuild. All selected declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. A subsequent [fresh Linux project build](../formal/results/linux-focused-895b45c/verification.json) passed all 863 focused audits at `895b45c`, with 111 recorded source hashes checked against that exact commit. It trusts the official Mathlib cache and excludes the six standalone and 46+193+134 isolated audits. Strict Comparator verification remains open.
 
 The [Boolean codec/retry module](completion-boolean-program.md)
 passed 25 declaration audits and six native Lean evaluations after checkpoint
@@ -89,6 +91,23 @@ with one retained style warning. Earlier fresh predecessor receipts for
 those earlier logs were not delivered. The 193 names are disjoint from the
 869 aggregate and the isolated 46. Neither the complete Boolean walker nor
 its public-machine runtime is certified by this scope.
+
+The [both-branch Boolean law and computed schedule](completion-boolean-schedule.md)
+add three isolated modules with `16+105+13=134` standard-axiom audits.
+`PhysicalReferenceBoolean` identifies the typed reference-branch word experiment;
+`LatticeScheduleProgram` computes the actual numeric schedule and reservations
+with polynomial charged cost; `PhysicalBooleanSampler` supplies automatic
+branches, greedy fallback and initialization, pointwise feasible output, and
+scheduled `2^-h` accuracy for every equal-total natural margin pair and natural
+`h`. Zero margins and empty index types are included. This final typed law is
+noncomputable; the literal encoded walker and public machine remain unverified.
+The [receipt](../formal/results/completion-boolean-schedule/verification.json)
+binds all three fresh native Windows compilations, authenticated reused
+imports, exact ordered audits, and complete before/expected/after input maps.
+The logs retain nine warnings. The surrounding batches failed, and no failed
+or blocked module is included in the claimed result. These 134 names are
+disjoint from the 869 aggregate and separate 46+193 audits; they add no fresh
+Linux or strict Comparator result and no complete machine-time degree.
 
 ## Reproduction
 

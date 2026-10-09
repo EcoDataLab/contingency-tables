@@ -1,0 +1,14 @@
+import Math115.PhysicalBooleanSampler
+#print axioms Math115.PhysicalBooleanSampler.bothLarge
+#print axioms Math115.PhysicalBooleanSampler.not_bothLarge_reference
+#print axioms Math115.PhysicalBooleanSampler.unitBitStep
+#print axioms Math115.PhysicalBooleanSampler.unitBitStep_law
+#print axioms Math115.PhysicalBooleanSampler.flatUnitWalk
+#print axioms Math115.PhysicalBooleanSampler.flatUnitWalk_law
+#print axioms Math115.PhysicalBooleanSampler.unitJointDraw
+#print axioms Math115.PhysicalBooleanSampler.unitJointDraw_law
+#print axioms Math115.PhysicalBooleanSampler.unitOuterDraw
+#print axioms Math115.PhysicalBooleanSampler.unitOuterDraw_law
+#print axioms Math115.PhysicalBooleanSampler.draw
+#print axioms Math115.PhysicalBooleanSampler.draw_variation
+#print axioms Math115.PhysicalBooleanSampler.draw_explicit_accuracy
