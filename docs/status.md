@@ -1,6 +1,6 @@
 # Research status
 
-Updated October 9, 2026 UTC — eighth verified checkpoint, plus isolated Boolean codec/retry, binary-list decoder, schedule arithmetic, input-size, all-state dense completion, and encoded completion program components.
+Updated October 9, 2026 UTC — completion aggregate with 863 focused and six standalone audits; 46 encoded completion-program audits remain isolated.
 
 The main ideal-chain bound is now **`80,000d¹⁷`**, for all ordinary equal-total margins, with automatic choice of the reference-completion or empty-block unit branch. Here `d=10+(m+1)(n+1)`. The [completion-oracle formalization](completion-oracle-formalization.md) proves the full finite-table preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at the smaller outer scales. The new [dense completion family](completion-dense-law.md) discharges its fine-law accuracy premise using the pinned canonical sampler, assembles the all-state physical oracle, and proves the resulting normalized outer-law error. Finite-bit outer-program identification and complete machine runtime remain open. All upstream comparisons use `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; the preserved [initial review](../115/115-contingency-tables-review.md) is unchanged.
 
@@ -62,33 +62,35 @@ Uniform aggregate tables and conditional individual assignments are different la
 
 ## Verification and remaining work
 
-The additional [Boolean codec/retry module](completion-boolean-program.md) has
+The current [completion aggregate](../formal/results/completion-aggregate/verification.json) passed **869 named declaration audits: 863 focused and six standalone**. The default focused target now includes the nine previously isolated modules for Boolean retries, binary-list decoding, schedule and bit arithmetic, input-size bounds, and dense physical completions, totaling 231 declarations. Compilation and audits reused validated dependency objects; this was not a fresh dependency-closure rebuild. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. The 46 encoded completion-program declarations remain isolated and excluded from these counts. Fresh Linux verification of the expanded aggregate and strict Comparator replay remain pending.
+
+The [Boolean codec/retry module](completion-boolean-program.md) has
 passed direct local compilation, 25 standard-axiom declaration audits, six
 native evaluations, and an independent frozen-source/evidence review. It
 identifies the actual signed table trial and consecutive independent word
 bank with the retry law for a supplied fine draw. Its [receipt](../formal/results/completion-boolean-retry/verification.json)
-is separate from the checkpoint-8 aggregate and Linux results below.
+retains its isolated-checkpoint evidence; its 25 declarations are now included in the focused aggregate, while the checkpoint-8 Linux result remains historical.
 
 The subsequent [binary-list decoder](completion-list-decoder.md) passed
 direct compilation, 52 standard-axiom audits, nine native boundary checks,
 and independent source/evidence review. It proves exact agreement with the
 table decoder and polynomial charged TreeTyped work in the binary input
 size. Its [receipt](../formal/results/lattice-decoder/verification.json)
-is also isolated from the aggregate and Linux results. The subsequent
+retains its isolated-checkpoint evidence; its 52 declarations are now included in the focused aggregate. The subsequent
 completion program below composes this decoder with dense calls and retries;
 the complete outer word program remains unverified in the published work.
 
-The [schedule arithmetic](completion-schedules.md) adds 56 isolated audited
+The [schedule arithmetic](completion-schedules.md) contributes 56 audited
 declarations across two compiled modules. Explicit natural walk/retry counts
 and separate transition/terminal precisions give a combined scalar error
 at most `2^(-h-1)`. The full reserved bit bank is bounded by
 `12672000000·37^62·N^85`, where `N=d+ceil(log₂(M+2))+h+3`, for `d≥11,p≤d`.
 This is a bit-count allowance, not a machine-time exponent. The physical
-wrappers and final program identification remain separate uncompiled work.
+wrappers and final program identification remain outside this checkpoint.
 The [receipt](../formal/results/completion-schedules/verification.json)
 records both actual source compilations and all 24+32 named audits.
 
-The [input-size proofs](completion-input-size.md) add 32 isolated audited
+The [input-size proofs](completion-input-size.md) contribute 32 audited
 declarations across two compiled modules. They bound the complete supplied
 Boolean bank using binary margin encodings and the original public measure
 `S=m+n+ceil(log₂(M+1))+h+1`. For numeric `h≥1` and `p≤d`, the bank has at most
@@ -99,10 +101,10 @@ realizer, retaining execution cost and output weight. The particular sampler
 and fresh-bit machine still need their own verified composition; `170` is
 not a runtime degree. The [receipt](../formal/results/completion-input-size/verification.json)
 records actual compilations, all 25+7 named audits, and independent review.
-These modules remain separate from the aggregate and Linux counts below.
+These 32 declarations are included in the current focused aggregate; their isolated receipt does not expand the historical Linux scope.
 
-The [all-state dense completion proof](completion-dense-law.md) adds 66
-isolated standard-axiom audits across three modules, compiled on native
+The [all-state dense completion proof](completion-dense-law.md) contributes 66
+standard-axiom audits across three modules, compiled on native
 Windows and independently reviewed. It identifies the canonical finite
 Boolean draw, discharges the exact pinned analytic premises, proves physical
 residual inputs and all-state completion accuracy, and supplies the outer
@@ -111,8 +113,8 @@ are bounded as well. The [receipt](../formal/results/completion-dense-law/verifi
 records exact source/object/dependency hashes and the four retained linter
 warnings. Reference reindexing remains noncomputable at this layer; the
 concrete encoded walker and public random machine remain unverified. These
-66 successful audits do not certify other drafts in the surrounding native
-build and do not change the aggregate or Linux counts below.
+66 successful audits are now included in the focused aggregate. They do not
+certify other drafts or expand the historical Linux result.
 
 The [encoded completion program](completion-sampler-program.md) adds 46
 strictly audited declarations across two compiled modules. It computes the
@@ -125,10 +127,10 @@ input, including the Boolean list; every reserved trial is evaluated before
 the first accepted result is selected. The [receipt](../formal/results/completion-program/verification.json)
 records the two exact sources and named audit evidence. The computed physical
 list-order bridge, complete outer walk, and fresh-bit public machine remain
-separate obligations. These audits also remain separate from the aggregate
-and Linux counts below.
+separate obligations. These 46 audits remain isolated, outside the current 863 focused and six
+standalone audits and the historical Linux result.
 
-The integrated eighth checkpoint passed **638 Lean declaration audits**: 632 focused plus six standalone, comprising 636 new declarations and two original source statements. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. This checkpoint adds 212 declarations across nine modules for actual finite fibers, prefix-coordinate geometry, the full count bound, quarter acceptance, and retry accuracy. Aggregate compilation and audits used the existing dependency objects; this is not a fresh dependency-closure rebuild.
+The historical integrated eighth checkpoint passed **638 Lean declaration audits**: 632 focused plus six standalone, comprising 636 new declarations and two original source statements. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. This checkpoint adds 212 declarations across nine modules for actual finite fibers, prefix-coordinate geometry, the full count bound, quarter acceptance, and retry accuracy. Aggregate compilation and audits used the existing dependency objects; this is not a fresh dependency-closure rebuild.
 
 The unchanged Python implementation retains the seventh checkpoint's **237 passing tests**. All 62 recorded Python source hashes and 20 report hashes were checked again, along with the pinned source bundle. The historical lattice report contains 13 completed tiny fibers, 293 fine tables, one retained budget failure, and ten actual-scale codec roundtrips. Universal acceptance is now a Lean theorem under its stated hypotheses; those finite checks remain separate implementation evidence.
 

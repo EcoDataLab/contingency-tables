@@ -1,0 +1,32 @@
+# Reproduction list for the selected aggregate checkpoint
+
+Count: Math115 863 + QuadraticCoefficient 2 + GlobalDisplayOwnership 2 + RepairCoefficient 2 = 869 distinct named reports.
+The separate CompletionSamplerProgram32 + CompletionSamplerSemantics14 checkpoint is excluded from this count and from the Math115547-module import closure.
+
+Use pinned Lean4.34.1, pinned package revisions in runtime-provenance.json, and the exact imported sources/object hashes in source-closure.json. Restore/compile the required imported objects and the trusted pinned official external package cache first. This file is a reproduction recipe, not evidence that packaging launched Lean or rebuilt the prerequisites.
+
+For each selected module below, compile its repository source directly with Lean, with isolated LEAN_PATH pointing to the verified import objects and pinned package caches. Each source snapshot matches that repository source exactly. Existing native evidence is fresh only for Math115; the three standalone objects were reused in batch6. Reproducing them with fresh compiler invocations is a separate action.
+
+Math115 (863 reports)
+  lean -j2 -DautoImplicit=false --root=formal -o <build>/Math115.olean formal/Math115.lean
+  lean -j2 -DautoImplicit=false --root=formal/results/completion-aggregate formal/results/completion-aggregate/Math115-AxiomCheck.lean > <audit-output>
+  python3 scripts/check_lean_axioms.py formal/results/completion-aggregate/Math115-AxiomCheck.lean < <audit-output>
+
+Math115.QuadraticCoefficient (2 reports)
+  lean -j2 -DautoImplicit=false --root=formal -o <build>/Math115/QuadraticCoefficient.olean formal/Math115/QuadraticCoefficient.lean
+  lean -j2 -DautoImplicit=false --root=formal/results/completion-aggregate formal/results/completion-aggregate/QuadraticCoefficient-AxiomCheck.lean > <audit-output>
+  python3 scripts/check_lean_axioms.py formal/results/completion-aggregate/QuadraticCoefficient-AxiomCheck.lean < <audit-output>
+
+Math115.GlobalDisplayOwnership (2 reports)
+  lean -j2 -DautoImplicit=false --root=formal -o <build>/Math115/GlobalDisplayOwnership.olean formal/Math115/GlobalDisplayOwnership.lean
+  lean -j2 -DautoImplicit=false --root=formal/results/completion-aggregate formal/results/completion-aggregate/GlobalDisplayOwnership-AxiomCheck.lean > <audit-output>
+  python3 scripts/check_lean_axioms.py formal/results/completion-aggregate/GlobalDisplayOwnership-AxiomCheck.lean < <audit-output>
+
+Math115.RepairCoefficient (2 reports)
+  lean -j2 -DautoImplicit=false --root=formal -o <build>/Math115/RepairCoefficient.olean formal/Math115/RepairCoefficient.lean
+  lean -j2 -DautoImplicit=false --root=formal/results/completion-aggregate formal/results/completion-aggregate/RepairCoefficient-AxiomCheck.lean > <audit-output>
+  python3 scripts/check_lean_axioms.py formal/results/completion-aggregate/RepairCoefficient-AxiomCheck.lean < <audit-output>
+
+audited-declarations.tsv gives the exact ordered names per driver. The copied Math115-ReproductionRoster.lean is the repository863-name roster including comments; it is not the generated native driver. Its name order exactly matches Math115-AxiomCheck.lean, whose executed bytes are preserved separately.
+
+Surrounding batch6: 685 planned / 669 completed / 1 failed / 15 blocked. PhysicalReferenceBoolean failed outside the selected imported closure. All four selected native audit invocations returned0 and passed, yet the audit wrapper intentionally returned1/statusfailed because the wider build remained failed. These files certify the selected869-name checkpoint, not whole-build success or a full public sampling machine.

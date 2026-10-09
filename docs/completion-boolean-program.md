@@ -60,10 +60,12 @@ export ELAN_HOME="$PWD/../.tools/elan"
 ../.tools/elan/bin/lake env lean -j1 -DautoImplicit=false results/completion-boolean-retry/NativeExamples.lean
 ```
 
-The recorded local verification used direct Lean compilation and existing
-dependency objects, not a fresh dependency-closure build. The aggregate
-`Math115` target does not yet import this additional module. It has not been
-independently reproduced on Linux or checked with strict Comparator.
+The recorded isolated verification used direct Lean compilation and existing
+dependency objects, not a fresh dependency-closure build. At that checkpoint,
+the aggregate `Math115` target did not import this module. The later
+[completion aggregate receipt](../formal/results/completion-aggregate/verification.json)
+now includes its 25 declarations in the 863-name focused audit. Fresh Linux
+verification of that expanded scope and strict Comparator remain pending.
 
 The theorem is generic in the supplied fine-table draw. It does not establish
 that an arbitrary draw is accurate or executable. Connecting the pinned

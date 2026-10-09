@@ -1,0 +1,3 @@
+import Math115.QuadraticCoefficient
+#print axioms Math115.pair_product_le_quarter_square
+#print axioms Math115.pair_product_eq_quarter_square_iff

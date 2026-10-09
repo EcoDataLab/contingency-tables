@@ -1,0 +1,2 @@
+'Math115.GlobalDisplayOwnership.edge_owner_unique' depends on axioms: [propext, Quot.sound]
+'Math115.GlobalDisplayOwnership.edge_prefix_unique' depends on axioms: [propext, Quot.sound]

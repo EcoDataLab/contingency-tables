@@ -15,16 +15,21 @@ open.
 
 An additional [executable Boolean codec/retry component](completion-boolean-program.md)
 now identifies the actual signed decoder and an ordered bank of independent
-trial words with the retry law. Its 25 isolated audits supplement checkpoint 8.
+trial words with the retry law. Its 25 audits are now included in the focused
+aggregate after their original isolated verification.
 The subsequent [binary-list decoder](completion-list-decoder.md), with 52
-isolated audits, proves exact table semantics and polynomial charged work
-for decoding. Composed sampler semantics and costs remain open.
+audits now included in the focused aggregate, proves exact table semantics
+and polynomial charged work for decoding. The separately audited encoded
+completion program composes this decoder with dense draws and retries;
+complete outer-program identification and machine cost remain open.
 
 The [explicit schedule arithmetic](completion-schedules.md) also now compiles:
-56 isolated audits cover the walk/retry counts, separate completion
+56 audits now included in the focused aggregate cover the walk/retry counts, separate completion
 precisions, four scalar error budgets, and a polynomial bound on the full
 reserved bit bank. Its physical-program identification and composed machine
 cost remain separate obligations.
+
+The current [completion aggregate receipt](../formal/results/completion-aggregate/verification.json) covers 863 focused and six standalone declarations, integrating 231 previously isolated declarations across nine modules. The separate 46-declaration encoded completion-program receipt remains excluded from those counts. The checkpoint-8 Linux run still covers its historical 632 focused declarations; it does not certify the expanded aggregate. Original component guides and receipts retain their frozen checkpoint scope.
 
 ## Why equal representation matters
 

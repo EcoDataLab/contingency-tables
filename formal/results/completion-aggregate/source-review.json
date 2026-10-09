@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "original_review_sha256": "931451d983a68c665b4f198b2517eaa88cb9c5662bf26e553d0f1f2674d9cc6d",
+  "reviewed_at_utc": "2026-10-09T21:02:33.438362+00:00",
+  "reviewer": "codec_program",
+  "scope": "Authenticated native aggregate Math115863 plus three disjoint standalone2-name audits (869 total); selected evidence pass only, wider685 build and audit wrapper failed.",
+  "original_archive_sha256": "585b2a573e6e53da4f1428ff21ae3b1b3430e6481bb11cf697f7c3380bd922fc",
+  "original_archive_manifest_sha256": "2b12610ceffa4ce9d3ecc97f5f0db144529c8a1d2ca1916c29e6cdccb89c9950",
+  "original_exporter_review_sha256": "25efeeb5ecc14b2c90d5df05416210eeb12131d1f9dec454e7243f8d7f9fc932",
+  "reviewed_module_sources": {
+    "formal/Math115.lean": "8d6a6e92cb5a6cdb0f72e9a005d1d48b19350093daa676dcfa47c58a7d34aa07",
+    "formal/Math115/QuadraticCoefficient.lean": "9d023785b272aeb6b819aaa1bc42c7c04f8419522799b64e0b66bb355b91a46a",
+    "formal/Math115/GlobalDisplayOwnership.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
+    "formal/Math115/RepairCoefficient.lean": "cf1275943fb03dce29c9641d758e56531ee6c2fa42b13dc09110e2d7823ffd60"
+  },
+  "count": 869,
+  "findings": [],
+  "roster_checks": {
+    "aggregate_names": 863,
+    "standalone_names": 6,
+    "total_unique_names": 869,
+    "no_focused_standalone_overlap": true,
+    "previous632_exact_ordered_prefix": true,
+    "additional_published_names": 231,
+    "additional_namespace_counts": {
+      "Math115.CompletionBooleanRetry": 25,
+      "Math115.LatticeCompletionProgram": 52,
+      "Math115.CompletionOuterSchedule": 24,
+      "Math115.CompletionRandomBudget": 32,
+      "Math115.CompletionEncodingSize": 25,
+      "Math115.CompletionPublicSize": 7,
+      "Math115.DenseLatticeCompletion": 25,
+      "Math115.DenseLatticeCompletionProvedInputs": 3,
+      "Math115.PhysicalLatticeCompletion": 38
+    },
+    "separate_sampler46_excluded": true,
+    "current_reproduction_AxiomAudit_source_sha256": "bc13c1fbc9c9d57a2ecd79ba3a90543c6cb993c0ee8bead637b4b4a12888d42b",
+    "executed_root_driver_sha256": "5aabb99f843985c593307374fba1e95e71212ecf7ddad503f93553c84fd85c29",
+    "reproduction_roster_equals_executed_roster_bytes_differ_due_comments": true
+  },
+  "evidence_checks": {
+    "all45_archive_entries_match_manifest_extracted_bytes": true,
+    "actual_current_frozen_sources_match": true,
+    "all869_strict_reports_standard_axioms_exact_order_no_extra_output": true,
+    "native_root_fresh_compile_olean_ilean_empty_log_verified": true,
+    "three_standalone_objects_authenticated_reuse_fresh_audits": true,
+    "native_runtime_anchor_inventory_and_full_audit_inputs_independently_reconstructed": true,
+    "all_transitive_source_and_record_hashes_match": 547,
+    "exact_complete_internal_parent_object_maps_successful": true,
+    "all_selected_expected_before_after_snapshots_equal": true,
+    "all_local_root_import_sources_already_tracked": 59,
+    "ancestor_object_bytes_rehashed_by_authenticated_exporter_not_all_locally_delivered": true,
+    "official_external_runtime_toolchain_cache_remains_trusted": true,
+    "actual_wider_build_failure_and_wrapper_failure_preserved": true,
+    "no_Lean_Lake_SSH_source_docs_public_Git_mutations": true
+  },
+  "pins": {
+    "lean": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+    "lean_executable_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "upstream": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+  },
+  "batch_scope": {
+    "planned_modules": 685,
+    "completed_modules": 669,
+    "failed_modules": 1,
+    "blocked_modules": 15,
+    "failed_module": "Math115.PhysicalReferenceBoolean",
+    "selected_direct_audits_passed": 4,
+    "selected_names": 869,
+    "audit_wrapper_status": "failed",
+    "wrapper_exit1_is_not_selected_Lean_exit_code": true
+  },
+  "boundaries": [
+    "This certifies fresh aggregate root compilation and exact selected named audits using authenticated dependency reuse, not a fresh full dependency rebuild or successful685-module build.",
+    "All new231 names come from nine already published Boolean/decoder/schedule/size/dense-law components; source contracts and runtime/law boundaries remain as individually reviewed.",
+    "Separate passed CompletionSamplerProgram32 and CompletionSamplerSemantics14 are outside the aggregate869 roster.",
+    "No fresh Linux aggregate replay, final physical/public RandomMachine runtime, Comparator pass or practical speed result follows."
+  ],
+  "transitive_source_inventory_count": 547,
+  "omitted_transitive_source_inventory_canonical_json_sha256": "474a71d53f45bb9288739baefa47c14f661fc5aafb7093c031887501f243e466",
+  "projection_note": "Curated completed independent native-evidence review bound by original receipt digest. Private native paths, transcripts and unrelated failed-source records are omitted. Final public artifact readback is separate."
+}

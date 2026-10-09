@@ -11,37 +11,43 @@ all-state physical oracle. The encoded completion routine also has exact
 output semantics and polynomial charged cost in supplied input. Concrete encoded outer-program identification,
 complete sampler runtime, and secure Comparator verification remain open.
 
-An additional isolated [Boolean codec/retry module](completion-boolean-program.md)
+The current [completion aggregate](../formal/results/completion-aggregate/verification.json) passed **869 named declaration audits: 863 focused plus six standalone**. It adds 231 previously isolated declarations across nine modules to the default focused target. The 46 declarations of `CompletionSamplerProgram` and `CompletionSamplerSemantics` remain separately audited and excluded. Aggregate compilation and audits reused validated dependency objects; this is not a fresh dependency-closure rebuild. All selected declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. No fresh Linux or Comparator result is claimed for this expanded aggregate.
+
+The [Boolean codec/retry module](completion-boolean-program.md)
 passed 25 declaration audits and six native Lean evaluations after checkpoint
 8. Its [receipt](../formal/results/completion-boolean-retry/verification.json)
-and frozen-source review are separate from the 638 aggregate audits and the
-632-declaration Linux result. It is not yet included in the aggregate target.
+and frozen-source review retain their isolated scope. Its 25 declarations
+are now included in the focused aggregate; the historical checkpoint-8 Linux
+result still covers 632 declarations at its recorded commit.
 
 The subsequent [binary-list decoder](completion-list-decoder.md) passed
 52 declaration audits and nine native boundary checks. It proves exact
 agreement with the typed table trial and polynomial TreeTyped work and
 output weight in the binary input size. Its [receipt](../formal/results/lattice-decoder/verification.json)
-and independent frozen-source review also remain separate from the
-aggregate and Linux results. No whole-sampler runtime claim follows.
+and independent frozen-source review retain their isolated scope. Its 52
+declarations are now included in the focused aggregate. No whole-sampler
+runtime claim follows.
 
-The [explicit schedule arithmetic](completion-schedules.md) adds two isolated
+The [explicit schedule arithmetic](completion-schedules.md) contributes two
 modules with 24+32 standard-axiom audits and clean actual-source compilations.
 They bound all four scalar errors and the full reserved random-bit bank.
 The [receipt](../formal/results/completion-schedules/verification.json)
 does not cover the separate physical wrappers or the final outer program.
-These 56 declarations have not changed the aggregate or Linux counts above.
+These 56 declarations are now included in the focused aggregate. Their
+original receipt does not certify later wrappers or expand the Linux scope.
 
-The [input-size proofs](completion-input-size.md) add two more isolated modules
+The [input-size proofs](completion-input-size.md) contribute two modules
 with 25+7 standard-axiom audits and empty successful compile logs. They connect
 binary margins and the reserved bank to the original public sampling-size
 measure, with numeric precision `h`, and provide generic cost composition for
 a supplied deterministic polynomial-time realizer. Equal totals are explicit
 in the literal public-input bound. The [receipt](../formal/results/completion-input-size/verification.json)
 and independent frozen-source review cover these 32 declarations. The complete
-sampler and random-machine cost composition remain separate; the aggregate
-and Linux counts remain unchanged.
+sampler and random-machine cost composition remain separate. These 32
+declarations are now included in the focused aggregate; the historical
+Linux scope remains unchanged.
 
-The [dense completion family](completion-dense-law.md) adds three isolated
+The [dense completion family](completion-dense-law.md) contributes three
 modules with 25+3+38 standard-axiom audits. Actual native Windows compilations
 and independent review cover the canonical Boolean-word law, exact pinned
 analytic premise discharge, all-state residual inputs and completion accuracy,
@@ -50,8 +56,8 @@ word widths. The [receipt](../formal/results/completion-dense-law/verification.j
 retains exact source, object, dependency and audit hashes. Four style/unused
 variable warnings remain in the compile logs; all named audit logs contain
 only axiom reports. The final encoded walker and public-machine cost are
-not yet verified, and these 66 audits do not change the aggregate or Linux
-counts.
+not yet verified. These 66 declarations are now included in the focused
+aggregate; the historical Linux scope remains unchanged.
 
 The [encoded completion program](completion-sampler-program.md) adds two
 isolated modules with 32+14 standard-axiom audits. Their actual compiled
@@ -64,7 +70,8 @@ it evaluates all reserved trials before selecting the first success.
 The [receipt](../formal/results/completion-program/verification.json) preserves
 source, object, dependency and audit hashes. The physical list-order bridge,
 outer program and public random-machine composition remain separate. These
-46 audits do not change the aggregate or Linux counts.
+46 audits remain isolated, excluded from the current 863 focused and six
+standalone counts and from the historical Linux result.
 
 ## Reproduction
 
@@ -389,7 +396,9 @@ additional verification level.
 
 ## Recorded outcome
 
-The eighth local checkpoint passed on 9 October 2026 UTC with Lean 4.34.1.
+The [completion aggregate receipt](../formal/results/completion-aggregate/verification.json) records the current root compilation, exact focused and standalone audit drivers, raw audit logs, source/object hashes, and verification scope. The focused driver selects 863 unique names; the six unchanged standalone names are disjoint. The nine additions contribute `25+52+24+32+25+7+25+3+38=231` declarations. This is a successful scoped aggregate compilation and audit, not a success claim for the surrounding native build: its overall watcher exited with failure because a separate draft failed. Their original isolated receipts remain the evidence for native examples and component-specific checks; those checks were not rerun by the aggregate audit.
+
+The historical eighth local checkpoint passed on 9 October 2026 UTC with Lean 4.34.1.
 New modules were compiled serially, followed by a fresh aggregate
 `Math115.lean` compilation and fresh focused and standalone axiom audits.
 Those integrated checks use existing compiled dependency outputs. This is
@@ -433,8 +442,9 @@ declarations**. All use only the standard allowed axioms `propext`,
 
 [`verification.json`](../formal/results/verification.json) records the exact
 selected declarations, axioms, source hashes, and verification scope.
-Historical logs are retained; current aggregate compilation and fresh audits
-are in `eighth-checkpoint.log`. The source pin and unchanged upstream files
+Historical checkpoint-8 compilation and audits are retained in
+`eighth-checkpoint.log`; the current expanded aggregate has its separate
+[receipt](../formal/results/completion-aggregate/verification.json). The source pin and unchanged upstream files
 are recorded in provenance, and the focused manifest retains the original
 revision entries. The separate successful original-theorem Linux run audits
 three original sampling/counting exports at its own recorded commit. It is
