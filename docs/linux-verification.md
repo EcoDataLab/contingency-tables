@@ -163,3 +163,16 @@ The downloaded GitHub artifact archive was checked against its API-reported SHA-
 The runner's measured ABI is the decisive evidence; a distribution label alone is insufficient. The current official [Ubuntu 26.04 image manifest](https://github.com/actions/runner-images/blob/39c421f5a8a953996a05ba4dc061900ebd939308/images/ubuntu/Ubuntu2604-Readme.md) advertises kernel `7.0.0-1012-azure`. Upstream [Linux 7.0 sets ABI 8](https://github.com/torvalds/linux/blob/v7.0/security/landlock/syscalls.c), while [Linux 7.1 sets ABI 9](https://github.com/torvalds/linux/blob/v7.1/security/landlock/syscalls.c). Thus changing only to that newer hosted label is not a verified remedy; a kernel backport would need to be established by the same runtime probe. No currently documented standard hosted label was verified to supply ABI 9 during this investigation.
 
 A fresh guest with a pinned Linux 7.1-or-newer kernel and a real systemd user session is a possible later route using [QEMU system emulation](https://www.qemu.org/docs/master/system/target-i386.html). It would need an independently checked guest image, kernel configuration, acceleration availability, and complete sandbox probes before replay. That adds a guest-build and maintenance task, so it is deferred while the ordinary focused/full Linux builds run. A container sharing the present runner kernel cannot supply the missing ABI. No VM installation, paid host, new credentials, or weakened sandbox was introduced.
+
+## Checkpoint 8 replication in progress
+
+[Focused run 37963647335](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963647335)
+was dispatched at `0aa5a61140712ada44893b03d805a756e0e9823a` on 9 October 2026 UTC.
+It targets the complete 632-declaration focused audit, including the new
+finite-table geometry, quarter acceptance, and retry-accuracy modules. It
+is still in progress; no completed Linux verification is claimed for this
+checkpoint. The local aggregate and 638 audits passed, with separate
+[receipts](../formal/results/verification.json). Its
+[Python CI](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963605116)
+passed on Python 3.10, 3.12, and 3.13. This run does not request strict
+Comparator replay. Inspect the saved run before starting any replacement.

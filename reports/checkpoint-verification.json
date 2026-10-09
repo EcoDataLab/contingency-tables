@@ -502,8 +502,33 @@
     }
   ],
   "publication": {
-    "status": "locally_verified_unpublished",
-    "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa"
+    "source_commit": "0aa5a61140712ada44893b03d805a756e0e9823a",
+    "commit_url": "https://github.com/EcoDataLab/contingency-tables/commit/0aa5a61140712ada44893b03d805a756e0e9823a",
+    "observed_at_utc": "2026-10-09T17:06:18.131382+00:00",
+    "python_ci": {
+      "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37963605116",
+      "status": "passed",
+      "jobs": [
+        {
+          "name": "exact-tests (3.12)",
+          "conclusion": "success"
+        },
+        {
+          "name": "exact-tests (3.10)",
+          "conclusion": "success"
+        },
+        {
+          "name": "exact-tests (3.13)",
+          "conclusion": "success"
+        }
+      ]
+    },
+    "focused_linux": {
+      "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37963647335",
+      "status": "in_progress",
+      "result": "Fresh focused build dispatched at the exact proof commit; no checkpoint-8 Linux pass claimed yet."
+    },
+    "review_snapshot_note": "Independent source, document, and evidence hashes refer to the proof checkpoint at source_commit. Later publication/status metadata is separate."
   },
   "prior_publications": [
     {

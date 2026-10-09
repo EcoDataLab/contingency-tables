@@ -76,6 +76,8 @@ The sixth checkpoint is published at `e5d5dd3e81b5eac0e3f42841530286b56bcb96e5`;
 
 The seventh checkpoint is published at `5b3703234e7f6cd88e6b6f6b3dab85510ba4366f`; its [three-version Python CI](https://github.com/EcoDataLab/contingency-tables/actions/runs/37932442921) and fresh [focused Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805) passed. The [Linux receipt](../formal/results/linux-focused-5b37032/verification.json) verifies all 420 focused audits and matches 55 environment-recorded source hashes to that exact commit. It excludes the six standalone audits and the eighth checkpoint's additions. The new local integrated 638-declaration audit is complete; fresh Linux coverage is recorded separately when available.
 
+The eighth checkpoint is published at `0aa5a61140712ada44893b03d805a756e0e9823a`; its [three-version Python CI](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963605116) passed. The fresh [focused Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963647335) is in progress at that exact commit. No eighth-checkpoint Linux pass is claimed yet. The source/document review snapshots belong to the proof commit; this publication update changes status metadata only.
+
 Next work:
 
 1. Instantiate the proved completion law from `canonicalDenseDraw_variation`: reindex the table types, convert the real accuracy bound to rational dyadics, and assemble the all-state physical `OracleFamily` and terminal laws using the existing residual-margin lemmas.
