@@ -26,3 +26,7 @@ import Math115.PhysicalStationarySuccess
 import Math115.PhysicalStationaryLaw
 import Math115.PhysicalRationalKernel
 import Math115.PhysicalFiniteWalk
+import Math115.PhysicalCompletionOracle
+import Math115.PhysicalApproximateOracle
+import Math115.LatticeCompletion
+import Math115.DilatedCompletionMargins

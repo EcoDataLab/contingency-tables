@@ -20,3 +20,7 @@ overview.pdf
 !formal/results/stationary-output/*.log
 !formal/results/linux-focused-7ad5c81/*.log
 !formal/results/finite-walk/*.log
+!formal/results/linux-focused-e5d5dd3/*.log
+!formal/results/approximate-oracle/*.log
+!formal/results/lattice-completion/*.log
+!formal/results/dilated-completion-margins/*.log

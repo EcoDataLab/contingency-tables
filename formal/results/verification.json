@@ -1,7 +1,7 @@
 {
   "recorded_date": "2026-10-09",
-  "checkpoint": 6,
-  "prior_checkpoint_commit": "7ad5c81117bbaa869da751b1f92a9213ddefdd22",
+  "checkpoint": 7,
+  "prior_checkpoint_commit": "e5d5dd3e81b5eac0e3f42841530286b56bcb96e5",
   "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "lean_toolchain": "leanprover/lean4:v4.34.1",
   "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
@@ -11,20 +11,20 @@
   "focused_manifest_entry_count": 9,
   "focused_dependency_closure": {
     "status": "integrated_aggregate_compilation_and_fresh_axiom_audit_passed",
-    "original_module_count": 175,
-    "local_module_count": 37,
-    "trusted_external_import_count": 45,
+    "original_module_count": 178,
+    "local_module_count": 41,
+    "trusted_external_import_count": 47,
     "entry_module": "Math115",
     "provenance": "formal/results/provenance.json",
-    "log": "formal/results/sixth-checkpoint.log",
-    "scope_note": "Two new modules compiled serially and three missing unchanged generic imports restored. Fresh aggregate and both audits use existing dependency outputs; this is not a full dependency rebuild."
+    "log": "formal/results/seventh-checkpoint.log",
+    "scope_note": "Four new modules compiled serially; three absent unchanged operational-law imports restored for the approximate-oracle modules. Fresh aggregate and both audits use existing dependencies, not a full dependency rebuild."
   },
   "checks": {
     "standalone": {
       "status": "passed",
-      "completed_at_utc": "2026-10-09T11:56:45.071413+00:00",
-      "log": "formal/results/sixth-checkpoint.log",
-      "log_sha256": "a48c8d44b2003040881d034cb6b18bd96b3f33fc4d5427dea391e4d450aed90e",
+      "completed_at_utc": "2026-10-09T12:46:48.837653+00:00",
+      "log": "formal/results/seventh-checkpoint.log",
+      "log_sha256": "459205590c6eb93d23020333e37b0d02d6cca305d521d94d9fe59964e2338f76",
       "audited_declarations": [
         {
           "name": "Math115.pair_product_le_quarter_square",
@@ -76,9 +76,9 @@
     },
     "focused": {
       "status": "passed",
-      "completed_at_utc": "2026-10-09T11:56:34.563461+00:00",
-      "log": "formal/results/sixth-checkpoint.log",
-      "log_sha256": "a48c8d44b2003040881d034cb6b18bd96b3f33fc4d5427dea391e4d450aed90e",
+      "completed_at_utc": "2026-10-09T12:46:38.078963+00:00",
+      "log": "formal/results/seventh-checkpoint.log",
+      "log_sha256": "459205590c6eb93d23020333e37b0d02d6cca305d521d94d9fe59964e2338f76",
       "audited_declarations": [
         {
           "name": "OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy",
@@ -2603,18 +2603,795 @@
             "Classical.choice",
             "Quot.sound"
           ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.mapLaw_constant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.completionStep_variation_thinned",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.equivLaw_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.proposalRat_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.proposalAllowance",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.proposalAllowance_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.proposalAllowance_le_half",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.degree",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.degree_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.proposalWeight_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.proposalWeight_total",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.proposalWeight_total_le_allowance",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.proposalWeight_total_le_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.physicalProposalLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.ReferenceTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.referenceTableNonempty",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.referenceStepLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.referenceExactStep_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.referenceStep_variation_local",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.referenceStep_variation_uniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.referenceFibreMap",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.referenceCompletionLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.referenceCompletionLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.OracleFamily",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.selectedStepLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.selectedCompletionLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.selectedStepLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.selectedCompletionLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalCompletionOracle.empty_fibre_card_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalApproximateOracle.approximateJointLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalApproximateOracle.approximateJointLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalApproximateOracle.approximateOuterLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalApproximateOracle.approximateOuterLaw_variation_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalApproximateOracle.approximateOuterLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalApproximateOracle.idealOracleOuterLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalApproximateOracle.idealOracleOuterLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalApproximateOracle.approximateOuterLaw_variation_of_budget",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.Array",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletion.difference",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletion.prefixSum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.ZeroAxes",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletion.ZeroBoundary",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletion.BoundedDigits",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletion.difference_row_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.difference_column_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.difference_row_sum_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.difference_column_sum_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.prefix_zero_axes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.prefix_difference",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.difference_prefix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.difference_bounds",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.encode",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletion.decode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.residue",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.prefix_encode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.scaled_digit_ediv",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.scaled_digit_emod",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.decode_encode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.residue_encode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.residue_zero_axes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.residue_bounded",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.encode_decode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.encode_entry_at_least_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.encode_row_margin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.encode_column_margin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.residue_zero_boundary_of_divisible_margins",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.decode_row_margin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.decode_column_margin",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.accepted_fine_entry_at_least_two",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.OffsetDigits",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletion.codecEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.FiniteDigits",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletion.finiteOffsets",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.finiteOffsets_zero_boundary",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.finiteOffsets_bounded",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.finite_encode_decode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.finiteOffsets_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.finiteOffsets_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.finiteEncode_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.finiteDigits_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletion.encodedFamily_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.rowLargeCount_rectangle",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.columnLargeCount_rectangle",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.total_large_cell_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.physical_residual_row_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.physical_residual_column_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.reference_row_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.reference_column_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.reference_row_total_eq_residual",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.reference_total_upper",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.fineRows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.fineColumns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.FineReferenceTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.fine_row_total",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.fine_column_total",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.fine_totals",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.fineReferenceTableNonempty",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.fine_total_upper",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.fine_row_dense_minimum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.fine_column_dense_minimum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.ideal_reference_row_geometric_minimum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DilatedCompletionMargins.ideal_reference_column_geometric_minimum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
         }
       ]
     }
   },
-  "new_audited_declaration_count": 322,
+  "new_audited_declaration_count": 424,
   "original_audited_declaration_count": 2,
   "linux_verification": {
     "record": "formal/results/linux-runs.json",
-    "source_commit": "7ad5c81117bbaa869da751b1f92a9213ddefdd22",
-    "focused_record": "formal/results/linux-focused-7ad5c81/verification.json",
-    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37924611391",
-    "scope_note": "Fresh Linux focused build and 279-declaration audit passed for checkpoint 5 at 7ad5c81. The separate standalone audit and checkpoint 6 finite-walk additions are excluded."
+    "source_commit": "e5d5dd3e81b5eac0e3f42841530286b56bcb96e5",
+    "focused_record": "formal/results/linux-focused-e5d5dd3/verification.json",
+    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37927276465",
+    "scope_note": "Fresh Linux focused build and 318-declaration audit passed for checkpoint 6 at e5d5dd3. The separate standalone audit and checkpoint 7 oracle additions are excluded."
   },
   "full_unconditional_and_challenge_build": {
     "status": "passed_on_linux_at_prior_commit",
@@ -2631,25 +3408,30 @@
   },
   "limits": [
     "Official Mathlib cached artifacts and Lean bootstrap binaries remain trusted.",
-    "The d17 and d25 theorems bound actual ideal auxiliary-chain inverse gaps; final wrappers require equal ordinary total margins.",
-    "New finite-walk output laws use a supplied feasible fallback, independent fresh restarted attempts, and exact conditional terminal completions.",
-    "Explicit real-log sufficient schedules do not establish executable proposal/draw/test identification, completion-oracle implementation, finite-bit correction, or complete machine cost.",
-    "The smaller ideal-only scales violate the retained sufficient dense-completion interface.",
-    "Earlier focused/full Linux checks cover their recorded source commits, not later additions or strict Comparator replay."
+    "The d17 and d25 theorems bound actual auxiliary-chain inverse gaps, not complete machine runtime.",
+    "Approximate completion-law bounds require normalized feasible all-state laws, fresh conditional calls, and independent restarted trials.",
+    "The integer codec proves signed-array inverses and constructed finite-image cardinality; the full accepted finite-table-fibre bijection remains open.",
+    "Actual strong residual and dilated dense-input bounds are compiled; universal geometric acceptance and completion-law/finite-bit realization remain open.",
+    "The original sufficient dense-scale interface still excludes L=3d; the reviewed dilation route supplies different inner inputs.",
+    "Prior Linux checks cover only their recorded source commits, not these additions or strict Comparator replay."
   ],
   "source_sha256": {
-    "formal/Math115.lean": "42f4291cda0d487e3753138654bc90cfb6ec1c90b89f5a03aebd9e9028d9b479",
+    "formal/Math115.lean": "00be6638525183a5025fdc52c620e72095d79a5c9032a002c5a37fa696de8707",
     "formal/Math115/AllSmallChainGap.lean": "f87775c41d272d968362036e8082fe748031244b52cbe6b743e18f40b775a288",
-    "formal/Math115/AxiomAudit.lean": "333d0a08461aea83528a11a574709be564249b502bf86d280cdc0e0c6deea846",
+    "formal/Math115/AxiomAudit.lean": "7315e79f331c91a6d0f85e67180f36e1d45d83bd25f5cf86b25afa17a33bead0",
     "formal/Math115/CompletionAdjustment.lean": "714934dc14bca5589b40de0952db8dfd17ead1aa93f71306fbf120d832e47192",
+    "formal/Math115/DilatedCompletionMargins.lean": "ad52e6f22b9747eb7976bc1924ce9ded65d94ae76820fa33c0109a3745b7ed0b",
     "formal/Math115/GlobalDisplayOwnership.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
     "formal/Math115/IdealOracleScales.lean": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf",
     "formal/Math115/IdealRepairRefinement.lean": "7728c29d949bbf0b2cefa4feea9e38cc971df2c70ea069a77dfd53162418ed93",
+    "formal/Math115/LatticeCompletion.lean": "0960e8bf3f40189bae52cf5a707c3583a5264d40f3cf520efad1f5670c2fe13f",
     "formal/Math115/PaddedMarginBridge.lean": "0e015eeb217967669054b9492281c020c0281075336e9712e03c2b623bda0c4b",
     "formal/Math115/PaddingGrowth.lean": "deece6445719c3e56b5b87576c2ec2aed62d11c9c4d525fd02a3c11918831750",
     "formal/Math115/PaddingGrowthAlgebra.lean": "d9ddbad574efaf8786d1e994964f6ed1c54c82f1b26ef068bd5c3dee042d1ab4",
     "formal/Math115/PathDistanceSum.lean": "1bdd44f56da123a0a09911baf79210ece88e5667ab825e15a5641c97feadf959",
     "formal/Math115/PathVariance.lean": "90fa3bf35868c990bc4144035b8361f06f9c7526ae40f37f6b5828edfaab59a0",
+    "formal/Math115/PhysicalApproximateOracle.lean": "aac9172e59eade9e4e841c035d299710b793d95ff637d4cf848e98c3ffc331ee",
+    "formal/Math115/PhysicalCompletionOracle.lean": "44d6b7d22d92d79c6ab993ac31c31c7b448894e0a9118b21d155f25d83c4ded3",
     "formal/Math115/PhysicalExposureVariance.lean": "3a4a0cba124f381f27fc31fb3a0f3a40490419a36834903eaa10c5a9c907ea55",
     "formal/Math115/PhysicalFiniteWalk.lean": "b9189d0b75ca37f59d8ced4cfbdc2cf51c53521c368e94352bd33245618ff0ad",
     "formal/Math115/PhysicalFullVariance.lean": "1d38c1d7d0ca468744c3a4e2864d560acb6d2aabf34c086ac38a6c4747c1ccd1",
@@ -2704,9 +3486,9 @@
         ".lake/build/lib/lean/Math115.olean",
         "Math115.lean"
       ],
-      "started_at_utc": "2026-10-09T11:54:10.853443+00:00",
-      "completed_at_utc": "2026-10-09T11:55:25.030105+00:00",
-      "elapsed_seconds": 74.17623466718942,
+      "started_at_utc": "2026-10-09T12:44:50.942388+00:00",
+      "completed_at_utc": "2026-10-09T12:46:00.350864+00:00",
+      "elapsed_seconds": 69.40811120881699,
       "exit_code": 0
     },
     {
@@ -2719,9 +3501,9 @@
         "-DautoImplicit=false",
         "Math115/AxiomAudit.lean"
       ],
-      "started_at_utc": "2026-10-09T11:55:25.030965+00:00",
-      "completed_at_utc": "2026-10-09T11:56:34.563461+00:00",
-      "elapsed_seconds": 69.53217720799148,
+      "started_at_utc": "2026-10-09T12:46:00.351790+00:00",
+      "completed_at_utc": "2026-10-09T12:46:38.078963+00:00",
+      "elapsed_seconds": 37.72699433309026,
       "exit_code": 0
     },
     {
@@ -2734,22 +3516,36 @@
         "-DautoImplicit=false",
         "Math115/StandaloneAxiomAudit.lean"
       ],
-      "started_at_utc": "2026-10-09T11:56:34.565989+00:00",
-      "completed_at_utc": "2026-10-09T11:56:45.071413+00:00",
-      "elapsed_seconds": 10.505365832941607,
+      "started_at_utc": "2026-10-09T12:46:38.082621+00:00",
+      "completed_at_utc": "2026-10-09T12:46:48.837653+00:00",
+      "elapsed_seconds": 10.75497299991548,
       "exit_code": 0
     }
   ],
   "new_module_verification": {
-    "record": "formal/results/finite-walk/verification.json",
-    "sha256": "346da571e8c4a66e4dd17d89d030d2004e04b877653bf08cfb85ecacf10de6d5",
-    "independent_source_review": "formal/results/finite-walk-review.json"
+    "record": "formal/results/completion-oracle-checkpoint.json",
+    "sha256": "5145ba882e1a038bc45e1e1a6e398e8826f27489927362450a1032a7b42db661",
+    "records": [
+      "formal/results/approximate-oracle/verification.json",
+      "formal/results/lattice-completion/verification.json",
+      "formal/results/dilated-completion-margins/verification.json"
+    ],
+    "independent_source_reviews": [
+      "formal/results/approximate-oracle-review.json",
+      "formal/results/lattice-completion-review.json",
+      "reports/completion-oracle-dilation-review.json"
+    ]
   },
   "prior_module_verifications": [
     {
       "record": "formal/results/stationary-output/verification.json",
       "sha256": "6d93f6fd1c4e070e4ea11311a5502548cdf439b3ffc48d7cee3e492a0f825dcb",
       "independent_source_review": "formal/results/stationary-output-review.json"
+    },
+    {
+      "record": "formal/results/finite-walk/verification.json",
+      "sha256": "346da571e8c4a66e4dd17d89d030d2004e04b877653bf08cfb85ecacf10de6d5",
+      "independent_source_review": "formal/results/finite-walk-review.json"
     }
   ]
 }

@@ -115,6 +115,15 @@ It is not a lower bound for every dense discretization, completion oracle,
 or contingency-table sampler. A different completion implementation or
 a stronger geometry proof might avoid these requirements.
 
+The subsequent [dilated completion construction](completion-oracle-dilation.md)
+provides such a route at the level of reviewed mathematics: enlarge the
+completion margins, use the unchanged dense sampler, then round and reject.
+Its inner input satisfies the original dense threshold while the outer
+padding stays at `3d`; the ideal success probability exceeds one quarter.
+The [approximate-oracle interface](physical-approximate-oracle.md) accounts
+for completion errors in the outer law. The full geometric and finite-bit
+program composition remains to be formalized.
+
 ## What the exponent comparison means
 
 | Path | Padding `L` | Threshold `U` | Actual reference-chain inverse-gap allowance | Dense interface |

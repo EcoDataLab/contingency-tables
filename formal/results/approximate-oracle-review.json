@@ -1,0 +1,152 @@
+{
+  "status": "source_review_passed_at_recorded_hashes",
+  "review_mode": "Independent read-only mathematical, pinned-source interface, and documentation review. Only this JSON review report is written for this assignment.",
+  "lean_compiler_invoked_by_reviewer": false,
+  "compilation_and_axiom_verification": "Outside this source review. Author compiler and axiom-audit receipts are separate; this reviewer did not reproduce or certify their execution results.",
+  "base_published_checkpoint": "e5d5dd3e81b5eac0e3f42841530286b56bcb96e5",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "reviewed_source_sha256": {
+    "formal/Math115/PhysicalCompletionOracle.lean": "44d6b7d22d92d79c6ab993ac31c31c7b448894e0a9118b21d155f25d83c4ded3",
+    "formal/Math115/PhysicalApproximateOracle.lean": "aac9172e59eade9e4e841c035d299710b793d95ff637d4cf848e98c3ffc331ee"
+  },
+  "reference_source_sha256": {
+    "formal/Math115/PhysicalRationalKernel.lean": "8d9ef088f46cbfb5c44b56dea1cdf54d50829d348a4013b5903a7ff6e4d01c00",
+    "formal/Math115/PhysicalFiniteWalk.lean": "b9189d0b75ca37f59d8ced4cfbdc2cf51c53521c368e94352bd33245618ff0ad",
+    "formal/Math115/PhysicalStationaryLaw.lean": "ce1b601cbc1d7cac6a9823c08333856c9b4e7e95b62ce3a36cbb0dc4dc72375f",
+    "formal/Math115/ReducedAllSmallChain.lean": "0ba3ec59f6fa2f7e44939d28465ad190fcf82b4e1dae8f436ab959369964db58",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionKernelIdentification.lean": "9b312104f67b4aeb671f4aca1fccc93da5dbb2b1e6d374597beaefc4dcb8a874",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionProposalLaw.lean": "9814a8fa115bfa9a3a77b870419f825c566a797e330becdf8b9503166c1ddc04",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionFibreEquiv.lean": "c51b64d573e7ffd514f5cadf86086ea1d771983770ec9294ce8e66685c515ec4",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteDependentApproximation.lean": "4a926e34151527ce118dd7281372b5677bf00082b93f58017af135c2318ccdb8",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/RationalWalkApproximation.lean": "65cef24976113f8418a85a04c9d104d2a7338dfbd2af92c3988e31eca2c84aeb",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/RationalWalks.lean": "6f6b12287081bdd0732fc9576bf327897a07b8588ca63612cab4919ff1c65a37",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/RejectionLaw.lean": "d0ad6765eb54964f094a63733eeaa001967e5b3d46ae1658c1437fae5dd80bb6",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/RationalReindex.lean": "f3494e0bca89fc9c600c3cec92a20c3c62612de2c15a876908eca5df81521b55",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Dense/DenseCanonicalSemantics.lean": "4329d46f3cd887df75b564cc611e73f45b620769ca5fabc14387f26d829fd8f6",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Dense/DenseCanonicalProgram.lean": "9be23e9ee892b7f5dbccf366e94e180794696a967c3bbf9f754f158914f5c0b9",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Dense/DenseNormalizeSemantics.lean": "a407f42529cd39ce5ee51c75258e2743fac141c998c4747c43ebd4df9eb3ce8b",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/UnconditionalMain.lean": "e9991902994928a52e372d7963128e4a14567972987ec81010c09fdc3bc9aee3",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionStepApproximation.lean": "d7a2d9966a6ac00a0dd0d2e41bc3a22674fc420b528b996725128302d95ffa41"
+  },
+  "reviewed_declarations": [
+    "Math115.PhysicalCompletionOracle.mapLaw_constant",
+    "Math115.PhysicalCompletionOracle.completionStep_variation_thinned",
+    "Math115.PhysicalCompletionOracle.equivLaw_uniform",
+    "Math115.PhysicalCompletionOracle.proposalRat_nonnegative",
+    "Math115.PhysicalCompletionOracle.proposalAllowance",
+    "Math115.PhysicalCompletionOracle.proposalAllowance_nonnegative",
+    "Math115.PhysicalCompletionOracle.proposalAllowance_le_half",
+    "Math115.PhysicalCompletionOracle.degree",
+    "Math115.PhysicalCompletionOracle.degree_le",
+    "Math115.PhysicalCompletionOracle.proposalWeight_nonnegative",
+    "Math115.PhysicalCompletionOracle.proposalWeight_total",
+    "Math115.PhysicalCompletionOracle.proposalWeight_total_le_allowance",
+    "Math115.PhysicalCompletionOracle.proposalWeight_total_le_one",
+    "Math115.PhysicalCompletionOracle.physicalProposalLaw",
+    "Math115.PhysicalCompletionOracle.ReferenceTable",
+    "Math115.PhysicalCompletionOracle.referenceTableNonempty",
+    "Math115.PhysicalCompletionOracle.referenceStepLaw",
+    "Math115.PhysicalCompletionOracle.referenceExactStep_eq",
+    "Math115.PhysicalCompletionOracle.referenceStep_variation_local",
+    "Math115.PhysicalCompletionOracle.referenceStep_variation_uniform",
+    "Math115.PhysicalCompletionOracle.referenceFibreMap",
+    "Math115.PhysicalCompletionOracle.referenceCompletionLaw",
+    "Math115.PhysicalCompletionOracle.referenceCompletionLaw_variation",
+    "Math115.PhysicalCompletionOracle.OracleFamily",
+    "Math115.PhysicalCompletionOracle.selectedStepLaw",
+    "Math115.PhysicalCompletionOracle.selectedCompletionLaw",
+    "Math115.PhysicalCompletionOracle.selectedStepLaw_variation",
+    "Math115.PhysicalCompletionOracle.selectedCompletionLaw_variation",
+    "Math115.PhysicalCompletionOracle.empty_fibre_card_one",
+    "Math115.PhysicalApproximateOracle.approximateJointLaw",
+    "Math115.PhysicalApproximateOracle.approximateJointLaw_variation",
+    "Math115.PhysicalApproximateOracle.approximateOuterLaw",
+    "Math115.PhysicalApproximateOracle.approximateOuterLaw_variation_le",
+    "Math115.PhysicalApproximateOracle.approximateOuterLaw_variation",
+    "Math115.PhysicalApproximateOracle.idealOracleOuterLaw",
+    "Math115.PhysicalApproximateOracle.idealOracleOuterLaw_variation",
+    "Math115.PhysicalApproximateOracle.approximateOuterLaw_variation_of_budget"
+  ],
+  "findings": [],
+  "conclusion": "No substantive mathematical, interface, or documentation findings at the recorded hashes.",
+  "checked_interfaces": [
+    {
+      "topic": "Actual dyadic proposal and complete transition identity",
+      "assessment": "physicalProposalLaw gives each actual physical neighbor beta=2^-clog2(32d^2), with residual mass assigned to none/hold. proposalWeight_total is degree(x)*beta; the actual degree bound gives nonnegative residual mass. referenceExactStep_eq uses the pinned completionKernel identification theorem: off-diagonal mass is beta*acceptedCount/blockCount, and normalized law_ext_except determines rejection and hold mass. No completion count is evaluated by this finite experiment and no independent stationary-law hypothesis is introduced."
+    },
+    {
+      "topic": "Proposal-thinned completion accuracy",
+      "assessment": "completionStep_variation_thinned applies variation_bind_two to the common proposal law, identifies hold output as a constant point law, and contracts every nonhold mapped-completion comparison. The resulting degree(x)*beta multiplier is bounded by gamma=(5d^2+1)*beta, with gamma<=1/2 proved from the source proposal bound. This bound assumes unchanged exact proposal and signed translation decision; it does not cover arbitrary proposal or test errors."
+    },
+    {
+      "topic": "Actual ordinary reference tables and terminal fibre",
+      "assessment": "ReferenceTable uses the source referenceRows/referenceColumns at the actual paper capacity. referenceTableNonempty discharges equal reference totals using the actual physical capacity bound. referenceFibreMap is the inverse of the source free-scale referenceFibreEquiv, connecting ordinary unrestricted reference tables to the actual retained physical fibre. referenceCompletionLaw_variation preserves TV exactly through this bijection and transports the uniform law without normalization loss."
+    },
+    {
+      "topic": "Selected reference and empty unit branches",
+      "assessment": "selectedStepLaw and selectedCompletionLaw use exactly the existence predicate and Classical.choice reference indices used by selectedTransitionLaw. Missing large rows or columns select the exact unit transition and exact uniform retained fibre without invoking OracleFamily. empty_fibre_card_one obtains cardinality one from actual fibre-cardinality/weight equality and the source weight-one empty-block result. Zero margins, empty index types, and singleton state spaces remain permitted under the written nonemptiness/equal-total hypotheses."
+    },
+    {
+      "topic": "Adaptive transition and conditional terminal errors",
+      "assessment": "approximateJointLaw is the dependent joint of walkLaw Q and terminal law F. approximateJointLaw_variation uses an all-state transition TV bound and the approximate-walk-weighted dependentJoint bound. Error is T*delta+eta. Fresh conditional sampling is encoded by the bind-law composition; no reversibility or ideal stationary distribution is assumed for Q, and stationary-average oracle accuracy alone would not instantiate the uniform hypotheses."
+    },
+    {
+      "topic": "Independent restarted retries and fallback",
+      "assessment": "approximateOuterLaw is retryLaw of a fixed trial law started at the same supplied state. The source retryLaw uses product laws for fresh independent trials. retryLaw_variation charges R times trial TV before the same stateTrial success map. Fallback is typed as an actual feasible Table. This proves R*(T*delta+eta), without dividing by success probability or conditioning approximate output as though it were uniform."
+    },
+    {
+      "topic": "Actual ideal-scale oracle wrapper",
+      "assessment": "idealOracleOuterLaw independently accepts transitionOracle and terminalOracle. Equal ordinary totals provide actual physical state/table nonemptiness and the fallback supplies initialState. Uniform ordinary-reference errors zetaStep,zetaTerminal instantiate delta=gamma*zetaStep and eta=zetaTerminal. idealOracleOuterLaw_variation appends the previously proved exp(-R/S)+R*B*exp(-T/K) bound with K=80000*d^17,S=2*(1+p^2),B=(M+dL+U+3)^(2d). It retains all retry and minimum-mass factors."
+    },
+    {
+      "topic": "Sufficient budget split",
+      "assessment": "approximateOuterLaw_variation_of_budget combines the ideal-law error<=epsilon/2 with R*(T*delta+eta)<=epsilon/2. It is a sufficient-inequality result, not an executable ceiling/logarithm precision or walk scheduler. Natural T=0 or R=0 remain valid for the generic bounds."
+    },
+    {
+      "topic": "Pinned dense sampler premise and cost cross-check",
+      "assessment": "The separate dilation construction uses ambient d>=19 for nontrivial blocks, fine equal-total margins d^12*(R+2b),d^12*(P+2a), and dimensions a,b,(a-1)*(b-1)<=d. These meet the DensePrograms theorems canonicalDenseDraw_variation and canonicalDenseDraw_eq in DenseCanonicalSemantics.lean without requiring outer padding to satisfy the dense interface. the DensePrograms theorem normalizedDrawBits_polynomial in DenseNormalizeSemantics.lean gives 25*(d+ell+hFine+1)^62 from fine-row capacity and binary-length bounds; the DensePrograms theorem polynomial_canonicalDenseDraw in DenseCanonicalProgram.lean is a separate polynomial realizer cost. Exponent 62 is not a total compiled running-time degree. Final dilation geometry/codec/report/document authority belongs to the separate dilation review."
+    }
+  ],
+  "scope_limits": [
+    "Both new modules are noncomputable finite rational law constructions. This review does not establish a finite-bit operational sampler or machine-cost theorem.",
+    "OracleFamily requires normalized laws on the actual feasible ordinary reference Table fibre. Any executable failure/fallback must be included in that law and its accuracy guarantee.",
+    "A reusable or correlated source of randomness is not covered merely because its unconditional marginal law has the right accuracy. Operational realizers must provide the conditional fresh-law contract for every adaptive call.",
+    "The proposal/draw/test law identity does not charge executable neighbor enumeration, signed integer arithmetic, oracle calls, input/output conversion, tape scheduling, or initialization.",
+    "No approximate-chain stationary law, practical speed, complete exact-uniform outer sampler, general cell-constrained law, or weighted-table extension is inferred.",
+    "The two reviewed modules do not establish the separate dilation construction's equal-preimage/cardinality-volume proof, stronger physical-margin interface, codec realizer, bounded retry realizer, or full outer program composition. Those have separate proof and verification scopes.",
+    "No compiler, tests, simulation, or axiom-audit tools were invoked by this reviewer."
+  ],
+  "documentation_assessment": {
+    "findings": [],
+    "conclusion": "The reviewed approximate-oracle document faithfully separates law/error theorems, fresh conditional randomness assumptions, and uncompleted operational cost/oracle work.",
+    "checked_claims": [
+      "The document retains distinct transition delta and terminal eta contracts, with uniform all-state accuracy and T*delta+eta trial error.",
+      "The actual proposal/translation interface is identified with the original rational kernel; holding mass thins the oracle error by gamma, with gamma<=1/2.",
+      "Ordinary reference-table terminal laws are transported through an exact fibre equivalence that preserves TV.",
+      "Independent restarted R-fold trials are explicit, and error is charged before balance/padding rejection and fallback.",
+      "The document permits degenerate dimensions and explains that the missing-reference branch has one completion and uses no ordinary oracle.",
+      "The complete bound retains exp(-R/S)+R*B*exp(-T/K)+R*(T*gamma*zetaStep+zetaTerminal) with the actual K,S,B.",
+      "The document states that its budget theorem does not compute an executable schedule, and leaves oracle realization, bits, arithmetic, neighbor generation, and total runtime open.",
+      "The final verification paragraph attaches compilation/audit claims to public verification receipt paths and links the separate independent source review, preserves the local/Linux/Comparator boundary, and distinguishes this source review from author execution evidence.",
+      "The dilation-route link describes independently reviewed geometry and explicitly says the full geometric oracle and finite-bit accuracy/cost proof are not compiled by these two modules; that separate document is not part of this report's hash authority."
+    ]
+  },
+  "reviewed_at": "2026-10-09 12:32:49 UTC",
+  "reviewed_document_sha256": {
+    "docs/physical-approximate-oracle.md": "6e630bb80119b6bf61c0934a63827febf6785d3c2ec523e9080b0729e463df81"
+  },
+  "author_receipt_readback": {
+    "scope": "Read-only consistency inspection of separately supplied local receipts and their public verification receipt; not execution replication.",
+    "public_verification_receipt_sha256": {
+      "formal/results/approximate-oracle/verification.json": "bf1c4b472ee58fe8d80cea46bc7448f07daa808c18f2e28646f9d36538c5604e"
+    },
+    "receipt_sha256": {
+      ".local/approximate-oracle/verification.json": "fcc75db635ce2c69439497de6cd9a78e7684ca55d4663424c6cbac855d7faa56",
+      ".local/approximate-oracle/axiom-audit.json": "02b1a130cc5057afe146c1d82861534bd9ff112f9eb6477a779ecdf3661c5cef",
+      ".local/approximate-oracle/axiom-audit.log": "87521dc6dabf912b6e69df800736830a9d1ffe2bb5ac27b6dc3772f59f1e38dd",
+      ".local/approximate-oracle/PhysicalCompletionOracle-compile-2.json": "7bd6011245e0929908bfff4840418198896cdc650718581ec9faaa4068a63109",
+      ".local/approximate-oracle/PhysicalApproximateOracle-compile-2.json": "fbd79c81a0b3dfd136a0488ff94ece2444f8187b85d796fd7e2a6de9f7be247f"
+    },
+    "assessment": "Supplied compile receipts report returncode 0 and the exact frozen module hashes. The supplied axiom receipt reports returncode 0 and the same module hashes. Verification summary lists the same 37 declarations and only Classical.choice, Quot.sound, propext. formal/lean-toolchain names leanprover/lean4:v4.34.1. The document explicitly limits these author checks to local evidence and disclaims Linux extension and strict Comparator replay."
+  }
+}

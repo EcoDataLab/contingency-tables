@@ -14,3 +14,8 @@ Follow-up research and implementation use OpenAI Codex assistance.
 Classical dynamic programming, concentration inequalities, and cycle heat-bath
 moves are not claimed as newly invented by this project.
 
+The completion-oracle dilation construction uses the classical adjacent-cycle
+lattice geometry of Dyer, Kannan, and Mount, Sampling Contingency Tables
+(1997), Section 4. The public derivation and verification records distinguish
+that geometry from this project's finite-lattice codec and application to
+the smaller physical-chain scales.

@@ -1,0 +1,63 @@
+'Math115.PhysicalCompletionOracle.mapLaw_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.completionStep_variation_thinned' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalCompletionOracle.equivLaw_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.proposalRat_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.proposalAllowance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.proposalAllowance_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalCompletionOracle.proposalAllowance_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.degree_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.proposalWeight_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.proposalWeight_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.proposalWeight_total_le_allowance' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalCompletionOracle.proposalWeight_total_le_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalCompletionOracle.physicalProposalLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.ReferenceTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.referenceTableNonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.referenceStepLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.referenceExactStep_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.referenceStep_variation_local' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalCompletionOracle.referenceStep_variation_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalCompletionOracle.referenceFibreMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.referenceCompletionLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.referenceCompletionLaw_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalCompletionOracle.OracleFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.selectedStepLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.selectedCompletionLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.selectedStepLaw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalCompletionOracle.selectedCompletionLaw_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalCompletionOracle.empty_fibre_card_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalApproximateOracle.approximateJointLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalApproximateOracle.approximateJointLaw_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalApproximateOracle.approximateOuterLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalApproximateOracle.approximateOuterLaw_variation_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalApproximateOracle.approximateOuterLaw_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalApproximateOracle.idealOracleOuterLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalApproximateOracle.idealOracleOuterLaw_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalApproximateOracle.approximateOuterLaw_variation_of_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

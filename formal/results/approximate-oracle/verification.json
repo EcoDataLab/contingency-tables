@@ -1,0 +1,493 @@
+{
+  "status": "passed",
+  "completed_at": "2026-10-09T12:31:17.614404+00:00",
+  "base_commit": "7bf2a4c8a534e66641451db697762dc8ff29a44f",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "scope": "Only two new modules: generic normalized approximate transition/terminal completion TV, independent restarted retry TV error, actual dyadic proposal/draw/test identity, proposal-thinned local/global completion error, exact TV transport to actual Fibre, exact unit branch, and actual ideal-scale oracle-family specialization.",
+  "source_sha256": {
+    "formal/Math115/PhysicalCompletionOracle.lean": "44d6b7d22d92d79c6ab993ac31c31c7b448894e0a9118b21d155f25d83c4ded3",
+    "formal/Math115/PhysicalApproximateOracle.lean": "aac9172e59eade9e4e841c035d299710b793d95ff637d4cf848e98c3ffc331ee",
+    "formal/Math115/PhysicalFiniteWalk.lean": "b9189d0b75ca37f59d8ced4cfbdc2cf51c53521c368e94352bd33245618ff0ad",
+    "formal/Math115/PhysicalRationalKernel.lean": "8d9ef088f46cbfb5c44b56dea1cdf54d50829d348a4013b5903a7ff6e4d01c00",
+    "formal/Math115/PhysicalStationaryLaw.lean": "ce1b601cbc1d7cac6a9823c08333856c9b4e7e95b62ce3a36cbb0dc4dc72375f",
+    "formal/Math115/PhysicalStationarySuccess.lean": "d6743fe2c6eff224572c4f2d114af00e3895951389109869bed7f8ce6616c2b3",
+    "formal/Math115/ReducedAllSmallChain.lean": "0ba3ec59f6fa2f7e44939d28465ad190fcf82b4e1dae8f436ab959369964db58",
+    "formal/Math115/ReducedSmallChain.lean": "8fc9d8478ac28a297ace0079e93cf64c0d36cceb52b2f2d5470f4d30d2096680",
+    "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+    "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+  },
+  "compilations": [
+    {
+      "command": [
+        "<workspace>/.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-o",
+        ".lake/build/lib/lean/Math115/PhysicalCompletionOracle.olean",
+        "-i",
+        ".lake/build/lib/lean/Math115/PhysicalCompletionOracle.ilean",
+        "Math115/PhysicalCompletionOracle.lean"
+      ],
+      "cwd": "<workspace>/formal",
+      "environment": {
+        "ELAN_HOME": "<workspace>/.tools/elan"
+      },
+      "returncode": 0,
+      "elapsed_seconds": 80.92210533306934,
+      "source_sha256": "44d6b7d22d92d79c6ab993ac31c31c7b448894e0a9118b21d155f25d83c4ded3",
+      "module": "PhysicalCompletionOracle",
+      "log": "formal/results/approximate-oracle/PhysicalCompletionOracle-compile.log",
+      "log_sha256": "25643454f937840a3a2f568f51baab9220a993dfa6426ac414dc3808cdd0af67"
+    },
+    {
+      "command": [
+        "<workspace>/.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-o",
+        ".lake/build/lib/lean/Math115/PhysicalApproximateOracle.olean",
+        "-i",
+        ".lake/build/lib/lean/Math115/PhysicalApproximateOracle.ilean",
+        "Math115/PhysicalApproximateOracle.lean"
+      ],
+      "cwd": "<workspace>/formal",
+      "environment": {
+        "ELAN_HOME": "<workspace>/.tools/elan"
+      },
+      "returncode": 0,
+      "elapsed_seconds": 55.959399375133216,
+      "source_sha256": "aac9172e59eade9e4e841c035d299710b793d95ff637d4cf848e98c3ffc331ee",
+      "module": "PhysicalApproximateOracle",
+      "log": "formal/results/approximate-oracle/PhysicalApproximateOracle-compile.log",
+      "log_sha256": "117c6ebee3ab1b4e3328396e577d54811fd7ec572a9b30ee28eb0d1a28284fe8"
+    }
+  ],
+  "generic_dependency_restores": [
+    {
+      "command": [
+        "<workspace>/.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "--root=<workspace>/.upstream/openai-math/lean",
+        "-o",
+        ".lake/build/lib/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionProposalLaw.olean",
+        "-i",
+        ".lake/build/lib/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionProposalLaw.ilean",
+        "<workspace>/.upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionProposalLaw.lean"
+      ],
+      "cwd": "<workspace>/formal",
+      "environment": {
+        "ELAN_HOME": "<workspace>/.tools/elan"
+      },
+      "returncode": 0,
+      "elapsed_seconds": 4.504235917003825,
+      "source_sha256": "9814a8fa115bfa9a3a77b870419f825c566a797e330becdf8b9503166c1ddc04",
+      "module": "CompletionProposalLaw",
+      "log": "formal/results/approximate-oracle/CompletionProposalLaw-restore.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "<workspace>/.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "--root=<workspace>/.upstream/openai-math/lean",
+        "-o",
+        ".lake/build/lib/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionStepApproximation.olean",
+        "-i",
+        ".lake/build/lib/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionStepApproximation.ilean",
+        "<workspace>/.upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionStepApproximation.lean"
+      ],
+      "cwd": "<workspace>/formal",
+      "environment": {
+        "ELAN_HOME": "<workspace>/.tools/elan"
+      },
+      "returncode": 0,
+      "elapsed_seconds": 11.556190999923274,
+      "source_sha256": "d7a2d9966a6ac00a0dd0d2e41bc3a22674fc420b528b996725128302d95ffa41",
+      "module": "CompletionStepApproximation",
+      "log": "formal/results/approximate-oracle/CompletionStepApproximation-restore.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "<workspace>/.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "--root=<workspace>/.upstream/openai-math/lean",
+        "-o",
+        ".lake/build/lib/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionKernelIdentification.olean",
+        "-i",
+        ".lake/build/lib/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionKernelIdentification.ilean",
+        "<workspace>/.upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/CompletionKernelIdentification.lean"
+      ],
+      "cwd": "<workspace>/formal",
+      "environment": {
+        "ELAN_HOME": "<workspace>/.tools/elan"
+      },
+      "returncode": 0,
+      "elapsed_seconds": 4.008472082903609,
+      "source_sha256": "9b312104f67b4aeb671f4aca1fccc93da5dbb2b1e6d374597beaefc4dcb8a874",
+      "module": "CompletionKernelIdentification",
+      "log": "formal/results/approximate-oracle/CompletionKernelIdentification-restore.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "isolated_axiom_audit": {
+    "command": [
+      "<workspace>/.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "<workspace>/.local/approximate-oracle/AxiomAudit.lean"
+    ],
+    "cwd": "<workspace>/formal",
+    "environment": {
+      "ELAN_HOME": "<workspace>/.tools/elan"
+    },
+    "returncode": 0,
+    "elapsed_seconds": 78.77759149996564,
+    "audit_source_sha256": "2bbaaf1cd1f0d83cd0154a31ca4bdb5eed69cbed9df051843784205bf9b78fe3",
+    "module_sha256": {
+      "PhysicalCompletionOracle": "44d6b7d22d92d79c6ab993ac31c31c7b448894e0a9118b21d155f25d83c4ded3",
+      "PhysicalApproximateOracle": "aac9172e59eade9e4e841c035d299710b793d95ff637d4cf848e98c3ffc331ee"
+    },
+    "audit_source": "formal/results/approximate-oracle/AxiomAudit.lean",
+    "log": "formal/results/approximate-oracle/axiom-audit.log",
+    "reproduction_command": [
+      "../.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "results/approximate-oracle/AxiomAudit.lean"
+    ],
+    "audited_declarations": [
+      {
+        "name": "Math115.PhysicalCompletionOracle.mapLaw_constant",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.completionStep_variation_thinned",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.equivLaw_uniform",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.proposalRat_nonnegative",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.proposalAllowance",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.proposalAllowance_nonnegative",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.proposalAllowance_le_half",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.degree",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.degree_le",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.proposalWeight_nonnegative",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.proposalWeight_total",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.proposalWeight_total_le_allowance",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.proposalWeight_total_le_one",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.physicalProposalLaw",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.ReferenceTable",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.referenceTableNonempty",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.referenceStepLaw",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.referenceExactStep_eq",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.referenceStep_variation_local",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.referenceStep_variation_uniform",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.referenceFibreMap",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.referenceCompletionLaw",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.referenceCompletionLaw_variation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.OracleFamily",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.selectedStepLaw",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.selectedCompletionLaw",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.selectedStepLaw_variation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.selectedCompletionLaw_variation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalCompletionOracle.empty_fibre_card_one",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalApproximateOracle.approximateJointLaw",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalApproximateOracle.approximateJointLaw_variation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalApproximateOracle.approximateOuterLaw",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalApproximateOracle.approximateOuterLaw_variation_le",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalApproximateOracle.approximateOuterLaw_variation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalApproximateOracle.idealOracleOuterLaw",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalApproximateOracle.idealOracleOuterLaw_variation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PhysicalApproximateOracle.approximateOuterLaw_variation_of_budget",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "audited_declarations": 37,
+  "file_sha256": {
+    "formal/results/approximate-oracle/AxiomAudit.lean": "2bbaaf1cd1f0d83cd0154a31ca4bdb5eed69cbed9df051843784205bf9b78fe3",
+    "formal/results/approximate-oracle/CompletionKernelIdentification-restore.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/approximate-oracle/CompletionProposalLaw-restore.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/approximate-oracle/CompletionStepApproximation-restore.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/approximate-oracle/PhysicalApproximateOracle-compile.log": "117c6ebee3ab1b4e3328396e577d54811fd7ec572a9b30ee28eb0d1a28284fe8",
+    "formal/results/approximate-oracle/PhysicalCompletionOracle-compile.log": "25643454f937840a3a2f568f51baab9220a993dfa6426ac414dc3808cdd0af67",
+    "formal/results/approximate-oracle/axiom-audit.log": "87521dc6dabf912b6e69df800736830a9d1ffe2bb5ac27b6dc3772f59f1e38dd"
+  },
+  "limits": [
+    "Existing compiled dependencies, official Mathlib cache artifacts, and toolchain remain trusted.",
+    "Three missing unchanged generic dependency objects were restored serially. This was not a full dependency rebuild.",
+    "Normalized approximate completion laws, literal dyadic proposal and signed translation test, exact terminal equivalence, and independently restarted retries; no efficient oracle or finite-bit cost theorem.",
+    "Uniform accuracy on all actual states, fresh conditional draws, and failure handling are hypotheses on oracle implementations.",
+    "Integrated aggregate and both full selected audits are recorded separately in formal/results/verification.json."
+  ]
+}

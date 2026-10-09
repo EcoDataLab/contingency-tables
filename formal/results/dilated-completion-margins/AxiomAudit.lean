@@ -1,0 +1,23 @@
+import Math115.DilatedCompletionMargins
+
+#print axioms Math115.DilatedCompletionMargins.rowLargeCount_rectangle
+#print axioms Math115.DilatedCompletionMargins.columnLargeCount_rectangle
+#print axioms Math115.DilatedCompletionMargins.total_large_cell_count
+#print axioms Math115.DilatedCompletionMargins.physical_residual_row_lower
+#print axioms Math115.DilatedCompletionMargins.physical_residual_column_lower
+#print axioms Math115.DilatedCompletionMargins.reference_row_lower
+#print axioms Math115.DilatedCompletionMargins.reference_column_lower
+#print axioms Math115.DilatedCompletionMargins.reference_row_total_eq_residual
+#print axioms Math115.DilatedCompletionMargins.reference_total_upper
+#print axioms Math115.DilatedCompletionMargins.fineRows
+#print axioms Math115.DilatedCompletionMargins.fineColumns
+#print axioms Math115.DilatedCompletionMargins.FineReferenceTable
+#print axioms Math115.DilatedCompletionMargins.fine_row_total
+#print axioms Math115.DilatedCompletionMargins.fine_column_total
+#print axioms Math115.DilatedCompletionMargins.fine_totals
+#print axioms Math115.DilatedCompletionMargins.fineReferenceTableNonempty
+#print axioms Math115.DilatedCompletionMargins.fine_total_upper
+#print axioms Math115.DilatedCompletionMargins.fine_row_dense_minimum
+#print axioms Math115.DilatedCompletionMargins.fine_column_dense_minimum
+#print axioms Math115.DilatedCompletionMargins.ideal_reference_row_geometric_minimum
+#print axioms Math115.DilatedCompletionMargins.ideal_reference_column_geometric_minimum

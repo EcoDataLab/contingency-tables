@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T12:46:53.229250+00:00",
+  "base_commit": "7bf2a4c8a534e66641451db697762dc8ff29a44f",
+  "previous_proof_checkpoint": "e5d5dd3e81b5eac0e3f42841530286b56bcb96e5",
+  "scope": "Four new compiled modules: actual/approximate completion laws, exact integer codec core, and actual dilated completion margins. Reviewed full geometry is separate from Lean proof.",
+  "isolated_receipts": {
+    "formal/results/approximate-oracle/verification.json": "bf1c4b472ee58fe8d80cea46bc7448f07daa808c18f2e28646f9d36538c5604e",
+    "formal/results/lattice-completion/verification.json": "727e55c0caa52546df4e0dc8c45037a3b7b468dba55ccf35505eb9c392fe5a7f",
+    "formal/results/dilated-completion-margins/verification.json": "abc8291c861a69c7259c275b9d0563f6253587928eb19d437f0dd4473acaac1a"
+  },
+  "independent_reviews": {
+    "formal/results/approximate-oracle-review.json": "ecbaad3b58113872265eaa4844a13da8666912c7e0a4d87d82ffdda90b2816b5",
+    "formal/results/lattice-completion-review.json": "d085d1b05fd8bf1fe5bb96f0546ef46c023d10e4f2047c6f8f7d66ad5b474946",
+    "reports/completion-oracle-dilation-review.json": "049dc5fba92b85f2f915515f5f461679293c688616a2fedf4eb698dfb744b299"
+  },
+  "new_selected_declarations": 102,
+  "limits": [
+    "The full finite accepted-table-fibre bijection and volume/count comparison remain unformalized.",
+    "No complete dilated oracle realizer, outer finite-bit program, or machine-cost theorem is established.",
+    "Integer core and Python codec are independently checked; implementation equivalence between them remains unproved."
+  ]
+}

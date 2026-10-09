@@ -1,0 +1,397 @@
+{
+  "status": "passed",
+  "completed_at_utc": "2026-10-09T12:36:47.321059+00:00",
+  "base_commit": "7bf2a4c8a534e66641451db697762dc8ff29a44f",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": {
+    "formal/Math115/LatticeCompletion.lean": "0960e8bf3f40189bae52cf5a707c3583a5264d40f3cf520efad1f5670c2fe13f"
+  },
+  "compilation": {
+    "command": [
+      "../.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "-o",
+      ".lake/build/lib/lean/Math115/LatticeCompletion.olean",
+      "-i",
+      ".lake/build/lib/lean/Math115/LatticeCompletion.ilean",
+      "Math115/LatticeCompletion.lean"
+    ],
+    "cwd": "formal",
+    "environment": {
+      "ELAN_HOME": "<repo>/.tools/elan"
+    },
+    "source_sha256": "0960e8bf3f40189bae52cf5a707c3583a5264d40f3cf520efad1f5670c2fe13f",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-09T12:34:42.890462+00:00",
+    "finished_at_utc": "2026-10-09T12:35:02.964043+00:00",
+    "elapsed_seconds": 20.07320583285764,
+    "log_path": "formal/results/lattice-completion/LatticeCompletion-compile.log",
+    "source_unchanged": true,
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "isolated_axiom_audit": {
+    "command": [
+      "../.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "../.local/lattice-completion/audit.lean"
+    ],
+    "cwd": "formal",
+    "environment": {
+      "ELAN_HOME": "<repo>/.tools/elan"
+    },
+    "source_sha256": "0960e8bf3f40189bae52cf5a707c3583a5264d40f3cf520efad1f5670c2fe13f",
+    "exit_code": 0,
+    "started_at_utc": "2026-10-09T12:36:25.664017+00:00",
+    "finished_at_utc": "2026-10-09T12:36:47.321059+00:00",
+    "elapsed_seconds": 21.660777082899585,
+    "log_path": "formal/results/lattice-completion/axiom-audit.log",
+    "source_unchanged": true,
+    "declaration_count": 44,
+    "declarations": [
+      {
+        "name": "Math115.LatticeCompletion.Array",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletion.difference",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletion.prefixSum",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.ZeroAxes",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletion.ZeroBoundary",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletion.BoundedDigits",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletion.difference_row_sum",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.difference_column_sum",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.difference_row_sum_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.difference_column_sum_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.prefix_zero_axes",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.prefix_difference",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.difference_prefix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.difference_bounds",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.encode",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletion.decode",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.residue",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.prefix_encode",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.scaled_digit_ediv",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.scaled_digit_emod",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.decode_encode",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.residue_encode",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.residue_zero_axes",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.residue_bounded",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.encode_decode",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.encode_entry_at_least_two",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.encode_row_margin",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.encode_column_margin",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.residue_zero_boundary_of_divisible_margins",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.decode_row_margin",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.decode_column_margin",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.accepted_fine_entry_at_least_two",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.OffsetDigits",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletion.codecEquiv",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.FiniteDigits",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletion.finiteOffsets",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.finiteOffsets_zero_boundary",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.finiteOffsets_bounded",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.finite_encode_decode",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.finiteOffsets_apply",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.finiteOffsets_injective",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.finiteEncode_injective",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.finiteDigits_card",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletion.encodedFamily_card",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "log_sha256": "363d760cd8892f085a871d5a9676a03b1f8eb0ef5ac4542da3b6c6e0dc366acc",
+    "audit_source": "formal/results/lattice-completion/AxiomAudit.lean",
+    "audit_source_sha256": "09c817b5c8aeaaa6852fa28f9a51064e88ae2171aa1f6ef3cfd07afbcd3e8a22",
+    "reproduction_command": [
+      "../.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "results/lattice-completion/AxiomAudit.lean"
+    ]
+  },
+  "audited_declarations": 44,
+  "scope": "Signed integer prefix/difference inverses, exact quotient/remainder codec, margin identities under explicit boundary/divisibility hypotheses, positivity, and constructed finite-digit image cardinality.",
+  "limits": [
+    "The infinite-array equivalence is not yet a finite accepted-table-fiber equivalence.",
+    "encodedFamily_card counts only the image of the constructed finite offset family.",
+    "No universal volume/count comparison, acceptance probability, finite-bit realizer, machine cost, or Python-to-Lean implementation equivalence is proved.",
+    "Existing Mathlib artifacts and Lean bootstrap binaries are trusted; this selected compilation does not rebuild the dependency closure."
+  ],
+  "file_sha256": {
+    "formal/results/lattice-completion/AxiomAudit.lean": "09c817b5c8aeaaa6852fa28f9a51064e88ae2171aa1f6ef3cfd07afbcd3e8a22",
+    "formal/results/lattice-completion/LatticeCompletion-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/lattice-completion/axiom-audit.log": "363d760cd8892f085a871d5a9676a03b1f8eb0ef5ac4542da3b6c6e0dc366acc"
+  }
+}

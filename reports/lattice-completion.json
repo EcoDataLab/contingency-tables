@@ -1,0 +1,1045 @@
+{
+  "schema_version": 1,
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "scope": "Ordinary nonnegative equal-total fixed-margin tables; semantically unrestricted cell bounds; nonempty row/column index sets.",
+  "codec": {
+    "fine_margins": "k*(R_i+2b), k*(P_j+2a)",
+    "fine_total": "k*(H+2ab)",
+    "decode": "floor each full northwest prefix divided by k, take second differences, subtract 2 per cell; accept iff all cells are nonnegative",
+    "encode": "k*(X+2J)+secondDiff(u), with interior u in {0,...,k-1} and zero prefix boundary",
+    "preimages_each_original": "k^((a-1)*(b-1))",
+    "cell_error": "absolute error <2 for k>1, and zero for k=1"
+  },
+  "dense_scale_plan": {
+    "k": "d^12",
+    "L": "3d",
+    "dimension_allowance": "d>=10+(a+1)*(b+1); ambient d may be larger",
+    "residual_requirements": "R_i>=3bd and P_j>=3ad",
+    "dilation_reason": "Retain old DenseScaleConditions minimum-margin allowance after dilation; no large-scale completion draw is implemented."
+  },
+  "conditional_geometric_bound": {
+    "alpha": "((L+2+2/k)/(L-2))^((a-1)*(b-1))",
+    "count_comparison": "N_fine <= alpha*k^((a-1)*(b-1))*N_original",
+    "arithmetic_condition": "L=3d, d>=10+(a+1)*(b+1), k>=2d imply alpha<4",
+    "uniform_fine_acceptance": ">=1/alpha>1/4",
+    "universal_proof_status": "Reviewed mathematical volume/count argument; not a Python or Lean proof. Finite enumeration here is test evidence only.",
+    "sampling_assumptions": "Acceptance interpretation requires an exact uniform fine-table draw. No oracle, iid retry adapter, or machine-cost guarantee is supplied."
+  },
+  "finite_fiber_replay": [
+    {
+      "row_sums": [
+        0,
+        0
+      ],
+      "column_sums": [
+        0,
+        0
+      ],
+      "k": 1,
+      "dimension": 1,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        4,
+        4
+      ],
+      "fine_column_sums": [
+        4,
+        4
+      ],
+      "fine_total": 8,
+      "status": "complete",
+      "original_count": 1,
+      "fine_count": 5,
+      "accepted_count": 1,
+      "rejected_count": 4,
+      "acceptance": "1/5",
+      "preimages_per_original": 1,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "preimages": 1
+        }
+      ],
+      "candidate_work": {
+        "original": 1,
+        "fine": 25
+      },
+      "roundtrips_checked": 1,
+      "signed_rejected_margins_checked": 4,
+      "maximum_absolute_rounding_error": "0"
+    },
+    {
+      "row_sums": [
+        0,
+        0
+      ],
+      "column_sums": [
+        0,
+        0
+      ],
+      "k": 2,
+      "dimension": 1,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        8,
+        8
+      ],
+      "fine_column_sums": [
+        8,
+        8
+      ],
+      "fine_total": 16,
+      "status": "complete",
+      "original_count": 1,
+      "fine_count": 9,
+      "accepted_count": 2,
+      "rejected_count": 7,
+      "acceptance": "2/9",
+      "preimages_per_original": 2,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "preimages": 2
+        }
+      ],
+      "candidate_work": {
+        "original": 1,
+        "fine": 81
+      },
+      "roundtrips_checked": 2,
+      "signed_rejected_margins_checked": 7,
+      "maximum_absolute_rounding_error": "1/2"
+    },
+    {
+      "row_sums": [
+        0,
+        0
+      ],
+      "column_sums": [
+        0,
+        0
+      ],
+      "k": 3,
+      "dimension": 1,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        12,
+        12
+      ],
+      "fine_column_sums": [
+        12,
+        12
+      ],
+      "fine_total": 24,
+      "status": "complete",
+      "original_count": 1,
+      "fine_count": 13,
+      "accepted_count": 3,
+      "rejected_count": 10,
+      "acceptance": "3/13",
+      "preimages_per_original": 3,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "preimages": 3
+        }
+      ],
+      "candidate_work": {
+        "original": 1,
+        "fine": 169
+      },
+      "roundtrips_checked": 3,
+      "signed_rejected_margins_checked": 10,
+      "maximum_absolute_rounding_error": "2/3"
+    },
+    {
+      "row_sums": [
+        1,
+        1
+      ],
+      "column_sums": [
+        1,
+        1
+      ],
+      "k": 1,
+      "dimension": 1,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        5,
+        5
+      ],
+      "fine_column_sums": [
+        5,
+        5
+      ],
+      "fine_total": 10,
+      "status": "complete",
+      "original_count": 2,
+      "fine_count": 6,
+      "accepted_count": 2,
+      "rejected_count": 4,
+      "acceptance": "1/3",
+      "preimages_per_original": 1,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "preimages": 1
+        },
+        {
+          "table": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "preimages": 1
+        }
+      ],
+      "candidate_work": {
+        "original": 4,
+        "fine": 36
+      },
+      "roundtrips_checked": 2,
+      "signed_rejected_margins_checked": 4,
+      "maximum_absolute_rounding_error": "0"
+    },
+    {
+      "row_sums": [
+        1,
+        1
+      ],
+      "column_sums": [
+        1,
+        1
+      ],
+      "k": 2,
+      "dimension": 1,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        10,
+        10
+      ],
+      "fine_column_sums": [
+        10,
+        10
+      ],
+      "fine_total": 20,
+      "status": "complete",
+      "original_count": 2,
+      "fine_count": 11,
+      "accepted_count": 4,
+      "rejected_count": 7,
+      "acceptance": "4/11",
+      "preimages_per_original": 2,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "preimages": 2
+        },
+        {
+          "table": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "preimages": 2
+        }
+      ],
+      "candidate_work": {
+        "original": 4,
+        "fine": 121
+      },
+      "roundtrips_checked": 4,
+      "signed_rejected_margins_checked": 7,
+      "maximum_absolute_rounding_error": "1/2"
+    },
+    {
+      "row_sums": [
+        1,
+        1
+      ],
+      "column_sums": [
+        1,
+        1
+      ],
+      "k": 3,
+      "dimension": 1,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        15,
+        15
+      ],
+      "fine_column_sums": [
+        15,
+        15
+      ],
+      "fine_total": 30,
+      "status": "complete",
+      "original_count": 2,
+      "fine_count": 16,
+      "accepted_count": 6,
+      "rejected_count": 10,
+      "acceptance": "3/8",
+      "preimages_per_original": 3,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "preimages": 3
+        },
+        {
+          "table": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "preimages": 3
+        }
+      ],
+      "candidate_work": {
+        "original": 4,
+        "fine": 256
+      },
+      "roundtrips_checked": 6,
+      "signed_rejected_margins_checked": 10,
+      "maximum_absolute_rounding_error": "2/3"
+    },
+    {
+      "row_sums": [
+        0,
+        2
+      ],
+      "column_sums": [
+        1,
+        1
+      ],
+      "k": 1,
+      "dimension": 1,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        4,
+        6
+      ],
+      "fine_column_sums": [
+        5,
+        5
+      ],
+      "fine_total": 10,
+      "status": "complete",
+      "original_count": 1,
+      "fine_count": 5,
+      "accepted_count": 1,
+      "rejected_count": 4,
+      "acceptance": "1/5",
+      "preimages_per_original": 1,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "preimages": 1
+        }
+      ],
+      "candidate_work": {
+        "original": 4,
+        "fine": 36
+      },
+      "roundtrips_checked": 1,
+      "signed_rejected_margins_checked": 4,
+      "maximum_absolute_rounding_error": "0"
+    },
+    {
+      "row_sums": [
+        0,
+        2
+      ],
+      "column_sums": [
+        1,
+        1
+      ],
+      "k": 2,
+      "dimension": 1,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        8,
+        12
+      ],
+      "fine_column_sums": [
+        10,
+        10
+      ],
+      "fine_total": 20,
+      "status": "complete",
+      "original_count": 1,
+      "fine_count": 9,
+      "accepted_count": 2,
+      "rejected_count": 7,
+      "acceptance": "2/9",
+      "preimages_per_original": 2,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "preimages": 2
+        }
+      ],
+      "candidate_work": {
+        "original": 4,
+        "fine": 121
+      },
+      "roundtrips_checked": 2,
+      "signed_rejected_margins_checked": 7,
+      "maximum_absolute_rounding_error": "1/2"
+    },
+    {
+      "row_sums": [
+        0,
+        2
+      ],
+      "column_sums": [
+        1,
+        1
+      ],
+      "k": 3,
+      "dimension": 1,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        12,
+        18
+      ],
+      "fine_column_sums": [
+        15,
+        15
+      ],
+      "fine_total": 30,
+      "status": "complete",
+      "original_count": 1,
+      "fine_count": 13,
+      "accepted_count": 3,
+      "rejected_count": 10,
+      "acceptance": "3/13",
+      "preimages_per_original": 3,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "preimages": 3
+        }
+      ],
+      "candidate_work": {
+        "original": 4,
+        "fine": 256
+      },
+      "roundtrips_checked": 3,
+      "signed_rejected_margins_checked": 10,
+      "maximum_absolute_rounding_error": "2/3"
+    },
+    {
+      "row_sums": [
+        1,
+        2
+      ],
+      "column_sums": [
+        1,
+        1,
+        1
+      ],
+      "k": 1,
+      "dimension": 2,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        7,
+        8
+      ],
+      "fine_column_sums": [
+        5,
+        5,
+        5
+      ],
+      "fine_total": 15,
+      "status": "complete",
+      "original_count": 3,
+      "fine_count": 27,
+      "accepted_count": 3,
+      "rejected_count": 24,
+      "acceptance": "1/9",
+      "preimages_per_original": 1,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "preimages": 1
+        },
+        {
+          "table": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "preimages": 1
+        },
+        {
+          "table": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "preimages": 1
+        }
+      ],
+      "candidate_work": {
+        "original": 8,
+        "fine": 216
+      },
+      "roundtrips_checked": 3,
+      "signed_rejected_margins_checked": 24,
+      "maximum_absolute_rounding_error": "0"
+    },
+    {
+      "row_sums": [
+        1,
+        2
+      ],
+      "column_sums": [
+        1,
+        1,
+        1
+      ],
+      "k": 2,
+      "dimension": 2,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        14,
+        16
+      ],
+      "fine_column_sums": [
+        10,
+        10,
+        10
+      ],
+      "fine_total": 30,
+      "status": "complete",
+      "original_count": 3,
+      "fine_count": 90,
+      "accepted_count": 12,
+      "rejected_count": 78,
+      "acceptance": "2/15",
+      "preimages_per_original": 4,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          "preimages": 4
+        },
+        {
+          "table": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          "preimages": 4
+        },
+        {
+          "table": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "preimages": 4
+        }
+      ],
+      "candidate_work": {
+        "original": 8,
+        "fine": 1331
+      },
+      "roundtrips_checked": 12,
+      "signed_rejected_margins_checked": 78,
+      "maximum_absolute_rounding_error": "1/2"
+    },
+    {
+      "row_sums": [
+        0,
+        1
+      ],
+      "column_sums": [
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "dimension": 2,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        6,
+        7
+      ],
+      "fine_column_sums": [
+        4,
+        5,
+        4
+      ],
+      "fine_total": 13,
+      "status": "complete",
+      "original_count": 1,
+      "fine_count": 21,
+      "accepted_count": 1,
+      "rejected_count": 20,
+      "acceptance": "1/21",
+      "preimages_per_original": 1,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "preimages": 1
+        }
+      ],
+      "candidate_work": {
+        "original": 2,
+        "fine": 150
+      },
+      "roundtrips_checked": 1,
+      "signed_rejected_margins_checked": 20,
+      "maximum_absolute_rounding_error": "0"
+    },
+    {
+      "row_sums": [
+        0,
+        1
+      ],
+      "column_sums": [
+        0,
+        1,
+        0
+      ],
+      "k": 2,
+      "dimension": 2,
+      "max_candidates_per_fiber": 10000,
+      "fine_row_sums": [
+        12,
+        14
+      ],
+      "fine_column_sums": [
+        8,
+        10,
+        8
+      ],
+      "fine_total": 26,
+      "status": "complete",
+      "original_count": 1,
+      "fine_count": 68,
+      "accepted_count": 4,
+      "rejected_count": 64,
+      "acceptance": "1/17",
+      "preimages_per_original": 4,
+      "decoded_output_groups": [
+        {
+          "table": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ]
+          ],
+          "preimages": 4
+        }
+      ],
+      "candidate_work": {
+        "original": 2,
+        "fine": 891
+      },
+      "roundtrips_checked": 4,
+      "signed_rejected_margins_checked": 64,
+      "maximum_absolute_rounding_error": "1/2"
+    },
+    {
+      "row_sums": [
+        1,
+        2
+      ],
+      "column_sums": [
+        1,
+        1,
+        1
+      ],
+      "k": 2,
+      "dimension": 2,
+      "max_candidates_per_fiber": 2,
+      "fine_row_sums": [
+        14,
+        16
+      ],
+      "fine_column_sums": [
+        10,
+        10,
+        10
+      ],
+      "fine_total": 30,
+      "status": "budget_exceeded",
+      "reason": "Cartesian candidate allowance exceeded before enumeration",
+      "count_result": null,
+      "acceptance_result": null
+    }
+  ],
+  "actual_scale_roundtrips": [
+    {
+      "shape": [
+        1,
+        1
+      ],
+      "dimension": 0,
+      "ambient_d_bit_length": 4,
+      "uses_minimal_shape_d": true,
+      "L_bit_length": 6,
+      "k_bit_length": 46,
+      "original_cell_max_bit_length": 6,
+      "fine_cell_max_bit_length": 52,
+      "fine_total_bit_length": 52,
+      "alpha_numerator_bit_length": 1,
+      "alpha_denominator_bit_length": 1,
+      "exact_alpha_below_four": true,
+      "roundtrip": "passed",
+      "fiber_enumeration": "not attempted",
+      "timing_or_end_to_end_runtime_claim": null
+    },
+    {
+      "shape": [
+        1,
+        1
+      ],
+      "dimension": 0,
+      "ambient_d_bit_length": 665,
+      "uses_minimal_shape_d": false,
+      "L_bit_length": 666,
+      "k_bit_length": 7973,
+      "original_cell_max_bit_length": 666,
+      "fine_cell_max_bit_length": 8639,
+      "fine_total_bit_length": 8639,
+      "alpha_numerator_bit_length": 1,
+      "alpha_denominator_bit_length": 1,
+      "exact_alpha_below_four": true,
+      "roundtrip": "passed",
+      "fiber_enumeration": "not attempted",
+      "timing_or_end_to_end_runtime_claim": null
+    },
+    {
+      "shape": [
+        1,
+        5
+      ],
+      "dimension": 0,
+      "ambient_d_bit_length": 5,
+      "uses_minimal_shape_d": true,
+      "L_bit_length": 7,
+      "k_bit_length": 54,
+      "original_cell_max_bit_length": 7,
+      "fine_cell_max_bit_length": 60,
+      "fine_total_bit_length": 62,
+      "alpha_numerator_bit_length": 1,
+      "alpha_denominator_bit_length": 1,
+      "exact_alpha_below_four": true,
+      "roundtrip": "passed",
+      "fiber_enumeration": "not attempted",
+      "timing_or_end_to_end_runtime_claim": null
+    },
+    {
+      "shape": [
+        1,
+        5
+      ],
+      "dimension": 0,
+      "ambient_d_bit_length": 665,
+      "uses_minimal_shape_d": false,
+      "L_bit_length": 666,
+      "k_bit_length": 7973,
+      "original_cell_max_bit_length": 666,
+      "fine_cell_max_bit_length": 8639,
+      "fine_total_bit_length": 8641,
+      "alpha_numerator_bit_length": 1,
+      "alpha_denominator_bit_length": 1,
+      "exact_alpha_below_four": true,
+      "roundtrip": "passed",
+      "fiber_enumeration": "not attempted",
+      "timing_or_end_to_end_runtime_claim": null
+    },
+    {
+      "shape": [
+        2,
+        2
+      ],
+      "dimension": 1,
+      "ambient_d_bit_length": 5,
+      "uses_minimal_shape_d": true,
+      "L_bit_length": 6,
+      "k_bit_length": 51,
+      "original_cell_max_bit_length": 6,
+      "fine_cell_max_bit_length": 57,
+      "fine_total_bit_length": 59,
+      "alpha_numerator_bit_length": 57,
+      "alpha_denominator_bit_length": 57,
+      "exact_alpha_below_four": true,
+      "roundtrip": "passed",
+      "fiber_enumeration": "not attempted",
+      "timing_or_end_to_end_runtime_claim": null
+    },
+    {
+      "shape": [
+        2,
+        2
+      ],
+      "dimension": 1,
+      "ambient_d_bit_length": 665,
+      "uses_minimal_shape_d": false,
+      "L_bit_length": 666,
+      "k_bit_length": 7973,
+      "original_cell_max_bit_length": 666,
+      "fine_cell_max_bit_length": 8639,
+      "fine_total_bit_length": 8641,
+      "alpha_numerator_bit_length": 8638,
+      "alpha_denominator_bit_length": 8638,
+      "exact_alpha_below_four": true,
+      "roundtrip": "passed",
+      "fiber_enumeration": "not attempted",
+      "timing_or_end_to_end_runtime_claim": null
+    },
+    {
+      "shape": [
+        2,
+        3
+      ],
+      "dimension": 2,
+      "ambient_d_bit_length": 5,
+      "uses_minimal_shape_d": true,
+      "L_bit_length": 7,
+      "k_bit_length": 54,
+      "original_cell_max_bit_length": 7,
+      "fine_cell_max_bit_length": 60,
+      "fine_total_bit_length": 63,
+      "alpha_numerator_bit_length": 118,
+      "alpha_denominator_bit_length": 118,
+      "exact_alpha_below_four": true,
+      "roundtrip": "passed",
+      "fiber_enumeration": "not attempted",
+      "timing_or_end_to_end_runtime_claim": null
+    },
+    {
+      "shape": [
+        2,
+        3
+      ],
+      "dimension": 2,
+      "ambient_d_bit_length": 665,
+      "uses_minimal_shape_d": false,
+      "L_bit_length": 666,
+      "k_bit_length": 7973,
+      "original_cell_max_bit_length": 666,
+      "fine_cell_max_bit_length": 8639,
+      "fine_total_bit_length": 8642,
+      "alpha_numerator_bit_length": 17276,
+      "alpha_denominator_bit_length": 17276,
+      "exact_alpha_below_four": true,
+      "roundtrip": "passed",
+      "fiber_enumeration": "not attempted",
+      "timing_or_end_to_end_runtime_claim": null
+    },
+    {
+      "shape": [
+        3,
+        4
+      ],
+      "dimension": 6,
+      "ambient_d_bit_length": 5,
+      "uses_minimal_shape_d": true,
+      "L_bit_length": 7,
+      "k_bit_length": 59,
+      "original_cell_max_bit_length": 7,
+      "fine_cell_max_bit_length": 66,
+      "fine_total_bit_length": 69,
+      "alpha_numerator_bit_length": 387,
+      "alpha_denominator_bit_length": 387,
+      "exact_alpha_below_four": true,
+      "roundtrip": "passed",
+      "fiber_enumeration": "not attempted",
+      "timing_or_end_to_end_runtime_claim": null
+    },
+    {
+      "shape": [
+        3,
+        4
+      ],
+      "dimension": 6,
+      "ambient_d_bit_length": 665,
+      "uses_minimal_shape_d": false,
+      "L_bit_length": 666,
+      "k_bit_length": 7973,
+      "original_cell_max_bit_length": 666,
+      "fine_cell_max_bit_length": 8639,
+      "fine_total_bit_length": 8643,
+      "alpha_numerator_bit_length": 51826,
+      "alpha_denominator_bit_length": 51826,
+      "exact_alpha_below_four": true,
+      "roundtrip": "passed",
+      "fiber_enumeration": "not attempted",
+      "timing_or_end_to_end_runtime_claim": null
+    }
+  ],
+  "reproduce": "PYTHONPATH=src python3 experiments/lattice_completion.py --output reports/lattice-completion.json",
+  "source_sha256": {
+    "experiments/lattice_completion.py": "9817fc38a78761e5bd55e95e7c087cd8db5d606cf79b6aef0b406683b74fa297",
+    "src/contingency115/lattice_completion.py": "6f43bd95a164758f196f12c8668aa95e0e9d3deb009bd8703009a0badcd8119c",
+    "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019",
+    "tests/test_lattice_completion.py": "087abfc1cfb320e5ed14a6acc6e9756708545e438c73bca254629ace2a042033"
+  }
+}

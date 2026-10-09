@@ -1,0 +1,31 @@
+'Math115.DilatedCompletionMargins.rowLargeCount_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.columnLargeCount_rectangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.total_large_cell_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.physical_residual_row_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.DilatedCompletionMargins.physical_residual_column_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.DilatedCompletionMargins.reference_row_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.reference_column_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.reference_row_total_eq_residual' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.DilatedCompletionMargins.reference_total_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.fineRows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.fineColumns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.FineReferenceTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.fine_row_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.fine_column_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.fine_totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.fineReferenceTableNonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.fine_total_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.fine_row_dense_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.fine_column_dense_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DilatedCompletionMargins.ideal_reference_row_geometric_minimum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.DilatedCompletionMargins.ideal_reference_column_geometric_minimum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,92 @@
+{
+  "status": "independent_statement_review_passed_at_recorded_hashes",
+  "reviewed_at": "2026-10-09T12:44:50.816127+00:00",
+  "review_mode": "Read-only mathematical statement and scope review; recorded author compile/audit receipts checked without running Lean. Only this review report was written.",
+  "lean_compiler_invoked_by_reviewer": false,
+  "reviewed_source_sha256": {
+    "formal/Math115/LatticeCompletion.lean": "0960e8bf3f40189bae52cf5a707c3583a5264d40f3cf520efad1f5670c2fe13f",
+    "formal/Math115/DilatedCompletionMargins.lean": "ad52e6f22b9747eb7976bc1924ce9ded65d94ae76820fa33c0109a3745b7ed0b",
+    "docs/lattice-completion-codec.md": "eef596b873362dbd118987122f7c9171cf78e717103a336e3b1fe91e2a0d4de4",
+    "docs/completion-oracle-dilation.md": "94d1a3ca6053e2c4848845c24d6283876fb97140096a19c452736661ee470836"
+  },
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "findings": [],
+  "scope": {
+    "codec_domain": "Infinite signed integer arrays indexed by natural coordinates.",
+    "finite_digits": "Fin(a-1) -> Fin(b-1) -> Fin k, extended to an infinite prefix-offset array by zero outside the interior rectangle.",
+    "cardinality": "The constructed finite-digit encoded image for a fixed infinite original array has k^((a-1)(b-1)) distinct members. This is not the full accepted finite-table fiber theorem.",
+    "margin_statements": "Explicit finite range sums, under full zero prefix boundary or divisible-margin conditions. Finite-table extension and restriction adapters remain outstanding.",
+    "physical_margins": "Actual positive physical states with the source capacity and reference row/column Option types; fine margin definitions use d=the full ambient dimensionAllowance."
+  },
+  "validated_points": [
+    "difference uses adjacent mixed differences; prefixSum is exactly the northwest finite range sum. difference_prefix holds for arbitrary signed arrays, while prefix_difference needs only ZeroAxes.",
+    "BoundedDigits requires every digit to lie in [0,k); positive k gives Euclidean floor quotient and nonnegative remainder, including negative prefix numerators. scaled_digit_ediv and scaled_digit_emod have the correct quantifiers.",
+    "decode_encode requires positive k, ZeroAxes, and BoundedDigits. residue_encode has no separate positive-k hypothesis because its bounded-digit assumptions already force positive k. encode_decode is the signed division-with-remainder identity and legitimately holds even without positivity.",
+    "codecEquiv is an equivalence between Array times infinite offset arrays and Array. The documentation explicitly denies any finite cardinality inference from this equivalence.",
+    "difference_bounds has both lower and upper bounds with the correct integer k-1 endpoints. encode_entry_at_least_two uses nonnegativity of the original entry and positive k; accepted_fine_entry_at_least_two uses decode nonnegativity without demanding that an arbitrary fine array be feasible.",
+    "ZeroBoundary a b imposes zeros on the entire top and left axes and on the entire row a and column b. This is stronger than saying only finitely many boundary points vanish and is accurately stated.",
+    "encode_row_margin and encode_column_margin sum exactly b or a entries and produce k*(old margin+2b) and k*(old margin+2a). Zero-width rectangles use natural subtraction and range-empty conventions consistently.",
+    "residue_zero_boundary_of_divisible_margins assumes divisible finite-width row sums for every natural row and divisible finite-height column sums for every natural column. A finite-table adapter must provide an outside extension satisfying these global hypotheses.",
+    "decode_row_margin and decode_column_margin use a nonzero k and the recovered zero boundary. They do not silently assume floor(sum/k)=sum(floor/k). The formulas are derived through the exact encode_decode identity.",
+    "finiteOffsets restricts digits to 0<p<a and 0<q<b and is zero everywhere else. Therefore it supplies the full zero boundary and global bounded-digit condition for positive k.",
+    "FiniteDigits cardinality and finiteEncode injectivity justify encodedFamily_card on Set.range in the infinite-array codomain. Restriction injectivity and whole finite-fiber surjectivity are not stated or certified.",
+    "Outside extensions matter: encoding a zero-extended original finite table yields 2k outside the rectangle, whereas decoding a zero-extended fine table yields -2 outside. Equality of two differently zero-extended arrays cannot be inferred from equality of their finite restrictions.",
+    "A suitable eventual adapter may extend the original finite table by zero and the fine table by 2k, or may work with restricted equality throughout. The final source comments explicitly preserve this distinction.",
+    "Compared with the reviewed draft, final changes rename prefix to prefixSum and repair tactic elaboration; the mathematical domains and limitations remain unchanged.",
+    "Final codec documentation was read at frozen hash eef596b8... and accurately states all 44 named author audit results, the image-only cardinality limitation, global boundary/divisibility hypotheses, and absence of a finite accepted-fiber adapter.",
+    "Public codec verification receipt and all three listed file hashes were checked against local readback; source hash and 44-name audit data agree with the earlier private receipts.",
+    "Final margin source removed only an unused import, replaced deprecated conditional rewrite names, and omitted unused section assumptions on count lemmas; theorem conclusions remain unchanged from the reviewed draft.",
+    "rowLargeCount_rectangle and columnLargeCount_rectangle count precisely every cell in the selected large rectangle. total_large_cell_count is a*b for all U, including empty selected types.",
+    "physical_residual_row_lower and physical_residual_column_lower use natural subtraction nonnegativity and exact padding multiplicities. reference lower bounds transfer through optionSubtypeNe, so the reference row/column indexed by none is included.",
+    "reference_row_total_eq_residual uses actual physical capacity and positive completion mass to force residual rows outside the large block to zero. reference_total_upper then has exactly M+a*b*L, including only one padding contribution per large cell.",
+    "fineRows and fineColumns use exactly the actual ReferenceTable Option index types and ambient d^12. fine row and column totals have the correction 2*a*b, equal totals follow from the actual physical reference totals, and table_nonempty yields an ordinary fine table.",
+    "fine dense minima require chosen large reference row and column, guaranteeing the opposite block dimension is positive. They hold for arbitrary U,L; no geometric acceptance premise is used.",
+    "Ideal geometric minimum statements set L=3*full ambient dimensionAllowance and keep U arbitrary. They prove the required 3*b*d and 3*a*d residual lower bounds but do not prove the universal count/volume acceptance theorem.",
+    "Public physical-margin author receipt and its source, audit-program, compile-log, and axiom-log hashes match local readback. The published receipt contains all 21 requested standard-axiom audit records."
+  ],
+  "recorded_author_evidence": {
+    "source_hash_matches_compile_and_audit_receipts": true,
+    "compile_exit_code": 0,
+    "compile_receipt": ".local/lattice-completion/compile-3.json",
+    "audit_exit_code": 0,
+    "audit_receipt": ".local/lattice-completion/audit.json",
+    "exports_manifest": ".local/lattice-completion/exports.json",
+    "declaration_count": 44,
+    "axiom_free_declarations": 8,
+    "remaining_axioms": "Only propext, Classical.choice, Quot.sound, or subsets.",
+    "audit_names_match_exports_manifest": true,
+    "receipt_sha256": {
+      ".local/lattice-completion/compile-3.json": "4abe70b109eacfcea1602fd3ae6b40211fe249ac4c8dbe152a1b13e37cbf615a",
+      ".local/lattice-completion/audit.json": "9c6e046c4048d505183e896135bb21aa79542206a7123a369371b6af2389f0dd",
+      ".local/lattice-completion/exports.json": "bb61d7321c2812749ceebfc0bbb738bb1441f8277821e347feb9668f4742854c"
+    },
+    "independent_compilation_reproduction": false,
+    "public_receipt": "formal/results/lattice-completion/verification.json",
+    "public_receipt_sha256": "727e55c0caa52546df4e0dc8c45037a3b7b468dba55ccf35505eb9c392fe5a7f",
+    "public_receipt_file_hashes_match": true
+  },
+  "margin_module_review": {
+    "status": "independent_statement_review_passed_at_recorded_hash",
+    "source_sha256": "ad52e6f22b9747eb7976bc1924ce9ded65d94ae76820fa33c0109a3745b7ed0b",
+    "recorded_author_receipt": "formal/results/dilated-completion-margins/verification.json",
+    "recorded_author_receipt_sha256": "abc8291c861a69c7259c275b9d0563f6253587928eb19d437f0dd4473acaac1a",
+    "selected_compile_and_audit_returncodes": [
+      0,
+      0
+    ],
+    "audited_public_declarations": 21,
+    "all_reported_axioms_standard_only": true,
+    "compiler_invoked_by_reviewer": false,
+    "limits": "No finite codec adapter, measure/count theorem, constant acceptance theorem, dense draw realization, or machine cost is established by this margin module.",
+    "public_receipt_file_hashes_match": true
+  },
+  "remaining_boundaries": [
+    "No finite actual Table-to-accepted-fine-fiber equivalence is proved by this module.",
+    "No lattice-cell determinant, measure tiling, count/volume comparison, or constant acceptance theorem is proved by this module.",
+    "No identification with the Python implementation, binary realizer, dense-oracle draw, retry program, or machine-cost theorem is proved by this module.",
+    "Author compilation and printed-axiom evidence were read and source-qualified; the reviewer did not invoke a compiler or reproduce those commands.",
+    "This review is valid only at the recorded source and receipt hashes.",
+    "The physical-margin module covers nonempty reference-block interfaces using chosen large row and column indices; empty-block/unit-branch operational selection remains in separate existing chain modules."
+  ],
+  "source_freeze": "Codec author source 0960e8bf... and document eef596b8... frozen; margin author final attempt03 source ad52e6f... frozen; root main document 94d1a3ca... frozen. Reviewer source/readback hashes match."
+}

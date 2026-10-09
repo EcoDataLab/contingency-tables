@@ -1,0 +1,46 @@
+'Math115.LatticeCompletion.Array' does not depend on any axioms
+'Math115.LatticeCompletion.difference' does not depend on any axioms
+'Math115.LatticeCompletion.prefixSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.ZeroAxes' does not depend on any axioms
+'Math115.LatticeCompletion.ZeroBoundary' does not depend on any axioms
+'Math115.LatticeCompletion.BoundedDigits' does not depend on any axioms
+'Math115.LatticeCompletion.difference_row_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.difference_column_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.difference_row_sum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.difference_column_sum_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.prefix_zero_axes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.prefix_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.difference_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.difference_bounds' depends on axioms: [propext, Quot.sound]
+'Math115.LatticeCompletion.encode' does not depend on any axioms
+'Math115.LatticeCompletion.decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.residue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.prefix_encode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.scaled_digit_ediv' depends on axioms: [propext]
+'Math115.LatticeCompletion.scaled_digit_emod' depends on axioms: [propext]
+'Math115.LatticeCompletion.decode_encode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.residue_encode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.residue_zero_axes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.residue_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.encode_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.encode_entry_at_least_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.encode_row_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.encode_column_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.residue_zero_boundary_of_divisible_margins' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.LatticeCompletion.decode_row_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.decode_column_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.accepted_fine_entry_at_least_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.OffsetDigits' does not depend on any axioms
+'Math115.LatticeCompletion.codecEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.FiniteDigits' does not depend on any axioms
+'Math115.LatticeCompletion.finiteOffsets' depends on axioms: [propext, Quot.sound]
+'Math115.LatticeCompletion.finiteOffsets_zero_boundary' depends on axioms: [propext, Quot.sound]
+'Math115.LatticeCompletion.finiteOffsets_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.finite_encode_decode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.finiteOffsets_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.finiteOffsets_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.finiteEncode_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.finiteDigits_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletion.encodedFamily_card' depends on axioms: [propext, Classical.choice, Quot.sound]

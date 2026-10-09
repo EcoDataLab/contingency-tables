@@ -1,0 +1,847 @@
+Verification started: 2026-10-09T12:02:49Z
+Verification scope: focused; build mode: parallel
+Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+✔ [6899/7073] Built OAI.Combinatorics.ContingencyTables.Transport.QuadraticTransport (3.3s)
+✔ [8925/8948] Built OAI.Combinatorics.ContingencyTables.Transport.BalancedSummation (3.7s)
+✔ [8926/8948] Built OAI.Combinatorics.ContingencyTables.Transport.SignedTransport (2.8s)
+✔ [8927/8948] Built OAI.Combinatorics.MatroidCounting.CommonBases (247s)
+✔ [8928/8948] Built OAI.Combinatorics.ContingencyTables.Machines.BinaryContraction (8.2s)
+✔ [8929/8948] Built OAI.Combinatorics.ContingencyTables.Transport.FactorialSignatures (8.9s)
+✔ [8930/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerMarginal (5.5s)
+✔ [8931/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerWeightedTransport (4.8s)
+✔ [8932/8948] Built OAI.Combinatorics.ContingencyTables.Transport.BalancedBox (5.9s)
+✔ [8933/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerReflection (6.0s)
+✔ [8934/8948] Built OAI.Combinatorics.ContingencyTables.Transport.BalancedFamily (6.0s)
+✔ [8935/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceReindex (6.2s)
+✔ [8936/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureSquare (9.5s)
+✔ [8937/8948] Built OAI.Combinatorics.ContingencyTables.Transport.BalancedEnumeration (5.3s)
+✔ [8938/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerFutureKernel (5.4s)
+✔ [8939/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerPairRecursion (5.9s)
+✔ [8940/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafTransport (4.5s)
+✔ [8941/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerExposure (5.6s)
+✔ [8942/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLevels (5.5s)
+✔ [8943/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursiveFlow (4.6s)
+✔ [8944/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerRootEstimate (5.4s)
+✔ [8945/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerCorrectionKernel (4.9s)
+✔ [8946/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafEnergy (5.2s)
+✔ [8947/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerRecursivePotential (5.0s)
+✔ [8948/8948] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerRootTransport (4.3s)
+Build completed successfully (8948 jobs).
+✔ [8925/8961] Built Math115.QuadraticCoefficient (3.2s)
+✔ [8926/8963] Built OAI.Combinatorics.ContingencyTables.Model (2.3s)
+✔ [8927/8963] Built Math115.SwitchingFiniteSums (3.5s)
+✔ [8929/8963] Built Math115.GlobalDisplayOwnership (3.7s)
+✔ [8946/8965] Built Math115.RepairCoefficient (3.7s)
+✔ [8951/8965] Built Math115.SurvivalAlgebra (4.6s)
+✔ [8953/8965] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallEntries (7.1s)
+✔ [8954/8965] Built Math115.ScaleCertificate (8.0s)
+✔ [8956/8965] Built OAI.Combinatorics.ContingencyTables.Rooted.LargePairEnumeration (7.8s)
+✔ [8957/8965] Built OAI.Combinatorics.ContingencyTables.Sampling.Padding (2.8s)
+✔ [8958/8970] Built Math115.UpstreamOwnershipBridge (7.5s)
+✔ [8959/8971] Built Math115.SmallEntrySwitching (4.3s)
+✔ [8960/8973] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalLargeProfiles (7.1s)
+✔ [8961/8980] Built OAI.Combinatorics.ContingencyTables.Transport.LaminarSignature (4.3s)
+✔ [8962/8980] Built Math115.TransportRefinement (7.5s)
+✔ [8963/8980] Built OAI.Combinatorics.ContingencyTables.Transport.LineUnarySignature (3.7s)
+✔ [8964/8980] Built Math115.SmallEntryTail (8.3s)
+✔ [8965/8980] Built OAI.Combinatorics.ContingencyTables.Transport.LabelledFactorial (9.1s)
+✔ [8966/8983] Built Math115.WidthWeightedTransport (8.3s)
+✔ [8967/8986] Built OAI.Combinatorics.ContingencyTables.Transport.ProductIntegerSignature (8.5s)
+✔ [8968/8986] Built Math115.PaddedMarginBridge (5.3s)
+✔ [8969/8986] Built OAI.Combinatorics.ContingencyTables.Transport.RecursiveSignedTransport (16s)
+✔ [8970/8986] Built OAI.Combinatorics.ContingencyTables.Transport.SliceFactorial (6.7s)
+✔ [8971/8993] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerBoxTruncation (6.6s)
+✔ [8972/8993] Built OAI.Combinatorics.ContingencyTables.Transport.ScalarPenalty (6.8s)
+✔ [8973/8997] Built OAI.Combinatorics.ContingencyTables.Sampling.Repair (2.4s)
+✔ [8974/8997] Built OAI.Combinatorics.ContingencyTables.Sampling.RepairPrefixes (2.1s)
+✔ [8975/8997] Built OAI.Combinatorics.ContingencyTables.Transport.HardZeroTransport (7.5s)
+✔ [8976/9002] Built OAI.Combinatorics.ContingencyTables.Transport.NestedProductSignature (10s)
+✔ [8977/9002] Built OAI.Combinatorics.ContingencyTables.Transport.EqualitySoftening (7.0s)
+✔ [8978/9002] Built OAI.Combinatorics.ContingencyTables.Transport.PositiveSequenceMinimum (2.3s)
+✔ [8979/9002] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerSliceRestriction (7.4s)
+✔ [8980/9007] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportLimit (7.0s)
+✔ [8981/9007] Built OAI.Combinatorics.ContingencyTables.Transport.NestedPenaltyApplication (6.0s)
+✔ [8982/9007] Built OAI.Combinatorics.ContingencyTables.Transport.ReflectedSlices (6.8s)
+✔ [8983/9007] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerContextSlices (6.6s)
+✔ [8984/9007] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerChildLogConcavity (7.7s)
+✔ [8985/9010] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerTruncatedTransport (6.9s)
+✔ [8986/9014] Built OAI.Combinatorics.ContingencyTables.Transport.ReflectedNested (7.5s)
+✔ [8987/9014] Built OAI.Combinatorics.ContingencyTables.Transport.RowColumnPenalties (9.7s)
+✔ [8988/9023] Built OAI.Combinatorics.ContingencyTables.Transport.EqualityReindex (7.6s)
+✔ [8989/9025] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerAuxiliaryEnumeration (8.0s)
+✔ [8990/9025] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerGraphTruncation (6.5s)
+✔ [8991/9025] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerTransportCoefficient (6.6s)
+✔ [8992/9025] Built OAI.Combinatorics.ContingencyTables.Sampling.PaddedCompletions (6.9s)
+✔ [8993/9025] Built OAI.Combinatorics.ContingencyTables.Transport.NestedReindex (6.5s)
+✔ [8994/9042] Built Math115.PathDistanceSum (3.7s)
+✔ [8995/9045] Built OAI.Combinatorics.ContingencyTables.Transport.IntegerChildVariance (8.0s)
+✔ [8996/9055] Built OAI.Combinatorics.ContingencyTables.Transport.ExcessPairCoordinates (7.2s)
+✔ [8997/9055] Built OAI.Combinatorics.ContingencyTables.Transport.CompletionCounts (7.8s)
+✔ [8998/9055] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteSymmetricEnergy (6.9s)
+✔ [8999/9055] Built OAI.Combinatorics.ContingencyTables.Transport.SignedMarginTranslation (2.6s)
+✔ [9000/9057] Built Math115.PaddingGrowthAlgebra (4.7s)
+✔ [9001/9059] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteExposureVariance (7.4s)
+✔ [9002/9059] Built OAI.Combinatorics.ContingencyTables.Sampling.RepairResiduals (7.3s)
+✔ [9003/9059] Built Math115.PaddingGrowth (4.9s)
+✔ [9004/9059] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperProfiles (7.3s)
+✔ [9005/9059] Built OAI.Combinatorics.ContingencyTables.Transport.RectangleCompletions (7.4s)
+✔ [9006/9059] Built OAI.Combinatorics.ContingencyTables.Transport.TableReindex (1.8s)
+✔ [9007/9064] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteSupportVariance (6.3s)
+✔ [9008/9068] Built OAI.Combinatorics.ContingencyTables.Transport.FinitePartitionVariance (6.7s)
+✔ [9009/9068] Built OAI.Combinatorics.ContingencyTables.Sampling.RepairFibres (7.2s)
+✔ [9010/9068] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteExchangeDegree (6.0s)
+✔ [9011/9071] Built OAI.Combinatorics.ContingencyTables.Transport.FinitePrefixVariance (7.0s)
+✔ [9012/9071] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteChoiceFibres (8.9s)
+✔ [9013/9076] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteExchangeObservables (7.6s)
+✔ [9014/9083] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteExposureBudget (7.9s)
+✔ [9015/9083] Built OAI.Combinatorics.ContingencyTables.Transport.TranslatedCompletions (3.3s)
+✔ [9016/9083] Built OAI.Combinatorics.ContingencyTables.Transport.TranslatedCompletionAcceptance (3.2s)
+✔ [9017/9088] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteRepairDegree (7.9s)
+✔ [9018/9093] Built OAI.Combinatorics.ContingencyTables.Transport.TranslatedCompletionCounts (2.3s)
+✔ [9019/9093] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPhysicalMarginal (25s)
+✔ [9020/9093] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteSupportEnergy (8.3s)
+✔ [9021/9093] Built OAI.Combinatorics.ContingencyTables.Dense.PublishedCheeger (5.5s)
+✔ [9022/9095] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteChainWeightVariance (5.9s)
+✔ [9023/9095] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextTransport (6.4s)
+✔ [9024/9095] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalCompletionFibres (7.1s)
+✔ [9025/9095] Built OAI.Combinatorics.ContingencyTables.Transport.TableMarginTransport (1.8s)
+✔ [9026/9097] Built OAI.Combinatorics.ContingencyTables.Transport.MetropolisChain (6.9s)
+✔ [9027/9097] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteChainGraphComparison (6.4s)
+✔ [9028/9105] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextBox (6.3s)
+✔ [9029/9124] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperContextChildren (6.4s)
+✔ [9030/9125] Built OAI.Combinatorics.ContingencyTables.Transport.TranslatedCompletionChain (6.5s)
+✔ [9031/9129] Built OAI.Combinatorics.ContingencyTables.Sampling.ResidualMixture (3.5s)
+✔ [9032/9129] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallContextFibres (7.2s)
+✔ [9033/9129] Built OAI.Combinatorics.ContingencyTables.Transport.FirstSuccess (3.0s)
+✔ [9034/9129] Built OAI.Combinatorics.ContingencyTables.Sampling.UnitGraphEnergy (7.0s)
+✔ [9035/9129] Built OAI.Combinatorics.ContingencyTables.Transport.CompletionChainFlow (6.9s)
+✔ [9036/9129] Built OAI.Combinatorics.ContingencyTables.Transport.CompletionFibreTransport (6.5s)
+✔ [9037/9129] Built OAI.Combinatorics.ContingencyTables.Transport.RationalProducts (2.6s)
+✔ [9039/9136] Built OAI.Combinatorics.ContingencyTables.Transport.RejectionLaw (2.9s)
+✔ [9040/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCoordinates (7.2s)
+✔ [9041/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallContextCount (7.8s)
+✔ [9042/9136] Built OAI.Combinatorics.ContingencyTables.Transport.RationalReindex (2.1s)
+✔ [9043/9136] Built OAI.Combinatorics.ContingencyTables.Transport.UniformPartialRejection (3.5s)
+✔ [9044/9136] Built OAI.Combinatorics.ContingencyTables.Transport.CompletionEnergyComparison (6.4s)
+✔ [9045/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallCoordinateSums (7.4s)
+✔ [9046/9136] Built OAI.Combinatorics.ContingencyTables.Machines.FiniteFairBits (2.0s)
+✔ [9047/9136] Built OAI.Combinatorics.ContingencyTables.Transport.RowMajorEnumeration (7.5s)
+✔ [9048/9136] Built OAI.Combinatorics.ContingencyTables.Transport.RationalWalks (1.8s)
+✔ [9049/9136] Built OAI.Combinatorics.ContingencyTables.Transport.RationalMapProducts (1.9s)
+✔ [9050/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallContextEnumeration (8.1s)
+✔ [9051/9136] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteDependentLaw (2.1s)
+✔ [9052/9136] Built OAI.Combinatorics.ContingencyTables.Transport.RationalWalkApproximation (2.6s)
+✔ [9053/9136] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteDependentApproximation (2.2s)
+✔ [9054/9136] Built OAI.Combinatorics.ContingencyTables.Transport.RationalChainCast (6.2s)
+✔ [9055/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperChildMass (5.5s)
+✔ [9056/9136] Built OAI.Combinatorics.ContingencyTables.Transport.ExcessContextProfiles (6.1s)
+✔ [9057/9136] Built OAI.Combinatorics.ContingencyTables.Transport.RationalChainMixing (6.0s)
+✔ [9058/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallGraphProfiles (5.5s)
+✔ [9059/9136] Built OAI.Combinatorics.ContingencyTables.Transport.ContextWeightedEnumeration (5.8s)
+✔ [9060/9136] Built OAI.Combinatorics.ContingencyTables.Transport.ExcessContextDefects (6.1s)
+✔ [9061/9136] Built OAI.Combinatorics.ContingencyTables.Transport.AuxiliaryRepairMass (4.4s)
+✔ [9062/9136] Built OAI.Combinatorics.ContingencyTables.Transport.ContextAdjacentTransport (4.6s)
+✔ [9063/9136] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteRepairVariance (4.6s)
+✔ [9064/9136] Built Math115.PathVariance (7.5s)
+✔ [9065/9136] Built OAI.Combinatorics.ContingencyTables.Transport.ContextChildVariance (8.1s)
+⚠ [9066/9136] Built Math115.RepairVarianceRefinement (8.5s)
+warning: Math115/RepairVarianceRefinement.lean:21:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [9067/9136] Built OAI.Combinatorics.ContingencyTables.Transport.FiniteGraphPoincareBudget (9.1s)
+✔ [9068/9136] Built OAI.Combinatorics.ContingencyTables.Transport.ContextGraphMembership (5.3s)
+✔ [9069/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperExposureVariance (6.8s)
+✔ [9070/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallChainBudget (5.7s)
+✔ [9071/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalGraphVertices (7.1s)
+✔ [9072/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallCompletionAcceptance (5.9s)
+✔ [9073/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallProposal (6.9s)
+✔ [9074/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallProfileRepair (4.6s)
+✔ [9075/9136] Built OAI.Combinatorics.ContingencyTables.Transport.ContextGraphEnergy (7.6s)
+✔ [9076/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.RepairLargeMass (4.7s)
+✔ [9077/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalContextVariance (4.8s)
+✔ [9078/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.RepairSmallMargins (5.9s)
+✔ [9079/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallRepairCapacity (4.2s)
+✔ [9080/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalPrefixEnergies (10s)
+✔ [9081/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalRepairMass (5.8s)
+✔ [9082/9136] Built OAI.Combinatorics.ContingencyTables.Transport.ChoiceContextEnumeration (6.4s)
+⚠ [9083/9136] Built Math115.PhysicalLeafEnergy (10s)
+warning: Math115/PhysicalLeafEnergy.lean:154:0: automatically included section variable(s) unused in theorem `Math115.PhysicalLeafEnergy.physical_display_special`:
+  [Fintype I]
+  [Fintype J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [Fintype J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Math115/PhysicalLeafEnergy.lean:413:0: automatically included section variable(s) unused in theorem `Math115.PhysicalLeafEnergy.context_box_leaf_transport_quarter`:
+  [LinearOrder I]
+  [LinearOrder J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder I] [LinearOrder J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [9084/9136] Built OAI.Combinatorics.ContingencyTables.Transport.RawSmallChoiceProperties (4.9s)
+✔ [9085/9136] Built OAI.Combinatorics.ContingencyTables.Transport.RowMajorPrefixFibres (5.4s)
+✔ [9086/9136] Built OAI.Combinatorics.ContingencyTables.Transport.WordContextVariance (4.1s)
+✔ [9087/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallRepairWords (6.1s)
+✔ [9088/9136] Built Math115.PhysicalExposureVariance (6.8s)
+✔ [9089/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperTransversalVariance (10s)
+✔ [9090/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallBalancedEncoding (4.6s)
+✔ [9091/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalRepairGraph (8.1s)
+✔ [9092/9136] Built OAI.Combinatorics.ContingencyTables.Transport.BalancedCompletionMass (6.2s)
+✔ [9093/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.SmallProfileEncoding (6.4s)
+✔ [9094/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperFullVariance (5.4s)
+✔ [9095/9136] Built OAI.Combinatorics.ContingencyTables.Transport.BalancedJointConstruction (5.9s)
+✔ [9096/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPhysicalVariance (4.9s)
+✔ [9097/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalGraphDegree (13s)
+✔ [9098/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalResidualMargins (5.6s)
+✔ [9099/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalPaperCapacity (7.3s)
+✔ [9100/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalOriginalResiduals (6.6s)
+✔ [9101/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalMassBound (19s)
+✔ [9102/9136] Built Math115.PhysicalFullVariance (25s)
+✔ [9103/9136] Built OAI.Combinatorics.ContingencyTables.Transport.ReferenceCompletionBlock (6.0s)
+✔ [9104/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalSmallGraph (24s)
+✔ [9105/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalExchangeMargins (6.0s)
+✔ [9106/9136] Built OAI.Combinatorics.ContingencyTables.Transport.CompletionFibreEquiv (6.3s)
+✔ [9107/9136] Built OAI.Combinatorics.ContingencyTables.Transport.ReferenceCompletionBounds (7.3s)
+✔ [9108/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalRepairMargins (5.2s)
+✔ [9109/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalSmallEnergy (12s)
+✔ [9110/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.PhysicalEdgeMargins (8.3s)
+⚠ [9111/9136] Built Math115.CompletionAdjustment (8.7s)
+warning: Math115/CompletionAdjustment.lean:568:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Math115/CompletionAdjustment.lean:574:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [9112/9136] Built OAI.Combinatorics.ContingencyTables.Transport.ReferenceEdgeAcceptance (5.6s)
+✔ [9113/9136] Built Math115.ReferenceEdgeAcceptance (6.8s)
+✔ [9114/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperSmallChain (4.3s)
+✔ [9115/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperSmallMixing (4.5s)
+✔ [9116/9136] Built Math115.SmallChainGap (6.1s)
+✔ [9117/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperSmallKernel (4.3s)
+✔ [9118/9136] Built Math115.ReducedSmallChain (4.6s)
+✔ [9119/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperRationalMixing (4.5s)
+✔ [9120/9136] Built Math115.ReducedAllSmallChain (4.9s)
+✔ [9121/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperJointLaw (4.8s)
+⚠ [9122/9136] Built Math115.PhysicalStateNonempty (6.2s)
+warning: Math115/PhysicalStateNonempty.lean:132:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Math115/PhysicalStateNonempty.lean:142:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9123/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.AllSmallFibres (6.3s)
+✔ [9124/9136] Built Math115.PhysicalRepairRefinement (9.4s)
+⚠ [9125/9136] Built Math115.IdealOracleScales (7.5s)
+warning: Math115/IdealOracleScales.lean:111:0: automatically included section variable(s) unused in theorem `Math115.IdealOracleScales.dimension_at_least_eleven`:
+  [LinearOrder I]
+  [LinearOrder J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder I] [LinearOrder J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Math115/IdealOracleScales.lean:201:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9126/9136] Built Math115.ReducedRepairRefinement (8.5s)
+warning: Math115/ReducedRepairRefinement.lean:78:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9127/9136] Built OAI.Combinatorics.ContingencyTables.Sampling.AllSmallChain (9.7s)
+⚠ [9128/9136] Built Math115.IdealRepairRefinement (7.1s)
+warning: Math115/IdealRepairRefinement.lean:58:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9129/9136] Built Math115.AllSmallChainGap (6.4s)
+✔ [9130/9136] Built Math115.PhysicalStationaryMass (62s)
+✔ [9131/9136] Built Math115.PhysicalStationarySuccess (6.1s)
+⚠ [9132/9136] Built Math115.PhysicalStationaryLaw (4.5s)
+warning: Math115/PhysicalStationaryLaw.lean:136:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Math115/PhysicalStationaryLaw.lean:178:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Math115/PhysicalStationaryLaw.lean:179:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9133/9136] Built Math115.PhysicalRationalKernel (4.2s)
+⚠ [9134/9136] Built Math115.PhysicalFiniteWalk (4.8s)
+warning: Math115/PhysicalFiniteWalk.lean:31:0: automatically included section variable(s) unused in theorem `Math115.PhysicalFiniteWalk.massAllowance_positive`:
+  [LinearOrder I]
+  [LinearOrder J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder I] [LinearOrder J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Math115/PhysicalFiniteWalk.lean:35:0: automatically included section variable(s) unused in theorem `Math115.PhysicalFiniteWalk.capacity_le_bound`:
+  [LinearOrder I]
+  [LinearOrder J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder I] [LinearOrder J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Math115/PhysicalFiniteWalk.lean:156:0: automatically included section variable(s) unused in theorem `Math115.PhysicalFiniteWalk.successAllowance_positive`:
+  [LinearOrder I]
+  [LinearOrder J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [LinearOrder I] [LinearOrder J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Math115/PhysicalFiniteWalk.lean:179:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Math115/PhysicalFiniteWalk.lean:180:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Math115/PhysicalFiniteWalk.lean:223:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Math115/PhysicalFiniteWalk.lean:236:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Math115/PhysicalFiniteWalk.lean:231:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Math115/PhysicalFiniteWalk.lean:236:8: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9135/9136] Built Math115 (3.5s)
+Build completed successfully (9136 jobs).
+'OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.weightedFuture_upper_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.correctionKernel_upper_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.integer_root_graph_transport_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.recursive_root_potential_widths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_widths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.GlobalDisplayOwnership.edge_owner_unique_upstream' depends on axioms: [propext, Quot.sound]
+'Math115.SmallEntrySwitching.all_donor_incidence_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntrySwitching.donor_capacity_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntrySwitching.donor_capacity_sum_lower_of_margins' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntrySwitching.all_donor_small_entry_count_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntrySwitching.all_donor_small_entry_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntrySwitching.all_donor_small_entry_probability_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntrySwitching.all_donor_small_entry_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntryTail.shiftEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.shiftPositiveEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.survival_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.survival_step_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.small_card_add_survival' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.all_donor_small_entry_count_strong' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.all_donor_small_entry_probability_strong' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntryTail.all_donor_survival_product_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.all_donor_small_entry_probability_product' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallEntryTail.survival_sum_le_entry_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.all_donor_entry_sum_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallEntryTail.all_donor_entry_mean_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SurvivalAlgebra.nat_lower_tail_linear_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SurvivalAlgebra.nat_survival_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SurvivalAlgebra.nat_mean_tail_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DenseScaleConditions.width_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.proposed_dense_scales' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.proposed_padding_scales' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.sharper_enlarged_margin_padding_scales' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.shape_aware_linear_tail_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.shape_aware_linear_unpadding_error_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddedMarginBridge.marked_incident_margins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddedMarginBridge.large_padding_good_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddedMarginBridge.enlarged_bad_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddedMarginBridge.sharper_padded_count_le_twice_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PaddedMarginBridge.enlarged_bad_count_strong' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddedMarginBridge.shape_aware_padded_count_le_twice_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.leafEnergySum_eq_physicalLeafEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.physicalLeafEnergy_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.leafEnergySum_truncate_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.physicalLeafEdges_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.physicalLeafEdges_owner_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.owner_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.ownerEdges_pairwiseDisjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.sum_ownerEnergy_le_physicalEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.sum_ownerEnergy_hardMarginal_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.leafEnergySum_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.integer_root_leaf_transport_quarter_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.integer_box_root_leaf_transport_quarter_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.context_box_leaf_transport_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.repaired_root_transport_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.adjacent_physical_leaf_transport_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalLeafEnergy.ownerContrast_le_ownerEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalLeafEnergy.sum_ownerContrast_le_physicalEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PathDistanceSum.sum_values_eq_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathDistanceSum.sum_dist_eq_two_triangles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathDistanceSum.sum_dist_eq_triangle_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathDistanceSum.sum_dist_le_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathVariance.pathEnergy_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathVariance.weighted_pair_path_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathVariance.centered_at_mode_term' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathVariance.weighted_path_variance_mode' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathVariance.weighted_path_variance_mode_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathVariance.weighted_path_variance_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathVariance.weighted_path_variance_of_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathVariance.child_variance_path_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PathVariance.child_variance_limit_path_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalExposureVariance.variance_eq_sum_prefixContribution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalExposureVariance.canonical_context_variance_le_contrasts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalExposureVariance.canonical_eliminate_eq_word_fibre' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalExposureVariance.word_context_variance_le_ownerContrasts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalExposureVariance.prefixContribution_le_ownerContrasts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalExposureVariance.variance_le_sum_ownerContrasts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalExposureVariance.physical_transversal_variance_localized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalFullVariance.physical_full_variance_localized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalFullVariance.physical_variance_localized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowthAlgebra.envelope_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowthAlgebra.envelope_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowthAlgebra.one_add_pow_le_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowthAlgebra.envelope_32_div_47' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowthAlgebra.envelope_le_10147_div_5123' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowthAlgebra.one_add_pow_le_10147_div_5123' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowthAlgebra.one_add_pow_lt_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowthAlgebra.count_le_twice_of_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowth.one_unit_count_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowth.one_cell_count_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowth.largePadding_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowth.paddedRows_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowth.paddedColumns_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowth.large_padding_count_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowth.large_padding_count_eq_of_zero_donors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PaddingGrowth.sequential_scale_budget' depends on axioms: [propext]
+'Math115.PaddingGrowth.sequential_padded_count_le_twice_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PaddingGrowth.sequential_shape_scale_budget' depends on axioms: [propext, Quot.sound]
+'Math115.PaddingGrowth.sequential_shape_padded_count_le_twice_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionAdjustment.elementary_star_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionAdjustment.elementary_star_reverse_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionAdjustment.exchange_selected_sum_abs_le_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionAdjustment.exchange_residual_margins_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionAdjustment.exchange_reference_adjustment_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionAdjustment.repair_residual_formula' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionAdjustment.repair_reference_adjustment_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionAdjustment.row_major_repair_conditional' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionAdjustment.repaired_profile_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionAdjustment.translation_rejection_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionAdjustment.singleton_translation_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionAdjustment.empty_rectangle_card_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionAdjustment.physical_empty_completion_weight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionAdjustment.repair_reference_elementary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionAdjustment.repair_reverse_reference_adjustment_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.ReferenceEdgeAcceptance.zero_entry_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReferenceEdgeAcceptance.rejected_card_eq_zero_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReferenceEdgeAcceptance.rejected_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReferenceEdgeAcceptance.rejected_count_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReferenceEdgeAcceptance.rejected_add_accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReferenceEdgeAcceptance.rejection_probability_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReferenceEdgeAcceptance.accepted_half_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReferenceEdgeAcceptance.betweenAcceptedEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReferenceEdgeAcceptance.singleton_between_accepted_card' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.ReferenceEdgeAcceptance.between_accepted_half_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReferenceEdgeAcceptance.designated_repair_adjustment_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.ReferenceEdgeAcceptance.physical_reference_adjustment_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.ReferenceEdgeAcceptance.reference_edge_acceptance_reduced' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.SmallChainGap.fullConstant_le_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallChainGap.smallProposal_localized_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallChainGap.chain_poincare_localized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallChainGap.paper_state_variance_localized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallChainGap.paperSmallChain_poincare_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallChainGap.paperSmallChain_poincare_d85' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallChainGap.unitSmallChain_poincare_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.SmallChainGap.unitSmallChain_poincare_d85' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedSmallChain.chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedSmallChain.chain_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedSmallChain.state_variance_localized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedSmallChain.nonreference_product_le_allowance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedSmallChain.chain_energy_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedSmallChain.chain_poincare_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedSmallChain.chain_poincare_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedSmallChain.reducedChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedSmallChain.reducedChain_poincare_d25' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.unitChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.weight_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.unitChain_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.unitChain_pi_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.graphEnergy_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.unitChain_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.unitChain_poincare_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.unitChain_poincare_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.missing_reference_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.selectedChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.selectedChain_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.selectedChain_poincare_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.selectedChain_poincare_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.ReducedAllSmallChain.reducedUnitChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.reducedUnitChain_poincare_d25' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.reducedSelectedChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.ReducedAllSmallChain.reducedSelectedChain_poincare_d25' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.RepairVarianceRefinement.square_repair_young' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RepairVarianceRefinement.repair_sqrt_coefficient_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.RepairVarianceRefinement.repair_sqrt_coefficient_le_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.RepairVarianceRefinement.repair_sqrt_coefficient_le_triangle' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.RepairVarianceRefinement.variance_sum_repair_young' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RepairVarianceRefinement.variance_sum_repair_sqrt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RepairVarianceRefinement.variance_repaired_energy_sqrt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStateNonempty.paddedTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStateNonempty.small_entry_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStateNonempty.states_nonempty_of_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStateNonempty.states_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStateNonempty.feasibleReducedChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStateNonempty.feasibleReducedChain_pi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStateNonempty.feasibleReducedChain_poincare_d25' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.IdealOracleScales.idealL' does not depend on any axioms
+'Math115.IdealOracleScales.idealU' depends on axioms: [propext]
+'Math115.IdealOracleScales.threshold_at_least_two' depends on axioms: [propext, Quot.sound]
+'Math115.IdealOracleScales.padding_at_least_three_dimension' does not depend on any axioms
+'Math115.IdealOracleScales.threshold_at_least_twice_padding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.sequential_scale_budget' depends on axioms: [propext, Quot.sound]
+'Math115.IdealOracleScales.padded_count_le_twice_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.padded_count_le_twice_successful' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.dense_padding_lower_bound' depends on axioms: [propext]
+'Math115.IdealOracleScales.incompatible_dense_scales' depends on axioms: [propext, Quot.sound]
+'Math115.IdealOracleScales.dimension_at_least_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.padding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.IdealStates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.idealLarge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.ideal_large_padded_count_le_twice_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.IdealOracleScales.referenceChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.referenceChain_poincare_d17' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.selectedChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.selectedChain_poincare_d17' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.feasibleChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.feasibleChain_poincare_d17' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRepairRefinement.refinedConstant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRepairRefinement.refinedConstant_nonnegative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalRepairRefinement.refinedConstant_le_fullConstant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalRepairRefinement.sqrt_coefficient_le_young' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRepairRefinement.refinedConstant_le_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalRepairRefinement.refinedProposal_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRepairRefinement.refinedReferenceProposal_budget' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalRepairRefinement.physical_full_variance_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalRepairRefinement.physical_variance_refined' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRepairRefinement.state_variance_refined' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRepairRefinement.chain_poincare_exact_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalRepairRefinement.unitChain_poincare_exact_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalRepairRefinement.selectedChain_poincare_exact_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalRepairRefinement.dimension_at_least_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRepairRefinement.chain_poincare_polynomial_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalRepairRefinement.unitChain_poincare_polynomial_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalRepairRefinement.selectedChain_poincare_polynomial_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.IdealRepairRefinement.referenceChain_poincare_d17_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.IdealRepairRefinement.selectedChain_poincare_d17_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.IdealRepairRefinement.feasibleChain_poincare_d17_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.IdealRepairRefinement.unitChain_poincare_d17_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.ReducedRepairRefinement.reducedChain_poincare_d25_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.ReducedRepairRefinement.reducedUnitChain_poincare_d25_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.ReducedRepairRefinement.reducedSelectedChain_poincare_d25_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.ReducedRepairRefinement.feasibleReducedChain_poincare_d25_refined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationaryMass.physical_mass_eq_profiles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.physical_mass_eq_words_defects' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationaryMass.defect_mass_le_words' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.normalizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.normalizer_le_padded_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.normalizer_le_original_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.normalizer_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryMass.success_ratio_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.paddedTable_small_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.paddedTable_small_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.originalJoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.originalJoint_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.large_padding_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.large_padding_columns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.large' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.jointTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.originalSuccessfulJoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.unpadSuccessfulJoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.unpadSuccessfulJoint_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.successfulJointEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.stateJointProjection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.stateJointProjection_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationarySuccess.jointState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.jointEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.jointEmbedding_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.jointEmbedding_balanced' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.balancedJointFromState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.balancedJointFromState_projection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationarySuccess.embedding_fromState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.fromState_embedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.StateJointSuccess' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.successStateEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationarySuccess.originalStateSuccessEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.fibre_card_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.fibreNonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stateJoint_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationaryRat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationaryRat_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationaryLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.jointLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.jointLaw_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_trial_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_trial_mass_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_failure_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_success_probability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_success_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_success_probability_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_retry_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.stationary_retry_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.ideal_padded_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalStationaryLaw.ideal_stationary_success_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationaryLaw.ideal_stationary_success_probability_lower' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalStationaryLaw.ideal_stationary_retry_variation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.PhysicalRationalKernel.proposalRat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.proposalRat_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.lawOfCast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.referenceMoveRat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.referenceTransitionRat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.referenceMoveRat_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.referenceTransitionRat_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.referenceTransitionLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.unitMoveRat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.unitTransitionRat' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.unitMoveRat_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.unitTransitionRat_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.unitTransitionLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.selectedTransitionLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.selectedTransitionLaw_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.selectedWalkLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalRationalKernel.selectedWalkLaw_cast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.capacityBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.massAllowance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.massAllowance_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.capacity_le_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.weight_at_least_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.total_mass_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.selectedChain_pi_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.selectedWalkLaw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.walkJointLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.walkJointLaw_variation_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.walkJointLaw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.outerLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.outerLaw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.initialState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.idealGapAllowance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.idealGapAllowance_at_least_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.successAllowance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.successAllowance_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.idealOuterLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.idealOuterLaw_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.exp_neg_steps_le_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PhysicalFiniteWalk.idealOuterLaw_variation_of_log_schedule' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Axiom allowlist passed for 318 declarations.
+Verification completed: 2026-10-09T12:15:23Z

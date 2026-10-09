@@ -3,7 +3,8 @@
 The formal work is additive to OpenAI's pinned #115 source. It now proves
 sharper Poincare bounds for the unchanged original ideal chains and actual
 parameterized ideal chains at both dense-compatible and smaller ideal-only scales,
-with stationary success, uniform-output, and finite-walk output-error proofs. Finite-bit sampler runtime and secure Comparator
+with stationary success, uniform-output, finite-walk output-error, and
+approximate-completion interface proofs. Finite-bit sampler runtime and secure Comparator
 verification remain separate from these results.
 
 ## Reproduction
@@ -259,6 +260,40 @@ supplied feasible fallback and make no operational completion or machine-cost
 claim. The [finite-walk guide](physical-finite-walk.md) and
 [source review](../formal/results/finite-walk-review.json) record the interfaces.
 
+[`PhysicalCompletionOracle.lean`](../formal/Math115/PhysicalCompletionOracle.lean)
+identifies the literal dyadic proposal, ordinary completion draw, and signed
+translation test with the exact rational kernel. Holding proposals incur
+no completion error, giving a transition TV bound `β deg(x) ζ` and its
+uniform allowance `γζ`, with `γ=(5d²+1)β≤1/2`. It also transports terminal
+completion laws through the actual reference-fibre equivalence, preserving
+TV, and proves the empty branch's fibre has cardinality one.
+[`PhysicalApproximateOracle.lean`](../formal/Math115/PhysicalApproximateOracle.lean)
+then proves an added output error `R(Tδ+η)` for uniform all-state transition
+and conditional-terminal errors. Its actual oracle specialization gives
+`R(Tγζstep+ζterminal)`, retaining fresh conditional draws and independent
+restarts. The [guide](physical-approximate-oracle.md),
+[37-declaration receipt](../formal/results/approximate-oracle/verification.json),
+and [source review](../formal/results/approximate-oracle-review.json) specify
+the exact accuracy contract; no efficient oracle is assumed constructed.
+
+[`LatticeCompletion.lean`](../formal/Math115/LatticeCompletion.lean)
+proves the signed integer prefix/difference inverses, exact encode/decode
+identities with Euclidean division, boundary-dependent margin formulas,
+entry positivity, and `k^((a−1)(b−1))` cardinality of the constructed finite
+digit image. Its [44-declaration receipt](../formal/results/lattice-completion/verification.json)
+does **not** establish that this image is the entire accepted finite-table
+fibre. Restriction/extension to finite tables and surjectivity remain a
+separate adapter, as does equivalence with the Python implementation.
+
+[`DilatedCompletionMargins.lean`](../formal/Math115/DilatedCompletionMargins.lean)
+retains the actual block's full padding multiplicities: `R_i≥bL`, `P_j≥aL`,
+and `H≤M+abL`. It defines fine margins on the same reference-table index
+types and derives equal total `d¹²(H+2ab)`, nonemptiness, and the original
+dense sampler's `d¹²` minimum-margin threshold. The universal lattice-cell
+volume/count comparison and bounded completion-law realization are still
+outside these modules; the [dilation derivation](completion-oracle-dilation.md)
+records their mathematical argument and remaining obligations.
+
 ## Verification levels
 
 - `standalone` compiles the sharp coefficient, repaired scalar bound, and global ownership abstraction
@@ -284,7 +319,7 @@ additional verification level.
 
 ## Recorded outcome
 
-The sixth local checkpoint passed on 9 October 2026 UTC with Lean 4.34.1.
+The seventh local checkpoint passed on 9 October 2026 UTC with Lean 4.34.1.
 New modules were compiled serially, followed by a fresh aggregate
 `Math115.lean` compilation and fresh focused and standalone axiom audits.
 Those integrated checks use existing compiled dependency outputs. This is
@@ -292,6 +327,11 @@ Those integrated checks use existing compiled dependency outputs. This is
 
 | Check | Outcome | Evidence |
 |---|---|---|
+| Checkpoint 7 aggregate | `Math115.lean` compiled; both axiom audits passed | [Seventh-checkpoint log](../formal/results/seventh-checkpoint.log) |
+| Checkpoint 7 dependency inventory | 219 source modules: 178 unchanged upstream and 41 local; 47 trusted external import entries | [Verification scope](../formal/results/verification.json) and [source provenance](../formal/results/provenance.json) |
+| Checkpoint 7 focused audit | 420 selected declarations passed | [Seventh-checkpoint log](../formal/results/seventh-checkpoint.log) |
+| Checkpoint 7 standalone audit | Six selected declarations passed | [Seventh-checkpoint log](../formal/results/seventh-checkpoint.log) |
+| Independent checkpoint 6 Linux build | Fresh focused build and all 318 focused audits passed at `e5d5dd3`; excludes subsequent oracle additions | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37927276465) and [receipt](../formal/results/linux-focused-e5d5dd3/verification.json) |
 | Checkpoint 6 aggregate | `Math115.lean` compiled; both axiom audits passed | [Sixth-checkpoint log](../formal/results/sixth-checkpoint.log) |
 | Checkpoint 6 dependency inventory | 212 source modules: 175 unchanged upstream and 37 local; 45 trusted external import entries | [Verification scope](../formal/results/verification.json) and [source provenance](../formal/results/provenance.json) |
 | Checkpoint 6 focused audit | 318 selected declarations passed | [Sixth-checkpoint log](../formal/results/sixth-checkpoint.log) |
@@ -310,26 +350,28 @@ Those integrated checks use existing compiled dependency outputs. This is
 | Earlier independent Thor run | At `b14082b`: 128 Python tests, 100 freshly compiled source modules, and 68 audited declarations | [Thor verification](thor-verification.md) and [receipt](../formal/results/thor-verification.json) |
 | Strict Comparator | Not passed: hosted runner reported Landlock ABI 7, while ABI 9 was required | [Preflight run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684) |
 
-The checkpoint 6 total is **324 selected declarations: 318 focused plus six
-standalone, comprising 322 new declarations and two original baseline
+The checkpoint 7 total is **426 selected declarations: 420 focused plus six
+standalone, comprising 424 new declarations and two original baseline
 declarations**. All use only the standard allowed axioms `propext`,
 `Classical.choice`, and `Quot.sound`, or subsets.
 
 [`verification.json`](../formal/results/verification.json) records the exact
 selected declarations, axioms, source hashes, and verification scope.
 Historical logs are retained; current aggregate compilation and fresh audits
-are in `sixth-checkpoint.log`. The source pin and unchanged upstream files
+are in `seventh-checkpoint.log`. The source pin and unchanged upstream files
 are recorded in provenance, and the focused manifest retains the original
 revision entries. The separate successful original-theorem Linux run audits
 three original sampling/counting exports at its own recorded commit. It is
 neither a Comparator pass nor a Linux verification of later refinements. The
-separate checkpoint-5 focused Linux run covers its exact recorded sources;
-its 45 environment-recorded source hashes were checked against `7ad5c81`.
+separate checkpoint-6 focused Linux run covers its exact recorded sources;
+its 48 environment-recorded source hashes were checked against `e5d5dd3`.
 
 This checkpoint verifies ideal-chain variance bounds, ordinary-table padding,
 automatic branch selection, physical feasibility, and the actual stationary
 physical success/output law, together with a matching finite-walk law and
-output-error bound at the new scales. It does not identify the finite law
-with an executable proposal/draw/test routine or verify a modified finite-bit
-sampler or a complete machine runtime. Official Mathlib cache artifacts
-and Lean bootstrap binaries remain trusted.
+output-error bound at the new scales. The new modules identify the finite
+proposal/draw/test law, propagate approximate-completion errors, and verify
+integer codec algebra and actual fine-input margin bounds. They do not yet
+prove the full finite accepted-table-fibre bijection, geometric acceptance,
+finite-bit realizer composition, or complete machine runtime. Official
+Mathlib cache artifacts and Lean bootstrap binaries remain trusted.

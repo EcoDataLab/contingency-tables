@@ -1,8 +1,8 @@
 {
-  "schema_version": 6,
-  "recorded_at_utc": "2026-10-09T11:57:48.127035+00:00",
-  "scope": "Sixth research checkpoint: 230 fresh tests, pinned source verification, unchanged existing Python code/report hash checks, and exact replay of the new eight-case stationary-success report. Lean results and reviewed asymptotic math are separate evidence.",
-  "prior_checkpoint_commit": "7ad5c81117bbaa869da751b1f92a9213ddefdd22",
+  "schema_version": 7,
+  "recorded_at_utc": "2026-10-09T12:46:53.251875+00:00",
+  "scope": "Seventh research checkpoint: 237 fresh tests, pinned sources, unchanged existing Python/report hashes, and byte-exact lattice experiment replay. Lean results and universal reviewed geometry remain separate evidence.",
+  "prior_checkpoint_commit": "e5d5dd3e81b5eac0e3f42841530286b56bcb96e5",
   "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "environment": {
     "python": "3.14.3",
@@ -14,8 +14,8 @@
     {
       "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v",
       "exit_code": 0,
-      "tests_passed": 230,
-      "elapsed_seconds": 3.52,
+      "tests_passed": 237,
+      "elapsed_seconds": 3.511,
       "covered_test_files": [
         "tests/test_block_budgets.py",
         "tests/test_block_sampler.py",
@@ -27,6 +27,7 @@
         "tests/test_ideal_chain.py",
         "tests/test_ideal_two_by_two.py",
         "tests/test_kernels.py",
+        "tests/test_lattice_completion.py",
         "tests/test_lean_axiom_audit.py",
         "tests/test_mixtures.py",
         "tests/test_optimize.py",
@@ -46,15 +47,18 @@
       "upstream_git_blobs_verified": 38
     },
     {
-      "command": "PYTHONPATH=src .venv/bin/python experiments/stationary_success.py --output .local/checkpoint6-stationary-success-replay.json",
+      "command": "PYTHONPATH=src .venv/bin/python experiments/lattice_completion.py --output .local/checkpoint7-lattice-replay.json",
       "exit_code": 0,
       "exact_saved_report_match": true,
-      "finite_cases": 8
+      "complete_tiny_fibers": 13,
+      "fine_tables": 293,
+      "retained_budget_failures": 1,
+      "actual_scale_roundtrips": 10
     },
     {
-      "check": "Existing 58 Python source and 16 report hashes unchanged; new experiment and its two reports added. No benchmark retiming or unrelated report replay claimed.",
-      "source_hashes_verified": 59,
-      "report_hashes_verified": 18,
+      "check": "Existing 59 Python source and 18 report hashes unchanged; three new Python sources and two reports added. No benchmark retiming or unrelated report replay claimed.",
+      "source_hashes_verified": 62,
+      "report_hashes_verified": 20,
       "status": "passed"
     }
   ],
@@ -117,7 +121,10 @@
     "tests/test_tables.py": "2c3edc49820bd07497f351d54b576a3bf9436b0c40f3dba02a35e2bb5141dd30",
     "tests/test_transport_bounds.py": "2f0e703dda6afa8875abdb86f2b3f7b94144977a78db93841afee69ed51473db",
     "tests/test_workers.py": "78b044cf6c5ade47e4fb080d3428457d891ce9d89a13ac88e528ae25b291b7d4",
-    "experiments/stationary_success.py": "2e2ba485e6b805cd1a34d1c350602ca61f54ea3a0d441dff26249a440552ede5"
+    "experiments/stationary_success.py": "2e2ba485e6b805cd1a34d1c350602ca61f54ea3a0d441dff26249a440552ede5",
+    "src/contingency115/lattice_completion.py": "6f43bd95a164758f196f12c8668aa95e0e9d3deb009bd8703009a0badcd8119c",
+    "tests/test_lattice_completion.py": "087abfc1cfb320e5ed14a6acc6e9756708545e438c73bca254629ace2a042033",
+    "experiments/lattice_completion.py": "9817fc38a78761e5bd55e95e7c087cd8db5d606cf79b6aef0b406683b74fa297"
   },
   "report_sha256": {
     "reports/block-budget-comparison.json": "5892d0bc1116abd620985d9b36a4d8264db0812b0a2de66a3863db1fd06d4ea5",
@@ -137,7 +144,9 @@
     "reports/sparse-commute.json": "f7f0ea71b6ed8c269a300808468cb56281b10cbcc01049cd4193f225875e10a4",
     "reports/worker-baseline.json": "9cf536c90b13939892129d972a0b614467041f8cd4d41eb246a1882c1bebee96",
     "reports/stationary-success.json": "e51fd9d0df21e16edebc9929edb7f3bb1f4be0d4cf64d52fac67f6a674b62741",
-    "reports/stationary-success-obstruction-review.json": "0a4fce426501db000ffe9ae2fc2ef86b4153038777b19a67282ecd12702377f2"
+    "reports/stationary-success-obstruction-review.json": "0a4fce426501db000ffe9ae2fc2ef86b4153038777b19a67282ecd12702377f2",
+    "reports/lattice-completion.json": "2f61e48599fad59ffaedbf2490fc5fca07e616b64a66e5b233e67f8ca04f78e8",
+    "reports/completion-oracle-dilation-review.json": "049dc5fba92b85f2f915515f5f461679293c688616a2fedf4eb698dfb744b299"
   },
   "limitations": [
     "The finite ideal-chain backend uses exhaustive exact completion oracles, not a polynomial finite-bit implementation.",
@@ -414,6 +423,58 @@
         }
       ],
       "note": "Checks recorded at checkpoint 5; retained as historical evidence."
+    },
+    {
+      "source_commit": "e5d5dd3e81b5eac0e3f42841530286b56bcb96e5",
+      "checks": [
+        {
+          "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v",
+          "exit_code": 0,
+          "tests_passed": 230,
+          "elapsed_seconds": 3.52,
+          "covered_test_files": [
+            "tests/test_block_budgets.py",
+            "tests/test_block_sampler.py",
+            "tests/test_budgets.py",
+            "tests/test_build_lean_serial.py",
+            "tests/test_cactus.py",
+            "tests/test_chain_diagnostics.py",
+            "tests/test_commute_scaling.py",
+            "tests/test_ideal_chain.py",
+            "tests/test_ideal_two_by_two.py",
+            "tests/test_kernels.py",
+            "tests/test_lean_axiom_audit.py",
+            "tests/test_mixtures.py",
+            "tests/test_optimize.py",
+            "tests/test_padding_barrier.py",
+            "tests/test_padding_growth.py",
+            "tests/test_sampler_benchmarks.py",
+            "tests/test_scales.py",
+            "tests/test_tables.py",
+            "tests/test_transport_bounds.py",
+            "tests/test_workers.py"
+          ]
+        },
+        {
+          "command": "PYTHONPATH=src .venv/bin/python scripts/verify_sources.py --checkout .upstream/openai-math",
+          "exit_code": 0,
+          "bundle_sha256_verified": 5,
+          "upstream_git_blobs_verified": 38
+        },
+        {
+          "command": "PYTHONPATH=src .venv/bin/python experiments/stationary_success.py --output .local/checkpoint6-stationary-success-replay.json",
+          "exit_code": 0,
+          "exact_saved_report_match": true,
+          "finite_cases": 8
+        },
+        {
+          "check": "Existing 58 Python source and 16 report hashes unchanged; new experiment and its two reports added. No benchmark retiming or unrelated report replay claimed.",
+          "source_hashes_verified": 59,
+          "report_hashes_verified": 18,
+          "status": "passed"
+        }
+      ],
+      "note": "Checks recorded at checkpoint 6; retained as historical evidence."
     }
   ]
 }

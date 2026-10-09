@@ -1,0 +1,125 @@
+{
+  "status": "independent_review_passed_at_recorded_hashes",
+  "reviewed_at": "2026-10-09T12:44:50.814859+00:00",
+  "review_mode": "Independent mathematical derivation, frozen code and test review, experiment replay, and an additional exhaustive 3-by-3 codec check. No reviewed sources or documents were edited.",
+  "lean_compiler_invoked_by_reviewer": false,
+  "reviewed_source_sha256": {
+    "docs/completion-oracle-dilation.md": "94d1a3ca6053e2c4848845c24d6283876fb97140096a19c452736661ee470836",
+    "src/contingency115/lattice_completion.py": "6f43bd95a164758f196f12c8668aa95e0e9d3deb009bd8703009a0badcd8119c",
+    "tests/test_lattice_completion.py": "087abfc1cfb320e5ed14a6acc6e9756708545e438c73bca254629ace2a042033",
+    "experiments/lattice_completion.py": "9817fc38a78761e5bd55e95e7c087cd8db5d606cf79b6aef0b406683b74fa297",
+    "reports/lattice-completion.json": "2f61e48599fad59ffaedbf2490fc5fca07e616b64a66e5b233e67f8ca04f78e8"
+  },
+  "reference_source_sha256": {
+    "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019",
+    "docs/lattice-completion-codec.md": "eef596b873362dbd118987122f7c9171cf78e717103a336e3b1fe91e2a0d4de4",
+    "formal/Math115/LatticeCompletion.lean": "0960e8bf3f40189bae52cf5a707c3583a5264d40f3cf520efad1f5670c2fe13f",
+    "formal/Math115/DilatedCompletionMargins.lean": "ad52e6f22b9747eb7976bc1924ce9ded65d94ae76820fa33c0109a3745b7ed0b",
+    "formal/results/lattice-completion/verification.json": "727e55c0caa52546df4e0dc8c45037a3b7b468dba55ccf35505eb9c392fe5a7f",
+    "formal/results/dilated-completion-margins/verification.json": "abc8291c861a69c7259c275b9d0563f6253587928eb19d437f0dd4473acaac1a"
+  },
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "scope": {
+    "law": "Ordinary unrestricted nonnegative integer tables with prescribed equal-total margins, nonempty row and column index sets.",
+    "codec_quantifiers": "Every positive integer k, every feasible original table, and every interior prefix-digit assignment in {0,...,k-1}^e. Decoder accepts exactly nonnegative signed candidates and retains margins on rejection.",
+    "constant_acceptance_quantifiers": "a,b>=2, e=(a-1)(b-1)<=d-1, L=3d, R_i>=bL and P_j>=aL. Generic k>=1 gives acceptance>=exp(-2)>1/8. Actual k=d^12 gives acceptance>=exp(-4/3)>1/4.",
+    "python_scope": "The implementation is an exact deterministic codec and scale planner; it implements no dense completion draw or iid retry adapter.",
+    "evidence_split": "Universal count and volume comparisons are reviewed mathematics. Python enumeration and arithmetic checks are finite evidence, not a universal Python or Lean proof.",
+    "compiled_subset": "Author-selected codec module (44 named declarations) and actual physical-margin module (21 public declarations); their receipts were read source-qualified. The finite whole accepted-fiber bijection, measure/count theorem, realizer composition, and full outer program remain unproved by these modules."
+  },
+  "findings": [],
+  "validated_points": [
+    "Physical residual definitions retain b padding units per large row and a per large column. Therefore R_i>=bL and P_j>=aL follow from nonnegative natural residual subtraction. H<=M+abL follows by bounding the unpadded residual-row sum by the original total M.",
+    "For a,b>=2 the full dimension allowance is at least 19. The block satisfies ab<=d and e<=d-1. Empty or one-row/column blocks have their completion fixed by the margins and can bypass geometric sampling.",
+    "The actual fine total is k(H+2ab). k=d^12 guarantees original upstream minimum fine margins d^12 and adds O(log d) bits, rather than a factor depending on numerical margin magnitude.",
+    "The prefix-map restriction from free entries to interior prefixes is triangular with diagonal one. Adjacent-rectangle mixed differences invert it over both the integers and the reals. Coordinate volume, deleting last row and column, is stated explicitly.",
+    "Fine bottom and right prefix sums are exact multiples of k; flooring interior prefixes therefore retains original margins after subtracting two per entry, including on negative rejected candidates.",
+    "Encoding uses zero prefix offsets on every boundary. Mixed differences have zero margins and entry perturbations between -2(k-1) and 2(k-1); each encoded entry of a feasible original table is at least two.",
+    "Prefix quotient and remainder recover the candidate and offset data uniquely. Exactly k^e accepted fine tables decode to each original table. There is no extra tie, parity, origin, or k=1 qualification.",
+    "Half-open adjacent-cycle cells tile the affine space. Their mixed-difference error lies strictly between -2 and 2 per entry, including boundary cells; fine cell errors lie strictly between -2/k and 2/k.",
+    "Rounding the translation by +2 of P(R-2b,P-2a) gives feasible original representatives, proving its volume<=N. Attaching disjoint fine cells to all Z/k and translating by 2/k proves N_f/k^e<=V(R+(2+2/k)b,P+(2+2/k)a).",
+    "Coordinatewise volume monotonicity follows by translating by a nonnegative real table of the difference margins. Difference totals agree. This does not assume a general volume-estimation oracle or a new analytic sampling theorem.",
+    "lambda=(L+2+2/k)/(L-2) satisfies lambda(R-2b)>=R+(2+2/k)b and the corresponding column inequality. L>2 and the all-(L-2) lower-bound table ensure positive smaller volume before division.",
+    "The count-ratio inequality orientation is correct: N_f/(k^e N)<=lambda^e, so uniform fine-input success is at least lambda^-e. Using log(1+x)<=x gives the stated generic and actual-scale constants.",
+    "At k=d^12, k>=2d and (d-1)(4+1/d)/(3d-2)<=4/3; multiplying through reduces the latter to 12d-9-3/d<=12d-8. Thus the actual count-ratio upper bound is strictly below four.",
+    "For integer h>=0, J=4(h+2) and h_fine=h+2+ceil(log2 J) give (3/4)^J<=2^(-(h+2)) and J*2^(-h_fine)<=2^(-(h+2)). Summing yields TV<=2^(-(h+1)) under independent fine draws. The argument compares whole retry laws and does not silently condition an approximate fine law as exact.",
+    "Pinned canonicalDenseDraw_variation retains the required dimension, margin, initialization, and ordering interfaces. normalizedDrawBits_polynomial gives 25(d+ell+h_fine+1)^62 when ell bounds Nat.clog 2 (C+2). The document correctly labels this random-bit allowance separately from polynomial realizer machine cost.",
+    "Input validation rejects noninteger and Boolean scales or digits, negative digits, invalid table shapes and margins, genuine cell restrictions, and mismatched direct LatticeCompletionPlan margins. Semantically redundant upper bounds or structural zeros on forced-zero cells remain ordinary.",
+    "The geometric arithmetic planner checks ambient d, k>=2d, strong residual margins, and a preallocation power-size allowance. The returned rational alpha is explicitly conditional on the reviewed universal geometric argument, not an empirical acceptance observation.",
+    "The experiment uses independent two-row cell-coordinate enumeration, checks its Cartesian allowance before enumeration, and preserves the intentionally failed case without partial acceptance/count estimates.",
+    "The saved report cleanly separates 13 tiny completed fibers and one budget failure from 10 actual-scale roundtrips, which explicitly do not enumerate the fibers or claim end-to-end timing. Fresh serialization is byte-for-byte identical to the saved report; its recorded source hashes all match.",
+    "Final public API/reproduction example matches the frozen codec. Saved report totals are precisely 13 completed fibers, 293 fine tables, 44 encoded table/digit pairs, one deliberate budget failure, 10 actual-scale roundtrips,and a maximum fine-entry bit length of 8639.",
+    "The final codec documentation accurately separates the infinite-array equivalence, finite constructed-image cardinality, and unfinished actual finite accepted-fiber bijection. Its 44-declaration author compile/audit receipt is source-qualified and retains the trusted dependency-object boundary.",
+    "The final actual-margin source derives multiplicity bounds and fine margin inputs directly from physical states; 21 source-qualified author audits pass with standard axioms only. This compiled subset does not prove volume, constant acceptance, sampler realization, or machine costs.",
+    "Using volume directly in interior prefix coordinates is a valid proposed route for the next count/volume theorem: its cells are boxes, translation preserves that coordinate measure, and scalar dilation has exponent e. It does not by itself supply the missing Lean measure theorem.",
+    "Public physical-margin author receipt and its source, audit-program, compile-log, and axiom-log hashes match local readback. The published receipt contains all 21 requested standard-axiom audit records."
+  ],
+  "execution_evidence": {
+    "focused_tests": {
+      "command": "PYTHONPATH=src python3 -m unittest discover -s tests -p test_lattice_completion.py -v",
+      "returncode": 0,
+      "tests_passed": 7
+    },
+    "experiment_replay": {
+      "mode": "Imported experiments/lattice_completion.py, ran run(), serialized with its indent and final newline, and compared against saved report without rewriting it.",
+      "returncode": 0,
+      "byte_exact_saved_report_match": true,
+      "completed_tiny_fibers": 13,
+      "retained_budget_failures": 1,
+      "actual_scale_roundtrips": 10,
+      "saved_source_hashes_match_current_files": true
+    },
+    "additional_independent_exhaustion": {
+      "original_row_sums": [
+        1,
+        1,
+        1
+      ],
+      "original_column_sums": [
+        1,
+        1,
+        1
+      ],
+      "k": 2,
+      "dimension": 4,
+      "free_coordinate_candidates": 50625,
+      "fine_count": 7260,
+      "original_count": 6,
+      "accepted_count": 96,
+      "rejected_count": 7164,
+      "preimages_each_original": 16,
+      "all_margin_error_fiber_and_reencoding_checks_passed": true,
+      "dense_padding_hypothesis_satisfied": false
+    },
+    "dense_oracle_implemented_or_executed": false,
+    "lean_compilation_or_axiom_audit_performed": false,
+    "runtime_benchmark_claim": false
+  },
+  "primary_reference": {
+    "citation": "Dyer, Kannan, Mount (1997), Sampling Contingency Tables, Section 4, printed pages 491-493.",
+    "url": "https://www.math.cmu.edu/~af1p/Teaching/MCC17/Papers/contingency.pdf",
+    "relevant_material": "Adjacent-cycle lattice basis, volume monotonicity Lemma 1, rounding-error and enlarged/reduced-polytope comparisons Lemmas 2-3, unit cell coordinate volume Proposition 1."
+  },
+  "remaining_boundaries": [
+    "No complete new Lean bijection, measure/count theorem, finite-bit codec realizer, retry composition, or outer-program identification is certified by this review.",
+    "The exact count identity is universal within the ordinary unrestricted model; the constant success bound additionally requires the strong row and column padding margins. Tiny low-margin cases test the codec and must not be presented as verification of the universal acceptance theorem.",
+    "The fine-input law must be uniform for the exact acceptance and conditional-output claims. Approximate law and independent retry costs require the explicitly stated TV charge and fresh randomness.",
+    "This does not give a complete d^17 machine-runtime theorem. Outer walk work, defect-state rejection, completion calls, finite dense bit counts, and bit arithmetic remain separate charges.",
+    "Weighted tables, structural restrictions, and nontrivial cell bounds require separate reductions or proofs.",
+    "This review applies only to the recorded artifact hashes; later source, report, or document changes require renewed review."
+  ],
+  "source_freeze": "Root confirmed final public document hash94d1a3ca... after scope/API/reproduction edits; codec and margin authors supplied final source hashes0960e8bf... and ad52e6f.... Frozen Python, test, experiment and report hashes remain unchanged. All recorded files were read back.",
+  "recorded_author_formal_evidence": {
+    "reviewer_invoked_lean": false,
+    "codec_receipt": "formal/results/lattice-completion/verification.json",
+    "codec_receipt_sha256": "727e55c0caa52546df4e0dc8c45037a3b7b468dba55ccf35505eb9c392fe5a7f",
+    "codec_declarations": 44,
+    "margin_receipt": "formal/results/dilated-completion-margins/verification.json",
+    "margin_receipt_sha256": "abc8291c861a69c7259c275b9d0563f6253587928eb19d437f0dd4473acaac1a",
+    "margin_declarations": 21,
+    "compile_and_audit_source_hashes_match_readback": true,
+    "all_reported_axioms_standard_only": true,
+    "dependency_closure_rebuild_or_comparator_replay": false,
+    "public_margin_file_hashes_match": true
+  }
+}

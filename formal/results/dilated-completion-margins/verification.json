@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "created_at": "2026-10-09T12:41:43.333333+00:00",
+  "module": "Math115.DilatedCompletionMargins",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "selected_source_sha256": {
+    "formal/Math115/DilatedCompletionMargins.lean": "ad52e6f22b9747eb7976bc1924ce9ded65d94ae76820fa33c0109a3745b7ed0b",
+    "audit_source": "baaa8bb99bb51cfb86bbb9c9a93667b34a07773ec08073cd92bc45e55a7af729",
+    "formal/Math115/PhysicalCompletionOracle.lean": "44d6b7d22d92d79c6ab993ac31c31c7b448894e0a9118b21d155f25d83c4ded3",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/ReferenceCompletionBounds.lean": "85f9a0d6fa98658abd83ca8651b287640e8bd77f0821ed639acbf02d027153ed"
+  },
+  "requested_public_declarations": 21,
+  "private_helpers": "Covered transitively by audited public declarations.",
+  "trust_boundary": "Existing toolchain/dependency artifacts. Direct selected Lean compile; no Lake build or dependency preflight. Selected source/import hashes are recorded, not a full import-closure hash audit.",
+  "lean_threads": 1,
+  "commands": [
+    [
+      "<workspace>/.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "-o",
+      "<workspace>/formal/.lake/build/lib/lean/Math115/DilatedCompletionMargins.olean",
+      "<workspace>/formal/Math115/DilatedCompletionMargins.lean"
+    ],
+    [
+      "<workspace>/.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "<workspace>/.local/dilated-completion-margins/attempt-03/DilatedCompletionMarginsAudit.lean"
+    ]
+  ],
+  "trusted_header_imports": [
+    "Init"
+  ],
+  "axiom_audit": [
+    {
+      "name": "Math115.DilatedCompletionMargins.rowLargeCount_rectangle",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.columnLargeCount_rectangle",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.total_large_cell_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.physical_residual_row_lower",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.physical_residual_column_lower",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.reference_row_lower",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.reference_column_lower",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.reference_row_total_eq_residual",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.reference_total_upper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.fineRows",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.fineColumns",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.FineReferenceTable",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.fine_row_total",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.fine_column_total",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.fine_totals",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.fineReferenceTableNonempty",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.fine_total_upper",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.fine_row_dense_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.fine_column_dense_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.ideal_reference_row_geometric_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.DilatedCompletionMargins.ideal_reference_column_geometric_minimum",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "started_at": "2026-10-09T12:41:43.333622+00:00",
+  "stages": [
+    {
+      "name": "selected_compile",
+      "returncode": 0,
+      "started_at": "2026-10-09T12:41:43.341623+00:00",
+      "stopped_at": "2026-10-09T12:42:24.114456+00:00"
+    },
+    {
+      "name": "axiom_audit",
+      "returncode": 0,
+      "started_at": "2026-10-09T12:42:24.115305+00:00",
+      "stopped_at": "2026-10-09T12:42:52.022528+00:00"
+    }
+  ],
+  "completed_at": "2026-10-09T12:42:52.025074+00:00",
+  "olean_sha256": "90d81bedc3c88a63eb2fc9b3c0960f057fa85a1bb2561c6db5e155713339628e",
+  "compile_output": "empty; no warnings or errors",
+  "base_commit": "7bf2a4c8a534e66641451db697762dc8ff29a44f",
+  "audited_declarations": 21,
+  "source_sha256": {
+    "formal/Math115/DilatedCompletionMargins.lean": "ad52e6f22b9747eb7976bc1924ce9ded65d94ae76820fa33c0109a3745b7ed0b",
+    "formal/Math115/PhysicalCompletionOracle.lean": "44d6b7d22d92d79c6ab993ac31c31c7b448894e0a9118b21d155f25d83c4ded3",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/ReferenceCompletionBounds.lean": "85f9a0d6fa98658abd83ca8651b287640e8bd77f0821ed639acbf02d027153ed"
+  },
+  "audit_source": "formal/results/dilated-completion-margins/AxiomAudit.lean",
+  "audit_log": "formal/results/dilated-completion-margins/axiom-audit.log",
+  "compile_log": "formal/results/dilated-completion-margins/DilatedCompletionMargins-compile.log",
+  "scope": "Actual physical block padding multiplicities, residual total bound, fine reference margins and totals, nonempty fine fiber, original dense minimum, and ideal-scale geometric margin minima.",
+  "reproduction_audit_command": [
+    "../.tools/elan/bin/lake",
+    "env",
+    "lean",
+    "-j1",
+    "-DautoImplicit=false",
+    "results/dilated-completion-margins/AxiomAudit.lean"
+  ],
+  "limits": [
+    "No rounding/table-fibre equivalence, volume/acceptance bound, completion-law accuracy, or machine realizer is established.",
+    "Successful final author logs and byte-identical audit source are published. Earlier missing-import and warning-bearing attempts remain local diagnostics.",
+    "Existing dependency objects and pinned toolchain are trusted; aggregate checks are recorded separately."
+  ],
+  "file_sha256": {
+    "formal/results/dilated-completion-margins/AxiomAudit.lean": "baaa8bb99bb51cfb86bbb9c9a93667b34a07773ec08073cd92bc45e55a7af729",
+    "formal/results/dilated-completion-margins/DilatedCompletionMargins-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/dilated-completion-margins/axiom-audit.log": "6d6a5c9bd975fd7982dbb4d0baecaefa8a92af72a1eab4cd11710c1488157339"
+  }
+}
