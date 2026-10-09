@@ -1,0 +1,36 @@
+'Math115.CompletionRandomBudget.binarySize' does not depend on any axioms
+'Math115.CompletionRandomBudget.combinedSize' does not depend on any axioms
+'Math115.CompletionRandomBudget.fineMarginBound' depends on axioms: [propext]
+'Math115.CompletionRandomBudget.fineBinaryBound' depends on axioms: [propext]
+'Math115.CompletionRandomBudget.proposalReservation' depends on axioms: [propext]
+'Math115.CompletionRandomBudget.completionReservation' depends on axioms: [propext]
+'Math115.CompletionRandomBudget.totalReservedBits' depends on axioms: [propext]
+'Math115.CompletionRandomBudget.budgetCoefficient' depends on axioms: [propext]
+'Math115.CompletionRandomBudget.clog_two_le_self' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.clog_product_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.clog_power_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.binarySize_positive' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionRandomBudget.combinedSize_at_least_fifteen' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionRandomBudget.restart_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.restart_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.mass_base_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.fineBinary_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.mix_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.walk_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.walk_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.step_precision_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.terminal_precision_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionRandomBudget.finePrecision_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.finePrecision_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.completion_product_factor' depends on axioms: [propext]
+'Math115.CompletionRandomBudget.completion_reservation_polynomial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionRandomBudget.proposal_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.reservation_le_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.reservation_product_factor' depends on axioms: [propext]
+'Math115.CompletionRandomBudget.combined_product_factor' depends on axioms: [propext]
+'Math115.CompletionRandomBudget.totalReservedBits_separated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRandomBudget.totalReservedBits_combined' depends on axioms: [propext, Classical.choice, Quot.sound]

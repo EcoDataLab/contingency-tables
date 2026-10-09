@@ -37,3 +37,4 @@ overview.pdf
 !formal/results/linux-focused-0aa5a61/*.log
 !formal/results/completion-boolean-retry/*.log
 !formal/results/lattice-decoder/*.log
+!formal/results/completion-schedules/*.log

@@ -1,6 +1,6 @@
 # Research status
 
-Updated October 9, 2026 UTC — eighth verified checkpoint, plus isolated Boolean codec/retry and binary-list decoder components.
+Updated October 9, 2026 UTC — eighth verified checkpoint, plus isolated Boolean codec/retry, binary-list decoder, and schedule arithmetic components.
 
 The main ideal-chain bound is now **`80,000d¹⁷`**, for all ordinary equal-total margins, with automatic choice of the reference-completion or empty-block unit branch. Here `d=10+(m+1)(n+1)`. The [completion-oracle formalization](completion-oracle-formalization.md) now proves the full finite-table preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at the smaller outer scales. Its remaining input is an accurate fine-table law; canonical dense-sampler integration, all-state physical-oracle assembly, finite-bit program identification, and runtime remain open. All upstream comparisons use `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; the preserved [initial review](../115/115-contingency-tables-review.md) is unchanged.
 
@@ -78,6 +78,16 @@ is also isolated from the aggregate and Linux results. Dense integration,
 completion/retry cost composition, and the complete outer word program
 remain unverified in the published work.
 
+The [schedule arithmetic](completion-schedules.md) adds 56 isolated audited
+declarations across two compiled modules. Explicit natural walk/retry counts
+and separate transition/terminal precisions give a combined scalar error
+at most `2^(-h-1)`. The full reserved bit bank is bounded by
+`12672000000·37^62·N^85`, where `N=d+ceil(log₂(M+2))+h+3`, for `d≥11,p≤d`.
+This is a bit-count allowance, not a machine-time exponent. The physical
+wrappers and final program identification remain separate uncompiled work.
+The [receipt](../formal/results/completion-schedules/verification.json)
+records both actual source compilations and all 24+32 named audits.
+
 The integrated eighth checkpoint passed **638 Lean declaration audits**: 632 focused plus six standalone, comprising 636 new declarations and two original source statements. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. This checkpoint adds 212 declarations across nine modules for actual finite fibers, prefix-coordinate geometry, the full count bound, quarter acceptance, and retry accuracy. Aggregate compilation and audits used the existing dependency objects; this is not a fresh dependency-closure rebuild.
 
 The unchanged Python implementation retains the seventh checkpoint's **237 passing tests**. All 62 recorded Python source hashes and 20 report hashes were checked again, along with the pinned source bundle. The historical lattice report contains 13 completed tiny fibers, 293 fine tables, one retained budget failure, and ten actual-scale codec roundtrips. Universal acceptance is now a Lean theorem under its stated hypotheses; those finite checks remain separate implementation evidence.
@@ -97,7 +107,7 @@ The eighth checkpoint is published at `0aa5a61140712ada44893b03d805a756e0e9823a`
 Next work:
 
 1. Instantiate the proved completion law from `canonicalDenseDraw_variation`: reindex the table types, convert the real accuracy bound to rational dyadics, and assemble the all-state physical `OracleFamily` and terminal laws using the existing residual-margin lemmas.
-2. Compose the verified binary-list decoder with dense draws and retries, and identify neighbor generation, initialization, and the outer schedule with finite-bit programs; charge random bits, arithmetic, and dense realizer cost. The complete runtime exponent remains open.
+2. Compose the verified binary-list decoder with dense draws and retries, and identify neighbor generation, initialization, and the proved scalar schedule with finite-bit programs; combine reserved-bit, arithmetic, and dense realizer costs. The complete runtime exponent remains open.
 3. Reproduce the new oracle additions on Linux and complete strict Comparator replay on an environment meeting its sandbox requirements.
 4. Close the gap between the free-cutoff `U⁴` upper allowance and the explicit `Ω(U²)` chain obstruction, or improve the transition rule with a justified target law and cost.
 5. Expand same-law tests to application-scale methods, including all setup and tuning costs. Empirical competitiveness of the complete #115 sampler remains unknown.

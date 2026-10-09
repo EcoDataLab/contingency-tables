@@ -1,0 +1,25 @@
+import Math115.CompletionScheduleArithmetic
+#print axioms Math115.CompletionOuterSchedule.successFactor
+#print axioms Math115.CompletionOuterSchedule.gapFactor
+#print axioms Math115.CompletionOuterSchedule.restartCount
+#print axioms Math115.CompletionOuterSchedule.mixExponent
+#print axioms Math115.CompletionOuterSchedule.walkCount
+#print axioms Math115.CompletionOuterSchedule.terminalPrecision
+#print axioms Math115.CompletionOuterSchedule.stepPrecision
+#print axioms Math115.CompletionOuterSchedule.successFactor_positive
+#print axioms Math115.CompletionOuterSchedule.restartCount_positive
+#print axioms Math115.CompletionOuterSchedule.gapFactor_positive
+#print axioms Math115.CompletionOuterSchedule.walkCount_positive
+#print axioms Math115.CompletionOuterSchedule.dyadic_real
+#print axioms Math115.CompletionOuterSchedule.exp_neg_nat_le_dyadic
+#print axioms Math115.CompletionOuterSchedule.dyadic_charge
+#print axioms Math115.CompletionOuterSchedule.natural_charge_bound
+#print axioms Math115.CompletionOuterSchedule.mass_charge_bound
+#print axioms Math115.CompletionOuterSchedule.restart_error_bound
+#print axioms Math115.CompletionOuterSchedule.walk_error_bound
+#print axioms Math115.CompletionOuterSchedule.terminal_error_bound
+#print axioms Math115.CompletionOuterSchedule.step_error_bound
+#print axioms Math115.CompletionOuterSchedule.arithmetic_schedule_half
+#print axioms Math115.CompletionOuterSchedule.arithmetic_schedule
+#print axioms Math115.CompletionOuterSchedule.physicalSmallCount
+#print axioms Math115.CompletionOuterSchedule.physicalMassBase

@@ -19,6 +19,12 @@ isolated audits, proves exact table semantics and polynomial charged work
 for decoding. Canonical dense integration and composed sampler costs remain
 open.
 
+The [explicit schedule arithmetic](completion-schedules.md) also now compiles:
+56 isolated audits cover the walk/retry counts, separate completion
+precisions, four scalar error budgets, and a polynomial bound on the full
+reserved bit bank. Its physical-program identification and composed machine
+cost remain separate obligations.
+
 ## Why equal representation matters
 
 For a small example, take a 2×2 table whose row and column margins are both

@@ -22,6 +22,13 @@ output weight in the binary input size. Its [receipt](../formal/results/lattice-
 and independent frozen-source review also remain separate from the
 aggregate and Linux results. No whole-sampler runtime claim follows.
 
+The [explicit schedule arithmetic](completion-schedules.md) adds two isolated
+modules with 24+32 standard-axiom audits and clean actual-source compilations.
+They bound all four scalar errors and the full reserved random-bit bank.
+The [receipt](../formal/results/completion-schedules/verification.json)
+does not cover the separate physical wrappers or the final outer program.
+These 56 declarations have not changed the aggregate or Linux counts above.
+
 ## Reproduction
 
 From the repository root, with Git, curl, Python 3, and a C toolchain installed:

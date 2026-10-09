@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "reviewed_at_utc": "2026-10-09T19:05:20.140640+00:00",
+  "review_method": "Independent read-only review of frozen sources, theorem contracts, data definitions, arithmetic derivation and hash-qualified authored compiler/audit evidence.",
+  "compiler_invoked_by_reviewer": false,
+  "source_edits_by_reviewer": false,
+  "original_review_sha256": "a9ca6b22690746a77d99bbfbebeac8bb1588fafca6b07ee81f2fdb316e313d29",
+  "modules": [
+    {
+      "module": "Math115.CompletionScheduleArithmetic",
+      "source": "formal/Math115/CompletionScheduleArithmetic.lean",
+      "source_sha256": "44c756f1118b48055ed01f709927d28dd1927f00087fe975c4c71558b1c263f2",
+      "olean_sha256": "85fee1332f4c5533a63c2ac0c63caa8a2367c6e26270d302fb89d491f63751fa",
+      "declaration_count": 24,
+      "audit_driver": "formal/results/completion-schedules/CompletionScheduleArithmetic-AxiomAudit.lean",
+      "audit_driver_sha256": "32d2b5d22db7d8681cf32ffb2f79e05f633105cdbf8185d381ea35f1c339a334",
+      "compile_log": "formal/results/completion-schedules/CompletionScheduleArithmetic-compile.log",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "audit_log": "formal/results/completion-schedules/CompletionScheduleArithmetic-axiom-audit.log",
+      "audit_log_sha256": "78139782012014fc68dab6bc31524651a0d252b9d6a0b023b7977400cc2f937f",
+      "exported_headers_unchanged": true,
+      "data_definition_bodies_unchanged": true,
+      "proof_only_repairs": [
+        "dyadic_charge",
+        "mass_charge_bound",
+        "restart_error_bound",
+        "walk_error_bound"
+      ]
+    },
+    {
+      "module": "Math115.CompletionRandomBudgetArithmetic",
+      "source": "formal/Math115/CompletionRandomBudgetArithmetic.lean",
+      "source_sha256": "278c031d594e109bbce1e3bd96459a08b30dde9dc4506f61beb341b40e48ef0a",
+      "olean_sha256": "e651ab2d582194742d845f37f23a2d6fc615225472ecd5940d70e943c9f21c25",
+      "declaration_count": 32,
+      "audit_driver": "formal/results/completion-schedules/CompletionRandomBudgetArithmetic-AxiomAudit.lean",
+      "audit_driver_sha256": "5d79fcdb5d450fbe656cba3e99a8407d58b4e2b8d39eb7162e51d61317b613e6",
+      "compile_log": "formal/results/completion-schedules/CompletionRandomBudgetArithmetic-compile.log",
+      "compile_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "audit_log": "formal/results/completion-schedules/CompletionRandomBudgetArithmetic-axiom-audit.log",
+      "audit_log_sha256": "ae339b042e416d054baf174f12baea430df13592d5c9d97239b60398295644dc",
+      "exported_headers_unchanged": true,
+      "data_definition_bodies_unchanged": true,
+      "proof_only_repairs": [
+        "mix_polynomial"
+      ]
+    }
+  ],
+  "evidence_checks": {
+    "source_object_log_and_runner_hashes_match": true,
+    "clean_compile_logs_empty": true,
+    "exact_24_plus_32_named_audits": true,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "no_sorryAx": true,
+    "scalar_four_term_budget_checked": true,
+    "d12_binary_inflation_and_2d_log_mass_retained": true,
+    "separated_and_combined_reservation_coefficients_checked": true,
+    "proof_repairs_do_not_change_contracts_or_data": true
+  },
+  "mathematical_checks": [
+    "R=2(1+p^2)(h+3); T=80000d^17*(h+3+clog2R+2d*clog2base). Full 2d log-mass term is retained.",
+    "Each of restart, walk mass, transition approximation, and terminal approximation contributes at most dyadic(h+3); 4*dyadic(h+3)=dyadic(h+1). gamma<=1 suffices for the scalar bound since its remaining factor is nonnegative.",
+    "Terminal precision=h+3+clog2R; step precision adds clog2T; natural ceilings pay complete R and R*T multiplicative charges.",
+    "Fine C=d^12*(M+3d^2+2d) and C+2<=4d^14*(M+2); fineBinaryBound<=binarySize(M)+14clog2d+2. No dilation-bit loss.",
+    "For d>=11,p<=d,N=d+clog2(M+2)+h+3>=15: mix<=6dN, T<=480000d^18N, step<=21N, terminal<=2N, inner finePrecision<=22N+9.",
+    "Completion reservation<=2200*37^62*N^63; proposal clog2(32d^2)<=3N fits the same envelope.",
+    "Whole bank W=R*(T*(s+Cs)+Ct) includes every transition proposal/completion word and each fresh terminal word. Bound factor 3 combines the three reservations without assuming early stopping.",
+    "Coefficient 3*4*480000*2200=12672000000; separated allowance is coefficient*37^62*d^20*(h+3)*N^64; d,h+3<=N gives degree85.",
+    "Degree85 concerns full reserved fair-bit bank length, including ignored/rejected/holding words. It is not an operation, memory, inspected-bit, or measured runtime exponent."
+  ],
+  "independent_integer_checks": {
+    "cases": 2240,
+    "method": "Independent unmutating Python integer implementation of current scalar formulas and intermediate inequalities; no sampler or compiler invocation",
+    "result": "All intermediate arithmetic and reserved bounds passed; exact108-digit coefficient and all three saved bank-count examples reproduced."
+  },
+  "findings": [],
+  "limits": [
+    "Compile and audit evidence was independently read and hash-checked, not rerun by this reviewer.",
+    "Lean/mathlib and the unchanged pinned source cache remain trusted; this is not Comparator replay or cross-host verification.",
+    "The 2+6 physical wrappers retain historical split hashes and source contracts but remain separately uncompiled; no compiled physical law/program identification is asserted by this review.",
+    "The formulas reviewed use the frozen global d,d^12 baseline; adaptive parameter choices require separate semantics/reservation proofs.",
+    "Reserved-bit length and four scalar error inequalities do not by themselves prove a full outer finite-bit machine runtime."
+  ]
+}

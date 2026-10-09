@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "status": "passed_isolated_arithmetic_modules",
+  "recorded_at_utc": "2026-10-09T19:09:48.645561+00:00",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "platform": "local macOS",
+  "method": "Direct pinned Lean -j1 -DautoImplicit=false on actual source modules. Existing dependency objects and official package cache were reused; no upstream modules restored for these two modules. Not a fresh full closure, Linux reproduction, or Comparator replay.",
+  "module_count": 2,
+  "total_audited_declarations": 56,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "strict_audit_method": "scripts/check_lean_axioms.py; every requested declaration exactly once in driver order, no other compiler output, standard axiom allowlist.",
+  "strict_checker_sha256": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+  "authored_runner_sha256": "d7e1c877c77f66db014146ea83248cf563d7fefb1da65e13737fef6d018cc0eb",
+  "modules": [
+    {
+      "module": "Math115.CompletionScheduleArithmetic",
+      "namespace": "Math115.CompletionOuterSchedule",
+      "source": "formal/Math115/CompletionScheduleArithmetic.lean",
+      "source_sha256": "44c756f1118b48055ed01f709927d28dd1927f00087fe975c4c71558b1c263f2",
+      "olean_sha256": "85fee1332f4c5533a63c2ac0c63caa8a2367c6e26270d302fb89d491f63751fa",
+      "declaration_count": 24,
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "elapsed_seconds": 23.185,
+        "argv": [
+          "../.tools/elan/bin/lake",
+          "env",
+          "lean",
+          "-j1",
+          "-DautoImplicit=false",
+          "-o",
+          ".lake/build/lib/lean/Math115/CompletionScheduleArithmetic.olean",
+          "-i",
+          ".lake/build/lib/lean/Math115/CompletionScheduleArithmetic.ilean",
+          "Math115/CompletionScheduleArithmetic.lean"
+        ],
+        "cwd": "formal",
+        "log": "formal/results/completion-schedules/CompletionScheduleArithmetic-compile.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "log_empty": true,
+        "authored_receipt_sha256": "7ce3dc163d33a73d00668864dd3a1406c3253f5d29e0d075d2839bbe04e9f7ac"
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "driver": "formal/results/completion-schedules/CompletionScheduleArithmetic-AxiomAudit.lean",
+        "driver_sha256": "32d2b5d22db7d8681cf32ffb2f79e05f633105cdbf8185d381ea35f1c339a334",
+        "log": "formal/results/completion-schedules/CompletionScheduleArithmetic-axiom-audit.log",
+        "log_sha256": "78139782012014fc68dab6bc31524651a0d252b9d6a0b023b7977400cc2f937f",
+        "elapsed_seconds": 28.453,
+        "declared_and_reported_count": 24,
+        "exact_named_order": true,
+        "only_allowlisted_axioms": true,
+        "sorryAx_absent": true,
+        "driver_copy_matches_executed_bytes": true,
+        "authored_receipt_sha256": "6819dcb2291f961aebace69195c5e402db2de790ddcb1c537d53378e87a32660"
+      }
+    },
+    {
+      "module": "Math115.CompletionRandomBudgetArithmetic",
+      "namespace": "Math115.CompletionRandomBudget",
+      "source": "formal/Math115/CompletionRandomBudgetArithmetic.lean",
+      "source_sha256": "278c031d594e109bbce1e3bd96459a08b30dde9dc4506f61beb341b40e48ef0a",
+      "olean_sha256": "e651ab2d582194742d845f37f23a2d6fc615225472ecd5940d70e943c9f21c25",
+      "declaration_count": 32,
+      "compile": {
+        "status": "passed",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "elapsed_seconds": 50.123,
+        "argv": [
+          "../.tools/elan/bin/lake",
+          "env",
+          "lean",
+          "-j1",
+          "-DautoImplicit=false",
+          "-o",
+          ".lake/build/lib/lean/Math115/CompletionRandomBudgetArithmetic.olean",
+          "-i",
+          ".lake/build/lib/lean/Math115/CompletionRandomBudgetArithmetic.ilean",
+          "Math115/CompletionRandomBudgetArithmetic.lean"
+        ],
+        "cwd": "formal",
+        "log": "formal/results/completion-schedules/CompletionRandomBudgetArithmetic-compile.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "log_empty": true,
+        "authored_receipt_sha256": "4a6a97fc6b5305e069e614c9803fbcbc9bb3197dc143c7c94de68817a31a3009"
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "driver": "formal/results/completion-schedules/CompletionRandomBudgetArithmetic-AxiomAudit.lean",
+        "driver_sha256": "5d79fcdb5d450fbe656cba3e99a8407d58b4e2b8d39eb7162e51d61317b613e6",
+        "log": "formal/results/completion-schedules/CompletionRandomBudgetArithmetic-axiom-audit.log",
+        "log_sha256": "ae339b042e416d054baf174f12baea430df13592d5c9d97239b60398295644dc",
+        "elapsed_seconds": 37.912,
+        "declared_and_reported_count": 32,
+        "exact_named_order": true,
+        "only_allowlisted_axioms": true,
+        "sorryAx_absent": true,
+        "driver_copy_matches_executed_bytes": true,
+        "authored_receipt_sha256": "62d1d872d279fe30894ff2fded495f4b439e7fa4e02a91ffcf9fb2391210ad93"
+      }
+    }
+  ],
+  "scope": "Explicit computable natural schedule bounding all four scalar error terms; explicit polynomial allowance for the total reserved fair-bit bank.",
+  "reservation_bound": {
+    "assumptions": "d>=11, p<=d, M,h natural; b=clog2(M+2), N=d+b+h+3",
+    "separated": "W <= 12672000000 * 37^62 * d^20 * (h+3) * N^64",
+    "combined": "W <= 12672000000 * 37^62 * N^85",
+    "quantity": "Reserved fair bits only; not runtime, operations, expected inspected bits, or a practical performance estimate."
+  },
+  "excluded_from_checkpoint": [
+    "Two CompletionOuterSchedule physical dense-law wrappers",
+    "Six CompletionRandomBudget physical identification/wrappers",
+    "New dense-oracle integration and complete physical outer program",
+    "Outer finite-bit machine realization or full sampler runtime",
+    "Fresh dependency-closure/Linux/Comparator validation"
+  ],
+  "python_checkpoint": "Unchanged 237-test Python record remains separate historical evidence; no Python suite rerun for this arithmetic checkpoint.",
+  "independent_review": "formal/results/completion-schedules/source-review.json",
+  "artifacts_sha256": {
+    "formal/results/completion-schedules/CompletionScheduleArithmetic-AxiomAudit.lean": "32d2b5d22db7d8681cf32ffb2f79e05f633105cdbf8185d381ea35f1c339a334",
+    "formal/results/completion-schedules/CompletionScheduleArithmetic-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/completion-schedules/CompletionScheduleArithmetic-axiom-audit.log": "78139782012014fc68dab6bc31524651a0d252b9d6a0b023b7977400cc2f937f",
+    "formal/results/completion-schedules/CompletionRandomBudgetArithmetic-AxiomAudit.lean": "5d79fcdb5d450fbe656cba3e99a8407d58b4e2b8d39eb7162e51d61317b613e6",
+    "formal/results/completion-schedules/CompletionRandomBudgetArithmetic-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/completion-schedules/CompletionRandomBudgetArithmetic-axiom-audit.log": "ae339b042e416d054baf174f12baea430df13592d5c9d97239b60398295644dc",
+    "formal/results/completion-schedules/source-review.json": "a57a594ee8b22d17ceb38ec37916dae03b1df02a16d59ccf315d120c92b21fca"
+  }
+}
