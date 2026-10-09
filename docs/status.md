@@ -1,6 +1,6 @@
 # Research status
 
-Updated October 9, 2026 UTC — eighth verified checkpoint, plus an isolated Boolean codec/retry component.
+Updated October 9, 2026 UTC — eighth verified checkpoint, plus isolated Boolean codec/retry and binary-list decoder components.
 
 The main ideal-chain bound is now **`80,000d¹⁷`**, for all ordinary equal-total margins, with automatic choice of the reference-completion or empty-block unit branch. Here `d=10+(m+1)(n+1)`. The [completion-oracle formalization](completion-oracle-formalization.md) now proves the full finite-table preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at the smaller outer scales. Its remaining input is an accurate fine-table law; canonical dense-sampler integration, all-state physical-oracle assembly, finite-bit program identification, and runtime remain open. All upstream comparisons use `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; the preserved [initial review](../115/115-contingency-tables-review.md) is unchanged.
 
@@ -67,8 +67,15 @@ passed direct local compilation, 25 standard-axiom declaration audits, six
 native evaluations, and an independent frozen-source/evidence review. It
 identifies the actual signed table trial and consecutive independent word
 bank with the retry law for a supplied fine draw. Its [receipt](../formal/results/completion-boolean-retry/verification.json)
-is separate from the checkpoint-8 aggregate and Linux results below. Dense
-integration, binary list-machine costs, and the complete outer word program
+is separate from the checkpoint-8 aggregate and Linux results below.
+
+The subsequent [binary-list decoder](completion-list-decoder.md) passed
+direct compilation, 52 standard-axiom audits, nine native boundary checks,
+and independent source/evidence review. It proves exact agreement with the
+table decoder and polynomial charged TreeTyped work in the binary input
+size. Its [receipt](../formal/results/lattice-decoder/verification.json)
+is also isolated from the aggregate and Linux results. Dense integration,
+completion/retry cost composition, and the complete outer word program
 remain unverified in the published work.
 
 The integrated eighth checkpoint passed **638 Lean declaration audits**: 632 focused plus six standalone, comprising 636 new declarations and two original source statements. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. This checkpoint adds 212 declarations across nine modules for actual finite fibers, prefix-coordinate geometry, the full count bound, quarter acceptance, and retry accuracy. Aggregate compilation and audits used the existing dependency objects; this is not a fresh dependency-closure rebuild.
@@ -90,7 +97,7 @@ The eighth checkpoint is published at `0aa5a61140712ada44893b03d805a756e0e9823a`
 Next work:
 
 1. Instantiate the proved completion law from `canonicalDenseDraw_variation`: reindex the table types, convert the real accuracy bound to rational dyadics, and assemble the all-state physical `OracleFamily` and terminal laws using the existing residual-margin lemmas.
-2. Connect the executable typed codec/retries to binary list realizers and identify neighbor generation, initialization, and the outer schedule with finite-bit programs; charge random bits, arithmetic, and dense realizer cost. The complete runtime exponent remains open.
+2. Compose the verified binary-list decoder with dense draws and retries, and identify neighbor generation, initialization, and the outer schedule with finite-bit programs; charge random bits, arithmetic, and dense realizer cost. The complete runtime exponent remains open.
 3. Reproduce the new oracle additions on Linux and complete strict Comparator replay on an environment meeting its sandbox requirements.
 4. Close the gap between the free-cutoff `U⁴` upper allowance and the explicit `Ω(U²)` chain obstruction, or improve the transition rule with a justified target law and cost.
 5. Expand same-law tests to application-scale methods, including all setup and tuning costs. Empirical competitiveness of the complete #115 sampler remains unknown.

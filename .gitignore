@@ -36,3 +36,4 @@ overview.pdf
 !formal/results/lattice-completion-accuracy/*.log
 !formal/results/linux-focused-0aa5a61/*.log
 !formal/results/completion-boolean-retry/*.log
+!formal/results/lattice-decoder/*.log

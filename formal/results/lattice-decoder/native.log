@@ -1,0 +1,9 @@
+PASS empty matrix
+PASS zero columns
+PASS zero divisor rejects nonempty
+PASS single accepted cell
+PASS negative signed cell rejects
+PASS balanced 2x2
+PASS nonsymmetric 2x2 order
+PASS ragged total semantics
+PASS huge binary divisor bounded by input shape

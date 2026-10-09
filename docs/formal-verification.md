@@ -15,6 +15,13 @@ passed 25 declaration audits and six native Lean evaluations after checkpoint
 and frozen-source review are separate from the 638 aggregate audits and the
 632-declaration Linux result. It is not yet included in the aggregate target.
 
+The subsequent [binary-list decoder](completion-list-decoder.md) passed
+52 declaration audits and nine native boundary checks. It proves exact
+agreement with the typed table trial and polynomial TreeTyped work and
+output weight in the binary input size. Its [receipt](../formal/results/lattice-decoder/verification.json)
+and independent frozen-source review also remain separate from the
+aggregate and Linux results. No whole-sampler runtime claim follows.
+
 ## Reproduction
 
 From the repository root, with Git, curl, Python 3, and a C toolchain installed:

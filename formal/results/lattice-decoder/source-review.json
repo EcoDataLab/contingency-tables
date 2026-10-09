@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "reviewer": "independent source-review subagent oracle_review",
+  "review_kind": "mathematical source review plus independent authored-evidence readback",
+  "status": "passed",
+  "reviewed_utc": "2026-10-09T18:56:14.202310+00:00",
+  "compiled_state": "author verified frozen source; reviewer did not compile",
+  "source": "formal/Math115/LatticeCompletionProgram.lean",
+  "source_sha256": "1160621ce0bba55cccc0cee0ab7beac443af6f577131a09b7c597f2be4cc1adb",
+  "olean_sha256": "cd1af795511710e0d496e75c221ebd54f9e8e17c7212e92d143a8ce460255d01",
+  "reviewed_evidence_sha256": {
+    "formal/results/lattice-completion-program/verification.json": "9d405264e05c5eb4f4a4aed5775503ced89972d8d36e6c8568a4227266c0114b",
+    "formal/results/lattice-completion-program/compile-3.json": "2ab55e13ea604c79cbfd5d8d7d7668cb49777e6cfff9de0a20bb3effaef419f1",
+    "formal/results/lattice-completion-program/compile-3.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/lattice-completion-program/axioms.json": "c321b05cb8447c7afb05ab2ff629253788c6d0b96efaeab147d5c285d5f95d54",
+    "formal/results/lattice-completion-program/axioms.log": "a28cde8b087286a8f35a3421733d6471041f9499320c5408924684467b0cb1b0",
+    "formal/results/lattice-completion-program/native.json": "f339226db7161f665dbf546f25070a3b650ced5444de03ee6e4fd9bb96664df7",
+    "formal/results/lattice-completion-program/native.log": "df64f95a3620b453d2fc0c99d14706810bb72a529330e2a24eb4a80482e8ebeb",
+    "formal/results/lattice-completion-program/AxiomCheck.lean": "c738514c3c032d0cfef76592d098e236f161a4b5a441f322b53378c07d27cb20",
+    "formal/results/lattice-completion-program/BoundaryCheck.lean": "b0f142f1e0fbb8922e8e24cdb7c76af24273aa3700e765ce6ea9e41e85eec8db",
+    "formal/results/lattice-completion-program/prerequisite-restore.json": "84fef2b770286d59fff6c316e5dea8301604bf56cd5812630a618eab810d53e4"
+  },
+  "evidence_checks": {
+    "compile_source_and_log_hashes_match": true,
+    "compile_log_empty": true,
+    "standalone_phase_json_equals_embedded_metadata": true,
+    "strict_audit_exact_driver_order": true,
+    "strict_audit_export_count": 52,
+    "strict_audit_allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "native_driver_and_exact_pass_log_count": 9,
+    "restored_prerequisite_count": 174,
+    "all_restored_source_and_log_hashes_match": true,
+    "reviewer_ran_compiler": false,
+    "reviewer_ran_native_driver": false,
+    "comparator_replay": false,
+    "cross_host_coverage": false
+  },
+  "findings": [
+    {
+      "id": "signed-rejection-before-truncation",
+      "source_locations": [
+        "formal/Math115/LatticeCompletionProgram.lean:62",
+        "formal/Math115/LatticeCompletionProgram.lean:89",
+        "formal/Math115/LatticeCompletionProgram.lean:242",
+        "formal/Math115/LatticeCompletionProgram.lean:158"
+      ],
+      "result": "verified",
+      "detail": "Positive diagonal totals are compared to the negative diagonal plus two before Nat subtraction. A negative signed value may numerically truncate to zero but retains false; finish rejects if any tag is false. cell_code identifies both the sign test and Int.toNat value independently."
+    },
+    {
+      "id": "bounded-list-enumeration",
+      "source_locations": [
+        "formal/Math115/LatticeCompletionProgram.lean:22",
+        "formal/Math115/LatticeCompletionProgram.lean:102",
+        "formal/Math115/LatticeCompletionProgram.lean:113",
+        "formal/Math115/LatticeCompletionProgram.lean:128"
+      ],
+      "result": "verified",
+      "detail": "All ranges use actual supplied list lengths, including each row own length for ragged matrices. Prefixes use takeFast and sums, row retrieval uses getDFast. Binary divisor, cell values and prefix requests do not become numeric-length enumerations. Repeated scans/copies are accounted for by composition/mapWith polynomial costs."
+    },
+    {
+      "id": "binary-tree-machine-charge",
+      "source_locations": [
+        "formal/Math115/LatticeCompletionProgram.lean:172",
+        "formal/Math115/LatticeCompletionProgram.lean:176",
+        ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/TreeTyped.lean:26",
+        ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Complexity/TreePolynomial.lean:27"
+      ],
+      "result": "verified",
+      "detail": "decodeRealizer contains a concrete register-tree program and Realizes execution certificate. PolynomialTime is existential polynomial in encoded input weight bounding realizer cost plus encoded output weight. This is the primary TreeTyped model, not a unit-cost assumption about large natural arithmetic or a timing bound for native Lean evaluation."
+    },
+    {
+      "id": "ordered-finite-code-seam",
+      "source_locations": [
+        "formal/Math115/LatticeCompletionProgram.lean:205",
+        "formal/Math115/LatticeCompletionProgram.lean:263",
+        "formal/Math115/LatticeCompletionProgram.lean:322",
+        "formal/Math115/LatticeCompletionProgram.lean:330"
+      ],
+      "result": "verified",
+      "detail": "matrixCode is nested List.ofFn with unchanged Fin row/column order. Out-of-bounds matrix entries are zero. floorPrefix_code uses nonnegative prefix Nat/Int division compatibility. decode_code is pointwise for every Fin a x Fin b natural matrix, every k including zero; decode_fineTable requires k>0 and an actual FineTable, and returns exactly the actual ordinary Table trial code. No arbitrary equivalence, restricted image or index-order invariance is introduced."
+    },
+    {
+      "id": "zero-and-malformed-shape",
+      "source_locations": [
+        "formal/Math115/LatticeCompletionProgram.lean:113",
+        "formal/Math115/LatticeCompletionProgram.lean:140",
+        "formal/Math115/LatticeCompletionProgram.lean:322",
+        "formal/results/lattice-completion-program/BoundaryCheck.lean:8"
+      ],
+      "result": "verified",
+      "detail": "Empty matrices and empty rows accept vacuously; any existing cell at k=0 has signed result -2 and causes rejection. Successful arbitrary/ragged output preserves each supplied row length. Raw decode does not assert margin feasibility of malformed or arbitrary inputs. With a=0, b is erased by matrixCode [], but the pointwise equality remains valid and no shape-recovery inverse is asserted. Finite-code equalities are not a new uniformFin sampler/law theorem."
+    },
+    {
+      "id": "scope-separation",
+      "result": "verified",
+      "detail": "This module proves decoder execution, charged polynomial cost/output size and exact raw/fine-table value semantics. Dense draw accuracy, fresh retry word laws, dense/retry runtime, full outer sampler cost and cross-host/Comparator execution remain separate. Native boundary tests illustrate nine examples and do not replace the universal statements."
+    }
+  ],
+  "blockers": [],
+  "open_bridges": [
+    "Polynomial charged dense sampling and bounded retry composition",
+    "Full outer finite-word sampler semantics and charged cost",
+    "Fresh random-word/accuracy law composition belongs to other modules"
+  ],
+  "trusted_boundary": "Pinned Lean 4.34.1 kernel/toolchain and mathlib cache; standard axioms only; recorded local execution, not independent rerun."
+}

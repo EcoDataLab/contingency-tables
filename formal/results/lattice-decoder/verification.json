@@ -1,0 +1,504 @@
+{
+  "schema_version": 1,
+  "status": "passed_isolated_module",
+  "recorded_at_utc": "2026-10-09T18:56:17.668045+00:00",
+  "source_sha256": {
+    "formal/Math115/LatticeCompletionProgram.lean": "1160621ce0bba55cccc0cee0ab7beac443af6f577131a09b7c597f2be4cc1adb"
+  },
+  "olean_sha256": "cd1af795511710e0d496e75c221ebd54f9e8e17c7212e92d143a8ce460255d01",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "platform": "local macOS",
+  "method": "Direct pinned Lean -j1 -DautoImplicit=false. Restored 174 missing original upstream modules; remaining project objects and official package cache were reused. This was not a fresh complete dependency-closure build or Comparator replay.",
+  "phases": {
+    "compile-3": {
+      "phase": "compile-3",
+      "source_sha256": "1160621ce0bba55cccc0cee0ab7beac443af6f577131a09b7c597f2be4cc1adb",
+      "argv": [
+        "<repo>/.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-R",
+        "<repo>/formal",
+        "<repo>/formal/Math115/LatticeCompletionProgram.lean",
+        "-o",
+        "<repo>/formal/.lake/build/lib/lean/Math115/LatticeCompletionProgram.olean"
+      ],
+      "toolchain": "leanprover/lean4:v4.34.1",
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 30.643,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_unchanged": true,
+      "executed_source": "<repo>/formal/Math115/LatticeCompletionProgram.lean",
+      "published_log": "formal/results/lattice-decoder/compile.log"
+    },
+    "axioms": {
+      "phase": "axioms",
+      "source_sha256": "c738514c3c032d0cfef76592d098e236f161a4b5a441f322b53378c07d27cb20",
+      "argv": [
+        "<repo>/.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "<repo>/formal/results/lattice-completion-program/AxiomCheck.lean"
+      ],
+      "toolchain": "leanprover/lean4:v4.34.1",
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 21.431,
+      "log_sha256": "a28cde8b087286a8f35a3421733d6471041f9499320c5408924684467b0cb1b0",
+      "source_unchanged": true,
+      "executed_source": "<repo>/formal/results/lattice-completion-program/AxiomCheck.lean",
+      "published_log": "formal/results/lattice-decoder/axioms.log",
+      "published_driver": "formal/results/lattice-decoder/AxiomCheck.lean",
+      "driver_copy_matches_executed_source": true
+    },
+    "native": {
+      "phase": "native",
+      "source_sha256": "b0f142f1e0fbb8922e8e24cdb7c76af24273aa3700e765ce6ea9e41e85eec8db",
+      "argv": [
+        "<repo>/.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "<repo>/formal/results/lattice-completion-program/BoundaryCheck.lean"
+      ],
+      "toolchain": "leanprover/lean4:v4.34.1",
+      "status": "passed",
+      "returncode": 0,
+      "seconds": 19.007,
+      "log_sha256": "df64f95a3620b453d2fc0c99d14706810bb72a529330e2a24eb4a80482e8ebeb",
+      "source_unchanged": true,
+      "executed_source": "<repo>/formal/results/lattice-completion-program/BoundaryCheck.lean",
+      "published_log": "formal/results/lattice-decoder/native.log",
+      "published_driver": "formal/results/lattice-decoder/BoundaryCheck.lean",
+      "driver_copy_matches_executed_source": true
+    }
+  },
+  "audit": {
+    "declaration_count": 52,
+    "declarations": [
+      {
+        "name": "Math115.LatticeCompletionProgram.rowPrefix",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.rowPrefixRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_rowPrefix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.prefixNat",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.prefixRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_prefix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.CellInput",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.floorPrefix",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.floorPrefixRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_floorPrefix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.cellTotals",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.cellTotalsRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_cellTotals",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.cell",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.cellRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_cell",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.indices",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.indicesRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_indices",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.rowCells",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.rowCellsRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_rowCells",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.cells",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.cellsRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_cells",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.accepted",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.acceptedRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_accepted",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.values",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.valuesRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_values",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.finish",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.finishRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_finish",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.decode",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.decodeRealizer",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.polynomial_decode",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.sum_take_getD",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.prefix_range",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.matrixEntry_code_zero",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.prefix_code",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.floorPrefix_code",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.cellTotals_code",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.cell_code",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.map_range_ofFn",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.rowCells_code",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.cells_code",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.all_ofFn",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.accepted_code",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.values_code",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.decode_code",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionProgram.decode_fineTable",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "native_evaluation": {
+    "case_count": 9,
+    "outputs": [
+      "PASS empty matrix",
+      "PASS zero columns",
+      "PASS zero divisor rejects nonempty",
+      "PASS single accepted cell",
+      "PASS negative signed cell rejects",
+      "PASS balanced 2x2",
+      "PASS nonsymmetric 2x2 order",
+      "PASS ragged total semantics",
+      "PASS huge binary divisor bounded by input shape"
+    ],
+    "scope": "Executable Lean definitions on supplied boundary cases; separate from universal proofs and not a whole-sampler timing."
+  },
+  "scope": "A total binary natural-list decoder; polynomial TreeTyped charged machine work and output weight; exact accepted/rejected value equality with the typed decoder and actual fine-table trial.",
+  "remaining_work": "Canonical dense-law integration, physical all-state completion and outer program integration, full sampler cost, Linux reproduction of this module, and strict Comparator replay.",
+  "aggregate_integration": "Separate from checkpoint8 aggregate638 and Linux632; also separate from the preceding Boolean module25. Not yet imported by Math115.lean/AxiomAudit.lean.",
+  "original_authored_receipt_sha256": {
+    "verification.json": "9d405264e05c5eb4f4a4aed5775503ced89972d8d36e6c8568a4227266c0114b",
+    "compile-3.json": "2ab55e13ea604c79cbfd5d8d7d7668cb49777e6cfff9de0a20bb3effaef419f1",
+    "axioms.json": "c321b05cb8447c7afb05ab2ff629253788c6d0b96efaeab147d5c285d5f95d54",
+    "native.json": "f339226db7161f665dbf546f25070a3b650ced5444de03ee6e4fd9bb96664df7",
+    "prerequisite-restore.json": "84fef2b770286d59fff6c316e5dea8301604bf56cd5812630a618eab810d53e4"
+  },
+  "artifacts_sha256": {
+    "formal/results/lattice-decoder/AxiomCheck.lean": "c738514c3c032d0cfef76592d098e236f161a4b5a441f322b53378c07d27cb20",
+    "formal/results/lattice-decoder/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/lattice-decoder/native.log": "df64f95a3620b453d2fc0c99d14706810bb72a529330e2a24eb4a80482e8ebeb",
+    "formal/results/lattice-decoder/BoundaryCheck.lean": "b0f142f1e0fbb8922e8e24cdb7c76af24273aa3700e765ce6ea9e41e85eec8db",
+    "formal/results/lattice-decoder/axioms.log": "a28cde8b087286a8f35a3421733d6471041f9499320c5408924684467b0cb1b0",
+    "formal/results/lattice-decoder/source-review.json": "1ae203798153b3b71dfe347d19e2770646d3e7bf5c85a2463e08e6f4e63d784e"
+  },
+  "independent_review": "formal/results/lattice-decoder/source-review.json"
+}

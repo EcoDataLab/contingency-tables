@@ -13,8 +13,11 @@ state's completion problem, and finite-bit programs with charged costs.
 
 An additional [executable Boolean codec/retry component](completion-boolean-program.md)
 now identifies the actual signed decoder and an ordered bank of independent
-trial words with the retry law. Its 25 isolated audits supplement checkpoint 8;
-canonical dense integration and binary list-machine costs remain open.
+trial words with the retry law. Its 25 isolated audits supplement checkpoint 8.
+The subsequent [binary-list decoder](completion-list-decoder.md), with 52
+isolated audits, proves exact table semantics and polynomial charged work
+for decoding. Canonical dense integration and composed sampler costs remain
+open.
 
 ## Why equal representation matters
 
@@ -126,8 +129,8 @@ attributed in the [dilation guide](completion-oracle-dilation.md).
    fiber. Existing residual-margin lemmas provide the strong margins;
    dimension bounds, fallbacks, and unique-completion branches still need
    to be assembled into the `OracleFamily` interface.
-3. Connect the now-executable typed codec and Boolean retries to binary list
-   realizers, then compose random-bit, arithmetic, dense-call, and outer-walk
+3. Compose the verified binary-list decoder with Boolean retries and dense
+   draws, then charge random bits, arithmetic, dense-call, and outer-walk
    costs.
 
 The `d¹⁷` result continues to describe an auxiliary-chain inverse gap.
