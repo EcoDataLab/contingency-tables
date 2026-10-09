@@ -110,7 +110,7 @@ bash scripts/verify_lean.sh standalone
 bash scripts/verify_lean.sh focused
 ```
 
-The [Linux verification record](docs/linux-verification.md) includes an independent focused build at `5b37032`, with all 420 checkpoint-7 focused audits passing, and a successful full original-theorem build at `5e5d6ef`, auditing all three original exports. Thor separately reproduced the earlier `b14082b` checkpoint: 128 tests, 100 focused modules, and 68 audits. These runs exclude the eighth checkpoint's finite-table geometry and accuracy additions. Strict Comparator replay remains unavailable on the tested hosted runner because its sandbox ABI is too old; no Comparator pass is claimed.
+The [Linux verification record](docs/linux-verification.md) includes an independent focused build at `0aa5a61`, with all 632 checkpoint-8 focused audits passing and 73 recorded source hashes matched to that commit. It covers the finite-table geometry, quarter acceptance, and conditional completion accuracy. A separate full original-theorem build at `5e5d6ef` audited all three original exports. Thor also reproduced the earlier `b14082b` checkpoint: 128 tests, 100 focused modules, and 68 audits. Strict Comparator replay remains unavailable on the tested hosted runner because its sandbox ABI is too old; no Comparator pass is claimed.
 
 ## A concrete CBEI example
 

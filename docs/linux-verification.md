@@ -164,15 +164,23 @@ The runner's measured ABI is the decisive evidence; a distribution label alone i
 
 A fresh guest with a pinned Linux 7.1-or-newer kernel and a real systemd user session is a possible later route using [QEMU system emulation](https://www.qemu.org/docs/master/system/target-i386.html). It would need an independently checked guest image, kernel configuration, acceleration availability, and complete sandbox probes before replay. That adds a guest-build and maintenance task, so it is deferred while the ordinary focused/full Linux builds run. A container sharing the present runner kernel cannot supply the missing ABI. No VM installation, paid host, new credentials, or weakened sandbox was introduced.
 
-## Checkpoint 8 replication in progress
+## Independent checkpoint 8 replication
 
 [Focused run 37963647335](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963647335)
-was dispatched at `0aa5a61140712ada44893b03d805a756e0e9823a` on 9 October 2026 UTC.
-It targets the complete 632-declaration focused audit, including the new
-finite-table geometry, quarter acceptance, and retry-accuracy modules. It
-is still in progress; no completed Linux verification is claimed for this
-checkpoint. The local aggregate and 638 audits passed, with separate
-[receipts](../formal/results/verification.json). Its
+passed at `0aa5a61140712ada44893b03d805a756e0e9823a` on 9 October 2026 UTC.
+The fresh job took 14 minutes 9 seconds and audited all **632 selected focused
+declarations**, including the finite-table fibers, geometric count comparison,
+quarter acceptance, and conditional completion accuracy. The
+[saved receipt](../formal/results/linux-focused-0aa5a61/verification.json)
+matches **73 environment-recorded source hashes** to that exact commit.
+
+The complete [verification log](../formal/results/linux-focused-0aa5a61/verification.log)
+was retrieved through the authenticated GitHub job-log connector. Timestamp
+prefixes were removed; environment and outcome JSON were parsed from the same
+decoded log. The artifact archive digest is retained as API metadata; the
+archive was not downloaded or digest-verified. All audits passed the standard
+foundational-axiom allowlist. Official Mathlib cache artifacts remain trusted.
+This run excludes the six standalone audits, subsequent dense-sampler and
+finite-bit bridges, and strict Comparator replay. The separate
 [Python CI](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963605116)
-passed on Python 3.10, 3.12, and 3.13. This run does not request strict
-Comparator replay. Inspect the saved run before starting any replacement.
+passed on Python 3.10, 3.12, and 3.13.

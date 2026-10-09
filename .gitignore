@@ -34,3 +34,4 @@ overview.pdf
 !formal/results/completion-count-bound/*.log
 !formal/results/completion-acceptance/*.log
 !formal/results/lattice-completion-accuracy/*.log
+!formal/results/linux-focused-0aa5a61/*.log

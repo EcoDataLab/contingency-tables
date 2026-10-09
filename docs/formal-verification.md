@@ -343,6 +343,7 @@ Those integrated checks use existing compiled dependency outputs. This is
 | Checkpoint 8 dependency inventory | 228 source modules: 178 unchanged upstream and 50 local; 50 trusted external import entries | [Verification scope](../formal/results/verification.json) and [source provenance](../formal/results/provenance.json) |
 | Checkpoint 8 focused audit | 632 selected declarations passed | [Eighth-checkpoint log](../formal/results/eighth-checkpoint.log) |
 | Checkpoint 8 standalone audit | Six selected declarations passed | [Eighth-checkpoint log](../formal/results/eighth-checkpoint.log) |
+| Independent checkpoint 8 Linux build | Fresh focused build and all 632 focused audits passed at `0aa5a61`; 73 recorded source hashes match that commit | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37963647335) and [receipt](../formal/results/linux-focused-0aa5a61/verification.json) |
 | Independent checkpoint 7 Linux build | Fresh focused build and all 420 focused audits passed at `5b37032`; excludes checkpoint 8 | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805) and [receipt](../formal/results/linux-focused-5b37032/verification.json) |
 | Checkpoint 7 aggregate | `Math115.lean` compiled; both axiom audits passed | [Seventh-checkpoint log](../formal/results/seventh-checkpoint.log) |
 | Checkpoint 7 dependency inventory | 219 source modules: 178 unchanged upstream and 41 local; 47 trusted external import entries | [Historical source provenance](https://github.com/EcoDataLab/contingency-tables/blob/5b3703234e7f6cd88e6b6f6b3dab85510ba4366f/formal/results/provenance.json) |
@@ -380,8 +381,8 @@ are recorded in provenance, and the focused manifest retains the original
 revision entries. The separate successful original-theorem Linux run audits
 three original sampling/counting exports at its own recorded commit. It is
 neither a Comparator pass nor a Linux verification of later refinements. The
-separate checkpoint-7 focused Linux run covers its exact recorded sources;
-its 55 environment-recorded source hashes were checked against `5b37032`.
+separate checkpoint-8 focused Linux run covers its exact recorded sources;
+its 73 environment-recorded source hashes were checked against `0aa5a61`.
 
 This checkpoint verifies ideal-chain variance bounds, ordinary-table padding,
 automatic branch selection, physical feasibility, and the actual stationary

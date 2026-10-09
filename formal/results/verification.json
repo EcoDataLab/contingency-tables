@@ -5040,10 +5040,10 @@
   "original_audited_declaration_count": 2,
   "linux_verification": {
     "record": "formal/results/linux-runs.json",
-    "source_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
-    "focused_record": "formal/results/linux-focused-5b37032/verification.json",
-    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805",
-    "scope_note": "Fresh Linux focused build and 420-declaration audit passed for checkpoint 7 at 5b37032. Excludes the separate standalone audit and subsequent additions."
+    "source_commit": "0aa5a61140712ada44893b03d805a756e0e9823a",
+    "focused_record": "formal/results/linux-focused-0aa5a61/verification.json",
+    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37963647335",
+    "scope_note": "Fresh Linux focused build and 632-declaration audit passed for checkpoint 8 at 0aa5a61. Excludes the separate standalone audit, subsequent additions, and strict Comparator replay."
   },
   "full_unconditional_and_challenge_build": {
     "status": "passed_on_linux_at_prior_commit",
@@ -5230,7 +5230,7 @@
   "publication": {
     "source_commit": "0aa5a61140712ada44893b03d805a756e0e9823a",
     "commit_url": "https://github.com/EcoDataLab/contingency-tables/commit/0aa5a61140712ada44893b03d805a756e0e9823a",
-    "observed_at_utc": "2026-10-09T17:06:18.131382+00:00",
+    "observed_at_utc": "2026-10-09T17:24:12.488227+00:00",
     "python_ci": {
       "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37963605116",
       "status": "passed",
@@ -5251,8 +5251,9 @@
     },
     "focused_linux": {
       "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37963647335",
-      "status": "in_progress",
-      "result": "Fresh focused build dispatched at the exact proof commit; no checkpoint-8 Linux pass claimed yet."
+      "status": "passed",
+      "result": "632 focused declaration audits passed; 73 source hashes matched to the exact commit",
+      "receipt": "formal/results/linux-focused-0aa5a61/verification.json"
     },
     "review_snapshot_note": "Independent source, document, and evidence hashes refer to the proof checkpoint at source_commit. Later publication/status metadata is separate."
   },
