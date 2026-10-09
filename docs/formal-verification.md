@@ -9,6 +9,12 @@ full finite-table counting, geometric acceptance, and bounded-retry accuracy
 proofs. Dense-law/physical-oracle integration, finite-bit sampler runtime,
 and secure Comparator verification remain separate from these results.
 
+An additional isolated [Boolean codec/retry module](completion-boolean-program.md)
+passed 25 declaration audits and six native Lean evaluations after checkpoint
+8. Its [receipt](../formal/results/completion-boolean-retry/verification.json)
+and frozen-source review are separate from the 638 aggregate audits and the
+632-declaration Linux result. It is not yet included in the aggregate target.
+
 ## Reproduction
 
 From the repository root, with Git, curl, Python 3, and a C toolchain installed:

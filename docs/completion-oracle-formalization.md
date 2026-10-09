@@ -11,6 +11,11 @@ This closes a central gap behind using the `80,000d¹⁷` auxiliary-chain bound.
 The remaining connection is to the canonical dense sampler, every physical
 state's completion problem, and finite-bit programs with charged costs.
 
+An additional [executable Boolean codec/retry component](completion-boolean-program.md)
+now identifies the actual signed decoder and an ordered bank of independent
+trial words with the retry law. Its 25 isolated audits supplement checkpoint 8;
+canonical dense integration and binary list-machine costs remain open.
+
 ## Why equal representation matters
 
 For a small example, take a 2×2 table whose row and column margins are both
@@ -53,8 +58,9 @@ bound `2^(-(h+1))`; its geometry permits any `k≥2d` and `d≥1`.
 
 The law of the *whole* fine draw must meet the precision bound. Its own
 failure fallback cannot be discarded or silently conditioned away. Fresh
-independence is part of the product-law retry construction. Identifying
-that law with a particular program's random-bit segments remains separate.
+independence is part of the product-law retry construction. The new Boolean
+component identifies the ordered word segments for a supplied fine draw;
+the canonical dense draw's specialization remains separate.
 
 ## How the counting proof closes
 
@@ -120,9 +126,9 @@ attributed in the [dilation guide](completion-oracle-dilation.md).
    fiber. Existing residual-margin lemmas provide the strong margins;
    dimension bounds, fallbacks, and unique-completion branches still need
    to be assembled into the `OracleFamily` interface.
-3. Realize the integer codec and bounded retries as finite-bit programs,
-   identify their semantics, and compose random-bit, arithmetic, dense-call,
-   and outer-walk costs.
+3. Connect the now-executable typed codec and Boolean retries to binary list
+   realizers, then compose random-bit, arithmetic, dense-call, and outer-walk
+   costs.
 
 The `d¹⁷` result continues to describe an auxiliary-chain inverse gap.
 Neither a complete runtime exponent nor practical competitiveness follows

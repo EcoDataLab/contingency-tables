@@ -21,6 +21,7 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 | Finite-walk output guarantee | Actual rational transition law, positive starting state, terminal completion, bounded retries, and explicit sufficient schedules for any positive TV-error target |
 | Approximate completion interface | Lean identifies the actual proposal/draw/test law and bounds transition, terminal, and restarted-output error; holding proposals incur no completion error |
 | Completion oracle at `L=3d` | Lean proves the full accepted-preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at `k=d¹²`; fine-law accuracy is an input, and program/cost integration remains open |
+| Executable Boolean codec and retries | 25 additional isolated Lean audits identify the signed decoder and consecutive independent word bank with the retry law for a supplied fine draw; six native evaluations passed |
 | Limit of stationary rejection | A reviewed ideal-scale family has `p²s→1`, so the unchanged rule's quadratic stationary-trial cost is unavoidable in worst-case order; eight exact finite checks |
 | Smaller padding threshold | Actual ordinary-table counts prove half unpadding acceptance at `U=47d⁵`, with a smaller shape-aware alternative |
 | Limit of this padding construction | A counting argument forces U=Ω(Ln²) in a 2×n family if acceptance stays bounded away from zero |
@@ -40,6 +41,7 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 - [Stationary success and uniform output](docs/physical-stationary-success.md): completion counts, the exact output bijection, and independent stationary retries.
 - [Finite walks and output error](docs/physical-finite-walk.md): the actual selected transition law, independent restarts, and sufficient walk/retry schedules.
 - [Completion by dilation and rounding](docs/completion-oracle-dilation.md), its [finite-table and geometry proofs](docs/completion-oracle-formalization.md), and [approximate-oracle error propagation](docs/physical-approximate-oracle.md): the completion route at the smaller outer scales and its remaining program obligations.
+- [Executable Boolean codec and retries](docs/completion-boolean-program.md): the additional signed decoder, independent word bank, frozen proof receipt, and native evaluations.
 - [Stationary-rejection obstruction](docs/stationary-success-obstruction.md): why the extra defect mass can force quadratic retries even when ordinary unpadding always succeeds.
 - [Dense-compatible ideal chain](docs/reduced-small-chain.md), [original-chain comparison](docs/small-chain-gap.md), and [sequential padding](docs/sequential-padding.md).
 - [Transport proof](docs/transport-localization.md), [switching and scale proof](docs/scale-audit.md), [error budgets](docs/error-budgets.md), and [independent mathematical review](docs/independent-review.md).

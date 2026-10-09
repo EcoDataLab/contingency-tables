@@ -35,3 +35,4 @@ overview.pdf
 !formal/results/completion-acceptance/*.log
 !formal/results/lattice-completion-accuracy/*.log
 !formal/results/linux-focused-0aa5a61/*.log
+!formal/results/completion-boolean-retry/*.log

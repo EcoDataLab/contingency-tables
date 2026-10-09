@@ -1,0 +1,26 @@
+import Math115.CompletionBooleanRetry
+#print axioms Math115.CompletionBooleanRetry.retryWords
+#print axioms Math115.CompletionBooleanRetry.wordBankEquiv
+#print axioms Math115.CompletionBooleanRetry.flatRetry
+#print axioms Math115.CompletionBooleanRetry.zeroExtend
+#print axioms Math115.CompletionBooleanRetry.prefixInt
+#print axioms Math115.CompletionBooleanRetry.decodeCells
+#print axioms Math115.CompletionBooleanRetry.acceptedCells
+#print axioms Math115.CompletionBooleanRetry.acceptedCells_decidable
+#print axioms Math115.CompletionBooleanRetry.rawTrial
+#print axioms Math115.CompletionBooleanRetry.prefixInt_eq_bounded_prefix
+#print axioms Math115.CompletionBooleanRetry.decodeCells_eq
+#print axioms Math115.CompletionBooleanRetry.acceptedCells_iff
+#print axioms Math115.CompletionBooleanRetry.tableTrial
+#print axioms Math115.CompletionBooleanRetry.digitOffset
+#print axioms Math115.CompletionBooleanRetry.signedEncodeCells
+#print axioms Math115.CompletionBooleanRetry.encodeCells
+#print axioms Math115.CompletionBooleanRetry.digitOffset_eq
+#print axioms Math115.CompletionBooleanRetry.signedEncodeCells_eq
+#print axioms Math115.CompletionBooleanRetry.encodeCells_eq_encodeTable_value
+#print axioms Math115.CompletionBooleanRetry.tableTrial_eq
+#print axioms Math115.CompletionBooleanRetry.rawTrial_eq_tableTrial_value
+#print axioms Math115.CompletionBooleanRetry.retryWords_eq_wordRetry
+#print axioms Math115.CompletionBooleanRetry.retryWords_law
+#print axioms Math115.CompletionBooleanRetry.flatRetry_law
+#print axioms Math115.CompletionBooleanRetry.completion_flat_law

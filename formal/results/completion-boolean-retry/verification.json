@@ -1,0 +1,266 @@
+{
+  "status": "passed_isolated_module",
+  "recorded_at_utc": "2026-10-09T18:14:53.765117+00:00",
+  "module": "Math115.CompletionBooleanRetry",
+  "source_sha256": {
+    "formal/Math115/CompletionBooleanRetry.lean": "2cb6fbea094710471deba816cff0ac4bcbc3b83ab7681d668cbfd1fdf7008a10"
+  },
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "platform": "local macOS",
+  "method": "Direct pinned Lean -j1 -DautoImplicit=false with existing dependency objects and trusted official package cache; not an aggregate rebuild or Comparator replay.",
+  "compile": {
+    "command": [
+      "../.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "-o",
+      ".lake/build/lib/lean/Math115/CompletionBooleanRetry.olean",
+      "-i",
+      ".lake/build/lib/lean/Math115/CompletionBooleanRetry.ilean",
+      "Math115/CompletionBooleanRetry.lean"
+    ],
+    "cwd": "formal",
+    "environment": {
+      "ELAN_HOME": "<repo>/.tools/elan"
+    },
+    "source_sha256": "2cb6fbea094710471deba816cff0ac4bcbc3b83ab7681d668cbfd1fdf7008a10",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "started_at_utc": "2026-10-09T17:18:18.561497+00:00",
+    "finished_at_utc": "2026-10-09T17:18:42.440659+00:00",
+    "elapsed_seconds": 23.879438583971933,
+    "toolchain": "leanprover/lean4:v4.34.1",
+    "olean_sha256": "555f344a1ff5dc627eddb1ca8483e549a577505d15747bda9c5ab2009d916eb8"
+  },
+  "audit": {
+    "exit_code": 0,
+    "started_at_utc": "2026-10-09T17:18:48.158651+00:00",
+    "finished_at_utc": "2026-10-09T17:19:00.288801+00:00",
+    "elapsed_seconds": 12.130180915817618,
+    "driver": "formal/results/completion-boolean-retry/AxiomAudit.lean",
+    "declaration_count": 25,
+    "declarations": [
+      {
+        "name": "Math115.CompletionBooleanRetry.retryWords",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.wordBankEquiv",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.flatRetry",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.zeroExtend",
+        "axioms": []
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.prefixInt",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.decodeCells",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.acceptedCells",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.acceptedCells_decidable",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.rawTrial",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.prefixInt_eq_bounded_prefix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.decodeCells_eq",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.acceptedCells_iff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.tableTrial",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.digitOffset",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.signedEncodeCells",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.encodeCells",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.digitOffset_eq",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.signedEncodeCells_eq",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.encodeCells_eq_encodeTable_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.tableTrial_eq",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.rawTrial_eq_tableTrial_value",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.retryWords_eq_wordRetry",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.retryWords_law",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.flatRetry_law",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionBooleanRetry.completion_flat_law",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "native_evaluation": {
+    "exit_code": 0,
+    "started_at_utc": "2026-10-09T17:19:09.315906+00:00",
+    "elapsed_seconds": 12.682780290953815,
+    "driver": "formal/results/completion-boolean-retry/NativeExamples.lean",
+    "outputs": [
+      "[[11, 4], [4, 11]]",
+      "some [[1, 0], [0, 1]]",
+      "none",
+      "7",
+      "99",
+      "99"
+    ],
+    "scope": "Actual executable Lean definitions on six supplied examples; not a sampler benchmark or machine-cost proof."
+  },
+  "original_authored_receipt_sha256": {
+    "compile-3.json": "7d1dbcc7fdc7eb0d972675ad50a31cdd21bcebcc10b3f87014dd19e8e681e4a3",
+    "audit-1.json": "90ea124b7f945903b69d8428c1deaee62ede61ec29516a8c4dc3049dbf44a3f5",
+    "computability-check.json": "08856a864cf986eccea607b74f1a74d41dc70d62ba679e583dba28b6c30f90ac",
+    "verification-local.json": "e05fbac3b47d21ffeff525377ca5a6501a8693c1ad358bf5a8492e6d3da3d010"
+  },
+  "scope": "Computable signed prefix codec and exact independent finite-word retry law for a supplied fine-table draw. No arbitrary supplied draw accuracy, list-machine cost, or dense/outer program integration is asserted.",
+  "aggregate_integration": "Separate from the638 checkpoint-8 aggregate declaration audits; not imported by Math115.lean/AxiomAudit.lean yet.",
+  "artifacts_sha256": {
+    "formal/results/completion-boolean-retry/AxiomAudit.lean": "d2f5566417bca6ee744da60a07ffd2554192de1ebd094474c09d7911f4f12e27",
+    "formal/results/completion-boolean-retry/NativeExamples.lean": "11a857b2df44a560eade0243eda24a8d5cbc2d71bcadaa6ec2210c74e5f23564",
+    "formal/results/completion-boolean-retry/axiom-audit.log": "e8eda41070a1cbd1cd5a861e4a8ad00b25223e35919287b9ca7deade78540bb9",
+    "formal/results/completion-boolean-retry/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/completion-boolean-retry/native-examples.log": "5af13d3b0b32e584cf74a2525188eba6b4ac73ef3d3302146e6900b42be55d8e",
+    "formal/results/completion-boolean-retry/source-review.json": "f8d3a285535e0af105262199198dbb656ff187f19007118079b74b7000e4f67f"
+  }
+}
