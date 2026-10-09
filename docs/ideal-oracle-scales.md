@@ -116,13 +116,16 @@ or contingency-table sampler. A different completion implementation or
 a stronger geometry proof might avoid these requirements.
 
 The subsequent [dilated completion construction](completion-oracle-dilation.md)
-provides such a route at the level of reviewed mathematics: enlarge the
+provides such a route: enlarge the
 completion margins, use the unchanged dense sampler, then round and reject.
 Its inner input satisfies the original dense threshold while the outer
 padding stays at `3d`; the ideal success probability exceeds one quarter.
 The [approximate-oracle interface](physical-approximate-oracle.md) accounts
-for completion errors in the outer law. The full geometric and finite-bit
-program composition remains to be formalized.
+for completion errors in the outer law. The
+[finite-table formalization](completion-oracle-formalization.md) now proves
+the geometry, quarter acceptance, and bounded-retry accuracy from an
+accurate fine law. Dense-law and physical-oracle integration and finite-bit
+program composition remain open.
 
 ## What the exponent comparison means
 

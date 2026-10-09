@@ -1,0 +1,120 @@
+{
+  "review_date": "2026-10-09",
+  "scope": "Independent readback of public checkpoint 8 evidence against eight reviewed Markdown docs and frozen source/logs; no compiler, Git, edits to public files, network publication verification, or external peer review.",
+  "status": "passed",
+  "blockers": [],
+  "reviewed_evidence_sha256": {
+    "formal/results/completion-geometry-review.json": "af38eee3ca86ba29f803d44a0f91a287e10bb1f61404a1e1216b0bc610cb325c",
+    "formal/results/completion-geometry-checkpoint.json": "9a4f1140703e95fe7fa8501445541309926c8e858d9b6d60b9d880a3ca13503c",
+    "formal/results/verification.json": "31081fc8dcc5373c41900e281ac6c7d4fae74d3a3afdfa4453c3d43bf6a3de6a",
+    "formal/results/provenance.json": "cafd2aa1d68dae1cfc4c35b91f494120789553691783188deef6d85bcea910ca",
+    "reports/checkpoint-verification.json": "cb6c814ff93bd5f83acd8ec05e55a6524f692db0daab7f790d6f226747ef6301",
+    "formal/results/eighth-checkpoint.log": "704b50c1aad6a876fe66dc1f75c0f1d5b5847913984e1aead2d9f287290b3952"
+  },
+  "checked_counts": {
+    "focused": 632,
+    "standalone": 6,
+    "new_isolated_exports": 212,
+    "upstream_sources_rehashed": 178,
+    "Python_sources_rehashed": 62,
+    "reports_rehashed": 20,
+    "integrated_source_hashes_rechecked": 60,
+    "documents": 8
+  },
+  "isolated_receipts": [
+    {
+      "receipt": "formal/results/lattice-completion-finite/verification.json",
+      "exports": 52,
+      "sources_match": true,
+      "log_matches": true
+    },
+    {
+      "receipt": "formal/results/lattice-cell-volume/verification.json",
+      "exports": 19,
+      "sources_match": true,
+      "log_matches": true
+    },
+    {
+      "receipt": "formal/results/completion-retry/verification.json",
+      "exports": 23,
+      "sources_match": true,
+      "log_matches": true
+    },
+    {
+      "receipt": "formal/results/lattice-completion-law/verification.json",
+      "exports": 11,
+      "sources_match": true,
+      "log_matches": true
+    },
+    {
+      "receipt": "formal/results/prefix-transportation/verification.json",
+      "exports": 48,
+      "sources_match": true,
+      "log_matches": true
+    },
+    {
+      "receipt": "formal/results/prefix-floor-cover/verification.json",
+      "exports": 22,
+      "sources_match": true,
+      "log_matches": true
+    },
+    {
+      "receipt": "formal/results/completion-count-bound/verification.json",
+      "exports": 16,
+      "sources_match": true,
+      "log_matches": true
+    },
+    {
+      "receipt": "formal/results/completion-acceptance/verification.json",
+      "exports": 13,
+      "sources_match": true,
+      "log_matches": true
+    },
+    {
+      "receipt": "formal/results/lattice-completion-accuracy/verification.json",
+      "exports": 8,
+      "sources_match": true,
+      "log_matches": true
+    }
+  ],
+  "missing_local_links": [],
+  "prior_scope_checks": [
+    "Prior focused Linux source commit remains checkpoint7 5b37032;420focused audits and55 source hashes recorded, excluding new checkpoint8 and standalone.",
+    "Full original Linux build/audit remains exact historical source5e5d6ef.",
+    "Strict Comparator remains unsupported preflight ABI7 vs required9, not passed.",
+    "Python237tests remain historical checkpoint7;current checks are pinned source verification and62Python/20report hash continuity."
+  ],
+  "claim_checks": [
+    "638audits=632focused+6standalone=636new+2baseline.",
+    "212new exports across nine isolated receipts all match actual raw audit logs and standard axioms.",
+    "Nine frozen new module hashes match public summary, independent review, integrated receipt and current source.",
+    "228recorded source closure=178upstream+50local with50trusted external imports;178upstream source SHA/Gitblob hashes independently rechecked.",
+    "Eight reviewed Markdown hashes unchanged and all local links now exist.",
+    "Whole fine-law accuracy, canonical indexing/accuracy conversion, physical family and finite-bit/cost integration remain open exactly as documentation states."
+  ],
+  "limits": [
+    "Readback confirms recorded compiler results and logs;it is not an independent recompilation, Linux rerun, strict Comparator replay, or fresh Python test run.",
+    "Evidence file hashes are kept separate from document review to avoid recursive hash dependencies."
+  ],
+  "historical_scope_metadata": {
+    "focused_linux": {
+      "source_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
+      "audit_count": 420,
+      "source_hash_count": 55,
+      "scope": "Fresh Linux focused compilation and 420 named axiom audits. No standalone audit or strict Comparator replay in this run. Later source additions are excluded."
+    },
+    "original_linux": {
+      "status": "passed_on_linux_at_prior_commit",
+      "source_commit": "5e5d6ef9aa36f7e2a744f3fb8605448529f8be66",
+      "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509",
+      "raw_log": "formal/results/linux-full-5e5d6ef/verification.log",
+      "original_machine_exports_audited": 3
+    },
+    "comparator": {
+      "status": "unsupported_runner_preflight",
+      "landlock_abi_found": 7,
+      "required_abi": 9,
+      "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "module": "Math115.LatticeCompletionAccuracy",
+  "time_utc": "2026-10-09T16:51:29.325054+00:00",
+  "source_sha256": "de2098e2b33a4e3ffd9e4622d786b01ad62c4f5b80aa1ce170b1b1199ac4bdfd",
+  "compile_exit": 0,
+  "compile_log": ".local/lattice-completion-accuracy/compile-01.log",
+  "audit_exit": 0,
+  "audit_count": 8,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "no_sorry_or_new_axiom": true,
+  "input_module_sha256": {
+    "formal/Math115/CompletionAcceptance.lean": "7ae58ae570021936b308b463498201e138ef084db382849149bb2df1871c9c46",
+    "formal/Math115/CompletionCountBound.lean": "4e0a6249f792fbfdf97465820d911f0eae5312b765baef94542990f1c60c56c1",
+    "formal/Math115/LatticeCompletionLaw.lean": "a063d6f9d243f197223f205806a20a0341e2e56481d4ee861c79abed82328353"
+  },
+  "limitations": [
+    "strong actual margin bounds R_i>=b*3d and P_j>=a*3d are explicit",
+    "dimension allowance e<=d-1 and k>=2d are explicit; chosen k=d^12 specializes under d>=2",
+    "equal totals and feasible fallback are explicit",
+    "fresh fine-law TV accuracy is explicit; no dense finite-bit realization or machine-time cost"
+  ],
+  "compiler_released_to": "root",
+  "sha256": {
+    "formal/Math115/LatticeCompletionAccuracy.lean": "de2098e2b33a4e3ffd9e4622d786b01ad62c4f5b80aa1ce170b1b1199ac4bdfd",
+    ".local/lattice-completion-accuracy/LatticeCompletionAccuracyAudit.lean": "6e9395a4193763c4a4c6990e5df8b2c4aeda341a3720594b30093a1683a75c11",
+    ".local/lattice-completion-accuracy/exports.txt": "30b0ce2106fac9066c7f4a15d1d342ca9e0e85a6d68cb342bb93f646a823a648",
+    ".local/lattice-completion-accuracy/compile-01.log": "70dea7ff7138ae480e1128249c3523be17a02b6355d10e781ba212029959afa5",
+    ".local/lattice-completion-accuracy/axioms.log": "309e02019aac298fccea1b0ae160912d126225991d9ad1fcccd63a7e3185cfe3",
+    "formal/.lake/build/lib/lean/Math115/LatticeCompletionAccuracy.olean": "19beecb3a723de57c4573668d099a54b969eb69886eb84060020b8ce17360598",
+    "formal/.lake/build/lib/lean/Math115/LatticeCompletionAccuracy.ilean": "bdd231eb5fe3511a388281bec5cf3266907c80d6fb07c6840053b20687dcc6bd"
+  }
+}

@@ -1,0 +1,17 @@
+import Math115.CompletionCountBound
+#print axioms Math115.CompletionCountBound.fineCells
+#print axioms Math115.CompletionCountBound.normalized_fine_feasible
+#print axioms Math115.CompletionCountBound.upper_cell_cover
+#print axioms Math115.CompletionCountBound.fine_cells_volume
+#print axioms Math115.CompletionCountBound.fine_cells_volume_toReal
+#print axioms Math115.CompletionCountBound.fine_cells_volume_le_upper
+#print axioms Math115.CompletionCountBound.inflation
+#print axioms Math115.CompletionCountBound.inflation_pos
+#print axioms Math115.CompletionCountBound.inflation_ge_one
+#print axioms Math115.CompletionCountBound.inflated_margin_ge_upper
+#print axioms Math115.CompletionCountBound.shifted_totals_equal
+#print axioms Math115.CompletionCountBound.reduced_totals_equal
+#print axioms Math115.CompletionCountBound.upper_volume_le_inflated_lower
+#print axioms Math115.CompletionCountBound.fine_cells_volume_le_count
+#print axioms Math115.CompletionCountBound.fine_card_le
+#print axioms Math115.CompletionCountBound.fine_nat_card_le

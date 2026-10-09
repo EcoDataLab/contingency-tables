@@ -148,10 +148,13 @@ an oracle name does not discharge those obligations.
 
 The separate [dilated-margin completion route](completion-oracle-dilation.md)
 uses a larger lattice, the existing dense sampler, and an integer decoder
-with equal accepted-fibre counts. Its geometry has an independent
-mathematical review. A certified normalized conditional law from that route
-can also plug into this interface; the full geometric oracle and its
-finite-bit accuracy/cost proof are not compiled by these modules.
+with equal accepted-fiber counts. Its
+[formalization](completion-oracle-formalization.md) now proves the complete
+count comparison, quarter acceptance, and bounded-retry accuracy from an
+accurate whole fine-table law. Connecting the canonical dense law and
+assembling this completion law for every physical state remain open, as do
+finite-bit realization and cost. These interface modules do not themselves
+discharge those remaining obligations.
 
 The new result identifies finite proposal/draw/test laws and accounts for
 their accuracy. It does not bound completion cost, neighbor generation,

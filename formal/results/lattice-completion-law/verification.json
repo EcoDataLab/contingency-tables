@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T16:44:17.506330+00:00",
+  "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa",
+  "scope": "Actual finite-table decoder law, equal success masses, exact accepted count ratio, and completion accuracy conditional on quarter success and fine-law accuracy.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": {
+    "formal/Math115/LatticeCompletionLaw.lean": "a063d6f9d243f197223f205806a20a0341e2e56481d4ee861c79abed82328353"
+  },
+  "author_receipt": "formal/results/lattice-completion-law/author-receipt.json",
+  "compile_exit_code": 0,
+  "compile_log": "formal/results/lattice-completion-law/compile.log",
+  "isolated_axiom_audit": {
+    "exit_code": 0,
+    "driver": "formal/results/lattice-completion-law/AxiomAudit.lean",
+    "log": "formal/results/lattice-completion-law/axiom-audit.log",
+    "declaration_count": 11,
+    "declarations": [
+      {
+        "name": "Math115.LatticeCompletionLaw.trial",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionLaw.trial_eq_none",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionLaw.successfulFiberEquiv",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionLaw.successfulFiber_card",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionLaw.fine_nonempty_of_fallback",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionLaw.ideal_success_mass",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionLaw.ideal_success_probability",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionLaw.ideal_retry_mass",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionLaw.approximate_retry_bound",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionLaw.completion_accuracy_half",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionLaw.completion_accuracy",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "file_sha256": {
+    "formal/results/lattice-completion-law/AxiomAudit.lean": "26da4653c513af0d7aac708ece0befd69f8a8c1b34a121561f8982707175e335",
+    "formal/results/lattice-completion-law/author-receipt.json": "40ea344a05fabe078d839b6c1513abcb47f26b18d63c3a31d9523af26d44376e",
+    "formal/results/lattice-completion-law/axiom-audit.log": "44824f3edb29be0ff77d15503d60f125b1d58ced41110c63bf9e131f8e48a2e4",
+    "formal/results/lattice-completion-law/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "Existing dependencies and the official Mathlib cache are trusted. No fresh dependency-closure rebuild or strict Comparator replay in this isolated check.",
+    "This module does not identify a complete finite-bit completion program or prove its machine cost."
+  ]
+}

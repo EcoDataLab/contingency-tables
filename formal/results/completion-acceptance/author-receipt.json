@@ -1,0 +1,28 @@
+{
+  "module": "Math115.CompletionAcceptance",
+  "time_utc": "2026-10-09T16:50:59.320930+00:00",
+  "source_sha256": "7ae58ae570021936b308b463498201e138ef084db382849149bb2df1871c9c46",
+  "compile_exit": 0,
+  "compile_log": ".local/completion-acceptance/compile-02.log",
+  "audit_exit": 0,
+  "audit_count": 13,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "no_sorry_or_new_axiom": true,
+  "limitations": [
+    "scalar count comparison and exact accepted count are explicit inputs",
+    "no actual table count or volume proof inside this analytic module"
+  ],
+  "sha256": {
+    "formal/Math115/CompletionAcceptance.lean": "7ae58ae570021936b308b463498201e138ef084db382849149bb2df1871c9c46",
+    ".local/completion-acceptance/CompletionAcceptanceAudit.lean": "b8acefbb6aaea6890d3ece2ec97d8c3850c7b76127f583b14ee9c4d01bbbdba3",
+    ".local/completion-acceptance/exports.txt": "60a5caecb570bf987741d9eef9b43e2d646f489c63a114e1561f687b815a8462",
+    ".local/completion-acceptance/compile-02.log": "e6ac67a922ffa5742b8ad2d6ce9e35935677a3976688ec33ba537ac0f6ba9fc5",
+    ".local/completion-acceptance/axioms.log": "59d6ad5160d8d10beb7b47a627683f1e332e84d8e7e158ef32d938c1235db6d4",
+    "formal/.lake/build/lib/lean/Math115/CompletionAcceptance.olean": "dba08071e5e139550e21750bbea2c2c329480b6fdfc9fba47054d6fb78bca6d8",
+    "formal/.lake/build/lib/lean/Math115/CompletionAcceptance.ilean": "87033330a9df3085ca3e973ff5f4edb4340a16ecf10718079ba545c31f117096"
+  }
+}

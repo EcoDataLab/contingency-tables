@@ -1,0 +1,15 @@
+import Math115.CompletionAcceptance
+
+#print axioms Math115.CompletionAcceptance.two_mul_le_power_twelve
+#print axioms Math115.CompletionAcceptance.dilationFactor
+#print axioms Math115.CompletionAcceptance.increment
+#print axioms Math115.CompletionAcceptance.denominator_positive
+#print axioms Math115.CompletionAcceptance.dilationFactor_eq_one_add
+#print axioms Math115.CompletionAcceptance.increment_nonnegative
+#print axioms Math115.CompletionAcceptance.dilationFactor_positive
+#print axioms Math115.CompletionAcceptance.two_div_k_le_inverse_d
+#print axioms Math115.CompletionAcceptance.exponent_allowance
+#print axioms Math115.CompletionAcceptance.exp_four_thirds_lt_four
+#print axioms Math115.CompletionAcceptance.dilationFactor_pow_lt_four
+#print axioms Math115.CompletionAcceptance.acceptance_lower_real
+#print axioms Math115.CompletionAcceptance.acceptance_lower_rat

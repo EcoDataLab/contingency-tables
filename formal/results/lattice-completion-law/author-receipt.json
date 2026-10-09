@@ -1,0 +1,35 @@
+{
+  "module": "Math115.LatticeCompletionLaw",
+  "time_utc": "2026-10-09T16:40:09.493513+00:00",
+  "source_sha256": "a063d6f9d243f197223f205806a20a0341e2e56481d4ee861c79abed82328353",
+  "compile_exit": 0,
+  "compile_log": ".local/lattice-completion-law/compile-01.log",
+  "audit_exit": 0,
+  "audit_count": 11,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "no_sorry_or_new_axiom": true,
+  "input_module_sha256": {
+    "formal/Math115/LatticeCompletionFinite.lean": "101a2e2030eef45ddfc8d210de8febb0aaf7c615f80204d40ace993f30df62e2",
+    "formal/Math115/CompletionRetryBudget.lean": "1acc4031729aabad9c4b0c2b9817be0af8602556439bb85c52c8fa9930834ee9"
+  },
+  "compiler_released_to": "root",
+  "limitations": [
+    "ideal card(AcceptedFine)/card(FineTable)>=1/4 is explicit",
+    "fresh fine law TV accuracy is explicit",
+    "Nonempty original and fine tables are explicit law instances, helper derives fine from feasible fallback",
+    "law semantics only, no finite-bit realization or machine-time cost"
+  ],
+  "sha256": {
+    "formal/Math115/LatticeCompletionLaw.lean": "a063d6f9d243f197223f205806a20a0341e2e56481d4ee861c79abed82328353",
+    ".local/lattice-completion-law/LatticeCompletionLawAudit.lean": "26da4653c513af0d7aac708ece0befd69f8a8c1b34a121561f8982707175e335",
+    ".local/lattice-completion-law/exports.txt": "1685cbf721319911c714311a6eff8e6f72c14a677618c0805ca2b3545f911062",
+    ".local/lattice-completion-law/compile-01.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    ".local/lattice-completion-law/axioms.log": "44824f3edb29be0ff77d15503d60f125b1d58ced41110c63bf9e131f8e48a2e4",
+    "formal/.lake/build/lib/lean/Math115/LatticeCompletionLaw.olean": "27c0990282d596a493dff939cca02de5f887c685992d893a15165e691b0246c5",
+    "formal/.lake/build/lib/lean/Math115/LatticeCompletionLaw.ilean": "0da7f70c7ec9223e8ac1d4d74c88e983d628a9073891273e1cdacb60bbfeae62"
+  }
+}

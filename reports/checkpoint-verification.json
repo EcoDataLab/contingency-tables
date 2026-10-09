@@ -1,8 +1,8 @@
 {
-  "schema_version": 7,
-  "recorded_at_utc": "2026-10-09T12:46:53.251875+00:00",
-  "scope": "Seventh research checkpoint: 237 fresh tests, pinned sources, unchanged existing Python/report hashes, and byte-exact lattice experiment replay. Lean results and universal reviewed geometry remain separate evidence.",
-  "prior_checkpoint_commit": "e5d5dd3e81b5eac0e3f42841530286b56bcb96e5",
+  "schema_version": 8,
+  "recorded_at_utc": "2026-10-09T17:00:31.268110+00:00",
+  "scope": "Eighth research checkpoint: fresh pinned-source verification and continuity of 62 Python source hashes and 20 report hashes. The 237 passing Python tests are historical checkpoint-7 evidence; no fresh local test rerun or benchmark retiming is claimed. New Lean geometry and accuracy results have separate receipts.",
+  "prior_checkpoint_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
   "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "environment": {
     "python": "3.14.3",
@@ -12,54 +12,22 @@
   },
   "observed_checks": [
     {
-      "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v",
-      "exit_code": 0,
-      "tests_passed": 237,
-      "elapsed_seconds": 3.511,
-      "covered_test_files": [
-        "tests/test_block_budgets.py",
-        "tests/test_block_sampler.py",
-        "tests/test_budgets.py",
-        "tests/test_build_lean_serial.py",
-        "tests/test_cactus.py",
-        "tests/test_chain_diagnostics.py",
-        "tests/test_commute_scaling.py",
-        "tests/test_ideal_chain.py",
-        "tests/test_ideal_two_by_two.py",
-        "tests/test_kernels.py",
-        "tests/test_lattice_completion.py",
-        "tests/test_lean_axiom_audit.py",
-        "tests/test_mixtures.py",
-        "tests/test_optimize.py",
-        "tests/test_padding_barrier.py",
-        "tests/test_padding_growth.py",
-        "tests/test_sampler_benchmarks.py",
-        "tests/test_scales.py",
-        "tests/test_tables.py",
-        "tests/test_transport_bounds.py",
-        "tests/test_workers.py"
-      ]
-    },
-    {
       "command": "PYTHONPATH=src .venv/bin/python scripts/verify_sources.py --checkout .upstream/openai-math",
       "exit_code": 0,
       "bundle_sha256_verified": 5,
       "upstream_git_blobs_verified": 38
     },
     {
-      "command": "PYTHONPATH=src .venv/bin/python experiments/lattice_completion.py --output .local/checkpoint7-lattice-replay.json",
-      "exit_code": 0,
-      "exact_saved_report_match": true,
-      "complete_tiny_fibers": 13,
-      "fine_tables": 293,
-      "retained_budget_failures": 1,
-      "actual_scale_roundtrips": 10
-    },
-    {
-      "check": "Existing 59 Python source and 18 report hashes unchanged; three new Python sources and two reports added. No benchmark retiming or unrelated report replay claimed.",
+      "check": "All recorded Python source and report hashes unchanged from checkpoint 7.",
       "source_hashes_verified": 62,
       "report_hashes_verified": 20,
       "status": "passed"
+    },
+    {
+      "check": "Nine new Lean modules, aggregate compilation, and 638 named axiom audits passed.",
+      "record": "formal/results/verification.json",
+      "status": "passed",
+      "scope_note": "Separate from Python implementation correctness and program cost."
     }
   ],
   "source_sha256": {
@@ -475,21 +443,83 @@
         }
       ],
       "note": "Checks recorded at checkpoint 6; retained as historical evidence."
+    },
+    {
+      "source_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
+      "checks": [
+        {
+          "command": "PYTHONPATH=src .venv/bin/python -m unittest discover -s tests -v",
+          "exit_code": 0,
+          "tests_passed": 237,
+          "elapsed_seconds": 3.511,
+          "covered_test_files": [
+            "tests/test_block_budgets.py",
+            "tests/test_block_sampler.py",
+            "tests/test_budgets.py",
+            "tests/test_build_lean_serial.py",
+            "tests/test_cactus.py",
+            "tests/test_chain_diagnostics.py",
+            "tests/test_commute_scaling.py",
+            "tests/test_ideal_chain.py",
+            "tests/test_ideal_two_by_two.py",
+            "tests/test_kernels.py",
+            "tests/test_lattice_completion.py",
+            "tests/test_lean_axiom_audit.py",
+            "tests/test_mixtures.py",
+            "tests/test_optimize.py",
+            "tests/test_padding_barrier.py",
+            "tests/test_padding_growth.py",
+            "tests/test_sampler_benchmarks.py",
+            "tests/test_scales.py",
+            "tests/test_tables.py",
+            "tests/test_transport_bounds.py",
+            "tests/test_workers.py"
+          ]
+        },
+        {
+          "command": "PYTHONPATH=src .venv/bin/python scripts/verify_sources.py --checkout .upstream/openai-math",
+          "exit_code": 0,
+          "bundle_sha256_verified": 5,
+          "upstream_git_blobs_verified": 38
+        },
+        {
+          "command": "PYTHONPATH=src .venv/bin/python experiments/lattice_completion.py --output .local/checkpoint7-lattice-replay.json",
+          "exit_code": 0,
+          "exact_saved_report_match": true,
+          "complete_tiny_fibers": 13,
+          "fine_tables": 293,
+          "retained_budget_failures": 1,
+          "actual_scale_roundtrips": 10
+        },
+        {
+          "check": "Existing 59 Python source and 18 report hashes unchanged; three new Python sources and two reports added. No benchmark retiming or unrelated report replay claimed.",
+          "source_hashes_verified": 62,
+          "report_hashes_verified": 20,
+          "status": "passed"
+        }
+      ],
+      "note": "237 tests and experiment replay recorded at checkpoint 7; Python source and report hashes unchanged at checkpoint 8."
     }
   ],
   "publication": {
-    "source_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
-    "commit_url": "https://github.com/EcoDataLab/contingency-tables/commit/5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
-    "observed_at_utc": "2026-10-09T16:30:29.902883+00:00",
-    "python_ci": {
-      "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932442921",
-      "status": "passed"
-    },
-    "focused_linux": {
-      "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805",
-      "status": "passed",
-      "result": "420 focused declaration audits passed; 55 source hashes matched to the exact commit",
-      "receipt": "formal/results/linux-focused-5b37032/verification.json"
+    "status": "locally_verified_unpublished",
+    "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa"
+  },
+  "prior_publications": [
+    {
+      "source_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
+      "commit_url": "https://github.com/EcoDataLab/contingency-tables/commit/5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
+      "observed_at_utc": "2026-10-09T16:30:29.902883+00:00",
+      "python_ci": {
+        "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932442921",
+        "status": "passed"
+      },
+      "focused_linux": {
+        "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805",
+        "status": "passed",
+        "result": "420 focused declaration audits passed; 55 source hashes matched to the exact commit",
+        "receipt": "formal/results/linux-focused-5b37032/verification.json"
+      }
     }
-  }
+  ]
 }

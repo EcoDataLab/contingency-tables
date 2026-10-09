@@ -1,0 +1,21 @@
+Math115/CompletionRetryBudget.lean:20:0: warning: automatically included section variable(s) unused in theorem `Math115.CompletionRetryBudget.uniform_success_mass`:
+  [Fintype A]
+  [Nonempty A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] [Nonempty A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Math115/CompletionRetryBudget.lean:34:0: warning: automatically included section variable(s) unused in theorem `Math115.CompletionRetryBudget.failure_nonnegative`:
+  [Fintype A]
+  [Nonempty A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] [Nonempty A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Math115/CompletionRetryBudget.lean:43:0: warning: automatically included section variable(s) unused in theorem `Math115.CompletionRetryBudget.success_nonnegative`:
+  [Fintype A]
+  [Nonempty A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] [Nonempty A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

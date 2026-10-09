@@ -1,0 +1,56 @@
+'Math115.LatticeCompletionFinite.Grid' does not depend on any axioms
+'Math115.LatticeCompletionFinite.extend' does not depend on any axioms
+'Math115.LatticeCompletionFinite.restrict' does not depend on any axioms
+'Math115.LatticeCompletionFinite.extend_inside' depends on axioms: [propext]
+'Math115.LatticeCompletionFinite.extend_outside' depends on axioms: [propext, Quot.sound]
+'Math115.LatticeCompletionFinite.extend_injective' depends on axioms: [propext, Quot.sound]
+'Math115.LatticeCompletionFinite.range_sum_extend_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.range_sum_extend_column' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.offsets_difference_outside' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.encodeGrid' depends on axioms: [propext, Quot.sound]
+'Math115.LatticeCompletionFinite.decodeGrid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.extend_encodeGrid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.fine_row_divisible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.fine_column_divisible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.fine_residue_zero_strips' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.recoveredDigits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.recoveredDigits_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.residue_eq_finiteOffsets' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.extend_decodeGrid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.decodeGrid_encodeGrid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.recoveredDigits_encodeGrid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.encodeGrid_decodeGrid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.encodeGrid_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.encodeGrid_column' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.encodeGrid_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.decodeGrid_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.decodeGrid_column' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.intGrid' does not depend on any axioms
+'Math115.LatticeCompletionFinite.natGrid' does not depend on any axioms
+'Math115.LatticeCompletionFinite.natGrid_intGrid' depends on axioms: [propext, Quot.sound]
+'Math115.LatticeCompletionFinite.intGrid_natGrid' depends on axioms: [propext, Quot.sound]
+'Math115.LatticeCompletionFinite.intGrid_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.intGrid_column' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.natGrid_hasMargins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.fineMargin' does not depend on any axioms
+'Math115.LatticeCompletionFinite.FineTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.fineTable_row_divisible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.fineTable_column_divisible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.Accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.AcceptedFine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.encodeTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.intGrid_encodeTable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.encodeTable_accepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.encodeAccepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.decodeAccepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.intGrid_decodeAccepted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.decodeAccepted_encodeAccepted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.LatticeCompletionFinite.encodeAccepted_decodeAccepted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.LatticeCompletionFinite.acceptedEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.accepted_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.fixedFiberEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionFinite.fixedFiber_card' depends on axioms: [propext, Classical.choice, Quot.sound]

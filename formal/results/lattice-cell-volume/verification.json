@@ -1,0 +1,245 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T16:36:19.456001+00:00",
+  "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa",
+  "scope": "Half-open prefix cell volumes, errors, and generic volume comparisons.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": {
+    "formal/Math115/LatticeCellVolume.lean": "911b13ee91a61607ec1dcef58488c79fde2c5e4070204565d366e4c35dc27325"
+  },
+  "compilation": {
+    "command": [
+      "../.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "-o",
+      ".lake/build/lib/lean/Math115/LatticeCellVolume.olean",
+      "-i",
+      ".lake/build/lib/lean/Math115/LatticeCellVolume.ilean",
+      "Math115/LatticeCellVolume.lean"
+    ],
+    "cwd": "formal",
+    "environment": {
+      "ELAN_HOME": "<repo>/.tools/elan"
+    },
+    "source_sha256": "911b13ee91a61607ec1dcef58488c79fde2c5e4070204565d366e4c35dc27325",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "started_at_utc": "2026-10-09T16:34:21.502199+00:00",
+    "finished_at_utc": "2026-10-09T16:34:45.246030+00:00",
+    "elapsed_seconds": 23.74487895797938,
+    "log_path": "formal/results/lattice-cell-volume/compile.log",
+    "toolchain": "leanprover/lean4:v4.34.1",
+    "declarations": [
+      "prefixCell",
+      "prefixCell_measurable",
+      "mem_prefixCell_iff",
+      "floor_mul_eq_anchor",
+      "prefixCell_disjoint",
+      "prefixCell_volume",
+      "prefixCells_measurable",
+      "prefixCells_pairwiseDisjoint",
+      "prefix_lattice_cells_volume",
+      "prefix_unit_cells_volume",
+      "prefix_lattice_cells_volume_ne_top",
+      "prefix_lattice_cells_volume_pos",
+      "prefix_lattice_cells_volume_toReal",
+      "prefixCell_error",
+      "mixed_difference_error",
+      "volume_image_translate",
+      "volume_image_scale",
+      "volume_le_of_translated_subset",
+      "volume_le_of_subset_scaled_translate"
+    ],
+    "olean_sha256": "1d4d6b127eb4a41bddb827ea9279f88253b036b7be1705fe64877af16366b333",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "isolated_axiom_audit": {
+    "command": [
+      "../.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "<workspace>/.local/lattice-cell-volume/audit.lean"
+    ],
+    "cwd": "formal",
+    "environment": {
+      "ELAN_HOME": "<repo>/.tools/elan"
+    },
+    "source_sha256": "911b13ee91a61607ec1dcef58488c79fde2c5e4070204565d366e4c35dc27325",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "started_at_utc": "2026-10-09T16:34:49.165187+00:00",
+    "finished_at_utc": "2026-10-09T16:34:56.251760+00:00",
+    "elapsed_seconds": 7.08662554086186,
+    "log_path": "formal/results/lattice-cell-volume/axiom-audit.log",
+    "toolchain": "leanprover/lean4:v4.34.1",
+    "declarations": [
+      {
+        "name": "Math115.LatticeCellVolume.prefixCell",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.prefixCell_measurable",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.mem_prefixCell_iff",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.floor_mul_eq_anchor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.prefixCell_disjoint",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.prefixCell_volume",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.prefixCells_measurable",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.prefixCells_pairwiseDisjoint",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.prefix_lattice_cells_volume",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.prefix_unit_cells_volume",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.prefix_lattice_cells_volume_ne_top",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.prefix_lattice_cells_volume_pos",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.prefix_lattice_cells_volume_toReal",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.prefixCell_error",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.mixed_difference_error",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.volume_image_translate",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.volume_image_scale",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.volume_le_of_translated_subset",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCellVolume.volume_le_of_subset_scaled_translate",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "audit_sha256": "60440c215ebfc56741ca6b973b9746d994d9e2ff35941465a607e0fbb9c9e822",
+    "log_sha256": "0e7ffe1c7cdaf854d2129714f83b62c8235f764ab82c03feeef02648fa770b4d",
+    "declaration_count": 19
+  },
+  "audit_driver": "formal/results/lattice-cell-volume/AxiomAudit.lean",
+  "audit_driver_sha256": "60440c215ebfc56741ca6b973b9746d994d9e2ff35941465a607e0fbb9c9e822",
+  "limits": [
+    "No transportation-region cell inclusions, margin volume comparison, or completion acceptance bound are established by this module.",
+    "Direct compilation uses existing dependencies and the trusted official Mathlib cache; this is not a fresh full closure build or strict Comparator replay."
+  ]
+}

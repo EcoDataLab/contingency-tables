@@ -30,3 +30,12 @@ import Math115.PhysicalCompletionOracle
 import Math115.PhysicalApproximateOracle
 import Math115.LatticeCompletion
 import Math115.DilatedCompletionMargins
+import Math115.LatticeCompletionFinite
+import Math115.LatticeCellVolume
+import Math115.CompletionRetryBudget
+import Math115.LatticeCompletionLaw
+import Math115.PrefixTransportation
+import Math115.PrefixFloorCover
+import Math115.CompletionCountBound
+import Math115.CompletionAcceptance
+import Math115.LatticeCompletionAccuracy

@@ -1,0 +1,502 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T16:43:46.792703+00:00",
+  "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa",
+  "scope": "Actual real transportation regions, prefix perturbations, upper point containment, constructed margin-volume monotonicity, and exact scalar region volume.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": {
+    "formal/Math115/PrefixTransportation.lean": "dc86409ebc24d2961daff92b26e9eef0946dbecc00a0ae7a37b8ecc307749f2d"
+  },
+  "compilation": {
+    "command": [
+      "../.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "-o",
+      ".lake/build/lib/lean/Math115/PrefixTransportation.olean",
+      "-i",
+      ".lake/build/lib/lean/Math115/PrefixTransportation.ilean",
+      "Math115/PrefixTransportation.lean"
+    ],
+    "cwd": "formal",
+    "environment": {
+      "ELAN_HOME": "<repo>/.tools/elan"
+    },
+    "source_sha256": "dc86409ebc24d2961daff92b26e9eef0946dbecc00a0ae7a37b8ecc307749f2d",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "started_at_utc": "2026-10-09T16:42:10.926346+00:00",
+    "finished_at_utc": "2026-10-09T16:42:31.873608+00:00",
+    "elapsed_seconds": 20.947508542099968,
+    "log_path": "formal/results/prefix-transportation/compile.log",
+    "toolchain": "leanprover/lean4:v4.34.1",
+    "declarations": [
+      "Array",
+      "Matrix",
+      "Interior",
+      "difference",
+      "prefixSum",
+      "ZeroAxes",
+      "ZeroBoundary",
+      "difference_row_sum",
+      "difference_column_sum",
+      "difference_row_sum_zero",
+      "difference_column_sum_zero",
+      "prefix_zero_axes",
+      "prefix_difference",
+      "difference_prefix",
+      "extend",
+      "restrict",
+      "extend_inside",
+      "extend_outside",
+      "range_sum_extend_row",
+      "range_sum_extend_column",
+      "interiorPrefix",
+      "interiorPrefix_add",
+      "interiorPrefix_smul",
+      "interiorPrefix_injective_of_margins",
+      "offsets",
+      "offsets_zero_boundary",
+      "offsets_apply",
+      "offsets_difference_outside",
+      "perturbation",
+      "extend_perturbation",
+      "perturbation_rows_zero",
+      "perturbation_columns_zero",
+      "interiorPrefix_perturbation",
+      "offsets_error",
+      "perturbation_error",
+      "Feasible",
+      "PrefixRegion",
+      "feasible_add",
+      "feasible_smul",
+      "feasible_const",
+      "prefixRegion_translate_subset",
+      "prefixRegion_volume_mono_of_difference_table",
+      "prefixRegion_constant_translate_subset",
+      "exists_feasible_of_nonnegative_equal_total",
+      "prefixRegion_volume_mono",
+      "prefixRegion_scale_eq",
+      "prefixRegion_volume_scale",
+      "prefix_error_upper_containment"
+    ],
+    "olean_sha256": "c01b3754adab5b124a69b6e4f18e199e3eabcd55ec8c1da34a7f3c59a419855e",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "isolated_axiom_audit": {
+    "command": [
+      "../.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "<workspace>/.local/prefix-transportation/audit.lean"
+    ],
+    "cwd": "formal",
+    "environment": {
+      "ELAN_HOME": "<repo>/.tools/elan"
+    },
+    "source_sha256": "dc86409ebc24d2961daff92b26e9eef0946dbecc00a0ae7a37b8ecc307749f2d",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "started_at_utc": "2026-10-09T16:42:34.557613+00:00",
+    "finished_at_utc": "2026-10-09T16:42:42.971398+00:00",
+    "elapsed_seconds": 8.413819750072435,
+    "log_path": "formal/results/prefix-transportation/axiom-audit.log",
+    "toolchain": "leanprover/lean4:v4.34.1",
+    "declarations": [
+      {
+        "name": "Math115.PrefixTransportation.Array",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.Matrix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.Interior",
+        "axioms": []
+      },
+      {
+        "name": "Math115.PrefixTransportation.difference",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.prefixSum",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.ZeroAxes",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.ZeroBoundary",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.difference_row_sum",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.difference_column_sum",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.difference_row_sum_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.difference_column_sum_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.prefix_zero_axes",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.prefix_difference",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.difference_prefix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.extend",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.restrict",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.extend_inside",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.extend_outside",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.range_sum_extend_row",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.range_sum_extend_column",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.interiorPrefix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.interiorPrefix_add",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.interiorPrefix_smul",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.interiorPrefix_injective_of_margins",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.offsets",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.offsets_zero_boundary",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.offsets_apply",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.offsets_difference_outside",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.perturbation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.extend_perturbation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.perturbation_rows_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.perturbation_columns_zero",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.interiorPrefix_perturbation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.offsets_error",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.perturbation_error",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.Feasible",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.PrefixRegion",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.feasible_add",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.feasible_smul",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.feasible_const",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.prefixRegion_translate_subset",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.prefixRegion_volume_mono_of_difference_table",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.prefixRegion_constant_translate_subset",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.exists_feasible_of_nonnegative_equal_total",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.prefixRegion_volume_mono",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.prefixRegion_scale_eq",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.prefixRegion_volume_scale",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixTransportation.prefix_error_upper_containment",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "audit_sha256": "57b2569c76304133e600e55ae85f5b5abd6290e0723b1c20b30a666b70b451e9",
+    "log_sha256": "eae46463bf48329077c0400abfdbcfa16baf2aa200d402d568fd416312a62304",
+    "declaration_count": 48
+  },
+  "audit_driver": "formal/results/prefix-transportation/AxiomAudit.lean",
+  "audit_driver_sha256": "57b2569c76304133e600e55ae85f5b5abd6290e0723b1c20b30a666b70b451e9",
+  "limits": [
+    "The actual lower floor cover, finite table-count comparison, and quarter-success constant are separate modules.",
+    "Direct compilation uses existing dependencies and the trusted official Mathlib cache; this is not a fresh full closure build or strict Comparator replay."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "module": "Math115.CompletionRetryBudget",
+  "time_utc": "2026-10-09T16:36:42.858944+00:00",
+  "source_sha256": "1acc4031729aabad9c4b0c2b9817be0af8602556439bb85c52c8fa9930834ee9",
+  "compile_exit": 0,
+  "compile_log": ".local/completion-retry/compile-03.log",
+  "audit_exit": 0,
+  "audit_count": 23,
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "no_sorry_or_new_axiom": true,
+  "compiler_released_to": "root/finite_completion",
+  "limitations": [
+    "success >= 1/4 is an explicit input",
+    "equal ideal accepted masses are explicit, with generic finite fiber cardinality bridge",
+    "law semantics only, no finite-bit realization or machine-time cost"
+  ],
+  "sha256": {
+    "formal/Math115/CompletionRetryBudget.lean": "1acc4031729aabad9c4b0c2b9817be0af8602556439bb85c52c8fa9930834ee9",
+    ".local/completion-retry/CompletionRetryBudgetAudit.lean": "3657d1ace21d1f2d316c703f17af5a57e74e152471fe4d3087cd342d03fd439a",
+    ".local/completion-retry/exports.txt": "ea43947e1c65f2079e925f196e2be0620f7d7a7d4d2d53e2ce9f586a689b935e",
+    ".local/completion-retry/compile-03.log": "1c3c94c5ba5269b65ca6f1e1619898c29b82085414e68d924d49353b2a12c581",
+    ".local/completion-retry/axioms.log": "bfa2283a7e3542fe253c53175459b385c50d41101dfcb4ee3c67cfc8d6b990f9",
+    "formal/.lake/build/lib/lean/Math115/CompletionRetryBudget.olean": "9ca04fe4f33165627fb3c889b3b29943e6d1f9a6c7b492e425d9d2e095d0acfd",
+    "formal/.lake/build/lib/lean/Math115/CompletionRetryBudget.ilean": "44584f4f9b4e1bd95062b635702b097a392efbb703ec388c40548e27c6109d1e"
+  }
+}

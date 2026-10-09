@@ -1,0 +1,10 @@
+import Math115.LatticeCompletionAccuracy
+
+#print axioms Math115.LatticeCompletionAccuracy.inflation_three_d
+#print axioms Math115.LatticeCompletionAccuracy.ideal_acceptance_quarter
+#print axioms Math115.LatticeCompletionAccuracy.originalUniform
+#print axioms Math115.LatticeCompletionAccuracy.fineUniform
+#print axioms Math115.LatticeCompletionAccuracy.completion_accuracy_half
+#print axioms Math115.LatticeCompletionAccuracy.completion_accuracy
+#print axioms Math115.LatticeCompletionAccuracy.chosen_dilation_acceptance_quarter
+#print axioms Math115.LatticeCompletionAccuracy.chosen_dilation_accuracy

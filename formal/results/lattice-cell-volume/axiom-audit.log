@@ -1,0 +1,25 @@
+'Math115.LatticeCellVolume.prefixCell' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.prefixCell_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.mem_prefixCell_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.floor_mul_eq_anchor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.prefixCell_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.prefixCell_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.prefixCells_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.prefixCells_pairwiseDisjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.prefix_lattice_cells_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.prefix_unit_cells_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.prefix_lattice_cells_volume_ne_top' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.LatticeCellVolume.prefix_lattice_cells_volume_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.prefix_lattice_cells_volume_toReal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.LatticeCellVolume.prefixCell_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.mixed_difference_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.volume_image_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.volume_image_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.volume_le_of_translated_subset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCellVolume.volume_le_of_subset_scaled_translate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

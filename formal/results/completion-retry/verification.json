@@ -1,0 +1,207 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T16:44:17.497577+00:00",
+  "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa",
+  "scope": "Normalized independent retry laws, exact finite-fibre mass bridge, and concrete rational error schedule; quarter success is an input.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": {
+    "formal/Math115/CompletionRetryBudget.lean": "1acc4031729aabad9c4b0c2b9817be0af8602556439bb85c52c8fa9930834ee9"
+  },
+  "author_receipt": "formal/results/completion-retry/author-receipt.json",
+  "compile_exit_code": 0,
+  "compile_log": "formal/results/completion-retry/compile.log",
+  "isolated_axiom_audit": {
+    "exit_code": 0,
+    "driver": "formal/results/completion-retry/AxiomAudit.lean",
+    "log": "formal/results/completion-retry/axiom-audit.log",
+    "declaration_count": 23,
+    "declarations": [
+      {
+        "name": "Math115.CompletionRetryBudget.uniform_success_mass",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.uniform_success_mass_of_card",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.failure_nonnegative",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.success_nonnegative",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.failure_le_one",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.equal_success_normalized",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.equal_success_retry_mass",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.equal_success_retry_variation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.approximate_retry_variation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.approximate_retry_variation_of_success",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.dyadic",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.retries",
+        "axioms": []
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.finePrecision",
+        "axioms": []
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.retries_positive",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.dyadic_positive",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.dyadic_succ",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.dyadic_antitone_step",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.geometric_budget",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.fine_draw_budget",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.retry_budget",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.retry_budget_target",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.completion_retry_variation_half",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionRetryBudget.completion_retry_variation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "file_sha256": {
+    "formal/results/completion-retry/AxiomAudit.lean": "3657d1ace21d1f2d316c703f17af5a57e74e152471fe4d3087cd342d03fd439a",
+    "formal/results/completion-retry/author-receipt.json": "5e9fe117dc3d8bce33e367d559f1cacdeb7d6588ce7f0d2584696fcec1e90a75",
+    "formal/results/completion-retry/axiom-audit.log": "bfa2283a7e3542fe253c53175459b385c50d41101dfcb4ee3c67cfc8d6b990f9",
+    "formal/results/completion-retry/compile.log": "1c3c94c5ba5269b65ca6f1e1619898c29b82085414e68d924d49353b2a12c581"
+  },
+  "limits": [
+    "Existing dependencies and the official Mathlib cache are trusted. No fresh dependency-closure rebuild or strict Comparator replay in this isolated check.",
+    "This module does not identify a complete finite-bit completion program or prove its machine cost."
+  ]
+}

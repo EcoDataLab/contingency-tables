@@ -1,0 +1,118 @@
+{
+  "timestamp_utc": "2026-10-09T16:48:39.433000+00:00",
+  "module": "Math115.CompletionCountBound",
+  "source_hashes": {
+    "formal/Math115/CompletionCountBound.lean": "4e0a6249f792fbfdf97465820d911f0eae5312b765baef94542990f1c60c56c1",
+    "formal/Math115/PrefixFloorCover.lean": "df27c79f366d20b959f585633a3c8be439a0ff58a808f060b9d389c33d267b92",
+    "formal/Math115/PrefixTransportation.lean": "dc86409ebc24d2961daff92b26e9eef0946dbecc00a0ae7a37b8ecc307749f2d",
+    "formal/Math115/LatticeCellVolume.lean": "911b13ee91a61607ec1dcef58488c79fde2c5e4070204565d366e4c35dc27325",
+    "formal/Math115/LatticeCompletionFinite.lean": "101a2e2030eef45ddfc8d210de8febb0aaf7c615f80204d40ace993f30df62e2",
+    "formal/Math115/LatticeCompletion.lean": "0960e8bf3f40189bae52cf5a707c3583a5264d40f3cf520efad1f5670c2fe13f",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Model.lean": "97c51e87779c92b84451fe14e9df423e9bc26832d716db669a88a1c6f778487e",
+    "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+    "formal/lake-manifest.json": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+    "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+  },
+  "compile_command": "cd formal; ELAN_HOME=\"$PWD/../.tools/elan\" ../.tools/elan/bin/lake env lean -j1 -DautoImplicit=false -o .lake/build/lib/lean/Math115/CompletionCountBound.olean Math115/CompletionCountBound.lean",
+  "successful_compile_log": ".local/completion-count-bound/compile-04.log",
+  "compile_exit_code": 0,
+  "audit_driver": ".local/completion-count-bound/AxiomAudit.lean",
+  "axiom_audit_log": ".local/completion-count-bound/axiom-audit.log",
+  "audit_exit_code": 0,
+  "declaration_count": 16,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "declarations": {
+    "Math115.CompletionCountBound.fineCells": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.normalized_fine_feasible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.upper_cell_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.fine_cells_volume": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.fine_cells_volume_toReal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.fine_cells_volume_le_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.inflation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.inflation_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.inflation_ge_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.inflated_margin_ge_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.shifted_totals_equal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.reduced_totals_equal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.upper_volume_le_inflated_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.fine_cells_volume_le_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.fine_card_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.CompletionCountBound.fine_nat_card_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "main_declarations": [
+    "Math115.CompletionCountBound.upper_cell_cover",
+    "Math115.CompletionCountBound.fine_cells_volume_le_count",
+    "Math115.CompletionCountBound.fine_card_le",
+    "Math115.CompletionCountBound.fine_nat_card_le"
+  ],
+  "scope": "Full actual fine-Table count inequality from concrete transportation-region cell sandwich. Requires equal natural totals, k>0, L>2, R_i>=bL and P_j>=aL. Includes all natural dimensions, never divides by a region volume. No positive-volume premise.",
+  "limitations": "Does not yet derive numerical quarter acceptance, actual physical residual wrapper, oracle-law retry instantiation, finite-bit realization or machine cost."
+}

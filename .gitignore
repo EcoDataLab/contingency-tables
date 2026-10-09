@@ -25,3 +25,12 @@ overview.pdf
 !formal/results/lattice-completion/*.log
 !formal/results/dilated-completion-margins/*.log
 !formal/results/linux-focused-5b37032/*.log
+!formal/results/lattice-completion-finite/*.log
+!formal/results/lattice-cell-volume/*.log
+!formal/results/completion-retry/*.log
+!formal/results/lattice-completion-law/*.log
+!formal/results/prefix-transportation/*.log
+!formal/results/prefix-floor-cover/*.log
+!formal/results/completion-count-bound/*.log
+!formal/results/completion-acceptance/*.log
+!formal/results/lattice-completion-accuracy/*.log

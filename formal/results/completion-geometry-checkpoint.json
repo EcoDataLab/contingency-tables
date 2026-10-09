@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T17:00:31.268110+00:00",
+  "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa",
+  "previous_proof_checkpoint": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
+  "scope": "Nine compiled modules establish actual full finite accepted fibers, prefix-cell geometry and count bounds, quarter acceptance, and actual bounded-retry accuracy at k=d^12 under whole fine-law accuracy.",
+  "isolated_receipts": {
+    "formal/results/lattice-completion-finite/verification.json": "aaf4dc9f7e8f03c44dde437824685c102dce61963b0525247501299f22268a73",
+    "formal/results/lattice-cell-volume/verification.json": "6f39f0d2b5db8ff5679088718e132ed0fd0ff6b31d7a6a5d2acc09e0426bd2a3",
+    "formal/results/completion-retry/verification.json": "f7085029ea442783c36a83654100374c17c63e66d4eb13a2c2da3bc8f4482f4f",
+    "formal/results/lattice-completion-law/verification.json": "4d09340b5340fa8257e75787300f398e813ade361a6843d2d2159e46af1acd79",
+    "formal/results/prefix-transportation/verification.json": "2780607fc9f2f15e77531445e3c5ebeb2335f22b4cf66f9edbd0fce3cad66bf4",
+    "formal/results/prefix-floor-cover/verification.json": "e78b1b70e4e470acd30a2f14aec05879ddb52f094bfd679c3069786ce80b00fa",
+    "formal/results/completion-count-bound/verification.json": "9687fc6663756a959e92939f186033adc962f89b09ffd091951394ebfee1b995",
+    "formal/results/completion-acceptance/verification.json": "db9ce5bf2d38f687d2ae0b2004729585ba62c1873bdcf6b1e33aaf02e29dd21c",
+    "formal/results/lattice-completion-accuracy/verification.json": "742fd142a36b757573399b295e8c701ec113bdea5171cd565a6b4f1489fc02b9"
+  },
+  "independent_reviews": {
+    "formal/results/completion-geometry-review.json": "af38eee3ca86ba29f803d44a0f91a287e10bb1f61404a1e1216b0bc610cb325c"
+  },
+  "source_sha256": {
+    "formal/Math115/LatticeCompletionFinite.lean": "101a2e2030eef45ddfc8d210de8febb0aaf7c615f80204d40ace993f30df62e2",
+    "formal/Math115/LatticeCellVolume.lean": "911b13ee91a61607ec1dcef58488c79fde2c5e4070204565d366e4c35dc27325",
+    "formal/Math115/CompletionRetryBudget.lean": "1acc4031729aabad9c4b0c2b9817be0af8602556439bb85c52c8fa9930834ee9",
+    "formal/Math115/LatticeCompletionLaw.lean": "a063d6f9d243f197223f205806a20a0341e2e56481d4ee861c79abed82328353",
+    "formal/Math115/PrefixTransportation.lean": "dc86409ebc24d2961daff92b26e9eef0946dbecc00a0ae7a37b8ecc307749f2d",
+    "formal/Math115/PrefixFloorCover.lean": "df27c79f366d20b959f585633a3c8be439a0ff58a808f060b9d389c33d267b92",
+    "formal/Math115/CompletionCountBound.lean": "4e0a6249f792fbfdf97465820d911f0eae5312b765baef94542990f1c60c56c1",
+    "formal/Math115/CompletionAcceptance.lean": "7ae58ae570021936b308b463498201e138ef084db382849149bb2df1871c9c46",
+    "formal/Math115/LatticeCompletionAccuracy.lean": "de2098e2b33a4e3ffd9e4622d786b01ad62c4f5b80aa1ce170b1b1199ac4bdfd"
+  },
+  "new_selected_declarations": 212,
+  "limits": [
+    "Fine-law accuracy remains an explicit input; canonical dense indexing and accuracy conversion are not instantiated.",
+    "All-state physical OracleFamily assembly and finite-bit codec/retry realization with costs remain open.",
+    "Python codec/Lean implementation equivalence is unproved.",
+    "Direct module compilation and integrated audits trust existing dependencies and the official Mathlib cache; strict Comparator replay remains unverified."
+  ]
+}

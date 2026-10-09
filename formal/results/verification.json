@@ -1,7 +1,7 @@
 {
   "recorded_date": "2026-10-09",
-  "checkpoint": 7,
-  "prior_checkpoint_commit": "e5d5dd3e81b5eac0e3f42841530286b56bcb96e5",
+  "checkpoint": 8,
+  "prior_checkpoint_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
   "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "lean_toolchain": "leanprover/lean4:v4.34.1",
   "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
@@ -12,19 +12,19 @@
   "focused_dependency_closure": {
     "status": "integrated_aggregate_compilation_and_fresh_axiom_audit_passed",
     "original_module_count": 178,
-    "local_module_count": 41,
-    "trusted_external_import_count": 47,
+    "local_module_count": 50,
+    "trusted_external_import_count": 50,
     "entry_module": "Math115",
     "provenance": "formal/results/provenance.json",
-    "log": "formal/results/seventh-checkpoint.log",
-    "scope_note": "Four new modules compiled serially; three absent unchanged operational-law imports restored for the approximate-oracle modules. Fresh aggregate and both audits use existing dependencies, not a full dependency rebuild."
+    "log": "formal/results/eighth-checkpoint.log",
+    "scope_note": "Nine new modules compiled serially. Fresh aggregate and both audits use existing dependencies, not a full dependency rebuild."
   },
   "checks": {
     "standalone": {
       "status": "passed",
-      "completed_at_utc": "2026-10-09T12:46:48.837653+00:00",
-      "log": "formal/results/seventh-checkpoint.log",
-      "log_sha256": "459205590c6eb93d23020333e37b0d02d6cca305d521d94d9fe59964e2338f76",
+      "completed_at_utc": "2026-10-09T16:56:29.537864+00:00",
+      "log": "formal/results/eighth-checkpoint.log",
+      "log_sha256": "704b50c1aad6a876fe66dc1f75c0f1d5b5847913984e1aead2d9f287290b3952",
       "audited_declarations": [
         {
           "name": "Math115.pair_product_le_quarter_square",
@@ -76,9 +76,9 @@
     },
     "focused": {
       "status": "passed",
-      "completed_at_utc": "2026-10-09T12:46:38.078963+00:00",
-      "log": "formal/results/seventh-checkpoint.log",
-      "log_sha256": "459205590c6eb93d23020333e37b0d02d6cca305d521d94d9fe59964e2338f76",
+      "completed_at_utc": "2026-10-09T16:56:15.825109+00:00",
+      "log": "formal/results/eighth-checkpoint.log",
+      "log_sha256": "704b50c1aad6a876fe66dc1f75c0f1d5b5847913984e1aead2d9f287290b3952",
       "audited_declarations": [
         {
           "name": "OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy",
@@ -3380,11 +3380,1663 @@
             "Classical.choice",
             "Quot.sound"
           ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.Grid",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.extend",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.restrict",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.extend_inside",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.extend_outside",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.extend_injective",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.range_sum_extend_row",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.range_sum_extend_column",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.offsets_difference_outside",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.encodeGrid",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.decodeGrid",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.extend_encodeGrid",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.fine_row_divisible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.fine_column_divisible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.fine_residue_zero_strips",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.recoveredDigits",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.recoveredDigits_val",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.residue_eq_finiteOffsets",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.extend_decodeGrid",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.decodeGrid_encodeGrid",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.recoveredDigits_encodeGrid",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.encodeGrid_decodeGrid",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.encodeGrid_row",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.encodeGrid_column",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.encodeGrid_nonneg",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.decodeGrid_row",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.decodeGrid_column",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.intGrid",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.natGrid",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.natGrid_intGrid",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.intGrid_natGrid",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.intGrid_row",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.intGrid_column",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.natGrid_hasMargins",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.fineMargin",
+          "axioms": []
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.FineTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.fineTable_row_divisible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.fineTable_column_divisible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.Accepted",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.AcceptedFine",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.encodeTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.intGrid_encodeTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.encodeTable_accepted",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.encodeAccepted",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.decodeAccepted",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.intGrid_decodeAccepted",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.decodeAccepted_encodeAccepted",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.encodeAccepted_decodeAccepted",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.acceptedEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.accepted_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.fixedFiberEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionFinite.fixedFiber_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefixCell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefixCell_measurable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.mem_prefixCell_iff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.floor_mul_eq_anchor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefixCell_disjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefixCell_volume",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefixCells_measurable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefixCells_pairwiseDisjoint",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefix_lattice_cells_volume",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefix_unit_cells_volume",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefix_lattice_cells_volume_ne_top",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefix_lattice_cells_volume_pos",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefix_lattice_cells_volume_toReal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.prefixCell_error",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.mixed_difference_error",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.volume_image_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.volume_image_scale",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.volume_le_of_translated_subset",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCellVolume.volume_le_of_subset_scaled_translate",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.uniform_success_mass",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.uniform_success_mass_of_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.failure_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.success_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.failure_le_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.equal_success_normalized",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.equal_success_retry_mass",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.equal_success_retry_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.approximate_retry_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.approximate_retry_variation_of_success",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.dyadic",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.retries",
+          "axioms": []
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.finePrecision",
+          "axioms": []
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.retries_positive",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.dyadic_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.dyadic_succ",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.dyadic_antitone_step",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.geometric_budget",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.fine_draw_budget",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.retry_budget",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.retry_budget_target",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.completion_retry_variation_half",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionRetryBudget.completion_retry_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionLaw.trial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionLaw.trial_eq_none",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionLaw.successfulFiberEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionLaw.successfulFiber_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionLaw.fine_nonempty_of_fallback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionLaw.ideal_success_mass",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionLaw.ideal_success_probability",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionLaw.ideal_retry_mass",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionLaw.approximate_retry_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionLaw.completion_accuracy_half",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionLaw.completion_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.Array",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.Matrix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.Interior",
+          "axioms": []
+        },
+        {
+          "name": "Math115.PrefixTransportation.difference",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.prefixSum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.ZeroAxes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.ZeroBoundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.difference_row_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.difference_column_sum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.difference_row_sum_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.difference_column_sum_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.prefix_zero_axes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.prefix_difference",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.difference_prefix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.extend",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.restrict",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.extend_inside",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.extend_outside",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.range_sum_extend_row",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.range_sum_extend_column",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.interiorPrefix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.interiorPrefix_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.interiorPrefix_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.interiorPrefix_injective_of_margins",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.offsets",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.offsets_zero_boundary",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.offsets_apply",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.offsets_difference_outside",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.perturbation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.extend_perturbation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.perturbation_rows_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.perturbation_columns_zero",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.interiorPrefix_perturbation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.offsets_error",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.perturbation_error",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.Feasible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.PrefixRegion",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.feasible_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.feasible_smul",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.feasible_const",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.prefixRegion_translate_subset",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.prefixRegion_volume_mono_of_difference_table",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.prefixRegion_constant_translate_subset",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.exists_feasible_of_nonnegative_equal_total",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.prefixRegion_volume_mono",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.prefixRegion_scale_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.prefixRegion_volume_scale",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixTransportation.prefix_error_upper_containment",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.floorPrefix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.floorGrid",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.floorPrefix_zero_axes",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.floorGrid_entry_error",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.floorGrid_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.marginPrefix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.prefix_full_columns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.prefix_full_rows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.marginPrefix_succ",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.floorGrid_rows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.floorGrid_columns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.roundedTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.tableAnchor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.tableReal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.tableAnchor_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.tableReal_feasible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.tableAnchor_injective",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.floorGrid_prefix",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.roundedTable_anchor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.interiorPrefix_mem_rounded_cell",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.lower_floor_cover",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PrefixFloorCover.lower_volume_le_card",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.fineCells",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.normalized_fine_feasible",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.upper_cell_cover",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.fine_cells_volume",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.fine_cells_volume_toReal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.fine_cells_volume_le_upper",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.inflation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.inflation_pos",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.inflation_ge_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.inflated_margin_ge_upper",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.shifted_totals_equal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.reduced_totals_equal",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.upper_volume_le_inflated_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.fine_cells_volume_le_count",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.fine_card_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionCountBound.fine_nat_card_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.two_mul_le_power_twelve",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.dilationFactor",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.increment",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.denominator_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.dilationFactor_eq_one_add",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.increment_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.dilationFactor_positive",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.two_div_k_le_inverse_d",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.exponent_allowance",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.exp_four_thirds_lt_four",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.dilationFactor_pow_lt_four",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.acceptance_lower_real",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.CompletionAcceptance.acceptance_lower_rat",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionAccuracy.inflation_three_d",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionAccuracy.ideal_acceptance_quarter",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionAccuracy.originalUniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionAccuracy.fineUniform",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionAccuracy.completion_accuracy_half",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionAccuracy.completion_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionAccuracy.chosen_dilation_acceptance_quarter",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.LatticeCompletionAccuracy.chosen_dilation_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
         }
       ]
     }
   },
-  "new_audited_declaration_count": 424,
+  "new_audited_declaration_count": 636,
   "original_audited_declaration_count": 2,
   "linux_verification": {
     "record": "formal/results/linux-runs.json",
@@ -3409,22 +5061,29 @@
   "limits": [
     "Official Mathlib cached artifacts and Lean bootstrap binaries remain trusted.",
     "The d17 and d25 theorems bound actual auxiliary-chain inverse gaps, not complete machine runtime.",
-    "Approximate completion-law bounds require normalized feasible all-state laws, fresh conditional calls, and independent restarted trials.",
-    "The integer codec proves signed-array inverses and constructed finite-image cardinality; the full accepted finite-table-fibre bijection remains open.",
-    "Actual strong residual and dilated dense-input bounds are compiled; universal geometric acceptance and completion-law/finite-bit realization remain open.",
-    "The original sufficient dense-scale interface still excludes L=3d; the reviewed dilation route supplies different inner inputs.",
+    "Actual completion-law accuracy requires equal totals, strong margins, a dimension allowance, a feasible fallback, and whole fine-law accuracy. Count/volume and quarter acceptance are discharged.",
+    "Canonical dense-law indexing/accuracy conversion and all-state physical OracleFamily assembly remain uninstantiated.",
+    "The finite-law independent-retry semantics are not yet identified with a finite-bit codec/retry program; complete machine-cost composition remains open.",
+    "The original sufficient dense-scale interface still excludes L=3d; dilation supplies different inner inputs.",
     "Prior Linux checks cover only their recorded source commits, not these additions or strict Comparator replay."
   ],
   "source_sha256": {
-    "formal/Math115.lean": "00be6638525183a5025fdc52c620e72095d79a5c9032a002c5a37fa696de8707",
+    "formal/Math115.lean": "c97ea4bb0b1a6ad765ceef4e2aa7b0a221e4ae6ee2ea2ce5d6caf3cfb3776d27",
     "formal/Math115/AllSmallChainGap.lean": "f87775c41d272d968362036e8082fe748031244b52cbe6b743e18f40b775a288",
-    "formal/Math115/AxiomAudit.lean": "7315e79f331c91a6d0f85e67180f36e1d45d83bd25f5cf86b25afa17a33bead0",
+    "formal/Math115/AxiomAudit.lean": "b7258e95a7608f81bd5d29c90ab39ae737f7ad6e2d5be72dc1b24b6648d55b64",
+    "formal/Math115/CompletionAcceptance.lean": "7ae58ae570021936b308b463498201e138ef084db382849149bb2df1871c9c46",
     "formal/Math115/CompletionAdjustment.lean": "714934dc14bca5589b40de0952db8dfd17ead1aa93f71306fbf120d832e47192",
+    "formal/Math115/CompletionCountBound.lean": "4e0a6249f792fbfdf97465820d911f0eae5312b765baef94542990f1c60c56c1",
+    "formal/Math115/CompletionRetryBudget.lean": "1acc4031729aabad9c4b0c2b9817be0af8602556439bb85c52c8fa9930834ee9",
     "formal/Math115/DilatedCompletionMargins.lean": "ad52e6f22b9747eb7976bc1924ce9ded65d94ae76820fa33c0109a3745b7ed0b",
     "formal/Math115/GlobalDisplayOwnership.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
     "formal/Math115/IdealOracleScales.lean": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf",
     "formal/Math115/IdealRepairRefinement.lean": "7728c29d949bbf0b2cefa4feea9e38cc971df2c70ea069a77dfd53162418ed93",
+    "formal/Math115/LatticeCellVolume.lean": "911b13ee91a61607ec1dcef58488c79fde2c5e4070204565d366e4c35dc27325",
     "formal/Math115/LatticeCompletion.lean": "0960e8bf3f40189bae52cf5a707c3583a5264d40f3cf520efad1f5670c2fe13f",
+    "formal/Math115/LatticeCompletionAccuracy.lean": "de2098e2b33a4e3ffd9e4622d786b01ad62c4f5b80aa1ce170b1b1199ac4bdfd",
+    "formal/Math115/LatticeCompletionFinite.lean": "101a2e2030eef45ddfc8d210de8febb0aaf7c615f80204d40ace993f30df62e2",
+    "formal/Math115/LatticeCompletionLaw.lean": "a063d6f9d243f197223f205806a20a0341e2e56481d4ee861c79abed82328353",
     "formal/Math115/PaddedMarginBridge.lean": "0e015eeb217967669054b9492281c020c0281075336e9712e03c2b623bda0c4b",
     "formal/Math115/PaddingGrowth.lean": "deece6445719c3e56b5b87576c2ec2aed62d11c9c4d525fd02a3c11918831750",
     "formal/Math115/PaddingGrowthAlgebra.lean": "d9ddbad574efaf8786d1e994964f6ed1c54c82f1b26ef068bd5c3dee042d1ab4",
@@ -3442,6 +5101,8 @@
     "formal/Math115/PhysicalStationaryLaw.lean": "ce1b601cbc1d7cac6a9823c08333856c9b4e7e95b62ce3a36cbb0dc4dc72375f",
     "formal/Math115/PhysicalStationaryMass.lean": "3f33393f684062936200fa54270537e84f7b6abc9d71fa6be3f84c3d38b76e8b",
     "formal/Math115/PhysicalStationarySuccess.lean": "d6743fe2c6eff224572c4f2d114af00e3895951389109869bed7f8ce6616c2b3",
+    "formal/Math115/PrefixFloorCover.lean": "df27c79f366d20b959f585633a3c8be439a0ff58a808f060b9d389c33d267b92",
+    "formal/Math115/PrefixTransportation.lean": "dc86409ebc24d2961daff92b26e9eef0946dbecc00a0ae7a37b8ecc307749f2d",
     "formal/Math115/QuadraticCoefficient.lean": "9d023785b272aeb6b819aaa1bc42c7c04f8419522799b64e0b66bb355b91a46a",
     "formal/Math115/ReducedAllSmallChain.lean": "0ba3ec59f6fa2f7e44939d28465ad190fcf82b4e1dae8f436ab959369964db58",
     "formal/Math115/ReducedRepairRefinement.lean": "816e8acb57279f019167817c023ee492d441ae9c43bdc60342cbb3a6dc5803f3",
@@ -3486,9 +5147,9 @@
         ".lake/build/lib/lean/Math115.olean",
         "Math115.lean"
       ],
-      "started_at_utc": "2026-10-09T12:44:50.942388+00:00",
-      "completed_at_utc": "2026-10-09T12:46:00.350864+00:00",
-      "elapsed_seconds": 69.40811120881699,
+      "started_at_utc": "2026-10-09T16:53:22.299472+00:00",
+      "completed_at_utc": "2026-10-09T16:54:52.489898+00:00",
+      "elapsed_seconds": 90.19051070790738,
       "exit_code": 0
     },
     {
@@ -3501,9 +5162,9 @@
         "-DautoImplicit=false",
         "Math115/AxiomAudit.lean"
       ],
-      "started_at_utc": "2026-10-09T12:46:00.351790+00:00",
-      "completed_at_utc": "2026-10-09T12:46:38.078963+00:00",
-      "elapsed_seconds": 37.72699433309026,
+      "started_at_utc": "2026-10-09T16:54:52.490824+00:00",
+      "completed_at_utc": "2026-10-09T16:56:15.825109+00:00",
+      "elapsed_seconds": 83.3344397910405,
       "exit_code": 0
     },
     {
@@ -3516,24 +5177,28 @@
         "-DautoImplicit=false",
         "Math115/StandaloneAxiomAudit.lean"
       ],
-      "started_at_utc": "2026-10-09T12:46:38.082621+00:00",
-      "completed_at_utc": "2026-10-09T12:46:48.837653+00:00",
-      "elapsed_seconds": 10.75497299991548,
+      "started_at_utc": "2026-10-09T16:56:15.829080+00:00",
+      "completed_at_utc": "2026-10-09T16:56:29.537864+00:00",
+      "elapsed_seconds": 13.708797791972756,
       "exit_code": 0
     }
   ],
   "new_module_verification": {
-    "record": "formal/results/completion-oracle-checkpoint.json",
-    "sha256": "5145ba882e1a038bc45e1e1a6e398e8826f27489927362450a1032a7b42db661",
+    "record": "formal/results/completion-geometry-checkpoint.json",
+    "sha256": "9a4f1140703e95fe7fa8501445541309926c8e858d9b6d60b9d880a3ca13503c",
     "records": [
-      "formal/results/approximate-oracle/verification.json",
-      "formal/results/lattice-completion/verification.json",
-      "formal/results/dilated-completion-margins/verification.json"
+      "formal/results/lattice-completion-finite/verification.json",
+      "formal/results/lattice-cell-volume/verification.json",
+      "formal/results/completion-retry/verification.json",
+      "formal/results/lattice-completion-law/verification.json",
+      "formal/results/prefix-transportation/verification.json",
+      "formal/results/prefix-floor-cover/verification.json",
+      "formal/results/completion-count-bound/verification.json",
+      "formal/results/completion-acceptance/verification.json",
+      "formal/results/lattice-completion-accuracy/verification.json"
     ],
     "independent_source_reviews": [
-      "formal/results/approximate-oracle-review.json",
-      "formal/results/lattice-completion-review.json",
-      "reports/completion-oracle-dilation-review.json"
+      "formal/results/completion-geometry-review.json"
     ]
   },
   "prior_module_verifications": [
@@ -3546,21 +5211,41 @@
       "record": "formal/results/finite-walk/verification.json",
       "sha256": "346da571e8c4a66e4dd17d89d030d2004e04b877653bf08cfb85ecacf10de6d5",
       "independent_source_review": "formal/results/finite-walk-review.json"
+    },
+    {
+      "record": "formal/results/completion-oracle-checkpoint.json",
+      "sha256": "5145ba882e1a038bc45e1e1a6e398e8826f27489927362450a1032a7b42db661",
+      "records": [
+        "formal/results/approximate-oracle/verification.json",
+        "formal/results/lattice-completion/verification.json",
+        "formal/results/dilated-completion-margins/verification.json"
+      ],
+      "independent_source_reviews": [
+        "formal/results/approximate-oracle-review.json",
+        "formal/results/lattice-completion-review.json",
+        "reports/completion-oracle-dilation-review.json"
+      ]
     }
   ],
   "publication": {
-    "source_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
-    "commit_url": "https://github.com/EcoDataLab/contingency-tables/commit/5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
-    "observed_at_utc": "2026-10-09T16:30:29.902883+00:00",
-    "python_ci": {
-      "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932442921",
-      "status": "passed"
-    },
-    "focused_linux": {
-      "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805",
-      "status": "passed",
-      "result": "420 focused declaration audits passed; 55 source hashes matched to the exact commit",
-      "receipt": "formal/results/linux-focused-5b37032/verification.json"
+    "status": "locally_verified_unpublished",
+    "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa"
+  },
+  "prior_publications": [
+    {
+      "source_commit": "5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
+      "commit_url": "https://github.com/EcoDataLab/contingency-tables/commit/5b3703234e7f6cd88e6b6f6b3dab85510ba4366f",
+      "observed_at_utc": "2026-10-09T16:30:29.902883+00:00",
+      "python_ci": {
+        "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932442921",
+        "status": "passed"
+      },
+      "focused_linux": {
+        "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805",
+        "status": "passed",
+        "result": "420 focused declaration audits passed; 55 source hashes matched to the exact commit",
+        "receipt": "formal/results/linux-focused-5b37032/verification.json"
+      }
     }
-  }
+  ]
 }

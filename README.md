@@ -2,7 +2,7 @@
 
 An open EcoDataLab research project building on [OpenAI result #115](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/115.md): sampling and counting integer tables with fixed margins and cell bounds.
 
-The research now includes a **Lean-verified `80,000d¹⁷` inverse-gap bound for an actual ideal auxiliary chain**, where `d=10+(m+1)(n+1)`. It covers all ordinary equal-total margins through automatic branch selection and a proved state-existence construction. A new [completion-oracle construction](docs/completion-oracle-dilation.md) enlarges the inner margins, uses the unchanged dense sampler, and rounds back with equal accepted representation counts. Reviewed mathematics gives acceptance greater than one quarter while retaining the outer `d¹⁷` scales. Its complete geometric formalization, finite-bit program, and machine cost remain open.
+The research now includes a **Lean-verified `80,000d¹⁷` inverse-gap bound for an actual ideal auxiliary chain**, where `d=10+(m+1)(n+1)`. It covers all ordinary equal-total margins through automatic branch selection and a proved state-existence construction. The [completion-oracle formalization](docs/completion-oracle-formalization.md) now proves equal accepted representation counts, acceptance at least one quarter at `L=3d`, and bounded-retry output accuracy from an accurate fine-table law. Connecting that law to the canonical dense sampler, every physical state's oracle, and finite-bit program costs remains open.
 
 The output proof extends to finite walks from a known feasible table and now identifies the actual proposal/draw/test law. With independent restarted attempts, [approximate completions](docs/physical-approximate-oracle.md) add at most `R(Tγζstep+ζterminal)` to the ideal error `exp(−R/S)+RB exp(−T/K)`, with `γ≤1/2`. Here `K=80,000d¹⁷`, `S=2(1+p²)`, and the [finite-walk guide](docs/physical-finite-walk.md) defines `B` and sufficient walk/retry schedules. These are verified finite-law bounds under the stated oracle-accuracy hypotheses.
 
@@ -20,12 +20,12 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 | Stationary success and uniform output | Lean proofs give exact table mass `1/Z`, success `N/Z`, and an independent-retry error bound; ideal-scale success is at least `1/[2(1+p²)]` |
 | Finite-walk output guarantee | Actual rational transition law, positive starting state, terminal completion, bounded retries, and explicit sufficient schedules for any positive TV-error target |
 | Approximate completion interface | Lean identifies the actual proposal/draw/test law and bounds transition, terminal, and restarted-output error; holding proposals incur no completion error |
-| Completion oracle at `L=3d` | Reviewed dilate/sample/round construction has equal `k^e` accepted representations and success greater than one quarter; exact integer codec and finite checks are implemented; full geometric/program proof remains open |
+| Completion oracle at `L=3d` | Lean proves the full accepted-preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at `k=d¹²`; fine-law accuracy is an input, and program/cost integration remains open |
 | Limit of stationary rejection | A reviewed ideal-scale family has `p²s→1`, so the unchanged rule's quadratic stationary-trial cost is unavoidable in worst-case order; eight exact finite checks |
 | Smaller padding threshold | Actual ordinary-table counts prove half unpadding acceptance at `U=47d⁵`, with a smaller shape-aware alternative |
 | Limit of this padding construction | A counting argument forces U=Ω(Ln²) in a 2×n family if acceptance stays bounded away from zero |
 | Smaller accuracy and counting-estimator budgets | Exact rational allocations and independent-block median schedules; transition allowances and observable-evaluation costs are reported separately |
-| Lean verification | 426 audited declarations: 420 focused and six standalone, all using standard foundational axioms; exact scope in the verification ledger |
+| Lean verification | 638 audited declarations: 632 focused and six standalone, all using standard foundational axioms; exact scope in the verification ledger |
 | Exact reference algorithms | Uniform and weighted small-fiber DP, cactus cycle coordinates, and graph-block factorization, with explicit work limits |
 | Exact feasible metric range | Rational min-cost flow with primal/dual and infeasibility-cut certificates; no table enumeration |
 | Better fixed cycle mixtures | Exact certificates: over 63% larger gap on the 42-table fixture, beating every rectangle-only mixture; no general mixing or runtime claim |
@@ -39,7 +39,7 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 - [Ideal-only scales and dense-interface limit](docs/ideal-oracle-scales.md), [sharper physical repair](docs/physical-repair-refinement.md), and [automatic branches and feasibility](docs/reduced-all-small-chain.md).
 - [Stationary success and uniform output](docs/physical-stationary-success.md): completion counts, the exact output bijection, and independent stationary retries.
 - [Finite walks and output error](docs/physical-finite-walk.md): the actual selected transition law, independent restarts, and sufficient walk/retry schedules.
-- [Completion by dilation and rounding](docs/completion-oracle-dilation.md), with [approximate-oracle error propagation](docs/physical-approximate-oracle.md): the route to efficient completion at the smaller outer scales and its remaining formal obligations.
+- [Completion by dilation and rounding](docs/completion-oracle-dilation.md), its [finite-table and geometry proofs](docs/completion-oracle-formalization.md), and [approximate-oracle error propagation](docs/physical-approximate-oracle.md): the completion route at the smaller outer scales and its remaining program obligations.
 - [Stationary-rejection obstruction](docs/stationary-success-obstruction.md): why the extra defect mass can force quadratic retries even when ordinary unpadding always succeeds.
 - [Dense-compatible ideal chain](docs/reduced-small-chain.md), [original-chain comparison](docs/small-chain-gap.md), and [sequential padding](docs/sequential-padding.md).
 - [Transport proof](docs/transport-localization.md), [switching and scale proof](docs/scale-audit.md), [error budgets](docs/error-budgets.md), and [independent mathematical review](docs/independent-review.md).
@@ -67,7 +67,7 @@ python3 scripts/verify_sources.py
 
 The archived audit and numerical mixture search need NumPy. Saved mixture certificates replay using only exact standard-library arithmetic. Source verification downloads only files in the pinned manifest and checks their Git blob hashes. It does not execute upstream code.
 
-The seventh checkpoint passed **237 Python tests** and **426 Lean declaration audits**. The [Python receipt](reports/checkpoint-verification.json) and [Lean receipts](formal/results/) record their environments, source hashes, and exact scope.
+The eighth checkpoint passed **638 Lean declaration audits**, adding 212 declarations across nine modules. The unchanged Python sources retain the seventh checkpoint's **237 passing tests**; source-hash continuity was checked again. The [Python receipt](reports/checkpoint-verification.json) and [Lean receipts](formal/results/) record environments, source hashes, and exact scope.
 
 Generate the research reports:
 
@@ -110,7 +110,7 @@ bash scripts/verify_lean.sh standalone
 bash scripts/verify_lean.sh focused
 ```
 
-The [Linux verification record](docs/linux-verification.md) includes an independent focused build at `e5d5dd3`, with all 318 checkpoint-6 focused audits passing, and a successful full original-theorem build at `5e5d6ef`, auditing all three original exports. Thor separately reproduced the earlier `b14082b` checkpoint: 128 tests, 100 focused modules, and 68 audits. These runs exclude the later completion-oracle additions. Strict Comparator replay remains unavailable on the tested hosted runner because its sandbox ABI is too old; no Comparator pass is claimed.
+The [Linux verification record](docs/linux-verification.md) includes an independent focused build at `5b37032`, with all 420 checkpoint-7 focused audits passing, and a successful full original-theorem build at `5e5d6ef`, auditing all three original exports. Thor separately reproduced the earlier `b14082b` checkpoint: 128 tests, 100 focused modules, and 68 audits. These runs exclude the eighth checkpoint's finite-table geometry and accuracy additions. Strict Comparator replay remains unavailable on the tested hosted runner because its sandbox ABI is too old; no Comparator pass is claimed.
 
 ## A concrete CBEI example
 

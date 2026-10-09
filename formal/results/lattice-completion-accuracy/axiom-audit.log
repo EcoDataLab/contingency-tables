@@ -1,0 +1,10 @@
+'Math115.LatticeCompletionAccuracy.inflation_three_d' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionAccuracy.ideal_acceptance_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionAccuracy.originalUniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionAccuracy.fineUniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionAccuracy.completion_accuracy_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionAccuracy.completion_accuracy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.LatticeCompletionAccuracy.chosen_dilation_acceptance_quarter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.LatticeCompletionAccuracy.chosen_dilation_accuracy' depends on axioms: [propext, Classical.choice, Quot.sound]

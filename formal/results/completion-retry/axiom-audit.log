@@ -1,0 +1,27 @@
+'Math115.CompletionRetryBudget.uniform_success_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.uniform_success_mass_of_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.failure_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.success_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.failure_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.equal_success_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.equal_success_retry_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.equal_success_retry_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.approximate_retry_variation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.approximate_retry_variation_of_success' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionRetryBudget.dyadic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.retries' does not depend on any axioms
+'Math115.CompletionRetryBudget.finePrecision' does not depend on any axioms
+'Math115.CompletionRetryBudget.retries_positive' depends on axioms: [propext, Quot.sound]
+'Math115.CompletionRetryBudget.dyadic_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.dyadic_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.dyadic_antitone_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.geometric_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.fine_draw_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.retry_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.retry_budget_target' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompletionRetryBudget.completion_retry_variation_half' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.CompletionRetryBudget.completion_retry_variation' depends on axioms: [propext, Classical.choice, Quot.sound]

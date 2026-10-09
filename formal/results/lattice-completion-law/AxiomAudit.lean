@@ -1,0 +1,13 @@
+import Math115.LatticeCompletionLaw
+
+#print axioms Math115.LatticeCompletionLaw.trial
+#print axioms Math115.LatticeCompletionLaw.trial_eq_none
+#print axioms Math115.LatticeCompletionLaw.successfulFiberEquiv
+#print axioms Math115.LatticeCompletionLaw.successfulFiber_card
+#print axioms Math115.LatticeCompletionLaw.fine_nonempty_of_fallback
+#print axioms Math115.LatticeCompletionLaw.ideal_success_mass
+#print axioms Math115.LatticeCompletionLaw.ideal_success_probability
+#print axioms Math115.LatticeCompletionLaw.ideal_retry_mass
+#print axioms Math115.LatticeCompletionLaw.approximate_retry_bound
+#print axioms Math115.LatticeCompletionLaw.completion_accuracy_half
+#print axioms Math115.LatticeCompletionLaw.completion_accuracy

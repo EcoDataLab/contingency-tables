@@ -1,0 +1,136 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T16:53:22.154282+00:00",
+  "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa",
+  "scope": "Exact symbolic analytic acceptance bound from a supplied count comparison and accepted-count identity.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": {
+    "formal/Math115/CompletionAcceptance.lean": "7ae58ae570021936b308b463498201e138ef084db382849149bb2df1871c9c46"
+  },
+  "author_receipt": "formal/results/completion-acceptance/author-receipt.json",
+  "compile_exit_code": 0,
+  "compile_log": "formal/results/completion-acceptance/compile.log",
+  "isolated_axiom_audit": {
+    "exit_code": 0,
+    "driver": "formal/results/completion-acceptance/AxiomAudit.lean",
+    "log": "formal/results/completion-acceptance/axiom-audit.log",
+    "declaration_count": 13,
+    "declarations": [
+      {
+        "name": "Math115.CompletionAcceptance.two_mul_le_power_twelve",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.dilationFactor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.increment",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.denominator_positive",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.dilationFactor_eq_one_add",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.increment_nonnegative",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.dilationFactor_positive",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.two_div_k_le_inverse_d",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.exponent_allowance",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.exp_four_thirds_lt_four",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.dilationFactor_pow_lt_four",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.acceptance_lower_real",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionAcceptance.acceptance_lower_rat",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "file_sha256": {
+    "formal/results/completion-acceptance/AxiomAudit.lean": "b8acefbb6aaea6890d3ece2ec97d8c3850c7b76127f583b14ee9c4d01bbbdba3",
+    "formal/results/completion-acceptance/author-receipt.json": "9286a63ae1e09cb7c23ea891dc4046c4b7feea7b430a365f19d7d1624b9e9d65",
+    "formal/results/completion-acceptance/axiom-audit.log": "59d6ad5160d8d10beb7b47a627683f1e332e84d8e7e158ef32d938c1235db6d4",
+    "formal/results/completion-acceptance/compile.log": "e6ac67a922ffa5742b8ad2d6ce9e35935677a3976688ec33ba537ac0f6ba9fc5"
+  },
+  "limits": [
+    "Existing dependencies and the official Mathlib cache are trusted. No fresh dependency-closure rebuild or strict Comparator replay in this isolated check.",
+    "This module does not identify a complete finite-bit completion program or prove its machine cost."
+  ]
+}

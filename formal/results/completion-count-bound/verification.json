@@ -1,0 +1,160 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T16:50:01.234897+00:00",
+  "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa",
+  "scope": "Actual full fine-table count bound from concrete cell covers, constructed margin-volume monotonicity, and direct finite ENNReal comparison.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": {
+    "formal/Math115/CompletionCountBound.lean": "4e0a6249f792fbfdf97465820d911f0eae5312b765baef94542990f1c60c56c1"
+  },
+  "author_receipt": "formal/results/completion-count-bound/author-receipt.json",
+  "compile_exit_code": 0,
+  "compile_log": "formal/results/completion-count-bound/compile.log",
+  "isolated_axiom_audit": {
+    "exit_code": 0,
+    "driver": "formal/results/completion-count-bound/AxiomAudit.lean",
+    "log": "formal/results/completion-count-bound/axiom-audit.log",
+    "declaration_count": 16,
+    "declarations": [
+      {
+        "name": "Math115.CompletionCountBound.fineCells",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.normalized_fine_feasible",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.upper_cell_cover",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.fine_cells_volume",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.fine_cells_volume_toReal",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.fine_cells_volume_le_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.inflation",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.inflation_pos",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.inflation_ge_one",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.inflated_margin_ge_upper",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.shifted_totals_equal",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.reduced_totals_equal",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.upper_volume_le_inflated_lower",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.fine_cells_volume_le_count",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.fine_card_le",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.CompletionCountBound.fine_nat_card_le",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "file_sha256": {
+    "formal/results/completion-count-bound/AxiomAudit.lean": "789654b9306e26d950f260de628be26226b6a364fb613f564a61720ca1df5510",
+    "formal/results/completion-count-bound/author-receipt.json": "a8a230aa87698caa2081de3a185c6fb4d1ac68967616957aea4f477688c7db61",
+    "formal/results/completion-count-bound/axiom-audit.log": "ac7ae5f71f3900681c6310187a8964c067aec328719166bd1e42f9baf3b13314",
+    "formal/results/completion-count-bound/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "Existing dependencies and the official Mathlib cache are trusted. No fresh dependency-closure rebuild or strict Comparator replay in this isolated check.",
+    "This module does not identify a complete finite-bit completion program or prove its machine cost."
+  ]
+}

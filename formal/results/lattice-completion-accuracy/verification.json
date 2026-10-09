@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T16:53:22.172641+00:00",
+  "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa",
+  "scope": "Actual finite-table quarter acceptance and bounded-retry accuracy with the geometric count premise discharged; includes k=d^12.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": {
+    "formal/Math115/LatticeCompletionAccuracy.lean": "de2098e2b33a4e3ffd9e4622d786b01ad62c4f5b80aa1ce170b1b1199ac4bdfd"
+  },
+  "author_receipt": "formal/results/lattice-completion-accuracy/author-receipt.json",
+  "compile_exit_code": 0,
+  "compile_log": "formal/results/lattice-completion-accuracy/compile.log",
+  "isolated_axiom_audit": {
+    "exit_code": 0,
+    "driver": "formal/results/lattice-completion-accuracy/AxiomAudit.lean",
+    "log": "formal/results/lattice-completion-accuracy/axiom-audit.log",
+    "declaration_count": 8,
+    "declarations": [
+      {
+        "name": "Math115.LatticeCompletionAccuracy.inflation_three_d",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionAccuracy.ideal_acceptance_quarter",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionAccuracy.originalUniform",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionAccuracy.fineUniform",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionAccuracy.completion_accuracy_half",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionAccuracy.completion_accuracy",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionAccuracy.chosen_dilation_acceptance_quarter",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionAccuracy.chosen_dilation_accuracy",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "file_sha256": {
+    "formal/results/lattice-completion-accuracy/AxiomAudit.lean": "6e9395a4193763c4a4c6990e5df8b2c4aeda341a3720594b30093a1683a75c11",
+    "formal/results/lattice-completion-accuracy/author-receipt.json": "85f480027f1ab9f5f504e740b3fd7becd2f38f2fe3962c92f777c1962207ee44",
+    "formal/results/lattice-completion-accuracy/axiom-audit.log": "309e02019aac298fccea1b0ae160912d126225991d9ad1fcccd63a7e3185cfe3",
+    "formal/results/lattice-completion-accuracy/compile.log": "70dea7ff7138ae480e1128249c3523be17a02b6355d10e781ba212029959afa5"
+  },
+  "limits": [
+    "Existing dependencies and the official Mathlib cache are trusted. No fresh dependency-closure rebuild or strict Comparator replay in this isolated check.",
+    "This module does not identify a complete finite-bit completion program or prove its machine cost."
+  ]
+}

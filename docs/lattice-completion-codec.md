@@ -3,9 +3,10 @@
 Direct Lean compilation and all 44 named declaration axiom audits passed
 on 9 October 2026 with pinned Lean 4.34.1. Eight declarations are axiom-free;
 the remainder use only `propext`, `Classical.choice`, and `Quot.sound`, or
-subsets. This is an author module check using existing dependency objects,
-not aggregate integration, a dependency-closure rebuild, or Comparator
-replay. The [author receipt](../formal/results/lattice-completion/verification.json)
+subsets. The original author module check used existing dependency objects;
+checkpoint 7 subsequently integrated it and reproduced the focused closure
+on Linux. Neither check is a strict Comparator replay. The
+[author receipt](../formal/results/lattice-completion/verification.json)
 retains commands, raw logs, exact exports, source hashes, and timings. The
 [independent review](../formal/results/lattice-completion-review.json)
 records its separate mathematical and interface assessment.
@@ -62,15 +63,18 @@ Natural subtraction handles empty and singleton dimensions in this finite
 digit type. Finite-table assertions must restrict the arrays to the stated
 rectangle; arbitrary outside entries are not implicitly table cells.
 
-To obtain the full equal-preimage theorem for actual finite table types,
-add an explicit finite-table extension and restriction adapter, prove its
-prefix congruence inside the rectangle, establish that each fine table's
-recovered residue has exactly the finite-offset support, and show the
-accepted decoder has the original nonnegative margins. The existing codec
-identities would then supply the inverse maps. That adapter and accepted
-fibre surjectivity are separate from the image-count statement here.
+The new [`LatticeCompletionFinite`](../formal/Math115/LatticeCompletionFinite.lean)
+module supplies that full finite-table adapter. Original tables extend by
+zero outside the rectangle, and fine tables extend by `2k`, preserving the
+codec's shift. It proves prefix congruence, exact support of the recovered
+digits, nonnegative decoded margins on acceptance, and both inverse maps.
+Its `acceptedEquiv` and `fixedFiber_card` theorems count the entire accepted
+fine-table fiber. These stronger claims have a separate
+[52-declaration receipt](../formal/results/lattice-completion-finite/verification.json).
 
 No volume comparison, constant rejection-success bound, invocation of the
 original dense sampler, finite-bit realizer, or machine-cost theorem is
-claimed by this module. Those are separate interfaces in the completion
-oracle research.
+claimed by this core module. The subsequent
+[completion formalization](completion-oracle-formalization.md) now proves the
+volume/count comparison, quarter acceptance, and conditional fine-law retry
+accuracy. Dense-sampler integration and finite-bit costs remain separate.

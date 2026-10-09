@@ -1,0 +1,262 @@
+{
+  "timestamp_utc": "2026-10-09T16:38:31.841755+00:00",
+  "module": "Math115.LatticeCompletionFinite",
+  "source_hashes": {
+    "formal/Math115/LatticeCompletionFinite.lean": "101a2e2030eef45ddfc8d210de8febb0aaf7c615f80204d40ace993f30df62e2",
+    "formal/Math115/LatticeCompletion.lean": "0960e8bf3f40189bae52cf5a707c3583a5264d40f3cf520efad1f5670c2fe13f",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Model.lean": "97c51e87779c92b84451fe14e9df423e9bc26832d716db669a88a1c6f778487e",
+    "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+    "formal/lake-manifest.json": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+    "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+  },
+  "compile_command": "cd formal; ELAN_HOME=\"$PWD/../.tools/elan\" ../.tools/elan/bin/lake env lean -j1 -DautoImplicit=false -o .lake/build/lib/lean/Math115/LatticeCompletionFinite.olean Math115/LatticeCompletionFinite.lean",
+  "successful_compile_log": ".local/lattice-completion-finite/compile-03.log",
+  "compile_exit_code": 0,
+  "audit_driver": ".local/lattice-completion-finite/AxiomAudit.lean",
+  "axiom_audit_log": ".local/lattice-completion-finite/axiom-audit.log",
+  "audit_exit_code": 0,
+  "declaration_count": 52,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "declarations": {
+    "Math115.LatticeCompletionFinite.Grid": [],
+    "Math115.LatticeCompletionFinite.extend": [],
+    "Math115.LatticeCompletionFinite.restrict": [],
+    "Math115.LatticeCompletionFinite.extend_inside": [
+      "propext"
+    ],
+    "Math115.LatticeCompletionFinite.extend_outside": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.extend_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.range_sum_extend_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.range_sum_extend_column": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.offsets_difference_outside": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.encodeGrid": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.decodeGrid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.extend_encodeGrid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.fine_row_divisible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.fine_column_divisible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.fine_residue_zero_strips": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.recoveredDigits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.recoveredDigits_val": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.residue_eq_finiteOffsets": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.extend_decodeGrid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.decodeGrid_encodeGrid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.recoveredDigits_encodeGrid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.encodeGrid_decodeGrid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.encodeGrid_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.encodeGrid_column": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.encodeGrid_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.decodeGrid_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.decodeGrid_column": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.intGrid": [],
+    "Math115.LatticeCompletionFinite.natGrid": [],
+    "Math115.LatticeCompletionFinite.natGrid_intGrid": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.intGrid_natGrid": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.intGrid_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.intGrid_column": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.natGrid_hasMargins": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.fineMargin": [],
+    "Math115.LatticeCompletionFinite.FineTable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.fineTable_row_divisible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.fineTable_column_divisible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.Accepted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.AcceptedFine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.encodeTable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.intGrid_encodeTable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.encodeTable_accepted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.encodeAccepted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.decodeAccepted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.intGrid_decodeAccepted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.decodeAccepted_encodeAccepted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.encodeAccepted_decodeAccepted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.acceptedEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.accepted_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.fixedFiberEquiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.LatticeCompletionFinite.fixedFiber_card": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "main_declarations": [
+    "Math115.LatticeCompletionFinite.acceptedEquiv",
+    "Math115.LatticeCompletionFinite.accepted_card",
+    "Math115.LatticeCompletionFinite.fixedFiberEquiv",
+    "Math115.LatticeCompletionFinite.fixedFiber_card"
+  ],
+  "scope": "Full actual finite Table accepted-fibre equivalence and constant complete fixed-original preimage cardinality, all dimensions a,b, k>0. No equal-total premise, no feasible-table premise. No volume/count estimate, acceptance lower bound, sampler realization or machine cost."
+}

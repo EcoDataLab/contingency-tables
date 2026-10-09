@@ -1092,9 +1092,11 @@
     "Mathlib.Algebra.Order.BigOperators.GroupWithZero.Finset",
     "Mathlib.Algebra.Order.BigOperators.Ring.Finset",
     "Mathlib.Algebra.Order.Field.Basic",
+    "Mathlib.Algebra.Order.Floor.Ring",
     "Mathlib.Algebra.Order.Ring.Abs",
     "Mathlib.Analysis.Real.Sqrt",
     "Mathlib.Analysis.SpecialFunctions.Exp",
+    "Mathlib.Analysis.SpecialFunctions.Log.Basic",
     "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics",
     "Mathlib.Basic.Real.Basic",
     "Mathlib.Data.Fin.Tuple.Basic",
@@ -1114,6 +1116,7 @@
     "Mathlib.Logic.Equiv.Fin.Basic",
     "Mathlib.Logic.Equiv.Option",
     "Mathlib.Logic.Equiv.Set",
+    "Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar",
     "Mathlib.SetTheory.Cardinal.Finite",
     "Mathlib.Tactic",
     "Mathlib.Tactic.ByContra",
@@ -1126,5 +1129,5 @@
     "Mathlib.Tactic.Ring",
     "Mathlib.Tactic.SplitIfs"
   ],
-  "closure_note": "219 source modules in the compiler-free dependency plan: 178 unchanged upstream and 41 local Math115 modules; 47 trusted external import entries. Dependency cache remains trusted."
+  "closure_note": "228 source modules in the compiler-free dependency plan: 178 unchanged upstream and 50 local Math115 modules; 50 trusted external import entries. Dependency cache remains trusted."
 }

@@ -1,0 +1,270 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T16:46:40.264242+00:00",
+  "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa",
+  "scope": "Actual integral-margin floor rounding, full table-prefix injection, coarse cell cover, and lower volume bounded by the original table count.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": {
+    "formal/Math115/PrefixFloorCover.lean": "df27c79f366d20b959f585633a3c8be439a0ff58a808f060b9d389c33d267b92"
+  },
+  "compilation": {
+    "command": [
+      "../.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "-o",
+      ".lake/build/lib/lean/Math115/PrefixFloorCover.olean",
+      "-i",
+      ".lake/build/lib/lean/Math115/PrefixFloorCover.ilean",
+      "Math115/PrefixFloorCover.lean"
+    ],
+    "cwd": "formal",
+    "environment": {
+      "ELAN_HOME": "<repo>/.tools/elan"
+    },
+    "source_sha256": "df27c79f366d20b959f585633a3c8be439a0ff58a808f060b9d389c33d267b92",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "started_at_utc": "2026-10-09T16:44:42.107600+00:00",
+    "finished_at_utc": "2026-10-09T16:45:05.217343+00:00",
+    "elapsed_seconds": 23.10960141592659,
+    "log_path": "formal/results/prefix-floor-cover/compile.log",
+    "toolchain": "leanprover/lean4:v4.34.1",
+    "declarations": [
+      "floorPrefix",
+      "floorGrid",
+      "floorPrefix_zero_axes",
+      "floorGrid_entry_error",
+      "floorGrid_nonnegative",
+      "marginPrefix",
+      "prefix_full_columns",
+      "prefix_full_rows",
+      "marginPrefix_succ",
+      "floorGrid_rows",
+      "floorGrid_columns",
+      "roundedTable",
+      "tableAnchor",
+      "tableReal",
+      "tableAnchor_cast",
+      "tableReal_feasible",
+      "tableAnchor_injective",
+      "floorGrid_prefix",
+      "roundedTable_anchor",
+      "interiorPrefix_mem_rounded_cell",
+      "lower_floor_cover",
+      "lower_volume_le_card"
+    ],
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "isolated_axiom_audit": {
+    "command": [
+      "../.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "<workspace>/.local/prefix-floor-cover/AxiomAudit.lean"
+    ],
+    "cwd": "formal",
+    "environment": {
+      "ELAN_HOME": "<repo>/.tools/elan"
+    },
+    "source_sha256": "df27c79f366d20b959f585633a3c8be439a0ff58a808f060b9d389c33d267b92",
+    "source_unchanged": true,
+    "exit_code": 0,
+    "started_at_utc": "2026-10-09T16:45:09.583589+00:00",
+    "finished_at_utc": "2026-10-09T16:45:17.398376+00:00",
+    "elapsed_seconds": 7.814620666904375,
+    "log_path": "formal/results/prefix-floor-cover/axiom-audit.log",
+    "toolchain": "leanprover/lean4:v4.34.1",
+    "declarations": [
+      {
+        "name": "Math115.PrefixFloorCover.floorPrefix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.floorGrid",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.floorPrefix_zero_axes",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.floorGrid_entry_error",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.floorGrid_nonnegative",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.marginPrefix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.prefix_full_columns",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.prefix_full_rows",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.marginPrefix_succ",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.floorGrid_rows",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.floorGrid_columns",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.roundedTable",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.tableAnchor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.tableReal",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.tableAnchor_cast",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.tableReal_feasible",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.tableAnchor_injective",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.floorGrid_prefix",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.roundedTable_anchor",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.interiorPrefix_mem_rounded_cell",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.lower_floor_cover",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.PrefixFloorCover.lower_volume_le_card",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ],
+    "log_sha256": "7438c0f33d2784ab64a0a90a20ae209c3fc319ca6b892041dc5b2e043e87b148",
+    "declaration_count": 22
+  },
+  "audit_driver": "formal/results/prefix-floor-cover/AxiomAudit.lean",
+  "audit_driver_sha256": "fe5eff4340fbce9d034b91aca8d613e738faf5c456578742959c46f4e6d75b1b",
+  "limits": [
+    "The fine upper-cell count, scale comparison, and quarter-success bound are separate modules.",
+    "Direct compilation uses existing dependencies and the trusted official Mathlib cache; this is not a fresh full closure build or strict Comparator replay."
+  ]
+}

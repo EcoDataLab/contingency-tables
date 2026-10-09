@@ -1,0 +1,417 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-10-09T16:44:17.482260+00:00",
+  "base_commit": "ce30e4c672f35deca431664b4202f77201631ffa",
+  "scope": "Full actual finite accepted-table equivalence and constant decoded preimage counts, all dimensions and k>0.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": {
+    "formal/Math115/LatticeCompletionFinite.lean": "101a2e2030eef45ddfc8d210de8febb0aaf7c615f80204d40ace993f30df62e2"
+  },
+  "author_receipt": "formal/results/lattice-completion-finite/author-receipt.json",
+  "compile_exit_code": 0,
+  "compile_log": "formal/results/lattice-completion-finite/compile.log",
+  "isolated_axiom_audit": {
+    "exit_code": 0,
+    "driver": "formal/results/lattice-completion-finite/AxiomAudit.lean",
+    "log": "formal/results/lattice-completion-finite/axiom-audit.log",
+    "declaration_count": 52,
+    "declarations": [
+      {
+        "name": "Math115.LatticeCompletionFinite.Grid",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.extend",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.restrict",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.extend_inside",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.extend_outside",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.extend_injective",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.range_sum_extend_row",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.range_sum_extend_column",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.offsets_difference_outside",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.encodeGrid",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.decodeGrid",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.extend_encodeGrid",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.fine_row_divisible",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.fine_column_divisible",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.fine_residue_zero_strips",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.recoveredDigits",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.recoveredDigits_val",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.residue_eq_finiteOffsets",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.extend_decodeGrid",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.decodeGrid_encodeGrid",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.recoveredDigits_encodeGrid",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.encodeGrid_decodeGrid",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.encodeGrid_row",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.encodeGrid_column",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.encodeGrid_nonneg",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.decodeGrid_row",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.decodeGrid_column",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.intGrid",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.natGrid",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.natGrid_intGrid",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.intGrid_natGrid",
+        "axioms": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.intGrid_row",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.intGrid_column",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.natGrid_hasMargins",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.fineMargin",
+        "axioms": []
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.FineTable",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.fineTable_row_divisible",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.fineTable_column_divisible",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.Accepted",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.AcceptedFine",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.encodeTable",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.intGrid_encodeTable",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.encodeTable_accepted",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.encodeAccepted",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.decodeAccepted",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.intGrid_decodeAccepted",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.decodeAccepted_encodeAccepted",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.encodeAccepted_decodeAccepted",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.acceptedEquiv",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.accepted_card",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.fixedFiberEquiv",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      {
+        "name": "Math115.LatticeCompletionFinite.fixedFiber_card",
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    ]
+  },
+  "file_sha256": {
+    "formal/results/lattice-completion-finite/AxiomAudit.lean": "efbdfabe3d53fa94a039b88224fadb8291610e6ef3126860d6967f2dc1299896",
+    "formal/results/lattice-completion-finite/author-receipt.json": "a0b49ec79c4683b0373ca914fa0afb0667245fbf97ae9016ad3bca94b349afa7",
+    "formal/results/lattice-completion-finite/axiom-audit.log": "7847f24d789ecf455253b4ae5a1597df40f2f7eaf68b148ddb9d66e48511ef66",
+    "formal/results/lattice-completion-finite/compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limits": [
+    "Existing dependencies and the official Mathlib cache are trusted. No fresh dependency-closure rebuild or strict Comparator replay in this isolated check.",
+    "This module does not identify a complete finite-bit completion program or prove its machine cost."
+  ]
+}

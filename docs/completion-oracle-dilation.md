@@ -6,10 +6,12 @@ This gives a route around the old dense interface's requirement
 `L≥32d³`: the outer chain keeps `L=3d`, while the dense sampler receives
 different, larger margins.
 
-The construction and constant acceptance bound below are independently
-reviewed mathematics. They are not yet a complete Lean proof or a compiled
-finite-bit replacement for the original sampler. The exact integer codec,
-finite checks, and formal components have separate verification records.
+The full finite-table preimage count, geometric count comparison, and
+quarter-acceptance bound now compile in Lean. The bounded-retry theorem
+proves actual completion-law accuracy from the supplied fine-law accuracy.
+The [formalization guide](completion-oracle-formalization.md) gives its exact
+hypotheses and evidence. Connection to the canonical dense law, the physical
+oracle family, and finite-bit program costs remains open.
 
 The geometric starting point is the adjacent-rectangle lattice basis and
 equal-volume rounding cells in Dyer, Kannan, and Mount,
@@ -88,10 +90,10 @@ draw retains an explicitly charged error below.
 ## Constant acceptance at `L=3d`
 
 Write `N` for the original table count and `N_f` for the fine count.
-Use volume in the `e` free-entry coordinates obtained by deleting the last
-row and column. Prefix coordinates have a triangular integer change of
-variables with determinant one. The half-open rounding cells consequently
-have volumes one and `k^(−e)` on the two lattices.
+Use volume directly in the `e` interior rectangular-prefix coordinates.
+The half-open rounding cells are boxes with volumes one and `k^(−e)`
+on the two lattices. This is the coordinate system of the formal proof;
+no separate change-of-coordinates premise is needed.
 
 Each coarse cell changes an entry by strictly less than two; each fine
 cell changes it by strictly less than `2/k`. If `V(R,P)` denotes the
@@ -122,9 +124,16 @@ Set
 
 The strong margin bounds give
 `λ(R_i−2b)≥R_i+(2+2/k)b`, and the analogous column inequality.
-The smaller polytope has positive volume: a completion of the remaining
-nonnegative real margins, plus `(L−2)\mathbf1`, is strictly positive.
-It follows that
+Combining the cell covers with margin monotonicity and scaling gives the
+direct comparison
+
+\[
+ N_f/k^e\le V(R+(2+2/k)b,P+(2+2/k)a)
+ \le\lambda^e V(R-2b,P-2a)\le\lambda^e N.
+\]
+
+This proof does not divide by a region's volume. A feasible fallback table
+encodes to a fine table, establishing `N_f>0`. It follows that
 
 \[
  s=\frac{k^eN}{N_f}\ge\lambda^{-e},\qquad
@@ -139,8 +148,9 @@ For the actual choice **`k=d¹²`**, we have `k≥2d`, and
  \le\frac{(d-1)(4+1/d)}{3d-2}\le\frac43.
 \]
 
-Hence **`s≥exp(−4/3)>1/4`**. This is a counting/volume bound, not a
-measured acceptance rate or a new mixing theorem.
+Hence **`s≥exp(−4/3)>1/4`** in the mathematical argument. Lean proves
+`λ^e<4` and exports the sufficient bound **`s≥1/4`**. This is a
+counting/volume bound, not a measured acceptance rate or a new mixing theorem.
 
 ## Reuse the existing finite-bit dense sampler
 
@@ -192,8 +202,9 @@ The Python [codec and planner](../src/contingency115/lattice_completion.py)
 implement the integer maps above for ordinary unrestricted margins.
 `plan_lattice_completion` accepts any positive integer `k`;
 `plan_dense_completion` checks the strong residual margins and chooses
-`k=d¹²`. Its acceptance allowance is conditional on the reviewed geometry.
-Neither function draws a dense table.
+`k=d¹²`. Its acceptance allowance follows the geometric hypotheses now
+formalized in Lean. Equivalence of the Python implementation with the Lean
+decoder remains unproved. Neither function draws a dense table.
 
 For example, this represents an original table by one chosen digit array:
 
@@ -234,15 +245,16 @@ the interface this new completion construction must eventually instantiate.
 
 The [Lean codec core](lattice-completion-codec.md) checks the signed integer
 inverses, boundary-dependent margin formulas, positivity, and cardinality
-of the constructed finite-digit image. It has not yet identified that image
-with the whole accepted finite-table fibre. The separate
+of the constructed finite-digit image. The new
+[finite-table adapter](../formal/Math115/LatticeCompletionFinite.lean)
+identifies it with the whole accepted finite-table fiber. The separate
 [physical-margin module](../formal/Math115/DilatedCompletionMargins.lean)
 derives the strong residual bounds above and the enlarged inputs' equal
 totals and dense minimum, directly from actual physical states.
-The [source review](../formal/results/lattice-completion-review.json) and
-the [codec](../formal/results/lattice-completion/verification.json) and
-[margin](../formal/results/dilated-completion-margins/verification.json)
-receipts keep those formal claims separate from the volume argument.
+The [new checkpoint](../formal/results/completion-geometry-checkpoint.json)
+adds the complete volume/count proof and actual retry-law accuracy; its
+[independent source review](../formal/results/completion-geometry-review.json)
+records the checked interfaces and remaining implementation bridges.
 
 ## What this resolves and what remains
 
@@ -253,16 +265,10 @@ and requested precision. It does not turn `d¹⁷` into a complete runtime
 exponent: outer retries, walk length, dense-call cost, and bit arithmetic
 must all be charged.
 
-The remaining formal work includes the full finite-table equal-preimage
-bijection, the lattice-cell volume/count bounds, and identification of the
-integer codec and retry routine with
-their finite-bit realizers. The approximate-oracle error bridge must then
-be instantiated with this completion law and linked to the full outer
-program. These obligations remain visible even where individual algebraic
-lemmas or finite examples have already been checked.
-
-Two narrow next steps are to restrict the integer codec to actual finite
-table types and to prove the volume of the finite union of its half-open
-prefix cells. The latter can use prefix-coordinate volume throughout:
-the cells are ordinary boxes, and translation and scalar volume rules
-then give the count comparison without a separate determinant lemma.
+The remaining formal work is to instantiate the fine-law accuracy premise
+from `canonicalDenseDraw_variation`, supply the resulting completion law to
+every state in the physical approximate-oracle interface, and identify the
+integer codec and retry routine with finite-bit realizers. The full outer
+program and its costs must then be composed. The
+[formalization guide](completion-oracle-formalization.md) separates these
+bridges from the now-proved finite-table and geometric claims.

@@ -4,8 +4,10 @@ The formal work is additive to OpenAI's pinned #115 source. It now proves
 sharper Poincare bounds for the unchanged original ideal chains and actual
 parameterized ideal chains at both dense-compatible and smaller ideal-only scales,
 with stationary success, uniform-output, finite-walk output-error, and
-approximate-completion interface proofs. Finite-bit sampler runtime and secure Comparator
-verification remain separate from these results.
+approximate-completion interface proofs. The dilated completion law now has
+full finite-table counting, geometric acceptance, and bounded-retry accuracy
+proofs. Dense-law/physical-oracle integration, finite-bit sampler runtime,
+and secure Comparator verification remain separate from these results.
 
 ## Reproduction
 
@@ -281,18 +283,28 @@ proves the signed integer prefix/difference inverses, exact encode/decode
 identities with Euclidean division, boundary-dependent margin formulas,
 entry positivity, and `k^((a−1)(b−1))` cardinality of the constructed finite
 digit image. Its [44-declaration receipt](../formal/results/lattice-completion/verification.json)
-does **not** establish that this image is the entire accepted finite-table
-fibre. Restriction/extension to finite tables and surjectivity remain a
-separate adapter, as does equivalence with the Python implementation.
+covers that core. The new
+[`LatticeCompletionFinite.lean`](../formal/Math115/LatticeCompletionFinite.lean)
+supplies restriction/extension, full accepted-fiber surjectivity, and the
+actual finite-table equivalence for all dimensions and positive dilation.
+Equivalence with the Python implementation remains separate.
 
 [`DilatedCompletionMargins.lean`](../formal/Math115/DilatedCompletionMargins.lean)
 retains the actual block's full padding multiplicities: `R_i≥bL`, `P_j≥aL`,
 and `H≤M+abL`. It defines fine margins on the same reference-table index
 types and derives equal total `d¹²(H+2ab)`, nonemptiness, and the original
-dense sampler's `d¹²` minimum-margin threshold. The universal lattice-cell
-volume/count comparison and bounded completion-law realization are still
-outside these modules; the [dilation derivation](completion-oracle-dilation.md)
-records their mathematical argument and remaining obligations.
+dense sampler's `d¹²` minimum-margin threshold.
+
+Nine new modules in the [completion formalization](completion-oracle-formalization.md)
+close the finite-table and geometric obligations. Actual prefix-cell covers,
+constructed real margin monotonicity, and scalar volume give the full fine
+count bound. An exact analytic constant then proves quarter acceptance.
+[`LatticeCompletionAccuracy.lean`](../formal/Math115/LatticeCompletionAccuracy.lean)
+combines these results with the actual decoder's independent retry law.
+At `k=d¹²`, equal totals, the strong margins, a dimension bound, and a
+feasible fallback suffice; the remaining approximation premise concerns
+the whole fine-table law. Dense-law instantiation, all-state physical
+assembly, and finite-bit realization and cost are not proved here.
 
 ## Verification levels
 
@@ -319,7 +331,7 @@ additional verification level.
 
 ## Recorded outcome
 
-The seventh local checkpoint passed on 9 October 2026 UTC with Lean 4.34.1.
+The eighth local checkpoint passed on 9 October 2026 UTC with Lean 4.34.1.
 New modules were compiled serially, followed by a fresh aggregate
 `Math115.lean` compilation and fresh focused and standalone axiom audits.
 Those integrated checks use existing compiled dependency outputs. This is
@@ -327,13 +339,18 @@ Those integrated checks use existing compiled dependency outputs. This is
 
 | Check | Outcome | Evidence |
 |---|---|---|
+| Checkpoint 8 aggregate | `Math115.lean` compiled; both axiom audits passed | [Eighth-checkpoint log](../formal/results/eighth-checkpoint.log) |
+| Checkpoint 8 dependency inventory | 228 source modules: 178 unchanged upstream and 50 local; 50 trusted external import entries | [Verification scope](../formal/results/verification.json) and [source provenance](../formal/results/provenance.json) |
+| Checkpoint 8 focused audit | 632 selected declarations passed | [Eighth-checkpoint log](../formal/results/eighth-checkpoint.log) |
+| Checkpoint 8 standalone audit | Six selected declarations passed | [Eighth-checkpoint log](../formal/results/eighth-checkpoint.log) |
+| Independent checkpoint 7 Linux build | Fresh focused build and all 420 focused audits passed at `5b37032`; excludes checkpoint 8 | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37932487805) and [receipt](../formal/results/linux-focused-5b37032/verification.json) |
 | Checkpoint 7 aggregate | `Math115.lean` compiled; both axiom audits passed | [Seventh-checkpoint log](../formal/results/seventh-checkpoint.log) |
-| Checkpoint 7 dependency inventory | 219 source modules: 178 unchanged upstream and 41 local; 47 trusted external import entries | [Verification scope](../formal/results/verification.json) and [source provenance](../formal/results/provenance.json) |
+| Checkpoint 7 dependency inventory | 219 source modules: 178 unchanged upstream and 41 local; 47 trusted external import entries | [Historical source provenance](https://github.com/EcoDataLab/contingency-tables/blob/5b3703234e7f6cd88e6b6f6b3dab85510ba4366f/formal/results/provenance.json) |
 | Checkpoint 7 focused audit | 420 selected declarations passed | [Seventh-checkpoint log](../formal/results/seventh-checkpoint.log) |
 | Checkpoint 7 standalone audit | Six selected declarations passed | [Seventh-checkpoint log](../formal/results/seventh-checkpoint.log) |
 | Independent checkpoint 6 Linux build | Fresh focused build and all 318 focused audits passed at `e5d5dd3`; excludes subsequent oracle additions | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37927276465) and [receipt](../formal/results/linux-focused-e5d5dd3/verification.json) |
 | Checkpoint 6 aggregate | `Math115.lean` compiled; both axiom audits passed | [Sixth-checkpoint log](../formal/results/sixth-checkpoint.log) |
-| Checkpoint 6 dependency inventory | 212 source modules: 175 unchanged upstream and 37 local; 45 trusted external import entries | [Verification scope](../formal/results/verification.json) and [source provenance](../formal/results/provenance.json) |
+| Checkpoint 6 dependency inventory | 212 source modules: 175 unchanged upstream and 37 local; 45 trusted external import entries | [Historical source provenance](https://github.com/EcoDataLab/contingency-tables/blob/e5d5dd3e81b5eac0e3f42841530286b56bcb96e5/formal/results/provenance.json) |
 | Checkpoint 6 focused audit | 318 selected declarations passed | [Sixth-checkpoint log](../formal/results/sixth-checkpoint.log) |
 | Checkpoint 6 standalone audit | Six selected declarations passed | [Sixth-checkpoint log](../formal/results/sixth-checkpoint.log) |
 | Checkpoint 5 aggregate | `Math115.lean` compiled; both axiom audits passed | [Fifth-checkpoint log](../formal/results/fifth-checkpoint.log) |
@@ -350,28 +367,31 @@ Those integrated checks use existing compiled dependency outputs. This is
 | Earlier independent Thor run | At `b14082b`: 128 Python tests, 100 freshly compiled source modules, and 68 audited declarations | [Thor verification](thor-verification.md) and [receipt](../formal/results/thor-verification.json) |
 | Strict Comparator | Not passed: hosted runner reported Landlock ABI 7, while ABI 9 was required | [Preflight run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684) |
 
-The checkpoint 7 total is **426 selected declarations: 420 focused plus six
-standalone, comprising 424 new declarations and two original baseline
+The checkpoint 8 total is **638 selected declarations: 632 focused plus six
+standalone, comprising 636 new declarations and two original baseline
 declarations**. All use only the standard allowed axioms `propext`,
 `Classical.choice`, and `Quot.sound`, or subsets.
 
 [`verification.json`](../formal/results/verification.json) records the exact
 selected declarations, axioms, source hashes, and verification scope.
 Historical logs are retained; current aggregate compilation and fresh audits
-are in `seventh-checkpoint.log`. The source pin and unchanged upstream files
+are in `eighth-checkpoint.log`. The source pin and unchanged upstream files
 are recorded in provenance, and the focused manifest retains the original
 revision entries. The separate successful original-theorem Linux run audits
 three original sampling/counting exports at its own recorded commit. It is
 neither a Comparator pass nor a Linux verification of later refinements. The
-separate checkpoint-6 focused Linux run covers its exact recorded sources;
-its 48 environment-recorded source hashes were checked against `e5d5dd3`.
+separate checkpoint-7 focused Linux run covers its exact recorded sources;
+its 55 environment-recorded source hashes were checked against `5b37032`.
 
 This checkpoint verifies ideal-chain variance bounds, ordinary-table padding,
 automatic branch selection, physical feasibility, and the actual stationary
 physical success/output law, together with a matching finite-walk law and
 output-error bound at the new scales. The new modules identify the finite
 proposal/draw/test law, propagate approximate-completion errors, and verify
-integer codec algebra and actual fine-input margin bounds. They do not yet
-prove the full finite accepted-table-fibre bijection, geometric acceptance,
-finite-bit realizer composition, or complete machine runtime. Official
-Mathlib cache artifacts and Lean bootstrap binaries remain trusted.
+integer codec algebra and actual fine-input margin bounds. The eighth
+checkpoint adds the full finite accepted-table equivalence, geometric
+count comparison, quarter acceptance, and actual bounded-retry completion
+accuracy conditional on fine-law accuracy. It does not yet instantiate
+the canonical dense law and every physical oracle, identify finite-bit
+realizer composition, or prove complete machine runtime. Official Mathlib
+cache artifacts and Lean bootstrap binaries remain trusted.

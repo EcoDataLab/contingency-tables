@@ -1,0 +1,25 @@
+import Math115.CompletionRetryBudget
+
+#print axioms Math115.CompletionRetryBudget.uniform_success_mass
+#print axioms Math115.CompletionRetryBudget.uniform_success_mass_of_card
+#print axioms Math115.CompletionRetryBudget.failure_nonnegative
+#print axioms Math115.CompletionRetryBudget.success_nonnegative
+#print axioms Math115.CompletionRetryBudget.failure_le_one
+#print axioms Math115.CompletionRetryBudget.equal_success_normalized
+#print axioms Math115.CompletionRetryBudget.equal_success_retry_mass
+#print axioms Math115.CompletionRetryBudget.equal_success_retry_variation
+#print axioms Math115.CompletionRetryBudget.approximate_retry_variation
+#print axioms Math115.CompletionRetryBudget.approximate_retry_variation_of_success
+#print axioms Math115.CompletionRetryBudget.dyadic
+#print axioms Math115.CompletionRetryBudget.retries
+#print axioms Math115.CompletionRetryBudget.finePrecision
+#print axioms Math115.CompletionRetryBudget.retries_positive
+#print axioms Math115.CompletionRetryBudget.dyadic_positive
+#print axioms Math115.CompletionRetryBudget.dyadic_succ
+#print axioms Math115.CompletionRetryBudget.dyadic_antitone_step
+#print axioms Math115.CompletionRetryBudget.geometric_budget
+#print axioms Math115.CompletionRetryBudget.fine_draw_budget
+#print axioms Math115.CompletionRetryBudget.retry_budget
+#print axioms Math115.CompletionRetryBudget.retry_budget_target
+#print axioms Math115.CompletionRetryBudget.completion_retry_variation_half
+#print axioms Math115.CompletionRetryBudget.completion_retry_variation
