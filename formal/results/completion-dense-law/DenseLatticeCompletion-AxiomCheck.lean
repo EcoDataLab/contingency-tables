@@ -1,0 +1,26 @@
+import Math115.DenseLatticeCompletion
+#print axioms Math115.DenseLatticeCompletion.dilation_positive
+#print axioms Math115.DenseLatticeCompletion.denseRows
+#print axioms Math115.DenseLatticeCompletion.denseColumns
+#print axioms Math115.DenseLatticeCompletion.fineOptionEquiv
+#print axioms Math115.DenseLatticeCompletion.optionMargin_code
+#print axioms Math115.DenseLatticeCompletion.fineOption_tableOutput
+#print axioms Math115.DenseLatticeCompletion.denseRows_minimum
+#print axioms Math115.DenseLatticeCompletion.denseColumns_minimum
+#print axioms Math115.DenseLatticeCompletion.dense_totals
+#print axioms Math115.DenseLatticeCompletion.fineBits
+#print axioms Math115.DenseLatticeCompletion.fineBits_pos
+#print axioms Math115.DenseLatticeCompletion.fineDraw
+#print axioms Math115.DenseLatticeCompletion.fineDraw_canonicalCode
+#print axioms Math115.DenseLatticeCompletion.fineDraw_matrixCode
+#print axioms Math115.DenseLatticeCompletion.fineLaw
+#print axioms Math115.DenseLatticeCompletion.dyadic_cast
+#print axioms Math115.DenseLatticeCompletion.fineLaw_variation
+#print axioms Math115.DenseLatticeCompletion.fineBits_polynomial
+#print axioms Math115.DenseLatticeCompletion.completionLaw
+#print axioms Math115.DenseLatticeCompletion.completionLaw_variation
+#print axioms Math115.DenseLatticeCompletion.completionBits
+#print axioms Math115.DenseLatticeCompletion.completionBits_bound
+#print axioms Math115.DenseLatticeCompletion.completionDraw
+#print axioms Math115.DenseLatticeCompletion.completionDraw_law
+#print axioms Math115.DenseLatticeCompletion.completionDraw_variation

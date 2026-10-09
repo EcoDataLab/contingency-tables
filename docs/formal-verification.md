@@ -6,8 +6,9 @@ parameterized ideal chains at both dense-compatible and smaller ideal-only scale
 with stationary success, uniform-output, finite-walk output-error, and
 approximate-completion interface proofs. The dilated completion law now has
 full finite-table counting, geometric acceptance, and bounded-retry accuracy
-proofs. Dense-law/physical-oracle integration, finite-bit sampler runtime,
-and secure Comparator verification remain separate from these results.
+proofs. The new dense specialization supplies the accurate fine law and
+all-state physical oracle. Concrete encoded outer-program identification,
+complete sampler runtime, and secure Comparator verification remain open.
 
 An additional isolated [Boolean codec/retry module](completion-boolean-program.md)
 passed 25 declaration audits and six native Lean evaluations after checkpoint
@@ -38,6 +39,18 @@ in the literal public-input bound. The [receipt](../formal/results/completion-in
 and independent frozen-source review cover these 32 declarations. The complete
 sampler and random-machine cost composition remain separate; the aggregate
 and Linux counts remain unchanged.
+
+The [dense completion family](completion-dense-law.md) adds three isolated
+modules with 25+3+38 standard-axiom audits. Actual native Windows compilations
+and independent review cover the canonical Boolean-word law, exact pinned
+analytic premise discharge, all-state residual inputs and completion accuracy,
+the normalized outer finite-law bound at `K=80000d¹⁷`, and common reserved
+word widths. The [receipt](../formal/results/completion-dense-law/verification.json)
+retains exact source, object, dependency and audit hashes. Four style/unused
+variable warnings remain in the compile logs; all named audit logs contain
+only axiom reports. The final encoded walker and public-machine cost are
+not yet verified, and these 66 audits do not change the aggregate or Linux
+counts.
 
 ## Reproduction
 
@@ -332,9 +345,10 @@ count bound. An exact analytic constant then proves quarter acceptance.
 [`LatticeCompletionAccuracy.lean`](../formal/Math115/LatticeCompletionAccuracy.lean)
 combines these results with the actual decoder's independent retry law.
 At `k=d¹²`, equal totals, the strong margins, a dimension bound, and a
-feasible fallback suffice; the remaining approximation premise concerns
-the whole fine-table law. Dense-law instantiation, all-state physical
-assembly, and finite-bit realization and cost are not proved here.
+feasible fallback suffice; its approximation premise concerns the whole
+fine-table law. The subsequent [dense specialization](completion-dense-law.md)
+discharges that premise and assembles all-state physical laws. Concrete
+encoded outer-program realization and complete cost remain open.
 
 ## Verification levels
 
@@ -422,7 +436,8 @@ proposal/draw/test law, propagate approximate-completion errors, and verify
 integer codec algebra and actual fine-input margin bounds. The eighth
 checkpoint adds the full finite accepted-table equivalence, geometric
 count comparison, quarter acceptance, and actual bounded-retry completion
-accuracy conditional on fine-law accuracy. It does not yet instantiate
-the canonical dense law and every physical oracle, identify finite-bit
-realizer composition, or prove complete machine runtime. Official Mathlib
-cache artifacts and Lean bootstrap binaries remain trusted.
+accuracy conditional on fine-law accuracy. The separate 66-declaration dense
+completion receipt now instantiates the canonical dense law and every physical
+oracle. Neither the eighth checkpoint nor that isolated receipt proves the
+complete encoded outer program or its machine runtime. Official Mathlib cache
+artifacts and Lean bootstrap binaries remain trusted.

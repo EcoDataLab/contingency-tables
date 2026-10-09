@@ -1,8 +1,8 @@
 # Research status
 
-Updated October 9, 2026 UTC — eighth verified checkpoint, plus isolated Boolean codec/retry, binary-list decoder, schedule arithmetic, and input-size components.
+Updated October 9, 2026 UTC — eighth verified checkpoint, plus isolated Boolean codec/retry, binary-list decoder, schedule arithmetic, input-size, and all-state dense completion components.
 
-The main ideal-chain bound is now **`80,000d¹⁷`**, for all ordinary equal-total margins, with automatic choice of the reference-completion or empty-block unit branch. Here `d=10+(m+1)(n+1)`. The [completion-oracle formalization](completion-oracle-formalization.md) now proves the full finite-table preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at the smaller outer scales. Its remaining input is an accurate fine-table law; canonical dense-sampler integration, all-state physical-oracle assembly, finite-bit program identification, and runtime remain open. All upstream comparisons use `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; the preserved [initial review](../115/115-contingency-tables-review.md) is unchanged.
+The main ideal-chain bound is now **`80,000d¹⁷`**, for all ordinary equal-total margins, with automatic choice of the reference-completion or empty-block unit branch. Here `d=10+(m+1)(n+1)`. The [completion-oracle formalization](completion-oracle-formalization.md) proves the full finite-table preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at the smaller outer scales. The new [dense completion family](completion-dense-law.md) discharges its fine-law accuracy premise using the pinned canonical sampler, assembles the all-state physical oracle, and proves the resulting normalized outer-law error. Finite-bit outer-program identification and complete machine runtime remain open. All upstream comparisons use `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; the preserved [initial review](../115/115-contingency-tables-review.md) is unchanged.
 
 ## Verified mathematical results
 
@@ -27,7 +27,7 @@ The new [finite-walk proof](physical-finite-walk.md) removes the stationary-star
 
 The [approximate-oracle proof](physical-approximate-oracle.md) identifies the actual dyadic proposal, completion draw, and signed translation test. Normalized approximate completion laws add at most `R(Tγζstep+ζterminal)` to the finite-walk output bound, where `γ=(5d²+1)β≤1/2`. Holding proposals incur no completion error. The proof allows separate transition and terminal precision, requires uniform conditional accuracy for every visited state, and accounts for failures through the normalized output law. It needs no stationary-law or reversibility assumption for the approximate chain. The empty-block branch retains its exact unit law and unique completion.
 
-The [dilated completion route](completion-oracle-dilation.md) keeps the outer padding at `L=3d` while giving the unchanged dense sampler margins `d¹²(R+2b)` and `d¹²(P+2a)`. Lean now proves that integer prefix rounding gives exactly `k^e` accepted representations for each original table, where `k=d¹²` and `e=(a−1)(b−1)`. Actual lower and upper cell covers, constructed margin monotonicity, and scalar volume give the full fine-count comparison. At `R_i≥3bd`, `P_j≥3ad`, equal totals, and `e≤d−1`, the proved analytic constant yields acceptance at least one quarter. With a feasible fallback, `J=4(h+2)` independent fine draws accurate to `2^(-h−2−ceil(log₂J))` give actual completion output error at most `2^(-(h+1))≤2^-h`. The proof assumes whole fine-law accuracy and does not yet instantiate the canonical dense law or finite-bit realizers. It bypasses the old sufficient dense-scale interface by changing the inner input, and does not turn `d¹⁷` into a full runtime degree.
+The [dilated completion route](completion-oracle-dilation.md) keeps the outer padding at `L=3d` while giving the unchanged dense sampler margins `d¹²(R+2b)` and `d¹²(P+2a)`. Lean proves that integer prefix rounding gives exactly `k^e` accepted representations for each original table, where `k=d¹²` and `e=(a−1)(b−1)`. Actual lower and upper cell covers, constructed margin monotonicity, and scalar volume give the full fine-count comparison. At `R_i≥3bd`, `P_j≥3ad`, equal totals, and `e≤d−1`, the proved analytic constant yields acceptance at least one quarter. With a feasible fallback, `J=4(h+2)` independent fine draws accurate to `2^(-h−2−ceil(log₂J))` give actual completion output error at most `2^(-(h+1))≤2^-h`. The subsequent [dense-law specialization](completion-dense-law.md) supplies this whole fine-law accuracy from the canonical sampler and its pinned analytic proofs. It constructs feasible inner fallbacks, proves accuracy at every physical reference fiber, and inserts the family into the normalized outer law with a supplied feasible outer fallback. The representation still uses noncomputable reference reindexing; encoded realization and complete runtime remain separate. It bypasses the old sufficient dense-scale interface by changing the inner input, and does not turn `d¹⁷` into a full runtime degree.
 
 The [stationary-rejection obstruction](stationary-success-obstruction.md) shows this quadratic dependence is necessary in worst-case order for the unchanged rule. For `n×n` margins all equal to `d³` at the actual ideal scales, exact repair counts and the sharp zero-entry bound imply `p²s→1`. The output fiber is nontrivial, so a fixed feasible fallback cannot hide the rejection error. This is an independently reviewed counting argument with eight exact finite checks, not a Lean theorem or a mixing/runtime lower bound.
 
@@ -74,9 +74,9 @@ direct compilation, 52 standard-axiom audits, nine native boundary checks,
 and independent source/evidence review. It proves exact agreement with the
 table decoder and polynomial charged TreeTyped work in the binary input
 size. Its [receipt](../formal/results/lattice-decoder/verification.json)
-is also isolated from the aggregate and Linux results. Dense integration,
-completion/retry cost composition, and the complete outer word program
-remain unverified in the published work.
+is also isolated from the aggregate and Linux results. Completion/retry
+cost composition and the complete outer word program remain unverified
+in the published work.
 
 The [schedule arithmetic](completion-schedules.md) adds 56 isolated audited
 declarations across two compiled modules. Explicit natural walk/retry counts
@@ -101,6 +101,19 @@ not a runtime degree. The [receipt](../formal/results/completion-input-size/veri
 records actual compilations, all 25+7 named audits, and independent review.
 These modules remain separate from the aggregate and Linux counts below.
 
+The [all-state dense completion proof](completion-dense-law.md) adds 66
+isolated standard-axiom audits across three modules, compiled on native
+Windows and independently reviewed. It identifies the canonical finite
+Boolean draw, discharges the exact pinned analytic premises, proves physical
+residual inputs and all-state completion accuracy, and supplies the outer
+finite-law error bound at `K=80000d¹⁷`. Common state-independent word widths
+are bounded as well. The [receipt](../formal/results/completion-dense-law/verification.json)
+records exact source/object/dependency hashes and the four retained linter
+warnings. Reference reindexing remains noncomputable at this layer; the
+concrete encoded walker and public random machine remain unverified. These
+66 successful audits do not certify other drafts in the surrounding native
+build and do not change the aggregate or Linux counts below.
+
 The integrated eighth checkpoint passed **638 Lean declaration audits**: 632 focused plus six standalone, comprising 636 new declarations and two original source statements. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. This checkpoint adds 212 declarations across nine modules for actual finite fibers, prefix-coordinate geometry, the full count bound, quarter acceptance, and retry accuracy. Aggregate compilation and audits used the existing dependency objects; this is not a fresh dependency-closure rebuild.
 
 The unchanged Python implementation retains the seventh checkpoint's **237 passing tests**. All 62 recorded Python source hashes and 20 report hashes were checked again, along with the pinned source bundle. The historical lattice report contains 13 completed tiny fibers, 293 fine tables, one retained budget failure, and ten actual-scale codec roundtrips. Universal acceptance is now a Lean theorem under its stated hypotheses; those finite checks remain separate implementation evidence.
@@ -119,7 +132,7 @@ The eighth checkpoint is published at `0aa5a61140712ada44893b03d805a756e0e9823a`
 
 Next work:
 
-1. Instantiate the proved completion law from `canonicalDenseDraw_variation`: reindex the table types, convert the real accuracy bound to rational dyadics, and assemble the all-state physical `OracleFamily` and terminal laws using the existing residual-margin lemmas.
+1. Identify the computed list order, reference indices, and finite-bit completion program with the verified all-state dense completion law.
 2. Compose the verified binary-list decoder with dense draws and retries, and identify neighbor generation, initialization, and the proved scalar schedule with finite-bit programs; combine reserved-bit, arithmetic, and dense realizer costs. The complete runtime exponent remains open.
 3. Reproduce the new oracle additions on Linux and complete strict Comparator replay on an environment meeting its sandbox requirements.
 4. Close the gap between the free-cutoff `U⁴` upper allowance and the explicit `Ω(U²)` chain obstruction, or improve the transition rule with a justified target law and cost.

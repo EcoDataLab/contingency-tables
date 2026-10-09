@@ -1,0 +1,4 @@
+import Math115.DenseLatticeCompletionProvedInputs
+#print axioms Math115.DenseLatticeCompletionProvedInputs.fineLaw_variation
+#print axioms Math115.DenseLatticeCompletionProvedInputs.completionLaw_variation
+#print axioms Math115.DenseLatticeCompletionProvedInputs.completionDraw_variation

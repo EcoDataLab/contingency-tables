@@ -1,0 +1,919 @@
+{
+  "schema_version": 1,
+  "status": "passed_named_dense_completion_modules",
+  "recorded_at_utc": "2026-10-09T20:01:53.816860+00:00",
+  "module_count": 3,
+  "total_audited_declarations": 66,
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "compiler_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+  "lake_sha256": "9780a6abfb6d751c7958f2fd7f696154bdda8b46c0de9755c4080ffb8a8788e6",
+  "platform": "native Windows x86_64",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "source_checkout_base_commit": "b021f227a21c7e9252eae78c55ab09c404cc66cd",
+  "source_freeze": "Exact supplied module hashes checked before and after native compilation/auditing and against current repository source snapshots.",
+  "method": "Direct pinned Lean -j2 -DautoImplicit=false; dependency-aware isolated object output, exact internal dependency hashes, trusted official external cache; no Lake build. Native named audits imported the actual built objects and preserved equal frozen before/after context snapshots.",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "strict_audit_method": "scripts/check_lean_axioms.py: every named declaration exactly once in driver order, report-only output, standard allowlist. Downloaded raw logs independently reparsed during publication preparation.",
+  "strict_checker_sha256": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+  "modules": [
+    {
+      "module": "Math115.DenseLatticeCompletion",
+      "namespace": "Math115.DenseLatticeCompletion",
+      "source": "formal/Math115/DenseLatticeCompletion.lean",
+      "source_snapshot": "formal/results/completion-dense-law/DenseLatticeCompletion-Source.lean",
+      "source_sha256": "91d13fa3d07c04904ccc1136e52aa50a69aa691b583805973ab77f37e08d7516",
+      "olean_sha256": "1a7efac2f6ea11535495cd5b43a96ede0ed506d7100881a1bebc536bc1bb4e4b",
+      "ilean_sha256": "dbd9f988d854c13e005ac912a3ac17e1a99be687f280f595d5df9cc02d9f4745",
+      "ilean_evidence": "Hash from native compile receipt; ilean artifact is not included in the downloaded evidence archive.",
+      "closure_sha256": "411059612a663680d38a22e325829a3001da20f414db33dc7dee7715fa256178",
+      "direct_imports": [
+        "Init",
+        "Math115.LatticeCompletionAccuracy",
+        "Math115.CompletionBooleanRetry",
+        "OAI.Combinatorics.ContingencyTables.Dense.DenseCanonicalSemantics"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.LatticeCompletionAccuracy": "de2098e2b33a4e3ffd9e4622d786b01ad62c4f5b80aa1ce170b1b1199ac4bdfd",
+        "Math115.CompletionBooleanRetry": "2cb6fbea094710471deba816cff0ac4bcbc3b83ab7681d668cbfd1fdf7008a10",
+        "OAI.Combinatorics.ContingencyTables.Dense.DenseCanonicalSemantics": "4329d46f3cd887df75b564cc611e73f45b620769ca5fabc14387f26d829fd8f6"
+      },
+      "dependency_olean_sha256": {
+        "Math115.CompletionBooleanRetry": "555f344a1ff5dc627eddb1ca8483e549a577505d15747bda9c5ab2009d916eb8",
+        "Math115.LatticeCompletionAccuracy": "b8f58550949a55b74cde9d6c2e03772f448b16d93f867ecf6fc5abcf0500acd5",
+        "OAI.Combinatorics.ContingencyTables.Dense.DenseCanonicalSemantics": "77f43d65de3e3b67b2e5401f69608fdd2a43740ba47dcdf071d3daaf96de39c9"
+      },
+      "declaration_count": 25,
+      "declarations": [
+        {
+          "name": "Math115.DenseLatticeCompletion.dilation_positive",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.denseRows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.denseColumns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.fineOptionEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.optionMargin_code",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.fineOption_tableOutput",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.denseRows_minimum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.denseColumns_minimum",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.dense_totals",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.fineBits",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.fineBits_pos",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.fineDraw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.fineDraw_canonicalCode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.fineDraw_matrixCode",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.fineLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.dyadic_cast",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.fineLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.fineBits_polynomial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.completionLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.completionLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.completionBits",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.completionBits_bound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.completionDraw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.completionDraw_law",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletion.completionDraw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed_with_linter_warnings",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": false,
+        "started_at_utc": "2026-10-09T19:49:17.905112+00:00",
+        "completed_at_utc": "2026-10-09T19:49:47.798120+00:00",
+        "elapsed_seconds": 29.892769799975213,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<workspace>/formal",
+          "-o",
+          "<build>/attempts/Math115.DenseLatticeCompletion/c2a52e17e785414fbcf06d2736b731c3/module.olean",
+          "-i",
+          "<build>/attempts/Math115.DenseLatticeCompletion/c2a52e17e785414fbcf06d2736b731c3/module.ilean",
+          "<workspace>/formal/Math115/DenseLatticeCompletion.lean"
+        ],
+        "log": "formal/results/completion-dense-law/DenseLatticeCompletion-compile.log",
+        "log_sha256": "002a879283e30fd1f65095e3a2aaf9831b75081527c06bae18d6a3a37f62d6ce",
+        "original_native_log_sha256": "8b491a72a9fd796fdd2265c73b74a3463a14a833366be2ef553a9839d13e8485",
+        "log_empty": false,
+        "warning_count": 2,
+        "warnings": [
+          {
+            "line": 141,
+            "column": 2,
+            "headline": "Try this: "
+          },
+          {
+            "line": 143,
+            "column": 2,
+            "headline": "Try this: "
+          }
+        ],
+        "log_sanitization": "Only exact private absolute source-location paths replaced with the repository-relative source path; all other bytes, including warnings and line endings, preserved.",
+        "original_compile_receipt_sha256": "0b486e358212f04acb9a734d412b5966ccb7425c8f0b3d268d29104238c7b5c2"
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "started_at_utc": "2026-10-09T19:51:51.038112+00:00",
+        "finished_at_utc": "2026-10-09T19:52:20.751118+00:00",
+        "elapsed_seconds": 29.707172799971886,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<workspace>/.local/checkpoint9/parallel-audits-2",
+          "<workspace>/.local/checkpoint9/parallel-audits-2/Audit_DenseLatticeCompletion.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<workspace>/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean;<workspace>/formal/.lake/packages/Qq/.lake/build/lib/lean;<workspace>/formal/.lake/packages/aesop/.lake/build/lib/lean;<workspace>/formal/.lake/packages/batteries/.lake/build/lib/lean;<workspace>/formal/.lake/packages/importGraph/.lake/build/lib/lean;<workspace>/formal/.lake/packages/mathlib/.lake/build/lib/lean;<workspace>/formal/.lake/packages/plausible/.lake/build/lib/lean;<workspace>/formal/.lake/packages/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "formal/results/completion-dense-law/DenseLatticeCompletion-AxiomCheck.lean",
+        "driver_sha256": "c270708d07fdab04999a4aa5a387539b5598adf318a16ac40d56cfe1b62a9e55",
+        "log": "formal/results/completion-dense-law/DenseLatticeCompletion-axiom-audit.log",
+        "log_sha256": "c0fbea642a931516b3e3928160583088a718fdb2fc4d7dac213156575ce28250",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "cfa8b2a48a14eb4ecac8a89b777945c18aa07c684fae83626d2a6300fba94c52",
+        "checks": {
+          "strict_named_reports": true,
+          "no_extra_output": true,
+          "standard_axioms_only": true,
+          "no_sorryAx": true,
+          "input_snapshot_count": 1067,
+          "expected_before_after_snapshots_equal": true,
+          "original_input_snapshot_canonical_sha256": "0aeeb166fb19777697785a43650dc98a95a2d155861003aa3d8416bb1ccf551c",
+          "original_completed_record_sha256": "6fb9dbd5147a93584a7c862db53c1bc35ec249daa6c80add4fad82c5628a0c83"
+        }
+      }
+    },
+    {
+      "module": "Math115.DenseLatticeCompletionProvedInputs",
+      "namespace": "Math115.DenseLatticeCompletionProvedInputs",
+      "source": "formal/Math115/DenseLatticeCompletionProvedInputs.lean",
+      "source_snapshot": "formal/results/completion-dense-law/DenseLatticeCompletionProvedInputs-Source.lean",
+      "source_sha256": "907f8d4426a19404b1f4fed5fc37296cc8506f2b91306c7b47f10b55f5016941",
+      "olean_sha256": "c108e37662c1f555825847fe44a0492a786973a1a68fd982830f2b71bb8b5583",
+      "ilean_sha256": "ad4a3bd64461ce9224bbb04268d40754df79e5e65b81289af7befbd023e540ab",
+      "ilean_evidence": "Hash from native compile receipt; ilean artifact is not included in the downloaded evidence archive.",
+      "closure_sha256": "d6d1047f08bcab24c5363cbb1bfaf6e207018ea3daa698725701a1c10116f602",
+      "direct_imports": [
+        "Init",
+        "Math115.DenseLatticeCompletion",
+        "OAI.Combinatorics.ContingencyTables.Dense.FiniteBoxPrekopa",
+        "OAI.Combinatorics.ContingencyTables.Dense.FiniteCheegerProof"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.DenseLatticeCompletion": "91d13fa3d07c04904ccc1136e52aa50a69aa691b583805973ab77f37e08d7516",
+        "OAI.Combinatorics.ContingencyTables.Dense.FiniteBoxPrekopa": "09f88f13a2f56853bee2155cd8910b4dc1ea3b78bc8197ce4f16de514f3bc5ce",
+        "OAI.Combinatorics.ContingencyTables.Dense.FiniteCheegerProof": "5e604953e3bd18c37478b9219a5163e37121d62f1492e5911871b81ba435f6f2"
+      },
+      "dependency_olean_sha256": {
+        "Math115.DenseLatticeCompletion": "1a7efac2f6ea11535495cd5b43a96ede0ed506d7100881a1bebc536bc1bb4e4b",
+        "OAI.Combinatorics.ContingencyTables.Dense.FiniteBoxPrekopa": "376c556ecdcae0a74e467d0dedcb81ef3fbaed6406d810c8fb0ae64065858471",
+        "OAI.Combinatorics.ContingencyTables.Dense.FiniteCheegerProof": "11cd97675237333230ef6166a56d56ca95f975307129dc627aa2cee1f8f67e8c"
+      },
+      "declaration_count": 3,
+      "declarations": [
+        {
+          "name": "Math115.DenseLatticeCompletionProvedInputs.fineLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletionProvedInputs.completionLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.DenseLatticeCompletionProvedInputs.completionDraw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed_empty_log",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": false,
+        "started_at_utc": "2026-10-09T19:49:49.220903+00:00",
+        "completed_at_utc": "2026-10-09T19:50:17.329244+00:00",
+        "elapsed_seconds": 28.1080850000144,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<workspace>/formal",
+          "-o",
+          "<build>/attempts/Math115.DenseLatticeCompletionProvedInputs/876b39434c83487294247396e9eb9de0/module.olean",
+          "-i",
+          "<build>/attempts/Math115.DenseLatticeCompletionProvedInputs/876b39434c83487294247396e9eb9de0/module.ilean",
+          "<workspace>/formal/Math115/DenseLatticeCompletionProvedInputs.lean"
+        ],
+        "log": "formal/results/completion-dense-law/DenseLatticeCompletionProvedInputs-compile.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "original_native_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "log_empty": true,
+        "warning_count": 0,
+        "warnings": [],
+        "log_sanitization": "Only exact private absolute source-location paths replaced with the repository-relative source path; all other bytes, including warnings and line endings, preserved.",
+        "original_compile_receipt_sha256": "e61cce2df00b23e0d2bc5110d77c92da8d000930486d0e8693fea4632909a71d"
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "started_at_utc": "2026-10-09T19:52:04.794730+00:00",
+        "finished_at_utc": "2026-10-09T19:52:34.989551+00:00",
+        "elapsed_seconds": 30.189021500002127,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<workspace>/.local/checkpoint9/parallel-audits-2",
+          "<workspace>/.local/checkpoint9/parallel-audits-2/Audit_DenseLatticeCompletionProvedInputs.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<workspace>/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean;<workspace>/formal/.lake/packages/Qq/.lake/build/lib/lean;<workspace>/formal/.lake/packages/aesop/.lake/build/lib/lean;<workspace>/formal/.lake/packages/batteries/.lake/build/lib/lean;<workspace>/formal/.lake/packages/importGraph/.lake/build/lib/lean;<workspace>/formal/.lake/packages/mathlib/.lake/build/lib/lean;<workspace>/formal/.lake/packages/plausible/.lake/build/lib/lean;<workspace>/formal/.lake/packages/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "formal/results/completion-dense-law/DenseLatticeCompletionProvedInputs-AxiomCheck.lean",
+        "driver_sha256": "69e0b67ab79e67f425012a59931675350f763598ac8b40889d7045d3227ce820",
+        "log": "formal/results/completion-dense-law/DenseLatticeCompletionProvedInputs-axiom-audit.log",
+        "log_sha256": "c274d21e806b82961dc62766aca160e8704aa9f66d89c8439f3bca8eddde7e51",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "c224147fd06978a9b055ed1e7d12a9e153135adbdc51c8cef5918cd0feb76865",
+        "checks": {
+          "strict_named_reports": true,
+          "no_extra_output": true,
+          "standard_axioms_only": true,
+          "no_sorryAx": true,
+          "input_snapshot_count": 1081,
+          "expected_before_after_snapshots_equal": true,
+          "original_input_snapshot_canonical_sha256": "db6e3ac9c4189b2c790486987d2d1da918c18ce47801ea777e7c1742cbd5db42",
+          "original_completed_record_sha256": "9e52dadb21c1154b7c0c2b8fe6475a457f7f7a1634b522b24f0eac68a42bf672"
+        }
+      }
+    },
+    {
+      "module": "Math115.PhysicalLatticeCompletion",
+      "namespace": "Math115.PhysicalLatticeCompletion",
+      "source": "formal/Math115/PhysicalLatticeCompletion.lean",
+      "source_snapshot": "formal/results/completion-dense-law/PhysicalLatticeCompletion-Source.lean",
+      "source_sha256": "0f384aeedafd1d37faa84886238a53a6c321f4f46b2f56113c8808a21d36b465",
+      "olean_sha256": "af83870ec5c732dc1292f10dc41363b1e8e45f8fb6aada78d08347c20f3f50a3",
+      "ilean_sha256": "46bdbf7033998b69db5481d8ea019625a29f9dd4e514929066dfd7cb6bd87ff5",
+      "ilean_evidence": "Hash from native compile receipt; ilean artifact is not included in the downloaded evidence archive.",
+      "closure_sha256": "e660f272593c93a96099131b97ab48bcc8d74eb7ca4b3190a510fe6a71a51292",
+      "direct_imports": [
+        "Init",
+        "Math115.DilatedCompletionMargins",
+        "Math115.PhysicalApproximateOracle",
+        "Math115.LatticeCompletionAccuracy",
+        "Math115.DenseLatticeCompletionProvedInputs"
+      ],
+      "direct_dependency_source_sha256": {
+        "Math115.DilatedCompletionMargins": "ad52e6f22b9747eb7976bc1924ce9ded65d94ae76820fa33c0109a3745b7ed0b",
+        "Math115.PhysicalApproximateOracle": "aac9172e59eade9e4e841c035d299710b793d95ff637d4cf848e98c3ffc331ee",
+        "Math115.LatticeCompletionAccuracy": "de2098e2b33a4e3ffd9e4622d786b01ad62c4f5b80aa1ce170b1b1199ac4bdfd",
+        "Math115.DenseLatticeCompletionProvedInputs": "907f8d4426a19404b1f4fed5fc37296cc8506f2b91306c7b47f10b55f5016941"
+      },
+      "dependency_olean_sha256": {
+        "Math115.DenseLatticeCompletionProvedInputs": "c108e37662c1f555825847fe44a0492a786973a1a68fd982830f2b71bb8b5583",
+        "Math115.DilatedCompletionMargins": "90d81bedc3c88a63eb2fc9b3c0960f057fa85a1bb2561c6db5e155713339628e",
+        "Math115.LatticeCompletionAccuracy": "b8f58550949a55b74cde9d6c2e03772f448b16d93f867ecf6fc5abcf0500acd5",
+        "Math115.PhysicalApproximateOracle": "865dc9c1f10dc3684e13b50be66928c184d8860ffab66dd3c70a723bb05fcb50"
+      },
+      "declaration_count": 38,
+      "declarations": [
+        {
+          "name": "Math115.PhysicalLatticeCompletion.RowTail",
+          "axioms": []
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.ColumnTail",
+          "axioms": []
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.rowFree",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.columnFree",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.rowIndex",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.columnIndex",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.finiteRows",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.finiteColumns",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.finiteReferenceEquiv",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.finite_totals",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.row_count_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.column_count_eq",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.finite_row_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.finite_column_lower",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.finite_dimensions",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.finite_free_dimension",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.dimension_fourteen",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.finite_row_upper",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.finiteFallback",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.FineOracleFamily",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.latticeOracle",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.latticeOracle_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.lattice_selected_step_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.lattice_selected_terminal_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.denseFineOracle",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.denseOracle",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.denseOracle_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.dense_selected_step_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.dense_selected_terminal_accuracy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.denseOuterLaw",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.denseOuterLaw_variation",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.fineRowBound",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.fineBinaryLength",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.reservedFineBits",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.reservedCompletionBits",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.dense_fine_row_upper",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.fineBits_le_reserved",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalLatticeCompletion.completionBits_le_reserved",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        }
+      ],
+      "compile": {
+        "status": "passed_with_linter_warnings",
+        "exit_code": 0,
+        "source_unchanged": true,
+        "reused": false,
+        "started_at_utc": "2026-10-09T19:50:17.400713+00:00",
+        "completed_at_utc": "2026-10-09T19:50:45.302449+00:00",
+        "elapsed_seconds": 27.901504800014663,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<workspace>/formal",
+          "-o",
+          "<build>/attempts/Math115.PhysicalLatticeCompletion/dac25029de13428ba4e3b8c6ea908915/module.olean",
+          "-i",
+          "<build>/attempts/Math115.PhysicalLatticeCompletion/dac25029de13428ba4e3b8c6ea908915/module.ilean",
+          "<workspace>/formal/Math115/PhysicalLatticeCompletion.lean"
+        ],
+        "log": "formal/results/completion-dense-law/PhysicalLatticeCompletion-compile.log",
+        "log_sha256": "2a474b210116a633ccbefc19f86b2d909296564a9beacc45ac4bf0790fe33bea",
+        "original_native_log_sha256": "a8df246196a2ee632b7a44244a3193227e2ea3f37194acfdcc3eb09f5b8d39fc",
+        "log_empty": false,
+        "warning_count": 2,
+        "warnings": [
+          {
+            "line": 109,
+            "column": 0,
+            "headline": "automatically included section variable(s) unused in theorem `Math115.PhysicalLatticeCompletion.dimension_fourteen`:"
+          },
+          {
+            "line": 174,
+            "column": 2,
+            "headline": "Try this: "
+          }
+        ],
+        "log_sanitization": "Only exact private absolute source-location paths replaced with the repository-relative source path; all other bytes, including warnings and line endings, preserved.",
+        "original_compile_receipt_sha256": "5e110c9d016c99d43b6ad899067b89a79ffc8565c0bff887cac0cbc93d24f6c9"
+      },
+      "audit": {
+        "status": "passed",
+        "exit_code": 0,
+        "started_at_utc": "2026-10-09T19:52:50.585739+00:00",
+        "finished_at_utc": "2026-10-09T19:53:20.603539+00:00",
+        "elapsed_seconds": 30.008449400018435,
+        "argv_sanitized": [
+          "<toolchain>/bin/lean.exe",
+          "-j2",
+          "-DautoImplicit=false",
+          "--root=<workspace>/.local/checkpoint9/parallel-audits-2",
+          "<workspace>/.local/checkpoint9/parallel-audits-2/Audit_PhysicalLatticeCompletion.lean"
+        ],
+        "controlled_environment_sanitized": {
+          "LEAN_NUM_THREADS": "2",
+          "LEAN_PATH": "<build>/lib/lean;<workspace>/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean;<workspace>/formal/.lake/packages/Qq/.lake/build/lib/lean;<workspace>/formal/.lake/packages/aesop/.lake/build/lib/lean;<workspace>/formal/.lake/packages/batteries/.lake/build/lib/lean;<workspace>/formal/.lake/packages/importGraph/.lake/build/lib/lean;<workspace>/formal/.lake/packages/mathlib/.lake/build/lib/lean;<workspace>/formal/.lake/packages/plausible/.lake/build/lib/lean;<workspace>/formal/.lake/packages/proofwidgets/.lake/build/lib/lean",
+          "PATH_prefix": "<toolchain>/bin",
+          "removed_overrides": [
+            "LEAN_PATH",
+            "LEAN_SRC_PATH",
+            "LEAN_SYSROOT",
+            "ELAN_TOOLCHAIN"
+          ],
+          "scope": "compiler/import-significant settings; not full process-environment byte identity"
+        },
+        "driver": "formal/results/completion-dense-law/PhysicalLatticeCompletion-AxiomCheck.lean",
+        "driver_sha256": "231db9ad3bb37bee723826818f3e5024a0a91cfe69a9c6a79d4d9bb64d975a7b",
+        "log": "formal/results/completion-dense-law/PhysicalLatticeCompletion-axiom-audit.log",
+        "log_sha256": "c477b3855e3b65d06b8a07424d955131d62ab6456827c2728cb2df5cfdb14fb6",
+        "driver_and_log_copies_match_executed_bytes": true,
+        "original_audit_receipt_sha256": "619ed9222d3389a7f2b8011d0b58ec10f9cfad10eb02d2f5192fe9a41dae8eec",
+        "checks": {
+          "strict_named_reports": true,
+          "no_extra_output": true,
+          "standard_axioms_only": true,
+          "no_sorryAx": true,
+          "input_snapshot_count": 1161,
+          "expected_before_after_snapshots_equal": true,
+          "original_input_snapshot_canonical_sha256": "043bd3ec407db91807666b6bbc42476d7e91d385104b54b2d85ea569b2e05b72",
+          "original_completed_record_sha256": "ee9b10b23a760e70591400a514dd186cbc22dae765c684c1076e0cb2523d7aef"
+        }
+      }
+    }
+  ],
+  "runtime_provenance": "formal/results/completion-dense-law/runtime-provenance.json",
+  "independent_review": "formal/results/completion-dense-law/source-review.json",
+  "original_archive_manifest_sha256": "f75385b01b96df385cd55c865a4b0907a0db08a6682e14ea0398f0cfd2ba8bdb",
+  "original_module_summary_sha256": "443e30e13b41e7c9413c60d8f8991392b0d31953b1b9701957bd18240b080168",
+  "scope": "Actual uniform finite Boolean-word dense fine/completion laws, pinned analytic premise discharge, all-state physical reference completion family, selected step/terminal accuracy, normalized outer finite-law error at ideal d17 scales, and common state-independent reserved widths.",
+  "representation_boundary": {
+    "finiteFallback": "GreedyFeasibleTable.table on reindexed actual residual margins with proved equal totals.",
+    "noncomputable_representations": "The modules use noncomputable sections; physical row/column indexing includes Fintype.equivFin.",
+    "concrete_outer_walker_identified": false,
+    "public_machine_runtime_proved": false
+  },
+  "analytic_inputs": {
+    "proofs": [
+      "PublishedInputs.finiteBoxPrekopaLeindler",
+      "CheegerProof.finiteCheeger"
+    ],
+    "status": "Supplied by unchanged pinned source proofs in DenseLatticeCompletionProvedInputs; no extra analytic axiom admitted."
+  },
+  "outer_error_bound": {
+    "domain": "Balanced original margins, supplied feasible original-table fallback; natural T,R,hStep,hTerminal. All-state dense oracle families at ideal L=3d,U=5d^3.",
+    "bound": "TV <= exp(-R/successAllowance) + R*massAllowance*exp(-T/(80000*d^17)) + R*(T*proposalAllowance*2^(-hStep)+2^(-hTerminal))",
+    "kind": "Normalized finite probability law; not encoded walker execution or machine runtime."
+  },
+  "compile_warning_count": 4,
+  "surrounding_build_boundary": "Only these three successful modules and 66 declarations are certified here; other drafts in the enclosing build were failing or blocked. No overall 685-module pass is asserted.",
+  "excluded_from_checkpoint": [
+    "Final concrete encoded walker identification",
+    "Public parser/printer and random machine instantiation",
+    "Complete public-machine runtime theorem",
+    "Successful enclosing whole-build certification",
+    "Full Comparator replay or practical runtime measurements"
+  ],
+  "artifacts_sha256": {
+    "formal/results/completion-dense-law/runtime-provenance.json": "e23fb01541801e69433ebd791f657e470f3be12812b154056fe298086720be22",
+    "formal/results/completion-dense-law/DenseLatticeCompletion-Source.lean": "91d13fa3d07c04904ccc1136e52aa50a69aa691b583805973ab77f37e08d7516",
+    "formal/results/completion-dense-law/DenseLatticeCompletion-AxiomCheck.lean": "c270708d07fdab04999a4aa5a387539b5598adf318a16ac40d56cfe1b62a9e55",
+    "formal/results/completion-dense-law/DenseLatticeCompletion-axiom-audit.log": "c0fbea642a931516b3e3928160583088a718fdb2fc4d7dac213156575ce28250",
+    "formal/results/completion-dense-law/DenseLatticeCompletion-compile.log": "002a879283e30fd1f65095e3a2aaf9831b75081527c06bae18d6a3a37f62d6ce",
+    "formal/results/completion-dense-law/DenseLatticeCompletionProvedInputs-Source.lean": "907f8d4426a19404b1f4fed5fc37296cc8506f2b91306c7b47f10b55f5016941",
+    "formal/results/completion-dense-law/DenseLatticeCompletionProvedInputs-AxiomCheck.lean": "69e0b67ab79e67f425012a59931675350f763598ac8b40889d7045d3227ce820",
+    "formal/results/completion-dense-law/DenseLatticeCompletionProvedInputs-axiom-audit.log": "c274d21e806b82961dc62766aca160e8704aa9f66d89c8439f3bca8eddde7e51",
+    "formal/results/completion-dense-law/DenseLatticeCompletionProvedInputs-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "formal/results/completion-dense-law/PhysicalLatticeCompletion-Source.lean": "0f384aeedafd1d37faa84886238a53a6c321f4f46b2f56113c8808a21d36b465",
+    "formal/results/completion-dense-law/PhysicalLatticeCompletion-AxiomCheck.lean": "231db9ad3bb37bee723826818f3e5024a0a91cfe69a9c6a79d4d9bb64d975a7b",
+    "formal/results/completion-dense-law/PhysicalLatticeCompletion-axiom-audit.log": "c477b3855e3b65d06b8a07424d955131d62ab6456827c2728cb2df5cfdb14fb6",
+    "formal/results/completion-dense-law/PhysicalLatticeCompletion-compile.log": "2a474b210116a633ccbefc19f86b2d909296564a9beacc45ac4bf0790fe33bea",
+    "formal/results/completion-dense-law/source-review.json": "59303dc2a52e457d590293c4b900cc75226918b7a33729a59033aa1583c1b204",
+    "docs/completion-dense-law.md": "9025b07c4ea0f38417cdab5786138b617cbb6dd329863fdfa0ae7ef415ab7396"
+  }
+}

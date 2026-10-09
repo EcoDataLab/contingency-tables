@@ -8,16 +8,17 @@ fine-table law, has the requested output accuracy. The count and acceptance
 bounds are proved within this result; they are no longer oracle hypotheses.
 
 This closes a central gap behind using the `80,000d¹⁷` auxiliary-chain bound.
-The remaining connection is to the canonical dense sampler, every physical
-state's completion problem, and finite-bit programs with charged costs.
+The subsequent [dense completion proof](completion-dense-law.md) now connects
+the canonical dense sampler to every physical state's completion problem.
+Identifying the concrete encoded outer program and its charged costs remains
+open.
 
 An additional [executable Boolean codec/retry component](completion-boolean-program.md)
 now identifies the actual signed decoder and an ordered bank of independent
 trial words with the retry law. Its 25 isolated audits supplement checkpoint 8.
 The subsequent [binary-list decoder](completion-list-decoder.md), with 52
 isolated audits, proves exact table semantics and polynomial charged work
-for decoding. Canonical dense integration and composed sampler costs remain
-open.
+for decoding. Composed sampler semantics and costs remain open.
 
 The [explicit schedule arithmetic](completion-schedules.md) also now compiles:
 56 isolated audits cover the walk/retry counts, separate completion
@@ -68,8 +69,10 @@ bound `2^(-(h+1))`; its geometry permits any `k≥2d` and `d≥1`.
 The law of the *whole* fine draw must meet the precision bound. Its own
 failure fallback cannot be discarded or silently conditioned away. Fresh
 independence is part of the product-law retry construction. The new Boolean
-component identifies the ordered word segments for a supplied fine draw;
-the canonical dense draw's specialization remains separate.
+component identifies the ordered word segments for a supplied fine draw.
+The [canonical dense specialization](completion-dense-law.md) now discharges
+the whole fine-law accuracy premise and proves this word-law identity for
+the pinned dense draw.
 
 ## How the counting proof closes
 
@@ -127,17 +130,17 @@ attributed in the [dilation guide](completion-oracle-dilation.md).
 
 ## Remaining implementation bridges
 
-1. Reindex the canonical dense sampler's `Option (Fin n)` table types to
-   the codec's `Fin a` types, and convert its real-valued total-variation
-   bound to the rational dyadic bound here. Its output law is already a
-   rational law; a new probability construction is unnecessary.
-2. Supply this completion law for every actual physical state and terminal
-   fiber. Existing residual-margin lemmas provide the strong margins;
-   dimension bounds, fallbacks, and unique-completion branches still need
-   to be assembled into the `OracleFamily` interface.
-3. Compose the verified binary-list decoder with Boolean retries and dense
-   draws, then charge random bits, arithmetic, dense-call, and outer-walk
-   costs.
+The [66-declaration dense-law checkpoint](completion-dense-law.md) completes
+the canonical table reindexing, rational dyadic conversion, pinned analytic
+premise discharge, and all-state physical `OracleFamily` assembly. It also
+handles the unique-completion branches and normalized outer error law.
+
+1. Identify computed large-row/column lists and reference indices with the
+   noncomputable reindexing used by the proved probability laws.
+2. Compose the binary-list decoder, Boolean retries and dense realizer,
+   then identify the complete encoded outer walk and fresh random segments.
+3. Charge the reserved bits, arithmetic, dense calls and outer walk in the
+   literal public random-machine model.
 
 The `d¹⁷` result continues to describe an auxiliary-chain inverse gap.
 Neither a complete runtime exponent nor practical competitiveness follows

@@ -10,8 +10,9 @@ The full finite-table preimage count, geometric count comparison, and
 quarter-acceptance bound now compile in Lean. The bounded-retry theorem
 proves actual completion-law accuracy from the supplied fine-law accuracy.
 The [formalization guide](completion-oracle-formalization.md) gives its exact
-hypotheses and evidence. Connection to the canonical dense law, the physical
-oracle family, and finite-bit program costs remains open.
+hypotheses and evidence. The subsequent [dense-law proof](completion-dense-law.md)
+now supplies the canonical dense law and all-state physical oracle family.
+Concrete encoded outer-program identification and complete costs remain open.
 
 The geometric starting point is the adjacent-rectangle lattice basis and
 equal-volume rounding cells in Dyer, Kannan, and Mount,
@@ -265,10 +266,12 @@ and requested precision. It does not turn `d¹⁷` into a complete runtime
 exponent: outer retries, walk length, dense-call cost, and bit arithmetic
 must all be charged.
 
-The remaining formal work is to instantiate the fine-law accuracy premise
-from `canonicalDenseDraw_variation`, supply the resulting completion law to
-every state in the physical approximate-oracle interface, and identify the
-integer codec and retry routine with finite-bit realizers. The full outer
-program and its costs must then be composed. The
+The [dense-law checkpoint](completion-dense-law.md) now instantiates fine-law
+accuracy from `canonicalDenseDraw_variation`, discharges its pinned analytic
+inputs, and supplies accurate completions for every physical state and
+terminal fiber. It proves the corresponding normalized outer-law error at
+the ideal scales. Remaining work identifies computed list orders and the
+integer codec/retry program with those laws, then composes the complete
+outer program and its machine costs. The
 [formalization guide](completion-oracle-formalization.md) separates these
-bridges from the now-proved finite-table and geometric claims.
+bridges from the proved finite-table, geometric and probability-law claims.
