@@ -1,0 +1,51 @@
+{
+  "status": "source_review_passed_at_recorded_hashes",
+  "reviewed_at": "2026-10-09T05:40:40.294788+00:00",
+  "reviewer": "ideal_scale_frontier independent subagent",
+  "review_mode": "read-only source, assumptions, and algebra review; only this receipt was written",
+  "lean_compiler_invoked_by_reviewer": false,
+  "reviewed_source_sha256": {
+    "formal/Math115/PhysicalRepairRefinement.lean": "99f41e25d64b06ec9399fe55899e0dd256bb36642365955bcbe7d585c730bb5a",
+    "formal/Math115/IdealRepairRefinement.lean": "7728c29d949bbf0b2cefa4feea9e38cc971df2c70ea069a77dfd53162418ed93",
+    "formal/Math115/ReducedRepairRefinement.lean": "816e8acb57279f019167817c023ee492d441ae9c43bdc60342cbb3a6dc5803f3",
+    "formal/Math115/RepairVarianceRefinement.lean": "db6848a4757a71b98759ea16bf929a1a2308d30481905a32e684d7ee91f29ad2"
+  },
+  "reference_source_sha256": {
+    "formal/Math115/PhysicalFullVariance.lean": "1d38c1d7d0ca468744c3a4e2864d560acb6d2aabf34c086ac38a6c4747c1ccd1",
+    "formal/Math115/ReducedSmallChain.lean": "8fc9d8478ac28a297ace0079e93cf64c0d36cceb52b2f2d5470f4d30d2096680",
+    "formal/Math115/ReducedAllSmallChain.lean": "0ba3ec59f6fa2f7e44939d28465ad190fcf82b4e1dae8f436ab959369964db58",
+    "formal/Math115/PhysicalStateNonempty.lean": "eef39955559dfa4563cbf65437c0fcf699e1662430bb576f9c1b71f7538d6a31",
+    "formal/Math115/IdealOracleScales.lean": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf",
+    "formal/Math115/SmallChainGap.lean": "b990ce70866c30ac6a03c7197d9a9d6c73fbe8af27cfc62196d6174f9e973bfa",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/PhysicalRepairGraph.lean": "8cc79c2170df6849793167ddc8cfbe4929eef39e0ce4530e15ad03e61411f670",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallRepairWords.lean": "b4d94ee5536059ffd258fbbb6af588d8eeff00b10661e7fe20269de0b5e545ae",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallProposal.lean": "6f7d9890bb55100df5b0ef8680fd67a620085091e5947a907d9f281992375098",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteChainGraphComparison.lean": "603ef3306f2ea85f27ef09fff992704ca73727b32ebe1597310f6728e0612051"
+  },
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "substantive_findings": [],
+  "validated_points": [
+    "The refined coefficient C_T+(sqrt(p^2*C_T)+1)^2 retains base variance outside the defect cross term and is no larger than existing fullConstant.",
+    "The physical integration invokes the literal repairWord and defectLabels, their weight domination and label/repair injection, and the actual repair-energy factor-one bound.",
+    "The label type is Cells small x Cells small; its cardinality is p^2. No improved physical congestion or missing within-type variance is assumed.",
+    "The original positive-support and encoding identities transfer the new bound to the same actual physical state space. Actual paperCapacity discharges arbitrary-B residual-capacity premises in the state theorem.",
+    "For d>=11,U>=2,p<=d, the Young bound gives C_T<=27*d*U^4/32, multiplier<=9*d^2/8, remainder<=d^3*U^4/128; total<=245*d^3*U^4/256<=d^3*U^4.",
+    "The unchanged dyadic proposal has reciprocal<=64*d^2. Reference energy>=beta*graphEnergy/(2Z) gives128*d^5*U^4; unit energy=beta*graphEnergy/Z gives64*d^5*U^4.",
+    "The selected chain retains the128 bound in both branches; the64 bound requires the explicitly stated empty-large-block hypothesis.",
+    "Ideal d17 wrappers use existing referenceChain,selectedChain,feasibleChain with U=5*d^3,L=3*d; coefficients80000 and40000 are correct.",
+    "Reduced d25 wrappers use existing reducedChain,reducedSelectedChain,reducedUnitChain and feasibleReducedChain with U=47*d^5,L=32*d^3; coefficients128*47^4 and64*47^4 are correct.",
+    "Equal-total wrappers discharge only physical-state nonemptiness and require no externally chosen references. Empty index types remain covered.",
+    "Zero-defect-label cases are covered; no division by a state weight, defect mass, variance, or graph energy is introduced."
+  ],
+  "wording_review": {
+    "conservative_eightfold_change": "Combines exact repair refinement and tighter polynomial envelope under actual dimension/cutoff floors; exact repair refinement alone tends toward factor two when defect multiplier dominates.",
+    "docs_physical_repair_refinement": "Current explanatory source agrees with the reviewed proof assumptions and factor accounting."
+  },
+  "limitations": [
+    "This receipt does not certify compilation or printed-axiom audits. Author owns the sole Lean slot and must provide separate successful execution evidence.",
+    "All reviewed source files are frozen at the recorded hashes. Any later source change requires renewed review; compiler and axiom evidence remains a separate author receipt.",
+    "No Linux replication, dependency-closure rebuild, or strict Comparator replay was performed by this reviewer.",
+    "No finite-bit completion oracle, outer sampler law, stationary output-success bound, machine-cost theorem, practical runtime, or weighted/constrained-table extension follows from this source review."
+  ],
+  "source_freeze": "Author confirmed all three integration/wrapper modules compiled successfully and supplied source hashes remain unchanged; sources frozen."
+}

@@ -1,7 +1,7 @@
 {
-  "recorded_date": "2026-10-08",
-  "checkpoint": 3,
-  "prior_checkpoint_commit": "b14082b286b99d0b1ef84efcf59e4d202493d16b",
+  "recorded_date": "2026-10-09",
+  "checkpoint": 4,
+  "prior_checkpoint_commit": "b3723253f424ab5bf1c8f63443467f18b387222d",
   "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "lean_toolchain": "leanprover/lean4:v4.34.1",
   "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
@@ -12,19 +12,19 @@
   "focused_dependency_closure": {
     "status": "integrated_aggregate_compilation_and_fresh_axiom_audit_passed",
     "original_module_count": 168,
-    "local_module_count": 25,
-    "trusted_external_import_count": 42,
+    "local_module_count": 32,
+    "trusted_external_import_count": 43,
     "entry_module": "Math115",
     "provenance": "formal/results/provenance.json",
-    "log": "formal/results/third-checkpoint.log",
-    "scope_note": "Dependencies were compiled in sequential author checks. This receipt records a fresh integrated Math115 aggregate compilation and both transitive axiom audits, not a fresh rebuild of the entire dependency closure."
+    "log": "formal/results/fourth-checkpoint.log",
+    "scope_note": "Seven new modules compiled in serial author checks; this receipt records a fresh integrated aggregate and both audits using existing dependency outputs, not a full dependency rebuild."
   },
   "checks": {
     "standalone": {
       "status": "passed",
-      "completed_at_utc": "2026-10-08T23:41:37.968534+00:00",
-      "log": "formal/results/third-checkpoint.log",
-      "log_sha256": "1bda56e01858f035b9c8ae36e5f81c4b4c448c4fab91a19338789377f02b9fcb",
+      "completed_at_utc": "2026-10-09T05:43:40.974695+00:00",
+      "log": "formal/results/fourth-checkpoint.log",
+      "log_sha256": "9299e325714c15684d074a0c577c95f5552c3eeb0ec77a8fbc6558f3005f94fd",
       "audited_declarations": [
         {
           "name": "Math115.pair_product_le_quarter_square",
@@ -76,9 +76,9 @@
     },
     "focused": {
       "status": "passed",
-      "completed_at_utc": "2026-10-08T23:41:37.968534+00:00",
-      "log": "formal/results/third-checkpoint.log",
-      "log_sha256": "1bda56e01858f035b9c8ae36e5f81c4b4c448c4fab91a19338789377f02b9fcb",
+      "completed_at_utc": "2026-10-09T05:43:25.521841+00:00",
+      "log": "formal/results/fourth-checkpoint.log",
+      "log_sha256": "9299e325714c15684d074a0c577c95f5552c3eeb0ec77a8fbc6558f3005f94fd",
       "audited_declarations": [
         {
           "name": "OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum_le_graphEnergy",
@@ -1258,16 +1258,625 @@
             "Classical.choice",
             "Quot.sound"
           ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.unitChain",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.weight_eq_one",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.unitChain_pi",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.unitChain_pi_weight",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.graphEnergy_empty",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.unitChain_energy",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.unitChain_poincare_exact",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.unitChain_poincare_polynomial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.missing_reference_empty",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.selectedChain",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.selectedChain_pi",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.selectedChain_poincare_exact",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.selectedChain_poincare_polynomial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.reducedUnitChain",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.reducedUnitChain_poincare_d25",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.reducedSelectedChain",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedAllSmallChain.reducedSelectedChain_poincare_d25",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.RepairVarianceRefinement.square_repair_young",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.RepairVarianceRefinement.repair_sqrt_coefficient_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.RepairVarianceRefinement.repair_sqrt_coefficient_le_source",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.RepairVarianceRefinement.repair_sqrt_coefficient_le_triangle",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.RepairVarianceRefinement.variance_sum_repair_young",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.RepairVarianceRefinement.variance_sum_repair_sqrt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.RepairVarianceRefinement.variance_repaired_energy_sqrt",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStateNonempty.paddedTable",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStateNonempty.small_entry_le",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStateNonempty.states_nonempty_of_table",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStateNonempty.states_nonempty",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStateNonempty.feasibleReducedChain",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStateNonempty.feasibleReducedChain_pi",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalStateNonempty.feasibleReducedChain_poincare_d25",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.idealL",
+          "axioms": []
+        },
+        {
+          "name": "Math115.IdealOracleScales.idealU",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.threshold_at_least_two",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.padding_at_least_three_dimension",
+          "axioms": []
+        },
+        {
+          "name": "Math115.IdealOracleScales.threshold_at_least_twice_padding",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.sequential_scale_budget",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.padded_count_le_twice_original",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.padded_count_le_twice_successful",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.dense_padding_lower_bound",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.incompatible_dense_scales",
+          "axioms": [
+            "propext",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.dimension_at_least_eleven",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.cutoff",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.padding",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.IdealStates",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.idealLarge",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.ideal_large_padded_count_le_twice_original",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.referenceChain",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.referenceChain_poincare_d17",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.selectedChain",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.selectedChain_poincare_d17",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.feasibleChain",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealOracleScales.feasibleChain_poincare_d17",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.refinedConstant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.refinedConstant_nonnegative",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.refinedConstant_le_fullConstant",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.sqrt_coefficient_le_young",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.refinedConstant_le_polynomial",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.refinedProposal_budget",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.refinedReferenceProposal_budget",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.physical_full_variance_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.physical_variance_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.state_variance_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.chain_poincare_exact_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.unitChain_poincare_exact_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.selectedChain_poincare_exact_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.dimension_at_least_eleven",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.chain_poincare_polynomial_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.unitChain_poincare_polynomial_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.PhysicalRepairRefinement.selectedChain_poincare_polynomial_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealRepairRefinement.referenceChain_poincare_d17_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealRepairRefinement.selectedChain_poincare_d17_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealRepairRefinement.feasibleChain_poincare_d17_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.IdealRepairRefinement.unitChain_poincare_d17_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedRepairRefinement.reducedChain_poincare_d25_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedRepairRefinement.reducedUnitChain_poincare_d25_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedRepairRefinement.reducedSelectedChain_poincare_d25_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
+        },
+        {
+          "name": "Math115.ReducedRepairRefinement.feasibleReducedChain_poincare_d25_refined",
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ]
         }
       ]
     }
   },
-  "new_audited_declaration_count": 152,
+  "new_audited_declaration_count": 230,
   "original_audited_declaration_count": 2,
   "linux_verification": {
     "record": "formal/results/linux-runs.json",
     "source_commit": "5e5d6ef9aa36f7e2a744f3fb8605448529f8be66",
-    "scope_note": "Separate earlier-commit Linux checks do not verify the third-checkpoint additions."
+    "scope_note": "Separate earlier-commit Linux checks do not verify checkpoint 4 additions."
   },
   "full_unconditional_and_challenge_build": {
     "status": "passed_on_linux_at_prior_commit",
@@ -1283,18 +1892,20 @@
     "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684"
   },
   "limits": [
-    "The focused harness is separate from the complete upstream Lake package.",
-    "Official Mathlib cached artifacts and Lean bootstrap binaries are trusted.",
-    "The actual reduced ideal completion chain has a proved d^25 inverse-gap bound under explicit nonempty physical-state and large-reference row/column hypotheses.",
-    "The reduced all-small branch, automatic branch selection, revised finite-bit sampler, exact-output-law correction, and end-to-end bit-runtime proof are not established by this checkpoint.",
-    "The separate original Linux machine theorem audit does not verify a modified sampler or a secure Comparator replay."
+    "Official Mathlib cached artifacts and Lean bootstrap binaries remain trusted.",
+    "The d17 and d25 theorems bound actual ideal auxiliary-chain inverse gaps; final wrappers require only equal ordinary total margins.",
+    "The smaller ideal-only scales violate the retained sufficient dense-completion interface.",
+    "A stationary physical output-success theorem, modified finite-bit sampler, output correction, and complete machine-runtime proof at the new scales remain open.",
+    "Earlier full-original Linux verification is not verification of a modified sampler or strict Comparator replay."
   ],
   "source_sha256": {
-    "formal/Math115.lean": "bc69d75dbaf6aeecb75b724e678d7c5d39964c0453389b8aebcf8c94330afac3",
+    "formal/Math115.lean": "483b5646b74679514caf06f13853c9b309e0193573c97bd1098f57269554e34c",
     "formal/Math115/AllSmallChainGap.lean": "f87775c41d272d968362036e8082fe748031244b52cbe6b743e18f40b775a288",
-    "formal/Math115/AxiomAudit.lean": "1ba0d0d831afbc64c97787cf30d6b0e6335c27aaa6e3cb4d7258201a6e9b50bf",
+    "formal/Math115/AxiomAudit.lean": "ac4f2b5b77688615fa72de35138a748b0b7356271d9074e2c36cf10042557e5a",
     "formal/Math115/CompletionAdjustment.lean": "714934dc14bca5589b40de0952db8dfd17ead1aa93f71306fbf120d832e47192",
     "formal/Math115/GlobalDisplayOwnership.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
+    "formal/Math115/IdealOracleScales.lean": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf",
+    "formal/Math115/IdealRepairRefinement.lean": "7728c29d949bbf0b2cefa4feea9e38cc971df2c70ea069a77dfd53162418ed93",
     "formal/Math115/PaddedMarginBridge.lean": "0e015eeb217967669054b9492281c020c0281075336e9712e03c2b623bda0c4b",
     "formal/Math115/PaddingGrowth.lean": "deece6445719c3e56b5b87576c2ec2aed62d11c9c4d525fd02a3c11918831750",
     "formal/Math115/PaddingGrowthAlgebra.lean": "d9ddbad574efaf8786d1e994964f6ed1c54c82f1b26ef068bd5c3dee042d1ab4",
@@ -1303,10 +1914,15 @@
     "formal/Math115/PhysicalExposureVariance.lean": "3a4a0cba124f381f27fc31fb3a0f3a40490419a36834903eaa10c5a9c907ea55",
     "formal/Math115/PhysicalFullVariance.lean": "1d38c1d7d0ca468744c3a4e2864d560acb6d2aabf34c086ac38a6c4747c1ccd1",
     "formal/Math115/PhysicalLeafEnergy.lean": "7c32ff73a592051eb81b69485820fa2dfcbadc5be7c0081c9f4a6bf52d88e55b",
+    "formal/Math115/PhysicalRepairRefinement.lean": "99f41e25d64b06ec9399fe55899e0dd256bb36642365955bcbe7d585c730bb5a",
+    "formal/Math115/PhysicalStateNonempty.lean": "eef39955559dfa4563cbf65437c0fcf699e1662430bb576f9c1b71f7538d6a31",
     "formal/Math115/QuadraticCoefficient.lean": "9d023785b272aeb6b819aaa1bc42c7c04f8419522799b64e0b66bb355b91a46a",
+    "formal/Math115/ReducedAllSmallChain.lean": "0ba3ec59f6fa2f7e44939d28465ad190fcf82b4e1dae8f436ab959369964db58",
+    "formal/Math115/ReducedRepairRefinement.lean": "816e8acb57279f019167817c023ee492d441ae9c43bdc60342cbb3a6dc5803f3",
     "formal/Math115/ReducedSmallChain.lean": "8fc9d8478ac28a297ace0079e93cf64c0d36cceb52b2f2d5470f4d30d2096680",
     "formal/Math115/ReferenceEdgeAcceptance.lean": "3e9973e6c5b97356d1222fc301f4cf5dfd4865045b0b89ae25b4c3e5cf8f93b8",
     "formal/Math115/RepairCoefficient.lean": "cf1275943fb03dce29c9641d758e56531ee6c2fa42b13dc09110e2d7823ffd60",
+    "formal/Math115/RepairVarianceRefinement.lean": "db6848a4757a71b98759ea16bf929a1a2308d30481905a32e684d7ee91f29ad2",
     "formal/Math115/ScaleCertificate.lean": "4b1bce04461a4a3f86a17050c90132f869222aac2ded61c021f05039761b1095",
     "formal/Math115/SmallChainGap.lean": "b990ce70866c30ac6a03c7197d9a9d6c73fbe8af27cfc62196d6174f9e973bfa",
     "formal/Math115/SmallEntrySwitching.lean": "a0cd85439dccaf5c67ef291fae631f41c6585581f1c4af323c22f04768571f64",
@@ -1323,11 +1939,58 @@
     "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
     "scripts/bootstrap_lean.sh": "3a6f786a74e64e1a08a91dffd45171c481ae4099832ceadf8a6aa9ce4f1950e8",
     "scripts/build_lean_serial.py": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c",
-    "scripts/verify_lean.sh": "5a7d2600d387a3f729c0a143d507bd0535f69dbc6b2818ddcd83aa6f0ccd32f2"
+    "scripts/check_lean_axioms.py": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+    "scripts/verify_lean.sh": "9d4ea3cc754e8a46c58289fb9bca23876dfea0aaba19ce42eb3586eaeb2bdc8c"
   },
   "thor_verification": {
     "source_commit": "b14082b286b99d0b1ef84efcf59e4d202493d16b",
     "record": "formal/results/thor-verification.json",
     "scope_note": "Separate Windows check: 128 Python tests, 100 Lean source modules, 68 selected declarations at checkpoint 2."
-  }
+  },
+  "execution": [
+    {
+      "scope": "aggregate",
+      "command": [
+        "<workspace>/.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "-o",
+        ".lake/build/lib/lean/Math115.olean",
+        "Math115.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 48.745,
+      "completed_at_utc": "2026-10-09T05:43:00.096671+00:00"
+    },
+    {
+      "scope": "focused",
+      "command": [
+        "<workspace>/.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "Math115/AxiomAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 25.423,
+      "completed_at_utc": "2026-10-09T05:43:25.521841+00:00"
+    },
+    {
+      "scope": "standalone",
+      "command": [
+        "<workspace>/.tools/elan/bin/lake",
+        "env",
+        "lean",
+        "-j1",
+        "-DautoImplicit=false",
+        "Math115/StandaloneAxiomAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 15.452,
+      "completed_at_utc": "2026-10-09T05:43:40.974695+00:00"
+    }
+  ]
 }

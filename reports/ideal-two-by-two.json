@@ -1,0 +1,452 @@
+{
+  "status": "exact_finite_certificates_and_reviewed_mathematical_derivation",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_parameters": {
+    "dimension_allowance": 19,
+    "U": 37589973457545958193355601,
+    "L": 2213314919066161,
+    "beta": "1/16384"
+  },
+  "scope": "ordinary all-small 2x2 equal margins 1 <= m < U; no cap or weighted law",
+  "base_certificate": {
+    "states": [
+      [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        9,
+        13
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        12
+      ],
+      [
+        11,
+        13
+      ],
+      [
+        12,
+        13
+      ]
+    ],
+    "harmonic_potential": [
+      "3/5",
+      "1/3",
+      "2/3",
+      "2/5",
+      "1/3",
+      "0",
+      "1/3",
+      "2/3",
+      "1",
+      "2/3",
+      "2/5",
+      "1/3",
+      "2/3",
+      "3/5"
+    ],
+    "left_boundary": 5,
+    "right_boundary": 8,
+    "unit_conductance": "32/15",
+    "internal_potential_sum": "6",
+    "internal_squared_potential_sum": "734/225"
+  },
+  "finite_validations": [
+    {
+      "equal_margin": 1,
+      "physical_states": 14,
+      "undirected_edges": 28,
+      "balanced_tables": 2,
+      "stationary_success_probability": "1/7",
+      "mean_physical_steps_per_return": "7",
+      "return_neighbor_probability": "1/7680",
+      "coordinate_variance": "1/4",
+      "coordinate_asymptotic_variance": "7679/4",
+      "coordinate_variance_inflation": "7679",
+      "full_physical_inverse_gap_lower_bound": "87808/15",
+      "complete_state_and_edge_match": true,
+      "exact_censor_poisson_and_rayleigh_checks": true
+    },
+    {
+      "equal_margin": 2,
+      "physical_states": 27,
+      "undirected_edges": 56,
+      "balanced_tables": 3,
+      "stationary_success_probability": "1/9",
+      "mean_physical_steps_per_return": "9",
+      "return_neighbor_probability": "1/7680",
+      "coordinate_variance": "2/3",
+      "coordinate_asymptotic_variance": "30718/3",
+      "coordinate_variance_inflation": "15359",
+      "full_physical_inverse_gap_lower_bound": "491008/15",
+      "complete_state_and_edge_match": true,
+      "exact_censor_poisson_and_rayleigh_checks": true
+    },
+    {
+      "equal_margin": 3,
+      "physical_states": 40,
+      "undirected_edges": 84,
+      "balanced_tables": 4,
+      "stationary_success_probability": "1/10",
+      "mean_physical_steps_per_return": "10",
+      "return_neighbor_probability": "1/7680",
+      "coordinate_variance": "5/4",
+      "coordinate_asymptotic_variance": "130555/4",
+      "coordinate_variance_inflation": "26111",
+      "full_physical_inverse_gap_lower_bound": "1143808/15",
+      "complete_state_and_edge_match": true,
+      "exact_censor_poisson_and_rayleigh_checks": true
+    },
+    {
+      "equal_margin": 4,
+      "physical_states": 53,
+      "undirected_edges": 112,
+      "balanced_tables": 5,
+      "stationary_success_probability": "5/53",
+      "mean_physical_steps_per_return": "53/5",
+      "return_neighbor_probability": "1/7680",
+      "coordinate_variance": "2",
+      "coordinate_asymptotic_variance": "79870",
+      "coordinate_variance_inflation": "39935",
+      "full_physical_inverse_gap_lower_bound": "2046208/15",
+      "complete_state_and_edge_match": true,
+      "exact_censor_poisson_and_rayleigh_checks": true
+    },
+    {
+      "equal_margin": 5,
+      "physical_states": 66,
+      "undirected_edges": 140,
+      "balanced_tables": 6,
+      "stationary_success_probability": "1/11",
+      "mean_physical_steps_per_return": "11",
+      "return_neighbor_probability": "1/7680",
+      "coordinate_variance": "35/12",
+      "coordinate_asymptotic_variance": "1989085/12",
+      "coordinate_variance_inflation": "56831",
+      "full_physical_inverse_gap_lower_bound": "3198208/15",
+      "complete_state_and_edge_match": true,
+      "exact_censor_poisson_and_rayleigh_checks": true
+    },
+    {
+      "equal_margin": 6,
+      "physical_states": 79,
+      "undirected_edges": 168,
+      "balanced_tables": 7,
+      "stationary_success_probability": "7/79",
+      "mean_physical_steps_per_return": "79/7",
+      "return_neighbor_probability": "1/7680",
+      "coordinate_variance": "4",
+      "coordinate_asymptotic_variance": "307196",
+      "coordinate_variance_inflation": "76799",
+      "full_physical_inverse_gap_lower_bound": "4599808/15",
+      "complete_state_and_edge_match": true,
+      "exact_censor_poisson_and_rayleigh_checks": true
+    }
+  ],
+  "limitations": [
+    "The general block-decomposition argument is a mathematical derivation, not a Lean theorem.",
+    "Only margins one through six are exhaustively compared with the separate backend.",
+    "Asymptotic variance assumes stationarity; finite trajectories are not independent uniform samples.",
+    "Censored draws bypass physical excursions; no wall-clock performance is inferred.",
+    "The Omega(U^2) obstruction is for this free-cutoff all-small chain family, not every sampler."
+  ],
+  "source_sha256": {
+    "experiments/ideal_two_by_two.py": "bf436a7b25b6f23f151519a10956592757271c8186153be4d6e704405ca81795",
+    "src/contingency115/ideal_chain.py": "5432398d088bbd93d473a56fababadfb9f50c807a38e230c222e8527fa23235b",
+    "src/contingency115/chain_diagnostics.py": "7312692b07f7c92b77f3eb741683253d3c9d560874287518cee3bb089a1dbb80",
+    "src/contingency115/kernels.py": "6931734601d48bcbff0b2261932f212f4201a910078c08c03a1b213f7cf12187",
+    "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019"
+  }
+}

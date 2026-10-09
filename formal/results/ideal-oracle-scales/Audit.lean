@@ -1,0 +1,23 @@
+import Math115.IdealOracleScales
+#print axioms Math115.IdealOracleScales.idealL
+#print axioms Math115.IdealOracleScales.idealU
+#print axioms Math115.IdealOracleScales.threshold_at_least_two
+#print axioms Math115.IdealOracleScales.padding_at_least_three_dimension
+#print axioms Math115.IdealOracleScales.threshold_at_least_twice_padding
+#print axioms Math115.IdealOracleScales.sequential_scale_budget
+#print axioms Math115.IdealOracleScales.padded_count_le_twice_original
+#print axioms Math115.IdealOracleScales.padded_count_le_twice_successful
+#print axioms Math115.IdealOracleScales.dense_padding_lower_bound
+#print axioms Math115.IdealOracleScales.incompatible_dense_scales
+#print axioms Math115.IdealOracleScales.dimension_at_least_eleven
+#print axioms Math115.IdealOracleScales.cutoff
+#print axioms Math115.IdealOracleScales.padding
+#print axioms Math115.IdealOracleScales.IdealStates
+#print axioms Math115.IdealOracleScales.idealLarge
+#print axioms Math115.IdealOracleScales.ideal_large_padded_count_le_twice_original
+#print axioms Math115.IdealOracleScales.referenceChain
+#print axioms Math115.IdealOracleScales.referenceChain_poincare_d17
+#print axioms Math115.IdealOracleScales.selectedChain
+#print axioms Math115.IdealOracleScales.selectedChain_poincare_d17
+#print axioms Math115.IdealOracleScales.feasibleChain
+#print axioms Math115.IdealOracleScales.feasibleChain_poincare_d17

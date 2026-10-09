@@ -1,5 +1,7 @@
 # Sequential ordinary-table padding
 
+Later integration: [ideal-only scales](ideal-oracle-scales.md) also satisfy the ordinary padding ratio at `U=5d³,L=3d`, while the [sharper repair theorem](physical-repair-refinement.md) improves both chain constants. The dense-compatible scale argument below remains valid.
+
 The new sufficient threshold is `U = 47 d⁵`, with the existing
 `L = 32 d³` padding. The argument compares the full ordinary-table count
 after each added unit. It retains the same dimension exponent as the earlier

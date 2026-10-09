@@ -6,6 +6,8 @@ This continues the [third review](third-checkpoint-review.md). It records
 source-interface review separately from compilation and axiom-audit receipts.
 No Lean build was launched by this reviewer.
 
+Status update, 9 October 2026 UTC: the draft labels below describe the historical review snapshot. The repair lemma, automatic reduced branch, and physical-state existence bridge have since compiled and passed axiom audits. See the [fifth review](fifth-checkpoint-review.md) and [current formal ledger](formal-verification.md) for the integrated checkpoint; the original review text is preserved.
+
 ## 1. Finite repair refinement
 
 The local, uncompiled `RepairVarianceRefinement.lean` draft (deferred from

@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "claim": "New IdealOracleScales module compilation and 22 named declaration axiom audits only; not complete sampler or Comparator replay.",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compile": {
+    "command": [
+      "<workspace>/.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "-o",
+      ".lake/build/lib/lean/Math115/IdealOracleScales.olean",
+      "-i",
+      ".lake/build/lib/lean/Math115/IdealOracleScales.ilean",
+      "Math115/IdealOracleScales.lean"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 56.84606650006026,
+    "source_sha256": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf"
+  },
+  "axiom_audit": {
+    "command": [
+      "<workspace>/.tools/elan/bin/lake",
+      "env",
+      "lean",
+      "-j1",
+      "-DautoImplicit=false",
+      "/tmp/math115-ideal-oracle-scales/Audit.lean"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 57.40694775013253,
+    "source_sha256": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf",
+    "audit_sha256": "a86208b3696142b493bdad56d6017361f6bbc24762f64e04835fb2e1e433de6b"
+  },
+  "audit_declaration_count": 22,
+  "axioms_observed": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "input_sha256": {
+    "formal/Math115/IdealOracleScales.lean": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf",
+    "formal/Math115/ReducedSmallChain.lean": "8fc9d8478ac28a297ace0079e93cf64c0d36cceb52b2f2d5470f4d30d2096680",
+    "formal/Math115/PaddingGrowth.lean": "deece6445719c3e56b5b87576c2ec2aed62d11c9c4d525fd02a3c11918831750",
+    "formal/Math115/ScaleCertificate.lean": "4b1bce04461a4a3f86a17050c90132f869222aac2ded61c021f05039761b1095",
+    "formal/Math115/PhysicalStateNonempty.lean": "eef39955559dfa4563cbf65437c0fcf699e1662430bb576f9c1b71f7538d6a31",
+    "formal/Math115/ReducedAllSmallChain.lean": "0ba3ec59f6fa2f7e44939d28465ad190fcf82b4e1dae8f436ab959369964db58",
+    "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+    "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+  },
+  "trust_boundary": "Uses existing pinned local toolchain and compiled import artifacts; new module and audit run serially with sole compiler slot. No Linux or strict Comparator replay."
+}

@@ -1,5 +1,7 @@
 # An ideal completion chain at the reduced scales
 
+Later results: the [automatic branch and equal-total wrapper](reduced-all-small-chain.md) discharge reference and nonemptiness assumptions, and the [physical repair refinement](physical-repair-refinement.md) improves the dense-compatible allowance to `128·47⁴d²⁵`. The original theorem described below remains valid.
+
 **Verification status: verified.** `formal/Math115/ReducedSmallChain.lean` compiled with Lean 4.34.1, `-j1`, and `-DautoImplicit=false`, with no diagnostics. Nine principal exports, including both chain constructors and the final $d^{25}$ theorem, were axiom-audited; every audited declaration depends only on `propext`, `Classical.choice`, and `Quot.sound`. The full physical-variance and reduced-padding acceptance dependencies were also compiled and audited.
 
 The module constructs an actual chain using the pinned source's `completionChain`, reference completion blocks, physical adjacency graph, dyadic proposal, and capacity formula. Its cutoff $U$ and padding $L$ are explicit parameters. It is not just a substitution in a scalar inequality.

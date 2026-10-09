@@ -1,0 +1,24 @@
+'Math115.IdealOracleScales.idealL' does not depend on any axioms
+'Math115.IdealOracleScales.idealU' depends on axioms: [propext]
+'Math115.IdealOracleScales.threshold_at_least_two' depends on axioms: [propext, Quot.sound]
+'Math115.IdealOracleScales.padding_at_least_three_dimension' does not depend on any axioms
+'Math115.IdealOracleScales.threshold_at_least_twice_padding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.sequential_scale_budget' depends on axioms: [propext, Quot.sound]
+'Math115.IdealOracleScales.padded_count_le_twice_original' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.padded_count_le_twice_successful' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.dense_padding_lower_bound' depends on axioms: [propext]
+'Math115.IdealOracleScales.incompatible_dense_scales' depends on axioms: [propext, Quot.sound]
+'Math115.IdealOracleScales.dimension_at_least_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.padding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.IdealStates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.idealLarge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.ideal_large_padded_count_le_twice_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.IdealOracleScales.referenceChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.referenceChain_poincare_d17' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.selectedChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.selectedChain_poincare_d17' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.feasibleChain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.IdealOracleScales.feasibleChain_poincare_d17' depends on axioms: [propext, Classical.choice, Quot.sound]

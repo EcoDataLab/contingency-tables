@@ -1,23 +1,25 @@
 # Research status
 
-Updated October 8, 2026 — third verified checkpoint.
+Updated October 9, 2026 UTC — fourth verified checkpoint.
 
-The main result is now a **Lean-verified bound for an actual reduced-scale ideal chain**, rather than a conditional parameter substitution. The complete modified finite-bit sampler and its runtime are still open. All upstream comparisons use `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; the preserved [initial review](../115/115-contingency-tables-review.md) is unchanged.
+The main ideal-chain bound is now **`80,000d¹⁷`**, for all ordinary equal-total margins, with automatic choice of the reference-completion or empty-block unit branch. Here `d=10+(m+1)(n+1)`. Exact completion draws remain oracle operations at these scales; the complete modified finite-bit sampler and its runtime are still open. All upstream comparisons use `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`; the preserved [initial review](../115/115-contingency-tables-review.md) is unchanged.
 
 ## Verified mathematical results
 
-Let `d=10+(m+1)(n+1)`. The [reduced-chain theorem](reduced-small-chain.md) constructs the source's actual completion chain at `U=47d⁵`, `L=32d³`, with its physical edges and dyadic proposal. It proves
+Two scale choices now have proofs for actual auxiliary chains:
 
-$$
-\operatorname{Var}_{\pi}H
-\le 1024\cdot47^4d^{25}\,\mathcal E(H).
-$$
+| Scale choice | Cutoff `U` | Padding `L` | Reference/selected inverse-gap allowance | Empty-block unit branch |
+| --- | --- | --- | --- | --- |
+| Ideal oracle | `5d³` | `3d` | `80,000d¹⁷` | `40,000d¹⁷` |
+| Dense compatible | `47d⁵` | `32d³` | `128·47⁴d²⁵` | `64·47⁴d²⁵` |
 
-The theorem assumes a nonempty positive-weight physical state space and chosen large reference row and column. Its capacity, ordinary completion counts, half-acceptance probability, stationary normalization, and energy comparison are discharged in the proof. The generic construction works for `U≥2`, `L≥3d`, with inverse-gap allowance `1024d⁵U⁴`. The displayed scales also meet the separate padding and dense-scale conditions; exponent 25 is not claimed optimal among arbitrary ideal chains.
+The [physical repair proof](physical-repair-refinement.md) keeps the transversal variance outside the defect cross term. With transversal coefficient `C_T`, it obtains `C_T+(sqrt(p²C_T)+1)²`, then proves this is at most `d³U⁴` for `d≥11`, `U≥2`, and `p≤d`. The source dimension allowance always meets `d≥11`. Combining this with the unchanged dyadic proposal gives `128d⁵U⁴` for the reference/selected chain and `64d⁵U⁴` for the unit branch. The eightfold reduction from the previous conservative coefficients combines the sharper repair inequality with tighter polynomial arithmetic; exact repair alone does not produce an eightfold gain.
 
-For the literal original definitions at `U=d²⁰`, `L=d¹²`, the [original-chain theorem](small-chain-gap.md) proves `1024d⁸⁵`; its all-small unit-chain companion proves `512d⁸⁵`. The pinned source's completion-chain calculation gives `98,560d¹²⁶` before weakening to its exported `d¹⁶⁰` allowance. These are inverse-gap bounds, not full sampler bit-complexity exponents. The original all-small companion does not yet provide the corresponding branch at the new parameters.
+The [automatic branch and feasibility proof](reduced-all-small-chain.md) handles missing large rows or columns and builds a positive physical state from equal ordinary totals, including zero margins and empty index types. Thus the final equal-total wrappers need neither supplied reference indices nor an external state-existence hypothesis. Capacity, ordinary completion counts, acceptance, stationary normalization, and chain energy remain part of the verified construction.
 
-The proof combines compiled path variance, global ownership of literal physical leaf energies, the boxed hard-weight limit, exposure variance, full physical repair, and actual reference-completion adjustment and acceptance. The current chain result retains the source's factor-two repair estimate. A separate sharper repair-coefficient draft is not included in this verified chain constant.
+The [ideal-scale proof](ideal-oracle-scales.md) also proves the ordinary padded-table count ratio is at most two at `U=5d³,L=3d`. It does not turn that ratio into a half-success statement for the physical chain, which also contains defect states. A separate theorem shows the retained `DenseScaleConditions` interface forces `L≥32d³`; the smaller ideal padding cannot fit it by changing its other coefficients. This is an obstruction to that sufficient interface, not to every completion algorithm.
+
+For the literal original definitions at `U=d²⁰`, `L=d¹²`, the earlier [original-chain theorem](small-chain-gap.md) remains valid at `1024d⁸⁵`, with `512d⁸⁵` for its all-small unit companion. The pinned source's completion-chain calculation gives `98,560d¹²⁶` before weakening to its exported `d¹⁶⁰` allowance. These are inverse-gap comparisons, not complete sampler bit-complexity exponents. The older exact coefficients and reduced-scale theorems retain their names and proofs.
 
 Two additional verified results improve the ordinary-table analysis:
 
@@ -40,21 +42,26 @@ The [practical-use guide](practical-use.md) explains the target-law choice and a
 - [Linear metric bounds](linear-bounds.md) with checkable primal/dual and infeasibility certificates, requiring no table enumeration; [larger synthetic examples](commute-scaling.md) retain their stated limits and failures.
 - [Ordinary worker allocation and moments](worker-baseline.md): a classical inverse-factorial law, integer sampling, and full-covariance linear metric moments. Its API excludes cell bounds, structural zeros, and interaction weights.
 
+The [bounded ideal-chain backend](ideal-chain-experiment.md) now implements the literal physical transition with exact finite completion counts, plus a separately labeled rescaled diagnostic mode. Its exhaustive construction is a reference oracle with explicit work limits. The [18-case same-law panel](sampler-benchmarks.md) includes DP, heat baths, supplied tuned mixtures, worker draws under their own law, and two tiny literal physical chains. Five physical runs exhaust their excursion budgets; failed runs and unavailable method medians remain visible.
+
+The [exact 2×2 analysis](ideal-two-by-two.md) proves a block-graph decomposition for equal margins `(t,t)`, deriving `13t+1` states, a censored nearest-neighbor probability `32β/15`, and exact stationary variance inflation. At `t=1,2`, inflation is 7,679 and 15,359, compared with one for direct iid draws and the single-rectangle full-line heat bath. A harmonic Rayleigh witness gives an `Ω(U²)` inverse-gap obstruction for this free-cutoff chain family. This is an independently reviewed mathematical derivation with exact rational certificates and full backend comparisons for `t=1,...,6`; it is not a Lean theorem or a lower bound for all samplers.
+
 Uniform aggregate tables and conditional individual assignments are different laws. The public synthetic commuting example gives mean annual VMT of 18,700 under the first and about 16,158 under the second, with the same feasible range 9,460–25,080. This demonstrates sensitivity to the law, not empirical validity. CBEI/LEHD source reconciliation, uncertain controls, route evidence, and commute-versus-total-VMT scope remain separate requirements. No private client data or production CBEI changes are included.
 
 ## Verification and remaining work
 
-The integrated third checkpoint passed **188 Python tests** in 3.071 seconds and **154 Lean declaration audits**: 148 focused plus six standalone, comprising 152 new declarations and two original source statements. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. Exact report replays and independent implementation checks supplement these tests; finite cases are not substituted for universal proofs.
+The integrated fourth checkpoint passed **230 Python tests** and **232 Lean declaration audits**: 226 focused plus six standalone, comprising 230 new declarations and two original source statements. All audited declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. Exact report replays and independent source reviews supplement these checks; finite cases are not universal proofs.
 
-The [formal ledger](formal-verification.md), [Lean receipts](../formal/results/), and [Python receipt](../reports/checkpoint-verification.json) identify the checked declarations, environments, and source hashes. The [third](third-checkpoint-review.md) and [fourth independent reviews](fourth-checkpoint-review.md) distinguish source review from compilation and audit receipts.
+The [formal ledger](formal-verification.md), [Lean receipts](../formal/results/), and [Python receipt](../reports/checkpoint-verification.json) identify declarations, environments, and source hashes. The [fifth review](fifth-checkpoint-review.md) records independent checks of the physical repair integration, bounded ideal-chain implementation, benchmark accounting, and exact 2×2 argument.
 
-The [full original-theorem Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509) succeeded at commit `5e5d6ef`; its three original exports passed the standard-axiom audit. Thor separately reproduced commit `b14082b` with 128 Python tests, 100 focused modules, and 68 declaration audits. These earlier snapshots do not cover later local refinements. [Linux verification records](linux-verification.md) preserve that distinction. Strict Comparator replay remains unverified: the tested hosted runner has Landlock ABI 7, while the pinned sandbox requires ABI 9. No weaker fallback was substituted.
+The [full original-theorem Linux run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509) succeeded at commit `5e5d6ef`; its three original exports passed the standard-axiom audit. Thor separately reproduced commit `b14082b` with 128 Python tests, 100 focused modules, and 68 declaration audits. These earlier snapshots do not cover the new refinements. [Linux verification records](linux-verification.md) preserve that distinction. Strict Comparator replay remains unverified: the tested hosted runner has Landlock ABI 7, while the pinned sandbox requires ABI 9. No weaker fallback was substituted.
 
 Next work:
 
-1. Carry the new scales and chain bounds through the actual finite-bit completion oracle, revised law tabulation, output correction, and complete machine-cost proof; supply the reduced-scale all-small branch.
-2. Reproduce the changed checkpoint on Linux and complete strict Comparator replay on an environment meeting its sandbox requirements.
-3. Develop a physical defect-transport argument that controls both type means and within-type variance, or identify other justified improvements.
-4. Compare implemented methods on the same public or synthetic inputs and target law, including preprocessing, arithmetic costs, accuracy, and failures. Empirical competitiveness of the complete #115 sampler is unknown.
+1. Integrate the generic physical mass bound and successful state/completion-pair bijection at free `U,L`. These should transfer the ordinary padding ratio to stationary ideal success and a uniform conditional output law; that theorem is still pending.
+2. Carry suitable scales and chain bounds through the actual finite-bit completion oracle, revised law tabulation, output correction, and complete machine-cost proof. The ideal-only `d¹⁷` path needs a different or stronger completion interface.
+3. Reproduce this checkpoint on Linux and complete strict Comparator replay on an environment meeting its sandbox requirements.
+4. Close the gap between the free-cutoff `U⁴` upper allowance and the explicit `Ω(U²)` chain obstruction, or improve the transition rule with a justified target law and cost.
+5. Expand same-law tests to application-scale methods, including all setup and tuning costs. Empirical competitiveness of the complete #115 sampler remains unknown.
 
 Community corrections, counterexamples, independent replication, and contributions are welcome. Updated claims should remain attached to their verification evidence.

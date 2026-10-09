@@ -1,18 +1,20 @@
 # A sharper finite repair constant
 
-Mathematical derivation, 8 October 2026. This refinement is not yet checked
-in Lean. The separate draft
-`RepairVarianceRefinement.lean` (a local draft deferred from this publication checkpoint)
-contains the Young-parameter family, a finite weighted Cauchy–Schwarz argument,
-and its proposed graph-energy corollary. That module has not been compiled or
-axiom-audited. The current full-variance integration deliberately uses the
-unchanged source repair inequality.
+Lean-checked refinement, 8 October 2026. The seven statements in
+[`RepairVarianceRefinement.lean`](../formal/Math115/RepairVarianceRefinement.lean)
+compile with pinned Lean 4.34.1 and pass the transitive axiom audit, using
+only `propext`, `Classical.choice`, and `Quot.sound`.
+They prove the Young-parameter family, a finite weighted Cauchy–Schwarz
+argument, the graph-energy corollary, and comparison with the source and
+triangle-inequality coefficients. The subsequent
+[physical repair integration](physical-repair-refinement.md) now applies
+them to the actual chain while preserving the earlier valid certificates.
 
-Work is saved for resumption at the user's requested pause. No compiler pass
-has been started for this module. The next check is a direct Lean invocation
-from `formal/`, with `-j1 -DautoImplicit=false`, followed by an axiom audit of
-its seven exported lemmas and theorems. Coordinate a compiler slot first;
-the working source cache currently uses direct builds without Lake traces.
+The direct invocation uses `lake env lean -j1 -DautoImplicit=false` from
+`formal/` and existing compiled dependencies, without a dependency-closure
+rebuild. The fresh aggregate compilation and printed-axiom checks appear in
+the [fourth-checkpoint log](../formal/results/fourth-checkpoint.log) and
+[verification receipt](../formal/results/verification.json).
 
 Suppose base states have nonnegative weights `w`, defect states have
 nonnegative weights `v`, and each defect `d` repairs to `R(d)`. Assume
@@ -57,7 +59,7 @@ displacement is zero on base states. Only the defect-side lifted energy
 
 It also never exceeds the unchanged source coefficient `(1+2D) C_T+2`:
 the difference between the source and refined coefficients is
-`(sqrt(D C_T)-1)^2`. Both comparisons are included in the uncompiled draft.
+`(sqrt(D C_T)-1)^2`. Both comparisons are checked in the Lean module.
 
 Every zero case is harmless: the displayed argument uses nonnegative finite
 sums and square roots, with no division by a state weight or a context mass.

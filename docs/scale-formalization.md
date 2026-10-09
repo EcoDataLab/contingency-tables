@@ -1,5 +1,7 @@
 # Formal scale interfaces and stronger padding thresholds
 
+Later integration: the [current formal ledger](formal-verification.md) records actual chain theorems at both dense-compatible `d²⁵` and ideal-only `d¹⁷` scales. The conditional scope statements below refer to this earlier scale module, not the present project-wide result.
+
 Follow-up to [the scale audit](scale-audit.md), 8 October 2026. All upstream
 definitions refer to `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`.
 

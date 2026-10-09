@@ -174,3 +174,95 @@ import Math115
 #print axioms Math115.ReducedSmallChain.chain_poincare_polynomial
 #print axioms Math115.ReducedSmallChain.reducedChain
 #print axioms Math115.ReducedSmallChain.reducedChain_poincare_d25
+
+-- ReducedAllSmallChain: checkpoint 4 additions.
+#print axioms Math115.ReducedAllSmallChain.unitChain
+#print axioms Math115.ReducedAllSmallChain.weight_eq_one
+#print axioms Math115.ReducedAllSmallChain.unitChain_pi
+#print axioms Math115.ReducedAllSmallChain.unitChain_pi_weight
+#print axioms Math115.ReducedAllSmallChain.graphEnergy_empty
+#print axioms Math115.ReducedAllSmallChain.unitChain_energy
+#print axioms Math115.ReducedAllSmallChain.unitChain_poincare_exact
+#print axioms Math115.ReducedAllSmallChain.unitChain_poincare_polynomial
+#print axioms Math115.ReducedAllSmallChain.missing_reference_empty
+#print axioms Math115.ReducedAllSmallChain.selectedChain
+#print axioms Math115.ReducedAllSmallChain.selectedChain_pi
+#print axioms Math115.ReducedAllSmallChain.selectedChain_poincare_exact
+#print axioms Math115.ReducedAllSmallChain.selectedChain_poincare_polynomial
+#print axioms Math115.ReducedAllSmallChain.reducedUnitChain
+#print axioms Math115.ReducedAllSmallChain.reducedUnitChain_poincare_d25
+#print axioms Math115.ReducedAllSmallChain.reducedSelectedChain
+#print axioms Math115.ReducedAllSmallChain.reducedSelectedChain_poincare_d25
+
+-- RepairVarianceRefinement: checkpoint 4 additions.
+#print axioms Math115.RepairVarianceRefinement.square_repair_young
+#print axioms Math115.RepairVarianceRefinement.repair_sqrt_coefficient_nonnegative
+#print axioms Math115.RepairVarianceRefinement.repair_sqrt_coefficient_le_source
+#print axioms Math115.RepairVarianceRefinement.repair_sqrt_coefficient_le_triangle
+#print axioms Math115.RepairVarianceRefinement.variance_sum_repair_young
+#print axioms Math115.RepairVarianceRefinement.variance_sum_repair_sqrt
+#print axioms Math115.RepairVarianceRefinement.variance_repaired_energy_sqrt
+
+-- PhysicalStateNonempty: checkpoint 4 additions.
+#print axioms Math115.PhysicalStateNonempty.paddedTable
+#print axioms Math115.PhysicalStateNonempty.small_entry_le
+#print axioms Math115.PhysicalStateNonempty.states_nonempty_of_table
+#print axioms Math115.PhysicalStateNonempty.states_nonempty
+#print axioms Math115.PhysicalStateNonempty.feasibleReducedChain
+#print axioms Math115.PhysicalStateNonempty.feasibleReducedChain_pi
+#print axioms Math115.PhysicalStateNonempty.feasibleReducedChain_poincare_d25
+
+-- IdealOracleScales: checkpoint 4 additions.
+#print axioms Math115.IdealOracleScales.idealL
+#print axioms Math115.IdealOracleScales.idealU
+#print axioms Math115.IdealOracleScales.threshold_at_least_two
+#print axioms Math115.IdealOracleScales.padding_at_least_three_dimension
+#print axioms Math115.IdealOracleScales.threshold_at_least_twice_padding
+#print axioms Math115.IdealOracleScales.sequential_scale_budget
+#print axioms Math115.IdealOracleScales.padded_count_le_twice_original
+#print axioms Math115.IdealOracleScales.padded_count_le_twice_successful
+#print axioms Math115.IdealOracleScales.dense_padding_lower_bound
+#print axioms Math115.IdealOracleScales.incompatible_dense_scales
+#print axioms Math115.IdealOracleScales.dimension_at_least_eleven
+#print axioms Math115.IdealOracleScales.cutoff
+#print axioms Math115.IdealOracleScales.padding
+#print axioms Math115.IdealOracleScales.IdealStates
+#print axioms Math115.IdealOracleScales.idealLarge
+#print axioms Math115.IdealOracleScales.ideal_large_padded_count_le_twice_original
+#print axioms Math115.IdealOracleScales.referenceChain
+#print axioms Math115.IdealOracleScales.referenceChain_poincare_d17
+#print axioms Math115.IdealOracleScales.selectedChain
+#print axioms Math115.IdealOracleScales.selectedChain_poincare_d17
+#print axioms Math115.IdealOracleScales.feasibleChain
+#print axioms Math115.IdealOracleScales.feasibleChain_poincare_d17
+
+-- PhysicalRepairRefinement: checkpoint 4 additions.
+#print axioms Math115.PhysicalRepairRefinement.refinedConstant
+#print axioms Math115.PhysicalRepairRefinement.refinedConstant_nonnegative
+#print axioms Math115.PhysicalRepairRefinement.refinedConstant_le_fullConstant
+#print axioms Math115.PhysicalRepairRefinement.sqrt_coefficient_le_young
+#print axioms Math115.PhysicalRepairRefinement.refinedConstant_le_polynomial
+#print axioms Math115.PhysicalRepairRefinement.refinedProposal_budget
+#print axioms Math115.PhysicalRepairRefinement.refinedReferenceProposal_budget
+#print axioms Math115.PhysicalRepairRefinement.physical_full_variance_refined
+#print axioms Math115.PhysicalRepairRefinement.physical_variance_refined
+#print axioms Math115.PhysicalRepairRefinement.state_variance_refined
+#print axioms Math115.PhysicalRepairRefinement.chain_poincare_exact_refined
+#print axioms Math115.PhysicalRepairRefinement.unitChain_poincare_exact_refined
+#print axioms Math115.PhysicalRepairRefinement.selectedChain_poincare_exact_refined
+#print axioms Math115.PhysicalRepairRefinement.dimension_at_least_eleven
+#print axioms Math115.PhysicalRepairRefinement.chain_poincare_polynomial_refined
+#print axioms Math115.PhysicalRepairRefinement.unitChain_poincare_polynomial_refined
+#print axioms Math115.PhysicalRepairRefinement.selectedChain_poincare_polynomial_refined
+
+-- IdealRepairRefinement: checkpoint 4 additions.
+#print axioms Math115.IdealRepairRefinement.referenceChain_poincare_d17_refined
+#print axioms Math115.IdealRepairRefinement.selectedChain_poincare_d17_refined
+#print axioms Math115.IdealRepairRefinement.feasibleChain_poincare_d17_refined
+#print axioms Math115.IdealRepairRefinement.unitChain_poincare_d17_refined
+
+-- ReducedRepairRefinement: checkpoint 4 additions.
+#print axioms Math115.ReducedRepairRefinement.reducedChain_poincare_d25_refined
+#print axioms Math115.ReducedRepairRefinement.reducedUnitChain_poincare_d25_refined
+#print axioms Math115.ReducedRepairRefinement.reducedSelectedChain_poincare_d25_refined
+#print axioms Math115.ReducedRepairRefinement.feasibleReducedChain_poincare_d25_refined

@@ -15,3 +15,4 @@ overview.pdf
 *.log
 !formal/results/*.log
 !formal/results/linux-full-5e5d6ef/*.log
+!formal/results/ideal-oracle-scales/*.log

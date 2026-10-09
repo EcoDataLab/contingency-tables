@@ -23,17 +23,7 @@ audit_axioms() {
   local audit_file="$1" audit_output
   audit_output="$("$ELAN_HOME/bin/lake" env lean "$audit_file")"
   printf '%s\n' "$audit_output"
-  python3 - "$audit_output" <<'PY'
-import re, sys
-output = sys.argv[1]
-matches = re.findall(r"depends on axioms:\s*\[([^]]*)\]", output)
-assert matches, "No axiom reports found"
-allowed = {"propext", "Classical.choice", "Quot.sound"}
-for report in matches:
-    actual = {name.strip() for name in report.split(",") if name.strip()}
-    assert actual <= allowed, f"Unexpected axioms: {actual - allowed}"
-print(f"Axiom allowlist passed for {len(matches)} declarations.")
-PY
+  printf '%s\n' "$audit_output" | python3 "$TASK_ROOT/scripts/check_lean_axioms.py" "$audit_file"
 }
 
 [[ "$(git -C "$TASK_ROOT/.upstream/openai-math" rev-parse HEAD)" == \

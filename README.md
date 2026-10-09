@@ -2,7 +2,7 @@
 
 An open EcoDataLab research project building on [OpenAI result #115](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/115.md): sampling and counting integer tables with fixed margins and cell bounds.
 
-The research now includes a **Lean-verified O(d²⁵) bound on an actual ideal small-chain inverse spectral gap**. At cutoff `U=47d⁵` and padding `L=32d³`, the coefficient is `1024·47⁴d²⁵`. The theorem assumes a nonempty physical state space and chosen large reference row and column. Here `d=10+(m+1)(n+1)`. The full modified finite-bit sampler and its runtime remain open.
+The research now includes a **Lean-verified `80,000d¹⁷` inverse-gap bound for an actual ideal auxiliary chain**, where `d=10+(m+1)(n+1)`. It covers all ordinary equal-total margins through automatic branch selection and a proved state-existence construction. These ideal-only scales fall outside the retained finite-bit dense-completion interface; the separate dense-compatible bound is `128·47⁴d²⁵`. The complete modified finite-bit sampler and its runtime remain open.
 
 The repository also supplies sharp ordinary-table tail and mean bounds, exact samplers for small or structurally decomposable fibers, certified cycle-mixture comparisons, linear bounds, and a classical worker-allocation baseline with exact metric moments. [Practical uses](docs/practical-use.md) explains which probability law and tool fit each problem. Competitiveness of the complete #115 sampler against established application software has not been demonstrated.
 
@@ -12,21 +12,25 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 | --- | --- |
 | Sharp small-entry tail and mean bounds | Actual-table Lean proofs of the survival product, its linear bound, and the mean bound; attaining examples and exact finite checks |
 | Original ideal chains: O(d⁸⁵) inverse gap | Compiled physical path, exposure, and full-variance proofs give `1024d⁸⁵` for the literal source completion chain and `512d⁸⁵` for its all-small unit chain |
-| Reduced ideal chain: O(d²⁵) inverse gap | Actual source completion-chain construction at `U=47d⁵, L=32d³`, with verified capacity, acceptance, stationary-law, and energy interfaces |
+| Ideal-only chain: O(d¹⁷) inverse gap | `80,000d¹⁷` at `U=5d³, L=3d`; equal ordinary totals suffice, including empty dimensions; exact completion is an oracle operation |
+| Dense-compatible chain: O(d²⁵) inverse gap | `128·47⁴d²⁵` at `U=47d⁵, L=32d³`; same automatic branch and feasibility coverage |
+| Sharper physical repair | Square-root cross-term bound plus tighter polynomial arithmetic reduce the previous conservative chain coefficient eightfold |
 | Smaller padding threshold | Actual ordinary-table counts prove half unpadding acceptance at `U=47d⁵`, with a smaller shape-aware alternative |
 | Limit of this padding construction | A counting argument forces U=Ω(Ln²) in a 2×n family if acceptance stays bounded away from zero |
 | Smaller accuracy and counting-estimator budgets | Exact rational allocations and independent-block median schedules; transition allowances and observable-evaluation costs are reported separately |
-| Lean verification | 154 audited declarations: 148 focused and six standalone, all using standard foundational axioms; exact scope in the verification ledger |
+| Lean verification | 232 audited declarations: 226 focused and six standalone, all using standard foundational axioms; exact scope in the verification ledger |
 | Exact reference algorithms | Uniform and weighted small-fiber DP, cactus cycle coordinates, and graph-block factorization, with explicit work limits |
 | Exact feasible metric range | Rational min-cost flow with primal/dual and infeasibility-cut certificates; no table enumeration |
 | Better fixed cycle mixtures | Exact certificates: over 63% larger gap on the 42-table fixture, beating every rectangle-only mixture; no general mixing or runtime claim |
 | Ordinary worker baseline | Classical inverse-factorial law, exact integer draws, and full-covariance linear moments without sampling; excludes bounds and interaction weights |
+| Exact ideal-chain diagnostics | Executable bounded oracle, 18-case same-law benchmark, and an exact 2×2 obstruction: inverse gap grows at least as U² in this free-cutoff family |
 
 ## Starting points
 
 - [Original research review](115/115-contingency-tables-review.md) and [source manifest](115/source-manifest.json): the preserved October 8, 2026 handoff, including hypotheses to test.
 - [Research status](docs/status.md): current results, limitations, and next proof obligations.
-- [Verified reduced ideal chain](docs/reduced-small-chain.md), [original-chain comparison](docs/small-chain-gap.md), and [sequential padding](docs/sequential-padding.md).
+- [Ideal-only scales and dense-interface limit](docs/ideal-oracle-scales.md), [sharper physical repair](docs/physical-repair-refinement.md), and [automatic branches and feasibility](docs/reduced-all-small-chain.md).
+- [Dense-compatible ideal chain](docs/reduced-small-chain.md), [original-chain comparison](docs/small-chain-gap.md), and [sequential padding](docs/sequential-padding.md).
 - [Transport proof](docs/transport-localization.md), [switching and scale proof](docs/scale-audit.md), [error budgets](docs/error-budgets.md), and [independent mathematical review](docs/independent-review.md).
 - [Sharp tail formalization](docs/small-entry-formalization.md), [actual padding bridge](docs/scale-formalization.md), [padding obstruction](docs/padding-barrier.md), and [second independent review](docs/second-checkpoint-review.md).
 - [Formal verification](docs/formal-verification.md): compiler outcomes, exact pins, and remaining integration work.
@@ -35,6 +39,7 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 - [Cactus sampler](docs/cactus-sampler.md), [graph-block sampler](docs/block-sampler.md), and [correlated-observation budgets](docs/block-budgets.md).
 - [Certified cycle mixtures](docs/cycle-mixtures.md), [ordinary worker baseline](docs/worker-baseline.md), and [larger synthetic commuting benchmarks](docs/commute-scaling.md).
 - [CBEI and commuting applications](docs/cbei-use-cases.md): target laws, source reconciliation, and a public synthetic example.
+- [Executable ideal chain](docs/ideal-chain-experiment.md), [same-law sampling benchmarks](docs/sampler-benchmarks.md), [exact 2×2 analysis](docs/ideal-two-by-two.md), and [fifth independent review](docs/fifth-checkpoint-review.md).
 - [Contributing](CONTRIBUTING.md): welcome to mathematical corrections, counterexamples, formal proofs, implementations, and reproducible benchmarks.
 
 ## Reproduce
@@ -51,7 +56,7 @@ python3 scripts/verify_sources.py
 
 The archived audit and numerical mixture search need NumPy. Saved mixture certificates replay using only exact standard-library arithmetic. Source verification downloads only files in the pinned manifest and checks their Git blob hashes. It does not execute upstream code.
 
-The third checkpoint passed **188 Python tests** and **154 Lean declaration audits**. The [Python receipt](reports/checkpoint-verification.json) and [Lean receipts](formal/results/) record their environments, source hashes, and exact scope.
+The fourth checkpoint passed **230 Python tests** and **232 Lean declaration audits**. The [Python receipt](reports/checkpoint-verification.json) and [Lean receipts](formal/results/) record their environments, source hashes, and exact scope.
 
 Generate the research reports:
 
@@ -68,6 +73,8 @@ python3 examples/block_factorization.py --output reports/block-factorization.jso
 python3 experiments/worker_baseline.py --output reports/worker-baseline.json
 python3 experiments/commute_scaling.py --output reports/commute-scaling.json
 python3 experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json
+python3 experiments/ideal_two_by_two.py --output reports/ideal-two-by-two.json
+python3 experiments/sampler_benchmarks.py --draws 500 --warmup 200 --repetitions 2
 ```
 
 For a first API example:
