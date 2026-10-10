@@ -1,0 +1,72 @@
+{
+  "checks": {
+    "compiler_logs": 4,
+    "no_compiled_objects": true,
+    "no_private_metadata_chat_or_client_data": true,
+    "personal_paths_removed_from_logs": true,
+    "raw_and_sanitized_hash_mapping_in_verification": true,
+    "source_bytes_exact": true,
+    "source_files": 4
+  },
+  "files": [
+    {
+      "bytes": 4707,
+      "path": "README.md",
+      "sha256": "85dfd8ca3b24a88cebfcdc3db5e3e16ac2bab53301185ca116f6f2a19d742c18"
+    },
+    {
+      "bytes": 6153,
+      "path": "formal/Math115/LatticeEmptyOutput.lean",
+      "sha256": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26"
+    },
+    {
+      "bytes": 12590,
+      "path": "formal/Math115/LatticeProfileWalk.lean",
+      "sha256": "7f42d85c7999cf00fe0d512c3c597312787edd3e69491fd85ae780430051ad8b"
+    },
+    {
+      "bytes": 24803,
+      "path": "formal/Math115/LatticeSamplerPreparation.lean",
+      "sha256": "e5d33b3c51f0709968ed257b92cd0ec8fb54244aea5e1217dd283d2b390a21b2"
+    },
+    {
+      "bytes": 8230,
+      "path": "formal/Math115/LatticeUnitStep.lean",
+      "sha256": "a17dda433f14812635b972e88a7042ebc8e94662f98753397f7256ab434b24fc"
+    },
+    {
+      "bytes": 0,
+      "path": "logs/Math115.LatticeEmptyOutput.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 767,
+      "path": "logs/Math115.LatticeProfileWalk.log",
+      "sha256": "67b23a8ffbc1f471b6d155926fd8aed0d491059b1b248d3c8ac672a71d101f42"
+    },
+    {
+      "bytes": 120,
+      "path": "logs/Math115.LatticeSamplerPreparation.log",
+      "sha256": "9b449ba4ef55f16dd6c52747c113e180a9404e01104329e48b77cb5e14a1df0a"
+    },
+    {
+      "bytes": 812,
+      "path": "logs/Math115.LatticeUnitStep.log",
+      "sha256": "af95e44880ef493c4d34651cd33d9b87f8120a2ddb48fb0c8221b46a024789d6"
+    },
+    {
+      "bytes": 2131,
+      "path": "review.json",
+      "sha256": "f27500f8cbec5a1dc39a0ab5ffe7860a4bcaeecb4e98f35ae2425cc355a2c71b"
+    },
+    {
+      "bytes": 16308,
+      "path": "verification.json",
+      "sha256": "e9a73488d772cb60ceba825ced0ab1ffc1e5137bb5e898a53f91b681d2ebb55e"
+    }
+  ],
+  "intended_public_directory": "formal/results/native-round1-evidence",
+  "schema_version": 1,
+  "scope": "Minimal public-safe historical native round-one source and ordinary compiler evidence; no compiled objects or new axiom audits.",
+  "self_hash_note": "Manifest does not list itself."
+}

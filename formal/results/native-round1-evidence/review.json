@@ -1,0 +1,44 @@
+{
+  "blockers": [],
+  "evidence_limit": "Saved local receipts and metadata replay only. No independent Lean execution, strict named axiom audit, or live remote dependency/object authentication.",
+  "private_full_review_sha256": "240714d6b3dec04279905c0824f6f734a8d9bbadd798221701efa932082ad91b",
+  "replayed_checks": {
+    "all_archived_source_bytes_unchanged": true,
+    "downloaded_artifacts": 35,
+    "frozen_overlay_sources": 84,
+    "locally_rehashed_plan_sources": 685,
+    "reused_records": 673,
+    "successful_source_closure_dependency_maps": 675,
+    "two_new_success_attempt_and_published_object_bytes_equal": true
+  },
+  "review_kind": "independent AI-agent local artifact and saved metadata review; public-safe projection",
+  "reviewed_modules": [
+    {
+      "module": "Math115.LatticeSamplerPreparation",
+      "normal_compiler_exit_code": 0,
+      "sanitized_compiler_log_sha256": "9b449ba4ef55f16dd6c52747c113e180a9404e01104329e48b77cb5e14a1df0a",
+      "source_sha256": "e5d33b3c51f0709968ed257b92cd0ec8fb54244aea5e1217dd283d2b390a21b2"
+    },
+    {
+      "module": "Math115.LatticeEmptyOutput",
+      "normal_compiler_exit_code": 0,
+      "sanitized_compiler_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26"
+    },
+    {
+      "module": "Math115.LatticeProfileWalk",
+      "normal_compiler_exit_code": 1,
+      "sanitized_compiler_log_sha256": "67b23a8ffbc1f471b6d155926fd8aed0d491059b1b248d3c8ac672a71d101f42",
+      "source_sha256": "7f42d85c7999cf00fe0d512c3c597312787edd3e69491fd85ae780430051ad8b"
+    },
+    {
+      "module": "Math115.LatticeUnitStep",
+      "normal_compiler_exit_code": 1,
+      "sanitized_compiler_log_sha256": "af95e44880ef493c4d34651cd33d9b87f8120a2ddb48fb0c8221b46a024789d6",
+      "source_sha256": "a17dda433f14812635b972e88a7042ebc8e94662f98753397f7256ab434b24fc"
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS evidence consistency; native batch itself failed",
+  "verification_sha256": "e9a73488d772cb60ceba825ced0ab1ffc1e5137bb5e898a53f91b681d2ebb55e"
+}

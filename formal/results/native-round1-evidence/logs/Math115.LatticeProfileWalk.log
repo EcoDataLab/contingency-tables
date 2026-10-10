@@ -1,0 +1,11 @@
+formal\Math115\LatticeProfileWalk.lean:196:6: error: Type mismatch
+  wordWalk_succ ?m.329 ?m.330 T bits
+has type
+  Eq.{u_1 + 1} (wordWalk ?m.329 ?m.330 (T + 1) bits)
+    (?m.329 (wordWalk ?m.329 ?m.330 T (Fin.init bits)) (bits (Fin.last T)))
+but is expected to have type
+  Eq.{1} (wordWalk (PhysicalReferenceBoolean.bitStep r c hr hc h) x (T + 1) bits)
+    (PhysicalReferenceBoolean.bitStep r c hr hc h
+      (wordWalk (PhysicalReferenceBoolean.bitStep r c hr hc h) x T (Fin.init bits)) (bits (Fin.last T)))
+formal\Math115\LatticeProfileWalk.lean:166:0: error: AddConstAsyncResult.commitConst: constant has level params [u_1] but expected []
+formal\Math115\LatticeProfileWalk.lean:202:8: error: (kernel) unknown constant 'Math115.LatticeProfileWalk.profileWalk_ofFn'

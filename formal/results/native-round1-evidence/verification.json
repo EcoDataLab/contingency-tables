@@ -1,0 +1,267 @@
+{
+  "artifact_mapping": [
+    {
+      "artifact": "formal/Math115/LatticeSamplerPreparation.lean",
+      "original_sha256": "e5d33b3c51f0709968ed257b92cd0ec8fb54244aea5e1217dd283d2b390a21b2",
+      "published_sha256": "e5d33b3c51f0709968ed257b92cd0ec8fb54244aea5e1217dd283d2b390a21b2",
+      "transform": "none; exact attempted source bytes"
+    },
+    {
+      "artifact": "logs/Math115.LatticeSamplerPreparation.log",
+      "original_sha256": "32350be7cc128ac795db6e2bbfea44796079d87d646807eaed1de4e6c7532cf9",
+      "published_sha256": "9b449ba4ef55f16dd6c52747c113e180a9404e01104329e48b77cb5e14a1df0a",
+      "replacement_count": 1,
+      "transform": "Replace personal absolute checkout prefix ending in formal\\ with formal\\; preserve all other bytes, diagnostics and line endings."
+    },
+    {
+      "artifact": "formal/Math115/LatticeEmptyOutput.lean",
+      "original_sha256": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26",
+      "published_sha256": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26",
+      "transform": "none; exact attempted source bytes"
+    },
+    {
+      "artifact": "logs/Math115.LatticeEmptyOutput.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "replacement_count": 0,
+      "transform": "Replace personal absolute checkout prefix ending in formal\\ with formal\\; preserve all other bytes, diagnostics and line endings."
+    },
+    {
+      "artifact": "formal/Math115/LatticeProfileWalk.lean",
+      "original_sha256": "7f42d85c7999cf00fe0d512c3c597312787edd3e69491fd85ae780430051ad8b",
+      "published_sha256": "7f42d85c7999cf00fe0d512c3c597312787edd3e69491fd85ae780430051ad8b",
+      "transform": "none; exact attempted source bytes"
+    },
+    {
+      "artifact": "logs/Math115.LatticeProfileWalk.log",
+      "original_sha256": "e50c63f4d86c2604bcb4959049a5f3884cbdc8c4a75584f85a98e610c1007240",
+      "published_sha256": "67b23a8ffbc1f471b6d155926fd8aed0d491059b1b248d3c8ac672a71d101f42",
+      "replacement_count": 3,
+      "transform": "Replace personal absolute checkout prefix ending in formal\\ with formal\\; preserve all other bytes, diagnostics and line endings."
+    },
+    {
+      "artifact": "formal/Math115/LatticeUnitStep.lean",
+      "original_sha256": "a17dda433f14812635b972e88a7042ebc8e94662f98753397f7256ab434b24fc",
+      "published_sha256": "a17dda433f14812635b972e88a7042ebc8e94662f98753397f7256ab434b24fc",
+      "transform": "none; exact attempted source bytes"
+    },
+    {
+      "artifact": "logs/Math115.LatticeUnitStep.log",
+      "original_sha256": "c9bab15c7a2a6933f8491cec80126381494c2b9a62b0551e6a32daa7a284b63c",
+      "published_sha256": "af95e44880ef493c4d34651cd33d9b87f8120a2ddb48fb0c8221b46a024789d6",
+      "replacement_count": 3,
+      "transform": "Replace personal absolute checkout prefix ending in formal\\ with formal\\; preserve all other bytes, diagnostics and line endings."
+    }
+  ],
+  "blocked_modules": [
+    "Math115.LatticeBoundedSampling",
+    "Math115.LatticeOuterProgram",
+    "Math115.LatticeOuterSemantics",
+    "Math115.LatticeSampler",
+    "Math115.LatticeSamplerCost",
+    "Math115.LatticeUnitOuter",
+    "Math115.LatticeUnitWalk",
+    "Math115.PublicLatticeSampler"
+  ],
+  "claims_boundary": [
+    "Preparation and EmptyOutput are fresh successful full-module compiler attempts, not prefix probes. Their downloaded attempted and published object bytes match the recorded hashes; no compiled objects are distributed here.",
+    "ProfileWalk and UnitStep failed with the preserved diagnostics; eight dependent modules were blocked. No encoded full-sampler or runtime theorem success is inferred.",
+    "No strict named axiom audit was performed for these two new success modules in this round. Normal compilation alone is not a no-sorry/approved-axioms audit or fresh environment verification.",
+    "The independent AI-agent evidence review rehashed local artifacts and replayed saved metadata; it did not execute Lean/kernel or freshly reauthenticate live remote runtime/cache/dependency bytes.",
+    "No Linux sandbox, exporter, kernel, or Comparator success, measured sampler runtime, complete numeric runtime exponent, or independent human mathematical review is claimed."
+  ],
+  "counts": {
+    "blocked": 8,
+    "completed": 675,
+    "failed": 2,
+    "new_successes": 2,
+    "planned": 685,
+    "reused": 673
+  },
+  "evidence_input_hashes": {
+    "cache_manifest_sha256": "a41737a9c205c389697ccd86f82e19e6ded0126c1d5295ea7e3a0aac01846440",
+    "canonical_plan_sha256": "404986027525ea431de944ee6626082cb698b6d8ca0564862d38ed14bea921a2",
+    "frozen_environment_sha256": "ee1e1cce2b70f9ba8cfd027f04d13380743c998cd2f3d13e209b25ffd3903cac",
+    "frozen_plan_raw_sha256": "57692d965913368adc5f710817cb2865cef74d5109cbdb5d06e8abfd20e56ba3",
+    "original_download_manifest_sha256": "26838ec06460b52279d3f24c5a0479a6fd66df2608870ed1312e424ffa832e2f",
+    "original_final_result_sha256": "6f74e9fd39e9bcad1cb83eed52d2deefc9bacbf05713ec6e831711dcbc59a9d4",
+    "original_source_freeze_receipt_sha256": "0534d7c48230af147f629292dcf316d07d611a9170a26a15dc6dbc91be684b72",
+    "private_independent_review_sha256": "240714d6b3dec04279905c0824f6f734a8d9bbadd798221701efa932082ad91b",
+    "source_plan_sha256": "2c019dd8c867d40247153d79a34d66fe41dd9ca2da65714f81133cd6076485d3"
+  },
+  "finished_at_utc": "2026-10-10T14:52:52.707722+00:00",
+  "lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "modules": [
+    {
+      "command_path_projection": [
+        "<PINNED_LEAN>/bin/lean.exe",
+        "-j2",
+        "-DautoImplicit=false",
+        "--root=<CHECKOUT>/formal",
+        "-o",
+        "<BUILD>/attempts/Math115.LatticeSamplerPreparation/a6fe60a3312844659e58831c42f13577/module.olean",
+        "-i",
+        "<BUILD>/attempts/Math115.LatticeSamplerPreparation/a6fe60a3312844659e58831c42f13577/module.ilean",
+        "<CHECKOUT>/formal/Math115/LatticeSamplerPreparation.lean"
+      ],
+      "command_projection_note": "Absolute checkout/build/toolchain prefixes replaced by role tokens; separators normalized to /. This is a readable command projection, not raw argv bytes.",
+      "compiled_objects_in_package": false,
+      "compiler_log": "logs/Math115.LatticeSamplerPreparation.log",
+      "completed_at_utc": "2026-10-10T14:51:43.988840+00:00",
+      "dependency_olean_sha256": {
+        "Math115.LatticeProfileStep": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+        "Math115.PhysicalBooleanSampler": "3b13795d4834cf621291e01847842355a020eebe183ab3c871efb107753bc36a",
+        "OAI.Combinatorics.ContingencyTables.Sampling.OriginalProfileProgram": "056c23c4e48c4776f4eb2e09c0fc7551b4bcb496cbffdcfdef8c1b99b01f524d",
+        "OAI.Combinatorics.ContingencyTables.Sampling.OuterMatrixSemantics": "6ada4e29abac9ed11bd3d52d831c3ce2dc5dd86d588f9790808973d3c041aca0",
+        "OAI.Combinatorics.ContingencyTables.Transport.BoundedProfileWalk": "73930ddd89210b6f80a056d210cefdae05c29e46d3e17ebbbaf6a118f968878f",
+        "OAI.Combinatorics.ContingencyTables.Transport.ReferenceCompletionEntries": "f45e9ef896e138ed679bf9b696c0e5ddf24ff1fee580ed517ee7d727948abd86"
+      },
+      "downloaded_attempt_and_published_olean_byte_equal": true,
+      "elapsed_seconds": 224.38210609997623,
+      "module": "Math115.LatticeSamplerPreparation",
+      "normal_compiler_exit_code": 0,
+      "olean_sha256": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2",
+      "original_receipt_sha256": "fdf4f9b2daa0c48cc08f547f68fb1285a437526a7861b01b0ee737a5a804baba",
+      "preserved_original_archive_source": {
+        "candidate_equals_archive": false,
+        "path": "research/outer-sampler/formal/Math115/LatticeSamplerPreparation.lean",
+        "sha256": "e8e951087c2a299c9ffcf5453f86636b982abd0cab50499acc6c79dbe5fe37b7"
+      },
+      "raw_command_canonical_sha256": "721557840e1f9cca68871ea27eafa168dada57a387c5e74e723577622ec6ca56",
+      "raw_compiler_log_sha256": "32350be7cc128ac795db6e2bbfea44796079d87d646807eaed1de4e6c7532cf9",
+      "reused": false,
+      "sanitized_compiler_log_sha256": "9b449ba4ef55f16dd6c52747c113e180a9404e01104329e48b77cb5e14a1df0a",
+      "source": "formal/Math115/LatticeSamplerPreparation.lean",
+      "source_closure_sha256": "104d3a469fd5295a46eb64675b47f7683889f73df0b562c561d0ede243af9cef",
+      "source_sha256": "e5d33b3c51f0709968ed257b92cd0ec8fb54244aea5e1217dd283d2b390a21b2",
+      "source_unchanged_in_recorded_attempt": true,
+      "started_at_utc": "2026-10-10T14:47:59.606694+00:00",
+      "strict_axiom_audit": "not run by round-one operator; no new audit claimed"
+    },
+    {
+      "command_path_projection": [
+        "<PINNED_LEAN>/bin/lean.exe",
+        "-j2",
+        "-DautoImplicit=false",
+        "--root=<CHECKOUT>/formal",
+        "-o",
+        "<BUILD>/attempts/Math115.LatticeEmptyOutput/9fa02059b163448bbaa15c4fb15517be/module.olean",
+        "-i",
+        "<BUILD>/attempts/Math115.LatticeEmptyOutput/9fa02059b163448bbaa15c4fb15517be/module.ilean",
+        "<CHECKOUT>/formal/Math115/LatticeEmptyOutput.lean"
+      ],
+      "command_projection_note": "Absolute checkout/build/toolchain prefixes replaced by role tokens; separators normalized to /. This is a readable command projection, not raw argv bytes.",
+      "compiled_objects_in_package": false,
+      "compiler_log": "logs/Math115.LatticeEmptyOutput.log",
+      "completed_at_utc": "2026-10-10T14:52:42.380175+00:00",
+      "dependency_olean_sha256": {
+        "Math115.LatticeSamplerPreparation": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2"
+      },
+      "downloaded_attempt_and_published_olean_byte_equal": true,
+      "elapsed_seconds": 58.32695649995003,
+      "module": "Math115.LatticeEmptyOutput",
+      "normal_compiler_exit_code": 0,
+      "olean_sha256": "0c8c7d907fcc37e5012849a17c73d249fcdeebf334641242a7a3ce9250c2a6b6",
+      "original_receipt_sha256": "370cda71861b3257c6db2fc1e1d615c8aa6e038d1ee5e684a9f1bdc89c365e49",
+      "preserved_original_archive_source": {
+        "candidate_equals_archive": true,
+        "path": "research/outer-sampler/formal/Math115/LatticeEmptyOutput.lean",
+        "sha256": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26"
+      },
+      "raw_command_canonical_sha256": "38ddfd523b0c8068b7bd3b4e64b0ca154fa0751ee20954da7d72df6009e58c2c",
+      "raw_compiler_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reused": false,
+      "sanitized_compiler_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "formal/Math115/LatticeEmptyOutput.lean",
+      "source_closure_sha256": "6d66a698c49ed8733b1f28fd9a2199deeffddc6fafdb5a9c1c23ff8d9e07b933",
+      "source_sha256": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26",
+      "source_unchanged_in_recorded_attempt": true,
+      "started_at_utc": "2026-10-10T14:51:44.053184+00:00",
+      "strict_axiom_audit": "not run by round-one operator; no new audit claimed"
+    },
+    {
+      "command_path_projection": [
+        "<PINNED_LEAN>/bin/lean.exe",
+        "-j2",
+        "-DautoImplicit=false",
+        "--root=<CHECKOUT>/formal",
+        "-o",
+        "<BUILD>/attempts/Math115.LatticeProfileWalk/55975f8d08154a52bcbf237c94988db0/module.olean",
+        "-i",
+        "<BUILD>/attempts/Math115.LatticeProfileWalk/55975f8d08154a52bcbf237c94988db0/module.ilean",
+        "<CHECKOUT>/formal/Math115/LatticeProfileWalk.lean"
+      ],
+      "command_projection_note": "Absolute checkout/build/toolchain prefixes replaced by role tokens; separators normalized to /. This is a readable command projection, not raw argv bytes.",
+      "compiler_log": "logs/Math115.LatticeProfileWalk.log",
+      "completed_at_utc": "2026-10-10T14:51:40.868797+00:00",
+      "dependency_olean_sha256": {
+        "Math115.LatticeProfileStep": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+        "OAI.Combinatorics.ContingencyTables.Transport.BoundedProfileWalk": "73930ddd89210b6f80a056d210cefdae05c29e46d3e17ebbbaf6a118f968878f"
+      },
+      "elapsed_seconds": 221.28091940004379,
+      "module": "Math115.LatticeProfileWalk",
+      "normal_compiler_exit_code": 1,
+      "original_receipt_sha256": "53ee433a9abe5003ccda706b6af540c6957313e926afaab68c04fa2f2cdb2c3d",
+      "preserved_original_archive_source": {
+        "candidate_equals_archive": false,
+        "path": "research/outer-sampler/formal/Math115/LatticeProfileWalk.lean",
+        "sha256": "2516c2f3965019fd0b58dfccb17200c551c3b570ecd137bac694efc677f269e3"
+      },
+      "raw_command_canonical_sha256": "11ae7b3fe5fb3ce192aecbaca50353402ef1f31c4637aac1a47bbe27869bb8db",
+      "raw_compiler_log_sha256": "e50c63f4d86c2604bcb4959049a5f3884cbdc8c4a75584f85a98e610c1007240",
+      "reused": false,
+      "sanitized_compiler_log_sha256": "67b23a8ffbc1f471b6d155926fd8aed0d491059b1b248d3c8ac672a71d101f42",
+      "source": "formal/Math115/LatticeProfileWalk.lean",
+      "source_closure_sha256": "b25d3249e5a63e7588eace798f100fba43facdae40d7c9adf793f0b6a972c758",
+      "source_sha256": "7f42d85c7999cf00fe0d512c3c597312787edd3e69491fd85ae780430051ad8b",
+      "source_unchanged_in_recorded_attempt": true,
+      "started_at_utc": "2026-10-10T14:47:59.587840+00:00",
+      "strict_axiom_audit": "not run by round-one operator; no new audit claimed"
+    },
+    {
+      "command_path_projection": [
+        "<PINNED_LEAN>/bin/lean.exe",
+        "-j2",
+        "-DautoImplicit=false",
+        "--root=<CHECKOUT>/formal",
+        "-o",
+        "<BUILD>/attempts/Math115.LatticeUnitStep/f499484317084f84ab802314bd582684/module.olean",
+        "-i",
+        "<BUILD>/attempts/Math115.LatticeUnitStep/f499484317084f84ab802314bd582684/module.ilean",
+        "<CHECKOUT>/formal/Math115/LatticeUnitStep.lean"
+      ],
+      "command_projection_note": "Absolute checkout/build/toolchain prefixes replaced by role tokens; separators normalized to /. This is a readable command projection, not raw argv bytes.",
+      "compiler_log": "logs/Math115.LatticeUnitStep.log",
+      "completed_at_utc": "2026-10-10T14:52:52.256885+00:00",
+      "dependency_olean_sha256": {
+        "Math115.LatticeProfileStep": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+        "Math115.PhysicalBooleanSampler": "3b13795d4834cf621291e01847842355a020eebe183ab3c871efb107753bc36a"
+      },
+      "elapsed_seconds": 71.3420869000256,
+      "module": "Math115.LatticeUnitStep",
+      "normal_compiler_exit_code": 1,
+      "original_receipt_sha256": "47c9dd687232c11b02aa4844db22c9f7362dd88a850ab4ce4ff4bf1b7f2a9873",
+      "preserved_original_archive_source": {
+        "candidate_equals_archive": false,
+        "path": "research/outer-sampler/formal/Math115/LatticeUnitStep.lean",
+        "sha256": "7a52db6059d9eaf875e1beff59d39807bbb3cb7c568a36dcd04882b02602cd19"
+      },
+      "raw_command_canonical_sha256": "077da56fbdd74fc6e9240ecb132df3b0388b5ef6b58f55ea399e1317cc14df1c",
+      "raw_compiler_log_sha256": "c9bab15c7a2a6933f8491cec80126381494c2b9a62b0551e6a32daa7a284b63c",
+      "reused": false,
+      "sanitized_compiler_log_sha256": "af95e44880ef493c4d34651cd33d9b87f8120a2ddb48fb0c8221b46a024789d6",
+      "source": "formal/Math115/LatticeUnitStep.lean",
+      "source_closure_sha256": "934f10938de9fb1387c9015c4728871d7d72e5313f818c5f892cfa613eeb0cab",
+      "source_sha256": "a17dda433f14812635b972e88a7042ebc8e94662f98753397f7256ab434b24fc",
+      "source_unchanged_in_recorded_attempt": true,
+      "started_at_utc": "2026-10-10T14:51:40.914756+00:00",
+      "strict_axiom_audit": "not run by round-one operator; no new audit claimed"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Source-bound ordinary native Windows x86_64 Lean compilation evidence plus independent AI-agent local artifact review. This immutable historical subset is not a latest-round status report.",
+  "source_commit": "4143769696d63005efd9ea5257ea4069b145e16d",
+  "status": "historical round-one native batch failed; two new ordinary full-module compilation successes",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+}
