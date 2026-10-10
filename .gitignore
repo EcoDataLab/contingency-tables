@@ -56,3 +56,4 @@ overview.pdf
 !reports/environment-runner-fix/*.log
 !reports/hosted-final-stage/*.log
 !formal/results/linux-focused-cef573d-failure/*.log
+!formal/results/linux-focused-df469a5/*.log

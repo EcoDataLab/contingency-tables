@@ -1,0 +1,116 @@
+{
+  "id": 114151225264,
+  "run_id": 38030825047,
+  "workflow_name": "Linux focused verification at df469a50e32c652093bac17a031b5c2ae6bd8af7",
+  "head_branch": "verify-stage-final-2026-10-10",
+  "run_url": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/runs/38030825047",
+  "run_attempt": 1,
+  "node_id": "CR_kwDOVBc88c8AAAAak_F3sA",
+  "head_sha": "df469a50e32c652093bac17a031b5c2ae6bd8af7",
+  "url": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/jobs/114151225264",
+  "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/38030825047/job/114151225264",
+  "status": "completed",
+  "conclusion": "success",
+  "created_at": "2026-10-10T06:24:34Z",
+  "started_at": "2026-10-10T06:24:36Z",
+  "completed_at": "2026-10-10T06:58:29Z",
+  "name": "verify",
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 1,
+      "started_at": "2026-10-10T06:24:36Z",
+      "completed_at": "2026-10-10T06:24:37Z"
+    },
+    {
+      "name": "Check out the selected commit without retained credentials",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 2,
+      "started_at": "2026-10-10T06:24:37Z",
+      "completed_at": "2026-10-10T06:24:39Z"
+    },
+    {
+      "name": "Record the fresh environment and exact source inputs",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 3,
+      "started_at": "2026-10-10T06:24:39Z",
+      "completed_at": "2026-10-10T06:24:39Z"
+    },
+    {
+      "name": "Require the actual strict Linux sandbox before downloading proof dependencies",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 4,
+      "started_at": "2026-10-10T06:24:39Z",
+      "completed_at": "2026-10-10T06:24:39Z"
+    },
+    {
+      "name": "Install the pinned Lean toolchain and trusted Mathlib cache locally",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 5,
+      "started_at": "2026-10-10T06:24:39Z",
+      "completed_at": "2026-10-10T06:26:39Z"
+    },
+    {
+      "name": "Build the pinned Comparator, exporter, and strict Landrun adapter",
+      "status": "completed",
+      "conclusion": "skipped",
+      "number": 6,
+      "started_at": "2026-10-10T06:26:39Z",
+      "completed_at": "2026-10-10T06:26:39Z"
+    },
+    {
+      "name": "Run the selected verification scope",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 7,
+      "started_at": "2026-10-10T06:26:39Z",
+      "completed_at": "2026-10-10T06:58:23Z"
+    },
+    {
+      "name": "Record the outcome without upgrading the verification claim",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 8,
+      "started_at": "2026-10-10T06:58:23Z",
+      "completed_at": "2026-10-10T06:58:23Z"
+    },
+    {
+      "name": "Preserve logs and provenance even when a check fails",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 9,
+      "started_at": "2026-10-10T06:58:23Z",
+      "completed_at": "2026-10-10T06:58:27Z"
+    },
+    {
+      "name": "Post Check out the selected commit without retained credentials",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 18,
+      "started_at": "2026-10-10T06:58:27Z",
+      "completed_at": "2026-10-10T06:58:27Z"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "number": 19,
+      "started_at": "2026-10-10T06:58:27Z",
+      "completed_at": "2026-10-10T06:58:27Z"
+    }
+  ],
+  "check_run_url": "https://api.github.com/repos/EcoDataLab/contingency-tables/check-runs/114151225264",
+  "labels": [
+    "ubuntu-24.04"
+  ],
+  "runner_id": 1000000182,
+  "runner_name": "GitHub Actions 1000000182",
+  "runner_group_id": 0,
+  "runner_group_name": "GitHub Actions"
+}

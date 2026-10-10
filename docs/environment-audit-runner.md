@@ -62,6 +62,9 @@ Its exact native config is private because it contains execution paths.
 
 The [frozen native full-project audit](../formal/results/environment-aggregate-1236/README.md)
 passed and retains its complete compressed report and six headline closures.
+The [fresh Linux stage reproduction](../formal/results/linux-focused-df469a5/README.md)
+also passed at the frozen `df469a5` source checkpoint, with its complete hosted
+input inventories, provider artifact digest, and unchanged full report retained.
 Every later source or environment state requires a separate successful audit
 before its exhaustive declaration or theorem totals are promoted into public claims. Publishing a receipt requires
 separate projection/review of private paths and runtime provenance. A small

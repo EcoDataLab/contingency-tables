@@ -2,6 +2,20 @@
 
 These Linux runs were initiated and assessed by the same AI-assisted project workflow. “Independent” compilation refers to a fresh hosted environment and source closure, not outside human reproduction or peer review. The native Windows checks likewise used project-owned hardware; see [their provenance and scope](windows-verification.md).
 
+The [completed stage reproduction](../formal/results/linux-focused-df469a5/README.md)
+passed at `df469a50e32c652093bac17a031b5c2ae6bd8af7`, tagged
+`verify-stage-final-2026-10-10`: ordinary focused compilation, all 1,236 named
+audits, and the full compiled-environment audit passed in
+[run 38030825047](https://github.com/EcoDataLab/contingency-tables/actions/runs/38030825047).
+The report contains 22,710 selected declarations, 16,549 theorem constants,
+11,849 imported modules, and six complete headline dependency closures.
+The downloaded artifact was digest-verified and its full report is retained.
+This covers the stage's integrated proof sources with trusted official
+dependency caches; it does not establish strict Comparator replay or a
+complete encoded outer sampler. The [earlier inventory-runner
+failure](../formal/results/linux-focused-cef573d-failure/README.md) remains
+failed and archived. Later entries below are historical checkpoints.
+
 The **Linux formal verification** GitHub Actions workflow runs on explicit `workflow_dispatch` requests or a pushed `verify-*` tag. A verification tag runs the focused scope at that exact commit; manual dispatch permits all three scopes. Choose the revision and retain its run URL and uploaded evidence. It uses the standard `ubuntu-24.04` VM, read-only repository permissions, checkout without retained credentials, no proof-artifact cache, and a six-hour job ceiling. Ordinary branch pushes and pull requests do not trigger this expensive workflow. Maintainers can create a named checkpoint with `git tag verify-<checkpoint> <commit>` and push that tag; they should inspect the resulting run before reporting a pass. The tagged commit must contain this tag-trigger version of the workflow; tagging an older commit cannot add a trigger to its historical workflow.
 
 | Scope | Work performed | Successful result means |

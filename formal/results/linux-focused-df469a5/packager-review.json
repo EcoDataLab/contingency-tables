@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "passed_code_review_for_private_packaging_pending_actual_readback",
+  "reviewed_at_utc": "2026-10-10T07:01:27.573347+00:00",
+  "packager_sha256": "4f1882aac79895ed94b52c29e9abf9338ec189d33c56cd098af4eaf65ce2e614",
+  "scope": "Offline source review of final hosted-artifact packager only; no package execution or actual-artifact verification claimed",
+  "blockers": [],
+  "checked_gates": {
+    "provider_association": "Exact reviewed commit/repository/workflow URLs; completed successful run and corresponding successful Ubuntu job; run attempt and focused artifact name/head association.",
+    "zip_integrity": "Provider SHA-256 and exact provider byte length required; bounded member count/uncompressed size; canonical safe member paths; duplicate file/encryption/symlink rejection; explicit prefixes.",
+    "failed_run_boundary": "Failed/pending run or job, failed required step, non-passed focused outcome, failed helper/compiler phase, timeout or unexpected diagnostics cannot produce a passed package.",
+    "source_and_named_audits": "Owned source inventory and every digest verified from immutable commit; exact reviewed strict checker/policy; exactly one complete 1236 ordered named-axiom block and verification start/end.",
+    "compiled_environment": "Exact committed runner/helper/driver and immutable headline/inclusion lists; strict JSON/report validation; actual counts compared with receipt instead of native assumptions.",
+    "snapshots_and_objects": "Compile/audit before-after equality; canonical input digest; complete configured root-state maps including helper directory; all pins and compiler/runner/helper/driver hashes checked; imported path/name/digest closure bound to recorded snapshots.",
+    "helper_binary_delivery": "Every delivered helper-library member bound to audit snapshot; actual ResearchAudit/EnvironmentAudit.olean bytes mandatory and must match helper-object digest.",
+    "claims_receipt_shape": "Passed exact-commit receipt with standard axioms, ordered records, owned source hashes and hashed AxiomAudit.lean/axiom-audit.log is compatible with the claims-ledger focused receipt reader.",
+    "lossless_delivery": "Complete original text bytes retained; deterministic gzip performs immediate byte-equal decompression check; byte-identical members deduplicated with original hashes/lengths; excluded binary identities retained.",
+    "publication_boundary": "Writes only a new private .local output; no network/compiler/build/Git mutation. Private successful package remains pending independent root/actual-artifact readback."
+  },
+  "conditions_for_publication": [
+    "Keep the supplied metadata and downloaded ZIP immutable during packaging; the packager hashes ZIP bytes and subsequently opens the same file for member reads. Reconfirm the ZIP digest during actual readback.",
+    "Independently verify every archive-member mapping against the authenticated ZIP, including deduplicated targets, gzip decompression, original byte lengths/digests and excluded binary inventory after derived files are written.",
+    "Add public-safe run/job/artifact metadata sidecars with provenance/projection information and the exact packager source sidecar. The script records their original metadata digests but does not itself emit those sidecars; add them before sealing the public artifact manifest.",
+    "Perform public path/credential hygiene review on the actual emitted bytes; this source review cannot certify unseen artifact payloads."
+  ],
+  "limitations": "No actual Linux count, successful run, provider metadata, ZIP contents or output receipt is certified by this code review alone. Separate authenticated artifact intake and post-packaging readback remain required.",
+  "actions": {
+    "code_edits": false,
+    "fixtures": false,
+    "tests": false,
+    "Lean_or_builds": false,
+    "Git_commands": false,
+    "network": false,
+    "public_edits": false
+  }
+}

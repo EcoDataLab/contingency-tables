@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "review_kind": "bounded independent AI-agent read-only final release handoff/document scope review",
+  "document_sha256": {
+    "README.md": "ae3fef963ac9286a2e33e958c40eb1855ffa0c873abb7095cbbf15a015d609e4",
+    "docs/status.md": "898e35b379088c29388dc1d9712601d3fb802599380ecddf176d306fe16102c1",
+    "docs/handoff.md": "ff20d4980952d87a39ca33877db7f3e97916f31c7eaeab5044ce123046f9db11",
+    "docs/formal-verification.md": "1af263e610168a9d337c9df4120e7a5f96ac3800e51cebc2520965803219ba0f",
+    "docs/linux-verification.md": "1a66d1bc85698ca6bf7714b8af7e79fc1e913951bfce3445c246e0827acf500c",
+    "docs/environment-audit-runner.md": "e3557bd30e0b8ff1a7f4b36bcdcb6469aa5a6b0bf89c1e7338958961f72aa4a3",
+    "docs/claims-and-evidence.md": "5e9cbb092a1f1991cf7082cbe9cb91a4690b3911b08499b8459087c17e137755",
+    "formal/results/linux-focused-df469a5/README.md": "9611f5f3fc98d70d6c7d5f48a8a95b36b29b7365d52e2499a5aa0657c7334fd2"
+  },
+  "immutable_result_bindings": {
+    "verification.json": "d38555693a508e9bd811f62dab971b0a7cc3f4dd18d88357b69d8709dc5795b8",
+    "provider-run.json": "1d0bbb32fed4620c9f713a21402dbce53cb06809387d441f0e107107fe637d4a",
+    "provider-job.json": "e316f2fb9333738416fc5862b907d53b0257485f2ddf8d16521d606e2d5cd158",
+    "provider-artifact.json": "4f9ceb28dcbb49b66b67f8117d6c2e5349605477ea69fceb9002ad5254928c75"
+  },
+  "result_source_checkpoint": "df469a50e32c652093bac17a031b5c2ae6bd8af7",
+  "result_run_id": 38030825047,
+  "result_counts": {
+    "named_selected_audits": 1236,
+    "declarations": 22710,
+    "theorems": 16549,
+    "headlines": 6,
+    "imported_modules": 11849
+  },
+  "checks": {
+    "final_Linux_pass_replaced_stale_running_claims": true,
+    "prior_cef573d_failure_preserved_not_retroactively_upgraded": true,
+    "1236_named_audits_separate_from22710_selected_declarations_and16549_theorems": true,
+    "six_headline_closures_and11849_imported_modules_distinguished": true,
+    "generated_private_upstream_declarations_not_new_theorem_counts": true,
+    "official_caches_OS_loader_Python_and_compiler_trust_retained": true,
+    "no_Comparator_full_encoded_sampler_or_numerical_runtime_claim": true,
+    "AI_agent_review_not_outside_human_review": true,
+    "historical_receipt_filename_links_not_renamed": true,
+    "reproduction_commands_repo_local_pinned_tools_or_reviewed_wrappers": true,
+    "hypothesis_reading_guide_unchanged_and_precise_against_compiled_headlines": true,
+    "local_links_exist_except_two_explicit_forthcoming_result_review_assets": true,
+    "verification_and_provider_metadata_immutable": true,
+    "project_focused_public_prose": true
+  },
+  "intentionally_forthcoming_assets": [
+    "formal/results/linux-focused-df469a5/manifest.json",
+    "formal/results/linux-focused-df469a5/review.json"
+  ],
+  "blockers": [],
+  "publication_boundary": "The two intentionally forthcoming review/manifest assets must be supplied by the separate actual-artifact reviewer/root before publication. This document review does not replace that artifact review.",
+  "limits": [
+    "No new research, mathematics, compiler/build/test/network or Git mutation, and no source/document edit.",
+    "Actual downloaded artifact audit and environment replay are owned by a separate reviewer; this review checks prose and recorded scope.",
+    "Fresh Linux success is tied to exact df469a5 source/verification inputs; later changes require their own evidence."
+  ],
+  "local_link_check": {
+    "checked_occurrences": 372,
+    "missing_unplanned_targets": 0,
+    "two_linux_result_review_manifest_links_intentionally_forthcoming": true,
+    "historical_public_receipt_filenames_not_renamed": true
+  }
+}

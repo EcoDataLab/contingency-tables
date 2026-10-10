@@ -22,6 +22,13 @@ The [status ledger](status.md) records current verification results and the
 The literal outer sampler, numerical complete runtime degree, and strict
 Comparator replay remain open.
 
+The [fresh Linux stage receipt](../formal/results/linux-focused-df469a5/README.md)
+separately reproduces the complete focused build, 1,236 named audits, and full
+environment audit at `df469a5`. Its overlapping counts are not additional
+results. The frozen claims ledger continues to reference its original qualified
+receipts; this reproduction and its public artifact are additional evidence for
+the same active proof sources.
+
 `python3 scripts/claims_ledger.py` validates the ledger and renders the README
 claim cards and named-audit counts. `--write-readme` replaces only the marked
 section, `--check-readme` detects stale generated content, and `--json` emits

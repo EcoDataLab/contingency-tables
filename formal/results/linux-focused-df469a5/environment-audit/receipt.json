@@ -1,0 +1,84 @@
+{
+  "artifact_inventory_files": 69797,
+  "audit_lean_path": "/home/runner/work/contingency-tables/contingency-tables/.local/environment-audits/focused-GMHqEQ0C/attempt/helper-lib:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/.tools/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean",
+  "before_after_canonical_sha256": "76dd4f62287773f130191f656175a331557596942318ef52c9a2b5480d0bfba4",
+  "compiler_prefix_check": {
+    "argv": [
+      "/home/runner/work/contingency-tables/contingency-tables/.tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+      "--print-prefix"
+    ],
+    "elapsed_seconds": 0.06424471300010737,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "9ca5b6d6d3a788f2e90ff65d5c0660f9491cdcb8c96370602f46bd478269e627",
+    "timed_out": false
+  },
+  "compiler_version": "Lean (version 4.34.1, x86_64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_version_check": {
+    "argv": [
+      "/home/runner/work/contingency-tables/contingency-tables/.tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+      "--version"
+    ],
+    "elapsed_seconds": 0.06441058300015357,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+    "timed_out": false
+  },
+  "config_sha256": "4d0e4b5876cc1ef75d6c0f9fcc190ad336c99b258518abf7844bb8df91847426",
+  "controlled_environment": {
+    "LEAN_NUM_THREADS": "2",
+    "LEAN_PATH": "/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/formal/.lake/build/lib/lean:/home/runner/work/contingency-tables/contingency-tables/.tools/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean",
+    "PATH_prefix": "/home/runner/work/contingency-tables/contingency-tables/.tools/elan/toolchains/leanprover--lean4---v4.34.1/bin",
+    "removed_overrides": [
+      "ELAN_TOOLCHAIN",
+      "PATH"
+    ]
+  },
+  "counts": {
+    "declarations": 22710,
+    "headlines": 6,
+    "imported_modules": 11849,
+    "theorems": 16549
+  },
+  "driver_sha256": "3ed628bb1a61e7c23f6325a835dc4c7fc596280d0bc21fcf0fbcb2a80464abf4",
+  "environment_audit": {
+    "argv": [
+      "/home/runner/work/contingency-tables/contingency-tables/.tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+      "-j2",
+      "-DautoImplicit=false",
+      "/home/runner/work/contingency-tables/contingency-tables/.local/environment-audits/focused-GMHqEQ0C/attempt/Audit.lean"
+    ],
+    "elapsed_seconds": 251.6969760720001,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "bf0fa0e2dc770358b783ff5526e35f0c14da2adb866677bab25d57f62f5a62b6",
+    "timed_out": false
+  },
+  "finished_at_utc": "2026-10-10T06:58:23.077719+00:00",
+  "helper_compile": {
+    "argv": [
+      "/home/runner/work/contingency-tables/contingency-tables/.tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+      "-j2",
+      "-DautoImplicit=false",
+      "--root=/home/runner/work/contingency-tables/contingency-tables/.local/environment-audits/focused-GMHqEQ0C/attempt/helper-source",
+      "-o",
+      "/home/runner/work/contingency-tables/contingency-tables/.local/environment-audits/focused-GMHqEQ0C/attempt/helper-lib/ResearchAudit/EnvironmentAudit.olean",
+      "/home/runner/work/contingency-tables/contingency-tables/.local/environment-audits/focused-GMHqEQ0C/attempt/helper-source/ResearchAudit/EnvironmentAudit.lean"
+    ],
+    "elapsed_seconds": 1.3673785559999487,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  "helper_object_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581",
+  "input_files": 1181,
+  "platform_loader_boundary": "Known loader override variables cleared; PATH contains only pinned compiler directory. System loader, OS libraries, Python interpreter/stdlib and platform services remain trusted; this is an import/compiler input audit, not an OS sandbox.",
+  "resolved_import_closure_sha256": "899cb3c3b45f225897b75ed994a886702153f19d9f26daf476a1207101a2c8d9",
+  "runner_sha256": "c446c9ce5e8e3bad74dea076ee59769259452762487edbd3bd307bb7cfb6306c",
+  "schema_version": 1,
+  "scope": "Fresh current Lake-built Math115 import closure; complete compiled declaration/theorem enumeration in project origins and exact headline closure. Dependency/toolchain caches are trusted and hashed before and after.",
+  "started_at_utc": "2026-10-10T06:53:07.290682+00:00",
+  "status": "passed_compiled_environment_audit"
+}

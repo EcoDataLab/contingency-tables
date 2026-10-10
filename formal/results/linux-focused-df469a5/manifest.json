@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "status": "published_bundle_sealed_after_independent_review",
+  "repository_commit": "df469a50e32c652093bac17a031b5c2ae6bd8af7",
+  "scope": "Fresh hosted Linux focused compilation, 1236 named audits, and full selected environment audit; no Comparator or complete encoded sampler/runtime claim.",
+  "files": {
+    "AxiomAudit.lean": {
+      "sha256": "75523df89d2df8d7c8fd9a664b47b6c07a979ba1e9318a07ebed354379375c0e",
+      "bytes": 84610
+    },
+    "EnvironmentAudit.lean": {
+      "sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "bytes": 5713
+    },
+    "README.md": {
+      "sha256": "9611f5f3fc98d70d6c7d5f48a8a95b36b29b7365d52e2499a5aa0657c7334fd2",
+      "bytes": 5505
+    },
+    "archive-member-map.json": {
+      "sha256": "fe087f18aad758812828121f17dd0bd903655fd4f97eae6c85264e57f59f07b1",
+      "bytes": 6776
+    },
+    "axiom-audit.log": {
+      "sha256": "0e7710d0302931a6f612912cedb8542ffd6718d4085c15c54da0b7e15d8302c2",
+      "bytes": 135320
+    },
+    "bootstrap-lean.log": {
+      "sha256": "7805774272cae9c01ae066759507108345697c468656c40c4f1b89d274a1294e",
+      "bytes": 10199
+    },
+    "environment-audit/Audit.lean": {
+      "sha256": "3ed628bb1a61e7c23f6325a835dc4c7fc596280d0bc21fcf0fbcb2a80464abf4",
+      "bytes": 34723
+    },
+    "environment-audit/audit-after.json.gz": {
+      "sha256": "bc4ea8a1e00e420c7586a362edad3c81c65eb6d1cbc0c34356ed2e26836f8f04",
+      "bytes": 3198686
+    },
+    "environment-audit/compile-after.json.gz": {
+      "sha256": "a32d9ecf2fe06439dfe89dc914fd33ef1c8573fe35f88b7d0c1edfc9492c6596",
+      "bytes": 3198471
+    },
+    "environment-audit/compiler-prefix.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "environment-audit/compiler-prefix.stdout": {
+      "sha256": "9ca5b6d6d3a788f2e90ff65d5c0660f9491cdcb8c96370602f46bd478269e627",
+      "bytes": 107
+    },
+    "environment-audit/compiler-version.stdout": {
+      "sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "bytes": 106
+    },
+    "environment-audit/environment-audit.stdout.gz": {
+      "sha256": "7e72b4599dafc9a9607d275d52585af0e78fe9d53f7a6e4e4d50bc4c8f635995",
+      "bytes": 14367950
+    },
+    "environment-audit/frozen-config.json": {
+      "sha256": "71f564b458aa71fea4a357ea42c91a0e378a7275b17efc54e13ccf53aa1c4e3f",
+      "bytes": 499842
+    },
+    "environment-audit/helper-source/ResearchAudit/EnvironmentAudit.lean": {
+      "sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "bytes": 5713
+    },
+    "environment-audit/imported-object-closure.json.gz": {
+      "sha256": "04eb784a9c37bc4cfe7da3f7cf92f32c45d9fda527a9efdda2dc948e2688d485",
+      "bytes": 641584
+    },
+    "environment-audit/receipt.json": {
+      "sha256": "288ebae5b83f7d0cb5b9ed17b977a361c94e2b7b1ae0ea100ed810a33e8902f6",
+      "bytes": 6836
+    },
+    "environment.json": {
+      "sha256": "14b88d80281cb1f0732c71b1648ff4fbdd91ecf04e8c5c5d878ae3e7c78a0699",
+      "bytes": 20622
+    },
+    "original-config.json": {
+      "sha256": "4d0e4b5876cc1ef75d6c0f9fcc190ad336c99b258518abf7844bb8df91847426",
+      "bytes": 499842
+    },
+    "outcome.json": {
+      "sha256": "136498053f8b28e364bfa1962cc2b10704c71d8eb4797607db595878461a8312",
+      "bytes": 524
+    },
+    "package.py": {
+      "sha256": "4f1882aac79895ed94b52c29e9abf9338ec189d33c56cd098af4eaf65ce2e614",
+      "bytes": 19818
+    },
+    "packager-review.json": {
+      "sha256": "909389bb3d4b883383945cb76ddcad287a5b04a82119ab65c0f7647befc4af1f",
+      "bytes": 3949
+    },
+    "provider-artifact.json": {
+      "sha256": "4f9ceb28dcbb49b66b67f8117d6c2e5349605477ea69fceb9002ad5254928c75",
+      "bytes": 831
+    },
+    "provider-job.json": {
+      "sha256": "e316f2fb9333738416fc5862b907d53b0257485f2ddf8d16521d606e2d5cd158",
+      "bytes": 3851
+    },
+    "provider-run.json": {
+      "sha256": "1d0bbb32fed4620c9f713a21402dbce53cb06809387d441f0e107107fe637d4a",
+      "bytes": 14790
+    },
+    "review.json": {
+      "sha256": "720bd48a0f8494985522911abccd5aaaf49e3430c4a3baf55e0d95ac7319821b",
+      "bytes": 9380
+    },
+    "run_environment_audit.py": {
+      "sha256": "c446c9ce5e8e3bad74dea076ee59769259452762487edbd3bd307bb7cfb6306c",
+      "bytes": 22439
+    },
+    "verification.json": {
+      "sha256": "d38555693a508e9bd811f62dab971b0a7cc3f4dd18d88357b69d8709dc5795b8",
+      "bytes": 234380
+    },
+    "verification.log": {
+      "sha256": "1b4fe9c74a9f54777812b2675799d08c45d65edfbcade270f0ed64b7e5a60e54",
+      "bytes": 207183
+    }
+  },
+  "self_exclusion": "manifest.json is the only bundle file excluded from its own file map."
+}

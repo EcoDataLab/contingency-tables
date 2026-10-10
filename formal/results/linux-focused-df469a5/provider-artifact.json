@@ -1,0 +1,20 @@
+{
+  "id": 11662172536,
+  "node_id": "MDg6QXJ0aWZhY3QxMTY2MjE3MjUzNg==",
+  "name": "math115-linux-focused-38030825047-1",
+  "size_in_bytes": 27968975,
+  "url": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/artifacts/11662172536",
+  "archive_download_url": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/artifacts/11662172536/zip",
+  "expired": false,
+  "digest": "sha256:093069d997afd8355fd35dd0130f56ff000ab61ec931e89593ce3737f8dee4d5",
+  "created_at": "2026-10-10T06:58:27Z",
+  "updated_at": "2026-10-10T06:58:27Z",
+  "expires_at": "2026-11-09T06:58:23Z",
+  "workflow_run": {
+    "id": 38030825047,
+    "repository_id": 1410809073,
+    "head_repository_id": 1410809073,
+    "head_branch": "verify-stage-final-2026-10-10",
+    "head_sha": "df469a50e32c652093bac17a031b5c2ae6bd8af7"
+  }
+}
