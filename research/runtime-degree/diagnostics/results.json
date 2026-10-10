@@ -1,0 +1,161 @@
+{
+  "upstream_repo": "https://github.com/openai/math",
+  "upstream_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "mathlib_repo": "https://github.com/leanprover-community/mathlib4",
+  "mathlib_pin": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "compiler_version": "leanprover/lean4:v4.34.1",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "numeric_complete_sampler_degree": null,
+  "normal_build_completed": false,
+  "independent_audit_completed": false,
+  "diagnostics": [
+    {
+      "attempt": "FreshBitDegreeBounds-attempt-1",
+      "module": "FreshBitDegreeBounds",
+      "log": "diagnostics/FreshBitDegreeBounds-attempt-1.log",
+      "returncode": 1,
+      "source_sha256_before": "b0be6b51a0611735ea2555e5193eab6a79bff6b98c61ec755492be0cd3da6048",
+      "source_sha256_after": "b0be6b51a0611735ea2555e5193eab6a79bff6b98c61ec755492be0cd3da6048",
+      "compiler_version": "leanprover/lean4:v4.34.1",
+      "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "lean_options": [
+        "-j2",
+        "-DautoImplicit=false"
+      ],
+      "imported_objects": [
+        {
+          "module": "ResearchBounds.TreeDegreeBounds",
+          "object_present": true,
+          "object_sha256": "44a4292eb5336f052462943b35faf72b861d01f093871fce047f619c80221370"
+        },
+        {
+          "module": "OAI.Combinatorics.MatchingCount.Complexity.OnlineWordCost",
+          "object_present": false
+        }
+      ],
+      "output_object_sha256": null,
+      "status": "diagnostic failed"
+    },
+    {
+      "attempt": "PolynomialCompilerDegree-attempt-1",
+      "module": "PolynomialCompilerDegree",
+      "log": "diagnostics/PolynomialCompilerDegree-attempt-1.log",
+      "returncode": 1,
+      "source_sha256_before": "b7286537ece5de807a9c09c3f07635f2dcea42c50452690c139fb040bf2e883e",
+      "source_sha256_after": "b7286537ece5de807a9c09c3f07635f2dcea42c50452690c139fb040bf2e883e",
+      "compiler_version": "leanprover/lean4:v4.34.1",
+      "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "lean_options": [
+        "-j2",
+        "-DautoImplicit=false"
+      ],
+      "imported_objects": [
+        {
+          "module": "ResearchBounds.TreeDegreeBounds",
+          "object_present": true,
+          "object_sha256": "44a4292eb5336f052462943b35faf72b861d01f093871fce047f619c80221370"
+        }
+      ],
+      "output_object_sha256": null,
+      "status": "diagnostic failed"
+    },
+    {
+      "attempt": "TreeDegreeBounds-attempt-1",
+      "module": "TreeDegreeBounds",
+      "log": "diagnostics/TreeDegreeBounds-attempt-1.log",
+      "returncode": 1,
+      "source_sha256_before": "50d3a2fa240e659bf615ac940ed80edc30d5d10a774a6dbe0d9cfda7f7f40579",
+      "source_sha256_after": "50d3a2fa240e659bf615ac940ed80edc30d5d10a774a6dbe0d9cfda7f7f40579",
+      "compiler_version": "leanprover/lean4:v4.34.1",
+      "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "lean_options": [
+        "-j2",
+        "-DautoImplicit=false"
+      ],
+      "imported_objects": [
+        {
+          "module": "OAI.Combinatorics.MatchingCount.Complexity.TreeCostMeasure",
+          "object_present": true,
+          "object_sha256": "22d8a3d5f522a94327e55d2bfaddbd58a6fd2fe24447e756586ec8c5b87f6436"
+        }
+      ],
+      "output_object_sha256": null,
+      "status": "diagnostic failed"
+    },
+    {
+      "attempt": "TreeDegreeBounds-attempt-2",
+      "module": "TreeDegreeBounds",
+      "log": "diagnostics/TreeDegreeBounds-attempt-2.log",
+      "returncode": 1,
+      "source_sha256_before": "32d8b0dc81c178dd9a63f45d9bf7afd3122930a3549f8a6ef5c28cade1a785cc",
+      "source_sha256_after": "32d8b0dc81c178dd9a63f45d9bf7afd3122930a3549f8a6ef5c28cade1a785cc",
+      "compiler_version": "leanprover/lean4:v4.34.1",
+      "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "lean_options": [
+        "-j2",
+        "-DautoImplicit=false"
+      ],
+      "imported_objects": [
+        {
+          "module": "OAI.Combinatorics.MatchingCount.Complexity.TreeCostMeasure",
+          "object_present": true,
+          "object_sha256": "22d8a3d5f522a94327e55d2bfaddbd58a6fd2fe24447e756586ec8c5b87f6436"
+        }
+      ],
+      "output_object_sha256": null,
+      "status": "diagnostic failed"
+    },
+    {
+      "attempt": "TreeDegreeBounds-attempt-3",
+      "module": "TreeDegreeBounds",
+      "log": "diagnostics/TreeDegreeBounds-attempt-3.log",
+      "returncode": 1,
+      "source_sha256_before": "27da5d3a9300dd2f86a2357c27260859ee3667bddd3391e5373e59ca2826294c",
+      "source_sha256_after": "27da5d3a9300dd2f86a2357c27260859ee3667bddd3391e5373e59ca2826294c",
+      "compiler_version": "leanprover/lean4:v4.34.1",
+      "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "lean_options": [
+        "-j2",
+        "-DautoImplicit=false"
+      ],
+      "imported_objects": [
+        {
+          "module": "OAI.Combinatorics.MatchingCount.Complexity.TreeCostMeasure",
+          "object_present": true,
+          "object_sha256": "22d8a3d5f522a94327e55d2bfaddbd58a6fd2fe24447e756586ec8c5b87f6436"
+        }
+      ],
+      "output_object_sha256": null,
+      "status": "diagnostic failed"
+    },
+    {
+      "attempt": "TreeDegreeBounds-attempt-4",
+      "module": "TreeDegreeBounds",
+      "log": "diagnostics/TreeDegreeBounds-attempt-4.log",
+      "returncode": 0,
+      "source_sha256_before": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf",
+      "source_sha256_after": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf",
+      "compiler_version": "leanprover/lean4:v4.34.1",
+      "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+      "lean_options": [
+        "-j2",
+        "-DautoImplicit=false"
+      ],
+      "imported_objects": [
+        {
+          "module": "OAI.Combinatorics.MatchingCount.Complexity.TreeCostMeasure",
+          "object_present": true,
+          "object_sha256": "22d8a3d5f522a94327e55d2bfaddbd58a6fd2fe24447e756586ec8c5b87f6436"
+        }
+      ],
+      "output_object_sha256": "44a4292eb5336f052462943b35faf72b861d01f093871fce047f619c80221370",
+      "status": "diagnostic success only"
+    }
+  ],
+  "source_status": {
+    "ResearchBounds/TreeDegreeBounds.lean": "diagnostic compilation success only",
+    "ResearchBounds/FreshBitDegreeBounds.lean": "uncompiled candidate; missing import before theorem-body checks",
+    "ResearchBounds/FiniteWordDegreeBounds.lean": "uncompiled candidate; no diagnostic launched",
+    "ResearchBounds/PolynomialCompilerDegree.lean": "failed diagnostic; frozen without repair"
+  }
+}

@@ -62,6 +62,12 @@ verify() {
         "$ELAN_HOME/bin/lake" build Math115
       fi
       audit_axioms Math115/AxiomAudit.lean
+      mkdir -p "$TASK_ROOT/.local/environment-audits"
+      AUDIT_WORK=$(mktemp -d "$TASK_ROOT/.local/environment-audits/focused-XXXXXXXX")
+      "$ELAN_HOME/bin/lake" env python3 "$TASK_ROOT/scripts/prepare_environment_audit.py" \
+        --root "$TASK_ROOT" --output "$AUDIT_WORK/config.json"
+      python3 "$TASK_ROOT/scripts/run_environment_audit.py" \
+        --config "$AUDIT_WORK/config.json" --output "$AUDIT_WORK/attempt"
       ;;
     full)
       if [[ "$VERIFY_MODE" == --serial ]]; then

@@ -1,0 +1,47 @@
+formal/Math115/LatticeSamplerPreparation.lean:79:38: error: Application type mismatch: The argument
+  initialCheckRealizer
+has type
+  Realizer initialCheck
+but is expected to have type
+  Realizer PhysicalComputedProposal.idealPrepareProfileInput
+in the application
+  composition ?m.41 initialCheckRealizer
+formal/Math115/LatticeSamplerPreparation.lean:79:79: error: Application type mismatch: The argument
+  idealPaddingRealizer
+has type
+  Realizer idealPadding
+but is expected to have type
+  Realizer (HMul.hMul 3)
+in the application
+  composition ?m.54 idealPaddingRealizer
+formal/Math115/LatticeSamplerPreparation.lean:80:29: error: Application type mismatch: The argument
+  marginDimensionRealizer
+has type
+  Realizer marginDimension
+but is expected to have type
+  Realizer (HAdd.hAdd 10)
+in the application
+  composition ?m.75 marginDimensionRealizer
+formal/Math115/LatticeSamplerPreparation.lean:80:82: error: Application type mismatch: The argument
+  initialViewsRealizer
+has type
+  Realizer initialViews
+but is expected to have type
+  Realizer originalViews
+in the application
+  composition ?m.92 initialViewsRealizer
+formal/Math115/LatticeSamplerPreparation.lean:80:76: error: Application type mismatch: The argument
+  first
+has type
+  Realizer Prod.fst
+but is expected to have type
+  Realizer fun a => initialViewInput a.1
+in the application
+  composition first
+formal/Math115/LatticeSamplerPreparation.lean:82:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+formal/Math115/LatticeSamplerPreparation.lean:336:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+formal/Math115/LatticeSamplerPreparation.lean:377:88: error(lean.unknownIdentifier): Unknown identifier `«e₀».symm`

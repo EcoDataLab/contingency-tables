@@ -33,7 +33,7 @@ a feasible anchor, a constructive lower bound on fiber size, attaining endpoint
 tables, dual potentials, independent verification results, deterministic work
 counts, machine metadata, and local wall times. Source hashes identify the
 generator, optimizer, and reference sampler. Each instance also has an input
-hash. No private data or CBEI production files are used.
+hash. No private data or production-model files are used.
 
 ## Synthetic controls and scope
 

@@ -1,5 +1,7 @@
 # Independent review of the fourth #115 refinements
 
+Review provenance: “independent” here means a separate AI agent reviewing AI-produced research or code within this project. This is not outside human peer review. Compiler and execution receipts have the narrower scopes stated below.
+
 Review date: 8 October 2026. Upstream is pinned to
 openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb.
 This continues the [third review](third-checkpoint-review.md). It records

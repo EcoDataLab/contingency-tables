@@ -1,7 +1,8 @@
 PYTHON ?= python3
-export PYTHONPATH := src
+# Run directly from the checkout, including subprocesses that change directory.
+export PYTHONPATH := $(CURDIR)/src
 
-.PHONY: test audit verify sources lean reports
+.PHONY: test audit verify sources lean reports claims claims-check
 test:
 	$(PYTHON) -m unittest discover -s tests -v
 
@@ -9,9 +10,15 @@ audit:
 	mkdir -p .local
 	$(PYTHON) 115/audit115.py --output .local/audit115-rerun.json
 
-verify: test audit
+claims:
+	$(PYTHON) scripts/claims_ledger.py --write-readme
+
+claims-check:
+	$(PYTHON) scripts/claims_ledger.py --check-readme
+
+verify: test audit claims-check
 	$(PYTHON) scripts/verify_sources.py --bundle-only
-	$(PYTHON) experiments/independent_crosscheck.py
+	$(PYTHON) experiments/independent_crosscheck.py --output .local/independent-crosscheck-rerun.json
 	$(PYTHON) -S experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json
 
 sources:

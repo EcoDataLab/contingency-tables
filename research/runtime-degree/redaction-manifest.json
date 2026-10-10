@@ -1,0 +1,81 @@
+{
+  "policy": "No source bytes changed. Diagnostics retain errors, line numbers, return codes and hashes; private absolute path prefixes removed. No binary objects included.",
+  "artifacts": [
+    {
+      "published_file": "diagnostics/FreshBitDegreeBounds-attempt-1.log",
+      "original_sha256": "f8c3a771a2c62b6508c3a71fb50b41e0cb06e6b9e262255005a0d8297bfd13b7",
+      "published_sha256": "56d019f42552f5a8b23cc01cca38347069b5d520e14b88dd6e02b4bd46956993",
+      "changes": [
+        "Candidate source absolute prefix replaced with public package-relative prefix.",
+        "Upstream object absolute prefix replaced with generic pinned-upstream-object-root placeholder."
+      ],
+      "diagnostic_content_preserved": true
+    },
+    {
+      "published_file": "diagnostics/PolynomialCompilerDegree-attempt-1.log",
+      "original_sha256": "e30d7847031d066511f19176caff6d2bb0204073dd14861f6ac2466366c1ec06",
+      "published_sha256": "cb61246376a42912953b38d9e02979f5c5b4fa30f9a8ac01fa2adc5e0c724135",
+      "changes": [
+        "Candidate source absolute prefix replaced with public package-relative prefix.",
+        "Upstream object absolute prefix replaced with generic pinned-upstream-object-root placeholder."
+      ],
+      "diagnostic_content_preserved": true
+    },
+    {
+      "published_file": "diagnostics/TreeDegreeBounds-attempt-1.log",
+      "original_sha256": "921b1ef675ffc56c32b350be3c262f003a21c3672c28b3b2c6d53a628c028d54",
+      "published_sha256": "44ed417e85aa0a1523b09419c5f148b8cd1ad4169133a1f20764bcf24777db69",
+      "changes": [
+        "Candidate source absolute prefix replaced with public package-relative prefix.",
+        "Upstream object absolute prefix replaced with generic pinned-upstream-object-root placeholder."
+      ],
+      "diagnostic_content_preserved": true
+    },
+    {
+      "published_file": "diagnostics/TreeDegreeBounds-attempt-2.log",
+      "original_sha256": "338fa8c2cd2965dfbaa3215e75d03189feec866a70c6b0b04b4f5165a80664a5",
+      "published_sha256": "6339ebbc8869fa546b2136800ee8dae5de8ca471c397b382fc1e84683f6d3654",
+      "changes": [
+        "Candidate source absolute prefix replaced with public package-relative prefix.",
+        "Upstream object absolute prefix replaced with generic pinned-upstream-object-root placeholder."
+      ],
+      "diagnostic_content_preserved": true
+    },
+    {
+      "published_file": "diagnostics/TreeDegreeBounds-attempt-3.log",
+      "original_sha256": "7d68fc683b1b6291e4f63915f18183441aae99e22038a59078e2928d616771e3",
+      "published_sha256": "0768a77f7fd24ce8473abf863469c4b31afafa86c5bfa514f4ba33e65938687a",
+      "changes": [
+        "Candidate source absolute prefix replaced with public package-relative prefix.",
+        "Upstream object absolute prefix replaced with generic pinned-upstream-object-root placeholder."
+      ],
+      "diagnostic_content_preserved": true
+    },
+    {
+      "published_file": "diagnostics/TreeDegreeBounds-attempt-4.log",
+      "original_sha256": "8649ed8e00e5ff9bfa780f4548877d56f4afe5cc86892551ab1aab6f982f6ac0",
+      "published_sha256": "f92d245f88cac629c770d1a999a945bc89e274a0ac8779d69877a5b821bcc5e3",
+      "changes": [
+        "Candidate source absolute prefix replaced with public package-relative prefix.",
+        "Upstream object absolute prefix replaced with generic pinned-upstream-object-root placeholder."
+      ],
+      "diagnostic_content_preserved": true
+    },
+    {
+      "published_file": "source-manifest.json",
+      "original_sha256": "28f13d302dd37e1809ed8defc4112a99fd720f3093e1f8d517f8b49ffd9096e0",
+      "published_sha256": "e69d754d4cb2848e673a668210c717ddf10045b91ff93fc0f8cc4c3bceb2cf54",
+      "changes": [
+        "Candidate source identifiers replaced with package-relative paths.",
+        "Private planning-note entry omitted; all frozen candidate source entries retained.",
+        "Public pin and diagnostic-object references added; private handoff labels removed."
+      ]
+    },
+    {
+      "published_file": "missing-upstream-closure.json",
+      "original_sha256": "e88701a085e7ed000b2a2ed2201c3690fee74899033ae65e9b49f7820143da2b",
+      "published_sha256": "e88701a085e7ed000b2a2ed2201c3690fee74899033ae65e9b49f7820143da2b",
+      "changes": []
+    }
+  ]
+}

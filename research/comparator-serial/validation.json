@@ -1,0 +1,66 @@
+{
+  "time_utc": "2026-10-10T05:35:31.322124+00:00",
+  "python_version": "3.14.3",
+  "execution": "offline tests and syntax checks only; no Lean/Lake/systemd/VM execution; process/systemd calls mocked",
+  "results": [
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/comparator-serial",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "validation-00.log",
+      "log_sha256": "39c977dfef871f44250562992bdb3b083bd39be1f3421e097ba2283a2d0435e4",
+      "summary": [
+        "----------------------------------------------------------------------",
+        "Ran 33 tests in 0.137s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/comparator-serial/reviewed-helper/tests",
+        "-p",
+        "test_build_lean_serial.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "validation-01.log",
+      "log_sha256": "d2aad6373682f8a3670d685feda3e9ee36f1e985bc8dfd798f5d1779b5e755cd",
+      "summary": [
+        "----------------------------------------------------------------------",
+        "Ran 16 tests in 0.015s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "py_compile",
+        "research/comparator-serial/strict_serial_check.py",
+        "research/comparator-serial/no_rebuild_landrun.py",
+        "research/comparator-serial/test_strict_serial_check.py",
+        "research/comparator-serial/reviewed-helper/scripts/build_lean_serial.py"
+      ],
+      "returncode": 0,
+      "log": "validation-02.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": []
+    }
+  ]
+}

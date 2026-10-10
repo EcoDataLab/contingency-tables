@@ -1,0 +1,32 @@
+research/runtime-degree/ResearchBounds/TreeDegreeBounds.lean:35:18: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+research/runtime-degree/ResearchBounds/TreeDegreeBounds.lean:77:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  n ≥ 0
+  m ≥ 0
+  l ≥ 0
+  l + m ≥ -1
+  k ≥ 0
+  j ≥ 0
+  i ≥ 0
+  i - j - k ≥ 0
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  f - g - h ≥ 0
+  7*f - g + i - j - 7*l - m ≤ -1
+  0 ≤ e ≤ 1
+  0 ≤ d ≤ 1
+where
+ d := ↑p.natDegree
+ e := ↑q.natDegree
+ f := ↑(eval (weight a) p)
+ g := ↑((constantData b).cost a)
+ h := ↑(weight ((fun x => b) a))
+ i := ↑(eval (weight a) q)
+ j := ↑((constantData c).cost a)
+ k := ↑(weight ((fun x => c) a))
+ l := ↑(weight b)
+ m := ↑(weight c)
+ n := ↑(weight a)

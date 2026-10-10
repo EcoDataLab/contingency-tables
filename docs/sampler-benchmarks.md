@@ -175,7 +175,7 @@ PYTHONPATH=src python3 -S -m unittest discover -s tests -p 'test_sampler_benchma
 `--smoke --draws 40 --warmup 10 --repetitions 2` runs a smaller control panel.
 The JSON records complete synthetic inputs, budgets, seeds, environment, work,
 costs, failures, and source hashes. No general rapid-mixing, practical-scale,
-CBEI accuracy, or complete finite-bit #115 superiority claim follows from it.
+real commuting accuracy, or complete finite-bit #115 superiority claim follows from it.
 
 ## Observations in the saved bounded panel
 

@@ -6,8 +6,9 @@ completion program's list order, empty completion fibres, reference-coordinate
 laws, and the physical schedule and bit allowance. The
 [verification record](../formal/results/completion-physical-bridges/verification.json)
 contains the exact source snapshots, executed audit drivers, logs, and dependency
-provenance. This is a component checkpoint; the aggregate count and Linux
-integration are unchanged.
+provenance. This historical component receipt is now included in the
+[current integrated aggregate](../formal/results/completion-aggregate-1236/verification.json).
+See the [formal record](formal-verification.md) for current Linux coverage.
 
 | Module | Audited declarations | Result |
 |---|---:|---|

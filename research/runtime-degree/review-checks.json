@@ -1,0 +1,13 @@
+{
+  "kind": "packaging/source review only; no new compilation",
+  "checks": {
+    "four_source_bytes_match_frozen_originals": true,
+    "source_hashes_match_source_manifest": true,
+    "published_redaction_hashes_match": true,
+    "no_binary_artifacts": true,
+    "no_private_path_or_internal_label_hits": true,
+    "source_proof_token_scan_clear": true,
+    "relative_readme_links_exist": true,
+    "missing_dependency_count_43": true
+  }
+}

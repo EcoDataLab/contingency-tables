@@ -1,6 +1,6 @@
 # Both-branch Boolean law and computed schedule
 
-This component checkpoint verifies **134 declarations** across three modules:
+The original component checkpoint verified **134 declarations** across three modules:
 `PhysicalReferenceBoolean` has 16 strict named audits,
 `LatticeScheduleProgram` has 105, and `PhysicalBooleanSampler` has 13. Together
 they supply the ideal-scale mathematical finite-word experiment in both
@@ -11,10 +11,9 @@ random-machine runtime remain separate.
 The [receipt](../formal/results/completion-boolean-schedule/verification.json)
 records the exact sources, objects, logs, input snapshots and scope.
 
-These names are disjoint from the 869-declaration aggregate, the 46 encoded
-completion-program declarations, and the 193 physical-bridge declarations.
-They remain a separate component checkpoint. The fresh focused Linux result
-at `895b45c` still audits 863 names; it does not certify these 134 additions.
+These names were disjoint from the historical 869-declaration aggregate, the 46 encoded completion-program declarations, and the 193 physical bridges. All three formerly separate scopes are now integrated into the [completed stage aggregate](../formal/results/completion-aggregate-1236/verification.json). Its default focused audit includes the Boolean-law and schedule declarations; the original component receipt remains historical and unchanged. The Linux result at `895b45c` still covers its earlier 863-name scope, not these additions. Environment-inventory validation and fresh Linux reproduction of the new aggregate are pending.
+
+The final outer-program attempt failed and its 13 draft sources are frozen in [research/outer-sampler](../research/outer-sampler/) outside the default formal target. This integration establishes the typed finite-word law and computed schedule, not a complete literal encoded sampler. See the [handoff](handoff.md), [formal scope](formal-verification.md), and [composed complexity review](composed-complexity.md).
 
 ## An exact reference-branch word experiment
 
@@ -87,7 +86,7 @@ large-index, completion or accuracy witness remains in this combined theorem.
 
 The experiment is still a noncomputable typed function from a fixed Boolean
 word to a feasible table. These proofs close the mathematical finite-word law
-for both branches; they do not identify the output of the pending literal
+for both branches; they do not identify the output of the archived literal
 encoded walker or construct its public physical random machine. That final
 pointwise program seam and the complete machine-cost bound require their own
 successful receipts.
@@ -167,14 +166,14 @@ Pins remain OpenAI source
 `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb` and Mathlib
 `d13f23b723b8a846827a245b89c10fc7d3f11612`.
 
-The surrounding native batches were **overall failed**. In the latest batch,
+The surrounding native batches for this historical component checkpoint were **overall failed**. In that batch,
 one source compile failed and twelve downstream modules were blocked; its
 selected `PhysicalBooleanSampler` module nevertheless compiled and passed all
 thirteen strict audits. The separate audit watcher recorded thirteen blocked
 module audits and no failed audits. Failed and blocked records remain context
 and do not become positive evidence by selecting these three successful
-modules. This checkpoint does not certify the literal encoded Boolean step
+modules. This component receipt does not certify the literal encoded Boolean step
 and walker, final public random machine, or the original bounded-sampling
 statement. Those downstream integration proofs require their
-own exact successful receipts. It also supplies no fresh Linux reproduction,
+own exact successful receipts. The historical component receipt supplies no fresh Linux reproduction,
 strict Comparator replay, practical benchmark, or complete machine-time degree.

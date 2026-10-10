@@ -1,0 +1,62 @@
+{
+  "aggregation": {
+    "county_cells": 25,
+    "createdates": [
+      "20251202"
+    ],
+    "published_jobs": 412443,
+    "source_records": 390223
+  },
+  "citation": "U.S. Census Bureau, ri_od_main_JT00_2023, LEHD Origin-Destination Employment Statistics, format 8.4, data vintage 20251202_1657.",
+  "data_status": "Publicly released Census counts after processing and disclosure avoidance. Validation observations, not confidential person-level ground truth.",
+  "documentation": {
+    "accessed_utc_date": "2026-10-10",
+    "bytes": 602016,
+    "format_version": "8.4",
+    "read_pages": [
+      1,
+      4,
+      5
+    ],
+    "revision": "20251203",
+    "sha256": "1189b8aa4cefd6cdf53c3b85e27366054af0cd5418056b04ff70d210b87eddee",
+    "url": "https://lehd.ces.census.gov/doc/help/onthemap/LODESTechDoc.pdf"
+  },
+  "documentation_url": "https://lehd.ces.census.gov/doc/help/onthemap/LODESTechDoc.pdf",
+  "official_checksum_entry_sha256": "a67e96219a791eb3499b60f13d349f085b220d5216e16a51182e4bf086b0ea93",
+  "official_checksum_file": {
+    "accessed_utc": "2026-10-10T04:56:47.527691+00:00",
+    "bytes": 229179,
+    "last_modified": "Fri, 12 Dec 2025 19:15:58 GMT",
+    "sha256": "c17b0b997d085b74a2c22f8ac5a9f3ad574550f7152ebd3e5ad1a6276be84d9c",
+    "url": "https://lehd.ces.census.gov/data/lodes/LODES8/ri/lodes_ri.sha256sum"
+  },
+  "official_checksum_scope": "decompressed CSV bytes; the compressed download SHA256 is recorded separately",
+  "official_checksum_verified": true,
+  "protocol_sha256": "f2dda7a355e51fd6d506c61f6355a5834fca2f790fe778abe6e077f4838a2ee4",
+  "retention": "Only the 25-cell aggregation, selected checksum entry, exact version text, protocol, and manifest are retained; the block-level download is not vendored.",
+  "schema_version": 1,
+  "source": {
+    "accessed_utc": "2026-10-10T04:56:50.772790+00:00",
+    "bytes": 2181612,
+    "last_modified": "Wed, 03 Dec 2025 12:56:02 GMT",
+    "sha256": "ba52ad6518bb9f9fc09675cf93a77ca3a9de2b8f4a91e15a927e66a0e5642e0a",
+    "uncompressed_csv_bytes": 23803747,
+    "uncompressed_csv_sha256": "e6087fec026026ff47dd1f58ebda8ae15f17e9e6acbd16602223faaf93066206",
+    "url": "https://lehd.ces.census.gov/data/lodes/LODES8/ri/od/ri_od_main_JT00_2023.csv.gz"
+  },
+  "subset": {
+    "bytes": 454,
+    "orientation": "rows = home county; columns = workplace county",
+    "path": "data/public-commuting/ri-2023-county-od.csv",
+    "sha256": "031fb665ef62c649f4a2aca7ffdcdb43a87ed67cb2aa2c104c867e7bdf63f7fb"
+  },
+  "version_file": {
+    "accessed_utc": "2026-10-10T04:56:47.825491+00:00",
+    "bytes": 127,
+    "last_modified": "Wed, 03 Dec 2025 12:56:20 GMT",
+    "sha256": "bfa1a2c3b66d00cad6e433e457af02711b22eb49a3d711752c00bdc6140d66b3",
+    "url": "https://lehd.ces.census.gov/data/lodes/LODES8/ri/version.txt"
+  },
+  "version_text": "LEHD Origin-Destination Employment Statistics (LODES)\nRI (Rhode Island)\nData Vintage: 20251202_1657\nRelease Format Version 8.4\n"
+}

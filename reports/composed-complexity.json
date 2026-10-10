@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "review_kind": "Source inspection and algebra; no live compilation, Git operation, remote job, or benchmark",
+  "document": "docs/composed-complexity.md",
+  "upstream": {
+    "preserved_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "main_observed_sha": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "main_committer_utc": "2026-10-08T05:20:00Z",
+    "observation_utc": "2026-10-10T04:50:17Z",
+    "commit_message": "Merge pull request #1 from openai/codex/update-10-7\n\nUpdate manuscripts and Lean formalizations",
+    "revision_difference": false,
+    "primary_api": "https://api.github.com/repos/openai/math/commits/main",
+    "primary_scope_page": "https://github.com/openai/math/blob/main/lean/docs/115.md"
+  },
+  "public_measure": {
+    "formula": "S=m+n+clog_2(M+1)+h+1",
+    "M": "sum rows = sum columns",
+    "dimension": "d=10+(m+1)*(n+1)",
+    "precision": "numeric h >= 1, target TV <= 2^(-h)",
+    "literal_input": "encodeMargins r c ++ encodeNat h"
+  },
+  "local_schedule": {
+    "inverse_gap": "80000*d^17",
+    "B": "M+3*d^2+5*d^3+3",
+    "R": "2*(1+p^2)*(h+3), p<=d",
+    "mix_exponent": "h+3+clog_2(R)+2*d*clog_2(B)",
+    "T": "80000*d^17*mix_exponent",
+    "transition_precision": "h+3+clog_2(R)+clog_2(T)",
+    "terminal_precision": "h+3+clog_2(R)",
+    "warning": "2*d*clog_2(B), retries, complete inner banks, and per-step work remain included"
+  },
+  "reserved_bits": {
+    "quantity": "Reserved complete fair-bit bank; not runtime or expected bits inspected",
+    "internal_size": "N=d+clog_2(M+2)+h+3",
+    "separated_bound": "12672000000*37^62*d^20*(h+3)*N^64",
+    "combined_bound": "12672000000*37^62*N^85",
+    "public_conversion": "N<=5*S^2",
+    "public_bound": "12672000000*37^62*5^85*S^170",
+    "coefficient_product": [
+      3,
+      4,
+      480000,
+      2200
+    ],
+    "coefficient_product_value": 12672000000,
+    "public_word_measure_bound": "(12672000000*37^62*5^85+91)*S^170"
+  },
+  "physical_runtime": {
+    "status": "Draft symbolic bound, no numeric complete degree established in this review",
+    "literal_numeric_degree": null,
+    "draft_degree": "170*natDegree(P_L)",
+    "draft_coefficient": "P_L(12672000000*37^62*5^85+91)+1",
+    "P_L": "Existential physical-machine polynomial for the particular local wordCount/publicDraw realizers",
+    "compiler_only_degree_bound": "natDegree(Q)<=2*max(1,natDegree(p))",
+    "p": "Complete online work plus worst encoded output weight in wordMeasure",
+    "conditional_end_to_end_degree": "340*max(1,e_L), e_L=natDegree(p_L)",
+    "conditional_coefficient": "Q_L(12672000000*37^62*5^85+91)+1",
+    "conditional_status": "Source-level algebra; not a new compiled theorem or a supplied numeral"
+  },
+  "comparisons": [
+    {
+      "route": "Pinned upstream",
+      "inverse_gap": "98560*d^126, weakened to d^160 for source schedule",
+      "bank_bound": "(d+b+h+100)^644",
+      "public_bank_bound": "344^644*S^1288",
+      "physical_degree": "1288*natDegree(P_U)",
+      "conditional_online_degree_form": "2576*max(1,e_U)",
+      "numeric_complete_degree": null
+    },
+    {
+      "route": "Local dense-compatible d25 chain",
+      "inverse_gap": "128*47^4*d^25",
+      "completion_cost_model": "Ideal exact-completion oracle; retained dense sufficient conditions compatible",
+      "instantiated_full_bank_bound": null,
+      "new_complete_machine_time_bound": null,
+      "numeric_complete_degree": null
+    },
+    {
+      "route": "Local d17 lattice route",
+      "inverse_gap": "80000*d^17",
+      "completion_cost_model": "Lattice dilation/rejection and complete supplied-word dense draw",
+      "bank_bound": "12672000000*37^62*5^85*S^170",
+      "physical_degree": "170*natDegree(P_L)",
+      "numeric_complete_degree": null
+    }
+  ],
+  "cost_findings": [
+    "PolynomialTime is an existential fixed polynomial in complete encoded input weight.",
+    "Supplied-word tree work and physical-machine time are different seams.",
+    "The physical compiler accounts for packing, online work, stack overhead, erase, and output unpacking.",
+    "FirstSuccessProgram.retry maps all trial words before firstSome; cost cannot assume later trials are skipped.",
+    "No comparison of 170 and 1288 proves an end-to-end speedup because P_L and P_U are different polynomials.",
+    "No exact expected-time sampler or bounded-table counting extension follows from the local bounded-sampling draft."
+  ],
+  "missing_quantitative_evidence": [
+    "Named degree-bounded work polynomial for actual complete public word-count realizer.",
+    "Named degree-bounded work polynomial for complete public draw, including both branches and all dense/rejection/outer trials.",
+    "Degree accounting for reusable maps/folds, cap bounds, arithmetic, chunk/copy costs, parser/printer, greedy fallback, and fresh bits.",
+    "Certified complete online-work degree and instantiated compiler/public-size conversion for actual assembled sources."
+  ],
+  "source_sha256": {
+    "formal/Math115/PublicLatticeSampler.lean": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245",
+    "formal/Math115/LatticeSamplerCost.lean": "11a1e019a9f7b7d6c753b1e70891b3d033ed42a7cd962aa8dfd0826bd676dc5e",
+    "formal/Math115/LatticeBoundedSampling.lean": "a67e022d7a472abd3c25508e1bd3253f213eb40d141b6ee2e954deeab533500a",
+    "formal/Math115/LatticeSampler.lean": "486cf091c5cf7c46e2acc10db7e253e581623d6e364d595a72fe67b5033db78f",
+    "formal/Math115/CompletionRandomBudgetArithmetic.lean": "278c031d594e109bbce1e3bd96459a08b30dde9dc4506f61beb341b40e48ef0a",
+    "formal/Math115/CompletionPublicSize.lean": "b7d04bd5956a33ddbdd04c36e8b4a79f571d4109c7e297af04e38c1734a9eb30",
+    "formal/Math115/CompletionEncodingSize.lean": "6fe3bbf11d4271959fccdc0b1f294f7ac0bab37418c5b7e4f71efd240650520e",
+    "formal/Math115/CompletionScheduleArithmetic.lean": "44c756f1118b48055ed01f709927d28dd1927f00087fe975c4c71558b1c263f2",
+    "formal/Math115/CompletionSamplerProgram.lean": "b2f2dd678bff288d8298ea267adac03da78d458ec89d934c2bb7c5fe6c109e42",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/AlgorithmStatements.lean": "7d5682872dfecf8d6c433347d0f6d2ceb305f84392951d57942aa0fe2f3c3501",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Machines/FiniteWordExecution.lean": "30d59f4c23a4935b0d06bb731f4f203ca57a106733a0179e828dd0f8fd3b18d6",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Machines/FiniteWordMachine.lean": "713631146a22eec40dbb8b31e0d869abc1358a431fdf8b5d6783787ff6412dce",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Machines/LiteralProgram.lean": "1f504fac3896d09d1462901ae76bc72a8eee2d407a7ccde4ad49c053e129139d",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Machines/FirstSuccessProgram.lean": "892f6d72ff9bb0476596b73e7d7209c5c22db8987197795f4af59d6e05cea3ea",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/AllSamplingMachine.lean": "8633416a5e3a7d4dc6a3809ed63560cf1e386472103bc77be84037eec527d1e9",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperWordBudget.lean": "4eb779345d869bfe3e031bb22a7b4089d466634627457dc94aa2d658a6da2d9e",
+    ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperInputWordBudget.lean": "34d8353217562cdbd1b422cc2f95835202469ccea4f1989b103c5f71eada189b",
+    ".upstream/openai-math/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/dense.tex": "2e53b2bb7f67244ef0d74dcd11516e547230c857495e3865f87c044a4695bee5",
+    ".upstream/openai-math/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/build/sections/algorithms.tex": "ed5a846b4d6de2ff2ea2bed21aaa441107115e0a2745328cd3413e5a963c8a46",
+    "docs/composed-complexity.md": "945b353c8dd29377d187c7b88315021d60be71a0e3076841aaa499043a783f45"
+  },
+  "source_sha256_snapshot_status": "Frozen original 20-file review snapshot. The docs/composed-complexity.md entry hashes the original note before the publication-safe edit, not the current note. No original source-hash entry was changed.",
+  "publication_presentation": {
+    "status": "Source-only conditional comparison plus explicitly uncompiled research excerpts",
+    "reviewable_artifacts": [
+      "docs/composed-complexity.md",
+      "docs/composed-complexity-uncompiled-appendix.md",
+      "reports/composed-complexity.json"
+    ],
+    "pending_full_sampler_modules_included": false,
+    "compilation_claim_for_local_sampler": false,
+    "numeric_complete_degree_established": false,
+    "appendix": "docs/composed-complexity-uncompiled-appendix.md",
+    "appendix_sources": [
+      {
+        "id": "public-interface",
+        "source_identifier": "formal/Math115/PublicLatticeSampler.lean",
+        "full_source_sha256": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245",
+        "compilation_status": "uncompiled proposal; no pass certified",
+        "excerpts": [
+          {
+            "start_line": 1,
+            "end_line": 9,
+            "sha256": "a4cd206c115b776f204668de1f665c64b073291c0772b789a8d5b48caf4805b2"
+          },
+          {
+            "start_line": 23,
+            "end_line": 50,
+            "sha256": "588de58db337d3d59c09481c5b1368b0e3cbbf9668abe03aa79218244334e736"
+          },
+          {
+            "start_line": 138,
+            "end_line": 148,
+            "sha256": "de7ed91078c19e82a3eda72e89c619e16099e997a69c5e22189bd82534e51c5a"
+          },
+          {
+            "start_line": 152,
+            "end_line": 173,
+            "sha256": "0740a5312e92e1c755b99c1028d9fd29587f685c2cfc0ba29f3db40e1d513c39"
+          }
+        ]
+      },
+      {
+        "id": "supplied-word-cost",
+        "source_identifier": "formal/Math115/LatticeSamplerCost.lean",
+        "full_source_sha256": "11a1e019a9f7b7d6c753b1e70891b3d033ed42a7cd962aa8dfd0826bd676dc5e",
+        "compilation_status": "uncompiled proposal; no pass certified",
+        "excerpts": [
+          {
+            "start_line": 1,
+            "end_line": 7,
+            "sha256": "d07851549c5b227fb7c7ca20b0467fad3515ceae184c103b1fe84e739ad784ee"
+          },
+          {
+            "start_line": 40,
+            "end_line": 50,
+            "sha256": "f71c22a98a1655c5a5b01db5e09d480a2cf7dacf0eb3a17efcda3bba2a158612"
+          },
+          {
+            "start_line": 60,
+            "end_line": 74,
+            "sha256": "fd000a865d858494be49a3b9e4c058f9a581bfd09cef4f9ca82bf6383e1833c1"
+          }
+        ]
+      },
+      {
+        "id": "bounded-statement",
+        "source_identifier": "formal/Math115/LatticeBoundedSampling.lean",
+        "full_source_sha256": "a67e022d7a472abd3c25508e1bd3253f213eb40d141b6ee2e954deeab533500a",
+        "compilation_status": "uncompiled proposal; no pass certified",
+        "excerpts": [
+          {
+            "start_line": 1,
+            "end_line": 6,
+            "sha256": "c3e4b210f0b5db0a08822bf7d03524f946c57ccf49cb36250230e858a72c4c99"
+          },
+          {
+            "start_line": 16,
+            "end_line": 25,
+            "sha256": "132d60e8a98b63ac4647c7e3b99818ff103000c018b71cf88319348fef4684b2"
+          }
+        ]
+      },
+      {
+        "id": "both-branches",
+        "source_identifier": "formal/Math115/LatticeSampler.lean",
+        "full_source_sha256": "486cf091c5cf7c46e2acc10db7e253e581623d6e364d595a72fe67b5033db78f",
+        "compilation_status": "uncompiled proposal; no pass certified",
+        "excerpts": [
+          {
+            "start_line": 1,
+            "end_line": 7,
+            "sha256": "d11e884f20c5a155206aabc75b01aeaf32c23feaa6072471230211fbd39dfb30"
+          },
+          {
+            "start_line": 60,
+            "end_line": 83,
+            "sha256": "2f504ebe6cd5edbe7a2fd29c14ba6cb7d04ebb6ddb7b2d55360e364672262ac9"
+          }
+        ]
+      }
+    ],
+    "current_markdown_sha256": {
+      "docs/composed-complexity.md": "d0c85769ea23733f341b7b353eae7c93e8da99508952db36d146edb4b544eb53",
+      "docs/composed-complexity-uncompiled-appendix.md": "30b33f95b4d1a9d2fb161b4cad6c685c732c1b4feeb1b01d8046a2c1f60440a9"
+    },
+    "original_source_hashes_preserved": 20
+  }
+}

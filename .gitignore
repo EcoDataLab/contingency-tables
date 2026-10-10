@@ -45,3 +45,9 @@ overview.pdf
 !formal/results/completion-physical-bridges/*.log
 !formal/results/linux-focused-895b45c/*.log
 !formal/results/completion-boolean-schedule/*.log
+!formal/results/completion-aggregate-1236/*.log
+!formal/results/strict-comparator-vm-895b45c/*.log
+!research/outer-sampler/diagnostics/*.log
+!research/runtime-degree/diagnostics/*.log
+!research/comparator-serial/validation-*.log
+!reports/stage-verification/*.log

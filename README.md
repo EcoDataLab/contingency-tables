@@ -1,50 +1,43 @@
-# Contingency tables: proofs and usable reference algorithms
+# Contingency tables: proofs and reference algorithms
 
-An open EcoDataLab research project building on [OpenAI result #115](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/115.md): sampling and counting integer tables with fixed margins and cell bounds.
+An open EcoDataLab research project building on [OpenAI result #115](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/115.md). A contingency table allocates integer counts while preserving row and column totals. This repository studies mathematical guarantees and supplies exact reference tools for small or structured problems.
 
-The research now includes a **Lean-verified `80,000d¹⁷` inverse-gap bound for an actual ideal auxiliary chain**, where `d=10+(m+1)(n+1)`. It covers all ordinary equal-total margins through automatic branch selection and a proved state-existence construction. The [completion-oracle formalization](docs/completion-oracle-formalization.md) proves equal accepted representation counts, acceptance at least one quarter at `L=3d`, and bounded-retry output accuracy. The [dense completion proofs](docs/completion-dense-law.md) supply the accurate fine-table law from the pinned canonical sampler and assemble accurate completions at every physical state. The [encoded completion program](docs/completion-sampler-program.md) now has exact output semantics and a polynomial charged-cost proof for supplied Boolean input. The concrete encoded outer program and its complete machine cost remain open.
+<!-- BEGIN GENERATED CLAIMS -->
 
-The output proof extends to finite walks from a known feasible table and identifies the actual proposal/draw/test law. With independent restarted attempts, [approximate completions](docs/physical-approximate-oracle.md) add at most `R(Tγζstep+ζterminal)` to the ideal error `exp(−R/S)+RB exp(−T/K)`, with `γ≤1/2`. Here `K=80,000d¹⁷`, `S=2(1+p²)`, and the [finite-walk guide](docs/physical-finite-walk.md) defines `B` and sufficient walk/retry schedules. The new dense-law specialization proves the required all-state accuracy, including the exact empty-block branch, and gives this finite-law output bound with a supplied feasible outer fallback.
+| Claim | Quantity and evidence | Assumptions and present limit |
+|---|---|---|
+| [Ideal auxiliary chain](docs/claims-and-evidence.md#ideal-inverse-gap) | Inverse spectral gap ≤ 80,000d¹⁷; lean theorem | Equal-total natural margins; finite index sets; d=10+(m+1)(n+1). Ideal completion transitions; a step count does not give machine runtime. |
+| [Finite-word probability law](docs/claims-and-evidence.md#finite-word-law) | Total variation ≤ 2⁻ʰ; lean theorem | Equal-total natural margins, including zero margins and empty dimensions; uniform reserved bits. The typed law uses noncomputable constructions; a complete encoded outer walker remains open. |
+| [Encoded completion and schedule](docs/claims-and-evidence.md#component-cost) | Polynomial charged component cost; lean component cost | Completion: d≥14, equal totals, dimension/free-coordinate bounds, dense margins; supplied finite word. Schedule: encoded margins and precision input. No proved full encoded outer sampler or full machine-cost exponent. |
+| [Executable references](docs/claims-and-evidence.md#executable-references) | Exact finite experiments; scope-specific measured timings; executable reference | Finite instances and each experiment’s stated target law and constraints. Enumeration grows rapidly; experiments do not prove general mixing or polynomial runtime. |
 
-The [both-branch Boolean law and computed schedule](docs/completion-boolean-schedule.md) now remove that supplied fallback: the mathematical finite-word sampler chooses its branch and greedy feasible fallback from the margins. Every fixed reserved word returns a feasible table; a uniform word gives total variation at most `2^-h` for every equal-total natural margin pair, including zero margins and empty dimensions. This typed law remains noncomputable. The numeric schedule has a polynomial charged-cost proof; identifying the literal encoded walker and its full machine cost remains open.
+Saved receipt scopes (counts are distinct named audit requests, not exhaustive theorem totals):
 
-The repository also supplies sharp ordinary-table tail and mean bounds, exact samplers for small or structurally decomposable fibers, certified cycle-mixture comparisons, linear bounds, and a classical worker-allocation baseline with exact metric moments. [Practical uses](docs/practical-use.md) explains which probability law and tool fit each problem. Competitiveness of the complete #115 sampler against established application software has not been demonstrated.
+- [Current integrated aggregate](formal/results/completion-aggregate-1236/verification.json): **1242** named declarations (1236 focused + 6 standalone); source hashes bound by the receipt. Fresh integrated root compilation with validated normal dependency reuse and four fresh named audits; includes completion program, physical bridges, and Boolean law/schedule. Six standalone audits remain separately identified within this receipt.
+- [Historical Linux focused reproduction](formal/results/linux-focused-895b45c/verification.json): **863** named declarations; exact commit `895b45c`. Fresh focused project compilation; official dependency cache trusted; excludes standalone and isolated component audits and strict Comparator replay. Selected source/configuration bytes differ in the current checkout; this receipt does not verify the new aggregate.
 
-## What improved
+Historical component receipts are preserved in the [ledger](claims.json); their named declarations overlap the current integrated aggregate and are not added to it. The historical Linux focused run is a separate reproduction scope. Compiled-environment audit status is reported separately in [formal verification](docs/formal-verification.md); these counts describe saved named audits.
 
-| Result | Evidence and scope |
-| --- | --- |
-| Sharp small-entry tail and mean bounds | Actual-table Lean proofs of the survival product, its linear bound, and the mean bound; attaining examples and exact finite checks |
-| Original ideal chains: O(d⁸⁵) inverse gap | Compiled physical path, exposure, and full-variance proofs give `1024d⁸⁵` for the literal source completion chain and `512d⁸⁵` for its all-small unit chain |
-| Ideal-only chain: O(d¹⁷) inverse gap | `80,000d¹⁷` at `U=5d³, L=3d`; equal ordinary totals suffice, including empty dimensions; exact completion is an oracle operation |
-| Dense-compatible chain: O(d²⁵) inverse gap | `128·47⁴d²⁵` at `U=47d⁵, L=32d³`; same automatic branch and feasibility coverage |
-| Sharper physical repair | Square-root cross-term bound plus tighter polynomial arithmetic reduce the previous conservative chain coefficient eightfold |
-| Stationary success and uniform output | Lean proofs give exact table mass `1/Z`, success `N/Z`, and an independent-retry error bound; ideal-scale success is at least `1/[2(1+p²)]` |
-| Finite-walk output guarantee | Actual rational transition law, positive starting state, terminal completion, bounded retries, and explicit sufficient schedules for any positive TV-error target |
-| Approximate completion interface | Lean identifies the actual proposal/draw/test law and bounds transition, terminal, and restarted-output error; holding proposals incur no completion error |
-| Completion oracle at `L=3d` | Lean proves the full accepted-preimage count, geometric count comparison, quarter acceptance, and bounded-retry accuracy at `k=d¹²` |
-| Canonical dense completion at every state | 66 Lean audits included in the focused aggregate discharge the fine-law accuracy premise, assemble the actual physical completion family, and prove its normalized outer-law error; encoded outer-program and runtime integration remain open |
-| Encoded completion program | 46 additional isolated Lean audits connect the computed dense draws, signed decoder, retries, and computed fallback to the analyzed output law, with polynomial charged cost in the full supplied input |
-| Computed physical completion bridges | 193 additional isolated Lean audits connect actual large-index lists and completion outputs to each physical fiber, identify computed proposal laws, and specialize finite-law schedules and empty completions; the full Boolean walker remains separate |
-| Both-branch Boolean law and computed schedule | 134 additional isolated Lean audits prove pointwise feasible output and scheduled `2^-h` accuracy for the typed finite-word sampler, with automatic branches and greedy fallback; the numeric schedule is computed with polynomial charged cost, while the literal encoded walker remains separate |
-| Executable Boolean codec and retries | 25 Lean audits included in the focused aggregate identify the signed decoder and consecutive independent word bank with the retry law for a supplied fine draw; six native evaluations passed |
-| Binary-list completion decoder | 52 Lean audits included in the focused aggregate prove exact decoding and polynomial charged machine cost in the binary input size; nine native boundary checks passed |
-| Explicit error and random-bit schedules | 56 Lean audits included in the focused aggregate bound all four scalar errors and the entire reserved bit bank; connecting these schedules to the complete physical program remains separate |
-| Encoded input and public-size bounds | 32 Lean audits included in the focused aggregate bound the reserved bank in the original sampling-size measure and give cost composition for a supplied polynomial-time realizer; precision is measured by numeric `h` |
-| Limit of stationary rejection | A reviewed ideal-scale family has `p²s→1`, so the unchanged rule's quadratic stationary-trial cost is unavoidable in worst-case order; eight exact finite checks |
-| Smaller padding threshold | Actual ordinary-table counts prove half unpadding acceptance at `U=47d⁵`, with a smaller shape-aware alternative |
-| Limit of this padding construction | A counting argument forces U=Ω(Ln²) in a 2×n family if acceptance stays bounded away from zero |
-| Smaller accuracy and counting-estimator budgets | Exact rational allocations and independent-block median schedules; transition allowances and observable-evaluation costs are reported separately |
-| Lean verification | 869 integrated declaration audits: 863 focused and six standalone; separate component scopes contain 46, 193, and 134 disjoint audits, all using standard foundational axioms |
-| Exact reference algorithms | Uniform and weighted small-fiber DP, cactus cycle coordinates, and graph-block factorization, with explicit work limits |
-| Exact feasible metric range | Rational min-cost flow with primal/dual and infeasibility-cut certificates; no table enumeration |
-| Better fixed cycle mixtures | Exact certificates: over 63% larger gap on the 42-table fixture, beating every rectangle-only mixture; no general mixing or runtime claim |
-| Ordinary worker baseline | Classical inverse-factorial law, exact integer draws, and full-covariance linear moments without sampling; excludes bounds and interaction weights |
-| Exact ideal-chain diagnostics | Executable bounded oracle, 18-case same-law benchmark, and an exact 2×2 obstruction: inverse gap grows at least as U² in this free-cutoff family |
+<!-- END GENERATED CLAIMS -->
+
+## Review and reproduction
+
+Research, implementations, and the reviews labeled “independent” were produced by OpenAI Codex agents under EcoDataLab's direction. Those reviews use separate AI agents to examine AI-produced work. They provide another check, but no outside human MCMC or Lean review is claimed. We invite human reviewers to examine the Markov-chain arguments, formal theorem interfaces, executable semantics, and benchmark design; [contributing guidance](CONTRIBUTING.md) explains the evidence to include.
+
+The native Windows checks were run on project-owned hardware by the same AI-assisted workflow. No outsider reproduction of those runs is recorded. Hosted Linux CI provides a fresh compilation environment, with the trust and scope limits described below. Compiler success establishes the checked Lean statements under their hypotheses and trusted dependencies; it does not establish scientific validity of a commuting model.
+
+## What the research establishes
+
+The ideal-chain bound covers all ordinary equal-total margins, including empty dimensions. The [completion-oracle proofs](docs/completion-oracle-formalization.md) establish equal accepted representation counts, acceptance at least one quarter at `L=3d`, and bounded-retry accuracy. The [dense completion proofs](docs/completion-dense-law.md) construct accurate completion laws at every physical state. The [finite-walk guide](docs/physical-finite-walk.md) connects those laws to restarted output-error bounds, and the [Boolean-law checkpoint](docs/completion-boolean-schedule.md) removes the supplied feasible fallback at the level of the typed finite-word law.
+
+The default checked aggregate now integrates the previously separate encoded-completion, physical-bridge, and both-branch Boolean-law/schedule proofs. Its [current stage receipt](formal/results/completion-aggregate-1236/verification.json) binds the selected audits and authenticated object reuses; environment-inventory validation and fresh Linux reproduction of this stage are pending. The remaining integration is the literal encoded outer walker and a complete machine-cost proof. The [composed complexity review](docs/composed-complexity.md) explains the input-size measure, reserved-bit costs, and unknown compiler-polynomial degree; its assembled sampler proposal is uncompiled and supplies no numerical complete runtime exponent. The final outer-sampler attempt failed; its sources and errors are frozen in [research/outer-sampler](research/outer-sampler/) outside the default formal target. No literal end-to-end sampler verification or application-speed claim follows from the checked components.
+
+Other results include sharp ordinary-table tail and mean bounds, a dense-compatible `128·47⁴d²⁵` inverse-gap bound, padding and rejection obstructions, exact small-fiber samplers, graph-block and cactus methods, certified cycle mixtures, and a classical worker-allocation baseline. [Practical uses](docs/practical-use.md) explains which probability law and tool fit a problem. The [status ledger](docs/status.md) records the detailed proof obligations.
 
 ## Starting points
 
 - [Original research review](115/115-contingency-tables-review.md) and [source manifest](115/source-manifest.json): the preserved October 8, 2026 handoff, including hypotheses to test.
+- [Contributor handoff](docs/handoff.md): checked results, reproduction commands, frozen research, and ordered next-round obligations.
 - [Research status](docs/status.md): current results, limitations, and next proof obligations.
 - [Ideal-only scales and dense-interface limit](docs/ideal-oracle-scales.md), [sharper physical repair](docs/physical-repair-refinement.md), and [automatic branches and feasibility](docs/reduced-all-small-chain.md).
 - [Stationary success and uniform output](docs/physical-stationary-success.md): completion counts, the exact output bijection, and independent stationary retries.
@@ -60,55 +53,39 @@ The repository also supplies sharp ordinary-table tail and mean bounds, exact sa
 - [Completion input-size bounds](docs/completion-input-size.md): binary margin encodings, the public sampling-size measure, and generic deterministic cost composition.
 - [Stationary-rejection obstruction](docs/stationary-success-obstruction.md): why the extra defect mass can force quadratic retries even when ordinary unpadding always succeeds.
 - [Dense-compatible ideal chain](docs/reduced-small-chain.md), [original-chain comparison](docs/small-chain-gap.md), and [sequential padding](docs/sequential-padding.md).
-- [Transport proof](docs/transport-localization.md), [switching and scale proof](docs/scale-audit.md), [error budgets](docs/error-budgets.md), and [independent mathematical review](docs/independent-review.md).
-- [Sharp tail formalization](docs/small-entry-formalization.md), [actual padding bridge](docs/scale-formalization.md), [padding obstruction](docs/padding-barrier.md), and [second independent review](docs/second-checkpoint-review.md).
+- [Transport proof](docs/transport-localization.md), [switching and scale proof](docs/scale-audit.md), [error budgets](docs/error-budgets.md), and [AI-agent mathematical review](docs/independent-review.md).
+- [Sharp tail formalization](docs/small-entry-formalization.md), [actual padding bridge](docs/scale-formalization.md), [padding obstruction](docs/padding-barrier.md), and [second AI-agent review](docs/second-checkpoint-review.md).
 - [Formal verification](docs/formal-verification.md): compiler outcomes, exact pins, and remaining integration work.
-- [Third independent review](docs/third-checkpoint-review.md), [fourth review](docs/fourth-checkpoint-review.md), and [defect-transport research](docs/defect-transport-research.md): checked improvements and limits of the current repair method.
-- [Reference sampler](docs/sampler.md), [linear bounds](docs/linear-bounds.md), and [independent implementation audit](docs/independent-implementation-review.md).
+- [Third AI-agent review](docs/third-checkpoint-review.md), [fourth review](docs/fourth-checkpoint-review.md), and [defect-transport research](docs/defect-transport-research.md): checked improvements and limits of the current repair method.
+- [Reference sampler](docs/sampler.md), [linear bounds](docs/linear-bounds.md), and [AI-agent implementation audit](docs/independent-implementation-review.md).
 - [Cactus sampler](docs/cactus-sampler.md), [graph-block sampler](docs/block-sampler.md), and [correlated-observation budgets](docs/block-budgets.md).
 - [Certified cycle mixtures](docs/cycle-mixtures.md), [ordinary worker baseline](docs/worker-baseline.md), and [larger synthetic commuting benchmarks](docs/commute-scaling.md).
-- [CBEI and commuting applications](docs/cbei-use-cases.md): target laws, source reconciliation, and a public synthetic example.
-- [Executable ideal chain](docs/ideal-chain-experiment.md), [same-law sampling benchmarks](docs/sampler-benchmarks.md), [exact 2×2 analysis](docs/ideal-two-by-two.md), and [fifth independent review](docs/fifth-checkpoint-review.md).
+- [Commuting applications](docs/commuting-use-cases.md): target laws, source reconciliation, a synthetic example, and the [public LODES hold-out backtest](docs/commuting-backtest.md).
+- [Mature worker-law libraries](docs/worker-library-benchmarks.md): measured Python, SciPy, and R comparisons on the same classical law.
+- [Composed complexity](docs/composed-complexity.md): source-level cost accounting and the remaining unknown full machine-time exponent.
+- [Executable ideal chain](docs/ideal-chain-experiment.md), [same-law sampling benchmarks](docs/sampler-benchmarks.md), [exact 2×2 analysis](docs/ideal-two-by-two.md), and [fifth AI-agent review](docs/fifth-checkpoint-review.md).
 - [Contributing](CONTRIBUTING.md): welcome to mathematical corrections, counterexamples, formal proofs, implementations, and reproducible benchmarks.
 
-## Reproduce
+## Reproduce the Python tools
 
-Python 3.10 or newer is required. The core reference implementation uses the standard library.
+Python 3.10 or newer is required. From the repository root, the core checks run directly from source without an installation:
+
+```sh
+make test
+# Or, without Make:
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+```
+
+Both routes support a fresh source checkout without an editable install; tests requiring optional numerical libraries report explicit skips when those libraries are absent. For NumPy-dependent audits and research reports, install the research extra first:
 
 ```sh
 python3 -m pip install -e '.[research]'
-python3 -m unittest discover -s tests -v
 python3 115/audit115.py --output /tmp/audit115-rerun.json
 python3 experiments/independent_crosscheck.py
 python3 scripts/verify_sources.py
 ```
 
-The archived audit and numerical mixture search need NumPy. Saved mixture certificates replay using only exact standard-library arithmetic. Source verification downloads only files in the pinned manifest and checks their Git blob hashes. It does not execute upstream code.
-
-The current [completion aggregate](formal/results/completion-aggregate/verification.json) passed **869 Lean declaration audits: 863 focused plus six standalone**. It integrates 231 previously isolated declarations across nine modules into the default focused target. The encoded completion program's 46 audits, the [physical bridges' 193 audits](formal/results/completion-physical-bridges/verification.json), and the [Boolean-law and schedule checkpoint's 134 audits](formal/results/completion-boolean-schedule/verification.json) remain separate. These scopes contain disjoint named declarations. The aggregate reused validated dependency objects. A subsequent [fresh Linux project build](formal/results/linux-focused-895b45c/verification.json) passed all 863 focused audits at `895b45c`; 111 recorded source hashes match that exact commit. This Linux run trusts the official Mathlib cache and excludes the six standalone and 46+193+134 isolated audits and strict Comparator replay.
-
-The historical eighth checkpoint passed **638 Lean declaration audits**, adding 212 declarations across nine modules. The unchanged Python sources retain the seventh checkpoint's **237 passing tests**; source-hash continuity was checked again. The [Python receipt](reports/checkpoint-verification.json) and [Lean receipts](formal/results/) record environments, source hashes, and exact scope.
-
-Generate the research reports:
-
-```sh
-python3 experiments/scale_report.py --output reports/scale-certificates.json
-python3 experiments/budget_report.py --output reports/budget-comparison.json
-python3 examples/sparse_commute.py --spectral --output reports/sparse-commute.json
-python3 examples/linear_metric_bounds.py --output reports/linear-bounds.json
-python3 experiments/padding_barrier.py --output reports/padding-barrier.json
-python3 experiments/padding_growth.py --output reports/padding-growth.json
-python3 experiments/block_budget_report.py --output reports/block-budget-comparison.json
-python3 examples/cactus_commute.py --output reports/cactus-commute.json
-python3 examples/block_factorization.py --output reports/block-factorization.json
-python3 experiments/worker_baseline.py --output reports/worker-baseline.json
-python3 experiments/commute_scaling.py --output reports/commute-scaling.json
-python3 experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json
-python3 experiments/ideal_two_by_two.py --output reports/ideal-two-by-two.json
-python3 experiments/stationary_success.py --output reports/stationary-success.json
-python3 experiments/lattice_completion.py --output reports/lattice-completion.json
-python3 experiments/sampler_benchmarks.py --draws 500 --warmup 200 --repetitions 2
-```
+Saved mixture certificates replay using exact standard-library arithmetic. Source verification downloads only files in the pinned manifest and checks their Git blob hashes; it does not execute upstream code. The [historical Python receipt](reports/checkpoint-verification.json) records its exact test scope and source hashes. Current command results should be reported with their own environment and source revision.
 
 For a first API example:
 
@@ -122,6 +99,30 @@ table = sampler.sample()
 assert sampler.unrank(sampler.rank(table)) == table
 ```
 
+Generate new report copies under the ignored local directory:
+
+```sh
+mkdir -p .local/reports
+python3 experiments/scale_report.py --output .local/reports/scale-certificates.json
+python3 experiments/budget_report.py --output .local/reports/budget-comparison.json
+python3 examples/sparse_commute.py --spectral --output .local/reports/sparse-commute.json
+python3 examples/linear_metric_bounds.py --output .local/reports/linear-bounds.json
+python3 experiments/padding_barrier.py --output .local/reports/padding-barrier.json
+python3 experiments/padding_growth.py --output .local/reports/padding-growth.json
+python3 experiments/block_budget_report.py --output .local/reports/block-budget-comparison.json
+python3 examples/cactus_commute.py --output .local/reports/cactus-commute.json
+python3 examples/block_factorization.py --output .local/reports/block-factorization.json
+python3 experiments/worker_baseline.py --output .local/reports/worker-baseline.json
+python3 experiments/commute_scaling.py --output .local/reports/commute-scaling.json
+python3 experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json
+python3 experiments/ideal_two_by_two.py --output .local/reports/ideal-two-by-two.json
+python3 experiments/stationary_success.py --output .local/reports/stationary-success.json
+python3 experiments/lattice_completion.py --output .local/reports/lattice-completion.json
+python3 experiments/sampler_benchmarks.py --draws 500 --warmup 200 --repetitions 2
+```
+
+## Reproduce the Lean checks
+
 Lean setup is separate and downloads several GiB of pinned dependencies:
 
 ```sh
@@ -130,15 +131,23 @@ bash scripts/verify_lean.sh standalone
 bash scripts/verify_lean.sh focused
 ```
 
-The [Linux verification record](docs/linux-verification.md) includes an independent focused build at `0aa5a61`, with all 632 checkpoint-8 focused audits passing and 73 recorded source hashes matched to that commit. It covers the finite-table geometry, quarter acceptance, and conditional completion accuracy. A separate full original-theorem build at `5e5d6ef` audited all three original exports. Thor also reproduced the earlier `b14082b` checkpoint: 128 tests, 100 focused modules, and 68 audits. Strict Comparator replay remains unavailable on the tested hosted runner because its sandbox ABI is too old; no Comparator pass is claimed.
+The [claims and evidence ledger](docs/claims-and-evidence.md) and generated summary above bind each saved audit scope to its named declarations, source hashes, and receipt. The current aggregate includes the formerly separate component scopes. Historical component receipts retain their original interfaces and must not be added again to the integrated audit count. Fresh compilation, dependency-cache reuse, and overlapping reproductions remain distinct. Saved historical receipts do not verify later source changes.
 
-## A concrete CBEI example
+The [Linux verification guide](docs/linux-verification.md) and [native Windows guide](docs/windows-verification.md) retain checkpoint scopes, exact commands, and receipts. The [Linux focused receipt](formal/results/linux-focused-895b45c/verification.json) is tied to its historical commit and trusts the official Mathlib cache; it excludes standalone and isolated component audits and strict Comparator replay. Strict Comparator replay remains unverified. The historical hosted runner stopped at its sandbox ABI check. A [newer Linux VM](formal/results/strict-comparator-vm-895b45c/README.md) passed strict preflight, but its 4 GiB memory limit prevented the original theorem closure from building; no candidate export or kernel result was obtained. No Comparator pass is claimed. The [Comparator serial archive](research/comparator-serial/) preserves offline scheduling tests without a real Linux runtime pass. The [runtime-degree archive](research/runtime-degree/) retains separate diagnostic and uncompiled statuses. See the [formal verification ledger](docs/formal-verification.md) and [handoff](docs/handoff.md) for the trust boundaries and next obligations.
+
+## A synthetic commuting example
 
 Our entirely synthetic ten-worker commute example has 42 feasible tables. With exactly the same margins, bounds, and mileage assumptions, uniform aggregate tables give mean annual commute VMT of **18,700**, while conditional individual-worker assignments give about **16,158**. The feasible range, independent of either law, is **9,460–25,080**. These are model comparisons on invented data, not estimates for a real place.
 
 Sparse support matters too: a six-cell cycle can connect a fiber that rectangle moves cannot. Equal weighting of all cycles slightly reduces the gap in the commuting fixture. Tuning the fixed probabilities reverses that result: rational certificates prove a gap improvement over 63% and beat every rectangle-only mixture on that fiber. Connectivity and proposal frequency both matter; this finite result does not establish a general mixing theorem.
 
 For larger problems, the optimizer certifies both metric endpoints on a synthetic 300-destination case with more than 10²³⁶ feasible tables. A separate ordinary worker baseline samples a million-worker case and computes linear metric moments directly. These experiments have explicit work limits and specify different target laws where appropriate.
+
+## Measured performance and public-data checks
+
+On a 20×5 unrestricted table with one million workers, the simple Python urn sampler took **1.00353 seconds per table**, versus **26.40 microseconds** for SciPy Patefield in the retained [worker-library benchmark](docs/worker-library-benchmarks.md). These are median draw-phase times across three repetitions, with batches of two tables, for the same classical conditional-worker law. They measure those implementations on the recorded machine; they do not measure the uniform-table sampler or the `d¹⁷` inverse-gap result.
+
+The [public LODES backtest](docs/commuting-backtest.md) scores 100 overlapping 2×2 cases from one released 2023 Rhode Island county origin–destination job table. Central 95% model intervals include the held-out published cell in **100/100** cases under uniform aggregate tables and **0/100** under the margin-only conditional-worker law. Mean widths are **7,912.36** and **124.64 jobs**, respectively. This descriptive comparison exposes the worker law's failure on that case frame and the uniform law's much wider intervals. The cases are dependent, the data count published jobs, and neither coverage figure establishes calibrated uncertainty or a validated commuting/VMT model.
 
 ## Scope
 

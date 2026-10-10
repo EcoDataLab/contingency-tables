@@ -1,5 +1,7 @@
 # Independent review of the first #115 refinements
 
+Review provenance: “independent” here means a separate AI agent reviewing AI-produced research or code within this project. This is not outside human peer review. Compiler and execution receipts have the narrower scopes stated below.
+
 Review date: 8 October 2026. The pinned upstream revision is
 `openai/math@fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`.
 This targeted review was performed by a separate AI agent from the agents
@@ -300,7 +302,7 @@ The remaining obligations before an end-to-end strengthened theorem are:
 audit outcomes as they become available. This review does not upgrade a
 pending build, local theorem, or finite test into a complete Comparator
 result. The claims above also do not supply missing connectivity, mixing,
-or inferential guarantees for a new weighted or masked CBEI/LEHD model.
+or inferential guarantees for a new weighted or masked commuting/employment model.
 
 ## Pinned source sections inspected
 

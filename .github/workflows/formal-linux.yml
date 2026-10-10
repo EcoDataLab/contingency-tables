@@ -1,9 +1,12 @@
-name: Manual Linux formal verification
-run-name: Linux ${{ inputs.scope }} verification at ${{ github.sha }}
+name: Linux formal verification
+run-name: Linux ${{ inputs.scope || 'focused' }} verification at ${{ github.sha }}
 
-# Deliberately manual: the full closure is expensive, and Comparator must start
-# in a fresh job that has not compiled the submitted proof beforehand.
+# Explicit dispatch or verification tags only: the closure is expensive.
+# Comparator starts in a fresh job without previously compiled submitted proofs.
 on:
+  push:
+    tags:
+      - 'verify-*'
   workflow_dispatch:
     inputs:
       scope:
@@ -24,7 +27,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 360
     env:
-      VERIFY_SCOPE: ${{ inputs.scope }}
+      VERIFY_SCOPE: ${{ inputs.scope || 'focused' }}
       VERIFICATION_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
     defaults:
       run:
@@ -121,7 +124,7 @@ jobs:
           if scope == "comparator":
               passed = passed and all(steps[key] == "success" for key in steps)
           claim = {
-              "focused": "Focused Lean compilation and printed-axiom audit only; no Comparator replay.",
+              "focused": "Focused Lean compilation, named-axiom replay, and compiled-environment theorem/dependency audit; no Comparator replay.",
               "full": "Original theorem-closure Lean compilation and printed-axiom audit only; no Comparator replay.",
               "comparator": "Original three theorems: strict sandboxed Comparator built-in-kernel replay; Nanoda disabled.",
           }[scope] if passed else "No successful verification claim for this run; inspect the failing step."
@@ -139,8 +142,10 @@ jobs:
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: math115-linux-${{ inputs.scope }}-${{ github.run_id }}-${{ github.run_attempt }}
-          path: .tools/linux-verification/
+          name: math115-linux-${{ inputs.scope || 'focused' }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .tools/linux-verification/
+            .local/environment-audits/
           include-hidden-files: true
           if-no-files-found: warn
           retention-days: 30

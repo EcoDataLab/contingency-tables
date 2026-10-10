@@ -1,0 +1,85 @@
+{
+  "status": "frozen source drafts and diagnostic evidence; no numerical complete runtime result",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "b40eeb4f3966a5531ad6219f8f54e7cfdcba42873c6cc8693e2f1ba39442e4c8",
+      "size_bytes": 7392
+    },
+    {
+      "path": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "sha256": "374f51ed92095099c328470b28f166b42b5265dfcad1640ecb1b545b5a6ecb09",
+      "size_bytes": 10344
+    },
+    {
+      "path": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "sha256": "b0be6b51a0611735ea2555e5193eab6a79bff6b98c61ec755492be0cd3da6048",
+      "size_bytes": 12092
+    },
+    {
+      "path": "ResearchBounds/PolynomialCompilerDegree.lean",
+      "sha256": "b7286537ece5de807a9c09c3f07635f2dcea42c50452690c139fb040bf2e883e",
+      "size_bytes": 3659
+    },
+    {
+      "path": "ResearchBounds/TreeDegreeBounds.lean",
+      "sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf",
+      "size_bytes": 8289
+    },
+    {
+      "path": "diagnostics/FreshBitDegreeBounds-attempt-1.log",
+      "sha256": "56d019f42552f5a8b23cc01cca38347069b5d520e14b88dd6e02b4bd46956993",
+      "size_bytes": 268
+    },
+    {
+      "path": "diagnostics/PolynomialCompilerDegree-attempt-1.log",
+      "sha256": "cb61246376a42912953b38d9e02979f5c5b4fa30f9a8ac01fa2adc5e0c724135",
+      "size_bytes": 1483
+    },
+    {
+      "path": "diagnostics/TreeDegreeBounds-attempt-1.log",
+      "sha256": "44ed417e85aa0a1523b09419c5f148b8cd1ad4169133a1f20764bcf24777db69",
+      "size_bytes": 606
+    },
+    {
+      "path": "diagnostics/TreeDegreeBounds-attempt-2.log",
+      "sha256": "6339ebbc8869fa546b2136800ee8dae5de8ca471c397b382fc1e84683f6d3654",
+      "size_bytes": 864
+    },
+    {
+      "path": "diagnostics/TreeDegreeBounds-attempt-3.log",
+      "sha256": "0768a77f7fd24ce8473abf863469c4b31afafa86c5bfa514f4ba33e65938687a",
+      "size_bytes": 302
+    },
+    {
+      "path": "diagnostics/TreeDegreeBounds-attempt-4.log",
+      "sha256": "f92d245f88cac629c770d1a999a945bc89e274a0ac8779d69877a5b821bcc5e3",
+      "size_bytes": 190
+    },
+    {
+      "path": "diagnostics/results.json",
+      "sha256": "e6dec9a86a755ea537f0fe32af0d31c4ec007207e819bd9ebf80bac268ea4a31",
+      "size_bytes": 6760
+    },
+    {
+      "path": "missing-upstream-closure.json",
+      "sha256": "e88701a085e7ed000b2a2ed2201c3690fee74899033ae65e9b49f7820143da2b",
+      "size_bytes": 13879
+    },
+    {
+      "path": "redaction-manifest.json",
+      "sha256": "69f5c741d00a97f18261313cc92ad64d4ba2647c4d0fb44102a29e158aabbc5e",
+      "size_bytes": 4243
+    },
+    {
+      "path": "review-checks.json",
+      "sha256": "a922507235d2faa84dd53e04f0d82fbb29ce133665d35ff0b22bf79533ef7c47",
+      "size_bytes": 442
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "e69d754d4cb2848e673a668210c717ddf10045b91ff93fc0f8cc4c3bceb2cf54",
+      "size_bytes": 12876
+    }
+  ]
+}

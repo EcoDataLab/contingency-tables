@@ -1,0 +1,9 @@
+research/runtime-degree/ResearchBounds/TreeDegreeBounds.lean:35:18: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+research/runtime-degree/ResearchBounds/TreeDegreeBounds.lean:71:6: error: 'change' tactic failed, pattern
+  (constantData b).cost a + (constantData c).cost a + 11 * weight a + 6 * weight b + 31 + (1 + weight b + weight c) ≤
+    ?m.252
+is not definitionally equal to target
+  (pair (constantData b) (constantData c)).cost a + weight (b.cons c) ≤
+    7 * eval (weight a) p + eval (weight a) q + 11 * weight a + 32

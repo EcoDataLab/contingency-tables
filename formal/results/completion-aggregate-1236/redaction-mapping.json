@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "path_token_roles": {
+    "<workspace>": "Exact native source checkout root",
+    "<build>": "Exact normal build output root",
+    "<audit-drivers>": "Exact executed audit driver directory",
+    "<toolchain>": "Exact native toolchain installation root",
+    "<native-root>": "Shared native evidence parent root"
+  },
+  "private_prefix_values_not_published": true,
+  "exact_private_mapping_preserved_by_projection_author": true,
+  "rules": "Only logical path prefixes are replaced. Source, module, axiom and relative path spellings remain unchanged. Source snapshots and audit drivers/logs are byte-exact; empty fresh root log is byte-exact. Reuse JSON logs change only reused_from prefix and preserve all other JSON values and original line-ending convention.",
+  "files": [
+    {
+      "file": "Math115-compile.log",
+      "transforms": [],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_exact_when_no_private_path": true
+    },
+    {
+      "file": "QuadraticCoefficient-compile.log",
+      "transforms": [
+        {
+          "field": "reused_from",
+          "private_prefix_role": "normal build output root",
+          "replacement": "<build>",
+          "replacement_count": 1,
+          "relative_path_suffix_and_other_JSON_values_unchanged": true,
+          "original_log_sha256": "901f7b53373e9a35fbe0d895c29d23426684690d436beca68244659468e0a2a3",
+          "projected_log_sha256": "871d1291ce67d0722c1c8650d8c1ecd453ccc24b0a220c44ecb70b4ae3bc558d"
+        }
+      ],
+      "original_sha256": "901f7b53373e9a35fbe0d895c29d23426684690d436beca68244659468e0a2a3",
+      "projected_sha256": "871d1291ce67d0722c1c8650d8c1ecd453ccc24b0a220c44ecb70b4ae3bc558d",
+      "byte_exact_when_no_private_path": false
+    },
+    {
+      "file": "GlobalDisplayOwnership-compile.log",
+      "transforms": [
+        {
+          "field": "reused_from",
+          "private_prefix_role": "normal build output root",
+          "replacement": "<build>",
+          "replacement_count": 1,
+          "relative_path_suffix_and_other_JSON_values_unchanged": true,
+          "original_log_sha256": "1ee01ca84f625da05c29fd6e75c10aaf6b4b00d35c200bda8e29eb2192e0a20a",
+          "projected_log_sha256": "67c858224183ebc8e9a853f5926e7972c4f7e1cc99e454084c6a0f2bd384a221"
+        }
+      ],
+      "original_sha256": "1ee01ca84f625da05c29fd6e75c10aaf6b4b00d35c200bda8e29eb2192e0a20a",
+      "projected_sha256": "67c858224183ebc8e9a853f5926e7972c4f7e1cc99e454084c6a0f2bd384a221",
+      "byte_exact_when_no_private_path": false
+    },
+    {
+      "file": "RepairCoefficient-compile.log",
+      "transforms": [
+        {
+          "field": "reused_from",
+          "private_prefix_role": "normal build output root",
+          "replacement": "<build>",
+          "replacement_count": 1,
+          "relative_path_suffix_and_other_JSON_values_unchanged": true,
+          "original_log_sha256": "3cb3d03ca8f33e5995f5c483fa5898496acff5e63466ff091683db7261308e76",
+          "projected_log_sha256": "487487b3cc942f522ee7722d472fb6e5b12fad6a9e41049e1267e6600d75e7a4"
+        }
+      ],
+      "original_sha256": "3cb3d03ca8f33e5995f5c483fa5898496acff5e63466ff091683db7261308e76",
+      "projected_sha256": "487487b3cc942f522ee7722d472fb6e5b12fad6a9e41049e1267e6600d75e7a4",
+      "byte_exact_when_no_private_path": false
+    }
+  ]
+}

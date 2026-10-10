@@ -96,7 +96,7 @@ The replay reconstructs the complete fiber and each component kernel, verifies s
 
 The tests independently compare the PSD checker against all principal minors of all **729** symmetric $3\times3$ matrices with entries in $\{-1,0,1\}$. They also cover rational singular matrices, a 201-bit cancellation, zero-mass states, periodic and disconnected chains, malformed probabilities, a sharp two-state gap, and a three-component family whose exact optimum is $1/2$.
 
-## Use for CBEI/LEHD
+## Use for commuting research
 
 This supplies a way to test candidate move-selection rules on small, fully specified commuting tables before considering a larger sampler. The exact target law stays fixed during optimization, so a better gap does not change expected VMT or make either target law empirically correct. The two optimized mixtures differ because the stationary laws differ.
 

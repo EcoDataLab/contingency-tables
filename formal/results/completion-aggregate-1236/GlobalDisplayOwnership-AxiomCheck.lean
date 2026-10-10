@@ -1,0 +1,3 @@
+import Math115.GlobalDisplayOwnership
+#print axioms Math115.GlobalDisplayOwnership.edge_owner_unique
+#print axioms Math115.GlobalDisplayOwnership.edge_prefix_unique

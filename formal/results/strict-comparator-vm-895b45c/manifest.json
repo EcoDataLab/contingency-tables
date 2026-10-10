@@ -1,0 +1,11 @@
+{
+  "record_type": "strict-comparator-failure-evidence-bundle",
+  "status": "environment_resource_failure_before_comparison",
+  "files_sha256": {
+    "README.md": "610bd44251b3c88a9cb13dfb4dd67539b59d26a8ee7d60d6b457d919211f9c64",
+    "strict-comparator-attempt.json": "409d43866788d196ecca14fd48f6e61253eabb0c79f8d51f4b3041df1ad168a7",
+    "strict-comparator-failed-build.log": "ef54b99ebd8089081f4a5e024d96bb1a23131e139b6fbb6d89c182e1037554f1"
+  },
+  "public_log_transform": "private workspace prefix and generated service identifier only; raw evidence archived privately",
+  "review": "Separate AI-agent review checked all 146 log lines, the 29 ordered ENOMEM diagnostics, pins, sandbox probes, failure scope, and exact documented path/service redactions against the archived raw evidence."
+}

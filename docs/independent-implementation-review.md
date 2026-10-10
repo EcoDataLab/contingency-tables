@@ -1,5 +1,7 @@
 # Independent implementation review
 
+Review provenance: “independent” here means a separate AI agent reviewing AI-produced research or code within this project. This is not outside human peer review. Compiler and execution receipts have the narrower scopes stated below.
+
 Reviewed 8 October 2026. The audit report records SHA-256 hashes of the reviewed
 implementation files and its own script, so the result can be tied to exact
 source contents. This review covers `tables.py`, `kernels.py`, and `optimize.py`.

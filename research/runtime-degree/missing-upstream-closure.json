@@ -1,0 +1,222 @@
+{
+  "missing_module_count": 43,
+  "topological_order": [
+    "OAI.Combinatorics.MatchingCount.Graphs.AdaptiveStream",
+    "OAI.Combinatorics.MatchingCount.Graphs.ExperimentSupport",
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalPost",
+    "OAI.Combinatorics.MatchingCount.Machines.CoinTM1",
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalRestriction",
+    "OAI.Combinatorics.MatchingCount.Machines.CoinTM1Finite",
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalProcess",
+    "OAI.Combinatorics.MatchingCount.Tapes.PhysicalAlphabet",
+    "OAI.Combinatorics.MatchingCount.Graphs.SafeTrace",
+    "OAI.Combinatorics.MatchingCount.Tapes.CoinAlphabet",
+    "OAI.Combinatorics.MatchingCount.Tapes.CoinStack",
+    "OAI.Combinatorics.MatchingCount.Tapes.CoinSupport",
+    "OAI.Combinatorics.MatchingCount.Tapes.OnlineStackCompiler",
+    "OAI.Combinatorics.MatchingCount.Tapes.Online",
+    "OAI.Combinatorics.MatchingCount.Tapes.OnlineComposition",
+    "OAI.Combinatorics.MatchingCount.Machines.OnlineTree",
+    "OAI.Combinatorics.MatchingCount.Machines.OnlineControl",
+    "OAI.Combinatorics.MatchingCount.Machines.OnlineFold",
+    "OAI.Combinatorics.MatchingCount.Tapes.OnlineWord",
+    "OAI.Combinatorics.MatchingCount.Machines.OnlineFrame",
+    "OAI.Combinatorics.MatchingCount.Complexity.OnlineCost",
+    "OAI.Combinatorics.MatchingCount.Complexity.OnlineFrameCost",
+    "OAI.Combinatorics.MatchingCount.Complexity.OnlineFoldCost",
+    "OAI.Combinatorics.MatchingCount.Complexity.OnlineWordCost",
+    "OAI.Combinatorics.ContingencyTables.Machines.FairBits",
+    "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordExecution",
+    "OAI.Combinatorics.MatchingCount.Machines.TreePostRealization",
+    "OAI.Combinatorics.MatchingCount.Machines.TreeProgramUnique",
+    "OAI.Combinatorics.MatchingCount.Tapes.TreeEncodingInjective",
+    "OAI.Combinatorics.MatchingCount.Tapes.TapeTools",
+    "OAI.Combinatorics.MatchingCount.Tapes.Codec",
+    "OAI.Combinatorics.MatchingCount.Tapes.BlockMap",
+    "OAI.Combinatorics.MatchingCount.Tapes.Packed",
+    "OAI.Combinatorics.MatchingCount.Tapes.PackedInverse",
+    "OAI.Combinatorics.MatchingCount.Tapes.PackedExecution",
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalSequential",
+    "OAI.Combinatorics.MatchingCount.Tapes.Physical",
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalProgram",
+    "OAI.Combinatorics.MatchingCount.Machines.OnlinePhysicalProgram",
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalProgramMap",
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalProgramSeal",
+    "OAI.Combinatorics.ContingencyTables.Machines.LiteralProgram",
+    "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordMachine"
+  ],
+  "modules": {
+    "OAI.Combinatorics.MatchingCount.Complexity.OnlineWordCost": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Complexity/OnlineWordCost.lean",
+      "sha256": "885c23294a42f8a71fbb9b6b54043ec65f330f8a141d64f22f3ada97b2f50a93"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.OnlineWord": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/OnlineWord.lean",
+      "sha256": "75c0a8442d8ff12ed67f0ef33c106aaf7a94adea9b93b86e7fec4daec19fa781"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.OnlineFold": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/OnlineFold.lean",
+      "sha256": "35c4b6c5e8e1887d8e161a11b6d900066400a7a575e4274f86e5aba08e276255"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.OnlineTree": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/OnlineTree.lean",
+      "sha256": "7bc98deffab1a317c0d552629b1e8cbd472ebe42ada43666fc6b56cab17dd4f0"
+    },
+    "OAI.Combinatorics.MatchingCount.Graphs.ExperimentSupport": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Graphs/ExperimentSupport.lean",
+      "sha256": "52819bd5c11208638951e068c62c83406afd989f98c00690a40a586010d06fa7"
+    },
+    "OAI.Combinatorics.MatchingCount.Graphs.AdaptiveStream": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Graphs/AdaptiveStream.lean",
+      "sha256": "9b9e3068d083c00f303c87e233f8bc8fd949e039716fca4e4a264d65a0863729"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.OnlineComposition": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/OnlineComposition.lean",
+      "sha256": "a76eaa541fd406f7ef0ed9068b800f2c92fe76cbfdb58d29245f1dc472f96742"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.Online": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/Online.lean",
+      "sha256": "3bfe51c18b3318c47e9f09decd998fe6bbbabc0d64c929a01521aad45cde15e9"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.OnlineStackCompiler": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/OnlineStackCompiler.lean",
+      "sha256": "bfc601affd6ce713ada4c13d4127699f6c848e81feff487115bd6240310bc236"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.CoinTM1Finite": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/CoinTM1Finite.lean",
+      "sha256": "ff7b068a812344c65d1370abac56e1aa0b6b80e8bf086cb62e450422051ee51c"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.CoinTM1": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/CoinTM1.lean",
+      "sha256": "2317791e83b6ad071090d08cb354dc6cb343fdebd4f2e19e945959186686aaac"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalPost": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/PhysicalPost.lean",
+      "sha256": "88c328293ffa6989c797312d3bfbf01b7c0970feb6f7cb9231c03dd1275a3c33"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalRestriction": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/PhysicalRestriction.lean",
+      "sha256": "03d3dac064bcbc14f6baa7a79cc22749b628ccd6babc1aff6525c43aae15f8ac"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.PhysicalAlphabet": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/PhysicalAlphabet.lean",
+      "sha256": "d50788d09b9e3f8b82cbb36fe9c6a06172171620538fecf502a21f2b04767159"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalProcess": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/PhysicalProcess.lean",
+      "sha256": "6edb9908436f797077ad713af8c176c6399d9ea56d9e624b2dd589ece2825f34"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.CoinSupport": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/CoinSupport.lean",
+      "sha256": "71f348a71ff27fc9ddbf13484fe406d37faa85bb9a08f80c51a803036befd532"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.CoinAlphabet": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/CoinAlphabet.lean",
+      "sha256": "183af580293a8f9b7782221e89a1aa24b96ad87b6cae5a1f3586672e1526ff53"
+    },
+    "OAI.Combinatorics.MatchingCount.Graphs.SafeTrace": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Graphs/SafeTrace.lean",
+      "sha256": "ac25c13af7ff0e7db9c9fb27feecb627142cb8294947bc388b38bc76d944427f"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.CoinStack": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/CoinStack.lean",
+      "sha256": "f6e661c464407beb33897c36fa5d3dae693bdc70ec9f793419fd04794c8f4e85"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.OnlineControl": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/OnlineControl.lean",
+      "sha256": "90eff5e97c3a1244d025c071ebd718e15843f28e3637273d55240970e8ede825"
+    },
+    "OAI.Combinatorics.MatchingCount.Complexity.OnlineFrameCost": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Complexity/OnlineFrameCost.lean",
+      "sha256": "09611fed85f9da15c922712941de102bf9eb0fc009b630a5f477c9c8b3081514"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.OnlineFrame": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/OnlineFrame.lean",
+      "sha256": "96acd8fa5d2a2b70be259b9bc0b64d18ffc3384d84ee9808c9f5e7115f5b74c4"
+    },
+    "OAI.Combinatorics.MatchingCount.Complexity.OnlineCost": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Complexity/OnlineCost.lean",
+      "sha256": "dd881060b376f520d74ccc217885861c6fa61f86fc11ca7f283e876af0a31d28"
+    },
+    "OAI.Combinatorics.MatchingCount.Complexity.OnlineFoldCost": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Complexity/OnlineFoldCost.lean",
+      "sha256": "58128d276ef469230dffa07113fafbd4ac441435c58c29fccb01e38f67a252fb"
+    },
+    "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordMachine": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Machines/FiniteWordMachine.lean",
+      "sha256": "713631146a22eec40dbb8b31e0d869abc1358a431fdf8b5d6783787ff6412dce"
+    },
+    "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordExecution": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Machines/FiniteWordExecution.lean",
+      "sha256": "30d59f4c23a4935b0d06bb731f4f203ca57a106733a0179e828dd0f8fd3b18d6"
+    },
+    "OAI.Combinatorics.ContingencyTables.Machines.FairBits": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Machines/FairBits.lean",
+      "sha256": "ee6c8303b4a3e7a1b29367416b1a9fb7f522717743c7855763eb7bc20f42e60c"
+    },
+    "OAI.Combinatorics.ContingencyTables.Machines.LiteralProgram": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Machines/LiteralProgram.lean",
+      "sha256": "1f504fac3896d09d1462901ae76bc72a8eee2d407a7ccde4ad49c053e129139d"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.PackedExecution": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/PackedExecution.lean",
+      "sha256": "1f1c5c150ebc8dfb35dc9a1b62e65ed7d9be81f6b0aa40437b864ba6d8710eaa"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.PackedInverse": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/PackedInverse.lean",
+      "sha256": "770da3f35819ea889f55c9dc93860ab77d9f3111993b355f5cbbdd6dcf9ccb69"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.TreeEncodingInjective": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/TreeEncodingInjective.lean",
+      "sha256": "70928dee7dcf94597f53756fb31124cab68d602764f4ba60e80c86bdff2f5ca6"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.TreeProgramUnique": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/TreeProgramUnique.lean",
+      "sha256": "2a289895c137c4089897a1a20e356c9455acdcf2e7ddcf310ca3cfe715c42a75"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.TreePostRealization": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/TreePostRealization.lean",
+      "sha256": "9749c8b8d3d04a6e37afdfa114b36a5de54be09b27c037ba86f4c88a5ef8f9d3"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.BlockMap": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/BlockMap.lean",
+      "sha256": "67d3d54d119f9e3f87133a92ccaf4041495ee1851186dede885431dc1833777e"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.TapeTools": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/TapeTools.lean",
+      "sha256": "42832150e93c2ddce23f8f7ee76c34d10ea9e28f3c00a14838bbc7391ee5190a"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.Codec": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/Codec.lean",
+      "sha256": "085a133a90c9737853f121ed008a7d50461d8057227052a53511348df9a4c4d9"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.Packed": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/Packed.lean",
+      "sha256": "8e652c2edc23ddc69c619f7c7e540d6a77f7413eb56aa4cf1f66b5c1f59e52e8"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.OnlinePhysicalProgram": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/OnlinePhysicalProgram.lean",
+      "sha256": "c5bce0b9a7ff58fcb12b2a0e5a9b7dc997339a71290218f54290f645c9b3251b"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalProgram": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/PhysicalProgram.lean",
+      "sha256": "b33560a7cec1dcfd245f83ea965aab0d7250a2d7098b2cf8bb2c5c5beb4fdc80"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalSequential": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/PhysicalSequential.lean",
+      "sha256": "c81208478a9b2bda0747eb110634ec9c5f7028bee6dc5e019c8032c71d480a5d"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.Physical": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Tapes/Physical.lean",
+      "sha256": "753ff1ad1e75ec6715eb8c01d2e789bba8f741ace7005790be5cb2f46ec4db5a"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalProgramMap": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/PhysicalProgramMap.lean",
+      "sha256": "ec16dc4b569e2ce27c534f5e78245afe482984b0d443c7275bc3fb0f1b1b50d6"
+    },
+    "OAI.Combinatorics.MatchingCount.Machines.PhysicalProgramSeal": {
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/PhysicalProgramSeal.lean",
+      "sha256": "06368d4768140c289da63e79e519a12335d03e115f5721245dc8e9b0460aa06a"
+    }
+  }
+}

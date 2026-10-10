@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "scope": "Archived outer-sampler research sources; excluded from the default target and not part of default verification.",
+  "platform": "native Windows x86_64",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "final_attempt": {
+    "status": "failed",
+    "completed_modules": 673,
+    "reused_modules": 673,
+    "new_successful_compilations": 0,
+    "failed_modules": 3,
+    "dependency_blocked_modules": 9,
+    "source_workers": 2,
+    "threads_per_compiler": 2
+  },
+  "archive_counts": {
+    "sources": 13,
+    "prior_normal_pass_reused": 1,
+    "failed": 3,
+    "dependency_blocked": 9
+  },
+  "separate_validated_base": {
+    "focused_declarations": 1236,
+    "standalone_declarations": 6,
+    "archive_included_in_these_results": false
+  },
+  "modules": [
+    {
+      "module": "Math115.LatticeBoundedSampling",
+      "path": "formal/Math115/LatticeBoundedSampling.lean",
+      "sha256": "a67e022d7a472abd3c25508e1bd3253f213eb40d141b6ee2e954deeab533500a",
+      "final_batch_state": "blocked",
+      "imports": [
+        "Init",
+        "Math115.PublicLatticeSampler"
+      ],
+      "normal_compilation_status": "not_attempted_dependency_blocked",
+      "default_target_verification": false
+    },
+    {
+      "module": "Math115.LatticeEmptyOutput",
+      "path": "formal/Math115/LatticeEmptyOutput.lean",
+      "sha256": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26",
+      "final_batch_state": "blocked",
+      "imports": [
+        "Init",
+        "Math115.LatticeSamplerPreparation"
+      ],
+      "normal_compilation_status": "not_attempted_dependency_blocked",
+      "default_target_verification": false
+    },
+    {
+      "module": "Math115.LatticeOuterProgram",
+      "path": "formal/Math115/LatticeOuterProgram.lean",
+      "sha256": "e761386db8e26dc09ed4b2a5b22b5c66c71a2de1223d46c894f9606e9741df8b",
+      "final_batch_state": "blocked",
+      "imports": [
+        "Init",
+        "Math115.LatticeProfileWalk",
+        "Math115.CompletionSamplerProgram",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfileWordProgram",
+        "OAI.Combinatorics.ContingencyTables.Machines.FirstSuccessProgram"
+      ],
+      "normal_compilation_status": "not_attempted_dependency_blocked",
+      "default_target_verification": false
+    },
+    {
+      "module": "Math115.LatticeOuterSemantics",
+      "path": "formal/Math115/LatticeOuterSemantics.lean",
+      "sha256": "c6d28dc634e10b7bbceca52ccf70b8ddd504625806af9d1fa64bf38833d43b0d",
+      "final_batch_state": "blocked",
+      "imports": [
+        "Init",
+        "Math115.LatticeOuterProgram",
+        "Math115.LatticeSamplerPreparation"
+      ],
+      "normal_compilation_status": "not_attempted_dependency_blocked",
+      "default_target_verification": false
+    },
+    {
+      "module": "Math115.LatticeProfileWalk",
+      "path": "formal/Math115/LatticeProfileWalk.lean",
+      "sha256": "2516c2f3965019fd0b58dfccb17200c551c3b570ecd137bac694efc677f269e3",
+      "final_batch_state": "failed",
+      "imports": [
+        "Init",
+        "Math115.LatticeProfileStep",
+        "OAI.Combinatorics.ContingencyTables.Transport.BoundedProfileWalk"
+      ],
+      "normal_compilation_status": "failed",
+      "default_target_verification": false,
+      "diagnostic": {
+        "path": "diagnostics/Math115.LatticeProfileWalk.log",
+        "sha256": "813750b68c00927bd1d9dd86722a84920822bcefc19ad97174f6db5a1620e153",
+        "original_log_sha256": "fdb75d6c08ad619249688c938073e856d98be10bb9c9f945932f91e5c50a40f4",
+        "sanitization": "Only the absolute checkout prefix and path separators were replaced with repository-relative formal/Math115 paths; diagnostic text and line numbers are preserved.",
+        "exit_code": 1,
+        "source_unchanged": true,
+        "elapsed_seconds": 71.10010669997428
+      }
+    },
+    {
+      "module": "Math115.LatticeSampler",
+      "path": "formal/Math115/LatticeSampler.lean",
+      "sha256": "486cf091c5cf7c46e2acc10db7e253e581623d6e364d595a72fe67b5033db78f",
+      "final_batch_state": "blocked",
+      "imports": [
+        "Init",
+        "Math115.LatticeUnitOuter",
+        "Math115.LatticeScheduleProgram"
+      ],
+      "normal_compilation_status": "not_attempted_dependency_blocked",
+      "default_target_verification": false
+    },
+    {
+      "module": "Math115.LatticeSamplerCost",
+      "path": "formal/Math115/LatticeSamplerCost.lean",
+      "sha256": "11a1e019a9f7b7d6c753b1e70891b3d033ed42a7cd962aa8dfd0826bd676dc5e",
+      "final_batch_state": "blocked",
+      "imports": [
+        "Init",
+        "Math115.CompletionEncodingSize",
+        "Math115.LatticeSampler"
+      ],
+      "normal_compilation_status": "not_attempted_dependency_blocked",
+      "default_target_verification": false
+    },
+    {
+      "module": "Math115.LatticeSamplerPreparation",
+      "path": "formal/Math115/LatticeSamplerPreparation.lean",
+      "sha256": "e8e951087c2a299c9ffcf5453f86636b982abd0cab50499acc6c79dbe5fe37b7",
+      "final_batch_state": "failed",
+      "imports": [
+        "Init",
+        "Math115.PhysicalBooleanSampler",
+        "Math115.LatticeProfileStep",
+        "OAI.Combinatorics.ContingencyTables.Sampling.OriginalProfileProgram",
+        "OAI.Combinatorics.ContingencyTables.Sampling.OuterMatrixSemantics",
+        "OAI.Combinatorics.ContingencyTables.Transport.ReferenceCompletionEntries",
+        "OAI.Combinatorics.ContingencyTables.Transport.BoundedProfileWalk"
+      ],
+      "normal_compilation_status": "failed",
+      "default_target_verification": false,
+      "diagnostic": {
+        "path": "diagnostics/Math115.LatticeSamplerPreparation.log",
+        "sha256": "55c1e5b7cb3d9af93886b8e5a8c1464f64676fcd686561ac58fe0673e2a83f67",
+        "original_log_sha256": "f0b215fb156f1b471d68c6eeed3872dd6ef2613866af82313fac66eea0305fcf",
+        "sanitization": "Only the absolute checkout prefix and path separators were replaced with repository-relative formal/Math115 paths; diagnostic text and line numbers are preserved.",
+        "exit_code": 1,
+        "source_unchanged": true,
+        "elapsed_seconds": 69.3725108000217
+      }
+    },
+    {
+      "module": "Math115.LatticeUnitOuter",
+      "path": "formal/Math115/LatticeUnitOuter.lean",
+      "sha256": "0534c6f7d6713ca1047c7512e011b31edcee4389d68d0e9cba2d5f848595d2d8",
+      "final_batch_state": "blocked",
+      "imports": [
+        "Init",
+        "Math115.LatticeOuterSemantics",
+        "Math115.LatticeUnitWalk",
+        "Math115.LatticeEmptyOutput"
+      ],
+      "normal_compilation_status": "not_attempted_dependency_blocked",
+      "default_target_verification": false
+    },
+    {
+      "module": "Math115.LatticeUnitStep",
+      "path": "formal/Math115/LatticeUnitStep.lean",
+      "sha256": "7a52db6059d9eaf875e1beff59d39807bbb3cb7c568a36dcd04882b02602cd19",
+      "final_batch_state": "failed",
+      "imports": [
+        "Init",
+        "Math115.LatticeProfileStep",
+        "Math115.PhysicalBooleanSampler"
+      ],
+      "normal_compilation_status": "failed",
+      "default_target_verification": false,
+      "diagnostic": {
+        "path": "diagnostics/Math115.LatticeUnitStep.log",
+        "sha256": "ed815d064cc0bb031bfc3e9c9482cc476abc7e41744f27c38e36f5ccc7331954",
+        "original_log_sha256": "eb81850263775373727d7d67276c88d42482a4a1bf280d5cab069c85361d6da8",
+        "sanitization": "Only the absolute checkout prefix and path separators were replaced with repository-relative formal/Math115 paths; diagnostic text and line numbers are preserved.",
+        "exit_code": 1,
+        "source_unchanged": true,
+        "elapsed_seconds": 65.63335670006927
+      }
+    },
+    {
+      "module": "Math115.LatticeUnitWalk",
+      "path": "formal/Math115/LatticeUnitWalk.lean",
+      "sha256": "1304fa5c6cac42f52a9bd17e5e0ffa1c93122f2c63a12118c8584229250ea606",
+      "final_batch_state": "blocked",
+      "imports": [
+        "Init",
+        "Math115.LatticeUnitStep",
+        "Math115.LatticeProfileWalk"
+      ],
+      "normal_compilation_status": "not_attempted_dependency_blocked",
+      "default_target_verification": false
+    },
+    {
+      "module": "Math115.PublicLatticeSampler",
+      "path": "formal/Math115/PublicLatticeSampler.lean",
+      "sha256": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245",
+      "final_batch_state": "blocked",
+      "imports": [
+        "Init",
+        "Math115.LatticeSampler",
+        "Math115.CompletionPublicSize",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfilePublicSemantics",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfilePublicMachine",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfileRuntimeBound",
+        "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordTableLaw"
+      ],
+      "normal_compilation_status": "not_attempted_dependency_blocked",
+      "default_target_verification": false
+    },
+    {
+      "module": "Math115.LatticeProfileStep",
+      "path": "formal/Math115/LatticeProfileStep.lean",
+      "sha256": "f5a8b460bcc8da0e14d8139638e50a5cd76c46a6fb621c821c936c6993fafbc5",
+      "final_batch_state": "reused",
+      "imports": [
+        "Init",
+        "Math115.CompletionSamplerSemantics",
+        "Math115.PhysicalReferenceBoolean",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfileTransitionProgram",
+        "OAI.Combinatorics.ContingencyTables.Transport.ListedReferenceDecision"
+      ],
+      "normal_compilation_status": "prior_pass_reused",
+      "default_target_verification": false,
+      "prior_normal_pass": {
+        "elapsed_seconds": 65.19783850002568,
+        "exit_code": 0,
+        "source_unchanged": true,
+        "olean_sha256": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+        "compiler_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "standard_22_name_audit_on_production_object": "not_run"
+    }
+  ],
+  "remaining_obligations": [
+    "Resolve the three current compiler failures while preserving the intended definitions and theorem contracts.",
+    "Compile the nine dependency-blocked modules after their prerequisites pass; no direct compiler results exist for them from the final attempt.",
+    "Run the strict standard 22-name axiom audit on the production LatticeProfileStep object; its normal compilation pass alone does not provide this audit.",
+    "Audit every newly compiled declaration for forbidden axioms and revalidate the intended outer-sampler statement, executable program, cost bounds, and public integration before including these drafts in a default target."
+  ],
+  "new_experiments_or_repairs_in_archive": false
+}

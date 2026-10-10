@@ -108,6 +108,6 @@ Tests compare the detector against explicit simple-cycle enumeration on all **51
 
 ## Application boundary
 
-This is useful when a legitimate support structure decomposes into sparse independent cycles, and as another exact oracle for checking approximate samplers. Many destination-by-mode tables have a dense variable graph and will fail the test. Do not introduce structural zeros or fix uncertain counts to obtain a cactus. A CBEI/LEHD application still needs coherent populations, margins, routing assumptions, and a justified target law. The graph shortcut changes computation; it does not establish empirical validity.
+This is useful when a legitimate support structure decomposes into sparse independent cycles, and as another exact oracle for checking approximate samplers. Many destination-by-mode tables have a dense variable graph and will fail the test. Do not introduce structural zeros or fix uncertain counts to obtain a cactus. A commuting application using LEHD data still needs coherent populations, margins, routing assumptions, and a justified target law. The graph shortcut changes computation; it does not establish empirical validity.
 
 This implementation and derivation were produced with AI assistance. They have executable finite checks and remain open to independent review; there is no Lean certification of this sampler.

@@ -1,5 +1,7 @@
 # Independent review of the fourth publication checkpoint
 
+Review provenance: “independent” here means a separate AI agent reviewing AI-produced research or code within this project. This is not outside human peer review. Compiler and execution receipts have the narrower scopes stated below.
+
 Review date: 9 October 2026 UTC. This is the fifth review batch; the
 publication checkpoint is number four. Separate Codex agents reviewed the
 physical repair integration, exact finite backend, benchmark accounting, and
@@ -118,7 +120,7 @@ interface. Stationary physical success and the outer output law at free
 scales still need their own integration. No complete modified finite-bit
 sampler, machine-runtime proof, general practical speed advantage, or
 extension to arbitrary bounded/weighted models follows from this checkpoint.
-Earlier Linux/Thor checks and strict Comparator limitations retain the
+Earlier Linux/native Windows checks and strict Comparator limitations retain the
 separate scope recorded in the formal ledger.
 
 Subsequent checkpoint 5 adds the

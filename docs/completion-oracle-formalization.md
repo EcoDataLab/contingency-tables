@@ -29,7 +29,7 @@ precisions, four scalar error budgets, and a polynomial bound on the full
 reserved bit bank. Its physical-program identification and composed machine
 cost remain separate obligations.
 
-The current [completion aggregate receipt](../formal/results/completion-aggregate/verification.json) covers 863 focused and six standalone declarations, integrating 231 previously isolated declarations across nine modules. The separate 46-declaration encoded completion-program receipt remains excluded from those counts. The checkpoint-8 Linux run still covers its historical 632 focused declarations; it does not certify the expanded aggregate. Original component guides and receipts retain their frozen checkpoint scope.
+The [current integrated receipt](../formal/results/completion-aggregate-1236/verification.json) includes these completion proofs together with the encoded completion program, physical bridges, and both-branch Boolean law and schedule. See the [claims ledger](claims-and-evidence.md) for counts and the [formal verification record](formal-verification.md) for current reproduction coverage. Original component and Linux receipts retain their frozen checkpoint scopes.
 
 ## Why equal representation matters
 

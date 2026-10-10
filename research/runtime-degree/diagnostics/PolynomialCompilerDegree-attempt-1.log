@@ -1,0 +1,29 @@
+research/runtime-degree/ResearchBounds/PolynomialCompilerDegree.lean:9:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'instMul', which is 'noncomputable'
+research/runtime-degree/ResearchBounds/PolynomialCompilerDegree.lean:12:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'instMul', which is 'noncomputable'
+research/runtime-degree/ResearchBounds/PolynomialCompilerDegree.lean:24:31: error: unsolved goals
+w H : ℕ
+p : ℕ[X]
+e : ℕ
+hp : p.natDegree ≤ e
+h1 : (p + 1).natDegree ≤ e
+⊢ (↑H + ↑w).natDegree = 0
+research/runtime-degree/ResearchBounds/PolynomialCompilerDegree.lean:27:35: error: unsolved goals
+w H : ℕ
+p : ℕ[X]
+e : ℕ
+hp : p.natDegree ≤ e
+h1 : (p + 1).natDegree ≤ e
+h2 : (p * C (H + w)).natDegree ≤ e
+h3 : (0 + p * C (H + w)).natDegree ≤ e
+⊢ (3 + ↑w + ↑H).natDegree ≤ e
+research/runtime-degree/ResearchBounds/PolynomialCompilerDegree.lean:50:61: error: unsolved goals
+width packCost eraseCost unpackCost accesses overhead : ℕ
+p : ℕ[X]
+e : ℕ
+hp : p.natDegree ≤ e
+he : 1 ≤ e
+hpk : ((1 + blockBudget 1 (18 * width) X 0) * C packCost).natDegree ≤ 2
+hout : (C eraseCost + (1 + blockBudget (18 * width) 1 p 0) * C unpackCost).natDegree ≤ 2 * e
+h1 : (p * C accesses).natDegree ≤ e
+h2 : (X + p * C accesses + 1).natDegree ≤ e
+⊢ (2 * ↑accesses).natDegree = 0

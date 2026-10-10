@@ -1,0 +1,12 @@
+{
+  "first_source_snapshot_accessed_utc": "2026-10-10T04:56:50.772790+00:00",
+  "limitation": "Conversation and filesystem timestamps document chronology; this receipt is not external preregistration or a notarized timestamp.",
+  "prior_session_evidence": "The root agent confirms receiving the original f2dda7a355e51fd6d506c61f6355a5834fca2f790fe778abe6e077f4838a2ee4 protocol hash during 2026-10-10 04:52 UTC, before the OD source download/aggregation/scoring.",
+  "protocol_changed_since_original_receipt": false,
+  "protocol_file_mtime_utc": "2026-10-10T04:52:11.529709+00:00",
+  "protocol_sha256": "f2dda7a355e51fd6d506c61f6355a5834fca2f790fe778abe6e077f4838a2ee4",
+  "receipt_status": "Retrospective chronology receipt written after scoring; original protocol bytes are preserved.",
+  "receipt_written_utc": "2026-10-10T05:00:55.198696+00:00",
+  "schema_version": 1,
+  "source_compressed_sha256": "ba52ad6518bb9f9fc09675cf93a77ca3a9de2b8f4a91e15a927e66a0e5642e0a"
+}

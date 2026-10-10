@@ -174,7 +174,7 @@ every value between the endpoints is attainable. Any probability law supported
 on the full fiber has outcomes and a mean within these bounds; a law assigning
 zero probability to some tables can have a narrower supported range.
 
-This gives CBEI research a useful first diagnostic: determine how much an
+This gives commuting research a useful first diagnostic: determine how much an
 unknown destination–mode association can change a **linear** metric before
 choosing behavioral weights or paying for samples. Independent origins with
 fixed additive coefficients can be solved separately and their endpoints
@@ -184,7 +184,7 @@ The optimizer cannot reconcile workers with jobs, repair incompatible source
 universes, infer actual commuting behavior, or justify treating commute VMT as
 all household VMT. Costs depending on allocation, overlapping tensor margins,
 congestion, and nonlinear metrics require additional modeling. The synthetic
-result makes no change to CBEI production data or calibration.
+result is a synthetic commuting benchmark, without production data or empirical calibration.
 
 ## Validation
 

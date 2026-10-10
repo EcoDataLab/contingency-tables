@@ -1,6 +1,6 @@
-# Contingency-table research for commuting and consumption-based emissions
+# Contingency-table research for commuting
 
-This note specifies public research applications of OpenAI result #115. It uses a completely synthetic example and public methodological references. It does not claim that the prototype is a validated commuting model, that a uniform table is a plausible behavioral forecast, or that a table sampler recovers confidential records.
+This note specifies commuting research applications of OpenAI result #115, with broader allocation examples for context. It uses a completely synthetic example and public methodological references. It does not claim that the prototype is a validated commuting model, that a uniform table is a plausible behavioral forecast, or that a table sampler recovers confidential records.
 
 The practical aim is to replace a single unexplained allocation with a reproducible distribution of allocations, while preserving accounting constraints and the distinction between source observations and modeled quantities. The immediate research products are exact small-instance benchmarks, feasibility diagnostics, and conditional sensitivity analyses. A deployable large-scale estimator needs separate computational and empirical validation.
 
@@ -177,3 +177,13 @@ Mathematical verification and model validation answer different questions.
 * **Computational evaluation:** compare time and memory per effective sample of commute VMT or another stated observable. Record initialization, rejected proposals, component structure, seeds, precision, and failure behavior. A polynomial theorem is not evidence that a practical run has mixed.
 
 The first integration milestone should be an adapter tested entirely on public or synthetic inputs, with source-state labels and reproducible uncertainty outputs. Any production application then needs a reviewed source reconciliation, a chosen and tested target law, and independent checks of the downstream commuting or emissions quantities it is meant to inform.
+
+## 8. Public-data evidence and implementation choice
+
+The [public LODES hold-out backtest](commuting-backtest.md) now tests the two margin-only laws against released job counts. It uses all 100 predefined overlapping 2×2 cases from a single 2023 Rhode Island county origin–destination table. With identical margins and feasible tables, central 95% model intervals cover the held-out published cell in 100/100 cases under uniform aggregate tables and 0/100 under the ordinary conditional-worker law. Their mean widths are 7,912.36 and 124.64 jobs. The worker law misses this public case frame; the uniform intervals are much broader.
+
+These cases reuse cells and are not independent replications. The observed counts are released LODES jobs after processing and disclosure protection. This descriptive score does not establish model calibration, explain mode choice, estimate commute VMT, or validate either law for other places and years. It tests county-to-county job association, while the synthetic destination-by-mode example above tests allocation and metric arithmetic.
+
+When the ordinary conditional-worker law is appropriate, mature libraries are practical baselines. In the [same-law library benchmark](worker-library-benchmarks.md), a 20×5 unrestricted table with one million workers took a median 1.00353 seconds per draw in the simple Python urn implementation and 26.40 microseconds in SciPy Patefield. Those draw-phase measurements used three repetitions with two-table batches and exclude separate setup and warmup. They do not measure a uniform-table sampler or the `d¹⁷` ideal-chain result. Match the law, constraints, and timing phases before choosing a method.
+
+The [composed complexity review](composed-complexity.md) separately examines the proposed complete sampler's symbolic cost. Its assembled proposal is uncompiled, and the full machine-time exponent still depends on an unidentified compiler-polynomial degree. A measured worker-library draw time, a proven inverse gap, and that source-level complexity calculation answer different questions.

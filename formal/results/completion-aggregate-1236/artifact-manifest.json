@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "scope": "Public-safe nonreceipt artifact hashes for the integrated native aggregate; verification.json binds this manifest.",
+  "intended_public_destination": "formal/results/completion-aggregate-1236/",
+  "proof_counts": {
+    "focused": 1236,
+    "standalone": 6,
+    "total_unique": 1242
+  },
+  "source_checkout_base_commit": "b021f227a21c7e9252eae78c55ab09c404cc66cd",
+  "source_binding": "Base commit plus exact source/object/runtime freezes; no new HEAD/Linux claim.",
+  "files": {
+    "GlobalDisplayOwnership-AxiomCheck.lean": "cd8fd3d818e520158aa17d63f6c94511bb8b1e97b1cc11a31425d1b8f9e3d75b",
+    "GlobalDisplayOwnership-Source.lean": "fa8ad8925654df18fded12b5d1ec562ff6e0fd7ffe3d1e824c58cd3f833946c4",
+    "GlobalDisplayOwnership-axiom-audit.log": "54de88c8e3aea7cd8b1769839d2a0f6148cd16750c52743c55a97764d25bd61c",
+    "GlobalDisplayOwnership-compile.log": "67c858224183ebc8e9a853f5926e7972c4f7e1cc99e454084c6a0f2bd384a221",
+    "Math115-AxiomCheck.lean": "8373f81481f4084192c554ab7c26730eab60532b4d34f0d482c8f4b81b4d1fae",
+    "Math115-ReproductionRoster.lean": "75523df89d2df8d7c8fd9a664b47b6c07a979ba1e9318a07ebed354379375c0e",
+    "Math115-Source.lean": "bc1b3e1148d5a84da433ac71518620035d5ef581ee7f2f09050db5b250746057",
+    "Math115-axiom-audit.log": "0e7710d0302931a6f612912cedb8542ffd6718d4085c15c54da0b7e15d8302c2",
+    "Math115-compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "QuadraticCoefficient-AxiomCheck.lean": "2408cf2574bb86ffdb66b0ea977de48ce20cc74f270925cbc3949e6e5e5f2c42",
+    "QuadraticCoefficient-Source.lean": "9d023785b272aeb6b819aaa1bc42c7c04f8419522799b64e0b66bb355b91a46a",
+    "QuadraticCoefficient-axiom-audit.log": "46435b37188ec2cbd839d8c18aa09dde60e79201f0959aeca578b19c8e53d3c3",
+    "QuadraticCoefficient-compile.log": "871d1291ce67d0722c1c8650d8c1ecd453ccc24b0a220c44ecb70b4ae3bc558d",
+    "README.md": "5fd91228cd8f9b358fe9306adc4b6752803ad320a0ba1ee7796fd16e7b400173",
+    "RepairCoefficient-AxiomCheck.lean": "4fb1ce35cd7294fa944b1e6d2845e03ff9ac08520c5d6bc420fbd94adadca8da",
+    "RepairCoefficient-Source.lean": "cf1275943fb03dce29c9641d758e56531ee6c2fa42b13dc09110e2d7823ffd60",
+    "RepairCoefficient-axiom-audit.log": "21032fbf5556589270bb6d2010195b598c2fef6b024c23034df70f7a5b361f5b",
+    "RepairCoefficient-compile.log": "487487b3cc942f522ee7722d472fb6e5b12fad6a9e41049e1267e6600d75e7a4",
+    "Standalone-ReproductionRoster.lean": "32c7c21d8a51930b1592db0c484ced0f8416114a6944a09534a27783bc5b7285",
+    "audited-declarations.tsv": "532940dec4beb80ec8467fdc9bda53e29b1f979d81260a650353d042f5f0e7b2",
+    "redaction-mapping.json": "fa5e42d8cd77f363be3923ec0091fd71737c3dae13647e1c5afe1ea92cd3b07d",
+    "reproduction-list.txt": "8a1f67a0e661607c3df337a9f7becc433552eb80e8ee6f5d94b9dceec6e67d55",
+    "runtime-provenance.json": "e7010d7b4e4b585db0e32981ed891bbd10dd9ac1f8eb868f05bd2f6bbcb5d5c5",
+    "source-closure.json": "b5bf8d6eba21dd61e55ed082bcd2d647ede4ee65a2de5d6d52d68c44e8006a71",
+    "source-review.json": "223221f3773b0c5b4ba3599c785136bc792a8c0c92a58f44644f65772daaffbd"
+  },
+  "self_and_receipt_excluded_to_avoid_hash_cycles": true
+}

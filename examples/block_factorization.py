@@ -104,7 +104,7 @@ def run():
     return {
         "schema_version": 1,
         "scope": "Classical block/circulation factorization with exact cycle factors and budgeted DP; no general polynomial-time or wall-clock speedup claim.",
-        "data_classification": "Synthetic graph-family benchmark; not a calibrated commuting model or real CBEI input.",
+        "data_classification": "Synthetic graph-family benchmark; not a calibrated commuting model or observed commuting data.",
         "target_law": "Unit-activity conditional-Poisson law restricted to the stated structural zeros and caps; distinct from an ordinary unconstrained worker urn.",
         "source_sha256": {path: hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
                           for path in ("src/contingency115/tables.py", "src/contingency115/cactus.py",

@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "receipts": [
+    {
+      "id": "integrated-aggregate",
+      "path": "formal/results/completion-aggregate-1236/verification.json",
+      "sha256": "83f004c6417053d657cd3e93c937aff1a4849805d055a3da5638155a9e1d47cc",
+      "label": "Current integrated aggregate",
+      "commit": "b021f227a21c7e9252eae78c55ab09c404cc66cd",
+      "commit_kind": "base_commit_plus_source_hashes",
+      "status": "passed",
+      "scope": "Fresh integrated root compilation with validated normal dependency reuse and four fresh named audits; includes completion program, physical bridges, and Boolean law/schedule. Six standalone audits remain separately identified within this receipt."
+    },
+    {
+      "id": "aggregate",
+      "path": "formal/results/completion-aggregate/verification.json",
+      "sha256": "6508e7bb9fb7e47e3ab4c3e919ed463460c12f88e4267209b48f388166b9abe7",
+      "label": "Historical integrated aggregate",
+      "commit": "b021f227a21c7e9252eae78c55ab09c404cc66cd",
+      "commit_kind": "base_commit_plus_source_hashes",
+      "scope": "Focused root plus three standalone selected audit scopes; dependency objects were reused.",
+      "status": "passed"
+    },
+    {
+      "id": "encoded-completion",
+      "path": "formal/results/completion-program/verification.json",
+      "sha256": "9fbd8c4d0411f08925be172b9dc0f586e328aea04b2d05df67982d4f65dfe478",
+      "label": "Historical encoded completion program",
+      "commit": "b021f227a21c7e9252eae78c55ab09c404cc66cd",
+      "commit_kind": "base_commit_plus_source_hashes",
+      "scope": "Two isolated component modules; polynomial charged cost includes the supplied word.",
+      "status": "passed"
+    },
+    {
+      "id": "physical-bridges",
+      "path": "formal/results/completion-physical-bridges/verification.json",
+      "sha256": "5d356b07680a6754828cc623c68b82b959bf8e999c297e29c2ad3d9b0502f0de",
+      "label": "Historical physical completion bridges",
+      "commit": "b021f227a21c7e9252eae78c55ab09c404cc66cd",
+      "commit_kind": "base_commit_plus_source_hashes",
+      "scope": "Seven isolated component modules; excludes a complete encoded outer walker.",
+      "status": "passed"
+    },
+    {
+      "id": "boolean-schedule",
+      "path": "formal/results/completion-boolean-schedule/verification.json",
+      "sha256": "385a9bb2652d57b578897c55bc614d0449d4d0d7bcdb7fd34772e10f3abc0f95",
+      "label": "Historical both-branch Boolean law and schedule",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "scope": "Three isolated component modules; typed sampler law and numeric schedule cost.",
+      "status": "passed_selected_module_compilations_and_named_audits_private_projection_pending_publication_review"
+    },
+    {
+      "id": "linux-focused",
+      "path": "formal/results/linux-focused-895b45c/verification.json",
+      "sha256": "f408a60af1c2966bdff4ebbbe82208e97a576f1c6e5367067899d0cd6e825a43",
+      "label": "Historical Linux focused reproduction",
+      "commit": "895b45c8bcb0ca7f60e7a6b0b91af89b2ac7c566",
+      "commit_kind": "exact_repository_commit",
+      "scope": "Fresh focused project compilation; official dependency cache trusted; excludes standalone and isolated component audits and strict Comparator replay.",
+      "status": "passed"
+    }
+  ],
+  "disjoint_component_scopes": [
+    "integrated-aggregate"
+  ],
+  "claims": [
+    {
+      "id": "ideal-inverse-gap",
+      "title": "Ideal auxiliary chain",
+      "english_claim": "The feasible ideal auxiliary chain satisfies variance at most 80000 d^17 times energy.",
+      "quantity": "Inverse spectral gap ≤ 80,000d¹⁷",
+      "hypotheses": [
+        "Equal-total natural margins; finite index sets; d=10+(m+1)(n+1)."
+      ],
+      "limitations": [
+        "Ideal completion transitions; a step count does not give machine runtime."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "formal/Math115/IdealRepairRefinement.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.IdealRepairRefinement.feasibleChain_poincare_d17_refined",
+          "source": "formal/Math115/IdealRepairRefinement.lean",
+          "module": "Math115.IdealRepairRefinement"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "integrated-aggregate",
+          "scope": "Fresh integrated root compilation with validated normal dependency reuse and four fresh named audits; includes completion program, physical bridges, and Boolean law/schedule. Six standalone audits remain separately identified within this receipt."
+        }
+      ]
+    },
+    {
+      "id": "finite-word-law",
+      "title": "Finite-word probability law",
+      "english_claim": "The typed both-branch sampler returns a feasible table for each reserved word and its uniform-word output law has total variation at most 2^-h.",
+      "quantity": "Total variation ≤ 2⁻ʰ",
+      "hypotheses": [
+        "Equal-total natural margins, including zero margins and empty dimensions; uniform reserved bits."
+      ],
+      "limitations": [
+        "The typed law uses noncomputable constructions; a complete encoded outer walker remains open."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "formal/Math115/PhysicalBooleanSampler.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.PhysicalBooleanSampler.draw",
+          "source": "formal/Math115/PhysicalBooleanSampler.lean",
+          "module": "Math115.PhysicalBooleanSampler"
+        },
+        {
+          "name": "Math115.PhysicalBooleanSampler.draw_explicit_accuracy",
+          "source": "formal/Math115/PhysicalBooleanSampler.lean",
+          "module": "Math115.PhysicalBooleanSampler"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "integrated-aggregate",
+          "scope": "Fresh integrated root compilation with validated normal dependency reuse and four fresh named audits; includes completion program, physical bridges, and Boolean law/schedule. Six standalone audits remain separately identified within this receipt."
+        }
+      ]
+    },
+    {
+      "id": "component-cost",
+      "title": "Encoded completion and schedule",
+      "english_claim": "The encoded completion draw and numeric schedule realizers have polynomial charged cost; completion semantics identifies output code and accuracy under dense margin hypotheses.",
+      "quantity": "Polynomial charged component cost",
+      "hypotheses": [
+        "Completion: d≥14, equal totals, dimension/free-coordinate bounds, dense margins; supplied finite word. Schedule: encoded margins and precision input."
+      ],
+      "limitations": [
+        "No proved full encoded outer sampler or full machine-cost exponent."
+      ],
+      "evidence_class": "lean_component_cost",
+      "sources": [
+        "formal/Math115/CompletionSamplerProgram.lean",
+        "formal/Math115/CompletionSamplerSemantics.lean",
+        "formal/Math115/LatticeScheduleProgram.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.CompletionSamplerProgram.polynomial_draw",
+          "source": "formal/Math115/CompletionSamplerProgram.lean",
+          "module": "Math115.CompletionSamplerProgram"
+        },
+        {
+          "name": "Math115.CompletionSamplerSemantics.draw_semantics",
+          "source": "formal/Math115/CompletionSamplerSemantics.lean",
+          "module": "Math115.CompletionSamplerSemantics"
+        },
+        {
+          "name": "Math115.LatticeScheduleProgram.polynomial_schedule",
+          "source": "formal/Math115/LatticeScheduleProgram.lean",
+          "module": "Math115.LatticeScheduleProgram"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "integrated-aggregate",
+          "scope": "Fresh integrated root compilation with validated normal dependency reuse and four fresh named audits; includes completion program, physical bridges, and Boolean law/schedule. Six standalone audits remain separately identified within this receipt."
+        }
+      ]
+    },
+    {
+      "id": "executable-references",
+      "title": "Executable references",
+      "english_claim": "Python exact finite-table backends and saved experiments are executable references for finite cases.",
+      "quantity": "Exact finite experiments; scope-specific measured timings",
+      "hypotheses": [
+        "Finite instances and each experiment’s stated target law and constraints."
+      ],
+      "limitations": [
+        "Enumeration grows rapidly; experiments do not prove general mixing or polynomial runtime."
+      ],
+      "evidence_class": "executable_reference",
+      "sources": [
+        "src/contingency115/ideal_chain.py",
+        "reports/sampler-benchmarks.json",
+        "reports/ideal-two-by-two.json"
+      ],
+      "headlines": [],
+      "evidence": []
+    }
+  ],
+  "current_receipt": "integrated-aggregate",
+  "summary_receipt_ids": [
+    "integrated-aggregate",
+    "linux-focused"
+  ]
+}

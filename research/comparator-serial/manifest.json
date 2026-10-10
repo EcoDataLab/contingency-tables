@@ -1,0 +1,150 @@
+{
+  "candidate_files": [
+    "strict_serial_check.py",
+    "no_rebuild_landrun.py",
+    "test_strict_serial_check.py"
+  ],
+  "created_utc": "2026-10-10T05:36:11.703750+00:00",
+  "files": [
+    {
+      "bytes": 1733,
+      "file": "HANDOFF.md",
+      "sha256": "73aab0c61ff5919b5b8bd7a2b45f0093f301751433e7b049ab2666bd06ee6bab"
+    },
+    {
+      "bytes": 12591,
+      "file": "README.md",
+      "sha256": "eaf71168ac0f98270a22d4f34ec8490396e4c3076c2f627d54827d6debe125e0"
+    },
+    {
+      "bytes": 2038,
+      "file": "no_rebuild_landrun.py",
+      "sha256": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7"
+    },
+    {
+      "bytes": 13014,
+      "file": "reviewed-helper/scripts/bootstrap_comparator.sh",
+      "sha256": "f7be322a8c6e166bedc4c9997562746ae6ec2c5ccf4f97b75eb3b7fe72ae9859"
+    },
+    {
+      "bytes": 17955,
+      "file": "reviewed-helper/scripts/build_lean_serial.py",
+      "sha256": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c"
+    },
+    {
+      "bytes": 8640,
+      "file": "reviewed-helper/tests/test_build_lean_serial.py",
+      "sha256": "482461f8527b64056b299c96ff6a913c2b9ce0a4ebd6e1b80de4a580ad2fd2bd"
+    },
+    {
+      "bytes": 7407,
+      "file": "source-inspection/Actions.lean",
+      "sha256": "9c7d7101f89eb1d0618d8a76b86c30d628932ed2d2088db29792fdf88fb1e870"
+    },
+    {
+      "bytes": 66188,
+      "file": "source-inspection/Build_Module.lean",
+      "sha256": "4a84a2896dedea36679a15515043860e28b95e596b28552f56bad1ff1eade27e"
+    },
+    {
+      "bytes": 32056,
+      "file": "source-inspection/CLI_Help.lean",
+      "sha256": "96e99b9bc2df19560f2758b16f5171e11ea479f1c97273177d2ccce1a6afc471"
+    },
+    {
+      "bytes": 13109,
+      "file": "source-inspection/Comparator_Main.lean",
+      "sha256": "bb97e3e56d35431cfc7fbef9153935f85e82cde8cc0fc588ceb0119022646cec"
+    },
+    {
+      "bytes": 7638,
+      "file": "source-inspection/Config_Module.lean",
+      "sha256": "103b9ef6960c849bccb806a6246807809bc91b57b5072225a91f293a539b123c"
+    },
+    {
+      "bytes": 10495,
+      "file": "source-inspection/Facets.lean",
+      "sha256": "0cdc8ba9ac30fe5a51dec9d086b85e3803544dfa8c63ed8deee52efa3e7c9cd1"
+    },
+    {
+      "bytes": 12125,
+      "file": "source-inspection/Job_Monad.lean",
+      "sha256": "b53c57817853f2b7e47401a90741f1914bae931a7773933cb9cd70dc6e429fd8"
+    },
+    {
+      "bytes": 1938,
+      "file": "source-inspection/sources.json",
+      "sha256": "e1543d59cc892b9f40fb48e35ad2b556f0236242904f88fe51a1c2364f58e02e"
+    },
+    {
+      "bytes": 24807,
+      "file": "strict_serial_check.py",
+      "sha256": "a574564d0dffcff7a7e857b48319066dec9a764cdeca6cbd1006d624513e91b9"
+    },
+    {
+      "bytes": 20528,
+      "file": "test_strict_serial_check.py",
+      "sha256": "faf408e033dab34f0c68fcc1b57b6e4ebbc6589e00b195d43dfa659930c475fe"
+    },
+    {
+      "bytes": 5096,
+      "file": "validation-00.log",
+      "sha256": "39c977dfef871f44250562992bdb3b083bd39be1f3421e097ba2283a2d0435e4"
+    },
+    {
+      "bytes": 2341,
+      "file": "validation-01.log",
+      "sha256": "d2aad6373682f8a3670d685feda3e9ee36f1e985bc8dfd798f5d1779b5e755cd"
+    },
+    {
+      "bytes": 0,
+      "file": "validation-02.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1835,
+      "file": "validation.json",
+      "sha256": "f8aca3c641b0b0eb394816e4ed92a833806e01b529d6c30884665afb7286e628"
+    }
+  ],
+  "next_steps": "HANDOFF.md",
+  "official_source_inspection": "source-inspection/sources.json",
+  "original_failed_attempt": "../../formal/results/strict-comparator-vm-895b45c/strict-comparator-attempt.json",
+  "repository_snapshot_sources": [
+    {
+      "file": "reviewed-helper/scripts/build_lean_serial.py",
+      "status": "exact pinned original helper bytes",
+      "url": "https://github.com/EcoDataLab/contingency-tables/blob/895b45c8bcb0ca7f60e7a6b0b91af89b2ac7c566/scripts/build_lean_serial.py"
+    },
+    {
+      "file": "reviewed-helper/scripts/bootstrap_comparator.sh",
+      "status": "exact pinned original strict script/adapter body bytes",
+      "url": "https://github.com/EcoDataLab/contingency-tables/blob/895b45c8bcb0ca7f60e7a6b0b91af89b2ac7c566/scripts/bootstrap_comparator.sh"
+    },
+    {
+      "file": "reviewed-helper/tests/test_build_lean_serial.py",
+      "source": "public repository test snapshot",
+      "status": "includes native-Windows import-boundary test added after the original project pin; exact tested bytes recorded above"
+    }
+  ],
+  "runtime_source_pins": {
+    "comparator": "d03acab154d269c06e60e4de7e4cc85deebff94b",
+    "go": "go1.27.2",
+    "landrun": "811cfff51ceaf3d9843708aa6d22e9b84ccac8b4",
+    "lean": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "lean4export": "076e8e57707e813375e8f9da8bf989799ace9680",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "project": "895b45c8bcb0ca7f60e7a6b0b91af89b2ac7c566",
+    "upstream": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+  },
+  "schema_version": 1,
+  "status": "experimental source-only orchestration; independent review and real strict smoke required",
+  "verification": {
+    "candidate_offline_tests": 33,
+    "lean_lake_systemd_vm_execution": false,
+    "process_service_tests": "mocked",
+    "receipt": "validation.json",
+    "reviewed_planner_offline_tests": 16,
+    "syntax_checks": "passed"
+  }
+}

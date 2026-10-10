@@ -1,0 +1,4 @@
+research/runtime-degree/ResearchBounds/TreeDegreeBounds.lean:35:18: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+research/runtime-degree/ResearchBounds/TreeDegreeBounds.lean:131:59: error: unexpected token ')'; expected term

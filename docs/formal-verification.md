@@ -13,7 +13,21 @@ typed Boolean sampler now has pointwise feasible output and scheduled accuracy,
 and its numeric schedule has polynomial charged cost. Concrete encoded outer-program identification,
 complete sampler runtime, and secure Comparator verification remain open.
 
-The current [completion aggregate](../formal/results/completion-aggregate/verification.json) passed **869 named declaration audits: 863 focused plus six standalone**. It adds 231 previously isolated declarations across nine modules to the default focused target. The 46 declarations of `CompletionSamplerProgram` and `CompletionSamplerSemantics` remain separately audited and excluded. Aggregate compilation and audits reused validated dependency objects; this is not a fresh dependency-closure rebuild. All selected declarations use only `propext`, `Classical.choice`, and `Quot.sound`, or subsets. A subsequent [fresh Linux project build](../formal/results/linux-focused-895b45c/verification.json) passed all 863 focused audits at `895b45c`, with 111 recorded source hashes checked against that exact commit. It trusts the official Mathlib cache and excludes the six standalone and 46+193+134 isolated audits. Strict Comparator verification remains open.
+## Completed stage, 10 October 2026 UTC
+
+The [completed stage aggregate](../formal/results/completion-aggregate-1236/verification.json) passed **1,236 focused plus six standalone named declaration audits (1,242 total)**. Its 583-module normal closure contains 582 authenticated reused modules and one fresh aggregate root; four fresh named-audit checks passed. The formerly separate 46 encoded-program, 193 physical-bridge, and 134 Boolean-law/schedule declarations are now integrated into the default focused target. This is ordinary Lean compilation and selected axiom auditing with reused dependency objects, not a fresh rebuild of every dependency or strict kernel replay. All selected axioms remain within `propext`, `Classical.choice`, and `Quot.sound`, or subsets.
+
+The environment-derived full audit is **pending final validation and import rehashing**; its Lean generation step finished, but no successful exhaustive-inventory result is claimed yet. Fresh Linux reproduction of this staged aggregate is also pending. The old aggregate and Linux `895b45c` receipts remain historical evidence for their exact earlier source scopes.
+
+The final [outer-sampler attempt](../research/outer-sampler/status.json) failed: 673 modules were reused, three failed, nine were dependency-blocked, and no new source compiled successfully in that attempt. `LatticeProfileStep` had passed the preceding normal attempt and was reused; the current failures are `LatticeProfileWalk`, `LatticeSamplerPreparation`, and `LatticeUnitStep`. All 13 attempted outer-sampler sources and diagnostics are frozen under [research/outer-sampler](../research/outer-sampler/) outside the default formal target. No complete literal outer sampler or full machine runtime is verified.
+
+The [runtime-degree archive](../research/runtime-degree/) retains passed TreeDegree diagnostics, a failed PolynomialCompilerDegree diagnostic, and uncompiled fresh-bit/finite-word proposals. The numerical complete runtime exponent is unknown. The [Comparator serial archive](../research/comparator-serial/) retains 33 offline orchestration tests and 16 planner tests, without a real Linux runtime result for that route. The [strict VM attempt](../formal/results/strict-comparator-vm-895b45c/README.md) passed ABI-11 sandbox preflight but exhausted memory before comparison; it produced no candidate export or kernel result.
+
+Use the [contributor handoff](handoff.md) for reproduction and ordered next-round obligations. Reviewed application evidence includes the [mature worker-library benchmark](worker-library-benchmarks.md), [public commuting backtest](commuting-backtest.md), and [source-level composed complexity review](composed-complexity.md). These measure a classical law, describe a public job-table case frame, and retain a symbolic uncompiled cost proposal, respectively; none verifies a complete universal sampler.
+
+Review provenance: the independent source reviews are separate AI-agent reviews within this project. Human MCMC and Lean review is welcome; ordinary compiler outcomes, mathematical review, and strict kernel replay are distinct evidence.
+
+## Historical component evidence
 
 The [Boolean codec/retry module](completion-boolean-program.md)
 passed 25 declaration audits and six native Lean evaluations after checkpoint
@@ -61,7 +75,7 @@ only axiom reports. The final encoded walker and public-machine cost are
 not yet verified. These 66 declarations are now included in the focused
 aggregate; the historical Linux scope remains unchanged.
 
-The [encoded completion program](completion-sampler-program.md) adds two
+The [encoded completion program](completion-sampler-program.md) originally added two
 isolated modules with 32+14 standard-axiom audits. Their actual compiled
 list routine combines computed dense inputs and draws, signed decoding,
 bounded retries and a computed greedy fallback. Whole-word and prefix
@@ -73,10 +87,9 @@ The [receipt](../formal/results/completion-program/verification.json) preserves
 source, object, dependency and audit hashes. The physical list-order bridge
 is covered by the subsequent checkpoint below; outer-program and public
 random-machine composition remain separate. These
-46 audits remain isolated, excluded from the current 863 focused and six
-standalone counts and from the historical Linux result.
+46 declarations are now integrated into the completed stage aggregate. Their original isolated receipt retains its exact scope and does not expand the historical Linux result.
 
-The [computed physical bridges](completion-physical-bridges.md) add seven
+The [computed physical bridges](completion-physical-bridges.md) originally added seven
 isolated modules with `24+2+6+69+21+32+39=193` standard-axiom audits.
 They verify computed physical proposals, actual large-list ordering and
 all-state completion accuracy, reference-walk and explicit finite-law schedule
@@ -88,12 +101,11 @@ logs, and the authenticated 564-module dependency closure. Six objects were
 reused with verified hashes; `ListedLatticeCompletion` was freshly compiled
 with one retained style warning. Earlier fresh predecessor receipts for
 `AdaptiveDenseCompletion` and `CompletionRandomBudget` attest log hashes;
-those earlier logs were not delivered. The 193 names are disjoint from the
-869 aggregate and the isolated 46. Neither the complete Boolean walker nor
+those earlier logs were not delivered. At this historical checkpoint, the 193 names were disjoint from the 869 aggregate and isolated 46. All are now integrated into the completed stage aggregate. Neither the complete Boolean walker nor
 its public-machine runtime is certified by this scope.
 
 The [both-branch Boolean law and computed schedule](completion-boolean-schedule.md)
-add three isolated modules with `16+105+13=134` standard-axiom audits.
+originally added three isolated modules with `16+105+13=134` standard-axiom audits.
 `PhysicalReferenceBoolean` identifies the typed reference-branch word experiment;
 `LatticeScheduleProgram` computes the actual numeric schedule and reservations
 with polynomial charged cost; `PhysicalBooleanSampler` supplies automatic
@@ -105,9 +117,7 @@ The [receipt](../formal/results/completion-boolean-schedule/verification.json)
 binds all three fresh native Windows compilations, authenticated reused
 imports, exact ordered audits, and complete before/expected/after input maps.
 The logs retain nine warnings. The surrounding batches failed, and no failed
-or blocked module is included in the claimed result. These 134 names are
-disjoint from the 869 aggregate and separate 46+193 audits; they add no fresh
-Linux or strict Comparator result and no complete machine-time degree.
+or blocked module is included in the claimed result. These 134 names were disjoint from the historical 869 aggregate and separate 46+193 audits and are now integrated into the completed stage aggregate. Their component receipt adds no fresh Linux or strict Comparator result and no complete machine-time degree.
 
 ## Reproduction
 
@@ -432,7 +442,11 @@ additional verification level.
 
 ## Recorded outcome
 
-The [completion aggregate receipt](../formal/results/completion-aggregate/verification.json) records the current root compilation, exact focused and standalone audit drivers, raw audit logs, source/object hashes, and verification scope. The focused driver selects 863 unique names; the six unchanged standalone names are disjoint. The nine additions contribute `25+52+24+32+25+7+25+3+38=231` declarations. This is a successful scoped aggregate compilation and audit, not a success claim for the surrounding native build: its overall watcher exited with failure because a separate draft failed. Their original isolated receipts remain the evidence for native examples and component-specific checks; those checks were not rerun by the aggregate audit.
+The [completed stage aggregate](../formal/results/completion-aggregate-1236/verification.json) passed **1,236 focused plus six standalone named declaration audits (1,242 total)**. Its 583-module normal closure contains 582 authenticated reused modules and one fresh aggregate root; four fresh named-audit checks passed. The formerly separate 46 encoded-program, 193 physical-bridge, and 134 Boolean-law/schedule declarations are now integrated into the default focused target. This is ordinary Lean compilation and selected axiom auditing with reused dependency objects, not a fresh rebuild of every dependency or strict kernel replay. All selected axioms remain within `propext`, `Classical.choice`, and `Quot.sound`, or subsets.
+
+The environment-derived full audit is **pending final validation and import rehashing**; its Lean generation step finished, but no successful exhaustive-inventory result is claimed yet. Fresh Linux reproduction of this staged aggregate is also pending. The old aggregate and Linux `895b45c` receipts remain historical evidence for their exact earlier source scopes.
+
+The [historical completion aggregate receipt](../formal/results/completion-aggregate/verification.json) records its earlier root compilation, exact focused and standalone audit drivers, raw audit logs, source/object hashes, and verification scope. The focused driver selects 863 unique names; the six unchanged standalone names are disjoint. The nine additions contribute `25+52+24+32+25+7+25+3+38=231` declarations. This is a successful scoped aggregate compilation and audit, not a success claim for the surrounding native build: its overall watcher exited with failure because a separate draft failed. Their original isolated receipts remain the evidence for native examples and component-specific checks; those checks were not rerun by the aggregate audit.
 
 The historical eighth local checkpoint passed on 9 October 2026 UTC with Lean 4.34.1.
 New modules were compiled serially, followed by a fresh aggregate
@@ -442,7 +456,10 @@ Those integrated checks use existing compiled dependency outputs. This is
 
 | Check | Outcome | Evidence |
 |---|---|---|
-| Independent completion-aggregate Linux build | Fresh focused project build and all 863 focused audits passed at `895b45c`; 111 recorded source hashes match that commit; excludes standalone and isolated audits | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37991819113) and [receipt](../formal/results/linux-focused-895b45c/verification.json) |
+| Completed stage aggregate | 1,236 focused plus six standalone named audits passed; 582 authenticated normal object reuses and one fresh root; four fresh named-audit checks | [Stage receipt](../formal/results/completion-aggregate-1236/verification.json) |
+| Environment-derived inventory | Lean generation finished; final validation/import rehash pending; no exhaustive-coverage pass claimed | [Scope and criteria](claims-and-evidence.md#environment-derived-audit) |
+| Fresh Linux stage reproduction | Pending for the new staged source; no new Linux pass claimed | [Linux workflow](linux-verification.md) |
+| Historical completion-aggregate Linux build | Fresh focused project build and all 863 focused audits passed at `895b45c`; 111 recorded source hashes match that commit; excludes standalone and isolated audits | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37991819113) and [receipt](../formal/results/linux-focused-895b45c/verification.json) |
 | Checkpoint 8 aggregate | `Math115.lean` compiled; both axiom audits passed | [Eighth-checkpoint log](../formal/results/eighth-checkpoint.log) |
 | Checkpoint 8 dependency inventory | 228 source modules: 178 unchanged upstream and 50 local; 50 trusted external import entries | [Verification scope](../formal/results/verification.json) and [source provenance](../formal/results/provenance.json) |
 | Checkpoint 8 focused audit | 632 selected declarations passed | [Eighth-checkpoint log](../formal/results/eighth-checkpoint.log) |
@@ -469,10 +486,10 @@ Those integrated checks use existing compiled dependency outputs. This is
 | Checkpoint 2, historical local result | 86 upstream modules in its import closure; 62 focused and six standalone audited declarations | [Historical focused log](../formal/results/focused.log) and [standalone log](../formal/results/standalone.log) |
 | Earlier focused Linux run | Passed at `5e5d6ef`; excludes subsequent local additions | [Run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847572556) |
 | Full original Linux build and audit | **Passed** at `5e5d6ef`: unchanged `UnconditionalMain`/challenge closure and all three original exported sampling/counting theorem audits | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509) and [Linux receipts](../formal/results/linux-runs.json) |
-| Earlier independent Thor run | At `b14082b`: 128 Python tests, 100 freshly compiled source modules, and 68 audited declarations | [Thor verification](thor-verification.md) and [receipt](../formal/results/thor-verification.json) |
-| Strict Comparator | Not passed: hosted runner reported Landlock ABI 7, while ABI 9 was required | [Preflight run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684) |
+| Earlier native Windows run | At `b14082b`: 128 Python tests, 100 freshly compiled source modules, and 68 audited declarations | [Native Windows verification](windows-verification.md) and [receipt](../formal/results/thor-verification.json) |
+| Strict Comparator | Not passed: historical hosted ABI preflight failure; newer VM passed ABI-11 strict preflight but exhausted memory before comparison | [Hosted preflight](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684) and [VM failure receipt](../formal/results/strict-comparator-vm-895b45c/README.md) |
 
-The checkpoint 8 total is **638 selected declarations: 632 focused plus six
+The historical checkpoint 8 total is **638 selected declarations: 632 focused plus six
 standalone, comprising 636 new declarations and two original baseline
 declarations**. All use only the standard allowed axioms `propext`,
 `Classical.choice`, and `Quot.sound`, or subsets.
@@ -480,8 +497,8 @@ declarations**. All use only the standard allowed axioms `propext`,
 [`verification.json`](../formal/results/verification.json) records the exact
 selected declarations, axioms, source hashes, and verification scope.
 Historical checkpoint-8 compilation and audits are retained in
-`eighth-checkpoint.log`; the current expanded aggregate has its separate
-[receipt](../formal/results/completion-aggregate/verification.json). The source pin and unchanged upstream files
+`eighth-checkpoint.log`; the earlier expanded aggregate has its historical
+[receipt](../formal/results/completion-aggregate/verification.json), and the completed stage has a separate [current receipt](../formal/results/completion-aggregate-1236/verification.json). The source pin and unchanged upstream files
 are recorded in provenance, and the focused manifest retains the original
 revision entries. The separate successful original-theorem Linux run audits
 three original sampling/counting exports at its own recorded commit. It is

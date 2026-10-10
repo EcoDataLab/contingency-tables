@@ -1,0 +1,44 @@
+[
+  {
+    "file": "Build_Module.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/5045d0056413266e57c625dcd7c365b10e377c52/src/lake/Lake/Build/Module.lean",
+    "bytes": 66188,
+    "sha256": "4a84a2896dedea36679a15515043860e28b95e596b28552f56bad1ff1eade27e"
+  },
+  {
+    "file": "Actions.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/5045d0056413266e57c625dcd7c365b10e377c52/src/lake/Lake/Build/Actions.lean",
+    "bytes": 7407,
+    "sha256": "9c7d7101f89eb1d0618d8a76b86c30d628932ed2d2088db29792fdf88fb1e870"
+  },
+  {
+    "file": "Config_Module.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/5045d0056413266e57c625dcd7c365b10e377c52/src/lake/Lake/Config/Module.lean",
+    "bytes": 7638,
+    "sha256": "103b9ef6960c849bccb806a6246807809bc91b57b5072225a91f293a539b123c"
+  },
+  {
+    "file": "Facets.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/5045d0056413266e57c625dcd7c365b10e377c52/src/lake/Lake/Build/Facets.lean",
+    "bytes": 10495,
+    "sha256": "0cdc8ba9ac30fe5a51dec9d086b85e3803544dfa8c63ed8deee52efa3e7c9cd1"
+  },
+  {
+    "file": "Job_Monad.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/5045d0056413266e57c625dcd7c365b10e377c52/src/lake/Lake/Build/Job/Monad.lean",
+    "bytes": 12125,
+    "sha256": "b53c57817853f2b7e47401a90741f1914bae931a7773933cb9cd70dc6e429fd8"
+  },
+  {
+    "file": "CLI_Help.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/lean4/5045d0056413266e57c625dcd7c365b10e377c52/src/lake/Lake/CLI/Help.lean",
+    "bytes": 32056,
+    "sha256": "96e99b9bc2df19560f2758b16f5171e11ea479f1c97273177d2ccce1a6afc471"
+  },
+  {
+    "file": "Comparator_Main.lean",
+    "url": "https://raw.githubusercontent.com/leanprover/comparator/d03acab154d269c06e60e4de7e4cc85deebff94b/Main.lean",
+    "bytes": 13109,
+    "sha256": "bb97e3e56d35431cfc7fbef9153935f85e82cde8cc0fc588ceb0119022646cec"
+  }
+]

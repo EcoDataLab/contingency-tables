@@ -4,8 +4,9 @@ On 2026-10-08, a fresh native Windows checkout of public commit
 [`b14082b286b99d0b1ef84efcf59e4d202493d16b`](https://github.com/EcoDataLab/contingency-tables/tree/b14082b286b99d0b1ef84efcf59e4d202493d16b)
 passed all 128 Python tests, replayed the saved cycle-mixture certificates,
 and compiled the complete focused Lean closure. All 68 audited declarations
-passed the printed-axiom allowlist. The machine, called Thor, runs Windows 11
-Pro on x86-64. The numerical checks used only Python's standard library.
+passed the printed-axiom allowlist. The project-owned machine runs Windows 11
+Pro on x86-64. This run was performed by the same AI-assisted project
+workflow; no outsider reproduction is recorded. The numerical checks used only Python's standard library.
 
 | Check | Result |
 |---|---:|
@@ -75,7 +76,7 @@ The native dependency bootstrap passed: 19 cache-tool source modules compiled,
 and the official Mathlib cache download and extraction completed successfully.
 The focused project build passed on 2026-10-08. Its dependency closure contains
 86 original OpenAI modules and 14 refinement modules, including the `Math115`
-aggregate module. Each module compiled freshly on Thor in dependency order,
+aggregate module. Each module compiled freshly on Windows in dependency order,
 one module at a time, with `LEAN_NUM_THREADS=2`. The final readback verified
 the fresh-build records, all 100 resulting `.olean` files, all compiled source
 Git blobs, the unchanged 109-file project checkout, and every dependency pin.

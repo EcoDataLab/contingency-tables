@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "scope": "Public-safe archived research source and diagnostic byte manifest; compile/audit status is in status.json.",
+  "hash_algorithm": "SHA256",
+  "self_hash_note": "The manifest does not list itself.",
+  "checks": {
+    "source_count": 13,
+    "compiler_log_count": 3,
+    "readme_links_resolve": true,
+    "no_private_absolute_paths_or_host_names": true,
+    "no_binaries_or_full_private_metadata": true,
+    "no_new_builds_experiments_or_repairs": true,
+    "all_sources_byte_identical_to_formal_files_at_packaging_time": true,
+    "source_equality_check_scope": "Verified before the original drafts were removed from formal; archived source hashes remain authoritative."
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3946,
+      "sha256": "67fb60b074fddd3887d5fbe8b33c00af75ca6235fd0ad00d435de0d3d34e335d"
+    },
+    {
+      "path": "diagnostics/Math115.LatticeProfileWalk.log",
+      "bytes": 313,
+      "sha256": "813750b68c00927bd1d9dd86722a84920822bcefc19ad97174f6db5a1620e153",
+      "module": "Math115.LatticeProfileWalk",
+      "source_sha256": "2516c2f3965019fd0b58dfccb17200c551c3b570ecd137bac694efc677f269e3",
+      "original_log_sha256": "fdb75d6c08ad619249688c938073e856d98be10bb9c9f945932f91e5c50a40f4"
+    },
+    {
+      "path": "diagnostics/Math115.LatticeSamplerPreparation.log",
+      "bytes": 1930,
+      "sha256": "55c1e5b7cb3d9af93886b8e5a8c1464f64676fcd686561ac58fe0673e2a83f67",
+      "module": "Math115.LatticeSamplerPreparation",
+      "source_sha256": "e8e951087c2a299c9ffcf5453f86636b982abd0cab50499acc6c79dbe5fe37b7",
+      "original_log_sha256": "f0b215fb156f1b471d68c6eeed3872dd6ef2613866af82313fac66eea0305fcf"
+    },
+    {
+      "path": "diagnostics/Math115.LatticeUnitStep.log",
+      "bytes": 812,
+      "sha256": "ed815d064cc0bb031bfc3e9c9482cc476abc7e41744f27c38e36f5ccc7331954",
+      "module": "Math115.LatticeUnitStep",
+      "source_sha256": "7a52db6059d9eaf875e1beff59d39807bbb3cb7c568a36dcd04882b02602cd19",
+      "original_log_sha256": "eb81850263775373727d7d67276c88d42482a4a1bf280d5cab069c85361d6da8"
+    },
+    {
+      "path": "formal/Math115/LatticeBoundedSampling.lean",
+      "bytes": 1581,
+      "sha256": "a67e022d7a472abd3c25508e1bd3253f213eb40d141b6ee2e954deeab533500a",
+      "module": "Math115.LatticeBoundedSampling",
+      "final_batch_state": "blocked"
+    },
+    {
+      "path": "formal/Math115/LatticeEmptyOutput.lean",
+      "bytes": 6153,
+      "sha256": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26",
+      "module": "Math115.LatticeEmptyOutput",
+      "final_batch_state": "blocked"
+    },
+    {
+      "path": "formal/Math115/LatticeOuterProgram.lean",
+      "bytes": 12325,
+      "sha256": "e761386db8e26dc09ed4b2a5b22b5c66c71a2de1223d46c894f9606e9741df8b",
+      "module": "Math115.LatticeOuterProgram",
+      "final_batch_state": "blocked"
+    },
+    {
+      "path": "formal/Math115/LatticeOuterSemantics.lean",
+      "bytes": 7337,
+      "sha256": "c6d28dc634e10b7bbceca52ccf70b8ddd504625806af9d1fa64bf38833d43b0d",
+      "module": "Math115.LatticeOuterSemantics",
+      "final_batch_state": "blocked"
+    },
+    {
+      "path": "formal/Math115/LatticeProfileStep.lean",
+      "bytes": 18036,
+      "sha256": "f5a8b460bcc8da0e14d8139638e50a5cd76c46a6fb621c821c936c6993fafbc5",
+      "module": "Math115.LatticeProfileStep",
+      "final_batch_state": "reused"
+    },
+    {
+      "path": "formal/Math115/LatticeProfileWalk.lean",
+      "bytes": 12094,
+      "sha256": "2516c2f3965019fd0b58dfccb17200c551c3b570ecd137bac694efc677f269e3",
+      "module": "Math115.LatticeProfileWalk",
+      "final_batch_state": "failed"
+    },
+    {
+      "path": "formal/Math115/LatticeSampler.lean",
+      "bytes": 8262,
+      "sha256": "486cf091c5cf7c46e2acc10db7e253e581623d6e364d595a72fe67b5033db78f",
+      "module": "Math115.LatticeSampler",
+      "final_batch_state": "blocked"
+    },
+    {
+      "path": "formal/Math115/LatticeSamplerCost.lean",
+      "bytes": 4420,
+      "sha256": "11a1e019a9f7b7d6c753b1e70891b3d033ed42a7cd962aa8dfd0826bd676dc5e",
+      "module": "Math115.LatticeSamplerCost",
+      "final_batch_state": "blocked"
+    },
+    {
+      "path": "formal/Math115/LatticeSamplerPreparation.lean",
+      "bytes": 23878,
+      "sha256": "e8e951087c2a299c9ffcf5453f86636b982abd0cab50499acc6c79dbe5fe37b7",
+      "module": "Math115.LatticeSamplerPreparation",
+      "final_batch_state": "failed"
+    },
+    {
+      "path": "formal/Math115/LatticeUnitOuter.lean",
+      "bytes": 6922,
+      "sha256": "0534c6f7d6713ca1047c7512e011b31edcee4389d68d0e9cba2d5f848595d2d8",
+      "module": "Math115.LatticeUnitOuter",
+      "final_batch_state": "blocked"
+    },
+    {
+      "path": "formal/Math115/LatticeUnitStep.lean",
+      "bytes": 7865,
+      "sha256": "7a52db6059d9eaf875e1beff59d39807bbb3cb7c568a36dcd04882b02602cd19",
+      "module": "Math115.LatticeUnitStep",
+      "final_batch_state": "failed"
+    },
+    {
+      "path": "formal/Math115/LatticeUnitWalk.lean",
+      "bytes": 9523,
+      "sha256": "1304fa5c6cac42f52a9bd17e5e0ffa1c93122f2c63a12118c8584229250ea606",
+      "module": "Math115.LatticeUnitWalk",
+      "final_batch_state": "blocked"
+    },
+    {
+      "path": "formal/Math115/PublicLatticeSampler.lean",
+      "bytes": 9680,
+      "sha256": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245",
+      "module": "Math115.PublicLatticeSampler",
+      "final_batch_state": "blocked"
+    },
+    {
+      "path": "status.json",
+      "bytes": 10772,
+      "sha256": "da706d3313558983b5959056e859b632cbce57181a63f3a623f3d3ed994c3639"
+    }
+  ]
+}

@@ -1,12 +1,14 @@
-# Manual Linux verification
+# Linux verification
 
-The **Manual Linux formal verification** GitHub Actions workflow runs only on `workflow_dispatch`. Choose the repository commit and one scope in the Actions interface, then retain its run URL and uploaded evidence. It uses the standard `ubuntu-24.04` VM, read-only repository permissions, checkout without retained credentials, no proof-artifact cache, and a six-hour job ceiling. Pushes and pull requests do not trigger this expensive workflow.
+These Linux runs were initiated and assessed by the same AI-assisted project workflow. “Independent” compilation refers to a fresh hosted environment and source closure, not outside human reproduction or peer review. The native Windows checks likewise used project-owned hardware; see [their provenance and scope](windows-verification.md).
+
+The **Linux formal verification** GitHub Actions workflow runs on explicit `workflow_dispatch` requests or a pushed `verify-*` tag. A verification tag runs the focused scope at that exact commit; manual dispatch permits all three scopes. Choose the revision and retain its run URL and uploaded evidence. It uses the standard `ubuntu-24.04` VM, read-only repository permissions, checkout without retained credentials, no proof-artifact cache, and a six-hour job ceiling. Ordinary branch pushes and pull requests do not trigger this expensive workflow. Maintainers can create a named checkpoint with `git tag verify-<checkpoint> <commit>` and push that tag; they should inspect the resulting run before reporting a pass.
 
 | Scope | Work performed | Successful result means |
 |---|---|---|
-| `focused` | Existing focused harness, upstream transport baseline, new refinements, printed-axiom audit | Those modules compiled with the recorded permitted axioms |
+| `focused` | Existing focused harness, upstream transport baseline, new refinements, named-axiom replay and compiled-environment audit | Those modules compiled; every selected environment theorem and six headline dependency closures passed the recorded axiom checks |
 | `full` | Original `UnconditionalMain` and original challenge dependency closure, original three-theorem axiom audit | Full original theorem closure compiled; this is not Comparator replay |
-| `comparator` | Fresh environment, strict Linux sandbox, original challenge JSON, original three theorems, built-in-kernel replay | The recorded original claims passed Comparator under the recorded trusted-environment assumptions |
+| `comparator` | Fresh environment, strict Linux sandbox, original challenge JSON, original three theorems, built-in-kernel replay | Would verify the original claims under the recorded trusted-environment assumptions; no successful replay is recorded here |
 
 The original closure is approximately 1,297 modules and may exceed runner memory, disk, or the verification command's 270-minute allowance. Failure or timeout is reported as **not verified**. The command timeout leaves room to upload logs before the six-hour job limit; forced runner loss can still prevent artifact upload. GitHub documents standard public Linux VMs and their resources [here](https://docs.github.com/en/actions/reference/runners/github-hosted-runners).
 
@@ -22,7 +24,7 @@ The original closure is approximately 1,297 modules and may exceed runner memory
 | Landrun source | `811cfff51ceaf3d9843708aa6d22e9b84ccac8b4` |
 | Go compiler | `go1.27.2`, Linux amd64 archive SHA-256 checked |
 
-Comparator's current master requests Lean 4.35.0-rc4. The selected [Comparator revision](https://github.com/leanprover/comparator/tree/d03acab154d269c06e60e4de7e4cc85deebff94b) and its manifest-pinned exporter declare 4.34.0. The script explicitly rebuilds those unchanged sources with `ELAN_TOOLCHAIN=leanprover/lean4:v4.34.1`, matching the project. Both tools compiled successfully under 4.34.1 on the local macOS development host; that is a source-compatibility check, not a Linux sandbox or proof-verification result. The workflow will repeat their build on Linux. No toolchain file is edited, and no `lake update` runs.
+At setup, Comparator's master requested Lean 4.35.0-rc4. The selected [Comparator revision](https://github.com/leanprover/comparator/tree/d03acab154d269c06e60e4de7e4cc85deebff94b) and its manifest-pinned exporter declare 4.34.0. The script explicitly rebuilds those unchanged sources with `ELAN_TOOLCHAIN=leanprover/lean4:v4.34.1`, matching the project. Both tools compiled successfully under 4.34.1 on the local macOS development host; that is a source-compatibility check, not a Linux sandbox or proof-verification result. The workflow will repeat their build on Linux. No toolchain file is edited, and no `lake update` runs.
 
 Tools and downloads stay under `.tools/`. `bootstrap_lean.sh` retains the original dependency pins. `verify_lean.sh` offers ordinary and serial compilation; `bootstrap_comparator.sh` supplies the additional Linux checks and uses the original challenge JSON. Nanoda is disabled by that original configuration.
 
@@ -36,7 +38,7 @@ An important upstream detail is handled explicitly: the selected Comparator alwa
 
 ## Evidence and reproduction
 
-Every run uploads `.tools/linux-verification/` with its source hashes, kernel/image metadata, tool provenance when reached, bootstrap and verification logs, and a scope-specific outcome. Older committed development logs are not mixed into that artifact. A green focused/full run must not be described as a secure Comparator pass.
+Every run uploads `.tools/linux-verification/` and any `.local/environment-audits/` attempt, with its source hashes, kernel/image metadata, tool provenance when reached, bootstrap and verification logs, and a scope-specific outcome. Older committed development logs are not mixed into that artifact. A green focused/full run must not be described as a secure Comparator pass.
 
 On a fresh compatible Linux x86_64 checkout with an existing user systemd manager:
 
@@ -160,9 +162,9 @@ The downloaded GitHub artifact archive was checked against its API-reported SHA-
 
 [Comparator run 37847722684](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684), at repository commit `5e5d6ef9aa36f7e2a744f3fb8605448529f8be66`, stopped at its preflight on `ubuntu-24.04`. The live Landlock syscall returned **ABI 7**, below the required **ABI 9**. The [failed step](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684/job/113552675743) recorded: `Strict pinned Landrun needs Landlock ABI >= 9; found 7, errno=0. No best-effort fallback.` It exited before Lean/Mathlib downloads or any Comparator proof compilation. Outcome and provenance artifact upload succeeded. This establishes an unavailable sandbox prerequisite, not a failure of the mathematical claims.
 
-The runner's measured ABI is the decisive evidence; a distribution label alone is insufficient. The current official [Ubuntu 26.04 image manifest](https://github.com/actions/runner-images/blob/39c421f5a8a953996a05ba4dc061900ebd939308/images/ubuntu/Ubuntu2604-Readme.md) advertises kernel `7.0.0-1012-azure`. Upstream [Linux 7.0 sets ABI 8](https://github.com/torvalds/linux/blob/v7.0/security/landlock/syscalls.c), while [Linux 7.1 sets ABI 9](https://github.com/torvalds/linux/blob/v7.1/security/landlock/syscalls.c). Thus changing only to that newer hosted label is not a verified remedy; a kernel backport would need to be established by the same runtime probe. No currently documented standard hosted label was verified to supply ABI 9 during this investigation.
+The runner's measured ABI is the decisive evidence; a distribution label alone is insufficient. The [Ubuntu 26.04 image manifest recorded for this investigation](https://github.com/actions/runner-images/blob/39c421f5a8a953996a05ba4dc061900ebd939308/images/ubuntu/Ubuntu2604-Readme.md) advertises kernel `7.0.0-1012-azure`. Upstream [Linux 7.0 sets ABI 8](https://github.com/torvalds/linux/blob/v7.0/security/landlock/syscalls.c), while [Linux 7.1 sets ABI 9](https://github.com/torvalds/linux/blob/v7.1/security/landlock/syscalls.c). Thus changing only to that newer hosted label is not a verified remedy; a kernel backport would need to be established by the same runtime probe. No currently documented standard hosted label was verified to supply ABI 9 during this investigation.
 
-A fresh guest with a pinned Linux 7.1-or-newer kernel and a real systemd user session is a possible later route using [QEMU system emulation](https://www.qemu.org/docs/master/system/target-i386.html). It would need an independently checked guest image, kernel configuration, acceleration availability, and complete sandbox probes before replay. That adds a guest-build and maintenance task, so it is deferred while the ordinary focused/full Linux builds run. A container sharing the present runner kernel cannot supply the missing ABI. No VM installation, paid host, new credentials, or weakened sandbox was introduced.
+At this historical checkpoint, a fresh guest with a pinned Linux 7.1-or-newer kernel and a real systemd user session was a possible later route using [QEMU system emulation](https://www.qemu.org/docs/master/system/target-i386.html). It would need an independently checked guest image, kernel configuration, acceleration availability, and complete sandbox probes before replay. That guest work was deferred at this checkpoint while ordinary focused/full Linux builds ran. A container sharing the present runner kernel cannot supply the missing ABI. No VM installation, paid host, new credentials, or weakened sandbox was introduced for that hosted-runner investigation. A later strict VM attempt is distinguished below.
 
 ## Independent checkpoint 8 replication
 
@@ -212,3 +214,9 @@ separately published 46 encoded-program and 193 physical-bridge audits, the
 full original three-export audit, and strict Comparator replay. It supplies
 independent compilation evidence for the expanded completion aggregate,
 without adding a whole-sampler runtime or practical-performance claim.
+
+## Later strict VM attempt
+
+A [subsequent Linux VM](../formal/results/strict-comparator-vm-895b45c/README.md) reported Landlock ABI 11 and passed the strict sandbox preflight. The original `UnconditionalMain` theorem-closure build then failed after 99 minutes 30 seconds because the VM exhausted its 4 GiB memory allowance. This is a build resource failure after successful preflight, not a Comparator pass. No candidate theorem export or built-in-kernel replay result was obtained. The source and result scopes remain separate from the completed ordinary Linux builds above.
+
+The [VM environment notes](strict-comparator-vm.md) preserve the exact observed configuration, source and tool pins, and outstanding public reproduction gaps. The failed log and its structured receipt remain available for comparison with later attempts.
