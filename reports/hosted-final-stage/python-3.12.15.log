@@ -1,0 +1,647 @@
+﻿2026-10-10T06:24:23.8945040Z Current runner version: '2.337.0'
+2026-10-10T06:24:23.8970593Z ##[group]Runner Image Provisioner
+2026-10-10T06:24:23.8971661Z Hosted Compute Agent
+2026-10-10T06:24:23.8972279Z Version: 20261002.596
+2026-10-10T06:24:23.8972961Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-10T06:24:23.8973761Z Build Date: 2026-10-02T22:28:27Z
+2026-10-10T06:24:23.8974508Z Worker ID: {6d507233-98ce-4384-85bb-a90cb3fd1c25}
+2026-10-10T06:24:23.8975281Z Region: westus
+2026-10-10T06:24:23.8976123Z Cloud: Azure
+2026-10-10T06:24:23.8976733Z ##[endgroup]
+2026-10-10T06:24:23.8978288Z ##[group]Operating System
+2026-10-10T06:24:23.8978958Z Ubuntu
+2026-10-10T06:24:23.8979662Z 24.04.5
+2026-10-10T06:24:23.8980233Z LTS
+2026-10-10T06:24:23.8980743Z ##[endgroup]
+2026-10-10T06:24:23.8981418Z ##[group]Runner Image
+2026-10-10T06:24:23.8982066Z Image: ubuntu-24.04
+2026-10-10T06:24:23.8983070Z Version: 20261004.327.1
+2026-10-10T06:24:23.8984392Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-10T06:24:23.8986263Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-10T06:24:23.8987374Z ##[endgroup]
+2026-10-10T06:24:23.8988531Z ##[group]GITHUB_TOKEN Permissions
+2026-10-10T06:24:23.8990747Z Contents: read
+2026-10-10T06:24:23.8991473Z Metadata: read
+2026-10-10T06:24:23.8992091Z ##[endgroup]
+2026-10-10T06:24:23.8994186Z Secret source: Actions
+2026-10-10T06:24:23.8995344Z Cache mode: write
+2026-10-10T06:24:23.8996571Z Prepare workflow directory
+2026-10-10T06:24:23.9331091Z Prepare all required actions
+2026-10-10T06:24:23.9379324Z Getting action download info
+2026-10-10T06:24:24.3258934Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-10T06:24:24.4354116Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-10-10T06:24:24.6160949Z Complete job name: exact-tests (3.12)
+2026-10-10T06:24:24.7081996Z ##[group]Run actions/checkout@v4
+2026-10-10T06:24:24.7082929Z with:
+2026-10-10T06:24:24.7083419Z   repository: EcoDataLab/contingency-tables
+2026-10-10T06:24:24.7087703Z   token: ***
+2026-10-10T06:24:24.7088204Z   ssh-strict: true
+2026-10-10T06:24:24.7088706Z   ssh-user: git
+2026-10-10T06:24:24.7089210Z   persist-credentials: true
+2026-10-10T06:24:24.7089711Z   clean: true
+2026-10-10T06:24:24.7090163Z   sparse-checkout-cone-mode: true
+2026-10-10T06:24:24.7090687Z   fetch-depth: 1
+2026-10-10T06:24:24.7091174Z   fetch-tags: false
+2026-10-10T06:24:24.7091625Z   show-progress: true
+2026-10-10T06:24:24.7092079Z   lfs: false
+2026-10-10T06:24:24.7092624Z   submodules: false
+2026-10-10T06:24:24.7093373Z   set-safe-directory: true
+2026-10-10T06:24:24.7094018Z   allow-unsafe-pr-checkout: false
+2026-10-10T06:24:24.7095101Z ##[endgroup]
+2026-10-10T06:24:24.8125399Z Syncing repository: EcoDataLab/contingency-tables
+2026-10-10T06:24:24.8128300Z ##[group]Getting Git version info
+2026-10-10T06:24:24.8129678Z Working directory is '/home/runner/work/contingency-tables/contingency-tables'
+2026-10-10T06:24:24.8131534Z [command]/usr/bin/git version
+2026-10-10T06:24:24.8203455Z git version 2.55.0
+2026-10-10T06:24:24.8225895Z ##[endgroup]
+2026-10-10T06:24:24.8241248Z Temporarily overriding HOME='/home/runner/work/_temp/fff4742b-badc-4df0-9ac5-65c57178d9b4' before making global git config changes
+2026-10-10T06:24:24.8243801Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-10T06:24:24.8248070Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/contingency-tables/contingency-tables
+2026-10-10T06:24:24.8301130Z Deleting the contents of '/home/runner/work/contingency-tables/contingency-tables'
+2026-10-10T06:24:24.8307418Z ##[group]Initializing the repository
+2026-10-10T06:24:24.8312024Z [command]/usr/bin/git init /home/runner/work/contingency-tables/contingency-tables
+2026-10-10T06:24:24.8436372Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-10T06:24:24.8438605Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-10T06:24:24.8440184Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-10T06:24:24.8441460Z hint: call:
+2026-10-10T06:24:24.8442112Z hint:
+2026-10-10T06:24:24.8442670Z hint: 	git config --global init.defaultBranch <name>
+2026-10-10T06:24:24.8443314Z hint:
+2026-10-10T06:24:24.8443916Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-10T06:24:24.8444911Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-10T06:24:24.8445960Z hint:
+2026-10-10T06:24:24.8446431Z hint: 	git branch -m <name>
+2026-10-10T06:24:24.8446928Z hint:
+2026-10-10T06:24:24.8447580Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-10T06:24:24.8448743Z Initialized empty Git repository in /home/runner/work/contingency-tables/contingency-tables/.git/
+2026-10-10T06:24:24.8467626Z [command]/usr/bin/git remote add origin https://github.com/EcoDataLab/contingency-tables
+2026-10-10T06:24:24.8509027Z ##[endgroup]
+2026-10-10T06:24:24.8510519Z ##[group]Disabling automatic garbage collection
+2026-10-10T06:24:24.8514014Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-10T06:24:24.8552054Z ##[endgroup]
+2026-10-10T06:24:24.8553345Z ##[group]Setting up auth
+2026-10-10T06:24:24.8560154Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-10T06:24:24.8597098Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-10T06:24:24.8989990Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-10T06:24:24.9039084Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-10T06:24:24.9264613Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-10T06:24:24.9302681Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-10T06:24:24.9531531Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-10T06:24:24.9575917Z ##[endgroup]
+2026-10-10T06:24:24.9578065Z ##[group]Fetching the repository
+2026-10-10T06:24:24.9588628Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +df469a50e32c652093bac17a031b5c2ae6bd8af7:refs/remotes/origin/main
+2026-10-10T06:24:26.3523887Z From https://github.com/EcoDataLab/contingency-tables
+2026-10-10T06:24:26.3547703Z  * [new ref]         df469a50e32c652093bac17a031b5c2ae6bd8af7 -> origin/main
+2026-10-10T06:24:26.3560108Z ##[endgroup]
+2026-10-10T06:24:26.3561622Z ##[group]Determining the checkout info
+2026-10-10T06:24:26.3563206Z ##[endgroup]
+2026-10-10T06:24:26.3564117Z [command]/usr/bin/git sparse-checkout disable
+2026-10-10T06:24:26.3601580Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-10T06:24:26.3639950Z ##[group]Checking out the ref
+2026-10-10T06:24:26.3644359Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-10-10T06:24:26.4637357Z Switched to a new branch 'main'
+2026-10-10T06:24:26.4640560Z branch 'main' set up to track 'origin/main'.
+2026-10-10T06:24:26.4656530Z ##[endgroup]
+2026-10-10T06:24:26.4702066Z [command]/usr/bin/git log -1 --format=%H
+2026-10-10T06:24:26.4730304Z df469a50e32c652093bac17a031b5c2ae6bd8af7
+2026-10-10T06:24:26.5111772Z ##[group]Run actions/setup-python@v5
+2026-10-10T06:24:26.5113052Z with:
+2026-10-10T06:24:26.5114005Z   python-version: 3.12
+2026-10-10T06:24:26.5115093Z   check-latest: false
+2026-10-10T06:24:26.5124264Z   token: ***
+2026-10-10T06:24:26.5125272Z   update-environment: true
+2026-10-10T06:24:26.5126868Z   allow-prereleases: false
+2026-10-10T06:24:26.5127984Z   freethreaded: false
+2026-10-10T06:24:26.5128997Z ##[endgroup]
+2026-10-10T06:24:26.6517246Z ##[group]Installed versions
+2026-10-10T06:24:26.6628114Z (node:2307) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-10T06:24:26.6654186Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-10T06:24:26.6655100Z Successfully set up CPython (3.12.15)
+2026-10-10T06:24:26.6656346Z ##[endgroup]
+2026-10-10T06:24:26.6825306Z ##[group]Run python -m pip install -e '.[research]'
+2026-10-10T06:24:26.6826429Z [36;1mpython -m pip install -e '.[research]'[0m
+2026-10-10T06:24:26.7150526Z shell: /usr/bin/bash -e {0}
+2026-10-10T06:24:26.7150934Z env:
+2026-10-10T06:24:26.7151285Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:26.7151836Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T06:24:26.7152361Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:26.7152799Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:26.7153267Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:26.7153722Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T06:24:26.7154106Z ##[endgroup]
+2026-10-10T06:24:27.5728505Z Obtaining file:///home/runner/work/contingency-tables/contingency-tables
+2026-10-10T06:24:27.5743674Z   Installing build dependencies: started
+2026-10-10T06:24:28.5131643Z   Installing build dependencies: finished with status 'done'
+2026-10-10T06:24:28.5139104Z   Checking if build backend supports build_editable: started
+2026-10-10T06:24:28.8414100Z   Checking if build backend supports build_editable: finished with status 'done'
+2026-10-10T06:24:28.8423020Z   Getting requirements to build editable: started
+2026-10-10T06:24:29.1843519Z   Getting requirements to build editable: finished with status 'done'
+2026-10-10T06:24:29.1852699Z   Preparing editable metadata (pyproject.toml): started
+2026-10-10T06:24:29.3810453Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
+2026-10-10T06:24:29.7023855Z Collecting numpy>=1.24 (from contingency115==0.1.0)
+2026-10-10T06:24:29.7778631Z   Downloading numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+2026-10-10T06:24:29.7949393Z Downloading numpy-2.5.3-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.7 MB)
+2026-10-10T06:24:30.3521199Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.7/16.7 MB 32.1 MB/s  0:00:00
+2026-10-10T06:24:30.3762277Z Building wheels for collected packages: contingency115
+2026-10-10T06:24:30.3771727Z   Building editable for contingency115 (pyproject.toml): started
+2026-10-10T06:24:30.5975053Z   Building editable for contingency115 (pyproject.toml): finished with status 'done'
+2026-10-10T06:24:30.5981060Z   Created wheel for contingency115: filename=contingency115-0.1.0-0.editable-py3-none-any.whl size=14079 sha256=b70d580d02cd117bee1d39c269faf99333c5eb615a58abef5317a053b82115ad
+2026-10-10T06:24:30.5983692Z   Stored in directory: /tmp/pip-ephem-wheel-cache-cfyiq4tp/wheels/f7/c9/b4/87305353d135f09542ae9e258dd0d9dd09bb3d90f9e4f82d8c
+2026-10-10T06:24:30.6006348Z Successfully built contingency115
+2026-10-10T06:24:30.6212557Z Installing collected packages: numpy, contingency115
+2026-10-10T06:24:32.6197895Z 
+2026-10-10T06:24:32.6206959Z Successfully installed contingency115-0.1.0 numpy-2.5.3
+2026-10-10T06:24:32.6870630Z ##[group]Run python -m unittest discover -s tests -v
+2026-10-10T06:24:32.6871084Z [36;1mpython -m unittest discover -s tests -v[0m
+2026-10-10T06:24:32.6937009Z shell: /usr/bin/bash -e {0}
+2026-10-10T06:24:32.6937266Z env:
+2026-10-10T06:24:32.6937539Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:32.6937999Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T06:24:32.6938434Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:32.6939090Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:32.6939475Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:32.6939877Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T06:24:32.6940199Z ##[endgroup]
+2026-10-10T06:24:33.2669543Z test_blocks_can_regress_when_burn_in_is_cheap (test_block_budgets.BlockBudgetTests.test_blocks_can_regress_when_burn_in_is_cheap) ... ok
+2026-10-10T06:24:33.2694599Z test_eighth_policy_reduces_total_work_against_quarter_on_reference_case (test_block_budgets.BlockBudgetTests.test_eighth_policy_reduces_total_work_against_quarter_on_reference_case) ... ok
+2026-10-10T06:24:33.2944912Z test_exact_chebyshev_median_and_coupling_allocations (test_block_budgets.BlockBudgetTests.test_exact_chebyshev_median_and_coupling_allocations) ... ok
+2026-10-10T06:24:33.3131589Z test_exact_general_failure_targets_and_eighth_search_cap (test_block_budgets.BlockBudgetTests.test_exact_general_failure_targets_and_eighth_search_cap) ... ok
+2026-10-10T06:24:33.3157000Z test_exact_lag_bounds_for_two_state_chains (test_block_budgets.BlockBudgetTests.test_exact_lag_bounds_for_two_state_chains) ... ok
+2026-10-10T06:24:33.4888472Z test_exact_majority_tail_and_minimal_odd_count (test_block_budgets.BlockBudgetTests.test_exact_majority_tail_and_minimal_odd_count) ... ok
+2026-10-10T06:24:33.5008645Z test_finite_block_tails_and_independent_median_distribution (test_block_budgets.BlockBudgetTests.test_finite_block_tails_and_independent_median_distribution) ... ok
+2026-10-10T06:24:33.5012183Z test_independence_negative_controls (test_block_budgets.BlockBudgetTests.test_independence_negative_controls) ... ok
+2026-10-10T06:24:33.5020541Z test_input_validation_and_generic_support (test_block_budgets.BlockBudgetTests.test_input_validation_and_generic_support) ... ok
+2026-10-10T06:24:33.5053722Z test_median_law_monotonicity_and_rounding_with_order_changes (test_block_budgets.BlockBudgetTests.test_median_law_monotonicity_and_rounding_with_order_changes) ... ok
+2026-10-10T06:24:33.5490361Z test_stationary_variance_against_full_finite_block_laws (test_block_budgets.BlockBudgetTests.test_stationary_variance_against_full_finite_block_laws) ... ok
+2026-10-10T06:24:33.5499354Z test_work_accounting_tracks_evaluation_tradeoff (test_block_budgets.BlockBudgetTests.test_work_accounting_tracks_evaluation_tradeoff) ... ok
+2026-10-10T06:24:33.5502819Z test_zero_height_and_one_observation_boundaries (test_block_budgets.BlockBudgetTests.test_zero_height_and_one_observation_boundaries) ... ok
+2026-10-10T06:24:33.6909822Z test_all_binary_two_by_three_supports_and_attainable_margins (test_block_sampler.BlockSamplerTests.test_all_binary_two_by_three_supports_and_attainable_margins) ... ok
+2026-10-10T06:24:33.7430247Z test_all_three_by_three_blocks_against_cycle_union_oracle (test_block_sampler.BlockSamplerTests.test_all_three_by_three_blocks_against_cycle_union_oracle) ... ok
+2026-10-10T06:24:33.7553544Z test_bridge_between_components_and_cycle_dp_hybrid (test_block_sampler.BlockSamplerTests.test_bridge_between_components_and_cycle_dp_hybrid) ... ok
+2026-10-10T06:24:33.8427722Z test_complex_blocks_share_articulation_and_fixed_chord (test_block_sampler.BlockSamplerTests.test_complex_blocks_share_articulation_and_fixed_chord) ... ok
+2026-10-10T06:24:33.8452634Z test_correlated_uniform_marginals_do_not_satisfy_rng_contract (test_block_sampler.BlockSamplerTests.test_correlated_uniform_marginals_do_not_satisfy_rng_contract) ... ok
+2026-10-10T06:24:33.8473532Z test_disconnected_empty_and_zero_fibers (test_block_sampler.BlockSamplerTests.test_disconnected_empty_and_zero_fibers) ... ok
+2026-10-10T06:24:33.8612533Z test_exact_weighted_random_choice_tree (test_block_sampler.BlockSamplerTests.test_exact_weighted_random_choice_tree) ... ok
+2026-10-10T06:24:33.8718194Z test_huge_cycle_width_and_many_small_complex_blocks (test_block_sampler.BlockSamplerTests.test_huge_cycle_width_and_many_small_complex_blocks) ... ok
+2026-10-10T06:24:33.9634776Z test_seeded_bounded_product_laws_and_zero_activities (test_block_sampler.BlockSamplerTests.test_seeded_bounded_product_laws_and_zero_activities) ... ok
+2026-10-10T06:24:33.9663311Z test_shared_and_per_block_dp_limits_are_distinct_and_sticky (test_block_sampler.BlockSamplerTests.test_shared_and_per_block_dp_limits_are_distinct_and_sticky) ... ok
+2026-10-10T06:24:33.9678159Z test_shared_cycle_preparation_limit_and_weight_preflight (test_block_sampler.BlockSamplerTests.test_shared_cycle_preparation_limit_and_weight_preflight) ... ok
+2026-10-10T06:24:33.9693168Z test_weighted_dp_failure_precedes_any_rng (test_block_sampler.BlockSamplerTests.test_weighted_dp_failure_precedes_any_rng) ... ok
+2026-10-10T06:24:33.9714429Z test_zero_mass_and_bad_inputs (test_block_sampler.BlockSamplerTests.test_zero_mass_and_bad_inputs) ... ok
+2026-10-10T06:24:33.9716361Z test_cost_and_domination_are_distinct (test_budgets.CorrectionTests.test_cost_and_domination_are_distinct) ... ok
+2026-10-10T06:24:33.9729540Z test_count_bound_against_independent_enumeration (test_budgets.CorrectionTests.test_count_bound_against_independent_enumeration) ... ok
+2026-10-10T06:24:33.9756889Z test_gate_law_and_expected_reads_exhaustively (test_budgets.CorrectionTests.test_gate_law_and_expected_reads_exhaustively) ... ok
+2026-10-10T06:24:34.0633246Z test_residuals_and_mixture_on_all_small_dyadic_laws (test_budgets.CorrectionTests.test_residuals_and_mixture_on_all_small_dyadic_laws) ... ok
+2026-10-10T06:24:34.0671986Z test_sharp_integer_domination_threshold (test_budgets.CorrectionTests.test_sharp_integer_domination_threshold) ... ok
+2026-10-10T06:24:34.0700767Z test_actual_annealing_step_controls_counts_and_mass (test_budgets.CountingBudgetTests.test_actual_annealing_step_controls_counts_and_mass) ... ok
+2026-10-10T06:24:34.0739562Z test_actual_rational_bisection_at_exponent_and_rounding_boundaries (test_budgets.CountingBudgetTests.test_actual_rational_bisection_at_exponent_and_rounding_boundaries) ... ok
+2026-10-10T06:24:34.0759181Z test_bernstein_variance_bound_is_attained_by_an_endpoint_law (test_budgets.CountingBudgetTests.test_bernstein_variance_bound_is_attained_by_an_endpoint_law) ... ok
+2026-10-10T06:24:34.0762806Z test_common_allocation_remains_available (test_budgets.CountingBudgetTests.test_common_allocation_remains_available) ... ok
+2026-10-10T06:24:34.0846598Z test_concentration_coupling_and_mixing_allocations (test_budgets.CountingBudgetTests.test_concentration_coupling_and_mixing_allocations) ... ok
+2026-10-10T06:24:34.0850980Z test_correction_rounding_bounds_cover_the_larger_sigma_range (test_budgets.CountingBudgetTests.test_correction_rounding_bounds_cover_the_larger_sigma_range) ... ok
+2026-10-10T06:24:34.0854442Z test_custom_support_narrower_than_ratio_range (test_budgets.CountingBudgetTests.test_custom_support_narrower_than_ratio_range) ... ok
+2026-10-10T06:24:34.0856391Z test_extracted_counting_gap_constant (test_budgets.CountingBudgetTests.test_extracted_counting_gap_constant) ... ok
+2026-10-10T06:24:34.0891832Z test_product_policy_all_factors_at_boundary (test_budgets.CountingBudgetTests.test_product_policy_all_factors_at_boundary) ... ok
+2026-10-10T06:24:34.0896869Z test_sharp_source_concentration_constants (test_budgets.CountingBudgetTests.test_sharp_source_concentration_constants) ... ok
+2026-10-10T06:24:34.0964802Z test_sharp_source_support_population_and_floor_bounds (test_budgets.CountingBudgetTests.test_sharp_source_support_population_and_floor_bounds) ... ok
+2026-10-10T06:24:34.0967667Z test_source_sigma_policy_compatibility (test_budgets.CountingBudgetTests.test_source_sigma_policy_compatibility) ... ok
+2026-10-10T06:24:34.1212212Z test_logarithms_and_ceilings_without_float (test_budgets.ExactArithmeticTests.test_logarithms_and_ceilings_without_float) ... ok
+2026-10-10T06:24:34.1217064Z test_reject_inexact_or_out_of_domain_inputs (test_budgets.ExactArithmeticTests.test_reject_inexact_or_out_of_domain_inputs) ... ok
+2026-10-10T06:24:34.1237194Z test_dense_failure_uses_exact_survival_probability (test_budgets.SamplingBudgetTests.test_dense_failure_uses_exact_survival_probability) ... ok
+2026-10-10T06:24:34.1238734Z test_generic_mass_and_gap_inputs (test_budgets.SamplingBudgetTests.test_generic_mass_and_gap_inputs) ... ok
+2026-10-10T06:24:34.1434207Z test_offset_formula_against_enumerated_actual_law (test_budgets.SamplingBudgetTests.test_offset_formula_against_enumerated_actual_law) ... ok
+2026-10-10T06:24:34.1452843Z test_outer_three_independent_error_certificates (test_budgets.SamplingBudgetTests.test_outer_three_independent_error_certificates) ... ok
+2026-10-10T06:24:34.1455030Z test_updated_denominator_allowance (test_budgets.SamplingBudgetTests.test_updated_denominator_allowance) ... ok
+2026-10-10T06:24:34.1456844Z test_cycle_rejected (test_build_lean_serial.GraphTests.test_cycle_rejected) ... ok
+2026-10-10T06:24:34.1514819Z test_deep_graph_is_not_limited_by_python_recursion (test_build_lean_serial.GraphTests.test_deep_graph_is_not_limited_by_python_recursion) ... ok
+2026-10-10T06:24:34.1516701Z test_diamond_order_roots_and_external_boundary (test_build_lean_serial.GraphTests.test_diamond_order_roots_and_external_boundary) ... ok
+2026-10-10T06:24:34.1518087Z test_missing_source_propagates (test_build_lean_serial.GraphTests.test_missing_source_propagates) ... ok
+2026-10-10T06:24:34.1519139Z test_implicit_init_and_duplicates (test_build_lean_serial.HeaderTests.test_implicit_init_and_duplicates) ... ok
+2026-10-10T06:24:34.1520917Z test_invalid_header_modifiers_and_unclosed_header_comment (test_build_lean_serial.HeaderTests.test_invalid_header_modifiers_and_unclosed_header_comment) ... ok
+2026-10-10T06:24:34.1522337Z test_module_modifiers_and_same_line_imports (test_build_lean_serial.HeaderTests.test_module_modifiers_and_same_line_imports) ... ok
+2026-10-10T06:24:34.1546634Z test_native_windows_import_and_explicit_cli_boundary (test_build_lean_serial.HeaderTests.test_native_windows_import_and_explicit_cli_boundary) ... ok
+2026-10-10T06:24:34.1547955Z test_nested_comments_and_proof_body_are_not_imports (test_build_lean_serial.HeaderTests.test_nested_comments_and_proof_body_are_not_imports) ... ok
+2026-10-10T06:24:34.1550371Z test_unsupported_imports_fail_instead_of_disappearing (test_build_lean_serial.HeaderTests.test_unsupported_imports_fail_instead_of_disappearing) ... ok
+2026-10-10T06:24:34.1577717Z test_dependencies_checked_then_single_explicit_module_target (test_build_lean_serial.SerialExecutionTests.test_dependencies_checked_then_single_explicit_module_target) ... ok
+2026-10-10T06:24:34.1602666Z test_failed_module_stops_before_next_module (test_build_lean_serial.SerialExecutionTests.test_failed_module_stops_before_next_module) ... ok
+2026-10-10T06:24:34.1618304Z test_interruption_does_not_record_a_success (test_build_lean_serial.SerialExecutionTests.test_interruption_does_not_record_a_success) ... ok
+2026-10-10T06:24:34.1635732Z test_missing_dependency_blocks_compile (test_build_lean_serial.SerialExecutionTests.test_missing_dependency_blocks_compile) ... ok
+2026-10-10T06:24:34.1655489Z test_source_change_during_dependency_check_blocks_compile (test_build_lean_serial.SerialExecutionTests.test_source_change_during_dependency_check_blocks_compile) ... ok
+2026-10-10T06:24:34.1668257Z test_source_removed_before_build_blocks_all_processes (test_build_lean_serial.SerialExecutionTests.test_source_removed_before_build_blocks_all_processes) ... ok
+2026-10-10T06:24:34.3277890Z test_all_binary_two_by_three_supports_and_attainable_margins (test_cactus.CactusTests.test_all_binary_two_by_three_supports_and_attainable_margins) ... ok
+2026-10-10T06:24:34.4051897Z test_all_three_by_three_graphs_against_simple_cycle_oracle (test_cactus.CactusTests.test_all_three_by_three_graphs_against_simple_cycle_oracle) ... ok
+2026-10-10T06:24:34.4057757Z test_binary_encoded_huge_width_uses_mixed_radix (test_cactus.CactusTests.test_binary_encoded_huge_width_uses_mixed_radix) ... ok
+2026-10-10T06:24:34.4099750Z test_cycles_can_share_vertices_and_fixed_chords_are_removed (test_cactus.CactusTests.test_cycles_can_share_vertices_and_fixed_chords_are_removed) ... ok
+2026-10-10T06:24:34.4117498Z test_disconnected_cycles_bridges_and_positive_lower_bounds (test_cactus.CactusTests.test_disconnected_cycles_bridges_and_positive_lower_bounds) ... ok
+2026-10-10T06:24:34.4123461Z test_empty_zero_and_forest_fibers (test_cactus.CactusTests.test_empty_zero_and_forest_fibers) ... ok
+2026-10-10T06:24:34.4128318Z test_rank_parameters_and_structural_budgets (test_cactus.CactusTests.test_rank_parameters_and_structural_budgets) ... ok
+2026-10-10T06:24:34.4159203Z test_storage_plan_with_large_rational_activity_coefficients (test_cactus.CactusTests.test_storage_plan_with_large_rational_activity_coefficients) ... ok
+2026-10-10T06:24:34.4168208Z test_weight_planner_rejects_before_weight_arithmetic_or_rng (test_cactus.CactusTests.test_weight_planner_rejects_before_weight_arithmetic_or_rng) ... ok
+2026-10-10T06:24:34.4169902Z test_weighted_empty_and_validation (test_cactus.CactusTests.test_weighted_empty_and_validation) ... ok
+2026-10-10T06:24:34.4877482Z test_weighted_factorization_against_seeded_dp (test_cactus.CactusTests.test_weighted_factorization_against_seeded_dp) ... ok
+2026-10-10T06:24:34.4886165Z test_weighted_random_choice_tree_is_exact (test_cactus.CactusTests.test_weighted_random_choice_tree_is_exact) ... ok
+2026-10-10T06:24:34.4891289Z test_zero_activities_restrict_intervals_before_planning (test_cactus.CactusTests.test_zero_activities_restrict_intervals_before_planning) ... ok
+2026-10-10T06:24:34.4894112Z test_constant_observable (test_chain_diagnostics.StationaryVarianceTests.test_constant_observable) ... ok
+2026-10-10T06:24:34.4896565Z test_disconnected_different_means (test_chain_diagnostics.StationaryVarianceTests.test_disconnected_different_means) ... ok
+2026-10-10T06:24:34.4911598Z test_disconnected_identical_means_have_finite_stationary_ensemble_limit (test_chain_diagnostics.StationaryVarianceTests.test_disconnected_identical_means_have_finite_stationary_ensemble_limit) ... ok
+2026-10-10T06:24:34.4913045Z test_iid_weighted_two_states (test_chain_diagnostics.StationaryVarianceTests.test_iid_weighted_two_states) ... ok
+2026-10-10T06:24:34.4913909Z test_null_target_states_are_excluded (test_chain_diagnostics.StationaryVarianceTests.test_null_target_states_are_excluded) ... ok
+2026-10-10T06:24:34.4915556Z test_periodic_alternation_has_zero_limit_not_covariance_sum (test_chain_diagnostics.StationaryVarianceTests.test_periodic_alternation_has_zero_limit_not_covariance_sum) ... ok
+2026-10-10T06:24:34.4916922Z test_persistent_two_state_analytic_answer (test_chain_diagnostics.StationaryVarianceTests.test_persistent_two_state_analytic_answer) ... ok
+2026-10-10T06:24:34.4917898Z test_validation_and_resource_failures (test_chain_diagnostics.StationaryVarianceTests.test_validation_and_resource_failures) ... ok
+2026-10-10T06:24:35.1008646Z test_an_omitted_headline_is_not_verified_by_a_large_count (test_claims_ledger.ClaimsLedgerTests.test_an_omitted_headline_is_not_verified_by_a_large_count) ... ok
+2026-10-10T06:24:35.7091845Z test_audit_driver_uses_receipt_modules_and_every_ledger_headline (test_claims_ledger.ClaimsLedgerTests.test_audit_driver_uses_receipt_modules_and_every_ledger_headline) ... ok
+2026-10-10T06:24:35.7115185Z test_changed_raw_log_fails_even_when_receipt_count_is_unchanged (test_claims_ledger.ClaimsLedgerTests.test_changed_raw_log_fails_even_when_receipt_count_is_unchanged) ... ok
+2026-10-10T06:24:35.7130295Z test_changed_receipt_digest_and_unknown_status_fail (test_claims_ledger.ClaimsLedgerTests.test_changed_receipt_digest_and_unknown_status_fail) ... ok
+2026-10-10T06:24:36.9370033Z test_claim_scope_is_bound_and_overlap_claim_fails (test_claims_ledger.ClaimsLedgerTests.test_claim_scope_is_bound_and_overlap_claim_fails) ... ok
+2026-10-10T06:24:37.5182084Z test_commit_binding_kinds_cannot_invent_or_drop_base_commit (test_claims_ledger.ClaimsLedgerTests.test_commit_binding_kinds_cannot_invent_or_drop_base_commit) ... ok
+2026-10-10T06:24:38.1301309Z test_current_summary_prefers_integrated_scope_without_adding_historical_overlap (test_claims_ledger.ClaimsLedgerTests.test_current_summary_prefers_integrated_scope_without_adding_historical_overlap) ... ok
+2026-10-10T06:24:38.7448236Z test_delivered_scopes_replay_and_linux_overlap_is_not_added (test_claims_ledger.ClaimsLedgerTests.test_delivered_scopes_replay_and_linux_overlap_is_not_added) ... ok
+2026-10-10T06:24:38.7451496Z test_empty_claims_cannot_leave_only_counts (test_claims_ledger.ClaimsLedgerTests.test_empty_claims_cannot_leave_only_counts) ... ok
+2026-10-10T06:24:38.7454584Z test_generated_section_replacement_preserves_outside_and_requires_markers (test_claims_ledger.ClaimsLedgerTests.test_generated_section_replacement_preserves_outside_and_requires_markers) ... ok
+2026-10-10T06:24:40.5770192Z test_headline_cannot_be_bound_to_an_unrelated_verified_source (test_claims_ledger.ClaimsLedgerTests.test_headline_cannot_be_bound_to_an_unrelated_verified_source) ... ok
+2026-10-10T06:24:41.1889017Z test_historical_changed_sources_cannot_be_promoted_to_current (test_claims_ledger.ClaimsLedgerTests.test_historical_changed_sources_cannot_be_promoted_to_current) ... ok
+2026-10-10T06:24:41.1891140Z test_paths_cannot_escape_the_repository (test_claims_ledger.ClaimsLedgerTests.test_paths_cannot_escape_the_repository) ... ok
+2026-10-10T06:24:43.0233265Z test_summary_cannot_hide_current_receipt_or_reference_unvalidated_scope (test_claims_ledger.ClaimsLedgerTests.test_summary_cannot_hide_current_receipt_or_reference_unvalidated_scope) ... ok
+2026-10-10T06:24:43.0267196Z test_a_present_nonfile_upstream_path_is_not_treated_as_absent (test_claims_ledger.CleanCloneSourceChecks.test_a_present_nonfile_upstream_path_is_not_treated_as_absent) ... ok
+2026-10-10T06:24:43.0319450Z test_any_present_upstream_file_is_checked_and_changes_reject_current (test_claims_ledger.CleanCloneSourceChecks.test_any_present_upstream_file_is_checked_and_changes_reject_current) ... ok
+2026-10-10T06:24:43.0349618Z test_clean_clone_preserves_exact_upstream_digest_and_reports_unchecked (test_claims_ledger.CleanCloneSourceChecks.test_clean_clone_preserves_exact_upstream_digest_and_reports_unchecked) ... ok
+2026-10-10T06:24:43.0394479Z test_missing_or_changed_headline_source_remains_a_blocker (test_claims_ledger.CleanCloneSourceChecks.test_missing_or_changed_headline_source_remains_a_blocker) ... ok
+2026-10-10T06:24:43.0439799Z test_missing_or_changed_owned_dependency_remains_a_blocker (test_claims_ledger.CleanCloneSourceChecks.test_missing_or_changed_owned_dependency_remains_a_blocker) ... ok
+2026-10-10T06:24:43.0453624Z test_other_ignored_prefix_cannot_hide_missing_owned_inputs (test_claims_ledger.CleanCloneSourceChecks.test_other_ignored_prefix_cannot_hide_missing_owned_inputs) ... ok
+2026-10-10T06:24:43.0483576Z test_unpinned_absent_upstream_is_not_exempt (test_claims_ledger.CleanCloneSourceChecks.test_unpinned_absent_upstream_is_not_exempt) ... ok
+2026-10-10T06:24:43.0500026Z test_budget_and_watchdog_do_not_claim_partial_bounds (test_commute_scaling.CommuteScalingTests.test_budget_and_watchdog_do_not_claim_partial_bounds) ... ok
+2026-10-10T06:24:43.0513020Z test_generator_is_deterministic_nested_and_feasible (test_commute_scaling.CommuteScalingTests.test_generator_is_deterministic_nested_and_feasible) ... ok
+2026-10-10T06:24:43.0563784Z test_small_report_json_reconstructs_verified_results (test_commute_scaling.CommuteScalingTests.test_small_report_json_reconstructs_verified_results) ... ok
+2026-10-10T06:24:43.0569430Z test_switch_product_constructs_distinct_feasible_tables (test_commute_scaling.CommuteScalingTests.test_switch_product_constructs_distinct_feasible_tables) ... ok
+2026-10-10T06:24:43.0575187Z test_switch_verifier_rejects_tampering (test_commute_scaling.CommuteScalingTests.test_switch_verifier_rejects_tampering) ... ok
+2026-10-10T06:24:43.0793528Z test_every_small_worker_law_against_independent_exact_combinatorics (test_commuting_backtest.PublicCommutingBacktestTests.test_every_small_worker_law_against_independent_exact_combinatorics) ... ok
+2026-10-10T06:24:43.0796440Z test_invalid_or_over_budget_margins_fail_without_partial_result (test_commuting_backtest.PublicCommutingBacktestTests.test_invalid_or_over_budget_margins_fail_without_partial_result) ... ok
+2026-10-10T06:24:43.0800847Z test_joint_changes_scoring_but_cannot_change_margin_prediction (test_commuting_backtest.PublicCommutingBacktestTests.test_joint_changes_scoring_but_cannot_change_margin_prediction) ... ok
+2026-10-10T06:24:43.0803120Z test_official_checksum_match_must_be_unambiguous (test_commuting_backtest.PublicCommutingBacktestTests.test_official_checksum_match_must_be_unambiguous) ... ok
+2026-10-10T06:24:43.0818090Z test_public_snapshot_is_complete_pinned_and_exhaustively_selected (test_commuting_backtest.PublicCommutingBacktestTests.test_public_snapshot_is_complete_pinned_and_exhaustively_selected) ... ok
+2026-10-10T06:24:44.3717387Z test_report_denominators_distinguish_repeated_cells_and_fixed_metric (test_commuting_backtest.PublicCommutingBacktestTests.test_report_denominators_distinguish_repeated_cells_and_fixed_metric) ... ok
+2026-10-10T06:24:44.3729233Z test_snapshot_corruption_is_rejected (test_commuting_backtest.PublicCommutingBacktestTests.test_snapshot_corruption_is_rejected) ... ok
+2026-10-10T06:24:44.3733936Z test_source_aggregation_orientation_and_zero_completion (test_commuting_backtest.PublicCommutingBacktestTests.test_source_aggregation_orientation_and_zero_completion) ... ok
+2026-10-10T06:24:44.3931574Z test_uniform_quantiles_and_moments_against_enumerated_integer_support (test_commuting_backtest.PublicCommutingBacktestTests.test_uniform_quantiles_and_moments_against_enumerated_integer_support) ... ok
+2026-10-10T06:24:44.5201900Z test_worker_large_symmetric_support_mean_and_endpoint_symmetry (test_commuting_backtest.PublicCommutingBacktestTests.test_worker_large_symmetric_support_mean_and_endpoint_symmetry) ... ok
+2026-10-10T06:24:44.5223241Z test_before_after_inventory_detects_object_mutation_and_new_object (test_environment_audit_runner.EnvironmentRunnerTests.test_before_after_inventory_detects_object_mutation_and_new_object) ... ok
+2026-10-10T06:24:44.5226111Z test_custom_axioms_and_inconsistent_axiom_classification_fail (test_environment_audit_runner.EnvironmentRunnerTests.test_custom_axioms_and_inconsistent_axiom_classification_fail) ... ok
+2026-10-10T06:24:44.5233227Z test_driver_uses_all_frozen_modules_and_distinct_helper_prefix (test_environment_audit_runner.EnvironmentRunnerTests.test_driver_uses_all_frozen_modules_and_distinct_helper_prefix) ... ok
+2026-10-10T06:24:44.5252092Z test_empty_inventory_root_appearance_and_disappearance_change_snapshots (test_environment_audit_runner.EnvironmentRunnerTests.test_empty_inventory_root_appearance_and_disappearance_change_snapshots) ... ok
+2026-10-10T06:24:44.5255118Z test_exact_headline_dependency_closure_cannot_omit_or_add_dependencies (test_environment_audit_runner.EnvironmentRunnerTests.test_exact_headline_dependency_closure_cannot_omit_or_add_dependencies) ... ok
+2026-10-10T06:24:44.5268991Z test_existing_nondirectory_inventory_entry_remains_rejected (test_environment_audit_runner.EnvironmentRunnerTests.test_existing_nondirectory_inventory_entry_remains_rejected) ... ok
+2026-10-10T06:24:44.5288111Z test_failure_receipt_is_preserved_and_attempt_cannot_be_overwritten (test_environment_audit_runner.EnvironmentRunnerTests.test_failure_receipt_is_preserved_and_attempt_cannot_be_overwritten) ... ok
+2026-10-10T06:24:44.5295169Z test_import_and_native_runtime_directories_must_all_be_inventoried (test_environment_audit_runner.EnvironmentRunnerTests.test_import_and_native_runtime_directories_must_all_be_inventoried) ... ok
+2026-10-10T06:24:44.5317773Z test_ir_signature_mutation_and_new_companion_are_bound (test_environment_audit_runner.EnvironmentRunnerTests.test_ir_signature_mutation_and_new_companion_are_bound) ... ok
+2026-10-10T06:24:44.5322083Z test_json_framing_and_duplicate_keys_fail_closed (test_environment_audit_runner.EnvironmentRunnerTests.test_json_framing_and_duplicate_keys_fail_closed) ... ok
+2026-10-10T06:24:44.5333425Z test_lean_prefix_shadowing_matches_pinned_search_path_semantics (test_environment_audit_runner.EnvironmentRunnerTests.test_lean_prefix_shadowing_matches_pinned_search_path_semantics) ... ok
+2026-10-10T06:24:44.5336559Z test_missing_modules_headlines_and_known_declarations_fail (test_environment_audit_runner.EnvironmentRunnerTests.test_missing_modules_headlines_and_known_declarations_fail) ... ok
+2026-10-10T06:24:44.5351644Z test_new_helper_companion_is_detected_in_complete_helper_inventory (test_environment_audit_runner.EnvironmentRunnerTests.test_new_helper_companion_is_detected_in_complete_helper_inventory) ... ok
+2026-10-10T06:24:44.5514705Z test_nonzero_exit_or_stderr_cannot_be_rescued_by_valid_json (test_environment_audit_runner.EnvironmentRunnerTests.test_nonzero_exit_or_stderr_cannot_be_rescued_by_valid_json) ... ok
+2026-10-10T06:24:44.5517579Z test_path_inventory_coverage_cannot_be_spoofed_with_parent_traversal (test_environment_audit_runner.EnvironmentRunnerTests.test_path_inventory_coverage_cannot_be_spoofed_with_parent_traversal) ... ok
+2026-10-10T06:24:44.5519934Z test_scope_and_kind_count_mismatches_fail (test_environment_audit_runner.EnvironmentRunnerTests.test_scope_and_kind_count_mismatches_fail) ... ok
+2026-10-10T06:24:44.5522221Z test_unexpected_source_bound_project_import_cannot_hide_as_cache (test_environment_audit_runner.EnvironmentRunnerTests.test_unexpected_source_bound_project_import_cannot_hide_as_cache) ... ok
+2026-10-10T06:24:44.5527190Z test_unicode_lean_statement_survives_utf8_json_roundtrip (test_environment_audit_runner.EnvironmentRunnerTests.test_unicode_lean_statement_survives_utf8_json_roundtrip) ... ok
+2026-10-10T06:24:44.5542313Z test_unused_missing_inventory_root_is_bound_without_filtering_search_path (test_environment_audit_runner.EnvironmentRunnerTests.test_unused_missing_inventory_root_is_bound_without_filtering_search_path) ... ok
+2026-10-10T06:24:44.5544931Z test_valid_report_includes_unlisted_and_private_dependencies (test_environment_audit_runner.EnvironmentRunnerTests.test_valid_report_includes_unlisted_and_private_dependencies) ... ok
+2026-10-10T06:24:44.5989792Z test_budget_caps_fail_without_partial_results (test_ideal_chain.IdealChainTests.test_budget_caps_fail_without_partial_results) ... ok
+2026-10-10T06:24:44.6124384Z test_exact_censoring_and_physical_return_time (test_ideal_chain.IdealChainTests.test_exact_censoring_and_physical_return_time) ... ok
+2026-10-10T06:24:44.6152613Z test_feasibility_equations_and_fibre_margins (test_ideal_chain.IdealChainTests.test_feasibility_equations_and_fibre_margins) ... ok
+2026-10-10T06:24:44.6281471Z test_independent_doubled_exchange_and_repair_edges (test_ideal_chain.IdealChainTests.test_independent_doubled_exchange_and_repair_edges) ... ok
+2026-10-10T06:24:44.6333531Z test_independent_first_hit_equations_on_embedded_jump_chain (test_ideal_chain.IdealChainTests.test_independent_first_hit_equations_on_embedded_jump_chain) ... ok
+2026-10-10T06:24:44.6335618Z test_literal_excursion_counts_holds_and_enforces_cap (test_ideal_chain.IdealChainTests.test_literal_excursion_counts_holds_and_enforces_cap) ... ok
+2026-10-10T06:24:44.6337938Z test_literal_mixed_large_crossing_and_unique_completions (test_ideal_chain.IdealChainTests.test_literal_mixed_large_crossing_and_unique_completions) ... ok
+2026-10-10T06:24:44.6413463Z test_literal_parameters_state_set_and_empty_fibres (test_ideal_chain.IdealChainTests.test_literal_parameters_state_set_and_empty_fibres) ... ok
+2026-10-10T06:24:44.6574486Z test_literal_rng_decision_tree_including_holds_and_rejections (test_ideal_chain.IdealChainTests.test_literal_rng_decision_tree_including_holds_and_rejections) ... ok
+2026-10-10T06:24:44.6788136Z test_nontrivial_completion_translation_is_source_star_not_metropolis (test_ideal_chain.IdealChainTests.test_nontrivial_completion_translation_is_source_star_not_metropolis) ... ok
+2026-10-10T06:24:44.6790272Z test_rejects_changed_target_and_malformed_input (test_ideal_chain.IdealChainTests.test_rejects_changed_target_and_malformed_input) ... ok
+2026-10-10T06:24:44.7123592Z test_stationary_output_bijection_and_conditional_uniformity (test_ideal_chain.IdealChainTests.test_stationary_output_bijection_and_conditional_uniformity) ... ok
+2026-10-10T06:24:44.7178157Z test_zero_margins_degenerate_rectangles_and_parameter_bits (test_ideal_chain.IdealChainTests.test_zero_margins_degenerate_rectangles_and_parameter_bits) ... ok
+2026-10-10T06:24:45.1035218Z test_saved_certificate_matches_independent_graph_and_backend (test_ideal_two_by_two.IdealTwoByTwoCertificate.test_saved_certificate_matches_independent_graph_and_backend) ... ok
+2026-10-10T06:24:45.1048073Z test_catalog_has_all_nine_rectangles_and_six_hexagons_in_k33 (test_kernels.CycleKernelTests.test_catalog_has_all_nine_rectangles_and_six_hexagons_in_k33) ... ok
+2026-10-10T06:24:45.1058198Z test_complete_fiber_is_required_and_caps_fail_before_allocation (test_kernels.CycleKernelTests.test_complete_fiber_is_required_and_caps_fail_before_allocation) ... ok
+2026-10-10T06:24:45.1069274Z test_full_line_draw_reaches_every_two_by_two_table (test_kernels.CycleKernelTests.test_full_line_draw_reaches_every_two_by_two_table) ... ok
+2026-10-10T06:24:45.1070598Z test_invalid_cycles_are_rejected (test_kernels.CycleKernelTests.test_invalid_cycles_are_rejected) ... ok
+2026-10-10T06:24:45.1096539Z test_nonuniform_input_fixed_catalog_mixture_is_reversible (test_kernels.CycleKernelTests.test_nonuniform_input_fixed_catalog_mixture_is_reversible) ... ok
+2026-10-10T06:24:45.1657161Z test_optional_spectral_diagnostic_on_exactly_known_cases (test_kernels.CycleKernelTests.test_optional_spectral_diagnostic_on_exactly_known_cases) ... ok
+2026-10-10T06:24:45.1696673Z test_rational_weighted_bounded_kernel_and_null_states (test_kernels.CycleKernelTests.test_rational_weighted_bounded_kernel_and_null_states) ... ok
+2026-10-10T06:24:45.1726496Z test_sparse_six_cycle_is_frozen_for_rectangle_moves (test_kernels.CycleKernelTests.test_sparse_six_cycle_is_frozen_for_rectangle_moves) ... ok
+2026-10-10T06:24:45.1756563Z test_weighted_conditional_line_is_not_a_uniform_line (test_kernels.CycleKernelTests.test_weighted_conditional_line_is_not_a_uniform_line) ... ok
+2026-10-10T06:24:45.1786452Z test_dense_actual_scales_and_ambient_d (test_lattice_completion.LatticeCompletionTests.test_dense_actual_scales_and_ambient_d) ... ok
+2026-10-10T06:24:45.2067105Z test_every_tiny_fine_table_and_balanced_preimages (test_lattice_completion.LatticeCompletionTests.test_every_tiny_fine_table_and_balanced_preimages) ... ok
+2026-10-10T06:24:45.2096693Z test_exact_geometric_arithmetic_and_preallocation_budget (test_lattice_completion.LatticeCompletionTests.test_exact_geometric_arithmetic_and_preallocation_budget) ... ok
+2026-10-10T06:24:45.2107167Z test_negative_decoding_and_sharp_rounding_error (test_lattice_completion.LatticeCompletionTests.test_negative_decoding_and_sharp_rounding_error) ... ok
+2026-10-10T06:24:45.2497581Z test_random_higher_dimension_roundtrips_and_independent_prefix_residues (test_lattice_completion.LatticeCompletionTests.test_random_higher_dimension_roundtrips_and_independent_prefix_residues) ... ok
+2026-10-10T06:24:45.2502449Z test_semantic_bounds_and_invalid_inputs (test_lattice_completion.LatticeCompletionTests.test_semantic_bounds_and_invalid_inputs) ... ok
+2026-10-10T06:24:45.2512704Z test_singleton_dimensions_have_one_preimage_and_zero_rounding_error (test_lattice_completion.LatticeCompletionTests.test_singleton_dimensions_have_one_preimage_and_zero_rounding_error) ... ok
+2026-10-10T06:24:45.2515080Z test_empty_and_multiline_axiom_reports_are_both_counted (test_lean_axiom_audit.LeanAxiomAudit.test_empty_and_multiline_axiom_reports_are_both_counted) ... ok
+2026-10-10T06:24:45.2517822Z test_empty_or_duplicate_requests_fail (test_lean_axiom_audit.LeanAxiomAudit.test_empty_or_duplicate_requests_fail) ... ok
+2026-10-10T06:24:45.2520076Z test_missing_duplicated_unrequested_or_reordered_reports_fail (test_lean_axiom_audit.LeanAxiomAudit.test_missing_duplicated_unrequested_or_reordered_reports_fail) ... ok
+2026-10-10T06:24:45.2522165Z test_nonstandard_axioms_fail (test_lean_axiom_audit.LeanAxiomAudit.test_nonstandard_axioms_fail) ... ok
+2026-10-10T06:24:45.2524006Z test_unrecognized_lean_report_fails_closed (test_lean_axiom_audit.LeanAxiomAudit.test_unrecognized_lean_report_fails_closed) ... ok
+2026-10-10T06:24:45.2527102Z test_certifies_algebraic_not_absolute_gap (test_mixtures.ExactMixtureTests.test_certifies_algebraic_not_absolute_gap) ... ok
+2026-10-10T06:24:45.2528679Z test_disconnected_kernel_has_zero_gap (test_mixtures.ExactMixtureTests.test_disconnected_kernel_has_zero_gap) ... ok
+2026-10-10T06:24:45.2530446Z test_exact_nonuniform_two_state_gap_and_sharp_witness (test_mixtures.ExactMixtureTests.test_exact_nonuniform_two_state_gap_and_sharp_witness) ... ok
+2026-10-10T06:24:45.2543629Z test_fixed_mixture_and_global_dual_certificate (test_mixtures.ExactMixtureTests.test_fixed_mixture_and_global_dual_certificate) ... ok
+2026-10-10T06:24:45.2814950Z test_fraction_free_psd_against_all_principal_minors (test_mixtures.ExactMixtureTests.test_fraction_free_psd_against_all_principal_minors) ... ok
+2026-10-10T06:24:45.2817836Z test_kernel_validation_is_exact (test_mixtures.ExactMixtureTests.test_kernel_validation_is_exact) ... ok
+2026-10-10T06:24:45.2825760Z test_mixture_and_witness_validation (test_mixtures.ExactMixtureTests.test_mixture_and_witness_validation) ... ok
+2026-10-10T06:24:45.2827871Z test_psd_input_validation_and_dimension_budget (test_mixtures.ExactMixtureTests.test_psd_input_validation_and_dimension_budget) ... ok
+2026-10-10T06:24:45.2829430Z test_psd_rational_rank_and_skipped_zero_pivots (test_mixtures.ExactMixtureTests.test_psd_rational_rank_and_skipped_zero_pivots) ... ok
+2026-10-10T06:24:45.2834079Z test_zero_target_mass_and_singleton_convention (test_mixtures.ExactMixtureTests.test_zero_target_mass_and_singleton_convention) ... ok
+2026-10-10T06:24:45.2845252Z test_certificate_verifier_is_independent_of_optimizer (test_optimize.CertificateTests.test_certificate_verifier_is_independent_of_optimizer) ... ok
+2026-10-10T06:24:45.2848224Z test_elementary_infeasibility_is_explicit (test_optimize.CertificateTests.test_elementary_infeasibility_is_explicit) ... ok
+2026-10-10T06:24:45.2850836Z test_lower_shifted_support_obstruction (test_optimize.CertificateTests.test_lower_shifted_support_obstruction) ... ok
+2026-10-10T06:24:45.2859456Z test_support_obstruction_has_independent_cut_certificate (test_optimize.CertificateTests.test_support_obstruction_has_independent_cut_certificate) ... ok
+2026-10-10T06:24:45.2869206Z test_tampered_witness_cost_direction_value_and_potentials_fail (test_optimize.CertificateTests.test_tampered_witness_cost_direction_value_and_potentials_fail) ... ok
+2026-10-10T06:24:45.3127715Z test_all_two_by_two_small_caps (test_optimize.LinearBoundsTests.test_all_two_by_two_small_caps) ... ok
+2026-10-10T06:24:45.3138926Z test_binary_capacities_are_not_expanded_to_units (test_optimize.LinearBoundsTests.test_binary_capacities_are_not_expanded_to_units) ... ok
+2026-10-10T06:24:45.3149780Z test_budget_is_shared_and_never_returns_partial_range (test_optimize.LinearBoundsTests.test_budget_is_shared_and_never_returns_partial_range) ... ok
+2026-10-10T06:24:45.3162830Z test_clearing_coprime_denominators_preserves_exact_results (test_optimize.LinearBoundsTests.test_clearing_coprime_denominators_preserves_exact_results) ... ok
+2026-10-10T06:24:45.3166142Z test_deterministic_input_validation (test_optimize.LinearBoundsTests.test_deterministic_input_validation) ... ok
+2026-10-10T06:24:45.3174900Z test_fixed_cells_and_zero_total (test_optimize.LinearBoundsTests.test_fixed_cells_and_zero_total) ... ok
+2026-10-10T06:24:45.3193745Z test_row_column_cost_shifts_and_transpose (test_optimize.LinearBoundsTests.test_row_column_cost_shifts_and_transpose) ... ok
+2026-10-10T06:24:45.4232045Z test_seeded_bounded_lower_shifted_rectangles (test_optimize.LinearBoundsTests.test_seeded_bounded_lower_shifted_rectangles) ... ok
+2026-10-10T06:24:46.4624985Z test_synthetic_commute_range (test_optimize.LinearBoundsTests.test_synthetic_commute_range) ... ok
+2026-10-10T06:24:46.4659434Z test_budget_report_contains_no_partial_endpoints (test_optimize.ReportTests.test_budget_report_contains_no_partial_endpoints) ... ok
+2026-10-10T06:24:46.4660643Z test_example_rejects_float_and_boolean_coefficients (test_optimize.ReportTests.test_example_rejects_float_and_boolean_coefficients) ... ok
+2026-10-10T06:24:46.4677086Z test_serialized_cut_report_and_elementary_failure (test_optimize.ReportTests.test_serialized_cut_report_and_elementary_failure) ... ok
+2026-10-10T06:24:46.4717145Z test_serialized_report_has_independently_verifiable_endpoints (test_optimize.ReportTests.test_serialized_report_has_independently_verifiable_endpoints) ... ok
+2026-10-10T06:24:46.5411142Z test_direct_counts_and_incidence_degrees (test_padding_barrier.PaddingCountTests.test_direct_counts_and_incidence_degrees) ... ok
+2026-10-10T06:24:46.5421256Z test_large_dimension_exact_count_and_bit_budget_certificate (test_padding_barrier.PaddingCountTests.test_large_dimension_exact_count_and_bit_budget_certificate) ... ok
+2026-10-10T06:24:46.5422502Z test_necessary_threshold_is_not_sufficient (test_padding_barrier.PaddingCountTests.test_necessary_threshold_is_not_sufficient) ... ok
+2026-10-10T06:24:46.5426166Z test_two_by_two_equality_and_half_acceptance_boundary (test_padding_barrier.PaddingCountTests.test_two_by_two_equality_and_half_acceptance_boundary) ... ok
+2026-10-10T06:24:46.5430641Z test_budget_rejection_occurs_before_binomial_evaluation (test_padding_barrier.PaddingValidationTests.test_budget_rejection_occurs_before_binomial_evaluation) ... ok
+2026-10-10T06:24:46.5433019Z test_reject_malformed_parameters (test_padding_barrier.PaddingValidationTests.test_reject_malformed_parameters) ... ok
+2026-10-10T06:24:46.5434765Z test_target_must_belong_to_the_padded_family (test_padding_barrier.PaddingValidationTests.test_target_must_belong_to_the_padded_family) ... ok
+2026-10-10T06:24:46.7490391Z test_actual_padded_fibers_for_every_marked_set (test_padding_growth.SequentialPaddingTests.test_actual_padded_fibers_for_every_marked_set) ... ok
+2026-10-10T06:24:46.7492507Z test_degenerate_cases_and_validation (test_padding_growth.SequentialPaddingTests.test_degenerate_cases_and_validation) ... ok
+2026-10-10T06:24:46.7606981Z test_power_bound_with_exact_independent_powers (test_padding_growth.SequentialPaddingTests.test_power_bound_with_exact_independent_powers) ... ok
+2026-10-10T06:24:46.7609279Z test_rational_certificate_and_large_dimensions (test_padding_growth.SequentialPaddingTests.test_rational_certificate_and_large_dimensions) ... ok
+2026-10-10T06:24:46.7626685Z test_shape_threshold (test_padding_growth.SequentialPaddingTests.test_shape_threshold) ... ok
+2026-10-10T06:24:46.7627592Z test_bad_configuration (test_sampler_benchmarks.Benchmarks.test_bad_configuration) ... ok
+2026-10-10T06:24:46.7628744Z test_bad_rng_rank_and_negative_mass (test_sampler_benchmarks.Benchmarks.test_bad_rng_rank_and_negative_mass) ... ok
+2026-10-10T06:24:46.7630733Z test_diagnostics (test_sampler_benchmarks.Benchmarks.test_diagnostics) ... ok
+2026-10-10T06:24:46.7645957Z test_exact_diagnostic_cap_is_reported (test_sampler_benchmarks.Benchmarks.test_exact_diagnostic_cap_is_reported) ... ok
+2026-10-10T06:24:46.7681194Z test_fixed_selection_weights_match_exact_kernel (test_sampler_benchmarks.Benchmarks.test_fixed_selection_weights_match_exact_kernel) ... ok
+2026-10-10T06:24:46.8783677Z test_literal_steps_and_direct_censored_draws_are_distinct (test_sampler_benchmarks.Benchmarks.test_literal_steps_and_direct_censored_draws_are_distinct) ... ok
+2026-10-10T06:24:46.8792799Z test_preparation_exhaustion_preserves_failed_run_receipt (test_sampler_benchmarks.Benchmarks.test_preparation_exhaustion_preserves_failed_run_receipt) ... ok
+2026-10-10T06:24:46.8794854Z test_rational_choice (test_sampler_benchmarks.Benchmarks.test_rational_choice) ... ok
+2026-10-10T06:24:46.8859744Z test_reducibility_is_explicit (test_sampler_benchmarks.Benchmarks.test_reducibility_is_explicit) ... ok
+2026-10-10T06:24:46.8878073Z test_seed_repetitions_survive_singleton_support (test_sampler_benchmarks.Benchmarks.test_seed_repetitions_survive_singleton_support) ... ok
+2026-10-10T06:24:46.8885978Z test_sparse_negative_control (test_sampler_benchmarks.Benchmarks.test_sparse_negative_control) ... ok
+2026-10-10T06:24:46.8961736Z test_tiny_end_to_end (test_sampler_benchmarks.Benchmarks.test_tiny_end_to_end) ... ok
+2026-10-10T06:24:46.8972174Z test_uniform_full_line (test_sampler_benchmarks.Benchmarks.test_uniform_full_line) ... ok
+2026-10-10T06:24:46.9026542Z test_weighted_transition_matches_exact_kernel (test_sampler_benchmarks.Benchmarks.test_weighted_transition_matches_exact_kernel) ... ok
+2026-10-10T06:24:46.9141974Z test_worker_panel_uses_its_own_inverse_factorial_law (test_sampler_benchmarks.Benchmarks.test_worker_panel_uses_its_own_inverse_factorial_law) ... ok
+2026-10-10T06:24:46.9143889Z test_empty_blocks_and_incompatible_inputs (test_scales.ReferenceAdjustmentTests.test_empty_blocks_and_incompatible_inputs) ... ok
+2026-10-10T06:24:47.1692357Z test_every_elementary_margin_family_and_reference_cell (test_scales.ReferenceAdjustmentTests.test_every_elementary_margin_family_and_reference_cell) ... ok
+2026-10-10T06:24:47.1694637Z test_parameter_fractions_and_old_unpadding_negative_control (test_scales.ScaleCertificateTests.test_parameter_fractions_and_old_unpadding_negative_control) ... ok
+2026-10-10T06:24:47.1726134Z test_shape_aware_threshold_and_deterministic_dimensions (test_scales.ScaleCertificateTests.test_shape_aware_threshold_and_deterministic_dimensions) ... ok
+2026-10-10T06:24:47.1731933Z test_sharper_enlarged_margin_certificates (test_scales.ScaleCertificateTests.test_sharper_enlarged_margin_certificates) ... ok
+2026-10-10T06:24:47.1736481Z test_universal_integer_polynomial_certificates (test_scales.ScaleCertificateTests.test_universal_integer_polynomial_certificates) ... ok
+2026-10-10T06:24:47.6298438Z test_all_small_fiber_probabilities (test_scales.SwitchingTests.test_all_small_fiber_probabilities) ... ok
+2026-10-10T06:24:47.6300056Z test_boundary_domain_and_cap_negative_control (test_scales.SwitchingTests.test_boundary_domain_and_cap_negative_control) ... ok
+2026-10-10T06:24:47.6449212Z test_minimum_sum_inequality (test_scales.SwitchingTests.test_minimum_sum_inequality) ... ok
+2026-10-10T06:24:47.6486493Z test_product_and_mean_bounds_have_exact_composition_witnesses (test_scales.SwitchingTests.test_product_and_mean_bounds_have_exact_composition_witnesses) ... ok
+2026-10-10T06:24:47.6489635Z test_refined_bound_is_exact_at_zero_for_balanced_two_by_two (test_scales.SwitchingTests.test_refined_bound_is_exact_at_zero_for_balanced_two_by_two) ... ok
+2026-10-10T06:24:48.1326175Z test_switching_labels_determine_source (test_scales.SwitchingTests.test_switching_labels_determine_source) ... ok
+2026-10-10T06:24:48.2619453Z test_all_binary_two_by_three_supports_and_attainable_margins (test_tables.CompletionCountTests.test_all_binary_two_by_three_supports_and_attainable_margins) ... ok
+2026-10-10T06:24:48.2865399Z test_random_small_lower_and_upper_bound_oracles (test_tables.CompletionCountTests.test_random_small_lower_and_upper_bound_oracles) ... ok
+2026-10-10T06:24:48.2868419Z test_rank_validation_and_enumeration_output_cap (test_tables.CompletionCountTests.test_rank_validation_and_enumeration_output_cap) ... ok
+2026-10-10T06:24:48.2874192Z test_resource_exhaustion_never_returns_partial_count_or_draw (test_tables.CompletionCountTests.test_resource_exhaustion_never_returns_partial_count_or_draw) ... ok
+2026-10-10T06:24:48.3015885Z test_three_row_lower_bounded_oracles (test_tables.CompletionCountTests.test_three_row_lower_bounded_oracles) ... ok
+2026-10-10T06:24:48.3017964Z test_constraints_are_copied_and_upper_bounds_tightened (test_tables.TableValidationTests.test_constraints_are_copied_and_upper_bounds_tightened) ... ok
+2026-10-10T06:24:48.3020181Z test_empty_fibers_and_structural_zero_lower_conflict (test_tables.TableValidationTests.test_empty_fibers_and_structural_zero_lower_conflict) ... ok
+2026-10-10T06:24:48.3022338Z test_feasibility_detects_sparse_hall_obstruction (test_tables.TableValidationTests.test_feasibility_detects_sparse_hall_obstruction) ... ok
+2026-10-10T06:24:48.3024185Z test_reject_malformed_data (test_tables.TableValidationTests.test_reject_malformed_data) ... ok
+2026-10-10T06:24:48.3027826Z test_zero_margins_and_one_row (test_tables.TableValidationTests.test_zero_margins_and_one_row) ... ok
+2026-10-10T06:24:48.3038376Z test_exact_rational_sampling_tree_matches_independent_weight_oracle (test_tables.WeightedLawTests.test_exact_rational_sampling_tree_matches_independent_weight_oracle) ... ok
+2026-10-10T06:24:48.3064518Z test_multistage_weighted_rng_tree_and_three_row_partition (test_tables.WeightedLawTests.test_multistage_weighted_rng_tree_and_three_row_partition) ... ok
+2026-10-10T06:24:48.3097324Z test_row_and_column_activity_gauge_invariance (test_tables.WeightedLawTests.test_row_and_column_activity_gauge_invariance) ... ok
+2026-10-10T06:24:48.3105816Z test_weighted_budgets_and_transpose (test_tables.WeightedLawTests.test_weighted_budgets_and_transpose) ... ok
+2026-10-10T06:24:48.3116700Z test_worker_and_table_laws_are_different (test_tables.WeightedLawTests.test_worker_and_table_laws_are_different) ... ok
+2026-10-10T06:24:48.3121990Z test_zero_activities_and_empty_target (test_tables.WeightedLawTests.test_zero_activities_and_empty_target) ... ok
+2026-10-10T06:24:48.3485611Z test_centered_conditioning_is_sharp (test_transport_bounds.ComparisonTests.test_centered_conditioning_is_sharp) ... ok
+2026-10-10T06:24:48.3495952Z test_constants_improve_initial_and_source_bounds (test_transport_bounds.ComparisonTests.test_constants_improve_initial_and_source_bounds) ... ok
+2026-10-10T06:24:48.3501523Z test_integer_root_quadratic_maximum (test_transport_bounds.ComparisonTests.test_integer_root_quadratic_maximum) ... ok
+2026-10-10T06:24:48.3761989Z test_repair_triangle_with_overlapping_edges (test_transport_bounds.ComparisonTests.test_repair_triangle_with_overlapping_edges) ... ok
+2026-10-10T06:24:48.4657418Z test_adaptive_binary_tree_ownership (test_transport_bounds.OwnershipTests.test_adaptive_binary_tree_ownership) ... ok
+2026-10-10T06:24:48.5967485Z test_complete_integer_leaf_families (test_transport_bounds.OwnershipTests.test_complete_integer_leaf_families) ... ok
+2026-10-10T06:24:48.5969298Z test_fixed_prefix_holes_are_rejected (test_transport_bounds.OwnershipTests.test_fixed_prefix_holes_are_rejected) ... ok
+2026-10-10T06:24:48.9078601Z test_cut_bound_for_integer_log_concave_sequences (test_transport_bounds.PathBoundsTests.test_cut_bound_for_integer_log_concave_sequences) ... ok
+2026-10-10T06:24:48.9113729Z test_quadratic_order_and_single_edge_sharpness (test_transport_bounds.PathBoundsTests.test_quadratic_order_and_single_edge_sharpness) ... ok
+2026-10-10T06:24:49.0817208Z test_rational_scales_and_hard_zero_endpoints (test_transport_bounds.PathBoundsTests.test_rational_scales_and_hard_zero_endpoints) ... ok
+2026-10-10T06:24:49.0819692Z test_support_and_log_concavity_negative_controls (test_transport_bounds.PathBoundsTests.test_support_and_log_concavity_negative_controls) ... ok
+2026-10-10T06:24:49.0821802Z test_configuration_rejects_excess_output_and_invalid_counts (test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_configuration_rejects_excess_output_and_invalid_counts) ... ok
+2026-10-10T06:24:49.0828504Z test_exact_law_distinguishes_uniform_aggregate_tables (test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_exact_law_distinguishes_uniform_aggregate_tables) ... ok
+2026-10-10T06:24:49.0832677Z test_last_case_last_repetition_accepts_exact_r_seed_boundary (test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_last_case_last_repetition_accepts_exact_r_seed_boundary) ... skipped 'optional Rscript unavailable'
+2026-10-10T06:24:49.0834947Z test_margin_validation_checks_shape_integer_and_totals (test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_margin_validation_checks_shape_integer_and_totals) ... ok
+2026-10-10T06:24:49.0841461Z test_measured_phases_are_recorded_separately (test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_measured_phases_are_recorded_separately) ... ok
+2026-10-10T06:24:49.0871980Z test_nonseparable_moment_formula_matches_fiber_enumeration (test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_nonseparable_moment_formula_matches_fiber_enumeration) ... ok
+2026-10-10T06:24:49.0883013Z test_optional_dependencies_are_skipped_with_reasons (test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_optional_dependencies_are_skipped_with_reasons) ... ok
+2026-10-10T06:24:49.0886504Z test_r_real_api_and_small_fiber_readback (test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_r_real_api_and_small_fiber_readback) ... skipped 'optional Rscript unavailable'
+2026-10-10T06:24:49.0889744Z test_scipy_all_small_fiber_probabilities (test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_scipy_all_small_fiber_probabilities) ... skipped 'optional SciPy not installed'
+2026-10-10T06:24:49.0896871Z test_seed_overflow_rejected_before_dependency_discovery (test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_seed_overflow_rejected_before_dependency_discovery) ... ok
+2026-10-10T06:24:49.0899596Z test_work_caps_preserve_skewed_large_total_shortcut (test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_work_caps_preserve_skewed_large_total_shortcut) ... ok
+2026-10-10T06:24:49.1103360Z test_every_three_by_two_margin_pair_up_to_four_workers (test_workers.WorkerExactLawTests.test_every_three_by_two_margin_pair_up_to_four_workers) ... ok
+2026-10-10T06:24:49.1295604Z test_every_two_by_three_margin_pair_up_to_four_workers (test_workers.WorkerExactLawTests.test_every_two_by_three_margin_pair_up_to_four_workers) ... ok
+2026-10-10T06:24:49.1373393Z test_three_by_three_multistage_decision_tree (test_workers.WorkerExactLawTests.test_three_by_three_multistage_decision_tree) ... ok
+2026-10-10T06:24:49.1377611Z test_worker_law_is_not_uniform_table_law (test_workers.WorkerExactLawTests.test_worker_law_is_not_uniform_table_law) ... ok
+2026-10-10T06:24:49.1381120Z test_additive_row_column_observable_has_zero_variance (test_workers.WorkerMomentTests.test_additive_row_column_observable_has_zero_variance) ... ok
+2026-10-10T06:24:49.1662082Z test_general_signed_rational_moments_match_independent_enumeration (test_workers.WorkerMomentTests.test_general_signed_rational_moments_match_independent_enumeration) ... ok
+2026-10-10T06:24:49.1664147Z test_huge_binary_margins_need_no_worker_loop (test_workers.WorkerMomentTests.test_huge_binary_margins_need_no_worker_loop) ... ok
+2026-10-10T06:24:49.1666237Z test_rejects_incompatible_shape_floats_and_work_budget (test_workers.WorkerMomentTests.test_rejects_incompatible_shape_floats_and_work_budget) ... ok
+2026-10-10T06:24:49.1668367Z test_bounds_activities_and_problem_objects_are_not_accepted (test_workers.WorkerValidationTests.test_bounds_activities_and_problem_objects_are_not_accepted) ... ok
+2026-10-10T06:24:49.1675935Z test_budget_rejection_precedes_rng_and_dense_output_allocation (test_workers.WorkerValidationTests.test_budget_rejection_precedes_rng_and_dense_output_allocation) ... ok
+2026-10-10T06:24:49.1678073Z test_deterministic_large_counts_and_zero_margins (test_workers.WorkerValidationTests.test_deterministic_large_counts_and_zero_margins) ... ok
+2026-10-10T06:24:49.1680120Z test_inputs_copied_and_samples_have_no_shared_mutable_state (test_workers.WorkerValidationTests.test_inputs_copied_and_samples_have_no_shared_mutable_state) ... ok
+2026-10-10T06:24:49.1681953Z test_invalid_rng_results_raise (test_workers.WorkerValidationTests.test_invalid_rng_results_raise) ... ok
+2026-10-10T06:24:49.1683682Z test_largest_row_saved_and_remaining_category_shortcut (test_workers.WorkerValidationTests.test_largest_row_saved_and_remaining_category_shortcut) ... ok
+2026-10-10T06:24:49.1686022Z test_malformed_margins_and_budgets (test_workers.WorkerValidationTests.test_malformed_margins_and_budgets) ... ok
+2026-10-10T06:24:49.3188249Z test_moderate_count_case_needs_no_completion_dp (test_workers.WorkerValidationTests.test_moderate_count_case_needs_no_completion_dp) ... ok
+2026-10-10T06:24:49.3189288Z 
+2026-10-10T06:24:49.3189562Z ----------------------------------------------------------------------
+2026-10-10T06:24:49.3190112Z Ran 299 tests in 16.052s
+2026-10-10T06:24:49.3190341Z 
+2026-10-10T06:24:49.3190463Z OK (skipped=3)
+2026-10-10T06:24:49.3508349Z ##[group]Run python scripts/claims_ledger.py --check-readme
+2026-10-10T06:24:49.3508825Z [36;1mpython scripts/claims_ledger.py --check-readme[0m
+2026-10-10T06:24:49.3571637Z shell: /usr/bin/bash -e {0}
+2026-10-10T06:24:49.3571884Z env:
+2026-10-10T06:24:49.3572152Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:49.3572595Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T06:24:49.3573036Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:49.3573429Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:49.3573825Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:49.3574211Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T06:24:49.3574530Z ##[endgroup]
+2026-10-10T06:24:50.0237026Z ##[group]Run python 115/audit115.py --output /tmp/audit115-rerun.json
+2026-10-10T06:24:50.0237575Z [36;1mpython 115/audit115.py --output /tmp/audit115-rerun.json[0m
+2026-10-10T06:24:50.0300325Z shell: /usr/bin/bash -e {0}
+2026-10-10T06:24:50.0300579Z env:
+2026-10-10T06:24:50.0300847Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.0301290Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T06:24:50.0301719Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.0302101Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.0302508Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.0302904Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T06:24:50.0303227Z ##[endgroup]
+2026-10-10T06:24:50.4326572Z {
+2026-10-10T06:24:50.4356025Z   "output": "/tmp/audit115-rerun.json",
+2026-10-10T06:24:50.4386064Z   "parameter_cases": 100,
+2026-10-10T06:24:50.4415946Z   "path_sequences": 896,
+2026-10-10T06:24:50.4427698Z   "integer_leaf_edges": 2968,
+2026-10-10T06:24:50.4428235Z   "spectral_instances": 5,
+2026-10-10T06:24:50.4436747Z   "elapsed_seconds": 0.27461984600000733
+2026-10-10T06:24:50.4437187Z }
+2026-10-10T06:24:50.4483936Z ##[group]Run python scripts/verify_sources.py --bundle-only
+2026-10-10T06:24:50.4484402Z [36;1mpython scripts/verify_sources.py --bundle-only[0m
+2026-10-10T06:24:50.4545572Z shell: /usr/bin/bash -e {0}
+2026-10-10T06:24:50.4545986Z env:
+2026-10-10T06:24:50.4546254Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.4546700Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T06:24:50.4547135Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.4547544Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.4547942Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.4548336Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T06:24:50.4548663Z ##[endgroup]
+2026-10-10T06:24:50.5160549Z {
+2026-10-10T06:24:50.5161055Z   "bundle_sha256_verified": 5
+2026-10-10T06:24:50.5161616Z }
+2026-10-10T06:24:50.5276564Z ##[group]Run python experiments/independent_crosscheck.py --output /tmp/independent-crosscheck.json
+2026-10-10T06:24:50.5277362Z [36;1mpython experiments/independent_crosscheck.py --output /tmp/independent-crosscheck.json[0m
+2026-10-10T06:24:50.5339126Z shell: /usr/bin/bash -e {0}
+2026-10-10T06:24:50.5339374Z env:
+2026-10-10T06:24:50.5339643Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.5340091Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T06:24:50.5340525Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.5340909Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.5341291Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.5341675Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T06:24:50.5342006Z ##[endgroup]
+2026-10-10T06:24:50.9247517Z {
+2026-10-10T06:24:50.9248185Z   "status": "passed",
+2026-10-10T06:24:50.9248538Z   "counts": {
+2026-10-10T06:24:50.9248824Z     "random_constraint_cases": 160,
+2026-10-10T06:24:50.9249171Z     "empty_fibers": 20,
+2026-10-10T06:24:50.9249487Z     "verified_infeasibility_cuts": 14,
+2026-10-10T06:24:50.9249853Z     "verified_optimal_endpoints": 280,
+2026-10-10T06:24:50.9250235Z     "altered_bound_certificates_rejected": 280,
+2026-10-10T06:24:50.9250625Z     "exact_weighted_kernels": 67,
+2026-10-10T06:24:50.9250960Z     "zero_mass_targets": 73,
+2026-10-10T06:24:50.9251300Z     "exhaustive_3x3_support_catalogs": 512,
+2026-10-10T06:24:50.9251670Z     "complete_4x4_cycles": 204
+2026-10-10T06:24:50.9251965Z   }
+2026-10-10T06:24:50.9252178Z }
+2026-10-10T06:24:50.9379135Z ##[group]Run PYTHONPATH=src python -S experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json
+2026-10-10T06:24:50.9379912Z [36;1mPYTHONPATH=src python -S experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json[0m
+2026-10-10T06:24:50.9441040Z shell: /usr/bin/bash -e {0}
+2026-10-10T06:24:50.9441290Z env:
+2026-10-10T06:24:50.9441562Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.9442010Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T06:24:50.9442442Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.9442820Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.9443200Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:50.9443579Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T06:24:50.9443906Z ##[endgroup]
+2026-10-10T06:24:55.9873660Z {
+2026-10-10T06:24:55.9874157Z   "verified_gap_intervals": 8,
+2026-10-10T06:24:55.9874623Z   "verified_family_upper_bounds": 4,
+2026-10-10T06:24:55.9875057Z   "verified_strict_improvements": 6,
+2026-10-10T06:24:55.9875452Z   "intervals": {
+2026-10-10T06:24:55.9876013Z     "uniform_tables": {
+2026-10-10T06:24:55.9876354Z       "equal_rectangles": {
+2026-10-10T06:24:55.9876752Z         "lower_float64_display": 0.103869,
+2026-10-10T06:24:55.9877201Z         "upper_float64_display": 0.10387023209121576
+2026-10-10T06:24:55.9877625Z       },
+2026-10-10T06:24:55.9877915Z       "tuned_rectangles": {
+2026-10-10T06:24:55.9878290Z         "lower_float64_display": 0.164036,
+2026-10-10T06:24:55.9878752Z         "upper_float64_display": 0.16403716288355116,
+2026-10-10T06:24:55.9879329Z         "all_allowed_mixtures_upper_float64_display": 0.164046117414259
+2026-10-10T06:24:55.9879854Z       },
+2026-10-10T06:24:55.9880147Z       "equal_simple_cycles": {
+2026-10-10T06:24:55.9880520Z         "lower_float64_display": 0.097826,
+2026-10-10T06:24:55.9880963Z         "upper_float64_display": 0.0978275415725478
+2026-10-10T06:24:55.9881366Z       },
+2026-10-10T06:24:55.9881658Z       "tuned_simple_cycles": {
+2026-10-10T06:24:55.9882027Z         "lower_float64_display": 0.169974,
+2026-10-10T06:24:55.9882475Z         "upper_float64_display": 0.16997546269570155,
+2026-10-10T06:24:55.9883061Z         "all_allowed_mixtures_upper_float64_display": 0.16997812992983594
+2026-10-10T06:24:55.9883584Z       }
+2026-10-10T06:24:55.9883838Z     },
+2026-10-10T06:24:55.9884118Z     "conditional_poisson": {
+2026-10-10T06:24:55.9884486Z       "equal_rectangles": {
+2026-10-10T06:24:55.9884870Z         "lower_float64_display": 0.111515,
+2026-10-10T06:24:55.9885386Z         "upper_float64_display": 0.11151639753948363
+2026-10-10T06:24:55.9885988Z       },
+2026-10-10T06:24:55.9886268Z       "tuned_rectangles": {
+2026-10-10T06:24:55.9886689Z         "lower_float64_display": 0.176501,
+2026-10-10T06:24:55.9887137Z         "upper_float64_display": 0.17650211810357713,
+2026-10-10T06:24:55.9887720Z         "all_allowed_mixtures_upper_float64_display": 0.17650653395062768
+2026-10-10T06:24:55.9888238Z       },
+2026-10-10T06:24:55.9888527Z       "equal_simple_cycles": {
+2026-10-10T06:24:55.9888963Z         "lower_float64_display": 0.104207,
+2026-10-10T06:24:55.9889472Z         "upper_float64_display": 0.10420836153286263
+2026-10-10T06:24:55.9890349Z       },
+2026-10-10T06:24:55.9890681Z       "tuned_simple_cycles": {
+2026-10-10T06:24:55.9891117Z         "lower_float64_display": 0.18358,
+2026-10-10T06:24:55.9891627Z         "upper_float64_display": 0.18358187818894106,
+2026-10-10T06:24:55.9892282Z         "all_allowed_mixtures_upper_float64_display": 0.18358337881682502
+2026-10-10T06:24:55.9892891Z       }
+2026-10-10T06:24:55.9893180Z     }
+2026-10-10T06:24:55.9893467Z   }
+2026-10-10T06:24:55.9893752Z }
+2026-10-10T06:24:56.0008786Z ##[group]Run python examples/sparse_commute.py --output /tmp/sparse-commute.json
+2026-10-10T06:24:56.0009401Z [36;1mpython examples/sparse_commute.py --output /tmp/sparse-commute.json[0m
+2026-10-10T06:24:56.0071045Z shell: /usr/bin/bash -e {0}
+2026-10-10T06:24:56.0071294Z env:
+2026-10-10T06:24:56.0071560Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:56.0072009Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T06:24:56.0072450Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:56.0072849Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:56.0073239Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:56.0073637Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T06:24:56.0073968Z ##[endgroup]
+2026-10-10T06:24:56.3558158Z {
+2026-10-10T06:24:56.3558709Z   "output": "/tmp/sparse-commute.json",
+2026-10-10T06:24:56.3559426Z   "feasible_table_count": 42,
+2026-10-10T06:24:56.3560011Z   "conditional_poisson_normalizer": "582288",
+2026-10-10T06:24:56.3560637Z   "uniform_metric_mean": "18700",
+2026-10-10T06:24:56.3561281Z   "conditional_poisson_metric_mean": "196016150/12131",
+2026-10-10T06:24:56.3561959Z   "minimum_metric": "9460",
+2026-10-10T06:24:56.3562456Z   "maximum_metric": "25080"
+2026-10-10T06:24:56.3562928Z }
+2026-10-10T06:24:56.3678952Z ##[group]Run python examples/linear_metric_bounds.py --output /tmp/linear-bounds.json
+2026-10-10T06:24:56.3679622Z [36;1mpython examples/linear_metric_bounds.py --output /tmp/linear-bounds.json[0m
+2026-10-10T06:24:56.3746981Z shell: /usr/bin/bash -e {0}
+2026-10-10T06:24:56.3747249Z env:
+2026-10-10T06:24:56.3747538Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:56.3747987Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+2026-10-10T06:24:56.3748425Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:56.3748825Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:56.3749221Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+2026-10-10T06:24:56.3749612Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+2026-10-10T06:24:56.3749943Z ##[endgroup]
+2026-10-10T06:24:56.4456736Z Certified range: 9460 .. 25080 vehicle_miles_per_year
+2026-10-10T06:24:56.4457466Z Report: /tmp/linear-bounds.json
+2026-10-10T06:24:56.4649895Z Post job cleanup.
+2026-10-10T06:24:56.5864371Z (node:2399) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-10T06:24:56.5865900Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-10T06:24:56.6056561Z Post job cleanup.
+2026-10-10T06:24:56.6926908Z [command]/usr/bin/git version
+2026-10-10T06:24:56.6966715Z git version 2.55.0
+2026-10-10T06:24:56.7008071Z Temporarily overriding HOME='/home/runner/work/_temp/e3aa6c42-83a6-4d7a-8fe0-6eae57c7cdd3' before making global git config changes
+2026-10-10T06:24:56.7009506Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-10T06:24:56.7014443Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/contingency-tables/contingency-tables
+2026-10-10T06:24:56.7056455Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-10T06:24:56.7092504Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-10T06:24:56.7358505Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-10T06:24:56.7390552Z http.https://github.com/.extraheader
+2026-10-10T06:24:56.7402079Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-10T06:24:56.7438487Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-10T06:24:56.7701952Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-10T06:24:56.7743196Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-10T06:24:56.8150071Z Cleaning up orphan processes
+2026-10-10T06:24:56.8480755Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

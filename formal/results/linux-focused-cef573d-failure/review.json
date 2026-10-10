@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "passed_evidence_review_of_failed_run",
+  "reviewer": "Separate coordinating AI agent reviewing an AI-prepared artifact bundle; no human review claimed.",
+  "recorded_at_utc": "2026-10-10T06:31:22.635358+00:00",
+  "verification_sha256": "3097b4fd3927736cf0d5ce28dfd1974df3861f8b49a144886544e73b15868328",
+  "manifest_sha256": "03db15d8995a37db5f5d03301d9d3ee3987014044fd360ceaf42f73140f90069",
+  "checks": {
+    "download_archive_sha256_and_size": true,
+    "all_raw_members_byte_identical": 9,
+    "all_publication_hashes_match": true,
+    "exact_ordered_standard_axiom_reports": 1236,
+    "environment_source_hashes_matched_exact_commit": 153,
+    "prepared_source_config_pins_matched_exact_owned_upstream_commits": 589,
+    "normal_build_success_in_log": true,
+    "original_failed_outcome_preserved": true,
+    "public_path_and_credential_hygiene": true
+  },
+  "boundary": "Read-only saved-evidence review only. Overall workflow remains failed; environment audit did not run. No compiler, kernel, or Comparator was invoked by this review."
+}

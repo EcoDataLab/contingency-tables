@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "scope": "Immutable mapping of nine raw artifact members, with a source-bound audit extract and bounded failure handoff. No raw member altered.",
+  "artifact_sha256": "5ff6e700199c74399dec913b8612f1d833c8b8c10cf08bc975efb3a334a1aa5b",
+  "raw_members": [
+    {
+      "archive_member": ".tools/linux-verification/bootstrap-lean.log",
+      "published_path": "bootstrap-lean.log",
+      "bytes": 9838,
+      "sha256": "e2895e5350438c2a7ca6790142441ce7ac31e2abefd27ee76b57f844655cc924",
+      "byte_preserving": true
+    },
+    {
+      "archive_member": ".tools/linux-verification/outcome.json",
+      "published_path": "outcome.json",
+      "bytes": 479,
+      "sha256": "519fee6bb450aab81f8d3371d3d30163d3393c7e8123f501f3b994f6bf0deca0",
+      "byte_preserving": true
+    },
+    {
+      "archive_member": ".tools/linux-verification/environment.json",
+      "published_path": "environment.json",
+      "bytes": 20355,
+      "sha256": "3797a501bf6aec10dd9be6face65a70cfc6ab3fa7a2693e2adda8471b26fdd84",
+      "byte_preserving": true
+    },
+    {
+      "archive_member": ".tools/linux-verification/verification.log",
+      "published_path": "verification.log",
+      "bytes": 207119,
+      "sha256": "dc81fbc137833c6d6a1cdf7b9ebf8c8c8be0a297103dd0c376825e0ad4271062",
+      "byte_preserving": true
+    },
+    {
+      "archive_member": ".local/environment-audits/focused-iqWJ2dCp/attempt/Audit.lean",
+      "published_path": "environment-attempt/Audit.lean",
+      "bytes": 34723,
+      "sha256": "3ed628bb1a61e7c23f6325a835dc4c7fc596280d0bc21fcf0fbcb2a80464abf4",
+      "byte_preserving": true
+    },
+    {
+      "archive_member": ".local/environment-audits/focused-iqWJ2dCp/attempt/frozen-config.json",
+      "published_path": "environment-attempt/frozen-config.json",
+      "bytes": 499842,
+      "sha256": "71f564b458aa71fea4a357ea42c91a0e378a7275b17efc54e13ccf53aa1c4e3f",
+      "byte_preserving": true
+    },
+    {
+      "archive_member": ".local/environment-audits/focused-iqWJ2dCp/attempt/helper-source/ResearchAudit/EnvironmentAudit.lean",
+      "published_path": "environment-attempt/helper-source/ResearchAudit/EnvironmentAudit.lean",
+      "bytes": 5713,
+      "sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "byte_preserving": true
+    },
+    {
+      "archive_member": ".local/environment-audits/focused-iqWJ2dCp/attempt/receipt.json",
+      "published_path": "environment-attempt/receipt.json",
+      "bytes": 700,
+      "sha256": "379cccae0d0d36f7463194a3523fbfb2ca9500c5b82a6a93e5bcdbbf605068fb",
+      "byte_preserving": true
+    },
+    {
+      "archive_member": ".local/environment-audits/focused-iqWJ2dCp/config.json",
+      "published_path": "environment-config.json",
+      "bytes": 499842,
+      "sha256": "4d0e4b5876cc1ef75d6c0f9fcc190ad336c99b258518abf7844bb8df91847426",
+      "byte_preserving": true
+    }
+  ],
+  "files_sha256": {
+    "AxiomAudit.lean": "75523df89d2df8d7c8fd9a664b47b6c07a979ba1e9318a07ebed354379375c0e",
+    "README.md": "6a79168ecb6c882dc357265317d2213fa2a95057436f0813a55e8bd95396d507",
+    "axiom-audit.log": "0e7710d0302931a6f612912cedb8542ffd6718d4085c15c54da0b7e15d8302c2",
+    "bootstrap-lean.log": "e2895e5350438c2a7ca6790142441ce7ac31e2abefd27ee76b57f844655cc924",
+    "environment-attempt/Audit.lean": "3ed628bb1a61e7c23f6325a835dc4c7fc596280d0bc21fcf0fbcb2a80464abf4",
+    "environment-attempt/frozen-config.json": "71f564b458aa71fea4a357ea42c91a0e378a7275b17efc54e13ccf53aa1c4e3f",
+    "environment-attempt/helper-source/ResearchAudit/EnvironmentAudit.lean": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "environment-attempt/receipt.json": "379cccae0d0d36f7463194a3523fbfb2ca9500c5b82a6a93e5bcdbbf605068fb",
+    "environment-config.json": "4d0e4b5876cc1ef75d6c0f9fcc190ad336c99b258518abf7844bb8df91847426",
+    "environment.json": "3797a501bf6aec10dd9be6face65a70cfc6ab3fa7a2693e2adda8471b26fdd84",
+    "outcome.json": "519fee6bb450aab81f8d3371d3d30163d3393c7e8123f501f3b994f6bf0deca0",
+    "source-validation.json": "b1f6c85b018d96811cd0aae47cd09a1029600b22c93feb630c02a87da744e2a9",
+    "verification.log": "dc81fbc137833c6d6a1cdf7b9ebf8c8c8be0a297103dd0c376825e0ad4271062"
+  },
+  "self_and_receipt_excluded_to_avoid_hash_cycles": true
+}

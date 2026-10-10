@@ -54,3 +54,5 @@ overview.pdf
 !reports/stage-close-verification/*.log
 !reports/hosted-stage-verification/*.log
 !reports/environment-runner-fix/*.log
+!reports/hosted-final-stage/*.log
+!formal/results/linux-focused-cef573d-failure/*.log

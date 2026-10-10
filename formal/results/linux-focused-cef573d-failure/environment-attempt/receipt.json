@@ -1,0 +1,10 @@
+{
+  "config_sha256": "4d0e4b5876cc1ef75d6c0f9fcc190ad336c99b258518abf7844bb8df91847426",
+  "error": "missing inventory root: /home/runner/work/contingency-tables/contingency-tables/formal/.lake/packages/Cli/.lake/build/lib",
+  "finished_at_utc": "2026-10-10T06:16:13.640976+00:00",
+  "runner_sha256": "66e932c8ee98a7e11543f3c0c70d2fd625bcd7ad01564b969b73ac2056391287",
+  "schema_version": 1,
+  "scope": "Fresh current Lake-built Math115 import closure; complete compiled declaration/theorem enumeration in project origins and exact headline closure. Dependency/toolchain caches are trusted and hashed before and after.",
+  "started_at_utc": "2026-10-10T06:16:13.294325+00:00",
+  "status": "failed"
+}
