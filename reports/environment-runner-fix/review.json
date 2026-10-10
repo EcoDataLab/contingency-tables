@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "passed_inventory_root_fix_independent_review",
+  "reviewed_utc": "2026-10-10T06:23:33.590346+00:00",
+  "reviewer": "Independent AI-agent review within the project workflow; not outside human review.",
+  "source_sha256": {
+    "scripts/run_environment_audit.py": "c446c9ce5e8e3bad74dea076ee59769259452762487edbd3bd307bb7cfb6306c",
+    "tests/test_environment_audit_runner.py": "96623e3bc327f6a184bde04f89541630a9a8e4d7126e8dab96c51d156d59613a"
+  },
+  "scope": "Bounded two-file infrastructure review of absent unused inventory directories in the compiled-environment audit runner. No Lean/source-proof change, project build, research extension, shared edit or remote/Git mutation.",
+  "checks": [
+    "All 20 focused environment-audit runner tests passed, including three new directory-absence/state/non-directory regressions.",
+    "The complete configured Lean search path is preserved; snapshot does not filter absent paths or mutate config. First-prefix resolution and all required source/compiler/helper pins remain unchanged.",
+    "Each inventory root is now recorded as directory or absent in both snapshots. An empty directory appearing or disappearing changes snapshot equality even when artifact file maps remain identical. Existing file/non-directory endpoints and dangling root symlinks are rejected; unexpected filesystem errors remain failures.",
+    "Both helper-compile and environment-audit phases compare complete before/after snapshot dictionaries, so inventory_root_states participates directly in the existing failure/status logic and canonical receipt binding.",
+    "Independent temporary-file checks confirm absent-present-absent state behavior, dangling-root-symlink and ordinary-file rejection, missing required pin failure, and missing required module resolution failure.",
+    "Strict JSON/report validation, exact project import set, headline closure/axiom checks, source and object digests, compiler identity/sysroot checks, input inventory coverage and immutable attempt preservation are unchanged."
+  ],
+  "blocking_findings": [],
+  "limits": [
+    "The fix permits an unused nonexistent directory, not a missing required source or imported object. A directory state is observed at each snapshot boundary; this is not continuous filesystem monitoring or an OS sandbox.",
+    "Focused tests and source review do not constitute a completed fresh hosted Linux audit. The prior failed Linux run retains its actual completed-build/named-audit and failed-environment-stage scope; root must assess the one new fresh rerun separately.",
+    "Root reports the full 299-test make verify run separately; this reviewer independently ran 20 focused tests and bounded scratch checks only."
+  ]
+}

@@ -139,10 +139,22 @@ def snapshot(config: dict, extra: dict[str, Path] | None = None) -> dict:
             raise ValueError(f'{label} digest mismatch')
         files[str(p.absolute())] = actual
     inventory = {}
+    root_states = {}
     for root_text in config['inventory_roots']:
         root = Path(root_text)
+        try:
+            root.stat()
+        except FileNotFoundError:
+            if root.is_symlink():
+                raise ValueError(f'inventory root is not a directory: {root}')
+            # Lake may list unused package build directories that do not yet
+            # exist. Preserve their path and absence, so later appearance or
+            # disappearance changes the before/after snapshot even if empty.
+            root_states[str(root.absolute())] = 'absent'
+            continue
         if not root.is_dir():
-            raise ValueError(f'missing inventory root: {root}')
+            raise ValueError(f'inventory root is not a directory: {root}')
+        root_states[str(root.absolute())] = 'directory'
         for walk_root, dirs, entries in os.walk(root, followlinks=False):
             for directory in dirs:
                 if (Path(walk_root) / directory).is_symlink():
@@ -153,7 +165,8 @@ def snapshot(config: dict, extra: dict[str, Path] | None = None) -> dict:
                     inventory[str(p.absolute())] = sha(p)
     for label, path in (extra or {}).items():
         files[str(path.absolute())] = sha(path)
-    return {'files': dict(sorted(files.items())), 'artifact_inventory': dict(sorted(inventory.items()))}
+    return {'files': dict(sorted(files.items())), 'artifact_inventory': dict(sorted(inventory.items())),
+            'inventory_root_states': dict(sorted(root_states.items()))}
 
 
 def declaration_check(record: dict, imported: set[str]) -> None:

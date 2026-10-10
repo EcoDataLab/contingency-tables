@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "reviewed_at_utc": "2026-10-10T06:15:06.664760+00:00",
+  "scope": "Read-only hosted Python stage receipt/log/source review; active proof run excluded",
+  "receipt_path": "reports/hosted-stage-verification.json",
+  "receipt_sha256": "2b4fabd4c231dbca67548deed424a00107316ba52bbdc0bc58db938d348f6900",
+  "job_metadata_sha256": "fa7915f25774944df5d28bebd16b67680c3f68a332b2b644e992a2dac2b78eda",
+  "source_commit": "f2bc3fc8b66edcc3e52d2a1fdd5858d4fc4e1369",
+  "git_commands_run": false,
+  "tests_or_builds_run": false,
+  "public_files_changed": false,
+  "jobs": [
+    {
+      "job_id": 114148020989,
+      "name": "exact-tests (3.13)",
+      "python": "3.13.16",
+      "tests_total": 296,
+      "skipped": 3,
+      "successful_workflow_steps": 15,
+      "complete_decoded_log_sha256": "12d4ac6e704e941f0587fd2dd3d21f18e7f6df193b713eb2cfdecc6b074f7f21",
+      "matches_private_decoded_original": true,
+      "skip_reasons": [
+        "'optional Rscript unavailable'",
+        "'optional Rscript unavailable'",
+        "'optional SciPy not installed'"
+      ],
+      "masked_token_lines": 2,
+      "masked_authorization_lines": 1
+    },
+    {
+      "job_id": 114148021110,
+      "name": "exact-tests (3.10)",
+      "python": "3.10.22",
+      "tests_total": 296,
+      "skipped": 3,
+      "successful_workflow_steps": 15,
+      "complete_decoded_log_sha256": "e99331f0c2e740960e7c480f4ff9fe3f823e82aa094106b17c566ab7ed817fd5",
+      "matches_private_decoded_original": true,
+      "skip_reasons": [
+        "'optional Rscript unavailable'",
+        "'optional Rscript unavailable'",
+        "'optional SciPy not installed'"
+      ],
+      "masked_token_lines": 2,
+      "masked_authorization_lines": 1
+    },
+    {
+      "job_id": 114148021182,
+      "name": "exact-tests (3.12)",
+      "python": "3.12.15",
+      "tests_total": 296,
+      "skipped": 3,
+      "successful_workflow_steps": 15,
+      "complete_decoded_log_sha256": "6b87d0adad8132b2dc3f025a44a1564c129fdd3c614e226cbbb41178b34b8801",
+      "matches_private_decoded_original": true,
+      "skip_reasons": [
+        "'optional Rscript unavailable'",
+        "'optional Rscript unavailable'",
+        "'optional SciPy not installed'"
+      ],
+      "masked_token_lines": 2,
+      "masked_authorization_lines": 1
+    }
+  ],
+  "exact_commit_source_hashes_verified": 72,
+  "source_verification_method": "Direct read-only loose commit/tree/blob bytes with SHA-1 object identity checks; SHA-256 content checks; no Git commands",
+  "workflow_path": ".github/workflows/tests.yml",
+  "workflow_sha256": "97f48d3cf952ace5d2ae4b8fa9cd4926fc2a8b338d4bb747964a48e3e2685c6b",
+  "complete_decoded_log_hashes_verified": 3,
+  "public_hygiene": "PASS: no private user/device paths or recognizable unmasked credentials; provider token/header values masked. Hosted runner/toolcache/tmp paths and provider warning metadata retained.",
+  "scope_boundary": "Hosted Python stage only. No fresh tests/builds performed during review. No Lean/Comparator or active proof-run success inferred."
+}

@@ -38,6 +38,12 @@ configured builtin library. Source-bound imported module names must exactly
 match the frozen project graph; extra cached Lean/Mathlib modules remain
 within the stated dependency-cache boundary.
 
+Lake can list unused package build directories that do not exist. The runner
+retains those search paths and records each inventory root as absent or a
+directory. A root appearing or disappearing between snapshots fails the
+unchanged-input check, even if the directory is empty. Existing non-directory
+roots still fail, and required pinned files and imported modules must resolve.
+
 A successful compiler exit is necessary. Nonempty stderr, invalid JSON
 framing, duplicate JSON keys, scope discrepancies, omitted modules/headlines,
 inconsistent theorem counts, nonstandard axioms, or a dependency closure with

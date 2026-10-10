@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "recorded_at_utc": "2026-10-10T06:08:40.509582+00:00",
+  "repository_commit": "f2bc3fc8b66edcc3e52d2a1fdd5858d4fc4e1369",
+  "run_id": 38029756463,
+  "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/38029756463",
+  "retrieval": "Authenticated GitHub connector job summaries and decoded logs; no artifact archive claimed.",
+  "scope": "Hosted Python tests, claims-ledger replay, finite audits, source-bundle hashes, independent crosschecks, exact certificate replay and reference examples. Not Lean compilation or strict Comparator verification.",
+  "jobs": [
+    {
+      "job_id": 114148020989,
+      "name": "exact-tests (3.13)",
+      "python": "3.13.16",
+      "conclusion": "success",
+      "tests": 296,
+      "optional_skips": 3,
+      "test_elapsed_seconds": 14.042,
+      "job_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/38029756463/job/114148020989",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run python -m pip install -e '.[research]'",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run python -m unittest discover -s tests -v",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Run python scripts/claims_ledger.py --check-readme",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Run python 115/audit115.py --output /tmp/audit115-rerun.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Run python scripts/verify_sources.py --bundle-only",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Run python experiments/independent_crosscheck.py --output /tmp/independent-crosscheck.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Run PYTHONPATH=src python -S experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Run python examples/sparse_commute.py --output /tmp/sparse-commute.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Run python examples/linear_metric_bounds.py --output /tmp/linear-bounds.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25
+        }
+      ],
+      "log": "hosted-stage-verification/python-3.13.16.log",
+      "decoded_job_log_sha256": "12d4ac6e704e941f0587fd2dd3d21f18e7f6df193b713eb2cfdecc6b074f7f21"
+    },
+    {
+      "job_id": 114148021110,
+      "name": "exact-tests (3.10)",
+      "python": "3.10.22",
+      "conclusion": "success",
+      "tests": 296,
+      "optional_skips": 3,
+      "test_elapsed_seconds": 17.585,
+      "job_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/38029756463/job/114148021110",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run python -m pip install -e '.[research]'",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run python -m unittest discover -s tests -v",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Run python scripts/claims_ledger.py --check-readme",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Run python 115/audit115.py --output /tmp/audit115-rerun.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Run python scripts/verify_sources.py --bundle-only",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Run python experiments/independent_crosscheck.py --output /tmp/independent-crosscheck.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Run PYTHONPATH=src python -S experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Run python examples/sparse_commute.py --output /tmp/sparse-commute.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Run python examples/linear_metric_bounds.py --output /tmp/linear-bounds.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25
+        }
+      ],
+      "log": "hosted-stage-verification/python-3.10.22.log",
+      "decoded_job_log_sha256": "e99331f0c2e740960e7c480f4ff9fe3f823e82aa094106b17c566ab7ed817fd5"
+    },
+    {
+      "job_id": 114148021182,
+      "name": "exact-tests (3.12)",
+      "python": "3.12.15",
+      "conclusion": "success",
+      "tests": 296,
+      "optional_skips": 3,
+      "test_elapsed_seconds": 16.035,
+      "job_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/38029756463/job/114148021182",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run python -m pip install -e '.[research]'",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run python -m unittest discover -s tests -v",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Run python scripts/claims_ledger.py --check-readme",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Run python 115/audit115.py --output /tmp/audit115-rerun.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Run python scripts/verify_sources.py --bundle-only",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Run python experiments/independent_crosscheck.py --output /tmp/independent-crosscheck.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Run PYTHONPATH=src python -S experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Run python examples/sparse_commute.py --output /tmp/sparse-commute.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        },
+        {
+          "name": "Run python examples/linear_metric_bounds.py --output /tmp/linear-bounds.json",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12
+        },
+        {
+          "name": "Post Run actions/setup-python@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 23
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 24
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 25
+        }
+      ],
+      "log": "hosted-stage-verification/python-3.12.15.log",
+      "decoded_job_log_sha256": "6b87d0adad8132b2dc3f025a44a1564c129fdd3c614e226cbbb41178b34b8801"
+    }
+  ],
+  "local_full_suite": "stage-close-verification.json",
+  "prior_failed_runs": [
+    38028731400,
+    38028745275
+  ],
+  "source_sha256": {
+    "115/audit115.py": "5c900bd639905c55411ba9751a2076568555b59e9f14e9cacef4df3b803bad33",
+    "Makefile": "3b64898edec1dbce75310ee48b028828116bc53cb1df49c6dd98c102a6e27163",
+    "claims.json": "f1e11073e5eb458e989a9170ef73c999cb2e76f55488b0edbd8c5731448aaca2",
+    "examples/block_factorization.py": "56874195a44904d7874cb92ae7b5f1511e25e47a82d56b64b69f5dcf11df8e5e",
+    "examples/cactus_commute.py": "dbb41e085d9e12ad47d9d1d722f4144d1fac967cd35c9f3f137b48f5e1c4116c",
+    "examples/linear_metric_bounds.py": "e8fb39733559466bdd13eacea739d66e5eedcaa7c0e2f6e1ae3d8ae558511157",
+    "examples/sparse_commute.py": "82198032e99be337930d07a333511ac92ba514b868475c32f5cba68fe9d38c72",
+    "experiments/block_budget_report.py": "5c78e4436eab02487b108b154e06b339c9c68fb680c54013db670a29bc87ef24",
+    "experiments/budget_report.py": "71767d9b4ff3ac811a8ede0b60a1091794e1dfb5c4bfce31520d848f967c2531",
+    "experiments/commute_scaling.py": "b119730964bd59df605c9ae2e3f782e83d8d6520adbccd8521a74d2c5417955b",
+    "experiments/commuting_backtest.py": "49faf2d42994c023d78ff11631ebfb898d748954e3328eedd123f183643e662c",
+    "experiments/cycle_mixtures.py": "7b568ac2e2a4c2ae43d647b84c75c0bcda1d7eac434fa2d8cba2412df1f8ab49",
+    "experiments/defect_transport.py": "096f1ceb5f43076ef8e480175a0cb2bf94d9343bb61fd293881f391d7077a689",
+    "experiments/ideal_two_by_two.py": "bf436a7b25b6f23f151519a10956592757271c8186153be4d6e704405ca81795",
+    "experiments/independent_crosscheck.py": "d7eb189cbe45e4907251e035f161a326128cb74975ac52cb672a6546521a77ae",
+    "experiments/lattice_completion.py": "9817fc38a78761e5bd55e95e7c087cd8db5d606cf79b6aef0b406683b74fa297",
+    "experiments/padding_barrier.py": "15d23781ac4133c5066d66fdd492191e9a15fca18fab1a6dc797319f4ed85b25",
+    "experiments/padding_growth.py": "16b39255cc1f5605a198228c8d236397bad29aa4639b3aae0497552198cb451b",
+    "experiments/sampler_benchmarks.py": "ffd57c90d0acda0f07c0b6e18980474a407fe7e5ea7aaa116c8d048e839f991a",
+    "experiments/scale_report.py": "d294edcf4cf4b8de5de73cd914df36ce909ffc7e74fb8bcee4e834020b1f68be",
+    "experiments/stationary_success.py": "2e2ba485e6b805cd1a34d1c350602ca61f54ea3a0d441dff26249a440552ede5",
+    "experiments/worker_baseline.py": "0814aa468e9f3708b2b304fabb259b8ff372bf91837a2ba54660c95a3bbf80da",
+    "experiments/worker_library_benchmarks.py": "fccdda4ce437d653d75e12931c3b1eee8b24412e5548ff23ded318d844cf7604",
+    "formal/ResearchAudit/EnvironmentAudit.lean": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "scripts/build_lean_serial.py": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c",
+    "scripts/check_lean_axioms.py": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+    "scripts/claims_ledger.py": "0dc5c13376506cb33a9989a379bc72cc6e80de14d8875e076eb720512114ee61",
+    "scripts/prepare_environment_audit.py": "1830114a8a8e82997bf964aff4fff9b0a2b084997bd6a520a316808ba8a3e303",
+    "scripts/run_environment_audit.py": "66e932c8ee98a7e11543f3c0c70d2fd625bcd7ad01564b969b73ac2056391287",
+    "scripts/verify_sources.py": "9087c31a728fa637641361c4c12c35bc728919e75a4759bad93d4a75b1caa536",
+    "src/contingency115/__init__.py": "c1671db7e3449f47162078a3bc0733687d08b404484f84fe5d9d6c91d41c89c9",
+    "src/contingency115/block_budgets.py": "25d914dd9ead8bf95509d18cca5c06110a80a83a12df4bd4269406d39da20ca5",
+    "src/contingency115/block_sampler.py": "2141ef42f23d91538162632d118d75637c3b24f78079952f08affb6a89671116",
+    "src/contingency115/budgets.py": "0faba8878f641d31822e7002f69065e76208fe35c36c7c4835d8183ddfcdfee4",
+    "src/contingency115/cactus.py": "e681481e114407a4bab77e7bb017ca2a2c5427bbb6055511bc167caa96a736e6",
+    "src/contingency115/chain_diagnostics.py": "7312692b07f7c92b77f3eb741683253d3c9d560874287518cee3bb089a1dbb80",
+    "src/contingency115/ideal_chain.py": "5432398d088bbd93d473a56fababadfb9f50c807a38e230c222e8527fa23235b",
+    "src/contingency115/kernels.py": "6931734601d48bcbff0b2261932f212f4201a910078c08c03a1b213f7cf12187",
+    "src/contingency115/lattice_completion.py": "6f43bd95a164758f196f12c8668aa95e0e9d3deb009bd8703009a0badcd8119c",
+    "src/contingency115/mixtures.py": "01643fa7e2fd80c15115baa655a74c817b2a5260c5bffa0bee7dbe4cc5303bf3",
+    "src/contingency115/optimize.py": "db0690c995a4719adb23dd26a12da6d0243c8aa5e065e22f5410ad7ce8060107",
+    "src/contingency115/padding.py": "690ed0a14caa7f8a1f1087769961fb4787f0a25855d1863d1c7062ad64d9287c",
+    "src/contingency115/padding_growth.py": "d82dace90dd78480fbfb65bcb02f099d1d717c6f8fb98e444f2bd431336fdca7",
+    "src/contingency115/scales.py": "d025091f7ba521ba467e60761aea4f92459dec528bc0e7cedf3f39dd83ef5ca6",
+    "src/contingency115/tables.py": "e9b5dd146396e7fa49dd757417b3e8eafc749d5f58cf985f923773cf3b01c019",
+    "src/contingency115/transport_bounds.py": "44551ab0d8b367323f534a5c0a7aab48633af4fc654bdb1f2d6dc8266c290b96",
+    "src/contingency115/workers.py": "4158516c6a5e84f5e3d50a6192ac7eaa0dc5d4929737b4ec2f8a173e82fb78b2",
+    "tests/test_block_budgets.py": "c5c1279356a1270a5debbe6b87bda3720b1dca9f9dd2addf66138eadc79d806c",
+    "tests/test_block_sampler.py": "67cc9e9272e4b79b874dc87a7a574373950156edd3860859e4c9b7e60e18b108",
+    "tests/test_budgets.py": "445e744b6d0bb7a3dbb192f2f324a40918ec01307d195293d2563289cb538645",
+    "tests/test_build_lean_serial.py": "482461f8527b64056b299c96ff6a913c2b9ce0a4ebd6e1b80de4a580ad2fd2bd",
+    "tests/test_cactus.py": "0c2f134224d8cd53caf6f560dd9266d2a0e67bee0157eb9105beec84c9fc31a9",
+    "tests/test_chain_diagnostics.py": "4bcba4459e42c7a575a4eb35468287396fca022590fa7ecac84d74e7e105021c",
+    "tests/test_claims_ledger.py": "fc15176b60692ea3a2bf6df02bc6888baa12a1185fc087e4547031db06631797",
+    "tests/test_commute_scaling.py": "720767f83addbc104a8e959d646eef683a1389122edab77dfc5052ac11ebe61b",
+    "tests/test_commuting_backtest.py": "2d186e752f287832501607196d1d01e2e98e9307c7ad3b6496f0c2ac263ff92e",
+    "tests/test_environment_audit_runner.py": "97f825ab7e74e544f5cfbbf49e8f041e5f12e3c89527979ec6aa9da128988614",
+    "tests/test_ideal_chain.py": "670b3337301b53fe2af39afecce0c7ccbb476df0f6346a4a159e74dbab281558",
+    "tests/test_ideal_two_by_two.py": "197e57017b1f3832474bf0db519a1a58028a21abd628cb1ae54b1b2315583912",
+    "tests/test_kernels.py": "5f4392b355bfe4155639909123ccbd53de93532c23f73497704d0c1a746affb2",
+    "tests/test_lattice_completion.py": "087abfc1cfb320e5ed14a6acc6e9756708545e438c73bca254629ace2a042033",
+    "tests/test_lean_axiom_audit.py": "6fafb0e8d4ef5d6853acd6ee9f07277f8b1d4e46a7c3ec4af1af79a60da8e221",
+    "tests/test_mixtures.py": "b0fca2958814ce8f084c8970be61529630281ddd2b5bc733a359a1ac16a31a1d",
+    "tests/test_optimize.py": "00578d8d9c488c434083e4cd9a36fedc9aea0608f4be4366e212c4019677cbed",
+    "tests/test_padding_barrier.py": "abca8453fc0c9ce0f4ec3b0c2b9c2fa4f2d16b172cf66a281ff79ba43682194a",
+    "tests/test_padding_growth.py": "6f76fbb13b6d43206bb24584ba7e8cdbc68e0898d3eff51f023ad7ce5007e428",
+    "tests/test_sampler_benchmarks.py": "b9bb319446f0b7f09116d58c44f95b0c7862fcb2124c999e7f9a224deacc6c05",
+    "tests/test_scales.py": "a4ba9efbbf118173b9700a66a22ec44d31bd6babc708468cea651ba44d3d6f3b",
+    "tests/test_tables.py": "2c3edc49820bd07497f351d54b576a3bf9436b0c40f3dba02a35e2bb5141dd30",
+    "tests/test_transport_bounds.py": "2f0e703dda6afa8875abdb86f2b3f7b94144977a78db93841afee69ed51473db",
+    "tests/test_worker_library_benchmarks.py": "8fda77f6ebbc73df5ec04fbda5b4368535f21d2dca60421fb21bd6cccbb7624e",
+    "tests/test_workers.py": "78b044cf6c5ade47e4fb080d3428457d891ce9d89a13ac88e528ae25b291b7d4"
+  },
+  "workflow_sha256": "97f48d3cf952ace5d2ae4b8fa9cd4926fc2a8b338d4bb747964a48e3e2685c6b",
+  "source_hashes_checked_against_exact_commit": 72,
+  "log_retention_boundary": "Complete decoded job logs returned by the authenticated connector are retained with their hashes and masked provider credentials. These are decoded text copies, not downloaded Actions ZIP archives. Exact source hashes are checked against the recorded commit."
+}

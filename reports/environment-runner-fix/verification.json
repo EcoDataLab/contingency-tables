@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "passed_local_checks",
+  "created_utc": "2026-10-10T06:21:36.880106+00:00",
+  "base_commit": "f2bc3fc8b66edcc3e52d2a1fdd5858d4fc4e1369",
+  "scope": "Infrastructure repair only: preserve unused absent inventory roots in before/after environment-audit snapshots. No mathematical source changes or new Lean result claimed.",
+  "source_sha256": {
+    "scripts/run_environment_audit.py": "c446c9ce5e8e3bad74dea076ee59769259452762487edbd3bd307bb7cfb6306c",
+    "tests/test_environment_audit_runner.py": "96623e3bc327f6a184bde04f89541630a9a8e4d7126e8dab96c51d156d59613a"
+  },
+  "command": "make verify",
+  "exit_code": 0,
+  "tests": 299,
+  "optional_skips": 1,
+  "skip_reason": "optional SciPy not installed",
+  "test_seconds": 11.476,
+  "python_version": "3.14.3",
+  "additional_checks": [
+    "finite audit115",
+    "claims README replay",
+    "five pinned source bundle hashes",
+    "independent exact crosschecks",
+    "exact rational cycle-mixture certificate replay"
+  ],
+  "log": "make-verify.log",
+  "log_sha256": "f72191802d49d92da448736d00817d87e546d2dedaf0f080a81c43db686c4529",
+  "failure_run": "https://github.com/EcoDataLab/contingency-tables/actions/runs/38028745299",
+  "review": "review.json",
+  "boundary": "A fresh hosted Linux rerun is required to establish complete workflow success."
+}

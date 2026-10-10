@@ -127,6 +127,51 @@ class EnvironmentRunnerTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'pinned input changed'):
                 runner.snapshot(c)
 
+    def inventory_fixture(self, root):
+        for name in ['lean', 'helper.lean', 'input', 'lib/FixtureModule.olean']:
+            path=root/name;path.parent.mkdir(exist_ok=True);path.write_bytes(name.encode())
+        c=config();c.update(compiler=str(root/'lean'),compiler_sha256=runner.sha(root/'lean'),
+            helper_source=str(root/'helper.lean'),helper_sha256=runner.sha(root/'helper.lean'),
+            pins={'input':{'path':str(root/'input'),'sha256':runner.sha(root/'input')}},
+            lean_path=[str(root/'unused/lib/lean'),str(root/'lib')],
+            inventory_roots=[str(root/'unused/lib'),str(root/'lib')])
+        return c
+
+    def test_unused_missing_inventory_root_is_bound_without_filtering_search_path(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);c=self.inventory_fixture(root);original_search=list(c['lean_path'])
+            snapshot=runner.snapshot(c)
+            self.assertEqual(snapshot['inventory_root_states'][str(root/'unused/lib')],'absent')
+            self.assertEqual(snapshot['inventory_root_states'][str(root/'lib')],'directory')
+            self.assertEqual(c['lean_path'],original_search)
+            self.assertEqual(runner.resolve_module('FixtureModule',list(map(Path,c['lean_path']))),root/'lib/FixtureModule.olean')
+            with self.assertRaisesRegex(ValueError,'unknown imported module prefix'):
+                runner.resolve_module('Missing.Required',[root/'unused/lib/lean',root/'lib'])
+            (root/'input').unlink()
+            with self.assertRaises(FileNotFoundError):
+                runner.snapshot(c)
+
+    def test_empty_inventory_root_appearance_and_disappearance_change_snapshots(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);c=self.inventory_fixture(root)
+            absent=runner.snapshot(c)
+            (root/'unused/lib').mkdir(parents=True)
+            present=runner.snapshot(c)
+            self.assertEqual(absent['artifact_inventory'],present['artifact_inventory'])
+            self.assertNotEqual(absent,present)
+            self.assertEqual(present['inventory_root_states'][str(root/'unused/lib')],'directory')
+            (root/'unused/lib').rmdir()
+            missing_again=runner.snapshot(c)
+            self.assertNotEqual(present,missing_again)
+            self.assertEqual(missing_again['inventory_root_states'][str(root/'unused/lib')],'absent')
+
+    def test_existing_nondirectory_inventory_entry_remains_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);c=self.inventory_fixture(root)
+            (root/'unused').mkdir();(root/'unused/lib').write_bytes(b'file instead of directory')
+            with self.assertRaisesRegex(ValueError,'inventory root is not a directory'):
+                runner.snapshot(c)
+
     def test_ir_signature_mutation_and_new_companion_are_bound(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)
