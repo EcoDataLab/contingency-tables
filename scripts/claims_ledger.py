@@ -40,6 +40,30 @@ def unique_names(records: list, label: str) -> list[str]:
     return names
 
 
+def source_checks(root: Path, source_hashes: dict, upstream_revision: str | None) -> dict:
+    """Check owned sources strictly; absent separately pinned upstream is unchecked.
+
+    The exemption is only the recorded openai-math checkout's lean subtree,
+    and only with a full pinned revision. Every present upstream path must
+    still be a regular file with the recorded digest. No digest is discarded.
+    """
+    pinned = isinstance(upstream_revision, str) and re.fullmatch(r'[0-9a-f]{40}', upstream_revision)
+    mismatches, checked_upstream, unchecked = [], [], {}
+    for relative, expected in source_hashes.items():
+        path = local_path(root, relative)
+        upstream = bool(pinned) and Path(relative).parts[:3] == ('.upstream', 'openai-math', 'lean')
+        if upstream and not path.exists() and not path.is_symlink():
+            unchecked[relative] = expected
+        elif not path.is_file() or digest(path) != expected:
+            mismatches.append(relative)
+        elif upstream:
+            checked_upstream.append(relative)
+    return {'current_source_mismatches': sorted(mismatches),
+            'upstream_revision': upstream_revision,
+            'checked_upstream_sources': sorted(checked_upstream),
+            'unchecked_upstream_source_sha256': dict(sorted(unchecked.items()))}
+
+
 def validate_receipt(root: Path, spec: dict) -> dict:
     path = local_path(root, spec['path'])
     if digest(path) != spec['sha256']:
@@ -116,12 +140,12 @@ def validate_receipt(root: Path, spec: dict) -> dict:
     expected = receipt.get('total_audited_declarations', receipt.get('audit_declaration_count'))
     if len(names) != expected:
         raise ValueError('receipt total differs from distinct replayed declarations')
+    checks = source_checks(root, source_hashes, receipt.get('upstream_revision', receipt.get('pins', {}).get('upstream')))
     return {'id': spec['id'], 'path': spec['path'], 'label': spec['label'],
             'commit': commit, 'commit_kind': spec['commit_kind'],
             'scope': spec['scope'], 'count': len(names), 'module_counts': module_counts,
             'names': names, 'records': records, 'source_hashes': source_hashes,
-            'current_source_mismatches': sorted(p for p, sha in source_hashes.items()
-                if not local_path(root, p).is_file() or digest(local_path(root, p)) != sha)}
+            **checks}
 
 
 def validate_ledger(root: Path, ledger: dict) -> dict:
@@ -222,6 +246,7 @@ def render(result: dict) -> str:
         boundary = 'Historical component receipts are preserved in the [ledger](claims.json); their named declarations overlap the current integrated aggregate and are not added to it. The historical Linux focused run is a separate reproduction scope. Compiled-environment audit status is reported separately in [formal verification](docs/formal-verification.md); these counts describe saved named audits.'
     else:
         boundary = 'Only explicitly disjoint component scopes are combined. The later Linux focused run overlaps the aggregate and is not added to it. These saved audits do not establish that every project theorem was enumerated; see the environment-audit status in [formal verification](docs/formal-verification.md).'
+    boundary += ' Pinned upstream sources are checked when present; absent checkout files are explicitly reported as unchecked by the ledger JSON output.'
     rows += ['', boundary, '', END]
     return '\n'.join(rows) + '\n'
 
@@ -283,7 +308,12 @@ def main() -> int:
                               'scope_counts': {k: v['count'] for k, v in result['scopes'].items()},
                               'disjoint_component_count': result['disjoint_count'],
                               'current_receipt': result['current_receipt'],
-                              'summary_receipt_ids': result['summary_receipt_ids']}, indent=2))
+                              'summary_receipt_ids': result['summary_receipt_ids'],
+                              'upstream_source_validation': {k: {
+                                  'pinned_revision': v['upstream_revision'],
+                                  'checked_present': len(v['checked_upstream_sources']),
+                                  'unchecked_absent': len(v['unchecked_upstream_source_sha256'])
+                              } for k, v in result['scopes'].items()}}, indent=2))
         else:
             print(generated, end='')
     except (OSError, ValueError, KeyError, TypeError) as error:

@@ -1,0 +1,74 @@
+======================================================================
+2026-10-10T05:48:17.5318655Z ERROR: test_audit_driver_uses_receipt_modules_and_every_ledger_headline (test_claims_ledger.ClaimsLedgerTests.test_audit_driver_uses_receipt_modules_and_every_ledger_headline)
+2026-10-10T05:48:17.5319333Z ----------------------------------------------------------------------
+2026-10-10T05:48:17.5319626Z Traceback (most recent call last):
+2026-10-10T05:48:17.5324270Z   File "/home/runner/work/contingency-tables/contingency-tables/tests/test_claims_ledger.py", line 119, in test_audit_driver_uses_receipt_modules_and_every_ledger_headline
+2026-10-10T05:48:17.5324970Z     result = ledger.validate_ledger(ROOT, self.document)
+2026-10-10T05:48:17.5325518Z   File "/home/runner/work/contingency-tables/contingency-tables/scripts/claims_ledger.py", line 154, in validate_ledger
+2026-10-10T05:48:17.5342766Z ##[error]    raise ValueError('current receipt source bytes differ from current checkout')
+2026-10-10T05:48:17.5349140Z ValueError: current receipt source bytes differ from current checkout
+2026-10-10T05:48:17.5349380Z 
+2026-10-10T05:48:17.5349480Z ======================================================================
+2026-10-10T05:48:17.5350170Z ERROR: test_current_summary_prefers_integrated_scope_without_adding_historical_overlap (test_claims_ledger.ClaimsLedgerTests.test_current_summary_prefers_integrated_scope_without_adding_historical_overlap)
+2026-10-10T05:48:17.5350863Z ----------------------------------------------------------------------
+2026-10-10T05:48:17.5351154Z Traceback (most recent call last):
+2026-10-10T05:48:17.5352061Z   File "/home/runner/work/contingency-tables/contingency-tables/tests/test_claims_ledger.py", line 135, in test_current_summary_prefers_integrated_scope_without_adding_historical_overlap
+2026-10-10T05:48:17.5352739Z     result=ledger.validate_ledger(ROOT,self.document)
+2026-10-10T05:48:17.5353251Z   File "/home/runner/work/contingency-tables/contingency-tables/scripts/claims_ledger.py", line 154, in validate_ledger
+2026-10-10T05:48:17.5354315Z ##[error]    raise ValueError('current receipt source bytes differ from current checkout')
+2026-10-10T05:48:17.5355130Z ValueError: current receipt source bytes differ from current checkout
+2026-10-10T05:48:17.5355482Z 
+2026-10-10T05:48:17.5355583Z ======================================================================
+2026-10-10T05:48:17.5356184Z ERROR: test_delivered_scopes_replay_and_linux_overlap_is_not_added (test_claims_ledger.ClaimsLedgerTests.test_delivered_scopes_replay_and_linux_overlap_is_not_added)
+2026-10-10T05:48:17.5356795Z ----------------------------------------------------------------------
+2026-10-10T05:48:17.5357082Z Traceback (most recent call last):
+2026-10-10T05:48:17.5357692Z   File "/home/runner/work/contingency-tables/contingency-tables/tests/test_claims_ledger.py", line 22, in test_delivered_scopes_replay_and_linux_overlap_is_not_added
+2026-10-10T05:48:17.5358300Z     result = ledger.validate_ledger(ROOT, self.document)
+2026-10-10T05:48:17.5358809Z   File "/home/runner/work/contingency-tables/contingency-tables/scripts/claims_ledger.py", line 154, in validate_ledger
+2026-10-10T05:48:17.5359607Z ##[error]    raise ValueError('current receipt source bytes differ from current checkout')
+2026-10-10T05:48:17.5360367Z ValueError: current receipt source bytes differ from current checkout
+2026-10-10T05:48:17.5360601Z 
+2026-10-10T05:48:17.5360699Z ======================================================================
+2026-10-10T05:48:17.5361287Z FAIL: test_an_omitted_headline_is_not_verified_by_a_large_count (test_claims_ledger.ClaimsLedgerTests.test_an_omitted_headline_is_not_verified_by_a_large_count)
+2026-10-10T05:48:17.5361901Z ----------------------------------------------------------------------
+2026-10-10T05:48:17.5362261Z ValueError: current receipt source bytes differ from current checkout
+2026-10-10T05:48:17.5362493Z 
+2026-10-10T05:48:17.5362651Z During handling of the above exception, another exception occurred:
+2026-10-10T05:48:17.5362871Z 
+2026-10-10T05:48:17.5362962Z Traceback (most recent call last):
+2026-10-10T05:48:17.5363582Z   File "/home/runner/work/contingency-tables/contingency-tables/tests/test_claims_ledger.py", line 47, in test_an_omitted_headline_is_not_verified_by_a_large_count
+2026-10-10T05:48:17.5364319Z     with self.assertRaisesRegex(ValueError, 'lacks named'):
+2026-10-10T05:48:17.5364620Z          ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-10-10T05:48:17.5365043Z AssertionError: "lacks named" does not match "current receipt source bytes differ from current checkout"
+2026-10-10T05:48:17.5365373Z 
+2026-10-10T05:48:17.5365472Z ======================================================================
+2026-10-10T05:48:17.5366009Z FAIL: test_claim_scope_is_bound_and_overlap_claim_fails (test_claims_ledger.ClaimsLedgerTests.test_claim_scope_is_bound_and_overlap_claim_fails)
+2026-10-10T05:48:17.5366568Z ----------------------------------------------------------------------
+2026-10-10T05:48:17.5366917Z ValueError: current receipt source bytes differ from current checkout
+2026-10-10T05:48:17.5367150Z 
+2026-10-10T05:48:17.5367296Z During handling of the above exception, another exception occurred:
+2026-10-10T05:48:17.5367519Z 
+2026-10-10T05:48:17.5367610Z Traceback (most recent call last):
+2026-10-10T05:48:17.5368173Z   File "/home/runner/work/contingency-tables/contingency-tables/tests/test_claims_ledger.py", line 53, in test_claim_scope_is_bound_and_overlap_claim_fails
+2026-10-10T05:48:17.5368764Z     with self.assertRaisesRegex(ValueError, 'scope differs'):
+2026-10-10T05:48:17.5369062Z          ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-10-10T05:48:17.5369592Z AssertionError: "scope differs" does not match "current receipt source bytes differ from current checkout"
+2026-10-10T05:48:17.5369915Z 
+2026-10-10T05:48:17.5370004Z ======================================================================
+2026-10-10T05:48:17.5370591Z FAIL: test_headline_cannot_be_bound_to_an_unrelated_verified_source (test_claims_ledger.ClaimsLedgerTests.test_headline_cannot_be_bound_to_an_unrelated_verified_source)
+2026-10-10T05:48:17.5371212Z ----------------------------------------------------------------------
+2026-10-10T05:48:17.5371535Z ValueError: current receipt source bytes differ from current checkout
+2026-10-10T05:48:17.5371843Z 
+2026-10-10T05:48:17.5371978Z During handling of the above exception, another exception occurred:
+2026-10-10T05:48:17.5372177Z 
+2026-10-10T05:48:17.5372254Z Traceback (most recent call last):
+2026-10-10T05:48:17.5372791Z   File "/home/runner/work/contingency-tables/contingency-tables/tests/test_claims_ledger.py", line 64, in test_headline_cannot_be_bound_to_an_unrelated_verified_source
+2026-10-10T05:48:17.5373372Z     with self.assertRaisesRegex(ValueError, 'attribution differs'):
+2026-10-10T05:48:17.5373788Z          ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-10-10T05:48:17.5374209Z AssertionError: "attribution differs" does not match "current receipt source bytes differ from current checkout"
+2026-10-10T05:48:17.5374574Z 
+2026-10-10T05:48:17.5374699Z ----------------------------------------------------------------------
+2026-10-10T05:48:17.5374982Z Ran 289 tests in 6.716s
+2026-10-10T05:48:17.5375094Z 
+2026-10-10T05:48:17.5375186Z FAILED (failures=3, errors=3, skipped=3)
+2026-10-10T05:48:17.5541408Z ##[error]Process completed with exit code 1.

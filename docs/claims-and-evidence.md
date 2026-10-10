@@ -5,22 +5,22 @@ claim, the quantity bounded, stated hypotheses, present limits, source files,
 Lean declaration names, and a verification receipt with an explicit scope.
 The English descriptions are interpretations that require mathematical review;
 the exact Lean types remain the authority for hypotheses and conclusions.
-Headline defining-module/source attribution is explicit and reviewed using
-the project’s module/namespace convention; historical selected receipts do not
-independently attest defining-module origins. A compiled environment receipt
-is needed to authenticate those origins.
+The [compiled headline index](../formal/results/environment-aggregate-1236/headlines.json)
+now records exact types, defining modules, axioms, and complete dependency-closure
+bindings for all six Lean headlines. It also preserves the corresponding English
+claims and hypotheses from the hash-qualified ledger snapshot. Historical named
+receipts retain their narrower scope.
 
 ## Completed stage scope
 
-The [completed stage aggregate](../formal/results/completion-aggregate-1236/verification.json) passed **1,236 focused plus six standalone named declaration audits (1,242 total)**. Its 583-module normal closure contains 582 authenticated reused modules and one fresh aggregate root; four fresh named-audit checks passed. The formerly separate 46 encoded-program, 193 physical-bridge, and 134 Boolean-law/schedule declarations are now integrated into the default focused target. This is ordinary Lean compilation and selected axiom auditing with reused dependency objects, not a fresh rebuild of every dependency or strict kernel replay. All selected axioms remain within `propext`, `Classical.choice`, and `Quot.sound`, or subsets.
-
-The environment-derived full audit is **pending final validation and import rehashing**; its Lean generation step finished, but no successful exhaustive-inventory result is claimed yet. Fresh Linux reproduction of this staged aggregate is also pending. The old aggregate and Linux `895b45c` receipts remain historical evidence for their exact earlier source scopes.
-
-The final [outer-sampler attempt](../research/outer-sampler/status.json) failed: 673 modules were reused, three failed, nine were dependency-blocked, and no new source compiled successfully in that attempt. `LatticeProfileStep` had passed the preceding normal attempt and was reused; the current failures are `LatticeProfileWalk`, `LatticeSamplerPreparation`, and `LatticeUnitStep`. All 13 attempted outer-sampler sources and diagnostics are frozen under [research/outer-sampler](../research/outer-sampler/) outside the default formal target. No complete literal outer sampler or full machine runtime is verified.
-
-The [runtime-degree archive](../research/runtime-degree/) retains passed TreeDegree diagnostics, a failed PolynomialCompilerDegree diagnostic, and uncompiled fresh-bit/finite-word proposals. The numerical complete runtime exponent is unknown. The [Comparator serial archive](../research/comparator-serial/) retains 33 offline orchestration tests and 16 planner tests, without a real Linux runtime result for that route. The [strict VM attempt](../formal/results/strict-comparator-vm-895b45c/README.md) passed ABI-11 sandbox preflight but exhausted memory before comparison; it produced no candidate export or kernel result.
-
-Use the [contributor handoff](handoff.md) for reproduction and ordered next-round obligations. Reviewed application evidence includes the [mature worker-library benchmark](worker-library-benchmarks.md), [public commuting backtest](commuting-backtest.md), and [source-level composed complexity review](composed-complexity.md). These measure a classical law, describe a public job-table case frame, and retain a symbolic uncompiled cost proposal, respectively; none verifies a complete universal sampler.
+The [current integrated receipt](../formal/results/completion-aggregate-1236/verification.json)
+includes the encoded completion program, physical bridges, and both-branch
+Boolean law and schedule. Its named audits are regenerated from saved receipts;
+its normal build used authenticated dependency reuse and a fresh aggregate root.
+The [status ledger](status.md) records current verification results and the
+[contributor handoff](handoff.md) separates the checked core from frozen research.
+The literal outer sampler, numerical complete runtime degree, and strict
+Comparator replay remain open.
 
 `python3 scripts/claims_ledger.py` validates the ledger and renders the README
 claim cards and named-audit counts. `--write-readme` replaces only the marked
@@ -109,13 +109,34 @@ separately from nonstandard axioms; any nonstandard axiom fails the command.
 The proof-statement records contain all binders and hypotheses, while the
 ledger supplies the separate English interpretation.
 
-This helper's successful local compilation and small fixture checks are
-**diagnostics**, not a receipt for exhaustive project coverage. The full-environment Lean generation step has finished, but final validation and imported-object rehashing remain pending. No successful public full-environment audit receipt is supplied yet. Existing published counts
-continue to describe selected named audits. To claim exhaustive coverage,
-a successful compiler receipt must bind the audit JSON, exact imported
-module list, source/object digests, compiler and dependency pins, and the
-selected namespace/module filters. Its theorem set must then be compared
-with the historical selected rosters; its headline types/hypotheses need
-mathematical review against the ledger. Files absent from the imports are
-outside that environment. No source regex is treated as a compiled theorem
+The [full compiled-environment audit](../formal/results/environment-aggregate-1236/README.md)
+passed on the frozen native aggregate. The [publication record](../formal/results/environment-aggregate-1236/PUBLICATION.md)
+links the subsequent independent AI-agent readback while preserving the frozen
+receipt’s creation-time review status. Its complete report contains 22,710 selected
+declarations, including 16,549 theorem constants, and six headline closures.
+These totals include pinned upstream and generated/private declarations under
+explicit filters; they are not new-theorem counts. The receipt binds the driver,
+helper, executed runner, compiler and source pins, 11,849 imported modules,
+resolved object hashes, and unchanged before/after input inventories.
+
+The [exact headline index](../formal/results/environment-aggregate-1236/headlines.json)
+contains every printed binder and hypothesis, while the compressed raw report
+retains the complete dependency records. The following is a reading guide;
+the exact types and definitions determine each contract.
+
+| English claim | Lean declaration (all under `Math115`) | Main hypotheses or input contract |
+| --- | --- | --- |
+| Ideal-chain variance is at most `80,000d^17` times energy | `IdealRepairRefinement.feasibleChain_poincare_d17_refined` | Finite linearly ordered index sets; natural margins with equal totals; any real state observable. |
+| Typed output is a feasible table for every word | `PhysicalBooleanSampler.draw` | Equal-total natural margins; natural walk/retry/precision parameters; a Boolean word of the reserved length. The return type is `Table r c`. |
+| Scheduled typed output is within `2^-h` of uniform | `PhysicalBooleanSampler.draw_explicit_accuracy` | Equal-total natural margins and natural `h`; the defined physical schedule and uniform reserved word. Empty dimensions and zero margins are included. |
+| Encoded completion has polynomial charged cost | `CompletionSamplerProgram.polynomial_draw` | The typed `drawRealizer` input, including its supplied Boolean list; cost is execution plus encoded output weight. Semantic margin conditions belong to the next statement. |
+| Encoded completion equals the analyzed draw and has the stated accuracy | `CompletionSamplerSemantics.draw_semantics` | `d≥14`, equal totals, `m+1≤d`, `n+1≤d`, `mn≤d−1`, row margins at least `3d(n+1)`, column margins at least `3d(m+1)`, and the specified reserved word. |
+| Numeric schedule has polynomial charged cost | `LatticeScheduleProgram.polynomial_schedule` | The typed `scheduleRealizer` input of encoded margins and natural precision. No full sampler cost is inferred. |
+
+The report authenticates compiled types and dependencies, not the scientific
+interpretation of a model. It does not identify the unfinished encoded outer
+walker or perform strict Comparator replay. Files absent from the imports,
+including the archived outer-sampler drafts, are outside the selected
+environment. Named audit counts remain separate and must not be added to
+these overlapping environment totals. No source regex supplies the theorem
 inventory.

@@ -1,0 +1,161 @@
+{
+  "artifact_inventory_files": 69190,
+  "audit_lean_path": "<audit-attempt>/helper-lib;<normal-build>/lib/lean;<workspace>/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean;<workspace>/formal/.lake/packages/Qq/.lake/build/lib/lean;<workspace>/formal/.lake/packages/aesop/.lake/build/lib/lean;<workspace>/formal/.lake/packages/batteries/.lake/build/lib/lean;<workspace>/formal/.lake/packages/importGraph/.lake/build/lib/lean;<workspace>/formal/.lake/packages/mathlib/.lake/build/lib/lean;<workspace>/formal/.lake/packages/plausible/.lake/build/lib/lean;<workspace>/formal/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "before_after_canonical_sha256": "cdca8c5ebad7808e86a7feb65fa5ff76553972220afafa2b63f6a98b153a8200",
+  "compiler_prefix_check": {
+    "argv": [
+      "<toolchain>/bin/lean.exe",
+      "--print-prefix"
+    ],
+    "elapsed_seconds": 0.043170199962332845,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "9799c0da6abd244ac6da2a0c0fdfcb086db278d027e46581f671845ca24d668e",
+    "timed_out": false
+  },
+  "compiler_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_version_check": {
+    "argv": [
+      "<toolchain>/bin/lean.exe",
+      "--version"
+    ],
+    "elapsed_seconds": 0.0534336999990046,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "caa538834571fbbf53913bbde24b9fd3d9deac746137443a1c712d820e6a5b38",
+    "timed_out": false
+  },
+  "config_sha256": "fe21fee2780c8707e659e66a962b4e08f919ce3f86f3e40082fc79636cb4c63b",
+  "controlled_environment": {
+    "LEAN_NUM_THREADS": "2",
+    "LEAN_PATH": "<normal-build>/lib/lean;<workspace>/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean;<workspace>/formal/.lake/packages/Qq/.lake/build/lib/lean;<workspace>/formal/.lake/packages/aesop/.lake/build/lib/lean;<workspace>/formal/.lake/packages/batteries/.lake/build/lib/lean;<workspace>/formal/.lake/packages/importGraph/.lake/build/lib/lean;<workspace>/formal/.lake/packages/mathlib/.lake/build/lib/lean;<workspace>/formal/.lake/packages/plausible/.lake/build/lib/lean;<workspace>/formal/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "PATH_prefix": "<toolchain>/bin",
+    "removed_overrides": [
+      "PATH"
+    ]
+  },
+  "counts": {
+    "declarations": 22710,
+    "headlines": 6,
+    "imported_modules": 11849,
+    "theorems": 16549
+  },
+  "driver_sha256": "284611aeca0d90df517ce5ba3d55a145fb0bce9e3649a330ba2458a437e6e08e",
+  "environment_audit": {
+    "argv": [
+      "<toolchain>/bin/lean.exe",
+      "-j2",
+      "-DautoImplicit=false",
+      "<audit-attempt>/Audit.lean"
+    ],
+    "elapsed_seconds": 215.8572837000247,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "bf0fa0e2dc770358b783ff5526e35f0c14da2adb866677bab25d57f62f5a62b6",
+    "timed_out": false
+  },
+  "finished_at_utc": "2026-10-10T05:37:20.152010+00:00",
+  "helper_compile": {
+    "argv": [
+      "<toolchain>/bin/lean.exe",
+      "-j2",
+      "-DautoImplicit=false",
+      "--root=<audit-attempt>/helper-source",
+      "-o",
+      "<audit-attempt>/helper-lib/ResearchAudit/EnvironmentAudit.olean",
+      "<audit-attempt>/helper-source/ResearchAudit/EnvironmentAudit.lean"
+    ],
+    "elapsed_seconds": 9.620060099987313,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  "helper_object_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581",
+  "input_files": 1269,
+  "platform_loader_boundary": "Known loader override variables cleared; PATH contains only pinned compiler directory. System loader, OS libraries, Python interpreter/stdlib and platform services remain trusted; this is an import/compiler input audit, not an OS sandbox.",
+  "resolved_import_closure_sha256": "3c446c66567c11f89ac915419cded13c6a107dfd1768415cc676a6d197a95e45",
+  "runner_sha256": "fc5dee3ccb4469a976f39ef6acf39db36208892faa3f9978265d69a8245e1db9",
+  "schema_version": 1,
+  "scope": "All compiled internal modules in the reviewed normal 1236 aggregate import closure; every selected theorem and exact headline dependency closure. Official external/toolchain artifacts are trusted inputs, fully hashed before and after.",
+  "started_at_utc": "2026-10-10T05:26:38.764079+00:00",
+  "status": "passed_compiled_environment_audit",
+  "recorded_projection_at_utc": "2026-10-10T05:49:29.239547+00:00",
+  "original_receipt_sha256": "835e65211d00c9d44bf29ec1e347e324ab8bf841f0d8e03fabe8791335114c85",
+  "original_archive_sha256": "688599b44eaf52ff88257e5b1d58576de42ba8f0c860b5af547ac0ad472db7c7",
+  "original_files_sha256": {
+    "attempt/audit-after.json": "f5b26ba15e704685dd5fc61271f892659c62361eb1431731e4a138934375fd58",
+    "attempt/audit-before.json": "f5b26ba15e704685dd5fc61271f892659c62361eb1431731e4a138934375fd58",
+    "attempt/Audit.lean": "284611aeca0d90df517ce5ba3d55a145fb0bce9e3649a330ba2458a437e6e08e",
+    "attempt/compile-after.json": "e7483eba56a76f51ffc632a3d8347c477f15a31a568a566a80e6c8d8cdf164a5",
+    "attempt/compile-before.json": "e7483eba56a76f51ffc632a3d8347c477f15a31a568a566a80e6c8d8cdf164a5",
+    "attempt/compiler-prefix.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempt/compiler-prefix.stdout": "9799c0da6abd244ac6da2a0c0fdfcb086db278d027e46581f671845ca24d668e",
+    "attempt/compiler-version.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempt/compiler-version.stdout": "caa538834571fbbf53913bbde24b9fd3d9deac746137443a1c712d820e6a5b38",
+    "attempt/environment-audit.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempt/environment-audit.stdout": "bf0fa0e2dc770358b783ff5526e35f0c14da2adb866677bab25d57f62f5a62b6",
+    "attempt/frozen-config.json": "128eabbc6df292ba00b47fde9bac53f3285c62abfecf3e991444d2badbe867e7",
+    "attempt/helper-compile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempt/helper-compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "attempt/imported-object-closure.json": "b07ac6e157660a43cbe6f767e614351268a52f233bf22c4912c5a1dc68639102",
+    "attempt/receipt.json": "835e65211d00c9d44bf29ec1e347e324ab8bf841f0d8e03fabe8791335114c85",
+    "assets/config.json": "fe21fee2780c8707e659e66a962b4e08f919ce3f86f3e40082fc79636cb4c63b",
+    "assets/run_environment_audit.py": "fc5dee3ccb4469a976f39ef6acf39db36208892faa3f9978265d69a8245e1db9",
+    "assets/ResearchAudit/EnvironmentAudit.lean": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1"
+  },
+  "report": {
+    "file": "environment-audit.stdout.json.gz",
+    "original_stdout_sha256": "bf0fa0e2dc770358b783ff5526e35f0c14da2adb866677bab25d57f62f5a62b6",
+    "original_stdout_bytes": 149192527,
+    "gzip_sha256": "7e72b4599dafc9a9607d275d52585af0e78fe9d53f7a6e4e4d50bc4c8f635995",
+    "no_truncation": true,
+    "original_bytes_preserved_after_decompression": true
+  },
+  "source_pins": {
+    "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "normal_root_source_sha256": "bc1b3e1148d5a84da433ac71518620035d5ef581ee7f2f09050db5b250746057",
+    "normal_root_olean_sha256": "14f4039699aff30f6561e9ce8072d905c283ab7ecd687be9cc3f424679e492fe",
+    "normal_source_checkout_base_commit": "b021f227a21c7e9252eae78c55ab09c404cc66cd",
+    "binding": "Base checkout plus exact frozen source/object hashes, not a new HEAD commit audit."
+  },
+  "helper_source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+  "normal_build_boundary": {
+    "internal_modules": 583,
+    "fresh_root_compilations": 1,
+    "validated_reused_normal_objects": 582,
+    "environment_helper_and_audit": "Fresh executions after that normal build; this projection invokes neither."
+  },
+  "headline_index": "headlines.json",
+  "input_inventory": "input-inventories.json.gz",
+  "imported_object_closure": "imported-object-closure.json.gz",
+  "count_boundary": "22,710 declarations and 16,549 theorem constants include pinned upstream and generated/private constants under explicit prefix/defining-module filters; they are not counts of new project theorems or every declaration in all external packages.",
+  "verification_boundary": "Compiled-environment enumeration/types/axioms/headline dependency audit at frozen inputs. No Comparator replay, OS sandbox, new mathematics/runtime exponent, or pending encoded Boolean-walker/public-machine result is inferred.",
+  "independent_review": "Pending separate public-candidate readback; no stale prior review substituted.",
+  "compression_manifest": "compression.json",
+  "redaction_mapping": "redactions.json",
+  "readme": "README.md",
+  "manifest": "manifest.json",
+  "artifacts_sha256": {
+    "Audit.lean": "284611aeca0d90df517ce5ba3d55a145fb0bce9e3649a330ba2458a437e6e08e",
+    "EnvironmentAudit.lean": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "README.md": "1f3fb4150cb72b50fc2f160996d19983f2ae5384a6a562283b330e938d09eb05",
+    "compiler-prefix.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compiler-prefix.stdout": "1f44f5a70bdc39b671db69e8858e07370e967bba259f2690241a211b5f2facc4",
+    "compiler-version.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compiler-version.stdout": "caa538834571fbbf53913bbde24b9fd3d9deac746137443a1c712d820e6a5b38",
+    "compression.json": "dfa926befb241a3819e6cb65b3b682bde5323b355e40ebb02eeb52f62f42635e",
+    "config.json": "08919c5b0e95b8b7d49c5b9fd28ca2daff5912cc8bf897bc6102ac5d1a21a439",
+    "environment-audit.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "environment-audit.stdout.json.gz": "7e72b4599dafc9a9607d275d52585af0e78fe9d53f7a6e4e4d50bc4c8f635995",
+    "headlines.json": "eaa41e77864107407dcca4a3465e2662bb497051c2c4f575f226a511f9ec1891",
+    "helper-compile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "helper-compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "imported-object-closure.json.gz": "879c7369ba83b02a3d5a8bb64681bc3a34537976da0d410758a9e9ec95ef271d",
+    "input-inventories.json.gz": "b82dbdce2a7162f6e69c051e45f034c17671129e9230f1b875711fe721bcbafe",
+    "manifest.json": "b8bb7164a2639124cf9a10d21ac5920c8c1a55bdef0cb437a49618ccc7f29767",
+    "redactions.json": "399024d5302d87bc7bb6929b4f0b3fb5ea6f078f09eaab90b40cc4b95738bbb0",
+    "run_environment_audit.py": "fc5dee3ccb4469a976f39ef6acf39db36208892faa3f9978265d69a8245e1db9"
+  }
+}

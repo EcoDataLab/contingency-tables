@@ -164,5 +164,109 @@ class ClaimsLedgerTests(unittest.TestCase):
                 ledger.local_path(ROOT, path)
 
 
+class CleanCloneSourceChecks(unittest.TestCase):
+    """Synthetic receipts exercise parser/source integrity, not a Lean proof."""
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temporary.cleanup)
+        self.root = Path(self.temporary.name)
+        self.owned = 'formal/Math115/Example.lean'
+        self.dependency = 'formal/Math115/Dependency.lean'
+        self.upstream = '.upstream/openai-math/lean/OAI/Example.lean'
+        self.upstream_bytes = b'theorem external : True := True.intro\n'
+        for relative in [self.owned, self.dependency]:
+            path = self.root / relative
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(b'theorem headline : True := True.intro\n')
+        driver = 'import Math115.Example\n#print axioms Math115.Example.headline\n'
+        output = "'Math115.Example.headline' does not depend on any axioms\n"
+        (self.root / 'driver.lean').write_text(driver, encoding='utf-8')
+        (self.root / 'audit.log').write_text(output, encoding='utf-8')
+        self.source_hashes = {p: ledger.digest(self.root / p) for p in [self.owned, self.dependency]}
+        self.source_hashes[self.upstream] = hashlib.sha256(self.upstream_bytes).hexdigest()
+        closure = {'records': [{'source': p, 'source_sha256': h} for p, h in self.source_hashes.items()]}
+        (self.root / 'source-closure.json').write_text(json.dumps(closure), encoding='utf-8')
+        files = {p: ledger.digest(self.root / p) for p in ['driver.lean', 'audit.log', 'source-closure.json']}
+        self.receipt = {
+            'status': 'passed', 'allowed_axioms': sorted(ledger.ALLOWED),
+            'source_checkout_base_commit': 'a' * 40, 'upstream_revision': 'b' * 40,
+            'total_audited_declarations': 1, 'artifacts_sha256': files, 'source_closure': 'source-closure.json',
+            'modules': [{'module': 'Math115.Example', 'source': self.owned,
+                'source_sha256': self.source_hashes[self.owned], 'declaration_count': 1,
+                'declarations': [{'name': 'Math115.Example.headline', 'axioms': []}],
+                'compile': {'exit_code': 0}, 'audit': {'status': 'passed', 'exit_code': 0,
+                    'driver': 'driver.lean', 'log': 'audit.log',
+                    'driver_sha256': files['driver.lean'], 'log_sha256': files['audit.log']}}]}
+        self.binding = {'id': 'current', 'path': 'verification.json', 'status': 'passed',
+                        'commit': 'a' * 40, 'commit_kind': 'base_commit_plus_source_hashes',
+                        'label': 'synthetic parser regression', 'scope': 'synthetic fixture'}
+        self.document = {'schema_version': 1, 'receipts': [self.binding], 'current_receipt': 'current',
+                         'summary_receipt_ids': ['current'], 'disjoint_component_scopes': ['current'],
+                         'claims': [{'id': 'fixture', 'title': 'fixture', 'english_claim': 'fixture',
+                             'quantity': 'fixture', 'hypotheses': ['fixture'], 'limitations': ['synthetic'],
+                             'evidence_class': 'lean_theorem', 'sources': [self.owned],
+                             'headlines': [{'name': 'Math115.Example.headline', 'module': 'Math115.Example', 'source': self.owned}],
+                             'evidence': [{'receipt': 'current', 'scope': 'synthetic fixture'}]}]}
+        self.save_receipt()
+
+    def save_receipt(self):
+        path = self.root / 'verification.json'
+        path.write_text(json.dumps(self.receipt), encoding='utf-8')
+        self.binding['sha256'] = ledger.digest(path)
+
+    def test_clean_clone_preserves_exact_upstream_digest_and_reports_unchecked(self):
+        result = ledger.validate_ledger(self.root, self.document)
+        scope = result['scopes']['current']
+        self.assertEqual(scope['current_source_mismatches'], [])
+        self.assertEqual(scope['unchecked_upstream_source_sha256'], {self.upstream: self.source_hashes[self.upstream]})
+        self.assertEqual(scope['source_hashes'], self.source_hashes)
+        self.assertIn('absent checkout files are explicitly reported as unchecked', ledger.render(result))
+
+    def test_any_present_upstream_file_is_checked_and_changes_reject_current(self):
+        path = self.root / self.upstream
+        path.parent.mkdir(parents=True)
+        path.write_bytes(self.upstream_bytes)
+        result = ledger.validate_ledger(self.root, self.document)
+        self.assertEqual(result['scopes']['current']['checked_upstream_sources'], [self.upstream])
+        self.assertEqual(result['scopes']['current']['unchecked_upstream_source_sha256'], {})
+        path.write_bytes(b'changed upstream source')
+        with self.assertRaisesRegex(ValueError, 'current receipt source bytes differ'):
+            ledger.validate_ledger(self.root, self.document)
+
+    def test_missing_or_changed_owned_dependency_remains_a_blocker(self):
+        path = self.root / self.dependency
+        path.write_bytes(b'changed owned dependency')
+        with self.assertRaisesRegex(ValueError, 'current receipt source bytes differ'):
+            ledger.validate_ledger(self.root, self.document)
+        path.unlink()
+        with self.assertRaisesRegex(ValueError, 'current receipt source bytes differ'):
+            ledger.validate_ledger(self.root, self.document)
+
+    def test_missing_or_changed_headline_source_remains_a_blocker(self):
+        path = self.root / self.owned
+        path.write_bytes(b'changed owned headline source')
+        with self.assertRaisesRegex(ValueError, 'current receipt source bytes differ'):
+            ledger.validate_ledger(self.root, self.document)
+        path.unlink()
+        with self.assertRaisesRegex(ValueError, 'current receipt source bytes differ'):
+            ledger.validate_ledger(self.root, self.document)
+
+    def test_unpinned_absent_upstream_is_not_exempt(self):
+        del self.receipt['upstream_revision']
+        self.save_receipt()
+        with self.assertRaisesRegex(ValueError, 'current receipt source bytes differ'):
+            ledger.validate_ledger(self.root, self.document)
+
+    def test_a_present_nonfile_upstream_path_is_not_treated_as_absent(self):
+        (self.root / self.upstream).mkdir(parents=True)
+        with self.assertRaisesRegex(ValueError, 'current receipt source bytes differ'):
+            ledger.validate_ledger(self.root, self.document)
+
+    def test_other_ignored_prefix_cannot_hide_missing_owned_inputs(self):
+        checks = ledger.source_checks(self.root, {'.upstream/other/lean/Source.lean': 'a' * 64}, 'b' * 40)
+        self.assertEqual(checks['unchecked_upstream_source_sha256'], {})
+        self.assertEqual(checks['current_source_mismatches'], ['.upstream/other/lean/Source.lean'])
+
+
 if __name__ == '__main__':
     unittest.main()

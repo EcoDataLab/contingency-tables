@@ -11,6 +11,7 @@ After the normal project build, run preparation under Lake's environment so
 it resolves the pinned compiler and existing object search paths:
 
 ```sh
+export ELAN_HOME="$PWD/.tools/elan"
 mkdir -p .local/environment-audits
 AUDIT_WORK=$(mktemp -d "$PWD/.local/environment-audits/focused-XXXXXXXX")
 (cd formal && ../.tools/elan/bin/lake env python3 ../scripts/prepare_environment_audit.py \
@@ -53,8 +54,10 @@ complete delivered source/object graph, reused normal dependencies, frozen
 runtime/configuration metadata, and authenticated external boundary objects.
 Its exact native config is private because it contains execution paths.
 
-The private full-project audit must pass before its exhaustive declaration or
-theorem totals are promoted into public claims. Publishing a receipt requires
+The [frozen native full-project audit](../formal/results/environment-aggregate-1236/README.md)
+passed and retains its complete compressed report and six headline closures.
+Every later source or environment state requires a separate successful audit
+before its exhaustive declaration or theorem totals are promoted into public claims. Publishing a receipt requires
 separate projection/review of private paths and runtime provenance. A small
 fixture success establishes runner behavior, not a full project audit.
 

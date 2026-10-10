@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "method": "gzip.GzipFile(filename=\"\",mtime=0,compresslevel=9); text only, no object binaries.",
+  "files": [
+    {
+      "file": "environment-audit.stdout.json.gz",
+      "gzip_sha256": "7e72b4599dafc9a9607d275d52585af0e78fe9d53f7a6e4e4d50bc4c8f635995",
+      "uncompressed_sha256": "bf0fa0e2dc770358b783ff5526e35f0c14da2adb866677bab25d57f62f5a62b6",
+      "uncompressed_bytes": 149192527,
+      "compressed_bytes": 14367950,
+      "byte_exact_original_stdout": true,
+      "deterministic_gzip": {
+        "filename": "",
+        "mtime": 0,
+        "compresslevel": 9
+      },
+      "roundtrip_complete_digest_and_length_verified": true
+    },
+    {
+      "file": "input-inventories.json.gz",
+      "gzip_sha256": "b82dbdce2a7162f6e69c051e45f034c17671129e9230f1b875711fe721bcbafe",
+      "uncompressed_sha256": "81d952f5149af900fbe401333b628bde4e3a09bb18dde7587b02201b6dbec6b6",
+      "uncompressed_bytes": 25086063,
+      "compressed_bytes": 6345279,
+      "deterministic_gzip": {
+        "filename": "",
+        "mtime": 0,
+        "compresslevel": 9
+      }
+    },
+    {
+      "file": "imported-object-closure.json.gz",
+      "gzip_sha256": "879c7369ba83b02a3d5a8bb64681bc3a34537976da0d410758a9e9ec95ef271d",
+      "uncompressed_sha256": "86616f01e3305b5ab410d289e8f2e0e2f533089baadb71dca17c1a8334f2987e",
+      "uncompressed_bytes": 2889708,
+      "compressed_bytes": 640404,
+      "deterministic_gzip": {
+        "filename": "",
+        "mtime": 0,
+        "compresslevel": 9
+      }
+    }
+  ],
+  "zlib_version": "1.2.12",
+  "stdout_chunk_bytes": 1048576
+}

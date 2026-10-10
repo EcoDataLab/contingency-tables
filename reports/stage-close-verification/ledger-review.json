@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "passed_clean_clone_ledger_independent_review",
+  "reviewer": "Independent AI-agent review within project workflow; not outside human review.",
+  "reviewed_utc": "2026-10-10T06:04:31.177592+00:00",
+  "scope": "Bounded read-only review of current two-file release diff for absent ignored upstream inputs in clean-clone claims-ledger replay. No proof-source changes, project compilation, public/shared edits or Git/remote mutations.",
+  "source_sha256": {
+    "scripts/claims_ledger.py": "0dc5c13376506cb33a9989a379bc72cc6e80de14d8875e076eb720512114ee61",
+    "tests/test_claims_ledger.py": "fc15176b60692ea3a2bf6df02bc6888baa12a1185fc087e4547031db06631797"
+  },
+  "checks": [
+    "All 21 focused claims-ledger tests passed, including seven new clean-clone source-integrity regressions.",
+    "Full recorded lowercase 40-hex upstream revision is required for exemption; only exact .upstream/openai-math/lean path components qualify. The original per-file source digests are retained.",
+    "Missing pinned upstream files are classified explicitly unchecked, while every present upstream file is still byte-hashed. Changed bytes/nonfile endpoints are mismatches; dangling leaf symlink is not silently exempt.",
+    "Every missing or changed repository-owned source, including dependencies and headline files, remains a current-receipt blocker. Other ignored prefixes, lexical siblings and path traversal cannot gain this exemption.",
+    "Current versus historical receipt selection, source-closure hash binding, strict audit replay, count/roster/name checking, headline attribution and committed/current source guards are unchanged. Historical drift cannot be promoted to current by the clean-clone exception.",
+    "JSON output reports checked-present and unchecked-absent counts plus upstream revision for each receipt; generated summary adds a constant explanatory boundary that remains stable across present versus absent pinned upstream checkouts.",
+    "Independent scratch boundary checks confirmed nonfull/malformed pins, other ignored prefixes, leanish sibling, missing owned source, traversal and broken leaf symlink remain nonexempt/rejected."
+  ],
+  "blocking_findings": [],
+  "limits": [
+    "This command replays saved receipt evidence; absence classification is not verification of upstream source bytes and is explicitly reported as unchecked. A clean-clone ledger pass is not a fresh Lean compile or full upstream/source-kernel reconstruction.",
+    "Root reports complete make verify and public archive regression runs separately; this reviewer independently ran focused tests and bounded source-integrity checks only."
+  ]
+}

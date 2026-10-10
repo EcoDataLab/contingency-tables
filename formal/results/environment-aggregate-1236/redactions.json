@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "policy": "Complete Lean stdout, source helper/runner/driver and headline type text are byte-exact/unredacted. Only path identities in structured config/receipt/inventories/closure and compiler prefix banner are projected. Original hashes retained.",
+  "path_roles": {
+    "<toolchain>": "Pinned native toolchain installation root",
+    "<workspace>": "Frozen normal source checkout root",
+    "<normal-build>": "Validated normal aggregate build root",
+    "<audit-attempt>": "Exact fresh helper/audit attempt directory",
+    "<native-evidence-root>": "Native evidence parent root",
+    "<downloaded-evidence>": "Downloaded local evidence root"
+  },
+  "exact_private_prefixes_not_published": true,
+  "private_mapping_retained_by_projection_author": true,
+  "path_separators": "Structured Windows path identities become forward-slash role paths; logical module names, source spellings, hashes and all Lean statements are untouched.",
+  "structured_replacement_counts": {
+    "<toolchain>": 32616,
+    "<native-evidence-root>": 9,
+    "<normal-build>": 3522,
+    "<workspace>": 117916,
+    "<audit-attempt>": 14
+  },
+  "compiler_prefix_banner": {
+    "original_sha256": "9799c0da6abd244ac6da2a0c0fdfcb086db278d027e46581f671845ca24d668e",
+    "projected_sha256": "1f44f5a70bdc39b671db69e8858e07370e967bba259f2690241a211b5f2facc4",
+    "replacement": "Exact reported toolchain prefix replaced by <toolchain> plus newline."
+  }
+}

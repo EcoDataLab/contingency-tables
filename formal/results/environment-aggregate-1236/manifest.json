@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "private_public_safe_candidate_pending_independent_readback",
+  "intended_public_destination": "formal/results/environment-aggregate-1236/",
+  "counts": {
+    "declarations": 22710,
+    "headlines": 6,
+    "imported_modules": 11849,
+    "theorems": 16549
+  },
+  "complete_report_original_sha256": "bf0fa0e2dc770358b783ff5526e35f0c14da2adb866677bab25d57f62f5a62b6",
+  "complete_report_original_bytes": 149192527,
+  "original_archive_sha256": "688599b44eaf52ff88257e5b1d58576de42ba8f0c860b5af547ac0ad472db7c7",
+  "files": {
+    "Audit.lean": "284611aeca0d90df517ce5ba3d55a145fb0bce9e3649a330ba2458a437e6e08e",
+    "EnvironmentAudit.lean": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "README.md": "1f3fb4150cb72b50fc2f160996d19983f2ae5384a6a562283b330e938d09eb05",
+    "compiler-prefix.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compiler-prefix.stdout": "1f44f5a70bdc39b671db69e8858e07370e967bba259f2690241a211b5f2facc4",
+    "compiler-version.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compiler-version.stdout": "caa538834571fbbf53913bbde24b9fd3d9deac746137443a1c712d820e6a5b38",
+    "compression.json": "dfa926befb241a3819e6cb65b3b682bde5323b355e40ebb02eeb52f62f42635e",
+    "config.json": "08919c5b0e95b8b7d49c5b9fd28ca2daff5912cc8bf897bc6102ac5d1a21a439",
+    "environment-audit.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "environment-audit.stdout.json.gz": "7e72b4599dafc9a9607d275d52585af0e78fe9d53f7a6e4e4d50bc4c8f635995",
+    "headlines.json": "eaa41e77864107407dcca4a3465e2662bb497051c2c4f575f226a511f9ec1891",
+    "helper-compile.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "helper-compile.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "imported-object-closure.json.gz": "879c7369ba83b02a3d5a8bb64681bc3a34537976da0d410758a9e9ec95ef271d",
+    "input-inventories.json.gz": "b82dbdce2a7162f6e69c051e45f034c17671129e9230f1b875711fe721bcbafe",
+    "redactions.json": "399024d5302d87bc7bb6929b4f0b3fb5ea6f078f09eaab90b40cc4b95738bbb0",
+    "run_environment_audit.py": "fc5dee3ccb4469a976f39ef6acf39db36208892faa3f9978265d69a8245e1db9"
+  },
+  "manifest_and_receipt_not_self_hashed": true,
+  "boundary": "Receipt binds this nonreceipt manifest; independently frozen external projection record provides final receipt/manifest hashes without cycles.",
+  "all_outputs_are_text_or_gzip_text": true,
+  "no_object_binary_delivery": true,
+  "no_new_Lean_build_or_compiler_by_projection": true
+}

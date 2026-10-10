@@ -51,3 +51,4 @@ overview.pdf
 !research/runtime-degree/diagnostics/*.log
 !research/comparator-serial/validation-*.log
 !reports/stage-verification/*.log
+!reports/stage-close-verification/*.log
