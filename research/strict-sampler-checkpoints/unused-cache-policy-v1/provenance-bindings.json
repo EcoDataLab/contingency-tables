@@ -1,0 +1,36 @@
+{
+  "actual_native_resource_closure": {
+    "raw_cleanup_sha256": "4d52d6c60580f704a98702310490bb38e6ebdf53a1d147215dfb7c7b958627e1",
+    "raw_final_sha256": "dda4e770cddefe9e458322e122bcc00d0611fe71d8daedf20857b2b69baad36d",
+    "scope": "Closed native job/resource handoff only; no mathematical result inferred by this packet"
+  },
+  "actual_source_policy_bodies": {
+    "authenticator_sha256": "82731b1ae43ee0d615aea6fe4420f29d224809b31b4dbfdd0bcbff9a519fee94",
+    "historical_author_offline_tests": 102,
+    "historical_independent_focused_tests": 7,
+    "independent_source_review_manifest_sha256": "71542358a068207afc71132334014457dc05d82d3c2191116ff8463c900d947c",
+    "reviewed_source_manifest_sha256": "39009383ca8cdff0d72fd75563437e7cdeb5e4d10c8ecf19c4f0ed4b6f9c4d50",
+    "runner_sha256": "acebbe349c5eb0d24cdba0181cc852f2f95c91ca94c56bfe056864dffb656e11",
+    "tests_rerun_in_this_scaffold": false,
+    "unused_cache_policy_sha256": "4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833"
+  },
+  "actual_staging_receipt_sha256": "83ec1bc9be0cbd939a8b882bb978b3acb353c4fcbef4b3ac0028c4b35ac3163c",
+  "cache_trust": "Official pinned package/toolchain caches and sealed retained context; real complete runtime/admission and direct objects remain unverified in this timeout.",
+  "configuration_provenance_sha256": "645f1f13d16c12eb421d86c379ac2b18f7a40170226e07558445afb0336860a0",
+  "earlier_unnamed_failure_manifest_sha256": "cd30335ccf30a1d0060cd28755d8d84ba4cdde00395b7182f9adea7daa0cb166",
+  "exact_policy_sha256": "4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833",
+  "guest_manifest_sha256": "fd212e09c5e9d22c66ee9a5d1f4780d819f0e763a43a520768bfcd15fa1ac97d",
+  "host_manifest_sha256": "284b0dd23eca187fe5f96bbf8a7c0a855b855b4e05e8ff03d24d6bd6907303df",
+  "raw_cleanup_sha256": "f5713a2f3be90dc55ba5bf56f208211cda0cf4fa06a4ec1adb1d01546a8b8a9b",
+  "raw_startup_final_result_sha256": "ff75ede95ea141b2b6972d79df4a53190a71a6f8305b03dbf6d287ba386f2dc5",
+  "reviewed_preparation_artifacts": {
+    "independent_source_review": "71542358a068207afc71132334014457dc05d82d3c2191116ff8463c900d947c",
+    "metadata_only_launch_adapter": "9494afc0a96801259d487fbefb595af171e996b6641b7c8dc16c8edb24f8b307",
+    "repair_manifest": "39009383ca8cdff0d72fd75563437e7cdeb5e4d10c8ecf19c4f0ed4b6f9c4d50",
+    "startup_media": "632aad1110efa95c4a9530013c316391d6eccd52e893ad46b703fe6282b46532",
+    "startup_media_review": "aa787fe72219deb773dce9ad988136e5457796e9f91fd503780a0d400be296e1",
+    "underlying_launch_review": "7232380e585a64bd68f3a76e17622eed01be4660f2c04ef3c3246e06335585f7"
+  },
+  "scope": "Closed startup-only silent authentication deadline stop; no policy acceptance/rejection or82 direct import coverage inferred",
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd"
+}

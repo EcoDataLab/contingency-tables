@@ -1,0 +1,14 @@
+{
+  "allowed_absence": {
+    "formal/.lake/packages/Cli/.lake/build/lib/lean": {
+      "first_missing": "formal/.lake/packages/Cli/.lake",
+      "required_owner": "Cli"
+    }
+  },
+  "origin": {
+    "review_manifest_sha256": "028643e0993cc3e0e268b46fb1033072573b14e488ffdb96379c729030284519",
+    "stopped_checking_child_sha256": "8826d43c9416ff398da1e878380365eb638e3b7aa5c710374b53128c9b842fb6"
+  },
+  "schema_version": 1,
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd"
+}

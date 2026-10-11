@@ -1,0 +1,101 @@
+{
+  "audit_module": "Checkpoint12Audits.ResearchBounds_SmallCellCatalogueDegree",
+  "command": [
+    "<lean-compiler>",
+    "--root=<current-run>\\audit-source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<current-run>\\audits\\ResearchBounds.SmallCellCatalogueDegree\\module.olean",
+    "<current-run>\\audit-source\\Checkpoint12Audits\\ResearchBounds_SmallCellCatalogueDegree.lean"
+  ],
+  "elapsed_seconds": 80.67006119992584,
+  "error": null,
+  "evidence_class": "fresh_native_named_axiom_audit",
+  "execution_origin": "fresh",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    },
+    "ResearchBounds.SmallCellCatalogueDegree": {
+      "path": "<current-run>\\lib\\lean\\ResearchBounds\\SmallCellCatalogueDegree.olean",
+      "sha256": "f65d1da370a49d0ffaab92c4e7623043d2476992a2ad1a7a3bcbc26ebdca6976"
+    }
+  },
+  "module": "ResearchBounds.SmallCellCatalogueDegree",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "10cfb59a49e9316bdd7c139ecdc0586162697c0fe81d571d7a9098bff5892680"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "10cfb59a49e9316bdd7c139ecdc0586162697c0fe81d571d7a9098bff5892680"
+  },
+  "records": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_boundedRange"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_pairAt"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_cellPairCodes"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_cellPairs"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_smallCellTest"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.weight_cellPairs_output"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_smallCellCatalog"
+    }
+  ],
+  "source_sha256": "54b512e39ade459f308cff92edc9f4f18fd4001da9412ac5d935a2fb93053ead",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

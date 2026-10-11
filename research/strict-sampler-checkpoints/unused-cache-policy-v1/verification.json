@@ -1,0 +1,74 @@
+{
+  "actual_82_direct_external_import_resolution": null,
+  "actual_authentication": {
+    "deadline_seconds": 600,
+    "measured_phase_elapsed_seconds": null,
+    "returncode": null,
+    "status": "timed_out_or_interrupted",
+    "stderr_bytes": 0,
+    "stdout_bytes": 0,
+    "substep_unobserved": true
+  },
+  "actual_capture": {
+    "guest_archive_files_rehashed": 9,
+    "guest_archive_sha256": "932696159a3bba8526963a8cfff710be82500a5007d26a2abd3e6fde8a6e6bd2",
+    "guest_manifest_sha256": "fd212e09c5e9d22c66ee9a5d1f4780d819f0e763a43a520768bfcd15fa1ac97d",
+    "host_manifest_sha256": "284b0dd23eca187fe5f96bbf8a7c0a855b855b4e05e8ff03d24d6bd6907303df",
+    "local_host_downloads_rehashed": 7,
+    "remote_only_disk_locally_rehashed": false
+  },
+  "actual_cleanup": {
+    "original_sha256": "f5713a2f3be90dc55ba5bf56f208211cda0cf4fa06a4ec1adb1d01546a8b8a9b",
+    "path": "evidence/startup/cleanup.json"
+  },
+  "actual_install": {
+    "elapsed_seconds": 9.935375452041626,
+    "returncode": 0,
+    "status": "passed"
+  },
+  "actual_outcome": "evidence/startup/outcome.json",
+  "actual_plan": null,
+  "actual_runtime_freeze": null,
+  "actual_strict_preflight": {
+    "elapsed_seconds": 3.650771379470825,
+    "landlock_abi": 11,
+    "returncode": 0,
+    "status": "passed"
+  },
+  "full_strict_acceptance": null,
+  "full_submitted_proof_loading": null,
+  "independent_actual_readback": {
+    "original_manifest_sha256": "282885c5d50487184e5191db3c79e6eb251e06b4ed5f56ec4d9b1f7d90fd407c",
+    "original_review_sha256": "e549623908f76c96c20ce6f2fdab2f2b8aab466828d997a1f8e0c62fb5bb3006",
+    "path": "evidence/independent-review.json",
+    "published_sha256": "2047ee7f038272e6efdd24f35704dd08835991e55880ecb8340a163ee05a9e9d",
+    "scope": "Independent AI actual artifact readback of closed timeout, not projection approval/full strict acceptance"
+  },
+  "native_final_closure": {
+    "raw_cleanup_sha256": "4d52d6c60580f704a98702310490bb38e6ebdf53a1d147215dfb7c7b958627e1",
+    "raw_final_sha256": "dda4e770cddefe9e458322e122bcc00d0611fe71d8daedf20857b2b69baad36d",
+    "scope": "Closed native job/resource handoff only; no mathematical result inferred by this packet"
+  },
+  "numerical_runtime_degree": null,
+  "policy_live_acceptance": null,
+  "policy_live_rejection": null,
+  "public_replay": null,
+  "root_launch_grant": {
+    "scope": "Root-controlled one startup-only run; raw private grant/control retained",
+    "staging_receipt_sha256": "83ec1bc9be0cbd939a8b882bb978b3acb353c4fcbef4b3ac0028c4b35ac3163c"
+  },
+  "schema_version": 1,
+  "source_policy": {
+    "authenticator_sha256": "82731b1ae43ee0d615aea6fe4420f29d224809b31b4dbfdd0bcbff9a519fee94",
+    "historical_author_offline_tests": 102,
+    "historical_independent_focused_tests": 7,
+    "independent_source_review_manifest_sha256": "71542358a068207afc71132334014457dc05d82d3c2191116ff8463c900d947c",
+    "reviewed_source_manifest_sha256": "39009383ca8cdff0d72fd75563437e7cdeb5e4d10c8ecf19c4f0ed4b6f9c4d50",
+    "runner_sha256": "acebbe349c5eb0d24cdba0181cc852f2f95c91ca94c56bfe056864dffb656e11",
+    "tests_rerun_in_this_scaffold": false,
+    "unused_cache_policy_sha256": "4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833"
+  },
+  "startup_scope": "install/preflight/authentication/--plan only, after root grant and native closure; no proof/export/kernel/Comparator",
+  "status": "closed_startup_only_authentication_timeout_no_live_policy_verdict",
+  "transitive_external_dependency_graph_audit": null
+}

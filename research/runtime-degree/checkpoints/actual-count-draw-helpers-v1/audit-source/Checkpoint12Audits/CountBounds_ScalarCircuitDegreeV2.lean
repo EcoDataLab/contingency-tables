@@ -1,0 +1,34 @@
+import CountBounds.ScalarCircuitDegreeV2
+
+#print axioms Math115.ScalarCircuitDegreeV2.LinearOutput
+#print axioms Math115.ScalarCircuitDegreeV2.Circuit
+#print axioms Math115.ScalarCircuitDegreeV2.linear_identity
+#print axioms Math115.ScalarCircuitDegreeV2.linear_first
+#print axioms Math115.ScalarCircuitDegreeV2.linear_second
+#print axioms Math115.ScalarCircuitDegreeV2.linear_constant
+#print axioms Math115.ScalarCircuitDegreeV2.linear_pair
+#print axioms Math115.ScalarCircuitDegreeV2.linear_composition
+#print axioms Math115.ScalarCircuitDegreeV2.typed_composition_linear
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_identity
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_first
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_second
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_constant
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_composition
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_pair
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_congr
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_mono
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_composition_same
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_pair_same
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_add
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_multiply
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_fixedPower
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_listLength
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_listSum
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_log
+#print axioms Math115.ScalarCircuitDegreeV2.head_output_weight_zero
+#print axioms Math115.ScalarCircuitDegreeV2.marginLists_linear
+#print axioms Math115.ScalarCircuitDegreeV2.samplingPrecision_linear
+#print axioms Math115.ScalarCircuitDegreeV2.samplingInput_linear
+#print axioms Math115.ScalarCircuitDegreeV2.parse_linear
+#print axioms Math115.ScalarCircuitDegreeV2.parsedSampling_linear
+#print axioms Math115.ScalarCircuitDegreeV2.circuit_parsedSampling

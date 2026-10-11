@@ -1,0 +1,9 @@
+import ResearchBounds.SmallCellCatalogueDegree
+
+#print axioms Math115.CatalogueDegreeV1.typed_boundedRange
+#print axioms Math115.CatalogueDegreeV1.typed_pairAt
+#print axioms Math115.CatalogueDegreeV1.typed_cellPairCodes
+#print axioms Math115.CatalogueDegreeV1.typed_cellPairs
+#print axioms Math115.CatalogueDegreeV1.typed_smallCellTest
+#print axioms Math115.CatalogueDegreeV1.weight_cellPairs_output
+#print axioms Math115.CatalogueDegreeV1.typed_smallCellCatalog

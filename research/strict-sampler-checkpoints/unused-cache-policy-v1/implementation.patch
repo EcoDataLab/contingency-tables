@@ -1,0 +1,530 @@
+--- published-configuration-repair-v1/runner/strict_sampler.py
++++ private-unused-cache-repair-v1/runner/strict_sampler.py
+@@ -14,6 +14,7 @@
+ import platform
+ import re
+ import shutil
++import stat
+ import subprocess
+ import sys
+ import time
+@@ -57,6 +58,15 @@
+           {"errorOnBuild": "ProofWidgets failed to reuse pre-built JS code. Please report this issue on the Lean Zulip."}),
+ }
+ CONFIG_TOOLS = tuple(PREFIX + "/bin/" + n for n in ("lean", "leanir", "lake"))
++CLI_CACHE = "formal/.lake/packages/Cli/.lake/build/lib/lean"
++CLI_ABSENT = "formal/.lake/packages/Cli/.lake"
++CACHE_IDENTITY_FIELDS = ("dev", "ino", "mode", "uid", "gid", "mtime_ns", "ctime_ns")
++RUNTIME_FIELDS = {"schema_version", "status", "source_freeze_sha256", "trusted_files_sha256",
++    "trusted_tool_aliases", "system_executables", "trusted_cache_roots", "trusted_cache_files_sha256",
++    "external_import_resolution", "entrypoint_native_audit", "lake_configuration_provenance",
++    "lake_configuration_provenance_binding", "lake_configuration_artifacts_sha256",
++    "lake_configuration_artifacts_stat", "trusted_cache_states", "external_import_owners",
++    "unused_cache_policy", "unused_cache_policy_binding"}
+ 
+ class Reject(RuntimeError):
+     pass
+@@ -186,16 +196,121 @@
+     require(not ({"OAI.Combinatorics.ContingencyTables.UnconditionalMain", "ComparatorChallenges.ContingencyTables"} & (challenge | solution)), "Original public theorem collision")
+     return ordered
+ 
+-def cache_inventory(root, roots):
++def validate_unused_cache_policy(policy):
++    require(set(policy) == {"schema_version", "source_freeze_sha256", "origin", "allowed_absence"}
++            and type(policy["schema_version"]) is int and policy["schema_version"] == 1
++            and policy["source_freeze_sha256"] == SOURCE_SHA, "Wrong unused-cache policy schema/source")
++    require(set(policy["origin"]) == {"review_manifest_sha256", "stopped_checking_child_sha256"}
++            and all(isinstance(v, str) and SHA.fullmatch(v) for v in policy["origin"].values()),
++            "Unbound unused-cache policy origin")
++    require(policy["allowed_absence"] == {CLI_CACHE: {"first_missing": CLI_ABSENT, "required_owner": "Cli"}},
++            "Unused-cache policy exceeds exact Cli .lake absence")
++
++def cache_identity(value):
++    return {name: getattr(value, "st_" + name) for name in CACHE_IDENTITY_FIELDS}
++
++def cache_root_states(root, roots, owners, policy):
++    """Only ENOENT at the nominated ancestor represents an allowed absence.
++
++    Every existing component is inspected without following links. Files,
++    dangling links and any other filesystem errors are never absence evidence.
++    Parent identity binds even creation/removal that ends absent again.
++    """
++    validate_unused_cache_policy(policy)
++    require(isinstance(owners, list) and owners == sorted(set(owners))
++            and all(isinstance(x, str) for x in owners), "Invalid required owner set")
++    require("Cli" not in owners, "Unused Cli cache has a required source owner")
++    require(len(roots) == len(set(roots)) and CLI_CACHE in roots, "Incomplete/duplicate cache root state request")
++    return {name: cache_root_state(root, name) for name in roots}
++
++def cache_root_state(root, name):
++    relative(root, name)  # Preserve original lexical/containment/link guard.
++    current = root
++    parent_stat = root.lstat()
++    require(stat.S_ISDIR(parent_stat.st_mode), "Cache checkout root is not a regular directory")
++    for part in PurePosixPath(name).parts:
++        current = current / part
++        component = str(current.relative_to(root))
++        try:
++            observed = current.lstat()
++        except FileNotFoundError:
++            require(name == CLI_CACHE and component == CLI_ABSENT,
++                    "Unexpected missing trusted cache component: " + component)
++            return {"state": "absent", "first_missing": component,
++                    "parent": str(current.parent.relative_to(root)),
++                    "parent_identity": cache_identity(parent_stat)}
++        require(stat.S_ISDIR(observed.st_mode), "Nondirectory/symlink trusted cache component: " + component)
++        parent_stat = observed
++    require(name != CLI_CACHE, "Nominated Cli .lake absence became present")
++    return {"state": "directory", "identity": cache_identity(observed)}
++
++def validate_cache_state_shapes(states, roots):
++    require(isinstance(states, dict) and set(states) == set(roots), "Cache state keyset differs")
++    for name, row in states.items():
++        required = {"state", "first_missing", "parent", "parent_identity"} if name == CLI_CACHE else {"state", "identity"}
++        require(isinstance(row, dict) and set(row) == required, "Mixed/unexpected cache state fields")
++        if name == CLI_CACHE:
++            require(row["state"] == "absent" and row["first_missing"] == CLI_ABSENT
++                    and row["parent"] == "formal/.lake/packages/Cli", "Wrong Cli absence state")
++            identity = row["parent_identity"]
++        else:
++            require(row["state"] == "directory", "Other cache root may not be absent")
++            identity = row["identity"]
++        require(isinstance(identity, dict) and set(identity) == set(CACHE_IDENTITY_FIELDS)
++                and all(type(x) is int for x in identity.values()), "Wrong cache directory identity types")
++
++def cache_inventory(root, roots, states=None):
+     result = {}
++    if states is not None:
++        validate_cache_state_shapes(states, roots)
++        require(cache_root_state(root, CLI_CACHE) == states[CLI_CACHE], "Cli absence identity differs before cache inventory")
+     for name in roots:
++        if states is not None and name == CLI_CACHE:
++            continue  # Exact caller-bound state is rederived at every boundary.
+         base = relative(root, name)
+-        require(base.is_dir(), "Missing trusted import-cache directory")
+-        for path in sorted(base.rglob("*")):
+-            require(not path.is_symlink(), "Symlinked trusted cache entry")
+-            if path.is_file():
+-                result[str(path.relative_to(root))] = sha(path)
++        require(stat.S_ISDIR(base.lstat().st_mode), "Missing trusted import-cache directory")
++        pending = [base]
++        while pending:
++            directory = pending.pop()
++            before = directory.lstat()
++            require(stat.S_ISDIR(before.st_mode), "Nonregular/symlink cache directory")
++            # scandir/stat errors propagate; rglob would suppress some errors.
++            with os.scandir(directory) as entries:
++                children = sorted(entries, key=lambda entry: entry.name)
++            require(cache_identity(directory.lstat()) == cache_identity(before), "Cache directory changed during enumeration")
++            for entry in children:
++                path = directory / entry.name
++                observed = entry.stat(follow_symlinks=False)
++                if stat.S_ISDIR(observed.st_mode):
++                    pending.append(path)
++                else:
++                    require(stat.S_ISREG(observed.st_mode), "Nonregular/symlink trusted cache entry")
++                    result[str(path.relative_to(root))] = sha(path)
++                    require(cache_identity(path.lstat()) == cache_identity(observed), "Cache entry changed during hashing")
++    if states is not None:
++        require(cache_root_state(root, CLI_CACHE) == states[CLI_CACHE], "Cli absence identity drift during cache inventory")
+     return result
++
++def resolve_external_imports(root, freeze, packages):
++    """Same exactly-one source/object rules, rederived from tracked sources."""
++    external, source_hashes, owners = {}, {}, set()
++    for name in freeze["external_imports"]:
++        rel = name.replace(".", "/")
++        candidates = []
++        builtin = relative(root, PREFIX + "/lib/lean/" + rel + ".olean")
++        if builtin.is_file():
++            candidates.append((str(builtin.relative_to(root)), None, "<toolchain>"))
++        for owner, (package, tracked) in packages.items():
++            if rel + ".lean" in tracked:
++                obj = relative(root, str((package / ".lake/build/lib/lean" / (rel + ".olean")).relative_to(root)))
++                require(obj.is_file(), "Direct trusted import object missing: " + name)
++                source = relative(root, str((package / (rel + ".lean")).relative_to(root)))
++                candidates.append((str(obj.relative_to(root)), str(source.relative_to(root)), owner))
++                source_hashes[str(source.relative_to(root))] = sha(source)
++        require(len(candidates) == 1, "Missing or ambiguous direct external import: " + name)
++        external[name] = {"olean": candidates[0][0], "source": candidates[0][1]}
++        owners.add(candidates[0][2])
++    return external, source_hashes, sorted(owners)
+ 
+ def no_hidden_objects(root, cache_roots, allow_own_build=False, configuration_files=None):
+     build = root / "formal/.lake/build"
+@@ -223,7 +338,7 @@
+             require(not (base / namespace).exists(), "Submitted namespace hidden in trusted cache")
+ 
+ class Guard:
+-    def __init__(self, root, sources, tools, caches, serial, config_roots=(), config_files=None, system_executables=None, tool_aliases=None, config_provenance=None, config_stats=None):
++    def __init__(self, root, sources, tools, caches, serial, config_roots=(), config_files=None, system_executables=None, tool_aliases=None, config_provenance=None, config_stats=None, cache_roots=(), cache_states=None, external_owners=None, unused_cache_policy=None):
+         self.root, self.sources, self.tools, self.caches = root, sources, tools, caches
+         self.serial = serial
+         self.config_roots, self.config_files = config_roots, config_files or {}
+@@ -231,10 +346,17 @@
+         self.tool_aliases = tool_aliases
+         self.config_provenance = config_provenance
+         self.config_stats = config_stats
++        self.cache_roots, self.cache_states = cache_roots, cache_states
++        self.external_owners, self.unused_cache_policy = external_owners, unused_cache_policy
++        require(not cache_roots or cache_states is not None, "Unbound cache state guard")
+         require(not (set(tools) & set(TOOL_ALIASES)) or tool_aliases is not None, "Unbound bootstrap alias guard")
+     def add(self, path):
+         self.tools[str(path.relative_to(self.root))] = sha(path)
+     def check(self, rehash=False):
++        if self.cache_states is not None:
++            validate_cache_state_shapes(self.cache_states, self.cache_roots)
++            require(cache_root_states(self.root, self.cache_roots, self.external_owners, self.unused_cache_policy)
++                    == self.cache_states, "Trusted cache directory/absence identity drift")
+         configuration = indexed_configuration_inventory(self.root, self.config_provenance) if self.config_provenance is not None else configuration_inventory(self.root, self.config_roots)
+         require(configuration == self.config_files, "Lake configuration artifact inventory changed")
+         if self.config_stats is not None:
+@@ -341,6 +463,8 @@
+     ambient = os.environ if ambient is None else ambient
+     require(not any(ambient.get(k) for k in OVERRIDES), "Ambient import/Python/toolchain override")
+     require(runtime.get("status") == "authenticated_linux_runtime_for_strict_sampler", "Runtime template is not authenticated")
++    require(set(runtime) == RUNTIME_FIELDS and type(runtime["schema_version"]) is int
++            and runtime["schema_version"] == 2, "Mixed/old runtime cache-state schema")
+     require(runtime["source_freeze_sha256"] == SOURCE_SHA, "Runtime bound to another source freeze")
+     require(git_read(root, "rev-parse", "HEAD") == freeze["base_commit"], "Wrong checking base commit")
+     allowed = set(freeze["overlay_sha256"]) | {source_path(x) for x in ROOTS}
+@@ -399,31 +523,30 @@
+     require(runtime.get("lake_configuration_artifacts_stat") == config_stats, "Configuration runtime identity differs")
+     expected_cache_roots = sorted([PREFIX + "/lib/lean", *["formal/.lake/packages/" + n + "/.lake/build/lib/lean" for n in packages]])
+     require(runtime["trusted_cache_roots"] == expected_cache_roots, "Unapproved cache roots")
++    policy_binding = runtime["unused_cache_policy_binding"]
++    require(set(policy_binding) == {"path", "sha256"}, "Missing caller-bound unused-cache policy")
++    policy_file = relative(root, policy_binding["path"])
++    require(policy_file.is_relative_to(root / ".tools/linux-verification")
++            and SHA.fullmatch(policy_binding["sha256"]) and sha(policy_file) == policy_binding["sha256"]
++            and read(policy_file) == runtime["unused_cache_policy"], "Unused-cache policy file/SHA differs")
++    validate_unused_cache_policy(runtime["unused_cache_policy"])
++    tools[policy_binding["path"]] = policy_binding["sha256"]
++    external, external_sources, owners = resolve_external_imports(root, freeze, packages)
++    require(external == runtime["external_import_resolution"], "External source/object resolution changed")
++    require(owners == runtime["external_import_owners"], "Required external source-owner set changed")
++    tools.update(external_sources)
++    validate_cache_state_shapes(runtime["trusted_cache_states"], expected_cache_roots)
++    states = cache_root_states(root, expected_cache_roots, owners, runtime["unused_cache_policy"])
++    require(states == runtime["trusted_cache_states"], "Cache directory/absence state differs")
+     no_hidden_objects(root, expected_cache_roots, configuration_files=configuration)
+-    actual_cache = cache_inventory(root, expected_cache_roots)
++    actual_cache = cache_inventory(root, expected_cache_roots, states)
+     require(actual_cache == runtime["trusted_cache_files_sha256"], "Complete trusted cache inventory differs")
+-    external = {}
+-    for name in freeze["external_imports"]:
+-        rel = name.replace(".", "/")
+-        candidates = []
+-        builtin = relative(root, PREFIX + "/lib/lean/" + rel + ".olean")
+-        if builtin.is_file():
+-            candidates.append((str(builtin.relative_to(root)), None))
+-        for package, tracked in packages.values():
+-            if rel + ".lean" in tracked:
+-                obj = package / ".lake/build/lib/lean" / (rel + ".olean")
+-                require(obj.is_file(), "Direct trusted import object missing: " + name)
+-                source = package / (rel + ".lean")
+-                candidates.append((str(obj.relative_to(root)), str(source.relative_to(root))))
+-                tools[str(source.relative_to(root))] = sha(source)
+-        require(len(candidates) == 1, "Missing or ambiguous direct external import: " + name)
+-        external[name] = {"olean": candidates[0][0], "source": candidates[0][1]}
+-    require(external == runtime["external_import_resolution"], "External source/object resolution changed")
+     caches = {}
+     for name, digest in actual_cache.items():
+         stat = relative(root, name).stat()
+         caches[name] = (digest, (stat.st_size, stat.st_mtime_ns, stat.st_ctime_ns, stat.st_ino))
+-    guard = Guard(root, sources, tools, caches, serial, config_roots, configuration, runtime["system_executables"], aliases, config_provenance, config_stats)
++    guard = Guard(root, sources, tools, caches, serial, config_roots, configuration, runtime["system_executables"], aliases, config_provenance, config_stats,
++                  expected_cache_roots, states, owners, runtime["unused_cache_policy"])
+     guard.check(rehash=True)
+     require(not serial.inventory(root), "Whole-run start has submitted build files")
+     return modules, guard, descriptor, expected_cache_roots
+@@ -480,12 +603,12 @@
+             require(any(serial.object_owner(n) == name for n in changed), "No selected proof object produced")
+         step("comparator_targets_no_rebuild", serial.sandbox_command(root, lake, git_path, path, ["--no-cache", "--no-build", "build", *ROOTS]), True)
+         step("original_precomparison_landrun_preflight", serial.original_probe_command(root), True)
+-        require(cache_inventory(root, caches) == runtime["trusted_cache_files_sha256"], "Cache inventory drift before comparison")
++        require(cache_inventory(root, caches, guard.cache_states) == runtime["trusted_cache_files_sha256"], "Cache inventory drift before comparison")
+         env = {"PATH": path, "ELAN_HOME": str(root / ".tools/elan"), "MATHLIB_CACHE_DIR": str(root / ".tools/mathlib-cache"), "COMPARATOR_LANDRUN": str(adapter), "COMPARATOR_LEAN4EXPORT": str(root / ".tools/verification-bin/lean4export")}
+         result = step("unchanged_comparator", [*serial.service_prefix(root, env), str(lake), "env", str(root / ".tools/verification-bin/comparator"), str(descriptor)], True)
+         require(all(x in (result.stdout or "") for x in ("Running Lean default kernel on solution.", "Lean default kernel accepts the solution", "Your solution is okay!")), "Missing actual kernel/comparison acceptance")
+         guard.check(rehash=True)
+-        require(cache_inventory(root, caches) == runtime["trusted_cache_files_sha256"], "Cache inventory drift after comparison")
++        require(cache_inventory(root, caches, guard.cache_states) == runtime["trusted_cache_files_sha256"], "Cache inventory drift after comparison")
+         plan.update(status="revised_sampler_comparison_passed", final_project_output_sha256=previous, completed_unix=time.time())
+     except BaseException as error:
+         plan.update(status="interrupted" if isinstance(error, (KeyboardInterrupt, SystemExit)) else "failed", error=str(error).replace(str(root), "<CHECKOUT>"), stopped_unix=time.time())
+--- published-configuration-repair-v1/runner/authenticate_runtime.py
++++ private-unused-cache-repair-v1/runner/authenticate_runtime.py
+@@ -11,10 +11,11 @@
+ import shutil
+ import subprocess
+ 
+-RUNNER_SHA = "136f13a56001c6f4f31e73a7133193cc946be32de3cc4970edc9fc06c2a65d38"
++RUNNER_SHA = "acebbe349c5eb0d24cdba0181cc852f2f95c91ca94c56bfe056864dffb656e11"
+ def main():
+     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--runner',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--native-audit',type=Path,required=True)
+     p.add_argument('--lake-config-provenance',type=Path,required=True);p.add_argument('--lake-config-provenance-sha256',required=True)
++    p.add_argument('--unused-cache-policy',type=Path,required=True);p.add_argument('--unused-cache-policy-sha256',required=True)
+     a=p.parse_args();root=a.root.resolve()
+     import hashlib
+     digest=lambda f:hashlib.sha256(f.read_bytes()).hexdigest()
+@@ -44,18 +45,14 @@
+         package=root/'formal/.lake/packages'/name
+         r=subprocess.run(['/usr/bin/git','-C',str(package),'ls-files'],text=True,capture_output=True,timeout=30)
+         m.require(r.returncode==0,'Cannot inspect pinned package source');tracked[name]=set(r.stdout.splitlines())
+-    resolution={}
+-    for name in freeze['external_imports']:
+-        rel=name.replace('.','/');candidates=[]
+-        builtin=root/m.PREFIX/'lib/lean'/(rel+'.olean')
+-        if builtin.is_file():candidates.append({'olean':str(builtin.relative_to(root)),'source':None})
+-        for owner,files in tracked.items():
+-            if rel+'.lean' in files:
+-                package='formal/.lake/packages/'+owner
+-                candidates.append({'olean':package+'/.lake/build/lib/lean/'+rel+'.olean','source':package+'/'+rel+'.lean'})
+-        m.require(len(candidates)==1,'Ambiguous/missing external import');resolution[name]=candidates[0]
++    resolution,_,owners=m.resolve_external_imports(root,freeze,{n:(root/'formal/.lake/packages'/n,files) for n,files in tracked.items()})
++    policy_name=str(a.unused_cache_policy.absolute().relative_to(root));policy_file=m.relative(root,policy_name)
++    m.require(policy_file.is_relative_to(root/'.tools/linux-verification') and m.SHA.fullmatch(a.unused_cache_policy_sha256) and m.sha(policy_file)==a.unused_cache_policy_sha256,'Caller unused-cache policy SHA/path differs')
++    policy=m.read(policy_file);m.validate_unused_cache_policy(policy)
++    states=m.cache_root_states(root,cache_roots,owners,policy)
+     native=m.read(a.native_audit)
+-    runtime={'schema_version':1,'status':'authenticated_linux_runtime_for_strict_sampler','source_freeze_sha256':m.SOURCE_SHA,'trusted_files_sha256':tools,'trusted_tool_aliases':aliases,'system_executables':system,'trusted_cache_roots':cache_roots,'trusted_cache_files_sha256':m.cache_inventory(root,cache_roots),'lake_configuration_artifacts_sha256':configuration,'external_import_resolution':resolution,'entrypoint_native_audit':native}
++    runtime={'schema_version':2,'status':'authenticated_linux_runtime_for_strict_sampler','source_freeze_sha256':m.SOURCE_SHA,'trusted_files_sha256':tools,'trusted_tool_aliases':aliases,'system_executables':system,'trusted_cache_roots':cache_roots,'trusted_cache_files_sha256':m.cache_inventory(root,cache_roots,states),'lake_configuration_artifacts_sha256':configuration,'external_import_resolution':resolution,'entrypoint_native_audit':native,
++             'trusted_cache_states':states,'external_import_owners':owners,'unused_cache_policy':policy,'unused_cache_policy_binding':{'path':policy_name,'sha256':a.unused_cache_policy_sha256}}
+     runtime.update(lake_configuration_provenance=config_provenance,lake_configuration_provenance_binding={'path':config_name,'sha256':a.lake_config_provenance_sha256},lake_configuration_artifacts_stat=config_stats)
+     # Complete independent runner admission re-derives graph, pins, resolution,
+     # full cache and configuration identities; collection alone is insufficient.
+--- published-configuration-repair-v1/runner/test_strict_sampler.py
++++ private-unused-cache-repair-v1/runner/test_strict_sampler.py
+@@ -290,7 +290,8 @@
+         put(FREEZE["descriptor_path"], (HERE.parent / "challenge/StrictSampler.json").read_bytes())
+         self.tracked = {n: [] for n in FREEZE["package_revisions"]}
+         self.cache_roots = sorted([m.PREFIX + "/lib/lean", *["formal/.lake/packages/" + n + "/.lake/build/lib/lean" for n in self.tracked]])
+-        for name in self.cache_roots: (self.root / name).mkdir(parents=True, exist_ok=True)
++        for name in self.cache_roots:
++            if name != m.CLI_CACHE: (self.root / name).mkdir(parents=True, exist_ok=True)
+         resolution = {}
+         for name in FREEZE["external_imports"]:
+             rel = name.replace(".", "/")
+@@ -322,7 +323,14 @@
+         mock = patch.object(m.shutil, "which", side_effect=lambda name, **kwargs: system[name]["path"])
+         mock.start(); self.addCleanup(mock.stop)
+         config_roots = ["formal/.lake", *["formal/.lake/packages/"+n+"/.lake" for n in sorted(self.tracked)]]
+-        self.runtime = {"status":"authenticated_linux_runtime_for_strict_sampler", "source_freeze_sha256":m.SOURCE_SHA, "trusted_files_sha256":tools, "trusted_tool_aliases":m.tool_alias_inventory(self.root), "system_executables":system, "lake_configuration_artifacts_sha256":m.configuration_inventory(self.root,config_roots), "trusted_cache_roots":self.cache_roots, "trusted_cache_files_sha256":m.cache_inventory(self.root,self.cache_roots), "external_import_resolution":resolution}
++        self.policy=m.read(HERE.parent/"unused-cache-policy-candidate.json")
++        self.policy_file=put(".tools/linux-verification/unused-cache-policy.json",json.dumps(self.policy).encode())
++        self.owners=["<toolchain>","mathlib"]
++        self.states=m.cache_root_states(self.root,self.cache_roots,self.owners,self.policy)
++        self.runtime = {"schema_version":2,"entrypoint_native_audit":{},"trusted_cache_states":self.states,
++                        "external_import_owners":self.owners,"unused_cache_policy":self.policy,
++                        "unused_cache_policy_binding":{"path":str(self.policy_file.relative_to(self.root)),"sha256":m.sha(self.policy_file)},
++                        "status":"authenticated_linux_runtime_for_strict_sampler", "source_freeze_sha256":m.SOURCE_SHA, "trusted_files_sha256":tools, "trusted_tool_aliases":m.tool_alias_inventory(self.root), "system_executables":system, "lake_configuration_artifacts_sha256":m.configuration_inventory(self.root,config_roots), "trusted_cache_roots":self.cache_roots, "trusted_cache_files_sha256":m.cache_inventory(self.root,self.cache_roots,self.states), "external_import_resolution":resolution}
+         configuration=m.indexed_configuration_inventory(self.root,self.config_provenance)
+         self.runtime.update(lake_configuration_provenance=self.config_provenance,
+                             lake_configuration_provenance_binding={"path":str(self.config_file.relative_to(self.root)),"sha256":m.sha(self.config_file)},
+@@ -352,7 +360,7 @@
+             self.assertIn("-C", argv)
+             index = argv.index("-C")
+             return subprocess.CompletedProcess(argv, 0, self.git_read(Path(argv[index+1]), *argv[index+2:]), "")
+-        argv = ["authenticate_runtime.py", "--root", str(self.root), "--runner", str(HERE / "strict_sampler.py"), "--output", str(out), "--native-audit", str(audit),"--lake-config-provenance",str(self.config_file),"--lake-config-provenance-sha256",m.sha(self.config_file)]
++        argv = ["authenticate_runtime.py", "--root", str(self.root), "--runner", str(HERE / "strict_sampler.py"), "--output", str(out), "--native-audit", str(audit),"--lake-config-provenance",str(self.config_file),"--lake-config-provenance-sha256",m.sha(self.config_file),"--unused-cache-policy",str(self.policy_file),"--unused-cache-policy-sha256",m.sha(self.policy_file)]
+         with patch.object(sys, "argv", argv), patch.dict(os.environ, {}, clear=True), patch.object(auth.subprocess, "run", side_effect=git_command):
+             auth.main()
+         actual = m.read(out)
+--- published-configuration-repair-v1/runner/runtime-template.json
++++ private-unused-cache-repair-v1/runner/runtime-template.json
+@@ -5,6 +5,7 @@
+     "status": "pending_actual_compilation_and_named_axiom_audit",
+     "target_axioms": {}
+   },
++  "external_import_owners": [],
+   "external_import_resolution": {},
+   "lake_configuration_artifacts_sha256": {},
+   "lake_configuration_artifacts_stat": {},
+@@ -13,12 +14,18 @@
+     "path": null,
+     "sha256": null
+   },
+-  "schema_version": 1,
++  "schema_version": 2,
+   "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+   "status": "pending_actual_linux_runtime_authentication_not_executable",
+   "system_executables": {},
+   "trusted_cache_files_sha256": {},
+   "trusted_cache_roots": [],
++  "trusted_cache_states": {},
+   "trusted_files_sha256": {},
+-  "trusted_tool_aliases": {}
++  "trusted_tool_aliases": {},
++  "unused_cache_policy": {},
++  "unused_cache_policy_binding": {
++    "path": null,
++    "sha256": null
++  }
+ }
+--- /dev/null
++++ private-unused-cache-repair-v1/runner/test_unused_cache.py
+@@ -0,0 +1,146 @@
++"""Focused offline absence/state cases; no actual Git/service/compiler execution."""
++import copy
++import json
++import os
++from pathlib import Path
++import shutil
++import tempfile
++import unittest
++from unittest.mock import patch
++import test_strict_sampler as core
++m,serial=core.m,core.serial
++
++class CacheStateTests(unittest.TestCase):
++    def setUp(self):
++        self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
++        self.root=Path(self.temp.name).resolve()
++        self.policy=m.read(core.HERE.parent/'unused-cache-policy-candidate.json')
++        self.roots=[m.PREFIX+'/lib/lean',m.CLI_CACHE,'formal/.lake/packages/mathlib/.lake/build/lib/lean']
++        for name in self.roots:
++            if name!=m.CLI_CACHE:(self.root/name).mkdir(parents=True)
++        self.parent=self.root/'formal/.lake/packages/Cli';self.parent.mkdir()
++        self.owners=['<toolchain>','mathlib']
++        self.states=m.cache_root_states(self.root,self.roots,self.owners,self.policy)
++    def guard(self):
++        return m.Guard(self.root,{},{},{},serial,cache_roots=self.roots,cache_states=self.states,external_owners=self.owners,unused_cache_policy=self.policy)
++    def test_exact_unused_absent_ancestor_and_present_roots_pass(self):
++        self.assertEqual(self.states[m.CLI_CACHE]['first_missing'],m.CLI_ABSENT)
++        self.assertEqual(set(self.states),set(self.roots))
++        self.assertEqual(m.cache_inventory(self.root,self.roots,self.states),{})
++        self.guard().check()
++        self.assertFalse((self.parent/'.lake').exists())
++    def test_required_Cli_owner_rejects_even_valid_absence(self):
++        with self.assertRaisesRegex(m.Reject,'required source owner'):
++            m.cache_root_states(self.root,self.roots,['Cli'],self.policy)
++    def test_another_missing_root_rejected(self):
++        (self.root/self.roots[0]).rmdir()
++        with self.assertRaisesRegex(m.Reject,'Unexpected missing'):
++            m.cache_root_states(self.root,self.roots,self.owners,self.policy)
++    def test_missing_Cli_package_parent_rejected(self):
++        self.parent.rmdir()
++        with self.assertRaisesRegex(m.Reject,'Unexpected missing'):
++            m.cache_root_states(self.root,self.roots,self.owners,self.policy)
++    def test_file_at_absent_ancestor_rejected(self):
++        (self.parent/'.lake').write_bytes(b'ordinary file')
++        with self.assertRaises(m.Reject):self.guard().check()
++    def test_dangling_or_existing_symlink_at_absent_ancestor_rejected(self):
++        link=self.parent/'.lake'
++        for target in (self.root/'missing-target',self.root/self.roots[0]):
++            link.symlink_to(target)
++            with self.assertRaises(m.Reject):self.guard().check()
++            link.unlink()
++    def test_symlinked_source_parent_rejected(self):
++        moved=self.parent.with_name('old-Cli');self.parent.rename(moved);self.parent.symlink_to(moved)
++        with self.assertRaises(m.Reject):self.guard().check()
++    def test_new_empty_lake_presence_rejected(self):
++        (self.parent/'.lake').mkdir()
++        with self.assertRaises(m.Reject):self.guard().check()
++    def test_complete_new_Cli_cache_presence_rejected(self):
++        (self.root/m.CLI_CACHE).mkdir(parents=True)
++        with self.assertRaises(m.Reject):self.guard().check()
++    def test_create_remove_cycle_parent_ctime_catches_drift(self):
++        g=self.guard();old=self.parent.stat();(self.parent/'.lake').mkdir();(self.parent/'.lake').rmdir()
++        os.utime(self.parent,ns=(old.st_atime_ns,old.st_mtime_ns))
++        with self.assertRaisesRegex(m.Reject,'identity drift'):g.check()
++    def test_replaced_parent_same_absence_rejected(self):
++        self.parent.rename(self.parent.with_name('old-Cli'));self.parent.mkdir()
++        with self.assertRaisesRegex(m.Reject,'identity drift'):self.guard().check()
++    def test_parent_mode_drift_rejected(self):
++        self.parent.chmod(0o700)
++        with self.assertRaisesRegex(m.Reject,'identity drift'):self.guard().check()
++    def test_present_empty_root_identity_drift_rejected(self):
++        p=self.root/self.roots[0];p.rename(p.with_name('old-lean'));p.mkdir()
++        with self.assertRaisesRegex(m.Reject,'identity drift'):self.guard().check()
++    def test_wrong_extra_or_boolean_state_fields_rejected(self):
++        for mutate in (lambda x:x.pop(m.CLI_CACHE),lambda x:x.update({'unknown':{}}),
++                       lambda x:x[m.CLI_CACHE].update(state='directory'),
++                       lambda x:x[m.CLI_CACHE].update(extra=True),
++                       lambda x:x[m.CLI_CACHE]['parent_identity'].update(uid=False)):
++            states=copy.deepcopy(self.states);mutate(states)
++            with self.assertRaises(m.Reject):m.validate_cache_state_shapes(states,self.roots)
++    def test_broadened_absence_policy_rejected(self):
++        p=copy.deepcopy(self.policy);p['allowed_absence'][self.roots[0]]=p['allowed_absence'][m.CLI_CACHE]
++        with self.assertRaises(m.Reject):m.cache_root_states(self.root,self.roots,self.owners,p)
++    def test_cache_walk_permission_error_not_skipped(self):
++        with patch.object(m.os,'scandir',side_effect=PermissionError('denied')):
++            with self.assertRaises(PermissionError):m.cache_inventory(self.root,self.roots,self.states)
++    def test_cache_symlink_leaf_rejected(self):
++        (self.root/self.roots[0]/'bad.olean').symlink_to(self.root/'outside')
++        with self.assertRaises(m.Reject):m.cache_inventory(self.root,self.roots,self.states)
++    def test_direct_source_object_missing_or_ambiguous_still_rejects(self):
++        package=self.root/'formal/.lake/packages/mathlib';source=package/'Mathlib/Foo.lean';source.parent.mkdir();source.write_bytes(b'-- source')
++        freeze={'external_imports':['Mathlib.Foo']};packages={'mathlib':(package,{'Mathlib/Foo.lean'})}
++        with self.assertRaisesRegex(m.Reject,'object missing'):m.resolve_external_imports(self.root,freeze,packages)
++        obj=package/'.lake/build/lib/lean/Mathlib/Foo.olean';obj.parent.mkdir();obj.write_bytes(b'object')
++        external,_,owners=m.resolve_external_imports(self.root,freeze,packages)
++        self.assertEqual(owners,['mathlib']);self.assertEqual(external['Mathlib.Foo']['source'],'formal/.lake/packages/mathlib/Mathlib/Foo.lean')
++        builtin=self.root/m.PREFIX/'lib/lean/Mathlib/Foo.olean';builtin.parent.mkdir();builtin.write_bytes(b'also object')
++        with self.assertRaisesRegex(m.Reject,'ambiguous'):m.resolve_external_imports(self.root,freeze,packages)
++
++class AdmissionStateTests(unittest.TestCase):
++    def setUp(self):
++        self.case=core.FullAdmissionTests('test_complete_admission_with_synthetic_runtime_and_real_source_graph')
++        self.case.setUp()
++        def cleanup():
++            try:self.case.tearDown()
++            finally:self.case.doCleanups()
++        self.addCleanup(cleanup)
++    def test_full_679_admission_exact_absence_and82_required_objects_pass(self):
++        modules,g,_,roots=self.case.admit();self.assertEqual(len(modules),679);self.assertEqual(len(roots),10)
++        self.assertEqual(self.case.runtime['external_import_owners'],['<toolchain>','mathlib']);g.check()
++        self.assertEqual(len(self.case.runtime['external_import_resolution']),82)
++    def test_old_or_mixed_runtime_schema_rejected(self):
++        for change in ({'schema_version':1},{'legacy_absent_cache_roots':[]},{'schema_version':True}):
++            original=copy.deepcopy(self.case.runtime);self.case.runtime.update(change)
++            with self.assertRaisesRegex(m.Reject,'Mixed/old'):self.case.admit()
++            self.case.runtime=original
++    def test_runtime_owner_claim_cannot_override_rederived_set(self):
++        self.case.runtime['external_import_owners']=[]
++        with self.assertRaisesRegex(m.Reject,'owner set changed'):self.case.admit()
++    def test_required_Cli_source_owner_not_masked_by_unused_claim(self):
++        name='Init';rel='Init.lean';self.case.tracked['Cli'].append(rel)
++        self.case.put('formal/.lake/packages/Cli/'+rel,b'-- conflicting owner')
++        with self.assertRaisesRegex(m.Reject,'object missing'):self.case.admit()
++    def test_missing_selected_required_object_rejected(self):
++        name=next(x for x in self.case.runtime['external_import_resolution'] if x.startswith('Mathlib.'))
++        (self.case.root/self.case.runtime['external_import_resolution'][name]['olean']).unlink()
++        with self.assertRaisesRegex(m.Reject,'object missing'):self.case.admit()
++    def test_changed_selected_object_rejected_by_guard(self):
++        _,g,_,_=self.case.admit()
++        name=next(x for x in self.case.runtime['external_import_resolution'] if x.startswith('Mathlib.'))
++        (self.case.root/self.case.runtime['external_import_resolution'][name]['olean']).write_bytes(b'changed')
++        with self.assertRaises(m.Reject):g.check(rehash=True)
++    def test_policy_byte_change_rejected_before_state_use(self):
++        self.case.policy_file.write_bytes(self.case.policy_file.read_bytes()+b' ')
++        with self.assertRaisesRegex(m.Reject,'policy file/SHA'):self.case.admit()
++    def test_policy_mutation_after_admission_rejected(self):
++        _,g,_,_=self.case.admit();self.case.policy_file.write_bytes(self.case.policy_file.read_bytes()+b' ')
++        with self.assertRaises(m.Reject):g.check()
++    def test_absence_drift_before_or_after_owned_stage_guard_rejected(self):
++        _,g,_,_=self.case.admit();g.check();(self.case.root/m.CLI_ABSENT).mkdir()
++        with self.assertRaises(m.Reject):g.check()
++    def test_hidden_submitted_object_still_rejected(self):
++        self.case.put('formal/.lake/build/lib/lean/Math115/Bad.olean',b'untrusted proof')
++        with self.assertRaises(m.Reject):self.case.admit()
++
++if __name__=='__main__':unittest.main()
+--- /dev/null
++++ private-unused-cache-repair-v1/unused-cache-policy-candidate.json
+@@ -0,0 +1,14 @@
++{
++  "allowed_absence": {
++    "formal/.lake/packages/Cli/.lake/build/lib/lean": {
++      "first_missing": "formal/.lake/packages/Cli/.lake",
++      "required_owner": "Cli"
++    }
++  },
++  "origin": {
++    "review_manifest_sha256": "028643e0993cc3e0e268b46fb1033072573b14e488ffdb96379c729030284519",
++    "stopped_checking_child_sha256": "8826d43c9416ff398da1e878380365eb638e3b7aa5c710374b53128c9b842fb6"
++  },
++  "schema_version": 1,
++  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd"
++}

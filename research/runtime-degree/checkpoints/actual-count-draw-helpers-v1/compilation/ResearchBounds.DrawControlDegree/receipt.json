@@ -1,0 +1,49 @@
+{
+  "attempt_object_sha256": "56a6c29498ea7b9df719400273331d6e799a03bfc9329f605ddd33600a1a59b9",
+  "command": [
+    "<lean-compiler>",
+    "--root=<original-run>\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<original-run>\\attempts\\ResearchBounds.DrawControlDegree\\module.olean",
+    "-i",
+    "<original-run>\\attempts\\ResearchBounds.DrawControlDegree\\module.ilean",
+    "<original-run>\\source\\ResearchBounds\\DrawControlDegree.lean"
+  ],
+  "diagnostic_object": "<original-run>\\lib\\lean\\ResearchBounds\\DrawControlDegree.olean",
+  "elapsed_seconds": 83.65420099999756,
+  "evidence_class": "original_native_compilation",
+  "execution_origin": "original",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    },
+    "OAI.Combinatorics.ContingencyTables.Machines.FirstSuccessProgram": {
+      "path": "<authenticated-dependency-root>\\lib\\lean\\OAI\\Combinatorics\\ContingencyTables\\Machines\\FirstSuccessProgram.olean",
+      "sha256": "8f0420f17fa2993f5cb3a7a8f481735a3e33d14931eb50775560f3ff91d498fa"
+    },
+    "ResearchBounds.TreeDegreeBounds": {
+      "path": "<original-run>\\lib\\lean\\ResearchBounds\\TreeDegreeBounds.olean",
+      "sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae"
+    }
+  },
+  "module": "ResearchBounds.DrawControlDegree",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "57325b05b7b4301ce30179cb9c84f025376f03027d5a3b25d20bf9e8cb9ddc2f"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "064278f3abd9e7ff60816e3c2045c9f2dd5af673ad6c41bafd998f9186e4c729"
+  },
+  "source_sha256": "e498430420b0d985aa33af88b21098b1f4d6422041784dae9ddebca89b8704e4",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

@@ -1,0 +1,124 @@
+{
+  "audit_module": "Checkpoint12Audits.CountBounds_ParserDegree",
+  "command": [
+    "<lean-compiler>",
+    "--root=<original-run>\\audit-source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<original-run>\\audits\\CountBounds.ParserDegree\\module.olean",
+    "<original-run>\\audit-source\\Checkpoint12Audits\\CountBounds_ParserDegree.lean"
+  ],
+  "elapsed_seconds": 80.6661036000587,
+  "error": null,
+  "evidence_class": "original_native_named_axiom_audit",
+  "execution_origin": "original",
+  "exit_code": 0,
+  "input_objects": {
+    "CountBounds.ParserDegree": {
+      "path": "<original-run>\\lib\\lean\\CountBounds\\ParserDegree.olean",
+      "sha256": "1c1e5d766924370c1c8320914955f268861ab2e3c455f1b2087bd6e6714944d9"
+    },
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    }
+  },
+  "module": "CountBounds.ParserDegree",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "7bf901bfb49c9de32915db596c603ecf54e7c091f74d631e4451a3c8cec2fa76"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "7bf901bfb49c9de32915db596c603ecf54e7c091f74d631e4451a3c8cec2fa76"
+  },
+  "records": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ParserDegreeV1.typed_val"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ParserDegreeV1.typed_eqSymbol"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ParserDegreeV1.typed_numStep"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ParserDegreeV1.typed_numFold"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ParserDegreeV1.typed_parse"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.ParserDegreeV1.parse_output_weight"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ParserDegreeV1.typed_marginLists"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ParserDegreeV1.typed_samplingPrecision"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ParserDegreeV1.typed_samplingInput"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ParserDegreeV1.typed_parsedSampling"
+    }
+  ],
+  "source_sha256": "2cc0421785aa1214749d51abe3eb761150669861c9f139b1bfe566d3a79f8afc",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

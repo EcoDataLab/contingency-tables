@@ -1,0 +1,148 @@
+{
+  "accepted_named_reports": 172,
+  "projection_review_status": "The separate publication review at ../actual-count-draw-helpers-v1-review.json binds this public copy; creation-time source tags do not describe its current native compiler/audit status.",
+  "source_header_creation_tags_are_historical": true,
+  "sources": [
+    {
+      "audit_receipt": "audit/CountBounds.ListRepeatDegree/receipt.json",
+      "audit_reports": 15,
+      "compiler_receipt": "compilation/CountBounds.ListRepeatDegree/receipt.json",
+      "creation_header_sha256": "4455c92c0014af2c17f6f180a4eec633f0d20e4907c2f881857a00a338ee858e",
+      "current_status": "ordinary_native_compilation_and_exact_named_audit_passed",
+      "execution_origin": "original reused compiler/audit evidence",
+      "header_status_scope": "Historical creation-time description preserved byte-for-byte. It is not the current compiler/audit status.",
+      "historical_creation_tags": [
+        "private"
+      ],
+      "module": "CountBounds.ListRepeatDegree",
+      "source": "CountBounds/ListRepeatDegree.lean",
+      "source_sha256": "f847e1521c780b1a3c3b89f892542e123406b75fbcb7e0d315191160ca1e0157"
+    },
+    {
+      "audit_receipt": "audit/ResearchBounds.DrawControlDegree/receipt.json",
+      "audit_reports": 20,
+      "compiler_receipt": "compilation/ResearchBounds.DrawControlDegree/receipt.json",
+      "creation_header_sha256": "ce78649e50a01970876c7295577b688a9988e24a4597a0f6b4a2a84be4ce0bb4",
+      "current_status": "ordinary_native_compilation_and_exact_named_audit_passed",
+      "execution_origin": "original reused compiler/audit evidence",
+      "header_status_scope": "Historical creation-time description preserved byte-for-byte. It is not the current compiler/audit status.",
+      "historical_creation_tags": [
+        "private"
+      ],
+      "module": "ResearchBounds.DrawControlDegree",
+      "source": "ResearchBounds/DrawControlDegree.lean",
+      "source_sha256": "e498430420b0d985aa33af88b21098b1f4d6422041784dae9ddebca89b8704e4"
+    },
+    {
+      "audit_receipt": "audit/CountBounds.ParserDegree/receipt.json",
+      "audit_reports": 10,
+      "compiler_receipt": "compilation/CountBounds.ParserDegree/receipt.json",
+      "creation_header_sha256": "3b031437eec57218087260f4729b25712cc4f58a02109314f2c8fa26a2bf6224",
+      "current_status": "ordinary_native_compilation_and_exact_named_audit_passed",
+      "execution_origin": "original reused compiler/audit evidence",
+      "header_status_scope": "Historical creation-time description preserved byte-for-byte. It is not the current compiler/audit status.",
+      "historical_creation_tags": [
+        "private",
+        "source-only",
+        "uncompiled"
+      ],
+      "module": "CountBounds.ParserDegree",
+      "source": "CountBounds/ParserDegree.lean",
+      "source_sha256": "8ea75320588440b047566b93d2aa42875588a8291bca7755e7faae0aa6a3489f"
+    },
+    {
+      "audit_receipt": "audit/ResearchBounds.CatalogueLeafDegrees/receipt.json",
+      "audit_reports": 9,
+      "compiler_receipt": "compilation/ResearchBounds.CatalogueLeafDegrees/receipt.json",
+      "creation_header_sha256": "132e9a12518c9f0a53b170770dd5c280374bdffa7103e942ccc9255f1ad8476f",
+      "current_status": "ordinary_native_compilation_and_exact_named_audit_passed",
+      "execution_origin": "original reused compiler/audit evidence",
+      "header_status_scope": "Historical creation-time description preserved byte-for-byte. It is not the current compiler/audit status.",
+      "historical_creation_tags": [
+        "private",
+        "source-only"
+      ],
+      "module": "ResearchBounds.CatalogueLeafDegrees",
+      "source": "ResearchBounds/CatalogueLeafDegrees.lean",
+      "source_sha256": "a03e2425ff5a71a6f8ae4c11ec314ea7d27cf169bb2496bd1f57acad86a84a58"
+    },
+    {
+      "audit_receipt": "audit/ResearchBounds.SmallCellCatalogueDegree/receipt.json",
+      "audit_reports": 7,
+      "compiler_receipt": "compilation/ResearchBounds.SmallCellCatalogueDegree/receipt.json",
+      "creation_header_sha256": "37bdf85bf3a46a1b8115b02143f98a4ea07b4864fe6d700c127f81afe0e2bce6",
+      "current_status": "ordinary_native_compilation_and_exact_named_audit_passed",
+      "execution_origin": "fresh compiler/audit evidence",
+      "header_status_scope": "Historical creation-time description preserved byte-for-byte. It is not the current compiler/audit status.",
+      "historical_creation_tags": [
+        "private",
+        "source-only"
+      ],
+      "module": "ResearchBounds.SmallCellCatalogueDegree",
+      "source": "ResearchBounds/SmallCellCatalogueDegree.lean",
+      "source_sha256": "ad347c5962f2948f751d8b9ea95c575745b85888a941a3fca28912f5fda7497f"
+    },
+    {
+      "audit_receipt": "audit/CountBounds.ScalarCircuitDegreeV2/receipt.json",
+      "audit_reports": 32,
+      "compiler_receipt": "compilation/CountBounds.ScalarCircuitDegreeV2/receipt.json",
+      "creation_header_sha256": "d70ed009e569f3e7a702fe05db283243b4d1646d1af4871fbf1f9952f5782f01",
+      "current_status": "ordinary_native_compilation_and_exact_named_audit_passed",
+      "execution_origin": "fresh compiler/audit evidence",
+      "header_status_scope": "Historical creation-time description preserved byte-for-byte. It is not the current compiler/audit status.",
+      "historical_creation_tags": [
+        "private"
+      ],
+      "module": "CountBounds.ScalarCircuitDegreeV2",
+      "source": "CountBounds/ScalarCircuitDegreeV2.lean",
+      "source_sha256": "804583ef44717abbe7193a92a4f971abfdea1a302e3521da2515d5de1c9267a2"
+    },
+    {
+      "audit_receipt": "audit/CountBounds.TightWordCountDegreeV2/receipt.json",
+      "audit_reports": 49,
+      "compiler_receipt": "compilation/CountBounds.TightWordCountDegreeV2/receipt.json",
+      "creation_header_sha256": "081cbfb7f6c9b038cb6c3160c15b8cc38bd7dc732939ff573262058620d2e455",
+      "current_status": "ordinary_native_compilation_and_exact_named_audit_passed",
+      "execution_origin": "fresh compiler/audit evidence",
+      "header_status_scope": "Historical creation-time description preserved byte-for-byte. It is not the current compiler/audit status.",
+      "historical_creation_tags": [
+        "private"
+      ],
+      "module": "CountBounds.TightWordCountDegreeV2",
+      "source": "CountBounds/TightWordCountDegreeV2.lean",
+      "source_sha256": "c5126ff6d85f624c9263460ec778739b144a5b5592167519bdf22a2bdeb835ef"
+    },
+    {
+      "audit_receipt": "audit/ResearchBounds.DrawWalkDegree/receipt.json",
+      "audit_reports": 22,
+      "compiler_receipt": "compilation/ResearchBounds.DrawWalkDegree/receipt.json",
+      "creation_header_sha256": "aeea5b0da6394eae4cf1b245e6076c8d3a50fc1ec120fcef1313b980aca46dee",
+      "current_status": "ordinary_native_compilation_and_exact_named_audit_passed",
+      "execution_origin": "fresh compiler/audit evidence",
+      "header_status_scope": "Historical creation-time description preserved byte-for-byte. It is not the current compiler/audit status.",
+      "historical_creation_tags": [
+        "source-only",
+        "have not yet run"
+      ],
+      "module": "ResearchBounds.DrawWalkDegree",
+      "source": "ResearchBounds/DrawWalkDegree.lean",
+      "source_sha256": "4284ab37b05c20239ff069b8354538158b2938fe1d41c1a7119bde93ebb2b2dd"
+    },
+    {
+      "audit_receipt": "audit/ResearchBounds.DrawAssemblyDegree/receipt.json",
+      "audit_reports": 8,
+      "compiler_receipt": "compilation/ResearchBounds.DrawAssemblyDegree/receipt.json",
+      "creation_header_sha256": "e7691102797bfd6992b8347136b84dd0cb0904977bc9dae8b4308342e71090f8",
+      "current_status": "ordinary_native_compilation_and_exact_named_audit_passed",
+      "execution_origin": "fresh compiler/audit evidence",
+      "header_status_scope": "Historical creation-time description preserved byte-for-byte. It is not the current compiler/audit status.",
+      "historical_creation_tags": [
+        "source-only"
+      ],
+      "module": "ResearchBounds.DrawAssemblyDegree",
+      "source": "ResearchBounds/DrawAssemblyDegree.lean",
+      "source_sha256": "bcdf1628317e01795819a0452e6d9415ef83fb52bc3fe6db46196b26cfd27997"
+    }
+  ],
+  "status": "current_accepted_native_source_status_after_creation_time_headers"
+}

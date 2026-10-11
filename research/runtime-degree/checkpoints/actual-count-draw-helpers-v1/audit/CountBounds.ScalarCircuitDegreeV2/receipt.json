@@ -1,0 +1,287 @@
+{
+  "audit_module": "Checkpoint12Audits.CountBounds_ScalarCircuitDegreeV2",
+  "command": [
+    "<lean-compiler>",
+    "--root=<current-run>\\audit-source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<current-run>\\audits\\CountBounds.ScalarCircuitDegreeV2\\module.olean",
+    "<current-run>\\audit-source\\Checkpoint12Audits\\CountBounds_ScalarCircuitDegreeV2.lean"
+  ],
+  "elapsed_seconds": 83.65137670002878,
+  "error": null,
+  "evidence_class": "fresh_native_named_axiom_audit",
+  "execution_origin": "fresh",
+  "exit_code": 0,
+  "input_objects": {
+    "CountBounds.ScalarCircuitDegreeV2": {
+      "path": "<current-run>\\lib\\lean\\CountBounds\\ScalarCircuitDegreeV2.olean",
+      "sha256": "d96fb58d528c48d7d9b8c15a57a408e47b51260c0372e76c22d713c42a4ad909"
+    },
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    }
+  },
+  "module": "CountBounds.ScalarCircuitDegreeV2",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "617c21639c467a52499b192aa539a03aa8df91bd87c9c205cfc44ba588fe9e41"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "617c21639c467a52499b192aa539a03aa8df91bd87c9c205cfc44ba588fe9e41"
+  },
+  "records": [
+    {
+      "axioms": [],
+      "name": "Math115.ScalarCircuitDegreeV2.LinearOutput"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.Circuit"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.linear_identity"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.linear_first"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.linear_second"
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.linear_constant"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.linear_pair"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.linear_composition"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.typed_composition_linear"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_identity"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_first"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_second"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_constant"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_composition"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_pair"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_congr"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_mono"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_composition_same"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_pair_same"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_add"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_multiply"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_fixedPower"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_listLength"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_listSum"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_log"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.head_output_weight_zero"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.marginLists_linear"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.samplingPrecision_linear"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.samplingInput_linear"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.parse_linear"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.parsedSampling_linear"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ScalarCircuitDegreeV2.circuit_parsedSampling"
+    }
+  ],
+  "source_sha256": "5448bbf90520669652f2b0f53fed8c83ae9ff88ace18b3b27c6e64298fa86692",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

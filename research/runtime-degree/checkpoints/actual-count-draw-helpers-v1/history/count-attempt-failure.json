@@ -1,0 +1,56 @@
+{
+  "count_audit_blocked_after_source_failure_and_never_executed": true,
+  "count_was_attempted_and_failed": true,
+  "module_outcomes": {
+    "CountBounds.ListRepeatDegree": "passed",
+    "CountBounds.ParserDegree": "passed",
+    "CountBounds.ScalarCircuitDegreeV2": "passed",
+    "CountBounds.TightWordCountDegreeV2": "failed",
+    "ResearchBounds.CatalogueLeafDegrees": "passed",
+    "ResearchBounds.DrawAssemblyDegree": "passed",
+    "ResearchBounds.DrawControlDegree": "passed",
+    "ResearchBounds.DrawWalkDegree": "passed",
+    "ResearchBounds.SmallCellCatalogueDegree": "passed"
+  },
+  "no_count_object_or_49_audit_success_inferred": true,
+  "ordinary_count_source_failure": {
+    "exit_code": 1,
+    "original_receipt_sha256": "51f2046fff87d79c7dae8d45c7093380214957917d281611b853107c8ceb68a9",
+    "original_stdout_sha256": "6c3b9ef843279f571436e585624d05c09ee287f63ca084cef2609110d9e3abe0",
+    "source_sha256": "8111f4b779aa2ed17b52d0ac5802792394a04d173d411d95a6157ce2d1cdb81d"
+  },
+  "original_capture_sha256": "fbe15801f39304a215a23c9e55d941110d0256e202aa9153d6e2aff8a0bf1fc4",
+  "original_final_result_sha256": "ae9d3f70a0d4a02582b579e434cb36c4cd91a2c3b11fed96f43ec6f9d39dea44",
+  "original_owner_closure_sha256": "d2c1b7d58af02f660a43af567196b4d7767c1bf4118d1049dd4cec7f4db9e9d3",
+  "supported_component_scope": {
+    "actual_draw_t": null,
+    "complete_numerical_D": null,
+    "count1008_accepted": false,
+    "fresh_reports": 69,
+    "publication_kind": "partial_component_diagnostics_only",
+    "requested_names": 172,
+    "requires_explicit_partial_projection_grant_and_independent_review": true,
+    "reused_reports": 54,
+    "successful_named_reports": 123,
+    "supported_modules": [
+      "CountBounds.ListRepeatDegree",
+      "ResearchBounds.DrawControlDegree",
+      "CountBounds.ParserDegree",
+      "ResearchBounds.CatalogueLeafDegrees",
+      "ResearchBounds.SmallCellCatalogueDegree",
+      "CountBounds.ScalarCircuitDegreeV2",
+      "ResearchBounds.DrawWalkDegree",
+      "ResearchBounds.DrawAssemblyDegree"
+    ],
+    "supported_source_count": 8,
+    "unsupported_modules": [
+      {
+        "actual_receipt_policy": "copy only an original captured receipt; blocked/not-run entries are derived terminal status, not fabricated receipts",
+        "audit_status": "blocked",
+        "compile_status": "failed",
+        "module": "CountBounds.TightWordCountDegreeV2",
+        "terminal_status": "failed"
+      }
+    ]
+  }
+}

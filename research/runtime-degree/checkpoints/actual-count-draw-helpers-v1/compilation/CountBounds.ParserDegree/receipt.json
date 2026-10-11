@@ -1,0 +1,49 @@
+{
+  "attempt_object_sha256": "1c1e5d766924370c1c8320914955f268861ab2e3c455f1b2087bd6e6714944d9",
+  "command": [
+    "<lean-compiler>",
+    "--root=<original-run>\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<original-run>\\attempts\\CountBounds.ParserDegree\\module.olean",
+    "-i",
+    "<original-run>\\attempts\\CountBounds.ParserDegree\\module.ilean",
+    "<original-run>\\source\\CountBounds\\ParserDegree.lean"
+  ],
+  "diagnostic_object": "<original-run>\\lib\\lean\\CountBounds\\ParserDegree.olean",
+  "elapsed_seconds": 82.70995480008423,
+  "evidence_class": "original_native_compilation",
+  "execution_origin": "original",
+  "exit_code": 0,
+  "input_objects": {
+    "CountBounds.ListRepeatDegree": {
+      "path": "<original-run>\\lib\\lean\\CountBounds\\ListRepeatDegree.olean",
+      "sha256": "6b5392e761f376263a6460e3263c489cf030b7289b33231720baf7db6bfb1d77"
+    },
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    },
+    "Math115.PublicLatticeSampler": {
+      "path": "<original-run>\\Math115-projection\\Math115\\PublicLatticeSampler.olean",
+      "sha256": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489"
+    }
+  },
+  "module": "CountBounds.ParserDegree",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "50d618f30562585f959a49fe5736a8860f33c950599de5163c7b3eba582b8be8"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "8e715e39e6fc76652a0dafb0cb9cb9361652fe6fc7bc78c6649686d4e02f4432"
+  },
+  "source_sha256": "8ea75320588440b047566b93d2aa42875588a8291bca7755e7faae0aa6a3489f",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

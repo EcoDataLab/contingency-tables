@@ -1,0 +1,60 @@
+{
+  "AI_partial_evidence_review_manifest_sha256": "e684bbe506e9dd5f006dc98a59efb413e59e81f33238775627295b7907ca5a0b",
+  "module_outcomes": {
+    "CountBounds.ListRepeatDegree": "passed",
+    "CountBounds.ParserDegree": "passed",
+    "CountBounds.ScalarCircuitDegreeV2": "passed",
+    "CountBounds.TightWordCountDegreeV2": "failed",
+    "ResearchBounds.CatalogueLeafDegrees": "passed",
+    "ResearchBounds.DrawAssemblyDegree": "passed",
+    "ResearchBounds.DrawControlDegree": "passed",
+    "ResearchBounds.DrawWalkDegree": "passed",
+    "ResearchBounds.SmallCellCatalogueDegree": "passed"
+  },
+  "no_count_object_or_49_audit_success": true,
+  "ordinary_count_failure": {
+    "exit_code": 1,
+    "original_receipt_sha256": "c9b82da57cb85b35846d5da0c784db1eaac1c552a789718b2103da3cd94d3f3b",
+    "original_stdout_sha256": "840063bed40f6fd5e88ebb0c2999020db14f98303181b527743230c9f9cd5c72",
+    "residual_error_lines": [
+      82,
+      259
+    ],
+    "source_sha256": "1c452b0bd85d9a5c7c1183829269b6772c42630fff69c3d8a3e5d07ad15faa69"
+  },
+  "original_capture_sha256": "50338897880630e11251ccc72dea6e806e5b5c3b42a138d05172db8f924091bd",
+  "original_final_result_sha256": "dda4e770cddefe9e458322e122bcc00d0611fe71d8daedf20857b2b69baad36d",
+  "original_owner_closure_sha256": "4d52d6c60580f704a98702310490bb38e6ebdf53a1d147215dfb7c7b958627e1",
+  "review_scope": "Eight supported components/123 reports only, not acceptance of the later alias source.",
+  "supported_component_scope": {
+    "actual_draw_t": null,
+    "complete_numerical_D": null,
+    "count1008_accepted": false,
+    "fresh_reports": 69,
+    "publication_kind": "partial_component_diagnostics_only",
+    "requested_names": 172,
+    "requires_explicit_partial_projection_grant_and_independent_review": true,
+    "reused_reports": 54,
+    "successful_named_reports": 123,
+    "supported_modules": [
+      "CountBounds.ListRepeatDegree",
+      "ResearchBounds.DrawControlDegree",
+      "CountBounds.ParserDegree",
+      "ResearchBounds.CatalogueLeafDegrees",
+      "ResearchBounds.SmallCellCatalogueDegree",
+      "CountBounds.ScalarCircuitDegreeV2",
+      "ResearchBounds.DrawWalkDegree",
+      "ResearchBounds.DrawAssemblyDegree"
+    ],
+    "supported_source_count": 8,
+    "unsupported_modules": [
+      {
+        "actual_receipt_policy": "copy only an original captured receipt; blocked/not-run entries are derived terminal status, not fabricated receipts",
+        "audit_status": "blocked",
+        "compile_status": "failed",
+        "module": "CountBounds.TightWordCountDegreeV2",
+        "terminal_status": "failed"
+      }
+    ]
+  }
+}

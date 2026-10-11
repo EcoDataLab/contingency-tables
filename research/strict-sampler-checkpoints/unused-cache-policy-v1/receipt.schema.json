@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Closed startup-only timeout without policy verdict",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "source_policy",
+    "actual_authentication",
+    "actual_capture",
+    "actual_cleanup",
+    "independent_actual_readback",
+    "actual_runtime_freeze",
+    "actual_plan",
+    "actual_82_direct_external_import_resolution",
+    "policy_live_acceptance",
+    "policy_live_rejection",
+    "full_strict_acceptance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "const": "closed_startup_only_authentication_timeout_no_live_policy_verdict"
+    },
+    "actual_authentication": {
+      "type": "object",
+      "required": [
+        "status",
+        "deadline_seconds",
+        "returncode",
+        "measured_phase_elapsed_seconds",
+        "stdout_bytes",
+        "stderr_bytes",
+        "substep_unobserved"
+      ],
+      "properties": {
+        "deadline_seconds": {
+          "const": 600
+        },
+        "returncode": {
+          "type": "null"
+        },
+        "measured_phase_elapsed_seconds": {
+          "type": "null"
+        },
+        "stdout_bytes": {
+          "const": 0
+        },
+        "stderr_bytes": {
+          "const": 0
+        },
+        "substep_unobserved": {
+          "const": true
+        }
+      }
+    },
+    "actual_runtime_freeze": {
+      "type": "null"
+    },
+    "actual_plan": {
+      "type": "null"
+    },
+    "actual_82_direct_external_import_resolution": {
+      "type": "null"
+    },
+    "policy_live_acceptance": {
+      "type": "null"
+    },
+    "policy_live_rejection": {
+      "type": "null"
+    },
+    "full_strict_acceptance": {
+      "type": "null"
+    },
+    "actual_capture": {
+      "type": "object"
+    },
+    "actual_cleanup": {
+      "type": "object"
+    },
+    "independent_actual_readback": {
+      "type": "object"
+    }
+  },
+  "$comment": "Representation only. Complete source/capture/hash/phase checks required separately. A600s timeout without a recorded returncode/substep is not cache policy rejection or acceptance."
+}
