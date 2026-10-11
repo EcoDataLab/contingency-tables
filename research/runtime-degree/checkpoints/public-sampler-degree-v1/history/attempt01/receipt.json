@@ -1,0 +1,45 @@
+{
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint12-public-degree-01\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint12-public-degree-01\\attempts\\ResearchBounds.PublicSamplerDegree\\module.olean",
+    "-i",
+    "<owned-workspace>\\checkpoint12-public-degree-01\\attempts\\ResearchBounds.PublicSamplerDegree\\module.ilean",
+    "<owned-workspace>\\checkpoint12-public-degree-01\\source\\ResearchBounds\\PublicSamplerDegree.lean"
+  ],
+  "elapsed_seconds": 223.81829630001448,
+  "exit_code": 1,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Math115.PublicLatticeSampler": {
+      "path": "<owned-workspace>\\checkpoint12-public-degree-01\\Math115-projection\\Math115\\PublicLatticeSampler.olean",
+      "sha256": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489",
+      "trust": "fully authenticated accepted R10 object"
+    },
+    "ResearchBounds.FiniteWordDegreeBounds": {
+      "path": "<owned-workspace>\\checkpoint12-public-degree-01\\lib\\lean\\ResearchBounds\\FiniteWordDegreeBounds.olean",
+      "sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce",
+      "trust": "fully pinned accepted helper bundle; generic named audit pending"
+    }
+  },
+  "module": "ResearchBounds.PublicSamplerDegree",
+  "outcome_class": "proof_elaboration_unknown_identifier",
+  "promoted_object": null,
+  "scope": "Failed on unqualified polynomial_eval_monotone; warnings retained. No accepted object or audit result.",
+  "source_sha256": "0c43eff5a4b6a1952e1f66a7066ac7c4264dc2aca86512d02f445dd72017f6a8",
+  "source_unchanged": true,
+  "status": "failed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "9c9fa08a433843952ee1161728b5c83429fcbd0fe3f4ff33b483737120064b9a"
+  }
+}

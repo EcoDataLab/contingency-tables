@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Conditional public sampler degree evidence receipt",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "source",
+    "source_sha256",
+    "ordinary_compilation",
+    "named_audit",
+    "provenance",
+    "conditional_degree",
+    "numerical_count_degree_e",
+    "numerical_draw_degree_t",
+    "public_replay"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "const": "conditional_public_sampler_degree_compiled_named_audit_passed"
+    },
+    "source": {
+      "const": "ResearchBounds/PublicSamplerDegree.lean"
+    },
+    "source_sha256": {
+      "const": "4ac577f8b7b1f2fc7c68950ef87bfe39ca236e82a75602395e72da694fb10255"
+    },
+    "ordinary_compilation": {
+      "type": "object",
+      "required": [
+        "receipt",
+        "published_receipt_sha256",
+        "original_receipt_sha256",
+        "object_sha256",
+        "elapsed_seconds",
+        "platform",
+        "scope"
+      ]
+    },
+    "named_audit": {
+      "type": "object",
+      "required": [
+        "receipt",
+        "original_receipt_sha256",
+        "driver_sha256",
+        "verified_name_count",
+        "records",
+        "environment_exhaustiveness"
+      ],
+      "properties": {
+        "verified_name_count": {
+          "const": 3
+        },
+        "environment_exhaustiveness": {
+          "const": false
+        },
+        "driver_sha256": {
+          "const": "59496c047c6e7f05ef2b1db1a0ac8d990300930890cda229a81d6e18995d5f94"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "path",
+        "sha256"
+      ]
+    },
+    "conditional_degree": {
+      "const": "340*max(1,t)*max(e,6)"
+    },
+    "numerical_count_degree_e": {
+      "type": "null"
+    },
+    "numerical_draw_degree_t": {
+      "type": "null"
+    },
+    "public_replay": {
+      "type": "null"
+    }
+  },
+  "$comment": "Representation schema only. Actual digest/object/source/provenance and exact audit-record validation remain separate; schema validity is not execution evidence."
+}

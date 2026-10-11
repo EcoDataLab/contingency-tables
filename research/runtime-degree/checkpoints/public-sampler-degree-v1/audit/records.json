@@ -1,0 +1,22 @@
+[
+  {
+    "axioms": [],
+    "name": "Math115.PublicSamplerDegree.publicDegree"
+  },
+  {
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "name": "Math115.PublicSamplerDegree.machineTime_public_degree"
+  },
+  {
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "name": "Math115.PublicSamplerDegree.fixedMachineBoundedSampling_with_degree"
+  }
+]

@@ -1,0 +1,155 @@
+{
+  "artifacts": [
+    {
+      "changes": [],
+      "original_artifact_id": "attempt01/PublicSamplerDegree.lean",
+      "original_sha256": "0c43eff5a4b6a1952e1f66a7066ac7c4264dc2aca86512d02f445dd72017f6a8",
+      "published_file": "history/attempt01/ResearchBounds/PublicSamplerDegree.lean",
+      "published_sha256": "0c43eff5a4b6a1952e1f66a7066ac7c4264dc2aca86512d02f445dd72017f6a8"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identity fields omitted; failure scope and null promoted object added."
+      ],
+      "original_artifact_id": "attempt01/receipt.json",
+      "original_sha256": "a6f8dfe41809b8ce506d174152863a4433c404eb98cb2c75d10aa04d274046a0",
+      "published_file": "history/attempt01/receipt.json",
+      "published_sha256": "4f511e61ee85fd64c06b72865aa69b29d88116d4ca1d1cea792ab9dda3d8fe00"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "attempt01/stdout.log",
+      "original_sha256": "9c9fa08a433843952ee1161728b5c83429fcbd0fe3f4ff33b483737120064b9a",
+      "published_file": "history/attempt01/stdout.log",
+      "published_sha256": "b67d097c3610573f95531116f2a61536958c6e84e145f3572ca0eb90e456db9c"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "attempt01/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "history/attempt01/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identity omitted; explicit native scope added."
+      ],
+      "original_artifact_id": "attempt02/attempts/ResearchBounds.PublicSamplerDegree/receipt.json",
+      "original_sha256": "a2e2ed2ebaa56c54bc5f24ae185b76c68cf490e1b90daa6cf0246afe7a4c70a7",
+      "published_file": "compilation/receipt.json",
+      "published_sha256": "00707342c98bf127c5b629a651274ef38ec9683e2706c7d728a9efa667e1c914"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "attempt02/attempts/ResearchBounds.PublicSamplerDegree/stdout.log",
+      "original_sha256": "8e3651942d8653cb6620930506105c3e71cf0a77dde6d96be8eadaf028d8f219",
+      "published_file": "compilation/stdout.log",
+      "published_sha256": "18cb93e13970d0af51bf342cf11f4bd159538cf2e3177857cf2641a59b89328e"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "attempt02/attempts/ResearchBounds.PublicSamplerDegree/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "attempt02/audit/attempt/stdout.log",
+      "original_sha256": "aafddef8f6276e87a9a8a703c46fea12de1a5b32558d8f8a7df91ddd3374da9b",
+      "published_file": "audit/stdout.log",
+      "published_sha256": "aafddef8f6276e87a9a8a703c46fea12de1a5b32558d8f8a7df91ddd3374da9b"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "attempt02/audit/attempt/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identity omitted; explicit3-name scope added."
+      ],
+      "original_artifact_id": "attempt02/audit/attempt/receipt.json",
+      "original_sha256": "111d6dbb8d0999192edd7acf34f0225c3bc07cdf93832d3d5c5157e5384e12df",
+      "published_file": "audit/receipt.json",
+      "published_sha256": "5df1c9b455c36e58c277dc422b96a80870e278a6b01bc313ff5029ca0e8df03c"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted."
+      ],
+      "original_artifact_id": "attempt02/audit/attempt/launch.json",
+      "original_sha256": "58b128c3c1b52c6923c495da864d794e4bb5e656950efd9f28c58cd21c971cf1",
+      "published_file": "audit/launch.json",
+      "published_sha256": "13b7a0c6ece7551f2b3d1da5235acbff99d126c5a49552fe42d83cb7266b304d"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "attempt02/PublicSamplerDegree.lean",
+      "original_sha256": "4ac577f8b7b1f2fc7c68950ef87bfe39ca236e82a75602395e72da694fb10255",
+      "published_file": "ResearchBounds/PublicSamplerDegree.lean",
+      "published_sha256": "4ac577f8b7b1f2fc7c68950ef87bfe39ca236e82a75602395e72da694fb10255"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "attempt02/PublicSamplerDegreeAudit.lean",
+      "original_sha256": "59496c047c6e7f05ef2b1db1a0ac8d990300930890cda229a81d6e18995d5f94",
+      "published_file": "ResearchBounds/PublicSamplerDegreeAudit.lean",
+      "published_sha256": "59496c047c6e7f05ef2b1db1a0ac8d990300930890cda229a81d6e18995d5f94"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "root-ai-result-readback",
+      "original_sha256": "9146869b0891341e92f1fb2672d58e84f9d30d2f3b53fe1dc7bf0dd6d1948edb",
+      "published_file": "audit/root-result-review.json",
+      "published_sha256": "9146869b0891341e92f1fb2672d58e84f9d30d2f3b53fe1dc7bf0dd6d1948edb"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "source01/AI-source-review",
+      "original_sha256": "1ec9a3a2144d16d0e4446cdb62b31c30b618bc25f970cbec6a5f5ca9fcdb11a2",
+      "published_file": "reviews/source01/review.md",
+      "published_sha256": "1ec9a3a2144d16d0e4446cdb62b31c30b618bc25f970cbec6a5f5ca9fcdb11a2"
+    },
+    {
+      "changes": [
+        "Private checkpoint file identifiers replaced by explicit original-artifact role placeholders. Hashes still identify original bytes, not redacted log files."
+      ],
+      "original_artifact_id": "source01/source-hash-registry",
+      "original_sha256": "b4eeb20824d75897f64bf454a2cd04bb87b4363deb195cef6225330885fa2d70",
+      "published_file": "reviews/source01/source-hashes.sha256",
+      "published_sha256": "582698c425ac5cdbae22d0aa6d870acb3d16c66946e1ebf3946d6384b757b9e1"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "source02/AI-source-review",
+      "original_sha256": "2ee4397bcf340f87b355a33f514e3b737ae54496b3b365a618e75e6502c67e55",
+      "published_file": "reviews/source02/addendum.md",
+      "published_sha256": "2ee4397bcf340f87b355a33f514e3b737ae54496b3b365a618e75e6502c67e55"
+    },
+    {
+      "changes": [
+        "Private checkpoint file identifiers replaced by explicit original-artifact role placeholders. Hashes still identify original bytes, not redacted log files."
+      ],
+      "original_artifact_id": "source02/source-hash-registry",
+      "original_sha256": "fecde06149fe429f01958ee462eec3309d8ea67bbd429d05236346b0cc1fa920",
+      "published_file": "reviews/source02/source-hashes.sha256",
+      "published_sha256": "87c2650be6dac661118278ea2f1ef36a27fa339e804bd4d244a7dc94baf3a8f9"
+    }
+  ],
+  "policy": "All Lean source/driver bytes retain exact attribution. Logs retain warnings/errors and line numbers, replacing only owned-workspace prefixes. Public receipts are allowlisted projections with process identities omitted. Receipt stream digests identify ORIGINAL bytes; published digests are separate. No binaries."
+}
