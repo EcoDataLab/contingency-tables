@@ -18,7 +18,9 @@ its selected verification step took 2 hours 47 minutes 47 seconds.
 | Strict Comparator | Not run. The full numerical machine-time exponent and practical speed remain unknown. |
 
 The full report retains statement types, defining modules, axioms and closure
-bindings. The [claim guide](../../../docs/claims-and-evidence.md) and earlier
+bindings. The [22-headline index](headline-index.json) makes those exact
+statements, modules, axioms and closure hashes available without loading the
+full report. The [claim guide](../../../docs/claims-and-evidence.md) and earlier
 [complete-checkpoint statement map](../../../docs/outer-sampler-compiler-checkpoint.md)
 supply English interpretations, which remain subject to mathematical review.
 The [environment report](environment-audit/environment-audit.stdout.gz)
@@ -50,15 +52,21 @@ The exact [packager](packager.py) authenticated provider associations, source
 hashes against the immutable Git commit, the complete source graph, ordered
 named audits, report structure, all headline closures, private-helper and
 program-identity obligations, inventories and imported-object bindings.
-The [publication review](review.json) records the root's completed collector
-validation and a separate AI agent's **partial** readback. That second reader
-confirmed provider/archive associations, all package file hashes, metadata
-projections and outcome fields, then blocked on a local Git subprocess pipe.
-It was stopped before completing the independent immutable-source and full
-report/closure checks; those checks remain open. No second parse or retry was
-started. The frozen receipt retains its creation-time pending-review annotation;
-that historical field is not rewritten. No outside human review or independent
-execution by those reviewers is claimed.
+The [completed publication review](review.json) records a separate AI agent's
+independent saved-artifact readback. It confirms all 1,511 ordered named records,
+the immutable 685-module graph, the full selected environment and all 22
+headline closures, private-helper and program-identity obligations, archive
+mappings, and recorded import/cache bindings. A repaired reader completed one
+report pass under a hard watchdog; its owned processes closed. The original
+26 evidence files remain byte-for-byte unchanged.
+
+The [earlier partial review](review-partial.json) preserves the Git subprocess
+pipe failure that interrupted the first reader. The frozen verification receipt
+also retains its creation-time pending-review annotation; the later review
+sidecars record the outcome. These are AI reviews of saved evidence. No outside
+human review or independent compiler execution by the reviewers is claimed.
+The headline index's English labels are copied from source-bound claim inputs;
+their translations remain subject to mathematical review.
 
 The receipt stores the observed run-time claims-ledger hash separately from
 proof/configuration inputs. This permits later evidence annotations without

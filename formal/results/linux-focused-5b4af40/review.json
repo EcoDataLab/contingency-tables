@@ -1,103 +1,164 @@
 {
   "schema_version": 1,
-  "status": "original_collector_passed; secondary_actual_artifact_readback_partial",
-  "reviewed_at_utc": "2026-10-11T04:44:16.030642+00:00",
-  "reviewer": "Project AI agents; no outside human review, independent compiler rerun or strict acceptance claimed.",
+  "status": "completed_independent_saved_artifact_readback",
+  "review_kind": "AI saved-artifact review; not human review or independent verification execution",
   "repository_commit": "5b4af402a281a9bc02a38adb168f7b0bfde5d3aa",
   "run_id": 38101898049,
-  "run_attempt": 1,
   "job_id": 114359371258,
   "artifact_id": 11691583222,
   "artifact_zip_sha256": "a4b058840dc81f6371478fbbc4c3135b0f6453bf1cb4c05417aa99d2f7ef2b5a",
   "artifact_zip_bytes": 59553741,
-  "verification_receipt_sha256": "99847791c380fd1e128bde2168b954d96c6af4f196f9bd54e1eb7861634728e5",
-  "packager_sha256": "53c9e9a5af350b007c35478e10dbbfacdc3f8883f2321b2c4a9c69bef98d5541",
-  "core_file_count": 26,
-  "core_files_sha256": {
-    "AxiomAudit.lean": "b8901c8cc23e2a0860ac81e94095a7ade50966de1bf8032f8d6584db63830dc5",
-    "EnvironmentAudit.lean": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
-    "archive-member-map.json": "0ede292e0a4ab1dbd22f6caa0cd0e5231a0d1990903a498394c1e515542afc9d",
-    "axiom-audit.log": "afcb58e2a6e7e4728ec1d79c169243965d752620adbfb384aedea663d339854e",
-    "bootstrap-lean.log": "5c500b4860dbd33eb1dadc882785891a8a712a987522688f2051ca36d1ba3d6d",
-    "environment-audit/Audit.lean": "3f9588969ba23349cdc6635147c666db6983cda2ccb4d27969508775ca341617",
-    "environment-audit/audit-after.json.gz": "63261ec602881d97f786047e95182e0bca88938f90108a150057da5e99458338",
-    "environment-audit/compile-after.json.gz": "4cd6fcd104cebf3b5c7fa171156dffa2f34acb4b35acd3142b97c4ec87b223c5",
-    "environment-audit/compiler-prefix.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "environment-audit/compiler-prefix.stdout": "9ca5b6d6d3a788f2e90ff65d5c0660f9491cdcb8c96370602f46bd478269e627",
-    "environment-audit/compiler-version.stdout": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
-    "environment-audit/environment-audit.stdout.gz": "907c880aad86c5fee6f81743765de8419953f49174aece045d62c3b8f2698343",
-    "environment-audit/frozen-config.json": "69be7fffbae8664dbd550d157162148fddb22cdfb56ac2e6a5321cff2952f3ce",
-    "environment-audit/helper-source/ResearchAudit/EnvironmentAudit.lean": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
-    "environment-audit/imported-object-closure.json.gz": "78e1a5d8f48c144a14b3c80420ee1dcedaf5a43c3624bb66f06cb2b3a813a223",
-    "environment-audit/receipt.json": "e2ab66046a744ffeadef0f024c1a3d0342c2c5293569ee3598cbf4d94d1adcb2",
-    "environment.json": "369238528a5623659001283453879c047bd7208b262f584e3d917a51ec57aff4",
-    "original-config.json": "101b099f69dcfed90642f4e4c2a162596dd1abcfdba37d16bf96365d0dd52f5b",
-    "outcome.json": "8be58169f633a2a2f1dfc43a29099311b2c0326d1e6c7f2f24b2fe26b3c15a46",
-    "packager.py": "53c9e9a5af350b007c35478e10dbbfacdc3f8883f2321b2c4a9c69bef98d5541",
-    "provider-artifact.json": "13fde9794126163450f4f3d6a65a67cdfe17b91d3e894c4fac0823e30016680f",
-    "provider-job.json": "03981617a32de060ae9c1719ac43058672aad81b234e099a0833a4e5c14bcd93",
-    "provider-run.json": "746274b7f80fe54a6de8fbc3a4248963287ac7c68a5f47d1cc4dcaf25ed40022",
-    "run_environment_audit.py": "b0c57d1a8caa5ed464ffbff0be5d2786e665fa36df7c2bc5a962604aaed21fc7",
-    "verification.log": "29c9846223d7ec0f5142febbfc2225bd17509e13972aad5128c31733e6375796",
-    "verification.json": "99847791c380fd1e128bde2168b954d96c6af4f196f9bd54e1eb7861634728e5"
+  "original_verification_sha256": "99847791c380fd1e128bde2168b954d96c6af4f196f9bd54e1eb7861634728e5",
+  "collector_sha256": "53c9e9a5af350b007c35478e10dbbfacdc3f8883f2321b2c4a9c69bef98d5541",
+  "checker_and_source_sha256": {
+    "named_axiom_checker": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+    "compiled_environment_runner": "b0c57d1a8caa5ed464ffbff0be5d2786e665fa36df7c2bc5a962604aaed21fc7",
+    "compiled_environment_Lean_helper": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "serial_builder": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c",
+    "workflow": "1f4321361ff97ee80c7a47a46f7316de495b494046c1f9d9ac8bae389c902a21",
+    "integration_contract": "d3db5b45785f79aa0e3417fe2db746d34dedbd0b7e0642d0dcb0ae94ea608e90",
+    "private_readback_source": "057923e73a9656ff47115f4fe526ad4ce79f6f737b544db0c21d7ac256e7ff3f",
+    "private_watchdog_source": "7500441cf409ca3f1b85f9995919863789ee1bc4a342c006181d847a035af736",
+    "private_launcher_source": "cd8c2aa9618995d963d176a2762ef02a5742be3fcc620379662cef3ca9e77d22",
+    "small_provenance_source": "2067d37536769ac2c47132c63e3337249fcb2a6aa8bde82b6e8586484aeddf2c",
+    "immutable_object_read_map_canonical_sha256": "e5b3bd45ab87cc1179aaca81ec0a9cc3aa4819f1199169f95609e7762b58e338"
   },
-  "original_full_collector_validation": {
-    "status": "passed",
-    "scope": "Authenticated provider and ZIP associations; immutable source/configuration and 685-module graph; exact 1511 ordered named records; original-member mappings and lossless gzip roundtrips; full selected environment report, all 22 headline closures, private-helper and program-identity obligations; imported-object and before/after inventory bindings.",
-    "root_readback": "All 25 receipt-bound artifacts and the receipt rehashed; available current source bindings matched. Core proof and hosted-audit inputs remain unchanged since the successful run.",
-    "root_readback_receipt_sha256": "85695744ba838bc1374db3bdd3eae946892a5158de6e079d03313db0b1501403",
-    "collector_review_manifest_sha256": "ec7b1d23fb474deb3b499a9d42d4911ea4e45b734f8c83ebc6009a4476cc8289",
-    "collector_root_source_review_sha256": "7e2c602bf04fc3b0b56ccb414e5bc8058d9092e0af39a4e210c7b7a264e1957f",
-    "counts_reported_by_ci_and_collector": {
-      "named_audits": 1511,
-      "submitted_modules": 685,
+  "completed_artifact_checks": {
+    "raw_provider_run_job_artifact_and_public_projection_ties": true,
+    "immutable_owned_source_inventory": 221,
+    "actual_source_module_graph_and_ordered_serial_stages": 685,
+    "ordered_focused_named_records": 1511,
+    "complete_report": {
       "declarations": 25448,
       "theorems": 18054,
-      "headline_closures": 22,
+      "headlines": 22,
       "imported_modules": 11951
-    }
-  },
-  "secondary_review": {
-    "status": "partial; immutable-source, named-record, report and closure checks incomplete",
-    "manifest_sha256": "5874ed690e4ca9fdb699db8f3aef3fe2ef2c7a1e8865e1be8868784959e9a52b",
-    "review_sha256": "5d253c632c2fd0ad3bb62f27e9596096e1b8bd267eb0c5a5448a1194a4bcd720",
-    "deadline_handoff_sha256": "2143c6cd310b1e848c2ea71454d2be816841183ab20c4f563a5610c309a58ffd",
-    "completed_checks": [
-      "Raw provider run/job/artifact associations, exact commit/run/attempt/job identities and success/completed state were checked. Ubuntu 24.04 label and focused verification step success match the actual job metadata.",
-      "Actual ZIP digest and 59553741-byte length match provider artifact metadata and supplied frozen intake.",
-      "All 25 package files named in verification.artifacts_sha256 rehashed and matched; verification.json was parsed and its digest is bound in this review, giving 26 package file identities.",
-      "Public provider sidecars were checked as allowlist projections against the raw provider dictionaries. Raw provider metadata digests match the package receipt.",
-      "Frozen packager file digest matches the supplied root-reviewed 53c9e9a5... and the package-recorded digest.",
-      "Environment/outcome metadata show non-root ordinary --serial focused execution. Actual job/outcome fields explicitly mark strict sandbox and Comparator-tooling steps skipped, supporting ordinary hosted evidence only."
-    ],
-    "not_independently_cleared": [
-      "The 1511 ordered named-axiom records.",
-      "Gzip roundtrips and original ZIP member/public-byte mappings.",
-      "Immutable proof/configuration bindings and the 685-module source graph.",
-      "The complete environment report and its declaration, theorem, import and 22 headline-closure counts.",
-      "Private-helper resolution and required program-identity closure inclusions.",
-      "Full cache, imported-object and before/after snapshot bindings."
-    ],
-    "full_report_parse_started": false,
-    "headline_index_generated": false,
-    "failure": {
-      "scope": "Secondary reader tooling; no artifact-content defect established.",
-      "operation": "A read-only git cat-file --batch subprocess pipe write blocked.",
-      "nominal_subprocess_timeout_seconds": 40,
-      "nominal_soft_deadline_seconds": 300,
-      "observed_elapsed_before_stop_seconds": 466,
-      "reader_exit_code": 130,
-      "cleanup_observation": "The confirmed reader was interrupted and its session closed. A subsequent exact reader/Git command-line process query returned no matches. No separately recorded child PID or stronger per-child reap receipt is claimed.",
-      "future_requirement": "Test a nonblocking bounded stdin/stdout/stderr drain and an independent hard watchdog with stage and owned-process receipts. The reader already used communicate(timeout=40); merely switching to communicate is insufficient."
     },
-    "retry_or_tool_repair_performed": false
+    "all_headline_dependency_graphs_complete_and_reachable": 22,
+    "private_source_helpers_resolved": 3,
+    "program_identity_requirements_and_closure_hashes": 2,
+    "archive_members_mapped_or_excluded_binary_bound": 23,
+    "public_package_core_unchanged": 26,
+    "gzip_and_original_ZIP_mapped_bytes_exact": true,
+    "before_after_snapshots_and_helper_only_transition": true,
+    "recorded_import_path_name_digest_snapshot_bindings": 11951,
+    "artifact_inventory_files_bound": 70001,
+    "required_input_files_bound": 1389,
+    "published_contract_authorities": 3,
+    "integrated_proof_source_records": 13,
+    "compiler_banner_sysroot_driver_helper_and_phase_streams": true
   },
-  "publication_boundary": "The completed original hosted CI and full collector evidence are published with this additional review explicitly incomplete. The integration PR remains a draft and unmerged at this checkpoint.",
-  "receipt_creation_status": "verification.json retains its original pending-review annotation; this sidecar records the later partial review without rewriting frozen evidence.",
-  "limitations": [
-    "Official dependency caches, compiler binaries, operating system, system loader/libraries and Python remain trusted.",
-    "Imported-object filesystem resolution is recorded by the hosted runner, not reenacted by offline review.",
-    "Six standalone declarations are inclusion checks only; no separate standalone named replay is added to 1511.",
-    "No full strict Comparator acceptance, explicit numerical complete runtime degree, measured sampler performance or outside human review is established."
-  ]
+  "standalone_named_replay_performed": false,
+  "standalone_inclusions_only": [
+    "Math115.pair_product_le_quarter_square",
+    "Math115.pair_product_eq_quarter_square_iff",
+    "Math115.GlobalDisplayOwnership.edge_owner_unique",
+    "Math115.GlobalDisplayOwnership.edge_prefix_unique",
+    "Math115.min_mass_repair_bound",
+    "Math115.min_mass_quarter_repair_bound"
+  ],
+  "private_helpers": [
+    {
+      "defining_module": "Math115.LatticeProfileStep",
+      "kind": "theorem",
+      "source_name": "apply_decision",
+      "actual_compiled_name": "_private.Math115.LatticeProfileStep.0.Math115.LatticeProfileStep.apply_decision",
+      "statement": "∀ {X : Type u_1} {Y : Type u_2} (encode : X → Y) (x y : X) (test : Bool) (accept : Prop) [inst : Decidable accept],\n  (test = true ↔ accept) → (if test = true then encode y else encode x) = encode (if accept then y else x)",
+      "axioms": [],
+      "record_sha256": "72b3d967582882bc425cd9043597069f770238bb9499ce3c6cb5106260ec50c7"
+    },
+    {
+      "defining_module": "Math115.LatticeProfileStep",
+      "kind": "theorem",
+      "source_name": "completionDecision_some_formula",
+      "actual_compiled_name": "_private.Math115.LatticeProfileStep.0.Math115.LatticeProfileStep.completionDecision_some_formula",
+      "statement": "∀ {X : Type u_1} {I : Type u_2} {J : Type u_3} [inst : Fintype I] [inst_1 : Fintype J] (R : X → Option I → ℕ)\n  (P : X → Option J → ℕ) (x y : X) (A : OAI.ContingencyTables.Table (R x) (P x)),\n  OAI.ContingencyTables.CompletionTranslation.completionDecision R P x (some y) A =\n    if\n        ∀ (i : Option I) (j : Option J),\n          0 ≤ ↑(↑A i j) + OAI.ContingencyTables.CompletionTranslation.between (R x) (R y) (P x) (P y) i j then\n      y\n    else x",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "record_sha256": "09304ba2c513e291ec8e4551bba3074539ad042aeaa8c522921c9178a058ae62"
+    },
+    {
+      "defining_module": "Math115.LatticeUnitStep",
+      "kind": "theorem",
+      "source_name": "ofFn_take_prefix",
+      "actual_compiled_name": "_private.Math115.LatticeUnitStep.0.Math115.LatticeUnitStep.ofFn_take_prefix",
+      "statement": "∀ {k N : ℕ} (hk : k ≤ N) (bits : Fin N → Bool),\n  List.take k (List.ofFn bits) = List.ofFn (OAI.ContingencyTables.FirstSuccess.prefixWord hk bits)",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "record_sha256": "d5ae751c323a18ace192455a91c1ee7d8bbe98ab2addf0959c2e01cf1b068bec"
+    }
+  ],
+  "program_identity_inclusions": [
+    {
+      "headline": "Math115.LatticeBoundedSampling.boundedSampling",
+      "required_reachable_names": [
+        "Math115.LatticeSampler.draw",
+        "Math115.LatticeSampler.drawRealizer",
+        "Math115.LatticeSampler.polynomial_draw",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.PublicLatticeSampler.wordCount",
+        "Math115.PublicLatticeSampler.publicDraw",
+        "Math115.PublicLatticeSampler.machine",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.PublicLatticeSampler.tableDraw_code",
+        "Math115.PublicLatticeSampler.machine_outputs",
+        "Math115.PublicLatticeSampler.machine_mass",
+        "Math115.PublicLatticeSampler.machineTime_public_bound",
+        "Math115.LatticeBoundedSampling.boundedSampling"
+      ],
+      "actual_closure_sha256": "7756487167a51888b8405a0f7c1f44d8ac1f1dea44d2aecaabe845f5e8cf1728",
+      "closure_size": 47593
+    },
+    {
+      "headline": "Math115.LatticeSamplerCost.reserved_draw_work_literal",
+      "required_reachable_names": [
+        "Math115.LatticeSampler.draw",
+        "Math115.LatticeSampler.drawRealizer",
+        "Math115.LatticeSampler.polynomial_draw",
+        "Math115.LatticeSamplerCost.reserved_draw_work"
+      ],
+      "actual_closure_sha256": "b4b357f7c4f6c0273644f8d02859e1551afafbd37c35c2e820e4f88a02102d38",
+      "closure_size": 11046
+    }
+  ],
+  "headline_index": {
+    "path": "headline-index.json",
+    "sha256": "4ed763219f2a475b327cb64765ad020e75e3ee22855f8dee950c894de050b0b4",
+    "records": 22,
+    "English_label_scope": "Source-bound copied labels; exact formal statement readback,not independent English interpretation"
+  },
+  "readback_resources": {
+    "purpose": "Resources of local saved-artifact inspection only,not compiler or sampler runtime",
+    "hard_watchdog_seconds": 600,
+    "Git_object_wait_seconds": 20,
+    "wall_seconds": 58.07167929201387,
+    "peak_worker_memory_bytes": 922140672,
+    "full_report_passes": 1,
+    "largest_single_framed_value_characters": 43483848
+  },
+  "owned_cleanup": {
+    "leader_reaped": true,
+    "process_group_absent": true,
+    "metadata_reader_group_absent": true
+  },
+  "scope_limits": [
+    "Six standalone declarations were independently confirmed in the compiled environment,not replayed as a separate six-name named audit.",
+    "The complete selected module/prefix declaration inventory and22headline dependency closures are checked; this is not every declaration in every imported package.",
+    "Hosted imported-object paths/names/digests were bound to eligible recorded search roots and frozen snapshots. The unavailable hosted filesystem was not reenacted locally.",
+    "Pinned official package/toolchain caches were reused. OS/system loader/Python/stdlib/platform services remain trusted; import/compiler audit is not an OS sandbox.",
+    "This is saved-artifact validation. No Lean compiler/build,VM,network,Git mutation or public file edit occurred; no human review,strict Comparator acceptance,new numerical complete sampler degree or sampler runtime measurement is asserted.",
+    "Exact headline statements/modules/kinds/axioms/closure sizes/hashes are saved. English labels were copied from immutable source-bound claim inputs and the frozen complete-sampler card,not independently certified as translations."
+  ],
+  "historical_partial_review_preserved": true,
+  "findings": [],
+  "Lean_compiler_executed_during_review": false,
+  "strict_Comparator_result": false,
+  "new_sampler_runtime_result": false,
+  "public_package_bytes_changed_during_review": false
 }

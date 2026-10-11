@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "status": "sealed_original_collector_pass; secondary_review_incomplete",
+  "status": "sealed_original_collector_and_independent_saved_artifact_review_passed",
   "repository_commit": "5b4af402a281a9bc02a38adb168f7b0bfde5d3aa",
-  "scope": "Fresh hosted Linux focused compilation, 1511 named audits and full selected compiled-environment audit. The additional source/report/closure readback is incomplete; PR remains unmerged. No strict Comparator acceptance or explicit numerical complete runtime degree.",
+  "scope": "Fresh hosted Linux focused compilation, 1511 named audits and full selected compiled-environment audit. Independent saved-artifact readback passed, including all 22 headline closures. PR remains unmerged. No strict Comparator acceptance or numerical complete runtime degree.",
   "files": {
     "AxiomAudit.lean": {
       "sha256": "b8901c8cc23e2a0860ac81e94095a7ade50966de1bf8032f8d6584db63830dc5",
@@ -13,8 +13,8 @@
       "bytes": 5713
     },
     "README.md": {
-      "sha256": "925305d5f2fdb337fdaf7cc233e185cbecb0b91f5b5bdd67469e77d216cf6c68",
-      "bytes": 5583
+      "sha256": "fc57d4baa31ced94dc5000fe1a2ecefdbe3adc9a63cac6ecb8a9afa29f07bbd9",
+      "bytes": 6116
     },
     "archive-member-map.json": {
       "sha256": "0ede292e0a4ab1dbd22f6caa0cd0e5231a0d1990903a498394c1e515542afc9d",
@@ -76,6 +76,10 @@
       "sha256": "369238528a5623659001283453879c047bd7208b262f584e3d917a51ec57aff4",
       "bytes": 30298
     },
+    "headline-index.json": {
+      "sha256": "4ed763219f2a475b327cb64765ad020e75e3ee22855f8dee950c894de050b0b4",
+      "bytes": 27743
+    },
     "original-config.json": {
       "sha256": "101b099f69dcfed90642f4e4c2a162596dd1abcfdba37d16bf96365d0dd52f5b",
       "bytes": 591332
@@ -100,9 +104,13 @@
       "sha256": "746274b7f80fe54a6de8fbc3a4248963287ac7c68a5f47d1cc4dcaf25ed40022",
       "bytes": 670
     },
-    "review.json": {
+    "review-partial.json": {
       "sha256": "98f9bab6b8f247d0959cae477fbf97b42dd98487cc6ec9fa632c241a968a286d",
       "bytes": 8620
+    },
+    "review.json": {
+      "sha256": "9a92d87a20fbddb7a342a476fae8fe25c87a4b6b03a713151be6c7dcadc2b6b7",
+      "bytes": 9073
     },
     "run_environment_audit.py": {
       "sha256": "b0c57d1a8caa5ed464ffbff0be5d2786e665fa36df7c2bc5a962604aaed21fc7",
@@ -117,5 +125,10 @@
       "bytes": 1331391
     }
   },
-  "self_exclusion": "manifest.json is the only bundle file excluded from its own file map."
+  "self_exclusion": "manifest.json is the only bundle file excluded from its own file map.",
+  "review_history": {
+    "completed_review": "review.json",
+    "preserved_partial_review": "review-partial.json",
+    "headline_statement_index": "headline-index.json"
+  }
 }

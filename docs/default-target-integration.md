@@ -9,11 +9,16 @@ The expanded target **passed fresh hosted Linux verification** at `5b4af402a281a
 The earlier [aggregate](../formal/results/completion-aggregate-1236/verification.json), [compiled-environment audit](../formal/results/environment-aggregate-1236/README.md), and [Linux reproduction](../formal/results/linux-focused-df469a5/README.md) remain valid historical receipts for their exact configurations. The separate complete-checkpoint audit remains evidence for the identical sampler sources; it does not certify this new default root.
 
 The full offline collector validated the new artifact against its immutable run
-commit. A separate AI reader confirmed provider/archive associations and package
-hashes, then stopped on a local Git pipe issue before completing its additional
-source/report/closure readback. That independent review remains incomplete;
-the [publication record](../formal/results/linux-focused-5b4af40/review.json)
-preserves the precise boundary. The integration PR remains unmerged at this checkpoint.
+commit. A separate AI reader has now completed the independent saved-artifact
+readback, including source bindings, ordered named records, the full selected
+environment and all 22 headline closures. The
+[publication record](../formal/results/linux-focused-5b4af40/review.json) and
+[compact statement index](../formal/results/linux-focused-5b4af40/headline-index.json)
+record that result. The
+[earlier interrupted review](../formal/results/linux-focused-5b4af40/review-partial.json)
+is preserved, and the original evidence bytes are unchanged. This is additional
+artifact inspection, not an independent compiler run or human mathematical
+review. The integration PR remains unmerged at this checkpoint.
 
 To verify the promoted target, run the repository workflow from its root in an exclusive checkout:
 
