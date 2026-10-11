@@ -18,6 +18,14 @@ class IdealTwoByTwoCertificate(unittest.TestCase):
         # witness, and compares complete graphs and return kernels at t=1..6.
         actual = experiment.jsonable(experiment.run())
         saved = json.loads((ROOT / "reports/ideal-two-by-two.json").read_text())
+        # The old producer hashes remain historical; exact graph, law and
+        # rational results must reproduce under the current implementation.
+        actual_sources = actual.pop('source_sha256')
+        saved_sources = saved.pop('source_sha256')
+        self.assertEqual(set(actual_sources), set(saved_sources))
+        drift = sorted(source for source in actual_sources if actual_sources[source] != saved_sources[source])
+        if drift:
+            print('Historical 2x2 producer source drift: ' + ', '.join(drift))
         self.assertEqual(actual, saved)
 
 

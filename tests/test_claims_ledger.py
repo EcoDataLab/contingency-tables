@@ -277,6 +277,47 @@ class CleanCloneSourceChecks(unittest.TestCase):
         self.assertEqual(checks['unchecked_upstream_source_sha256'], {})
         self.assertEqual(checks['current_source_mismatches'], ['.upstream/other/lean/Source.lean'])
 
+    def bind_input(self, relative, content):
+        path = self.root / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(content)
+        self.receipt.setdefault('source_sha256', {})[relative] = ledger.digest(path)
+        self.save_receipt()
+        return path
+
+    def test_changed_checking_tools_report_drift_without_claiming_a_new_run(self):
+        for relative in sorted(ledger.AUDIT_ORCHESTRATION_TOOLS):
+            path = self.bind_input(relative, b'original checking tool')
+            path.write_bytes(b'changed checking tool')
+        original_receipt = (self.root / 'verification.json').read_bytes()
+        result = ledger.validate_ledger(self.root, self.document)
+        scope = result['scopes']['current']
+        self.assertEqual(scope['required_input_mismatches'], [])
+        self.assertEqual(scope['checking_tool_mismatches'], sorted(ledger.AUDIT_ORCHESTRATION_TOOLS))
+        self.assertEqual(scope['current_source_mismatches'], scope['checking_tool_mismatches'])
+        rendered = ledger.render(result)
+        self.assertIn('Theorem sources and compilation inputs still match; checking-tool bytes changed', rendered)
+        self.assertIn('does not verify the changed tools or record a new run', rendered)
+        self.assertEqual((self.root / 'verification.json').read_bytes(), original_receipt)
+        # Classification never exempts a changed actual theorem dependency.
+        (self.root / self.dependency).write_bytes(b'changed theorem dependency')
+        with self.assertRaisesRegex(ValueError, 'current receipt source bytes differ'):
+            ledger.validate_ledger(self.root, self.document)
+
+    def test_missing_tool_configuration_and_unknown_input_remain_strict(self):
+        for relative in ['scripts/prepare_environment_audit.py', 'scripts/run_environment_audit.py',
+                         'formal/lakefile.lean', 'formal/lake-manifest.json', 'formal/lean-toolchain',
+                         'formal/ResearchAudit/EnvironmentAudit.lean', 'scripts/unknown.py']:
+            with self.subTest(relative=relative):
+                path = self.bind_input(relative, b'original required input')
+                if relative in ledger.AUDIT_ORCHESTRATION_TOOLS:
+                    path.unlink()
+                else:
+                    path.write_bytes(b'changed required input')
+                with self.assertRaisesRegex(ValueError, 'current receipt source bytes differ'):
+                    ledger.validate_ledger(self.root, self.document)
+                path.write_bytes(b'original required input')
+
 
 if __name__ == '__main__':
     unittest.main()

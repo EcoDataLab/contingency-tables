@@ -46,6 +46,9 @@ Other results include sharp ordinary-table tail and mean bounds, a dense-compati
 
 ## Starting points
 
+- [Repair-based output](docs/repair-output.md): a reviewed, not yet formalized terminal rule improves rejection in the positive all-small branch while preserving the existing chain.
+- [Further research directions](docs/research-directions.md): lessons from the complete integer-multiplication improvement sequence, and specific limits on transferring ideas from other fields.
+- [Reference implementation improvements](docs/implementation-benchmarks.md): reproducible weighted-draw, graph-traversal and heat-bath preparation gains, with cold-start and memory costs.
 - [Original research review](115/115-contingency-tables-review.md) and [source manifest](115/source-manifest.json): the preserved October 8, 2026 handoff, including hypotheses to test.
 - [Contributor handoff](docs/handoff.md): checked results, reproduction commands, frozen research, and ordered next-round obligations.
 - [Research status](docs/status.md): current results, limitations, and next proof obligations.
@@ -90,12 +93,12 @@ Both routes support a fresh source checkout without an editable install; tests r
 
 ```sh
 python3 -m pip install -e '.[research]'
-python3 115/audit115.py --output /tmp/audit115-rerun.json
-python3 experiments/independent_crosscheck.py --output /tmp/independent-crosscheck.json
-python3 scripts/verify_sources.py
+make verify
+# Optional: download and verify the pinned upstream source files.
+make sources
 ```
 
-Saved mixture certificates replay using exact standard-library arithmetic. Source verification downloads only files in the pinned manifest and checks their Git blob hashes; it does not execute upstream code. The [Python release receipt](reports/stage-close-verification.json) records the tested source hashes, optional dependencies, full verification command, and clean public-source archive run. It also preserves the hosted clean-checkout failure that led to the ledger fix. The [hosted Python receipt](reports/hosted-final-stage.json) records successful checks on Python 3.10, 3.12, and 3.13 at `df469a5`. The [environment-runner repair receipt](reports/environment-runner-fix/verification.json) records its local full-suite result and separate AI review. The [earlier stage receipt](reports/stage-verification.json) and [checkpoint receipt](reports/checkpoint-verification.json) retain their historical scopes.
+Saved mixture certificates replay using exact standard-library arithmetic. Replay reconstructs the current kernels and checks every rational witness, reporting any change from the historical producer's source bytes. Add `--require-producer-sources` to the replay script to require exact producer identity as well. Source verification downloads only files in the pinned manifest and checks their Git blob hashes; it does not execute upstream code. The [Python release receipt](reports/stage-close-verification.json) records the tested source hashes, optional dependencies, full verification command, and clean public-source archive run. It also preserves the hosted clean-checkout failure that led to the ledger fix. The [hosted Python receipt](reports/hosted-final-stage.json) records successful checks on Python 3.10, 3.12, and 3.13 at `df469a5`. The [environment-runner repair receipt](reports/environment-runner-fix/verification.json) records its local full-suite result and separate AI review. The [earlier stage receipt](reports/stage-verification.json) and [checkpoint receipt](reports/checkpoint-verification.json) retain their historical scopes.
 
 For a first API example:
 
@@ -109,27 +112,23 @@ table = sampler.sample()
 assert sampler.unrank(sampler.rank(table)) == table
 ```
 
-Generate new report copies under the ignored local directory:
+Generate the standard report bundle under the ignored local directory with `make reports-local` (also available as `make reports`). Set `REPORT_DIR` to choose another rerun destination. Additional reports can be run individually:
 
 ```sh
 mkdir -p .local/reports
-python3 experiments/scale_report.py --output .local/reports/scale-certificates.json
-python3 experiments/budget_report.py --output .local/reports/budget-comparison.json
-python3 examples/sparse_commute.py --spectral --output .local/reports/sparse-commute.json
-python3 examples/linear_metric_bounds.py --output .local/reports/linear-bounds.json
-python3 experiments/padding_barrier.py --output .local/reports/padding-barrier.json
+make reports-local
 python3 experiments/padding_growth.py --output .local/reports/padding-growth.json
 python3 experiments/block_budget_report.py --output .local/reports/block-budget-comparison.json
 python3 examples/cactus_commute.py --output .local/reports/cactus-commute.json
 python3 examples/block_factorization.py --output .local/reports/block-factorization.json
-python3 experiments/worker_baseline.py --output .local/reports/worker-baseline.json
-python3 experiments/commute_scaling.py --output .local/reports/commute-scaling.json
-python3 experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json
+make replay-mixtures
 python3 experiments/ideal_two_by_two.py --output .local/reports/ideal-two-by-two.json
 python3 experiments/stationary_success.py --output .local/reports/stationary-success.json
 python3 experiments/lattice_completion.py --output .local/reports/lattice-completion.json
-python3 experiments/sampler_benchmarks.py --draws 500 --warmup 200 --repetitions 2
+python3 experiments/sampler_benchmarks.py --draws 500 --warmup 200 --repetitions 2 --output .local/reports/sampler-benchmarks.json
 ```
+
+For deliberate publication work, `make reports-publish` regenerates the standard bundle in tracked `reports/`. Review those changes as new evidence; historical receipts retain their original source and result bindings.
 
 ## Reproduce the Lean checks
 

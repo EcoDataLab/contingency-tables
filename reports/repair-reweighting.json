@@ -1,0 +1,503 @@
+{
+  "evidence_class": "exact finite checks of a mathematical derivation; not Lean",
+  "scope": "ordinary positive margins, every row and column below cutoff",
+  "cases": [
+    {
+      "rows": [
+        1,
+        1
+      ],
+      "columns": [
+        1,
+        1
+      ],
+      "cutoff": 2,
+      "padding": 1,
+      "parameter_regime": "rescaled diagnostic; no paper quantitative guarantees",
+      "tables": 2,
+      "physical_states": 14,
+      "beta": "1/16384",
+      "minimum_fiber": 7,
+      "maximum_fiber": 7,
+      "mh_gap_allowance_multiplier": "1",
+      "dimension_only_multiplier_bound": 2,
+      "old_balanced_output_success": "1/7",
+      "mh_repaired_output_success": "1",
+      "old_law_naive_repair_is_uniform": true,
+      "unscaled_repair_rejection_success": "1/7",
+      "scaled_repair_rejection": {
+        "known_fiber_lower_bound": 7,
+        "stationary_success": "1",
+        "certified_inverse_success_allowance": "1",
+        "stationary_success_gain_over_balanced_only": 7,
+        "optimal_success_if_minimum_fiber_known": "1",
+        "chain_and_gap_unchanged": true
+      },
+      "measure_ratio_bounds": [
+        "1",
+        "1"
+      ],
+      "independent_state_and_inverse_fiber_match": true,
+      "exact_balance_uniform_output_and_energy_comparison": true,
+      "reversible_local_lazy_inverse_gap_lower_bound": "1",
+      "repair_coordinate_edge_increment_at_most_one": true,
+      "numerical_spectrum": {
+        "evidence": "floating-point diagnostic, not an exact spectral certificate",
+        "old_gap_divided_by_beta": 1.7639320225002098,
+        "new_gap_divided_by_beta": 1.7639320225002098
+      }
+    },
+    {
+      "rows": [
+        2,
+        2
+      ],
+      "columns": [
+        2,
+        2
+      ],
+      "cutoff": 3,
+      "padding": 1,
+      "parameter_regime": "rescaled diagnostic; no paper quantitative guarantees",
+      "tables": 3,
+      "physical_states": 27,
+      "beta": "1/16384",
+      "minimum_fiber": 7,
+      "maximum_fiber": 13,
+      "mh_gap_allowance_multiplier": "13/7",
+      "dimension_only_multiplier_bound": 2,
+      "old_balanced_output_success": "1/9",
+      "mh_repaired_output_success": "1",
+      "old_law_naive_repair_is_uniform": false,
+      "unscaled_repair_rejection_success": "1/9",
+      "scaled_repair_rejection": {
+        "known_fiber_lower_bound": 7,
+        "stationary_success": "7/9",
+        "certified_inverse_success_allowance": "13/7",
+        "stationary_success_gain_over_balanced_only": 7,
+        "optimal_success_if_minimum_fiber_known": "7/9",
+        "chain_and_gap_unchanged": true
+      },
+      "measure_ratio_bounds": [
+        "9/13",
+        "9/7"
+      ],
+      "independent_state_and_inverse_fiber_match": true,
+      "exact_balance_uniform_output_and_energy_comparison": true,
+      "reversible_local_lazy_inverse_gap_lower_bound": "8/3",
+      "repair_coordinate_edge_increment_at_most_one": true,
+      "numerical_spectrum": {
+        "evidence": "floating-point diagnostic, not an exact spectral certificate",
+        "old_gap_divided_by_beta": 0.35761382732790753,
+        "new_gap_divided_by_beta": 0.22048020140105629
+      }
+    },
+    {
+      "rows": [
+        3,
+        3
+      ],
+      "columns": [
+        3,
+        3
+      ],
+      "cutoff": 4,
+      "padding": 1,
+      "parameter_regime": "rescaled diagnostic; no paper quantitative guarantees",
+      "tables": 4,
+      "physical_states": 40,
+      "beta": "1/16384",
+      "minimum_fiber": 7,
+      "maximum_fiber": 13,
+      "mh_gap_allowance_multiplier": "13/7",
+      "dimension_only_multiplier_bound": 2,
+      "old_balanced_output_success": "1/10",
+      "mh_repaired_output_success": "1",
+      "old_law_naive_repair_is_uniform": false,
+      "unscaled_repair_rejection_success": "1/10",
+      "scaled_repair_rejection": {
+        "known_fiber_lower_bound": 7,
+        "stationary_success": "7/10",
+        "certified_inverse_success_allowance": "13/7",
+        "stationary_success_gain_over_balanced_only": 7,
+        "optimal_success_if_minimum_fiber_known": "7/10",
+        "chain_and_gap_unchanged": true
+      },
+      "measure_ratio_bounds": [
+        "10/13",
+        "10/7"
+      ],
+      "independent_state_and_inverse_fiber_match": true,
+      "exact_balance_uniform_output_and_energy_comparison": true,
+      "reversible_local_lazy_inverse_gap_lower_bound": "5",
+      "repair_coordinate_edge_increment_at_most_one": true,
+      "numerical_spectrum": {
+        "evidence": "floating-point diagnostic, not an exact spectral certificate",
+        "old_gap_divided_by_beta": 0.16724802125940164,
+        "new_gap_divided_by_beta": 0.11011327376155944
+      }
+    },
+    {
+      "rows": [
+        4,
+        4
+      ],
+      "columns": [
+        4,
+        4
+      ],
+      "cutoff": 5,
+      "padding": 1,
+      "parameter_regime": "rescaled diagnostic; no paper quantitative guarantees",
+      "tables": 5,
+      "physical_states": 53,
+      "beta": "1/16384",
+      "minimum_fiber": 7,
+      "maximum_fiber": 13,
+      "mh_gap_allowance_multiplier": "13/7",
+      "dimension_only_multiplier_bound": 2,
+      "old_balanced_output_success": "5/53",
+      "mh_repaired_output_success": "1",
+      "old_law_naive_repair_is_uniform": false,
+      "unscaled_repair_rejection_success": "5/53",
+      "scaled_repair_rejection": {
+        "known_fiber_lower_bound": 7,
+        "stationary_success": "35/53",
+        "certified_inverse_success_allowance": "13/7",
+        "stationary_success_gain_over_balanced_only": 7,
+        "optimal_success_if_minimum_fiber_known": "35/53",
+        "chain_and_gap_unchanged": true
+      },
+      "measure_ratio_bounds": [
+        "53/65",
+        "53/35"
+      ],
+      "independent_state_and_inverse_fiber_match": true,
+      "exact_balance_uniform_output_and_energy_comparison": true,
+      "reversible_local_lazy_inverse_gap_lower_bound": "8",
+      "repair_coordinate_edge_increment_at_most_one": true,
+      "numerical_spectrum": {
+        "evidence": "floating-point diagnostic, not an exact spectral certificate",
+        "old_gap_divided_by_beta": 0.09617067491920195,
+        "new_gap_divided_by_beta": 0.06759789013885481
+      }
+    },
+    {
+      "rows": [
+        5,
+        5
+      ],
+      "columns": [
+        5,
+        5
+      ],
+      "cutoff": 6,
+      "padding": 1,
+      "parameter_regime": "rescaled diagnostic; no paper quantitative guarantees",
+      "tables": 6,
+      "physical_states": 66,
+      "beta": "1/16384",
+      "minimum_fiber": 7,
+      "maximum_fiber": 13,
+      "mh_gap_allowance_multiplier": "13/7",
+      "dimension_only_multiplier_bound": 2,
+      "old_balanced_output_success": "1/11",
+      "mh_repaired_output_success": "1",
+      "old_law_naive_repair_is_uniform": false,
+      "unscaled_repair_rejection_success": "1/11",
+      "scaled_repair_rejection": {
+        "known_fiber_lower_bound": 7,
+        "stationary_success": "7/11",
+        "certified_inverse_success_allowance": "13/7",
+        "stationary_success_gain_over_balanced_only": 7,
+        "optimal_success_if_minimum_fiber_known": "7/11",
+        "chain_and_gap_unchanged": true
+      },
+      "measure_ratio_bounds": [
+        "11/13",
+        "11/7"
+      ],
+      "independent_state_and_inverse_fiber_match": true,
+      "exact_balance_uniform_output_and_energy_comparison": true,
+      "reversible_local_lazy_inverse_gap_lower_bound": "35/3",
+      "repair_coordinate_edge_increment_at_most_one": true,
+      "numerical_spectrum": {
+        "evidence": "floating-point diagnostic, not an exact spectral certificate",
+        "old_gap_divided_by_beta": 0.06229870212067142,
+        "new_gap_divided_by_beta": 0.04608664044615417
+      }
+    },
+    {
+      "rows": [
+        6,
+        6
+      ],
+      "columns": [
+        6,
+        6
+      ],
+      "cutoff": 7,
+      "padding": 1,
+      "parameter_regime": "rescaled diagnostic; no paper quantitative guarantees",
+      "tables": 7,
+      "physical_states": 79,
+      "beta": "1/16384",
+      "minimum_fiber": 7,
+      "maximum_fiber": 13,
+      "mh_gap_allowance_multiplier": "13/7",
+      "dimension_only_multiplier_bound": 2,
+      "old_balanced_output_success": "7/79",
+      "mh_repaired_output_success": "1",
+      "old_law_naive_repair_is_uniform": false,
+      "unscaled_repair_rejection_success": "7/79",
+      "scaled_repair_rejection": {
+        "known_fiber_lower_bound": 7,
+        "stationary_success": "49/79",
+        "certified_inverse_success_allowance": "13/7",
+        "stationary_success_gain_over_balanced_only": 7,
+        "optimal_success_if_minimum_fiber_known": "49/79",
+        "chain_and_gap_unchanged": true
+      },
+      "measure_ratio_bounds": [
+        "79/91",
+        "79/49"
+      ],
+      "independent_state_and_inverse_fiber_match": true,
+      "exact_balance_uniform_output_and_energy_comparison": true,
+      "reversible_local_lazy_inverse_gap_lower_bound": "16",
+      "repair_coordinate_edge_increment_at_most_one": true,
+      "numerical_spectrum": {
+        "evidence": "floating-point diagnostic, not an exact spectral certificate",
+        "old_gap_divided_by_beta": 0.04359257423346059,
+        "new_gap_divided_by_beta": 0.03354498434061325
+      }
+    },
+    {
+      "rows": [
+        2,
+        2
+      ],
+      "columns": [
+        2,
+        1,
+        1
+      ],
+      "cutoff": 3,
+      "padding": 1,
+      "parameter_regime": "rescaled diagnostic; no paper quantitative guarantees",
+      "tables": 4,
+      "physical_states": 74,
+      "beta": "1/16384",
+      "minimum_fiber": 16,
+      "maximum_fiber": 21,
+      "mh_gap_allowance_multiplier": "21/16",
+      "dimension_only_multiplier_bound": 2,
+      "old_balanced_output_success": "2/37",
+      "mh_repaired_output_success": "1",
+      "old_law_naive_repair_is_uniform": false,
+      "unscaled_repair_rejection_success": "2/37",
+      "scaled_repair_rejection": {
+        "known_fiber_lower_bound": 16,
+        "stationary_success": "32/37",
+        "certified_inverse_success_allowance": "21/16",
+        "stationary_success_gain_over_balanced_only": 16,
+        "optimal_success_if_minimum_fiber_known": "32/37",
+        "chain_and_gap_unchanged": true
+      },
+      "measure_ratio_bounds": [
+        "37/42",
+        "37/32"
+      ],
+      "independent_state_and_inverse_fiber_match": true,
+      "exact_balance_uniform_output_and_energy_comparison": true,
+      "numerical_spectrum": {
+        "evidence": "floating-point diagnostic, not an exact spectral certificate",
+        "old_gap_divided_by_beta": 0.47151582957375016,
+        "new_gap_divided_by_beta": 0.38611000216939595
+      }
+    },
+    {
+      "rows": [
+        3,
+        2
+      ],
+      "columns": [
+        2,
+        2,
+        1
+      ],
+      "cutoff": 4,
+      "padding": 1,
+      "parameter_regime": "rescaled diagnostic; no paper quantitative guarantees",
+      "tables": 5,
+      "physical_states": 100,
+      "beta": "1/16384",
+      "minimum_fiber": 16,
+      "maximum_fiber": 26,
+      "mh_gap_allowance_multiplier": "13/8",
+      "dimension_only_multiplier_bound": 2,
+      "old_balanced_output_success": "1/20",
+      "mh_repaired_output_success": "1",
+      "old_law_naive_repair_is_uniform": false,
+      "unscaled_repair_rejection_success": "1/20",
+      "scaled_repair_rejection": {
+        "known_fiber_lower_bound": 16,
+        "stationary_success": "4/5",
+        "certified_inverse_success_allowance": "13/8",
+        "stationary_success_gain_over_balanced_only": 16,
+        "optimal_success_if_minimum_fiber_known": "4/5",
+        "chain_and_gap_unchanged": true
+      },
+      "measure_ratio_bounds": [
+        "10/13",
+        "5/4"
+      ],
+      "independent_state_and_inverse_fiber_match": true,
+      "exact_balance_uniform_output_and_energy_comparison": true,
+      "numerical_spectrum": {
+        "evidence": "floating-point diagnostic, not an exact spectral certificate",
+        "old_gap_divided_by_beta": 0.3281918931218809,
+        "new_gap_divided_by_beta": 0.24987412858929586
+      }
+    },
+    {
+      "rows": [
+        1,
+        1,
+        1
+      ],
+      "columns": [
+        1,
+        1,
+        1
+      ],
+      "cutoff": 2,
+      "padding": 1,
+      "parameter_regime": "rescaled diagnostic; no paper quantitative guarantees",
+      "tables": 6,
+      "physical_states": 150,
+      "beta": "1/32768",
+      "minimum_fiber": 25,
+      "maximum_fiber": 25,
+      "mh_gap_allowance_multiplier": "1",
+      "dimension_only_multiplier_bound": 3,
+      "old_balanced_output_success": "1/25",
+      "mh_repaired_output_success": "1",
+      "old_law_naive_repair_is_uniform": true,
+      "unscaled_repair_rejection_success": "1/25",
+      "scaled_repair_rejection": {
+        "known_fiber_lower_bound": 25,
+        "stationary_success": "1",
+        "certified_inverse_success_allowance": "1",
+        "stationary_success_gain_over_balanced_only": 25,
+        "optimal_success_if_minimum_fiber_known": "1",
+        "chain_and_gap_unchanged": true
+      },
+      "measure_ratio_bounds": [
+        "1",
+        "1"
+      ],
+      "independent_state_and_inverse_fiber_match": true,
+      "exact_balance_uniform_output_and_energy_comparison": true,
+      "numerical_spectrum": {
+        "evidence": "floating-point diagnostic, not an exact spectral certificate",
+        "old_gap_divided_by_beta": 0.8010468582514109,
+        "new_gap_divided_by_beta": 0.8010468582514109
+      }
+    },
+    {
+      "rows": [
+        1
+      ],
+      "columns": [
+        1
+      ],
+      "cutoff": 2,
+      "padding": 1,
+      "parameter_regime": "rescaled diagnostic; no paper quantitative guarantees",
+      "tables": 1,
+      "physical_states": 1,
+      "beta": "1/8192",
+      "minimum_fiber": 1,
+      "maximum_fiber": 1,
+      "mh_gap_allowance_multiplier": "1",
+      "dimension_only_multiplier_bound": 1,
+      "old_balanced_output_success": "1",
+      "mh_repaired_output_success": "1",
+      "old_law_naive_repair_is_uniform": true,
+      "unscaled_repair_rejection_success": "1",
+      "scaled_repair_rejection": {
+        "known_fiber_lower_bound": 1,
+        "stationary_success": "1",
+        "certified_inverse_success_allowance": "1",
+        "stationary_success_gain_over_balanced_only": 1,
+        "optimal_success_if_minimum_fiber_known": "1",
+        "chain_and_gap_unchanged": true
+      },
+      "measure_ratio_bounds": [
+        "1",
+        "1"
+      ],
+      "independent_state_and_inverse_fiber_match": true,
+      "exact_balance_uniform_output_and_energy_comparison": true,
+      "numerical_spectrum": {
+        "evidence": "floating-point diagnostic, not an exact spectral certificate",
+        "old_gap_divided_by_beta": null,
+        "new_gap_divided_by_beta": null
+      }
+    },
+    {
+      "rows": [
+        2
+      ],
+      "columns": [
+        1,
+        1
+      ],
+      "cutoff": 3,
+      "padding": 1,
+      "parameter_regime": "rescaled diagnostic; no paper quantitative guarantees",
+      "tables": 1,
+      "physical_states": 3,
+      "beta": "1/8192",
+      "minimum_fiber": 3,
+      "maximum_fiber": 3,
+      "mh_gap_allowance_multiplier": "1",
+      "dimension_only_multiplier_bound": 1,
+      "old_balanced_output_success": "1/3",
+      "mh_repaired_output_success": "1",
+      "old_law_naive_repair_is_uniform": true,
+      "unscaled_repair_rejection_success": "1/3",
+      "scaled_repair_rejection": {
+        "known_fiber_lower_bound": 3,
+        "stationary_success": "1",
+        "certified_inverse_success_allowance": "1",
+        "stationary_success_gain_over_balanced_only": 3,
+        "optimal_success_if_minimum_fiber_known": "1",
+        "chain_and_gap_unchanged": true
+      },
+      "measure_ratio_bounds": [
+        "1",
+        "1"
+      ],
+      "independent_state_and_inverse_fiber_match": true,
+      "exact_balance_uniform_output_and_energy_comparison": true,
+      "numerical_spectrum": {
+        "evidence": "floating-point diagnostic, not an exact spectral certificate",
+        "old_gap_divided_by_beta": 0.9999999999999997,
+        "new_gap_divided_by_beta": 0.9999999999999997
+      }
+    }
+  ],
+  "limits": [
+    "Changes the terminal output rule; not the existing compiled machine.",
+    "The optional MH alternative changes the chain and worsens its generic gap allowance by rho.",
+    "Scaled repair rejection matches that alternative's leading dimension allowance without changing the chain.",
+    "No complete runtime degree or practical superiority is established.",
+    "Enumeration is exponential; finite checks do not prove the general theorem."
+  ],
+  "source_sha256": {
+    "experiments/repair_reweighting.py": "1273dc92090dfb3c1b98aeb1833b023c85d2a9d6b5259901f2be19df0c8e5158",
+    "src/contingency115/ideal_chain.py": "5432398d088bbd93d473a56fababadfb9f50c807a38e230c222e8527fa23235b"
+  }
+}

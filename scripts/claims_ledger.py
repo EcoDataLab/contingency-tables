@@ -17,6 +17,11 @@ from check_lean_axioms import ALLOWED, check_audit
 BEGIN = '<!-- BEGIN GENERATED CLAIMS -->'
 END = '<!-- END GENERATED CLAIMS -->'
 CLASSES = {'lean_theorem', 'lean_component_cost', 'executable_reference', 'reviewed_mathematics', 'open_obligation'}
+# These tools orchestrate checking; their current bytes are not theorem inputs.
+# A historical run still binds the exact versions it used through its receipt.
+AUDIT_ORCHESTRATION_TOOLS = frozenset({
+    'scripts/prepare_environment_audit.py', 'scripts/run_environment_audit.py',
+})
 
 
 def digest(path: Path) -> str:
@@ -41,14 +46,16 @@ def unique_names(records: list, label: str) -> list[str]:
 
 
 def source_checks(root: Path, source_hashes: dict, upstream_revision: str | None) -> dict:
-    """Check owned sources strictly; absent separately pinned upstream is unchecked.
+    """Classify current input drift; absent pinned upstream is unchecked.
 
     The exemption is only the recorded openai-math checkout's lean subtree,
     and only with a full pinned revision. Every present upstream path must
     still be a regular file with the recorded digest. No digest is discarded.
+    Present changes to the two orchestration tools are reported separately;
+    required proof/configuration inputs and every missing input stay strict.
     """
     pinned = isinstance(upstream_revision, str) and re.fullmatch(r'[0-9a-f]{40}', upstream_revision)
-    mismatches, checked_upstream, unchecked = [], [], {}
+    mismatches, checking_tool_mismatches, checked_upstream, unchecked = [], [], [], {}
     for relative, expected in source_hashes.items():
         path = local_path(root, relative)
         upstream = bool(pinned) and Path(relative).parts[:3] == ('.upstream', 'openai-math', 'lean')
@@ -56,9 +63,14 @@ def source_checks(root: Path, source_hashes: dict, upstream_revision: str | None
             unchecked[relative] = expected
         elif not path.is_file() or digest(path) != expected:
             mismatches.append(relative)
+            # Missing inputs remain errors, even for a known orchestration tool.
+            if relative in AUDIT_ORCHESTRATION_TOOLS and path.is_file():
+                checking_tool_mismatches.append(relative)
         elif upstream:
             checked_upstream.append(relative)
     return {'current_source_mismatches': sorted(mismatches),
+            'checking_tool_mismatches': sorted(checking_tool_mismatches),
+            'required_input_mismatches': sorted(set(mismatches) - set(checking_tool_mismatches)),
             'upstream_revision': upstream_revision,
             'checked_upstream_sources': sorted(checked_upstream),
             'unchecked_upstream_source_sha256': dict(sorted(unchecked.items()))}
@@ -174,7 +186,7 @@ def validate_ledger(root: Path, ledger: dict) -> dict:
     if current_id is not None:
         if current_id not in summary_ids or current_id not in disjoint:
             raise ValueError('current receipt must be included in summary and current disjoint scope')
-        if scopes[current_id]['current_source_mismatches']:
+        if scopes[current_id]['required_input_mismatches']:
             raise ValueError('current receipt source bytes differ from current checkout')
     claims = []
     ids = set()
@@ -236,7 +248,13 @@ def render(result: dict) -> str:
     for scope_id in result['summary_receipt_ids']:
         scope = result['scopes'][scope_id]
         commit = f"exact commit `{scope['commit'][:7]}`" if scope['commit_kind'] == 'exact_repository_commit' else 'source hashes bound by the receipt'
-        drift = ' Selected source/configuration bytes differ in the current checkout; this receipt does not verify the new aggregate.' if scope['current_source_mismatches'] else ''
+        drift = ''
+        if scope['required_input_mismatches']:
+            drift = ' Selected source/configuration bytes differ in the current checkout; this receipt does not verify the new aggregate.'
+        elif scope['checking_tool_mismatches']:
+            tools = ', '.join('`' + p + '`' for p in scope['checking_tool_mismatches'])
+            drift = (' Theorem sources and compilation inputs still match; checking-tool bytes changed: '
+                     + tools + '. This historical receipt does not verify the changed tools or record a new run.')
         breakdown = ''
         if 'Math115' in scope['module_counts']:
             focused = scope['module_counts']['Math115']
@@ -314,6 +332,11 @@ def main() -> int:
                               'disjoint_component_count': result['disjoint_count'],
                               'current_receipt': result['current_receipt'],
                               'summary_receipt_ids': result['summary_receipt_ids'],
+                              'current_source_compatibility': {k: {
+                                  'required_inputs_match': not v['required_input_mismatches'],
+                                  'changed_required_inputs': v['required_input_mismatches'],
+                                  'changed_checking_tools': v['checking_tool_mismatches']
+                              } for k, v in result['scopes'].items()},
                               'upstream_source_validation': {k: {
                                   'pinned_revision': v['upstream_revision'],
                                   'checked_present': len(v['checked_upstream_sources']),

@@ -25,6 +25,8 @@ The [public LODES backtest](commuting-backtest.md) uses 100 predefined overlappi
 
 The [synthetic commuting example](commuting-use-cases.md) separately illustrates exact allocation laws and metric arithmetic on invented controls. The [same-law sampler benchmark](sampler-benchmarks.md) retains finite-chain correlation and budget failures. Keep these evidence classes separate when choosing a method.
 
+The [implementation benchmark](implementation-benchmarks.md) measures repeated weighted draws, communicating classes and cycle-line reuse against the previous public source, including cold-start and memory costs. The [repair-output result](repair-output.md) is a separate reviewed mathematical derivation: positive all-small margins admit a better terminal rejection allowance with the original chain. It has exact finite evidence but no compiled terminal-program theorem. Its formalization is a useful bounded next task; [the broader research review](research-directions.md) explains why more elaborate representations are not automatically improvements.
+
 ## Reproduce from the public checkout
 
 Use Python 3.10 or newer. From the repository root, the core suite runs without installing the package:
@@ -39,11 +41,14 @@ Save rerun outputs separately from the published reports:
 
 ```sh
 mkdir -p .local/reports
-PYTHONPATH=src python3 -S experiments/cycle_mixtures.py --replay reports/cycle-mixtures.json
+make replay-mixtures
 python3 experiments/commuting_backtest.py --output .local/reports/commuting-backtest.json
-python3 scripts/claims_ledger.py --check-readme
-python3 scripts/verify_sources.py --bundle-only
+make claims-check sources-bundle
 ```
+
+`make verify` runs the core tests, archived finite audit, saved claim check, source-bundle verification, independent finite crosscheck and mixture replay after installing `.[research]`. `make reports-local` generates the standard report bundle in `.local/reports`; `REPORT_DIR` selects another rerun destination. `make reports-publish` is the explicit generator for new publication reports in tracked `reports/`.
+
+The saved claim check keeps receipt and artifact hashes exact, verifies theorem sources and compilation inputs, and reports changes to the two audit orchestration scripts separately. Such tool changes do not create a new compiler run. Finite mixture replay checks the mathematical witnesses under current code and reports historical producer differences; use the script's `--require-producer-sources` option for exact producer reproduction.
 
 The default commuting replay is offline. Its additional `--verify-source` check downloads the fixed public sources and rejects changed bytes. The [backtest guide](commuting-backtest.md) explains the optional SciPy endpoint crosscheck. Follow the [library benchmark recipe](worker-library-benchmarks.md) for its pinned optional dependencies, timing phases, and bounded reruns. NumPy-dependent archived audits and other research reports require the `.[research]` extra described in the [README](../README.md).
 

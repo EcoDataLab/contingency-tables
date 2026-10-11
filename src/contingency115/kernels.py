@@ -170,24 +170,45 @@ class ExactKernel:
     def communicating_classes(self) -> tuple[tuple[int, ...], ...]:
         """Strongly connected classes, including transient zero-weight states."""
         size = len(self.states)
-        reachability = []
-        for start in range(size):
-            seen, queue = {start}, [start]
+        forward, reverse = [[] for _ in range(size)], [[] for _ in range(size)]
+        for i in range(size):
+            for j, probability in enumerate(self.matrix[i]):
+                if probability:
+                    forward[i].append(j)
+                    reverse[j].append(i)
+        # Iterative Kosaraju: finish times in the forward graph, then components
+        # in the reverse graph. The dense input scan costs O(size**2); graph
+        # traversal and temporary adjacency storage cost O(size + edges).
+        seen, order = set(), []
+        for root in range(size):
+            if root in seen:
+                continue
+            seen.add(root)
+            stack = [(root, iter(forward[root]))]
+            while stack:
+                vertex, children = stack[-1]
+                child = next(children, None)
+                if child is None:
+                    order.append(vertex)
+                    stack.pop()
+                elif child not in seen:
+                    seen.add(child)
+                    stack.append((child, iter(forward[child])))
+        seen, classes = set(), []
+        for root in reversed(order):
+            if root in seen:
+                continue
+            seen.add(root)
+            queue, component = [root], []
             while queue:
-                i = queue.pop()
-                for j, p in enumerate(self.matrix[i]):
-                    if p and j not in seen:
-                        seen.add(j)
-                        queue.append(j)
-            reachability.append(seen)
-        remaining, classes = set(range(size)), []
-        while remaining:
-            first = min(remaining)
-            component = tuple(j for j in sorted(remaining)
-                              if j in reachability[first] and first in reachability[j])
-            classes.append(component)
-            remaining.difference_update(component)
-        return tuple(classes)
+                vertex = queue.pop()
+                component.append(vertex)
+                for child in reverse[vertex]:
+                    if child not in seen:
+                        seen.add(child)
+                        queue.append(child)
+            classes.append(tuple(sorted(component)))
+        return tuple(sorted(classes, key=lambda component: component[0]))
 
     def spectral_gap(self) -> float:
         """Numerical algebraic gap on positive target support; requires NumPy.
@@ -226,6 +247,9 @@ def heat_bath_kernel(
     Uniform weights give a uniform draw along the entire feasible cycle line.
     Product weights instead give its exact conditional law. A fixed mixture of
     these conditional kernels is reversible. Empty catalogs produce a hold.
+    Cycle lines are processed once per cycle with O(len(states)) temporary
+    entries. The explicit matrix still requires quadratic storage and writes;
+    state/transition caps do not bound rational bit lengths or heap bytes.
     """
     _integer(max_kernel_states, "max_kernel_states", positive=True)
     # Do not materialize an arbitrarily long iterator before checking its cap.
@@ -262,21 +286,34 @@ def heat_bath_kernel(
     if not total:
         raise ZeroMassError("all kernel states have zero target weight")
     matrix = [[Fraction(0) for _ in tables] for _ in tables]
-    for index, table in enumerate(tables):
+    for index in range(len(tables)):
         if not catalog:
             matrix[index][index] = 1
-            continue
-        matrix[index][index] += hold
-        for cycle, choice in zip(catalog, choices):
+        else:
+            matrix[index][index] += hold
+    for cycle, choice in zip(catalog, choices):
+        # A fixed cycle partitions the complete fiber into disjoint lines.
+        # Mark every target as processed, so subsequent states on that line
+        # reuse its conditional vector. Reset for each cycle: overlapping
+        # cycles can share endpoints without defining the same line.
+        processed = set()
+        scale = (1 - hold) * choice
+        for index, table in enumerate(tables):
+            if index in processed:
+                continue
             lo, hi = line_interval(problem, table, cycle)
             targets = [lookup[_shift(table, cycle, t)] for t in range(lo, hi + 1)]
+            processed.update(targets)
             line_mass = sum((masses[j] for j in targets), Fraction(0))
             if line_mass:
-                for j in targets:
-                    matrix[index][j] += (1 - hold) * choice * masses[j] / line_mass
+                probabilities = tuple(scale * masses[j] / line_mass for j in targets)
+                for source in targets:
+                    for target, probability in zip(targets, probabilities):
+                        matrix[source][target] += probability
             else:
                 # A zero-mass line only contains null states of the target.
-                matrix[index][index] += (1 - hold) * choice
+                for source in targets:
+                    matrix[source][source] += scale
     result = ExactKernel(tables, tuple(tuple(row) for row in matrix), tuple(m / total for m in masses))
     assert result.is_stochastic() and result.satisfies_detailed_balance()
     return result
