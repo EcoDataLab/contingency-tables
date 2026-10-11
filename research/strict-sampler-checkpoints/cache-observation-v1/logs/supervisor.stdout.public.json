@@ -1,0 +1,11 @@
+{
+  "guest_result": 1,
+  "owned_qemu_reaped": true,
+  "qemu_exit_code": 1,
+  "serial_sha256": "8d4c9c53b1072f09e7aeab9fb6176ee7a12e3bef977a7a7f3b12d202145327ba",
+  "source_sha256_after": "8826d43c9416ff398da1e878380365eb638e3b7aa5c710374b53128c9b842fb6",
+  "source_sha256_before": "8826d43c9416ff398da1e878380365eb638e3b7aa5c710374b53128c9b842fb6",
+  "status": "observation_reported_failure",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "trusted_boot_ready_reader_sha256": "0e18fd866431fa5658ed9381c86c6405a168a9c562de1992871ede01f48d297c"
+}

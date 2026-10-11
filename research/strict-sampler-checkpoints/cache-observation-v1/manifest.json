@@ -1,0 +1,86 @@
+{
+  "diagnostic_complete": false,
+  "files": [
+    {
+      "bytes": 6232,
+      "path": "README.md",
+      "sha256": "d21e22b007dc9ba7e3fb21d0b387a734fe88918f920319693d4cce9688bd7f76"
+    },
+    {
+      "bytes": 358235,
+      "path": "evidence/cache-diagnostic.public.json.gz",
+      "sha256": "c26d0f9606cbbe11148ca00a889c1afee42febb73fbedd2d97c42760b34817af"
+    },
+    {
+      "bytes": 530,
+      "path": "evidence/cleanup.json",
+      "sha256": "c43d477cca1752b26d5f8b3e1b36e07f4f44a435f739cf847c05fb33e561be2a"
+    },
+    {
+      "bytes": 659,
+      "path": "evidence/independent-fact-review.json",
+      "sha256": "b63e1c8ddb9ccaaa9ac22b8347ebe864fd11606b9dc20380b7548b6ca654b68c"
+    },
+    {
+      "bytes": 2183,
+      "path": "evidence/outcome.json",
+      "sha256": "14c1e74791e68e3c4daf667ee3cd0ce186b2014bc95e6eb95519b6301c2491ac"
+    },
+    {
+      "bytes": 74,
+      "path": "logs/guest-reader-error.txt",
+      "sha256": "cda41c1033c0403a82ea294f0975560cabcea540a6b748b47613bc9db7c533a6"
+    },
+    {
+      "bytes": 0,
+      "path": "logs/qemu-stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "logs/supervisor.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 587,
+      "path": "logs/supervisor.stdout.public.json",
+      "sha256": "7018832cbd09c4f8c7d2ef16d32d823e665dc324dc273edbf95d29ff354bbea8"
+    },
+    {
+      "bytes": 6448,
+      "path": "projection-map.json",
+      "sha256": "892405a9649ac87bf34bc5a9168cea5a7062ce5bdad4f1c50d08d78c544e7acd"
+    },
+    {
+      "bytes": 2107,
+      "path": "provenance-bindings.json",
+      "sha256": "be2a2ab88dce0f29d073ccdbcb7da153ccbd44f88fe905f47e389d1bde6d4465"
+    },
+    {
+      "bytes": 9976,
+      "path": "source/cache_diagnostic.py",
+      "sha256": "65df770fd9226145542f6ba057beaf40a9580c6157af59d03ecbfe1462efb611"
+    },
+    {
+      "bytes": 4679,
+      "path": "source/capture_support.py",
+      "sha256": "09c5289f21a7c08915a90f5c7b35a68d0bd2c9d1ea1bf11f61a3b220af29a3a3"
+    },
+    {
+      "bytes": 1809,
+      "path": "source/reproduce_diagnostic.py",
+      "sha256": "506a62d10ab50c3d9e190f1ab9349358877b87dcbf24d5f7ac79f86427339723"
+    }
+  ],
+  "full_strict_acceptance": false,
+  "new_live_or_compiler_execution": false,
+  "original_cleanup_sha256": "90975aa12dfd3a190e70ec6135d2feca6c24ca975b232ee581601cd538c555f0",
+  "original_diagnostic_sha256": "990cf90ead4d9c73e054903af8c8aa6b44c27025a89e007bab9c5d0c24cb7fb9",
+  "original_final_result_sha256": "5f5119df123cd87efcbabb829843a1c25cd130a88bd81bb3de4a6a2e86ddd009",
+  "runtime_authentication_passed": false,
+  "schema_version": 1,
+  "scope": "Later exactCli ancestor-absence fact with partial importGraph tail, unobserved3 roots/82external/679source checks. No cache/runtime/proof/strict acceptance or startup repair. Earlier unnamed failure unchanged.",
+  "source_reproduction": "Declared path-role/support extraction plus unexecuted adapter; syntax only",
+  "startup_repaired": false,
+  "status": "closed_partial_readonly_cache_observation_failed_fixed_keyset_cap"
+}

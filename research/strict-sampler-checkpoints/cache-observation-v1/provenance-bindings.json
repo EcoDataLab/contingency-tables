@@ -1,0 +1,30 @@
+{
+  "boundary": "Official caches/retained sealed filesystem context. No image/tool/cache binaries or serial/QMP transcripts supplied. Filesystem metadata facts do not establish complete selected-object/runtime/source-owner coverage.",
+  "earlier_unnamed_configuration_failure_packet": {
+    "manifest_sha256": "cd30335ccf30a1d0060cd28755d8d84ba4cdde00395b7182f9adea7daa0cb166",
+    "missing_cache_root_in_earlier_receipt": null,
+    "proposed_public_path": "research/strict-sampler-checkpoints/configuration-repair-v1",
+    "unchanged": true
+  },
+  "five_retained_pins_unchanged": true,
+  "guest_archive_members_and_local_bytes_rehashed": 39,
+  "host_downloads_rehashed": 8,
+  "host_inventory_entries": 9,
+  "independent_actual_review_manifest_sha256": "028643e0993cc3e0e268b46fb1033072573b14e488ffdb96379c729030284519",
+  "original_cleanup_sha256": "90975aa12dfd3a190e70ec6135d2feca6c24ca975b232ee581601cd538c555f0",
+  "original_collector_sha256": "04bad9a94bc5289730a1b17722139d6dad882e7a9b864de5df84d4e4f278f58c",
+  "original_corpus_manifest_sha256": "34ff831e7fda385696e82ae1234426d08b24b329087059817ba9df0b7ad063a6",
+  "original_diagnostic_bytes": 6948740,
+  "original_diagnostic_sha256": "990cf90ead4d9c73e054903af8c8aa6b44c27025a89e007bab9c5d0c24cb7fb9",
+  "original_final_result_sha256": "5f5119df123cd87efcbabb829843a1c25cd130a88bd81bb3de4a6a2e86ddd009",
+  "original_observer_manifest_sha256": "f41e3e9fbe02461e5fb4d3df4f672b4a139af740bfadc4f07a52ac77a3c9747f",
+  "original_reader_sha256": "0e18fd866431fa5658ed9381c86c6405a168a9c562de1992871ede01f48d297c",
+  "raw_download_manifests": {
+    "guest": "6efd15452f777e22aebe6fa6f7ee50697881cb16159eaa0e1f0467d0004028c0",
+    "guest_archive": "d903a5af2adbc6cb4b760059b57f14c1a1dd59d8323a1367d75f416209fe88f8",
+    "host": "3edaea3ce40a73e09013a6f252561bb495bc2fe30128b1770c4dce0ab42f5753"
+  },
+  "remote_only_disk_locally_rehashed": false,
+  "scope": "Later closed partial readonly metadata observation. Not authentication/cache/proof acceptance.",
+  "source_before_after_sha256": "8826d43c9416ff398da1e878380365eb638e3b7aa5c710374b53128c9b842fb6"
+}

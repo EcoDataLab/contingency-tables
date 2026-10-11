@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "passed_saved_artifact_projection_review",
+  "reviewer_kind": "independent AI agent within this project; not human review",
+  "packet": "cache-observation-v1/manifest.json",
+  "packet_manifest_sha256": "740cb1a47ad1d69a89c0404ad62e251c069784287aba626c5882ea4aaa211214",
+  "original_private_review_sha256": "1c6c9af88aee641b26395378b178d8d62099ae138fd2c80ce1cbba6cd54ecbaf",
+  "original_private_review_manifest_sha256": "28b2d9c1ac58f5b6176e94341a5fdedcd6fba510a43fa00be7a953c7e5091f4b",
+  "projection": "Public summary of saved-artifact checks; private setup paths and process identities omitted.",
+  "checks": [
+    "All 14 packet members and 11 raw-to-public artifact mappings.",
+    "Deterministic gzip and exact decompressed role-substituted raw diagnostic.",
+    "Eight local host downloads and 39 regular guest archive members; remote-only disk excluded from local rehashing.",
+    "Five completed metadata keysets, actual Cli ancestor absence and explicit partial importGraph tail.",
+    "Complete captured error and empty stderr logs; stdout selection labeled.",
+    "Exact collector/support source derivations, syntax-only adapter scope, provenance, links and targeted privacy checks.",
+    "Original configuration-repair and strict challenge packet hashes unchanged."
+  ],
+  "observed_missing_path": "formal/.lake/packages/Cli/.lake",
+  "diagnostic_complete": false,
+  "runtime_authentication_passed": false,
+  "strict_acceptance": false,
+  "live_execution_by_reviewer": false,
+  "blocking_findings": [],
+  "limits": [
+    "The fixed 20000-entry cap stopped before three remaining roots, 82 external-object facts, 679 submitted-source hashes and the cold-proof scan.",
+    "The last 58 importGraph entries are partial despite the retained producer completeness flag; no final keyset hash exists.",
+    "Metadata observation and saved-artifact consistency do not establish runtime admission or kernel acceptance.",
+    "Retained disk images and a portable outer supervisor are not supplied; projected diagnostic sources were syntax-checked only."
+  ],
+  "subsequent_root_public_layout_check": {
+    "checked_at_utc": "2026-10-11T09:18:30.517652+00:00",
+    "packet_members_rehashed": 14,
+    "python_sources_ast_checked": 3,
+    "compressed_diagnostic_decoded": true,
+    "navigation_links_checked": 265,
+    "targeted_private_path_scan": "passed",
+    "scope": "public copy integrity, source syntax and navigation only; no new diagnostic, VM or compiler execution"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "host_manifest_sha256": "3edaea3ce40a73e09013a6f252561bb495bc2fe30128b1770c4dce0ab42f5753",
+  "owned_guest_mount_directory_removed": true,
+  "owned_guest_mount_unmounted": true,
+  "owned_qemu_reaped": true,
+  "processes_absent": true,
+  "retained_pins_unchanged": true,
+  "source_sha256_unchanged": "8826d43c9416ff398da1e878380365eb638e3b7aa5c710374b53128c9b842fb6",
+  "status": "closed; held owned QEMU reaped and supervisor absent; all research processes absent; guest mount removed; source/backing/tool hashes unchanged"
+}
