@@ -119,7 +119,13 @@ identified a decimal-format rewrite of that sidecar. Preparing the memos with
 the pinned Lake implementation before fresh admission allowed the exact
 dependency command to pass twice with the full frozen checks unchanged.
 Non-memo contents and identities stayed unchanged; this diagnostic compiled
-no proof module and did not execute Comparator. Historical pins, failed runs,
+no proof module and did not execute Comparator. The
+[second bounded full attempt](../research/strict-sampler-checkpoints/second-proof-failure-v1/)
+then compiled nine of the 679 historical modules before its process observer
+failed to read `/proc/3555/exe` during a dependency gate. The exact reason
+that link was inaccessible is unknown. Authenticated receipts and all stage
+logs are preserved; export, kernel replay and Comparator were not reached.
+Historical pins, failed runs,
 the commuting protocol and archived 115 handoff are preserved.
 
 The [aggregate validation record](../reports/aggregate-defect-trace-validation.json)

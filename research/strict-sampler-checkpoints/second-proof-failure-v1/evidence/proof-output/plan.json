@@ -1,0 +1,10 @@
+{
+  "module_count": 679,
+  "roots": [
+    "Math115.StrictSamplerStatement",
+    "Math115.StrictSamplerSolution"
+  ],
+  "runtime_freeze_sha256": "b777e2f434af7744108690dbbd0ec790f022f78172028ee723fbba02f29b3f8e",
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "status": "admitted_plan_only"
+}

@@ -62,6 +62,12 @@ unchanged full frozen checks. No proof module was compiled in that diagnostic;
 it establishes no full proof or Comparator acceptance. Earlier checkpoint
 statuses below retain their historical scopes.
 
+The [second bounded full attempt](../research/strict-sampler-checkpoints/second-proof-failure-v1/)
+subsequently compiled nine modules from the historical sampler closure,
+then stopped on a process-observer permission error during a dependency gate.
+Its exact receipts and logs are preserved. No export, kernel replay or
+Comparator stage ran; it does not verify the complete sampler or new research.
+
 The formal work is additive to OpenAI's pinned #115 source. It now proves
 sharper Poincare bounds for the unchanged original ideal chains and actual
 parameterized ideal chains at both dense-compatible and smaller ideal-only scales,
