@@ -1,0 +1,1637 @@
+{
+  "status": "matched",
+  "reused_overlay_objects": 326,
+  "objects": [
+    {
+      "module": "CountBounds.TightWordCountDegreeV2",
+      "sha256": "2f8199c3ce326896ab0cf3d211369c3bc48786f2148e607649520161c84c9ec2",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "CountBounds.ParserDegree",
+      "sha256": "1c1e5d766924370c1c8320914955f268861ab2e3c455f1b2087bd6e6714944d9",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "CountBounds.ScalarCircuitDegreeV2",
+      "sha256": "d96fb58d528c48d7d9b8c15a57a408e47b51260c0372e76c22d713c42a4ad909",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "CountBounds.ListRepeatDegree",
+      "sha256": "6b5392e761f376263a6460e3263c489cf030b7289b33231720baf7db6bfb1d77",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.DrawControlDegree",
+      "sha256": "56a6c29498ea7b9df719400273331d6e799a03bfc9329f605ddd33600a1a59b9",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.DrawWalkDegree",
+      "sha256": "ec72b80011c422045c3097cd69257d70c616c43893132f1f1cb07e7b420b85ed",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.DrawAssemblyDegree",
+      "sha256": "1a32f5ceb7745c3e7acef33dc8ac863db3ca1ed95264903796cd556dd7499ecb",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.ScalarOutputSizeDegree",
+      "sha256": "31373e7e8f1b04751d032a564f00a5fc0ca3965e4420159c07a77a1c6f3a602f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.TreeArithmeticDegree",
+      "sha256": "14084fd1a8a94de138eb84ced25330d5fb5e5dbb7869ba49e7cc01fab5f5af9e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.SmallCellCatalogueDegree",
+      "sha256": "f65d1da370a49d0ffaab92c4e7623043d2476992a2ad1a7a3bcbc26ebdca6976",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.CatalogueLeafDegrees",
+      "sha256": "6fe3b4f2b9245bdc3897ba8fa56112d3956a67192f9c1f84983abffb114b48d4",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.WordCountSeedDegrees",
+      "sha256": "e5003084654888fa321c21f7d6e899e21735bc8f11ce26c62597182372a44f8a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "sha256": "bf5e49a96a39c4e9526fb0cf1ad3786d8a6c84d1e90771b0c5906cfce1c316d2",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PathVariance",
+      "sha256": "76b5b7773f4ecba516398ad1b87e785ffbdf45b4f43808947c67ce0ca24afbc1",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionAcceptance",
+      "sha256": "9669340cb6bea85e1806f3f956f9535adcd66777c7309cd507ec7189660cb7dd",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionOuterSchedule",
+      "sha256": "c3f8e2ecc3a538fb6d1a2a734e5cd8144ae90237e5ece1457f6bbe4f977ae8f1",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionRetryBudget",
+      "sha256": "1e2074542622f5973846f50f5d1e649f7039f44ece367bdf63069fea7dcbe83c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.GlobalDisplayOwnership",
+      "sha256": "157f9444138f61809f42c4468de2dc67e0739063b0316c76255eb0ea4e2156f7",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.SmallEntrySwitching",
+      "sha256": "a96317153cbace4b8e94dbdc427a1d84ff816de54f1f499d51540590df9d3c35",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalFiniteWalk",
+      "sha256": "895611b03656db8e76c153245f1039730be1789908a9d2f611a8d99bc94da7ef",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionRandomBudget",
+      "sha256": "607479cc567ce72e1586d6a3ecc46d9e3e569c78b136ad264e969d5ce31affb8",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.IdealRepairRefinement",
+      "sha256": "ecae3dd155df85c9180e384bf92bdcbe80376b46fb64fbca33f6e94a5f6412d0",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PrefixTransportation",
+      "sha256": "c01b3754adab5b124a69b6e4f18e199e3eabcd55ec8c1da34a7f3c59a419855e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalStationaryLaw",
+      "sha256": "2f4d55d2d6833ff6dad946713d6f0549e42a84d607941139e2d89bd4f4cf1440",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeCompletionAccuracy",
+      "sha256": "b8f58550949a55b74cde9d6c2e03772f448b16d93f867ecf6fc5abcf0500acd5",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PublicLatticeSampler",
+      "sha256": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionEncodingSize",
+      "sha256": "726f81620777ca57ddb2b485a8b16daf8cb2783952bd3e7cafd01ad6f16b6195",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionPublicSize",
+      "sha256": "009b4ec9771492a3c6440a42d251b746ae091f26e1f43f466711f108b954abe3",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.ReducedAllSmallChain",
+      "sha256": "609f0298d7b3fb045cb763590af8978bba004a919ae0963d526cd7808cc3a577",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.DenseLatticeCompletionProvedInputs",
+      "sha256": "c108e37662c1f555825847fe44a0492a786973a1a68fd982830f2b71bb8b5583",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.SmallChainGap",
+      "sha256": "c86f9219da852c7373bee877201308417321c869d4ddc3f7b4ae32d6a83b1433",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalEmptyCompletion",
+      "sha256": "723c0fc332299a34facd95697b3899e10c7d5447f6dfc09964056e6ffb9eacaf",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalStationaryMass",
+      "sha256": "015ae7996c4d127fc056c3dfa99c20025e5d780d1e35b522e3f5e0b68d84cdf3",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.DilatedCompletionMargins",
+      "sha256": "90d81bedc3c88a63eb2fc9b3c0960f057fa85a1bb2561c6db5e155713339628e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PrefixFloorCover",
+      "sha256": "4f865a3a4ab4d6652ee63ff107a074bc6b627b8adc48a80fd67a6c9b1e780db6",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.ListedLatticeCompletion",
+      "sha256": "0861dc7c52044555919775c08743f02e61f9e5e662d51f113b9d18a1c5043178",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalComputedProposal",
+      "sha256": "eb6f32e03db94bcbfcca576993481197aa34f7935bf92b288c936507f84e5599",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeUnitStep",
+      "sha256": "af052cb15024677e3be569bbb3a253c4d8c5d4ccb26825d62c7e51bb0eb4949e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalBooleanSampler",
+      "sha256": "3b13795d4834cf621291e01847842355a020eebe183ab3c871efb107753bc36a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.ReferenceEdgeAcceptance",
+      "sha256": "36833934ddb08641de659569ba48db4aaa6f7d139c6da58c6128bd867046cc7c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.ReducedSmallChain",
+      "sha256": "35db2ec6f4f60bceb147e777fbb2d24c589db3cf2d3991bf7831d7ad3aa1b129",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalExposureVariance",
+      "sha256": "256c95765d8fa07f43e0b1969d198736b66358fb90db6b934cae496252a38fbe",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.IdealOracleScales",
+      "sha256": "14db7c54fcb5744f847ceaba1d9fdfb58bc7e4b2442edeb236a98d4ec269773e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalReferenceBoolean",
+      "sha256": "3b99813ab24af6b5b31c611b4cfd8eb98079844a5e34c1d49838c075067fa029",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeSamplerPreparation",
+      "sha256": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.ScaleCertificate",
+      "sha256": "2717e60c147a6a38511f1cb29cfb3a9586624443d35742fa53ad4ae638a3eb62",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.QuadraticCoefficient",
+      "sha256": "ea4ac92ccbbdb07199c9b0e6edf8e501c0602e68caaf9df78daff9715d581e9a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeCompletionProgram",
+      "sha256": "cd1af795511710e0d496e75c221ebd54f9e8e17c7212e92d143a8ce460255d01",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalFullVariance",
+      "sha256": "bb7b8630dfa5350b73dfda9d4f190f7b88aa1d77b1edcbb9593d79ca2d55864e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalCompletionOracle",
+      "sha256": "691193bddf4160656b04220c517db8cf20ea825a6f712e106d1272fe9d680da2",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeUnitWalk",
+      "sha256": "c8965f88f6c8753d737c5949c0cb5f1d9a230ba637b977a761bd07e87957e0b3",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalStationarySuccess",
+      "sha256": "d5d31095b0ecd203c16931fc2cbe0e7c2374cad9ffbb2aef81d1dea42f28c4df",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeCompletionFinite",
+      "sha256": "ea5de1298f3553303bdf918ce139783b4f831fedf4d57ab49043e775221f2b88",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalRepairRefinement",
+      "sha256": "fa3000bfa826a26dacb5aadc6b8dc27badb431f35442572272639689a89bec1b",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.RepairVarianceRefinement",
+      "sha256": "f9bf3b13a06f15f318312ac0ea23ae27182fba25e09bf0360480ce140d17abca",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionAdjustment",
+      "sha256": "f3e4ac1bc4654020e4b58718f4c87a90a9e4c536a58871dca97b138b72810ac5",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PaddingGrowthAlgebra",
+      "sha256": "c6f50128012b4acda86ead1c53fd34c5cad3edcf14a6ff6b893364682b034685",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionCountBound",
+      "sha256": "ab1eb4aa13645d7f2115394f7ff25739cf6423db47a0f8a50da0b4315a805a24",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.UpstreamOwnershipBridge",
+      "sha256": "cc69962807fef0ac2a71411dc82591301fc79eeeea57f16430050c5c17d742f9",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionSamplerSemantics",
+      "sha256": "d0920372c346c5b7479fe85d496bf850121bbfe7eb9fb4281a1dfe7a5168c592",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionRandomBudgetArithmetic",
+      "sha256": "e651ab2d582194742d845f37f23a2d6fc615225472ecd5940d70e943c9f21c25",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionSamplerProgram",
+      "sha256": "ed4a49097d4a688867797b4ae92efecb631299320a5bb5eb9a491c41278353e1",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.SmallEntryTail",
+      "sha256": "0f16d5bcf09dbb79c93ab5acf3a5c969fb5d9e404093ff8273aba41c2d9528a0",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeScheduleProgram",
+      "sha256": "46388470d516fcb9a34bb8c9fc48ee5c11de554cb04ea374558e8243b645eac1",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalStateNonempty",
+      "sha256": "f7a375c8cff60e9ddaee7db17096e2449dbccfc3280322e4cb10d8558682be13",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeSampler",
+      "sha256": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PathDistanceSum",
+      "sha256": "2bc0fd643376ce6eeefe80308a8569c6025663912c181924c3529222c56e0c0b",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeUnitOuter",
+      "sha256": "0625fd3b136d4c938a993848c78540bfe3394dccb0e8bd4c5fe1e5b0fb0f79c3",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalLatticeCompletion",
+      "sha256": "af83870ec5c732dc1292f10dc41363b1e8e45f8fb6aada78d08347c20f3f50a3",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.TransportRefinement",
+      "sha256": "502af8b92d03594d5d9ec03482ee88e6b1e7d669b68492097fac538df78357c7",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.SwitchingFiniteSums",
+      "sha256": "a9d087c362369a805185ea5e86b3d869952425b4d8ef2eaa7ed2b4f26cf8db05",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalReferenceWalk",
+      "sha256": "5862766e0ca51e3921d6bf58c7cee306ab71a77bcb6f83b2a96139c783251e7f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PaddingGrowth",
+      "sha256": "51a0a5dd78a5590409e408c7cbc727ca6345a07c939ce998d21d6a3cb01814e9",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PaddedMarginBridge",
+      "sha256": "04b9ca31f554002a2e499f3bca738ac1ab4c3a7a33267b2e8843c95128337e0a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeEmptyOutput",
+      "sha256": "0c8c7d907fcc37e5012849a17c73d249fcdeebf334641242a7a3ce9250c2a6b6",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeCompletion",
+      "sha256": "07cecea71a21544d57aec20db27679d6d65929d7b778da791459e39151b87f92",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalApproximateOracle",
+      "sha256": "865dc9c1f10dc3684e13b50be66928c184d8860ffab66dd3c70a723bb05fcb50",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeProfileStep",
+      "sha256": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalLeafEnergy",
+      "sha256": "f0e6ebc138a7318c7bb4eabe6d6bf437aaf8a4f2c780c9de347eb4d2d76058f6",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionScheduleArithmetic",
+      "sha256": "85fee1332f4c5533a63c2ac0c63caa8a2367c6e26270d302fb89d491f63751fa",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeCellVolume",
+      "sha256": "1d4d6b127eb4a41bddb827ea9279f88253b036b7be1705fe64877af16366b333",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeOuterProgram",
+      "sha256": "67bf311a5b2cf04d03d0ce1dfe2b7579519a018d7778bd8140e4c62c6bc99f5e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.CompletionBooleanRetry",
+      "sha256": "555f344a1ff5dc627eddb1ca8483e549a577505d15747bda9c5ab2009d916eb8",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.DenseLatticeCompletion",
+      "sha256": "1a7efac2f6ea11535495cd5b43a96ede0ed506d7100881a1bebc536bc1bb4e4b",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.SurvivalAlgebra",
+      "sha256": "df77e6828477246064cf43527d9fb54bcd56dc4fd97b75bc3dab4e5fe23996a5",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeCompletionLaw",
+      "sha256": "27c0990282d596a493dff939cca02de5f887c685992d893a15165e691b0246c5",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.PhysicalRationalKernel",
+      "sha256": "644b763a13c563d48cfe268ba4064b81c47effc1b22775f8b4ced803cbb6f1f8",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeProfileWalk",
+      "sha256": "1ac118a11fa233dfdc2e24859e6c3c90d68a06c31ef9a06ad0b0f0fd77fc79ff",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "Math115.LatticeOuterSemantics",
+      "sha256": "3997ea4115319b21a1c3aaab82a1a062e522b7f3bddf2d98609f9d51c7eba774",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Graphs.AdaptiveStream",
+      "sha256": "df9d62e3bb870644f4d679d141e8252a235e1f980ef922c93266762903b3fda8",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Graphs.ExperimentSupport",
+      "sha256": "b58ecab99010b61333681a68bfa2141ef050cb3f3f8e4a100568d59eaf879a93",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.PhysicalPost",
+      "sha256": "1212dac96a1825bb33ab57901004390978bb25e1e2602156e96cc60fb15488d7",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.CoinTM1",
+      "sha256": "6f88223c7a7aacea0717efa9974da330ef8936cd12ddc413fb02562fb733076e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.PhysicalRestriction",
+      "sha256": "2fb8f1e0e5ccb3a4e1941b5f0a1c10f8704f2a563f19574832f7473a420dff96",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.CoinTM1Finite",
+      "sha256": "6e1a9fe7a1ac8a69a17f25d85fa3aa67f403739a829eee0a39ae43d8ac4e33a8",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.PhysicalProcess",
+      "sha256": "332e938a10530270cb92249e00b75c5df27522504f695dbe11853e50f82ad301",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.PhysicalAlphabet",
+      "sha256": "ee3cf0aaf23e703d75d420b39e4064c04403578b22bfa32a8f4eed5b7b10b651",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Graphs.SafeTrace",
+      "sha256": "1d413d144079bd150eeb7056eff11a71f71758d209014d624d785ba98a48d270",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.CoinAlphabet",
+      "sha256": "39685e203907b01caf0070799863b263984435f21e59bb679810a7967eb378e8",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.CoinStack",
+      "sha256": "0c3dff8eba6d4e5f8f15ea451f723ca71a9457f953107b203fd3619b20fe5ec9",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.CoinSupport",
+      "sha256": "bf0ce67d5de563c869cb2fa3d0b844f424a7e8055acf8c5dd0edf0c27efcc5c5",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.OnlineStackCompiler",
+      "sha256": "79c4b4d5690179a36b341b84d12cbd3f3ac3d16df49a76803a7a7893b491d542",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.Online",
+      "sha256": "491a9d8384be9bb32ded60a5ec81de7ef2b1a1a42731cee6e2292e40ce34cd8a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.OnlineComposition",
+      "sha256": "307e6cc3dd9306f777b1fdc73c0889baaad06ddf7cc33fd54f7b91b9454d3db8",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.OnlineTree",
+      "sha256": "3280d24a32f42445d34461d4e5051267c0821bd17966e8c9763765bfb5c4ce2c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.OnlineControl",
+      "sha256": "ebb42e5d7063f31f7a5d2352863b647bb6484759908a0aaf8acddd8496302196",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.OnlineFold",
+      "sha256": "36b2508e4e01790946951cb065f58634478a3bec671c6ba653f815ba751b9825",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.OnlineWord",
+      "sha256": "7c6c01031e94c8c4b38e834227165a1c15033b45f0e805b27587f93223afff78",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.OnlineFrame",
+      "sha256": "fcc2cfb35dfc1d1404c55fc0150accc2bc6a8b25cec4ac025997cd9c7f7cbb76",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Complexity.OnlineCost",
+      "sha256": "93d336668f9d15f33ef59e96a6b484e4bd9b53aa655cf77f5c0d7a345bf474c8",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Complexity.OnlineFrameCost",
+      "sha256": "6fc1d0b0b04ebfaf5a057fa1e1795321bcb4405550a8490e57a533fea7f98fd4",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Complexity.OnlineFoldCost",
+      "sha256": "50471b104c3ae0df934faa36e085409d9dbd6e503a1de9aa7fadf52a9c90d692",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Complexity.OnlineWordCost",
+      "sha256": "c6580f8531bf3d6293474678dbe8ab4286f5280062aab55411a4a0cab5fc4afa",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseOffsets",
+      "sha256": "ca75c151c07d391466c25b0cadd5fc5732115c72732a9e07c9c2e451db8be3c8",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseTrial",
+      "sha256": "e27ad07e9d09fa68b560c9e873305b739a7157ba8fb4cf603323ebf4a577daed",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseTrialWeights",
+      "sha256": "6f274bc830ef40446acde41adad3e5c629d9358633edc755d347d4be0de290f1",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseTrialAcceptance",
+      "sha256": "a0de499ad2c200f5fb114b3135ed54f9bae1305743b0a40613030cb5a89344df",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseRational",
+      "sha256": "62b58aa646e0e463d07d489822f2eca7aaeeff32d296371e477fa0208f0d338a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseExponentArithmetic",
+      "sha256": "fb304645087716cc84f4b2b24143fac6cdbe78d3ff16faa6afe50c6f601b8801",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseCompletionProgram",
+      "sha256": "a821addd538d7585b843c8eb5ea398fc406f9309b294b94138a67b6c97da2591",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileRepairProgram",
+      "sha256": "9006d596ba9806c75cb91857a03435c8c6c647f6189582dfd84337e38670e142",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.InverseSmallRepair",
+      "sha256": "ce1177cedd6e7625534dabbc31314dc571c607ceb0c49dd0c32f6689e2aaf640",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileInverseRepairProgram",
+      "sha256": "92362987e17aebae67369d23ea70baeff9cacce4cf2ab602c3a05c295270cb18",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.TreeIndex",
+      "sha256": "cbac34ffb7b7d2da182dae423407df9b0b2fbe7c698c623038e879fedb766269",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallCellIndexProgram",
+      "sha256": "b67875355c866d6945e2d989b4bbb87cb30321f03f58c94dc9eec7d8fdb73e4a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallCellCatalogProgram",
+      "sha256": "9ccdba6f314adfb4f7cb05843548250a7daaa3a11a341222e674d38a3b69e2ee",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallViewLookupProgram",
+      "sha256": "6aeae8a250da0de2c1889045af2479ddf3abd36b881c1b61b9163bd3aeacb278",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallLineSumProgram",
+      "sha256": "35a00909f26314998cedbe8b694d43bd91dd8a01e81c9a9ed3d6023ad0b4ac48",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallPatternArithmetic",
+      "sha256": "8f32f7154b9eefdcdc2c17eb4ec4098e6245892d8aaa06491bfa3acea2bcdd7d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallPatternProgram",
+      "sha256": "24f51e7a7cb409849653243337b045696be981d39e3f3d0b7d1445189431857a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallComplementProgram",
+      "sha256": "64172932fb0cb73494acb7544041dd59877cf4eb4dc1ae04e5f41e9587af394f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallMarginTestProgram",
+      "sha256": "3f51205f324ae14f5c409120887f14b78b317c45f1ce286f0ec6480d1010045b",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ReferenceDrawBounds",
+      "sha256": "acf763f9cc340f721ad35d79b9c8a0dc17124dc3b443d4db80c7606e43f773a7",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseAxisProposal",
+      "sha256": "6afe7240278a2b3c23a34b6cc4dca72e9a05e9eaeb085f8cf977c7b1621ffb61",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseAxisBits",
+      "sha256": "abd0caf04759916d2d90f6057f2f715b95ca27990d9e6fcd601ddbafd7581e88",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.DyadicAcceptance",
+      "sha256": "d2855c7127106bbed830fb227fa79caa6125b7a8d2164f21fe2d4dcf4add55ae",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseExponentBound",
+      "sha256": "5afc4002830a97a78cdd181a198ddee47f6360ba7f4b1c347bcf723def73b1b0",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseRationalTrial",
+      "sha256": "99b132aefec56d2de3df9c9721476ff92ad47889e948b441f10ac36a1dad4a4d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseRationalKernel",
+      "sha256": "ca28d0a3595eef40d60d3ce5543aabb2fa768bd1ecc78527286aa196fae24b7d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteMetropolis",
+      "sha256": "4027398f3093e1d7a4c4860787cef9cd234142536cdebfb77bff251b61a70081",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseFiniteTransition",
+      "sha256": "614828cd9f6a617011d62789bb56521e2ff5f3a8814ec33e68ee49fd6e09e73d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseBooleanStep",
+      "sha256": "5505e0f91b5567c6d76fd9dac71c614d501ba5b356c3e13df35deaebdd77ebc4",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseFiniteWalk",
+      "sha256": "351f19e25c110b11bffccd43af665efa5fcfd644313139c15df61834f1c45cf1",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordWalk",
+      "sha256": "5dea1aad58253bca695e36568b4bc525f95a000328f84dbaa1f2af5cb5a8b753",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseBooleanWalk",
+      "sha256": "1bd5dab872b30c26063c0bf3d4c849e14a1f1b5a21fe6273bdb33d2721b0335e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FairBits",
+      "sha256": "5b3cfdd57933c19767671a424acefa14b9758a2b85334b260bf4e102f819fe40",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.BoundedOffsetLaw",
+      "sha256": "accf9413a3da210381e08791615e950993a7ca057f164127ec99f3332bd1efb8",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseBoundedTrial",
+      "sha256": "c5149480f906f60561ea0f89434af3b9fcf2f802cee1b816e6b8c3f0cd51990d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteScaledDraw",
+      "sha256": "6851bbf01bbb01f3ad3b037fb6a6f8ee840d6355cad0314976b15fe8c08b9c70",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseBooleanOffsets",
+      "sha256": "d69d553bef6086af520f68ceec15a56b16b2833bda01ccdedee609be7773f5ea",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseBooleanTrial",
+      "sha256": "789680af00957e9fbec83756dbce42a8f163e75c6d674b1e29f3fdfa30d34123",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseErrorArithmetic",
+      "sha256": "c9c50928fdf0f89d180f0cac11969112ce0348c9a54f5aa99ede27372e632b78",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseIdealRejection",
+      "sha256": "2eb3ddbcea3fe8765bd3c4b867bb2802992d622eb7aabae160df24d7260a0c0b",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseBoundedRejection",
+      "sha256": "49e11cc3e9b2bf82ae2d1969a33feb06a3f7a791ee5e7a6335b7a19558bca90b",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseBitBudget",
+      "sha256": "8a07cbf423b23993b9d36d782ac08729c0c062cc9de50269891a3138097929e5",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseBooleanDraw",
+      "sha256": "1dca501ec88f5fa141afd6e03ae6e08aee5513a2acb679eff1f7aa886a02e0e0",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseMaximalReindex",
+      "sha256": "2187ca9775975b379484ce590e331a2d8ecd2add74ec9ade768e195b21f5a702",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordPadding",
+      "sha256": "cf1ab2277477e05bc935c61e6fa0b02d1fe111e8f16b3f21248edb0e860f79c3",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ReferenceFiniteDraw",
+      "sha256": "0645a8dae655582a59657d5cbb6fbac7732b6def3f6c7f6047597730814a6f1c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.OriginalBalancedJoint",
+      "sha256": "39e06b97b4c03b5ab05bfa63cf893bbd38aa707ef115a2b444c3bb9982d2587f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperStationaryMass",
+      "sha256": "62584e575aa69e388fcf214a57f197c100d66712c72e06f7ef9fdea7894b96bc",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperSuccessRatio",
+      "sha256": "2adf9c39b888f0b13143d00f360b2680c728ff0a2b6af5e39306398d66c58912",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.SuccessfulJointBijection",
+      "sha256": "3c559577c1754dd5263c3da31bdd61dc38e419fb4f17c51d8cae0d653c04ab8a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperSuccessEvent",
+      "sha256": "314554d97b225de546b0b6aca322a816c54e6b730f82c9fa5271cd037fc11989",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperInitialization",
+      "sha256": "c1e10a70d1296ea429422ff310675ee99b97422268e7e5ec2186e14e8b2529c3",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperFeasibility",
+      "sha256": "61e7799832d259ca8ea13be68028f97a4e2b7651fad7adbac3077c2bf30dc70f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallResidualTotals",
+      "sha256": "9e6f5f4139bb9dd0a806512ebadb75e602638abbc56f795076681dbcc0168544",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallMarginSemantics",
+      "sha256": "31e22fd2a5fc447de8c200f596e854fdebee3c59d50300ecf4da97f2f62fd496",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallBoundsProgram",
+      "sha256": "f03bfc7f13f640b81eea47fcf615de8a78e84d39535799cb50b3d0f509064a2d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallProfileValidator",
+      "sha256": "5cc24bba9eed5e12deacbb9e07017a40c4738c53fcb7c5b2afb8f687013128b7",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallProfileCode",
+      "sha256": "0e3203a84354a024d597c16990f5983ff93e801aae3be03d8e1a8d3189b78563",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallRepairGeometryProgram",
+      "sha256": "f9367d22908d10cc2430945bbaed0a5ac1ab9e3ca327706df848ebc07ce86eed",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallRepairCodeProgram",
+      "sha256": "a84b81fd2b181b4ef7ed2e51a86864e86861227608baac88652c8348a795c4e0",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallDefectCodeTest",
+      "sha256": "968029134da353fae69244f19bf8b9bdb0f2286b1dc41b264f0828dcfe1d54b7",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallRepairListProgram",
+      "sha256": "26c14922bee805208c5b6145e30d7f68c94e01669380cf86e14a9702721c284e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FinitePartialDraw",
+      "sha256": "69bbd7ddb62b89ec7405db8d89498f07b0ef13dc1aceca52f919d27138763b40",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteLawDecidableEq",
+      "sha256": "8fe6b3c62e0316a2d3d2a716f5ee44533395d2053c946ef736ebc912cdccca65",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ListBitProposal",
+      "sha256": "8e1fd27988de6f010a62ee19922407e2269fa4cd28a53dca5b117e7df506c8f5",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.ListWordProgram",
+      "sha256": "3d728bcb21b54905edd7b4c56dd8f18ab01e1b72a0cb307c964c083d107283d6",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileExchangeCandidates",
+      "sha256": "f62e8a82e55f738ba5e9a042c92126cc654661a8367d898e1241b3bf5fa1468b",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallProfileFlatCode",
+      "sha256": "912f8b2f56d245ed7411908df574478a971a62e623535bbea7fc9e559697d565",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileCodeEquality",
+      "sha256": "4231bfddfa2d8043e7a13bbb152467fb28318d77f488cbcd382109daacb7d966",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallInverseRepairList",
+      "sha256": "d002796d2c08cba10fbc659ed0a5bf014863ee90cd01e82049e31869679ace4a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallExchangeListProgram",
+      "sha256": "c646cc3f23743b1dc04eeb27b6b837755c3160ce29c5b9fef8992c33f5bb29c4",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallDefectLabels",
+      "sha256": "4f5bc7137e37804a2f1a4b1c7bc1c36af9f9a9dbeac385743b6525fe4e20ee83",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallRepairCandidates",
+      "sha256": "c57559561109c66a566e0455e118e5ec75f9ef7b90790dd317125e5069ebdc57",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperLocalNeighbors",
+      "sha256": "57faf994344769b927190e9fed68951c5b0c96e4b11ed75321335cbced779095",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperCodeNeighbors",
+      "sha256": "c7778a1274e5a7f82a62caf4521e07e2e82fecb9cf1733ce33b9ccc827353a80",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperProposal",
+      "sha256": "b1c1ceab797a394faa91f4687bc011206ea78d43f81d7c760696aca98cd1e79d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperBooleanProposal",
+      "sha256": "f89ad6b2d54b64f5b79cdc6d679ef3b78ca8efa58b30b5ea824a7bd2a9da6ba4",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperLocalProposal",
+      "sha256": "b0f0a917ba362416d723b1120aa30ea34e923b946eb60fce5e4de5dc4763ad9b",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperCodeProposal",
+      "sha256": "96e0da14f5f4b83697621c6ac8b1d9c8abb8c6672f7f44ac80c2a3797e510089",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.BinaryExchangeProgram",
+      "sha256": "f07686a2d230cfe353d47fbc62514f4a88732e8667d7b8d653654f0e836d0d8e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperComputedCatalog",
+      "sha256": "6299a164c63ad0f79b01d0127a1d69d6fa38fcf9f6a4bd78fe016bce50b36ba8",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperPreparedProposal",
+      "sha256": "ce1ce193f58865c4169222f3d8f2f6211f794353dfe7d0346430cdb0a906184f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseExponentProgram",
+      "sha256": "4b4d4acab82f081938ef35765b8bc90eeacb512e02814744458dd873d33377f5",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseExponentListProgram",
+      "sha256": "6c31cfc17ec00f6f39e9fefd710836d328d48e0c9f6aa2a1ee26e0c9bd266e1c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.MaximalListProgram",
+      "sha256": "0694bcc2a3b2800b9fa226fbb2d3cf44de250875e08732808e3f0694fe7da036",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseExponentListSemantics",
+      "sha256": "0d79134d4560a729243b185903149f71231286c25f9ceec2abb789d85bf8a8fc",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseScaleCellProgram",
+      "sha256": "f9fa7b9a0d13c6c8452b0a4d8f75a52e17e193addbd60ee7572ca9e5381701ae",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseScaleMatrixProgram",
+      "sha256": "fa311b636c7b84e9f54b852694ef1a06fc3a117992cbe97d43d8c5b345e4c553",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseGridExponentProgram",
+      "sha256": "d4895a7da1486fd73743d95bd0299480d58929e8a3e19634231f0e52be079829",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseAxisProgram",
+      "sha256": "b295a0b3cb8325d2dfff392f40d297c4f459183902d48f621305054049169b84",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseAxisSemantics",
+      "sha256": "420599f5251b7e682d1adf458cb0d7dea89f95b451700ce5bcbf28f14020554f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseAxisWordProgram",
+      "sha256": "b4d3a70de1e5c0e015e5de408e5826af1b273f75868ad667603943324e20806c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseMatrixLayoutProgram",
+      "sha256": "0e97e8d9e5742e32b8bcb06e8b59d1d837a46df989b459fb1cd7e8fc7d0daf07",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseFlatExponentProgram",
+      "sha256": "da5915032f8e0ec7fcc7e45b698d224c651dd6afc4d24290d6c625ec71b672d1",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.DyadicWordProgram",
+      "sha256": "133ec573a489738f4dcbe1a04c3c995cea99afad25732dfe2a4596c56aa7e43c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseMetropolisProgram",
+      "sha256": "2fdf536b155e358931ca88c36b7266d15a6f77f024ed83a56d393a034acc94f3",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseWordProgram",
+      "sha256": "f36b8d3c57b9be18f49aab0bc30eb77de4fe3b46cfe2dfa8332cce5a0e7a324c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.BooleanChunkProgram",
+      "sha256": "e66f0994bbdf3f7655f36a97aca3b8b8c9541d35517daf36b8a216bfd813119f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseStepGrowth",
+      "sha256": "aa2ea9a1796f5b131bac227d60b7f90b34aef9f6519e3e4c050a1338c907507b",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseWalkProgram",
+      "sha256": "e099177105b7d733feb9613590ea82a04cf90d83f8da2fa96d4152834bed4c1e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseMetropolisSemantics",
+      "sha256": "fae97b545299785b0b000d2d3f970261c850502829db6aac6d12ba954456e4d9",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseWalkSemantics",
+      "sha256": "6f912f74feaddd60932001755dec873da444bf52f4403045b3e4d73d0adcfa1f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseBooleanWalkProgram",
+      "sha256": "0db18ca8f6fe4242ded818a4a53d3bab47c843761fdf79bfc84885a23306e957",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.ScaledWordProgram",
+      "sha256": "9ea43c3f7253e069aaac4ed01a527f1f4dfbfc85482567d57bb44b88df91b64a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseOffsetProgram",
+      "sha256": "e091861ab01ea213dad8dde86a83fb090a27af7c84b239ef7224eec5c75ae264",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseOffsetSemantics",
+      "sha256": "bd7a70763eb4c91f9a83087482703c87445d970d9eeed55bc097351ee390acc5",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseOffsetTrial",
+      "sha256": "0975c6e5998550a1699ec49f7c846a9329a54d025426625a6a7c9eed0caa6ed3",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.DependentWordProgram",
+      "sha256": "ba1088a9a00002382693a0f97dc43c65b671aa2c168b28ccd4d64cfe38d84b1a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseOffsetWidths",
+      "sha256": "58fe9e7d474501c669f6c14d9a881b2bbdf68d225b3124c71be1e5d330d4e451",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseCompletionTest",
+      "sha256": "699e4e7088747b6e193ceac649d56509e8f38f85e7f4beee3de9d210de972ea3",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseCompletedMatrixProgram",
+      "sha256": "74edaaf9a44bcc427507897addbf7e15bedc3720e170bab7c051b78af324014e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseTrialProgram",
+      "sha256": "7ba3812f8b876ded690fa20e4986ec1630dcfc0a630052899a284bb19f14f46b",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FirstSuccessProgram",
+      "sha256": "8f0420f17fa2993f5cb3a7a8f481735a3e33d14931eb50775560f3ff91d498fa",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseDrawProgram",
+      "sha256": "641f4ede2f86349662406adf3db38a03859b32a802d7f135bdd48970401629ef",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseTrialSemantics",
+      "sha256": "3cecfd026084c81d3ef4de9e887c8de6233910812a327286698cd21ceee4e9cb",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseDrawSemantics",
+      "sha256": "8a9a4bca0abe2967d9c7aeb2270510618fafc5223cf26f9c11e96426813413c6",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseSwapProgram",
+      "sha256": "264b6e8d4a2904de4c9a7dca132c65cc1444dd4e0842de98bdb084d6e009b88a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseNormalizeProgram",
+      "sha256": "54c0d8a1139ef4dfd44571c80f6fd53bbb9e6c24236fc36b4d5d1afe6ad02a3f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseNormalizeSemantics",
+      "sha256": "465f5860a06c996c090e8c1cafdb35ec8329cb13ee19b86795e0174062eb73c1",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseCanonicalProgram",
+      "sha256": "6ca530b30e86d64448af0c90ece350bb2ff0fddfe17d7ddfda31e329d4fa036d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseCanonicalSemantics",
+      "sha256": "77f43d65de3e3b67b2e5401f69608fdd2a43740ba47dcdf071d3daaf96de39c9",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "DrawRuntime.RangeSeed",
+      "sha256": "bba0857fb92869317236083b0d774760be957d05aedb285908ffa49888fce531",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "DrawRuntime.BranchDegree",
+      "sha256": "c0cd785734dac048595e565e3bd005b34d8be4ef6f7672c22ba4c50682ecc302",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordTableLaw",
+      "sha256": "ad6404771858acd44242031c98da7f2fccb7fcbc8052d3a17d518a9a632d123c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.MatrixEncoding",
+      "sha256": "fabdb40a01291a8e2eb135f21438a6bfea39d3e4366ad673765df1a6acc06309",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordOutput",
+      "sha256": "b5a98f28a7a38c6bc687143bb115cf5b34e14b9083a9287b39f69cc694c27357",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordMachine",
+      "sha256": "6f7e9e409dce7855bb7ae4e313e03c731680b0ebfa7b0e2fecb9ea1def01c4d9",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.LiteralProgram",
+      "sha256": "bda48a190745139ea3c3acd57f612b0e8d0afcfaeb1265e611f03c90db030c18",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.PhysicalProgramSeal",
+      "sha256": "d7c8c62e627c4f10f0676328864ed23d1affde82f72814f7f46b20c964d822b7",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.PhysicalProgram",
+      "sha256": "58508b19b9cf2755277bbb1a1048d0b7b4d5f1e16a68a10749c4ae3fe376242a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.Physical",
+      "sha256": "c839a0a8d25b9a7e6b727e3ff51120223f4b13c4c773c383256c6365cb6076db",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.TapeTools",
+      "sha256": "9288c6ddbecaa0912d16d20a4366d02391954a58a735528808cabd70bf0fe5fe",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.PhysicalSequential",
+      "sha256": "d28a9ce1fb8c9580bffd8621b30696479c655411663a37c76cc0c5f70a6547db",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.PhysicalProgramMap",
+      "sha256": "8bfda068ae6cd3c74a16a406073f4370a0d9ab72c77fb8a5eabf593355414237",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.OnlinePhysicalProgram",
+      "sha256": "4976f25a971ac79d3bf97176da742faf56c1169538391f63a9b871132b120ea0",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.TreePostRealization",
+      "sha256": "e39e3e768f7f7792362751cf70cb8523f778b21aa6a48f8f974efe0776f5fb40",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.PackedExecution",
+      "sha256": "f0e364333a222bc5243196dc9eb833bfc4c66638028253729568c2145009d58e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.PackedInverse",
+      "sha256": "98dba7d305d0beae7e3ef39a5f8e51d22c72c62d14646edb68036931125b0cd5",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.Packed",
+      "sha256": "395bc32e83d5d57311edb99c713d4054f6310bc85a4513ca60477f50c86af3b4",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.BlockMap",
+      "sha256": "6dcec3ec43ec3d317d00680854f1b4842817a282be35a1700022e5e04db9253e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Tapes.TreeEncodingInjective",
+      "sha256": "d558717e3220e4e3f85dde940051fc9797c44767c59df4204f11e6a2428a4b6c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.MatchingCount.Machines.TreeProgramUnique",
+      "sha256": "b0a5fe5e8247a6f61182da497879f47f2049e07d3e64f6f94cb78a8e0c20cc10",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordExecution",
+      "sha256": "dae621c17bae555030a9a5dccece49b86b17e616ef73d7d346b84bdc3441593d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileRuntimeBound",
+      "sha256": "6a7a12cdcf4de3ec9f8973e11c6a92c73518a94e3128cc6af1e78892a0c4ee41",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperInputWordBudget",
+      "sha256": "3a6cbccda830bb3e3adeb24e5b38fae73523b0c5bd41abc9b4bed14bef827032",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperBinaryParameters",
+      "sha256": "2eddb4296bf10927e12bf6b5ad7a10c2fb3ef2985396f8aeab9001e882727661",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperOuterBudget",
+      "sha256": "f14ba1c856bf958afb8b8493d66477056546c7a9ad878ea8be9a1c7b54b4a4a5",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperWordBudget",
+      "sha256": "37085293128ec1b3ccce3c79a9968efdca6a4a0839a345ba48a84fd8db1c103d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfilePublicMachine",
+      "sha256": "4abaa0f807e813ffa2a6850993c049cc1b05007316be964a7ea0522546f00267",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.GreedyPublicMachine",
+      "sha256": "2c383e701dfb450aaf1c9ee30efa4666930aee55ead3e20d7b93f2048e20dcbe",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfilePublicSemantics",
+      "sha256": "9c64f46998ced86218b479647289f84999ceab1712030632b15ec4316941dbb3",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileScheduleSemantics",
+      "sha256": "b822929b7304f4d86cc73c922818ee17f28d7a8f3b31c7c270f07cfa9fd75c65",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperFiniteSampler",
+      "sha256": "0bd6b3e7d2cc152b916795118e33113ad49f6ac9f7ff948f7b313cd90e4766f0",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperBoundedLaw",
+      "sha256": "9c7624fa934b2ecae09a0ebd5debb6b3e893ca16a58b988abea1a84e82f3921d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperImplementedLaw",
+      "sha256": "b17fa4566bab0d8b57a1f234efae3443de316364d4bce6a11749225bd694f75a",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperIdealRejection",
+      "sha256": "96f6a30f10690357042fc82a8158fd031a7d8362507f238261e47c95fe2c87f0",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperCompletionLaws",
+      "sha256": "5cfb0a8a354889b8a2cae2987eae7bd48507244a345c237a0ca8bf02ca2d354c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperCompletionComparison",
+      "sha256": "31cb4b04c6764e133fd97860d37a00086612c8c48998dcf54798a5da0f54c2dd",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperIdealKernel",
+      "sha256": "fcc114d8a2583df38ef1f0b08d21603038cb9426364671560781ff8114d2810c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperBooleanDraw",
+      "sha256": "fe7a8ba498904c95d29e7c880fcdd99a8d85508d19130b38e1585044cae682e4",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.FirstPaperBooleanStep",
+      "sha256": "7d8326d773b85795dc7957e7a8fb3ac77b51d6a10d520d5424bbb66550690f34",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordDependent",
+      "sha256": "93ba01a89dfebe90be7e3703fbe99b5951480a97ba18d077bc44e2d3c231f960",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileRetrySemantics",
+      "sha256": "db46faa79c8591a38fde63edb39e1bc77311916400e14fb8230196651591e9f9",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileTrialSemantics",
+      "sha256": "74e626b7e5c0434ba9d14a4508a908c636284c7660820fef545ebb95d0736b66",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ListedBooleanDraw",
+      "sha256": "6e724fc6fe23655ca29888e5be0fe2ce8447e4a6fbfcdbdda2f08967fc923a30",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ListedBooleanStep",
+      "sha256": "90f16188798ab29b4ae718e66bec0a77a2e34f7cc7cf6a601b01cde5bd21a976",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileTransitionSemantics",
+      "sha256": "3c2b56221c1dd22e051524dda47a4049209bb256dff20cf6fae800a7ff572b17",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ListedReferenceDecision",
+      "sha256": "99a57c0b07cdb420b03cad6d540d825a3b87fd56382a0b8adc10fc0e95e516dc",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.CompletionDecisionReindex",
+      "sha256": "7b8136b38dd43997acfca67f73f3b46db72ec3944b4eb0c357c7ef3aa892c733",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.StarReindex",
+      "sha256": "09b49a8006437b9a4e612fd86555e2f303118b82e709824a81f377cd9a21a0a4",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ListedDenseDraw",
+      "sha256": "ccd04f0f1436be9fbe8c886c566134441c63b4d375fc8e12345b4d3ee9c471c0",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.ResidualDenseProgram",
+      "sha256": "4015911086ade960a6f820fa3aaff797dce7ce241653a9dd10d47d3e8b24b7ac",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Rooted.LargeMarginProgram",
+      "sha256": "420b036e4c384e5aee711bfb33a828301f35dfbc7133f8c276def33c00d0c283",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PaddedResidualProgram",
+      "sha256": "0551cbed29ee59773f341d5e571805d39789ed000211c7544771676cea8e7315",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ListedCompletion",
+      "sha256": "00d8002dfa69127dfa4462597bca15c6723b6d4f5b049a4f7e6623bd0c2b2514",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Rooted.LargeMarginReference",
+      "sha256": "75136742fbd50051a06ee0eca761a5e7612b6802f0585ed4e7d5e34e4ab9aacd",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Rooted.LargeMarginSemantics",
+      "sha256": "1ea789b3c50ac0e207d41ac029b322f4c72b3a12b4d144b647962c809c76d341",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.PaddedResidualSemantics",
+      "sha256": "ae326fcb3e3e5f3b20a9bf2024e2d008b76d5944bd5b87b15eebb09ead979b0d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileTransitionProgram",
+      "sha256": "81822d1ffb813cbed374614408e7797ff18ea364c01a5673474325b6dcca16c9",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.TranslationDecisionSemantics",
+      "sha256": "09884b9efff68c02e94a0a9be3cc24c27e4741e99683521071edcd6bb6ba0cde",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.TranslationDecisionProgram",
+      "sha256": "8d8d40341bb7c4efd451ef2086db078a0dc1dd07949c38c5c07f43cf24dfcc0b",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ListedReservedDraw",
+      "sha256": "3304113bf1b3d5d5bb08d58364dc23906412f783658c7133fd5bb2d3f1298016",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.DenseReservedWord",
+      "sha256": "007fafc3fd50f6fbb0e48b16fc209282231971966a98b98dcca0a5f8c09c45d6",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ListedDenseProgramSemantics",
+      "sha256": "58ae488165ebe79a21c50ef5873581eda743085c2e19b7a9d79d7c2dad447b97",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ListedKernelAccuracy",
+      "sha256": "d445d3307291cac9c2072fa5df0c15c4387911379e673146c5c1512260d365f7",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.WordCompletionStep",
+      "sha256": "17ff10f413222fcbb50d697bf0d711fef47c7d0a7cb8cc14596057bd7363cd11",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.BoundedProfileSemantics",
+      "sha256": "8cfe4943cf8ef1fe3826ceca6b6ed7751634e7d311a10a2b04f3a19ac0192211",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.BoundedProfileWalk",
+      "sha256": "73930ddd89210b6f80a056d210cefdae05c29e46d3e17ebbbaf6a118f968878f",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ListedOutputSemantics",
+      "sha256": "f899344654b2215b68f6920e0707ee7032f3b1f5d83ae5031344bda7768b9081",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.StateSuccessEntries",
+      "sha256": "163d055b3204f378610b09a83c9f9f09b7e15961b766844378bca9fa9d6bc723",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.ReferenceCompletionEntries",
+      "sha256": "f45e9ef896e138ed679bf9b696c0e5ddf24ff1fee580ed517ee7d727948abd86",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.OuterMatrixSemantics",
+      "sha256": "6ada4e29abac9ed11bd3d52d831c3ce2dc5dd86d588f9790808973d3c041aca0",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.OuterTrialProgram",
+      "sha256": "b73bf746722d12af007d7ab6c516469fb8b02ded7b621db2c3953f98743826f1",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.OuterTableProgram",
+      "sha256": "e27124d64b7af6c6620d473eeb56f4b3078319f33d2c78469d830ee250fa15d7",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileWordProgram",
+      "sha256": "a4c909533780990ae2e5f88de2cc172c02b0d43bed1b2abfcb200eced9104aeb",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileTrialProgram",
+      "sha256": "338d48d0127334e9d5e385cdb36da036fdb7e73cdee9f793c43a13017be50808",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileRetryProgram",
+      "sha256": "acbc59f8456a155be158b295619b8a5eff632a95122eca810d906fcbf88142bc",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileSamplingProgram",
+      "sha256": "300177ff5c119093a3f0652d71d22ddf5ebe03d036cc8af8ff519819faa0e102",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfileScheduleProgram",
+      "sha256": "0b0100c8c1e8683bfd1fe90b956a97bca80c07ba1009df960578c9e8ad8cbe91",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.OriginalProfileProgram",
+      "sha256": "056c23c4e48c4776f4eb2e09c0fc7551b4bcb496cbffdcfdef8c1b99b01f524d",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.OriginalProfileEntries",
+      "sha256": "dee463b283aea5f19a0240f5de90b78f62d2284734eaef5b1cabc3b0b8bc2620",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ProfilePublicProgram",
+      "sha256": "29e4b82888b95126ea625d6ce427d629773a33e6787c92255b965a227ac509bc",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.FiniteCheegerProof",
+      "sha256": "11cd97675237333230ef6166a56d56ca95f975307129dc627aa2cee1f8f67e8c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.CheegerMedian",
+      "sha256": "87bc0a677a5b08328934fb7ed72d02ec65043ad0f11671040f3c3a53f065701e",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.CheegerCoarea",
+      "sha256": "c0612dffa4568cc0d338b275e7fd3685e8e6c47e615069ee8bc8c77cb4ac6114",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.CheegerPositive",
+      "sha256": "5e80ee11f4fc665ebc29843b013f7333f9870a15746d47c86c745bab5e6271ad",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Dense.FiniteBoxPrekopa",
+      "sha256": "376c556ecdcae0a74e467d0dedcb81ef3fbaed6406d810c8fb0ae64065858471",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Analysis.KLS.Convexity.PrekopaLeindler",
+      "sha256": "0bff480f5cedc947207b3f1f5a66f0899f93fb15ee6d18bccf8323f83e7eab0c",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteProposalStay",
+      "sha256": "5b95e67e49738b2bace40765cb54ac454f1fec76dd8836af845a028165dd6214",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteDeterministicJoint",
+      "sha256": "8ee5fadec9b97dfeec4c17cd60bcaacd5beea0d3cdb231e4a3037eec5b212849",
+      "reuse_class": "authenticated prior native import object; readback hash matched"
+    }
+  ],
+  "scope": "Data-only reuse into a new local prefix; none of these dependencies was rebuilt for this packet."
+}

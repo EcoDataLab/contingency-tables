@@ -61,8 +61,17 @@ is `S^1288` versus `S^170` for complete reserved-bit upper allowances, with
 stated constants. The [actual branch-selection program](../research/runtime-degree/checkpoints/actual-branch-degree-v1/)
 has a compiled degree-1008 cost certificate. The [actual matrix printer](../research/runtime-degree/checkpoints/actual-printer-degree-v1/)
 now has a compiled degree-4 bound, including encoded output on arbitrary
-ragged or empty matrices, with 25 named axiom/type checks. Five numerical draw
-certificates and a complete numerical machine-time exponent remain open. The [arbitrary-margin completion backend](legacy-completion-backend.md)
+ragged or empty matrices, with 25 named axiom/type checks. The new
+[initialization and fallback packet](../research/runtime-degree/checkpoints/actual-initial-degree-v1/)
+supplies degrees 4032 and 18, with five complete headline dependency closures.
+The [exact retry-word parser](../research/runtime-degree/checkpoints/actual-retry-degree-v1/)
+supplies degree 42914304, with 25 focused transitive axiom/type checks. All
+three cover charged work plus encoded output on arbitrary typed inputs;
+ordinary compilation and separate AI source reviews passed. The
+[current field table](composed-complexity.md#exact-draw-cost-certificates)
+leaves the reference-completion and unit packed trials open, followed by
+complete draw composition. A numerical machine-time exponent remains unknown.
+The [arbitrary-margin completion backend](legacy-completion-backend.md)
 supplies an accurate law at outer `L=7`; its physical adapter, adaptive word
 allocation and revised outer encoded sampler still need assembly.
 

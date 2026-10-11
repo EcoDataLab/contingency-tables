@@ -1,0 +1,377 @@
+{
+  "policy": "Proof source and audit-driver bytes are unchanged. Captured diagnostics substitute declared repository/candidate paths. Receipt projections omit private object provenance paths and replace search-root paths with roles. Exact hashes/times/exits/degrees/axioms remain. Original private receipt/map hashes bind projected metadata; no host/account identifiers or binary objects included.",
+  "file_projections": [
+    {
+      "path": "source/RetryRuntime/ActualRetryWordsDegree.lean",
+      "original_sha256": "f99a096ec1364fb8cdef055c6b7209e9464321febe4baa44a4d27822e23a97df",
+      "public_sha256": "f99a096ec1364fb8cdef055c6b7209e9464321febe4baa44a4d27822e23a97df",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/RetryRuntime/ListRepeatDegree.lean",
+      "original_sha256": "ad34899b9537dfb2ddb3f5c1ac3d8cb56b8c675fce0e0e8b2aa006dfdc505d66",
+      "public_sha256": "ad34899b9537dfb2ddb3f5c1ac3d8cb56b8c675fce0e0e8b2aa006dfdc505d66",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/RetryRuntime/ListSeed.lean",
+      "original_sha256": "5710dbdcd7f069eabb17cefc219664e5c1a707572af1a37d45c026029bb9a63d",
+      "public_sha256": "5710dbdcd7f069eabb17cefc219664e5c1a707572af1a37d45c026029bb9a63d",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/RetryRuntime/MapWithDegree.lean",
+      "original_sha256": "e60425408f0bb385d03392a661cfa57efbb75f6d50562b3fab8749deca8e5f07",
+      "public_sha256": "e60425408f0bb385d03392a661cfa57efbb75f6d50562b3fab8749deca8e5f07",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/RetryRuntime/RangeDegree.lean",
+      "original_sha256": "d85dc83fa2780ee03659544caa02b4cee6e3ab37052e8308860140e2627553e0",
+      "public_sha256": "d85dc83fa2780ee03659544caa02b4cee6e3ab37052e8308860140e2627553e0",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/RetryRuntime/WordChunkDegree.lean",
+      "original_sha256": "b65d6dcff508a4a7e4976c5d727ee8731dadf014599c6f8972e2bd0db2cafaba",
+      "public_sha256": "b65d6dcff508a4a7e4976c5d727ee8731dadf014599c6f8972e2bd0db2cafaba",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/RetryRuntime/WordChunksDegree.lean",
+      "original_sha256": "599011a40e0da48a243d85551c5397ce8430195a2084c48b072b1eff4c0c2157",
+      "public_sha256": "599011a40e0da48a243d85551c5397ce8430195a2084c48b072b1eff4c0c2157",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/DivisionRuntime/Degree.lean",
+      "original_sha256": "5e03bc8b825b6d0cbfecf77b6454db781ec2fe40c7ca55d644b94e3d9b4dff3c",
+      "public_sha256": "5e03bc8b825b6d0cbfecf77b6454db781ec2fe40c7ca55d644b94e3d9b4dff3c",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/InitialRuntime/GreedyDegree.lean",
+      "original_sha256": "cc32b1173db329ce4f94a4e0cd6a0c07b0833df96a57d4d3ca16b4e64079fe8f",
+      "public_sha256": "cc32b1173db329ce4f94a4e0cd6a0c07b0833df96a57d4d3ca16b4e64079fe8f",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/PrinterRuntime/LinearCollections.lean",
+      "original_sha256": "7839ffe7bb9c651e1497ff09f244b19455bc5c2cc1c095264e60c1a34c695eb0",
+      "public_sha256": "7839ffe7bb9c651e1497ff09f244b19455bc5c2cc1c095264e60c1a34c695eb0",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/ResearchBounds/TreeDegreeBounds.lean",
+      "original_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf",
+      "public_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/ResearchBounds/TreeArithmeticDegree.lean",
+      "original_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76",
+      "public_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "RetryAudit.lean",
+      "original_sha256": "1e7c4f79c637a8a477f9d018e7473ab2573cff58a714744eab1bef49b2832cb6",
+      "public_sha256": "1e7c4f79c637a8a477f9d018e7473ab2573cff58a714744eab1bef49b2832cb6",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "source/DivisionRuntime/Audit.lean",
+      "original_sha256": "0957f39677fe7e46f0825ddf05975e88771b8bd4909252abe15af82e8b1ec882",
+      "public_sha256": "0957f39677fe7e46f0825ddf05975e88771b8bd4909252abe15af82e8b1ec882",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "LICENSE",
+      "original_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "public_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "NOTICE",
+      "original_sha256": "af1b2e7d027a88acd8154c352ebe1b2fe149052dc598d48be774aec0f0489380",
+      "public_sha256": "af1b2e7d027a88acd8154c352ebe1b2fe149052dc598d48be774aec0f0489380",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "evidence/retry-audit/verification.json",
+      "original_sha256": "69046ec8c575b8e3de473dbad60565c777299d4df4258cf86bec3d9f0a02cd9a",
+      "public_sha256": "69046ec8c575b8e3de473dbad60565c777299d4df4258cf86bec3d9f0a02cd9a",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "evidence/retry-audit/receipt.json",
+      "original_sha256": "51540949f973aa02a601576aacfd47ea1ce58b10ab2b93265461e3fbefd2883c",
+      "public_sha256": "51540949f973aa02a601576aacfd47ea1ce58b10ab2b93265461e3fbefd2883c",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "evidence/retry-audit/stdout.txt",
+      "original_sha256": "f30212a9943d1236aaf1675d7b754333c16a9e523e720bb2553c431aaca51fe0",
+      "public_sha256": "f30212a9943d1236aaf1675d7b754333c16a9e523e720bb2553c431aaca51fe0",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "evidence/retry-audit/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.ListSeed.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.ListSeed.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.ListRepeatDegree.stdout.txt",
+      "original_sha256": "d0664f5884e2b2e5350890d24afe84496065bf41974fb63a9653d492241bf421",
+      "public_sha256": "fdcdd8704fd191c1c863a770b442225db559bc9680985901b9fa0f1cbfd7278c",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.ListRepeatDegree.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.WordChunkDegree.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.WordChunkDegree.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.RangeDegree.stdout.txt",
+      "original_sha256": "896042896bf7d30ee9440cffde355c681daefe45fcdf6ee386deb466370dfa91",
+      "public_sha256": "43973d0fbab1abf76d2092ab5d9167fa3efd49abf059d24a9546b99ca046deec",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.RangeDegree.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.MapWithDegree.stdout.txt",
+      "original_sha256": "a1c4e858e10364553d1c36547fc97f1f04cf47a8f7e3e8a0a3878c9dbfddd1ea",
+      "public_sha256": "9d81db4facc6d1d0fc0b7c29e3a791b1f6133ae31975e57c6a118f9922fd78ca",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.MapWithDegree.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.WordChunksDegree.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.WordChunksDegree.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.ActualRetryWordsDegree.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/compilation/RetryRuntime.ActualRetryWordsDegree.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/division/DivisionRuntime_Degree.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/division/DivisionRuntime_Degree.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/division/DivisionRuntime_Audit.stdout.txt",
+      "original_sha256": "3dd922c1b16a538f2cc5334fdc2f361cae83ebf147e8d10ce2fca57f172f3530",
+      "public_sha256": "3dd922c1b16a538f2cc5334fdc2f361cae83ebf147e8d10ce2fca57f172f3530",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/division/DivisionRuntime_Audit.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-1/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-1/stderr.txt",
+      "original_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "public_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-4/stdout.txt",
+      "original_sha256": "4333b3c304133b3a0204b99fffb670bbcb0b74a9b73deb541a9ab875cc3e2fb2",
+      "public_sha256": "47dd5a4aa04d9a357fb26f1a38d022b1457a058b91fae7234409b712e9f4c1cd",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-4/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-6/stdout.txt",
+      "original_sha256": "d6272214b4155ac760e658b87fd2a06c47051b97cd811d8e18c06475b58d0e33",
+      "public_sha256": "1d6e15cfa7f9b778919af5ef7d70059770f103a677eb0f54522e6bb5ff22183c",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-6/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-9/stdout.txt",
+      "original_sha256": "7ef6078228aeafa60df03f4250a80ee5e24091757c1502b574654b2254b0c6b1",
+      "public_sha256": "460a390eafc4969fb051f09b591f55d23fac39c04ec0bd0cd548fbbc21ab924c",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-9/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-10/stdout.txt",
+      "original_sha256": "6d3da72661a155c1a15b41e2df258ffebf81ff0bc62571f29271133a1d64719e",
+      "public_sha256": "dcae3e3146e1889913ccb9c7833728f16e194fb1df0fd343ddec3dae1b2a9843",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-10/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-11/stdout.txt",
+      "original_sha256": "b8a94c0b64b873747564fdf91a1b06809571f3fddd6f55dcba3eaa9cf6eafd01",
+      "public_sha256": "a215ce7a16e3e8936f2cee7c216a0f81b8c56aa6b716dc6cd08ae26b1b3d76f2",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/retry-11/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/division-import-greedy-4g/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/division-import-greedy-4g/stderr.txt",
+      "original_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "public_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/division-minimal-imports-4g/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/division-minimal-imports-4g/stderr.txt",
+      "original_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "public_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/division-minimal-imports-8g-elaboration/stdout.txt",
+      "original_sha256": "7ebaf97aba2669f45031b1dff5234cad04d859c5633c272491f0d4074b2857dc",
+      "public_sha256": "b9d57f82b8cb8efcd2824c2ce5ff0bba5caf5f1774d83034a73e180c44598798",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "history/division-minimal-imports-8g-elaboration/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "literal-dag-binding.json",
+      "original_sha256": "3d04fbaf364d02b3171e583f3947227a2e97d9a29f8d12dba98596c149878719",
+      "public_sha256": "3d04fbaf364d02b3171e583f3947227a2e97d9a29f8d12dba98596c149878719",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "evidence/import-probe/receipt.json",
+      "original_sha256": "4b762df98a07aa80384bd42c43ad97f8a88412d9d7caa905d0b221f8a83a6c4e",
+      "public_sha256": "4b762df98a07aa80384bd42c43ad97f8a88412d9d7caa905d0b221f8a83a6c4e",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "evidence/import-probe/stdout.txt",
+      "original_sha256": "3accfe906fa224a5823167ddc9d587f41403e6caebca7754f87fa14b09079e75",
+      "public_sha256": "3accfe906fa224a5823167ddc9d587f41403e6caebca7754f87fa14b09079e75",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "evidence/import-probe/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projection": "declared repository/candidate path-role substitution"
+    },
+    {
+      "path": "reviews/retry-source-review.md",
+      "original_sha256": "032d38d1e0db85aef9db7bef9d1b33133ac1a777828ec7768ba979e734782789",
+      "public_sha256": "032d38d1e0db85aef9db7bef9d1b33133ac1a777828ec7768ba979e734782789",
+      "projection": "unchanged bytes"
+    },
+    {
+      "path": "reviews/division-source-review.md",
+      "original_sha256": "98c68d97d818f9aabe9234deebbc3d1935c369f3f2306471826dd20e8ccf62a2",
+      "public_sha256": "98c68d97d818f9aabe9234deebbc3d1935c369f3f2306471826dd20e8ccf62a2",
+      "projection": "unchanged bytes"
+    }
+  ]
+}

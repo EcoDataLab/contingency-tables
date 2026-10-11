@@ -28,9 +28,16 @@ output on every pair of natural margin lists. Its two source modules and fresh
 compiler/cache inputs. The [actual matrix-printer checkpoint](../research/runtime-degree/checkpoints/actual-printer-degree-v1/)
 separately proves degree 4 for charged work plus encoded output on every
 `List (List Nat)`, with both new modules compiled and 25 named axiom/type
-checks passed. These close two of the seven former draw obligations; five
-and the numerical complete sampler degree remain open. Both packets are
-outside the default Linux and strict Comparator scopes.
+checks passed. The [initialization/fallback packet](../research/runtime-degree/checkpoints/actual-initial-degree-v1/)
+adds degrees 4032 and 18, with a compiled-environment audit covering five
+complete headline closures. The [retry-word packet](../research/runtime-degree/checkpoints/actual-retry-degree-v1/)
+adds the exact parser degree 42914304 and 25 focused transitive axiom/type
+checks. Those new sources compiled locally with authenticated reused imports;
+separate AI source/evidence reviews passed. The two packed-trial certificates
+and full draw composition remain open, so the complete numerical sampler
+degree is still unknown. The [current field table](composed-complexity.md#exact-draw-cost-certificates)
+gives the exact endpoint scope. These additive packets are outside the
+historical default Linux and strict Comparator scopes.
 
 The sharper [aggregate incidence](aggregate-incidence.md) and
 [zero-range subclass](zero-range-subclass.md) are reviewed mathematical

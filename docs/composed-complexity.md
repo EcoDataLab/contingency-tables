@@ -33,18 +33,15 @@ These are bounds for the same kernel and improve the bounded-aspect exponent
 from 7 to 6.5. Both retain exponent 8 for thin shapes. They do not update
 either complete bit-bank row above.
 
-Five actual draw certificates remain open. The [actual branch-selection
-certificate](../research/runtime-degree/checkpoints/actual-branch-degree-v1/)
-now bounds its exact program's charged cost plus Boolean output weight by a
-polynomial of degree at most 1008, for every pair of natural margin lists.
-The [actual matrix printer](../research/runtime-degree/checkpoints/actual-printer-degree-v1/)
-has degree at most 4 for every natural-number matrix list, including encoded
-output. The checked complete count certificate is `e=1008`; the conditional local
-runtime degree is `340·max(1008,t)` until the
-complete draw certificate `t` is supplied. Even a common certificate `k=1008`
-for every remaining field would give an enormous degree through the current
-coarse composition helpers; it would first establish a numerical bound,
-not practical speed or superiority to the unknown upstream degree.
+Two actual draw certificates remain open: the reference-completion and unit
+packed trials. Initialization, fallback construction and retry-word parsing
+now join branch selection and printing with exact compiled cost certificates;
+the [current field table](#exact-draw-cost-certificates) links each proof and
+its evidence. The checked complete count certificate is `e=1008`; the
+conditional local runtime degree remains `340·max(1008,t)` until a complete
+draw certificate `t` is supplied. These large degree allowances come from
+conservative composition helpers. They do not establish optimal exponents,
+practical speed or superiority to the unknown upstream degree.
 
 ## Compiled baseline and evidence
 
@@ -110,7 +107,37 @@ The improvement separates computation cost from output size. The fresh Boolean w
 
 The two affine source modules passed ordinary native compilation, and their ordered six-name and four-name axiom checks passed. Independent AI saved-artifact review passed. This helper evidence is separate from the expanded default Linux receipt and strict Comparator acceptance; the earlier packets and failed attempts remain unchanged.
 
-The [historical seven-field handoff](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/README.md#remaining-numerical-draw-certificates) identifies the exact realizers and their required costs. The later [branch-selection certificate](../research/runtime-degree/checkpoints/actual-branch-degree-v1/) closes its `branch` field with degree 1008 and a fresh 20-name native audit. The [actual printer certificate](../research/runtime-degree/checkpoints/actual-printer-degree-v1/) closes `printer` with degree 4 and 25 named axiom/type checks. Five remain: initial configuration, greedy fallback, reference packed trial, unit packed trial and retryWords. The count certificate covers computing the reserved-bit number and encoding it in binary for every literal input. It does not bound generating the full numeric bank by degree 1008. These packets have separate evidence and reproduction instructions outside the unchanged default Linux receipt.
+## Exact draw-cost certificates
+
+The [historical seven-field handoff](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/README.md#remaining-numerical-draw-certificates)
+names the unchanged realizers required by `ActualDrawSeams`. Current results
+bound charged work **plus encoded output** on every input in each realizer's
+typed codec domain. They do not assume feasibility, successful acceptance or
+the desired runtime bound.
+
+| Field | Certified degree at most | Exact program and evidence |
+| --- | ---: | --- |
+| `branch` | 1008 | [Branch selection](../research/runtime-degree/checkpoints/actual-branch-degree-v1/); arbitrary natural margin lists; 20-name audit |
+| `printer` | 4 | [Matrix printer](../research/runtime-degree/checkpoints/actual-printer-degree-v1/); arbitrary ragged or empty natural matrix lists; 25-name audit |
+| `initial` | 4032 | [Initial configuration](../research/runtime-degree/checkpoints/actual-initial-degree-v1/); arbitrary natural margin lists and precision |
+| `fallback` | 18 | [Named initial fallback](../research/runtime-degree/checkpoints/actual-initial-degree-v1/); the exact original greedy table program |
+| `retryWords` | 42914304 | [Retry-word parser](../research/runtime-degree/checkpoints/actual-retry-degree-v1/); all `RetryData`, including zero widths and short/surplus words; 25-name audit |
+| `referenceTrial` | **Open** | Exact `LatticeOuterProgram.packedTrialRealizer`, including the complete dense completion backend |
+| `unitTrial` | **Open** | Exact `LatticeUnitOuter.packedTrialRealizer`, including profile steps and output reconstruction |
+
+The initialization packet's compiled-environment audit checks five complete
+headline closures; the retry packet has focused transitive type/axiom checks
+and also supplies exact division/quotient degree 4. Separate AI source reviews
+passed. The newly owned sources compiled locally with pinned Lean 4.34.1 and
+authenticated reused imports. These packets do not expand the historical
+default-target Linux or strict Comparator receipts. Prepared public
+reproduction commands are distinguished from executions actually recorded.
+
+The complete count certificate covers computing the reserved-bit number and
+encoding it in binary for every literal input. It does not bound generating
+the full numeric bank by degree 1008. Even after the two remaining field
+certificates are obtained, the exact complete draw must be assembled and
+its degree inserted into the public-machine theorem.
 
 ## A common public size measure
 

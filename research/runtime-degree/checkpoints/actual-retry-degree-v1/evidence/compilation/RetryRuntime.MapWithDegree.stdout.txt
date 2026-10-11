@@ -1,0 +1,3 @@
+<repo>/<retry-source>/RetryRuntime/MapWithDegree.lean:36:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
