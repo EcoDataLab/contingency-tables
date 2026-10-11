@@ -1,0 +1,20 @@
+{
+  "checked": {
+    "exact_tested_scripts": 3,
+    "manifest_members": 37,
+    "raw_archive_members": 25,
+    "raw_to_public_evidence_pairs": 24,
+    "stage_streams": 20
+  },
+  "code_or_fixture_changes": false,
+  "privacy": "bounded literal redaction and sensitive-form scans; no material leaks found, not an exhaustive privacy claim",
+  "private_review_receipt_sha256": "a1031ed8ec7ab48c6fb8041e0f936b3c645b1587b46207e5b6229bada936db12",
+  "public_copy_changes": [
+    "README clarifies 24 evidence renderings plus exact adapter and AI review scope",
+    "map and manifest publication status metadata updated",
+    "this review summary added"
+  ],
+  "reviewed_private_draft_manifest_sha256": "0b6697c7ed1a8337b856204fe9205329d06d3f9ce55a090bdd7d1dae2ba34c8a",
+  "scope": "tiny True-only fixture; neither original challenge nor research sampler verified",
+  "status": "AI source and artifact consistency review passed"
+}

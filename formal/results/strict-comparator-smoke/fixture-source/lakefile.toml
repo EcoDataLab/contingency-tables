@@ -1,0 +1,8 @@
+name = "comparatorSmoke"
+version = "0.1.0"
+[[lean_lib]]
+name = "SmokeChallenge"
+[[lean_lib]]
+name = "SmokeBase"
+[[lean_lib]]
+name = "SmokeSolution"

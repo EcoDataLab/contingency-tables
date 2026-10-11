@@ -1,0 +1,17 @@
+{
+  "status": "root full audit intake and actual evidence checks passed",
+  "at_utc": "2026-10-11T00:29:17.898287+00:00",
+  "download_manifest_sha256": "63122fa5fdb11e345e57a221b49487ed8319c02885094f868aeb1cf741225358",
+  "checked_files": 18,
+  "intake_sha256": "9c230d55f9a2c26902a983aeba7853b613e06edef1aa417d71af3b6710b0d01f",
+  "report_sha256": "59cbaf0020e8e251b78d495cc5fcc6e3aaf35bda7a7f2989be37291814386403",
+  "receipt_sha256": "11e6c5ebcd1eeb60ffafcb75c739bcba7aa0e7630dd370ee63654f136ac15c54",
+  "counts": {
+    "declarations": 25448,
+    "theorems": 18054,
+    "headlines": 22,
+    "imported_modules": 11951
+  },
+  "driver_line_endings": "Actual CRLF source is decoded-byte identical to independently regenerated LF driver; actual raw bytes preserved",
+  "boundary": "Ordinary compilation/environment inspection with trusted compiler/cache inputs; no strict sampler replay, fresh overlay Linux reproduction or numerical runtime degree"
+}

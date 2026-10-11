@@ -1,0 +1,9 @@
+{
+  "exporter": "<CHECKOUT>/.tools/verification-bin/lean4export",
+  "lake": "<CHECKOUT>/.tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake",
+  "roots": [
+    "SmokeChallenge",
+    "SmokeSolution"
+  ],
+  "strict_adapter": "<CHECKOUT>/.tools/verification-bin/landrun"
+}

@@ -1,0 +1,71 @@
+formal\Math115\LatticeOuterSemantics.lean:33:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+formal\Math115\LatticeOuterSemantics.lean:82:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  profileWalkWords (((?m.87, ?m.88), ?m.89), List.ofFn ?bits)
+in the target expression
+  LatticeOuterProgram.profileTrial
+      (((LatticeProfileWalk.encodedConfiguration r c hStep x x,
+            profileWalkWords
+              (((T, Nat.clog 2 (32 * dimensionAllowance ^ 2)),
+                  PhysicalLatticeCompletion.reservedCompletionBits r hStep),
+                List.ofFn bits)),
+          hTerminal),
+        LatticeOuterProgram.terminalWord
+          (((LatticeProfileWalk.encodedConfiguration r c hStep x x, (T, Nat.clog 2 (32 * dimensionAllowance ^ 2)),
+                PhysicalLatticeCompletion.reservedCompletionBits r hStep),
+              hTerminal, PhysicalLatticeCompletion.reservedCompletionBits r hTerminal),
+            List.ofFn bits)) =
+    Option.map (fun X => matrixCode ↑X)
+      (PhysicalStationaryLaw.stateTrial r c IdealOracleScales.cutoff IdealOracleScales.padding
+        (PhysicalReferenceBoolean.jointDraw r c hr hc x T hStep hTerminal bits))
+
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+hr : 0 < (largeIndices (IdealOracleScales.cutoff, List.ofFn r)).length
+hc : 0 < (largeIndices (IdealOracleScales.cutoff, List.ofFn c)).length
+htotal : ∑ i, r i = ∑ j, c j
+x : States r c IdealOracleScales.cutoff IdealOracleScales.padding
+T hStep hTerminal : ℕ
+bits : Fin (PhysicalReferenceBoolean.attemptBits r T hStep hTerminal) → Bool
+hf : 0 < PhysicalLatticeCompletion.reservedCompletionBits r hStep
+⊢ LatticeOuterProgram.profileTrial
+      (((LatticeProfileWalk.encodedConfiguration r c hStep x x,
+            profileWalkWords
+              (((T, Nat.clog 2 (32 * dimensionAllowance ^ 2)),
+                  PhysicalLatticeCompletion.reservedCompletionBits r hStep),
+                List.ofFn bits)),
+          hTerminal),
+        LatticeOuterProgram.terminalWord
+          (((LatticeProfileWalk.encodedConfiguration r c hStep x x, (T, Nat.clog 2 (32 * dimensionAllowance ^ 2)),
+                PhysicalLatticeCompletion.reservedCompletionBits r hStep),
+              hTerminal, PhysicalLatticeCompletion.reservedCompletionBits r hTerminal),
+            List.ofFn bits)) =
+    Option.map (fun X => matrixCode ↑X)
+      (PhysicalStationaryLaw.stateTrial r c IdealOracleScales.cutoff IdealOracleScales.padding
+        (PhysicalReferenceBoolean.jointDraw r c hr hc x T hStep hTerminal bits))
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    X
+  has type
+    Table r c
+  but is expected to have type
+    { X // HasMargins X r c }
+  in the application
+    ↑X
+formal\Math115\LatticeOuterSemantics.lean:95:4: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+formal\Math115\LatticeOuterSemantics.lean:85:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+formal\Math115\LatticeOuterSemantics.lean:110:8: error: (kernel) unknown constant 'Math115.LatticeOuterSemantics.retry_code'

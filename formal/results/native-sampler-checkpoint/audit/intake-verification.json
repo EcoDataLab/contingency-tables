@@ -1,0 +1,91 @@
+{
+  "audit_snapshot_canonical_sha256": "db8e132d05fd4e6b529f837b45757ad496176f7b6fb22f4f8bc28d43f778be38",
+  "boundary": "Module-only mode never establishes complete-chain, aggregate, runtime-degree or Comparator claims. No named request is generated from a guessed private identifier.",
+  "config_sha256": "9d764170ffa7fb46b594cc5c3ba2427de2fb6382ae09feced77ca0bad2a7e605",
+  "counts": {
+    "declarations": 25448,
+    "headlines": 22,
+    "imported_modules": 11951,
+    "theorems": 18054
+  },
+  "environment_report_sha256": "59cbaf0020e8e251b78d495cc5fcc6e3aaf35bda7a7f2989be37291814386403",
+  "imported_object_closure_canonical_sha256": "0e77e4b1aa14cc1ca1472d7665038afc9df363349d31d0673033abbb345c2ddb",
+  "imported_object_closure_sha256": "34ee7f3a4544f5d9b013bff364894159fa172f046564f3af17cb19cece99cfc9",
+  "mode": "full",
+  "names_and_counts_authority": "actual compiled environment only",
+  "normal_plan_canonical_sha256": "e26b50b59066d3278998186b73ffc058496fc96d41ef12ab2eb96d12139e2d4e",
+  "program_identity_inclusions": [
+    {
+      "actual_closure_sha256": "7756487167a51888b8405a0f7c1f44d8ac1f1dea44d2aecaabe845f5e8cf1728",
+      "closure_size": 47593,
+      "headline": "Math115.LatticeBoundedSampling.boundedSampling",
+      "required_reachable_names": [
+        "Math115.LatticeSampler.draw",
+        "Math115.LatticeSampler.drawRealizer",
+        "Math115.LatticeSampler.polynomial_draw",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.PublicLatticeSampler.wordCount",
+        "Math115.PublicLatticeSampler.publicDraw",
+        "Math115.PublicLatticeSampler.machine",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.PublicLatticeSampler.tableDraw_code",
+        "Math115.PublicLatticeSampler.machine_outputs",
+        "Math115.PublicLatticeSampler.machine_mass",
+        "Math115.PublicLatticeSampler.machineTime_public_bound",
+        "Math115.LatticeBoundedSampling.boundedSampling"
+      ]
+    },
+    {
+      "actual_closure_sha256": "b4b357f7c4f6c0273644f8d02859e1551afafbd37c35c2e820e4f88a02102d38",
+      "closure_size": 11046,
+      "headline": "Math115.LatticeSamplerCost.reserved_draw_work_literal",
+      "required_reachable_names": [
+        "Math115.LatticeSampler.draw",
+        "Math115.LatticeSampler.drawRealizer",
+        "Math115.LatticeSampler.polynomial_draw",
+        "Math115.LatticeSamplerCost.reserved_draw_work"
+      ]
+    }
+  ],
+  "resolved_private_source_helpers": [
+    {
+      "actual_compiled_name": "_private.Math115.LatticeProfileStep.0.Math115.LatticeProfileStep.apply_decision",
+      "axioms": [],
+      "defining_module": "Math115.LatticeProfileStep",
+      "record_sha256": "72b3d967582882bc425cd9043597069f770238bb9499ce3c6cb5106260ec50c7",
+      "resolution": "MUST resolve from actual compiled environment; never accept guessed canonical private name",
+      "source_name": "apply_decision",
+      "statement": "∀ {X : Type u_1} {Y : Type u_2} (encode : X → Y) (x y : X) (test : Bool) (accept : Prop) [inst : Decidable accept],\n  (test = true ↔ accept) → (if test = true then encode y else encode x) = encode (if accept then y else x)"
+    },
+    {
+      "actual_compiled_name": "_private.Math115.LatticeProfileStep.0.Math115.LatticeProfileStep.completionDecision_some_formula",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "defining_module": "Math115.LatticeProfileStep",
+      "record_sha256": "09304ba2c513e291ec8e4551bba3074539ad042aeaa8c522921c9178a058ae62",
+      "resolution": "MUST resolve from actual compiled environment; never accept guessed canonical private name",
+      "source_name": "completionDecision_some_formula",
+      "statement": "∀ {X : Type u_1} {I : Type u_2} {J : Type u_3} [inst : Fintype I] [inst_1 : Fintype J] (R : X → Option I → ℕ)\n  (P : X → Option J → ℕ) (x y : X) (A : OAI.ContingencyTables.Table (R x) (P x)),\n  OAI.ContingencyTables.CompletionTranslation.completionDecision R P x (some y) A =\n    if\n        ∀ (i : Option I) (j : Option J),\n          0 ≤ ↑(↑A i j) + OAI.ContingencyTables.CompletionTranslation.between (R x) (R y) (P x) (P y) i j then\n      y\n    else x"
+    },
+    {
+      "actual_compiled_name": "_private.Math115.LatticeUnitStep.0.Math115.LatticeUnitStep.ofFn_take_prefix",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "defining_module": "Math115.LatticeUnitStep",
+      "record_sha256": "d5ae751c323a18ace192455a91c1ee7d8bbe98ab2addf0959c2e01cf1b068bec",
+      "resolution": "MUST resolve from actual compiled environment; never accept guessed canonical private name",
+      "source_name": "ofFn_take_prefix",
+      "statement": "∀ {k N : ℕ} (hk : k ≤ N) (bits : Fin N → Bool),\n  List.take k (List.ofFn bits) = List.ofFn (OAI.ContingencyTables.FirstSuccess.prefixWord hk bits)"
+    }
+  ],
+  "runner_receipt_sha256": "11e6c5ebcd1eeb60ffafcb75c739bcba7aa0e7630dd370ee63654f136ac15c54",
+  "selection_sha256": "f4f341f58a288ac5628812c52ce0b94c4fcac18ea7f99f5ab7f325a28fe2ac36",
+  "source_commit": "cf39b6929abf080f3c2e319092eb2506c375d121",
+  "status": "passed_environment_intake"
+}

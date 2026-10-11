@@ -1,0 +1,14 @@
+{
+  "challenge_module": "SmokeChallenge",
+  "definition_names": [],
+  "enable_nanoda": false,
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "solution_module": "SmokeSolution",
+  "theorem_names": [
+    "ComparatorSmoke.accepts"
+  ]
+}

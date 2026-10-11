@@ -1,0 +1,5 @@
+⚠ [2/2] Built SmokeBase (1.9s)
+warning: SmokeBase.lean:1:0: Definition `ComparatorSmoke.witness` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+Build completed successfully (2 jobs).

@@ -1,0 +1,12 @@
+formal\Math115\LatticeSampler.lean:66:4: error: (kernel) excessive memory consumption detected
+formal\Math115\LatticeSampler.lean:74:8: error: (kernel) excessive memory consumption detected
+formal\Math115\LatticeSampler.lean:117:44: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+formal\Math115\LatticeSampler.lean:124:44: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+formal\Math115\LatticeSampler.lean:152:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

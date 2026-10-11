@@ -1,41 +1,59 @@
-# Outer-sampler compiler checkpoint — first repair round
+# Outer-sampler compiler checkpoint
 
-The first repair round, completed on 10 October 2026 at 14:52 UTC, produced successful fresh, full-module ordinary Lean compiler receipts for two research modules: the revised `LatticeSamplerPreparation` and unchanged `LatticeEmptyOutput`. The first native round still failed overall: 673 modules were reused, two failed, and eight were dependency-blocked. This checkpoint does not establish a complete encoded outer sampler, a new named-axiom audit result, or a machine-runtime bound.
+One fixed fair-bit machine now has a verified polynomial-time bounded-sampling guarantee for ordinary integer tables. For every finite pair of dimensions, natural row and column margins with equal totals, and precision `h≥1`, it halts with a feasible original table on every tape at one globally polynomial time, and its output law at that same time has normalized total variation at most `2^-h` from uniform. Empty dimensions and zero margins are included. The size measure is `S=m+n+clog₂(sum(r)+1)+h+1`, with numeric precision `h`.
 
-| Module | Recorded round-one outcome | What can be claimed |
+The [theorem source](../formal/results/native-sampler-checkpoint/sources/Math115/LatticeBoundedSampling.lean), [actual statement index](../formal/results/native-sampler-checkpoint/semantic/headline-index.json), and [claim table with hypotheses](../formal/results/native-sampler-checkpoint/semantic/claim-table.md) bind this result to the compiled machine and its proof.
+
+All thirteen latest research source modules pass ordinary Lean compilation. The final normal run has **685 completed records = 684 authenticated reuses + one fresh Cost compilation**, with no failed or blocked modules. The full environment audit, independent artifact review, and semantic readback pass. Inventory totals include upstream/generated declarations and are not new-result counts.
+
+| Module | Accepted normal compiler evidence | Audit coverage |
 | --- | --- | --- |
-| `LatticeSamplerPreparation` | Revised source `e5d33b3c…` compiled in 224.38 seconds; source unchanged during compilation; one deprecation warning retained | Successful ordinary compilation of that exact full source and recorded imported objects |
-| `LatticeEmptyOutput` | Archived source `5af2b648…` compiled in 58.33 seconds; empty compiler log | Successful ordinary compilation of the unchanged archived source |
-| `LatticeProfileWalk` | Compilation failed on a type/universe mismatch; reviewed round-two candidate awaits actual compilation | A recorded blocker and a reviewed candidate, without a compiler-success claim |
-| `LatticeUnitStep` | Compilation failed at the deterministic heartbeat limit; reviewed round-two candidate awaits actual compilation | A recorded blocker and a reviewed candidate, without a compiler-success claim |
-| `LatticeUnitWalk` | Dependency-blocked in round one; reviewed round-two candidate awaits actual compilation | No successful full-module compilation from this round |
+| `LatticeBoundedSampling` | Normal compilation passed for `adc3ed0d…` | Full R10 environment audit |
+| `LatticeEmptyOutput` | Normal compilation passed for `5af2b648…` | Full R10 environment audit |
+| `LatticeOuterProgram` | Normal compilation passed for `e761386d…` | Full R10 environment audit |
+| `LatticeOuterSemantics` | Normal compilation passed for `cd22fe44…` | Full R10 environment audit |
+| `LatticeProfileStep` | Normal compilation passed for `f5a8b460…` | Full R10 environment audit |
+| `LatticeProfileWalk` | Normal compilation passed for `d1786e79…` | Full R10 environment audit |
+| `LatticeSampler` | Normal compilation passed for `3e2d55e1…` | Full R10 environment audit |
+| `LatticeSamplerCost` | Normal compilation passed for `bd78d5a5…` | Full R10 environment audit |
+| `LatticeSamplerPreparation` | Normal compilation passed for `e5d33b3c…` | Full R10 environment audit |
+| `LatticeUnitOuter` | Normal compilation passed for `2c8e44d0…` | Full R10 environment audit |
+| `LatticeUnitStep` | Normal compilation passed for `4cb0745b…` | Full R10 environment audit |
+| `LatticeUnitWalk` | Normal compilation passed for `b0fc16f7…` | Full R10 environment audit |
+| `PublicLatticeSampler` | Normal compilation passed for `b7cc9fea…` | Full R10 environment audit |
 
-The [source and evidence package](../formal/results/native-round1-evidence/README.md) preserves this historical round, including the failed attempts. It is not a report of later compiler rounds.
+The [structured evidence bundle](../formal/results/native-sampler-checkpoint/checkpoint.json) records exact source/object hashes, compiler durations, complete sanitized failed attempts, and current/historical audit bindings. The [full audit report](../formal/results/native-sampler-checkpoint/audit/summary.json) and [actual semantic readback](../formal/results/native-sampler-checkpoint/semantic/semantic-readback.json) confirm the final theorem reaches the `80,000d¹⁷` ideal-chain route, `U=5d³`, `L=3d`, the computed schedule, both completion branches, greedy fallback, fresh bits, and literal output. No caller-supplied oracle or stationary-start premise remains.
 
-The original [outer-sampler archive](../research/outer-sampler/) is unchanged. Candidate overlays and subsequent receipts must be retained as additive evidence, with their own source hashes and imported-object bindings. The second-round descriptions above record their status when this first-round checkpoint was prepared; no second-round compiler result is asserted here.
+A polynomial machine-time degree is proved to exist, but its numeric value has not been extracted. The inverse-gap power 17 and reserved-bit power 170 are different quantities. No exact sampling/counting theorem, empirical speedup, standalone binary, fresh Linux rebuild for this overlay, or strict sampler Comparator result is claimed. The checked default target and original archive remain unchanged.
 
-A separate AI agent replayed the downloaded artifacts and saved metadata, including source bindings, dependency-map consistency, and the two successful delivered objects. It found no evidence-consistency blocker. This was local artifact review, without a fresh compiler or kernel run or live reauthentication of every dependency object and executable. The operator's recorded rechecks and that narrower AI-agent review are separate evidence. No outside human review or reproduction is claimed.
+The [original first-round note at its published commit](https://github.com/EcoDataLab/contingency-tables/blob/cf39b6929abf080f3c2e319092eb2506c375d121/docs/outer-sampler-compiler-checkpoint.md) preserves the complete historical table and status. Its [published first-round evidence package](../formal/results/native-round1-evidence/README.md) remains unchanged. Every resumed-session failed attempt is preserved in the additive bundle. The recovered Walk receipt shows compilation finished before the earlier pause; authentication after resumption corrects the incomplete pause interpretation while preserving the original interrupted driver metadata.
 
-Ordinary Lean compilation is also separate from a no-admissions/allowed-axioms audit, an environment inventory, and Comparator acceptance. This round ran no new named-axiom audits. No strict Comparator success is claimed by this checkpoint. Comparator results require their own completed, scope-bound receipt.
+The [separate strict-checking package](../formal/results/strict-comparator-smoke/README.md) records authenticated acceptance of a tiny fixture, including fresh fixture builds, exporter, default kernel, and comparison. That scope does not cover the original challenge exports or this sampler. Its tested Linux entrypoint and evidence belong to the separate fixture package; normal compiler records do not inherit that acceptance.
 
-## Reproduction
+Retained source headers describing a source-only or uncompiled state record the files’ creation-time status. Current exact-hash compiler and audit receipts determine this checkpoint’s status; the verified source bytes and comments are preserved.
 
-Use the [exact source overlay, manifest, and replay recipe](../formal/results/native-round1-evidence/README.md#reproducing-the-source-attempts) in an isolated checkout. The package records object hashes but does not distribute compiled objects. Preserve the archived sources. The original source and dependencies remain pinned, including Lean `leanprover/lean4:v4.34.1` and OpenAI source `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`.
+## Reproduce
 
-Bootstrap the repository's pinned dependencies and reproduce the checked base using its existing workflow:
+Run the checked-base bootstrap and focused verification **inside an isolated validation checkout** at the recorded base commit:
 
 ```sh
+cd /absolute/path/to/isolated-base-validation
 bash scripts/bootstrap_lean.sh
 bash scripts/verify_lean.sh focused --serial
 ```
 
-That command verifies the default checked base; it does not compile the archived outer sampler. Restore only the manifest-selected research overlay into the isolated project, confirm its source hashes, and build its imported modules in recorded dependency order. After the required predecessor modules are present, the two round-one successes can be tested explicitly from `formal/`:
+For the research overlay, prepare a separate clean isolated replay checkout at that same commit and bootstrap its pinned dependencies there. Then invoke the replay from the evidence checkout, passing the replay checkout's absolute path:
 
 ```sh
-../.tools/elan/bin/lake --no-ansi build +Math115.LatticeSamplerPreparation
-../.tools/elan/bin/lake --no-ansi build +Math115.LatticeEmptyOutput
+cd /absolute/path/to/isolated-replay
+bash scripts/bootstrap_lean.sh
+cd /absolute/path/to/evidence-checkout
+bash formal/results/native-sampler-checkpoint/reproduce.sh /absolute/path/to/isolated-replay
 ```
 
-A new receipt should preserve the actual source/object hashes, compiler and dependency pins, complete logs, exit codes, warnings, and whether an object was rebuilt or reused. The recorded durations describe this native Windows verification run, not application sampling speed or a cross-platform timing guarantee. The [Windows guide](windows-verification.md) describes the pinned native workflow.
+The helper requires the recorded base commit and a clean worktree, resolves symlinks, refuses the checkout containing the evidence bundle, and validates all thirteen hashes before writing any overlay. Keep validation logs outside the clean replay worktree and run no other editor or compiler in it during replay. It stops on the first dependency or target failure and returns that exact nonzero exit code.
 
-Before promoting a repaired module into the checked target, obtain successful exact-source compilation, its explicit named-axiom audits, and review of the stated interface. The next unresolved evidence is actual compilation of the three reviewed round-two candidates and any newly reachable downstream modules. The [handoff](handoff.md) retains the later whole-program, runtime, strict-checking, and application-validation obligations.
+The explicit Lean invocation retains recorded `-j2`, `-DautoImplicit=false`, `--root`, `-o`, and `-i` options, and applies the source-attempt memory option from the ledger (including `-M8192` where the per-source ledger records it, such as later Cost and BoundedSampling attempts). Older authenticated reused objects are not claimed to have used that cap. Fresh `.olean`/`.ilean` outputs are saved outside Lake's build cache; later Lake dependency builds can rebuild earlier research modules using its supported dependency workflow. This is a source-replay recipe, not exact replay of the native serial driver or reuse schedule. It neither invokes Comparator nor promotes the overlay into the checked target; new attempts need their own receipts.
+Ordinary Lean compilation trusts pinned compiler/bootstrap and imported cache objects. AI-agent evidence review checks artifacts and recorded provenance; it is separate from outside human review and independent kernel verification. The bundle omits binary objects and most runtime/dependency objects, binds private raw metadata by digest, and preserves only sanitized paths. The [handoff](handoff.md) keeps the remaining reproduction and default-build integration, numerical cost analysis, strict sampler verification, and application-validation obligations separate.
+
+The retained environment-audit driver, helper, actual report and unchanged inventory snapshots preserve native audit evidence. The ordinary source-replay script is a separate procedure; no fully portable audit replay has been tested or claimed.

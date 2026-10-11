@@ -1,0 +1,5 @@
+⚠ [2/3] Replayed SmokeBase
+warning: SmokeBase.lean:1:0: Definition `ComparatorSmoke.witness` is a proposition; use `theorem` instead of `def`
+
+Note: This linter can be disabled with `set_option linter.defProp false`
+All targets up-to-date (3 jobs).

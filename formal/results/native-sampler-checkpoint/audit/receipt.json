@@ -1,0 +1,83 @@
+{
+  "artifact_inventory_files": 69292,
+  "audit_lean_path": "<AUDIT>/helper-lib;<NORMAL_OBJECTS>;<CHECKOUT>/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/Qq/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/aesop/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/batteries/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/importGraph/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/mathlib/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/plausible/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/proofwidgets/.lake/build/lib/lean",
+  "before_after_canonical_sha256": "db8e132d05fd4e6b529f837b45757ad496176f7b6fb22f4f8bc28d43f778be38",
+  "compiler_prefix_check": {
+    "argv": [
+      "<PINNED_LEAN>/bin/lean.exe",
+      "--print-prefix"
+    ],
+    "elapsed_seconds": 0.04568840004503727,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "9799c0da6abd244ac6da2a0c0fdfcb086db278d027e46581f671845ca24d668e",
+    "timed_out": false
+  },
+  "compiler_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_version_check": {
+    "argv": [
+      "<PINNED_LEAN>/bin/lean.exe",
+      "--version"
+    ],
+    "elapsed_seconds": 0.0568324999185279,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "caa538834571fbbf53913bbde24b9fd3d9deac746137443a1c712d820e6a5b38",
+    "timed_out": false
+  },
+  "config_sha256": "9d764170ffa7fb46b594cc5c3ba2427de2fb6382ae09feced77ca0bad2a7e605",
+  "controlled_environment": {
+    "LEAN_NUM_THREADS": "2",
+    "LEAN_PATH": "<NORMAL_OBJECTS>;<CHECKOUT>/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/Qq/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/aesop/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/batteries/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/importGraph/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/mathlib/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/plausible/.lake/build/lib/lean;<CHECKOUT>/formal/.lake/packages/proofwidgets/.lake/build/lib/lean",
+    "PATH_prefix": "<PINNED_LEAN>/bin",
+    "removed_overrides": [
+      "PATH"
+    ]
+  },
+  "counts": {
+    "declarations": 25448,
+    "headlines": 22,
+    "imported_modules": 11951,
+    "theorems": 18054
+  },
+  "driver_sha256": "b25e96a53e5de9abfeedbba702daac56e6d9ee9e7f6153f7191520ed6ce7ae30",
+  "environment_audit": {
+    "argv": [
+      "<PINNED_LEAN>/bin/lean.exe",
+      "-j2",
+      "-DautoImplicit=false",
+      "<AUDIT>/Audit.lean"
+    ],
+    "elapsed_seconds": 590.571689000004,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "59cbaf0020e8e251b78d495cc5fcc6e3aaf35bda7a7f2989be37291814386403",
+    "timed_out": false
+  },
+  "finished_at_utc": "2026-10-11T00:26:40.008599+00:00",
+  "helper_compile": {
+    "argv": [
+      "<PINNED_LEAN>/bin/lean.exe",
+      "-j2",
+      "-DautoImplicit=false",
+      "--root=<AUDIT>/helper-source",
+      "-o",
+      "<AUDIT>/helper-lib/ResearchAudit/EnvironmentAudit.olean",
+      "<AUDIT>/helper-source/ResearchAudit/EnvironmentAudit.lean"
+    ],
+    "elapsed_seconds": 15.525120799895376,
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  "helper_object_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581",
+  "input_files": 1477,
+  "platform_loader_boundary": "Known loader override variables cleared; PATH contains only pinned compiler directory. System loader, OS libraries, Python interpreter/stdlib and platform services remain trusted; this is an import/compiler input audit, not an OS sandbox.",
+  "resolved_import_closure_sha256": "0e77e4b1aa14cc1ca1472d7665038afc9df363349d31d0673033abbb345c2ddb",
+  "runner_sha256": "c446c9ce5e8e3bad74dea076ee59769259452762487edbd3bd307bb7cfb6306c",
+  "schema_version": 1,
+  "scope": "Round-three complete normal graph; both new bounded-sampling and supplied-word cost roots, previous named inclusion and exact compiled headline/program closures.",
+  "started_at_utc": "2026-10-11T00:11:54.402999+00:00",
+  "status": "passed_compiled_environment_audit"
+}

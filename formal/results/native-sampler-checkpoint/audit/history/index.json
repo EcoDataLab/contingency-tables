@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "historical_audits": [
+    {
+      "scope": "Earlier eight-root module audit",
+      "summary": "round5-summary.json",
+      "summary_sha256": "b80543b5109ad594df26ad93e56d3bc89302ef08776c91a5ac1da7b03836b39a",
+      "raw_report_sha256": "0eda2a4bb562bf3f15b18e648c0f23be375f9cca21b37ac85c7288b97c9eea75",
+      "full_report_retained": false
+    },
+    {
+      "scope": "Single UnitOuter root covering nine research modules",
+      "summary": "round6-summary.json",
+      "summary_sha256": "32132a715f276700455bab2555fc0a53abb26206c8ec534d51b21c307e43ae92",
+      "raw_report_sha256": "093459505bb392383a7cee15494f5c991a8ff75d3866d894ca6ae7dee83e1ffc",
+      "historical_gzip_sha256": "9ad7ab2d031865bde4e1855650b0870bc7350a77da3647bd62b35222ef866449",
+      "full_report_retained": false
+    }
+  ],
+  "relative_artifact_reference_policy": "Exact historical summaries retain original candidate references and raw/public digest bindings; those are not current audit paths. Superseded full reports are not duplicated.",
+  "current_summary": "../summary.json"
+}

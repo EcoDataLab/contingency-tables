@@ -1,0 +1,20 @@
+formal\Math115\LatticeBoundedSampling.lean:26:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+formal\Math115\LatticeBoundedSampling.lean:28:2: error: `dsimp` made no progress
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    X
+  has type
+    Table r c
+  but is expected to have type
+    { X // HasMargins X r c }
+  in the application
+    ↑X

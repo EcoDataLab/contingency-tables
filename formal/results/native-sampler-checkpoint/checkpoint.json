@@ -1,0 +1,1232 @@
+{
+  "schema_version": 1,
+  "publication_state": "frozen_private_publication_candidate_pending_final_independent_publication_review",
+  "scope": "One additive resumed-session compiler checkpoint. Published first-round history and original archive remain unchanged.",
+  "base_commit": "cf39b6929abf080f3c2e319092eb2506c375d121",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "latest_completed_run": 10,
+  "interrupted_round_history": {
+    "raw_pause_receipt_sha256": "8709eab66441b244ce13bc8d91550661921e482ccb3a40c49c91d814c31010a6",
+    "raw_paused_driver_status_sha256": "b90a71838ed7c261292cad8190253c78c5e6be442636af4cdfba9c2dc280d736",
+    "original_status_preserved": true,
+    "interpretation": "Walk completed before pause; later authentication established its successful receipt without rewriting interrupted overall driver state."
+  },
+  "runs": [
+    {
+      "run": 3,
+      "terminal_status": "failed",
+      "source_commit": "cf39b6929abf080f3c2e319092eb2506c375d121",
+      "completed": 678,
+      "reused": 676,
+      "failed": 2,
+      "dependency_blocked": 5,
+      "raw_final_result_sha256": "10751c3a0d5ce305e67492d703e3398f290569124d25b25043cd6f663b9bb27a",
+      "raw_download_manifest_sha256": "59fe99428e7880cf245266eda16a1a895f584ae524467d3ecbd0d981e4ce889f",
+      "downloaded_artifact_hashes_verified": true
+    },
+    {
+      "run": 4,
+      "terminal_status": "failed",
+      "source_commit": "cf39b6929abf080f3c2e319092eb2506c375d121",
+      "completed": 679,
+      "reused": 678,
+      "failed": 1,
+      "dependency_blocked": 5,
+      "raw_final_result_sha256": "7eef8855ef71c87d2a9e5ea37e985fb2a0764a9742ae5c72bdbe734182c74625",
+      "raw_download_manifest_sha256": "174a2627d40ef6ab329c35264d8f43d8e77c271cf32a7b7891158915f0b8d2ca",
+      "downloaded_artifact_hashes_verified": true
+    },
+    {
+      "run": 5,
+      "terminal_status": "failed",
+      "source_commit": "cf39b6929abf080f3c2e319092eb2506c375d121",
+      "completed": 680,
+      "reused": 679,
+      "failed": 1,
+      "dependency_blocked": 4,
+      "raw_final_result_sha256": "f7da2ea5b39451d8f9ecbf7e3df443d5bdf577d76472e15325fec17567e180d5",
+      "raw_download_manifest_sha256": "728144597510499f193dddd1fb419c9b640af95ba86cb5ea3945b95ea5245cd3",
+      "downloaded_artifact_hashes_verified": true
+    },
+    {
+      "run": 6,
+      "terminal_status": "failed",
+      "source_commit": "cf39b6929abf080f3c2e319092eb2506c375d121",
+      "completed": 681,
+      "reused": 680,
+      "failed": 1,
+      "dependency_blocked": 3,
+      "raw_final_result_sha256": "153e87686474c293ba991080f546f771c9ee762653feea0dd6da0f39ffc62d12",
+      "raw_download_manifest_sha256": "9913f1f6dc6ae4f3329bdff117ade03630b9070c0df7f5b9be08bac1642c8538",
+      "downloaded_artifact_hashes_verified": true,
+      "terminal_failure_category": "ordinary Lean proof compilation error",
+      "out_of_memory_failure": false,
+      "interrupted": false,
+      "recorded_memory_observation_is_not_failure_cause": true
+    },
+    {
+      "run": 7,
+      "terminal_status": "failed",
+      "source_commit": "cf39b6929abf080f3c2e319092eb2506c375d121",
+      "completed": 681,
+      "reused": 681,
+      "fresh_successes": 0,
+      "failed": 1,
+      "dependency_blocked": 3,
+      "raw_final_result_sha256": "19545162ed43d51eecb3a4d694f94fc562fa4eb888edbcdef067615cd019eb67",
+      "raw_download_manifest_sha256": "d7db7d4c1aa3057ad708bc2c80e4adf57d913061f34c7c7640c9fa2a0eceb570",
+      "downloaded_artifact_hashes_verified": true,
+      "terminal_failure_category": "compiler kernel memory budget exhausted at -M8192; not a mathematical counterexample",
+      "external_interruption": false,
+      "execution_provenance": {
+        "originating_driver_sha256": "e903dce08c32d84e291c373a7256d0794e98f23f14ec2f4b0c3949a9a68e3134",
+        "previous_driver_sha256": "b235f69465cc1eb938b78d276e0751624a3550d9ee9e5b4b7178613a3071b37b",
+        "current_reuse_intake_helper_sha256": "5a3cc42eb583c723ebfb44f8e2d0d32a83b3b1bbc134b744dc16dee03eb531d7",
+        "driver_diff_sha256": "84653154111637c7ec8cf97800a10d0e7bd60898bca4fc41de05cb08b7377162",
+        "memory_option": "-M8192",
+        "memory_option_units": "megabytes, as documented by the pinned Lean compiler",
+        "reused_older_object_cap_claim": false,
+        "root_driver_review_sha256": "b2f787c73b02a14467257a0822f9b05860ccdd25f0c1aa4ad2e9f2cb97533c5c",
+        "independent_ai_driver_review_sha256": "700d876af9a5a4da023c2955ce5e3006e1c02f7a75b6916c0962773140f0569b",
+        "future_helper_review_sha256": "b2ea94fccf56a07a262af54a92fa22089cb71cf15833b1f7a5a72473c9506fa4",
+        "future_helper_boundary": "A separately reviewed helper is needed for later intake from the changed originating driver; it was not substituted for the current round-seven reuse intake."
+      }
+    },
+    {
+      "run": 8,
+      "terminal_status": "failed",
+      "source_commit": "cf39b6929abf080f3c2e319092eb2506c375d121",
+      "completed": 683,
+      "reused": 681,
+      "fresh_successes": [
+        "Math115.LatticeSampler",
+        "Math115.PublicLatticeSampler"
+      ],
+      "failed": 2,
+      "dependency_blocked": 0,
+      "raw_final_result_sha256": "aaf4919d5027a8c916c8edac2fa10651a915afbf03685c0de89cd611bfb05e84",
+      "raw_download_manifest_sha256": "1471e1ba7bd280ac3ded8e31cc37296e90050a0a99fa0ba103d57de457fc3920",
+      "raw_root_evidence_review_sha256": "1ddc778485a83761c874be979dedb68353d191e61a6677816a294a37c6e965f0",
+      "downloaded_artifact_hashes_verified": true,
+      "all_successful_dependency_maps_rechecked": true,
+      "external_interruption": false,
+      "fresh_memory_cap_mb": 8192,
+      "older_reused_memory_cap_claim": false
+    },
+    {
+      "run": 9,
+      "terminal_status": "failed",
+      "source_commit": "cf39b6929abf080f3c2e319092eb2506c375d121",
+      "completed": 684,
+      "reused": 683,
+      "fresh_successes": [
+        "Math115.LatticeBoundedSampling"
+      ],
+      "failed": 1,
+      "dependency_blocked": 0,
+      "raw_final_result_sha256": "a28515ca875609501e23200e3e3a67886a8331bc1f33667ab0c0c4020658f963",
+      "raw_download_manifest_sha256": "68ad2c2aa7ce3d5bf2b1e43354a7c99ebd398906c09e8229bfeaabe2188884bc",
+      "raw_root_evidence_review_sha256": "dc72fb2fa1b98720200912a0ad141dc79cd3b449fc27e889e10bce85cca2431a",
+      "downloaded_artifact_hashes_verified": true,
+      "all_successful_dependency_maps_rechecked": true,
+      "external_interruption": false,
+      "fresh_memory_cap_mb": 8192,
+      "older_reused_memory_cap_claim": false
+    },
+    {
+      "run": 10,
+      "terminal_status": "passed",
+      "source_commit": "cf39b6929abf080f3c2e319092eb2506c375d121",
+      "completed": 685,
+      "reused": 684,
+      "fresh_successes": [
+        "Math115.LatticeSamplerCost"
+      ],
+      "failed": 0,
+      "dependency_blocked": 0,
+      "raw_final_result_sha256": "ea0156a91735c924dbfdf7bb99f7a26c2d3103297a709c0f4a24b3718c39bb49",
+      "raw_download_manifest_sha256": "d3980a3cfe7b0fefd89e338b24b1e1ff4edf3c104a4ed4bcbda27c9b84335db5",
+      "raw_root_evidence_review_sha256": "28da2848587532ffcdba232955646d2123ea70987eda36753745b38cd000b10b",
+      "downloaded_artifact_hashes_verified": true,
+      "all_successful_dependency_maps_rechecked": true,
+      "external_interruption": false,
+      "fresh_memory_cap_mb": 8192,
+      "older_reused_memory_cap_claim": false,
+      "full_environment_audit": "pending_actual_execution_and_independent_review"
+    }
+  ],
+  "attempts": [
+    {
+      "run": 2,
+      "module": "Math115.LatticeProfileWalk",
+      "source": "attempts/recovered-round-2/LatticeProfileWalk.lean",
+      "source_sha256": "d1786e79274b833e3afdd302237ec28eec0604a2596177ce4d4422e63e6608f7",
+      "compiler_exit_code": 0,
+      "elapsed_seconds": 235.4552365000127,
+      "log": "logs/recovered-round-2/LatticeProfileWalk.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diagnostic_projection": [],
+      "raw_receipt_sha256": "9c7354d12d672003881074419a83f2c81e8f4d76166ad0eff9e5daff783bf37b",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeProfileStep": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+        "OAI.Combinatorics.ContingencyTables.Transport.BoundedProfileWalk": "73930ddd89210b6f80a056d210cefdae05c29e46d3e17ebbbaf6a118f968878f"
+      },
+      "source_closure_sha256": "3810649e2e38e22ec545e1a9da3773cda02c3835572eb38d25c499cbdc656c44",
+      "completed_at_utc": "2026-10-10T15:25:04.971321+00:00",
+      "object_sha256": "1ac118a11fa233dfdc2e24859e6c3c90d68a06c31ef9a06ad0b0f0fd77fc79ff",
+      "delivered_attempt_and_published_object_equal": true,
+      "interrupted_driver_status_preserved": true,
+      "later_authentication_binding_sha256": "3ef884283911c081988d676685e13872843f621dfa7d6c5d8f7f38a04e4011ab"
+    },
+    {
+      "run": 2,
+      "module": "Math115.LatticeUnitStep",
+      "source": "attempts/interrupted-round-2/LatticeUnitStep.lean",
+      "source_sha256": "1483b3f057a6df8a6a4de50c063b1d2f13c8750088dbd9746e1ac173ad92e7f5",
+      "compiler_exit_code": 1,
+      "elapsed_seconds": 233.24375300004613,
+      "log": "logs/interrupted-round-2/LatticeUnitStep.log",
+      "raw_log_sha256": "fb005bd4ac39e0b8daae8aee8cf0fe9374cc7396dd1d0c320c6811b161547375",
+      "published_log_sha256": "50934f252a5a4513596ab89242552c5b8e965bb307ee1b3a3b1ee0062482f542",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 2
+        }
+      ],
+      "raw_receipt_sha256": "b5b7941ce693a66ec7a18e294bc95e7f7d32462323c667823c393872e6209aca",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeProfileStep": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+        "Math115.PhysicalBooleanSampler": "3b13795d4834cf621291e01847842355a020eebe183ab3c871efb107753bc36a"
+      },
+      "source_closure_sha256": "04c428dc9d4817870e040064658e89d1124680f178c6e8073a02b13883d01654",
+      "interrupted_driver_status_preserved": true
+    },
+    {
+      "run": 3,
+      "module": "Math115.LatticeOuterProgram",
+      "source": "attempts/round-3/LatticeOuterProgram.lean",
+      "source_sha256": "e761386db8e26dc09ed4b2a5b22b5c66c71a2de1223d46c894f9606e9741df8b",
+      "compiler_exit_code": 0,
+      "elapsed_seconds": 250.2448366000317,
+      "log": "logs/round-3/LatticeOuterProgram.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 0
+        }
+      ],
+      "raw_receipt_sha256": "f87cec9b051251e6e0cb8639f2f04bf7ec3ef11e51ab6b5641b62a5232c10703",
+      "direct_dependency_object_sha256": {
+        "Math115.CompletionSamplerProgram": "ed4a49097d4a688867797b4ae92efecb631299320a5bb5eb9a491c41278353e1",
+        "Math115.LatticeProfileWalk": "1ac118a11fa233dfdc2e24859e6c3c90d68a06c31ef9a06ad0b0f0fd77fc79ff",
+        "OAI.Combinatorics.ContingencyTables.Machines.FirstSuccessProgram": "8f0420f17fa2993f5cb3a7a8f481735a3e33d14931eb50775560f3ff91d498fa",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfileWordProgram": "a4c909533780990ae2e5f88de2cc172c02b0d43bed1b2abfcb200eced9104aeb"
+      },
+      "source_closure_sha256": "0304601f18b6cca4873c7ce4478a359538bcbbe755b1421b12f1555d8eeda19a",
+      "started_at_utc": "2026-10-10T22:02:51.302907+00:00",
+      "completed_at_utc": "2026-10-10T22:07:01.547782+00:00",
+      "source_unchanged_in_attempt": true,
+      "object_sha256": "67bf311a5b2cf04d03d0ce1dfe2b7579519a018d7778bd8140e4c62c6bc99f5e",
+      "delivered_attempt_and_published_object_equal": true
+    },
+    {
+      "run": 3,
+      "module": "Math115.LatticeOuterSemantics",
+      "source": "attempts/round-3/LatticeOuterSemantics.lean",
+      "source_sha256": "c6d28dc634e10b7bbceca52ccf70b8ddd504625806af9d1fa64bf38833d43b0d",
+      "compiler_exit_code": 1,
+      "elapsed_seconds": 66.5898452999536,
+      "log": "logs/round-3/LatticeOuterSemantics.log",
+      "raw_log_sha256": "a1b0e722fbb46eb414734fc1062455fea032886303487761207d6c9b4ed3e4e0",
+      "published_log_sha256": "e152937e00ac027633bd10efb4c6fb1b4d3dbe8f354041e48e082c24486a0439",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 5
+        }
+      ],
+      "raw_receipt_sha256": "f6d332b854e8b307bc507951f03b3b31d2d17d8e8bbb077a5bd90577883d697a",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeOuterProgram": "67bf311a5b2cf04d03d0ce1dfe2b7579519a018d7778bd8140e4c62c6bc99f5e",
+        "Math115.LatticeSamplerPreparation": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2"
+      },
+      "source_closure_sha256": "6688a3a709eb04dedd4cd05783457be58ab292f5c865773a2d0a7028a40acad2",
+      "started_at_utc": "2026-10-10T22:07:01.617735+00:00",
+      "completed_at_utc": "2026-10-10T22:08:08.207636+00:00",
+      "source_unchanged_in_attempt": true
+    },
+    {
+      "run": 3,
+      "module": "Math115.LatticeUnitStep",
+      "source": "attempts/round-3/LatticeUnitStep.lean",
+      "source_sha256": "4cb0745b4a2090a6215a1817ddad24a0277793f055ec28c3896222bd9adf3805",
+      "compiler_exit_code": 0,
+      "elapsed_seconds": 238.77404590009246,
+      "log": "logs/round-3/LatticeUnitStep.log",
+      "raw_log_sha256": "5b29a99c373c516579af80b521d0f7cbdf3e717db19d796ae6c09424ae1b2644",
+      "published_log_sha256": "9d08fe313d40f3ecda66d73dd836ca20c8301a064a4bb25d2aa780ee8d642405",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 1
+        }
+      ],
+      "raw_receipt_sha256": "5b6ab4bb90a8b9049ee68d2a327f73cff714cf93b281e0d49598fd8204524066",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeProfileStep": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+        "Math115.PhysicalBooleanSampler": "3b13795d4834cf621291e01847842355a020eebe183ab3c871efb107753bc36a"
+      },
+      "source_closure_sha256": "7dc9afbe6a91eb68a6893b68043026a3d9f859a7935c1ed7ec0402d214556087",
+      "started_at_utc": "2026-10-10T22:08:08.265381+00:00",
+      "completed_at_utc": "2026-10-10T22:12:07.039466+00:00",
+      "source_unchanged_in_attempt": true,
+      "object_sha256": "af052cb15024677e3be569bbb3a253c4d8c5d4ccb26825d62c7e51bb0eb4949e",
+      "delivered_attempt_and_published_object_equal": true
+    },
+    {
+      "run": 3,
+      "module": "Math115.LatticeUnitWalk",
+      "source": "attempts/round-3/LatticeUnitWalk.lean",
+      "source_sha256": "24ed7c79abe3cc72126a9de1714554dae05d1c53db0a86675ad0dfc393565129",
+      "compiler_exit_code": 1,
+      "elapsed_seconds": 213.07818150008097,
+      "log": "logs/round-3/LatticeUnitWalk.log",
+      "raw_log_sha256": "1ff7b53283de0f2c16568da7ea0b5ec98aeeba901ce6b1f217ff0fbcadc66dd9",
+      "published_log_sha256": "457d3d95f418a996d190286154ef4b69090203ca198b180a850c29f44dfe82b0",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 3
+        }
+      ],
+      "raw_receipt_sha256": "6f3c4c1bb76166226220f15778b3d4a7adebdba8e17e2d0cf119ebab37309f32",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeProfileWalk": "1ac118a11fa233dfdc2e24859e6c3c90d68a06c31ef9a06ad0b0f0fd77fc79ff",
+        "Math115.LatticeUnitStep": "af052cb15024677e3be569bbb3a253c4d8c5d4ccb26825d62c7e51bb0eb4949e"
+      },
+      "source_closure_sha256": "ae5a63ca0107dd4e9df26af2c86ec6e3ee949a843f3992aded30d9c39abe80c9",
+      "started_at_utc": "2026-10-10T22:12:07.119941+00:00",
+      "completed_at_utc": "2026-10-10T22:15:40.198161+00:00",
+      "source_unchanged_in_attempt": true
+    },
+    {
+      "run": 4,
+      "module": "Math115.LatticeOuterSemantics",
+      "source": "attempts/round-4/LatticeOuterSemantics.lean",
+      "source_sha256": "6a035839ef43718ba13186179af0d2989329f4a0c49ce21ff0ff005564505b3e",
+      "compiler_exit_code": 1,
+      "elapsed_seconds": 197.0932996000629,
+      "log": "logs/round-4/LatticeOuterSemantics.log",
+      "raw_log_sha256": "538f95fad96bf2693ff843c157258a56f9090c17a05f0b0c4ab6b4f55cfdb313",
+      "published_log_sha256": "5408a66091ecfd4cefac1720037cb32e218734f5644b1394bc452a0465550b94",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 6
+        }
+      ],
+      "raw_receipt_sha256": "23073e81718c384d42b35daff0cdf097f91a504561fc44ed55745af04f7857f4",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeOuterProgram": "67bf311a5b2cf04d03d0ce1dfe2b7579519a018d7778bd8140e4c62c6bc99f5e",
+        "Math115.LatticeSamplerPreparation": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2"
+      },
+      "source_closure_sha256": "15ad978eaa7b3315af639cc1b2ce2b21f786652c995933680a79754a956d49bd",
+      "started_at_utc": "2026-10-10T22:26:26.764388+00:00",
+      "completed_at_utc": "2026-10-10T22:29:43.857726+00:00",
+      "source_unchanged_in_attempt": true
+    },
+    {
+      "run": 4,
+      "module": "Math115.LatticeUnitWalk",
+      "source": "attempts/round-4/LatticeUnitWalk.lean",
+      "source_sha256": "b0fc16f7890d62511c83cc366c011bd097ec40e24d4b0b739f45b8348d54a2a0",
+      "compiler_exit_code": 0,
+      "elapsed_seconds": 70.15395479998551,
+      "log": "logs/round-4/LatticeUnitWalk.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 0
+        }
+      ],
+      "raw_receipt_sha256": "5bfa65c0ce1f9d35a46c0a5038c62f86bf8f92edf7a0682aa4da1bf085e20f57",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeProfileWalk": "1ac118a11fa233dfdc2e24859e6c3c90d68a06c31ef9a06ad0b0f0fd77fc79ff",
+        "Math115.LatticeUnitStep": "af052cb15024677e3be569bbb3a253c4d8c5d4ccb26825d62c7e51bb0eb4949e"
+      },
+      "source_closure_sha256": "a3492e48a62a87f5c072b21d3df275557a9e0de7cfeef4f22d6ce3810a694898",
+      "started_at_utc": "2026-10-10T22:29:43.903684+00:00",
+      "completed_at_utc": "2026-10-10T22:30:54.057680+00:00",
+      "source_unchanged_in_attempt": true,
+      "object_sha256": "c8965f88f6c8753d737c5949c0cb5f1d9a230ba637b977a761bd07e87957e0b3",
+      "delivered_attempt_and_published_object_equal": true
+    },
+    {
+      "run": 5,
+      "module": "Math115.LatticeOuterSemantics",
+      "source": "attempts/round-5/LatticeOuterSemantics.lean",
+      "source_sha256": "cd22fe44345baa2ab94f2139ff004fc7fd20b8ebd42b2617234858c7cb6db3bf",
+      "compiler_exit_code": 0,
+      "elapsed_seconds": 186.73159950005356,
+      "log": "logs/round-5/LatticeOuterSemantics.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 0
+        }
+      ],
+      "raw_receipt_sha256": "53084c679de8e652a222e9fb3b654a639d2f5eb674b41c1b307a9fee3a48da32",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeOuterProgram": "67bf311a5b2cf04d03d0ce1dfe2b7579519a018d7778bd8140e4c62c6bc99f5e",
+        "Math115.LatticeSamplerPreparation": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2"
+      },
+      "source_closure_sha256": "7acbb9973d738cc1e54d183ef34abf78462b8bbc77ba1fad9caa7365acf35ef0",
+      "started_at_utc": "2026-10-10T22:36:50.249687+00:00",
+      "completed_at_utc": "2026-10-10T22:39:56.981336+00:00",
+      "source_unchanged_in_attempt": true,
+      "object_sha256": "3997ea4115319b21a1c3aaab82a1a062e522b7f3bddf2d98609f9d51c7eba774",
+      "delivered_attempt_and_published_object_equal": true
+    },
+    {
+      "run": 5,
+      "module": "Math115.LatticeUnitOuter",
+      "source": "attempts/round-5/LatticeUnitOuter.lean",
+      "source_sha256": "0534c6f7d6713ca1047c7512e011b31edcee4389d68d0e9cba2d5f848595d2d8",
+      "compiler_exit_code": 1,
+      "elapsed_seconds": 70.44287719996646,
+      "log": "logs/round-5/LatticeUnitOuter.log",
+      "raw_log_sha256": "7a8ca2f4e7eb3800502f2b0f01711a7de535597e357510307da004034d0df930",
+      "published_log_sha256": "cc9786f1e89c3ff5fb215e4e507171ac43f60c0eec3e54b4fb01c04064612007",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 6
+        }
+      ],
+      "raw_receipt_sha256": "b0392f39aac9d92d44a8a80346412cfe13fd3c4eccd091a495861c5b5332ba4a",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeEmptyOutput": "0c8c7d907fcc37e5012849a17c73d249fcdeebf334641242a7a3ce9250c2a6b6",
+        "Math115.LatticeOuterSemantics": "3997ea4115319b21a1c3aaab82a1a062e522b7f3bddf2d98609f9d51c7eba774",
+        "Math115.LatticeUnitWalk": "c8965f88f6c8753d737c5949c0cb5f1d9a230ba637b977a761bd07e87957e0b3"
+      },
+      "source_closure_sha256": "5a8fd68ca620fd6489f7ca1d47f59dbff12696de3deaebbcd4b968ee0f0c98a1",
+      "started_at_utc": "2026-10-10T22:39:57.040080+00:00",
+      "completed_at_utc": "2026-10-10T22:41:07.482996+00:00",
+      "source_unchanged_in_attempt": true
+    },
+    {
+      "run": 6,
+      "module": "Math115.LatticeUnitOuter",
+      "source": "attempts/round-6/LatticeUnitOuter.lean",
+      "source_sha256": "2c8e44d0c6ff803d21c987b87cb4b24ec21e541619d53a296c99cb0d4f891b03",
+      "compiler_exit_code": 0,
+      "elapsed_seconds": 64.30439399997704,
+      "log": "logs/round-6/LatticeUnitOuter.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 0,
+          "policy": "Replace only complete personal checkout prefix through formal; retain all remaining rendering and original line endings."
+        }
+      ],
+      "raw_receipt_sha256": "131bd7d4344ca593bd529d27fac9691b7169e4a7cee18fa1b137be89f137cbf8",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeEmptyOutput": "0c8c7d907fcc37e5012849a17c73d249fcdeebf334641242a7a3ce9250c2a6b6",
+        "Math115.LatticeOuterSemantics": "3997ea4115319b21a1c3aaab82a1a062e522b7f3bddf2d98609f9d51c7eba774",
+        "Math115.LatticeUnitWalk": "c8965f88f6c8753d737c5949c0cb5f1d9a230ba637b977a761bd07e87957e0b3"
+      },
+      "source_closure_sha256": "607cbc3d62df018a48bf1ff5006649af07e766013ffebad14d91fe5bb856f4e5",
+      "started_at_utc": "2026-10-10T22:57:12.915696+00:00",
+      "completed_at_utc": "2026-10-10T22:58:17.220129+00:00",
+      "source_unchanged_in_attempt": true,
+      "object_sha256": "0625fd3b136d4c938a993848c78540bfe3394dccb0e8bd4c5fe1e5b0fb0f79c3",
+      "delivered_attempt_and_published_object_equal": true
+    },
+    {
+      "run": 6,
+      "module": "Math115.LatticeSampler",
+      "source": "attempts/round-6/LatticeSampler.lean",
+      "source_sha256": "486cf091c5cf7c46e2acc10db7e253e581623d6e364d595a72fe67b5033db78f",
+      "compiler_exit_code": 1,
+      "elapsed_seconds": 166.92942920001224,
+      "log": "logs/round-6/LatticeSampler.log",
+      "raw_log_sha256": "45b468554ac45df73081ff4173f93c4521e715849761ec27f19cf876774bcebb",
+      "published_log_sha256": "2eb95d0e56583789d4ec0fc79022ea8291d605e64b951dd002d02b1da885a27d",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 5,
+          "policy": "Replace only complete personal checkout prefix through formal; retain all remaining rendering and original line endings."
+        }
+      ],
+      "raw_receipt_sha256": "496284512a21867f7342dc44c8f279a067d22ef3ca3c668cca0e66afeed8a098",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeScheduleProgram": "46388470d516fcb9a34bb8c9fc48ee5c11de554cb04ea374558e8243b645eac1",
+        "Math115.LatticeUnitOuter": "0625fd3b136d4c938a993848c78540bfe3394dccb0e8bd4c5fe1e5b0fb0f79c3"
+      },
+      "source_closure_sha256": "cc44881cd30291df5ff4e1ec847ee33e64e779f7d2e4de2151f79464ad6a485d",
+      "started_at_utc": "2026-10-10T22:58:17.287391+00:00",
+      "completed_at_utc": "2026-10-10T23:01:04.216867+00:00",
+      "source_unchanged_in_attempt": true
+    },
+    {
+      "run": 7,
+      "module": "Math115.LatticeSampler",
+      "source": "attempts/round-7/LatticeSampler.lean",
+      "source_sha256": "163c6910cb662390507c95381243035b2d63aeacb3443a75a2a74f1c3f7c0ad8",
+      "compiler_exit_code": 1,
+      "elapsed_seconds": 124.30424149997998,
+      "log": "logs/round-7/LatticeSampler.log",
+      "raw_log_sha256": "8e5393616b53abeb09e44709f3e78b90113d82521b83d7c8b3b24918997b918e",
+      "published_log_sha256": "87aecf21b5f7ce1d727820588874f2f3c590ee29e3e419c27378eae4fd822ac6",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 5,
+          "policy": "Replace only complete absolute checkout prefix; keep all other diagnostic bytes and original line endings."
+        }
+      ],
+      "raw_receipt_sha256": "ae00e47dea765abee9f8b364868ead91b611deaf5b792eded1a1f2a8a3fd033a",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeScheduleProgram": "46388470d516fcb9a34bb8c9fc48ee5c11de554cb04ea374558e8243b645eac1",
+        "Math115.LatticeUnitOuter": "0625fd3b136d4c938a993848c78540bfe3394dccb0e8bd4c5fe1e5b0fb0f79c3"
+      },
+      "source_closure_sha256": "8351fff06ca9d24878bed1e0c5eaff6310f1010dc694ec05a179089f47233194",
+      "started_at_utc": "2026-10-10T23:11:33.940217+00:00",
+      "completed_at_utc": "2026-10-10T23:13:38.244494+00:00",
+      "source_unchanged_in_attempt": true,
+      "normal_compiler_flags": [
+        "-j2",
+        "-M8192",
+        "-DautoImplicit=false",
+        "--root",
+        "-o",
+        "-i"
+      ],
+      "failure_category": "Lean compiler kernel memory budget exhausted at drawRealizer line66 and polynomial_draw line74",
+      "externally_stopped": false,
+      "memory_cap_applies_to_fresh_attempt_only": true
+    },
+    {
+      "run": 8,
+      "module": "Math115.LatticeSampler",
+      "source": "attempts/round-8/LatticeSampler.lean",
+      "source_sha256": "3e2d55e19d35b75816366b4e1b686e54c944719ea5b0d98565aa22995be8c7f4",
+      "compiler_exit_code": 0,
+      "elapsed_seconds": 70.3743219000753,
+      "log": "logs/round-8/LatticeSampler.log",
+      "raw_log_sha256": "73f9d8dd5c1b869ec38894182e2e2fa48d54d59c33465897a4347a635bb12df2",
+      "published_log_sha256": "70ca1a19d9b33cfbc07144b4bc04874a20fec72ab10ad475f1d238d5abe7b91a",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 3,
+          "policy": "Only full personal checkout prefix projected; all other diagnostic bytes/rendering and line endings preserved."
+        }
+      ],
+      "raw_receipt_sha256": "e6b4a591dee5c3a9ede4bcaad5cceb80dce9fd8aeb6e98abc8e76d00fccf6468",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeScheduleProgram": "46388470d516fcb9a34bb8c9fc48ee5c11de554cb04ea374558e8243b645eac1",
+        "Math115.LatticeUnitOuter": "0625fd3b136d4c938a993848c78540bfe3394dccb0e8bd4c5fe1e5b0fb0f79c3"
+      },
+      "source_closure_sha256": "e2a9cebf687bb716a70a76b9d92df255bed2f6d3e3a9fe84b56bd26a13d32b09",
+      "started_at_utc": "2026-10-10T23:36:37.351049+00:00",
+      "completed_at_utc": "2026-10-10T23:37:47.725406+00:00",
+      "source_unchanged_in_attempt": true,
+      "normal_compiler_flags": [
+        "-j2",
+        "-M8192",
+        "-DautoImplicit=false",
+        "--root",
+        "-o",
+        "-i"
+      ],
+      "object_sha256": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f",
+      "delivered_attempt_and_published_object_equal": true
+    },
+    {
+      "run": 8,
+      "module": "Math115.PublicLatticeSampler",
+      "source": "attempts/round-8/PublicLatticeSampler.lean",
+      "source_sha256": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245",
+      "compiler_exit_code": 0,
+      "elapsed_seconds": 68.51570129999891,
+      "log": "logs/round-8/PublicLatticeSampler.log",
+      "raw_log_sha256": "3747f29eb6858edbf310e12b45d8042050991ab84f1f1bbb7a067cdbee303b4d",
+      "published_log_sha256": "044a0eed97886a28d0ee0d314e3c5516748b1ec12666f0bbeb718e8777fa78af",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 1,
+          "policy": "Only full personal checkout prefix projected; all other diagnostic bytes/rendering and line endings preserved."
+        }
+      ],
+      "raw_receipt_sha256": "55d90bf8c612ee17f656090af559d6374072e5f1274035507e1cfe2949ccbf4e",
+      "direct_dependency_object_sha256": {
+        "Math115.CompletionPublicSize": "009b4ec9771492a3c6440a42d251b746ae091f26e1f43f466711f108b954abe3",
+        "Math115.LatticeSampler": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f",
+        "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordTableLaw": "ad6404771858acd44242031c98da7f2fccb7fcbc8052d3a17d518a9a632d123c",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfilePublicMachine": "4abaa0f807e813ffa2a6850993c049cc1b05007316be964a7ea0522546f00267",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfilePublicSemantics": "9c64f46998ced86218b479647289f84999ceab1712030632b15ec4316941dbb3",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfileRuntimeBound": "6a7a12cdcf4de3ec9f8973e11c6a92c73518a94e3128cc6af1e78892a0c4ee41"
+      },
+      "source_closure_sha256": "44997bbef0bef53aa841e8d804abdb19e9dc0c5cd927b8819a2e57f99201abc3",
+      "started_at_utc": "2026-10-10T23:38:55.755530+00:00",
+      "completed_at_utc": "2026-10-10T23:40:04.271269+00:00",
+      "source_unchanged_in_attempt": true,
+      "normal_compiler_flags": [
+        "-j2",
+        "-M8192",
+        "-DautoImplicit=false",
+        "--root",
+        "-o",
+        "-i"
+      ],
+      "object_sha256": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489",
+      "delivered_attempt_and_published_object_equal": true
+    },
+    {
+      "run": 8,
+      "module": "Math115.LatticeSamplerCost",
+      "source": "attempts/round-8/LatticeSamplerCost.lean",
+      "source_sha256": "11a1e019a9f7b7d6c753b1e70891b3d033ed42a7cd962aa8dfd0826bd676dc5e",
+      "compiler_exit_code": 1,
+      "elapsed_seconds": 67.9030849999981,
+      "log": "logs/round-8/LatticeSamplerCost.log",
+      "raw_log_sha256": "376d25fa998744a32ff684e1781a63aaa9c353b793af88834b7704335d636a41",
+      "published_log_sha256": "340ee066f18b0a90fd5c4d454a2ec4c005152dc0c8ce62494a93176830e1361e",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 1,
+          "policy": "Only full personal checkout prefix projected; all other diagnostic bytes/rendering and line endings preserved."
+        }
+      ],
+      "raw_receipt_sha256": "6b5f6952117353848449be84a7bda0171b0fe954d289131f189a368116e556d6",
+      "direct_dependency_object_sha256": {
+        "Math115.CompletionEncodingSize": "726f81620777ca57ddb2b485a8b16daf8cb2783952bd3e7cafd01ad6f16b6195",
+        "Math115.LatticeSampler": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f"
+      },
+      "source_closure_sha256": "48faca690987083fff7e580bd3825cbeace425a9cd1778a29ebafa1834fc1041",
+      "started_at_utc": "2026-10-10T23:37:47.802192+00:00",
+      "completed_at_utc": "2026-10-10T23:38:55.705313+00:00",
+      "source_unchanged_in_attempt": true,
+      "normal_compiler_flags": [
+        "-j2",
+        "-M8192",
+        "-DautoImplicit=false",
+        "--root",
+        "-o",
+        "-i"
+      ],
+      "failure_category": "maximum recursion depth at line57"
+    },
+    {
+      "run": 8,
+      "module": "Math115.LatticeBoundedSampling",
+      "source": "attempts/round-8/LatticeBoundedSampling.lean",
+      "source_sha256": "a67e022d7a472abd3c25508e1bd3253f213eb40d141b6ee2e954deeab533500a",
+      "compiler_exit_code": 1,
+      "elapsed_seconds": 68.32946599996649,
+      "log": "logs/round-8/LatticeBoundedSampling.log",
+      "raw_log_sha256": "8199142f2dcc48309ae8763b859e2dfe8ae500c4d903c73c2f34859293fd5b8c",
+      "published_log_sha256": "fb0c7a3faa8d906e9156d2f31ded0e78fd4e2dfa45665c7a94be9324cc6c5156",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 2,
+          "policy": "Only full personal checkout prefix projected; all other diagnostic bytes/rendering and line endings preserved."
+        }
+      ],
+      "raw_receipt_sha256": "13898dff76a193745140ad19db5bbfab669788a686437df53e2024995c349f4d",
+      "direct_dependency_object_sha256": {
+        "Math115.PublicLatticeSampler": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489"
+      },
+      "source_closure_sha256": "893b08ac21628d36594b0fd23f1cf8da82dbfd15cb03ed8f5d9986623d9e7e51",
+      "started_at_utc": "2026-10-10T23:40:04.330298+00:00",
+      "completed_at_utc": "2026-10-10T23:41:12.659799+00:00",
+      "source_unchanged_in_attempt": true,
+      "normal_compiler_flags": [
+        "-j2",
+        "-M8192",
+        "-DautoImplicit=false",
+        "--root",
+        "-o",
+        "-i"
+      ],
+      "failure_category": "dsimp/type mismatch at line28"
+    },
+    {
+      "run": 9,
+      "module": "Math115.LatticeSamplerCost",
+      "source": "attempts/round-9/LatticeSamplerCost.lean",
+      "source_sha256": "e928cb26716dd7a3316394cfb5c3fe613bd5b376cc22dcfa9b2a9cf47eb0d13d",
+      "compiler_exit_code": 1,
+      "elapsed_seconds": 99.89087679993827,
+      "log": "logs/round-9/LatticeSamplerCost.log",
+      "raw_log_sha256": "99a58e90d0982be4bc3207a55b2752bc4f0bf4ee6e3a6dcd368dfe7e55c015ef",
+      "published_log_sha256": "20bd367e32104f899d02190bca2e8c7cc3f907dc4869209022e0e9f1d040aea9",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 1,
+          "policy": "Only full personal checkout prefix projected; all other diagnostic bytes/rendering and line endings preserved."
+        }
+      ],
+      "raw_receipt_sha256": "24c3de855820b195cece9141e494ba4a0d6565d502e2ab10b772e4af4035c1ad",
+      "direct_dependency_object_sha256": {
+        "Math115.CompletionEncodingSize": "726f81620777ca57ddb2b485a8b16daf8cb2783952bd3e7cafd01ad6f16b6195",
+        "Math115.LatticeSampler": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f"
+      },
+      "source_closure_sha256": "8328bfecf619e1bbf232dcb3f983b60e38f26c0920919c0036e76717a3abea7b",
+      "started_at_utc": "2026-10-10T23:53:49.701485+00:00",
+      "completed_at_utc": "2026-10-10T23:55:29.592396+00:00",
+      "source_unchanged_in_attempt": true,
+      "normal_compiler_flags": [
+        "-j2",
+        "-M8192",
+        "-DautoImplicit=false",
+        "--root",
+        "-o",
+        "-i"
+      ],
+      "failure_category": "kernel excessive memory consumption at line46 under -M8192; not mathematical counterexample"
+    },
+    {
+      "run": 9,
+      "module": "Math115.LatticeBoundedSampling",
+      "source": "attempts/round-9/LatticeBoundedSampling.lean",
+      "source_sha256": "adc3ed0dfab422e1e2438c44e6bdda277e7a60de92b3847d0e0016d6989a451e",
+      "compiler_exit_code": 0,
+      "elapsed_seconds": 71.20565129991155,
+      "log": "logs/round-9/LatticeBoundedSampling.log",
+      "raw_log_sha256": "9b9115727d76e2a12fb105c19cc7c6f0fab0cceb74ed89628bb440883ae00261",
+      "published_log_sha256": "cc2a414740491d8c048b22e3d870586a9534471c9670ee6cc8a1c050b1d09c5d",
+      "diagnostic_projection": [
+        {
+          "role": "CHECKOUT/formal",
+          "replacement_count": 1,
+          "policy": "Only full personal checkout prefix projected; all other diagnostic bytes/rendering and line endings preserved."
+        }
+      ],
+      "raw_receipt_sha256": "52c80a83e53f72febc54c1d71eb483c9595f8ad798c8e55fbabdd721ce5efbfe",
+      "direct_dependency_object_sha256": {
+        "Math115.PublicLatticeSampler": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489"
+      },
+      "source_closure_sha256": "3ee690c9de81d70eaabb6789304508ec9fabd1374ec3e1aec78506703a56a393",
+      "started_at_utc": "2026-10-10T23:52:38.438511+00:00",
+      "completed_at_utc": "2026-10-10T23:53:49.644198+00:00",
+      "source_unchanged_in_attempt": true,
+      "normal_compiler_flags": [
+        "-j2",
+        "-M8192",
+        "-DautoImplicit=false",
+        "--root",
+        "-o",
+        "-i"
+      ],
+      "object_sha256": "911d7b979c8794a13fd8a99083dd5e4ce7f4dac5c2da7b739d2212d845bf19ea",
+      "delivered_attempt_and_published_object_equal": true
+    },
+    {
+      "run": 10,
+      "module": "Math115.LatticeSamplerCost",
+      "source": "attempts/round-10/LatticeSamplerCost.lean",
+      "source_sha256": "bd78d5a5d23d4979ff48be9cccc4f9e900f16a07dcbb5a22f190401effccfac2",
+      "compiler_exit_code": 0,
+      "elapsed_seconds": 72.11476809997112,
+      "log": "logs/round-10/LatticeSamplerCost.log",
+      "raw_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diagnostic_projection": [],
+      "raw_receipt_sha256": "e07d62f6f6396b887ea4ae49e1c920a71a607365fe6b29b485c28cbbfde75bfa",
+      "direct_dependency_object_sha256": {
+        "Math115.CompletionEncodingSize": "726f81620777ca57ddb2b485a8b16daf8cb2783952bd3e7cafd01ad6f16b6195",
+        "Math115.LatticeSampler": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f"
+      },
+      "source_closure_sha256": "eac0a4e6840e8687d7bf1036faa82635272121cb8c59286b2954fe6904098578",
+      "started_at_utc": "2026-10-11T00:02:57.116477+00:00",
+      "completed_at_utc": "2026-10-11T00:04:09.231281+00:00",
+      "source_unchanged_in_attempt": true,
+      "normal_compiler_flags": [
+        "-j2",
+        "-M8192",
+        "-DautoImplicit=false",
+        "--root",
+        "-o",
+        "-i"
+      ],
+      "object_sha256": "7a8708d41b90a3b5e79136d1a3be0406caf659e457f931c555b15476d344ecbc",
+      "delivered_attempt_and_published_object_equal": true
+    }
+  ],
+  "latest_sources": [
+    {
+      "module": "Math115.LatticeBoundedSampling",
+      "state": "completed",
+      "source": "sources/Math115/LatticeBoundedSampling.lean",
+      "source_sha256": "adc3ed0dfab422e1e2438c44e6bdda277e7a60de92b3847d0e0016d6989a451e",
+      "object_sha256": "911d7b979c8794a13fd8a99083dd5e4ce7f4dac5c2da7b739d2212d845bf19ea",
+      "raw_latest_receipt_sha256": "5d56914e2ed960ecc6534f426bff9c7e7d776f5a7ea3e078d9d1b2fcd4d05fb4",
+      "direct_dependency_object_sha256": {
+        "Math115.PublicLatticeSampler": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489"
+      },
+      "source_closure_sha256": "3ee690c9de81d70eaabb6789304508ec9fabd1374ec3e1aec78506703a56a393",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": "-M8192",
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.LatticeEmptyOutput",
+      "state": "completed",
+      "source": "sources/Math115/LatticeEmptyOutput.lean",
+      "source_sha256": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26",
+      "object_sha256": "0c8c7d907fcc37e5012849a17c73d249fcdeebf334641242a7a3ce9250c2a6b6",
+      "raw_latest_receipt_sha256": "1d684b60a495277be90c29e3fef0e036d59dc9f2d54676ad126cc02931eafdca",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeSamplerPreparation": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2"
+      },
+      "source_closure_sha256": "6d66a698c49ed8733b1f28fd9a2199deeffddc6fafdb5a9c1c23ff8d9e07b933",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": null,
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.LatticeOuterProgram",
+      "state": "completed",
+      "source": "sources/Math115/LatticeOuterProgram.lean",
+      "source_sha256": "e761386db8e26dc09ed4b2a5b22b5c66c71a2de1223d46c894f9606e9741df8b",
+      "object_sha256": "67bf311a5b2cf04d03d0ce1dfe2b7579519a018d7778bd8140e4c62c6bc99f5e",
+      "raw_latest_receipt_sha256": "683975b981f83916087cbe696585c1ccbe11b8c11bf057b049c4324eacfc1c13",
+      "direct_dependency_object_sha256": {
+        "Math115.CompletionSamplerProgram": "ed4a49097d4a688867797b4ae92efecb631299320a5bb5eb9a491c41278353e1",
+        "Math115.LatticeProfileWalk": "1ac118a11fa233dfdc2e24859e6c3c90d68a06c31ef9a06ad0b0f0fd77fc79ff",
+        "OAI.Combinatorics.ContingencyTables.Machines.FirstSuccessProgram": "8f0420f17fa2993f5cb3a7a8f481735a3e33d14931eb50775560f3ff91d498fa",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfileWordProgram": "a4c909533780990ae2e5f88de2cc172c02b0d43bed1b2abfcb200eced9104aeb"
+      },
+      "source_closure_sha256": "0304601f18b6cca4873c7ce4478a359538bcbbe755b1421b12f1555d8eeda19a",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": null,
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.LatticeOuterSemantics",
+      "state": "completed",
+      "source": "sources/Math115/LatticeOuterSemantics.lean",
+      "source_sha256": "cd22fe44345baa2ab94f2139ff004fc7fd20b8ebd42b2617234858c7cb6db3bf",
+      "object_sha256": "3997ea4115319b21a1c3aaab82a1a062e522b7f3bddf2d98609f9d51c7eba774",
+      "raw_latest_receipt_sha256": "48c882f608323b4580cbe715faab974bccd0a4441af461755d8939eb9b9d2ec0",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeOuterProgram": "67bf311a5b2cf04d03d0ce1dfe2b7579519a018d7778bd8140e4c62c6bc99f5e",
+        "Math115.LatticeSamplerPreparation": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2"
+      },
+      "source_closure_sha256": "7acbb9973d738cc1e54d183ef34abf78462b8bbc77ba1fad9caa7365acf35ef0",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": null,
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.LatticeProfileStep",
+      "state": "completed",
+      "source": "sources/Math115/LatticeProfileStep.lean",
+      "source_sha256": "f5a8b460bcc8da0e14d8139638e50a5cd76c46a6fb621c821c936c6993fafbc5",
+      "object_sha256": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+      "raw_latest_receipt_sha256": "04d2b08585b6b106dbaddbec4014d54698bc15c294a075994d8c33856d3d9d3d",
+      "direct_dependency_object_sha256": {
+        "Math115.CompletionSamplerSemantics": "d0920372c346c5b7479fe85d496bf850121bbfe7eb9fb4281a1dfe7a5168c592",
+        "Math115.PhysicalReferenceBoolean": "3b99813ab24af6b5b31c611b4cfd8eb98079844a5e34c1d49838c075067fa029",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfileTransitionProgram": "81822d1ffb813cbed374614408e7797ff18ea364c01a5673474325b6dcca16c9",
+        "OAI.Combinatorics.ContingencyTables.Transport.ListedReferenceDecision": "99a57c0b07cdb420b03cad6d540d825a3b87fd56382a0b8adc10fc0e95e516dc"
+      },
+      "source_closure_sha256": "b68efb5ee340c5c56f2696c65176afffb221cf2ee92518bb7479fb23ae793839",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": null,
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.LatticeProfileWalk",
+      "state": "completed",
+      "source": "sources/Math115/LatticeProfileWalk.lean",
+      "source_sha256": "d1786e79274b833e3afdd302237ec28eec0604a2596177ce4d4422e63e6608f7",
+      "object_sha256": "1ac118a11fa233dfdc2e24859e6c3c90d68a06c31ef9a06ad0b0f0fd77fc79ff",
+      "raw_latest_receipt_sha256": "bda53fbca829a25c8fea6c038f4098cdab6ac1ed70f482e47bb1cc9fb031a93b",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeProfileStep": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+        "OAI.Combinatorics.ContingencyTables.Transport.BoundedProfileWalk": "73930ddd89210b6f80a056d210cefdae05c29e46d3e17ebbbaf6a118f968878f"
+      },
+      "source_closure_sha256": "3810649e2e38e22ec545e1a9da3773cda02c3835572eb38d25c499cbdc656c44",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": null,
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.LatticeSampler",
+      "state": "completed",
+      "source": "sources/Math115/LatticeSampler.lean",
+      "source_sha256": "3e2d55e19d35b75816366b4e1b686e54c944719ea5b0d98565aa22995be8c7f4",
+      "object_sha256": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f",
+      "raw_latest_receipt_sha256": "b5d132625488c375199c2981d2a0830060bdb01db832b882752024cfd357a62c",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeScheduleProgram": "46388470d516fcb9a34bb8c9fc48ee5c11de554cb04ea374558e8243b645eac1",
+        "Math115.LatticeUnitOuter": "0625fd3b136d4c938a993848c78540bfe3394dccb0e8bd4c5fe1e5b0fb0f79c3"
+      },
+      "source_closure_sha256": "e2a9cebf687bb716a70a76b9d92df255bed2f6d3e3a9fe84b56bd26a13d32b09",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": "-M8192",
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.LatticeSamplerCost",
+      "state": "completed",
+      "source": "sources/Math115/LatticeSamplerCost.lean",
+      "source_sha256": "bd78d5a5d23d4979ff48be9cccc4f9e900f16a07dcbb5a22f190401effccfac2",
+      "object_sha256": "7a8708d41b90a3b5e79136d1a3be0406caf659e457f931c555b15476d344ecbc",
+      "raw_latest_receipt_sha256": "e07d62f6f6396b887ea4ae49e1c920a71a607365fe6b29b485c28cbbfde75bfa",
+      "direct_dependency_object_sha256": {
+        "Math115.CompletionEncodingSize": "726f81620777ca57ddb2b485a8b16daf8cb2783952bd3e7cafd01ad6f16b6195",
+        "Math115.LatticeSampler": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f"
+      },
+      "source_closure_sha256": "eac0a4e6840e8687d7bf1036faa82635272121cb8c59286b2954fe6904098578",
+      "receipt_reused": false,
+      "explicit_memory_cap_option": "-M8192",
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.LatticeSamplerPreparation",
+      "state": "completed",
+      "source": "sources/Math115/LatticeSamplerPreparation.lean",
+      "source_sha256": "e5d33b3c51f0709968ed257b92cd0ec8fb54244aea5e1217dd283d2b390a21b2",
+      "object_sha256": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2",
+      "raw_latest_receipt_sha256": "08a49be0510f210ac9a88a90cc6f33b24f57f04932cfe50f3da9d1751562b648",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeProfileStep": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+        "Math115.PhysicalBooleanSampler": "3b13795d4834cf621291e01847842355a020eebe183ab3c871efb107753bc36a",
+        "OAI.Combinatorics.ContingencyTables.Sampling.OriginalProfileProgram": "056c23c4e48c4776f4eb2e09c0fc7551b4bcb496cbffdcfdef8c1b99b01f524d",
+        "OAI.Combinatorics.ContingencyTables.Sampling.OuterMatrixSemantics": "6ada4e29abac9ed11bd3d52d831c3ce2dc5dd86d588f9790808973d3c041aca0",
+        "OAI.Combinatorics.ContingencyTables.Transport.BoundedProfileWalk": "73930ddd89210b6f80a056d210cefdae05c29e46d3e17ebbbaf6a118f968878f",
+        "OAI.Combinatorics.ContingencyTables.Transport.ReferenceCompletionEntries": "f45e9ef896e138ed679bf9b696c0e5ddf24ff1fee580ed517ee7d727948abd86"
+      },
+      "source_closure_sha256": "104d3a469fd5295a46eb64675b47f7683889f73df0b562c561d0ede243af9cef",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": null,
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.LatticeUnitOuter",
+      "state": "completed",
+      "source": "sources/Math115/LatticeUnitOuter.lean",
+      "source_sha256": "2c8e44d0c6ff803d21c987b87cb4b24ec21e541619d53a296c99cb0d4f891b03",
+      "object_sha256": "0625fd3b136d4c938a993848c78540bfe3394dccb0e8bd4c5fe1e5b0fb0f79c3",
+      "raw_latest_receipt_sha256": "19abfa3e748594e05db26d218657f5284fb24312acc6b7735b63d0bb4dd01efc",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeEmptyOutput": "0c8c7d907fcc37e5012849a17c73d249fcdeebf334641242a7a3ce9250c2a6b6",
+        "Math115.LatticeOuterSemantics": "3997ea4115319b21a1c3aaab82a1a062e522b7f3bddf2d98609f9d51c7eba774",
+        "Math115.LatticeUnitWalk": "c8965f88f6c8753d737c5949c0cb5f1d9a230ba637b977a761bd07e87957e0b3"
+      },
+      "source_closure_sha256": "607cbc3d62df018a48bf1ff5006649af07e766013ffebad14d91fe5bb856f4e5",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": null,
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.LatticeUnitStep",
+      "state": "completed",
+      "source": "sources/Math115/LatticeUnitStep.lean",
+      "source_sha256": "4cb0745b4a2090a6215a1817ddad24a0277793f055ec28c3896222bd9adf3805",
+      "object_sha256": "af052cb15024677e3be569bbb3a253c4d8c5d4ccb26825d62c7e51bb0eb4949e",
+      "raw_latest_receipt_sha256": "07ab9dfb2f433647e74c425b26099c812a9ea0dd1e70118eccd8106e423f06a9",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeProfileStep": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc",
+        "Math115.PhysicalBooleanSampler": "3b13795d4834cf621291e01847842355a020eebe183ab3c871efb107753bc36a"
+      },
+      "source_closure_sha256": "7dc9afbe6a91eb68a6893b68043026a3d9f859a7935c1ed7ec0402d214556087",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": null,
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.LatticeUnitWalk",
+      "state": "completed",
+      "source": "sources/Math115/LatticeUnitWalk.lean",
+      "source_sha256": "b0fc16f7890d62511c83cc366c011bd097ec40e24d4b0b739f45b8348d54a2a0",
+      "object_sha256": "c8965f88f6c8753d737c5949c0cb5f1d9a230ba637b977a761bd07e87957e0b3",
+      "raw_latest_receipt_sha256": "f20fe1c36b1491676dfcc1947414f90013b1cde513a4ce46254d57acb8a61c5a",
+      "direct_dependency_object_sha256": {
+        "Math115.LatticeProfileWalk": "1ac118a11fa233dfdc2e24859e6c3c90d68a06c31ef9a06ad0b0f0fd77fc79ff",
+        "Math115.LatticeUnitStep": "af052cb15024677e3be569bbb3a253c4d8c5d4ccb26825d62c7e51bb0eb4949e"
+      },
+      "source_closure_sha256": "a3492e48a62a87f5c072b21d3df275557a9e0de7cfeef4f22d6ce3810a694898",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": null,
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    },
+    {
+      "module": "Math115.PublicLatticeSampler",
+      "state": "completed",
+      "source": "sources/Math115/PublicLatticeSampler.lean",
+      "source_sha256": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245",
+      "object_sha256": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489",
+      "raw_latest_receipt_sha256": "7ea8df89cbf9d39e79b486a533c4e3cefa659708bc81e165ea2707fcb0a4c9e8",
+      "direct_dependency_object_sha256": {
+        "Math115.CompletionPublicSize": "009b4ec9771492a3c6440a42d251b746ae091f26e1f43f466711f108b954abe3",
+        "Math115.LatticeSampler": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f",
+        "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordTableLaw": "ad6404771858acd44242031c98da7f2fccb7fcbc8052d3a17d518a9a632d123c",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfilePublicMachine": "4abaa0f807e813ffa2a6850993c049cc1b05007316be964a7ea0522546f00267",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfilePublicSemantics": "9c64f46998ced86218b479647289f84999ceab1712030632b15ec4316941dbb3",
+        "OAI.Combinatorics.ContingencyTables.Sampling.ProfileRuntimeBound": "6a7a12cdcf4de3ec9f8973e11c6a92c73518a94e3128cc6af1e78892a0c4ee41"
+      },
+      "source_closure_sha256": "44997bbef0bef53aa841e8d804abdb19e9dc0c5cd927b8819a2e57f99201abc3",
+      "receipt_reused": true,
+      "explicit_memory_cap_option": "-M8192",
+      "audit_coverage": {
+        "status": "covered_by_round10_full_environment_audit",
+        "source_and_imported_object_match": true,
+        "summary": "audit/summary.json"
+      }
+    }
+  ],
+  "evidence_reviews": [
+    {
+      "kind": "AI-agent artifact hash/evidence review",
+      "run": 4,
+      "raw_review_sha256": "4cbbab307449163af4e080c49c520a05035c86f809077041052e9745856a4437"
+    },
+    {
+      "kind": "AI-agent artifact hash/evidence review",
+      "run": 5,
+      "raw_review_sha256": "405abc0b76bfbdd756218ad96f5f520ea6383709165f16dfce87a7d6ed52d942"
+    },
+    {
+      "kind": "AI-agent recovered Walk artifact/receipt review",
+      "run": 2,
+      "raw_review_sha256": "3fd232f47f7cb19273feb0634dac2458b1be98b5292a0fc26cee2599f78084a6"
+    },
+    {
+      "kind": "Historical AI-agent base projection review through R7; not a review of later increments",
+      "public_projection": "reviews/base-artifact-review.json",
+      "raw_review_sha256": "d0db7552e78705b4d5b387d8a99c94d351cab4ff4ac353f81796e8255d374cf3",
+      "public_projection_sha256": "9bad27a8d608ff00c4078ffb72ab52697b9172ef1dd6dc7d42297ea9a7a2524d"
+    },
+    {
+      "kind": "Historical AI-agent publication/evidence projection review through R8; not R9 promotion",
+      "public_projection": "reviews/round8-publication-review.json",
+      "raw_review_sha256": "2d1304c2c9784ff80ee2a5f45befe6efdf6d7cc2c60eb542c5045fae719a371e",
+      "public_projection_sha256": "3b0ac6fa9e47e06179efb798d8b0c56e2a1a2759a09aafc2856be21e3fea4519"
+    }
+  ],
+  "related_strict_fixture": {
+    "status": "authenticated_tiny_fixture_acceptance",
+    "scope": "Tiny test fixture only; not original challenge exports or new sampler",
+    "separate_package_reference": "../strict-comparator-smoke/README.md"
+  },
+  "compiled_objects_distributed": false,
+  "source_and_diagnostic_policy": "Exact attempted sources. Compiler logs replace only personal checkout prefixes with formal/; retain complete diagnostics, line endings, raw and projected hashes. No historical failures deleted.",
+  "trust_limits": [
+    "Ordinary Lean trusts pinned compiler/bootstrap and dependency caches.",
+    "Most live dependency/runtime objects and full private metadata are not vendored.",
+    "AI-agent artifact review is separate from outside human review and independent kernel execution.",
+    "Recorded .ilean hashes do not constitute downloaded-byte verification.",
+    "The tiny strict fixture must be described in its separate scope; it does not verify the sampler.",
+    "Full R10 audit and semantic readback verify the stated ordinary bounded-sampling machine guarantee. No numerical runtime degree, measured superiority, exact sampling/counting, standalone exported binary, fresh Linux overlay or strict sampler comparison is established.",
+    "Full R10 audit and semantic readback verify the stated ordinary bounded-sampling machine guarantee. No numerical runtime degree, measured superiority, exact sampling/counting, standalone exported binary, fresh Linux overlay or strict sampler comparison is established."
+  ],
+  "source_replay_boundary": "Use each latest attempted source receipt\u2019s explicit -M setting; no assertion that older reused objects were compiled under the new cap. The recipe is ordinary source replay, not exact native atomic/cache orchestration.",
+  "full_environment_audit": {
+    "status": "passed_actual_full_audit_artifact_review_and_semantic_readback",
+    "scope": "Full selected normal graph and exact compiled headline/program-identity closures; semantic readback passed and separately bound",
+    "summary": "audit/summary.json",
+    "selected_module_roots": [
+      "Math115",
+      "Math115.AdaptiveDenseCompletion",
+      "Math115.AllSmallChainGap",
+      "Math115.CompletionAcceptance",
+      "Math115.CompletionAdjustment",
+      "Math115.CompletionBooleanRetry",
+      "Math115.CompletionCountBound",
+      "Math115.CompletionEncodingSize",
+      "Math115.CompletionOuterSchedule",
+      "Math115.CompletionPublicSize",
+      "Math115.CompletionRandomBudget",
+      "Math115.CompletionRandomBudgetArithmetic",
+      "Math115.CompletionRetryBudget",
+      "Math115.CompletionSamplerProgram",
+      "Math115.CompletionSamplerSemantics",
+      "Math115.CompletionScheduleArithmetic",
+      "Math115.DenseLatticeCompletion",
+      "Math115.DenseLatticeCompletionProvedInputs",
+      "Math115.DilatedCompletionMargins",
+      "Math115.GlobalDisplayOwnership",
+      "Math115.IdealOracleScales",
+      "Math115.IdealRepairRefinement",
+      "Math115.LatticeBoundedSampling",
+      "Math115.LatticeCellVolume",
+      "Math115.LatticeCompletion",
+      "Math115.LatticeCompletionAccuracy",
+      "Math115.LatticeCompletionFinite",
+      "Math115.LatticeCompletionLaw",
+      "Math115.LatticeCompletionProgram",
+      "Math115.LatticeEmptyOutput",
+      "Math115.LatticeOuterProgram",
+      "Math115.LatticeOuterSemantics",
+      "Math115.LatticeProfileStep",
+      "Math115.LatticeProfileWalk",
+      "Math115.LatticeSampler",
+      "Math115.LatticeSamplerCost",
+      "Math115.LatticeSamplerPreparation",
+      "Math115.LatticeScheduleProgram",
+      "Math115.LatticeUnitOuter",
+      "Math115.LatticeUnitStep",
+      "Math115.LatticeUnitWalk",
+      "Math115.ListedLatticeCompletion",
+      "Math115.PaddedMarginBridge",
+      "Math115.PaddingGrowth",
+      "Math115.PaddingGrowthAlgebra",
+      "Math115.PathDistanceSum",
+      "Math115.PathVariance",
+      "Math115.PhysicalApproximateOracle",
+      "Math115.PhysicalBooleanSampler",
+      "Math115.PhysicalCompletionOracle",
+      "Math115.PhysicalComputedProposal",
+      "Math115.PhysicalEmptyCompletion",
+      "Math115.PhysicalExposureVariance",
+      "Math115.PhysicalFiniteWalk",
+      "Math115.PhysicalFullVariance",
+      "Math115.PhysicalLatticeCompletion",
+      "Math115.PhysicalLeafEnergy",
+      "Math115.PhysicalRationalKernel",
+      "Math115.PhysicalReferenceBoolean",
+      "Math115.PhysicalReferenceWalk",
+      "Math115.PhysicalRepairRefinement",
+      "Math115.PhysicalStateNonempty",
+      "Math115.PhysicalStationaryLaw",
+      "Math115.PhysicalStationaryMass",
+      "Math115.PhysicalStationarySuccess",
+      "Math115.PrefixFloorCover",
+      "Math115.PrefixTransportation",
+      "Math115.PublicLatticeSampler",
+      "Math115.QuadraticCoefficient",
+      "Math115.ReducedAllSmallChain",
+      "Math115.ReducedRepairRefinement",
+      "Math115.ReducedSmallChain",
+      "Math115.ReferenceEdgeAcceptance",
+      "Math115.RepairCoefficient",
+      "Math115.RepairVarianceRefinement",
+      "Math115.ScaleCertificate",
+      "Math115.SmallChainGap",
+      "Math115.SmallEntrySwitching",
+      "Math115.SmallEntryTail",
+      "Math115.SurvivalAlgebra",
+      "Math115.SwitchingFiniteSums",
+      "Math115.TransportRefinement",
+      "Math115.UpstreamOwnershipBridge",
+      "Math115.WidthWeightedTransport",
+      "OAI.Combinatorics.ContingencyTables.Dense.DenseCanonicalSemantics",
+      "OAI.Combinatorics.ContingencyTables.Dense.FiniteBoxPrekopa",
+      "OAI.Combinatorics.ContingencyTables.Dense.FiniteCheegerProof",
+      "OAI.Combinatorics.ContingencyTables.Transport.IntegerLeafEnergy",
+      "OAI.Combinatorics.ContingencyTables.Transport.IntegerRootTransport"
+    ],
+    "covered_research_modules": [
+      "Math115.LatticeBoundedSampling",
+      "Math115.LatticeEmptyOutput",
+      "Math115.LatticeOuterProgram",
+      "Math115.LatticeOuterSemantics",
+      "Math115.LatticeProfileStep",
+      "Math115.LatticeProfileWalk",
+      "Math115.LatticeSampler",
+      "Math115.LatticeSamplerCost",
+      "Math115.LatticeSamplerPreparation",
+      "Math115.LatticeUnitOuter",
+      "Math115.LatticeUnitStep",
+      "Math115.LatticeUnitWalk",
+      "Math115.PublicLatticeSampler"
+    ],
+    "summary_sha256": "90753ca58c966af234d72c4b3448415a5fa61bc382f5d6f398649c6b67a4f66e",
+    "semantic_readback_status": "PASS",
+    "historical_module_audit_index": "audit/history/index.json"
+  },
+  "semantic_claim_readback": {
+    "status": "PASS",
+    "manifest": "semantic/manifest.json",
+    "manifest_sha256": "0e4e9c43ade6efcb8657f81b7cea5e9ef1495e166520dda16ad9dbc2dabcf833",
+    "headline_index": "semantic/headline-index.json",
+    "headline_index_sha256": "1da82f25495a860421a1caf4271cd778c78a70a41286cf6400ed2f7bddfbae2e",
+    "readback": "semantic/semantic-readback.json",
+    "readback_sha256": "548c93f95ac65ee2bf6185e9f896dec51091d67df463af364ef1bd01a72ef5f2",
+    "claim_table": "semantic/claim-table.md",
+    "claim_table_sha256": "52f463a259ee4405e2d39dd2f1e1fe8041a77c62d11200ad4fe63fa873396af2",
+    "definition_correction": "Historical conditional parser-name expectations were misqualified; actual ProfilePrograms.parsedSampling is recorded by the exact readback. Conditional map remains unchanged privately."
+  },
+  "verified_final_claim": {
+    "declaration": "Math115.LatticeBoundedSampling.boundedSampling",
+    "scope": "One fixed fair-bit machine; finite dimensions, natural margins with equal totals, precision h>=1; empty dimensions and zero margins allowed",
+    "quantity": "Every-tape halting and feasible output at one globally polynomial time C*S^D; same-time normalized TV<=2^-h from ordinary table-uniform law",
+    "size_measure": "S=m+n+clog2(sum(r)+1)+h+1; h is numeric precision",
+    "route_identity": "Actual final closure includes selectedChain_poincare_d17_refined, idealU=5d^3, idealL=3d, computed schedule, both implemented completion branches, greedy fallback and fresh bits",
+    "runtime_limit": "Global polynomial degree exists; numeric complete exponent has not been extracted. d17 gap and S170 reserved bits are separate quantities."
+  },
+  "source_comment_status_policy": "Author-time source-only/uncompiled headers are preserved byte-exact. Current source-bound compiler/audit receipts determine this checkpoint status.",
+  "artifact_manifest": "manifest.json",
+  "companion_checkpoint_page": "docs/outer-sampler-compiler-checkpoint.md",
+  "snapshot_label_policy": "Publication-state and frozen/private/pending-review strings record creation-time snapshot labels, not live publication approval. Later final publication review is a separate additive receipt; historical audited evidence is not rewritten."
+}

@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "status": "passed_module_environment_audit",
+  "scope": "Eight selected successful module roots and their compiled import environment; not current aggregate or complete sampler audit.",
+  "root_modules": [
+    "Math115.LatticeProfileStep",
+    "Math115.LatticeProfileWalk",
+    "Math115.LatticeUnitStep",
+    "Math115.LatticeUnitWalk",
+    "Math115.LatticeOuterProgram",
+    "Math115.LatticeOuterSemantics",
+    "Math115.LatticeSamplerPreparation",
+    "Math115.LatticeEmptyOutput"
+  ],
+  "normal_source_plan_closure_modules": 593,
+  "required_public_declarations": 210,
+  "resolved_actual_private_helpers": [
+    {
+      "actual_compiled_name": "_private.Math115.LatticeProfileStep.0.Math115.LatticeProfileStep.apply_decision",
+      "axioms": [],
+      "defining_module": "Math115.LatticeProfileStep",
+      "record_sha256": "72b3d967582882bc425cd9043597069f770238bb9499ce3c6cb5106260ec50c7",
+      "resolution": "MUST resolve from actual compiled environment; never accept guessed canonical private name",
+      "source_name": "apply_decision",
+      "statement": "∀ {X : Type u_1} {Y : Type u_2} (encode : X → Y) (x y : X) (test : Bool) (accept : Prop) [inst : Decidable accept],\n  (test = true ↔ accept) → (if test = true then encode y else encode x) = encode (if accept then y else x)"
+    },
+    {
+      "actual_compiled_name": "_private.Math115.LatticeProfileStep.0.Math115.LatticeProfileStep.completionDecision_some_formula",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "defining_module": "Math115.LatticeProfileStep",
+      "record_sha256": "09304ba2c513e291ec8e4551bba3074539ad042aeaa8c522921c9178a058ae62",
+      "resolution": "MUST resolve from actual compiled environment; never accept guessed canonical private name",
+      "source_name": "completionDecision_some_formula",
+      "statement": "∀ {X : Type u_1} {I : Type u_2} {J : Type u_3} [inst : Fintype I] [inst_1 : Fintype J] (R : X → Option I → ℕ)\n  (P : X → Option J → ℕ) (x y : X) (A : OAI.ContingencyTables.Table (R x) (P x)),\n  OAI.ContingencyTables.CompletionTranslation.completionDecision R P x (some y) A =\n    if\n        ∀ (i : Option I) (j : Option J),\n          0 ≤ ↑(↑A i j) + OAI.ContingencyTables.CompletionTranslation.between (R x) (R y) (P x) (P y) i j then\n      y\n    else x"
+    },
+    {
+      "actual_compiled_name": "_private.Math115.LatticeUnitStep.0.Math115.LatticeUnitStep.ofFn_take_prefix",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "defining_module": "Math115.LatticeUnitStep",
+      "record_sha256": "d5ae751c323a18ace192455a91c1ee7d8bbe98ab2addf0959c2e01cf1b068bec",
+      "resolution": "MUST resolve from actual compiled environment; never accept guessed canonical private name",
+      "source_name": "ofFn_take_prefix",
+      "statement": "∀ {k N : ℕ} (hk : k ≤ N) (bits : Fin N → Bool),\n  List.take k (List.ofFn bits) = List.ofFn (OAI.ContingencyTables.FirstSuccess.prefixWord hk bits)"
+    }
+  ],
+  "actual_environment_inventory_counts": {
+    "declarations": 23181,
+    "headlines": 0,
+    "imported_modules": 11859,
+    "theorems": 16737
+  },
+  "inventory_count_interpretation": "Selected namespace environment includes transitive/upstream/generated declarations. These counts are not new results or theorems from just the eight roots.",
+  "headline_audits": 0,
+  "full_mode_on_incomplete_batch": "correctly refused; no full-chain result",
+  "actual_report": {
+    "public_file": "environment-report.json.gz",
+    "raw_file": "environment-audit.stdout",
+    "raw_sha256": "0eda2a4bb562bf3f15b18e648c0f23be375f9cca21b37ac85c7288b97c9eea75",
+    "public_sha256": "2b20792aef097972506c30721565d8c59f2396ad5f70ee2424c4e21f826c0ffd",
+    "decompressed_sha256": "0eda2a4bb562bf3f15b18e648c0f23be375f9cca21b37ac85c7288b97c9eea75",
+    "transform": "gzip filename empty, mtime 0; original report bytes retained; private-path scan clean; no statement/type/axiom transformation"
+  },
+  "executed_driver_raw_sha256": "d9eded5eb70f5c8ffe96d24447a4e45cfd0cec21b9822535e1dda2fefa4d6cfd",
+  "executed_helper_source_raw_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+  "recorded_helper_object_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581",
+  "binary_helper_object_distributed": false,
+  "prepared_config_raw_sha256": "5705153f2619229bb20e5362bb3fb38c93a98e0aec7cf9d05d22d331c8e654a6",
+  "executed_frozen_config_raw_sha256": "86b133ae88db86ad28a758354dd5002b3367b1c318ad7d29ed0e8c0472523984",
+  "imported_object_closure_raw_sha256": "7a2cd17d753e38d1502c7cd3d9600d9613b6d62c4c1b6d95379fabcca98943c0",
+  "imported_object_closure_canonical_sha256": "0e07acdf29737c061f7f59a015fed9dc5f83d523c01faeddabb5d16a3864603a",
+  "unchanged_inventory_pairs": [
+    {
+      "kind": "compile",
+      "before_raw_sha256": "7f980fb9e8908da6cc877d63ebcdda1ff531341aa58004cf487129d70744c41f",
+      "after_raw_sha256": "7f980fb9e8908da6cc877d63ebcdda1ff531341aa58004cf487129d70744c41f",
+      "raw_pair_byte_identical": true,
+      "raw_pair_json_identical": true,
+      "public_single_snapshot": "compile-inventory.json.gz",
+      "public_sha256": "588962d728d232dd5a75ae8f737239f5dc4d87e4806aea02fd6687c38fdecec6",
+      "deduplication": "Only one copy of unchanged before/after pair included"
+    },
+    {
+      "kind": "audit",
+      "before_raw_sha256": "9b1827e6c87a7d7423d886b6eaab201c390b1210fe3a3727a62ea3ae0b212834",
+      "after_raw_sha256": "9b1827e6c87a7d7423d886b6eaab201c390b1210fe3a3727a62ea3ae0b212834",
+      "raw_pair_byte_identical": true,
+      "raw_pair_json_identical": true,
+      "public_single_snapshot": "audit-inventory.json.gz",
+      "public_sha256": "a5a656f34d3dea2c3c4d37ee1d17ec031193778aa481965af9987434e84e0d7f",
+      "deduplication": "Only one copy of unchanged before/after pair included"
+    }
+  ],
+  "compiler_stage_streams": {
+    "compiler-version.stdout": {
+      "raw_sha256": "caa538834571fbbf53913bbde24b9fd3d9deac746137443a1c712d820e6a5b38",
+      "public_file": "compiler-version.stdout",
+      "public_sha256": "caa538834571fbbf53913bbde24b9fd3d9deac746137443a1c712d820e6a5b38",
+      "transformation": "none"
+    },
+    "compiler-version.stderr": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_file": "empty-stage-stream",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "none"
+    },
+    "compiler-prefix.stdout": {
+      "raw_sha256": "9799c0da6abd244ac6da2a0c0fdfcb086db278d027e46581f671845ca24d668e",
+      "public_file": "compiler-prefix-projected.stdout",
+      "public_sha256": "1e454c890c022dcca5098de35f26ff9017fd84024d6b124c32d20a9cbe3b5aa3",
+      "transformation": "role-token pinned compiler path projection"
+    },
+    "compiler-prefix.stderr": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_file": "empty-stage-stream"
+    },
+    "helper-compile.stdout": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_file": "empty-stage-stream"
+    },
+    "helper-compile.stderr": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_file": "empty-stage-stream"
+    },
+    "environment-audit.stderr": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_file": "empty-stage-stream"
+    }
+  },
+  "raw_download_manifest_sha256": "cb2e9cf34d1083452e624fc97f22f0a5494a1909161f603330bb45f92ee4c096",
+  "independent_ai_review_raw_sha256": "a3d004b8dc4622a54245a683a77711943d0ba9338abb72fe92236c0d3e7e5977",
+  "evidence_kind": "Actual native Lean environment audit plus operator source/object checks and independent AI-agent saved-evidence/verifier replay.",
+  "trusted_and_unvendored": [
+    "Pinned native compiler/bootstrap and official dependency caches remain trusted.",
+    "Most imported runtime/dependency objects and system loader/OS/Python services are not vendored.",
+    "Public metadata path projections preserve digests/roles but are not raw original metadata bytes.",
+    "Executed audit input ordering/imports and statement types/axioms remain actual evidence; ordinary source replay is a different recipe."
+  ],
+  "portable_recipe_status": "No fully portable environment-audit recipe tested or claimed here; reproduce.sh is an ordinary source replay only.",
+  "claims_boundary": "No complete encoded sampler, aggregate/full-chain or public machine runtime claim; strict tiny fixture remains a separate scope.",
+  "artifact_projection_map": [
+    {
+      "public_file": "environment-report.json.gz",
+      "raw_file": "environment-audit.stdout",
+      "raw_sha256": "0eda2a4bb562bf3f15b18e648c0f23be375f9cca21b37ac85c7288b97c9eea75",
+      "public_sha256": "2b20792aef097972506c30721565d8c59f2396ad5f70ee2424c4e21f826c0ffd",
+      "decompressed_sha256": "0eda2a4bb562bf3f15b18e648c0f23be375f9cca21b37ac85c7288b97c9eea75",
+      "transform": "gzip filename empty, mtime 0; original report bytes retained; private-path scan clean; no statement/type/axiom transformation"
+    },
+    {
+      "public_file": "Audit.lean",
+      "raw_file": "Audit.lean",
+      "raw_sha256": "d9eded5eb70f5c8ffe96d24447a4e45cfd0cec21b9822535e1dda2fefa4d6cfd",
+      "public_sha256": "d9eded5eb70f5c8ffe96d24447a4e45cfd0cec21b9822535e1dda2fefa4d6cfd",
+      "transform": "none; exact executed bytes"
+    },
+    {
+      "public_file": "helper-source/ResearchAudit/EnvironmentAudit.lean",
+      "raw_file": "helper-source/ResearchAudit/EnvironmentAudit.lean",
+      "raw_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "public_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "transform": "none; exact executed bytes"
+    },
+    {
+      "public_file": "config.json",
+      "raw_file": "audit-output/frozen-config.json",
+      "raw_sha256": "86b133ae88db86ad28a758354dd5002b3367b1c318ad7d29ed0e8c0472523984",
+      "public_sha256": "fc52ecea2f9511d2e05a9ad35107d8972ef940170fa2ce4dc5829331b8ecc225",
+      "decompressed_public_sha256": null,
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved"
+    },
+    {
+      "public_file": "receipt.json",
+      "raw_file": "audit-output/receipt.json",
+      "raw_sha256": "9672a67a7cbca58e71860310e36dd79914e3f79f18eb7b56eee8a0a5cf70d734",
+      "public_sha256": "5ec9bc2faeb21e63976c39badeb0ee329d89206b97f070c4ab1e9913c2305686",
+      "decompressed_public_sha256": null,
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved"
+    },
+    {
+      "public_file": "imported-object-closure.json.gz",
+      "raw_file": "audit-output/imported-object-closure.json",
+      "raw_sha256": "7a2cd17d753e38d1502c7cd3d9600d9613b6d62c4c1b6d95379fabcca98943c0",
+      "public_sha256": "7f68fb5f31ac5f6593cef32e51bc17ce2712e1cb91900703c372d0d3f37f2115",
+      "decompressed_public_sha256": "578bdec26c2d9512d334a321638e649292434577ca1a2344d71b2e86f0d53d38",
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved; deterministic gzip mtime 0"
+    },
+    {
+      "public_file": "selection.json",
+      "raw_file": "audit-prepared/selection.json",
+      "raw_sha256": "f428da5c14445df8f285075474f3e3c6ebf6229a50d40c2923102d56653a996e",
+      "public_sha256": "f428da5c14445df8f285075474f3e3c6ebf6229a50d40c2923102d56653a996e",
+      "transform": "JSON role-token path projection; selection values preserved"
+    },
+    {
+      "public_file": "compile-inventory.json.gz",
+      "raw_file": "audit-output/compile-before.json",
+      "raw_sha256": "7f980fb9e8908da6cc877d63ebcdda1ff531341aa58004cf487129d70744c41f",
+      "public_sha256": "588962d728d232dd5a75ae8f737239f5dc4d87e4806aea02fd6687c38fdecec6",
+      "decompressed_public_sha256": "789726157ce1a41d630dbe59102e977189cf39392cbc0b110197a7feb78562e0",
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved; deterministic gzip mtime 0"
+    },
+    {
+      "public_file": "audit-inventory.json.gz",
+      "raw_file": "audit-output/audit-before.json",
+      "raw_sha256": "9b1827e6c87a7d7423d886b6eaab201c390b1210fe3a3727a62ea3ae0b212834",
+      "public_sha256": "a5a656f34d3dea2c3c4d37ee1d17ec031193778aa481965af9987434e84e0d7f",
+      "decompressed_public_sha256": "94495b33bb16b3ed403db58719a6fe9f7aca0d9735d9eaabdad512923ed74b1e",
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved; deterministic gzip mtime 0"
+    },
+    {
+      "public_file": "intake-verification.json",
+      "raw_file": "audit-intake-verification.json",
+      "raw_sha256": "a82fe7cf4b76226bd03c6fb2b89ecd0fdbfa2d1427c8cf6ab62c9773d16a9009",
+      "public_sha256": "94dc517553365d0ddf690fda895cabc4791c3c8dccc088e2c42cb8b254e6cd7c",
+      "decompressed_public_sha256": null,
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved"
+    },
+    {
+      "public_file": "operator-review.json",
+      "raw_file": "audit-root-evidence-review.json",
+      "raw_sha256": "880a1cc7ca783e64e67de75ceb0c801120608cb6fb7a136d32d5f9fe22e4bfce",
+      "public_sha256": "880a1cc7ca783e64e67de75ceb0c801120608cb6fb7a136d32d5f9fe22e4bfce",
+      "decompressed_public_sha256": null,
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved"
+    },
+    {
+      "public_file": "independent-ai-review.json",
+      "raw_file": "audit-independent-review.json",
+      "raw_sha256": "a3d004b8dc4622a54245a683a77711943d0ba9338abb72fe92236c0d3e7e5977",
+      "public_sha256": "a3d004b8dc4622a54245a683a77711943d0ba9338abb72fe92236c0d3e7e5977",
+      "decompressed_public_sha256": null,
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved"
+    }
+  ]
+}

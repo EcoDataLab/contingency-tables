@@ -1,0 +1,37 @@
+formal\Math115\LatticeUnitStep.lean:33:14: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+formal\Math115\LatticeUnitStep.lean:136:73: error: Tactic `rfl` failed: The left-hand side
+  (Option.map (computedStateCode r c IdealOracleScales.cutoff IdealOracleScales.padding) (Option.some val✝)).getD
+    (PhysicalComputedProposal.stateCode r c IdealOracleScales.cutoff IdealOracleScales.padding
+      (PhysicalComputedProposal.computedCellEquiv r c IdealOracleScales.cutoff) x)
+is not definitionally equal to the right-hand side
+  PhysicalComputedProposal.stateCode r c IdealOracleScales.cutoff IdealOracleScales.padding
+    (PhysicalComputedProposal.computedCellEquiv r c IdealOracleScales.cutoff) ((Option.some val✝).getD x)
+
+case some
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+htotal : ∑ i, r i = ∑ j, c j
+h : ℕ
+x : States r c IdealOracleScales.cutoff IdealOracleScales.padding
+proposal : Fin (Nat.clog 2 (32 * dimensionAllowance ^ 2)) → Bool
+completion : List Bool
+hp :
+  codeNeighborProposal
+      ((((cellCatalog (firstPaperSmall r c IdealOracleScales.cutoff)
+                (PhysicalComputedProposal.computedCellEquiv r c IdealOracleScales.cutoff),
+              PhysicalComputedProposal.stateCode r c IdealOracleScales.cutoff IdealOracleScales.padding
+                (PhysicalComputedProposal.computedCellEquiv r c IdealOracleScales.cutoff) x),
+            List.ofFn r, List.ofFn c),
+          IdealOracleScales.cutoff),
+        List.ofFn proposal) =
+    Option.map (computedStateCode r c IdealOracleScales.cutoff IdealOracleScales.padding)
+      (computedProposal r c IdealOracleScales.cutoff IdealOracleScales.padding x proposal)
+val✝ : States r c IdealOracleScales.cutoff IdealOracleScales.padding
+⊢ (Option.map (computedStateCode r c IdealOracleScales.cutoff IdealOracleScales.padding) (Option.some val✝)).getD
+      (PhysicalComputedProposal.stateCode r c IdealOracleScales.cutoff IdealOracleScales.padding
+        (PhysicalComputedProposal.computedCellEquiv r c IdealOracleScales.cutoff) x) =
+    PhysicalComputedProposal.stateCode r c IdealOracleScales.cutoff IdealOracleScales.padding
+      (PhysicalComputedProposal.computedCellEquiv r c IdealOracleScales.cutoff) ((Option.some val✝).getD x)

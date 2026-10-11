@@ -104,7 +104,7 @@
         "Equal-total natural margins, including zero margins and empty dimensions; uniform reserved bits."
       ],
       "limitations": [
-        "The typed law uses noncomputable constructions; a complete encoded outer walker remains open."
+        "This typed-law statement alone does not identify a literal encoded outer walker; the later research checkpoint has separate evidence."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -138,7 +138,7 @@
         "Completion: d≥14, equal totals, dimension/free-coordinate bounds, dense margins; supplied finite word. Schedule: encoded margins and precision input."
       ],
       "limitations": [
-        "No proved full encoded outer sampler or full machine-cost exponent."
+        "These component statements do not give the complete public machine's numerical runtime exponent."
       ],
       "evidence_class": "lean_component_cost",
       "sources": [

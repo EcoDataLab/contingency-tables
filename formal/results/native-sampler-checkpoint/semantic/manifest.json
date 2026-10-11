@@ -1,0 +1,19 @@
+{
+  "files": {
+    "claim-table.md": {
+      "sha256": "52f463a259ee4405e2d39dd2f1e1fe8041a77c62d11200ad4fe63fa873396af2",
+      "size_bytes": 7915
+    },
+    "headline-index.json": {
+      "sha256": "1da82f25495a860421a1caf4271cd778c78a70a41286cf6400ed2f7bddfbae2e",
+      "size_bytes": 89306
+    },
+    "semantic-readback.json": {
+      "sha256": "548c93f95ac65ee2bf6185e9f896dec51091d67df463af364ef1bd01a72ef5f2",
+      "size_bytes": 46109
+    }
+  },
+  "schema_version": 1,
+  "scope": "Compact actual semantic readback projection; full audit report is bound by digest, not duplicated.",
+  "status": "frozen"
+}

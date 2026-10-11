@@ -1,0 +1,37 @@
+{
+  "actual_af_unix_no_new_privileges_and_landrun_denials_passed": true,
+  "actual_collection_exit_code": 0,
+  "actual_effective_capabilities": 0,
+  "actual_fixture_exit_code": 0,
+  "actual_guest_resources": {
+    "cpu_count": 4,
+    "guest_free_disk_bytes": 65061240832,
+    "mem_available_bytes": 5570945024,
+    "mem_total_bytes": 6205075456,
+    "swap_total_bytes": 0
+  },
+  "actual_kernel": "7.3.0-8-generic",
+  "actual_kernel_acceptance_messages": [
+    "Running Lean default kernel on solution.",
+    "Lean default kernel accepts the solution",
+    "Your solution is okay!"
+  ],
+  "actual_landlock_abi": 11,
+  "actual_original_baseline_run": false,
+  "actual_stages_passed": 10,
+  "actual_uid": 1000,
+  "archive_sha256": "067091c21a10c9c4b39f9ff1169c188ec765d6cb6400e4ab5b18dab16ab3082c",
+  "compiler_sampling_caveat": "250 ms matching-executable telemetry; this is not a hard OS execution gate. The Comparator Lean-prefix query can contribute to the observed peak.",
+  "final_original_project_files": {},
+  "guest_receipt_sha256": "8f33387969c677621f8a45a097fb523650667b766dee61234734a0efb2fc18f2",
+  "immutable_retained_artifact_hashes_unchanged": true,
+  "initial_original_project_files": 0,
+  "outer_elapsed_seconds": 340.7695279000327,
+  "owned_processes_absent": true,
+  "scope": "separate True-only strict tiny fixture; original three-theorem challenge remains unverified",
+  "source_and_object_guards_passed": true,
+  "status": "authenticated_fixture_comparison_passed",
+  "tested_fixture_sha256": "a68fc81971f0ccfbd6808dd20161a0b2fd839b5abbd1e44b9e9875ab2b8716ff",
+  "tested_no_build_adapter_sha256": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7",
+  "tested_shared_runner_sha256": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e"
+}

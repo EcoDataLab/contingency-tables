@@ -1,0 +1,599 @@
+{
+  "actual_counts": {
+    "declarations": 25448,
+    "headlines": 22,
+    "imported_modules": 11951,
+    "theorems": 18054
+  },
+  "actual_route_records": [
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.PhysicalBooleanSampler.draw_explicit_accuracy",
+        "Math115.PhysicalBooleanSampler.draw_variation",
+        "Math115.PhysicalFiniteWalk.idealOuterLaw_variation",
+        "Math115.IdealRepairRefinement.selectedChain_poincare_d17_refined"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.IdealRepairRefinement",
+      "name": "Math115.IdealRepairRefinement.selectedChain_poincare_d17_refined",
+      "record_canonical_sha256": "2a4eb13863a766414d2981cd5a19f2ce23fd69c62320c9ed4a5e1621c0d986bb",
+      "statement": "\u2200 {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J] (r : I \u2192 \u2115)\n  (c : J \u2192 \u2115) [inst_4 : Nonempty (Math115.IdealOracleScales.IdealStates r c)]\n  (H : Math115.IdealOracleScales.IdealStates r c \u2192 \u211d),\n  (Math115.IdealOracleScales.selectedChain r c).variance H \u2264\n    128 * 5 ^ 4 * \u2191OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 17 *\n      (Math115.IdealOracleScales.selectedChain r c).energy H"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.machineTime_public_bound",
+        "Math115.PublicLatticeSampler.public_wordMeasure_bound",
+        "Math115.CompletionOuterSchedule.physicalSmallCount",
+        "Math115.IdealOracleScales.cutoff",
+        "Math115.IdealOracleScales.idealU"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.IdealOracleScales",
+      "name": "Math115.IdealOracleScales.idealU",
+      "record_canonical_sha256": "3f296d18e8d392ea8037d4518a6afd1b8d39d96c974f86ef7f1aa20638e30d47",
+      "statement": "\u2115 \u2192 \u2115"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.CompletionOuterSchedule.physicalMassBase",
+        "Math115.IdealOracleScales.padding",
+        "Math115.IdealOracleScales.idealL"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.IdealOracleScales",
+      "name": "Math115.IdealOracleScales.idealL",
+      "record_canonical_sha256": "c0cefa9453b73f9890a7919b6f8a89fa0b178a493e772fbb07fd37432c5350e1",
+      "statement": "\u2115 \u2192 \u2115"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.LatticeScheduleProgram.totalBits",
+        "Math115.LatticeScheduleProgram.attemptBits",
+        "Math115.LatticeScheduleProgram.walkSteps"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.LatticeScheduleProgram",
+      "name": "Math115.LatticeScheduleProgram.walkSteps",
+      "record_canonical_sha256": "800067e86b017e0f0298dde024e29fe9fd84804c69188e8cb3d89aee6aa3938b",
+      "statement": "Math115.LatticeScheduleProgram.ScheduleInput \u2192 \u2115"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.LatticeScheduleProgram.totalBits_ofFn",
+        "Math115.LatticeScheduleProgram.attemptBits_ofFn",
+        "Math115.LatticeScheduleProgram.walkSteps_ofFn"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.LatticeScheduleProgram",
+      "name": "Math115.LatticeScheduleProgram.walkSteps_ofFn",
+      "record_canonical_sha256": "754c3aa153650d5b3f9bfd55a4e4c46485eaa321fe34955e87087c036d5b9348",
+      "statement": "\u2200 {m n : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115) (h : \u2115),\n  Math115.LatticeScheduleProgram.walkSteps ((List.ofFn r, List.ofFn c), h) =\n    Math115.CompletionOuterSchedule.walkCount (Math115.CompletionOuterSchedule.physicalSmallCount r c)\n      OAI.ContingencyTables.CompletionCounts.dimensionAllowance (Math115.CompletionOuterSchedule.physicalMassBase r) h"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeScheduleProgram.schedule_ofFn"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.LatticeScheduleProgram",
+      "name": "Math115.LatticeScheduleProgram.schedule_ofFn",
+      "record_canonical_sha256": "38a409044ff346a86a818ad85d40ca2baf48970233bf67a7b68c13877ef68273",
+      "statement": "\u2200 {m n : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115) (h : \u2115),\n  Math115.LatticeScheduleProgram.schedule ((List.ofFn r, List.ofFn c), h) =\n    (((((Math115.CompletionOuterSchedule.walkCount (Math115.CompletionOuterSchedule.physicalSmallCount r c)\n                OAI.ContingencyTables.CompletionCounts.dimensionAllowance\n                (Math115.CompletionOuterSchedule.physicalMassBase r) h,\n              Math115.CompletionRandomBudget.proposalReservation\n                OAI.ContingencyTables.CompletionCounts.dimensionAllowance),\n            Math115.PhysicalLatticeCompletion.reservedCompletionBits r\n              (Math115.CompletionOuterSchedule.stepPrecision (Math115.CompletionOuterSchedule.physicalSmallCount r c)\n                OAI.ContingencyTables.CompletionCounts.dimensionAllowance\n                (Math115.CompletionOuterSchedule.physicalMassBase r) h)),\n          Math115.CompletionOuterSchedule.terminalPrecision (Math115.CompletionOuterSchedule.physicalSmallCount r c) h,\n          Math115.PhysicalLatticeCompletion.reservedCompletionBits r\n            (Math115.CompletionOuterSchedule.terminalPrecision (Math115.CompletionOuterSchedule.physicalSmallCount r c)\n              h)),\n        Math115.CompletionOuterSchedule.restartCount (Math115.CompletionOuterSchedule.physicalSmallCount r c) h),\n      Math115.CompletionOuterSchedule.stepPrecision (Math115.CompletionOuterSchedule.physicalSmallCount r c)\n        OAI.ContingencyTables.CompletionCounts.dimensionAllowance (Math115.CompletionOuterSchedule.physicalMassBase r)\n        h)"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.machine",
+        "Math115.PublicLatticeSampler.publicDraw",
+        "Math115.LatticeSampler.draw",
+        "Math115.LatticeOuterProgram.retry",
+        "Math115.LatticeOuterProgram.packedTrial",
+        "Math115.LatticeOuterProgram.profileTrial",
+        "Math115.LatticeOuterProgram.trialOutputInput",
+        "Math115.LatticeOuterProgram.trialCompletion",
+        "Math115.CompletionSamplerProgram.draw"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.CompletionSamplerProgram",
+      "name": "Math115.CompletionSamplerProgram.draw",
+      "record_canonical_sha256": "34efb6975e8b79d2cf6d3fdbfc1b1705b556419508c763dd6dacc07e4f294088",
+      "statement": "Math115.CompletionSamplerProgram.Parameters \u00d7 List Bool \u2192 OAI.ContingencyTables.DensePrograms.MatrixCode"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.machine",
+        "Math115.PublicLatticeSampler.publicDrawRealizer",
+        "Math115.LatticeSampler.drawRealizer",
+        "Math115.LatticeSampler.drawReferenceRealizer",
+        "Math115.LatticeOuterProgram.retryRealizer",
+        "Math115.LatticeOuterProgram.packedTrialRealizer",
+        "Math115.LatticeOuterProgram.profileTrialRealizer",
+        "Math115.LatticeOuterProgram.trialOutputInputRealizer",
+        "Math115.LatticeOuterProgram.trialCompletionRealizer",
+        "Math115.CompletionSamplerProgram.drawRealizer"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.CompletionSamplerProgram",
+      "name": "Math115.CompletionSamplerProgram.drawRealizer",
+      "record_canonical_sha256": "5f679a73ed3c94adb4ae6e6cc911b58b30f37321106569c6b0fe95208b264c26",
+      "statement": "OAI.MatchingFPRAS.TreeTyped.Realizer Math115.CompletionSamplerProgram.draw"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeOuterSemantics.initialized_retry_code",
+        "Math115.LatticeOuterSemantics.retry_code",
+        "Math115.LatticeOuterSemantics.packedTrial_code",
+        "Math115.LatticeOuterSemantics.profileTrial_ofFn",
+        "Math115.ListedLatticeCompletion.programTable",
+        "Math115.CompletionSamplerSemantics.programTable"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.CompletionSamplerSemantics",
+      "name": "Math115.CompletionSamplerSemantics.programTable",
+      "record_canonical_sha256": "4f81208a6b6bb8b77bc28acbf9a69ac133e0c5514c693bb0f2615e11b5e3fff1",
+      "statement": "{m n : \u2115} \u2192\n  (d : \u2115) \u2192\n    14 \u2264 d \u2192\n      (R : Fin (m + 1) \u2192 \u2115) \u2192\n        (P : Fin (n + 1) \u2192 \u2115) \u2192\n          \u2211 i, R i = \u2211 j, P j \u2192\n            (h : \u2115) \u2192\n              (Fin (Math115.DenseLatticeCompletion.completionBits d R P h) \u2192 Bool) \u2192 OAI.ContingencyTables.Table R P"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeOuterSemantics.initialized_retry_code",
+        "Math115.LatticeOuterSemantics.retry_code",
+        "Math115.LatticeOuterSemantics.packedTrial_code",
+        "Math115.LatticeOuterSemantics.profileTrial_ofFn",
+        "Math115.ListedLatticeCompletion.programTable_code",
+        "Math115.CompletionSamplerSemantics.draw_prefix_code"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.CompletionSamplerSemantics",
+      "name": "Math115.CompletionSamplerSemantics.draw_prefix_code",
+      "record_canonical_sha256": "04097241d2ddf2b9cc092b20845b2d329b13ce9782be91c5a27613114fb5c833",
+      "statement": "\u2200 {m n : \u2115} (d : \u2115) (hd : 14 \u2264 d) (R : Fin (m + 1) \u2192 \u2115) (P : Fin (n + 1) \u2192 \u2115) (htotal : \u2211 i, R i = \u2211 j, P j) (h N : \u2115)\n  (hN : Math115.DenseLatticeCompletion.completionBits d R P h \u2264 N) (bits : Fin N \u2192 Bool),\n  Math115.CompletionSamplerProgram.draw (Math115.CompletionSamplerSemantics.parameters d R P h, List.ofFn bits) =\n    OAI.ContingencyTables.DensePrograms.matrixCode\n      \u2191(Math115.CompletionSamplerSemantics.programTable d hd R P htotal h\n          (OAI.ContingencyTables.FirstSuccess.prefixWord hN bits))"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.PhysicalBooleanSampler.draw_explicit_accuracy",
+        "Math115.PhysicalBooleanSampler.draw_variation",
+        "Math115.PhysicalReferenceBoolean.initializedDraw_variation",
+        "Math115.ListedLatticeCompletion.outerLaw_variation",
+        "Math115.ListedLatticeCompletion.oracleFamily_accuracy",
+        "Math115.ListedLatticeCompletion.completionLaw_accuracy",
+        "Math115.ListedLatticeCompletion.programTable_accuracy",
+        "Math115.CompletionSamplerSemantics.padded_programTable_variation"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.CompletionSamplerSemantics",
+      "name": "Math115.CompletionSamplerSemantics.padded_programTable_variation",
+      "record_canonical_sha256": "f9ca2c9f9dc50c90c503c16682ff38d9e0e7206a7276aefdc5bd3353e0ccceb8",
+      "statement": "\u2200 {m n : \u2115} (d : \u2115) (hd : 14 \u2264 d) (R : Fin (m + 1) \u2192 \u2115) (P : Fin (n + 1) \u2192 \u2115) (htotal : \u2211 i, R i = \u2211 j, P j),\n  m + 1 \u2264 d \u2192\n    n + 1 \u2264 d \u2192\n      m * n \u2264 d - 1 \u2192\n        (\u2200 (i : Fin (m + 1)), (n + 1) * (3 * d) \u2264 R i) \u2192\n          (\u2200 (j : Fin (n + 1)), (m + 1) * (3 * d) \u2264 P j) \u2192\n            \u2200 (h N : \u2115) (hN : Math115.DenseLatticeCompletion.completionBits d R P h \u2264 N),\n              OAI.ContingencyTables.FirstSuccess.variation\n                  (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw fun bits =>\n                    Math115.CompletionSamplerSemantics.programTable d hd R P htotal h\n                      (OAI.ContingencyTables.FirstSuccess.prefixWord hN bits))\n                  (Math115.LatticeCompletionAccuracy.originalUniform R P\n                    (OAI.ContingencyTables.GreedyFeasibleTable.table R P htotal)) \u2264\n                Math115.CompletionRetryBudget.dyadic h"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeOuterSemantics.initialized_retry_code",
+        "Math115.LatticeOuterSemantics.retry_code",
+        "Math115.PhysicalReferenceBoolean.jointDraw",
+        "Math115.ListedLatticeCompletion.completionDraw"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.ListedLatticeCompletion",
+      "name": "Math115.ListedLatticeCompletion.completionDraw",
+      "record_canonical_sha256": "23d97421df08c1509dc757b93b1e14e56f6f5f296aa683c3d21e526ac8c0cc4a",
+      "statement": "{m n : \u2115} \u2192\n  (r : Fin m \u2192 \u2115) \u2192\n    (c : Fin n \u2192 \u2115) \u2192\n      0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (Math115.IdealOracleScales.cutoff, List.ofFn r)).length \u2192\n        0 <\n            (OAI.ContingencyTables.ProfilePrograms.largeIndices\n                (Math115.IdealOracleScales.cutoff, List.ofFn c)).length \u2192\n          (z :\n              Math115.ReducedSmallChain.States r c Math115.IdealOracleScales.cutoff Math115.IdealOracleScales.padding) \u2192\n            (h : \u2115) \u2192\n              (Fin (Math115.PhysicalLatticeCompletion.reservedCompletionBits r h) \u2192 Bool) \u2192\n                Math115.PhysicalStationarySuccess.Fibre r c Math115.IdealOracleScales.cutoff\n                  Math115.IdealOracleScales.padding z"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeOuterSemantics.initialized_retry_code"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.LatticeOuterSemantics",
+      "name": "Math115.LatticeOuterSemantics.initialized_retry_code",
+      "record_canonical_sha256": "ff49cd39b96f4810812842613c94331fc2011b61da448a72cce2820354c917de",
+      "statement": "\u2200 {m n : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (Math115.IdealOracleScales.cutoff, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (Math115.IdealOracleScales.cutoff, List.ofFn c)).length)\n  (htotal : \u2211 i, r i = \u2211 j, c j) (T R hStep hTerminal : \u2115)\n  (bits : Fin (Math115.PhysicalReferenceBoolean.outerBits r T R hStep hTerminal) \u2192 Bool),\n  Math115.LatticeOuterProgram.retry\n      (((((Math115.LatticeSamplerPreparation.initialConfiguration ((List.ofFn r, List.ofFn c), hStep),\n                (T, Nat.clog 2 (32 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 2)),\n                Math115.PhysicalLatticeCompletion.reservedCompletionBits r hStep),\n              hTerminal, Math115.PhysicalLatticeCompletion.reservedCompletionBits r hTerminal),\n            Math115.LatticeSamplerPreparation.initialFallback (List.ofFn r, List.ofFn c)),\n          R),\n        List.ofFn bits) =\n    OAI.ContingencyTables.DensePrograms.matrixCode\n      \u2191(Math115.PhysicalReferenceBoolean.initializedDraw r c hr hc htotal T R hStep hTerminal bits)"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeUnitOuter.initialized_retry_code"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.LatticeUnitOuter",
+      "name": "Math115.LatticeUnitOuter.initialized_retry_code",
+      "record_canonical_sha256": "e7878c4805240190d69e6bce2071c4cb3ba1508193ca7baedb269373761d1141",
+      "statement": "\u2200 {m n : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115) (htotal : \u2211 i, r i = \u2211 j, c j)\n  (h : \u00acMath115.PhysicalBooleanSampler.bothLarge r c) (T R hStep hTerminal : \u2115)\n  (bits : Fin (Math115.PhysicalReferenceBoolean.outerBits r T R hStep hTerminal) \u2192 Bool),\n  Math115.LatticeUnitOuter.retry\n      (((((Math115.LatticeSamplerPreparation.initialConfiguration ((List.ofFn r, List.ofFn c), hStep),\n                (T, Nat.clog 2 (32 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 2)),\n                Math115.PhysicalLatticeCompletion.reservedCompletionBits r hStep),\n              hTerminal, Math115.PhysicalLatticeCompletion.reservedCompletionBits r hTerminal),\n            Math115.LatticeSamplerPreparation.initialFallback (List.ofFn r, List.ofFn c)),\n          R),\n        List.ofFn bits) =\n    OAI.ContingencyTables.DensePrograms.matrixCode\n      \u2191(Math115.PhysicalBooleanSampler.unitOuterDraw r c h\n          (Math115.PhysicalFiniteWalk.initialState r c Math115.IdealOracleScales.cutoff\n            Math115.IdealOracleScales.padding (OAI.ContingencyTables.GreedyFeasibleTable.table r c htotal))\n          (OAI.ContingencyTables.GreedyFeasibleTable.table r c htotal) T R hStep hTerminal bits)"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeSamplerPreparation.initialFallback"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.LatticeSamplerPreparation",
+      "name": "Math115.LatticeSamplerPreparation.initialFallback",
+      "record_canonical_sha256": "2da12d1a1183243ef92876a01f8521a2e24248219a3f090f7618c22a0b33c477",
+      "statement": "Math115.LatticeSamplerPreparation.Margins \u2192 OAI.ContingencyTables.DensePrograms.MatrixCode"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeOuterSemantics.initialized_retry_code",
+        "Math115.LatticeSamplerPreparation.initialConfiguration_code",
+        "Math115.LatticeSamplerPreparation.initialViews_code",
+        "Math115.LatticeSamplerPreparation.originalViews_free_code",
+        "Math115.LatticeSamplerPreparation.initialState_code"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.LatticeSamplerPreparation",
+      "name": "Math115.LatticeSamplerPreparation.initialState_code",
+      "record_canonical_sha256": "fca3400ab723d9884f18db418bcf81be2c11671a954adc587a92be6a19079b51",
+      "statement": "\u2200 {m n q : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115) (V W : \u2115)\n  (e :\n    Fin q \u2243\n      OAI.ContingencyTables.SmallContextCoordinates.Cells\n        (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c V))\n  (X : OAI.ContingencyTables.Table r c),\n  Math115.PhysicalComputedProposal.stateCode r c V W e (Math115.PhysicalFiniteWalk.initialState r c V W X) =\n    (List.ofFn fun i => \u2191X (\u2191(e i)).1 (\u2191(e i)).2, List.ofFn fun i => V - \u2191X (\u2191(e i)).1 (\u2191(e i)).2)"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeSamplerPreparation.bothLargeTest_code"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.LatticeSamplerPreparation",
+      "name": "Math115.LatticeSamplerPreparation.bothLargeTest_code",
+      "record_canonical_sha256": "2dc000c29887435f935250cdc9243365afea28df18b1184d6449a80f54ec49c6",
+      "statement": "\u2200 {m n : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115),\n  Math115.LatticeSamplerPreparation.bothLargeTest (List.ofFn r, List.ofFn c) = true \u2194\n    Math115.PhysicalBooleanSampler.bothLarge r c"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.PhysicalBooleanSampler.unitOuterDraw",
+        "Math115.PhysicalBooleanSampler.unitJointDraw",
+        "Math115.PhysicalEmptyCompletion.emptyCompletionOfNotBoth"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.PhysicalEmptyCompletion",
+      "name": "Math115.PhysicalEmptyCompletion.emptyCompletionOfNotBoth",
+      "record_canonical_sha256": "11a93df7d653e277ad7a3590796da8e20ba129ebd301243c675abf7a3db333ba",
+      "statement": "{I J : Type u} \u2192\n  [inst : Fintype I] \u2192\n    [inst_1 : Fintype J] \u2192\n      [inst_2 : LinearOrder I] \u2192\n        [inst_3 : LinearOrder J] \u2192\n          (r : I \u2192 \u2115) \u2192\n            (c : J \u2192 \u2115) \u2192\n              (U L : \u2115) \u2192\n                \u00ac(Nonempty (OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U) \u2227\n                      Nonempty (OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U)) \u2192\n                  (z : Math115.ReducedSmallChain.States r c U L) \u2192 Math115.PhysicalStationarySuccess.Fibre r c U L z"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.PhysicalBooleanSampler.draw_explicit_accuracy",
+        "Math115.PhysicalBooleanSampler.draw_variation",
+        "Math115.PhysicalBooleanSampler.unitOuterDraw_law"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.PhysicalBooleanSampler",
+      "name": "Math115.PhysicalBooleanSampler.unitOuterDraw_law",
+      "record_canonical_sha256": "c49336ec05e1d6ccb64d0597327d34c8a28a3a03956210ee751c5fcc31193826",
+      "statement": "\u2200 {m n : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115) (htotal : \u2211 i, r i = \u2211 j, c j)\n  (h : \u00acMath115.PhysicalBooleanSampler.bothLarge r c)\n  (x : Math115.ReducedSmallChain.States r c Math115.IdealOracleScales.cutoff Math115.IdealOracleScales.padding)\n  (fallback : OAI.ContingencyTables.Table r c) (T R hStep hTerminal : \u2115),\n  OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalBooleanSampler.unitOuterDraw r c h x fallback T R hStep hTerminal) =\n    Math115.PhysicalFiniteWalk.outerLaw r c Math115.IdealOracleScales.cutoff Math115.IdealOracleScales.padding x T R\n      fallback"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.tableDraw",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.PhysicalBooleanSampler.draw_explicit_accuracy",
+        "Math115.PhysicalBooleanSampler.draw_variation",
+        "Math115.PhysicalReferenceBoolean.initializedDraw_variation",
+        "Math115.PhysicalReferenceBoolean.initializedDraw_law",
+        "Math115.PhysicalReferenceBoolean.outerDraw_law"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.PhysicalReferenceBoolean",
+      "name": "Math115.PhysicalReferenceBoolean.outerDraw_law",
+      "record_canonical_sha256": "1e466f1c21d710ecde76199c0679efe4dc8e3aac8a302173dd5f5262c25a773e",
+      "statement": "\u2200 {m n : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (Math115.IdealOracleScales.cutoff, List.ofFn r)).length)\n  (hc :\n    0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (Math115.IdealOracleScales.cutoff, List.ofFn c)).length),\n  \u2211 i, r i = \u2211 j, c j \u2192\n    \u2200 (x : Math115.ReducedSmallChain.States r c Math115.IdealOracleScales.cutoff Math115.IdealOracleScales.padding)\n      (fallback : OAI.ContingencyTables.Table r c) (T R hStep hTerminal : \u2115),\n      OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n          (Math115.PhysicalReferenceBoolean.outerDraw r c hr hc x fallback T R hStep hTerminal) =\n        Math115.PhysicalApproximateOracle.approximateOuterLaw r c Math115.IdealOracleScales.cutoff\n          Math115.IdealOracleScales.padding\n          (Math115.PhysicalCompletionOracle.referenceStepLaw r c Math115.IdealOracleScales.cutoff\n            Math115.IdealOracleScales.padding\n            ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r Math115.IdealOracleScales.cutoff hr) none)\n            ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c Math115.IdealOracleScales.cutoff hc) none)\n            (Math115.ListedLatticeCompletion.oracleFamily r c hr hc hStep\n              ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r Math115.IdealOracleScales.cutoff hr) none)\n              ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c Math115.IdealOracleScales.cutoff hc) none)))\n          (Math115.PhysicalCompletionOracle.referenceCompletionLaw r c Math115.IdealOracleScales.cutoff\n            Math115.IdealOracleScales.padding\n            ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r Math115.IdealOracleScales.cutoff hr) none)\n            ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c Math115.IdealOracleScales.cutoff hc) none)\n            (Math115.ListedLatticeCompletion.oracleFamily r c hr hc hTerminal\n              ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r Math115.IdealOracleScales.cutoff hr) none)\n              ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c Math115.IdealOracleScales.cutoff hc) none)))\n          x T R fallback"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.machine",
+        "Math115.PublicLatticeSampler.publicDrawRealizer"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.PublicLatticeSampler",
+      "name": "Math115.PublicLatticeSampler.publicDrawRealizer",
+      "record_canonical_sha256": "b6b784164b31a859b5a25b43e4292abd76ddfe60caff7644a8e61d61cfd06b0a",
+      "statement": "OAI.MatchingFPRAS.TreeTyped.Realizer Math115.PublicLatticeSampler.publicDraw"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.machine",
+        "Math115.PublicLatticeSampler.wordCountRealizer"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "Math115.PublicLatticeSampler",
+      "name": "Math115.PublicLatticeSampler.wordCountRealizer",
+      "record_canonical_sha256": "290a1e1917a38c142f5f15b0166b760f2295cace4195c2e063dd75359bff0c3d",
+      "statement": "OAI.MatchingFPRAS.TreeTyped.Realizer Math115.PublicLatticeSampler.wordCount"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.machine_outputs",
+        "OAI.ContingencyTables.FiniteWordExecution.machine_law"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordMachine",
+      "name": "OAI.ContingencyTables.FiniteWordExecution.machine_law",
+      "record_canonical_sha256": "23ee6e33381acd34368c48951c6ec31775e3958945affc4d8b6a4925ad1e501d",
+      "statement": "\u2200 {n : List OAI.MatchingFPRAS.Symbol \u2192 \u2115}\n  {f : List OAI.MatchingFPRAS.Symbol \u00d7 List Bool \u2192 List OAI.MatchingFPRAS.Symbol}\n  (N : OAI.MatchingFPRAS.TreeTyped.Realizer n) (F : OAI.MatchingFPRAS.TreeTyped.Realizer f)\n  (as : List OAI.MatchingFPRAS.Symbol),\n  (\u2200 a \u2208 as, a \u2260 0) \u2192\n    (\u2200 (bs : List Bool), \u2200 b \u2208 f (as, bs), b \u2260 6 \u2227 b \u2260 7) \u2192\n      \u2200 (t : \u2115),\n        OAI.ContingencyTables.FiniteWordExecution.machineTime N F as \u2264 t \u2192\n          (\u2200 (bits : OAI.MatchingFPRAS.PhysicalStream.Bits t),\n              (OAI.MatchingFPRAS.run (OAI.ContingencyTables.FiniteWordExecution.machine N F) as bits).state = none) \u2227\n            \u2200 (g : Turing.Tape OAI.MatchingFPRAS.Symbol \u2192 \u211a),\n              (OAI.MatchingFPRAS.PhysicalStream.average fun bits =>\n                  g (OAI.MatchingFPRAS.run (OAI.ContingencyTables.FiniteWordExecution.machine N F) as bits).tape) =\n                OAI.MatchingFPRAS.PhysicalStream.average fun bits => g (Turing.Tape.mk\u2081 (f (as, List.ofFn bits)))"
+    },
+    {
+      "direct_dependency_path_from_bounded": [
+        "Math115.LatticeBoundedSampling.boundedSampling",
+        "Math115.PublicLatticeSampler.machine_mass",
+        "OAI.ContingencyTables.FiniteWordExecution.machine_tableMass"
+      ],
+      "in_actual_bounded_closure": true,
+      "module": "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordTableLaw",
+      "name": "OAI.ContingencyTables.FiniteWordExecution.machine_tableMass",
+      "record_canonical_sha256": "d4bf34bfce7a16bcfe55429e18a62abf2ea5a72a3acd6e03086c7a660a3b143f",
+      "statement": "\u2200 {n : List OAI.MatchingFPRAS.Symbol \u2192 \u2115}\n  {f : List OAI.MatchingFPRAS.Symbol \u00d7 List Bool \u2192 List OAI.MatchingFPRAS.Symbol}\n  (N : OAI.MatchingFPRAS.TreeTyped.Realizer n) (F : OAI.MatchingFPRAS.TreeTyped.Realizer f)\n  (as : List OAI.MatchingFPRAS.Symbol),\n  (\u2200 a \u2208 as, a \u2260 0) \u2192\n    (\u2200 (bs : List Bool), \u2200 a \u2208 f (as, bs), a \u2260 6 \u2227 a \u2260 7) \u2192\n      \u2200 {m j L : \u2115} {r : Fin m \u2192 \u2115} {c : Fin j \u2192 \u2115},\n        n as = L \u2192\n          \u2200 (draw : OAI.MatchingFPRAS.PhysicalStream.Bits L \u2192 OAI.ContingencyTables.Table r c),\n            (\u2200 (bits : Fin L \u2192 Bool),\n                f (as, List.ofFn bits) = OAI.ContingencyTables.Algorithms.encodeMatrix \u2191(draw bits)) \u2192\n              \u2200 (t : \u2115),\n                OAI.ContingencyTables.FiniteWordExecution.machineTime N F as \u2264 t \u2192\n                  \u2200 (X : OAI.ContingencyTables.Table r c),\n                    OAI.ContingencyTables.Algorithms.tableMass (OAI.ContingencyTables.FiniteWordExecution.machine N F)\n                        as t \u2191X =\n                      \u2191((OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n                              draw).mass\n                          X)"
+    }
+  ],
+  "artifact_sha256": {
+    "Audit.lean": "b25e96a53e5de9abfeedbba702daac56e6d9ee9e7f6153f7191520ed6ce7ae30",
+    "download-manifest.json": "63122fa5fdb11e345e57a221b49487ed8319c02885094f868aeb1cf741225358",
+    "environment-audit.stdout": "59cbaf0020e8e251b78d495cc5fcc6e3aaf35bda7a7f2989be37291814386403",
+    "frozen-config.json": "7fb2334a626c4e7362248773e9871d0896654d9b4661e6c7adff37179571d834",
+    "imported-object-closure.json": "34ee7f3a4544f5d9b013bff364894159fa172f046564f3af17cb19cece99cfc9",
+    "receipt.json": "11e6c5ebcd1eeb60ffafcb75c739bcba7aa0e7630dd370ee63654f136ac15c54"
+  },
+  "blockers": [],
+  "checks": {
+    "actual_initializer_greedy_fallback_and_literal_original_table_output_retained": true,
+    "all_18_download_manifest_members_independently_rehashed": true,
+    "all_22_actual_headline_names_kinds_types_and_top_records_checked": true,
+    "all_closure_dependencies_resolve_inside_their_actual_closure": true,
+    "all_required_identity_dependencies_present_after_recorded_parser_qualification_correction": true,
+    "all_selected_and_headline_records_have_only_standard_axioms": true,
+    "both_computed_reference_and_missing_reference_branches_retained": true,
+    "complete_old_sampler_or_runtime_not_substituted": true,
+    "each_headline_closure_equals_its_exact_graph_reachable_set": true,
+    "fresh_uniform_bank_composition_and_literal_machine_mass_bridge_reachable": true,
+    "normalized_unconditional_distribution_with_fallback_and_rejections_retained": true,
+    "same_fixed_time_used_for_all_tape_halting_feasibility_and_tv": true,
+    "same_new_machine_used_for_time_output_mass_and_final_bound": true,
+    "selected_declaration_and_theorem_counts_independently_parsed": true,
+    "selected_source_object_bindings_match_actual_audit_config": true,
+    "smaller_ideal_scale_route_reachable_from_final_bounded_theorem": true,
+    "source_bytes_match_frozen_normal_plan_and_audit_source_pins": true
+  },
+  "expanded_target_source_binding": {
+    "compiled_object_sha256": "07c078ef6c5dc3090a9f53ef36fa4ac9c2ce5891f95ced608de93419f227d781",
+    "logical_source_path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/AlgorithmStatements.lean",
+    "source_sha256": "7d5682872dfecf8d6c433347d0f6d2ceb305f84392951d57942aa0fe2f3c3501"
+  },
+  "expectation_correction": {
+    "actual_name": "OAI.ContingencyTables.ProfilePrograms.parsedSampling",
+    "affected_headlines": [
+      "Math115.PublicLatticeSampler.publicDraw",
+      "Math115.PublicLatticeSampler.wordCount"
+    ],
+    "explanation": "SmallGraphProfiles supplies parsedSampling_spec. The parser definition belongs to ProfilePrograms; the correct definition is an actual direct dependency of both audited definitions. This is a planned-name correction, not a theorem or program change.",
+    "historical_map_sha256": "e8271a17a05cf1e26667a5d6688e540e23b55a7a2eb5007742526c30ccadd757",
+    "planned_name": "OAI.ContingencyTables.SmallGraphProfiles.parsedSampling",
+    "preserved_unchanged": true
+  },
+  "final_claim": {
+    "accuracy": "At this same t, (sum_X |tableMass(X)-1/card(Table r c)|)/2 <= 2^(-h).",
+    "additional_assumptions": [],
+    "edge_cases": "No positive dimension or positive margin assumption; empty dimensions and zero totals are included subject to equal totals.",
+    "exact_audited_type": "OAI.ContingencyTables.Algorithms.BoundedSamplingStatement",
+    "machine": "Math115.PublicLatticeSampler.machine",
+    "output": "Every t-bit tape has halted with the literal row-major binary encoding of a Table r c.",
+    "quantifiers": "One fixed machine and global natural C>0,D, then all finite m,n, natural r,c with equal totals, and natural h>=1.",
+    "size": "S=m+n+Nat.clog 2 (sum(r)+1)+h+1",
+    "theorem": "Math115.LatticeBoundedSampling.boundedSampling",
+    "time": "t=C*S^D"
+  },
+  "generic_reuse_boundary": {
+    "allowed": "Pinned parser, printer, polynomial arithmetic, dense sampler subroutines, and finite-word machine compiler are reused. Presence of generic library symbols does not substitute a different complete sampler.",
+    "old_complete_symbols_absent_from_actual_bounded_closure": [
+      "OAI.ContingencyTables.ProfilePrograms.publicWordCount",
+      "OAI.ContingencyTables.ProfilePrograms.publicSampling",
+      "OAI.ContingencyTables.ProfilePrograms.samplingMachine",
+      "OAI.ContingencyTables.ProfilePrograms.samplingMachineTime",
+      "OAI.ContingencyTables.ProfilePrograms.samplingMachineTime_polynomial",
+      "OAI.ContingencyTables.SmallGraphProfiles.samplingMachineTime_public_bound",
+      "OAI.ContingencyTables.SmallGraphProfiles.samplingMachine_large_outputs"
+    ]
+  },
+  "ideal_scale_and_schedule_source_readback": {
+    "L": "3*d",
+    "M": "sum of original row margins",
+    "R": "2*(1+p^2)*(h+3)",
+    "T": "80000*d^17*(h+3+Nat.clog 2 R+2*d*Nat.clog 2 (M+3*d^2+5*d^3+3))",
+    "U": "5*d^3",
+    "d": "10+(m+1)*(n+1)",
+    "hStep": "hTerminal+Nat.clog 2 T",
+    "hTerminal": "h+3+Nat.clog 2 R",
+    "p": "Computed small-cell catalogue cardinality",
+    "readback_boundary": "Values checked against exact pinned source definitions; actual report types and graph establish their reachability, while pretty-printed types alone do not display definition bodies."
+  },
+  "independent_intake_bindings": {
+    "audit-independent-intake.json": "9c230d55f9a2c26902a983aeba7853b613e06edef1aa417d71af3b6710b0d01f",
+    "audit-independent-review.json": "3427a1bd30cb4c1c8ae3ced5e651ac4232cccbb9e1f220362cef3fcf94de1ba5",
+    "audit-root-intake.json": "9c230d55f9a2c26902a983aeba7853b613e06edef1aa417d71af3b6710b0d01f"
+  },
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mandatory_named_inclusions": 1517,
+  "normal_plan_canonical_sha256": "e26b50b59066d3278998186b73ffc058496fc96d41ef12ab2eb96d12139e2d4e",
+  "normal_plan_sha256": "6aca8c29ab2939dc03b99da8964acf29383f0adc2a853295dd215b46cce2f027",
+  "normal_source_graph_modules": 685,
+  "not_established": [
+    "Exact-sampling or counting extension",
+    "Extracted numeric complete runtime degree",
+    "Measured sampler runtime or practical speedup",
+    "A standalone exported executable binary",
+    "Fresh Linux check of this R10 source overlay",
+    "Strict Comparator acceptance",
+    "Current default/public build integration",
+    "Independent human mathematical review"
+  ],
+  "resolved_private_helpers": 3,
+  "review_kind": "Independent AI source and actual compiled-environment evidence readback; this reviewer did not execute Lean or a kernel.",
+  "runtime_boundary": {
+    "intermediate_powers": "17 is the mixing allowance power; 85 and 170 are reservation/size bounds, not a complete numeric runtime exponent.",
+    "proof_only_choice": "tableDraw uses Classical.choose as a specification witness; publicDraw and its realizer execute the computed ordinary list draw, not tableDraw.",
+    "proved": "Uniform polynomial-time existence for this fixed formal fair-bit machine; supplied reserved-word draw cost plus output weight is separately polynomial.",
+    "supplied_bank_scope": "Cost theorems take the exact scheduled bank, allow all natural h, and require no equal-total premise. Precision h is numeric in encodeMargins.length+h+3. The separate finite-word machine compiler accounts for fair-bit acquisition.",
+    "unextracted": "The source witnesses complete Dtime=170*P.natDegree for an existential physical-compiler polynomial P. No concrete numeric full runtime degree is extracted here."
+  },
+  "schema_version": 1,
+  "scope": "Completed native R10 selected environment and its 22 actual headline closures; not a Linux or strict Comparator execution, current default-build integration, performance measurement, or independent human review.",
+  "source_commit": "cf39b6929abf080f3c2e319092eb2506c375d121",
+  "source_object_bindings": {
+    "Math115.CompletionSamplerProgram": {
+      "compiled_object_sha256": "ed4a49097d4a688867797b4ae92efecb631299320a5bb5eb9a491c41278353e1",
+      "logical_source_path": "formal/Math115/CompletionSamplerProgram.lean",
+      "source_sha256": "b2f2dd678bff288d8298ea267adac03da78d458ec89d934c2bb7c5fe6c109e42"
+    },
+    "Math115.CompletionSamplerSemantics": {
+      "compiled_object_sha256": "d0920372c346c5b7479fe85d496bf850121bbfe7eb9fb4281a1dfe7a5168c592",
+      "logical_source_path": "formal/Math115/CompletionSamplerSemantics.lean",
+      "source_sha256": "0cf2fc168303f1dde8ff0cba7aacfe6f650acc20f87218dbd8c9ae11bcc787c7"
+    },
+    "Math115.IdealOracleScales": {
+      "compiled_object_sha256": "14db7c54fcb5744f847ceaba1d9fdfb58bc7e4b2442edeb236a98d4ec269773e",
+      "logical_source_path": "formal/Math115/IdealOracleScales.lean",
+      "source_sha256": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf"
+    },
+    "Math115.IdealRepairRefinement": {
+      "compiled_object_sha256": "ecae3dd155df85c9180e384bf92bdcbe80376b46fb64fbca33f6e94a5f6412d0",
+      "logical_source_path": "formal/Math115/IdealRepairRefinement.lean",
+      "source_sha256": "7728c29d949bbf0b2cefa4feea9e38cc971df2c70ea069a77dfd53162418ed93"
+    },
+    "Math115.LatticeBoundedSampling": {
+      "compiled_object_sha256": "911d7b979c8794a13fd8a99083dd5e4ce7f4dac5c2da7b739d2212d845bf19ea",
+      "logical_source_path": "formal/Math115/LatticeBoundedSampling.lean",
+      "source_sha256": "adc3ed0dfab422e1e2438c44e6bdda277e7a60de92b3847d0e0016d6989a451e"
+    },
+    "Math115.LatticeOuterSemantics": {
+      "compiled_object_sha256": "3997ea4115319b21a1c3aaab82a1a062e522b7f3bddf2d98609f9d51c7eba774",
+      "logical_source_path": "formal/Math115/LatticeOuterSemantics.lean",
+      "source_sha256": "cd22fe44345baa2ab94f2139ff004fc7fd20b8ebd42b2617234858c7cb6db3bf"
+    },
+    "Math115.LatticeSampler": {
+      "compiled_object_sha256": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f",
+      "logical_source_path": "formal/Math115/LatticeSampler.lean",
+      "source_sha256": "3e2d55e19d35b75816366b4e1b686e54c944719ea5b0d98565aa22995be8c7f4"
+    },
+    "Math115.LatticeSamplerCost": {
+      "compiled_object_sha256": "7a8708d41b90a3b5e79136d1a3be0406caf659e457f931c555b15476d344ecbc",
+      "logical_source_path": "formal/Math115/LatticeSamplerCost.lean",
+      "source_sha256": "bd78d5a5d23d4979ff48be9cccc4f9e900f16a07dcbb5a22f190401effccfac2"
+    },
+    "Math115.LatticeSamplerPreparation": {
+      "compiled_object_sha256": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2",
+      "logical_source_path": "formal/Math115/LatticeSamplerPreparation.lean",
+      "source_sha256": "e5d33b3c51f0709968ed257b92cd0ec8fb54244aea5e1217dd283d2b390a21b2"
+    },
+    "Math115.LatticeScheduleProgram": {
+      "compiled_object_sha256": "46388470d516fcb9a34bb8c9fc48ee5c11de554cb04ea374558e8243b645eac1",
+      "logical_source_path": "formal/Math115/LatticeScheduleProgram.lean",
+      "source_sha256": "6f4269c7366956bda9b4a1ccb2f81d89b31834ba1c12585fcd788a1fd248a359"
+    },
+    "Math115.LatticeUnitOuter": {
+      "compiled_object_sha256": "0625fd3b136d4c938a993848c78540bfe3394dccb0e8bd4c5fe1e5b0fb0f79c3",
+      "logical_source_path": "formal/Math115/LatticeUnitOuter.lean",
+      "source_sha256": "2c8e44d0c6ff803d21c987b87cb4b24ec21e541619d53a296c99cb0d4f891b03"
+    },
+    "Math115.ListedLatticeCompletion": {
+      "compiled_object_sha256": "0861dc7c52044555919775c08743f02e61f9e5e662d51f113b9d18a1c5043178",
+      "logical_source_path": "formal/Math115/ListedLatticeCompletion.lean",
+      "source_sha256": "0ea157c4a458949c5b9dc8d8dceeaa93b2bd3ab9858b446e846f1357efda99bc"
+    },
+    "Math115.PhysicalBooleanSampler": {
+      "compiled_object_sha256": "3b13795d4834cf621291e01847842355a020eebe183ab3c871efb107753bc36a",
+      "logical_source_path": "formal/Math115/PhysicalBooleanSampler.lean",
+      "source_sha256": "a676bb44fd5a60a0f45e082061c4947279ffc7da253527d2504a3620bfffe935"
+    },
+    "Math115.PhysicalEmptyCompletion": {
+      "compiled_object_sha256": "723c0fc332299a34facd95697b3899e10c7d5447f6dfc09964056e6ffb9eacaf",
+      "logical_source_path": "formal/Math115/PhysicalEmptyCompletion.lean",
+      "source_sha256": "2caa6e7704b069b6fe926dc70014dc015196179f7acb341f6c8072e0ce6395bd"
+    },
+    "Math115.PhysicalReferenceBoolean": {
+      "compiled_object_sha256": "3b99813ab24af6b5b31c611b4cfd8eb98079844a5e34c1d49838c075067fa029",
+      "logical_source_path": "formal/Math115/PhysicalReferenceBoolean.lean",
+      "source_sha256": "3f465cb573045370252e6eaad81c7d8a7b5b297aa7fd48e948868ef8aa8e534e"
+    },
+    "Math115.PublicLatticeSampler": {
+      "compiled_object_sha256": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489",
+      "logical_source_path": "formal/Math115/PublicLatticeSampler.lean",
+      "source_sha256": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245"
+    }
+  },
+  "standard_axioms_allowed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "status": "PASS",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+}

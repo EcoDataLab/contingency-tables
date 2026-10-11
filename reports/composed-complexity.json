@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "review_kind": "Source inspection and algebra; no live compilation, Git operation, remote job, or benchmark",
+  "review_kind": "Dated source/algebra review with subsequent source-bound ordinary compilation and actual full compiled-environment audit evidence",
   "document": "docs/composed-complexity.md",
   "upstream": {
     "preserved_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
@@ -46,7 +46,7 @@
     "public_word_measure_bound": "(12672000000*37^62*5^85+91)*S^170"
   },
   "physical_runtime": {
-    "status": "Draft symbolic bound, no numeric complete degree established in this review",
+    "status": "Uniform complete public-machine polynomial-time existence has ordinary compilation, actual full compiled-environment audit, and source-bound semantic readback evidence; numerical degree remains unknown",
     "literal_numeric_degree": null,
     "draft_degree": "170*natDegree(P_L)",
     "draft_coefficient": "P_L(12672000000*37^62*5^85+91)+1",
@@ -55,7 +55,10 @@
     "p": "Complete online work plus worst encoded output weight in wordMeasure",
     "conditional_end_to_end_degree": "340*max(1,e_L), e_L=natDegree(p_L)",
     "conditional_coefficient": "Q_L(12672000000*37^62*5^85+91)+1",
-    "conditional_status": "Source-level algebra; not a new compiled theorem or a supplied numeral"
+    "conditional_status": "Source-level algebra; not a new compiled theorem or a supplied numeral",
+    "review_snapshot_status": "Draft symbolic bound, no numeric complete degree established in this review",
+    "compiled_symbolic_degree": "170*natDegree(P_L)",
+    "compiled_symbolic_coefficient": "P_L(12672000000*37^62*5^85+91)+1"
   },
   "comparisons": [
     {
@@ -122,6 +125,119 @@
   },
   "source_sha256_snapshot_status": "Frozen original 20-file review snapshot. The docs/composed-complexity.md entry hashes the original note before the publication-safe edit, not the current note. No original source-hash entry was changed.",
   "publication_presentation": {
+    "status": "Current ordinary-compilation and actual full-audit update with separately preserved pre-compilation excerpts; source-bound independent artifact and semantic reviews passed",
+    "reviewable_artifacts": [
+      "docs/composed-complexity.md",
+      "docs/composed-complexity-uncompiled-appendix.md",
+      "docs/practical-use.md",
+      "docs/commuting-use-cases.md",
+      "reports/composed-complexity.json"
+    ],
+    "pending_full_sampler_modules_included": false,
+    "compilation_claim_for_local_sampler": true,
+    "numeric_complete_degree_established": false,
+    "appendix": "docs/composed-complexity-uncompiled-appendix.md",
+    "appendix_sources": [
+      {
+        "id": "public-interface",
+        "source_identifier": "formal/Math115/PublicLatticeSampler.lean",
+        "full_source_sha256": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245",
+        "compilation_status": "uncompiled proposal; no pass certified",
+        "excerpts": [
+          {
+            "start_line": 1,
+            "end_line": 9,
+            "sha256": "a4cd206c115b776f204668de1f665c64b073291c0772b789a8d5b48caf4805b2"
+          },
+          {
+            "start_line": 23,
+            "end_line": 50,
+            "sha256": "588de58db337d3d59c09481c5b1368b0e3cbbf9668abe03aa79218244334e736"
+          },
+          {
+            "start_line": 138,
+            "end_line": 148,
+            "sha256": "de7ed91078c19e82a3eda72e89c619e16099e997a69c5e22189bd82534e51c5a"
+          },
+          {
+            "start_line": 152,
+            "end_line": 173,
+            "sha256": "0740a5312e92e1c755b99c1028d9fd29587f685c2cfc0ba29f3db40e1d513c39"
+          }
+        ]
+      },
+      {
+        "id": "supplied-word-cost",
+        "source_identifier": "formal/Math115/LatticeSamplerCost.lean",
+        "full_source_sha256": "11a1e019a9f7b7d6c753b1e70891b3d033ed42a7cd962aa8dfd0826bd676dc5e",
+        "compilation_status": "uncompiled proposal; no pass certified",
+        "excerpts": [
+          {
+            "start_line": 1,
+            "end_line": 7,
+            "sha256": "d07851549c5b227fb7c7ca20b0467fad3515ceae184c103b1fe84e739ad784ee"
+          },
+          {
+            "start_line": 40,
+            "end_line": 50,
+            "sha256": "f71c22a98a1655c5a5b01db5e09d480a2cf7dacf0eb3a17efcda3bba2a158612"
+          },
+          {
+            "start_line": 60,
+            "end_line": 74,
+            "sha256": "fd000a865d858494be49a3b9e4c058f9a581bfd09cef4f9ca82bf6383e1833c1"
+          }
+        ]
+      },
+      {
+        "id": "bounded-statement",
+        "source_identifier": "formal/Math115/LatticeBoundedSampling.lean",
+        "full_source_sha256": "a67e022d7a472abd3c25508e1bd3253f213eb40d141b6ee2e954deeab533500a",
+        "compilation_status": "uncompiled proposal; no pass certified",
+        "excerpts": [
+          {
+            "start_line": 1,
+            "end_line": 6,
+            "sha256": "c3e4b210f0b5db0a08822bf7d03524f946c57ccf49cb36250230e858a72c4c99"
+          },
+          {
+            "start_line": 16,
+            "end_line": 25,
+            "sha256": "132d60e8a98b63ac4647c7e3b99818ff103000c018b71cf88319348fef4684b2"
+          }
+        ]
+      },
+      {
+        "id": "both-branches",
+        "source_identifier": "formal/Math115/LatticeSampler.lean",
+        "full_source_sha256": "486cf091c5cf7c46e2acc10db7e253e581623d6e364d595a72fe67b5033db78f",
+        "compilation_status": "uncompiled proposal; no pass certified",
+        "excerpts": [
+          {
+            "start_line": 1,
+            "end_line": 7,
+            "sha256": "d11e884f20c5a155206aabc75b01aeaf32c23feaa6072471230211fbd39dfb30"
+          },
+          {
+            "start_line": 60,
+            "end_line": 83,
+            "sha256": "2f504ebe6cd5edbe7a2fd29c14ba6cb7d04ebb6ddb7b2d55360e364672262ac9"
+          }
+        ]
+      }
+    ],
+    "current_markdown_sha256": {
+      "docs/composed-complexity.md": "8be54f4443be8a7b17b95cf52e79a91009190ea563b3377cf0fe7d8ccf4a1376",
+      "docs/composed-complexity-uncompiled-appendix.md": "30b33f95b4d1a9d2fb161b4cad6c685c732c1b4feeb1b01d8046a2c1f60440a9",
+      "docs/practical-use.md": "f2e3d77f18c2b0ff4290aa67d680aa07fcae130309b9f8e98d8cae5e995eed0a",
+      "docs/commuting-use-cases.md": "abe61b2af9c988319988aee30bf4345bf94f8de3c70a1a6d455e84f34888ed26"
+    },
+    "original_source_hashes_preserved": 20,
+    "compilation_claim_scope": "Round-10 complete ordinary compilation and actual full selected environment audit with recorded trust inputs; no strict sampler replay, fresh overlay Linux reproduction, or default aggregate promotion",
+    "appendix_status": "Frozen pre-compilation excerpt snapshot; original bytes and creation-time source hashes unchanged",
+    "archived_source_compilation_status_interpretation": "Each appendix_sources compilation_status describes the pre-compilation source snapshot; current repaired source status and hashes are solely in current_verification."
+  },
+  "original_publication_presentation_snapshot": {
     "status": "Source-only conditional comparison plus explicitly uncompiled research excerpts",
     "reviewable_artifacts": [
       "docs/composed-complexity.md",
@@ -226,5 +342,499 @@
       "docs/composed-complexity-uncompiled-appendix.md": "30b33f95b4d1a9d2fb161b4cad6c685c732c1b4feeb1b01d8046a2c1f60440a9"
     },
     "original_source_hashes_preserved": 20
-  }
+  },
+  "original_publication_presentation_snapshot_status": "Frozen presentation metadata from the pre-compilation review. Its uncompiled flags and Markdown hashes describe that earlier artifact set and are not current verification status.",
+  "current_verification": {
+    "checkpoint": "round-10 research overlay",
+    "evidence_scope": "Complete ordinary compilation and actual full selected compiled-environment audit with authenticated object bindings; no strict sampler replay, fresh overlay Linux reproduction, or default aggregate promotion",
+    "normal_status": "passed",
+    "root_evidence_review": {
+      "evidence_identifier": "root-evidence-review.json",
+      "status": "PASS root complete normal evidence authenticated",
+      "sha256": "28da2848587532ffcdba232955646d2123ea70987eda36753745b38cd000b10b"
+    },
+    "normal_manifest": {
+      "evidence_identifier": "download-manifest.json",
+      "sha256": "d3980a3cfe7b0fefd89e338b24b1e1ff4edf3c104a4ed4bcbda27c9b84335db5",
+      "completed_modules": 685,
+      "authenticated_reused_modules": 684,
+      "fresh_pass_modules": [
+        "Math115.LatticeSamplerCost"
+      ],
+      "failed_modules": 0,
+      "blocked_modules": 0,
+      "all_dependency_object_maps_match": true
+    },
+    "research_modules_normally_validated": 13,
+    "full_environment_audit": {
+      "status": "passed",
+      "result": "passed_compiled_environment_audit",
+      "mode": "full",
+      "started_at_utc": "2026-10-11T00:11:54.402999+00:00",
+      "finished_at_utc": "2026-10-11T00:26:40.008599+00:00",
+      "actual_report_sha256": "59cbaf0020e8e251b78d495cc5fcc6e3aaf35bda7a7f2989be37291814386403",
+      "receipt_sha256": "11e6c5ebcd1eeb60ffafcb75c739bcba7aa0e7630dd370ee63654f136ac15c54",
+      "root_intake_sha256": "9c230d55f9a2c26902a983aeba7853b613e06edef1aa417d71af3b6710b0d01f",
+      "independent_intake_sha256": "9c230d55f9a2c26902a983aeba7853b613e06edef1aa417d71af3b6710b0d01f",
+      "audit_download_manifest_sha256": "63122fa5fdb11e345e57a221b49487ed8319c02885094f868aeb1cf741225358",
+      "counts": {
+        "declarations": 25448,
+        "headlines": 22,
+        "imported_modules": 11951,
+        "theorems": 18054
+      },
+      "counts_authority": "actual compiled environment only",
+      "count_interpretation": "Complete selected environment under recorded namespace/module filters, including pinned upstream and generated/private declarations; not new-result counts",
+      "selection_sha256": "f4f341f58a288ac5628812c52ce0b94c4fcac18ea7f99f5ab7f325a28fe2ac36",
+      "config_sha256": "9d764170ffa7fb46b594cc5c3ba2427de2fb6382ae09feced77ca0bad2a7e605",
+      "audit_snapshot_canonical_sha256": "db8e132d05fd4e6b529f837b45757ad496176f7b6fb22f4f8bc28d43f778be38",
+      "imported_object_closure_sha256": "34ee7f3a4544f5d9b013bff364894159fa172f046564f3af17cb19cece99cfc9",
+      "imported_object_closure_canonical_sha256": "0e77e4b1aa14cc1ca1472d7665038afc9df363349d31d0673033abbb345c2ddb",
+      "program_identity_inclusions": [
+        {
+          "actual_closure_sha256": "7756487167a51888b8405a0f7c1f44d8ac1f1dea44d2aecaabe845f5e8cf1728",
+          "closure_size": 47593,
+          "headline": "Math115.LatticeBoundedSampling.boundedSampling",
+          "required_reachable_names": [
+            "Math115.LatticeSampler.draw",
+            "Math115.LatticeSampler.drawRealizer",
+            "Math115.LatticeSampler.polynomial_draw",
+            "Math115.LatticeSampler.draw_code",
+            "Math115.LatticeSampler.draw_spec",
+            "Math115.PublicLatticeSampler.wordCount",
+            "Math115.PublicLatticeSampler.publicDraw",
+            "Math115.PublicLatticeSampler.machine",
+            "Math115.PublicLatticeSampler.public_spec",
+            "Math115.PublicLatticeSampler.tableDraw_code",
+            "Math115.PublicLatticeSampler.machine_outputs",
+            "Math115.PublicLatticeSampler.machine_mass",
+            "Math115.PublicLatticeSampler.machineTime_public_bound",
+            "Math115.LatticeBoundedSampling.boundedSampling"
+          ]
+        },
+        {
+          "actual_closure_sha256": "b4b357f7c4f6c0273644f8d02859e1551afafbd37c35c2e820e4f88a02102d38",
+          "closure_size": 11046,
+          "headline": "Math115.LatticeSamplerCost.reserved_draw_work_literal",
+          "required_reachable_names": [
+            "Math115.LatticeSampler.draw",
+            "Math115.LatticeSampler.drawRealizer",
+            "Math115.LatticeSampler.polynomial_draw",
+            "Math115.LatticeSamplerCost.reserved_draw_work"
+          ]
+        }
+      ],
+      "evidence_identifiers": {
+        "report": "environment-audit.stdout",
+        "receipt": "receipt.json",
+        "root_intake": "audit-root-intake.json",
+        "independent_intake": "audit-independent-intake.json"
+      },
+      "receipt_scope_metadata_note": "The unchanged adapter scope text still says Round-three. Exact R10 control/source-plan/config and normal inputs bind the run unambiguously; public summaries should identify R10 and preserve original receipt bytes rather than rewriting them.",
+      "boundary": "Ordinary compiled-environment inspection with trusted compiler/cache inputs; not strict Comparator replay or a fresh dependency-closure rebuild",
+      "root_evidence_review": {
+        "status": "root full audit intake and actual evidence checks passed",
+        "at_utc": "2026-10-11T00:29:17.898287+00:00",
+        "evidence_identifier": "root-full-audit-evidence-review.json",
+        "sha256": "174abba324c366c82cb655403c1bee7aaf9f2a7b06d5ce4e476a186c392a9213"
+      }
+    },
+    "strict_comparator": {
+      "research_sampler_status": "not established by this evidence"
+    },
+    "source_identifier_base": "Frozen round-10 research overlay; identifiers do not assert those bytes are in the default formal target",
+    "source_sha256": {
+      "formal/Math115/LatticeBoundedSampling.lean": "adc3ed0dfab422e1e2438c44e6bdda277e7a60de92b3847d0e0016d6989a451e",
+      "formal/Math115/LatticeEmptyOutput.lean": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26",
+      "formal/Math115/LatticeOuterProgram.lean": "e761386db8e26dc09ed4b2a5b22b5c66c71a2de1223d46c894f9606e9741df8b",
+      "formal/Math115/LatticeOuterSemantics.lean": "cd22fe44345baa2ab94f2139ff004fc7fd20b8ebd42b2617234858c7cb6db3bf",
+      "formal/Math115/LatticeProfileStep.lean": "f5a8b460bcc8da0e14d8139638e50a5cd76c46a6fb621c821c936c6993fafbc5",
+      "formal/Math115/LatticeProfileWalk.lean": "d1786e79274b833e3afdd302237ec28eec0604a2596177ce4d4422e63e6608f7",
+      "formal/Math115/LatticeSampler.lean": "3e2d55e19d35b75816366b4e1b686e54c944719ea5b0d98565aa22995be8c7f4",
+      "formal/Math115/LatticeSamplerCost.lean": "bd78d5a5d23d4979ff48be9cccc4f9e900f16a07dcbb5a22f190401effccfac2",
+      "formal/Math115/LatticeSamplerPreparation.lean": "e5d33b3c51f0709968ed257b92cd0ec8fb54244aea5e1217dd283d2b390a21b2",
+      "formal/Math115/LatticeUnitOuter.lean": "2c8e44d0c6ff803d21c987b87cb4b24ec21e541619d53a296c99cb0d4f891b03",
+      "formal/Math115/LatticeUnitStep.lean": "4cb0745b4a2090a6215a1817ddad24a0277793f055ec28c3896222bd9adf3805",
+      "formal/Math115/LatticeUnitWalk.lean": "b0fc16f7890d62511c83cc366c011bd097ec40e24d4b0b739f45b8348d54a2a0",
+      "formal/Math115/PublicLatticeSampler.lean": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245"
+    },
+    "research_module_bindings": [
+      {
+        "module": "Math115.LatticeBoundedSampling",
+        "state": "completed",
+        "source_sha256": "adc3ed0dfab422e1e2438c44e6bdda277e7a60de92b3847d0e0016d6989a451e",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "0433d2dba799bb8c286191307c0fff62a1200b37d3b1016d0cc1b75a013d12db",
+        "olean_sha256": "911d7b979c8794a13fd8a99083dd5e4ce7f4dac5c2da7b739d2212d845bf19ea"
+      },
+      {
+        "module": "Math115.LatticeEmptyOutput",
+        "state": "completed",
+        "source_sha256": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "a19c670a52cede26adedede7f07a3a729e258921ee465ce3f9def7a26e49d1ad",
+        "olean_sha256": "0c8c7d907fcc37e5012849a17c73d249fcdeebf334641242a7a3ce9250c2a6b6"
+      },
+      {
+        "module": "Math115.LatticeOuterProgram",
+        "state": "completed",
+        "source_sha256": "e761386db8e26dc09ed4b2a5b22b5c66c71a2de1223d46c894f9606e9741df8b",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "fac90396fe717b1170f06e3900e5da7291c2173d18753eef541e17a9a999a504",
+        "olean_sha256": "67bf311a5b2cf04d03d0ce1dfe2b7579519a018d7778bd8140e4c62c6bc99f5e"
+      },
+      {
+        "module": "Math115.LatticeOuterSemantics",
+        "state": "completed",
+        "source_sha256": "cd22fe44345baa2ab94f2139ff004fc7fd20b8ebd42b2617234858c7cb6db3bf",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "46f58a091afd355edcf70fba23e32a046e7c6dd1e747d1bce07bec2514724ed5",
+        "olean_sha256": "3997ea4115319b21a1c3aaab82a1a062e522b7f3bddf2d98609f9d51c7eba774"
+      },
+      {
+        "module": "Math115.LatticeProfileStep",
+        "state": "completed",
+        "source_sha256": "f5a8b460bcc8da0e14d8139638e50a5cd76c46a6fb621c821c936c6993fafbc5",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "d41d5685ce7b4c9814d0347c52c90d85d779891a328c122957bd5b0a3c4208dc",
+        "olean_sha256": "00dee3f7003e04411c8f8a9148ecab9e9b1fab0bea01cba15b18c91f2fcac3dc"
+      },
+      {
+        "module": "Math115.LatticeProfileWalk",
+        "state": "completed",
+        "source_sha256": "d1786e79274b833e3afdd302237ec28eec0604a2596177ce4d4422e63e6608f7",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "12cf0fa683d927553a5fcf5567cbd33a998ff99046949f9243f4ba9c3e3c6e83",
+        "olean_sha256": "1ac118a11fa233dfdc2e24859e6c3c90d68a06c31ef9a06ad0b0f0fd77fc79ff"
+      },
+      {
+        "module": "Math115.LatticeSampler",
+        "state": "completed",
+        "source_sha256": "3e2d55e19d35b75816366b4e1b686e54c944719ea5b0d98565aa22995be8c7f4",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "b5188165bda282fd81567171f4663e2fac74b53b9a396a033e6dfa4c4cf87978",
+        "olean_sha256": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f"
+      },
+      {
+        "module": "Math115.LatticeSamplerCost",
+        "state": "completed",
+        "source_sha256": "bd78d5a5d23d4979ff48be9cccc4f9e900f16a07dcbb5a22f190401effccfac2",
+        "exit_code": 0,
+        "reused": false,
+        "source_unchanged": true,
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "olean_sha256": "7a8708d41b90a3b5e79136d1a3be0406caf659e457f931c555b15476d344ecbc"
+      },
+      {
+        "module": "Math115.LatticeSamplerPreparation",
+        "state": "completed",
+        "source_sha256": "e5d33b3c51f0709968ed257b92cd0ec8fb54244aea5e1217dd283d2b390a21b2",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "6fbf044a79d80d98dc6c6eb942a270d2aa0df839d8874533a9881a737543aa05",
+        "olean_sha256": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2"
+      },
+      {
+        "module": "Math115.LatticeUnitOuter",
+        "state": "completed",
+        "source_sha256": "2c8e44d0c6ff803d21c987b87cb4b24ec21e541619d53a296c99cb0d4f891b03",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "e3cbbf831c36a86068a6481a0007c28379b2c4487ca55df0a31c1e9f1b550ab9",
+        "olean_sha256": "0625fd3b136d4c938a993848c78540bfe3394dccb0e8bd4c5fe1e5b0fb0f79c3"
+      },
+      {
+        "module": "Math115.LatticeUnitStep",
+        "state": "completed",
+        "source_sha256": "4cb0745b4a2090a6215a1817ddad24a0277793f055ec28c3896222bd9adf3805",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "014f6a295568600e7021b29b44bde95ca1a9d877689eaf79d1d0291fec382aeb",
+        "olean_sha256": "af052cb15024677e3be569bbb3a253c4d8c5d4ccb26825d62c7e51bb0eb4949e"
+      },
+      {
+        "module": "Math115.LatticeUnitWalk",
+        "state": "completed",
+        "source_sha256": "b0fc16f7890d62511c83cc366c011bd097ec40e24d4b0b739f45b8348d54a2a0",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "9db4432bd690258e413282493bbf919b984d25bf8abd3b0bd6e38bd3281a672a",
+        "olean_sha256": "c8965f88f6c8753d737c5949c0cb5f1d9a230ba637b977a761bd07e87957e0b3"
+      },
+      {
+        "module": "Math115.PublicLatticeSampler",
+        "state": "completed",
+        "source_sha256": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245",
+        "exit_code": 0,
+        "reused": true,
+        "source_unchanged": true,
+        "log_sha256": "c92cfe1d66c7058b61e092a2bf5289c39e571b9a8b529210b533d77304e7b4e4",
+        "olean_sha256": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489"
+      }
+    ],
+    "headline_declarations": [
+      "Math115.PublicLatticeSampler.machineTime_public_bound",
+      "Math115.LatticeBoundedSampling.boundedSampling",
+      "Math115.LatticeSamplerCost.reserved_draw_work",
+      "Math115.LatticeSamplerCost.reserved_draw_work_literal"
+    ],
+    "bound_contract": {
+      "target": "Ordinary nonnegative integer contingency tables with equal row and column totals",
+      "dimensions": "all natural m and n, including empty dimensions",
+      "precision": "numeric h>=1",
+      "public_size": "S=m+n+clog_2(M+1)+h+1",
+      "machine": "Math115.PublicLatticeSampler.machine",
+      "uniform_bound": "exists C>0 and D with time<=C*S^D on every tape",
+      "feasibility": "every tape outputs a feasible original table",
+      "normalized_total_variation": "<=2^(-h)",
+      "symbolic_degree": "D=170*natDegree(P_L)",
+      "numeric_degree": null,
+      "exact_expected_time_extension": false,
+      "cell_bounded_counting_extension": false
+    },
+    "compiler_degree_diagnostics": {
+      "status": "Archived failed/uncompiled diagnostics preserved; no new degree-theorem pass supplied",
+      "conditional_transformation": "340*max(1,e_L)",
+      "transformation_verified_as_new_Lean_theorem": false,
+      "numeric_complete_degree_established": false
+    },
+    "practical_complete_sampler_speed_advantage_demonstrated": false,
+    "public_checkpoint_guide": "docs/outer-sampler-compiler-checkpoint.md",
+    "independent_reviews": {
+      "artifact_review": {
+        "status": "passed",
+        "result": "PASS_actual_full_R10_environment_audit_evidence_review",
+        "reviewer_kind": "AI independent saved-evidence, approved intake replay and source/object binding review",
+        "receipt_identifier": "audit-independent-review.json",
+        "receipt_sha256": "3427a1bd30cb4c1c8ae3ced5e651ac4232cccbb9e1f220362cef3fcf94de1ba5",
+        "validated_counts": {
+          "declarations": 25448,
+          "headlines": 22,
+          "imported_modules": 11951,
+          "theorems": 18054
+        },
+        "root_and_independent_intakes_byte_identical": true,
+        "scope": "Actual complete selected R10 project environment, full source-bound normal graph, all required public declarations and exact headline/program dependency closures. Ordinary compiler/import/cache boundary; no strict Comparator, fresh Linux, default-target integration or numeric complete runtime-degree claim.",
+        "fresh_compiler_or_remote_job_performed_by_reviewer": false
+      },
+      "semantic_readback": {
+        "status": "passed",
+        "result": "PASS",
+        "review_kind": "Independent AI source and actual compiled-environment evidence readback; this reviewer did not execute Lean or a kernel.",
+        "receipt_identifier": "semantic-readback.json",
+        "receipt_sha256": "548c93f95ac65ee2bf6185e9f896dec51091d67df463af364ef1bd01a72ef5f2",
+        "scope": "Completed native R10 selected environment and its 22 actual headline closures; not a Linux or strict Comparator execution, current default-build integration, performance measurement, or independent human review.",
+        "projection_manifest_sha256": "0e4e9c43ade6efcb8657f81b7cea5e9ef1495e166520dda16ad9dbc2dabcf833",
+        "projection_artifacts": {
+          "semantic-readback.json": {
+            "sha256": "548c93f95ac65ee2bf6185e9f896dec51091d67df463af364ef1bd01a72ef5f2",
+            "size_bytes": 46109
+          },
+          "headline-index.json": {
+            "sha256": "1da82f25495a860421a1caf4271cd778c78a70a41286cf6400ed2f7bddfbae2e",
+            "size_bytes": 89306
+          },
+          "claim-table.md": {
+            "sha256": "52f463a259ee4405e2d39dd2f1e1fe8041a77c62d11200ad4fe63fa873396af2",
+            "size_bytes": 7915
+          }
+        },
+        "validated_counts": {
+          "declarations": 25448,
+          "headlines": 22,
+          "imported_modules": 11951,
+          "theorems": 18054
+        },
+        "checks": {
+          "actual_initializer_greedy_fallback_and_literal_original_table_output_retained": true,
+          "all_18_download_manifest_members_independently_rehashed": true,
+          "all_22_actual_headline_names_kinds_types_and_top_records_checked": true,
+          "all_closure_dependencies_resolve_inside_their_actual_closure": true,
+          "all_required_identity_dependencies_present_after_recorded_parser_qualification_correction": true,
+          "all_selected_and_headline_records_have_only_standard_axioms": true,
+          "both_computed_reference_and_missing_reference_branches_retained": true,
+          "complete_old_sampler_or_runtime_not_substituted": true,
+          "each_headline_closure_equals_its_exact_graph_reachable_set": true,
+          "fresh_uniform_bank_composition_and_literal_machine_mass_bridge_reachable": true,
+          "normalized_unconditional_distribution_with_fallback_and_rejections_retained": true,
+          "same_fixed_time_used_for_all_tape_halting_feasibility_and_tv": true,
+          "same_new_machine_used_for_time_output_mass_and_final_bound": true,
+          "selected_declaration_and_theorem_counts_independently_parsed": true,
+          "selected_source_object_bindings_match_actual_audit_config": true,
+          "smaller_ideal_scale_route_reachable_from_final_bounded_theorem": true,
+          "source_bytes_match_frozen_normal_plan_and_audit_source_pins": true
+        },
+        "final_claim": {
+          "accuracy": "At this same t, (sum_X |tableMass(X)-1/card(Table r c)|)/2 <= 2^(-h).",
+          "additional_assumptions": [],
+          "edge_cases": "No positive dimension or positive margin assumption; empty dimensions and zero totals are included subject to equal totals.",
+          "exact_audited_type": "OAI.ContingencyTables.Algorithms.BoundedSamplingStatement",
+          "machine": "Math115.PublicLatticeSampler.machine",
+          "output": "Every t-bit tape has halted with the literal row-major binary encoding of a Table r c.",
+          "quantifiers": "One fixed machine and global natural C>0,D, then all finite m,n, natural r,c with equal totals, and natural h>=1.",
+          "size": "S=m+n+Nat.clog 2 (sum(r)+1)+h+1",
+          "theorem": "Math115.LatticeBoundedSampling.boundedSampling",
+          "time": "t=C*S^D"
+        },
+        "ideal_scale_route": {
+          "direct_dependency_path_from_bounded": [
+            "Math115.LatticeBoundedSampling.boundedSampling",
+            "Math115.PublicLatticeSampler.tableDraw",
+            "Math115.PublicLatticeSampler.public_spec",
+            "Math115.LatticeSampler.draw_spec",
+            "Math115.PhysicalBooleanSampler.draw_explicit_accuracy",
+            "Math115.PhysicalBooleanSampler.draw_variation",
+            "Math115.PhysicalFiniteWalk.idealOuterLaw_variation",
+            "Math115.IdealRepairRefinement.selectedChain_poincare_d17_refined"
+          ],
+          "in_actual_bounded_closure": true,
+          "module": "Math115.IdealRepairRefinement",
+          "name": "Math115.IdealRepairRefinement.selectedChain_poincare_d17_refined",
+          "record_canonical_sha256": "2a4eb13863a766414d2981cd5a19f2ce23fd69c62320c9ed4a5e1621c0d986bb",
+          "statement": "\u2200 {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J] (r : I \u2192 \u2115)\n  (c : J \u2192 \u2115) [inst_4 : Nonempty (Math115.IdealOracleScales.IdealStates r c)]\n  (H : Math115.IdealOracleScales.IdealStates r c \u2192 \u211d),\n  (Math115.IdealOracleScales.selectedChain r c).variance H \u2264\n    128 * 5 ^ 4 * \u2191OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 17 *\n      (Math115.IdealOracleScales.selectedChain r c).energy H"
+        },
+        "generic_reuse_boundary": {
+          "allowed": "Pinned parser, printer, polynomial arithmetic, dense sampler subroutines, and finite-word machine compiler are reused. Presence of generic library symbols does not substitute a different complete sampler.",
+          "old_complete_symbols_absent_from_actual_bounded_closure": [
+            "OAI.ContingencyTables.ProfilePrograms.publicWordCount",
+            "OAI.ContingencyTables.ProfilePrograms.publicSampling",
+            "OAI.ContingencyTables.ProfilePrograms.samplingMachine",
+            "OAI.ContingencyTables.ProfilePrograms.samplingMachineTime",
+            "OAI.ContingencyTables.ProfilePrograms.samplingMachineTime_polynomial",
+            "OAI.ContingencyTables.SmallGraphProfiles.samplingMachineTime_public_bound",
+            "OAI.ContingencyTables.SmallGraphProfiles.samplingMachine_large_outputs"
+          ]
+        },
+        "runtime_boundary": {
+          "intermediate_powers": "17 is the mixing allowance power; 85 and 170 are reservation/size bounds, not a complete numeric runtime exponent.",
+          "proof_only_choice": "tableDraw uses Classical.choose as a specification witness; publicDraw and its realizer execute the computed ordinary list draw, not tableDraw.",
+          "proved": "Uniform polynomial-time existence for this fixed formal fair-bit machine; supplied reserved-word draw cost plus output weight is separately polynomial.",
+          "supplied_bank_scope": "Cost theorems take the exact scheduled bank, allow all natural h, and require no equal-total premise. Precision h is numeric in encodeMargins.length+h+3. The separate finite-word machine compiler accounts for fair-bit acquisition.",
+          "unextracted": "The source witnesses complete Dtime=170*P.natDegree for an existential physical-compiler polynomial P. No concrete numeric full runtime degree is extracted here."
+        },
+        "not_established": [
+          "Exact-sampling or counting extension",
+          "Extracted numeric complete runtime degree",
+          "Measured sampler runtime or practical speedup",
+          "A standalone exported executable binary",
+          "Fresh Linux check of this R10 source overlay",
+          "Strict Comparator acceptance",
+          "Current default/public build integration",
+          "Independent human mathematical review"
+        ],
+        "source_object_bindings": {
+          "Math115.CompletionSamplerProgram": {
+            "compiled_object_sha256": "ed4a49097d4a688867797b4ae92efecb631299320a5bb5eb9a491c41278353e1",
+            "logical_source_path": "formal/Math115/CompletionSamplerProgram.lean",
+            "source_sha256": "b2f2dd678bff288d8298ea267adac03da78d458ec89d934c2bb7c5fe6c109e42"
+          },
+          "Math115.CompletionSamplerSemantics": {
+            "compiled_object_sha256": "d0920372c346c5b7479fe85d496bf850121bbfe7eb9fb4281a1dfe7a5168c592",
+            "logical_source_path": "formal/Math115/CompletionSamplerSemantics.lean",
+            "source_sha256": "0cf2fc168303f1dde8ff0cba7aacfe6f650acc20f87218dbd8c9ae11bcc787c7"
+          },
+          "Math115.IdealOracleScales": {
+            "compiled_object_sha256": "14db7c54fcb5744f847ceaba1d9fdfb58bc7e4b2442edeb236a98d4ec269773e",
+            "logical_source_path": "formal/Math115/IdealOracleScales.lean",
+            "source_sha256": "401963282dd1e404c76e6c78555d0fe0387aaf150256638ed1728f20253260bf"
+          },
+          "Math115.IdealRepairRefinement": {
+            "compiled_object_sha256": "ecae3dd155df85c9180e384bf92bdcbe80376b46fb64fbca33f6e94a5f6412d0",
+            "logical_source_path": "formal/Math115/IdealRepairRefinement.lean",
+            "source_sha256": "7728c29d949bbf0b2cefa4feea9e38cc971df2c70ea069a77dfd53162418ed93"
+          },
+          "Math115.LatticeBoundedSampling": {
+            "compiled_object_sha256": "911d7b979c8794a13fd8a99083dd5e4ce7f4dac5c2da7b739d2212d845bf19ea",
+            "logical_source_path": "formal/Math115/LatticeBoundedSampling.lean",
+            "source_sha256": "adc3ed0dfab422e1e2438c44e6bdda277e7a60de92b3847d0e0016d6989a451e"
+          },
+          "Math115.LatticeOuterSemantics": {
+            "compiled_object_sha256": "3997ea4115319b21a1c3aaab82a1a062e522b7f3bddf2d98609f9d51c7eba774",
+            "logical_source_path": "formal/Math115/LatticeOuterSemantics.lean",
+            "source_sha256": "cd22fe44345baa2ab94f2139ff004fc7fd20b8ebd42b2617234858c7cb6db3bf"
+          },
+          "Math115.LatticeSampler": {
+            "compiled_object_sha256": "a6d9c63910f07b2cd48c951c8038f73328bb4c6af335dd67091d02336c4d2c3f",
+            "logical_source_path": "formal/Math115/LatticeSampler.lean",
+            "source_sha256": "3e2d55e19d35b75816366b4e1b686e54c944719ea5b0d98565aa22995be8c7f4"
+          },
+          "Math115.LatticeSamplerCost": {
+            "compiled_object_sha256": "7a8708d41b90a3b5e79136d1a3be0406caf659e457f931c555b15476d344ecbc",
+            "logical_source_path": "formal/Math115/LatticeSamplerCost.lean",
+            "source_sha256": "bd78d5a5d23d4979ff48be9cccc4f9e900f16a07dcbb5a22f190401effccfac2"
+          },
+          "Math115.LatticeSamplerPreparation": {
+            "compiled_object_sha256": "76e5bd7e8bfb54a0173d015056f0d57e3e0db4ae21d6c8244191448efd53a3c2",
+            "logical_source_path": "formal/Math115/LatticeSamplerPreparation.lean",
+            "source_sha256": "e5d33b3c51f0709968ed257b92cd0ec8fb54244aea5e1217dd283d2b390a21b2"
+          },
+          "Math115.LatticeScheduleProgram": {
+            "compiled_object_sha256": "46388470d516fcb9a34bb8c9fc48ee5c11de554cb04ea374558e8243b645eac1",
+            "logical_source_path": "formal/Math115/LatticeScheduleProgram.lean",
+            "source_sha256": "6f4269c7366956bda9b4a1ccb2f81d89b31834ba1c12585fcd788a1fd248a359"
+          },
+          "Math115.LatticeUnitOuter": {
+            "compiled_object_sha256": "0625fd3b136d4c938a993848c78540bfe3394dccb0e8bd4c5fe1e5b0fb0f79c3",
+            "logical_source_path": "formal/Math115/LatticeUnitOuter.lean",
+            "source_sha256": "2c8e44d0c6ff803d21c987b87cb4b24ec21e541619d53a296c99cb0d4f891b03"
+          },
+          "Math115.ListedLatticeCompletion": {
+            "compiled_object_sha256": "0861dc7c52044555919775c08743f02e61f9e5e662d51f113b9d18a1c5043178",
+            "logical_source_path": "formal/Math115/ListedLatticeCompletion.lean",
+            "source_sha256": "0ea157c4a458949c5b9dc8d8dceeaa93b2bd3ab9858b446e846f1357efda99bc"
+          },
+          "Math115.PhysicalBooleanSampler": {
+            "compiled_object_sha256": "3b13795d4834cf621291e01847842355a020eebe183ab3c871efb107753bc36a",
+            "logical_source_path": "formal/Math115/PhysicalBooleanSampler.lean",
+            "source_sha256": "a676bb44fd5a60a0f45e082061c4947279ffc7da253527d2504a3620bfffe935"
+          },
+          "Math115.PhysicalEmptyCompletion": {
+            "compiled_object_sha256": "723c0fc332299a34facd95697b3899e10c7d5447f6dfc09964056e6ffb9eacaf",
+            "logical_source_path": "formal/Math115/PhysicalEmptyCompletion.lean",
+            "source_sha256": "2caa6e7704b069b6fe926dc70014dc015196179f7acb341f6c8072e0ce6395bd"
+          },
+          "Math115.PhysicalReferenceBoolean": {
+            "compiled_object_sha256": "3b99813ab24af6b5b31c611b4cfd8eb98079844a5e34c1d49838c075067fa029",
+            "logical_source_path": "formal/Math115/PhysicalReferenceBoolean.lean",
+            "source_sha256": "3f465cb573045370252e6eaad81c7d8a7b5b297aa7fd48e948868ef8aa8e534e"
+          },
+          "Math115.PublicLatticeSampler": {
+            "compiled_object_sha256": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489",
+            "logical_source_path": "formal/Math115/PublicLatticeSampler.lean",
+            "source_sha256": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245"
+          }
+        },
+        "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+        "fresh_compiler_or_kernel_performed_by_reviewer": false
+      }
+    },
+    "promotion_boundaries": {
+      "strict_sampler_acceptance": "not established",
+      "fresh_overlay_linux_reproduction": "not established",
+      "default_aggregate_integration": "not established",
+      "numeric_complete_runtime_degree": null,
+      "conditional_degree_transformation_compiled": false,
+      "practical_speed_advantage_demonstrated": false
+    },
+    "normal_evidence_reviewed_at_utc": "2026-10-11T00:09:15.207698+00:00"
+  },
+  "original_review_kind": "Source inspection and algebra; no live compilation, Git operation, remote job, or benchmark"
 }

@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "status": "passed_module_environment_audit",
+  "scope": "Single UnitOuter import root covering nine successful research modules and selected compiled import environment; not aggregate or complete sampler audit.",
+  "root_modules": [
+    "Math115.LatticeUnitOuter"
+  ],
+  "normal_source_plan_closure_modules": 594,
+  "required_public_declarations": 224,
+  "resolved_actual_private_helpers": [
+    {
+      "actual_compiled_name": "_private.Math115.LatticeProfileStep.0.Math115.LatticeProfileStep.apply_decision",
+      "axioms": [],
+      "defining_module": "Math115.LatticeProfileStep",
+      "record_sha256": "72b3d967582882bc425cd9043597069f770238bb9499ce3c6cb5106260ec50c7",
+      "resolution": "MUST resolve from actual compiled environment; never accept guessed canonical private name",
+      "source_name": "apply_decision",
+      "statement": "∀ {X : Type u_1} {Y : Type u_2} (encode : X → Y) (x y : X) (test : Bool) (accept : Prop) [inst : Decidable accept],\n  (test = true ↔ accept) → (if test = true then encode y else encode x) = encode (if accept then y else x)"
+    },
+    {
+      "actual_compiled_name": "_private.Math115.LatticeProfileStep.0.Math115.LatticeProfileStep.completionDecision_some_formula",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "defining_module": "Math115.LatticeProfileStep",
+      "record_sha256": "09304ba2c513e291ec8e4551bba3074539ad042aeaa8c522921c9178a058ae62",
+      "resolution": "MUST resolve from actual compiled environment; never accept guessed canonical private name",
+      "source_name": "completionDecision_some_formula",
+      "statement": "∀ {X : Type u_1} {I : Type u_2} {J : Type u_3} [inst : Fintype I] [inst_1 : Fintype J] (R : X → Option I → ℕ)\n  (P : X → Option J → ℕ) (x y : X) (A : OAI.ContingencyTables.Table (R x) (P x)),\n  OAI.ContingencyTables.CompletionTranslation.completionDecision R P x (some y) A =\n    if\n        ∀ (i : Option I) (j : Option J),\n          0 ≤ ↑(↑A i j) + OAI.ContingencyTables.CompletionTranslation.between (R x) (R y) (P x) (P y) i j then\n      y\n    else x"
+    },
+    {
+      "actual_compiled_name": "_private.Math115.LatticeUnitStep.0.Math115.LatticeUnitStep.ofFn_take_prefix",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "defining_module": "Math115.LatticeUnitStep",
+      "record_sha256": "d5ae751c323a18ace192455a91c1ee7d8bbe98ab2addf0959c2e01cf1b068bec",
+      "resolution": "MUST resolve from actual compiled environment; never accept guessed canonical private name",
+      "source_name": "ofFn_take_prefix",
+      "statement": "∀ {k N : ℕ} (hk : k ≤ N) (bits : Fin N → Bool),\n  List.take k (List.ofFn bits) = List.ofFn (OAI.ContingencyTables.FirstSuccess.prefixWord hk bits)"
+    }
+  ],
+  "actual_environment_inventory_counts": {
+    "declarations": 23212,
+    "headlines": 0,
+    "imported_modules": 11860,
+    "theorems": 16747
+  },
+  "inventory_count_interpretation": "Selected namespace environment from one UnitOuter import root covering nine research modules includes transitive/upstream/generated declarations. These counts are not new results or a count limited to just those research modules.",
+  "headline_audits": 0,
+  "full_mode_on_incomplete_batch": "correctly refused; no full-chain result",
+  "actual_report": {
+    "public_file": "environment-report.json.gz",
+    "raw_file": "environment-audit.stdout",
+    "raw_sha256": "093459505bb392383a7cee15494f5c991a8ff75d3866d894ca6ae7dee83e1ffc",
+    "public_sha256": "9ad7ab2d031865bde4e1855650b0870bc7350a77da3647bd62b35222ef866449",
+    "decompressed_sha256": "093459505bb392383a7cee15494f5c991a8ff75d3866d894ca6ae7dee83e1ffc",
+    "transform": "gzip filename empty, mtime 0; original report bytes retained; private-path scan clean; no statement/type/axiom transformation"
+  },
+  "executed_driver_raw_sha256": "f7bdfe69030a8fca2b9efa31d3a88e29cbbff79a2827460735117beed91a2cc5",
+  "executed_helper_source_raw_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+  "recorded_helper_object_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581",
+  "binary_helper_object_distributed": false,
+  "prepared_config_raw_sha256": "461090a2ca0e047a9abbdec9e01d3fae6e45eab4a92dffb7b12075cf2a952072",
+  "executed_frozen_config_raw_sha256": "c799f97561442d8fa1a20bf4bdf82b023cf39ac1eae097ff068dbd91a8bab71c",
+  "imported_object_closure_raw_sha256": "d266ca5a6bb0fd3d0a699323fcfd883bbfff0a71a40061685a52cc7381cd5eb8",
+  "imported_object_closure_canonical_sha256": "75b3d6c361c976db7004639f7287034b817ab6659487d759a08cbf33d6c2b95f",
+  "unchanged_inventory_pairs": [
+    {
+      "kind": "compile",
+      "before_raw_sha256": "da728c9183bde057ad5bf4bff9e1bea9f3adba3a920ea0a516b08f58ae87c18a",
+      "after_raw_sha256": "da728c9183bde057ad5bf4bff9e1bea9f3adba3a920ea0a516b08f58ae87c18a",
+      "raw_pair_byte_identical": true,
+      "raw_pair_json_identical": true,
+      "public_single_snapshot": "compile-inventory.json.gz",
+      "public_sha256": "a1192b3940a19ac9a76bac2eba5409be5951025c6d09f19608a79d43beaab989",
+      "deduplication": "Only one copy of unchanged before/after pair included"
+    },
+    {
+      "kind": "audit",
+      "before_raw_sha256": "96fbcc2d4b804a94ffa1c22796c222e0598000e3436f5935cf409f65b4b028aa",
+      "after_raw_sha256": "96fbcc2d4b804a94ffa1c22796c222e0598000e3436f5935cf409f65b4b028aa",
+      "raw_pair_byte_identical": true,
+      "raw_pair_json_identical": true,
+      "public_single_snapshot": "audit-inventory.json.gz",
+      "public_sha256": "83b051ff4d9077da23d19ac3f83b0b433d86e01ed2bda11a6ac41c38fc592db0",
+      "deduplication": "Only one copy of unchanged before/after pair included"
+    }
+  ],
+  "compiler_stage_streams": {
+    "compiler-version.stdout": {
+      "raw_sha256": "caa538834571fbbf53913bbde24b9fd3d9deac746137443a1c712d820e6a5b38",
+      "public_file": "compiler-version.stdout",
+      "public_sha256": "caa538834571fbbf53913bbde24b9fd3d9deac746137443a1c712d820e6a5b38",
+      "transformation": "none"
+    },
+    "compiler-version.stderr": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_file": "empty-stage-stream",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "none"
+    },
+    "compiler-prefix.stdout": {
+      "raw_sha256": "9799c0da6abd244ac6da2a0c0fdfcb086db278d027e46581f671845ca24d668e",
+      "public_file": "compiler-prefix-projected.stdout",
+      "public_sha256": "1e454c890c022dcca5098de35f26ff9017fd84024d6b124c32d20a9cbe3b5aa3",
+      "transformation": "role-token pinned compiler path projection"
+    },
+    "compiler-prefix.stderr": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_file": "empty-stage-stream"
+    },
+    "helper-compile.stdout": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_file": "empty-stage-stream"
+    },
+    "helper-compile.stderr": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_file": "empty-stage-stream"
+    },
+    "environment-audit.stderr": {
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_file": "empty-stage-stream"
+    }
+  },
+  "raw_download_manifest_sha256": "23eecaecfaecaa7f60ce8cdbb436b9007fdf33c061ca5cfc8bc24bb83b17259c",
+  "independent_ai_review_raw_sha256": "f8eacda3d12e4358284ad517b87a3613c0e91441aae258c79dd717bdfb7b4b3c",
+  "independent_ai_review_status": "available",
+  "historical_eight_root_summary": "history/round5-summary.json",
+  "historical_eight_root_summary_raw_sha256": "b80543b5109ad594df26ad93e56d3bc89302ef08776c91a5ac1da7b03836b39a",
+  "evidence_kind": "Actual native Lean environment audit plus operator source/object checks and independent AI-agent saved-evidence/verifier replay.",
+  "trusted_and_unvendored": [
+    "Pinned native compiler/bootstrap and official dependency caches remain trusted.",
+    "Most imported runtime/dependency objects and system loader/OS/Python services are not vendored.",
+    "Public metadata path projections preserve digests/roles but are not raw original metadata bytes.",
+    "Executed audit input ordering/imports and statement types/axioms remain actual evidence; ordinary source replay is a different recipe."
+  ],
+  "portable_recipe_status": "No fully portable environment-audit recipe tested or claimed here; reproduce.sh is an ordinary source replay only.",
+  "claims_boundary": "No complete encoded sampler, aggregate/full-chain or public machine runtime claim; strict tiny fixture remains a separate scope.",
+  "artifact_projection_map": [
+    {
+      "public_file": "environment-report.json.gz",
+      "raw_file": "environment-audit.stdout",
+      "raw_sha256": "093459505bb392383a7cee15494f5c991a8ff75d3866d894ca6ae7dee83e1ffc",
+      "public_sha256": "9ad7ab2d031865bde4e1855650b0870bc7350a77da3647bd62b35222ef866449",
+      "decompressed_sha256": "093459505bb392383a7cee15494f5c991a8ff75d3866d894ca6ae7dee83e1ffc",
+      "transform": "gzip filename empty, mtime 0; original report bytes retained; private-path scan clean; no statement/type/axiom transformation"
+    },
+    {
+      "public_file": "Audit.lean",
+      "raw_file": "Audit.lean",
+      "raw_sha256": "f7bdfe69030a8fca2b9efa31d3a88e29cbbff79a2827460735117beed91a2cc5",
+      "public_sha256": "f7bdfe69030a8fca2b9efa31d3a88e29cbbff79a2827460735117beed91a2cc5",
+      "transform": "none; exact executed bytes"
+    },
+    {
+      "public_file": "helper-source/ResearchAudit/EnvironmentAudit.lean",
+      "raw_file": "helper-source/ResearchAudit/EnvironmentAudit.lean",
+      "raw_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "public_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "transform": "none; exact executed bytes"
+    },
+    {
+      "public_file": "config.json",
+      "raw_file": "audit-output/frozen-config.json",
+      "raw_sha256": "c799f97561442d8fa1a20bf4bdf82b023cf39ac1eae097ff068dbd91a8bab71c",
+      "public_sha256": "dc6425aa989e55fc7e92fc9575ec906c72ebfdc98c6f0af127519540ab48de0a",
+      "decompressed_public_sha256": null,
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved"
+    },
+    {
+      "public_file": "receipt.json",
+      "raw_file": "audit-output/receipt.json",
+      "raw_sha256": "a1e4b351a3c2900602ad07f42fc1218f2b1d4a6ba97ac41a5eb9661706e18665",
+      "public_sha256": "48f03327731e9ea605d75504fd5dbd9ad2247264ec8e9e30c96581375a130224",
+      "decompressed_public_sha256": null,
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved"
+    },
+    {
+      "public_file": "imported-object-closure.json.gz",
+      "raw_file": "audit-output/imported-object-closure.json",
+      "raw_sha256": "d266ca5a6bb0fd3d0a699323fcfd883bbfff0a71a40061685a52cc7381cd5eb8",
+      "public_sha256": "e18a21892dc790b13fe510e56ef103bbb35e9c0f5f2f55ab30ae87d185be0dd9",
+      "decompressed_public_sha256": "ce610d92d1cfc4ac0343163f546bf8f1c44b3606c5a7c4ade2ec708897260abb",
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved; deterministic gzip mtime 0"
+    },
+    {
+      "public_file": "selection.json",
+      "raw_file": "audit-prepared/selection.json",
+      "raw_sha256": "fd7939537b590d58c85f22c163d77adf7ca7d13702f5ac3d3450849b4c978a5f",
+      "public_sha256": "fd7939537b590d58c85f22c163d77adf7ca7d13702f5ac3d3450849b4c978a5f",
+      "transform": "JSON role-token path projection; selection values preserved"
+    },
+    {
+      "public_file": "compile-inventory.json.gz",
+      "raw_file": "audit-output/compile-before.json",
+      "raw_sha256": "da728c9183bde057ad5bf4bff9e1bea9f3adba3a920ea0a516b08f58ae87c18a",
+      "public_sha256": "a1192b3940a19ac9a76bac2eba5409be5951025c6d09f19608a79d43beaab989",
+      "decompressed_public_sha256": "d75dd37828fd6001f5606eb8f66cb40fc8301a83864a04eb961c67e15a0bc35d",
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved; deterministic gzip mtime 0"
+    },
+    {
+      "public_file": "audit-inventory.json.gz",
+      "raw_file": "audit-output/audit-before.json",
+      "raw_sha256": "96fbcc2d4b804a94ffa1c22796c222e0598000e3436f5935cf409f65b4b028aa",
+      "public_sha256": "83b051ff4d9077da23d19ac3f83b0b433d86e01ed2bda11a6ac41c38fc592db0",
+      "decompressed_public_sha256": "b9fb40553d469b0fc950722f1f4a68deda1a9f04e274e8d56ca9e98745c595a8",
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved; deterministic gzip mtime 0"
+    },
+    {
+      "public_file": "intake-verification.json",
+      "raw_file": "audit-root-intake.json",
+      "raw_sha256": "87d36cb9f085c8d7c253779abf967bbb8c9b262c86bdd4f5e7de14bfd0c386f0",
+      "public_sha256": "00e752bca649e8faa02ad9b992da9ec1b28d70c4a3d50443ec1a9fb614436d2e",
+      "decompressed_public_sha256": null,
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved"
+    },
+    {
+      "public_file": "operator-review.json",
+      "raw_file": "audit-root-evidence-review.json",
+      "raw_sha256": "ad80d2c41056ced59ce07fe23b44ce81e69fd69aa73075b293825e9736090bc3",
+      "public_sha256": "ad80d2c41056ced59ce07fe23b44ce81e69fd69aa73075b293825e9736090bc3",
+      "decompressed_public_sha256": null,
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved"
+    },
+    {
+      "public_file": "independent-ai-review.json",
+      "raw_file": "audit-independent-review.json",
+      "raw_sha256": "f8eacda3d12e4358284ad517b87a3613c0e91441aae258c79dd717bdfb7b4b3c",
+      "public_sha256": "f8eacda3d12e4358284ad517b87a3613c0e91441aae258c79dd717bdfb7b4b3c",
+      "decompressed_public_sha256": null,
+      "transform": "Role-token path projection of JSON keys/values; all nonpath values preserved"
+    }
+  ]
+}

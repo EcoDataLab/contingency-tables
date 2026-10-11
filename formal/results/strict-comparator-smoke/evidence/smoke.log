@@ -1,0 +1,68 @@
+Linux <GUEST> 7.3.0-8-generic #8-Ubuntu SMP PREEMPT_DYNAMIC Tue Sep 29 18:31:27 UTC 2026 x86_64 GNU/Linux
+uid=1000(verifier) gid=1000(verifier) groups=1000(verifier)
+systemd 261 (261.3-0ubuntu3)
++PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +LIBARCHIVE
+3308dda04d2256cda69f228e7dd241803e4ae7a07da3fd782b3573b08eb30f86  /boot/config-7.3.0-8-generic
+Filesystem       1B-blocks        Used   Available Use% Mounted on
+/dev/vda1      82084241408 17006223360 65061240832  21% /
+MemTotal:        6059644 kB
+MemFree:         5396508 kB
+MemAvailable:    5437812 kB
+Buffers:           14916 kB
+Cached:           376264 kB
+SwapCached:            0 kB
+Active:            86184 kB
+Inactive:         247068 kB
+Active(anon):      86184 kB
+Inactive(anon):        0 kB
+Active(file):          0 kB
+Inactive(file):   247068 kB
+Unevictable:      145156 kB
+Mlocked:            9800 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:              2756 kB
+Writeback:             0 kB
+AnonPages:         87340 kB
+Mapped:           102156 kB
+Shmem:              5104 kB
+KReclaimable:      21924 kB
+Slab:              75432 kB
+SReclaimable:      21924 kB
+SUnreclaim:        53508 kB
+KernelStack:        3136 kB
+PageTables:         3384 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     3029820 kB
+Committed_AS:     444556 kB
+VmallocTotal:   13743895347199 kB
+VmallocUsed:       15728 kB
+VmallocChunk:          0 kB
+Percpu:             2176 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:         1062912 kB
+Unaccepted:            0 kB
+Balloon:               0 kB
+GPUActive:             0 kB
+GPUReclaim:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      106352 kB
+DirectMap2M:     4087808 kB
+DirectMap1G:     4194304 kB
+MATH115_C10_GUEST_RESOURCE_RECEIPT={"cpu_count": 4, "guest_free_disk_bytes": 65061240832, "mem_available_bytes": 5570945024, "mem_total_bytes": 6205075456, "swap_total_bytes": 0}

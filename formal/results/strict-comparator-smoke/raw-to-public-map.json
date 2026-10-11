@@ -1,0 +1,202 @@
+{
+  "actual_raw_archive_sha256": "067091c21a10c9c4b39f9ff1169c188ec765d6cb6400e4ab5b18dab16ab3082c",
+  "artifacts": [
+    {
+      "artifact": "0000_dependencies_current.stderr.log",
+      "private_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_rendering_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_file": "<PRIVATE_RAW>/0000_dependencies_current.stderr.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "0000_dependencies_current.stdout.log",
+      "private_raw_sha256": "ae5ecf602a40969afa03734921cd74cb8964eea20c2efe1f08d4fabe94d3d0af",
+      "public_rendering_sha256": "ae5ecf602a40969afa03734921cd74cb8964eea20c2efe1f08d4fabe94d3d0af",
+      "raw_file": "<PRIVATE_RAW>/0000_dependencies_current.stdout.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "0000_module_build.stderr.log",
+      "private_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_rendering_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_file": "<PRIVATE_RAW>/0000_module_build.stderr.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "0000_module_build.stdout.log",
+      "private_raw_sha256": "d5c17858fe656c4e190385090e1892f487e84288ffb0441d9d244b7dbc605f85",
+      "public_rendering_sha256": "d5c17858fe656c4e190385090e1892f487e84288ffb0441d9d244b7dbc605f85",
+      "raw_file": "<PRIVATE_RAW>/0000_module_build.stdout.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "0001_dependencies_current.stderr.log",
+      "private_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_rendering_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_file": "<PRIVATE_RAW>/0001_dependencies_current.stderr.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "0001_dependencies_current.stdout.log",
+      "private_raw_sha256": "ae5ecf602a40969afa03734921cd74cb8964eea20c2efe1f08d4fabe94d3d0af",
+      "public_rendering_sha256": "ae5ecf602a40969afa03734921cd74cb8964eea20c2efe1f08d4fabe94d3d0af",
+      "raw_file": "<PRIVATE_RAW>/0001_dependencies_current.stdout.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "0001_module_build.stderr.log",
+      "private_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_rendering_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_file": "<PRIVATE_RAW>/0001_module_build.stderr.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "0001_module_build.stdout.log",
+      "private_raw_sha256": "b882638f55e8376c1743e1ea4b3c017a8bc8e78a1519a414231baca0d0cd6c28",
+      "public_rendering_sha256": "b882638f55e8376c1743e1ea4b3c017a8bc8e78a1519a414231baca0d0cd6c28",
+      "raw_file": "<PRIVATE_RAW>/0001_module_build.stdout.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "0002_dependencies_current.stderr.log",
+      "private_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_rendering_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_file": "<PRIVATE_RAW>/0002_dependencies_current.stderr.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "0002_dependencies_current.stdout.log",
+      "private_raw_sha256": "2e044c5d6f08a9c261cdc45dbef1e00844270afd32ed61bda5db226b35befa6b",
+      "public_rendering_sha256": "2e044c5d6f08a9c261cdc45dbef1e00844270afd32ed61bda5db226b35befa6b",
+      "raw_file": "<PRIVATE_RAW>/0002_dependencies_current.stdout.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "0002_module_build.stderr.log",
+      "private_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_rendering_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_file": "<PRIVATE_RAW>/0002_module_build.stderr.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "0002_module_build.stdout.log",
+      "private_raw_sha256": "4bf2738084f557d018e3d4d6e8679c0d9b0539e8036a2061129aa90baa19e0e3",
+      "public_rendering_sha256": "4bf2738084f557d018e3d4d6e8679c0d9b0539e8036a2061129aa90baa19e0e3",
+      "raw_file": "<PRIVATE_RAW>/0002_module_build.stdout.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "Smoke.json",
+      "private_raw_sha256": "fc96d5e5889d73275b9a528de4168ee2730bbe1c1cd81b3d196329f65a5c3bc7",
+      "public_rendering_sha256": "fc96d5e5889d73275b9a528de4168ee2730bbe1c1cd81b3d196329f65a5c3bc7",
+      "raw_file": "<PRIVATE_RAW>/Smoke.json",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "fixture_targets_no_rebuild.stderr.log",
+      "private_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_rendering_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_file": "<PRIVATE_RAW>/fixture_targets_no_rebuild.stderr.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "fixture_targets_no_rebuild.stdout.log",
+      "private_raw_sha256": "b352a2985300105b1874ed545937db3e580add7aad60abcd213325cebf0e3a85",
+      "public_rendering_sha256": "b352a2985300105b1874ed545937db3e580add7aad60abcd213325cebf0e3a85",
+      "raw_file": "<PRIVATE_RAW>/fixture_targets_no_rebuild.stdout.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "no-rebuild-config.json",
+      "private_raw_sha256": "83357bc975d0ba6b53c449baeaed7c62e9613ec92b6a456607c7e73ac4914b03",
+      "public_rendering_sha256": "5e61550d8736acc5ac4ed700aadd9d0da9a2b81a48517d6285ed6c260a31fee1",
+      "raw_file": "<PRIVATE_RAW>/no-rebuild-config.json",
+      "transform": "literal path/guest-name redactions only"
+    },
+    {
+      "artifact": "original_linux_and_landrun_preflight.stderr.log",
+      "private_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_rendering_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_file": "<PRIVATE_RAW>/original_linux_and_landrun_preflight.stderr.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "original_linux_and_landrun_preflight.stdout.log",
+      "private_raw_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b",
+      "public_rendering_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b",
+      "raw_file": "<PRIVATE_RAW>/original_linux_and_landrun_preflight.stdout.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "original_precomparison_landrun_preflight.stderr.log",
+      "private_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_rendering_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_file": "<PRIVATE_RAW>/original_precomparison_landrun_preflight.stderr.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "original_precomparison_landrun_preflight.stdout.log",
+      "private_raw_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b",
+      "public_rendering_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b",
+      "raw_file": "<PRIVATE_RAW>/original_precomparison_landrun_preflight.stdout.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "receipt.json",
+      "private_raw_sha256": "8f33387969c677621f8a45a097fb523650667b766dee61234734a0efb2fc18f2",
+      "public_rendering_sha256": "1ae3ed65ef475a4a1c0d5dfa1564bf93c3fbf6b15939ae2c3a7643dd8b7d989f",
+      "raw_file": "<PRIVATE_RAW>/receipt.json",
+      "transform": "literal path/guest-name redactions only"
+    },
+    {
+      "artifact": "smoke.log",
+      "private_raw_sha256": "0b6ff3387e4054569de74278b0994b025cdb62db176d228b40ef10170a273f15",
+      "public_rendering_sha256": "22e9712f56a93ea281a1804d5e07938ae592bc0134cac4706b37dea385f82b28",
+      "raw_file": "<PRIVATE_RAW>/smoke.log",
+      "transform": "literal path/guest-name redactions only"
+    },
+    {
+      "artifact": "unchanged_comparator.stderr.log",
+      "private_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_rendering_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "raw_file": "<PRIVATE_RAW>/unchanged_comparator.stderr.log",
+      "transform": "byte-identical"
+    },
+    {
+      "artifact": "unchanged_comparator.stdout.log",
+      "private_raw_sha256": "58f4bbf2baba9658e12de721b382b1bf646878f20dc868048569a64fadc80cc1",
+      "public_rendering_sha256": "58f4bbf2baba9658e12de721b382b1bf646878f20dc868048569a64fadc80cc1",
+      "raw_file": "<PRIVATE_RAW>/unchanged_comparator.stdout.log",
+      "transform": "byte-identical"
+    }
+  ],
+  "public_renderings_are_not_original_raw_bytes": true,
+  "redactions": [
+    {
+      "category": "fixture directory",
+      "replacement": "<FIXTURE>"
+    },
+    {
+      "category": "output directory",
+      "replacement": "<OUTPUT>"
+    },
+    {
+      "category": "runner directory",
+      "replacement": "<RUNNER>"
+    },
+    {
+      "category": "checking checkout",
+      "replacement": "<CHECKOUT>"
+    },
+    {
+      "category": "checking-user home",
+      "replacement": "<CHECKING_USER_HOME>"
+    },
+    {
+      "category": "guest hostname",
+      "replacement": "<GUEST>"
+    }
+  ],
+  "source_files_transform": "none; exact tested bytes",
+  "status": "published authenticated evidence renderings"
+}

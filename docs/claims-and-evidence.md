@@ -1,6 +1,6 @@
 # Claims and evidence
 
-[The claims ledger](../claims.json) binds each public headline to an English
+[The claims ledger](../claims.json) binds each default-target headline to an English
 claim, the quantity bounded, stated hypotheses, present limits, source files,
 Lean declaration names, and a verification receipt with an explicit scope.
 The English descriptions are interpretations that require mathematical review;
@@ -19,8 +19,7 @@ Boolean law and schedule. Its named audits are regenerated from saved receipts;
 its normal build used authenticated dependency reuse and a fresh aggregate root.
 The [status ledger](status.md) records current verification results and the
 [contributor handoff](handoff.md) separates the checked core from frozen research.
-The literal outer sampler, numerical complete runtime degree, and strict
-Comparator replay remain open.
+The later [complete bounded-sampler checkpoint](outer-sampler-compiler-checkpoint.md) provides separate research-overlay evidence for the literal machine, output law and uniform polynomial-time existence. The complete compiled-environment audit passed. Its exact statement map and evidence ledger are separate from these six default-target headlines. The numerical complete runtime degree and strict sampler replay remain open.
 
 The [fresh Linux stage receipt](../formal/results/linux-focused-df469a5/README.md)
 separately reproduces the complete focused build, 1,236 named audits, and full
@@ -71,7 +70,7 @@ reserved Boolean word. `draw_explicit_accuracy` bounds total variation from
 the uniform feasible-table law by `2^-h` when that word is uniform and the
 proved schedule is used. Equal-total natural margins may include zeros and
 empty dimensions. The typed construction uses noncomputable ingredients;
-identifying a complete literal encoded outer walker remains open.
+this typed-law statement alone does not identify the literal encoded walker. The later [complete bounded-sampler checkpoint](outer-sampler-compiler-checkpoint.md) supplies that separate program-level result.
 
 ## component-cost
 

@@ -10,20 +10,21 @@ proofs. The new dense specialization supplies the accurate fine law and
 all-state physical oracle. The encoded completion routine also has exact
 output semantics and polynomial charged cost in supplied input. The both-branch
 typed Boolean sampler now has pointwise feasible output and scheduled accuracy,
-and its numeric schedule has polynomial charged cost. Concrete encoded outer-program identification,
-complete sampler runtime, and secure Comparator verification remain open.
+and its numeric schedule has polynomial charged cost. The later research overlay connects that law to a fixed encoded public machine and proves uniform polynomial-time existence. The complete compiled-environment audit passed. The numerical complete runtime exponent and strict Comparator verification of the sampler remain open.
 
 ## Completed stage, 10 October 2026 UTC
+
+Later outer-sampler repairs are recorded in the [current compiler checkpoint](outer-sampler-compiler-checkpoint.md). The original blockers and all dependent research modules now pass ordinary compilation; the checkpoint separates that complete compiler result from the exact environment audit and strict checking. Those results do not expand the frozen aggregate or its Linux reproduction below.
 
 The [completed stage aggregate](../formal/results/completion-aggregate-1236/verification.json) passed **1,236 focused plus six standalone named declaration audits (1,242 total)**. Its 583-module normal closure contains 582 authenticated reused modules and one fresh aggregate root; four fresh named-audit checks passed. The formerly separate 46 encoded-program, 193 physical-bridge, and 134 Boolean-law/schedule declarations are now integrated into the default focused target. This is ordinary Lean compilation and selected axiom auditing with reused dependency objects, not a fresh rebuild of every dependency or strict kernel replay. All selected axioms remain within `propext`, `Classical.choice`, and `Quot.sound`, or subsets.
 
 The [compiled-environment audit](../formal/results/environment-aggregate-1236/README.md) passed: its explicit namespace/defining-module filters enumerated 22,710 declarations, including 16,549 theorem constants, and checked six complete headline dependency closures. These totals include pinned upstream and generated/private declarations. The full report, exact types, axioms, imported objects, and unchanged before/after input inventories are retained. This is ordinary compiled-environment inspection with trusted compiler/cache inputs, not strict Comparator replay. The [fresh Linux reproduction at `df469a5`](../formal/results/linux-focused-df469a5/README.md) passed the complete focused workflow: ordinary core compilation, all 1,236 named audits, and the full compiled-environment audit. It reproduced the same selected declaration/theorem counts and six headline closures, with official dependency caches trusted. The [earlier attempt at `cef573d`](../formal/results/linux-focused-cef573d-failure/README.md) remains recorded as failed after its named audits because an unused library directory blocked the environment runner. The successful rerun includes the reviewed runner repair; active proof sources are unchanged.
 
-The final [outer-sampler attempt](../research/outer-sampler/status.json) failed: 673 modules were reused, three failed, nine were dependency-blocked, and no new source compiled successfully in that attempt. `LatticeProfileStep` had passed the preceding normal attempt and was reused; the current failures are `LatticeProfileWalk`, `LatticeSamplerPreparation`, and `LatticeUnitStep`. All 13 attempted outer-sampler sources and diagnostics are frozen under [research/outer-sampler](../research/outer-sampler/) outside the default formal target. No complete literal outer sampler or full machine runtime is verified.
+The archived [outer-sampler attempt](../research/outer-sampler/status.json) failed: 673 modules were reused, three failed, nine were dependency-blocked, and no new source compiled successfully in that attempt. `LatticeProfileStep` had passed the preceding normal attempt and was reused; its recorded failures were `LatticeProfileWalk`, `LatticeSamplerPreparation`, and `LatticeUnitStep`. All 13 attempted outer-sampler sources and diagnostics are frozen under [research/outer-sampler](../research/outer-sampler/) outside the default formal target. That failed attempt established no complete sampler or machine-runtime result. The later [complete bounded-sampler checkpoint](outer-sampler-compiler-checkpoint.md) has its own exact sources and evidence.
 
-The [runtime-degree archive](../research/runtime-degree/) retains passed TreeDegree diagnostics, a failed PolynomialCompilerDegree diagnostic, and uncompiled fresh-bit/finite-word proposals. The numerical complete runtime exponent is unknown. The [Comparator serial archive](../research/comparator-serial/) retains 33 offline orchestration tests and 16 planner tests, without a real Linux runtime result for that route. The [strict VM attempt](../formal/results/strict-comparator-vm-895b45c/README.md) passed ABI-11 sandbox preflight but exhausted memory before comparison; it produced no candidate export or kernel result.
+The [runtime-degree archive](../research/runtime-degree/) retains passed TreeDegree diagnostics, a failed PolynomialCompilerDegree diagnostic, and uncompiled fresh-bit/finite-word proposals. The numerical complete runtime exponent is unknown. A separate [strict tiny Comparator fixture](../formal/results/strict-comparator-smoke/README.md) passed the real sandbox, serial builds, exporter, default Lean kernel, and comparison. Its exact Linux entrypoint and evidence supplement the earlier [serial orchestration archive](../research/comparator-serial/). This acceptance covers only the fixture. The [earlier full-challenge VM attempt](../formal/results/strict-comparator-vm-895b45c/README.md) exhausted memory before export and remains recorded as failed; neither the original challenge nor the research sampler has a strict acceptance result.
 
-Use the [contributor handoff](handoff.md) for reproduction and ordered next-round obligations. Reviewed application evidence includes the [mature worker-library benchmark](worker-library-benchmarks.md), [public commuting backtest](commuting-backtest.md), and [source-level composed complexity review](composed-complexity.md). These measure a classical law, describe a public job-table case frame, and retain a symbolic uncompiled cost proposal, respectively; none verifies a complete universal sampler.
+Use the [contributor handoff](handoff.md) for reproduction and ordered next-round obligations. Reviewed application evidence includes the [mature worker-library benchmark](worker-library-benchmarks.md), [public commuting backtest](commuting-backtest.md), and [source-level composed complexity review](composed-complexity.md). These measure a classical law, describe a public job-table case frame, and retain a symbolic numerical-degree comparison, respectively; those reports do not measure the complete sampler's practical performance.
 
 Review provenance: the independent source reviews are separate AI-agent reviews within this project. Human MCMC and Lean review is welcome; ordinary compiler outcomes, mathematical review, and strict kernel replay are distinct evidence.
 
@@ -112,7 +113,7 @@ with polynomial charged cost; `PhysicalBooleanSampler` supplies automatic
 branches, greedy fallback and initialization, pointwise feasible output, and
 scheduled `2^-h` accuracy for every equal-total natural margin pair and natural
 `h`. Zero margins and empty index types are included. This final typed law is
-noncomputable; the literal encoded walker and public machine remain unverified.
+noncomputable; the literal encoded walker and public machine were outside this historical component receipt. Their later evidence is in the [bounded-sampler checkpoint](outer-sampler-compiler-checkpoint.md).
 The [receipt](../formal/results/completion-boolean-schedule/verification.json)
 binds all three fresh native Windows compilations, authenticated reused
 imports, exact ordered audits, and complete before/expected/after input maps.
@@ -415,7 +416,7 @@ At `k=d¹²`, equal totals, the strong margins, a dimension bound, and a
 feasible fallback suffice; its approximation premise concerns the whole
 fine-table law. The subsequent [dense specialization](completion-dense-law.md)
 discharges that premise and assembles all-state physical laws. Concrete
-encoded outer-program realization and complete cost remain open.
+encoded outer-program realization and complete cost are established by separate later [research-overlay evidence](outer-sampler-compiler-checkpoint.md), rather than by these component receipts.
 
 ## Verification levels
 
@@ -460,6 +461,7 @@ Those integrated checks use existing compiled dependency outputs. This is
 | Check | Outcome | Evidence |
 |---|---|---|
 | Completed stage aggregate | 1,236 focused plus six standalone named audits passed; 582 authenticated normal object reuses and one fresh root; four fresh named-audit checks | [Stage receipt](../formal/results/completion-aggregate-1236/verification.json) |
+| Complete bounded-sampler research overlay | All thirteen modules pass ordinary compilation. The complete compiled-environment audit passed. The numerical runtime degree and strict sampler acceptance remain separate. | [Exact sources, statement map and evidence](outer-sampler-compiler-checkpoint.md) |
 | Environment-derived inventory | Passed on the frozen native aggregate; complete selected theorem inventory and six headline closures; trusted compiler/cache boundary | [Complete report and receipt](../formal/results/environment-aggregate-1236/README.md) |
 | Fresh Linux stage reproduction | Passed at `df469a5`: normal core build, 1,236 named audits, complete selected environment and six headline dependency closures; trusted official caches, no Comparator replay | [Successful receipt](../formal/results/linux-focused-df469a5/README.md), [retained earlier failure](../formal/results/linux-focused-cef573d-failure/README.md) |
 | Historical completion-aggregate Linux build | Fresh focused project build and all 863 focused audits passed at `895b45c`; 111 recorded source hashes match that commit; excludes standalone and isolated audits | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37991819113) and [receipt](../formal/results/linux-focused-895b45c/verification.json) |
@@ -490,7 +492,7 @@ Those integrated checks use existing compiled dependency outputs. This is
 | Earlier focused Linux run | Passed at `5e5d6ef`; excludes subsequent local additions | [Run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847572556) |
 | Full original Linux build and audit | **Passed** at `5e5d6ef`: unchanged `UnconditionalMain`/challenge closure and all three original exported sampling/counting theorem audits | [Successful run](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847944509) and [Linux receipts](../formal/results/linux-runs.json) |
 | Earlier native Windows run | At `b14082b`: 128 Python tests, 100 freshly compiled source modules, and 68 audited declarations | [Native Windows verification](windows-verification.md) and [receipt](../formal/results/thor-verification.json) |
-| Strict Comparator | Not passed: historical hosted ABI preflight failure; newer VM passed ABI-11 strict preflight but exhausted memory before comparison | [Hosted preflight](https://github.com/EcoDataLab/contingency-tables/actions/runs/37847722684) and [VM failure receipt](../formal/results/strict-comparator-vm-895b45c/README.md) |
+| Strict Comparator | Tiny `True` fixture passed real sandbox, exporter, default kernel, and comparison. Original challenge and research sampler remain unverified; earlier full attempt exhausted memory before export. | [Fixture evidence and reproduction](../formal/results/strict-comparator-smoke/README.md), [retained full-attempt failure](../formal/results/strict-comparator-vm-895b45c/README.md) |
 
 The historical checkpoint 8 total is **638 selected declarations: 632 focused plus six
 standalone, comprising 636 new declarations and two original baseline

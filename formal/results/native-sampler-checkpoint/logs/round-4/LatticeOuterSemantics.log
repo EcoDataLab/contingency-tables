@@ -1,0 +1,71 @@
+formal\Math115\LatticeOuterSemantics.lean:21:17: error: failed to set `[local reducible]` for `Table`, recall that `[reducible]` affects the term indexing datastructures used by `simp` and type class resolution
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+formal\Math115\LatticeOuterSemantics.lean:22:17: error: failed to set `[local irreducible]`, `PhysicalStationaryLaw.stateTrial` is currently `[reducible]`, `[semireducible]`, `[implicit_reducible]` nor `[instance_reducible]` expected
+
+Note: Use `set_option allowUnsafeReducibility true` to override reducibility status validation
+formal\Math115\LatticeOuterSemantics.lean:91:52: error: unexpected token ':='; expected ')', ',' or ':'
+formal\Math115\LatticeOuterSemantics.lean:91:50: error: Application type mismatch: The argument
+  Nat.clog 2 (32 * dimensionAllowance ^ 2)
+has type
+  ℕ
+of sort `Type` but is expected to have type
+  0 < ?m.87 + ?m.88
+of sort `Prop` in the application
+  LatticeOuterProgram.walkWords_ofFn (Nat.clog 2 (32 * dimensionAllowance ^ 2))
+formal\Math115\LatticeOuterSemantics.lean:87:39: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+hr : 0 < (largeIndices (IdealOracleScales.cutoff, List.ofFn r)).length
+hc : 0 < (largeIndices (IdealOracleScales.cutoff, List.ofFn c)).length
+htotal : ∑ i, r i = ∑ j, c j
+x : States r c IdealOracleScales.cutoff IdealOracleScales.padding
+T hStep hTerminal : ℕ
+bits : Fin (PhysicalReferenceBoolean.attemptBits r T hStep hTerminal) → Bool
+hf : 0 < PhysicalLatticeCompletion.reservedCompletionBits r hStep
+⊢ LatticeOuterProgram.profileTrial
+      (((LatticeProfileWalk.encodedConfiguration r c hStep x x,
+            profileWalkWords
+              (((T, Nat.clog 2 (32 * dimensionAllowance ^ 2)),
+                  PhysicalLatticeCompletion.reservedCompletionBits r hStep),
+                List.ofFn bits)),
+          hTerminal),
+        LatticeOuterProgram.terminalWord
+          (((LatticeProfileWalk.encodedConfiguration r c hStep x x, (T, Nat.clog 2 (32 * dimensionAllowance ^ 2)),
+                PhysicalLatticeCompletion.reservedCompletionBits r hStep),
+              hTerminal, PhysicalLatticeCompletion.reservedCompletionBits r hTerminal),
+            List.ofFn bits)) =
+    Option.map (fun X => matrixCode ↑X)
+      (PhysicalStationaryLaw.stateTrial r c IdealOracleScales.cutoff IdealOracleScales.padding
+        (PhysicalReferenceBoolean.jointDraw r c hr hc x T hStep hTerminal bits))
+formal\Math115\LatticeOuterSemantics.lean:111:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  LatticeOuterProgram.retry (((parameters r c x T hStep hTerminal, ?m.104), R), List.ofFn bits)
+in the target expression
+  LatticeOuterProgram.retry (((parameters r c x T hStep hTerminal, matrixCode ↑fallback), R), List.ofFn bits) =
+    matrixCode ↑(PhysicalReferenceBoolean.outerDraw r c hr hc x fallback T R hStep hTerminal bits)
+
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+hr : 0 < (largeIndices (IdealOracleScales.cutoff, List.ofFn r)).length
+hc : 0 < (largeIndices (IdealOracleScales.cutoff, List.ofFn c)).length
+htotal : ∑ i, r i = ∑ j, c j
+x : States r c IdealOracleScales.cutoff IdealOracleScales.padding
+fallback : Table r c
+T R hStep hTerminal : ℕ
+bits : Fin (PhysicalReferenceBoolean.outerBits r T R hStep hTerminal) → Bool
+hw : 0 < LatticeOuterProgram.attemptWidth (parameters r c x T hStep hTerminal)
+⊢ LatticeOuterProgram.retry (((parameters r c x T hStep hTerminal, matrixCode ↑fallback), R), List.ofFn bits) =
+    matrixCode ↑(PhysicalReferenceBoolean.outerDraw r c hr hc x fallback T R hStep hTerminal bits)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    fallback
+  has type
+    Table r c
+  but is expected to have type
+    { X // HasMargins X r c }
+  in the application
+    ↑fallback
