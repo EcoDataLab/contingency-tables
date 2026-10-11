@@ -1,0 +1,15 @@
+{
+  "audit_kind": "Named declarations; standard axiom subsets only; no exhaustive environment claim.",
+  "checker_sha256": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+  "driver_sha256": "53d03c9ad846d46af06c2451f8c0c571650587852a4bace811c78cc13fe57c6c",
+  "members_rehashed": 137,
+  "raw_download_manifest_sha256": "05ef0b0fb76fbf875f83365e4e357bf34103f5bf37c266255827d4e12fd13c60",
+  "raw_receipt_sha256": "f5fd8f936fdfb4886f64e7ebc01a9a3bec9870d7f34d68c4ccddd728ff5c9f0c",
+  "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "raw_stdout_sha256": "430f073a081297d91f45c2419a519e002fc9617b60fd7f8a1154ea5972eecbd6",
+  "records_sha256": "0172862b177b4f94f76fa3f1625b3da5ccbb53cdbd6ce3c0fdacdedb8b3e4627",
+  "requested_and_verified_names": 21,
+  "reviewer": "AI assistant offline readback; no compiler executed during readback.",
+  "scope": "extension21",
+  "status": "passed_saved_log_readback"
+}

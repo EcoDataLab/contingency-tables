@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "review_kind": "Dated source/algebra review with subsequent source-bound ordinary compilation and actual full compiled-environment audit evidence",
+  "review_kind": "Dated source/algebra review with subsequent source-bound ordinary sampler compilation/full environment audit and separate compiled quantitative-helper evidence",
   "document": "docs/composed-complexity.md",
   "upstream": {
     "preserved_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
@@ -53,12 +53,13 @@
     "P_L": "Existential physical-machine polynomial for the particular local wordCount/publicDraw realizers",
     "compiler_only_degree_bound": "natDegree(Q)<=2*max(1,natDegree(p))",
     "p": "Complete online work plus worst encoded output weight in wordMeasure",
-    "conditional_end_to_end_degree": "340*max(1,e_L), e_L=natDegree(p_L)",
+    "conditional_end_to_end_degree": "340*max(1,t)*max(e,6), with e the complete word-count degree and t the complete supplied-word public-draw degree",
     "conditional_coefficient": "Q_L(12672000000*37^62*5^85+91)+1",
-    "conditional_status": "Source-level algebra; not a new compiled theorem or a supplied numeral",
+    "conditional_status": "Generic finite-word transformation compiled and named-audited under supplied degree certificates; substitution of the public S^170 envelope remains conditional algebra, not a compiled final public-degree theorem or a numeral",
     "review_snapshot_status": "Draft symbolic bound, no numeric complete degree established in this review",
     "compiled_symbolic_degree": "170*natDegree(P_L)",
-    "compiled_symbolic_coefficient": "P_L(12672000000*37^62*5^85+91)+1"
+    "compiled_symbolic_coefficient": "P_L(12672000000*37^62*5^85+91)+1",
+    "historical_conditional_online_work_degree": "340*max(1,e_L), e_L=natDegree(p_L)"
   },
   "comparisons": [
     {
@@ -99,7 +100,7 @@
     "Named degree-bounded work polynomial for actual complete public word-count realizer.",
     "Named degree-bounded work polynomial for complete public draw, including both branches and all dense/rejection/outer trials.",
     "Degree accounting for reusable maps/folds, cap bounds, arithmetic, chunk/copy costs, parser/printer, greedy fallback, and fresh bits.",
-    "Certified complete online-work degree and instantiated compiler/public-size conversion for actual assembled sources."
+    "Numerical degree certificates for the actual complete word-count and supplied-word public draw, followed by final public-size instantiation of the checked generic compiler transformation."
   ],
   "source_sha256": {
     "formal/Math115/PublicLatticeSampler.lean": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245",
@@ -227,7 +228,7 @@
       }
     ],
     "current_markdown_sha256": {
-      "docs/composed-complexity.md": "8be54f4443be8a7b17b95cf52e79a91009190ea563b3377cf0fe7d8ccf4a1376",
+      "docs/composed-complexity.md": "c816c737a99ea0fdba8360735308941c9724f51732d577427e95d258c65e2596",
       "docs/composed-complexity-uncompiled-appendix.md": "30b33f95b4d1a9d2fb161b4cad6c685c732c1b4feeb1b01d8046a2c1f60440a9",
       "docs/practical-use.md": "f2e3d77f18c2b0ff4290aa67d680aa07fcae130309b9f8e98d8cae5e995eed0a",
       "docs/commuting-use-cases.md": "abe61b2af9c988319988aee30bf4345bf94f8de3c70a1a6d455e84f34888ed26"
@@ -836,5 +837,53 @@
     },
     "normal_evidence_reviewed_at_utc": "2026-10-11T00:09:15.207698+00:00"
   },
-  "original_review_kind": "Source inspection and algebra; no live compilation, Git operation, remote job, or benchmark"
+  "original_review_kind": "Source inspection and algebra; no live compilation, Git operation, remote job, or benchmark",
+  "quantitative_helper_verification": {
+    "evidence_packet": "research/runtime-degree/checkpoints/generic-helpers-v1/",
+    "status": "ordinary native compilation and two named audit scopes passed; final public degree not established",
+    "root_result_review_sha256": "1c4ae7fb316324c6e8387f67a4fda9f2ac7b9e435ac468b975d58f22f24818fe",
+    "compiled_helper_modules": 7,
+    "named_audit_scopes": [
+      {
+        "scope": "generic_helper_audit",
+        "named_records": 47,
+        "receipt_sha256": "133967fbf126698eed65e7adecf08d27ce52fc1e882bd9186105dfe87bee5094",
+        "stdout_sha256": "9197deea69d66e575c0ec78ada738b468a2b3ab9389773fcf98ca37763f1c268",
+        "driver_sha256": "22a4bbb69f003fecaed8cf77eded00da73868e5ec074591d5f4c363c7e99b3eb",
+        "no_axioms": 1,
+        "all_other_axioms": "subsets of propext, Classical.choice, Quot.sound"
+      },
+      {
+        "scope": "new_module_audit",
+        "named_records": 21,
+        "receipt_sha256": "f5fd8f936fdfb4886f64e7ebc01a9a3bec9870d7f34d68c4ccddd728ff5c9f0c",
+        "stdout_sha256": "430f073a081297d91f45c2419a519e002fc9617b60fd7f8a1154ea5972eecbd6",
+        "driver_sha256": "53d03c9ad846d46af06c2451f8c0c571650587852a4bace811c78cc13fe57c6c",
+        "no_axioms": 0,
+        "all_other_axioms": "subsets of propext, Classical.choice, Quot.sound"
+      }
+    ],
+    "authenticated_result_scope": "Seven quantitative helper modules have ordinary native compilation evidence and two distinct named audit scopes of 47 and21. Prior accepted internal objects and official dependency cache were reused. No complete sampler numerical degree, full environment audit, fresh Linux compilation, or strict Comparator acceptance is claimed.",
+    "finite_word_theorem": "Math115.DegreeBounds.machineTime_degree",
+    "finite_word_source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16",
+    "complete_online_degree": "max(1,t)*max(e,6)",
+    "physical_degree_envelope": "2*max(1,t)*max(e,6)",
+    "measure": "FiniteWordExecution.wordMeasure = weight(input) + numeric bit count",
+    "hypotheses": [
+      "Typed degree e for the actual complete word-count realizer",
+      "Typed degree t for the actual complete supplied-word public-draw realizer"
+    ],
+    "complete_word_count_degree": null,
+    "complete_public_draw_degree": null,
+    "conditional_public_degree_envelope": "340*max(1,t)*max(e,6)",
+    "final_public_degree_theorem_compiled": false,
+    "fixed_power": {
+      "theorem": "Math115.ScalarOutputDegree.typed_actual_fixedPower",
+      "degree_bound": 6,
+      "source_sha256": "11c1d1b471b784086d9dc18e9026e308e82812f30f636e4848eadb1f2217b0bb",
+      "scope": "For each fixed k, the actual LatticeScheduleProgram.fixedPowerRealizer k; its coefficient may depend on k. No uniform variable-exponent bound."
+    },
+    "boundary": "Dependency reuse and official caches trusted. No complete sampler numerical degree, helper full environment audit, fresh Linux verification or strict Comparator claim. Historical failed/uncompiled archive unchanged."
+  },
+  "current_verification_snapshot_status": "Preserved round-10 sampler compiler/audit evidence. Its integration/Linux exclusions describe that historical receipt scope; the separate current default-target integration awaits fresh verification."
 }

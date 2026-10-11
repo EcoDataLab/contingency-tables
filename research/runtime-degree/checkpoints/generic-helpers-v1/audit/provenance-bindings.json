@@ -1,0 +1,176 @@
+{
+  "authenticator_sha256": "99a9c5c3152155a61859d3711d57317e23450123e916231a18b7869832eeb819",
+  "environment_receipts": [
+    {
+      "originating_plan_file_sha256": "6aca8c29ab2939dc03b99da8964acf29383f0adc2a853295dd215b46cce2f027",
+      "sha256": "c79ea57c8a8d8ba84254088b87df28d739f1cd1f783e3b6e523562bbcaf20667"
+    },
+    {
+      "originating_plan_file_sha256": "6aca8c29ab2939dc03b99da8964acf29383f0adc2a853295dd215b46cce2f027",
+      "sha256": "6cf5a1f4062bfefef28073efc05d545f4228eab0b74f285db1be3bc599b0af82"
+    }
+  ],
+  "normal_driver_sha256": "e903dce08c32d84e291c373a7256d0794e98f23f14ec2f4b0c3949a9a68e3134",
+  "official_cache_trust": "Pinned official package/toolchain caches reused, not rebuilt; no fresh normal/Linux rebuild.",
+  "prerequisite_records_authenticated": 685,
+  "prior_helper_root_bindings": {
+    "authentication.json": "e602e07980c81b5e9c1207f1c2e76f1be8cc28274d68a1fe7dc8f6a437806581",
+    "config.json": "d927cb6cdb009ea9d50bed370f02e188629d16a8783fec4cce760109d7607ce3",
+    "controlled-environment.json": "6acedb3e7f83735f0270b657563bf5ea979c70889bdd5b04b64b928e70d1b512",
+    "degree_diagnostic_v2.py": "34595602d5198061c762464ff7af670b69c32d61f5a432ac0bccd007c2778475",
+    "degree_merged_runner.py": "3d7b39b9556663d485ed17d6a24c6cdcb6f84e9fae371fd941d06a6f9271fa97",
+    "input-snapshot.json": "2e7259d6e16584d262f41d70b499e6db2ce143b9f0d20a0a3bfa060e8b9c28e3",
+    "namespace-library-manifest.json": "ca15ddcb72be9436e8bb947ce213eb99e2d505d7cd2228cf0ad40ab17cb10785",
+    "namespace_library.py": "823586c5fdeb54c69838670870b3a6bc996057632530fc8befe2ddad2a0b1a61",
+    "status.json": "6a8f46b6fc23adcff34121e437f8f9c4e0b929c40f8d157180a12eb6db911776"
+  },
+  "projected_original_helpers": [
+    {
+      "authenticated_kind": "private_diagnostic",
+      "bytes": 666760,
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae"
+    },
+    {
+      "authenticated_kind": "private_diagnostic",
+      "bytes": 101904,
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "sha256": "bf5e49a96a39c4e9526fb0cf1ad3786d8a6c84d1e90771b0c5906cfce1c316d2"
+    },
+    {
+      "authenticated_kind": "private_diagnostic",
+      "bytes": 870616,
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929"
+    },
+    {
+      "authenticated_kind": "private_diagnostic",
+      "bytes": 282696,
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce"
+    }
+  ],
+  "r10_bindings": {
+    "environment-f9656cb11a764e73a8bb9b0d272f7b51.json": "6cf5a1f4062bfefef28073efc05d545f4228eab0b74f285db1be3bc599b0af82",
+    "frozen-environment.json": "c92e4e8c6287922233486854a82e1bfd9f1345a38ca26f00463a4c16dcbcdefd",
+    "frozen-plan.json": "b42d27ec16d999ac5c40ea71934c55208315663fe26f176244e2e55a75f0a2b5",
+    "modules.json": "11f718eebd7b2f5f229dc3c8ebdd6dd81729bb12f71ba34a2e6849f17a39f1a6",
+    "status.json": "17692d70c6674a2d75359fbc6e1fd94899238905ce1b7f24971e9fec7755aacf"
+  },
+  "raw_artifacts": [
+    {
+      "artifact_id": "config.json",
+      "bytes": 12299,
+      "published_full_bytes": false,
+      "sha256": "99b92dd8f2512eb1c3e1fc45ecf9c386a59d54f778c709cf010a323eee76b9eb"
+    },
+    {
+      "artifact_id": "authentication.json",
+      "bytes": 23773,
+      "published_full_bytes": false,
+      "sha256": "2176cd016a3ff4e3c2c0af39bc2e7e8915f7f4026ab252158272c000f3b4a134"
+    },
+    {
+      "artifact_id": "input-snapshot.json",
+      "bytes": 523628,
+      "published_full_bytes": false,
+      "sha256": "87c22d19b7b46bc142db9255e93a4d1c644d867930d7d8d257f5bcafd0a539b7"
+    },
+    {
+      "artifact_id": "Math115-projection-manifest.json",
+      "bytes": 31982,
+      "published_full_bytes": false,
+      "sha256": "dde4889710669acbb6a23e196d02cc05439bbc76c8d7ae5784ad851793e18e2c"
+    },
+    {
+      "artifact_id": "ResearchBounds-projection-manifest.json",
+      "bytes": 2255,
+      "published_full_bytes": false,
+      "sha256": "6d590ad939dd91f334af3fd9f6634e2aa8360a130fa290d95daaf059926798a5"
+    },
+    {
+      "artifact_id": "successor_runner.py",
+      "bytes": 15952,
+      "published_full_bytes": false,
+      "sha256": "abf7b23a7ae887e1d0012bd97ab020b7afdfd1cfa1326011b815d0dd9491beec"
+    },
+    {
+      "artifact_id": "degree_diagnostic_v2.py",
+      "bytes": 19311,
+      "published_full_bytes": false,
+      "sha256": "34595602d5198061c762464ff7af670b69c32d61f5a432ac0bccd007c2778475"
+    },
+    {
+      "artifact_id": "namespace_library.py",
+      "bytes": 3390,
+      "published_full_bytes": false,
+      "sha256": "823586c5fdeb54c69838670870b3a6bc996057632530fc8befe2ddad2a0b1a61"
+    },
+    {
+      "artifact_id": "status.json",
+      "bytes": 24772,
+      "published_full_bytes": false,
+      "sha256": "b2784b916e1b93afbf58cb1f5bd73c8253a05ada85e7127659eb80570d936cf0"
+    }
+  ],
+  "raw_download_manifest_sha256": "05ef0b0fb76fbf875f83365e4e357bf34103f5bf37c266255827d4e12fd13c60",
+  "raw_download_members_verified": 137,
+  "root_review_raw_sha256": "1c4ae7fb316324c6e8387f67a4fda9f2ac7b9e435ac468b975d58f22f24818fe",
+  "runtime": {
+    "configuration_sha256": {
+      ".upstream/openai-math/lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "formal/lake-manifest.json": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+      "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+      "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    "lake_sha256": "9780a6abfb6d751c7958f2fd7f696154bdda8b46c0de9755c4080ffb8a8788e6",
+    "lean_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b"
+  },
+  "scope": "Compact native prerequisite reuse and two distinct actual named-audit bindings; full snapshots/cache artifacts omitted.",
+  "selected_internal_records": 608,
+  "seven_helpers": [
+    {
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "object_sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+      "raw_compilation_receipt_sha256": "472a9b29cff76a22ad13125f9198f44127157ec159dec996f038000429281d22",
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "object_sha256": "bf5e49a96a39c4e9526fb0cf1ad3786d8a6c84d1e90771b0c5906cfce1c316d2",
+      "raw_compilation_receipt_sha256": "7e2d7e2279ca19968e3dbdae3f52d168c14dcf67a0a4ad80f177cdf673d365c5",
+      "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "object_sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929",
+      "raw_compilation_receipt_sha256": "a937f2a6675a3e223fcff7d634fb765ecebf8ba2d0e4bb38b719731b9ed87315",
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "object_sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce",
+      "raw_compilation_receipt_sha256": "d7729ed252f9e85d521abe14efd7aa0ca547e10cc2110df829ed1a7591b74956",
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "module": "ResearchBounds.TreeArithmeticDegree",
+      "object_sha256": "14084fd1a8a94de138eb84ced25330d5fb5e5dbb7869ba49e7cc01fab5f5af9e",
+      "raw_compilation_receipt_sha256": "507621cfd5647e04bb6e8e21fc7d40e927373dc6436d0936acfd68e4109474c2",
+      "source_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76"
+    },
+    {
+      "module": "ResearchBounds.ScalarOutputSizeDegree",
+      "object_sha256": "31373e7e8f1b04751d032a564f00a5fc0ca3965e4420159c07a77a1c6f3a602f",
+      "raw_compilation_receipt_sha256": "e8f0e2f262c2569c7c6d23ffef4e77a24fe416880b5e9aaa99472c5d900e311c",
+      "source_sha256": "11c1d1b471b784086d9dc18e9026e308e82812f30f636e4848eadb1f2217b0bb"
+    },
+    {
+      "module": "ResearchBounds.WordCountSeedDegrees",
+      "object_sha256": "e5003084654888fa321c21f7d6e899e21735bc8f11ce26c62597182372a44f8a",
+      "raw_compilation_receipt_sha256": "3733b505d782264ed907d06b221b49f856579649b6c8ab9bcab9d01d5de0dabb",
+      "source_sha256": "fb04a131b99d25059f215287021fab61d026a1aafe2bbff838841c88157c7ccd"
+    }
+  ],
+  "unchanged_inputs_scope": "Executed pinned runner checks input snapshot before and after each named audit. This packet retains raw snapshot digest/direct object matches; not full snapshot bytes."
+}

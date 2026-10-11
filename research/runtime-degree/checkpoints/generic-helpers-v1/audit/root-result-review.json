@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-11T03:22:43.453294+00:00",
+  "download_manifest_sha256": "05ef0b0fb76fbf875f83365e4e357bf34103f5bf37c266255827d4e12fd13c60",
+  "authenticated_files": 137,
+  "compiled_new_sources": [
+    {
+      "module": "ResearchBounds.TreeArithmeticDegree",
+      "source_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76",
+      "object_sha256": "14084fd1a8a94de138eb84ced25330d5fb5e5dbb7869ba49e7cc01fab5f5af9e",
+      "receipt_sha256": "507621cfd5647e04bb6e8e21fc7d40e927373dc6436d0936acfd68e4109474c2"
+    },
+    {
+      "module": "ResearchBounds.ScalarOutputSizeDegree",
+      "source_sha256": "11c1d1b471b784086d9dc18e9026e308e82812f30f636e4848eadb1f2217b0bb",
+      "object_sha256": "31373e7e8f1b04751d032a564f00a5fc0ca3965e4420159c07a77a1c6f3a602f",
+      "receipt_sha256": "e8f0e2f262c2569c7c6d23ffef4e77a24fe416880b5e9aaa99472c5d900e311c"
+    },
+    {
+      "module": "ResearchBounds.WordCountSeedDegrees",
+      "source_sha256": "fb04a131b99d25059f215287021fab61d026a1aafe2bbff838841c88157c7ccd",
+      "object_sha256": "e5003084654888fa321c21f7d6e899e21735bc8f11ce26c62597182372a44f8a",
+      "receipt_sha256": "3733b505d782264ed907d06b221b49f856579649b6c8ab9bcab9d01d5de0dabb"
+    }
+  ],
+  "audits": [
+    {
+      "scope": "generic_helper_audit",
+      "named_records": 47,
+      "receipt_sha256": "133967fbf126698eed65e7adecf08d27ce52fc1e882bd9186105dfe87bee5094",
+      "stdout_sha256": "9197deea69d66e575c0ec78ada738b468a2b3ab9389773fcf98ca37763f1c268",
+      "driver_sha256": "22a4bbb69f003fecaed8cf77eded00da73868e5ec074591d5f4c363c7e99b3eb",
+      "no_axioms": 1,
+      "all_other_axioms": "subsets of propext, Classical.choice, Quot.sound"
+    },
+    {
+      "scope": "new_module_audit",
+      "named_records": 21,
+      "receipt_sha256": "f5fd8f936fdfb4886f64e7ebc01a9a3bec9870d7f34d68c4ccddd728ff5c9f0c",
+      "stdout_sha256": "430f073a081297d91f45c2419a519e002fc9617b60fd7f8a1154ea5972eecbd6",
+      "driver_sha256": "53d03c9ad846d46af06c2451f8c0c571650587852a4bace811c78cc13fe57c6c",
+      "no_axioms": 0,
+      "all_other_axioms": "subsets of propext, Classical.choice, Quot.sound"
+    }
+  ],
+  "source_objects_and_streams_unchanged": true,
+  "owned_processes_closed": true,
+  "cleanup_receipt_sha256": "7ae85621ae42d15e5b9ed34588fb484f51266832076e6d8bf427755a7a75e7ce",
+  "scope": "Seven quantitative helper modules have ordinary native compilation evidence and two distinct named audit scopes of 47 and21. Prior accepted internal objects and official dependency cache were reused. No complete sampler numerical degree, full environment audit, fresh Linux compilation, or strict Comparator acceptance is claimed."
+}

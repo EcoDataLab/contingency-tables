@@ -1,0 +1,559 @@
+{
+  "artifacts": [
+    {
+      "changes": [],
+      "original_artifact_id": "TreeDegreeBounds/accepted-source",
+      "original_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf",
+      "published_file": "ResearchBounds/TreeDegreeBounds.lean",
+      "published_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>.",
+        "Process ownership/identity fields omitted from public projection.",
+        "Evidence class/platform and null audit status added."
+      ],
+      "original_artifact_id": "TreeDegreeBounds/accepted-receipt",
+      "original_sha256": "472a9b29cff76a22ad13125f9198f44127157ec159dec996f038000429281d22",
+      "published_file": "compilation/TreeDegreeBounds/receipt.json",
+      "published_sha256": "77d5559016f2c158ab19cb45367434d22e4c2d99a6a4ff7884c0bbefbdb52faf"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>."
+      ],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "TreeDegreeBounds/stdout.log",
+      "original_sha256": "0b006ec829e37c861f47bd1e2ad9cf02eb0b06dc0ff72af6522171c0b0328447",
+      "published_file": "compilation/TreeDegreeBounds/stdout.log",
+      "published_sha256": "e7036b43bab6a5b63869a37290659d47a6b5eae1b4ac840d83468702add0f0c4"
+    },
+    {
+      "changes": [],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "TreeDegreeBounds/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/TreeDegreeBounds/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "PolynomialCompilerDegree/accepted-source",
+      "original_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97",
+      "published_file": "ResearchBounds/PolynomialCompilerDegree.lean",
+      "published_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>.",
+        "Process ownership/identity fields omitted from public projection.",
+        "Evidence class/platform and null audit status added."
+      ],
+      "original_artifact_id": "PolynomialCompilerDegree/accepted-receipt",
+      "original_sha256": "7e2d7e2279ca19968e3dbdae3f52d168c14dcf67a0a4ad80f177cdf673d365c5",
+      "published_file": "compilation/PolynomialCompilerDegree/receipt.json",
+      "published_sha256": "a0342a03565726d8732834c500ae27bd9c25de260aee3724cec63e11358e3de9"
+    },
+    {
+      "changes": [],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "PolynomialCompilerDegree/stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/PolynomialCompilerDegree/stdout.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "PolynomialCompilerDegree/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/PolynomialCompilerDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "FreshBitDegreeBounds/accepted-source",
+      "original_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674",
+      "published_file": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "published_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>.",
+        "Process ownership/identity fields omitted from public projection.",
+        "Evidence class/platform and null audit status added."
+      ],
+      "original_artifact_id": "FreshBitDegreeBounds/accepted-receipt",
+      "original_sha256": "a937f2a6675a3e223fcff7d634fb765ecebf8ba2d0e4bb38b719731b9ed87315",
+      "published_file": "compilation/FreshBitDegreeBounds/receipt.json",
+      "published_sha256": "f2d69e62dd5d98702f428a98c1283e7120baacd892166c932105da0b68c7fc54"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>."
+      ],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "FreshBitDegreeBounds/stdout.log",
+      "original_sha256": "a6c0e0d95de571c6f88b3f20d1d9900d8d57ecc781da468ef79fade69227a7cc",
+      "published_file": "compilation/FreshBitDegreeBounds/stdout.log",
+      "published_sha256": "2c44df144b20487bc3fb346734e5fced1826d0522f6d8c6e5b9e914e24683156"
+    },
+    {
+      "changes": [],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "FreshBitDegreeBounds/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/FreshBitDegreeBounds/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "FiniteWordDegreeBounds/accepted-source",
+      "original_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16",
+      "published_file": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "published_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>.",
+        "Process ownership/identity fields omitted from public projection.",
+        "Evidence class/platform and null audit status added."
+      ],
+      "original_artifact_id": "FiniteWordDegreeBounds/accepted-receipt",
+      "original_sha256": "d7729ed252f9e85d521abe14efd7aa0ca547e10cc2110df829ed1a7591b74956",
+      "published_file": "compilation/FiniteWordDegreeBounds/receipt.json",
+      "published_sha256": "9349e9c50e94bf32919a520a34621b1ee363e1378b88bbe5ba68c2fa457f72f4"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>."
+      ],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "FiniteWordDegreeBounds/stdout.log",
+      "original_sha256": "401dbb3098f75e3b93a5874534438e02f801de115e4214474a7b86103c5a15b1",
+      "published_file": "compilation/FiniteWordDegreeBounds/stdout.log",
+      "published_sha256": "0a2cfbd084ba0e68509b388b0bc242bd1bcb8655edb81ff12cc2783184cc6cff"
+    },
+    {
+      "changes": [],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "FiniteWordDegreeBounds/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/FiniteWordDegreeBounds/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "prepared-47-name-driver",
+      "original_sha256": "22a4bbb69f003fecaed8cf77eded00da73868e5ec074591d5f4c363c7e99b3eb",
+      "published_file": "ResearchBounds/GenericDegreeNamedAudit.lean",
+      "published_sha256": "22a4bbb69f003fecaed8cf77eded00da73868e5ec074591d5f4c363c7e99b3eb"
+    },
+    {
+      "changes": [
+        "Private source and receipt references replaced by packet-relative paths."
+      ],
+      "original_artifact_id": "prepared-static-roster",
+      "original_sha256": "98e81e027a80b7b46e3707163e8784eaafb9c1eb9d01af49d777c159c916df90",
+      "published_file": "audit/roster.json",
+      "published_sha256": "50ff419b0b2fb73df147dadbb17a1f37b881050904bac51696bc86fc9f200331",
+      "status": "prepared_only_not_executed"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "fresh-v1/source",
+      "original_sha256": "b0be6b51a0611735ea2555e5193eab6a79bff6b98c61ec755492be0cd3da6048",
+      "published_file": "history/fresh-v1/ResearchBounds/FreshBitDegreeBounds.lean",
+      "published_sha256": "b0be6b51a0611735ea2555e5193eab6a79bff6b98c61ec755492be0cd3da6048"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>.",
+        "Process identities omitted from public projection.",
+        "Failure classification and explicit null promoted object added."
+      ],
+      "original_artifact_id": "fresh-v1/receipt",
+      "original_sha256": "7d6b3c3ef8ad450de1bc89e40d2cedf0d1db3abcf039cbc47545e67883b73470",
+      "published_file": "history/fresh-v1/receipt.json",
+      "published_sha256": "d5fec2493d5cb30e8b02cdc6f15fd42a14ef0505ea1e0310f6d6bc124b6799f0"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>."
+      ],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "fresh-v1/stdout.log",
+      "original_sha256": "3bf5dbd9e8b3f48b8812b57312441b577f14d3acca83416ba33fa03b7f134b38",
+      "published_file": "history/fresh-v1/stdout.log",
+      "published_sha256": "42d3cad99896f7c9e87ddf38d323c96b0aa9c220bbdf4691647cade091d25014"
+    },
+    {
+      "changes": [],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "fresh-v1/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "history/fresh-v1/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "fresh-v2/source",
+      "original_sha256": "15b0d18b5ee90253eade4f23b58d55485adf5a9d5330657024fe7334c38506e4",
+      "published_file": "history/fresh-v2/ResearchBounds/FreshBitDegreeBounds.lean",
+      "published_sha256": "15b0d18b5ee90253eade4f23b58d55485adf5a9d5330657024fe7334c38506e4"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>.",
+        "Process identities omitted from public projection.",
+        "Failure classification and explicit null promoted object added."
+      ],
+      "original_artifact_id": "fresh-v2/receipt",
+      "original_sha256": "724ec6fbf802852263bfc119f9bf6abe139b5c48ff4b29ff4c641ae8fe019a4d",
+      "published_file": "history/fresh-v2/receipt.json",
+      "published_sha256": "485593ec87aef223394bb083f24812756de70df0d640b949d6ecbcd50a26e23c"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>."
+      ],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "fresh-v2/stdout.log",
+      "original_sha256": "a3204577d48ed1d9aecb47d71a64b6848c0791b6e416cb867cf82282b360720d",
+      "published_file": "history/fresh-v2/stdout.log",
+      "published_sha256": "fa975b078693805f379bcd989780336653ff15cd0cc9ab426a9b2b654111ebde"
+    },
+    {
+      "changes": [],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "fresh-v2/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "history/fresh-v2/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "finite-original-layout/source",
+      "original_sha256": "c9b3f3116e8f018c0e0f7941a4dab52a05afa9ee8d612829a542eeebef95aeed",
+      "published_file": "history/finite-original-layout/ResearchBounds/FiniteWordDegreeBounds.lean",
+      "published_sha256": "c9b3f3116e8f018c0e0f7941a4dab52a05afa9ee8d612829a542eeebef95aeed"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>.",
+        "Process identities omitted from public projection.",
+        "Failure classification and explicit null promoted object added."
+      ],
+      "original_artifact_id": "finite-original-layout/receipt",
+      "original_sha256": "28c1ba325e62510e56a2060a27a5d27364188a2157c4fee0b17e183498126466",
+      "published_file": "history/finite-original-layout/receipt.json",
+      "published_sha256": "6c6113d1b75326391285a4f68c55162ca78b722c3c9c2cef83a68554e33ba97c"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>."
+      ],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "finite-original-layout/stdout.log",
+      "original_sha256": "2ae67d2a60716f6d5d8416c0e4a99d27243d43915fdeddb03a364e96e611351b",
+      "published_file": "history/finite-original-layout/stdout.log",
+      "published_sha256": "97c2f8ab9885fa6a6133cf4c4d561bb4e3306c0fd4f39ba20bc222f716f35abf"
+    },
+    {
+      "changes": [],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "finite-original-layout/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "history/finite-original-layout/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "finite-original-elaboration/source",
+      "original_sha256": "c9b3f3116e8f018c0e0f7941a4dab52a05afa9ee8d612829a542eeebef95aeed",
+      "published_file": "history/finite-original-elaboration/ResearchBounds/FiniteWordDegreeBounds.lean",
+      "published_sha256": "c9b3f3116e8f018c0e0f7941a4dab52a05afa9ee8d612829a542eeebef95aeed"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>.",
+        "Process identities omitted from public projection.",
+        "Failure classification and explicit null promoted object added."
+      ],
+      "original_artifact_id": "finite-original-elaboration/receipt",
+      "original_sha256": "4c3f6909336d0f66ed8480d8cf7b68213e2327a8fcedf99988be09d52048efea",
+      "published_file": "history/finite-original-elaboration/receipt.json",
+      "published_sha256": "bcc1c38b2a531216c03c00757e78512b5c810458e5925688295b15f86cf49333"
+    },
+    {
+      "changes": [
+        "Absolute owned-workspace prefix replaced by <owned-workspace>."
+      ],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "finite-original-elaboration/stdout.log",
+      "original_sha256": "4f95ca77fcdffe5ed692afdb0b7e6bc8477fd1f48407ce03a34904413ebca237",
+      "published_file": "history/finite-original-elaboration/stdout.log",
+      "published_sha256": "87a468fa09db2c18ae49c8283136dad75f1ff288073774926baaf75b592b5303"
+    },
+    {
+      "changes": [],
+      "diagnostic_content_preserved": true,
+      "original_artifact_id": "finite-original-elaboration/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "history/finite-original-elaboration/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identities omitted; named-audit scope added."
+      ],
+      "original_artifact_id": "generic47/generic-audit/attempt/receipt.json",
+      "original_sha256": "2f4edc4380d802ab6bcc945689b1247cb5942b8aa0e94940324fb00184400c30",
+      "published_file": "audit/generic47-observation01/receipt.json",
+      "published_sha256": "3641794c14980b665e8e41c9a6814e668441a5a2c90259d52a31b5e0811e4c53"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "generic47/generic-audit/attempt/stdout.log",
+      "original_sha256": "9197deea69d66e575c0ec78ada738b468a2b3ab9389773fcf98ca37763f1c268",
+      "published_file": "audit/generic47-observation01/stdout.log",
+      "published_sha256": "9197deea69d66e575c0ec78ada738b468a2b3ab9389773fcf98ca37763f1c268"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "generic47/generic-audit/attempt/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/generic47-observation01/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted."
+      ],
+      "original_artifact_id": "generic47/generic-audit/attempt/launch.json",
+      "original_sha256": "48bcb2a726ff0c3ecfee39394a10980f50605ebb7e2d9123494b40e52ec5bceb",
+      "published_file": "audit/generic47-observation01/launch.json",
+      "published_sha256": "82a7cc1ef648a3838815423cb1033b21e5002a1a78bd8f757d35f648ff148f1e"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "scalar-original-elaboration/ScalarOutputSizeDegree.lean",
+      "original_sha256": "aff58ae192ee476d67c78b5321e35bd075f3ca07967224d269e312887d65b3bb",
+      "published_file": "history/scalar-original-elaboration/ResearchBounds/ScalarOutputSizeDegree.lean",
+      "published_sha256": "aff58ae192ee476d67c78b5321e35bd075f3ca07967224d269e312887d65b3bb"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identities omitted; explicit failed scope added."
+      ],
+      "original_artifact_id": "scalar-original-elaboration/receipt.json",
+      "original_sha256": "27edffc23f222934e1b63e1a798ba72de34dc1374d82b54f57fd78a469fae7cf",
+      "published_file": "history/scalar-original-elaboration/receipt.json",
+      "published_sha256": "f9211daeefa02c9cb9e13ee757f34db93de845e3924e6da89f14976c954e84f4"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "scalar-original-elaboration/stdout.log",
+      "original_sha256": "3203ab78cae40f9206e9e43f5e4c23ed0a4b24aa5ada7fd85d14fd5331ac7a08",
+      "published_file": "history/scalar-original-elaboration/stdout.log",
+      "published_sha256": "38b024d78049f28344c699e07851736aac3bb303938b91ab0ff96c2f0e36591f"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "scalar-original-elaboration/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "history/scalar-original-elaboration/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "successor02/graph/source/ResearchBounds/TreeArithmeticDegree.lean",
+      "original_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76",
+      "published_file": "ResearchBounds/TreeArithmeticDegree.lean",
+      "published_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identities omitted; evidence scope added."
+      ],
+      "original_artifact_id": "successor02/graph/attempts/ResearchBounds.TreeArithmeticDegree/receipt.json",
+      "original_sha256": "507621cfd5647e04bb6e8e21fc7d40e927373dc6436d0936acfd68e4109474c2",
+      "published_file": "compilation/TreeArithmeticDegree/receipt.json",
+      "published_sha256": "e0a3b0568547ed51b474c39c053f7c401ba1c9f3dacef553166233488e61818e"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "successor02/graph/attempts/ResearchBounds.TreeArithmeticDegree/stdout.log",
+      "original_sha256": "30af5b08ae1f8741ef3ba488131274e1f54a99e5557933114dd9fac81b7ca5b0",
+      "published_file": "compilation/TreeArithmeticDegree/stdout.log",
+      "published_sha256": "389322fd6e56a77e7bccfdf9ac914c5e93bd1de9d4cf50fcedc24c5a03cc61f1"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "successor02/graph/attempts/ResearchBounds.TreeArithmeticDegree/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/TreeArithmeticDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "successor02/graph/source/ResearchBounds/ScalarOutputSizeDegree.lean",
+      "original_sha256": "11c1d1b471b784086d9dc18e9026e308e82812f30f636e4848eadb1f2217b0bb",
+      "published_file": "ResearchBounds/ScalarOutputSizeDegree.lean",
+      "published_sha256": "11c1d1b471b784086d9dc18e9026e308e82812f30f636e4848eadb1f2217b0bb"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identities omitted; evidence scope added."
+      ],
+      "original_artifact_id": "successor02/graph/attempts/ResearchBounds.ScalarOutputSizeDegree/receipt.json",
+      "original_sha256": "e8f0e2f262c2569c7c6d23ffef4e77a24fe416880b5e9aaa99472c5d900e311c",
+      "published_file": "compilation/ScalarOutputSizeDegree/receipt.json",
+      "published_sha256": "eaf59fd4414dc70c69c7101819dcd42d6d1bbb6e1a1d3ee3192ca4ba1acfa0c6"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "successor02/graph/attempts/ResearchBounds.ScalarOutputSizeDegree/stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/ScalarOutputSizeDegree/stdout.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "successor02/graph/attempts/ResearchBounds.ScalarOutputSizeDegree/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/ScalarOutputSizeDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "successor02/graph/source/ResearchBounds/WordCountSeedDegrees.lean",
+      "original_sha256": "fb04a131b99d25059f215287021fab61d026a1aafe2bbff838841c88157c7ccd",
+      "published_file": "ResearchBounds/WordCountSeedDegrees.lean",
+      "published_sha256": "fb04a131b99d25059f215287021fab61d026a1aafe2bbff838841c88157c7ccd"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identities omitted; evidence scope added."
+      ],
+      "original_artifact_id": "successor02/graph/attempts/ResearchBounds.WordCountSeedDegrees/receipt.json",
+      "original_sha256": "3733b505d782264ed907d06b221b49f856579649b6c8ab9bcab9d01d5de0dabb",
+      "published_file": "compilation/WordCountSeedDegrees/receipt.json",
+      "published_sha256": "7bc811f2a250b1b73837622c25891be52a29b710483b89f4ce270bc7231b459c"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "successor02/graph/attempts/ResearchBounds.WordCountSeedDegrees/stdout.log",
+      "original_sha256": "c1aa2ec5486d21e5a31f3b94f7697411749b2a89e2775330f38d362567cbd4a6",
+      "published_file": "compilation/WordCountSeedDegrees/stdout.log",
+      "published_sha256": "52e07e974eb69a95b2663b5fbc46888768f16cc2fbb9f87f34f42615bbb27617"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "successor02/graph/attempts/ResearchBounds.WordCountSeedDegrees/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/WordCountSeedDegrees/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identities omitted; explicit named scope added."
+      ],
+      "original_artifact_id": "successor02/generic-audit/attempt/receipt.json",
+      "original_sha256": "133967fbf126698eed65e7adecf08d27ce52fc1e882bd9186105dfe87bee5094",
+      "published_file": "audit/generic47/receipt.json",
+      "published_sha256": "741bf025b76f80770e05806c93de884ac586bcab90e948c7d1dbc7832aee854f"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "successor02/generic-audit/attempt/stdout.log",
+      "original_sha256": "9197deea69d66e575c0ec78ada738b468a2b3ab9389773fcf98ca37763f1c268",
+      "published_file": "audit/generic47/stdout.log",
+      "published_sha256": "9197deea69d66e575c0ec78ada738b468a2b3ab9389773fcf98ca37763f1c268"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "successor02/generic-audit/attempt/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/generic47/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted."
+      ],
+      "original_artifact_id": "successor02/generic-audit/attempt/launch.json",
+      "original_sha256": "62dd92ce51d88b1f7e94975e3234daec30f30ee55279e8c9d2ebc37a9c41d03c",
+      "published_file": "audit/generic47/launch.json",
+      "published_sha256": "367d79aad8eed29f03c422cc246f962277c3e4fc4171e4f43d4848673b2a20e8"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "successor02/audit-source/ResearchBounds/NewDegreeNamedAudit.lean",
+      "original_sha256": "53d03c9ad846d46af06c2451f8c0c571650587852a4bace811c78cc13fe57c6c",
+      "published_file": "ResearchBounds/NewDegreeNamedAudit.lean",
+      "published_sha256": "53d03c9ad846d46af06c2451f8c0c571650587852a4bace811c78cc13fe57c6c"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identities omitted; explicit named scope added."
+      ],
+      "original_artifact_id": "successor02/new-module-audit/attempt/receipt.json",
+      "original_sha256": "f5fd8f936fdfb4886f64e7ebc01a9a3bec9870d7f34d68c4ccddd728ff5c9f0c",
+      "published_file": "audit/extension21/receipt.json",
+      "published_sha256": "c07cd7a074356b126038200d27edcae13583d8a07d3def1da859c143938c2eec"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "successor02/new-module-audit/attempt/stdout.log",
+      "original_sha256": "430f073a081297d91f45c2419a519e002fc9617b60fd7f8a1154ea5972eecbd6",
+      "published_file": "audit/extension21/stdout.log",
+      "published_sha256": "430f073a081297d91f45c2419a519e002fc9617b60fd7f8a1154ea5972eecbd6"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "successor02/new-module-audit/attempt/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/extension21/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted."
+      ],
+      "original_artifact_id": "successor02/new-module-audit/attempt/launch.json",
+      "original_sha256": "e07ebb22cfc0b3e9ed04c54de217f2dddb95f5d9361ef3660ef78bf07c726782",
+      "published_file": "audit/extension21/launch.json",
+      "published_sha256": "a7c94a0b7c8b04020b7d9e2243c9fe935c1bcf3573149dbebfa41121358f7dc9"
+    }
+  ],
+  "policy": "Sources and audit driver retain exact bytes. Receipts are declared projections; logs retain diagnostics with workspace-prefix substitution. No binaries or process identities published. Digests inside receipts continue to identify ORIGINAL streams; this map separately identifies projected streams."
+}

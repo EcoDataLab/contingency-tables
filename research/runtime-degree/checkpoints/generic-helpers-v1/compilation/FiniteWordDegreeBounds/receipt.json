@@ -1,0 +1,52 @@
+{
+  "attempt_object_sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce",
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint11-degree-diagnostic-05\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-05\\attempts\\ResearchBounds.FiniteWordDegreeBounds\\module.olean",
+    "-i",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-05\\attempts\\ResearchBounds.FiniteWordDegreeBounds\\module.ilean",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-05\\source\\ResearchBounds\\FiniteWordDegreeBounds.lean"
+  ],
+  "diagnostic_object": "<owned-workspace>\\checkpoint11-degree-diagnostic-05\\lib\\lean\\ResearchBounds\\FiniteWordDegreeBounds.olean",
+  "elapsed_seconds": 96.93555709999055,
+  "evidence_class": "ordinary_native_compilation_diagnostic",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "OAI.Combinatorics.ContingencyTables.Machines.FiniteWordMachine": {
+      "path": "<owned-workspace>\\completion-checkpoint10-native-10\\lib\\lean\\OAI\\Combinatorics\\ContingencyTables\\Machines\\FiniteWordMachine.olean",
+      "sha256": "6f7e9e409dce7855bb7ae4e313e03c731680b0ebfa7b0e2fecb9ea1def01c4d9",
+      "trust": "authenticated accepted R10 record"
+    },
+    "ResearchBounds.FreshBitDegreeBounds": {
+      "path": "<owned-workspace>\\checkpoint11-degree-diagnostic-05\\lib\\lean\\ResearchBounds\\FreshBitDegreeBounds.olean",
+      "sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929",
+      "trust": "exact copied authenticated private diagnostic success"
+    },
+    "ResearchBounds.PolynomialCompilerDegree": {
+      "path": "<owned-workspace>\\checkpoint11-degree-diagnostic-05\\lib\\lean\\ResearchBounds\\PolynomialCompilerDegree.olean",
+      "sha256": "bf5e49a96a39c4e9526fb0cf1ad3786d8a6c84d1e90771b0c5906cfce1c316d2",
+      "trust": "exact copied authenticated private diagnostic success"
+    }
+  },
+  "module": "ResearchBounds.FiniteWordDegreeBounds",
+  "named_axiom_audit": null,
+  "platform": "Windows x86_64",
+  "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "401dbb3098f75e3b93a5874534438e02f801de115e4214474a7b86103c5a15b1"
+  }
+}

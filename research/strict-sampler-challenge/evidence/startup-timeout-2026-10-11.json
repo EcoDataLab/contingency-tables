@@ -1,0 +1,36 @@
+{
+  "evidence_class": "bounded VM startup failure before verification",
+  "status": "boot_or_console_admission_timed_out",
+  "started_at_utc": "2026-10-11T03:18:22.346486+00:00",
+  "elapsed_seconds": 600.3095055000158,
+  "boot_admission_cap_seconds": 600,
+  "profile": {
+    "memory_mib": 8192,
+    "vcpus": 4,
+    "acceleration": "QEMU TCG",
+    "disk_virtual_gib": 80,
+    "seed_read_only": true
+  },
+  "checker_command_dispatched": false,
+  "guest_runtime_authentication": null,
+  "lean_compilation": null,
+  "export": null,
+  "kernel": null,
+  "comparator": null,
+  "owned_guest_stopped_and_reaped": true,
+  "preserved_inputs_unchanged": true,
+  "seed_sha256": "dc939b2dabfbf2cadeff494277f9c0da750b21cddc76ba115cccc12b64975727",
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "raw_bindings": {
+    "download_manifest_sha256": "23b1950df0a735c07c10a57ef7f532061a76dcb74ad8957f0e1e8d540168e45d",
+    "status_sha256": "c72f53876db441b8318be56d2cbcf070e82a5339d8d7e343b5b32dc5b19330ee",
+    "serial_sha256": "6bb300a8fa5c0f03f34eef6dcb1be0172b4a1b8e7f4e7b5d3f63ddf96dcc2236",
+    "terminal_result_sha256": "cca6e9dc5217766b2b1c362bb6b45903fa8f96e8f0137628e761970e210f93b5",
+    "cleanup_receipt_sha256": "49cac86b735c00e2a20c50f4ee88f6bf36de5dfc1b61fdecaac9d53fc530e74f",
+    "root_review_sha256": "d5771c819c48d8b43a9bb8419cc7de1830376f436732c7df2fa984b9d8963456"
+  },
+  "projection": "Allowlisted outcome and resource fields from authenticated raw status/terminal/cleanup artifacts. Host-specific commands, process identities, paths, raw console and stopped disk are retained outside this public packet. Seven downloaded raw terminal files were rehashed by the AI workflow; stopped disk was not locally downloaded.",
+  "diagnosis": "Last observed service was cloud-init-network. The110MB YAML seed with an embedded82.7MB archive is a plausible startup bottleneck, not a confirmed cause. No proof or Comparator rejection occurred.",
+  "strict_acceptance": false,
+  "independent_public_reproduction": false
+}

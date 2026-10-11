@@ -1,0 +1,47 @@
+{
+  "attempt_object_sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929",
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint11-degree-diagnostic-03\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-03\\attempts\\ResearchBounds.FreshBitDegreeBounds\\module.olean",
+    "-i",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-03\\attempts\\ResearchBounds.FreshBitDegreeBounds\\module.ilean",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-03\\source\\ResearchBounds\\FreshBitDegreeBounds.lean"
+  ],
+  "diagnostic_object": "<owned-workspace>\\checkpoint11-degree-diagnostic-03\\lib\\lean\\ResearchBounds\\FreshBitDegreeBounds.olean",
+  "elapsed_seconds": 76.65588779991958,
+  "evidence_class": "ordinary_native_compilation_diagnostic",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "OAI.Combinatorics.MatchingCount.Complexity.OnlineWordCost": {
+      "path": "<owned-workspace>\\completion-checkpoint10-native-10\\lib\\lean\\OAI\\Combinatorics\\MatchingCount\\Complexity\\OnlineWordCost.olean",
+      "sha256": "c6580f8531bf3d6293474678dbe8ab4286f5280062aab55411a4a0cab5fc4afa",
+      "trust": "authenticated accepted R10 record"
+    },
+    "ResearchBounds.TreeDegreeBounds": {
+      "path": "<owned-workspace>\\checkpoint11-degree-diagnostic-01\\lib\\lean\\ResearchBounds\\TreeDegreeBounds.olean",
+      "sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+      "trust": "fully authenticated prior private diagnostic success; not normal R10 cache"
+    }
+  },
+  "module": "ResearchBounds.FreshBitDegreeBounds",
+  "named_axiom_audit": null,
+  "platform": "Windows x86_64",
+  "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "a6c0e0d95de571c6f88b3f20d1d9900d8d57ecc781da468ef79fade69227a7cc"
+  }
+}

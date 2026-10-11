@@ -1,0 +1,67 @@
+{
+  "attempts": [
+    {
+      "attempt": "fresh-v1",
+      "exit_code": 1,
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "outcome_class": "proof_elaboration_failure",
+      "promoted_object": null,
+      "raw_receipt_sha256": "7d6b3c3ef8ad450de1bc89e40d2cedf0d1db3abcf039cbc47545e67883b73470",
+      "receipt": "history/fresh-v1/receipt.json",
+      "scope": "The fresh-bit proof failed during elaboration; no accepted object.",
+      "source": "history/fresh-v1/ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_sha256": "b0be6b51a0611735ea2555e5193eab6a79bff6b98c61ec755492be0cd3da6048"
+    },
+    {
+      "attempt": "fresh-v2",
+      "exit_code": 1,
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "outcome_class": "proof_elaboration_failure",
+      "promoted_object": null,
+      "raw_receipt_sha256": "724ec6fbf802852263bfc119f9bf6abe139b5c48ff4b29ff4c641ae8fe019a4d",
+      "receipt": "history/fresh-v2/receipt.json",
+      "scope": "The revised fresh-bit proof retained unsolved goals; no accepted object.",
+      "source": "history/fresh-v2/ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_sha256": "15b0d18b5ee90253eade4f23b58d55485adf5a9d5330657024fe7334c38506e4"
+    },
+    {
+      "attempt": "finite-original-layout",
+      "exit_code": 1,
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "outcome_class": "import_layout_failure_before_elaboration",
+      "promoted_object": null,
+      "raw_receipt_sha256": "28c1ba325e62510e56a2060a27a5d27364188a2157c4fee0b17e183498126466",
+      "receipt": "history/finite-original-layout/receipt.json",
+      "scope": "The first ResearchBounds directory shadowed the earlier complete prefix; TreeDegreeBounds.olean was absent in the selected directory. The candidate theorem bodies were not tested.",
+      "source": "history/finite-original-layout/ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_sha256": "c9b3f3116e8f018c0e0f7941a4dab52a05afa9ee8d612829a542eeebef95aeed"
+    },
+    {
+      "attempt": "finite-original-elaboration",
+      "exit_code": 1,
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "outcome_class": "proof_elaboration_failure",
+      "promoted_object": null,
+      "raw_receipt_sha256": "4c3f6909336d0f66ed8480d8cf7b68213e2327a8fcedf99988be09d52048efea",
+      "receipt": "history/finite-original-elaboration/receipt.json",
+      "scope": "After merging the namespace library, the unchanged candidate reached elaboration and failed, including unsolved proof goals and an unknown identifier. No accepted object.",
+      "source": "history/finite-original-elaboration/ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_sha256": "c9b3f3116e8f018c0e0f7941a4dab52a05afa9ee8d612829a542eeebef95aeed"
+    },
+    {
+      "attempt": "scalar-original-elaboration",
+      "exit_code": 1,
+      "module": "ResearchBounds.ScalarOutputSizeDegree",
+      "outcome_class": "proof_elaboration_failure",
+      "promoted_object": null,
+      "raw_receipt_sha256": "27edffc23f222934e1b63e1a798ba72de34dc1374d82b54f57fd78a469fae7cf",
+      "receipt": "history/scalar-original-elaboration/receipt.json",
+      "scope": "Original scalar fixed-power output bound failed a type/degree simplification during elaboration; no accepted object.",
+      "source": "history/scalar-original-elaboration/ResearchBounds/ScalarOutputSizeDegree.lean",
+      "source_sha256": "aff58ae192ee476d67c78b5321e35bd075f3ca07967224d269e312887d65b3bb"
+    }
+  ],
+  "complete_history_claimed": false,
+  "selection": "Fresh original/v2 proof failures and Finite original import-layout then unchanged-source elaboration failure from four saved evidence collections. Earlier archive and successful final helpers remain separate. Original Scalar aff58 elaboration failure included separately; repaired Scalar11c1 compiled and extension21 audit passed in a separate final observation.",
+  "status": "five_selected_failed_attempts_preserved"
+}

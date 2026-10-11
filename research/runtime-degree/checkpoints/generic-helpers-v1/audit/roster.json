@@ -1,0 +1,503 @@
+{
+  "acceptance": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "checker": "scripts/check_lean_axioms.py",
+    "checker_sha256": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+    "requires": "Exactly one actual report per requested name, in driver order; no extra output, omitted names, duplicates or unexpected axioms."
+  },
+  "declarations": [
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.degree_add",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 8,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.degree_mul",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 12,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.degree_comp",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 16,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.degree_scale",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 20,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.degree_affine",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 22,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "def",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.Bounded",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 25,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "abbrev",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.Typed",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 29,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_identity",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 34,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_first",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 38,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_second",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 44,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_constantData",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 50,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_constant",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 79,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_composition",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 82,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_pair",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 96,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_congr",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 113,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.bounded_congr",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 118,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.bounded_remeasure",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 123,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_fold",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_line": 130,
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "kind": "def",
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "name": "Math115.DegreeBounds.blockBudget",
+      "source": "ResearchBounds/PolynomialCompilerDegree.lean",
+      "source_line": 11,
+      "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "kind": "def",
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "name": "Math115.DegreeBounds.physicalEnvelope",
+      "source": "ResearchBounds/PolynomialCompilerDegree.lean",
+      "source_line": 14,
+      "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "name": "Math115.DegreeBounds.blockBudget_degree",
+      "source": "ResearchBounds/PolynomialCompilerDegree.lean",
+      "source_line": 21,
+      "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "kind": "theorem",
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "name": "Math115.DegreeBounds.physicalEnvelope_degree",
+      "source": "ResearchBounds/PolynomialCompilerDegree.lean",
+      "source_line": 35,
+      "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "kind": "theorem",
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "name": "Math115.DegreeBounds.physicalEnvelope_degree_max",
+      "source": "ResearchBounds/PolynomialCompilerDegree.lean",
+      "source_line": 67,
+      "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "kind": "def",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.OnlineBounded",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 11,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.online_deterministic",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 18,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.online_congr",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 20,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.online_composition",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 28,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.online_then",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 46,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.online_pair",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 55,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.online_choose",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 77,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_listCons",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 93,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_subtract",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 98,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_predecessor",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 111,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.typed_rangeStep",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 113,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.range_numeric_degree",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 119,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.fresh_step_degree",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 197,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.fresh_list_degree",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 206,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "name": "Math115.DegreeBounds.fresh_natural_degree",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_line": 243,
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "name": "Math115.DegreeBounds.online_weaken",
+      "source": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_line": 12,
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "name": "Math115.DegreeBounds.source_degree",
+      "source": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_line": 17,
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "kind": "def",
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "name": "Math115.DegreeBounds.completeOnlineDegree",
+      "source": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_line": 39,
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "name": "Math115.DegreeBounds.complete_online_degree",
+      "source": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_line": 44,
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "kind": "noncomputable def",
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "name": "Math115.DegreeBounds.compilerPolynomial",
+      "source": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_line": 74,
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "name": "Math115.DegreeBounds.budget_degree",
+      "source": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_line": 88,
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "name": "Math115.DegreeBounds.compiler_degree",
+      "source": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_line": 93,
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "kind": "lemma",
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "name": "Math115.DegreeBounds.compiler_bound",
+      "source": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_line": 109,
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "kind": "theorem",
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "name": "Math115.DegreeBounds.machineTime_degree",
+      "source": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_line": 156,
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    }
+  ],
+  "expected_report_order": [
+    "Math115.DegreeBounds.degree_add",
+    "Math115.DegreeBounds.degree_mul",
+    "Math115.DegreeBounds.degree_comp",
+    "Math115.DegreeBounds.degree_scale",
+    "Math115.DegreeBounds.degree_affine",
+    "Math115.DegreeBounds.Bounded",
+    "Math115.DegreeBounds.Typed",
+    "Math115.DegreeBounds.typed_identity",
+    "Math115.DegreeBounds.typed_first",
+    "Math115.DegreeBounds.typed_second",
+    "Math115.DegreeBounds.typed_constantData",
+    "Math115.DegreeBounds.typed_constant",
+    "Math115.DegreeBounds.typed_composition",
+    "Math115.DegreeBounds.typed_pair",
+    "Math115.DegreeBounds.typed_congr",
+    "Math115.DegreeBounds.bounded_congr",
+    "Math115.DegreeBounds.bounded_remeasure",
+    "Math115.DegreeBounds.typed_fold",
+    "Math115.DegreeBounds.blockBudget",
+    "Math115.DegreeBounds.physicalEnvelope",
+    "Math115.DegreeBounds.blockBudget_degree",
+    "Math115.DegreeBounds.physicalEnvelope_degree",
+    "Math115.DegreeBounds.physicalEnvelope_degree_max",
+    "Math115.DegreeBounds.OnlineBounded",
+    "Math115.DegreeBounds.online_deterministic",
+    "Math115.DegreeBounds.online_congr",
+    "Math115.DegreeBounds.online_composition",
+    "Math115.DegreeBounds.online_then",
+    "Math115.DegreeBounds.online_pair",
+    "Math115.DegreeBounds.online_choose",
+    "Math115.DegreeBounds.typed_listCons",
+    "Math115.DegreeBounds.typed_subtract",
+    "Math115.DegreeBounds.typed_predecessor",
+    "Math115.DegreeBounds.typed_rangeStep",
+    "Math115.DegreeBounds.range_numeric_degree",
+    "Math115.DegreeBounds.fresh_step_degree",
+    "Math115.DegreeBounds.fresh_list_degree",
+    "Math115.DegreeBounds.fresh_natural_degree",
+    "Math115.DegreeBounds.online_weaken",
+    "Math115.DegreeBounds.source_degree",
+    "Math115.DegreeBounds.completeOnlineDegree",
+    "Math115.DegreeBounds.complete_online_degree",
+    "Math115.DegreeBounds.compilerPolynomial",
+    "Math115.DegreeBounds.budget_degree",
+    "Math115.DegreeBounds.compiler_degree",
+    "Math115.DegreeBounds.compiler_bound",
+    "Math115.DegreeBounds.machineTime_degree"
+  ],
+  "headline_names": [
+    "Math115.DegreeBounds.completeOnlineDegree",
+    "Math115.DegreeBounds.fresh_natural_degree",
+    "Math115.DegreeBounds.complete_online_degree",
+    "Math115.DegreeBounds.physicalEnvelope_degree_max",
+    "Math115.DegreeBounds.compilerPolynomial",
+    "Math115.DegreeBounds.compiler_degree",
+    "Math115.DegreeBounds.compiler_bound",
+    "Math115.DegreeBounds.machineTime_degree"
+  ],
+  "modules": [
+    {
+      "accepted_native_receipt": "compilation/TreeDegreeBounds/receipt.json",
+      "compiled_object_sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "public_declaration_count": 18,
+      "public_theorem_count": 16,
+      "receipt_sha256": "472a9b29cff76a22ad13125f9198f44127157ec159dec996f038000429281d22",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "accepted_native_receipt": "compilation/PolynomialCompilerDegree/receipt.json",
+      "compiled_object_sha256": "bf5e49a96a39c4e9526fb0cf1ad3786d8a6c84d1e90771b0c5906cfce1c316d2",
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "public_declaration_count": 5,
+      "public_theorem_count": 3,
+      "receipt_sha256": "7e2d7e2279ca19968e3dbdae3f52d168c14dcf67a0a4ad80f177cdf673d365c5",
+      "source": "ResearchBounds/PolynomialCompilerDegree.lean",
+      "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "accepted_native_receipt": "compilation/FreshBitDegreeBounds/receipt.json",
+      "compiled_object_sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "public_declaration_count": 15,
+      "public_theorem_count": 14,
+      "receipt_sha256": "a937f2a6675a3e223fcff7d634fb765ecebf8ba2d0e4bb38b719731b9ed87315",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "accepted_native_receipt": "compilation/FiniteWordDegreeBounds/receipt.json",
+      "compiled_object_sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce",
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "public_declaration_count": 9,
+      "public_theorem_count": 7,
+      "receipt_sha256": "d7729ed252f9e85d521abe14efd7aa0ca547e10cc2110df829ed1a7591b74956",
+      "source": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    }
+  ],
+  "not_established": [
+    "No audit pass before execution.",
+    "No full environment rebuild or audit.",
+    "No concrete numeric degree for actual public sampler count/draw realizers.",
+    "No audit of separate TreeArithmeticDegree or ScalarOutputSizeDegree modules."
+  ],
+  "physical_composition_boundary": "machineTime_degree is for actual finite-word machineTime N F, conditional on Typed N e and Typed F t; completeOnlineDegree e t=max1t*maxe6; q degree<=2*completeOnlineDegree. These remain quantitative input hypotheses, not supplied sampler-specific numerals.",
+  "scope": "Named axiom dependencies of all public source declarations from four exact compiled generic helper modules. Anonymous/generated compiler declarations and unrelated imported declarations are not roster entries.",
+  "status": "frozen audit preparation only; not executed",
+  "total_audit_requests": 47,
+  "total_definitions_or_abbreviations": 7,
+  "total_public_theorems": 40
+}

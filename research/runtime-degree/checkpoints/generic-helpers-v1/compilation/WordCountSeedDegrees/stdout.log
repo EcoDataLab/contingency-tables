@@ -1,0 +1,6 @@
+<owned-workspace>\checkpoint11-degree-successor-02\graph\source\ResearchBounds\WordCountSeedDegrees.lean:65:53: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<owned-workspace>\checkpoint11-degree-successor-02\graph\source\ResearchBounds\WordCountSeedDegrees.lean:89:18: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

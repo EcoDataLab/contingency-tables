@@ -1,0 +1,25 @@
+{
+  "contains_submitted_compiled_artifacts": false,
+  "files": {
+    "README.md": "abbdc00d0c56fddb130230ce6105f713920eac7dd45af1d3b7375cb16f11a4bf",
+    "StrictSampler.json": "12ac0eb4d2d91c16772667335462c8bfbed5ae3f6ca9742d8f91f4c9bf07993f",
+    "StrictSamplerSolution.lean": "6a6030917561cca4cc5276c2ac3c376611c98d69ab4445220dfcc1b106eb213c",
+    "StrictSamplerStatement.lean": "4f5940853925ede5f8b829ff913120f2d310de6bbe43ef5650c8f30c63aa2c76",
+    "evidence/SolutionAxioms.lean": "e1affbc0c2c8319d1715608821e5b106515b643024b04cefdfd8c088e91a558e",
+    "evidence/named-axioms.stdout.log": "658bc3c944fb9149eed551d7d3413b6d573a9e2dcd43a3fe58080e55abc6d90b",
+    "evidence/native-checks.json": "f00ee5145a0e2e23d6a6779d951153da5c6b26870548def549a1a8c2ea90fdf5",
+    "evidence/startup-timeout-2026-10-11.json": "aebe8fdf7579a38c3508b8f815fcde1016af6b2410098a54cd0142b112cd8023",
+    "native-audit.json": "8e6e534054b17ea5b566d3fb76a47b3a4a1722ce6570e58ede25703f1a8fa625",
+    "runner/authenticate_runtime.py": "b40e88c70e0e604836cf8c0efa3281980817fcd79050a3227ac818a1f7322faa",
+    "runner/runtime-template.json": "40ce082da44c8c484a58ea0483cc3102b1649d043393af337bab6c48b14c5b18",
+    "runner/source-freeze.json": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+    "runner/strict_sampler.py": "2786f3584008fc806a531bf6e0033dc13391f6b1ca01b81bbebce4b92ff371a6",
+    "runner/tested-runtime/build_lean_serial.py": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c",
+    "runner/tested-runtime/no_rebuild_landrun.py": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7",
+    "runner/tested-runtime/strict_serial_check.py": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e"
+  },
+  "portable_outer_supervisor_supplied": false,
+  "schema_version": 1,
+  "status": "native_checks_passed_first_VM_startup_timed_out_strict_acceptance_pending",
+  "upstream_descriptor_unchanged": true
+}

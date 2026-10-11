@@ -1,0 +1,3 @@
+<owned-workspace>\checkpoint11-degree-diagnostic-01\source\ResearchBounds\TreeDegreeBounds.lean:35:18: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

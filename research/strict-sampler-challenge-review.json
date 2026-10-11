@@ -1,0 +1,20 @@
+{
+  "evidence_class": "AI source and native-evidence publication review",
+  "private_prepared_manifest_sha256": "f32050d5bec089f5d9ce84c922e9c92611707e1efdc5203fb532bc6043ae5b17",
+  "prepared_subtree_manifest_sha256": "5bcdbc066b2c00d01aeecf5e81a13c27985665bcfeb7b62160560e2cbd72a181",
+  "published_subtree_manifest_sha256": "04ed41daadda17fe41092303fc3e5d91505846e8c22273e7618050bc8fb36e98",
+  "root_prepared_readback_sha256": "d1bd75151a1b8e1cb3db87bfcbcc58ec9a41e79b63736e53cf8365ffb320035d",
+  "runner_independent_review_manifest_sha256": "55959b6ed49f5a8857150a58e15f1874962a13268845f74019037e6ae26606ac",
+  "runner_offline_tests": 50,
+  "first_startup_raw_readback_sha256": "d5771c819c48d8b43a9bb8419cc7de1830376f436732c7df2fa984b9d8963456",
+  "public_changes_from_prepared_packet": [
+    "README creation-time header clarification and actual startup outcome",
+    "Allowlisted startup-timeout record",
+    "Regenerated content manifest"
+  ],
+  "challenge_runner_authenticator_and_native_evidence_bytes_unchanged": true,
+  "strict_acceptance": false,
+  "human_review": false,
+  "public_full_replay": false,
+  "utc": "2026-10-11T03:34:41.640508+00:00"
+}

@@ -1,0 +1,127 @@
+<owned-workspace>\checkpoint11-degree-diagnostic-01\source\ResearchBounds\FreshBitDegreeBounds.lean:76:17: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<owned-workspace>\checkpoint11-degree-diagnostic-01\source\ResearchBounds\FreshBitDegreeBounds.lean:106:56: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<owned-workspace>\checkpoint11-degree-diagnostic-01\source\ResearchBounds\FreshBitDegreeBounds.lean:121:74: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<owned-workspace>\checkpoint11-degree-diagnostic-01\source\ResearchBounds\FreshBitDegreeBounds.lean:161:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  p ≥ 0
+  o ≥ 0
+  o - p ≤ -1
+  m ≥ 0
+  l ≥ 0
+  l - m ≥ 0
+  j ≥ 0
+  i ≥ 0
+  h ≥ 0
+  g ≥ 0
+  g - h - i ≥ 0
+  g - o ≤ 0
+  f ≥ 0
+  e ≥ 0
+  e + f ≥ -1
+  4*e - j ≥ -5
+  0 ≤ d ≤ 3
+  0 ≤ c ≤ 2
+  0 ≤ b ≤ 1
+  0 ≤ a ≤ 1
+where
+ a := ↑r.natDegree
+ b := ↑t.natDegree
+ c := ↑q.natDegree
+ d := ↑P.natDegree
+ e := ↑k
+ f := ↑zs.length
+ g := ↑(eval (weight (k + 1, zs)) t)
+ h := ↑((pair (composition first predecessor) rangeStepRealizer).cost (k + 1, zs))
+ i := ↑(weight ((fun a => (((fun n => n - 1) ∘ Prod.fst) a, rangeStep a)) (k + 1, zs)))
+ j := ↑(weight (k + 1))
+ l := ↑(eval n q)
+ m := ↑(weight zs)
+ o := ↑(eval (2 + 4 * n + eval n q) t)
+ p := ↑((Repeat.nextRealizer rangeStepRealizer).cost (k + 1, zs))
+<owned-workspace>\checkpoint11-degree-diagnostic-01\source\ResearchBounds\FreshBitDegreeBounds.lean:172:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  o ≥ 0
+  m ≥ 0
+  l ≥ 0
+  k ≥ 0
+  j ≥ 0
+  i ≥ 0
+  i - j - k ≥ 0
+  h ≥ 0
+  g ≥ 0
+  g - h ≥ 0
+  f ≥ 0
+  f + h + j - l - m - o ≥ 11
+  e ≥ 0
+  e - f ≥ -10
+  0 ≤ d ≤ 3
+  0 ≤ c ≤ 2
+  0 ≤ b ≤ 1
+  0 ≤ a ≤ 1
+where
+ a := ↑r.natDegree
+ b := ↑t.natDegree
+ c := ↑q.natDegree
+ d := ↑P.natDegree
+ e := ↑n * ↑(eval (2 + 4 * n + eval n q) t + 4 * (4 * n + 1) + 12)
+ f := ↑(Repeat.cost rangeStep (Repeat.nextRealizer rangeStepRealizer).cost n [])
+ g := ↑(eval n q)
+ h := ↑(weight (countDown rangeStep n []))
+ i := ↑(eval ((fun n => n) n) r)
+ j := ↑((pair identity (constant [])).cost n)
+ k := ↑(weight ((fun a => (id a, [])) n))
+ l := ↑(eval (id n) r)
+ m := ↑(id n) * ↑(eval (2 + 4 * id n + eval (id n) q) t + 4 * (4 * id n + 1) + 12)
+ o := ↑(eval (id n) q)
+<owned-workspace>\checkpoint11-degree-diagnostic-01\source\ResearchBounds\FreshBitDegreeBounds.lean:189:4: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  k ≥ 0
+  j ≥ 0
+  j - k ≥ 0
+  i ≥ 0
+  h ≥ 0
+  g ≥ 0
+  g - h - i ≥ 0
+  f ≥ 0
+  e ≥ 0
+  e - i ≤ 0
+  d ≥ 0
+  d - e - f ≥ 0
+  d + g - i - j ≤ -1
+  c ≥ 0
+  c ≤ 1
+  b ≥ 0
+  b ≤ 1
+where
+ b := ↑p.natDegree
+ c := ↑q.natDegree
+ d := ↑(eval (weight a) p)
+ e := ↑((OnlineTree.deterministic (composition (pair (constant false) second) listCons)).cost a)
+ f := ↑(((fun a => Experiment.done (((fun ab => ab.1 :: ab.2) ∘ fun a => (false, a.2)) a)) a).worst weight)
+ g := ↑(eval (weight a) q)
+ h := ↑(((fun a => Experiment.done (((fun ab => ab.1 :: ab.2) ∘ fun a => (true, a.2)) a)) a).worst weight)
+ i := if
+    ↑((OnlineTree.deterministic (composition (pair (constant false) second) listCons)).cost a) ≤
+      ↑((OnlineTree.deterministic (composition (pair (constant true) second) listCons)).cost a) then
+  ↑((OnlineTree.deterministic (composition (pair (constant true) second) listCons)).cost a)
+else ↑((OnlineTree.deterministic (composition (pair (constant false) second) listCons)).cost a)
+ j := ↑((if True then Experiment.done (((fun ab => ab.1 :: ab.2) ∘ fun a => (true, a.2)) a)
+      else Experiment.done (((fun ab => ab.1 :: ab.2) ∘ fun a => (false, a.2)) a)).worst
+    weight)
+ k := ↑((if false = true then Experiment.done (((fun ab => ab.1 :: ab.2) ∘ fun a => (true, a.2)) a)
+      else Experiment.done (((fun ab => ab.1 :: ab.2) ∘ fun a => (false, a.2)) a)).worst
+    weight)
+<owned-workspace>\checkpoint11-degree-diagnostic-01\source\ResearchBounds\FreshBitDegreeBounds.lean:232:2: error: Tactic `apply` failed: could not unify the type of `online_then ?m.41 fresh_list_degree`
+  OnlineBounded (OnlineTree.composition ?m.36 OnlineWord.listRealizer) ?m.38 (max ?m.39 (2 * ?m.39))
+with the goal
+  OnlineBounded (OnlineTree.composition (OnlineTree.deterministic range) OnlineWord.listRealizer)
+    (fun n => n + weight n) 6
+
+⊢ OnlineBounded (OnlineTree.composition (OnlineTree.deterministic range) OnlineWord.listRealizer)
+    (fun n => n + weight n) 6
