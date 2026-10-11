@@ -1,0 +1,17 @@
+{
+  "actual_materialized_files_byte_identical": 19,
+  "candidate_sha256": "645f1f13d16c12eb421d86c379ac2b18f7a40170226e07558445afb0336860a0",
+  "deterministic_candidate_bytes": true,
+  "deterministic_receipt_bytes": true,
+  "full_runtime_admission": false,
+  "independent_review_manifest_sha256": "a5179266048c7ec1084466a9973b820023b26759d2ed8de75591374093ae47bb",
+  "materialized_execution_bits": 0,
+  "monkeypatches": false,
+  "negative_boolean_idx_rejected": "Configuration trace/source/tool/options differ",
+  "negative_uncaptured_empty_lock_rejected": "Configuration artifact keyset differs",
+  "positive_pure_inventory_artifacts": 6,
+  "receipt_sha256": "95c69fcf72911196f3ee85a50669160776c501c7afc097a381667a727ce5724e",
+  "remote_vm_binary_config_git_execution": false,
+  "status": "offline_deterministic_conversion_and_actual_byte_pure_inventory_pass",
+  "unchanged_checker_sha256": "136f13a56001c6f4f31e73a7133193cc946be32de3cc4970edc9fc06c2a65d38"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "passed_saved_artifact_review",
+  "reviewer_kind": "independent AI agent within this project; not human review",
+  "packet": "configuration-repair-v1/manifest.json",
+  "packet_manifest_sha256": "cd30335ccf30a1d0060cd28755d8d84ba4cdde00395b7182f9adea7daa0cb166",
+  "original_private_review_sha256": "eeacec8e430048768f94e2bd69052e432b59f6741650d91f318e96a48d170dcd",
+  "original_private_review_manifest_sha256": "9874de983eb00cd667354ff1d4f13f41d8c4b348a27f1d1483e596d636803f49",
+  "review_metadata_addendum_sha256": "407c4dc30ffc042a8e329834f512c85daab77e5efc84b94c8f1d4e8d42a2e8c5",
+  "projection": "Public summary of saved-artifact checks; private account paths, process identities and review setup files omitted. Byte-count metadata correction applied; original review and addendum preserved.",
+  "checks": [
+    "Exact packet/control hashes, runtime bodies, descriptor, support files and source freeze.",
+    "679 source digests and exactly two fixture path substitutions, with unchanged source bytes.",
+    "Seven local host downloads, nine regular guest archive members and all six complete stage-log projections.",
+    "Saved 74-test streams, raw-to-public mappings, caller cleanup and unchanged retained pins.",
+    "Public link resolution and targeted privacy and claim-scope readback."
+  ],
+  "actual_startup_exit_codes": [
+    0,
+    0,
+    1
+  ],
+  "missing_cache_root": null,
+  "runtime_freeze_or_plan_reached": false,
+  "proof_export_kernel_or_comparator_reached": false,
+  "product_tests_replayed_by_reviewer": false,
+  "live_execution_by_reviewer": false,
+  "blocking_findings": [],
+  "limits": [
+    "Remote-only disk bound by metadata, not copied or locally rehashed.",
+    "Owned cleanup and pins checked from saved receipts; no new live process query.",
+    "Targeted privacy checks, not an exhaustive privacy analysis.",
+    "Missing cache directory remains unknown; no strict mathematical acceptance or numerical runtime degree."
+  ],
+  "subsequent_root_public_layout_check": {
+    "status": "passed",
+    "tests": 74,
+    "elapsed_seconds": 24.042,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s research/strict-sampler-checkpoints/configuration-repair-v1/runner -p test_strict_sampler.py -v",
+    "stdout_sha256": "a4d97644f6119d23c42cf50d95e2729e5f89cf71cdcf634ce6cb3a5f24f61ca4",
+    "stderr_sha256": "789d3d205c22ab59f52ef6a0aecff4a02f2280cd3d0eaaa7c6998dc76a333a95",
+    "frozen_packet_members_rehashed": 32,
+    "current_navigation_links_checked": 268,
+    "scope": "Actual offline tests from final public path, ledger and whitespace checks; no Lean or live Comparator execution.",
+    "whitespace_check": "Passed for source/navigation/receipts; frozen implementation.patch retains five literal unified-diff blank context lines that Git reports as trailing whitespace."
+  }
+}

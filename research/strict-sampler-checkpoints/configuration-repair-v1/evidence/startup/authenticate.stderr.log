@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<guest-home>/checkpoint11-authenticate.py", line 65, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "<guest-home>/checkpoint11-authenticate.py", line 58, in main
+    runtime={'schema_version':1,'status':'authenticated_linux_runtime_for_strict_sampler','source_freeze_sha256':m.SOURCE_SHA,'trusted_files_sha256':tools,'trusted_tool_aliases':aliases,'system_executables':system,'trusted_cache_roots':cache_roots,'trusted_cache_files_sha256':m.cache_inventory(root,cache_roots),'lake_configuration_artifacts_sha256':configuration,'external_import_resolution':resolution,'entrypoint_native_audit':native}
+                                                                                                                                                                                                                                                                                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "<checking-root>/.tools/linux-verification/checkpoint11-runner/strict_sampler.py", line 193, in cache_inventory
+    require(base.is_dir(), "Missing trusted import-cache directory")
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<checking-root>/.tools/linux-verification/checkpoint11-runner/strict_sampler.py", line 66, in require
+    raise Reject(message)
+c11_trusted_runner.Reject: Missing trusted import-cache directory

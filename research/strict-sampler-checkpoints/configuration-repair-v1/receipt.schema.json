@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Configuration repair with closed authentication failure",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "startup_outcome",
+    "cleanup",
+    "missing_cache_root",
+    "plan_admission",
+    "runtime_freeze",
+    "full_strict_acceptance",
+    "portable_Linux_outer_replay",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "const": "indexed_configuration_repair_observed_authentication_failed_unknown_cache_root"
+    },
+    "missing_cache_root": {
+      "type": "null"
+    },
+    "plan_admission": {
+      "type": "null"
+    },
+    "runtime_freeze": {
+      "type": "null"
+    },
+    "full_strict_acceptance": {
+      "type": "null"
+    },
+    "portable_Linux_outer_replay": {
+      "type": "null"
+    },
+    "startup_outcome": {
+      "const": "evidence/startup/outcome.json"
+    },
+    "cleanup": {
+      "const": "evidence/startup/cleanup.json"
+    },
+    "provenance": {
+      "const": "provenance-bindings.json"
+    }
+  },
+  "$comment": "Representation only; source/capture/hash/stage validation is separate. No absent-root exception or live success inferred."
+}

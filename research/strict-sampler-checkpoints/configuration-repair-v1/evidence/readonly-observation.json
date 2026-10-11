@@ -1,0 +1,20 @@
+{
+  "archive_sha256": "be63fe765aa41c07717a7268c07bb650d93f83a1895f14711d7110e3ba72a912",
+  "automatic_retry": false,
+  "capture_entries": 35,
+  "closure_basis": "independent caller checked owner absence/mount cleanup/post-pins; unpublished temporary status is not authority",
+  "git_clean_status": "unobserved; exact raw HEAD/refs preserved",
+  "guest_files": 32,
+  "guest_manifest_sha256": "15d1b2c468c39f798d5e879d008cb8af09642d978f38e7c80f2b5d11284f1603",
+  "guest_report_sha256": "366f15b7983874310a210acaf4e51788e841675320dc454ba3fd6b2186d352f5",
+  "guest_result": 0,
+  "host_terminal_publication": "failed WinError5",
+  "no_configuration_hook_or_compiler_execution": true,
+  "published_status": "launching",
+  "retained_pins_unchanged": true,
+  "scope": "readonly configuration provenance observation only; no proof or strict acceptance result",
+  "source_sha256_unchanged": "3ace7cad836f3a8cfa7ea8b38c98d4ec97da23e611da1cdac7bf1235d1e139a0",
+  "status": "guest readonly capture authenticated; supervisor terminal publication failed WinError5; independent caller closure and post-pins pass",
+  "temp_status_promoted": false,
+  "unpublished_temp_status": "observation_reported_pass"
+}

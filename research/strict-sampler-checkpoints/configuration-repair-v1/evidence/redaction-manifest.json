@@ -1,0 +1,202 @@
+{
+  "artifacts": [
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/strict_sampler.py",
+      "original_sha256": "136f13a56001c6f4f31e73a7133193cc946be32de3cc4970edc9fc06c2a65d38",
+      "published_file": "runner/strict_sampler.py",
+      "published_sha256": "136f13a56001c6f4f31e73a7133193cc946be32de3cc4970edc9fc06c2a65d38"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/authenticate_runtime.py",
+      "original_sha256": "4b9d22b3673dfc0820e2d4752c7deea9a3428add0e2ef97eb00383457c8b42ff",
+      "published_file": "runner/authenticate_runtime.py",
+      "published_sha256": "4b9d22b3673dfc0820e2d4752c7deea9a3428add0e2ef97eb00383457c8b42ff"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/test_strict_sampler.py",
+      "original_sha256": "a45697e13533236d822416ced49397b6674b0bd6321323e530ebfb4d5b945f30",
+      "published_file": "runner/test_strict_sampler.py",
+      "published_sha256": "a45697e13533236d822416ced49397b6674b0bd6321323e530ebfb4d5b945f30"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/source-freeze.json",
+      "original_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+      "published_file": "runner/source-freeze.json",
+      "published_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/runtime-template.json",
+      "original_sha256": "ab6126a35a69f55084ecc42b5590bf1ea5780324989bc2db240ef61d9d79f3eb",
+      "published_file": "runner/runtime-template.json",
+      "published_sha256": "ab6126a35a69f55084ecc42b5590bf1ea5780324989bc2db240ef61d9d79f3eb"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/tested-runtime/build_lean_serial.py",
+      "original_sha256": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c",
+      "published_file": "runner/tested-runtime/build_lean_serial.py",
+      "published_sha256": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/tested-runtime/no_rebuild_landrun.py",
+      "original_sha256": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7",
+      "published_file": "runner/tested-runtime/no_rebuild_landrun.py",
+      "published_sha256": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/tested-runtime/strict_serial_check.py",
+      "original_sha256": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e",
+      "published_file": "runner/tested-runtime/strict_serial_check.py",
+      "published_sha256": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "original-corpus/descriptor",
+      "original_sha256": "12ac0eb4d2d91c16772667335462c8bfbed5ae3f6ca9742d8f91f4c9bf07993f",
+      "published_file": "challenge/StrictSampler.json",
+      "published_sha256": "12ac0eb4d2d91c16772667335462c8bfbed5ae3f6ca9742d8f91f4c9bf07993f"
+    },
+    {
+      "changes": [
+        "Two private Statement/Solution fixture source paths replaced by original public corpus references; all679 source digests unchanged."
+      ],
+      "original_artifact_id": "reviewed-repair/test-source-plan",
+      "original_sha256": "4711fc28d7c7cef07b0aef456f06ec530302c90b9ec2f0b33620546136f5cbb2",
+      "published_file": "source-plan.json",
+      "published_sha256": "03cee47dac72f1a419bdb2aafbe02f5e5a18a4f27bb7d360e9fcab1013f7cc08"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/ineligible-template",
+      "original_sha256": "b435c269160485e7cf5735dfacde26702fadceca6becac0cf1b3c76e46533077",
+      "published_file": "configuration-provenance-template.json",
+      "published_sha256": "b435c269160485e7cf5735dfacde26702fadceca6becac0cf1b3c76e46533077"
+    },
+    {
+      "changes": [
+        "Only checking-root and guest-home path prefixes substituted where present; complete stage output retained."
+      ],
+      "original_artifact_id": "install.stdout.log",
+      "original_sha256": "ea2395f84e9e653fa52a37289afa7b9ea4259e877a269ed9043651826d7f5f31",
+      "published_file": "evidence/startup/install.stdout.log",
+      "published_sha256": "ea2395f84e9e653fa52a37289afa7b9ea4259e877a269ed9043651826d7f5f31"
+    },
+    {
+      "changes": [
+        "Only checking-root and guest-home path prefixes substituted where present; complete stage output retained."
+      ],
+      "original_artifact_id": "install.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "evidence/startup/install.stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Only checking-root and guest-home path prefixes substituted where present; complete stage output retained."
+      ],
+      "original_artifact_id": "preflight.stdout.log",
+      "original_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b",
+      "published_file": "evidence/startup/preflight.stdout.log",
+      "published_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b"
+    },
+    {
+      "changes": [
+        "Only checking-root and guest-home path prefixes substituted where present; complete stage output retained."
+      ],
+      "original_artifact_id": "preflight.stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "evidence/startup/preflight.stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Only checking-root and guest-home path prefixes substituted where present; complete stage output retained."
+      ],
+      "original_artifact_id": "authenticate.stdout.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "evidence/startup/authenticate.stdout.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Only checking-root and guest-home path prefixes substituted where present; complete stage output retained."
+      ],
+      "original_artifact_id": "authenticate.stderr.log",
+      "original_sha256": "15e0eb0a5834cd8702020c864ac77f8640926de57dc55398efded7e3ab733416",
+      "published_file": "evidence/startup/authenticate.stderr.log",
+      "published_sha256": "09278266f0aafd25e05c8adc231a4436f12f6285aa16490e96cc417882e2c359"
+    },
+    {
+      "changes": [
+        "Guest path prefixes substituted; timestamps/child PIDs omitted; exact phase hashes/exit/limits retained; fail-closed scope separated."
+      ],
+      "original_artifact_id": "final-result.json",
+      "original_sha256": "e6f195611c9eb65a00e559bc25b72bcf59d3923ab82eaabce00060afc31ec1fe",
+      "published_file": "evidence/startup/outcome.json",
+      "published_sha256": "2496ca92c106932e72b799e5ee250d40fb8db5e3cf66607eb7e5d5aedf655038"
+    },
+    {
+      "changes": [
+        "Host process identities/PIDs/time omitted; owner absence, reaping, exit and pin observations retained."
+      ],
+      "original_artifact_id": "cleanup-receipt.json",
+      "original_sha256": "1c5c9f8e7300f292533130c9117b44419b0cf90c778e6ce7c2f3f3e46599af5b",
+      "published_file": "evidence/startup/cleanup.json",
+      "published_sha256": "099c894d891a695dc893b8b48d14671ddd9274d224cd9c9746586971e5d8cfee"
+    },
+    {
+      "changes": [
+        "Mount/host execution details omitted; guest success and host publication failure kept separate."
+      ],
+      "original_artifact_id": "final-result.json",
+      "original_sha256": "ab8da22ca1841779e8ec9b4f6dd36d7355f271cf0b145527555fd3c218be6905",
+      "published_file": "evidence/readonly-observation.json",
+      "published_sha256": "4b3e23c12ff10dfe932d54e0e52ec7cbc5778aa44bc59552b0417da93bad6951"
+    },
+    {
+      "changes": [
+        "Checking/account prefixes substituted where present."
+      ],
+      "original_artifact_id": "source-derivation.json",
+      "original_sha256": "dadba2bace2b841ee9c25784f74fffc1b414ceca98b650377631af94580f1a45",
+      "published_file": "source-derivation.json",
+      "published_sha256": "dadba2bace2b841ee9c25784f74fffc1b414ceca98b650377631af94580f1a45"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "configuration-provenance-candidate.json",
+      "original_sha256": "645f1f13d16c12eb421d86c379ac2b18f7a40170226e07558445afb0336860a0",
+      "published_file": "configuration-provenance.json",
+      "published_sha256": "645f1f13d16c12eb421d86c379ac2b18f7a40170226e07558445afb0336860a0"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "validation.json",
+      "original_sha256": "7fed9d9ebb3594332db8a237bdc39952b0b8b8739a93b94320ae98b46072ac75",
+      "published_file": "evidence/configuration-conversion.json",
+      "published_sha256": "7fed9d9ebb3594332db8a237bdc39952b0b8b8739a93b94320ae98b46072ac75"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "diagnosis.json",
+      "original_sha256": "dc09b394afc16f5210a657d56a4511b0973dad8a34ab7e3c733f85ce9291d971",
+      "published_file": "evidence/cache-diagnosis.json",
+      "published_sha256": "dc09b394afc16f5210a657d56a4511b0973dad8a34ab7e3c733f85ce9291d971"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "projected-tests.stderr",
+      "original_sha256": "0c2c352e807a0a6c91815ca856a46d56e09e2cc3ec46d1cec552d243b15c39e3",
+      "published_file": "evidence/projected-offline-tests.log",
+      "published_sha256": "0c2c352e807a0a6c91815ca856a46d56e09e2cc3ec46d1cec552d243b15c39e3"
+    }
+  ],
+  "policy": "Sources/support bodies/descriptor exact. Fixture data has explicit2-path public projection. Stage logs retain complete diagnostics with guest path-prefix substitutions only. Receipt projections omit process identities; original/published hashes separate. Host serial/transcripts/wrappers/images excluded."
+}

@@ -1,0 +1,20 @@
+{
+  "cleanup": "evidence/startup/cleanup.json",
+  "configuration_conversion": "evidence/configuration-conversion.json",
+  "diagnosis": "evidence/cache-diagnosis.json",
+  "full_strict_acceptance": null,
+  "missing_cache_root": null,
+  "numerical_runtime_degree": null,
+  "ordinary_native_source_evidence": "unchanged original corpus/native audit, referenced not replayed",
+  "plan_admission": null,
+  "portable_Linux_outer_replay": null,
+  "provenance": "provenance-bindings.json",
+  "public_replay": "Not performed; actual retained-context installation/preflight/authentication attempt is captured separately.",
+  "readonly_observation": "evidence/readonly-observation.json",
+  "repair_offline_tests": "evidence/projected-offline-tests.json",
+  "runtime_freeze": null,
+  "schema_version": 1,
+  "scope": "Configuration-source/indexed-cache repair with observed later admission failure; not source/math/defaultLinux/strict acceptance.",
+  "startup_outcome": "evidence/startup/outcome.json",
+  "status": "indexed_configuration_repair_observed_authentication_failed_unknown_cache_root"
+}
