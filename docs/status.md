@@ -46,16 +46,23 @@ coefficient. Separate AI mathematical reviews and exact finite fixtures
 passed. The margin choices are essential; these family results are not
 Lean-formalized and do not change the unrestricted general exponent.
 
-The [growing rectangular family](growing-row-comparison.md) now permits both
-dimensions to increase. Its one-token small row and specified dense margins
-give explicit inverse gap `29040A d⁵` under `s²≤Ad`. A separately reviewed
-application of Morris's classical theorem sharpens this to
-`47916(C_Z+1)A²d⁴`, with the universal constant `C_Z` unextracted. The physical
-proposal clock is unchanged. The exact fixture checks 108 balanced profiles,
-4,194 defects and 3,672 parallel DD bridges, plus four directly counted
-dense contexts and four rational observables. These are restricted-family
-mathematics and finite evidence, without Lean verification or a new general
-exponent. The explicit d⁵ result remains available independently of C_Z.
+The [growing rectangular extension](growing-row-extension.md) permits both
+dimensions and a small-row total `1≤h≤U/[2(R−1)]` to grow. Its specified
+dense margins give explicit inverse gap `64856A d⁵` under `s²≤Ad`.
+Using Morris's theorem on both columns and places improves the order to
+`C_Z(48400A²+121000A)d⁴+1000C_Zd³`, with universal C_Z unextracted.
+The proposal clock is unchanged; the [one-token family](growing-row-comparison.md)
+retains sharper constants. Its physical fixture and the extension's focused
+slice/place fixture passed, with separate AI mathematical reviews. These
+remain restricted-family results without Lean verification or a new
+general exponent. The supporting [junction-energy comparison](junction-star-comparison.md)
+holds for arbitrary ordinary margins under its stated capacity and acceptance
+hypotheses; the remaining general obstacle is weighted center transport.
+Its [finite junction/star core](../research/junction-star/) now compiles:
+`E_J(F_g)≤12E_star(g)`, with the joint error bound derived from structural
+premises. The focused environment audit passed for five complete headline
+closures. The actual table-label/count instantiation and family gap bounds
+remain outside that compiled helper.
 
 The [reciprocal padding-growth proof](reciprocal-padding-growth.md) and actual
 marked-padding induction compile at the same smaller scales. The padded/original
@@ -101,7 +108,12 @@ on the historical 679-module sampler closure stopped at its dependency gate,
 before compiling a module. Lake returned zero, but the following guard
 detected metadata drift in `Mathlib/Algebra/Field/Defs.olean.server.hash`.
 That source freeze excludes the new research modules; no strict sampler
-acceptance is claimed. Historical pins, failed runs,
+acceptance is claimed. The [subsequent cache-memo diagnostic](../research/strict-sampler-checkpoints/hash-memo-normalization-v1/)
+identified a decimal-format rewrite of that sidecar. Preparing the memos with
+the pinned Lake implementation before fresh admission allowed the exact
+dependency command to pass twice with the full frozen checks unchanged.
+Non-memo contents and identities stayed unchanged; this diagnostic compiled
+no proof module and did not execute Comparator. Historical pins, failed runs,
 the commuting protocol and archived 115 handoff are preserved.
 
 The [aggregate validation record](../reports/aggregate-defect-trace-validation.json)

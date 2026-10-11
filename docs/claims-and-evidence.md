@@ -69,20 +69,29 @@ shapes with the appropriate proposal normalization.
 
 ## growing-family-gap
 
-The [growing rectangular-family proof](growing-row-comparison.md) gives
-raw defect variance at most `30pU²` times accepted trace energy. Keeping
-the canonical rational proposal gives `240p²U²`, and hence the explicit
-`29040A d⁵` allowance under `s²≤Ad`. Both dimensions may grow, but its
-one-token row and specified large margins are essential.
+The [growing rectangular-family extension](growing-row-extension.md) allows
+`1≤h≤U/[2(R−1)]` and gives raw defect variance at most `67pU²` times accepted
+trace energy. Keeping the canonical rational proposal gives `536p²U²`, and
+hence the explicit `64856A d⁵` allowance under `s²≤Ad`. Both dimensions
+and the small-row total may grow; the specified large margins are essential.
 
-Applying Morris's classical complete-graph zero-range theorem to the same
-conditional comparison improves this to `47916(C_Z+1)A²d⁴`.
-The universal `C_Z` is not numerically extracted; this is an asymptotic
-family bound, without an executable numerical d⁴ schedule. Separate AI
-mathematical reviews passed for the physical bridge, explicit proof and
-classical refinement. One focused exact fixture checks the explicit
-comparison on four observables; it does not prove a general theorem.
-There is no Lean verification, arbitrary-margin result or runtime claim.
+Applying Morris's classical complete-graph zero-range theorem to both
+conditional columns and places gives
+`C_Z(48400A²+121000A)d⁴+1000C_Zd³`. The universal `C_Z` is not numerically
+extracted, so no executable numerical d⁴ schedule follows. The
+[one-token proof](growing-row-comparison.md) retains the sharper explicit
+`29040A d⁵` and classical `47916(C_Z+1)A²d⁴` allowances.
+
+Separate AI mathematical reviews passed. The one-token fixture checks
+actual defect bridges and four observables; the higher-total fixture checks
+slice counts, exact restoration marginals and unit-edge routing. Neither
+finite check proves the parameter-wide theorem. The
+[general junction comparison](junction-star-comparison.md) applies more
+broadly, but does not itself give a gap bound. Its
+[finite energy core](../research/junction-star/) has ordinary Lean compilation
+and five complete headline axiom closures; the table-specific label and count
+instantiation remains a mathematical argument. There is no Lean verification,
+arbitrary-margin gap result or runtime claim for the family bounds themselves.
 
 ## thin-family-gap
 

@@ -80,3 +80,12 @@ may grow. The actual repair law is retained, but the proof still depends
 on product dense counts comparable within a fixed factor. Establishing
 center transport for arbitrary completion weights is the remaining general
 obstacle; the restricted family does not supply that missing inequality.
+
+The [higher-total extension](growing-row-extension.md) permits
+`1≤h≤U/[2(R−1)]` without losing those exponent orders. Its supporting
+[junction comparison](junction-star-comparison.md) is more general:
+`E_J(F_g)≤12E_star(g)` holds for ordinary margins under the stated capacities
+and actual half acceptance. Incoming junctions charge the full repair law;
+the joint within-fiber noise and center-error identity avoids an artificial
+factor growing with h. This closes that energy comparison, but the general
+weighted center Poincare inequality remains unproved.

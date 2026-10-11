@@ -12,6 +12,15 @@ passed. The
 [statement map](aggregate-defect-trace.md) records its exact hypotheses and
 the comparison with the preceding shape bound.
 
+The [finite junction/star helper](../research/junction-star/) separately
+proves `E_J(F_g)≤12E_star(g)` from explicit incidence, repair and incoming-mass
+hypotheses, deriving the needed joint error inequality. Its targeted native
+build and compiled-environment audit passed for 23 declarations, including
+15 theorems, and five complete headline closures with standard axioms only.
+Actual table labels and counts are not instantiated by this helper; the
+growing-family exponents remain reviewed mathematics. Its reproduction
+reuses authenticated prior imports and has its own receipt.
+
 The preceding [actual rational defect-trace packet](../research/physical-defect-trace/)
 freshly compiles its 41 research modules, the pinned upstream helper and the
 environment auditor. It enumerates 1,147 selected declarations (1,011 theorems)
@@ -42,8 +51,10 @@ historical default Linux and strict Comparator scopes.
 The sharper [aggregate incidence](aggregate-incidence.md) and
 [zero-range subclass](zero-range-subclass.md) are reviewed mathematical
 results with their formalization limits stated separately. Current strict
-checking infrastructure status is in the [metadata comparison](../research/strict-sampler-checkpoints/snapshot-comparison-v1/)
-and [accelerated planning receipt](../research/strict-sampler-checkpoints/accelerated-plan-v1/);
+checking infrastructure status is in the [cache-memo repair](../research/strict-sampler-checkpoints/hash-memo-normalization-v1/):
+Lake's decimal-format rewrite was reproduced, its memos prepared before
+fresh admission, and the exact dependency command passed twice under the
+unchanged full frozen checks. No proof module was compiled in that diagnostic;
 it establishes no full proof or Comparator acceptance. Earlier checkpoint
 statuses below retain their historical scopes.
 
