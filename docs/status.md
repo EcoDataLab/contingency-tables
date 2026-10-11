@@ -36,6 +36,16 @@ universal constant, and is not Lean-formalized. That family already has exact
 independent sampling; the comparison identifies losses in the generic repair
 proof rather than establishing a faster general sampler.
 
+A [parallel-defect comparison](thin-row-extension.md) now proves
+**`2840d⁶`** for specified `3×2b` margins, allowing the first-row total to
+grow up to half the cutoff. It uses the same rational trace clock, all
+positive defects and a nontrivial dense completion block. A self-contained
+classical inclusion-process argument supplies an explicit constant. The
+[single-token family](thin-parallel-comparison.md) retains its sharper
+coefficient. Separate AI mathematical reviews and exact finite fixtures
+passed. The margin choices are essential; these family results are not
+Lean-formalized and do not change the unrestricted general exponent.
+
 The [reciprocal padding-growth proof](reciprocal-padding-growth.md) and actual
 marked-padding induction compile at the same smaller scales. The padded/original
 count ratio is at most two. Its thin-table obstruction concerns this padding
@@ -56,24 +66,28 @@ certificates and a complete numerical machine-time exponent remain open. The [ar
 supplies an accurate law at outer `L=7`; its physical adapter, adaptive word
 allocation and revised outer encoded sampler still need assembly.
 
-[Hardware-accelerated Comparator startup](../research/strict-sampler-checkpoints/accelerated-plan-v1/)
-passed authentication, planning and a measured complete-cache metadata check
-in a bounded 8 GiB VM. One guard call took 26.6 seconds; extrapolating the
-unchanged scheduled calls gives about 20 hours before proof work. Both kernel
-watchdog warnings and collection details are retained. No full proof run,
-export, kernel replay or Comparator acceptance occurred. A
-[standalone complete-cache comparison](../research/strict-sampler-checkpoints/snapshot-comparison-v1/)
-subsequently measured 25.65 seconds for the original metadata sequence and
-0.198 seconds for a candidate traversal, plus 0.415 seconds of index setup.
-Both dictionaries matched all 131,021 admitted identities exactly. The
-candidate remains uninstalled; this is a stable-filesystem measurement,
-not a complete checker speedup or concurrent-race guarantee. The [earlier startup](../research/strict-sampler-checkpoints/authenticated-plan-v1/)
-remains a separate receipt. Historical pins, failed runs, the commuting
-protocol and archived 115 handoff are preserved.
+The [versioned Comparator guard](../research/strict-sampler-checkpoints/versioned-guard-v2/)
+passed an actual bounded VM experiment: the original whole metadata guard
+took 26.924 seconds and v2 took 1.129 seconds. All 131,021 admitted identities
+matched in a separate complete comparison. V2 preserves three leaf
+observations and the existing admission/content checks while sharing
+directory traversal. It assumes a quiet cache under trusted supervision;
+it does not guarantee detection of transient hostile changes between checks.
+The measured startup performed no proof compilation, export, kernel replay
+or Comparator acceptance. The [earlier single-stat prototype](../research/strict-sampler-checkpoints/snapshot-comparison-v1/)
+and [accelerated startup](../research/strict-sampler-checkpoints/accelerated-plan-v1/)
+retain their separate scopes. The [first bounded serial full-check attempt](../research/strict-sampler-checkpoints/first-proof-failure-v1/)
+on the historical 679-module sampler closure stopped at its dependency gate,
+before compiling a module. Lake returned zero, but the following guard
+detected metadata drift in `Mathlib/Algebra/Field/Defs.olean.server.hash`.
+That source freeze excludes the new research modules; no strict sampler
+acceptance is claimed. Historical pins, failed runs,
+the commuting protocol and archived 115 handoff are preserved.
 
-The [current validation record](../reports/aggregate-defect-trace-validation.json)
-binds the new proof packets, clean public-checkout checks and
-review boundaries. Historical receipts below retain their original scopes.
+The [aggregate validation record](../reports/aggregate-defect-trace-validation.json)
+binds the compiled aggregate theorem, printer certificate and their clean
+public-checkout checks. The family experiments and checker-startup receipts
+above have separate scopes. Historical receipts below retain their scopes.
 
 ## Earlier checkpoints and compiled baseline
 

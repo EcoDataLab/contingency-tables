@@ -61,3 +61,11 @@ The proof identifies the accepted shared-defect graph with a classical
 composition-transfer process and keeps the variance and energy normalizers
 matched. Extending that identification to general completion weights and
 the marked incidence law remains open.
+
+The [thin mixed-family comparison](thin-parallel-comparison.md) provides a
+second concrete improvement. It has a nontrivial dense completion block
+and an explicit d⁶ allowance for selected `3×2b` margins. Each auxiliary
+grid edge has `b²` parallel physical defect edges; averaging them cancels
+the quadratic repair load. Shared defects connect the remaining slice
+means. The proof still uses its particular margins and near-uniform dense
+counts, so it does not yet close the general center-transport problem.

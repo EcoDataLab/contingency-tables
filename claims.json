@@ -211,6 +211,26 @@
       "evidence": []
     },
     {
+      "id": "thin-family-gap",
+      "title": "Restricted rectangular family",
+      "english_claim": "The same physical defect trace has inverse-gap allowance 2840d^6 on the specified 3-by-2b margin family with first-row total h between 1 and floor(U/2).",
+      "quantity": "Inverse gap ≤ 2840d⁶",
+      "hypotheses": [
+        "Only the explicit 3-by-2b margins in the linked proof, b≥2; 1≤h≤floor(U/2); U=11d(2b+1), L=7; ordinary exact completion counts; rational proposal 1/[2(4p−3)]."
+      ],
+      "limitations": [
+        "Reviewed AI mathematics with one exact finite fixture. Not all thin tables; no Lean verification, complete sampler or runtime bound. The unrestricted compiled exponent remains 8."
+      ],
+      "evidence_class": "reviewed_mathematics",
+      "sources": [
+        "docs/thin-row-extension.md",
+        "docs/thin-row-extension-review.md",
+        "reports/thin-row-extension.json"
+      ],
+      "headlines": [],
+      "evidence": []
+    },
+    {
       "id": "physical-spectral-gap",
       "title": "Original chain at smaller scales",
       "english_claim": "The actual original selected ideal chain at U=11d(m+n−2), L=7 has inverse-gap allowance 3442d^9, with automatic feasibility and small-mask cases.",

@@ -1,0 +1,40 @@
+{
+  "attempted_stage": "0000_dependencies_current",
+  "comparator_executed": false,
+  "completed_modules": 0,
+  "completed_stages": 1,
+  "default_kernel_replay_executed": false,
+  "error": "Trusted cache metadata changed: formal/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Field/Defs.olean.server.hash",
+  "lake_elapsed_seconds": 3.0224804878234863,
+  "lake_returncode": 0,
+  "no_automatic_duplicate": true,
+  "owned_qemu_reaped": true,
+  "preserved_pins_equal": true,
+  "process_inventory_clear_at_collection": true,
+  "profile": {
+    "acceleration": "whpx,kernel-irqchip=off",
+    "guest_ram_mib": 10240,
+    "guest_vcpus": 1,
+    "minimum_available_host_gib": 12,
+    "network": "none",
+    "phase_caps_seconds": {
+      "authenticate": 5400,
+      "collect": 600,
+      "install": 600,
+      "preflight": 300,
+      "proof": 8100
+    },
+    "proof_dispatch_deadline_seconds": 7200,
+    "swap": false,
+    "wall_clock_cap_seconds": 12600
+  },
+  "proof_objects_completed": 0,
+  "qemu_exit_code": 1,
+  "sampled_heavy_compiler_peak": 0,
+  "sidecar_content_unchanged_established": false,
+  "source_scope": "Historical retained679-module sampler closure; excludes e40c471 new research modules",
+  "status": "failed_closed_after_first_successful_no_build_dependency_command",
+  "strict_sampler_acceptance": false,
+  "successful_compiler_samples": 8,
+  "vm_elapsed_seconds": 374.8323052000487
+}

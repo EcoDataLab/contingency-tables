@@ -67,6 +67,21 @@ normalization in both branches. No complete runtime claim is made.
 The earlier `431d⁸` allowance remains an available bound on thin
 shapes with the appropriate proposal normalization.
 
+## thin-family-gap
+
+The [explicit rectangular-family comparison](thin-row-extension.md) gives
+raw variance at most `751bU²` times accepted trace energy. At the canonical
+rational clock this is `1502(4p−3)bU²`, with conservative corollary `2840d⁶`
+at the stated cutoff. Its specified `3×2b` margins permit a first-row total
+between one and half the cutoff. This does not cover arbitrary thin margins.
+
+The proof combines parallel physical defect edges, exact conditional slice
+couplings and a self-contained proof of a classical inclusion-process gap.
+A separate AI mathematical review and an exact finite fixture support it;
+neither is Lean verification or a complete sampler runtime bound. The
+[single-token construction](thin-parallel-comparison.md) retains its sharper
+raw coefficient under its own displayed margins.
+
 ## physical-spectral-gap
 
 `Math115.RetainedChainSquareTotal.feasibleSquareChain_poincare_d9` proves
