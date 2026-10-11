@@ -1,25 +1,28 @@
 # Contributor handoff
 
-Latest result: [quadratic-width transport](retained-root-spectrum.md) and
-[reciprocal padding growth](reciprocal-padding-growth.md) give a reviewed
-`431d⁸` rational / `862d⁸` dyadic inverse-gap allowance for arbitrary aspect
-ratios, and order d⁷ for bounded-aspect rectangles. The [formal packet](../research/retained-root/)
-records the compiled complete abstract spectral theorem. The newer
-[physical assembly](physical-spectral-chain.md) proves full original-graph
-variance and the original normalized chain's automatic **`3442d⁹`** bound
-at the smaller scales, from dimensions at least two and equal natural-margin
-totals. The changed d⁸ defect trace remains a separate formal obligation.
-The [earlier validation receipt](../reports/retained-root-validation.json)
-retains its original d¹⁰ scope.
+Latest result: the [actual rational defect trace](physical-defect-trace.md)
+now has a compiled **`431d⁸`** inverse-gap theorem and exact shape coefficient
+`3872d⁶(m+n−2)²`. Its actual degree, accepted conductances, lazy reversible
+kernel and defect-mass normalization are proved. The constructor keeps
+nonempty positive defect support and `p≥2` explicit. The
+[original-chain `3442d⁹` wrapper](physical-spectral-chain.md) separately handles
+feasibility and the degenerate branches automatically.
+
+The new [aggregate incidence argument](aggregate-incidence.md) gives a reviewed
+**d^(13/2)** bound for every bounded-aspect rectangle, including nonsquare
+tables and nonempty completion blocks. The [zero-range comparison](zero-range-subclass.md)
+gives reviewed **O(d⁴)** in a restricted unique-completion family. These further
+physical bounds are not yet Lean-assembled; their exact assumptions and chain
+normalizations are recorded separately.
 
 Next integration tasks:
 
-1. Complete the changed defect trace: weighted harmonic elimination, the
-   actual defect-neighbor degree bound and normalized transition law. The
-   same-width physical context, conditional variance, edge ownership, repair
-   and original-chain normalization now compile. Preserve the distinction
-   between compiled d⁹ and reviewed d⁸; the [additional shape bounds](further-shape-bounds.md)
-   have their own narrower assumptions and formal interfaces.
+1. Formalize the completed-defect repair injection and summed donor-moment
+   bounds in the aggregate incidence argument. Expand full completion tables
+   before repair, retain the original small-cell partial constraints, and
+   account for the large crossing. Keep the reference and sharper unit
+   proposal normalizations distinct. The completed rational d⁸ packet is
+   the baseline for these next proofs.
 2. Instantiate the [frozen complete sampler](legacy-completion-backend.md)
    as the L=7 completion backend. Its existing arbitrary-margin law supplies
    availability; the new physical reindexing and adaptive fresh-word adapter
@@ -29,10 +32,12 @@ Next integration tasks:
    bound is compiled; the infinite resolvent bias is not.
 
 Keep the original compiled d¹⁷ route and its receipts distinct. It re-proves
-upstream's existential bounded-sampling statement; seven numerical draw
+upstream's existential bounded-sampling statement; six numerical draw
 certificates and strict Comparator acceptance remain open. The reserved-bit
 allowances improve from S^1288 to S^170 under a common size measure, with no
-proved complete runtime comparison.
+proved complete runtime comparison. The [actual branch test](../research/runtime-degree/checkpoints/actual-branch-degree-v1/)
+has a separate compiled degree-1008 certificate; the exact complete draw still
+needs the other six fields from the historical handoff.
 
 This stage leaves a checked mathematical and reference-algorithm core, reviewed measurements, and a complete bounded sampler integrated into the default target with fresh hosted Linux evidence. Start with the [claim ledger](claims-and-evidence.md), [formal verification record](formal-verification.md), and [research status](status.md). Their source-bound receipts determine the checked scope; a file's presence in the repository does not establish that it compiled or that its English claim was reviewed.
 
@@ -42,7 +47,8 @@ The original OpenAI source remains pinned at `fd4aeeb2ee4fc729c18d98444fed42fd05
 
 | Result or tool | Law or quantity | Evidence and boundary |
 | --- | --- | --- |
-| [Newest general defect refinement](retained-root-spectrum.md) | Inverse gap `431d⁸` rational / `862d⁸` dyadic; order d⁷ at bounded aspect | Reviewed defect-trace assembly; compiled full original-graph variance and actual count bridge. Ordinary margins and ideal completions; new trace normalization and encoded integration remain open. |
+| [Actual rational defect trace](physical-defect-trace.md) | Inverse gap `431d⁸`, sharper `3872d⁶(m+n−2)²` | Fresh compiled mathematical chain and headline closures; `m,n≥2`, `p≥2`, nonempty positive defects, ideal completions. Revised sampler/runtime integration open. |
+| [Aggregate incidence refinement](aggregate-incidence.md) | `15488 A^(3/2)d^(13/2)` for `(m+n−2)²≤Ad` | Reviewed mathematics, exact completed-table checks; reference/unit proposal distinction and remaining physical Lean bridge explicit. |
 | [Original chain at smaller scales](physical-spectral-chain.md) | Inverse gap at most `3442d⁹`; sharper shape form `30976d⁷(m+n−2)²` | Actual chain, capacities, variance, acceptance and normalization compile; automatic d⁹ wrapper from `m,n≥2` and equal totals, including zeros. The complete machine still uses its earlier route. |
 | Ideal auxiliary-chain bound | Inverse spectral gap at most `80,000d¹⁷`, with `d=10+(m+1)(n+1)` | Checked Lean statements cover ordinary equal-total natural margins and automatic branches. Exact completion is an oracle operation. This bounds the ideal chain, not full machine runtime. |
 | Finite-word output law | Pointwise feasible output and total variation at most `2^-h` under uniform reserved bits | Checked typed-law and schedule components include zero margins and empty dimensions. This component uses noncomputable constructions; literal program identification has its own later research-overlay evidence. |
@@ -69,7 +75,7 @@ The new defect-chain work has three complementary scopes:
 - [Arbitrary rectangular refinement](rectangular-defect.md): both sides below the cutoff, inverse gap `20000d^(31/2)` rational or `40000d^(31/2)` dyadic, with no aspect restriction. The [hard-limit bridge](../research/rectangular-defect/) is compiled; the new capacity-dependent physical context/exposure maps and final numerical bound still need Lean assembly.
 - [General weighted trace](shape-aware-defect.md) and [joint repair terminal](general-defect-output.md): inverse gap `10000d^16` rational or `20000d^16` dyadic, with stationary success at least `1/(8p)` at ideal scales for positive margins. Geometry, capped oracle errors and joint-fiber identities have separate AI review and exact finite checks. Transition and terminal components are implemented; full outer scheduling, physical Lean and encoded law identification are next. The linked shape result gives stronger subclass bounds after its smaller-scale guards pass.
 
-Preserve the terminal's positive-margin assumptions and its selected scale certificate. A checked zero-margin example would give invalid acceptance `5/2`; `L=3d` alone also fails to imply its success lower bound. Smaller scales require the explicit padding inequality in the shape-aware proof. The general compiled `d^17` sampler remains the baseline. [The broader research review](research-directions.md) separates these changed-chain integration tasks from the seven outstanding runtime-degree certificates.
+Preserve the terminal's positive-margin assumptions and its selected scale certificate. A checked zero-margin example would give invalid acceptance `5/2`; `L=3d` alone also fails to imply its success lower bound. Smaller scales require the explicit padding inequality in the shape-aware proof. The general compiled `d^17` sampler remains the baseline. [The broader research review](research-directions.md) separates these changed-chain integration tasks from the six outstanding runtime-degree certificates.
 
 ## Reproduce from the public checkout
 
@@ -119,7 +125,7 @@ The `d¹⁷` inverse-gap bound, the proved `S¹⁷⁰` reserved-bit/input allowa
 1. **Reproduce the reviewed baseline.** The fresh Linux build, full offline collector validation and independent AI saved-artifact readback passed. The [completed review](../formal/results/linux-focused-5b4af40/review.json) and [22-headline statement index](../formal/results/linux-focused-5b4af40/headline-index.json) close the previously interrupted source/report/closure checks; the earlier failed reader remains recorded. [PR #1](https://github.com/EcoDataLab/contingency-tables/pull/1) records the integration and publication history. Start any reproduction from the exact tagged source and preserve imports, filters, statement types, transitive axioms, and source/object hashes. Only a receipt for the selected compiled environment supports an exhaustive-inventory claim; named rosters and source scans cannot.
 2. **Review the mathematics against the interfaces.** Start with the ledger's ideal-chain and finite-word headline statements. Trace ordinary-margin assumptions through branch selection, state existence, completion accuracy at every physical state, and restarted output error, including empty and zero-margin cases. Promotion requires a mathematical review of those exact hypotheses and laws, alongside successful compiler receipts; a smaller exponent alone is insufficient.
 3. **Reproduce and review the integrated sampler.** The expanded target has passed a fresh hosted Linux build, 1,511 named audits and the complete selected environment audit. Use its exact receipt and all 22 headline closures to review the path from parsed margins through fresh bits, both branches, retries, fallback and printed output. Any proof/configuration change needs a new result for its own bytes; historical receipts retain their scopes.
-4. **Extract the numerical complete runtime degree.** Polynomial-time existence is proved for the compiled realization. Obtain explicit degrees and constants for its full work polynomial, retaining parsing, fresh random bits, all reserved trials, intermediate/output tree weights and physical-machine conversion. The [checked generic helpers](../research/runtime-degree/checkpoints/generic-helpers-v1/) and newer [affine public-degree refinement](../research/runtime-degree/checkpoints/affine-public-sampler-degree-v1/) reduce the remaining conditional envelope to `340·max(max(e,6),t)`. Use the accepted complete count certificate `e=1008` and supply the missing numerical draw degree `t` for the exact public-draw realizer, retaining the same codecs, assembled program and public size measure. Use the [seven-field draw handoff](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/README.md#remaining-numerical-draw-certificates) for the exact realizers and unresolved costs: printer, initial configuration, greedy fallback, branch test, reference packed trial, unit packed trial and retryWords. Expensive count computation does not inflate the affine-sized generated word. The [earlier multiplicative composition](../research/runtime-degree/checkpoints/public-sampler-degree-v1/) remains preserved; no practical speedup is claimed. `d¹⁷`, `S¹⁷⁰`, and symbolic compiler degrees cannot substitute for that derivation.
+4. **Extract the numerical complete runtime degree.** Polynomial-time existence is proved for the compiled realization. Obtain explicit degrees and constants for its full work polynomial, retaining parsing, fresh random bits, all reserved trials, intermediate/output tree weights and physical-machine conversion. The [checked generic helpers](../research/runtime-degree/checkpoints/generic-helpers-v1/) and newer [affine public-degree refinement](../research/runtime-degree/checkpoints/affine-public-sampler-degree-v1/) reduce the remaining conditional envelope to `340·max(max(e,6),t)`. Use the accepted complete count certificate `e=1008` and supply the missing numerical draw degree `t` for the exact public-draw realizer, retaining the same codecs, assembled program and public size measure. Use the [historical seven-field draw handoff](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/README.md#remaining-numerical-draw-certificates) for the exact realizers. The [actual branch certificate](../research/runtime-degree/checkpoints/actual-branch-degree-v1/) closes the branch test at degree 1008. Six costs remain: printer, initial configuration, greedy fallback, reference packed trial, unit packed trial and retryWords. Expensive count computation does not inflate the affine-sized generated word. The [earlier multiplicative composition](../research/runtime-degree/checkpoints/public-sampler-degree-v1/) remains preserved; no practical speedup is claimed. `d¹⁷`, `S¹⁷⁰`, and symbolic compiler degrees cannot substitute for that derivation.
 5. **Complete strict checking.** A single 8 GiB serial-build VM retry with a 5,400-second authentication cap and 3,600-second plan cap passed authentication at 18:48 UTC on 11 October, after successful installation and actual sandbox preflight. A runtime freeze was produced and planning began. Check its saved status before starting any duplicate. No full proof build or strict sampler acceptance exists yet. Start from the [captured authentication diagnostics](../research/strict-sampler-checkpoints/authentication-diagnostics-v1/). Installation and real sandbox probes passed; authentication reached its 1,800-second limit during a third full cache recheck. Two inventories of 131,021 files completed, with wrapper spans of about 336 and 252 seconds. The next performance investigation is the 734-second interval between the second inventory and final guard: the exact source snapshots cache metadata and constructs the guard there, but individual call costs remain unmeasured. Use those observations to plan a bounded authentication-and-plan attempt; sufficient limits remain unmeasured. Preserve every source-owner, cache-byte and filesystem-state check, indexed configuration provenance, cold submitted proofs and real sandbox probes. The runner binds a retained checking context; another Linux environment requires a separately reviewed origin and measured provenance. A portable outer supervisor and the full proof workload still need reproduction. Once runtime authentication and plan admission pass, compile, export and run built-in-kernel comparison for the exact [statement and solution](../research/strict-sampler-challenge/). Claim strict sampler acceptance only after its own complete successful log and scope-bound receipt exist. Earlier failure packets remain preserved.
 6. **Validate application models and performance.** Before acquiring new data, freeze a new public state/year selection and score protocol; test laws that represent spatial association against held-out released joints. Report interval widths with coverage, dependence, source processing, and failure cases. Separately benchmark a completed sampler against methods for identical laws and constraints, retaining setup, memory, effective-sample/accuracy costs, and work-budget failures. Broader model-validity and performance claims require these new observations; the current worker-library timing and single-state backtest do not establish them.
 

@@ -17,7 +17,7 @@ and `C₀=12672000000·37^62`:
 | Pinned upstream | `W ≤ 344^644 S^1288` | `1288·natDegree(P_U)`, still symbolic |
 | This repo's compiled d¹⁷ route | `W ≤ C₀·5^85 S^170` | `170·natDegree(P_L)`, still symbolic |
 | Dense-compatible d²⁵ chain | No separate assembled bit-bank theorem | Unknown |
-| New reviewed d⁸ defect chain (d⁷ at bounded aspect) | Frozen older sampler supplies completion availability; new adapter/outer-program composition still open | Unknown |
+| New compiled rational d⁸ defect chain; reviewed d^6.5 at bounded aspect | Frozen older sampler supplies completion availability; new adapter/outer-program composition still open | Unknown |
 
 The two bank bounds use the same `S` and include every reserved transition,
 completion retry, terminal draw and unused bit. They are upper allowances,
@@ -26,8 +26,12 @@ polynomials `P_U` and `P_L` belong to different complete programs. The detailed
 [schedules and source map](#three-routes-with-the-cost-models-kept-separate)
 below make this comparison reproducible without inferring it from gap powers.
 
-Seven actual draw certificates remain open. The checked count certificate is
-`e=1008`; the conditional local runtime degree is `340·max(1008,t)` until the
+Six actual draw certificates remain open. The [actual branch-selection
+certificate](../research/runtime-degree/checkpoints/actual-branch-degree-v1/)
+now bounds its exact program's charged cost plus Boolean output weight by a
+polynomial of degree at most 1008, for every pair of natural margin lists.
+The checked complete count certificate is `e=1008`; the conditional local
+runtime degree is `340·max(1008,t)` until the
 complete draw certificate `t` is supplied. Even a common certificate `k=1008`
 for every remaining field would give an enormous degree through the current
 coarse composition helpers; it would first establish a numerical bound,
@@ -97,7 +101,7 @@ The improvement separates computation cost from output size. The fresh Boolean w
 
 The two affine source modules passed ordinary native compilation, and their ordered six-name and four-name axiom checks passed. Independent AI saved-artifact review passed. This helper evidence is separate from the expanded default Linux receipt and strict Comparator acceptance; the earlier packets and failed attempts remain unchanged.
 
-The [seven remaining numerical draw certificates](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/README.md#remaining-numerical-draw-certificates) identify the exact realizers and their required costs. The new count certificate covers computing the reserved-bit number and encoding it in binary for every literal input. It does not bound generating the full numeric bank by degree 1008. Its nine-module, 172-name native audit packet has its own evidence and reproduction instructions; it is outside the unchanged default Linux receipt.
+The [historical seven-field handoff](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/README.md#remaining-numerical-draw-certificates) identifies the exact realizers and their required costs. The later [branch-selection certificate](../research/runtime-degree/checkpoints/actual-branch-degree-v1/) closes its `branch` field with degree 1008 and a fresh 20-name native audit. Six remain: printer, initial configuration, greedy fallback, reference packed trial, unit packed trial and retryWords. The count certificate covers computing the reserved-bit number and encoding it in binary for every literal input. It does not bound generating the full numeric bank by degree 1008. These packets have separate evidence and reproduction instructions outside the unchanged default Linux receipt.
 
 ## A common public size measure
 
@@ -249,7 +253,7 @@ The remaining numerical degree accounting must include:
 2. The complete canonical dense draw, including fine-margin construction, normalization, exact integer/rational arithmetic, bin walk and offsets, feasibility tests, and its internal fallback; the signed lattice decoder; and every bounded rejection trial.
 3. The outer proposal and translated-completion test, capped profile fold and empty-block fold, separate terminal draw, output reconstruction/unpadding, chunking and copying, outer retries, and fallback.
 4. Numeric-degree bounds for the reusable composition, pairing, map, fold, capped intermediate-weight, and first-success combinators used to assemble those programs, plus public printing and fresh-word generation.
-5. A numerical certificate for the exact complete public-draw realizer `t`. The exact complete count premise now has certificate `e=1008`; the compiler/fresh-bit helpers and affine public-size conversion are already checked. The remaining draw certificate must cover the same assembled source, actual codec and output weight, including all seven unresolved seams.
+5. A numerical certificate for the exact complete public-draw realizer `t`. The exact complete count premise now has certificate `e=1008`; the compiler/fresh-bit helpers, affine public-size conversion and actual branch test are already checked. The remaining draw certificate must cover the same assembled source, actual codec and output weight, including all six unresolved seams.
 
 The complete program already has ordinary-compiled polynomial witnesses. The count, parser and selected schedule/helper degrees now have numeric certificates; the complete supplied-word draw still needs a numerical degree in the same cost model. In particular, the pinned [FirstSuccessProgram](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/OAI/Combinatorics/ContingencyTables/Machines/FirstSuccessProgram.lean) constructs **all** trial results with `List.map` before selecting `firstSome`. Its charged realizer therefore cannot be costed as stopping all later computations at the first successful trial. Full supplied words and intermediate list/tree weights also matter. Schoolbook arithmetic in a separate random-access implementation would require its own cost derivation and would not certify this realizer's physical-machine degree.
 

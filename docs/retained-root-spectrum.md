@@ -6,8 +6,10 @@ Combined with the same physical transport and constant padding, this gives
 an arbitrary-aspect **d⁸ inverse-gap allowance**, and **d⁷ on bounded-aspect
 rectangles**. These are inverse-gap powers, not machine-time exponents.
 The complete variational theorem and full original-graph variance now compile.
-The new weighted defect trace still needs Lean assembly. No human review or
-novelty claim is made.
+The [actual rational weighted defect trace](physical-defect-trace.md) now
+compiles as well. The later [aggregate incidence refinement](aggregate-incidence.md)
+gives a reviewed bounded-aspect d^(13/2) bound. No human review or novelty
+claim is made.
 
 ## Theorem
 

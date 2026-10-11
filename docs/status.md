@@ -1,66 +1,63 @@
 # Research status
 
-The newest [retained spectral argument](retained-root-spectrum.md) gives a
-reviewed general rational inverse-gap allowance **`431d⁸`**, or **`862d⁸`**
-for dyadic proposals. Its sharper expression `3872d⁶(m+n−2)²` is **order d⁷
-for bounded-aspect rectangles**, including non-square tables. Here
-`d=10+(m+1)(n+1)`, `U=11d(m+n−2),L=7`; the nonempty positive defect branch
-uses ideal completions. These are inverse-gap powers, not runtime powers.
+The [actual rational defect trace](physical-defect-trace.md) now has a compiled
+**`431d⁸`** inverse-gap theorem at `U=11d(m+n−2),L=7`, with the sharper
+coefficient `3872d⁶(m+n−2)²`. Its actual neighbor degree, accepted conductances,
+lazy reversible kernel and defect-mass normalization are proved. The theorem
+keeps `m,n≥2`, at least two small cells and nonempty positive defect support
+explicit. It uses ideal completion counts. The [original chain](physical-spectral-chain.md)
+has the separate automatic `3442d⁹` theorem, including zero margins and
+state-existence/empty-mask branches. Neither theorem updates the complete sampler.
 
-The new proof uses a finite Rayleigh minimizer to retain the correction
-cancellations in the optimal path constant. It improves the context bound
-from `N(N+1)+2KN` to `N(N+1)+2K`. The [formal packet](../research/retained-root/)
-includes the complete abstract spectral theorem and its zero-stencil
-limit, exact positive-support restriction, actual boxed moment/repair cap,
-physical support bound and scalar d⁸ consequences. The newer
-[physical assembly](physical-spectral-chain.md) now compiles the actual
-context, exposure and full repair variance. Its original normalized ideal
-chain has an automatic **`3442d⁹`** theorem at the same smaller scales, from
-`m,n≥2` and equal natural-margin totals, including zeros. State existence
-and the empty small-mask branch are derived. The stronger d⁸ defect trace
-still needs its actual degree and harmonic-normalization proofs. The
-[exact matrix report](../reports/retained-spectrum.json) records 450 rational
-checks on 150 finite stencils; the proof is not inferred from those cases.
+The newer [completed-table incidence argument](aggregate-incidence.md) gives
+**`15488 A^(3/2)d^(13/2)`** rational, or twice that for dyadic proposals,
+when `(m+n−2)²≤Ad`. This covers nonsquare bounded-aspect rectangles and general
+completion blocks. It groups donor moments after expanding full completions,
+so it retains large-crossing multiplicities. The reference and unit branches
+use their stated proposal normalizations. This is independently reviewed AI
+mathematics; its physical Lean assembly is in progress. Use the minimum of
+applicable bounds, including `431d⁸` for thin shapes.
 
-The [reciprocal padding-growth proof](reciprocal-padding-growth.md) improves
-the cutoff using the full table's `m+n−2` parameter. Its actual one-increment
-count bridge and full marked-padding induction now compile, including the
-`L=7,U=11d(m+n−2)` count certificate. It also proves an exact
-thin-table obstruction: constant positive padding and padded/original count
-ratio at most two require a quadratic cutoff in that family. This constrains
-the current padding strategy, not the actual chain gap or every sampler.
-The reduced-padding Python scale helper uses the stronger reviewed coefficient
-and checks classification at its computed cutoff.
+A [zero-range comparison](zero-range-subclass.md) gives a further **`O(d⁴)`**
+bound for the restricted two-column, one-small-column unique-completion family
+and its full transpose. It uses Morris's published theorem with an unextracted
+universal constant, and is not Lean-formalized. That family already has exact
+independent sampling; the comparison identifies losses in the generic repair
+proof rather than establishing a faster general sampler.
 
-The [frozen complete d¹⁷ sampler](legacy-completion-backend.md) supplies an
-accurate arbitrary-margin completion law at outer L=7, using its own internal
-padding. Residual totals and cap redundancy have new compiled proofs. The
-physical adapter, adaptive fresh-word allocation, complete outer schedule and
-encoded integration still need assembly; composing this backend does not
-establish improved complete runtime.
+The [reciprocal padding-growth proof](reciprocal-padding-growth.md) and actual
+marked-padding induction compile at the same smaller scales. The padded/original
+count ratio is at most two. Its thin-table obstruction concerns this padding
+strategy, not every sampler. The [physical trace packet](../research/physical-defect-trace/)
+records its own source-bound build and headline dependency closures; the
+[preceding packet](../research/physical-spectral/) retains its original scope.
+Trusted compiler/baseline imports and separate AI reviews are explicit. The
+historical default-target and strict-replay scopes are unchanged.
 
-The compiled d¹⁷ sampler re-proves the same existential theorem as upstream.
+The compiled d¹⁷ sampler **re-proves the same existential theorem as upstream**.
 The [composed comparison](composed-complexity.md#comparable-result-in-the-same-public-size-measure)
-is `S^1288` versus `S^170` for full reserved-bit upper allowances, with stated
-constants. Seven numerical draw certificates and strict Comparator acceptance
-remain open. The [bounded 8 GiB VM startup retry](../research/strict-sampler-checkpoints/authenticated-plan-v1/)
-passed authentication **and planning** with unchanged strict checks. Its
-complete phase evidence and remaining reproduction limits are retained.
-Full proof compilation, export and Comparator acceptance remain unexecuted.
+is `S^1288` versus `S^170` for complete reserved-bit upper allowances, with
+stated constants. The [actual branch-selection program](../research/runtime-degree/checkpoints/actual-branch-degree-v1/)
+now has a compiled degree-1008 cost certificate and a fresh 20-name audit.
+Six numerical draw certificates and a complete numerical machine-time exponent
+remain open. The [arbitrary-margin completion backend](legacy-completion-backend.md)
+supplies an accurate law at outer `L=7`; its physical adapter, adaptive word
+allocation and revised outer encoded sampler still need assembly.
 
-The [current validation receipt](../reports/physical-spectral-validation.json)
-records the fresh additive physical assembly and selected headline dependency
-closures, including the automatic d⁹ theorem and actual count bridge. Only
-standard Lean axioms occur. The [shape refinements](further-shape-bounds.md)
-separately describe stronger reviewed subclasses and their remaining formal
-interfaces. The [preceding receipt](../reports/retained-spectrum-validation.json)
-retains its exact d⁸ abstract/component scope and full Python verification.
-Trusted baseline imports and the remaining defect-trace and sampler integration
-are explicit; no default-target or strict-replay scope is enlarged.
+[Hardware-accelerated Comparator startup](../research/strict-sampler-checkpoints/accelerated-plan-v1/)
+passed authentication, planning and a measured complete-cache metadata check
+in a bounded 8 GiB VM. One guard call took 26.6 seconds; extrapolating the
+unchanged scheduled calls gives about 20 hours before proof work. Both kernel
+watchdog warnings and collection details are retained. No full proof run,
+export, kernel replay or Comparator acceptance occurred. A candidate faster
+metadata traversal has passed source review for a standalone benchmark, without
+changing the checker; race and error equivalence remain unproved. The [earlier startup](../research/strict-sampler-checkpoints/authenticated-plan-v1/)
+remains a separate receipt. Historical pins, failed runs, the commuting
+protocol and archived 115 handoff are preserved.
 
-The [previous checkpoint receipt](../reports/retained-root-validation.json)
-retains its original d¹⁰ component scope. Historical source pins, receipts,
-the commuting protocol and the archived 115 handoff are unchanged.
+The [current validation record](../reports/physical-defect-trace-validation.json)
+binds the new proof packets, exact experiment, clean public-checkout checks and
+review boundaries. Historical receipts below retain their original scopes.
 
 ## Earlier checkpoints and compiled baseline
 
@@ -88,7 +85,7 @@ The latest [strict startup diagnostic](../research/strict-sampler-checkpoints/au
 
 The independent AI saved-artifact review of the fresh Linux result has [completed](../formal/results/linux-focused-5b4af40/review.json), confirming the immutable source graph, ordered named records, full selected environment and all 22 headline closures. A [compact statement index](../formal/results/linux-focused-5b4af40/headline-index.json) preserves their exact types, axioms and closure hashes. The earlier interrupted reader remains recorded; original evidence bytes are unchanged. This adds artifact review, with no new compiler execution or strict acceptance.
 
-The newer [affine public-degree refinement](../research/runtime-degree/checkpoints/affine-public-sampler-degree-v1/) gives conditional degree `340·max(max(e,6),t)` for the same fixed public machine, assuming certificates for its actual reserved-bit-count and supplied-word draw realizers. One positive coefficient is uniform over finite dimensions, equal-total natural margins, including zeros and empty dimensions, and numeric `h≥1`; every tape yields a feasible table and the uniform-bit output law has total variation at most `2^-h` at that time. The [actual count/draw helper checkpoint](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/) verifies the exact complete count certificate `e=1008`; numerical `t` remains unresolved, leaving conditional degree `340·max(1008,t)` and seven missing draw certificates. The numerical complete machine-time exponent remains unknown. The two affine source modules passed ordinary native compilation and all ten named axiom checks passed in ordered six-name and four-name scopes. Independent AI saved-artifact review passed. They do not enlarge the default Linux audit or establish strict Comparator acceptance. The [earlier multiplicative-degree checkpoint](../research/runtime-degree/checkpoints/public-sampler-degree-v1/) remains preserved.
+The newer [affine public-degree refinement](../research/runtime-degree/checkpoints/affine-public-sampler-degree-v1/) gives conditional degree `340·max(max(e,6),t)` for the same fixed public machine, assuming certificates for its actual reserved-bit-count and supplied-word draw realizers. One positive coefficient is uniform over finite dimensions, equal-total natural margins, including zeros and empty dimensions, and numeric `h≥1`; every tape yields a feasible table and the uniform-bit output law has total variation at most `2^-h` at that time. The [actual count/draw helper checkpoint](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/) verifies the exact complete count certificate `e=1008`; numerical `t` remains unresolved, leaving conditional degree `340·max(1008,t)` and seven missing draw certificates at that checkpoint. The later [actual branch certificate](../research/runtime-degree/checkpoints/actual-branch-degree-v1/) closes one; six remain. The numerical complete machine-time exponent remains unknown. The two affine source modules passed ordinary native compilation and all ten named axiom checks passed in ordered six-name and four-name scopes. Independent AI saved-artifact review passed. They do not enlarge the default Linux audit or establish strict Comparator acceptance. The [earlier multiplicative-degree checkpoint](../research/runtime-degree/checkpoints/public-sampler-degree-v1/) remains preserved.
 
 The completed [compiler-repair checkpoint](outer-sampler-compiler-checkpoint.md) records the resumed outer-sampler work, its exact source overlays, ordinary compiler results, environment audits, and retained failed attempts. All thirteen research modules now pass ordinary compilation, including the fixed public machine and its bounded-sampling theorem. The complete compiled-environment audit passed. The original source archive and earlier receipts remain unchanged; the checkpoint's verification has its own scope.
 
@@ -285,7 +282,7 @@ The historical expanded [focused Linux run](https://github.com/EcoDataLab/contin
 Next-round research (see the [contributor handoff](handoff.md)):
 
 1. Independently reproduce and review the integrated bounded sampler using the fresh `5b4af40` Linux receipt and its 22 headline closures. Default-target integration and its hosted Linux verification are complete. Earlier failures remain archived, with later successful repairs separately recorded.
-2. Close the numerical degree `t` for the actual complete supplied-word draw, using the accepted complete count certificate `e=1008` from the [actual helper checkpoint](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/). The seven remaining seams are printer, initial configuration, greedy fallback, branch test, reference packed trial, unit packed trial and retryWords. Preserve all reserved trials, intermediate/output weights and physical-compiler costs. The complete numerical runtime exponent and practical performance remain open.
+2. Close the numerical degree `t` for the actual complete supplied-word draw, using the accepted complete count certificate `e=1008` from the [actual helper checkpoint](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/). The [branch test](../research/runtime-degree/checkpoints/actual-branch-degree-v1/) now has degree 1008. The six remaining seams are printer, initial configuration, greedy fallback, reference packed trial, unit packed trial and retryWords. Preserve all reserved trials, intermediate/output weights and physical-compiler costs. The complete numerical runtime exponent and practical performance remain open.
 3. Reproduce the passing strict tiny fixture, then run the actual research sampler challenge on a compatible environment. Preserve the sandbox, fresh export requirements and exact theorem/machine scope; fixture acceptance does not certify the sampler.
 4. Close the gap between the free-cutoff `U⁴` upper allowance and the explicit `Ω(U²)` chain obstruction, or improve the transition rule with a justified target law and cost.
 5. Expand same-law tests to application-scale methods, including all setup and tuning costs. Empirical competitiveness of the complete #115 sampler remains unknown.

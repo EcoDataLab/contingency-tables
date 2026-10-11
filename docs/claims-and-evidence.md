@@ -1,6 +1,6 @@
 # Claims and evidence
 
-[The claims ledger](../claims.json) binds each default-target headline to an English
+[The claims ledger](../claims.json) binds each headline to an English
 claim, the quantity bounded, stated hypotheses, present limits, source files,
 Lean declaration names, and a verification receipt with an explicit scope.
 The English descriptions are interpretations that require mathematical review;
@@ -13,23 +13,40 @@ receipts retain their narrower scope.
 
 ## retained-defect-gap
 
-The [retained spectral argument](retained-root-spectrum.md),
-[reciprocal padding growth](reciprocal-padding-growth.md) and
-[constant-padding proof](constant-padding.md) give the reviewed rational
-inverse-gap allowance `431d⁸` (`862d⁸` dyadic) at `U=11d(m+n−2),L=7`.
-The sharper expression is `3872d⁶(m+n−2)²`, giving order `d⁷` on any
-bounded-aspect class, including non-square rectangles.
+`Math115.PhysicalDefectTrace.actualRationalTrace_poincare_d8` proves
+`Var≤431d⁸ E` for the actual rational accepted defect trace at
+`U=11d(m+n−2),L=7`. Its stronger statements retain `32p⁴U²` and
+`3872d⁶(m+n−2)²`. The actual neighbor geometry, accepted conductances,
+harmonic extension, lazy reversible kernel and normalization are all in the
+proved dependency closure.
 
-Compiled components include actual local transport, counting and acceptance,
-boxed correction caps, exact positive-support restriction, physical child
-support, the complete abstract spectral path theorem and scalar consequences. The
-new [physical packet](../research/physical-spectral/) also proves actual
-exposure/edge ownership and full repair variance. The changed defect trace's
-neighbor geometry and normalized chain theorem remain open. The
-[frozen complete sampler](legacy-completion-backend.md) supplies mathematical
-completion availability at L=7; the new adapter, finite-word composition and
-encoded outer integration remain open. The full machine's existential theorem
-is unchanged, and no improved complete runtime exponent is claimed.
+The [statement map and derivation](physical-defect-trace.md) keep `m,n≥2`,
+`p≥2` and nonempty positive defect support explicit. The
+[additive receipt](../research/physical-defect-trace/results/verification.json)
+records fresh research-module compilation and nine headline closures.
+The compiler and baseline imports are trusted; this does not change the
+historical default-target receipt or establish Comparator acceptance.
+
+Only the rational chain is constructed here. Dyadic factor-two rounding is
+reviewed mathematics. This mathematical trace is separate from the complete
+compiled d¹⁷ sampler; a transition runtime oracle and revised encoded sampler
+remain open.
+
+## aggregate-incidence-gap
+
+The [completed-table incidence proof](aggregate-incidence.md) obtains
+`3872d⁵s²(3s+2)` in the reference branch, with `s=m+n−2`. Combining it with
+the separately normalized unit branch gives `15488 A^(3/2)d^(13/2)` when
+`s²≤Ad`, and twice that for dyadic proposals. Squares may use `A=4`, while
+any fixed aspect class also has a fixed `A`.
+
+This is reviewed AI mathematics supported by exact finite checks. Its full
+completion injection includes the dense crossing and does not assume equal
+weights for source and repaired profiles. The residual cap is derived from
+the actual canonical capacity. Its new moment aggregation and the sharper
+unit proposal still need physical Lean assembly; no complete runtime claim
+is made. The earlier `431d⁸` allowance remains an available bound on thin
+shapes with the appropriate proposal normalization.
 
 ## physical-spectral-gap
 

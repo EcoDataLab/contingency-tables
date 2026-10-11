@@ -4,8 +4,8 @@ The existing ideal auxiliary-chain construction now has a compiled inverse-gap
 allowance **`3442d⁹`**, at `U=11d(m+n−2), L=7`, where
 `d=10+(m+1)(n+1)`. Its more informative shape bound is
 **`30976d⁷(m+n−2)²`**. This uses the original dyadic proposal and actual
-completion-count weights. It is separate from the stronger reviewed
-[`431d⁸` defect-trace allowance](retained-root-spectrum.md), which changes the
+completion-count weights. It is separate from the stronger compiled
+[`431d⁸` rational defect trace](physical-defect-trace.md), which changes the
 chain by eliminating balanced vertices.
 
 This checkpoint proves a Poincare inequality for the literal
@@ -64,15 +64,15 @@ empty marked sets and singleton or empty fibers are handled in the count
 theorems. The [counting derivation](reciprocal-padding-growth.md) describes
 the shape and thin-table consequences.
 
-## Remaining distinction between d⁹ and d⁸
+## Distinction between the two compiled chains
 
-The compiled d⁹ theorem keeps the original proposal allowance of order `d²`.
-The reviewed d⁸ result uses the accepted harmonic trace on defect states,
-whose proposal allowance is only order `p`. The full variance theorem above
-is common to both arguments. Completing the d⁸ Lean theorem requires the
-actual weighted trace construction, its accepted conductances, the physical
-defect-neighbor degree bound and normalization. A scalar inequality for a
-proposed degree bound does not prove that the actual neighbor set meets it.
+The d⁹ theorem keeps the original proposal allowance of order `d²`.
+The [actual rational d⁸ trace](physical-defect-trace.md) eliminates balanced
+vertices and uses the proved neighbor allowance `4p−3`. Its weighted trace,
+accepted conductances and defect-mass normalization now compile. The full
+variance theorem above is common to both arguments. The trace constructor
+keeps nonempty positive defect support and `p≥2` explicit; the d⁹ wrapper
+instead supplies the feasibility and degenerate branches automatically.
 
 The existing complete compiled machine still uses the earlier d¹⁷ route and
 re-proves upstream's existential bounded-sampling theorem. The new chain

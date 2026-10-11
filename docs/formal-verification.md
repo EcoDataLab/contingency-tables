@@ -1,5 +1,29 @@
 # Formal verification of the #115 refinements
 
+The newest [actual rational defect-trace packet](../research/physical-defect-trace/)
+freshly compiles its 41 research modules, the pinned upstream helper and the
+environment auditor. It enumerates 1,147 selected declarations (1,011 theorems)
+and nine complete headline dependency closures, including the actual
+`431d⁸` statement. Only standard axioms occur. This additive ordinary build
+trusts the compiler and baseline imports; it does not expand the historical
+default-target or Comparator receipts. The [statement map](physical-defect-trace.md)
+records the precise chain, hypotheses and implementation boundary.
+
+The separate [actual branch-selection checkpoint](../research/runtime-degree/checkpoints/actual-branch-degree-v1/)
+proves a degree-1008 bound for the unchanged program's charged cost plus encoded
+output on every pair of natural margin lists. Its two source modules and fresh
+20-name transitive axiom audit passed ordinary native compilation with trusted
+compiler/cache inputs. This closes one of the seven former draw obligations;
+six and the numerical complete sampler degree remain open. It is outside the
+default Linux and strict Comparator scopes.
+
+The newer [aggregate incidence](aggregate-incidence.md) and
+[zero-range subclass](zero-range-subclass.md) are reviewed mathematical
+results with their formalization limits stated separately. Current strict
+checking infrastructure status is in the [accelerated planning receipt](../research/strict-sampler-checkpoints/accelerated-plan-v1/);
+it establishes no full proof or Comparator acceptance. Earlier checkpoint
+statuses below retain their historical scopes.
+
 The formal work is additive to OpenAI's pinned #115 source. It now proves
 sharper Poincare bounds for the unchanged original ideal chains and actual
 parameterized ideal chains at both dense-compatible and smaller ideal-only scales,

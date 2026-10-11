@@ -124,8 +124,29 @@ SCOPES["physical-spectral"] = (
     [],
 )
 
+SCOPES["physical-defect-trace"] = (
+    [*SCOPES["physical-spectral"][0], "Math115.FiniteStarTrace",
+     "Research.WeightedHarmonicTrace", "Research.PhysicalTraceMargins",
+     "Research.PhysicalTraceGeometry", "Research.PhysicalAcceptedConductance",
+     "Research.PhysicalTraceIrreflexive", "Research.DefectCoordinateGeometry",
+     "Research.PhysicalDefectDegree", "Research.PhysicalDefectTrace",
+     "Research.PhysicalDefectTraceFinal"],
+    ["Math115.PhysicalDefectDegree.physical_nonbalanced_degree_le",
+     "Research.WeightedHarmonicTrace.harmonic_energy_eq_trace",
+     "Research.WeightedHarmonicTrace.normalized_poincare_transfer",
+     "Math115.PhysicalDefectTrace.rationalPhysicalTrace_move",
+     "Math115.PhysicalDefectTrace.actualRationalTrace_pi",
+     "Math115.PhysicalDefectTrace.actualRationalTrace_lazy",
+     "Math115.PhysicalDefectTrace.actualRationalTrace_poincare_square",
+     "Math115.PhysicalDefectTrace.actualRationalTrace_poincare_shape_square",
+     "Math115.PhysicalDefectTrace.actualRationalTrace_poincare_d8"],
+    ["OAI.Combinatorics.ContingencyTables.Sampling.SmallPatternArithmetic"],
+)
+
 # Reuse source files shared with earlier packets instead of copying them.
 SOURCE_ROOTS = {
+    **{module: ROOT / "research/physical-spectral/formal"
+       for module in SCOPES["physical-spectral"][0]},
     **{module: ROOT / "research/retained-root/formal"
        for module in SCOPES["retained-root"][0]},
     **{module: ROOT / "research/constant-padding/formal"
@@ -134,6 +155,7 @@ SOURCE_ROOTS = {
     "Math115.ReferenceEdgeAcceptance": ROOT / "formal",
     "Research.AcceptancePadding": ROOT / "research/shape-refinement/formal",
     "Math115.ShapeDegreeBound": ROOT / "research/shape-refinement/formal",
+    "Math115.FiniteStarTrace": ROOT / "research/repair-accept/formal",
     **{f"Marked.{name}": ROOT / "research/spaced-attempts/formal"
        for name in ("Survivor", "L2", "Killed")},
 }

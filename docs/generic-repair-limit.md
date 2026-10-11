@@ -53,3 +53,11 @@ exhibit actual one-small-column tables with repair load exactly `p(p−1)`,
 so that pointwise load cannot simply be replaced by order `p`. That example
 does not lower-bound the actual table chain's gap: its additional exchange
 geometry could still support a better argument.
+
+The [zero-range comparison](zero-range-subclass.md) now supplies such an
+argument for a restricted unique-completion family. Its actual repair load
+can remain quadratic while the defect trace has a reviewed `O(d⁴)` bound.
+The proof identifies the accepted shared-defect graph with a classical
+composition-transfer process and keeps the variance and energy normalizers
+matched. Extending that identification to general completion weights and
+the marked incidence law remains open.

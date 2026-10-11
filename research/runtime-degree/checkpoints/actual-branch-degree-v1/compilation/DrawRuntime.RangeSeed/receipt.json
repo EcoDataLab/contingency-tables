@@ -1,0 +1,13 @@
+{
+  "module": "DrawRuntime.RangeSeed",
+  "exit_code": 0,
+  "stop_reason": null,
+  "elapsed_seconds": 85.71793440007605,
+  "source_sha256": "aaf1c1ce1067a4e21767a1790f7672773cd3e2cb3d98164b0a8a39916b6edf09",
+  "olean_sha256": "bba0857fb92869317236083b0d774760be957d05aedb285908ffa49888fce531",
+  "stdout_sha256": "eb1158d270748c408e92fb2637aceb71dfbce9ec8409c01a4459a1e3dac4fe52",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "owned_tree_empty": true,
+  "reuse": true,
+  "final_process_absent": true
+}

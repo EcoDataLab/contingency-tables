@@ -5,8 +5,8 @@ original physical table graph and its existing normalized ideal-chain
 construction. At `U=11d(m+n−2), L=7`, the selected-chain theorem gives
 `30976d⁷(m+n−2)²`, hence **`3442d⁹`** for arbitrary aspect ratios with
 `m,n≥2`. The [derivation and boundaries](../../docs/physical-spectral-chain.md)
-separate it from the reviewed d⁸ defect trace and the unchanged complete
-compiled sampler.
+separate it from the newer [compiled rational d⁸ defect trace](../physical-defect-trace/)
+and the unchanged complete compiled sampler.
 
 | English claim | Lean statement | Hypotheses |
 |---|---|---|

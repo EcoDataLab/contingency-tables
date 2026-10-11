@@ -1,10 +1,11 @@
 # Further bounds from the actual table geometry
 
-The general reviewed allowance remains `431d⁸` rational (`862d⁸` dyadic).
-More structure gives stronger bounds in the cases below. These are reviewed
-mathematical consequences of the retained spectral argument, with separate AI
-review and exact finite checks. Their complete physical Lean statements and
-new sampler/runtime integration remain open.
+The general rational defect trace now has a [compiled `431d⁸` theorem](physical-defect-trace.md).
+The [aggregate incidence proof](aggregate-incidence.md) improves the reviewed
+bounded-aspect allowance to `15488 A^(3/2)d^(13/2)` when `(m+n−2)²≤Ad`.
+More structure gives the further bounds below. These refinements have separate
+AI mathematical review; their physical Lean assembly and sampler/runtime
+integration remain open.
 
 Here `d=10+(m+1)(n+1)`, `s=m+n−2`, `p` is the number of small cells, and
 the cutoff is chosen before classification. The displayed dimension powers
@@ -13,8 +14,10 @@ nonempty defect space, rather than the original normalized chain's d⁹ theorem.
 
 | Actual geometry | Rational inverse-gap allowance | Additional conditions |
 |---|---|---|
+| General reference branch | `3872d⁵s²(3s+2)`; combined with the unit branch, `15488 A^(3/2)d^(13/2)` | `m,n≥2`, `s²≤Ad`, actual ordinary residual-table constraints and ideal completions |
 | Exactly one small column and no small rows, or the transposed graph | `96p³U²`; sharper repair-load formula below | Small-line margin `1≤H<U`, ordinary equal-total margins, ideal completions |
 | Entire row side or column side below `U` | `4[2(m+n)−3]p³U²`, hence `1210 A^(3/2)d^(13/2)` when `s²≤Ad` | Empty completion block, `m,n≥2` |
+| One small column, exactly one remaining column; or full transpose | `4p+16C H(H+p)`, hence `O(d⁴)` at the displayed cutoff | All rows ≥`U`, `1≤H<U`; universal constant `C` from Morris’s zero-range theorem, not extracted numerically |
 | Both sides below `U`, at any aspect ratio | `15488d⁷` | Positive margins on both sides; use the variable-capacity context described below |
 
 Each dyadic allowance is at most twice its rational counterpart. The minimum
@@ -74,6 +77,12 @@ the defect labels. Its completions, neighbors and accepted conductances
 correspond. The original row-major correction on that row instead contains
 `(A_t+1)(U−A_t)` terms, including contributions from zero entries. It does
 not satisfy the preceding left-child identity; the transpose is essential.
+
+When exactly one large column remains, every completion is unique. The
+[zero-range correspondence](zero-range-subclass.md) then gives the much
+stronger reviewed allowance `4p+16C H(H+p)`. This narrower family can also
+be sampled directly by weak compositions; its main role here is to show how
+using actual exchange geometry can remove the generic repair losses.
 
 ## Empty completion: retain the smaller degree and exact conductance
 

@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "scope": "One actual draw seam: frozen bothLargeTestRealizer; not complete draw/sampler degree. Ordinary native Windows compilation and 20 named transitive axiom checks using authenticated reused complete-sampler imports.",
+  "toolchain": "Lean 4.34.1 native Windows x86_64",
+  "actual_realizer": "Math115.LatticeSamplerPreparation.bothLargeTestRealizer",
+  "degree": 1008,
+  "headline": "Math115.DrawRuntimeNext.actual_bothLargeTest_polynomial",
+  "named_declarations": 20,
+  "compilation": [
+    {
+      "module": "DrawRuntime.RangeSeed",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 85.71793440007605,
+      "source_sha256": "aaf1c1ce1067a4e21767a1790f7672773cd3e2cb3d98164b0a8a39916b6edf09",
+      "olean_sha256": "bba0857fb92869317236083b0d774760be957d05aedb285908ffa49888fce531",
+      "stdout_sha256": "eb1158d270748c408e92fb2637aceb71dfbce9ec8409c01a4459a1e3dac4fe52",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "owned_tree_empty": true,
+      "reuse": true,
+      "final_process_absent": true
+    },
+    {
+      "module": "DrawRuntime.BranchDegree",
+      "exit_code": 0,
+      "stop_reason": null,
+      "elapsed_seconds": 275.87826610007323,
+      "source_sha256": "dbc0149be5f16046cacce5c5020307a808298662ce072eac39d20328eae30fd1",
+      "olean_sha256": "c0cd785734dac048595e565e3bd005b34d8be4ef6f7672c22ba4c50682ecc302",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "owned_tree_empty": true,
+      "reuse": false,
+      "final_process_absent": true
+    }
+  ],
+  "prerequisite_object_bindings_checked": 1660,
+  "remaining_actual_draw_fields": [
+    "printer",
+    "initial",
+    "fallback",
+    "referenceTrial",
+    "unitTrial",
+    "retryWords"
+  ],
+  "compiler_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b"
+}

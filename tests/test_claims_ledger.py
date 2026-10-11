@@ -7,6 +7,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 CANDIDATE = Path(__file__).resolve().parents[1]
 ROOT = CANDIDATE if (CANDIDATE / 'formal/results/native-sampler-checkpoint').exists() else CANDIDATE.parents[2]
@@ -17,13 +18,33 @@ spec.loader.exec_module(ledger)
 
 
 class ClaimsLedgerTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls._document = json.loads((CANDIDATE / 'claims.json').read_text(encoding='utf-8'))
+        # Replay every real receipt once; claim-mutation tests reuse only these
+        # validated scopes. Receipt-integrity fixtures below remain unpatched.
+        cls._validated = ledger.validate_ledger(ROOT, cls._document)
+
     def setUp(self):
-        self.document = json.loads((CANDIDATE / 'claims.json').read_text(encoding='utf-8'))
+        self.document = copy.deepcopy(self._document)
         self.ideal_claim_index = next(i for i, claim in enumerate(self.document['claims'])
                                      if claim['id'] == 'ideal-inverse-gap')
 
+    def validate_claim_mutation(self, document, root=ROOT):
+        if root != ROOT or document['receipts'] != self._document['receipts']:
+            raise ValueError('scope reuse requires the original root and receipt specs')
+
+        def reused_receipt(receipt_root, spec):
+            if receipt_root != ROOT or spec not in self._document['receipts']:
+                raise ValueError('scope reuse requires the original root and receipt specs')
+            # The validator must not receive a mutable reference to fixture data.
+            return copy.deepcopy(self._validated['scopes'][spec['id']])
+
+        with patch.object(ledger, 'validate_receipt', side_effect=reused_receipt):
+            return ledger.validate_ledger(root, document)
+
     def test_delivered_scopes_replay_and_linux_overlap_is_not_added(self):
-        result = ledger.validate_ledger(ROOT, self.document)
+        result = copy.deepcopy(self._validated)
         self.assertEqual({k: v['count'] for k, v in result['scopes'].items()
                           if v.get('format') != 'compiled_environment'},
                          {'integrated-aggregate': 1242, 'aggregate': 869, 'encoded-completion': 46,
@@ -54,32 +75,32 @@ class ClaimsLedgerTests(unittest.TestCase):
         changed = copy.deepcopy(self.document)
         changed['claims'][self.ideal_claim_index]['headlines'][0]['name'] = 'Math115.IdealRepairRefinement.UnrequestedTheorem'
         with self.assertRaisesRegex(ValueError, 'lacks named'):
-            ledger.validate_ledger(ROOT, changed)
+            self.validate_claim_mutation(changed)
 
     def test_claim_scope_is_bound_and_overlap_claim_fails(self):
         changed = copy.deepcopy(self.document)
         changed['claims'][self.ideal_claim_index]['evidence'][0]['scope'] = 'all project theorems'
         with self.assertRaisesRegex(ValueError, 'scope differs'):
-            ledger.validate_ledger(ROOT, changed)
+            self.validate_claim_mutation(changed)
         changed = copy.deepcopy(self.document)
         changed['disjoint_component_scopes'].append('linux-focused')
         with self.assertRaisesRegex(ValueError, 'overlap'):
-            ledger.validate_ledger(ROOT, changed)
+            self.validate_claim_mutation(changed)
 
     def test_headline_cannot_be_bound_to_an_unrelated_verified_source(self):
         changed = copy.deepcopy(self.document)
         changed['claims'][self.ideal_claim_index]['sources'] = ['formal/Math115/RepairCoefficient.lean']
         changed['claims'][self.ideal_claim_index]['headlines'][0]['source'] = 'formal/Math115/RepairCoefficient.lean'
         with self.assertRaisesRegex(ValueError, 'attribution differs'):
-            ledger.validate_ledger(ROOT, changed)
+            self.validate_claim_mutation(changed)
         changed['claims'][self.ideal_claim_index]['headlines'][0]['module'] = 'Math115.RepairCoefficient'
         with self.assertRaisesRegex(ValueError, 'attribution differs'):
-            ledger.validate_ledger(ROOT, changed)
+            self.validate_claim_mutation(changed)
         changed['claims'][self.ideal_claim_index]['headlines'][0]['module'] = 'Math115'
         changed['claims'][self.ideal_claim_index]['headlines'][0]['source'] = 'formal/Math115.lean'
         changed['claims'][self.ideal_claim_index]['sources'] = ['formal/Math115.lean']
         with self.assertRaisesRegex(ValueError, 'attribution differs'):
-            ledger.validate_ledger(ROOT, changed)
+            self.validate_claim_mutation(changed)
 
     def test_commit_binding_kinds_cannot_invent_or_drop_base_commit(self):
         changed = copy.deepcopy(self.document)
@@ -125,7 +146,7 @@ class ClaimsLedgerTests(unittest.TestCase):
                 ledger.replace_generated(text, new)
 
     def test_audit_driver_uses_receipt_modules_and_every_ledger_headline(self):
-        result = ledger.validate_ledger(ROOT, self.document)
+        result = copy.deepcopy(self._validated)
         driver = ledger.audit_driver(result, self.document['disjoint_component_scopes'])
         self.assertIn('import Math115\n', driver)
         self.assertIn('import Math115.PhysicalBooleanSampler', driver)
@@ -144,7 +165,7 @@ class ClaimsLedgerTests(unittest.TestCase):
             ledger.validate_ledger(ROOT, changed)
 
     def test_current_summary_prefers_integrated_scope_without_adding_historical_overlap(self):
-        result=ledger.validate_ledger(ROOT,self.document)
+        result=copy.deepcopy(self._validated)
         rendered=ledger.render(result)
         self.assertIn('**1511** named declarations',rendered)
         for count in [1242,863,869,46,193,134]:
@@ -167,14 +188,14 @@ class ClaimsLedgerTests(unittest.TestCase):
         changed['summary_receipt_ids']=['aggregate','linux-focused']
         changed['disjoint_component_scopes']=['aggregate']
         with self.assertRaisesRegex(ValueError,'current receipt source bytes differ'):
-            ledger.validate_ledger(ROOT,changed)
+            self.validate_claim_mutation(changed)
 
     def test_summary_cannot_hide_current_receipt_or_reference_unvalidated_scope(self):
         for summary in [['linux-focused'],['missing'],['integrated-aggregate','integrated-aggregate']]:
             changed=copy.deepcopy(self.document);changed['summary_receipt_ids']=summary
             changed['current_receipt']='integrated-aggregate'
             with self.subTest(summary=summary), self.assertRaises(ValueError):
-                ledger.validate_ledger(ROOT,changed)
+                self.validate_claim_mutation(changed)
 
     def test_paths_cannot_escape_the_repository(self):
         for path in ['/tmp/private', '../outside', '']:
