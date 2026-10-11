@@ -47,6 +47,10 @@ For square tables, retaining the shape gives `5000d^(31/2)` and
 `10000d^(31/2)`, respectively.
 Its numerical physical bound is not compiled in this packet. The general
 selected/reference `80000d^17` theorem is unchanged.
+Subsequent [rectangular](../../docs/rectangular-defect.md),
+[weighted-trace](../../docs/general-defect-trace.md), and
+[direct implementation](../../docs/direct-defect-sampler.md) results have separate
+evidence and do not expand this packet's original compiled scope.
 
 ## Reproduce the scoped verification
 

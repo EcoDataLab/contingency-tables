@@ -82,10 +82,14 @@ uses a Schur complement to remove balanced repair stars, then samples the
 resulting within-fiber refresh directly. This changes the proposal normalization
 from quadratic in the number of cells to linear in `m+n`. The reviewed
 all-small allowance becomes `2500d^16` (`5000d^16` for dyadic proposals).
-The generic energy/variance transfer is compiled; the physical numerical
-instantiation and finite-bit transition implementation remain open. This is
-a concrete use of network elimination and block sampling, without assuming
-that an analogy with fast multiplication transfers its theorems.
+The generic energy/variance transfer is compiled, and a
+[direct finite-bit reference](direct-defect-sampler.md) now implements the unit
+branch. The [variable-capacity refinement](rectangular-defect.md) reaches
+`d^(31/2)` for every both-small aspect ratio; the [weighted trace](general-defect-trace.md)
+and [joint correction](general-defect-output.md) extend the mathematical route
+to nonempty completion blocks at `d^16`. Physical Lean assembly and general
+encoded integration remain open. These are concrete uses of network elimination
+and block sampling; no multiplication theorem is assumed to transfer.
 
 **Finish pricing the literal program.** The existing
 [affine degree refinement](composed-complexity.md) already separates output size

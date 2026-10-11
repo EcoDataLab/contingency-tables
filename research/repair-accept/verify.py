@@ -14,13 +14,21 @@ import subprocess
 import time
 
 ROOT = Path(__file__).resolve().parents[2]
-HERE = Path(__file__).resolve().parent
 PIN = "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
-MODULES = ["RepairAcceptanceCoin", "RepairAcceptanceThreshold", "RepairAcceptanceLaw",
-           "Math115.AllSmallRepairFiber", "RepairAcceptancePhysical", "Math115.FiniteStarTrace"]
-HEADLINES = ["Math115.AllSmallRepairFiber.reduced_repairTable_fiber_card",
-             "Math115.RepairAcceptancePhysical.physical_finiteBit_retry_variation",
-             "Math115.FiniteStarTrace.poincare_transfer"]
+SCOPES = {
+    "repair-accept": (
+        ["RepairAcceptanceCoin", "RepairAcceptanceThreshold", "RepairAcceptanceLaw",
+         "Math115.AllSmallRepairFiber", "RepairAcceptancePhysical", "Math115.FiniteStarTrace"],
+        ["Math115.AllSmallRepairFiber.reduced_repairTable_fiber_card",
+         "Math115.RepairAcceptancePhysical.physical_finiteBit_retry_variation",
+         "Math115.FiniteStarTrace.poincare_transfer"],
+        ["OAI.Combinatorics.ContingencyTables.Machines.FairBits",
+         "OAI.Combinatorics.ContingencyTables.Transport.FiniteRationalThreshold"]),
+    "rectangular-defect": (
+        ["VariableWidthLimit"],
+        ["OAI.ContingencyTables.IntegerWeightedTransport.integer_box_root_leaf_transport_widths_limit"],
+        []),
+}
 
 
 def sha(path):
@@ -37,7 +45,10 @@ def main():
                         help="a new attempt directory; existing results are never overwritten")
     parser.add_argument("--lean", type=Path,
                         default=ROOT / ".tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean")
+    parser.add_argument("--scope", choices=SCOPES, default="repair-accept")
     args = parser.parse_args()
+    modules, headlines, upstream_modules = SCOPES[args.scope]
+    packet = ROOT / "research" / args.scope
     lean = args.lean.resolve()
     baseline = ROOT / "formal/.lake/build/lib/lean"
     actual_pin = subprocess.check_output(
@@ -86,18 +97,17 @@ def main():
 
     upstream = ROOT / ".upstream/openai-math/lean"
     # These small pinned modules are not required by the old default target.
-    for module in ["OAI.Combinatorics.ContingencyTables.Machines.FairBits",
-                   "OAI.Combinatorics.ContingencyTables.Transport.FiniteRationalThreshold"]:
+    for module in upstream_modules:
         compile_one(module, upstream / (module.replace(".", "/") + ".lean"), upstream)
-    for module in MODULES:
-        compile_one(module, HERE / "formal" / (module.replace(".", "/") + ".lean"), HERE / "formal")
+    for module in modules:
+        compile_one(module, packet / "formal" / (module.replace(".", "/") + ".lean"), packet / "formal")
     compile_one("ResearchAudit.EnvironmentAudit", ROOT / "formal/ResearchAudit/EnvironmentAudit.lean",
                 ROOT / "formal")
-    driver = output / "RepairAcceptanceAudit.lean"
-    driver.write_text("\n".join("import " + m for m in MODULES) +
+    driver = output / "ResearchScopeAudit.lean"
+    driver.write_text("\n".join("import " + m for m in modules) +
                       "\nimport ResearchAudit.EnvironmentAudit\n" +
-                      "#environment_audit prefixes [] modules [" + ", ".join(MODULES) +
-                      "] headlines [" + ", ".join(HEADLINES) + "]\n")
+                      "#environment_audit prefixes [] modules [" + ", ".join(modules) +
+                      "] headlines [" + ", ".join(headlines) + "]\n")
     started = time.monotonic()
     result = subprocess.run([str(lean), "-j2", "-DautoImplicit=false", str(driver)],
                             env=env, cwd=ROOT, capture_output=True, text=True, timeout=600)
@@ -123,7 +133,7 @@ def main():
         (json.dumps(imported, indent=2) + "\n").encode(), mtime=0))
     summary = {"schema_version": 1, "status": "passed", "upstream_commit": PIN,
                "compiler_version": subprocess.check_output([str(lean), "--version"], text=True).strip(),
-               "compiler_sha256": sha(lean), "modules": MODULES, "compilation": records,
+               "compiler_sha256": sha(lean), "modules": modules, "compilation": records,
                "audit_seconds": round(time.monotonic() - started, 3),
                "audit_sha256": sha(output / "audit.stdout.json.gz"),
                "imported_objects_file": "imported-objects.json.gz",

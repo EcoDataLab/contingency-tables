@@ -1,6 +1,6 @@
-# Accelerating the all-small chain by eliminating repair stars
+# Accelerating the unit chain by eliminating repair stars
 
-For positive ordinary margins with every row and column below the cutoff, a changed chain can remove one dimension factor from the existing inverse-gap allowance. Eliminate the balanced vertices exactly, then sample the resulting repair-fiber refresh directly. The resulting **defect-only chain** has the mathematical allowances
+For positive ordinary margins with either every row or every column below the cutoff, a changed chain can remove one dimension factor from the existing inverse-gap allowance. Eliminate the balanced vertices exactly, then sample the resulting repair-fiber refresh directly. The resulting **defect-only chain** has the mathematical allowances
 
 \[
  K_{\rm rational}\le2500d^{16},\qquad
@@ -8,11 +8,13 @@ For positive ordinary margins with every row and column below the cutoff, a chan
  d=10+(m+1)(n+1),\quad U=5d^3.
 \]
 
-**Evidence:** mathematical derivation with independent AI-agent review and exact finite checks. The [generic star-elimination/Poincare transfer](../research/repair-accept/) and actual defect-fiber count have compiled Lean proofs. The numerical physical-chain bound is not yet a Lean theorem, and this chain is not installed in the compiled sampler. The existing selected/reference `80000d^17` theorem remains unchanged. The numerical complete machine-time exponent remains unknown.
+**Evidence:** mathematical derivation with independent AI-agent review and exact finite checks. The [generic star-elimination/Poincare transfer](../research/repair-accept/) and actual both-small defect-fiber count have compiled Lean proofs. The numerical physical-chain bound is not yet a Lean theorem, and this chain is not installed in the compiled sampler. A [direct bounded finite-bit reference](direct-defect-sampler.md) now implements the one-side-small scope. The existing selected/reference `80000d^17` theorem remains unchanged.
+
+When **both** sides are below the cutoff, the [variable-capacity refinement](rectangular-defect.md) gives `20000d^(31/2)` rational and `40000d^(31/2)` dyadic for every aspect ratio. The [weighted trace](general-defect-trace.md) separately addresses nonempty completion blocks.
 
 ## Scope and the existing graph
 
-Assume `m,n>=2`, positive integer row and column margins, equal total `M`, and **every margin strictly below U**. There are no extra cell bounds, structural zeros, or weights. Put `p=mn`. The physical state is a pair of nonnegative views `(x,q)` with prescribed row sums of `x`, prescribed column sums of `q`, and either `x=q` or
+Assume `m,n>=2`, positive integer row and column margins, equal total `M`, and **either all row margins or all column margins strictly below U**. The completion rectangle is empty. Its residual total is zero on the empty side, forcing all residuals on the other side to zero as well. Thus both views have their prescribed margins, even when the opposite side has margins at or above `U`. There are no extra cell bounds, structural zeros, or weights. Put `p=mn`. The physical state is a pair of nonnegative views `(x,q)` with prescribed row sums of `x`, prescribed column sums of `q`, and either `x=q` or
 
 \[
 q-x=e_s-e_t,\qquad s\ne t.
@@ -75,7 +77,7 @@ The dyadic version uses
  \beta_{\rm dy}^{-1}\le4h.
 \]
 
-Draw `ceil(log2(2h))` fair bits, assign `h` labels to the channels, and assign every remaining label to holding. This channel selection is bounded. Conditional uniform support and label draws still need a finite-word implementation: rejection-based integer draws can have unbounded retries, so capped versions must include their failure and law-error budgets.
+Draw `ceil(log2(2h))` fair bits, assign `h` labels to the channels, and assign every remaining label to holding. The [direct implementation](direct-defect-sampler.md) uses fixed-bit support/label ranks, with an explicit transition-law discrepancy. It never retries an integer draw.
 
 ## Why the inverse gap improves
 
@@ -130,7 +132,7 @@ Here `m+n<=mn=p<=d` for `m,n>=2`. The dyadic reciprocal is at most twice the rat
 | Square, `m=n` | `5000d^(31/2)` | `10000d^(31/2)` |
 | Bounded aspect ratio | `O(d^(31/2))` | `O(d^(31/2))` |
 
-For square tables, `m+n=2m<=2sqrt(d)` and `C<=625d^15`, proving the displayed constant directly. Bounded-aspect constants depend on the fixed aspect bound. These are consequences of the same reviewed mathematical derivation, with the same outstanding physical Lean and implementation obligations. They do not give a uniform `d^(31/2)` bound for arbitrarily thin tables.
+For square tables, `m+n=2m<=2sqrt(d)` and `C<=625d^15`, proving the displayed constant directly. Bounded-aspect constants depend on the fixed aspect bound. These shape-only consequences do not give a uniform `d^(31/2)` bound for arbitrarily thin tables. The newer [variable-capacity argument](rectangular-defect.md) supplies that exponent for all aspect ratios when both sides are small. Each applicable bound remains available: the new constant need not be best for every finite instance.
 
 The ordinary trace of the original physical chain uses the original proposal `beta`, not `beta'`: its off-diagonal kernel is `beta [1_DD+1_samefiber/k_A]`. Skipping balanced residence retains that old trace normalization. The additional acceleration to `beta'` is a deliberate change of chain and is essential to the improvement.
 
@@ -148,7 +150,7 @@ Positive margins imply `b<=|supp(A)|<=min(p,M)`, so this is valid. Every table r
 
 This rule uses the **defect-only** fiber count `k_A`. The earlier chain's count `1+k_A` would give the wrong correction here. An initial defect can be constructed from a supplied feasible table by choosing a positive receiver and crossing labels. Singleton dimensions can be returned directly.
 
-Finite endpoint mixing, bounded retry accuracy, conditional draw errors and compiled program identification still need to be composed for this changed chain. The inverse-gap derivation alone does not supply exact finite-time uniformity or a complete machine-time exponent.
+The [direct reference](direct-defect-sampler.md) composes finite transition rounding, a supplied ideal endpoint-mixing bound, fixed-bit acceptance and bounded retries. The [both-small schedule](defect-sampler-composition.md) provides sufficient parameters and an integer-operation allowance. Physical Lean assembly and compiled program identification remain open. No complete bit-machine exponent follows from the inverse-gap bound alone.
 
 ## Reproducible finite checks and remaining scope
 
@@ -163,8 +165,8 @@ python3 experiments/defect_trace.py
 python3 experiments/defect_trace.py --spectral --output reports/defect-trace.json
 ```
 
-The default output is `.local/reports/defect-trace.json`; writing the public report requires an explicit destination. The four one-side-small cases test a possible extension and remain outside the primary reviewed claim.
+The default output is `.local/reports/defect-trace.json`; writing the public report requires an explicit destination. That historical report labels its one-side-small fixtures exploratory. The newer geometry argument and [direct sampler tests](../tests/test_defect_chain.py) establish and exercise the extension, including capacity-equality entries at `U`.
 
-Nonempty large blocks reintroduce varying completion masses, mixed exchanges and balanced-to-balanced edges. The low defect-degree argument and elementary unit-weight star elimination then need different proofs. The general selected/reference `d^17` certificate is unchanged.
+Nonempty large blocks require the [weighted trace argument](general-defect-trace.md). They introduce varying completion masses, mixed exchanges and potentially two balanced neighbors per defect. **They do not introduce balanced-to-balanced edges**; the earlier concern about such edges was incorrect. Weighted harmonic elimination therefore still applies, with a different exit sampler and output analysis.
 
-A further width refinement is a research target. Reencoding each pair with capacity `min(r_i,c_j)+1` appears to preserve the all-small graph, and the [abstract width-weighted transport theorem](../formal/Math115/WidthWeightedTransport.lean) retains individual capacities. A general physical consequence still needs four bridges: variable word/context assembly, a truncated quadratic auxiliary kernel through the hard limit, weighted per-type repair-mass bounds, and owner recovery with variable capacities. Until those are proved, this route supplies no sharper uniform exponent than the `d^16` derivation above.
+The [variable-capacity derivation](rectangular-defect.md) now supplies all four mathematical bridges for the sharper rectangular bound. Its quadratic hard-limit bridge compiles separately. The remaining formal work is assembling the changed physical word/context maps, variance decomposition and numerical bound into Lean.

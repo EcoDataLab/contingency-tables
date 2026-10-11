@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "VariableWidthLimit"
+  ],
+  "compilation": [
+    {
+      "module": "VariableWidthLimit",
+      "source": "research/rectangular-defect/formal/VariableWidthLimit.lean",
+      "source_sha256": "f0c521736be4900d55ea491cbe2be7842426084344668e5461790a37b1961e73",
+      "returncode": 0,
+      "seconds": 47.479,
+      "olean_sha256": "3454dbb409ad8cefffa3c3a71795b81fcbce35adcf02007a7fd4daafed0b31f3"
+    },
+    {
+      "module": "ResearchAudit.EnvironmentAudit",
+      "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+      "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "returncode": 0,
+      "seconds": 2.902,
+      "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+    }
+  ],
+  "audit_seconds": 48.064,
+  "audit_sha256": "5c1c5d5109a4f1620f5195fbec28f7ba59f5b34efb6e170bbda2a9c2ccb04915",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "e7d451cd60da3ca069b179a27b37f3d88d81d868524506c1bcae385c97787ace",
+  "declaration_count": 3,
+  "theorem_count": 3,
+  "headlines": [
+    {
+      "name": "OAI.ContingencyTables.IntegerWeightedTransport.integer_box_root_leaf_transport_widths_limit",
+      "closure_size": 15902,
+      "statement": "\u2200 {K : Type u_1} {l : Filter K} [l.NeBot] (Ms : List \u2115)\n  (F : K \u2192 (OAI.ContingencyTables.BalancedFamily.Coordinates Bool Ms \u2192 \u2115) \u2192 \u211d)\n  (f H : (OAI.ContingencyTables.BalancedFamily.Coordinates Bool Ms \u2192 \u2115) \u2192 \u211d),\n  (\u2200 (x : OAI.ContingencyTables.BalancedFamily.Coordinates Bool Ms \u2192 \u2115),\n      Filter.Tendsto (fun t => F t x) l (nhds (f x))) \u2192\n    \u2200 (m z : Bool \u2192 \u2115) (R : \u2115),\n      (\u2200 U \u2208 Ms, 2 \u2264 U) \u2192\n        (\u2200\u1da0 (t : K) in l,\n            (\u2200 (x : OAI.ContingencyTables.BalancedFamily.Coordinates Bool Ms \u2192 \u2115), 0 \u2264 F t x) \u2227\n              OAI.ContingencyTables.BalancedBox.PositiveSlice (F t) (OAI.ContingencyTables.BalancedFamily.bounds m Ms)\n                  (R + Ms.sum) \u2227\n                OAI.ContingencyTables.BalancedBox.RemovalSlice (F t) (OAI.ContingencyTables.BalancedFamily.bounds m Ms)\n                  (R + Ms.sum)) \u2192\n          OAI.ContingencyTables.BalancedBox.InBox m z \u2192\n            \u2211 i, z i = R + 1 \u2192\n              0 <\n                  OAI.ContingencyTables.IntegerWeightedTransport.oneHole\n                    (OAI.ContingencyTables.BalancedFamily.eliminate Ms f) z false \u2192\n                0 <\n                    OAI.ContingencyTables.IntegerWeightedTransport.oneHole\n                      (OAI.ContingencyTables.BalancedFamily.eliminate Ms f) z true \u2192\n                  have g :=\n                    OAI.ContingencyTables.IntegerBoxTruncation.truncate f\n                      (OAI.ContingencyTables.BalancedFamily.bounds m Ms) (R + Ms.sum);\n                  have s :=\n                    OAI.ContingencyTables.IntegerWeightedTransport.oneHole\n                      (OAI.ContingencyTables.BalancedFamily.eliminate Ms f) z false;\n                  have t :=\n                    OAI.ContingencyTables.IntegerWeightedTransport.oneHole\n                      (OAI.ContingencyTables.BalancedFamily.eliminate Ms f) z true;\n                  have c :=\n                    OAI.ContingencyTables.FactorialSignatures.integerRemovalMatrix\n                      (OAI.ContingencyTables.IntegerWeightedTransport.quadraticAuxiliaryKernel Ms g) z false true;\n                  (OAI.ContingencyTables.IntegerWeightedTransport.oneHole\n                            (OAI.ContingencyTables.BalancedFamily.eliminate Ms fun p => f p * H p) z false /\n                          s -\n                        OAI.ContingencyTables.IntegerWeightedTransport.oneHole\n                            (OAI.ContingencyTables.BalancedFamily.eliminate Ms fun p => f p * H p) z true /\n                          t) ^\n                      2 \u2264\n                    (1 / s + 1 / t + 2 * c / (s * t)) *\n                      OAI.ContingencyTables.IntegerWeightedTransport.leafEnergySum Ms f H z"
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

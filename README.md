@@ -2,12 +2,16 @@
 
 An open EcoDataLab research project building on [OpenAI result #115](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/115.md). A contingency table allocates integer counts while preserving row and column totals. This repository studies mathematical guarantees and supplies exact reference tools for small or structured problems.
 
-New restricted-branch results:
+New defect-chain results:
 
 | Claim | Quantity and evidence | Scope and remaining work |
 |---|---|---|
 | [Repair-and-accept output](docs/repair-output.md) | Stationary inverse success ≤ `min(m,n)`; compiled actual-fiber and fixed-bit retry proofs, tested Python reference | Positive ordinary margins, all below the cutoff. Keeps the existing chain. Endpoint mixing remains an explicit premise; integration into the encoded sampler is open. |
-| [Accelerated defect chain](docs/defect-trace.md) | Inverse gap ≤ `2500d^16`, or `5000d^16` with dyadic proposal; reviewed mathematical derivation and exact finite checks | Positive all-small margins, `m,n≥2`. A changed chain with direct repair-fiber refresh. Generic star-elimination bridge compiled; physical instantiation and bounded transition draws remain open. This is not a runtime bound or a replacement for the general theorem below. |
+| [Arbitrary rectangular tables](docs/rectangular-defect.md) | Inverse gap ≤ `20000d^(31/2)`, or `40000d^(31/2)` dyadic; reviewed mathematical derivation, exact checks, compiled hard-limit bridge | Positive ordinary margins below the cutoff on both sides, `m,n≥2`; no aspect-ratio restriction. Full physical Lean assembly remains open. |
+| [Weighted defect trace and output](docs/general-defect-trace.md) | Inverse gap ≤ `20000d^16`, or `40000d^16` dyadic; [stationary output correction](docs/general-defect-output.md) succeeds with probability ≥ `1/(8p)` | Includes nonempty completion blocks. New mathematical derivations with separate AI review and exact checks; terminal assumes positive margins and ideal scales. General implementation and Lean integration remain open. |
+| [Direct bounded defect sampler](docs/direct-defect-sampler.md) | Non-enumerating `O(mn)` integer operations per step; explicit finite-bit and retry errors; exact kernel tests | Positive ordinary margins with either one entire side below the cutoff. A [complete both-small schedule](docs/defect-sampler-composition.md) composes to `O(d^18 Λ log d + d^17 Λ²)` walk/terminal integer operations, `Λ=1+log(1/ε)`. No practical mixing-time or compiled bit-machine claim. |
+
+Here `d=10+(m+1)(n+1)` and `p` counts small cells. These changed-chain inverse-gap bounds are not runtime exponents. The earlier [unit-chain bound](docs/defect-trace.md), `2500d^16` rational, remains available throughout the one-side-small branch; its square-table constant can also be sharper. The general compiled theorem below remains the baseline.
 
 The [complete bounded-sampler research checkpoint](docs/outer-sampler-compiler-checkpoint.md) now connects the smaller `80,000d¹⁷` ideal-chain schedule to a fixed public machine. For equal-total natural margins and precision `h≥1`, its theorem gives feasible output on every random tape and total variation error at most `2^-h` within uniformly polynomial time. The supporting Lean modules and complete compiled-environment audit passed. The numerical full runtime exponent and practical speed remain unknown.
 
@@ -54,7 +58,8 @@ Other results include sharp ordinary-table tail and mean bounds, a dense-compati
 ## Starting points
 
 - [Repair-based output](docs/repair-output.md) and its [compiled research packet](research/repair-accept/): the actual repair fibers, bounded-bit terminal, retry error and executable reference.
-- [Defect-only acceleration](docs/defect-trace.md): a reviewed `d^16` inverse-gap derivation, direct transition construction, exact Schur-complement checks and remaining physical proof obligations.
+- [Defect-only acceleration](docs/defect-trace.md), [arbitrary rectangular refinement](docs/rectangular-defect.md), and [weighted generalization](docs/general-defect-trace.md): geometry, inverse-gap derivations, exact trace checks and remaining physical proof obligations.
+- [Direct defect sampler](docs/direct-defect-sampler.md), [composed schedule](docs/defect-sampler-composition.md), and [general joint output correction](docs/general-defect-output.md): finite-bit execution, actual output laws and honest cost accounting.
 - [Further research directions](docs/research-directions.md): lessons from the complete integer-multiplication improvement sequence, and specific limits on transferring ideas from other fields.
 - [Reference implementation improvements](docs/implementation-benchmarks.md): reproducible weighted-draw, graph-traversal and heat-bath preparation gains, with cold-start and memory costs.
 - [Original research review](115/115-contingency-tables-review.md) and [source manifest](115/source-manifest.json): the preserved October 8, 2026 handoff, including hypotheses to test.
