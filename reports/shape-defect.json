@@ -1,0 +1,268 @@
+{
+  "evidence": "exact finite graph/count checks; bounded seeded execution only, no mixing claim",
+  "cases": [
+    {
+      "rows": [
+        2,
+        1
+      ],
+      "columns": [
+        2,
+        1
+      ],
+      "U": 2,
+      "L": 1,
+      "large_shape": [
+        1,
+        1
+      ],
+      "small_cells": 3,
+      "degree_bound": 5,
+      "previous_degree_bound": 17,
+      "observed_type_max_degrees": {
+        "LS,SS": 3,
+        "SL,SS": 3,
+        "LS,SL": 4
+      },
+      "completion_weights": [
+        1
+      ],
+      "minimum_acceptance": "1",
+      "half_acceptance_premise": true,
+      "checked_defects": 7
+    },
+    {
+      "rows": [
+        4,
+        4,
+        1
+      ],
+      "columns": [
+        4,
+        4,
+        1
+      ],
+      "U": 4,
+      "L": 1,
+      "large_shape": [
+        2,
+        2
+      ],
+      "small_cells": 5,
+      "degree_bound": 11,
+      "previous_degree_bound": 33,
+      "observed_type_max_degrees": {
+        "LS,SS": 6,
+        "SL,SS": 6,
+        "LS,SL": 8,
+        "SL,SL": 6,
+        "LS,LS": 6
+      },
+      "completion_weights": [
+        5,
+        6,
+        7
+      ],
+      "minimum_acceptance": "4/5",
+      "half_acceptance_premise": false,
+      "checked_defects": 44
+    },
+    {
+      "rows": [
+        4,
+        4,
+        1
+      ],
+      "columns": [
+        4,
+        4,
+        1
+      ],
+      "U": 4,
+      "L": 78,
+      "large_shape": [
+        2,
+        2
+      ],
+      "small_cells": 5,
+      "degree_bound": 11,
+      "previous_degree_bound": 33,
+      "observed_type_max_degrees": {
+        "LS,SS": 6,
+        "SL,SS": 6,
+        "LS,SL": 8,
+        "SL,SL": 6,
+        "LS,LS": 6
+      },
+      "completion_weights": [
+        159,
+        160,
+        161
+      ],
+      "minimum_acceptance": "158/159",
+      "half_acceptance_premise": true,
+      "checked_defects": 44
+    },
+    {
+      "rows": [
+        2,
+        2,
+        1
+      ],
+      "columns": [
+        2,
+        2,
+        1
+      ],
+      "U": 2,
+      "L": 1,
+      "large_shape": [
+        2,
+        2
+      ],
+      "small_cells": 5,
+      "degree_bound": 11,
+      "previous_degree_bound": 33,
+      "observed_type_max_degrees": {
+        "LS,SS": 6,
+        "SL,SS": 6,
+        "LS,SL": 8,
+        "SL,SL": 6,
+        "LS,LS": 6
+      },
+      "completion_weights": [
+        3,
+        4,
+        5
+      ],
+      "minimum_acceptance": "2/3",
+      "half_acceptance_premise": false,
+      "checked_defects": 44
+    },
+    {
+      "rows": [
+        4,
+        1,
+        1
+      ],
+      "columns": [
+        3,
+        3
+      ],
+      "U": 3,
+      "L": 1,
+      "large_shape": [
+        1,
+        2
+      ],
+      "small_cells": 4,
+      "degree_bound": 9,
+      "previous_degree_bound": 25,
+      "observed_type_max_degrees": {
+        "SL,SL": 7
+      },
+      "completion_weights": [
+        1
+      ],
+      "minimum_acceptance": "1",
+      "half_acceptance_premise": true,
+      "checked_defects": 24
+    },
+    {
+      "rows": [
+        2,
+        2,
+        2
+      ],
+      "columns": [
+        4,
+        2
+      ],
+      "U": 3,
+      "L": 1,
+      "large_shape": [
+        0,
+        1
+      ],
+      "small_cells": 6,
+      "degree_bound": 7,
+      "previous_degree_bound": 41,
+      "observed_type_max_degrees": {
+        "SL,SS": 7,
+        "SS,SS": 5,
+        "SL,SL": 5
+      },
+      "completion_weights": [
+        1
+      ],
+      "minimum_acceptance": "1",
+      "half_acceptance_premise": true,
+      "checked_defects": 120
+    },
+    {
+      "rows": [
+        70,
+        70,
+        1
+      ],
+      "columns": [
+        70,
+        70,
+        1
+      ],
+      "U": 70,
+      "L": 3,
+      "large_shape": [
+        2,
+        2
+      ],
+      "small_cells": 5,
+      "degree_bound": 11,
+      "previous_degree_bound": 33,
+      "observed_type_max_degrees": {
+        "LS,SS": 6,
+        "SL,SS": 6,
+        "LS,SL": 8,
+        "SL,SL": 6,
+        "LS,LS": 6
+      },
+      "completion_weights": [
+        75,
+        76,
+        77
+      ],
+      "minimum_acceptance": "74/75",
+      "half_acceptance_premise": true,
+      "checked_defects": 44
+    }
+  ],
+  "scaled_core": {
+    "U": 70,
+    "L": 3,
+    "small_cells": 5,
+    "effective_width": 2,
+    "degree_bound": 11,
+    "proposal_bits": 5,
+    "rational_inverse_gap": 88000,
+    "dyadic_inverse_gap": 128000,
+    "stationary_success_lower_bound": "1/25",
+    "completion_margin_bound": 76,
+    "local_completion_dimension": null
+  },
+  "ordinary_count": 351,
+  "padded_count": 381,
+  "padded_ratio": "127/117",
+  "execution": {
+    "steps": 256,
+    "marks": 32,
+    "accepted": 9,
+    "fair_bits": 3552,
+    "planned_fair_bits": 137472,
+    "oracle_calls": 95,
+    "oracle_logical_work": 2470,
+    "row_tv_allowance": "7319/8388608",
+    "terminal_tv_allowance": "81/262144",
+    "scope": "actual finite words and feasible outputs; endpoint accuracy unmeasured"
+  },
+  "checks": "passed"
+}

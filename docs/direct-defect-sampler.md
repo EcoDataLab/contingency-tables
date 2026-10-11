@@ -1,5 +1,7 @@
 # Direct bounded defect sampler
 
+A subsequent [resolvent spacing mode](resolvent-rejection.md) reduces the spacing allowance without changing the execution loop or gap premise. Use `bound_method="resolvent"` in both the schedule constructor and `sample_spaced`; the existing hybrid mode stays the default.
+
 The later [spaced-attempt extension](spaced-defect-sampling.md) adds
 `sample_spaced` and `both_small_spaced_schedule`. It retains the current defect
 after rejection, has a reviewed dependent-attempt error proof, and improves the

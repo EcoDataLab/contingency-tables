@@ -4,6 +4,7 @@ from collections import Counter, defaultdict
 from fractions import Fraction as F
 from itertools import product
 import unittest
+from unittest.mock import patch
 
 from contingency115.ideal_chain import PhysicalState, build_rescaled_ideal_chain
 from contingency115.kernels import ExactKernel
@@ -301,17 +302,22 @@ class DefectBackendTests(unittest.TestCase):
                     success = F((2 << 1) // sum(v > 0 for row in result for v in row), 2)
                     output[result] += mass * (1 - accept) * probability * success
                     output[table] += mass * (1 - accept) * probability * (1 - success)
-        actual = Counter()
+        actual = {method: Counter() for method in ("hybrid", "resolvent")}
+        gap = both_small_spaced_schedule(chain.problem, U=3, epsilon=F(1, 8)).inverse_gap_bound
         for ch1, coin1, ch2, coin2 in product(range(channels), range(2), range(channels), range(2)):
-            result = chain.sample_spaced(
-                table, attempts=2, burnin_steps=1, spacing_steps=1, terminal_bits=1,
-                burnin_mixing_delta=1, spacing_l2_contraction=1,
-                rng=Words(ch1, coin1, ch2, coin2))
-            actual[result.table] += 1
-            self.assertEqual(result.physical_steps, result.attempts)
-            self.assertEqual(result.fair_bits, result.attempts * (chain.channel_bits + 1))
+            for method in actual:
+                result = chain.sample_spaced(
+                    table, attempts=2, burnin_steps=1, spacing_steps=1, terminal_bits=1,
+                    burnin_mixing_delta=1,
+                    spacing_l2_contraction=1 if method == "hybrid" else 1 - F(1, gap),
+                    bound_method=method, rng=Words(ch1, coin1, ch2, coin2))
+                actual[method][result.table] += 1
+                self.assertEqual(result.physical_steps, result.attempts)
+                self.assertEqual(result.fair_bits, result.attempts * (chain.channel_bits + 1))
         self.assertEqual(sum(expected.values()), 1)
-        self.assertEqual({key: F(value, 4 * channels**2) for key, value in actual.items()}, dict(expected))
+        for counts in actual.values():
+            self.assertEqual({key: F(value, 4 * channels**2) for key, value in counts.items()}, dict(expected))
+        self.assertEqual(actual["hybrid"], actual["resolvent"])
         self.assertNotEqual(expected, restarted)
 
     def test_spaced_error_budget_preflight_and_zero_spacing(self):
@@ -373,6 +379,90 @@ class DefectBackendTests(unittest.TestCase):
         for epsilon in (0, 1, 2):
             with self.assertRaises(ValueError):
                 both_small_spaced_schedule(TableProblem((2, 2), (2, 2)), U=3, epsilon=epsilon)
+
+    def test_resolvent_schedule_certificate_and_plan_dominance(self):
+        saw_strict_gain = False
+        for problem in (TableProblem((2, 2), (2, 2)),
+                        TableProblem((2, 2), (2, 1, 1)),
+                        TableProblem((2, 1, 1), (2, 2)),
+                        TableProblem((2, 2), (1, 1, 1, 1))):
+            for epsilon in (F(1, 8), F(7, 8), F(1, 1000)):
+                old = both_small_spaced_schedule(problem, U=3, epsilon=epsilon)
+                self.assertEqual(old, both_small_spaced_schedule(
+                    problem, U=3, epsilon=epsilon, bound_method="hybrid"))
+                new = both_small_spaced_schedule(
+                    problem, U=3, epsilon=epsilon, bound_method="resolvent")
+                self.assertEqual(new.bound_method, "resolvent")
+                self.assertEqual(new.attempts, old.attempts)
+                self.assertEqual(new.burnin_steps, old.burnin_steps)
+                self.assertLessEqual(new.spacing_steps, old.spacing_steps)
+                self.assertLessEqual(new.planned_steps, old.planned_steps)
+                self.assertLessEqual(new.planned_fair_bits, old.planned_fair_bits)
+                saw_strict_gain |= new.planned_steps < old.planned_steps
+                chain = DyadicDefectChain(problem, U=3, refresh_bits=new.refresh_bits)
+                success = F(max(problem.shape), min(chain.p, sum(problem.row_sums)))
+                rho = new.spacing_l2_contraction
+                failure = (1 - (1 - rho) * success) ** new.attempts
+                mixing = new.burnin_mixing_delta + rho / (2 * (1 - rho) ** 2)
+                rounding = new.planned_steps * chain.transition_tv_bound
+                terminal = F(new.attempts, 1 << new.terminal_bits)
+                for allowance in (failure, mixing, rounding, terminal):
+                    self.assertLessEqual(allowance, epsilon / 4)
+                self.assertLessEqual(failure + mixing + rounding + terminal, epsilon)
+        self.assertTrue(saw_strict_gain)
+
+    def test_resolvent_pairs_failure_bias_and_finite_word_allowances(self):
+        problem = TableProblem((2, 2), (2, 2))
+        table = ((1, 1), (1, 1))
+        chain = DyadicDefectChain(problem, U=3, refresh_bits=2)
+        gap = both_small_spaced_schedule(problem, U=3, epsilon=F(1, 8)).inverse_gap_bound
+        rho = 1 - F(1, gap)  # valid ideal one-step contraction from the gap allowance
+        hold = (1 << chain.channel_bits) - 1
+        results = []
+        for method in ("hybrid", "resolvent"):
+            rng = Words(hold, hold, 1, hold, 1, hold, 1)
+            result = chain.sample_spaced(
+                table, attempts=3, burnin_steps=2, spacing_steps=1, terminal_bits=1,
+                burnin_mixing_delta=1, spacing_l2_contraction=rho,
+                bound_method=method, rng=rng)
+            self.assertTrue(result.fallback_used)
+            self.assertEqual(result.table, table)
+            self.assertEqual(result.physical_steps, 4)
+            self.assertEqual(rng.widths, [chain.channel_bits, chain.channel_bits, 1,
+                                           chain.channel_bits, 1, chain.channel_bits, 1])
+            self.assertEqual(result.error.transition_rounding, 4 * chain.transition_tv_bound)
+            self.assertEqual(result.error.terminal_rounding, F(3, 2))
+            results.append(result)
+        self.assertEqual(results[0].error.stationary_exhaustion, F(1, 8))
+        self.assertEqual(results[1].error.stationary_exhaustion, (1 - (1 - rho) / 2) ** 3)
+        self.assertEqual(results[1].error.ideal_endpoint_mixing,
+                         1 + rho / (2 * (1 - rho) ** 2))
+        self.assertGreater(results[1].error.stationary_exhaustion,
+                           results[0].error.stationary_exhaustion)
+
+    def test_resolvent_contracts_and_budget_preflight_before_powers(self):
+        problem = TableProblem((2, 2), (2, 2))
+        table = ((1, 1), (1, 1))
+        chain = DyadicDefectChain(problem, U=3, refresh_bits=2)
+        for method, rho in (("resolvent", F(1)), ("unknown", F(1, 4)), (None, F(1, 4))):
+            rng = Words()
+            with self.assertRaises((TypeError, ValueError)):
+                chain.sample_spaced(table, attempts=1, burnin_steps=0, spacing_steps=0,
+                    terminal_bits=1, burnin_mixing_delta=1, spacing_l2_contraction=rho,
+                    bound_method=method, rng=rng)
+            self.assertEqual(rng.widths, [])
+        for method in ("unknown", None):
+            with self.assertRaises((TypeError, ValueError)):
+                both_small_spaced_schedule(problem, U=3, epsilon=F(1, 8), bound_method=method)
+        limited = DyadicDefectChain(problem, U=3, refresh_bits=2,
+                                    budget=DefectBudget(max_attempts=1))
+        rng = Words()
+        with patch.object(F, "__pow__", side_effect=AssertionError("power before preflight")):
+            with self.assertRaises(ComputationBudgetExceeded):
+                limited.sample_spaced(table, attempts=10, burnin_steps=0, spacing_steps=0,
+                    terminal_bits=1, burnin_mixing_delta=1, spacing_l2_contraction=F(1, 4),
+                    bound_method="resolvent", rng=rng)
+        self.assertEqual(rng.widths, [])
 
 
 if __name__ == "__main__":

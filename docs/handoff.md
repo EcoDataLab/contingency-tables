@@ -1,13 +1,18 @@
 # Contributor handoff
 
-Latest additive checkpoint: [spaced attempts](spaced-defect-sampling.md),
-[effective small-cell width](effective-defect-width.md), and a nonenumerating
-balanced-neighbor catalog. Research and implementation proceeded together:
-new finite-law checks pass, and the scalar width coefficient has its own Lean
-packet. Next integrate the graph equivalence and weighted trace into physical
-Lean statements, formalize the dependent-attempt lemma, and compose bounded
-star-exit/oracle errors. Preserve the original cutoff for completion and
-padding. The new operation bound is not a complete bit-machine theorem.
+Latest additive checkpoint: [shape-aware moves and completion scales](shape-aware-defect.md),
+[resolvent spacing](resolvent-rejection.md), and a [compiled finite hybrid
+lemma](../research/spaced-attempts/). The weighted transition, joint repair
+terminal and bounded small-completion provider now work together, with exact
+finite-law checks. The [validation receipt](../reports/general-defect-validation.json)
+records the tested source and reproduction artifacts.
+
+Next compose a complete general outer sampler, connect the reviewed defect
+geometry/scales to physical Lean statements, and implement the local compiled
+completion adapter for larger blocks. The stronger resolvent argument still
+needs Lean formalization. Keep the original ideal cutoff for the effective-width
+comparison; use smaller scales only after checking their promised classification.
+Inverse-gap and integer-operation bounds are separate from bit-machine runtime.
 
 This stage leaves a checked mathematical and reference-algorithm core, reviewed measurements, and a complete bounded sampler integrated into the default target with fresh hosted Linux evidence. Start with the [claim ledger](claims-and-evidence.md), [formal verification record](formal-verification.md), and [research status](status.md). Their source-bound receipts determine the checked scope; a file's presence in the repository does not establish that it compiled or that its English claim was reviewed.
 
@@ -40,9 +45,9 @@ The new defect-chain work has three complementary scopes:
 
 - [Unit trace and bounded implementation](direct-defect-sampler.md): either margin side below the cutoff, positive margins, no enumeration. Fixed-bit errors and retries are implemented and checked against exact kernels. The [both-small schedule](defect-sampler-composition.md) supplies sufficient accuracy parameters and full integer-operation accounting.
 - [Arbitrary rectangular refinement](rectangular-defect.md): both sides below the cutoff, inverse gap `20000d^(31/2)` rational or `40000d^(31/2)` dyadic, with no aspect restriction. The [hard-limit bridge](../research/rectangular-defect/) is compiled; the new capacity-dependent physical context/exposure maps and final numerical bound still need Lean assembly.
-- [General weighted trace](general-defect-trace.md) and [joint repair terminal](general-defect-output.md): inverse gap `20000d^16` rational or `40000d^16` dyadic, with stationary success at least `1/(8p)` at ideal scales for positive margins. New geometry, five-family exits and joint-fiber identities are mathematically reviewed and checked exactly on finite cases. General transition implementation, capped/approximate oracle composition and encoded law identification are next.
+- [General weighted trace](shape-aware-defect.md) and [joint repair terminal](general-defect-output.md): inverse gap `10000d^16` rational or `20000d^16` dyadic, with stationary success at least `1/(8p)` at ideal scales for positive margins. Geometry, capped oracle errors and joint-fiber identities have separate AI review and exact finite checks. Transition and terminal components are implemented; full outer scheduling, physical Lean and encoded law identification are next. The linked shape result gives stronger subclass bounds after its smaller-scale guards pass.
 
-Preserve the terminal's positive-margin and full ideal-scale assumptions. A checked zero-margin example would give invalid acceptance `5/2`; `L=3d` alone also fails to imply its success lower bound. The general compiled `d^17` sampler remains the baseline. [The broader research review](research-directions.md) separates these changed-chain integration tasks from the seven outstanding runtime-degree certificates.
+Preserve the terminal's positive-margin assumptions and its selected scale certificate. A checked zero-margin example would give invalid acceptance `5/2`; `L=3d` alone also fails to imply its success lower bound. Smaller scales require the explicit padding inequality in the shape-aware proof. The general compiled `d^17` sampler remains the baseline. [The broader research review](research-directions.md) separates these changed-chain integration tasks from the seven outstanding runtime-degree certificates.
 
 ## Reproduce from the public checkout
 

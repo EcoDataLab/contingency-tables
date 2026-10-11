@@ -1,5 +1,7 @@
 # General weighted defect trace: mathematical derivation
 
+The [shape-aware refinement](shape-aware-defect.md) now halves the general allowance below to `10000d^16` rational / `20000d^16` dyadic. Its bounded transition implements the actual compact proposals, completion calls and capped star exits. The derivation below retains the earlier valid, looser normalization and its original evidence. Full physical Lean and encoded integration remain open.
+
 The later [effective-width result](effective-defect-width.md) sharpens this
 same chain's instance-dependent inverse-gap allowance to `32p^4V^4`, or twice
 that for the dyadic proposal. It does not lower the uniform worst-case `d^16`

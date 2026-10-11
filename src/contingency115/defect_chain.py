@@ -45,6 +45,13 @@ class DefectWalk:
 
 @dataclass(frozen=True)
 class DefectSampleError:
+    """Exhaustion, ideal-law and finite-word allowances.
+
+    The historical field names are retained. The resolvent option uses
+    killed-chain exhaustion and burn-in plus acceptance bias in the first
+    two fields.
+    """
+
     stationary_exhaustion: F
     ideal_endpoint_mixing: F
     transition_rounding: F
@@ -91,6 +98,7 @@ class SpacedDefectSchedule:
     channel_bits: int
     burnin_mixing_delta: F
     spacing_l2_contraction: F
+    bound_method: str = "hybrid"
 
     @property
     def planned_steps(self) -> int:
@@ -125,13 +133,25 @@ def _ceil_log2(value: F) -> int:
     return bits + (value.numerator > value.denominator << bits)
 
 
+def _validate_bound_method(bound_method: str) -> None:
+    if not isinstance(bound_method, str):
+        raise TypeError("bound_method must be a string")
+    if bound_method not in ("hybrid", "resolvent"):
+        raise ValueError("bound_method must be 'hybrid' or 'resolvent'")
+
+
 def both_small_spaced_schedule(problem: TableProblem, *, U: int,
-                               epsilon: int | F) -> SpacedDefectSchedule:
+                               epsilon: int | F,
+                               bound_method: str = "hybrid") -> SpacedDefectSchedule:
     """Construct the reviewed TV<=epsilon schedule without running the sampler.
 
     Both entire margin sides must be below U. Explicit execution budgets are
     still required by the chain; this function never raises those limits.
+    The resolvent option retains the mark count and burn-in while shortening
+    spacing using a killed-chain output-bias certificate. Its ideal spacing
+    kernel must be positive semidefinite, as this half-lazy trace is.
     """
+    _validate_bound_method(bound_method)
     _validate_unit_problem(problem, U)
     if not all(value < U for value in problem.row_sums + problem.column_sums):
         raise ValueError("the schedule requires both margin sides strictly below U")
@@ -146,14 +166,14 @@ def both_small_spaced_schedule(problem: TableProblem, *, U: int,
     gap = 4 * q * p**2 * a**2 * U**4
     l0 = _ceil_log2(4 / eps)
     attempts = a * l0
-    lb = _ceil_log2(2 * attempts / eps)
+    lb = _ceil_log2(2 * attempts / eps if bound_method == "hybrid" else 8 / eps)
     burnin = gap * (p * _ceil_log2(F(U + 1)) + l0)
     spacing = gap * lb
     steps = burnin + (attempts - 1) * spacing
     refresh = _ceil_log2(max(F(1), F(steps * (support + p - 1), q) / eps))
     terminal = _ceil_log2(4 * attempts / eps)
     return SpacedDefectSchedule(gap, attempts, burnin, spacing, refresh, terminal,
-                                channel_bits, F(1, 2 << l0), F(1, 1 << lb))
+                                channel_bits, F(1, 2 << l0), F(1, 1 << lb), bound_method)
 
 
 def integer_draw_tv(stop: int, bits: int) -> F:
@@ -323,6 +343,7 @@ class DyadicDefectChain:
     def sample_spaced(self, start_table: Table, *, attempts: int, burnin_steps: int,
                       spacing_steps: int, terminal_bits: int,
                       burnin_mixing_delta: int | F, spacing_l2_contraction: int | F,
+                      bound_method: str = "hybrid",
                       rng: FairBitSource | None = None,
                       use_fallback: bool = True) -> DefectSample:
         """Burn in once; keep the state after rejection and space later marks.
@@ -334,21 +355,32 @@ class DyadicDefectChain:
         give the extra (attempts-1)*contraction/4 allowance. See
         docs/spaced-defect-sampling.md. Rounding is charged for every planned
         transition and mark. The TV statement uses the fixed feasible fallback.
+        bound_method='resolvent' instead pairs a killed-chain exhaustion bound
+        with contraction/[2(1-contraction)^2] output bias. It requires an IDEAL
+        positive-semidefinite spacing kernel and contraction strictly below one;
+        half-laziness supplies that spectral premise for this ideal chain.
+        The bound method changes only the certificate, not the execution loop.
         """
+        _validate_bound_method(bound_method)
         _integer(attempts, "attempts", positive=True)
         delta = _rational(burnin_mixing_delta, "burnin_mixing_delta")
         contraction = _rational(spacing_l2_contraction, "spacing_l2_contraction")
         if delta > 1 or contraction > 1:
             raise ValueError("mixing and contraction bounds must lie between zero and one")
+        if bound_method == "resolvent" and contraction == 1:
+            raise ValueError("resolvent requires spacing contraction strictly below one")
         return self._sample(start_table, attempts=attempts, first_steps=burnin_steps,
                             later_steps=spacing_steps, reset=False,
                             terminal_bits=terminal_bits,
-                            mixing_error=delta + (attempts - 1) * contraction / 4,
+                            mixing_error=delta, spacing_l2_contraction=contraction,
+                            bound_method=bound_method,
                             rng=rng, use_fallback=use_fallback)
 
     def _sample(self, start_table: Table, *, attempts: int, first_steps: int,
                 later_steps: int, reset: bool, terminal_bits: int, mixing_error: F,
-                rng: FairBitSource | None, use_fallback: bool) -> DefectSample:
+                rng: FairBitSource | None, use_fallback: bool,
+                spacing_l2_contraction: F | None = None,
+                bound_method: str = "hybrid") -> DefectSample:
         table = self.problem.validate_table(start_table)
         _integer(first_steps, "first_steps")
         _integer(later_steps, "later_steps")
@@ -364,7 +396,17 @@ class DyadicDefectChain:
                 raise ComputationBudgetExceeded(f"defect sampler exceeded {name}")
         support_bound = min(self.p, sum(self.problem.row_sums))
         lower = max(self.m, self.n)
-        error = DefectSampleError((1 - F(lower, support_bound)) ** attempts,
+        success_lower = F(lower, support_bound)
+        if bound_method == "resolvent":
+            assert spacing_l2_contraction is not None
+            contraction = spacing_l2_contraction
+            exhaustion = (1 - (1 - contraction) * success_lower) ** attempts
+            mixing_error += contraction / (2 * (1 - contraction) ** 2)
+        else:
+            exhaustion = (1 - success_lower) ** attempts
+            if spacing_l2_contraction is not None:
+                mixing_error += (attempts - 1) * spacing_l2_contraction / 4
+        error = DefectSampleError(exhaustion,
                                   mixing_error, planned_steps * self.transition_tv_bound,
                                   F(attempts, 1 << terminal_bits))
         values = tuple(value for row in table for value in row)

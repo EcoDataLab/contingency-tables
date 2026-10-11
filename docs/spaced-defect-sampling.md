@@ -1,6 +1,8 @@
 # One burn-in, spaced terminal marks
 
-Mathematical derivation, 11 October 2026, reviewed by separate AI agents. The bounded implementation is in [defect_chain.py](../src/contingency115/defect_chain.py). This is not a newly compiled physical or machine-runtime theorem. A general finite reversible Markov lemma removes repeated cold starts. It handles a weighted stationary law and an arbitrary exact terminal output kernel. The gap theorem is unchanged; the gain comes from composing rejection and mixing differently.
+Mathematical derivation, 11 October 2026, reviewed by separate AI agents. The bounded implementation is in [defect_chain.py](../src/contingency115/defect_chain.py). The finite hybrid lemma now has a [fresh scoped Lean proof](../research/spaced-attempts/); its physical spectral specialization, approximation extension and machine-runtime integration remain open. A general finite reversible Markov lemma removes repeated cold starts. It handles a weighted stationary law and an arbitrary exact terminal output kernel. The gap theorem is unchanged; the gain comes from composing rejection and mixing differently.
+
+The later [resolvent refinement](resolvent-rejection.md) removes the mark-count logarithm from spacing. Its stronger proof and optional implementation have separate AI review and exact checks, but are not covered by the hybrid Lean receipt below.
 
 ## General lemma
 
