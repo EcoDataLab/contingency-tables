@@ -11,6 +11,23 @@ bindings for the six Lean headlines in that earlier default target. It also pres
 claims and hypotheses from the hash-qualified ledger snapshot. Historical named
 receipts retain their narrower scope.
 
+## aggregate-actual-gap
+
+The [actual aggregate trace theorem](aggregate-defect-trace.md) proves
+`Var≤34848d⁵s³ E`, with `s=m+n−2`, for the same canonical rational trace
+as the earlier d⁸ theorem. Its squared aspect statement is
+`Var²≤34848²A³d¹³E²` under `A≥0,s²≤Ad`. The fractional-power interpretation
+gives `34848 A^(3/2)d^(13/2)` and uses nonnegative variance and energy.
+
+The original-margin donor budget, full completed-table repair injection,
+actual correction cap, full variance and trace normalization are derived in
+the [additive formal packet](../research/aggregate-defect-trace/). The trace
+headlines retain `m,n≥2`, `p≥2`, and nonempty positive defect support;
+both completion branches retain `Q=4p−3`. The sharper reviewed `15488`
+coefficient below is distinct. Relative to the earlier shape coefficient
+`3872d⁶s²`, the improvement ratio is `d/(9s)`; the smaller bound should be used.
+No complete sampler runtime follows from this inverse-gap result.
+
 ## retained-defect-gap
 
 `Math115.PhysicalDefectTrace.actualRationalTrace_poincare_d8` proves
@@ -43,9 +60,11 @@ any fixed aspect class also has a fixed `A`.
 This is reviewed AI mathematics supported by exact finite checks. Its full
 completion injection includes the dense crossing and does not assume equal
 weights for source and repaired profiles. The residual cap is derived from
-the actual canonical capacity. Its new moment aggregation and the sharper
-unit proposal still need physical Lean assembly; no complete runtime claim
-is made. The earlier `431d⁸` allowance remains an available bound on thin
+the actual canonical capacity. Its sharper orientation estimates and unit
+proposal remain outside the compiled [actual aggregate packet](aggregate-defect-trace.md),
+which proves the more conservative coefficient `34848` for one canonical
+normalization in both branches. No complete runtime claim is made.
+The earlier `431d⁸` allowance remains an available bound on thin
 shapes with the appropriate proposal normalization.
 
 ## physical-spectral-gap

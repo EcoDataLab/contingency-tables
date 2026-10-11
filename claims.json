@@ -92,12 +92,65 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "aggregate-defect-trace",
+      "format": "compiled_environment",
+      "path": "research/aggregate-defect-trace/results/verification.json",
+      "sha256": "593d339f0ff589cada6385c47aa9b03b88b6f41333e286d508bc9ba78eb4ef99",
+      "label": "Actual aggregate bound for the same rational defect trace",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
     "linux-integrated"
   ],
   "claims": [
+    {
+      "id": "aggregate-actual-gap",
+      "title": "Same-chain bounded-aspect refinement",
+      "english_claim": "The actual canonical rational defect trace has coefficient 34848*d^5*(m+n-2)^3; its squared aspect theorem gives inverse-gap allowance 34848*A^(3/2)*d^(13/2) when (m+n-2)^2<=A*d.",
+      "quantity": "Inverse gap ≤ 34848 A^(3/2)d^(13/2); exact shape bound 34848d⁵(m+n−2)³",
+      "hypotheses": [
+        "Finite ordered dimensions m,n≥2; natural margins; p≥2 small cells; nonempty positive defect support; U=11d(m+n−2), L=7; exact completion counts. A≥0 and (m+n−2)²≤Ad; fixed A for the d^6.5 asymptotic reading."
+      ],
+      "limitations": [
+        "The Lean aspect statement is squared. Same canonical proposal Q=4p−3 in both completion branches. Take the minimum with the earlier shape bound; thin shapes retain d⁸. Complete sampler/runtime integration remains open."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/aggregate-defect-trace.md",
+        "research/aggregate-defect-trace/formal/Research/AggregateShapeTrace.lean",
+        "research/aggregate-defect-trace/formal/Research/AggregateAspectTrace.lean",
+        "research/aggregate-defect-trace/formal/Research/AggregateDefectTrace.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.AggregateDefectTrace.state_variance_aggregate",
+          "module": "Research.AggregateDefectTrace",
+          "source": "research/aggregate-defect-trace/formal/Research/AggregateDefectTrace.lean"
+        },
+        {
+          "name": "Math115.AggregateDefectTrace.actualRationalTrace_poincare_aggregate_shape",
+          "module": "Research.AggregateShapeTrace",
+          "source": "research/aggregate-defect-trace/formal/Research/AggregateShapeTrace.lean"
+        },
+        {
+          "name": "Math115.AggregateDefectTrace.actualRationalTrace_poincare_aggregate_aspect_sq",
+          "module": "Research.AggregateAspectTrace",
+          "source": "research/aggregate-defect-trace/formal/Research/AggregateAspectTrace.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "aggregate-defect-trace",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
     {
       "id": "retained-defect-gap",
       "title": "Actual rational defect trace",
@@ -140,14 +193,14 @@
     },
     {
       "id": "aggregate-incidence-gap",
-      "title": "Bounded-aspect refinement",
+      "title": "Sharper reviewed aspect coefficient",
       "english_claim": "Grouping actual completed-defect repair incidences gives a rational inverse-gap allowance 15488*A^(3/2)*d^(13/2) on bounded-aspect rectangles; dyadic rounding doubles it.",
       "quantity": "Inverse gap ≤ 15488 A^(3/2)d^(13/2)",
       "hypotheses": [
         "Ordinary equal-total margins; m,n≥2; nonempty positive defect branch; (m+n−2)²≤Ad; U=11d(m+n−2), L=7. Reference proposal 1/[2(4p−3)]; unit branch uses its smaller degree allowance 2(m+n)−3. Ideal completions."
       ],
       "limitations": [
-        "Reviewed AI mathematical derivation with exact finite checks. The completed-table moment aggregation and sharper unit normalization still need physical Lean assembly. This is not a complete sampler runtime bound."
+        "Reviewed AI mathematical derivation with exact finite checks. Its sharper orientation estimates and separate unit proposal remain outside the compiled 34848 theorem. This is not a complete sampler runtime bound."
       ],
       "evidence_class": "reviewed_mathematics",
       "sources": [

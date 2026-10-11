@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "modules": [
+    {
+      "module": "Research.ResidualSelectedBudget",
+      "public_source": "research/aggregate-defect-trace/formal/Research/ResidualSelectedBudget.lean",
+      "source_sha256": "388770baf45c33533408a6bcd4487505026a01dffa260b8895aaf50c6f42e95d"
+    },
+    {
+      "module": "Research.CompletedRepairInjection",
+      "public_source": "research/aggregate-defect-trace/formal/Research/CompletedRepairInjection.lean",
+      "source_sha256": "23f128cf47d3fa64f272eef4b77a7f328653a785ad64434700931f83bbc37f67"
+    },
+    {
+      "module": "Research.CompletedRepairMoment",
+      "public_source": "research/aggregate-defect-trace/formal/Research/CompletedRepairMoment.lean",
+      "source_sha256": "36072e1eee5c9cf9f99a6d3851a84a09944bb1224c3dc32a7142d0cc891a8a26"
+    },
+    {
+      "module": "Research.AggregateCorrectionCap",
+      "public_source": "research/aggregate-defect-trace/formal/Research/AggregateCorrectionCap.lean",
+      "source_sha256": "382335dc24b498c8e40901325c8b137b82af5c5fe5aa1b69c028adea3d7cbb4c"
+    },
+    {
+      "module": "Research.UniformContextVariance",
+      "public_source": "research/aggregate-defect-trace/formal/Research/UniformContextVariance.lean",
+      "source_sha256": "214d71035eadbe9527e4126755a332a986bbfe0ce0e35f3566a1453e54766f53"
+    },
+    {
+      "module": "Research.AggregateDefectTrace",
+      "public_source": "research/aggregate-defect-trace/formal/Research/AggregateDefectTrace.lean",
+      "source_sha256": "79c1e9d712a0eee964b942cf8564a9de78ff0c8e1bbf0858e1c50ba74d2675f5"
+    },
+    {
+      "module": "Research.AggregateShapeTrace",
+      "public_source": "research/aggregate-defect-trace/formal/Research/AggregateShapeTrace.lean",
+      "source_sha256": "49cc9c5e917199b0ad1591d998491e8427777aae522ca65fa197ca9816e3b717"
+    },
+    {
+      "module": "Research.AggregateAspectTrace",
+      "public_source": "research/aggregate-defect-trace/formal/Research/AggregateAspectTrace.lean",
+      "source_sha256": "e4e829b054f71c059e9b3064151b06f7d63569c3d526a36441f2a9c42e3e6414"
+    }
+  ]
+}

@@ -17,7 +17,7 @@ and `C₀=12672000000·37^62`:
 | Pinned upstream | `W ≤ 344^644 S^1288` | `1288·natDegree(P_U)`, still symbolic |
 | This repo's compiled d¹⁷ route | `W ≤ C₀·5^85 S^170` | `170·natDegree(P_L)`, still symbolic |
 | Dense-compatible d²⁵ chain | No separate assembled bit-bank theorem | Unknown |
-| New compiled rational d⁸ defect chain; reviewed d^6.5 at bounded aspect | Frozen older sampler supplies completion availability; new adapter/outer-program composition still open | Unknown |
+| Same compiled rational defect chain: d⁸ generally; d^6.5 at bounded aspect | Frozen older sampler supplies completion availability; new adapter/outer-program composition still open | Unknown |
 
 The two bank bounds use the same `S` and include every reserved transition,
 completion retry, terminal draw and unused bit. They are upper allowances,
@@ -26,11 +26,20 @@ polynomials `P_U` and `P_L` belong to different complete programs. The detailed
 [schedules and source map](#three-routes-with-the-cost-models-kept-separate)
 below make this comparison reproducible without inferring it from gap powers.
 
-Six actual draw certificates remain open. The [actual branch-selection
+For the changed defect chain, the [new actual aggregate theorem](aggregate-defect-trace.md)
+has coefficient `34848d⁵s³`, compared with the preceding `3872d⁶s²`,
+where `s=m+n−2`. Their old/new ratio is `d/(9s)`; use the minimum.
+These are bounds for the same kernel and improve the bounded-aspect exponent
+from 7 to 6.5. Both retain exponent 8 for thin shapes. They do not update
+either complete bit-bank row above.
+
+Five actual draw certificates remain open. The [actual branch-selection
 certificate](../research/runtime-degree/checkpoints/actual-branch-degree-v1/)
 now bounds its exact program's charged cost plus Boolean output weight by a
 polynomial of degree at most 1008, for every pair of natural margin lists.
-The checked complete count certificate is `e=1008`; the conditional local
+The [actual matrix printer](../research/runtime-degree/checkpoints/actual-printer-degree-v1/)
+has degree at most 4 for every natural-number matrix list, including encoded
+output. The checked complete count certificate is `e=1008`; the conditional local
 runtime degree is `340·max(1008,t)` until the
 complete draw certificate `t` is supplied. Even a common certificate `k=1008`
 for every remaining field would give an enormous degree through the current
@@ -101,7 +110,7 @@ The improvement separates computation cost from output size. The fresh Boolean w
 
 The two affine source modules passed ordinary native compilation, and their ordered six-name and four-name axiom checks passed. Independent AI saved-artifact review passed. This helper evidence is separate from the expanded default Linux receipt and strict Comparator acceptance; the earlier packets and failed attempts remain unchanged.
 
-The [historical seven-field handoff](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/README.md#remaining-numerical-draw-certificates) identifies the exact realizers and their required costs. The later [branch-selection certificate](../research/runtime-degree/checkpoints/actual-branch-degree-v1/) closes its `branch` field with degree 1008 and a fresh 20-name native audit. Six remain: printer, initial configuration, greedy fallback, reference packed trial, unit packed trial and retryWords. The count certificate covers computing the reserved-bit number and encoding it in binary for every literal input. It does not bound generating the full numeric bank by degree 1008. These packets have separate evidence and reproduction instructions outside the unchanged default Linux receipt.
+The [historical seven-field handoff](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/README.md#remaining-numerical-draw-certificates) identifies the exact realizers and their required costs. The later [branch-selection certificate](../research/runtime-degree/checkpoints/actual-branch-degree-v1/) closes its `branch` field with degree 1008 and a fresh 20-name native audit. The [actual printer certificate](../research/runtime-degree/checkpoints/actual-printer-degree-v1/) closes `printer` with degree 4 and 25 named axiom/type checks. Five remain: initial configuration, greedy fallback, reference packed trial, unit packed trial and retryWords. The count certificate covers computing the reserved-bit number and encoding it in binary for every literal input. It does not bound generating the full numeric bank by degree 1008. These packets have separate evidence and reproduction instructions outside the unchanged default Linux receipt.
 
 ## A common public size measure
 

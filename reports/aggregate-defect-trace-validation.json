@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "recorded_utc": "2026-10-11T21:22:19.675035+00:00",
+  "source_checkout_base_commit": "1979c02a418425387b0c9f60afc556470b50c9cf",
+  "source_sha256": {
+    "claims.json": "8f69813ae532ebaa00536f438bb0662e0798528989dae3796b97c07bd01cb73a",
+    "scripts/claims_ledger.py": "b0afc84de7a519376d27730280c4e655c8ec49e949f3290729bb14e80739fbf0",
+    "tests/test_claims_ledger.py": "b921aa971b32964a55f8831bb725bfe394c09c74d6bb56d7677ddb9883dc0532",
+    "research/repair-accept/verify.py": "050ebe19241b8d3ec1b68e00feb6a4176b9c024a7773c2e195b0729461e0515a",
+    "docs/aggregate-defect-trace.md": "f0d8ab77dc4db591968131ce691d2dfc6999e58cc77160418d9a69f59d3e6b4e",
+    "docs/aggregate-defect-trace-review.md": "088f4e5dbb410f9addaba566785897c937ead25f5afe8d315c91bb19ea738f8d"
+  },
+  "artifact_sha256": {
+    "research/aggregate-defect-trace/results/verification.json": "593d339f0ff589cada6385c47aa9b03b88b6f41333e286d508bc9ba78eb4ef99",
+    "research/aggregate-defect-trace/source-bindings.json": "9ed3b89f2ab0e1e218caa3d96b42cf3589304ffdc61781d716c1c8b0986e210b",
+    "research/runtime-degree/checkpoints/actual-printer-degree-v1/manifest.json": "345648960362fd5bff792a940177379567f273adafbf89e5d8920aea9b6c155f",
+    "research/runtime-degree/checkpoints/actual-printer-degree-v1/verification.json": "2cb6394dceea3d26e412ed4c5649da5b202075e08988abc57da6272c1650c4d1",
+    "research/strict-sampler-checkpoints/snapshot-comparison-v1/manifest.json": "ba420df8f952916b3cf0d8bc67edc6283ef655e8e897b205077afa3352cf1753",
+    "reports/aggregate-defect-trace-targeted.log.gz": "f5d6f6d8c1e11d6ae103799403a51bfa27235556a7d3041d96859f277971ce33",
+    "reports/aggregate-defect-trace-claims-check.log.gz": "62cff431c527678cf91b794d252b01e04b6863e18f37162a7fbc193e9013b5ce"
+  },
+  "verification": {
+    "layout": "Clean explicit public-source export of the base commit plus this checkpoint; private research and unrelated application work excluded.",
+    "python": "3.14.3",
+    "stages": [
+      {
+        "command": "PYTHONPATH=src python3 -m unittest discover -s tests -p test_claims_ledger.py -v",
+        "exit_code": 0,
+        "tests_run": 29,
+        "tests_passed": 29,
+        "tests_seconds": 10.861
+      },
+      {
+        "command": "make claims-check",
+        "exit_code": 0
+      }
+    ],
+    "scope": "All affected claim/receipt validation tests and generated README check passed. The added formal scope was exercised by its own fresh compilation and audit. Existing ten runner scope definitions/source resolutions are unchanged.",
+    "full_suite_repeated": false,
+    "reason": "Production Python is unchanged. The preceding checkpoint records the full 422-test make verify run, and its hosted Python matrix also passed. This checkpoint adds Lean evidence, an additive runner scope and documentation.",
+    "post_test_changes": "Only the printer source-review link/manifest and this validation report/current status link were finalized afterward; proved source, claims and test bytes were unchanged.",
+    "logs": "Lossless gzip copies; no path substitution was needed."
+  },
+  "formal": {
+    "receipt": "research/aggregate-defect-trace/results/verification.json",
+    "research_modules": 49,
+    "fresh_compilations": 51,
+    "selected_declarations": 1264,
+    "selected_theorems": 1118,
+    "headline_dependency_closures": 8,
+    "headlines": [
+      "Math115.AggregateDefectTrace.state_variance_aggregate",
+      "Math115.AggregateDefectTrace.actualRationalTrace_poincare_aggregate_shape",
+      "Math115.AggregateDefectTrace.actualRationalTrace_poincare_aggregate_aspect_sq"
+    ],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+  },
+  "mathematics": {
+    "new_same_chain_coefficient": "34848*d^5*(m+n-2)^3",
+    "previous_same_chain_shape_coefficient": "3872*d^6*(m+n-2)^2",
+    "old_over_new_ratio": "d/(9*(m+n-2))",
+    "use": "Take the minimum of the two bounds; the new constant is not uniformly smaller.",
+    "aspect_certificate": "Lean proves the squared variance/energy inequality with factor 34848^2*A^3*d^13 when A>=0 and (m+n-2)^2<=A*d. Nonnegative variance and energy yield the d^(13/2) inverse-gap interpretation for fixed A.",
+    "hypotheses": "m,n>=2, at least two small cells, nonempty positive defect support, U=11*d*(m+n-2), L=7; ideal completions.",
+    "general_exponent": 8,
+    "bounded_aspect_previous_exponent": 7,
+    "bounded_aspect_new_exponent": 6.5,
+    "scope": "Actual canonical rational trace with the same Q=4p-3 normalization in both branches. Not a new complete encoded sampler or runtime theorem."
+  },
+  "runtime_degree": {
+    "packet": "research/runtime-degree/checkpoints/actual-printer-degree-v1",
+    "status": "passed",
+    "actual_realizer": "OAI.ContingencyTables.GreedyFeasibleTable.printMatrixRealizer",
+    "degree": 4,
+    "fresh_modules": 2,
+    "named_axiom_and_type_checks": 25,
+    "input_scope": "All List (List Nat), including ragged and empty inputs; charged work plus actual encoded Symbol output.",
+    "remaining_draw_certificates": [
+      "initial",
+      "fallback",
+      "referenceTrial",
+      "unitTrial",
+      "retryWords"
+    ],
+    "complete_runtime_degree": null,
+    "scope": "Ordinary local compilation and named transitive axiom/type audit with trusted reused imports; no default-target or strict replay."
+  },
+  "comparator": {
+    "packet": "research/strict-sampler-checkpoints/snapshot-comparison-v1",
+    "original_snapshot_seconds": 25.6491394,
+    "standalone_candidate_snapshot_seconds": 0.1979094,
+    "candidate_index_setup_seconds": 0.4151186,
+    "unchanged_complete_guard_seconds": 27.0110501,
+    "matched_identities": 131021,
+    "candidate_installed": false,
+    "strict_sampler_acceptance": false,
+    "scope": "Stable-filesystem complete-cache identity comparison, authenticated startup and plan in a bounded hardware-accelerated Linux VM. Not a concurrent-mutation guarantee or complete-checker speedup; no proof, export or kernel replay."
+  },
+  "review": {
+    "kind": "Separate AI agents reviewing AI-generated mathematics and source-bound evidence. No human expert review is claimed.",
+    "scope": "Actual aggregate repair/variance/trace argument and sources, fresh public audit, and exact actual printer cost/output proof and saved artifacts."
+  },
+  "preserved_scope": "The earlier complete d17 sampler re-proves upstream’s existential theorem. Numerical complete runtime remains unknown. The default Linux 1511 named audits/22 headline closures and all historical packets keep their original scopes; overlapping research counts are not added."
+}

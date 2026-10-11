@@ -95,7 +95,8 @@ and block sampling; no multiplication theorem is assumed to transfer.
 [affine degree refinement](composed-complexity.md) already separates output size
 from the cost of computing that output's length. This is closely aligned with
 the multiplication sequence's successful removal of composition overcharges.
-The remaining seven draw-cost certificates are a concrete next target. Faster
+Five draw-cost certificates remain after the actual branch-selection and
+[matrix-printer certificates](../research/runtime-degree/checkpoints/actual-printer-degree-v1/). Faster
 integer multiplication alone is unlikely to remove exponents created by coarse
 loop/encoding/composition bounds; the actual realizers need to be inspected.
 

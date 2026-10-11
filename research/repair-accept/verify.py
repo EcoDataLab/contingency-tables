@@ -143,8 +143,29 @@ SCOPES["physical-defect-trace"] = (
     ["OAI.Combinatorics.ContingencyTables.Sampling.SmallPatternArithmetic"],
 )
 
+# The aggregate packet preserves the same rational physical defect trace and
+# adds an original-margin correction budget with eight new source modules.
+SCOPES["aggregate-defect-trace"] = (
+    [*SCOPES["physical-defect-trace"][0], "Research.ResidualSelectedBudget",
+     "Research.CompletedRepairInjection", "Research.CompletedRepairMoment",
+     "Research.AggregateCorrectionCap", "Research.UniformContextVariance",
+     "Research.AggregateDefectTrace", "Research.AggregateShapeTrace", "Research.AggregateAspectTrace"],
+    ["Math115.CompletedRepairInjection.repairToChild_large_crossing",
+     "Math115.AggregateCorrectionCap.physical_correction_le_aggregate_adjacent",
+     "Math115.AggregateDefectTrace.uniformCorrectionCap_aggregate",
+     "Math115.AggregateDefectTrace.state_variance_aggregate",
+     "Math115.AggregateDefectTrace.actualRationalTrace_poincare_aggregate",
+     "Math115.AggregateDefectTrace.actualRationalTrace_poincare_aggregate_shape",
+     "Math115.AggregateDefectTrace.actualRationalTrace_poincare_aggregate_aspect_sq",
+     "Math115.PhysicalDefectTrace.actualRationalTrace_poincare_d8"],
+    [*SCOPES["physical-defect-trace"][2]],
+)
+
 # Reuse source files shared with earlier packets instead of copying them.
 SOURCE_ROOTS = {
+    **{module: ROOT / "research/physical-defect-trace/formal"
+       for module in SCOPES["physical-defect-trace"][0]
+       if module not in SCOPES["physical-spectral"][0]},
     **{module: ROOT / "research/physical-spectral/formal"
        for module in SCOPES["physical-spectral"][0]},
     **{module: ROOT / "research/retained-root/formal"

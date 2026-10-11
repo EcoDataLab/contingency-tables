@@ -1,6 +1,18 @@
 # Formal verification of the #115 refinements
 
-The newest [actual rational defect-trace packet](../research/physical-defect-trace/)
+The new [aggregate trace packet](../research/aggregate-defect-trace/) proves
+`34848d⁵(m+n−2)³` for the same actual rational defect trace and a squared
+bounded-aspect certificate expressing d^6.5. Its eight new modules derive
+the completed-table budget, actual correction cap, full-state variance and
+final normalization. A fresh combined public-source build passed for all 49
+research modules, the pinned helper and the auditor. Its environment audit
+passed with 1,264 selected declarations (1,118 theorems) and eight full
+headline closures, using only standard axioms. Separate AI source review
+passed. The
+[statement map](aggregate-defect-trace.md) records its exact hypotheses and
+the comparison with the preceding shape bound.
+
+The preceding [actual rational defect-trace packet](../research/physical-defect-trace/)
 freshly compiles its 41 research modules, the pinned upstream helper and the
 environment auditor. It enumerates 1,147 selected declarations (1,011 theorems)
 and nine complete headline dependency closures, including the actual
@@ -13,14 +25,18 @@ The separate [actual branch-selection checkpoint](../research/runtime-degree/che
 proves a degree-1008 bound for the unchanged program's charged cost plus encoded
 output on every pair of natural margin lists. Its two source modules and fresh
 20-name transitive axiom audit passed ordinary native compilation with trusted
-compiler/cache inputs. This closes one of the seven former draw obligations;
-six and the numerical complete sampler degree remain open. It is outside the
-default Linux and strict Comparator scopes.
+compiler/cache inputs. The [actual matrix-printer checkpoint](../research/runtime-degree/checkpoints/actual-printer-degree-v1/)
+separately proves degree 4 for charged work plus encoded output on every
+`List (List Nat)`, with both new modules compiled and 25 named axiom/type
+checks passed. These close two of the seven former draw obligations; five
+and the numerical complete sampler degree remain open. Both packets are
+outside the default Linux and strict Comparator scopes.
 
-The newer [aggregate incidence](aggregate-incidence.md) and
+The sharper [aggregate incidence](aggregate-incidence.md) and
 [zero-range subclass](zero-range-subclass.md) are reviewed mathematical
 results with their formalization limits stated separately. Current strict
-checking infrastructure status is in the [accelerated planning receipt](../research/strict-sampler-checkpoints/accelerated-plan-v1/);
+checking infrastructure status is in the [metadata comparison](../research/strict-sampler-checkpoints/snapshot-comparison-v1/)
+and [accelerated planning receipt](../research/strict-sampler-checkpoints/accelerated-plan-v1/);
 it establishes no full proof or Comparator acceptance. Earlier checkpoint
 statuses below retain their historical scopes.
 
