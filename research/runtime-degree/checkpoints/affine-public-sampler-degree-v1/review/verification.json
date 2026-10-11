@@ -1,0 +1,1581 @@
+{
+  "capture_member_count": 194,
+  "captured_new_root_snapshot_entries": 101,
+  "checks": [
+    {
+      "check": "final immutable capture manifest",
+      "passed": true
+    },
+    {
+      "check": "194 unique capture members",
+      "passed": true
+    },
+    {
+      "check": "all 194 member byte sizes and hashes",
+      "passed": true
+    },
+    {
+      "check": "exact reviewed v2 config",
+      "passed": true
+    },
+    {
+      "check": "all 14 runtime inputs match reviewed bytes",
+      "passed": true
+    },
+    {
+      "check": "exact two source/audit specs",
+      "passed": true
+    },
+    {
+      "check": "terminal exact two-module/two-audit success",
+      "passed": true
+    },
+    {
+      "check": "exact terminal module roster",
+      "passed": true
+    },
+    {
+      "check": "capture terminal state and empty process list",
+      "passed": true
+    },
+    {
+      "check": "original remote public02 allowlist identity",
+      "passed": true
+    },
+    {
+      "check": "exact original 116-file public02 intake",
+      "passed": true
+    },
+    {
+      "check": "all original 116 files still hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "local collection pollution excluded",
+      "passed": true
+    },
+    {
+      "check": "accepted R10 authentication scope retained",
+      "passed": true
+    },
+    {
+      "check": "accepted public02 source binding",
+      "passed": true
+    },
+    {
+      "check": "accepted public02 original and new projected object",
+      "passed": true
+    },
+    {
+      "check": "accepted public02 raw receipt identities",
+      "passed": true
+    },
+    {
+      "check": "accepted public02 terminal receipt consistency",
+      "passed": true
+    },
+    {
+      "check": "reviewed exact axiom parser bytes",
+      "passed": true
+    },
+    {
+      "check": "exact axiom allowlist",
+      "passed": true
+    },
+    {
+      "check": "accepted public02 raw three-name audit replay",
+      "passed": true
+    },
+    {
+      "check": "authenticated external runtime inputs retained in pre-run snapshot",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: lib/lean/researchbounds/finiteworddegreebounds.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: lib/lean/researchbounds/freshbitdegreebounds.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: lib/lean/researchbounds/polynomialcompilerdegree.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: lib/lean/researchbounds/scalaroutputsizedegree.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: lib/lean/researchbounds/treearithmeticdegree.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: lib/lean/researchbounds/treedegreebounds.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: lib/lean/researchbounds/wordcountseeddegrees.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: lib/lean/researchbounds/publicsamplerdegree.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionacceptance.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionadjustment.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionbooleanretry.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completioncountbound.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionencodingsize.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionouterschedule.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionpublicsize.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionrandombudget.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionrandombudgetarithmetic.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionretrybudget.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionsamplerprogram.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionsamplersemantics.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/completionschedulearithmetic.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/denselatticecompletion.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/denselatticecompletionprovedinputs.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/dilatedcompletionmargins.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/globaldisplayownership.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/idealoraclescales.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/idealrepairrefinement.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticecellvolume.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticecompletion.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticecompletionaccuracy.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticecompletionfinite.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticecompletionlaw.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticecompletionprogram.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticeemptyoutput.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticeouterprogram.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticeoutersemantics.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticeprofilestep.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticeprofilewalk.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticesampler.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticesamplerpreparation.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticescheduleprogram.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticeunitouter.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticeunitstep.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/latticeunitwalk.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/listedlatticecompletion.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/paddedmarginbridge.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/paddinggrowth.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/paddinggrowthalgebra.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/pathdistancesum.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/pathvariance.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalapproximateoracle.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalbooleansampler.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalcompletionoracle.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalcomputedproposal.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalemptycompletion.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalexposurevariance.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalfinitewalk.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalfullvariance.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicallatticecompletion.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalleafenergy.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalrationalkernel.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalreferenceboolean.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalreferencewalk.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalrepairrefinement.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalstatenonempty.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalstationarylaw.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalstationarymass.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/physicalstationarysuccess.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/prefixfloorcover.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/prefixtransportation.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/publiclatticesampler.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/quadraticcoefficient.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/reducedallsmallchain.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/reducedsmallchain.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/referenceedgeacceptance.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/repairvariancerefinement.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/scalecertificate.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/smallchaingap.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/smallentryswitching.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/smallentrytail.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/survivalalgebra.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/switchingfinitesums.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/transportrefinement.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: math115-projection/math115/upstreamownershipbridge.olean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: native_batch_runner.py",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: accepted_public.py",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: owned_tree_executor.py",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: native_job_preflight.py",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: degree_diagnostic_v2.py",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: namespace_library.py",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: check_lean_axioms.py",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: source-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: original-source-manifest.json",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: original-audit/researchbounds/affineonlinedegreenamedaudit.lean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: source/researchbounds/affinefiniteworddegreebounds.lean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: audit-source/checkpoint12audits/researchbounds_affinefiniteworddegreebounds.lean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: source/researchbounds/affinepublicsamplerdegree.lean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: audit-source/checkpoint12audits/researchbounds_affinepublicsamplerdegree.lean",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: config.json",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: staged-inputs.json",
+      "passed": true
+    },
+    {
+      "check": "captured pre-run input snapshot: preflight/receipt.json",
+      "passed": true
+    },
+    {
+      "check": "all 116 prior public02 pins in pre-run snapshot",
+      "passed": true
+    },
+    {
+      "check": "compiler runtime identity bound to snapshot",
+      "passed": true
+    },
+    {
+      "check": "exact controlled coherent LEAN_PATH",
+      "passed": true
+    },
+    {
+      "check": "ResearchBounds exact projected sibling roster",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: ResearchBounds.FiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: ResearchBounds.FiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: ResearchBounds.FreshBitDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: ResearchBounds.FreshBitDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: ResearchBounds.PolynomialCompilerDegree",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: ResearchBounds.PolynomialCompilerDegree",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: ResearchBounds.ScalarOutputSizeDegree",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: ResearchBounds.ScalarOutputSizeDegree",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: ResearchBounds.TreeArithmeticDegree",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: ResearchBounds.TreeArithmeticDegree",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: ResearchBounds.TreeDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: ResearchBounds.TreeDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: ResearchBounds.WordCountSeedDegrees",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: ResearchBounds.WordCountSeedDegrees",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: ResearchBounds.PublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: ResearchBounds.PublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "Math115 exact projected sibling roster",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionAcceptance",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionAcceptance",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionAdjustment",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionAdjustment",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionBooleanRetry",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionBooleanRetry",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionCountBound",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionCountBound",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionEncodingSize",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionEncodingSize",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionOuterSchedule",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionOuterSchedule",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionPublicSize",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionPublicSize",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionRandomBudget",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionRandomBudget",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionRandomBudgetArithmetic",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionRandomBudgetArithmetic",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionRetryBudget",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionRetryBudget",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionSamplerProgram",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionSamplerProgram",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionSamplerSemantics",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionSamplerSemantics",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.CompletionScheduleArithmetic",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.CompletionScheduleArithmetic",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.DenseLatticeCompletion",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.DenseLatticeCompletion",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.DenseLatticeCompletionProvedInputs",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.DenseLatticeCompletionProvedInputs",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.DilatedCompletionMargins",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.DilatedCompletionMargins",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.GlobalDisplayOwnership",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.GlobalDisplayOwnership",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.IdealOracleScales",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.IdealOracleScales",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.IdealRepairRefinement",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.IdealRepairRefinement",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeCellVolume",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeCellVolume",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeCompletion",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeCompletion",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeCompletionAccuracy",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeCompletionAccuracy",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeCompletionFinite",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeCompletionFinite",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeCompletionLaw",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeCompletionLaw",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeCompletionProgram",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeCompletionProgram",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeEmptyOutput",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeEmptyOutput",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeOuterProgram",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeOuterProgram",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeOuterSemantics",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeOuterSemantics",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeProfileStep",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeProfileStep",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeProfileWalk",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeProfileWalk",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeSampler",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeSampler",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeSamplerPreparation",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeSamplerPreparation",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeScheduleProgram",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeScheduleProgram",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeUnitOuter",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeUnitOuter",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeUnitStep",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeUnitStep",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.LatticeUnitWalk",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.LatticeUnitWalk",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.ListedLatticeCompletion",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.ListedLatticeCompletion",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PaddedMarginBridge",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PaddedMarginBridge",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PaddingGrowth",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PaddingGrowth",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PaddingGrowthAlgebra",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PaddingGrowthAlgebra",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PathDistanceSum",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PathDistanceSum",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PathVariance",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PathVariance",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalApproximateOracle",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalApproximateOracle",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalBooleanSampler",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalBooleanSampler",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalCompletionOracle",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalCompletionOracle",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalComputedProposal",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalComputedProposal",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalEmptyCompletion",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalEmptyCompletion",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalExposureVariance",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalExposureVariance",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalFiniteWalk",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalFiniteWalk",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalFullVariance",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalFullVariance",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalLatticeCompletion",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalLatticeCompletion",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalLeafEnergy",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalLeafEnergy",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalRationalKernel",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalRationalKernel",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalReferenceBoolean",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalReferenceBoolean",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalReferenceWalk",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalReferenceWalk",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalRepairRefinement",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalRepairRefinement",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalStateNonempty",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalStateNonempty",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalStationaryLaw",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalStationaryLaw",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalStationaryMass",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalStationaryMass",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PhysicalStationarySuccess",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PhysicalStationarySuccess",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PrefixFloorCover",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PrefixFloorCover",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PrefixTransportation",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PrefixTransportation",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.PublicLatticeSampler",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.PublicLatticeSampler",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.QuadraticCoefficient",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.QuadraticCoefficient",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.ReducedAllSmallChain",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.ReducedAllSmallChain",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.ReducedSmallChain",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.ReducedSmallChain",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.ReferenceEdgeAcceptance",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.ReferenceEdgeAcceptance",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.RepairVarianceRefinement",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.RepairVarianceRefinement",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.ScaleCertificate",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.ScaleCertificate",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.SmallChainGap",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.SmallChainGap",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.SmallEntrySwitching",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.SmallEntrySwitching",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.SmallEntryTail",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.SmallEntryTail",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.SurvivalAlgebra",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.SurvivalAlgebra",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.SwitchingFiniteSums",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.SwitchingFiniteSums",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.TransportRefinement",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.TransportRefinement",
+      "passed": true
+    },
+    {
+      "check": "projected pinned target: Math115.UpstreamOwnershipBridge",
+      "passed": true
+    },
+    {
+      "check": "projected original source binding in snapshot: Math115.UpstreamOwnershipBridge",
+      "passed": true
+    },
+    {
+      "check": "one exact ten-object final ResearchBounds prefix",
+      "passed": true
+    },
+    {
+      "check": "attempts exact terminal receipt: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts exact actual argv: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts unchanged exact source: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts exact direct dependency set: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts dependency digest: Init",
+      "passed": true
+    },
+    {
+      "check": "attempts dependency digest: ResearchBounds.FiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts dependency path: ResearchBounds.FiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts successful bounded exit: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts exact fresh admission and environment: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts owned suspended-assignment evidence: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts child absent and owned tree empty: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts exact clean streams: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempt/published object: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "audits exact terminal receipt: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "audits exact actual argv: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "audits unchanged exact source: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "audits exact direct dependency set: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "audits dependency digest: Init",
+      "passed": true
+    },
+    {
+      "check": "audits dependency digest: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "audits dependency path: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "audits successful bounded exit: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "audits exact fresh admission and environment: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "audits owned suspended-assignment evidence: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "audits child absent and owned tree empty: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "audits exact clean streams: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "exact requested/parsed audit records: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "sequential actual stage chronology: ResearchBounds.AffineFiniteWordDegreeBounds/audits",
+      "passed": true
+    },
+    {
+      "check": "attempts exact terminal receipt: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "attempts exact actual argv: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "attempts unchanged exact source: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "attempts exact direct dependency set: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "attempts dependency digest: Init",
+      "passed": true
+    },
+    {
+      "check": "attempts dependency digest: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts dependency path: ResearchBounds.AffineFiniteWordDegreeBounds",
+      "passed": true
+    },
+    {
+      "check": "attempts dependency digest: ResearchBounds.PublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "attempts dependency path: ResearchBounds.PublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "attempts successful bounded exit: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "attempts exact fresh admission and environment: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "attempts owned suspended-assignment evidence: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "attempts child absent and owned tree empty: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "attempts exact clean streams: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "attempt/published object: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "sequential actual stage chronology: ResearchBounds.AffinePublicSamplerDegree/attempts",
+      "passed": true
+    },
+    {
+      "check": "audits exact terminal receipt: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "audits exact actual argv: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "audits unchanged exact source: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "audits exact direct dependency set: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "audits dependency digest: Init",
+      "passed": true
+    },
+    {
+      "check": "audits dependency digest: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "audits dependency path: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "audits successful bounded exit: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "audits exact fresh admission and environment: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "audits owned suspended-assignment evidence: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "audits child absent and owned tree empty: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "audits exact clean streams: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "exact requested/parsed audit records: ResearchBounds.AffinePublicSamplerDegree",
+      "passed": true
+    },
+    {
+      "check": "sequential actual stage chronology: ResearchBounds.AffinePublicSamplerDegree/audits",
+      "passed": true
+    },
+    {
+      "check": "ordered original ten-name axiom requests/results",
+      "passed": true
+    },
+    {
+      "check": "no source admission/new-axiom/native evaluator tokens",
+      "passed": true
+    },
+    {
+      "check": "bounded complete actual stage sequence",
+      "passed": true
+    },
+    {
+      "check": "config-matched native preflight",
+      "passed": true
+    },
+    {
+      "check": "all exact five native preflight scenarios passed",
+      "passed": true
+    },
+    {
+      "check": "root-reported owner summary/cleanup hashes",
+      "passed": true
+    },
+    {
+      "check": "owner post-run no-owned-process cleanup",
+      "passed": true
+    },
+    {
+      "check": "all four actual children in owner cleanup",
+      "passed": true
+    },
+    {
+      "check": "capture remains immutable after review",
+      "passed": true
+    }
+  ],
+  "checks_passed": 363,
+  "elapsed_sum_seconds": 335.73759679996874,
+  "limits": [
+    "No remote, Lean, Git or public write was performed.",
+    "Uncaptured transitive external cache bytes were not locally rehashed; preserved snapshots and reviewed successful runtime checks are the evidence for those inputs.",
+    "No numerical complete-realizer degrees, normal-cache registration, human/Comparator acceptance or empirical sampler runtime claim is established."
+  ],
+  "ordered_audit_records": [
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffineFiniteWordDegree.source_all_weight"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffineFiniteWordDegree.preserved_pair_all_weight"
+    },
+    {
+      "axioms": [],
+      "name": "Math115.AffineFiniteWordDegree.completeOnlineDegree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffineFiniteWordDegree.complete_online_degree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffineFiniteWordDegree.machineTime_degree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffineFiniteWordDegree.completeOnlineDegree_le_original"
+    },
+    {
+      "axioms": [],
+      "name": "Math115.AffinePublicSamplerDegree.publicDegree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffinePublicSamplerDegree.publicDegree_le_original"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffinePublicSamplerDegree.machineTime_public_degree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffinePublicSamplerDegree.fixedMachineBoundedSampling_with_degree"
+    }
+  ],
+  "original_public02_binding_count": 116,
+  "snapshot_original_entry_count": 2389,
+  "stage_sequence": [
+    {
+      "elapsed_seconds": 82.65758899995126,
+      "kind": "attempts",
+      "maximum_working_set_gib": 3.1836776733398438,
+      "memory_samples": 82,
+      "minimum_observed_free_gib": 10.998672485351562,
+      "module": "ResearchBounds.AffineFiniteWordDegreeBounds",
+      "receipt_sha256": "5cbcaa449b4c082c629387bc3b218ae7f2db153891044fc81f337aa313c90984",
+      "source_sha256": "fb84234d6c666f9f64242c99b507fc41a46fca01d413a250f455233a2c820575"
+    },
+    {
+      "elapsed_seconds": 84.69753500004299,
+      "kind": "audits",
+      "maximum_working_set_gib": 3.1849288940429688,
+      "memory_samples": 84,
+      "minimum_observed_free_gib": 10.93389892578125,
+      "module": "ResearchBounds.AffineFiniteWordDegreeBounds",
+      "receipt_sha256": "e31e00c779ee55fbc8c839728286052471538c556350cbf6f53457225745f671",
+      "source_sha256": "2dc1f189bda47e1b45bab835454df9f7a331e6e6e799b91f3865fc4853e353bb"
+    },
+    {
+      "elapsed_seconds": 86.70025740005076,
+      "kind": "attempts",
+      "maximum_working_set_gib": 3.2619094848632812,
+      "memory_samples": 86,
+      "minimum_observed_free_gib": 10.809242248535156,
+      "module": "ResearchBounds.AffinePublicSamplerDegree",
+      "receipt_sha256": "f477d64ef9f745d58b223ec6a451873cdf81fddedf96b143639b6737b9e0f70a",
+      "source_sha256": "6187c873840d492b4559229cc362a6476a7260fbc0b1077cc3805910d5919361"
+    },
+    {
+      "elapsed_seconds": 81.68221539992373,
+      "kind": "audits",
+      "maximum_working_set_gib": 3.2175941467285156,
+      "memory_samples": 81,
+      "minimum_observed_free_gib": 10.75653076171875,
+      "module": "ResearchBounds.AffinePublicSamplerDegree",
+      "receipt_sha256": "7adddd6525e8793913f0570884bf9cd66d43f1a657244aeb9e9b45d396e2e3f3",
+      "source_sha256": "51ff317261cf2d80d885a0839ce3901ae6efd54ff176c6ae22707e8183bc72e6"
+    }
+  ],
+  "status": "scoped_saved_artifact_pass"
+}

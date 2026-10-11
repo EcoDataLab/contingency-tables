@@ -1,0 +1,431 @@
+{
+  "scope": "Exact22 compiled headline records; attached English labels copied from source-bound claim inputs, not independently interpreted",
+  "report_original_sha256": "e99076aab0a36c2f21623bf16fb882d07b264497e7dc5ac2f163386a44ff9e94",
+  "headlines": [
+    {
+      "name": "Math115.CompletionSamplerProgram.polynomial_draw",
+      "statement": "OAI.MatchingFPRAS.TreeTyped.PolynomialTime Math115.CompletionSamplerProgram.drawRealizer",
+      "defining_module": "Math115.CompletionSamplerProgram",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 9795,
+      "closure_sha256": "205b10a8695dee27c43dfdf840ef5fa5869189a415d71a8e195296b072be5454",
+      "declaration_record_sha256": "7e24acf581bb79a30e91fec9707acd40d6a635b3363de59fa609721fc248ee87",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.CompletionSamplerProgram.polynomial_draw",
+          "claim_id": "component-cost",
+          "title": "Encoded completion and schedule",
+          "english_claim": "The encoded completion draw and numeric schedule realizers have polynomial charged cost; completion semantics identifies output code and accuracy under dense margin hypotheses.",
+          "source": "claims.json at 5b4af402a281a9bc02a38adb168f7b0bfde5d3aa"
+        }
+      ]
+    },
+    {
+      "name": "Math115.CompletionSamplerSemantics.draw_semantics",
+      "statement": "∀ {m n : ℕ} (d : ℕ) (hd : 14 ≤ d) (R : Fin (m + 1) → ℕ) (P : Fin (n + 1) → ℕ) (htotal : ∑ i, R i = ∑ j, P j),\n  m + 1 ≤ d →\n    n + 1 ≤ d →\n      m * n ≤ d - 1 →\n        (∀ (i : Fin (m + 1)), (n + 1) * (3 * d) ≤ R i) →\n          (∀ (j : Fin (n + 1)), (m + 1) * (3 * d) ≤ P j) →\n            ∀ (h : ℕ),\n              (∀ (bits : Fin (Math115.DenseLatticeCompletion.completionBits d R P h) → Bool),\n                  Math115.CompletionSamplerProgram.draw\n                      (Math115.CompletionSamplerSemantics.parameters d R P h, List.ofFn bits) =\n                    OAI.ContingencyTables.DensePrograms.matrixCode\n                      ↑(Math115.CompletionSamplerSemantics.programTable d hd R P htotal h bits)) ∧\n                OAI.ContingencyTables.FirstSuccess.variation\n                    (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n                      (Math115.CompletionSamplerSemantics.programTable d hd R P htotal h))\n                    (Math115.LatticeCompletionAccuracy.originalUniform R P\n                      (OAI.ContingencyTables.GreedyFeasibleTable.table R P htotal)) ≤\n                  Math115.CompletionRetryBudget.dyadic h",
+      "defining_module": "Math115.CompletionSamplerSemantics",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 40568,
+      "closure_sha256": "95d74246ef6b791b9ad8d140df78e758843a5a75c2ae6c4d955b3fcced04579b",
+      "declaration_record_sha256": "8e0482f9ccda7fffe95a8d6b25b0f7e5ff2dede5b3cd1a657f6d93c8a56a2d08",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.CompletionSamplerSemantics.draw_semantics",
+          "claim_id": "component-cost",
+          "title": "Encoded completion and schedule",
+          "english_claim": "The encoded completion draw and numeric schedule realizers have polynomial charged cost; completion semantics identifies output code and accuracy under dense margin hypotheses.",
+          "source": "claims.json at 5b4af402a281a9bc02a38adb168f7b0bfde5d3aa"
+        }
+      ]
+    },
+    {
+      "name": "Math115.IdealRepairRefinement.feasibleChain_poincare_d17_refined",
+      "statement": "∀ {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J] (r : I → ℕ)\n  (c : J → ℕ) (htotal : ∑ i, r i = ∑ j, c j) (H : Math115.IdealOracleScales.IdealStates r c → ℝ),\n  (Math115.IdealOracleScales.feasibleChain r c htotal).variance H ≤\n    128 * 5 ^ 4 * ↑OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 17 *\n      (Math115.IdealOracleScales.feasibleChain r c htotal).energy H",
+      "defining_module": "Math115.IdealRepairRefinement",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 22070,
+      "closure_sha256": "1a89f067d21bb96119827f92f2107e2a7ac0a5921f3228c132f8c0a7e74bdfa6",
+      "declaration_record_sha256": "0c82e61cee0bb3362a9169d0c01d28544317b669b488226c1339db4f0835d958",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.IdealRepairRefinement.feasibleChain_poincare_d17_refined",
+          "claim_id": "ideal-inverse-gap",
+          "title": "Ideal auxiliary chain",
+          "english_claim": "The feasible ideal auxiliary chain satisfies variance at most 80000 d^17 times energy.",
+          "source": "claims.json at 5b4af402a281a9bc02a38adb168f7b0bfde5d3aa"
+        }
+      ]
+    },
+    {
+      "name": "Math115.LatticeBoundedSampling.boundedSampling",
+      "statement": "OAI.ContingencyTables.Algorithms.BoundedSamplingStatement",
+      "defining_module": "Math115.LatticeBoundedSampling",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 47593,
+      "closure_sha256": "7756487167a51888b8405a0f7c1f44d8ac1f1dea44d2aecaabe845f5e8cf1728",
+      "declaration_record_sha256": "f8e163ad5c8c031345243d3f283a731ae82081abe5f6b57aabc7fc107d5396f8",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.LatticeBoundedSampling.boundedSampling",
+          "claim_id": "complete-bounded-sampler",
+          "title": "Complete bounded sampler",
+          "english_claim": "One fixed public fair-bit machine halts with a feasible table on every random tape by a global polynomial time C*S^D; at that same time its output law has total variation at most 2^-h from uniform ordinary fixed-margin tables.",
+          "source": "frozen bounded-sampler claim fragment"
+        }
+      ]
+    },
+    {
+      "name": "Math115.LatticeSampler.draw",
+      "statement": "Math115.LatticeSampler.Input → OAI.ContingencyTables.DensePrograms.MatrixCode",
+      "defining_module": "Math115.LatticeSampler",
+      "kind": "definition",
+      "axioms": [
+        "propext"
+      ],
+      "closure_size": 1160,
+      "closure_sha256": "88629946d170246a67a572d9ade65305fd87ef68c3b3fe3fa449a3f8f948c015",
+      "declaration_record_sha256": "165df9ba8bf98ca8614dd115ea9ddef6d245c48b121f7280a28ed3e0c4e5931e",
+      "source_bound_English_labels": []
+    },
+    {
+      "name": "Math115.LatticeSampler.drawRealizer",
+      "statement": "OAI.MatchingFPRAS.TreeTyped.Realizer Math115.LatticeSampler.draw",
+      "defining_module": "Math115.LatticeSampler",
+      "kind": "definition",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 8412,
+      "closure_sha256": "a28f4c7d79d358b8e41440b0043b46747a1e7c98522b7492570e65ad14c22ab9",
+      "declaration_record_sha256": "03fcc1bb0d79142c25f113d016394ecd574e6f54cf96e97c36dca0a153cfb21a",
+      "source_bound_English_labels": []
+    },
+    {
+      "name": "Math115.LatticeSampler.draw_code",
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (htotal : ∑ i, r i = ∑ j, c j) (h : ℕ)\n  (bits :\n    Fin\n        (Math115.PhysicalReferenceBoolean.outerBits r\n          (Math115.CompletionOuterSchedule.walkCount (Math115.CompletionOuterSchedule.physicalSmallCount r c)\n            OAI.ContingencyTables.CompletionCounts.dimensionAllowance\n            (Math115.CompletionOuterSchedule.physicalMassBase r) h)\n          (Math115.CompletionOuterSchedule.restartCount (Math115.CompletionOuterSchedule.physicalSmallCount r c) h)\n          (Math115.CompletionOuterSchedule.stepPrecision (Math115.CompletionOuterSchedule.physicalSmallCount r c)\n            OAI.ContingencyTables.CompletionCounts.dimensionAllowance\n            (Math115.CompletionOuterSchedule.physicalMassBase r) h)\n          (Math115.CompletionOuterSchedule.terminalPrecision (Math115.CompletionOuterSchedule.physicalSmallCount r c)\n            h)) →\n      Bool),\n  Math115.LatticeSampler.draw (((List.ofFn r, List.ofFn c), h), List.ofFn bits) =\n    OAI.ContingencyTables.DensePrograms.matrixCode\n      ↑(Math115.PhysicalBooleanSampler.draw r c htotal\n          (Math115.CompletionOuterSchedule.walkCount (Math115.CompletionOuterSchedule.physicalSmallCount r c)\n            OAI.ContingencyTables.CompletionCounts.dimensionAllowance\n            (Math115.CompletionOuterSchedule.physicalMassBase r) h)\n          (Math115.CompletionOuterSchedule.restartCount (Math115.CompletionOuterSchedule.physicalSmallCount r c) h)\n          (Math115.CompletionOuterSchedule.stepPrecision (Math115.CompletionOuterSchedule.physicalSmallCount r c)\n            OAI.ContingencyTables.CompletionCounts.dimensionAllowance\n            (Math115.CompletionOuterSchedule.physicalMassBase r) h)\n          (Math115.CompletionOuterSchedule.terminalPrecision (Math115.CompletionOuterSchedule.physicalSmallCount r c) h)\n          bits)",
+      "defining_module": "Math115.LatticeSampler",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 17079,
+      "closure_sha256": "88d3a8e032733b3dbc74fdf87ff6ac51ce217b231bdf58b533cca33de933ad4d",
+      "declaration_record_sha256": "2da82c12b1ecff3cd7dd71d65ec34578fc7e588caa27a1a1a845d62a98174d2e",
+      "source_bound_English_labels": []
+    },
+    {
+      "name": "Math115.LatticeSampler.draw_spec",
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (htotal : ∑ i, r i = ∑ j, c j) (h : ℕ),\n  have q := Math115.LatticeScheduleProgram.totalBits ((List.ofFn r, List.ofFn c), h);\n  ∃ f,\n    (∀ (bits : Fin q → Bool),\n        Math115.LatticeSampler.draw (((List.ofFn r, List.ofFn c), h), List.ofFn bits) =\n          OAI.ContingencyTables.DensePrograms.matrixCode ↑(f bits)) ∧\n      ↑(OAI.ContingencyTables.FirstSuccess.variation\n            (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw f)\n            OAI.ContingencyTables.FirstSuccess.uniformLaw) ≤\n        ↑(Math115.CompletionRetryBudget.dyadic h)",
+      "defining_module": "Math115.LatticeSampler",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 43769,
+      "closure_sha256": "761a61167aea3a3285ea775755ef6cdca015b707b7b4f68b5ad85dd80f14f141",
+      "declaration_record_sha256": "b153569d0a2e3fd23ff9c2a0590237d18436feb17761c9c8d7f4632708119960",
+      "source_bound_English_labels": []
+    },
+    {
+      "name": "Math115.LatticeSampler.polynomial_draw",
+      "statement": "OAI.MatchingFPRAS.TreeTyped.PolynomialTime Math115.LatticeSampler.drawRealizer",
+      "defining_module": "Math115.LatticeSampler",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 10641,
+      "closure_sha256": "341e456eaf3d54fbf70995e01103dbe303f45dbfbf3e4554ff0650bfdb44ad13",
+      "declaration_record_sha256": "85f2526163dbb06ed0b8f64171e49970575b20fc6f3cb5076a4f6fa846a43ca0",
+      "source_bound_English_labels": []
+    },
+    {
+      "name": "Math115.LatticeSamplerCost.reserved_draw_work",
+      "statement": "∃ P,\n  ∀ (m n : ℕ) (r : Fin m → ℕ) (c : Fin n → ℕ) (h : ℕ)\n    (bits : Fin (Math115.LatticeScheduleProgram.totalBits ((List.ofFn r, List.ofFn c), h)) → Bool),\n    have z := (((List.ofFn r, List.ofFn c), h), List.ofFn bits);\n    Math115.LatticeSampler.drawRealizer.cost z + OAI.MatchingFPRAS.TreeTyped.weight (Math115.LatticeSampler.draw z) ≤\n      Polynomial.eval (Math115.CompletionEncodingSize.measure (List.ofFn r, List.ofFn c) h) P",
+      "defining_module": "Math115.LatticeSamplerCost",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 11027,
+      "closure_sha256": "746055c0b780e7ac0fb29a4e89c378cbf341772cc1818576dc1f5f4a4ae4518e",
+      "declaration_record_sha256": "7d29240b52a08b2338b9e7ccbfecb9079bf10191c4626d8f69733b603abe8692",
+      "source_bound_English_labels": []
+    },
+    {
+      "name": "Math115.LatticeSamplerCost.reserved_draw_work_literal",
+      "statement": "∃ P,\n  ∀ (m n : ℕ) (r : Fin m → ℕ) (c : Fin n → ℕ) (h : ℕ)\n    (bits : Fin (Math115.LatticeScheduleProgram.totalBits ((List.ofFn r, List.ofFn c), h)) → Bool),\n    have z := (((List.ofFn r, List.ofFn c), h), List.ofFn bits);\n    Math115.LatticeSampler.drawRealizer.cost z + OAI.MatchingFPRAS.TreeTyped.weight (Math115.LatticeSampler.draw z) ≤\n      Polynomial.eval ((OAI.ContingencyTables.Algorithms.encodeMargins r c).length + h + 3) P",
+      "defining_module": "Math115.LatticeSamplerCost",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 11046,
+      "closure_sha256": "b4b357f7c4f6c0273644f8d02859e1551afafbd37c35c2e820e4f88a02102d38",
+      "declaration_record_sha256": "c5bf1c219aa4c3de808bf82799248ccc13fc386a4292105ab642b1e49a5d3fbf",
+      "source_bound_English_labels": []
+    },
+    {
+      "name": "Math115.LatticeScheduleProgram.polynomial_schedule",
+      "statement": "OAI.MatchingFPRAS.TreeTyped.PolynomialTime Math115.LatticeScheduleProgram.scheduleRealizer",
+      "defining_module": "Math115.LatticeScheduleProgram",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 9244,
+      "closure_sha256": "71c6958141d0ed24cc17a05323db00f9db382b1e201efac177ddc645b032aa3f",
+      "declaration_record_sha256": "32a4f95419e4be73b668eb1cb439009bc16c5f1e4806f4c912b9f54c4e44c2d0",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.LatticeScheduleProgram.polynomial_schedule",
+          "claim_id": "component-cost",
+          "title": "Encoded completion and schedule",
+          "english_claim": "The encoded completion draw and numeric schedule realizers have polynomial charged cost; completion semantics identifies output code and accuracy under dense margin hypotheses.",
+          "source": "claims.json at 5b4af402a281a9bc02a38adb168f7b0bfde5d3aa"
+        }
+      ]
+    },
+    {
+      "name": "Math115.PhysicalBooleanSampler.draw",
+      "statement": "{m n : ℕ} →\n  (r : Fin m → ℕ) →\n    (c : Fin n → ℕ) →\n      ∑ i, r i = ∑ j, c j →\n        (T R hStep hTerminal : ℕ) →\n          (Fin (Math115.PhysicalReferenceBoolean.outerBits r T R hStep hTerminal) → Bool) →\n            OAI.ContingencyTables.Table r c",
+      "defining_module": "Math115.PhysicalBooleanSampler",
+      "kind": "definition",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 15711,
+      "closure_sha256": "42410078134e94323b09a7e137348ffa90292694e3f22686e638505f5c859242",
+      "declaration_record_sha256": "ebc449cdf5a544ba30690c645b11cb17ded573f80c8c504a568b48d3c77a46ca",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.PhysicalBooleanSampler.draw",
+          "claim_id": "finite-word-law",
+          "title": "Finite-word probability law",
+          "english_claim": "The typed both-branch sampler returns a feasible table for each reserved word and its uniform-word output law has total variation at most 2^-h.",
+          "source": "claims.json at 5b4af402a281a9bc02a38adb168f7b0bfde5d3aa"
+        }
+      ]
+    },
+    {
+      "name": "Math115.PhysicalBooleanSampler.draw_explicit_accuracy",
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (htotal : ∑ i, r i = ∑ j, c j) (h : ℕ),\n  have p := Math115.CompletionOuterSchedule.physicalSmallCount r c;\n  have base := Math115.CompletionOuterSchedule.physicalMassBase r;\n  have T :=\n    Math115.CompletionOuterSchedule.walkCount p OAI.ContingencyTables.CompletionCounts.dimensionAllowance base h;\n  have R := Math115.CompletionOuterSchedule.restartCount p h;\n  have hStep :=\n    Math115.CompletionOuterSchedule.stepPrecision p OAI.ContingencyTables.CompletionCounts.dimensionAllowance base h;\n  have hTerminal := Math115.CompletionOuterSchedule.terminalPrecision p h;\n  ↑(OAI.ContingencyTables.FirstSuccess.variation\n        (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n          (Math115.PhysicalBooleanSampler.draw r c htotal T R hStep hTerminal))\n        OAI.ContingencyTables.FirstSuccess.uniformLaw) ≤\n    ↑(Math115.CompletionRetryBudget.dyadic h)",
+      "defining_module": "Math115.PhysicalBooleanSampler",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 43025,
+      "closure_sha256": "0c00d20c360ad4d34401f9ef3cd5dc28909ec8acd87b9264bc70b6c2148b5f0b",
+      "declaration_record_sha256": "e114012c4d98fd17a66565afd348d81a7bfa9145c8db10ca7d075a10c26d9243",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.PhysicalBooleanSampler.draw_explicit_accuracy",
+          "claim_id": "finite-word-law",
+          "title": "Finite-word probability law",
+          "english_claim": "The typed both-branch sampler returns a feasible table for each reserved word and its uniform-word output law has total variation at most 2^-h.",
+          "source": "claims.json at 5b4af402a281a9bc02a38adb168f7b0bfde5d3aa"
+        }
+      ]
+    },
+    {
+      "name": "Math115.PublicLatticeSampler.machine",
+      "statement": "OAI.MatchingFPRAS.RandomMachine",
+      "defining_module": "Math115.PublicLatticeSampler",
+      "kind": "definition",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 11097,
+      "closure_sha256": "42d505ee615197010bbbd2f12755acbc36ba16347d1c8e1da520a98e6cc360a0",
+      "declaration_record_sha256": "1fa7eaa51c8f391a570d7b19e553f85dc479f8b4f7a3c02ca20554e6a6aca723",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.PublicLatticeSampler.machine",
+          "claim_id": "complete-bounded-sampler",
+          "title": "Complete bounded sampler",
+          "english_claim": "One fixed public fair-bit machine halts with a feasible table on every random tape by a global polynomial time C*S^D; at that same time its output law has total variation at most 2^-h from uniform ordinary fixed-margin tables.",
+          "source": "frozen bounded-sampler claim fragment"
+        }
+      ]
+    },
+    {
+      "name": "Math115.PublicLatticeSampler.machineTime_public_bound",
+      "statement": "∃ Ctime Dtime,\n  0 < Ctime ∧\n    ∀ (m n : ℕ) (r : Fin m → ℕ) (c : Fin n → ℕ),\n      ∑ i, r i = ∑ j, c j →\n        ∀ (h : ℕ),\n          1 ≤ h →\n            Math115.PublicLatticeSampler.machineTime (OAI.ContingencyTables.Algorithms.encodeSamplingInput r c h) ≤\n              Ctime * OAI.ContingencyTables.Algorithms.samplingSize n r h ^ Dtime",
+      "defining_module": "Math115.PublicLatticeSampler",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 13322,
+      "closure_sha256": "68be13b45034bd0b2bed0d58344d96071c2e70300369890e5c9c3224af052905",
+      "declaration_record_sha256": "903f9932f866dd15027e5e739e58a7a98a167b8b9e739acec0c9a734deabf861",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.PublicLatticeSampler.machineTime_public_bound",
+          "claim_id": "complete-bounded-sampler",
+          "title": "Complete bounded sampler",
+          "english_claim": "One fixed public fair-bit machine halts with a feasible table on every random tape by a global polynomial time C*S^D; at that same time its output law has total variation at most 2^-h from uniform ordinary fixed-margin tables.",
+          "source": "frozen bounded-sampler claim fragment"
+        }
+      ]
+    },
+    {
+      "name": "Math115.PublicLatticeSampler.machine_mass",
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (htotal : ∑ i, r i = ∑ j, c j) (h t : ℕ),\n  Math115.PublicLatticeSampler.machineTime (OAI.ContingencyTables.Algorithms.encodeSamplingInput r c h) ≤ t →\n    ∀ (X : OAI.ContingencyTables.Table r c),\n      OAI.ContingencyTables.Algorithms.tableMass Math115.PublicLatticeSampler.machine\n          (OAI.ContingencyTables.Algorithms.encodeSamplingInput r c h) t ↑X =\n        ↑((OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n                (Math115.PublicLatticeSampler.tableDraw r c htotal h)).mass\n            X)",
+      "defining_module": "Math115.PublicLatticeSampler",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 46694,
+      "closure_sha256": "4e82e9612e171197f1c5ea959e4702d5812cc1bdfc47488d440b8b4c3dd27b48",
+      "declaration_record_sha256": "f312e1a86de97e036a8f1b09e2093a928150dc52b9d80507365cb638859e869e",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.PublicLatticeSampler.machine_mass",
+          "claim_id": "complete-bounded-sampler",
+          "title": "Complete bounded sampler",
+          "english_claim": "One fixed public fair-bit machine halts with a feasible table on every random tape by a global polynomial time C*S^D; at that same time its output law has total variation at most 2^-h from uniform ordinary fixed-margin tables.",
+          "source": "frozen bounded-sampler claim fragment"
+        }
+      ]
+    },
+    {
+      "name": "Math115.PublicLatticeSampler.machine_outputs",
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (h t : ℕ),\n      Math115.PublicLatticeSampler.machineTime (OAI.ContingencyTables.Algorithms.encodeSamplingInput r c h) ≤ t →\n        ∀ (bits : OAI.MatchingFPRAS.PhysicalStream.Bits t),\n          ∃ X,\n            OAI.ContingencyTables.Algorithms.OutputsTable Math115.PublicLatticeSampler.machine\n              (OAI.ContingencyTables.Algorithms.encodeSamplingInput r c h) bits ↑X",
+      "defining_module": "Math115.PublicLatticeSampler",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 46662,
+      "closure_sha256": "3d8f0e2a1c35c2665fc8ea09d7510b52ae6e537ba37b6a8064c8b5c3244d89a4",
+      "declaration_record_sha256": "2a7877f6b99e9f888b8515bb13144d72d98c2a12f1b50de52e640879f27ada18",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.PublicLatticeSampler.machine_outputs",
+          "claim_id": "complete-bounded-sampler",
+          "title": "Complete bounded sampler",
+          "english_claim": "One fixed public fair-bit machine halts with a feasible table on every random tape by a global polynomial time C*S^D; at that same time its output law has total variation at most 2^-h from uniform ordinary fixed-margin tables.",
+          "source": "frozen bounded-sampler claim fragment"
+        }
+      ]
+    },
+    {
+      "name": "Math115.PublicLatticeSampler.publicDraw",
+      "statement": "List OAI.MatchingFPRAS.Symbol × List Bool → List OAI.MatchingFPRAS.Symbol",
+      "defining_module": "Math115.PublicLatticeSampler",
+      "kind": "definition",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "closure_size": 1428,
+      "closure_sha256": "a18aff1de03543c4969b95aa6e23b6899772cc5e929927823e73e632581eef1d",
+      "declaration_record_sha256": "1ba1f98e720a81a13b1e3c47c463ebbad38900b2acdc89c97cdfb46766b1b736",
+      "source_bound_English_labels": []
+    },
+    {
+      "name": "Math115.PublicLatticeSampler.public_spec",
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (htotal : ∑ i, r i = ∑ j, c j) (h : ℕ),\n  have q := Math115.LatticeScheduleProgram.totalBits ((List.ofFn r, List.ofFn c), h);\n  ∃ f,\n    (∀ (bits : Fin q → Bool),\n        Math115.PublicLatticeSampler.publicDraw\n            (OAI.ContingencyTables.Algorithms.encodeSamplingInput r c h, List.ofFn bits) =\n          OAI.ContingencyTables.Algorithms.encodeMatrix ↑(f bits)) ∧\n      ↑(OAI.ContingencyTables.FirstSuccess.variation\n            (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw f)\n            OAI.ContingencyTables.FirstSuccess.uniformLaw) ≤\n        ↑(Math115.CompletionRetryBudget.dyadic h)",
+      "defining_module": "Math115.PublicLatticeSampler",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 43835,
+      "closure_sha256": "ee46c254308d95b735dcf1914acb0c95091af4b9a879ea622d1f07c4a26ac36b",
+      "declaration_record_sha256": "7d924b0b0e7c060524b63224c08cb48ed9bfebfb383bdd14e7621465280bf78f",
+      "source_bound_English_labels": [
+        {
+          "headline": "Math115.PublicLatticeSampler.public_spec",
+          "claim_id": "complete-bounded-sampler",
+          "title": "Complete bounded sampler",
+          "english_claim": "One fixed public fair-bit machine halts with a feasible table on every random tape by a global polynomial time C*S^D; at that same time its output law has total variation at most 2^-h from uniform ordinary fixed-margin tables.",
+          "source": "frozen bounded-sampler claim fragment"
+        }
+      ]
+    },
+    {
+      "name": "Math115.PublicLatticeSampler.tableDraw_code",
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (htotal : ∑ i, r i = ∑ j, c j) (h : ℕ)\n  (bits : Fin (Math115.LatticeScheduleProgram.totalBits ((List.ofFn r, List.ofFn c), h)) → Bool),\n  Math115.PublicLatticeSampler.publicDraw (OAI.ContingencyTables.Algorithms.encodeSamplingInput r c h, List.ofFn bits) =\n    OAI.ContingencyTables.Algorithms.encodeMatrix ↑(Math115.PublicLatticeSampler.tableDraw r c htotal h bits)",
+      "defining_module": "Math115.PublicLatticeSampler",
+      "kind": "theorem",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "closure_size": 43839,
+      "closure_sha256": "97f2f2b5ec4acd937c5b028157aead84787adfe90ecf6e22f5bacecfdc777a43",
+      "declaration_record_sha256": "d976de813ec43608972ae16ea89369bc304328459dea7cd94593c26a5f7845ad",
+      "source_bound_English_labels": []
+    },
+    {
+      "name": "Math115.PublicLatticeSampler.wordCount",
+      "statement": "List OAI.MatchingFPRAS.Symbol → ℕ",
+      "defining_module": "Math115.PublicLatticeSampler",
+      "kind": "definition",
+      "axioms": [
+        "propext"
+      ],
+      "closure_size": 763,
+      "closure_sha256": "d959c722038729185e1fcee6a34f71f871a906e5b8263e18997b89b62b70eb4e",
+      "declaration_record_sha256": "635f6d2a9a243a350556bf3b6ca4db1c74587539fef734a3ef1fe61bd42a71d5",
+      "source_bound_English_labels": []
+    }
+  ],
+  "English_label_source_hashes": {
+    "immutable_claim_ledger": "27f5ab054f4c01d197a9e6bc501744e4c7a0300b4f90f49191b9b8f0426720d2",
+    "bounded_sampler_fragment": "5475eaf140c05a95a41a181853725e3536f0813ff88d4fa673faabcee052d8b5"
+  }
+}

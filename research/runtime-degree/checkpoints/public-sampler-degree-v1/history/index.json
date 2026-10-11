@@ -1,0 +1,14 @@
+{
+  "attempt": "attempt01",
+  "complete_history_claimed": false,
+  "exit_code": 1,
+  "promoted_object": null,
+  "raw_download_manifest_sha256": "8f1f48d862141f74e87f510e489fd84e7d5bdd7de340a593623d2524adb7cb95",
+  "raw_download_members_verified": 105,
+  "raw_receipt_sha256": "a6f8dfe41809b8ce506d174152863a4433c404eb98cb2c75d10aa04d274046a0",
+  "receipt": "history/attempt01/receipt.json",
+  "repair_scope": "Only qualification of existing pinned TreeTyped.polynomial_eval_monotone; exact reviewed v2 source retains original statements.",
+  "source": "history/attempt01/ResearchBounds/PublicSamplerDegree.lean",
+  "source_sha256": "0c43eff5a4b6a1952e1f66a7066ac7c4264dc2aca86512d02f445dd72017f6a8",
+  "status": "one_selected_failed_attempt_preserved"
+}

@@ -1,0 +1,45 @@
+{
+  "attempt_object_sha256": "d96fb58d528c48d7d9b8c15a57a408e47b51260c0372e76c22d713c42a4ad909",
+  "command": [
+    "<lean-compiler>",
+    "--root=<current-run>\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<current-run>\\attempts\\CountBounds.ScalarCircuitDegreeV2\\module.olean",
+    "-i",
+    "<current-run>\\attempts\\CountBounds.ScalarCircuitDegreeV2\\module.ilean",
+    "<current-run>\\source\\CountBounds\\ScalarCircuitDegreeV2.lean"
+  ],
+  "diagnostic_object": "<current-run>\\lib\\lean\\CountBounds\\ScalarCircuitDegreeV2.olean",
+  "elapsed_seconds": 81.66645029990468,
+  "evidence_class": "fresh_native_compilation",
+  "execution_origin": "fresh",
+  "exit_code": 0,
+  "input_objects": {
+    "CountBounds.ParserDegree": {
+      "path": "<current-run>\\lib\\lean\\CountBounds\\ParserDegree.olean",
+      "sha256": "1c1e5d766924370c1c8320914955f268861ab2e3c455f1b2087bd6e6714944d9"
+    },
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    }
+  },
+  "module": "CountBounds.ScalarCircuitDegreeV2",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "source_sha256": "804583ef44717abbe7193a92a4f971abfdea1a302e3521da2515d5de1c9267a2",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

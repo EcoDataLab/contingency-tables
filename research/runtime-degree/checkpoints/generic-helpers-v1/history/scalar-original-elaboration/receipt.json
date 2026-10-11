@@ -1,0 +1,45 @@
+{
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint11-degree-successor-01\\graph\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint11-degree-successor-01\\graph\\attempts\\ResearchBounds.ScalarOutputSizeDegree\\module.olean",
+    "-i",
+    "<owned-workspace>\\checkpoint11-degree-successor-01\\graph\\attempts\\ResearchBounds.ScalarOutputSizeDegree\\module.ilean",
+    "<owned-workspace>\\checkpoint11-degree-successor-01\\graph\\source\\ResearchBounds\\ScalarOutputSizeDegree.lean"
+  ],
+  "elapsed_seconds": 93.8846805000212,
+  "exit_code": 1,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "Math115.LatticeScheduleProgram": {
+      "path": "<owned-workspace>\\checkpoint11-degree-successor-01\\Math115-projection\\Math115\\LatticeScheduleProgram.olean",
+      "sha256": "46388470d516fcb9a34bb8c9fc48ee5c11de554cb04ea374558e8243b645eac1",
+      "trust": "copied accepted namespace object"
+    },
+    "ResearchBounds.TreeArithmeticDegree": {
+      "path": "<owned-workspace>\\checkpoint11-degree-successor-01\\graph\\lib\\lean\\ResearchBounds\\TreeArithmeticDegree.olean",
+      "sha256": "7bf569607da67a2fa88569d41b93d3f7dba58d971fc1aab7de6b367d2d911b42",
+      "trust": "fresh successful unchanged private diagnostic only"
+    }
+  },
+  "module": "ResearchBounds.ScalarOutputSizeDegree",
+  "outcome_class": "proof_elaboration_failure",
+  "promoted_object": null,
+  "scope": "Original scalar fixed-power output bound failed a type/degree simplification during elaboration; no accepted object.",
+  "source_sha256": "aff58ae192ee476d67c78b5321e35bd075f3ca07967224d269e312887d65b3bb",
+  "source_unchanged": true,
+  "status": "failed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "3203ab78cae40f9206e9e43f5e4c23ed0a4b24aa5ada7fd85d14fd5331ac7a08"
+  }
+}

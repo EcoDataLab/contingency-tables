@@ -1,0 +1,42 @@
+{
+  "attempt_object_sha256": "bf5e49a96a39c4e9526fb0cf1ad3786d8a6c84d1e90771b0c5906cfce1c316d2",
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint11-degree-diagnostic-01\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-01\\attempts\\ResearchBounds.PolynomialCompilerDegree\\module.olean",
+    "-i",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-01\\attempts\\ResearchBounds.PolynomialCompilerDegree\\module.ilean",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-01\\source\\ResearchBounds\\PolynomialCompilerDegree.lean"
+  ],
+  "diagnostic_object": "<owned-workspace>\\checkpoint11-degree-diagnostic-01\\lib\\lean\\ResearchBounds\\PolynomialCompilerDegree.olean",
+  "elapsed_seconds": 74.65495350002311,
+  "evidence_class": "ordinary_native_compilation_diagnostic",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "ResearchBounds.TreeDegreeBounds": {
+      "path": "<owned-workspace>\\checkpoint11-degree-diagnostic-01\\lib\\lean\\ResearchBounds\\TreeDegreeBounds.olean",
+      "sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+      "trust": "fresh successful unchanged private diagnostic only"
+    }
+  },
+  "module": "ResearchBounds.PolynomialCompilerDegree",
+  "named_axiom_audit": null,
+  "platform": "Windows x86_64",
+  "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

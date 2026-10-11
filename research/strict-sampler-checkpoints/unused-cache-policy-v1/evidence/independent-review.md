@@ -1,0 +1,5 @@
+One bounded startup-only Linux attempt installed the frozen source inputs and passed real strict sandbox probes as a nonroot user with Landlock ABI 11 and zero effective capabilities. Installation took 9.935 seconds and preflight 3.651 seconds. The exact revised cache-absence policy was delivered and supplied to the authenticator.
+
+Authentication then reached its 600-second deadline with empty output streams. No authentication return code, internal substep or policy verdict was recorded, and no runtime freeze or admitted plan was produced. The attempt did not dispatch submitted proof compilation, exporter, default-kernel replay or Comparator comparison. It is a preserved startup timeout, not strict acceptance or a demonstrated policy rejection.
+
+Evidence collection completed, the five retained input pins remained unchanged, and owned process cleanup was recorded. The remote-only child-overlay hash was retained without local byte rehash. The fixed 4 CPU / 8 GiB / zero swap profile and original deadlines were preserved; no automatic retry or cap change occurred. The timeout evidence does not identify a memory, CPU or cache-I/O cause.

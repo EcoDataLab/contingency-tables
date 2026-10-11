@@ -1,0 +1,165 @@
+{
+  "audit_module": "Checkpoint12Audits.CountBounds_ListRepeatDegree",
+  "command": [
+    "<lean-compiler>",
+    "--root=<original-run>\\audit-source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<original-run>\\audits\\CountBounds.ListRepeatDegree\\module.olean",
+    "<original-run>\\audit-source\\Checkpoint12Audits\\CountBounds_ListRepeatDegree.lean"
+  ],
+  "elapsed_seconds": 81.68371279991698,
+  "error": null,
+  "evidence_class": "original_native_named_axiom_audit",
+  "execution_origin": "original",
+  "exit_code": 0,
+  "input_objects": {
+    "CountBounds.ListRepeatDegree": {
+      "path": "<original-run>\\lib\\lean\\CountBounds\\ListRepeatDegree.olean",
+      "sha256": "6b5392e761f376263a6460e3263c489cf030b7289b33231720baf7db6bfb1d77"
+    },
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    }
+  },
+  "module": "CountBounds.ListRepeatDegree",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "a0ef15dacc79ffc8ccb07fa270cfa5c29fcd7d59fff2e960e49588ced197dfc1"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "a0ef15dacc79ffc8ccb07fa270cfa5c29fcd7d59fff2e960e49588ced197dfc1"
+  },
+  "records": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_mono"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_reencode"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_listCase"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_head"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_tail"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_less"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_boolNot"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_natEqual"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_leNat"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_minNat"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.bounded_boundedRepeat"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_boundedRepeat"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_dropInit"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_dropFast"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.ListRepeatDegreeV1.typed_takeFast"
+    }
+  ],
+  "source_sha256": "715b6068bb7da10fa8947cfde710af088742d80263c09942c6ac34f09017d8b7",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

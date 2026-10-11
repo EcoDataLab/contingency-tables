@@ -1,0 +1,126 @@
+{
+  "artifacts": [
+    {
+      "changes": [
+        "Only checking/guest-home ancestor prefixes replaced by role placeholders. All producer fields retained, including misleading last-row keyset_complete=true; consumer summary explicitly marks it incomplete.",
+        "Deterministic gzip, mtime0; decompressed public JSON SHA and size bound separately."
+      ],
+      "decompressed_public_bytes": 6946164,
+      "decompressed_public_sha256": "45a820d3ed4511acc9d863a9e25bad43bc2528cfa7b8525a6e7ebeb76a95413e",
+      "encoding": "gzip",
+      "original_artifact_id": "evidence/cache-diagnostic.public.json.gz",
+      "original_bytes": 6948740,
+      "original_producer_flag_retained": true,
+      "original_sha256": "990cf90ead4d9c73e054903af8c8aa6b44c27025a89e007bab9c5d0c24cb7fb9",
+      "public_path": "evidence/cache-diagnostic.public.json.gz",
+      "published_bytes": 358235,
+      "published_sha256": "c26d0f9606cbbe11148ca00a889c1afee42febb73fbedd2d97c42760b34817af"
+    },
+    {
+      "changes": [
+        "Exact complete captured error string extracted from structured observation report; no guest stderr traceback was captured."
+      ],
+      "original_artifact_id": "logs/guest-reader-error.txt",
+      "original_bytes": 14091,
+      "original_sha256": "6d9b6f9f2a22c4c8612fc4386035cb1750152d338cc74f1723ea1668be8cbd72",
+      "public_path": "logs/guest-reader-error.txt",
+      "published_bytes": 74,
+      "published_sha256": "cda41c1033c0403a82ea294f0975560cabcea540a6b748b47613bc9db7c533a6"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "logs/supervisor.stderr.log",
+      "original_bytes": 0,
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_path": "logs/supervisor.stderr.log",
+      "published_bytes": 0,
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "logs/qemu-stderr.log",
+      "original_bytes": 0,
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_path": "logs/qemu-stderr.log",
+      "published_bytes": 0,
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Allowlisted terminal facts retained. Raw argv, QMP block-identity transcript, account/host paths, PIDs/identities and timestamps omitted; complete original stdout SHA retained."
+      ],
+      "original_artifact_id": "logs/supervisor.stdout.public.json",
+      "original_bytes": 18614,
+      "original_sha256": "9fa9582ff2c2c99a2a4e2ac0b05ae7ad3892d25c27fa36d0ede298085032aee0",
+      "public_path": "logs/supervisor.stdout.public.json",
+      "published_bytes": 587,
+      "published_sha256": "7018832cbd09c4f8c7d2ef16d32d823e665dc324dc273edbf95d29ff354bbea8"
+    },
+    {
+      "changes": [
+        "Process identifiers/timestamps omitted; source/pin/readonly-mount cleanup observations retained."
+      ],
+      "original_artifact_id": "evidence/cleanup.json",
+      "original_bytes": 976,
+      "original_sha256": "90975aa12dfd3a190e70ec6135d2feca6c24ca975b232ee581601cd538c555f0",
+      "public_path": "evidence/cleanup.json",
+      "published_bytes": 530,
+      "published_sha256": "c43d477cca1752b26d5f8b3e1b36e07f4f44a435f739cf847c05fb33e561be2a"
+    },
+    {
+      "changes": [
+        "Observed-root guest paths omitted from compact summary; relative requested/blocked paths retained. Strict partial interpretation and unreached stages explicit."
+      ],
+      "original_artifact_id": "evidence/outcome.json",
+      "original_bytes": 2503,
+      "original_sha256": "5f5119df123cd87efcbabb829843a1c25cd130a88bd81bb3de4a6a2e86ddd009",
+      "public_path": "evidence/outcome.json",
+      "published_bytes": 2183,
+      "published_sha256": "14c1e74791e68e3c4daf667ee3cd0ce186b2014bc95e6eb95519b6301c2491ac"
+    },
+    {
+      "changes": [
+        "Single ROOT default replaced by /checking role. Collector body/caps unchanged; projected source is not the byte-identical guest-executed module and has no live replay result."
+      ],
+      "original_artifact_id": "source/cache_diagnostic.py",
+      "original_bytes": 9990,
+      "original_sha256": "04bad9a94bc5289730a1b17722139d6dad882e7a9b864de5df84d4e4f278f58c",
+      "public_path": "source/cache_diagnostic.py",
+      "published_bytes": 9976,
+      "published_sha256": "65df770fd9226145542f6ba057beaf40a9580c6157af59d03ecbfe1462efb611"
+    },
+    {
+      "changes": [
+        "Extract only normalize/resolve_guest/stable/Capture support, excluding disk discovery/mount/host/boot/report wrappers. Imports/constants and checking/user-toolchain roles normalized. Projected support is unexecuted publication source."
+      ],
+      "original_artifact_id": "source/capture_support.py",
+      "original_bytes": 18069,
+      "original_sha256": "0e18fd866431fa5658ed9381c86c6405a168a9c562de1992871ede01f48d297c",
+      "public_path": "source/capture_support.py",
+      "published_bytes": 4679,
+      "published_sha256": "09c5289f21a7c08915a90f5c7b35a68d0bd2c9d1ea1bf11f61a3b220af29a3a3"
+    },
+    {
+      "changes": [
+        "New publication adapter; AST/shell syntax only, not executed or claimed observed source."
+      ],
+      "original_artifact_id": "publication-only-readonly-adapter",
+      "original_sha256": null,
+      "public_path": "source/reproduce_diagnostic.py",
+      "published_bytes": 1809,
+      "published_sha256": "506a62d10ab50c3d9e190f1ab9349358877b87dcbf24d5f7ac79f86427339723"
+    },
+    {
+      "changes": [
+        "Allowlisted observed facts/partial interpretation; source-only owner-policy proposal and private closure identities omitted. Explicit AI/scope label added."
+      ],
+      "original_artifact_id": "independent-partial-artifact-review",
+      "original_bytes": 3766,
+      "original_sha256": "95b1f2dbbe28e524662dedaeb56b8a8e2cb39ff32384f832e994090dd4f775b2",
+      "public_path": "evidence/independent-fact-review.json",
+      "published_bytes": 659,
+      "published_sha256": "b63e1c8ddb9ccaaa9ac22b8347ebe864fd11606b9dc20380b7548b6ca654b68c"
+    }
+  ],
+  "policy": "Full diagnostic producer data preserved with pathname role substitutions and deterministic gzip. Completeness interpretation is in separate consumer summary, not a changed producer flag. Raw original hashes remain authority. No transcripts/private execution identities."
+}

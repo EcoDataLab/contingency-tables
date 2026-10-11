@@ -7,7 +7,8 @@ import sys
 import tempfile
 import unittest
 
-ROOT = Path(__file__).resolve().parents[1]
+CANDIDATE = Path(__file__).resolve().parents[1]
+ROOT = CANDIDATE if (CANDIDATE / 'formal/results/native-sampler-checkpoint').exists() else CANDIDATE.parents[2]
 sys.path.insert(0, str(ROOT / 'scripts'))
 spec = importlib.util.spec_from_file_location('claims_ledger', ROOT / 'scripts/claims_ledger.py')
 ledger = importlib.util.module_from_spec(spec)
@@ -16,20 +17,24 @@ spec.loader.exec_module(ledger)
 
 class ClaimsLedgerTests(unittest.TestCase):
     def setUp(self):
-        self.document = json.loads((ROOT / 'claims.json').read_text(encoding='utf-8'))
+        self.document = json.loads((CANDIDATE / 'claims.json').read_text(encoding='utf-8'))
 
     def test_delivered_scopes_replay_and_linux_overlap_is_not_added(self):
         result = ledger.validate_ledger(ROOT, self.document)
         self.assertEqual({k: v['count'] for k, v in result['scopes'].items()},
                          {'integrated-aggregate': 1242, 'aggregate': 869, 'encoded-completion': 46,
-                          'physical-bridges': 193, 'boolean-schedule': 134, 'linux-focused': 863})
-        self.assertEqual(result['disjoint_count'], 1242)
+                          'physical-bridges': 193, 'boolean-schedule': 134, 'linux-focused': 863,
+                          'linux-integrated': 1511})
+        self.assertEqual(result['disjoint_count'], 1511)
         self.assertTrue(set(result['scopes']['linux-focused']['names']) <=
                         set(result['scopes']['integrated-aggregate']['names']))
         historic_union = set().union(*(set(result['scopes'][i]['names']) for i in ['aggregate','encoded-completion','physical-bridges','boolean-schedule']))
         self.assertEqual(set(result['scopes']['integrated-aggregate']['names']), historic_union)
-        self.assertEqual(result['current_receipt'], 'integrated-aggregate')
+        self.assertEqual(result['current_receipt'], self.document['current_receipt'])
         self.assertEqual(result['scopes']['integrated-aggregate']['module_counts']['Math115'], 1236)
+        self.assertEqual(result['current_receipt'], 'linux-integrated')
+        self.assertTrue(set(result['scopes']['linux-focused']['names']) <=
+                        set(result['scopes']['linux-integrated']['names']))
 
     def test_changed_receipt_digest_and_unknown_status_fail(self):
         changed = copy.deepcopy(self.document)
@@ -118,6 +123,7 @@ class ClaimsLedgerTests(unittest.TestCase):
     def test_audit_driver_uses_receipt_modules_and_every_ledger_headline(self):
         result = ledger.validate_ledger(ROOT, self.document)
         driver = ledger.audit_driver(result, self.document['disjoint_component_scopes'])
+        self.assertIn('import Math115\n', driver)
         self.assertIn('import Math115.PhysicalBooleanSampler', driver)
         self.assertIn('prefixes [Math115, OAI.ContingencyTables', driver)
         for claim in self.document['claims']:
@@ -134,15 +140,18 @@ class ClaimsLedgerTests(unittest.TestCase):
     def test_current_summary_prefers_integrated_scope_without_adding_historical_overlap(self):
         result=ledger.validate_ledger(ROOT,self.document)
         rendered=ledger.render(result)
-        self.assertIn('**1242** named declarations (1236 focused + 6 standalone)',rendered)
-        self.assertIn('**863** named declarations',rendered)
-        for count in [869,46,193,134]:
+        self.assertIn('**1511** named declarations',rendered)
+        for count in [1242,863,869,46,193,134]:
             self.assertNotIn('**'+str(count)+'** named declarations',rendered)
-        self.assertIn('overlap the current integrated aggregate and are not added',rendered)
+        if self.document['current_receipt']:
+            self.assertIn('overlap the current integrated aggregate and are not added',rendered)
+        else:
+            self.assertIn('Historical integrated aggregate before bounded-sampler default integration',rendered)
+            self.assertNotIn('Current integrated aggregate',rendered)
         self.assertIn('docs/formal-verification.md',rendered)
         for claim in self.document['claims']:
             if claim['evidence_class'].startswith('lean_'):
-                self.assertEqual([e['receipt'] for e in claim['evidence']],['integrated-aggregate'])
+                self.assertEqual([e['receipt'] for e in claim['evidence']],['linux-integrated'])
 
     def test_historical_changed_sources_cannot_be_promoted_to_current(self):
         changed=copy.deepcopy(self.document)
@@ -155,6 +164,7 @@ class ClaimsLedgerTests(unittest.TestCase):
     def test_summary_cannot_hide_current_receipt_or_reference_unvalidated_scope(self):
         for summary in [['linux-focused'],['missing'],['integrated-aggregate','integrated-aggregate']]:
             changed=copy.deepcopy(self.document);changed['summary_receipt_ids']=summary
+            changed['current_receipt']='integrated-aggregate'
             with self.subTest(summary=summary), self.assertRaises(ValueError):
                 ledger.validate_ledger(ROOT,changed)
 

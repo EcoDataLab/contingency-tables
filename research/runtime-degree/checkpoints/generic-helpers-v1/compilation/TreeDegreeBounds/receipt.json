@@ -1,0 +1,42 @@
+{
+  "attempt_object_sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint11-degree-diagnostic-01\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-01\\attempts\\ResearchBounds.TreeDegreeBounds\\module.olean",
+    "-i",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-01\\attempts\\ResearchBounds.TreeDegreeBounds\\module.ilean",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-01\\source\\ResearchBounds\\TreeDegreeBounds.lean"
+  ],
+  "diagnostic_object": "<owned-workspace>\\checkpoint11-degree-diagnostic-01\\lib\\lean\\ResearchBounds\\TreeDegreeBounds.olean",
+  "elapsed_seconds": 77.6519980999874,
+  "evidence_class": "ordinary_native_compilation_diagnostic",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "OAI.Combinatorics.MatchingCount.Complexity.TreeCostMeasure": {
+      "path": "<owned-workspace>\\completion-checkpoint10-native-10\\lib\\lean\\OAI\\Combinatorics\\MatchingCount\\Complexity\\TreeCostMeasure.olean",
+      "sha256": "22d8a3d5f522a94327e55d2bfaddbd58a6fd2fe24447e756586ec8c5b87f6436",
+      "trust": "authenticated accepted R10 record"
+    }
+  },
+  "module": "ResearchBounds.TreeDegreeBounds",
+  "named_axiom_audit": null,
+  "platform": "Windows x86_64",
+  "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "0b006ec829e37c861f47bd1e2ad9cf02eb0b06dc0ff72af6522171c0b0328447"
+  }
+}

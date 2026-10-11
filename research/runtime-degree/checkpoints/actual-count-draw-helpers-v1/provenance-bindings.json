@@ -1,0 +1,112 @@
+{
+  "authenticated_prerequisite_records": 685,
+  "candidate_named_audit_requests": 172,
+  "capture_sha256": "d748a92b40f539fbc2361b069620ff09b32fe6856d9d0aa535e10726ab80bc0d",
+  "completed_AI_evidence_review_json_sha256": "9724c09b6d335fe03863891c4fb3a01c93d3286155b7fa99ef28d4fa69d2881d",
+  "completed_AI_evidence_review_manifest_sha256": "f9d827234897dc5ce3b77c59c3bba9b2652080aa9d17eaeeb5508565a280193f",
+  "completed_AI_evidence_review_sha256": "f9d827234897dc5ce3b77c59c3bba9b2652080aa9d17eaeeb5508565a280193f",
+  "configuration_artifact_count_separate": 1,
+  "current_config_sha256": "910912c16e27e1c76b473c9d81ab8b5910c343f5f4d79d67673cba0f043135d7",
+  "current_source_objects": [
+    {
+      "audit_reports": 15,
+      "execution_origin": "original",
+      "module": "CountBounds.ListRepeatDegree",
+      "object_sha256": "6b5392e761f376263a6460e3263c489cf030b7289b33231720baf7db6bfb1d77",
+      "source_sha256": "f847e1521c780b1a3c3b89f892542e123406b75fbcb7e0d315191160ca1e0157"
+    },
+    {
+      "audit_reports": 20,
+      "execution_origin": "original",
+      "module": "ResearchBounds.DrawControlDegree",
+      "object_sha256": "56a6c29498ea7b9df719400273331d6e799a03bfc9329f605ddd33600a1a59b9",
+      "source_sha256": "e498430420b0d985aa33af88b21098b1f4d6422041784dae9ddebca89b8704e4"
+    },
+    {
+      "audit_reports": 10,
+      "execution_origin": "original",
+      "module": "CountBounds.ParserDegree",
+      "object_sha256": "1c1e5d766924370c1c8320914955f268861ab2e3c455f1b2087bd6e6714944d9",
+      "source_sha256": "8ea75320588440b047566b93d2aa42875588a8291bca7755e7faae0aa6a3489f"
+    },
+    {
+      "audit_reports": 9,
+      "execution_origin": "original",
+      "module": "ResearchBounds.CatalogueLeafDegrees",
+      "object_sha256": "6fe3b4f2b9245bdc3897ba8fa56112d3956a67192f9c1f84983abffb114b48d4",
+      "source_sha256": "a03e2425ff5a71a6f8ae4c11ec314ea7d27cf169bb2496bd1f57acad86a84a58"
+    },
+    {
+      "audit_reports": 7,
+      "execution_origin": "fresh",
+      "module": "ResearchBounds.SmallCellCatalogueDegree",
+      "object_sha256": "f65d1da370a49d0ffaab92c4e7623043d2476992a2ad1a7a3bcbc26ebdca6976",
+      "source_sha256": "ad347c5962f2948f751d8b9ea95c575745b85888a941a3fca28912f5fda7497f"
+    },
+    {
+      "audit_reports": 32,
+      "execution_origin": "fresh",
+      "module": "CountBounds.ScalarCircuitDegreeV2",
+      "object_sha256": "d96fb58d528c48d7d9b8c15a57a408e47b51260c0372e76c22d713c42a4ad909",
+      "source_sha256": "804583ef44717abbe7193a92a4f971abfdea1a302e3521da2515d5de1c9267a2"
+    },
+    {
+      "audit_reports": 49,
+      "execution_origin": "fresh",
+      "module": "CountBounds.TightWordCountDegreeV2",
+      "object_sha256": "2f8199c3ce326896ab0cf3d211369c3bc48786f2148e607649520161c84c9ec2",
+      "source_sha256": "c5126ff6d85f624c9263460ec778739b144a5b5592167519bdf22a2bdeb835ef"
+    },
+    {
+      "audit_reports": 22,
+      "execution_origin": "fresh",
+      "module": "ResearchBounds.DrawWalkDegree",
+      "object_sha256": "ec72b80011c422045c3097cd69257d70c616c43893132f1f1cb07e7b420b85ed",
+      "source_sha256": "4284ab37b05c20239ff069b8354538158b2938fe1d41c1a7119bde93ebb2b2dd"
+    },
+    {
+      "audit_reports": 8,
+      "execution_origin": "fresh",
+      "module": "ResearchBounds.DrawAssemblyDegree",
+      "object_sha256": "1a32f5ceb7745c3e7acef33dc8ac863db3ca1ed95264903796cd556dd7499ecb",
+      "source_sha256": "bcdf1628317e01795819a0452e6d9415ef83fb52bc3fe6db46196b26cfd27997"
+    }
+  ],
+  "execution_input_count": 29,
+  "final_runtime_manifest_sha256": "696cd4c6ac1943ddd8904f68f08febb26a75ee0a0bc12470dcc5d7bb18a26f58",
+  "original_component_capture_sha256": "c22143e3361e9cfb7a02392de8589dd3ec8effcd77a58648fc880e09e5c5f541",
+  "owner_cleanup_sha256": "a2f6920b26a28ae6cb3db9d20422000961132ba88392ed388796d65e96c64a43",
+  "owner_final_result_sha256": "79832f982b29914d453b548d8d71bc14461f074f6135eaea0d8d278ab39d7e88",
+  "raw_artifact_sha256": {
+    "Math115-projection-manifest.json": "c4b768e5c5c87a42cfe867ae77fd6a9fba79f07093b0f35ac95c123acd8488de",
+    "authentication.json": "258f6f5119c716ac20639331e47f7241f39ecd95f5856f4adf1b6f257e91b2be",
+    "config.json": "910912c16e27e1c76b473c9d81ab8b5910c343f5f4d79d67673cba0f043135d7",
+    "controlled-environment.json": "8452a33d9a4014c4afd6b8fecf070894049f5236971f514e7ead7c5624efad4d",
+    "input-snapshot.json": "380b112d376c6d867db0c55075108e10d0f468808eba84947a43d5c977ae7c62",
+    "preflight/receipt.json": "4e6e7608cfac30921c8783748e71086bc177d3990150122687098f923b4c358c",
+    "shared-projection-manifest.json": "dd30eaf46c1475d02f5f198a23b89ebc688e7bfeda2b05b5350e296f97bef07c",
+    "status.json": "78ccd010fa9cb842b07140ba2d0aa20d2f8114dc0e694e70f40085f54820c159"
+  },
+  "runtime": {
+    "configuration_sha256": {
+      ".upstream/openai-math/lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "formal/lake-manifest.json": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+      "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+      "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    "lake_sha256": "9780a6abfb6d751c7958f2fd7f696154bdda8b46c0de9755c4080ffb8a8788e6",
+    "lean_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b"
+  },
+  "runtime_code_sha256": {
+    "batch_reuse.py": "76a4dfd0892e164081a1e8b69b9e817936418a459ec8334246a1c48512c90418",
+    "check_lean_axioms.py": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+    "degree_diagnostic_v2.py": "34595602d5198061c762464ff7af670b69c32d61f5a432ac0bccd007c2778475",
+    "namespace_library.py": "823586c5fdeb54c69838670870b3a6bc996057632530fc8befe2ddad2a0b1a61",
+    "native_batch_runner.py": "8d15123cfeb1d7a9dfcd6b99b0d0ec1fe363a4f2765e99f269a856acf9262ea5",
+    "native_job_preflight.py": "3e75f2396f4d022452ed0c8a8e3ff5d2d142ab374c0f85c2516b499d51242125",
+    "owned_tree_executor.py": "cea4065f6b6d4012c7bdf120dbfd2d50785f267aa6cdceb0722628fafe12323b"
+  },
+  "selected_internal_context_modules": 676,
+  "source_only_alias_review_manifest_sha256": "11ba1b81f4b804df427c5da4b23e441f4e87d16b1c9ac716db2e8e93392047eb",
+  "trust_boundary": "Native Windows x86_64, authenticated reused prerequisites and pinned official caches. Full private transitive snapshots and binary objects omitted. No fresh default Linux or public reproduction claim."
+}

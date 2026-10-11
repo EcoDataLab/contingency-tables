@@ -1,0 +1,12 @@
+<owned-workspace>\checkpoint11-degree-successor-02\graph\source\ResearchBounds\TreeArithmeticDegree.lean:41:17: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<owned-workspace>\checkpoint11-degree-successor-02\graph\source\ResearchBounds\TreeArithmeticDegree.lean:48:17: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<owned-workspace>\checkpoint11-degree-successor-02\graph\source\ResearchBounds\TreeArithmeticDegree.lean:58:48: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<owned-workspace>\checkpoint11-degree-successor-02\graph\source\ResearchBounds\TreeArithmeticDegree.lean:85:55: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

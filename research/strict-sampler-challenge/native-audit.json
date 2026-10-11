@@ -1,0 +1,34 @@
+{
+  "additional_declaration_axioms": {
+    "Math115.StrictSampler.FixedMachineBoundedSamplingStatement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "evidence_manifest_sha256": "5365be650763bc7165044352c64d310a106c15d403a85f4fb227ff3155a823af",
+  "execution_config_sha256": "96d65f28efa7e9461c7400246103c2a38046ced50fb308c828da71c29099fad4",
+  "native_objects_sha256": {
+    "Math115.StrictSamplerSolution": "7fa3ed4f89e51935c4479908247792c6c21dab347e4d2300e07ffa7c05836434",
+    "Math115.StrictSamplerStatement": "d78547233001e602a8200ead80158810b08dfd66666c2d41cb0a6ce64f231512"
+  },
+  "ordinary_native_scope_only": true,
+  "sources_sha256": {
+    "Math115.StrictSamplerSolution": "6a6030917561cca4cc5276c2ac3c376611c98d69ab4445220dfcc1b106eb213c",
+    "Math115.StrictSamplerStatement": "4f5940853925ede5f8b829ff913120f2d310de6bbe43ef5650c8f30c63aa2c76"
+  },
+  "status": "compiled_and_standard_axiom_audited",
+  "strict_comparator_or_fresh_linux_claim": false,
+  "target_axioms": {
+    "Math115.StrictSampler.boundedSampling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Math115.StrictSampler.fixedMachineBoundedSampling": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

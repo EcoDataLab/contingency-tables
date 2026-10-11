@@ -1,0 +1,69 @@
+{
+  "audit_module": "Checkpoint12Audits.ResearchBounds_AffinePublicSamplerDegree",
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint12-affine-degree-batch-02\\audit-source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\audits\\ResearchBounds.AffinePublicSamplerDegree\\module.olean",
+    "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\audit-source\\Checkpoint12Audits\\ResearchBounds_AffinePublicSamplerDegree.lean"
+  ],
+  "elapsed_seconds": 81.68221539992373,
+  "environment_exhaustiveness": false,
+  "error": null,
+  "evidence_class": "named_axiom_audit",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "ResearchBounds.AffinePublicSamplerDegree": {
+      "path": "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\lib\\lean\\ResearchBounds\\AffinePublicSamplerDegree.olean",
+      "sha256": "65464f38881b228dbfe3152b1e862d85891b368f0e1683e3862e2ef4307cbc98",
+      "trust": "successful unchanged private batch candidate; per-module audit below"
+    }
+  },
+  "module": "ResearchBounds.AffinePublicSamplerDegree",
+  "records": [
+    {
+      "axioms": [],
+      "name": "Math115.AffinePublicSamplerDegree.publicDegree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffinePublicSamplerDegree.publicDegree_le_original"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffinePublicSamplerDegree.machineTime_public_degree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffinePublicSamplerDegree.fixedMachineBoundedSampling_with_degree"
+    }
+  ],
+  "requested_names": 4,
+  "source_sha256": "51ff317261cf2d80d885a0839ce3901ae6efd54ff176c6ae22707e8183bc72e6",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "ce07f9bd0a945947f2ed75766b310557ecbaddccf048bb83ccf49f7934b3f78c"
+  }
+}

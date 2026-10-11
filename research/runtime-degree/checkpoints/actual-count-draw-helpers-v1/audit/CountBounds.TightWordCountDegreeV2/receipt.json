@@ -1,0 +1,437 @@
+{
+  "audit_module": "Checkpoint12Audits.CountBounds_TightWordCountDegreeV2",
+  "command": [
+    "<lean-compiler>",
+    "--root=<current-run>\\audit-source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<current-run>\\audits\\CountBounds.TightWordCountDegreeV2\\module.olean",
+    "<current-run>\\audit-source\\Checkpoint12Audits\\CountBounds_TightWordCountDegreeV2.lean"
+  ],
+  "elapsed_seconds": 80.6604516999796,
+  "error": null,
+  "evidence_class": "fresh_native_named_axiom_audit",
+  "execution_origin": "fresh",
+  "exit_code": 0,
+  "input_objects": {
+    "CountBounds.TightWordCountDegreeV2": {
+      "path": "<current-run>\\lib\\lean\\CountBounds\\TightWordCountDegreeV2.olean",
+      "sha256": "2f8199c3ce326896ab0cf3d211369c3bc48786f2148e607649520161c84c9ec2"
+    },
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    }
+  },
+  "module": "CountBounds.TightWordCountDegreeV2",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "0b8783465ca58011af4c9ea34034e2edae5a2a35e645c54d3cbc7ac172a9b701"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "0b8783465ca58011af4c9ea34034e2edae5a2a35e645c54d3cbc7ac172a9b701"
+  },
+  "records": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_id"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_fst"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_snd"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_const"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_len"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_sum"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_add_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_mul_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_pow_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_log_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_pair_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_addGet_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_mulGet_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_powerGet_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_logGet_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_successor_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_square_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_cube_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_dimensionBase"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_cutoffBase"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.typed_catalogueBase"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.smallCount_linear"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_smallCount"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_target"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_dimension"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_cutoff"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_massTotal"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_padding"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_massBase"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_restarts"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_mixBudget"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_walkSteps"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_terminalPrecision"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_stepPrecision"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_proposalBits"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_fineMarginMax"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_fineBinaryBits"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_finePrecisionGet_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_completionBitsFor_e"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_stepCompletionBits"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_terminalCompletionBits"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_stepSchedule"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_terminalSchedule"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_schedule"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_attemptBits"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.circuit_totalBits"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.typed_wordCount_from_catalogue"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.typed_complete_wordCount_1008"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.TightCountDegreeV2.complete_wordCount_charged_work_1008"
+    }
+  ],
+  "source_sha256": "5db1571ba9c4d9302cf502c94c8578aaab1c22dcdcc6b28ddb61731523feb3e1",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

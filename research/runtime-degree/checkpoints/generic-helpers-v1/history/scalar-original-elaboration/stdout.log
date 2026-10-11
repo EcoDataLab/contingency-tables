@@ -1,0 +1,8 @@
+<owned-workspace>\checkpoint11-degree-successor-01\graph\source\ResearchBounds\ScalarOutputSizeDegree.lean:80:6: error: Type mismatch: After simplification, term
+  typed_pair ih typed_identity
+ has type
+  @Typed ℕ (ℕ × ℕ) instCodecNat instCodecProd (fun a => (a ^ k, id a))
+    (pair (LatticeScheduleProgram.fixedPowerRealizer k) identity) (max (max 6 1) 1)
+but is expected to have type
+  @Typed ℕ (ℕ × ℕ) instCodecNat instCodecProd (fun a => (a ^ k, a))
+    (pair (LatticeScheduleProgram.fixedPowerRealizer k) identity) 6

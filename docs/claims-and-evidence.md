@@ -5,28 +5,32 @@ claim, the quantity bounded, stated hypotheses, present limits, source files,
 Lean declaration names, and a verification receipt with an explicit scope.
 The English descriptions are interpretations that require mathematical review;
 the exact Lean types remain the authority for hypotheses and conclusions.
-The [compiled headline index](../formal/results/environment-aggregate-1236/headlines.json)
-now records exact types, defining modules, axioms, and complete dependency-closure
-bindings for all six Lean headlines. It also preserves the corresponding English
+The [historical compiled headline index](../formal/results/environment-aggregate-1236/headlines.json)
+records exact types, defining modules, axioms, and complete dependency-closure
+bindings for the six Lean headlines in that earlier default target. It also preserves the corresponding English
 claims and hypotheses from the hash-qualified ledger snapshot. Historical named
 receipts retain their narrower scope.
 
-## Completed stage scope
+## Historical completed stage scope
 
-The [current integrated receipt](../formal/results/completion-aggregate-1236/verification.json)
+The [historical integrated receipt](../formal/results/completion-aggregate-1236/verification.json)
 includes the encoded completion program, physical bridges, and both-branch
 Boolean law and schedule. Its named audits are regenerated from saved receipts;
 its normal build used authenticated dependency reuse and a fresh aggregate root.
 The [status ledger](status.md) records current verification results and the
 [contributor handoff](handoff.md) separates the checked core from frozen research.
-The later [complete bounded-sampler checkpoint](outer-sampler-compiler-checkpoint.md) provides separate research-overlay evidence for the literal machine, output law and uniform polynomial-time existence. The complete compiled-environment audit passed. Its exact statement map and evidence ledger are separate from these six default-target headlines. The numerical complete runtime degree and strict sampler replay remain open.
+The later [complete bounded-sampler checkpoint](outer-sampler-compiler-checkpoint.md) provides separate research-overlay evidence for the literal machine, output law and uniform polynomial-time existence. The complete compiled-environment audit passed. Its exact statement map and evidence ledger are separate from these six historical default-target headlines. The numerical complete runtime degree and strict sampler replay remain open.
 
-The [fresh Linux stage receipt](../formal/results/linux-focused-df469a5/README.md)
+The [historical Linux stage receipt](../formal/results/linux-focused-df469a5/README.md)
 separately reproduces the complete focused build, 1,236 named audits, and full
 environment audit at `df469a5`. Its overlapping counts are not additional
 results. The frozen claims ledger continues to reference its original qualified
 receipts; this reproduction and its public artifact are additional evidence for
-the same active proof sources.
+the source configuration recorded at that commit.
+
+## Expanded default target: fresh Linux verification passed
+
+The [default-target integration](default-target-integration.md) promotes the thirteen byte-identical proved sampler sources into the standard root. Its [audit contract](../formal/default-audit-contract.json) requires 22 headline closures and the three private-helper obligations checked in the complete checkpoint. The [fresh `5b4af40` Linux receipt](../formal/results/linux-focused-5b4af40/README.md) now verifies this expanded configuration, with 1,511 focused named audits and all 22 required headline dependency closures. Its six standalone names are inclusion checks only. The six-headline `df469a5` reproduction above and the native sampler checkpoint retain their separate exact scopes.
 
 `python3 scripts/claims_ledger.py` validates the ledger and renders the README
 claim cards and named-audit counts. `--write-readme` replaces only the marked
@@ -39,8 +43,8 @@ in this command.
 The validator checks the pinned receipt bytes and published artifact digests,
 replays each saved named audit with the strict axiom checker, compares names
 and axiom lists, and requires each Lean headline to appear in a matching
-receipt with its current source digest. Disjoint component counts are derived
-from declaration names and checked for overlap. The current aggregate already includes the formerly separate encoded-program, physical-bridge, and Boolean-law/schedule names; their historical receipt counts must not be added again. The later Linux focused run
+receipt with its matching source digest, when a current receipt is recorded. The current receipt binds the expanded target’s exact proof and verification inputs. Its observed run-time claims-ledger hash is preserved separately, so adding receipt annotations does not create a circular hash requirement. Disjoint component counts are derived
+from declaration names and checked for overlap. The historical aggregate already included the formerly separate encoded-program, physical-bridge, and Boolean-law/schedule names; their historical receipt counts must not be added again. The later Linux focused run
 is a separate reproduction scope that overlaps the aggregate. A source list
 or a large count cannot verify a headline absent from the named audit.
 
@@ -83,6 +87,12 @@ in its Lean statement. `Math115.LatticeScheduleProgram.polynomial_schedule`
 proves polynomial charged cost for the numeric schedule. These are component
 contracts; they do not supply the full outer sampler's machine-cost exponent.
 
+## complete-bounded-sampler
+
+`Math115.LatticeBoundedSampling.boundedSampling` proves the original `Algorithms.BoundedSamplingStatement`: one fixed fair-bit machine and global natural constants `C>0,D` work for every finite `m,n`, natural margins `r:Fin m→ℕ,c:Fin n→ℕ` with equal totals, and numeric precision `h≥1`. Zero margins and empty dimensions are included. With `M=∑ᵢrᵢ`, `S=m+n+clog₂(M+1)+h+1`, and `t=C*S^D`, every `t`-bit tape halts with a feasible ordinary table. Under uniform independent fair bits, the output law at that same time is within total variation `2^-h` of uniform ordinary fixed-margin tables.
+
+The final statement is existential; its proof chooses the fixed [public machine](../formal/Math115/PublicLatticeSampler.lean). `public_spec` identifies its encoded table draw, `machine_outputs` establishes every-tape halting and feasibility, `machine_mass` identifies its output probabilities, and `machineTime_public_bound` supplies the uniform time bound. The [complete checkpoint](outer-sampler-compiler-checkpoint.md) retains the exact statement map and evidence. The numerical complete runtime degree and measured performance remain unknown; neither `d¹⁷` nor the reserved-bit/input bound `S¹⁷⁰` is that degree. Strict Comparator acceptance of this sampler, an exact-sampling extension, and counting are separate from this bounded near-uniform result.
+
 ## executable-references
 
 The Python exact finite backends and saved experiments exercise finite cases
@@ -115,7 +125,7 @@ separately from nonstandard axioms; any nonstandard axiom fails the command.
 The proof-statement records contain all binders and hypotheses, while the
 ledger supplies the separate English interpretation.
 
-The [full compiled-environment audit](../formal/results/environment-aggregate-1236/README.md)
+The [historical full compiled-environment audit](../formal/results/environment-aggregate-1236/README.md)
 passed on the frozen native aggregate. The [publication record](../formal/results/environment-aggregate-1236/PUBLICATION.md)
 links the subsequent independent AI-agent readback while preserving the frozen
 receipt’s creation-time review status. Its complete report contains 22,710 selected
@@ -140,9 +150,6 @@ the exact types and definitions determine each contract.
 | Numeric schedule has polynomial charged cost | `LatticeScheduleProgram.polynomial_schedule` | The typed `scheduleRealizer` input of encoded margins and natural precision. No full sampler cost is inferred. |
 
 The report authenticates compiled types and dependencies, not the scientific
-interpretation of a model. It does not identify the unfinished encoded outer
-walker or perform strict Comparator replay. Files absent from the imports,
-including the archived outer-sampler drafts, are outside the selected
-environment. Named audit counts remain separate and must not be added to
+interpretation of a model. That historical six-headline audit excluded the encoded outer walker and did not perform strict Comparator replay. The later [complete bounded-sampler checkpoint](outer-sampler-compiler-checkpoint.md) proves the literal machine and its bounded output law with separate exact-source evidence. Files absent from the historical imports, including the archived outer-sampler drafts, remain outside that selected environment. Named audit counts remain separate and must not be added to
 these overlapping environment totals. No source regex supplies the theorem
 inventory.

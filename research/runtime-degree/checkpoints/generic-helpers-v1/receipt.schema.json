@@ -1,0 +1,365 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Seven-helper milestone receipt schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "scope",
+    "sources",
+    "axiom_audit",
+    "conditional_degree",
+    "public_reproduction",
+    "independent_publication_review",
+    "audit_scopes"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "enum": [
+        "private_packet_prepared_not_released",
+        "compiled_helpers_audit_pending",
+        "compiled_helpers_named_audit_passed",
+        "seven_helpers_compiled_two_named_audits_passed"
+      ]
+    },
+    "scope": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "required": [
+          "module",
+          "source",
+          "source_sha256",
+          "object_sha256",
+          "raw_compilation_receipt_sha256",
+          "compilation_receipt",
+          "compilation_status",
+          "axiom_audit"
+        ],
+        "properties": {
+          "module": {
+            "type": "string",
+            "pattern": "^ResearchBounds\\."
+          },
+          "source": {
+            "type": "string"
+          },
+          "source_sha256": {
+            "$ref": "#/$defs/sha256"
+          },
+          "object_sha256": {
+            "$ref": "#/$defs/sha256"
+          },
+          "raw_compilation_receipt_sha256": {
+            "$ref": "#/$defs/sha256"
+          },
+          "compilation_receipt": {
+            "type": "string"
+          },
+          "compilation_status": {
+            "const": "passed"
+          },
+          "axiom_audit": {
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "axiom_audit": {
+      "type": "object",
+      "required": [
+        "status",
+        "requested_names",
+        "verified_name_count",
+        "report",
+        "receipt",
+        "environment_exhaustiveness"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "prepared_not_run",
+            "passed",
+            "failed"
+          ]
+        },
+        "requested_names": {
+          "const": 47
+        },
+        "verified_name_count": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "report": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "receipt": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "environment_exhaustiveness": {
+          "const": false
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "prepared_not_run"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "verified_name_count": {
+                "type": "null"
+              },
+              "report": {
+                "type": "null"
+              },
+              "receipt": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "passed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "verified_name_count": {
+                "const": 47
+              },
+              "report": {
+                "type": "object",
+                "required": [
+                  "path",
+                  "sha256"
+                ]
+              },
+              "receipt": {
+                "type": "object",
+                "required": [
+                  "path",
+                  "sha256"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "conditional_degree": {
+      "type": "object",
+      "required": [
+        "formula",
+        "count_degree_e",
+        "draw_degree_t",
+        "requirements"
+      ],
+      "properties": {
+        "formula": {
+          "const": "340*max(1,t)*max(e,6)"
+        },
+        "count_degree_e": {
+          "type": "null"
+        },
+        "draw_degree_t": {
+          "type": "null"
+        },
+        "requirements": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "public_reproduction": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "independent_publication_review": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "audit_scopes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "prefixItems": [
+        {
+          "type": "object",
+          "required": [
+            "scope",
+            "status",
+            "requested_names",
+            "verified_name_count",
+            "driver",
+            "report",
+            "receipt",
+            "records",
+            "readback",
+            "environment_exhaustiveness"
+          ],
+          "properties": {
+            "scope": {
+              "const": "generic47"
+            },
+            "status": {
+              "const": "passed"
+            },
+            "requested_names": {
+              "const": 47
+            },
+            "verified_name_count": {
+              "const": 47
+            },
+            "environment_exhaustiveness": {
+              "const": false
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "scope",
+            "status",
+            "requested_names",
+            "verified_name_count",
+            "driver",
+            "report",
+            "receipt",
+            "records",
+            "readback",
+            "environment_exhaustiveness"
+          ],
+          "properties": {
+            "scope": {
+              "const": "extension21"
+            },
+            "status": {
+              "const": "passed"
+            },
+            "requested_names": {
+              "const": 21
+            },
+            "verified_name_count": {
+              "const": 21
+            },
+            "environment_exhaustiveness": {
+              "const": false
+            }
+          }
+        }
+      ],
+      "items": false
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "$comment": "Preparation schema checks representation only. Digest authentication, source/object/runtime/snapshot checks and ordered axiom-parser validation are required separately; schema validity is not evidence of execution.",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "compiled_helpers_named_audit_passed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "axiom_audit": {
+            "properties": {
+              "status": {
+                "const": "passed"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "enum": [
+              "private_packet_prepared_not_released",
+              "compiled_helpers_audit_pending"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "axiom_audit": {
+            "properties": {
+              "status": {
+                "const": "prepared_not_run"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "seven_helpers_compiled_two_named_audits_passed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "axiom_audit": {
+            "properties": {
+              "status": {
+                "const": "passed"
+              },
+              "verified_name_count": {
+                "const": 47
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

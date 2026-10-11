@@ -1,0 +1,5 @@
+{
+  "status": "wrapper/environment/cleanup failed closed",
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: '<owned-workspace>\\\\checkpoint12-public-degree-02\\\\__pycache__\\\\check_lean_axioms.cpython-314.pyc'",
+  "utc": "2026-10-11T06:40:56.975272+00:00"
+}

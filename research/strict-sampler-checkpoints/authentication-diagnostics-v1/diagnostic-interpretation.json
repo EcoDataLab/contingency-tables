@@ -1,0 +1,73 @@
+{
+  "collection_wrapper_span_seconds": 336.277,
+  "independent_inventory_wrapper_span_seconds": 251.503,
+  "interval_scope": "Source-localized across runner626\u2013631 metadata/stat snapshot and Guard construction; not separately measured individual-call, CPU, memory orIO attribution.",
+  "last_event": {
+    "line": 1050,
+    "record": {
+      "bytes": 3427131951,
+      "elapsed_seconds": 1798.73,
+      "event": "heartbeat",
+      "files": 27257,
+      "rehash": true,
+      "root": "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+      "stage": "guard_cache"
+    }
+  },
+  "last_event_scope": "Aggregate guard_cache counters through preceding roots and partial Mathlib, not completed Mathlib or physical throughput.",
+  "logical_bytes_not_physical_IO": true,
+  "nonprogress_lines": 0,
+  "overall_runtime_or_policy_acceptance": false,
+  "plan_executed": false,
+  "progress_prefix": "STRICT_AUTH_PROGRESS=",
+  "progress_records": 1050,
+  "runtime_freeze_generated": false,
+  "source_substep_evidence": "Inventory nominated Cli absence and resolution/config/policy checks emitted substep markers; no overall runtime acceptance.",
+  "status": "substeps_observed_overall_authentication_timeout_no_runtime_acceptance",
+  "timestamp_basis": "All elapsed_seconds values are cumulative marker times from authentication diagnostics, not durations. Wrapper spans below are differences between exact begin/end records.",
+  "unlogged_interval_independent_end_to_guard_begin_seconds": 734.338,
+  "wrapper_markers": {
+    "collection_cache_inventory_begin": {
+      "line": 301,
+      "record": {
+        "elapsed_seconds": 171.128,
+        "event": "collection_cache_inventory_begin",
+        "stage": "authentication"
+      }
+    },
+    "collection_cache_inventory_end": {
+      "line": 453,
+      "record": {
+        "elapsed_seconds": 507.405,
+        "event": "collection_cache_inventory_end",
+        "files": 131021,
+        "stage": "authentication"
+      }
+    },
+    "guard_full_rehash_begin": {
+      "line": 977,
+      "record": {
+        "elapsed_seconds": 1631.08,
+        "event": "guard_full_rehash_begin",
+        "stage": "admission"
+      }
+    },
+    "independent_cache_inventory_begin": {
+      "line": 821,
+      "record": {
+        "elapsed_seconds": 645.239,
+        "event": "independent_cache_inventory_begin",
+        "stage": "admission"
+      }
+    },
+    "independent_cache_inventory_end": {
+      "line": 976,
+      "record": {
+        "elapsed_seconds": 896.742,
+        "event": "independent_cache_inventory_end",
+        "files": 131021,
+        "stage": "admission"
+      }
+    }
+  }
+}

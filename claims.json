@@ -5,7 +5,7 @@
       "id": "integrated-aggregate",
       "path": "formal/results/completion-aggregate-1236/verification.json",
       "sha256": "83f004c6417053d657cd3e93c937aff1a4849805d055a3da5638155a9e1d47cc",
-      "label": "Current integrated aggregate",
+      "label": "Historical integrated aggregate before bounded-sampler default integration",
       "commit": "b021f227a21c7e9252eae78c55ab09c404cc66cd",
       "commit_kind": "base_commit_plus_source_hashes",
       "status": "passed",
@@ -60,10 +60,20 @@
       "commit_kind": "exact_repository_commit",
       "scope": "Fresh focused project compilation; official dependency cache trusted; excludes standalone and isolated component audits and strict Comparator replay.",
       "status": "passed"
+    },
+    {
+      "id": "linux-integrated",
+      "path": "formal/results/linux-focused-5b4af40/verification.json",
+      "sha256": "99847791c380fd1e128bde2168b954d96c6af4f196f9bd54e1eb7861634728e5",
+      "label": "Current integrated bounded-sampler Linux verification",
+      "commit": "5b4af402a281a9bc02a38adb168f7b0bfde5d3aa",
+      "commit_kind": "exact_repository_commit",
+      "status": "passed",
+      "scope": "Exact-commit hosted Linux focused 1511 named replay and fresh compiled-environment audit. No separate standalone named audits, Comparator or new runtime result."
     }
   ],
   "disjoint_component_scopes": [
-    "integrated-aggregate"
+    "linux-integrated"
   ],
   "claims": [
     {
@@ -90,8 +100,65 @@
       ],
       "evidence": [
         {
-          "receipt": "integrated-aggregate",
-          "scope": "Fresh integrated root compilation with validated normal dependency reuse and four fresh named audits; includes completion program, physical bridges, and Boolean law/schedule. Six standalone audits remain separately identified within this receipt."
+          "receipt": "linux-integrated",
+          "scope": "Exact-commit hosted Linux focused 1511 named replay and fresh compiled-environment audit. No separate standalone named audits, Comparator or new runtime result."
+        }
+      ]
+    },
+    {
+      "id": "complete-bounded-sampler",
+      "title": "Complete bounded sampler",
+      "english_claim": "One fixed public fair-bit machine halts with a feasible table on every random tape by a global polynomial time C*S^D; at that same time its output law has total variation at most 2^-h from uniform ordinary fixed-margin tables.",
+      "quantity": "Every-tape time ≤ C Sᴰ; total variation ≤ 2⁻ʰ",
+      "hypotheses": [
+        "Any finite dimensions m,n and natural margins r:Fin m→ℕ,c:Fin n→ℕ with equal ordinary totals; zero margins and empty dimensions are included.",
+        "Numeric precision h≥1; M=∑ᵢrᵢ and S=m+n+clog₂(M+1)+h+1. One fixed machine and natural C>0,D apply uniformly to all inputs. Accuracy uses independent uniform fair bits; feasibility holds for every tape."
+      ],
+      "limitations": [
+        "The numerical complete runtime degree D has not been extracted; d¹⁷ is an inverse-gap power and S¹⁷⁰ bounds reserved bits/input size, not complete machine time.",
+        "Practical sampler performance and strict Comparator acceptance of this sampler remain unknown. This bounded near-uniform theorem supplies no exact-sampling or counting extension."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "formal/Math115/LatticeBoundedSampling.lean",
+        "formal/Math115/PublicLatticeSampler.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.LatticeBoundedSampling.boundedSampling",
+          "source": "formal/Math115/LatticeBoundedSampling.lean",
+          "module": "Math115.LatticeBoundedSampling"
+        },
+        {
+          "name": "Math115.PublicLatticeSampler.machine",
+          "source": "formal/Math115/PublicLatticeSampler.lean",
+          "module": "Math115.PublicLatticeSampler"
+        },
+        {
+          "name": "Math115.PublicLatticeSampler.public_spec",
+          "source": "formal/Math115/PublicLatticeSampler.lean",
+          "module": "Math115.PublicLatticeSampler"
+        },
+        {
+          "name": "Math115.PublicLatticeSampler.machineTime_public_bound",
+          "source": "formal/Math115/PublicLatticeSampler.lean",
+          "module": "Math115.PublicLatticeSampler"
+        },
+        {
+          "name": "Math115.PublicLatticeSampler.machine_outputs",
+          "source": "formal/Math115/PublicLatticeSampler.lean",
+          "module": "Math115.PublicLatticeSampler"
+        },
+        {
+          "name": "Math115.PublicLatticeSampler.machine_mass",
+          "source": "formal/Math115/PublicLatticeSampler.lean",
+          "module": "Math115.PublicLatticeSampler"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "linux-integrated",
+          "scope": "Exact-commit hosted Linux focused 1511 named replay and fresh compiled-environment audit. No separate standalone named audits, Comparator or new runtime result."
         }
       ]
     },
@@ -104,7 +171,7 @@
         "Equal-total natural margins, including zero margins and empty dimensions; uniform reserved bits."
       ],
       "limitations": [
-        "This typed-law statement alone does not identify a literal encoded outer walker; the later research checkpoint has separate evidence."
+        "This typed-law statement alone does not identify a literal encoded outer walker; the complete-machine claim has its own named and dependency-closure checks."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -124,8 +191,8 @@
       ],
       "evidence": [
         {
-          "receipt": "integrated-aggregate",
-          "scope": "Fresh integrated root compilation with validated normal dependency reuse and four fresh named audits; includes completion program, physical bridges, and Boolean law/schedule. Six standalone audits remain separately identified within this receipt."
+          "receipt": "linux-integrated",
+          "scope": "Exact-commit hosted Linux focused 1511 named replay and fresh compiled-environment audit. No separate standalone named audits, Comparator or new runtime result."
         }
       ]
     },
@@ -165,8 +232,8 @@
       ],
       "evidence": [
         {
-          "receipt": "integrated-aggregate",
-          "scope": "Fresh integrated root compilation with validated normal dependency reuse and four fresh named audits; includes completion program, physical bridges, and Boolean law/schedule. Six standalone audits remain separately identified within this receipt."
+          "receipt": "linux-integrated",
+          "scope": "Exact-commit hosted Linux focused 1511 named replay and fresh compiled-environment audit. No separate standalone named audits, Comparator or new runtime result."
         }
       ]
     },
@@ -191,9 +258,8 @@
       "evidence": []
     }
   ],
-  "current_receipt": "integrated-aggregate",
+  "current_receipt": "linux-integrated",
   "summary_receipt_ids": [
-    "integrated-aggregate",
-    "linux-focused"
+    "linux-integrated"
   ]
 }

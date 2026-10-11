@@ -1,0 +1,57 @@
+{
+  "attempt_object_sha256": "6fe3b4f2b9245bdc3897ba8fa56112d3956a67192f9c1f84983abffb114b48d4",
+  "command": [
+    "<lean-compiler>",
+    "--root=<original-run>\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<original-run>\\attempts\\ResearchBounds.CatalogueLeafDegrees\\module.olean",
+    "-i",
+    "<original-run>\\attempts\\ResearchBounds.CatalogueLeafDegrees\\module.ilean",
+    "<original-run>\\source\\ResearchBounds\\CatalogueLeafDegrees.lean"
+  ],
+  "diagnostic_object": "<original-run>\\lib\\lean\\ResearchBounds\\CatalogueLeafDegrees.olean",
+  "elapsed_seconds": 79.65406900004018,
+  "evidence_class": "original_native_compilation",
+  "execution_origin": "original",
+  "exit_code": 0,
+  "input_objects": {
+    "CountBounds.ListRepeatDegree": {
+      "path": "<original-run>\\lib\\lean\\CountBounds\\ListRepeatDegree.olean",
+      "sha256": "6b5392e761f376263a6460e3263c489cf030b7289b33231720baf7db6bfb1d77"
+    },
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    },
+    "OAI.Combinatorics.ContingencyTables.Sampling.SmallCellCatalogProgram": {
+      "path": "<authenticated-dependency-root>\\lib\\lean\\OAI\\Combinatorics\\ContingencyTables\\Sampling\\SmallCellCatalogProgram.olean",
+      "sha256": "9ccdba6f314adfb4f7cb05843548250a7daaa3a11a341222e674d38a3b69e2ee"
+    },
+    "ResearchBounds.FreshBitDegreeBounds": {
+      "path": "<original-run>\\lib\\lean\\ResearchBounds\\FreshBitDegreeBounds.olean",
+      "sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929"
+    },
+    "ResearchBounds.WordCountSeedDegrees": {
+      "path": "<original-run>\\lib\\lean\\ResearchBounds\\WordCountSeedDegrees.olean",
+      "sha256": "e5003084654888fa321c21f7d6e899e21735bc8f11ce26c62597182372a44f8a"
+    }
+  },
+  "module": "ResearchBounds.CatalogueLeafDegrees",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "source_sha256": "a03e2425ff5a71a6f8ae4c11ec314ea7d27cf169bb2496bd1f57acad86a84a58",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

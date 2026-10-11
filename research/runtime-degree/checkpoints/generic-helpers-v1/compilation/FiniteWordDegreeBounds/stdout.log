@@ -1,0 +1,3 @@
+<owned-workspace>\checkpoint11-degree-diagnostic-05\source\ResearchBounds\FiniteWordDegreeBounds.lean:32:48: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

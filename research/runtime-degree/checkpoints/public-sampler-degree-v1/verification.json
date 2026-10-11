@@ -1,0 +1,65 @@
+{
+  "complete_failure_history_claimed": false,
+  "conditional_degree": "340*max(1,t)*max(e,6)",
+  "named_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "driver_sha256": "59496c047c6e7f05ef2b1db1a0ac8d990300930890cda229a81d6e18995d5f94",
+    "elapsed_seconds": 82.63318879995495,
+    "environment_exhaustiveness": false,
+    "original_receipt_sha256": "111d6dbb8d0999192edd7acf34f0225c3bc07cdf93832d3d5c5157e5384e12df",
+    "published_receipt_sha256": "5df1c9b455c36e58c277dc422b96a80870e278a6b01bc313ff5029ca0e8df03c",
+    "readback": "audit/readback.json",
+    "readback_sha256": "31a4ad30e7341bc2dd2c0cb2891e59f0cefea3bb7590a0b6c4590be57ef2b389",
+    "receipt": "audit/receipt.json",
+    "records": "audit/records.json",
+    "records_sha256": "e31a107430cde292c295000c959a43ef39de1c5cb4d573a3552f3ea7810ddbff",
+    "verified_name_count": 3
+  },
+  "numerical_count_degree_e": null,
+  "numerical_draw_degree_t": null,
+  "ordinary_compilation": {
+    "elapsed_seconds": 87.66581809998024,
+    "object_sha256": "49bb4dec634bb75ff4036d4954340b57bd7db8c3cde51d1ae2ed580add66ffbe",
+    "original_receipt_sha256": "a2e2ed2ebaa56c54bc5f24ae185b76c68cf490e1b90daa6cf0246afe7a4c70a7",
+    "platform": "Windows x86_64",
+    "published_receipt_sha256": "00707342c98bf127c5b629a651274ef38ec9683e2706c7d728a9efa667e1c914",
+    "receipt": "compilation/receipt.json",
+    "scope": "Ordinary native diagnostic using authenticated reused prerequisites"
+  },
+  "prerequisite_boundary": "Reused authenticated accepted native R10 sampler and complete seven-helper namespace plus official pinned caches. Full closure/cache snapshots omitted; raw identities retained in provenance.",
+  "prior_semantic_source_reviews": [
+    {
+      "path": "reviews/source01/review.md",
+      "scope": "AI source review of original0c43; compilation originally failed on identifier.",
+      "sha256": "1ec9a3a2144d16d0e4446cdb62b31c30b618bc25f970cbec6a5f5ca9fcdb11a2"
+    },
+    {
+      "path": "reviews/source02/addendum.md",
+      "scope": "AI source review of single name qualification in accepted4ac; actual compilation/audit evidence remains separate.",
+      "sha256": "2ee4397bcf340f87b355a33f514e3b737ae54496b3b365a618e75e6502c67e55"
+    }
+  ],
+  "provenance": {
+    "path": "provenance-bindings.json",
+    "sha256": "363bd4413a96d471e330cdf009c3ebe1e21d20814846000724d4051d442cc040"
+  },
+  "public_replay": null,
+  "raw_final_result_sha256": "119bcb638cffb15a04d027c8195171b9808fdf3cd2339388641a44d5b9313223",
+  "raw_status_sha256": "5f35f661406588487b59d7a36c0666d9eadd3854d5f9c81d24d45f1e8bbda4c9",
+  "root_result_review": {
+    "path": "audit/root-result-review.json",
+    "reviewer": "Root AI assistant actual-artifact and saved-log readback; not human review.",
+    "sha256": "9146869b0891341e92f1fb2672d58e84f9d30d2f3b53fe1dc7bf0dd6d1948edb"
+  },
+  "schema_version": 1,
+  "scope": "Exact existing publicmachine/codec/every-tape output andTV theorem under two explicit actual-realizer degree hypotheses and equal-total margins,numeric h>=1; no numerical e/t or strict/Linux/default claim.",
+  "source": "ResearchBounds/PublicSamplerDegree.lean",
+  "source_sha256": "4ac577f8b7b1f2fc7c68950ef87bfe39ca236e82a75602395e72da694fb10255",
+  "statements": "statements-and-hypotheses.json",
+  "status": "conditional_public_sampler_degree_compiled_named_audit_passed",
+  "trust_label_scope": "Recorded native helper trust string says generic named audit pending; existing seven-helper public packet separately records actual47/21 audits. No raw trust text rewritten."
+}

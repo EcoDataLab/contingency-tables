@@ -1,0 +1,15 @@
+{
+  "id": 11691583222,
+  "name": "math115-linux-focused-38101898049-1",
+  "digest": "sha256:a4b058840dc81f6371478fbbc4c3135b0f6453bf1cb4c05417aa99d2f7ef2b5a",
+  "size_in_bytes": 59553741,
+  "expired": false,
+  "created_at": "2026-10-11T04:17:35Z",
+  "updated_at": "2026-10-11T04:17:35Z",
+  "expires_at": "2026-11-10T04:17:26Z",
+  "workflow_run": {
+    "id": 38101898049,
+    "head_sha": "5b4af402a281a9bc02a38adb168f7b0bfde5d3aa",
+    "head_branch": "verify-bounded-sampler-integration-2026-10-11"
+  }
+}

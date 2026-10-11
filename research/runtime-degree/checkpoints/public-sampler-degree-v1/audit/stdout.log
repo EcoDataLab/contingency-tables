@@ -1,0 +1,5 @@
+'Math115.PublicSamplerDegree.publicDegree' does not depend on any axioms
+'Math115.PublicSamplerDegree.machineTime_public_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PublicSamplerDegree.fixedMachineBoundedSampling_with_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

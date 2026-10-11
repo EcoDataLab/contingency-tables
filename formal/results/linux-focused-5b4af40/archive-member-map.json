@@ -1,0 +1,147 @@
+{
+  "members": {
+    ".tools/linux-verification/environment.json": {
+      "public_file": "environment.json",
+      "original_sha256": "369238528a5623659001283453879c047bd7208b262f584e3d917a51ec57aff4",
+      "bytes": 30298,
+      "gzip": false
+    },
+    ".tools/linux-verification/bootstrap-lean.log": {
+      "public_file": "bootstrap-lean.log",
+      "original_sha256": "5c500b4860dbd33eb1dadc882785891a8a712a987522688f2051ca36d1ba3d6d",
+      "bytes": 11384,
+      "gzip": false
+    },
+    ".tools/linux-verification/outcome.json": {
+      "public_file": "outcome.json",
+      "original_sha256": "8be58169f633a2a2f1dfc43a29099311b2c0326d1e6c7f2f24b2fe26b3c15a46",
+      "bytes": 524,
+      "gzip": false
+    },
+    ".tools/linux-verification/verification.log": {
+      "public_file": "verification.log",
+      "original_sha256": "29c9846223d7ec0f5142febbfc2225bd17509e13972aad5128c31733e6375796",
+      "bytes": 1331391,
+      "gzip": false
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/Audit.lean": {
+      "public_file": "environment-audit/Audit.lean",
+      "original_sha256": "3f9588969ba23349cdc6635147c666db6983cda2ccb4d27969508775ca341617",
+      "bytes": 41229,
+      "gzip": false
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/audit-after.json": {
+      "public_file": "environment-audit/audit-after.json.gz",
+      "original_sha256": "56a525815ccd527919cbdda061352cf57944e565983edf8c1bdaa8fd604c50dd",
+      "bytes": 16358844,
+      "gzip": true
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/audit-before.json": {
+      "public_file": "environment-audit/audit-after.json.gz",
+      "original_sha256": "56a525815ccd527919cbdda061352cf57944e565983edf8c1bdaa8fd604c50dd",
+      "bytes": 16358844,
+      "deduplicated_byte_identical": true
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/compile-after.json": {
+      "public_file": "environment-audit/compile-after.json.gz",
+      "original_sha256": "1ecd4a3b9e47d1d1fb16e1ee96a3c601c99319ab0c3b94ec941339f801926e27",
+      "bytes": 16358246,
+      "gzip": true
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/compile-before.json": {
+      "public_file": "environment-audit/compile-after.json.gz",
+      "original_sha256": "1ecd4a3b9e47d1d1fb16e1ee96a3c601c99319ab0c3b94ec941339f801926e27",
+      "bytes": 16358246,
+      "deduplicated_byte_identical": true
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/compiler-prefix.stderr": {
+      "public_file": "environment-audit/compiler-prefix.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "gzip": false
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/compiler-prefix.stdout": {
+      "public_file": "environment-audit/compiler-prefix.stdout",
+      "original_sha256": "9ca5b6d6d3a788f2e90ff65d5c0660f9491cdcb8c96370602f46bd478269e627",
+      "bytes": 107,
+      "gzip": false
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/compiler-version.stderr": {
+      "public_file": "environment-audit/compiler-prefix.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "deduplicated_byte_identical": true
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/compiler-version.stdout": {
+      "public_file": "environment-audit/compiler-version.stdout",
+      "original_sha256": "355a9a028f81641782d75d6e6b58dec70f29d2f61238a9e271690259d9bf5680",
+      "bytes": 106,
+      "gzip": false
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/environment-audit.stderr": {
+      "public_file": "environment-audit/compiler-prefix.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "deduplicated_byte_identical": true
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/environment-audit.stdout": {
+      "public_file": "environment-audit/environment-audit.stdout.gz",
+      "original_sha256": "e99076aab0a36c2f21623bf16fb882d07b264497e7dc5ac2f163386a44ff9e94",
+      "bytes": 459840089,
+      "gzip": true
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/frozen-config.json": {
+      "public_file": "environment-audit/frozen-config.json",
+      "original_sha256": "69be7fffbae8664dbd550d157162148fddb22cdfb56ac2e6a5321cff2952f3ce",
+      "bytes": 591332,
+      "gzip": false
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/helper-compile.stderr": {
+      "public_file": "environment-audit/compiler-prefix.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "deduplicated_byte_identical": true
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/helper-compile.stdout": {
+      "public_file": "environment-audit/compiler-prefix.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "deduplicated_byte_identical": true
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/helper-source/ResearchAudit/EnvironmentAudit.lean": {
+      "public_file": "environment-audit/helper-source/ResearchAudit/EnvironmentAudit.lean",
+      "original_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "bytes": 5713,
+      "gzip": false
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/imported-object-closure.json": {
+      "public_file": "environment-audit/imported-object-closure.json.gz",
+      "original_sha256": "b62f94b4130ab0335396175605f50cdf17463ad655412e667983f2017f4d4bf7",
+      "bytes": 3572302,
+      "gzip": true
+    },
+    ".local/environment-audits/focused-57gHsDTx/attempt/receipt.json": {
+      "public_file": "environment-audit/receipt.json",
+      "original_sha256": "e2ab66046a744ffeadef0f024c1a3d0342c2c5293569ee3598cbf4d94d1adcb2",
+      "bytes": 10543,
+      "gzip": false
+    },
+    ".local/environment-audits/focused-57gHsDTx/config.json": {
+      "public_file": "original-config.json",
+      "original_sha256": "101b099f69dcfed90642f4e4c2a162596dd1abcfdba37d16bf96365d0dd52f5b",
+      "bytes": 591332,
+      "gzip": false
+    }
+  },
+  "excluded_binaries": [
+    {
+      "archive_member": ".local/environment-audits/focused-57gHsDTx/attempt/helper-lib/ResearchAudit/EnvironmentAudit.olean",
+      "sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581",
+      "bytes": 640080,
+      "reason": "Binary delivery excluded; input/receipt digest binding retained."
+    }
+  ],
+  "unselected_members": {},
+  "complete_zip_file_members": 23,
+  "method": "Original hosted-runner bytes, gzip empty filename/mtime0/level9; identical member payloads share one public file. Every ZIP file is mapped or excluded with exact bytes/digest. No redaction or truncation."
+}

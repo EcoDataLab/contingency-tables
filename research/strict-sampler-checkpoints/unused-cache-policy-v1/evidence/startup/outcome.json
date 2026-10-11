@@ -1,0 +1,111 @@
+{
+  "actual_82_direct_external_import_resolution": null,
+  "actual_strict_probe": {
+    "effective_capabilities": 0,
+    "kernel": "7.3.0-8-generic",
+    "landlock_abi": 11,
+    "landrun_outside_write_tcp_bind_denied": true,
+    "no_new_privileges_enforced": true,
+    "systemd_af_unix_denied": true
+  },
+  "authentication_deadline_seconds": 600,
+  "authentication_measured_phase_elapsed": null,
+  "authentication_returncode": null,
+  "automatic_retry": false,
+  "classification": "timing stop without captured policy rejection; exact authentication substep unobserved",
+  "config_sha256": "e2a93ea05edfc3a13897975abe3f71cfad922a55075f18c54cdcf774739116fe",
+  "delivered_and_invoked_policy_sha256": "4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833",
+  "diagnostic_limits": {
+    "auth_CPU_peak_memory_and_per_phase_IO": "not instrumented in existing capture",
+    "causal_performance_diagnosis": null,
+    "future_retry_result": null
+  },
+  "export_executed": false,
+  "failure_file_mtime_minus_auth_start_seconds": 600.0416400432587,
+  "full_strict_acceptance": false,
+  "kernel_comparison_executed": false,
+  "phases": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "<guest-home>/checkpoint11-install.py",
+        "--root",
+        "<checking-root>",
+        "--archive",
+        "<checking-root>/.tools/linux-verification/checkpoint11-inputs/sources.tar.gz",
+        "--manifest",
+        "<checking-root>/.tools/linux-verification/checkpoint11-inputs/installation-manifest.json",
+        "--manifest-sha256",
+        "4b8911a0127dd8facd501b535b825657691a87ecdc8091cea78dff4bf40584d7",
+        "--staging",
+        "<checking-root>/.tools/linux-verification/checkpoint11-inputs/installed"
+      ],
+      "cap_seconds": 600,
+      "elapsed_seconds": 9.935375452041626,
+      "returncode": 0,
+      "stage": "install",
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "5ba0df6c9a1fb28b59072cbebe0946b88cd1a623d1382fb54760e81489c53aa3"
+    },
+    {
+      "argv": [
+        "bash",
+        "-c",
+        "source \"$1\" preflight; configure_paths; strict_landrun_probe",
+        "c11-preflight",
+        "<checking-root>/scripts/bootstrap_comparator.sh"
+      ],
+      "cap_seconds": 300,
+      "elapsed_seconds": 3.650771379470825,
+      "returncode": 0,
+      "stage": "preflight",
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "<guest-home>/checkpoint11-authenticate.py",
+        "--root",
+        "<checking-root>",
+        "--runner",
+        "<checking-root>/.tools/linux-verification/checkpoint11-runner/strict_sampler.py",
+        "--output",
+        "<checking-root>/.tools/linux-verification/checkpoint11-evidence/runtime-freeze.json",
+        "--native-audit",
+        "<checking-root>/.tools/linux-verification/strict-sampler-inputs/native-audit.json",
+        "--lake-config-provenance",
+        "<checking-root>/.tools/linux-verification/strict-sampler-inputs/lake-config-provenance.json",
+        "--lake-config-provenance-sha256",
+        "645f1f13d16c12eb421d86c379ac2b18f7a40170226e07558445afb0336860a0",
+        "--unused-cache-policy",
+        "<checking-root>/.tools/linux-verification/strict-sampler-inputs/unused-cache-policy.json",
+        "--unused-cache-policy-sha256",
+        "4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833"
+      ],
+      "cap_seconds": 600,
+      "elapsed_seconds": null,
+      "returncode": null,
+      "stage": "authenticate",
+      "status": "timed_out_or_interrupted",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "plan_executed": false,
+  "policy_live_acceptance": null,
+  "policy_live_rejection": null,
+  "proof_compilation_executed": false,
+  "proof_loading_executed": false,
+  "raw_final_result_sha256": "ff75ede95ea141b2b6972d79df4a53190a71a6f8305b03dbf6d287ba386f2dc5",
+  "raw_guest_archive_sha256": "932696159a3bba8526963a8cfff710be82500a5007d26a2abd3e6fde8a6e6bd2",
+  "raw_guest_manifest_sha256": "fd212e09c5e9d22c66ee9a5d1f4780d819f0e763a43a520768bfcd15fa1ac97d",
+  "raw_host_manifest_sha256": "284b0dd23eca187fe5f96bbf8a7c0a855b855b4e05e8ff03d24d6bd6907303df",
+  "runtime_freeze_generated": false,
+  "scope": "Installation and actual sandbox preflight passed. Silent authentication timing stop; exact substep unobserved, neither policy acceptance nor rejection established. No runtime/plan/strict result.",
+  "status": "closed_startup_only_authentication_600_second_deadline_stop"
+}

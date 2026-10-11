@@ -1,0 +1,18 @@
+{
+  "entrypoint_native_audit": {
+    "evidence_manifest_sha256": null,
+    "sources_sha256": {},
+    "status": "pending_actual_compilation_and_named_axiom_audit",
+    "target_axioms": {}
+  },
+  "external_import_resolution": {},
+  "lake_configuration_artifacts_sha256": {},
+  "schema_version": 1,
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "status": "pending_actual_linux_runtime_authentication_not_executable",
+  "system_executables": {},
+  "trusted_cache_files_sha256": {},
+  "trusted_cache_roots": [],
+  "trusted_files_sha256": {},
+  "trusted_tool_aliases": {}
+}

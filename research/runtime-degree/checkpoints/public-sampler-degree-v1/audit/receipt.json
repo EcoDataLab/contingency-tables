@@ -1,0 +1,46 @@
+{
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint12-public-degree-02\\audit-source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint12-public-degree-02\\audit\\attempt\\module.olean",
+    "<owned-workspace>\\checkpoint12-public-degree-02\\audit-source\\ResearchBounds\\PublicSamplerDegreeAudit.lean"
+  ],
+  "elapsed_seconds": 82.63318879995495,
+  "environment_exhaustiveness": false,
+  "error": null,
+  "evidence_class": "named_axiom_audit",
+  "exit_code": 0,
+  "records": [
+    {
+      "axioms": [],
+      "name": "Math115.PublicSamplerDegree.publicDegree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.PublicSamplerDegree.machineTime_public_degree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.PublicSamplerDegree.fixedMachineBoundedSampling_with_degree"
+    }
+  ],
+  "requested_names": 3,
+  "status": "passed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "aafddef8f6276e87a9a8a703c46fea12de1a5b32558d8f8a7df91ddd3374da9b"
+  }
+}

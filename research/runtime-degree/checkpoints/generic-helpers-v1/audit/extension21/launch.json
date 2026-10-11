@@ -1,0 +1,15 @@
+{
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint11-degree-successor-02\\audit-source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint11-degree-successor-02\\new-module-audit\\attempt\\module.olean",
+    "<owned-workspace>\\checkpoint11-degree-successor-02\\audit-source\\ResearchBounds\\NewDegreeNamedAudit.lean"
+  ],
+  "wall_cap": 300,
+  "LEAN_PATH": "<owned-workspace>\\checkpoint11-degree-successor-02\\graph\\lib\\lean;<owned-workspace>\\checkpoint11-degree-successor-02\\Math115-projection;<owned-workspace>\\completion-checkpoint10-native-10\\lib\\lean;<owned-workspace>\\contingency-tables-checkpoint10-native-10\\formal\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;<owned-workspace>\\contingency-tables-checkpoint10-native-10\\formal\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;<owned-workspace>\\contingency-tables-checkpoint10-native-10\\formal\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;<owned-workspace>\\contingency-tables-checkpoint10-native-10\\formal\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;<owned-workspace>\\contingency-tables-checkpoint10-native-10\\formal\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;<owned-workspace>\\contingency-tables-checkpoint10-native-10\\formal\\.lake\\packages\\mathlib\\.lake\\build\\lib\\lean;<owned-workspace>\\contingency-tables-checkpoint10-native-10\\formal\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;<owned-workspace>\\contingency-tables-checkpoint10-native-10\\formal\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean",
+  "source_sha256": "53d03c9ad846d46af06c2451f8c0c571650587852a4bace811c78cc13fe57c6c"
+}

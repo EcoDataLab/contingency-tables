@@ -1,0 +1,54 @@
+<current-run>\source\CountBounds\TightWordCountDegreeV2.lean:131:17: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+<current-run>\source\CountBounds\TightWordCountDegreeV2.lean:131:17: warning: Unused tactic linter: `exact hfirst` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<current-run>\source\CountBounds\TightWordCountDegreeV2.lean:134:30: warning: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<current-run>\source\CountBounds\TightWordCountDegreeV2.lean:134:70: warning: Variable name `hce` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hce
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<current-run>\source\CountBounds\TightWordCountDegreeV2.lean:139:33: warning: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<current-run>\source\CountBounds\TightWordCountDegreeV2.lean:139:73: warning: Variable name `hce` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hce
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<current-run>\source\CountBounds\TightWordCountDegreeV2.lean:144:30: warning: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<current-run>\source\CountBounds\TightWordCountDegreeV2.lean:144:70: warning: Variable name `hce` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hce
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<current-run>\source\CountBounds\TightWordCountDegreeV2.lean:149:33: warning: Variable name `hc` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hc
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<current-run>\source\CountBounds\TightWordCountDegreeV2.lean:149:73: warning: Variable name `hce` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hce
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

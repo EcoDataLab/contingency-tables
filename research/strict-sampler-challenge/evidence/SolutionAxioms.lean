@@ -1,0 +1,5 @@
+import Math115.StrictSamplerSolution
+
+#print axioms Math115.StrictSampler.FixedMachineBoundedSamplingStatement
+#print axioms Math115.StrictSampler.boundedSampling
+#print axioms Math115.StrictSampler.fixedMachineBoundedSampling

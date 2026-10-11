@@ -1,0 +1,12 @@
+<original-run>\source\ResearchBounds\DrawControlDegree.lean:64:17: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<original-run>\source\ResearchBounds\DrawControlDegree.lean:74:57: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<original-run>\source\ResearchBounds\DrawControlDegree.lean:153:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<original-run>\source\ResearchBounds\DrawControlDegree.lean:202:10: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

@@ -1,0 +1,45 @@
+{
+  "boundary": "Direct object paths/digests are in the per-stage receipts; uncaptured transitive official cache/source bytes rely on authenticated native runtime and private before/after snapshots.",
+  "helper_source_objects": [
+    {
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "object_sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce",
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "object_sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929",
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "object_sha256": "bf5e49a96a39c4e9526fb0cf1ad3786d8a6c84d1e90771b0c5906cfce1c316d2",
+      "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "module": "ResearchBounds.ScalarOutputSizeDegree",
+      "object_sha256": "31373e7e8f1b04751d032a564f00a5fc0ca3965e4420159c07a77a1c6f3a602f",
+      "source_sha256": "11c1d1b471b784086d9dc18e9026e308e82812f30f636e4848eadb1f2217b0bb"
+    },
+    {
+      "module": "ResearchBounds.TreeArithmeticDegree",
+      "object_sha256": "14084fd1a8a94de138eb84ced25330d5fb5e5dbb7869ba49e7cc01fab5f5af9e",
+      "source_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76"
+    },
+    {
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "object_sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "module": "ResearchBounds.WordCountSeedDegrees",
+      "object_sha256": "e5003084654888fa321c21f7d6e899e21735bc8f11ce26c62597182372a44f8a",
+      "source_sha256": "fb04a131b99d25059f215287021fab61d026a1aafe2bbff838841c88157c7ccd"
+    }
+  ],
+  "prior_public_helper_manifest_sha256": "d1f6ef03c4b7a1b34c897b44e35be63358974abd89e2284ec6b9a9dd8256c929",
+  "same_public_sampler": {
+    "object_sha256": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489",
+    "source_sha256": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245"
+  }
+}

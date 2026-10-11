@@ -1,0 +1,62 @@
+{
+  "authenticator_sha256": "4b9d22b3673dfc0820e2d4752c7deea9a3428add0e2ef97eb00383457c8b42ff",
+  "code_edits": false,
+  "exact_failing_root": null,
+  "expected_cache_roots": [
+    ".tools/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean",
+    "formal/.lake/packages/Cli/.lake/build/lib/lean",
+    "formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "formal/.lake/packages/Qq/.lake/build/lib/lean",
+    "formal/.lake/packages/aesop/.lake/build/lib/lean",
+    "formal/.lake/packages/batteries/.lake/build/lib/lean",
+    "formal/.lake/packages/importGraph/.lake/build/lib/lean",
+    "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+    "formal/.lake/packages/plausible/.lake/build/lib/lean",
+    "formal/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "expected_cache_roots_source": "frozen authenticator sorted builtin + every exact Lake manifest package",
+  "external_import_candidate_count": 82,
+  "failure_predicate": "cache_inventory relative(root,name) succeeded, base.is_dir() false; no named root in error",
+  "full_closed_capture_pending": true,
+  "limits": [
+    "error does not distinguish absent root from ordinary nondirectory",
+    "package chosen from historical hosted Cli failure would be a guess",
+    "older bootstrap totalcache8908 lacks per-root lstat/keyset",
+    "Lake LEAN_PATH entries do not prove directories exist",
+    "readonly observer captured config/source/tool metadata only, not cache roots"
+  ],
+  "live_actions": false,
+  "necessarily_completed_before_failure": [
+    "reviewed runner and source-freeze SHA checks",
+    "fresh output and ambient override guards",
+    "independent configuration provenance path/SHA and strict indexed schema",
+    "slots0/1/5 exact artifact/source/tool/trace/options validation",
+    "configuration identity stats",
+    "cold submitted artifact exclusion and submitted namespace exclusion in trusted roots",
+    "checker provenance metadata validation",
+    "mandatory runtime tool/alias freeze",
+    "system executable existence and hash binding",
+    "successful git ls-files for9 packages",
+    "unique candidate resolution for every frozen external import",
+    "native audit JSON parse only"
+  ],
+  "not_reached": [
+    "complete independent runner admit source graph/Git pin/cleanliness/cache validation",
+    "native audit validation within admission",
+    "runtime freeze file output and marker",
+    "plan",
+    "execute/export/kernel/compare"
+  ],
+  "observed_package_manifest_sha256": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+  "observed_prior_guest_report_sha256": "366f15b7983874310a210acaf4e51788e841675320dc454ba3fd6b2186d352f5",
+  "repair_policy_not_yet_granted": "Any absent-unused-package policy must bind exact absence/keysets before and after, reject symlink/file/drift, preserve every selected external object and source owner guard, and retain all real sandbox/kernel controls. Never create or silently skip guessed directories.",
+  "required_observation": [
+    "exact rejected relative name and lstat state within owned checking checkout",
+    "exact ordered10-root inventory at failure: absent vs regulardirectory vs nonregular; parent symlink checks preserved",
+    "present-root file keysets/hash identities and actual selected external .olean existence/hash/source owner coverage",
+    "freeze source/package/config/tool pins and zero submitted proof inventory alongside directory facts"
+  ],
+  "runner_sha256": "136f13a56001c6f4f31e73a7133193cc946be32de3cc4970edc9fc06c2a65d38",
+  "status": "actual startup authentication rejected one unnamed nondirectory cache root; exact root unidentified",
+  "stderr_sha256": "15e0eb0a5834cd8702020c864ac77f8640926de57dc55398efded7e3ab733416"
+}

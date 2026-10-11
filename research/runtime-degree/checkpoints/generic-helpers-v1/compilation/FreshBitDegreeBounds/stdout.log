@@ -1,0 +1,9 @@
+<owned-workspace>\checkpoint11-degree-diagnostic-03\source\ResearchBounds\FreshBitDegreeBounds.lean:94:17: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<owned-workspace>\checkpoint11-degree-diagnostic-03\source\ResearchBounds\FreshBitDegreeBounds.lean:124:56: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<owned-workspace>\checkpoint11-degree-diagnostic-03\source\ResearchBounds\FreshBitDegreeBounds.lean:139:74: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

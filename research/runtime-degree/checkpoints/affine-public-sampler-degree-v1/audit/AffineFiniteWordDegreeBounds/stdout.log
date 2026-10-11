@@ -1,0 +1,6 @@
+'Math115.AffineFiniteWordDegree.source_all_weight' depends on axioms: [propext, Quot.sound]
+'Math115.AffineFiniteWordDegree.preserved_pair_all_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AffineFiniteWordDegree.completeOnlineDegree' does not depend on any axioms
+'Math115.AffineFiniteWordDegree.complete_online_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AffineFiniteWordDegree.machineTime_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.AffineFiniteWordDegree.completeOnlineDegree_le_original' depends on axioms: [propext, Quot.sound]

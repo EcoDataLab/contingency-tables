@@ -1,0 +1,9 @@
+{
+  "host_capture_manifest_sha256": "3755594e0c22a14cb9dc4a2e1aa90b9c900a4020da64cab9e6849d1f2ede6b51",
+  "owned_qemu_reaped": true,
+  "processes_absent": true,
+  "qemu_exit_code": 1,
+  "retained_pins_unchanged": true,
+  "scope": "Owner saved cleanup/absence receipt, no new live query",
+  "status": "closed; exact owned QEMU reaped; supervisor and all research processes absent; retained hashes unchanged"
+}

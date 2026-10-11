@@ -1,0 +1,38 @@
+<owned-workspace>\checkpoint11-degree-diagnostic-04\source\ResearchBounds\FiniteWordDegreeBounds.lean:26:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+where
+ b := ↑(weight a)
+ c := ↑(?m.53 a)
+<owned-workspace>\checkpoint11-degree-diagnostic-04\source\ResearchBounds\FiniteWordDegreeBounds.lean:25:24: warning: This simp argument is unused:
+  FiniteWordExecution.wordMeasure
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [eval_X]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<owned-workspace>\checkpoint11-degree-diagnostic-04\source\ResearchBounds\FiniteWordDegreeBounds.lean:51:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  b - c ≥ 1
+where
+ b := ↑(weight a)
+ c := ↑(?m.61 a)
+<owned-workspace>\checkpoint11-degree-diagnostic-04\source\ResearchBounds\FiniteWordDegreeBounds.lean:50:24: warning: This simp argument is unused:
+  FiniteWordExecution.wordMeasure
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [eval_X]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<owned-workspace>\checkpoint11-degree-diagnostic-04\source\ResearchBounds\FiniteWordDegreeBounds.lean:55:24: warning: This simp argument is unused:
+  FiniteWordExecution.wordMeasure
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [eval_X]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<owned-workspace>\checkpoint11-degree-diagnostic-04\source\ResearchBounds\FiniteWordDegreeBounds.lean:156:15: error(lean.unknownIdentifier): Unknown identifier `ax`

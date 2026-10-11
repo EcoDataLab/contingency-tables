@@ -1,0 +1,37 @@
+{
+  "actual_draw_t": null,
+  "complete_numerical_sampler_D": null,
+  "conditional_public_degree": "340 * max 1008 t",
+  "configuration_artifact_count_separate": 1,
+  "count_certificate_parameter_e": 1008,
+  "count_degree": 1008,
+  "count_degree_statement": "charged work plus encoded output bounded by a polynomial of degree at most1008 for the exact actual count realizer, all literal inputs",
+  "default_Linux_verification_changed": false,
+  "exact_requested_and_verified_reports": 172,
+  "execution_input_count": 29,
+  "fresh_modules": 5,
+  "fresh_reports": 118,
+  "human_or_strict_acceptance": false,
+  "native_platform": "Windows x86_64",
+  "prepublication_candidate_manifest_sha256": "f5ba99daa79cb4db6fb008db77f0b09e4d38f5d2e385bf13e60b5e961449c677",
+  "public_reproduction_performed": false,
+  "publication_review": "../actual-count-draw-helpers-v1-review.json",
+  "remaining_draw_handoff": {
+    "path": "README.md",
+    "section": "Remaining numerical draw certificates"
+  },
+  "reused_modules": 4,
+  "reused_reports": 54,
+  "review_kind": "AI saved-artifact review",
+  "source_status_sidecar": "source-status.json",
+  "status": "frozen_public_component_evidence_with_separate_projection_review",
+  "unresolved_draw_seams": [
+    "printer",
+    "initial",
+    "fallback",
+    "branch",
+    "referenceTrial",
+    "unitTrial",
+    "retryWords"
+  ]
+}

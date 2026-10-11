@@ -1,0 +1,39 @@
+{
+  "evidence_class": "bounded VM startup failure before verification",
+  "boot_admission_cap_seconds": 600,
+  "profile": {
+    "memory_mib": 8192,
+    "vcpus": 4,
+    "acceleration": "QEMU TCG",
+    "disk_virtual_gib": 80,
+    "seed_read_only": true
+  },
+  "guest_runtime_authentication": null,
+  "lean_compilation": null,
+  "export": null,
+  "kernel": null,
+  "comparator": null,
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "strict_acceptance": false,
+  "independent_public_reproduction": false,
+  "status": "boot_or_console_admission_timed_out",
+  "started_at_utc": "2026-10-11T03:46:52.663364+00:00",
+  "elapsed_seconds": 600.4256856000284,
+  "normal_console_prompt_observed": true,
+  "observed_provisioning_error": "MATH115_C11_MEDIA_COPY_FAILED=FileNotFoundError(2, 'No such file or directory')",
+  "checker_command_dispatched": false,
+  "owned_guest_stopped_and_reaped": true,
+  "preserved_inputs_unchanged": true,
+  "seed_sha256": "cb086bb453e89c55b9d4dbf35c64f9277a8f0b19bd7562bc97e819726e5dffd5",
+  "source_archive_sha256": "167402b7d7bce3baed3b0ebd36926570e850218c0f05df8be4a9cc6379786534",
+  "raw_bindings": {
+    "download_manifest_sha256": "25b0a1322bf6dfafe9e534eb2112f78ff92a5274423e0a718e793a1208441d35",
+    "status_sha256": "71720c051e95bc697eb81e27ee1088c310538c58558ef5fb71449003ee85202c",
+    "serial_sha256": "8e3c8b087b28865128c8c86169f4836049c837ba30825d44b43aa4a386f37ba6",
+    "terminal_result_sha256": "c14e71527dadc41342806feb0efed85d1764942897836144c61b9e1073f965ea",
+    "cleanup_receipt_sha256": "09134604dfd9dcea4e466249d7eff2a5ab4799722cdb50467355a7d15bd7e13c",
+    "root_review_sha256": "85f2be18d4cda7267036cb293e17026b61ffb2e56d02af2c837f14642a2c26b4"
+  },
+  "projection": "Allowlisted outcome/resource fields from authenticated raw status, terminal and cleanup artifacts. Seven downloaded terminal files were rehashed; host-specific commands, process identities, paths, raw console and stopped disk are excluded from this public packet. The stopped disk remains inventoried remotely and was not locally rehashed.",
+  "diagnosis": "The smaller configuration reached a console prompt, but media delivery raised FileNotFoundError before readiness. The exception did not identify a path. Offline inspection found the archive named SOURCESTAR.GZ in primary ISO9660 and sources.tar.gz in Joliet; that is a confirmed namespace difference, but its role in the guest failure remains an inference. No proof/checker command ran."
+}

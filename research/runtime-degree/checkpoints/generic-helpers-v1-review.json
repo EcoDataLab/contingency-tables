@@ -1,0 +1,16 @@
+{
+  "evidence_class": "AI source and saved-evidence publication review",
+  "reviewed_candidate_manifest_sha256": "3bb67316541592583359352662b1a585ae0074c279cf8b070d2bd9cd9e382434",
+  "published_packet_manifest_sha256": "d1f6ef03c4b7a1b34c897b44e35be63358974abd89e2284ec6b9a9dd8256c929",
+  "root_packet_review_sha256": "16706b1fecef2219ad41048eddc10c19d761877edbbbf0b558b5c798c76b9a8f",
+  "separate_AI_review_manifest_sha256": "c4f549211303d4d5d664fe0ce415e89373d5a94eec5cbece6af9da5f0b537f70",
+  "reviewed_correction": {
+    "file": "history/README.md",
+    "before": "All four receipts record exit 1",
+    "after": "All five receipts record exit 1",
+    "scope": "One wording correction plus regenerated content manifest; source, driver, receipt and log bytes unchanged."
+  },
+  "native_scope": "Seven helper compilations and separate47/21 named audits with reused prerequisite objects and official caches. No full sampler numerical degree, exhaustive helper environment audit, public replay, Linux/default or strict acceptance claim.",
+  "human_review": false,
+  "utc": "2026-10-11T03:33:55.998011+00:00"
+}

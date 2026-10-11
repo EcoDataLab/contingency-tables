@@ -1,0 +1,69 @@
+{
+  "configuration_provenance_sha256": "645f1f13d16c12eb421d86c379ac2b18f7a40170226e07558445afb0336860a0",
+  "native_audit_sha256": "8e6e534054b17ea5b566d3fb76a47b3a4a1722ce6570e58ede25703f1a8fa625",
+  "original_corpus": {
+    "all_original_members_rehashed": true,
+    "manifest_sha256": "34ff831e7fda385696e82ae1234426d08b24b329087059817ba9df0b7ad063a6",
+    "public_path": "research/strict-sampler-challenge"
+  },
+  "raw_artifacts": [
+    {
+      "artifact_id": "original-corpus-manifest",
+      "bytes": 2200,
+      "public_bytes_supplied": false,
+      "sha256": "34ff831e7fda385696e82ae1234426d08b24b329087059817ba9df0b7ad063a6"
+    },
+    {
+      "artifact_id": "reviewed-repair-manifest",
+      "bytes": 2376,
+      "public_bytes_supplied": false,
+      "sha256": "7ddb91484783f3824ec7b7d6c8e240731578e7a684e1c5dffc5f7094f9e5cd80"
+    },
+    {
+      "artifact_id": "provenance-packet-manifest",
+      "bytes": 5962,
+      "public_bytes_supplied": false,
+      "sha256": "1f1f290cfddf1f62f92e823720d7efd63437c9002001a15726fe899cbd4fe3d6"
+    },
+    {
+      "artifact_id": "actual-readonly-review-manifest",
+      "bytes": 1424,
+      "public_bytes_supplied": false,
+      "sha256": "a5179266048c7ec1084466a9973b820023b26759d2ed8de75591374093ae47bb"
+    },
+    {
+      "artifact_id": "actual-readonly-compatibility-review",
+      "bytes": 2459,
+      "public_bytes_supplied": false,
+      "sha256": "21ee15cb06a1ef526c750ed6f8396177d9ae1d448e0a5b3c0d13e8e064c090d0"
+    },
+    {
+      "artifact_id": "source-order-cache-diagnosis-manifest",
+      "bytes": 1106,
+      "public_bytes_supplied": false,
+      "sha256": "84327a43e812e93a834b43a697bf8bb9e00ef082c1f2e22cb909a44360de6aaa"
+    }
+  ],
+  "readonly_capture": {
+    "guest_manifest_sha256": "15d1b2c468c39f798d5e879d008cb8af09642d978f38e7c80f2b5d11284f1603",
+    "guest_result": 0,
+    "host_publication": "WinError5 failed; temporary result not promoted",
+    "raw_archive_sha256": "be63fe765aa41c07717a7268c07bb650d93f83a1895f14711d7110e3ba72a912"
+  },
+  "retained_bootstrap_sha256": "da762be8cf147ef834961359511d3cf7cf5d47e04da2ed440f2c898befca9a91",
+  "scope": "Compact source/runtime-admission failure packet; native/formal/defaultLinux/fullstrict scopes remain separate.",
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "source_only_repair": {
+    "authenticator_sha256": "4b9d22b3673dfc0820e2d4752c7deea9a3428add0e2ef97eb00383457c8b42ff",
+    "runner_sha256": "136f13a56001c6f4f31e73a7133193cc946be32de3cc4970edc9fc06c2a65d38"
+  },
+  "startup_capture": {
+    "original_config_sha256": "5f7c6bb5acdd8f4a859829cbddb439fb9bc4f7f5d6ae7f3af854c7cfa453c875",
+    "original_final_result_sha256": "e6f195611c9eb65a00e559bc25b72bcf59d3923ab82eaabce00060afc31ec1fe",
+    "original_guest_archive_sha256": "0a329fb9322b1e6f6eb6fecd64fac821046ed6e9676ce3d7b0ee2de99ec75054",
+    "original_guest_manifest_sha256": "9cae363d7b77dac47b4577ad8606ab02cc5a6bb3b72b307ce4b0ff137112f33b",
+    "original_host_manifest_sha256": "3755594e0c22a14cb9dc4a2e1aa90b9c900a4020da64cab9e6849d1f2ede6b51"
+  },
+  "stopped_checking_descendant_sha256": "3ace7cad836f3a8cfa7ea8b38c98d4ec97da23e611da1cdac7bf1235d1e139a0",
+  "trust_boundary": "Official pinned caches and sealed retained context; pure actual-byte inventory is not a full live admission. Retained image/portable outer environment not exactly externally reproducible."
+}

@@ -1,0 +1,809 @@
+{
+  "artifacts": [
+    {
+      "artifact_role": "current-component/source/CountBounds/ListRepeatDegree.lean",
+      "changes": [
+        "Exact source bytes."
+      ],
+      "original_sha256": "f847e1521c780b1a3c3b89f892542e123406b75fbcb7e0d315191160ca1e0157",
+      "published_file": "CountBounds/ListRepeatDegree.lean",
+      "published_sha256": "f847e1521c780b1a3c3b89f892542e123406b75fbcb7e0d315191160ca1e0157"
+    },
+    {
+      "artifact_role": "current-component/audit-source/Checkpoint12Audits/CountBounds_ListRepeatDegree.lean",
+      "changes": [
+        "Exact executed audit driver bytes."
+      ],
+      "original_sha256": "715b6068bb7da10fa8947cfde710af088742d80263c09942c6ac34f09017d8b7",
+      "published_file": "audit-source/Checkpoint12Audits/CountBounds_ListRepeatDegree.lean",
+      "published_sha256": "715b6068bb7da10fa8947cfde710af088742d80263c09942c6ac34f09017d8b7"
+    },
+    {
+      "artifact_role": "original-component/attempts/CountBounds.ListRepeatDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "aabfec78b9a48e8b2d3d1126b3b7e1ddbfa0c586afa2d9ebf8b3667d6fc5ae95",
+      "published_file": "compilation/CountBounds.ListRepeatDegree/stdout.log",
+      "published_sha256": "8f98df371a7ba0aa3ceb7fd1480a58c2f39c2379527938b693fd1221deeb336c"
+    },
+    {
+      "artifact_role": "original-component/attempts/CountBounds.ListRepeatDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/CountBounds.ListRepeatDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "original-component/attempts/CountBounds.ListRepeatDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run."
+      ],
+      "original_sha256": "0fd43650d0128cf1050a7543e274cd4a00d7d301de5333d748969652cca0a8c2",
+      "published_file": "compilation/CountBounds.ListRepeatDegree/receipt.json",
+      "published_sha256": "8c9799ea9ad96670ae345e95e5487c772daeda89fa8b28fda3052dbb725806bf"
+    },
+    {
+      "artifact_role": "original-component/audits/CountBounds.ListRepeatDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "a0ef15dacc79ffc8ccb07fa270cfa5c29fcd7d59fff2e960e49588ced197dfc1",
+      "published_file": "audit/CountBounds.ListRepeatDegree/stdout.log",
+      "published_sha256": "a0ef15dacc79ffc8ccb07fa270cfa5c29fcd7d59fff2e960e49588ced197dfc1"
+    },
+    {
+      "artifact_role": "original-component/audits/CountBounds.ListRepeatDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/CountBounds.ListRepeatDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "original-component/audits/CountBounds.ListRepeatDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run.",
+        "Postprojection evidence_class corrected from native_compilation to native_named_axiom_audit; all original receipt bytes retained in the authenticated capture."
+      ],
+      "initial_packer_projection_sha256": "e0f5abb5eabd539b3c66ed522259479e8de8b116109535be250eb1206658fe84",
+      "original_sha256": "052f1b1749513d7aa21094895bc571ff9917a62abba11915e0af0eebc07b21b8",
+      "published_file": "audit/CountBounds.ListRepeatDegree/receipt.json",
+      "published_sha256": "37d9afb3ae6011dae810d67ce01a78904914e42e292af662054d8933aef9b1af"
+    },
+    {
+      "artifact_role": "current-component/source/ResearchBounds/DrawControlDegree.lean",
+      "changes": [
+        "Exact source bytes."
+      ],
+      "original_sha256": "e498430420b0d985aa33af88b21098b1f4d6422041784dae9ddebca89b8704e4",
+      "published_file": "ResearchBounds/DrawControlDegree.lean",
+      "published_sha256": "e498430420b0d985aa33af88b21098b1f4d6422041784dae9ddebca89b8704e4"
+    },
+    {
+      "artifact_role": "current-component/audit-source/Checkpoint12Audits/ResearchBounds_DrawControlDegree.lean",
+      "changes": [
+        "Exact executed audit driver bytes."
+      ],
+      "original_sha256": "767ea03e115ffc075b6b5c18a923b716aaf4c6cc308ab7573676b2952f7653f5",
+      "published_file": "audit-source/Checkpoint12Audits/ResearchBounds_DrawControlDegree.lean",
+      "published_sha256": "767ea03e115ffc075b6b5c18a923b716aaf4c6cc308ab7573676b2952f7653f5"
+    },
+    {
+      "artifact_role": "original-component/attempts/ResearchBounds.DrawControlDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "57325b05b7b4301ce30179cb9c84f025376f03027d5a3b25d20bf9e8cb9ddc2f",
+      "published_file": "compilation/ResearchBounds.DrawControlDegree/stdout.log",
+      "published_sha256": "064278f3abd9e7ff60816e3c2045c9f2dd5af673ad6c41bafd998f9186e4c729"
+    },
+    {
+      "artifact_role": "original-component/attempts/ResearchBounds.DrawControlDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/ResearchBounds.DrawControlDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "original-component/attempts/ResearchBounds.DrawControlDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run."
+      ],
+      "original_sha256": "6290e2d9dc805fae8d984003f02e1a2d7b0d27f9fda1ebe2a578db765bcf0fc1",
+      "published_file": "compilation/ResearchBounds.DrawControlDegree/receipt.json",
+      "published_sha256": "a12e319270e5be1766bf4550175793504fad0ac1f64c4c4a65ec9e704e633943"
+    },
+    {
+      "artifact_role": "original-component/audits/ResearchBounds.DrawControlDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "9f56501fc63466c45464461fcb2ede2e114b2317cf8b21cd3139b49a8b4c3ec2",
+      "published_file": "audit/ResearchBounds.DrawControlDegree/stdout.log",
+      "published_sha256": "9f56501fc63466c45464461fcb2ede2e114b2317cf8b21cd3139b49a8b4c3ec2"
+    },
+    {
+      "artifact_role": "original-component/audits/ResearchBounds.DrawControlDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/ResearchBounds.DrawControlDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "original-component/audits/ResearchBounds.DrawControlDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run.",
+        "Postprojection evidence_class corrected from native_compilation to native_named_axiom_audit; all original receipt bytes retained in the authenticated capture."
+      ],
+      "initial_packer_projection_sha256": "970e3af3dd9e2f2953097ab1caeb3f1521a2cee62c00edcc4a8c4d77461a0b5c",
+      "original_sha256": "3152f0560006b4e2533777d5dd706f923a018645d7187b447814eb213554463d",
+      "published_file": "audit/ResearchBounds.DrawControlDegree/receipt.json",
+      "published_sha256": "4fe35211875e6463891560b59f8921b9dd312ac7d4aeb95a6c435e3fb7dd0075"
+    },
+    {
+      "artifact_role": "current-component/source/CountBounds/ParserDegree.lean",
+      "changes": [
+        "Exact source bytes."
+      ],
+      "original_sha256": "8ea75320588440b047566b93d2aa42875588a8291bca7755e7faae0aa6a3489f",
+      "published_file": "CountBounds/ParserDegree.lean",
+      "published_sha256": "8ea75320588440b047566b93d2aa42875588a8291bca7755e7faae0aa6a3489f"
+    },
+    {
+      "artifact_role": "current-component/audit-source/Checkpoint12Audits/CountBounds_ParserDegree.lean",
+      "changes": [
+        "Exact executed audit driver bytes."
+      ],
+      "original_sha256": "2cc0421785aa1214749d51abe3eb761150669861c9f139b1bfe566d3a79f8afc",
+      "published_file": "audit-source/Checkpoint12Audits/CountBounds_ParserDegree.lean",
+      "published_sha256": "2cc0421785aa1214749d51abe3eb761150669861c9f139b1bfe566d3a79f8afc"
+    },
+    {
+      "artifact_role": "original-component/attempts/CountBounds.ParserDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "50d618f30562585f959a49fe5736a8860f33c950599de5163c7b3eba582b8be8",
+      "published_file": "compilation/CountBounds.ParserDegree/stdout.log",
+      "published_sha256": "8e715e39e6fc76652a0dafb0cb9cb9361652fe6fc7bc78c6649686d4e02f4432"
+    },
+    {
+      "artifact_role": "original-component/attempts/CountBounds.ParserDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/CountBounds.ParserDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "original-component/attempts/CountBounds.ParserDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run."
+      ],
+      "original_sha256": "6344f227b784e28514dda948fd870ddfbf30b661fe7cdf9d2c8142067a7f7a5c",
+      "published_file": "compilation/CountBounds.ParserDegree/receipt.json",
+      "published_sha256": "f5e40a1efa8bed90ca74a45ab3370fac2368758b49dd5cf5adc8664d374a6127"
+    },
+    {
+      "artifact_role": "original-component/audits/CountBounds.ParserDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "7bf901bfb49c9de32915db596c603ecf54e7c091f74d631e4451a3c8cec2fa76",
+      "published_file": "audit/CountBounds.ParserDegree/stdout.log",
+      "published_sha256": "7bf901bfb49c9de32915db596c603ecf54e7c091f74d631e4451a3c8cec2fa76"
+    },
+    {
+      "artifact_role": "original-component/audits/CountBounds.ParserDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/CountBounds.ParserDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "original-component/audits/CountBounds.ParserDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run.",
+        "Postprojection evidence_class corrected from native_compilation to native_named_axiom_audit; all original receipt bytes retained in the authenticated capture."
+      ],
+      "initial_packer_projection_sha256": "6c9af5a0472c4092bea2154da220b6168a72613debda4ac0986233980bc751ce",
+      "original_sha256": "0f20896d49f6a92636932fd2585edde55717eb3ece62750dc344afb3cdcd1bbc",
+      "published_file": "audit/CountBounds.ParserDegree/receipt.json",
+      "published_sha256": "fe82720aa1545b5e616159d267a17ee2dcd6b42918e9353d71297beb00a36850"
+    },
+    {
+      "artifact_role": "current-component/source/ResearchBounds/CatalogueLeafDegrees.lean",
+      "changes": [
+        "Exact source bytes."
+      ],
+      "original_sha256": "a03e2425ff5a71a6f8ae4c11ec314ea7d27cf169bb2496bd1f57acad86a84a58",
+      "published_file": "ResearchBounds/CatalogueLeafDegrees.lean",
+      "published_sha256": "a03e2425ff5a71a6f8ae4c11ec314ea7d27cf169bb2496bd1f57acad86a84a58"
+    },
+    {
+      "artifact_role": "current-component/audit-source/Checkpoint12Audits/ResearchBounds_CatalogueLeafDegrees.lean",
+      "changes": [
+        "Exact executed audit driver bytes."
+      ],
+      "original_sha256": "5510dbceb72d12750b3999e3040c9f9256eefa394823bdeea2ddf8ee6e0f0aa7",
+      "published_file": "audit-source/Checkpoint12Audits/ResearchBounds_CatalogueLeafDegrees.lean",
+      "published_sha256": "5510dbceb72d12750b3999e3040c9f9256eefa394823bdeea2ddf8ee6e0f0aa7"
+    },
+    {
+      "artifact_role": "original-component/attempts/ResearchBounds.CatalogueLeafDegrees/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/ResearchBounds.CatalogueLeafDegrees/stdout.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "original-component/attempts/ResearchBounds.CatalogueLeafDegrees/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/ResearchBounds.CatalogueLeafDegrees/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "original-component/attempts/ResearchBounds.CatalogueLeafDegrees/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run."
+      ],
+      "original_sha256": "e968a1d453bdcd53260d54bfdeca662fbbcf8ade8acb58f70dab10983f95eddd",
+      "published_file": "compilation/ResearchBounds.CatalogueLeafDegrees/receipt.json",
+      "published_sha256": "7a8e946e43a6d5d708652479c5f12f994d8e701fe31942033dcdcc8bac8d5628"
+    },
+    {
+      "artifact_role": "original-component/audits/ResearchBounds.CatalogueLeafDegrees/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "8429802fb673dd44870d9b55c6ecab04a208ea398ab0b530494a392475352553",
+      "published_file": "audit/ResearchBounds.CatalogueLeafDegrees/stdout.log",
+      "published_sha256": "8429802fb673dd44870d9b55c6ecab04a208ea398ab0b530494a392475352553"
+    },
+    {
+      "artifact_role": "original-component/audits/ResearchBounds.CatalogueLeafDegrees/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/ResearchBounds.CatalogueLeafDegrees/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "original-component/audits/ResearchBounds.CatalogueLeafDegrees/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run.",
+        "Postprojection evidence_class corrected from native_compilation to native_named_axiom_audit; all original receipt bytes retained in the authenticated capture."
+      ],
+      "initial_packer_projection_sha256": "c75a15e49bf0554f8599df9ecf07ad1d9ad1703af1a5423ec545373d70c048df",
+      "original_sha256": "8ab0916dd4f298cb18c3261ace6df7c0eba8354f5bb90caa9c8df05318f95863",
+      "published_file": "audit/ResearchBounds.CatalogueLeafDegrees/receipt.json",
+      "published_sha256": "df760899a25e4a4c86332eb8e75812e31d9416f0f1f0bcd828347249514e44b9"
+    },
+    {
+      "artifact_role": "current-component/source/ResearchBounds/SmallCellCatalogueDegree.lean",
+      "changes": [
+        "Exact source bytes."
+      ],
+      "original_sha256": "ad347c5962f2948f751d8b9ea95c575745b85888a941a3fca28912f5fda7497f",
+      "published_file": "ResearchBounds/SmallCellCatalogueDegree.lean",
+      "published_sha256": "ad347c5962f2948f751d8b9ea95c575745b85888a941a3fca28912f5fda7497f"
+    },
+    {
+      "artifact_role": "current-component/audit-source/Checkpoint12Audits/ResearchBounds_SmallCellCatalogueDegree.lean",
+      "changes": [
+        "Exact executed audit driver bytes."
+      ],
+      "original_sha256": "54b512e39ade459f308cff92edc9f4f18fd4001da9412ac5d935a2fb93053ead",
+      "published_file": "audit-source/Checkpoint12Audits/ResearchBounds_SmallCellCatalogueDegree.lean",
+      "published_sha256": "54b512e39ade459f308cff92edc9f4f18fd4001da9412ac5d935a2fb93053ead"
+    },
+    {
+      "artifact_role": "current-component/attempts/ResearchBounds.SmallCellCatalogueDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "9a3d99f1206ff8b508a11882394c494b9f24cbc569f9265dcfc64b6a64abc8b3",
+      "published_file": "compilation/ResearchBounds.SmallCellCatalogueDegree/stdout.log",
+      "published_sha256": "c24a652fb2827098b81c461c648b410b8873df2036a80d6b9115022aba6829a8"
+    },
+    {
+      "artifact_role": "current-component/attempts/ResearchBounds.SmallCellCatalogueDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/ResearchBounds.SmallCellCatalogueDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/attempts/ResearchBounds.SmallCellCatalogueDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run."
+      ],
+      "original_sha256": "5e68a8eb6d46fdbaa5da7a34c7cf5cd9d99741ae986d6feaa243c67f2a313db0",
+      "published_file": "compilation/ResearchBounds.SmallCellCatalogueDegree/receipt.json",
+      "published_sha256": "7caa060ce579a361db90a70b7df45261aaa5222c5b46953e6a00764a7264787c"
+    },
+    {
+      "artifact_role": "current-component/audits/ResearchBounds.SmallCellCatalogueDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "10cfb59a49e9316bdd7c139ecdc0586162697c0fe81d571d7a9098bff5892680",
+      "published_file": "audit/ResearchBounds.SmallCellCatalogueDegree/stdout.log",
+      "published_sha256": "10cfb59a49e9316bdd7c139ecdc0586162697c0fe81d571d7a9098bff5892680"
+    },
+    {
+      "artifact_role": "current-component/audits/ResearchBounds.SmallCellCatalogueDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/ResearchBounds.SmallCellCatalogueDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/audits/ResearchBounds.SmallCellCatalogueDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run.",
+        "Postprojection evidence_class corrected from native_compilation to native_named_axiom_audit; all original receipt bytes retained in the authenticated capture."
+      ],
+      "initial_packer_projection_sha256": "971bde41c26638e0a4f0c9fe61e03f25e43d976171a433a01d70ad2fc4d8942b",
+      "original_sha256": "1d494a93e96d818d37fb6cfa7d8f5f29225e6b38f7bfc6dfd044195d57dba134",
+      "published_file": "audit/ResearchBounds.SmallCellCatalogueDegree/receipt.json",
+      "published_sha256": "d3f3495bca0139ba265f40e434a930505c24e206e51b8b0648c5c073a7b0a9dc"
+    },
+    {
+      "artifact_role": "current-component/source/CountBounds/ScalarCircuitDegreeV2.lean",
+      "changes": [
+        "Exact source bytes."
+      ],
+      "original_sha256": "804583ef44717abbe7193a92a4f971abfdea1a302e3521da2515d5de1c9267a2",
+      "published_file": "CountBounds/ScalarCircuitDegreeV2.lean",
+      "published_sha256": "804583ef44717abbe7193a92a4f971abfdea1a302e3521da2515d5de1c9267a2"
+    },
+    {
+      "artifact_role": "current-component/audit-source/Checkpoint12Audits/CountBounds_ScalarCircuitDegreeV2.lean",
+      "changes": [
+        "Exact executed audit driver bytes."
+      ],
+      "original_sha256": "5448bbf90520669652f2b0f53fed8c83ae9ff88ace18b3b27c6e64298fa86692",
+      "published_file": "audit-source/Checkpoint12Audits/CountBounds_ScalarCircuitDegreeV2.lean",
+      "published_sha256": "5448bbf90520669652f2b0f53fed8c83ae9ff88ace18b3b27c6e64298fa86692"
+    },
+    {
+      "artifact_role": "current-component/attempts/CountBounds.ScalarCircuitDegreeV2/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/CountBounds.ScalarCircuitDegreeV2/stdout.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/attempts/CountBounds.ScalarCircuitDegreeV2/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/CountBounds.ScalarCircuitDegreeV2/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/attempts/CountBounds.ScalarCircuitDegreeV2/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run."
+      ],
+      "original_sha256": "306b02a6ac2567d1204b95c04c0301b97139ee92241659bd15190cbb4570a211",
+      "published_file": "compilation/CountBounds.ScalarCircuitDegreeV2/receipt.json",
+      "published_sha256": "bb7ba5d54eecca9a94f5389a70ab654ae7084aec6ed1bd19a41b5b17761fa834"
+    },
+    {
+      "artifact_role": "current-component/audits/CountBounds.ScalarCircuitDegreeV2/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "617c21639c467a52499b192aa539a03aa8df91bd87c9c205cfc44ba588fe9e41",
+      "published_file": "audit/CountBounds.ScalarCircuitDegreeV2/stdout.log",
+      "published_sha256": "617c21639c467a52499b192aa539a03aa8df91bd87c9c205cfc44ba588fe9e41"
+    },
+    {
+      "artifact_role": "current-component/audits/CountBounds.ScalarCircuitDegreeV2/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/CountBounds.ScalarCircuitDegreeV2/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/audits/CountBounds.ScalarCircuitDegreeV2/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run.",
+        "Postprojection evidence_class corrected from native_compilation to native_named_axiom_audit; all original receipt bytes retained in the authenticated capture."
+      ],
+      "initial_packer_projection_sha256": "34ea509a66b4da040ef5829c5d73645b7867406378bb6f0abbdcae16c10f70fc",
+      "original_sha256": "7748399e94a4456809c82d889b8461b6bdf88938bca919d3f00cf977d452a88d",
+      "published_file": "audit/CountBounds.ScalarCircuitDegreeV2/receipt.json",
+      "published_sha256": "aa8f7df4a0ef7eed5bfda693bd1305278583b1d2921f5bdb005a5a76b7526b43"
+    },
+    {
+      "artifact_role": "current-component/source/CountBounds/TightWordCountDegreeV2.lean",
+      "changes": [
+        "Exact source bytes."
+      ],
+      "original_sha256": "c5126ff6d85f624c9263460ec778739b144a5b5592167519bdf22a2bdeb835ef",
+      "published_file": "CountBounds/TightWordCountDegreeV2.lean",
+      "published_sha256": "c5126ff6d85f624c9263460ec778739b144a5b5592167519bdf22a2bdeb835ef"
+    },
+    {
+      "artifact_role": "current-component/audit-source/Checkpoint12Audits/CountBounds_TightWordCountDegreeV2.lean",
+      "changes": [
+        "Exact executed audit driver bytes."
+      ],
+      "original_sha256": "5db1571ba9c4d9302cf502c94c8578aaab1c22dcdcc6b28ddb61731523feb3e1",
+      "published_file": "audit-source/Checkpoint12Audits/CountBounds_TightWordCountDegreeV2.lean",
+      "published_sha256": "5db1571ba9c4d9302cf502c94c8578aaab1c22dcdcc6b28ddb61731523feb3e1"
+    },
+    {
+      "artifact_role": "current-component/attempts/CountBounds.TightWordCountDegreeV2/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "7c14fcf37054367062d58f77cea6a84950a70578cc8c8888e3c4d79a27b3682a",
+      "published_file": "compilation/CountBounds.TightWordCountDegreeV2/stdout.log",
+      "published_sha256": "d3d74f8ef3d78eb62b2e58f1f88d80fc05e175d7e0d0aeca81ff0d7fd628d224"
+    },
+    {
+      "artifact_role": "current-component/attempts/CountBounds.TightWordCountDegreeV2/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/CountBounds.TightWordCountDegreeV2/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/attempts/CountBounds.TightWordCountDegreeV2/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run."
+      ],
+      "original_sha256": "057f30ff70956dc7009fa3af490d51d8474d27b2f544ee9883c274f435eb93ef",
+      "published_file": "compilation/CountBounds.TightWordCountDegreeV2/receipt.json",
+      "published_sha256": "2635c1bb4155b6606a79c0c38e08b4966a4f16dc8e7cfae37b596c3e9d5d815d"
+    },
+    {
+      "artifact_role": "current-component/audits/CountBounds.TightWordCountDegreeV2/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "0b8783465ca58011af4c9ea34034e2edae5a2a35e645c54d3cbc7ac172a9b701",
+      "published_file": "audit/CountBounds.TightWordCountDegreeV2/stdout.log",
+      "published_sha256": "0b8783465ca58011af4c9ea34034e2edae5a2a35e645c54d3cbc7ac172a9b701"
+    },
+    {
+      "artifact_role": "current-component/audits/CountBounds.TightWordCountDegreeV2/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/CountBounds.TightWordCountDegreeV2/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/audits/CountBounds.TightWordCountDegreeV2/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run.",
+        "Postprojection evidence_class corrected from native_compilation to native_named_axiom_audit; all original receipt bytes retained in the authenticated capture."
+      ],
+      "initial_packer_projection_sha256": "fa63ccdadf10f5e3e6a78ccfcb8201da3c7f08c2c7e7185dc0c7cce3693aaea9",
+      "original_sha256": "988b5cd2c75e107c958ad29e355ab34974714eb2c5eba9c03721a4ebac1824f4",
+      "published_file": "audit/CountBounds.TightWordCountDegreeV2/receipt.json",
+      "published_sha256": "773410919c33c346ec60caa9424052bb178684a3e7f0cc7b7e10d472cde53189"
+    },
+    {
+      "artifact_role": "current-component/source/ResearchBounds/DrawWalkDegree.lean",
+      "changes": [
+        "Exact source bytes."
+      ],
+      "original_sha256": "4284ab37b05c20239ff069b8354538158b2938fe1d41c1a7119bde93ebb2b2dd",
+      "published_file": "ResearchBounds/DrawWalkDegree.lean",
+      "published_sha256": "4284ab37b05c20239ff069b8354538158b2938fe1d41c1a7119bde93ebb2b2dd"
+    },
+    {
+      "artifact_role": "current-component/audit-source/Checkpoint12Audits/ResearchBounds_DrawWalkDegree.lean",
+      "changes": [
+        "Exact executed audit driver bytes."
+      ],
+      "original_sha256": "e3da3c82b375f78d154cee26f51cf97f40b1a2849d219c438cf32856b99665a9",
+      "published_file": "audit-source/Checkpoint12Audits/ResearchBounds_DrawWalkDegree.lean",
+      "published_sha256": "e3da3c82b375f78d154cee26f51cf97f40b1a2849d219c438cf32856b99665a9"
+    },
+    {
+      "artifact_role": "current-component/attempts/ResearchBounds.DrawWalkDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "50be28ab68856bf95f595b5f86ec597ac17545209b4512f8a1ded67d4ce86c6f",
+      "published_file": "compilation/ResearchBounds.DrawWalkDegree/stdout.log",
+      "published_sha256": "cc2eb288b532180b2828919bbf4aeff8f0eb355bfa41a220616b42727265ee50"
+    },
+    {
+      "artifact_role": "current-component/attempts/ResearchBounds.DrawWalkDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/ResearchBounds.DrawWalkDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/attempts/ResearchBounds.DrawWalkDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run."
+      ],
+      "original_sha256": "e0e83a70059905a34b4d688d09122c0d01b2ea4654a4835491e2bf3cd4cabb7c",
+      "published_file": "compilation/ResearchBounds.DrawWalkDegree/receipt.json",
+      "published_sha256": "d396acaa4fd9e6ce61d00c47dc5af696427cf68cf586c2ccb7a3de54f6a8e9d5"
+    },
+    {
+      "artifact_role": "current-component/audits/ResearchBounds.DrawWalkDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "7389acf250fa689597d5f720bd4cb17d5046ef8eb3cd4ca158357048570eaf95",
+      "published_file": "audit/ResearchBounds.DrawWalkDegree/stdout.log",
+      "published_sha256": "7389acf250fa689597d5f720bd4cb17d5046ef8eb3cd4ca158357048570eaf95"
+    },
+    {
+      "artifact_role": "current-component/audits/ResearchBounds.DrawWalkDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/ResearchBounds.DrawWalkDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/audits/ResearchBounds.DrawWalkDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run.",
+        "Postprojection evidence_class corrected from native_compilation to native_named_axiom_audit; all original receipt bytes retained in the authenticated capture."
+      ],
+      "initial_packer_projection_sha256": "26b206d7b52e804f402b060c5b5d08fbec0724e8054ecc4c1c97aaa0e35fb96d",
+      "original_sha256": "b8a1bb7fecaf147098d06b12e71ce8b114c1aa9d78d067f1a2cca877fbbc56ae",
+      "published_file": "audit/ResearchBounds.DrawWalkDegree/receipt.json",
+      "published_sha256": "3568f62b7183604939d0e217c18f69db9674fa30eba4719fb677e35a256cfeb6"
+    },
+    {
+      "artifact_role": "current-component/source/ResearchBounds/DrawAssemblyDegree.lean",
+      "changes": [
+        "Exact source bytes."
+      ],
+      "original_sha256": "bcdf1628317e01795819a0452e6d9415ef83fb52bc3fe6db46196b26cfd27997",
+      "published_file": "ResearchBounds/DrawAssemblyDegree.lean",
+      "published_sha256": "bcdf1628317e01795819a0452e6d9415ef83fb52bc3fe6db46196b26cfd27997"
+    },
+    {
+      "artifact_role": "current-component/audit-source/Checkpoint12Audits/ResearchBounds_DrawAssemblyDegree.lean",
+      "changes": [
+        "Exact executed audit driver bytes."
+      ],
+      "original_sha256": "2aa9f0acd738a2aada5dbf16ee7142a86ed2b5fd9697b3de4205218cf9ecaf2b",
+      "published_file": "audit-source/Checkpoint12Audits/ResearchBounds_DrawAssemblyDegree.lean",
+      "published_sha256": "2aa9f0acd738a2aada5dbf16ee7142a86ed2b5fd9697b3de4205218cf9ecaf2b"
+    },
+    {
+      "artifact_role": "current-component/attempts/ResearchBounds.DrawAssemblyDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/ResearchBounds.DrawAssemblyDegree/stdout.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/attempts/ResearchBounds.DrawAssemblyDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/ResearchBounds.DrawAssemblyDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/attempts/ResearchBounds.DrawAssemblyDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run."
+      ],
+      "original_sha256": "e080d4bd39bacc8a471489f80a57a759a974f9149293bccea70c1514eb58581b",
+      "published_file": "compilation/ResearchBounds.DrawAssemblyDegree/receipt.json",
+      "published_sha256": "def6f9a3cfba8ce62978dd630e25a315e98e4949d84c956617c85adb7c588894"
+    },
+    {
+      "artifact_role": "current-component/audits/ResearchBounds.DrawAssemblyDegree/stdout.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "17174428361b3bfffb330b26eb0f1a15ef8a65357e062052a1afb1b6b3939453",
+      "published_file": "audit/ResearchBounds.DrawAssemblyDegree/stdout.log",
+      "published_sha256": "17174428361b3bfffb330b26eb0f1a15ef8a65357e062052a1afb1b6b3939453"
+    },
+    {
+      "artifact_role": "current-component/audits/ResearchBounds.DrawAssemblyDegree/stderr.log",
+      "changes": [
+        "Only declared owned-path role substitutions; full diagnostics retained."
+      ],
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/ResearchBounds.DrawAssemblyDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "artifact_role": "current-component/audits/ResearchBounds.DrawAssemblyDegree/receipt.json",
+      "changes": [
+        "Declared field projection; process identities omitted; all timing/argv belong to the stated original or fresh run.",
+        "Postprojection evidence_class corrected from native_compilation to native_named_axiom_audit; all original receipt bytes retained in the authenticated capture."
+      ],
+      "initial_packer_projection_sha256": "877e4140f0afdd2189b51afefcced4eae7dadd41252651230015c2c4175b878e",
+      "original_sha256": "046dcdffb7d93ff6fe0c87bb4c6be7f41876fbb8b7ed4ed7bcef13af28b574eb",
+      "published_file": "audit/ResearchBounds.DrawAssemblyDegree/receipt.json",
+      "published_sha256": "096929668a85c75ca91ff871019976d4dfc360ad497d9bd3b1d6bb3ad78f1eea"
+    }
+  ],
+  "derived_artifacts": [
+    {
+      "file": "LICENSE",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "file": "README.md",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "07536bdbd70eb697b7eee002672d3331bef717d3a94169ed510cc19fe4f07808"
+    },
+    {
+      "file": "REPRODUCE.sh",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "6d12c73f128252c569f43338e4200dd994853a00f395e9a9a6e33eb9bbc36159"
+    },
+    {
+      "file": "audit/CountBounds.ListRepeatDegree/records.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "8eeae470a9d6bb71365072bd4e1b7b3bccdf19d2614f895858d185607490eb88"
+    },
+    {
+      "file": "audit/CountBounds.ParserDegree/records.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "54c9c27739180dd7399d16ed74ca4677059bf0900834e8d3b98eb1f2f8c78b14"
+    },
+    {
+      "file": "audit/CountBounds.ScalarCircuitDegreeV2/records.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "1ebbdd1a4485d54c6656f008cd6c0d4d2a1ad8d8a7e72c501d86f4dd940b8f51"
+    },
+    {
+      "file": "audit/CountBounds.TightWordCountDegreeV2/records.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "496a226b5ab6d4f3b33e01a7dca6dcbded3eaedef56d762b4d6cca7f5d1135b5"
+    },
+    {
+      "file": "audit/ResearchBounds.CatalogueLeafDegrees/records.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "46f610d01f49f36ccef69aeba21dc7a3e13d90a229d72180dd586e858ff11a0c"
+    },
+    {
+      "file": "audit/ResearchBounds.DrawAssemblyDegree/records.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "6b8d2a6658bb42a27d060d4a59b9e8c7175b5dc1338aab61b5cd4a395d51f525"
+    },
+    {
+      "file": "audit/ResearchBounds.DrawControlDegree/records.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "2c88929159099bea9764dc99e0362972e684048b43b31cb886f29eae97f17b7b"
+    },
+    {
+      "file": "audit/ResearchBounds.DrawWalkDegree/records.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "5b4c6543f08ec6f787f0af5f62a2c213c73cd611c4b558a2127cf12f383b1b5c"
+    },
+    {
+      "file": "audit/ResearchBounds.SmallCellCatalogueDegree/records.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "083163ddebdacfd529c040369ba4c2e2a35079c65d061cf4db3944f4cb4ac3cc"
+    },
+    {
+      "file": "audit/check_lean_axioms.py",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e"
+    },
+    {
+      "file": "history/component-failure-batch.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "412695c786d8a53c29d231b54f2982102c55b75ec493379e8ec4e60e50f4103c"
+    },
+    {
+      "file": "history/count-attempt-failure.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "88a84c0b390195e44cb54cd0a6ffb4668a086d90ab53b2d128c2793b1fce457f"
+    },
+    {
+      "file": "history/earlier-batch.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "62398fcd1cde0baf243cc70e8f7b28cf7d01f0ce9276f8db3190f3d5ca60700b"
+    },
+    {
+      "file": "history/interrupted-batch.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "6e99563efbccce56467ffb05d18376198dbcdd5fbf9bade8426cf391dd45dd91"
+    },
+    {
+      "file": "history/two-interface-failure.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "8ca267afa942f6fd5d71347f6c7ee49bfc4b76794a76f15a6f0eacf17136839d"
+    },
+    {
+      "file": "import-bindings.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "1700336efaa94541d0ede8cb3a1ee0e927e98df0f613910826772b0466a798c2"
+    },
+    {
+      "file": "provenance-bindings.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "be9e8c2797169d5bac23da2e2d4d41c3444399b25026f367a93d029461b4be98"
+    },
+    {
+      "file": "reuse/CountBounds.ListRepeatDegree/provenance.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "b039ee24f9c12222d60aa67a3a8998d1ebb29debc8d88f413de56d43fefa1ff7"
+    },
+    {
+      "file": "reuse/CountBounds.ParserDegree/provenance.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "c2a0ddfbc9cbb76fe6bd53313cd3ad0503165355984894473a3ce3490f87a663"
+    },
+    {
+      "file": "reuse/ResearchBounds.CatalogueLeafDegrees/provenance.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "67271d0451ce309a95cb1c8a79989fffd2eac93159100d2a3ca43e300e2ccf31"
+    },
+    {
+      "file": "reuse/ResearchBounds.DrawControlDegree/provenance.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "36747e634fd83fd36a5c34c9caf127ce08fa9f63913cdba13fe3b96d09b19639"
+    },
+    {
+      "file": "source-correction-scope.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "5608f90a89edb9810f265797246590e8ad6aa0799a03aee353ae946da07a4e8a"
+    },
+    {
+      "file": "source-status.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "ec0e80b295a1a407747389110be91410f27e33ef350fb222eb44258daada205e"
+    },
+    {
+      "file": "verification.json",
+      "scope": "Derived explanatory/status/binding data or exact per-module parsed audit records; not an original receipt or raw stream.",
+      "sha256": "f37132e4630fa39947094e75f99d3de60fec43176311897ad9a39ce0fe14dbbe"
+    }
+  ],
+  "derived_artifacts_scope": "Bound by this public packet manifest. Exact raw-artifact projections are listed separately above. Four presentation-status rows use the final public bytes; publication-scope.json records their changes from the preserved prepublication candidate. Source creation tags remain historical.",
+  "policy": "Exact sources/drivers/license. Explicit owned-path role substitutions and receipt field projections; original/projected hashes distinct. No transcripts/process identities."
+}

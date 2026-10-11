@@ -1,0 +1,91 @@
+{
+  "cache_failure_predicate": "base.is_dir() false; absent versus ordinary nondirectory not distinguished",
+  "comparison_executed": false,
+  "configuration_checks": "Indexed provenance/source/tool/object/trace/stat checks completed before observed cache_inventory failure, by exact frozen source ordering. Not full runtime admission.",
+  "exact_failing_cache_root": null,
+  "export_executed": false,
+  "full_strict_acceptance": false,
+  "guest_files_rehashed": 9,
+  "host_downloads_rehashed": 7,
+  "host_inventory_members": 8,
+  "original_config_sha256": "5f7c6bb5acdd8f4a859829cbddb439fb9bc4f7f5d6ae7f3af854c7cfa453c875",
+  "original_final_result_sha256": "e6f195611c9eb65a00e559bc25b72bcf59d3923ab82eaabce00060afc31ec1fe",
+  "original_guest_archive_sha256": "0a329fb9322b1e6f6eb6fecd64fac821046ed6e9676ce3d7b0ee2de99ec75054",
+  "original_guest_manifest_sha256": "9cae363d7b77dac47b4577ad8606ab02cc5a6bb3b72b307ce4b0ff137112f33b",
+  "original_host_manifest_sha256": "3755594e0c22a14cb9dc4a2e1aa90b9c900a4020da64cab9e6849d1f2ede6b51",
+  "phases": [
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "<guest-home>/checkpoint11-install.py",
+        "--root",
+        "<checking-root>",
+        "--archive",
+        "<checking-root>/.tools/linux-verification/checkpoint11-inputs/sources.tar.gz",
+        "--manifest",
+        "<checking-root>/.tools/linux-verification/checkpoint11-inputs/installation-manifest.json",
+        "--manifest-sha256",
+        "22c759d74acac6f8c90479fa36e4e2505dbc3108907a6b66ddbec72468c8bed4",
+        "--staging",
+        "<checking-root>/.tools/linux-verification/checkpoint11-inputs/installed"
+      ],
+      "cap_seconds": 600,
+      "elapsed_seconds": 9.645118474960327,
+      "returncode": 0,
+      "stage": "install",
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "ea2395f84e9e653fa52a37289afa7b9ea4259e877a269ed9043651826d7f5f31"
+    },
+    {
+      "argv": [
+        "bash",
+        "-c",
+        "source \"$1\" preflight; configure_paths; strict_landrun_probe",
+        "c11-preflight",
+        "<checking-root>/scripts/bootstrap_comparator.sh"
+      ],
+      "cap_seconds": 300,
+      "elapsed_seconds": 3.6507275104522705,
+      "returncode": 0,
+      "stage": "preflight",
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b"
+    },
+    {
+      "argv": [
+        "/usr/bin/python3",
+        "-I",
+        "<guest-home>/checkpoint11-authenticate.py",
+        "--root",
+        "<checking-root>",
+        "--runner",
+        "<checking-root>/.tools/linux-verification/checkpoint11-runner/strict_sampler.py",
+        "--output",
+        "<checking-root>/.tools/linux-verification/checkpoint11-evidence/runtime-freeze.json",
+        "--native-audit",
+        "<checking-root>/.tools/linux-verification/strict-sampler-inputs/native-audit.json",
+        "--lake-config-provenance",
+        "<checking-root>/.tools/linux-verification/strict-sampler-inputs/lake-config-provenance.json",
+        "--lake-config-provenance-sha256",
+        "645f1f13d16c12eb421d86c379ac2b18f7a40170226e07558445afb0336860a0"
+      ],
+      "cap_seconds": 600,
+      "elapsed_seconds": 200.8317677974701,
+      "returncode": 1,
+      "stage": "authenticate",
+      "status": "failed",
+      "stderr_sha256": "15e0eb0a5834cd8702020c864ac77f8640926de57dc55398efded7e3ab733416",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "plan_executed": false,
+  "proof_compilation_executed": false,
+  "remote_only_disk_pin": "metadata binding only; disk/image not locally copied/rehashed or published",
+  "retained_pins_unchanged": true,
+  "runtime_freeze_generated": false,
+  "scope": "Closed installation/preflight/authentication attempt, no mathematical rejection; no runtime or proof acceptance.",
+  "status": "configuration_checks_completed_authentication_failed_unnamed_cache_root"
+}

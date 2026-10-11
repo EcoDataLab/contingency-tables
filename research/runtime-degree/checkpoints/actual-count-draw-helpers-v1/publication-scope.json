@@ -1,0 +1,37 @@
+{
+  "prepublication_candidate_manifest_sha256": "f5ba99daa79cb4db6fb008db77f0b09e4d38f5d2e385bf13e60b5e961449c677",
+  "public_payload_changes": [
+    {
+      "path": "README.md",
+      "candidate_sha256": "5677ebe399cd8d2b63485de24cf5dd266ec111f10916dc3ba5ef33c6c35bb6f3",
+      "public_sha256": "07536bdbd70eb697b7eee002672d3331bef717d3a94169ed510cc19fe4f07808",
+      "change": "Presentation status and link to separate publication review; mathematical claims, proof and evidence bytes unchanged."
+    },
+    {
+      "path": "verification.json",
+      "candidate_sha256": "af71a39f0b081d35f0648d30d7be92608e24e4e1d1cecc6905c0ae87ea26bd7e",
+      "public_sha256": "f37132e4630fa39947094e75f99d3de60fec43176311897ad9a39ce0fe14dbbe",
+      "change": "Presentation status and link to separate publication review; mathematical claims, proof and evidence bytes unchanged."
+    },
+    {
+      "path": "source-status.json",
+      "candidate_sha256": "9e08d8066ca347c56fa81d04a50d081ee8c70feb3af06d6155c03884d097e9a8",
+      "public_sha256": "ec0e80b295a1a407747389110be91410f27e33ef350fb222eb44258daada205e",
+      "change": "Presentation status and reference to the separate publication review; proof and native evidence bytes unchanged."
+    },
+    {
+      "path": "source-correction-scope.json",
+      "candidate_sha256": "103d9579054e2ecde4db78f85c8d3b1c6c64715ef61c47201f722fd4f3f6a04d",
+      "public_sha256": "5608f90a89edb9810f265797246590e8ad6aa0799a03aee353ae946da07a4e8a",
+      "change": "Presentation status and reference to the separate publication review; proof and native evidence bytes unchanged."
+    },
+    {
+      "path": "redaction-manifest.json",
+      "candidate_sha256": "92705689a52d6046aa4f6318a1eac5454eafe62fc26ccf9ebd42e8b4ac9c4d63",
+      "public_sha256": "d6db4eff696a4dcff9071858a9a43f40765d626425cd159a83d49b1c9d2414f4",
+      "change": "Four derived presentation hashes now bind the final public bytes; raw artifact projection mappings remain unchanged."
+    }
+  ],
+  "proof_source_audit_driver_receipt_log_bytes_unchanged": true,
+  "scope": "This publication copy preserves the frozen native evidence and earlier failures. Creation-time source comments remain historical; the separate review binds this manifest."
+}

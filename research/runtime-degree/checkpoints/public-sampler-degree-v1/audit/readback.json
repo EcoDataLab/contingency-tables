@@ -1,0 +1,18 @@
+{
+  "accepted_object_sha256": "49bb4dec634bb75ff4036d4954340b57bd7db8c3cde51d1ae2ed580add66ffbe",
+  "accepted_source_sha256": "4ac577f8b7b1f2fc7c68950ef87bfe39ca236e82a75602395e72da694fb10255",
+  "checker_sha256": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+  "complete_seven_helper_object_projection_matched": true,
+  "download_members_verified": 116,
+  "driver_sha256": "59496c047c6e7f05ef2b1db1a0ac8d990300930890cda229a81d6e18995d5f94",
+  "environment_exhaustiveness": false,
+  "exact_public_sampler_source_object_matched": true,
+  "manifest_sha256": "8c73d0b219ec916bc932a8b7e53037b3173ccdae00437250289c34f98fdcc7d8",
+  "raw_audit_receipt_sha256": "111d6dbb8d0999192edd7acf34f0225c3bc07cdf93832d3d5c5157e5384e12df",
+  "raw_audit_stdout_sha256": "aafddef8f6276e87a9a8a703c46fea12de1a5b32558d8f8a7df91ddd3374da9b",
+  "raw_compilation_receipt_sha256": "a2e2ed2ebaa56c54bc5f24ae185b76c68cf490e1b90daa6cf0246afe7a4c70a7",
+  "records_sha256": "e31a107430cde292c295000c959a43ef39de1c5cb4d573a3552f3ea7810ddbff",
+  "reviewer": "AI assistant offline readback; no compiler executed",
+  "status": "passed_saved_log_and_artifact_readback",
+  "verified_names": 3
+}

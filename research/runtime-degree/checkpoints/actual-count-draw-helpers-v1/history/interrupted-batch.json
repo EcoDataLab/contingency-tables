@@ -1,0 +1,28 @@
+{
+  "missing_import_wrapper_stop": {
+    "error": "RuntimeError: Missing authenticated direct import",
+    "original_failure_sha256": "4313dd62a919a833f61f819fcd08c2be9ec636f4e5a7c239de7f45e31bf78725"
+  },
+  "never_attempted": [
+    "CountBounds.ScalarCircuitDegreeV2",
+    "CountBounds.TightWordCountDegreeV2",
+    "ResearchBounds.DrawWalkDegree",
+    "ResearchBounds.DrawAssemblyDegree"
+  ],
+  "no_missing_stage_receipts_invented": true,
+  "ordinary_catalogue_failure": {
+    "diagnostic": "simp made no progress at line 121",
+    "exit_code": 1,
+    "module": "ResearchBounds.SmallCellCatalogueDegree",
+    "original_receipt_sha256": "ee55e7b20695f19d85e6f165c5a81da27f4538a85774df75a27660a8b35ed2fd",
+    "original_stdout_sha256": "997489393b74b62802464e195d0b56d4961744edadf7d40e8f5ec640322efc4b"
+  },
+  "original_capture_sha256": "c22143e3361e9cfb7a02392de8589dd3ec8effcd77a58648fc880e09e5c5f541",
+  "saved_partial_module_outcomes": {
+    "CountBounds.ListRepeatDegree": "passed",
+    "CountBounds.ParserDegree": "passed",
+    "ResearchBounds.CatalogueLeafDegrees": "passed",
+    "ResearchBounds.DrawControlDegree": "passed",
+    "ResearchBounds.SmallCellCatalogueDegree": "failed"
+  }
+}

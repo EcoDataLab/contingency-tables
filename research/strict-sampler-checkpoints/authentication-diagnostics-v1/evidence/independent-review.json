@@ -1,0 +1,65 @@
+{
+  "actual_capture_members_rehashed": 30,
+  "auth_actual_returncode_or_elapsed_field": null,
+  "auth_deadline_seconds": 1800,
+  "config_policy_direct82_owner_and_absence_substeps_observed": true,
+  "configuration_caps_media_installed_source_identity_exact": true,
+  "downloaded_host_members": 7,
+  "failure_mtime_minus_auth_start_seconds": 1800.0813302993774,
+  "full_original_stderr_bytes": 180182,
+  "gap_scope": "source localization to cache metadata/stat snapshot and Guard construction; no individual call cost/physicalIO attribution",
+  "guest_archive_members": 9,
+  "install_elapsed_seconds": 9.6853768825531,
+  "inventory_durations_wrapper_seconds": [
+    336.277,
+    251.503
+  ],
+  "inventory_pairs_inner": [
+    {
+      "files": 131021,
+      "inner_begin_elapsed": 171.128,
+      "inner_end_elapsed": 507.404,
+      "inner_paired_duration": 336.276,
+      "logical_bytes": 9261675188
+    },
+    {
+      "files": 131021,
+      "inner_begin_elapsed": 645.24,
+      "inner_end_elapsed": 896.632,
+      "inner_paired_duration": 251.392,
+      "logical_bytes": 9261675188
+    }
+  ],
+  "last_counts_scope": "aggregate completed logical files/sizes including previous roots + partialMathlib; not completeMathlib total or physicalIO",
+  "last_guard_heartbeat": {
+    "bytes": 3427131951,
+    "elapsed_seconds": 1798.73,
+    "event": "heartbeat",
+    "files": 27257,
+    "rehash": true,
+    "root": "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+    "stage": "guard_cache"
+  },
+  "new_live_actions": false,
+  "nonprogress_lines_preserved": [],
+  "observed_owner_sets": [
+    [
+      "<toolchain>",
+      "mathlib"
+    ],
+    [
+      "<toolchain>",
+      "mathlib"
+    ]
+  ],
+  "owned_closure_and_retainedpins_bound": true,
+  "post_inventory_to_guard_gap_seconds": 734.338,
+  "preflight_elapsed_seconds": 3.602302312850952,
+  "progress_records": 1050,
+  "remote_child_overlay_bytes_locally_rehashed": false,
+  "reviewer": "Independent AI saved-artifact readback; no live execution or human review",
+  "runtime_freeze_plan_proof_export_kernel_compare": false,
+  "serial_framing_archive_manifest_exact": true,
+  "status": "authenticated diagnostic startup03 timeout during incomplete third guard rehash; partial substeps observed, no runtime/plan acceptance",
+  "third_rehash_complete": false
+}

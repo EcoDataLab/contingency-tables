@@ -1,0 +1,23 @@
+{
+  "accepted_prior_remote_manifest_files": 116,
+  "download_manifest_sha256": "1fe47af2c4ef2ae94fb8f053d02344594073d22994c2dc335a321b63206989cf",
+  "environment_exhaustiveness": false,
+  "exact_named_scopes": [
+    6,
+    4
+  ],
+  "local_cache_excluded_from_authority": true,
+  "members_rehashed": 194,
+  "object_sha256": [
+    "28c827ba3689f9ba5ef143961795b4771036ddc42e1d3c500c84934321c5994c",
+    "65464f38881b228dbfe3152b1e862d85891b368f0e1683e3862e2ef4307cbc98"
+  ],
+  "reviewer": "AI assistant offline projection readback; no compiler run",
+  "same_prior_eight_helper_and_public_sampler_bindings": true,
+  "source_and_driver_bytes_unchanged": true,
+  "source_sha256": [
+    "fb84234d6c666f9f64242c99b507fc41a46fca01d413a250f455233a2c820575",
+    "6187c873840d492b4559229cc362a6476a7260fbc0b1077cc3805910d5919361"
+  ],
+  "status": "passed_saved_log_and_artifact_readback"
+}

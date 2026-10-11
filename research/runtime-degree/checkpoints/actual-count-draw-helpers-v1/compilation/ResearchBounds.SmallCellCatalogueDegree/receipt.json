@@ -1,0 +1,53 @@
+{
+  "attempt_object_sha256": "f65d1da370a49d0ffaab92c4e7623043d2476992a2ad1a7a3bcbc26ebdca6976",
+  "command": [
+    "<lean-compiler>",
+    "--root=<current-run>\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<current-run>\\attempts\\ResearchBounds.SmallCellCatalogueDegree\\module.olean",
+    "-i",
+    "<current-run>\\attempts\\ResearchBounds.SmallCellCatalogueDegree\\module.ilean",
+    "<current-run>\\source\\ResearchBounds\\SmallCellCatalogueDegree.lean"
+  ],
+  "diagnostic_object": "<current-run>\\lib\\lean\\ResearchBounds\\SmallCellCatalogueDegree.olean",
+  "elapsed_seconds": 219.79555189993698,
+  "evidence_class": "fresh_native_compilation",
+  "execution_origin": "fresh",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    },
+    "ResearchBounds.CatalogueLeafDegrees": {
+      "path": "<current-run>\\lib\\lean\\ResearchBounds\\CatalogueLeafDegrees.olean",
+      "sha256": "6fe3b4f2b9245bdc3897ba8fa56112d3956a67192f9c1f84983abffb114b48d4"
+    },
+    "ResearchBounds.DrawControlDegree": {
+      "path": "<current-run>\\lib\\lean\\ResearchBounds\\DrawControlDegree.olean",
+      "sha256": "56a6c29498ea7b9df719400273331d6e799a03bfc9329f605ddd33600a1a59b9"
+    },
+    "ResearchBounds.ScalarOutputSizeDegree": {
+      "path": "<current-run>\\lib\\lean\\ResearchBounds\\ScalarOutputSizeDegree.olean",
+      "sha256": "31373e7e8f1b04751d032a564f00a5fc0ca3965e4420159c07a77a1c6f3a602f"
+    }
+  },
+  "module": "ResearchBounds.SmallCellCatalogueDegree",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "9a3d99f1206ff8b508a11882394c494b9f24cbc569f9265dcfc64b6a64abc8b3"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "c24a652fb2827098b81c461c648b410b8873df2036a80d6b9115022aba6829a8"
+  },
+  "source_sha256": "ad347c5962f2948f751d8b9ea95c575745b85888a941a3fca28912f5fda7497f",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

@@ -1,0 +1,46 @@
+{
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint11-degree-diagnostic-02\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-02\\attempts\\ResearchBounds.FreshBitDegreeBounds\\module.olean",
+    "-i",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-02\\attempts\\ResearchBounds.FreshBitDegreeBounds\\module.ilean",
+    "<owned-workspace>\\checkpoint11-degree-diagnostic-02\\source\\ResearchBounds\\FreshBitDegreeBounds.lean"
+  ],
+  "elapsed_seconds": 74.66225809999742,
+  "evidence_class": "failed_ordinary_native_compilation_diagnostic",
+  "exit_code": 1,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "OAI.Combinatorics.MatchingCount.Complexity.OnlineWordCost": {
+      "path": "<owned-workspace>\\completion-checkpoint10-native-10\\lib\\lean\\OAI\\Combinatorics\\MatchingCount\\Complexity\\OnlineWordCost.olean",
+      "sha256": "c6580f8531bf3d6293474678dbe8ab4286f5280062aab55411a4a0cab5fc4afa",
+      "trust": "authenticated accepted R10 record"
+    },
+    "ResearchBounds.TreeDegreeBounds": {
+      "path": "<owned-workspace>\\checkpoint11-degree-diagnostic-01\\lib\\lean\\ResearchBounds\\TreeDegreeBounds.olean",
+      "sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+      "trust": "fully authenticated prior private diagnostic success; not normal R10 cache"
+    }
+  },
+  "module": "ResearchBounds.FreshBitDegreeBounds",
+  "outcome_class": "proof_elaboration_failure",
+  "promoted_object": null,
+  "scope": "The revised fresh-bit proof retained unsolved goals; no accepted object.",
+  "source_sha256": "15b0d18b5ee90253eade4f23b58d55485adf5a9d5330657024fe7334c38506e4",
+  "source_unchanged": true,
+  "status": "failed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "a3204577d48ed1d9aecb47d71a64b6848c0791b6e416cb867cf82282b360720d"
+  }
+}

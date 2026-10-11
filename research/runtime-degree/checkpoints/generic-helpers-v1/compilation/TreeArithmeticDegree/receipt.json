@@ -1,0 +1,42 @@
+{
+  "attempt_object_sha256": "14084fd1a8a94de138eb84ced25330d5fb5e5dbb7869ba49e7cc01fab5f5af9e",
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint11-degree-successor-02\\graph\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint11-degree-successor-02\\graph\\attempts\\ResearchBounds.TreeArithmeticDegree\\module.olean",
+    "-i",
+    "<owned-workspace>\\checkpoint11-degree-successor-02\\graph\\attempts\\ResearchBounds.TreeArithmeticDegree\\module.ilean",
+    "<owned-workspace>\\checkpoint11-degree-successor-02\\graph\\source\\ResearchBounds\\TreeArithmeticDegree.lean"
+  ],
+  "diagnostic_object": "<owned-workspace>\\checkpoint11-degree-successor-02\\graph\\lib\\lean\\ResearchBounds\\TreeArithmeticDegree.olean",
+  "elapsed_seconds": 94.80250809993595,
+  "evidence_class": "ordinary_native_compilation_diagnostic",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "ResearchBounds.TreeDegreeBounds": {
+      "path": "<owned-workspace>\\checkpoint11-degree-successor-02\\graph\\lib\\lean\\ResearchBounds\\TreeDegreeBounds.olean",
+      "sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+      "trust": "copied accepted namespace object"
+    }
+  },
+  "module": "ResearchBounds.TreeArithmeticDegree",
+  "named_axiom_audit": "extension21",
+  "platform": "Windows x86_64",
+  "source_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "30af5b08ae1f8741ef3ba488131274e1f54a99e5557933114dd9fac81b7ca5b0"
+  }
+}

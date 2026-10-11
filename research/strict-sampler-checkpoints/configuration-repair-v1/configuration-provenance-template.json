@@ -1,0 +1,93 @@
+{
+  "origin": {
+    "readonly_capture_manifest_sha256": null,
+    "retained_bootstrap_sha256": "da762be8cf147ef834961359511d3cf7cf5d47e04da2ed440f2c898befca9a91"
+  },
+  "package_revisions": {
+    "Cli": "e92c9f15fdfacc8536f31cfb3b7ad26c3c8cd204",
+    "LeanSearchClient": "ddf04cf3949fa556442341e87d47f9f6e6074707",
+    "Qq": "6a489d9af5d0c47e5b259e2e8bcdfc1811b5a259",
+    "aesop": "355695d523e41d0554926416cba2a2b3544fbbc9",
+    "batteries": "f2effa3d803fda822b1f97b806c47cf2adfbcbc2",
+    "importGraph": "e928b72544873815af278d38681b31c0293588e3",
+    "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "plausible": "118aa17ee84656b8bd727fef7c458ee8c833385c",
+    "proofwidgets": "106ff4fafc74ef4ac99d81dbf3ab399118f497a5"
+  },
+  "platform": null,
+  "schema_version": 1,
+  "slots": {
+    "0": {
+      "artifacts_sha256": {
+        "lakefile.olean": null,
+        "lakefile.olean.trace": null
+      },
+      "optional_empty_lock": "include lakefile.olean.lock only if actually present in the authenticated captured exact keyset; omit this documentation field when constructing the eligible manifest",
+      "source": "formal/lakefile.lean",
+      "source_sha256": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+      "trace": {
+        "configHash": "a946bf7374de28d2",
+        "idx": 0,
+        "leanHash": "5045d0056413266e57c625dcd7c365b10e377c52",
+        "name": "[anonymous]",
+        "options": {},
+        "platform": null
+      }
+    },
+    "1": {
+      "artifacts_sha256": {
+        "lakefile.olean": null,
+        "lakefile.olean.trace": null
+      },
+      "optional_empty_lock": "include lakefile.olean.lock only if actually present in the authenticated captured exact keyset; omit this documentation field when constructing the eligible manifest",
+      "source": "formal/.lake/packages/mathlib/lakefile.lean",
+      "source_sha256": "274e720ccc7dbabeb9fbf362290dc7e5ed2c5175fbade0ef20cc19b1331affaf",
+      "trace": {
+        "configHash": "5fae05c6298a8b59",
+        "idx": 1,
+        "leanHash": "5045d0056413266e57c625dcd7c365b10e377c52",
+        "name": "mathlib",
+        "options": {},
+        "platform": null
+      }
+    },
+    "5": {
+      "artifacts_sha256": {
+        "lakefile.olean": null,
+        "lakefile.olean.trace": null
+      },
+      "optional_empty_lock": "include lakefile.olean.lock only if actually present in the authenticated captured exact keyset; omit this documentation field when constructing the eligible manifest",
+      "source": "formal/.lake/packages/proofwidgets/lakefile.lean",
+      "source_sha256": "0a319fffbf511dab4c3307dc105f8e8fdb4f6160020995cef5f442061cc0abca",
+      "trace": {
+        "configHash": "a4f8a6ba6807ecfe",
+        "idx": 5,
+        "leanHash": "5045d0056413266e57c625dcd7c365b10e377c52",
+        "name": "proofwidgets",
+        "options": {
+          "errorOnBuild": "ProofWidgets failed to reuse pre-built JS code. Please report this issue on the Lean Zulip."
+        },
+        "platform": null
+      }
+    }
+  },
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "source_sha256": {
+    "formal/.lake/packages/Cli/lakefile.toml": "188aaec6ddb57f411c11b95c3ece85ff26ab9ae8085371fee47e1dc855c4e186",
+    "formal/.lake/packages/LeanSearchClient/lakefile.toml": "cb5d6c80c4ffd4b3be99294a911ebf2f6a2fee4eb9f840d96f0f813bd484c05d",
+    "formal/.lake/packages/Qq/lakefile.toml": "42826e4e06221f41fcd863e19d937a0a68be7d54df90abd7800a3c09f4557a15",
+    "formal/.lake/packages/aesop/lakefile.toml": "054f79cdcc1a5e15d1856aac6bf3375cbe12de657926218962401efed2a08119",
+    "formal/.lake/packages/batteries/lakefile.toml": "acadcd8beb13a53a4ac9399e6706c829309d2380f338d13b037886666f978015",
+    "formal/.lake/packages/importGraph/lakefile.toml": "a48a5617c553b9fb528d6da7d4e15b1a61fff3326d6eab6399176d9e22e2bb53",
+    "formal/.lake/packages/mathlib/lakefile.lean": "274e720ccc7dbabeb9fbf362290dc7e5ed2c5175fbade0ef20cc19b1331affaf",
+    "formal/.lake/packages/plausible/lakefile.toml": "4147957012320a3afe8f041662202b7a3453c8a0df4311c1698da029a3b4834f",
+    "formal/.lake/packages/proofwidgets/lakefile.lean": "0a319fffbf511dab4c3307dc105f8e8fdb4f6160020995cef5f442061cc0abca",
+    "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af"
+  },
+  "status": "pending_actual_independently_authenticated_Linux_configuration_capture",
+  "tool_sha256": {
+    ".tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lake": null,
+    ".tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean": null,
+    ".tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/leanir": null
+  }
+}

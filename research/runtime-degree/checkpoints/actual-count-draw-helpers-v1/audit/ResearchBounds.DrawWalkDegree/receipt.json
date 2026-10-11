@@ -1,0 +1,221 @@
+{
+  "audit_module": "Checkpoint12Audits.ResearchBounds_DrawWalkDegree",
+  "command": [
+    "<lean-compiler>",
+    "--root=<current-run>\\audit-source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<current-run>\\audits\\ResearchBounds.DrawWalkDegree\\module.olean",
+    "<current-run>\\audit-source\\Checkpoint12Audits\\ResearchBounds_DrawWalkDegree.lean"
+  ],
+  "elapsed_seconds": 83.70316729997285,
+  "error": null,
+  "evidence_class": "fresh_native_named_axiom_audit",
+  "execution_origin": "fresh",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    },
+    "ResearchBounds.DrawWalkDegree": {
+      "path": "<current-run>\\lib\\lean\\ResearchBounds\\DrawWalkDegree.olean",
+      "sha256": "ec72b80011c422045c3097cd69257d70c616c43893132f1f1cb07e7b420b85ed"
+    }
+  },
+  "module": "ResearchBounds.DrawWalkDegree",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "7389acf250fa689597d5f720bd4cb17d5046ef8eb3cd4ca158357048570eaf95"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "7389acf250fa689597d5f720bd4cb17d5046ef8eb3cd4ca158357048570eaf95"
+  },
+  "records": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_profileCatalog"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_profileMargins"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_candidateData"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_currentParameters"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_minimum"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_capView"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_capBounds"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_capViews"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_profileBoundedNext"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_advanceProfile"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_profileWalk_from_advance"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_profileWalk"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_squareNat"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_proposalWidth"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_wordDimension"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_proposalPrefix"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_unitWordInput"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_unitWordStep"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_unitBoundedNext"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_advanceUnit"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_unitWalk_from_advance"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.DrawDegree.typed_unitWalk"
+    }
+  ],
+  "source_sha256": "e3da3c82b375f78d154cee26f51cf97f40b1a2849d219c438cf32856b99665a9",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

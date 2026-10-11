@@ -1,0 +1,34 @@
+{
+  "evidence_manifest_sha256": "5365be650763bc7165044352c64d310a106c15d403a85f4fb227ff3155a823af",
+  "execution_config_sha256": "96d65f28efa7e9461c7400246103c2a38046ced50fb308c828da71c29099fad4",
+  "not_published": "host-specific command/status receipts, compiled objects, account paths and raw host transcript; complete preserved manifest hash binds the native audit provenance",
+  "raw_to_public": [
+    {
+      "public_member": "SolutionAxioms.lean",
+      "public_sha256": "e1affbc0c2c8319d1715608821e5b106515b643024b04cefdfd8c088e91a558e",
+      "raw_member": "audit-source/SolutionAxioms.lean",
+      "raw_sha256": "e1affbc0c2c8319d1715608821e5b106515b643024b04cefdfd8c088e91a558e",
+      "transformation": "none byte-identical"
+    },
+    {
+      "public_member": "named-axioms.stdout.log",
+      "public_sha256": "658bc3c944fb9149eed551d7d3413b6d573a9e2dcd43a3fe58080e55abc6d90b",
+      "raw_member": "audit/attempt/stdout.log",
+      "raw_sha256": "658bc3c944fb9149eed551d7d3413b6d573a9e2dcd43a3fe58080e55abc6d90b",
+      "transformation": "none byte-identical"
+    }
+  ],
+  "solution_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_and_object_bindings": "../native-audit.json",
+  "stages": [
+    "Math115.StrictSamplerStatement",
+    "Math115.StrictSamplerSolution",
+    "solution_named_axioms"
+  ],
+  "status": "ordinary_native_three_stage_checks_passed",
+  "strict_acceptance": "pending_not_claimed"
+}

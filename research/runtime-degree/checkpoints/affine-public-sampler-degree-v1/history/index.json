@@ -1,0 +1,13 @@
+{
+  "compilation_or_audit_result": null,
+  "complete_history_claimed": false,
+  "download_members_rehashed": 64,
+  "failure": "history/attempt01/failure.json",
+  "mathematical_proof_failure": false,
+  "prior_public02_original_remote_capture_sha256": "8c73d0b219ec916bc932a8b7e53037b3173ccdae00437250289c34f98fdcc7d8",
+  "prior_public02_original_remote_file_count": 116,
+  "promoted_object": null,
+  "raw_download_manifest_sha256": "6735c660b51992c758d4cfe173f6a5cfdc21e4f93995e952b976acdc9adef4e8",
+  "scope": "Failed closed during prerequisite authentication while treating a local Python cache file as prior remote evidence. Original public02 authority is immutable116 remote-file capture; no affine proof/audit result inferred.",
+  "status": "one_selected_authentication_failure_preserved"
+}

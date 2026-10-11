@@ -1,0 +1,285 @@
+{
+  "arithmetic_scalar_seeds": "All three compiled and21-name audit passed; complete word-count/draw numerical certificates remain open.",
+  "audit_scopes": [
+    {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "driver": {
+        "path": "ResearchBounds/GenericDegreeNamedAudit.lean",
+        "sha256": "22a4bbb69f003fecaed8cf77eded00da73868e5ec074591d5f4c363c7e99b3eb"
+      },
+      "environment_exhaustiveness": false,
+      "prepared_public_theorems": 40,
+      "readback": {
+        "path": "audit/generic47/readback.json",
+        "sha256": "5297c4a3155c88abbb271b7aefb34c4d6f376c6d20a86ae96a54a8d0b7b03ad9"
+      },
+      "receipt": {
+        "original_sha256": "133967fbf126698eed65e7adecf08d27ce52fc1e882bd9186105dfe87bee5094",
+        "path": "audit/generic47/receipt.json",
+        "sha256": "741bf025b76f80770e05806c93de884ac586bcab90e948c7d1dbc7832aee854f"
+      },
+      "records": {
+        "path": "audit/generic47/records.json",
+        "sha256": "8848b328e5c8ea178d737344cedd101dddd548bb70c91503472c7b68d1483236"
+      },
+      "report": {
+        "path": "audit/generic47/stdout.log",
+        "sha256": "9197deea69d66e575c0ec78ada738b468a2b3ab9389773fcf98ca37763f1c268"
+      },
+      "requested_names": 47,
+      "scope": "generic47",
+      "status": "passed",
+      "verified_name_count": 47
+    },
+    {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "driver": {
+        "path": "ResearchBounds/NewDegreeNamedAudit.lean",
+        "sha256": "53d03c9ad846d46af06c2451f8c0c571650587852a4bace811c78cc13fe57c6c"
+      },
+      "environment_exhaustiveness": false,
+      "modules": [
+        "ResearchBounds.TreeArithmeticDegree",
+        "ResearchBounds.ScalarOutputSizeDegree",
+        "ResearchBounds.WordCountSeedDegrees"
+      ],
+      "readback": {
+        "path": "audit/extension21/readback.json",
+        "sha256": "e7f8f5de3ccbe0403dad8f1e5df3ac174b1a38f46e946d6ed25e4b6042e2cdbb"
+      },
+      "receipt": {
+        "original_sha256": "f5fd8f936fdfb4886f64e7ebc01a9a3bec9870d7f34d68c4ccddd728ff5c9f0c",
+        "path": "audit/extension21/receipt.json",
+        "sha256": "c07cd7a074356b126038200d27edcae13583d8a07d3def1da859c143938c2eec"
+      },
+      "records": {
+        "path": "audit/extension21/records.json",
+        "sha256": "0172862b177b4f94f76fa3f1625b3da5ccbb53cdbd6ce3c0fdacdedb8b3e4627"
+      },
+      "report": {
+        "path": "audit/extension21/stdout.log",
+        "sha256": "430f073a081297d91f45c2419a519e002fc9617b60fd7f8a1154ea5972eecbd6"
+      },
+      "requested_names": 21,
+      "scope": "extension21",
+      "status": "passed",
+      "verified_name_count": 21
+    }
+  ],
+  "axiom_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "driver": {
+      "path": "ResearchBounds/GenericDegreeNamedAudit.lean",
+      "sha256": "22a4bbb69f003fecaed8cf77eded00da73868e5ec074591d5f4c363c7e99b3eb"
+    },
+    "environment_exhaustiveness": false,
+    "prepared_public_theorems": 40,
+    "readback": {
+      "path": "audit/generic47/readback.json",
+      "sha256": "5297c4a3155c88abbb271b7aefb34c4d6f376c6d20a86ae96a54a8d0b7b03ad9"
+    },
+    "receipt": {
+      "original_sha256": "133967fbf126698eed65e7adecf08d27ce52fc1e882bd9186105dfe87bee5094",
+      "path": "audit/generic47/receipt.json",
+      "sha256": "741bf025b76f80770e05806c93de884ac586bcab90e948c7d1dbc7832aee854f"
+    },
+    "records": {
+      "path": "audit/generic47/records.json",
+      "sha256": "8848b328e5c8ea178d737344cedd101dddd548bb70c91503472c7b68d1483236"
+    },
+    "report": {
+      "path": "audit/generic47/stdout.log",
+      "sha256": "9197deea69d66e575c0ec78ada738b468a2b3ab9389773fcf98ca37763f1c268"
+    },
+    "requested_names": 47,
+    "scope": "generic47",
+    "status": "passed",
+    "verified_name_count": 47
+  },
+  "conditional_degree": {
+    "count_degree_e": null,
+    "draw_degree_t": null,
+    "finite_word_measure": "weight(input) + numeric reserved-bit count n(input)",
+    "formula": "340*max(1,t)*max(e,6)",
+    "fresh_word_measure": "n + weight(n)",
+    "public_S170_requirements": [
+      "Equal-total margins.",
+      "Numeric precision h >= 1.",
+      "Degree certificates for the actual complete count and draw realizers."
+    ],
+    "requirements": [
+      "Typed N e for the actual complete public word-count realizer.",
+      "Typed F t for the actual complete supplied-word public-draw realizer.",
+      "The established public word-measure envelope applies to those exact realizers."
+    ]
+  },
+  "draft_revision": 3,
+  "extension_scope": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "driver": {
+      "path": "ResearchBounds/NewDegreeNamedAudit.lean",
+      "sha256": "53d03c9ad846d46af06c2451f8c0c571650587852a4bace811c78cc13fe57c6c"
+    },
+    "environment_exhaustiveness": false,
+    "modules": [
+      "ResearchBounds.TreeArithmeticDegree",
+      "ResearchBounds.ScalarOutputSizeDegree",
+      "ResearchBounds.WordCountSeedDegrees"
+    ],
+    "readback": {
+      "path": "audit/extension21/readback.json",
+      "sha256": "e7f8f5de3ccbe0403dad8f1e5df3ac174b1a38f46e946d6ed25e4b6042e2cdbb"
+    },
+    "receipt": {
+      "original_sha256": "f5fd8f936fdfb4886f64e7ebc01a9a3bec9870d7f34d68c4ccddd728ff5c9f0c",
+      "path": "audit/extension21/receipt.json",
+      "sha256": "c07cd7a074356b126038200d27edcae13583d8a07d3def1da859c143938c2eec"
+    },
+    "records": {
+      "path": "audit/extension21/records.json",
+      "sha256": "0172862b177b4f94f76fa3f1625b3da5ccbb53cdbd6ce3c0fdacdedb8b3e4627"
+    },
+    "report": {
+      "path": "audit/extension21/stdout.log",
+      "sha256": "430f073a081297d91f45c2419a519e002fc9617b60fd7f8a1154ea5972eecbd6"
+    },
+    "requested_names": 21,
+    "scope": "extension21",
+    "status": "passed",
+    "verified_name_count": 21
+  },
+  "failure_history": "history/index.json",
+  "fixed_power_bound": {
+    "degree": 6,
+    "scope": "Each fixed program k; polynomial coefficients may depend on k, not a uniform bound for variable k input."
+  },
+  "independent_publication_review": null,
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "observed_compiler_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+  "prerequisite_boundary": "Authenticated accepted native prerequisites and pinned official caches reused; complete closure snapshots omitted from compact packet.",
+  "prior_generic47_observation": {
+    "path": "audit/generic47-observation01/readback.json",
+    "raw_download_manifest_sha256": "4c6ee938c1f6c4f6ecd6fcd84899001f9809470e078df1aca0b3e6680e43f993",
+    "sha256": "99f9ff04a0da5aff6537fe54c6df6c3b0c2429a5baea11af16e5858aa3568e1e",
+    "stdout_identical_to_latest": true
+  },
+  "provenance": {
+    "path": "audit/provenance-bindings.json",
+    "sha256": "d8cefa950a35d64fcdca2bdb0c6d8e005d486f8f689be66e8dea1550d7f0a1ac"
+  },
+  "public_reproduction": null,
+  "schema_version": 1,
+  "scope": "Seven quantitative helpers compiled with reused authenticated native prerequisites and official caches; two named audit scopes47 and21. No full numerical sampler degree, fresh default/Linux or strict claim.",
+  "sources": [
+    {
+      "axiom_audit": {
+        "receipt": "audit/generic47/receipt.json",
+        "scope": "generic47"
+      },
+      "compilation_receipt": "compilation/TreeDegreeBounds/receipt.json",
+      "compilation_status": "passed",
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "object_sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+      "raw_compilation_receipt_sha256": "472a9b29cff76a22ad13125f9198f44127157ec159dec996f038000429281d22",
+      "source": "ResearchBounds/TreeDegreeBounds.lean",
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "axiom_audit": {
+        "receipt": "audit/generic47/receipt.json",
+        "scope": "generic47"
+      },
+      "compilation_receipt": "compilation/PolynomialCompilerDegree/receipt.json",
+      "compilation_status": "passed",
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "object_sha256": "bf5e49a96a39c4e9526fb0cf1ad3786d8a6c84d1e90771b0c5906cfce1c316d2",
+      "raw_compilation_receipt_sha256": "7e2d7e2279ca19968e3dbdae3f52d168c14dcf67a0a4ad80f177cdf673d365c5",
+      "source": "ResearchBounds/PolynomialCompilerDegree.lean",
+      "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "axiom_audit": {
+        "receipt": "audit/generic47/receipt.json",
+        "scope": "generic47"
+      },
+      "compilation_receipt": "compilation/FreshBitDegreeBounds/receipt.json",
+      "compilation_status": "passed",
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "object_sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929",
+      "raw_compilation_receipt_sha256": "a937f2a6675a3e223fcff7d634fb765ecebf8ba2d0e4bb38b719731b9ed87315",
+      "source": "ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "axiom_audit": {
+        "receipt": "audit/generic47/receipt.json",
+        "scope": "generic47"
+      },
+      "compilation_receipt": "compilation/FiniteWordDegreeBounds/receipt.json",
+      "compilation_status": "passed",
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "object_sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce",
+      "raw_compilation_receipt_sha256": "d7729ed252f9e85d521abe14efd7aa0ca547e10cc2110df829ed1a7591b74956",
+      "source": "ResearchBounds/FiniteWordDegreeBounds.lean",
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "axiom_audit": {
+        "receipt": "audit/extension21/receipt.json",
+        "scope": "extension21"
+      },
+      "compilation_receipt": "compilation/TreeArithmeticDegree/receipt.json",
+      "compilation_status": "passed",
+      "module": "ResearchBounds.TreeArithmeticDegree",
+      "object_sha256": "14084fd1a8a94de138eb84ced25330d5fb5e5dbb7869ba49e7cc01fab5f5af9e",
+      "raw_compilation_receipt_sha256": "507621cfd5647e04bb6e8e21fc7d40e927373dc6436d0936acfd68e4109474c2",
+      "source": "ResearchBounds/TreeArithmeticDegree.lean",
+      "source_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76"
+    },
+    {
+      "axiom_audit": {
+        "receipt": "audit/extension21/receipt.json",
+        "scope": "extension21"
+      },
+      "compilation_receipt": "compilation/ScalarOutputSizeDegree/receipt.json",
+      "compilation_status": "passed",
+      "module": "ResearchBounds.ScalarOutputSizeDegree",
+      "object_sha256": "31373e7e8f1b04751d032a564f00a5fc0ca3965e4420159c07a77a1c6f3a602f",
+      "raw_compilation_receipt_sha256": "e8f0e2f262c2569c7c6d23ffef4e77a24fe416880b5e9aaa99472c5d900e311c",
+      "source": "ResearchBounds/ScalarOutputSizeDegree.lean",
+      "source_sha256": "11c1d1b471b784086d9dc18e9026e308e82812f30f636e4848eadb1f2217b0bb"
+    },
+    {
+      "axiom_audit": {
+        "receipt": "audit/extension21/receipt.json",
+        "scope": "extension21"
+      },
+      "compilation_receipt": "compilation/WordCountSeedDegrees/receipt.json",
+      "compilation_status": "passed",
+      "module": "ResearchBounds.WordCountSeedDegrees",
+      "object_sha256": "e5003084654888fa321c21f7d6e899e21735bc8f11ce26c62597182372a44f8a",
+      "raw_compilation_receipt_sha256": "3733b505d782264ed907d06b221b49f856579649b6c8ab9bcab9d01d5de0dabb",
+      "source": "ResearchBounds/WordCountSeedDegrees.lean",
+      "source_sha256": "fb04a131b99d25059f215287021fab61d026a1aafe2bbff838841c88157c7ccd"
+    }
+  ],
+  "status": "seven_helpers_compiled_two_named_audits_passed",
+  "toolchain": "leanprover/lean4:v4.34.1",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+}

@@ -1,0 +1,49 @@
+{
+  "actual_source_failures": [
+    {
+      "exit_code": 1,
+      "module": "CountBounds.ParserDegree",
+      "original_receipt_sha256": "be0c9a022f630d41fb8908129bc18c8a49602790b057444437a7a2a1036b71b8",
+      "original_stdout_sha256": "3ac51b4735427700783ccdd492c0c568628143b08f4ebd8b4cf1e21e7c7e4963",
+      "source_sha256": "ffecb999dad8f867bedbafd5b6d1b44b8c00f803195d0f2ead4551cdd63ed337",
+      "status": "failed"
+    },
+    {
+      "exit_code": 1,
+      "module": "ResearchBounds.SmallCellCatalogueDegree",
+      "original_receipt_sha256": "2e4615bcc0196598abace01d373fe465618b88a39bf7ca445becd1203c1d253b",
+      "original_stdout_sha256": "854501b989c07cb3a48fcd974aa58f73eb51d5074c3ece891a62b37ab865f116",
+      "source_sha256": "ba169784bb43d17549dde6d847bd6eac38f8b96a6790734036b32d9691af8e30",
+      "status": "failed"
+    },
+    {
+      "exit_code": 1,
+      "module": "ResearchBounds.DrawWalkDegree",
+      "original_receipt_sha256": "21aad6da569cd2943ad654259edd997543ac2c51e9351ccbc1332b2f7ac81a98",
+      "original_stdout_sha256": "1c5d43f0dac1d680bdec2b4701d4658e762f07274450475cc80fe4ad887f264a",
+      "source_sha256": "5d890b31e11273e9f933678a8ed4c6ed1faaf1eec8e2a679de0c6fa06f4453b3",
+      "status": "failed"
+    },
+    {
+      "exit_code": 1,
+      "module": "ResearchBounds.DrawAssemblyDegree",
+      "original_receipt_sha256": "e2cdd4beac595d5aa7be8aa0d877936d7e6862eac662fad47e30bfbd27f458fa",
+      "original_stdout_sha256": "689104cada0d8c703620dae6b9b8708b8e2a4f13b97e6497a572a4b721f37d18",
+      "source_sha256": "5ae53ec4eb0304fa6a9e884452a4b82980266517bbfa1e5aa1e9120bb9c84837",
+      "status": "failed"
+    }
+  ],
+  "blocked_count_had_no_own_compiler_failure": true,
+  "module_outcomes": {
+    "CountBounds.ListRepeatDegree": "passed",
+    "CountBounds.ParserDegree": "failed",
+    "CountBounds.ScalarCircuitDegreeV2": "blocked",
+    "CountBounds.TightWordCountDegreeV2": "blocked",
+    "ResearchBounds.CatalogueLeafDegrees": "passed",
+    "ResearchBounds.DrawAssemblyDegree": "failed",
+    "ResearchBounds.DrawControlDegree": "passed",
+    "ResearchBounds.DrawWalkDegree": "failed",
+    "ResearchBounds.SmallCellCatalogueDegree": "failed"
+  },
+  "original_capture_sha256": "ea95c1bd8c838c250f108de877d9507d1d3aa7d32ba811dede950a5d84b15a7d"
+}

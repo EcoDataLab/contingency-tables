@@ -1,0 +1,49 @@
+{
+  "attempt_object_sha256": "1a32f5ceb7745c3e7acef33dc8ac863db3ca1ed95264903796cd556dd7499ecb",
+  "command": [
+    "<lean-compiler>",
+    "--root=<current-run>\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<current-run>\\attempts\\ResearchBounds.DrawAssemblyDegree\\module.olean",
+    "-i",
+    "<current-run>\\attempts\\ResearchBounds.DrawAssemblyDegree\\module.ilean",
+    "<current-run>\\source\\ResearchBounds\\DrawAssemblyDegree.lean"
+  ],
+  "diagnostic_object": "<current-run>\\lib\\lean\\ResearchBounds\\DrawAssemblyDegree.olean",
+  "elapsed_seconds": 81.66337490000296,
+  "evidence_class": "fresh_native_compilation",
+  "execution_origin": "fresh",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    },
+    "Math115.PublicLatticeSampler": {
+      "path": "<current-run>\\Math115-projection\\Math115\\PublicLatticeSampler.olean",
+      "sha256": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489"
+    },
+    "ResearchBounds.DrawControlDegree": {
+      "path": "<current-run>\\lib\\lean\\ResearchBounds\\DrawControlDegree.olean",
+      "sha256": "56a6c29498ea7b9df719400273331d6e799a03bfc9329f605ddd33600a1a59b9"
+    }
+  },
+  "module": "ResearchBounds.DrawAssemblyDegree",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "source_sha256": "bcdf1628317e01795819a0452e6d9415ef83fb52bc3fe6db46196b26cfd27997",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

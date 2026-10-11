@@ -1,0 +1,420 @@
+--- unused-cache-repair-v1/runner/strict_sampler.py
++++ auth-progress-v1/runner/strict_sampler.py
+@@ -67,6 +67,29 @@
+     "lake_configuration_provenance_binding", "lake_configuration_artifacts_sha256",
+     "lake_configuration_artifacts_stat", "trusted_cache_states", "external_import_owners",
+     "unused_cache_policy", "unused_cache_policy_binding"}
++DIAGNOSTICS = False
++_diag_started = 0.0
++_diag_last = {}
++
++def enable_diagnostics(enabled=False):
++    global DIAGNOSTICS, _diag_started, _diag_last
++    DIAGNOSTICS = bool(enabled)
++    _diag_started, _diag_last = time.monotonic(), {}
++
++def progress(stage, event, **fields):
++    if DIAGNOSTICS:
++        print("STRICT_AUTH_PROGRESS=" + json.dumps({"stage": stage, "event": event,
++              "elapsed_seconds": round(time.monotonic() - _diag_started, 3), **fields}, sort_keys=True),
++              file=sys.stderr, flush=True)
++
++def progress_tick(stage, files, byte_count=0, **fields):
++    if DIAGNOSTICS:
++        now = time.monotonic()
++        if now - _diag_last.get(stage, now) >= 5 or files % 1024 == 0:
++            progress(stage, "heartbeat", files=files, bytes=byte_count, **fields)
++            _diag_last[stage] = now
++        else:
++            _diag_last.setdefault(stage, now)
+ 
+ class Reject(RuntimeError):
+     pass
+@@ -142,7 +165,9 @@
+     return loaded["strict_serial_check.py"], loaded["build_lean_serial.py"]
+ 
+ def git(root, *args):
++    progress("git", "begin", worktree=root.name, argv=list(args))
+     r = subprocess.run(["git", "-C", str(root), *args], capture_output=True, text=True, timeout=30)
++    progress("git", "end", worktree=root.name, returncode=r.returncode)
+     require(r.returncode == 0, "Git pin/clean check failed")
+     return r.stdout.strip()
+ 
+@@ -260,13 +285,17 @@
+                 and all(type(x) is int for x in identity.values()), "Wrong cache directory identity types")
+ 
+ def cache_inventory(root, roots, states=None):
++    progress("cache_inventory", "begin", roots=len(roots))
+     result = {}
+     if states is not None:
+         validate_cache_state_shapes(states, roots)
+         require(cache_root_state(root, CLI_CACHE) == states[CLI_CACHE], "Cli absence identity differs before cache inventory")
+     for name in roots:
+         if states is not None and name == CLI_CACHE:
++            progress("cache_inventory", "nominated_absence", root=name)
+             continue  # Exact caller-bound state is rederived at every boundary.
++        progress("cache_inventory", "root_begin", root=name)
++        _diag_files, _diag_bytes = 0, 0
+         base = relative(root, name)
+         require(stat.S_ISDIR(base.lstat().st_mode), "Missing trusted import-cache directory")
+         pending = [base]
+@@ -285,15 +314,24 @@
+                     pending.append(path)
+                 else:
+                     require(stat.S_ISREG(observed.st_mode), "Nonregular/symlink trusted cache entry")
++                    if observed.st_size >= 64 * 1024 * 1024:
++                        progress("cache_inventory", "large_file_begin", root=name, file=str(path.relative_to(root)), bytes=observed.st_size)
+                     result[str(path.relative_to(root))] = sha(path)
+                     require(cache_identity(path.lstat()) == cache_identity(observed), "Cache entry changed during hashing")
++                    _diag_files += 1; _diag_bytes += observed.st_size
++                    progress_tick("cache_inventory", _diag_files, _diag_bytes, root=name)
++                    if observed.st_size >= 64 * 1024 * 1024:
++                        progress("cache_inventory", "large_file_end", root=name, file=str(path.relative_to(root)), bytes=observed.st_size)
++        progress("cache_inventory", "root_end", root=name, files=_diag_files, bytes=_diag_bytes)
+     if states is not None:
+         require(cache_root_state(root, CLI_CACHE) == states[CLI_CACHE], "Cli absence identity drift during cache inventory")
++    progress("cache_inventory", "end", files=len(result))
+     return result
+ 
+ def resolve_external_imports(root, freeze, packages):
+     """Same exactly-one source/object rules, rederived from tracked sources."""
+     external, source_hashes, owners = {}, {}, set()
++    progress("external_resolution", "begin", imports=len(freeze["external_imports"]))
+     for name in freeze["external_imports"]:
+         rel = name.replace(".", "/")
+         candidates = []
+@@ -310,17 +348,24 @@
+         require(len(candidates) == 1, "Missing or ambiguous direct external import: " + name)
+         external[name] = {"olean": candidates[0][0], "source": candidates[0][1]}
+         owners.add(candidates[0][2])
++    progress("external_resolution", "end", imports=len(external), owners=sorted(owners))
+     return external, source_hashes, sorted(owners)
+ 
+ def no_hidden_objects(root, cache_roots, allow_own_build=False, configuration_files=None):
++    progress("hidden_objects", "begin")
++    _diag_visited, _diag_skipped = 0, 0
+     build = root / "formal/.lake/build"
+     bases = [root / "formal", root / ".upstream/openai-math/lean", root / ".upstream/openai-math/.lake/build"]
+     packages = root / "formal/.lake/packages"
+     for base in bases:
+         if not base.exists():
+             continue
++        progress("hidden_objects", "tree_begin", tree=str(base.relative_to(root)))
+         for path in base.rglob("*"):
++            _diag_visited += 1
++            progress_tick("hidden_objects", _diag_visited, package_entries_skipped=_diag_skipped)
+             if path.is_relative_to(packages):
++                _diag_skipped += 1
+                 continue
+             require(not path.is_symlink(), "Symlinked submitted tree")
+             if not path.is_file() or not path.name.endswith((*FACETS, ".c")):
+@@ -336,6 +381,7 @@
+         base = relative(root, name)
+         for namespace in ("Math115", "OAI", "ComparatorChallenges"):
+             require(not (base / namespace).exists(), "Submitted namespace hidden in trusted cache")
++    progress("hidden_objects", "end", visited=_diag_visited, package_entries_skipped=_diag_skipped)
+ 
+ class Guard:
+     def __init__(self, root, sources, tools, caches, serial, config_roots=(), config_files=None, system_executables=None, tool_aliases=None, config_provenance=None, config_stats=None, cache_roots=(), cache_states=None, external_owners=None, unused_cache_policy=None):
+@@ -353,6 +399,7 @@
+     def add(self, path):
+         self.tools[str(path.relative_to(self.root))] = sha(path)
+     def check(self, rehash=False):
++        progress("guard", "begin", rehash=rehash)
+         if self.cache_states is not None:
+             validate_cache_state_shapes(self.cache_states, self.cache_roots)
+             require(cache_root_states(self.root, self.cache_roots, self.external_owners, self.unused_cache_policy)
+@@ -366,22 +413,46 @@
+             require(actual is not None and str(Path(actual).resolve()) == item["path"] and sha(Path(item["path"])) == item["sha256"], "System command resolution/bytes changed: " + name)
+         if self.tool_aliases is not None:
+             require(tool_alias_inventory(self.root) == self.tool_aliases, "Bootstrap alias identity/target bytes changed")
++        progress("guard", "sources_begin", files=len(self.sources))
+         for name, digest in self.sources.items():
+             path = relative(self.root, name)
+             require(path.is_file() and sha(path) == digest, "Frozen source changed: " + name)
++        progress("guard", "tools_begin", files=len(self.tools))
+         for name, digest in self.tools.items():
+             path = trusted_runtime_path(self.root, name)
+             require(path.is_file() and sha(path) == digest, "Frozen tool changed: " + name)
+         # Complete cache set is checked at admission and before/after Comparator.
+         # At every serial stage all frozen cache entries retain their stat identity.
++        progress("guard_cache", "begin", rehash=rehash, files=len(self.caches))
++        _diag_files, _diag_bytes, _diag_root = 0, 0, None
++        _diag_root_files, _diag_root_bytes = 0, 0
+         for name, (digest, stat) in self.caches.items():
++            if DIAGNOSTICS:
++                _diag_current_root = next((x for x in self.cache_roots if name.startswith(x + "/")), "unlabelled-cache")
++                if _diag_current_root != _diag_root:
++                    if _diag_root is not None:
++                        progress("guard_cache", "root_end", root=_diag_root, files=_diag_root_files, bytes=_diag_root_bytes)
++                    progress("guard_cache", "root_begin", root=_diag_current_root)
++                    _diag_root = _diag_current_root
++                    _diag_root_files, _diag_root_bytes = 0, 0
+             path = relative(self.root, name)
+             require(path.is_file(), "Trusted cache file vanished")
+             current = path.stat()
+             require((current.st_size, current.st_mtime_ns, current.st_ctime_ns, current.st_ino) == stat,
+                     "Trusted cache metadata changed: " + name)
+             if rehash:
++                if current.st_size >= 64 * 1024 * 1024:
++                    progress("guard_cache", "large_file_begin", root=_diag_root, file=name, bytes=current.st_size)
+                 require(sha(path) == digest, "Trusted cache bytes changed")
++                if current.st_size >= 64 * 1024 * 1024:
++                    progress("guard_cache", "large_file_end", root=_diag_root, file=name, bytes=current.st_size)
++            _diag_files += 1; _diag_bytes += current.st_size
++            _diag_root_files += 1; _diag_root_bytes += current.st_size
++            progress_tick("guard_cache", _diag_files, _diag_bytes, root=_diag_root, rehash=rehash)
++        if _diag_root is not None:
++            progress("guard_cache", "root_end", root=_diag_root, files=_diag_root_files, bytes=_diag_root_bytes)
++        progress("guard_cache", "end", rehash=rehash, files=_diag_files, bytes=_diag_bytes)
++        progress("guard", "end", rehash=rehash)
+ 
+ def configuration_inventory(root, roots):
+     result = {}
+@@ -460,6 +531,7 @@
+     require(bool(SHA.fullmatch(audit["evidence_manifest_sha256"])), "Native audit evidence manifest hash missing")
+ 
+ def admit(root, freeze, runtime, serial, parser, git_read=git, ambient=None):
++    progress("admission", "begin")
+     ambient = os.environ if ambient is None else ambient
+     require(not any(ambient.get(k) for k in OVERRIDES), "Ambient import/Python/toolchain override")
+     require(runtime.get("status") == "authenticated_linux_runtime_for_strict_sampler", "Runtime template is not authenticated")
+@@ -473,7 +545,9 @@
+     require(git_read(root / ".upstream/openai-math", "rev-parse", "HEAD") == freeze["upstream_revision"], "Upstream pin mismatch")
+     for options in (("diff", "--name-only"), ("diff", "--cached", "--name-only"), ("ls-files", "--others", "--exclude-standard")):
+         require(not git_read(root / ".upstream/openai-math", *options), "Upstream source dirty")
++    progress("admission", "source_graph_begin")
+     modules = validate_sources(root, freeze, parser)
++    progress("admission", "source_graph_end", modules=len(modules))
+     sources = {x["source"]: x["sha256"] for x in freeze["modules"]}
+     sources.update(freeze["overlay_sha256"])
+     sources.update(freeze["config_sha256"])
+@@ -485,6 +559,7 @@
+     require(manifest["packagesDir"] == ".lake/packages", "Unexpected package resolution")
+     actual_pins = {x["name"]: x["rev"] for x in manifest["packages"]}
+     require(actual_pins == freeze["package_revisions"], "Package pins changed")
++    progress("admission", "package_and_checker_git_begin")
+     packages = {}
+     for entry in manifest["packages"]:
+         require(entry["type"] == "git" and entry.get("subDir") is None, "Unsupported package source")
+@@ -495,6 +570,7 @@
+     for folder, pin in serial.PINS.items():
+         require(git_read(root / folder, "rev-parse", "HEAD") == pin, "Checker source pin mismatch")
+         require(not git_read(root / folder, "status", "--porcelain", "--untracked-files=all"), "Checker source dirty")
++    progress("admission", "package_and_checker_git_end")
+     provenance = read(relative(root, PROVENANCE))
+     serial.validate_provenance(provenance, parser.TOOLCHAIN)
+     tools = dict(runtime["trusted_files_sha256"])
+@@ -513,6 +589,7 @@
+     require(set(binding) == {"path", "sha256"}, "Configuration provenance file binding missing")
+     provenance_file = relative(root, binding["path"])
+     require(provenance_file.is_relative_to(root / ".tools/linux-verification") and SHA.fullmatch(binding["sha256"]) and sha(provenance_file) == binding["sha256"] and read(provenance_file) == config_provenance, "Independent configuration provenance file differs")
++    progress("admission", "configuration_begin")
+     configuration = indexed_configuration_inventory(root, config_provenance)
+     require(configuration == runtime["lake_configuration_artifacts_sha256"], "Trusted Lake configuration artifact set differs")
+     require(set(config_provenance["tool_sha256"]) <= set(tools) and all(tools[n] == h for n,h in config_provenance["tool_sha256"].items()), "Configuration and runtime tool provenance differ")
+@@ -531,24 +608,32 @@
+             and read(policy_file) == runtime["unused_cache_policy"], "Unused-cache policy file/SHA differs")
+     validate_unused_cache_policy(runtime["unused_cache_policy"])
+     tools[policy_binding["path"]] = policy_binding["sha256"]
++    progress("admission", "configuration_and_policy_end")
+     external, external_sources, owners = resolve_external_imports(root, freeze, packages)
+     require(external == runtime["external_import_resolution"], "External source/object resolution changed")
+     require(owners == runtime["external_import_owners"], "Required external source-owner set changed")
+     tools.update(external_sources)
+     validate_cache_state_shapes(runtime["trusted_cache_states"], expected_cache_roots)
++    progress("admission", "cache_states_begin")
+     states = cache_root_states(root, expected_cache_roots, owners, runtime["unused_cache_policy"])
+     require(states == runtime["trusted_cache_states"], "Cache directory/absence state differs")
++    progress("admission", "cache_states_end")
+     no_hidden_objects(root, expected_cache_roots, configuration_files=configuration)
++    progress("admission", "independent_cache_inventory_begin")
+     actual_cache = cache_inventory(root, expected_cache_roots, states)
+     require(actual_cache == runtime["trusted_cache_files_sha256"], "Complete trusted cache inventory differs")
++    progress("admission", "independent_cache_inventory_end", files=len(actual_cache))
+     caches = {}
+     for name, digest in actual_cache.items():
+         stat = relative(root, name).stat()
+         caches[name] = (digest, (stat.st_size, stat.st_mtime_ns, stat.st_ctime_ns, stat.st_ino))
+     guard = Guard(root, sources, tools, caches, serial, config_roots, configuration, runtime["system_executables"], aliases, config_provenance, config_stats,
+                   expected_cache_roots, states, owners, runtime["unused_cache_policy"])
++    progress("admission", "guard_full_rehash_begin")
+     guard.check(rehash=True)
++    progress("admission", "guard_full_rehash_end")
+     require(not serial.inventory(root), "Whole-run start has submitted build files")
++    progress("admission", "end")
+     return modules, guard, descriptor, expected_cache_roots
+ 
+ def run(root, out, freeze, runtime, modules, guard, descriptor, caches, serial, wall, runner=None):
+@@ -625,7 +710,10 @@
+     mode.add_argument("--plan", action="store_true"); mode.add_argument("--execute", action="store_true")
+     p.add_argument("--output", type=Path, required=True)
+     p.add_argument("--wall-seconds", type=int, default=39600)
++    p.add_argument("--diagnostics", action="store_true", help="Flushed progress on existing stderr; no verification change")
+     a = p.parse_args()
++    enable_diagnostics(a.diagnostics)
++    progress("runner", "begin", plan_only=a.plan)
+     require(1 <= a.wall_seconds <= 39600, "Unsupported guest cap")
+     require(SHA.fullmatch(a.runtime_freeze_sha256) and sha(a.runtime_freeze) == a.runtime_freeze_sha256, "Caller runtime freeze SHA mismatch")
+     require(sha(HERE / "source-freeze.json") == SOURCE_SHA, "Frozen sampler source manifest changed")
+@@ -651,6 +739,7 @@
+             run(root, out, freeze, runtime, modules, guard, descriptor, caches, serial, a.wall_seconds)
+         else:
+             print(f"Admitted {len(modules)} source modules; no Lean/Lake/checker run.")
++    progress("runner", "end", plan_only=a.plan)
+     return 0
+ 
+ if __name__ == "__main__":
+--- unused-cache-repair-v1/runner/authenticate_runtime.py
++++ auth-progress-v1/runner/authenticate_runtime.py
+@@ -10,17 +10,21 @@
+ from pathlib import Path
+ import shutil
+ import subprocess
++import sys
+ 
+-RUNNER_SHA = "acebbe349c5eb0d24cdba0181cc852f2f95c91ca94c56bfe056864dffb656e11"
++RUNNER_SHA = "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6"
+ def main():
+     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--runner',type=Path,required=True);p.add_argument('--output',type=Path,required=True);p.add_argument('--native-audit',type=Path,required=True)
+     p.add_argument('--lake-config-provenance',type=Path,required=True);p.add_argument('--lake-config-provenance-sha256',required=True)
+     p.add_argument('--unused-cache-policy',type=Path,required=True);p.add_argument('--unused-cache-policy-sha256',required=True)
++    p.add_argument('--diagnostics',action='store_true',help='Flushed progress on existing stderr; no verification change')
+     a=p.parse_args();root=a.root.resolve()
++    if a.diagnostics:print('STRICT_AUTH_PROGRESS='+json.dumps({'stage':'authentication','event':'begin'},sort_keys=True),file=sys.stderr,flush=True)
+     import hashlib
+     digest=lambda f:hashlib.sha256(f.read_bytes()).hexdigest()
+     if digest(a.runner)!=RUNNER_SHA:raise RuntimeError('Reviewed runner body changed')
+     spec=importlib.util.spec_from_file_location('c11_trusted_runner',a.runner);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
++    m.enable_diagnostics(a.diagnostics);m.progress('authentication','assets_begin')
+     serial,parser=m.load_assets();freeze=m.read(a.runner.parent/'source-freeze.json')
+     m.require(digest(a.runner.parent/'source-freeze.json')==m.SOURCE_SHA,'Frozen sampler sources changed')
+     m.require(not a.output.exists() and a.output.resolve().is_relative_to(root/'.tools/linux-verification'),'Need fresh trusted runtime output')
+@@ -29,10 +33,13 @@
+     cache_roots=sorted([m.PREFIX+'/lib/lean',*['formal/.lake/packages/'+n+'/.lake/build/lib/lean' for n in packages]])
+     config_name=str(a.lake_config_provenance.resolve().relative_to(root));config_file=m.relative(root,config_name)
+     m.require(config_file.is_relative_to(root/'.tools/linux-verification') and m.SHA.fullmatch(a.lake_config_provenance_sha256) and m.sha(config_file)==a.lake_config_provenance_sha256,'Independent configuration provenance SHA/path differs')
++    m.progress('authentication','configuration_begin')
+     config_provenance=m.read(config_file)
+     configuration=m.indexed_configuration_inventory(root,config_provenance)
+     config_stats=m.configuration_stats(root,configuration)
++    m.progress('authentication','configuration_end')
+     m.no_hidden_objects(root,cache_roots,configuration_files=configuration)
++    m.progress('authentication','tool_and_system_freeze_begin')
+     provenance=m.read(m.relative(root,m.PROVENANCE));serial.validate_provenance(provenance,parser.TOOLCHAIN)
+     mandatory=[m.PROVENANCE,*(m.PREFIX+'/bin/'+n for n in ('lean','leanir','lake')),'.tools/elan/bin/elan','.tools/elan/bin/lake',*('.tools/verification-bin/'+n for n in provenance['binary_sha256'])]
+     tools,aliases=m.freeze_runtime_tools(root,mandatory)
+@@ -40,23 +47,33 @@
+     for name in m.SYSTEM_COMMANDS:
+         path=shutil.which(name);m.require(path is not None,'Missing system command: '+name);path=Path(path).resolve()
+         system[name]={'path':str(path),'sha256':m.sha(path)}
++    m.progress('authentication','tool_and_system_freeze_end')
+     tracked={}
+     for name in packages:
++        m.progress('authentication','tracked_package_begin',package=name)
+         package=root/'formal/.lake/packages'/name
+         r=subprocess.run(['/usr/bin/git','-C',str(package),'ls-files'],text=True,capture_output=True,timeout=30)
+         m.require(r.returncode==0,'Cannot inspect pinned package source');tracked[name]=set(r.stdout.splitlines())
++        m.progress('authentication','tracked_package_end',package=name,tracked_files=len(tracked[name]))
+     resolution,_,owners=m.resolve_external_imports(root,freeze,{n:(root/'formal/.lake/packages'/n,files) for n,files in tracked.items()})
+     policy_name=str(a.unused_cache_policy.absolute().relative_to(root));policy_file=m.relative(root,policy_name)
+     m.require(policy_file.is_relative_to(root/'.tools/linux-verification') and m.SHA.fullmatch(a.unused_cache_policy_sha256) and m.sha(policy_file)==a.unused_cache_policy_sha256,'Caller unused-cache policy SHA/path differs')
+     policy=m.read(policy_file);m.validate_unused_cache_policy(policy)
++    m.progress('authentication','cache_states_begin')
+     states=m.cache_root_states(root,cache_roots,owners,policy)
++    m.progress('authentication','cache_states_end',roots=len(states))
+     native=m.read(a.native_audit)
++    m.progress('authentication','collection_cache_inventory_begin')
+     runtime={'schema_version':2,'status':'authenticated_linux_runtime_for_strict_sampler','source_freeze_sha256':m.SOURCE_SHA,'trusted_files_sha256':tools,'trusted_tool_aliases':aliases,'system_executables':system,'trusted_cache_roots':cache_roots,'trusted_cache_files_sha256':m.cache_inventory(root,cache_roots,states),'lake_configuration_artifacts_sha256':configuration,'external_import_resolution':resolution,'entrypoint_native_audit':native,
+              'trusted_cache_states':states,'external_import_owners':owners,'unused_cache_policy':policy,'unused_cache_policy_binding':{'path':policy_name,'sha256':a.unused_cache_policy_sha256}}
+     runtime.update(lake_configuration_provenance=config_provenance,lake_configuration_provenance_binding={'path':config_name,'sha256':a.lake_config_provenance_sha256},lake_configuration_artifacts_stat=config_stats)
++    m.progress('authentication','collection_cache_inventory_end',files=len(runtime['trusted_cache_files_sha256']))
+     # Complete independent runner admission re-derives graph, pins, resolution,
+     # full cache and configuration identities; collection alone is insufficient.
++    m.progress('authentication','independent_admission_begin')
+     m.admit(root,freeze,runtime,serial,parser)
++    m.progress('authentication','independent_admission_end')
+     a.output.write_text(json.dumps(runtime,indent=2,sort_keys=True)+'\n')
++    m.progress('authentication','runtime_emitted')
+     print('MATH115_C11_RUNTIME_FREEZE_SHA256='+m.sha(a.output),flush=True)
+ if __name__=='__main__':main()
+--- /dev/null
++++ auth-progress-v1/runner/test_progress.py
+@@ -0,0 +1,77 @@
++"""Opt-in stderr tests with real temporary files, not verification monkeypatches."""
++import contextlib
++import io
++import json
++from pathlib import Path
++import tempfile
++import time
++import unittest
++import test_strict_sampler as core
++m,serial=core.m,core.serial
++
++class FlushBuffer(io.StringIO):
++    def __init__(self):super().__init__();self.flushes=0
++    def flush(self):self.flushes+=1;return super().flush()
++
++class ProgressTests(unittest.TestCase):
++    def setUp(self):
++        self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
++        self.root=Path(self.temp.name).resolve();self.path=self.root/'cache/Init.olean'
++        self.path.parent.mkdir();self.path.write_bytes(b'original object')
++        m.enable_diagnostics(False);self.addCleanup(m.enable_diagnostics,False)
++    def records(self,output):
++        return [json.loads(line.split('=',1)[1]) for line in output.splitlines() if line.startswith('STRICT_AUTH_PROGRESS=')]
++    def test_default_inventory_stderr_quiet(self):
++        err=io.StringIO()
++        with contextlib.redirect_stderr(err):result=m.cache_inventory(self.root,['cache'])
++        self.assertEqual(err.getvalue(),'');self.assertEqual(result,{'cache/Init.olean':m.sha(self.path)})
++    def test_opt_in_inventory_same_result_and_flushed_root_counts(self):
++        expected=m.cache_inventory(self.root,['cache']);err=FlushBuffer();out=io.StringIO();m.enable_diagnostics(True)
++        with contextlib.redirect_stderr(err),contextlib.redirect_stdout(out):actual=m.cache_inventory(self.root,['cache'])
++        self.assertEqual(actual,expected);self.assertEqual(out.getvalue(),'');self.assertGreater(err.flushes,0)
++        records=self.records(err.getvalue());root_end=next(r for r in records if r['event']=='root_end')
++        self.assertEqual((root_end['files'],root_end['bytes']),(1,len(b'original object')))
++        self.assertTrue(any(r['event']=='root_begin' for r in records));self.assertEqual(records[-1]['event'],'end')
++    def test_same_symlink_failure_with_diagnostics_on_or_off(self):
++        (self.path.parent/'bad.olean').symlink_to(self.root/'missing')
++        failures=[]
++        for enabled in (False,True):
++            m.enable_diagnostics(enabled);err=io.StringIO()
++            with contextlib.redirect_stderr(err):
++                try:m.cache_inventory(self.root,['cache'])
++                except m.Reject as e:failures.append((type(e),str(e)))
++                else:self.fail('symlink accepted')
++            if enabled:self.assertFalse(any(r['event']=='end' for r in self.records(err.getvalue())))
++        self.assertEqual(failures[0],failures[1])
++    def test_guard_hash_and_identity_failure_remain_unchanged(self):
++        s=self.path.stat();cache={'cache/Init.olean':(m.sha(self.path),(s.st_size,s.st_mtime_ns,s.st_ctime_ns,s.st_ino))}
++        guard=m.Guard(self.root,{},{},cache,serial)
++        err=io.StringIO();m.enable_diagnostics(True)
++        with contextlib.redirect_stderr(err):guard.check(rehash=True)
++        self.assertTrue(any(r['stage']=='guard_cache' and r['event']=='end' and r['rehash'] for r in self.records(err.getvalue())))
++        self.path.write_bytes(b'changed object')
++        failures=[]
++        for enabled in (False,True):
++            m.enable_diagnostics(enabled)
++            with contextlib.redirect_stderr(io.StringIO()):
++                try:guard.check(rehash=True)
++                except m.Reject as e:failures.append(str(e))
++                else:self.fail('changed object accepted')
++        self.assertEqual(failures[0],failures[1])
++    def test_heartbeat_rate_limit_and_explicit_elapsed_fields(self):
++        m.enable_diagnostics(True);err=io.StringIO()
++        with contextlib.redirect_stderr(err):
++            m.progress_tick('sample',1,10)
++            m._diag_last['sample']=time.monotonic()-6
++            m.progress_tick('sample',2,20)
++            m.progress_tick('sample',3,30)
++        records=self.records(err.getvalue());self.assertEqual(len(records),1)
++        self.assertEqual((records[0]['files'],records[0]['bytes']),(2,20));self.assertGreaterEqual(records[0]['elapsed_seconds'],0)
++    def test_source_walk_is_not_pruned_by_diagnostics(self):
++        package=self.root/'formal/.lake/packages/pkg/deep';package.mkdir(parents=True);(package/'data').write_bytes(b'data')
++        err=io.StringIO();m.enable_diagnostics(True)
++        with contextlib.redirect_stderr(err):m.no_hidden_objects(self.root,[])
++        end=next(r for r in self.records(err.getvalue()) if r['stage']=='hidden_objects' and r['event']=='end')
++        self.assertGreater(end['package_entries_skipped'],0);self.assertGreaterEqual(end['visited'],end['package_entries_skipped'])
++
++if __name__=='__main__':unittest.main()

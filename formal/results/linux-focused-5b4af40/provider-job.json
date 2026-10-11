@@ -1,0 +1,105 @@
+{
+  "id": 114359371258,
+  "run_id": 38101898049,
+  "run_attempt": 1,
+  "head_sha": "5b4af402a281a9bc02a38adb168f7b0bfde5d3aa",
+  "status": "completed",
+  "conclusion": "success",
+  "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/38101898049/job/114359371258",
+  "run_url": "https://api.github.com/repos/EcoDataLab/contingency-tables/actions/runs/38101898049",
+  "labels": [
+    "ubuntu-24.04"
+  ],
+  "started_at": "2026-10-11T01:27:31Z",
+  "completed_at": "2026-10-11T04:17:39Z",
+  "steps": [
+    {
+      "number": 1,
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-11T01:27:32Z",
+      "completed_at": "2026-10-11T01:27:33Z"
+    },
+    {
+      "number": 2,
+      "name": "Check out the selected commit without retained credentials",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-11T01:27:33Z",
+      "completed_at": "2026-10-11T01:27:38Z"
+    },
+    {
+      "number": 3,
+      "name": "Record the fresh environment and exact source inputs",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-11T01:27:38Z",
+      "completed_at": "2026-10-11T01:27:38Z"
+    },
+    {
+      "number": 4,
+      "name": "Require the actual strict Linux sandbox before downloading proof dependencies",
+      "status": "completed",
+      "conclusion": "skipped",
+      "started_at": "2026-10-11T01:27:38Z",
+      "completed_at": "2026-10-11T01:27:38Z"
+    },
+    {
+      "number": 5,
+      "name": "Install the pinned Lean toolchain and trusted Mathlib cache locally",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-11T01:27:38Z",
+      "completed_at": "2026-10-11T01:29:39Z"
+    },
+    {
+      "number": 6,
+      "name": "Build the pinned Comparator, exporter, and strict Landrun adapter",
+      "status": "completed",
+      "conclusion": "skipped",
+      "started_at": "2026-10-11T01:29:39Z",
+      "completed_at": "2026-10-11T01:29:39Z"
+    },
+    {
+      "number": 7,
+      "name": "Run the selected verification scope",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-11T01:29:39Z",
+      "completed_at": "2026-10-11T04:17:26Z"
+    },
+    {
+      "number": 8,
+      "name": "Record the outcome without upgrading the verification claim",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-11T04:17:26Z",
+      "completed_at": "2026-10-11T04:17:26Z"
+    },
+    {
+      "number": 9,
+      "name": "Preserve logs and provenance even when a check fails",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-11T04:17:26Z",
+      "completed_at": "2026-10-11T04:17:35Z"
+    },
+    {
+      "number": 18,
+      "name": "Post Check out the selected commit without retained credentials",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-11T04:17:35Z",
+      "completed_at": "2026-10-11T04:17:36Z"
+    },
+    {
+      "number": 19,
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-11T04:17:36Z",
+      "completed_at": "2026-10-11T04:17:36Z"
+    }
+  ]
+}

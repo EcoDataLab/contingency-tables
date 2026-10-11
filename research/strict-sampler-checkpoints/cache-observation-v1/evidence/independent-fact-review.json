@@ -1,0 +1,17 @@
+{
+  "archive_members_verified": 39,
+  "diagnostic_complete": false,
+  "explicit_failure": "Cache keyset entry cap",
+  "external82_and_submitted679_not_reached": true,
+  "guest_result": 1,
+  "host_local_members_verified": 8,
+  "importGraph_partial_flag_discrepancy": true,
+  "keyset_entries_retained": 20000,
+  "live_actions": false,
+  "owned_mount_cleanup": true,
+  "retained_pins_unchanged": true,
+  "reviewer": "Independent AI saved-artifact review; not human review",
+  "source_owner_or_runtime_coverage_promoted": false,
+  "source_unchanged": true,
+  "status": "authenticated partial observer failure; exactCli absence identified; no runtime admission"
+}

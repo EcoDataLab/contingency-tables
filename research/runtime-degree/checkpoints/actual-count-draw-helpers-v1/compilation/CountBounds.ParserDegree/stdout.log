@@ -1,0 +1,3 @@
+<original-run>\source\CountBounds\ParserDegree.lean:98:48: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

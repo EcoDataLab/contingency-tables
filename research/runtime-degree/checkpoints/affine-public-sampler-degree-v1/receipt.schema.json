@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Affine conditional sampler degree receipt",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "sources",
+    "audit_scopes",
+    "provenance",
+    "conditional_degree",
+    "previous_published_degree",
+    "numerical_count_degree_e",
+    "numerical_draw_degree_t",
+    "independent_evidence_review",
+    "public_replay"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "const": "affine_refinement_compiled_six_four_named_audits_passed"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "audit_scopes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "prefixItems": [
+        {
+          "type": "object",
+          "properties": {
+            "verified_name_count": {
+              "const": 6
+            }
+          },
+          "required": [
+            "verified_name_count",
+            "driver",
+            "receipt",
+            "records"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "verified_name_count": {
+              "const": 4
+            }
+          },
+          "required": [
+            "verified_name_count",
+            "driver",
+            "receipt",
+            "records"
+          ]
+        }
+      ],
+      "items": false
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "conditional_degree": {
+      "const": "340*max(max(e,6),t)"
+    },
+    "previous_published_degree": {
+      "const": "340*max(1,t)*max(e,6)"
+    },
+    "numerical_count_degree_e": {
+      "type": "null"
+    },
+    "numerical_draw_degree_t": {
+      "type": "null"
+    },
+    "independent_evidence_review": {
+      "type": "object"
+    },
+    "public_replay": {
+      "type": "null"
+    }
+  },
+  "$comment": "Representation only; kernel receipts, source/object/digest and exact ordered report checks are separate. Schema validity is not a compiler/audit result."
+}

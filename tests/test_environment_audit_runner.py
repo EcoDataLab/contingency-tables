@@ -41,6 +41,78 @@ def report():
 
 
 class EnvironmentRunnerTests(unittest.TestCase):
+    def seam_fixture(self):
+        c = config()
+        c['private_source_helpers'] = [{'defining_module': 'FixtureModule',
+                                       'source_name': 'helper', 'kind': 'theorem'}]
+        c['program_identity_requirements'] = [{'headline': 'Fixture.headline',
+                                               'required_reachable_names': ['Fixture.hidden']}]
+        r = report()
+        private = record('_private.FixtureModule.73.Fixture.helper')
+        r['declarations'].append(private)
+        r['theorem_names'].append(private['name'])
+        r['declaration_count'] += 1
+        r['theorem_count'] += 1
+        return c, r
+
+    def test_private_helper_name_is_resolved_from_actual_module_inventory(self):
+        c, r = self.seam_fixture()
+        runner.config_check(c)
+        self.assertEqual(runner.validate_report(r, c)['theorems'], 4)
+        resolved = runner.resolved_private_helpers(r, c)
+        self.assertEqual(resolved[0]['actual_compiled_name'], '_private.FixtureModule.73.Fixture.helper')
+        self.assertEqual(resolved[0]['record_sha256'], runner.canonical_sha(r['declarations'][-1]))
+
+    def test_missing_wrong_origin_public_alias_or_wrong_kind_private_helper_fails(self):
+        c, r = self.seam_fixture()
+        for field, value in [('module', 'Mathlib.TrustedCache'), ('kind', 'definition'),
+                             ('name', 'FixtureModule.helper')]:
+            bad = copy.deepcopy(r)
+            bad['declarations'][-1][field] = value
+            # Keep the overall metadata self-consistent so the private check is material.
+            if field == 'module':
+                bad['imported_modules'].append(value)
+            if field == 'name':
+                bad['theorem_names'][-1] = value
+            if field == 'kind':
+                bad['theorem_names'].pop()
+                bad['theorem_count'] -= 1
+            with self.subTest(field=field), self.assertRaises(ValueError):
+                runner.validate_report(bad, c)
+        del r['declarations'][-1]
+        r['theorem_names'].pop()
+        r['declaration_count'] -= 1
+        r['theorem_count'] -= 1
+        with self.assertRaisesRegex(ValueError, 'source-private'):
+            runner.validate_report(r, c)
+
+    def test_two_actual_private_helpers_with_same_source_suffix_are_ambiguous(self):
+        c, r = self.seam_fixture()
+        other = record('_private.FixtureModule.74.Fixture.helper')
+        r['declarations'].append(other)
+        r['theorem_names'].append(other['name'])
+        r['declaration_count'] += 1
+        r['theorem_count'] += 1
+        with self.assertRaisesRegex(ValueError, 'ambiguous'):
+            runner.validate_report(r, c)
+
+    def test_program_identity_cannot_be_satisfied_by_unrelated_selected_record(self):
+        c, r = self.seam_fixture()
+        c['program_identity_requirements'][0]['required_reachable_names'] = ['Fixture.unlisted']
+        with self.assertRaisesRegex(ValueError, 'program identity'):
+            runner.validate_report(r, c)
+
+    def test_private_and_identity_config_requirements_fail_closed(self):
+        c, _ = self.seam_fixture()
+        mutations = []
+        bad = copy.deepcopy(c); bad['private_source_helpers'] *= 2; mutations.append(bad)
+        bad = copy.deepcopy(c); bad['private_source_helpers'][0]['defining_module'] = 'Missing'; mutations.append(bad)
+        bad = copy.deepcopy(c); bad['program_identity_requirements'][0]['headline'] = 'Missing'; mutations.append(bad)
+        bad = copy.deepcopy(c); bad['program_identity_requirements'][0]['required_reachable_names'] = []; mutations.append(bad)
+        for bad in mutations:
+            with self.assertRaises(ValueError):
+                runner.config_check(bad)
+
     def test_valid_report_includes_unlisted_and_private_dependencies(self):
         self.assertEqual(runner.validate_report(report(), config())['theorems'], 3)
 

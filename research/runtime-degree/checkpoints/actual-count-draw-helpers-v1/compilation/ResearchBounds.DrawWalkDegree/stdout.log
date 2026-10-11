@@ -1,0 +1,6 @@
+<current-run>\source\ResearchBounds\DrawWalkDegree.lean:118:50: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<current-run>\source\ResearchBounds\DrawWalkDegree.lean:210:50: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

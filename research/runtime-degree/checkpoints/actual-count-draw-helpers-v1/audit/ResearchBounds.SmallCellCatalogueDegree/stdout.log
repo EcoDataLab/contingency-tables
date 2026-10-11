@@ -1,0 +1,7 @@
+'Math115.CatalogueDegreeV1.typed_boundedRange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CatalogueDegreeV1.typed_pairAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CatalogueDegreeV1.typed_cellPairCodes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CatalogueDegreeV1.typed_cellPairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CatalogueDegreeV1.typed_smallCellTest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CatalogueDegreeV1.weight_cellPairs_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CatalogueDegreeV1.typed_smallCellCatalog' depends on axioms: [propext, Classical.choice, Quot.sound]

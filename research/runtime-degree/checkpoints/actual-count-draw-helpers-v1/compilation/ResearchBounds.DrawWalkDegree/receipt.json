@@ -1,0 +1,57 @@
+{
+  "attempt_object_sha256": "ec72b80011c422045c3097cd69257d70c616c43893132f1f1cb07e7b420b85ed",
+  "command": [
+    "<lean-compiler>",
+    "--root=<current-run>\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<current-run>\\attempts\\ResearchBounds.DrawWalkDegree\\module.olean",
+    "-i",
+    "<current-run>\\attempts\\ResearchBounds.DrawWalkDegree\\module.ilean",
+    "<current-run>\\source\\ResearchBounds\\DrawWalkDegree.lean"
+  ],
+  "diagnostic_object": "<current-run>\\lib\\lean\\ResearchBounds\\DrawWalkDegree.olean",
+  "elapsed_seconds": 86.64709689992014,
+  "evidence_class": "fresh_native_compilation",
+  "execution_origin": "fresh",
+  "exit_code": 0,
+  "input_objects": {
+    "CountBounds.ListRepeatDegree": {
+      "path": "<current-run>\\lib\\lean\\CountBounds\\ListRepeatDegree.olean",
+      "sha256": "6b5392e761f376263a6460e3263c489cf030b7289b33231720baf7db6bfb1d77"
+    },
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    },
+    "Math115.LatticeUnitWalk": {
+      "path": "<current-run>\\Math115-projection\\Math115\\LatticeUnitWalk.olean",
+      "sha256": "c8965f88f6c8753d737c5949c0cb5f1d9a230ba637b977a761bd07e87957e0b3"
+    },
+    "ResearchBounds.DrawControlDegree": {
+      "path": "<current-run>\\lib\\lean\\ResearchBounds\\DrawControlDegree.olean",
+      "sha256": "56a6c29498ea7b9df719400273331d6e799a03bfc9329f605ddd33600a1a59b9"
+    },
+    "ResearchBounds.WordCountSeedDegrees": {
+      "path": "<current-run>\\lib\\lean\\ResearchBounds\\WordCountSeedDegrees.olean",
+      "sha256": "e5003084654888fa321c21f7d6e899e21735bc8f11ce26c62597182372a44f8a"
+    }
+  },
+  "module": "ResearchBounds.DrawWalkDegree",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "50be28ab68856bf95f595b5f86ec597ac17545209b4512f8a1ded67d4ce86c6f"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "cc2eb288b532180b2828919bbf4aeff8f0eb355bfa41a220616b42727265ee50"
+  },
+  "source_sha256": "4284ab37b05c20239ff069b8354538158b2938fe1d41c1a7119bde93ebb2b2dd",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

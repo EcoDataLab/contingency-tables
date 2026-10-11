@@ -1,0 +1,11 @@
+{
+  "final_result_sha256": "9af379c3d15a8df61d3ec9c9f3cde5e51fbb6c42597fae7a7c250244a50c033c",
+  "guest_archive_sha256": "83105aa67dc6ee829c5416669626bee63e4a57348dc128b6ad65da9af1ab6c44",
+  "owned_qemu_absent": true,
+  "owned_qemu_reaped": true,
+  "owned_supervisor_absent": true,
+  "owned_tree_empty": true,
+  "preserved_five_pins_equal": true,
+  "retry_count": 0,
+  "status": "closed authenticated startup03; no verification processes; ownership available for root transfer"
+}

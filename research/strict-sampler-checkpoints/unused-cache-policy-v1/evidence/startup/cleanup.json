@@ -1,0 +1,14 @@
+{
+  "final_result_sha256": "ff75ede95ea141b2b6972d79df4a53190a71a6f8305b03dbf6d287ba386f2dc5",
+  "guest_archive_sha256": "932696159a3bba8526963a8cfff710be82500a5007d26a2abd3e6fde8a6e6bd2",
+  "host_manifest_sha256": "284b0dd23eca187fe5f96bbf8a7c0a855b855b4e05e8ff03d24d6bd6907303df",
+  "limits_unchanged": true,
+  "owned_qemu_absent": true,
+  "owned_qemu_reaped": true,
+  "owned_supervisor_absent": true,
+  "owned_tree_empty": true,
+  "preserved_five_pins_equal": true,
+  "retry_count": 0,
+  "scope": "Saved owner closure receipt; no fresh live query by publication lane",
+  "status": "closed captured startup attempt; remote ownership releasable"
+}

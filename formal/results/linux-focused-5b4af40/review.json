@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "status": "completed_independent_saved_artifact_readback",
+  "review_kind": "AI saved-artifact review; not human review or independent verification execution",
+  "repository_commit": "5b4af402a281a9bc02a38adb168f7b0bfde5d3aa",
+  "run_id": 38101898049,
+  "job_id": 114359371258,
+  "artifact_id": 11691583222,
+  "artifact_zip_sha256": "a4b058840dc81f6371478fbbc4c3135b0f6453bf1cb4c05417aa99d2f7ef2b5a",
+  "artifact_zip_bytes": 59553741,
+  "original_verification_sha256": "99847791c380fd1e128bde2168b954d96c6af4f196f9bd54e1eb7861634728e5",
+  "collector_sha256": "53c9e9a5af350b007c35478e10dbbfacdc3f8883f2321b2c4a9c69bef98d5541",
+  "checker_and_source_sha256": {
+    "named_axiom_checker": "f8a9de8baf9ce2d3d03877f827c72455bdfa60281da7f6e75f54b26a5786035e",
+    "compiled_environment_runner": "b0c57d1a8caa5ed464ffbff0be5d2786e665fa36df7c2bc5a962604aaed21fc7",
+    "compiled_environment_Lean_helper": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "serial_builder": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c",
+    "workflow": "1f4321361ff97ee80c7a47a46f7316de495b494046c1f9d9ac8bae389c902a21",
+    "integration_contract": "d3db5b45785f79aa0e3417fe2db746d34dedbd0b7e0642d0dcb0ae94ea608e90",
+    "private_readback_source": "057923e73a9656ff47115f4fe526ad4ce79f6f737b544db0c21d7ac256e7ff3f",
+    "private_watchdog_source": "7500441cf409ca3f1b85f9995919863789ee1bc4a342c006181d847a035af736",
+    "private_launcher_source": "cd8c2aa9618995d963d176a2762ef02a5742be3fcc620379662cef3ca9e77d22",
+    "small_provenance_source": "2067d37536769ac2c47132c63e3337249fcb2a6aa8bde82b6e8586484aeddf2c",
+    "immutable_object_read_map_canonical_sha256": "e5b3bd45ab87cc1179aaca81ec0a9cc3aa4819f1199169f95609e7762b58e338"
+  },
+  "completed_artifact_checks": {
+    "raw_provider_run_job_artifact_and_public_projection_ties": true,
+    "immutable_owned_source_inventory": 221,
+    "actual_source_module_graph_and_ordered_serial_stages": 685,
+    "ordered_focused_named_records": 1511,
+    "complete_report": {
+      "declarations": 25448,
+      "theorems": 18054,
+      "headlines": 22,
+      "imported_modules": 11951
+    },
+    "all_headline_dependency_graphs_complete_and_reachable": 22,
+    "private_source_helpers_resolved": 3,
+    "program_identity_requirements_and_closure_hashes": 2,
+    "archive_members_mapped_or_excluded_binary_bound": 23,
+    "public_package_core_unchanged": 26,
+    "gzip_and_original_ZIP_mapped_bytes_exact": true,
+    "before_after_snapshots_and_helper_only_transition": true,
+    "recorded_import_path_name_digest_snapshot_bindings": 11951,
+    "artifact_inventory_files_bound": 70001,
+    "required_input_files_bound": 1389,
+    "published_contract_authorities": 3,
+    "integrated_proof_source_records": 13,
+    "compiler_banner_sysroot_driver_helper_and_phase_streams": true
+  },
+  "standalone_named_replay_performed": false,
+  "standalone_inclusions_only": [
+    "Math115.pair_product_le_quarter_square",
+    "Math115.pair_product_eq_quarter_square_iff",
+    "Math115.GlobalDisplayOwnership.edge_owner_unique",
+    "Math115.GlobalDisplayOwnership.edge_prefix_unique",
+    "Math115.min_mass_repair_bound",
+    "Math115.min_mass_quarter_repair_bound"
+  ],
+  "private_helpers": [
+    {
+      "defining_module": "Math115.LatticeProfileStep",
+      "kind": "theorem",
+      "source_name": "apply_decision",
+      "actual_compiled_name": "_private.Math115.LatticeProfileStep.0.Math115.LatticeProfileStep.apply_decision",
+      "statement": "∀ {X : Type u_1} {Y : Type u_2} (encode : X → Y) (x y : X) (test : Bool) (accept : Prop) [inst : Decidable accept],\n  (test = true ↔ accept) → (if test = true then encode y else encode x) = encode (if accept then y else x)",
+      "axioms": [],
+      "record_sha256": "72b3d967582882bc425cd9043597069f770238bb9499ce3c6cb5106260ec50c7"
+    },
+    {
+      "defining_module": "Math115.LatticeProfileStep",
+      "kind": "theorem",
+      "source_name": "completionDecision_some_formula",
+      "actual_compiled_name": "_private.Math115.LatticeProfileStep.0.Math115.LatticeProfileStep.completionDecision_some_formula",
+      "statement": "∀ {X : Type u_1} {I : Type u_2} {J : Type u_3} [inst : Fintype I] [inst_1 : Fintype J] (R : X → Option I → ℕ)\n  (P : X → Option J → ℕ) (x y : X) (A : OAI.ContingencyTables.Table (R x) (P x)),\n  OAI.ContingencyTables.CompletionTranslation.completionDecision R P x (some y) A =\n    if\n        ∀ (i : Option I) (j : Option J),\n          0 ≤ ↑(↑A i j) + OAI.ContingencyTables.CompletionTranslation.between (R x) (R y) (P x) (P y) i j then\n      y\n    else x",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "record_sha256": "09304ba2c513e291ec8e4551bba3074539ad042aeaa8c522921c9178a058ae62"
+    },
+    {
+      "defining_module": "Math115.LatticeUnitStep",
+      "kind": "theorem",
+      "source_name": "ofFn_take_prefix",
+      "actual_compiled_name": "_private.Math115.LatticeUnitStep.0.Math115.LatticeUnitStep.ofFn_take_prefix",
+      "statement": "∀ {k N : ℕ} (hk : k ≤ N) (bits : Fin N → Bool),\n  List.take k (List.ofFn bits) = List.ofFn (OAI.ContingencyTables.FirstSuccess.prefixWord hk bits)",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "record_sha256": "d5ae751c323a18ace192455a91c1ee7d8bbe98ab2addf0959c2e01cf1b068bec"
+    }
+  ],
+  "program_identity_inclusions": [
+    {
+      "headline": "Math115.LatticeBoundedSampling.boundedSampling",
+      "required_reachable_names": [
+        "Math115.LatticeSampler.draw",
+        "Math115.LatticeSampler.drawRealizer",
+        "Math115.LatticeSampler.polynomial_draw",
+        "Math115.LatticeSampler.draw_code",
+        "Math115.LatticeSampler.draw_spec",
+        "Math115.PublicLatticeSampler.wordCount",
+        "Math115.PublicLatticeSampler.publicDraw",
+        "Math115.PublicLatticeSampler.machine",
+        "Math115.PublicLatticeSampler.public_spec",
+        "Math115.PublicLatticeSampler.tableDraw_code",
+        "Math115.PublicLatticeSampler.machine_outputs",
+        "Math115.PublicLatticeSampler.machine_mass",
+        "Math115.PublicLatticeSampler.machineTime_public_bound",
+        "Math115.LatticeBoundedSampling.boundedSampling"
+      ],
+      "actual_closure_sha256": "7756487167a51888b8405a0f7c1f44d8ac1f1dea44d2aecaabe845f5e8cf1728",
+      "closure_size": 47593
+    },
+    {
+      "headline": "Math115.LatticeSamplerCost.reserved_draw_work_literal",
+      "required_reachable_names": [
+        "Math115.LatticeSampler.draw",
+        "Math115.LatticeSampler.drawRealizer",
+        "Math115.LatticeSampler.polynomial_draw",
+        "Math115.LatticeSamplerCost.reserved_draw_work"
+      ],
+      "actual_closure_sha256": "b4b357f7c4f6c0273644f8d02859e1551afafbd37c35c2e820e4f88a02102d38",
+      "closure_size": 11046
+    }
+  ],
+  "headline_index": {
+    "path": "headline-index.json",
+    "sha256": "4ed763219f2a475b327cb64765ad020e75e3ee22855f8dee950c894de050b0b4",
+    "records": 22,
+    "English_label_scope": "Source-bound copied labels; exact formal statement readback,not independent English interpretation"
+  },
+  "readback_resources": {
+    "purpose": "Resources of local saved-artifact inspection only,not compiler or sampler runtime",
+    "hard_watchdog_seconds": 600,
+    "Git_object_wait_seconds": 20,
+    "wall_seconds": 58.07167929201387,
+    "peak_worker_memory_bytes": 922140672,
+    "full_report_passes": 1,
+    "largest_single_framed_value_characters": 43483848
+  },
+  "owned_cleanup": {
+    "leader_reaped": true,
+    "process_group_absent": true,
+    "metadata_reader_group_absent": true
+  },
+  "scope_limits": [
+    "Six standalone declarations were independently confirmed in the compiled environment,not replayed as a separate six-name named audit.",
+    "The complete selected module/prefix declaration inventory and22headline dependency closures are checked; this is not every declaration in every imported package.",
+    "Hosted imported-object paths/names/digests were bound to eligible recorded search roots and frozen snapshots. The unavailable hosted filesystem was not reenacted locally.",
+    "Pinned official package/toolchain caches were reused. OS/system loader/Python/stdlib/platform services remain trusted; import/compiler audit is not an OS sandbox.",
+    "This is saved-artifact validation. No Lean compiler/build,VM,network,Git mutation or public file edit occurred; no human review,strict Comparator acceptance,new numerical complete sampler degree or sampler runtime measurement is asserted.",
+    "Exact headline statements/modules/kinds/axioms/closure sizes/hashes are saved. English labels were copied from immutable source-bound claim inputs and the frozen complete-sampler card,not independently certified as translations."
+  ],
+  "historical_partial_review_preserved": true,
+  "findings": [],
+  "Lean_compiler_executed_during_review": false,
+  "strict_Comparator_result": false,
+  "new_sampler_runtime_result": false,
+  "public_package_bytes_changed_during_review": false
+}

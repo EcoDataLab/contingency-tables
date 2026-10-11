@@ -1,0 +1,36 @@
+{
+  "status": "root_saved_result_readback_passed",
+  "download_manifest_sha256": "8c73d0b219ec916bc932a8b7e53037b3173ccdae00437250289c34f98fdcc7d8",
+  "rehashed_files": 116,
+  "source_sha256": "4ac577f8b7b1f2fc7c68950ef87bfe39ca236e82a75602395e72da694fb10255",
+  "object_sha256": "49bb4dec634bb75ff4036d4954340b57bd7db8c3cde51d1ae2ed580add66ffbe",
+  "audit_sha256": "59496c047c6e7f05ef2b1db1a0ac8d990300930890cda229a81d6e18995d5f94",
+  "records": [
+    {
+      "name": "Math115.PublicSamplerDegree.publicDegree",
+      "axioms": []
+    },
+    {
+      "name": "Math115.PublicSamplerDegree.machineTime_public_degree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PublicSamplerDegree.fixedMachineBoundedSampling_with_degree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "source_receipt_sha256": "a2e2ed2ebaa56c54bc5f24ae185b76c68cf490e1b90daa6cf0246afe7a4c70a7",
+  "audit_receipt_sha256": "111d6dbb8d0999192edd7acf34f0225c3bc07cdf93832d3d5c5157e5384e12df",
+  "source_and_audit_exit": 0,
+  "source_and_audit_stop_reason": null,
+  "owned_children_absent": true,
+  "scope": "Exact source compilation and three ordered named axiom reports under recorded authenticated reused dependencies. No new compiler run in this readback, no exhaustive environment audit or strict replay, no numerical e/t supplied."
+}

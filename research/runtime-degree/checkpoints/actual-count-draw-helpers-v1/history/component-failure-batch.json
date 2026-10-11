@@ -1,0 +1,60 @@
+{
+  "count_dependency_blocked_without_own_compiler_or_audit": true,
+  "module_outcomes": {
+    "CountBounds.ListRepeatDegree": "passed",
+    "CountBounds.ParserDegree": "passed",
+    "CountBounds.ScalarCircuitDegreeV2": "failed",
+    "CountBounds.TightWordCountDegreeV2": "blocked",
+    "ResearchBounds.CatalogueLeafDegrees": "passed",
+    "ResearchBounds.DrawAssemblyDegree": "passed",
+    "ResearchBounds.DrawControlDegree": "passed",
+    "ResearchBounds.DrawWalkDegree": "passed",
+    "ResearchBounds.SmallCellCatalogueDegree": "passed"
+  },
+  "ordinary_scalar_failure": {
+    "exit_code": 1,
+    "original_receipt_sha256": "33588ea9bf433d9b5b9595c7f0a878e88110a93494c195a0121439d54b130ae7",
+    "original_stdout_sha256": "002fc2e7522b4c3cc128c3e652899b0f50c297faf52f975eb15ec8676be2836b",
+    "source_sha256": "bb31a4daf838c294fc904c428788333b387711b29bc08e82f1f49e25769394ce"
+  },
+  "original_capture_sha256": "65dece90bb1335ba5f71d67329273964c9b157ce67d00043dcf537308146b2a6",
+  "original_final_result_sha256": "afa631fc06656c03be27a2184521c4bec92e9c606b8eca77d71d61ece7ed466c",
+  "original_owner_closure_sha256": "337d0f9d4309652587abb5fc651d9cbf9d869f1d0ccbd438c3ebc11dee8701fe",
+  "supported_component_scope": {
+    "actual_draw_t": null,
+    "complete_numerical_D": null,
+    "count1008_accepted": false,
+    "fresh_reports": 37,
+    "publication_kind": "partial_component_diagnostics_only",
+    "requested_names": 172,
+    "requires_explicit_partial_projection_grant_and_independent_review": true,
+    "reused_reports": 54,
+    "successful_named_reports": 91,
+    "supported_modules": [
+      "CountBounds.ListRepeatDegree",
+      "ResearchBounds.DrawControlDegree",
+      "CountBounds.ParserDegree",
+      "ResearchBounds.CatalogueLeafDegrees",
+      "ResearchBounds.SmallCellCatalogueDegree",
+      "ResearchBounds.DrawWalkDegree",
+      "ResearchBounds.DrawAssemblyDegree"
+    ],
+    "supported_source_count": 7,
+    "unsupported_modules": [
+      {
+        "actual_receipt_policy": "copy only an original captured receipt; blocked/not-run entries are derived terminal status, not fabricated receipts",
+        "audit_status": "blocked",
+        "compile_status": "failed",
+        "module": "CountBounds.ScalarCircuitDegreeV2",
+        "terminal_status": "failed"
+      },
+      {
+        "actual_receipt_policy": "copy only an original captured receipt; blocked/not-run entries are derived terminal status, not fabricated receipts",
+        "audit_status": "blocked",
+        "compile_status": "blocked",
+        "module": "CountBounds.TightWordCountDegreeV2",
+        "terminal_status": "blocked"
+      }
+    ]
+  }
+}

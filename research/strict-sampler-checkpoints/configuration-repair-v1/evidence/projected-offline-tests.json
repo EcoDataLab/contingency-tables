@@ -1,0 +1,10 @@
+{
+  "preparation_note": "An initial fixture-setup metadata-key error was corrected before the74-test run; zero product tests were evaluated in that incomplete setup. Private preparation failure logs retained.",
+  "scope": "Offline filesystem/mocked dispatch tests in projected layout; no compiler/service/VM/network/Git execution.",
+  "source_plan_two_public_path_projection": true,
+  "source_test_sha256": "a45697e13533236d822416ced49397b6674b0bd6321323e530ebfb4d5b945f30",
+  "status": "passed",
+  "stderr_sha256": "0c2c352e807a0a6c91815ca856a46d56e09e2cc3ec46d1cec552d243b15c39e3",
+  "stdout_sha256": "2de22c2dc14de065531f8924a867e6e32c73befce05c9ef1903fb738a6787f41",
+  "tests": 74
+}

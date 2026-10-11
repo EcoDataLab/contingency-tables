@@ -1,0 +1,8 @@
+import ResearchBounds.AffineFiniteWordDegreeBounds
+
+#print axioms Math115.AffineFiniteWordDegree.source_all_weight
+#print axioms Math115.AffineFiniteWordDegree.preserved_pair_all_weight
+#print axioms Math115.AffineFiniteWordDegree.completeOnlineDegree
+#print axioms Math115.AffineFiniteWordDegree.complete_online_degree
+#print axioms Math115.AffineFiniteWordDegree.machineTime_degree
+#print axioms Math115.AffineFiniteWordDegree.completeOnlineDegree_le_original

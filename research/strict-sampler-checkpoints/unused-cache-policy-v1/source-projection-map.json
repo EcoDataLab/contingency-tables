@@ -1,0 +1,96 @@
+{
+  "artifacts": [
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/strict_sampler.py",
+      "original_sha256": "acebbe349c5eb0d24cdba0181cc852f2f95c91ca94c56bfe056864dffb656e11",
+      "public_path": "runner/strict_sampler.py",
+      "published_sha256": "acebbe349c5eb0d24cdba0181cc852f2f95c91ca94c56bfe056864dffb656e11"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/authenticate_runtime.py",
+      "original_sha256": "82731b1ae43ee0d615aea6fe4420f29d224809b31b4dbfdd0bcbff9a519fee94",
+      "public_path": "runner/authenticate_runtime.py",
+      "published_sha256": "82731b1ae43ee0d615aea6fe4420f29d224809b31b4dbfdd0bcbff9a519fee94"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/test_strict_sampler.py",
+      "original_sha256": "a38f361d72c8f101285fe78236deee218e342c05141fc25fe44339e2a2145716",
+      "public_path": "runner/test_strict_sampler.py",
+      "published_sha256": "a38f361d72c8f101285fe78236deee218e342c05141fc25fe44339e2a2145716"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/test_unused_cache.py",
+      "original_sha256": "9b33ebc140328d58d3126afdc0988090dc3206523b5b31db1b85d871f774c809",
+      "public_path": "runner/test_unused_cache.py",
+      "published_sha256": "9b33ebc140328d58d3126afdc0988090dc3206523b5b31db1b85d871f774c809"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/source-freeze.json",
+      "original_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+      "public_path": "runner/source-freeze.json",
+      "published_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/runtime-template.json",
+      "original_sha256": "67491483686bda0489648dbeb8822290cc745d6a61e5d1b5b4e2bbd9b16a610a",
+      "public_path": "runner/runtime-template.json",
+      "published_sha256": "67491483686bda0489648dbeb8822290cc745d6a61e5d1b5b4e2bbd9b16a610a"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/tested-runtime/build_lean_serial.py",
+      "original_sha256": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c",
+      "public_path": "runner/tested-runtime/build_lean_serial.py",
+      "published_sha256": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/tested-runtime/no_rebuild_landrun.py",
+      "original_sha256": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7",
+      "public_path": "runner/tested-runtime/no_rebuild_landrun.py",
+      "published_sha256": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/runner/tested-runtime/strict_serial_check.py",
+      "original_sha256": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e",
+      "public_path": "runner/tested-runtime/strict_serial_check.py",
+      "published_sha256": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/challenge/StrictSampler.json",
+      "original_sha256": "12ac0eb4d2d91c16772667335462c8bfbed5ae3f6ca9742d8f91f4c9bf07993f",
+      "public_path": "challenge/StrictSampler.json",
+      "published_sha256": "12ac0eb4d2d91c16772667335462c8bfbed5ae3f6ca9742d8f91f4c9bf07993f"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/source-plan.json",
+      "original_sha256": "03cee47dac72f1a419bdb2aafbe02f5e5a18a4f27bb7d360e9fcab1013f7cc08",
+      "public_path": "source-plan.json",
+      "published_sha256": "03cee47dac72f1a419bdb2aafbe02f5e5a18a4f27bb7d360e9fcab1013f7cc08"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/unused-cache-policy-candidate.json",
+      "original_sha256": "4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833",
+      "public_path": "unused-cache-policy-candidate.json",
+      "published_sha256": "4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-repair/implementation.patch",
+      "original_sha256": "6805718fb7005a9f45886f34ef16d61d462c8ee8780d6e2aa709104625c25692",
+      "public_path": "implementation.patch",
+      "published_sha256": "6805718fb7005a9f45886f34ef16d61d462c8ee8780d6e2aa709104625c25692"
+    }
+  ],
+  "policy": "Exact reviewed source/test/policy bodies where public-safe. This scaffold contains no terminal evidence and is not a publication acceptance receipt. Later source/data/log projections must separately bind original/published digests and omissions."
+}

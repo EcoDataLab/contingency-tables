@@ -1,0 +1,8 @@
+{
+  "kind": "reused_original_compile_and_audit",
+  "no_fresh_argv_or_elapsed_time": true,
+  "object_sha256": "6b5392e761f376263a6460e3263c489cf030b7289b33231720baf7db6bfb1d77",
+  "original_audit_receipt_sha256": "052f1b1749513d7aa21094895bc571ff9917a62abba11915e0af0eebc07b21b8",
+  "original_compile_receipt_sha256": "0fd43650d0128cf1050a7543e274cd4a00d7d301de5333d748969652cca0a8c2",
+  "source_sha256": "f847e1521c780b1a3c3b89f892542e123406b75fbcb7e0d315191160ca1e0157"
+}

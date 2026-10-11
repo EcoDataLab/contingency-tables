@@ -1,0 +1,117 @@
+{
+  "audit_module": "Checkpoint12Audits.ResearchBounds_CatalogueLeafDegrees",
+  "command": [
+    "<lean-compiler>",
+    "--root=<original-run>\\audit-source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<original-run>\\audits\\ResearchBounds.CatalogueLeafDegrees\\module.olean",
+    "<original-run>\\audit-source\\Checkpoint12Audits\\ResearchBounds_CatalogueLeafDegrees.lean"
+  ],
+  "elapsed_seconds": 80.6599358000094,
+  "error": null,
+  "evidence_class": "original_native_named_axiom_audit",
+  "execution_origin": "original",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    },
+    "ResearchBounds.CatalogueLeafDegrees": {
+      "path": "<original-run>\\lib\\lean\\ResearchBounds\\CatalogueLeafDegrees.olean",
+      "sha256": "6fe3b4f2b9245bdc3897ba8fa56112d3956a67192f9c1f84983abffb114b48d4"
+    }
+  },
+  "module": "ResearchBounds.CatalogueLeafDegrees",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "8429802fb673dd44870d9b55c6ecab04a208ea398ab0b530494a392475352553"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "8429802fb673dd44870d9b55c6ecab04a208ea398ab0b530494a392475352553"
+  },
+  "records": [
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_digitValue"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_divStep"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_divFold"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_divCore"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_division"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_quotient"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_remainder"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.typed_getDFast"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.CatalogueDegreeV1.bounded_range_numeric"
+    }
+  ],
+  "source_sha256": "5510dbceb72d12750b3999e3040c9f9256eefa394823bdeea2ddf8ee6e0f0aa7",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Math115.StrictSamplerStatement",
+  "solution_module": "Math115.StrictSamplerSolution",
+  "theorem_names": [
+    "Math115.StrictSampler.boundedSampling",
+    "Math115.StrictSampler.fixedMachineBoundedSampling"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": false
+}

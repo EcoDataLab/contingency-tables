@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "passed_saved_artifact_projection_review",
+  "reviewer_kind": "independent AI agent within this project; not human review",
+  "packet": "unused-cache-policy-v1/manifest.json",
+  "packet_manifest_sha256": "7f0ad0686fcfcd2536fc3f1437c78c91fefaa5bb82bd6b1a26957111eede5e17",
+  "original_private_review_sha256": "32c82da321707a16320850ed97723c4f35680f0a540e70750f35955f09ddde0a",
+  "original_private_review_manifest_sha256": "ddb502fb1a6107a7703160e23658b0389671e0f1fd2cd8e991a76e1499fe5d1b",
+  "projection": "Public summary of saved-artifact checks; private setup paths and process identities omitted.",
+  "checks": [
+    "All 30 packet members and 24 raw-to-public artifact mappings.",
+    "Thirteen unchanged source, test, policy and support artifacts; six complete stream mappings and exact error-prefix transformation.",
+    "Seven locally rehashed host downloads and nine regular guest archive members; remote-only disk excluded from local rehashing.",
+    "Actual install/probe success and 600-second authentication timeout; policy invocation is delivered but policy verdict, authentication return code, measured elapsed and 82 direct-import coverage remain unobserved.",
+    "No runtime freeze, plan, proof, export, kernel or full strict result.",
+    "Original failure packets, source policies, source freeze and support sources unchanged; public reproduction layout and targeted privacy checks passed."
+  ],
+  "runtime_authentication_passed": false,
+  "policy_live_acceptance": null,
+  "policy_live_rejection": null,
+  "strict_acceptance": false,
+  "live_execution_by_reviewer": false,
+  "blocking_findings": [],
+  "limits": [
+    "Offline 102+7 checks concern source policy and mocked fixtures, not actual runtime admission.",
+    "No exact authentication substep or per-phase cache throughput was captured.",
+    "Retained disk images and a portable full-workload outer supervisor are not supplied; full external reproduction remains open."
+  ],
+  "subsequent_root_public_layout_check": {
+    "checked_at_utc": "2026-10-11T10:49:24.649105+00:00",
+    "packet_members_rehashed": 30,
+    "python_sources_ast_checked": 7,
+    "offline_source_tests": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s research/strict-sampler-checkpoints/unused-cache-policy-v1/runner -p 'test_*.py' -v",
+      "tests_run": 102,
+      "failures": 0,
+      "errors": 0,
+      "elapsed_seconds": 35.3,
+      "stderr_sha256": "58018a74685d682961289e5f29dc793dd4b7a24c2c31e2cab2e1979cc525d8a1"
+    },
+    "scope": "Actual offline tests from the final public layout; no new runtime authentication or strict compiler execution."
+  }
+}

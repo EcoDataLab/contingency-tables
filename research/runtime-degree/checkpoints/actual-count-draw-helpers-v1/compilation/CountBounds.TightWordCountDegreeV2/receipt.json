@@ -1,0 +1,49 @@
+{
+  "attempt_object_sha256": "2f8199c3ce326896ab0cf3d211369c3bc48786f2148e607649520161c84c9ec2",
+  "command": [
+    "<lean-compiler>",
+    "--root=<current-run>\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<current-run>\\attempts\\CountBounds.TightWordCountDegreeV2\\module.olean",
+    "-i",
+    "<current-run>\\attempts\\CountBounds.TightWordCountDegreeV2\\module.ilean",
+    "<current-run>\\source\\CountBounds\\TightWordCountDegreeV2.lean"
+  ],
+  "diagnostic_object": "<current-run>\\lib\\lean\\CountBounds\\TightWordCountDegreeV2.olean",
+  "elapsed_seconds": 109.67294329998549,
+  "evidence_class": "fresh_native_compilation",
+  "execution_origin": "fresh",
+  "exit_code": 0,
+  "input_objects": {
+    "CountBounds.ScalarCircuitDegreeV2": {
+      "path": "<current-run>\\lib\\lean\\CountBounds\\ScalarCircuitDegreeV2.olean",
+      "sha256": "d96fb58d528c48d7d9b8c15a57a408e47b51260c0372e76c22d713c42a4ad909"
+    },
+    "Init": {
+      "path": "<dependency-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22"
+    },
+    "ResearchBounds.SmallCellCatalogueDegree": {
+      "path": "<current-run>\\lib\\lean\\ResearchBounds\\SmallCellCatalogueDegree.olean",
+      "sha256": "f65d1da370a49d0ffaab92c4e7623043d2476992a2ad1a7a3bcbc26ebdca6976"
+    }
+  },
+  "module": "CountBounds.TightWordCountDegreeV2",
+  "original_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "7c14fcf37054367062d58f77cea6a84950a70578cc8c8888e3c4d79a27b3682a"
+  },
+  "owned_tree_empty": true,
+  "platform": "Windows x86_64",
+  "projected_stream_sha256": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "d3d74f8ef3d78eb62b2e58f1f88d80fc05e175d7e0d0aeca81ff0d7fd628d224"
+  },
+  "source_sha256": "c5126ff6d85f624c9263460ec778739b144a5b5592167519bdf22a2bdeb835ef",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null
+}

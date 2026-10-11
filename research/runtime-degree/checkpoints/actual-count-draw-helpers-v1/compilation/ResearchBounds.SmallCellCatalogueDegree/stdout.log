@@ -1,0 +1,6 @@
+<current-run>\source\ResearchBounds\SmallCellCatalogueDegree.lean:124:17: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+<current-run>\source\ResearchBounds\SmallCellCatalogueDegree.lean:124:17: warning: Unused tactic linter: `exact hfirst` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`

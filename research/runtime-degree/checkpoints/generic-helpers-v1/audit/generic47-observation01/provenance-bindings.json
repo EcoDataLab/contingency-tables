@@ -1,0 +1,153 @@
+{
+  "authenticator_sha256": "99a9c5c3152155a61859d3711d57317e23450123e916231a18b7869832eeb819",
+  "environment_receipts": [
+    {
+      "originating_plan_file_sha256": "6aca8c29ab2939dc03b99da8964acf29383f0adc2a853295dd215b46cce2f027",
+      "sha256": "c79ea57c8a8d8ba84254088b87df28d739f1cd1f783e3b6e523562bbcaf20667"
+    },
+    {
+      "originating_plan_file_sha256": "6aca8c29ab2939dc03b99da8964acf29383f0adc2a853295dd215b46cce2f027",
+      "sha256": "6cf5a1f4062bfefef28073efc05d545f4228eab0b74f285db1be3bc599b0af82"
+    }
+  ],
+  "four_helpers": [
+    {
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "object_sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "object_sha256": "bf5e49a96a39c4e9526fb0cf1ad3786d8a6c84d1e90771b0c5906cfce1c316d2",
+      "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "object_sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929",
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "object_sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce",
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    }
+  ],
+  "normal_driver_sha256": "e903dce08c32d84e291c373a7256d0794e98f23f14ec2f4b0c3949a9a68e3134",
+  "official_cache_trust": "Pinned official package/toolchain caches reused, not rebuilt; this is not a fresh normal/Linux rebuild.",
+  "prerequisite_records_authenticated": 685,
+  "prior_helper_root_bindings": {
+    "authentication.json": "e602e07980c81b5e9c1207f1c2e76f1be8cc28274d68a1fe7dc8f6a437806581",
+    "config.json": "d927cb6cdb009ea9d50bed370f02e188629d16a8783fec4cce760109d7607ce3",
+    "controlled-environment.json": "6acedb3e7f83735f0270b657563bf5ea979c70889bdd5b04b64b928e70d1b512",
+    "degree_diagnostic_v2.py": "34595602d5198061c762464ff7af670b69c32d61f5a432ac0bccd007c2778475",
+    "degree_merged_runner.py": "3d7b39b9556663d485ed17d6a24c6cdcb6f84e9fae371fd941d06a6f9271fa97",
+    "input-snapshot.json": "2e7259d6e16584d262f41d70b499e6db2ce143b9f0d20a0a3bfa060e8b9c28e3",
+    "namespace-library-manifest.json": "ca15ddcb72be9436e8bb947ce213eb99e2d505d7cd2228cf0ad40ab17cb10785",
+    "namespace_library.py": "823586c5fdeb54c69838670870b3a6bc996057632530fc8befe2ddad2a0b1a61",
+    "status.json": "6a8f46b6fc23adcff34121e437f8f9c4e0b929c40f8d157180a12eb6db911776"
+  },
+  "projected_helper_objects": [
+    {
+      "authenticated_kind": "private_diagnostic",
+      "bytes": 666760,
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae"
+    },
+    {
+      "authenticated_kind": "private_diagnostic",
+      "bytes": 101904,
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "sha256": "bf5e49a96a39c4e9526fb0cf1ad3786d8a6c84d1e90771b0c5906cfce1c316d2"
+    },
+    {
+      "authenticated_kind": "private_diagnostic",
+      "bytes": 870616,
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929"
+    },
+    {
+      "authenticated_kind": "private_diagnostic",
+      "bytes": 282696,
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce"
+    }
+  ],
+  "r10_bindings": {
+    "environment-f9656cb11a764e73a8bb9b0d272f7b51.json": "6cf5a1f4062bfefef28073efc05d545f4228eab0b74f285db1be3bc599b0af82",
+    "frozen-environment.json": "c92e4e8c6287922233486854a82e1bfd9f1345a38ca26f00463a4c16dcbcdefd",
+    "frozen-plan.json": "b42d27ec16d999ac5c40ea71934c55208315663fe26f176244e2e55a75f0a2b5",
+    "modules.json": "11f718eebd7b2f5f229dc3c8ebdd6dd81729bb12f71ba34a2e6849f17a39f1a6",
+    "status.json": "17692d70c6674a2d75359fbc6e1fd94899238905ce1b7f24971e9fec7755aacf"
+  },
+  "raw_artifacts": [
+    {
+      "artifact_id": "config.json",
+      "bytes": 12299,
+      "published_full_bytes": false,
+      "sha256": "34bf4f4be460567930fc5989ef7a93c5e3cf50915e9adaad4c0cdf35469e492c"
+    },
+    {
+      "artifact_id": "authentication.json",
+      "bytes": 23773,
+      "published_full_bytes": false,
+      "sha256": "2176cd016a3ff4e3c2c0af39bc2e7e8915f7f4026ab252158272c000f3b4a134"
+    },
+    {
+      "artifact_id": "input-snapshot.json",
+      "bytes": 523628,
+      "published_full_bytes": false,
+      "sha256": "db9d37f4c4c9397bd1340a9ed917e5e71c8e1249031ab6975cbad624a9c77350"
+    },
+    {
+      "artifact_id": "Math115-projection-manifest.json",
+      "bytes": 31982,
+      "published_full_bytes": false,
+      "sha256": "545325161f211e016701ac2733fa8096d0902231cf749c330e2ccda12c7d9eea"
+    },
+    {
+      "artifact_id": "ResearchBounds-projection-manifest.json",
+      "bytes": 2255,
+      "published_full_bytes": false,
+      "sha256": "0b0ef90073f97e515f504e925cc4ef26c02d64f02e9d353c610de6310a3fe53f"
+    },
+    {
+      "artifact_id": "successor_runner.py",
+      "bytes": 15952,
+      "published_full_bytes": false,
+      "sha256": "abf7b23a7ae887e1d0012bd97ab020b7afdfd1cfa1326011b815d0dd9491beec"
+    },
+    {
+      "artifact_id": "degree_diagnostic_v2.py",
+      "bytes": 19311,
+      "published_full_bytes": false,
+      "sha256": "34595602d5198061c762464ff7af670b69c32d61f5a432ac0bccd007c2778475"
+    },
+    {
+      "artifact_id": "namespace_library.py",
+      "bytes": 3390,
+      "published_full_bytes": false,
+      "sha256": "823586c5fdeb54c69838670870b3a6bc996057632530fc8befe2ddad2a0b1a61"
+    },
+    {
+      "artifact_id": "status.json",
+      "bytes": 19310,
+      "published_full_bytes": false,
+      "sha256": "ad9db3f9854a68c1e2c696a2cdcc4b5bca0344db05961edf3f9477e6c13e8483"
+    }
+  ],
+  "raw_download_manifest_sha256": "4c6ee938c1f6c4f6ecd6fcd84899001f9809470e078df1aca0b3e6680e43f993",
+  "raw_download_members_verified": 126,
+  "runtime": {
+    "configuration_sha256": {
+      ".upstream/openai-math/lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "formal/lake-manifest.json": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+      "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+      "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    "lake_sha256": "9780a6abfb6d751c7958f2fd7f696154bdda8b46c0de9755c4080ffb8a8788e6",
+    "lean_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b"
+  },
+  "scope": "Compact projection of authenticated native prerequisite reuse and actual generic47 audit bindings. Full closure/object/cache snapshots omitted from this packet; raw artifact digests retain their identities.",
+  "selected_internal_records": 608,
+  "unchanged_inputs_scope": "Executed pinned runner checks its input snapshot before and after the named audit; compact packet retains the raw snapshot digest and explicit four-helper object matches, not full snapshot bytes."
+}

@@ -1,0 +1,41 @@
+{
+  "degree": "340*max(1,t)*max(e,6)",
+  "encoding": "Algorithms.encodeSamplingInput r c h",
+  "machine": "Math115.PublicLatticeSampler.machine",
+  "numerical_e": null,
+  "numerical_t": null,
+  "size": "Algorithms.samplingSize n r h",
+  "statements": [
+    {
+      "exact_source_statement": "theorem machineTime_public_degree {e t : \u2115}\n    (hN : DegreeBounds.Typed PublicLatticeSampler.wordCountRealizer e)\n    (hF : DegreeBounds.Typed PublicLatticeSampler.publicDrawRealizer t) :\n    \u2203 Ctime : \u2115, 0 < Ctime \u2227\n      \u2200 (m n : \u2115) (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115),\n        (\u2211 i, r i = \u2211 j, c j) \u2192 \u2200 h : \u2115, 1 \u2264 h \u2192\n          PublicLatticeSampler.machineTime (Algorithms.encodeSamplingInput r c h) \u2264\n            Ctime * (Algorithms.samplingSize n r h) ^ publicDegree e t",
+      "hypotheses": [
+        "DegreeBounds.Typed PublicLatticeSampler.wordCountRealizer e",
+        "DegreeBounds.Typed PublicLatticeSampler.publicDrawRealizer t"
+      ],
+      "input_conditions": [
+        "Natural dimensions and margins with equal totals",
+        "Numeric h >= 1"
+      ],
+      "kind": "theorem",
+      "name": "Math115.PublicSamplerDegree.machineTime_public_degree",
+      "source": "ResearchBounds/PublicSamplerDegree.lean",
+      "source_sha256": "4ac577f8b7b1f2fc7c68950ef87bfe39ca236e82a75602395e72da694fb10255"
+    },
+    {
+      "exact_source_statement": "theorem fixedMachineBoundedSampling_with_degree {e t : \u2115}\n    (hN : DegreeBounds.Typed PublicLatticeSampler.wordCountRealizer e)\n    (hF : DegreeBounds.Typed PublicLatticeSampler.publicDrawRealizer t) :\n    \u2203 Ctime : \u2115, 0 < Ctime \u2227\n      \u2200 (m n : \u2115) (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115),\n        (\u2211 i, r i) = \u2211 j, c j \u2192 \u2200 h : \u2115, 1 \u2264 h \u2192\n          let input := Algorithms.encodeSamplingInput r c h\n          let time := Ctime * (Algorithms.samplingSize n r h) ^ publicDegree e t\n          (\u2200 bits : Fin time \u2192 Bool, \u2203 X : Table r c,\n            Algorithms.OutputsTable PublicLatticeSampler.machine input bits X.val) \u2227\n          (\u2211 X : Table r c,\n            |Algorithms.tableMass PublicLatticeSampler.machine input time X.val -\n              (Fintype.card (Table r c) : \u211d)\u207b\u00b9|) / 2 \u2264 ((2 : \u211d) ^ h)\u207b\u00b9",
+      "hypotheses": [
+        "DegreeBounds.Typed PublicLatticeSampler.wordCountRealizer e",
+        "DegreeBounds.Typed PublicLatticeSampler.publicDrawRealizer t"
+      ],
+      "input_conditions": [
+        "Natural dimensions and margins with equal totals",
+        "Numeric h >= 1"
+      ],
+      "kind": "theorem",
+      "name": "Math115.PublicSamplerDegree.fixedMachineBoundedSampling_with_degree",
+      "source": "ResearchBounds/PublicSamplerDegree.lean",
+      "source_sha256": "4ac577f8b7b1f2fc7c68950ef87bfe39ca236e82a75602395e72da694fb10255"
+    }
+  ],
+  "status": "exact_source_readback_compiled_three_name_audit_passed"
+}

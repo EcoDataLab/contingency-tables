@@ -1,0 +1,20 @@
+{
+  "auth_elapsed_field_recorded": false,
+  "auth_returncode_recorded": false,
+  "auth_streams_bytes": 0,
+  "authentication_cap_seconds": 600,
+  "cause": "Memory/CPU/IO cause not measured",
+  "exact_auth_substep": "unobserved",
+  "guest_members_rehashed": 9,
+  "install_elapsed_seconds": 9.935375452041626,
+  "live_actions": false,
+  "local_host_members_rehashed": 7,
+  "policy_delivered_and_invoked": "4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833",
+  "policy_live_acceptance_or_rejection": "unobserved",
+  "preflight_elapsed_seconds": 3.650771379470825,
+  "proof_export_kernel_compare_started": false,
+  "retained_five_pins_equal": true,
+  "reviewer": "Independent AI saved-artifact review; no new VM/guest execution or human review",
+  "runtime_freeze_or_plan_present": false,
+  "status": "authenticated closed startup timeout; install/probe pass; no authentication/plan acceptance"
+}
