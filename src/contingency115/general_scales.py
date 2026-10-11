@@ -56,7 +56,9 @@ def _scales(problem, large_row_count, large_column_count, padding, local_dimensi
     a, b = m-large_row_count, n-large_column_count
     degree = defect_degree_bound(m, n, a, b)
     bits = (2*degree-1).bit_length()
-    coefficient = p**3*width**4
+    # Retained-root transport gives CT <= p*V^3; the existing repair
+    # comparison then gives the reviewed full coefficient <= 2*p^3*V^3.
+    coefficient = 2*p**3*width**3
     lower_fiber = max(a*(n*a-1), b*(m*b-1))
     margin_bound = max(max(rows)+large_column_count*padding,
                        max(columns)+large_row_count*padding)
@@ -80,6 +82,31 @@ def two_by_two_core_scales(problem: TableProblem) -> CompletionBlockScales:
     shape-degree arguments. No walk, random draw or state enumeration occurs.
     """
     return _scales(problem, 2, 2, 3, None)
+
+
+def reduced_completion_scales(problem: TableProblem, *, large_row_count: int,
+                              large_column_count: int) -> CompletionBlockScales:
+    """Choose the smaller sufficient completion padding from two proofs.
+
+    For a nonempty R-by-C block, set
+    L=min(7,max(1,ceil(3*(R-1)*(C-1)/min(R,C)))). Every residual row is at
+    least C*L and every residual column at least R*L. The compiled directed
+    acceptance theorem therefore supplies the same half-acceptance premise
+    at the block-dependent padding. The compiled weighted-switch/convolution
+    and physical reference-move proofs supply half acceptance at L=7 for
+    any nonempty block size. The global retained-root gap assembly remains open.
+    The cutoff and actual classification checks are shared with the older helpers.
+
+    These are ideal-oracle inverse-gap allowances. The existing generic
+    completion program requires stronger floors; this helper does not certify
+    its use. A SmallCompletionOracle supports blocks up to 2-by-2 directly.
+    """
+    _integer(large_row_count, "large_row_count", positive=True)
+    _integer(large_column_count, "large_column_count", positive=True)
+    smaller = min(large_row_count, large_column_count)
+    donors = (large_row_count-1)*(large_column_count-1)
+    padding = min(7, max(1, (3*donors+smaller-1)//smaller))
+    return _scales(problem, large_row_count, large_column_count, padding, None)
 
 
 def local_completion_scales(problem: TableProblem, *, large_row_count: int,

@@ -1,8 +1,10 @@
 # Shape-aware defect proposals and completion scales
 
+This checkpoint is superseded in the general width power by [retained-root transport](retained-root-transport.md) and in completion padding by [constant padding](constant-padding.md). The proposal degree geometry remains in use. Its [scalar and block-floor components](../research/shape-refinement/) now have a separate fresh Lean receipt.
+
 11 October 2026. Mathematical derivations reviewed by a separate AI agent,
-with exact finite checks and a bounded reference implementation. The new
-physical graph and scale assembly have not been compiled in Lean. These are
+with exact finite checks and a bounded reference implementation. The full
+physical graph and scale assembly has not been compiled in Lean. These are
 inverse-gap bounds; complete machine runtime and practical mixing remain open.
 
 The general rational trace allowance improves from `20000d^16` to

@@ -1,6 +1,41 @@
 # Composed complexity: what is explicit and what remains symbolic
 
-Original source review: October 9, 2026, Pacific time. Verification update: October 10, 2026, Pacific time.
+## Comparable result, in the same public size measure
+
+`Math115.LatticeBoundedSampling.boundedSampling` has exactly the type
+`Algorithms.BoundedSamplingStatement`, already proved by pinned upstream
+`OAI.ContingencyTables.boundedSampling`. It is an alternative proof using a
+different fixed machine and the d¹⁷ route. The existential theorem statement
+is unchanged; it does not compare the chosen constants or degrees.
+
+A concrete improvement survives the complete **reserved random-bit bank**
+composition. Write `S=m+n+clog₂(M+1)+h+1`, including numeric precision `h≥1`,
+and `C₀=12672000000·37^62`:
+
+| Complete route | All reserved fair bits | Numerical machine-time degree |
+|---|---|---|
+| Pinned upstream | `W ≤ 344^644 S^1288` | `1288·natDegree(P_U)`, still symbolic |
+| This repo's compiled d¹⁷ route | `W ≤ C₀·5^85 S^170` | `170·natDegree(P_L)`, still symbolic |
+| Dense-compatible d²⁵ chain | No separate assembled bit-bank theorem | Unknown |
+| New reviewed d¹⁰ defect chain | Completion/outer-program composition still open | Unknown |
+
+The two bank bounds use the same `S` and include every reserved transition,
+completion retry, terminal draw and unused bit. They are upper allowances,
+not optimal exponents or a pointwise runtime comparison. The compiler
+polynomials `P_U` and `P_L` belong to different complete programs. The detailed
+[schedules and source map](#three-routes-with-the-cost-models-kept-separate)
+below make this comparison reproducible without inferring it from gap powers.
+
+Seven actual draw certificates remain open. The checked count certificate is
+`e=1008`; the conditional local runtime degree is `340·max(1008,t)` until the
+complete draw certificate `t` is supplied. Even a common certificate `k=1008`
+for every remaining field would give an enormous degree through the current
+coarse composition helpers; it would first establish a numerical bound,
+not practical speed or superiority to the unknown upstream degree.
+
+## Compiled baseline and evidence
+
+Original source review: October 9, 2026, Pacific time. Verification update: October 11, 2026, Pacific time.
 
 The complete bounded-sampling research overlay now passes **ordinary Lean compilation**. The [compiler checkpoint](outer-sampler-compiler-checkpoint.md) and the [current verification record](../reports/composed-complexity.json) bind the round-10 result: all 13 research modules completed within a 685-module closure, with 684 authenticated object reuses and one fresh successful compilation. The recorded evidence review passed at `2026-10-11T00:09:15.207698+00:00` UTC. The **actual full compiled-environment audit passed**, with 25,448 selected declarations, including 18,054 theorem constants, and 22 exact transitive headline closures across 11,951 imported modules. These counts include pinned upstream and generated/private declarations; they are not counts of new results. Independent AI-agent artifact and semantic reviews also passed. The semantic readback confirms that the final theorem uses the same computed machine, schedule, both branches, and fallback/rejection mass, and reaches the refined \(d^{17}\) chain bound through `PhysicalFiniteWalk.idealOuterLaw_variation`. This is ordinary compilation and environment inspection with the recorded compiler/cache trust boundary. These checkpoint receipts supply no strict sampler acceptance or fresh Linux verification of the expanded default target. The byte-identical proved sources are now [promoted into the default root](default-target-integration.md). A separate [fresh hosted Linux receipt at `5b4af40`](../formal/results/linux-focused-5b4af40/README.md) verifies that expanded target; it does not supply a numerical complete runtime degree or strict sampler acceptance.
 

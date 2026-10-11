@@ -11,6 +11,17 @@ bindings for the six Lean headlines in that earlier default target. It also pres
 claims and hypotheses from the hash-qualified ledger snapshot. Historical named
 receipts retain their narrower scope.
 
+## retained-defect-gap
+
+The [retained-root transport](retained-root-transport.md) and
+[constant-padding proof](constant-padding.md) give the reviewed rational
+inverse-gap allowance `42592d^10` (`85184d^10` dyadic) at `U=11d²,L=7`.
+This applies to the ordinary-table defect branch, including arbitrary
+rectangular aspect ratios, with exact uniform completion transitions.
+Compiled local transport, counting, actual physical acceptance and scalar components have their own receipts;
+the complete physical gap theorem and a generic completion backend at L=7
+remain open. The full machine's existential theorem is unchanged.
+
 ## Historical completed stage scope
 
 The [historical integrated receipt](../formal/results/completion-aggregate-1236/verification.json)
@@ -98,6 +109,8 @@ contracts; they do not supply the full outer sampler's machine-cost exponent.
 ## complete-bounded-sampler
 
 `Math115.LatticeBoundedSampling.boundedSampling` proves the original `Algorithms.BoundedSamplingStatement`: one fixed fair-bit machine and global natural constants `C>0,D` work for every finite `m,n`, natural margins `r:Fin m→ℕ,c:Fin n→ℕ` with equal totals, and numeric precision `h≥1`. Zero margins and empty dimensions are included. With `M=∑ᵢrᵢ`, `S=m+n+clog₂(M+1)+h+1`, and `t=C*S^D`, every `t`-bit tape halts with a feasible ordinary table. Under uniform independent fair bits, the output law at that same time is within total variation `2^-h` of uniform ordinary fixed-margin tables.
+
+Pinned upstream `OAI.ContingencyTables.boundedSampling` already proves exactly this same type. This is an alternative proof through a different fixed machine and the d¹⁷ route, not a stronger existential bounded-sampling statement. The [reserved-bit comparison](composed-complexity.md#comparable-result-in-the-same-public-size-measure) gives a concrete common quantity whose upper allowance improves.
 
 The final statement is existential; its proof chooses the fixed [public machine](../formal/Math115/PublicLatticeSampler.lean). `public_spec` identifies its encoded table draw, `machine_outputs` establishes every-tape halting and feasibility, `machine_mass` identifies its output probabilities, and `machineTime_public_bound` supplies the uniform time bound. The [complete checkpoint](outer-sampler-compiler-checkpoint.md) retains the exact statement map and evidence. The numerical complete runtime degree and measured performance remain unknown; neither `d¹⁷` nor the reserved-bit/input bound `S¹⁷⁰` is that degree. Strict Comparator acceptance of this sampler, an exact-sampling extension, and counting are separate from this bounded near-uniform result.
 

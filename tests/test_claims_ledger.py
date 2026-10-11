@@ -18,6 +18,8 @@ spec.loader.exec_module(ledger)
 class ClaimsLedgerTests(unittest.TestCase):
     def setUp(self):
         self.document = json.loads((CANDIDATE / 'claims.json').read_text(encoding='utf-8'))
+        self.ideal_claim_index = next(i for i, claim in enumerate(self.document['claims'])
+                                     if claim['id'] == 'ideal-inverse-gap')
 
     def test_delivered_scopes_replay_and_linux_overlap_is_not_added(self):
         result = ledger.validate_ledger(ROOT, self.document)
@@ -48,13 +50,13 @@ class ClaimsLedgerTests(unittest.TestCase):
 
     def test_an_omitted_headline_is_not_verified_by_a_large_count(self):
         changed = copy.deepcopy(self.document)
-        changed['claims'][0]['headlines'][0]['name'] = 'Math115.IdealRepairRefinement.UnrequestedTheorem'
+        changed['claims'][self.ideal_claim_index]['headlines'][0]['name'] = 'Math115.IdealRepairRefinement.UnrequestedTheorem'
         with self.assertRaisesRegex(ValueError, 'lacks named'):
             ledger.validate_ledger(ROOT, changed)
 
     def test_claim_scope_is_bound_and_overlap_claim_fails(self):
         changed = copy.deepcopy(self.document)
-        changed['claims'][0]['evidence'][0]['scope'] = 'all project theorems'
+        changed['claims'][self.ideal_claim_index]['evidence'][0]['scope'] = 'all project theorems'
         with self.assertRaisesRegex(ValueError, 'scope differs'):
             ledger.validate_ledger(ROOT, changed)
         changed = copy.deepcopy(self.document)
@@ -64,16 +66,16 @@ class ClaimsLedgerTests(unittest.TestCase):
 
     def test_headline_cannot_be_bound_to_an_unrelated_verified_source(self):
         changed = copy.deepcopy(self.document)
-        changed['claims'][0]['sources'] = ['formal/Math115/RepairCoefficient.lean']
-        changed['claims'][0]['headlines'][0]['source'] = 'formal/Math115/RepairCoefficient.lean'
+        changed['claims'][self.ideal_claim_index]['sources'] = ['formal/Math115/RepairCoefficient.lean']
+        changed['claims'][self.ideal_claim_index]['headlines'][0]['source'] = 'formal/Math115/RepairCoefficient.lean'
         with self.assertRaisesRegex(ValueError, 'attribution differs'):
             ledger.validate_ledger(ROOT, changed)
-        changed['claims'][0]['headlines'][0]['module'] = 'Math115.RepairCoefficient'
+        changed['claims'][self.ideal_claim_index]['headlines'][0]['module'] = 'Math115.RepairCoefficient'
         with self.assertRaisesRegex(ValueError, 'attribution differs'):
             ledger.validate_ledger(ROOT, changed)
-        changed['claims'][0]['headlines'][0]['module'] = 'Math115'
-        changed['claims'][0]['headlines'][0]['source'] = 'formal/Math115.lean'
-        changed['claims'][0]['sources'] = ['formal/Math115.lean']
+        changed['claims'][self.ideal_claim_index]['headlines'][0]['module'] = 'Math115'
+        changed['claims'][self.ideal_claim_index]['headlines'][0]['source'] = 'formal/Math115.lean'
+        changed['claims'][self.ideal_claim_index]['sources'] = ['formal/Math115.lean']
         with self.assertRaisesRegex(ValueError, 'attribution differs'):
             ledger.validate_ledger(ROOT, changed)
 

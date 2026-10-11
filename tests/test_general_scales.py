@@ -1,7 +1,8 @@
 import unittest
 from fractions import Fraction
 
-from contingency115.general_scales import local_completion_scales, two_by_two_core_scales
+from contingency115.general_scales import (local_completion_scales, reduced_completion_scales,
+                                         two_by_two_core_scales)
 from contingency115.tables import ExactTableSampler, TableProblem
 
 
@@ -18,6 +19,24 @@ def prescribed_block(m, n, r, c, padding):
 
 
 class GeneralScaleTests(unittest.TestCase):
+    def test_residual_floors_reduce_padding_with_real_count_check(self):
+        problem = TableProblem((1, 46, 46), (1, 46, 46))
+        scales = reduced_completion_scales(problem, large_row_count=2, large_column_count=2)
+        self.assertEqual((scales.U, scales.L, scales.small_cells), (46, 2, 5))
+        self.assertIsNone(scales.local_completion_dimension)
+        original = ExactTableSampler(problem).count()
+        padded = ExactTableSampler(TableProblem((1, 50, 50), (1, 50, 50))).count()
+        self.assertEqual((original, padded), (231, 251))
+        self.assertLessEqual(padded, 2*original)
+        for m, n, r, c, padding in ((5, 7, 2, 3, 3), (7, 5, 3, 2, 3),
+                                    (8, 9, 5, 6, 7), (3, 7, 1, 4, 1), (100, 3, 100, 2, 7)):
+            with self.subTest(shape=(m, n), block=(r, c)):
+                scales = reduced_completion_scales(prescribed_block(m, n, r, c, padding),
+                                               large_row_count=r, large_column_count=c)
+                self.assertEqual(scales.L, padding)
+                self.assertTrue(3*(r-1)*(c-1) <= min(r, c)*scales.L or scales.L >= 7)
+                self.assertLessEqual(47*r*c*scales.L*(m-1)*(n-1), 32*(scales.U+1))
+
     def test_tight_core_padding_and_real_completion_scope(self):
         problem = TableProblem((1, 70, 70), (1, 70, 70))
         scales = two_by_two_core_scales(problem)

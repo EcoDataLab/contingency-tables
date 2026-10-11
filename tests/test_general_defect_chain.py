@@ -244,6 +244,23 @@ class GeneralDefectChainTests(unittest.TestCase):
         self.assertEqual((request.row_sums,request.column_sums),((1,),(1,)))
         with self.assertRaises(TypeError): CompletionRequest((True,),(1,),2)
 
+    def test_constant_padding_gate_for_large_completion_rectangle(self):
+        class UnavailableOracle:
+            contract = CompletionOracleContract(F(1), 0, 0)
+
+            def draw(self, request, context):
+                return None
+
+        problem = TableProblem((2, 2, 2, 2, 2, 1), (2, 2, 2, 2, 2, 1))
+        # The older residual-floor test would require L >= ceil(48/5)=10.
+        with self.assertRaises(ValueError):
+            GeneralDefectChain(problem, U=2, L=6, oracle=UnavailableOracle(),
+                               geometry_bits=0, star_trials=0)
+        chain = GeneralDefectChain(problem, U=2, L=7, oracle=UnavailableOracle(),
+                                   geometry_bits=0, star_trials=0)
+        self.assertEqual((len(chain.large_rows), len(chain.large_columns)), (5, 5))
+        self.assertEqual(chain.oracle_contract.tv_error, 1)
+
     def test_compact_global_shape_bound_and_sparse_storage(self):
         self.assertEqual(defect_degree_bound(3,3,1,1),11)
         self.assertEqual(defect_degree_bound(100,100,98,98),981)

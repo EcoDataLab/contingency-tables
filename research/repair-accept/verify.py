@@ -39,6 +39,66 @@ SCOPES = {
          "Marked.Survivor.survivor_mixing_of_centered_l2",
          "Marked.Survivor.burn_once_l2_bound", "Marked.Survivor.spaced_terminal_bound"],
         []),
+    "killed-survivor": (
+        ["Marked.Survivor", "Marked.L2", "Marked.Killed"],
+        ["Marked.Survivor.quadratic_comparison",
+         "Marked.Survivor.killed_quadratic_bound", "Marked.Survivor.killed_energy_bound",
+         "Marked.Survivor.killed_survivor_mass",
+         "Marked.Survivor.terminal_exhaustion_bound",
+         "Marked.Survivor.terminal_exhaustion_bound_positive_marks"],
+        []),
+    "shape-refinement": (
+        ["Math115.EffectiveWidthBound", "Math115.ShapeDegreeBound", "Math115.ShapeScalarScales",
+         "Math115.ReferenceEdgeAcceptance", "Research.AcceptancePadding"],
+        ["Math115.ShapeDegreeBound.available_bound_le", "Math115.ShapeDegreeBound.degreeEnvelope_le",
+         "Math115.ShapeScalarScales.proposal_rational_coefficient_le",
+         "Math115.ShapeScalarScales.proposal_dyadic_coefficient_le",
+         "Math115.ShapeScalarScales.guarded_padded_count_le_twice",
+         "Math115.ShapeScalarScales.localDimension_conditions",
+         "Research.AcceptancePadding.reference_edge_acceptance_block_floor",
+         "Research.AcceptancePadding.reference_edge_acceptance_floorPadding",
+         "Research.AcceptancePadding.floorPadding_budget",
+         "Research.AcceptancePadding.cutoff_budget",
+         "Research.AcceptancePadding.bounded_aspect_gap",
+         "Research.AcceptancePadding.outerCutoff_budget"],
+        []),
+    "retained-root": (
+        ["Math115.ShapeDegreeBound", "Math115.RetainedRoot", "Research.RetainedRootTransport",
+         "Research.RetainedRootPhysical", "Research.RetainedRootShifts", "Research.RetainedRootNonnegative"],
+        ["Math115.RetainedRoot.interior_cap", "Math115.RetainedRoot.endpoint_cap",
+         "Math115.RetainedRoot.fullCoefficient_bound", "Math115.RetainedRoot.rational_uniform_d13",
+         "Math115.RetainedRoot.dyadic_uniform_d13",
+         "Math115.RetainedRoot.rational_uniform_d10", "Math115.RetainedRoot.dyadic_uniform_d10",
+         "Math115.RetainedRootPhysical.adjacent_physical_leaf_transport_retained",
+         "Math115.RetainedRootPhysical.adjacent_physical_box_leaf_transport_retained",
+         "Math115.RetainedRootPhysical.retainedRootCoefficient_shift",
+         "OAI.ContingencyTables.IntegerWeightedTransport.retainedRootCoefficient_nonnegative_limit"],
+        []),
+    "constant-padding": (
+        ["Math115.ReferenceEdgeAcceptance", "Research.AcceptancePadding",
+         "Research.WeightedIncidence", "Research.SurvivalConvolution", "Research.CompositionSurvival",
+         "Research.ReciprocalZero", "Research.ReciprocalZeroPhysical"],
+        ["Research.WeightedIncidence.product_weighted_incidence",
+         "Research.WeightedIncidence.weighted_level_recurrence",
+         "Research.SurvivalConvolution.finite_nbu_convolution",
+         "Research.SurvivalConvolution.finite_nbu_reciprocal",
+         "Research.CompositionSurvival.tail_nbu", "Research.CompositionSurvival.tail_sum",
+         "Research.CompositionSurvival.composition_reciprocal_bound",
+         "Research.ReciprocalZero.zero_count_times_convolution",
+         "Research.ReciprocalZero.zero_entry_probability_reciprocal",
+         "Research.ReciprocalZeroPhysical.accepted_half_seven",
+         "Research.ConstantPaddingAcceptance.reference_edge_acceptance_seven"],
+        []),
+}
+
+# Reuse source files shared with earlier packets instead of copying them.
+SOURCE_ROOTS = {
+    "Math115.EffectiveWidthBound": ROOT / "research/effective-width/formal",
+    "Math115.ReferenceEdgeAcceptance": ROOT / "formal",
+    "Research.AcceptancePadding": ROOT / "research/shape-refinement/formal",
+    "Math115.ShapeDegreeBound": ROOT / "research/shape-refinement/formal",
+    **{f"Marked.{name}": ROOT / "research/spaced-attempts/formal"
+       for name in ("Survivor", "L2", "Killed")},
 }
 
 
@@ -111,7 +171,8 @@ def main():
     for module in upstream_modules:
         compile_one(module, upstream / (module.replace(".", "/") + ".lean"), upstream)
     for module in modules:
-        compile_one(module, packet / "formal" / (module.replace(".", "/") + ".lean"), packet / "formal")
+        source_root = SOURCE_ROOTS.get(module, packet / "formal")
+        compile_one(module, source_root / (module.replace(".", "/") + ".lean"), source_root)
     compile_one("ResearchAudit.EnvironmentAudit", ROOT / "formal/ResearchAudit/EnvironmentAudit.lean",
                 ROOT / "formal")
     driver = output / "ResearchScopeAudit.lean"

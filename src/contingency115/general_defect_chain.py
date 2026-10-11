@@ -256,8 +256,12 @@ class GeneralDefectChain:
             raise ValueError("defect transition requires at least two small cells")
         self.unit_branch = not self.large_rows or not self.large_columns
         e = 0 if self.unit_branch else (len(self.large_rows)-1)*(len(self.large_columns)-1)
-        if L < 3*e:
-            raise ValueError("requires L >= 3e for the directed half-acceptance premise")
+        # Every large row receives C padding cells, and every large column R.
+        # The physical source-translation theorem uses these residual floors.
+        # The weighted-switch zero-cell bound separately suffices at L >= 7.
+        residual_floor = min(len(self.large_rows), len(self.large_columns))*L
+        if residual_floor < 3*e and L < 7:
+            raise ValueError("requires min(R,C)*L >= 3e or L >= 7 for directed half acceptance")
         d = 10+(m+1)*(n+1)
         self.large_capacity = sum(rows)+d*L+U+2
         self.oracle = oracle

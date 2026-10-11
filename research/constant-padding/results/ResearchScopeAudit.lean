@@ -1,0 +1,9 @@
+import Math115.ReferenceEdgeAcceptance
+import Research.AcceptancePadding
+import Research.WeightedIncidence
+import Research.SurvivalConvolution
+import Research.CompositionSurvival
+import Research.ReciprocalZero
+import Research.ReciprocalZeroPhysical
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [Math115.ReferenceEdgeAcceptance, Research.AcceptancePadding, Research.WeightedIncidence, Research.SurvivalConvolution, Research.CompositionSurvival, Research.ReciprocalZero, Research.ReciprocalZeroPhysical] headlines [Research.WeightedIncidence.product_weighted_incidence, Research.WeightedIncidence.weighted_level_recurrence, Research.SurvivalConvolution.finite_nbu_convolution, Research.SurvivalConvolution.finite_nbu_reciprocal, Research.CompositionSurvival.tail_nbu, Research.CompositionSurvival.tail_sum, Research.CompositionSurvival.composition_reciprocal_bound, Research.ReciprocalZero.zero_count_times_convolution, Research.ReciprocalZero.zero_entry_probability_reciprocal, Research.ReciprocalZeroPhysical.accepted_half_seven, Research.ConstantPaddingAcceptance.reference_edge_acceptance_seven]

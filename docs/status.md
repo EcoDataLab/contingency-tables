@@ -1,8 +1,48 @@
 # Research status
 
-The newest [shape-aware defect result](shape-aware-defect.md) halves the general rational/dyadic inverse-gap allowances to `10000d^16` / `20000d^16`, using `Q<=4p-3` actual proposal slots and the effective-width variance bound. For the self-consistent class with a fixed-size nonempty completion block, smaller guarded scales give `O(d^8)` inverse gap for arbitrary aspect ratio, or `O(d^(15/2))` for bounded aspect ratio. These are reviewed mathematical derivations with exact checks, not complete runtime exponents or newly compiled physical statements. Bounded weighted transitions, joint terminal correction, a small-block completion provider, and checked scale helpers are now implemented; a full general outer schedule and encoded adapter remain open.
+The newest [retained-root transport argument](retained-root-transport.md), combined
+with [constant completion padding](constant-padding.md), gives a reviewed general
+rational inverse-gap allowance **`42592d¹⁰`**, or **`85184d¹⁰`** for dyadic
+proposals, with no aspect-ratio restriction. Here `d=10+(m+1)(n+1)`,
+`U=11d²,L=7`; a nonempty positive defect branch and ideal completions are
+required. The complete new physical gap theorem is not yet compiled.
 
-The [resolvent refinement](resolvent-rejection.md) removes the mark-count logarithm from spacing, giving `O(d^(35/2) log d+d^17 Λ²)` walk/terminal integer operations in the both-small branch. The opt-in implementation preserves the older hybrid mode and pairs its first-acceptance bias with the correct killed-chain failure bound. The earlier finite hybrid dependent-attempt lemma now has a [fresh scoped Lean compilation and environment audit](../research/spaced-attempts/), including all seven headline dependency closures. The stronger resolvent proof remains reviewed mathematics. The [current validation record](../reports/general-defect-validation.json) binds the new Python and exact-check evidence; older records below retain their historical scopes.
+The actual ordinary-table zero-cell bound and every directed reference move's
+half acceptance at `L≥7` now compile, including singleton blocks. The retained
+local physical transport, hard-limit passage, correction shifts and scalar
+coefficient/d¹⁰ corollaries compile separately. The [killed-chain exhaustion
+bound](../research/spaced-attempts/#finite-killed-chain-exhaustion) also compiles;
+the infinite first-acceptance bias remains reviewed mathematics. Each additive
+packet has a fresh source-bound environment audit with full headline dependency
+closures. They overlap earlier imports and do not enlarge the historical
+default-target receipt. See the [current validation record](../reports/retained-root-validation.json)
+and [AI source review](retained-root-review.md).
+
+The reduced-padding Python helper chooses the smaller sufficient block-floor
+or constant-seven padding and checks classification at its computed cutoff.
+Exact checks include an executable 3×3 mixed case at `U=46,L=2`, 40 physical
+transport contexts, 3,000 abstract paths, and the weighted-switch probability
+and acceptance identities. A general completion backend at `L=7`, the global
+Lean variance assembly, complete general outer schedule and encoded integration
+remain open. The compiled generic completion program's larger floors cannot
+be silently removed.
+
+The complete compiled d¹⁷ sampler **re-proves the same existential theorem as
+upstream** through a different machine. The [concrete composed comparison](composed-complexity.md#comparable-result-in-the-same-public-size-measure)
+is `S^1288` versus `S^170` for full reserved-bit upper allowances, with the stated
+constants; neither exponent is machine time. Seven numerical draw certificates
+remain open. The optional [SciPy worker wrapper](worker-baseline.md#optional-scipy-backend)
+and [post hoc commuting interval score](commuting-backtest.md) address practical
+use and model assessment separately. The 100 commuting cases overlap; a
+prospective distance-weighted backtest is specified but has not been run.
+
+As observed at 18:20 UTC on 11 October, one bounded strict-sampler VM retry
+has passed installation and actual sandbox preflight and is still authenticating.
+It uses 8 GiB, a serial-build configuration, a 5,400-second authentication cap
+and a 3,600-second plan cap. No runtime freeze, full proof run or Comparator
+acceptance has been produced. The prior failed receipts remain unchanged.
+
+## Earlier checkpoints and compiled baseline
 
 Integrated compiled baseline: [default-target integration completed](default-target-integration.md). The thirteen promoted sampler sources match the complete checkpoint byte for byte. The [fresh hosted Linux run](../formal/results/linux-focused-5b4af40/README.md) passed ordinary compilation, all 1,511 focused named audits and the selected compiled-environment audit, including all 22 headline dependency closures. Earlier receipts retain their original scopes. The [quantitative helpers](../research/runtime-degree/checkpoints/generic-helpers-v1/) are compiled and audited separately; the complete numerical runtime degree remains unknown.
 

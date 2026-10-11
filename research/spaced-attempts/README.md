@@ -43,9 +43,34 @@ The recursive definition includes a transition after the last failure;
 `output_one` proves it cancels because the remaining output is constant fallback.
 Only the `R-1` intervening blocks contribute to the bound.
 
-The [stronger resolvent refinement](../../docs/resolvent-rejection.md) has a
-different bias and killed-chain failure bound. It is reviewed mathematics
-and tested code, **not** the theorem compiled in this packet.
+## Finite killed-chain exhaustion
+
+The added `Marked/Killed.lean` proves the actual finite survivor bound
+
+`mass after R failures <=(1-s)[1-(1-rho)s]^(R-1)`, for `R>0`.
+
+| English claim | Lean statement | Hypotheses |
+|---|---|---|
+| The spacing block's quadratic form is controlled by its centered contraction. | `Marked.Survivor.quadratic_comparison` | Finite probability pi, Markov K and centered L2 contraction. |
+| Killing contracts energy with factor `rho+(1-rho)mean(f)`. | `Marked.Survivor.killed_energy_bound` | Reversibility, positive semidefiniteness, `0<=rho<=1`, failure function `0<=f<=1`. |
+| Iterating the actual killed operator bounds surviving mass. | `Marked.Survivor.killed_survivor_mass` | The same finite-kernel assumptions; includes zero stationary coordinates. |
+| A real terminal kernel has the sharp R-mark exhaustion bound. | `Marked.Survivor.terminal_exhaustion_bound_positive_marks` | Probability pi and nu, terminal subkernel A with `pi A=s nu`, the reversible PSD contraction assumptions, `R>0`. |
+
+The [new receipt](killed-results/verification.json) records fresh compilation
+of all three defining modules and six headline dependency closures. Its
+[environment audit](killed-results/audit.stdout.json.gz) contains exact types
+and standard axioms; it overlaps the earlier two-module packet. The earlier
+receipt is unchanged. Reproduce with:
+
+```sh
+python3 research/repair-accept/verify.py --scope killed-survivor \
+  --output .local/killed-survivor-fresh
+```
+
+This closes the failure-probability part of the [stronger resolvent refinement](../../docs/resolvent-rejection.md).
+Its infinite first-acceptance bias, finite-output composition with that bias,
+and physical instantiation are still reviewed mathematics, not a compiled
+full resolvent theorem.
 
 ## Reproduce and extend
 
