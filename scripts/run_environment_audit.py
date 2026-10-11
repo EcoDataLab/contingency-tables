@@ -100,6 +100,33 @@ def config_check(config: dict) -> None:
         raise ValueError('timeout must be explicitly bounded to 1..7200 seconds')
     if config.get('threads') != 2:
         raise ValueError('reviewed runner uses exactly two Lean threads')
+    private = config.get('private_source_helpers', [])
+    if not isinstance(private, list):
+        raise ValueError('private helper requirements must be an array')
+    seen = set()
+    for requirement in private:
+        if (set(requirement) != {'defining_module', 'source_name', 'kind'} or
+                requirement['defining_module'] not in config['expected_modules'] or
+                not NAME.fullmatch(requirement['source_name']) or
+                '.' in requirement['source_name'] or requirement['kind'] != 'theorem'):
+            raise ValueError('invalid source-private theorem requirement')
+        key = (requirement['defining_module'], requirement['source_name'])
+        if key in seen:
+            raise ValueError('duplicated source-private theorem requirement')
+        seen.add(key)
+    identities = config.get('program_identity_requirements', [])
+    if not isinstance(identities, list):
+        raise ValueError('program identity requirements must be an array')
+    seen = set()
+    for requirement in identities:
+        if (set(requirement) != {'headline', 'required_reachable_names'} or
+                requirement['headline'] not in config['headlines'] or
+                requirement['headline'] in seen):
+            raise ValueError('invalid or duplicated program identity headline')
+        seen.add(requirement['headline'])
+        for n in names(requirement['required_reachable_names'], 'program identity dependencies'):
+            if not NAME.fullmatch(n):
+                raise ValueError('invalid program identity dependency')
 
 
 def driver_source(config: dict) -> str:
@@ -216,6 +243,7 @@ def validate_report(report: dict, config: dict) -> dict:
         raise ValueError('theorem inventory/count differs from declaration kinds')
     if not set(config.get('expected_declarations', [])) <= set(record_names):
         raise ValueError('compiled environment omitted a previously audited declaration')
+    resolved_private_helpers(report, config)
     headlines = report['headlines']
     if [r['name'] for r in headlines] != config['headlines']:
         raise ValueError('omitted/duplicated/reordered headline')
@@ -238,8 +266,30 @@ def validate_report(report: dict, config: dict) -> dict:
                 pending.extend(by_name[current]['dependencies'])
         if seen != reachable_set:
             raise ValueError('headline closure contains unrelated declarations')
+    by_headline = {h['name']: h for h in headlines}
+    for requirement in config.get('program_identity_requirements', []):
+        if not set(requirement['required_reachable_names']) <= set(
+                by_headline[requirement['headline']]['closure']):
+            raise ValueError('headline closure omitted required program identity: ' + requirement['headline'])
     return {'declarations': report['declaration_count'], 'theorems': report['theorem_count'],
             'headlines': len(headlines), 'imported_modules': len(imported)}
+
+
+def resolved_private_helpers(report: dict, config: dict) -> list[dict]:
+    """Resolve private names exclusively from the actual defining-module inventory."""
+    resolved = []
+    for requirement in config.get('private_source_helpers', []):
+        matches = [r for r in report['declarations']
+                   if r['module'] == requirement['defining_module']
+                   and r['name'].startswith('_private.')
+                   and r['name'].endswith('.' + requirement['source_name'])]
+        if len(matches) != 1 or matches[0]['kind'] != requirement['kind']:
+            raise ValueError('missing/ambiguous actual source-private theorem: ' + str(requirement))
+        record = matches[0]
+        resolved.append(dict(requirement, actual_compiled_name=record['name'],
+            statement=record['statement'], axioms=record['axioms'],
+            record_sha256=canonical_sha(record)))
+    return resolved
 
 
 def execute(argv: list[str], cwd: Path, env: dict, output: Path, label: str, timeout: int) -> dict:
@@ -353,6 +403,11 @@ def run(config_path: Path, output: Path) -> dict:
             raise ValueError('audit JSON exceeds explicit 512 MiB parser bound')
         report = strict_json(stdout.read_text(encoding='utf-8'))
         receipt['counts'] = validate_report(report, config)
+        receipt['resolved_private_source_helpers'] = resolved_private_helpers(report, config)
+        receipt['program_identity_inclusions'] = [dict(r,
+            actual_closure_sha256=canonical_sha(next(h for h in report['headlines'] if h['name'] == r['headline'])),
+            closure_size=len(next(h for h in report['headlines'] if h['name'] == r['headline'])['closure']))
+            for r in config.get('program_identity_requirements', [])]
         search = [helper_lib, *map(Path, config['lean_path']), Path(config['builtin_library'])]
         resolved = {}
         for module in report['imported_modules']:

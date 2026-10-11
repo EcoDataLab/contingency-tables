@@ -18,6 +18,14 @@ on:
           - focused
           - full
           - comparator
+      build_mode:
+        description: 'Ordinary Lean build mode; Comparator keeps its separate strict flow'
+        type: choice
+        required: true
+        default: '--serial'
+        options:
+          - '--serial'
+          - parallel
 
 permissions:
   contents: read
@@ -28,6 +36,7 @@ jobs:
     timeout-minutes: 360
     env:
       VERIFY_SCOPE: ${{ inputs.scope || 'focused' }}
+      VERIFY_MODE: ${{ inputs.build_mode || '--serial' }}
       VERIFICATION_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
     defaults:
       run:
@@ -44,21 +53,28 @@ jobs:
         run: |
           set -euo pipefail
           case "$VERIFY_SCOPE" in focused|full|comparator) ;; *) exit 2 ;; esac
+          case "$VERIFY_MODE" in --serial|parallel) ;; *) exit 2 ;; esac
           test "$(id -u)" -ne 0
           test ! -d formal/.lake
           mkdir -p .tools/linux-verification
           python3 - <<'PY'
           import datetime, hashlib, json, os, pathlib, platform, subprocess
           root = pathlib.Path.cwd()
-          files = [root / "formal/lakefile.lean", root / "formal/lake-manifest.json", root / "formal/lean-toolchain"]
+          files = [root / p for p in ["formal/lakefile.lean", "formal/lake-manifest.json", "formal/lean-toolchain",
+                   "formal/default-audit-contract.json", "claims.json", "scripts/prepare_environment_audit.py",
+                   "scripts/run_environment_audit.py"]]
           files += sorted((root / "formal").rglob("*.lean"))
           record = {
               "started_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
               "repository_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
               "scope": os.environ["VERIFY_SCOPE"], "run_url": os.environ["VERIFICATION_RUN_URL"],
+              "ordinary_build_mode": None if os.environ["VERIFY_SCOPE"] == "comparator" else os.environ["VERIFY_MODE"],
               "runner_label": "ubuntu-24.04", "kernel": platform.release(), "machine": platform.machine(),
               "image_version": os.environ.get("ImageVersion"), "uid": os.getuid(),
               "mathlib_cache": "official upstream cache trusted; no cross-job proof artifacts restored",
+              "memory_kib": {line.split(":")[0]: int(line.split()[1])
+                  for line in pathlib.Path("/proc/meminfo").read_text().splitlines()
+                  if line.split(":")[0] in {"MemTotal", "MemAvailable", "SwapTotal", "SwapFree"}},
               "source_sha256": {str(p.relative_to(root)): hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
           }
           pathlib.Path(".tools/linux-verification/environment.json").write_text(json.dumps(record, indent=2) + "\n")
@@ -100,7 +116,7 @@ jobs:
             timeout --signal=TERM --kill-after=60s 270m scripts/bootstrap_comparator.sh verify \
               2>&1 | tee .tools/linux-verification/verification.log
           else
-            timeout --signal=TERM --kill-after=60s 270m scripts/verify_lean.sh "$VERIFY_SCOPE" \
+            timeout --signal=TERM --kill-after=60s 270m scripts/verify_lean.sh "$VERIFY_SCOPE" "$VERIFY_MODE" \
               2>&1 | tee .tools/linux-verification/verification.log
           fi
           git diff --exit-code -- formal/lakefile.lean formal/lake-manifest.json formal/lean-toolchain

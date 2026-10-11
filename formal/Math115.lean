@@ -64,3 +64,18 @@ import Math115.PhysicalReferenceBoolean
 import Math115.PhysicalEmptyCompletion
 import Math115.PhysicalBooleanSampler
 import Math115.LatticeScheduleProgram
+
+-- Complete bounded sampler: exact published-source default integration.
+import Math115.LatticeProfileStep
+import Math115.LatticeSamplerPreparation
+import Math115.LatticeEmptyOutput
+import Math115.LatticeProfileWalk
+import Math115.LatticeUnitStep
+import Math115.LatticeOuterProgram
+import Math115.LatticeOuterSemantics
+import Math115.LatticeUnitWalk
+import Math115.LatticeUnitOuter
+import Math115.LatticeSampler
+import Math115.PublicLatticeSampler
+import Math115.LatticeBoundedSampling
+import Math115.LatticeSamplerCost

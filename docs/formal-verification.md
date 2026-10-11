@@ -12,9 +12,13 @@ output semantics and polynomial charged cost in supplied input. The both-branch
 typed Boolean sampler now has pointwise feasible output and scheduled accuracy,
 and its numeric schedule has polynomial charged cost. The later research overlay connects that law to a fixed encoded public machine and proves uniform polynomial-time existence. The complete compiled-environment audit passed. The numerical complete runtime exponent and strict Comparator verification of the sampler remain open.
 
-## Completed stage, 10 October 2026 UTC
+## Current default-target integration
 
-Later outer-sampler repairs are recorded in the [current compiler checkpoint](outer-sampler-compiler-checkpoint.md). The original blockers and all dependent research modules now pass ordinary compilation; the checkpoint separates that complete compiler result from the exact environment audit and strict checking. Those results do not expand the frozen aggregate or its Linux reproduction below.
+The [integration note](default-target-integration.md) records the promotion of the thirteen exact proved sampler sources into the default root and audit contract. The completed fixed-machine theorem and its source-bound compiled-environment evidence remain valid. Fresh aggregate and Linux verification of the expanded target are pending; the earlier aggregate and Linux receipts below are historical scopes, not verification of the new configuration.
+
+## Historical completed stage, 10 October 2026 UTC
+
+Later outer-sampler repairs are recorded in the [current compiler checkpoint](outer-sampler-compiler-checkpoint.md). The original blockers and all dependent research modules now pass ordinary compilation; the checkpoint separates that complete compiler result from the exact environment audit and strict checking. Those results do not expand the earlier aggregate receipt or its Linux reproduction below.
 
 The [completed stage aggregate](../formal/results/completion-aggregate-1236/verification.json) passed **1,236 focused plus six standalone named declaration audits (1,242 total)**. Its 583-module normal closure contains 582 authenticated reused modules and one fresh aggregate root; four fresh named-audit checks passed. The formerly separate 46 encoded-program, 193 physical-bridge, and 134 Boolean-law/schedule declarations are now integrated into the default focused target. This is ordinary Lean compilation and selected axiom auditing with reused dependency objects, not a fresh rebuild of every dependency or strict kernel replay. All selected axioms remain within `propext`, `Classical.choice`, and `Quot.sound`, or subsets.
 
