@@ -1,0 +1,84 @@
+{
+  "audit_module": "Checkpoint12Audits.ResearchBounds_AffineFiniteWordDegreeBounds",
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint12-affine-degree-batch-02\\audit-source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\audits\\ResearchBounds.AffineFiniteWordDegreeBounds\\module.olean",
+    "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\audit-source\\Checkpoint12Audits\\ResearchBounds_AffineFiniteWordDegreeBounds.lean"
+  ],
+  "elapsed_seconds": 84.69753500004299,
+  "environment_exhaustiveness": false,
+  "error": null,
+  "evidence_class": "named_axiom_audit",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "ResearchBounds.AffineFiniteWordDegreeBounds": {
+      "path": "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\lib\\lean\\ResearchBounds\\AffineFiniteWordDegreeBounds.olean",
+      "sha256": "28c827ba3689f9ba5ef143961795b4771036ddc42e1d3c500c84934321c5994c",
+      "trust": "successful unchanged private batch candidate; per-module audit below"
+    }
+  },
+  "module": "ResearchBounds.AffineFiniteWordDegreeBounds",
+  "records": [
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffineFiniteWordDegree.source_all_weight"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffineFiniteWordDegree.preserved_pair_all_weight"
+    },
+    {
+      "axioms": [],
+      "name": "Math115.AffineFiniteWordDegree.completeOnlineDegree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffineFiniteWordDegree.complete_online_degree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffineFiniteWordDegree.machineTime_degree"
+    },
+    {
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "name": "Math115.AffineFiniteWordDegree.completeOnlineDegree_le_original"
+    }
+  ],
+  "requested_names": 6,
+  "source_sha256": "2dc1f189bda47e1b45bab835454df9f7a331e6e6e799b91f3865fc4853e353bb",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "e700e9834b061773f6888b7fc7afd25c4f234f5a88d302e19480ad44f5a84c3a"
+  }
+}

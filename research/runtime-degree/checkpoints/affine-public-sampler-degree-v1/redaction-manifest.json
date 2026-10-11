@@ -1,0 +1,169 @@
+{
+  "artifacts": [
+    {
+      "changes": [
+        "Owned-workspace prefix replaced by <owned-workspace>; original exception detail retained."
+      ],
+      "original_artifact_id": "affine01/authentication-failure",
+      "original_sha256": "835af1db0f387fdaa6fbfc1cb1eb2a1d1c7a08bda9f748eeaf692e570169903a",
+      "published_file": "history/attempt01/failure.json",
+      "published_sha256": "6abce53392f178e6952ca62e4e8f99a5e5c17bb26a726dba91cc3d17a89c05dc"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-source/AffineFiniteWordDegreeBounds.lean",
+      "original_sha256": "fb84234d6c666f9f64242c99b507fc41a46fca01d413a250f455233a2c820575",
+      "published_file": "ResearchBounds/AffineFiniteWordDegreeBounds.lean",
+      "published_sha256": "fb84234d6c666f9f64242c99b507fc41a46fca01d413a250f455233a2c820575"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "reviewed-source/AffinePublicSamplerDegree.lean",
+      "original_sha256": "6187c873840d492b4559229cc362a6476a7260fbc0b1077cc3805910d5919361",
+      "published_file": "ResearchBounds/AffinePublicSamplerDegree.lean",
+      "published_sha256": "6187c873840d492b4559229cc362a6476a7260fbc0b1077cc3805910d5919361"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identity omitted; native scope added."
+      ],
+      "original_artifact_id": "affine02/attempts/ResearchBounds.AffineFiniteWordDegreeBounds/receipt.json",
+      "original_sha256": "5cbcaa449b4c082c629387bc3b218ae7f2db153891044fc81f337aa313c90984",
+      "published_file": "compilation/AffineFiniteWordDegreeBounds/receipt.json",
+      "published_sha256": "254af676c686a08b0009776c5e02b8032b0d6d5e2594df3c015edaedfaea3788"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "affine02/attempts/ResearchBounds.AffineFiniteWordDegreeBounds/stdout.log",
+      "original_sha256": "40da745e39ee7d18dfb913849c7dd285d8f73eddb5e0df96065c3c77609b7245",
+      "published_file": "compilation/AffineFiniteWordDegreeBounds/stdout.log",
+      "published_sha256": "d8d1dbf0140505972bfc84e4a76af856089629974efdcb987407f6892dd13897"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "affine02/attempts/ResearchBounds.AffineFiniteWordDegreeBounds/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/AffineFiniteWordDegreeBounds/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "affine02/audit-source/Checkpoint12Audits/ResearchBounds_AffineFiniteWordDegreeBounds.lean",
+      "original_sha256": "2dc1f189bda47e1b45bab835454df9f7a331e6e6e799b91f3865fc4853e353bb",
+      "published_file": "audit-source/Checkpoint12Audits/ResearchBounds_AffineFiniteWordDegreeBounds.lean",
+      "published_sha256": "2dc1f189bda47e1b45bab835454df9f7a331e6e6e799b91f3865fc4853e353bb"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identity omitted; exact named scope added."
+      ],
+      "original_artifact_id": "affine02/audits/ResearchBounds.AffineFiniteWordDegreeBounds/receipt.json",
+      "original_sha256": "e31e00c779ee55fbc8c839728286052471538c556350cbf6f53457225745f671",
+      "published_file": "audit/AffineFiniteWordDegreeBounds/receipt.json",
+      "published_sha256": "62cc7ea5cb50ec5fb01ed164c7908b632500c955aa3e9ad9d33bb091487d5214"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "affine02/audits/ResearchBounds.AffineFiniteWordDegreeBounds/stdout.log",
+      "original_sha256": "e700e9834b061773f6888b7fc7afd25c4f234f5a88d302e19480ad44f5a84c3a",
+      "published_file": "audit/AffineFiniteWordDegreeBounds/stdout.log",
+      "published_sha256": "e700e9834b061773f6888b7fc7afd25c4f234f5a88d302e19480ad44f5a84c3a"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "affine02/audits/ResearchBounds.AffineFiniteWordDegreeBounds/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/AffineFiniteWordDegreeBounds/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identity omitted; native scope added."
+      ],
+      "original_artifact_id": "affine02/attempts/ResearchBounds.AffinePublicSamplerDegree/receipt.json",
+      "original_sha256": "f477d64ef9f745d58b223ec6a451873cdf81fddedf96b143639b6737b9e0f70a",
+      "published_file": "compilation/AffinePublicSamplerDegree/receipt.json",
+      "published_sha256": "12591445e5fc6ee8731e6310b354114a0545fbf84a9192c1e43b8fe6c0a5b87e"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "affine02/attempts/ResearchBounds.AffinePublicSamplerDegree/stdout.log",
+      "original_sha256": "5efdd284c0c3a0463fef67359e7cf7628c97ee00f4b0510bd3a9eba6998b8ceb",
+      "published_file": "compilation/AffinePublicSamplerDegree/stdout.log",
+      "published_sha256": "9271c92b04a564c9179ed0e2c502d4fe5fd7ecbd0bf56c5932518db0173e2a98"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "affine02/attempts/ResearchBounds.AffinePublicSamplerDegree/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "compilation/AffinePublicSamplerDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "affine02/audit-source/Checkpoint12Audits/ResearchBounds_AffinePublicSamplerDegree.lean",
+      "original_sha256": "51ff317261cf2d80d885a0839ce3901ae6efd54ff176c6ae22707e8183bc72e6",
+      "published_file": "audit-source/Checkpoint12Audits/ResearchBounds_AffinePublicSamplerDegree.lean",
+      "published_sha256": "51ff317261cf2d80d885a0839ce3901ae6efd54ff176c6ae22707e8183bc72e6"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted; process identity omitted; exact named scope added."
+      ],
+      "original_artifact_id": "affine02/audits/ResearchBounds.AffinePublicSamplerDegree/receipt.json",
+      "original_sha256": "7adddd6525e8793913f0570884bf9cd66d43f1a657244aeb9e9b45d396e2e3f3",
+      "published_file": "audit/AffinePublicSamplerDegree/receipt.json",
+      "published_sha256": "9f17c3f8384303b59be664ce030eaf9e91b45f7e57f9fc13f38961f4107b5dd5"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "affine02/audits/ResearchBounds.AffinePublicSamplerDegree/stdout.log",
+      "original_sha256": "ce07f9bd0a945947f2ed75766b310557ecbaddccf048bb83ccf49f7934b3f78c",
+      "published_file": "audit/AffinePublicSamplerDegree/stdout.log",
+      "published_sha256": "ce07f9bd0a945947f2ed75766b310557ecbaddccf048bb83ccf49f7934b3f78c"
+    },
+    {
+      "changes": [
+        "Owned-workspace prefix substituted where present."
+      ],
+      "original_artifact_id": "affine02/audits/ResearchBounds.AffinePublicSamplerDegree/stderr.log",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "published_file": "audit/AffinePublicSamplerDegree/stderr.log",
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Private capture path replaced by original-artifact role placeholder.",
+        "Private checker publication/replay reference replaced with explicit omitted-checker boundary; review meaning/limits retained."
+      ],
+      "original_artifact_id": "independent-AI-review/markdown",
+      "original_sha256": "d3eecf1a577b44a101973dddb05f07ff69ca1a4c350376b31de50dcdf4ef8a57",
+      "published_file": "review/review.md",
+      "published_sha256": "a08b0a1f9f7fa5033ba5dfda99cb90e894a5396af5ec04d8a2c2bc9c2d75a2c9"
+    },
+    {
+      "changes": [
+        "Process IDs omitted from four stage summaries; all363 check results/records/limits retained."
+      ],
+      "original_artifact_id": "independent-AI-review/checks",
+      "original_sha256": "f1d780000fd92856ffc920f722c532880c98d73a74335cba1b6a583762178090",
+      "published_file": "review/verification.json",
+      "published_sha256": "05cdcf2ddc9eef9a3ec23484808729b38612f5595be62a07550a222142777355"
+    }
+  ],
+  "policy": "Exact source/license bytes retained. Logs retain full diagnostics with owned-workspace prefix substitution. Receipts are declared allowlist projections; process identities omitted. Original versus published hashes separate. No binaries/transcripts."
+}

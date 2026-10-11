@@ -1,0 +1,42 @@
+{
+  "attempt_object_sha256": "28c827ba3689f9ba5ef143961795b4771036ddc42e1d3c500c84934321c5994c",
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint12-affine-degree-batch-02\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\attempts\\ResearchBounds.AffineFiniteWordDegreeBounds\\module.olean",
+    "-i",
+    "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\attempts\\ResearchBounds.AffineFiniteWordDegreeBounds\\module.ilean",
+    "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\source\\ResearchBounds\\AffineFiniteWordDegreeBounds.lean"
+  ],
+  "diagnostic_object": "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\lib\\lean\\ResearchBounds\\AffineFiniteWordDegreeBounds.olean",
+  "elapsed_seconds": 82.65758899995126,
+  "evidence_class": "ordinary_native_compilation_diagnostic",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "ResearchBounds.FiniteWordDegreeBounds": {
+      "path": "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\lib\\lean\\ResearchBounds\\FiniteWordDegreeBounds.olean",
+      "sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce",
+      "trust": "fully pinned accepted helper bundle; generic named audit pending"
+    }
+  },
+  "module": "ResearchBounds.AffineFiniteWordDegreeBounds",
+  "platform": "Windows x86_64",
+  "scope": "Affine refinement of unchanged fixed compiler/public sampler; numerical degree hypotheses remain explicit.",
+  "source_sha256": "fb84234d6c666f9f64242c99b507fc41a46fca01d413a250f455233a2c820575",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "40da745e39ee7d18dfb913849c7dd285d8f73eddb5e0df96065c3c77609b7245"
+  }
+}

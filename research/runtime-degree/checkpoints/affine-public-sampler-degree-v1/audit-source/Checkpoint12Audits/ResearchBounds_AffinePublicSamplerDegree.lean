@@ -1,0 +1,6 @@
+import ResearchBounds.AffinePublicSamplerDegree
+
+#print axioms Math115.AffinePublicSamplerDegree.publicDegree
+#print axioms Math115.AffinePublicSamplerDegree.publicDegree_le_original
+#print axioms Math115.AffinePublicSamplerDegree.machineTime_public_degree
+#print axioms Math115.AffinePublicSamplerDegree.fixedMachineBoundedSampling_with_degree

@@ -1,0 +1,44 @@
+[
+  {
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "name": "Math115.AffineFiniteWordDegree.source_all_weight"
+  },
+  {
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "name": "Math115.AffineFiniteWordDegree.preserved_pair_all_weight"
+  },
+  {
+    "axioms": [],
+    "name": "Math115.AffineFiniteWordDegree.completeOnlineDegree"
+  },
+  {
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "name": "Math115.AffineFiniteWordDegree.complete_online_degree"
+  },
+  {
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "name": "Math115.AffineFiniteWordDegree.machineTime_degree"
+  },
+  {
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "name": "Math115.AffineFiniteWordDegree.completeOnlineDegree_le_original"
+  }
+]

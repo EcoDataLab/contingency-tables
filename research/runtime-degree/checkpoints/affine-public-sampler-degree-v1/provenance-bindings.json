@@ -1,0 +1,184 @@
+{
+  "accepted_prior_public_capture": {
+    "bindings_exactly_match_original_remote_manifest": true,
+    "kind": "immutable original remote collection allowlist",
+    "local_pycache_not_prior_remote_input": true,
+    "remote_binding_count": 116,
+    "sha256": "8c73d0b219ec916bc932a8b7e53037b3173ccdae00437250289c34f98fdcc7d8"
+  },
+  "authenticator_sha256": "99a9c5c3152155a61859d3711d57317e23450123e916231a18b7869832eeb819",
+  "boundary": "Executed runner authenticates and checks reused inputs before/after each stage; compact packet binds raw snapshot and direct object/source identities. Official cache/toolchain/OS trust reused, no fresh normal/Linux rebuild.",
+  "current_source_objects": [
+    {
+      "module": "ResearchBounds.AffineFiniteWordDegreeBounds",
+      "object_sha256": "28c827ba3689f9ba5ef143961795b4771036ddc42e1d3c500c84934321c5994c",
+      "source_sha256": "fb84234d6c666f9f64242c99b507fc41a46fca01d413a250f455233a2c820575"
+    },
+    {
+      "module": "ResearchBounds.AffinePublicSamplerDegree",
+      "object_sha256": "65464f38881b228dbfe3152b1e862d85891b368f0e1683e3862e2ef4307cbc98",
+      "source_sha256": "6187c873840d492b4559229cc362a6476a7260fbc0b1077cc3805910d5919361"
+    }
+  ],
+  "download_manifest_sha256": "1fe47af2c4ef2ae94fb8f053d02344594073d22994c2dc335a321b63206989cf",
+  "download_members_verified": 194,
+  "eight_prior_helpers": [
+    {
+      "module": "ResearchBounds.FiniteWordDegreeBounds",
+      "object_sha256": "03af418ae83027f7a68c528ef25a0dea290be77281912377eb78eff7ca2e05ce",
+      "source_sha256": "9ee4f34b9a3219aeb4294eb84027145cc16a831ff6e5f86dd7afaac736d04b16"
+    },
+    {
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "object_sha256": "05ddcde86ebf0d344a912cfeb7ad0c9ed2c6d38654a2d7017623edd026c5e929",
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674"
+    },
+    {
+      "module": "ResearchBounds.PolynomialCompilerDegree",
+      "object_sha256": "bf5e49a96a39c4e9526fb0cf1ad3786d8a6c84d1e90771b0c5906cfce1c316d2",
+      "source_sha256": "dc85a5de270470e4be4fc66dedd8ebd128b3c940a4f20c9d17f600a1875dbd97"
+    },
+    {
+      "module": "ResearchBounds.ScalarOutputSizeDegree",
+      "object_sha256": "31373e7e8f1b04751d032a564f00a5fc0ca3965e4420159c07a77a1c6f3a602f",
+      "source_sha256": "11c1d1b471b784086d9dc18e9026e308e82812f30f636e4848eadb1f2217b0bb"
+    },
+    {
+      "module": "ResearchBounds.TreeArithmeticDegree",
+      "object_sha256": "14084fd1a8a94de138eb84ced25330d5fb5e5dbb7869ba49e7cc01fab5f5af9e",
+      "source_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76"
+    },
+    {
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "object_sha256": "82c60f4265a1f92790164215997d68f6d30b3a60a5ef62e05f8e0e94ebfec9ae",
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf"
+    },
+    {
+      "module": "ResearchBounds.WordCountSeedDegrees",
+      "object_sha256": "e5003084654888fa321c21f7d6e899e21735bc8f11ce26c62597182372a44f8a",
+      "source_sha256": "fb04a131b99d25059f215287021fab61d026a1aafe2bbff838841c88157c7ccd"
+    },
+    {
+      "module": "ResearchBounds.PublicSamplerDegree",
+      "object_sha256": "49bb4dec634bb75ff4036d4954340b57bd7db8c3cde51d1ae2ed580add66ffbe",
+      "source_sha256": "4ac577f8b7b1f2fc7c68950ef87bfe39ca236e82a75602395e72da694fb10255"
+    }
+  ],
+  "environment_receipts": [
+    {
+      "originating_plan_file_sha256": "6aca8c29ab2939dc03b99da8964acf29383f0adc2a853295dd215b46cce2f027",
+      "sha256": "c79ea57c8a8d8ba84254088b87df28d739f1cd1f783e3b6e523562bbcaf20667"
+    },
+    {
+      "originating_plan_file_sha256": "6aca8c29ab2939dc03b99da8964acf29383f0adc2a853295dd215b46cce2f027",
+      "sha256": "6cf5a1f4062bfefef28073efc05d545f4228eab0b74f285db1be3bc599b0af82"
+    }
+  ],
+  "normal_driver_sha256": "e903dce08c32d84e291c373a7256d0794e98f23f14ec2f4b0c3949a9a68e3134",
+  "prerequisite_records_authenticated": 685,
+  "published_prior_packets": [
+    {
+      "path": "research/runtime-degree/checkpoints/generic-helpers-v1/manifest.json",
+      "sha256": "d1f6ef03c4b7a1b34c897b44e35be63358974abd89e2284ec6b9a9dd8256c929",
+      "verification_sha256": "e40f380372e329e4e7031b9ab16ce9963b5a7007b13a8347752135c2758715e8"
+    },
+    {
+      "path": "research/runtime-degree/checkpoints/public-sampler-degree-v1/manifest.json",
+      "sha256": "b694790dfdb847a0ce81e786ba37573453233bb630f9d9f6f9bd15ad8c15d355",
+      "verification_sha256": "04ca089521d79874df717bb62b0b7fa4d4552a99acb4966f06aa254673cd86d6"
+    }
+  ],
+  "r10_bindings": {
+    "environment-f9656cb11a764e73a8bb9b0d272f7b51.json": "6cf5a1f4062bfefef28073efc05d545f4228eab0b74f285db1be3bc599b0af82",
+    "frozen-environment.json": "c92e4e8c6287922233486854a82e1bfd9f1345a38ca26f00463a4c16dcbcdefd",
+    "frozen-plan.json": "b42d27ec16d999ac5c40ea71934c55208315663fe26f176244e2e55a75f0a2b5",
+    "modules.json": "11f718eebd7b2f5f229dc3c8ebdd6dd81729bb12f71ba34a2e6849f17a39f1a6",
+    "status.json": "17692d70c6674a2d75359fbc6e1fd94899238905ce1b7f24971e9fec7755aacf"
+  },
+  "raw_artifacts": [
+    {
+      "artifact_id": "config.json",
+      "bytes": 28036,
+      "published_full_bytes": false,
+      "sha256": "c79eac57586505a7c2fdf7368220b06309513084480b8efea5c78d7d031a6749"
+    },
+    {
+      "artifact_id": "authentication.json",
+      "bytes": 24774,
+      "published_full_bytes": false,
+      "sha256": "d0b706cd9a4c656bd5d886549185bbbac229c157290cc7c95f586817818ffb99"
+    },
+    {
+      "artifact_id": "input-snapshot.json",
+      "bytes": 590603,
+      "published_full_bytes": false,
+      "sha256": "d0cbd4d3eb058c8d3d3dacbfe20fca8ea726852ca3cba822bf407a040387fc3a"
+    },
+    {
+      "artifact_id": "ResearchBounds-projection-manifest.json",
+      "bytes": 4436,
+      "published_full_bytes": false,
+      "sha256": "c6b535b3fa4436e0e5fdd9ac2a75a70de73c6d278ac08df22dd0bfbde4480226"
+    },
+    {
+      "artifact_id": "Math115-projection-manifest.json",
+      "bytes": 39989,
+      "published_full_bytes": false,
+      "sha256": "f8ec445dff29e170921b713baf986b137b98af41ab965dc97f001ca41dbf60f5"
+    },
+    {
+      "artifact_id": "native_batch_runner.py",
+      "bytes": 23908,
+      "published_full_bytes": false,
+      "sha256": "2454edec535bc7e76702a369ed760e28233748f82dfb2790763b5d9d76bbdfec"
+    },
+    {
+      "artifact_id": "accepted_public.py",
+      "bytes": 5958,
+      "published_full_bytes": false,
+      "sha256": "2f0dcacba611adba739ad853398f19585f4fb224e64f2aab638a38e30a0eff7e"
+    },
+    {
+      "artifact_id": "owned_tree_executor.py",
+      "bytes": 8745,
+      "published_full_bytes": false,
+      "sha256": "cea4065f6b6d4012c7bdf120dbfd2d50785f267aa6cdceb0722628fafe12323b"
+    },
+    {
+      "artifact_id": "native_job_preflight.py",
+      "bytes": 4221,
+      "published_full_bytes": false,
+      "sha256": "3e75f2396f4d022452ed0c8a8e3ff5d2d142ab374c0f85c2516b499d51242125"
+    },
+    {
+      "artifact_id": "degree_diagnostic_v2.py",
+      "bytes": 19311,
+      "published_full_bytes": false,
+      "sha256": "34595602d5198061c762464ff7af670b69c32d61f5a432ac0bccd007c2778475"
+    },
+    {
+      "artifact_id": "status.json",
+      "bytes": 13026,
+      "published_full_bytes": false,
+      "sha256": "49e72189648ee5f00b91bea368e087c73828f8ea138884401206f3f3f1a60587"
+    }
+  ],
+  "runtime": {
+    "configuration_sha256": {
+      ".upstream/openai-math/lean/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b",
+      "formal/lake-manifest.json": "39bdf38e9bbb2d9b40b3d1bddb5ff1ed0e59be23f06d5f128e772576abbc5ece",
+      "formal/lakefile.lean": "3583edf9de94982194b653696fb502624efe2f73836f8f07b227d8fd4a0794af",
+      "formal/lean-toolchain": "d5edba4e4b8faad9c1baeadb265716d20d03be4d1a2647dc5e35b0c0325bea7b"
+    },
+    "lake_sha256": "9780a6abfb6d751c7958f2fd7f696154bdda8b46c0de9755c4080ffb8a8788e6",
+    "lean_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b"
+  },
+  "same_public_sampler": {
+    "module": "Math115.PublicLatticeSampler",
+    "object_sha256": "1710eabe8e9865b0c52c6c9800e7a568e4064442f8d62ac5be185570de225489",
+    "public_source_path": "formal/results/native-sampler-checkpoint/sources/Math115/PublicLatticeSampler.lean",
+    "source_sha256": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245"
+  },
+  "scope": "Compact exact-source/native-reuse evidence. Full normal/cache snapshots and binary objects omitted.",
+  "selected_internal_records": 676
+}

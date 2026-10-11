@@ -1,0 +1,47 @@
+{
+  "attempt_object_sha256": "65464f38881b228dbfe3152b1e862d85891b368f0e1683e3862e2ef4307cbc98",
+  "command": [
+    "<owned-workspace>/tools/lean-4.34.1-windows/bin/lean.exe",
+    "--root=<owned-workspace>\\checkpoint12-affine-degree-batch-02\\source",
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false",
+    "-o",
+    "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\attempts\\ResearchBounds.AffinePublicSamplerDegree\\module.olean",
+    "-i",
+    "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\attempts\\ResearchBounds.AffinePublicSamplerDegree\\module.ilean",
+    "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\source\\ResearchBounds\\AffinePublicSamplerDegree.lean"
+  ],
+  "diagnostic_object": "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\lib\\lean\\ResearchBounds\\AffinePublicSamplerDegree.olean",
+  "elapsed_seconds": 86.70025740005076,
+  "evidence_class": "ordinary_native_compilation_diagnostic",
+  "exit_code": 0,
+  "input_objects": {
+    "Init": {
+      "path": "<owned-workspace>\\tools\\lean-4.34.1-windows\\lib\\lean\\Init.olean",
+      "sha256": "e350f457fb746028d5761304fd7df55a83b46ea56cdd7702fdee32600b57db22",
+      "trust": "official pinned external package/toolchain cache"
+    },
+    "ResearchBounds.AffineFiniteWordDegreeBounds": {
+      "path": "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\lib\\lean\\ResearchBounds\\AffineFiniteWordDegreeBounds.olean",
+      "sha256": "28c827ba3689f9ba5ef143961795b4771036ddc42e1d3c500c84934321c5994c",
+      "trust": "successful unchanged private batch candidate; per-module audit below"
+    },
+    "ResearchBounds.PublicSamplerDegree": {
+      "path": "<owned-workspace>\\checkpoint12-affine-degree-batch-02\\lib\\lean\\ResearchBounds\\PublicSamplerDegree.olean",
+      "sha256": "49bb4dec634bb75ff4036d4954340b57bd7db8c3cde51d1ae2ed580add66ffbe",
+      "trust": "fully authenticated exact accepted public-degree-02 compiler object and named audit"
+    }
+  },
+  "module": "ResearchBounds.AffinePublicSamplerDegree",
+  "platform": "Windows x86_64",
+  "scope": "Affine refinement of unchanged fixed compiler/public sampler; numerical degree hypotheses remain explicit.",
+  "source_sha256": "6187c873840d492b4559229cc362a6476a7260fbc0b1077cc3805910d5919361",
+  "source_unchanged": true,
+  "status": "passed",
+  "stop_reason": null,
+  "streams": {
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout.log": "5efdd284c0c3a0463fef67359e7cf7628c97ee00f4b0510bd3a9eba6998b8ceb"
+  }
+}

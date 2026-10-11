@@ -1,0 +1,123 @@
+{
+  "audit_scopes": [
+    {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "driver": {
+        "path": "audit-source/Checkpoint12Audits/ResearchBounds_AffineFiniteWordDegreeBounds.lean",
+        "sha256": "2dc1f189bda47e1b45bab835454df9f7a331e6e6e799b91f3865fc4853e353bb"
+      },
+      "elapsed_seconds": 84.69753500004299,
+      "environment_exhaustiveness": false,
+      "module": "ResearchBounds.AffineFiniteWordDegreeBounds",
+      "receipt": {
+        "original_sha256": "e31e00c779ee55fbc8c839728286052471538c556350cbf6f53457225745f671",
+        "path": "audit/AffineFiniteWordDegreeBounds/receipt.json",
+        "published_sha256": "62cc7ea5cb50ec5fb01ed164c7908b632500c955aa3e9ad9d33bb091487d5214"
+      },
+      "records": {
+        "path": "audit/AffineFiniteWordDegreeBounds/records.json",
+        "sha256": "52fc95e1b173cb1be8e94d3070ae8079706fe69756e679993b0b689b2adb8a32"
+      },
+      "stdout": {
+        "original_sha256": "e700e9834b061773f6888b7fc7afd25c4f234f5a88d302e19480ad44f5a84c3a",
+        "path": "audit/AffineFiniteWordDegreeBounds/stdout.log"
+      },
+      "verified_name_count": 6
+    },
+    {
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "driver": {
+        "path": "audit-source/Checkpoint12Audits/ResearchBounds_AffinePublicSamplerDegree.lean",
+        "sha256": "51ff317261cf2d80d885a0839ce3901ae6efd54ff176c6ae22707e8183bc72e6"
+      },
+      "elapsed_seconds": 81.68221539992373,
+      "environment_exhaustiveness": false,
+      "module": "ResearchBounds.AffinePublicSamplerDegree",
+      "receipt": {
+        "original_sha256": "7adddd6525e8793913f0570884bf9cd66d43f1a657244aeb9e9b45d396e2e3f3",
+        "path": "audit/AffinePublicSamplerDegree/receipt.json",
+        "published_sha256": "9f17c3f8384303b59be664ce030eaf9e91b45f7e57f9fc13f38961f4107b5dd5"
+      },
+      "records": {
+        "path": "audit/AffinePublicSamplerDegree/records.json",
+        "sha256": "001a6d405a86abee27ed4c44fe624527d78ed559298db270d7c9ae7f42ad0b5b"
+      },
+      "stdout": {
+        "original_sha256": "ce07f9bd0a945947f2ed75766b310557ecbaddccf048bb83ccf49f7934b3f78c",
+        "path": "audit/AffinePublicSamplerDegree/stdout.log"
+      },
+      "verified_name_count": 4
+    }
+  ],
+  "complete_failure_history_claimed": false,
+  "conditional_degree": "340*max(max(e,6),t)",
+  "independent_evidence_review": {
+    "checks_passed": 363,
+    "limits": [
+      "No remote, Lean, Git or public write was performed.",
+      "Uncaptured transitive external cache bytes were not locally rehashed; preserved snapshots and reviewed successful runtime checks are the evidence for those inputs.",
+      "No numerical complete-realizer degrees, normal-cache registration, human/Comparator acceptance or empirical sampler runtime claim is established."
+    ],
+    "original_review_manifest_sha256": "ab8c36da559123579d2c594b5f055faac6aecc190681d7c423a9e010fef2b114",
+    "original_review_sha256": "d3eecf1a577b44a101973dddb05f07ff69ca1a4c350376b31de50dcdf4ef8a57",
+    "original_verification_sha256": "f1d780000fd92856ffc920f722c532880c98d73a74335cba1b6a583762178090",
+    "review": "review/review.md",
+    "review_sha256": "a08b0a1f9f7fa5033ba5dfda99cb90e894a5396af5ec04d8a2c2bc9c2d75a2c9",
+    "scope": "AI scoped saved-artifact PASS; not human review or fresh compiler execution",
+    "verification": "review/verification.json",
+    "verification_sha256": "05cdcf2ddc9eef9a3ec23484808729b38612f5595be62a07550a222142777355"
+  },
+  "numerical_count_degree_e": null,
+  "numerical_draw_degree_t": null,
+  "previous_published_degree": "340*max(1,t)*max(e,6)",
+  "provenance": {
+    "path": "provenance-bindings.json",
+    "sha256": "3ed650dce174abfe125c73f4bd862c39cd30dc8e2c0ceff26d8b487e1f0a1233"
+  },
+  "public_replay": null,
+  "raw_final_result_sha256": "d1f19e1ac9c9ca32fff60a2a32ea930db161d862059590024a9c8342078bc2c1",
+  "readback": {
+    "path": "audit/readback.json",
+    "sha256": "bf8af1dd9b9a649099657c1d0483e6a72742c0cc0c45bd43b4d475c82fa5034a"
+  },
+  "schema_version": 1,
+  "scope": "Two exact source refinements of same fixed compiler/public sampler; conditional340*max(max(e,6),t). Reused native prerequisites/cache; separate6/4 named audits, no numerical degrees/default/Linux/strict claim.",
+  "source_manifest_original_sha256": "15319d216b4dd60048a03aa74bf8c4e4120da68737977f74e864d8bc61ac2f88",
+  "sources": [
+    {
+      "module": "ResearchBounds.AffineFiniteWordDegreeBounds",
+      "named_audit": "audit/AffineFiniteWordDegreeBounds/receipt.json",
+      "object_sha256": "28c827ba3689f9ba5ef143961795b4771036ddc42e1d3c500c84934321c5994c",
+      "ordinary_compilation": {
+        "elapsed_seconds": 82.65758899995126,
+        "original_receipt_sha256": "5cbcaa449b4c082c629387bc3b218ae7f2db153891044fc81f337aa313c90984",
+        "published_receipt_sha256": "254af676c686a08b0009776c5e02b8032b0d6d5e2594df3c015edaedfaea3788",
+        "receipt": "compilation/AffineFiniteWordDegreeBounds/receipt.json"
+      },
+      "path": "ResearchBounds/AffineFiniteWordDegreeBounds.lean",
+      "sha256": "fb84234d6c666f9f64242c99b507fc41a46fca01d413a250f455233a2c820575"
+    },
+    {
+      "module": "ResearchBounds.AffinePublicSamplerDegree",
+      "named_audit": "audit/AffinePublicSamplerDegree/receipt.json",
+      "object_sha256": "65464f38881b228dbfe3152b1e862d85891b368f0e1683e3862e2ef4307cbc98",
+      "ordinary_compilation": {
+        "elapsed_seconds": 86.70025740005076,
+        "original_receipt_sha256": "f477d64ef9f745d58b223ec6a451873cdf81fddedf96b143639b6737b9e0f70a",
+        "published_receipt_sha256": "12591445e5fc6ee8731e6310b354114a0545fbf84a9192c1e43b8fe6c0a5b87e",
+        "receipt": "compilation/AffinePublicSamplerDegree/receipt.json"
+      },
+      "path": "ResearchBounds/AffinePublicSamplerDegree.lean",
+      "sha256": "6187c873840d492b4559229cc362a6476a7260fbc0b1077cc3805910d5919361"
+    }
+  ],
+  "status": "affine_refinement_compiled_six_four_named_audits_passed"
+}

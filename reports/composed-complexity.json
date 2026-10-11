@@ -228,7 +228,7 @@
       }
     ],
     "current_markdown_sha256": {
-      "docs/composed-complexity.md": "85f504327f4431070e807e79bc9ace201a2ce2233ab636b9fb8a70be2f04372c",
+      "docs/composed-complexity.md": "c644b15514c3da7d78f20e5fb084ef9b5c75d6e2641407f0fa16031cf29e41c9",
       "docs/composed-complexity-uncompiled-appendix.md": "30b33f95b4d1a9d2fb161b4cad6c685c732c1b4feeb1b01d8046a2c1f60440a9",
       "docs/practical-use.md": "f2e3d77f18c2b0ff4290aa67d680aa07fcae130309b9f8e98d8cae5e995eed0a",
       "docs/commuting-use-cases.md": "abe61b2af9c988319988aee30bf4345bf94f8de3c70a1a6d455e84f34888ed26"
@@ -902,5 +902,31 @@
     "official_dependency_cache_trusted": true,
     "strict_sampler_acceptance": false,
     "numeric_complete_runtime_degree": null
+  },
+  "conditional_public_degree_verification": {
+    "status": "ordinary native compilation and two ordered named audits passed; independent AI saved-artifact review passed",
+    "evidence_packet": "research/runtime-degree/checkpoints/affine-public-sampler-degree-v1/",
+    "verification_sha256": "0daea1f36e6332da3beb9f2390455932e5b5aaa06f651ce01d8a1558867c3880",
+    "manifest_sha256": "6593a8e238f6e222af70c3f00dcabd33397c5e98f87807a96c564bfe750bd830",
+    "conditional_degree": "340*max(max(e,6),t)",
+    "numerical_count_degree_e": null,
+    "numerical_draw_degree_t": null,
+    "machine": "Math115.PublicLatticeSampler.machine",
+    "size": "Algorithms.samplingSize n r h",
+    "source_modules": 2,
+    "named_audit_scopes": [
+      6,
+      4
+    ],
+    "same_machine_every_tape_feasibility_and_total_variation_bound": true,
+    "uniform_positive_coefficient": "Chosen before dimensions, equal-total margins, and numeric h>=1; may depend on supplied actual count/draw certificates.",
+    "evidence_scope": "Authenticated reused native prerequisites and official caches; separate from default-target Linux audit, no strict Comparator acceptance or measured runtime result.",
+    "earlier_conditional_checkpoint": {
+      "path": "research/runtime-degree/checkpoints/public-sampler-degree-v1/",
+      "degree": "340*max(1,t)*max(e,6)",
+      "verification_sha256": "04ca089521d79874df717bb62b0b7fa4d4552a99acb4966f06aa254673cd86d6",
+      "scope": "Earlier separate ordinary native source compilation and three-name audit; preserved unchanged."
+    },
+    "historical_scope_note": "Older quantitative_helper_verification and current_verification flags remain the recorded scopes of their own checkpoints."
   }
 }

@@ -36,17 +36,31 @@ Here \(Q_L\) is the compiler's constructed polynomial. This is a conditional alg
 
 The [generic-helper checkpoint](../research/runtime-degree/checkpoints/generic-helpers-v1/) now records ordinary native compilation of seven quantitative helper modules and two separate standard-axiom named audits of 47 and 21 declarations. Recorded dependency objects and the official cache were reused. This scope is separate from the complete sampler's environment audit. The earlier failed and uncompiled [degree archive](../research/runtime-degree/README.md) remains unchanged.
 
-The checked `Math115.DegreeBounds.machineTime_degree` theorem follows the actual pinned finite-word compiler. Given degree certificates \(e\) for its complete word-count realizer and \(t\) for its complete supplied-word public draw, it bounds physical machine time by a polynomial of degree at most
+The earlier checked `Math115.DegreeBounds.machineTime_degree` theorem follows the actual pinned finite-word compiler. Given degree certificates \(e\) for its complete word-count realizer and \(t\) for its complete supplied-word public draw, it bounds physical machine time by a polynomial of degree at most
 
 \[
  2\max(1,t)\max(e,6)
 \]
 
-in `wordMeasure = weight(input) + numeric bit count`, including fresh-bit generation and final encoded output. The complete sampler's \(e\) and \(t\) have not been extracted. Substituting its checked public \(S^{170}\) allowance gives \(340\max(1,t)\max(e,6)\) in \(S\). This conversion now has a separate [ordinary-compiled conditional public-degree theorem](../research/runtime-degree/checkpoints/public-sampler-degree-v1/), with its three-name audit and retained failed first attempt. The earlier \(340\max(1,e_L)\) expression uses a different hypothesis: a degree bound for the already complete online-work witness.
+in `wordMeasure = weight(input) + numeric bit count`, including fresh-bit generation and final encoded output. The complete sampler's \(e\) and \(t\) have not been extracted. Substituting its checked public \(S^{170}\) allowance gives \(340\max(1,t)\max(e,6)\) in \(S\). This earlier multiplicative conversion has a separate [ordinary-compiled conditional public-degree theorem](../research/runtime-degree/checkpoints/public-sampler-degree-v1/), with its three-name audit and retained failed first attempt. The earlier \(340\max(1,e_L)\) expression uses a different hypothesis: a degree bound for the already complete online-work witness.
 
-The new `PublicSamplerDegree.fixedMachineBoundedSampling_with_degree` theorem uses the existing `PublicLatticeSampler.machine` and `Algorithms` input/output definitions. Given certificates for the actual `wordCountRealizer` and `publicDrawRealizer`, one positive constant works uniformly over every pair of dimensions, equal-total natural margins and numeric precision \(h\ge1\). At time \(C S^{340\max(1,t)\max(e,6)}\), every tape produces a feasible table and the uniform-bit output law has total variation at most \(2^{-h}\). Here word count means the number of reserved random bits, not the number of feasible tables. The compilation reused authenticated native prerequisites; it is separate from the default-target Linux audit and strict Comparator checking. The theorem closes the conditional public-size conversion while leaving the two numerical realizer certificates open.
+The earlier `PublicSamplerDegree.fixedMachineBoundedSampling_with_degree` theorem uses the existing `PublicLatticeSampler.machine` and `Algorithms` input/output definitions. Given certificates for the actual `wordCountRealizer` and `publicDrawRealizer`, one positive constant works uniformly over every pair of dimensions, equal-total natural margins and numeric precision \(h\ge1\). At time \(C S^{340\max(1,t)\max(e,6)}\), every tape produces a feasible table and the uniform-bit output law has total variation at most \(2^{-h}\). Here word count means the number of reserved random bits, not the number of feasible tables. The compilation reused authenticated native prerequisites; it is separate from the default-target Linux audit and strict Comparator checking. The theorem closes the conditional public-size conversion while leaving the two numerical realizer certificates open.
 
 The checked `typed_actual_fixedPower` result gives degree at most six for `LatticeScheduleProgram.fixedPowerRealizer k` for **each fixed** \(k\). Its polynomial coefficient may depend on \(k\); it is not a uniform bound for a runtime-variable exponent. These helpers supply reusable degree transformations and scalar seeds, not the missing complete word-count/draw certificates, a measured performance result, fresh Linux acceptance, or strict sampler acceptance.
+
+## Sharper conditional degree from affine output
+
+The newer [affine refinement](../research/runtime-degree/checkpoints/affine-public-sampler-degree-v1/) preserves the exact `PublicLatticeSampler.machine`, complete `wordCountRealizer` and `publicDrawRealizer`, and the `Algorithms` input/output codecs. Its `AffinePublicSamplerDegree.fixedMachineBoundedSampling_with_degree` theorem replaces the earlier multiplicative envelope by
+
+\[
+ \boxed{D=340\max(\max(e,6),t).}
+\]
+
+Here \(e\) certifies the actual complete reserved-bit-count routine and \(t\) the complete supplied-word public draw. Both numerical certificates remain unresolved. Given those certificates, one positive coefficient \(C\) works uniformly for all finite dimensions, equal-total natural margins, including zeros and empty dimensions, and numeric \(h\ge1\). At \(C S^D\), every tape halts with a feasible table; independent uniform fair bits give total variation at most \(2^{-h}\) from uniform ordinary fixed-margin tables. The companion `machineTime_public_degree` theorem bounds that same machine's execution time.
+
+The improvement separates computation cost from output size. The fresh Boolean word has exactly the reserved number of bits, regardless of how expensive computing that number was. With \(w=\operatorname{weight}(input)+\text{numeric bit count}\), the preserved-input/word pair fed into the draw has weight at most \(4w+2\). The online degree is therefore \(\max(\max(e,6),t)\), rather than a product of the count and draw work degrees. The unchanged physical compiler doubles it; the existing public \(S^{170}\) conversion yields the factor 340. This sharper bound is proved no larger than the preserved earlier bound, but supplies neither a numerical exponent nor measured practical speed.
+
+The two affine source modules passed ordinary native compilation, and their ordered six-name and four-name axiom checks passed. Independent AI saved-artifact review passed. This helper evidence is separate from the expanded default Linux receipt and strict Comparator acceptance; the earlier packets and failed attempts remain unchanged.
 
 ## A common public size measure
 
