@@ -7,8 +7,10 @@ fiber. This keeps the original chain and its inverse-gap bound, while reducing
 a sufficient inverse-success allowance from quadratic in the number of cells to
 at most the smaller table dimension.
 
-**Evidence:** mathematical derivation with independent AI-agent review and
-exact finite checks. This output rule is not installed in the compiled sampler.
+**Evidence:** [compiled Lean proofs](../research/repair-accept/) of the actual
+physical repair fibers, stationary success, and fixed-bit bounded-retry law;
+an executable Python reference with exact finite tests; independent AI-agent
+mathematical and code review. This output rule is not installed in the compiled sampler.
 It neither lowers the verified `40,000d^17` unit-chain inverse-gap allowance nor
 supplies a new complete machine-time exponent. The construction uses elementary
 rejection sampling; no claim of a new general sampling technique is made.
@@ -101,11 +103,67 @@ supplies `K=40,000d^17` when the stated all-small conditions hold.
 
 The total transition allowance has leading factors `Kρ₀`, rather than
 `KL_*`, with the displayed logarithms retained. It does not include a complete
-bit-cost implementation. In particular, a uniform integer draw can use rejection
-from `ceil(log₂ ℓ)` fair bits, but that routine has unbounded worst-case retries.
-Capping it after `q` trials loses probability at most `2^-q`; across `R` attempts
-an additional `R·2^-q` must be included in the error budget. This small terminal
-obligation is separate from compiling the full modified sampler.
+bit-cost implementation.
+
+### Fixed-bit terminal and compiled error bound
+
+The implemented terminal replaces the ideal integer draw with **one `k`-bit
+word** `j`, accepting when
+
+\[
+ j<\left\lfloor{2^k c\over\ell(A)}\right\rfloor.
+\]
+
+This uses no random-retry loop. Its acceptance probability rounds downward from
+`c/ℓ(A)` by less than `2^-k`. If each independently restarted endpoint has total
+variation at most `δ` from uniform physical stationarity, the first accepted
+table with a fixed feasible fallback after `R` attempts obeys
+
+\[
+ \operatorname{TV}(\mathrm{output},\mathrm{Uniform})
+ \le (1-c/L_*)^R+R(\delta+2^{-k}).
+\]
+
+This is the compiled theorem
+`Math115.RepairAcceptancePhysical.physical_finiteBit_retry_variation`.
+Its repair map is the actual reduced physical map, and its terminal denominator
+is the support formula above. The proof derives the fiber bounds from positive
+all-small margins. It assumes endpoint accuracy; it does not identify the
+modified output with the existing encoded machine. Rounding can bias the law
+conditioned on acceptance: the displayed bound is for the complete output with
+fallback.
+
+For `0<ε<1`, one sufficient allocation is
+`R=ceil(ρ₀ log(3/ε))`, endpoint error `δ≤ε/(3R)`, and
+`k≥ceil(log₂(3R/ε))`. The three terms then sum to at most `ε`. The walk bound
+above can supply the endpoint premise for the stated chain.
+
+### Reference implementation
+
+[`RepairAcceptRule`](../src/contingency115/repair_accept.py) wraps the existing
+enumerated physical walker. It resets the state at each attempt while advancing
+one random stream, checks work caps before drawing, and reports actual attempts,
+physical steps, bits, and exhaustion. Its `error_bound` method requires a supplied
+endpoint error; it does not infer one from a short run.
+
+```python
+from contingency115.ideal_chain import build_rescaled_ideal_chain
+from contingency115.repair_accept import RepairAcceptRule
+from contingency115.tables import TableProblem
+
+chain = build_rescaled_ideal_chain(TableProblem((2, 2), (2, 2)), U=3, L=1)
+rule = RepairAcceptRule(chain)
+fallback = rule.repair(0)
+result = rule.run(attempts=8, steps_per_attempt=100, acceptance_bits=16,
+                  fallback=fallback, seed=115)
+print(result)
+```
+
+These small diagnostic settings demonstrate the API; they are not a claimed
+mixing schedule. A seed supplies reproducibility, while the probability theorem
+assumes independent fair words. Omitting `fallback` exposes exhaustion as
+`table=None`. Scope checks reject zero margins, extra cell bounds, and large
+blocks. The enumerated backend remains a small-instance reference.
 
 ## A useful alternative that did not beat the simple correction
 
@@ -119,7 +177,7 @@ conductances transfers the inverse-gap allowance to
 Independent review identified the missing comparison: scaled rejection achieves
 the same leading dimension allowance while keeping the original chain. Accepting
 with just `1/ℓ(A)` would have missed that gain. We therefore prefer the simpler
-terminal correction as the next formalization target. The reweighted chain is
+terminal correction and have now formalized its finite-bit law. The reweighted chain is
 retained as an experiment, without a claimed general advantage. Its numerical
 gap is smaller on the tested nonconstant-fiber cases.
 
@@ -163,7 +221,9 @@ all-small scope. Zero margins require a different support lower bound or an
 explicit preprocessing construction. General large-block completion fibers,
 weighted laws, and bounded-cell problems are outside this result.
 
-The remaining work is to formalize the fiber identity and terminal kernel,
-compose the finite-word acceptance error, and connect the changed output program
-to the existing unit walker. The selected/reference branch and the seven
+The remaining work for the unchanged chain is to connect the changed output
+program to the existing encoded unit walker and price its full work. A separate
+[defect-only chain](defect-trace.md) uses the same inverse-fiber construction to
+derive a smaller `d^16` inverse-gap allowance in this restricted regime; its
+physical Lean instantiation is still open. The selected/reference branch and the seven
 [numerical draw certificates](composed-complexity.md) remain separate work.

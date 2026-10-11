@@ -2,6 +2,13 @@
 
 An open EcoDataLab research project building on [OpenAI result #115](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/115.md). A contingency table allocates integer counts while preserving row and column totals. This repository studies mathematical guarantees and supplies exact reference tools for small or structured problems.
 
+New restricted-branch results:
+
+| Claim | Quantity and evidence | Scope and remaining work |
+|---|---|---|
+| [Repair-and-accept output](docs/repair-output.md) | Stationary inverse success ≤ `min(m,n)`; compiled actual-fiber and fixed-bit retry proofs, tested Python reference | Positive ordinary margins, all below the cutoff. Keeps the existing chain. Endpoint mixing remains an explicit premise; integration into the encoded sampler is open. |
+| [Accelerated defect chain](docs/defect-trace.md) | Inverse gap ≤ `2500d^16`, or `5000d^16` with dyadic proposal; reviewed mathematical derivation and exact finite checks | Positive all-small margins, `m,n≥2`. A changed chain with direct repair-fiber refresh. Generic star-elimination bridge compiled; physical instantiation and bounded transition draws remain open. This is not a runtime bound or a replacement for the general theorem below. |
+
 The [complete bounded-sampler research checkpoint](docs/outer-sampler-compiler-checkpoint.md) now connects the smaller `80,000d¹⁷` ideal-chain schedule to a fixed public machine. For equal-total natural margins and precision `h≥1`, its theorem gives feasible output on every random tape and total variation error at most `2^-h` within uniformly polynomial time. The supporting Lean modules and complete compiled-environment audit passed. The numerical full runtime exponent and practical speed remain unknown.
 
 The [default-target integration](docs/default-target-integration.md) imports those exact proved sources into the standard verification workflow. The expanded target passed [fresh hosted Linux verification](formal/results/linux-focused-5b4af40/README.md) at `5b4af40`: ordinary compilation, the focused named audit, and all 22 headline dependency closures. The cards below bind the current source to that receipt.
@@ -46,7 +53,8 @@ Other results include sharp ordinary-table tail and mean bounds, a dense-compati
 
 ## Starting points
 
-- [Repair-based output](docs/repair-output.md): a reviewed, not yet formalized terminal rule improves rejection in the positive all-small branch while preserving the existing chain.
+- [Repair-based output](docs/repair-output.md) and its [compiled research packet](research/repair-accept/): the actual repair fibers, bounded-bit terminal, retry error and executable reference.
+- [Defect-only acceleration](docs/defect-trace.md): a reviewed `d^16` inverse-gap derivation, direct transition construction, exact Schur-complement checks and remaining physical proof obligations.
 - [Further research directions](docs/research-directions.md): lessons from the complete integer-multiplication improvement sequence, and specific limits on transferring ideas from other fields.
 - [Reference implementation improvements](docs/implementation-benchmarks.md): reproducible weighted-draw, graph-traversal and heat-bath preparation gains, with cold-start and memory costs.
 - [Original research review](115/115-contingency-tables-review.md) and [source manifest](115/source-manifest.json): the preserved October 8, 2026 handoff, including hypotheses to test.

@@ -19,6 +19,14 @@ Boolean law and schedule. Its named audits are regenerated from saved receipts;
 its normal build used authenticated dependency reuse and a fresh aggregate root.
 The [status ledger](status.md) records current verification results and the
 [contributor handoff](handoff.md) separates the checked core from frozen research.
+
+The newer [repair-and-accept packet](../research/repair-accept/) is an additive
+research scope with its own statement/hypothesis table, fresh compilation,
+complete selected-module environment audit, and three headline dependency
+closures. Its actual-fiber and finite-bit retry theorems are not included in the
+default-target counts. The related [physical `d^16` derivation](defect-trace.md)
+has a compiled generic star-transfer lemma and exact finite checks; the numerical
+physical-chain theorem remains uncompiled.
 The later [complete bounded-sampler checkpoint](outer-sampler-compiler-checkpoint.md) provides separate research-overlay evidence for the literal machine, output law and uniform polynomial-time existence. The complete compiled-environment audit passed. Its exact statement map and evidence ledger are separate from these six historical default-target headlines. The numerical complete runtime degree and strict sampler replay remain open.
 
 The [historical Linux stage receipt](../formal/results/linux-focused-df469a5/README.md)

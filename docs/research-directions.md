@@ -69,13 +69,23 @@ Our existing padding and local-walk obstructions require the same care.
 
 ## Concrete directions for this repository
 
-**Use more of each endpoint.** The new [repair-output derivation](repair-output.md)
-is the most concrete mathematical result of this investigation. In the positive
+**Use more of each endpoint.** The [repair-output result](repair-output.md)
+now has compiled actual-fiber and finite-bit retry proofs. In the positive
 all-small regime it reduces a sufficient retry allowance to `min(m,n)` while
 keeping the proved chain. An initially more elaborate auxiliary-law change did
-not beat the simpler scaled-rejection comparison. The next step is its terminal
-kernel and finite-bit formalization, not a claim that the new rule is already
-part of the compiled machine.
+not beat the simpler scaled-rejection comparison. The next step is connecting
+the proved terminal law to the encoded walker; the new rule is not yet part
+of the compiled machine.
+
+**Eliminate a costly intermediate state exactly.** The [defect-only chain](defect-trace.md)
+uses a Schur complement to remove balanced repair stars, then samples the
+resulting within-fiber refresh directly. This changes the proposal normalization
+from quadratic in the number of cells to linear in `m+n`. The reviewed
+all-small allowance becomes `2500d^16` (`5000d^16` for dyadic proposals).
+The generic energy/variance transfer is compiled; the physical numerical
+instantiation and finite-bit transition implementation remain open. This is
+a concrete use of network elimination and block sampling, without assuming
+that an analogy with fast multiplication transfers its theorems.
 
 **Finish pricing the literal program.** The existing
 [affine degree refinement](composed-complexity.md) already separates output size
@@ -127,8 +137,9 @@ reachability by a linear graph traversal after reading the dense matrix. These
 are measured implementation gains in small-instance tools. They preserve the
 target laws and do not finish the general sampler's runtime proof.
 
-The practical priority is now: formalize the simpler endpoint correction; finish
-literal draw-cost certificates; test block/nonlocal kernels with exact laws and
+The practical priority is now: integrate the proved endpoint correction; close
+the physical and finite-bit obligations for the defect chain; finish literal
+draw-cost certificates. Further block/nonlocal kernels need exact laws and
 complete work accounting. E8 geometry and idle hosting currently provide
 inspiration about representation and resource use, with no direct sampling
 improvement established.
