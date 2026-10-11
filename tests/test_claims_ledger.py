@@ -1,4 +1,5 @@
 import copy
+import gzip
 import hashlib
 import importlib.util
 import json
@@ -23,7 +24,8 @@ class ClaimsLedgerTests(unittest.TestCase):
 
     def test_delivered_scopes_replay_and_linux_overlap_is_not_added(self):
         result = ledger.validate_ledger(ROOT, self.document)
-        self.assertEqual({k: v['count'] for k, v in result['scopes'].items()},
+        self.assertEqual({k: v['count'] for k, v in result['scopes'].items()
+                          if v.get('format') != 'compiled_environment'},
                          {'integrated-aggregate': 1242, 'aggregate': 869, 'encoded-completion': 46,
                           'physical-bridges': 193, 'boolean-schedule': 134, 'linux-focused': 863,
                           'linux-integrated': 1511})
@@ -129,6 +131,8 @@ class ClaimsLedgerTests(unittest.TestCase):
         self.assertIn('import Math115.PhysicalBooleanSampler', driver)
         self.assertIn('prefixes [Math115, OAI.ContingencyTables', driver)
         for claim in self.document['claims']:
+            if not any(e['receipt'] in self.document['disjoint_component_scopes'] for e in claim['evidence']):
+                continue
             for headline in claim['headlines']:
                 self.assertIn(headline['name'], driver)
         self.assertNotIn('#print axioms', driver)
@@ -152,7 +156,9 @@ class ClaimsLedgerTests(unittest.TestCase):
             self.assertNotIn('Current integrated aggregate',rendered)
         self.assertIn('docs/formal-verification.md',rendered)
         for claim in self.document['claims']:
-            if claim['evidence_class'].startswith('lean_'):
+            if claim['evidence_class'].startswith('lean_') and any(
+                    result['scopes'][e['receipt']].get('format') != 'compiled_environment'
+                    for e in claim['evidence']):
                 self.assertEqual([e['receipt'] for e in claim['evidence']],['linux-integrated'])
 
     def test_historical_changed_sources_cannot_be_promoted_to_current(self):
@@ -174,6 +180,145 @@ class ClaimsLedgerTests(unittest.TestCase):
         for path in ['/tmp/private', '../outside', '']:
             with self.subTest(path=path), self.assertRaises(ValueError):
                 ledger.local_path(ROOT, path)
+
+
+class CompiledResearchReceiptTests(unittest.TestCase):
+    """Synthetic parser fixtures; no synthetic receipt is claimed as a proof."""
+    def setUp(self):
+        temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(temporary.cleanup)
+        self.root = Path(temporary.name)
+        self.source = 'research/physical-spectral/formal/Research/PhysicalSpectral.lean'
+        source = self.root / self.source
+        source.parent.mkdir(parents=True)
+        source.write_text('namespace Math115.PhysicalSpectral\ntheorem headline : True := True.intro\n')
+        self.name = 'Math115.PhysicalSpectral.headline'
+        self.module = 'Research.PhysicalSpectral'
+        record = {'name': self.name, 'module': self.module, 'kind': 'theorem',
+                  'statement': 'True', 'dependencies': [], 'axioms': [],
+                  'standard_axioms': [], 'nonstandard_axioms': []}
+        self.audit = {'schema_version': 1, 'method': 'compiled Lean environment',
+                      'modules': [self.module], 'prefixes': [], 'imported_modules': [self.module],
+                      'declarations': [record], 'declaration_count': 1,
+                      'theorem_count': 1, 'theorem_names': [self.name],
+                      'headlines': [{'name': self.name, 'closure': [self.name], 'declarations': [record]}]}
+        self.objects = {self.module: 'b' * 64}
+        self.receipt = {'schema_version': 1, 'status': 'passed', 'scope': 'additive research fixture',
+                        'modules': [self.module], 'declaration_count': 1, 'theorem_count': 1,
+                        'compilation': [{'module': self.module, 'source': self.source,
+                                         'source_sha256': ledger.digest(source),
+                                         'returncode': 0, 'olean_sha256': 'b' * 64}],
+                        'headlines': [{'name': self.name, 'closure_size': 1, 'statement': 'True'}],
+                        'imported_objects_file': 'imported-objects.json.gz'}
+        self.binding = {'id': 'research', 'format': 'compiled_environment',
+                        'path': 'verification.json', 'status': 'passed', 'commit': None,
+                        'commit_kind': 'source_hashes_only', 'label': 'synthetic research',
+                        'scope': self.receipt['scope']}
+        # A separate old-format scope keeps the established default count path.
+        (self.root / 'AxiomAudit.lean').write_text('import Baseline\n#print axioms Baseline.test\n')
+        (self.root / 'axiom-audit.log').write_text("'Baseline.test' does not depend on any axioms\n")
+        baseline = {'status': 'passed', 'allowed_axioms': sorted(ledger.ALLOWED),
+                    'audit_declaration_count': 1,
+                    'audited_declarations': [{'name': 'Baseline.test', 'axioms': []}],
+                    'file_sha256': {p: ledger.digest(self.root / p)
+                                    for p in ['AxiomAudit.lean', 'axiom-audit.log']}}
+        (self.root / 'baseline.json').write_text(json.dumps(baseline))
+        default = {'id': 'default', 'path': 'baseline.json', 'sha256': ledger.digest(self.root / 'baseline.json'),
+                   'status': 'passed', 'commit': None, 'commit_kind': 'source_hashes_only',
+                   'label': 'synthetic default', 'scope': 'named default fixture'}
+        self.claim = {'id': 'research', 'title': 'fixture', 'english_claim': 'fixture',
+                      'quantity': 'fixture', 'evidence_class': 'lean_theorem',
+                      'hypotheses': ['fixture'], 'limitations': ['synthetic fixture'],
+                      'sources': [self.source],
+                      'headlines': [{'name': self.name, 'module': self.module, 'source': self.source}],
+                      'evidence': [{'receipt': 'research', 'scope': self.receipt['scope']}]}
+        self.document = {'schema_version': 1, 'receipts': [default, self.binding],
+                         'disjoint_component_scopes': ['default'], 'claims': [self.claim]}
+        self.save()
+
+    def save(self):
+        for filename, contents, key in [('audit.stdout.json.gz', self.audit, 'audit_sha256'),
+                                        ('imported-objects.json.gz', self.objects, 'imported_objects_sha256')]:
+            (self.root / filename).write_bytes(gzip.compress(json.dumps(contents).encode(), mtime=0))
+            self.receipt[key] = ledger.digest(self.root / filename)
+        (self.root / 'verification.json').write_text(json.dumps(self.receipt))
+        self.binding['sha256'] = ledger.digest(self.root / 'verification.json')
+
+    def test_actual_defining_module_binds_noncanonical_namespace_without_changing_counts(self):
+        result = ledger.validate_ledger(self.root, self.document)
+        self.assertEqual(result['summary_receipt_ids'], ['default'])
+        self.assertEqual(result['disjoint_count'], 1)
+        self.assertEqual(result['scopes']['research']['headline_origins'][self.name],
+                         {'module': self.module, 'source': self.source})
+        self.claim['headlines'][0]['module'] = 'Math115.PhysicalSpectral'
+        with self.assertRaisesRegex(ValueError, 'attribution differs from compiled'):
+            ledger.validate_ledger(self.root, self.document)
+
+    def test_headline_inventory_cannot_replace_a_requested_headline_or_source(self):
+        self.claim['headlines'][0]['name'] = 'Math115.PhysicalSpectral.omitted'
+        with self.assertRaisesRegex(ValueError, 'lacks named'):
+            ledger.validate_ledger(self.root, self.document)
+        self.claim['headlines'][0]['name'] = self.name
+        (self.root / 'Unrelated.lean').write_text('theorem unrelated : True := True.intro\n')
+        self.receipt['compilation'][0]['source'] = 'Unrelated.lean'
+        self.receipt['compilation'][0]['source_sha256'] = ledger.digest(self.root / 'Unrelated.lean')
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'module/source attribution differs'):
+            ledger.validate_ledger(self.root, self.document)
+        self.receipt['compilation'] = []
+        self.save()
+        with self.assertRaises(ValueError):
+            ledger.validate_ledger(self.root, self.document)
+
+    def test_changed_receipt_artifact_and_source_digests_are_rejected(self):
+        self.binding['sha256'] = '0' * 64
+        with self.assertRaisesRegex(ValueError, 'receipt digest'):
+            ledger.validate_ledger(self.root, self.document)
+        self.save()
+        (self.root / 'imported-objects.json.gz').write_bytes(b'changed')
+        with self.assertRaisesRegex(ValueError, 'artifact digest'):
+            ledger.validate_ledger(self.root, self.document)
+        self.save()
+        (self.root / 'audit.stdout.json.gz').write_bytes(b'changed')
+        with self.assertRaisesRegex(ValueError, 'artifact digest'):
+            ledger.validate_ledger(self.root, self.document)
+        self.save()
+        (self.root / self.source).write_text('changed source')
+        with self.assertRaisesRegex(ValueError, 'source bytes differ'):
+            ledger.validate_ledger(self.root, self.document)
+
+    def test_nonstandard_axioms_and_object_binding_changes_are_rejected(self):
+        self.audit['declarations'][0]['axioms'] = ['sorryAx']
+        self.audit['declarations'][0]['standard_axioms'] = ['sorryAx']
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'nonstandard/inconsistent axiom'):
+            ledger.validate_ledger(self.root, self.document)
+        self.audit['declarations'][0]['axioms'] = []
+        self.audit['declarations'][0]['standard_axioms'] = []
+        self.objects[self.module] = 'c' * 64
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'source/object hash binding'):
+            ledger.validate_ledger(self.root, self.document)
+
+    def test_failed_compilation_and_missing_headline_closure_are_rejected(self):
+        self.receipt['compilation'][0]['returncode'] = 1
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'compilation failed'):
+            ledger.validate_ledger(self.root, self.document)
+        self.receipt['compilation'][0]['returncode'] = 0
+        self.audit['headlines'][0]['declarations'] = []
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'closure records are incomplete'):
+            ledger.validate_ledger(self.root, self.document)
+
+    def test_research_counts_cannot_be_promoted_into_default_summary_or_disjoint_scope(self):
+        self.document['summary_receipt_ids'] = ['default', 'research']
+        with self.assertRaisesRegex(ValueError, 'default named-count summary'):
+            ledger.validate_ledger(self.root, self.document)
+        del self.document['summary_receipt_ids']
+        self.document['disjoint_component_scopes'].append('research')
+        with self.assertRaisesRegex(ValueError, 'default disjoint counts'):
+            ledger.validate_ledger(self.root, self.document)
 
 
 class CleanCloneSourceChecks(unittest.TestCase):

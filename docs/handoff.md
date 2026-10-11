@@ -4,17 +4,22 @@ Latest result: [quadratic-width transport](retained-root-spectrum.md) and
 [reciprocal padding growth](reciprocal-padding-growth.md) give a reviewed
 `431d⁸` rational / `862d⁸` dyadic inverse-gap allowance for arbitrary aspect
 ratios, and order d⁷ for bounded-aspect rectangles. The [formal packet](../research/retained-root/)
-records the compiled complete abstract spectral theorem and physical components,
-distinct from the open complete physical theorem.
+records the compiled complete abstract spectral theorem. The newer
+[physical assembly](physical-spectral-chain.md) proves full original-graph
+variance and the original normalized chain's automatic **`3442d⁹`** bound
+at the smaller scales, from dimensions at least two and equal natural-margin
+totals. The changed d⁸ defect trace remains a separate formal obligation.
 The [earlier validation receipt](../reports/retained-root-validation.json)
 retains its original d¹⁰ scope.
 
 Next integration tasks:
 
-1. Finish the physical assembly: same-width context, conditional variance,
-   edge ownership, repair and trace. The complete abstract spectral theorem,
-   exact positive-support restriction, actual correction cap and physical
-   support lemma now compile, including zero-stencil and singleton cases.
+1. Complete the changed defect trace: weighted harmonic elimination, the
+   actual defect-neighbor degree bound and normalized transition law. The
+   same-width physical context, conditional variance, edge ownership, repair
+   and original-chain normalization now compile. Preserve the distinction
+   between compiled d⁹ and reviewed d⁸; the [additional shape bounds](further-shape-bounds.md)
+   have their own narrower assumptions and formal interfaces.
 2. Instantiate the [frozen complete sampler](legacy-completion-backend.md)
    as the L=7 completion backend. Its existing arbitrary-margin law supplies
    availability; the new physical reindexing and adaptive fresh-word adapter
@@ -37,7 +42,8 @@ The original OpenAI source remains pinned at `fd4aeeb2ee4fc729c18d98444fed42fd05
 
 | Result or tool | Law or quantity | Evidence and boundary |
 | --- | --- | --- |
-| [Newest general defect refinement](retained-root-spectrum.md) | Inverse gap `431d⁸` rational / `862d⁸` dyadic; order d⁷ at bounded aspect | Reviewed physical assembly; compiled complete abstract spectral theorem and local/count/support/scalar components. Ordinary margins and ideal completions; new physical theorem and encoded integration remain open. |
+| [Newest general defect refinement](retained-root-spectrum.md) | Inverse gap `431d⁸` rational / `862d⁸` dyadic; order d⁷ at bounded aspect | Reviewed defect-trace assembly; compiled full original-graph variance and actual count bridge. Ordinary margins and ideal completions; new trace normalization and encoded integration remain open. |
+| [Original chain at smaller scales](physical-spectral-chain.md) | Inverse gap at most `3442d⁹`; sharper shape form `30976d⁷(m+n−2)²` | Actual chain, capacities, variance, acceptance and normalization compile; automatic d⁹ wrapper from `m,n≥2` and equal totals, including zeros. The complete machine still uses its earlier route. |
 | Ideal auxiliary-chain bound | Inverse spectral gap at most `80,000d¹⁷`, with `d=10+(m+1)(n+1)` | Checked Lean statements cover ordinary equal-total natural margins and automatic branches. Exact completion is an oracle operation. This bounds the ideal chain, not full machine runtime. |
 | Finite-word output law | Pointwise feasible output and total variation at most `2^-h` under uniform reserved bits | Checked typed-law and schedule components include zero margins and empty dimensions. This component uses noncomputable constructions; literal program identification has its own later research-overlay evidence. |
 | Encoded completion and schedules | Output semantics and polynomial charged component costs | Checked components include dense draws, signed decoding, retries, physical-fiber interfaces, and numeric reservations under their stated hypotheses. The complete public-machine result has separate research-overlay evidence; its numerical runtime degree remains unknown. |
@@ -104,7 +110,7 @@ Bootstrap downloads several GiB of dependencies. Serial mode controls concurrent
 
 - [Complete bounded sampler](outer-sampler-compiler-checkpoint.md): the exact thirteen-source overlay, successful normal compiler receipts, statement map, and current environment-audit evidence. The original [source archive](../research/outer-sampler/) and all failed attempts remain preserved. The promoted default target passed fresh hosted Linux verification; the earlier aggregate and Linux receipts retain their original scopes.
 - [Runtime degree](../research/runtime-degree/checkpoints/generic-helpers-v1/): seven exact helpers passed ordinary native compilation, with separate 47-name generic and 21-name arithmetic/scalar/seed audits. The [earlier conditional public-degree theorem](../research/runtime-degree/checkpoints/public-sampler-degree-v1/) passed ordinary native compilation and a three-name audit with degree `340·max(1,t)·max(e,6)`. The newer [affine refinement](../research/runtime-degree/checkpoints/affine-public-sampler-degree-v1/) replaces that envelope by `340·max(max(e,6),t)` for the same machine, with the same complete reserved-bit-count and supplied-word draw certificate hypotheses. Its ordinary native compilation, named axiom checks, and independent AI saved-artifact review passed. The [actual count/draw helper checkpoint](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/) now supplies `e=1008` for the exact complete count realizer; `t` remains missing and the conditional degree specializes to `340·max(1008,t)`. Its native Windows receipts and AI review have a separate scope from the default Linux result. The [composed complexity note](composed-complexity.md) explains the formula; the [earlier archive](../research/runtime-degree/) retains its failed and uncompiled versions. No numerical complete sampler exponent is known.
-- [Comparator serial work](../research/comparator-serial/): the archived offline tests are complemented by a separate [strict tiny-fixture pass](../formal/results/strict-comparator-smoke/README.md), including real exporter and default-kernel acceptance. It verifies the `True` fixture only. The [earlier full-challenge VM attempt](../formal/results/strict-comparator-vm-895b45c/README.md) remains a recorded memory failure before export. The [revised sampler challenge](../research/strict-sampler-challenge/) fixes the public machine in an exact standalone statement and preserves its initial startup failures. Its [configuration-repair successor](../research/strict-sampler-checkpoints/configuration-repair-v1/) passed offline tests and the formerly rejected configuration checks in a live startup attempt, then failed at an unnamed trusted import-cache directory. The original theorem, source freeze and strict checking rules are unchanged. The [unused-cache policy attempt](../research/strict-sampler-checkpoints/unused-cache-policy-v1/) reached its 600-second authentication deadline. Its [diagnostic successor](../research/strict-sampler-checkpoints/authentication-diagnostics-v1/) completed two full cache inventories before reaching the 1,800-second deadline during a third integrity recheck. Configuration/policy and direct-import resolution substeps completed; overall authentication, runtime freeze, plan and full proof checking remain incomplete. Complete logs retain those boundaries.
+- [Comparator serial work](../research/comparator-serial/): the archived offline tests are complemented by a separate [strict tiny-fixture pass](../formal/results/strict-comparator-smoke/README.md), including real exporter and default-kernel acceptance. It verifies the `True` fixture only. The [earlier full-challenge VM attempt](../formal/results/strict-comparator-vm-895b45c/README.md) remains a recorded memory failure before export. The [revised sampler challenge](../research/strict-sampler-challenge/) fixes the public machine in an exact standalone statement and preserves its initial startup failures. Its [configuration-repair successor](../research/strict-sampler-checkpoints/configuration-repair-v1/) passed offline tests and the formerly rejected configuration checks in a live startup attempt, then failed at an unnamed trusted import-cache directory. The original theorem, source freeze and strict checking rules are unchanged. The [unused-cache policy attempt](../research/strict-sampler-checkpoints/unused-cache-policy-v1/) reached its 600-second authentication deadline. Its [diagnostic successor](../research/strict-sampler-checkpoints/authentication-diagnostics-v1/) completed two full cache inventories before reaching the 1,800-second deadline during a third integrity recheck. That attempt stopped before overall authentication. The later [authenticated-plan checkpoint](../research/strict-sampler-checkpoints/authenticated-plan-v1/) passed both authentication and planning with the same checker bytes. Complete proof compilation, export and comparison remain unexecuted; historical failure logs retain their original boundaries.
 
 The `d¹⁷` inverse-gap bound, the proved `S¹⁷⁰` reserved-bit/input allowance, and the symbolic complete machine-time degree are different quantities. Here `S=m+n+clog₂(M+1)+h+1`, with numeric precision `h`. The reserved-bit envelope is not measured work or a known machine-runtime exponent.
 

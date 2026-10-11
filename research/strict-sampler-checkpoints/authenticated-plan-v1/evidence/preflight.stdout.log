@@ -1,0 +1,3 @@
+{"kernel": "7.3.0-8-generic", "uid": 1000, "landlock_abi": 11, "effective_capabilities": 0}
+Actual non-root systemd user service denies AF_UNIX and enforces NoNewPrivileges.
+Strict real Landrun allows the witness write, denies outside writes/TCP bind; systemd denies AF_UNIX.

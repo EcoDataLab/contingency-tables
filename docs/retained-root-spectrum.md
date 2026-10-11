@@ -5,8 +5,9 @@ The path coefficient improves from `N(N+1)+2KN` to **`N(N+1)+2K`**.
 Combined with the same physical transport and constant padding, this gives
 an arbitrary-aspect **d⁸ inverse-gap allowance**, and **d⁷ on bounded-aspect
 rectangles**. These are inverse-gap powers, not machine-time exponents.
-The local algebra compiles; the full variational and physical Lean assembly
-is still being completed. No human review or novelty claim is made.
+The complete variational theorem and full original-graph variance now compile.
+The new weighted defect trace still needs Lean assembly. No human review or
+novelty claim is made.
 
 ## Theorem
 
@@ -254,9 +255,12 @@ The [formal packet](../research/retained-root/) now compiles the complete
 abstract spectral theorem, including its attained Rayleigh minimum, prefix
 covariance estimates, correction summation and zero-stencil limit. It also
 compiles exact positive-support restriction, the actual boxed correction cap,
-physical support bounds and scalar envelopes. The full physical variance,
-edge-ownership and trace assembly remains open. Historical receipts stay tied
-to their original sources and scopes.
+physical support bounds and scalar envelopes. The newer
+[physical assembly](physical-spectral-chain.md) also compiles the actual
+context, exposure/edge ownership and full repair variance, then gives a d⁹
+bound for the original normalized chain at the smaller scales. The changed
+defect trace still needs its actual neighbor-degree and harmonic-normalization
+proofs. Historical receipts stay tied to their original sources and scopes.
 
 The [frozen earlier complete sampler](legacy-completion-backend.md) supplies
 an accurate arbitrary-margin completion law even at outer `L=7`. Its internal

@@ -102,8 +102,34 @@ SCOPES = {
         []),
 }
 
+# The physical assembly freshly compiles its existing research dependencies,
+# without copying their source files or changing the earlier receipt scopes.
+SCOPES["physical-spectral"] = (
+    [*SCOPES["retained-root"][0], *SCOPES["constant-padding"][0],
+     "Research.ReciprocalCount", "Research.RetainedContextVariance",
+     "Research.RetainedTransversalVariance", "Research.RetainedRepairSquare",
+     "Research.RetainedChainSquare", "Research.RetainedChainSquareTotal"],
+    ["Research.ReciprocalCount.one_unit_count_growth",
+     "Research.ReciprocalCount.shape_padding_count_le_twice",
+     "Research.SpectralRetained.retained_spectral_variance_bound",
+     "Math115.RetainedContextVariance.paperCapacity_context_variance_spectral_bound",
+     "Math115.RetainedTransversalVariance.paperCapacity_transversal_variance_spectral",
+     "Math115.RetainedRepairSquare.state_variance_square",
+     "Math115.RetainedChainSquare.chain_poincare_square",
+     "Math115.RetainedChainSquare.unitChain_poincare_square",
+     "Math115.RetainedChainSquare.selectedChain_poincare_shape_square",
+     "Math115.RetainedChainSquare.selectedChain_poincare_d9",
+     "Math115.RetainedChainSquareTotal.feasibleSquareChain_poincare_d9",
+     "Math115.RetainedChainSquareTotal.feasibleSquareChain_pi"],
+    [],
+)
+
 # Reuse source files shared with earlier packets instead of copying them.
 SOURCE_ROOTS = {
+    **{module: ROOT / "research/retained-root/formal"
+       for module in SCOPES["retained-root"][0]},
+    **{module: ROOT / "research/constant-padding/formal"
+       for module in SCOPES["constant-padding"][0]},
     "Math115.EffectiveWidthBound": ROOT / "research/effective-width/formal",
     "Math115.ReferenceEdgeAcceptance": ROOT / "formal",
     "Research.AcceptancePadding": ROOT / "research/shape-refinement/formal",

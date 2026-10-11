@@ -22,13 +22,35 @@ bounded-aspect class, including non-square rectangles.
 
 Compiled components include actual local transport, counting and acceptance,
 boxed correction caps, exact positive-support restriction, physical child
-support, the complete abstract spectral path theorem and scalar consequences. Their
-[packet](../research/retained-root/) gives exact statements and receipts.
-The complete new physical gap theorem remains open. The
+support, the complete abstract spectral path theorem and scalar consequences. The
+new [physical packet](../research/physical-spectral/) also proves actual
+exposure/edge ownership and full repair variance. The changed defect trace's
+neighbor geometry and normalized chain theorem remain open. The
 [frozen complete sampler](legacy-completion-backend.md) supplies mathematical
 completion availability at L=7; the new adapter, finite-word composition and
 encoded outer integration remain open. The full machine's existential theorem
 is unchanged, and no improved complete runtime exponent is claimed.
+
+## physical-spectral-gap
+
+`Math115.RetainedChainSquareTotal.feasibleSquareChain_poincare_d9` proves
+`Var≤3442d⁹ E` for the existing ideal selected-chain construction at
+`U=11d(m+n−2),L=7`. Finite ordered dimensions satisfy `m,n≥2`; natural margins
+have equal totals, with zeros included. The wrapper derives state existence,
+handles an empty small mask by zero profile variance, and preserves the
+completion-weight stationary law. A singleton profile may have many dense
+table completions.
+
+The [derivation](physical-spectral-chain.md) and
+[additive compilation receipt](../research/physical-spectral/results/verification.json)
+bind the actual capacity, context, exposure, repair, acceptance and original
+normalization proofs. The sharper guarded shape theorem retains
+`30976d⁷(m+n−2)²`. The automatic d⁹ headline has no supplied variance,
+completion-cap, feasibility or positive-small-cell premise.
+
+This is a complete inequality for a mathematical ideal chain. Its new scales
+have not replaced the earlier complete machine's parameters, and no smaller
+complete runtime exponent or practical speed advantage follows.
 
 ## Historical completed stage scope
 
@@ -74,6 +96,14 @@ receipt with its matching source digest, when a current receipt is recorded. The
 from declaration names and checked for overlap. The historical aggregate already included the formerly separate encoded-program, physical-bridge, and Boolean-law/schedule names; their historical receipt counts must not be added again. The later Linux focused run
 is a separate reproduction scope that overlaps the aggregate. A source list
 or a large count cannot verify a headline absent from the named audit.
+
+Additive research receipts use the `compiled_environment` format. The ledger
+checks their saved compilation/source bindings, compressed environment and
+imported-object digests, standard axioms, and complete headline dependency
+closures. A headline's defining module comes from the compiled environment;
+its namespace may differ from the source module. These receipts stay outside
+the default target's named-audit summary and disjoint counts. Replaying a saved
+receipt is not a new compilation.
 
 Some receipts bind an exact repository commit; others bind a checkout base
 commit plus selected source hashes, or source hashes without a recorded base

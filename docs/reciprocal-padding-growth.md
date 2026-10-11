@@ -1,7 +1,7 @@
 # Sequential padding using the reciprocal zero-cell bound
 
 11 October 2026. Independently reviewed mathematics by separate AI agents,
-with compiled scalar lemmas and exact count checks. This improves the
+with a compiled actual count bridge and exact count checks. This improves the
 preselected cutoff for bounded-aspect rectangles and gives an exact
 obstruction to a subquadratic cutoff for unrestricted thin shapes.
 
@@ -31,9 +31,12 @@ and does not prove this multiplicative one-increment formula.
 
 The subtract-one bijection and source counts are the existing
 SmallEntryTail.shifted_card / small_card_add_survival identities used in
-Math115.PaddingGrowth.one_unit_count_growth. Replacing its zero-entry
-bound is the new physical counting bridge; this bridge has an English
-proof and exact finite checks here, not a newly compiled Lean theorem.
+Math115.PaddingGrowth.one_unit_count_growth. The new
+`Research.ReciprocalCount.one_unit_count_growth` compiles this actual bridge,
+including zero margins, singleton dimensions and unequal-total empty fibers.
+Its [packet](../research/physical-spectral/) also proves the full marked-set
+increment induction, the twice-original bound and the preselected shape
+cutoff. No count-growth inequality is assumed as a caller premise.
 
 ## 2. All successive increments and exact incident-margin products
 
@@ -125,8 +128,10 @@ d−3s=(m−2)(n−2)+13≥13,
 so the rounded general allowances `431d⁸` and `862d⁸` follow. The simpler
 `3872d⁸` / `7744d⁸` envelopes use only `s≤d`.
 
-The full physical gap theorem remains reviewed mathematics. The compiled
-scalar statements do not assume or prove the missing global assembly. The
+The d⁸ defect-trace gap remains reviewed mathematics. The newer
+[physical assembly](physical-spectral-chain.md) compiles full original-graph
+variance and a d⁹ bound for the original normalized chain at these scales;
+the changed defect trace remains separate. The
 [frozen complete sampler](legacy-completion-backend.md) supplies mathematical
 completion availability at `L=7`; the new adapter, call schedule and encoded
 composition remain open. Zero margins are allowed by the count bounds;

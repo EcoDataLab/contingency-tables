@@ -10,15 +10,22 @@ uses ideal completions. These are inverse-gap powers, not runtime powers.
 The new proof uses a finite Rayleigh minimizer to retain the correction
 cancellations in the optimal path constant. It improves the context bound
 from `N(N+1)+2KN` to `N(N+1)+2K`. The [formal packet](../research/retained-root/)
-now includes the complete abstract spectral theorem and its zero-stencil
+includes the complete abstract spectral theorem and its zero-stencil
 limit, exact positive-support restriction, actual boxed moment/repair cap,
-physical support bound and scalar d⁸ consequences. The full new physical
-gap assembly remains open. The
+physical support bound and scalar d⁸ consequences. The newer
+[physical assembly](physical-spectral-chain.md) now compiles the actual
+context, exposure and full repair variance. Its original normalized ideal
+chain has an automatic **`3442d⁹`** theorem at the same smaller scales, from
+`m,n≥2` and equal natural-margin totals, including zeros. State existence
+and the empty small-mask branch are derived. The stronger d⁸ defect trace
+still needs its actual degree and harmonic-normalization proofs. The
 [exact matrix report](../reports/retained-spectrum.json) records 450 rational
 checks on 150 finite stencils; the proof is not inferred from those cases.
 
 The [reciprocal padding-growth proof](reciprocal-padding-growth.md) improves
-the cutoff using the full table's `m+n−2` parameter. It also proves an exact
+the cutoff using the full table's `m+n−2` parameter. Its actual one-increment
+count bridge and full marked-padding induction now compile, including the
+`L=7,U=11d(m+n−2)` count certificate. It also proves an exact
 thin-table obstruction: constant positive padding and padded/original count
 ratio at most two require a quadratic cutoff in that family. This constrains
 the current padding strategy, not the actual chain gap or every sampler.
@@ -36,16 +43,20 @@ The compiled d¹⁷ sampler re-proves the same existential theorem as upstream.
 The [composed comparison](composed-complexity.md#comparable-result-in-the-same-public-size-measure)
 is `S^1288` versus `S^170` for full reserved-bit upper allowances, with stated
 constants. Seven numerical draw certificates and strict Comparator acceptance
-remain open. At 18:48 UTC on 11 October, the bounded 8 GiB VM startup retry
-passed authentication and produced a runtime freeze; planning then began.
-No full sampler rebuild or Comparator acceptance has yet been produced.
+remain open. The [bounded 8 GiB VM startup retry](../research/strict-sampler-checkpoints/authenticated-plan-v1/)
+passed authentication **and planning** with unchanged strict checks. Its
+complete phase evidence and remaining reproduction limits are retained.
+Full proof compilation, export and Comparator acceptance remain unexecuted.
 
-The [current validation receipt](../reports/retained-spectrum-validation.json)
-records the fresh additive compilation and environment audit, including the
-complete abstract spectral theorem and all selected headline dependency
-closures. Only standard Lean axioms occur. The full Python verification
-workflow and exact finite experiments passed; trusted baseline imports and
-the remaining physical integration are explicit in the receipt.
+The [current validation receipt](../reports/physical-spectral-validation.json)
+records the fresh additive physical assembly and selected headline dependency
+closures, including the automatic d⁹ theorem and actual count bridge. Only
+standard Lean axioms occur. The [shape refinements](further-shape-bounds.md)
+separately describe stronger reviewed subclasses and their remaining formal
+interfaces. The [preceding receipt](../reports/retained-spectrum-validation.json)
+retains its exact d⁸ abstract/component scope and full Python verification.
+Trusted baseline imports and the remaining defect-trace and sampler integration
+are explicit; no default-target or strict-replay scope is enlarged.
 
 The [previous checkpoint receipt](../reports/retained-root-validation.json)
 retains its original d¹⁰ component scope. Historical source pins, receipts,

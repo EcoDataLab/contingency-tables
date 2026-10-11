@@ -70,6 +70,17 @@
       "commit_kind": "exact_repository_commit",
       "status": "passed",
       "scope": "Exact-commit hosted Linux focused 1511 named replay and fresh compiled-environment audit. No separate standalone named audits, Comparator or new runtime result."
+    },
+    {
+      "id": "physical-spectral",
+      "format": "compiled_environment",
+      "path": "research/physical-spectral/results/verification.json",
+      "sha256": "a643397626eda96d7deafed5eece055a12e90d7800388a2a0a5d023431ee897d",
+      "label": "Additive physical spectral and actual-count proof",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -85,7 +96,7 @@
         "Ordinary equal-total margins, m,n≥2, nonempty positive defect branch; U=11d(m+n−2), L=7, d=10+(m+1)(n+1). Exact uniform completion transitions."
       ],
       "limitations": [
-        "Reviewed physical assembly with a compiled complete abstract spectral theorem plus local, counting, support and scalar components. The complete new physical gap theorem and encoded outer integration remain open. This is not a runtime bound."
+        "Reviewed defect-trace assembly; actual original-graph full variance, count bridge and an original-chain d⁹ theorem are compiled. New defect degree/trace normalization and encoded outer integration remain open. This is not a runtime bound."
       ],
       "evidence_class": "reviewed_mathematics",
       "sources": [
@@ -96,6 +107,36 @@
       ],
       "headlines": [],
       "evidence": []
+    },
+    {
+      "id": "physical-spectral-gap",
+      "title": "Original chain at smaller scales",
+      "english_claim": "The actual original selected ideal chain at U=11d(m+n−2), L=7 has inverse-gap allowance 3442d^9, with automatic feasibility and small-mask cases.",
+      "quantity": "Inverse gap ≤ 3442d⁹",
+      "hypotheses": [
+        "Finite ordered dimensions m,n≥2; equal natural-margin totals, including zeros; d=10+(m+1)(n+1). Ideal completion transitions."
+      ],
+      "limitations": [
+        "Ordinary additive compilation with full headline dependency closures; trusted pinned compiler and baseline imports. This is the existing chain construction at new scales, not an updated complete sampler or runtime bound. The stronger d⁸ defect trace still needs formal assembly."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/physical-spectral-chain.md",
+        "research/physical-spectral/formal/Research/RetainedChainSquareTotal.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.RetainedChainSquareTotal.feasibleSquareChain_poincare_d9",
+          "module": "Research.RetainedChainSquareTotal",
+          "source": "research/physical-spectral/formal/Research/RetainedChainSquareTotal.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "physical-spectral",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
     },
     {
       "id": "ideal-inverse-gap",

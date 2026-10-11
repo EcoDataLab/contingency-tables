@@ -7,7 +7,9 @@ uses it to obtain `32p⁴U²` rational and `64p⁴U²` dyadic inverse-gap allowa
 With the [new padding cutoff](../../docs/reciprocal-padding-growth.md), these
 become **431d⁸ / 862d⁸** for arbitrary aspect ratios and order **d⁷** for
 bounded-aspect rectangles. The physical derivation is reviewed mathematics;
-its full graph/variance assembly is still open in Lean.
+its changed defect trace still needs Lean assembly. The subsequent
+[physical packet](../physical-spectral/) closes the actual context, exposure
+and full graph variance, and proves d⁹ for the original normalized chain.
 
 | English claim | Lean statement | Hypotheses and scope |
 |---|---|---|
@@ -19,7 +21,7 @@ its full graph/variance assembly is still open in Lean.
 | A positive-resistance path has an attained positive Rayleigh minimum and exact prefix flux. | `Research.SpectralPath.exists_path_rayleigh_minimizer` | `N≥1`, positive vertex masses and positive edge resistances. Compactness, first variation and the all-observable variational bound are proved, not assumed. |
 | Retaining all three correction terms gives the quadratic-width path bound. | `Research.SpectralRetained.retained_spectral_variance_bound` | Positive unimodal masses, nonnegative corrections, interior cap `c_l≤K max(z_(l−1),z_l)`, nonnegative stencil `Xi_l`, and local contrast bound `(Δh_l)²≤Xi_l E_l`. Gives `N(N+1)+2K`, including `Xi_l=0`; no spectral or Poincare premise. |
 | The tight scalar repair expression is at most `2p³V²`. | `Math115.RetainedRootSquare.tight_fullCoefficient_bound` | Natural `p,V≥2`; context expression `(V−1)V+2(p−1)floor((V+1)²/4)`. This is a scalar implication, not the full physical gap theorem. |
-| The improved growth budget gives padded count at most twice original count. | `Research.GrowthRefinement.doubled_growth_twice` | A supplied product-count inequality, `H>0` and `47qs≤32H`. The ordinary-table reciprocal counting bridge is reviewed mathematics with exact count checks. |
+| The improved growth budget gives padded count at most twice original count. | `Research.GrowthRefinement.doubled_growth_twice` | A supplied product-count inequality, `H>0` and `47qs≤32H`. The actual ordinary-table bridge is compiled separately in `Research.ReciprocalCount`. |
 | New scales give `3872d⁶s²`, bounded-aspect d⁷ and rounded general d⁸. | `Research.GrowthRefinement.shape_gap_width_square`; `bounded_aspect_gap_width_square`; `arbitrary_aspect_width_square_integer` | Scalar hypotheses `p≤d`, `V≤11ds`, the `32p⁴V²` allowance, and respectively `s²≤Ad` or `3s+13≤d`. The complete physical scale/gap assembly is separate. |
 | All actual L=7 residual totals fit the completion cap. | `Math115.LegacyResidualCap.all_state_l7_cap` | Actual balanced/defect state; residual total at most original total plus `7RC`. The legacy completion law and remaining adapter are described [separately](../../docs/legacy-completion-backend.md). |
 
@@ -40,9 +42,10 @@ The general dimension bound works at the actual original capacity `U`, where
 small-cell classification directly gives the `U−1` support bound. The sharper
 instance helper reconstructs the whole context at effective width `V`; that
 graph/energy equivalence remains a reviewed mathematical argument. Conditional
-variance telescoping, physical edge ownership, repair and trace normalization
-must still be assembled with the same boxed context. The local theorem does
-not itself discharge the global `hB` and `hcap` obligations.
+variance telescoping, physical edge ownership and repair are now assembled in
+the [physical packet](../physical-spectral/), which also discharges `hB` and
+`hcap` using genuine paper capacity. The new defect trace and its normalization
+remain separate.
 
 ```sh
 python3 research/repair-accept/verify.py --scope retained-root \
