@@ -28,7 +28,8 @@ class CompletionBlockScales:
     local_completion_dimension: int | None
 
 
-def _scales(problem, large_row_count, large_column_count, padding, local_dimension):
+def _scales(problem, large_row_count, large_column_count, padding, local_dimension,
+            *, refined_growth=False):
     m, n = problem.shape
     rows, columns = problem.row_sums, problem.column_sums
     if m < 2 or n < 2 or m*n == large_row_count*large_column_count:
@@ -44,7 +45,10 @@ def _scales(problem, large_row_count, large_column_count, padding, local_dimensi
         raise ValueError("requires ordinary unrestricted margins")
     e = (m-1)*(n-1)
     g = large_row_count*large_column_count
-    cutoff = max(2, 2*padding, (47*g*padding*e+31)//32-1)
+    # The reciprocal zero-cell comparison gives the alternative full-table
+    # growth parameter m+n-2. Historical helpers retain their old cutoff.
+    growth = min(e, m+n-2) if refined_growth else e
+    cutoff = max(2, 2*padding, (47*g*padding*growth+31)//32-1)
     large_rows = tuple(i for i, r in enumerate(rows) if r >= cutoff)
     large_columns = tuple(j for j, c in enumerate(columns) if c >= cutoff)
     if len(large_rows) != large_row_count or len(large_columns) != large_column_count:
@@ -56,9 +60,12 @@ def _scales(problem, large_row_count, large_column_count, padding, local_dimensi
     a, b = m-large_row_count, n-large_column_count
     degree = defect_degree_bound(m, n, a, b)
     bits = (2*degree-1).bit_length()
-    # Retained-root transport gives CT <= p*V^3; the existing repair
-    # comparison then gives the reviewed full coefficient <= 2*p^3*V^3.
-    coefficient = 2*p**3*width**3
+    # Actual balanced children are <= V-1: their supported path diameter is
+    # at most V-1. Apply retained-stencil transport, then square-root repair.
+    # The global physical/encoded assembly remains open.
+    quarter_width = (width+1)**2//4
+    transversal = (width-1)*width + 2*(p-1)*quarter_width
+    coefficient = 2*p*p*transversal
     lower_fiber = max(a*(n*a-1), b*(m*b-1))
     margin_bound = max(max(rows)+large_column_count*padding,
                        max(columns)+large_row_count*padding)
@@ -94,8 +101,12 @@ def reduced_completion_scales(problem: TableProblem, *, large_row_count: int,
     acceptance theorem therefore supplies the same half-acceptance premise
     at the block-dependent padding. The compiled weighted-switch/convolution
     and physical reference-move proofs supply half acceptance at L=7 for
-    any nonempty block size. The global retained-root gap assembly remains open.
-    The cutoff and actual classification checks are shared with the older helpers.
+    any nonempty block size. For the full table's dimensions m,n and g=R*C,
+    set U=max(2,2L,ceil(47*g*L*min((m-1)*(n-1),m+n-2)/32)-1).
+    This uses the smaller of the original donor-pair growth comparison and
+    the reviewed reciprocal zero-cell comparison. Classification is checked
+    at this new cutoff; a classification at an older cutoff is insufficient.
+    The global retained-stencil gap assembly remains open.
 
     These are ideal-oracle inverse-gap allowances. The existing generic
     completion program requires stronger floors; this helper does not certify
@@ -106,7 +117,8 @@ def reduced_completion_scales(problem: TableProblem, *, large_row_count: int,
     smaller = min(large_row_count, large_column_count)
     donors = (large_row_count-1)*(large_column_count-1)
     padding = min(7, max(1, (3*donors+smaller-1)//smaller))
-    return _scales(problem, large_row_count, large_column_count, padding, None)
+    return _scales(problem, large_row_count, large_column_count, padding, None,
+                   refined_growth=True)
 
 
 def local_completion_scales(problem: TableProblem, *, large_row_count: int,

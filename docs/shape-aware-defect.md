@@ -1,6 +1,6 @@
 # Shape-aware defect proposals and completion scales
 
-This checkpoint is superseded in the general width power by [retained-root transport](retained-root-transport.md) and in completion padding by [constant padding](constant-padding.md). The proposal degree geometry remains in use. Its [scalar and block-floor components](../research/shape-refinement/) now have a separate fresh Lean receipt.
+This checkpoint is superseded in the general width power by [retained spectral transport](retained-root-spectrum.md) and in completion scales by [constant padding](constant-padding.md) and [reciprocal growth](reciprocal-padding-growth.md). The proposal degree geometry remains in use. Its [scalar and block-floor components](../research/shape-refinement/) retain their separate Lean receipt.
 
 11 October 2026. Mathematical derivations reviewed by a separate AI agent,
 with exact finite checks and a bounded reference implementation. The full

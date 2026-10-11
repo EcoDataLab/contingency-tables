@@ -1,5 +1,10 @@
 # One width power removed by retaining the correction stencil
 
+This is the earlier width-cubic argument. Its complete abstract mode-anchor
+theorem and actual boxed correction cap now compile. The newer
+[spectral argument](retained-root-spectrum.md) gives width squared and a
+reviewed general d⁸ inverse-gap allowance. The derivation below remains valid.
+
 11 October 2026. Reviewed mathematical assembly, with [compiled local transport,
 hard-limit and scalar components](../research/retained-root/). Retaining the
 negative correction terms removes one width power: the rational defect-chain
@@ -220,11 +225,11 @@ direct branch; it is not assigned an artificial spectral gap. Zero margins
 are allowed by the ordinary counting statements, while the current Python
 joint-output terminal still requires positive margins.
 
-The current generic completion program is proved at larger dimension-dependent
-floors, so it cannot simply be called at `L=7`. Blocks up to 2×2 have the
-separate bounded small-completion provider. A suitable general completion
-backend, the full global physical Lean assembly, complete outer schedule,
-and encoded runtime composition remain open.
+The generic dense completion program has larger dimension-dependent floor
+premises. The [frozen complete sampler](legacy-completion-backend.md) now
+supplies arbitrary-margin completion availability at `L=7`, using its own
+internal padding. Its new physical adapter, the full global physical Lean
+assembly, complete outer schedule and encoded cost composition remain open.
 
 ## Reproduce and review
 
@@ -238,8 +243,9 @@ PYTHONPATH=src python3 experiments/retained_root.py --output .local/reports/reta
 ```
 
 These finite checks support the implementation and boundary cases; the
-arbitrary-parameter assertion rests on the proof above. The next formal
-steps are the mode-anchor summation by parts, same-box moment/repair cap,
-conditional-variance telescoping and physical edge ownership, followed by
-trace normalization. A human MCMC or Lean review of those interfaces would
-be especially useful.
+arbitrary-parameter assertion rests on the proof above. Mode-anchor summation
+by parts, its complete path variance theorem, the same-box moment/repair cap
+and physical child support now compile in the expanded packet. Remaining
+physical steps include conditional-variance telescoping, edge ownership and
+trace normalization. The newer spectral proof has its own explicit scope.
+A human MCMC or Lean review of those interfaces would be especially useful.

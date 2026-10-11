@@ -2,6 +2,11 @@
 
 The subsequent [shape-aware move count](shape-aware-defect.md) improves this same-width allowance from `32p^4V^4` to `16p^4V^4` rational, and from `64p^4V^4` to `32p^4V^4` dyadic. The graph/width argument and scalar Lean receipt below are unchanged; their earlier valid normalization is retained for reproducibility.
 
+The newer [spectral transport proof](retained-root-spectrum.md) gives
+`32p⁴V²` rational and `64p⁴V²` dyadic. It reconstructs the entire boxed
+context and its correction kernel at the effective width before applying
+the reviewed graph and energy equivalence below.
+
 11 October 2026. Mathematical derivation reviewed by a separate AI agent, with
 exact finite checks and a [compiled scalar coefficient](../research/effective-width/).
 The graph equivalence and complete trace theorem still need physical Lean

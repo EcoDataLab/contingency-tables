@@ -1,25 +1,27 @@
 # Contributor handoff
 
-Latest additive checkpoint: [retained-root transport](retained-root-transport.md)
-and [constant completion padding](constant-padding.md) give a reviewed general
-`42592d¹⁰` rational / `85184d¹⁰` dyadic inverse-gap allowance. Actual local
-transport, the sharp zero-cell probability, directed L≥7 physical acceptance
-and scalar d¹⁰ implications have fresh Lean compiler/dependency evidence. The
-full global physical gap is still a mathematical assembly. The [validation
-receipt](../reports/retained-root-validation.json) records the tested code,
-formal scopes, exact experiments, optional SciPy backend and source review.
+Latest result: [quadratic-width transport](retained-root-spectrum.md) and
+[reciprocal padding growth](reciprocal-padding-growth.md) give a reviewed
+`431d⁸` rational / `862d⁸` dyadic inverse-gap allowance for arbitrary aspect
+ratios, and order d⁷ for bounded-aspect rectangles. The [formal packet](../research/retained-root/)
+records the compiled complete abstract spectral theorem and physical components,
+distinct from the open complete physical theorem.
+The [earlier validation receipt](../reports/retained-root-validation.json)
+retains its original d¹⁰ scope.
 
-The next mathematical/implementation tasks are concrete:
+Next integration tasks:
 
-1. Compile mode-anchor summation by parts, the same-box correction/repair cap,
-   conditional-variance telescoping and physical edge ownership, then assemble
-   the retained-root gap and trace normalization.
-2. Supply an accurate bounded completion backend at L=7 for general rectangles.
-   Small blocks already have a separate provider. The current generic completion
-   program is proved at stronger floors; its use at L=7 is not justified.
-3. Compose a complete general outer schedule with the bounded transition and
-   joint-output terminal, then prove its encoded realization/cost. The finite
-   killed-chain exhaustion bound is compiled; the infinite resolvent bias is not.
+1. Finish the physical assembly: same-width context, conditional variance,
+   edge ownership, repair and trace. The complete abstract spectral theorem,
+   exact positive-support restriction, actual correction cap and physical
+   support lemma now compile, including zero-stencil and singleton cases.
+2. Instantiate the [frozen complete sampler](legacy-completion-backend.md)
+   as the L=7 completion backend. Its existing arbitrary-margin law supplies
+   availability; the new physical reindexing and adaptive fresh-word adapter
+   remain to be implemented and compiled.
+3. Compose the complete outer schedule and joint-output terminal, then prove
+   encoded realization and charged cost. The finite killed-chain exhaustion
+   bound is compiled; the infinite resolvent bias is not.
 
 Keep the original compiled d¹⁷ route and its receipts distinct. It re-proves
 upstream's existential bounded-sampling statement; seven numerical draw
@@ -35,7 +37,7 @@ The original OpenAI source remains pinned at `fd4aeeb2ee4fc729c18d98444fed42fd05
 
 | Result or tool | Law or quantity | Evidence and boundary |
 | --- | --- | --- |
-| [Newest general defect refinement](retained-root-transport.md) | Inverse gap `42592d¹⁰` rational / `85184d¹⁰` dyadic | Reviewed global assembly; compiled local/count/acceptance/scalar components. Nonempty positive defect branch, ordinary margins and ideal completion calls; general L=7 completion implementation remains open. |
+| [Newest general defect refinement](retained-root-spectrum.md) | Inverse gap `431d⁸` rational / `862d⁸` dyadic; order d⁷ at bounded aspect | Reviewed physical assembly; compiled complete abstract spectral theorem and local/count/support/scalar components. Ordinary margins and ideal completions; new physical theorem and encoded integration remain open. |
 | Ideal auxiliary-chain bound | Inverse spectral gap at most `80,000d¹⁷`, with `d=10+(m+1)(n+1)` | Checked Lean statements cover ordinary equal-total natural margins and automatic branches. Exact completion is an oracle operation. This bounds the ideal chain, not full machine runtime. |
 | Finite-word output law | Pointwise feasible output and total variation at most `2^-h` under uniform reserved bits | Checked typed-law and schedule components include zero margins and empty dimensions. This component uses noncomputable constructions; literal program identification has its own later research-overlay evidence. |
 | Encoded completion and schedules | Output semantics and polynomial charged component costs | Checked components include dense draws, signed decoding, retries, physical-fiber interfaces, and numeric reservations under their stated hypotheses. The complete public-machine result has separate research-overlay evidence; its numerical runtime degree remains unknown. |
@@ -112,7 +114,7 @@ The `d¹⁷` inverse-gap bound, the proved `S¹⁷⁰` reserved-bit/input allowa
 2. **Review the mathematics against the interfaces.** Start with the ledger's ideal-chain and finite-word headline statements. Trace ordinary-margin assumptions through branch selection, state existence, completion accuracy at every physical state, and restarted output error, including empty and zero-margin cases. Promotion requires a mathematical review of those exact hypotheses and laws, alongside successful compiler receipts; a smaller exponent alone is insufficient.
 3. **Reproduce and review the integrated sampler.** The expanded target has passed a fresh hosted Linux build, 1,511 named audits and the complete selected environment audit. Use its exact receipt and all 22 headline closures to review the path from parsed margins through fresh bits, both branches, retries, fallback and printed output. Any proof/configuration change needs a new result for its own bytes; historical receipts retain their scopes.
 4. **Extract the numerical complete runtime degree.** Polynomial-time existence is proved for the compiled realization. Obtain explicit degrees and constants for its full work polynomial, retaining parsing, fresh random bits, all reserved trials, intermediate/output tree weights and physical-machine conversion. The [checked generic helpers](../research/runtime-degree/checkpoints/generic-helpers-v1/) and newer [affine public-degree refinement](../research/runtime-degree/checkpoints/affine-public-sampler-degree-v1/) reduce the remaining conditional envelope to `340·max(max(e,6),t)`. Use the accepted complete count certificate `e=1008` and supply the missing numerical draw degree `t` for the exact public-draw realizer, retaining the same codecs, assembled program and public size measure. Use the [seven-field draw handoff](../research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/README.md#remaining-numerical-draw-certificates) for the exact realizers and unresolved costs: printer, initial configuration, greedy fallback, branch test, reference packed trial, unit packed trial and retryWords. Expensive count computation does not inflate the affine-sized generated word. The [earlier multiplicative composition](../research/runtime-degree/checkpoints/public-sampler-degree-v1/) remains preserved; no practical speedup is claimed. `d¹⁷`, `S¹⁷⁰`, and symbolic compiler degrees cannot substitute for that derivation.
-5. **Complete strict checking.** A single 8 GiB serial-build VM retry with a 5,400-second authentication cap and 3,600-second plan cap was still authenticating at 18:20 UTC on 11 October, after successful installation and actual sandbox preflight. Check its saved status before starting any duplicate. No runtime freeze or strict sampler result exists yet. Start from the [captured authentication diagnostics](../research/strict-sampler-checkpoints/authentication-diagnostics-v1/). Installation and real sandbox probes passed; authentication reached its 1,800-second limit during a third full cache recheck. Two inventories of 131,021 files completed, with wrapper spans of about 336 and 252 seconds. The next performance investigation is the 734-second interval between the second inventory and final guard: the exact source snapshots cache metadata and constructs the guard there, but individual call costs remain unmeasured. Use those observations to plan a bounded authentication-and-plan attempt; sufficient limits remain unmeasured. Preserve every source-owner, cache-byte and filesystem-state check, indexed configuration provenance, cold submitted proofs and real sandbox probes. The runner binds a retained checking context; another Linux environment requires a separately reviewed origin and measured provenance. A portable outer supervisor and the full proof workload still need reproduction. Once runtime authentication and plan admission pass, compile, export and run built-in-kernel comparison for the exact [statement and solution](../research/strict-sampler-challenge/). Claim strict sampler acceptance only after its own complete successful log and scope-bound receipt exist. Earlier failure packets remain preserved.
+5. **Complete strict checking.** A single 8 GiB serial-build VM retry with a 5,400-second authentication cap and 3,600-second plan cap passed authentication at 18:48 UTC on 11 October, after successful installation and actual sandbox preflight. A runtime freeze was produced and planning began. Check its saved status before starting any duplicate. No full proof build or strict sampler acceptance exists yet. Start from the [captured authentication diagnostics](../research/strict-sampler-checkpoints/authentication-diagnostics-v1/). Installation and real sandbox probes passed; authentication reached its 1,800-second limit during a third full cache recheck. Two inventories of 131,021 files completed, with wrapper spans of about 336 and 252 seconds. The next performance investigation is the 734-second interval between the second inventory and final guard: the exact source snapshots cache metadata and constructs the guard there, but individual call costs remain unmeasured. Use those observations to plan a bounded authentication-and-plan attempt; sufficient limits remain unmeasured. Preserve every source-owner, cache-byte and filesystem-state check, indexed configuration provenance, cold submitted proofs and real sandbox probes. The runner binds a retained checking context; another Linux environment requires a separately reviewed origin and measured provenance. A portable outer supervisor and the full proof workload still need reproduction. Once runtime authentication and plan admission pass, compile, export and run built-in-kernel comparison for the exact [statement and solution](../research/strict-sampler-challenge/). Claim strict sampler acceptance only after its own complete successful log and scope-bound receipt exist. Earlier failure packets remain preserved.
 6. **Validate application models and performance.** Before acquiring new data, freeze a new public state/year selection and score protocol; test laws that represent spatial association against held-out released joints. Report interval widths with coverage, dependence, source processing, and failure cases. Separately benchmark a completed sampler against methods for identical laws and constraints, retaining setup, memory, effective-sample/accuracy costs, and work-budget failures. Broader model-validity and performance claims require these new observations; the current worker-library timing and single-state backtest do not establish them.
 
 Contributions can tackle one obligation at a time. State the quantity, target law, assumptions, source revision, and evidence class in the result itself; preserve negative results and earlier receipts. See [CONTRIBUTING](../CONTRIBUTING.md) for review and reproduction expectations.

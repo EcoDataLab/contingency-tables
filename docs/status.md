@@ -1,46 +1,55 @@
 # Research status
 
-The newest [retained-root transport argument](retained-root-transport.md), combined
-with [constant completion padding](constant-padding.md), gives a reviewed general
-rational inverse-gap allowance **`42592d¹⁰`**, or **`85184d¹⁰`** for dyadic
-proposals, with no aspect-ratio restriction. Here `d=10+(m+1)(n+1)`,
-`U=11d²,L=7`; a nonempty positive defect branch and ideal completions are
-required. The complete new physical gap theorem is not yet compiled.
+The newest [retained spectral argument](retained-root-spectrum.md) gives a
+reviewed general rational inverse-gap allowance **`431d⁸`**, or **`862d⁸`**
+for dyadic proposals. Its sharper expression `3872d⁶(m+n−2)²` is **order d⁷
+for bounded-aspect rectangles**, including non-square tables. Here
+`d=10+(m+1)(n+1)`, `U=11d(m+n−2),L=7`; the nonempty positive defect branch
+uses ideal completions. These are inverse-gap powers, not runtime powers.
 
-The actual ordinary-table zero-cell bound and every directed reference move's
-half acceptance at `L≥7` now compile, including singleton blocks. The retained
-local physical transport, hard-limit passage, correction shifts and scalar
-coefficient/d¹⁰ corollaries compile separately. The [killed-chain exhaustion
-bound](../research/spaced-attempts/#finite-killed-chain-exhaustion) also compiles;
-the infinite first-acceptance bias remains reviewed mathematics. Each additive
-packet has a fresh source-bound environment audit with full headline dependency
-closures. They overlap earlier imports and do not enlarge the historical
-default-target receipt. See the [current validation record](../reports/retained-root-validation.json)
-and [AI source review](retained-root-review.md).
+The new proof uses a finite Rayleigh minimizer to retain the correction
+cancellations in the optimal path constant. It improves the context bound
+from `N(N+1)+2KN` to `N(N+1)+2K`. The [formal packet](../research/retained-root/)
+now includes the complete abstract spectral theorem and its zero-stencil
+limit, exact positive-support restriction, actual boxed moment/repair cap,
+physical support bound and scalar d⁸ consequences. The full new physical
+gap assembly remains open. The
+[exact matrix report](../reports/retained-spectrum.json) records 450 rational
+checks on 150 finite stencils; the proof is not inferred from those cases.
 
-The reduced-padding Python helper chooses the smaller sufficient block-floor
-or constant-seven padding and checks classification at its computed cutoff.
-Exact checks include an executable 3×3 mixed case at `U=46,L=2`, 40 physical
-transport contexts, 3,000 abstract paths, and the weighted-switch probability
-and acceptance identities. A general completion backend at `L=7`, the global
-Lean variance assembly, complete general outer schedule and encoded integration
-remain open. The compiled generic completion program's larger floors cannot
-be silently removed.
+The [reciprocal padding-growth proof](reciprocal-padding-growth.md) improves
+the cutoff using the full table's `m+n−2` parameter. It also proves an exact
+thin-table obstruction: constant positive padding and padded/original count
+ratio at most two require a quadratic cutoff in that family. This constrains
+the current padding strategy, not the actual chain gap or every sampler.
+The reduced-padding Python scale helper uses the stronger reviewed coefficient
+and checks classification at its computed cutoff.
 
-The complete compiled d¹⁷ sampler **re-proves the same existential theorem as
-upstream** through a different machine. The [concrete composed comparison](composed-complexity.md#comparable-result-in-the-same-public-size-measure)
-is `S^1288` versus `S^170` for full reserved-bit upper allowances, with the stated
-constants; neither exponent is machine time. Seven numerical draw certificates
-remain open. The optional [SciPy worker wrapper](worker-baseline.md#optional-scipy-backend)
-and [post hoc commuting interval score](commuting-backtest.md) address practical
-use and model assessment separately. The 100 commuting cases overlap; a
-prospective distance-weighted backtest is specified but has not been run.
+The [frozen complete d¹⁷ sampler](legacy-completion-backend.md) supplies an
+accurate arbitrary-margin completion law at outer L=7, using its own internal
+padding. Residual totals and cap redundancy have new compiled proofs. The
+physical adapter, adaptive fresh-word allocation, complete outer schedule and
+encoded integration still need assembly; composing this backend does not
+establish improved complete runtime.
 
-As observed at 18:20 UTC on 11 October, one bounded strict-sampler VM retry
-has passed installation and actual sandbox preflight and is still authenticating.
-It uses 8 GiB, a serial-build configuration, a 5,400-second authentication cap
-and a 3,600-second plan cap. No runtime freeze, full proof run or Comparator
-acceptance has been produced. The prior failed receipts remain unchanged.
+The compiled d¹⁷ sampler re-proves the same existential theorem as upstream.
+The [composed comparison](composed-complexity.md#comparable-result-in-the-same-public-size-measure)
+is `S^1288` versus `S^170` for full reserved-bit upper allowances, with stated
+constants. Seven numerical draw certificates and strict Comparator acceptance
+remain open. At 18:48 UTC on 11 October, the bounded 8 GiB VM startup retry
+passed authentication and produced a runtime freeze; planning then began.
+No full sampler rebuild or Comparator acceptance has yet been produced.
+
+The [current validation receipt](../reports/retained-spectrum-validation.json)
+records the fresh additive compilation and environment audit, including the
+complete abstract spectral theorem and all selected headline dependency
+closures. Only standard Lean axioms occur. The full Python verification
+workflow and exact finite experiments passed; trusted baseline imports and
+the remaining physical integration are explicit in the receipt.
+
+The [previous checkpoint receipt](../reports/retained-root-validation.json)
+retains its original d¹⁰ component scope. Historical source pins, receipts,
+the commuting protocol and the archived 115 handoff are unchanged.
 
 ## Earlier checkpoints and compiled baseline
 

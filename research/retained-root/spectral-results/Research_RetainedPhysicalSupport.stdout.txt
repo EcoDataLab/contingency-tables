@@ -1,0 +1,9 @@
+'Math115.RetainedPhysicalSupport.positive_physical_child_le_original' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.RetainedPhysicalSupport.small_margin_le_effectiveWidth_pred' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.RetainedPhysicalSupport.positive_physical_support_diameter' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -17,7 +17,7 @@ and `C₀=12672000000·37^62`:
 | Pinned upstream | `W ≤ 344^644 S^1288` | `1288·natDegree(P_U)`, still symbolic |
 | This repo's compiled d¹⁷ route | `W ≤ C₀·5^85 S^170` | `170·natDegree(P_L)`, still symbolic |
 | Dense-compatible d²⁵ chain | No separate assembled bit-bank theorem | Unknown |
-| New reviewed d¹⁰ defect chain | Completion/outer-program composition still open | Unknown |
+| New reviewed d⁸ defect chain (d⁷ at bounded aspect) | Frozen older sampler supplies completion availability; new adapter/outer-program composition still open | Unknown |
 
 The two bank bounds use the same `S` and include every reserved transition,
 completion retry, terminal draw and unused bit. They are upper allowances,

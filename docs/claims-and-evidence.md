@@ -13,14 +13,22 @@ receipts retain their narrower scope.
 
 ## retained-defect-gap
 
-The [retained-root transport](retained-root-transport.md) and
+The [retained spectral argument](retained-root-spectrum.md),
+[reciprocal padding growth](reciprocal-padding-growth.md) and
 [constant-padding proof](constant-padding.md) give the reviewed rational
-inverse-gap allowance `42592d^10` (`85184d^10` dyadic) at `U=11d²,L=7`.
-This applies to the ordinary-table defect branch, including arbitrary
-rectangular aspect ratios, with exact uniform completion transitions.
-Compiled local transport, counting, actual physical acceptance and scalar components have their own receipts;
-the complete physical gap theorem and a generic completion backend at L=7
-remain open. The full machine's existential theorem is unchanged.
+inverse-gap allowance `431d⁸` (`862d⁸` dyadic) at `U=11d(m+n−2),L=7`.
+The sharper expression is `3872d⁶(m+n−2)²`, giving order `d⁷` on any
+bounded-aspect class, including non-square rectangles.
+
+Compiled components include actual local transport, counting and acceptance,
+boxed correction caps, exact positive-support restriction, physical child
+support, the complete abstract spectral path theorem and scalar consequences. Their
+[packet](../research/retained-root/) gives exact statements and receipts.
+The complete new physical gap theorem remains open. The
+[frozen complete sampler](legacy-completion-backend.md) supplies mathematical
+completion availability at L=7; the new adapter, finite-word composition and
+encoded outer integration remain open. The full machine's existential theorem
+is unchanged, and no improved complete runtime exponent is claimed.
 
 ## Historical completed stage scope
 

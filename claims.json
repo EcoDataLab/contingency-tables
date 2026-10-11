@@ -79,18 +79,20 @@
     {
       "id": "retained-defect-gap",
       "title": "General defect-chain refinement",
-      "english_claim": "Retained-root transport and dimension-independent completion padding give a rational inverse-gap allowance 42592*d^10, or 85184*d^10 with dyadic proposals.",
-      "quantity": "Inverse gap ≤ 42,592d¹⁰ rational; 85,184d¹⁰ dyadic",
+      "english_claim": "The retained spectral argument and reciprocal padding growth give a rational inverse-gap allowance 431*d^8 (862*d^8 dyadic) for arbitrary aspect ratios, and order d^7 for bounded-aspect rectangles.",
+      "quantity": "Inverse gap ≤ 431d⁸ rational; 862d⁸ dyadic; O(d⁷) at bounded aspect",
       "hypotheses": [
-        "Ordinary equal-total margins, m,n≥2, nonempty positive defect branch; U=11d², L=7, d=10+(m+1)(n+1). Exact uniform completion transitions."
+        "Ordinary equal-total margins, m,n≥2, nonempty positive defect branch; U=11d(m+n−2), L=7, d=10+(m+1)(n+1). Exact uniform completion transitions."
       ],
       "limitations": [
-        "Reviewed mathematical assembly with compiled local transport, counting and scalar components. The complete new physical gap theorem is not yet compiled; the generic completion backend is not yet justified at L=7. This is not a runtime bound."
+        "Reviewed physical assembly with a compiled complete abstract spectral theorem plus local, counting, support and scalar components. The complete new physical gap theorem and encoded outer integration remain open. This is not a runtime bound."
       ],
       "evidence_class": "reviewed_mathematics",
       "sources": [
-        "docs/retained-root-transport.md",
-        "docs/constant-padding.md"
+        "docs/retained-root-spectrum.md",
+        "docs/reciprocal-padding-growth.md",
+        "docs/constant-padding.md",
+        "docs/legacy-completion-backend.md"
       ],
       "headlines": [],
       "evidence": []

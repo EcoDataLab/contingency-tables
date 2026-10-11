@@ -4,7 +4,7 @@
 half-acceptance specialization are [compiled in Lean](../research/constant-padding/),
 with environment-derived dependency audits and separate AI-agent reviews.
 No outside human review or novelty claim is made. This gives the constant
-padding used in the [reviewed general d¹⁰ gap derivation](retained-root-transport.md).
+padding used in the [reviewed general d⁸ gap derivation](retained-root-spectrum.md).
 
 Let R,C>=2, let row/column margins be nonnegative integers with equal totals,
 and assume the ordinary unrestricted table fiber is nonempty. Let a be the
@@ -129,11 +129,10 @@ hypotheses and supplied reference indices. Singleton dimensions use the
 existing zero-donor theorem; empty completion rectangles are excluded by the
 reference indices and belong to the existing alternate branch.
 
-The new theorem does not supply a general completion oracle with a
-cost/accuracy contract at `L=7`. The existing generic completion program needs
-larger dimension-dependent floors, so replacing its padding argument alone
-would be unjustified. Nor does this theorem assemble a complete sampler or
-the new global spectral-gap proof.
+The acceptance theorem alone does not construct the completion draw. The
+[frozen complete sampler](legacy-completion-backend.md) supplies an accurate
+arbitrary-margin backend at outer `L=7`, using its own internal padding.
+Its new physical adapter and complete cost composition remain open.
 
 ## Smaller blocks and the padding-growth guard
 
@@ -144,7 +143,8 @@ can choose
 `L=min(7,max(1,ceil(3(R-1)(C-1)/min(R,C))))`.
 
 For 2×2 completions this is `L=2`. After choosing L, the helper uses
-`U=max(2,2L,ceil(47RCL(m-1)(n-1)/32)-1)` and verifies that exactly the
+`U=max(2,2L,ceil(47RCL·min((m-1)(n-1),m+n-2)/32)-1)`, using the
+[reciprocal growth proof](reciprocal-padding-growth.md), and verifies that exactly the
 requested rows and columns are large at that cutoff. The original full-table
 donor count is essential in this count-growth guard. For example, the 4×4
 margins `(2,1,1,1)` at `U=2` leave a 1×1 completion block with zero internal
