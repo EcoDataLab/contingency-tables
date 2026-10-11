@@ -1,5 +1,9 @@
 # Bounded both-small defect sampler: complete error schedule and work allowance
 
+This retained schedule restarts from a fixed state. The later
+[spaced-attempt schedule](spaced-defect-sampling.md) pays for its cold burn once
+and improves the operation allowance while preserving the same ideal chain.
+
 11 October 2026. Mathematical composition for the direct reference implementation in `src/contingency115/defect_chain.py`. This uses the independently reviewed [variable-capacity gap derivation](rectangular-defect.md) on **positive ordinary both-small margins**, `m,n>=2`; it is not a compiled bit-machine cost theorem or a result for the nonempty completion branch.
 
 The schedule below gives total variation error at most `epsilon`. At

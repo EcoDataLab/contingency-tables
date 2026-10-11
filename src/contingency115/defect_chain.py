@@ -73,6 +73,89 @@ class DefectSample:
         return self.table is None or self.fallback_used
 
 
+@dataclass(frozen=True)
+class SpacedDefectSchedule:
+    """Mathematical both-small schedule; its worst-case work is very large.
+
+    The inverse-gap premise is the reviewed rectangular derivation, not an
+    independently compiled physical theorem. Counts describe integer work
+    and fair bits, not machine runtime. No walk is executed by this object.
+    """
+
+    inverse_gap_bound: int
+    attempts: int
+    burnin_steps: int
+    spacing_steps: int
+    refresh_bits: int
+    terminal_bits: int
+    channel_bits: int
+    burnin_mixing_delta: F
+    spacing_l2_contraction: F
+
+    @property
+    def planned_steps(self) -> int:
+        return self.burnin_steps + (self.attempts - 1) * self.spacing_steps
+
+    @property
+    def planned_fair_bits(self) -> int:
+        return (self.planned_steps * (self.channel_bits + 2 * self.refresh_bits)
+                + self.attempts * self.terminal_bits)
+
+
+def _validate_unit_problem(problem: TableProblem, U: int) -> None:
+    _integer(U, "U", positive=True)
+    m, n = problem.shape
+    if m < 2 or n < 2:
+        raise ValueError("requires at least two rows and two columns")
+    if any(value <= 0 for value in problem.row_sums + problem.column_sums):
+        raise ValueError("requires positive margins")
+    if not (all(value < U for value in problem.row_sums) or
+            all(value < U for value in problem.column_sums)):
+        raise ValueError("requires one entire margin side strictly below U")
+    if sum(problem.row_sums) != sum(problem.column_sums):
+        raise ValueError("requires equal margin totals")
+    if any(problem.lower_bounds[i][j] or problem.upper_bounds[i][j] !=
+           min(problem.row_sums[i], problem.column_sums[j])
+           for i in range(m) for j in range(n)):
+        raise ValueError("requires ordinary unrestricted margins")
+
+
+def _ceil_log2(value: F) -> int:
+    bits = max(0, value.numerator.bit_length() - value.denominator.bit_length())
+    return bits + (value.numerator > value.denominator << bits)
+
+
+def both_small_spaced_schedule(problem: TableProblem, *, U: int,
+                               epsilon: int | F) -> SpacedDefectSchedule:
+    """Construct the reviewed TV<=epsilon schedule without running the sampler.
+
+    Both entire margin sides must be below U. Explicit execution budgets are
+    still required by the chain; this function never raises those limits.
+    """
+    _validate_unit_problem(problem, U)
+    if not all(value < U for value in problem.row_sums + problem.column_sums):
+        raise ValueError("the schedule requires both margin sides strictly below U")
+    eps = _rational(epsilon, "epsilon")
+    if not 0 < eps < 1:
+        raise ValueError("epsilon must lie strictly between zero and one")
+    m, n = problem.shape
+    a, p = min(m, n), m * n
+    support = min(p, sum(problem.row_sums))
+    channel_bits = (2 * (2 * (m + n - 2) + 1) - 1).bit_length()
+    q = 1 << channel_bits
+    gap = 4 * q * p**2 * a**2 * U**4
+    l0 = _ceil_log2(4 / eps)
+    attempts = a * l0
+    lb = _ceil_log2(2 * attempts / eps)
+    burnin = gap * (p * _ceil_log2(F(U + 1)) + l0)
+    spacing = gap * lb
+    steps = burnin + (attempts - 1) * spacing
+    refresh = _ceil_log2(max(F(1), F(steps * (support + p - 1), q) / eps))
+    terminal = _ceil_log2(4 * attempts / eps)
+    return SpacedDefectSchedule(gap, attempts, burnin, spacing, refresh, terminal,
+                                channel_bits, F(1, 2 << l0), F(1, 1 << lb))
+
+
 def integer_draw_tv(stop: int, bits: int) -> F:
     """Exact TV of floor(stop*word/2**bits) against uniform range(stop)."""
     _integer(stop, "stop", positive=True)
@@ -105,25 +188,12 @@ class DyadicDefectChain:
 
     def __init__(self, problem: TableProblem, *, U: int, refresh_bits: int,
                  budget: DefectBudget | None = None):
-        _integer(U, "U", positive=True)
+        _validate_unit_problem(problem, U)
         _integer(refresh_bits, "refresh_bits")
         self.problem, self.U = problem, U
         self.budget = budget if budget is not None else DefectBudget()
         self.m, self.n = problem.shape
         self.p = self.m * self.n
-        if self.m < 2 or self.n < 2:
-            raise ValueError("requires at least two rows and two columns")
-        if any(value <= 0 for value in problem.row_sums + problem.column_sums):
-            raise ValueError("requires positive margins")
-        if not (all(value < U for value in problem.row_sums) or
-                all(value < U for value in problem.column_sums)):
-            raise ValueError("requires one entire margin side strictly below U")
-        if sum(problem.row_sums) != sum(problem.column_sums):
-            raise ValueError("requires equal margin totals")
-        if any(problem.lower_bounds[i][j] or problem.upper_bounds[i][j] !=
-               min(problem.row_sums[i], problem.column_sums[j])
-               for i in range(self.m) for j in range(self.n)):
-            raise ValueError("requires ordinary unrestricted margins")
         if self.p > self.budget.max_cells:
             raise ComputationBudgetExceeded("defect chain exceeded max_cells")
         if sum(v.bit_length() for v in problem.row_sums + problem.column_sums) + U.bit_length() > self.budget.max_input_bits:
@@ -241,17 +311,52 @@ class DyadicDefectChain:
         explicit None. The TV allowance concerns the default fallback law, not
         conditioning the finite-bit sampler on success.
         """
-        table = self.problem.validate_table(start_table)
         _integer(attempts, "attempts", positive=True)
-        _integer(steps_per_attempt, "steps_per_attempt")
-        _integer(terminal_bits, "terminal_bits")
         delta = _rational(endpoint_mixing_delta, "endpoint_mixing_delta")
         if delta > 1:
             raise ValueError("endpoint_mixing_delta must lie between zero and one")
+        return self._sample(start_table, attempts=attempts, first_steps=steps_per_attempt,
+                            later_steps=steps_per_attempt, reset=True,
+                            terminal_bits=terminal_bits, mixing_error=attempts * delta,
+                            rng=rng, use_fallback=use_fallback)
+
+    def sample_spaced(self, start_table: Table, *, attempts: int, burnin_steps: int,
+                      spacing_steps: int, terminal_bits: int,
+                      burnin_mixing_delta: int | F, spacing_l2_contraction: int | F,
+                      rng: FairBitSource | None = None,
+                      use_fallback: bool = True) -> DefectSample:
+        """Burn in once; keep the state after rejection and space later marks.
+
+        burnin_mixing_delta bounds the ideal first endpoint's TV from stationarity.
+        spacing_l2_contraction bounds the IDEAL spacing kernel's operator norm
+        on mean-zero L2(stationary). Neither bound is inferred from step counts.
+        Surviving subprobabilities, not rejection-conditioned stationary laws,
+        give the extra (attempts-1)*contraction/4 allowance. See
+        docs/spaced-defect-sampling.md. Rounding is charged for every planned
+        transition and mark. The TV statement uses the fixed feasible fallback.
+        """
+        _integer(attempts, "attempts", positive=True)
+        delta = _rational(burnin_mixing_delta, "burnin_mixing_delta")
+        contraction = _rational(spacing_l2_contraction, "spacing_l2_contraction")
+        if delta > 1 or contraction > 1:
+            raise ValueError("mixing and contraction bounds must lie between zero and one")
+        return self._sample(start_table, attempts=attempts, first_steps=burnin_steps,
+                            later_steps=spacing_steps, reset=False,
+                            terminal_bits=terminal_bits,
+                            mixing_error=delta + (attempts - 1) * contraction / 4,
+                            rng=rng, use_fallback=use_fallback)
+
+    def _sample(self, start_table: Table, *, attempts: int, first_steps: int,
+                later_steps: int, reset: bool, terminal_bits: int, mixing_error: F,
+                rng: FairBitSource | None, use_fallback: bool) -> DefectSample:
+        table = self.problem.validate_table(start_table)
+        _integer(first_steps, "first_steps")
+        _integer(later_steps, "later_steps")
+        _integer(terminal_bits, "terminal_bits")
         if not isinstance(use_fallback, bool):
             raise TypeError("use_fallback must be a bool")
-        planned_steps = attempts * steps_per_attempt
-        planned_bits = attempts * (steps_per_attempt * self.max_bits_per_step + terminal_bits)
+        planned_steps = first_steps + (attempts - 1) * later_steps
+        planned_bits = planned_steps * self.max_bits_per_step + attempts * terminal_bits
         for count, cap, name in ((attempts, self.budget.max_attempts, "max_attempts"),
                                  (planned_steps, self.budget.max_steps, "max_steps"),
                                  (planned_bits, self.budget.max_fair_bits, "max_fair_bits")):
@@ -260,16 +365,18 @@ class DyadicDefectChain:
         support_bound = min(self.p, sum(self.problem.row_sums))
         lower = max(self.m, self.n)
         error = DefectSampleError((1 - F(lower, support_bound)) ** attempts,
-                                  attempts * delta, planned_steps * self.transition_tv_bound,
+                                  mixing_error, planned_steps * self.transition_tv_bound,
                                   F(attempts, 1 << terminal_bits))
         values = tuple(value for row in table for value in row)
         receiver = next(i for i, value in enumerate(values) if value > 0)
         initial = self.defect(table, receiver, 0)
+        endpoint = initial
         source = rng if rng is not None else random.SystemRandom()
         used_steps = used_bits = refreshes = rejected = 0
         for attempt in range(1, attempts + 1):
-            endpoint = initial
-            for _ in range(steps_per_attempt):
+            if reset:
+                endpoint = initial
+            for _ in range(first_steps if attempt == 1 else later_steps):
                 move = self.step(endpoint, source)
                 endpoint = move.state
                 used_steps += 1

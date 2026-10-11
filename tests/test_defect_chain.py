@@ -2,12 +2,15 @@
 
 from collections import Counter, defaultdict
 from fractions import Fraction as F
+from itertools import product
 import unittest
 
 from contingency115.ideal_chain import PhysicalState, build_rescaled_ideal_chain
 from contingency115.kernels import ExactKernel
 from contingency115.tables import ComputationBudgetExceeded, TableProblem
-from contingency115.defect_chain import DefectBudget, DyadicDefectChain, integer_draw_tv
+from contingency115.defect_chain import (
+    DefectBudget, DyadicDefectChain, both_small_spaced_schedule, integer_draw_tv,
+)
 
 
 class Words:
@@ -278,6 +281,98 @@ class DefectBackendTests(unittest.TestCase):
             with self.assertRaises((TypeError, ValueError)):
                 chain.sample(table, attempts=1, steps_per_attempt=0, terminal_bits=1,
                              endpoint_mixing_delta=delta, rng=Words())
+
+    def test_spaced_complete_word_law_keeps_rejected_state(self):
+        """Compare all used words with an independent finite-kernel composition."""
+        chain = DyadicDefectChain(TableProblem((2, 2), (2, 2)), U=3, refresh_bits=0)
+        table = ((1, 1), (1, 1))
+        initial = chain.defect(table, 0, 0)
+        channels = 1 << chain.channel_bits
+        expected, restarted = defaultdict(F), defaultdict(F)
+        first = finite_row(chain, initial)
+        for state, mass in first.items():
+            repaired = chain.repair(state)
+            accept = F((2 << 1) // sum(v > 0 for row in repaired for v in row), 2)
+            expected[repaired] += mass * accept
+            restarted[repaired] += mass * accept
+            for law, output in ((finite_row(chain, state), expected), (first, restarted)):
+                for target, probability in law.items():
+                    result = chain.repair(target)
+                    success = F((2 << 1) // sum(v > 0 for row in result for v in row), 2)
+                    output[result] += mass * (1 - accept) * probability * success
+                    output[table] += mass * (1 - accept) * probability * (1 - success)
+        actual = Counter()
+        for ch1, coin1, ch2, coin2 in product(range(channels), range(2), range(channels), range(2)):
+            result = chain.sample_spaced(
+                table, attempts=2, burnin_steps=1, spacing_steps=1, terminal_bits=1,
+                burnin_mixing_delta=1, spacing_l2_contraction=1,
+                rng=Words(ch1, coin1, ch2, coin2))
+            actual[result.table] += 1
+            self.assertEqual(result.physical_steps, result.attempts)
+            self.assertEqual(result.fair_bits, result.attempts * (chain.channel_bits + 1))
+        self.assertEqual(sum(expected.values()), 1)
+        self.assertEqual({key: F(value, 4 * channels**2) for key, value in actual.items()}, dict(expected))
+        self.assertNotEqual(expected, restarted)
+
+    def test_spaced_error_budget_preflight_and_zero_spacing(self):
+        problem = TableProblem((2, 2), (2, 2))
+        table = ((1, 1), (1, 1))
+        chain = DyadicDefectChain(problem, U=3, refresh_bits=2)
+        rng = Words(1, 1, 1)
+        result = chain.sample_spaced(
+            table, attempts=3, burnin_steps=0, spacing_steps=0, terminal_bits=1,
+            burnin_mixing_delta=F(1, 10), spacing_l2_contraction=F(1, 4), rng=rng)
+        self.assertTrue(result.fallback_used)
+        self.assertEqual(result.table, table)
+        self.assertEqual(result.physical_steps, 0)
+        self.assertEqual(rng.widths, [1, 1, 1])
+        self.assertEqual(result.error.ideal_endpoint_mixing, F(1, 10) + F(2, 16))
+        self.assertEqual(result.error.transition_rounding, 0)
+        # This deliberately supplied contraction is only an input-contract test;
+        # it is not a valid contraction certificate for zero spacing steps.
+        for budget in (DefectBudget(max_attempts=1), DefectBudget(max_steps=3),
+                       DefectBudget(max_fair_bits=10)):
+            limited = DyadicDefectChain(problem, U=3, refresh_bits=2, budget=budget)
+            rng = Words()
+            with self.assertRaises(ComputationBudgetExceeded):
+                limited.sample_spaced(table, attempts=2, burnin_steps=2, spacing_steps=2,
+                    terminal_bits=1, burnin_mixing_delta=1, spacing_l2_contraction=1, rng=rng)
+            self.assertEqual(rng.widths, [])
+        for name in ("burnin_mixing_delta", "spacing_l2_contraction"):
+            for invalid in (-1, F(11, 10), 0.1):
+                kwargs = dict(burnin_mixing_delta=1, spacing_l2_contraction=1)
+                kwargs[name] = invalid
+                with self.assertRaises((TypeError, ValueError)):
+                    chain.sample_spaced(table, attempts=1, burnin_steps=0, spacing_steps=0,
+                                        terminal_bits=1, rng=Words(), **kwargs)
+
+    def test_spaced_schedule_exact_error_allocations_and_scope(self):
+        for problem in (TableProblem((2, 2), (2, 1, 1)),
+                        TableProblem((2, 1, 1), (2, 2))):
+            for epsilon in (F(1, 8), F(7, 8), F(1, 1000)):
+                schedule = both_small_spaced_schedule(problem, U=3, epsilon=epsilon)
+                chain = DyadicDefectChain(problem, U=3, refresh_bits=schedule.refresh_bits)
+                a, b = min(problem.shape), max(problem.shape)
+                support = min(chain.p, sum(problem.row_sums))
+                exhaustion = (1 - F(b, support)) ** schedule.attempts
+                mixing = schedule.burnin_mixing_delta + (schedule.attempts - 1) * schedule.spacing_l2_contraction / 4
+                rounding = schedule.planned_steps * chain.transition_tv_bound
+                terminal = F(schedule.attempts, 1 << schedule.terminal_bits)
+                self.assertLessEqual(exhaustion, epsilon / 4)
+                self.assertLessEqual(mixing, epsilon / 4)
+                self.assertLessEqual(rounding, epsilon / 4)
+                self.assertLessEqual(terminal, epsilon / 4)
+                self.assertEqual(schedule.planned_steps,
+                                 schedule.burnin_steps + (schedule.attempts - 1) * schedule.spacing_steps)
+                self.assertEqual(schedule.planned_fair_bits,
+                                 schedule.planned_steps * chain.max_bits_per_step + schedule.attempts * schedule.terminal_bits)
+                self.assertEqual(schedule.burnin_mixing_delta,
+                                 F(1, 2 << (schedule.attempts // a)))
+        with self.assertRaises(ValueError):
+            both_small_spaced_schedule(TableProblem((1, 1, 1), (2, 1)), U=2, epsilon=F(1, 8))
+        for epsilon in (0, 1, 2):
+            with self.assertRaises(ValueError):
+                both_small_spaced_schedule(TableProblem((2, 2), (2, 2)), U=3, epsilon=epsilon)
 
 
 if __name__ == "__main__":

@@ -1,5 +1,10 @@
 # Direct bounded defect sampler
 
+The later [spaced-attempt extension](spaced-defect-sampling.md) adds
+`sample_spaced` and `both_small_spaced_schedule`. It retains the current defect
+after rejection, has a reviewed dependent-attempt error proof, and improves the
+composed both-small operation allowance. The restarted API below is retained.
+
 [`DyadicDefectChain`](../src/contingency115/defect_chain.py) implements the
 [unit defect chain](defect-trace.md) without enumerating tables or physical
 states. It supports positive ordinary equal-total margins, at least two rows

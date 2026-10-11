@@ -1,5 +1,14 @@
 # Contributor handoff
 
+Latest additive checkpoint: [spaced attempts](spaced-defect-sampling.md),
+[effective small-cell width](effective-defect-width.md), and a nonenumerating
+balanced-neighbor catalog. Research and implementation proceeded together:
+new finite-law checks pass, and the scalar width coefficient has its own Lean
+packet. Next integrate the graph equivalence and weighted trace into physical
+Lean statements, formalize the dependent-attempt lemma, and compose bounded
+star-exit/oracle errors. Preserve the original cutoff for completion and
+padding. The new operation bound is not a complete bit-machine theorem.
+
 This stage leaves a checked mathematical and reference-algorithm core, reviewed measurements, and a complete bounded sampler integrated into the default target with fresh hosted Linux evidence. Start with the [claim ledger](claims-and-evidence.md), [formal verification record](formal-verification.md), and [research status](status.md). Their source-bound receipts determine the checked scope; a file's presence in the repository does not establish that it compiled or that its English claim was reviewed.
 
 The original OpenAI source remains pinned at `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`. Preserve its attribution, dependency pins, and historical receipts. Current research and the reviews labeled “independent” use separate AI agents reviewing AI-produced work within this project. Outside human MCMC, Lean, implementation, and application review is welcome. Native Windows checks used project-owned hardware; no outsider reproduction of those runs is claimed.

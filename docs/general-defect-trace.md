@@ -1,5 +1,10 @@
 # General weighted defect trace: mathematical derivation
 
+The later [effective-width result](effective-defect-width.md) sharpens this
+same chain's instance-dependent inverse-gap allowance to `32p^4V^4`, or twice
+that for the dyadic proposal. It does not lower the uniform worst-case `d^16`
+exponent. The scalar coefficient is compiled; physical assembly remains open.
+
 11 October 2026. A mathematical derivation reviewed by a separate AI agent,
 with exact finite checks. The changed accepted-conductance trace has inverse gap
 at most **20000d^16** at the ideal scales, including nonempty completion blocks.
@@ -185,9 +190,23 @@ uniformly. Family 4 is symmetric. This gives a uniform VALID physical neighbor
 of A, with local O(p) work and O(p) memory using simple scans, not O(p^2) list
 construction. Counts are geometry counts, not completion counts.
 
-The exact checker enumerates these families for evidence; its implementation
-uses O(p^2) enumeration intentionally. A production linear-scan sampler has
-not been written or compiled here.
+The [exact checker](../experiments/general_defect_trace.py) intentionally
+enumerates these families for finite evidence. The new
+[BalancedNeighborCatalog](../src/contingency115/general_neighbors.py) stores
+aggregate choices and implements rank, unrank, and one uniform integer draw
+without enumerating neighbors or completions. Prepared rank/sample work and
+metadata are O(p). Each catalog construction reads ordinary margins and builds
+geometry in O(m+n+p); `from_problem` additionally validates its full bound
+matrices in O(mn). That validation is per construction, with no global cache.
+There is no claim that repeatedly constructing catalogs realizes O(p) complete
+star transitions on every asymmetric input. Fixed geometry reuse remains an
+implementation optimization.
+
+The catalog checks and snapshots both physical views. Exhaustive tiny graph
+comparisons cover all five families, asymmetric and transposed inputs, zero
+slacks, capacity boundaries, and mutable-input regression. Its exact integer
+RNG interface is a reference law, not a bounded fair-bit realization. Accepted
+completion retries and a full general trace transition remain separate.
 
 ## Weighted harmonic trace and normalization
 
@@ -251,7 +270,9 @@ theorem. The successful neighbor law is c_by/S_b, because its unconditioned
 successful mass is c_by/[degree(b) w(b)]. Thus the resulting off-diagonal
 kernel is exactly P_D above, with no completion-count or star-sum normalizer.
 A star exit uses <=2 expected trials/dense-oracle calls. The initial accepted
-proposal uses at most one dense-oracle call. Geometry metadata and uniform-neighbor sampling take O(p) work per trial.
+proposal uses at most one dense-oracle call. Given a prepared catalog,
+uniform-neighbor sampling takes O(p) work per trial; catalog setup has the
+separate per-construction costs stated above.
 Completion matrix construction is charged to its oracle; the existing
 reference implementation scans the dense rectangle for translation acceptance.
 A sparse implementation can inspect only changed reference-star entries, but

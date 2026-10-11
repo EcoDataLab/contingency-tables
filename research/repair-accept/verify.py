@@ -28,6 +28,10 @@ SCOPES = {
         ["VariableWidthLimit"],
         ["OAI.ContingencyTables.IntegerWeightedTransport.integer_box_root_leaf_transport_widths_limit"],
         []),
+    "effective-width": (
+        ["Math115.EffectiveWidthBound"],
+        ["Math115.EffectiveWidthBound.refinedConstant_le_actual_width"],
+        []),
 }
 
 
