@@ -1,0 +1,8 @@
+'Math115.UnitRuntimeNext.typed_rawCodeNeighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.UnitRuntimeNext.typed_codeNeighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.UnitRuntimeNext.typed_stepCandidateViews' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.UnitRuntimeNext.typed_actual_unitWalk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.UnitRuntimeNext.typed_actual_unitTrialState' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.UnitRuntimeNext.typed_actual_unitPackedTrial' depends on axioms: [propext, Classical.choice, Quot.sound]
+Math115.UnitRuntimeNext.typed_actual_unitPackedTrial :
+  Math115.DegreeBounds.Typed Math115.LatticeUnitOuter.packedTrialRealizer 272019144737569436269241336269647035188617216

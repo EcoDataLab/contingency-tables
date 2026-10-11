@@ -42,8 +42,12 @@ adds degrees 4032 and 18, with a compiled-environment audit covering five
 complete headline closures. The [retry-word packet](../research/runtime-degree/checkpoints/actual-retry-degree-v1/)
 adds the exact parser degree 42914304 and 25 focused transitive axiom/type
 checks. Those new sources compiled locally with authenticated reused imports;
-separate AI source/evidence reviews passed. The two packed-trial certificates
-and full draw composition remain open, so the complete numerical sampler
+separate AI source/evidence reviews passed. The
+[unit packed-trial packet](../research/runtime-degree/checkpoints/actual-unit-degree-v1/)
+now closes the exact original program on every literal input, with degree
+`272019144737569436269241336269647035188617216` and six final standard-only
+transitive axiom/type readbacks. Separate AI source review passed. The reference
+packed trial and full draw composition remain open, so the complete numerical sampler
 degree is still unknown. The [current field table](composed-complexity.md#exact-draw-cost-certificates)
 gives the exact endpoint scope. These additive packets are outside the
 historical default Linux and strict Comparator scopes.

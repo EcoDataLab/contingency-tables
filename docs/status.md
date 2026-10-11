@@ -86,8 +86,14 @@ The [exact retry-word parser](../research/runtime-degree/checkpoints/actual-retr
 supplies degree 42914304, with 25 focused transitive axiom/type checks. All
 three cover charged work plus encoded output on arbitrary typed inputs;
 ordinary compilation and separate AI source reviews passed. The
+[exact unit packed-trial packet](../research/runtime-degree/checkpoints/actual-unit-degree-v1/)
+now supplies the further conservative degree
+`272019144737569436269241336269647035188617216`, with six final transitive
+type/axiom readbacks and separate AI source review. It retains the original
+neighbor construction, guarded walk, parser and terminal on every literal
+input. The
 [current field table](composed-complexity.md#exact-draw-cost-certificates)
-leaves the reference-completion and unit packed trials open, followed by
+leaves only the reference-completion packed trial open, followed by
 complete draw composition. A numerical machine-time exponent remains unknown.
 The [arbitrary-margin completion backend](legacy-completion-backend.md)
 supplies an accurate law at outer `L=7`; its physical adapter, adaptive word

@@ -123,20 +123,24 @@ the desired runtime bound.
 | `fallback` | 18 | [Named initial fallback](../research/runtime-degree/checkpoints/actual-initial-degree-v1/); the exact original greedy table program |
 | `retryWords` | 42914304 | [Retry-word parser](../research/runtime-degree/checkpoints/actual-retry-degree-v1/); all `RetryData`, including zero widths and short/surplus words; 25-name audit |
 | `referenceTrial` | **Open** | Exact `LatticeOuterProgram.packedTrialRealizer`, including the complete dense completion backend |
-| `unitTrial` | **Open** | Exact `LatticeUnitOuter.packedTrialRealizer`, including profile steps and output reconstruction |
+| `unitTrial` | 272019144737569436269241336269647035188617216 | [Exact unit packed trial](../research/runtime-degree/checkpoints/actual-unit-degree-v1/); original neighbor/filter/dedup, guarded walk, word parsing and output reconstruction on every literal input |
 
 The initialization packet's compiled-environment audit checks five complete
 headline closures; the retry packet has focused transitive type/axiom checks
 and also supplies exact division/quotient degree 4. Separate AI source reviews
-passed. The newly owned sources compiled locally with pinned Lean 4.34.1 and
+passed. The unit packet closes its exact named field with six final
+transitive axiom/type readbacks and a separate AI source review. Its very
+large degree comes from conservative proof composition; it does not describe
+observed execution time or a best possible exponent. The newly owned sources
+compiled locally with pinned Lean 4.34.1 and
 authenticated reused imports. These packets do not expand the historical
 default-target Linux or strict Comparator receipts. Prepared public
 reproduction commands are distinguished from executions actually recorded.
 
 The complete count certificate covers computing the reserved-bit number and
 encoding it in binary for every literal input. It does not bound generating
-the full numeric bank by degree 1008. Even after the two remaining field
-certificates are obtained, the exact complete draw must be assembled and
+the full numeric bank by degree 1008. After the remaining reference-trial
+certificate is obtained, the exact complete draw must be assembled and
 its degree inserted into the public-machine theorem.
 
 ## A common public size measure

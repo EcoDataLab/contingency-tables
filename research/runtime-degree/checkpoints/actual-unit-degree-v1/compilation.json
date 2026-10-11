@@ -1,0 +1,218 @@
+{
+  "compiler_version": "Lean4.34.1",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "original_unit_driver_sha256": "4b871f444decaedf184e2500a32367aa91366f6e12bd8e45ab5ca8305c8e4296",
+  "modules": [
+    {
+      "module": "UnitRuntime.WordChoiceDegree",
+      "owner": "unit-trial-cost",
+      "source_sha256": "90a10749f02a758b6e0f003dcb89a4370ee93a27f8e961c884af1893bc01db67",
+      "olean_sha256": "fa829503760f1a22a05c7edf2cdd997111a7c3cf3301ac246b124fbce9c9c26c",
+      "exit_code": 0,
+      "compiler_seconds": 17.356,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.ExchangeDegree",
+      "owner": "unit-trial-cost",
+      "source_sha256": "b7d1989fe6cf2067bd1fb4d3841711634af06d80c0596244c894ca4423ca0037",
+      "olean_sha256": "ee5b20249d6b99969af37a181f9c460a2362418bc158c4970f2a0da6eb8346db",
+      "exit_code": 0,
+      "compiler_seconds": 22.762,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.NeighborHelpers",
+      "owner": "unit-trial-cost",
+      "source_sha256": "5c204123a9a69d90d87a6fafadc2f9496871ef5b2cde275adefee4d6cbec93d7",
+      "olean_sha256": "4b6162a50a22f77abad761d5b29f54d324d44c1433d592093e964abc8a49d5a1",
+      "exit_code": 0,
+      "compiler_seconds": 15.831,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.RefinedExchangeDegree",
+      "owner": "unit-trial-cost",
+      "source_sha256": "b6d609f925a278284adcd54e3a49bd07aa21f320426811f50f900a8d868d8e0f",
+      "olean_sha256": "d5fb48b024ad56e02f8421094486fd1187f09782da64e07131a91a0301c2e803",
+      "exit_code": 0,
+      "compiler_seconds": 24.571,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "ReferenceRuntime.DecoderDegree",
+      "owner": "reference-trial-cost",
+      "source_sha256": "2b86c895c870cb76ecbb7b38e0310193cf1ce792be8af53d8cf761fa7450646a",
+      "olean_sha256": "01175e89179c526cdf5cffb543c143b00c2a8a7811c531ae6f2b080fd2da8096",
+      "exit_code": 0,
+      "compiler_seconds": 18.003,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.TerminalIndexDegree",
+      "owner": "unit-trial-cost",
+      "source_sha256": "49ac336eaab43eefd493304512224aacf4a79a9dafb1e56627e3128f7a234dc3",
+      "olean_sha256": "ad7fb1339e74fd3ff9689808ad5635d7d4e7b1c3ea08ac19c3444b9376909c4c",
+      "exit_code": 0,
+      "compiler_seconds": 23.295,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.TerminalDegree",
+      "owner": "unit-trial-cost",
+      "source_sha256": "d978423210bf8dac19bb795fa82650548336715138470ff92838841dd97cdf83",
+      "olean_sha256": "d0bd8a98a94b85b99b36d993c303cf87b6fcca83ea03d9af8ef3fdde4a455b62",
+      "exit_code": 0,
+      "compiler_seconds": 15.43,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.UnitParsingDegree",
+      "owner": "unit-trial-cost",
+      "source_sha256": "ea524482804f229a4c72abf1e94c83a24d82a58d79b14e012ecaf0300137f134",
+      "olean_sha256": "9e82f2c0057a7a710bd2a902b7d3492c33d46bd70252f5ba80246cdd443d01cf",
+      "exit_code": 0,
+      "compiler_seconds": 18.363,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.ProfileEqualityDegree",
+      "owner": "unit-trial-cost",
+      "source_sha256": "1a9026571f7e4a7847b4586a9ac4187d1db8153bb39f0e3d1da56ddda3bed026",
+      "olean_sha256": "f20614c75d4b49e4d441f03a562ce1307f1eb14e615c51ec8f98ce41c5a7bba8",
+      "exit_code": 0,
+      "compiler_seconds": 17.817,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.ProfilePatternDegree",
+      "owner": "unit-trial-cost",
+      "source_sha256": "5e95bc31f2655d8a4b15ccf6d7291ed47d9cce9187784788bcc7b599d992098a",
+      "olean_sha256": "1ff60d0372c88c93a00dbfd0b94fb152ddd9fc974fcc10edf475e82f3acb71bc",
+      "exit_code": 0,
+      "compiler_seconds": 22.359,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.ProfileMarginsDegree",
+      "owner": "unit-trial-cost",
+      "source_sha256": "99a1b2ed61f24099434a6b2e12852322e4b53ddab34a588e522b04f9d261724f",
+      "olean_sha256": "aac76832ebf64493ac93d444932d23507db8b3d301cf63842e5d67638a36d93e",
+      "exit_code": 0,
+      "compiler_seconds": 20.398,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.ProfileValidatorDegree",
+      "owner": "unit-trial-cost",
+      "source_sha256": "9254f52ae7cf64201fe7190740557299106297ddd3445dbaf28201e6891a815e",
+      "olean_sha256": "72aee874978d63615cc388407c7a2fe790b225c1debc70354d86aa6b03ff24f7",
+      "exit_code": 0,
+      "compiler_seconds": 40.478,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "AffineMapWith.Degree",
+      "owner": "affine-mapwith",
+      "source_sha256": "784150594b41a6b72b1930868833d502b94eca9046f4be846652e6d204a0a6b0",
+      "olean_sha256": "4ddbbb4495c975782efa3ab80cac8d9c375022181deaa6a80988ee8ecd5e31fe",
+      "exit_code": 0,
+      "compiler_seconds": 18.252,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "RepairRuntime.OutputHelpers",
+      "owner": "repair-trial-cost",
+      "source_sha256": "523f90c1724aa3466318fc3146db47ce8329cb0523a8f748e53e7164fa793390",
+      "olean_sha256": "99c3dda7242adfc260623af8a4a1203a34fce03f228febbd3d88282beec078bf",
+      "exit_code": 0,
+      "compiler_seconds": 19.802,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "RepairRuntime.BaseDegree",
+      "owner": "repair-trial-cost",
+      "source_sha256": "81fa2501fc72a76eb30d7316e718001891d9513ca0bede5cfc08eb109bf8782a",
+      "olean_sha256": "3bf8b72717ee8506a593efa778a136966febdc3465a6a42fd1825ebb181fdd65",
+      "exit_code": 0,
+      "compiler_seconds": 15.778,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "RepairRuntime.CodeOutput",
+      "owner": "repair-trial-cost",
+      "source_sha256": "a649a381377c39629fc164d17d79e681567e41651854162e6a3357babdcb46d3",
+      "olean_sha256": "b86dcab6c962d67f34e8177a101c72f1ba70c0fcf64c7f9f852af4345c9193d2",
+      "exit_code": 0,
+      "compiler_seconds": 28.074,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "RepairRuntime.RefinedCodeDegree",
+      "owner": "repair-trial-cost",
+      "source_sha256": "f303d5510c3783633596f3fc1bb8e5fdc5137c97cbc8aaca375f62748398a7fa",
+      "olean_sha256": "4daec990b951a01d246fcaf4acaefac36336dfcd6e33bc44c8c3eda96a27dfcb",
+      "exit_code": 0,
+      "compiler_seconds": 20.292,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "RepairRuntime.ListDegree",
+      "owner": "repair-trial-cost",
+      "source_sha256": "3dc967b20043191af8d47e5536dd1f045df480409993bcc627de396920122bd8",
+      "olean_sha256": "cfccab80f296664619389849570f290911fa1b840749e0973651c091c8d4e611",
+      "exit_code": 0,
+      "compiler_seconds": 29.292,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "RepairRuntime.InverseListDegree",
+      "owner": "repair-trial-cost",
+      "source_sha256": "eca78a5a90daa93131637352684466cc1274903f513d591387a3c143f1cd4363",
+      "olean_sha256": "1e4e8a218d64cf8a4728be1fdd73198465f1b644b17811ad400b62f22d798b15",
+      "exit_code": 0,
+      "compiler_seconds": 20.524,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.UnitPackedTrialDegree",
+      "owner": "unit-trial-cost",
+      "source_sha256": "81f35ab41e9ae26510cfa617ed92ba756d278792b3c2017d2bfe4bbd060a57c5",
+      "olean_sha256": "a0bee765d4d4b6a9ebe60beb00a54e730e017d73b48c1a6d4af5944dd987691d",
+      "exit_code": 0,
+      "compiler_seconds": 30.628,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    },
+    {
+      "module": "UnitRuntime.UnitPackedTrialAudit",
+      "owner": "unit-trial-cost",
+      "source_sha256": "f13277e6b5398e364aef5f051057386eee0f39275ca42b501e731eab92113f4b",
+      "olean_sha256": "77ebe14ea2991ed9b4e1c2d766aefa574d44022efe1e34b49615540e9db066ab",
+      "exit_code": 0,
+      "compiler_seconds": 15.729,
+      "threads": 2,
+      "memory_cap_mib": 8192
+    }
+  ],
+  "scope": "Ordinary local macOS compilation using authenticated preserved imports. Not default/strict audit or fresh platform replay."
+}

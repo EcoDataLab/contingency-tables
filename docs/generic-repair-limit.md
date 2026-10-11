@@ -89,3 +89,50 @@ and actual half acceptance. Incoming junctions charge the full repair law;
 the joint within-fiber noise and center-error identity avoids an artificial
 factor growing with h. This closes that energy comparison, but the general
 weighted center Poincare inequality remains unproved.
+
+## A limit on correlation-based shortcuts
+
+Spectral independence and fractional log-concavity offer possible tools for
+center transport, but a dimension-independent version fails for the actual
+marked law. This is an exact finite mathematical argument, not a Lean result
+or a lower bound for the unconditioned table chain.
+
+Take `(k+1)×(k+1)` margins `(1,…,1,T)` on both sides, with `k≥2` and
+`T≥U≥2`. The last row and column are large. Condition all selected entries
+outside an alternating `2k`-cycle in the small-by-small block to be zero.
+Exactly two balanced centers remain: its alternating perfect matchings
+`M0={(i,i)}` and `M1={(i,i+1 mod k)}`. Each has a unique dense completion
+`T+L` and positive repair and incidence mass. For example, moving one occupied
+small cell to another cell in its row creates a valid defect repairing back
+to that center, with positive designated acceptance.
+
+For either actual center law, write the two positive masses as `a,b`. Its
+conditional configuration polynomial is
+
+```
+f(z) = a ∏_(e in M0) z_e + b ∏_(e in M1) z_e.
+```
+
+Any live entry determines the matching. With `v=+1` on M0 and `−1` on M1,
+the off-diagonal influence matrix is `vvᵀ−I`, whose largest eigenvalue is
+`2k−1`, regardless of a,b. Positive external fields can balance the masses.
+At that point the Hessian of `log f(z^α)` is
+`α²vvᵀ/4−αI/2`; concavity requires `α≤1/k`. For k=2, the Hessian of f has
+two positive eigenvalues, so this configuration polynomial is neither
+Lorentzian nor denormalized Lorentzian (it is already square-free).
+
+The [fractional log-concavity/down-up result](https://arxiv.org/html/2102.02708v3)
+uses constant parameters and constant-sized resampled blocks for its stated
+efficient walk. Here retaining even one occupied cycle edge forces the same
+matching, so a down-up move on this conditional support must remove all k
+occupied edges. Growing blocks also need conditional marked-law weights;
+the existing uniform dense-completion callback does not provide them.
+The [Lorentzian table-counting result](https://arxiv.org/pdf/2008.05907)
+concerns a generating polynomial over different margins, which does not give
+that property for these fixed-margin configurations.
+
+Bounds growing with the number of small rows or columns remain possible.
+An adaptive cycle/block sampler with an efficient conditional law, followed
+by comparison to the physical DD/star energies, remains a research direction.
+The unconditioned physical chain can leave this pinned face, so this example
+does not obstruct a better general gap for that chain.
