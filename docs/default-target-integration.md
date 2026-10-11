@@ -4,9 +4,16 @@ The complete bounded-sampler theorem remains proved at the published `fe72b20` c
 
 This integration promotes the checkpoint's thirteen source files into `formal/Math115/` and imports them through the default root. Each file's SHA-256 must match its entry in the preserved [checkpoint ledger](../formal/results/native-sampler-checkpoint/checkpoint.json) and [source bundle](../formal/results/native-sampler-checkpoint/sources/Math115/). The proof bytes are unchanged; the default import graph and audit configuration are expanded. Creation-time source headers remain unchanged; current exact-hash receipts determine verification status.
 
-Fresh aggregate and Linux verification of the expanded target are **pending**. The planned roster contains 1,511 focused inclusion requests plus six standalone requests. The [default audit contract](../formal/default-audit-contract.json) requires 22 headline closures and the three private-helper obligations already checked in the complete checkpoint. These are verification requirements, not new passing counts. The claims ledger has no current aggregate receipt for the changed target until a new source-bound result is reviewed.
+The expanded target **passed fresh hosted Linux verification** at `5b4af402a281a9bc02a38adb168f7b0bfde5d3aa`. The [receipt](../formal/results/linux-focused-5b4af40/README.md) binds ordinary compilation of the 685-module submitted closure, all 1,511 focused named audits, and the complete selected environment: 25,448 declarations, including 18,054 theorem constants, 11,951 imported modules and 22 headline dependency closures. The [default audit contract](../formal/default-audit-contract.json) also checks three private helpers and two program-identity closures. Six standalone names were checked for inclusion in the environment; no separate standalone named replay ran in this job, so the named count is 1,511. The claims ledger now binds this exact passing receipt. Official dependency caches, compiler and platform inputs remain trusted; strict Comparator was not run.
 
 The earlier [aggregate](../formal/results/completion-aggregate-1236/verification.json), [compiled-environment audit](../formal/results/environment-aggregate-1236/README.md), and [Linux reproduction](../formal/results/linux-focused-df469a5/README.md) remain valid historical receipts for their exact configurations. The separate complete-checkpoint audit remains evidence for the identical sampler sources; it does not certify this new default root.
+
+The full offline collector validated the new artifact against its immutable run
+commit. A separate AI reader confirmed provider/archive associations and package
+hashes, then stopped on a local Git pipe issue before completing its additional
+source/report/closure readback. That independent review remains incomplete;
+the [publication record](../formal/results/linux-focused-5b4af40/review.json)
+preserves the precise boundary. The integration PR remains unmerged at this checkpoint.
 
 To verify the promoted target, run the repository workflow from its root in an exclusive checkout:
 

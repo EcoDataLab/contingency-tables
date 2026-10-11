@@ -228,7 +228,7 @@
       }
     ],
     "current_markdown_sha256": {
-      "docs/composed-complexity.md": "c816c737a99ea0fdba8360735308941c9724f51732d577427e95d258c65e2596",
+      "docs/composed-complexity.md": "85f504327f4431070e807e79bc9ace201a2ce2233ab636b9fb8a70be2f04372c",
       "docs/composed-complexity-uncompiled-appendix.md": "30b33f95b4d1a9d2fb161b4cad6c685c732c1b4feeb1b01d8046a2c1f60440a9",
       "docs/practical-use.md": "f2e3d77f18c2b0ff4290aa67d680aa07fcae130309b9f8e98d8cae5e995eed0a",
       "docs/commuting-use-cases.md": "abe61b2af9c988319988aee30bf4345bf94f8de3c70a1a6d455e84f34888ed26"
@@ -885,5 +885,22 @@
     },
     "boundary": "Dependency reuse and official caches trusted. No complete sampler numerical degree, helper full environment audit, fresh Linux verification or strict Comparator claim. Historical failed/uncompiled archive unchanged."
   },
-  "current_verification_snapshot_status": "Preserved round-10 sampler compiler/audit evidence. Its integration/Linux exclusions describe that historical receipt scope; the separate current default-target integration awaits fresh verification."
+  "current_verification_snapshot_status": "Preserved round-10 sampler compiler/audit evidence. Its integration/Linux exclusions describe that historical receipt scope; the separate default_target_verification binds the later fresh hosted Linux result.",
+  "default_target_verification": {
+    "status": "passed",
+    "receipt": "formal/results/linux-focused-5b4af40/verification.json",
+    "receipt_sha256": "99847791c380fd1e128bde2168b954d96c6af4f196f9bd54e1eb7861634728e5",
+    "repository_commit": "5b4af402a281a9bc02a38adb168f7b0bfde5d3aa",
+    "named_audits": 1511,
+    "environment_audit_counts": {
+      "declarations": 25448,
+      "theorems": 18054,
+      "headlines": 22,
+      "imported_modules": 11951
+    },
+    "scope": "Exact-commit hosted Linux focused 1511 named replay and fresh compiled-environment audit. No separate standalone named audits, Comparator or new runtime result.",
+    "official_dependency_cache_trusted": true,
+    "strict_sampler_acceptance": false,
+    "numeric_complete_runtime_degree": null
+  }
 }

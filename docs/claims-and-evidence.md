@@ -28,9 +28,9 @@ results. The frozen claims ledger continues to reference its original qualified
 receipts; this reproduction and its public artifact are additional evidence for
 the source configuration recorded at that commit.
 
-## Expanded default target: fresh verification pending
+## Expanded default target: fresh Linux verification passed
 
-The [default-target integration](default-target-integration.md) promotes the thirteen byte-identical proved sampler sources into the standard root. Its [audit contract](../formal/default-audit-contract.json) requires 22 headline closures and the three private-helper obligations checked in the complete checkpoint. Fresh aggregate and Linux verification of this expanded configuration are pending. The six-headline `df469a5` reproduction above and the completed sampler checkpoint retain their separate exact scopes; neither is a new default-target receipt.
+The [default-target integration](default-target-integration.md) promotes the thirteen byte-identical proved sampler sources into the standard root. Its [audit contract](../formal/default-audit-contract.json) requires 22 headline closures and the three private-helper obligations checked in the complete checkpoint. The [fresh `5b4af40` Linux receipt](../formal/results/linux-focused-5b4af40/README.md) now verifies this expanded configuration, with 1,511 focused named audits and all 22 required headline dependency closures. Its six standalone names are inclusion checks only. The six-headline `df469a5` reproduction above and the native sampler checkpoint retain their separate exact scopes.
 
 `python3 scripts/claims_ledger.py` validates the ledger and renders the README
 claim cards and named-audit counts. `--write-readme` replaces only the marked
@@ -43,7 +43,7 @@ in this command.
 The validator checks the pinned receipt bytes and published artifact digests,
 replays each saved named audit with the strict axiom checker, compares names
 and axiom lists, and requires each Lean headline to appear in a matching
-receipt with its matching source digest, when a current receipt is recorded. The expanded default target has no current aggregate receipt while fresh verification is pending. Disjoint component counts are derived
+receipt with its matching source digest, when a current receipt is recorded. The current receipt binds the expanded target’s exact proof and verification inputs. Its observed run-time claims-ledger hash is preserved separately, so adding receipt annotations does not create a circular hash requirement. Disjoint component counts are derived
 from declaration names and checked for overlap. The historical aggregate already included the formerly separate encoded-program, physical-bridge, and Boolean-law/schedule names; their historical receipt counts must not be added again. The later Linux focused run
 is a separate reproduction scope that overlaps the aggregate. A source list
 or a large count cannot verify a headline absent from the named audit.
@@ -86,6 +86,12 @@ dimension/free-coordinate bounds, and the dense margin inequalities shown
 in its Lean statement. `Math115.LatticeScheduleProgram.polynomial_schedule`
 proves polynomial charged cost for the numeric schedule. These are component
 contracts; they do not supply the full outer sampler's machine-cost exponent.
+
+## complete-bounded-sampler
+
+`Math115.LatticeBoundedSampling.boundedSampling` proves the original `Algorithms.BoundedSamplingStatement`: one fixed fair-bit machine and global natural constants `C>0,D` work for every finite `m,n`, natural margins `r:Fin m→ℕ,c:Fin n→ℕ` with equal totals, and numeric precision `h≥1`. Zero margins and empty dimensions are included. With `M=∑ᵢrᵢ`, `S=m+n+clog₂(M+1)+h+1`, and `t=C*S^D`, every `t`-bit tape halts with a feasible ordinary table. Under uniform independent fair bits, the output law at that same time is within total variation `2^-h` of uniform ordinary fixed-margin tables.
+
+The final statement is existential; its proof chooses the fixed [public machine](../formal/Math115/PublicLatticeSampler.lean). `public_spec` identifies its encoded table draw, `machine_outputs` establishes every-tape halting and feasibility, `machine_mass` identifies its output probabilities, and `machineTime_public_bound` supplies the uniform time bound. The [complete checkpoint](outer-sampler-compiler-checkpoint.md) retains the exact statement map and evidence. The numerical complete runtime degree and measured performance remain unknown; neither `d¹⁷` nor the reserved-bit/input bound `S¹⁷⁰` is that degree. Strict Comparator acceptance of this sampler, an exact-sampling extension, and counting are separate from this bounded near-uniform result.
 
 ## executable-references
 

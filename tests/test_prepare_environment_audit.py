@@ -127,6 +127,8 @@ class DefaultContractTests(unittest.TestCase):
     def test_legacy_root_without_integration_keeps_original_contract(self):
         (self.root / prepare.CONTRACT).unlink()
         (self.root / 'formal/Math115.lean').write_text('import Math115.PhysicalBooleanSampler\n')
+        self.mutate('claims.json', lambda c: c.update(claims=[
+            claim for claim in c['claims'] if claim['id'] != 'complete-bounded-sampler']))
         self.assertIsNone(prepare.default_contract(self.root))
         self.assertEqual(len(prepare.headlines(self.root)), 6)
 

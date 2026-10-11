@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "evidence_class": "bounded strict startup: installation and actual sandbox probes passed; runtime authentication failed",
+  "status": "strict_reported_failure",
+  "profile": {
+    "memory_mib": 8192,
+    "vcpus": 4,
+    "acceleration": "QEMU TCG",
+    "disk_virtual_gib": 80,
+    "seed_read_only": true,
+    "swap": false
+  },
+  "elapsed_seconds": 104.1260564000113,
+  "guest_provisioning_ready": true,
+  "pipeline_command_dispatched": true,
+  "phases": [
+    {
+      "stage": "install",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 11.853274583816528
+    },
+    {
+      "stage": "preflight",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 4.6872851848602295
+    },
+    {
+      "stage": "authenticate",
+      "status": "failed",
+      "returncode": 1,
+      "elapsed_seconds": 1.7214257717132568
+    }
+  ],
+  "preflight": {
+    "kernel": "7.3.0-8-generic",
+    "uid": 1000,
+    "landlock_abi": 11,
+    "effective_capabilities": 0
+  },
+  "submitted_build_files_after_installation": 0,
+  "observed_authentication_error": "Submitted proof artifact outside owned fresh build: formal/.lake/config/5/lakefile.olean",
+  "runtime_freeze_produced": false,
+  "proof_compilation_started": false,
+  "export": null,
+  "kernel_acceptance": null,
+  "comparator_invocation_started": false,
+  "strict_acceptance": false,
+  "owned_processes_closed": true,
+  "preserved_inputs_unchanged": true,
+  "independent_public_reproduction": false,
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "source_archive_sha256": "167402b7d7bce3baed3b0ebd36926570e850218c0f05df8be4a9cc6379786534",
+  "seed_sha256": "7d0787384b54558ed4de20b21ea0342bed96276f557409342b1fc2f27ea6c4e5",
+  "raw_bindings": {
+    "download_manifest_sha256": "b6046c43255a6944c33e71b86ac94a97b22a8077a32f9ce64c6991a5ba870695",
+    "status_sha256": "9dbbffa4c43c268e353165b44d583f31fb856c32dc319be0e660f2fc0626efcf",
+    "serial_sha256": "5c387097d756f5f17f5877b6ba14ef244d112debdc8c06fba958304fdd4dd961",
+    "terminal_result_sha256": "5e1e6eaf6a42ee84bbc2d4baa33fd24c6ac2186783796caa3a26aabffdf43d6d",
+    "cleanup_receipt_sha256": "357164438dac5d35ddb7108473baaebd045f224d1774e4b9d38141323346b536",
+    "root_review_sha256": "615212dca68beefa877b42be80629066f4ed3118db5b3d5dd6a4b533d8571e13",
+    "guest_archive_sha256": "1f5a990bf086ecc4c7b1b60556a40d28bd1f442c31aaa8cb0a25f30f0928c0d3",
+    "guest_manifest_sha256": "d419431122a1884f879d267a973490169c3625bb24a057a8e7dde099b69ce6d4",
+    "guest_files": {
+      "authenticate.stderr.log": "f9f04cf328755ec92006525d08e39be5123b3d44880ce0bd927b0e91cabf1715",
+      "authenticate.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failure.json": "7881eb5d00e9e9c0d110743aa79a52db5f72ccbd321a0e37a4d0d78c550515e1",
+      "install.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "install.stdout.log": "8eb445ee1084449acfdd93e82867b1c9bc781b7a4c47fe0d0601d9b39706dfed",
+      "phases.json": "620cc013bda6f721458d2015d017f96aa953c0e9ddba2564c08a3417cb45e5c9",
+      "preflight.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "preflight.stdout.log": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b",
+      "resources.json": "7d23af75b8238d5b12df1766c198f4be3e84e10e9a9525c058b737fd7077de85"
+    }
+  },
+  "projection": "Allowlisted outcome and resource fields from root-authenticated host and guest evidence. Seven host files and nine regular archive members were rehashed. Host-specific commands, identities, paths, raw console and stopped disk are excluded. The stopped disk was inventoried remotely and was not downloaded or locally rehashed.",
+  "diagnosis": {
+    "finding": "Pinned Lake stores configuration objects under .lake/config/<package index>; current runner inventories legacy top-level configuration objects only. The rejected object has not been admitted as trusted.",
+    "actual_guest_package_for_slot_5": null,
+    "actual_guest_configuration_trace_collected": false,
+    "pinned_lean_commit": "5045d0056413266e57c625dcd7c365b10e377c52",
+    "pinned_lake_source_sha256": {
+      "lake/Lake/Build/Trace.lean": "ae8987432fdb2f722971c7dfa10096e138dfc9f244a75aeb5e7abbd2cbd94bff",
+      "lake/Lake/Load/Config.lean": "7292223420baa665c49a71a022191bddf8507243e310161d10b52a83f3238e4b",
+      "lake/Lake/Load/Lean/Elab.lean": "5b3d30d5a9001514e7ff3d8c95a71bd0b29a79777e12c441e79563af0acb1674",
+      "lake/Lake/Load/Resolve.lean": "f90d1e01f6ee9d6087b5d4d1de348f2ce39b0be8f58b5e19a2094f714ebd892d"
+    },
+    "successor_implemented": false,
+    "next_obligation": "Bind actual Linux package configuration sources, traces, options, platform, compiler and exact object identities; reject stale, changed, extra or symlinked objects. Preserve zero submitted proof objects at start and all sandbox/exporter/default-kernel gates. Review and test a narrow repair before a separate future run."
+  }
+}

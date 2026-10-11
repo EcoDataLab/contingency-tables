@@ -2,7 +2,7 @@
   "evidence_class": "AI source and native-evidence publication review",
   "private_prepared_manifest_sha256": "f32050d5bec089f5d9ce84c922e9c92611707e1efdc5203fb532bc6043ae5b17",
   "prepared_subtree_manifest_sha256": "5bcdbc066b2c00d01aeecf5e81a13c27985665bcfeb7b62160560e2cbd72a181",
-  "published_subtree_manifest_sha256": "04ed41daadda17fe41092303fc3e5d91505846e8c22273e7618050bc8fb36e98",
+  "published_subtree_manifest_sha256": "34ff831e7fda385696e82ae1234426d08b24b329087059817ba9df0b7ad063a6",
   "root_prepared_readback_sha256": "d1bd75151a1b8e1cb3db87bfcbcc58ec9a41e79b63736e53cf8365ffb320035d",
   "runner_independent_review_manifest_sha256": "55959b6ed49f5a8857150a58e15f1874962a13268845f74019037e6ae26606ac",
   "runner_offline_tests": 50,
@@ -10,11 +10,17 @@
   "public_changes_from_prepared_packet": [
     "README creation-time header clarification and actual startup outcome",
     "Allowlisted startup-timeout record",
-    "Regenerated content manifest"
+    "Regenerated content manifest",
+    "Second allowlisted startup failure with bounded missing-file diagnosis; original failure and proof/checker/evidence files preserved",
+    "Third allowlisted startup outcome: source installation and actual sandbox preflight passed, configuration authentication failed; source-bound diagnosis only, no successor code or rerun"
   ],
   "challenge_runner_authenticator_and_native_evidence_bytes_unchanged": true,
   "strict_acceptance": false,
   "human_review": false,
   "public_full_replay": false,
-  "utc": "2026-10-11T03:34:41.640508+00:00"
+  "utc": "2026-10-11T04:24:57.588148+00:00",
+  "prior_published_subtree_manifest_sha256": "04ed41daadda17fe41092303fc3e5d91505846e8c22273e7618050bc8fb36e98",
+  "second_startup_raw_readback_sha256": "85f2be18d4cda7267036cb293e17026b61ffb2e56d02af2c837f14642a2c26b4",
+  "third_startup_raw_readback_sha256": "615212dca68beefa877b42be80629066f4ed3118db5b3d5dd6a4b533d8571e13",
+  "lake_configuration_diagnosis_manifest_sha256": "b921ed34211ec4449a37197dfe17d4efd06ce0b2898eabb91efffa0f3ddf490b"
 }

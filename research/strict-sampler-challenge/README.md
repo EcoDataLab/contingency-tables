@@ -134,7 +134,24 @@ missing kernel evidence or changed inputs fail closed.
 
 ## Remaining replay gaps
 
-The full strict workload is pending. The proposed standalone 8 GiB/four-CPU
+The full strict workload is pending. The latest attempt passed source installation
+and the actual non-root systemd/Landrun sandbox probes on Linux 7.3.0 with
+Landlock ABI 11, then failed runtime authentication before proof compilation.
+The published runner currently rejects `formal/.lake/config/5/lakefile.olean`
+as a submitted proof artifact. The commands above preserve that runner and its
+known failure; they are not a completed reproduction recipe. See the
+[authenticated outcome](evidence/runtime-authentication-failure-2026-10-11.json).
+
+Pinned Lake sources show that `config/5` names a package index, not a cache
+version. A future repair must authenticate the actual Linux configuration
+objects against their package sources, toolchain, platform, options and traces,
+then recheck their exact identities throughout execution. The failing guest's
+configuration trace was not collected, so its slot must not be assigned to a
+particular package from a different host's cache. Allowing every file under
+`.lake/config` would weaken the fresh-proof requirement. This is a diagnosis
+and repair handoff; no configuration-cache repair or subsequent VM run was made.
+
+The proposed standalone 8 GiB/four-CPU
 profile is an unmeasured budget for this 679-module build; the passed 6 GiB tiny
 fixture does not establish its sufficiency. The earlier original 4 GiB run
 exhausted memory before comparison and remains preserved. Kernel `-M8192`
@@ -153,5 +170,14 @@ any future run a strict success. The [first full-workload startup attempt](evide
 reached its 600-second boot-admission deadline while cloud-init was still running.
 The owned guest was stopped and reaped before any checker command was dispatched.
 Its allowlisted outcome preserves the raw evidence digests; it establishes no
-Lean, export, kernel or Comparator result. A smaller configuration transport is
-being prepared. No completed strict-checking evidence mapping exists yet.
+Lean, export, kernel or Comparator result. The [second startup attempt](evidence/startup-media-failure-2026-10-11.json)
+used the smaller configuration and reached a console prompt, but media delivery
+failed with `FileNotFoundError` before readiness. Offline inspection found
+different archive names in the primary ISO9660 and Joliet views; its role in
+that guest failure remains inferred because the exception omitted the path.
+Both attempts closed under the same deadline before checker dispatch. A reviewed
+media-name repair and bounded failure diagnostics delivered the archive in the
+third attempt, which reached the authentication failure documented above.
+Its owned guest and supervisor were closed, the five retained input pins were
+unchanged, and no compiler, exporter, default-kernel or Comparator invocation
+started. The raw outcome bindings for all three attempts remain preserved.

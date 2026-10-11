@@ -259,6 +259,11 @@ def audit_driver(result: dict, component_scope_ids: list[str]) -> str:
     """
     modules = sorted({name for scope_id in component_scope_ids
                       for name in result['scopes'][scope_id]['module_counts']})
+    # Focused Linux receipts have a single ordered audit rather than per-module
+    # records. Their hash-bound aggregate source supplies the import root.
+    if any('formal/Math115.lean' in result['scopes'][scope_id]['source_hashes']
+           for scope_id in component_scope_ids):
+        modules = sorted(set(modules) | {'Math115'})
     if not modules:
         raise ValueError('selected receipts do not specify audited modules')
     modules = sorted(set(modules) | {h['module'] for claim in result['claims'] for h in claim['headlines']
