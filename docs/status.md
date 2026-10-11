@@ -46,6 +46,17 @@ coefficient. Separate AI mathematical reviews and exact finite fixtures
 passed. The margin choices are essential; these family results are not
 Lean-formalized and do not change the unrestricted general exponent.
 
+The [growing rectangular family](growing-row-comparison.md) now permits both
+dimensions to increase. Its one-token small row and specified dense margins
+give explicit inverse gap `29040A d⁵` under `s²≤Ad`. A separately reviewed
+application of Morris's classical theorem sharpens this to
+`47916(C_Z+1)A²d⁴`, with the universal constant `C_Z` unextracted. The physical
+proposal clock is unchanged. The exact fixture checks 108 balanced profiles,
+4,194 defects and 3,672 parallel DD bridges, plus four directly counted
+dense contexts and four rational observables. These are restricted-family
+mathematics and finite evidence, without Lean verification or a new general
+exponent. The explicit d⁵ result remains available independently of C_Z.
+
 The [reciprocal padding-growth proof](reciprocal-padding-growth.md) and actual
 marked-padding induction compile at the same smaller scales. The padded/original
 count ratio is at most two. Its thin-table obstruction concerns this padding

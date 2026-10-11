@@ -69,3 +69,14 @@ grid edge has `b²` parallel physical defect edges; averaging them cancels
 the quadratic repair load. Shared defects connect the remaining slice
 means. The proof still uses its particular margins and near-uniform dense
 counts, so it does not yet close the general center-transport problem.
+
+The [growing-row comparison](growing-row-comparison.md) extends that mechanism
+to specified `(R+1)×2b` tables. A grid-center move has
+`b((R+1)b−2)` distinct actual DD copies, with endpoint-pair charge at most
+`b(R−1)`. Exact conditional composition couplings then give an explicit
+bounded-aspect d⁵ allowance; a classical zero-range comparison improves
+its asymptotic order to d⁴ with an unextracted constant. Both dimensions
+may grow. The actual repair law is retained, but the proof still depends
+on product dense counts comparable within a fixed factor. Establishing
+center transport for arbitrary completion weights is the remaining general
+obstacle; the restricted family does not supply that missing inequality.

@@ -211,6 +211,26 @@
       "evidence": []
     },
     {
+      "id": "growing-family-gap",
+      "title": "Restricted family with both dimensions growing",
+      "english_claim": "The same rational physical defect trace has inverse gap at most 47916(C_Z+1) A^2 d^4 on the specified one-token margin family under bounded aspect. The self-contained explicit comparison gives 29040A d^5.",
+      "quantity": "Inverse gap O(d⁴) at fixed aspect; explicit 29040A d⁵ alternative",
+      "hypotheses": [
+        "Only the specified (R+1)-by-2b margins, R,b≥2; one-token small row; U=11ds, L=7, s=R+2b−1; s²≤Ad for fixed A; ordinary exact completion counts; unchanged rational proposal 1/[2(4p−3)]."
+      ],
+      "limitations": [
+        "Reviewed AI mathematics and one exact finite fixture. The d⁴ allowance uses Morris’s unextracted universal constant C_Z. No Lean verification, arbitrary-margin theorem, numerical d⁴ sampling schedule or runtime claim. General compiled exponent remains 8."
+      ],
+      "evidence_class": "reviewed_mathematics",
+      "sources": [
+        "docs/growing-row-comparison.md",
+        "docs/growing-row-comparison-review.md",
+        "reports/growing-row-comparison.json"
+      ],
+      "headlines": [],
+      "evidence": []
+    },
+    {
       "id": "thin-family-gap",
       "title": "Restricted rectangular family",
       "english_claim": "The same physical defect trace has inverse-gap allowance 2840d^6 on the specified 3-by-2b margin family with first-row total h between 1 and floor(U/2).",

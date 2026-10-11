@@ -67,6 +67,23 @@ normalization in both branches. No complete runtime claim is made.
 The earlier `431d⁸` allowance remains an available bound on thin
 shapes with the appropriate proposal normalization.
 
+## growing-family-gap
+
+The [growing rectangular-family proof](growing-row-comparison.md) gives
+raw defect variance at most `30pU²` times accepted trace energy. Keeping
+the canonical rational proposal gives `240p²U²`, and hence the explicit
+`29040A d⁵` allowance under `s²≤Ad`. Both dimensions may grow, but its
+one-token row and specified large margins are essential.
+
+Applying Morris's classical complete-graph zero-range theorem to the same
+conditional comparison improves this to `47916(C_Z+1)A²d⁴`.
+The universal `C_Z` is not numerically extracted; this is an asymptotic
+family bound, without an executable numerical d⁴ schedule. Separate AI
+mathematical reviews passed for the physical bridge, explicit proof and
+classical refinement. One focused exact fixture checks the explicit
+comparison on four observables; it does not prove a general theorem.
+There is no Lean verification, arbitrary-margin result or runtime claim.
+
 ## thin-family-gap
 
 The [explicit rectangular-family comparison](thin-row-extension.md) gives
