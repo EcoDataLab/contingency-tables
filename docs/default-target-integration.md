@@ -18,7 +18,8 @@ record that result. The
 [earlier interrupted review](../formal/results/linux-focused-5b4af40/review-partial.json)
 is preserved, and the original evidence bytes are unchanged. This is additional
 artifact inspection, not an independent compiler run or human mathematical
-review. The integration PR remains unmerged at this checkpoint.
+review. [PR #1](https://github.com/EcoDataLab/contingency-tables/pull/1) records
+the integration and publication history.
 
 To verify the promoted target, run the repository workflow from its root in an exclusive checkout:
 
