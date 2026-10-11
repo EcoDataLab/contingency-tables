@@ -1,0 +1,212 @@
+{
+  "artifacts": [
+    {
+      "changes": [],
+      "original_artifact_id": "delta/runner/strict_sampler.py",
+      "original_bytes": 49989,
+      "original_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6",
+      "public_path": "delta/runner/strict_sampler.py",
+      "published_bytes": 49989,
+      "published_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "delta/runner/authenticate_runtime.py",
+      "original_bytes": 6631,
+      "original_sha256": "742ec1105d5bb44a392046ec06ca5944a20989bc0cb5a037d2997b37def2b943",
+      "public_path": "delta/runner/authenticate_runtime.py",
+      "published_bytes": 6631,
+      "published_sha256": "742ec1105d5bb44a392046ec06ca5944a20989bc0cb5a037d2997b37def2b943"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "delta/runner/test_progress.py",
+      "original_bytes": 4689,
+      "original_sha256": "3e9e924b9fe5d7743c37097dcca6316aa2ce7e74fe3a9ee74a0259331d2c1a42",
+      "public_path": "delta/runner/test_progress.py",
+      "published_bytes": 4689,
+      "published_sha256": "3e9e924b9fe5d7743c37097dcca6316aa2ce7e74fe3a9ee74a0259331d2c1a42"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "delta/implementation.patch",
+      "original_bytes": 27908,
+      "original_sha256": "7d2f0b0a806d09af74ad4233f109ab6258640d0059c40f4c8aa0f7901e05aaea",
+      "public_path": "delta/implementation.patch",
+      "published_bytes": 27908,
+      "published_sha256": "7d2f0b0a806d09af74ad4233f109ab6258640d0059c40f4c8aa0f7901e05aaea"
+    },
+    {
+      "changes": [],
+      "original_artifact_id": "base-reference.json",
+      "original_bytes": 1405,
+      "original_sha256": "c2e6a07d92e08fb2a59fc3bab931bfb22082565738404b1a71078aa495c82760",
+      "public_path": "base-reference.json",
+      "published_bytes": 1405,
+      "published_sha256": "c2e6a07d92e08fb2a59fc3bab931bfb22082565738404b1a71078aa495c82760"
+    },
+    {
+      "changes": [
+        "Only guest/checking path-prefix substitutions where present. Complete original stream framing, progress/warnings/traceback bytes retained."
+      ],
+      "original_artifact_id": "evidence/startup/install.stdout.log",
+      "original_bytes": 2875,
+      "original_sha256": "2b0934143ef558f9d621b9a07a7ab30d84db9fb3f8fac352281aebe1c3cdb3f9",
+      "public_path": "evidence/startup/install.stdout.log",
+      "published_bytes": 2875,
+      "published_sha256": "2b0934143ef558f9d621b9a07a7ab30d84db9fb3f8fac352281aebe1c3cdb3f9"
+    },
+    {
+      "changes": [
+        "Only guest/checking path-prefix substitutions where present. Complete original stream framing, progress/warnings/traceback bytes retained."
+      ],
+      "original_artifact_id": "evidence/startup/install.stderr.log",
+      "original_bytes": 0,
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_path": "evidence/startup/install.stderr.log",
+      "published_bytes": 0,
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Only guest/checking path-prefix substitutions where present. Complete original stream framing, progress/warnings/traceback bytes retained."
+      ],
+      "original_artifact_id": "evidence/startup/preflight.stdout.log",
+      "original_bytes": 276,
+      "original_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b",
+      "public_path": "evidence/startup/preflight.stdout.log",
+      "published_bytes": 276,
+      "published_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b"
+    },
+    {
+      "changes": [
+        "Only guest/checking path-prefix substitutions where present. Complete original stream framing, progress/warnings/traceback bytes retained."
+      ],
+      "original_artifact_id": "evidence/startup/preflight.stderr.log",
+      "original_bytes": 0,
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_path": "evidence/startup/preflight.stderr.log",
+      "published_bytes": 0,
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Only guest/checking path-prefix substitutions where present. Complete original stream framing, progress/warnings/traceback bytes retained."
+      ],
+      "original_artifact_id": "evidence/startup/authenticate.stdout.log",
+      "original_bytes": 0,
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_path": "evidence/startup/authenticate.stdout.log",
+      "published_bytes": 0,
+      "published_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "changes": [
+        "Only guest/checking path-prefix substitutions where present. Complete original stream framing, progress/warnings/traceback bytes retained."
+      ],
+      "original_artifact_id": "evidence/startup/authenticate.stderr.log",
+      "original_bytes": 180182,
+      "original_sha256": "ee3a8ac2fa56ab35001496d9d4e31327a3a4423e139b0fad7f5f2f718ce8fcb6",
+      "public_path": "evidence/startup/authenticate.stderr.log",
+      "published_bytes": 180182,
+      "published_sha256": "ee3a8ac2fa56ab35001496d9d4e31327a3a4423e139b0fad7f5f2f718ce8fcb6"
+    },
+    {
+      "changes": [
+        "Only guest/checking path-prefix substitutions; exact1800s timeout command/error retained."
+      ],
+      "original_artifact_id": "evidence/startup/failure.json",
+      "original_bytes": 1027,
+      "original_sha256": "658965d1a7f2a14156911e2e330b4dbc83cbed2934ee8a84fa40f1f3c192523b",
+      "public_path": "evidence/startup/failure.json",
+      "published_bytes": 977,
+      "published_sha256": "76c2562fea13be04e769229d9dbe581c4672f9974ad6c5993ae7e26de1396909"
+    },
+    {
+      "changes": [
+        "Only path-role substitutions where present; exact owner substep summary retained."
+      ],
+      "original_artifact_id": "evidence/owner-diagnostic-summary.json",
+      "original_bytes": 11008,
+      "original_sha256": "9880ba9908590cac42b1ed1c09bcb05ca70337dc974a5d55f50f07fab38f2782",
+      "public_path": "evidence/owner-diagnostic-summary.json",
+      "published_bytes": 11008,
+      "published_sha256": "9880ba9908590cac42b1ed1c09bcb05ca70337dc974a5d55f50f07fab38f2782"
+    },
+    {
+      "changes": [
+        "Allowlisted exact phase/cap/timeout/substep facts; PIDs, private host/userpaths and control/resource details omitted. No unobserved returncode or acceptance invented."
+      ],
+      "original_artifact_id": "evidence/startup/outcome.json",
+      "original_bytes": 8382,
+      "original_sha256": "9af379c3d15a8df61d3ec9c9f3cde5e51fbb6c42597fae7a7c250244a50c033c",
+      "public_path": "evidence/startup/outcome.json",
+      "published_bytes": 3405,
+      "published_sha256": "01cf88b886d06bcc3725662073cadf898a845d76ed9b5f38e009f5d5ba73ae3e"
+    },
+    {
+      "changes": [
+        "Allowlisted closure/hash/pin/reaping facts; PIDs/timestamps/user/host identities omitted."
+      ],
+      "original_artifact_id": "evidence/startup/cleanup.json",
+      "original_bytes": 1454,
+      "original_sha256": "0c927fe54aeb3752071ac7bf0b06687acd7d40315be3900ab8127d82b833ae01",
+      "public_path": "evidence/startup/cleanup.json",
+      "published_bytes": 480,
+      "published_sha256": "07674a7bd54113e3b5017859726f8a758789329372577f48f7a261d8be0c01e3"
+    },
+    {
+      "changes": [
+        "Input path/hash registry omitted from compact public review; exact original review SHA preserved. AI/scope label added."
+      ],
+      "original_artifact_id": "independent_actual_review",
+      "original_bytes": 3050,
+      "original_sha256": "9e1f9e9f1601613e9991cbb4f30ba608eed20f2948f498c63234acf03eb16493",
+      "public_path": "evidence/independent-review.json",
+      "published_bytes": 2303,
+      "published_sha256": "55f39d293d29461591f2e802280b19991e9b872e50301acd7abcb6233d158c65"
+    },
+    {
+      "changes": [
+        "Only readable spacing corrections; timing/counter/scope interpretation unchanged."
+      ],
+      "original_artifact_id": "independent_actual_summary",
+      "original_bytes": 3543,
+      "original_sha256": "75c87b694cbdf53c8b5c876895b343605cdf62bc7040db362f94f12fa8fa60fb",
+      "public_path": "evidence/independent-review.md",
+      "published_bytes": 3551,
+      "published_sha256": "70a07c554ab420e3542d42f33dd8e83cb3fb466bf16ff209f70323cf54725f89"
+    },
+    {
+      "changes": [
+        "Private command/directory/time context omitted; exact source/plan/base/stdout/stderr/scoped108-test result retained."
+      ],
+      "original_artifact_id": "root_proposed_layout108_receipt",
+      "original_bytes": 878,
+      "original_sha256": "db7c2b25d4a21a376e4106afdcd0bd2b3718f4a7e11d62ba7b8a5da854d99e73",
+      "public_path": "evidence/proposed-layout-tests.json",
+      "published_bytes": 816,
+      "published_sha256": "a9906e85b75d88c2c531a5c21c6bae248780ab7cba615fb36c1c69c43c627b86"
+    }
+  ],
+  "ordered_path_substitutions": [
+    {
+      "original": "/home/verifier/checking",
+      "published": "<checking-root>"
+    },
+    {
+      "original": "/home/verifier",
+      "published": "<guest-home>"
+    }
+  ],
+  "path_substitution_scope": "Apply these literal string substitutions in the listed order where path-role projection is declared. The source prefixes are synthetic guest account paths; no personal account path is published.",
+  "policy": "Exact reviewed delta files; complete stdout/stderr with only declared guest-prefix substitutions. Metadata projections omit private user/host/process/control details. Counters remain logical; timestamps cumulative. Original/public hashes separate.",
+  "publication_revision": {
+    "changed_payloads": [
+      "README.md",
+      "projection-map.json"
+    ],
+    "previous_candidate_manifest_sha256": "56cccad1cbc99f671d7bba80ccb4c169b607d740c8a0919b2e2d1ae8bd90ce39",
+    "scope": "Public wording and explicit ordered path-substitution mapping; exact source, diagnostic, outcome and review payloads unchanged."
+  }
+}

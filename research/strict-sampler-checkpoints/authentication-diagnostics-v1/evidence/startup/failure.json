@@ -1,0 +1,5 @@
+{
+  "error": "Command '['/usr/bin/python3', '-I', '<guest-home>/checkpoint11-authenticate.py', '--root', '<checking-root>', '--runner', '<checking-root>/.tools/linux-verification/checkpoint11-runner/strict_sampler.py', '--output', '<checking-root>/.tools/linux-verification/checkpoint11-evidence/runtime-freeze.json', '--native-audit', '<checking-root>/.tools/linux-verification/strict-sampler-inputs/native-audit.json', '--lake-config-provenance', '<checking-root>/.tools/linux-verification/strict-sampler-inputs/lake-config-provenance.json', '--lake-config-provenance-sha256', '645f1f13d16c12eb421d86c379ac2b18f7a40170226e07558445afb0336860a0', '--unused-cache-policy', '<checking-root>/.tools/linux-verification/strict-sampler-inputs/unused-cache-policy.json', '--unused-cache-policy-sha256', '4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833', '--diagnostics']' timed out after 1800 seconds",
+  "startup_plan_only": true,
+  "full_strict_completed": false
+}

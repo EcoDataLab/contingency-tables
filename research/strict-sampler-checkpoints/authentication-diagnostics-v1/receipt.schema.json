@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Closed startup03 timeout with substep diagnostics",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "status",
+    "actual_auth_timeout_seconds",
+    "auth_returncode",
+    "runtime_freeze",
+    "plan",
+    "overall_runtime_or_policy_acceptance",
+    "actual_counters",
+    "actual_outcome",
+    "independent_actual_review",
+    "full_strict_acceptance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "const": "closed_startup03_diagnostic_timeout_partial_third_rehash_no_admission"
+    },
+    "actual_auth_timeout_seconds": {
+      "const": 1800
+    },
+    "auth_returncode": {
+      "type": "null"
+    },
+    "runtime_freeze": {
+      "type": "null"
+    },
+    "plan": {
+      "type": "null"
+    },
+    "overall_runtime_or_policy_acceptance": {
+      "type": "null"
+    },
+    "full_strict_acceptance": {
+      "type": "null"
+    },
+    "independent_actual_review": {
+      "type": "object"
+    }
+  },
+  "$comment": "Representation only. Completed substeps/logical counters do not establish overall runtime/plan acceptance or physical throughput."
+}

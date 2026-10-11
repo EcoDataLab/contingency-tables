@@ -1,0 +1,27 @@
+{
+  "actual_auth_timeout_seconds": 1800,
+  "actual_counters": "diagnostic-interpretation.json",
+  "actual_outcome": "evidence/startup/outcome.json",
+  "auth_returncode": null,
+  "full_strict_acceptance": null,
+  "independent_actual_review": {
+    "original_manifest_sha256": "5e0e093a70e3ee1375dc8c0f20e3904a6b3117f5953c2b51354c67c7d3362ee3",
+    "original_sha256": "9e1f9e9f1601613e9991cbb4f30ba608eed20f2948f498c63234acf03eb16493",
+    "path": "evidence/independent-review.json",
+    "published_sha256": "55f39d293d29461591f2e802280b19991e9b872e50301acd7abcb6233d158c65",
+    "scope": "Saved-artifact acceptance of closed timeout/substeps; publication-projection review separate"
+  },
+  "overall_runtime_or_policy_acceptance": null,
+  "plan": null,
+  "proposed_layout108_tests": {
+    "original_receipt_sha256": "db7c2b25d4a21a376e4106afdcd0bd2b3718f4a7e11d62ba7b8a5da854d99e73",
+    "path": "evidence/proposed-layout-tests.json",
+    "published_sha256": "a9906e85b75d88c2c531a5c21c6bae248780ab7cba615fb36c1c69c43c627b86",
+    "scope": "Actual local proposed base-plus-delta layout tests, not final public clone testing or live startup acceptance",
+    "tests": 108
+  },
+  "public_replay": null,
+  "runtime_freeze": null,
+  "schema_version": 1,
+  "status": "closed_startup03_diagnostic_timeout_partial_third_rehash_no_admission"
+}

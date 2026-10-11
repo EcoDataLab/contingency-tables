@@ -1,0 +1,14 @@
+{
+  "base_manifest_sha256": "7f0ad0686fcfcd2536fc3f1437c78c91fefaa5bb82bd6b1a26957111eede5e17",
+  "classification": "Actual local proposed base-plus-delta layout tests, not final public clone testing or live startup acceptance",
+  "elapsed_seconds": 33.883,
+  "errors": 0,
+  "failures": 0,
+  "plan_manifest_sha256": "81a7fca6ab468281a5b54ad7df5a535a330a56f9d3dbf184238eab2665c2807c",
+  "process_exit_code": 0,
+  "scope": "Actual local test execution of exact proposed base-plus-delta materialization. No new runtime authentication, compiler execution or strict acceptance.",
+  "status": "offline_reproduction_layout_passed",
+  "stderr_sha256": "27c39086d987683e6ebdb463e63dd0d98bc107aa4f16bfbc1183c2d8083d18fe",
+  "stdout_sha256": "29403ef1fa6d4049c9577f9b053ec0d8c46139d8b9b43f702911ac52b8c8f11d",
+  "tests": 108
+}

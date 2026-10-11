@@ -1,0 +1,51 @@
+{
+  "bindings": {
+    "actual_capture_manifest_sha256": "6a0806afb93bb7fb1a41e7449a2b1552d70129c011ab11b3f50a036e8d8c4b2e",
+    "authentication_stderr_sha256": "ee3a8ac2fa56ab35001496d9d4e31327a3a4423e139b0fad7f5f2f718ce8fcb6",
+    "authenticator_sha256": "742ec1105d5bb44a392046ec06ca5944a20989bc0cb5a037d2997b37def2b943",
+    "base_manifest_sha256": "7f0ad0686fcfcd2536fc3f1437c78c91fefaa5bb82bd6b1a26957111eede5e17",
+    "independent_actual_review_manifest_sha256": "5e0e093a70e3ee1375dc8c0f20e3904a6b3117f5953c2b51354c67c7d3362ee3",
+    "source_runner_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6"
+  },
+  "blockers": [],
+  "checks": {
+    "actual_review_projection_scope_preserved": true,
+    "authentication_nonprogress_lines": 0,
+    "authentication_progress_records": 1050,
+    "authentication_stderr_bytes": 180182,
+    "complete_stdout_stderr_streams_preserved": 6,
+    "cumulative_times_logical_counters_and_partial_guard_boundaries_preserved": true,
+    "declared_ordered_synthetic_guest_substitutions_verified": true,
+    "materialized_assets_match_108_tested_layout": 13,
+    "navigation_claims_currently_scoped_to_timeout_substeps": true,
+    "offline_recipe_source_base_manifest_verification_reviewed": true,
+    "outcome_cleanup_allowlists_preserve_observed_values": true,
+    "packet_members_rehashed": 24,
+    "projection_map_published_artifacts_verified": 18,
+    "source_delta_matches_accepted_bodies": true,
+    "targeted_private_path_account_process_identity_scan_clear": true,
+    "unchanged_base_references_hash_verified": 10
+  },
+  "limits": {
+    "Lean_or_Comparator_execution_by_this_review": false,
+    "exact_external_environment_reproduction_claimed": false,
+    "full_proof_or_kernel_acceptance": false,
+    "plan_executed": false,
+    "privacy_scan": "Targeted source and metadata review, not an exhaustive identity analysis. Synthetic /home/verifier prefixes are intentionally declared in the projection map.",
+    "remote_or_VM_execution_by_this_review": false,
+    "runtime_authentication_completed": false,
+    "runtime_freeze_generated": false,
+    "tests_rerun_by_this_review": false
+  },
+  "navigation_sha256": {
+    "README.md": "8e433e709c8ee6be3a3a60d6a237a2fb9df8e010bded46108ff21c8f5ba52599",
+    "docs/handoff.md": "b5b73909e2809c580d7aaa627d65a5421882a70a2cf9e54ef3d63365afd432d6",
+    "docs/status.md": "de691149f61b552600c250db811f1f7f9d1c1cbf7629f3b23405a04014a7d41f"
+  },
+  "packet_manifest_sha256": "4da476ef2aeda96aa0c2b00479d2f84b0ad6c17e1b0036f0b865f070fbf6c759",
+  "packet_public_path": "research/strict-sampler-checkpoints/authentication-diagnostics-v1",
+  "reviewer": "Independent OpenAI Codex AI agent; no outside human review",
+  "schema_version": 1,
+  "scope": "Exact sealed public packet projection, source/base references, privacy redactions, complete relevant streams and executable offline materialization recipe; saved-artifact review only.",
+  "status": "accepted_saved_artifact_public_projection"
+}

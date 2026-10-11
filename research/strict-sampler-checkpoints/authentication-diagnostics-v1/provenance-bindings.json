@@ -1,0 +1,35 @@
+{
+  "accepted_media_manifest_sha256": "2884e797e09cd92a39f0764df98b52e5fd2e16d168e2d2163d15cd6d13e6a607",
+  "accepted_source_manifest_sha256": "a440cdfe8ee580da0601a806cd57580e06b79e194a1c9b555883bb2c2162989a",
+  "actual_capture_manifest_sha256": "6a0806afb93bb7fb1a41e7449a2b1552d70129c011ab11b3f50a036e8d8c4b2e",
+  "actual_capture_members_verified": 30,
+  "actual_cleanup_sha256": "0c927fe54aeb3752071ac7bf0b06687acd7d40315be3900ab8127d82b833ae01",
+  "actual_final_sha256": "9af379c3d15a8df61d3ec9c9f3cde5e51fbb6c42597fae7a7c250244a50c033c",
+  "diagnostics_flags_scope": "Actual authentication argv has--diagnostics once; plan not run, --diagnostics and--wall-seconds1200 are prepared guest plan arguments, not executed invocation.",
+  "frozen_publication_plan_sha256": "81a7fca6ab468281a5b54ad7df5a535a330a56f9d3dbf184238eab2665c2807c",
+  "guest_archive_sha256": "83105aa67dc6ee829c5416669626bee63e4a57348dc128b6ad65da9af1ab6c44",
+  "guest_manifest_sha256": "4a93374f52786ed90a0ab1e266283a07baac1e93fc0cf3bfb38ba22177c30980",
+  "guest_members_verified": 9,
+  "host_local_downloads_verified": 7,
+  "host_manifest_sha256": "c10f2e722346c079459ea29f7c1c3cb28b6b77be6cc41c46d095844eef15dc08",
+  "independent_actual_review": {
+    "manifest_sha256": "5e0e093a70e3ee1375dc8c0f20e3904a6b3117f5953c2b51354c67c7d3362ee3",
+    "original_review_sha256": "9e1f9e9f1601613e9991cbb4f30ba608eed20f2948f498c63234acf03eb16493",
+    "public_path": "evidence/independent-review.json"
+  },
+  "official_cache_and_retained_context_trust": true,
+  "original_owner_summary_sha256": "9880ba9908590cac42b1ed1c09bcb05ca70337dc974a5d55f50f07fab38f2782",
+  "physical_throughput_or_causal_diagnosis": null,
+  "prepared_profiles": {
+    "CPU": 4,
+    "NIC": false,
+    "RAM_MiB": 8192,
+    "auth_seconds": 1800,
+    "outer_seconds": 6000,
+    "plan_seconds": 1200,
+    "swap": false
+  },
+  "raw_diagnostic_stderr_sha256": "ee3a8ac2fa56ab35001496d9d4e31327a3a4423e139b0fad7f5f2f718ce8fcb6",
+  "remote_only_disk_locally_rehashed": false,
+  "scope": "Minimal source delta plus permanent startup03 timeout; prior startup02 timeout unchanged"
+}

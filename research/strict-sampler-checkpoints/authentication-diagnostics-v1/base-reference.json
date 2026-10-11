@@ -1,0 +1,17 @@
+{
+  "manifest_sha256": "7f0ad0686fcfcd2536fc3f1437c78c91fefaa5bb82bd6b1a26957111eede5e17",
+  "proposed_public_path": "research/strict-sampler-checkpoints/unused-cache-policy-v1",
+  "source_only_predecessor_manifest_sha256": "39009383ca8cdff0d72fd75563437e7cdeb5e4d10c8ecf19c4f0ed4b6f9c4d50",
+  "unchanged_members_sha256": {
+    "challenge/StrictSampler.json": "12ac0eb4d2d91c16772667335462c8bfbed5ae3f6ca9742d8f91f4c9bf07993f",
+    "runner/runtime-template.json": "67491483686bda0489648dbeb8822290cc745d6a61e5d1b5b4e2bbd9b16a610a",
+    "runner/source-freeze.json": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+    "runner/test_strict_sampler.py": "a38f361d72c8f101285fe78236deee218e342c05141fc25fe44339e2a2145716",
+    "runner/test_unused_cache.py": "9b33ebc140328d58d3126afdc0988090dc3206523b5b31db1b85d871f774c809",
+    "runner/tested-runtime/build_lean_serial.py": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c",
+    "runner/tested-runtime/no_rebuild_landrun.py": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7",
+    "runner/tested-runtime/strict_serial_check.py": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e",
+    "source-plan.json": "03cee47dac72f1a419bdb2aafbe02f5e5a18a4f27bb7d360e9fcab1013f7cc08",
+    "unused-cache-policy-candidate.json": "4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833"
+  }
+}

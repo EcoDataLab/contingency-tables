@@ -1,0 +1,401 @@
+{
+  "by_stage_counts": {
+    "admission": 12,
+    "authentication": 29,
+    "cache_inventory": 305,
+    "external_resolution": 4,
+    "git": 82,
+    "guard": 3,
+    "guard_cache": 70,
+    "hidden_objects": 545
+  },
+  "completed_cache_inventories": [
+    {
+      "begin": {
+        "line": 302,
+        "record": {
+          "elapsed_seconds": 171.128,
+          "event": "begin",
+          "roots": 10,
+          "stage": "cache_inventory"
+        }
+      },
+      "end": {
+        "line": 452,
+        "record": {
+          "elapsed_seconds": 507.404,
+          "event": "end",
+          "files": 131021,
+          "stage": "cache_inventory"
+        }
+      },
+      "logical_bytes": 9261675188,
+      "nominated_absence": [
+        {
+          "line": 324,
+          "record": {
+            "elapsed_seconds": 226.319,
+            "event": "nominated_absence",
+            "root": "formal/.lake/packages/Cli/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        }
+      ],
+      "root_completions": [
+        {
+          "line": 323,
+          "record": {
+            "bytes": 2861592047,
+            "elapsed_seconds": 226.319,
+            "event": "root_end",
+            "files": 15127,
+            "root": ".tools/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 326,
+          "record": {
+            "bytes": 3796916,
+            "elapsed_seconds": 226.431,
+            "event": "root_end",
+            "files": 52,
+            "root": "formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 328,
+          "record": {
+            "bytes": 15836385,
+            "elapsed_seconds": 226.845,
+            "event": "root_end",
+            "files": 182,
+            "root": "formal/.lake/packages/Qq/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 331,
+          "record": {
+            "bytes": 98844898,
+            "elapsed_seconds": 230.123,
+            "event": "root_end",
+            "files": 1716,
+            "root": "formal/.lake/packages/aesop/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 335,
+          "record": {
+            "bytes": 115150690,
+            "elapsed_seconds": 235.722,
+            "event": "root_end",
+            "files": 2496,
+            "root": "formal/.lake/packages/batteries/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 337,
+          "record": {
+            "bytes": 4030761,
+            "elapsed_seconds": 236.004,
+            "event": "root_end",
+            "files": 130,
+            "root": "formal/.lake/packages/importGraph/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 447,
+          "record": {
+            "bytes": 6137707724,
+            "elapsed_seconds": 506.61,
+            "event": "root_end",
+            "files": 110980,
+            "root": "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 449,
+          "record": {
+            "bytes": 9837357,
+            "elapsed_seconds": 506.972,
+            "event": "root_end",
+            "files": 169,
+            "root": "formal/.lake/packages/plausible/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 451,
+          "record": {
+            "bytes": 14878410,
+            "elapsed_seconds": 507.398,
+            "event": "root_end",
+            "files": 169,
+            "root": "formal/.lake/packages/proofwidgets/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        }
+      ],
+      "root_file_sum": 131021
+    },
+    {
+      "begin": {
+        "line": 822,
+        "record": {
+          "elapsed_seconds": 645.24,
+          "event": "begin",
+          "roots": 10,
+          "stage": "cache_inventory"
+        }
+      },
+      "end": {
+        "line": 975,
+        "record": {
+          "elapsed_seconds": 896.632,
+          "event": "end",
+          "files": 131021,
+          "stage": "cache_inventory"
+        }
+      },
+      "logical_bytes": 9261675188,
+      "nominated_absence": [
+        {
+          "line": 847,
+          "record": {
+            "elapsed_seconds": 708.84,
+            "event": "nominated_absence",
+            "root": "formal/.lake/packages/Cli/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        }
+      ],
+      "root_completions": [
+        {
+          "line": 846,
+          "record": {
+            "bytes": 2861592047,
+            "elapsed_seconds": 708.84,
+            "event": "root_end",
+            "files": 15127,
+            "root": ".tools/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 849,
+          "record": {
+            "bytes": 3796916,
+            "elapsed_seconds": 708.948,
+            "event": "root_end",
+            "files": 52,
+            "root": "formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 851,
+          "record": {
+            "bytes": 15836385,
+            "elapsed_seconds": 709.282,
+            "event": "root_end",
+            "files": 182,
+            "root": "formal/.lake/packages/Qq/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 854,
+          "record": {
+            "bytes": 98844898,
+            "elapsed_seconds": 712.13,
+            "event": "root_end",
+            "files": 1716,
+            "root": "formal/.lake/packages/aesop/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 858,
+          "record": {
+            "bytes": 115150690,
+            "elapsed_seconds": 715.923,
+            "event": "root_end",
+            "files": 2496,
+            "root": "formal/.lake/packages/batteries/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 860,
+          "record": {
+            "bytes": 4030761,
+            "elapsed_seconds": 716.092,
+            "event": "root_end",
+            "files": 130,
+            "root": "formal/.lake/packages/importGraph/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 970,
+          "record": {
+            "bytes": 6137707724,
+            "elapsed_seconds": 895.992,
+            "event": "root_end",
+            "files": 110980,
+            "root": "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 972,
+          "record": {
+            "bytes": 9837357,
+            "elapsed_seconds": 896.281,
+            "event": "root_end",
+            "files": 169,
+            "root": "formal/.lake/packages/plausible/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        },
+        {
+          "line": 974,
+          "record": {
+            "bytes": 14878410,
+            "elapsed_seconds": 896.626,
+            "event": "root_end",
+            "files": 169,
+            "root": "formal/.lake/packages/proofwidgets/.lake/build/lib/lean",
+            "stage": "cache_inventory"
+          }
+        }
+      ],
+      "root_file_sum": 131021
+    }
+  ],
+  "interval_attribution": "between named markers only; specific unlogged substep is not separately measured",
+  "key_events": [
+    {
+      "line": 4,
+      "record": {
+        "elapsed_seconds": 0.249,
+        "event": "configuration_end",
+        "stage": "authentication"
+      }
+    },
+    {
+      "line": 298,
+      "record": {
+        "elapsed_seconds": 171.078,
+        "event": "end",
+        "imports": 82,
+        "owners": [
+          "<toolchain>",
+          "mathlib"
+        ],
+        "stage": "external_resolution"
+      }
+    },
+    {
+      "line": 300,
+      "record": {
+        "elapsed_seconds": 171.127,
+        "event": "cache_states_end",
+        "roots": 10,
+        "stage": "authentication"
+      }
+    },
+    {
+      "line": 453,
+      "record": {
+        "elapsed_seconds": 507.405,
+        "event": "collection_cache_inventory_end",
+        "files": 131021,
+        "stage": "authentication"
+      }
+    },
+    {
+      "line": 543,
+      "record": {
+        "elapsed_seconds": 519.316,
+        "event": "configuration_and_policy_end",
+        "stage": "admission"
+      }
+    },
+    {
+      "line": 545,
+      "record": {
+        "elapsed_seconds": 520.979,
+        "event": "end",
+        "imports": 82,
+        "owners": [
+          "<toolchain>",
+          "mathlib"
+        ],
+        "stage": "external_resolution"
+      }
+    },
+    {
+      "line": 547,
+      "record": {
+        "elapsed_seconds": 521.078,
+        "event": "cache_states_end",
+        "stage": "admission"
+      }
+    },
+    {
+      "line": 976,
+      "record": {
+        "elapsed_seconds": 896.742,
+        "event": "independent_cache_inventory_end",
+        "files": 131021,
+        "stage": "admission"
+      }
+    },
+    {
+      "line": 977,
+      "record": {
+        "elapsed_seconds": 1631.08,
+        "event": "guard_full_rehash_begin",
+        "stage": "admission"
+      }
+    }
+  ],
+  "last_event": {
+    "line": 1050,
+    "record": {
+      "bytes": 3427131951,
+      "elapsed_seconds": 1798.73,
+      "event": "heartbeat",
+      "files": 27257,
+      "rehash": true,
+      "root": "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+      "stage": "guard_cache"
+    }
+  },
+  "last_event_counts_scope": "aggregate guard_cache counter through prior roots and partial Mathlib; not completed Mathlib count/physicalIO",
+  "logical_counts_not_physical_io": true,
+  "nonprogress_lines": [],
+  "overall_runtime_policy_acceptance": false,
+  "partial_cli_substep_evidence": "both inventories nominate exact Cli absence; both external resolutions identify82imports owned onlyby toolchain/mathlib; policy/config checks reach end events",
+  "progress_event_count": 1050,
+  "status": "derived only from authenticated saved stderr; no live framework/instrumentation added",
+  "stderr_bytes": 180182,
+  "stderr_sha256": "ee3a8ac2fa56ab35001496d9d4e31327a3a4423e139b0fad7f5f2f718ce8fcb6",
+  "third_guard_rehash_started": {
+    "line": 977,
+    "record": {
+      "elapsed_seconds": 1631.08,
+      "event": "guard_full_rehash_begin",
+      "stage": "admission"
+    }
+  },
+  "uninstrumented_interval_after_independent_inventory_seconds": 734.338,
+  "warnings_and_tracebacks": "full original stderr retained; nonprogress lines listed without dropping/normalizing them"
+}
