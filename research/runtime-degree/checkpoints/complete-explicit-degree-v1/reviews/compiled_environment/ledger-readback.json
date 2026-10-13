@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "receipt_sha256": "7785230dba8877aa15b1cf5390b54cd1a1ec6d005cecfcdaa7083e28fdd0c978",
+  "validator_source_sha256": "b0afc84de7a519376d27730280c4e655c8ec49e949f3290729bb14e80739fbf0",
+  "count": 19,
+  "module_counts": {
+    "CompleteDraw.FinalBinding": 5,
+    "CompleteDraw.Seams": 6,
+    "CompleteDraw.FixedMachineTheorem": 3,
+    "CompleteDraw.PublicBridge": 5
+  },
+  "headline_origins": {
+    "Math115.CompleteDrawNext.explicitPublicDegree": {
+      "module": "CompleteDraw.FixedMachineTheorem",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/FixedMachineTheorem.lean"
+    },
+    "Math115.CompleteDrawNext.typed_actual_publicDraw": {
+      "module": "CompleteDraw.FinalBinding",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/FinalBinding.lean"
+    },
+    "Math115.CompleteDrawNext.machineTime_public_explicit_degree": {
+      "module": "CompleteDraw.FixedMachineTheorem",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/FixedMachineTheorem.lean"
+    },
+    "Math115.CompleteDrawNext.fixedMachineBoundedSampling_explicit_degree": {
+      "module": "CompleteDraw.FixedMachineTheorem",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/FixedMachineTheorem.lean"
+    }
+  },
+  "scope": "Read-only invocation of existing compiled-environment receipt validator; no full ledger update or scan."
+}

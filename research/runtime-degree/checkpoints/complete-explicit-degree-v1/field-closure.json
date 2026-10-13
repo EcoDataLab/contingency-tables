@@ -1,0 +1,51 @@
+{
+  "common_degree_expression": "max(unitTrialDegree,referenceTrialDegree)",
+  "all_fields_le_common_degree": true,
+  "fields": [
+    {
+      "field": "parser",
+      "exact_realizer": "ProfilePrograms.parsedSamplingRealizer",
+      "degree_decimal": "16"
+    },
+    {
+      "field": "printer",
+      "exact_realizer": "GreedyFeasibleTable.printMatrixRealizer",
+      "degree_decimal": "4"
+    },
+    {
+      "field": "schedule",
+      "exact_realizer": "LatticeScheduleProgram.scheduleRealizer",
+      "degree_decimal": "1008"
+    },
+    {
+      "field": "initial",
+      "exact_realizer": "LatticeSamplerPreparation.initialConfigurationRealizer",
+      "degree_decimal": "4032"
+    },
+    {
+      "field": "fallback",
+      "exact_realizer": "LatticeSamplerPreparation.initialFallbackRealizer",
+      "degree_decimal": "18"
+    },
+    {
+      "field": "branch",
+      "exact_realizer": "LatticeSamplerPreparation.bothLargeTestRealizer",
+      "degree_decimal": "1008"
+    },
+    {
+      "field": "referenceTrial",
+      "exact_realizer": "LatticeOuterProgram.packedTrialRealizer",
+      "degree_decimal": "249569086149969927754465653530857316378662151100210635200859836899115394502462433742952346464893494918298349218830740503411950490371359547202234848664532691737852411594490630793354441329305157924334049610980689568025133584089872528423843231844695041473652053370821139768976712765532769803598329631937527257644643545333786414444514615499205181845594806221996072304130411642154202278059154591154845186413464438667829092073424522772982022332107776812250045880396804598645709356960800186404581118066277180403051396836632512938969750164048642049142739626451320875705881681967964561744998704271360"
+    },
+    {
+      "field": "unitTrial",
+      "exact_realizer": "LatticeUnitOuter.packedTrialRealizer",
+      "degree_decimal": "272019144737569436269241336269647035188617216"
+    },
+    {
+      "field": "retryWords",
+      "exact_realizer": "LatticeOuterProgram.retryWordsRealizer",
+      "degree_decimal": "42914304"
+    }
+  ]
+}

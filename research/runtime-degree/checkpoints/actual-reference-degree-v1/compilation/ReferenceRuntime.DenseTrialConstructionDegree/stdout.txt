@@ -1,0 +1,4 @@
+Math115.ReferenceRuntimeNext.typed_denseTrialCompletion :
+  Typed trialCompletionRealizer
+    85251034213171022236299660960537698717406615764205172318917605728234344305272397451247029199219325927424
+'Math115.ReferenceRuntimeNext.typed_denseTrialCompletion' depends on axioms: [propext, Classical.choice, Quot.sound]

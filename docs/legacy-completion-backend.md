@@ -82,11 +82,12 @@ The old fixed physical machine has an existing bound
 
 ```
 Time_old ≤ C_old · S_request^D_old,
-D_old = 170 · natDegree(P_L).
+D_old = D from the explicit complete-degree certificate.
 ```
 
-`P_L` is the polynomial in the compiled old machine proof. Its degree remains
-unextracted. The same constants work for every residual request. Thus its
+The [complete degree packet](../research/runtime-degree/checkpoints/complete-explicit-degree-v1/)
+now fixes D as a literal natural expression with 4,137 decimal digits. Its
+coefficient C_old remains existential. The same constants work for every residual request. Thus its
 subcalls cost at most `H C_old S_star^D_old`, where
 `S_star=m+n+clog2(M_star+1)+k+1`. Constructing and interpreting the new outer
 program, reindexing, copying outputs, and materializing or skipping the larger
@@ -95,7 +96,7 @@ covers its own requested word bank, not those extra outer operations.
 
 This gives a potentially costly but valid route to polynomial completion
 composition. It does not establish a smaller complete runtime exponent or
-close the seven numerical draw certificates. The [common-size comparison](composed-complexity.md)
+implement the new outer sampler; the seven old-machine draw certificates are now closed. The [common-size comparison](composed-complexity.md)
 continues to compare the already compiled machines separately.
 
 Separate AI source reviews checked this bridge against the old sources, which

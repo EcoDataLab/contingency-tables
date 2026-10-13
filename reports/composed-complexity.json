@@ -46,8 +46,8 @@
     "public_word_measure_bound": "(12672000000*37^62*5^85+91)*S^170"
   },
   "physical_runtime": {
-    "status": "Uniform complete public-machine polynomial-time existence has ordinary compilation, actual full compiled-environment audit, and source-bound semantic readback evidence; numerical degree remains unknown",
-    "literal_numeric_degree": null,
+    "status": "Closed explicit degree for the unchanged public d17 machine; ordinary compilation, focused readbacks, independent AI source review and full headline-closure audit passed. No fresh default Linux or strict Comparator acceptance.",
+    "literal_numeric_degree": "340*max(1008,8*(1+k*(k+1))*k^5), k=max(unitTrialDegree,referenceTrialDegree), with both literal naturals fixed in CompleteDraw",
     "draft_degree": "170*natDegree(P_L)",
     "draft_coefficient": "P_L(12672000000*37^62*5^85+91)+1",
     "P_L": "Existential physical-machine polynomial for the particular local wordCount/publicDraw realizers",
@@ -55,11 +55,14 @@
     "p": "Complete online work plus worst encoded output weight in wordMeasure",
     "conditional_end_to_end_degree": "340*max(1,t)*max(e,6), with e the complete word-count degree and t the complete supplied-word public-draw degree",
     "conditional_coefficient": "Q_L(12672000000*37^62*5^85+91)+1",
-    "conditional_status": "Generic finite-word transformation compiled and named-audited under supplied degree certificates; substitution of the public S^170 envelope remains conditional algebra, not a compiled final public-degree theorem or a numeral",
-    "review_snapshot_status": "Draft symbolic bound, no numeric complete degree established in this review",
+    "conditional_status": "Historical helper assumptions are now instantiated by the exact complete count degree1008 and complete publicDraw degree in the final packet.",
+    "review_snapshot_status": "Earlier draft/symbolic fields retain their historical formulas; explicit_degree_verification records the closed later result.",
     "compiled_symbolic_degree": "170*natDegree(P_L)",
     "compiled_symbolic_coefficient": "P_L(12672000000*37^62*5^85+91)+1",
-    "historical_conditional_online_work_degree": "340*max(1,e_L), e_L=natDegree(p_L)"
+    "historical_conditional_online_work_degree": "340*max(1,e_L), e_L=natDegree(p_L)",
+    "literal_numeric_degree_digits": 4137,
+    "literal_numeric_degree_artifact": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/degree-values.json",
+    "coefficient_status": "One positive uniform natural C exists; numerical coefficient not extracted."
   },
   "comparisons": [
     {
@@ -84,8 +87,8 @@
       "inverse_gap": "80000*d^17",
       "completion_cost_model": "Lattice dilation/rejection and complete supplied-word dense draw",
       "bank_bound": "12672000000*37^62*5^85*S^170",
-      "physical_degree": "170*natDegree(P_L)",
-      "numeric_complete_degree": null
+      "physical_degree": "340*max(1008,8*(1+k*(k+1))*k^5), k=max(unitTrialDegree,referenceTrialDegree), with both literal naturals fixed in CompleteDraw",
+      "numeric_complete_degree": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/degree-values.json#publicDegreeDecimal"
     }
   ],
   "cost_findings": [
@@ -97,10 +100,9 @@
     "No exact expected-time sampler or bounded-table counting extension follows from the local bounded-sampling draft."
   ],
   "missing_quantitative_evidence": [
-    "Named degree-bounded work polynomial for actual complete public word-count realizer.",
-    "Named degree-bounded work polynomial for complete public draw, including both branches and all dense/rejection/outer trials.",
-    "Degree accounting for reusable maps/folds, cap bounds, arithmetic, chunk/copy costs, parser/printer, greedy fallback, and fresh bits.",
-    "Numerical degree certificates for the actual complete word-count and supplied-word public draw, followed by final public-size instantiation of the checked generic compiler transformation."
+    "A comparable extracted numerical runtime degree for the pinned upstream complete machine.",
+    "Sharper practical cost envelopes and an extracted numerical coefficient; the closed degree is extremely conservative.",
+    "Complete encoded integration and cost of the newer d8/d6.5 ideal-chain sampler."
   ],
   "source_sha256": {
     "formal/Math115/PublicLatticeSampler.lean": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245",
@@ -126,7 +128,7 @@
   },
   "source_sha256_snapshot_status": "Frozen original 20-file review snapshot. The docs/composed-complexity.md entry hashes the original note before the publication-safe edit, not the current note. No original source-hash entry was changed.",
   "publication_presentation": {
-    "status": "Current ordinary-compilation and actual full-audit update with separately preserved pre-compilation excerpts; source-bound independent artifact and semantic reviews passed",
+    "status": "Explicit local degree closed in a separate additive packet; earlier source and receipt snapshots retain their original scopes.",
     "reviewable_artifacts": [
       "docs/composed-complexity.md",
       "docs/composed-complexity-uncompiled-appendix.md",
@@ -136,7 +138,7 @@
     ],
     "pending_full_sampler_modules_included": false,
     "compilation_claim_for_local_sampler": true,
-    "numeric_complete_degree_established": false,
+    "numeric_complete_degree_established": true,
     "appendix": "docs/composed-complexity-uncompiled-appendix.md",
     "appendix_sources": [
       {
@@ -228,7 +230,7 @@
       }
     ],
     "current_markdown_sha256": {
-      "docs/composed-complexity.md": "c644b15514c3da7d78f20e5fb084ef9b5c75d6e2641407f0fa16031cf29e41c9",
+      "docs/composed-complexity.md": "d4a6cbff247cf8ca1cf3c7b6b99b2b94df06b32140d3c4573464c404219ff00e",
       "docs/composed-complexity-uncompiled-appendix.md": "30b33f95b4d1a9d2fb161b4cad6c685c732c1b4feeb1b01d8046a2c1f60440a9",
       "docs/practical-use.md": "f2e3d77f18c2b0ff4290aa67d680aa07fcae130309b9f8e98d8cae5e995eed0a",
       "docs/commuting-use-cases.md": "abe61b2af9c988319988aee30bf4345bf94f8de3c70a1a6d455e84f34888ed26"
@@ -710,7 +712,7 @@
           "module": "Math115.IdealRepairRefinement",
           "name": "Math115.IdealRepairRefinement.selectedChain_poincare_d17_refined",
           "record_canonical_sha256": "2a4eb13863a766414d2981cd5a19f2ce23fd69c62320c9ed4a5e1621c0d986bb",
-          "statement": "\u2200 {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J] (r : I \u2192 \u2115)\n  (c : J \u2192 \u2115) [inst_4 : Nonempty (Math115.IdealOracleScales.IdealStates r c)]\n  (H : Math115.IdealOracleScales.IdealStates r c \u2192 \u211d),\n  (Math115.IdealOracleScales.selectedChain r c).variance H \u2264\n    128 * 5 ^ 4 * \u2191OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 17 *\n      (Math115.IdealOracleScales.selectedChain r c).energy H"
+          "statement": "∀ {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J] (r : I → ℕ)\n  (c : J → ℕ) [inst_4 : Nonempty (Math115.IdealOracleScales.IdealStates r c)]\n  (H : Math115.IdealOracleScales.IdealStates r c → ℝ),\n  (Math115.IdealOracleScales.selectedChain r c).variance H ≤\n    128 * 5 ^ 4 * ↑OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 17 *\n      (Math115.IdealOracleScales.selectedChain r c).energy H"
         },
         "generic_reuse_boundary": {
           "allowed": "Pinned parser, printer, polynomial arithmetic, dense sampler subroutines, and finite-word machine compiler are reused. Presence of generic library symbols does not substitute a different complete sampler.",
@@ -928,5 +930,32 @@
       "scope": "Earlier separate ordinary native source compilation and three-name audit; preserved unchanged."
     },
     "historical_scope_note": "Older quantitative_helper_verification and current_verification flags remain the recorded scopes of their own checkpoints."
+  },
+  "explicit_degree_verification": {
+    "status": "passed",
+    "packet": "research/runtime-degree/checkpoints/complete-explicit-degree-v1",
+    "reference_packet": "research/runtime-degree/checkpoints/actual-reference-degree-v1",
+    "machine": "Math115.PublicLatticeSampler.machine",
+    "degree_expression": "340*max(1008,8*(1+k*(k+1))*k^5), k=max(unitTrialDegree,referenceTrialDegree), with both literal naturals fixed in CompleteDraw",
+    "degree_decimal_digits": 4137,
+    "coefficient_extracted": false,
+    "all_seven_draw_fields_closed": true,
+    "remaining_cost_premises": [],
+    "headline": "Math115.CompleteDrawNext.fixedMachineBoundedSampling_explicit_degree",
+    "statement_file": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FixedMachineTheorem.lean",
+    "environment_receipt": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/reviews/compiled_environment/verification.json",
+    "environment_receipt_sha256": "f3a6e2d9ea06580c5cc898a034e9dd1bd9befba1fb3d7ee7cace32a2b5df2eac",
+    "selected_declarations": 19,
+    "selected_theorems": 12,
+    "full_headline_closures": 4,
+    "final_sampling_closure_size": 48401,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "scope": "Focused compiled-environment audit of four frozen final defining modules, reusing successful exact compilations and authenticated imports; four full headline closures. No default rebuild, fresh dependency build, platform portability or strict Comparator replay.",
+    "upstream_runtime_improvement_established": false,
+    "new_defect_chain_implemented": false
   }
 }

@@ -1,0 +1,11 @@
+import CompleteDraw.PublicBridge
+#check Math115.CompleteDrawNext.typed_actual_schedule
+#check Math115.CompleteDrawNext.actual_seams_of_reference
+#check Math115.CompleteDrawNext.typed_publicDraw_of_reference
+#check Math115.CompleteDrawNext.machineTime_public_of_reference
+#check Math115.CompleteDrawNext.fixedMachineBoundedSampling_of_reference
+#print axioms Math115.CompleteDrawNext.typed_actual_schedule
+#print axioms Math115.CompleteDrawNext.actual_seams_of_reference
+#print axioms Math115.CompleteDrawNext.typed_publicDraw_of_reference
+#print axioms Math115.CompleteDrawNext.machineTime_public_of_reference
+#print axioms Math115.CompleteDrawNext.fixedMachineBoundedSampling_of_reference

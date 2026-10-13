@@ -103,6 +103,17 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "complete-explicit-degree",
+      "format": "compiled_environment",
+      "path": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/reviews/compiled_environment/verification.json",
+      "sha256": "f3a6e2d9ea06580c5cc898a034e9dd1bd9befba1fb3d7ee7cace32a2b5df2eac",
+      "label": "Explicit degree for the existing complete public machine",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Focused compiled-environment audit of four frozen final defining modules, reusing successful exact compilations and authenticated imports; four full headline closures. No default rebuild, fresh dependency build, platform portability or strict Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -324,8 +335,8 @@
       ],
       "limitations": [
         "Exactly the same existential theorem statement as upstream; a smaller complete machine-time exponent is not established.",
-        "The numerical complete runtime degree D has not been extracted; d¹⁷ is an inverse-gap power and S¹⁷⁰ bounds reserved bits/input size, not complete machine time.",
-        "Practical sampler performance and strict Comparator acceptance of this sampler remain unknown. This bounded near-uniform theorem supplies no exact-sampling or counting extension."
+        "The separate explicit-runtime-degree claim now fixes D for the same local machine. This historical Linux receipt retains its original scope. The d¹⁷ inverse-gap power and S¹⁷⁰ reserved-bit/input allowance are different quantities.",
+        "Practical sampler performance and strict Comparator acceptance remain unknown. This bounded near-uniform theorem supplies no exact-sampling or counting extension."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -368,6 +379,54 @@
         {
           "receipt": "linux-integrated",
           "scope": "Exact-commit hosted Linux focused 1511 named replay and fresh compiled-environment audit. No separate standalone named audits, Comparator or new runtime result."
+        }
+      ]
+    },
+    {
+      "id": "explicit-runtime-degree",
+      "title": "Explicit complete runtime degree",
+      "english_claim": "The existing d^17 public machine re-proves upstream bounded sampling and now has a closed explicit numerical runtime degree: every tape produces a feasible table within C S^D and output TV is at most 2^-h.",
+      "quantity": "Every-tape time ≤ C Sᴰ with explicit D; total variation ≤ 2⁻ʰ",
+      "hypotheses": [
+        "Any finite dimensions m,n and natural margins r:Fin m→ℕ,c:Fin n→ℕ with equal ordinary totals; zero margins and empty dimensions are included.",
+        "Numeric precision h≥1; M=∑ᵢrᵢ and S=m+n+clog₂(M+1)+h+1. One fixed machine and positive natural C apply uniformly; D is the fixed expression in CompleteDraw.FixedMachineTheorem. Accuracy uses independent uniform fair bits; feasibility holds for every tape."
+      ],
+      "limitations": [
+        "The existential sampling statement matches upstream. The additional explicit D has 4,137 decimal digits and is a conservative upper bound; no smaller machine-time degree than upstream has been established.",
+        "The new degree packet has ordinary compilation and four complete headline-closure audits with trusted imports. It is separate from the historical default Linux receipt and strict Comparator acceptance.",
+        "The numerical coefficient C remains existential. The d⁸/d^6.5 ideal-chain improvements are not integrated into this d¹⁷ machine. No practical runtime, exact-sampling or counting improvement follows."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FinalBinding.lean",
+        "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FixedMachineTheorem.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.CompleteDrawNext.typed_actual_publicDraw",
+          "source": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FinalBinding.lean",
+          "module": "CompleteDraw.FinalBinding"
+        },
+        {
+          "name": "Math115.CompleteDrawNext.explicitPublicDegree",
+          "source": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FixedMachineTheorem.lean",
+          "module": "CompleteDraw.FixedMachineTheorem"
+        },
+        {
+          "name": "Math115.CompleteDrawNext.machineTime_public_explicit_degree",
+          "source": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FixedMachineTheorem.lean",
+          "module": "CompleteDraw.FixedMachineTheorem"
+        },
+        {
+          "name": "Math115.CompleteDrawNext.fixedMachineBoundedSampling_explicit_degree",
+          "source": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FixedMachineTheorem.lean",
+          "module": "CompleteDraw.FixedMachineTheorem"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "complete-explicit-degree",
+          "scope": "Focused compiled-environment audit of four frozen final defining modules, reusing successful exact compilations and authenticated imports; four full headline closures. No default rebuild, fresh dependency build, platform portability or strict Comparator replay."
         }
       ]
     },

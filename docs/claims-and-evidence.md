@@ -227,7 +227,31 @@ contracts; they do not supply the full outer sampler's machine-cost exponent.
 
 Pinned upstream `OAI.ContingencyTables.boundedSampling` already proves exactly this same type. This is an alternative proof through a different fixed machine and the d¹⁷ route, not a stronger existential bounded-sampling statement. The [reserved-bit comparison](composed-complexity.md#comparable-result-in-the-same-public-size-measure) gives a concrete common quantity whose upper allowance improves.
 
-The final statement is existential; its proof chooses the fixed [public machine](../formal/Math115/PublicLatticeSampler.lean). `public_spec` identifies its encoded table draw, `machine_outputs` establishes every-tape halting and feasibility, `machine_mass` identifies its output probabilities, and `machineTime_public_bound` supplies the uniform time bound. The [complete checkpoint](outer-sampler-compiler-checkpoint.md) retains the exact statement map and evidence. The numerical complete runtime degree and measured performance remain unknown; neither `d¹⁷` nor the reserved-bit/input bound `S¹⁷⁰` is that degree. Strict Comparator acceptance of this sampler, an exact-sampling extension, and counting are separate from this bounded near-uniform result.
+The final statement is existential; its proof chooses the fixed [public machine](../formal/Math115/PublicLatticeSampler.lean). `public_spec` identifies its encoded table draw, `machine_outputs` establishes every-tape halting and feasibility, `machine_mass` identifies its output probabilities, and `machineTime_public_bound` supplies the uniform time bound. The [complete checkpoint](outer-sampler-compiler-checkpoint.md) retains the exact statement map and evidence. The separate [explicit runtime-degree claim](#explicit-runtime-degree) now fixes the degree for that same machine; measured performance remains unknown. Neither `d¹⁷` nor the reserved-bit/input bound `S¹⁷⁰` is the machine-time degree. Strict Comparator acceptance of this sampler, an exact-sampling extension, and counting are separate from this bounded near-uniform result.
+
+## explicit-runtime-degree
+
+`Math115.CompleteDrawNext.fixedMachineBoundedSampling_explicit_degree` fixes
+one explicit degree for the same `Math115.PublicLatticeSampler.machine` and
+original `Algorithms` codecs. It retains the dimensions, natural equal-total
+margins, numeric precision and output guarantee of the bounded-sampler claim
+above, including zero margins and empty dimensions. One positive natural
+coefficient C works uniformly; no draw-cost or supplied-degree premise remains.
+
+All seven numerical draw fields are closed. With the literal unit and
+reference degrees fixed in the [packet](../research/runtime-degree/checkpoints/complete-explicit-degree-v1/),
+`k=max(unitDegree,referenceDegree)`, `t=8*(1+k*(k+1))*k^5` and
+`D=340*max(1008,t)`. D has 4,137 decimal digits. C remains existential,
+and no smaller machine-time degree than upstream is established. The newer
+d⁸/d^6.5 chain is not integrated into this machine.
+
+The packet preserves ordinary compilation of five modules, five focused
+axiom/type readbacks, separate AI source review, and a compiled-environment
+audit with four complete headline closures and only standard axioms. Its
+receipt is a separate additive scope; it does not enlarge the historical
+1,511-name Linux receipt or the default audit's 22 headline closures. No new
+Linux proof build, strict Comparator acceptance or outside human review is
+claimed.
 
 ## executable-references
 

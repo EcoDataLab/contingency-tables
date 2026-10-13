@@ -1,0 +1,245 @@
+{
+  "public_root": "research/runtime-degree/checkpoints/actual-reference-degree-v1",
+  "sources": [
+    {
+      "module": "ReferenceRuntime.DecoderDegree",
+      "source_sha256": "2b86c895c870cb76ecbb7b38e0310193cf1ce792be8af53d8cf761fa7450646a",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DecoderDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/DecoderDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/DecoderDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.CompletionPrepareDegree",
+      "source_sha256": "9ac954ea1c26f95a79fb0dcd01fffc0bff64efd8956f37d5ef225c3231927280",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/CompletionPrepareDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/CompletionPrepareDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/CompletionPrepareDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.DenseLayoutDegree",
+      "source_sha256": "bb246a35b8e926fa6e9ee508662a50eee2fbefbfcfece0ddae0c8049fc7f62ce",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseLayoutDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/DenseLayoutDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/DenseLayoutDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.DenseWidthCoreDegree",
+      "source_sha256": "8d5029395a6c923886ecbcec6abd7ea90fa3475f9bf20b76439b5165543c80c8",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseWidthCoreDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/DenseWidthCoreDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/DenseWidthCoreDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.DenseTrialWidthDegree",
+      "source_sha256": "e1e395391910ca649711ba4cb813d090567699e793699b45d9faba8b76067720",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseTrialWidthDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/DenseTrialWidthDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/DenseTrialWidthDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.CanonicalBitCountDegree",
+      "source_sha256": "bfa12a33e6977eb302543e8f0f6b5123a613bfa1ec26ad0b7cf51911c8489010",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/CanonicalBitCountDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/CanonicalBitCountDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/CanonicalBitCountDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.DenseAcceptanceDegree",
+      "source_sha256": "a444fa4b53f6be3de8aed0f75fccac780e2aee59f7fa752ce748f25bebb62598",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseAcceptanceDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/DenseAcceptanceDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/DenseAcceptanceDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.DenseExponentDegree",
+      "source_sha256": "89f6fef81114a1a6f6bd2be9f7b90b4957c037e6f9bfd4e90b619ee1b8ae39e3",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseExponentDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/DenseExponentDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/DenseExponentDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.DenseTransitionDegree",
+      "source_sha256": "ba13993f6110458ecee336385d040b95685ab46411ba5e21a71730bc7e82142b",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseTransitionDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/DenseTransitionDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/DenseTransitionDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.DependentChunksDegree",
+      "source_sha256": "4b056f67093c3bb58b64aa30679fbbfe355b86726b2131b745e24f50dd824c58",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DependentChunksDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/DependentChunksDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/DependentChunksDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.DenseOffsetDegree",
+      "source_sha256": "f5d5018938a1aba7e3206f03f09f1992e01aeab38d923c9984fb74853ca4bad2",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseOffsetDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/DenseOffsetDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/DenseOffsetDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.DenseTrialConstructionDegree",
+      "source_sha256": "5d016aeb619de3f20315c1595ce3df1362515da2d676a58078dabbc7875a184b",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseTrialConstructionDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/DenseTrialConstructionDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/DenseTrialConstructionDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.CompletionReservationDegree",
+      "source_sha256": "cb070243a60ce32cd86c2b76929fadb6e902b9daee0ef8023cbd8217a6a655ee",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/CompletionReservationDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/CompletionReservationDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/CompletionReservationDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.DenseDrawDegree",
+      "source_sha256": "93ff60133bbe4ed3d081a5c450f731801af1303902254fe300772d3a2dd49bda",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseDrawDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/DenseDrawDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/DenseDrawDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.CompletionDrawDegree",
+      "source_sha256": "3f80174c2b098c558855441fd3d838a4da5d2688f784bb0f1957fe0ef2364d95",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/CompletionDrawDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/CompletionDrawDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/CompletionDrawDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.OuterWordParsingDegree",
+      "source_sha256": "ebbfba8249734d2a86f5012bb3f0c50e7059665cf0e77f0e3c8ba2471cf0bf48",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/OuterWordParsingDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/OuterWordParsingDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/OuterWordParsingDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.ProfileStepDegree",
+      "source_sha256": "bfc2cc72ef9992976a16c4b514b90836adb6d0bb4289a568ef9c7446f02f92b6",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/ProfileStepDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/ProfileStepDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/ProfileStepDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "ReferenceRuntime.PackedTrialDegree",
+      "source_sha256": "ce5fd794369db425d663746c65932f91d725208d12acc3be03215fcfe9a04e18",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/PackedTrialDegree.lean",
+      "staged_source": "packet/ReferenceRuntime/PackedTrialDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceRuntime/PackedTrialDegree.lean",
+      "role": "reference owner"
+    },
+    {
+      "module": "InputNormalization.MaximalIndex",
+      "source_sha256": "c903cdfd4fcab7e9c5ddf855eaae22b8521e084ff1b2400e700961856a26f0cc",
+      "accepted_source": ".local/further-gap/draw-runtime-next/input-normalization/source/InputNormalization/MaximalIndex.lean",
+      "staged_source": "packet/InputNormalization/MaximalIndex.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/InputNormalization/MaximalIndex.lean",
+      "role": "ordinary frozen source prerequisite"
+    },
+    {
+      "module": "InputNormalization.SwapEnvelope",
+      "source_sha256": "b9881d0835b603118cc8d5d01e7be400cfea3622f3f2b6a679b4e08baa32757c",
+      "accepted_source": ".local/further-gap/draw-runtime-next/input-normalization/source/InputNormalization/SwapEnvelope.lean",
+      "staged_source": "packet/InputNormalization/SwapEnvelope.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/InputNormalization/SwapEnvelope.lean",
+      "role": "ordinary frozen source prerequisite"
+    },
+    {
+      "module": "InputNormalization.SwapDegree",
+      "source_sha256": "56743941dfef7209b883c037aa6b8f52716fde5c44500a6936fcef2025a8a56a",
+      "accepted_source": ".local/further-gap/draw-runtime-next/input-normalization/source/InputNormalization/SwapDegree.lean",
+      "staged_source": "packet/InputNormalization/SwapDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/InputNormalization/SwapDegree.lean",
+      "role": "ordinary frozen source prerequisite"
+    },
+    {
+      "module": "InputNormalization.PreparedDegree",
+      "source_sha256": "1774820a0b23220f9f1335600fb0543c6f8aea68a60a46a2c1edec1cd1ad7d82",
+      "accepted_source": ".local/further-gap/draw-runtime-next/input-normalization/source/InputNormalization/PreparedDegree.lean",
+      "staged_source": "packet/InputNormalization/PreparedDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/InputNormalization/PreparedDegree.lean",
+      "role": "ordinary frozen source prerequisite"
+    },
+    {
+      "module": "InputNormalization.CanonicalDegree",
+      "source_sha256": "fbb68b5fa679d8aee27acc3787c65bd23daa850dda3f5db2a2fcbb9efbdbcf09",
+      "accepted_source": ".local/further-gap/draw-runtime-next/input-normalization/source/InputNormalization/CanonicalDegree.lean",
+      "staged_source": "packet/InputNormalization/CanonicalDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/InputNormalization/CanonicalDegree.lean",
+      "role": "ordinary frozen source prerequisite"
+    },
+    {
+      "module": "CompletionRuntime.EntryOutput",
+      "source_sha256": "9acfafca70af552e9e610f6a6cb87ddf1a1b9e8f64367f44fa2b8ced59e5b6d7",
+      "accepted_source": ".local/further-gap/draw-runtime-next/completion-output/source/CompletionRuntime/EntryOutput.lean",
+      "staged_source": "packet/CompletionRuntime/EntryOutput.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/CompletionRuntime/EntryOutput.lean",
+      "role": "ordinary frozen source prerequisite"
+    },
+    {
+      "module": "CompletionRuntime.ValidDegree",
+      "source_sha256": "c4496fae89ec8d29fc73b7d03c98c20161d8ba1a2d8b994e8a3b7a8003377344",
+      "accepted_source": ".local/further-gap/draw-runtime-next/completion-output/source/CompletionRuntime/ValidDegree.lean",
+      "staged_source": "packet/CompletionRuntime/ValidDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/CompletionRuntime/ValidDegree.lean",
+      "role": "ordinary frozen source prerequisite"
+    },
+    {
+      "module": "CompletionRuntime.MatrixDegree",
+      "source_sha256": "2ad4d6a0b468f6f6c9e05b36735c17470b4fbd9c058b3961ea9fa5c3cc633908",
+      "accepted_source": ".local/further-gap/draw-runtime-next/completion-output/source/CompletionRuntime/MatrixDegree.lean",
+      "staged_source": "packet/CompletionRuntime/MatrixDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/CompletionRuntime/MatrixDegree.lean",
+      "role": "ordinary frozen source prerequisite"
+    },
+    {
+      "module": "ReferenceMetadata.TranslationDegree",
+      "source_sha256": "1ecd7e25de1ce8a20b846b891ad69f12ceabc4c932fa2009c7734d334a037850",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-metadata/source/ReferenceMetadata/TranslationDegree.lean",
+      "staged_source": "packet/ReferenceMetadata/TranslationDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceMetadata/TranslationDegree.lean",
+      "role": "ordinary frozen source prerequisite"
+    },
+    {
+      "module": "ReferenceMetadata.ResidualDegree",
+      "source_sha256": "2ca18e0467754bfec5cd24ebdee8a2c56b174507d6218a9f00f58a82d14f90f4",
+      "accepted_source": ".local/further-gap/draw-runtime-next/reference-metadata/source/ReferenceMetadata/ResidualDegree.lean",
+      "staged_source": "packet/ReferenceMetadata/ResidualDegree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/ReferenceMetadata/ResidualDegree.lean",
+      "role": "ordinary frozen source prerequisite"
+    },
+    {
+      "module": "AffineMapWith.Degree",
+      "source_sha256": "784150594b41a6b72b1930868833d502b94eca9046f4be846652e6d204a0a6b0",
+      "accepted_source": ".local/further-gap/draw-runtime-next/affine-mapwith/source/AffineMapWith/Degree.lean",
+      "staged_source": "packet/AffineMapWith/Degree.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/AffineMapWith/Degree.lean",
+      "role": "ordinary frozen source prerequisite"
+    },
+    {
+      "module": "AffineMapWith.ChunkExample",
+      "source_sha256": "2b4cdc8f24fccd63cc7781807547d97ddcf05340c4f420dafd37856aaaff2ec1",
+      "accepted_source": ".local/further-gap/draw-runtime-next/affine-mapwith/source/AffineMapWith/ChunkExample.lean",
+      "staged_source": "packet/AffineMapWith/ChunkExample.lean",
+      "public_source": "research/runtime-degree/checkpoints/actual-reference-degree-v1/AffineMapWith/ChunkExample.lean",
+      "role": "ordinary frozen source prerequisite"
+    }
+  ]
+}

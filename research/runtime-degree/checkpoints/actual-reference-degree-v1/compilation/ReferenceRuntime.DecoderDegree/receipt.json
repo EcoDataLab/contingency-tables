@@ -1,0 +1,26 @@
+{
+  "module": "ReferenceRuntime.DecoderDegree",
+  "command_threads": 2,
+  "memory_cap_mib": 8192,
+  "source_sha256": "2b86c895c870cb76ecbb7b38e0310193cf1ce792be8af53d8cf761fa7450646a",
+  "returncode": 0,
+  "seconds": 18.003,
+  "lean_path": [
+    ".local/further-gap/draw-runtime-next/reference-trial-cost/objects",
+    ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects",
+    ".local/further-gap/draw-runtime-next/division-cost/objects",
+    ".local/further-gap/draw-runtime-next/initial-degree/greedy-final-01/objects",
+    ".local/further-gap/draw-runtime-next/printer-next/objects",
+    ".local/further-gap/draw-runtime-next/objects",
+    "formal/.lake/build/lib/lean",
+    "formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "formal/.lake/packages/Qq/.lake/build/lib/lean",
+    "formal/.lake/packages/aesop/.lake/build/lib/lean",
+    "formal/.lake/packages/batteries/.lake/build/lib/lean",
+    "formal/.lake/packages/importGraph/.lake/build/lib/lean",
+    "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+    "formal/.lake/packages/plausible/.lake/build/lib/lean",
+    "formal/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "olean_sha256": "01175e89179c526cdf5cffb543c143b00c2a8a7811c531ae6f2b080fd2da8096"
+}
