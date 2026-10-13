@@ -1,0 +1,23 @@
+{
+  "aggregate_benchmark_cap_seconds": 1800,
+  "cache_bytes": 9261675188,
+  "cache_files": 131021,
+  "candidate_installed_in_checker": false,
+  "candidate_metadata_seconds": 0.19790940000001456,
+  "exact_full_dictionary_equality": true,
+  "method_cap_seconds": 900,
+  "module_count": 679,
+  "plan_call_elapsed_seconds": 83.54331679999999,
+  "race_error_contract_equivalence": false,
+  "reference_metadata_seconds": 25.649139400000024,
+  "runner_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6",
+  "runtime_freeze_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+  "scope": "original full plan/admission; complete standalone metadata comparison; one unchanged stat-only guard; no execute",
+  "snapshot_dictionary_sha256": "17257fe85d74d659493751a463e4e646d2f5109df6e6d9ff8602cc70177d79c2",
+  "snapshot_sha256": "c875c20375a1bf3362ac836126c7ddb249b0669ef9b2af332691f89f6278a193",
+  "stable_linux_only": true,
+  "status": "complete_snapshot_equality_and_original_guard_passed",
+  "trie_preparation_seconds": 0.415118600000028,
+  "unchanged_stat_guard_seconds": 27.011050099999977,
+  "wrapper_sha256": "2746ef7593240011ae12149f3934e2fa1a68c8f9d77139ab33747d677ec5d058"
+}

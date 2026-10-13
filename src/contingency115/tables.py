@@ -7,6 +7,7 @@ instead of returning a partial count or a biased draw.
 
 from __future__ import annotations
 
+from bisect import bisect_right
 from collections import deque
 from dataclasses import dataclass
 from fractions import Fraction
@@ -474,26 +475,40 @@ class ExactTableSampler:
         return (self.unrank(rank) for rank in range(count))
 
 
-def _draw_rational(masses: Sequence[Fraction], rng: RandomIntegerSource) -> int:
+def _prepare_rational_choice(masses: Sequence[int | Fraction]) -> tuple[int, ...]:
+    """Cumulative integer masses, preserving the original common-denominator stop."""
+    rational_masses = tuple(Fraction(mass) for mass in masses)
     denominator = 1
-    for mass in masses:
+    for mass in rational_masses:
         denominator = denominator * mass.denominator // gcd(denominator, mass.denominator)
-    integer_masses = [mass.numerator * (denominator // mass.denominator) for mass in masses]
-    rank = rng.randrange(sum(integer_masses))
-    for i, mass in enumerate(integer_masses):
-        if rank < mass:
-            return i
-        rank -= mass
-    raise AssertionError("RNG returned an integer outside the requested range")
+    running, cumulative = 0, []
+    for mass in rational_masses:
+        running += mass.numerator * (denominator // mass.denominator)
+        cumulative.append(running)
+    return tuple(cumulative)
+
+
+def _draw_rational_choice(cumulative: tuple[int, ...], rng: RandomIntegerSource) -> int:
+    index = bisect_right(cumulative, rng.randrange(cumulative[-1]))
+    if index >= len(cumulative):
+        raise AssertionError("RNG returned an integer outside the requested range")
+    return index
 
 
 class ExactWeightedTableSampler:
-    """Exact product-weight sampling; deliberately distinct from table-uniform."""
+    """Exact product-weight sampling; deliberately distinct from table-uniform.
+
+    Choices are prepared lazily for visited DP states and retained for this
+    sampler's lifetime. Each caches one cumulative integer per positive branch;
+    normalizer/probability calls alone do not prepare choices. State/transition
+    budgets do not bound these integers' bit lengths or the cache's heap size.
+    """
 
     def __init__(self, problem: TableProblem, weights: ProductWeights, *,
                  max_states: int = 100_000, max_transitions: int = 1_000_000) -> None:
         self.problem, self.weights = problem, weights
         self._engine = _CompletionEngine(problem, weights, max_states, max_transitions)
+        self._choices: dict[State, tuple[int, ...]] = {}
 
     @property
     def stats(self) -> dict[str, int | bool]:
@@ -521,7 +536,11 @@ class ExactWeightedTableSampler:
         state, rows = self._engine.root, []
         while state[0] < self.problem.shape[0]:
             branches = self._engine.branches[state]
-            index = _draw_rational([Fraction(branch.mass) for branch in branches], source)
+            cumulative = self._choices.get(state)
+            if cumulative is None:
+                cumulative = _prepare_rational_choice([branch.mass for branch in branches])
+                self._choices[state] = cumulative
+            index = _draw_rational_choice(cumulative, source)
             branch = branches[index]
             rows.append(branch.row)
             state = branch.child

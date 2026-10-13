@@ -1,0 +1,33 @@
+{
+  "original_failure": "../first-proof-failure-v1/",
+  "private_external_limits": [
+    "Private Windows VM ownership/supervisor wrappers, retained images and stopped child disk are not distributed.",
+    "Complete raw guest archive, 53484-line request and baseline/fresh runtime inventories are retained privately, hash-bound by the emitted archive manifest. Baseline inventory is available in versioned-guard-v2; the fresh inventory differs at exactly the five memo content fields in outcome.json.",
+    "No independently reproducible complete VM or portable timing guarantee is claimed."
+  ],
+  "profile": {
+    "accelerator": "whpx,kernel-irqchip=off",
+    "guest_phase_caps_seconds": {
+      "authenticate": 5400,
+      "collect": 600,
+      "install": 600,
+      "preflight": 300,
+      "repair": 7200
+    },
+    "minimum_free_host_gib": 12,
+    "network": "no NIC",
+    "outer_vm_seconds": 12600,
+    "ram_mib": 10240,
+    "swap_bytes": 0,
+    "vcpus": 1
+  },
+  "unchanged_source_copies": {
+    "anchored_metadata.py": "../versioned-guard-v2/source/anchored_metadata.py",
+    "authenticate_runtime.py": "../authentication-diagnostics-v1/delta/runner/authenticate_runtime.py",
+    "install_sources.py": "../snapshot-comparison-v1/source/install_sources.py",
+    "seed_media.py": "../snapshot-comparison-v1/source/seed_media.py",
+    "snapshots.py": "../snapshot-comparison-v1/source/snapshots.py",
+    "versioned_runner.py": "../versioned-guard-v2/source/versioned_runner.py"
+  },
+  "versioned_guard": "../versioned-guard-v2/"
+}

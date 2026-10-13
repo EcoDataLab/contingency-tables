@@ -1,0 +1,9 @@
+{
+  "status": "normalization_and_two_frozen_repeats_passed_no_proof_build",
+  "proof_compilation_executed": false,
+  "comparator_executed": false,
+  "baseline_runtime_freeze_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+  "fresh_runtime_freeze_sha256": "b777e2f434af7744108690dbbd0ec790f022f78172028ee723fbba02f29b3f8e",
+  "preparation_result_sha256": "e87c20d31c74da8e52faeef2f478684398cfef71c8a95fb66342d3f90a414b71",
+  "source_scope": "historical679-module retainedsampler inputs, onlypre-admission memo preparation and two frozen gate repetitions"
+}

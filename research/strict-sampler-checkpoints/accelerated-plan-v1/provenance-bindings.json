@@ -1,0 +1,147 @@
+{
+  "missing_local_host_member": {
+    "locally_rehashed": false,
+    "name": "sampler-overlay.qcow2",
+    "reason": "Stopped child disk deliberately retained remotely, not downloaded. Limits full image reproduction and forensics; all 14 guest members and seven downloaded host records were authenticated.",
+    "remote_bytes": 568262656,
+    "remote_sha256": "15babc4ad6032795e34590dfbb46b339b3acf30f7203c330de85d49fa9ad2dd7"
+  },
+  "preserved_pins_sha256": {
+    "preflight-overlay.qcow2": "5bde6d27a87b66365f35c87e03144f914c864dda47beccc2b0734f3edfcef1b7",
+    "qemu/ucrt64/bin/qemu-img.exe": "b4ef313ad2bd5070e44a5cccb50d8c2529dd68303c44ef8926b4c5a38ca219ff",
+    "qemu/ucrt64/bin/qemu-system-x86_64.exe": "a812b50865ffcc7ddd43f9c33e9bb1ed7b3501c1f847ee99ede8d4b4a4a93742",
+    "stonking-server-cloudimg-amd64.img": "c93d013ac1116adf585bdd84d2e8b51039fc623fb8c6d33b70da4075c4934118",
+    "tool-bootstrap-overlay.qcow2": "da762be8cf147ef834961359511d3cf7cf5d47e04da2ed440f2c898befca9a91"
+  },
+  "projection": {
+    "exact_guest_files": [
+      "admitted-plan/plan.json",
+      "authenticate.stderr.log",
+      "authenticate.stdout.log",
+      "install.stderr.log",
+      "install.stdout.log",
+      "plan.stderr.log",
+      "plan.stdout.log",
+      "preflight.stderr.log",
+      "preflight.stdout.log",
+      "resources.json",
+      "startup-result.json",
+      "stat-guard.json"
+    ],
+    "host": "Raw host paths, process identifiers, VM wrappers and raw serial retained privately; allowlisted fields and digests only.",
+    "phase_projection": "Only stage/status/returncode/duration/cap/stdout and stderr SHA fields retained; argv and process IDs omitted.",
+    "runtime": "Private complete inventory digest-bound only; no substituted inventory."
+  },
+  "raw_config_sha256": "3a7b9f19650417d25cc253433339eb1a6c60f6571e40e4f235bc404e0d2187f5",
+  "raw_guest_archive_sha256": "b61fd3888f777d36cec6a30315b7253abb1326a0ffbf8211efa6d876103de7c0",
+  "raw_guest_members": {
+    "admitted-plan/plan.json": "6f95a195f568b3ab53493b4e2d534f69d0fa2cf7b6054f2b8d1a94c3f04f5d0c",
+    "authenticate.stderr.log": "d69bf1827fa5f52627a5aae98b4abf07b3e6dee8bf10695c8429ea8382448229",
+    "authenticate.stdout.log": "ac22a5edf87ac0cde4fbfe0adbf2918a1a9ef22ac0bef5155543018fd31ca619",
+    "install.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "install.stdout.log": "2b0934143ef558f9d621b9a07a7ab30d84db9fb3f8fac352281aebe1c3cdb3f9",
+    "phases.json": "185f31e5216e218262790f7942b582472d6d10e00142a9faf3217bb1a6b2567c",
+    "plan.stderr.log": "f543717497ea06594007ad89007c684d31d2cb03673923b83d94d9c79c3ebe36",
+    "plan.stdout.log": "c6b6feca03e3e94770b1f233ef969ba71a42ed09edbab1d5f142a31ed67fc70b",
+    "preflight.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preflight.stdout.log": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b",
+    "resources.json": "4d194450c4dbae997aef58a7f1f7a466e31981973c361e008a373f9f45287f8b",
+    "runtime-freeze.json": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+    "startup-result.json": "552fca51ac19f5f4251fa2af4efd69b10738ebbdffa34b4e0420b1c530a0893d",
+    "stat-guard.json": "21a99e6e28738537c5924a12431d76df812bff2a5e0b4403865a2714f0c5f101"
+  },
+  "raw_guest_phases_sha256": "185f31e5216e218262790f7942b582472d6d10e00142a9faf3217bb1a6b2567c",
+  "raw_guest_runtime_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+  "raw_host_capture_manifest_sha256": "c4dfac49cb13e62eacb0992f913cee6af77fbc59cb45cc3ff45718c98dc865b5",
+  "raw_host_files": [
+    {
+      "bytes": 320,
+      "path": "detached-launch.json",
+      "remote_only": false,
+      "sha256": "6b91ac5eca873264158d034b0d91ff117911dec9df7fdbd039522ce29d4fb5e8"
+    },
+    {
+      "bytes": 888,
+      "path": "qemu-stderr.log",
+      "remote_only": false,
+      "sha256": "136de8df1fb75a3c2875fe4363a4f568753ddee3c96df71331d328b93d20b2ce"
+    },
+    {
+      "bytes": 568262656,
+      "path": "sampler-overlay.qcow2",
+      "remote_only": true,
+      "sha256": "15babc4ad6032795e34590dfbb46b339b3acf30f7203c330de85d49fa9ad2dd7"
+    },
+    {
+      "bytes": 8084238,
+      "path": "serial.log",
+      "remote_only": false,
+      "sha256": "6d9c38f83c3e2557a51580aeb79176200462fe0e88ce16f123e9c2ae647292d0"
+    },
+    {
+      "bytes": 3412,
+      "path": "status.json",
+      "remote_only": false,
+      "sha256": "1a2a14980c7ed2190c1018fef54f98334bc1ffd1096dfead9c72023cd5968975"
+    },
+    {
+      "bytes": 6320,
+      "path": "supervisor-config.json",
+      "remote_only": false,
+      "sha256": "3a7b9f19650417d25cc253433339eb1a6c60f6571e40e4f235bc404e0d2187f5"
+    },
+    {
+      "bytes": 0,
+      "path": "supervisor-stderr.log",
+      "remote_only": false,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3412,
+      "path": "supervisor-stdout.log",
+      "remote_only": false,
+      "sha256": "91c13b1f9d9722dff0e6bca8ad31ff2a74672f4ea3b79398a571898c23d01602"
+    }
+  ],
+  "raw_status_sha256": "1a2a14980c7ed2190c1018fef54f98334bc1ffd1096dfead9c72023cd5968975",
+  "source_inputs": {
+    "authenticator_sha256": "742ec1105d5bb44a392046ec06ca5944a20989bc0cb5a037d2997b37def2b943",
+    "base_commit": "895b45c8bcb0ca7f60e7a6b0b91af89b2ac7c566",
+    "final_commit": "fe72b20170e7f85e399368e56baf65b8782b4b50",
+    "guest_entry_sha256": "66451732a9f7f12879ce585ebe9f61a529173ec00b0ca9c83691a7a1d8b969e5",
+    "installation_manifest_sha256": "d12bc93bfbc368018a3ee0e0da537b0895e32706eb6c73e66868be6d73727ef7",
+    "installed_members_sha256": {
+      "StrictSampler.json": "12ac0eb4d2d91c16772667335462c8bfbed5ae3f6ca9742d8f91f4c9bf07993f",
+      "entrypoints/StrictSamplerSolution.lean": "6a6030917561cca4cc5276c2ac3c376611c98d69ab4445220dfcc1b106eb213c",
+      "entrypoints/StrictSamplerStatement.lean": "4f5940853925ede5f8b829ff913120f2d310de6bbe43ef5650c8f30c63aa2c76",
+      "lake-config-provenance.json": "645f1f13d16c12eb421d86c379ac2b18f7a40170226e07558445afb0336860a0",
+      "native-audit.json": "8e6e534054b17ea5b566d3fb76a47b3a4a1722ce6570e58ede25703f1a8fa625",
+      "overlay/LatticeBoundedSampling.lean": "adc3ed0dfab422e1e2438c44e6bdda277e7a60de92b3847d0e0016d6989a451e",
+      "overlay/LatticeEmptyOutput.lean": "5af2b648aa50aab5eb251827d1056e171ce48f384effc8b8a86439d60b0d2d26",
+      "overlay/LatticeOuterProgram.lean": "e761386db8e26dc09ed4b2a5b22b5c66c71a2de1223d46c894f9606e9741df8b",
+      "overlay/LatticeOuterSemantics.lean": "cd22fe44345baa2ab94f2139ff004fc7fd20b8ebd42b2617234858c7cb6db3bf",
+      "overlay/LatticeProfileStep.lean": "f5a8b460bcc8da0e14d8139638e50a5cd76c46a6fb621c821c936c6993fafbc5",
+      "overlay/LatticeProfileWalk.lean": "d1786e79274b833e3afdd302237ec28eec0604a2596177ce4d4422e63e6608f7",
+      "overlay/LatticeSampler.lean": "3e2d55e19d35b75816366b4e1b686e54c944719ea5b0d98565aa22995be8c7f4",
+      "overlay/LatticeSamplerCost.lean": "bd78d5a5d23d4979ff48be9cccc4f9e900f16a07dcbb5a22f190401effccfac2",
+      "overlay/LatticeSamplerPreparation.lean": "e5d33b3c51f0709968ed257b92cd0ec8fb54244aea5e1217dd283d2b390a21b2",
+      "overlay/LatticeUnitOuter.lean": "2c8e44d0c6ff803d21c987b87cb4b24ec21e541619d53a296c99cb0d4f891b03",
+      "overlay/LatticeUnitStep.lean": "4cb0745b4a2090a6215a1817ddad24a0277793f055ec28c3896222bd9adf3805",
+      "overlay/LatticeUnitWalk.lean": "b0fc16f7890d62511c83cc366c011bd097ec40e24d4b0b739f45b8348d54a2a0",
+      "overlay/PublicLatticeSampler.lean": "b7cc9fea4b109f1136fe081eb21239c6978ebcc46fe43e05fc2b001c71783245",
+      "project.bundle": "f5c539bab6e7e863d383d00e9ef6a940625c23be2583a5e4988374c535bf588b",
+      "runner/source-freeze.json": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+      "runner/strict_sampler.py": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6",
+      "runner/tested-runtime/build_lean_serial.py": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c",
+      "runner/tested-runtime/no_rebuild_landrun.py": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7",
+      "runner/tested-runtime/strict_serial_check.py": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e",
+      "unused-cache-policy.json": "4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833"
+    },
+    "runner_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6",
+    "seed_sha256": "c7fca02c70aa7ac1e577bba2c20eefb39a9307662ddca2230858ababb39476a5",
+    "source_archive_sha256": "47e864e49025da1e505c32ae1c5f23428ed900b1ecc64468cb72478095824a84",
+    "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+    "supervisor_sha256": "842eb155ca20abc3e398e9a1dbcc02cc1f1ad14bf6318fecb17770ece78ff70a",
+    "timing_wrapper_sha256": "1a66f32fd33d89af74d56cd113ac55b554f3b0c21379bc6d7a27839a046ceb6f"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "Presentation-only copies of failed-attempt stdout; successful proof sources, receipts and audits unchanged. Original failed bytes remain privately preserved.",
+  "files": [
+    {
+      "path": "history/1791760121758186000/stdout.txt",
+      "original_sha256": "3f30a602b1cc1a96c14eabc74015c5ab1ad1ed010532cb77cc985e11a29266ca",
+      "published_sha256": "15935082118a3e66121bcab28be05191e2a8a04423177aa8d2022c86ec40eef6",
+      "change": "Only the local absolute workspace prefix is replaced by <workspace>."
+    },
+    {
+      "path": "history/1791760183955698000/stdout.txt",
+      "original_sha256": "73ee5aad2aebbe582a158d04a0ca5f66702b3de0f0efdf5e124e32b02b5efed7",
+      "published_sha256": "138ba425507d3efd7b3170547fe3dd46c61f7ac54d83b8a046de8498aa3d0a35",
+      "change": "Only the local absolute workspace prefix is replaced by <workspace>."
+    },
+    {
+      "path": "history/1791760300627430000/stdout.txt",
+      "original_sha256": "c48c9f5832477e4d90218b34fec21a366f4e37510d44b806b54fb1020af35b2f",
+      "published_sha256": "1b00a02c95ef1c0c647f44575a74ca0c6d71f3f661389986172aae91354ab2d9",
+      "change": "Only the local absolute workspace prefix is replaced by <workspace>."
+    },
+    {
+      "path": "history/1791760650536173000/stdout.txt",
+      "original_sha256": "2df6830b6ac5dea740e15be533e691c787fe6d55c21d502c85d435f6ada274dc",
+      "published_sha256": "b9d297ee0abc400083ac65dec8f8bd5740f09b8899dc1b69f0ecf3523fcf009f",
+      "change": "Only the local absolute workspace prefix is replaced by <workspace>."
+    }
+  ]
+}

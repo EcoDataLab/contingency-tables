@@ -1,0 +1,43 @@
+<workspace>/.local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/PublicBridge.lean:40:2: error: Type mismatch: After simplification, term
+  AffinePublicSamplerDegree.fixedMachineBoundedSampling_with_degree TightCountDegreeV2.typed_complete_wordCount_1008
+    (typed_publicDraw_of_reference hReference)
+ has type
+  ∃ Ctime,
+    0 < Ctime ∧
+      ∀ (m n : ℕ) (r_1 : Fin m → ℕ) (c : Fin n → ℕ),
+        ∑ i, r_1 i = ∑ j, c j →
+          ∀ (h : ℕ),
+            1 ≤ h →
+              (∀
+                  (bits :
+                    Fin
+                        (Ctime *
+                          Algorithms.samplingSize n r_1 h ^
+                            AffinePublicSamplerDegree.publicDegree 1008 (drawDegree r)) →
+                      Bool),
+                  ∃ X,
+                    Algorithms.OutputsTable PublicLatticeSampler.machine (Algorithms.encodeSamplingInput r_1 c h) bits
+                      ↑X) ∧
+                (∑ x,
+                      |Algorithms.tableMass PublicLatticeSampler.machine (Algorithms.encodeSamplingInput r_1 c h)
+                            (Ctime * Algorithms.samplingSize n r_1 h ^ publicDegree r) ↑x -
+                          (↑(Fintype.card (Table r_1 c)))⁻¹|) /
+                    2 ≤
+                  (2 ^ h)⁻¹
+but is expected to have type
+  ∃ Ctime,
+    0 < Ctime ∧
+      ∀ (m n : ℕ) (rows : Fin m → ℕ) (cols : Fin n → ℕ),
+        ∑ i, rows i = ∑ j, cols j →
+          ∀ (h : ℕ),
+            1 ≤ h →
+              (∀ (bits : Fin (Ctime * Algorithms.samplingSize n rows h ^ publicDegree r) → Bool),
+                  ∃ X,
+                    Algorithms.OutputsTable PublicLatticeSampler.machine (Algorithms.encodeSamplingInput rows cols h)
+                      bits ↑X) ∧
+                (∑ X,
+                      |Algorithms.tableMass PublicLatticeSampler.machine (Algorithms.encodeSamplingInput rows cols h)
+                            (Ctime * Algorithms.samplingSize n rows h ^ publicDegree r) ↑X -
+                          (↑(Fintype.card (Table rows cols)))⁻¹|) /
+                    2 ≤
+                  (2 ^ h)⁻¹

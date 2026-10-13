@@ -1,0 +1,9 @@
+{
+  "original_source_review_sha256": "e9c6db182b8c01e68abfce4e9e64e170017b01cffa68f4c36cb204b7fe2a48d4",
+  "public_source_review_sha256": "fa6c45418318f753002a8d80bd604f312670922d4b071df4a965779c1625ac66",
+  "original_environment_receipt_sha256": "7785230dba8877aa15b1cf5390b54cd1a1ec6d005cecfcdaa7083e28fdd0c978",
+  "projected_environment_receipt_sha256": "f3a6e2d9ea06580c5cc898a034e9dd1bd9befba1fb3d7ee7cace32a2b5df2eac",
+  "projection": "Only compilation.source paths point to exact agreed public source copies; all source and object digests, module/declaration/closure records and full raw audit/roster bytes unchanged",
+  "full_raw_audit_sha256": "b0de261839e839721d0abc84bb86c447377a4ee1b2144f91d9d869daa14f5f66",
+  "full_imported_roster_sha256": "f07232d05339d0c435dcd5916993fd257efdce285047cce8554a18c8bbeb2048"
+}

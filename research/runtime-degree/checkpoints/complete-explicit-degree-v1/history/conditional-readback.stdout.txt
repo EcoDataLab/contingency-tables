@@ -1,0 +1,46 @@
+Math115.CompleteDrawNext.typed_actual_schedule :
+  Math115.DegreeBounds.Typed Math115.LatticeScheduleProgram.scheduleRealizer 1008
+Math115.CompleteDrawNext.actual_seams_of_reference {r : ℕ}
+  (hReference : Math115.DegreeBounds.Typed Math115.LatticeOuterProgram.packedTrialRealizer r) :
+  Math115.DrawDegree.ActualDrawSeams (Math115.CompleteDrawNext.seamDegree r)
+Math115.CompleteDrawNext.typed_publicDraw_of_reference {r : ℕ}
+  (hReference : Math115.DegreeBounds.Typed Math115.LatticeOuterProgram.packedTrialRealizer r) :
+  Math115.DegreeBounds.Typed Math115.PublicLatticeSampler.publicDrawRealizer (Math115.CompleteDrawNext.drawDegree r)
+Math115.CompleteDrawNext.machineTime_public_of_reference {r : ℕ}
+  (hReference : Math115.DegreeBounds.Typed Math115.LatticeOuterProgram.packedTrialRealizer r) :
+  ∃ Ctime,
+    0 < Ctime ∧
+      ∀ (m n : ℕ) (rows : Fin m → ℕ) (cols : Fin n → ℕ),
+        ∑ i, rows i = ∑ j, cols j →
+          ∀ (h : ℕ),
+            1 ≤ h →
+              Math115.PublicLatticeSampler.machineTime
+                  (OAI.ContingencyTables.Algorithms.encodeSamplingInput rows cols h) ≤
+                Ctime * OAI.ContingencyTables.Algorithms.samplingSize n rows h ^ Math115.CompleteDrawNext.publicDegree r
+Math115.CompleteDrawNext.fixedMachineBoundedSampling_of_reference {r : ℕ}
+  (hReference : Math115.DegreeBounds.Typed Math115.LatticeOuterProgram.packedTrialRealizer r) :
+  ∃ Ctime,
+    0 < Ctime ∧
+      ∀ (m n : ℕ) (rows : Fin m → ℕ) (cols : Fin n → ℕ),
+        ∑ i, rows i = ∑ j, cols j →
+          ∀ (h : ℕ),
+            1 ≤ h →
+              have input := OAI.ContingencyTables.Algorithms.encodeSamplingInput rows cols h;
+              have time :=
+                Ctime *
+                  OAI.ContingencyTables.Algorithms.samplingSize n rows h ^ Math115.CompleteDrawNext.publicDegree r;
+              (∀ (bits : Fin time → Bool),
+                  ∃ X,
+                    OAI.ContingencyTables.Algorithms.OutputsTable Math115.PublicLatticeSampler.machine input bits ↑X) ∧
+                (∑ X,
+                      |OAI.ContingencyTables.Algorithms.tableMass Math115.PublicLatticeSampler.machine input time ↑X -
+                          (↑(Fintype.card (OAI.ContingencyTables.Table rows cols)))⁻¹|) /
+                    2 ≤
+                  (2 ^ h)⁻¹
+'Math115.CompleteDrawNext.typed_actual_schedule' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompleteDrawNext.actual_seams_of_reference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompleteDrawNext.typed_publicDraw_of_reference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompleteDrawNext.machineTime_public_of_reference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompleteDrawNext.fixedMachineBoundedSampling_of_reference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

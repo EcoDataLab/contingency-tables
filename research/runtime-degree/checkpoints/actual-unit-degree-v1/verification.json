@@ -1,0 +1,204 @@
+{
+  "status": "passed-exact-unit-endpoint-with-publication-readback",
+  "endpoint": "Math115.UnitRuntimeNext.typed_actual_unitPackedTrial",
+  "realizer": "Math115.LatticeUnitOuter.packedTrialRealizer",
+  "degree_decimal": "272019144737569436269241336269647035188617216",
+  "included_source_modules": 21,
+  "mapped_public_source_modules": 24,
+  "source_checks": [
+    {
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "ResearchBounds.TreeArithmeticDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "PrinterRuntime.LinearCollections",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "InitialRuntime.GreedyDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RetryRuntime.ListSeed",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RetryRuntime.ListRepeatDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RetryRuntime.RangeDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RetryRuntime.MapWithDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "ResearchBounds.DrawControlDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.WordChoiceDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.ExchangeDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "ResearchBounds.WordCountSeedDegrees",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "ResearchBounds.ScalarOutputSizeDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "CountBounds.ListRepeatDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "ResearchBounds.CatalogueLeafDegrees",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "ResearchBounds.SmallCellCatalogueDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.NeighborHelpers",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.RefinedExchangeDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "DivisionRuntime.Degree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "CountBounds.ParserDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "CountBounds.ScalarCircuitDegreeV2",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "DrawRuntime.RangeSeed",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "ReferenceRuntime.DecoderDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "DrawRuntime.BranchDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.TerminalIndexDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.TerminalDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RetryRuntime.WordChunkDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RetryRuntime.WordChunksDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RetryRuntime.ActualRetryWordsDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "ResearchBounds.DrawWalkDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.UnitParsingDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.ProfileEqualityDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.ProfilePatternDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.ProfileMarginsDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.ProfileValidatorDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "AffineMapWith.Degree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RepairRuntime.OutputHelpers",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RepairRuntime.BaseDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RepairRuntime.CodeOutput",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RepairRuntime.RefinedCodeDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RepairRuntime.ListDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "RepairRuntime.InverseListDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.UnitPackedTrialDegree",
+      "exact_source_bytes": true
+    },
+    {
+      "module": "UnitRuntime.UnitPackedTrialAudit",
+      "exact_source_bytes": true
+    }
+  ],
+  "focused_named_closures": 6,
+  "standard_axioms_only": true,
+  "new_compiler_run_during_stage_preparation": false,
+  "reproduction_script_syntax": "passed; prepared replay not executed",
+  "independent_source_review": "reviews/UNIT_SOURCE_REVIEW.md",
+  "publication": "public-source-bound-checkpoint",
+  "scope": "Exact source/evidence staging of already accepted local compilation; no default/strict/fresh-platform acceptance.",
+  "historical_helper_snapshot": {
+    "accepted_modules": 8,
+    "named_reports": 16,
+    "classification": "Historical prerequisites; final endpoint is independently identified by exact declared realizer, numeral and six final readbacks."
+  },
+  "independent_source_review_status": "pass for frozen original source/focused local evidence; no compiler or stage review performed",
+  "publication_readback": "passed: exact endpoint, frozen source/evidence bindings, complete member set and public projection"
+}

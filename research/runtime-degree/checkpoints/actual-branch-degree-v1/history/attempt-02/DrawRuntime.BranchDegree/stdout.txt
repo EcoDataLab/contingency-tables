@@ -1,0 +1,47 @@
+<candidate-root>\source\DrawRuntime\BranchDegree.lean:29:2: error: Type mismatch: After simplification, term
+  circuit_composition
+    (circuit_pair (circuit_constant 10)
+      (circuit_composition
+        (circuit_pair (circuit_composition (circuit_composition circuit_first circuit_listLength) circuit_successor)
+          (circuit_composition (circuit_composition circuit_second circuit_listLength) circuit_successor))
+        circuit_multiply))
+    circuit_add
+ has type
+  @Circuit (List ℕ × List ℕ) ℕ instCodecProd instCodecNat
+    ((fun ab => ab.1 + ab.2) ∘ fun a => (10, (a.1.length + 1) * (a.2.length + 1)))
+    (composition
+      (pair (constant 10)
+        (composition
+          (pair (composition (composition first listLength) successor)
+            (composition (composition second listLength) successor))
+          multiply))
+      add)
+    6
+but is expected to have type
+  @Circuit (List ℕ × List ℕ) ℕ instCodecProd instCodecNat marginDimension
+    (composition
+      (pair (constant 10)
+        (composition
+          (pair (composition (composition first listLength) successor)
+            (composition (composition second listLength) successor))
+          multiply))
+      add)
+    6
+<candidate-root>\source\DrawRuntime\BranchDegree.lean:86:2: error: Type mismatch: After simplification, term
+  typed_composition_linear hinput.left typed_largeIndices hinput.right
+ has type
+  @Typed (List ℕ × List ℕ) (List ℕ) instCodecProd instCodecList
+    (largeIndices ∘ fun a => (PhysicalComputedProposal.idealMarginThreshold a, a.1))
+    (composition (pair PhysicalComputedProposal.idealMarginThresholdRealizer first) largeIndicesRealizer) 1008
+but is expected to have type
+  @Typed LatticeSamplerPreparation.Margins (List ℕ) instCodecProd instCodecList LatticeSamplerPreparation.largeRows
+    (composition (pair PhysicalComputedProposal.idealMarginThresholdRealizer first) largeIndicesRealizer) 1008
+<candidate-root>\source\DrawRuntime\BranchDegree.lean:94:2: error: Type mismatch: After simplification, term
+  typed_composition_linear hinput.left typed_largeIndices hinput.right
+ has type
+  @Typed (List ℕ × List ℕ) (List ℕ) instCodecProd instCodecList
+    (largeIndices ∘ fun a => (PhysicalComputedProposal.idealMarginThreshold a, a.2))
+    (composition (pair PhysicalComputedProposal.idealMarginThresholdRealizer second) largeIndicesRealizer) 1008
+but is expected to have type
+  @Typed LatticeSamplerPreparation.Margins (List ℕ) instCodecProd instCodecList LatticeSamplerPreparation.largeColumns
+    (composition (pair PhysicalComputedProposal.idealMarginThresholdRealizer second) largeIndicesRealizer) 1008

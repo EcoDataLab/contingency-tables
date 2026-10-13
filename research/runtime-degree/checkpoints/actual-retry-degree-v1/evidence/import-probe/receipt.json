@@ -1,0 +1,6 @@
+{
+  "exit_code": 0,
+  "seconds": 37.627,
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "scope": "Fresh local full sampler import/type probe; authenticated native modules reused, no dependency rebuild."
+}

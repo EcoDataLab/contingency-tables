@@ -1,0 +1,22 @@
+{
+  "status": "all regular guest archive members authenticated against emitted manifest",
+  "tar_gz_sha256": "2b3d47f55eb583e87dd0d587f64b217b66ff1585334119456980fc79a5e6be73",
+  "members": 14,
+  "uncompressed_bytes": 23410278,
+  "files": {
+    "admitted-plan/plan.json": "6f95a195f568b3ab53493b4e2d534f69d0fa2cf7b6054f2b8d1a94c3f04f5d0c",
+    "authenticate.stderr.log": "86e42e10bfe7b9157892e9b006684c6633cbfbef52f743337770eec2008e75a4",
+    "authenticate.stdout.log": "ac22a5edf87ac0cde4fbfe0adbf2918a1a9ef22ac0bef5155543018fd31ca619",
+    "install.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "install.stdout.log": "2b0934143ef558f9d621b9a07a7ab30d84db9fb3f8fac352281aebe1c3cdb3f9",
+    "phases.json": "18b605e3f7a5b30f13d9af109e5f4a26dcda76155ea915d1bfdc27d5a03825f2",
+    "plan.stderr.log": "a9a36ca1952745714b41da1112db794ee4d3bf5afe107c66b05a6762e72caa4d",
+    "plan.stdout.log": "54754e67f3660581f5af4cb22aae5060451a1081110e07ab183fa83b80394340",
+    "preflight.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preflight.stdout.log": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b",
+    "resources.json": "4d3c2198c051ca30fccbfa490978dbb2fe1477e6e70fa27872c16d6a43aefbcc",
+    "runtime-freeze.json": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+    "snapshot-comparison.json": "ec43265fd5216c9e25bf70849325f1f5e61fa4e5067de73215b4f8358a84cfcb",
+    "startup-result.json": "a90821fe7f68cfdc4ec60f3b4f75a5b7f64ecc638782f4a876197cd79200e94e"
+  }
+}

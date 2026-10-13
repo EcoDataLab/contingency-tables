@@ -1,0 +1,98 @@
+{
+  "available_inner_wall_seconds": 39600,
+  "causal_bottleneck_measured": false,
+  "compile_export_kernel_duration_and_peak_memory_measured": false,
+  "evidence_class": "measured closed startup intervals plus source-derived full-run work count",
+  "full_execute_source_scope": "Two steps per module, two guard.check calls per step; extra preflight/root/Comparator guards and final rehash",
+  "full_execute_source_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6",
+  "full_proof_launched": false,
+  "interpretation": "Current TCG full-run deadline is not credible without measuring stat-only guards and improving execution environment or check implementation. Snapshot spans are not direct measurements of per-stage guards.",
+  "max_average_seconds_per_stat_guard_before_any_compile_work": 14.537444933920705,
+  "min_module_cache_file_checks": 355853036,
+  "module_stage_stat_guard_calls": 2716,
+  "modules": 679,
+  "next_bounded_diagnostic": "Time one exact Guard.check(rehash=False) after full admission, with all checks retained and a finite outer ceiling. Do not launch the full proof first.",
+  "other_stderr_lines": {
+    "authenticate": 0,
+    "plan": 0
+  },
+  "physical_disk_throughput_measured": false,
+  "progress_records": {
+    "authenticate": 1284,
+    "plan": 831
+  },
+  "stat_only_guard_duration_measured": false,
+  "timings": {
+    "authenticate": {
+      "complete_cache_inventories": [
+        {
+          "begin_line": 302,
+          "begin_seconds": 205.083,
+          "completed_files": 131021,
+          "difference_seconds": 361.742,
+          "end_line": 454,
+          "end_seconds": 566.825
+        },
+        {
+          "begin_line": 824,
+          "begin_seconds": 757.209,
+          "completed_files": 131021,
+          "difference_seconds": 257.076,
+          "end_line": 976,
+          "end_seconds": 1014.285
+        }
+      ],
+      "full_guard_wrapper": {
+        "begin_line": 978,
+        "begin_seconds": 1609.696,
+        "completed_files": 131021,
+        "difference_seconds": 972.242,
+        "end_line": 1281,
+        "end_seconds": 2581.938,
+        "logical_bytes": 9261675188,
+        "rehash": true
+      },
+      "independent_inventory_wrapper_seconds": 257.204,
+      "inventory_end_to_guard_begin": {
+        "begin_line": 977,
+        "begin_seconds": 1014.413,
+        "difference_seconds": 595.283,
+        "end_line": 978,
+        "end_seconds": 1609.696,
+        "scope": "cache metadata snapshot loop and Guard construction; individual calls unmeasured"
+      }
+    },
+    "plan": {
+      "complete_cache_inventories": [
+        {
+          "begin_line": 368,
+          "begin_seconds": 117.581,
+          "completed_files": 131021,
+          "difference_seconds": 259.958,
+          "end_line": 518,
+          "end_seconds": 377.539
+        }
+      ],
+      "full_guard_wrapper": {
+        "begin_line": 520,
+        "begin_seconds": 1116.673,
+        "completed_files": 131021,
+        "difference_seconds": 1024.789,
+        "end_line": 829,
+        "end_seconds": 2141.462,
+        "logical_bytes": 9261675188,
+        "rehash": true
+      },
+      "independent_inventory_wrapper_seconds": 260.063,
+      "inventory_end_to_guard_begin": {
+        "begin_line": 519,
+        "begin_seconds": 377.644,
+        "difference_seconds": 739.029,
+        "end_line": 520,
+        "end_seconds": 1116.673,
+        "scope": "cache metadata snapshot loop and Guard construction; individual calls unmeasured"
+      }
+    }
+  },
+  "total_stat_guard_calls_if_full_run_completes": 2724
+}

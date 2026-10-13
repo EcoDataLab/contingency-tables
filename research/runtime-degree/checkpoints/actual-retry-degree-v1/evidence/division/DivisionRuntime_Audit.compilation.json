@@ -1,0 +1,16 @@
+{
+  "module": "DivisionRuntime.Audit",
+  "command_threads": 2,
+  "memory_cap_mib": 8192,
+  "source_sha256": "0957f39677fe7e46f0825ddf05975e88771b8bd4909252abe15af82e8b1ec882",
+  "returncode": 0,
+  "seconds": 15.171,
+  "olean_sha256": "8b33bbb4ea49b0c3aaf144e78f02a6ba8ba123142573a7ca918e147d31810f00",
+  "lean_path_roles": [
+    "candidate object prefix",
+    "existing helper object roots",
+    "existing baseline objects",
+    "pinned package objects"
+  ],
+  "original_receipt_sha256": "cd166af1134c200a774916c0940b8660af3713f6b00dc863f9b64217e349152e"
+}

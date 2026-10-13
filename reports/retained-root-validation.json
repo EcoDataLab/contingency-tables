@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "recorded_utc": "2026-10-11T18:20:15.717633+00:00",
+  "source_checkout_base_commit": "7f3c5fb2b28c79357fd92e5360988a23d2313f97",
+  "source_sha256": {
+    ".github/workflows/tests.yml": "ee385c06b0be09699c2a3f0cf880228ecf2d0762e7452de1d32c8c8382792bfb",
+    "claims.json": "705d3b6331e300954dc469fd90fedd8fcda73b3e0c4295f586b351013b359453",
+    "docs/composed-complexity.md": "d3bd9b92e478bbc9b35dc18196ffd721eaf77c093ad40120932acc6de81bb93c",
+    "docs/constant-padding.md": "bc5a444170c854eb8cc7853407b97e10d67684bffe9e780beffd9ca77744c1b2",
+    "docs/retained-root-review.md": "792cca1d0de4ca58192a2c6343e35d58cddd7966b2d25eb6825043999491e225",
+    "docs/retained-root-transport.md": "d6bd2848f14fbcafeae8315cbb3435d5df8302bb809a9210a8cd5ab1dfb51819",
+    "experiments/commuting_interval_score.py": "bcd74f638152fd8ba637bad1de4e7f422dcaab6db6c69b757778bc4439a38b30",
+    "experiments/reciprocal_zero_bound.py": "269fb9ee9701cc668e84d3e109c141898db2149c91f775c95757da40082c27e0",
+    "experiments/residual_padding.py": "571f9a977e48bc0937ef87ba1b774aa9b388048a5bd6e4f7cb5faf6260ef1c27",
+    "experiments/retained_root.py": "d7ace15b197730206c389562d77fe1cf45fbe8eb2b87bfe382418c86c50ee14b",
+    "research/constant-padding/formal/Research/CompositionSurvival.lean": "beb210c1b51b8a5c4d2dc1e9fb50f60dd0a051d285ca93b152712c9411cb2f34",
+    "research/constant-padding/formal/Research/ReciprocalZero.lean": "934014bbc94997ac33f7f784c4cc7321153ad33f87c85dafceb81fa8ac6333c5",
+    "research/constant-padding/formal/Research/ReciprocalZeroPhysical.lean": "0d95bd552e99d02152d9622801b7f9cfaa7731ae24133151b17c4dd18c9259df",
+    "research/constant-padding/formal/Research/SurvivalConvolution.lean": "c727ba56e6bc9c29df8bdebff2c7bffc4400c3a68be314faec363ef22875dbba",
+    "research/constant-padding/formal/Research/WeightedIncidence.lean": "ee418b3450ecd799b3ca50ed1e13582f20aa7e39af3b3e569bd33c63eb416ee1",
+    "research/repair-accept/verify.py": "25a924a41773911ccc8d6b9c98f79ca513cc85dfc808140e5380142428ca61ff",
+    "research/retained-root/formal/Math115/RetainedRoot.lean": "7f904f3497583644121f0ffe39da6b1cdc5c9a2c52df17b7404bd6eabd34b742",
+    "research/retained-root/formal/Research/RetainedRootNonnegative.lean": "0cab3f0cb943c70443d429f1d44bfaa96cd9ed6f4ac0a00782e7842a1c961e26",
+    "research/retained-root/formal/Research/RetainedRootPhysical.lean": "f984b845bd099d8a85e13c22c79b1ed7398f8d80d3523aaa52d8e69e24326528",
+    "research/retained-root/formal/Research/RetainedRootShifts.lean": "c144c912222aa05ee070db5eeed8b361458dd8fbb49571d1ba2fa81ec59fcf48",
+    "research/retained-root/formal/Research/RetainedRootTransport.lean": "dc99d8cb80b193ff99a6e598d6f4d53274180f737f012522a078503e752f8f4b",
+    "research/shape-refinement/formal/Math115/ShapeDegreeBound.lean": "0761f9e7503fdb0b72ceb7c34ce6d2e707afeb35901a96c37462eb99eee9c801",
+    "research/shape-refinement/formal/Math115/ShapeScalarScales.lean": "e62b6d88d9423149afdfdab9c04aeacc91636aff353aa578e94b0765c946c356",
+    "research/shape-refinement/formal/Research/AcceptancePadding.lean": "59773bb5f0e4053ff87bfa9810cb2e64a0592037ebe84b13ceb7dbeac9172726",
+    "research/spaced-attempts/formal/Marked/Killed.lean": "e83ca10988b1b58176f0800866ea986abb9d081cd42783fb1544288261a59173",
+    "research/spaced-attempts/formal/Marked/L2.lean": "7f4c11a1c4352f6f6a594596f9405f1fa669b3f0ad9bb9fab6cd57979c3d926e",
+    "research/spaced-attempts/formal/Marked/Survivor.lean": "f9d0ea93a2a47181e2a6be3fc407cffb714ad781687c66a1be376fabc5f8ea86",
+    "src/contingency115/general_defect_chain.py": "c1865e2dd70ac597df3ce973b7a3d59509dc3af1201410f69d47f2cc8c1cd527",
+    "src/contingency115/general_scales.py": "9811dfe5e718991817e91dcb781cf3664a56e3b3a530b688532cb7729b7213b1",
+    "src/contingency115/scipy_workers.py": "210eb6a210cc35dc16451c23923ccba01ff6fc2d4b7c00174ef3b7109aa9371f",
+    "tests/test_claims_ledger.py": "2182e06c6efb4a767522626009373ec6d77bc2ba110fad3c132078a2f880e96b",
+    "tests/test_commuting_interval_score.py": "dc25e00122057fb8ad94d182588ea60b42fa3d91fa63fcbcea9fa1ccd7ff149a",
+    "tests/test_general_defect_chain.py": "44ac2e35c7459cdf9108beb3e1b69acd84ba0f2fbda0061c79b1814b59ecd644",
+    "tests/test_general_scales.py": "972acd7c6065c897cc5ac54058fb9955f437df0184d03a6f0142d41f9767614c",
+    "tests/test_scipy_workers.py": "90df9365d7e558a648ec0d92f7cb69040f0a4ad8723514e49db70a8780343245"
+  },
+  "artifact_sha256": {
+    "research/retained-root/results/verification.json": "5ccd2fdd7b038f096068f688b01f97fca46ee491e9da67486ad1edab0df4848b",
+    "research/constant-padding/results/verification.json": "79da603639ffbb9316efd97c903858d60bd7733705b6898ecceaa529ad68cb6a",
+    "research/shape-refinement/results/verification.json": "5f52d42b62d0ae2770e0c17eae79afd4e2445b325fefb64a6b0249b8fa30dff1",
+    "research/spaced-attempts/killed-results/verification.json": "099d031406b3d9e34a414925f2e2d9296f9e50b87761e15460d0834cf3a65c9c",
+    "reports/retained-root.json": "eef63919bb42a55f7c41b45fd2977a1ef052d075ee5cdee314c8fb479120951c",
+    "reports/reciprocal-zero-bound.json": "4f8a92f591d68d57dbb2d699165abc81cbafdcda5f2be741bca96dd0779f7eb0",
+    "reports/residual-padding.json": "0eb79de4caf9e2476d32163a88d12a6680616120d948b16aaf2a034aa9257ea6",
+    "reports/commuting-interval-score.json": "d3769d3cf3ab9fec94f46f0ad93f4954a70f0dbf5f47e14a7bfbdce061c4017a",
+    "reports/retained-root-verify.log.gz": "c9ba7efe1f6acdbf23059b10b6d91f5cbaaa894ce75100a5b0edc84baae26b49",
+    "reports/retained-root-initial-test-failure.log.gz": "b3fb7482ffc39e3a4177a7536c3bc7d579411c2c357599c6c788e973330b37b3",
+    "reports/scipy-backend-tests.log.gz": "f7ba16f64e350f8642ed718b3d6e36c2070faaa878269f910288eaddda1a1fd3"
+  },
+  "verification": {
+    "command": "make verify",
+    "exit_code": 0,
+    "python": "3.14.3",
+    "tests_run": 414,
+    "tests_passed": 405,
+    "tests_skipped": 9,
+    "skip": "optional SciPy tests unavailable in the standard interpreter",
+    "other_checks": [
+      "archived finite audit",
+      "saved claims ledger",
+      "pinned source bundle",
+      "independent exact crosscheck",
+      "mathematical cycle-mixture certificate replay"
+    ],
+    "producer_drift": "Historical cycle-mixture producer files differ after prior optimizations. Mathematical replay passed; byte-identical historical generation is not claimed."
+  },
+  "optional_scipy": {
+    "command": "PYTHONPATH=src <scipy-environment>/bin/python -m unittest discover -s tests -p 'test_scipy_workers.py' -v",
+    "exit_code": 0,
+    "tests_passed": 10,
+    "tests_skipped": 0,
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scope": "Real library PMF, Patefield delegation/frequencies, margin validation, zero/singleton axes, RNG, budgets and malformed native outputs. The public CI Python 3.12 lane installs SciPy; its result is separate."
+  },
+  "finite_experiments": [
+    {
+      "command": "PYTHONPATH=src python3 experiments/retained_root.py --output reports/retained-root.json",
+      "exit_code": 0,
+      "scope": "3000 exact abstract stencil sums (236 satisfy nonnegative Xi), 40 actual weighted physical contexts; global mathematical proof remains separate."
+    },
+    {
+      "command": "PYTHONPATH=src python3 experiments/reciprocal_zero_bound.py --output reports/reciprocal-zero-bound.json",
+      "exit_code": 0,
+      "scope": "24 fibers, 34082 tables, 672 weighted levels and 1312 directed physical edges; includes zero margins and singleton cases."
+    },
+    {
+      "command": "PYTHONPATH=src python3 experiments/residual_padding.py --output reports/residual-padding.json",
+      "exit_code": 0,
+      "scope": "Actual 3x3 weighted fiber at U46 L2, 49 states, 300 directed edges, exact minimum acceptance48/49, counts231->251, bounded execution feasibility only; full-table donor obstruction33->34."
+    },
+    {
+      "command": "python3 experiments/commuting_interval_score.py --output reports/commuting-interval-score.json",
+      "exit_code": 0,
+      "scope": "Post hoc proper interval scores from the frozen published cases, with exact rational scores; overlapping cases remain dependent. No distance-law backtest run."
+    }
+  ],
+  "formal": [
+    {
+      "receipt": "research/retained-root/results/verification.json",
+      "status": "passed",
+      "headline_dependency_closures": 11,
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "receipt": "research/constant-padding/results/verification.json",
+      "status": "passed",
+      "headline_dependency_closures": 11,
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "receipt": "research/shape-refinement/results/verification.json",
+      "status": "passed",
+      "headline_dependency_closures": 12,
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "receipt": "research/spaced-attempts/killed-results/verification.json",
+      "status": "passed",
+      "headline_dependency_closures": 6,
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    }
+  ],
+  "review": {
+    "kind": "Separate AI agents reviewing AI-produced mathematics and source; no outside human review",
+    "findings": "No material mismatch found in final boxed-kernel, physical acceptance and scalar claims or Python gates. The reviewed global gap is explicitly distinguished from compiled components.",
+    "note": "docs/retained-root-review.md"
+  },
+  "retained_failures": [
+    {
+      "scope": "First make verify attempt",
+      "outcome": "Three claims-ledger tests indexed the first claim as a Lean theorem. They now locate the intended stable claim ID; the subsequent full workflow passed.",
+      "log": "reports/retained-root-initial-test-failure.log.gz"
+    },
+    {
+      "scope": "First public constant-padding integration",
+      "outcome": "Missing shared AcceptancePadding object; corrected runner source dependency order and fresh complete scope passed.",
+      "record": "research/constant-padding/failed-integration-attempt/"
+    },
+    {
+      "scope": "Private numerical branch-degree attempt",
+      "outcome": "Interrupted after 27 prerequisite compilations before compiling the candidate; no draw seam closed and no proof result claimed."
+    }
+  ],
+  "scope_limits": [
+    "42592d^10 rational and85184d^10 dyadic are reviewed general ideal-defect inverse-gap allowances, not runtime bounds. Their full global physical Lean assembly is open.",
+    "The sharp ordinary zero-cell probability and actual L>=7 physical reference half acceptance are compiled. A general accurate completion backend at L7 remains open.",
+    "Mode-anchor summation, same-box repair cap, variance telescoping and edge ownership must still be formally assembled.",
+    "Finite killed-chain exhaustion is compiled; the infinite first-acceptance bias and full resolvent theorem are not.",
+    "The complete compiled bounded-sampling theorem has exactly upstreams existential statement. Reserved-bank upper bounds improve from S1288 to S170; numerical complete runtime degrees remain unknown and seven draw certificates remain open.",
+    "Ordinary component compilation trusts the pinned compiler and reused baseline imports. No new default-target full rebuild or strict Comparator acceptance is claimed.",
+    "SciPy draws the inverse-factorial worker law, not uniform aggregate tables. Neither the dependent commuting scores nor implementation timing establishes application-model validity."
+  ],
+  "comparator": {
+    "observed_utc": "2026-10-11T18:20:33Z",
+    "status": "authentication running; no acceptance result",
+    "configuration": "8 GiB, serial-build configuration, software-emulated Linux VM, no guest network; authentication cap5400s and plan cap3600s",
+    "scope": "One bounded startup/authentication-and-plan retry. Install and real sandbox preflight passed; full proof execution remains separate."
+  }
+}

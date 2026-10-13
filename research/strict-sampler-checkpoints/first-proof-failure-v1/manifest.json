@@ -1,0 +1,83 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 3441,
+      "sha256": "72db726148977cb433ab860f639c9c131fbd0cdab6621534afa12c7cbd0e6617"
+    },
+    "evidence/failure.json": {
+      "bytes": 97,
+      "sha256": "b5287603672b08cb0dff65c46605b870a8c4e7b37532f7336c3d70db43104a32"
+    },
+    "evidence/phases.json": {
+      "bytes": 4031,
+      "sha256": "7d1c2d68559999e91e42a5351f8649d90a8fd1d05d34e0a3e6d949b59c87b4aa"
+    },
+    "evidence/proof-output/0000_dependencies_current.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/proof-output/0000_dependencies_current.stdout.log": {
+      "bytes": 36,
+      "sha256": "d06cb28a3ed52d43c3ad6eb46ab23fef149eaee5ef5a217e393a85990eaa6b9d"
+    },
+    "evidence/proof-output/original_linux_and_landrun_preflight.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/proof-output/original_linux_and_landrun_preflight.stdout.log": {
+      "bytes": 276,
+      "sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b"
+    },
+    "evidence/proof-output/plan.json": {
+      "bytes": 341,
+      "sha256": "6f95a195f568b3ab53493b4e2d534f69d0fa2cf7b6054f2b8d1a94c3f04f5d0c"
+    },
+    "evidence/proof-output/receipt.json": {
+      "bytes": 6066,
+      "sha256": "124e2712f663ea9f65735098a9367228a5598a9082af0a375f896c50b13689de"
+    },
+    "evidence/proof-progress.jsonl": {
+      "bytes": 636,
+      "sha256": "0d231032309e86cea12ecf5db49e02f8bda4623fad0140aad262ddd15680d6fa"
+    },
+    "evidence/proof.stderr.log": {
+      "bytes": 152,
+      "sha256": "ae19fb2b6740b6b789d7b19d939feb752b3496d052051b449e1cfaf92dfa4c40"
+    },
+    "evidence/proof.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/resources.json": {
+      "bytes": 643,
+      "sha256": "8088183630c7d93b86ee88805db507ecfdb1dc82cedf13e7d352e41d7c36f466"
+    },
+    "outcome.json": {
+      "bytes": 1408,
+      "sha256": "7dda1ae7a237ac7ec1a531aa6ff636d501afd0f77d397bc44080070173d60703"
+    },
+    "provenance-bindings.json": {
+      "bytes": 5124,
+      "sha256": "e2b4f3107ce7435c8acde3721f87b2a4bd1c12ceb4e88d43a22db3002092149c"
+    },
+    "reproduction-references.json": {
+      "bytes": 1130,
+      "sha256": "83ed287671fb6a4ced0d1ecceb7889b16611e9c49acf8f74362d251353fe139b"
+    },
+    "source/build_iso.py": {
+      "bytes": 2634,
+      "sha256": "34deeba953cdb0961d5ae158ed1e55eae73c10dde7b13ea67e1e4dd5b1538909"
+    },
+    "source/guest_entry.py": {
+      "bytes": 10151,
+      "sha256": "94e2840470eef4642cf4781035c742e5870627a430152c0425c32ce088a19166"
+    },
+    "source/make_seed.py": {
+      "bytes": 3940,
+      "sha256": "37319984230e7939960817a6d69fe664b0e7f789deee0fc11eb4e190d9751f0d"
+    }
+  },
+  "manifest_self_excluded": true,
+  "schema_version": 1,
+  "scope": "Minimal authenticated first cold proof attempt failure at successful no-build gate followed by hash-memo metadata drift rejection; no acceptance"
+}

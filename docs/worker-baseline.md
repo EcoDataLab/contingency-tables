@@ -1,6 +1,6 @@
 # An exact ordinary conditional-worker baseline
 
-`contingency115.workers.OrdinaryWorkerSampler` samples an established fixed-margin distribution without enumerating aggregate tables. It assigns column labels to individual worker slots uniformly without replacement and returns only the aggregate table. This makes a useful baseline for conditional commuting ensembles when the intended law is independent worker allocation subject to fixed controls.
+`contingency115.scipy_workers.ScipyWorkerSampler` provides a fast optional Patefield backend for the ordinary conditional-worker law. `contingency115.workers.OrdinaryWorkerSampler` retains the exact standard-library reference: it assigns column labels to individual worker slots uniformly without replacement and returns only the aggregate table. Both target the same established fixed-margin distribution without enumerating aggregate tables. This makes a useful baseline for conditional commuting ensembles when the intended law is independent worker allocation subject to fixed controls.
 
 This is **not uniform sampling of aggregate tables**, a new mathematical result, or an implementation of the polynomial-time uniform sampler in OpenAI #115. The distinction already appears in the [commuting methodology note](commuting-use-cases.md). Mature classical alternatives exist: [SciPy `random_table`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.random_table.html) implements Boyett and Patefield algorithms, and [R `r2dtable`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/r2dtable.html) uses Patefield's algorithm. SciPy documents an `O(K log N)` Patefield method, where `K` is the number of cells and `N` the total. The present implementation prioritizes a short integer-arithmetic correctness argument and exact small-case verification; it makes no claim to be the fastest implementation of this classical law.
 
@@ -16,9 +16,29 @@ This is the central conditional-worker, or conditional-independence, law. It is 
 
 For margins `(2,2)` by `(2,2)`, the three possible top-left counts `0,1,2` have probabilities `1/6, 2/3, 1/6`. Uniform aggregate tables instead give each probability `1/3`.
 
-The API deliberately accepts only two plain margin vectors. It has no `TableProblem`, bounds, structural-zero, or activity parameter. Do not strip bounds from an existing problem and present the result as a sample of that bounded problem. Rejection conditioning could in principle target a restricted version of this same law, but its acceptance probability and cost are outside this implementation.
+Both sampler APIs accept plain margin vectors. They have no `TableProblem`, bounds, structural-zero, or activity parameter. Do not strip bounds from an existing problem and present the result as a sample of that bounded problem. Rejection conditioning could in principle target a restricted version of this same law, but its acceptance probability and cost are outside these implementations.
 
-## Why the draw is exact
+## Optional SciPy backend
+
+For practical sampling of this law, use the public wrapper around [SciPy `random_table`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.random_table.html):
+
+```python
+from contingency115.scipy_workers import ScipyWorkerSampler
+
+sampler = ScipyWorkerSampler([4, 3, 3], [4, 2, 2, 2], seed=115)
+table = sampler.sample()           # tuple of rows, containing Python integers
+tables = sampler.samples(1000)     # tuple of tables; one native batch draw
+```
+
+SciPy is optional and imported when this sampler is constructed. Install `scipy` in the Python environment running your code; it supplies its compatible NumPy dependency. The wrapper needs `scipy.stats.random_table`, available since SciPy 1.10. If it is unavailable, construction raises an explicit `ImportError`; importing the module and using the standard-library sampler still work. No hard project dependency was added.
+
+`seed` constructs a private NumPy `Generator` with `PCG64`. Alternatively pass `rng=your_numpy_generator`; the wrapper uses and advances that object in place. Passing both is an error. With neither, a private generator uses system entropy. Seeded reproducibility requires the same NumPy/SciPy versions and call sequence. NumPy's legacy global generator and Python `random.Random` are not used by this backend.
+
+The wrapper explicitly selects `method="patefield"`. It removes zero-margin rows and columns before native draws, then restores their positions. If at most one row or column has positive count, the table is uniquely determined and returned without consuming randomness. These cases preserve the same law and avoid a singleton-axis failure observed with SciPy 1.18.1 Patefield. Every nondeterministic native output is checked for shape, integer values, nonnegativity and both fixed margin vectors; invalid output raises instead of being resampled.
+
+Margins and their common total must fit a signed 64-bit integer, matching the native margin representation. `max_cells` bounds one table's dense size at construction; `max_output_cells` bounds a batch before any draw. Both default to one million cells. A zero-sized batch returns `()`. Python conversion and validation add work proportional to the output size. These bounds do not count native random bits or certify machine time, and the SciPy wrapper does not return the urn's `WorkerSample` work counters. Its target law is the same inverse-factorial law; it uses the library's numerical algorithm rather than the urn's integer-arithmetic exactness contract.
+
+## Why the urn draw is exact
 
 Imagine `N` individual positions split into rows of sizes `r[i]`. An urn contains `c[j]` labels of column category `j`. At each position, draw a uniform integer from `0` through the remaining population minus one; use cumulative category counts to select and remove its label.
 
@@ -101,10 +121,13 @@ Run:
 
 ```sh
 PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_workers.py' -v
+PYTHONPATH=src python3 -m unittest discover -s tests -p 'test_scipy_workers.py' -v
 PYTHONPATH=src python3 experiments/worker_baseline.py
 ```
 
 The tests expand the sampler's entire uniform-integer RNG decision tree and compare exact rational probabilities with a separate cell-box enumeration weighted by reciprocal factorials. Coverage includes every `2 × 3` and `3 × 2` margin pair with total at most four, further multistage `3 × 3` cases, zero margins, deterministic huge margins, and early deterministic completion. Other tests verify budgets before RNG, excluded API arguments, malformed values, a 100,000-worker sample, signed rational moments, the zero-variance control identity, and analytic moments at `2^200` scale.
+
+Optional backend tests compare SciPy's PMF with independently enumerated reciprocal-factorial probabilities, check seeded delegation to the public Patefield API and nonuniform 2×2 sample frequencies, and cover zero margins, singleton axes, RNG advancement, budgets, dependency errors and excluded constraints. They also ensure invalid native outputs raise without retrying. Library tests skip when SciPy is absent; validation and dependency-error tests still run. All backend tests passed with SciPy 1.18.1 and NumPy 2.5.3 in the existing benchmark environment.
 
 [`reports/worker-baseline.json`](../reports/worker-baseline.json) records reproducible seeds, source hashes, exact synthetic metric moments, output hashes, validated margins, actual draw counts, and measured local timings. It includes ordinary tables up to one million workers, a many-category case, a huge-total case with only ten required random draws, a guarded completion-DP comparison targeting the same law, and a rejected `2^80` draw budget. These establish implementation behavior on synthetic inputs, not predictive accuracy or a production performance guarantee.
 

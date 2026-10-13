@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "date_utc": "2026-10-11",
+  "source_checkout_base_commit": "fcfe1f8920d1f7569a7128e92513aef403de9fe3",
+  "source_sha256": {
+    "src/contingency115/defect_chain.py": "ea32150ff7ec94aed49d077222cca5742953ee716e6e7c461813cbb707f14316",
+    "src/contingency115/general_neighbors.py": "0140cc52a04245046651a2ede418b878d59603f3639f16ac0209e1dd36ea8521",
+    "tests/test_defect_chain.py": "9bf30e814a93fa44f0df19003e63a23274993ad0ac78cdf4ecd45ac2b03e9df5",
+    "tests/test_general_neighbors.py": "14f03f2f07f9059f81310291d3febd819597990497a69c1196156629508c5af1",
+    "experiments/marked_chain_audit.py": "8e7e05cbd2cf262dbeb91401c3e500a3f95809bda4ebf47499cfda2525035ac4",
+    "experiments/effective_width.py": "d85dc8a34ede03d2c8126f2ed58527b97ffef5c06ace1a36c0f42ecb73b63766",
+    "research/effective-width/formal/Math115/EffectiveWidthBound.lean": "73238cfc2aa621da5921b6fba02e9944c8cce94554e49ac3f5e2f6578704ea1f",
+    "research/repair-accept/verify.py": "1b54eb671ddb9a6868aa3c822779600eaba82ad2bc89deb6c68a743a9fdaa438"
+  },
+  "artifact_sha256": {
+    "reports/marked-chain.json": "5fb5ceb1a8ff404830af5d4f287cf48bf4dba452ca53beafc96a5dc0c7e9a851",
+    "reports/effective-width.json": "76490d3cfe69f2b9bad71af2a9b2e8789e67e7d12d6eb69b4c4cd8dea6d5615f",
+    "reports/defect-followups-verify.log.gz": "5d9d875ca908513be7a5d9a9ccecb5a917ad6de753e0c4c31e30868796b3e6d5",
+    "research/effective-width/results/verification.json": "48f3a44104923275cd2822a20c7e5a3487601a8afe05f96fbf27233379917556"
+  },
+  "verification": {
+    "command": "make verify",
+    "exit_code": 0,
+    "tests_run": 369,
+    "tests_passed": 368,
+    "tests_skipped": 1,
+    "skip": "optional SciPy dependency unavailable",
+    "other_checks": [
+      "archived finite audit",
+      "saved claims ledger",
+      "pinned source bundle",
+      "independent exact crosscheck",
+      "mathematical cycle-mixture certificate replay"
+    ],
+    "producer_drift": "Historical cycle-mixture producer sources differ after prior optimization; the current replay checks and passes all mathematical obligations. No byte-identical producer claim."
+  },
+  "finite_experiments": [
+    {
+      "command": "python3 experiments/marked_chain_audit.py --output reports/marked-chain.json",
+      "exit_code": 0,
+      "scope": "Nine exact finite Markov schedules, survivor and hybrid inequalities, and counterexamples to naive dependent acceptance."
+    },
+    {
+      "command": "python3 experiments/effective_width.py --output reports/effective-width.json",
+      "exit_code": 0,
+      "scope": "Seven exact physical width comparisons and four mixed-mask degree obstructions, with no dense completion enumeration in the degree family."
+    }
+  ],
+  "formal": {
+    "receipt": "research/effective-width/results/verification.json",
+    "status": "fresh ordinary compilation and compiled-environment audit passed",
+    "headline": "Math115.EffectiveWidthBound.refinedConstant_le_actual_width",
+    "scope": "Scalar refinedConstant(p,V)<=p^3 V^4 for natural p,V>=2. Complete dependency closure retained. Reused baseline imports and compiler trusted."
+  },
+  "review": {
+    "kind": "separate AI agents reviewing AI-produced research and implementation; no outside human review",
+    "mathematics": "Spaced rejection domination and equal-mass hybrid, exact schedule, operation bound, effective-width state/weight/conductance equivalence, and scalar coefficient reviewed without an unresolved blocker.",
+    "spaced_backend": "Independent code review passed; complete finite-word output law distinguishes continuing from restarting, and budget/scope boundary checks pass.",
+    "general_neighbors": "Independent complete-rank checks passed after fixing mutable input aliasing and boolean/float column-view validation. Prepared rank/sample costs O(p); construction and full-bound validation have separate documented costs."
+  },
+  "scope_limits": [
+    "No new complete physical trace or dependent-attempt Lean theorem.",
+    "No new complete encoded sampler or numerical bit-machine degree.",
+    "No strict Comparator run.",
+    "No giant certified schedule executed, practical mixing speed measured, or outside human review claimed.",
+    "General neighbor sampling uses an exact integer RNG; bounded weighted star exits and oracle-error composition remain open."
+  ]
+}

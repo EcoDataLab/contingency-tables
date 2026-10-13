@@ -1,0 +1,154 @@
+[
+  {
+    "module": "Math115.ShapeDegreeBound",
+    "source": "research/shape-refinement/formal/Math115/ShapeDegreeBound.lean",
+    "source_sha256": "0761f9e7503fdb0b72ceb7c34ce6d2e707afeb35901a96c37462eb99eee9c801",
+    "returncode": 0,
+    "seconds": 8.938,
+    "olean_sha256": "32136a8ce302f0a516d8a22bb9280d33deed758e02cabcbba12f0682208a4689"
+  },
+  {
+    "module": "Math115.RetainedRoot",
+    "source": "research/retained-root/formal/Math115/RetainedRoot.lean",
+    "source_sha256": "7f904f3497583644121f0ffe39da6b1cdc5c9a2c52df17b7404bd6eabd34b742",
+    "returncode": 0,
+    "seconds": 5.126,
+    "olean_sha256": "f726fc5c6fbfe9c1247b73dd0254a1aeed22148d6fb9384944b35ccd8aca89f4"
+  },
+  {
+    "module": "Research.RetainedRootTransport",
+    "source": "research/retained-root/formal/Research/RetainedRootTransport.lean",
+    "source_sha256": "dc99d8cb80b193ff99a6e598d6f4d53274180f737f012522a078503e752f8f4b",
+    "returncode": 0,
+    "seconds": 15.626,
+    "olean_sha256": "30fb54398c9eccaa5c3d30388b11802b10f72686d5080686e85896e4494c0905"
+  },
+  {
+    "module": "Research.RetainedRootPhysical",
+    "source": "research/retained-root/formal/Research/RetainedRootPhysical.lean",
+    "source_sha256": "f984b845bd099d8a85e13c22c79b1ed7398f8d80d3523aaa52d8e69e24326528",
+    "returncode": 0,
+    "seconds": 15.89,
+    "olean_sha256": "a8e18a4ad3d8718a6012ed9e1943819b1044cecc601c5120aeb028f0d127a77c"
+  },
+  {
+    "module": "Research.RetainedRootShifts",
+    "source": "research/retained-root/formal/Research/RetainedRootShifts.lean",
+    "source_sha256": "c144c912222aa05ee070db5eeed8b361458dd8fbb49571d1ba2fa81ec59fcf48",
+    "returncode": 0,
+    "seconds": 15.164,
+    "olean_sha256": "7b93a02474fba393f084bc8b3a3b5a5c32af52bc60f1d65172bb29619d3fc0dc"
+  },
+  {
+    "module": "Research.RetainedRootNonnegative",
+    "source": "research/retained-root/formal/Research/RetainedRootNonnegative.lean",
+    "source_sha256": "0cab3f0cb943c70443d429f1d44bfaa96cd9ed6f4ac0a00782e7842a1c961e26",
+    "returncode": 0,
+    "seconds": 15.017,
+    "olean_sha256": "b849e54d808ffde6a670f9fa312ed890daa1b6c1fb8c0a15e9e7c7c283dd545c"
+  },
+  {
+    "module": "Research.ModeAnchor",
+    "source": "research/retained-root/formal/Research/ModeAnchor.lean",
+    "source_sha256": "b9e4c521fb60aaa5e2c95561c7e05d349b47f5c99829055694f0a2d6a923a22d",
+    "returncode": 0,
+    "seconds": 15.872,
+    "olean_sha256": "7c418563cdcb1e7b03cb1b4e56e69654db03879f40613f9867fce342ef1d2613"
+  },
+  {
+    "module": "Research.RetainedStencilSum",
+    "source": "research/retained-root/formal/Research/RetainedStencilSum.lean",
+    "source_sha256": "ae7704f53a24bbd655da5d26798d8e14f1f92d2d8a8c6be097c722da3a5fa396",
+    "returncode": 0,
+    "seconds": 4.757,
+    "olean_sha256": "a753b88f41c3fbb777954a92a3471389bcfed39f960aac9b2ff51c1dc073d167"
+  },
+  {
+    "module": "Research.ModeAnchorStencil",
+    "source": "research/retained-root/formal/Research/ModeAnchorStencil.lean",
+    "source_sha256": "e69e33e3c2e3828d122ee1184719759bb95b49bd226daf5a18e03b32879890a9",
+    "returncode": 0,
+    "seconds": 16.903,
+    "olean_sha256": "07a805f3c540edbd70d7696c18bc7d220fda41c615f3fbb2f9609581ea32c1f9"
+  },
+  {
+    "module": "Research.RetainedPhysicalCap",
+    "source": "research/retained-root/formal/Research/RetainedPhysicalCap.lean",
+    "source_sha256": "a6a4d45889077de8e27ff9ca94e4b8fe9fa4aa445675f76e751575b15b7717d7",
+    "returncode": 0,
+    "seconds": 17.718,
+    "olean_sha256": "aa57b09afdc590f10be949e34d40d70786a25d50e574b646449c7af2e7523f8c"
+  },
+  {
+    "module": "Research.RetainedPhysicalSupport",
+    "source": "research/retained-root/formal/Research/RetainedPhysicalSupport.lean",
+    "source_sha256": "907a6505681c74d60e83a43a5e4c886df553c17195614553828e23b1beea54c2",
+    "returncode": 0,
+    "seconds": 14.865,
+    "olean_sha256": "94a8c06e5c4f5b9403444b375c19c3da652b40466cabaf2f8b27f509e310e134"
+  },
+  {
+    "module": "Math115.RetainedRootSquare",
+    "source": "research/retained-root/formal/Math115/RetainedRootSquare.lean",
+    "source_sha256": "7169a4459f96fb32495a8366c81e755645648800f8426032c72ab4c694b5a244",
+    "returncode": 0,
+    "seconds": 5.776,
+    "olean_sha256": "8a5e63c36077a3645979956a6b9e32d51904430199acbbffa75ddbb1897e3054"
+  },
+  {
+    "module": "ResearchComparison.ResidualCap",
+    "source": "research/retained-root/formal/ResearchComparison/ResidualCap.lean",
+    "source_sha256": "8a6647e1ca1d0b3e0d88213f22e57488c7982b078dfe1949ad340065e64ab729",
+    "returncode": 0,
+    "seconds": 15.72,
+    "olean_sha256": "18b8ac437bd936bfcf9023cde87b8a18706f1e8d06dc0ea3b77e66413219eb4a"
+  },
+  {
+    "module": "Research.GrowthScalar",
+    "source": "research/retained-root/formal/Research/GrowthScalar.lean",
+    "source_sha256": "ead59d120b639d883ceb6cbc34e508b6b4656a7af2bc294d79a59bc5868bbded",
+    "returncode": 0,
+    "seconds": 6.04,
+    "olean_sha256": "14e77432411c03ea67e1fb3d7f1ee2a49a5a6e09c4d6701baeafa2ea2d58b586"
+  },
+  {
+    "module": "Research.PositiveSupport",
+    "source": "research/retained-root/formal/Research/PositiveSupport.lean",
+    "source_sha256": "899551b377826ae254d1132e7efc179789cfb3f477655199ca54b1e561ffa3c2",
+    "returncode": 0,
+    "seconds": 18.701,
+    "olean_sha256": "5a545bedac11cdf7c0ba53c3a699eb332928163d8949996e7d00a9b5303ab554"
+  },
+  {
+    "module": "Research.SpectralPath",
+    "source": "research/retained-root/formal/Research/SpectralPath.lean",
+    "source_sha256": "d7149dd1f1268ca147761d1bbca5b3a7edbd4579d50bd2c8873247433f9b5f39",
+    "returncode": 0,
+    "seconds": 16.164,
+    "olean_sha256": "804c39b5d1dd8efa1b06512cd5580021d509f71609f991465560d528e4c9e720"
+  },
+  {
+    "module": "Research.SpectralPrefix",
+    "source": "research/retained-root/formal/Research/SpectralPrefix.lean",
+    "source_sha256": "652efc31f2aebd9a641ca7ed549c1770ae7181cc652390a0eadb3b68a7df3ef0",
+    "returncode": 0,
+    "seconds": 16.809,
+    "olean_sha256": "4db08fda1d4f1d617614bf4229f26c93b36f0b28797555f22abc70db5c7393bb"
+  },
+  {
+    "module": "Research.SpectralRetained",
+    "source": "research/retained-root/formal/Research/SpectralRetained.lean",
+    "source_sha256": "b4d953bd67c698bcdd74d6828ebf4f408615388a7cafbc6b5c979dd4614e84a0",
+    "returncode": 0,
+    "seconds": 16.327,
+    "olean_sha256": "5cb72e22385c9a4bd8c11736a19024a0a783697d44202f3a14f1a0d673c05f65"
+  },
+  {
+    "module": "ResearchAudit.EnvironmentAudit",
+    "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+    "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "returncode": 0,
+    "seconds": 2.979,
+    "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "source_review": {
+    "reviewer": "separate AI agent",
+    "path": "reviews/retry-source-review.md",
+    "result": "PASS; exact source and saved focused audit"
+  },
+  "publication_check": {
+    "reviewer": "primary AI agent",
+    "result": "All 77 staged inventory entries and exact file set matched before copy; proof and review bytes preserved; reproduction script read and syntax checked; public path scan passed.",
+    "new_compiler_execution": false,
+    "reproduction_commands_executed": false
+  },
+  "staged_manifest_sha256": "b9535f755e639bb39a45b0748e722a9bc6fd68151bcba22b0338a59d3a2a8103",
+  "publication_changes": [
+    "README.md: public wording and reproduction path",
+    "review-status.json: completed source and publication scopes",
+    "verification.json: publication status",
+    "manifest.json: final public inventory"
+  ]
+}

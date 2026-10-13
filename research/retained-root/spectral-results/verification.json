@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "Math115.ShapeDegreeBound",
+    "Math115.RetainedRoot",
+    "Research.RetainedRootTransport",
+    "Research.RetainedRootPhysical",
+    "Research.RetainedRootShifts",
+    "Research.RetainedRootNonnegative",
+    "Research.ModeAnchor",
+    "Research.RetainedStencilSum",
+    "Research.ModeAnchorStencil",
+    "Research.RetainedPhysicalCap",
+    "Research.RetainedPhysicalSupport",
+    "Math115.RetainedRootSquare",
+    "ResearchComparison.ResidualCap",
+    "Research.GrowthScalar",
+    "Research.PositiveSupport",
+    "Research.SpectralPath",
+    "Research.SpectralPrefix",
+    "Research.SpectralRetained"
+  ],
+  "compilation": [
+    {
+      "module": "Math115.ShapeDegreeBound",
+      "source": "research/shape-refinement/formal/Math115/ShapeDegreeBound.lean",
+      "source_sha256": "0761f9e7503fdb0b72ceb7c34ce6d2e707afeb35901a96c37462eb99eee9c801",
+      "returncode": 0,
+      "seconds": 8.938,
+      "olean_sha256": "32136a8ce302f0a516d8a22bb9280d33deed758e02cabcbba12f0682208a4689"
+    },
+    {
+      "module": "Math115.RetainedRoot",
+      "source": "research/retained-root/formal/Math115/RetainedRoot.lean",
+      "source_sha256": "7f904f3497583644121f0ffe39da6b1cdc5c9a2c52df17b7404bd6eabd34b742",
+      "returncode": 0,
+      "seconds": 5.126,
+      "olean_sha256": "f726fc5c6fbfe9c1247b73dd0254a1aeed22148d6fb9384944b35ccd8aca89f4"
+    },
+    {
+      "module": "Research.RetainedRootTransport",
+      "source": "research/retained-root/formal/Research/RetainedRootTransport.lean",
+      "source_sha256": "dc99d8cb80b193ff99a6e598d6f4d53274180f737f012522a078503e752f8f4b",
+      "returncode": 0,
+      "seconds": 15.626,
+      "olean_sha256": "30fb54398c9eccaa5c3d30388b11802b10f72686d5080686e85896e4494c0905"
+    },
+    {
+      "module": "Research.RetainedRootPhysical",
+      "source": "research/retained-root/formal/Research/RetainedRootPhysical.lean",
+      "source_sha256": "f984b845bd099d8a85e13c22c79b1ed7398f8d80d3523aaa52d8e69e24326528",
+      "returncode": 0,
+      "seconds": 15.89,
+      "olean_sha256": "a8e18a4ad3d8718a6012ed9e1943819b1044cecc601c5120aeb028f0d127a77c"
+    },
+    {
+      "module": "Research.RetainedRootShifts",
+      "source": "research/retained-root/formal/Research/RetainedRootShifts.lean",
+      "source_sha256": "c144c912222aa05ee070db5eeed8b361458dd8fbb49571d1ba2fa81ec59fcf48",
+      "returncode": 0,
+      "seconds": 15.164,
+      "olean_sha256": "7b93a02474fba393f084bc8b3a3b5a5c32af52bc60f1d65172bb29619d3fc0dc"
+    },
+    {
+      "module": "Research.RetainedRootNonnegative",
+      "source": "research/retained-root/formal/Research/RetainedRootNonnegative.lean",
+      "source_sha256": "0cab3f0cb943c70443d429f1d44bfaa96cd9ed6f4ac0a00782e7842a1c961e26",
+      "returncode": 0,
+      "seconds": 15.017,
+      "olean_sha256": "b849e54d808ffde6a670f9fa312ed890daa1b6c1fb8c0a15e9e7c7c283dd545c"
+    },
+    {
+      "module": "Research.ModeAnchor",
+      "source": "research/retained-root/formal/Research/ModeAnchor.lean",
+      "source_sha256": "b9e4c521fb60aaa5e2c95561c7e05d349b47f5c99829055694f0a2d6a923a22d",
+      "returncode": 0,
+      "seconds": 15.872,
+      "olean_sha256": "7c418563cdcb1e7b03cb1b4e56e69654db03879f40613f9867fce342ef1d2613"
+    },
+    {
+      "module": "Research.RetainedStencilSum",
+      "source": "research/retained-root/formal/Research/RetainedStencilSum.lean",
+      "source_sha256": "ae7704f53a24bbd655da5d26798d8e14f1f92d2d8a8c6be097c722da3a5fa396",
+      "returncode": 0,
+      "seconds": 4.757,
+      "olean_sha256": "a753b88f41c3fbb777954a92a3471389bcfed39f960aac9b2ff51c1dc073d167"
+    },
+    {
+      "module": "Research.ModeAnchorStencil",
+      "source": "research/retained-root/formal/Research/ModeAnchorStencil.lean",
+      "source_sha256": "e69e33e3c2e3828d122ee1184719759bb95b49bd226daf5a18e03b32879890a9",
+      "returncode": 0,
+      "seconds": 16.903,
+      "olean_sha256": "07a805f3c540edbd70d7696c18bc7d220fda41c615f3fbb2f9609581ea32c1f9"
+    },
+    {
+      "module": "Research.RetainedPhysicalCap",
+      "source": "research/retained-root/formal/Research/RetainedPhysicalCap.lean",
+      "source_sha256": "a6a4d45889077de8e27ff9ca94e4b8fe9fa4aa445675f76e751575b15b7717d7",
+      "returncode": 0,
+      "seconds": 17.718,
+      "olean_sha256": "aa57b09afdc590f10be949e34d40d70786a25d50e574b646449c7af2e7523f8c"
+    },
+    {
+      "module": "Research.RetainedPhysicalSupport",
+      "source": "research/retained-root/formal/Research/RetainedPhysicalSupport.lean",
+      "source_sha256": "907a6505681c74d60e83a43a5e4c886df553c17195614553828e23b1beea54c2",
+      "returncode": 0,
+      "seconds": 14.865,
+      "olean_sha256": "94a8c06e5c4f5b9403444b375c19c3da652b40466cabaf2f8b27f509e310e134"
+    },
+    {
+      "module": "Math115.RetainedRootSquare",
+      "source": "research/retained-root/formal/Math115/RetainedRootSquare.lean",
+      "source_sha256": "7169a4459f96fb32495a8366c81e755645648800f8426032c72ab4c694b5a244",
+      "returncode": 0,
+      "seconds": 5.776,
+      "olean_sha256": "8a5e63c36077a3645979956a6b9e32d51904430199acbbffa75ddbb1897e3054"
+    },
+    {
+      "module": "ResearchComparison.ResidualCap",
+      "source": "research/retained-root/formal/ResearchComparison/ResidualCap.lean",
+      "source_sha256": "8a6647e1ca1d0b3e0d88213f22e57488c7982b078dfe1949ad340065e64ab729",
+      "returncode": 0,
+      "seconds": 15.72,
+      "olean_sha256": "18b8ac437bd936bfcf9023cde87b8a18706f1e8d06dc0ea3b77e66413219eb4a"
+    },
+    {
+      "module": "Research.GrowthScalar",
+      "source": "research/retained-root/formal/Research/GrowthScalar.lean",
+      "source_sha256": "ead59d120b639d883ceb6cbc34e508b6b4656a7af2bc294d79a59bc5868bbded",
+      "returncode": 0,
+      "seconds": 6.04,
+      "olean_sha256": "14e77432411c03ea67e1fb3d7f1ee2a49a5a6e09c4d6701baeafa2ea2d58b586"
+    },
+    {
+      "module": "Research.PositiveSupport",
+      "source": "research/retained-root/formal/Research/PositiveSupport.lean",
+      "source_sha256": "899551b377826ae254d1132e7efc179789cfb3f477655199ca54b1e561ffa3c2",
+      "returncode": 0,
+      "seconds": 18.701,
+      "olean_sha256": "5a545bedac11cdf7c0ba53c3a699eb332928163d8949996e7d00a9b5303ab554"
+    },
+    {
+      "module": "Research.SpectralPath",
+      "source": "research/retained-root/formal/Research/SpectralPath.lean",
+      "source_sha256": "d7149dd1f1268ca147761d1bbca5b3a7edbd4579d50bd2c8873247433f9b5f39",
+      "returncode": 0,
+      "seconds": 16.164,
+      "olean_sha256": "804c39b5d1dd8efa1b06512cd5580021d509f71609f991465560d528e4c9e720"
+    },
+    {
+      "module": "Research.SpectralPrefix",
+      "source": "research/retained-root/formal/Research/SpectralPrefix.lean",
+      "source_sha256": "652efc31f2aebd9a641ca7ed549c1770ae7181cc652390a0eadb3b68a7df3ef0",
+      "returncode": 0,
+      "seconds": 16.809,
+      "olean_sha256": "4db08fda1d4f1d617614bf4229f26c93b36f0b28797555f22abc70db5c7393bb"
+    },
+    {
+      "module": "Research.SpectralRetained",
+      "source": "research/retained-root/formal/Research/SpectralRetained.lean",
+      "source_sha256": "b4d953bd67c698bcdd74d6828ebf4f408615388a7cafbc6b5c979dd4614e84a0",
+      "returncode": 0,
+      "seconds": 16.327,
+      "olean_sha256": "5cb72e22385c9a4bd8c11736a19024a0a783697d44202f3a14f1a0d673c05f65"
+    },
+    {
+      "module": "ResearchAudit.EnvironmentAudit",
+      "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+      "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "returncode": 0,
+      "seconds": 2.979,
+      "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+    }
+  ],
+  "audit_seconds": 137.921,
+  "audit_sha256": "4f615559e7ba3178b42bcd064dcffe4e7bdbd826bd58d39097af2ed71e931ebb",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "9162dae5f6c9e1dba9d188912c6b308f94d66fde63eecf6fa342bc741dfa2e88",
+  "declaration_count": 600,
+  "theorem_count": 523,
+  "headlines": [
+    {
+      "name": "Math115.RetainedRootPhysical.adjacent_physical_box_leaf_transport_retained",
+      "closure_size": 19399,
+      "statement": "\u2200 {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J]\n  (small : I \u2192 J \u2192 Bool) (B : I \u2192 J \u2192 \u2115) (r : I \u2192 \u2115) (c : J \u2192 \u2115) (L : \u2115) (s : I \u00d7 J) (hs : small s.1 s.2 = true)\n  (\u03c3 : I \u00d7 J \u2192 \u2115) (U l : \u2115),\n  2 \u2264 U \u2192\n    1 \u2264 l \u2192\n      l \u2264 U \u2192\n        (\u2200 (i : I) (j : J), small i j = false \u2192 2 \u2264 B i j) \u2192\n          (\u2200 (a : OAI.ContingencyTables.SmallContextCoordinates.Earlier small s), \u03c3 \u2191\u2191a \u2264 U) \u2192\n            \u2200 {n : \u2115} (e : Fin n \u2243 OAI.ContingencyTables.SmallContextCoordinates.Later small s)\n              (H : OAI.ContingencyTables.PhysicalCompletionFibres.SmallProfile small \u2192 \u211d),\n              0 <\n                  OAI.ContingencyTables.BalancedFamily.eliminate\n                    (OAI.ContingencyTables.LargePairEnumeration.widths fun x => U)\n                    (OAI.ContingencyTables.FirstPaperContextTransport.contextHard small B r c L\n                      (OAI.ContingencyTables.LargePairEnumeration.widths fun x => U)\n                      (OAI.ContingencyTables.SmallContextCoordinates.contextEquiv small s hs e U)\n                      (OAI.ContingencyTables.SmallContextEnumeration.prefixRaw small s \u03c3 U))\n                    (OAI.ContingencyTables.IntegerWeightedTransport.childProfile U (l - 1)) \u2192\n                0 <\n                    OAI.ContingencyTables.BalancedFamily.eliminate\n                      (OAI.ContingencyTables.LargePairEnumeration.widths fun x => U)\n                      (OAI.ContingencyTables.FirstPaperContextTransport.contextHard small B r c L\n                        (OAI.ContingencyTables.LargePairEnumeration.widths fun x => U)\n                        (OAI.ContingencyTables.SmallContextCoordinates.contextEquiv small s hs e U)\n                        (OAI.ContingencyTables.SmallContextEnumeration.prefixRaw small s \u03c3 U))\n                      (OAI.ContingencyTables.IntegerWeightedTransport.childProfile U l) \u2192\n                  let Ms := OAI.ContingencyTables.LargePairEnumeration.widths fun x => U;\n                  have f :=\n                    OAI.ContingencyTables.FirstPaperContextTransport.contextHard small B r c L Ms\n                      (OAI.ContingencyTables.SmallContextCoordinates.contextEquiv small s hs e U)\n                      (OAI.ContingencyTables.SmallContextEnumeration.prefixRaw small s \u03c3 U);\n                  have a :=\n                    OAI.ContingencyTables.BalancedFamily.eliminate Ms f\n                      (OAI.ContingencyTables.IntegerWeightedTransport.childProfile U (l - 1));\n                  have b :=\n                    OAI.ContingencyTables.BalancedFamily.eliminate Ms f\n                      (OAI.ContingencyTables.IntegerWeightedTransport.childProfile U l);\n                  have g :=\n                    OAI.ContingencyTables.IntegerBoxTruncation.truncate f\n                      (OAI.ContingencyTables.BalancedFamily.bounds (fun x => U) Ms) (U + Ms.sum);\n                  have A :=\n                    OAI.ContingencyTables.FactorialSignatures.integerRemovalMatrix\n                      (OAI.ContingencyTables.IntegerWeightedTransport.correctionKernel Ms g)\n                      (OAI.ContingencyTables.ExcessContextProfiles.rootDisplay U l);\n                  have h := fun p => H (OAI.ContingencyTables.ExcessContextProfiles.assemble small s hs \u03c3 U e p);\n                  (OAI.ContingencyTables.BalancedFamily.eliminate Ms (fun p => f p * h p)\n                            (OAI.ContingencyTables.IntegerWeightedTransport.childProfile U (l - 1)) /\n                          a -\n                        OAI.ContingencyTables.BalancedFamily.eliminate Ms (fun p => f p * h p)\n                            (OAI.ContingencyTables.IntegerWeightedTransport.childProfile U l) /\n                          b) ^\n                      2 \u2264\n                    OAI.ContingencyTables.IntegerWeightedTransport.retainedRootCoefficient A a b *\n                      Math115.PhysicalLeafEnergy.physicalLeafEnergy small s hs \u03c3 U l e\n                        (OAI.ContingencyTables.FirstPaperPhysicalMarginal.hardMarginal small B r c L) H"
+    },
+    {
+      "name": "Math115.RetainedRootPhysical.retainedRootCoefficient_shift",
+      "closure_size": 5073,
+      "statement": "\u2200 (F : (Bool \u2192 \u2115) \u2192 \u211d) (U l : \u2115) (s t : \u211d),\n  1 \u2264 l \u2192\n    l \u2264 U \u2192\n      OAI.ContingencyTables.IntegerWeightedTransport.retainedRootCoefficient\n          (OAI.ContingencyTables.FactorialSignatures.integerRemovalMatrix F\n            (OAI.ContingencyTables.ExcessContextProfiles.rootDisplay U l))\n          s t =\n        1 / s + 1 / t -\n              (if 2 \u2264 l then F (OAI.ContingencyTables.ExcessContextProfiles.auxRoot U (l - 1)) else 0) / s ^ 2 +\n            2 * F (OAI.ContingencyTables.ExcessContextProfiles.auxRoot U l) / (s * t) -\n          (if l < U then F (OAI.ContingencyTables.ExcessContextProfiles.auxRoot U (l + 1)) else 0) / t ^ 2"
+    },
+    {
+      "name": "OAI.ContingencyTables.IntegerWeightedTransport.retainedRootCoefficient_nonnegative_limit",
+      "closure_size": 15658,
+      "statement": "\u2200 {K : Type u_1} {l : Filter K} [l.NeBot] (Ms : List \u2115)\n  (F : K \u2192 (OAI.ContingencyTables.BalancedFamily.Coordinates Bool Ms \u2192 \u2115) \u2192 \u211d)\n  (f : (OAI.ContingencyTables.BalancedFamily.Coordinates Bool Ms \u2192 \u2115) \u2192 \u211d),\n  (\u2200 (x : OAI.ContingencyTables.BalancedFamily.Coordinates Bool Ms \u2192 \u2115),\n      Filter.Tendsto (fun t => F t x) l (nhds (f x))) \u2192\n    \u2200 (m z : Bool \u2192 \u2115) (R : \u2115),\n      (\u2200 U \u2208 Ms, 2 \u2264 U) \u2192\n        (\u2200\u1da0 (t : K) in l,\n            (\u2200 (x : OAI.ContingencyTables.BalancedFamily.Coordinates Bool Ms \u2192 \u2115), 0 \u2264 F t x) \u2227\n              OAI.ContingencyTables.BalancedBox.PositiveSlice (F t) (OAI.ContingencyTables.BalancedFamily.bounds m Ms)\n                  (R + Ms.sum) \u2227\n                OAI.ContingencyTables.BalancedBox.RemovalSlice (F t) (OAI.ContingencyTables.BalancedFamily.bounds m Ms)\n                  (R + Ms.sum)) \u2192\n          OAI.ContingencyTables.BalancedBox.InBox m z \u2192\n            \u2211 i, z i = R + 1 \u2192\n              0 <\n                  OAI.ContingencyTables.IntegerWeightedTransport.oneHole\n                    (OAI.ContingencyTables.BalancedFamily.eliminate Ms f) z false \u2192\n                0 <\n                    OAI.ContingencyTables.IntegerWeightedTransport.oneHole\n                      (OAI.ContingencyTables.BalancedFamily.eliminate Ms f) z true \u2192\n                  0 \u2264\n                    OAI.ContingencyTables.IntegerWeightedTransport.retainedRootCoefficient\n                      (OAI.ContingencyTables.FactorialSignatures.integerRemovalMatrix\n                        (OAI.ContingencyTables.IntegerWeightedTransport.correctionKernel Ms f) z)\n                      (OAI.ContingencyTables.IntegerWeightedTransport.oneHole\n                        (OAI.ContingencyTables.BalancedFamily.eliminate Ms f) z false)\n                      (OAI.ContingencyTables.IntegerWeightedTransport.oneHole\n                        (OAI.ContingencyTables.BalancedFamily.eliminate Ms f) z true)"
+    },
+    {
+      "name": "Math115.RetainedPhysicalCap.physical_correction_le_adjacent",
+      "closure_size": 18027,
+      "statement": "\u2200 {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J]\n  (small : I \u2192 J \u2192 Bool) (B : I \u2192 J \u2192 \u2115) (r : I \u2192 \u2115) (c : J \u2192 \u2115) (L : \u2115) (s : I \u00d7 J) (hs : small s.1 s.2 = true)\n  (\u03c3 : I \u00d7 J \u2192 \u2115) (U l : \u2115),\n  1 \u2264 l \u2192\n    l \u2264 U \u2192\n      (\u2200 (i : I) (j : J), small i j = true \u2192 B i j = U) \u2192\n        (\u2200 (a : OAI.ContingencyTables.SmallContextCoordinates.Earlier small s), \u03c3 \u2191\u2191a \u2264 U) \u2192\n          \u2200 {n : \u2115} (e : Fin n \u2243 OAI.ContingencyTables.SmallContextCoordinates.Later small s),\n            (\u2200\n                (T :\n                  OAI.ContingencyTables.ResidualTables small r c\n                    (fun i => r i + OAI.ContingencyTables.PaddedCompletions.rowLargeCount small i * L) fun j =>\n                    c j + OAI.ContingencyTables.PaddedCompletions.columnLargeCount small j * L)\n                (i : I) (j : J), \u2191\u2191T i j \u2264 B i j) \u2192\n              let Ms := OAI.ContingencyTables.LargePairEnumeration.widths fun x => U;\n              have f :=\n                OAI.ContingencyTables.FirstPaperContextTransport.contextHard small B r c L Ms\n                  (OAI.ContingencyTables.SmallContextCoordinates.contextEquiv small s hs e U)\n                  (OAI.ContingencyTables.SmallContextEnumeration.prefixRaw small s \u03c3 U);\n              have g :=\n                OAI.ContingencyTables.IntegerBoxTruncation.truncate f\n                  (OAI.ContingencyTables.BalancedFamily.bounds (fun x => U) Ms) (U + Ms.sum);\n              OAI.ContingencyTables.IntegerWeightedTransport.correctionKernel Ms g\n                  (OAI.ContingencyTables.ExcessContextProfiles.auxRoot U l) \u2264\n                \u2191n * \u2191(Math115.RetainedRoot.quarterProduct U) *\n                  max\n                    (OAI.ContingencyTables.BalancedFamily.eliminate Ms f\n                      (OAI.ContingencyTables.IntegerWeightedTransport.childProfile U (l - 1)))\n                    (OAI.ContingencyTables.BalancedFamily.eliminate Ms f\n                      (OAI.ContingencyTables.IntegerWeightedTransport.childProfile U l))"
+    },
+    {
+      "name": "Math115.RetainedPhysicalSupport.positive_physical_support_diameter",
+      "closure_size": 9812,
+      "statement": "\u2200 {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J]\n  (small : I \u2192 J \u2192 Bool) (B : I \u2192 J \u2192 \u2115) (r : I \u2192 \u2115) (c : J \u2192 \u2115) (L : \u2115) (s : I \u00d7 J) (hs : small s.1 s.2 = true)\n  (\u03c3 : I \u00d7 J \u2192 \u2115) (U : \u2115),\n  (\u2200 (i : I) (j : J), small i j = true \u2192 B i j = U) \u2192\n    (\u2200 (a : OAI.ContingencyTables.SmallContextCoordinates.Earlier small s), \u03c3 \u2191\u2191a \u2264 U) \u2192\n      \u2200 (\u03b2 : Fin (U + 1)) (\u03b1 : \u2115) {n : \u2115} (e : Fin n \u2243 OAI.ContingencyTables.SmallContextCoordinates.Later small s),\n        (\u2200\n            (T :\n              OAI.ContingencyTables.ResidualTables small r c\n                (fun i => r i + OAI.ContingencyTables.PaddedCompletions.rowLargeCount small i * L) fun j =>\n                c j + OAI.ContingencyTables.PaddedCompletions.columnLargeCount small j * L)\n            (i : I) (j : J), \u2191\u2191T i j \u2264 B i j) \u2192\n          0 <\n              OAI.ContingencyTables.BalancedFamily.eliminate\n                (OAI.ContingencyTables.LargePairEnumeration.widths fun x => U)\n                (OAI.ContingencyTables.FirstPaperContextTransport.contextHard small B r c L\n                  (OAI.ContingencyTables.LargePairEnumeration.widths fun x => U)\n                  (OAI.ContingencyTables.SmallContextCoordinates.contextEquiv small s hs e U)\n                  (OAI.ContingencyTables.SmallContextEnumeration.prefixRaw small s \u03c3 U))\n                (OAI.ContingencyTables.IntegerWeightedTransport.childProfile U \u2191\u03b2) \u2192\n            \u2191\u03b2 - \u03b1 \u2264 Math115.RetainedPhysicalSupport.effectiveWidth small r c - 1"
+    },
+    {
+      "name": "Research.PositiveSupport.positive_support_restriction",
+      "closure_size": 8540,
+      "statement": "\u2200 (z h : \u2115 \u2192 \u211d) (U : \u2115),\n  (\u2200 i \u2264 U, 0 \u2264 z i) \u2192\n    Research.PositiveSupport.NoValley z U \u2192\n      (\u2203 i \u2264 U, 0 < z i) \u2192\n        \u2203 \u03b1 \u03b2 m,\n          Research.PositiveSupport.SupportInterval z U \u03b1 \u03b2 \u2227\n            m \u2264 \u03b2 - \u03b1 \u2227\n              (\u2200 k \u2264 \u03b2 - \u03b1, 0 < z (\u03b1 + k)) \u2227\n                (\u2200 (i j : \u2115), i \u2264 j \u2192 j \u2264 m \u2192 z (\u03b1 + i) \u2264 z (\u03b1 + j)) \u2227\n                  (\u2200 (i j : \u2115), m \u2264 i \u2192 i \u2264 j \u2192 j \u2264 \u03b2 - \u03b1 \u2192 z (\u03b1 + j) \u2264 z (\u03b1 + i)) \u2227\n                    (OAI.ContingencyTables.FiniteExposureVariance.variance (fun i => z \u2191i) fun i => h \u2191i) =\n                      OAI.ContingencyTables.FiniteExposureVariance.variance (fun k => z (\u03b1 + \u2191k)) fun k => h (\u03b1 + \u2191k)"
+    },
+    {
+      "name": "Research.SpectralPath.exists_path_rayleigh_minimizer",
+      "closure_size": 25287,
+      "statement": "\u2200 (N : \u2115),\n  1 \u2264 N \u2192\n    \u2200 (z : Fin (N + 1) \u2192 \u211d) (r : \u2115 \u2192 \u211d),\n      (\u2200 (i : Fin (N + 1)), 0 < z i) \u2192\n        (\u2200 (l : Fin N), 0 < r (\u2191l + 1)) \u2192\n          \u2203 lam h,\n            0 < lam \u2227\n              (Research.SpectralPath.weightedSum z) h = 0 \u2227\n                h \u2260 0 \u2227\n                  0 < OAI.ContingencyTables.FiniteExposureVariance.variance z h \u2227\n                    lam =\n                        Research.SpectralPath.pathEnergy N r h /\n                          OAI.ContingencyTables.FiniteExposureVariance.variance z h \u2227\n                      (\u2200 (g : Fin (N + 1) \u2192 \u211d),\n                          (Research.SpectralPath.weightedSum z) g = 0 \u2192\n                            g \u2260 0 \u2192\n                              lam \u2264\n                                Research.SpectralPath.pathEnergy N r g /\n                                  OAI.ContingencyTables.FiniteExposureVariance.variance z g) \u2227\n                        (\u2200 (l : Fin N),\n                            h l.castSucc - h l.succ = lam * r (\u2191l + 1) * Research.SpectralPath.prefixFlux N z h l) \u2227\n                          OAI.ContingencyTables.FiniteExposureVariance.variance z h =\n                              lam * \u2211 l, r (\u2191l + 1) * Research.SpectralPath.prefixFlux N z h l ^ 2 \u2227\n                            \u2200 (g : Fin (N + 1) \u2192 \u211d),\n                              OAI.ContingencyTables.FiniteExposureVariance.variance z g \u2264\n                                1 / lam * Research.SpectralPath.pathEnergy N r g"
+    },
+    {
+      "name": "Research.SpectralRetained.retained_spectral_variance_bound",
+      "closure_size": 25821,
+      "statement": "\u2200 (z h c E : \u2115 \u2192 \u211d) (K : \u211d) (N m : \u2115),\n  1 \u2264 N \u2192\n    m \u2264 N \u2192\n      0 \u2264 K \u2192\n        (\u2200 i \u2264 N, 0 < z i) \u2192\n          (\u2200 (i j : \u2115), i \u2264 j \u2192 j \u2264 m \u2192 z i \u2264 z j) \u2192\n            (\u2200 (i j : \u2115), m \u2264 i \u2192 i \u2264 j \u2192 j \u2264 N \u2192 z j \u2264 z i) \u2192\n              (\u2200 i \u2264 N + 1, 0 \u2264 c i) \u2192\n                (\u2200 (j : \u2115), 1 \u2264 j \u2192 j \u2264 N \u2192 c j \u2264 K * max (z (j - 1)) (z j)) \u2192\n                  (\u2200 l \u2208 Finset.Icc 1 N, 0 \u2264 Research.RetainedStencilSum.stencil z c l) \u2192\n                    (\u2200 l \u2208 Finset.Icc 1 N, 0 \u2264 E l) \u2192\n                      (\u2200 l \u2208 Finset.Icc 1 N, (h l - h (l - 1)) ^ 2 \u2264 Research.RetainedStencilSum.stencil z c l * E l) \u2192\n                        (OAI.ContingencyTables.FiniteExposureVariance.variance (fun i => z \u2191i) fun i => h \u2191i) \u2264\n                          (\u2191N * (\u2191N + 1) + 2 * K) * \u2211 l \u2208 Finset.Icc 1 N, E l"
+    },
+    {
+      "name": "Math115.RetainedRootSquare.tight_fullCoefficient_bound",
+      "closure_size": 11025,
+      "statement": "\u2200 (p V : \u2115), 2 \u2264 p \u2192 2 \u2264 V \u2192 Math115.RetainedRootSquare.tightFullCoefficient p V \u2264 2 * \u2191p ^ 3 * \u2191V ^ 2"
+    },
+    {
+      "name": "Research.GrowthRefinement.doubled_growth_twice",
+      "closure_size": 7305,
+      "statement": "\u2200 (enlarged original q H s : \u2115),\n  0 < H \u2192\n    enlarged * (2 * H) ^ (2 * q) \u2264 original * (2 * H + s) ^ (2 * q) \u2192 47 * q * s \u2264 32 * H \u2192 enlarged \u2264 2 * original"
+    },
+    {
+      "name": "Research.GrowthRefinement.shape_gap_width_square",
+      "closure_size": 796,
+      "statement": "\u2200 (K p V d s : \u2115), p \u2264 d \u2192 V \u2264 11 * d * s \u2192 K \u2264 32 * p ^ 4 * V ^ 2 \u2192 K \u2264 3872 * d ^ 6 * s ^ 2"
+    },
+    {
+      "name": "Research.GrowthRefinement.bounded_aspect_gap_width_square",
+      "closure_size": 729,
+      "statement": "\u2200 (K d s A : \u2115), K \u2264 3872 * d ^ 6 * s ^ 2 \u2192 s ^ 2 \u2264 A * d \u2192 K \u2264 3872 * A * d ^ 7"
+    },
+    {
+      "name": "Research.GrowthRefinement.arbitrary_aspect_width_square_integer",
+      "closure_size": 1475,
+      "statement": "\u2200 (K d : \u2115), 9 * K \u2264 3872 * d ^ 8 \u2192 K \u2264 431 * d ^ 8"
+    },
+    {
+      "name": "Math115.LegacyResidualCap.all_state_l7_cap",
+      "closure_size": 7488,
+      "statement": "\u2200 {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J] (r : I \u2192 \u2115)\n  (c : J \u2192 \u2115) (U : \u2115) (B : I \u2192 J \u2192 \u2115),\n  (\u2200 (i : I) (j : J),\n      OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U i j = false \u2192\n        \u2211 k, r k + 7 * (Math115.LegacyResidualCap.largeRowCount r U * Math115.LegacyResidualCap.largeColumnCount c U) \u2264\n          B i j) \u2192\n    \u2200\n      (z :\n        OAI.ContingencyTables.SmallGraphProfiles.PhysicalStates\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) B r c 7)\n      (i : I) (j : J),\n      OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U i j = false \u2192\n        \u2211 k,\n            OAI.ContingencyTables.SmallGraphProfiles.residualRows\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) B r c 7 z k \u2264\n          B i j"
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

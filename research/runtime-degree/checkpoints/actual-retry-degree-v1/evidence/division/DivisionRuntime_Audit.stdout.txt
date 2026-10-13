@@ -1,0 +1,19 @@
+theorem Math115.DivisionRuntimeNext.typed_division : Math115.DegreeBounds.Typed OAI.MatchingFPRAS.TreeTyped.division
+  4 :=
+id
+  (Math115.DegreeBounds.typed_congr OAI.MatchingFPRAS.TreeTyped.division._proof_2
+    (Math115.DegreeBounds.typed_choose
+      (Math115.DegreeBounds.typed_composition
+        (Math115.DegreeBounds.typed_pair (Math115.DegreeBounds.typed_constant 0) Math115.DegreeBounds.typed_second)
+        Math115.DivisionRuntimeNext.typed_less_actual)
+      Math115.DivisionRuntimeNext.typed_divCore
+      (Math115.DegreeBounds.typed_pair (Math115.DegreeBounds.typed_constant 0) Math115.DegreeBounds.typed_first)))
+'Math115.DivisionRuntimeNext.typed_division' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem Math115.DivisionRuntimeNext.typed_quotient : Math115.DegreeBounds.Typed OAI.MatchingFPRAS.TreeTyped.quotient
+  4 :=
+id (Math115.DegreeBounds.typed_composition Math115.DivisionRuntimeNext.typed_division Math115.DegreeBounds.typed_first)
+'Math115.DivisionRuntimeNext.typed_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DivisionRuntimeNext.divFold_intermediate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DivisionRuntimeNext.typed_divStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DivisionRuntimeNext.typed_divFold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.DivisionRuntimeNext.typed_divCore' depends on axioms: [propext, Classical.choice, Quot.sound]

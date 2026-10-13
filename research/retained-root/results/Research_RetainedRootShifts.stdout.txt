@@ -1,0 +1,11 @@
+<repo>/research/retained-root/formal/Research/RetainedRootShifts.lean:21:71: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+<repo>/research/retained-root/formal/Research/RetainedRootShifts.lean:41:27: warning: This simp argument is unused:
+  Bool.true_eq_false
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [removeTwo, removeOne, rootDisplay, auxRoot, Bool.false_eq_true, ↓reduceIte, Nat.sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Math115.RetainedRootPhysical.retainedRootCoefficient_shift' depends on axioms: [propext, Classical.choice, Quot.sound]

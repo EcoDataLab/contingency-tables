@@ -1,0 +1,42 @@
+{
+  "status": "direct-import-hashes-match-authoritative-reuse-records",
+  "portable_import_manifest": ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/reuse-map.json",
+  "portable_import_manifest_sha256": "a0fbc6641a573f46e3fbf50ec176297e54c7b23a18ca904cba5c9e53d388f27c",
+  "portable_full_import_receipt": ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/import-02-receipt.json",
+  "portable_full_import_receipt_sha256": "4b762df98a07aa80384bd42c43ad97f8a88412d9d7caa905d0b221f8a83a6c4e",
+  "direct_imports": [
+    {
+      "module": "DivisionRuntime.Degree",
+      "selected_olean": ".local/further-gap/draw-runtime-next/division-cost/objects/DivisionRuntime/Degree.olean",
+      "sha256": "a84f0a08cdf0d87dde72b119d873baa7f7652118400388a23559c3c587b1aa03",
+      "expected_sha256": "a84f0a08cdf0d87dde72b119d873baa7f7652118400388a23559c3c587b1aa03",
+      "matched": true,
+      "reused_dependency": true
+    },
+    {
+      "module": "DrawRuntime.RangeSeed",
+      "selected_olean": ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects/DrawRuntime/RangeSeed.olean",
+      "sha256": "bba0857fb92869317236083b0d774760be957d05aedb285908ffa49888fce531",
+      "expected_sha256": "bba0857fb92869317236083b0d774760be957d05aedb285908ffa49888fce531",
+      "matched": true,
+      "reused_dependency": true
+    },
+    {
+      "module": "Math115.LatticeCompletionProgram",
+      "selected_olean": ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects/Math115/LatticeCompletionProgram.olean",
+      "sha256": "cd1af795511710e0d496e75c221ebd54f9e8e17c7212e92d143a8ce460255d01",
+      "expected_sha256": "cd1af795511710e0d496e75c221ebd54f9e8e17c7212e92d143a8ce460255d01",
+      "matched": true,
+      "reused_dependency": true
+    },
+    {
+      "module": "Math115.CompletionSamplerProgram",
+      "selected_olean": ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects/Math115/CompletionSamplerProgram.olean",
+      "sha256": "ed4a49097d4a688867797b4ae92efecb631299320a5bb5eb9a491c41278353e1",
+      "expected_sha256": "ed4a49097d4a688867797b4ae92efecb631299320a5bb5eb9a491c41278353e1",
+      "matched": true,
+      "reused_dependency": true
+    }
+  ],
+  "boundary": "ordinary previously authenticated reused dependencies; this lane does not rebuild or independently recreate their full transitive closure"
+}

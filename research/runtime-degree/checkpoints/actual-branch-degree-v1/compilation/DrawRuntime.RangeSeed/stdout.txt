@@ -1,0 +1,6 @@
+<candidate-root>\source\DrawRuntime\RangeSeed.lean:20:56: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<candidate-root>\source\DrawRuntime\RangeSeed.lean:35:74: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

@@ -1,0 +1,46 @@
+Math115.CompleteDrawNext.typed_actual_referencePackedTrial :
+  Math115.DegreeBounds.Typed Math115.LatticeOuterProgram.packedTrialRealizer
+    Math115.CompleteDrawNext.referenceTrialDegree
+Math115.CompleteDrawNext.typed_actual_publicDraw :
+  Math115.DegreeBounds.Typed Math115.PublicLatticeSampler.publicDrawRealizer Math115.CompleteDrawNext.explicitDrawDegree
+Math115.CompleteDrawNext.actual_publicDraw_polynomial :
+  ∃ p,
+    p.natDegree ≤ Math115.CompleteDrawNext.explicitDrawDegree ∧
+      ∀ (z : List OAI.MatchingFPRAS.Symbol × List Bool),
+        Math115.PublicLatticeSampler.publicDrawRealizer.cost z +
+            OAI.MatchingFPRAS.TreeTyped.weight (Math115.PublicLatticeSampler.publicDraw z) ≤
+          Polynomial.eval (OAI.MatchingFPRAS.TreeTyped.weight z) p
+Math115.CompleteDrawNext.machineTime_public_explicit_degree :
+  ∃ C,
+    0 < C ∧
+      ∀ (m n : ℕ) (r : Fin m → ℕ) (c : Fin n → ℕ),
+        ∑ i, r i = ∑ j, c j →
+          ∀ (h : ℕ),
+            1 ≤ h →
+              Math115.PublicLatticeSampler.machineTime (OAI.ContingencyTables.Algorithms.encodeSamplingInput r c h) ≤
+                C * OAI.ContingencyTables.Algorithms.samplingSize n r h ^ Math115.CompleteDrawNext.explicitPublicDegree
+Math115.CompleteDrawNext.fixedMachineBoundedSampling_explicit_degree :
+  ∃ C,
+    0 < C ∧
+      ∀ (m n : ℕ) (r : Fin m → ℕ) (c : Fin n → ℕ),
+        ∑ i, r i = ∑ j, c j →
+          ∀ (h : ℕ),
+            1 ≤ h →
+              have input := OAI.ContingencyTables.Algorithms.encodeSamplingInput r c h;
+              have time :=
+                C * OAI.ContingencyTables.Algorithms.samplingSize n r h ^ Math115.CompleteDrawNext.explicitPublicDegree;
+              (∀ (bits : Fin time → Bool),
+                  ∃ X,
+                    OAI.ContingencyTables.Algorithms.OutputsTable Math115.PublicLatticeSampler.machine input bits ↑X) ∧
+                (∑ X,
+                      |OAI.ContingencyTables.Algorithms.tableMass Math115.PublicLatticeSampler.machine input time ↑X -
+                          (↑(Fintype.card (OAI.ContingencyTables.Table r c)))⁻¹|) /
+                    2 ≤
+                  (2 ^ h)⁻¹
+'Math115.CompleteDrawNext.typed_actual_referencePackedTrial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompleteDrawNext.typed_actual_publicDraw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompleteDrawNext.actual_publicDraw_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompleteDrawNext.machineTime_public_explicit_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.CompleteDrawNext.fixedMachineBoundedSampling_explicit_degree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

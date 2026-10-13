@@ -70,12 +70,231 @@
       "commit_kind": "exact_repository_commit",
       "status": "passed",
       "scope": "Exact-commit hosted Linux focused 1511 named replay and fresh compiled-environment audit. No separate standalone named audits, Comparator or new runtime result."
+    },
+    {
+      "id": "physical-spectral",
+      "format": "compiled_environment",
+      "path": "research/physical-spectral/results/verification.json",
+      "sha256": "a643397626eda96d7deafed5eece055a12e90d7800388a2a0a5d023431ee897d",
+      "label": "Additive physical spectral and actual-count proof",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-defect-trace",
+      "format": "compiled_environment",
+      "path": "research/physical-defect-trace/results/verification.json",
+      "sha256": "5a5a8e5589775639e005748bf7420a48e257b09d24844bcf2b48ab638a3056d7",
+      "label": "Actual rational physical defect trace",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "aggregate-defect-trace",
+      "format": "compiled_environment",
+      "path": "research/aggregate-defect-trace/results/verification.json",
+      "sha256": "593d339f0ff589cada6385c47aa9b03b88b6f41333e286d508bc9ba78eb4ef99",
+      "label": "Actual aggregate bound for the same rational defect trace",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "complete-explicit-degree",
+      "format": "compiled_environment",
+      "path": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/reviews/compiled_environment/verification.json",
+      "sha256": "f3a6e2d9ea06580c5cc898a034e9dd1bd9befba1fb3d7ee7cace32a2b5df2eac",
+      "label": "Explicit degree for the existing complete public machine",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Focused compiled-environment audit of four frozen final defining modules, reusing successful exact compilations and authenticated imports; four full headline closures. No default rebuild, fresh dependency build, platform portability or strict Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
     "linux-integrated"
   ],
   "claims": [
+    {
+      "id": "aggregate-actual-gap",
+      "title": "Same-chain bounded-aspect refinement",
+      "english_claim": "The actual canonical rational defect trace has coefficient 34848*d^5*(m+n-2)^3; its squared aspect theorem gives inverse-gap allowance 34848*A^(3/2)*d^(13/2) when (m+n-2)^2<=A*d.",
+      "quantity": "Inverse gap ≤ 34848 A^(3/2)d^(13/2); exact shape bound 34848d⁵(m+n−2)³",
+      "hypotheses": [
+        "Finite ordered dimensions m,n≥2; natural margins; p≥2 small cells; nonempty positive defect support; U=11d(m+n−2), L=7; exact completion counts. A≥0 and (m+n−2)²≤Ad; fixed A for the d^6.5 asymptotic reading."
+      ],
+      "limitations": [
+        "The Lean aspect statement is squared. Same canonical proposal Q=4p−3 in both completion branches. Take the minimum with the earlier shape bound; thin shapes retain d⁸. Complete sampler/runtime integration remains open."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/aggregate-defect-trace.md",
+        "research/aggregate-defect-trace/formal/Research/AggregateShapeTrace.lean",
+        "research/aggregate-defect-trace/formal/Research/AggregateAspectTrace.lean",
+        "research/aggregate-defect-trace/formal/Research/AggregateDefectTrace.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.AggregateDefectTrace.state_variance_aggregate",
+          "module": "Research.AggregateDefectTrace",
+          "source": "research/aggregate-defect-trace/formal/Research/AggregateDefectTrace.lean"
+        },
+        {
+          "name": "Math115.AggregateDefectTrace.actualRationalTrace_poincare_aggregate_shape",
+          "module": "Research.AggregateShapeTrace",
+          "source": "research/aggregate-defect-trace/formal/Research/AggregateShapeTrace.lean"
+        },
+        {
+          "name": "Math115.AggregateDefectTrace.actualRationalTrace_poincare_aggregate_aspect_sq",
+          "module": "Research.AggregateAspectTrace",
+          "source": "research/aggregate-defect-trace/formal/Research/AggregateAspectTrace.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "aggregate-defect-trace",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "retained-defect-gap",
+      "title": "Actual rational defect trace",
+      "english_claim": "The constructed lazy reversible trace on actual positive physical defect states has inverse-gap allowance 431*d^8, with sharper shape coefficient 3872*d^6*(m+n-2)^2.",
+      "quantity": "Inverse gap ≤ 431d⁸; shape bound 3872d⁶(m+n−2)²",
+      "hypotheses": [
+        "Finite ordered dimensions m,n≥2; natural margins; at least two small cells and nonempty positive defect support. U=11d(m+n−2), L=7, d=10+(m+1)(n+1). Exact accepted completion counts."
+      ],
+      "limitations": [
+        "Rational changed chain: actual degree, conductances and normalization are compiled. Dyadic factor-two rounding remains reviewed mathematics. Complete sampler integration and runtime are open; baseline compiler/imports are trusted."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/physical-defect-trace.md",
+        "research/physical-defect-trace/formal/Research/PhysicalDefectTraceFinal.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.PhysicalDefectTrace.actualRationalTrace_poincare_square",
+          "module": "Research.PhysicalDefectTraceFinal",
+          "source": "research/physical-defect-trace/formal/Research/PhysicalDefectTraceFinal.lean"
+        },
+        {
+          "name": "Math115.PhysicalDefectTrace.actualRationalTrace_poincare_shape_square",
+          "module": "Research.PhysicalDefectTraceFinal",
+          "source": "research/physical-defect-trace/formal/Research/PhysicalDefectTraceFinal.lean"
+        },
+        {
+          "name": "Math115.PhysicalDefectTrace.actualRationalTrace_poincare_d8",
+          "module": "Research.PhysicalDefectTraceFinal",
+          "source": "research/physical-defect-trace/formal/Research/PhysicalDefectTraceFinal.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "physical-defect-trace",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "aggregate-incidence-gap",
+      "title": "Sharper reviewed aspect coefficient",
+      "english_claim": "Grouping actual completed-defect repair incidences gives a rational inverse-gap allowance 15488*A^(3/2)*d^(13/2) on bounded-aspect rectangles; dyadic rounding doubles it.",
+      "quantity": "Inverse gap ≤ 15488 A^(3/2)d^(13/2)",
+      "hypotheses": [
+        "Ordinary equal-total margins; m,n≥2; nonempty positive defect branch; (m+n−2)²≤Ad; U=11d(m+n−2), L=7. Reference proposal 1/[2(4p−3)]; unit branch uses its smaller degree allowance 2(m+n)−3. Ideal completions."
+      ],
+      "limitations": [
+        "Reviewed AI mathematical derivation with exact finite checks. Its sharper orientation estimates and separate unit proposal remain outside the compiled 34848 theorem. This is not a complete sampler runtime bound."
+      ],
+      "evidence_class": "reviewed_mathematics",
+      "sources": [
+        "docs/aggregate-incidence.md",
+        "docs/further-shape-bounds.md"
+      ],
+      "headlines": [],
+      "evidence": []
+    },
+    {
+      "id": "growing-family-gap",
+      "title": "Restricted family with both dimensions growing",
+      "english_claim": "The same rational physical defect trace has inverse gap O(d^4) at fixed aspect on the specified growing-row margin family with 1<=h<=U/[2(R-1)], using a classical unextracted constant. Its explicit self-contained allowance is 64856A d^5; the one-token subfamily retains sharper constants.",
+      "quantity": "Inverse gap O(d⁴) at fixed aspect; explicit 64856A d⁵ alternative",
+      "hypotheses": [
+        "Only the specified (R+1)-by-2b margins, R,b≥2; small-row total 1≤h≤U/[2(R−1)]; U=11ds, L=7, s=R+2b−1; s²≤Ad for fixed A; ordinary exact completion counts; unchanged rational proposal 1/[2(4p−3)]."
+      ],
+      "limitations": [
+        "Reviewed AI mathematics with separate one-token physical and higher-total slice/place fixtures. The d⁴ allowance uses Morris’s unextracted universal constant C_Z. No Lean verification, arbitrary-margin gap theorem, numerical d⁴ sampling schedule or runtime claim. General compiled exponent remains 8."
+      ],
+      "evidence_class": "reviewed_mathematics",
+      "sources": [
+        "docs/growing-row-extension.md",
+        "docs/junction-star-comparison.md",
+        "docs/growing-row-extension-review.md",
+        "reports/growing-row-extension.json",
+        "docs/growing-row-comparison.md",
+        "docs/growing-row-comparison-review.md",
+        "reports/growing-row-comparison.json"
+      ],
+      "headlines": [],
+      "evidence": []
+    },
+    {
+      "id": "thin-family-gap",
+      "title": "Restricted rectangular family",
+      "english_claim": "The same physical defect trace has inverse-gap allowance 2840d^6 on the specified 3-by-2b margin family with first-row total h between 1 and floor(U/2).",
+      "quantity": "Inverse gap ≤ 2840d⁶",
+      "hypotheses": [
+        "Only the explicit 3-by-2b margins in the linked proof, b≥2; 1≤h≤floor(U/2); U=11d(2b+1), L=7; ordinary exact completion counts; rational proposal 1/[2(4p−3)]."
+      ],
+      "limitations": [
+        "Reviewed AI mathematics with one exact finite fixture. Not all thin tables; no Lean verification, complete sampler or runtime bound. The unrestricted compiled exponent remains 8."
+      ],
+      "evidence_class": "reviewed_mathematics",
+      "sources": [
+        "docs/thin-row-extension.md",
+        "docs/thin-row-extension-review.md",
+        "reports/thin-row-extension.json"
+      ],
+      "headlines": [],
+      "evidence": []
+    },
+    {
+      "id": "physical-spectral-gap",
+      "title": "Original chain at smaller scales",
+      "english_claim": "The actual original selected ideal chain at U=11d(m+n−2), L=7 has inverse-gap allowance 3442d^9, with automatic feasibility and small-mask cases.",
+      "quantity": "Inverse gap ≤ 3442d⁹",
+      "hypotheses": [
+        "Finite ordered dimensions m,n≥2; equal natural-margin totals, including zeros; d=10+(m+1)(n+1). Ideal completion transitions."
+      ],
+      "limitations": [
+        "Ordinary additive compilation with full headline dependency closures; trusted pinned compiler and baseline imports. This existing chain construction at new scales is separate from the rational defect trace and the unchanged complete sampler; it is not a runtime bound."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/physical-spectral-chain.md",
+        "research/physical-spectral/formal/Research/RetainedChainSquareTotal.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.RetainedChainSquareTotal.feasibleSquareChain_poincare_d9",
+          "module": "Research.RetainedChainSquareTotal",
+          "source": "research/physical-spectral/formal/Research/RetainedChainSquareTotal.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "physical-spectral",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
     {
       "id": "ideal-inverse-gap",
       "title": "Ideal auxiliary chain",
@@ -107,16 +326,17 @@
     },
     {
       "id": "complete-bounded-sampler",
-      "title": "Complete bounded sampler",
-      "english_claim": "One fixed public fair-bit machine halts with a feasible table on every random tape by a global polynomial time C*S^D; at that same time its output law has total variation at most 2^-h from uniform ordinary fixed-margin tables.",
+      "title": "Bounded sampler: alternative proof",
+      "english_claim": "Re-proves the pinned upstream Algorithms.BoundedSamplingStatement via a different fixed public machine and the d^17 chain route. Every tape produces a feasible table by a uniform polynomial time; output TV is at most 2^-h.",
       "quantity": "Every-tape time ≤ C Sᴰ; total variation ≤ 2⁻ʰ",
       "hypotheses": [
         "Any finite dimensions m,n and natural margins r:Fin m→ℕ,c:Fin n→ℕ with equal ordinary totals; zero margins and empty dimensions are included.",
         "Numeric precision h≥1; M=∑ᵢrᵢ and S=m+n+clog₂(M+1)+h+1. One fixed machine and natural C>0,D apply uniformly to all inputs. Accuracy uses independent uniform fair bits; feasibility holds for every tape."
       ],
       "limitations": [
-        "The numerical complete runtime degree D has not been extracted; d¹⁷ is an inverse-gap power and S¹⁷⁰ bounds reserved bits/input size, not complete machine time.",
-        "Practical sampler performance and strict Comparator acceptance of this sampler remain unknown. This bounded near-uniform theorem supplies no exact-sampling or counting extension."
+        "Exactly the same existential theorem statement as upstream; a smaller complete machine-time exponent is not established.",
+        "The separate explicit-runtime-degree claim now fixes D for the same local machine. This historical Linux receipt retains its original scope. The d¹⁷ inverse-gap power and S¹⁷⁰ reserved-bit/input allowance are different quantities.",
+        "Practical sampler performance and strict Comparator acceptance remain unknown. This bounded near-uniform theorem supplies no exact-sampling or counting extension."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -159,6 +379,54 @@
         {
           "receipt": "linux-integrated",
           "scope": "Exact-commit hosted Linux focused 1511 named replay and fresh compiled-environment audit. No separate standalone named audits, Comparator or new runtime result."
+        }
+      ]
+    },
+    {
+      "id": "explicit-runtime-degree",
+      "title": "Explicit complete runtime degree",
+      "english_claim": "The existing d^17 public machine re-proves upstream bounded sampling and now has a closed explicit numerical runtime degree: every tape produces a feasible table within C S^D and output TV is at most 2^-h.",
+      "quantity": "Every-tape time ≤ C Sᴰ with explicit D; total variation ≤ 2⁻ʰ",
+      "hypotheses": [
+        "Any finite dimensions m,n and natural margins r:Fin m→ℕ,c:Fin n→ℕ with equal ordinary totals; zero margins and empty dimensions are included.",
+        "Numeric precision h≥1; M=∑ᵢrᵢ and S=m+n+clog₂(M+1)+h+1. One fixed machine and positive natural C apply uniformly; D is the fixed expression in CompleteDraw.FixedMachineTheorem. Accuracy uses independent uniform fair bits; feasibility holds for every tape."
+      ],
+      "limitations": [
+        "The existential sampling statement matches upstream. The additional explicit D has 4,137 decimal digits and is a conservative upper bound; no smaller machine-time degree than upstream has been established.",
+        "The new degree packet has ordinary compilation and four complete headline-closure audits with trusted imports. It is separate from the historical default Linux receipt and strict Comparator acceptance.",
+        "The numerical coefficient C remains existential. The d⁸/d^6.5 ideal-chain improvements are not integrated into this d¹⁷ machine. No practical runtime, exact-sampling or counting improvement follows."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FinalBinding.lean",
+        "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FixedMachineTheorem.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.CompleteDrawNext.typed_actual_publicDraw",
+          "source": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FinalBinding.lean",
+          "module": "CompleteDraw.FinalBinding"
+        },
+        {
+          "name": "Math115.CompleteDrawNext.explicitPublicDegree",
+          "source": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FixedMachineTheorem.lean",
+          "module": "CompleteDraw.FixedMachineTheorem"
+        },
+        {
+          "name": "Math115.CompleteDrawNext.machineTime_public_explicit_degree",
+          "source": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FixedMachineTheorem.lean",
+          "module": "CompleteDraw.FixedMachineTheorem"
+        },
+        {
+          "name": "Math115.CompleteDrawNext.fixedMachineBoundedSampling_explicit_degree",
+          "source": "research/runtime-degree/checkpoints/complete-explicit-degree-v1/source/CompleteDraw/FixedMachineTheorem.lean",
+          "module": "CompleteDraw.FixedMachineTheorem"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "complete-explicit-degree",
+          "scope": "Focused compiled-environment audit of four frozen final defining modules, reusing successful exact compilations and authenticated imports; four full headline closures. No default rebuild, fresh dependency build, platform portability or strict Comparator replay."
         }
       ]
     },

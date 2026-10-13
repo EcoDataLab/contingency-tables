@@ -1,0 +1,91 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 5222,
+      "sha256": "49824f7b80adb0c1481ef0bb7623b6145debff624db4552b5a295596fbedceff"
+    },
+    "evidence/guest-evidence.tar.gz": {
+      "bytes": 5848117,
+      "sha256": "2b3d47f55eb583e87dd0d587f64b217b66ff1585334119456980fc79a5e6be73"
+    },
+    "evidence/guest-member-manifest.json": {
+      "bytes": 1572,
+      "sha256": "565e1177e8199cd1d90836f32c7b5b2f0acc7681972c307beed91e9208b8ccad"
+    },
+    "evidence/resources.json": {
+      "bytes": 642,
+      "sha256": "4d3c2198c051ca30fccbfa490978dbb2fe1477e6e70fa27872c16d6a43aefbcc"
+    },
+    "evidence/snapshot-comparison.json": {
+      "bytes": 1222,
+      "sha256": "ec43265fd5216c9e25bf70849325f1f5e61fa4e5067de73215b4f8358a84cfcb"
+    },
+    "evidence/startup-result.json": {
+      "bytes": 389,
+      "sha256": "a90821fe7f68cfdc4ec60f3b4f75a5b7f64ecc638782f4a876197cd79200e94e"
+    },
+    "outcome.json": {
+      "bytes": 2955,
+      "sha256": "53a24fca6d1ae417eef79f913dff21703a4c5a6041fac1d80da8ebb45ded00af"
+    },
+    "profile-delta.json": {
+      "bytes": 1424,
+      "sha256": "3114251cba60507d4f3bc7b2f1b5b26da534eb0afdea76b0b2cf4c84783e473a"
+    },
+    "profile.json": {
+      "bytes": 451,
+      "sha256": "1c1c030838121b9a654f2eb9bc2f0995a8542eddc261d8adb85afe3c2c25338d"
+    },
+    "provenance-bindings.json": {
+      "bytes": 7575,
+      "sha256": "4e0068ba1f6dae6b3cc8255545752068e8be38577b391f684d5f5fab1aeaaabe"
+    },
+    "reproduction-references.json": {
+      "bytes": 3190,
+      "sha256": "5ff58aad1427ccc21c7bbdfac1fb48a54752742b9bd26e277086238d1844a3f7"
+    },
+    "review-boundaries.json": {
+      "bytes": 953,
+      "sha256": "343307af57441590f45ce0ed13713af7f5f94c337d8c83a3e7e29193cbbb448b"
+    },
+    "source/build_iso.py": {
+      "bytes": 2470,
+      "sha256": "884f26fe69d7994da387bb6d5403ae72079015e4c6480a32a5d1caad344ae06c"
+    },
+    "source/guard_benchmark.py": {
+      "bytes": 5350,
+      "sha256": "2746ef7593240011ae12149f3934e2fa1a68c8f9d77139ab33747d677ec5d058"
+    },
+    "source/guest_entry.py": {
+      "bytes": 7606,
+      "sha256": "f1b9b1478e1e932c8a3b99c32d1b5f4733f5a06d6f52bda853efd576116b13e2"
+    },
+    "source/install_sources.py": {
+      "bytes": 4419,
+      "sha256": "0db14c9c68927fd312bdd80b46f32e0052d4dcc46f33d7b9ed37f7d17e59b526"
+    },
+    "source/installation-manifest.json": {
+      "bytes": 6259,
+      "sha256": "d12bc93bfbc368018a3ee0e0da537b0895e32706eb6c73e66868be6d73727ef7"
+    },
+    "source/make_seed.py": {
+      "bytes": 3840,
+      "sha256": "256bbdfda40b1636ec8b00c67023644b5bf561971e3cee629b1af7f0806dfd8d"
+    },
+    "source/seed_media.py": {
+      "bytes": 7882,
+      "sha256": "f904f79313a36fe30d4435d871472cf126155b005f216ee7ea4142ad76487202"
+    },
+    "source/snapshots.py": {
+      "bytes": 3801,
+      "sha256": "c875c20375a1bf3362ac836126c7ddb249b0669ef9b2af332691f89f6278a193"
+    },
+    "source/validate_archive.py": {
+      "bytes": 1327,
+      "sha256": "474330e0bbae8471725a96c16df61302f074eb467af894b2dbbc38e491c9c04e"
+    }
+  },
+  "manifest_self_excluded": true,
+  "schema_version": 1,
+  "scope": "Complete authenticated startup06 standalone stable-Linux metadata comparison; candidate uninstalled, no race/error equivalence or full proof acceptance"
+}

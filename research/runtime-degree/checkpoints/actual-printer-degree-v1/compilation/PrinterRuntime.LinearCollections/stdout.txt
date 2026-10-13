@@ -1,0 +1,13 @@
+<repo>/.local/further-gap/draw-runtime-next/printer-next/source/PrinterRuntime/LinearCollections.lean:87:10: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<repo>/.local/further-gap/draw-runtime-next/printer-next/source/PrinterRuntime/LinearCollections.lean:118:10: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<repo>/.local/further-gap/draw-runtime-next/printer-next/source/PrinterRuntime/LinearCollections.lean:173:40: warning: This simp argument is unused:
+  eval_ofNat
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [eval_add, eval_mul, eval_C, eval_X, weight_prod]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
