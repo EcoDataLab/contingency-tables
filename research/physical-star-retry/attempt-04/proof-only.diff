@@ -1,0 +1,38 @@
+--- initial.lean
++++ checked.lean
+@@ -39,0 +40,9 @@
++lemma retry_variation_from_hold {D : Type*} [Fintype D] [DecidableEq D]
++    (p q : RationalLaw (Option D)) (hq : q = pointLaw none)
++    (fallback : D) (J : ℕ) (δ : ℚ) (hδ : variation p q ≤ δ) :
++    variation (retryLaw p id fallback J) (pointLaw fallback) ≤ (J : ℚ) * δ := by
++  have he := retryLaw_variation p q id fallback J
++  rw [hq, retry_point_none] at he
++  rw [hq] at hδ
++  exact he.trans (mul_le_mul_of_nonneg_left hδ (by positivity))
++
+@@ -112 +121,2 @@
+-  · have hf := failure_nonnegative (idealTrialLaw r c U L hr hc b) id
++  · have hf : 0 ≤ failureMass (idealTrialLaw r c U L hr hc b) id := by
++      simpa [failureMass] using (idealTrialLaw r c U L hr hc b).nonnegative none
+@@ -135,2 +145,2 @@
+-      if e = fallback then (1 - successProbability r c U L hr hc b)^J else 0 :=
+-  star_retry_mass (idealTrialLaw r c U L hr hc b) id
++      if e = fallback then (1 - successProbability r c U L hr hc b)^J else 0 := by
++  have he := star_retry_mass (idealTrialLaw r c U L hr hc b) id
+@@ -139,0 +150,3 @@
++  by_cases hef : e = fallback
++  · simpa only [successProbability, starMass, targetLaw, starLaw, ite_eq_left hef] using he
++  · simpa only [successProbability, starMass, targetLaw, starLaw, ite_eq_right hef] using he
+@@ -242,6 +255,6 @@
+-  rw [flatExit_law]
+-  have he := retryLaw_variation (actualTrialLaw r c U L hr hc b h)
+-    (idealTrialLaw r c U L hr hc b) id fallback J
+-  rw [idealTrialLaw_zero_star r c U L hr hc b hzero, retry_point_none] at he
+-  exact he.trans (mul_le_mul_of_nonneg_left
+-    (actualTrialLaw_accuracy r c U L hr hc htotal b h) (by positivity))
++  have he := retry_variation_from_hold
++    (actualTrialLaw r c U L hr hc b h) (idealTrialLaw r c U L hr hc b)
++    (idealTrialLaw_zero_star r c U L hr hc b hzero) fallback J (dyadic h)
++    (actualTrialLaw_accuracy r c U L hr hc htotal b h)
++  exact (congrArg (fun p => variation p (pointLaw fallback))
++    (flatExit_law r c U L hr hc b h fallback J)).le.trans he

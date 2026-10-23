@@ -1,0 +1,15 @@
+<packet>/revisions/attempt-04/formal/ResearchPhysicalStarRetry/Exit.lean:30:21: warning: This simp argument is unused:
+  Fintype.sum_option
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [successMass]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-04/formal/ResearchPhysicalStarRetry/Exit.lean:38:44: warning: This simp argument is unused:
+  Fintype.sum_option
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [successMass, failureMass, pointLaw, outputMass]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-04/formal/ResearchPhysicalStarRetry/Exit.lean:181:37: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead

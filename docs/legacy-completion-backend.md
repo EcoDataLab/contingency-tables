@@ -108,10 +108,21 @@ those mass and accuracy facts for the actual computed proposal, frozen
 source completion draw and literal list test. Its uniform word has length
 `clog2(32d²)+q_b(h)`, and trial error is at most `2^-h`. Rational accepted
 counts and the source completion count cast to this trace's `S(b,e)` and
-`w(b)`. The first-success specialization, positive-star and useful success
-bounds remain to compile; zero stars need a separate branch. The old proposal
-rate cancels within the ideal successful exit law but does not identify the
-incoming trace clock.
+`w(b)`. The [physical retry specialization](../research/physical-star-retry/)
+now compiles: at `L≥7`, an actual entering edge gives `s_b≥w(b)/2` and
+success at least `ρ/2`. Positive and zero stars are both covered. The
+[explicit schedule](../research/physical-star-budget/) gives local exit
+TV≤`2^−(t+1)` on exactly its stated word bank. The internal dyadic rate
+cancels in the successful exit distribution.
+
+The [rational-clock proposal](../research/rational-clock-proposal/) and
+[literal incoming acceptance](../research/rational-clock-step/) now compile
+and pass their audits. Capped interval rejection, followed by neighbor lookup,
+gives the ideal rate `1/[2(4p−3)]`; accepted unused slots hold. Source completion
+and the literal list test yield incoming error `2^−N+2^−h` on exactly
+`N·clog₂(2(4p−3))+q_d(h)` bits. Distinct target mass is the corresponding
+reference conductance divided by `2(4p−3)w(d)`. The complete incoming-plus-exit
+row and common fresh reservation remain to verify.
 
 After that transition interface, the program still needs fresh adaptive words,
 initialization and mixing, the defect-law repair/padding/output correction,

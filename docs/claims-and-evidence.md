@@ -82,8 +82,8 @@ Both large-line lists and positive defect support must be nonempty, with
 singleton selected blocks are permitted under these hypotheses. No equality
 of different reference kernels, stronger coefficient, new complete sampler,
 independent review, default build or Comparator result is claimed. The
-following acceptance packet closes the pointwise list interface; bounded
-weighted exits remain open.
+following packets close the pointwise list interface and bounded weighted
+exit. Their incoming clock and complete transition composition remain open.
 
 ## listed-acceptance
 
@@ -114,9 +114,9 @@ ideal successful masses `ρS(e)/w`, it specializes to normalized star weights
 The successful-mass identity and trial error are explicit premises. Weights
 are nonnegative with positive total; `w>0` and a fallback are supplied.
 Ordinary compilation and three full headline-closure audits passed. The
-physical one-trial facts are now checked separately below. The physical retry
-specialization, useful success lower bound, zero-star handling and incoming
-trace clock remain open. No new complete sampler or exponent follows.
+physical specialization, success lower bound, zero-star handling and local
+schedule are now checked below. The incoming trace clock and complete
+transition composition remain open. No new complete sampler or exponent follows.
 
 ## physical-star-trial
 
@@ -134,8 +134,54 @@ numbers. No global equal completion width, positive original margins,
 padding-seven or positive-star premise is needed for this one-trial law.
 Ordinary compilation and four full headline-closure audits passed, with
 standard axioms and trusted reused imports. Separate AI source review
-passed. The physical retry, success lower bound, zero-star and clock cases
-remain open, followed by global sampler and cost composition.
+passed.
+
+The [physical retry](../research/physical-star-retry/) derives the exact
+weighted target/fallback mixture and actual TV bound
+`(1−ρs_b/w(b))^J+J·2^-h`. At `L≥7`, an actual entering edge supplies
+`s_b≥w(b)/2`, giving the uniform local bound `(1−ρ/2)^J+J·2^-h`.
+A zero star has ideal failure only, and actual fallback error at most
+`J·2^-h`; this is not pointwise actual failure. An accepted result equal
+to fallback still counts as success.
+
+The [concrete schedule](../research/physical-star-budget/) chooses
+`J=2·2^clog₂(32d²)·(t+2)` and `h=t+2+clog₂ J`. It proves exit TV at most
+`2^−(t+1)` on the exact local bit bank, with no conductance computation.
+Both modules compile and pass their full assumption audits. The
+complete trace transition, common fresh words, global
+sampler and encoded cost composition remain open. The incoming clock and
+acceptance are checked in the next packet.
+
+## rational-clock-step
+
+The [capped rational proposal](../research/rational-clock-proposal/) uses
+binary rejection to choose among `2(4p−3)` slots. Only indices outside that
+interval cause a retry. List lookup follows capped sampling: an accepted
+slot outside the neighbor list remains a hold. The actual word has exactly
+`N·clog₂(2(4p−3))` bits and proposal TV error at most `2⁻ᴺ`.
+
+Computed neighbor-list uniqueness, membership and degree identify every
+actual neighbor's ideal rate as `1/[2(4p−3)]`. The defect and `p≥2` are
+explicit; equal totals are needed for neighbor identification. No nonempty
+large block, padding-seven or positive-original-margin premise is added.
+This includes zero attempts and the generic singleton interval boundary.
+The finite word approximates the rational law; no exact generally nondyadic
+fair-word claim is made.
+
+The [incoming step](../research/rational-clock-step/) then connects this
+proposal to the frozen source completion draw and literal list Boolean on
+exactly `N·clog₂(2(4p−3))+q_d(h)` bits. Its full-state output retains accepted
+balanced arrivals. `incomingLaw_accuracy` gives TV≤`2^−N+2^−h`; the ideal
+off-diagonal mass casts to the reference conductance divided by
+`2(4p−3)w(d)`. The computed large-line lists must be nonempty; the source
+width is fixed within this step. No padding-seven or positive-original-margin
+premise is added. This module also compiles and passes four full headline
+closures. Exit composition and the complete sampler remain separate.
+
+Ordinary compilation and four full headline-closure audits passed. The three
+needed upstream rejection modules were compiled unchanged at the pinned
+commit. Compiler/imports remain trusted, and this is separate from a fresh
+default-target build, Comparator acceptance or human review.
 
 ## aggregate-incidence-gap
 

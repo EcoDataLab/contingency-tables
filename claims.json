@@ -169,6 +169,50 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-star-retry",
+      "format": "compiled_environment",
+      "path": "research/physical-star-retry/attempt-04/verification.json",
+      "sha256": "502d1d1479c7f0c9eb2bf47c0a67698a7db5d47340b936de043df055306d81a5",
+      "label": "Bounded physical balanced-star exits",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-star-budget",
+      "format": "compiled_environment",
+      "path": "research/physical-star-budget/attempt-02/verification.json",
+      "sha256": "ba754804ffa49b9a05a885ad38d1b31360066b681f4b62e74ea8d6b851740ec1",
+      "label": "Concrete retry and completion-precision schedule",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "rational-clock-proposal",
+      "format": "compiled_environment",
+      "path": "research/rational-clock-proposal/attempt-09/verification.json",
+      "sha256": "6d91dea01b624251c8b8642cabc8879693a3685a8d3754de45c1e179d74d5c45",
+      "label": "Capped fair-bit proposal for the canonical rational trace clock",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "rational-clock-step",
+      "format": "compiled_environment",
+      "path": "research/rational-clock-step/attempt-02/verification.json",
+      "sha256": "1e8db2bb77a8ada18402cd735a4e491100e7c5da5b3e77ab9a45312d4152cc69",
+      "label": "Literal rational-clock incoming acceptance and source conductance law",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -312,7 +356,7 @@
         "Natural finite margins; both computed large-line lists nonempty; nonempty positive defect support; p≥2 small cells; U≥2 and L≥7 for the variance bound. The reference pair is fixed by margins and cutoff."
       ],
       "limitations": [
-        "Ordinary Lean compile and full headline closures; trusted reused imports. Same aggregate coefficient, with no equality assertion between different reference kernels. Bounded weighted exits, adaptive words and complete sampler integration remain open. No new exponent or Comparator acceptance."
+        "Ordinary Lean compile and full headline closures; trusted reused imports. Same aggregate coefficient, with no equality assertion between different reference kernels. The local weighted exit and explicit schedule are checked separately. The incoming clock and acceptance are also checked. Full trace composition, adaptive words and complete sampler integration remain open. No new exponent or Comparator acceptance."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -358,7 +402,7 @@
         "Natural finite margins and U,L,h; both computed large-line lists nonempty; actual physical source and candidate states at the source capacity; exact state-dependent completion word length. No-proposal hold and singleton selected blocks are included."
       ],
       "limitations": [
-        "Ordinary Lean compile and four complete headline closures with standard axioms and trusted reused imports. No adjacency, positive-original-margin, accuracy or padding-lower-bound premise. This closes acceptance only; proposal distribution, bounded weighted exits, fresh adaptive bits, outer realizer and cost composition remain open. No new exponent or Comparator acceptance."
+        "Ordinary Lean compile and four complete headline closures with standard axioms and trusted reused imports. No adjacency, positive-original-margin, accuracy or padding-lower-bound premise. This closes acceptance only; trace composition, fresh adaptive bits, outer realizer and cost composition remain open; the incoming proposal/acceptance and local weighted exit are checked separately. No new exponent or Comparator acceptance."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -404,7 +448,7 @@
         "Finite trial/output spaces; nonnegative rational S with positive total; w>0; supplied ideal successful-mass identity and trial accuracy; supplied fallback; J independent words of fixed width k. The flat bank has exactly J*k fair bits."
       ],
       "limitations": [
-        "Compiled conditional helper with three complete headline closures and trusted reused imports. The physical one-trial mass and accuracy are now checked separately; composing them with this helper and deriving a useful success lower bound remain open. Zero-star handling, incoming trace clock, adaptive outer schedule and encoded costs are not supplied. No new gap or runtime exponent, default rebuild or Comparator acceptance."
+        "Compiled conditional helper with complete headline closures and trusted reused imports. Its physical specialization, entering-edge success bound, zero-star handling and explicit local schedule are now compiled separately. This helper alone does not supply the incoming trace clock, adaptive outer schedule or encoded costs. No new gap or runtime exponent, default rebuild or Comparator acceptance."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -438,20 +482,24 @@
     },
     {
       "id": "physical-star-trial",
-      "title": "Physical one-trial law",
-      "english_claim": "At a fixed balanced physical state, the literal computed proposal and frozen completion draw with list acceptance have ideal successful mass rho*S(b,e)/w(b) and actual trial total-variation error at most 2^-h. The rational accepted-count formula casts to the computed-reference trace conductance and weight.",
-      "quantity": "Ideal success mass ρS(b,e)/w(b); trial TV ≤ 2⁻ʰ",
+      "title": "Bounded physical exits and explicit schedule",
+      "english_claim": "The literal physical proposal, frozen source completion draw and list acceptance give ideal successful mass rho*S(b,e)/w(b), with trial TV error at most 2^-h. On an actual entering edge at L>=7, the bounded weighted exit has error at most (1-rho/2)^J+J*2^-h. The explicit retry and precision schedule reduces this to 2^-(t+1); zero-star fallback has error at most J*2^-h.",
+      "quantity": "Exit TV ≤ (1−ρ/2)^J+J·2⁻ʰ; explicit schedule ≤ 2⁻⁽ᵗ⁺¹⁾",
       "hypotheses": [
-        "Equal-total finite natural margins for executable-law and accuracy statements; arbitrary natural U,L,h; both computed large-line lists nonempty; an actual balanced source state. Uniform word of exactly clog2(32*d^2)+q_b(h) bits. Singleton selected blocks are included."
+        "Equal-total finite natural margins; both computed large-line lists nonempty; actual balanced source and supplied defect fallback. Entering-edge bounds require L≥7 and adjacency to that defect. Arbitrary natural U; original zero margins and singleton selected blocks allowed. Each local exit uses exactly J·[clog₂(32d²)+q_b(h)] uniform bits."
       ],
       "limitations": [
-        "One-trial interface only, with four complete headline closures and trusted reused imports. No supplied desired-law or accuracy premise, no positive-original-margin or padding-seven requirement, and no global equal-width assumption. Physical retry specialization, positive-star/success bounds, zero-star handling, incoming rational trace clock, adaptive outer schedule and encoded costs remain open. No new gap/runtime exponent, default rebuild or Comparator acceptance."
+        "Ordinary compilation and full headline-closure audits with trusted reused imports. Success mass, completion accuracy and entering-edge probability bound are derived. Zero-star TV does not imply deterministic holding. The incoming clock and acceptance are checked separately. Full trace composition, common adaptive reservation and encoded costs remain open. No new complete-sampler or runtime exponent, default rebuild or Comparator acceptance."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
         "research/physical-star-trial/README.md",
         "research/physical-star-trial/formal/ResearchPhysicalStar/Trial.lean",
-        "docs/legacy-completion-backend.md"
+        "docs/legacy-completion-backend.md",
+        "research/physical-star-retry/README.md",
+        "research/physical-star-retry/formal/ResearchPhysicalStarRetry/Exit.lean",
+        "research/physical-star-budget/README.md",
+        "research/physical-star-budget/formal/ResearchPhysicalStarBudget/Schedule.lean"
       ],
       "headlines": [
         {
@@ -473,11 +521,121 @@
           "name": "Math115.PhysicalStarTrial.actualTrialLaw_accuracy",
           "module": "ResearchPhysicalStar.Trial",
           "source": "research/physical-star-trial/formal/ResearchPhysicalStar/Trial.lean"
+        },
+        {
+          "name": "Math115.PhysicalStarRetry.flatExit_variation",
+          "module": "ResearchPhysicalStarRetry.Exit",
+          "source": "research/physical-star-retry/formal/ResearchPhysicalStarRetry/Exit.lean"
+        },
+        {
+          "name": "Math115.PhysicalStarRetry.flatExit_variation_of_edge",
+          "module": "ResearchPhysicalStarRetry.Exit",
+          "source": "research/physical-star-retry/formal/ResearchPhysicalStarRetry/Exit.lean"
+        },
+        {
+          "name": "Math115.PhysicalStarRetry.targetLaw_mass_cast",
+          "module": "ResearchPhysicalStarRetry.Exit",
+          "source": "research/physical-star-retry/formal/ResearchPhysicalStarRetry/Exit.lean"
+        },
+        {
+          "name": "Math115.PhysicalStarRetry.flatExit_zero_star_variation",
+          "module": "ResearchPhysicalStarRetry.Exit",
+          "source": "research/physical-star-retry/formal/ResearchPhysicalStarRetry/Exit.lean"
+        },
+        {
+          "name": "Math115.PhysicalStarBudget.exit_budget",
+          "module": "ResearchPhysicalStarBudget.Schedule",
+          "source": "research/physical-star-budget/formal/ResearchPhysicalStarBudget/Schedule.lean"
+        },
+        {
+          "name": "Math115.PhysicalStarBudget.scheduledExit_variation",
+          "module": "ResearchPhysicalStarBudget.Schedule",
+          "source": "research/physical-star-budget/formal/ResearchPhysicalStarBudget/Schedule.lean"
         }
       ],
       "evidence": [
         {
           "receipt": "physical-star-trial",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-star-retry",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-star-budget",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "rational-clock-step",
+      "title": "Rational clock and incoming acceptance",
+      "english_claim": "Capped binary rejection and lookup approximate the canonical rational proposal. The literal frozen source completion and list test then give an incoming full-state law with TV error at most 2^-N+2^-h, and exact ideal off-diagonal mass equal to reference conductance/[2(4p-3)*source defect weight]. Accepted unused slots hold; accepted balanced states are retained.",
+      "quantity": "Incoming TV ≤ 2⁻ᴺ+2⁻ʰ; exact ideal conductance/[2(4p−3)w(d)]",
+      "hypotheses": [
+        "Actual source defect, p≥2 small cells and both computed large-line lists nonempty for completion. Equal original totals for conductance/neighbor identification. Arbitrary natural U,L,N,h; original zero margins and singleton selected blocks allowed. Exactly N·clog₂(2(4p−3))+q_d(h) uniform bits."
+      ],
+      "limitations": [
+        "Ordinary compilation and full headline-closure audits with trusted imports. The generally nondyadic clock is approximated by a fixed fair word. Source completion width is state-specific. Incoming-plus-exit composition, adaptive global reservations and encoded costs remain open. No new complete sampler, runtime or gap improvement follows from these local interfaces."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "research/rational-clock-proposal/README.md",
+        "research/rational-clock-proposal/formal/ResearchRationalClock/Proposal.lean",
+        "docs/legacy-completion-backend.md",
+        "research/rational-clock-step/README.md",
+        "research/rational-clock-step/formal/ResearchRationalClockStep/Step.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.RationalClockProposal.cappedIndex_none",
+          "module": "ResearchRationalClock.Proposal",
+          "source": "research/rational-clock-proposal/formal/ResearchRationalClock/Proposal.lean"
+        },
+        {
+          "name": "Math115.RationalClockProposal.physicalProposal_variation",
+          "module": "ResearchRationalClock.Proposal",
+          "source": "research/rational-clock-proposal/formal/ResearchRationalClock/Proposal.lean"
+        },
+        {
+          "name": "Math115.RationalClockProposal.idealPhysicalProposalLaw_mass",
+          "module": "ResearchRationalClock.Proposal",
+          "source": "research/rational-clock-proposal/formal/ResearchRationalClock/Proposal.lean"
+        },
+        {
+          "name": "Math115.RationalClockProposal.rational_clock_cast",
+          "module": "ResearchRationalClock.Proposal",
+          "source": "research/rational-clock-proposal/formal/ResearchRationalClock/Proposal.lean"
+        },
+        {
+          "name": "Math115.RationalClockStep.incomingLaw_eq",
+          "module": "ResearchRationalClockStep.Step",
+          "source": "research/rational-clock-step/formal/ResearchRationalClockStep/Step.lean"
+        },
+        {
+          "name": "Math115.RationalClockStep.incomingLaw_accuracy",
+          "module": "ResearchRationalClockStep.Step",
+          "source": "research/rational-clock-step/formal/ResearchRationalClockStep/Step.lean"
+        },
+        {
+          "name": "Math115.RationalClockStep.idealIncomingLaw_mass_ne",
+          "module": "ResearchRationalClockStep.Step",
+          "source": "research/rational-clock-step/formal/ResearchRationalClockStep/Step.lean"
+        },
+        {
+          "name": "Math115.RationalClockStep.idealIncomingLaw_mass_ne_cast",
+          "module": "ResearchRationalClockStep.Step",
+          "source": "research/rational-clock-step/formal/ResearchRationalClockStep/Step.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "rational-clock-proposal",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "rational-clock-step",
           "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]

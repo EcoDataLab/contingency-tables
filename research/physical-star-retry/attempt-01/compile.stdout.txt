@@ -1,0 +1,38 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarRetry/Exit.lean:30:21: warning: This simp argument is unused:
+  Fintype.sum_option
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [successMass]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarRetry/Exit.lean:38:44: warning: This simp argument is unused:
+  Fintype.sum_option
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [successMass, failureMass, pointLaw, outputMass]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarRetry/Exit.lean:112:15: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Nonempty (DefectVertices r c U L)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarRetry/Exit.lean:136:2: error: Type mismatch
+  star_retry_mass (idealTrialLaw r c U L hr hc b) id (crossRat r c U L hr hc b) (crossRat_nonnegative r c U L hr hc b)
+    hstar (proposalRat dimensionAllowance) (weightRat r c U L hr hc b) (weightRat_pos r c U L hr hc b)
+    (ideal_successMass r c U L hr hc b) fallback e J
+has type
+  (retryLaw (idealTrialLaw r c U L hr hc b) id fallback J).mass e =
+    (1 - (1 - (proposalRat dimensionAllowance * ∑ e, crossRat r c U L hr hc b e) / weightRat r c U L hr hc b) ^ J) *
+        (crossRat r c U L hr hc b e / ∑ e, crossRat r c U L hr hc b e) +
+      @ite ℚ (e = fallback) (Classical.propDecidable (e = fallback))
+        ((1 - (proposalRat dimensionAllowance * ∑ e, crossRat r c U L hr hc b e) / weightRat r c U L hr hc b) ^ J) 0
+but is expected to have type
+  (retryLaw (idealTrialLaw r c U L hr hc b) id fallback J).mass e =
+    (1 - (1 - successProbability r c U L hr hc b) ^ J) * (targetLaw r c U L hr hc b hstar).mass e +
+      @ite ℚ (e = fallback) (Subtype.instDecidableEq e fallback) ((1 - successProbability r c U L hr hc b) ^ J) 0
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarRetry/Exit.lean:168:37: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarRetry/Exit.lean:235:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

@@ -41,11 +41,11 @@ not a newly encoded complete outer machine.
 
 ## Remaining connection
 
-The [weighted first-success helper](../weighted-exit/) can next be specialized
-using this physical mass formula and accuracy, after supplying count
-nonnegativity, a positive source weight and positive total star mass. The
-retry bank must contain exactly `J*k` fresh bits at this fixed `b`. A useful
-success lower bound and the zero-star case remain separate obligations.
+The [physical retry specialization](../physical-star-retry/) now applies
+the weighted first-success helper to this mass formula and accuracy. It
+derives count nonnegativity, source-weight positivity, the entering-edge
+success bound at `L≥7` and zero-star handling. Its exact `J*k` local bank
+has a [compiled explicit schedule](../physical-star-budget/).
 
 The dyadic proposal rate cancels in the normalized ideal exit law. It does
 not identify the incoming rational clock `1/[2(4p−3)]` in the canonical

@@ -1,0 +1,74 @@
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:55:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  mapLaw uniformLaw fun x => intervalTrial ⋯ ((binaryWordEquiv (precision V)) x)
+in the target expression
+  (mapLaw uniformLaw fun word => intervalTrial ⋯ ((binaryWordEquiv (precision V)) word)).mass (some i) =
+    1 / 2 ^ precision V
+
+V : ℕ
+i : Fin V
+he :
+  mapLaw uniformLaw (intervalTrial ⋯) = mapLaw uniformLaw fun x => intervalTrial ⋯ ((binaryWordEquiv (precision V)) x)
+⊢ (mapLaw uniformLaw fun word => intervalTrial ⋯ ((binaryWordEquiv (precision V)) word)).mass (some i) =
+    1 / 2 ^ precision V
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    (binaryWordEquiv (precision V)) word
+  has type
+    Fin (2 ^ precision V)
+  but is expected to have type
+    Fin (2 ^ Nat.clog 2 V)
+  in the application
+    intervalTrial ⋯ ((binaryWordEquiv (precision V)) word)
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:201:35: error(lean.unknownIdentifier): Unknown identifier `firstPaperSmall`
+
+Note: It is not possible to treat `firstPaperSmall` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:228:35: error(lean.unknownIdentifier): Unknown identifier `firstPaperSmall`
+
+Note: It is not possible to treat `firstPaperSmall` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:230:36: error(lean.unknownIdentifier): Unknown identifier `denominator_pos`
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:233:35: error(lean.unknownIdentifier): Unknown identifier `firstPaperSmall`
+
+Note: It is not possible to treat `firstPaperSmall` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:238:7: error(lean.unknownIdentifier): Unknown identifier `idealPhysicalProposalLaw`
+
+Note: It is not possible to treat `idealPhysicalProposalLaw` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:239:44: error(lean.unknownIdentifier): Unknown identifier `denominator_pos`
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:239:2: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:244:35: error(lean.unknownIdentifier): Unknown identifier `firstPaperSmall`
+
+Note: It is not possible to treat `firstPaperSmall` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:246:5: error(lean.unknownIdentifier): Unknown identifier `idealPhysicalProposalLaw`
+
+Note: It is not possible to treat `idealPhysicalProposalLaw` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:253:6: error(lean.unknownIdentifier): Unknown identifier `idealPhysicalProposalLaw`
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:248:49: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+htotal : ∑ i, r i = ∑ j, c j
+hp : 2 ≤ Fintype.card (Cells sorry)
+x : DefectVertices r c U L
+y : States r c U L
+hlen : (physicalNeighbors r c U L ↑x).length ≤ defectAllowance r c U
+hlen' : (physicalNeighbors r c U L ↑x).length ≤ denominator r c U
+⊢ sorry = if physicalAdjacent r c U L (capacity r c U L) ⋯ (↑x) y then 1 / ↑(denominator r c U) else 0
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:257:87: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U : ℕ
+⊢ 1 / ↑(2 * ↑(defectAllowance r c U)) = 1 / (2 * ↑(defectAllowance r c U))
+<packet>/revisions/attempt-02/formal/ResearchRationalClock/Proposal.lean:258:54: warning: This simp argument is unused:
+  Rat.cast_natCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [denominator, Rat.cast_div, Rat.cast_one, Nat.cast_mul, Nat.cast_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

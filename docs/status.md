@@ -1,18 +1,21 @@
 # Research status
 
-23 October 2026: the [physical one-trial law](../research/physical-star-trial/)
-now compiles and passes the full assumption audit. The actual computed
-proposal, frozen completion draw at the source and literal list acceptance
-use one uniform state-specific word. Their ideal defect mass is
-`ρS(b,e)/w(b)`, with explicit casts to the computed-reference trace, and
-actual trial TV is at most `2^-h`. These facts are derived, not premises;
-no padding-seven or positive-original-margin hypothesis is needed here.
+23 October 2026: the [bounded physical exit](../research/physical-star-retry/)
+and [explicit local schedule](../research/physical-star-budget/) now compile
+and pass full assumption audits, following the checked physical trial.
+An actual entering edge at `L≥7` gives success at least `ρ/2`, so the exact
+`J·[clog₂(32d²)+q_b(h)]`-bit exit has TV error at most
+`(1−ρ/2)^J+J·2^-h`. A concrete retry count and precision make this at most
+`2^−(t+1)`. Zero-star fallback is also checked. These results require no
+positive-original-margin premise or global equal completion width.
 
-The [weighted-retry helper](../research/weighted-exit/) already proves the
-conditional `J*k`-bit error bound. Next formally specialize it to this trial,
-prove positive-star/success bounds and handle zero stars. The incoming
-rational trace clock and global sampler composition remain open. Neither
-this one-trial result nor the helper changes a sampler or runtime exponent.
+The [rational clock and incoming acceptance](../research/rational-clock-step/)
+also compile and pass their audits. The literal incoming word has error
+`2^−N+2^−h`; its ideal off-diagonal mass is exactly the canonical source
+conductance divided by `2(4p−3)w(d)`. Complete trace-row composition and
+common fresh word reservation are in progress. They remain separate from the new outer
+sampler, encoded costs and strict Comparator acceptance. No sampler or
+runtime exponent changed. The recurring schedule remains paused.
 
 23 October 2026: the [list acceptance correspondence](../research/listed-acceptance/)
 now compiles and passes its full assumption audit. At arbitrary `U,L`, the

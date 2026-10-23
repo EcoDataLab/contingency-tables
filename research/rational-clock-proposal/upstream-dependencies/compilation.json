@@ -1,0 +1,44 @@
+{
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "compiler_options": [
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false"
+  ],
+  "modules": [
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ExactIntegerChoice",
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/ExactIntegerChoice.lean",
+      "source_sha256": "ddd2ba0edb757ecf0c6c238e0a507e54140aa1383e99f365f16af7d929975a26",
+      "returncode": 0,
+      "seconds": 48.053052791859955,
+      "source_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "7fc7150f577f77f7bf54ed2bcda204a9face204e87a3f98258547dc1ce6f879d"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ExactIntegerProgram",
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/ExactIntegerProgram.lean",
+      "source_sha256": "ff15caf527c9cba0215403c6e0a4447e171cc1561ecf493dfc9de758846ea8c1",
+      "returncode": 0,
+      "seconds": 17.222195041831583,
+      "source_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "20c37469d618d7f5a77a9aa21009c3900f29f2c68d16bf542e668c86ac2cc4dd"
+    },
+    {
+      "module": "OAI.Combinatorics.ContingencyTables.Sampling.ExactIntegerRetry",
+      "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/ExactIntegerRetry.lean",
+      "source_sha256": "6ef2591a67c08eceb3174f056f6a75c1a99075ae9d2c23a85227cea3c0e41846",
+      "returncode": 0,
+      "seconds": 18.139659707900137,
+      "source_unchanged": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "3c99af020c15fac19277736af7ae92220dad2cc9fd67aa8e25c8187e2bf80a23"
+    }
+  ]
+}

@@ -1,13 +1,18 @@
 # Contributor handoff
 
-23 October 2026: the [physical one-trial interface](../research/physical-star-trial/)
-is compiled and assumption-audited. It derives the actual fixed-word step
-law, ideal successful mass `ρS(b,e)/w(b)`, its computed-trace conductance cast,
-and trial TV≤2^-h from the literal proposal/draw/list test. Separate AI
-source review passed. Next instantiate the [weighted retry helper](../research/weighted-exit/),
-prove positive-star/success bounds, handle zero stars and implement the
-incoming rational trace clock. The complete weighted exit and new outer
-sampler remain open.
+23 October 2026: the [physical bounded exit](../research/physical-star-retry/)
+and its [concrete retry/precision schedule](../research/physical-star-budget/)
+are compiled and assumption-audited. They specialize the checked one-trial
+law, derive the source-directed entering-edge success bound at `L≥7`, handle
+zero stars and give a finite local bank with error at most `2^−(t+1)`.
+Source and failed attempts are preserved; separate AI review passed.
+
+The [rational incoming proposal and acceptance](../research/rational-clock-step/)
+now compile and pass their audits too, with the canonical source denominator
+and error `2^−N+2^−h`. Next verify the ideal trace-row identity and
+support-weighted actual composition. A common fresh
+word realization and numerical reservation must remain explicit obligations.
+The complete newer sampler and encoded costs are still open.
 
 23 October 2026: the [executable acceptance interface](../research/listed-acceptance/)
 is now compiled and assumption-audited. The actual list Boolean on the old
@@ -55,10 +60,9 @@ Next integration tasks:
 1. Use the [checked completion adapter](legacy-completion-backend.md) to prove
    the actual bounded defect-transition law. The computed reference choice
    and list-based acceptance correspondence are now checked, as are the
-   physical one-trial mass and accuracy. Specialize the weighted-retry
-   helper and derive the positive-star/success bound. Preserve the trace's
-   proposal clock and weighted
-   balanced-state exits, and charge capped exits and completion errors. The
+   physical one-trial law, bounded exit and explicit local schedule.
+   Preserve the trace's rational proposal clock and identify the composed
+   row, charging incoming and bounded-exit errors. The
    old full-state transition is not the newer trace.
 2. Prove the adaptive fresh-word reservation and call cap, then compose
    initialization, mixing, the joint-output correction and retry schedule.

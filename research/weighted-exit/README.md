@@ -40,8 +40,9 @@ star mass is outside the normalized target and needs a separate physical case.
 The [physical one-trial packet](../physical-star-trial/) now proves that the
 actual proposal plus the [checked list acceptance test](../listed-acceptance/)
 has ideal successful mass `ρS(b,e)/w(b)`, and derives trial TV≤2^-h from the
-physical completion adapter. Next formally specialize this helper using
-those results, prove positive-star/success bounds and handle zero stars.
+physical completion adapter. The [physical retry](../physical-star-retry/)
+and [explicit local schedule](../physical-star-budget/) now compile too,
+including entering-edge success bounds and zero-star handling.
 The completion-word width is fixed at that particular `b`; this does not
 prove adaptive freshness or a common reservation across different states.
 
