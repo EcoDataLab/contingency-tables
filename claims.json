@@ -136,6 +136,17 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "listed-acceptance",
+      "format": "compiled_environment",
+      "path": "research/listed-acceptance/attempt-02/verification.json",
+      "sha256": "ed2fd7c69de1295e648e56fd01ac14794bf86f80be8c2d3f9bbd2469a2a4af72",
+      "label": "Executable list acceptance at arbitrary physical scales",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -279,7 +290,7 @@
         "Natural finite margins; both computed large-line lists nonempty; nonempty positive defect support; p≥2 small cells; U≥2 and L≥7 for the variance bound. The reference pair is fixed by margins and cutoff."
       ],
       "limitations": [
-        "Ordinary Lean compile and full headline closures; trusted reused imports. Same aggregate coefficient, with no equality assertion between different reference kernels. List acceptance, bounded weighted exits, adaptive words and complete sampler integration remain open. No new exponent or Comparator acceptance."
+        "Ordinary Lean compile and full headline closures; trusted reused imports. Same aggregate coefficient, with no equality assertion between different reference kernels. Bounded weighted exits, adaptive words and complete sampler integration remain open. No new exponent or Comparator acceptance."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -312,6 +323,52 @@
       "evidence": [
         {
           "receipt": "computed-reference-trace",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "listed-acceptance",
+      "title": "Executable list acceptance correspondence",
+      "english_claim": "At arbitrary natural cutoff and padding, the existing list translationValid Boolean on the frozen LatticeSampler.draw output agrees pointwise with the computed-reference physical completion decision for every exact-length word and optional proposal, including hold.",
+      "quantity": "Exact Boolean and accept/reject correspondence on every word",
+      "hypotheses": [
+        "Natural finite margins and U,L,h; both computed large-line lists nonempty; actual physical source and candidate states at the source capacity; exact state-dependent completion word length. No-proposal hold and singleton selected blocks are included."
+      ],
+      "limitations": [
+        "Ordinary Lean compile and four complete headline closures with standard axioms and trusted reused imports. No adjacency, positive-original-margin, accuracy or padding-lower-bound premise. This closes acceptance only; proposal distribution, bounded weighted exits, fresh adaptive bits, outer realizer and cost composition remain open. No new exponent or Comparator acceptance."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "research/listed-acceptance/README.md",
+        "research/listed-acceptance/formal/ResearchListedAcceptance/Decision.lean",
+        "docs/legacy-completion-backend.md"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.ListedAcceptance.listed_completionDecision",
+          "module": "ResearchListedAcceptance.Decision",
+          "source": "research/listed-acceptance/formal/ResearchListedAcceptance/Decision.lean"
+        },
+        {
+          "name": "Math115.ListedAcceptance.draw_listed_code",
+          "module": "ResearchListedAcceptance.Decision",
+          "source": "research/listed-acceptance/formal/ResearchListedAcceptance/Decision.lean"
+        },
+        {
+          "name": "Math115.ListedAcceptance.translationValid_draw",
+          "module": "ResearchListedAcceptance.Decision",
+          "source": "research/listed-acceptance/formal/ResearchListedAcceptance/Decision.lean"
+        },
+        {
+          "name": "Math115.ListedAcceptance.draw_completionDecision",
+          "module": "ResearchListedAcceptance.Decision",
+          "source": "research/listed-acceptance/formal/ResearchListedAcceptance/Decision.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "listed-acceptance",
           "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]

@@ -22,9 +22,10 @@ pair is fixed by the margins and cutoff, independently of the current state.
 
 Singleton selected blocks are included. Zero original margins are permitted
 when the stated support and large-line hypotheses hold. Missing reference
-lines and empty defect support are outside this packet. The actual bounded
-trace transition still requires list-acceptance correspondence, correctly
-weighted exits and error accounting. Adaptive fresh words, output correction,
+lines and empty defect support are outside this packet. The subsequent
+[acceptance packet](../listed-acceptance/) closes the list decision interface.
+The actual bounded trace transition still requires correctly weighted exits
+and error accounting. Adaptive fresh words, output correction,
 degenerate branches and encoded cost composition also remain open. See the
 [completion bridge](../../docs/legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace).
 

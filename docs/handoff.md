@@ -1,10 +1,17 @@
 # Contributor handoff
 
+23 October 2026: the [executable acceptance interface](../research/listed-acceptance/)
+is now compiled and assumption-audited. The actual list Boolean on the old
+sampler's output agrees pointwise with the physical reference decision at
+arbitrary `U,L`, including hold. Next: the bounded trace transition with its
+correct clock, conductance-weighted exits and error budget. No complete
+sampler or new exponent is claimed.
+
 23 October 2026: the [computed-reference trace](../research/computed-reference-trace/)
 has compiled with a full environment/assumption audit. The existing aggregate
 bound holds at the first large row and column chosen by the program, through
-an explicit-reference family. The next bounded proof task is the list-based
-acceptance-decision correspondence. The newer complete sampler remains open.
+an explicit-reference family. The acceptance packet above closes the next
+pointwise interface. The newer complete sampler remains open.
 
 22 October 2026: the [physical completion adapter](../research/legacy-physical-completion/)
 now compiles and has a full assumption audit plus separate AI review. It connects
@@ -38,7 +45,7 @@ Next integration tasks:
 
 1. Use the [checked completion adapter](legacy-completion-backend.md) to prove
    the actual bounded defect-transition law. The computed reference choice
-   is now checked; next prove the list-based acceptance correspondence.
+   and list-based acceptance correspondence are now checked.
    Preserve the trace's proposal clock and weighted
    balanced-state exits, and charge capped exits and completion errors. The
    old full-state transition is not the newer trace.

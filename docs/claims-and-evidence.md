@@ -81,8 +81,27 @@ Both large-line lists and positive defect support must be nonempty, with
 `p≥2`; the variance bound also requires `U≥2,L≥7`. Zero original margins and
 singleton selected blocks are permitted under these hypotheses. No equality
 of different reference kernels, stronger coefficient, new complete sampler,
-independent review, default build or Comparator result is claimed. List
-acceptance and bounded weighted exits remain separate interfaces.
+independent review, default build or Comparator result is claimed. The
+following acceptance packet closes the pointwise list interface; bounded
+weighted exits remain open.
+
+## listed-acceptance
+
+The [acceptance correspondence](../research/listed-acceptance/) identifies the
+existing executable `translationValid` Boolean on the actual frozen
+`LatticeSampler.draw` output with physical translated nonnegativity at the
+computed reference pair. Its main `draw_completionDecision` theorem covers
+every exact-length word and optional physical proposal, including hold.
+The source and candidate use the actual physical capacity. Both computed
+large-line lists must be nonempty; singleton selected blocks are allowed.
+Cutoff and padding are arbitrary natural numbers. No adjacency, accuracy,
+padding lower bound or strict positivity of all original margins is assumed.
+
+Ordinary compilation and an environment audit passed, with four complete
+headline closures using only standard axioms and trusted reused imports.
+This closes the pointwise acceptance interface. It does not identify a
+proposal distribution, implement weighted exits, supply fresh adaptive bits
+or establish a new outer realizer, runtime exponent or Comparator result.
 
 ## aggregate-incidence-gap
 

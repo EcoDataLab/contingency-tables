@@ -1,0 +1,3 @@
+import ResearchListedAcceptance.Decision
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchListedAcceptance.Decision] headlines [Math115.ListedAcceptance.listed_completionDecision, Math115.ListedAcceptance.draw_listed_code, Math115.ListedAcceptance.translationValid_draw, Math115.ListedAcceptance.draw_completionDecision]

@@ -1,14 +1,22 @@
 # Research status
 
+23 October 2026: the [list acceptance correspondence](../research/listed-acceptance/)
+now compiles and passes its full assumption audit. At arbitrary `U,L`, the
+actual list Boolean on the frozen sampler's matrix output agrees with the
+physical completion decision on every exact-length word, including a missing
+proposal's hold branch. The remaining transition must implement the trace's
+clock and conductance-weighted balanced exits with bounded-error accounting.
+This closes acceptance; it does not close the new complete sampler.
+
 23 October 2026: the [computed-reference trace](../research/computed-reference-trace/)
 closes the reference-choice obligation. The existing aggregate bound now
 holds for every fixed large reference pair, including the first large row
 and column selected by the program. Its exact transition and stationary law
 compile; the environment audit checks four complete headline closures using
 only standard axioms. Different reference kernels are not asserted equal.
-Next: the list-based acceptance decision, followed by a bounded transition
-with weighted balanced-state exits. No gap exponent or complete-sampler
-claim changes; the earlier compilation scopes remain separate.
+The acceptance correspondence above is also checked. A bounded transition
+with weighted balanced-state exits remains open. No gap exponent or
+complete-sampler claim changes; the earlier compilation scopes remain separate.
 
 22 October 2026: the resumed bridge task closed one concrete interface.
 The [new physical completion adapter](../research/legacy-physical-completion/)

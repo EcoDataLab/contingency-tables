@@ -83,10 +83,19 @@ closes the reference-choice obligation by constructing the trace and proving
 the aggregate bound for every fixed large reference pair. Its computed
 specialization uses the same first large lines as the completion adapter.
 It retains the exact clock and weighted exits; no equality between different
-reference kernels is assumed. The next local obligation is pointwise
-correspondence between the list-based acceptance decision and the physical
-reference-table decision, including actual old-sampler outputs. This alone
-will not establish the bounded transition law.
+reference kernels is assumed. The [list acceptance packet](../research/listed-acceptance/)
+also closes the pointwise decision correspondence at arbitrary `U,L`. Its
+`translationValid_draw` identifies the actual list Boolean on the old
+sampler's matrix output, and `draw_completionDecision` identifies the
+accept/reject branch for every exact-length word and optional physical
+proposal. The no-proposal hold and singleton selected blocks are included.
+Neither adjacency, a padding lower bound nor accuracy is assumed for this
+identity. Both computed large-line lists remain nonempty.
+
+The remaining local obligation is the bounded transition law: implement the
+proposal clock and weighted exit distribution, then account for capped exit
+failure and approximate completions. Pointwise acceptance alone supplies
+neither that distribution nor its error budget.
 
 After that transition interface, the program still needs fresh adaptive words,
 initialization and mixing, the defect-law repair/padding/output correction,
