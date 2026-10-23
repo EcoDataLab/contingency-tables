@@ -47,10 +47,12 @@ Next integration tasks:
 2. Supply initialization where defect support is nonempty, and handle the
    proved empty-support branch, zero margins and empty completion blocks.
    [Zero-row/column removal and restoration](../research/physical-trace-zero-margins/)
-   now have a compiled uniformity and exact-TV correspondence for ordinary
-   tables, including empty dimensions and zero totals. Ordered list code and
-   physical cutoff/mask/branch transport remain open. Compose fresh bounded
-   outer retries after the output
+   now have checked [ordered list and matrix-code preprocessing](zero-margin-preprocessing.md),
+   exact uniform/TV restoration, and a reference-schedule wrapper using the
+   actual recomputed reduced cutoff and branch guards. This does not transport
+   physical states or kernels between shapes. A reduced defect start, general
+   repair and the remaining branch programs still need construction. Compose
+   fresh bounded outer retries after the output
    correction has been proved.
 3. Prove encoded realization and additional charged costs. Keep historical
    strict Comparator work separate. The [bridge note](legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace)

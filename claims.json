@@ -334,6 +334,50 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-zero-margin-lists",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-zero-margin-lists/attempt-02/verification.json",
+      "sha256": "305fcc8664fc6b206819956b33d40606f991c31ddb7bf64eb70698e23d584d55",
+      "label": "Ordered positive-margin filtering and exact law restoration",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-preparation",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-preparation/attempt-03/verification.json",
+      "sha256": "a86978c54f57dea5eeb768634061031c4161736c4fbfb586bed50402534d412d",
+      "label": "Computed reduced trace scales and branch specifications",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-zero-margin-preparation",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-zero-margin-preparation/attempt-02/verification.json",
+      "sha256": "bb625c7c5bfd4f4a2e854c8f88b8a0c8537d8d723932691a755685710ab8a94d",
+      "label": "Filtered-list reference schedule and exact deterministic restoration",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-zero-margin-matrix",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-zero-margin-matrix/attempt-01/verification.json",
+      "sha256": "16c1cd956de53fe0f5874e5d343ea59fefd075d63bb7bb3a50f1afc9aea9a0c1",
+      "label": "Literal matrix-list zero insertion and table-code correspondence",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -764,10 +808,11 @@
     {
       "id": "physical-trace-walk",
       "title": "Scheduled finite-word sampling of defect and completion pairs",
-      "english_claim": "The ideal incoming and weighted-exit row equals the computed-reference trace. The literal frozen completion draws, list decisions, capped rational proposal and bounded exits use a proved common step width. An explicit natural schedule chooses the walk length, all local precisions and a fresh terminal completion bank. For every natural h, the resulting finite-word program has total variation at most 2^-h from uniform on pairs of an actual defect and its physical completion. The mixing allowance is the proved aggregate coefficient, not a supplied error premise. A separate actual-state counterexample proves that equal totals, both large lists, U>=2, L>=7 and p>=2 do not alone supply a starting defect. A separate ordinary-table equivalence proves that removing zero-margin rows and columns and restoring them preserves uniformity and total variation exactly; it does not yet connect that reduction to the physical sampler branches.",
+      "english_claim": "The ideal incoming and weighted-exit row equals the computed-reference trace. The literal frozen completion draws, list decisions, capped rational proposal and bounded exits use a proved common step width. An explicit natural schedule chooses the walk length, all local precisions and a fresh terminal completion bank. For every natural h, the resulting finite-word program has total variation at most 2^-h from uniform on pairs of an actual defect and its physical completion. The mixing allowance is the proved aggregate coefficient, not a supplied error premise. A separate actual-state counterexample proves that equal totals, both large lists, U>=2, L>=7 and p>=2 do not alone supply a starting defect. Stable positive-margin list filtering now has an ordered retained-index correspondence, exact total preservation, literal matrix-list zero restoration and exact uniform/TV transport. Recomputed reduced dimensions determine the sharper cutoff and actual branch guards. In the reference branch, those guards discharge the scale/count/large-list premises of the same checked finite-word schedule from an actual reduced defect start. The output remains a reduced defect-labelled completion pair; general repair to an ordinary reduced table is still required before zero restoration applies.",
       "quantity": "TV to uniform defect and completion pairs ≤ 2⁻ʰ; explicit finite bit bank",
       "hypotheses": [
-        "Equal-total finite natural margins; both computed large-line lists nonempty; U≥2, L≥7, p≥2 small cells; supplied actual defect start fixed before the fresh word. Any natural h, including zero. Original zero margins and singleton selected completion blocks are allowed. All schedule parameters are explicit natural formulas; reserved width is T·B+F(h+2)."
+        "Equal-total finite natural margins; both computed large-line lists nonempty; U≥2, L≥7, p≥2 small cells; supplied actual defect start fixed before the fresh word. Any natural h, including zero. Original zero margins and singleton selected completion blocks are allowed. All schedule parameters are explicit natural formulas; reserved width is T·B+F(h+2).",
+        "The filtered-list reference wrapper uses its actual computed reference tag, equal original totals and a supplied reduced defect start. It recomputes U=11d(m+n-2), L=7 on positive-margin list lengths; it does not preserve the original physical chain or branch."
       ],
       "limitations": [
         "Ordinary compilation and full headline-closure audits with trusted imports; separate AI source review. The output retains a defect label and is not an original table. Initialization and empty-support branches, the general repair/acceptance map, outer retries, other completion branches and encoded costs remain open. The compiled empty-support example makes a universal initialization shortcut impossible under the current hypotheses. No new complete sampler/runtime exponent, default-target Linux rebuild or Comparator acceptance."
@@ -796,7 +841,16 @@
         "research/physical-trace-initialization-obstruction/README.md",
         "research/physical-trace-initialization-obstruction/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean",
         "research/physical-trace-zero-margins/README.md",
-        "research/physical-trace-zero-margins/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean"
+        "research/physical-trace-zero-margins/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean",
+        "research/physical-trace-zero-margin-lists/README.md",
+        "research/physical-trace-zero-margin-lists/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean",
+        "research/physical-trace-preparation/README.md",
+        "research/physical-trace-preparation/formal/ResearchPhysicalTraceJoin/TracePreparation.lean",
+        "research/physical-trace-zero-margin-preparation/README.md",
+        "research/physical-trace-zero-margin-preparation/formal/ResearchPhysicalTraceJoin/ZeroMarginPreparation.lean",
+        "research/physical-trace-zero-margin-matrix/README.md",
+        "research/physical-trace-zero-margin-matrix/formal/ResearchPhysicalTraceJoin/ZeroMarginMatrix.lean",
+        "docs/zero-margin-preprocessing.md"
       ],
       "headlines": [
         {
@@ -983,6 +1037,91 @@
           "name": "Math115.PhysicalTraceJoin.restoreZeroMarginsLaw_uniform_variation",
           "module": "ResearchPhysicalTraceJoin.ZeroMargins",
           "source": "research/physical-trace-zero-margins/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.positiveIndexEquiv_strictMono",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginLists",
+          "source": "research/physical-trace-zero-margin-lists/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.filteredMargin_at_retained",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginLists",
+          "source": "research/physical-trace-zero-margin-lists/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.zeroMarginListEquiv_extend_entry",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginLists",
+          "source": "research/physical-trace-zero-margin-lists/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.restoreZeroMarginListsLaw_uniform_variation",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginLists",
+          "source": "research/physical-trace-zero-margin-lists/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.traceCutoff_ofFn",
+          "module": "ResearchPhysicalTraceJoin.TracePreparation",
+          "source": "research/physical-trace-preparation/formal/ResearchPhysicalTraceJoin/TracePreparation.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.traceInputBranch_reference_iff",
+          "module": "ResearchPhysicalTraceJoin.TracePreparation",
+          "source": "research/physical-trace-preparation/formal/ResearchPhysicalTraceJoin/TracePreparation.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.traceInputBranch_noSmall_iff",
+          "module": "ResearchPhysicalTraceJoin.TracePreparation",
+          "source": "research/physical-trace-preparation/formal/ResearchPhysicalTraceJoin/TracePreparation.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.deterministicBranch_pointLaw_uniform",
+          "module": "ResearchPhysicalTraceJoin.TracePreparation",
+          "source": "research/physical-trace-preparation/formal/ResearchPhysicalTraceJoin/TracePreparation.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.traceBranch_retuning_fixture",
+          "module": "ResearchPhysicalTraceJoin.TracePreparation",
+          "source": "research/physical-trace-preparation/formal/ResearchPhysicalTraceJoin/TracePreparation.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.filteredSmallMask_entry",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginPreparation",
+          "source": "research/physical-trace-zero-margin-preparation/formal/ResearchPhysicalTraceJoin/ZeroMarginPreparation.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.positiveTraceReference_conditions",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginPreparation",
+          "source": "research/physical-trace-zero-margin-preparation/formal/ResearchPhysicalTraceJoin/ZeroMarginPreparation.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.positiveTraceReferenceWord_accuracy",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginPreparation",
+          "source": "research/physical-trace-zero-margin-preparation/formal/ResearchPhysicalTraceJoin/ZeroMarginPreparation.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.positiveTraceDeterministic_restored_uniform",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginPreparation",
+          "source": "research/physical-trace-zero-margin-preparation/formal/ResearchPhysicalTraceJoin/ZeroMarginPreparation.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.positiveTraceBranch_retuning_fixture",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginPreparation",
+          "source": "research/physical-trace-zero-margin-preparation/formal/ResearchPhysicalTraceJoin/ZeroMarginPreparation.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.retainedRank_at_positive",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginMatrix",
+          "source": "research/physical-trace-zero-margin-matrix/formal/ResearchPhysicalTraceJoin/ZeroMarginMatrix.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.restoreZeroMarginMatrix_code",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginMatrix",
+          "source": "research/physical-trace-zero-margin-matrix/formal/ResearchPhysicalTraceJoin/ZeroMarginMatrix.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.restoreZeroMarginMatrix_row_length",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginMatrix",
+          "source": "research/physical-trace-zero-margin-matrix/formal/ResearchPhysicalTraceJoin/ZeroMarginMatrix.lean"
         }
       ],
       "evidence": [
@@ -1028,6 +1167,22 @@
         },
         {
           "receipt": "physical-trace-zero-margins",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-zero-margin-lists",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-preparation",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-zero-margin-preparation",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-zero-margin-matrix",
           "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]

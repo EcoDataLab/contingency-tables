@@ -27,9 +27,14 @@ The [zero-margin table-law interface](../research/physical-trace-zero-margins/)
 now compiles and passes its assumption audit. Literal restriction to positive
 rows and columns and zero restoration are inverse; restoration preserves
 uniformity and total variation exactly, including zero totals and empty
-dimensions. Ordered list preprocessing and its connection to physical
-cutoffs, masks and branch selection remain to be implemented and proved.
-All five earlier failed attempts remain unchanged.
+dimensions. The [ordered preprocessing bridge](zero-margin-preprocessing.md)
+now also compiles and passes its audits: stable positive filtering preserves
+position order and totals, literal matrix-list restoration matches the table
+equivalence, and recomputed scales and branch guards feed the checked reference
+schedule on the reduced margins. Its actual reduced defect start remains
+an input; its output is still a reduced defect/completion pair. General
+repair is needed before ordinary-table restoration applies. All historical
+failures remain unchanged.
 
 General repair/acceptance to original tables, initialization and other
 branches, outer retries and encoded costs remain open. No complete sampler

@@ -189,8 +189,16 @@ costs. The reviewed general output correction assumes positive original
 margins. The [zero-margin equivalence](../research/physical-trace-zero-margins/)
 now proves literal ordinary-table restriction/zero restoration and exact
 uniform-law/TV transport, including empty dimensions and zero totals.
-It does not yet supply ordered list preprocessing, physical cutoff/mask
-transport, a starting defect or branch integration.
+The [ordered preprocessing bridge](zero-margin-preprocessing.md) now supplies
+literal positive filtering, its ordered index correspondence and matrix-list
+zero restoration. A checked wrapper recomputes reduced dimensions, cutoff,
+catalog and branch guards and calls the existing reference schedule on those
+same reduced margins. It derives the scale/count/large-list conditions from
+the reference tag; an actual reduced defect start remains required. Its
+output is still a reduced labelled joint, so general repair must precede
+ordinary-table restoration. Other branch programs and encoded costs remain
+open. No equality of physical states or trace kernels across retuned shapes
+is asserted.
 No complete new sampler or runtime theorem is claimed.
 
 ## A uniform reservation for adaptive calls
