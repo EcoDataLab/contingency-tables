@@ -323,6 +323,17 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-zero-margins",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-zero-margins/attempt-06/verification.json",
+      "sha256": "17a74724c56eb4fd138b4ca73c60404c7d1637da350bae678689de08d8f39b35",
+      "label": "Explicit zero-margin table restriction and probability-law restoration",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -753,7 +764,7 @@
     {
       "id": "physical-trace-walk",
       "title": "Scheduled finite-word sampling of defect and completion pairs",
-      "english_claim": "The ideal incoming and weighted-exit row equals the computed-reference trace. The literal frozen completion draws, list decisions, capped rational proposal and bounded exits use a proved common step width. An explicit natural schedule chooses the walk length, all local precisions and a fresh terminal completion bank. For every natural h, the resulting finite-word program has total variation at most 2^-h from uniform on pairs of an actual defect and its physical completion. The mixing allowance is the proved aggregate coefficient, not a supplied error premise. A separate actual-state counterexample proves that equal totals, both large lists, U>=2, L>=7 and p>=2 do not alone supply a starting defect.",
+      "english_claim": "The ideal incoming and weighted-exit row equals the computed-reference trace. The literal frozen completion draws, list decisions, capped rational proposal and bounded exits use a proved common step width. An explicit natural schedule chooses the walk length, all local precisions and a fresh terminal completion bank. For every natural h, the resulting finite-word program has total variation at most 2^-h from uniform on pairs of an actual defect and its physical completion. The mixing allowance is the proved aggregate coefficient, not a supplied error premise. A separate actual-state counterexample proves that equal totals, both large lists, U>=2, L>=7 and p>=2 do not alone supply a starting defect. A separate ordinary-table equivalence proves that removing zero-margin rows and columns and restoring them preserves uniformity and total variation exactly; it does not yet connect that reduction to the physical sampler branches.",
       "quantity": "TV to uniform defect and completion pairs ≤ 2⁻ʰ; explicit finite bit bank",
       "hypotheses": [
         "Equal-total finite natural margins; both computed large-line lists nonempty; U≥2, L≥7, p≥2 small cells; supplied actual defect start fixed before the fresh word. Any natural h, including zero. Original zero margins and singleton selected completion blocks are allowed. All schedule parameters are explicit natural formulas; reserved width is T·B+F(h+2)."
@@ -783,7 +794,9 @@
         "research/physical-trace-schedule/README.md",
         "research/physical-trace-schedule/formal/ResearchPhysicalTraceJoin/Schedule.lean",
         "research/physical-trace-initialization-obstruction/README.md",
-        "research/physical-trace-initialization-obstruction/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean"
+        "research/physical-trace-initialization-obstruction/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean",
+        "research/physical-trace-zero-margins/README.md",
+        "research/physical-trace-zero-margins/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean"
       ],
       "headlines": [
         {
@@ -950,6 +963,26 @@
           "name": "Math115.PhysicalTraceJoin.obstruction_no_defect_start",
           "module": "ResearchPhysicalTraceJoin.InitializationObstruction",
           "source": "research/physical-trace-initialization-obstruction/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.zeroMarginEquiv_restrict_entry",
+          "module": "ResearchPhysicalTraceJoin.ZeroMargins",
+          "source": "research/physical-trace-zero-margins/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.zeroMarginEquiv_extend_entry",
+          "module": "ResearchPhysicalTraceJoin.ZeroMargins",
+          "source": "research/physical-trace-zero-margins/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.restoreZeroMarginsLaw_uniform",
+          "module": "ResearchPhysicalTraceJoin.ZeroMargins",
+          "source": "research/physical-trace-zero-margins/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.restoreZeroMarginsLaw_uniform_variation",
+          "module": "ResearchPhysicalTraceJoin.ZeroMargins",
+          "source": "research/physical-trace-zero-margins/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean"
         }
       ],
       "evidence": [
@@ -991,6 +1024,10 @@
         },
         {
           "receipt": "physical-trace-initialization-obstruction",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-zero-margins",
           "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]

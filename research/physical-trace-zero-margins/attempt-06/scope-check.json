@@ -1,0 +1,7 @@
+{
+  "original_source_sha256": "66d61f6acb91de696adbcfdd7622137e727f881e5bf3cde12913d222e3b3c921",
+  "final_source_sha256": "d1929d43ba3de90388fe6c3744b82c59cdd319fd8045191b5afa430bfb06d12a",
+  "original_statements_unchanged": true,
+  "new_declarations": [],
+  "scope": "Original lemma/theorem/def headers and hypotheses compared; new helpers listed. Aliases and mathematical definition bodies require the accompanying source review."
+}

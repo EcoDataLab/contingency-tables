@@ -46,11 +46,10 @@ Next integration tasks:
    repair packet covers an all-small branch and cannot fill this interface.
 2. Supply initialization where defect support is nonempty, and handle the
    proved empty-support branch, zero margins and empty completion blocks.
-   The [zero-row/column law candidate](../research/physical-trace-zero-margins/)
-   retains its exact source and five failed compile attempts. Its outstanding
-   error is the explicit inverse-entry formula; it has no successful module
-   compilation or assumption audit. After that is checked, ordered list code
-   and physical cutoff/mask transport still remain. Compose fresh bounded
+   [Zero-row/column removal and restoration](../research/physical-trace-zero-margins/)
+   now have a compiled uniformity and exact-TV correspondence for ordinary
+   tables, including empty dimensions and zero totals. Ordered list code and
+   physical cutoff/mask/branch transport remain open. Compose fresh bounded
    outer retries after the output
    correction has been proved.
 3. Prove encoded realization and additional charged costs. Keep historical

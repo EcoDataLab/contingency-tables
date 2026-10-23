@@ -1,5 +1,5 @@
 {
-  "status": "compilation_failed",
+  "status": "passed",
   "module": "ResearchPhysicalTraceJoin.ZeroMargins",
   "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
   "attempts": [
@@ -32,7 +32,16 @@
       "source_sha256": "0437fa3a69f9b4cd779369ea62ee820084f5ffd68288b4a60ef7a5763340edeb",
       "returncode": 1,
       "seconds": 89.39944462478161
+    },
+    {
+      "attempt": "attempt-06",
+      "source_sha256": "d1929d43ba3de90388fe6c3744b82c59cdd319fd8045191b5afa430bfb06d12a",
+      "returncode": 0,
+      "seconds": 101.6434222087264,
+      "audit_returncode": 0
     }
   ],
-  "scope": "Candidate sources and failed ordinary compilation; no compiled theorem or audit acceptance."
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay. Earlier failed attempts remain unchanged.",
+  "verified_attempt": "attempt-06",
+  "verification": "attempt-06/verification.json"
 }

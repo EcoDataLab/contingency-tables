@@ -1,24 +1,8 @@
 # Zero-margin removal and restoration of table laws
 
-**Compilation failed; no verified theorem is claimed.** This candidate is
-`ResearchPhysicalTraceJoin.ZeroMargins`, namespace `Math115.PhysicalTraceJoin`.
-The final [source](formal/ResearchPhysicalTraceJoin/ZeroMargins.lean) and all
-five failed compilation attempts are retained. It is excluded from the
-verified claims ledger and standard build target. No assumption audit ran.
-
-The remaining compiler error is confined to `zeroMarginEquiv_extend_entry`:
-after case analysis, Lean leaves the inverse of the composed equivalence
-unreduced. The generic subtype-instance mismatch from earlier attempts was
-resolved. The rest of the file reports no elaboration errors in attempt 05,
-but that does not constitute successful module compilation or an axiom audit.
-The [final diagnostic](attempt-05/compile.stdout.txt) and
-[attempt inventory](attempts.json) give the exact evidence. A next repair can
-try controlled reduction of `Equiv.trans` and the inverse projections before
-simplifying the nested conditionals; this suggestion has not been tested.
-
-The descriptions below specify the candidate's intended theorem. The
-separate [AI source review](AI-SOURCE-REVIEW.md) supports its mathematical
-interpretation; it does not override the failed compiler result.
+23 October 2026. The [Lean module](formal/ResearchPhysicalTraceJoin/ZeroMargins.lean), `ResearchPhysicalTraceJoin.ZeroMargins`,
+passes ordinary compilation and its full assumption audit. Separate
+AI source review found no semantic objection.
 
 For arbitrary finite row and column types and natural margins, set
 
@@ -26,7 +10,7 @@ For arbitrary finite row and column types and natural margins, set
 Iplus = {i | 0 < r_i},   Jplus = {j | 0 < c_j}.
 ```
 
-The draft constructs an explicit equivalence
+The construction supplies an explicit equivalence
 
 ```
 Table(r,c) ≃ Table(r restricted to Iplus, c restricted to Jplus).
@@ -59,7 +43,7 @@ TV(restoreLaw(q), uniform original tables)
   = TV(q, uniform restricted tables).
 ```
 
-| English claim | Candidate Lean statement | Explicit hypotheses |
+| English claim | Lean statement | Explicit hypotheses |
 |---|---|---|
 | Entries in zero-margin rows or columns vanish. | `table_entry_zero_of_row_zero`, `table_entry_zero_of_column_zero` | Supplied feasible ordinary table; corresponding original margin zero. |
 | Restriction and explicit zero extension are inverse. | `zeroMarginEquiv`, `zeroMarginEquiv_restore_restrict`, `zeroMarginEquiv_restrict_restore` | Arbitrary finite row/column types and natural margins. |
@@ -74,19 +58,31 @@ cutoff or physical small mask, prove nonempty defect support, initialize a
 defect walk, repair a physical joint, or complete the original-table sampler.
 No finite-word implementation or runtime claim is supplied.
 
-## Rechecking the candidate
+## Evidence and replay
 
-Use the pinned Lean 4.34.1 toolchain and prepared dependency objects for
-`OAI.Combinatorics.ContingencyTables.Transport.RectangleCompletions` and
-`OAI.Combinatorics.ContingencyTables.Machines.FiniteFairBits`. Run the command from this packet directory. The recorded
-runs used two compiler threads, an 8 GiB memory limit and `autoImplicit=false`:
+Ordinary Lean compilation passed in 101.64 seconds;
+the compiled-environment audit passed in 157.24 seconds. The
+[receipt](attempt-06/verification.json) binds the source, compiled object,
+all module declarations and 4 complete headline dependency closures.
+Only `propext`, `Classical.choice` and `Quot.sound` occur. The dependency
+objects match the recorded accepted or newly compiled input hashes.
+
+The pinned compiler and reused baseline objects remain trusted. This is
+separate from the historical default-target Linux build and strict Comparator
+task. [AI source review](AI-SOURCE-REVIEW.md) is not human review or independent
+kernel verification. All five failed compiler attempts are retained unchanged;
+the [scope check](attempt-06/scope-check.json) and [proof diff](attempt-06/proof-only.diff)
+record proof repairs. Source and compressed audit bytes are unchanged;
+public diagnostic paths and trailing whitespace are projected.
+
+Prepare the pinned Lean compiler and the dependency objects named by this
+module's imports, including `ResearchAudit.EnvironmentAudit`, then run:
 
 ```sh
-LEAN_PATH=<prepared-object-roots> lean -j2 -M8192 -DautoImplicit=false \
-  formal/ResearchPhysicalTraceJoin/ZeroMargins.lean
+LEAN_PATH=<prepared-object-roots> bash REPRODUCE.sh /absolute/path/to/new-output-directory
 ```
 
-This command is expected to fail on the retained candidate. After a proof
-repair, require successful full compilation and a fresh environment audit
-before adding any theorem to the verified claims. The source hash and
-compiler hash are recorded in each attempt's compilation receipt.
+The script compiles this additive module and audits its loaded environment.
+It downloads or rebuilds no dependencies. The script is syntax-checked; the
+saved run used the same source and compiler options. The claims-ledger
+validator checks the saved source, statements, closures and object inventory.

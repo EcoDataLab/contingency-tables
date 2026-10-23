@@ -78,6 +78,7 @@ theorem zeroMarginEquiv_extend_entry (X : PositiveTable r c) (i : I) (j : J) :
       if hi : 0 < r i then if hj : 0 < c j then X.val ⟨i, hi⟩ ⟨j, hj⟩ else 0 else 0 := by
   by_cases hi : 0 < r i <;> by_cases hj : 0 < c j <;>
     simp [zeroMarginEquiv, zeroMarginSupportedEquiv, rectangleCompletionEquiv, Equiv.symm,
+      Equiv.trans,
       -Equiv.invFun_as_coe, rectangleExtend, hi, hj]
 
 theorem zeroMarginEquiv_restore_restrict (X : Table r c) :

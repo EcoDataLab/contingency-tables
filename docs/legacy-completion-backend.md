@@ -186,7 +186,11 @@ The remaining interface is general repair/acceptance from this labelled
 joint to original tables, initialization and empty-support handling, fresh
 outer retries, empty completion blocks and other branches, and encoded
 costs. The reviewed general output correction assumes positive original
-margins; zero-row/column preprocessing is not supplied by this bridge.
+margins. The [zero-margin equivalence](../research/physical-trace-zero-margins/)
+now proves literal ordinary-table restriction/zero restoration and exact
+uniform-law/TV transport, including empty dimensions and zero totals.
+It does not yet supply ordered list preprocessing, physical cutoff/mask
+transport, a starting defect or branch integration.
 No complete new sampler or runtime theorem is claimed.
 
 ## A uniform reservation for adaptive calls

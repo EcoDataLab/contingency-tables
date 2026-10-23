@@ -23,10 +23,13 @@ the remaining branch conditions but has no actual defect. Separate exact
 finite enumeration finds 19 physical completions and five original tables.
 Thus a complete sampler needs an empty-support branch or suitable preprocessing.
 
-The [zero-margin law candidate](../research/physical-trace-zero-margins/)
-remains unverified: its last compilation fails at the explicit zero-restoration
-entry formula. The exact sources and five failed attempts are retained; no
-assumption audit or verified claim is attached to this candidate.
+The [zero-margin table-law interface](../research/physical-trace-zero-margins/)
+now compiles and passes its assumption audit. Literal restriction to positive
+rows and columns and zero restoration are inverse; restoration preserves
+uniformity and total variation exactly, including zero totals and empty
+dimensions. Ordered list preprocessing and its connection to physical
+cutoffs, masks and branch selection remain to be implemented and proved.
+All five earlier failed attempts remain unchanged.
 
 General repair/acceptance to original tables, initialization and other
 branches, outer retries and encoded costs remain open. No complete sampler
