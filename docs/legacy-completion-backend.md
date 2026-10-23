@@ -1,6 +1,6 @@
 # Completion at constant padding using the frozen complete sampler
 
-Updated 22 October 2026. The compiled complete d¹⁷ sampler supplies accurate
+Updated 23 October 2026. The compiled complete d¹⁷ sampler supplies accurate
 completions for the new outer `L=7` construction. Its contract accepts arbitrary
 equal-total natural margins; its own internal padding is independent of the
 outer padding. A new [compiled physical adapter](../research/legacy-physical-completion/)
@@ -78,11 +78,15 @@ the weighted exit `S(b,e)/s_b`, charge capped exit failures and approximate
 completion errors, and use the correct rational clock or certified dyadic
 rounding. Uniform neighbor exits would give the wrong law.
 
-There is also a reference-choice obligation: the canonical accepted
-conductance chooses reference lines abstractly, whereas the program uses the
-first computed large lines. The trace theorem must be parameterized by the
-computed pair, or kernel equality must be proved. Accurate completions under
-both coordinate systems alone do not establish that equality.
+The [computed-reference packet](../research/computed-reference-trace/) now
+closes the reference-choice obligation by constructing the trace and proving
+the aggregate bound for every fixed large reference pair. Its computed
+specialization uses the same first large lines as the completion adapter.
+It retains the exact clock and weighted exits; no equality between different
+reference kernels is assumed. The next local obligation is pointwise
+correspondence between the list-based acceptance decision and the physical
+reference-table decision, including actual old-sampler outputs. This alone
+will not establish the bounded transition law.
 
 After that transition interface, the program still needs fresh adaptive words,
 initialization and mixing, the defect-law repair/padding/output correction,

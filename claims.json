@@ -125,6 +125,17 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "computed-reference-trace",
+      "format": "compiled_environment",
+      "path": "research/computed-reference-trace/attempt-03/verification.json",
+      "sha256": "787abec2d05b909f62957989a2b8a87b2d0405aaae94a49f574d3a321cf01c3d",
+      "label": "Aggregate physical trace at the computed reference pair",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -222,7 +233,7 @@
         "Natural margins and U,L,h; an actual positive physical state at the source capacity; both computed large-line lists nonempty. Accuracy uses a uniform word of the state-dependent computed length. Singleton blocks are included."
       ],
       "limitations": [
-        "Compiled semantic adapter to the old executable draw. No assumed accuracy or density condition. Empty blocks, fresh adaptive words, canonical trace/reference-choice correspondence, revised output correction and encoded costs remain separate. No new complete sampler or exponent."
+        "Compiled semantic adapter to the old executable draw. No assumed accuracy or density condition. Empty blocks, fresh adaptive words, bounded trace transitions, revised output correction and encoded costs remain separate. No new complete sampler or exponent."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -255,6 +266,52 @@
       "evidence": [
         {
           "receipt": "legacy-physical-completion",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "computed-reference-trace",
+      "title": "Trace bound at the computed reference pair",
+      "english_claim": "The actual rational defect trace and aggregate Poincare bound hold for every fixed large reference pair, including the first large row and column selected in computed list order. Its transition retains conductance-weighted balanced exits.",
+      "quantity": "Var ≤ 32p³ aggregateCT · energy; exact trace transition",
+      "hypotheses": [
+        "Natural finite margins; both computed large-line lists nonempty; nonempty positive defect support; p≥2 small cells; U≥2 and L≥7 for the variance bound. The reference pair is fixed by margins and cutoff."
+      ],
+      "limitations": [
+        "Ordinary Lean compile and full headline closures; trusted reused imports. Same aggregate coefficient, with no equality assertion between different reference kernels. List acceptance, bounded weighted exits, adaptive words and complete sampler integration remain open. No new exponent or Comparator acceptance."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "research/computed-reference-trace/README.md",
+        "research/computed-reference-trace/formal/ResearchComputedReference/Trace.lean",
+        "docs/legacy-completion-backend.md"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.ComputedReferenceTrace.computedReferenceTrace_poincare_aggregate",
+          "module": "ResearchComputedReference.Trace",
+          "source": "research/computed-reference-trace/formal/ResearchComputedReference/Trace.lean"
+        },
+        {
+          "name": "Math115.ComputedReferenceTrace.computedReferenceTrace_transition",
+          "module": "ResearchComputedReference.Trace",
+          "source": "research/computed-reference-trace/formal/ResearchComputedReference/Trace.lean"
+        },
+        {
+          "name": "Math115.ComputedReferenceTrace.computedReferenceTrace_pi",
+          "module": "ResearchComputedReference.Trace",
+          "source": "research/computed-reference-trace/formal/ResearchComputedReference/Trace.lean"
+        },
+        {
+          "name": "Math115.ComputedReferenceTrace.referenceTrace_canonical_P",
+          "module": "ResearchComputedReference.Trace",
+          "source": "research/computed-reference-trace/formal/ResearchComputedReference/Trace.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "computed-reference-trace",
           "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]

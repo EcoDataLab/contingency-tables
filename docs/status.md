@@ -1,12 +1,22 @@
 # Research status
 
+23 October 2026: the [computed-reference trace](../research/computed-reference-trace/)
+closes the reference-choice obligation. The existing aggregate bound now
+holds for every fixed large reference pair, including the first large row
+and column selected by the program. Its exact transition and stationary law
+compile; the environment audit checks four complete headline closures using
+only standard axioms. Different reference kernels are not asserted equal.
+Next: the list-based acceptance decision, followed by a bounded transition
+with weighted balanced-state exits. No gap exponent or complete-sampler
+claim changes; the earlier compilation scopes remain separate.
+
 22 October 2026: the resumed bridge task closed one concrete interface.
 The [new physical completion adapter](../research/legacy-physical-completion/)
 connects the actual old sampler output to arbitrary-`U,L` physical completions,
 including `L=7`, in the both-large branch. Pointwise feasible output and
 TV≤2^-h compile; four full dependency closures contain only standard axioms,
-and separate AI review passed. The next obstruction is a bounded transition
-with the canonical defect trace's reference choice, proposal clock and weighted
+and separate AI review passed. The remaining transition requires the
+defect trace's proposal clock and weighted
 balanced-state exit; [details and remaining obligations](legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace)
 are explicit. No complete-sampler exponent changed. The six-hour automation
 remains paused; no new Comparator attempt was launched.

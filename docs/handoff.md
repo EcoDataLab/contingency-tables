@@ -1,5 +1,11 @@
 # Contributor handoff
 
+23 October 2026: the [computed-reference trace](../research/computed-reference-trace/)
+has compiled with a full environment/assumption audit. The existing aggregate
+bound holds at the first large row and column chosen by the program, through
+an explicit-reference family. The next bounded proof task is the list-based
+acceptance-decision correspondence. The newer complete sampler remains open.
+
 22 October 2026: the [physical completion adapter](../research/legacy-physical-completion/)
 now compiles and has a full assumption audit plus separate AI review. It connects
 the old executable sampler to actual arbitrary-`U,L` completion fibers in the
@@ -31,8 +37,9 @@ mathematical argument; the physical theorem still needs Lean formalization.
 Next integration tasks:
 
 1. Use the [checked completion adapter](legacy-completion-backend.md) to prove
-   the actual bounded defect-transition law. Resolve the canonical versus
-   computed reference choice, preserve the trace's proposal clock and weighted
+   the actual bounded defect-transition law. The computed reference choice
+   is now checked; next prove the list-based acceptance correspondence.
+   Preserve the trace's proposal clock and weighted
    balanced-state exits, and charge capped exits and completion errors. The
    old full-state transition is not the newer trace.
 2. Prove the adaptive fresh-word reservation and call cap, then compose

@@ -61,10 +61,28 @@ are explicit; singleton blocks are included. Accuracy and cap redundancy are
 derived, not premises.
 
 Its ordinary Lean compile, environment audit and separate AI source/receipt
-review are an additive evidence scope. The canonical trace's clock, reference
-choice and weighted star exits still need a finite transition proof, followed
+review are an additive evidence scope. The trace's clock and weighted star
+exits still need a finite transition proof, followed
 by adaptive words, output/schedule composition and encoded costs. No new
 complete sampler, exponent, Linux default build or Comparator result follows.
+
+## computed-reference-trace
+
+The [explicit-reference family](../research/computed-reference-trace/) closes
+the mismatch between abstract and computed reference selection. Its actual
+trace has the aggregate bound `Var≤32p³ aggregateCT·energy` for every fixed
+large reference pair, including the first computed large row and column.
+The exact transition retains `Q=4p−3` and conductance-weighted balanced exits;
+stationary mass is the physical completion weight normalized over defects.
+Its ordinary compile and environment audit include four full headline
+dependency closures using only standard axioms.
+
+Both large-line lists and positive defect support must be nonempty, with
+`p≥2`; the variance bound also requires `U≥2,L≥7`. Zero original margins and
+singleton selected blocks are permitted under these hypotheses. No equality
+of different reference kernels, stronger coefficient, new complete sampler,
+independent review, default build or Comparator result is claimed. List
+acceptance and bounded weighted exits remain separate interfaces.
 
 ## aggregate-incidence-gap
 
