@@ -1,26 +1,33 @@
 # Research status
 
-23 October 2026: the [finite-word defect walk](../research/physical-trace-walk/)
-now connects the stronger trace to the frozen complete sampler used for its
-completion calls. The ideal composed row equals the computed-reference
-trace, including diagonal and zero-star cases. Actual rational proposals,
-list acceptance and bounded weighted exits give one-step TV≤2^-t.
-A proved [uniform width](../research/physical-trace-width/) lets every step
-use a fresh fixed-size block; exactly T such blocks give error≤T·2^-t from
-T ideal steps. All new interface modules compile and pass full headline
-assumption audits; separate AI source review passed. Failed attempts remain
-visible. Zero original margins are allowed within the both-large branch.
+23 October 2026: the stronger trace now has a
+[scheduled finite-word construction](../research/physical-trace-schedule/)
+with total variation at most **2^-h** from uniform on pairs consisting of
+a defect and its physical completion. Its explicit natural schedule pays
+for trace mixing, accumulated transition error and one fresh terminal
+completion. It uses the frozen complete sampler for each completion call;
+no completion accuracy or desired total error is assumed. Ordinary compilation,
+full headline assumption audits and separate AI source reviews passed.
+Only standard axioms occur in the audited closures; reused inputs remain trusted.
 
-The [convergence theorem](../research/physical-trace-mixing/) also compiles
-and passes its audit: defect-law TV≤T·2^-t+Bmass·exp(−T/K), where
-K=32p³·aggregateCT and Bmass is the proved full physical mass allowance.
-The target normalizes completion counts over defects only.
+The underlying [walk](../research/physical-trace-walk/) and
+[mixing](../research/physical-trace-mixing/) results identify the actual
+computed-reference trace and use its proved aggregate coefficient. The
+[terminal law](../research/physical-trace-terminal/) retains the defect label.
+Both computed large-line lists, U≥2, L≥7, p≥2 and a supplied actual starting
+defect remain explicit; original zero margins are allowed in this branch.
 
-The start is still a supplied actual defect. Initialization, a sufficient
-numerical schedule, table-output correction, other completion branches,
-outer retries and encoded costs remain separate. No complete sampler or
-runtime exponent changed, and no new default-target Linux or Comparator
-acceptance is claimed. The recurring schedule remains paused.
+The [initialization obstruction](../research/physical-trace-initialization-obstruction/)
+also compiles and passes its audit: r=[0,4,4], c=[4,4], U=2, L=7 satisfies
+the remaining branch conditions but has no actual defect. Separate exact
+finite enumeration finds 19 physical completions and five original tables.
+Thus a complete sampler needs an empty-support branch or suitable preprocessing.
+
+General repair/acceptance to original tables, initialization and other
+branches, outer retries and encoded costs remain open. No complete sampler
+or runtime exponent changed. Historical default-target Linux and Comparator
+scopes are unchanged; failed proof attempts are retained. The recurring
+schedule remains paused.
 
 The [actual aggregate defect trace](aggregate-defect-trace.md) now has compiled
 coefficient **`34848d⁵(m+n−2)³`** at `U=11d(m+n−2),L=7`. Its squared aspect
@@ -127,8 +134,9 @@ a conservative quantitative closure, with no established runtime advantage
 over upstream and no integration of the newer d⁸/d^6.5 chain.
 The [arbitrary-margin completion backend](legacy-completion-backend.md)
 now has a compiled physical adapter at outer `L=7` in the both-large branch.
-Adaptive word allocation, canonical trace transition correspondence and the
-revised outer encoded sampler still need assembly.
+Canonical trace correspondence, fresh finite-word composition and the defect-joint
+accuracy schedule are now checked. Original-table correction, missing branches and
+the revised outer encoded sampler still need assembly.
 
 The [versioned Comparator guard](../research/strict-sampler-checkpoints/versioned-guard-v2/)
 passed an actual bounded VM experiment: the original whole metadata guard
@@ -178,7 +186,7 @@ The [repair-and-accept update](repair-output.md) now includes compiled proofs of
 
 The [unit defect-chain derivation](defect-trace.md) now covers positive ordinary margins with either entire side below `U`. It keeps the `2500d^16` rational and `5000d^16` dyadic allowances. The new [variable-capacity proof](rectangular-defect.md) gives `20000d^(31/2)` rational and `40000d^(31/2)` dyadic for **arbitrary aspect ratios when both sides are small**. Its [boxed hard-limit bridge](../research/rectangular-defect/) freshly compiled with an environment-derived audit and full headline dependency closure. Separate AI review checked the physical capacities, auxiliary repair, edge ownership and final constants; complete physical Lean assembly remains open.
 
-The [general weighted trace](general-defect-trace.md) gives `20000d^16` rational and `40000d^16` dyadic at the ideal scales, including nonempty completion blocks. Balanced vertices have no mutual edges, and a five-family neighbor partition enables accepted star exits in at most two expected completion-oracle calls. The [new joint output correction](general-defect-output.md) produces uniform accepted tables with stationary success at least `1/(8p)` for positive margins. Independent AI review and exact finite checks passed. The subsequent bounded transition/oracle components above close that implementation step; the complete outer schedule, new physical Lean statements and encoded integration remain open. These results do not replace the compiled general `80000d^17` theorem.
+The [general weighted trace](general-defect-trace.md) gives `20000d^16` rational and `40000d^16` dyadic at the ideal scales, including nonempty completion blocks. Balanced vertices have no mutual edges, and a five-family neighbor partition enables accepted star exits in at most two expected completion-oracle calls. The [new joint output correction](general-defect-output.md) produces uniform accepted tables with stationary success at least `1/(8p)` for positive margins. Independent AI review and exact finite checks passed. The subsequent bounded transition/oracle components above close that implementation step; the scheduled physical defect joint is now compiled; original-table correction, outer retries and encoded integration remain open. These results do not replace the compiled general `80000d^17` theorem.
 
 The [direct defect sampler](direct-defect-sampler.md) implements the one-side-small unit branch without enumeration, using bounded bits and retries, a fixed feasible fallback, and separately reported mixing/rounding errors. A [complete both-small schedule](defect-sampler-composition.md) closes the mathematical error composition and bounds walk/terminal integer operations by `O(d^18 Λ log d+d^17 Λ²)`, with `Λ=1+log(1/ε)`. This is not a compiled bit-machine bound or evidence of practical mixing speed. The [extension validation record](../reports/defect-extensions-validation.json) records 359 passed tests, one optional SciPy skip, the full `make verify` workflow, exact bridge/weighted-terminal experiments, and feasible 20×5/5×20 execution examples. The examples use the vacuous mixing allowance one and make no accuracy claim.
 

@@ -13,28 +13,34 @@ receipts retain their narrower scope.
 
 ## physical-trace-walk
 
-The [finite-word walk](../research/physical-trace-walk/) realizes T actual
-bounded trace transitions on exactly T·B reserved fair bits. Its law differs
-from T ideal trace steps by at most T·2^-t under the concrete schedule. The
-[ideal-row identity](../research/physical-trace-ideal/) ties this comparison
-to the same computed-reference chain, including its diagonal. The
-[actual composition](../research/physical-trace-actual/) charges exit error
-only on positive ideal incoming support. The
-[fresh-word law](../research/physical-trace-word/),
-[backend width bound](../research/physical-completion-width/) and
-[uniform step width](../research/physical-trace-width/) derive the reservation.
+The [scheduled literal program](../research/physical-trace-schedule/) now
+has TV≤2^-h to uniform on defect-labelled physical completion pairs. It
+uses the [exact ideal row](../research/physical-trace-ideal/),
+[bounded actual transition](../research/physical-trace-actual/),
+[fresh-word realization](../research/physical-trace-word/),
+[common completion bound](../research/physical-completion-width/),
+[uniform step width](../research/physical-trace-width/),
+[repeated walk](../research/physical-trace-walk/),
+[proved mixing coefficient](../research/physical-trace-mixing/) and
+[fresh terminal completion](../research/physical-trace-terminal/).
 
-Equal totals, both large-line lists nonempty, p≥2, L≥7 and a supplied actual
-defect start remain explicit. U,t,T may be zero; original zero margins are
-permitted. The [mixing packet](../research/physical-trace-mixing/) also derives
-TV≤T·2^-t+Bmass·exp(−T/K) to the completion-count defect law, with
-K=32p³·aggregateCT and Bmass=(M+dL+U+3)^(2d), under U≥2. The stationary
-normalizer includes only defects. This finite-(T,t) result does not assert
-exact stationarity of the approximate kernel. Initialization, a sufficient
-numerical schedule, terminal correction and encoded costs remain open.
-These additive modules compiled and passed full headline-closure audits with only standard
-axioms and trusted baseline imports. Separate AI source reviews are not
-human or independent kernel review. Historical Linux and Comparator scopes
+With base=M+dL+U+3 and G the natural form of 32p³·aggregateCT, it chooses
+T=G·[h+2+2d·clog₂(base)], t=h+2+clog₂(T), hTerm=h+2. Each of mixing,
+accumulated step error and terminal error is at most 2^-(h+2). The reserved
+bank has exactly T·B+F(h+2) bits. These are explicit choices, not desired-error
+hypotheses or an encoded machine-time bound.
+
+Equal totals, both large-line lists, U≥2, L≥7, p≥2 and a supplied actual
+defect remain required. Any natural h is allowed. The
+[actual empty-support obstruction](../research/physical-trace-initialization-obstruction/)
+proves that the other conditions cannot universally produce this start.
+General table correction, initialization/branches, outer retries and encoded
+costs remain. The target retains a defect label; it is not an original table.
+
+Every linked module has ordinary compilation and full headline-closure
+audits with standard axioms and trusted imports. Separate AI source review
+is not human review or independent kernel replay. The ledger binds the
+individual sources and receipts. Historical Linux and Comparator scopes
 remain unchanged.
 
 ## aggregate-actual-gap

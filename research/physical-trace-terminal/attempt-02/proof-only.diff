@@ -1,0 +1,6 @@
+--- initial.lean
++++ checked.lean
+@@ -131 +131,2 @@
+-          (fun d => LegacyPhysicalCompletion.completionLaw r c U L hr hc d.val hTerm) := by
++          (fun d : DefectVertices r c U L =>
++            LegacyPhysicalCompletion.completionLaw r c U L hr hc d.val hTerm) := by

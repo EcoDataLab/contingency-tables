@@ -152,13 +152,42 @@ It derives the stationary mass bound and uses the proved aggregate Poincare
 coefficient; U≥2 is required. This is a finite-(T,t) bound. It does not assert
 exact stationarity for the approximate kernel at fixed precision.
 
-This closes the local transition, repeated-word and defect-law mixing
-interfaces in the both-large branch from a supplied defect, with equal original totals,
-`p≥2,L≥7`. Original zero margins are allowed. Initialization and a sufficient numerical schedule, the defect-law table
-correction, outer retries, empty
-completion blocks and other degenerate branches, and encoded costs remain.
-The current general output correction assumes positive original margins;
-the trace theorem permits zeros. No complete new sampler theorem is claimed.
+The [terminal completion](../research/physical-trace-terminal/) appends a
+fresh bank of F(hTerm) bits. The actual output is a pair (defect, completion)
+and its distance from the uniform labelled joint is at most
+
+```
+T·2^-t + Bmass·exp(−T/K) + 2^-hTerm.
+```
+
+The [explicit schedule](../research/physical-trace-schedule/) defines
+
+```
+a = number of small rows + number of small columns
+G = 32p³ · [U(U−1)+4(aU²+pU)]
+base = M+dL+U+3
+T = G · [h+2+2d·clog₂(base)]
+t = h+2+clog₂(T),   hTerm = h+2.
+```
+
+For U≥2, the natural G casts exactly to K. Each of the three error terms
+is at most 2^-(h+2), yielding TV≤2^-h for the literal finite-word program
+on exactly T·B+F(h+2) reserved bits. Equal totals, both large lists, L≥7,
+p≥2 and a supplied actual start remain explicit; original zeros are allowed.
+
+Initialization needs a real branch decision. The
+[compiled obstruction](../research/physical-trace-initialization-obstruction/)
+shows that every small cell lying in an original zero row forces the actual
+defect type to be empty. The concrete r=[0,4,4], c=[4,4], U=2,L=7 fixture
+still satisfies the other displayed conditions. Separate finite enumeration
+gives 19 physical completions and five original tables.
+
+The remaining interface is general repair/acceptance from this labelled
+joint to original tables, initialization and empty-support handling, fresh
+outer retries, empty completion blocks and other branches, and encoded
+costs. The reviewed general output correction assumes positive original
+margins; zero-row/column preprocessing is not supplied by this bridge.
+No complete new sampler or runtime theorem is claimed.
 
 ## A uniform reservation for adaptive calls
 

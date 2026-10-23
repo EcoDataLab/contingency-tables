@@ -1,17 +1,20 @@
 # Contributor handoff
 
-23 October 2026: the [finite-word defect walk](../research/physical-trace-walk/)
-is now compiled and assumption-audited. Its incoming-plus-weighted-exit ideal
-row equals the computed-reference trace. The actual frozen completion draws
-and list decisions use an explicit word width uniform over starting states,
-with one-step TV≤2^-t and T-step TV≤T·2^-t on exactly T fixed-size blocks.
-The [backend bridge note](legacy-completion-backend.md) records the exact
-width, schedule, hypotheses and remaining interfaces. These additive modules
-have separate AI source review and full headline-closure audits. The checked
-start is supplied; this is not yet the newer complete table sampler. The
-[compiled mixing theorem](../research/physical-trace-mixing/) now gives
-TV≤T·2^-t+Bmass·exp(−T/K) to the completion-weighted defect stationary law,
-using the proved aggregate coefficient K.
+23 October 2026: the [scheduled finite-word defect joint](../research/physical-trace-schedule/)
+is compiled and assumption-audited. From a supplied actual defect, it chooses
+all natural walk/precision parameters and samples a defect together with its
+physical completion within **2^-h** of the uniform labelled-pair law. It
+uses the actual frozen completion draws and the proved stronger trace's
+aggregate mixing coefficient. The [terminal module](../research/physical-trace-terminal/)
+establishes the fresh completion and exact word law. All new modules have
+separate AI source review and full headline dependency-closure audits.
+
+The [compiled initialization obstruction](../research/physical-trace-initialization-obstruction/)
+shows why a start remains an input: r=[0,4,4], c=[4,4], U=2,L=7 has equal
+totals, both large lists and p≥2, yet no defects. Its 19 physical completions
+and five original tables are separately checked finite counts. The current
+result targets labelled physical pairs; original-table output correction
+and the complete revised sampler remain open.
 
 Strongest compiled gap results: the [actual aggregate trace theorem](aggregate-defect-trace.md)
 has compiled coefficient **`34848d⁵(m+n−2)³`**, giving **d^(13/2)** at bounded
@@ -36,17 +39,20 @@ mathematical argument; the physical theorem still needs Lean formalization.
 
 Next integration tasks:
 
-1. Choose a sufficient numerical walk length and precision from the checked
-   defect-law convergence bound. Construct the initial defect.
-2. Compose the terminal completion, defect-law table correction and bounded
-   outer retries. Cover zero margins, empty completion blocks and other
-   degenerate branches; the current general output correction assumes
-   positive original margins.
-3. Prove encoded realization and all additional charged costs. Keep the
-   historical strict Comparator task separate from this new outer machine.
-   The [bridge note](legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace)
-   records the remaining obligations. The new transition and word bank are
-   checked; no new complete-sampler exponent follows yet.
+1. Formalize the actual completion-retaining repair/acceptance map from the
+   uniform defect joint to original tables, including its inverse-fibre
+   count and success lower bound at certified scales. The reviewed general
+   correction assumes positive original margins; the existing compiled
+   repair packet covers an all-small branch and cannot fill this interface.
+2. Supply initialization where defect support is nonempty, and handle the
+   proved empty-support branch, zero margins and empty completion blocks.
+   Zero-row/column removal is a possible route but needs its own table-law
+   correspondence. Compose fresh bounded outer retries after the output
+   correction has been proved.
+3. Prove encoded realization and additional charged costs. Keep historical
+   strict Comparator work separate. The [bridge note](legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace)
+   records the exact checked schedule and remaining obligations. This new
+   finite-word result does not yet improve the complete sampler's exponent.
 
 Keep the original compiled d¹⁷ route and its receipts distinct. It re-proves
 upstream's existential bounded-sampling statement. Both packed-trial cost
