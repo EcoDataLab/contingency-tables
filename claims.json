@@ -213,6 +213,83 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-ideal",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-ideal/attempt-03/verification.json",
+      "sha256": "8bc3c3c9f8444a3a8e5f7576d0652dbce25ec0002335ea2a6c660b752fabca43",
+      "label": "Exact ideal trace-row composition",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-completion-width",
+      "format": "compiled_environment",
+      "path": "research/physical-completion-width/attempt-03/verification.json",
+      "sha256": "198bafc926185cc000d43ba2953d2ec28d787e6885d88b11f11bd1304f2b3e32",
+      "label": "Uniform completion reservation at arbitrary physical scales",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-actual",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-actual/attempt-02/verification.json",
+      "sha256": "7c870f36b5c293c3b49211206f8f6324a9c6692f307606c13a96d45f3da524a1",
+      "label": "Actual joined transition and one-step error budget",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-word",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-word/attempt-01/verification.json",
+      "sha256": "c7d02215f444befa1d12345b1999621b94906957594b7fe24e620b0003c7d537",
+      "label": "Fresh finite-word realization of the joined transition",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-width",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-width/attempt-01/verification.json",
+      "sha256": "d3b63102608a92048549cd365e1a62480095b600a52d7f616b11a420640d6714",
+      "label": "Explicit step width uniform over starting defects",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-walk",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-walk/attempt-01/verification.json",
+      "sha256": "8fdbd4d0cd8c6c6c63e6ed456593dbe4771a4a1883fd28f273fcec068afd206d",
+      "label": "Bounded fair-bit defect walk and accumulated error",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-mixing",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-mixing/attempt-02/verification.json",
+      "sha256": "6438fde3121ba3841a26c81a75b3fa92e064105415825c268f390b99ae23f4b3",
+      "label": "Literal finite-word mixing to the defect stationary law",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -310,7 +387,7 @@
         "Natural margins and U,L,h; an actual positive physical state at the source capacity; both computed large-line lists nonempty. Accuracy uses a uniform word of the state-dependent computed length. Singleton blocks are included."
       ],
       "limitations": [
-        "Compiled semantic adapter to the old executable draw. No assumed accuracy or density condition. Empty blocks, fresh adaptive words, bounded trace transitions, revised output correction and encoded costs remain separate. No new complete sampler or exponent."
+        "Compiled semantic adapter to the old executable draw. No assumed accuracy or density condition. Fresh finite-word defect transitions and walks are now checked separately; empty completion blocks, revised output correction and encoded costs remain outside this adapter. No new complete sampler or exponent."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -356,7 +433,7 @@
         "Natural finite margins; both computed large-line lists nonempty; nonempty positive defect support; p≥2 small cells; U≥2 and L≥7 for the variance bound. The reference pair is fixed by margins and cutoff."
       ],
       "limitations": [
-        "Ordinary Lean compile and full headline closures; trusted reused imports. Same aggregate coefficient, with no equality assertion between different reference kernels. The local weighted exit and explicit schedule are checked separately. The incoming clock and acceptance are also checked. Full trace composition, adaptive words and complete sampler integration remain open. No new exponent or Comparator acceptance."
+        "Ordinary Lean compile and full headline closures; trusted reused imports. Same aggregate coefficient, with no equality assertion between different reference kernels. The bounded finite-word transition and walk are now checked separately. Complete sampler integration and encoded costs remain open. No new exponent or Comparator acceptance."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -402,7 +479,7 @@
         "Natural finite margins and U,L,h; both computed large-line lists nonempty; actual physical source and candidate states at the source capacity; exact state-dependent completion word length. No-proposal hold and singleton selected blocks are included."
       ],
       "limitations": [
-        "Ordinary Lean compile and four complete headline closures with standard axioms and trusted reused imports. No adjacency, positive-original-margin, accuracy or padding-lower-bound premise. This closes acceptance only; trace composition, fresh adaptive bits, outer realizer and cost composition remain open; the incoming proposal/acceptance and local weighted exit are checked separately. No new exponent or Comparator acceptance."
+        "Ordinary Lean compile and four complete headline closures with standard axioms and trusted reused imports. No adjacency, positive-original-margin, accuracy or padding-lower-bound premise. This closes acceptance; the finite-word trace composition and walk are checked separately. Revised outer realizer and cost composition remain open. No new exponent or Comparator acceptance."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -489,7 +566,7 @@
         "Equal-total finite natural margins; both computed large-line lists nonempty; actual balanced source and supplied defect fallback. Entering-edge bounds require L≥7 and adjacency to that defect. Arbitrary natural U; original zero margins and singleton selected blocks allowed. Each local exit uses exactly J·[clog₂(32d²)+q_b(h)] uniform bits."
       ],
       "limitations": [
-        "Ordinary compilation and full headline-closure audits with trusted reused imports. Success mass, completion accuracy and entering-edge probability bound are derived. Zero-star TV does not imply deterministic holding. The incoming clock and acceptance are checked separately. Full trace composition, common adaptive reservation and encoded costs remain open. No new complete-sampler or runtime exponent, default rebuild or Comparator acceptance."
+        "Ordinary compilation and full headline-closure audits with trusted reused imports. Success mass, completion accuracy and entering-edge probability bound are derived. Zero-star TV does not imply deterministic holding. The finite-word trace composition and walk are checked separately. Complete outer sampler and encoded costs remain open. No new runtime exponent, default rebuild or Comparator acceptance."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -577,7 +654,7 @@
         "Actual source defect, p≥2 small cells and both computed large-line lists nonempty for completion. Equal original totals for conductance/neighbor identification. Arbitrary natural U,L,N,h; original zero margins and singleton selected blocks allowed. Exactly N·clog₂(2(4p−3))+q_d(h) uniform bits."
       ],
       "limitations": [
-        "Ordinary compilation and full headline-closure audits with trusted imports. The generally nondyadic clock is approximated by a fixed fair word. Source completion width is state-specific. Incoming-plus-exit composition, adaptive global reservations and encoded costs remain open. No new complete sampler, runtime or gap improvement follows from these local interfaces."
+        "Ordinary compilation and full headline-closure audits with trusted imports. The generally nondyadic clock is approximated by a fixed fair word. Incoming-plus-exit composition, a uniform finite-word reservation and the repeated walk are now checked separately. No complete sampler or runtime improvement follows from this local interface."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -636,6 +713,178 @@
         },
         {
           "receipt": "rational-clock-step",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "physical-trace-walk",
+      "title": "Finite-word realization and mixing of the stronger trace",
+      "english_claim": "The ideal incoming and weighted-exit composition equals the entire computed-reference trace row. The literal frozen completion draws, list decisions, capped rational proposal and bounded weighted exits are realized on one fixed width B for every source defect. The concrete precision/retry schedule gives one-step TV at most 2^-t. A flat uniform word of exactly T*B reserved bits realizes the corresponding repeated transition law and differs from T ideal trace steps by at most T*2^-t. For U>=2 the same literal word walk is within T*2^-t+Bmass*exp(-T/K) of the completion-count stationary law on defects, with the proved K=32*p^3*aggregateCT and Bmass=(M+d*L+U+3)^(2*d).",
+      "quantity": "Defect-law TV ≤ T·2⁻ᵗ+Bmass·exp(−T/K); exactly T·B reserved bits",
+      "hypotheses": [
+        "Equal-total finite natural margins; both computed large-line lists nonempty; p≥2 small cells; L≥7; supplied actual defect start. Arbitrary natural U,t,T, including T=0. Original zero margins and singleton selected completion blocks allowed. B=N·clog₂(2(4p−3))+F(hIn)+J·[clog₂(32d²)+F(hExit)], with the proved common completion bound F and the explicit schedule. Mixing also requires U≥2 and nonempty defect support; the displayed start supplies such support."
+      ],
+      "limitations": [
+        "Ordinary compilation and full headline-closure audits with trusted imports; separate AI source review. This is a finite-(T,t) bound to the completion-weighted defect law, not an exact stationary-law assertion for the approximate kernel. Initial defect construction, a sufficient numerical schedule, terminal table correction, other completion branches and encoded costs remain open. No new complete sampler/runtime exponent, default-target Linux rebuild or Comparator acceptance."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/legacy-completion-backend.md",
+        "research/physical-trace-ideal/README.md",
+        "research/physical-trace-ideal/formal/ResearchPhysicalTraceJoin/Ideal.lean",
+        "research/physical-completion-width/README.md",
+        "research/physical-completion-width/formal/ResearchPhysicalCompletionWidth/Bound.lean",
+        "research/physical-trace-actual/README.md",
+        "research/physical-trace-actual/formal/ResearchPhysicalTraceJoin/Actual.lean",
+        "research/physical-trace-word/README.md",
+        "research/physical-trace-word/formal/ResearchPhysicalTraceJoin/Word.lean",
+        "research/physical-trace-width/README.md",
+        "research/physical-trace-width/formal/ResearchPhysicalTraceJoin/Width.lean",
+        "research/physical-trace-walk/README.md",
+        "research/physical-trace-walk/formal/ResearchPhysicalTraceJoin/Walk.lean",
+        "research/physical-trace-mixing/README.md",
+        "research/physical-trace-mixing/formal/ResearchPhysicalTraceJoin/Mixing.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.PhysicalTraceJoin.idealJoinedLaw_mass_ne",
+          "module": "ResearchPhysicalTraceJoin.Ideal",
+          "source": "research/physical-trace-ideal/formal/ResearchPhysicalTraceJoin/Ideal.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.idealJoinedLaw_row",
+          "module": "ResearchPhysicalTraceJoin.Ideal",
+          "source": "research/physical-trace-ideal/formal/ResearchPhysicalTraceJoin/Ideal.lean"
+        },
+        {
+          "name": "Math115.PhysicalCompletionWidth.coarseRows_total",
+          "module": "ResearchPhysicalCompletionWidth.Bound",
+          "source": "research/physical-completion-width/formal/ResearchPhysicalCompletionWidth/Bound.lean"
+        },
+        {
+          "name": "Math115.PhysicalCompletionWidth.coarseDimension_le",
+          "module": "ResearchPhysicalCompletionWidth.Bound",
+          "source": "research/physical-completion-width/formal/ResearchPhysicalCompletionWidth/Bound.lean"
+        },
+        {
+          "name": "Math115.PhysicalCompletionWidth.completionBits_le_uniform",
+          "module": "ResearchPhysicalCompletionWidth.Bound",
+          "source": "research/physical-completion-width/formal/ResearchPhysicalCompletionWidth/Bound.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.variation_bind_ideal_support",
+          "module": "ResearchPhysicalTraceJoin.Actual",
+          "source": "research/physical-trace-actual/formal/ResearchPhysicalTraceJoin/Actual.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.actualJoinedLaw_accuracy",
+          "module": "ResearchPhysicalTraceJoin.Actual",
+          "source": "research/physical-trace-actual/formal/ResearchPhysicalTraceJoin/Actual.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.scheduledJoinedLaw_accuracy",
+          "module": "ResearchPhysicalTraceJoin.Actual",
+          "source": "research/physical-trace-actual/formal/ResearchPhysicalTraceJoin/Actual.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.freshPrefixDraw_law",
+          "module": "ResearchPhysicalTraceJoin.Word",
+          "source": "research/physical-trace-word/formal/ResearchPhysicalTraceJoin/Word.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.joinedWord_law",
+          "module": "ResearchPhysicalTraceJoin.Word",
+          "source": "research/physical-trace-word/formal/ResearchPhysicalTraceJoin/Word.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.scheduledJoinedWord_accuracy",
+          "module": "ResearchPhysicalTraceJoin.Word",
+          "source": "research/physical-trace-word/formal/ResearchPhysicalTraceJoin/Word.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.balancedExitWidth_le_common",
+          "module": "ResearchPhysicalTraceJoin.Width",
+          "source": "research/physical-trace-width/formal/ResearchPhysicalTraceJoin/Width.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.joinedWidth_le_uniform",
+          "module": "ResearchPhysicalTraceJoin.Width",
+          "source": "research/physical-trace-width/formal/ResearchPhysicalTraceJoin/Width.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.uniformJoinedWord_law",
+          "module": "ResearchPhysicalTraceJoin.Width",
+          "source": "research/physical-trace-width/formal/ResearchPhysicalTraceJoin/Width.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.scheduledUniformJoinedWord_accuracy",
+          "module": "ResearchPhysicalTraceJoin.Width",
+          "source": "research/physical-trace-width/formal/ResearchPhysicalTraceJoin/Width.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.flatWordWalk_law",
+          "module": "ResearchPhysicalTraceJoin.Walk",
+          "source": "research/physical-trace-walk/formal/ResearchPhysicalTraceJoin/Walk.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.joinedWalkWord_law",
+          "module": "ResearchPhysicalTraceJoin.Walk",
+          "source": "research/physical-trace-walk/formal/ResearchPhysicalTraceJoin/Walk.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.scheduledJoinedWalkWord_accuracy",
+          "module": "ResearchPhysicalTraceJoin.Walk",
+          "source": "research/physical-trace-walk/formal/ResearchPhysicalTraceJoin/Walk.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.defectStationaryRat_cast",
+          "module": "ResearchPhysicalTraceJoin.Mixing",
+          "source": "research/physical-trace-mixing/formal/ResearchPhysicalTraceJoin/Mixing.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.computedTrace_pi_lower",
+          "module": "ResearchPhysicalTraceJoin.Mixing",
+          "source": "research/physical-trace-mixing/formal/ResearchPhysicalTraceJoin/Mixing.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.idealJoinedWalk_mixing",
+          "module": "ResearchPhysicalTraceJoin.Mixing",
+          "source": "research/physical-trace-mixing/formal/ResearchPhysicalTraceJoin/Mixing.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.scheduledJoinedWalkWord_mixing",
+          "module": "ResearchPhysicalTraceJoin.Mixing",
+          "source": "research/physical-trace-mixing/formal/ResearchPhysicalTraceJoin/Mixing.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "physical-trace-ideal",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-completion-width",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-actual",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-word",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-width",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-walk",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-mixing",
           "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]

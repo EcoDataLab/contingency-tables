@@ -1,0 +1,17 @@
+--- initial.lean
++++ checked.lean
+@@ -45 +45 @@
+-        · simp only [hx, zero_mul]
++        · simp only [hx, zero_mul, le_refl]
+@@ -57 +57 @@
+-      exact add_le_add_left hsum _
++      exact add_le_add (le_refl _) hsum
+@@ -155 +155 @@
+-      rw [if_neg hn] at hm
++      rw [ite_eq_right hn] at hm
+@@ -185 +185 @@
+-  exact he.trans (add_le_add_right (incomingLaw_accuracy r c U L hr hc hp d N hIn) _)
++  exact he.trans (add_le_add (incomingLaw_accuracy r c U L hr hc hp d N hIn) (le_refl _))
+@@ -210 +210 @@
+-  exact he.trans ((add_le_add_left hexit _).trans hsum.le)
++  exact he.trans ((add_le_add (le_refl _) hexit).trans hsum.le)

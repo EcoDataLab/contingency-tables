@@ -1,0 +1,12 @@
+--- initial.lean
++++ checked.lean
+@@ -110 +110,5 @@
+-    simp [idealExitKernel_defect, pointLaw, mul_ite]
++    rw [Finset.sum_eq_single e]
++    · simp [idealExitKernel_defect, pointLaw]
++    · intro f _ hfe
++      simp [idealExitKernel_defect, pointLaw, Ne.symm hfe]
++    · simp
+@@ -141 +145 @@
+-    simp only [pointLaw, if_neg (Ne.symm hne), Rat.cast_zero, mul_zero, hzR, div_zero,
++    simp only [pointLaw, ite_eq_right (Ne.symm hne), Rat.cast_zero, mul_zero, hzR, div_zero,

@@ -1,50 +1,26 @@
 # Research status
 
-23 October 2026: the [bounded physical exit](../research/physical-star-retry/)
-and [explicit local schedule](../research/physical-star-budget/) now compile
-and pass full assumption audits, following the checked physical trial.
-An actual entering edge at `L≥7` gives success at least `ρ/2`, so the exact
-`J·[clog₂(32d²)+q_b(h)]`-bit exit has TV error at most
-`(1−ρ/2)^J+J·2^-h`. A concrete retry count and precision make this at most
-`2^−(t+1)`. Zero-star fallback is also checked. These results require no
-positive-original-margin premise or global equal completion width.
+23 October 2026: the [finite-word defect walk](../research/physical-trace-walk/)
+now connects the stronger trace to the frozen complete sampler used for its
+completion calls. The ideal composed row equals the computed-reference
+trace, including diagonal and zero-star cases. Actual rational proposals,
+list acceptance and bounded weighted exits give one-step TV≤2^-t.
+A proved [uniform width](../research/physical-trace-width/) lets every step
+use a fresh fixed-size block; exactly T such blocks give error≤T·2^-t from
+T ideal steps. All new interface modules compile and pass full headline
+assumption audits; separate AI source review passed. Failed attempts remain
+visible. Zero original margins are allowed within the both-large branch.
 
-The [rational clock and incoming acceptance](../research/rational-clock-step/)
-also compile and pass their audits. The literal incoming word has error
-`2^−N+2^−h`; its ideal off-diagonal mass is exactly the canonical source
-conductance divided by `2(4p−3)w(d)`. Complete trace-row composition and
-common fresh word reservation are in progress. They remain separate from the new outer
-sampler, encoded costs and strict Comparator acceptance. No sampler or
-runtime exponent changed. The recurring schedule remains paused.
+The [convergence theorem](../research/physical-trace-mixing/) also compiles
+and passes its audit: defect-law TV≤T·2^-t+Bmass·exp(−T/K), where
+K=32p³·aggregateCT and Bmass is the proved full physical mass allowance.
+The target normalizes completion counts over defects only.
 
-23 October 2026: the [list acceptance correspondence](../research/listed-acceptance/)
-now compiles and passes its full assumption audit. At arbitrary `U,L`, the
-actual list Boolean on the frozen sampler's matrix output agrees with the
-physical completion decision on every exact-length word, including a missing
-proposal's hold branch. The remaining transition must implement the trace's
-clock and conductance-weighted balanced exits with bounded-error accounting.
-This closes acceptance; it does not close the new complete sampler.
-
-23 October 2026: the [computed-reference trace](../research/computed-reference-trace/)
-closes the reference-choice obligation. The existing aggregate bound now
-holds for every fixed large reference pair, including the first large row
-and column selected by the program. Its exact transition and stationary law
-compile; the environment audit checks four complete headline closures using
-only standard axioms. Different reference kernels are not asserted equal.
-The acceptance correspondence above is also checked. A bounded transition
-with weighted balanced-state exits remains open. No gap exponent or
-complete-sampler claim changes; the earlier compilation scopes remain separate.
-
-22 October 2026: the resumed bridge task closed one concrete interface.
-The [new physical completion adapter](../research/legacy-physical-completion/)
-connects the actual old sampler output to arbitrary-`U,L` physical completions,
-including `L=7`, in the both-large branch. Pointwise feasible output and
-TV≤2^-h compile; four full dependency closures contain only standard axioms,
-and separate AI review passed. The remaining transition requires the
-defect trace's proposal clock and weighted
-balanced-state exit; [details and remaining obligations](legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace)
-are explicit. No complete-sampler exponent changed. The six-hour automation
-remains paused; no new Comparator attempt was launched.
+The start is still a supplied actual defect. Initialization, a sufficient
+numerical schedule, table-output correction, other completion branches,
+outer retries and encoded costs remain separate. No complete sampler or
+runtime exponent changed, and no new default-target Linux or Comparator
+acceptance is claimed. The recurring schedule remains paused.
 
 The [actual aggregate defect trace](aggregate-defect-trace.md) now has compiled
 coefficient **`34848d⁵(m+n−2)³`** at `U=11d(m+n−2),L=7`. Its squared aspect

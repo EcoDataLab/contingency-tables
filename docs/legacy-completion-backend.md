@@ -60,8 +60,8 @@ executable branch is not included in this adapter.
 ## Remaining interface to the canonical defect trace
 
 The new trace and the adapter share the physical residuals, capacity and
-completion-translation `acceptedCount` algebra. The missing next interface is
-the law of an actual bounded transition on defects. For distinct defects
+completion-translation `acceptedCount` algebra. The bounded transition and
+finite-word walk are now checked. For distinct defects
 `d,e`, the canonical theorem uses
 
 ```
@@ -73,10 +73,9 @@ Zero-star terms contribute zero. Here `W` counts accepted defect-to-defect
 conductance, `S` counts accepted balanced-to-defect conductance, and `w` is the
 completion-count weight.
 The old `selectedTransitionLaw` walks on the full state space with a different
-dyadic proposal clock. It is not this trace. A transition proof must identify
-the weighted exit `S(b,e)/s_b`, charge capped exit failures and approximate
-completion errors, and use the correct rational clock or certified dyadic
-rounding. Uniform neighbor exits would give the wrong law.
+dyadic proposal clock. It is not this trace. The checked transition identifies
+the weighted exit `S(b,e)/s_b`, charges capped exit failures and approximate
+completion errors, and approximates the correct rational clock. Uniform neighbor exits would give the wrong law.
 
 The [computed-reference packet](../research/computed-reference-trace/) now
 closes the reference-choice obligation by constructing the trace and proving
@@ -91,11 +90,6 @@ accept/reject branch for every exact-length word and optional physical
 proposal. The no-proposal hold and singleton selected blocks are included.
 Neither adjacency, a padding lower bound nor accuracy is assumed for this
 identity. Both computed large-line lists remain nonempty.
-
-The remaining local obligation is the bounded transition law: implement the
-proposal clock and weighted exit distribution, then account for capped exit
-failure and approximate completions. Pointwise acceptance alone supplies
-neither that distribution nor its error budget.
 
 A [compiled weighted-retry helper](../research/weighted-exit/) now supplies
 the local first-success algebra. If the ideal trial at a fixed balanced
@@ -121,15 +115,50 @@ and pass their audits. Capped interval rejection, followed by neighbor lookup,
 gives the ideal rate `1/[2(4p−3)]`; accepted unused slots hold. Source completion
 and the literal list test yield incoming error `2^−N+2^−h` on exactly
 `N·clog₂(2(4p−3))+q_d(h)` bits. Distinct target mass is the corresponding
-reference conductance divided by `2(4p−3)w(d)`. The complete incoming-plus-exit
-row and common fresh reservation remain to verify.
+reference conductance divided by `2(4p−3)w(d)`.
 
-After that transition interface, the program still needs fresh adaptive words,
-initialization and mixing, the defect-law repair/padding/output correction,
-retry schedules, zero-margin and degenerate branches, and encoded costs.
-The existing general output correction assumes positive original margins;
-the trace theorem permits zeros. These obligations must close before the gap
-bound can be carried into a complete sampler theorem.
+The [ideal composition](../research/physical-trace-ideal/) equals the whole
+computed-reference trace row, including its diagonal. The
+[actual composition](../research/physical-trace-actual/) has error at most
+`2^-N + 2^-hIn + (1−ρ/2)^J + J·2^-hExit`. Its comparison charges exit error
+on ideal incoming support, so actual-only arrivals need no successful-exit
+premise. With `N=hIn=t+2` and the checked exit schedule, this is at most `2^-t`.
+
+The [fresh-word realization](../research/physical-trace-word/) and
+[explicit uniform step width](../research/physical-trace-width/) give
+
+```
+F(h) = C0 · [d + clog2(M+LRC+2) + h+3]^85
+B = N·clog2(2(4p−3)) + F(hIn) + J·[clog2(32d²)+F(hExit)].
+```
+
+`F` is a [proved bound](../research/physical-completion-width/) on the actual
+coarse request's old-sampler reservation. It needs no maximum over states.
+A prefix supplies each exact completion word from its fresh block. The
+[flat walk](../research/physical-trace-walk/) takes exactly `T·B` reserved bits,
+realizes T compositions of the literal bounded transition, and has error at
+most `T·2^-t` from T ideal trace steps. Later states may depend on earlier
+blocks; fresh blocks remain independent. Unused suffix bits are reserved too.
+
+The [mixing theorem](../research/physical-trace-mixing/) now connects the
+literal walk to the completion-count law on defects:
+
+```
+TV ≤ T·2^-t + Bmass·exp(−T/K),
+Bmass = (M+dL+U+3)^(2d),   K = 32p³·aggregateCT(r,c,U).
+```
+
+It derives the stationary mass bound and uses the proved aggregate Poincare
+coefficient; U≥2 is required. This is a finite-(T,t) bound. It does not assert
+exact stationarity for the approximate kernel at fixed precision.
+
+This closes the local transition, repeated-word and defect-law mixing
+interfaces in the both-large branch from a supplied defect, with equal original totals,
+`p≥2,L≥7`. Original zero margins are allowed. Initialization and a sufficient numerical schedule, the defect-law table
+correction, outer retries, empty
+completion blocks and other degenerate branches, and encoded costs remain.
+The current general output correction assumes positive original margins;
+the trace theorem permits zeros. No complete new sampler theorem is claimed.
 
 ## A uniform reservation for adaptive calls
 
@@ -153,8 +182,8 @@ Independent outputs are neither asserted nor required.
 The whole backend reservation is at most `H W_star`, including unused bits.
 Choosing `k=h_out+clog2(H)+2` bounds the cumulative completion error by
 `H·2^(-k)≤2^(-h_out-2)`. Initial-law, mixing, terminal correction and retry
-exhaustion errors still need their own allocations. No new compiled outer
-call-cap or adaptive composition theorem is claimed here.
+exhaustion errors still need their own allocations. The local trace and repeated-walk reservations above are now compiled.
+The whole outer sampler's call cap and terminal/retry composition remain open.
 
 ## Complete cost and present evidence
 
@@ -184,4 +213,5 @@ ordinary Lean compilation and four full headline dependency-closure audits,
 with only standard axioms. A separate AI reviewer checked its frozen source
 and saved evidence. The semantic witness is tied pointwise to the executable
 old draw; it does not itself implement the physical decoder or revised outer
-program. Adaptive reservation and complete composition above remain proposals.
+program. The fixed-bank walk reservation and defect-law mixing are now
+checked above; complete table-output and encoded composition remain open.

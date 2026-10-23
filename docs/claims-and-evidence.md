@@ -11,6 +11,32 @@ bindings for the six Lean headlines in that earlier default target. It also pres
 claims and hypotheses from the hash-qualified ledger snapshot. Historical named
 receipts retain their narrower scope.
 
+## physical-trace-walk
+
+The [finite-word walk](../research/physical-trace-walk/) realizes T actual
+bounded trace transitions on exactly T·B reserved fair bits. Its law differs
+from T ideal trace steps by at most T·2^-t under the concrete schedule. The
+[ideal-row identity](../research/physical-trace-ideal/) ties this comparison
+to the same computed-reference chain, including its diagonal. The
+[actual composition](../research/physical-trace-actual/) charges exit error
+only on positive ideal incoming support. The
+[fresh-word law](../research/physical-trace-word/),
+[backend width bound](../research/physical-completion-width/) and
+[uniform step width](../research/physical-trace-width/) derive the reservation.
+
+Equal totals, both large-line lists nonempty, p≥2, L≥7 and a supplied actual
+defect start remain explicit. U,t,T may be zero; original zero margins are
+permitted. The [mixing packet](../research/physical-trace-mixing/) also derives
+TV≤T·2^-t+Bmass·exp(−T/K) to the completion-count defect law, with
+K=32p³·aggregateCT and Bmass=(M+dL+U+3)^(2d), under U≥2. The stationary
+normalizer includes only defects. This finite-(T,t) result does not assert
+exact stationarity of the approximate kernel. Initialization, a sufficient
+numerical schedule, terminal correction and encoded costs remain open.
+These additive modules compiled and passed full headline-closure audits with only standard
+axioms and trusted baseline imports. Separate AI source reviews are not
+human or independent kernel review. Historical Linux and Comparator scopes
+remain unchanged.
+
 ## aggregate-actual-gap
 
 The [actual aggregate trace theorem](aggregate-defect-trace.md) proves
@@ -61,9 +87,8 @@ are explicit; singleton blocks are included. Accuracy and cap redundancy are
 derived, not premises.
 
 Its ordinary Lean compile, environment audit and separate AI source/receipt
-review are an additive evidence scope. The trace's clock and weighted star
-exits still need a finite transition proof, followed
-by adaptive words, output/schedule composition and encoded costs. No new
+review are an additive evidence scope. The trace's bounded finite-word transition and walk are now checked separately.
+Output/schedule composition and encoded costs remain open. No new
 complete sampler, exponent, Linux default build or Comparator result follows.
 
 ## computed-reference-trace
@@ -82,8 +107,8 @@ Both large-line lists and positive defect support must be nonempty, with
 singleton selected blocks are permitted under these hypotheses. No equality
 of different reference kernels, stronger coefficient, new complete sampler,
 independent review, default build or Comparator result is claimed. The
-following packets close the pointwise list interface and bounded weighted
-exit. Their incoming clock and complete transition composition remain open.
+following packets close the pointwise list interface, rational clock and bounded
+weighted exit. Their finite-word composition and walk are now checked above.
 
 ## listed-acceptance
 
@@ -115,8 +140,8 @@ The successful-mass identity and trial error are explicit premises. Weights
 are nonnegative with positive total; `w>0` and a fallback are supplied.
 Ordinary compilation and three full headline-closure audits passed. The
 physical specialization, success lower bound, zero-star handling and local
-schedule are now checked below. The incoming trace clock and complete
-transition composition remain open. No new complete sampler or exponent follows.
+schedule are now checked below. The incoming clock and finite-word transition
+composition are also checked separately. No complete new sampler or exponent follows.
 
 ## physical-star-trial
 
@@ -148,9 +173,9 @@ The [concrete schedule](../research/physical-star-budget/) chooses
 `J=2·2^clog₂(32d²)·(t+2)` and `h=t+2+clog₂ J`. It proves exit TV at most
 `2^−(t+1)` on the exact local bit bank, with no conductance computation.
 Both modules compile and pass their full assumption audits. The
-complete trace transition, common fresh words, global
-sampler and encoded cost composition remain open. The incoming clock and
-acceptance are checked in the next packet.
+complete trace transition and fresh finite-word walk are now checked above.
+Global sampler and encoded cost composition remain open. The incoming clock
+and acceptance are checked in the next packet.
 
 ## rational-clock-step
 
@@ -176,7 +201,8 @@ off-diagonal mass casts to the reference conductance divided by
 `2(4p−3)w(d)`. The computed large-line lists must be nonempty; the source
 width is fixed within this step. No padding-seven or positive-original-margin
 premise is added. This module also compiles and passes four full headline
-closures. Exit composition and the complete sampler remain separate.
+closures. Exit composition and a finite-word mixing bound are checked above;
+the complete new table sampler remains open.
 
 Ordinary compilation and four full headline-closure audits passed. The three
 needed upstream rejection modules were compiled unchanged at the pinned

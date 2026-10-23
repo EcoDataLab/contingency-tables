@@ -1,38 +1,17 @@
 # Contributor handoff
 
-23 October 2026: the [physical bounded exit](../research/physical-star-retry/)
-and its [concrete retry/precision schedule](../research/physical-star-budget/)
-are compiled and assumption-audited. They specialize the checked one-trial
-law, derive the source-directed entering-edge success bound at `L≥7`, handle
-zero stars and give a finite local bank with error at most `2^−(t+1)`.
-Source and failed attempts are preserved; separate AI review passed.
-
-The [rational incoming proposal and acceptance](../research/rational-clock-step/)
-now compile and pass their audits too, with the canonical source denominator
-and error `2^−N+2^−h`. Next verify the ideal trace-row identity and
-support-weighted actual composition. A common fresh
-word realization and numerical reservation must remain explicit obligations.
-The complete newer sampler and encoded costs are still open.
-
-23 October 2026: the [executable acceptance interface](../research/listed-acceptance/)
-is now compiled and assumption-audited. The actual list Boolean on the old
-sampler's output agrees pointwise with the physical reference decision at
-arbitrary `U,L`, including hold. Next: the bounded trace transition with its
-correct clock, conductance-weighted exits and error budget. No complete
-sampler or new exponent is claimed.
-
-23 October 2026: the [computed-reference trace](../research/computed-reference-trace/)
-has compiled with a full environment/assumption audit. The existing aggregate
-bound holds at the first large row and column chosen by the program, through
-an explicit-reference family. The acceptance packet above closes the next
-pointwise interface. The newer complete sampler remains open.
-
-22 October 2026: the [physical completion adapter](../research/legacy-physical-completion/)
-now compiles and has a full assumption audit plus separate AI review. It connects
-the old executable sampler to actual arbitrary-`U,L` completion fibers in the
-both-large branch, with every-word feasibility and TV≤2^-h. The complete
-explicit-runtime checkpoint remains saved. No new Comparator attempt was
-launched; the six-hour automation remains paused.
+23 October 2026: the [finite-word defect walk](../research/physical-trace-walk/)
+is now compiled and assumption-audited. Its incoming-plus-weighted-exit ideal
+row equals the computed-reference trace. The actual frozen completion draws
+and list decisions use an explicit word width uniform over starting states,
+with one-step TV≤2^-t and T-step TV≤T·2^-t on exactly T fixed-size blocks.
+The [backend bridge note](legacy-completion-backend.md) records the exact
+width, schedule, hypotheses and remaining interfaces. These additive modules
+have separate AI source review and full headline-closure audits. The checked
+start is supplied; this is not yet the newer complete table sampler. The
+[compiled mixing theorem](../research/physical-trace-mixing/) now gives
+TV≤T·2^-t+Bmass·exp(−T/K) to the completion-weighted defect stationary law,
+using the proved aggregate coefficient K.
 
 Strongest compiled gap results: the [actual aggregate trace theorem](aggregate-defect-trace.md)
 has compiled coefficient **`34848d⁵(m+n−2)³`**, giving **d^(13/2)** at bounded
@@ -57,22 +36,17 @@ mathematical argument; the physical theorem still needs Lean formalization.
 
 Next integration tasks:
 
-1. Use the [checked completion adapter](legacy-completion-backend.md) to prove
-   the actual bounded defect-transition law. The computed reference choice
-   and list-based acceptance correspondence are now checked, as are the
-   physical one-trial law, bounded exit and explicit local schedule.
-   Preserve the trace's rational proposal clock and identify the composed
-   row, charging incoming and bounded-exit errors. The
-   old full-state transition is not the newer trace.
-2. Prove the adaptive fresh-word reservation and call cap, then compose
-   initialization, mixing, the joint-output correction and retry schedule.
-   Cover zero margins, empty completion blocks and other degenerate branches;
-   the current general output correction assumes positive margins.
+1. Choose a sufficient numerical walk length and precision from the checked
+   defect-law convergence bound. Construct the initial defect.
+2. Compose the terminal completion, defect-law table correction and bounded
+   outer retries. Cover zero margins, empty completion blocks and other
+   degenerate branches; the current general output correction assumes
+   positive original margins.
 3. Prove encoded realization and all additional charged costs. Keep the
    historical strict Comparator task separate from this new outer machine.
    The [bridge note](legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace)
-   gives exact mathematical interfaces; further gap research can proceed
-   separately without changing these sampler claims.
+   records the remaining obligations. The new transition and word bank are
+   checked; no new complete-sampler exponent follows yet.
 
 Keep the original compiled d¹⁷ route and its receipts distinct. It re-proves
 upstream's existential bounded-sampling statement. Both packed-trial cost

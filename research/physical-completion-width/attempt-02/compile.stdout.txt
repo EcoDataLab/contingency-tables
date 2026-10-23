@@ -1,0 +1,18 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalCompletionWidth/Bound.lean:67:13: error: Type mismatch
+  sum_subtype_eq_of_zero (fun i => U ≤ r i) (residualRows (firstPaperSmall r c U) B r c L z)
+    (physical_residual_row_zero r c U L B z
+      (physical_paper_capacity (firstPaperSmall r c U) r c dimensionAllowance L U dimension_le_allowance z))
+has type
+  ∑
+      k ∈
+        @Finset.univ { k // U ≤ r k }
+          (@Subtype.fintype (Fin m) (fun i => U ≤ r i) (fun a => Classical.propDecidable (U ≤ r a)) (Fin.fintype m)),
+      residualRows (firstPaperSmall r c U) B r c L z ↑k =
+    ∑ k, residualRows (firstPaperSmall r c U) B r c L z k
+but is expected to have type
+  ∑
+      i ∈
+        @Finset.univ (LargeRows r U)
+          (@Subtype.fintype (Fin m) (fun i => U ≤ r i) (fun a => U.decLe (r a)) (Fin.fintype m)),
+      residualRows (firstPaperSmall r c U) B r c L z ↑i =
+    ?m.132
