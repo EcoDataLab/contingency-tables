@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "Marked.Survivor",
+    "Marked.L2",
+    "Marked.Killed"
+  ],
+  "compilation": [
+    {
+      "module": "Marked.Survivor",
+      "source": "research/spaced-attempts/formal/Marked/Survivor.lean",
+      "source_sha256": "f9d0ea93a2a47181e2a6be3fc407cffb714ad781687c66a1be376fabc5f8ea86",
+      "returncode": 0,
+      "seconds": 5.486,
+      "olean_sha256": "39d10d829d94ece912d235557c497536706ba8238b05b6728458133796f906d6"
+    },
+    {
+      "module": "Marked.L2",
+      "source": "research/spaced-attempts/formal/Marked/L2.lean",
+      "source_sha256": "7f4c11a1c4352f6f6a594596f9405f1fa669b3f0ad9bb9fab6cd57979c3d926e",
+      "returncode": 0,
+      "seconds": 4.072,
+      "olean_sha256": "cbdf6438f7252f20899f3807bb3f8add06760bd57f12b9758f093308dfd15693"
+    },
+    {
+      "module": "Marked.Killed",
+      "source": "research/spaced-attempts/formal/Marked/Killed.lean",
+      "source_sha256": "e83ca10988b1b58176f0800866ea986abb9d081cd42783fb1544288261a59173",
+      "returncode": 0,
+      "seconds": 4.611,
+      "olean_sha256": "a5981a2799fe5e510fef2402cb002f9109e257f0057b83e18511305196a236a4"
+    },
+    {
+      "module": "ResearchAudit.EnvironmentAudit",
+      "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+      "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "returncode": 0,
+      "seconds": 3.033,
+      "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+    }
+  ],
+  "audit_seconds": 46.645,
+  "audit_sha256": "91ca5c47ef08f6bee9f14e689659f83befa64fd287a134025d0cf05691b082ef",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "f4ea851a699581d4d4b109082f264a3f76d6bdcf9467a147548c5b315cf9a1e2",
+  "declaration_count": 175,
+  "theorem_count": 125,
+  "headlines": [
+    {
+      "name": "Marked.Survivor.quadratic_comparison",
+      "closure_size": 8579,
+      "statement": "\u2200 {X : Type u_1} [inst : Fintype X] (\u03c0 g : X \u2192 \u211d) (K : X \u2192 X \u2192 \u211d) (\u03c1 : \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    Marked.Survivor.IsMarkov K \u2192\n      Marked.Survivor.bind \u03c0 K = \u03c0 \u2192\n        0 \u2264 \u03c1 \u2192\n          Marked.Survivor.CenteredL2Contraction \u03c0 K \u03c1 \u2192\n            Marked.Survivor.inner \u03c0 g (Marked.Survivor.act K g) \u2264\n              \u03c1 * Marked.Survivor.energy \u03c0 g + (1 - \u03c1) * Marked.Survivor.mean \u03c0 g ^ 2"
+    },
+    {
+      "name": "Marked.Survivor.killed_quadratic_bound",
+      "closure_size": 11664,
+      "statement": "\u2200 {X : Type u_1} [inst : Fintype X] (\u03c0 u f : X \u2192 \u211d) (K : X \u2192 X \u2192 \u211d) (\u03c1 : \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    Marked.Survivor.IsMarkov K \u2192\n      Marked.Survivor.IsReversible \u03c0 K \u2192\n        0 \u2264 \u03c1 \u2192\n          \u03c1 \u2264 1 \u2192\n            Marked.Survivor.CenteredL2Contraction \u03c0 K \u03c1 \u2192\n              (\u2200 (x : X), 0 \u2264 f x \u2227 f x \u2264 1) \u2192\n                Marked.Survivor.inner \u03c0 u (Marked.Survivor.killed K f u) \u2264\n                  (\u03c1 + (1 - \u03c1) * Marked.Survivor.mean \u03c0 f) * Marked.Survivor.energy \u03c0 u"
+    },
+    {
+      "name": "Marked.Survivor.killed_energy_bound",
+      "closure_size": 11865,
+      "statement": "\u2200 {X : Type u_1} [inst : Fintype X] (\u03c0 u f : X \u2192 \u211d) (K : X \u2192 X \u2192 \u211d) (\u03c1 : \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    Marked.Survivor.IsMarkov K \u2192\n      Marked.Survivor.IsReversible \u03c0 K \u2192\n        Marked.Survivor.IsPSD \u03c0 K \u2192\n          0 \u2264 \u03c1 \u2192\n            \u03c1 \u2264 1 \u2192\n              Marked.Survivor.CenteredL2Contraction \u03c0 K \u03c1 \u2192\n                (\u2200 (x : X), 0 \u2264 f x \u2227 f x \u2264 1) \u2192\n                  Marked.Survivor.energy \u03c0 (Marked.Survivor.killed K f u) \u2264\n                    (\u03c1 + (1 - \u03c1) * Marked.Survivor.mean \u03c0 f) ^ 2 * Marked.Survivor.energy \u03c0 u"
+    },
+    {
+      "name": "Marked.Survivor.killed_survivor_mass",
+      "closure_size": 10806,
+      "statement": "\u2200 {X : Type u_1} [inst : Fintype X] (\u03c0 f : X \u2192 \u211d) (K : X \u2192 X \u2192 \u211d),\n  Marked.Survivor.IsReversible \u03c0 K \u2192\n    (\u2200 (x : X), 0 \u2264 f x) \u2192\n      \u2200 (n : \u2115),\n        Marked.Survivor.mass (Marked.Survivor.killedSurvivor \u03c0 K f n) =\n          Marked.Survivor.inner \u03c0 (fun x => \u221a(f x)) (Marked.Survivor.killedIter K f (fun x => \u221a(f x)) n)"
+    },
+    {
+      "name": "Marked.Survivor.terminal_exhaustion_bound",
+      "closure_size": 11887,
+      "statement": "\u2200 {X : Type u_1} {Y : Type u_2} [inst : Fintype X] [inst_1 : Fintype Y] (\u03c0 : X \u2192 \u211d) (K : X \u2192 X \u2192 \u211d) (A : X \u2192 Y \u2192 \u211d)\n  (\u03bd : Y \u2192 \u211d) (s \u03c1 : \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    Marked.Survivor.IsProbability \u03bd \u2192\n      Marked.Survivor.IsMarkov K \u2192\n        Marked.Survivor.IsTerminal A \u2192\n          Marked.Survivor.IsReversible \u03c0 K \u2192\n            Marked.Survivor.IsPSD \u03c0 K \u2192\n              (Marked.Survivor.bind \u03c0 A = fun y => s * \u03bd y) \u2192\n                0 \u2264 \u03c1 \u2192\n                  \u03c1 \u2264 1 \u2192\n                    Marked.Survivor.CenteredL2Contraction \u03c0 K \u03c1 \u2192\n                      \u2200 (n : \u2115),\n                        Marked.Survivor.mass (Marked.Survivor.killedSurvivor \u03c0 K (Marked.Survivor.failure A) n) \u2264\n                          (1 - s) * (1 - (1 - \u03c1) * s) ^ n"
+    },
+    {
+      "name": "Marked.Survivor.terminal_exhaustion_bound_positive_marks",
+      "closure_size": 11888,
+      "statement": "\u2200 {X : Type u_1} {Y : Type u_2} [inst : Fintype X] [inst_1 : Fintype Y] (\u03c0 : X \u2192 \u211d) (K : X \u2192 X \u2192 \u211d) (A : X \u2192 Y \u2192 \u211d)\n  (\u03bd : Y \u2192 \u211d) (s \u03c1 : \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    Marked.Survivor.IsProbability \u03bd \u2192\n      Marked.Survivor.IsMarkov K \u2192\n        Marked.Survivor.IsTerminal A \u2192\n          Marked.Survivor.IsReversible \u03c0 K \u2192\n            Marked.Survivor.IsPSD \u03c0 K \u2192\n              (Marked.Survivor.bind \u03c0 A = fun y => s * \u03bd y) \u2192\n                0 \u2264 \u03c1 \u2192\n                  \u03c1 \u2264 1 \u2192\n                    Marked.Survivor.CenteredL2Contraction \u03c0 K \u03c1 \u2192\n                      \u2200 (R : \u2115),\n                        0 < R \u2192\n                          Marked.Survivor.mass\n                              (Marked.Survivor.killedSurvivor \u03c0 K (Marked.Survivor.failure A) (R - 1)) \u2264\n                            (1 - s) * (1 - (1 - \u03c1) * s) ^ (R - 1)"
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

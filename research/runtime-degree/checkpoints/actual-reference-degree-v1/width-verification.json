@@ -1,0 +1,133 @@
+{
+  "status": "compiled-exact-trial-width-and-dense-parameter-bits",
+  "helpers": [
+    {
+      "module": "ReferenceRuntime.DenseLayoutDegree",
+      "command_threads": 2,
+      "memory_cap_mib": 8192,
+      "source_sha256": "bb246a35b8e926fa6e9ee508662a50eee2fbefbfcfece0ddae0c8049fc7f62ce",
+      "returncode": 0,
+      "seconds": 19.478,
+      "lean_path": [
+        ".local/further-gap/draw-runtime-next/reference-trial-cost/objects",
+        ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects",
+        ".local/further-gap/draw-runtime-next/division-cost/objects",
+        ".local/further-gap/draw-runtime-next/initial-degree/greedy-final-01/objects",
+        ".local/further-gap/draw-runtime-next/printer-next/objects",
+        ".local/further-gap/draw-runtime-next/objects",
+        "formal/.lake/build/lib/lean",
+        "formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+        "formal/.lake/packages/Qq/.lake/build/lib/lean",
+        "formal/.lake/packages/aesop/.lake/build/lib/lean",
+        "formal/.lake/packages/batteries/.lake/build/lib/lean",
+        "formal/.lake/packages/importGraph/.lake/build/lib/lean",
+        "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+        "formal/.lake/packages/plausible/.lake/build/lib/lean",
+        "formal/.lake/packages/proofwidgets/.lake/build/lib/lean"
+      ],
+      "olean_sha256": "892c637205d52c1640b513e8d0b6bd46f55e74306b7ef38d27c2b0dc5367f431",
+      "source_unchanged": true,
+      "object_unchanged": true,
+      "focused_type_and_axiom_checks": 2,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ReferenceRuntime.DenseWidthCoreDegree",
+      "command_threads": 2,
+      "memory_cap_mib": 8192,
+      "source_sha256": "8d5029395a6c923886ecbcec6abd7ea90fa3475f9bf20b76439b5165543c80c8",
+      "returncode": 0,
+      "seconds": 24.162,
+      "lean_path": [
+        ".local/further-gap/draw-runtime-next/reference-trial-cost/objects",
+        ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects",
+        ".local/further-gap/draw-runtime-next/division-cost/objects",
+        ".local/further-gap/draw-runtime-next/initial-degree/greedy-final-01/objects",
+        ".local/further-gap/draw-runtime-next/printer-next/objects",
+        ".local/further-gap/draw-runtime-next/objects",
+        "formal/.lake/build/lib/lean",
+        "formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+        "formal/.lake/packages/Qq/.lake/build/lib/lean",
+        "formal/.lake/packages/aesop/.lake/build/lib/lean",
+        "formal/.lake/packages/batteries/.lake/build/lib/lean",
+        "formal/.lake/packages/importGraph/.lake/build/lib/lean",
+        "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+        "formal/.lake/packages/plausible/.lake/build/lib/lean",
+        "formal/.lake/packages/proofwidgets/.lake/build/lib/lean"
+      ],
+      "olean_sha256": "2a1d3abc69405f2f3499c9f5f7c036680cc041e881dea938ebd473a031de801e",
+      "source_unchanged": true,
+      "object_unchanged": true,
+      "focused_type_and_axiom_checks": 2,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "module": "ReferenceRuntime.DenseTrialWidthDegree",
+      "command_threads": 2,
+      "memory_cap_mib": 8192,
+      "source_sha256": "e1e395391910ca649711ba4cb813d090567699e793699b45d9faba8b76067720",
+      "returncode": 0,
+      "seconds": 21.681,
+      "lean_path": [
+        ".local/further-gap/draw-runtime-next/reference-trial-cost/objects",
+        ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects",
+        ".local/further-gap/draw-runtime-next/division-cost/objects",
+        ".local/further-gap/draw-runtime-next/initial-degree/greedy-final-01/objects",
+        ".local/further-gap/draw-runtime-next/printer-next/objects",
+        ".local/further-gap/draw-runtime-next/objects",
+        "formal/.lake/build/lib/lean",
+        "formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+        "formal/.lake/packages/Qq/.lake/build/lib/lean",
+        "formal/.lake/packages/aesop/.lake/build/lib/lean",
+        "formal/.lake/packages/batteries/.lake/build/lib/lean",
+        "formal/.lake/packages/importGraph/.lake/build/lib/lean",
+        "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+        "formal/.lake/packages/plausible/.lake/build/lib/lean",
+        "formal/.lake/packages/proofwidgets/.lake/build/lib/lean"
+      ],
+      "olean_sha256": "23a7de1290a94ef04a49b283eede23866e5c5c3c37e49a270c6cfab61f7c539e",
+      "source_unchanged": true,
+      "object_unchanged": true,
+      "focused_type_and_axiom_checks": 2,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "endpoint_degrees": {
+    "sliceRow": 96,
+    "layoutRow": 192,
+    "unflattenGrid": 222342,
+    "flatToGridData": 222342,
+    "completionParts": 78,
+    "exponentCellData": 78,
+    "gridCellWidth": 864,
+    "offsetLength": 1728,
+    "freeCells": 504,
+    "offsetLengths": 3011614704,
+    "fifthPower": 216,
+    "fiftiethPower": 279936,
+    "denseWidth": 1296,
+    "trialWalkBits": 10077696,
+    "trialWidth": 2008825309550304,
+    "denseParameterBits": 12052951857301824
+  },
+  "extra_direct_import": {
+    "module": "ResearchBounds.SmallCellCatalogueDegree",
+    "path": ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects/ResearchBounds/SmallCellCatalogueDegree.olean",
+    "sha256": "f65d1da370a49d0ffaab92c4e7623043d2476992a2ad1a7a3bcbc26ebdca6976",
+    "matched_authenticated_reuse_record": true
+  },
+  "portable_manifest_sha256": "a0fbc6641a573f46e3fbf50ec176297e54c7b23a18ca904cba5c9e53d388f27c",
+  "scope": "B+C canonical width computation; A normalization certificate and final canonicalBitCount composition still pending"
+}

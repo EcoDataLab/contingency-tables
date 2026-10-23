@@ -1,0 +1,1 @@
+<packet>/formal/ResearchPhysicalStar/Trial.lean:7:0: error: object file '<repo>/.local/further-gap/legacy-physical-completion-v1/attempt-01/objects/Math115/RetainedRoot.olean' of module Math115.RetainedRoot does not exist

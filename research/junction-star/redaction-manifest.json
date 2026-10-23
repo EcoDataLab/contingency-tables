@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "proof_source_changed": false,
+  "streams": [
+    {
+      "artifact": "results/compilation.stdout.txt",
+      "original_sha256": "a62c0c26d090228bd8db70f54c68acc1413c8cc29a0187fc635b6f94c3de43d0",
+      "public_sha256": "d4ab7e14242ecb14339f37c087ad359fc8961fa07722081f05706604d4745308",
+      "change": "Local absolute defining-source filename replaced by formal/Research/JunctionStarBridge.lean; all warning text preserved."
+    }
+  ],
+  "failed_attempt_stream_hashes": [
+    {
+      "returncode": 1,
+      "seconds": 0.197,
+      "stdout_sha256": "429dc618568603f1da44335625f7283a79dc10ada37a262e0a9b0f5045cb7fa4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": "5c0a630edbf6b3f0ca8ebdaf208746a33fb006901e748368a3c8465ff2fc7579"
+    },
+    {
+      "returncode": -6,
+      "seconds": 20.032,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "source_sha256": "5c0a630edbf6b3f0ca8ebdaf208746a33fb006901e748368a3c8465ff2fc7579"
+    }
+  ]
+}

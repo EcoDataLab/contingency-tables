@@ -1,0 +1,4 @@
+Math115.ReferenceRuntimeNext.typed_scaledWord : Typed scaledWordRealizer 144
+'Math115.ReferenceRuntimeNext.typed_scaledWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+Math115.ReferenceRuntimeNext.typed_offsetMatrix : Typed offsetMatrixRealizer 51756591887793869322498
+'Math115.ReferenceRuntimeNext.typed_offsetMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]

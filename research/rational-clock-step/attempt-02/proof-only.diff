@@ -1,0 +1,15 @@
+--- initial.lean
++++ checked.lean
+@@ -168 +168 @@
+-  · simp only [if_pos hxy, div_eq_mul_inv, mul_inv_rev]
++  · simp only [ite_eq_left hxy, div_eq_mul_inv, mul_inv_rev]
+@@ -170 +170 @@
+-  · simp only [if_neg hxy, zero_mul]
++  · simp only [ite_eq_right hxy, zero_mul]
+@@ -184,3 +184,3 @@
+-  · simp only [if_pos hxy, denominator, Rat.cast_div, Rat.cast_mul, Rat.cast_natCast,
+-      Nat.cast_mul, Nat.cast_ofNat]
+-  · simp only [if_neg hxy, Rat.cast_zero, zero_div]
++  · simp only [ite_eq_left hxy, denominator, Rat.cast_div, Rat.cast_mul, Rat.cast_natCast,
++      Nat.cast_mul, Nat.cast_ofNat, Rat.cast_ofNat]
++  · simp only [ite_eq_right hxy, Rat.cast_zero, zero_div]

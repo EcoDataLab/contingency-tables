@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "width_comparisons": [
+    {
+      "rows": [
+        2,
+        2
+      ],
+      "columns": [
+        3,
+        1
+      ],
+      "U": 9,
+      "V": 3,
+      "L": 1,
+      "V_below_2L": false,
+      "p": 4,
+      "states": 20,
+      "defects": 18,
+      "weights": [
+        1
+      ],
+      "cell_widths": [
+        3,
+        2,
+        3,
+        2
+      ],
+      "capacity_equality_seen": true,
+      "graph_weights_conductances_and_output_fibers_identical": true
+    },
+    {
+      "rows": [
+        3,
+        1
+      ],
+      "columns": [
+        2,
+        2
+      ],
+      "U": 9,
+      "V": 3,
+      "L": 1,
+      "V_below_2L": false,
+      "p": 4,
+      "states": 20,
+      "defects": 18,
+      "weights": [
+        1
+      ],
+      "cell_widths": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "capacity_equality_seen": true,
+      "graph_weights_conductances_and_output_fibers_identical": true
+    },
+    {
+      "rows": [
+        5,
+        1
+      ],
+      "columns": [
+        4,
+        2
+      ],
+      "U": 7,
+      "V": 5,
+      "L": 1,
+      "V_below_2L": false,
+      "p": 4,
+      "states": 20,
+      "defects": 18,
+      "weights": [
+        1
+      ],
+      "cell_widths": [
+        5,
+        3,
+        2,
+        2
+      ],
+      "capacity_equality_seen": true,
+      "graph_weights_conductances_and_output_fibers_identical": true
+    },
+    {
+      "rows": [
+        4,
+        4,
+        1
+      ],
+      "columns": [
+        4,
+        4,
+        1
+      ],
+      "U": 4,
+      "V": 2,
+      "L": 1,
+      "V_below_2L": false,
+      "p": 5,
+      "states": 49,
+      "defects": 44,
+      "weights": [
+        5,
+        6,
+        7
+      ],
+      "cell_widths": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "capacity_equality_seen": true,
+      "graph_weights_conductances_and_output_fibers_identical": true
+    },
+    {
+      "rows": [
+        4,
+        4,
+        1
+      ],
+      "columns": [
+        4,
+        4,
+        1
+      ],
+      "U": 4,
+      "V": 2,
+      "L": 78,
+      "V_below_2L": true,
+      "p": 5,
+      "states": 49,
+      "defects": 44,
+      "weights": [
+        159,
+        160,
+        161
+      ],
+      "cell_widths": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "capacity_equality_seen": true,
+      "graph_weights_conductances_and_output_fibers_identical": true
+    },
+    {
+      "rows": [
+        9,
+        8,
+        2
+      ],
+      "columns": [
+        9,
+        8,
+        2
+      ],
+      "U": 8,
+      "V": 3,
+      "L": 1,
+      "V_below_2L": false,
+      "p": 5,
+      "states": 174,
+      "defects": 160,
+      "weights": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "cell_widths": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "capacity_equality_seen": true,
+      "graph_weights_conductances_and_output_fibers_identical": true
+    },
+    {
+      "rows": [
+        0,
+        0
+      ],
+      "columns": [
+        0,
+        0
+      ],
+      "U": 9,
+      "V": 2,
+      "L": 1,
+      "V_below_2L": false,
+      "p": 4,
+      "states": 1,
+      "defects": 0,
+      "weights": [
+        1
+      ],
+      "cell_widths": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "capacity_equality_seen": false,
+      "graph_weights_conductances_and_output_fibers_identical": true
+    }
+  ],
+  "degree_obstructions": [
+    {
+      "m": 4,
+      "n": 4,
+      "small_rows": 2,
+      "small_columns": 2,
+      "p": 12,
+      "U": 214375,
+      "V": 2,
+      "L": 105,
+      "DD_degree": 12,
+      "unit_branch_degree_bound": 12,
+      "predicted_degree": "2N + N^2/2 - 4",
+      "evidence": "exact local exchange enumeration; no completion enumeration"
+    },
+    {
+      "m": 6,
+      "n": 6,
+      "small_rows": 3,
+      "small_columns": 3,
+      "p": 27,
+      "U": 1026895,
+      "V": 2,
+      "L": 177,
+      "DD_degree": 26,
+      "unit_branch_degree_bound": 20,
+      "predicted_degree": "2N + N^2/2 - 4",
+      "evidence": "exact local exchange enumeration; no completion enumeration"
+    },
+    {
+      "m": 8,
+      "n": 8,
+      "small_rows": 4,
+      "small_columns": 4,
+      "p": 48,
+      "U": 3767855,
+      "V": 2,
+      "L": 273,
+      "DD_degree": 44,
+      "unit_branch_degree_bound": 28,
+      "predicted_degree": "2N + N^2/2 - 4",
+      "evidence": "exact local exchange enumeration; no completion enumeration"
+    },
+    {
+      "m": 10,
+      "n": 10,
+      "small_rows": 5,
+      "small_columns": 5,
+      "p": 75,
+      "U": 11240455,
+      "V": 2,
+      "L": 393,
+      "DD_degree": 66,
+      "unit_branch_degree_bound": 36,
+      "predicted_degree": "2N + N^2/2 - 4",
+      "evidence": "exact local exchange enumeration; no completion enumeration"
+    }
+  ]
+}

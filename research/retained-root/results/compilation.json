@@ -1,0 +1,58 @@
+[
+  {
+    "module": "Math115.ShapeDegreeBound",
+    "source": "research/shape-refinement/formal/Math115/ShapeDegreeBound.lean",
+    "source_sha256": "0761f9e7503fdb0b72ceb7c34ce6d2e707afeb35901a96c37462eb99eee9c801",
+    "returncode": 0,
+    "seconds": 5.296,
+    "olean_sha256": "32136a8ce302f0a516d8a22bb9280d33deed758e02cabcbba12f0682208a4689"
+  },
+  {
+    "module": "Math115.RetainedRoot",
+    "source": "research/retained-root/formal/Math115/RetainedRoot.lean",
+    "source_sha256": "7f904f3497583644121f0ffe39da6b1cdc5c9a2c52df17b7404bd6eabd34b742",
+    "returncode": 0,
+    "seconds": 5.015,
+    "olean_sha256": "f726fc5c6fbfe9c1247b73dd0254a1aeed22148d6fb9384944b35ccd8aca89f4"
+  },
+  {
+    "module": "Research.RetainedRootTransport",
+    "source": "research/retained-root/formal/Research/RetainedRootTransport.lean",
+    "source_sha256": "dc99d8cb80b193ff99a6e598d6f4d53274180f737f012522a078503e752f8f4b",
+    "returncode": 0,
+    "seconds": 13.791,
+    "olean_sha256": "30fb54398c9eccaa5c3d30388b11802b10f72686d5080686e85896e4494c0905"
+  },
+  {
+    "module": "Research.RetainedRootPhysical",
+    "source": "research/retained-root/formal/Research/RetainedRootPhysical.lean",
+    "source_sha256": "f984b845bd099d8a85e13c22c79b1ed7398f8d80d3523aaa52d8e69e24326528",
+    "returncode": 0,
+    "seconds": 13.703,
+    "olean_sha256": "a8e18a4ad3d8718a6012ed9e1943819b1044cecc601c5120aeb028f0d127a77c"
+  },
+  {
+    "module": "Research.RetainedRootShifts",
+    "source": "research/retained-root/formal/Research/RetainedRootShifts.lean",
+    "source_sha256": "c144c912222aa05ee070db5eeed8b361458dd8fbb49571d1ba2fa81ec59fcf48",
+    "returncode": 0,
+    "seconds": 14.862,
+    "olean_sha256": "7b93a02474fba393f084bc8b3a3b5a5c32af52bc60f1d65172bb29619d3fc0dc"
+  },
+  {
+    "module": "Research.RetainedRootNonnegative",
+    "source": "research/retained-root/formal/Research/RetainedRootNonnegative.lean",
+    "source_sha256": "0cab3f0cb943c70443d429f1d44bfaa96cd9ed6f4ac0a00782e7842a1c961e26",
+    "returncode": 0,
+    "seconds": 14.168,
+    "olean_sha256": "b849e54d808ffde6a670f9fa312ed890daa1b6c1fb8c0a15e9e7c7c283dd545c"
+  },
+  {
+    "module": "ResearchAudit.EnvironmentAudit",
+    "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+    "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "returncode": 0,
+    "seconds": 1.557,
+    "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+  }
+]

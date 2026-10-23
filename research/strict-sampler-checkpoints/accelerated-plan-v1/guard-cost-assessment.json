@@ -1,0 +1,20 @@
+{
+  "compiler_exporter_kernel_cost_and_peak_memory_measured": false,
+  "evidence_class": "one measured exact call and source-derived multiplication; not full-run timing",
+  "full_proof_launched": false,
+  "guard_only_extrapolation_hours": 20.146192417666644,
+  "guard_only_extrapolation_seconds": 72526.29270359992,
+  "logical_cache_bytes": 9261675188,
+  "max_mean_guard_seconds_before_any_other_work": 14.537444933920705,
+  "module_cache_file_checks": 355853036,
+  "module_stat_guards": 2716,
+  "modules": 679,
+  "next_work": "Separately review an exact metadata traversal optimization, then require adversarial fixtures and bounded complete-cache snapshot equality/timing before any checker change. Prototype remains private.",
+  "runner_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6",
+  "scope": "Two steps per module and two checks per step, plus four extra steps. One observed stat-only duration multiplied by this count; caching, workload and later timings may differ. Not a mathematical floor or measured complete execution.",
+  "stat_only_guard_seconds": 26.62492389999997,
+  "stat_only_rehash": false,
+  "supported_inner_wall_seconds": 39600,
+  "total_stat_guards_if_full_execute_completes": 2724,
+  "trusted_cache_files": 131021
+}

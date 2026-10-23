@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-10-11T15:46:42.081896+00:00",
+  "status": "passed",
+  "baseline_commit": "b4c42e0c30b6bc68c0cad36215b3d06ece30bfd2",
+  "source_sha256": {
+    "src/contingency115/defect_chain.py": "c6b03090562ede0c3dfade19db295bffec29dd644e5fdd05580f12dc08b27d7f",
+    "tests/test_defect_chain.py": "cb491e30395e1674d9589498e6ed21f03847b4bff1199014834a98243f6e76b2",
+    "experiments/variable_capacity_transport.py": "064d2843cbe76c06bf4546fa60122149bf0bc2328e54dc9e3c356f37c5780208",
+    "experiments/general_defect_trace.py": "ec1e42760c2593cc48e04c3787d999447861fc4e833a6e0292a168c434844880",
+    "research/repair-accept/verify.py": "11a866863450e28412f22b598bfb508a38530e86b022e389146961920a183acd",
+    "research/rectangular-defect/formal/VariableWidthLimit.lean": "f0c521736be4900d55ea491cbe2be7842426084344668e5461790a37b1961e73"
+  },
+  "python_verification": {
+    "command": "make verify",
+    "returncode": 0,
+    "tests_passed": 359,
+    "tests_skipped": 1,
+    "skip": "optional SciPy baseline test",
+    "complete_log": "reports/defect-extensions-verify.log.gz",
+    "complete_log_sha256": "4260a1adb7f03ab062b4800952374fb0f3fbd7df802442efbb8e53ddc34ff3e8",
+    "includes": [
+      "core unit suite",
+      "archived finite audit",
+      "saved claims",
+      "source bundle",
+      "independent finite crosscheck",
+      "exact mixture replay"
+    ]
+  },
+  "finite_experiments": [
+    {
+      "command": "python3 experiments/variable_capacity_transport.py --output reports/variable-capacity-transport.json",
+      "returncode": 0,
+      "report": "reports/variable-capacity-transport.json",
+      "sha256": "bd54f87008b5d2f113f5c0bd3940ee5381ea6d0420862fa38a9dbcaed3b8c5fd"
+    },
+    {
+      "command": "python3 experiments/general_defect_trace.py --output reports/general-defect-trace.json",
+      "returncode": 0,
+      "report": "reports/general-defect-trace.json",
+      "sha256": "824ca9b1b40f45bc5fac493823a83d2d56db6f2f2419bc90fd35ce03b3ae4e4b"
+    }
+  ],
+  "lean": {
+    "scope": "Boxed variable-capacity hard-limit bridge; not the full new physical bound",
+    "verification": "research/rectangular-defect/results/verification.json",
+    "sha256": "a7a7617e647e4bbd4054090f2283c9ecd3d505a88a61f6ce792921a169d45cea",
+    "ordinary_compilation": "passed",
+    "environment_audit": "passed",
+    "strict_comparator": "not_run"
+  },
+  "mathematical_review": {
+    "reviewer_type": "separate AI agents reviewing AI-produced work",
+    "topics": [
+      "variable capacities and arbitrary-aspect inverse-gap derivation",
+      "weighted graph geometry, trace energy and accepted exit law",
+      "successful joint repair fibers and positive-margin output correction",
+      "finite-bit implementation and complete both-small error schedule"
+    ],
+    "outcome": "No blocking issue under the published hypotheses; zero-margin and padding-only scope counterexamples retained.",
+    "outside_human_review": false
+  },
+  "direct_execution_examples": [
+    {
+      "shape": [
+        20,
+        5
+      ],
+      "seed": 115,
+      "steps": 4000,
+      "fair_bits": 29680,
+      "attempts": 4,
+      "refreshes": 33,
+      "fallback": false,
+      "seconds": 0.24114637495949864,
+      "feasible": true,
+      "tv_allowance": "1",
+      "scope": "Feasibility and bounded execution demo; supplied delta=1 gives no accuracy claim."
+    },
+    {
+      "shape": [
+        5,
+        20
+      ],
+      "seed": 115,
+      "steps": 4000,
+      "fair_bits": 29680,
+      "attempts": 4,
+      "refreshes": 33,
+      "fallback": false,
+      "seconds": 0.24770274991169572,
+      "feasible": true,
+      "tv_allowance": "1",
+      "scope": "Feasibility and bounded execution demo; supplied delta=1 gives no accuracy claim."
+    }
+  ],
+  "unchanged_from_baseline": [
+    "formal/",
+    "115/",
+    "research/repair-accept/formal/",
+    "research/repair-accept/results/",
+    "research/outer-sampler/"
+  ],
+  "scope": "New mathematical derivations, finite experiments, bounded Python reference, and scoped ordinary Lean compilation. No new default-target build, general encoded sampler integration, full numeric bit-machine exponent, or practical mixing-speed claim."
+}

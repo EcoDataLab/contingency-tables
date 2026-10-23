@@ -1,0 +1,95 @@
+{
+  "status": "pass",
+  "scope": "five own modules ordinary local compilation; five focused closed headline axiom/type checks; independent Python field/arithmetic checks; Lean decimal-expression equality check; not default/strict/fresh-platform acceptance",
+  "compilation": [
+    {
+      "module": "CompleteDraw.Seams",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/Seams.lean",
+      "source_sha256": "4f02c59c3b89fc43ac8265cb8887c803eb60b1c0aa342bcc6b9db51746a20116",
+      "returncode": 0,
+      "olean_sha256": "1285dc740cf95e6382a7445e94e3d36a9c6b39ba911b8d3115cd6bf4631c6c03",
+      "seconds": 34.744
+    },
+    {
+      "module": "CompleteDraw.PublicBridge",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/PublicBridge.lean",
+      "source_sha256": "af30b0ec3632bef514e475e286606388c7d5089dac2ec9297760be496ad5a62c",
+      "returncode": 0,
+      "olean_sha256": "98311172924f39a020fac8900917ce73eccbb03e8120f71ae2d12607144302bd",
+      "seconds": 36.944
+    },
+    {
+      "module": "CompleteDraw.FinalBinding",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/FinalBinding.lean",
+      "source_sha256": "da7baf26d81e0959b9d795f20b9552a32428170b3caa5559b76d14108a7d5920",
+      "returncode": 0,
+      "olean_sha256": "a050b479dfc86776edb540fafa86066d706c348557ab2bbc4fdeb1c3d938423a",
+      "seconds": 35.8
+    },
+    {
+      "module": "CompleteDraw.FixedMachineTheorem",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/FixedMachineTheorem.lean",
+      "source_sha256": "34e65943767905e9bce4b0ccf88b8985d84a691ea06f50a1bc5ee569d2c0f672",
+      "returncode": 0,
+      "olean_sha256": "b099e243267870ec9da03bc697bc0f55c869bb3c4b7fdbb77b442ee6e93f1b7d",
+      "seconds": 31.98
+    },
+    {
+      "module": "CompleteDraw.Audit",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/Audit.lean",
+      "source_sha256": "6113f5cbd727763070b89e9b0b24510c24a71ad241bdcd98c159a0bd584aa15f",
+      "returncode": 0,
+      "olean_sha256": "ffba260f7555fb5a405c39f31f02694819edf3a23a55c0bc594852c6eeb0d213",
+      "seconds": 44.764
+    }
+  ],
+  "axioms": [
+    {
+      "name": "Math115.CompleteDrawNext.typed_actual_referencePackedTrial",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.CompleteDrawNext.typed_actual_publicDraw",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.CompleteDrawNext.actual_publicDraw_polynomial",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.CompleteDrawNext.machineTime_public_explicit_degree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.CompleteDrawNext.fixedMachineBoundedSampling_explicit_degree",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "audit_stdout_sha256": "0b71525cdac9915042f0ea48b855b44e0cb1e3558a17ca3260b834436e9d89d4",
+  "machine": "Math115.PublicLatticeSampler.machine",
+  "public_degree_decimal_digits": 4137,
+  "draw_degree_decimal_digits": 4134,
+  "field_count": 9,
+  "reference_source_sha256": "ce5fd794369db425d663746c65932f91d725208d12acc3be03215fcfe9a04e18",
+  "reference_object_sha256": "496c749e9c53a8023826a214cb83bc1304f8dadbfba494f131bf6445ac3d6999"
+}

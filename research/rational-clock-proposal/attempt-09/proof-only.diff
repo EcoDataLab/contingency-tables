@@ -1,0 +1,50 @@
+--- initial.lean
++++ checked.lean
+@@ -19 +19,2 @@
+-open OAI OAI.ContingencyTables
++open OAI OAI.ContingencyTables OAI.CommonBasesFPRAS
++open CompletionCounts
+@@ -47,0 +49 @@
++  have hb : V ≤ 2^(precision V) := Nat.le_pow_clog (by decide : 1 < 2) V
+@@ -50 +52 @@
+-    (intervalTrial (Nat.le_pow_clog (by decide : 1 < 2) V))
++    (intervalTrial hb)
+@@ -52,5 +54,4 @@
+-  change (mapLaw (uniformLaw (α := Fin (precision V) → Bool))
+-    (fun word => intervalTrial (Nat.le_pow_clog (by decide : 1 < 2) V)
+-      (binaryWordEquiv (precision V) word))).mass (some i) = _
+-  rw [← he, intervalTrial_mass]
+-  norm_cast
++  have hm := congrArg (fun q : RationalLaw (Option (Fin V)) => q.mass (some i)) he.symm
++  exact hm.trans (by
++    simpa only [Nat.cast_pow, Nat.cast_ofNat] using
++      intervalTrial_mass hb i)
+@@ -157,0 +159,11 @@
++
++/-- The output equality decision does not change the law. Keeping it
++explicit prevents concrete state enumeration during instance matching. -/
++theorem cappedList_variation_decidableEq (dec : DecidableEq (Option X))
++    (V : ℕ) (hV : 0 < V) (xs : List X) (N : ℕ) :
++    variation
++      (@mapLaw (Fin (N * precision V) → Bool) (Option X) _ _ dec
++        (uniformLaw (α := Fin (N * precision V) → Bool)) (cappedList V xs N))
++      (idealListLaw V hV xs) ≤ (1 / 2 : ℚ)^N := by
++  rw [mapLaw_decidableEq_irrel dec (@Option.instDecidableEq X inferInstance)]
++  exact cappedList_variation V hV xs N
+@@ -238,3 +250,4 @@
+-      (idealPhysicalProposalLaw r c U L hp x) ≤ (1 / 2 : ℚ)^N :=
+-  cappedList_variation (denominator r c U) (denominator_pos r c U hp)
+-    (physicalNeighbors r c U L x.val) N
++      (idealPhysicalProposalLaw r c U L hp x) ≤ (1 / 2 : ℚ)^N := by
++  exact cappedList_variation_decidableEq (X := States r c U L)
++    (inferInstance : DecidableEq (Option (States r c U L)))
++    (denominator r c U) (denominator_pos r c U hp) (physicalNeighbors r c U L x.val) N
+@@ -254 +267 @@
+-  rw [physicalNeighbors, mem_codeNeighborStates r c U L (computedCellEquiv r c U) htotal]
++  simp only [physicalNeighbors, mem_codeNeighborStates r c U L (computedCellEquiv r c U) htotal]
+@@ -258,2 +271,3 @@
+-  simp only [denominator, Rat.cast_div, Rat.cast_one, Rat.cast_natCast,
+-    Nat.cast_mul, Nat.cast_ofNat]
++  unfold denominator
++  push_cast
++  rfl

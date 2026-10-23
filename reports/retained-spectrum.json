@@ -1,0 +1,1911 @@
+{
+  "checks": "passed",
+  "scope": "exact abstract finite-path matrix certificates; no physical transport or sampler runtime claim",
+  "method": "Fraction arithmetic and exact symmetric Schur-complement PSD checks",
+  "normalization": {
+    "variance": "sum_i z_i (h_i - sum_j z_j h_j/Z)^2",
+    "energy": "sum_l (h_(l-1)-h_l)^2/(Xi_l+epsilon), unordered edges once",
+    "comparison_matrix": "[N(N+1)+2K+epsilon*N*Z/4]*L - [diag(z)-zz^T/Z]",
+    "limiting_coefficient": "N(N+1)+2K"
+  },
+  "counts": {
+    "cases": 150,
+    "regularized_psd_certificates": 450,
+    "validator_negative_controls": 3,
+    "cases_with_zero_Xi": 13,
+    "zero_Xi_edges": 20,
+    "cases_with_nonzero_exterior_c": 20,
+    "adjacent_mass_orders": {
+      "decreasing": 243,
+      "equal": 198,
+      "increasing": 243
+    }
+  },
+  "epsilons": [
+    "1/3",
+    "1/30",
+    "1/300000"
+  ],
+  "families": {
+    "geometric_ascending": 32,
+    "geometric_descending": 32,
+    "geometric_tent": 21,
+    "linear_tent": 21,
+    "nonzero_exterior": 8,
+    "unequal_zero_resistance": 4,
+    "uniform": 24,
+    "zero_resistance_boundary": 8
+  },
+  "canonical_inputs_sha256": "db75f5866c34e7315dd396d015a4f1e08ef6e19eb95f7800e2958204b49e54cb",
+  "witnesses": [
+    {
+      "id": "uniform-001",
+      "family": "uniform",
+      "weights": [
+        1,
+        1
+      ],
+      "correction": [
+        "0",
+        "0",
+        "0"
+      ],
+      "K": 0,
+      "mode": 0,
+      "Xi": [
+        "2"
+      ],
+      "certificates": [
+        {
+          "epsilon": "1/3",
+          "coefficient": "13/6",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/30",
+          "coefficient": "121/60",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/300000",
+          "coefficient": "1200001/600000",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        }
+      ]
+    },
+    {
+      "id": "geometric_ascending-025",
+      "family": "geometric_ascending",
+      "weights": [
+        1,
+        2
+      ],
+      "correction": [
+        "0",
+        "0",
+        "0"
+      ],
+      "K": 0,
+      "mode": 1,
+      "Xi": [
+        "3/2"
+      ],
+      "certificates": [
+        {
+          "epsilon": "1/3",
+          "coefficient": "9/4",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/30",
+          "coefficient": "81/40",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/300000",
+          "coefficient": "800001/400000",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        }
+      ]
+    },
+    {
+      "id": "geometric_descending-027",
+      "family": "geometric_descending",
+      "weights": [
+        2,
+        1
+      ],
+      "correction": [
+        "0",
+        "0",
+        "0"
+      ],
+      "K": 0,
+      "mode": 0,
+      "Xi": [
+        "3/2"
+      ],
+      "certificates": [
+        {
+          "epsilon": "1/3",
+          "coefficient": "9/4",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/30",
+          "coefficient": "81/40",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/300000",
+          "coefficient": "800001/400000",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        }
+      ]
+    },
+    {
+      "id": "geometric_tent-089",
+      "family": "geometric_tent",
+      "weights": [
+        1,
+        2,
+        1
+      ],
+      "correction": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "K": 0,
+      "mode": 1,
+      "Xi": [
+        "3/2",
+        "3/2"
+      ],
+      "certificates": [
+        {
+          "epsilon": "1/3",
+          "coefficient": "20/3",
+          "matrix_rank": 2,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/30",
+          "coefficient": "91/15",
+          "matrix_rank": 2,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/300000",
+          "coefficient": "900001/150000",
+          "matrix_rank": 2,
+          "matrix_nullity": 1,
+          "psd": true
+        }
+      ]
+    },
+    {
+      "id": "linear_tent-110",
+      "family": "linear_tent",
+      "weights": [
+        1,
+        2,
+        1
+      ],
+      "correction": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "K": 0,
+      "mode": 1,
+      "Xi": [
+        "3/2",
+        "3/2"
+      ],
+      "certificates": [
+        {
+          "epsilon": "1/3",
+          "coefficient": "20/3",
+          "matrix_rank": 2,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/30",
+          "coefficient": "91/15",
+          "matrix_rank": 2,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/300000",
+          "coefficient": "900001/150000",
+          "matrix_rank": 2,
+          "matrix_nullity": 1,
+          "psd": true
+        }
+      ]
+    },
+    {
+      "id": "zero_resistance_boundary-131",
+      "family": "zero_resistance_boundary",
+      "weights": [
+        1,
+        1
+      ],
+      "correction": [
+        "2",
+        "1",
+        "2"
+      ],
+      "K": 1,
+      "mode": 0,
+      "Xi": [
+        "0"
+      ],
+      "certificates": [
+        {
+          "epsilon": "1/3",
+          "coefficient": "25/6",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/30",
+          "coefficient": "241/60",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/300000",
+          "coefficient": "2400001/600000",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        }
+      ]
+    },
+    {
+      "id": "nonzero_exterior-139",
+      "family": "nonzero_exterior",
+      "weights": [
+        1,
+        1
+      ],
+      "correction": [
+        "3",
+        "2",
+        "3"
+      ],
+      "K": 2,
+      "mode": 0,
+      "Xi": [
+        "0"
+      ],
+      "certificates": [
+        {
+          "epsilon": "1/3",
+          "coefficient": "37/6",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/30",
+          "coefficient": "361/60",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/300000",
+          "coefficient": "3600001/600000",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        }
+      ]
+    },
+    {
+      "id": "unequal_zero_resistance-147",
+      "family": "unequal_zero_resistance",
+      "weights": [
+        1,
+        2
+      ],
+      "correction": [
+        "3/2",
+        "0",
+        "0"
+      ],
+      "K": 0,
+      "mode": 1,
+      "Xi": [
+        "0"
+      ],
+      "certificates": [
+        {
+          "epsilon": "1/3",
+          "coefficient": "9/4",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/30",
+          "coefficient": "81/40",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        },
+        {
+          "epsilon": "1/300000",
+          "coefficient": "800001/400000",
+          "matrix_rank": 1,
+          "matrix_nullity": 1,
+          "psd": true
+        }
+      ]
+    }
+  ],
+  "case_catalog": [
+    {
+      "id": "uniform-001",
+      "family": "uniform",
+      "N": 1,
+      "K": 0,
+      "Z": 2,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 2,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-002",
+      "family": "uniform",
+      "N": 1,
+      "K": 1,
+      "Z": 2,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 4,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-003",
+      "family": "uniform",
+      "N": 1,
+      "K": 4,
+      "Z": 2,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 10,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-004",
+      "family": "uniform",
+      "N": 2,
+      "K": 0,
+      "Z": 3,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-005",
+      "family": "uniform",
+      "N": 2,
+      "K": 1,
+      "Z": 3,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 8,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-006",
+      "family": "uniform",
+      "N": 2,
+      "K": 4,
+      "Z": 3,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 14,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-007",
+      "family": "uniform",
+      "N": 3,
+      "K": 0,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 12,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-008",
+      "family": "uniform",
+      "N": 3,
+      "K": 1,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 14,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-009",
+      "family": "uniform",
+      "N": 3,
+      "K": 4,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 20,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-010",
+      "family": "uniform",
+      "N": 4,
+      "K": 0,
+      "Z": 5,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 20,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-011",
+      "family": "uniform",
+      "N": 4,
+      "K": 1,
+      "Z": 5,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 22,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-012",
+      "family": "uniform",
+      "N": 4,
+      "K": 4,
+      "Z": 5,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 28,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-013",
+      "family": "uniform",
+      "N": 5,
+      "K": 0,
+      "Z": 6,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 30,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-014",
+      "family": "uniform",
+      "N": 5,
+      "K": 1,
+      "Z": 6,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 32,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-015",
+      "family": "uniform",
+      "N": 5,
+      "K": 4,
+      "Z": 6,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 38,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-016",
+      "family": "uniform",
+      "N": 6,
+      "K": 0,
+      "Z": 7,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 42,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-017",
+      "family": "uniform",
+      "N": 6,
+      "K": 1,
+      "Z": 7,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 44,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-018",
+      "family": "uniform",
+      "N": 6,
+      "K": 4,
+      "Z": 7,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 50,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-019",
+      "family": "uniform",
+      "N": 7,
+      "K": 0,
+      "Z": 8,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 56,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-020",
+      "family": "uniform",
+      "N": 7,
+      "K": 1,
+      "Z": 8,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 58,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-021",
+      "family": "uniform",
+      "N": 7,
+      "K": 4,
+      "Z": 8,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 64,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-022",
+      "family": "uniform",
+      "N": 8,
+      "K": 0,
+      "Z": 9,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 72,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-023",
+      "family": "uniform",
+      "N": 8,
+      "K": 1,
+      "Z": 9,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 74,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "uniform-024",
+      "family": "uniform",
+      "N": 8,
+      "K": 4,
+      "Z": 9,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 80,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-025",
+      "family": "geometric_ascending",
+      "N": 1,
+      "K": 0,
+      "Z": 3,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 2,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-026",
+      "family": "geometric_ascending",
+      "N": 1,
+      "K": 2,
+      "Z": 3,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-027",
+      "family": "geometric_descending",
+      "N": 1,
+      "K": 0,
+      "Z": 3,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 2,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-028",
+      "family": "geometric_descending",
+      "N": 1,
+      "K": 2,
+      "Z": 3,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-029",
+      "family": "geometric_ascending",
+      "N": 1,
+      "K": 0,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 2,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-030",
+      "family": "geometric_ascending",
+      "N": 1,
+      "K": 2,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-031",
+      "family": "geometric_descending",
+      "N": 1,
+      "K": 0,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 2,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-032",
+      "family": "geometric_descending",
+      "N": 1,
+      "K": 2,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-033",
+      "family": "geometric_ascending",
+      "N": 2,
+      "K": 0,
+      "Z": 7,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-034",
+      "family": "geometric_ascending",
+      "N": 2,
+      "K": 2,
+      "Z": 7,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 10,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-035",
+      "family": "geometric_descending",
+      "N": 2,
+      "K": 0,
+      "Z": 7,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-036",
+      "family": "geometric_descending",
+      "N": 2,
+      "K": 2,
+      "Z": 7,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 10,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-037",
+      "family": "geometric_ascending",
+      "N": 2,
+      "K": 0,
+      "Z": 13,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-038",
+      "family": "geometric_ascending",
+      "N": 2,
+      "K": 2,
+      "Z": 13,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 10,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-039",
+      "family": "geometric_descending",
+      "N": 2,
+      "K": 0,
+      "Z": 13,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-040",
+      "family": "geometric_descending",
+      "N": 2,
+      "K": 2,
+      "Z": 13,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 10,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-041",
+      "family": "geometric_ascending",
+      "N": 3,
+      "K": 0,
+      "Z": 15,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 12,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-042",
+      "family": "geometric_ascending",
+      "N": 3,
+      "K": 2,
+      "Z": 15,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 16,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-043",
+      "family": "geometric_descending",
+      "N": 3,
+      "K": 0,
+      "Z": 15,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 12,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-044",
+      "family": "geometric_descending",
+      "N": 3,
+      "K": 2,
+      "Z": 15,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 16,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-045",
+      "family": "geometric_ascending",
+      "N": 3,
+      "K": 0,
+      "Z": 40,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 12,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-046",
+      "family": "geometric_ascending",
+      "N": 3,
+      "K": 2,
+      "Z": 40,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 16,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-047",
+      "family": "geometric_descending",
+      "N": 3,
+      "K": 0,
+      "Z": 40,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 12,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-048",
+      "family": "geometric_descending",
+      "N": 3,
+      "K": 2,
+      "Z": 40,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 16,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-049",
+      "family": "geometric_ascending",
+      "N": 4,
+      "K": 0,
+      "Z": 31,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 20,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-050",
+      "family": "geometric_ascending",
+      "N": 4,
+      "K": 2,
+      "Z": 31,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 24,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-051",
+      "family": "geometric_descending",
+      "N": 4,
+      "K": 0,
+      "Z": 31,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 20,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-052",
+      "family": "geometric_descending",
+      "N": 4,
+      "K": 2,
+      "Z": 31,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 24,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-053",
+      "family": "geometric_ascending",
+      "N": 4,
+      "K": 0,
+      "Z": 121,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 20,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-054",
+      "family": "geometric_ascending",
+      "N": 4,
+      "K": 2,
+      "Z": 121,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 24,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-055",
+      "family": "geometric_descending",
+      "N": 4,
+      "K": 0,
+      "Z": 121,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 20,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-056",
+      "family": "geometric_descending",
+      "N": 4,
+      "K": 2,
+      "Z": 121,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 24,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-057",
+      "family": "geometric_ascending",
+      "N": 5,
+      "K": 0,
+      "Z": 63,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 30,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-058",
+      "family": "geometric_ascending",
+      "N": 5,
+      "K": 2,
+      "Z": 63,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 34,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-059",
+      "family": "geometric_descending",
+      "N": 5,
+      "K": 0,
+      "Z": 63,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 30,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-060",
+      "family": "geometric_descending",
+      "N": 5,
+      "K": 2,
+      "Z": 63,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 34,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-061",
+      "family": "geometric_ascending",
+      "N": 5,
+      "K": 0,
+      "Z": 364,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 30,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-062",
+      "family": "geometric_ascending",
+      "N": 5,
+      "K": 2,
+      "Z": 364,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 34,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-063",
+      "family": "geometric_descending",
+      "N": 5,
+      "K": 0,
+      "Z": 364,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 30,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-064",
+      "family": "geometric_descending",
+      "N": 5,
+      "K": 2,
+      "Z": 364,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 34,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-065",
+      "family": "geometric_ascending",
+      "N": 6,
+      "K": 0,
+      "Z": 127,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 42,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-066",
+      "family": "geometric_ascending",
+      "N": 6,
+      "K": 2,
+      "Z": 127,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 46,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-067",
+      "family": "geometric_descending",
+      "N": 6,
+      "K": 0,
+      "Z": 127,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 42,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-068",
+      "family": "geometric_descending",
+      "N": 6,
+      "K": 2,
+      "Z": 127,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 46,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-069",
+      "family": "geometric_ascending",
+      "N": 6,
+      "K": 0,
+      "Z": 1093,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 42,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-070",
+      "family": "geometric_ascending",
+      "N": 6,
+      "K": 2,
+      "Z": 1093,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 46,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-071",
+      "family": "geometric_descending",
+      "N": 6,
+      "K": 0,
+      "Z": 1093,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 42,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-072",
+      "family": "geometric_descending",
+      "N": 6,
+      "K": 2,
+      "Z": 1093,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 46,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-073",
+      "family": "geometric_ascending",
+      "N": 7,
+      "K": 0,
+      "Z": 255,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 56,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-074",
+      "family": "geometric_ascending",
+      "N": 7,
+      "K": 2,
+      "Z": 255,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 60,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-075",
+      "family": "geometric_descending",
+      "N": 7,
+      "K": 0,
+      "Z": 255,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 56,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-076",
+      "family": "geometric_descending",
+      "N": 7,
+      "K": 2,
+      "Z": 255,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 60,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-077",
+      "family": "geometric_ascending",
+      "N": 7,
+      "K": 0,
+      "Z": 3280,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 56,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-078",
+      "family": "geometric_ascending",
+      "N": 7,
+      "K": 2,
+      "Z": 3280,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 60,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-079",
+      "family": "geometric_descending",
+      "N": 7,
+      "K": 0,
+      "Z": 3280,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 56,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-080",
+      "family": "geometric_descending",
+      "N": 7,
+      "K": 2,
+      "Z": 3280,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 60,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-081",
+      "family": "geometric_ascending",
+      "N": 8,
+      "K": 0,
+      "Z": 511,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 72,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-082",
+      "family": "geometric_ascending",
+      "N": 8,
+      "K": 2,
+      "Z": 511,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 76,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-083",
+      "family": "geometric_descending",
+      "N": 8,
+      "K": 0,
+      "Z": 511,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 72,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-084",
+      "family": "geometric_descending",
+      "N": 8,
+      "K": 2,
+      "Z": 511,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 76,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-085",
+      "family": "geometric_ascending",
+      "N": 8,
+      "K": 0,
+      "Z": 9841,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 72,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_ascending-086",
+      "family": "geometric_ascending",
+      "N": 8,
+      "K": 2,
+      "Z": 9841,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 76,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-087",
+      "family": "geometric_descending",
+      "N": 8,
+      "K": 0,
+      "Z": 9841,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 72,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_descending-088",
+      "family": "geometric_descending",
+      "N": 8,
+      "K": 2,
+      "Z": 9841,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 76,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-089",
+      "family": "geometric_tent",
+      "N": 2,
+      "K": 0,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-090",
+      "family": "geometric_tent",
+      "N": 2,
+      "K": 1,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 8,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-091",
+      "family": "geometric_tent",
+      "N": 2,
+      "K": 4,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 14,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-092",
+      "family": "geometric_tent",
+      "N": 3,
+      "K": 0,
+      "Z": 6,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 12,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-093",
+      "family": "geometric_tent",
+      "N": 3,
+      "K": 1,
+      "Z": 6,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 14,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-094",
+      "family": "geometric_tent",
+      "N": 3,
+      "K": 4,
+      "Z": 6,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 20,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-095",
+      "family": "geometric_tent",
+      "N": 4,
+      "K": 0,
+      "Z": 10,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 20,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-096",
+      "family": "geometric_tent",
+      "N": 4,
+      "K": 1,
+      "Z": 10,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 22,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-097",
+      "family": "geometric_tent",
+      "N": 4,
+      "K": 4,
+      "Z": 10,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 28,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-098",
+      "family": "geometric_tent",
+      "N": 5,
+      "K": 0,
+      "Z": 14,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 30,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-099",
+      "family": "geometric_tent",
+      "N": 5,
+      "K": 1,
+      "Z": 14,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 32,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-100",
+      "family": "geometric_tent",
+      "N": 5,
+      "K": 4,
+      "Z": 14,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 38,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-101",
+      "family": "geometric_tent",
+      "N": 6,
+      "K": 0,
+      "Z": 22,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 42,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-102",
+      "family": "geometric_tent",
+      "N": 6,
+      "K": 1,
+      "Z": 22,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 44,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-103",
+      "family": "geometric_tent",
+      "N": 6,
+      "K": 4,
+      "Z": 22,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 50,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-104",
+      "family": "geometric_tent",
+      "N": 7,
+      "K": 0,
+      "Z": 30,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 56,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-105",
+      "family": "geometric_tent",
+      "N": 7,
+      "K": 1,
+      "Z": 30,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 58,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-106",
+      "family": "geometric_tent",
+      "N": 7,
+      "K": 4,
+      "Z": 30,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 64,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-107",
+      "family": "geometric_tent",
+      "N": 8,
+      "K": 0,
+      "Z": 46,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 72,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-108",
+      "family": "geometric_tent",
+      "N": 8,
+      "K": 1,
+      "Z": 46,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 74,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "geometric_tent-109",
+      "family": "geometric_tent",
+      "N": 8,
+      "K": 4,
+      "Z": 46,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 80,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-110",
+      "family": "linear_tent",
+      "N": 2,
+      "K": 0,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-111",
+      "family": "linear_tent",
+      "N": 2,
+      "K": 1,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 8,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-112",
+      "family": "linear_tent",
+      "N": 2,
+      "K": 4,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 14,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-113",
+      "family": "linear_tent",
+      "N": 3,
+      "K": 0,
+      "Z": 6,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 12,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-114",
+      "family": "linear_tent",
+      "N": 3,
+      "K": 1,
+      "Z": 6,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 14,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-115",
+      "family": "linear_tent",
+      "N": 3,
+      "K": 4,
+      "Z": 6,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 20,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-116",
+      "family": "linear_tent",
+      "N": 4,
+      "K": 0,
+      "Z": 9,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 20,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-117",
+      "family": "linear_tent",
+      "N": 4,
+      "K": 1,
+      "Z": 9,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 22,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-118",
+      "family": "linear_tent",
+      "N": 4,
+      "K": 4,
+      "Z": 9,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 28,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-119",
+      "family": "linear_tent",
+      "N": 5,
+      "K": 0,
+      "Z": 12,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 30,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-120",
+      "family": "linear_tent",
+      "N": 5,
+      "K": 1,
+      "Z": 12,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 32,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-121",
+      "family": "linear_tent",
+      "N": 5,
+      "K": 4,
+      "Z": 12,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 38,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-122",
+      "family": "linear_tent",
+      "N": 6,
+      "K": 0,
+      "Z": 16,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 42,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-123",
+      "family": "linear_tent",
+      "N": 6,
+      "K": 1,
+      "Z": 16,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 44,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-124",
+      "family": "linear_tent",
+      "N": 6,
+      "K": 4,
+      "Z": 16,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 50,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-125",
+      "family": "linear_tent",
+      "N": 7,
+      "K": 0,
+      "Z": 20,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 56,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-126",
+      "family": "linear_tent",
+      "N": 7,
+      "K": 1,
+      "Z": 20,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 58,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-127",
+      "family": "linear_tent",
+      "N": 7,
+      "K": 4,
+      "Z": 20,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 64,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-128",
+      "family": "linear_tent",
+      "N": 8,
+      "K": 0,
+      "Z": 25,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 72,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-129",
+      "family": "linear_tent",
+      "N": 8,
+      "K": 1,
+      "Z": 25,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 74,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "linear_tent-130",
+      "family": "linear_tent",
+      "N": 8,
+      "K": 4,
+      "Z": 25,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 80,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "zero_resistance_boundary-131",
+      "family": "zero_resistance_boundary",
+      "N": 1,
+      "K": 1,
+      "Z": 2,
+      "zero_Xi_edges": [
+        1
+      ],
+      "limiting_coefficient": 4,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "zero_resistance_boundary-132",
+      "family": "zero_resistance_boundary",
+      "N": 2,
+      "K": 1,
+      "Z": 3,
+      "zero_Xi_edges": [
+        1,
+        2
+      ],
+      "limiting_coefficient": 8,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "zero_resistance_boundary-133",
+      "family": "zero_resistance_boundary",
+      "N": 3,
+      "K": 1,
+      "Z": 4,
+      "zero_Xi_edges": [
+        1,
+        3
+      ],
+      "limiting_coefficient": 14,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "zero_resistance_boundary-134",
+      "family": "zero_resistance_boundary",
+      "N": 4,
+      "K": 1,
+      "Z": 5,
+      "zero_Xi_edges": [
+        1,
+        4
+      ],
+      "limiting_coefficient": 22,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "zero_resistance_boundary-135",
+      "family": "zero_resistance_boundary",
+      "N": 5,
+      "K": 1,
+      "Z": 6,
+      "zero_Xi_edges": [
+        1,
+        5
+      ],
+      "limiting_coefficient": 32,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "zero_resistance_boundary-136",
+      "family": "zero_resistance_boundary",
+      "N": 6,
+      "K": 1,
+      "Z": 7,
+      "zero_Xi_edges": [
+        1,
+        6
+      ],
+      "limiting_coefficient": 44,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "zero_resistance_boundary-137",
+      "family": "zero_resistance_boundary",
+      "N": 7,
+      "K": 1,
+      "Z": 8,
+      "zero_Xi_edges": [
+        1,
+        7
+      ],
+      "limiting_coefficient": 58,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "zero_resistance_boundary-138",
+      "family": "zero_resistance_boundary",
+      "N": 8,
+      "K": 1,
+      "Z": 9,
+      "zero_Xi_edges": [
+        1,
+        8
+      ],
+      "limiting_coefficient": 74,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "nonzero_exterior-139",
+      "family": "nonzero_exterior",
+      "N": 1,
+      "K": 2,
+      "Z": 2,
+      "zero_Xi_edges": [
+        1
+      ],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "nonzero_exterior-140",
+      "family": "nonzero_exterior",
+      "N": 2,
+      "K": 2,
+      "Z": 3,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 10,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "nonzero_exterior-141",
+      "family": "nonzero_exterior",
+      "N": 3,
+      "K": 2,
+      "Z": 4,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 16,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "nonzero_exterior-142",
+      "family": "nonzero_exterior",
+      "N": 4,
+      "K": 2,
+      "Z": 5,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 24,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "nonzero_exterior-143",
+      "family": "nonzero_exterior",
+      "N": 5,
+      "K": 2,
+      "Z": 6,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 34,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "nonzero_exterior-144",
+      "family": "nonzero_exterior",
+      "N": 6,
+      "K": 2,
+      "Z": 7,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 46,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "nonzero_exterior-145",
+      "family": "nonzero_exterior",
+      "N": 7,
+      "K": 2,
+      "Z": 8,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 60,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "nonzero_exterior-146",
+      "family": "nonzero_exterior",
+      "N": 8,
+      "K": 2,
+      "Z": 9,
+      "zero_Xi_edges": [],
+      "limiting_coefficient": 76,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "unequal_zero_resistance-147",
+      "family": "unequal_zero_resistance",
+      "N": 1,
+      "K": 0,
+      "Z": 3,
+      "zero_Xi_edges": [
+        1
+      ],
+      "limiting_coefficient": 2,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "unequal_zero_resistance-148",
+      "family": "unequal_zero_resistance",
+      "N": 1,
+      "K": 0,
+      "Z": 3,
+      "zero_Xi_edges": [
+        1
+      ],
+      "limiting_coefficient": 2,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "unequal_zero_resistance-149",
+      "family": "unequal_zero_resistance",
+      "N": 2,
+      "K": 0,
+      "Z": 6,
+      "zero_Xi_edges": [
+        1
+      ],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    },
+    {
+      "id": "unequal_zero_resistance-150",
+      "family": "unequal_zero_resistance",
+      "N": 2,
+      "K": 0,
+      "Z": 6,
+      "zero_Xi_edges": [
+        1
+      ],
+      "limiting_coefficient": 6,
+      "regularized_certificates": 3
+    }
+  ]
+}

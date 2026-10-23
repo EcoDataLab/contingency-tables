@@ -1,0 +1,6 @@
+{
+  "statement_and_definition_text_unchanged": true,
+  "change": "Derive local Nonempty from existing fallback; remove unreachable tactic.",
+  "attempt_01_source_sha256": "eac3a5a361604cf259543cfe40a77e7aa58a899f58fdec115a34c85652aacc6d",
+  "attempt_02_source_sha256": "aaefb6c127088465de51c20d4278583c1928eb1eacb863370f2f1eaeb9ebc9d7"
+}

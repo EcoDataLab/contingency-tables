@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "recorded_utc": "2026-10-11T20:01:50.490910+00:00",
+  "source_checkout_base_commit": "2b51072632c481f406ba762652b4f0ed32616e71",
+  "source_sha256": {
+    "README.md": "23153e9de7ef895c55bd85147bd5b9328f386a172dbc11d5db5cfb27160a23ab",
+    "claims.json": "7d12c118aebc63dbf8a51fa19920c9cb61490d22b4bf5fbf074b27f8d2c0bda2",
+    "docs/claims-and-evidence.md": "3f95e431c97e54927286ff6387b837e57a71abded57f4190208bd9e1605ffd7c",
+    "docs/further-shape-bounds.md": "b20e9e4f52f53aa9b7841b55db56accf59068f9bf0fc6f2f754dfd91d449010a",
+    "docs/generic-repair-limit.md": "6a801ec094c16beb002c164703a0b2b7e43937c59d6df85e58c736b9582dd96b",
+    "docs/handoff.md": "3bec5820b2ef632c0abb1dd407640e8b4b85133174a7098918760280030f2531",
+    "docs/physical-spectral-chain.md": "fa21eb7763dcf8f201c4539985235879971e4f18edb9393670b57b31b936f321",
+    "docs/physical-spectral-review.md": "86c74a60aeb9aaa40cd001a579ed09d74cb29e03acb43d3898ef301002363f0f",
+    "docs/reciprocal-padding-growth.md": "5d64f2161a742becd2646520a797fda3f508e05bbde73d051f07866fea44e44f",
+    "docs/retained-root-spectrum.md": "72bcaaf36bb1240f2225664cdfb848e7af0d289f3709c2a4055fae897c1592c2",
+    "docs/status.md": "34a7e97be7f8d885aea9ac32d6b28beb09047dff120b459d6f035b9af4d652ea",
+    "experiments/direct_defect_variance.py": "8b0871f21dc7368b2e7438cf39ba6e5b901a3b6ed11278d0f0f4b4d3ea8c0edb",
+    "formal/Math115/ReferenceEdgeAcceptance.lean": "3e9973e6c5b97356d1222fc301f4cf5dfd4865045b0b89ae25b4c3e5cf8f93b8",
+    "formal/ResearchAudit/EnvironmentAudit.lean": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "research/constant-padding/formal/Research/CompositionSurvival.lean": "beb210c1b51b8a5c4d2dc1e9fb50f60dd0a051d285ca93b152712c9411cb2f34",
+    "research/constant-padding/formal/Research/ReciprocalZero.lean": "934014bbc94997ac33f7f784c4cc7321153ad33f87c85dafceb81fa8ac6333c5",
+    "research/constant-padding/formal/Research/ReciprocalZeroPhysical.lean": "0d95bd552e99d02152d9622801b7f9cfaa7731ae24133151b17c4dd18c9259df",
+    "research/constant-padding/formal/Research/SurvivalConvolution.lean": "c727ba56e6bc9c29df8bdebff2c7bffc4400c3a68be314faec363ef22875dbba",
+    "research/constant-padding/formal/Research/WeightedIncidence.lean": "ee418b3450ecd799b3ca50ed1e13582f20aa7e39af3b3e569bd33c63eb416ee1",
+    "research/physical-spectral/README.md": "bc0ec540706895be4482304c532a52bf8e56ce35c5182bf98d49c04c2a30ecd2",
+    "research/physical-spectral/formal/Research/ReciprocalCount.lean": "968db28098395c86d27d4d7ea38f2f7269ca7b0615ff41b47c0e80500034f08f",
+    "research/physical-spectral/formal/Research/RetainedChainSquare.lean": "690b2c537d92030acf20a2f42cec3651f9eb1170f902f39b15a7020d86a6673a",
+    "research/physical-spectral/formal/Research/RetainedChainSquareTotal.lean": "a08beb335334980b538af2a97dbe277500df0f50f331741e678c503cbe6a0fba",
+    "research/physical-spectral/formal/Research/RetainedContextVariance.lean": "bdfac5de5cf3e985e60519036600da669c42a4de82fb424d63d76253ac4373aa",
+    "research/physical-spectral/formal/Research/RetainedRepairSquare.lean": "9483e6367d384ff5959199707173b950652f909005859dfe6c9d715cec220740",
+    "research/physical-spectral/formal/Research/RetainedTransversalVariance.lean": "62bbf88c60da87c83facb4573071dacc6e3c8adb43fdf66a46cdfebdc0ec3dc1",
+    "research/repair-accept/verify.py": "b0bf61fd98745c9005fde06eceb96eef0369612f213f2eaab411b0f10ad2d8a3",
+    "research/retained-root/README.md": "321cf00c5d216309bdacdf83a8ba3fc8e2f44ce36dd83a4d67988eb5d613ab05",
+    "research/retained-root/formal/Math115/RetainedRoot.lean": "7f904f3497583644121f0ffe39da6b1cdc5c9a2c52df17b7404bd6eabd34b742",
+    "research/retained-root/formal/Math115/RetainedRootSquare.lean": "7169a4459f96fb32495a8366c81e755645648800f8426032c72ab4c694b5a244",
+    "research/retained-root/formal/Research/GrowthScalar.lean": "ead59d120b639d883ceb6cbc34e508b6b4656a7af2bc294d79a59bc5868bbded",
+    "research/retained-root/formal/Research/ModeAnchor.lean": "b9e4c521fb60aaa5e2c95561c7e05d349b47f5c99829055694f0a2d6a923a22d",
+    "research/retained-root/formal/Research/ModeAnchorStencil.lean": "e69e33e3c2e3828d122ee1184719759bb95b49bd226daf5a18e03b32879890a9",
+    "research/retained-root/formal/Research/PositiveSupport.lean": "899551b377826ae254d1132e7efc179789cfb3f477655199ca54b1e561ffa3c2",
+    "research/retained-root/formal/Research/RetainedPhysicalCap.lean": "a6a4d45889077de8e27ff9ca94e4b8fe9fa4aa445675f76e751575b15b7717d7",
+    "research/retained-root/formal/Research/RetainedPhysicalSupport.lean": "907a6505681c74d60e83a43a5e4c886df553c17195614553828e23b1beea54c2",
+    "research/retained-root/formal/Research/RetainedRootNonnegative.lean": "0cab3f0cb943c70443d429f1d44bfaa96cd9ed6f4ac0a00782e7842a1c961e26",
+    "research/retained-root/formal/Research/RetainedRootPhysical.lean": "f984b845bd099d8a85e13c22c79b1ed7398f8d80d3523aaa52d8e69e24326528",
+    "research/retained-root/formal/Research/RetainedRootShifts.lean": "c144c912222aa05ee070db5eeed8b361458dd8fbb49571d1ba2fa81ec59fcf48",
+    "research/retained-root/formal/Research/RetainedRootTransport.lean": "dc99d8cb80b193ff99a6e598d6f4d53274180f737f012522a078503e752f8f4b",
+    "research/retained-root/formal/Research/RetainedStencilSum.lean": "ae7704f53a24bbd655da5d26798d8e14f1f92d2d8a8c6be097c722da3a5fa396",
+    "research/retained-root/formal/Research/SpectralPath.lean": "d7149dd1f1268ca147761d1bbca5b3a7edbd4579d50bd2c8873247433f9b5f39",
+    "research/retained-root/formal/Research/SpectralPrefix.lean": "652efc31f2aebd9a641ca7ed549c1770ae7181cc652390a0eadb3b68a7df3ef0",
+    "research/retained-root/formal/Research/SpectralRetained.lean": "b4d953bd67c698bcdd74d6828ebf4f408615388a7cafbc6b5c979dd4614e84a0",
+    "research/retained-root/formal/ResearchComparison/ResidualCap.lean": "8a6647e1ca1d0b3e0d88213f22e57488c7982b078dfe1949ad340065e64ab729",
+    "research/shape-refinement/formal/Math115/ShapeDegreeBound.lean": "0761f9e7503fdb0b72ceb7c34ce6d2e707afeb35901a96c37462eb99eee9c801",
+    "research/shape-refinement/formal/Research/AcceptancePadding.lean": "59773bb5f0e4053ff87bfa9810cb2e64a0592037ebe84b13ceb7dbeac9172726",
+    "scripts/claims_ledger.py": "b0afc84de7a519376d27730280c4e655c8ec49e949f3290729bb14e80739fbf0",
+    "scripts/prepare_environment_audit.py": "02feab7113a4ad5e3f9f3bae7bb357b79ce6c0e2ac1b82740c17a437c4fbea92",
+    "tests/test_claims_ledger.py": "d0b1bd9f253dc6975df5b1f104ced74acfb724e04a1af52ad52aa60aab9fa8a6",
+    "tests/test_prepare_environment_audit.py": "3d8aefca7ba478379b6760ada16d9a59c46a81c151785bf63833f470763368bb"
+  },
+  "artifact_sha256": {
+    "research/physical-spectral/results/verification.json": "a643397626eda96d7deafed5eece055a12e90d7800388a2a0a5d023431ee897d",
+    "research/physical-spectral/results/audit.stdout.json.gz": "8a285b1f945da1efe9d3425f1c3c0aea017b51f6675e8dd99c7bbc98ec75c435",
+    "research/physical-spectral/results/imported-objects.json.gz": "4d27c59720f106d3444e869b6e9a6239020fcb395931ffaa5947e80aeb84f20e",
+    "reports/direct-defect-variance.json": "97fb6fec8acb69a0b905363847ea0e195f383dd5f855a48e3b3a00b0782b4c41",
+    "reports/physical-spectral-initial-test-failure.log.gz": "12016b29014e0173e80f6c6cb3834e0620855e3d93981432adfa95b06a63fc68",
+    "reports/physical-spectral-tests-and-readme-stale.log.gz": "61622be45b12086f14d40efbf154ce5d5fd29aec28e55dbe606eaf2ad58f6a6e",
+    "reports/physical-spectral-post-checks.log.gz": "5e949f5629cd815a08f401bcf2984ab557aeb453862de690e672287b2d1fb638",
+    "research/strict-sampler-checkpoints/authenticated-plan-v1/manifest.json": "8bedf53a22dda744a1d413d7c6cdc2f6dd960b1daaa7588b3eb739f7ecc95f7c",
+    "research/strict-sampler-checkpoints/authenticated-plan-v1/publication-review.json": "9c8eedf5c8ea277c7789f65bfb4a6d0b27cdcd985465e75b399d8f413c115058"
+  },
+  "verification": {
+    "layout": "Clean explicit public-source export; independent untracked application work excluded.",
+    "python": "3.14.3",
+    "tests_run": 422,
+    "tests_passed": 413,
+    "tests_skipped": 9,
+    "skip": "Optional SciPy unavailable in this interpreter; the unchanged wrapper has its separate hosted numerical lane.",
+    "stages": [
+      {
+        "command": "make verify",
+        "exit_code": 2,
+        "scope": "First export: three default-audit selection regressions found; failure log preserved."
+      },
+      {
+        "command": "make verify",
+        "exit_code": 2,
+        "scope": "After scope repair: all 422 tests completed, with 9 optional skips; archived finite audit passed; claims check required regeneration of the README tool-change notice."
+      },
+      {
+        "command": "make claims-check sources-bundle crosscheck replay-mixtures",
+        "exit_code": 0,
+        "scope": "After README regeneration: all remaining make verify components passed; tested Python and Lean source bytes unchanged."
+      }
+    ],
+    "source_scope": "No repeated full suite after the document-only regeneration; regenerated README passed its direct check. Historical source pins and default proof source bytes unchanged.",
+    "producer_drift": "Historical mixture producer source differs after prior optimizations. Current exact mathematical certificate replay passed; byte-identical historical generation is not claimed."
+  },
+  "formal": {
+    "receipt": "research/physical-spectral/results/verification.json",
+    "status": "passed",
+    "research_modules": 31,
+    "selected_declarations": 870,
+    "selected_theorems": 777,
+    "headline_dependency_closures": 12,
+    "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay.",
+    "stage_note": "Thirty frozen research modules were freshly compiled in the preceding same-checkpoint stage. Their source/object hashes were rechecked before adding the freshly compiled automatic wrapper and running this final combined environment audit. No previous published research objects were substituted for these fresh compilations.",
+    "headline": "Math115.RetainedChainSquareTotal.feasibleSquareChain_poincare_d9",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "not_claimed": [
+      "Fresh default-target rebuild",
+      "Strict Comparator acceptance",
+      "Updated complete encoded sampler"
+    ]
+  },
+  "finite_experiments": [
+    {
+      "command": "python3 experiments/direct_defect_variance.py --output .local/reports/direct-defect-variance.json",
+      "status": "passed",
+      "replay": "Byte-identical to published report",
+      "scope": "Exact accepted-incidence identities on actual weighted/unit graphs; one-small-column and full-transpose checks; abstract repair-method obstruction and actual quadratic repair-load examples. These finite checks do not prove an all-parameter gap theorem.",
+      "optimized_mode": "python -O rejects assertion-disabled execution before producing evidence."
+    }
+  ],
+  "review": {
+    "kind": "Separate AI agents reviewing AI-produced mathematics and saved compilation evidence; no outside human review.",
+    "note": "docs/physical-spectral-review.md",
+    "findings": "Actual context/exposure, repair, original-chain normalization, automatic zero-margin/empty-mask branch and reciprocal count induction passed review. Additional shape results remain reviewed mathematics with explicitly narrower hypotheses and open Lean assembly."
+  },
+  "comparator": {
+    "receipt": "research/strict-sampler-checkpoints/authenticated-plan-v1/",
+    "status": "Passed installation, actual sandbox preflight, complete runtime authentication and admitted planning. Full proof compilation, export and comparison unexecuted.",
+    "configuration": "8 GiB, four CPUs, serial-build configuration, software-emulated offline Linux VM",
+    "strict_sampler_acceptance": false,
+    "scope": "Public projection and complete phase evidence reviewed; previous failures preserved. This does not include a newer hardware-accelerated experiment."
+  },
+  "scope_limits": [
+    "3442d^9 bounds inverse gap of the actual original selected chain at U=11d(m+n-2),L=7, from m,n>=2 and equal natural-margin totals, including zeros. It is not a machine-runtime bound.",
+    "431d^8 rational and862d^8 dyadic remain reviewed bounds for the changed defect trace; actual weighted normalization and neighbor geometry are not in this published formal scope.",
+    "The full original-graph variance and actual marked-padding count bridge are now compiled, unlike the preceding component checkpoint.",
+    "One-small-line, empty-completion d^(13/2) at bounded aspect, and positive both-small d^7 arbitrary-aspect results have their own assumptions and reviewed mathematical scope; no updated encoded sampler is claimed.",
+    "The complete compiled sampler retains its original d17 route and same existential statement as upstream. Seven numerical draw certificates and its numerical complete machine-time degree remain unresolved.",
+    "The historical default-target1511 named-audit count is not enlarged by this overlapping additive research environment."
+  ]
+}

@@ -1,0 +1,118 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:26:2: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:29:2: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:76:11: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+
+Note: It is not possible to treat `largeIndices` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:77:11: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+
+Note: It is not possible to treat `largeIndices` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:77:89: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+⊢ decide (0 < sorry.length) = true ∧ decide (0 < sorry.length) = true ↔ 0 < sorry ∧ 0 < sorry
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:78:29: warning: declaration uses `sorry`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:78:45: warning: declaration uses `sorry`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:78:64: warning: This simp argument is unused:
+  traceCutoff_ofFn
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [traceBothLarge, traceLargeRows, traceLargeColumns, Bool.and_eq_true, decide_eq_true_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:79:22: warning: This simp argument is unused:
+  decide_eq_true_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [traceBothLarge, traceLargeRows, traceLargeColumns, traceCutoff_ofFn, Bool.and_eq_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:108:84: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+⊢ 1 < m →
+      1 < n →
+        (if 2 ≤ (traceSmallCatalog (List.ofFn r, List.ofFn c)).length then
+            if traceBothLarge (List.ofFn r, List.ofFn c) = true then TraceInputBranch.reference
+            else TraceInputBranch.unit
+          else TraceInputBranch.noSmall) =
+          TraceInputBranch.deterministic ↔
+    m ≤ 1 ∨ n ≤ 1
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:115:11: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+
+Note: It is not possible to treat `largeIndices` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:116:11: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+
+Note: It is not possible to treat `largeIndices` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:116:89: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+⊢ (if m ≤ 1 ∨ n ≤ 1 then TraceInputBranch.deterministic
+      else
+        if 1 < Fintype.card (Cells (firstPaperSmall r c squareCutoff)) then
+          if 0 < sorry () then TraceInputBranch.reference else TraceInputBranch.unit
+        else TraceInputBranch.noSmall) =
+      TraceInputBranch.reference ↔
+    1 < m ∧ 1 < n ∧ 1 < Fintype.card (Cells (firstPaperSmall r c squareCutoff)) ∧ 0 < sorry ()
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:118:25: warning: This simp argument is unused:
+  Nat.not_le
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [traceInputBranch, List.length_ofFn, traceSmallCatalog_length, traceBothLarge_ofFn, Nat.succ_le_iff,
+    and_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:118:54: warning: This simp argument is unused:
+  and_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [traceInputBranch, List.length_ofFn, traceSmallCatalog_length, traceBothLarge_ofFn, Nat.not_le,
+    Nat.succ_le_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:125:51: error: No goals to be solved
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:127:51: error: No goals to be solved
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:132:2: error: unsolved goals
+case neg.inr
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+hm : ¬m ≤ 1
+hn : ¬n ≤ 1
+hm2 : 2 ≤ m
+hn2 : 2 ≤ n
+hp : 2 ≤ Fintype.card (Cells (firstPaperSmall r c squareCutoff))
+hne : Fintype.card (Cells (firstPaperSmall r c squareCutoff)) ≠ 0
+⊢ ¬(if traceBothLarge (List.ofFn r, List.ofFn c) = true then TraceInputBranch.reference else TraceInputBranch.unit) =
+      TraceInputBranch.noSmall
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:143:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:160:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/TracePreparation.lean:170:2: error: Tactic `decide` failed for proposition
+  traceCutoff ([0, 600, 600], [600, 600]) = 726 ∧
+    traceCutoff ([600, 600], [600, 600]) = 418 ∧
+      traceInputBranch ([0, 600, 600], [600, 600]) = TraceInputBranch.unit ∧
+        traceInputBranch ([600, 600], [600, 600]) = TraceInputBranch.noSmall
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableOr`, `Bool.decEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, and `instDecidableEqTraceInputBranch`, reduction got stuck at the `Decidable` instance
+  match h : (traceInputBranch ([0, 600, 600], [600, 600])).ctorIdx.beq TraceInputBranch.unit.ctorIdx with
+  | true => isTrue ⋯
+  | false => isFalse ⋯

@@ -1,0 +1,27 @@
+<repo>/research/retained-root/formal/Research/SpectralPath.lean:396:15: warning: Variable name `hr` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hr
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'Research.SpectralPath.exists_path_rayleigh_minimizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+Research.SpectralPath.exists_path_rayleigh_minimizer (N : ℕ) (hN : 1 ≤ N) (z : Fin (N + 1) → ℝ) (r : ℕ → ℝ)
+  (hz : ∀ (i : Fin (N + 1)), 0 < z i) (hr : ∀ (l : Fin N), 0 < r (↑l + 1)) :
+  ∃ lam h,
+    0 < lam ∧
+      (Research.SpectralPath.weightedSum z) h = 0 ∧
+        h ≠ 0 ∧
+          0 < OAI.ContingencyTables.FiniteExposureVariance.variance z h ∧
+            lam = Research.SpectralPath.pathEnergy N r h / OAI.ContingencyTables.FiniteExposureVariance.variance z h ∧
+              (∀ (g : Fin (N + 1) → ℝ),
+                  (Research.SpectralPath.weightedSum z) g = 0 →
+                    g ≠ 0 →
+                      lam ≤
+                        Research.SpectralPath.pathEnergy N r g /
+                          OAI.ContingencyTables.FiniteExposureVariance.variance z g) ∧
+                (∀ (l : Fin N), h l.castSucc - h l.succ = lam * r (↑l + 1) * Research.SpectralPath.prefixFlux N z h l) ∧
+                  OAI.ContingencyTables.FiniteExposureVariance.variance z h =
+                      lam * ∑ l, r (↑l + 1) * Research.SpectralPath.prefixFlux N z h l ^ 2 ∧
+                    ∀ (g : Fin (N + 1) → ℝ),
+                      OAI.ContingencyTables.FiniteExposureVariance.variance z g ≤
+                        1 / lam * Research.SpectralPath.pathEnergy N r g

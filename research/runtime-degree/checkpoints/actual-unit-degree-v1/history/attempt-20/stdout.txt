@@ -1,0 +1,19 @@
+<unit-source-root>/UnitRuntime/UnitPackedTrialDegree.lean:4:0: error: unknown module prefix 'AffineMapWith'
+
+No directory 'AffineMapWith' or file 'AffineMapWith.olean' in the search path entries:
+<repo-root>/.local/further-gap/draw-runtime-next/unit-trial-cost/objects
+<repo-root>/.local/further-gap/draw-runtime-next/retry-cost/objects
+<repo-root>/.local/further-gap/draw-runtime-next/reference-trial-cost/objects
+<repo-root>/.local/further-gap/draw-runtime-next/repair-trial-cost/objects
+<repo-root>/.local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects
+<repo-root>/.local/checkpoint12/native-degree-batch-staging-v9/evidence/lib/lean
+<repo-root>/formal/.lake/build/lib/lean
+<repo-root>/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean
+<repo-root>/formal/.lake/packages/Qq/.lake/build/lib/lean
+<repo-root>/formal/.lake/packages/aesop/.lake/build/lib/lean
+<repo-root>/formal/.lake/packages/batteries/.lake/build/lib/lean
+<repo-root>/formal/.lake/packages/importGraph/.lake/build/lib/lean
+<repo-root>/formal/.lake/packages/mathlib/.lake/build/lib/lean
+<repo-root>/formal/.lake/packages/plausible/.lake/build/lib/lean
+<repo-root>/formal/.lake/packages/proofwidgets/.lake/build/lib/lean
+<repo-root>/.tools/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean

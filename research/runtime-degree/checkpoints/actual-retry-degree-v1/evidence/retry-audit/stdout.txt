@@ -1,0 +1,33 @@
+'Math115.RetryRuntimeNext.typed_chunkProgram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.chunk_sublist' depends on axioms: [propext]
+'Math115.RetryRuntimeNext.chunk_output_weight' depends on axioms: [propext, Quot.sound]
+'Math115.RetryRuntimeNext.complete_rows_bound' depends on axioms: [propext, Quot.sound]
+'Math115.RetryRuntimeNext.supplied_prefix_bound' depends on axioms: [propext]
+'Math115.RetryRuntimeNext.zero_width_rows' depends on axioms: [propext]
+'Math115.RetryRuntimeNext.range_numeric_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_boundedRange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_mapWith' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_rowProgram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_chunksProgram' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.chunks_output_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_actual_wordChunk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_actual_completeWordRows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_actual_wordChunks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_actual_profileWordWidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_actual_profileWalkWidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_actual_attemptWidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_actual_retryAttemptWidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_actual_retryBankWidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.typed_actual_retryWords' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.actual_retryWords_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.actual_retryWords_output_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetryRuntimeNext.actual_retryWords_length_le_attempts' depends on axioms: [propext, Quot.sound]
+'Math115.RetryRuntimeNext.actual_retryWords_empty_of_short' depends on axioms: [propext]
+Math115.RetryRuntimeNext.typed_chunksProgram : Math115.DegreeBounds.Typed Math115.RetryRuntimeNext.chunksProgram 149008
+theorem Math115.RetryRuntimeNext.actual_retryWords_polynomial : ∃ p,
+  p.natDegree ≤ 42914304 ∧
+    ∀ (z : Math115.LatticeOuterProgram.RetryData),
+      Math115.LatticeOuterProgram.retryWordsRealizer.cost z +
+          OAI.MatchingFPRAS.TreeTyped.weight (Math115.LatticeOuterProgram.retryWords z) ≤
+        Polynomial.eval (OAI.MatchingFPRAS.TreeTyped.weight z) p :=
+Math115.RetryRuntimeNext.typed_actual_retryWords

@@ -1,0 +1,102 @@
+[
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Machines/ListWordProgram.lean",
+    "sha256": "35d419df8425d631bc880550d05a785eb153dd3150a9630f6f9723dd13fe0cb4"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/ProfileExchangeProgram.lean",
+    "sha256": "64d5da694e80d26d609c118c3e5f62dc5d668d8e8aa4459a3215676240570c68"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallProfileFlatCode.lean",
+    "sha256": "b12a0c8bb1cb4401efca2ed7834b9a704b9474a65c1033e9a56c742777a4a3d7"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallExchangeListProgram.lean",
+    "sha256": "a4b7c54decfdc65c8bef066d6202923603aa00f7fe279a5343c67e299a43618d"
+  },
+  {
+    "path": "formal/Math115/LatticeUnitOuter.lean",
+    "sha256": "2c8e44d0c6ff803d21c987b87cb4b24ec21e541619d53a296c99cb0d4f891b03"
+  },
+  {
+    "path": "formal/Math115/LatticeUnitWalk.lean",
+    "sha256": "b0fc16f7890d62511c83cc366c011bd097ec40e24d4b0b739f45b8348d54a2a0"
+  },
+  {
+    "path": "formal/Math115/LatticeUnitStep.lean",
+    "sha256": "4cb0745b4a2090a6215a1817ddad24a0277793f055ec28c3896222bd9adf3805"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/OuterTrialProgram.lean",
+    "sha256": "4f67184a613f1ef039254bb3d12bfdee81f78d22ab18eea9cadc715f609fcae9"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/OuterTableProgram.lean",
+    "sha256": "31f913ff7e4a4e760bed98883f4db1144fed4d30d2bca8a0b86f908bfd688cdb"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallPatternProgram.lean",
+    "sha256": "63225a705d7d608cb93c3fac5e103679d3ea06c563807b53e16286455403a1df"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/TreeIndex.lean",
+    "sha256": "ffdc70f33a679fd6aff7528f1012c85f8183b37a72052dd474372a9f2357658b"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/ProfileCodeEquality.lean",
+    "sha256": "28bf19f5bd7d7b413c53032b8bb0f25f9c54c748fb97d5fb2e87bf0bd1f78434"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallBoundsProgram.lean",
+    "sha256": "c11a5ee5d5be997e3c56a64cea11a983ef7996d3e9a42a19d5772cacc94958ba"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallComplementProgram.lean",
+    "sha256": "745c4a6c68ea553daea93e4370ba3e9329bf1fccd3813e4c76f2be0d0b943549"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallLineSumProgram.lean",
+    "sha256": "45b719e129a87bf0c365b411f50493648ae07dab4557213b415adb213f15a06c"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallMarginTestProgram.lean",
+    "sha256": "5a10c618e24ecbfffd6f6f6940d078a573e169068c90244bf13e4f04324b3b15"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallViewLookupProgram.lean",
+    "sha256": "815bb7ff3ccbd1ca459ed62652f12857f4f00359b942cc09d468bb117259acc8"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallProfileValidator.lean",
+    "sha256": "3aacd8cfe60380d649778c2f050465c9b9ca67ae238c81ea282ccfc6bff222d6"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperCodeNeighbors.lean",
+    "sha256": "04c6929e79bc56f35ab555df699e64dd8e56580c8ef082ad3568d70a13fc1b62"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/FirstPaperCodeProposal.lean",
+    "sha256": "2e34cc9771a3b5aca137f17f49fa2fb35e4136f2b81c3ef7e3bc6b91377c8aa3"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/ProfileTransitionProgram.lean",
+    "sha256": "3a4bf8c4724e8efff297004ef149e3047c9f5912b8bb86e9c659eef9cb17d11b"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallRepairCodeProgram.lean",
+    "sha256": "7f8b21f45611fea92fc3f27efe1da215fb0deb843723347a2f28bc37e94980d1"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallInverseRepairList.lean",
+    "sha256": "00b3ad58556370b68e707bee37d46a4a340580988f8e4c6a3e61d948d1e2a3b2"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallRepairListProgram.lean",
+    "sha256": "fd6f9136810d3a3267f10219af262d7121f7c8fea34eb6c8e86ada907c1bc81b"
+  },
+  {
+    "path": ".upstream/openai-math/lean/OAI/Combinatorics/MatchingCount/Machines/TreeCanonical.lean",
+    "sha256": "5f540834d45a416f4899c4c95e97a28efdcd27afc8fe157fb1c441c84b4612a5"
+  }
+]

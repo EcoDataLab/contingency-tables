@@ -1,0 +1,17 @@
+{
+  "raw_serial_sha256": "6d9c38f83c3e2557a51580aeb79176200462fe0e88ce16f123e9c2ae647292d0",
+  "insertions": [
+    {
+      "offset": 3586106,
+      "message": "[  308.647758] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [swapper/2:0]"
+    },
+    {
+      "offset": 6962548,
+      "message": "[  336.658516] watchdog: BUG: soft lockup - CPU#2 stuck for 48s! [swapper/2:0]"
+    }
+  ],
+  "method": "Remove only exact inserted watchdog message strings from the encoded payload for decoding; raw serial retained unchanged.",
+  "reconstructed_archive_sha256": "b61fd3888f777d36cec6a30315b7253abb1326a0ffbf8211efa6d876103de7c0",
+  "emitted_archive_sha256": "b61fd3888f777d36cec6a30315b7253abb1326a0ffbf8211efa6d876103de7c0",
+  "sha_match": true
+}

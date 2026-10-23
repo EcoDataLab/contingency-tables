@@ -1,0 +1,11 @@
+<packet>/revisions/attempt-04/formal/ResearchRationalClock/Proposal.lean:55:4: error: Type mismatch: After simplification, term
+  intervalTrial_mass (Nat.le_pow_clog (of_decide_eq_true (id (Eq.refl true))) V) i
+ has type
+  @Eq ℚ ((mapLaw uniformLaw (intervalTrial ⋯)).mass (some i)) (1 / 2 ^ Nat.clog 2 V)
+but is expected to have type
+  @Eq ℚ ((mapLaw uniformLaw (intervalTrial ⋯)).mass (some i)) (1 / 2 ^ precision V)
+<packet>/revisions/attempt-04/formal/ResearchRationalClock/Proposal.lean:239:2: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

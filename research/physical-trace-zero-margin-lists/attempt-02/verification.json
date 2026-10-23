@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "f07188292e56ea3aeac8e40d1d27d8ade4a224d8",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.ZeroMarginLists"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.ZeroMarginLists",
+      "source": "research/physical-trace-zero-margin-lists/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean",
+      "source_sha256": "8c6b303ed16f6880cdf264c98b539caa51775a9bc12467cf8194684e23652b22",
+      "returncode": 0,
+      "seconds": 69.05554899992421,
+      "olean_sha256": "4094ba53b0a195d6543aff8c821d9de025489722a95a3d33c12619185e918b6c"
+    }
+  ],
+  "audit_seconds": 132.68218837492168,
+  "audit_sha256": "cfa0dd7321fbb4f70c31d6b63738de04f4de4bc6a202713d2640b0d083dcf425",
+  "audit_driver_sha256": "0b209651ad181d0a6cd14b470dcbd7a3e3c34ac88c961a95d08da8bdebb3586a",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "24a620cf77e6d50c4a852613b8f2c5203684f4d744f1923b1364553803d961bb",
+  "declaration_count": 59,
+  "theorem_count": 48,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveIndexEquiv_strictMono",
+      "closure_size": 2124,
+      "statement": "∀ (xs : List ℕ), StrictMono fun k => ↑↑((Math115.PhysicalTraceJoin.positiveIndexEquiv xs) k)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.filteredMargin_at_retained",
+      "closure_size": 1934,
+      "statement": "∀ (xs : List ℕ) (k : Fin (Math115.PhysicalTraceJoin.positiveMargins xs).length),\n  Math115.PhysicalTraceJoin.filteredMargin xs k =\n    Math115.PhysicalTraceJoin.listMargin xs ↑((Math115.PhysicalTraceJoin.positiveIndexEquiv xs) k)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.zeroMarginListEquiv_extend_entry",
+      "closure_size": 4803,
+      "statement": "∀ (xs ys : List ℕ)\n  (X :\n    OAI.ContingencyTables.Table (Math115.PhysicalTraceJoin.filteredMargin xs)\n      (Math115.PhysicalTraceJoin.filteredMargin ys))\n  (i : Fin xs.length) (j : Fin ys.length),\n  ↑((Math115.PhysicalTraceJoin.zeroMarginListEquiv xs ys).symm X) i j =\n    if hi : 0 < Math115.PhysicalTraceJoin.listMargin xs i then\n      if hj : 0 < Math115.PhysicalTraceJoin.listMargin ys j then\n        ↑X ((Math115.PhysicalTraceJoin.positiveIndexEquiv xs).symm ⟨i, hi⟩)\n          ((Math115.PhysicalTraceJoin.positiveIndexEquiv ys).symm ⟨j, hj⟩)\n      else 0\n    else 0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.restoreZeroMarginListsLaw_uniform_variation",
+      "closure_size": 7200,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j)\n  (q :\n    OAI.ContingencyTables.ResidualMixture.RationalLaw\n      (OAI.ContingencyTables.Table (Math115.PhysicalTraceJoin.filteredMargin xs)\n        (Math115.PhysicalTraceJoin.filteredMargin ys))),\n  OAI.ContingencyTables.FirstSuccess.variation (Math115.PhysicalTraceJoin.restoreZeroMarginListsLaw xs ys q)\n      OAI.ContingencyTables.FirstSuccess.uniformLaw =\n    OAI.ContingencyTables.FirstSuccess.variation q OAI.ContingencyTables.FirstSuccess.uniformLaw",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

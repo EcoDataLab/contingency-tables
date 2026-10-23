@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "28d4c9b57c9fd44588f3c4396d5e4f90cf9f0114",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalStarRetry.Exit"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalStarRetry.Exit",
+      "source": "research/physical-star-retry/formal/ResearchPhysicalStarRetry/Exit.lean",
+      "source_sha256": "770c44aa24df5ee779a88e0e8c7241ed07871cff94e401e9c76bbaa48dd52917",
+      "returncode": 0,
+      "seconds": 170.2992654168047,
+      "olean_sha256": "8e5493625b6011f78e30372883031b298b95d44fffc7dd59e2a1b3184985de90"
+    }
+  ],
+  "audit_seconds": 348.42664333386347,
+  "audit_sha256": "ccae97122cf1fa14cc8b83ae9b5a84d18272e870f2efc5db0e50895c1a75f6a8",
+  "audit_driver_sha256": "c9ef1ee0aa49c2e698d021987004b52460bfb37225b4a16f1a813c95511dddbe",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "0026413064c7dcbf23fd31a7340c334db132ff5330013124144a1904a5da02a9",
+  "declaration_count": 51,
+  "theorem_count": 32,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalStarRetry.flatExit_variation",
+      "closure_size": 43850,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (h : ℕ)\n      (hstar : 0 < Math115.PhysicalStarRetry.starMass r c U L hr hc b)\n      (fallback : Math115.PhysicalDefectTrace.DefectVertices r c U L) (J : ℕ),\n      OAI.ContingencyTables.FirstSuccess.variation\n          (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n            (Math115.PhysicalStarRetry.flatExit r c U L hr hc b h fallback J))\n          (Math115.PhysicalStarRetry.targetLaw r c U L hr hc b hstar) ≤\n        (1 - Math115.PhysicalStarRetry.successProbability r c U L hr hc b) ^ J +\n          ↑J * Math115.CompletionRetryBudget.dyadic h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalStarRetry.flatExit_variation_of_edge",
+      "closure_size": 44039,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (hL : 7 ≤ L) (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (h : ℕ)\n      (entering : Math115.PhysicalDefectTrace.DefectVertices r c U L)\n      (hbe :\n        OAI.ContingencyTables.SmallGraphProfiles.physicalAdjacent r c U L (Math115.ReducedSmallChain.capacity r c U L) ⋯\n          ↑b ↑entering)\n      (J : ℕ),\n      OAI.ContingencyTables.FirstSuccess.variation\n          (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n            (Math115.PhysicalStarRetry.flatExit r c U L hr hc b h entering J))\n          (Math115.PhysicalStarRetry.targetLaw r c U L hr hc b ⋯) ≤\n        (1 - Math115.PhysicalRationalKernel.proposalRat OAI.ContingencyTables.CompletionCounts.dimensionAllowance / 2) ^\n            J +\n          ↑J * Math115.CompletionRetryBudget.dyadic h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalStarRetry.targetLaw_mass_cast",
+      "closure_size": 11225,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L)\n  (hstar : 0 < Math115.PhysicalStarRetry.starMass r c U L hr hc b)\n  (e : Math115.PhysicalDefectTrace.DefectVertices r c U L),\n  ↑((Math115.PhysicalStarRetry.targetLaw r c U L hr hc b hstar).mass e) =\n    Math115.ComputedReferenceTrace.referenceCross r c U L\n        ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r U hr) none)\n        ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c U hc) none) b e /\n      ∑ f,\n        Math115.ComputedReferenceTrace.referenceCross r c U L\n          ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r U hr) none)\n          ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c U hc) none) b f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalStarRetry.flatExit_zero_star_variation",
+      "closure_size": 43834,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (h : ℕ),\n      Math115.PhysicalStarRetry.starMass r c U L hr hc b = 0 →\n        ∀ (fallback : Math115.PhysicalDefectTrace.DefectVertices r c U L) (J : ℕ),\n          OAI.ContingencyTables.FirstSuccess.variation\n              (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n                (Math115.PhysicalStarRetry.flatExit r c U L hr hc b h fallback J))\n              (OAI.ContingencyTables.FirstSuccess.pointLaw fallback) ≤\n            ↑J * Math115.CompletionRetryBudget.dyadic h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

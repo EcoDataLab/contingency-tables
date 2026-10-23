@@ -1,0 +1,13 @@
+<unit-source-root>/UnitRuntime/ProfileMarginsDegree.lean:20:2: error: Tactic `apply` failed: could not unify the conclusion of `RetryRuntimeNext.typed_boundedRange
+  (typed_composition ?m.29 RetryRuntimeNext.typed_listLength_seed) X ?m.34`
+  Typed (composition (composition ?m.25 listLength) range) (max (max ?m.27 (2 * ?m.27)) (3 * 1))
+with the goal
+  Typed (composition (composition (marginListRealizer row) listLength) range) 3
+
+Note: The full type of `RetryRuntimeNext.typed_boundedRange
+  (typed_composition ?m.29 RetryRuntimeNext.typed_listLength_seed) X ?m.34` is
+  (∀ (a : ?m.17), (List.length ∘ ?m.23) a ≤ eval (weight a) X) →
+    Typed (composition (composition ?m.25 listLength) range) (max (max ?m.27 (2 * ?m.27)) (3 * 1))
+
+row : Bool
+⊢ Typed (composition (composition (marginListRealizer row) listLength) range) 3

@@ -1,0 +1,12 @@
+<repo>/research/retained-root/formal/Math115/RetainedRoot.lean:44:41: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<repo>/research/retained-root/formal/Math115/RetainedRoot.lean:44:41: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+<repo>/research/retained-root/formal/Math115/RetainedRoot.lean:78:39: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<repo>/research/retained-root/formal/Math115/RetainedRoot.lean:78:39: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`

@@ -1,0 +1,97 @@
+[diag] Diagnostics
+  [reduction] unfolded reducible declarations (max: 84, num: 7):
+    [reduction] LargePairEnumeration.SmallView ↦ 84
+    [reduction] SmallContextFibres.BoundedProfile ↦ 65
+    [reduction] Profiles ↦ 56
+    [reduction] States ↦ 55
+    [reduction] PhysicalStates ↦ 55
+    [reduction] DecidableEq ↦ 52
+    [reduction] outParam ↦ 32
+  use `set_option diagnostics.threshold <num>` to control threshold for reporting counters
+<packet>/revisions/attempt-08/formal/ResearchRationalClock/Proposal.lean:249:2: error: Type mismatch
+  cappedList_variation (denominator r c U) (denominator_pos r c U hp) (physicalNeighbors r c U L ↑x) N
+has type
+  variation
+      (@mapLaw (Fin (N * precision (denominator r c U)) → Bool) (Option (States r c U L)) Pi.instFintype
+        instFintypeOption (fun a b => a.instDecidableEq b) uniformLaw
+        (cappedList (denominator r c U) (physicalNeighbors r c U L ↑x) N))
+      (idealListLaw (denominator r c U) ⋯ (physicalNeighbors r c U L ↑x)) ≤
+    (1 / 2) ^ N
+but is expected to have type
+  variation
+      (@mapLaw (Fin (N * precision (denominator r c U)) → Bool) (Option (States r c U L)) Pi.instFintype
+        instFintypeOption (fun a b => Classical.propDecidable (a = b)) uniformLaw
+        (cappedList (denominator r c U) (physicalNeighbors r c U L ↑x) N))
+      (idealListLaw (denominator r c U) ⋯ (physicalNeighbors r c U L ↑x)) ≤
+    (1 / 2) ^ N
+[diag] Diagnostics
+  [reduction] unfolded declarations (max: 2732, num: 34):
+    [reduction] Neg.neg ↦ 2732
+    [reduction] HSub.hSub ↦ 2564
+    [reduction] Sub.sub ↦ 2564
+    [reduction] Add.add ↦ 1872
+    [reduction] HAdd.hAdd ↦ 1872
+    [reduction] Int.rec ↦ 780
+    [reduction] Finset.univ ↦ 224
+    [reduction] Fintype.elems ↦ 224
+    [reduction] Rat.blt ↦ 196
+    [reduction] Multiset.map ↦ 136
+    [reduction] LE.le ↦ 117
+    [reduction] Finset.map ↦ 96
+    [reduction] HPow.hPow ↦ 76
+    [reduction] Pow.pow ↦ 76
+    [reduction] Int.le ↦ 68
+    [reduction] DFunLike.coe ↦ 64
+    [reduction] Finset.cons ↦ 64
+    [reduction] Finset.insertNone ↦ 64
+    [reduction] max ↦ 64
+    [reduction] Multiset.cons ↦ 64
+    [reduction] OrderEmbedding.ofMapLEIff ↦ 64
+    [reduction] RelEmbedding.ofMapRelIff ↦ 64
+    [reduction] Div.div ↦ 46
+    [reduction] HDiv.hDiv ↦ 46
+    [reduction] HMul.hMul ↦ 46
+    [reduction] LT.lt ↦ 46
+    [reduction] Mul.mul ↦ 46
+    [reduction] Rat.div ↦ 46
+    [reduction] variation ↦ 44
+    [reduction] abs ↦ 32
+    [reduction] Int.lt ↦ 32
+    [reduction] NatPow.pow ↦ 32
+    [reduction] Rat.pow ↦ 32
+    [reduction] SemilatticeSup.sup ↦ 32
+  [reduction] unfolded reducible declarations (max: 5324, num: 19):
+    [reduction] Int.casesOn ↦ 5324
+    [reduction] Rat.num ↦ 2226
+    [reduction] Decidable.casesOn ↦ 780
+    [reduction] Bool.casesOn ↦ 500
+    [reduction] Finset.val ↦ 304
+    [reduction] LargePairEnumeration.SmallView ↦ 219
+    [reduction] Option.casesOn ↦ 208
+    [reduction] Quot.liftOn ↦ 208
+    [reduction] SmallContextFibres.BoundedProfile ↦ 171
+    [reduction] DecidableEq ↦ 161
+    [reduction] States ↦ 154
+    [reduction] PhysicalStates ↦ 154
+    [reduction] Profiles ↦ 147
+    [reduction] RationalLaw.mass ↦ 128
+    [reduction] RelEmbedding.toEmbedding ↦ 64
+    [reduction] Function.Embedding.toFun ↦ 64
+    [reduction] outParam ↦ 50
+    [reduction] FunLike ↦ 30
+    [reduction] DefectVertices ↦ 27
+  [def_eq] heuristic for solving `f a =?= f b` (max: 68, num: 11):
+    [def_eq] Not ↦ 68
+    [def_eq] instHAdd ↦ 66
+    [def_eq] Int.add ↦ 66
+    [def_eq] Int.add.match_1 ↦ 66
+    [def_eq] Int.neg ↦ 64
+    [def_eq] Rat.neg ↦ 64
+    [def_eq] Int.neg.match_1 ↦ 64
+    [def_eq] ite ↦ 34
+    [def_eq] decide ↦ 34
+    [def_eq] Int.le ↦ 34
+    [def_eq] Int.sub ↦ 34
+  [reduction] Axioms (possibly imported non-exposed defs) that were tried to be unfolded (max: 156, num: 1):
+    [reduction] Classical.choice ↦ 156
+  use `set_option diagnostics.threshold <num>` to control threshold for reporting counters

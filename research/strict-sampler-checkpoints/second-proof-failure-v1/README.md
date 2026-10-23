@@ -1,0 +1,19 @@
+# Second bounded cold proof attempt: process-observer failure
+
+The corrected cold serial retry completed nine module builds, with nineteen passing stages, then failed at `0009_dependencies_current` while the original measured runner resolved an owned process executable:
+
+```text
+[Errno 13] Permission denied: '/proc/3555/exe'
+```
+
+The attempted command was `lake --no-cache --no-build build +OAI.Combinatorics.ContingencyTables.Transport.RationalReindex:deps`. Its stdout and stderr are empty; the observer supplied zero successful samples and a null compiler peak. No return code was recorded, so this is not evidence that the dependency command failed mathematically or completed successfully. Owned service cleanup returned zero. The failure is process observation, not reported cache drift, memory exhaustion or the 7,200-second deadline.
+
+The [memo preparation protocol](../hash-memo-normalization-v1/) passed again before proof dispatch: normalization, new original authentication and both frozen gate repetitions. Fresh runtime SHA256 remains `b777e2f434af7744108690dbbd0ec790f022f78172028ee723fbba02f29b3f8e`. Original source/guard/content boundaries and sampler inputs were preserved; no memo exemption was introduced. The nine module receipts record sampled compiler peaks of one and exact new artifact hashes. These compiled objects are progress in the historical closure, not whole-sampler acceptance. No exporter, default-kernel replay or Comparator stage ran.
+
+The exact [proof receipt](evidence/proof-output/receipt.json) and all completed/failed stage logs are copied unchanged. Installation, original sandbox preflight, baseline authentication and repair passed. The enclosing proof phase ran for 251.337 seconds; measured proof dispatch lasted 172.775 seconds. VM lifetime was 1,076.193 seconds in a fresh one-vCPU, 10 GiB WHPX guest without NIC or swap. Owned VM processes closed, all five retained image/tool pins matched afterward, and QEMU stderr was empty. The ordinary kernel boot line `NMI watchdog: Perf NMI watchdog permanently disabled` is preserved in outcome.json; no soft-lockup line or Base64 warning removal was observed.
+
+All 74 regular transport archive members authenticated against SHA256 `120f9c9d522d7075ad3f582d3d1377e8df12634f28388166c78e43f37727297c`. Five large preparation members were losslessly gzip-encoded with original and encoded hashes/sizes; all 73 originals restored exactly, totaling 64,887,227 bytes. [collection-transforms.json](evidence/collection-transforms.json), the emitted [authentication manifest](evidence/collection-authentication.json) and [restoration receipt](evidence/restoration-receipt.json) bind that reconstruction. This minimal public projection omits the private full archive and duplicated large runtime/request/result data while retaining all proof-stage receipts/logs. It does not claim to reconstruct the full original archive from this subset.
+
+Changed guest/seed/ISO and safe local restoration controls are supplied under source/. Unchanged helpers and observer source are referenced in [reproduction-references.json](reproduction-references.json), along with private VM/image limitations. The inherited host collector's generic “no proof execution attempted” sentence was inaccurate for this attempt; this packet follows the authenticated nine-module receipt. No pinned failed observer, run receipt or existing packet was changed, and no duplicate retry was launched.
+
+The historical retained source archive is `47e864e49025da1e505c32ae1c5f23428ed900b1ecc64468cb72478095824a84`, source freeze `2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd`, 679 modules. New additive research modules are excluded. Exact reasons that PID3555's executable link was inaccessible are not captured: its identity/credentials/dumpability could not be inferred from the failed sample. Any observer repair and narrow tests are separate evidence.

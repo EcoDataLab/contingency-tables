@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "f07188292e56ea3aeac8e40d1d27d8ade4a224d8",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.ZeroMarginMatrix"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.ZeroMarginMatrix",
+      "source": "research/physical-trace-zero-margin-matrix/formal/ResearchPhysicalTraceJoin/ZeroMarginMatrix.lean",
+      "source_sha256": "bdadea07b6035b42fa6b5a018bd0833e1a7115481562e4afa5b94646453ec53f",
+      "returncode": 0,
+      "seconds": 118.58943358296528,
+      "olean_sha256": "de8fc37cf9f7b27c1f370052e8299bbda18ac44b5084e874a8a8b91ca1869ead"
+    }
+  ],
+  "audit_seconds": 207.69316204171628,
+  "audit_sha256": "0aa6c96989a3d1cb34ecb4e089cb2c49e70503f1284d1c7b281ed1dcfea8227b",
+  "audit_driver_sha256": "16418fc1d6c20d5a279af98bfe0ed13e283577bc6cbf98ab35cb8a5b3a93f3f6",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "137dfccdaa1165011e8d1d28bae04c52bcc5fe0fefa1add8e30e97dbe6fdcd56",
+  "declaration_count": 9,
+  "theorem_count": 7,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.retainedRank_at_positive",
+      "closure_size": 1917,
+      "statement": "∀ (xs : List ℕ) (i : Math115.PhysicalTraceJoin.PositiveRows (Math115.PhysicalTraceJoin.listMargin xs)),\n  Math115.PhysicalTraceJoin.retainedRank xs ↑↑i = ↑((Math115.PhysicalTraceJoin.positiveIndexEquiv xs).symm i)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.restoreZeroMarginMatrix_code",
+      "closure_size": 4816,
+      "statement": "∀ (xs ys : List ℕ)\n  (X :\n    OAI.ContingencyTables.Table (Math115.PhysicalTraceJoin.filteredMargin xs)\n      (Math115.PhysicalTraceJoin.filteredMargin ys)),\n  Math115.PhysicalTraceJoin.restoreZeroMarginMatrix xs ys (OAI.ContingencyTables.DensePrograms.matrixCode ↑X) =\n    OAI.ContingencyTables.DensePrograms.matrixCode ↑((Math115.PhysicalTraceJoin.zeroMarginListEquiv xs ys).symm X)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.restoreZeroMarginMatrix_row_length",
+      "closure_size": 651,
+      "statement": "∀ (xs ys : List ℕ) (A : OAI.ContingencyTables.DensePrograms.MatrixCode) (i : Fin xs.length),\n  (Math115.PhysicalTraceJoin.restoreZeroMarginMatrix xs ys A)[↑i].length = ys.length",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

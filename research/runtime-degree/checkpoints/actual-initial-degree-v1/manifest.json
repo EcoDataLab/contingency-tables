@@ -1,0 +1,20 @@
+{
+  "status": "ordinary compilation, compiled-environment audit and separate AI source review passed",
+  "files": {
+    "SOURCE_REVIEW.md": "32955cc3f3a97a3f7da03ba4e606dfe0556d71ca34aa191e81c20cb284ed90c1",
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "ad2ab61d004fbb3225ae091e125fa7f42411a5b87ca4578304fae99821da45ff",
+    "verification.json": "5c3451ab567d188dfa7970e71c1efe55cd0feb3dfed7a938a896910d82a53bb8",
+    "InitialRuntime/InitialDegree.lean": "bdadd54060363a8bfec5bd8ecd9e37692c6dd14bf553fa492a8c15246a770b42",
+    "InitialRuntime/GreedyDegree.lean": "cc32b1173db329ce4f94a4e0cd6a0c07b0833df96a57d4d3ca16b4e64079fe8f",
+    "evidence/InitialRuntime_GreedyDegree.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/object-portability.json": "a995fff24304f4175c8667d2589813eb0c51a5b0fbe7e14da86d8788038a7e28",
+    "evidence/InitialRuntime_InitialDegree.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/GREEDY_SOURCE_REVIEW.md": "be0d8a570bf5a8d876aa6f5cae7cf7ed819bafa8d8c0bcd30ff6082c004abd75",
+    "evidence/InitialRuntime_GreedyDegree.stdout.txt": "34d697060e9cfdcc0524e9e998593a8e383e5dfb6b1a8f242507522286cea45e",
+    "evidence/InitialRuntime_InitialDegree.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evidence/imported-object-hashes.json.gz": "9e09173294a6ddecf853b452cf8750c70f4b2084c7a674a9041a23f66bb3b6be",
+    "evidence/reused-native-bindings.json": "99f296f852380240d6f67a1469e97ee296370c6ab22b9c73b4ee064bd5e5795c",
+    "evidence/environment-audit.json.gz": "81e8470131c2aad727fa83b57d585ee433b4fa85ce2b7e2ca140eefff73f9b31"
+  }
+}

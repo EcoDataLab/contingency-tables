@@ -1,5 +1,77 @@
 # Formal verification of the #115 refinements
 
+The new [aggregate trace packet](../research/aggregate-defect-trace/) proves
+`34848d⁵(m+n−2)³` for the same actual rational defect trace and a squared
+bounded-aspect certificate expressing d^6.5. Its eight new modules derive
+the completed-table budget, actual correction cap, full-state variance and
+final normalization. A fresh combined public-source build passed for all 49
+research modules, the pinned helper and the auditor. Its environment audit
+passed with 1,264 selected declarations (1,118 theorems) and eight full
+headline closures, using only standard axioms. Separate AI source review
+passed. The
+[statement map](aggregate-defect-trace.md) records its exact hypotheses and
+the comparison with the preceding shape bound.
+
+The [finite junction/star helper](../research/junction-star/) separately
+proves `E_J(F_g)≤12E_star(g)` from explicit incidence, repair and incoming-mass
+hypotheses, deriving the needed joint error inequality. Its targeted native
+build and compiled-environment audit passed for 23 declarations, including
+15 theorems, and five complete headline closures with standard axioms only.
+Actual table labels and counts are not instantiated by this helper; the
+growing-family exponents remain reviewed mathematics. Its reproduction
+reuses authenticated prior imports and has its own receipt.
+
+The preceding [actual rational defect-trace packet](../research/physical-defect-trace/)
+freshly compiles its 41 research modules, the pinned upstream helper and the
+environment auditor. It enumerates 1,147 selected declarations (1,011 theorems)
+and nine complete headline dependency closures, including the actual
+`431d⁸` statement. Only standard axioms occur. This additive ordinary build
+trusts the compiler and baseline imports; it does not expand the historical
+default-target or Comparator receipts. The [statement map](physical-defect-trace.md)
+records the precise chain, hypotheses and implementation boundary.
+
+The separate [actual branch-selection checkpoint](../research/runtime-degree/checkpoints/actual-branch-degree-v1/)
+proves a degree-1008 bound for the unchanged program's charged cost plus encoded
+output on every pair of natural margin lists. Its two source modules and fresh
+20-name transitive axiom audit passed ordinary native compilation with trusted
+compiler/cache inputs. The [actual matrix-printer checkpoint](../research/runtime-degree/checkpoints/actual-printer-degree-v1/)
+separately proves degree 4 for charged work plus encoded output on every
+`List (List Nat)`, with both new modules compiled and 25 named axiom/type
+checks passed. The [initialization/fallback packet](../research/runtime-degree/checkpoints/actual-initial-degree-v1/)
+adds degrees 4032 and 18, with a compiled-environment audit covering five
+complete headline closures. The [retry-word packet](../research/runtime-degree/checkpoints/actual-retry-degree-v1/)
+adds the exact parser degree 42914304 and 25 focused transitive axiom/type
+checks. Those new sources compiled locally with authenticated reused imports;
+separate AI source/evidence reviews passed. The
+[unit packed-trial packet](../research/runtime-degree/checkpoints/actual-unit-degree-v1/)
+now closes the exact original program on every literal input, with degree
+`272019144737569436269241336269647035188617216` and six final standard-only
+transitive axiom/type readbacks. Separate AI source review passed. The [reference-trial certificate](../research/runtime-degree/checkpoints/actual-reference-degree-v1/)
+and [complete explicit-degree theorem](../research/runtime-degree/checkpoints/complete-explicit-degree-v1/)
+now close the remaining field and composition. The original public machine
+has `Time≤C S^D` with a fixed 4,137-digit D, every-tape feasibility and TV≤2^-h.
+Five focused readbacks and four complete environment-derived headline closures
+passed with standard axioms; separate AI source review passed. C remains
+existential and no smaller runtime degree than upstream is established. The [current field table](composed-complexity.md#exact-draw-cost-certificates)
+gives the exact endpoint scope. These additive packets are outside the
+historical default Linux and strict Comparator scopes.
+
+The sharper [aggregate incidence](aggregate-incidence.md) and
+[zero-range subclass](zero-range-subclass.md) are reviewed mathematical
+results with their formalization limits stated separately. Current strict
+checking infrastructure status is in the [cache-memo repair](../research/strict-sampler-checkpoints/hash-memo-normalization-v1/):
+Lake's decimal-format rewrite was reproduced, its memos prepared before
+fresh admission, and the exact dependency command passed twice under the
+unchanged full frozen checks. No proof module was compiled in that diagnostic;
+it establishes no full proof or Comparator acceptance. Earlier checkpoint
+statuses below retain their historical scopes.
+
+The [second bounded full attempt](../research/strict-sampler-checkpoints/second-proof-failure-v1/)
+subsequently compiled nine modules from the historical sampler closure,
+then stopped on a process-observer permission error during a dependency gate.
+Its exact receipts and logs are preserved. No export, kernel replay or
+Comparator stage ran; it does not verify the complete sampler or new research.
+
 The formal work is additive to OpenAI's pinned #115 source. It now proves
 sharper Poincare bounds for the unchanged original ideal chains and actual
 parameterized ideal chains at both dense-compatible and smaller ideal-only scales,
@@ -26,9 +98,9 @@ The [compiled-environment audit](../formal/results/environment-aggregate-1236/RE
 
 The archived [outer-sampler attempt](../research/outer-sampler/status.json) failed: 673 modules were reused, three failed, nine were dependency-blocked, and no new source compiled successfully in that attempt. `LatticeProfileStep` had passed the preceding normal attempt and was reused; its recorded failures were `LatticeProfileWalk`, `LatticeSamplerPreparation`, and `LatticeUnitStep`. All 13 attempted outer-sampler sources and diagnostics are frozen under [research/outer-sampler](../research/outer-sampler/) outside the default formal target. That failed attempt established no complete sampler or machine-runtime result. The later [complete bounded-sampler checkpoint](outer-sampler-compiler-checkpoint.md) has its own exact sources and evidence.
 
-The [runtime-degree archive](../research/runtime-degree/) retains passed TreeDegree diagnostics, a failed PolynomialCompilerDegree diagnostic, and uncompiled fresh-bit/finite-word proposals. A later [seven-helper checkpoint](../research/runtime-degree/checkpoints/generic-helpers-v1/) has ordinary native compilation and two named axiom audits, covering the generic compiler lift and selected arithmetic/seed realizers. Its complete count/draw degree hypotheses remain unresolved. The numerical complete runtime exponent is unknown. A separate [strict tiny Comparator fixture](../formal/results/strict-comparator-smoke/README.md) passed the real sandbox, serial builds, exporter, default Lean kernel, and comparison. Its exact Linux entrypoint and evidence supplement the earlier [serial orchestration archive](../research/comparator-serial/). This acceptance covers only the fixture. The [earlier full-challenge VM attempt](../formal/results/strict-comparator-vm-895b45c/README.md) exhausted memory before export and remains recorded as failed; neither the original challenge nor the research sampler has a strict acceptance result. The separate [revised sampler challenge](../research/strict-sampler-challenge/) supplies exact statement/solution modules and a reviewed Linux checking runner. Its native entrypoint checks passed. Two provisioning failures remain recorded; a third attempt passed source installation and actual sandbox probes, then rejected `formal/.lake/config/5/lakefile.olean` during runtime authentication. It closed before proof compilation, export or comparison; the configuration-cache repair remains unimplemented.
+The [runtime-degree archive](../research/runtime-degree/) retains passed TreeDegree diagnostics, a failed PolynomialCompilerDegree diagnostic, and uncompiled fresh-bit/finite-word proposals. A later [seven-helper checkpoint](../research/runtime-degree/checkpoints/generic-helpers-v1/) has ordinary native compilation and two named axiom audits, covering the generic compiler lift and selected arithmetic/seed realizers. Its count/draw hypotheses were unresolved at that historical checkpoint; the current explicit-degree packet above closes them. A separate [strict tiny Comparator fixture](../formal/results/strict-comparator-smoke/README.md) passed the real sandbox, serial builds, exporter, default Lean kernel, and comparison. Its exact Linux entrypoint and evidence supplement the earlier [serial orchestration archive](../research/comparator-serial/). This acceptance covers only the fixture. The [earlier full-challenge VM attempt](../formal/results/strict-comparator-vm-895b45c/README.md) exhausted memory before export and remains recorded as failed; neither the original challenge nor the research sampler has a strict acceptance result. The separate [revised sampler challenge](../research/strict-sampler-challenge/) supplies exact statement/solution modules and a reviewed Linux checking runner. Its native entrypoint checks passed. Two provisioning failures remain recorded; a third attempt passed source installation and actual sandbox probes, then rejected `formal/.lake/config/5/lakefile.olean` during runtime authentication. It closed before proof compilation, export or comparison. The configuration-cache repair had not yet been implemented at that checkpoint; its later implementation and the subsequent nine-module attempt are recorded in [the current status](status.md).
 
-Use the [contributor handoff](handoff.md) for reproduction and ordered next-round obligations. Reviewed application evidence includes the [mature worker-library benchmark](worker-library-benchmarks.md), [public commuting backtest](commuting-backtest.md), and [source-level composed complexity review](composed-complexity.md). These measure a classical law, describe a public job-table case frame, and retain a symbolic numerical-degree comparison, respectively; those reports do not measure the complete sampler's practical performance.
+Use the [contributor handoff](handoff.md) for reproduction and ordered next-round obligations. Reviewed application evidence includes the [mature worker-library benchmark](worker-library-benchmarks.md), [public commuting backtest](commuting-backtest.md), and [source-level composed complexity review](composed-complexity.md). These measure a classical law, describe a public job-table case frame, and compare the new explicit local degree with the still-symbolic upstream degree, respectively; those reports do not measure the complete sampler's practical performance.
 
 Review provenance: the independent source reviews are separate AI-agent reviews within this project. Human MCMC and Lean review is welcome; ordinary compiler outcomes, mathematical review, and strict kernel replay are distinct evidence.
 

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "28d4c9b57c9fd44588f3c4396d5e4f90cf9f0114",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalStarBudget.Schedule"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalStarBudget.Schedule",
+      "source": "research/physical-star-budget/formal/ResearchPhysicalStarBudget/Schedule.lean",
+      "source_sha256": "a6a78cbf685e21318828600eed3cdbb94ebc036af2f872d1f0662fe6f0d94f14",
+      "returncode": 0,
+      "seconds": 52.74610233400017,
+      "olean_sha256": "89aa09784dfd516a541bf336c4073616e1dd5a5cb2009ce609a48c75fcf7e3c7"
+    }
+  ],
+  "audit_seconds": 127.93365237489343,
+  "audit_sha256": "1af0d0d446af0d17139f7da9f0d7a6e7106e3f4d3ec0cedda9f83f35c55ad4c6",
+  "audit_driver_sha256": "9b7038474d0fd8a4cb0c27e26d23f2081b8ff5939597544854ded9443c5d8b1a",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "c28dd672d1b5503db94635dc19b4fdffe1250ada45332eaacb982c6554f82142",
+  "declaration_count": 19,
+  "theorem_count": 10,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalStarBudget.exit_budget",
+      "closure_size": 7501,
+      "statement": "∀ (d t : ℕ),\n  (1 - Math115.PhysicalRationalKernel.proposalRat d / 2) ^ Math115.PhysicalStarBudget.attempts d t +\n      ↑(Math115.PhysicalStarBudget.attempts d t) *\n        Math115.CompletionRetryBudget.dyadic (Math115.PhysicalStarBudget.precision d t) ≤\n    Math115.CompletionRetryBudget.dyadic (t + 1)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalStarBudget.scheduledExit_variation",
+      "closure_size": 44050,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (hL : 7 ≤ L) (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L)\n      (entering : Math115.PhysicalDefectTrace.DefectVertices r c U L)\n      (hbe :\n        OAI.ContingencyTables.SmallGraphProfiles.physicalAdjacent r c U L (Math115.ReducedSmallChain.capacity r c U L) ⋯\n          ↑b ↑entering)\n      (t : ℕ),\n      OAI.ContingencyTables.FirstSuccess.variation\n          (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n            (Math115.PhysicalStarRetry.flatExit r c U L hr hc b\n              (Math115.PhysicalStarBudget.precision OAI.ContingencyTables.CompletionCounts.dimensionAllowance t)\n              entering\n              (Math115.PhysicalStarBudget.attempts OAI.ContingencyTables.CompletionCounts.dimensionAllowance t)))\n          (Math115.PhysicalStarRetry.targetLaw r c U L hr hc b ⋯) ≤\n        Math115.CompletionRetryBudget.dyadic (t + 1)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,15 @@
+<repo>/.local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseAcceptanceDegree.lean:16:17: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<repo>/.local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseAcceptanceDegree.lean:35:2: error: 'change' tactic failed, pattern
+  weight (List.foldl (fun a x => 2 * a) n pre) ≤ 12 * S + 1
+is not definitionally equal to target
+  weight (List.foldl (fun z a => ((fun n => 2 * n) ∘ Prod.snd) (a, z)) n pre) ≤
+    12 * weight (bs, n) + eval (weight (bs, n)) 1
+Math115.ReferenceRuntimeNext.typed_dyadicWordAccept : Typed dyadicWordAcceptRealizer 32
+'Math115.ReferenceRuntimeNext.typed_dyadicWordAccept' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+Math115.ReferenceRuntimeNext.typed_axisWordStep : Typed axisWordStepRealizer 2016
+'Math115.ReferenceRuntimeNext.typed_axisWordStep' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,85 @@
+{
+  "all_stage_exit_codes_zero": true,
+  "authenticated_guest_members": 14,
+  "cache_bytes": 9261675188,
+  "cache_files": 131021,
+  "candidate_installed_in_checker": false,
+  "comparator_executed": false,
+  "concurrent_race_error_equivalence": false,
+  "default_kernel_replay_executed": false,
+  "evidence_class": "completed standalone stable-Linux metadata equality/timing; candidate uninstalled",
+  "exact_full_dictionary_equality": true,
+  "export_executed": false,
+  "independent_public_vm_reproduction": false,
+  "metrics_file": "evidence/snapshot-comparison.json",
+  "owned_qemu_reaped": true,
+  "owned_qemu_terminate_sent": true,
+  "phases": [
+    {
+      "cap_seconds": 600,
+      "elapsed_seconds": 1.5555589199066162,
+      "returncode": 0,
+      "stage": "install",
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2b0934143ef558f9d621b9a07a7ab30d84db9fb3f8fac352281aebe1c3cdb3f9"
+    },
+    {
+      "cap_seconds": 300,
+      "elapsed_seconds": 0.4795045852661133,
+      "returncode": 0,
+      "stage": "preflight",
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b"
+    },
+    {
+      "cap_seconds": 5400,
+      "elapsed_seconds": 159.264014005661,
+      "returncode": 0,
+      "stage": "authenticate",
+      "status": "passed",
+      "stderr_sha256": "86e42e10bfe7b9157892e9b006684c6633cbfbef52f743337770eec2008e75a4",
+      "stdout_sha256": "ac22a5edf87ac0cde4fbfe0adbf2918a1a9ef22ac0bef5155543018fd31ca619"
+    },
+    {
+      "cap_seconds": 3600,
+      "elapsed_seconds": 137.052659034729,
+      "returncode": 0,
+      "stage": "plan",
+      "status": "passed",
+      "stderr_sha256": "a9a36ca1952745714b41da1112db794ee4d3bf5afe107c66b05a6762e72caa4d",
+      "stdout_sha256": "54754e67f3660581f5af4cb22aae5060451a1081110e07ab183fa83b80394340"
+    }
+  ],
+  "preserved_five_pins_equal": true,
+  "process_inventory_clear_at_collection": true,
+  "profile": {
+    "acceleration": "whpx,kernel-irqchip=off",
+    "aggregate_benchmark_cap_seconds": 1800,
+    "cpu": "max",
+    "fresh_child_virtual_gib": 80,
+    "guest_ram_mib": 8192,
+    "guest_vcpus": 1,
+    "machine": "pc-q35-11.1",
+    "method_cap_seconds": 900,
+    "network": "none",
+    "phase_caps_seconds": {
+      "authenticate": 5400,
+      "collect": 600,
+      "install": 600,
+      "plan": 3600,
+      "preflight": 300
+    },
+    "swap": false,
+    "wall_clock_cap_seconds": 12600
+  },
+  "proof_compilation_executed": false,
+  "qemu_exit_code": 1,
+  "qemu_stderr_bytes": 0,
+  "raw_guest_archive_sha256": "2b3d47f55eb583e87dd0d587f64b217b66ff1585334119456980fc79a5e6be73",
+  "recorded_soft_lockup_warnings": 0,
+  "serial_reconstruction_required": false,
+  "strict_sampler_acceptance": false,
+  "vm_elapsed_seconds": 397.5106987999752
+}

@@ -1,0 +1,40 @@
+{
+  "scope": "lossless transport only; original evidence retained; no omitted member",
+  "transforms": {
+    "baseline-runtime-freeze.json": {
+      "encoding": "gzip",
+      "original_bytes": 23054538,
+      "original_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+      "transport_name": "baseline-runtime-freeze.json.gz",
+      "transport_sha256": "ee72d1f87aa5ed932c765dabb991e1ba8f58850757c5fdaf4dce92a9c321d9e9"
+    },
+    "memo-preparation/artifact-request.txt": {
+      "encoding": "gzip",
+      "original_bytes": 6585960,
+      "original_sha256": "542b696fe2ccecb0a0a21eb4d3aa38ab3c99c0def54f6bf27451a4991251e0ed",
+      "transport_name": "memo-preparation/artifact-request.txt.gz",
+      "transport_sha256": "409c10cfd0936d92f9401be7502c5fdc525d5ba2cd7450d46eef14989f229bcf"
+    },
+    "memo-preparation/result.json": {
+      "encoding": "gzip",
+      "original_bytes": 5947363,
+      "original_sha256": "4501556f9030e3d05c2ddaad072f0b222fbee5538436cb3e078590a21324d35d",
+      "transport_name": "memo-preparation/result.json.gz",
+      "transport_sha256": "a59003788ff8603881f84e108f1eb896fc149e7e8c8dc6173e50fb2826b07539"
+    },
+    "memo-preparation/runtime-freeze.json": {
+      "encoding": "gzip",
+      "original_bytes": 23054538,
+      "original_sha256": "b777e2f434af7744108690dbbd0ec790f022f78172028ee723fbba02f29b3f8e",
+      "transport_name": "memo-preparation/runtime-freeze.json.gz",
+      "transport_sha256": "88e4932448b1f273c311e50a9d3db4af756225cbfd68baa4f1db4341d3b9cc90"
+    },
+    "repair.stdout.log": {
+      "encoding": "gzip",
+      "original_bytes": 5732997,
+      "original_sha256": "6e6a734539689dc43f7edf803a2664dceed05493ba1072efa3ae7b7b942c7aa1",
+      "transport_name": "repair.stdout.log.gz",
+      "transport_sha256": "9e3b0c132b0fe4f80089c47003cd3f0f91a58f32ecd68c3736fe6ebe099d0827"
+    }
+  }
+}

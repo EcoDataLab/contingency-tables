@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "compilation": [
+    {
+      "module": "InitialRuntime.GreedyDegree",
+      "source": "InitialRuntime/GreedyDegree.lean",
+      "source_sha256": "cc32b1173db329ce4f94a4e0cd6a0c07b0833df96a57d4d3ca16b4e64079fe8f",
+      "source_unchanged": true,
+      "returncode": 0,
+      "seconds": 37.412,
+      "olean_sha256": "9bf16095d449376b6690ac490de922328055342260f74e20c55880f9f6a3172c"
+    },
+    {
+      "module": "InitialRuntime.InitialDegree",
+      "source": "InitialRuntime/InitialDegree.lean",
+      "source_sha256": "bdadd54060363a8bfec5bd8ecd9e37692c6dd14bf553fa492a8c15246a770b42",
+      "source_unchanged": true,
+      "returncode": 0,
+      "seconds": 34.403,
+      "olean_sha256": "f2d26c091454f53acf75ecee7f33e985ef18aaa96168cbb9cf21dc5beace1239"
+    }
+  ],
+  "declaration_count": 63,
+  "theorem_count": 61,
+  "audit_seconds": 67.27,
+  "audit_stdout_sha256": "81e8470131c2aad727fa83b57d585ee433b4fa85ce2b7e2ca140eefff73f9b31",
+  "imported_objects_sha256": "9e09173294a6ddecf853b452cf8750c70f4b2084c7a674a9041a23f66bb3b6be",
+  "headlines": [
+    {
+      "name": "Math115.InitialRuntimeNext.typed_actual_greedyTable",
+      "closure_size": 9582,
+      "statement": "Math115.DegreeBounds.Typed OAI.ContingencyTables.GreedyFeasibleTable.tableRealizer 18"
+    },
+    {
+      "name": "Math115.InitialRuntimeNext.typed_actual_initialFallback",
+      "closure_size": 9587,
+      "statement": "Math115.DegreeBounds.Typed Math115.LatticeSamplerPreparation.initialFallbackRealizer 18"
+    },
+    {
+      "name": "Math115.InitialRuntimeNext.initialViews_weight_output",
+      "closure_size": 5069,
+      "statement": "\u2200 (a b : \u2115),\n  (\u2200 (z : List \u2115 \u00d7 List \u2115),\n      OAI.MatchingFPRAS.TreeTyped.weight (Math115.PhysicalComputedProposal.idealMarginThreshold z) \u2264\n        a * OAI.MatchingFPRAS.TreeTyped.weight z + b) \u2192\n    \u2200 (z : List \u2115 \u00d7 List \u2115),\n      OAI.MatchingFPRAS.TreeTyped.weight (Math115.LatticeSamplerPreparation.initialViews z) \u2264\n        12 * OAI.MatchingFPRAS.TreeTyped.weight z ^ 4 + (24 + 4 * a) * OAI.MatchingFPRAS.TreeTyped.weight z ^ 3 +\n            (17 + 4 * b) * OAI.MatchingFPRAS.TreeTyped.weight z ^ 2 +\n          3"
+    },
+    {
+      "name": "Math115.InitialRuntimeNext.typed_actual_initialConfiguration",
+      "closure_size": 10517,
+      "statement": "Math115.DegreeBounds.Typed Math115.LatticeSamplerPreparation.initialConfigurationRealizer 4032"
+    },
+    {
+      "name": "Math115.InitialRuntimeNext.actual_initialConfiguration_polynomial",
+      "closure_size": 10518,
+      "statement": "\u2203 P,\n  P.natDegree \u2264 4032 \u2227\n    \u2200 (z : Math115.LatticeSamplerPreparation.Margins \u00d7 \u2115),\n      Math115.LatticeSamplerPreparation.initialConfigurationRealizer.cost z +\n          OAI.MatchingFPRAS.TreeTyped.weight (Math115.LatticeSamplerPreparation.initialConfiguration z) \u2264\n        Polynomial.eval (OAI.MatchingFPRAS.TreeTyped.weight z) P"
+    }
+  ],
+  "scope": "Fresh exact owned-source local compilation/type check and full compiled-environment/5headline standard-axiom audit; authenticated native dependencies reused and hash inventoried, not rebuilt. Greedy and Initial own compile receipts are separately preserved.",
+  "evidence_projection": {
+    "original_verification_sha256": "f33c4469aec7d4646a12408afde50435bd1321113a78d809249fa032efe09534",
+    "substitution": "Private source path -> byte-identical public source path; all numeric values, object/compiler hashes and exact theorem types retained."
+  },
+  "publication_scope": "Two exact source modules; fresh local owned-source compilation and complete compiled-environment/5headline audit; reused authenticated native dependencies, no binary objects or private cache distribution."
+}

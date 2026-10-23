@@ -1,0 +1,60 @@
+<unit-source-root>/UnitRuntime/RefinedExchangeDegree.lean:22:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  e ≥ 0
+  d ≥ 0
+  c ≥ 0
+  b ≥ 0
+  b + c + d - e ≥ -1
+  a ≥ 0
+  a - b ≥ 0
+where
+ a := ↑(weight z.1)
+ b := ↑(weight (flattenViews z.1))
+ c := ↑(weight z.2.1)
+ d := ↑(weight z.2.2)
+ e := ↑(weight z)
+<unit-source-root>/UnitRuntime/RefinedExchangeDegree.lean:40:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<unit-source-root>/UnitRuntime/RefinedExchangeDegree.lean:42:6: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<unit-source-root>/UnitRuntime/RefinedExchangeDegree.lean:40:75: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+<unit-source-root>/UnitRuntime/RefinedExchangeDegree.lean:42:74: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+<unit-source-root>/UnitRuntime/RefinedExchangeDegree.lean:52:17: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+<unit-source-root>/UnitRuntime/RefinedExchangeDegree.lean:40:75: warning: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<unit-source-root>/UnitRuntime/RefinedExchangeDegree.lean:42:74: warning: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<unit-source-root>/UnitRuntime/RefinedExchangeDegree.lean:52:17: warning: Unused tactic linter: `exact hinput` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<unit-source-root>/UnitRuntime/RefinedExchangeDegree.lean:58:56: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<unit-source-root>/UnitRuntime/RefinedExchangeDegree.lean:112:4: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  f ≥ 0
+  e ≥ 0
+  d ≥ 0
+  c ≥ 0
+  c - d ≥ 0
+  b ≥ 0
+  b - f ≥ 1
+  a ≥ 0
+  a - b ≥ 0
+where
+ a := ↑(eval (weight (flattenViews v)) pairsEnvelope)
+ b := ↑(weight (positiveExchangeIndices (flattenViews v)))
+ c := ↑((fun n => eval n pairsEnvelope) (weight v))
+ d := ↑((fun n => eval n pairsEnvelope) (weight (flattenViews v)))
+ e := ↑(weight v)
+ f := ↑(eval (weight v) pairsEnvelope)

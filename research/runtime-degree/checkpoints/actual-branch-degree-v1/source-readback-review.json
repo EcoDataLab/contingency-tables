@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "review": "Independent source and actual native type/axiom readback by the responsible reviewer, plus separate AI review of the degree/size argument",
+  "actual_realizer": "Math115.LatticeSamplerPreparation.bothLargeTestRealizer",
+  "degree": 1008,
+  "uniform_quantifier_order": "one Polynomial Nat witness before forall z : List Nat x List Nat",
+  "extra_input_hypotheses": [],
+  "covered_costs": [
+    "actual cutoff preparation",
+    "stored-length range construction",
+    "full filterWith/indexed margin reads",
+    "both list-length folds",
+    "comparisons and boolAnd",
+    "encoded output weight"
+  ],
+  "unresolved_actual_draw_fields": [
+    "printer",
+    "initial",
+    "fallback",
+    "referenceTrial",
+    "unitTrial",
+    "retryWords"
+  ],
+  "source_sha256": {
+    "DrawRuntime/RangeSeed.lean": "aaf1c1ce1067a4e21767a1790f7672773cd3e2cb3d98164b0a8a39916b6edf09",
+    "DrawRuntime/BranchDegree.lean": "dbc0149be5f16046cacce5c5020307a808298662ce072eac39d20328eae30fd1"
+  },
+  "audit_driver_sha256": "5af7815ca60fe23bd827e9b4975ba30aa58cc46790b96922f8eae1c74148e77a",
+  "ordered_named_axioms": 20,
+  "nonstandard_axioms": [],
+  "claims_excluded": [
+    "complete numeric draw degree",
+    "complete numeric sampler runtime degree",
+    "default-target or Linux replay",
+    "strict Comparator acceptance",
+    "sampler performance measured from compilation time"
+  ]
+}

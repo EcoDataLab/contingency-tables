@@ -1,0 +1,34 @@
+[
+  {
+    "module": "Marked.Survivor",
+    "source": "research/spaced-attempts/formal/Marked/Survivor.lean",
+    "source_sha256": "f9d0ea93a2a47181e2a6be3fc407cffb714ad781687c66a1be376fabc5f8ea86",
+    "returncode": 0,
+    "seconds": 5.486,
+    "olean_sha256": "39d10d829d94ece912d235557c497536706ba8238b05b6728458133796f906d6"
+  },
+  {
+    "module": "Marked.L2",
+    "source": "research/spaced-attempts/formal/Marked/L2.lean",
+    "source_sha256": "7f4c11a1c4352f6f6a594596f9405f1fa669b3f0ad9bb9fab6cd57979c3d926e",
+    "returncode": 0,
+    "seconds": 4.072,
+    "olean_sha256": "cbdf6438f7252f20899f3807bb3f8add06760bd57f12b9758f093308dfd15693"
+  },
+  {
+    "module": "Marked.Killed",
+    "source": "research/spaced-attempts/formal/Marked/Killed.lean",
+    "source_sha256": "e83ca10988b1b58176f0800866ea986abb9d081cd42783fb1544288261a59173",
+    "returncode": 0,
+    "seconds": 4.611,
+    "olean_sha256": "a5981a2799fe5e510fef2402cb002f9109e257f0057b83e18511305196a236a4"
+  },
+  {
+    "module": "ResearchAudit.EnvironmentAudit",
+    "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+    "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "returncode": 0,
+    "seconds": 3.033,
+    "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+  }
+]

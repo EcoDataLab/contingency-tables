@@ -1,0 +1,104 @@
+--- initial/Trial.lean
++++ final/Trial.lean
+@@ -17,0 +18 @@
++open SmallGraphProfiles
+@@ -27,0 +29,30 @@
++
++/-- Fixed-width independence algebra, proved before any physical program is
++substituted for the two word maps. -/
++lemma fixedWord_finish_law
++    {A T Z : Type*} [Fintype A] [Fintype T] [Fintype Z]
++    [DecidableEq A] [DecidableEq T] [DecidableEq Z] {s f : ℕ}
++    (proposal : (Fin s → Bool) → A) (draw : (Fin f → Bool) → T)
++    (finish : A → T → Z) :
++    mapLaw (uniformLaw (α := Fin (s + f) → Bool))
++      (fun word => let parts := splitWordEquiv s f word
++        finish (proposal parts.1) (draw parts.2)) =
++      bindLaw (mapLaw (uniformLaw (α := Fin s → Bool)) proposal)
++        (fun a => mapLaw (mapLaw (uniformLaw (α := Fin f → Bool)) draw) (finish a)) := by
++  let F := fun parts : (Fin s → Bool) × (Fin f → Bool) =>
++    finish (proposal parts.1) (draw parts.2)
++  have he := map_equiv (splitWordEquiv s f)
++    (uniformLaw (α := Fin (s + f) → Bool)) F
++  rw [uniform_equiv, ←uniform_product] at he
++  calc
++    _ = mapLaw (productLaw (uniformLaw (α := Fin s → Bool))
++        (uniformLaw (α := Fin f → Bool))) F := he.symm
++    _ = bindLaw (mapLaw (uniformLaw (α := Fin s → Bool)) proposal)
++        (fun a => mapLaw (uniformLaw (α := Fin f → Bool))
++          (fun word => finish a (draw word))) :=
++      mapLaw_product_finish _ _ proposal (fun a word => finish a (draw word))
++    _ = _ := by
++      congr 1
++      funext a
++      exact (mapLaw_comp _ draw (finish a)).symm
++
+@@ -100 +131,20 @@
+-  exact mapLaw_equiv_output (referenceFibreMap r c U L i₀ j₀ x).symm _ _
++  unfold referenceCompletion oracleFamily referenceFibreMap completionLaw
++  simp only [Equiv.symm_symm]
++  exact mapLaw_equiv_output _
++    (uniformLaw (α := Fin (bits r c U L hr hc x h) → Bool))
++    (completionDraw r c U L hr hc x h)
++
++/-- The actual Boolean branch, isolated before the word-law algebra. -/
++lemma actualStep_eq (b : BalancedVertices r c U L) (h : ℕ)
++    (word : Fin (s + bits r c U L hr hc b.val h) → Bool) :
++    actualStep r c U L hr hc b h word =
++      let parts := splitWordEquiv s (bits r c U L hr hc b.val h) word
++      completionDecision R₀ P₀ b.val
++        (Math115.PhysicalComputedProposal.computedProposal r c U L b.val parts.1)
++        (referenceCompletion r c U L hr hc b.val
++          (completionDraw r c U L hr hc b.val h parts.2)) := by
++  dsimp only [actualStep]
++  exact draw_completionDecision r c U L hr hc b.val
++    (Math115.PhysicalComputedProposal.computedProposal r c U L b.val
++      (splitWordEquiv s (bits r c U L hr hc b.val h) word).1) h
++    (splitWordEquiv s (bits r c U L hr hc b.val h) word).2
+@@ -109,12 +159 @@
+-  let finish := fun proposal word => completionDecision R₀ P₀ b.val proposal
+-    (referenceCompletion r c U L hr hc b.val
+-      (completionDraw r c U L hr hc b.val h word))
+-  let F := fun parts : (Fin s → Bool) × (Fin (bits r c U L hr hc b.val h) → Bool) =>
+-    finish (Math115.PhysicalComputedProposal.computedProposal r c U L b.val parts.1) parts.2
+-  have hpoint : actualStep r c U L hr hc b h =
+-      fun word => F (splitWordEquiv s (bits r c U L hr hc b.val h) word) := by
+-    funext word
+-    exact draw_completionDecision r c U L hr hc b.val
+-      (Math115.PhysicalComputedProposal.computedProposal r c U L b.val
+-        (splitWordEquiv s (bits r c U L hr hc b.val h) word).1) h
+-      (splitWordEquiv s (bits r c U L hr hc b.val h) word).2
++  have hpoint := funext (actualStep_eq r c U L hr hc b h)
+@@ -122,14 +161,18 @@
+-  have he := map_equiv (splitWordEquiv s (bits r c U L hr hc b.val h))
+-    (uniformLaw (α := Fin (s + bits r c U L hr hc b.val h) → Bool)) F
+-  rw [uniform_equiv, ←uniform_product] at he
+-  rw [←he, mapLaw_product_finish]
+-  rw [Math115.PhysicalComputedProposal.computedProposal_law r c U L htotal b.val]
+-  unfold referenceStepLaw completionStepLaw
+-  congr 1
+-  funext proposal
+-  exact (mapLaw_comp _
+-    (fun word => referenceCompletion r c U L hr hc b.val
+-      (completionDraw r c U L hr hc b.val h word))
+-    (completionDecision R₀ P₀ b.val proposal)).symm.trans
+-      (congrArg (fun p => mapLaw p (completionDecision R₀ P₀ b.val proposal))
+-        (referenceDraw_law r c U L hr hc b.val h))
++  calc
++    _ = bindLaw
++        (mapLaw (uniformLaw (α := Fin s → Bool))
++          (Math115.PhysicalComputedProposal.computedProposal r c U L b.val))
++        (fun proposal => mapLaw
++          (mapLaw (uniformLaw (α := Fin (bits r c U L hr hc b.val h) → Bool))
++            (fun word => referenceCompletion r c U L hr hc b.val
++              (completionDraw r c U L hr hc b.val h word)))
++          (completionDecision R₀ P₀ b.val proposal)) :=
++      fixedWord_finish_law
++        (Math115.PhysicalComputedProposal.computedProposal r c U L b.val)
++        (fun word => referenceCompletion r c U L hr hc b.val
++          (completionDraw r c U L hr hc b.val h word))
++        (completionDecision R₀ P₀ b.val)
++    _ = _ := by
++      rw [Math115.PhysicalComputedProposal.computedProposal_law r c U L htotal b.val,
++        referenceDraw_law r c U L hr hc b.val h]
++      rfl

@@ -1,0 +1,19 @@
+--- attempt-01/Trace.lean
++++ attempt-03/Trace.lean
+@@ -195,6 +195,10 @@
+-  simp only [referenceTrace, actualRationalTrace, rationalPhysicalTrace,
+-    Research.WeightedHarmonicTrace.rationalChain, Research.WeightedHarmonicTrace.traceChain,
+-    FiniteChain.ofMoves, Research.WeightedHarmonicTrace.traceMove,
+-    Research.WeightedHarmonicTrace.traceConductance, Research.WeightedHarmonicTrace.starMass,
+-    referenceDD, referenceCross, ddConductance, crossConductance,
+-    acceptedConductance, dite_eq_left href]
++  have hDD : referenceDD r c U L (Classical.choice href.1) (Classical.choice href.2) =
++      ddConductance r c U L := by
++    funext a b
++    simp only [referenceDD, ddConductance, acceptedConductance, dite_eq_left href]
++  have hCross : referenceCross r c U L (Classical.choice href.1) (Classical.choice href.2) =
++      crossConductance r c U L := by
++    funext b a
++    simp only [referenceCross, crossConductance, acceptedConductance, dite_eq_left href]
++  unfold referenceTrace actualRationalTrace rationalPhysicalTrace
++  simp only [hDD, hCross]

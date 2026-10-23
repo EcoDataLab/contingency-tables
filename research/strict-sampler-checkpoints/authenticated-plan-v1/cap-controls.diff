@@ -1,0 +1,22 @@
+# Exact semantic control delta from the preceding startup profile.
+# Host paths, private run identifiers and wrapper bodies are omitted.
+# Authenticator, checker runner and all validation predicates are unchanged.
+--- preceding-profile/guest-phase-controls
++++ admitted-profile/guest-phase-controls
+@@
+- authenticate: 1800
+- plan: 1200
++ authenticate: 5400
++ plan: 3600
+@@
+- --plan --diagnostics --wall-seconds 1200
++ --plan --diagnostics --wall-seconds 3600
+--- preceding-profile/outer-controls
++++ admitted-profile/outer-controls
+@@
+- outer_ceiling_seconds: 6000
++ outer_ceiling_seconds: 12600
+# Both profiles: install600/preflight300/collect600; boot600/cleanup600.
+# Both profiles: 4vCPU/8192MiB/TCG/noNIC/noSwap/fresh80GiB child.
+# Provisioning instance identifier changed to avoid reusing an old cloud-init instance.
+# Actual control bodies and seed are bound by provenance-bindings.json.

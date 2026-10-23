@@ -1,0 +1,81 @@
+{
+  "checks": "passed",
+  "scope": "One finite literal bridge/count/charge fixture with four exact observables; arbitrary-parameter all-observable derivation is separate, no runtime claim",
+  "schema_version": 1,
+  "normalization": "Raw ordinary completion weights and unordered accepted energies; no successful-move conditioning or clock rescaling",
+  "evidence_limits": "No dense completion enumeration, full DD matrix, eigensolver, all-observable finite certificate, Lean compilation, or runtime benchmark. Half acceptance is checked at one concrete reference corner; the derivation uses the parameter-wide reference-independent theorem.",
+  "rows": [
+    1,
+    423,
+    456
+  ],
+  "cols": [
+    2,
+    2,
+    438,
+    438
+  ],
+  "U": 3,
+  "L": 7,
+  "p": 8,
+  "balanced": 30,
+  "defects": 806,
+  "DB_incidences": 1024,
+  "grid_center_edges": 38,
+  "parallel_DD_edges": 152,
+  "jump_shared_defects": 48,
+  "max_endpoint_charge": 1,
+  "max_incoming_jump_degree": 4,
+  "exact_observables": [
+    {
+      "observable": 0,
+      "variance_D": "2028291133031/3163320",
+      "repair_noise": "42173654837846854791781333201852152301060056191/67144842060050372559943242645920782506240",
+      "variance_nu": "2574557368064260741299282080799881373020700442129/196667242393887541228073757709901971960776960",
+      "star_energy": "309977079105932264714872397639923266083794166341589246242407511199/379267998119476921120788752325003738915379660438721354437200",
+      "DD_bridge_energy": "1765024/9",
+      "grid_center_energy": "9230555385558347865466043747124554301175025806063108210923566785967098932419874163/9633397041173311022998069139837628471965271703098562229092903704344866700083200",
+      "jump_center_energy": "857389210158523210489872015431887098854014137239942403459765368712143274789632839/521809006396887680412395411741204875564785550584505454075865617318680279587840"
+    },
+    {
+      "observable": 1,
+      "variance_D": "1798425188/8787",
+      "repair_noise": "0",
+      "variance_nu": "1798425188/8787",
+      "star_energy": "646087240823918272697696461962828962816405571027071753171365511/17635045806280025921679187155208507183867290974505763461150",
+      "DD_bridge_energy": "33112",
+      "grid_center_energy": "8278",
+      "jump_center_energy": "5226"
+    },
+    {
+      "observable": 2,
+      "variance_D": "1277285136/14645",
+      "repair_noise": "0",
+      "variance_nu": "1277285136/14645",
+      "star_energy": "4451781480350379580984280134265494380058827/231509427738970950506164630020242234225",
+      "DD_bridge_energy": "0",
+      "grid_center_energy": "0",
+      "jump_center_energy": "20928"
+    },
+    {
+      "observable": 3,
+      "variance_D": "19665209788/43935",
+      "repair_noise": "1289724889143352488492742852742430303904802/29142726588563529756919810176180895185",
+      "variance_nu": "34428917943594278843578670304833057936573772994/85359046177902578658018124006033841996865",
+      "star_energy": "18801147545874982624788235001678216799219545605857801733984057/154693384265614262470870062764986905121642903285138275975",
+      "DD_bridge_energy": "66224",
+      "grid_center_energy": "900551064181914470176413511557041225506704203816595447677938056934265394008919661/54355104833009133376291188723042174537998494852552651466236001804029195790400",
+      "jump_center_energy": "50366132094723171345162326776060376656682854834693617438532669382209384870007503/4529592069417427781357599060253514544833207904379387622186333483669099649200"
+    }
+  ],
+  "created_utc": "2026-10-11T21:39:16.537998+00:00",
+  "target_law": "ordinary_uniform_completion_cardinalities",
+  "upstream_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_commit": "f912a64c3f26865002a030fc1bbdd67c8d22160b",
+  "source_sha256": {
+    "docs/thin-parallel-comparison.md": "f8a6fa6d1cc61c77d2b5cf8fa99c4d242bf585e9cf25ba0629f1b381d0cda321",
+    "experiments/thin_parallel_comparison.py": "1aef17149744fcbcaca6ab5f629d5a74ab7f2bbb324431fe8853313225ce4940",
+    "src/contingency115/general_neighbors.py": "0140cc52a04245046651a2ede418b878d59603f3639f16ac0209e1dd36ea8521",
+    "src/contingency115/ideal_chain.py": "5432398d088bbd93d473a56fababadfb9f50c807a38e230c222e8527fa23235b"
+  }
+}

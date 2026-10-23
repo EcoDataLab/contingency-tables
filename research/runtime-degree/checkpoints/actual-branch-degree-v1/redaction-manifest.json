@@ -1,0 +1,82 @@
+{
+  "rules": [
+    "Private candidate-root path prefixes become <candidate-root>",
+    "Native workspace prefixes become <native-workspace>",
+    "Process IDs, full commands and host control configuration stay private",
+    "Source and audit driver bytes are unchanged"
+  ],
+  "streams": [
+    {
+      "path": "compilation/DrawRuntime.RangeSeed/stdout.txt",
+      "original_sha256": "eb1158d270748c408e92fb2637aceb71dfbce9ec8409c01a4459a1e3dac4fe52",
+      "public_sha256": "3c3d6f918d8fc0d58d2fd8cf3c89587a31e3914571d6f253c8d9ae4690fc6bdb",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    },
+    {
+      "path": "compilation/DrawRuntime.RangeSeed/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    },
+    {
+      "path": "compilation/DrawRuntime.BranchDegree/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    },
+    {
+      "path": "compilation/DrawRuntime.BranchDegree/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    },
+    {
+      "path": "audit/stdout.txt",
+      "original_sha256": "f90ae407649b2e5501089e9898df0c1263cb64fc8c1a31afc2c6fa47832ffd2e",
+      "public_sha256": "f90ae407649b2e5501089e9898df0c1263cb64fc8c1a31afc2c6fa47832ffd2e",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    },
+    {
+      "path": "audit/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    },
+    {
+      "path": "history/attempt-01/DrawRuntime.RangeSeed/stdout.txt",
+      "original_sha256": "95f69ed73e681be9472468954ab9c576fc024b81a126ed1564fd152d45ac6bc1",
+      "public_sha256": "c8d6f73e7d8e3db91b0e718d9cbd5098de494802f83cd250285c5dbaf99aadd9",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    },
+    {
+      "path": "history/attempt-01/DrawRuntime.RangeSeed/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    },
+    {
+      "path": "history/attempt-02/DrawRuntime.BranchDegree/stdout.txt",
+      "original_sha256": "09c66040dc618f9219b5b7030f61c46287d60b51faffcb857c89d5b01d73c75c",
+      "public_sha256": "25db60ba9285484c8e771dde0e0960fd261f95ebb4ef84d9eca09d3721100b64",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    },
+    {
+      "path": "history/attempt-02/DrawRuntime.BranchDegree/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    },
+    {
+      "path": "history/attempt-03/DrawRuntime.BranchDegree/stdout.txt",
+      "original_sha256": "46fe5420c2d81b41a299decf61b7325d0a530652ca668a162ae26ecf298e13ec",
+      "public_sha256": "8fadf12db956ec2161e405b879dc446e4d4239cb21ba53c82b37d8f30c1c1901",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    },
+    {
+      "path": "history/attempt-03/DrawRuntime.BranchDegree/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mapping": "Declared native-workspace and candidate-root path role substitution only."
+    }
+  ]
+}

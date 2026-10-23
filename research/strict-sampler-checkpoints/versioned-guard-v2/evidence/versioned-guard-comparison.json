@@ -1,0 +1,29 @@
+{
+  "aggregate_benchmark_cap_seconds": 1800,
+  "cache_bytes": 9261675188,
+  "cache_files": 131021,
+  "candidate_plan_call_seconds": 83.9125675,
+  "candidate_runner_sha256": "1008cc3ba5afb129c5d54c8bc030207c8e72715d9b8a1546984e956f919768ca",
+  "complete_identity_validation_seconds": 0.4540280000000507,
+  "exact_full_dictionary_equality": true,
+  "guard_version": "anchored-selected-cache-v2",
+  "helper_sha256": "6eb447ff60a09d13bc134252e490bd99e7a15b92c7436a0db5a677269b91a3a5",
+  "measurement_order": [
+    "original_stat_guard",
+    "versioned_v2_stat_guard",
+    "separate_complete_identity_validation"
+  ],
+  "method_cap_seconds": 900,
+  "module_count": 679,
+  "original_runner_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6",
+  "original_stat_guard_seconds": 26.924304300000017,
+  "proof_compilation_executed": false,
+  "runtime_freeze_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+  "scope": "original authenticated context and unchanged admission/content/root checks; actual v2/original stat guards and complete dictionary validation; no execute",
+  "snapshot_dictionary_sha256": "17257fe85d74d659493751a463e4e646d2f5109df6e6d9ff8602cc70177d79c2",
+  "status": "original_and_versioned_guards_and_full_identities_passed",
+  "trusted_supervisor_quiet_cache": true,
+  "universal_race_error_equivalence": false,
+  "versioned_v2_stat_guard_seconds": 1.1288377999999852,
+  "wrapper_sha256": "6b8a5a16e7f4c45aa74f1620572b33e5c00a321ee0bd36bed2f1f5dd75a0f209"
+}

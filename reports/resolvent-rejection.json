@@ -1,0 +1,1595 @@
+{
+  "evidence": "exact finite matrices/resolvents; no numerical eigenvalue estimates",
+  "ordinary_case_count": 30,
+  "cases": [
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/3",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1/2",
+      "centered_contraction": "1/2",
+      "target": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "infinite_output": [
+        "9/23",
+        "8/23",
+        "6/23"
+      ],
+      "infinite_TV": "5/69",
+      "bias_bound": "1",
+      "expected_marks": "49/23",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/2",
+          "failure_bound": "3/4",
+          "TV_target": "1/3"
+        },
+        {
+          "marks": 2,
+          "failure": "5/18",
+          "failure_bound": "9/16",
+          "TV_target": "5/24"
+        },
+        {
+          "marks": 8,
+          "failure": "115295/13436928",
+          "failure_bound": "6561/65536",
+          "TV_target": "221239/2985984"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/3",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "1/2",
+      "centered_contraction": "1/2",
+      "target": [
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "10/23",
+        "13/23"
+      ],
+      "infinite_TV": "3/46",
+      "bias_bound": "1",
+      "expected_marks": "49/23",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/2",
+          "failure_bound": "3/4",
+          "TV_target": "1/4"
+        },
+        {
+          "marks": 2,
+          "failure": "5/18",
+          "failure_bound": "9/16",
+          "TV_target": "1/9"
+        },
+        {
+          "marks": 8,
+          "failure": "115295/13436928",
+          "failure_bound": "6561/65536",
+          "TV_target": "1605317/26873856"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1/3",
+      "centered_contraction": "1/2",
+      "target": [
+        "0",
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "0",
+        "4/7",
+        "3/7"
+      ],
+      "infinite_TV": "1/14",
+      "bias_bound": "1",
+      "expected_marks": "29/7",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "2/3",
+          "failure_bound": "5/6",
+          "TV_target": "2/3"
+        },
+        {
+          "marks": 2,
+          "failure": "37/72",
+          "failure_bound": "25/36",
+          "TV_target": "37/72"
+        },
+        {
+          "marks": 8,
+          "failure": "27418141/214990848",
+          "failure_bound": "390625/1679616",
+          "TV_target": "27418141/214990848"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "1/3",
+      "centered_contraction": "1/2",
+      "target": [
+        "3/4",
+        "1/4"
+      ],
+      "infinite_output": [
+        "5/7",
+        "2/7"
+      ],
+      "infinite_TV": "1/28",
+      "bias_bound": "1",
+      "expected_marks": "29/7",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "2/3",
+          "failure_bound": "5/6",
+          "TV_target": "1/6"
+        },
+        {
+          "marks": 2,
+          "failure": "37/72",
+          "failure_bound": "25/36",
+          "TV_target": "17/144"
+        },
+        {
+          "marks": 8,
+          "failure": "27418141/214990848",
+          "failure_bound": "390625/1679616",
+          "TV_target": "910133/429981696"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "0",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "2/3",
+      "centered_contraction": "1/2",
+      "target": [
+        "3/4",
+        "0",
+        "1/4"
+      ],
+      "infinite_output": [
+        "3/4",
+        "0",
+        "1/4"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "1",
+      "expected_marks": "2",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/3",
+          "failure_bound": "2/3",
+          "TV_target": "1/12"
+        },
+        {
+          "marks": 2,
+          "failure": "2/9",
+          "failure_bound": "4/9",
+          "TV_target": "1/18"
+        },
+        {
+          "marks": 8,
+          "failure": "128/6561",
+          "failure_bound": "256/6561",
+          "TV_target": "32/6561"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "0",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "2/3",
+      "centered_contraction": "1/2",
+      "target": [
+        "1/4",
+        "3/4"
+      ],
+      "infinite_output": [
+        "1/4",
+        "3/4"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "1",
+      "expected_marks": "2",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/3",
+          "failure_bound": "2/3",
+          "TV_target": "1/4"
+        },
+        {
+          "marks": 2,
+          "failure": "2/9",
+          "failure_bound": "4/9",
+          "TV_target": "1/6"
+        },
+        {
+          "marks": 8,
+          "failure": "128/6561",
+          "failure_bound": "256/6561",
+          "TV_target": "32/2187"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "1",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1",
+      "centered_contraction": "1/2",
+      "target": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "infinite_output": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "1",
+      "expected_marks": "1",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "0",
+          "failure_bound": "1/2",
+          "TV_target": "0"
+        },
+        {
+          "marks": 2,
+          "failure": "0",
+          "failure_bound": "1/4",
+          "TV_target": "0"
+        },
+        {
+          "marks": 8,
+          "failure": "0",
+          "failure_bound": "1/256",
+          "TV_target": "0"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "1",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "1",
+      "centered_contraction": "1/2",
+      "target": [
+        "1/3",
+        "2/3"
+      ],
+      "infinite_output": [
+        "1/3",
+        "2/3"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "1",
+      "expected_marks": "1",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "0",
+          "failure_bound": "1/2",
+          "TV_target": "0"
+        },
+        {
+          "marks": 2,
+          "failure": "0",
+          "failure_bound": "1/4",
+          "TV_target": "0"
+        },
+        {
+          "marks": 8,
+          "failure": "0",
+          "failure_bound": "1/256",
+          "TV_target": "0"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/30",
+        "1/20",
+        "1/10"
+      ],
+      "output_mode": "identity",
+      "success": "1/20",
+      "centered_contraction": "1/2",
+      "target": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "infinite_output": [
+        "693/2026",
+        "341/1013",
+        "651/2026"
+      ],
+      "infinite_TV": "73/6078",
+      "bias_bound": "1",
+      "expected_marks": "20470/1013",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "19/20",
+          "failure_bound": "39/40",
+          "TV_target": "19/30"
+        },
+        {
+          "marks": 2,
+          "failure": "65/72",
+          "failure_bound": "1521/1600",
+          "TV_target": "289/480"
+        },
+        {
+          "marks": 8,
+          "failure": "894656015469023/1343692800000000",
+          "failure_bound": "5352009260481/6553600000000",
+          "TV_target": "399702797037781/895795200000000"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/30",
+        "1/20",
+        "1/10"
+      ],
+      "output_mode": "mixed",
+      "success": "1/20",
+      "centered_contraction": "1/2",
+      "target": [
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "496/1013",
+        "517/1013"
+      ],
+      "infinite_TV": "21/2026",
+      "bias_bound": "1",
+      "expected_marks": "20470/1013",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "19/20",
+          "failure_bound": "39/40",
+          "TV_target": "19/40"
+        },
+        {
+          "marks": 2,
+          "failure": "65/72",
+          "failure_bound": "1521/1600",
+          "TV_target": "203/450"
+        },
+        {
+          "marks": 8,
+          "failure": "894656015469023/1343692800000000",
+          "failure_bound": "5352009260481/6553600000000",
+          "TV_target": "887226734342479/2687385600000000"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/3",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1/2",
+      "centered_contraction": "1/4",
+      "target": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "infinite_output": [
+        "14/39",
+        "40/117",
+        "35/117"
+      ],
+      "infinite_TV": "4/117",
+      "bias_bound": "2/9",
+      "expected_marks": "241/117",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/2",
+          "failure_bound": "5/8",
+          "TV_target": "1/3"
+        },
+        {
+          "marks": 2,
+          "failure": "19/72",
+          "failure_bound": "25/64",
+          "TV_target": "3/16"
+        },
+        {
+          "marks": 8,
+          "failure": "9913601/1719926784",
+          "failure_bound": "390625/16777216",
+          "TV_target": "40953743/1146617856"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/3",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "1/2",
+      "centered_contraction": "1/4",
+      "target": [
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "55/117",
+        "62/117"
+      ],
+      "infinite_TV": "7/234",
+      "bias_bound": "2/9",
+      "expected_marks": "241/117",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/2",
+          "failure_bound": "5/8",
+          "TV_target": "1/4"
+        },
+        {
+          "marks": 2,
+          "failure": "19/72",
+          "failure_bound": "25/64",
+          "TV_target": "17/144"
+        },
+        {
+          "marks": 8,
+          "failure": "9913601/1719926784",
+          "failure_bound": "390625/16777216",
+          "TV_target": "91777613/3439853568"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1/3",
+      "centered_contraction": "1/4",
+      "target": [
+        "0",
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "0",
+        "8/15",
+        "7/15"
+      ],
+      "infinite_TV": "1/30",
+      "bias_bound": "2/9",
+      "expected_marks": "17/5",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "2/3",
+          "failure_bound": "3/4",
+          "TV_target": "2/3"
+        },
+        {
+          "marks": 2,
+          "failure": "23/48",
+          "failure_bound": "9/16",
+          "TV_target": "23/48"
+        },
+        {
+          "marks": 8,
+          "failure": "866075/12582912",
+          "failure_bound": "6561/65536",
+          "TV_target": "866075/12582912"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "1/3",
+      "centered_contraction": "1/4",
+      "target": [
+        "3/4",
+        "1/4"
+      ],
+      "infinite_output": [
+        "11/15",
+        "4/15"
+      ],
+      "infinite_TV": "1/60",
+      "bias_bound": "2/9",
+      "expected_marks": "17/5",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "2/3",
+          "failure_bound": "3/4",
+          "TV_target": "1/6"
+        },
+        {
+          "marks": 2,
+          "failure": "23/48",
+          "failure_bound": "9/16",
+          "TV_target": "11/96"
+        },
+        {
+          "marks": 8,
+          "failure": "866075/12582912",
+          "failure_bound": "6561/65536",
+          "TV_target": "54527/25165824"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "0",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "2/3",
+      "centered_contraction": "1/4",
+      "target": [
+        "3/4",
+        "0",
+        "1/4"
+      ],
+      "infinite_output": [
+        "3/4",
+        "0",
+        "1/4"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "2/9",
+      "expected_marks": "5/3",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/3",
+          "failure_bound": "1/2",
+          "TV_target": "1/12"
+        },
+        {
+          "marks": 2,
+          "failure": "1/6",
+          "failure_bound": "1/4",
+          "TV_target": "1/24"
+        },
+        {
+          "marks": 8,
+          "failure": "1/384",
+          "failure_bound": "1/256",
+          "TV_target": "1/1536"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "0",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "2/3",
+      "centered_contraction": "1/4",
+      "target": [
+        "1/4",
+        "3/4"
+      ],
+      "infinite_output": [
+        "1/4",
+        "3/4"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "2/9",
+      "expected_marks": "5/3",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/3",
+          "failure_bound": "1/2",
+          "TV_target": "1/4"
+        },
+        {
+          "marks": 2,
+          "failure": "1/6",
+          "failure_bound": "1/4",
+          "TV_target": "1/8"
+        },
+        {
+          "marks": 8,
+          "failure": "1/384",
+          "failure_bound": "1/256",
+          "TV_target": "1/512"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "1",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1",
+      "centered_contraction": "1/4",
+      "target": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "infinite_output": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "2/9",
+      "expected_marks": "1",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "0",
+          "failure_bound": "1/4",
+          "TV_target": "0"
+        },
+        {
+          "marks": 2,
+          "failure": "0",
+          "failure_bound": "1/16",
+          "TV_target": "0"
+        },
+        {
+          "marks": 8,
+          "failure": "0",
+          "failure_bound": "1/65536",
+          "TV_target": "0"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "1",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "1",
+      "centered_contraction": "1/4",
+      "target": [
+        "1/3",
+        "2/3"
+      ],
+      "infinite_output": [
+        "1/3",
+        "2/3"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "2/9",
+      "expected_marks": "1",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "0",
+          "failure_bound": "1/4",
+          "TV_target": "0"
+        },
+        {
+          "marks": 2,
+          "failure": "0",
+          "failure_bound": "1/16",
+          "TV_target": "0"
+        },
+        {
+          "marks": 8,
+          "failure": "0",
+          "failure_bound": "1/65536",
+          "TV_target": "0"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/30",
+        "1/20",
+        "1/10"
+      ],
+      "output_mode": "identity",
+      "success": "1/20",
+      "centered_contraction": "1/4",
+      "target": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "infinite_output": [
+        "1891/5622",
+        "2821/8433",
+        "5551/16866"
+      ],
+      "infinite_TV": "71/16866",
+      "bias_bound": "2/9",
+      "expected_marks": "169270/8433",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "19/20",
+          "failure_bound": "77/80",
+          "TV_target": "19/30"
+        },
+        {
+          "marks": 2,
+          "failure": "6499/7200",
+          "failure_bound": "5929/6400",
+          "TV_target": "963/1600"
+        },
+        {
+          "marks": 8,
+          "failure": "114258156491820197/171992678400000000",
+          "failure_bound": "1235736291547681/1677721600000000",
+          "TV_target": "50881759719620161/114661785600000000"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/30",
+        "1/20",
+        "1/10"
+      ],
+      "output_mode": "mixed",
+      "success": "1/20",
+      "centered_contraction": "1/4",
+      "target": [
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "4186/8433",
+        "4247/8433"
+      ],
+      "infinite_TV": "61/16866",
+      "bias_bound": "2/9",
+      "expected_marks": "169270/8433",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "19/20",
+          "failure_bound": "77/80",
+          "TV_target": "19/40"
+        },
+        {
+          "marks": 2,
+          "failure": "6499/7200",
+          "failure_bound": "5929/6400",
+          "TV_target": "6497/14400"
+        },
+        {
+          "marks": 8,
+          "failure": "114258156491820197/171992678400000000",
+          "failure_bound": "1235736291547681/1677721600000000",
+          "TV_target": "113897850777011623/343985356800000000"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/3",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1/2",
+      "centered_contraction": "1/16",
+      "target": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "infinite_output": [
+        "248/731",
+        "736/2193",
+        "713/2193"
+      ],
+      "infinite_TV": "6/731",
+      "bias_bound": "8/225",
+      "expected_marks": "4417/2193",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/2",
+          "failure_bound": "17/32",
+          "TV_target": "1/3"
+        },
+        {
+          "marks": 2,
+          "failure": "73/288",
+          "failure_bound": "289/1024",
+          "TV_target": "11/64"
+        },
+        {
+          "marks": 8,
+          "failure": "121305835565/28179280429056",
+          "failure_bound": "6975757441/1099511627776",
+          "TV_target": "179826436459/18786186952704"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/3",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "1/2",
+      "centered_contraction": "1/16",
+      "target": [
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "1081/2193",
+        "1112/2193"
+      ],
+      "infinite_TV": "31/4386",
+      "bias_bound": "8/225",
+      "expected_marks": "4417/2193",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/2",
+          "failure_bound": "17/32",
+          "TV_target": "1/4"
+        },
+        {
+          "marks": 2,
+          "failure": "73/288",
+          "failure_bound": "289/1024",
+          "TV_target": "71/576"
+        },
+        {
+          "marks": 8,
+          "failure": "121305835565/28179280429056",
+          "failure_bound": "6975757441/1099511627776",
+          "TV_target": "273590740829/56358560858112"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1/3",
+      "centered_contraction": "1/16",
+      "target": [
+        "0",
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "0",
+        "32/63",
+        "31/63"
+      ],
+      "infinite_TV": "1/126",
+      "bias_bound": "8/225",
+      "expected_marks": "971/315",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "2/3",
+          "failure_bound": "11/16",
+          "TV_target": "2/3"
+        },
+        {
+          "marks": 2,
+          "failure": "29/64",
+          "failure_bound": "121/256",
+          "TV_target": "29/64"
+        },
+        {
+          "marks": 8,
+          "failure": "3077780105/68719476736",
+          "failure_bound": "214358881/4294967296",
+          "TV_target": "3077780105/68719476736"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "1/3",
+      "centered_contraction": "1/16",
+      "target": [
+        "3/4",
+        "1/4"
+      ],
+      "infinite_output": [
+        "47/63",
+        "16/63"
+      ],
+      "infinite_TV": "1/252",
+      "bias_bound": "8/225",
+      "expected_marks": "971/315",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "2/3",
+          "failure_bound": "11/16",
+          "TV_target": "1/6"
+        },
+        {
+          "marks": 2,
+          "failure": "29/64",
+          "failure_bound": "121/256",
+          "TV_target": "43/384"
+        },
+        {
+          "marks": 8,
+          "failure": "3077780105/68719476736",
+          "failure_bound": "214358881/4294967296",
+          "TV_target": "3089072959/412316860416"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "0",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "2/3",
+      "centered_contraction": "1/16",
+      "target": [
+        "3/4",
+        "0",
+        "1/4"
+      ],
+      "infinite_output": [
+        "3/4",
+        "0",
+        "1/4"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "8/225",
+      "expected_marks": "23/15",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/3",
+          "failure_bound": "3/8",
+          "TV_target": "1/12"
+        },
+        {
+          "marks": 2,
+          "failure": "1/8",
+          "failure_bound": "9/64",
+          "TV_target": "1/32"
+        },
+        {
+          "marks": 8,
+          "failure": "729/2097152",
+          "failure_bound": "6561/16777216",
+          "TV_target": "729/8388608"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "0",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "2/3",
+      "centered_contraction": "1/16",
+      "target": [
+        "1/4",
+        "3/4"
+      ],
+      "infinite_output": [
+        "1/4",
+        "3/4"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "8/225",
+      "expected_marks": "23/15",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "1/3",
+          "failure_bound": "3/8",
+          "TV_target": "1/4"
+        },
+        {
+          "marks": 2,
+          "failure": "1/8",
+          "failure_bound": "9/64",
+          "TV_target": "3/32"
+        },
+        {
+          "marks": 8,
+          "failure": "729/2097152",
+          "failure_bound": "6561/16777216",
+          "TV_target": "2187/8388608"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "1",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1",
+      "centered_contraction": "1/16",
+      "target": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "infinite_output": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "8/225",
+      "expected_marks": "1",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "0",
+          "failure_bound": "1/16",
+          "TV_target": "0"
+        },
+        {
+          "marks": 2,
+          "failure": "0",
+          "failure_bound": "1/256",
+          "TV_target": "0"
+        },
+        {
+          "marks": 8,
+          "failure": "0",
+          "failure_bound": "1/4294967296",
+          "TV_target": "0"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1",
+        "1",
+        "1"
+      ],
+      "output_mode": "mixed",
+      "success": "1",
+      "centered_contraction": "1/16",
+      "target": [
+        "1/3",
+        "2/3"
+      ],
+      "infinite_output": [
+        "1/3",
+        "2/3"
+      ],
+      "infinite_TV": "0",
+      "bias_bound": "8/225",
+      "expected_marks": "1",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "0",
+          "failure_bound": "1/16",
+          "TV_target": "0"
+        },
+        {
+          "marks": 2,
+          "failure": "0",
+          "failure_bound": "1/256",
+          "TV_target": "0"
+        },
+        {
+          "marks": 8,
+          "failure": "0",
+          "failure_bound": "1/4294967296",
+          "TV_target": "0"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/30",
+        "1/20",
+        "1/10"
+      ],
+      "output_mode": "identity",
+      "success": "1/20",
+      "centered_contraction": "1/16",
+      "target": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "infinite_output": [
+        "45451/136102",
+        "68101/204153",
+        "135751/408306"
+      ],
+      "infinite_TV": "117/136102",
+      "bias_bound": "8/225",
+      "expected_marks": "4086070/204153",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "19/20",
+          "failure_bound": "61/64",
+          "TV_target": "19/30"
+        },
+        {
+          "marks": 2,
+          "failure": "25993/28800",
+          "failure_bound": "3721/4096",
+          "TV_target": "3851/6400"
+        },
+        {
+          "marks": 8,
+          "failure": "1870001956592628133481/2817928042905600000000",
+          "failure_bound": "191707312997281/281474976710656",
+          "TV_target": "831457510665220776497/1878618695270400000000"
+        }
+      ]
+    },
+    {
+      "stationary": [
+        "1/2",
+        "1/3",
+        "1/6"
+      ],
+      "acceptance": [
+        "1/30",
+        "1/20",
+        "1/10"
+      ],
+      "output_mode": "mixed",
+      "success": "1/20",
+      "centered_contraction": "1/16",
+      "target": [
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "101926/204153",
+        "102227/204153"
+      ],
+      "infinite_TV": "301/408306",
+      "bias_bound": "8/225",
+      "expected_marks": "4086070/204153",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "19/20",
+          "failure_bound": "61/64",
+          "TV_target": "19/40"
+        },
+        {
+          "marks": 2,
+          "failure": "25993/28800",
+          "failure_bound": "3721/4096",
+          "TV_target": "25991/57600"
+        },
+        {
+          "marks": 8,
+          "failure": "1870001956592628133481/2817928042905600000000",
+          "failure_bound": "191707312997281/281474976710656",
+          "TV_target": "1868758766268242746183/5635856085811200000000"
+        }
+      ]
+    }
+  ],
+  "rare_hit_counterexamples": [
+    {
+      "stationary": [
+        "49/50",
+        "1/100",
+        "1/100"
+      ],
+      "acceptance": [
+        "0",
+        "1",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1/50",
+      "centered_contraction": "6561/65536",
+      "target": [
+        "0",
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "0",
+        "584483/1230755",
+        "646272/1230755"
+      ],
+      "infinite_TV": "61789/2461510",
+      "bias_bound": "214990848/3478050625",
+      "expected_marks": "324068911/6153775",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "49/50",
+          "failure_bound": "128713/131072",
+          "TV_target": "49/50"
+        },
+        {
+          "marks": 2,
+          "failure": "623768873/648806400",
+          "failure_bound": "16567036369/17179869184",
+          "TV_target": "623768873/648806400"
+        },
+        {
+          "marks": 8,
+          "failure": "2654540849901276936824567277249453319784762234263097/3097318385847446625852139182065683125281693997465600",
+          "failure_bound": "75331966143707206170147426198509138713921/87112285931760246646623899502532662132736",
+          "TV_target": "2654540849901276936824567277249453319784762234263097/3097318385847446625852139182065683125281693997465600"
+        }
+      ],
+      "rare_weight": "1/100",
+      "TV_divided_by_contraction": "2024701952/8074983555"
+    },
+    {
+      "stationary": [
+        "499/500",
+        "1/1000",
+        "1/1000"
+      ],
+      "acceptance": [
+        "0",
+        "1",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1/500",
+      "centered_contraction": "6561/65536",
+      "target": [
+        "0",
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "0",
+        "5892233/12413705",
+        "6521472/12413705"
+      ],
+      "infinite_TV": "629239/24827410",
+      "bias_bound": "214990848/3478050625",
+      "expected_marks": "32731830061/62068525",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "499/500",
+          "failure_bound": "1308361/1310720",
+          "TV_target": "499/500"
+        },
+        {
+          "marks": 2,
+          "failure": "652156342961/654704640000",
+          "failure_bound": "1711808506321/1717986918400",
+          "TV_target": "652156342961/654704640000"
+        },
+        {
+          "marks": 8,
+          "failure": "3249816091477487466598125584021895965298951617469322358460028367321/3299878167814620419806457884975823507518319069565089218560000000000",
+          "failure_bound": "8586589886306611468281875682235557090785975311681/8711228593176024664662389950253266213273600000000",
+          "TV_target": "3249816091477487466598125584021895965298951617469322358460028367321/3299878167814620419806457884975823507518319069565089218560000000000"
+        }
+      ],
+      "rare_weight": "1/1000",
+      "TV_divided_by_contraction": "20618903552/81446318505"
+    },
+    {
+      "stationary": [
+        "499999/500000",
+        "1/1000000",
+        "1/1000000"
+      ],
+      "acceptance": [
+        "0",
+        "1",
+        "1"
+      ],
+      "output_mode": "identity",
+      "success": "1/500000",
+      "centered_contraction": "6561/65536",
+      "target": [
+        "0",
+        "1/2",
+        "1/2"
+      ],
+      "infinite_output": [
+        "0",
+        "453653441/955806785",
+        "502153344/955806785"
+      ],
+      "infinite_TV": "48499903/1911613570",
+      "bias_bound": "214990848/3478050625",
+      "expected_marks": "2520612601808197/4779033925",
+      "finite": [
+        {
+          "marks": 1,
+          "failure": "499999/500000",
+          "failure_bound": "1310717641/1310720000",
+          "TV_target": "499999/500000"
+        },
+        {
+          "marks": 2,
+          "failure": "50412060874998101357/50412257280000000000",
+          "failure_bound": "1717980734428604881/1717986918400000000",
+          "TV_target": "50412060874998101357/50412257280000000000"
+        },
+        {
+          "marks": 8,
+          "failure": "52957362789229644787213161074318956923300776554120087622146763374630552733555754140035396244941752689093/52958171553953184259368497802178563983801846961039932991764940120391680000000000000000000000000000000000",
+          "failure_bound": "8711103168012423926923186318422942947317167837297934225335625366057753921/8711228593176024664662389950253266213273600000000000000000000000000000000",
+          "TV_target": "52957362789229644787213161074318956923300776554120087622146763374630552733555754140035396244941752689093/52958171553953184259368497802178563983801846961039932991764940120391680000000000000000000000000000000000"
+        }
+      ],
+      "rare_weight": "1/1000000",
+      "TV_divided_by_contraction": "1589244821504/6271048316385"
+    }
+  ],
+  "cold_start_counterexamples": [
+    {
+      "length": 2,
+      "pi_min": "1/7",
+      "largest_state_mass": "4/7",
+      "exact_flow_parameter": "18/7",
+      "uniform_relaxation_allowance": 288,
+      "point_start_TV_before_length_steps": ">1/2"
+    },
+    {
+      "length": 4,
+      "pi_min": "1/31",
+      "largest_state_mass": "16/31",
+      "exact_flow_parameter": "126/31",
+      "uniform_relaxation_allowance": 288,
+      "point_start_TV_before_length_steps": ">1/2"
+    },
+    {
+      "length": 8,
+      "pi_min": "1/511",
+      "largest_state_mass": "256/511",
+      "exact_flow_parameter": "2790/511",
+      "uniform_relaxation_allowance": 288,
+      "point_start_TV_before_length_steps": ">1/2"
+    }
+  ],
+  "checks": "density orientation, visit/success normalization, nonconstant/zero/one acceptance, randomized outputs, finite-R failure and output bounds passed"
+}

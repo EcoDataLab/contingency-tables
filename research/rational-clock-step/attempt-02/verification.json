@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "28d4c9b57c9fd44588f3c4396d5e4f90cf9f0114",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchRationalClockStep.Step"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchRationalClockStep.Step",
+      "source": "research/rational-clock-step/formal/ResearchRationalClockStep/Step.lean",
+      "source_sha256": "54b6fc6ef197a256ef6d900fa1fd141e8fb9aede18cba94a364e2ab7dfaa6b3f",
+      "returncode": 0,
+      "seconds": 107.35522712487727,
+      "olean_sha256": "51664ba452fb709157ebacde4f21ccbd1d80acd75dabeb312b338362a6eabfce"
+    }
+  ],
+  "audit_seconds": 162.4578479169868,
+  "audit_sha256": "9777e8c29d8d839a3983bec74d1cc75085ad37ad81d133ecf51e56bacaa1c617",
+  "audit_driver_sha256": "1606c061f4ec95b967633c9fd45c18b0dc88b5d4e2d346cc6b3ec9745e0a1c64",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "fbb9c6640aef621ba43eda65ba4ca684406e594c99c30670f8c4f7ad643f07b7",
+  "declaration_count": 33,
+  "theorem_count": 10,
+  "headlines": [
+    {
+      "name": "Math115.RationalClockStep.incomingLaw_eq",
+      "closure_size": 43820,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (x : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N h : ℕ),\n  Math115.RationalClockStep.incomingLaw r c U L hr hc x N h =\n    OAI.ContingencyTables.FirstSuccess.bindLaw (Math115.RationalClockStep.proposalLawAt r c U L x N) fun proposal =>\n      OAI.ContingencyTables.FirstSuccess.mapLaw\n        (Math115.LegacyPhysicalCompletion.oracleFamily r c U L hr hc h\n          ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r U hr) none)\n          ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c U hc) none) ↑x)\n        (OAI.ContingencyTables.CompletionTranslation.completionDecision\n          (OAI.ContingencyTables.SmallGraphProfiles.referenceRows r c U L (Math115.ReducedSmallChain.capacity r c U L)\n            ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r U hr) none))\n          (OAI.ContingencyTables.SmallGraphProfiles.referenceColumns r c U L\n            (Math115.ReducedSmallChain.capacity r c U L)\n            ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c U hc) none))\n          (↑x) proposal)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.RationalClockStep.incomingLaw_accuracy",
+      "closure_size": 43869,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (hp :\n    2 ≤\n      Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n  (x : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N h : ℕ),\n  OAI.ContingencyTables.FirstSuccess.variation (Math115.RationalClockStep.incomingLaw r c U L hr hc x N h)\n      (Math115.RationalClockStep.idealIncomingLaw r c U L hr hc hp x) ≤\n    (1 / 2) ^ N + Math115.CompletionRetryBudget.dyadic h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.RationalClockStep.idealIncomingLaw_mass_ne",
+      "closure_size": 11987,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀\n      (hp :\n        2 ≤\n          Fintype.card\n            (OAI.ContingencyTables.SmallContextCoordinates.Cells\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n      (x : Math115.PhysicalDefectTrace.DefectVertices r c U L) (y : Math115.ReducedSmallChain.States r c U L),\n      ↑x ≠ y →\n        (Math115.RationalClockStep.idealIncomingLaw r c U L hr hc hp x).mass y =\n          if\n              OAI.ContingencyTables.SmallGraphProfiles.physicalAdjacent r c U L\n                (Math115.ReducedSmallChain.capacity r c U L) ⋯ (↑x) y then\n            ↑(OAI.ContingencyTables.CompletionTranslation.acceptedCount\n                  (OAI.ContingencyTables.SmallGraphProfiles.referenceRows r c U L\n                    (Math115.ReducedSmallChain.capacity r c U L)\n                    ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r U hr) none))\n                  (OAI.ContingencyTables.SmallGraphProfiles.referenceColumns r c U L\n                    (Math115.ReducedSmallChain.capacity r c U L)\n                    ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c U hc) none))\n                  (↑x) y) /\n              (↑(Math115.RationalClockProposal.denominator r c U) *\n                ↑(OAI.ContingencyTables.CompletionTranslation.blockCount\n                    (OAI.ContingencyTables.SmallGraphProfiles.referenceRows r c U L\n                      (Math115.ReducedSmallChain.capacity r c U L)\n                      ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r U hr) none))\n                    (OAI.ContingencyTables.SmallGraphProfiles.referenceColumns r c U L\n                      (Math115.ReducedSmallChain.capacity r c U L)\n                      ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c U hc) none))\n                    ↑x))\n          else 0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.RationalClockStep.idealIncomingLaw_mass_ne_cast",
+      "closure_size": 12067,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀\n      (hp :\n        2 ≤\n          Fintype.card\n            (OAI.ContingencyTables.SmallContextCoordinates.Cells\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n      (x : Math115.PhysicalDefectTrace.DefectVertices r c U L) (y : Math115.ReducedSmallChain.States r c U L),\n      ↑x ≠ y →\n        ↑((Math115.RationalClockStep.idealIncomingLaw r c U L hr hc hp x).mass y) =\n          Math115.PhysicalDefectTrace.referenceConductance r c U L\n              ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r U hr) none)\n              ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c U hc) none) (↑x) y /\n            (2 * ↑(Math115.PhysicalDefectTrace.defectAllowance r c U) *\n              Math115.PhysicalDefectTrace.defectWeight r c U L x)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,11 @@
+{
+  "status": "missing_prepared_dependencies",
+  "compiler_started": false,
+  "source_sha256": "c38152e7b93422489c05a6ffdd4cc185622eeadef57520eabbdf119e41a49089",
+  "missing_modules": [
+    "OAI.Combinatorics.ContingencyTables.Sampling.ExactIntegerChoice",
+    "OAI.Combinatorics.ContingencyTables.Sampling.ExactIntegerProgram",
+    "OAI.Combinatorics.ContingencyTables.Sampling.ExactIntegerRetry"
+  ],
+  "resolution": "Compiled the three unchanged pinned upstream modules; no source duplication or pin change."
+}

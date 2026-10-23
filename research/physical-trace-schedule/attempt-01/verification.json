@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "bec65a8eacac9a9d6b57b61585a8b1335b85d2be",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.Schedule"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.Schedule",
+      "source": "research/physical-trace-schedule/formal/ResearchPhysicalTraceJoin/Schedule.lean",
+      "source_sha256": "b227dd48ab18b02a2be2d367c691a78cb8186407e167b93d9abf7003d334ed40",
+      "returncode": 0,
+      "seconds": 56.75297174975276,
+      "olean_sha256": "8320990a6c706ebf37d6139e7325b7327731b8f281acac26b0df2d70230bfd59"
+    }
+  ],
+  "audit_seconds": 249.83412712533027,
+  "audit_sha256": "feca6a002071cfb2c3910e628507f5bf1345d59464da88f7c35db8fbb55fc76c",
+  "audit_driver_sha256": "a8c7fedaf73e1c471fbeb1ac056d47de81e5d072f7a04472717039133d65c8b5",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "ac506f029455a993e73d23f56bc52c4a82156ffb9e6e6cc52a88645f14747ed8",
+  "declaration_count": 36,
+  "theorem_count": 21,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalGapCount_cast",
+      "closure_size": 5636,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U : ℕ),\n  2 ≤ U → ↑(Math115.PhysicalTraceJoin.terminalGapCount r c U) = Math115.PhysicalTraceJoin.aggregateMixingAllowance r c U",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalSchedule_error_budget",
+      "closure_size": 16172,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  2 ≤ U →\n    2 ≤\n        Fintype.card\n          (OAI.ContingencyTables.SmallContextCoordinates.Cells\n            (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)) →\n      ∀ (h : ℕ),\n        ↑(Math115.PhysicalTraceJoin.terminalScheduleSteps r c U L h) *\n                ↑(Math115.CompletionRetryBudget.dyadic\n                    (Math115.PhysicalTraceJoin.terminalScheduleStepPrecision r c U L h)) +\n              Math115.PhysicalFiniteWalk.massAllowance r U L *\n                Real.exp\n                  (-↑(Math115.PhysicalTraceJoin.terminalScheduleSteps r c U L h) /\n                    Math115.PhysicalTraceJoin.aggregateMixingAllowance r c U) +\n            ↑(Math115.CompletionRetryBudget.dyadic (Math115.PhysicalTraceJoin.terminalScheduleTerminalPrecision h)) ≤\n          ↑(Math115.CompletionRetryBudget.dyadic h)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalScheduleWord_accuracy",
+      "closure_size": 45014,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  [inst : Nonempty (Math115.PhysicalDefectTrace.DefectVertices r c U L)],\n  ∑ i, r i = ∑ j, c j →\n    2 ≤ U →\n      7 ≤ L →\n        2 ≤\n            Fintype.card\n              (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)) →\n          ∀ (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (h : ℕ),\n            ↑(OAI.ContingencyTables.FirstSuccess.variation\n                  (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n                    (Math115.PhysicalTraceJoin.terminalScheduleWord r c U L hr hc start h))\n                  OAI.ContingencyTables.FirstSuccess.uniformLaw) ≤\n              ↑(Math115.CompletionRetryBudget.dyadic h)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}
