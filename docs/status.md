@@ -23,11 +23,15 @@ the remaining branch conditions but has no actual defect. Separate exact
 finite enumeration finds 19 physical completions and five original tables.
 Thus a complete sampler needs an empty-support branch or suitable preprocessing.
 
+The [zero-margin law candidate](../research/physical-trace-zero-margins/)
+remains unverified: its last compilation fails at the explicit zero-restoration
+entry formula. The exact sources and five failed attempts are retained; no
+assumption audit or verified claim is attached to this candidate.
+
 General repair/acceptance to original tables, initialization and other
 branches, outer retries and encoded costs remain open. No complete sampler
 or runtime exponent changed. Historical default-target Linux and Comparator
-scopes are unchanged; failed proof attempts are retained. The recurring
-schedule remains paused.
+scopes are unchanged; failed proof attempts are retained.
 
 The [actual aggregate defect trace](aggregate-defect-trace.md) now has compiled
 coefficient **`34848d⁵(m+n−2)³`** at `U=11d(m+n−2),L=7`. Its squared aspect

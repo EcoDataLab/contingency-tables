@@ -46,8 +46,12 @@ Next integration tasks:
    repair packet covers an all-small branch and cannot fill this interface.
 2. Supply initialization where defect support is nonempty, and handle the
    proved empty-support branch, zero margins and empty completion blocks.
-   Zero-row/column removal is a possible route but needs its own table-law
-   correspondence. Compose fresh bounded outer retries after the output
+   The [zero-row/column law candidate](../research/physical-trace-zero-margins/)
+   retains its exact source and five failed compile attempts. Its outstanding
+   error is the explicit inverse-entry formula; it has no successful module
+   compilation or assumption audit. After that is checked, ordered list code
+   and physical cutoff/mask transport still remain. Compose fresh bounded
+   outer retries after the output
    correction has been proved.
 3. Prove encoded realization and additional charged costs. Keep historical
    strict Comparator work separate. The [bridge note](legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace)
@@ -105,7 +109,7 @@ The new defect-chain work has three complementary scopes:
 
 - [Unit trace and bounded implementation](direct-defect-sampler.md): either margin side below the cutoff, positive margins, no enumeration. Fixed-bit errors and retries are implemented and checked against exact kernels. The [both-small schedule](defect-sampler-composition.md) supplies sufficient accuracy parameters and full integer-operation accounting.
 - [Arbitrary rectangular refinement](rectangular-defect.md): both sides below the cutoff, inverse gap `20000d^(31/2)` rational or `40000d^(31/2)` dyadic, with no aspect restriction. The [hard-limit bridge](../research/rectangular-defect/) is compiled; the new capacity-dependent physical context/exposure maps and final numerical bound still need Lean assembly.
-- [General weighted trace](shape-aware-defect.md) and [joint repair terminal](general-defect-output.md): inverse gap `10000d^16` rational or `20000d^16` dyadic, with stationary success at least `1/(8p)` at ideal scales for positive margins. Geometry, capped oracle errors and joint-fiber identities have separate AI review and exact finite checks. Transition and terminal components are implemented; full outer scheduling, physical Lean and encoded law identification are next. The linked shape result gives stronger subclass bounds after its smaller-scale guards pass.
+- [General weighted trace](shape-aware-defect.md) and [joint repair terminal](general-defect-output.md): inverse gap `10000d^16` rational or `20000d^16` dyadic, with stationary success at least `1/(8p)` at ideal scales for positive margins. Geometry, capped oracle errors and joint-fiber identities have separate AI review and exact finite checks. The bounded transition and scheduled physical defect joint now have compiled interfaces. General repair/acceptance, whole-outer retries and encoded law identification remain open. The linked shape result gives stronger subclass bounds after its smaller-scale guards pass.
 
 Preserve the terminal's positive-margin assumptions and its selected scale certificate. A checked zero-margin example would give invalid acceptance `5/2`; `L=3d` alone also fails to imply its success lower bound. Smaller scales require the explicit padding inequality in the shape-aware proof. The general compiled `d^17` sampler remains the baseline. [The broader research review](research-directions.md) separates these changed-chain integration tasks from the outstanding runtime-degree certificates.
 

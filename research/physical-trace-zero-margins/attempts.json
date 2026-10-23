@@ -1,0 +1,38 @@
+{
+  "status": "compilation_failed",
+  "module": "ResearchPhysicalTraceJoin.ZeroMargins",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "66d61f6acb91de696adbcfdd7622137e727f881e5bf3cde12913d222e3b3c921",
+      "returncode": 1,
+      "seconds": 122.72196699958295
+    },
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "2252560b80815e20c38515bcefc9428a5112e8e33e4b61c565fcc29c1d7fc3b2",
+      "returncode": 1,
+      "seconds": 53.961869542021304
+    },
+    {
+      "attempt": "attempt-03",
+      "source_sha256": "ca99342d8d5256d489619ed14298b3d0cb58bdceaf9597066cfb22723f013008",
+      "returncode": 1,
+      "seconds": 106.30938266729936
+    },
+    {
+      "attempt": "attempt-04",
+      "source_sha256": "5002d97820121a1803f895afd79fa0e01beed3193c7e3f2c26397576e7381535",
+      "returncode": 1,
+      "seconds": 97.39822566695511
+    },
+    {
+      "attempt": "attempt-05",
+      "source_sha256": "0437fa3a69f9b4cd779369ea62ee820084f5ffd68288b4a60ef7a5763340edeb",
+      "returncode": 1,
+      "seconds": 89.39944462478161
+    }
+  ],
+  "scope": "Candidate sources and failed ordinary compilation; no compiled theorem or audit acceptance."
+}
