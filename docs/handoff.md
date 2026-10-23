@@ -1,11 +1,13 @@
 # Contributor handoff
 
-23 October 2026: the [weighted first-success helper](../research/weighted-exit/)
-is compiled and assumption-audited. It gives the weighted/fallback mixture
-and finite-word retry error conditional on the one-trial mass and accuracy.
-Next discharge those premises for the actual fixed-balanced-state proposal
-and acceptance, derive a retry budget, and match the incoming trace clock.
-The physical weighted exit is still open.
+23 October 2026: the [physical one-trial interface](../research/physical-star-trial/)
+is compiled and assumption-audited. It derives the actual fixed-word step
+law, ideal successful mass `ρS(b,e)/w(b)`, its computed-trace conductance cast,
+and trial TV≤2^-h from the literal proposal/draw/list test. Separate AI
+source review passed. Next instantiate the [weighted retry helper](../research/weighted-exit/),
+prove positive-star/success bounds, handle zero stars and implement the
+incoming rational trace clock. The complete weighted exit and new outer
+sampler remain open.
 
 23 October 2026: the [executable acceptance interface](../research/listed-acceptance/)
 is now compiled and assumption-audited. The actual list Boolean on the old
@@ -52,8 +54,10 @@ Next integration tasks:
 
 1. Use the [checked completion adapter](legacy-completion-backend.md) to prove
    the actual bounded defect-transition law. The computed reference choice
-   and list-based acceptance correspondence are now checked.
-   Preserve the trace's proposal clock and weighted
+   and list-based acceptance correspondence are now checked, as are the
+   physical one-trial mass and accuracy. Specialize the weighted-retry
+   helper and derive the positive-star/success bound. Preserve the trace's
+   proposal clock and weighted
    balanced-state exits, and charge capped exits and completion errors. The
    old full-state transition is not the newer trace.
 2. Prove the adaptive fresh-word reservation and call cap, then compose

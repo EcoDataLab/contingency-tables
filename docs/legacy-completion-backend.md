@@ -101,10 +101,17 @@ A [compiled weighted-retry helper](../research/weighted-exit/) now supplies
 the local first-success algebra. If the ideal trial at a fixed balanced
 state has mass `ρS(b,e)/w(b)` and the actual trial differs by at most `δ`,
 `J` fresh fixed-width trials have error at most `(1−ρs_b/w(b))^J+Jδ` from
-`S(b,e)/s_b`. Its actual `flatRetry` uses exactly `J*k` bits. The physical
-one-trial mass/accuracy instantiation and success lower bound remain open;
-zero stars need a separate branch. The old proposal rate cancels within the
-successful exit law but does not identify the incoming trace clock.
+`S(b,e)/s_b`. Its actual `flatRetry` uses exactly `J*k` bits.
+
+The [physical one-trial packet](../research/physical-star-trial/) now derives
+those mass and accuracy facts for the actual computed proposal, frozen
+source completion draw and literal list test. Its uniform word has length
+`clog2(32d²)+q_b(h)`, and trial error is at most `2^-h`. Rational accepted
+counts and the source completion count cast to this trace's `S(b,e)` and
+`w(b)`. The first-success specialization, positive-star and useful success
+bounds remain to compile; zero stars need a separate branch. The old proposal
+rate cancels within the ideal successful exit law but does not identify the
+incoming trace clock.
 
 After that transition interface, the program still needs fresh adaptive words,
 initialization and mixing, the defect-law repair/padding/output correction,

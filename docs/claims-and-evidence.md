@@ -114,9 +114,28 @@ ideal successful masses `ρS(e)/w`, it specializes to normalized star weights
 The successful-mass identity and trial error are explicit premises. Weights
 are nonnegative with positive total; `w>0` and a fallback are supplied.
 Ordinary compilation and three full headline-closure audits passed. The
-actual physical trial, its useful success lower bound, zero-star handling
-and incoming trace clock remain open. No new complete sampler or exponent
-follows from this conditional helper.
+physical one-trial facts are now checked separately below. The physical retry
+specialization, useful success lower bound, zero-star handling and incoming
+trace clock remain open. No new complete sampler or exponent follows.
+
+## physical-star-trial
+
+The [physical trial](../research/physical-star-trial/) uses exactly
+`clog2(32d²)+q_b(h)` uniform bits for the computed proposal and a frozen
+completion draw at balanced source `b`. The actual list Boolean agrees with
+the reference decision; projection sends holds to failure. The ideal success
+mass is `ρS(b,e)/w(b)` and actual-vs-ideal TV is at most `2^-h`. Accepted counts
+and source weights are rational expressions with proved casts to the
+computed-reference trace. Mass and accuracy are derived, not hypotheses.
+
+Both computed large-line lists must be nonempty; the executable-law and
+accuracy statements require equal totals. `U,L,h` are arbitrary natural
+numbers. No global equal completion width, positive original margins,
+padding-seven or positive-star premise is needed for this one-trial law.
+Ordinary compilation and four full headline-closure audits passed, with
+standard axioms and trusted reused imports. Separate AI source review
+passed. The physical retry, success lower bound, zero-star and clock cases
+remain open, followed by global sampler and cost composition.
 
 ## aggregate-incidence-gap
 

@@ -37,12 +37,13 @@ star mass is outside the normalized target and needs a separate physical case.
 
 ## Remaining physical interface
 
-For a fixed balanced state `b`, the next target is to prove that the actual
-proposal plus the [checked list acceptance test](../listed-acceptance/) has
-ideal successful mass `ρS(b,e)/w(b)`, and to derive its error from the checked
-physical completion adapter. The completion-word width is fixed while
-retrying at that particular `b`; this does not prove adaptive freshness or
-a common bit reservation across different states.
+The [physical one-trial packet](../physical-star-trial/) now proves that the
+actual proposal plus the [checked list acceptance test](../listed-acceptance/)
+has ideal successful mass `ρS(b,e)/w(b)`, and derives trial TV≤2^-h from the
+physical completion adapter. Next formally specialize this helper using
+those results, prove positive-star/success bounds and handle zero stars.
+The completion-word width is fixed at that particular `b`; this does not
+prove adaptive freshness or a common reservation across different states.
 
 The old dyadic proposal rate cancels from the ideal successful exit law.
 It does not thereby become the incoming defect trace rate `1/[2(4p−3)]`.
@@ -56,8 +57,9 @@ about the complete transition kernel.
 The helper reuses `retryLaw_mass`, `retryLaw_variation` and `flatRetry_law`.
 Upstream also has `ExactIntegerChoice.retryIntegerLaw_some` for explicitly
 supplied integer weights; using it directly would require obtaining those
-weights. The physical exit construction instead needs to establish the
-successful-mass identity through proposal and completion acceptance.
+weights. The physical one-trial construction establishes the successful-mass identity
+through proposal and completion acceptance; composing its bounded retries
+remains separate.
 
 ## Verification and replay
 

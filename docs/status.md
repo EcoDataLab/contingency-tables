@@ -1,11 +1,18 @@
 # Research status
 
-23 October 2026: a [conditional weighted-retry helper](../research/weighted-exit/)
-now compiles and passes its environment audit. It proves the exact weighted
-target/fallback mixture and `TV≤(1−a)^J+Jδ` for the existing `J*k`-bit retry
-routine. The actual physical successful-mass formula, trial error and useful
-success lower bound remain premises to discharge. The incoming rational
-trace clock also remains open. This helper does not close the physical exit.
+23 October 2026: the [physical one-trial law](../research/physical-star-trial/)
+now compiles and passes the full assumption audit. The actual computed
+proposal, frozen completion draw at the source and literal list acceptance
+use one uniform state-specific word. Their ideal defect mass is
+`ρS(b,e)/w(b)`, with explicit casts to the computed-reference trace, and
+actual trial TV is at most `2^-h`. These facts are derived, not premises;
+no padding-seven or positive-original-margin hypothesis is needed here.
+
+The [weighted-retry helper](../research/weighted-exit/) already proves the
+conditional `J*k`-bit error bound. Next formally specialize it to this trial,
+prove positive-star/success bounds and handle zero stars. The incoming
+rational trace clock and global sampler composition remain open. Neither
+this one-trial result nor the helper changes a sampler or runtime exponent.
 
 23 October 2026: the [list acceptance correspondence](../research/listed-acceptance/)
 now compiles and passes its full assumption audit. At arbitrary `U,L`, the

@@ -158,6 +158,17 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-star-trial",
+      "format": "compiled_environment",
+      "path": "research/physical-star-trial/attempt-05/verification.json",
+      "sha256": "282a92d52fbb3aaa6234a0c5e21ca09b5ad4bc8fdd18e5c0e7dc20e00e341a94",
+      "label": "Actual physical balanced-star one-trial law",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -393,7 +404,7 @@
         "Finite trial/output spaces; nonnegative rational S with positive total; w>0; supplied ideal successful-mass identity and trial accuracy; supplied fallback; J independent words of fixed width k. The flat bank has exactly J*k fair bits."
       ],
       "limitations": [
-        "Compiled conditional helper with three complete headline closures and trusted reused imports. The actual physical star-trial mass/accuracy instantiation and success lower bound remain open. Zero-star handling, incoming trace clock, adaptive outer schedule and encoded costs are not supplied. No new gap or runtime exponent, default rebuild or Comparator acceptance."
+        "Compiled conditional helper with three complete headline closures and trusted reused imports. The physical one-trial mass and accuracy are now checked separately; composing them with this helper and deriving a useful success lower bound remain open. Zero-star handling, incoming trace clock, adaptive outer schedule and encoded costs are not supplied. No new gap or runtime exponent, default rebuild or Comparator acceptance."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -421,6 +432,52 @@
       "evidence": [
         {
           "receipt": "weighted-exit-helper",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "physical-star-trial",
+      "title": "Physical one-trial law",
+      "english_claim": "At a fixed balanced physical state, the literal computed proposal and frozen completion draw with list acceptance have ideal successful mass rho*S(b,e)/w(b) and actual trial total-variation error at most 2^-h. The rational accepted-count formula casts to the computed-reference trace conductance and weight.",
+      "quantity": "Ideal success mass ρS(b,e)/w(b); trial TV ≤ 2⁻ʰ",
+      "hypotheses": [
+        "Equal-total finite natural margins for executable-law and accuracy statements; arbitrary natural U,L,h; both computed large-line lists nonempty; an actual balanced source state. Uniform word of exactly clog2(32*d^2)+q_b(h) bits. Singleton selected blocks are included."
+      ],
+      "limitations": [
+        "One-trial interface only, with four complete headline closures and trusted reused imports. No supplied desired-law or accuracy premise, no positive-original-margin or padding-seven requirement, and no global equal-width assumption. Physical retry specialization, positive-star/success bounds, zero-star handling, incoming rational trace clock, adaptive outer schedule and encoded costs remain open. No new gap/runtime exponent, default rebuild or Comparator acceptance."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "research/physical-star-trial/README.md",
+        "research/physical-star-trial/formal/ResearchPhysicalStar/Trial.lean",
+        "docs/legacy-completion-backend.md"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.PhysicalStarTrial.actualStep_law",
+          "module": "ResearchPhysicalStar.Trial",
+          "source": "research/physical-star-trial/formal/ResearchPhysicalStar/Trial.lean"
+        },
+        {
+          "name": "Math115.PhysicalStarTrial.idealTrialLaw_mass_some",
+          "module": "ResearchPhysicalStar.Trial",
+          "source": "research/physical-star-trial/formal/ResearchPhysicalStar/Trial.lean"
+        },
+        {
+          "name": "Math115.PhysicalStarTrial.idealTrialLaw_mass_some_cast",
+          "module": "ResearchPhysicalStar.Trial",
+          "source": "research/physical-star-trial/formal/ResearchPhysicalStar/Trial.lean"
+        },
+        {
+          "name": "Math115.PhysicalStarTrial.actualTrialLaw_accuracy",
+          "module": "ResearchPhysicalStar.Trial",
+          "source": "research/physical-star-trial/formal/ResearchPhysicalStar/Trial.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "physical-star-trial",
           "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]

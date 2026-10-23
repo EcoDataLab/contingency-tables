@@ -1,0 +1,16 @@
+{
+  "existing_declaration_statements_unchanged": true,
+  "original_source_sha256": "b82739e9121ffc7c80970217169fa7296c5df1c401c5cda625c95785eefef479",
+  "final_source_sha256": "4d5ec3ec9729e60efeb3f29d154614f47a62554f6e0da98d849d1df0a6ab403c",
+  "added_proved_helpers": [
+    "actualStep_eq",
+    "fixedWord_finish_law"
+  ],
+  "resource_limits_unchanged": {
+    "heartbeats": 800000,
+    "threads": 2,
+    "max_memory_mib": 8192,
+    "stage_timeout_seconds": 600
+  },
+  "repair": "Namespace opening, explicit completion equivalence, and factored fixed-word law proof; no new hypothesis or changed mathematical definition."
+}
