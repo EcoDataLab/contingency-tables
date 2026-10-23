@@ -1,10 +1,11 @@
 # Completion at constant padding using the frozen complete sampler
 
-11 October 2026. The already compiled complete d¹⁷ sampler supplies accurate
+Updated 22 October 2026. The compiled complete d¹⁷ sampler supplies accurate
 completions for the new outer `L=7` construction. Its contract accepts arbitrary
 equal-total natural margins; its own internal padding is independent of the
-outer padding. This closes mathematical backend availability. The new physical
-adapter and complete encoded composition remain to be implemented and checked.
+outer padding. A new [compiled physical adapter](../research/legacy-physical-completion/)
+now closes the actual residual-input and completion-law interface for the
+both-large branch at arbitrary `U,L`. Complete encoded composition remains open.
 
 ## Existing executable contract
 
@@ -43,13 +44,52 @@ theorems provide nonnegative, equal-total residual margins. A cap at least
 The source cap `M+dL+U+2` meets this condition. Restrictive cell bounds would
 change the target law and are outside this bridge.
 
-The remaining adapter must instantiate the arbitrary-`U,L` listed-fiber
-equivalence, reindex the selected lines to `Fin R` and `Fin C`, and transport
-the old draw law through that bijection. Existing `equivLaw_uniform` and
-`variation_equiv` preserve uniformity and total variation. The old
-`ListedLatticeCompletion` abbreviations fix older outer scales and cannot
-be reused unchanged. A valid empty block has a unique completion and needs
-no random bits.
+`Math115.LegacyPhysicalCompletion` now instantiates the arbitrary-`U,L`
+listed-fiber equivalence, reindexes the selected lines to finite coordinates,
+and transports the old draw law through that bijection. Its row and column
+code lemmas identify the actual physical residual inputs; `completionDraw_code`
+identifies the old executable output for every exact-length word.
+`completionLaw_accuracy` proves TV at most `2^(-h)` on the physical fiber,
+and `oracleFamily_accuracy` gives the same bound for every reference-line pair.
+Neither accuracy nor cap redundancy is an assumption. The proof requires an
+actual positive physical state and both computed large-line lists nonempty.
+Singleton blocks are covered. The old `ListedLatticeCompletion` remains fixed
+to its older scales. A valid empty block has a unique completion, but its new
+executable branch is not included in this adapter.
+
+## Remaining interface to the canonical defect trace
+
+The new trace and the adapter share the physical residuals, capacity and
+completion-translation `acceptedCount` algebra. The missing next interface is
+the law of an actual bounded transition on defects. For distinct defects
+`d,e`, the canonical theorem uses
+
+```
+P(d,e) = [W(d,e) + sum_b S(b,d) S(b,e)/s_b] / [2(4p-3) w(d)],
+s_b = sum_f S(b,f).
+```
+
+Zero-star terms contribute zero. Here `W` counts accepted defect-to-defect
+conductance, `S` counts accepted balanced-to-defect conductance, and `w` is the
+completion-count weight.
+The old `selectedTransitionLaw` walks on the full state space with a different
+dyadic proposal clock. It is not this trace. A transition proof must identify
+the weighted exit `S(b,e)/s_b`, charge capped exit failures and approximate
+completion errors, and use the correct rational clock or certified dyadic
+rounding. Uniform neighbor exits would give the wrong law.
+
+There is also a reference-choice obligation: the canonical accepted
+conductance chooses reference lines abstractly, whereas the program uses the
+first computed large lines. The trace theorem must be parameterized by the
+computed pair, or kernel equality must be proved. Accurate completions under
+both coordinate systems alone do not establish that equality.
+
+After that transition interface, the program still needs fresh adaptive words,
+initialization and mixing, the defect-law repair/padding/output correction,
+retry schedules, zero-margin and degenerate branches, and encoded costs.
+The existing general output correction assumes positive original margins;
+the trace theorem permits zeros. These obligations must close before the gap
+bound can be carried into a complete sampler theorem.
 
 ## A uniform reservation for adaptive calls
 
@@ -99,7 +139,9 @@ composition. It does not establish a smaller complete runtime exponent or
 implement the new outer sampler; the seven old-machine draw certificates are now closed. The [common-size comparison](composed-complexity.md)
 continues to compare the already compiled machines separately.
 
-Separate AI source reviews checked this bridge against the old sources, which
-match the successful complete-sampler checkpoint. The new residual cap module
-has fresh compilation evidence. The proposed full wrapper has not been
-compiled; it is deliberately excluded from the public Lean proof claims.
+The [adapter packet](../research/legacy-physical-completion/) has a fresh
+ordinary Lean compilation and four full headline dependency-closure audits,
+with only standard axioms. A separate AI reviewer checked its frozen source
+and saved evidence. The semantic witness is tied pointwise to the executable
+old draw; it does not itself implement the physical decoder or revised outer
+program. Adaptive reservation and complete composition above remain proposals.

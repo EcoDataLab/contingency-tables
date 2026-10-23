@@ -49,6 +49,23 @@ reviewed mathematics. This mathematical trace is separate from the complete
 compiled d¹⁷ sampler; a transition runtime oracle and revised encoded sampler
 remain open.
 
+## legacy-physical-completion
+
+The [new completion adapter](../research/legacy-physical-completion/) closes
+the actual residual-input and physical-fiber law interface at arbitrary
+natural `U,L`, including `L=7`. It identifies the old executable
+`LatticeSampler.draw` output on every exact-length word and proves completion
+TV≤2^-h under uniform words. `oracleFamily_accuracy` transports the bound to
+every reference pair. The state and both nonempty computed large-line lists
+are explicit; singleton blocks are included. Accuracy and cap redundancy are
+derived, not premises.
+
+Its ordinary Lean compile, environment audit and separate AI source/receipt
+review are an additive evidence scope. The canonical trace's clock, reference
+choice and weighted star exits still need a finite transition proof, followed
+by adaptive words, output/schedule composition and encoded costs. No new
+complete sampler, exponent, Linux default build or Comparator result follows.
+
 ## aggregate-incidence-gap
 
 The [completed-table incidence proof](aggregate-incidence.md) obtains

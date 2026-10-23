@@ -1,10 +1,15 @@
 # Research status
 
-Work is paused at the requested stopping point. The explicit-runtime checkpoint
-is saved; no new full Comparator attempt or experiment was launched. The
-completed local observer diagnostic passed recovery, watchdog cleanup and
-overlap checks; its evidence and proposed next attempt are preserved locally
-for review before resuming. The six-hour automation remains paused.
+22 October 2026: the resumed bridge task closed one concrete interface.
+The [new physical completion adapter](../research/legacy-physical-completion/)
+connects the actual old sampler output to arbitrary-`U,L` physical completions,
+including `L=7`, in the both-large branch. Pointwise feasible output and
+TV≤2^-h compile; four full dependency closures contain only standard axioms,
+and separate AI review passed. The next obstruction is a bounded transition
+with the canonical defect trace's reference choice, proposal clock and weighted
+balanced-state exit; [details and remaining obligations](legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace)
+are explicit. No complete-sampler exponent changed. The six-hour automation
+remains paused; no new Comparator attempt was launched.
 
 The [actual aggregate defect trace](aggregate-defect-trace.md) now has compiled
 coefficient **`34848d⁵(m+n−2)³`** at `U=11d(m+n−2),L=7`. Its squared aspect
@@ -110,8 +115,9 @@ sampling closure has 48,401 declarations and only standard axioms. This is
 a conservative quantitative closure, with no established runtime advantage
 over upstream and no integration of the newer d⁸/d^6.5 chain.
 The [arbitrary-margin completion backend](legacy-completion-backend.md)
-supplies an accurate law at outer `L=7`; its physical adapter, adaptive word
-allocation and revised outer encoded sampler still need assembly.
+now has a compiled physical adapter at outer `L=7` in the both-large branch.
+Adaptive word allocation, canonical trace transition correspondence and the
+revised outer encoded sampler still need assembly.
 
 The [versioned Comparator guard](../research/strict-sampler-checkpoints/versioned-guard-v2/)
 passed an actual bounded VM experiment: the original whole metadata guard

@@ -1,15 +1,13 @@
 # Contributor handoff
 
-Paused at the user's request after saving the explicit-runtime checkpoint. No
-compiler, diagnostic VM or agent experiment remains active, and the six-hour
-automation is paused. The next full Comparator attempt is prepared but has
-not started. Its completed local observer diagnostic passed; public projection
-of that diagnostic and review of the exact next-run plan should precede a retry.
-A new SS-switch energy/marked-law candidate is saved privately with a finished
-AI mathematical review; its bounded-bit cost qualification still needs correction
-before any public claim or formalization.
+22 October 2026: the [physical completion adapter](../research/legacy-physical-completion/)
+now compiles and has a full assumption audit plus separate AI review. It connects
+the old executable sampler to actual arbitrary-`U,L` completion fibers in the
+both-large branch, with every-word feasibility and TV≤2^-h. The complete
+explicit-runtime checkpoint remains saved. No new Comparator attempt was
+launched; the six-hour automation remains paused.
 
-Latest result: the [actual aggregate trace theorem](aggregate-defect-trace.md)
+Strongest compiled gap results: the [actual aggregate trace theorem](aggregate-defect-trace.md)
 has compiled coefficient **`34848d⁵(m+n−2)³`**, giving **d^(13/2)** at bounded
 aspect, including nonsquare rectangles and nonempty completion blocks.
 It retains the same canonical rational trace as the preceding
@@ -32,31 +30,35 @@ mathematical argument; the physical theorem still needs Lean formalization.
 
 Next integration tasks:
 
-1. Build on the completed full-table repair injection and donor-moment
-   assembly. For a stronger general bound, retain direct defect-to-defect
-   energy when comparing repaired states; the unrestricted thin-shape exponent
-   remains eight. The new family proof exhibits actual parallel edges that
-   cancel repair load under its stated margin assumptions. Separately, the sharper orientation estimate and unit
-   proposal can reduce constants. Keep chain normalizations explicit.
-2. Instantiate the [frozen complete sampler](legacy-completion-backend.md)
-   as the L=7 completion backend. Its existing arbitrary-margin law supplies
-   availability; the new physical reindexing and adaptive fresh-word adapter
-   remain to be implemented and compiled.
-3. Compose the complete outer schedule and joint-output terminal, then prove
-   encoded realization and charged cost. The finite killed-chain exhaustion
-   bound is compiled; the infinite resolvent bias is not.
+1. Use the [checked completion adapter](legacy-completion-backend.md) to prove
+   the actual bounded defect-transition law. Resolve the canonical versus
+   computed reference choice, preserve the trace's proposal clock and weighted
+   balanced-state exits, and charge capped exits and completion errors. The
+   old full-state transition is not the newer trace.
+2. Prove the adaptive fresh-word reservation and call cap, then compose
+   initialization, mixing, the joint-output correction and retry schedule.
+   Cover zero margins, empty completion blocks and other degenerate branches;
+   the current general output correction assumes positive margins.
+3. Prove encoded realization and all additional charged costs. Keep the
+   historical strict Comparator task separate from this new outer machine.
+   The [bridge note](legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace)
+   gives exact mathematical interfaces; further gap research can proceed
+   separately without changing these sampler claims.
 
 Keep the original compiled d¹⁷ route and its receipts distinct. It re-proves
-upstream's existential bounded-sampling statement; the two packed-trial
-cost certificates and strict Comparator acceptance remain open. The reserved-bit
+upstream's existential bounded-sampling statement. Both packed-trial cost
+certificates and the numerical degree are now closed; strict Comparator
+acceptance remains open. The reserved-bit
 allowances improve from S^1288 to S^170 under a common size measure, with no
 proved complete runtime comparison. The [actual branch test](../research/runtime-degree/checkpoints/actual-branch-degree-v1/)
 has a separate compiled degree-1008 certificate, and the [actual printer](../research/runtime-degree/checkpoints/actual-printer-degree-v1/)
 has degree 4 for charged work plus encoded output on every natural-number
 matrix list. Compiled initialization, fallback and retry-word certificates
 now close three further fields. The [current cost table](composed-complexity.md#exact-draw-cost-certificates)
-records their exact programs, degrees and evidence; complete draw composition
-and the numerical machine-time degree remain open.
+records their exact programs, degrees and evidence. The
+[complete explicit-degree packet](../research/runtime-degree/checkpoints/complete-explicit-degree-v1/)
+closes the original machine's draw composition and fixes its conservative
+runtime degree. It does not integrate the newer defect chain.
 
 This stage leaves a checked mathematical and reference-algorithm core, reviewed measurements, and a complete bounded sampler integrated into the default target with fresh hosted Linux evidence. Start with the [claim ledger](claims-and-evidence.md), [formal verification record](formal-verification.md), and [research status](status.md). Their source-bound receipts determine the checked scope; a file's presence in the repository does not establish that it compiled or that its English claim was reviewed.
 

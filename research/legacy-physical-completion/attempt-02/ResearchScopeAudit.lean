@@ -1,0 +1,3 @@
+import ResearchComparison.LegacyPhysicalCompletion
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchComparison.LegacyPhysicalCompletion] headlines [Math115.LegacyPhysicalCompletion.coarseRows_code, Math115.LegacyPhysicalCompletion.completionDraw_code, Math115.LegacyPhysicalCompletion.completionLaw_accuracy, Math115.LegacyPhysicalCompletion.oracleFamily_accuracy]

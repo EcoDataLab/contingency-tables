@@ -114,6 +114,17 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Focused compiled-environment audit of four frozen final defining modules, reusing successful exact compilations and authenticated imports; four full headline closures. No default rebuild, fresh dependency build, platform portability or strict Comparator replay."
+    },
+    {
+      "id": "legacy-physical-completion",
+      "format": "compiled_environment",
+      "path": "research/legacy-physical-completion/attempt-02/verification.json",
+      "sha256": "80c351c7c83c36dc1c701aa2f544c5d2f07432f16ff33952e554102572572bfe",
+      "label": "Arbitrary-scale physical completion adapter to the frozen sampler",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -198,6 +209,52 @@
       "evidence": [
         {
           "receipt": "physical-defect-trace",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "legacy-physical-completion",
+      "title": "Physical completion adapter at arbitrary scales",
+      "english_claim": "At arbitrary natural cutoff U and padding L, the actual frozen LatticeSampler.draw on computed residual margins has a feasible physical-fiber interpretation for every exact-length word and total variation at most 2^-h from uniform under a uniform word. The same accuracy holds for every reference-line pair.",
+      "quantity": "Every-word feasibility; completion TV ≤ 2⁻ʰ",
+      "hypotheses": [
+        "Natural margins and U,L,h; an actual positive physical state at the source capacity; both computed large-line lists nonempty. Accuracy uses a uniform word of the state-dependent computed length. Singleton blocks are included."
+      ],
+      "limitations": [
+        "Compiled semantic adapter to the old executable draw. No assumed accuracy or density condition. Empty blocks, fresh adaptive words, canonical trace/reference-choice correspondence, revised output correction and encoded costs remain separate. No new complete sampler or exponent."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/legacy-completion-backend.md",
+        "research/legacy-physical-completion/README.md",
+        "research/legacy-physical-completion/formal/ResearchComparison/LegacyPhysicalCompletion.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.LegacyPhysicalCompletion.coarseRows_code",
+          "module": "ResearchComparison.LegacyPhysicalCompletion",
+          "source": "research/legacy-physical-completion/formal/ResearchComparison/LegacyPhysicalCompletion.lean"
+        },
+        {
+          "name": "Math115.LegacyPhysicalCompletion.completionDraw_code",
+          "module": "ResearchComparison.LegacyPhysicalCompletion",
+          "source": "research/legacy-physical-completion/formal/ResearchComparison/LegacyPhysicalCompletion.lean"
+        },
+        {
+          "name": "Math115.LegacyPhysicalCompletion.completionLaw_accuracy",
+          "module": "ResearchComparison.LegacyPhysicalCompletion",
+          "source": "research/legacy-physical-completion/formal/ResearchComparison/LegacyPhysicalCompletion.lean"
+        },
+        {
+          "name": "Math115.LegacyPhysicalCompletion.oracleFamily_accuracy",
+          "module": "ResearchComparison.LegacyPhysicalCompletion",
+          "source": "research/legacy-physical-completion/formal/ResearchComparison/LegacyPhysicalCompletion.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "legacy-physical-completion",
           "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]
