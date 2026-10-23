@@ -1,5 +1,12 @@
 # Research status
 
+23 October 2026: a [conditional weighted-retry helper](../research/weighted-exit/)
+now compiles and passes its environment audit. It proves the exact weighted
+target/fallback mixture and `TV≤(1−a)^J+Jδ` for the existing `J*k`-bit retry
+routine. The actual physical successful-mass formula, trial error and useful
+success lower bound remain premises to discharge. The incoming rational
+trace clock also remains open. This helper does not close the physical exit.
+
 23 October 2026: the [list acceptance correspondence](../research/listed-acceptance/)
 now compiles and passes its full assumption audit. At arbitrary `U,L`, the
 actual list Boolean on the frozen sampler's matrix output agrees with the

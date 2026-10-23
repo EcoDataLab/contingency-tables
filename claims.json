@@ -147,6 +147,17 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "weighted-exit-helper",
+      "format": "compiled_environment",
+      "path": "research/weighted-exit/attempt-02/verification.json",
+      "sha256": "99c67fc31fc288bc91cf0a8d38b590acef32975d31ab2c1a7c042b5577669360",
+      "label": "Conditional weighted first-success and flat-word retry law",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -369,6 +380,47 @@
       "evidence": [
         {
           "receipt": "listed-acceptance",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "weighted-exit-helper",
+      "title": "Weighted retry law (conditional)",
+      "english_claim": "If an ideal trial has successful mass rho*S(e)/w and an actual fixed-word trial is within delta in total variation, J fresh trials with fallback have error at most (1-rho*sum(S)/w)^J+J*delta from normalized S. The ideal law is exactly the weighted target/fallback mixture.",
+      "quantity": "TV ≤ (1-a)^J + Jδ; a = ρΣS/w",
+      "hypotheses": [
+        "Finite trial/output spaces; nonnegative rational S with positive total; w>0; supplied ideal successful-mass identity and trial accuracy; supplied fallback; J independent words of fixed width k. The flat bank has exactly J*k fair bits."
+      ],
+      "limitations": [
+        "Compiled conditional helper with three complete headline closures and trusted reused imports. The actual physical star-trial mass/accuracy instantiation and success lower bound remain open. Zero-star handling, incoming trace clock, adaptive outer schedule and encoded costs are not supplied. No new gap or runtime exponent, default rebuild or Comparator acceptance."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "research/weighted-exit/README.md",
+        "research/weighted-exit/formal/ResearchWeightedExit/FirstSuccess.lean",
+        "docs/legacy-completion-backend.md"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.WeightedExit.weighted_retry_mass",
+          "module": "ResearchWeightedExit.FirstSuccess",
+          "source": "research/weighted-exit/formal/ResearchWeightedExit/FirstSuccess.lean"
+        },
+        {
+          "name": "Math115.WeightedExit.star_retry_mass",
+          "module": "ResearchWeightedExit.FirstSuccess",
+          "source": "research/weighted-exit/formal/ResearchWeightedExit/FirstSuccess.lean"
+        },
+        {
+          "name": "Math115.WeightedExit.flat_star_retry_variation",
+          "module": "ResearchWeightedExit.FirstSuccess",
+          "source": "research/weighted-exit/formal/ResearchWeightedExit/FirstSuccess.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "weighted-exit-helper",
           "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]

@@ -1,5 +1,12 @@
 # Contributor handoff
 
+23 October 2026: the [weighted first-success helper](../research/weighted-exit/)
+is compiled and assumption-audited. It gives the weighted/fallback mixture
+and finite-word retry error conditional on the one-trial mass and accuracy.
+Next discharge those premises for the actual fixed-balanced-state proposal
+and acceptance, derive a retry budget, and match the incoming trace clock.
+The physical weighted exit is still open.
+
 23 October 2026: the [executable acceptance interface](../research/listed-acceptance/)
 is now compiled and assumption-audited. The actual list Boolean on the old
 sampler's output agrees pointwise with the physical reference decision at

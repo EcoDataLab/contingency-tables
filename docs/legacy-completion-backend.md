@@ -97,6 +97,15 @@ proposal clock and weighted exit distribution, then account for capped exit
 failure and approximate completions. Pointwise acceptance alone supplies
 neither that distribution nor its error budget.
 
+A [compiled weighted-retry helper](../research/weighted-exit/) now supplies
+the local first-success algebra. If the ideal trial at a fixed balanced
+state has mass `ρS(b,e)/w(b)` and the actual trial differs by at most `δ`,
+`J` fresh fixed-width trials have error at most `(1−ρs_b/w(b))^J+Jδ` from
+`S(b,e)/s_b`. Its actual `flatRetry` uses exactly `J*k` bits. The physical
+one-trial mass/accuracy instantiation and success lower bound remain open;
+zero stars need a separate branch. The old proposal rate cancels within the
+successful exit law but does not identify the incoming trace clock.
+
 After that transition interface, the program still needs fresh adaptive words,
 initialization and mixing, the defect-law repair/padding/output correction,
 retry schedules, zero-margin and degenerate branches, and encoded costs.

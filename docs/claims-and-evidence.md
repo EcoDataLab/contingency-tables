@@ -103,6 +103,21 @@ This closes the pointwise acceptance interface. It does not identify a
 proposal distribution, implement weighted exits, supply fresh adaptive bits
 or establish a new outer realizer, runtime exponent or Comparator result.
 
+## weighted-exit-helper
+
+The [conditional weighted-retry helper](../research/weighted-exit/) proves
+the exact target/fallback mixture for arbitrary rational target laws. For
+ideal successful masses `ρS(e)/w`, it specializes to normalized star weights
+`S(e)/ΣS`. The existing fixed-word retry on `J*k` fair bits has TV error
+`≤(1−ρΣS/w)^J+Jδ` when the actual trial-law error is `≤δ`.
+
+The successful-mass identity and trial error are explicit premises. Weights
+are nonnegative with positive total; `w>0` and a fallback are supplied.
+Ordinary compilation and three full headline-closure audits passed. The
+actual physical trial, its useful success lower bound, zero-star handling
+and incoming trace clock remain open. No new complete sampler or exponent
+follows from this conditional helper.
+
 ## aggregate-incidence-gap
 
 The [completed-table incidence proof](aggregate-incidence.md) obtains
