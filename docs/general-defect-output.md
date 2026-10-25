@@ -2,11 +2,19 @@
 
 The joint correction below now has a bounded implementation in [general_defect_terminal.py](../src/contingency115/general_defect_terminal.py), with exact weighted-fiber and finite-word tests. It retains the sampled completion, checks padding before its inverse-fiber coin, and includes completion and rounding errors. The [shape-aware scales](shape-aware-defect.md) supply an additional guarded success certificate. This component does not itself establish endpoint mixing or a complete general outer sampler.
 
+24 October 2026. The [Lean repair-map packet](../research/physical-trace-general-repair/)
+now connects the actual scheduled defect/completion type to the literal repair,
+its balanced joint, and ordinary-table unpadding after the actual padding test.
+It also proves full-view recovery from ordered labels and the repaired table.
+Ordinary compilation and the assumption audit passed, with separate AI source
+review. The inverse-fibre formula and acceptance law below are still reviewed
+mathematics with finite checks; they are not compiled theorems in that packet.
+
 11 October 2026. Mathematical derivation reviewed by a separate AI agent,
 with exact finite checks. This supplies a stationary uniform-table output
 rule for the [general weighted defect trace](general-defect-trace.md), with
-success at least **1/(8p)** at the ideal scales. It is not yet a compiled Lean
-theorem or an installed general trace sampler.
+success at least **1/(8p)** at the ideal scales. That stationary-law and success
+claim is not yet a compiled Lean theorem or an installed general trace sampler.
 
 ## Scope
 

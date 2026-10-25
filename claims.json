@@ -378,6 +378,17 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-repair",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-repair/attempt-02/verification.json",
+      "sha256": "191e1a4a9a144d3e6154dd84454595294107f9e7d82f2f9c4a4fd4e1fb1df2f3",
+      "label": "Actual defect-joint repair, fixed-label recovery and padding-tested ordinary output",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -808,14 +819,15 @@
     {
       "id": "physical-trace-walk",
       "title": "Scheduled finite-word sampling of defect and completion pairs",
-      "english_claim": "The ideal incoming and weighted-exit row equals the computed-reference trace. The literal frozen completion draws, list decisions, capped rational proposal and bounded exits use a proved common step width. An explicit natural schedule chooses the walk length, all local precisions and a fresh terminal completion bank. For every natural h, the resulting finite-word program has total variation at most 2^-h from uniform on pairs of an actual defect and its physical completion. The mixing allowance is the proved aggregate coefficient, not a supplied error premise. A separate actual-state counterexample proves that equal totals, both large lists, U>=2, L>=7 and p>=2 do not alone supply a starting defect. Stable positive-margin list filtering now has an ordered retained-index correspondence, exact total preservation, literal matrix-list zero restoration and exact uniform/TV transport. Recomputed reduced dimensions determine the sharper cutoff and actual branch guards. In the reference branch, those guards discharge the scale/count/large-list premises of the same checked finite-word schedule from an actual reduced defect start. The output remains a reduced defect-labelled completion pair; general repair to an ordinary reduced table is still required before zero restoration applies.",
+      "english_claim": "The ideal incoming and weighted-exit row equals the computed-reference trace. The literal frozen completion draws, list decisions, capped rational proposal and bounded exits use a proved common step width. An explicit natural schedule chooses the walk length, all local precisions and a fresh terminal completion bank. For every natural h, the resulting finite-word program has total variation at most 2^-h from uniform on pairs of an actual defect and its physical completion. The mixing allowance is the proved aggregate coefficient, not a supplied error premise. A separate actual-state counterexample proves that equal totals, both large lists, U>=2, L>=7 and p>=2 do not alone supply a starting defect. Stable positive-margin list filtering now has an ordered retained-index correspondence, exact total preservation, literal matrix-list zero restoration and exact uniform/TV transport. Recomputed reduced dimensions determine the sharper cutoff and actual branch guards. In the reference branch, those guards discharge the scale/count/large-list premises of the same checked finite-word schedule from an actual reduced defect start. The schedule output remains a reduced defect-labelled completion pair. A separately checked completion-retaining repair uses that exact input, recovers both source views from ordered labels and the repaired table, and produces a feasible ordinary table after the actual repaired-entry padding test. Re-padding recovers the same repaired matrix. The inverse-fibre count and corrected acceptance law remain to be proved before the uniform/TV restoration theorem completes the original-table sampling argument.",
       "quantity": "TV to uniform defect and completion pairs ≤ 2⁻ʰ; explicit finite bit bank",
       "hypotheses": [
         "Equal-total finite natural margins; both computed large-line lists nonempty; U≥2, L≥7, p≥2 small cells; supplied actual defect start fixed before the fresh word. Any natural h, including zero. Original zero margins and singleton selected completion blocks are allowed. All schedule parameters are explicit natural formulas; reserved width is T·B+F(h+2).",
-        "The filtered-list reference wrapper uses its actual computed reference tag, equal original totals and a supplied reduced defect start. It recomputes U=11d(m+n-2), L=7 on positive-margin list lengths; it does not preserve the original physical chain or branch."
+        "The filtered-list reference wrapper uses its actual computed reference tag, equal original totals and a supplied reduced defect start. It recomputes U=11d(m+n-2), L=7 on positive-margin list lengths; it does not preserve the original physical chain or branch.",
+        "The repair map allows arbitrary natural U,L when an actual defect/completion pair is given. Ordinary output requires every repaired large entry to be at least L. Its feasibility and recovery statements introduce no positivity, count or probability premise; the separate proposed acceptance lower bound needs positive reduced margins."
       ],
       "limitations": [
-        "Ordinary compilation and full headline-closure audits with trusted imports; separate AI source review. The output retains a defect label and is not an original table. Initialization and empty-support branches, the general repair/acceptance map, outer retries, other completion branches and encoded costs remain open. The compiled empty-support example makes a universal initialization shortcut impossible under the current hypotheses. No new complete sampler/runtime exponent, default-target Linux rebuild or Comparator acceptance."
+        "Ordinary compilation and full headline-closure audits with trusted imports; separate AI source review. The scheduled output retains a defect label. The repair map proves feasibility on padding success, not a uniform accepted-output law. Initialization and empty-support branches, inverse-fibre counting and acceptance, outer retries, other completion branches and encoded costs remain open. The compiled empty-support example makes a universal initialization shortcut impossible under the current hypotheses. No new complete sampler/runtime exponent, default-target Linux rebuild or Comparator acceptance."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -850,7 +862,10 @@
         "research/physical-trace-zero-margin-preparation/formal/ResearchPhysicalTraceJoin/ZeroMarginPreparation.lean",
         "research/physical-trace-zero-margin-matrix/README.md",
         "research/physical-trace-zero-margin-matrix/formal/ResearchPhysicalTraceJoin/ZeroMarginMatrix.lean",
-        "docs/zero-margin-preprocessing.md"
+        "docs/zero-margin-preprocessing.md",
+        "research/physical-trace-general-repair/README.md",
+        "research/physical-trace-general-repair/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean",
+        "docs/general-defect-output.md"
       ],
       "headlines": [
         {
@@ -1122,6 +1137,31 @@
           "name": "Math115.PhysicalTraceJoin.restoreZeroMarginMatrix_row_length",
           "module": "ResearchPhysicalTraceJoin.ZeroMarginMatrix",
           "source": "research/physical-trace-zero-margin-matrix/formal/ResearchPhysicalTraceJoin/ZeroMarginMatrix.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalRepair_labels_table_injective",
+          "module": "ResearchPhysicalTraceJoin.GeneralRepair",
+          "source": "research/physical-trace-general-repair/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalRepairedTable_large_entry",
+          "module": "ResearchPhysicalTraceJoin.GeneralRepair",
+          "source": "research/physical-trace-general-repair/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalRepairedJoint_table",
+          "module": "ResearchPhysicalTraceJoin.GeneralRepair",
+          "source": "research/physical-trace-general-repair/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalRepairOutput_entry",
+          "module": "ResearchPhysicalTraceJoin.GeneralRepair",
+          "source": "research/physical-trace-general-repair/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalRepairOutput_successfulJoint",
+          "module": "ResearchPhysicalTraceJoin.GeneralRepair",
+          "source": "research/physical-trace-general-repair/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean"
         }
       ],
       "evidence": [
@@ -1183,6 +1223,10 @@
         },
         {
           "receipt": "physical-trace-zero-margin-matrix",
+          "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-repair",
           "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]

@@ -34,8 +34,13 @@ Equal totals, both large-line lists, U≥2, L≥7, p≥2 and a supplied actual
 defect remain required. Any natural h is allowed. The
 [actual empty-support obstruction](../research/physical-trace-initialization-obstruction/)
 proves that the other conditions cannot universally produce this start.
-General table correction, initialization/branches, outer retries and encoded
-costs remain. The target retains a defect label; it is not an original table.
+The scheduled target retains a defect label. A separate
+[completion-retaining repair map](../research/physical-trace-general-repair/)
+now turns actual pairs into feasible ordinary tables after the repaired-entry
+padding test, with fixed-label recovery and exact repadding. This map works
+at arbitrary natural scales when an actual input exists. It does not yet
+supply the inverse-fibre count or corrected output law. That acceptance law,
+initialization/branches, outer retries and encoded costs remain open.
 
 Every linked module has ordinary compilation and full headline-closure
 audits with standard axioms and trusted imports. Separate AI source review

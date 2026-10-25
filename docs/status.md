@@ -1,5 +1,14 @@
 # Research status
 
+24 October 2026: the [completion-retaining repair map](../research/physical-trace-general-repair/)
+now connects the actual defect/completion pair to a repaired padded table,
+then to an ordinary table after its actual padding test. Ordered labels and
+the repaired table recover the input pair; the sampled dense completion is
+retained, with one increment at a large crossing. Ordinary compilation and
+the full assumption audit passed, with separate AI source review. This closes
+the mathematical map, not the inverse-fibre count or uniform acceptance law.
+The map allows arbitrary natural scales whenever an actual input pair exists.
+
 23 October 2026: the stronger trace now has a
 [scheduled finite-word construction](../research/physical-trace-schedule/)
 with total variation at most **2^-h** from uniform on pairs consisting of
@@ -32,11 +41,13 @@ now also compiles and passes its audits: stable positive filtering preserves
 position order and totals, literal matrix-list restoration matches the table
 equivalence, and recomputed scales and branch guards feed the checked reference
 schedule on the reduced margins. Its actual reduced defect start remains
-an input; its output is still a reduced defect/completion pair. General
-repair is needed before ordinary-table restoration applies. All historical
-failures remain unchanged.
+an input; its output is still a reduced defect/completion pair. The new repair
+map supplies a feasible ordinary reduced table on padding success. Its output
+law still needs the inverse-fibre acceptance correction before the uniform/TV
+restoration theorem can finish the sampler argument. All historical failures
+remain unchanged.
 
-General repair/acceptance to original tables, initialization and other
+The inverse-fibre count and acceptance law, initialization and other
 branches, outer retries and encoded costs remain open. No complete sampler
 or runtime exponent changed. Historical default-target Linux and Comparator
 scopes are unchanged; failed proof attempts are retained.

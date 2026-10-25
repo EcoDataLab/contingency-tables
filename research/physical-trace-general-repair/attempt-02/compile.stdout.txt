@@ -1,0 +1,14 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean:234:15: warning: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Bool.false_eq_true, ite_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean:236:18: warning: This simp argument is unused:
+  hs
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

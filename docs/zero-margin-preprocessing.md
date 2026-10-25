@@ -1,10 +1,12 @@
 # Zero-margin preprocessing and reduced trace preparation
 
-23 October 2026. Stable list filtering, literal matrix restoration, and the
+24 October 2026. Stable list filtering, literal matrix restoration, and the
 connection to the reduced trace's computed scale and reference guard now have
 compiled Lean proofs and full headline assumption audits. The reference draw
 still returns a defect-labelled physical completion pair, from a supplied
-actual starting defect. General repair to an ordinary table remains open.
+actual starting defect. The [general repair map](../research/physical-trace-general-repair/)
+now returns a feasible ordinary table on padding success. Its inverse-fibre
+count and uniform acceptance law remain open.
 
 The checked route is:
 
@@ -14,13 +16,15 @@ flowchart LR
   B --> C[Recompute cutoff and branch guards]
   C --> D[Reference schedule with supplied defect start]
   D --> E[Reduced defect and physical completion]
-  E -. General repair and acceptance still open .-> F[Ordinary reduced table]
+  E --> R[Completion-retaining repair and padding test]
+  R -. Inverse-fibre acceptance law still open .-> F[Ordinary reduced table with corrected law]
   F --> G[Literal zero-row and zero-column reinsertion]
   G --> H[Original table]
 ```
 
-The dotted step prevents this from being a complete new original-table sampler.
-The restoration theorem concerns ordinary tables, not physical completion pairs.
+The repair map already produces feasible ordinary reduced tables on success.
+The dotted step is the probability correction needed before claiming a uniform
+output law. The restoration theorem concerns laws on ordinary tables.
 
 ## Ordered lists and executable output
 
@@ -62,7 +66,7 @@ have named specification or law lemmas.
 | Deterministic | Either dimension is at most one; every feasible reduced table has the same value and restores to exact original uniform | Construct and dispatch its output in the revised outer program |
 | No-small | Both dimensions are at least two and the actual small-cell count is zero | Supply this table branch |
 | Unit | Both dimensions are at least two, at least two cells are small, and at least one computed large-line list is empty | Compose the corresponding revised branch |
-| Reference | Both dimensions are at least two, at least two cells are small, and both computed large-line lists are nonempty | Supply an actual reduced defect start and general output repair |
+| Reference | Both dimensions are at least two, at least two cells are small, and both computed large-line lists are nonempty | Supply an actual reduced defect start and the inverse-fibre acceptance law |
 
 The mask is a union of entire rows and columns. With both dimensions at
 least two its cell count is zero or at least two; a one-cell case cannot occur.
@@ -83,6 +87,7 @@ for the verified backend.
 | [Scale and branch preparation](../research/physical-trace-preparation/) | Actual cutoff/catalog/large-list identities, branch specifications and deterministic law |
 | [Reduced reference schedule](../research/physical-trace-zero-margin-preparation/) | Filter-to-preparation composition and the existing finite-word reference accuracy theorem |
 | [Matrix restoration](../research/physical-trace-zero-margin-matrix/) | Literal output function and exact valid-table code correspondence |
+| [General repair](../research/physical-trace-general-repair/) | Completion-retaining repair, fixed-label recovery and padding-tested ordinary-table output |
 
 Each packet records its exact source, ordinary Lean 4.34.1 compilation,
 environment audit and complete headline dependency closures. Only `propext`,
@@ -91,8 +96,8 @@ the statements and hypotheses. Compiler and reused dependencies remain
 trusted; these packets are not a fresh default-target Linux build or strict
 Comparator acceptance. Earlier failed attempts are retained.
 
-Next is the general completion-retaining repair/acceptance map from the reduced
-joint to ordinary reduced tables, including inverse-fibre counts and a success
-bound. Defect initialization, empty-support and other branches, fresh bounded
+Next are the exact inverse-fibre count and acceptance law for the checked
+repair map, including a success bound at the recomputed scales. Defect
+initialization, empty-support and other branches, fresh bounded
 outer retries, encoded realization and charged costs still need assembly.
 No complete sampler exponent or practical speedup changed here.
