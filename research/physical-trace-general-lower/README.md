@@ -1,6 +1,6 @@
 # Positive lower bound on every inverse count
 
-24 October 2026. Writing a for the number of small rows and b for the number of small columns, two injective label families prove ell(X)>=c0, where c0=max[a*(n*a-1), b*(m*b-1)]. The maximum avoids double-counting overlapping families.
+24 October 2026. Writing a for the number of small rows and b for the number of small columns, two injective label families prove ell(X)>=c0, where `c0=max[a*(n*a-1), b*(m*b-1)]`. The maximum avoids double-counting overlapping families.
 
 The proof chooses a positive entry in each small row or column. Its existence follows from the actual positive margin. No inverse-fibre cardinality or probability lower bound is supplied as a premise.
 

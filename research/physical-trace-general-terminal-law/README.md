@@ -14,9 +14,9 @@ The source mask declares cell (i,j) small exactly when r_i<U or c_j<U. Write:
 - Z for the number of actual pairs (positive defect state, retained completion);
 - p for the number of small cells;
 - a=#{i:r_i<U} and b=#{j:c_j<U};
-- c0=max[a*(n*a-1), b*(m*b-1)].
+- `c0=max[a*(n*a-1), b*(m*b-1)]`.
 
-For the local inverse and ideal-law results, L>=1. The success bound below specializes to the checked scales U=11*d*(m+n-2), L=7, where d is the existing dimension allowance. The nontrivial branch has p>0 and a nonempty actual defect/completion type. Equal totals and existence of an ordinary table are enforced by the table objects used in the statements.
+For the local inverse and ideal-law results, L>=1. The success bound below specializes to the checked scales `U=11*d*(m+n-2)`, L=7, where d is the existing dimension allowance. The nontrivial branch has p>0 and a nonempty actual defect/completion type. Equal totals and existence of an ordinary table are enforced by the table objects used in the statements.
 
 ## Exact inverse test
 
@@ -30,7 +30,7 @@ The explicit inverse views are x=Y-e_v+e_t and q=Y-e_v+e_s. Their feasibility, s
 
 Let ell(X) be the finite sum over ordered small label pairs of 1 when this test holds and 0 otherwise. The actual ordinary-output fibre has exactly ell(X) members. This count uses ordinary small entries and ordinary residual slacks; it does not require completion counts or Z. The closed factorization D0+abuv is not part of this result.
 
-Positive original margins provide explicit injective label families of sizes a*(n*a-1) and b*(m*b-1). Hence ell(X)>=c0 for every ordinary X. With m,n>=2 and p>0, c0>0.
+Positive original margins provide explicit injective label families of sizes `a*(n*a-1)` and `b*(m*b-1)`. Hence ell(X)>=c0 for every ordinary X. With m,n>=2 and p>0, c0>0.
 
 ## Ideal correction and success
 
@@ -40,7 +40,7 @@ Start with a uniform actual defect/completion pair. Repair while retaining its c
 
 Consequently the total success probability is s=N*c0/Z, and successful masses have exactly the uniform ordinary-table proportions. In the stated nontrivial branch s>0, so conditioning on success is uniform.
 
-At U=11*d*(m+n-2), L=7, the actual count bound is Z<=2*p*(p-1)*N. Therefore
+At `U=11*d*(m+n-2)`, L=7, the actual count bound is `Z<=2*p*(p-1)*N`. Therefore
 
     s >= c0/[2*p*(p-1)].
 
@@ -55,8 +55,8 @@ No claim c0>=p/4 or simplified linear-in-p success bound is made here.
 | c0 is positive in the nontrivial branch | `inverseSupportAllowance_positive` | m,n>=2 and p>0 |
 | Every ordinary table has successful mass c0/Z | `terminalCorrected_mass` | L>=1, positive reduced margins, nonempty actual joint input type |
 | Total success is N*c0/Z; successful masses have uniform proportions | `terminalCorrected_success`, `terminalCorrected_uniform_proportions` | Same ideal-law hypotheses |
-| The sharper scales give Z<=2*p*(p-1)*N | `actualShape_defectJoint_card_le` | The stated U,L specialization |
-| Success is at least c0/[2*p*(p-1)] | `actualShape_terminalCorrected_success_lower` | Stated scales, positive reduced margins, nonempty actual joint input type |
+| The sharper scales give `Z<=2*p*(p-1)*N` | `actualShape_defectJoint_card_le` | The stated U,L specialization |
+| Success is at least `c0/[2*p*(p-1)]` | `actualShape_terminalCorrected_success_lower` | Stated scales, positive reduced margins, nonempty actual joint input type |
 | Success is strictly positive | `actualShape_terminalCorrected_success_positive` | Same, with m,n>=2 |
 
 ## Delivery boundary
