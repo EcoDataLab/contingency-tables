@@ -9,8 +9,10 @@ success. At `U=11d(m+n-2),L=7`, the checked bound is
 `s>=c0/[2p(p-1)]`, using the actual smaller-scale padding theorem. All six
 modules compile and pass full assumption audits, with separate AI source
 review. The compact factorization `D0+abuv`, its linear-time implementation,
-the scalar `1/(8p)` corollary and finite-word integration below remain separate
-from that compiled ideal law.
+and the scalar `1/(8p)` corollary remain separate from that compiled ideal
+law. The [subsequent finite-word composition](corrected-reference-sampler.md)
+now checks the literal counter, bounded coin, scheduled endpoint error, fresh
+retries and original-table zero restoration for the reference branch.
 
 11 October 2026. Mathematical derivation reviewed by a separate AI agent,
 with exact finite checks. This supplies a stationary uniform-table output

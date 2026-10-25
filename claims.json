@@ -455,12 +455,204 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-listed-count",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-listed-count/attempt-02/verification.json",
+      "sha256": "c6269e1d715bdbe4ced0c3a1b8ff7c58d82b6ec58011cd34be1d87f24960a2b8",
+      "label": "Literal ordered-list count",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-bounded-coin",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-bounded-coin/attempt-03/verification.json",
+      "sha256": "e4562d806f21210ca5885b6dc08d2dbcbf3a4c0658efcb051d88e49b6d47a702",
+      "label": "Partial bounded coin",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-finite-correction",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-finite-correction/attempt-01/verification.json",
+      "sha256": "ea9f7c4baf621517fb1ce983b26053d36c5ba7c4e87a417cb182e03cb733a6f3",
+      "label": "Actual correction row",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-corrected-word",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-corrected-word/attempt-09/verification.json",
+      "sha256": "29a088acb7554a240f28ec48eeae9db2ecbf02d08bb5ad31a7034160df821455",
+      "label": "Scheduled corrected trial",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-corrected-retry",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-corrected-retry/attempt-01/verification.json",
+      "sha256": "37a52c1290a248236c8bfbf0c2aa6be939236713352823f9b882807badfecc3d",
+      "label": "Fresh independent retries",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-zero-margin-corrected",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-zero-margin-corrected/attempt-03/verification.json",
+      "sha256": "8097423bf1bc21434a85e01f0ec90779ec7f06dec66e6f66aae17673a25a995e",
+      "label": "Ordered original-table restoration",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
     "linux-integrated"
   ],
   "claims": [
+    {
+      "id": "physical-trace-corrected-reference",
+      "title": "Corrected reference-branch table law",
+      "english_claim": "The literal ordered counter equals the actual successful repair count. A fresh bounded coin and scheduled joint draw have whole-option error at most 2^-h+2^-k. The actual smaller-scale success bound gives fresh-retry error at most (1-s)^R+R*(2^-h+2^-k). Stable positive filtering and the reference tag discharge reduced positivity, scale and catalog guards; exact zero restoration preserves this bound for uniform original tables.",
+      "quantity": "TV ≤ (1−s)^R + R(2⁻ʰ+2⁻ᵏ), s=c0/[2p(p−1)]>0",
+      "hypotheses": [
+        "Equal original natural-margin totals; the recomputed positive-list branch is reference. Supplied actual reduced defect start and feasible reduced fallback; supplied R,h,k. All dimensions, counts and U=11d(m+n−2), L=7 are on the filtered lists."
+      ],
+      "limitations": [
+        "Ordinary compiled and audited typed finite-word trial and independent retry laws, with separate AI source review and trusted imports. Initialization, automatic outer accuracy choices, other branches, encoded retry realization and charged costs remain open. No complete sampler or runtime exponent change."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/corrected-reference-sampler.md",
+        "research/physical-trace-general-listed-count/README.md",
+        "research/physical-trace-general-listed-count/formal/ResearchPhysicalTraceJoin/GeneralListedCount.lean",
+        "research/physical-trace-general-bounded-coin/README.md",
+        "research/physical-trace-general-bounded-coin/formal/ResearchPhysicalTraceJoin/GeneralBoundedCoin.lean",
+        "research/physical-trace-general-finite-correction/README.md",
+        "research/physical-trace-general-finite-correction/formal/ResearchPhysicalTraceJoin/GeneralFiniteCorrection.lean",
+        "research/physical-trace-general-corrected-word/README.md",
+        "research/physical-trace-general-corrected-word/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean",
+        "research/physical-trace-general-corrected-retry/README.md",
+        "research/physical-trace-general-corrected-retry/formal/ResearchPhysicalTraceJoin/GeneralCorrectedRetry.lean",
+        "research/physical-trace-zero-margin-corrected/README.md",
+        "research/physical-trace-zero-margin-corrected/formal/ResearchPhysicalTraceJoin/ZeroMarginCorrected.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.PhysicalTraceJoin.listedInverseLabelTest_code",
+          "module": "ResearchPhysicalTraceJoin.GeneralListedCount",
+          "source": "research/physical-trace-general-listed-count/formal/ResearchPhysicalTraceJoin/GeneralListedCount.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.listedInverseCount_eq_supportCount",
+          "module": "ResearchPhysicalTraceJoin.GeneralListedCount",
+          "source": "research/physical-trace-general-listed-count/formal/ResearchPhysicalTraceJoin/GeneralListedCount.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.listedInverseCount_eq_terminalInverseCount",
+          "module": "ResearchPhysicalTraceJoin.GeneralListedCount",
+          "source": "research/physical-trace-general-listed-count/formal/ResearchPhysicalTraceJoin/GeneralListedCount.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.PartialRepairCorrection.finiteRow_variation",
+          "module": "ResearchPhysicalTraceJoin.GeneralBoundedCoin",
+          "source": "research/physical-trace-general-bounded-coin/formal/ResearchPhysicalTraceJoin/GeneralBoundedCoin.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.PartialRepairCorrection.finiteRow_bind_variation",
+          "module": "ResearchPhysicalTraceJoin.GeneralBoundedCoin",
+          "source": "research/physical-trace-general-bounded-coin/formal/ResearchPhysicalTraceJoin/GeneralBoundedCoin.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalListedCount_eq_terminalInverseCount",
+          "module": "ResearchPhysicalTraceJoin.GeneralFiniteCorrection",
+          "source": "research/physical-trace-general-finite-correction/formal/ResearchPhysicalTraceJoin/GeneralFiniteCorrection.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalFiniteCorrectionRow_variation",
+          "module": "ResearchPhysicalTraceJoin.GeneralFiniteCorrection",
+          "source": "research/physical-trace-general-finite-correction/formal/ResearchPhysicalTraceJoin/GeneralFiniteCorrection.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalFiniteCorrectionRow_bind_variation",
+          "module": "ResearchPhysicalTraceJoin.GeneralFiniteCorrection",
+          "source": "research/physical-trace-general-finite-correction/formal/ResearchPhysicalTraceJoin/GeneralFiniteCorrection.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalCorrectedWordLaw_eq_bind",
+          "module": "ResearchPhysicalTraceJoin.GeneralCorrectedWord",
+          "source": "research/physical-trace-general-corrected-word/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalCorrectedWord_accuracy",
+          "module": "ResearchPhysicalTraceJoin.GeneralCorrectedWord",
+          "source": "research/physical-trace-general-corrected-word/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalCorrectedRetry_accuracy_of_success",
+          "module": "ResearchPhysicalTraceJoin.GeneralCorrectedRetry",
+          "source": "research/physical-trace-general-corrected-retry/formal/ResearchPhysicalTraceJoin/GeneralCorrectedRetry.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.actualShape_terminalCorrectedRetry_accuracy",
+          "module": "ResearchPhysicalTraceJoin.GeneralCorrectedRetry",
+          "source": "research/physical-trace-general-corrected-retry/formal/ResearchPhysicalTraceJoin/GeneralCorrectedRetry.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.positiveTraceCorrectionSuccess_positive",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginCorrected",
+          "source": "research/physical-trace-zero-margin-corrected/formal/ResearchPhysicalTraceJoin/ZeroMarginCorrected.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.positiveTraceCorrectedRetry_accuracy",
+          "module": "ResearchPhysicalTraceJoin.ZeroMarginCorrected",
+          "source": "research/physical-trace-zero-margin-corrected/formal/ResearchPhysicalTraceJoin/ZeroMarginCorrected.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "physical-trace-general-listed-count",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-bounded-coin",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-finite-correction",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-corrected-word",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-corrected-retry",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-zero-margin-corrected",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
     {
       "id": "aggregate-actual-gap",
       "title": "Same-chain bounded-aspect refinement",
@@ -1306,7 +1498,7 @@
         "Positive reduced row/column margins; m,n≥2; nonempty actual defect/completion type. Ideal uniform input on that joint. c0=max[a(na−1),b(mb−1)], p is the small-cell count. General inverse/law identities use L≥1; the stated positive-success bound uses U=11d(m+n−2), L=7."
       ],
       "limitations": [
-        "Ordinary Lean compilation and full assumption audits with trusted inputs; separate AI source review. Exact label-sum count, without the compact factorization or executable counter correspondence. Bounded coin, approximate scheduled input, initialization/branches, retries and encoded costs still require composition. No complete sampler or exponent change."
+        "Ordinary Lean compilation and full assumption audits with trusted inputs; separate AI source review. This ideal-law packet keeps the exact label-sum count; compact factorization is separate. The subsequent corrected-reference claim composes a literal counter, bounded coin, scheduled input, retries and zero restoration. Initialization, other branches and encoded costs remain open. No complete sampler or exponent change."
       ],
       "evidence_class": "lean_theorem",
       "sources": [

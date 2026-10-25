@@ -1,15 +1,15 @@
 # Contributor handoff
 
-24 October 2026: the [ideal general correction](../research/physical-trace-general-terminal-law/)
-is compiled and assumption-audited across all six modules. Explicit inverse
-views and ordinary support/slack tests count actual successful predecessors.
-Positive reduced margins give the full shape c0 lower bound. With m,n>=2
-and a nonempty actual joint input type, the actual
-repair, padding test and ideal acceptance coin then produce equal successful
-mass for every ordinary table, with positive success at least
-`c0/[2p(p-1)]` at `U=11d(m+n-2),L=7`. Separate AI source review found no
-mathematical blocker. The input law is ideal uniform on actual joint pairs;
-finite-word composition is the next missing interface.
+24 October 2026: the [corrected reference-branch table law](corrected-reference-sampler.md)
+now connects the stronger trace to ordinary output on the original ordered
+margin lists. The literal inverse counter, bounded coin and scheduled joint
+draw give whole-trial error `2^-h+2^-k`. Fresh independent retries and exact
+zero restoration give `TV <= (1-s)^R+R*(2^-h+2^-k)`, where the recomputed
+reduced scales supply `s=c0/[2p(p-1)]>0`. All six new modules compiled and
+passed full assumption audits, with separate AI source review. A reduced
+actual defect start and feasible fallback remain supplied. Automatic outer
+budgets, other branches, encoded realization and charged costs remain open.
+No complete sampler or runtime exponent changed.
 
 23 October 2026: the [scheduled finite-word defect joint](../research/physical-trace-schedule/)
 is compiled and assumption-audited. From a supplied actual defect, it chooses
@@ -23,9 +23,8 @@ separate AI source review and full headline dependency-closure audits.
 The [compiled initialization obstruction](../research/physical-trace-initialization-obstruction/)
 shows why a start remains an input: r=[0,4,4], c=[4,4], U=2,L=7 has equal
 totals, both large lists and p≥2, yet no defects. Its 19 physical completions
-and five original tables are separately checked finite counts. The current
-scheduled result targets labelled physical pairs. Its composition with the
-new ideal ordinary-output correction and the complete revised sampler remain open.
+and five original tables are separately checked finite counts. The scheduled pair result now feeds the checked reference-branch ordinary-table
+law. The complete revised sampler remains open.
 
 Strongest compiled gap results: the [actual aggregate trace theorem](aggregate-defect-trace.md)
 has compiled coefficient **`34848d⁵(m+n−2)³`**, giving **d^(13/2)** at bounded
@@ -50,30 +49,17 @@ mathematical argument; the physical theorem still needs Lean formalization.
 
 Next integration tasks:
 
-1. Connect a literal ordered-list inverse counter and bounded dyadic coin to
-   the now-checked ideal correction. The exact label-sum count is sufficient;
-   compact `D0+abuv` factorization is optional additional work, not an assumed
-   theorem. Small crossings require ordinary support; large crossings require
-   both ordinary residual slacks. Reuse the existing finite-coin rounding
-   lemmas, then compose its error with the checked scheduled joint draw.
-   The new-scale denominator bound and full c0 lower bound are already
-   proved; preserve their positive-margin hypotheses.
-2. Supply initialization where defect support is nonempty, and handle the
-   proved empty-support branch, zero margins and empty completion blocks.
-   [Zero-row/column removal and restoration](../research/physical-trace-zero-margins/)
-   now have checked [ordered list and matrix-code preprocessing](zero-margin-preprocessing.md),
-   exact uniform/TV restoration, and a reference-schedule wrapper using the
-   actual recomputed reduced cutoff and branch guards. This does not transport
-   physical states or kernels between shapes. A literal reduced defect start,
-   the finite-word accepted law and remaining branch programs still need
-   construction. The inverse construction and positive c0 are useful for
-   deriving a start from a feasible ordinary table, but no encoded initializer
-   is supplied yet. Compose fresh bounded outer retries with the checked
-   success lower bound, then restore zeros at the ordinary-table law level.
-3. Prove encoded realization and additional charged costs. Keep historical
-   strict Comparator work separate. The [bridge note](legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace)
-   records the exact checked schedule and remaining obligations. This new
-   finite-word result does not yet improve the complete sampler's exponent.
+1. Construct a reduced defect start and feasible fallback. Use the actual
+   inverse construction and positive c0 with a feasible ordinary-table
+   construction; handle empty support explicitly.
+2. Choose R and the two trial precisions for a requested outer accuracy from
+   [the checked reference bound](corrected-reference-sampler.md). Realize
+   fresh retries as a finite-word program, then assemble the deterministic,
+   no-small and unit branches. Positive filtering, reference guards, the
+   literal inverse counter and exact zero restoration are now connected.
+3. Identify the revised encoded outer program and prove its charged costs.
+   Typed laws, program realization, machine time and strict Comparator
+   acceptance remain distinct. No newer complete-machine exponent is proved.
 
 Keep the original compiled d¹⁷ route and its receipts distinct. It re-proves
 upstream's existential bounded-sampling statement. Both packed-trial cost

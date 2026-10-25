@@ -1,0 +1,18 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:20:20: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:21:20: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:27:4: warning: declaration uses `sorry`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:33:4: warning: declaration uses `sorry`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:51:48: error(lean.unknownIdentifier): Unknown identifier `hr`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:51:51: error(lean.unknownIdentifier): Unknown identifier `hc`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:58:28: error(lean.unknownIdentifier): Unknown identifier `Cells`
+
+Note: It is not possible to treat `Cells` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:63:51: error(lean.unknownIdentifier): Unknown identifier `hr`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:63:54: error(lean.unknownIdentifier): Unknown identifier `hc`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:66:38: error(lean.unknownIdentifier): Unknown identifier `hr`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:66:41: error(lean.unknownIdentifier): Unknown identifier `hc`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectedWord.lean:54:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

@@ -40,14 +40,31 @@ now turns actual pairs into feasible ordinary tables after the repaired-entry
 padding test, with fixed-label recovery and exact repadding. This map works
 at arbitrary natural scales when an actual input exists. The separately
 checked ideal correction below now supplies its inverse count and accepted
-output law. Finite-word correction, initialization/branches, outer retries
-and encoded costs remain open.
+output law. The corrected-reference claim below now composes the finite-word
+correction, fresh retries and original-table restoration. Initialization,
+other branches and encoded costs remain open.
 
 Every linked module has ordinary compilation and full headline-closure
 audits with standard axioms and trusted imports. Separate AI source review
 is not human review or independent kernel replay. The ledger binds the
 individual sources and receipts. Historical Linux and Comparator scopes
 remain unchanged.
+
+## physical-trace-corrected-reference
+
+The [corrected reference-branch law](corrected-reference-sampler.md) gives
+`TV <= (1-s)^R+R*(2^-h+2^-k)` on original ordinary tables, with derived
+`s=c0/[2p(p-1)]>0`. The literal ordered counter equals the actual repair fibre;
+a fresh bounded coin preserves padding failures. The scheduled joint error
+is charged before independent retries. Ordered positive filtering and the
+computed reference tag discharge positivity, cutoff and catalog guards;
+exact zero restoration adds no error. Equal original totals, a reduced actual
+defect start and feasible reduced fallback remain inputs; R,h,k are supplied.
+This is a typed finite-word trial and retry-law composition. Initialization,
+automatic outer budgets, other branches, encoded realization and charged
+costs remain open. All six new modules have ordinary compilation and full
+assumption audits plus separate AI source review. Historical Linux and
+strict Comparator evidence are unchanged.
 
 ## physical-trace-general-correction
 
@@ -69,9 +86,10 @@ All six modules compile and pass their full assumption audits. Separate
 AI source review checks the actual fibre equivalences and the hypotheses;
 the compiler and reused imports remain trusted. The exact count is a finite
 label sum, not yet the compact `D0+abuv` factorization. A supplied nonempty
-joint is not an initializer. Bounded acceptance, approximate input errors,
-retries, other branches and encoded realization remain separate; no complete
-sampler or runtime exponent changes.
+joint is not an initializer. The subsequent corrected-reference claim composes
+bounded acceptance, approximate input errors, retries and zero restoration.
+Initialization, other branches and encoded realization remain separate; no
+complete sampler or runtime exponent changes.
 
 ## aggregate-actual-gap
 

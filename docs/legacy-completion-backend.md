@@ -182,31 +182,23 @@ defect type to be empty. The concrete r=[0,4,4], c=[4,4], U=2,L=7 fixture
 still satisfies the other displayed conditions. Separate finite enumeration
 gives 19 physical completions and five original tables.
 
-The [general repair map](../research/physical-trace-general-repair/) now
-retains the actual sampled completion, proves fixed-label recovery, and
-returns a feasible ordinary table after its repaired-entry padding test.
-Its [exact inverse count and ideal acceptance law](../research/physical-trace-general-terminal-law/)
-now compile and pass their audits, with positive success at the smaller
-scales. Bounded dyadic approximation and approximate-law composition remain.
-Initialization and empty-support handling, fresh outer
-retries, empty completion blocks and other branches, and encoded costs also
-remain. The checked ideal output correction assumes positive reduced
-margins. The [zero-margin equivalence](../research/physical-trace-zero-margins/)
-now proves literal ordinary-table restriction/zero restoration and exact
-uniform-law/TV transport, including empty dimensions and zero totals.
-The [ordered preprocessing bridge](zero-margin-preprocessing.md) now supplies
-literal positive filtering, its ordered index correspondence and matrix-list
-zero restoration. A checked wrapper recomputes reduced dimensions, cutoff,
-catalog and branch guards and calls the existing reference schedule on those
-same reduced margins. It derives the scale/count/large-list conditions from
-the reference tag; an actual reduced defect start remains required. Its
-output is still a reduced labelled joint. The checked repair map produces an
-ordinary reduced table on success. Its ideal correction is checked; the
-finite-word corrected law is needed before uniform/TV restoration can finish
-the argument. Other branch programs and encoded costs remain
-open. No equality of physical states or trace kernels across retuned shapes
-is asserted.
-No complete new sampler or runtime theorem is claimed.
+The [general repair map](../research/physical-trace-general-repair/) retains
+the actual completion and tests repaired entries before producing an ordinary
+output. Its exact inverse count and positive ideal success bound now feed a
+[checked bounded correction and retry law](corrected-reference-sampler.md).
+A literal ordered counter, fresh bounded coin and scheduled joint draw give
+whole-trial error `2^-h+2^-k`; R fresh trials and a feasible fallback give
+`(1-s)^R+R*(2^-h+2^-k)`, with `s=c0/[2p(p-1)]` derived at the new scales.
+
+[Ordered preprocessing](zero-margin-preprocessing.md) recomputes positive
+filtered lists, dimensions, cutoff, catalogs and branch guards. The actual
+reference tag supplies the conditions, and exact ordered zero restoration
+preserves the ordinary-table bound. A reduced actual defect start and feasible
+fallback remain inputs. Physical kernels across retuned shapes are not equated.
+
+Initialization, automatic outer budgets, encoded retry realization, other
+branch programs and charged costs remain open. The complete sampler and its
+runtime theorem are unchanged.
 
 ## A uniform reservation for adaptive calls
 
@@ -231,7 +223,7 @@ The whole backend reservation is at most `H W_star`, including unused bits.
 Choosing `k=h_out+clog2(H)+2` bounds the cumulative completion error by
 `H·2^(-k)≤2^(-h_out-2)`. Initial-law, mixing, terminal correction and retry
 exhaustion errors still need their own allocations. The local trace and repeated-walk reservations above are now compiled.
-The whole outer sampler's call cap and terminal/retry composition remain open.
+The reference branch's typed terminal/retry law is now checked; the encoded outer call cap and complete branch assembly remain open.
 
 ## Complete cost and present evidence
 

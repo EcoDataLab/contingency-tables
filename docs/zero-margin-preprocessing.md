@@ -1,33 +1,28 @@
 # Zero-margin preprocessing and reduced trace preparation
 
-24 October 2026. Stable list filtering, literal matrix restoration, and the
-connection to the reduced trace's computed scale and reference guard now have
-compiled Lean proofs and full headline assumption audits. The reference draw
-still returns a defect-labelled physical completion pair, from a supplied
-actual starting defect. The [general repair map](../research/physical-trace-general-repair/)
-returns a feasible ordinary table on padding success. Its [exact inverse
-count and ideal uniform acceptance law](../research/physical-trace-general-terminal-law/)
-are now checked. Their finite-word composition with the reference draw remains open.
-
-The checked route is:
+24 October 2026. The [corrected reference-branch theorem](corrected-reference-sampler.md)
+now composes ordered positive filtering, recomputed scales and branch guards,
+the scheduled joint draw, literal inverse counting, bounded repair acceptance,
+fresh retries and exact ordinary-table zero restoration. These interfaces have
+compiled proofs and full assumption audits. A reduced actual defect start
+and feasible fallback remain supplied.
 
 ```mermaid
 flowchart LR
   A[Original margin lists] --> B[Stable positive-margin lists]
-  B --> C[Recompute cutoff and branch guards]
-  C --> D[Reference schedule with supplied defect start]
-  D --> E[Reduced defect and physical completion]
-  E --> R[Completion-retaining repair and padding test]
-  R -. Finite-word correction still open .-> F[Ordinary reduced table with corrected law]
-  F --> G[Literal zero-row and zero-column reinsertion]
-  G --> H[Original table]
+  B --> C[Recompute cutoff and reference guard]
+  C --> D[Scheduled joint draw with supplied start]
+  D --> E[Repair and padding test]
+  E --> F[Literal inverse count and fresh bounded coin]
+  F --> G[Fresh retries with feasible fallback]
+  G --> H[Ordered zero restoration]
+  H --> I[Original ordinary table]
 ```
 
-The repair map already produces feasible ordinary reduced tables on success.
-The ideal correction now proves uniform output upon acceptance, with positive
-success at the recomputed scales. The dotted step is its bounded-bit
-realization and composition with the approximate pair draw. The restoration
-theorem concerns laws on ordinary tables.
+The bound is `TV <= (1-s)^R+R*(2^-h+2^-k)`, with derived positive
+`s=c0/[2p(p-1)]`. Failures are charged before rejection; restoration adds no
+error. Automatic outer budgets, initialization, other branch programs and
+encoded costs remain separate.
 
 ## Ordered lists and executable output
 
@@ -69,7 +64,7 @@ have named specification or law lemmas.
 | Deterministic | Either dimension is at most one; every feasible reduced table has the same value and restores to exact original uniform | Construct and dispatch its output in the revised outer program |
 | No-small | Both dimensions are at least two and the actual small-cell count is zero | Supply this table branch |
 | Unit | Both dimensions are at least two, at least two cells are small, and at least one computed large-line list is empty | Compose the corresponding revised branch |
-| Reference | Both dimensions are at least two, at least two cells are small, and both computed large-line lists are nonempty | Supply an actual reduced defect start and compose the bounded acceptance coin |
+| Reference | Both dimensions are at least two, at least two cells are small, and both computed large-line lists are nonempty | Supply a reduced start/fallback, outer budgets and encoded realization; corrected table-law composition is checked |
 
 The mask is a union of entire rows and columns. With both dimensions at
 least two its cell count is zero or at least two; a one-cell case cannot occur.
@@ -93,6 +88,8 @@ for the verified backend.
 | [General repair](../research/physical-trace-general-repair/) | Completion-retaining repair, fixed-label recovery and padding-tested ordinary-table output |
 | [Ideal correction](../research/physical-trace-general-terminal-law/) | Exact actual inverse count, derived c0 lower bound, uniform successful masses and positive success at the smaller scales |
 
+| [Corrected reference law](corrected-reference-sampler.md) | Literal count, bounded coin, scheduled input, fresh retries and original-table error |
+
 Each packet records its exact source, ordinary Lean 4.34.1 compilation,
 environment audit and complete headline dependency closures. Only `propext`,
 `Classical.choice` and `Quot.sound` occur. Separate AI source review checked
@@ -100,8 +97,6 @@ the statements and hypotheses. Compiler and reused dependencies remain
 trusted; these packets are not a fresh default-target Linux build or strict
 Comparator acceptance. Earlier failed attempts are retained.
 
-Next are literal count/coin realization and approximate-law composition for
-the checked ideal correction. Defect
-initialization, empty-support and other branches, fresh bounded
-outer retries, encoded realization and charged costs still need assembly.
+Next are defect initialization, automatic outer accuracy parameters, the
+remaining branch programs, encoded retry realization and charged costs.
 No complete sampler exponent or practical speedup changed here.

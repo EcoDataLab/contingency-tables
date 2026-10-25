@@ -1,15 +1,15 @@
 # Research status
 
-24 October 2026: the [ideal ordinary-table correction](../research/physical-trace-general-terminal-law/)
-now derives the exact inverse count of the completion-retaining repair and
-proves uniform accepted output with positive success. This uses positive
-reduced margins, m,n>=2 and a nonempty actual joint input type. The support/slack count is at least
-`c0=max[a*(n*a-1), b*(m*b-1)]`. At `U=11d(m+n-2),L=7`, its success probability
-is at least `c0/[2p(p-1)]`; the actual marked-padding theorem supplies the
-denominator bound. All six modules passed ordinary compilation and full
-headline assumption audits, with separate AI source review. The input is
-ideal uniform on actual defect/completion pairs. Finite-word acceptance and
-composition with the checked approximate pair draw remain open.
+24 October 2026: the [corrected reference-branch table law](corrected-reference-sampler.md)
+now connects the stronger trace to ordinary output on the original ordered
+margin lists. The literal inverse counter, bounded coin and scheduled joint
+draw give whole-trial error `2^-h+2^-k`. Fresh independent retries and exact
+zero restoration give `TV <= (1-s)^R+R*(2^-h+2^-k)`, where the recomputed
+reduced scales supply `s=c0/[2p(p-1)]>0`. All six new modules compiled and
+passed full assumption audits, with separate AI source review. A reduced
+actual defect start and feasible fallback remain supplied. Automatic outer
+budgets, other branches, encoded realization and charged costs remain open.
+No complete sampler or runtime exponent changed.
 
 23 October 2026: the stronger trace now has a
 [scheduled finite-word construction](../research/physical-trace-schedule/)
@@ -44,13 +44,12 @@ position order and totals, literal matrix-list restoration matches the table
 equivalence, and recomputed scales and branch guards feed the checked reference
 schedule on the reduced margins. Its actual reduced defect start remains
 an input; its output is still a reduced defect/completion pair. The new repair
-map supplies a feasible ordinary reduced table on padding success. The ideal
-inverse-fibre correction is now checked; its finite-word realization and
-error composition are needed before uniform/TV restoration can finish the
-sampler argument. All historical failures remain unchanged.
+map supplies a feasible ordinary reduced table on padding success. The inverse-fibre correction, bounded coin, scheduled input error, fresh
+retry law and ordinary-table zero restoration are now composed in the
+reference branch. All historical failures remain unchanged.
 
-The bounded acceptance coin and approximate-law composition, initialization
-and other branches, outer retries and encoded costs remain open. No complete sampler
+Initialization, other branches, automatic outer budgets, encoded retry
+realization and charged costs remain open. No complete sampler
 or runtime exponent changed. Historical default-target Linux and Comparator
 scopes are unchanged; failed proof attempts are retained.
 
