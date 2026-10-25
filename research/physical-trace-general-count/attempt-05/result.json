@@ -1,0 +1,16 @@
+{
+  "compilation": {
+    "returncode": 0,
+    "seconds": 44.83046616613865,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "source_unchanged": true,
+    "olean_sha256": "af39bc31a520b5eabc0985f34dbd23034af5acb92c63a4baf74055412a8fce9a"
+  },
+  "audit": {
+    "returncode": 0,
+    "seconds": 58.38143654214218,
+    "stdout_sha256": "22bf705df4fe324377e67e5f4db05848f6c1959adf546582a2c454003e183d30",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

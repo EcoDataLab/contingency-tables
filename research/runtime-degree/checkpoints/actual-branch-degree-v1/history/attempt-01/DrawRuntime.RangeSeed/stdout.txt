@@ -1,0 +1,12 @@
+<candidate-root>\source\DrawRuntime\RangeSeed.lean:20:56: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<candidate-root>\source\DrawRuntime\RangeSeed.lean:35:74: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<candidate-root>\source\DrawRuntime\RangeSeed.lean:96:42: error: Ambiguous term
+  typed_head
+Possible interpretations:
+  ListRepeatDegreeV1.typed_head d : Typed (head d) 1
+  
+  DrawDegree.typed_head d : Typed (head d) 1

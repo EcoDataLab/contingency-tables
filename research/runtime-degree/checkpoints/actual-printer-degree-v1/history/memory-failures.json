@@ -1,0 +1,20 @@
+[
+  {
+    "module": "OAI.Combinatorics.ContingencyTables.Sampling.GreedyCellMachine",
+    "source_sha256": "2d271b657c82eec4dbd7caba6995f732dfbb1a446ddae621635fe0cda52cabb7",
+    "exit_code": -6,
+    "seconds": 12.144,
+    "diagnostics": "attempts/2",
+    "memory_cap_mib": 4096,
+    "status": "failed at interpreter allocation cap; exact lossless diagnostics retained"
+  },
+  {
+    "module": "PrinterRuntime.LinearCollections",
+    "source_sha256": "6314551915b1f82e59bfd102fa53538f3afe4b605045e9e32dc2a09e1dbd9148",
+    "exit_code": -6,
+    "seconds": 12.498,
+    "diagnostics": "attempts/3",
+    "memory_cap_mib": 4096,
+    "status": "failed at interpreter allocation cap; exact lossless diagnostics retained"
+  }
+]

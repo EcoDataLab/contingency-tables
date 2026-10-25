@@ -1,0 +1,34 @@
+'Math115.PrinterRuntimeNext.AffineOutput' does not depend on any axioms
+'Math115.PrinterRuntimeNext.typed_weaken' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_comp_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_pair_same' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_comp_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.affine_composition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_choose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_append' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.affine_append' depends on axioms: [propext, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_flatten' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.affine_flatten' depends on axioms: [propext, Quot.sound]
+'Math115.PrinterRuntimeNext.map_affine_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.affine_map' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_map_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.affine_flatMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_flatMapPoly_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_fromBit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.affine_fromBit' depends on axioms: [propext, Quot.sound]
+'Math115.PrinterRuntimeNext.affine_bits' depends on axioms: [propext, Quot.sound]
+'Math115.PrinterRuntimeNext.affine_natWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_actual_natWord' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_actual_printRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.affine_printRow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.typed_actual_printMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.PrinterRuntimeNext.actual_printMatrix_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+Math115.PrinterRuntimeNext.typed_actual_printMatrix :
+  Math115.DegreeBounds.Typed OAI.ContingencyTables.GreedyFeasibleTable.printMatrixRealizer 4
+theorem Math115.PrinterRuntimeNext.actual_printMatrix_polynomial : ∃ p,
+  p.natDegree ≤ 4 ∧
+    ∀ (rows : List (List ℕ)),
+      OAI.ContingencyTables.GreedyFeasibleTable.printMatrixRealizer.cost rows +
+          OAI.MatchingFPRAS.TreeTyped.weight (OAI.ContingencyTables.GreedyFeasibleTable.printMatrix rows) ≤
+        Polynomial.eval (OAI.MatchingFPRAS.TreeTyped.weight rows) p :=
+Math115.PrinterRuntimeNext.typed_actual_printMatrix

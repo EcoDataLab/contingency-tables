@@ -1,0 +1,9 @@
+Math115.PrinterRuntimeNext.typed_actual_printMatrix :
+  Math115.DegreeBounds.Typed OAI.ContingencyTables.GreedyFeasibleTable.printMatrixRealizer 4
+theorem Math115.PrinterRuntimeNext.actual_printMatrix_polynomial : ∃ p,
+  p.natDegree ≤ 4 ∧
+    ∀ (rows : List (List ℕ)),
+      OAI.ContingencyTables.GreedyFeasibleTable.printMatrixRealizer.cost rows +
+          OAI.MatchingFPRAS.TreeTyped.weight (OAI.ContingencyTables.GreedyFeasibleTable.printMatrix rows) ≤
+        Polynomial.eval (OAI.MatchingFPRAS.TreeTyped.weight rows) p :=
+Math115.PrinterRuntimeNext.typed_actual_printMatrix

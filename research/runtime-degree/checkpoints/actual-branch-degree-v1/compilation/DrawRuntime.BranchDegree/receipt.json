@@ -1,0 +1,13 @@
+{
+  "module": "DrawRuntime.BranchDegree",
+  "exit_code": 0,
+  "stop_reason": null,
+  "elapsed_seconds": 275.87826610007323,
+  "source_sha256": "dbc0149be5f16046cacce5c5020307a808298662ce072eac39d20328eae30fd1",
+  "olean_sha256": "c0cd785734dac048595e565e3bd005b34d8be4ef6f7672c22ba4c50682ecc302",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "owned_tree_empty": true,
+  "reuse": false,
+  "final_process_absent": true
+}

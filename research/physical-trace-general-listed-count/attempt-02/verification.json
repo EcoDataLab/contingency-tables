@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "6eef213d620e747da92d61b89e8de1db2e0ae240",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralListedCount"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralListedCount",
+      "source": "research/physical-trace-general-listed-count/formal/ResearchPhysicalTraceJoin/GeneralListedCount.lean",
+      "source_sha256": "27ab4d2a2470f70b27d8a85c4609bdc2ba4555b1bdd2c52f4fc048e66114def3",
+      "returncode": 0,
+      "seconds": 32.86206412501633,
+      "olean_sha256": "ac655100a0a693013726d8d561c0585d8eaae27ead8808f4fff6345d87d37c07"
+    }
+  ],
+  "audit_seconds": 29.125491416081786,
+  "audit_sha256": "90604d30b023b89a864ee557ea1cbf0088507ac9ce4af52a30dab1a293592dcb",
+  "audit_driver_sha256": "df54e1fb6ffa154740c9751e709c14d83d3ba55b3459c35c52046fa7569a05fa",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "d3890e29f339599c4e7a0b28d5b43cbc80d8f86ed1f87a65fa4d72aa9ffe71e2",
+  "declaration_count": 17,
+  "theorem_count": 10,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.listedInverseLabelTest_code",
+      "closure_size": 2155,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U : ℕ) (X : OAI.ContingencyTables.Table r c)\n  (s t :\n    OAI.ContingencyTables.SmallContextCoordinates.Cells (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)),\n  Math115.PhysicalTraceJoin.listedInverseLabelTest (List.ofFn r) (List.ofFn c) U\n      (OAI.ContingencyTables.DensePrograms.matrixCode ↑X) (↑(↑s).1, ↑(↑s).2) (↑(↑t).1, ↑(↑t).2) =\n    decide (Math115.PhysicalTraceJoin.InverseSupportTest r c U X (s, t))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.listedInverseCount_eq_supportCount",
+      "closure_size": 5172,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U : ℕ) (X : OAI.ContingencyTables.Table r c),\n  Math115.PhysicalTraceJoin.listedInverseCount (List.ofFn r) (List.ofFn c) U\n      (OAI.ContingencyTables.DensePrograms.matrixCode ↑X) =\n    Math115.PhysicalTraceJoin.inverseSupportCount r c U X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.listedInverseCount_eq_terminalInverseCount",
+      "closure_size": 11031,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  1 ≤ L →\n    ∀ (X : OAI.ContingencyTables.Table r c),\n      Math115.PhysicalTraceJoin.listedInverseCount (List.ofFn r) (List.ofFn c) U\n          (OAI.ContingencyTables.DensePrograms.matrixCode ↑X) =\n        Math115.PhysicalTraceJoin.terminalInverseCount r c U L X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

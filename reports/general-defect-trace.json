@@ -1,0 +1,2354 @@
+{
+  "schema_version": 2,
+  "source_sha256": {
+    "experiments/general_defect_trace.py": "ec1e42760c2593cc48e04c3787d999447861fc4e833a6e0292a168c434844880",
+    "src/contingency115/ideal_chain.py": "5432398d088bbd93d473a56fababadfb9f50c807a38e230c222e8527fa23235b",
+    "src/contingency115/tables.py": "fd6923478d1dcd3c2fbc642307e8483c8d2248f02132b22e3fa21211af52d5ee",
+    "src/contingency115/kernels.py": "0a98cb8168456e0cc1e9c11b12c937cd7ee3e7620df7a193cf893af7358e596d"
+  },
+  "scope": "Eleven positive-margin finite exact fixtures plus one expected nonpositive-margin scope failure, using the existing bounded physical-chain oracle. Unrestricted ordinary equal-total margins only; no additional bounds, structural zeros or arbitrary product weights. No general proof, formal verification or sampler/runtime claim.",
+  "normalization": "Unnormalized conductances; each full graph edge and each defect-trace pair counted once. Accepted conductance is the actual completion-translation acceptance count; minimum-weight conductance is a separate surrogate.",
+  "evidence_limits": "L=1 fixtures check geometry and exact accepted counts but do not certify a general half-acceptance premise. The L=3d fixture also checks directed acceptance >=1/2. The harmonic identity is checked on one nonconstant observable per fixture and per conductance, not on all functions or dimensions.",
+  "enumeration": "Each case built once. Five-family evidence uses quadratic pair enumeration, not a proposed linear-time neighbor sampler. Existing oracle caps retained; no new CI or unit-test dependency.",
+  "joint_terminal_scope": "Enumerate completion-retaining repair preimages, reject repaired dense entries below L, then apply the exact rational correction c0/(N0+N1). Count equality is checked for each successful balanced/completion pair. Output tables are compared with an independent ordinary-margin DP unrank enumeration. These are finite joint-law checks, not a general terminal proof.",
+  "success_bound_scope": "L>=3d alone does not establish the linear terminal success lower bound. The general derivation also uses ideal U=5d^3 and a separate padding-mass bound; those premises are not certified by these fixtures.",
+  "oracle_budget": {
+    "max_cells": 16,
+    "max_input_bits": 4096,
+    "max_profile_candidates": 100000,
+    "max_physical_states": 512,
+    "max_completions": 100000,
+    "max_dp_states": 100000,
+    "max_dp_transitions": 1000000,
+    "max_transition_work": 2000000,
+    "max_solve_size": 128,
+    "max_solve_work": 2000000,
+    "max_rational_bits": 8192
+  },
+  "family_order_N0_to_N4": [
+    "small_crossing_inverse_repairs",
+    "large_crossing_inverse_repairs",
+    "distinct_large_row_transfers",
+    "distinct_large_column_transfers",
+    "simultaneous_decreases"
+  ],
+  "fixtures": [
+    {
+      "rows": [
+        2,
+        2
+      ],
+      "columns": [
+        3,
+        1
+      ],
+      "U": 3,
+      "L": 1,
+      "d": 19,
+      "small_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "p": 4,
+      "physical_states": 20,
+      "balanced_states": 2,
+      "defect_states": 18,
+      "completion_weights": [
+        1
+      ],
+      "no_balanced_balanced_edges": true,
+      "balanced_entries_strictly_below_U": true,
+      "max_defect_full_degree": 5,
+      "defect_full_degree_bound_8p_minus_7": 25,
+      "max_defect_defect_degree": 4,
+      "max_balanced_neighbors_per_defect": 1,
+      "five_families_disjoint_and_exhaustive": true,
+      "closed_form_family_counts_match": true,
+      "balanced_family_counts": [
+        {
+          "balanced_state_index": 8,
+          "closed_form_N0_to_N4": [
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 9,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 1
+        },
+        {
+          "balanced_state_index": 13,
+          "closed_form_N0_to_N4": [
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 9,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 1
+        }
+      ],
+      "row_view_hits_U": false,
+      "column_view_hits_U": true,
+      "multiple_balanced_neighbor_witness": null,
+      "minimum_directed_completion_acceptance": "1",
+      "padding_at_least_3d": false,
+      "half_acceptance_checked_under_3d_padding": false,
+      "source_large_capacity_dominates_all_residual_totals": true,
+      "minimum_weight_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "44/9",
+        "minimum_row_domination_slack": "1/9",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "9674/9",
+        "eliminated_defect_trace_energy": "9674/9",
+        "weighted_harmonic_energy_identity": true
+      },
+      "actual_accepted_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "44/9",
+        "minimum_row_domination_slack": "1/9",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "9674/9",
+        "eliminated_defect_trace_energy": "9674/9",
+        "weighted_harmonic_energy_identity": true
+      },
+      "joint_terminal": {
+        "input_law": "Uniform over enumerated defect/completion pairs",
+        "joint_defect_pairs": 18,
+        "successful_balanced_joint_pairs": 2,
+        "successful_defect_joint_preimages": 18,
+        "inverse_load_values": [
+          9
+        ],
+        "inverse_load_equals_N0_plus_N1": true,
+        "c0": 6,
+        "c0_lower_bound_and_p_times_p_minus_one_upper_bound": true,
+        "zero_slack_balanced_profiles": 2,
+        "equal_unconditional_corrected_table_masses": true,
+        "unconditional_success_mass_per_table": "1/3",
+        "corrected_success_probability": "2/3",
+        "finite_success_at_least_1_over_8p": true,
+        "comparison_1_over_8p": "1/32",
+        "independent_original_table_count": 2,
+        "output_table_set_equals_independent_unrank_oracle": true,
+        "successful_balanced_joint_pairs_bijective_with_original_tables": true,
+        "output_table_set_sha256": "6f126db3b23799e78e188d166a23b1d0b616e9ac18abcd6611c5d09ea5047e44",
+        "independent_original_fiber_dp_stats": {
+          "states_visited": 4,
+          "transitions_visited": 4,
+          "complete": true
+        }
+      },
+      "physical_chain_work_counts": {
+        "completions": 1,
+        "physical_states": 20,
+        "profile_candidates": 316,
+        "transition_work": 1756
+      }
+    },
+    {
+      "rows": [
+        3,
+        1
+      ],
+      "columns": [
+        2,
+        2
+      ],
+      "U": 3,
+      "L": 1,
+      "d": 19,
+      "small_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "p": 4,
+      "physical_states": 20,
+      "balanced_states": 2,
+      "defect_states": 18,
+      "completion_weights": [
+        1
+      ],
+      "no_balanced_balanced_edges": true,
+      "balanced_entries_strictly_below_U": true,
+      "max_defect_full_degree": 5,
+      "defect_full_degree_bound_8p_minus_7": 25,
+      "max_defect_defect_degree": 4,
+      "max_balanced_neighbors_per_defect": 1,
+      "five_families_disjoint_and_exhaustive": true,
+      "closed_form_family_counts_match": true,
+      "balanced_family_counts": [
+        {
+          "balanced_state_index": 8,
+          "closed_form_N0_to_N4": [
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 9,
+          "zero_large_row_slacks": 1,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 12,
+          "closed_form_N0_to_N4": [
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            9,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 9,
+          "zero_large_row_slacks": 1,
+          "zero_large_column_slacks": 0
+        }
+      ],
+      "row_view_hits_U": true,
+      "column_view_hits_U": false,
+      "multiple_balanced_neighbor_witness": null,
+      "minimum_directed_completion_acceptance": "1",
+      "padding_at_least_3d": false,
+      "half_acceptance_checked_under_3d_padding": false,
+      "source_large_capacity_dominates_all_residual_totals": true,
+      "minimum_weight_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "44/9",
+        "minimum_row_domination_slack": "1/9",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "8447/9",
+        "eliminated_defect_trace_energy": "8447/9",
+        "weighted_harmonic_energy_identity": true
+      },
+      "actual_accepted_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "44/9",
+        "minimum_row_domination_slack": "1/9",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "8447/9",
+        "eliminated_defect_trace_energy": "8447/9",
+        "weighted_harmonic_energy_identity": true
+      },
+      "joint_terminal": {
+        "input_law": "Uniform over enumerated defect/completion pairs",
+        "joint_defect_pairs": 18,
+        "successful_balanced_joint_pairs": 2,
+        "successful_defect_joint_preimages": 18,
+        "inverse_load_values": [
+          9
+        ],
+        "inverse_load_equals_N0_plus_N1": true,
+        "c0": 6,
+        "c0_lower_bound_and_p_times_p_minus_one_upper_bound": true,
+        "zero_slack_balanced_profiles": 2,
+        "equal_unconditional_corrected_table_masses": true,
+        "unconditional_success_mass_per_table": "1/3",
+        "corrected_success_probability": "2/3",
+        "finite_success_at_least_1_over_8p": true,
+        "comparison_1_over_8p": "1/32",
+        "independent_original_table_count": 2,
+        "output_table_set_equals_independent_unrank_oracle": true,
+        "successful_balanced_joint_pairs_bijective_with_original_tables": true,
+        "output_table_set_sha256": "06d1a7322db0c05a52a7cf9c5acc46b51c31e1e37da3c793fb07b05d13333051",
+        "independent_original_fiber_dp_stats": {
+          "states_visited": 4,
+          "transitions_visited": 4,
+          "complete": true
+        }
+      },
+      "physical_chain_work_counts": {
+        "completions": 1,
+        "physical_states": 20,
+        "profile_candidates": 263,
+        "transition_work": 1756
+      }
+    },
+    {
+      "rows": [
+        2,
+        2,
+        2
+      ],
+      "columns": [
+        4,
+        2
+      ],
+      "U": 3,
+      "L": 1,
+      "d": 22,
+      "small_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "p": 6,
+      "physical_states": 126,
+      "balanced_states": 6,
+      "defect_states": 120,
+      "completion_weights": [
+        1
+      ],
+      "no_balanced_balanced_edges": true,
+      "balanced_entries_strictly_below_U": true,
+      "max_defect_full_degree": 7,
+      "defect_full_degree_bound_8p_minus_7": 41,
+      "max_defect_defect_degree": 6,
+      "max_balanced_neighbors_per_defect": 1,
+      "five_families_disjoint_and_exhaustive": true,
+      "closed_form_family_counts_match": true,
+      "balanced_family_counts": [
+        {
+          "balanced_state_index": 15,
+          "closed_form_N0_to_N4": [
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 15,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 1
+        },
+        {
+          "balanced_state_index": 40,
+          "closed_form_N0_to_N4": [
+            25,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            25,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 25,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 1
+        },
+        {
+          "balanced_state_index": 56,
+          "closed_form_N0_to_N4": [
+            25,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            25,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 25,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 1
+        },
+        {
+          "balanced_state_index": 80,
+          "closed_form_N0_to_N4": [
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 15,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 1
+        },
+        {
+          "balanced_state_index": 94,
+          "closed_form_N0_to_N4": [
+            25,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            25,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 25,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 1
+        },
+        {
+          "balanced_state_index": 113,
+          "closed_form_N0_to_N4": [
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            15,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 15,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 1
+        }
+      ],
+      "row_view_hits_U": false,
+      "column_view_hits_U": true,
+      "multiple_balanced_neighbor_witness": null,
+      "minimum_directed_completion_acceptance": "1",
+      "padding_at_least_3d": false,
+      "half_acceptance_checked_under_3d_padding": false,
+      "source_large_capacity_dominates_all_residual_totals": true,
+      "minimum_weight_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "174/25",
+        "minimum_row_domination_slack": "1/25",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "15148703/75",
+        "eliminated_defect_trace_energy": "15148703/75",
+        "weighted_harmonic_energy_identity": true
+      },
+      "actual_accepted_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "174/25",
+        "minimum_row_domination_slack": "1/25",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "15148703/75",
+        "eliminated_defect_trace_energy": "15148703/75",
+        "weighted_harmonic_energy_identity": true
+      },
+      "joint_terminal": {
+        "input_law": "Uniform over enumerated defect/completion pairs",
+        "joint_defect_pairs": 120,
+        "successful_balanced_joint_pairs": 6,
+        "successful_defect_joint_preimages": 120,
+        "inverse_load_values": [
+          15,
+          25
+        ],
+        "inverse_load_equals_N0_plus_N1": true,
+        "c0": 15,
+        "c0_lower_bound_and_p_times_p_minus_one_upper_bound": true,
+        "zero_slack_balanced_profiles": 6,
+        "equal_unconditional_corrected_table_masses": true,
+        "unconditional_success_mass_per_table": "1/8",
+        "corrected_success_probability": "3/4",
+        "finite_success_at_least_1_over_8p": true,
+        "comparison_1_over_8p": "1/48",
+        "independent_original_table_count": 6,
+        "output_table_set_equals_independent_unrank_oracle": true,
+        "successful_balanced_joint_pairs_bijective_with_original_tables": true,
+        "output_table_set_sha256": "b57cf09ca47afb06e4570db67294580c82657520b31fdf4eebca633d04063d9c",
+        "independent_original_fiber_dp_stats": {
+          "states_visited": 8,
+          "transitions_visited": 12,
+          "complete": true
+        }
+      },
+      "physical_chain_work_counts": {
+        "completions": 1,
+        "physical_states": 126,
+        "profile_candidates": 3844,
+        "transition_work": 34758
+      }
+    },
+    {
+      "rows": [
+        2,
+        1
+      ],
+      "columns": [
+        2,
+        1
+      ],
+      "U": 2,
+      "L": 1,
+      "d": 19,
+      "small_cells": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "p": 3,
+      "physical_states": 9,
+      "balanced_states": 2,
+      "defect_states": 7,
+      "completion_weights": [
+        1
+      ],
+      "no_balanced_balanced_edges": true,
+      "balanced_entries_strictly_below_U": true,
+      "max_defect_full_degree": 4,
+      "defect_full_degree_bound_8p_minus_7": 17,
+      "max_defect_defect_degree": 2,
+      "max_balanced_neighbors_per_defect": 2,
+      "five_families_disjoint_and_exhaustive": true,
+      "closed_form_family_counts_match": true,
+      "balanced_family_counts": [
+        {
+          "balanced_state_index": 0,
+          "closed_form_N0_to_N4": [
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 4,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 7,
+          "closed_form_N0_to_N4": [
+            2,
+            1,
+            0,
+            0,
+            1
+          ],
+          "enumerated_family_counts": [
+            2,
+            1,
+            0,
+            0,
+            1
+          ],
+          "neighbors": 4,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        }
+      ],
+      "row_view_hits_U": true,
+      "column_view_hits_U": true,
+      "multiple_balanced_neighbor_witness": {
+        "defect_index": 3,
+        "row_view": [
+          0,
+          1,
+          0
+        ],
+        "column_view": [
+          1,
+          0,
+          0
+        ],
+        "balanced_neighbor_indices": [
+          0,
+          7
+        ]
+      },
+      "minimum_directed_completion_acceptance": "1",
+      "padding_at_least_3d": false,
+      "half_acceptance_checked_under_3d_padding": false,
+      "source_large_capacity_dominates_all_residual_totals": true,
+      "minimum_weight_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "7/2",
+        "minimum_row_domination_slack": "1/4",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "60",
+        "eliminated_defect_trace_energy": "60",
+        "weighted_harmonic_energy_identity": true
+      },
+      "actual_accepted_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "7/2",
+        "minimum_row_domination_slack": "1/4",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "60",
+        "eliminated_defect_trace_energy": "60",
+        "weighted_harmonic_energy_identity": true
+      },
+      "joint_terminal": {
+        "input_law": "Uniform over enumerated defect/completion pairs",
+        "joint_defect_pairs": 7,
+        "successful_balanced_joint_pairs": 2,
+        "successful_defect_joint_preimages": 7,
+        "inverse_load_values": [
+          3,
+          4
+        ],
+        "inverse_load_equals_N0_plus_N1": true,
+        "c0": 1,
+        "c0_lower_bound_and_p_times_p_minus_one_upper_bound": true,
+        "zero_slack_balanced_profiles": 0,
+        "equal_unconditional_corrected_table_masses": true,
+        "unconditional_success_mass_per_table": "1/7",
+        "corrected_success_probability": "2/7",
+        "finite_success_at_least_1_over_8p": true,
+        "comparison_1_over_8p": "1/24",
+        "independent_original_table_count": 2,
+        "output_table_set_equals_independent_unrank_oracle": true,
+        "successful_balanced_joint_pairs_bijective_with_original_tables": true,
+        "output_table_set_sha256": "fa8fceeec64210d49295a334d553418311ca4058fde3cd55b2573c3d667caf3f",
+        "independent_original_fiber_dp_stats": {
+          "states_visited": 4,
+          "transitions_visited": 4,
+          "complete": true
+        }
+      },
+      "physical_chain_work_counts": {
+        "completions": 3,
+        "physical_states": 9,
+        "profile_candidates": 52,
+        "transition_work": 433
+      }
+    },
+    {
+      "rows": [
+        3,
+        1
+      ],
+      "columns": [
+        3,
+        1
+      ],
+      "U": 3,
+      "L": 1,
+      "d": 19,
+      "small_cells": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "p": 3,
+      "physical_states": 9,
+      "balanced_states": 2,
+      "defect_states": 7,
+      "completion_weights": [
+        1
+      ],
+      "no_balanced_balanced_edges": true,
+      "balanced_entries_strictly_below_U": true,
+      "max_defect_full_degree": 4,
+      "defect_full_degree_bound_8p_minus_7": 17,
+      "max_defect_defect_degree": 2,
+      "max_balanced_neighbors_per_defect": 2,
+      "five_families_disjoint_and_exhaustive": true,
+      "closed_form_family_counts_match": true,
+      "balanced_family_counts": [
+        {
+          "balanced_state_index": 0,
+          "closed_form_N0_to_N4": [
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            3,
+            1,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 4,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 7,
+          "closed_form_N0_to_N4": [
+            2,
+            1,
+            0,
+            0,
+            1
+          ],
+          "enumerated_family_counts": [
+            2,
+            1,
+            0,
+            0,
+            1
+          ],
+          "neighbors": 4,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        }
+      ],
+      "row_view_hits_U": false,
+      "column_view_hits_U": false,
+      "multiple_balanced_neighbor_witness": {
+        "defect_index": 3,
+        "row_view": [
+          0,
+          1,
+          0
+        ],
+        "column_view": [
+          1,
+          0,
+          0
+        ],
+        "balanced_neighbor_indices": [
+          0,
+          7
+        ]
+      },
+      "minimum_directed_completion_acceptance": "1",
+      "padding_at_least_3d": false,
+      "half_acceptance_checked_under_3d_padding": false,
+      "source_large_capacity_dominates_all_residual_totals": true,
+      "minimum_weight_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "7/2",
+        "minimum_row_domination_slack": "1/4",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "60",
+        "eliminated_defect_trace_energy": "60",
+        "weighted_harmonic_energy_identity": true
+      },
+      "actual_accepted_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "7/2",
+        "minimum_row_domination_slack": "1/4",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "60",
+        "eliminated_defect_trace_energy": "60",
+        "weighted_harmonic_energy_identity": true
+      },
+      "joint_terminal": {
+        "input_law": "Uniform over enumerated defect/completion pairs",
+        "joint_defect_pairs": 7,
+        "successful_balanced_joint_pairs": 2,
+        "successful_defect_joint_preimages": 7,
+        "inverse_load_values": [
+          3,
+          4
+        ],
+        "inverse_load_equals_N0_plus_N1": true,
+        "c0": 1,
+        "c0_lower_bound_and_p_times_p_minus_one_upper_bound": true,
+        "zero_slack_balanced_profiles": 0,
+        "equal_unconditional_corrected_table_masses": true,
+        "unconditional_success_mass_per_table": "1/7",
+        "corrected_success_probability": "2/7",
+        "finite_success_at_least_1_over_8p": true,
+        "comparison_1_over_8p": "1/24",
+        "independent_original_table_count": 2,
+        "output_table_set_equals_independent_unrank_oracle": true,
+        "successful_balanced_joint_pairs_bijective_with_original_tables": true,
+        "output_table_set_sha256": "d7441eb4a179281af5c5caa647eafe4348bc0a7e8fe328d7c08a74ddba57677b",
+        "independent_original_fiber_dp_stats": {
+          "states_visited": 4,
+          "transitions_visited": 4,
+          "complete": true
+        }
+      },
+      "physical_chain_work_counts": {
+        "completions": 3,
+        "physical_states": 9,
+        "profile_candidates": 52,
+        "transition_work": 433
+      }
+    },
+    {
+      "rows": [
+        4,
+        4,
+        1
+      ],
+      "columns": [
+        4,
+        4,
+        1
+      ],
+      "U": 4,
+      "L": 1,
+      "d": 26,
+      "small_cells": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "p": 5,
+      "physical_states": 49,
+      "balanced_states": 5,
+      "defect_states": 44,
+      "completion_weights": [
+        5,
+        6,
+        7
+      ],
+      "no_balanced_balanced_edges": true,
+      "balanced_entries_strictly_below_U": true,
+      "max_defect_full_degree": 8,
+      "defect_full_degree_bound_8p_minus_7": 33,
+      "max_defect_defect_degree": 6,
+      "max_balanced_neighbors_per_defect": 2,
+      "five_families_disjoint_and_exhaustive": true,
+      "closed_form_family_counts_match": true,
+      "balanced_family_counts": [
+        {
+          "balanced_state_index": 0,
+          "closed_form_N0_to_N4": [
+            8,
+            4,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            8,
+            4,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 12,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 14,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 19,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 31,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 36,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        }
+      ],
+      "row_view_hits_U": false,
+      "column_view_hits_U": false,
+      "multiple_balanced_neighbor_witness": {
+        "defect_index": 4,
+        "row_view": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "column_view": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "balanced_neighbor_indices": [
+          0,
+          14
+        ]
+      },
+      "minimum_directed_completion_acceptance": "4/5",
+      "padding_at_least_3d": false,
+      "half_acceptance_checked_under_3d_padding": false,
+      "source_large_capacity_dominates_all_residual_totals": true,
+      "minimum_weight_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "29017/3920",
+        "minimum_row_domination_slack": "25/63",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "5074624/45",
+        "eliminated_defect_trace_energy": "5074624/45",
+        "weighted_harmonic_energy_identity": true
+      },
+      "actual_accepted_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "29017/3920",
+        "minimum_row_domination_slack": "25/63",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "4351085227/39060",
+        "eliminated_defect_trace_energy": "4351085227/39060",
+        "weighted_harmonic_energy_identity": true
+      },
+      "joint_terminal": {
+        "input_law": "Uniform over enumerated defect/completion pairs",
+        "joint_defect_pairs": 260,
+        "successful_balanced_joint_pairs": 21,
+        "successful_defect_joint_preimages": 188,
+        "inverse_load_values": [
+          8,
+          12
+        ],
+        "inverse_load_equals_N0_plus_N1": true,
+        "c0": 2,
+        "c0_lower_bound_and_p_times_p_minus_one_upper_bound": true,
+        "zero_slack_balanced_profiles": 0,
+        "equal_unconditional_corrected_table_masses": true,
+        "unconditional_success_mass_per_table": "1/130",
+        "corrected_success_probability": "21/130",
+        "finite_success_at_least_1_over_8p": true,
+        "comparison_1_over_8p": "1/40",
+        "independent_original_table_count": 21,
+        "output_table_set_equals_independent_unrank_oracle": true,
+        "successful_balanced_joint_pairs_bijective_with_original_tables": true,
+        "output_table_set_sha256": "0530632a1443bc9bbc0215aa66875351398a9a2afe541d7879e27371f64f9f3a",
+        "independent_original_fiber_dp_stats": {
+          "states_visited": 14,
+          "transitions_visited": 33,
+          "complete": true
+        }
+      },
+      "physical_chain_work_counts": {
+        "completions": 77,
+        "dp_states": 105,
+        "dp_transitions": 154,
+        "physical_states": 49,
+        "profile_candidates": 430,
+        "transition_work": 15731
+      }
+    },
+    {
+      "rows": [
+        2,
+        2,
+        1
+      ],
+      "columns": [
+        2,
+        2,
+        1
+      ],
+      "U": 2,
+      "L": 1,
+      "d": 26,
+      "small_cells": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "p": 5,
+      "physical_states": 49,
+      "balanced_states": 5,
+      "defect_states": 44,
+      "completion_weights": [
+        3,
+        4,
+        5
+      ],
+      "no_balanced_balanced_edges": true,
+      "balanced_entries_strictly_below_U": true,
+      "max_defect_full_degree": 8,
+      "defect_full_degree_bound_8p_minus_7": 33,
+      "max_defect_defect_degree": 6,
+      "max_balanced_neighbors_per_defect": 2,
+      "five_families_disjoint_and_exhaustive": true,
+      "closed_form_family_counts_match": true,
+      "balanced_family_counts": [
+        {
+          "balanced_state_index": 0,
+          "closed_form_N0_to_N4": [
+            8,
+            4,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            8,
+            4,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 12,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 14,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 19,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 31,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 36,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        }
+      ],
+      "row_view_hits_U": true,
+      "column_view_hits_U": true,
+      "multiple_balanced_neighbor_witness": {
+        "defect_index": 4,
+        "row_view": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "column_view": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "balanced_neighbor_indices": [
+          0,
+          14
+        ]
+      },
+      "minimum_directed_completion_acceptance": "2/3",
+      "padding_at_least_3d": false,
+      "half_acceptance_checked_under_3d_padding": false,
+      "source_large_capacity_dominates_all_residual_totals": true,
+      "minimum_weight_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "83031/11480",
+        "minimum_row_domination_slack": "9/41",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "21160234/287",
+        "eliminated_defect_trace_energy": "21160234/287",
+        "weighted_harmonic_energy_identity": true
+      },
+      "actual_accepted_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "83031/11480",
+        "minimum_row_domination_slack": "9/41",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "384898099/5320",
+        "eliminated_defect_trace_energy": "384898099/5320",
+        "weighted_harmonic_energy_identity": true
+      },
+      "joint_terminal": {
+        "input_law": "Uniform over enumerated defect/completion pairs",
+        "joint_defect_pairs": 172,
+        "successful_balanced_joint_pairs": 11,
+        "successful_defect_joint_preimages": 100,
+        "inverse_load_values": [
+          8,
+          12
+        ],
+        "inverse_load_equals_N0_plus_N1": true,
+        "c0": 2,
+        "c0_lower_bound_and_p_times_p_minus_one_upper_bound": true,
+        "zero_slack_balanced_profiles": 0,
+        "equal_unconditional_corrected_table_masses": true,
+        "unconditional_success_mass_per_table": "1/86",
+        "corrected_success_probability": "11/86",
+        "finite_success_at_least_1_over_8p": true,
+        "comparison_1_over_8p": "1/40",
+        "independent_original_table_count": 11,
+        "output_table_set_equals_independent_unrank_oracle": true,
+        "successful_balanced_joint_pairs_bijective_with_original_tables": true,
+        "output_table_set_sha256": "0a911a9defabd0467d9bc8efe14e9dd9d7f596421f6d1f373544d9a886bf6956",
+        "independent_original_fiber_dp_stats": {
+          "states_visited": 10,
+          "transitions_visited": 19,
+          "complete": true
+        }
+      },
+      "physical_chain_work_counts": {
+        "completions": 49,
+        "dp_states": 77,
+        "dp_transitions": 98,
+        "physical_states": 49,
+        "profile_candidates": 430,
+        "transition_work": 12715
+      }
+    },
+    {
+      "rows": [
+        4,
+        4,
+        1
+      ],
+      "columns": [
+        4,
+        4,
+        1
+      ],
+      "U": 4,
+      "L": 78,
+      "d": 26,
+      "small_cells": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "p": 5,
+      "physical_states": 49,
+      "balanced_states": 5,
+      "defect_states": 44,
+      "completion_weights": [
+        159,
+        160,
+        161
+      ],
+      "no_balanced_balanced_edges": true,
+      "balanced_entries_strictly_below_U": true,
+      "max_defect_full_degree": 8,
+      "defect_full_degree_bound_8p_minus_7": 33,
+      "max_defect_defect_degree": 6,
+      "max_balanced_neighbors_per_defect": 2,
+      "five_families_disjoint_and_exhaustive": true,
+      "closed_form_family_counts_match": true,
+      "balanced_family_counts": [
+        {
+          "balanced_state_index": 0,
+          "closed_form_N0_to_N4": [
+            8,
+            4,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            8,
+            4,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 12,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 14,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 19,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 31,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 36,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        }
+      ],
+      "row_view_hits_U": false,
+      "column_view_hits_U": false,
+      "multiple_balanced_neighbor_witness": {
+        "defect_index": 4,
+        "row_view": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "column_view": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "balanced_neighbor_indices": [
+          0,
+          14
+        ]
+      },
+      "minimum_directed_completion_acceptance": "158/159",
+      "padding_at_least_3d": true,
+      "half_acceptance_checked_under_3d_padding": true,
+      "source_large_capacity_dominates_all_residual_totals": true,
+      "minimum_weight_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "4258032363/545386856",
+        "minimum_row_domination_slack": "3200/241",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "188500695118/60491",
+        "eliminated_defect_trace_energy": "188500695118/60491",
+        "weighted_harmonic_energy_identity": true
+      },
+      "actual_accepted_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "4258032363/545386856",
+        "minimum_row_domination_slack": "3200/241",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "2031161658884988593/652098061244",
+        "eliminated_defect_trace_energy": "2031161658884988593/652098061244",
+        "weighted_harmonic_energy_identity": true
+      },
+      "joint_terminal": {
+        "input_law": "Uniform over enumerated defect/completion pairs",
+        "joint_defect_pairs": 7036,
+        "successful_balanced_joint_pairs": 21,
+        "successful_defect_joint_preimages": 188,
+        "inverse_load_values": [
+          8,
+          12
+        ],
+        "inverse_load_equals_N0_plus_N1": true,
+        "c0": 2,
+        "c0_lower_bound_and_p_times_p_minus_one_upper_bound": true,
+        "zero_slack_balanced_profiles": 0,
+        "equal_unconditional_corrected_table_masses": true,
+        "unconditional_success_mass_per_table": "1/3518",
+        "corrected_success_probability": "21/3518",
+        "finite_success_at_least_1_over_8p": false,
+        "comparison_1_over_8p": "1/40",
+        "independent_original_table_count": 21,
+        "output_table_set_equals_independent_unrank_oracle": true,
+        "successful_balanced_joint_pairs_bijective_with_original_tables": true,
+        "output_table_set_sha256": "0530632a1443bc9bbc0215aa66875351398a9a2afe541d7879e27371f64f9f3a",
+        "independent_original_fiber_dp_stats": {
+          "states_visited": 14,
+          "transitions_visited": 33,
+          "complete": true
+        }
+      },
+      "physical_chain_work_counts": {
+        "completions": 2233,
+        "dp_states": 2261,
+        "dp_transitions": 4466,
+        "physical_states": 49,
+        "profile_candidates": 430,
+        "transition_work": 920635
+      }
+    },
+    {
+      "rows": [
+        2,
+        2
+      ],
+      "columns": [
+        2,
+        2
+      ],
+      "U": 3,
+      "L": 1,
+      "d": 19,
+      "small_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "p": 4,
+      "physical_states": 27,
+      "balanced_states": 3,
+      "defect_states": 24,
+      "completion_weights": [
+        1
+      ],
+      "no_balanced_balanced_edges": true,
+      "balanced_entries_strictly_below_U": true,
+      "max_defect_full_degree": 5,
+      "defect_full_degree_bound_8p_minus_7": 25,
+      "max_defect_defect_degree": 4,
+      "max_balanced_neighbors_per_defect": 1,
+      "five_families_disjoint_and_exhaustive": true,
+      "closed_form_family_counts_match": true,
+      "balanced_family_counts": [
+        {
+          "balanced_state_index": 5,
+          "closed_form_N0_to_N4": [
+            6,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            6,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 6,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 13,
+          "closed_form_N0_to_N4": [
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 12,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 21,
+          "closed_form_N0_to_N4": [
+            6,
+            0,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            6,
+            0,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 6,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        }
+      ],
+      "row_view_hits_U": false,
+      "column_view_hits_U": false,
+      "multiple_balanced_neighbor_witness": null,
+      "minimum_directed_completion_acceptance": "1",
+      "padding_at_least_3d": false,
+      "half_acceptance_checked_under_3d_padding": false,
+      "source_large_capacity_dominates_all_residual_totals": true,
+      "minimum_weight_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "59/12",
+        "minimum_row_domination_slack": "1/12",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "7469/3",
+        "eliminated_defect_trace_energy": "7469/3",
+        "weighted_harmonic_energy_identity": true
+      },
+      "actual_accepted_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "59/12",
+        "minimum_row_domination_slack": "1/12",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "7469/3",
+        "eliminated_defect_trace_energy": "7469/3",
+        "weighted_harmonic_energy_identity": true
+      },
+      "joint_terminal": {
+        "input_law": "Uniform over enumerated defect/completion pairs",
+        "joint_defect_pairs": 24,
+        "successful_balanced_joint_pairs": 3,
+        "successful_defect_joint_preimages": 24,
+        "inverse_load_values": [
+          6,
+          12
+        ],
+        "inverse_load_equals_N0_plus_N1": true,
+        "c0": 6,
+        "c0_lower_bound_and_p_times_p_minus_one_upper_bound": true,
+        "zero_slack_balanced_profiles": 0,
+        "equal_unconditional_corrected_table_masses": true,
+        "unconditional_success_mass_per_table": "1/4",
+        "corrected_success_probability": "3/4",
+        "finite_success_at_least_1_over_8p": true,
+        "comparison_1_over_8p": "1/32",
+        "independent_original_table_count": 3,
+        "output_table_set_equals_independent_unrank_oracle": true,
+        "successful_balanced_joint_pairs_bijective_with_original_tables": true,
+        "output_table_set_sha256": "8e2b2c40417aee0f0f4aaf01c279251388635b647c9de5194e8cb2a4186b688e",
+        "independent_original_fiber_dp_stats": {
+          "states_visited": 5,
+          "transitions_visited": 6,
+          "complete": true
+        }
+      },
+      "physical_chain_work_counts": {
+        "completions": 1,
+        "physical_states": 27,
+        "profile_candidates": 316,
+        "transition_work": 2569
+      }
+    },
+    {
+      "rows": [
+        2,
+        1,
+        1
+      ],
+      "columns": [
+        2,
+        1,
+        1
+      ],
+      "U": 2,
+      "L": 1,
+      "d": 26,
+      "small_cells": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "p": 8,
+      "physical_states": 155,
+      "balanced_states": 7,
+      "defect_states": 148,
+      "completion_weights": [
+        1
+      ],
+      "no_balanced_balanced_edges": true,
+      "balanced_entries_strictly_below_U": true,
+      "max_defect_full_degree": 10,
+      "defect_full_degree_bound_8p_minus_7": 57,
+      "max_defect_defect_degree": 8,
+      "max_balanced_neighbors_per_defect": 2,
+      "five_families_disjoint_and_exhaustive": true,
+      "closed_form_family_counts_match": true,
+      "balanced_family_counts": [
+        {
+          "balanced_state_index": 7,
+          "closed_form_N0_to_N4": [
+            16,
+            4,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            16,
+            4,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 20,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 15,
+          "closed_form_N0_to_N4": [
+            16,
+            4,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            16,
+            4,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 20,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 55,
+          "closed_form_N0_to_N4": [
+            18,
+            4,
+            0,
+            0,
+            1
+          ],
+          "enumerated_family_counts": [
+            18,
+            4,
+            0,
+            0,
+            1
+          ],
+          "neighbors": 23,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 67,
+          "closed_form_N0_to_N4": [
+            18,
+            4,
+            0,
+            0,
+            1
+          ],
+          "enumerated_family_counts": [
+            18,
+            4,
+            0,
+            0,
+            1
+          ],
+          "neighbors": 23,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 94,
+          "closed_form_N0_to_N4": [
+            18,
+            4,
+            0,
+            0,
+            1
+          ],
+          "enumerated_family_counts": [
+            18,
+            4,
+            0,
+            0,
+            1
+          ],
+          "neighbors": 23,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 110,
+          "closed_form_N0_to_N4": [
+            18,
+            4,
+            0,
+            0,
+            1
+          ],
+          "enumerated_family_counts": [
+            18,
+            4,
+            0,
+            0,
+            1
+          ],
+          "neighbors": 23,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 146,
+          "closed_form_N0_to_N4": [
+            20,
+            0,
+            0,
+            0,
+            4
+          ],
+          "enumerated_family_counts": [
+            20,
+            0,
+            0,
+            0,
+            4
+          ],
+          "neighbors": 24,
+          "zero_large_row_slacks": 1,
+          "zero_large_column_slacks": 1
+        }
+      ],
+      "row_view_hits_U": true,
+      "column_view_hits_U": true,
+      "multiple_balanced_neighbor_witness": {
+        "defect_index": 13,
+        "row_view": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "column_view": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "balanced_neighbor_indices": [
+          7,
+          94
+        ]
+      },
+      "minimum_directed_completion_acceptance": "1",
+      "padding_at_least_3d": false,
+      "half_acceptance_checked_under_3d_padding": false,
+      "source_large_capacity_dominates_all_residual_totals": true,
+      "minimum_weight_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "5473/552",
+        "minimum_row_domination_slack": "1/24",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "680625679/1380",
+        "eliminated_defect_trace_energy": "680625679/1380",
+        "weighted_harmonic_energy_identity": true
+      },
+      "actual_accepted_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "5473/552",
+        "minimum_row_domination_slack": "1/24",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "680625679/1380",
+        "eliminated_defect_trace_energy": "680625679/1380",
+        "weighted_harmonic_energy_identity": true
+      },
+      "joint_terminal": {
+        "input_law": "Uniform over enumerated defect/completion pairs",
+        "joint_defect_pairs": 148,
+        "successful_balanced_joint_pairs": 7,
+        "successful_defect_joint_preimages": 148,
+        "inverse_load_values": [
+          20,
+          22
+        ],
+        "inverse_load_equals_N0_plus_N1": true,
+        "c0": 10,
+        "c0_lower_bound_and_p_times_p_minus_one_upper_bound": true,
+        "zero_slack_balanced_profiles": 1,
+        "equal_unconditional_corrected_table_masses": true,
+        "unconditional_success_mass_per_table": "5/74",
+        "corrected_success_probability": "35/74",
+        "finite_success_at_least_1_over_8p": true,
+        "comparison_1_over_8p": "1/64",
+        "independent_original_table_count": 7,
+        "output_table_set_equals_independent_unrank_oracle": true,
+        "successful_balanced_joint_pairs_bijective_with_original_tables": true,
+        "output_table_set_sha256": "b600c161a01f623a2b4ef99007eece6ba1c34d182fd9208475ec0e7fa1c5d63b",
+        "independent_original_fiber_dp_stats": {
+          "states_visited": 9,
+          "transitions_visited": 14,
+          "complete": true
+        }
+      },
+      "physical_chain_work_counts": {
+        "completions": 3,
+        "physical_states": 155,
+        "profile_candidates": 2056,
+        "transition_work": 64801
+      }
+    },
+    {
+      "rows": [
+        2,
+        2,
+        1
+      ],
+      "columns": [
+        2,
+        2,
+        1
+      ],
+      "U": 2,
+      "L": 78,
+      "d": 26,
+      "small_cells": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "p": 5,
+      "physical_states": 49,
+      "balanced_states": 5,
+      "defect_states": 44,
+      "completion_weights": [
+        157,
+        158,
+        159
+      ],
+      "no_balanced_balanced_edges": true,
+      "balanced_entries_strictly_below_U": true,
+      "max_defect_full_degree": 8,
+      "defect_full_degree_bound_8p_minus_7": 33,
+      "max_defect_defect_degree": 6,
+      "max_balanced_neighbors_per_defect": 2,
+      "five_families_disjoint_and_exhaustive": true,
+      "closed_form_family_counts_match": true,
+      "balanced_family_counts": [
+        {
+          "balanced_state_index": 0,
+          "closed_form_N0_to_N4": [
+            8,
+            4,
+            0,
+            0,
+            0
+          ],
+          "enumerated_family_counts": [
+            8,
+            4,
+            0,
+            0,
+            0
+          ],
+          "neighbors": 12,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 14,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 19,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 31,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        },
+        {
+          "balanced_state_index": 36,
+          "closed_form_N0_to_N4": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "enumerated_family_counts": [
+            4,
+            4,
+            1,
+            1,
+            1
+          ],
+          "neighbors": 11,
+          "zero_large_row_slacks": 0,
+          "zero_large_column_slacks": 0
+        }
+      ],
+      "row_view_hits_U": true,
+      "column_view_hits_U": true,
+      "multiple_balanced_neighbor_witness": {
+        "defect_index": 4,
+        "row_view": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "column_view": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "balanced_neighbor_indices": [
+          0,
+          14
+        ]
+      },
+      "minimum_directed_completion_acceptance": "156/157",
+      "padding_at_least_3d": true,
+      "half_acceptance_checked_under_3d_padding": true,
+      "source_large_capacity_dominates_all_residual_totals": true,
+      "minimum_weight_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "4100671369/525246960",
+        "minimum_row_domination_slack": "6241/476",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "635328539008/206465",
+        "eliminated_defect_trace_energy": "635328539008/206465",
+        "weighted_harmonic_energy_identity": true
+      },
+      "actual_accepted_trace": {
+        "row_domination_by_completion_weight_times_full_degree": true,
+        "maximum_trace_row_rate": "4100671369/525246960",
+        "minimum_row_domination_slack": "6241/476",
+        "observable": "g(defect state index) = state index",
+        "observable_nonconstant": true,
+        "full_harmonic_extension_energy": "11218980567253411/3647493276",
+        "eliminated_defect_trace_energy": "11218980567253411/3647493276",
+        "weighted_harmonic_energy_identity": true
+      },
+      "joint_terminal": {
+        "input_law": "Uniform over enumerated defect/completion pairs",
+        "joint_defect_pairs": 6948,
+        "successful_balanced_joint_pairs": 11,
+        "successful_defect_joint_preimages": 100,
+        "inverse_load_values": [
+          8,
+          12
+        ],
+        "inverse_load_equals_N0_plus_N1": true,
+        "c0": 2,
+        "c0_lower_bound_and_p_times_p_minus_one_upper_bound": true,
+        "zero_slack_balanced_profiles": 0,
+        "equal_unconditional_corrected_table_masses": true,
+        "unconditional_success_mass_per_table": "1/3474",
+        "corrected_success_probability": "11/3474",
+        "finite_success_at_least_1_over_8p": false,
+        "comparison_1_over_8p": "1/40",
+        "independent_original_table_count": 11,
+        "output_table_set_equals_independent_unrank_oracle": true,
+        "successful_balanced_joint_pairs_bijective_with_original_tables": true,
+        "output_table_set_sha256": "0a911a9defabd0467d9bc8efe14e9dd9d7f596421f6d1f373544d9a886bf6956",
+        "independent_original_fiber_dp_stats": {
+          "states_visited": 10,
+          "transitions_visited": 19,
+          "complete": true
+        }
+      },
+      "physical_chain_work_counts": {
+        "completions": 2205,
+        "dp_states": 2233,
+        "dp_transitions": 4410,
+        "physical_states": 49,
+        "profile_candidates": 430,
+        "transition_work": 900371
+      }
+    }
+  ],
+  "expected_scope_obstructions": {
+    "zero_margins": {
+      "rows": [
+        2,
+        0,
+        0
+      ],
+      "columns": [
+        2,
+        0,
+        0
+      ],
+      "U": 2,
+      "L": 1,
+      "p": 8,
+      "c0": 10,
+      "inverse_load_N0_plus_N1": 4,
+      "invalid_c0_over_load": "5/2",
+      "positive_margin_guard_rejects": true,
+      "conclusion": "Positive ordinary margins are essential to the c0 lower bound and terminal correction."
+    },
+    "large_padding_with_nonideal_U": {
+      "rows": [
+        2,
+        2,
+        1
+      ],
+      "columns": [
+        2,
+        2,
+        1
+      ],
+      "U": 2,
+      "L": 78,
+      "p": 5,
+      "L_equals_3d": true,
+      "corrected_success_probability": "11/3474",
+      "comparison_1_over_8p": "1/40",
+      "success_strictly_below_comparison": true,
+      "equal_unconditional_corrected_table_masses": true,
+      "conclusion": "Finite output uniformity survives; L=3d by itself is insufficient for the stated success lower bound."
+    }
+  }
+}

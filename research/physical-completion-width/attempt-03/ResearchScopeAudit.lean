@@ -1,0 +1,3 @@
+import ResearchPhysicalCompletionWidth.Bound
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalCompletionWidth.Bound] headlines [Math115.PhysicalCompletionWidth.coarseRows_total, Math115.PhysicalCompletionWidth.coarseDimension_le, Math115.PhysicalCompletionWidth.completionBits_le_uniform]

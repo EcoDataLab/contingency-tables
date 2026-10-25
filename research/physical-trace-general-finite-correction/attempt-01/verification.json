@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "6eef213d620e747da92d61b89e8de1db2e0ae240",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralFiniteCorrection"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralFiniteCorrection",
+      "source": "research/physical-trace-general-finite-correction/formal/ResearchPhysicalTraceJoin/GeneralFiniteCorrection.lean",
+      "source_sha256": "03a0a1d2727178dd6d941b6fb1ec284d46d7299808af7a7379c4f439c5c3c50c",
+      "returncode": 0,
+      "seconds": 14.80787399969995,
+      "olean_sha256": "8c2c3be4f3ed0a5be8c3390efdd29b3d172857c4c8410b3f2927a78f26827413"
+    }
+  ],
+  "audit_seconds": 40.10458566667512,
+  "audit_sha256": "732f6a298edce02c1df1c34db2391e409be59a5a6ce7fb70033eb8f4426827b5",
+  "audit_driver_sha256": "ca73f7520f7743cdf3fd88a9a38248f76123eda417aba344158989c6b06d293e",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "f0a410521c1a4bc8c8903adb47dd3a634ccffc9616bc539afee5c03019dbb338",
+  "declaration_count": 7,
+  "theorem_count": 4,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalListedCount_eq_terminalInverseCount",
+      "closure_size": 11033,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  1 ≤ L →\n    ∀ (X : OAI.ContingencyTables.Table r c),\n      Math115.PhysicalTraceJoin.terminalListedCount r c U X = Math115.PhysicalTraceJoin.terminalInverseCount r c U L X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalFiniteCorrectionRow_variation",
+      "closure_size": 12213,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  1 ≤ L →\n    ∀ (k : ℕ) (a : Math115.PhysicalTraceJoin.DefectJoint r c U L),\n      OAI.ContingencyTables.FirstSuccess.variation (Math115.PhysicalTraceJoin.terminalFiniteCorrectionRow r c U L k a)\n          (Math115.PhysicalTraceJoin.terminalIdealCorrectionRow r c U L\n            (Math115.PhysicalTraceJoin.inverseSupportAllowance r c U) a) ≤\n        1 / 2 ^ k",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalFiniteCorrectionRow_bind_variation",
+      "closure_size": 12234,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  1 ≤ L →\n    ∀ (k : ℕ) (p q : OAI.ContingencyTables.ResidualMixture.RationalLaw (Math115.PhysicalTraceJoin.DefectJoint r c U L)),\n      OAI.ContingencyTables.FirstSuccess.variation\n          (OAI.ContingencyTables.FirstSuccess.bindLaw p\n            (Math115.PhysicalTraceJoin.terminalFiniteCorrectionRow r c U L k))\n          (OAI.ContingencyTables.FirstSuccess.bindLaw q\n            (Math115.PhysicalTraceJoin.terminalIdealCorrectionRow r c U L\n              (Math115.PhysicalTraceJoin.inverseSupportAllowance r c U))) ≤\n        OAI.ContingencyTables.FirstSuccess.variation p q + 1 / 2 ^ k",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

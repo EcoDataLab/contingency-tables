@@ -1,0 +1,9 @@
+Math115.DrawRuntimeNext.typed_actual_bothLargeTest :
+  Math115.DegreeBounds.Typed Math115.LatticeSamplerPreparation.bothLargeTestRealizer 1008
+theorem Math115.DrawRuntimeNext.actual_bothLargeTest_polynomial : ∃ p,
+  p.natDegree ≤ 1008 ∧
+    ∀ (z : List ℕ × List ℕ),
+      Math115.LatticeSamplerPreparation.bothLargeTestRealizer.cost z +
+          OAI.MatchingFPRAS.TreeTyped.weight (Math115.LatticeSamplerPreparation.bothLargeTest z) ≤
+        Polynomial.eval (OAI.MatchingFPRAS.TreeTyped.weight z) p :=
+Math115.DrawRuntimeNext.typed_actual_bothLargeTest

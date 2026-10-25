@@ -1,0 +1,15 @@
+{
+  "original_source_sha256": "542b0ea9e63b22827733a8dfbcbec7cb1d87c251b64c22e55546637561fcf265",
+  "final_source_sha256": "6c453e98e87b4635fce4fe1075208f3adc1ee388676aa77ab33ef15f2c2d3cd0",
+  "original_statements_unchanged": false,
+  "reviewed_statement_changes": [
+    {
+      "name": "terminalRepairOutput_repad",
+      "before": "theorem terminalRepairOutput_repad (a : SuccessfulTerminalRepair r c U L) : paddedTable small L (terminalRepairOutput r c U L a) = (terminalRepairedTable r c U L a.val).val",
+      "after": "theorem terminalRepairOutput_repad (a : SuccessfulTerminalRepair r c U L) : Math115.PhysicalStateNonempty.paddedTable small L (terminalRepairOutput r c U L a) = (terminalRepairedTable r c U L a.val).val",
+      "reason": "Qualify the intended padding definition after the first compiler could not resolve its short name; no hypothesis or mathematical map changed."
+    }
+  ],
+  "new_declarations": [],
+  "scope": "Original lemma/theorem/def headers and hypotheses compared; the single reviewed name-qualification change and new helpers are listed. Aliases and mathematical definition bodies require the accompanying source review."
+}

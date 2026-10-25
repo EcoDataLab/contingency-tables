@@ -1,0 +1,18 @@
+{
+  "preserved_private_attempts": 2,
+  "failures": [
+    {
+      "kind": "namespace-root shadowing",
+      "returncode": 1,
+      "effect": "Import failed before proof checking; resolved by private import overlay, without changing imported bytes."
+    },
+    {
+      "kind": "import memory cap",
+      "returncode": -6,
+      "seconds": 20.032,
+      "cap_MiB": 4096,
+      "effect": "Lean memory_exception during loading. Root authorized established 8192 MiB cap; identical proof source subsequently compiled."
+    }
+  ],
+  "proof_source_unchanged_between_failed_and_successful_attempts": true
+}

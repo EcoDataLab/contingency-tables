@@ -1,0 +1,24 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean:32:39: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean:34:38: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean:113:22: error(lean.unknownIdentifier): Unknown constant `Nat.mul_pos_iff.mp`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean:121:58: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean:96:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean:141:5: error(lean.unknownIdentifier): Unknown constant `Nat.mul_pos_iff.mp`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean:148:58: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean:124:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

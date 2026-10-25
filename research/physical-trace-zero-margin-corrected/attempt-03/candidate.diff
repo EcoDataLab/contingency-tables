@@ -1,0 +1,39 @@
+--- initial.lean
++++ checked.lean
+@@ -19,0 +20,10 @@
++
++private theorem correctionSuccessAtCutoff {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ)
++    (U : ℕ) (hU : U = 11 * dimensionAllowance (I := Fin m) (J := Fin n) * (m + n - 2))
++    [Nonempty (DefectVertices r c U 7)] (hr : ∀ i, 0 < r i) (hc : ∀ j, 0 < c j) :
++    let p := Fintype.card (Cells (firstPaperSmall r c U))
++    (inverseSupportAllowance r c U : ℚ) / ((2 * (p * (p - 1)) : ℕ) : ℚ) ≤
++      1 - (terminalIdealCorrectedLaw r c U 7).mass none := by
++  subst U
++  exact actualShape_terminalCorrected_success_lower r c hr hc
++
+@@ -68,2 +78,4 @@
+-  unfold positiveTraceCorrectedRetryLaw
+-  rw [restoreZeroMarginListsLaw_uniform_variation xs ys htotal]
++  let r := filteredMargin xs
++  let c := filteredMargin ys
++  let U := positiveTraceCutoff xs ys
++  letI : Nonempty (DefectVertices r c U 7) := ⟨start⟩
+@@ -74,5 +86,13 @@
+-  unfold positiveTraceCorrectionSuccess
+-  simp only [positiveTraceCutoff_code, squareCutoff, Fintype.card_fin] at start hp hrL hcL ⊢
+-  exact actualShape_terminalCorrectedRetry_accuracy (filteredMargin xs) (filteredMargin ys)
+-    hrL hcL hb'.1 hb'.2.1 (filtered_totals_equal xs ys htotal) hp
+-    (filteredMargin_positive xs) (filteredMargin_positive ys) start h k fallback R
++  have hscale : U = 11 * dimensionAllowance
++      (I := Fin (positiveMargins xs).length) (J := Fin (positiveMargins ys).length) *
++      ((positiveMargins xs).length + (positiveMargins ys).length - 2) := by
++    simp only [U, positiveTraceCutoff_code, squareCutoff, Fintype.card_fin]
++  have hs := correctionSuccessAtCutoff r c U hscale
++    (filteredMargin_positive xs) (filteredMargin_positive ys)
++  have hred := terminalCorrectedRetry_accuracy_of_success r c U 7 hrL hcL
++    (filtered_totals_equal xs ys htotal) (positiveTraceReference_cutoff xs ys hb)
++    (by decide) hp (filteredMargin_positive xs) (filteredMargin_positive ys)
++    start h k fallback R (positiveTraceCorrectionSuccess xs ys) hs
++  have hz := restoreZeroMarginListsLaw_uniform_variation xs ys htotal
++    (terminalCorrectedRetryLaw r c U 7 hrL hcL start h k fallback R)
++  exact hz.le.trans hred

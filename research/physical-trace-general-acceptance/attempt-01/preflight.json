@@ -1,0 +1,8 @@
+{
+  "phase": "before_compiler",
+  "compiler_started": false,
+  "error": "Missing direct import: RepairAcceptanceCoin",
+  "resolution": "A fresh attempt supplied the missing accepted dependency object root.",
+  "candidate_source": "GeneralAcceptance.lean",
+  "candidate_source_sha256": "8bcdd1b2ca716af5dbd74ac58e1d335682cf1ffb49cebda629f34766eb1045e0"
+}

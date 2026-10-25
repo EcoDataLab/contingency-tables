@@ -1,0 +1,11 @@
+--- initial.lean
++++ checked.lean
+@@ -103,2 +103,2 @@
+-  cases hv : small t.val.1 s.val.2 <;>
+-    simp only [hv, Bool.false_eq_true, ite_false, ite_true, decide_eq_true_eq,
++  cases small t.val.1 s.val.2 <;>
++    simp only [Bool.false_eq_true, ite_false, ite_true, decide_eq_true_eq,
+@@ -121 +121,2 @@
+-  simp only [List.map_ofFn, List.sum_ofFn, listedInverseLabelTest_code, decide_eq_true_eq]
++  simp only [List.map_ofFn, List.sum_ofFn, Function.comp_apply,
++    listedInverseLabelTest_code, decide_eq_true_eq]

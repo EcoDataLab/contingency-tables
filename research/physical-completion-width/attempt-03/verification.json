@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "ef489fe5fdf5213604a4fa9e015d33fef9105fd7",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalCompletionWidth.Bound"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalCompletionWidth.Bound",
+      "source": "research/physical-completion-width/formal/ResearchPhysicalCompletionWidth/Bound.lean",
+      "source_sha256": "1584f41bbe64e3660853d29ad973325b3e896aa9d078408821f31979e112b034",
+      "returncode": 0,
+      "seconds": 48.47720658266917,
+      "olean_sha256": "46aa039565fcfd06bd6ca7f3bb0c78244bf8a211ae9c260579c5f535b72046e6"
+    }
+  ],
+  "audit_seconds": 101.15683954069391,
+  "audit_sha256": "5402bd411ce2360ea0885d3810d84d8a9629be433b2615da24c25dcf4e4462c0",
+  "audit_driver_sha256": "453b8a5c281ec3c2ce1acb529cbe350b099ea2737359b4eef2e4c14a24d834ae",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "3ccfa872d8ce81fde24dc073d559d0de70ed95e4cdf0003138231b91afab8a71",
+  "declaration_count": 19,
+  "theorem_count": 8,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalCompletionWidth.coarseRows_total",
+      "closure_size": 10402,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (z : Math115.ReducedSmallChain.States r c U L),\n  ∑ i, Math115.LegacyPhysicalCompletion.coarseRows r c U L hr z i =\n    ∑ i,\n      OAI.ContingencyTables.SmallGraphProfiles.residualRows\n        (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) (Math115.ReducedSmallChain.capacity r c U L) r c\n        L z i",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalCompletionWidth.coarseDimension_le",
+      "closure_size": 4156,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U : ℕ),\n  0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length →\n    0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length →\n      OAI.ContingencyTables.CompletionCounts.dimensionAllowance ≤\n        OAI.ContingencyTables.CompletionCounts.dimensionAllowance",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalCompletionWidth.completionBits_le_uniform",
+      "closure_size": 10825,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (z : Math115.ReducedSmallChain.States r c U L) (h : ℕ),\n  Math115.LegacyPhysicalCompletion.bits r c U L hr hc z h ≤\n    Math115.PhysicalCompletionWidth.uniformCompletionBits r c U L h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,26 @@
+--- initial.lean
++++ checked.lean
+@@ -14,0 +15,2 @@
++open ProfilePrograms SmallGraphProfiles FirstPaperProfiles
++open PhysicalCompletionFibres FirstPaperPhysicalMarginal SmallContextCoordinates
+@@ -62 +64,8 @@
+-  rw [terminalCorrectedWordLaw_eq_bind]
++  let p := mapLaw (uniformLaw (α := Fin (terminalScheduleWordWidth r c U L h) → Bool))
++    (terminalScheduleWord r c U L hr hc start h)
++  let q := uniformLaw (α := DefectJoint r c U L)
++  have he : terminalCorrectedWordLaw r c U L hr hc start h k =
++      bindLaw p (terminalFiniteCorrectionRow r c U L k) :=
++    terminalCorrectedWordLaw_eq_bind r c U L hr hc start h k
++  have hv := congrArg (fun z : RationalLaw (Option (Table r c)) =>
++    variation z (terminalIdealCorrectedLaw r c U L)) he
+@@ -64,6 +73,4 @@
+-  have hwQ : variation
+-      (mapLaw (uniformLaw (α := Fin (terminalScheduleWordWidth r c U L h) → Bool))
+-        (terminalScheduleWord r c U L hr hc start h))
+-      (uniformLaw (α := DefectJoint r c U L)) ≤ dyadic h := by exact_mod_cast hw
+-  exact (terminalFiniteCorrectionRow_bind_variation r c U L (by omega) k _ _).trans
+-    (add_le_add_right hwQ (dyadic k))
++  have hwQ : variation p q ≤ dyadic h := (Rat.cast_le (K := ℝ)).mp hw
++  have hb := terminalFiniteCorrectionRow_bind_variation r c U L (by omega) k p q
++  have hsum := add_le_add_left hwQ (dyadic k)
++  exact hv.le.trans (hb.trans hsum)

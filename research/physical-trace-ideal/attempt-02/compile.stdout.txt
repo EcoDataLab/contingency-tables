@@ -1,0 +1,27 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/Ideal.lean:109:58: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+hp : 2 ≤ Fintype.card (Cells (firstPaperSmall r c U))
+d e : DefectVertices r c U L
+⊢ (idealIncomingLaw r c U L hr hc hp d).mass ↑e =
+    ∑ x, if e = x then (idealIncomingLaw r c U L hr hc hp d).mass ↑x else 0
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/Ideal.lean:150:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/Ideal.lean:174:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

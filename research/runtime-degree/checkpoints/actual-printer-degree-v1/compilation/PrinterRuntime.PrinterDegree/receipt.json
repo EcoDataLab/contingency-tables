@@ -1,0 +1,8 @@
+{
+  "module": "PrinterRuntime.PrinterDegree",
+  "source_sha256": "cfdb1af28a5df1d7f8b0bb93d6bd7077dd0d18d865346f15b1a5b432ed861bfb",
+  "exit_code": 0,
+  "seconds": 16.033,
+  "diagnostics": "attempts/22",
+  "olean_sha256": "a8e389892f8d89b3b0b0d2e1c44a000f311036545766efb16fcc0be2f7a587d2"
+}

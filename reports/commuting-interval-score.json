@@ -1,0 +1,3872 @@
+{
+  "aggregation": "Unweighted descriptive case means; normalized scores divide by each case's known margin total before averaging.",
+  "analysis_status": "Post hoc scoring supplement; not a change to the frozen selection or primary coverage protocol.",
+  "candidate_cases": 100,
+  "cases": [
+    {
+      "case": "44001_44003__44001_44003",
+      "case_jobs": 38124,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1173,
+            1286
+          ],
+          "interval_score_jobs": 171673.0,
+          "interval_score_jobs_exact": "171673",
+          "interval_width_jobs": 113,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 4289,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 4.503016472563215,
+          "score_fraction_of_case_total_exact": "171673/38124",
+          "upper_miss_penalty_jobs_exact": "171560"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            164,
+            6404
+          ],
+          "interval_score_jobs": 6240.0,
+          "interval_score_jobs_exact": "6240",
+          "interval_width_jobs": 6240,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.16367642429965376,
+          "score_fraction_of_case_total_exact": "520/3177",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44003__44001_44005",
+      "case_jobs": 11670,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            4419,
+            4517
+          ],
+          "interval_score_jobs": 42418.0,
+          "interval_score_jobs_exact": "42418",
+          "interval_width_jobs": 98,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1058,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 3.634790059982862,
+          "score_fraction_of_case_total_exact": "21209/5835",
+          "upper_miss_penalty_jobs_exact": "42320"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            2930,
+            6475
+          ],
+          "interval_score_jobs": 3545.0,
+          "interval_score_jobs_exact": "3545",
+          "interval_width_jobs": 3545,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.30377035132819197,
+          "score_fraction_of_case_total_exact": "709/2334",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44003__44001_44007",
+      "case_jobs": 50938,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1596,
+            1725
+          ],
+          "interval_score_jobs": 154129.0,
+          "interval_score_jobs_exact": "154129",
+          "interval_width_jobs": 129,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 3850,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 3.0258156975146258,
+          "score_fraction_of_case_total_exact": "154129/50938",
+          "upper_miss_penalty_jobs_exact": "154000"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            164,
+            6404
+          ],
+          "interval_score_jobs": 6240.0,
+          "interval_score_jobs_exact": "6240",
+          "interval_width_jobs": 6240,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.12250186501236798,
+          "score_fraction_of_case_total_exact": "3120/25469",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44003__44001_44009",
+      "case_jobs": 17247,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2335,
+            2455
+          ],
+          "interval_score_jobs": 124920.0,
+          "interval_score_jobs_exact": "124920",
+          "interval_width_jobs": 120,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 3120,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 7.242998782396938,
+          "score_fraction_of_case_total_exact": "41640/5749",
+          "upper_miss_penalty_jobs_exact": "124800"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            157,
+            6132
+          ],
+          "interval_score_jobs": 5975.0,
+          "interval_score_jobs_exact": "5975",
+          "interval_width_jobs": 5975,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.3464370615179452,
+          "score_fraction_of_case_total_exact": "5975/17247",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44003__44003_44005",
+      "case_jobs": 36658,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            3339,
+            3419
+          ],
+          "interval_score_jobs": 71160.0,
+          "interval_score_jobs_exact": "71160",
+          "interval_width_jobs": 80,
+          "lower_miss_penalty_jobs_exact": "71080",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 1777,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 1.9411860985323803,
+          "score_fraction_of_case_total_exact": "35580/18329",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            98,
+            3828
+          ],
+          "interval_score_jobs": 3730.0,
+          "interval_score_jobs_exact": "3730",
+          "interval_width_jobs": 3730,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.10175132303999126,
+          "score_fraction_of_case_total_exact": "1865/18329",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44003__44003_44007",
+      "case_jobs": 75926,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            3599,
+            3770
+          ],
+          "interval_score_jobs": 81651.0,
+          "interval_score_jobs_exact": "81651",
+          "interval_width_jobs": 171,
+          "lower_miss_penalty_jobs_exact": "81480",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 2037,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 1.075402365461107,
+          "score_fraction_of_case_total_exact": "81651/75926",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            221,
+            8644
+          ],
+          "interval_score_jobs": 8423.0,
+          "interval_score_jobs_exact": "8423",
+          "interval_width_jobs": 8423,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.1109369649395464,
+          "score_fraction_of_case_total_exact": "8423/75926",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44003__44003_44009",
+      "case_jobs": 42235,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1661,
+            1740
+          ],
+          "interval_score_jobs": 4039.0,
+          "interval_score_jobs_exact": "4039",
+          "interval_width_jobs": 79,
+          "lower_miss_penalty_jobs_exact": "3960",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 99,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.09563158517816976,
+          "score_fraction_of_case_total_exact": "4039/42235",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            56,
+            2220
+          ],
+          "interval_score_jobs": 2164.0,
+          "interval_score_jobs_exact": "2164",
+          "interval_width_jobs": 2164,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.05123712560672428,
+          "score_fraction_of_case_total_exact": "2164/42235",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44003__44005_44007",
+      "case_jobs": 49472,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            945,
+            1050
+          ],
+          "interval_score_jobs": 52665.0,
+          "interval_score_jobs_exact": "52665",
+          "interval_width_jobs": 105,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1314,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 1.0645415588615783,
+          "score_fraction_of_case_total_exact": "52665/49472",
+          "upper_miss_penalty_jobs_exact": "52560"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            127,
+            4975
+          ],
+          "interval_score_jobs": 4848.0,
+          "interval_score_jobs_exact": "4848",
+          "interval_width_jobs": 4848,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 0.09799482535575679,
+          "score_fraction_of_case_total_exact": "303/3092",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44003__44005_44009",
+      "case_jobs": 15781,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            950,
+            1041
+          ],
+          "interval_score_jobs": 53011.0,
+          "interval_score_jobs_exact": "53011",
+          "interval_width_jobs": 91,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1323,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 3.359166085799379,
+          "score_fraction_of_case_total_exact": "53011/15781",
+          "upper_miss_penalty_jobs_exact": "52920"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            76,
+            3002
+          ],
+          "interval_score_jobs": 2926.0,
+          "interval_score_jobs_exact": "2926",
+          "interval_width_jobs": 2926,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 0.18541283822317978,
+          "score_fraction_of_case_total_exact": "2926/15781",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44003__44007_44009",
+      "case_jobs": 55049,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            6397,
+            6526
+          ],
+          "interval_score_jobs": 31209.0,
+          "interval_score_jobs_exact": "31209",
+          "interval_width_jobs": 129,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 777,
+          "miss_below_jobs": 0,
+          "published_count": 7303,
+          "score_fraction_of_case_total": 0.5669312794056205,
+          "score_fraction_of_case_total_exact": "31209/55049",
+          "upper_miss_penalty_jobs_exact": "31080"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            200,
+            7817
+          ],
+          "interval_score_jobs": 7617.0,
+          "interval_score_jobs_exact": "7617",
+          "interval_width_jobs": 7617,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 7303,
+          "score_fraction_of_case_total": 0.13836763610601463,
+          "score_fraction_of_case_total_exact": "7617/55049",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44005__44001_44003",
+      "case_jobs": 10455,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            4565,
+            4654
+          ],
+          "interval_score_jobs": 36929.0,
+          "interval_score_jobs_exact": "36929",
+          "interval_width_jobs": 89,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 921,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 3.532185557149689,
+          "score_fraction_of_case_total_exact": "36929/10455",
+          "upper_miss_penalty_jobs_exact": "36840"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            3516,
+            6670
+          ],
+          "interval_score_jobs": 3154.0,
+          "interval_score_jobs_exact": "3154",
+          "interval_width_jobs": 3154,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.30167384026781446,
+          "score_fraction_of_case_total_exact": "3154/10455",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44005__44001_44005",
+      "case_jobs": 26277,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1976,
+            2104
+          ],
+          "interval_score_jobs": 138968.0,
+          "interval_score_jobs_exact": "138968",
+          "interval_width_jobs": 128,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 3471,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 5.288579365985463,
+          "score_fraction_of_case_total_exact": "138968/26277",
+          "upper_miss_penalty_jobs_exact": "138840"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            168,
+            6584
+          ],
+          "interval_score_jobs": 6416.0,
+          "interval_score_jobs_exact": "6416",
+          "interval_width_jobs": 6416,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.24416790348974388,
+          "score_fraction_of_case_total_exact": "6416/26277",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44005__44001_44007",
+      "case_jobs": 20360,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            4207,
+            4334
+          ],
+          "interval_score_jobs": 49767.0,
+          "interval_score_jobs_exact": "49767",
+          "interval_width_jobs": 127,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1241,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 2.444351669941061,
+          "score_fraction_of_case_total_exact": "49767/20360",
+          "upper_miss_penalty_jobs_exact": "49640"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            168,
+            6584
+          ],
+          "interval_score_jobs": 6416.0,
+          "interval_score_jobs_exact": "6416",
+          "interval_width_jobs": 6416,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.3151277013752456,
+          "score_fraction_of_case_total_exact": "802/2545",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44005__44001_44009",
+      "case_jobs": 9405,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            4475,
+            4555
+          ],
+          "interval_score_jobs": 40880.0,
+          "interval_score_jobs_exact": "40880",
+          "interval_width_jobs": 80,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1020,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 4.34662413609782,
+          "score_fraction_of_case_total_exact": "8176/1881",
+          "upper_miss_penalty_jobs_exact": "40800"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            3702,
+            6223
+          ],
+          "interval_score_jobs": 2521.0,
+          "interval_score_jobs_exact": "2521",
+          "interval_width_jobs": 2521,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.2680489101541733,
+          "score_fraction_of_case_total_exact": "2521/9405",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44005__44003_44005",
+      "case_jobs": 23228,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            585,
+            667
+          ],
+          "interval_score_jobs": 35882.0,
+          "interval_score_jobs_exact": "35882",
+          "interval_width_jobs": 82,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 895,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 1.5447735491648011,
+          "score_fraction_of_case_total_exact": "17941/11614",
+          "upper_miss_penalty_jobs_exact": "35800"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            92,
+            3611
+          ],
+          "interval_score_jobs": 3519.0,
+          "interval_score_jobs_exact": "3519",
+          "interval_width_jobs": 3519,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.15149819183743757,
+          "score_fraction_of_case_total_exact": "3519/23228",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44005__44003_44007",
+      "case_jobs": 17311,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1843,
+            1949
+          ],
+          "interval_score_jobs": 11346.0,
+          "interval_score_jobs_exact": "11346",
+          "interval_width_jobs": 106,
+          "lower_miss_penalty_jobs_exact": "11240",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 281,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.6554214083530703,
+          "score_fraction_of_case_total_exact": "11346/17311",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            92,
+            3611
+          ],
+          "interval_score_jobs": 3519.0,
+          "interval_score_jobs_exact": "3519",
+          "interval_width_jobs": 3519,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.2032811507134192,
+          "score_fraction_of_case_total_exact": "3519/17311",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44005__44003_44009",
+      "case_jobs": 6356,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1289,
+            1363
+          ],
+          "interval_score_jobs": 8034.0,
+          "interval_score_jobs_exact": "8034",
+          "interval_width_jobs": 74,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 199,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 1.2640025173064822,
+          "score_fraction_of_case_total_exact": "4017/3178",
+          "upper_miss_penalty_jobs_exact": "7960"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            56,
+            2220
+          ],
+          "interval_score_jobs": 2164.0,
+          "interval_score_jobs_exact": "2164",
+          "interval_width_jobs": 2164,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.3404657016991819,
+          "score_fraction_of_case_total_exact": "541/1589",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44005__44005_44007",
+      "case_jobs": 33133,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            5617,
+            5776
+          ],
+          "interval_score_jobs": 130279.0,
+          "interval_score_jobs_exact": "130279",
+          "interval_width_jobs": 159,
+          "lower_miss_penalty_jobs_exact": "130120",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 3253,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 3.9320013279811667,
+          "score_fraction_of_case_total_exact": "130279/33133",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            241,
+            9426
+          ],
+          "interval_score_jobs": 9185.0,
+          "interval_score_jobs_exact": "9185",
+          "interval_width_jobs": 9185,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 0.27721606857211845,
+          "score_fraction_of_case_total_exact": "9185/33133",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44005__44005_44009",
+      "case_jobs": 22178,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2677,
+            2742
+          ],
+          "interval_score_jobs": 12585.0,
+          "interval_score_jobs_exact": "12585",
+          "interval_width_jobs": 65,
+          "lower_miss_penalty_jobs_exact": "12520",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 313,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 0.5674542339255118,
+          "score_fraction_of_case_total_exact": "12585/22178",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            491,
+            3012
+          ],
+          "interval_score_jobs": 2521.0,
+          "interval_score_jobs_exact": "2521",
+          "interval_width_jobs": 2521,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 0.11367120569934169,
+          "score_fraction_of_case_total_exact": "2521/22178",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44005__44007_44009",
+      "case_jobs": 16261,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            6663,
+            6755
+          ],
+          "interval_score_jobs": 22012.0,
+          "interval_score_jobs_exact": "22012",
+          "interval_width_jobs": 92,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 548,
+          "miss_below_jobs": 0,
+          "published_count": 7303,
+          "score_fraction_of_case_total": 1.3536682860832667,
+          "score_fraction_of_case_total_exact": "22012/16261",
+          "upper_miss_penalty_jobs_exact": "21920"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            5430,
+            7951
+          ],
+          "interval_score_jobs": 2521.0,
+          "interval_score_jobs_exact": "2521",
+          "interval_width_jobs": 2521,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 7303,
+          "score_fraction_of_case_total": 0.15503351577393765,
+          "score_fraction_of_case_total_exact": "2521/16261",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44007__44001_44003",
+      "case_jobs": 41288,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1538,
+            1664
+          ],
+          "interval_score_jobs": 156566.0,
+          "interval_score_jobs_exact": "156566",
+          "interval_width_jobs": 126,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 3911,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 3.792046115093974,
+          "score_fraction_of_case_total_exact": "78283/20644",
+          "upper_miss_penalty_jobs_exact": "156440"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            178,
+            6959
+          ],
+          "interval_score_jobs": 6781.0,
+          "interval_score_jobs_exact": "6781",
+          "interval_width_jobs": 6781,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.16423658205774075,
+          "score_fraction_of_case_total_exact": "6781/41288",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44007__44001_44005",
+      "case_jobs": 15440,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            4702,
+            4821
+          ],
+          "interval_score_jobs": 30279.0,
+          "interval_score_jobs_exact": "30279",
+          "interval_width_jobs": 119,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 754,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 1.9610751295336788,
+          "score_fraction_of_case_total_exact": "30279/15440",
+          "upper_miss_penalty_jobs_exact": "30160"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            1914,
+            7785
+          ],
+          "interval_score_jobs": 5871.0,
+          "interval_score_jobs_exact": "5871",
+          "interval_width_jobs": 5871,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.3802461139896373,
+          "score_fraction_of_case_total_exact": "5871/15440",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44007__44001_44007",
+      "case_jobs": 204739,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            538,
+            628
+          ],
+          "interval_score_jobs": 197970.0,
+          "interval_score_jobs_exact": "197970",
+          "interval_width_jobs": 90,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 4947,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.9669383947367136,
+          "score_fraction_of_case_total_exact": "197970/204739",
+          "upper_miss_penalty_jobs_exact": "197880"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            231,
+            9030
+          ],
+          "interval_score_jobs": 8799.0,
+          "interval_score_jobs_exact": "8799",
+          "interval_width_jobs": 8799,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.04297666785517171,
+          "score_fraction_of_case_total_exact": "8799/204739",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44007__44001_44009",
+      "case_jobs": 20536,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2772,
+            2901
+          ],
+          "interval_score_jobs": 107089.0,
+          "interval_score_jobs_exact": "107089",
+          "interval_width_jobs": 129,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 2674,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 5.2146961433580055,
+          "score_fraction_of_case_total_exact": "107089/20536",
+          "upper_miss_penalty_jobs_exact": "106960"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            157,
+            6132
+          ],
+          "interval_score_jobs": 5975.0,
+          "interval_score_jobs_exact": "5975",
+          "interval_width_jobs": 5975,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.29095247370471367,
+          "score_fraction_of_case_total_exact": "5975/20536",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44007__44003_44005",
+      "case_jobs": 38206,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            3248,
+            3334
+          ],
+          "interval_score_jobs": 67526.0,
+          "interval_score_jobs_exact": "67526",
+          "interval_width_jobs": 86,
+          "lower_miss_penalty_jobs_exact": "67440",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 1686,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 1.7674187300424018,
+          "score_fraction_of_case_total_exact": "33763/19103",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            98,
+            3828
+          ],
+          "interval_score_jobs": 3730.0,
+          "interval_score_jobs_exact": "3730",
+          "interval_width_jobs": 3730,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.09762864471548971,
+          "score_fraction_of_case_total_exact": "1865/19103",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44007__44003_44007",
+      "case_jobs": 227505,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1185,
+            1311
+          ],
+          "interval_score_jobs": 10166.0,
+          "interval_score_jobs_exact": "10166",
+          "interval_width_jobs": 126,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 251,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.04468473220368783,
+          "score_fraction_of_case_total_exact": "10166/227505",
+          "upper_miss_penalty_jobs_exact": "10040"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            221,
+            8644
+          ],
+          "interval_score_jobs": 8423.0,
+          "interval_score_jobs_exact": "8423",
+          "interval_width_jobs": 8423,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.037023362123909366,
+          "score_fraction_of_case_total_exact": "8423/227505",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44007__44003_44009",
+      "case_jobs": 43302,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1643,
+            1723
+          ],
+          "interval_score_jobs": 3320.0,
+          "interval_score_jobs_exact": "3320",
+          "interval_width_jobs": 80,
+          "lower_miss_penalty_jobs_exact": "3240",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 81,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.07667082351854418,
+          "score_fraction_of_case_total_exact": "1660/21651",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            56,
+            2220
+          ],
+          "interval_score_jobs": 2164.0,
+          "interval_score_jobs_exact": "2164",
+          "interval_width_jobs": 2164,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.0499745970163041,
+          "score_fraction_of_case_total_exact": "1082/21651",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44007__44005_44007",
+      "case_jobs": 201657,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            264,
+            329
+          ],
+          "interval_score_jobs": 81465.0,
+          "interval_score_jobs_exact": "81465",
+          "interval_width_jobs": 65,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 2035,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 0.40397804192267067,
+          "score_fraction_of_case_total_exact": "27155/67219",
+          "upper_miss_penalty_jobs_exact": "81400"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            154,
+            6025
+          ],
+          "interval_score_jobs": 5871.0,
+          "interval_score_jobs_exact": "5871",
+          "interval_width_jobs": 5871,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 0.029113792231363157,
+          "score_fraction_of_case_total_exact": "1957/67219",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44007__44005_44009",
+      "case_jobs": 17454,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1043,
+            1137
+          ],
+          "interval_score_jobs": 49174.0,
+          "interval_score_jobs_exact": "49174",
+          "interval_width_jobs": 94,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1227,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 2.8173484588060043,
+          "score_fraction_of_case_total_exact": "24587/8727",
+          "upper_miss_penalty_jobs_exact": "49080"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            76,
+            3002
+          ],
+          "interval_score_jobs": 2926.0,
+          "interval_score_jobs_exact": "2926",
+          "interval_width_jobs": 2926,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 0.16764065543714907,
+          "score_fraction_of_case_total_exact": "1463/8727",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44007__44007_44009",
+      "case_jobs": 206753,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            7540,
+            7618
+          ],
+          "interval_score_jobs": 9558.0,
+          "interval_score_jobs_exact": "9558",
+          "interval_width_jobs": 78,
+          "lower_miss_penalty_jobs_exact": "9480",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 237,
+          "published_count": 7303,
+          "score_fraction_of_case_total": 0.04622907527339386,
+          "score_fraction_of_case_total_exact": "9558/206753",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            200,
+            7817
+          ],
+          "interval_score_jobs": 7617.0,
+          "interval_score_jobs_exact": "7617",
+          "interval_width_jobs": 7617,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 7303,
+          "score_fraction_of_case_total": 0.03684106155654331,
+          "score_fraction_of_case_total_exact": "7617/206753",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44009__44001_44003",
+      "case_jobs": 15258,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2826,
+            2945
+          ],
+          "interval_score_jobs": 105319.0,
+          "interval_score_jobs_exact": "105319",
+          "interval_width_jobs": 119,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 2630,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 6.9025429282999085,
+          "score_fraction_of_case_total_exact": "105319/15258",
+          "upper_miss_penalty_jobs_exact": "105200"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            154,
+            6015
+          ],
+          "interval_score_jobs": 5861.0,
+          "interval_score_jobs_exact": "5861",
+          "interval_width_jobs": 5861,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.38412635994232536,
+          "score_fraction_of_case_total_exact": "5861/15258",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44009__44001_44005",
+      "case_jobs": 11863,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            4078,
+            4179
+          ],
+          "interval_score_jobs": 55941.0,
+          "interval_score_jobs_exact": "55941",
+          "interval_width_jobs": 101,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1396,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 4.715586276658518,
+          "score_fraction_of_case_total_exact": "55941/11863",
+          "upper_miss_penalty_jobs_exact": "55840"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            2343,
+            6071
+          ],
+          "interval_score_jobs": 3728.0,
+          "interval_score_jobs_exact": "3728",
+          "interval_width_jobs": 3728,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.31425440445081343,
+          "score_fraction_of_case_total_exact": "3728/11863",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44009__44001_44007",
+      "case_jobs": 26435,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2938,
+            3073
+          ],
+          "interval_score_jobs": 100215.0,
+          "interval_score_jobs_exact": "100215",
+          "interval_width_jobs": 135,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 2502,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 3.7909967845659165,
+          "score_fraction_of_case_total_exact": "1179/311",
+          "upper_miss_penalty_jobs_exact": "100080"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            154,
+            6015
+          ],
+          "interval_score_jobs": 5861.0,
+          "interval_score_jobs_exact": "5861",
+          "interval_width_jobs": 5861,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.22171363722337808,
+          "score_fraction_of_case_total_exact": "5861/26435",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44009__44001_44009",
+      "case_jobs": 31212,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1188,
+            1298
+          ],
+          "interval_score_jobs": 171190.0,
+          "interval_score_jobs_exact": "171190",
+          "interval_width_jobs": 110,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 4277,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 5.484749455337691,
+          "score_fraction_of_case_total_exact": "5035/918",
+          "upper_miss_penalty_jobs_exact": "171080"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            154,
+            6015
+          ],
+          "interval_score_jobs": 5861.0,
+          "interval_score_jobs_exact": "5861",
+          "interval_width_jobs": 5861,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 5575,
+          "score_fraction_of_case_total": 0.18778034089452775,
+          "score_fraction_of_case_total_exact": "5861/31212",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44009__44003_44005",
+      "case_jobs": 14783,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2363,
+            2465
+          ],
+          "interval_score_jobs": 32142.0,
+          "interval_score_jobs_exact": "32142",
+          "interval_width_jobs": 102,
+          "lower_miss_penalty_jobs_exact": "32040",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 801,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 2.174254210917946,
+          "score_fraction_of_case_total_exact": "32142/14783",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            98,
+            3828
+          ],
+          "interval_score_jobs": 3730.0,
+          "interval_score_jobs_exact": "3730",
+          "interval_width_jobs": 3730,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.25231685043631197,
+          "score_fraction_of_case_total_exact": "3730/14783",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44009__44003_44007",
+      "case_jobs": 29355,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2674,
+            2816
+          ],
+          "interval_score_jobs": 44622.0,
+          "interval_score_jobs_exact": "44622",
+          "interval_width_jobs": 142,
+          "lower_miss_penalty_jobs_exact": "44480",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 1112,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 1.5200817577925396,
+          "score_fraction_of_case_total_exact": "14874/9785",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            221,
+            8644
+          ],
+          "interval_score_jobs": 8423.0,
+          "interval_score_jobs_exact": "8423",
+          "interval_width_jobs": 8423,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.2869357860671095,
+          "score_fraction_of_case_total_exact": "8423/29355",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44009__44003_44009",
+      "case_jobs": 34132,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            566,
+            646
+          ],
+          "interval_score_jobs": 36720.0,
+          "interval_score_jobs_exact": "36720",
+          "interval_width_jobs": 80,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 916,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 1.0758232743466543,
+          "score_fraction_of_case_total_exact": "9180/8533",
+          "upper_miss_penalty_jobs_exact": "36640"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            56,
+            2220
+          ],
+          "interval_score_jobs": 2164.0,
+          "interval_score_jobs_exact": "2164",
+          "interval_width_jobs": 2164,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1562,
+          "score_fraction_of_case_total": 0.06340091409820696,
+          "score_fraction_of_case_total_exact": "541/8533",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44009__44005_44007",
+      "case_jobs": 25960,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2057,
+            2184
+          ],
+          "interval_score_jobs": 7327.0,
+          "interval_score_jobs_exact": "7327",
+          "interval_width_jobs": 127,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 180,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 0.28224191063174114,
+          "score_fraction_of_case_total_exact": "7327/25960",
+          "upper_miss_penalty_jobs_exact": "7200"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            142,
+            5552
+          ],
+          "interval_score_jobs": 5410.0,
+          "interval_score_jobs_exact": "5410",
+          "interval_width_jobs": 5410,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 0.2083975346687211,
+          "score_fraction_of_case_total_exact": "541/2596",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44009__44005_44009",
+      "case_jobs": 30737,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            530,
+            611
+          ],
+          "interval_score_jobs": 70201.0,
+          "interval_score_jobs_exact": "70201",
+          "interval_width_jobs": 81,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1753,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 2.2839249113446334,
+          "score_fraction_of_case_total_exact": "70201/30737",
+          "upper_miss_penalty_jobs_exact": "70120"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            76,
+            3002
+          ],
+          "interval_score_jobs": 2926.0,
+          "interval_score_jobs_exact": "2926",
+          "interval_width_jobs": 2926,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2364,
+          "score_fraction_of_case_total": 0.09519471646549761,
+          "score_fraction_of_case_total_exact": "418/4391",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44001_44009__44007_44009",
+      "case_jobs": 45309,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            3507,
+            3665
+          ],
+          "interval_score_jobs": 145678.0,
+          "interval_score_jobs_exact": "145678",
+          "interval_width_jobs": 158,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 3638,
+          "miss_below_jobs": 0,
+          "published_count": 7303,
+          "score_fraction_of_case_total": 3.2152111059612882,
+          "score_fraction_of_case_total_exact": "145678/45309",
+          "upper_miss_penalty_jobs_exact": "145520"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            200,
+            7817
+          ],
+          "interval_score_jobs": 7617.0,
+          "interval_score_jobs_exact": "7617",
+          "interval_width_jobs": 7617,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 7303,
+          "score_fraction_of_case_total": 0.1681122955704165,
+          "score_fraction_of_case_total_exact": "2539/15103",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44005__44001_44003",
+      "case_jobs": 34305,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1934,
+            1986
+          ],
+          "interval_score_jobs": 37692.0,
+          "interval_score_jobs_exact": "37692",
+          "interval_width_jobs": 52,
+          "lower_miss_penalty_jobs_exact": "37640",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 941,
+          "published_count": 993,
+          "score_fraction_of_case_total": 1.0987319632706603,
+          "score_fraction_of_case_total_exact": "12564/11435",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            54,
+            2116
+          ],
+          "interval_score_jobs": 2062.0,
+          "interval_score_jobs_exact": "2062",
+          "interval_width_jobs": 2062,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.06010785599766798,
+          "score_fraction_of_case_total_exact": "2062/34305",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44005__44001_44005",
+      "case_jobs": 22069,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            335,
+            400
+          ],
+          "interval_score_jobs": 23785.0,
+          "interval_score_jobs_exact": "23785",
+          "interval_width_jobs": 65,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 593,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 1.0777561285060493,
+          "score_fraction_of_case_total_exact": "23785/22069",
+          "upper_miss_penalty_jobs_exact": "23720"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            54,
+            2116
+          ],
+          "interval_score_jobs": 2062.0,
+          "interval_score_jobs_exact": "2062",
+          "interval_width_jobs": 2062,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.09343422900901717,
+          "score_fraction_of_case_total_exact": "2062/22069",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44005__44001_44007",
+      "case_jobs": 45542,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1780,
+            1846
+          ],
+          "interval_score_jobs": 31546.0,
+          "interval_score_jobs_exact": "31546",
+          "interval_width_jobs": 66,
+          "lower_miss_penalty_jobs_exact": "31480",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 787,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.6926792850555531,
+          "score_fraction_of_case_total_exact": "15773/22771",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            54,
+            2116
+          ],
+          "interval_score_jobs": 2062.0,
+          "interval_score_jobs_exact": "2062",
+          "interval_width_jobs": 2062,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.045276887268894644,
+          "score_fraction_of_case_total_exact": "1031/22771",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44005__44001_44009",
+      "case_jobs": 14074,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1655,
+            1724
+          ],
+          "interval_score_jobs": 26549.0,
+          "interval_score_jobs_exact": "26549",
+          "interval_width_jobs": 69,
+          "lower_miss_penalty_jobs_exact": "26480",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 662,
+          "published_count": 993,
+          "score_fraction_of_case_total": 1.886386244138127,
+          "score_fraction_of_case_total_exact": "26549/14074",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            54,
+            2116
+          ],
+          "interval_score_jobs": 2062.0,
+          "interval_score_jobs_exact": "2062",
+          "interval_width_jobs": 2062,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.1465112974278812,
+          "score_fraction_of_case_total_exact": "1031/7037",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44005__44003_44005",
+      "case_jobs": 52034,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            20110,
+            20320
+          ],
+          "interval_score_jobs": 387170.0,
+          "interval_score_jobs_exact": "387170",
+          "interval_width_jobs": 210,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 9674,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 7.440711842256986,
+          "score_fraction_of_case_total_exact": "193585/26017",
+          "upper_miss_penalty_jobs_exact": "386960"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            13315,
+            31653
+          ],
+          "interval_score_jobs": 18338.0,
+          "interval_score_jobs_exact": "18338",
+          "interval_width_jobs": 18338,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.35242341545912287,
+          "score_fraction_of_case_total_exact": "9169/26017",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44005__44003_44007",
+      "case_jobs": 75507,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            28456,
+            28624
+          ],
+          "interval_score_jobs": 54968.0,
+          "interval_score_jobs_exact": "54968",
+          "interval_width_jobs": 168,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1370,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.7279854847894898,
+          "score_fraction_of_case_total_exact": "54968/75507",
+          "upper_miss_penalty_jobs_exact": "54800"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            23900,
+            31924
+          ],
+          "interval_score_jobs": 8024.0,
+          "interval_score_jobs_exact": "8024",
+          "interval_width_jobs": 8024,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.10626829300594647,
+          "score_fraction_of_case_total_exact": "8024/75507",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44005__44003_44009",
+      "case_jobs": 44039,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            29105,
+            29211
+          ],
+          "interval_score_jobs": 31426.0,
+          "interval_score_jobs_exact": "31426",
+          "interval_width_jobs": 106,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 783,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.7135947682735757,
+          "score_fraction_of_case_total_exact": "31426/44039",
+          "upper_miss_penalty_jobs_exact": "31320"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            28157,
+            32033
+          ],
+          "interval_score_jobs": 3876.0,
+          "interval_score_jobs_exact": "3876",
+          "interval_width_jobs": 3876,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.08801289765889325,
+          "score_fraction_of_case_total_exact": "3876/44039",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44005__44005_44007",
+      "case_jobs": 63271,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            12408,
+            12629
+          ],
+          "interval_score_jobs": 387021.0,
+          "interval_score_jobs_exact": "387021",
+          "interval_width_jobs": 221,
+          "lower_miss_penalty_jobs_exact": "386800",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 9670,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 6.116878190640262,
+          "score_fraction_of_case_total_exact": "387021/63271",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            497,
+            19402
+          ],
+          "interval_score_jobs": 18905.0,
+          "interval_score_jobs_exact": "18905",
+          "interval_width_jobs": 18905,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 0.2987940762750707,
+          "score_fraction_of_case_total_exact": "18905/63271",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44005__44005_44009",
+      "case_jobs": 31803,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            7865,
+            8031
+          ],
+          "interval_score_jobs": 205246.0,
+          "interval_score_jobs_exact": "205246",
+          "interval_width_jobs": 166,
+          "lower_miss_penalty_jobs_exact": "205080",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 5127,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 6.453667892966072,
+          "score_fraction_of_case_total_exact": "205246/31803",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            1096,
+            12406
+          ],
+          "interval_score_jobs": 11310.0,
+          "interval_score_jobs_exact": "11310",
+          "interval_width_jobs": 11310,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 0.35562682765776815,
+          "score_fraction_of_case_total_exact": "3770/10601",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44005__44007_44009",
+      "case_jobs": 55276,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            36836,
+            36971
+          ],
+          "interval_score_jobs": 3975.0,
+          "interval_score_jobs_exact": "3975",
+          "interval_width_jobs": 135,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 96,
+          "miss_below_jobs": 0,
+          "published_count": 37067,
+          "score_fraction_of_case_total": 0.07191186048194514,
+          "score_fraction_of_case_total_exact": "3975/55276",
+          "upper_miss_penalty_jobs_exact": "3840"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            35334,
+            43166
+          ],
+          "interval_score_jobs": 7832.0,
+          "interval_score_jobs_exact": "7832",
+          "interval_width_jobs": 7832,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 37067,
+          "score_fraction_of_case_total": 0.14168897894203633,
+          "score_fraction_of_case_total_exact": "1958/13819",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44007__44001_44003",
+      "case_jobs": 65138,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2161,
+            2290
+          ],
+          "interval_score_jobs": 46849.0,
+          "interval_score_jobs_exact": "46849",
+          "interval_width_jobs": 129,
+          "lower_miss_penalty_jobs_exact": "46720",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 1168,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.719226872179066,
+          "score_fraction_of_case_total_exact": "46849/65138",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            116,
+            4562
+          ],
+          "interval_score_jobs": 4446.0,
+          "interval_score_jobs_exact": "4446",
+          "interval_width_jobs": 4446,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.06825508919524702,
+          "score_fraction_of_case_total_exact": "2223/32569",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44007__44001_44005",
+      "case_jobs": 11232,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1506,
+            1603
+          ],
+          "interval_score_jobs": 20617.0,
+          "interval_score_jobs_exact": "20617",
+          "interval_width_jobs": 97,
+          "lower_miss_penalty_jobs_exact": "20520",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 513,
+          "published_count": 993,
+          "score_fraction_of_case_total": 1.8355591168091168,
+          "score_fraction_of_case_total_exact": "20617/11232",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            93,
+            3638
+          ],
+          "interval_score_jobs": 3545.0,
+          "interval_score_jobs_exact": "3545",
+          "interval_width_jobs": 3545,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.3156160968660969,
+          "score_fraction_of_case_total_exact": "3545/11232",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44007__44001_44007",
+      "case_jobs": 229921,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            726,
+            824
+          ],
+          "interval_score_jobs": 6858.0,
+          "interval_score_jobs_exact": "6858",
+          "interval_width_jobs": 98,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 169,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.02982763644904119,
+          "score_fraction_of_case_total_exact": "6858/229921",
+          "upper_miss_penalty_jobs_exact": "6760"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            116,
+            4562
+          ],
+          "interval_score_jobs": 4446.0,
+          "interval_score_jobs_exact": "4446",
+          "interval_width_jobs": 4446,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.019337076648066075,
+          "score_fraction_of_case_total_exact": "4446/229921",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44007__44001_44009",
+      "case_jobs": 25205,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1974,
+            2094
+          ],
+          "interval_score_jobs": 39360.0,
+          "interval_score_jobs_exact": "39360",
+          "interval_width_jobs": 120,
+          "lower_miss_penalty_jobs_exact": "39240",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 981,
+          "published_count": 993,
+          "score_fraction_of_case_total": 1.5615949216425313,
+          "score_fraction_of_case_total_exact": "7872/5041",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            116,
+            4562
+          ],
+          "interval_score_jobs": 4446.0,
+          "interval_score_jobs_exact": "4446",
+          "interval_width_jobs": 4446,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.1763935727038286,
+          "score_fraction_of_case_total_exact": "4446/25205",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44007__44003_44005",
+      "case_jobs": 67012,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            29456,
+            29607
+          ],
+          "interval_score_jobs": 15631.0,
+          "interval_score_jobs_exact": "15631",
+          "interval_width_jobs": 151,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 387,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.23325673013788575,
+          "score_fraction_of_case_total_exact": "1421/6092",
+          "upper_miss_penalty_jobs_exact": "15480"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            26342,
+            32569
+          ],
+          "interval_score_jobs": 6227.0,
+          "interval_score_jobs_exact": "6227",
+          "interval_width_jobs": 6227,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.09292365546469289,
+          "score_fraction_of_case_total_exact": "6227/67012",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44007__44003_44007",
+      "case_jobs": 285701,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            14010,
+            14373
+          ],
+          "interval_score_jobs": 625203.0,
+          "interval_score_jobs_exact": "625203",
+          "interval_width_jobs": 363,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 15621,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 2.1883122565199282,
+          "score_fraction_of_case_total_exact": "625203/285701",
+          "upper_miss_penalty_jobs_exact": "624840"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            1511,
+            58948
+          ],
+          "interval_score_jobs": 57437.0,
+          "interval_score_jobs_exact": "57437",
+          "interval_width_jobs": 57437,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.20103884830644625,
+          "score_fraction_of_case_total_exact": "57437/285701",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44007__44003_44009",
+      "case_jobs": 80985,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            29710,
+            29953
+          ],
+          "interval_score_jobs": 1883.0,
+          "interval_score_jobs_exact": "1883",
+          "interval_width_jobs": 243,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 41,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.023251219361610176,
+          "score_fraction_of_case_total_exact": "1883/80985",
+          "upper_miss_penalty_jobs_exact": "1640"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            19946,
+            39446
+          ],
+          "interval_score_jobs": 19500.0,
+          "interval_score_jobs_exact": "19500",
+          "interval_width_jobs": 19500,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.2407853306167809,
+          "score_fraction_of_case_total_exact": "1300/5399",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44007__44005_44007",
+      "case_jobs": 231795,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1067,
+            1185
+          ],
+          "interval_score_jobs": 62238.0,
+          "interval_score_jobs_exact": "62238",
+          "interval_width_jobs": 118,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1553,
+          "miss_below_jobs": 0,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 0.2685044975085744,
+          "score_fraction_of_case_total_exact": "20746/77265",
+          "upper_miss_penalty_jobs_exact": "62120"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            163,
+            6390
+          ],
+          "interval_score_jobs": 6227.0,
+          "interval_score_jobs_exact": "6227",
+          "interval_width_jobs": 6227,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 0.026864255052956275,
+          "score_fraction_of_case_total_exact": "6227/231795",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44007__44005_44009",
+      "case_jobs": 27079,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            3005,
+            3143
+          ],
+          "interval_score_jobs": 10818.0,
+          "interval_score_jobs_exact": "10818",
+          "interval_width_jobs": 138,
+          "lower_miss_penalty_jobs_exact": "10680",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 267,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 0.3994977657963736,
+          "score_fraction_of_case_total_exact": "10818/27079",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            163,
+            6390
+          ],
+          "interval_score_jobs": 6227.0,
+          "interval_score_jobs_exact": "6227",
+          "interval_width_jobs": 6227,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 0.2299567930868939,
+          "score_fraction_of_case_total_exact": "479/2083",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44007__44007_44009",
+      "case_jobs": 245768,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            42998,
+            43209
+          ],
+          "interval_score_jobs": 237451.0,
+          "interval_score_jobs_exact": "237451",
+          "interval_width_jobs": 211,
+          "lower_miss_penalty_jobs_exact": "237240",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 5931,
+          "published_count": 37067,
+          "score_fraction_of_case_total": 0.9661591419550145,
+          "score_fraction_of_case_total_exact": "237451/245768",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            27019,
+            46519
+          ],
+          "interval_score_jobs": 19500.0,
+          "interval_score_jobs_exact": "19500",
+          "interval_width_jobs": 19500,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 37067,
+          "score_fraction_of_case_total": 0.07934312034113473,
+          "score_fraction_of_case_total_exact": "4875/61442",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44009__44001_44003",
+      "case_jobs": 39108,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1226,
+            1288
+          ],
+          "interval_score_jobs": 9382.0,
+          "interval_score_jobs_exact": "9382",
+          "interval_width_jobs": 62,
+          "lower_miss_penalty_jobs_exact": "9320",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 233,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.23989976475401453,
+          "score_fraction_of_case_total_exact": "4691/19554",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            39,
+            1548
+          ],
+          "interval_score_jobs": 1509.0,
+          "interval_score_jobs_exact": "1509",
+          "interval_width_jobs": 1509,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.03858545566124578,
+          "score_fraction_of_case_total_exact": "503/13036",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44009__44001_44005",
+      "case_jobs": 7655,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            739,
+            808
+          ],
+          "interval_score_jobs": 7469.0,
+          "interval_score_jobs_exact": "7469",
+          "interval_width_jobs": 69,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 185,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.9757021554539517,
+          "score_fraction_of_case_total_exact": "7469/7655",
+          "upper_miss_penalty_jobs_exact": "7400"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            39,
+            1548
+          ],
+          "interval_score_jobs": 1509.0,
+          "interval_score_jobs_exact": "1509",
+          "interval_width_jobs": 1509,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.19712606139777922,
+          "score_fraction_of_case_total_exact": "1509/7655",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44009__44001_44007",
+      "case_jobs": 51617,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1136,
+            1204
+          ],
+          "interval_score_jobs": 5788.0,
+          "interval_score_jobs_exact": "5788",
+          "interval_width_jobs": 68,
+          "lower_miss_penalty_jobs_exact": "5720",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 143,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.11213359939554798,
+          "score_fraction_of_case_total_exact": "5788/51617",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            39,
+            1548
+          ],
+          "interval_score_jobs": 1509.0,
+          "interval_score_jobs_exact": "1509",
+          "interval_width_jobs": 1509,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.02923455450723599,
+          "score_fraction_of_case_total_exact": "1509/51617",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44009__44001_44009",
+      "case_jobs": 35881,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            450,
+            520
+          ],
+          "interval_score_jobs": 18990.0,
+          "interval_score_jobs_exact": "18990",
+          "interval_width_jobs": 70,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 473,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.5292494635043616,
+          "score_fraction_of_case_total_exact": "18990/35881",
+          "upper_miss_penalty_jobs_exact": "18920"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            39,
+            1548
+          ],
+          "interval_score_jobs": 1509.0,
+          "interval_score_jobs_exact": "1509",
+          "interval_width_jobs": 1509,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 993,
+          "score_fraction_of_case_total": 0.04205568406677629,
+          "score_fraction_of_case_total_exact": "1509/35881",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44009__44003_44005",
+      "case_jobs": 43589,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            28114,
+            28237
+          ],
+          "interval_score_jobs": 70403.0,
+          "interval_score_jobs_exact": "70403",
+          "interval_width_jobs": 123,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1757,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 1.615155199706348,
+          "score_fraction_of_case_total_exact": "70403/43589",
+          "upper_miss_penalty_jobs_exact": "70280"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            26815,
+            32581
+          ],
+          "interval_score_jobs": 5766.0,
+          "interval_score_jobs_exact": "5766",
+          "interval_width_jobs": 5766,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.1322810800890133,
+          "score_fraction_of_case_total_exact": "5766/43589",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44009__44003_44007",
+      "case_jobs": 87551,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            28618,
+            28861
+          ],
+          "interval_score_jobs": 45563.0,
+          "interval_score_jobs_exact": "45563",
+          "interval_width_jobs": 243,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1133,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.5204166714257975,
+          "score_fraction_of_case_total_exact": "45563/87551",
+          "upper_miss_penalty_jobs_exact": "45320"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            17543,
+            37009
+          ],
+          "interval_score_jobs": 19466.0,
+          "interval_score_jobs_exact": "19466",
+          "interval_width_jobs": 19466,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.2223389795661957,
+          "score_fraction_of_case_total_exact": "19466/87551",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44009__44003_44009",
+      "case_jobs": 71815,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            20747,
+            21008
+          ],
+          "interval_score_jobs": 359701.0,
+          "interval_score_jobs_exact": "359701",
+          "interval_width_jobs": 261,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 8986,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 5.0087168418854,
+          "score_fraction_of_case_total_exact": "359701/71815",
+          "upper_miss_penalty_jobs_exact": "359440"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            6461,
+            36725
+          ],
+          "interval_score_jobs": 30264.0,
+          "interval_score_jobs_exact": "30264",
+          "interval_width_jobs": 30264,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 29994,
+          "score_fraction_of_case_total": 0.4214161386896888,
+          "score_fraction_of_case_total_exact": "30264/71815",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44009__44005_44007",
+      "case_jobs": 56098,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            4240,
+            4371
+          ],
+          "interval_score_jobs": 60211.0,
+          "interval_score_jobs_exact": "60211",
+          "interval_width_jobs": 131,
+          "lower_miss_penalty_jobs_exact": "60080",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 1502,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 1.0733181218581767,
+          "score_fraction_of_case_total_exact": "60211/56098",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            151,
+            5917
+          ],
+          "interval_score_jobs": 5766.0,
+          "interval_score_jobs_exact": "5766",
+          "interval_width_jobs": 5766,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 0.1027844129915505,
+          "score_fraction_of_case_total_exact": "2883/28049",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44009__44005_44009",
+      "case_jobs": 40362,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1845,
+            1975
+          ],
+          "interval_score_jobs": 30650.0,
+          "interval_score_jobs_exact": "30650",
+          "interval_width_jobs": 130,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 763,
+          "miss_below_jobs": 0,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 0.7593776324265398,
+          "score_fraction_of_case_total_exact": "15325/20181",
+          "upper_miss_penalty_jobs_exact": "30520"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            151,
+            5917
+          ],
+          "interval_score_jobs": 5766.0,
+          "interval_score_jobs_exact": "5766",
+          "interval_width_jobs": 5766,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2738,
+          "score_fraction_of_case_total": 0.14285714285714285,
+          "score_fraction_of_case_total_exact": "1/7",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44003_44009__44007_44009",
+      "case_jobs": 84324,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            27766,
+            28043
+          ],
+          "interval_score_jobs": 361237.0,
+          "interval_score_jobs_exact": "361237",
+          "interval_width_jobs": 277,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 9024,
+          "miss_below_jobs": 0,
+          "published_count": 37067,
+          "score_fraction_of_case_total": 4.283916797115887,
+          "score_fraction_of_case_total_exact": "361237/84324",
+          "upper_miss_penalty_jobs_exact": "360960"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            13595,
+            46175
+          ],
+          "interval_score_jobs": 32580.0,
+          "interval_score_jobs_exact": "32580",
+          "interval_width_jobs": 32580,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 37067,
+          "score_fraction_of_case_total": 0.38636687064181013,
+          "score_fraction_of_case_total_exact": "2715/7027",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44007__44001_44003",
+      "case_jobs": 37469,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            395,
+            467
+          ],
+          "interval_score_jobs": 28472.0,
+          "interval_score_jobs_exact": "28472",
+          "interval_width_jobs": 72,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 710,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.7598815020416878,
+          "score_fraction_of_case_total_exact": "28472/37469",
+          "upper_miss_penalty_jobs_exact": "28400"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            82,
+            3236
+          ],
+          "interval_score_jobs": 3154.0,
+          "interval_score_jobs_exact": "3154",
+          "interval_width_jobs": 3154,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.08417625236862473,
+          "score_fraction_of_case_total_exact": "3154/37469",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44007__44001_44005",
+      "case_jobs": 25839,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            3395,
+            3507
+          ],
+          "interval_score_jobs": 88832.0,
+          "interval_score_jobs_exact": "88832",
+          "interval_width_jobs": 112,
+          "lower_miss_penalty_jobs_exact": "88720",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 2218,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 3.43790394365107,
+          "score_fraction_of_case_total_exact": "88832/25839",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            121,
+            4742
+          ],
+          "interval_score_jobs": 4621.0,
+          "interval_score_jobs_exact": "4621",
+          "interval_width_jobs": 4621,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.17883819033244322,
+          "score_fraction_of_case_total_exact": "4621/25839",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44007__44001_44007",
+      "case_jobs": 199343,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            157,
+            209
+          ],
+          "interval_score_jobs": 38772.0,
+          "interval_score_jobs_exact": "38772",
+          "interval_width_jobs": 52,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 968,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.1944989289817049,
+          "score_fraction_of_case_total_exact": "38772/199343",
+          "upper_miss_penalty_jobs_exact": "38720"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            121,
+            4742
+          ],
+          "interval_score_jobs": 4621.0,
+          "interval_score_jobs_exact": "4621",
+          "interval_width_jobs": 4621,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.023181150078006252,
+          "score_fraction_of_case_total_exact": "4621/199343",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44007__44001_44009",
+      "case_jobs": 17363,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            828,
+            917
+          ],
+          "interval_score_jobs": 10489.0,
+          "interval_score_jobs_exact": "10489",
+          "interval_width_jobs": 89,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 260,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.6041006738466855,
+          "score_fraction_of_case_total_exact": "10489/17363",
+          "upper_miss_penalty_jobs_exact": "10400"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            77,
+            3039
+          ],
+          "interval_score_jobs": 2962.0,
+          "interval_score_jobs_exact": "2962",
+          "interval_width_jobs": 2962,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.17059263952082013,
+          "score_fraction_of_case_total_exact": "2962/17363",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44007__44003_44005",
+      "case_jobs": 53582,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            11639,
+            11852
+          ],
+          "interval_score_jobs": 380133.0,
+          "interval_score_jobs_exact": "380133",
+          "interval_width_jobs": 213,
+          "lower_miss_penalty_jobs_exact": "379920",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 9498,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 7.094416035235714,
+          "score_fraction_of_case_total_exact": "380133/53582",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            482,
+            18820
+          ],
+          "interval_score_jobs": 18338.0,
+          "interval_score_jobs_exact": "18338",
+          "interval_width_jobs": 18338,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 0.34224179761860324,
+          "score_fraction_of_case_total_exact": "9169/26791",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44007__44003_44007",
+      "case_jobs": 227086,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1151,
+            1275
+          ],
+          "interval_score_jobs": 34764.0,
+          "interval_score_jobs_exact": "34764",
+          "interval_width_jobs": 124,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 866,
+          "miss_below_jobs": 0,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 0.1530873765886052,
+          "score_fraction_of_case_total_exact": "17382/113543",
+          "upper_miss_penalty_jobs_exact": "34640"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            211,
+            8235
+          ],
+          "interval_score_jobs": 8024.0,
+          "interval_score_jobs_exact": "8024",
+          "interval_width_jobs": 8024,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 0.03533463093277437,
+          "score_fraction_of_case_total_exact": "236/6679",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44007__44003_44009",
+      "case_jobs": 45106,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2896,
+            3003
+          ],
+          "interval_score_jobs": 30307.0,
+          "interval_score_jobs_exact": "30307",
+          "interval_width_jobs": 107,
+          "lower_miss_penalty_jobs_exact": "30200",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 755,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 0.6719061765618765,
+          "score_fraction_of_case_total_exact": "30307/45106",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            102,
+            3978
+          ],
+          "interval_score_jobs": 3876.0,
+          "interval_score_jobs_exact": "3876",
+          "interval_width_jobs": 3876,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 0.08593091828138164,
+          "score_fraction_of_case_total_exact": "102/1187",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44007__44005_44007",
+      "case_jobs": 215456,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2201,
+            2369
+          ],
+          "interval_score_jobs": 591848.0,
+          "interval_score_jobs_exact": "591848",
+          "interval_width_jobs": 168,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 14792,
+          "miss_below_jobs": 0,
+          "published_count": 17161,
+          "score_fraction_of_case_total": 2.746955294816575,
+          "score_fraction_of_case_total_exact": "73981/26932",
+          "upper_miss_penalty_jobs_exact": "591680"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            524,
+            20452
+          ],
+          "interval_score_jobs": 19928.0,
+          "interval_score_jobs_exact": "19928",
+          "interval_width_jobs": 19928,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 17161,
+          "score_fraction_of_case_total": 0.09249220258428635,
+          "score_fraction_of_case_total_exact": "2491/26932",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44007__44005_44009",
+      "case_jobs": 33476,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            11882,
+            12054
+          ],
+          "interval_score_jobs": 204452.0,
+          "interval_score_jobs_exact": "204452",
+          "interval_width_jobs": 172,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 5107,
+          "miss_below_jobs": 0,
+          "published_count": 17161,
+          "score_fraction_of_case_total": 6.10742024136695,
+          "score_fraction_of_case_total_exact": "51113/8369",
+          "upper_miss_penalty_jobs_exact": "204280"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            6912,
+            18788
+          ],
+          "interval_score_jobs": 11876.0,
+          "interval_score_jobs_exact": "11876",
+          "interval_width_jobs": 11876,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 17161,
+          "score_fraction_of_case_total": 0.35476162026526464,
+          "score_fraction_of_case_total_exact": "2969/8369",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44007__44007_44009",
+      "case_jobs": 206980,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            7704,
+            7787
+          ],
+          "interval_score_jobs": 56043.0,
+          "interval_score_jobs_exact": "56043",
+          "interval_width_jobs": 83,
+          "lower_miss_penalty_jobs_exact": "55960",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 1399,
+          "published_count": 6305,
+          "score_fraction_of_case_total": 0.2707652913324959,
+          "score_fraction_of_case_total_exact": "56043/206980",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            206,
+            8038
+          ],
+          "interval_score_jobs": 7832.0,
+          "interval_score_jobs_exact": "7832",
+          "interval_width_jobs": 7832,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 6305,
+          "score_fraction_of_case_total": 0.03783940477340806,
+          "score_fraction_of_case_total_exact": "1958/51745",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44009__44001_44003",
+      "case_jobs": 11439,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            479,
+            548
+          ],
+          "interval_score_jobs": 25229.0,
+          "interval_score_jobs_exact": "25229",
+          "interval_width_jobs": 69,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 629,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 2.205524958475391,
+          "score_fraction_of_case_total_exact": "25229/11439",
+          "upper_miss_penalty_jobs_exact": "25160"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            44,
+            1727
+          ],
+          "interval_score_jobs": 1683.0,
+          "interval_score_jobs_exact": "1683",
+          "interval_width_jobs": 1683,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.14712824547600314,
+          "score_fraction_of_case_total_exact": "187/1271",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44009__44001_44005",
+      "case_jobs": 22262,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1428,
+            1489
+          ],
+          "interval_score_jobs": 10101.0,
+          "interval_score_jobs_exact": "10101",
+          "interval_width_jobs": 61,
+          "lower_miss_penalty_jobs_exact": "10040",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 251,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.45373281825532297,
+          "score_fraction_of_case_total_exact": "10101/22262",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            44,
+            1727
+          ],
+          "interval_score_jobs": 1683.0,
+          "interval_score_jobs_exact": "1683",
+          "interval_width_jobs": 1683,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.07559967657892373,
+          "score_fraction_of_case_total_exact": "1683/22262",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44009__44001_44007",
+      "case_jobs": 21039,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            592,
+            668
+          ],
+          "interval_score_jobs": 20436.0,
+          "interval_score_jobs_exact": "20436",
+          "interval_width_jobs": 76,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 509,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.9713389419649223,
+          "score_fraction_of_case_total_exact": "6812/7013",
+          "upper_miss_penalty_jobs_exact": "20360"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            44,
+            1727
+          ],
+          "interval_score_jobs": 1683.0,
+          "interval_score_jobs_exact": "1683",
+          "interval_width_jobs": 1683,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.0799942963068587,
+          "score_fraction_of_case_total_exact": "561/7013",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44009__44001_44009",
+      "case_jobs": 28039,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            172,
+            222
+          ],
+          "interval_score_jobs": 38250.0,
+          "interval_score_jobs_exact": "38250",
+          "interval_width_jobs": 50,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 955,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 1.364171332786476,
+          "score_fraction_of_case_total_exact": "38250/28039",
+          "upper_miss_penalty_jobs_exact": "38200"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            44,
+            1727
+          ],
+          "interval_score_jobs": 1683.0,
+          "interval_score_jobs_exact": "1683",
+          "interval_width_jobs": 1683,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 1177,
+          "score_fraction_of_case_total": 0.06002353864260494,
+          "score_fraction_of_case_total_exact": "153/2549",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44009__44003_44005",
+      "case_jobs": 30159,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            6111,
+            6264
+          ],
+          "interval_score_jobs": 158953.0,
+          "interval_score_jobs_exact": "158953",
+          "interval_width_jobs": 153,
+          "lower_miss_penalty_jobs_exact": "158800",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 3970,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 5.270499685002818,
+          "score_fraction_of_case_total_exact": "158953/30159",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            241,
+            9427
+          ],
+          "interval_score_jobs": 9186.0,
+          "interval_score_jobs_exact": "9186",
+          "interval_width_jobs": 9186,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 0.30458569581219536,
+          "score_fraction_of_case_total_exact": "3062/10053",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44009__44003_44007",
+      "case_jobs": 28936,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2751,
+            2894
+          ],
+          "interval_score_jobs": 24543.0,
+          "interval_score_jobs_exact": "24543",
+          "interval_width_jobs": 143,
+          "lower_miss_penalty_jobs_exact": "24400",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 610,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 0.8481821951893834,
+          "score_fraction_of_case_total_exact": "24543/28936",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            211,
+            8235
+          ],
+          "interval_score_jobs": 8024.0,
+          "interval_score_jobs_exact": "8024",
+          "interval_width_jobs": 8024,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 0.2773016311860658,
+          "score_fraction_of_case_total_exact": "1003/3617",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44009__44003_44009",
+      "case_jobs": 35936,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1046,
+            1150
+          ],
+          "interval_score_jobs": 39744.0,
+          "interval_score_jobs_exact": "39744",
+          "interval_width_jobs": 104,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 991,
+          "miss_below_jobs": 0,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 1.105966162065895,
+          "score_fraction_of_case_total_exact": "1242/1123",
+          "upper_miss_penalty_jobs_exact": "39640"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            102,
+            3978
+          ],
+          "interval_score_jobs": 3876.0,
+          "interval_score_jobs_exact": "3876",
+          "interval_width_jobs": 3876,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 2141,
+          "score_fraction_of_case_total": 0.10785841495992876,
+          "score_fraction_of_case_total_exact": "969/8984",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44009__44005_44007",
+      "case_jobs": 39759,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            11998,
+            12190
+          ],
+          "interval_score_jobs": 199032.0,
+          "interval_score_jobs_exact": "199032",
+          "interval_width_jobs": 192,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 4971,
+          "miss_below_jobs": 0,
+          "published_count": 17161,
+          "score_fraction_of_case_total": 5.005960914509922,
+          "score_fraction_of_case_total_exact": "66344/13253",
+          "upper_miss_penalty_jobs_exact": "198840"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            4605,
+            20084
+          ],
+          "interval_score_jobs": 15479.0,
+          "interval_score_jobs_exact": "15479",
+          "interval_width_jobs": 15479,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 17161,
+          "score_fraction_of_case_total": 0.389320656958173,
+          "score_fraction_of_case_total_exact": "15479/39759",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44009__44005_44009",
+      "case_jobs": 46759,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            8267,
+            8473
+          ],
+          "interval_score_jobs": 347726.0,
+          "interval_score_jobs_exact": "347726",
+          "interval_width_jobs": 206,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 8688,
+          "miss_below_jobs": 0,
+          "published_count": 17161,
+          "score_fraction_of_case_total": 7.436557668042516,
+          "score_fraction_of_case_total_exact": "347726/46759",
+          "upper_miss_penalty_jobs_exact": "347520"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            477,
+            18623
+          ],
+          "interval_score_jobs": 18146.0,
+          "interval_score_jobs_exact": "18146",
+          "interval_width_jobs": 18146,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 17161,
+          "score_fraction_of_case_total": 0.3880750229902265,
+          "score_fraction_of_case_total_exact": "18146/46759",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44005_44009__44007_44009",
+      "case_jobs": 45536,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            3409,
+            3568
+          ],
+          "interval_score_jobs": 109639.0,
+          "interval_score_jobs_exact": "109639",
+          "interval_width_jobs": 159,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 2737,
+          "miss_below_jobs": 0,
+          "published_count": 6305,
+          "score_fraction_of_case_total": 2.4077433239634574,
+          "score_fraction_of_case_total_exact": "109639/45536",
+          "upper_miss_penalty_jobs_exact": "109480"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            206,
+            8038
+          ],
+          "interval_score_jobs": 7832.0,
+          "interval_score_jobs_exact": "7832",
+          "interval_width_jobs": 7832,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 6305,
+          "score_fraction_of_case_total": 0.1719957835558679,
+          "score_fraction_of_case_total_exact": "979/5692",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44007_44009__44001_44003",
+      "case_jobs": 42272,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            3410,
+            3505
+          ],
+          "interval_score_jobs": 7335.0,
+          "interval_score_jobs_exact": "7335",
+          "interval_width_jobs": 95,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 181,
+          "miss_below_jobs": 0,
+          "published_count": 3686,
+          "score_fraction_of_case_total": 0.17351911430734293,
+          "score_fraction_of_case_total_exact": "7335/42272",
+          "upper_miss_penalty_jobs_exact": "7240"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            107,
+            4173
+          ],
+          "interval_score_jobs": 4066.0,
+          "interval_score_jobs_exact": "4066",
+          "interval_width_jobs": 4066,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 3686,
+          "score_fraction_of_case_total": 0.09618660105980317,
+          "score_fraction_of_case_total_exact": "2033/21136",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44007_44009__44001_44005",
+      "case_jobs": 11425,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2762,
+            2858
+          ],
+          "interval_score_jobs": 33216.0,
+          "interval_score_jobs_exact": "33216",
+          "interval_width_jobs": 96,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 828,
+          "miss_below_jobs": 0,
+          "published_count": 3686,
+          "score_fraction_of_case_total": 2.907308533916849,
+          "score_fraction_of_case_total_exact": "33216/11425",
+          "upper_miss_penalty_jobs_exact": "33120"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            454,
+            4182
+          ],
+          "interval_score_jobs": 3728.0,
+          "interval_score_jobs_exact": "3728",
+          "interval_width_jobs": 3728,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 3686,
+          "score_fraction_of_case_total": 0.3263019693654267,
+          "score_fraction_of_case_total_exact": "3728/11425",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44007_44009__44001_44007",
+      "case_jobs": 205418,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            3966,
+            4029
+          ],
+          "interval_score_jobs": 11263.0,
+          "interval_score_jobs_exact": "11263",
+          "interval_width_jobs": 63,
+          "lower_miss_penalty_jobs_exact": "11200",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 280,
+          "published_count": 3686,
+          "score_fraction_of_case_total": 0.05482966439163072,
+          "score_fraction_of_case_total_exact": "11263/205418",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            107,
+            4173
+          ],
+          "interval_score_jobs": 4066.0,
+          "interval_score_jobs_exact": "4066",
+          "interval_width_jobs": 4066,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 3686,
+          "score_fraction_of_case_total": 0.019793786328364604,
+          "score_fraction_of_case_total_exact": "2033/102709",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44007_44009__44001_44009",
+      "case_jobs": 39170,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            1499,
+            1615
+          ],
+          "interval_score_jobs": 82956.0,
+          "interval_score_jobs_exact": "82956",
+          "interval_width_jobs": 116,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 2071,
+          "miss_below_jobs": 0,
+          "published_count": 3686,
+          "score_fraction_of_case_total": 2.1178452897625735,
+          "score_fraction_of_case_total_exact": "41478/19585",
+          "upper_miss_penalty_jobs_exact": "82840"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            107,
+            4173
+          ],
+          "interval_score_jobs": 4066.0,
+          "interval_score_jobs_exact": "4066",
+          "interval_width_jobs": 4066,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 3686,
+          "score_fraction_of_case_total": 0.10380393158029104,
+          "score_fraction_of_case_total_exact": "2033/19585",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44007_44009__44003_44005",
+      "case_jobs": 45137,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            28789,
+            28919
+          ],
+          "interval_score_jobs": 61970.0,
+          "interval_score_jobs_exact": "61970",
+          "interval_width_jobs": 130,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1546,
+          "miss_below_jobs": 0,
+          "published_count": 30465,
+          "score_fraction_of_case_total": 1.3729312980481645,
+          "score_fraction_of_case_total_exact": "61970/45137",
+          "upper_miss_penalty_jobs_exact": "61840"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            27313,
+            34102
+          ],
+          "interval_score_jobs": 6789.0,
+          "interval_score_jobs_exact": "6789",
+          "interval_width_jobs": 6789,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 30465,
+          "score_fraction_of_case_total": 0.15040875556638678,
+          "score_fraction_of_case_total_exact": "6789/45137",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44007_44009__44003_44007",
+      "case_jobs": 239130,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            34638,
+            34834
+          ],
+          "interval_score_jobs": 167116.0,
+          "interval_score_jobs_exact": "167116",
+          "interval_width_jobs": 196,
+          "lower_miss_penalty_jobs_exact": "166920",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 4173,
+          "published_count": 30465,
+          "score_fraction_of_case_total": 0.6988499979090871,
+          "score_fraction_of_case_total_exact": "83558/119565",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            18014,
+            37480
+          ],
+          "interval_score_jobs": 19466.0,
+          "interval_score_jobs_exact": "19466",
+          "interval_width_jobs": 19466,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 30465,
+          "score_fraction_of_case_total": 0.08140342073349224,
+          "score_fraction_of_case_total_exact": "9733/119565",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44007_44009__44003_44009",
+      "case_jobs": 72882,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            21255,
+            21517
+          ],
+          "interval_score_jobs": 358182.0,
+          "interval_score_jobs_exact": "358182",
+          "interval_width_jobs": 262,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 8948,
+          "miss_below_jobs": 0,
+          "published_count": 30465,
+          "score_fraction_of_case_total": 4.914546801679427,
+          "score_fraction_of_case_total_exact": "19899/4049",
+          "upper_miss_penalty_jobs_exact": "357920"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            6932,
+            37196
+          ],
+          "interval_score_jobs": 30264.0,
+          "interval_score_jobs_exact": "30264",
+          "interval_width_jobs": 30264,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 30465,
+          "score_fraction_of_case_total": 0.4152465629373508,
+          "score_fraction_of_case_total_exact": "5044/12147",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44007_44009__44005_44007",
+      "case_jobs": 208283,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            6542,
+            6629
+          ],
+          "interval_score_jobs": 109167.0,
+          "interval_score_jobs_exact": "109167",
+          "interval_width_jobs": 87,
+          "lower_miss_penalty_jobs_exact": "109080",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 2727,
+          "published_count": 3815,
+          "score_fraction_of_case_total": 0.5241282293802183,
+          "score_fraction_of_case_total_exact": "109167/208283",
+          "upper_miss_penalty_jobs_exact": "0"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            178,
+            6967
+          ],
+          "interval_score_jobs": 6789.0,
+          "interval_score_jobs_exact": "6789",
+          "interval_width_jobs": 6789,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 3815,
+          "score_fraction_of_case_total": 0.032595074970112776,
+          "score_fraction_of_case_total_exact": "6789/208283",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44007_44009__44005_44009",
+      "case_jobs": 42035,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            2372,
+            2515
+          ],
+          "interval_score_jobs": 52143.0,
+          "interval_score_jobs_exact": "52143",
+          "interval_width_jobs": 143,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 1300,
+          "miss_below_jobs": 0,
+          "published_count": 3815,
+          "score_fraction_of_case_total": 1.240466278101582,
+          "score_fraction_of_case_total_exact": "7449/6005",
+          "upper_miss_penalty_jobs_exact": "52000"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            178,
+            6967
+          ],
+          "interval_score_jobs": 6789.0,
+          "interval_score_jobs_exact": "6789",
+          "interval_width_jobs": 6789,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 3815,
+          "score_fraction_of_case_total": 0.16150826692042344,
+          "score_fraction_of_case_total_exact": "6789/42035",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    },
+    {
+      "case": "44007_44009__44007_44009",
+      "case_jobs": 236028,
+      "laws": {
+        "ordinary_conditional_worker": {
+          "interval": [
+            169236,
+            169482
+          ],
+          "interval_score_jobs": 747966.0,
+          "interval_score_jobs_exact": "747966",
+          "interval_width_jobs": 246,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 18693,
+          "miss_below_jobs": 0,
+          "published_count": 188175,
+          "score_fraction_of_case_total": 3.168971477960242,
+          "score_fraction_of_case_total_exact": "7333/2314",
+          "upper_miss_penalty_jobs_exact": "747720"
+        },
+        "uniform_aggregate_tables": {
+          "interval": [
+            164718,
+            197864
+          ],
+          "interval_score_jobs": 33146.0,
+          "interval_score_jobs_exact": "33146",
+          "interval_width_jobs": 33146,
+          "lower_miss_penalty_jobs_exact": "0",
+          "miss_above_jobs": 0,
+          "miss_below_jobs": 0,
+          "published_count": 188175,
+          "score_fraction_of_case_total": 0.14043249106038266,
+          "score_fraction_of_case_total_exact": "16573/118014",
+          "upper_miss_penalty_jobs_exact": "0"
+        }
+      }
+    }
+  ],
+  "dependence": "100 overlapping cases from one released 5x5 table, not independent replications. No binomial confidence interval, calibration guarantee, or significance test.",
+  "experiment": "public_lodes_posthoc_interval_score",
+  "experiment_source_sha256": "bcd74f638152fd8ba637bad1de4e7f422dcaab6db6c69b757778bc4439a38b30",
+  "included_cases": 100,
+  "interpretation": "Propriety concerns expected loss for the specified quantiles. A lower realized mean on this dependent case frame does not establish empirical calibration or application-wide model validity.",
+  "new_data": "None; only the original checksum-pinned public county table and existing held-out report are used.",
+  "protocol_sha256": "f2dda7a355e51fd6d506c61f6355a5834fca2f790fe778abe6e077f4838a2ee4",
+  "reproduce": "python3 experiments/commuting_interval_score.py --output .local/reports/commuting-interval-score-replay.json",
+  "schema_version": 1,
+  "score_definition": {
+    "alpha_exact": "1/20",
+    "direction": "Lower is better; score units are published jobs.",
+    "discreteness": "Use nominal alpha=1/20, not one minus the achieved model interval mass. Width is u-l; endpoints are included.",
+    "formula": "(u-l)+(2/alpha)*(l-y)*1[y<l]+(2/alpha)*(y-u)*1[y>u]",
+    "miss_penalty_multiplier_exact": "40",
+    "name": "Negatively oriented central interval score (Winkler score)",
+    "nominal_interval_mass_exact": "19/20",
+    "quantile_probabilities_exact": [
+      "1/40",
+      "39/40"
+    ],
+    "reference": {
+      "authors": "Gneiting and Raftery",
+      "equation": 43,
+      "section": "6.2",
+      "url": "https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf",
+      "year": 2007
+    }
+  },
+  "scored_target": "FIPS-first home/work cell, one primary score per retained 2x2 case. Other affine-transformed cells and intercounty metrics are not scored in this supplement.",
+  "source_report": {
+    "path": "reports/commuting-backtest.json",
+    "sha256": "0f5482845d966177c676c9158b5a559a3bccd31e1d3bb5fb9b29ea1e30c4926f"
+  },
+  "subset": {
+    "bytes": 454,
+    "orientation": "rows = home county; columns = workplace county",
+    "path": "data/public-commuting/ri-2023-county-od.csv",
+    "sha256": "031fb665ef62c649f4a2aca7ffdcdb43a87ed67cb2aa2c104c867e7bdf63f7fb"
+  },
+  "summary": {
+    "ordinary_conditional_worker": {
+      "denominator": 100,
+      "mean_interval_score_jobs": 100507.84,
+      "mean_interval_score_jobs_exact": "2512696/25",
+      "mean_interval_width_jobs": 124.64,
+      "mean_miss_penalty_jobs": 100383.2,
+      "mean_score_fraction_of_case_total": 2.158824305144306,
+      "mean_score_fraction_of_case_total_exact": "15188013046044225737053916174542943378433554424329112236244361857538314076957926603634584909447188274082374622269899419773765930439916314354512828709704410955072343257080959417032957669869389695809969789142033118585437054944599958265146100703032161090285571587270000097162465831185347401546546452902495159623168358407101/7035316866616891282858173775134192551448469080634917712550767299559502109159577406064649151213916004308690761289875577209369710955117703484815914880920754102278873524053881865534285005550256464804359923747253176297873548746544977875986103827105475696750019062599971744204815123227253702176475942783733835703609421280000"
+    },
+    "uniform_aggregate_tables": {
+      "denominator": 100,
+      "mean_interval_score_jobs": 7912.36,
+      "mean_interval_score_jobs_exact": "197809/25",
+      "mean_interval_width_jobs": 7912.36,
+      "mean_miss_penalty_jobs": 0.0,
+      "mean_score_fraction_of_case_total": 0.17259795002714493,
+      "mean_score_fraction_of_case_total_exact": "25637002920661916012529809709224253149264654164884626937045247722584129225849451554209871816255142149311720791657891090146107891825478460776844690041292385121446473664222707336832646320754738059712144207409861706831431842761571044866256566157875880059848166063925900368735778269990029314607272987728699949705852386026771/148535964167766301439699185026623516933000742363727536866596038631022391304675593944171382886113162090968971073039469847855886316778210868735871493211697856772307184564298892935231920520407834071433986132018619480224459279181086710317190482414210769145899596015215532470388758004910888647564629179095283724774592458960000"
+    }
+  },
+  "verification": {
+    "all_primary_intervals_replayed_from_only_margins": true,
+    "endpoints_checked": 400,
+    "pinned_snapshot_validated": true
+  }
+}

@@ -1,0 +1,1 @@
+Large diagnostic output is preserved in compile.stdout.txt.gz. Paths are projected; the receipt records its compressed hash.

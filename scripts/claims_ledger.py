@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Validate immutable named-audit receipts and generate public claim summaries.
+"""Validate saved named and compiled-environment receipts and claim summaries.
 
-This replays saved named audits. It does not enumerate a Lean environment or
+This replays saved audits. It does not enumerate a live Lean environment or
 turn a successful old receipt into a fresh compiler run.
 """
 from __future__ import annotations
 import argparse
+import gzip
 import hashlib
 import json
 from pathlib import Path
@@ -13,10 +14,16 @@ import re
 import sys
 
 from check_lean_axioms import ALLOWED, check_audit
+from run_environment_audit import declaration_check, names as environment_names, strict_json
 
 BEGIN = '<!-- BEGIN GENERATED CLAIMS -->'
 END = '<!-- END GENERATED CLAIMS -->'
 CLASSES = {'lean_theorem', 'lean_component_cost', 'executable_reference', 'reviewed_mathematics', 'open_obligation'}
+# These tools orchestrate checking; their current bytes are not theorem inputs.
+# A historical run still binds the exact versions it used through its receipt.
+AUDIT_ORCHESTRATION_TOOLS = frozenset({
+    'scripts/prepare_environment_audit.py', 'scripts/run_environment_audit.py',
+})
 
 
 def digest(path: Path) -> str:
@@ -41,14 +48,16 @@ def unique_names(records: list, label: str) -> list[str]:
 
 
 def source_checks(root: Path, source_hashes: dict, upstream_revision: str | None) -> dict:
-    """Check owned sources strictly; absent separately pinned upstream is unchecked.
+    """Classify current input drift; absent pinned upstream is unchecked.
 
     The exemption is only the recorded openai-math checkout's lean subtree,
     and only with a full pinned revision. Every present upstream path must
     still be a regular file with the recorded digest. No digest is discarded.
+    Present changes to the two orchestration tools are reported separately;
+    required proof/configuration inputs and every missing input stay strict.
     """
     pinned = isinstance(upstream_revision, str) and re.fullmatch(r'[0-9a-f]{40}', upstream_revision)
-    mismatches, checked_upstream, unchecked = [], [], {}
+    mismatches, checking_tool_mismatches, checked_upstream, unchecked = [], [], [], {}
     for relative, expected in source_hashes.items():
         path = local_path(root, relative)
         upstream = bool(pinned) and Path(relative).parts[:3] == ('.upstream', 'openai-math', 'lean')
@@ -56,9 +65,14 @@ def source_checks(root: Path, source_hashes: dict, upstream_revision: str | None
             unchecked[relative] = expected
         elif not path.is_file() or digest(path) != expected:
             mismatches.append(relative)
+            # Missing inputs remain errors, even for a known orchestration tool.
+            if relative in AUDIT_ORCHESTRATION_TOOLS and path.is_file():
+                checking_tool_mismatches.append(relative)
         elif upstream:
             checked_upstream.append(relative)
     return {'current_source_mismatches': sorted(mismatches),
+            'checking_tool_mismatches': sorted(checking_tool_mismatches),
+            'required_input_mismatches': sorted(set(mismatches) - set(checking_tool_mismatches)),
             'upstream_revision': upstream_revision,
             'checked_upstream_sources': sorted(checked_upstream),
             'unchecked_upstream_source_sha256': dict(sorted(unchecked.items()))}
@@ -69,6 +83,11 @@ def validate_receipt(root: Path, spec: dict) -> dict:
     if digest(path) != spec['sha256']:
         raise ValueError(f"receipt digest mismatch: {spec['id']}")
     receipt = json.loads(path.read_text(encoding='utf-8'))
+    receipt_format = spec.get('format', 'named_audit')
+    if receipt_format == 'compiled_environment':
+        return validate_compiled_receipt(root, path, spec, receipt)
+    if receipt_format != 'named_audit':
+        raise ValueError('unknown receipt format')
     accepted_statuses = {'passed', 'passed_selected_module_compilations_and_named_audits_private_projection_pending_publication_review'}
     if receipt.get('status') not in accepted_statuses or receipt.get('status') != spec['status'] or set(receipt.get('allowed_axioms', [])) != ALLOWED:
         raise ValueError(f"receipt not passed with standard axiom policy: {spec['id']}")
@@ -148,6 +167,99 @@ def validate_receipt(root: Path, spec: dict) -> dict:
             **checks}
 
 
+def validate_compiled_receipt(root: Path, path: Path, spec: dict, receipt: dict) -> dict:
+    """Replay an additive research audit; never relabel it a default rebuild."""
+    if receipt.get('schema_version') != 1 or receipt.get('status') != 'passed' or spec['status'] != 'passed':
+        raise ValueError('compiled-environment receipt not passed')
+    if (spec['commit_kind'] != 'source_hashes_only' or spec['commit'] is not None
+            or receipt.get('repository_commit') is not None
+            or receipt.get('source_checkout_base_commit') is not None):
+        raise ValueError('compiled-environment research receipt requires source-only binding')
+    if spec['scope'] != receipt.get('scope'):
+        raise ValueError('compiled-environment receipt scope differs from binding')
+    def artifact(relative, expected):
+        artifact_path = local_path(path.parent, relative)
+        if digest(artifact_path) != expected:
+            raise ValueError(f'artifact digest mismatch: {relative}')
+        return strict_json(gzip.decompress(artifact_path.read_bytes()).decode('utf-8'))
+    audit = artifact(receipt.get('audit_file', 'audit.stdout.json.gz'), receipt['audit_sha256'])
+    objects = artifact(receipt['imported_objects_file'], receipt['imported_objects_sha256'])
+    modules = environment_names(receipt['modules'], 'compiled modules')
+    if (audit.get('schema_version') != 1 or audit.get('method') != 'compiled Lean environment'
+            or audit['modules'] != modules or audit['prefixes'] != []):
+        raise ValueError('compiled environment differs from receipt module scope')
+    imported = set(environment_names(audit['imported_modules'], 'imported modules'))
+    if set(objects) != imported or any(not re.fullmatch(r'[0-9a-f]{64}', h) for h in objects.values()):
+        raise ValueError('imported-object hashes differ from compiled environment')
+    compilation = receipt['compilation']
+    compiled_modules = environment_names([c['module'] for c in compilation], 'compilation roster')
+    if not set(modules) <= set(compiled_modules):
+        raise ValueError('compiled module omitted from compilation receipt')
+    source_hashes, module_sources = {}, {}
+    for compiled in compilation:
+        source, value = compiled['source'], compiled['source_sha256']
+        local_path(root, source)
+        module_suffix = Path(compiled['module'].replace('.', '/') + '.lean').parts
+        if Path(source).parts[-len(module_suffix):] != module_suffix:
+            raise ValueError('compilation defining module/source attribution differs')
+        if (compiled.get('returncode') != 0 or not re.fullmatch(r'[0-9a-f]{64}', value)
+                or objects.get(compiled['module']) != compiled['olean_sha256']):
+            raise ValueError('compilation failed or source/object hash binding differs')
+        if source in source_hashes and source_hashes[source] != value:
+            raise ValueError('conflicting compilation source hashes')
+        source_hashes[source] = value
+        module_sources[compiled['module']] = source
+    records = audit['declarations']
+    record_names = unique_names(records, spec['id'])
+    if len(records) != audit['declaration_count'] or len(records) != receipt['declaration_count']:
+        raise ValueError('compiled declaration count differs from receipt')
+    module_counts = {}
+    for record in records:
+        declaration_check(record, imported)
+        if record['module'] not in modules:
+            raise ValueError('declaration outside compiled module scope')
+        module_counts[record['module']] = module_counts.get(record['module'], 0) + 1
+    theorem_names = [r['name'] for r in records if r['kind'] == 'theorem']
+    if (theorem_names != audit['theorem_names'] or len(theorem_names) != audit['theorem_count']
+            or len(theorem_names) != receipt['theorem_count']):
+        raise ValueError('compiled theorem count/roster differs from receipt')
+    headlines = audit['headlines']
+    if unique_names(headlines, 'compiled headlines') != unique_names(receipt['headlines'], 'receipt headlines'):
+        raise ValueError('compiled headline omitted or differs from receipt')
+    by_name = dict(zip(record_names, records))
+    origins = {}
+    for headline, saved in zip(headlines, receipt['headlines']):
+        closure = environment_names(headline['closure'], 'headline closure')
+        closure_records = headline['declarations']
+        if [r['name'] for r in closure_records] != closure or headline['name'] not in closure:
+            raise ValueError('headline closure records are incomplete')
+        closure_set = set(closure)
+        for record in closure_records:
+            declaration_check(record, imported)
+            if not set(record['dependencies']) <= closure_set:
+                raise ValueError('headline closure misses a compiled dependency')
+        closure_by_name = {r['name']: r for r in closure_records}
+        seen, pending = set(), [headline['name']]
+        while pending:
+            current = pending.pop()
+            if current not in seen:
+                seen.add(current)
+                pending.extend(closure_by_name[current]['dependencies'])
+        defining = closure_by_name[headline['name']]
+        if (seen != closure_set or by_name.get(headline['name']) != defining
+                or saved['closure_size'] != len(closure) or saved['statement'] != defining['statement']):
+            raise ValueError('headline closure or statement differs from receipt inventory')
+        origins[headline['name']] = {'module': defining['module'], 'source': module_sources[defining['module']]}
+    checks = source_checks(root, source_hashes, receipt.get('upstream_commit'))
+    if checks['required_input_mismatches']:
+        raise ValueError('compiled-environment source bytes differ from receipt')
+    return {'id': spec['id'], 'path': spec['path'], 'label': spec['label'],
+            'format': 'compiled_environment', 'commit': None, 'commit_kind': spec['commit_kind'],
+            'scope': spec['scope'], 'count': len(records), 'module_counts': module_counts,
+            'names': record_names, 'records': records, 'source_hashes': source_hashes,
+            'headline_origins': origins, **checks}
+
+
 def validate_ledger(root: Path, ledger: dict) -> dict:
     if not ledger.get('claims'):
         raise ValueError('claims ledger must have explicit nonempty headline claims')
@@ -163,18 +275,23 @@ def validate_ledger(root: Path, ledger: dict) -> dict:
     disjoint = ledger['disjoint_component_scopes']
     seen = set()
     for scope_id in disjoint:
+        if scopes[scope_id].get('format') == 'compiled_environment':
+            raise ValueError('additive compiled research scopes cannot enter default disjoint counts')
         names = set(scopes[scope_id]['names'])
         if seen & names:
             raise ValueError('component scopes advertised as disjoint overlap')
         seen |= names
-    summary_ids = ledger.get('summary_receipt_ids', list(scopes))
+    summary_ids = ledger.get('summary_receipt_ids', [i for i, s in scopes.items()
+                                                   if s.get('format') != 'compiled_environment'])
     if not summary_ids or len(summary_ids) != len(set(summary_ids)) or any(i not in scopes for i in summary_ids):
         raise ValueError('summary must reference distinct validated receipt scopes')
+    if any(scopes[i].get('format') == 'compiled_environment' for i in summary_ids):
+        raise ValueError('additive compiled research scopes cannot enter default named-count summary')
     current_id = ledger.get('current_receipt')
     if current_id is not None:
         if current_id not in summary_ids or current_id not in disjoint:
             raise ValueError('current receipt must be included in summary and current disjoint scope')
-        if scopes[current_id]['current_source_mismatches']:
+        if scopes[current_id]['required_input_mismatches']:
             raise ValueError('current receipt source bytes differ from current checkout')
     claims = []
     ids = set()
@@ -200,16 +317,25 @@ def validate_ledger(root: Path, ledger: dict) -> dict:
             for headline in claim['headlines']:
                 source = headline['source']
                 module = headline['module']
-                # Public Math115 headline namespaces follow their defining module.
-                # This explicit reviewed attribution is required until a compiled
-                # environment report supplies independently authenticated origins.
-                if source != 'formal/' + module.replace('.', '/') + '.lean' or headline['name'].rsplit('.', 1)[0] != module:
+                canonical = (source == 'formal/' + module.replace('.', '/') + '.lean'
+                             and headline['name'].rsplit('.', 1)[0] == module)
+                compiled_evidence = any(scopes[e['receipt']].get('format') == 'compiled_environment'
+                                        for e in claim['evidence'])
+                if not compiled_evidence and not canonical:
                     raise ValueError('headline defining module/source attribution differs from canonical namespace')
                 if source not in claim['sources']:
                     raise ValueError('headline source missing from claim sources')
                 bound = False
                 for evidence in claim['evidence']:
                     scope = scopes[evidence['receipt']]
+                    if scope.get('format') == 'compiled_environment':
+                        origin = scope['headline_origins'].get(headline['name'])
+                        if origin is None:
+                            continue
+                        if origin != {'module': module, 'source': source}:
+                            raise ValueError('headline attribution differs from compiled defining module/source')
+                    elif headline['name'] in scope['names'] and not canonical:
+                        raise ValueError('headline defining module/source attribution differs from canonical namespace')
                     if headline['name'] in scope['names'] and source in scope['source_hashes']:
                         if digest(local_path(root, source)) != scope['source_hashes'][source]:
                             raise ValueError(f'headline source differs from verified bytes: {source}')
@@ -236,7 +362,13 @@ def render(result: dict) -> str:
     for scope_id in result['summary_receipt_ids']:
         scope = result['scopes'][scope_id]
         commit = f"exact commit `{scope['commit'][:7]}`" if scope['commit_kind'] == 'exact_repository_commit' else 'source hashes bound by the receipt'
-        drift = ' Selected source/configuration bytes differ in the current checkout; this receipt does not verify the new aggregate.' if scope['current_source_mismatches'] else ''
+        drift = ''
+        if scope['required_input_mismatches']:
+            drift = ' Selected source/configuration bytes differ in the current checkout; this receipt does not verify the new aggregate.'
+        elif scope['checking_tool_mismatches']:
+            tools = ', '.join('`' + p + '`' for p in scope['checking_tool_mismatches'])
+            drift = (' Theorem sources and compilation inputs still match; checking-tool bytes changed: '
+                     + tools + '. This historical receipt does not verify the changed tools or record a new run.')
         breakdown = ''
         if 'Math115' in scope['module_counts']:
             focused = scope['module_counts']['Math115']
@@ -314,6 +446,11 @@ def main() -> int:
                               'disjoint_component_count': result['disjoint_count'],
                               'current_receipt': result['current_receipt'],
                               'summary_receipt_ids': result['summary_receipt_ids'],
+                              'current_source_compatibility': {k: {
+                                  'required_inputs_match': not v['required_input_mismatches'],
+                                  'changed_required_inputs': v['required_input_mismatches'],
+                                  'changed_checking_tools': v['checking_tool_mismatches']
+                              } for k, v in result['scopes'].items()},
                               'upstream_source_validation': {k: {
                                   'pinned_revision': v['upstream_revision'],
                                   'checked_present': len(v['checked_upstream_sources']),

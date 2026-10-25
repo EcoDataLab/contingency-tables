@@ -1,0 +1,65 @@
+{
+  "source_and_driver_bytes_unchanged": true,
+  "streams": [
+    {
+      "path": "compilation/PrinterRuntime.LinearCollections/stdout.txt",
+      "original_sha256": "1347804b9c7693ed6688836641d43932987dd13bacc82f64db0e45474b096476",
+      "public_sha256": "59982a7d51413bb0697d545a4af15e733058f4a1c809cdcf575a9c5254a8570b",
+      "rule": "Repo absolute prefix becomes <repo>; other bytes unchanged."
+    },
+    {
+      "path": "compilation/PrinterRuntime.LinearCollections/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rule": "Repo absolute prefix becomes <repo>; other bytes unchanged."
+    },
+    {
+      "path": "compilation/PrinterRuntime.PrinterDegree/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rule": "Repo absolute prefix becomes <repo>; other bytes unchanged."
+    },
+    {
+      "path": "compilation/PrinterRuntime.PrinterDegree/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rule": "Repo absolute prefix becomes <repo>; other bytes unchanged."
+    },
+    {
+      "path": "audit/stdout.txt",
+      "original_sha256": "818b30a60693cd18f658cd1eecbb362d33dfe362cd12dcb34a63c91ee15f7885",
+      "public_sha256": "818b30a60693cd18f658cd1eecbb362d33dfe362cd12dcb34a63c91ee15f7885",
+      "rule": "Repo absolute prefix becomes <repo>; other bytes unchanged."
+    },
+    {
+      "path": "audit/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rule": "Repo absolute prefix becomes <repo>; other bytes unchanged."
+    },
+    {
+      "path": "history/memory-attempt-2/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rule": "Repo absolute prefix becomes <repo>; other bytes unchanged."
+    },
+    {
+      "path": "history/memory-attempt-2/stderr.txt",
+      "original_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "public_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "rule": "Repo absolute prefix becomes <repo>; other bytes unchanged."
+    },
+    {
+      "path": "history/memory-attempt-3/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "rule": "Repo absolute prefix becomes <repo>; other bytes unchanged."
+    },
+    {
+      "path": "history/memory-attempt-3/stderr.txt",
+      "original_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "public_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "rule": "Repo absolute prefix becomes <repo>; other bytes unchanged."
+    }
+  ]
+}

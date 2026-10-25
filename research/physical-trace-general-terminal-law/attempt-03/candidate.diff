@@ -1,0 +1,26 @@
+--- initial.lean
++++ checked.lean
+@@ -32 +32 @@
+-    simpa only [terminalPartialRepair, dif_pos hs, Option.some.injEq] using he
++    simpa only [terminalPartialRepair, dite_eq_left hs, Option.some.injEq] using he
+@@ -34 +34 @@
+-    simp only [terminalPartialRepair, dif_pos a.val.property, a.property]⟩
++    simp only [terminalPartialRepair, dite_eq_left a.val.property, a.property]⟩
+@@ -113 +113 @@
+-  have hD : 0 < D := (Nat.mul_pos_iff.mp (hZ.trans_le hb)).1
++  have hD : 0 < D := Nat.pos_of_mul_pos_right (hZ.trans_le hb)
+@@ -121,2 +121,5 @@
+-    (show (0 : ℚ) ≤ inverseSupportAllowance r c cutoff by positivity)
+-  simpa only [mul_assoc, mul_comm, mul_left_comm] using h
++    (Nat.cast_nonneg (inverseSupportAllowance r c cutoff) : (0 : ℚ) ≤ _)
++  calc
++    (inverseSupportAllowance r c cutoff : ℚ) * Fintype.card (DefectJoint r c cutoff 7) ≤
++      (inverseSupportAllowance r c cutoff : ℚ) * ((D : ℚ) * Fintype.card (Table r c)) := h
++    _ = _ := by ring
+@@ -141 +144 @@
+-    (Nat.mul_pos_iff.mp (hZ.trans_le hb)).1
++    Nat.pos_of_mul_pos_right (hZ.trans_le hb)
+@@ -148 +151,2 @@
+-      ((2 * (cellCount * (cellCount - 1)) : ℕ) : ℚ) := by positivity
++      ((2 * (cellCount * (cellCount - 1)) : ℕ) : ℚ) :=
++    div_pos (Nat.cast_pos.mpr hc0) (Nat.cast_pos.mpr hD)

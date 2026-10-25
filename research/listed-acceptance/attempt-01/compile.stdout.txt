@@ -1,0 +1,20 @@
+<packet>/formal/ResearchListedAcceptance/Decision.lean:35:47: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+
+Note: It is not possible to treat `Fibre` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/formal/ResearchListedAcceptance/Decision.lean:39:50: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+
+Note: It is not possible to treat `Fibre` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/formal/ResearchListedAcceptance/Decision.lean:57:59: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+
+Note: It is not possible to treat `Fibre` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/formal/ResearchListedAcceptance/Decision.lean:81:46: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+
+Note: It is not possible to treat `Fibre` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/formal/ResearchListedAcceptance/Decision.lean:96:4: warning: declaration uses `sorry`
+<packet>/formal/ResearchListedAcceptance/Decision.lean:100:6: warning: declaration uses `sorry`
+<packet>/formal/ResearchListedAcceptance/Decision.lean:109:4: warning: Unused tactic linter: `exact
+  (finiteFibreEquiv r c U L hr hc x).apply_symm_apply (programTable r c U L hr hc x h word)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<packet>/formal/ResearchListedAcceptance/Decision.lean:131:8: warning: declaration uses `sorry`
+<packet>/formal/ResearchListedAcceptance/Decision.lean:151:8: warning: declaration uses `sorry`

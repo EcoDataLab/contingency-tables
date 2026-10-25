@@ -1,0 +1,7 @@
+{
+  "original_source_sha256": "00ecfe42df6e7218cc2750bfb7f8bf9b724e56962b602b5ad0be5b16badfbb1e",
+  "final_source_sha256": "75728bb026442be097b380a4e90c1db7f1eb2a32c6a304dce1400f93bb40b0ca",
+  "original_statements_unchanged": true,
+  "new_declarations": [],
+  "scope": "Original declaration headers and hypotheses compared; new proof helpers listed. Mathematical definition bodies require the accompanying source review."
+}

@@ -1,0 +1,456 @@
+{
+  "evidence_class": "exact finite checks of a mathematical derivation; not Lean",
+  "upstream_revision": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "scope": "primary: m,n>=2, ordinary positive equal-total margins, every margin below U",
+  "claimed_research_allowances": {
+    "rational_defect_trace": "2500*d^16",
+    "dyadic_defect_trace": "5000*d^16",
+    "dimension": "d=10+(m+1)*(n+1)",
+    "ideal_cutoff": "U=5*d^3",
+    "status": "mathematical derivation; not integrated with the compiled sampler"
+  },
+  "primary_fixture_count": 8,
+  "exploratory_one_side_small_fixture_count": 4,
+  "cases": [
+    {
+      "rows": [
+        1,
+        1
+      ],
+      "columns": [
+        1,
+        1
+      ],
+      "U": 2,
+      "states": 14,
+      "max_degree": 6,
+      "all_small_degree_bound": 12,
+      "source_beta": "1/16384",
+      "global_beta": "1/24",
+      "guaranteed_gap_gain": "2048/3",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 12,
+        "max_DD_degree": 4,
+        "beta": "1/10",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "4717/6",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.07349716760417542,
+        "degree_MH_gap": 0.1597265355833543,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.17639320225002103
+      },
+      "scope": "primary: positive margins on both sides strictly below U"
+    },
+    {
+      "rows": [
+        2,
+        2
+      ],
+      "columns": [
+        2,
+        2
+      ],
+      "U": 3,
+      "states": 27,
+      "max_degree": 12,
+      "all_small_degree_bound": 12,
+      "source_beta": "1/16384",
+      "global_beta": "1/24",
+      "guaranteed_gap_gain": "2048/3",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 24,
+        "max_DD_degree": 4,
+        "beta": "1/10",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "24499/12",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.01490057613866293,
+        "degree_MH_gap": 0.017306185177860443,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.040153803605650865
+      },
+      "scope": "primary: positive margins on both sides strictly below U"
+    },
+    {
+      "rows": [
+        3,
+        3
+      ],
+      "columns": [
+        3,
+        3
+      ],
+      "U": 4,
+      "states": 40,
+      "max_degree": 12,
+      "all_small_degree_bound": 12,
+      "source_beta": "1/16384",
+      "global_beta": "1/24",
+      "guaranteed_gap_gain": "2048/3",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 36,
+        "max_DD_degree": 4,
+        "beta": "1/10",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "41137/12",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.006968667552474989,
+        "degree_MH_gap": 0.00824758951439353,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.018779952211467665
+      },
+      "scope": "primary: positive margins on both sides strictly below U"
+    },
+    {
+      "rows": [
+        4,
+        4
+      ],
+      "columns": [
+        4,
+        4
+      ],
+      "U": 5,
+      "states": 53,
+      "max_degree": 12,
+      "all_small_degree_bound": 12,
+      "source_beta": "1/16384",
+      "global_beta": "1/24",
+      "guaranteed_gap_gain": "2048/3",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 48,
+        "max_DD_degree": 4,
+        "beta": "1/10",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "18755/4",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.004007111454966681,
+        "degree_MH_gap": 0.004771221731641091,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.01074141613942186
+      },
+      "scope": "primary: positive margins on both sides strictly below U"
+    },
+    {
+      "rows": [
+        5,
+        5
+      ],
+      "columns": [
+        5,
+        5
+      ],
+      "U": 6,
+      "states": 66,
+      "max_degree": 12,
+      "all_small_degree_bound": 12,
+      "source_beta": "1/16384",
+      "global_beta": "1/24",
+      "guaranteed_gap_gain": "2048/3",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 60,
+        "max_DD_degree": 4,
+        "beta": "1/10",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "34133/6",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.002595779255028006,
+        "degree_MH_gap": 0.0030994571271441736,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.0069265842189614995
+      },
+      "scope": "primary: positive margins on both sides strictly below U"
+    },
+    {
+      "rows": [
+        6,
+        6
+      ],
+      "columns": [
+        6,
+        6
+      ],
+      "U": 7,
+      "states": 79,
+      "max_degree": 12,
+      "all_small_degree_bound": 12,
+      "source_beta": "1/16384",
+      "global_beta": "1/24",
+      "guaranteed_gap_gain": "2048/3",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 72,
+        "max_DD_degree": 4,
+        "beta": "1/10",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "40909/6",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.001816357259727414,
+        "degree_MH_gap": 0.0021721732349153445,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.004829678462307436
+      },
+      "scope": "primary: positive margins on both sides strictly below U"
+    },
+    {
+      "rows": [
+        2,
+        2
+      ],
+      "columns": [
+        2,
+        1,
+        1
+      ],
+      "U": 3,
+      "states": 74,
+      "max_degree": 20,
+      "all_small_degree_bound": 30,
+      "source_beta": "1/16384",
+      "global_beta": "1/60",
+      "guaranteed_gap_gain": "4096/15",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 70,
+        "max_DD_degree": 6,
+        "beta": "1/14",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "499297/60",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.007858597159562362,
+        "degree_MH_gap": 0.022334664808488232,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.03541591250355124
+      },
+      "scope": "primary: positive margins on both sides strictly below U"
+    },
+    {
+      "rows": [
+        1,
+        1,
+        1
+      ],
+      "columns": [
+        1,
+        1,
+        1
+      ],
+      "U": 2,
+      "states": 150,
+      "max_degree": 24,
+      "all_small_degree_bound": 72,
+      "source_beta": "1/32768",
+      "global_beta": "1/144",
+      "guaranteed_gap_gain": "2048/9",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 144,
+        "max_DD_degree": 6,
+        "beta": "1/18",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "134287/6",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.005562825404523712,
+        "degree_MH_gap": 0.042922324608886134,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.045957418745879504
+      },
+      "scope": "primary: positive margins on both sides strictly below U"
+    },
+    {
+      "rows": [
+        1,
+        1,
+        1
+      ],
+      "columns": [
+        2,
+        1
+      ],
+      "U": 2,
+      "states": 48,
+      "max_degree": 15,
+      "all_small_degree_bound": 30,
+      "source_beta": "1/16384",
+      "global_beta": "1/60",
+      "guaranteed_gap_gain": "4096/15",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 45,
+        "max_DD_degree": 6,
+        "beta": "1/14",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "66436/15",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.014589363866113597,
+        "degree_MH_gap": 0.04982152719075854,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.0651081840819678
+      },
+      "scope": "exploratory: only one side below U; outside the primary claim"
+    },
+    {
+      "rows": [
+        2,
+        1
+      ],
+      "columns": [
+        1,
+        1,
+        1
+      ],
+      "U": 2,
+      "states": 48,
+      "max_degree": 15,
+      "all_small_degree_bound": 30,
+      "source_beta": "1/16384",
+      "global_beta": "1/60",
+      "guaranteed_gap_gain": "4096/15",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 45,
+        "max_DD_degree": 6,
+        "beta": "1/14",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "74737/15",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.014589363866113404,
+        "degree_MH_gap": 0.049821527190759406,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.06510818408196825
+      },
+      "scope": "exploratory: only one side below U; outside the primary claim"
+    },
+    {
+      "rows": [
+        2,
+        2,
+        2
+      ],
+      "columns": [
+        3,
+        3
+      ],
+      "U": 3,
+      "states": 157,
+      "max_degree": 30,
+      "all_small_degree_bound": 30,
+      "source_beta": "1/16384",
+      "global_beta": "1/60",
+      "guaranteed_gap_gain": "4096/15",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 150,
+        "max_DD_degree": 6,
+        "beta": "1/14",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "290608/15",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.005338746678913268,
+        "degree_MH_gap": 0.014773313720170711,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.023851400632599495
+      },
+      "scope": "exploratory: only one side below U; outside the primary claim"
+    },
+    {
+      "rows": [
+        3,
+        3
+      ],
+      "columns": [
+        2,
+        2,
+        2
+      ],
+      "U": 3,
+      "states": 157,
+      "max_degree": 30,
+      "all_small_degree_bound": 30,
+      "source_beta": "1/16384",
+      "global_beta": "1/60",
+      "guaranteed_gap_gain": "4096/15",
+      "degree_identity_and_exact_stochasticity": "passed",
+      "defect_trace": {
+        "states": 150,
+        "max_DD_degree": 6,
+        "beta": "1/14",
+        "uniform_reversibility": "exact check passed",
+        "four_DD_channel_families": "exact neighbor equality; no duplicate DD targets",
+        "entire_Schur_matrix": "exact equality passed for every entry",
+        "harmonic_energy_identity": "359151/20",
+        "variance_restriction_and_repair_output": "exact checks passed"
+      },
+      "floating_diagnostic": {
+        "global_gap": 0.005338746678913301,
+        "degree_MH_gap": 0.014773313720170853,
+        "scope": "floating-point finite diagnostics; not spectral certificates",
+        "defect_trace_gap": 0.02385140063259985
+      },
+      "scope": "exploratory: only one side below U; outside the primary claim"
+    }
+  ],
+  "limits": [
+    "The accelerated trace changes the chain and its stationary repair law.",
+    "Four one-side-small fixtures are diagnostics outside the primary reviewed scope.",
+    "All graph identities are exact on these finite fixtures; enumeration is exponential.",
+    "Optional NumPy eigenvalues are floating diagnostics, not universal gap certificates.",
+    "No improved general reference/selected-chain theorem or complete runtime exponent is established.",
+    "Conditional support and label draws still require bounded finite-word error composition."
+  ],
+  "source_sha256": {
+    "experiments/defect_trace.py": "0e94d1004fa37c40b29a6f995811b2bb6c847ccebde4661d5ef6849ac95dd72c",
+    "src/contingency115/ideal_chain.py": "5432398d088bbd93d473a56fababadfb9f50c807a38e230c222e8527fa23235b",
+    "src/contingency115/tables.py": "fd6923478d1dcd3c2fbc642307e8483c8d2248f02132b22e3fa21211af52d5ee"
+  }
+}

@@ -1,0 +1,7 @@
+<packet>/revisions/attempt-03/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:39:6: error: Failed to rewrite using equation theorems for `DistinctRepairLabels`
+<packet>/revisions/attempt-03/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:119:8: error: Invalid pattern: Expected a constructor or constant marked with `[match_pattern]`
+<packet>/revisions/attempt-03/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:123:39: error(lean.unknownIdentifier): Unknown identifier `r`
+<packet>/revisions/attempt-03/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:123:41: error(lean.unknownIdentifier): Unknown identifier `c`
+<packet>/revisions/attempt-03/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:121:54: error: unsolved goals
+m n : ℕ
+⊢ sorry

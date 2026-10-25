@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.Mixing
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.Mixing] headlines [Math115.PhysicalTraceJoin.defectStationaryRat_cast, Math115.PhysicalTraceJoin.computedTrace_pi_lower, Math115.PhysicalTraceJoin.idealJoinedWalk_mixing, Math115.PhysicalTraceJoin.scheduledJoinedWalkWord_mixing]

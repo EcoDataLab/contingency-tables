@@ -96,8 +96,24 @@ def seam_requirements(root: Path) -> dict:
 
 
 def headlines(root: Path) -> list[str]:
-    ledger = json.loads((root / 'claims.json').read_text(encoding='utf-8'))
-    names = {h['name'] for c in ledger['claims'] for h in c['headlines']}
+    """Select default-scope claims; research namespaces can share Math115 names."""
+    ledger = strict_json((root / 'claims.json').read_text(encoding='utf-8'))
+    receipts = {r['id']: r for r in ledger['receipts']}
+    selected = set(ledger['disjoint_component_scopes'])
+    if len(receipts) != len(ledger['receipts']) or not selected or not selected <= receipts.keys():
+        raise ValueError('default headline selection requires distinct declared receipt scopes')
+    if any(receipts[i].get('format') == 'compiled_environment' for i in selected):
+        raise ValueError('additive research receipt cannot enter the default audit scope')
+    names = set()
+    for claim in ledger['claims']:
+        belongs = False
+        for evidence in claim['evidence']:
+            receipt = receipts.get(evidence['receipt'])
+            if receipt is None or evidence['scope'] != receipt['scope']:
+                raise ValueError('headline evidence scope differs from declared receipt scope')
+            belongs |= evidence['receipt'] in selected
+        if belongs:
+            names.update(h['name'] for h in claim['headlines'])
     contract = default_contract(root)
     if contract is not None:
         names.update(contract['headlines'])

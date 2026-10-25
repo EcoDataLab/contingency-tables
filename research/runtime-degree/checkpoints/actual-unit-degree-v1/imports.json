@@ -1,0 +1,507 @@
+{
+  "module_order": [
+    "ResearchBounds.TreeDegreeBounds",
+    "ResearchBounds.TreeArithmeticDegree",
+    "PrinterRuntime.LinearCollections",
+    "InitialRuntime.GreedyDegree",
+    "RetryRuntime.ListSeed",
+    "RetryRuntime.ListRepeatDegree",
+    "RetryRuntime.RangeDegree",
+    "RetryRuntime.MapWithDegree",
+    "ResearchBounds.DrawControlDegree",
+    "UnitRuntime.WordChoiceDegree",
+    "UnitRuntime.ExchangeDegree",
+    "ResearchBounds.WordCountSeedDegrees",
+    "ResearchBounds.FreshBitDegreeBounds",
+    "ResearchBounds.ScalarOutputSizeDegree",
+    "CountBounds.ListRepeatDegree",
+    "ResearchBounds.CatalogueLeafDegrees",
+    "ResearchBounds.SmallCellCatalogueDegree",
+    "UnitRuntime.NeighborHelpers",
+    "UnitRuntime.RefinedExchangeDegree",
+    "DivisionRuntime.Degree",
+    "CountBounds.ParserDegree",
+    "CountBounds.ScalarCircuitDegreeV2",
+    "DrawRuntime.RangeSeed",
+    "ReferenceRuntime.DecoderDegree",
+    "DrawRuntime.BranchDegree",
+    "UnitRuntime.TerminalIndexDegree",
+    "UnitRuntime.TerminalDegree",
+    "RetryRuntime.WordChunkDegree",
+    "RetryRuntime.WordChunksDegree",
+    "RetryRuntime.ActualRetryWordsDegree",
+    "ResearchBounds.DrawWalkDegree",
+    "UnitRuntime.UnitParsingDegree",
+    "UnitRuntime.ProfileEqualityDegree",
+    "UnitRuntime.ProfilePatternDegree",
+    "UnitRuntime.ProfileMarginsDegree",
+    "UnitRuntime.ProfileValidatorDegree",
+    "AffineMapWith.Degree",
+    "RepairRuntime.OutputHelpers",
+    "RepairRuntime.BaseDegree",
+    "RepairRuntime.CodeOutput",
+    "RepairRuntime.RefinedCodeDegree",
+    "RepairRuntime.ListDegree",
+    "RepairRuntime.InverseListDegree",
+    "UnitRuntime.UnitPackedTrialDegree",
+    "UnitRuntime.UnitPackedTrialAudit"
+  ],
+  "modules": [
+    {
+      "module": "ResearchBounds.TreeDegreeBounds",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/ResearchBounds/TreeDegreeBounds.lean",
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf",
+      "custom_imports": []
+    },
+    {
+      "module": "ResearchBounds.TreeArithmeticDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/ResearchBounds/TreeArithmeticDegree.lean",
+      "source_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76",
+      "custom_imports": [
+        "ResearchBounds.TreeDegreeBounds"
+      ]
+    },
+    {
+      "module": "PrinterRuntime.LinearCollections",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/PrinterRuntime/LinearCollections.lean",
+      "source_sha256": "7839ffe7bb9c651e1497ff09f244b19455bc5c2cc1c095264e60c1a34c695eb0",
+      "custom_imports": [
+        "ResearchBounds.TreeArithmeticDegree"
+      ]
+    },
+    {
+      "module": "InitialRuntime.GreedyDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/InitialRuntime/GreedyDegree.lean",
+      "source_sha256": "cc32b1173db329ce4f94a4e0cd6a0c07b0833df96a57d4d3ca16b4e64079fe8f",
+      "custom_imports": [
+        "PrinterRuntime.LinearCollections"
+      ]
+    },
+    {
+      "module": "RetryRuntime.ListSeed",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/RetryRuntime/ListSeed.lean",
+      "source_sha256": "5710dbdcd7f069eabb17cefc219664e5c1a707572af1a37d45c026029bb9a63d",
+      "custom_imports": [
+        "InitialRuntime.GreedyDegree"
+      ]
+    },
+    {
+      "module": "RetryRuntime.ListRepeatDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/RetryRuntime/ListRepeatDegree.lean",
+      "source_sha256": "ad34899b9537dfb2ddb3f5c1ac3d8cb56b8c675fce0e0e8b2aa006dfdc505d66",
+      "custom_imports": [
+        "RetryRuntime.ListSeed"
+      ]
+    },
+    {
+      "module": "RetryRuntime.RangeDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/RetryRuntime/RangeDegree.lean",
+      "source_sha256": "d85dc83fa2780ee03659544caa02b4cee6e3ab37052e8308860140e2627553e0",
+      "custom_imports": [
+        "RetryRuntime.ListRepeatDegree"
+      ]
+    },
+    {
+      "module": "RetryRuntime.MapWithDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/RetryRuntime/MapWithDegree.lean",
+      "source_sha256": "e60425408f0bb385d03392a661cfa57efbb75f6d50562b3fab8749deca8e5f07",
+      "custom_imports": [
+        "RetryRuntime.RangeDegree",
+        "PrinterRuntime.LinearCollections"
+      ]
+    },
+    {
+      "module": "ResearchBounds.DrawControlDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/ResearchBounds/DrawControlDegree.lean",
+      "source_sha256": "e498430420b0d985aa33af88b21098b1f4d6422041784dae9ddebca89b8704e4",
+      "custom_imports": [
+        "ResearchBounds.TreeDegreeBounds"
+      ]
+    },
+    {
+      "module": "UnitRuntime.WordChoiceDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/WordChoiceDegree.lean",
+      "packet_source": "source/UnitRuntime/WordChoiceDegree.lean",
+      "source_sha256": "90a10749f02a758b6e0f003dcb89a4370ee93a27f8e961c884af1893bc01db67",
+      "custom_imports": [
+        "RetryRuntime.MapWithDegree",
+        "ResearchBounds.DrawControlDegree"
+      ]
+    },
+    {
+      "module": "UnitRuntime.ExchangeDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/ExchangeDegree.lean",
+      "packet_source": "source/UnitRuntime/ExchangeDegree.lean",
+      "source_sha256": "b7d1989fe6cf2067bd1fb4d3841711634af06d80c0596244c894ca4423ca0037",
+      "custom_imports": [
+        "RetryRuntime.MapWithDegree",
+        "ResearchBounds.DrawControlDegree"
+      ]
+    },
+    {
+      "module": "ResearchBounds.WordCountSeedDegrees",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/generic-helpers-v1/ResearchBounds/WordCountSeedDegrees.lean",
+      "source_sha256": "fb04a131b99d25059f215287021fab61d026a1aafe2bbff838841c88157c7ccd",
+      "custom_imports": [
+        "ResearchBounds.TreeArithmeticDegree"
+      ]
+    },
+    {
+      "module": "ResearchBounds.FreshBitDegreeBounds",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/generic-helpers-v1/ResearchBounds/FreshBitDegreeBounds.lean",
+      "source_sha256": "fa55d0458fab0ea1a2ffe49c856c035bffec07b119c59b978f2e51e91ff56674",
+      "custom_imports": [
+        "ResearchBounds.TreeDegreeBounds"
+      ]
+    },
+    {
+      "module": "ResearchBounds.ScalarOutputSizeDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/generic-helpers-v1/ResearchBounds/ScalarOutputSizeDegree.lean",
+      "source_sha256": "11c1d1b471b784086d9dc18e9026e308e82812f30f636e4848eadb1f2217b0bb",
+      "custom_imports": [
+        "ResearchBounds.TreeArithmeticDegree"
+      ]
+    },
+    {
+      "module": "CountBounds.ListRepeatDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/CountBounds/ListRepeatDegree.lean",
+      "source_sha256": "f847e1521c780b1a3c3b89f892542e123406b75fbcb7e0d315191160ca1e0157",
+      "custom_imports": [
+        "ResearchBounds.WordCountSeedDegrees",
+        "ResearchBounds.ScalarOutputSizeDegree"
+      ]
+    },
+    {
+      "module": "ResearchBounds.CatalogueLeafDegrees",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/ResearchBounds/CatalogueLeafDegrees.lean",
+      "source_sha256": "a03e2425ff5a71a6f8ae4c11ec314ea7d27cf169bb2496bd1f57acad86a84a58",
+      "custom_imports": [
+        "ResearchBounds.WordCountSeedDegrees",
+        "ResearchBounds.FreshBitDegreeBounds",
+        "CountBounds.ListRepeatDegree"
+      ]
+    },
+    {
+      "module": "ResearchBounds.SmallCellCatalogueDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/ResearchBounds/SmallCellCatalogueDegree.lean",
+      "source_sha256": "ad347c5962f2948f751d8b9ea95c575745b85888a941a3fca28912f5fda7497f",
+      "custom_imports": [
+        "ResearchBounds.CatalogueLeafDegrees",
+        "ResearchBounds.DrawControlDegree",
+        "ResearchBounds.ScalarOutputSizeDegree"
+      ]
+    },
+    {
+      "module": "UnitRuntime.NeighborHelpers",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/NeighborHelpers.lean",
+      "packet_source": "source/UnitRuntime/NeighborHelpers.lean",
+      "source_sha256": "5c204123a9a69d90d87a6fafadc2f9496871ef5b2cde275adefee4d6cbec93d7",
+      "custom_imports": [
+        "UnitRuntime.WordChoiceDegree",
+        "UnitRuntime.ExchangeDegree",
+        "ResearchBounds.SmallCellCatalogueDegree"
+      ]
+    },
+    {
+      "module": "UnitRuntime.RefinedExchangeDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/RefinedExchangeDegree.lean",
+      "packet_source": "source/UnitRuntime/RefinedExchangeDegree.lean",
+      "source_sha256": "b6d609f925a278284adcd54e3a49bd07aa21f320426811f50f900a8d868d8e0f",
+      "custom_imports": [
+        "UnitRuntime.NeighborHelpers"
+      ]
+    },
+    {
+      "module": "DivisionRuntime.Degree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/DivisionRuntime/Degree.lean",
+      "source_sha256": "5e03bc8b825b6d0cbfecf77b6454db781ec2fe40c7ca55d644b94e3d9b4dff3c",
+      "custom_imports": [
+        "ResearchBounds.TreeArithmeticDegree"
+      ]
+    },
+    {
+      "module": "CountBounds.ParserDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/CountBounds/ParserDegree.lean",
+      "source_sha256": "8ea75320588440b047566b93d2aa42875588a8291bca7755e7faae0aa6a3489f",
+      "custom_imports": [
+        "CountBounds.ListRepeatDegree"
+      ]
+    },
+    {
+      "module": "CountBounds.ScalarCircuitDegreeV2",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/CountBounds/ScalarCircuitDegreeV2.lean",
+      "source_sha256": "804583ef44717abbe7193a92a4f971abfdea1a302e3521da2515d5de1c9267a2",
+      "custom_imports": [
+        "CountBounds.ParserDegree"
+      ]
+    },
+    {
+      "module": "DrawRuntime.RangeSeed",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-branch-degree-v1/DrawRuntime/RangeSeed.lean",
+      "source_sha256": "aaf1c1ce1067a4e21767a1790f7672773cd3e2cb3d98164b0a8a39916b6edf09",
+      "custom_imports": [
+        "CountBounds.ScalarCircuitDegreeV2",
+        "ResearchBounds.DrawControlDegree"
+      ]
+    },
+    {
+      "module": "ReferenceRuntime.DecoderDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DecoderDegree.lean",
+      "packet_source": "source/ReferenceRuntime/DecoderDegree.lean",
+      "source_sha256": "2b86c895c870cb76ecbb7b38e0310193cf1ce792be8af53d8cf761fa7450646a",
+      "custom_imports": [
+        "DivisionRuntime.Degree",
+        "DrawRuntime.RangeSeed"
+      ]
+    },
+    {
+      "module": "DrawRuntime.BranchDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-branch-degree-v1/DrawRuntime/BranchDegree.lean",
+      "source_sha256": "dbc0149be5f16046cacce5c5020307a808298662ce072eac39d20328eae30fd1",
+      "custom_imports": [
+        "DrawRuntime.RangeSeed"
+      ]
+    },
+    {
+      "module": "UnitRuntime.TerminalIndexDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/TerminalIndexDegree.lean",
+      "packet_source": "source/UnitRuntime/TerminalIndexDegree.lean",
+      "source_sha256": "49ac336eaab43eefd493304512224aacf4a79a9dafb1e56627e3128f7a234dc3",
+      "custom_imports": [
+        "UnitRuntime.RefinedExchangeDegree",
+        "ReferenceRuntime.DecoderDegree",
+        "DrawRuntime.BranchDegree"
+      ]
+    },
+    {
+      "module": "UnitRuntime.TerminalDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/TerminalDegree.lean",
+      "packet_source": "source/UnitRuntime/TerminalDegree.lean",
+      "source_sha256": "d978423210bf8dac19bb795fa82650548336715138470ff92838841dd97cdf83",
+      "custom_imports": [
+        "UnitRuntime.TerminalIndexDegree"
+      ]
+    },
+    {
+      "module": "RetryRuntime.WordChunkDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/RetryRuntime/WordChunkDegree.lean",
+      "source_sha256": "b65d6dcff508a4a7e4976c5d727ee8731dadf014599c6f8972e2bd0db2cafaba",
+      "custom_imports": [
+        "RetryRuntime.ListRepeatDegree"
+      ]
+    },
+    {
+      "module": "RetryRuntime.WordChunksDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/RetryRuntime/WordChunksDegree.lean",
+      "source_sha256": "599011a40e0da48a243d85551c5397ce8430195a2084c48b072b1eff4c0c2157",
+      "custom_imports": [
+        "RetryRuntime.WordChunkDegree",
+        "RetryRuntime.MapWithDegree",
+        "DivisionRuntime.Degree"
+      ]
+    },
+    {
+      "module": "RetryRuntime.ActualRetryWordsDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-retry-degree-v1/source/RetryRuntime/ActualRetryWordsDegree.lean",
+      "source_sha256": "f99a096ec1364fb8cdef055c6b7209e9464321febe4baa44a4d27822e23a97df",
+      "custom_imports": [
+        "RetryRuntime.WordChunksDegree"
+      ]
+    },
+    {
+      "module": "ResearchBounds.DrawWalkDegree",
+      "role": "existing-public-import",
+      "repository_source": "research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/ResearchBounds/DrawWalkDegree.lean",
+      "source_sha256": "4284ab37b05c20239ff069b8354538158b2938fe1d41c1a7119bde93ebb2b2dd",
+      "custom_imports": [
+        "ResearchBounds.DrawControlDegree",
+        "ResearchBounds.WordCountSeedDegrees",
+        "CountBounds.ListRepeatDegree"
+      ]
+    },
+    {
+      "module": "UnitRuntime.UnitParsingDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/UnitParsingDegree.lean",
+      "packet_source": "source/UnitRuntime/UnitParsingDegree.lean",
+      "source_sha256": "ea524482804f229a4c72abf1e94c83a24d82a58d79b14e012ecaf0300137f134",
+      "custom_imports": [
+        "UnitRuntime.TerminalDegree",
+        "RetryRuntime.ActualRetryWordsDegree",
+        "ResearchBounds.DrawWalkDegree"
+      ]
+    },
+    {
+      "module": "UnitRuntime.ProfileEqualityDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/ProfileEqualityDegree.lean",
+      "packet_source": "source/UnitRuntime/ProfileEqualityDegree.lean",
+      "source_sha256": "1a9026571f7e4a7847b4586a9ac4187d1db8153bb39f0e3d1da56ddda3bed026",
+      "custom_imports": [
+        "UnitRuntime.TerminalDegree"
+      ]
+    },
+    {
+      "module": "UnitRuntime.ProfilePatternDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/ProfilePatternDegree.lean",
+      "packet_source": "source/UnitRuntime/ProfilePatternDegree.lean",
+      "source_sha256": "5e95bc31f2655d8a4b15ccf6d7291ed47d9cce9187784788bcc7b599d992098a",
+      "custom_imports": [
+        "UnitRuntime.TerminalDegree"
+      ]
+    },
+    {
+      "module": "UnitRuntime.ProfileMarginsDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/ProfileMarginsDegree.lean",
+      "packet_source": "source/UnitRuntime/ProfileMarginsDegree.lean",
+      "source_sha256": "99a1b2ed61f24099434a6b2e12852322e4b53ddab34a588e522b04f9d261724f",
+      "custom_imports": [
+        "UnitRuntime.ProfilePatternDegree"
+      ]
+    },
+    {
+      "module": "UnitRuntime.ProfileValidatorDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/ProfileValidatorDegree.lean",
+      "packet_source": "source/UnitRuntime/ProfileValidatorDegree.lean",
+      "source_sha256": "9254f52ae7cf64201fe7190740557299106297ddd3445dbaf28201e6891a815e",
+      "custom_imports": [
+        "UnitRuntime.ProfileMarginsDegree"
+      ]
+    },
+    {
+      "module": "AffineMapWith.Degree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/affine-mapwith/source/AffineMapWith/Degree.lean",
+      "packet_source": "source/AffineMapWith/Degree.lean",
+      "source_sha256": "784150594b41a6b72b1930868833d502b94eca9046f4be846652e6d204a0a6b0",
+      "custom_imports": [
+        "RetryRuntime.MapWithDegree"
+      ]
+    },
+    {
+      "module": "RepairRuntime.OutputHelpers",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/repair-trial-cost/source/RepairRuntime/OutputHelpers.lean",
+      "packet_source": "source/RepairRuntime/OutputHelpers.lean",
+      "source_sha256": "523f90c1724aa3466318fc3146db47ce8329cb0523a8f748e53e7164fa793390",
+      "custom_imports": [
+        "AffineMapWith.Degree",
+        "ResearchBounds.DrawControlDegree"
+      ]
+    },
+    {
+      "module": "RepairRuntime.BaseDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/repair-trial-cost/source/RepairRuntime/BaseDegree.lean",
+      "packet_source": "source/RepairRuntime/BaseDegree.lean",
+      "source_sha256": "81fa2501fc72a76eb30d7316e718001891d9513ca0bede5cfc08eb109bf8782a",
+      "custom_imports": [
+        "RepairRuntime.OutputHelpers",
+        "UnitRuntime.TerminalIndexDegree"
+      ]
+    },
+    {
+      "module": "RepairRuntime.CodeOutput",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/repair-trial-cost/source/RepairRuntime/CodeOutput.lean",
+      "packet_source": "source/RepairRuntime/CodeOutput.lean",
+      "source_sha256": "a649a381377c39629fc164d17d79e681567e41651854162e6a3357babdcb46d3",
+      "custom_imports": [
+        "RepairRuntime.BaseDegree"
+      ]
+    },
+    {
+      "module": "RepairRuntime.RefinedCodeDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/repair-trial-cost/source/RepairRuntime/RefinedCodeDegree.lean",
+      "packet_source": "source/RepairRuntime/RefinedCodeDegree.lean",
+      "source_sha256": "f303d5510c3783633596f3fc1bb8e5fdc5137c97cbc8aaca375f62748398a7fa",
+      "custom_imports": [
+        "RepairRuntime.CodeOutput"
+      ]
+    },
+    {
+      "module": "RepairRuntime.ListDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/repair-trial-cost/source/RepairRuntime/ListDegree.lean",
+      "packet_source": "source/RepairRuntime/ListDegree.lean",
+      "source_sha256": "3dc967b20043191af8d47e5536dd1f045df480409993bcc627de396920122bd8",
+      "custom_imports": [
+        "RepairRuntime.RefinedCodeDegree",
+        "UnitRuntime.ProfilePatternDegree"
+      ]
+    },
+    {
+      "module": "RepairRuntime.InverseListDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/repair-trial-cost/source/RepairRuntime/InverseListDegree.lean",
+      "packet_source": "source/RepairRuntime/InverseListDegree.lean",
+      "source_sha256": "eca78a5a90daa93131637352684466cc1274903f513d591387a3c143f1cd4363",
+      "custom_imports": [
+        "RepairRuntime.ListDegree",
+        "UnitRuntime.ProfileEqualityDegree"
+      ]
+    },
+    {
+      "module": "UnitRuntime.UnitPackedTrialDegree",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/UnitPackedTrialDegree.lean",
+      "packet_source": "source/UnitRuntime/UnitPackedTrialDegree.lean",
+      "source_sha256": "81f35ab41e9ae26510cfa617ed92ba756d278792b3c2017d2bfe4bbd060a57c5",
+      "custom_imports": [
+        "UnitRuntime.UnitParsingDegree",
+        "UnitRuntime.ProfileEqualityDegree",
+        "UnitRuntime.ProfileValidatorDegree",
+        "RepairRuntime.InverseListDegree"
+      ]
+    },
+    {
+      "module": "UnitRuntime.UnitPackedTrialAudit",
+      "role": "new-source-included-unchanged",
+      "repository_source": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/UnitPackedTrialAudit.lean",
+      "packet_source": "source/UnitRuntime/UnitPackedTrialAudit.lean",
+      "source_sha256": "f13277e6b5398e364aef5f051057386eee0f39275ca42b501e731eab92113f4b",
+      "custom_imports": [
+        "UnitRuntime.UnitPackedTrialDegree"
+      ]
+    }
+  ],
+  "original_import_prefixes": {
+    "Math115.": "formal/Math115",
+    "OAI.": ".upstream/openai-math/lean/OAI"
+  },
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb"
+}

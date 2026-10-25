@@ -1,0 +1,16 @@
+{
+  "module": "DivisionRuntime.Degree",
+  "command_threads": 2,
+  "memory_cap_mib": 8192,
+  "source_sha256": "5e03bc8b825b6d0cbfecf77b6454db781ec2fe40c7ca55d644b94e3d9b4dff3c",
+  "returncode": 0,
+  "seconds": 19.695,
+  "olean_sha256": "a84f0a08cdf0d87dde72b119d873baa7f7652118400388a23559c3c587b1aa03",
+  "lean_path_roles": [
+    "candidate object prefix",
+    "existing helper object roots",
+    "existing baseline objects",
+    "pinned package objects"
+  ],
+  "original_receipt_sha256": "2f3db05cb113dbb38956d410d3b44d43a3ef428adec731e845411755c795a968"
+}

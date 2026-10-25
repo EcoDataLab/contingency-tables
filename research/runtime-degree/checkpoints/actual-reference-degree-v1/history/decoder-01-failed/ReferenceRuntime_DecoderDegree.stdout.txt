@@ -1,0 +1,80 @@
+<repo>/.local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DecoderDegree.lean:28:2: error: Tactic `apply` failed: could not unify the conclusion of `typed_composition_pos
+  (typed_pair_same typed_identity (typed_constant false) ?m.49)`
+  Typed (composition (pair identity (constant false)) ?m.29) (?m.31 * 1)
+with the goal
+  Typed (composition (pair identity (constant false)) (fold (choose first (constant true) second))) 2
+
+Note: The full type of `typed_composition_pos (typed_pair_same typed_identity (typed_constant false) ?m.49)` is
+  Typed ?m.29 ?m.31 → 1 ≤ ?m.31 → Typed (composition (pair identity (constant false)) ?m.29) (?m.31 * 1)
+
+⊢ Typed (composition (pair identity (constant false)) (fold (choose first (constant true) second))) 2
+<repo>/.local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DecoderDegree.lean:80:4: error: Tactic `apply` failed: could not unify the conclusion of `typed_composition_pos`
+  Typed (composition ?m.45 ?m.46) (1 * ?m.47)
+with the goal
+  Typed
+    (composition
+      (pair
+        (composition
+          (pair first
+            (pair (composition (composition second first) successor)
+              (composition (composition second second) successor)))
+          floorPrefixRealizer)
+        floorPrefixRealizer)
+      add)
+    115392
+
+Note: The full type of `typed_composition_pos` is
+  Typed ?m.45 ?m.47 → Typed ?m.46 1 → 1 ≤ 1 → Typed (composition ?m.45 ?m.46) (1 * ?m.47)
+
+case hF
+⊢ Typed
+    (composition
+      (pair
+        (composition
+          (pair first
+            (pair (composition (composition second first) successor)
+              (composition (composition second second) successor)))
+          floorPrefixRealizer)
+        floorPrefixRealizer)
+      add)
+    115392
+<repo>/.local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DecoderDegree.lean:90:4: error: Tactic `apply` failed: could not unify the conclusion of `typed_composition_pos`
+  Typed (composition ?m.61 ?m.62) (1 * ?m.63)
+with the goal
+  Typed
+    (composition
+      (pair
+        (composition
+          (pair
+            (composition
+              (pair first (pair (composition second first) (composition (composition second second) successor)))
+              floorPrefixRealizer)
+            (composition
+              (pair first (pair (composition (composition second first) successor) (composition second second)))
+              floorPrefixRealizer))
+          add)
+        (constant 2))
+      add)
+    115392
+
+Note: The full type of `typed_composition_pos` is
+  Typed ?m.61 ?m.63 → Typed ?m.62 1 → 1 ≤ 1 → Typed (composition ?m.61 ?m.62) (1 * ?m.63)
+
+case hG
+⊢ Typed
+    (composition
+      (pair
+        (composition
+          (pair
+            (composition
+              (pair first (pair (composition second first) (composition (composition second second) successor)))
+              floorPrefixRealizer)
+            (composition
+              (pair first (pair (composition (composition second first) successor) (composition second second)))
+              floorPrefixRealizer))
+          add)
+        (constant 2))
+      add)
+    115392
+<repo>/.local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DecoderDegree.lean:127:42: error(lean.unknownIdentifier): Unknown identifier `MatrixCode`
+'Math115.ReferenceRuntimeNext.typed_decode' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

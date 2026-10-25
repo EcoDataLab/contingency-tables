@@ -1,0 +1,103 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 4934,
+      "sha256": "f9586d503e4377d0e7af708a9366b8d35daf5340bb782179abaf39617f9f459a"
+    },
+    "control/guard_benchmark.py": {
+      "bytes": 3712,
+      "sha256": "1a66f32fd33d89af74d56cd113ac55b554f3b0c21379bc6d7a27839a046ceb6f"
+    },
+    "control/reconstruct_archive.py": {
+      "bytes": 2723,
+      "sha256": "500644e65ee8884fa7708701f968f046b0e5968371fd9647922aa05a13890463"
+    },
+    "evidence/admitted-plan/plan.json": {
+      "bytes": 341,
+      "sha256": "6f95a195f568b3ab53493b4e2d534f69d0fa2cf7b6054f2b8d1a94c3f04f5d0c"
+    },
+    "evidence/authenticate.stderr.log": {
+      "bytes": 195548,
+      "sha256": "d69bf1827fa5f52627a5aae98b4abf07b3e6dee8bf10695c8429ea8382448229"
+    },
+    "evidence/authenticate.stdout.log": {
+      "bytes": 99,
+      "sha256": "ac22a5edf87ac0cde4fbfe0adbf2918a1a9ef22ac0bef5155543018fd31ca619"
+    },
+    "evidence/install.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/install.stdout.log": {
+      "bytes": 2875,
+      "sha256": "2b0934143ef558f9d621b9a07a7ab30d84db9fb3f8fac352281aebe1c3cdb3f9"
+    },
+    "evidence/phases.json": {
+      "bytes": 1295,
+      "sha256": "29088b8e2502e3c338f5903e25b0b79aa3855ce9aac2943aebb8e3e514196d34"
+    },
+    "evidence/plan.stderr.log": {
+      "bytes": 148436,
+      "sha256": "f543717497ea06594007ad89007c684d31d2cb03673923b83d94d9c79c3ebe36"
+    },
+    "evidence/plan.stdout.log": {
+      "bytes": 705,
+      "sha256": "c6b6feca03e3e94770b1f233ef969ba71a42ed09edbab1d5f142a31ed67fc70b"
+    },
+    "evidence/preflight.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/preflight.stdout.log": {
+      "bytes": 276,
+      "sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b"
+    },
+    "evidence/resources.json": {
+      "bytes": 642,
+      "sha256": "4d194450c4dbae997aef58a7f1f7a466e31981973c361e008a373f9f45287f8b"
+    },
+    "evidence/startup-result.json": {
+      "bytes": 362,
+      "sha256": "552fca51ac19f5f4251fa2af4efd69b10738ebbdffa34b4e0420b1c530a0893d"
+    },
+    "evidence/stat-guard.json": {
+      "bytes": 626,
+      "sha256": "21a99e6e28738537c5924a12431d76df812bff2a5e0b4403865a2714f0c5f101"
+    },
+    "guard-cost-assessment.json": {
+      "bytes": 1270,
+      "sha256": "428a98f9c29b547ea4b926376cffeb8f41bd5590bfabd5cefb54e551a3ffc1d5"
+    },
+    "outcome.json": {
+      "bytes": 2937,
+      "sha256": "3e9256594befe8fee07ad32ceec617443012212c0ba7a40103eecc0ede58bc98"
+    },
+    "profile.json": {
+      "bytes": 375,
+      "sha256": "7e4470a6c0d13672765b43ab45c04ebbdd95e447ab92175be20706f1273970cc"
+    },
+    "provenance-bindings.json": {
+      "bytes": 8917,
+      "sha256": "c3c5e3dcc8728aeb06a4483c557b1e41e3a6d020c71a04255f42d909f823d94f"
+    },
+    "reproduction-references.json": {
+      "bytes": 2468,
+      "sha256": "41f67b438071a51f7c106626e59577f6e99217a92ee4831e06f6f57ea4326f15"
+    },
+    "serial-interleaving.json": {
+      "bytes": 744,
+      "sha256": "0916e719fc92a0d252ee2a08f4175b2555ea49ebd657c0131528389737bfd45e"
+    },
+    "verification.json": {
+      "bytes": 676,
+      "sha256": "f7996d159dd5e9a5c750c5b42269f9e006d1fac8b62be0fd1d9756fb19e4607c"
+    },
+    "warnings.json": {
+      "bytes": 1396,
+      "sha256": "8027b388e402271329e2daf1fcf85c849479fa69e61be61519a38f36cd6f437d"
+    }
+  },
+  "manifest_self_excluded": true,
+  "schema_version": 1,
+  "scope": "Sanitized authenticated startup05 auth, planning and exact stat-only guard timing; no full proof or Comparator acceptance"
+}

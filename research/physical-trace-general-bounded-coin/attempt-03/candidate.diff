@@ -1,0 +1,15 @@
+--- initial.lean
++++ checked.lean
+@@ -16 +16 @@
+-/-- Exactly k bits, including the failed-output branch. The supplied counter
++/-- A reserved k-bit bank; the failed-output branch ignores it. The supplied counter
+@@ -32,0 +33 @@
++omit [Fintype A] in
+@@ -44 +45,3 @@
+-    simp only [finiteRow, partialBitTerminal, hx, row]
++    simp only [finiteRow, hx, row]
++    change variation (mapLaw uniformLaw (fun _ : Fin k → Bool => (none : Option A)))
++      (pointLaw none) ≤ _
+@@ -54 +57 @@
+-    simp only [finiteRow, partialBitTerminal, hx, row]
++    simp only [finiteRow, hx, row]

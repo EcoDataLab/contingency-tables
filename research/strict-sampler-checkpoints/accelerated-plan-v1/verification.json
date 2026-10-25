@@ -1,0 +1,18 @@
+{
+  "all_stage_exit_codes_zero": true,
+  "archive_reconstructed_matches_emitted_sha": true,
+  "cold_submitted_proof_tree": true,
+  "exact_public_guest_files": 12,
+  "full_proof_executed": false,
+  "guest_archive_members_authenticated": 14,
+  "host_inventory_members": 8,
+  "host_members_downloaded_and_rehashed": 7,
+  "independent_public_reproduction": false,
+  "owned_qemu_reaped": true,
+  "preserved_pins_equal": true,
+  "projected_guest_files": 1,
+  "raw_serial_unchanged": true,
+  "runtime_plan_metrics_hash_bindings_match": true,
+  "status": "saved-evidence allowlist projection locally checked; parent publication review pending",
+  "strict_sampler_acceptance": false
+}

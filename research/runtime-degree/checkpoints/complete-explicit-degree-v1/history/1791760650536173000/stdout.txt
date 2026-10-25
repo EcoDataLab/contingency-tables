@@ -1,0 +1,25 @@
+<workspace>/.local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/FinalBinding.lean:3:0: error: unknown module prefix 'InputNormalization'
+
+No directory 'InputNormalization' or file 'InputNormalization.olean' in the search path entries:
+<workspace>/.local/further-gap/draw-runtime-next/complete-draw/objects
+<workspace>/.local/further-gap/draw-runtime-next/reference-trial-cost/objects
+<workspace>/.local/further-gap/draw-runtime-next/unit-trial-cost/objects
+<workspace>/.local/further-gap/draw-runtime-next/repair-trial-cost/objects
+<workspace>/.local/further-gap/draw-runtime-next/affine-mapwith/objects
+<workspace>/.local/further-gap/draw-runtime-next/printer-next/objects
+<workspace>/.local/further-gap/draw-runtime-next/initial-degree/local-initial-02/objects
+<workspace>/.local/further-gap/draw-runtime-next/initial-degree/greedy-final-01/objects
+<workspace>/.local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects
+<workspace>/.local/further-gap/draw-runtime-next/retry-cost/objects
+<workspace>/.local/further-gap/draw-runtime-next/objects
+<workspace>/.local/checkpoint12/affine-degree-batch-staging-02/evidence/lib/lean
+<workspace>/formal/.lake/build/lib/lean
+<workspace>/formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean
+<workspace>/formal/.lake/packages/Qq/.lake/build/lib/lean
+<workspace>/formal/.lake/packages/aesop/.lake/build/lib/lean
+<workspace>/formal/.lake/packages/batteries/.lake/build/lib/lean
+<workspace>/formal/.lake/packages/importGraph/.lake/build/lib/lean
+<workspace>/formal/.lake/packages/mathlib/.lake/build/lib/lean
+<workspace>/formal/.lake/packages/plausible/.lake/build/lib/lean
+<workspace>/formal/.lake/packages/proofwidgets/.lake/build/lib/lean
+<workspace>/.tools/elan/toolchains/leanprover--lean4---v4.34.1/lib/lean

@@ -1,0 +1,102 @@
+{
+  "Math115.DrawRuntimeNext.typed_rangeStep": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.range_numeric_degree": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.typed_getDFast": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.typed_boundedRange": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.circuit_successor": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.circuit_cube": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.circuit_dimension": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.circuit_cutoff": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.typed_boolAnd": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.typed_largeIndexTest": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.typed_storedLengthRange": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.typed_largeIndices": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.typed_largeRows": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.typed_largeColumns": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.largeIndices_weight_bound": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.largeRows_weight_bound": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.largeColumns_weight_bound": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.quadratic_output_degree": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.typed_actual_bothLargeTest": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "Math115.DrawRuntimeNext.actual_bothLargeTest_polynomial": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

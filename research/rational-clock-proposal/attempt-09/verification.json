@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "28d4c9b57c9fd44588f3c4396d5e4f90cf9f0114",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchRationalClock.Proposal"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchRationalClock.Proposal",
+      "source": "research/rational-clock-proposal/formal/ResearchRationalClock/Proposal.lean",
+      "source_sha256": "b64561e8ce753f25d91c18eb00afb11a4a2c402194fe1c7d71da7981fdb9f0cd",
+      "returncode": 0,
+      "seconds": 111.1560320830904,
+      "olean_sha256": "7e75a2e302e76e0c501beb3de86f385d4d48681b09bcbcf71528f9a7a4f78c57"
+    }
+  ],
+  "audit_seconds": 203.91642400017008,
+  "audit_sha256": "93f8baf43c15c003ffa141d8941f4f8be62c77ced6a6575783c404a744ace743",
+  "audit_driver_sha256": "d959a5c76fe75663e80def6401ff6865401c4be69fac58929b8f86228ee15225",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "285437c18055e3f2a31426aa4e1a69bca9901a58449bdb7b2ccb899c0ae5f24c",
+  "declaration_count": 50,
+  "theorem_count": 36,
+  "headlines": [
+    {
+      "name": "Math115.RationalClockProposal.cappedIndex_none",
+      "closure_size": 9369,
+      "statement": "∀ (V : ℕ),\n  0 < V →\n    ∀ (N : ℕ),\n      (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n              (Math115.RationalClockProposal.cappedIndex V N)).mass\n          none =\n        (1 - Math115.RationalClockProposal.acceptance V) ^ N",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.RationalClockProposal.physicalProposal_variation",
+      "closure_size": 11852,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hp :\n    2 ≤\n      Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n  (x : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N : ℕ),\n  OAI.ContingencyTables.FirstSuccess.variation\n      (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n        (Math115.RationalClockProposal.physicalProposal r c U L x N))\n      (Math115.RationalClockProposal.idealPhysicalProposalLaw r c U L hp x) ≤\n    (1 / 2) ^ N",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.RationalClockProposal.idealPhysicalProposalLaw_mass",
+      "closure_size": 11788,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  ∑ i, r i = ∑ j, c j →\n    ∀\n      (hp :\n        2 ≤\n          Fintype.card\n            (OAI.ContingencyTables.SmallContextCoordinates.Cells\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n      (x : Math115.PhysicalDefectTrace.DefectVertices r c U L) (y : Math115.ReducedSmallChain.States r c U L),\n      (Math115.RationalClockProposal.idealPhysicalProposalLaw r c U L hp x).mass (some y) =\n        if\n            OAI.ContingencyTables.SmallGraphProfiles.physicalAdjacent r c U L\n              (Math115.ReducedSmallChain.capacity r c U L) ⋯ (↑x) y then\n          1 / ↑(Math115.RationalClockProposal.denominator r c U)\n        else 0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.RationalClockProposal.rational_clock_cast",
+      "closure_size": 7608,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U : ℕ),\n  ↑(1 / ↑(Math115.RationalClockProposal.denominator r c U)) =\n    1 / (2 * ↑(Math115.PhysicalDefectTrace.defectAllowance r c U))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

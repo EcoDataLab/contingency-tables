@@ -1,0 +1,1326 @@
+{
+  "checks": "passed",
+  "created_utc": "2026-10-11T20:38:14.790909+00:00",
+  "target_law": "ordinary_uniform_completion_cardinalities",
+  "source_commit": "9f6482caff9e45c4c3ea07e4f199142ba52377b4",
+  "upstream_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "source_sha256": {
+    "experiments/aggregate_incidence.py": "8aee2f552a8d963944b1dfed3e2c70923f54d92e4ace6e1a3b88c7597d4542c4",
+    "docs/aggregate-incidence.md": "34797cb9a7a31c878f022f50bd538cbac65df55eaedcfad6a26ef24096dd340c",
+    "src/contingency115/ideal_chain.py": "5432398d088bbd93d473a56fababadfb9f50c807a38e230c222e8527fa23235b",
+    "src/contingency115/tables.py": "fd6923478d1dcd3c2fbc642307e8483c8d2248f02132b22e3fa21211af52d5ee",
+    "research/retained-root/formal/Research/RetainedPhysicalCap.lean": "a6a4d45889077de8e27ff9ca94e4b8fe9fa4aa445675f76e751575b15b7717d7"
+  },
+  "fixtures": [
+    {
+      "rows": [
+        2,
+        5,
+        5
+      ],
+      "cols": [
+        2,
+        5,
+        5
+      ],
+      "U": 5,
+      "L": 7,
+      "a": 1,
+      "b": 1,
+      "p": 5,
+      "positive_states": 174,
+      "contexts": 30,
+      "owners": [
+        {
+          "current": 0,
+          "prefix": [],
+          "z": [
+            163,
+            76,
+            20,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 2402,
+            "2": 580
+          },
+          "left_cap": 75,
+          "right_cap": 30,
+          "safe_cap": 105,
+          "grouped_full_tables": 335
+        },
+        {
+          "current": 1,
+          "prefix": [
+            0
+          ],
+          "z": [
+            54,
+            55,
+            54,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 1214,
+            "2": 1044,
+            "3": 748
+          },
+          "left_cap": 75,
+          "right_cap": 30,
+          "safe_cap": 105,
+          "grouped_full_tables": 272
+        },
+        {
+          "current": 1,
+          "prefix": [
+            1
+          ],
+          "z": [
+            38,
+            38,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 668,
+            "2": 468
+          },
+          "left_cap": 75,
+          "right_cap": 30,
+          "safe_cap": 105,
+          "grouped_full_tables": 114
+        },
+        {
+          "current": 1,
+          "prefix": [
+            2
+          ],
+          "z": [
+            20,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 190
+          },
+          "left_cap": 75,
+          "right_cap": 30,
+          "safe_cap": 105,
+          "grouped_full_tables": 20
+        },
+        {
+          "current": 2,
+          "prefix": [
+            0,
+            0
+          ],
+          "z": [
+            0,
+            0,
+            54,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "3": 748
+          },
+          "left_cap": 75,
+          "right_cap": 30,
+          "safe_cap": 105,
+          "grouped_full_tables": 54
+        },
+        {
+          "current": 2,
+          "prefix": [
+            0,
+            1
+          ],
+          "z": [
+            0,
+            55,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "2": 774
+          },
+          "left_cap": 75,
+          "right_cap": 30,
+          "safe_cap": 105,
+          "grouped_full_tables": 55
+        },
+        {
+          "current": 2,
+          "prefix": [
+            0,
+            2
+          ],
+          "z": [
+            54,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 774
+          },
+          "left_cap": 75,
+          "right_cap": 30,
+          "safe_cap": 105,
+          "grouped_full_tables": 54
+        },
+        {
+          "current": 2,
+          "prefix": [
+            1,
+            0
+          ],
+          "z": [
+            0,
+            38,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "2": 468
+          },
+          "left_cap": 75,
+          "right_cap": 30,
+          "safe_cap": 105,
+          "grouped_full_tables": 38
+        },
+        {
+          "current": 2,
+          "prefix": [
+            1,
+            1
+          ],
+          "z": [
+            38,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 478
+          },
+          "left_cap": 75,
+          "right_cap": 30,
+          "safe_cap": 105,
+          "grouped_full_tables": 38
+        },
+        {
+          "current": 2,
+          "prefix": [
+            2,
+            0
+          ],
+          "z": [
+            20,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 190
+          },
+          "left_cap": 75,
+          "right_cap": 30,
+          "safe_cap": 105,
+          "grouped_full_tables": 20
+        },
+        {
+          "current": 3,
+          "prefix": [
+            0,
+            0,
+            2
+          ],
+          "z": [
+            18,
+            18,
+            18,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 144,
+            "2": 90
+          },
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 36
+        },
+        {
+          "current": 3,
+          "prefix": [
+            0,
+            1,
+            1
+          ],
+          "z": [
+            18,
+            19,
+            18,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 144,
+            "2": 95
+          },
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 37
+        },
+        {
+          "current": 3,
+          "prefix": [
+            0,
+            2,
+            0
+          ],
+          "z": [
+            18,
+            18,
+            18,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 144,
+            "2": 90
+          },
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 36
+        },
+        {
+          "current": 3,
+          "prefix": [
+            1,
+            0,
+            1
+          ],
+          "z": [
+            19,
+            19,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 95
+          },
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 19
+        },
+        {
+          "current": 3,
+          "prefix": [
+            1,
+            1,
+            0
+          ],
+          "z": [
+            19,
+            19,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 95
+          },
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 19
+        },
+        {
+          "current": 3,
+          "prefix": [
+            2,
+            0,
+            0
+          ],
+          "z": [
+            20,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            0,
+            0,
+            2,
+            0
+          ],
+          "z": [
+            0,
+            0,
+            18,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            0,
+            0,
+            2,
+            1
+          ],
+          "z": [
+            0,
+            18,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            0,
+            0,
+            2,
+            2
+          ],
+          "z": [
+            18,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "z": [
+            0,
+            0,
+            18,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "z": [
+            0,
+            19,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            0,
+            1,
+            1,
+            2
+          ],
+          "z": [
+            18,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            0,
+            2,
+            0,
+            0
+          ],
+          "z": [
+            0,
+            0,
+            18,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            0,
+            2,
+            0,
+            1
+          ],
+          "z": [
+            0,
+            18,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            0,
+            2,
+            0,
+            2
+          ],
+          "z": [
+            18,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "z": [
+            0,
+            19,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            1,
+            0,
+            1,
+            1
+          ],
+          "z": [
+            19,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "z": [
+            0,
+            19,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            1,
+            1,
+            0,
+            1
+          ],
+          "z": [
+            19,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            2,
+            0,
+            0,
+            0
+          ],
+          "z": [
+            20,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 75,
+          "right_cap": 0,
+          "safe_cap": 105,
+          "grouped_full_tables": 0
+        }
+      ],
+      "completed_auxiliary_assignments": 1776,
+      "left": 1437,
+      "right": 339,
+      "large_crossings": 996,
+      "LL_weight_change_examples": [
+        {
+          "source_x": [
+            0,
+            0,
+            2,
+            0,
+            3
+          ],
+          "source_q": [
+            0,
+            1,
+            2,
+            0,
+            2
+          ],
+          "labels": [
+            1,
+            4
+          ],
+          "cross": [
+            2,
+            1
+          ],
+          "source_completion": [
+            [
+              2,
+              17
+            ],
+            [
+              16,
+              0
+            ]
+          ],
+          "target_completion": [
+            [
+              2,
+              17
+            ],
+            [
+              17,
+              0
+            ]
+          ],
+          "source_weight": 17,
+          "target_weight": 18
+        },
+        {
+          "source_x": [
+            0,
+            0,
+            2,
+            0,
+            3
+          ],
+          "source_q": [
+            0,
+            1,
+            2,
+            0,
+            2
+          ],
+          "labels": [
+            1,
+            4
+          ],
+          "cross": [
+            2,
+            1
+          ],
+          "source_completion": [
+            [
+              3,
+              16
+            ],
+            [
+              15,
+              1
+            ]
+          ],
+          "target_completion": [
+            [
+              3,
+              16
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "source_weight": 17,
+          "target_weight": 18
+        },
+        {
+          "source_x": [
+            0,
+            0,
+            2,
+            0,
+            3
+          ],
+          "source_q": [
+            0,
+            1,
+            2,
+            0,
+            2
+          ],
+          "labels": [
+            1,
+            4
+          ],
+          "cross": [
+            2,
+            1
+          ],
+          "source_completion": [
+            [
+              4,
+              15
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "target_completion": [
+            [
+              4,
+              15
+            ],
+            [
+              15,
+              2
+            ]
+          ],
+          "source_weight": 17,
+          "target_weight": 18
+        }
+      ],
+      "branch": "reference",
+      "degree_allowance": 17,
+      "minimum_acceptance": "16/17"
+    },
+    {
+      "rows": [
+        0,
+        3,
+        3
+      ],
+      "cols": [
+        0,
+        3,
+        3
+      ],
+      "U": 3,
+      "L": 7,
+      "a": 1,
+      "b": 1,
+      "p": 5,
+      "positive_states": 5,
+      "contexts": 5,
+      "owners": [
+        {
+          "current": 0,
+          "prefix": [],
+          "z": [
+            18,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 33,
+          "right_cap": 12,
+          "safe_cap": 45,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 1,
+          "prefix": [
+            0
+          ],
+          "z": [
+            18,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 102
+          },
+          "left_cap": 33,
+          "right_cap": 12,
+          "safe_cap": 45,
+          "grouped_full_tables": 18
+        },
+        {
+          "current": 2,
+          "prefix": [
+            0,
+            0
+          ],
+          "z": [
+            18,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 102
+          },
+          "left_cap": 33,
+          "right_cap": 12,
+          "safe_cap": 45,
+          "grouped_full_tables": 18
+        },
+        {
+          "current": 3,
+          "prefix": [
+            0,
+            0,
+            0
+          ],
+          "z": [
+            18,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 33,
+          "right_cap": 0,
+          "safe_cap": 45,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 4,
+          "prefix": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "z": [
+            18,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 33,
+          "right_cap": 0,
+          "safe_cap": 45,
+          "grouped_full_tables": 0
+        }
+      ],
+      "completed_auxiliary_assignments": 68,
+      "left": 68,
+      "right": 0,
+      "large_crossings": 68,
+      "LL_weight_change_examples": [
+        {
+          "source_x": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source_q": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "labels": [
+            1,
+            4
+          ],
+          "cross": [
+            2,
+            1
+          ],
+          "source_completion": [
+            [
+              0,
+              17
+            ],
+            [
+              16,
+              0
+            ]
+          ],
+          "target_completion": [
+            [
+              0,
+              17
+            ],
+            [
+              17,
+              0
+            ]
+          ],
+          "source_weight": 17,
+          "target_weight": 18
+        },
+        {
+          "source_x": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source_q": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "labels": [
+            1,
+            4
+          ],
+          "cross": [
+            2,
+            1
+          ],
+          "source_completion": [
+            [
+              1,
+              16
+            ],
+            [
+              15,
+              1
+            ]
+          ],
+          "target_completion": [
+            [
+              1,
+              16
+            ],
+            [
+              16,
+              1
+            ]
+          ],
+          "source_weight": 17,
+          "target_weight": 18
+        },
+        {
+          "source_x": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "source_q": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "labels": [
+            1,
+            4
+          ],
+          "cross": [
+            2,
+            1
+          ],
+          "source_completion": [
+            [
+              2,
+              15
+            ],
+            [
+              14,
+              2
+            ]
+          ],
+          "target_completion": [
+            [
+              2,
+              15
+            ],
+            [
+              15,
+              2
+            ]
+          ],
+          "source_weight": 17,
+          "target_weight": 18
+        }
+      ],
+      "branch": "reference",
+      "degree_allowance": 17,
+      "minimum_acceptance": "16/17"
+    },
+    {
+      "rows": [
+        2,
+        2
+      ],
+      "cols": [
+        2,
+        2
+      ],
+      "U": 3,
+      "L": 7,
+      "a": 2,
+      "b": 2,
+      "p": 4,
+      "positive_states": 27,
+      "contexts": 10,
+      "owners": [
+        {
+          "current": 0,
+          "prefix": [],
+          "z": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "c": {
+            "1": 11,
+            "2": 10
+          },
+          "left_cap": 48,
+          "right_cap": 9,
+          "safe_cap": 57,
+          "grouped_full_tables": 4
+        },
+        {
+          "current": 1,
+          "prefix": [
+            0
+          ],
+          "z": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "c": {},
+          "left_cap": 48,
+          "right_cap": 9,
+          "safe_cap": 57,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 1,
+          "prefix": [
+            1
+          ],
+          "z": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "c": {
+            "2": 7
+          },
+          "left_cap": 48,
+          "right_cap": 9,
+          "safe_cap": 57,
+          "grouped_full_tables": 1
+        },
+        {
+          "current": 1,
+          "prefix": [
+            2
+          ],
+          "z": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "c": {
+            "1": 7
+          },
+          "left_cap": 48,
+          "right_cap": 9,
+          "safe_cap": 57,
+          "grouped_full_tables": 1
+        },
+        {
+          "current": 2,
+          "prefix": [
+            0,
+            2
+          ],
+          "z": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "c": {
+            "2": 3
+          },
+          "left_cap": 48,
+          "right_cap": 9,
+          "safe_cap": 57,
+          "grouped_full_tables": 1
+        },
+        {
+          "current": 2,
+          "prefix": [
+            1,
+            1
+          ],
+          "z": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "c": {
+            "1": 4
+          },
+          "left_cap": 48,
+          "right_cap": 9,
+          "safe_cap": 57,
+          "grouped_full_tables": 1
+        },
+        {
+          "current": 2,
+          "prefix": [
+            2,
+            0
+          ],
+          "z": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 48,
+          "right_cap": 9,
+          "safe_cap": 57,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 3,
+          "prefix": [
+            0,
+            2,
+            2
+          ],
+          "z": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 48,
+          "right_cap": 9,
+          "safe_cap": 57,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 3,
+          "prefix": [
+            1,
+            1,
+            1
+          ],
+          "z": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "c": {},
+          "left_cap": 48,
+          "right_cap": 9,
+          "safe_cap": 57,
+          "grouped_full_tables": 0
+        },
+        {
+          "current": 3,
+          "prefix": [
+            2,
+            0,
+            0
+          ],
+          "z": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "c": {},
+          "left_cap": 48,
+          "right_cap": 9,
+          "safe_cap": 57,
+          "grouped_full_tables": 0
+        }
+      ],
+      "completed_auxiliary_assignments": 12,
+      "left": 8,
+      "right": 4,
+      "large_crossings": 0,
+      "LL_weight_change_examples": [],
+      "branch": "unit",
+      "degree_allowance": 5,
+      "minimum_acceptance": "1"
+    }
+  ],
+  "scope": "Exact finite completed-fiber injectivity and moment checks; arbitrary-parameter proof is separate, no physical-gap lower bound or runtime claim"
+}

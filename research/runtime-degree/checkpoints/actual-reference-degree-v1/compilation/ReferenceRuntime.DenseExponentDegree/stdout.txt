@@ -1,0 +1,4 @@
+Math115.ReferenceRuntimeNext.typed_denseComponent : Typed componentRealizer 31104
+'Math115.ReferenceRuntimeNext.typed_denseComponent' depends on axioms: [propext, Classical.choice, Quot.sound]
+Math115.ReferenceRuntimeNext.typed_flatExponent : Typed flatExponentRealizer 411732547972631998350801627013006442112
+'Math115.ReferenceRuntimeNext.typed_flatExponent' depends on axioms: [propext, Classical.choice, Quot.sound]

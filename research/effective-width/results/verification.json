@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "Math115.EffectiveWidthBound"
+  ],
+  "compilation": [
+    {
+      "module": "Math115.EffectiveWidthBound",
+      "source": "research/effective-width/formal/Math115/EffectiveWidthBound.lean",
+      "source_sha256": "73238cfc2aa621da5921b6fba02e9944c8cce94554e49ac3f5e2f6578704ea1f",
+      "returncode": 0,
+      "seconds": 34.633,
+      "olean_sha256": "a08a5e767658e3c734d5eb2fc781b798412872564271e157a8f52fbf5286c42b"
+    },
+    {
+      "module": "ResearchAudit.EnvironmentAudit",
+      "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+      "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "returncode": 0,
+      "seconds": 2.783,
+      "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+    }
+  ],
+  "audit_seconds": 31.434,
+  "audit_sha256": "b75481207905893e45368f4194a4dfb056dc2444b93ca5a51a1ccb30cfec73d8",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "34f70486ba5f428011528a76e773155e0a7f8cb3f53152bf04d6cfedcd119886",
+  "declaration_count": 5,
+  "theorem_count": 5,
+  "headlines": [
+    {
+      "name": "Math115.EffectiveWidthBound.refinedConstant_le_actual_width",
+      "closure_size": 11326,
+      "statement": "\u2200 (p V : \u2115), 2 \u2264 p \u2192 2 \u2264 V \u2192 Math115.PhysicalRepairRefinement.refinedConstant p V \u2264 \u2191p ^ 3 * \u2191V ^ 4"
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

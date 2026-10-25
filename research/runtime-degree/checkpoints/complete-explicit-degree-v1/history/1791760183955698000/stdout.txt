@@ -1,0 +1,7 @@
+<workspace>/.local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/Seams.lean:35:17: error(lean.unknownIdentifier): Unknown identifier `eamDegree`
+<workspace>/.local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/Seams.lean:32:38: error: unsolved goals
+r : ℕ
+hReference : Typed LatticeOuterProgram.packedTrialRealizer r
+hU : unitTrialDegree ≤ seamDegree r
+hR : r ≤ seamDegree r
+⊢ ActualDrawSeams (seamDegree r)

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "6eef213d620e747da92d61b89e8de1db2e0ae240",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralBoundedCoin"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralBoundedCoin",
+      "source": "research/physical-trace-general-bounded-coin/formal/ResearchPhysicalTraceJoin/GeneralBoundedCoin.lean",
+      "source_sha256": "e4a099e087123070dfd9edf660b3d760952bebedd5d4e4eb36c8543b51f26aed",
+      "returncode": 0,
+      "seconds": 16.951323708985,
+      "olean_sha256": "eeeb3ee3a0a95f3c3948ba732be0477a5ab21c6f414a6af6652d250f8b5be725"
+    }
+  ],
+  "audit_seconds": 27.92080504214391,
+  "audit_sha256": "cdcf5943ce01783678aa7e359444508294607d8701d22deb2e9f0ea52ca4feb3",
+  "audit_driver_sha256": "0f83748f0ef22e19911021bc3be0189882dafc8db8f6ad1209638f970667d62b",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "310c30cbd92658e86df2a89bc27ef96355112909f7d06de466fdaf54b08024b6",
+  "declaration_count": 8,
+  "theorem_count": 5,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.PartialRepairCorrection.finiteRow_variation",
+      "closure_size": 9542,
+      "statement": "∀ {S : Type u_1} {A : Type u_2} [inst : Fintype S] [inst_1 : Fintype A] (f : S → Option A) (count : A → ℕ),\n  (∀ (a : A), count a = Math115.PhysicalTraceJoin.PartialRepairCorrection.fibreSize f a) →\n    ∀ (k c0 : ℕ) (x : S),\n      OAI.ContingencyTables.FirstSuccess.variation\n          (Math115.PhysicalTraceJoin.PartialRepairCorrection.finiteRow (f x) count k c0)\n          (Math115.PhysicalTraceJoin.PartialRepairCorrection.row f c0 x) ≤\n        1 / 2 ^ k",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.PartialRepairCorrection.finiteRow_bind_variation",
+      "closure_size": 9580,
+      "statement": "∀ {S : Type u_1} {A : Type u_2} [inst : Fintype S] [inst_1 : Fintype A] (f : S → Option A) (count : A → ℕ),\n  (∀ (a : A), count a = Math115.PhysicalTraceJoin.PartialRepairCorrection.fibreSize f a) →\n    ∀ (k c0 : ℕ) (p q : OAI.ContingencyTables.ResidualMixture.RationalLaw S),\n      OAI.ContingencyTables.FirstSuccess.variation\n          (OAI.ContingencyTables.FirstSuccess.bindLaw p fun x =>\n            Math115.PhysicalTraceJoin.PartialRepairCorrection.finiteRow (f x) count k c0)\n          (OAI.ContingencyTables.FirstSuccess.bindLaw q (Math115.PhysicalTraceJoin.PartialRepairCorrection.row f c0)) ≤\n        OAI.ContingencyTables.FirstSuccess.variation p q + 1 / 2 ^ k",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,109 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:23:36: error: Unknown identifier `Cells` at quotation precheck
+
+Note: You can use `set_option quotPrecheck false` to disable this check.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:29:8: error(lean.unknownIdentifier): Unknown identifier `Cells`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:29:22: error(lean.unknownIdentifier): Unknown identifier `Cells`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:31:55: error: Function expected at
+  DistinctRepairLabels
+but this term has type
+  Type ?u.13
+
+Note: Expected a function because this term is being applied to the argument
+  r
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:37:18: error: Function expected at
+  DistinctRepairLabels
+but this term has type
+  Type ?u.14
+
+Note: Expected a function because this term is being applied to the argument
+  r
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:37:48: error: elaboration function for `_private.ResearchPhysicalTraceJoin.GeneralCount.0.Math115.PhysicalTraceJoin.termP` has not been implemented
+  p
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:38:6: error: Failed to rewrite using equation theorems for `DistinctRepairLabels`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:38:6: warning: declaration uses `sorry`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:48:4: error: Function expected at
+  DistinctRepairLabels
+but this term has type
+  Type ?u.15
+
+Note: Expected a function because this term is being applied to the argument
+  r
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:55:17: error: Application type mismatch: The argument
+  congrArg Subtype.val (congrArg Prod.fst ?m.33)
+has type
+  ↑?m.29.1 = ↑?m.30.1
+but is expected to have type
+  ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) a).1 =
+    ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) b).1
+in the application
+  Prod.ext (congrArg Subtype.val (congrArg Prod.fst ?m.33))
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:52:56: error: stuck at solving universe constraint
+  ?u.23 + 1 =?= max 1 ?u.19
+while trying to unify
+  Eq.{max 1 ?u.19} (Prod.fst.{?u.23, ?u.22} ?m.29) (Prod.fst.{?u.23, ?u.22} ?m.30) : Prop
+with
+  Eq.{?u.23 + 1} (Prod.fst.{?u.23, ?u.22} ?m.29) (Prod.fst.{?u.23, ?u.22} ?m.30) : Prop
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:61:6: error: elaboration function for `_private.ResearchPhysicalTraceJoin.GeneralCount.0.Math115.PhysicalTraceJoin.termP` has not been implemented
+  p
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:62:65: error(lean.unknownIdentifier): Unknown identifier `r`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:62:67: error(lean.unknownIdentifier): Unknown identifier `c`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:62:69: error(lean.unknownIdentifier): Unknown identifier `U`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:62:71: error(lean.unknownIdentifier): Unknown identifier `L`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:63:38: error(lean.unknownIdentifier): Unknown identifier `r`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:63:40: error(lean.unknownIdentifier): Unknown identifier `c`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:63:42: error(lean.unknownIdentifier): Unknown identifier `U`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:63:44: error(lean.unknownIdentifier): Unknown identifier `L`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:61:54: error: unsolved goals
+⊢ sorry
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:70:4: error: Function expected at
+  DistinctRepairLabels
+but this term has type
+  Type ?u.16
+
+Note: Expected a function because this term is being applied to the argument
+  r
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:72:8: warning: declaration uses `sorry`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:86:51: error: elaboration function for `_private.ResearchPhysicalTraceJoin.GeneralCount.0.Math115.PhysicalTraceJoin.termP` has not been implemented
+  p
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:87:72: error(lean.unknownIdentifier): Unknown identifier `U`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:87:74: error(lean.unknownIdentifier): Unknown identifier `L`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:88:45: error(lean.unknownIdentifier): Unknown identifier `U`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:88:47: error(lean.unknownIdentifier): Unknown identifier `L`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:113:17: error: Ambiguous term
+  large_padding_rows
+Possible interpretations:
+  PhysicalStationarySuccess.large_padding_rows : ∀ («small» : ?m.255 → ?m.256 → Bool) (r : ?m.255 → ℕ) (L : ℕ),
+    paddedRows r (largePadding {«p» | «small» «p».1 «p».2 = false} L) = fun i => r i + rowLargeCount «small» i * L
+
+  SmallGraphProfiles.large_padding_rows : ∀ («small» : ?m.255 → ?m.256 → Bool) (r : ?m.255 → ℕ) (L : ℕ),
+    paddedRows r (largePadding {«p» | «small» «p».1 «p».2 = false} L) = fun i => r i + rowLargeCount «small» i * L
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:113:37: error: Ambiguous term
+  large_padding_columns
+Possible interpretations:
+  PhysicalStationarySuccess.large_padding_columns : ∀ («small» : ?m.255 → ?m.256 → Bool) (c : ?m.256 → ℕ) (L : ℕ),
+    paddedColumns c (largePadding {«p» | «small» «p».1 «p».2 = false} L) = fun j => c j + columnLargeCount «small» j * L
+
+  SmallGraphProfiles.large_padding_columns : ∀ («small» : ?m.255 → ?m.256 → Bool) (c : ?m.256 → ℕ) (L : ℕ),
+    paddedColumns c (largePadding {«p» | «small» «p».1 «p».2 = false} L) = fun j => c j + columnLargeCount «small» j * L
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:113:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  Fintype.card
+      (Table
+        (paddedRows r
+          (largePadding {z | firstPaperSmall r c (11 * dimensionAllowance * (m + n - 2)) z.1 z.2 = false} 7))
+        (paddedColumns c
+          (largePadding {z | firstPaperSmall r c (11 * dimensionAllowance * (m + n - 2)) z.1 z.2 = false} 7))) ≤
+    2 * Fintype.card (Table r c)
+but is expected to have type
+  Fintype.card
+      (Table (fun i => r i + rowLargeCount (firstPaperSmall r c (11 * dimensionAllowance * (m + n - 2))) i * 7) fun j =>
+        c j + columnLargeCount (firstPaperSmall r c (11 * dimensionAllowance * (m + n - 2))) j * 7) ≤
+    2 * Fintype.card (Table r c)
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:118:27: error(lean.unknownIdentifier): Unknown identifier `Cells`
+
+Note: It is not possible to treat `Cells` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:118:8: error: Invalid pattern
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCount.lean:120:54: error: unsolved goals
+m n : ℕ
+⊢ sorry

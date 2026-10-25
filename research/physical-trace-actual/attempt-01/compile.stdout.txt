@@ -1,0 +1,46 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Actual.lean:45:8: error: unsolved goals
+case pos
+X : Type u_1
+D : Type u_2
+inst✝¹ : Fintype X
+inst✝ : Fintype D
+p q : RationalLaw X
+K L : X → RationalLaw D
+E : ℚ
+hsupport : ∀ (x : X), 0 < q.mass x → variation (K x) (L x) ≤ E
+x : X
+a✝ : x ∈ Finset.univ
+hx : q.mass x = 0
+⊢ 0 ≤ 0
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Actual.lean:57:6: error: Type mismatch
+  add_le_add_left hsum ?m.215
+has type
+  ∑ x, q.mass x * variation (L x) (K x) + ?m.215 ≤ E + ?m.215
+but is expected to have type
+  variation p q + ∑ x, q.mass x * variation (L x) (K x) ≤ variation p q + E
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Actual.lean:155:10: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Actual.lean:185:17: error: Application type mismatch: The argument
+  add_le_add_right (incomingLaw_accuracy r c U L hr hc hp d N hIn) ?m.116
+has type
+  ?m.116 + variation (incomingLaw r c U L hr hc d N hIn) (idealIncomingLaw r c U L hr hc hp d) ≤
+    ?m.116 + ((1 / 2) ^ N + dyadic hIn)
+but is expected to have type
+  variation (incomingLaw r c U L hr hc d N hIn) (idealIncomingLaw r c U L hr hc hp d) +
+      exitAllowance dimensionAllowance J hExit ≤
+    (1 / 2) ^ N + dyadic hIn + exitAllowance dimensionAllowance J hExit
+in the application
+  LE.le.trans he (add_le_add_right (incomingLaw_accuracy r c U L hr hc hp d N hIn) ?m.116)
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Actual.lean:210:17: error: Application type mismatch: The argument
+  LE.le.trans (add_le_add_left hexit ?m.243) ?m.253
+has type
+  exitAllowance dimensionAllowance (PhysicalStarBudget.attempts dimensionAllowance t)
+        (PhysicalStarBudget.precision dimensionAllowance t) +
+      ?m.243 ≤
+    ?m.248
+but is expected to have type
+  dyadic (t + 2) + dyadic (t + 2) +
+      exitAllowance dimensionAllowance (PhysicalStarBudget.attempts dimensionAllowance t)
+        (PhysicalStarBudget.precision dimensionAllowance t) ≤
+    dyadic t
+in the application
+  LE.le.trans he (LE.le.trans (add_le_add_left hexit ?m.243) ?m.253)

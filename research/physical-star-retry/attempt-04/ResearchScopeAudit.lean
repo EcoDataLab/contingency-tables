@@ -1,0 +1,3 @@
+import ResearchPhysicalStarRetry.Exit
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalStarRetry.Exit] headlines [Math115.PhysicalStarRetry.flatExit_variation, Math115.PhysicalStarRetry.flatExit_variation_of_edge, Math115.PhysicalStarRetry.targetLaw_mass_cast, Math115.PhysicalStarRetry.flatExit_zero_star_variation]
