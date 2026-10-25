@@ -2,19 +2,23 @@
 
 The joint correction below now has a bounded implementation in [general_defect_terminal.py](../src/contingency115/general_defect_terminal.py), with exact weighted-fiber and finite-word tests. It retains the sampled completion, checks padding before its inverse-fiber coin, and includes completion and rounding errors. The [shape-aware scales](shape-aware-defect.md) supply an additional guarded success certificate. This component does not itself establish endpoint mixing or a complete general outer sampler.
 
-24 October 2026. The [Lean repair-map packet](../research/physical-trace-general-repair/)
-now connects the actual scheduled defect/completion type to the literal repair,
-its balanced joint, and ordinary-table unpadding after the actual padding test.
-It also proves full-view recovery from ordered labels and the repaired table.
-Ordinary compilation and the assumption audit passed, with separate AI source
-review. The inverse-fibre formula and acceptance law below are still reviewed
-mathematics with finite checks; they are not compiled theorems in that packet.
+24 October 2026. The [composed Lean correction](../research/physical-trace-general-terminal-law/)
+now proves the actual repair's exact support/slack label count, the full c0
+lower bound, constant successful point mass, uniform proportions and positive
+success. At `U=11d(m+n-2),L=7`, the checked bound is
+`s>=c0/[2p(p-1)]`, using the actual smaller-scale padding theorem. All six
+modules compile and pass full assumption audits, with separate AI source
+review. The compact factorization `D0+abuv`, its linear-time implementation,
+the scalar `1/(8p)` corollary and finite-word integration below remain separate
+from that compiled ideal law.
 
 11 October 2026. Mathematical derivation reviewed by a separate AI agent,
 with exact finite checks. This supplies a stationary uniform-table output
 rule for the [general weighted defect trace](general-defect-trace.md), with
 success at least **1/(8p)** at the ideal scales. That stationary-law and success
-claim is not yet a compiled Lean theorem or an installed general trace sampler.
+scalar claim remains reviewed mathematics; the later compiled label-sum law
+above establishes the distinct smaller-scale bound. Neither installs a
+complete general trace sampler.
 
 ## Scope
 

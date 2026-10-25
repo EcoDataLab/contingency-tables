@@ -185,10 +185,12 @@ gives 19 physical completions and five original tables.
 The [general repair map](../research/physical-trace-general-repair/) now
 retains the actual sampled completion, proves fixed-label recovery, and
 returns a feasible ordinary table after its repaired-entry padding test.
-Its inverse-fibre count, ideal acceptance law and bounded dyadic approximation
-remain to be proved. Initialization and empty-support handling, fresh outer
+Its [exact inverse count and ideal acceptance law](../research/physical-trace-general-terminal-law/)
+now compile and pass their audits, with positive success at the smaller
+scales. Bounded dyadic approximation and approximate-law composition remain.
+Initialization and empty-support handling, fresh outer
 retries, empty completion blocks and other branches, and encoded costs also
-remain. The reviewed general output correction assumes positive original
+remain. The checked ideal output correction assumes positive reduced
 margins. The [zero-margin equivalence](../research/physical-trace-zero-margins/)
 now proves literal ordinary-table restriction/zero restoration and exact
 uniform-law/TV transport, including empty dimensions and zero totals.
@@ -199,8 +201,9 @@ catalog and branch guards and calls the existing reference schedule on those
 same reduced margins. It derives the scale/count/large-list conditions from
 the reference tag; an actual reduced defect start remains required. Its
 output is still a reduced labelled joint. The checked repair map produces an
-ordinary reduced table on success; its corrected output law is needed before
-uniform/TV restoration can finish the argument. Other branch programs and encoded costs remain
+ordinary reduced table on success. Its ideal correction is checked; the
+finite-word corrected law is needed before uniform/TV restoration can finish
+the argument. Other branch programs and encoded costs remain
 open. No equality of physical states or trace kernels across retuned shapes
 is asserted.
 No complete new sampler or runtime theorem is claimed.

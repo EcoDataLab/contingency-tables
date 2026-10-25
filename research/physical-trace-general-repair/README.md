@@ -4,6 +4,8 @@
 passes ordinary compilation and its full assumption audit. Separate
 AI source review found no semantic objection.
 
+The [successor correction packet](../physical-trace-general-terminal-law/) now supplies the exact inverse count and ideal accepted-output law. The scope below records this repair-map checkpoint.
+
 The input is the exact `DefectJoint` returned by the checked
 [terminal draw](../physical-trace-terminal/). Canonical defect labels select
 the existing full-view repair. The sampled dense completion stays present:

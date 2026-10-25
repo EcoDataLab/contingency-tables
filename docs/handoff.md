@@ -1,12 +1,15 @@
 # Contributor handoff
 
-24 October 2026: the [general completion-retaining repair](../research/physical-trace-general-repair/)
-is compiled and assumption-audited. It takes the actual defect/completion
-pair, retains the sampled completion through repair, and returns an ordinary
-table when the repaired large entries pass the padding test. Fixed-label
-recovery and exact repadding are checked. The inverse-fibre count and
-acceptance-law correction remain open; feasibility alone does not give
-uniform output. Separate AI source review found no objection to this scope.
+24 October 2026: the [ideal general correction](../research/physical-trace-general-terminal-law/)
+is compiled and assumption-audited across all six modules. Explicit inverse
+views and ordinary support/slack tests count actual successful predecessors.
+Positive reduced margins give the full shape c0 lower bound. With m,n>=2
+and a nonempty actual joint input type, the actual
+repair, padding test and ideal acceptance coin then produce equal successful
+mass for every ordinary table, with positive success at least
+`c0/[2p(p-1)]` at `U=11d(m+n-2),L=7`. Separate AI source review found no
+mathematical blocker. The input law is ideal uniform on actual joint pairs;
+finite-word composition is the next missing interface.
 
 23 October 2026: the [scheduled finite-word defect joint](../research/physical-trace-schedule/)
 is compiled and assumption-audited. From a supplied actual defect, it chooses
@@ -21,8 +24,8 @@ The [compiled initialization obstruction](../research/physical-trace-initializat
 shows why a start remains an input: r=[0,4,4], c=[4,4], U=2,L=7 has equal
 totals, both large lists and p≥2, yet no defects. Its 19 physical completions
 and five original tables are separately checked finite counts. The current
-result targets labelled physical pairs; original-table output correction
-and the complete revised sampler remain open.
+scheduled result targets labelled physical pairs. Its composition with the
+new ideal ordinary-output correction and the complete revised sampler remain open.
 
 Strongest compiled gap results: the [actual aggregate trace theorem](aggregate-defect-trace.md)
 has compiled coefficient **`34848d⁵(m+n−2)³`**, giving **d^(13/2)** at bounded
@@ -47,25 +50,26 @@ mathematical argument; the physical theorem still needs Lean formalization.
 
 Next integration tasks:
 
-1. Prove the inverse-fibre count and acceptance law for the now-checked
-   general repair map. Construct all inverse pairs, prove feasibility and
-   exhaustiveness, then count them. Small crossings need a positive repaired
-   small entry; large crossings need positive ordinary residual row and
-   column slacks. The proposed lower bound assumes positive reduced margins.
-   Distinguish the ideal rational acceptance probability from a bounded
-   dyadic coin and its rounding error. For the new-scale success bound,
-   instantiate the existing `Research.ReciprocalCount.shape_padding_count_le_twice`
-   with the actual large mask; do not reuse the old ideal-scale count theorem.
+1. Connect a literal ordered-list inverse counter and bounded dyadic coin to
+   the now-checked ideal correction. The exact label-sum count is sufficient;
+   compact `D0+abuv` factorization is optional additional work, not an assumed
+   theorem. Small crossings require ordinary support; large crossings require
+   both ordinary residual slacks. Reuse the existing finite-coin rounding
+   lemmas, then compose its error with the checked scheduled joint draw.
+   The new-scale denominator bound and full c0 lower bound are already
+   proved; preserve their positive-margin hypotheses.
 2. Supply initialization where defect support is nonempty, and handle the
    proved empty-support branch, zero margins and empty completion blocks.
    [Zero-row/column removal and restoration](../research/physical-trace-zero-margins/)
    now have checked [ordered list and matrix-code preprocessing](zero-margin-preprocessing.md),
    exact uniform/TV restoration, and a reference-schedule wrapper using the
    actual recomputed reduced cutoff and branch guards. This does not transport
-   physical states or kernels between shapes. A reduced defect start, the
-   accepted output law and remaining branch programs still need construction. Compose
-   fresh bounded outer retries after the output
-   correction has been proved.
+   physical states or kernels between shapes. A literal reduced defect start,
+   the finite-word accepted law and remaining branch programs still need
+   construction. The inverse construction and positive c0 are useful for
+   deriving a start from a feasible ordinary table, but no encoded initializer
+   is supplied yet. Compose fresh bounded outer retries with the checked
+   success lower bound, then restore zeros at the ordinary-table law level.
 3. Prove encoded realization and additional charged costs. Keep historical
    strict Comparator work separate. The [bridge note](legacy-completion-backend.md#remaining-interface-to-the-canonical-defect-trace)
    records the exact checked schedule and remaining obligations. This new
@@ -122,7 +126,7 @@ The new defect-chain work has three complementary scopes:
 
 - [Unit trace and bounded implementation](direct-defect-sampler.md): either margin side below the cutoff, positive margins, no enumeration. Fixed-bit errors and retries are implemented and checked against exact kernels. The [both-small schedule](defect-sampler-composition.md) supplies sufficient accuracy parameters and full integer-operation accounting.
 - [Arbitrary rectangular refinement](rectangular-defect.md): both sides below the cutoff, inverse gap `20000d^(31/2)` rational or `40000d^(31/2)` dyadic, with no aspect restriction. The [hard-limit bridge](../research/rectangular-defect/) is compiled; the new capacity-dependent physical context/exposure maps and final numerical bound still need Lean assembly.
-- [General weighted trace](shape-aware-defect.md) and [joint repair terminal](general-defect-output.md): inverse gap `10000d^16` rational or `20000d^16` dyadic, with stationary success at least `1/(8p)` at ideal scales for positive margins. Geometry, capped oracle errors and joint-fiber identities have separate AI review and exact finite checks. The bounded transition, scheduled physical defect joint and completion-retaining repair map now have compiled interfaces. Inverse-fibre counting, the acceptance law, whole-outer retries and encoded law identification remain open. The linked shape result gives stronger subclass bounds after its smaller-scale guards pass.
+- [General weighted trace](shape-aware-defect.md) and [joint repair terminal](general-defect-output.md): inverse gap `10000d^16` rational or `20000d^16` dyadic, with stationary success at least `1/(8p)` at ideal scales for positive margins. Geometry, capped oracle errors and joint-fiber identities have separate AI review and exact finite checks. The bounded transition, scheduled physical defect joint and completion-retaining repair map now have compiled interfaces. Exact label-sum inverse counting and the ideal acceptance law now compile separately. Bounded acceptance, whole-outer retries and encoded law identification remain open. The linked shape result gives stronger subclass bounds after its smaller-scale guards pass.
 
 Preserve the terminal's positive-margin assumptions and its selected scale certificate. A checked zero-margin example would give invalid acceptance `5/2`; `L=3d` alone also fails to imply its success lower bound. Smaller scales require the explicit padding inequality in the shape-aware proof. The general compiled `d^17` sampler remains the baseline. [The broader research review](research-directions.md) separates these changed-chain integration tasks from the outstanding runtime-degree certificates.
 

@@ -1,13 +1,15 @@
 # Research status
 
-24 October 2026: the [completion-retaining repair map](../research/physical-trace-general-repair/)
-now connects the actual defect/completion pair to a repaired padded table,
-then to an ordinary table after its actual padding test. Ordered labels and
-the repaired table recover the input pair; the sampled dense completion is
-retained, with one increment at a large crossing. Ordinary compilation and
-the full assumption audit passed, with separate AI source review. This closes
-the mathematical map, not the inverse-fibre count or uniform acceptance law.
-The map allows arbitrary natural scales whenever an actual input pair exists.
+24 October 2026: the [ideal ordinary-table correction](../research/physical-trace-general-terminal-law/)
+now derives the exact inverse count of the completion-retaining repair and
+proves uniform accepted output with positive success. This uses positive
+reduced margins, m,n>=2 and a nonempty actual joint input type. The support/slack count is at least
+`c0=max[a*(n*a-1), b*(m*b-1)]`. At `U=11d(m+n-2),L=7`, its success probability
+is at least `c0/[2p(p-1)]`; the actual marked-padding theorem supplies the
+denominator bound. All six modules passed ordinary compilation and full
+headline assumption audits, with separate AI source review. The input is
+ideal uniform on actual defect/completion pairs. Finite-word acceptance and
+composition with the checked approximate pair draw remain open.
 
 23 October 2026: the stronger trace now has a
 [scheduled finite-word construction](../research/physical-trace-schedule/)
@@ -42,13 +44,13 @@ position order and totals, literal matrix-list restoration matches the table
 equivalence, and recomputed scales and branch guards feed the checked reference
 schedule on the reduced margins. Its actual reduced defect start remains
 an input; its output is still a reduced defect/completion pair. The new repair
-map supplies a feasible ordinary reduced table on padding success. Its output
-law still needs the inverse-fibre acceptance correction before the uniform/TV
-restoration theorem can finish the sampler argument. All historical failures
-remain unchanged.
+map supplies a feasible ordinary reduced table on padding success. The ideal
+inverse-fibre correction is now checked; its finite-word realization and
+error composition are needed before uniform/TV restoration can finish the
+sampler argument. All historical failures remain unchanged.
 
-The inverse-fibre count and acceptance law, initialization and other
-branches, outer retries and encoded costs remain open. No complete sampler
+The bounded acceptance coin and approximate-law composition, initialization
+and other branches, outer retries and encoded costs remain open. No complete sampler
 or runtime exponent changed. Historical default-target Linux and Comparator
 scopes are unchanged; failed proof attempts are retained.
 
@@ -158,8 +160,9 @@ over upstream and no integration of the newer d⁸/d^6.5 chain.
 The [arbitrary-margin completion backend](legacy-completion-backend.md)
 now has a compiled physical adapter at outer `L=7` in the both-large branch.
 Canonical trace correspondence, fresh finite-word composition and the defect-joint
-accuracy schedule are now checked. Original-table correction, missing branches and
-the revised outer encoded sampler still need assembly.
+accuracy schedule are now checked. Ideal original-table correction is also
+checked; its finite-word realization, missing branches and the revised outer
+encoded sampler still need assembly.
 
 The [versioned Comparator guard](../research/strict-sampler-checkpoints/versioned-guard-v2/)
 passed an actual bounded VM experiment: the original whole metadata guard

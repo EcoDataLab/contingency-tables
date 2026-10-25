@@ -1,0 +1,6 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralAcceptance.lean:52:0: warning: automatically included section variable(s) unused in theorem `Math115.PhysicalTraceJoin.PartialRepairCorrection.uniform_preimage_mass`:
+  [Fintype A]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype A] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`

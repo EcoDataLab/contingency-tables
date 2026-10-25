@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralCount
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralCount] headlines [Math115.PhysicalTraceJoin.terminalRepairEncoding_injective, Math115.PhysicalTraceJoin.terminalOutputFibre_card_le, Math115.PhysicalTraceJoin.actualShape_padded_count_le_twice, Math115.PhysicalTraceJoin.actualShape_defectJoint_card_le]

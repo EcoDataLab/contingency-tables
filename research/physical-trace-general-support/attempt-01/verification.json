@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "19e4f3ffe5807f024d91a9f6063504f36a4587af",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralInverseSupport"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralInverseSupport",
+      "source": "research/physical-trace-general-support/formal/ResearchPhysicalTraceJoin/GeneralInverseSupport.lean",
+      "source_sha256": "0aae672bbe0989d9499140759289e23e6bc692f844f026a93b33809fdf3eb1c4",
+      "returncode": 0,
+      "seconds": 88.69026850024238,
+      "olean_sha256": "24f80467403f198b8a893075e9be13855d251774ce069f93f8575addcdee2811"
+    }
+  ],
+  "audit_seconds": 74.74528149981052,
+  "audit_sha256": "43adaef28ad8a2f2042c6552bb3a9df3c056393c9f5cb5310076ca0a1d83ccff",
+  "audit_driver_sha256": "2e626cdf4c1cab452c2fea6a1eab2194c986dc50c3668786b1752484240359b4",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "0cc27de0e16e2dad77daa163ed81cac27e2f0b072e150b57978a8e05108fd7eb",
+  "declaration_count": 43,
+  "theorem_count": 28,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.inverseLocalTest_iff_support",
+      "closure_size": 3926,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  1 ≤ L →\n    ∀ (X : OAI.ContingencyTables.Table r c)\n      (st :\n        OAI.ContingencyTables.SmallContextCoordinates.Cells\n            (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) ×\n          OAI.ContingencyTables.SmallContextCoordinates.Cells\n            (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)),\n      Math115.PhysicalTraceJoin.InverseLocalTest r c U L X st ↔ Math115.PhysicalTraceJoin.InverseSupportTest r c U X st",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalRepairFibre_card_eq_supportCount",
+      "closure_size": 10302,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  1 ≤ L →\n    ∀ (X : OAI.ContingencyTables.Table r c),\n      Fintype.card (Math115.PhysicalTraceJoin.TerminalRepairFibre r c U L X) =\n        Math115.PhysicalTraceJoin.inverseSupportCount r c U X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.repairFibreOutputEquiv",
+      "closure_size": 9871,
+      "statement": "{m n : ℕ} →\n  (r : Fin m → ℕ) →\n    (c : Fin n → ℕ) →\n      (U L : ℕ) →\n        (X : OAI.ContingencyTables.Table r c) →\n          Math115.PhysicalTraceJoin.TerminalRepairFibre r c U L X ≃\n            { a // Math115.PhysicalTraceJoin.terminalRepairOutput r c U L a = X }",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalOutput_card_eq_supportCount",
+      "closure_size": 10858,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  1 ≤ L →\n    ∀ (X : OAI.ContingencyTables.Table r c),\n      Fintype.card { a // Math115.PhysicalTraceJoin.terminalRepairOutput r c U L a = X } =\n        Math115.PhysicalTraceJoin.inverseSupportCount r c U X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

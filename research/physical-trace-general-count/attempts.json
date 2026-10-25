@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralCount",
+  "verified_attempt": "attempt-05",
+  "attempts": [
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "c4f6c0294b4725351808f6739b5914864955a97ec2c3de81611d4e34171ee5e0",
+      "compile_returncode": 1,
+      "compile_seconds": 151.41752295801416,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-03",
+      "source_sha256": "838e73fd278c37b9f05a346105baccd57b72cc895d4e579545aee0c56348e595",
+      "compile_returncode": 1,
+      "compile_seconds": 92.72184929205105,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-04",
+      "source_sha256": "6d6aaa9c07ba1795ff2ea6415d4c53294cd857ee7dd4db77b6e9e17a7e766286",
+      "compile_returncode": 0,
+      "compile_seconds": 61.12347612529993,
+      "audit_returncode": 1,
+      "audit_seconds": 95.74881649995223,
+      "status": "audit_failed"
+    },
+    {
+      "attempt": "attempt-05",
+      "source_sha256": "6d6aaa9c07ba1795ff2ea6415d4c53294cd857ee7dd4db77b6e9e17a7e766286",
+      "compile_returncode": 0,
+      "compile_seconds": 44.83046616613865,
+      "audit_returncode": 0,
+      "audit_seconds": 58.38143654214218,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

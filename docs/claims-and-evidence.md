@@ -38,15 +38,40 @@ The scheduled target retains a defect label. A separate
 [completion-retaining repair map](../research/physical-trace-general-repair/)
 now turns actual pairs into feasible ordinary tables after the repaired-entry
 padding test, with fixed-label recovery and exact repadding. This map works
-at arbitrary natural scales when an actual input exists. It does not yet
-supply the inverse-fibre count or corrected output law. That acceptance law,
-initialization/branches, outer retries and encoded costs remain open.
+at arbitrary natural scales when an actual input exists. The separately
+checked ideal correction below now supplies its inverse count and accepted
+output law. Finite-word correction, initialization/branches, outer retries
+and encoded costs remain open.
 
 Every linked module has ordinary compilation and full headline-closure
 audits with standard axioms and trusted imports. Separate AI source review
 is not human review or independent kernel replay. The ledger binds the
 individual sources and receipts. Historical Linux and Comparator scopes
 remain unchanged.
+
+## physical-trace-general-correction
+
+The [composed ideal terminal law](../research/physical-trace-general-terminal-law/)
+counts actual predecessors through explicit inverse full views and an exact
+ordinary support/slack predicate. For an ordinary target X, the true output
+fibre has `ell(X)` members. Positive reduced margins give
+`ell(X)>=c0=max[a*(n*a-1),b*(m*b-1)]`, with a,b the small-row/column counts.
+No fibre cardinality or acceptance bound is supplied as a premise.
+
+From an ideal uniform actual joint, the repaired and padding-tested output
+accepted with probability `c0/ell(X)` has mass `c0/Z` for every X. Total
+success is `N*c0/Z`. The actual smaller-scale count theorem gives
+`Z<=2p(p-1)N` at `U=11d(m+n-2),L=7`. With positive margins, m,n>=2 and
+a nonempty actual joint, success is positive and at least `c0/[2p(p-1)]`.
+The successful output therefore has uniform ordinary-table proportions.
+
+All six modules compile and pass their full assumption audits. Separate
+AI source review checks the actual fibre equivalences and the hypotheses;
+the compiler and reused imports remain trusted. The exact count is a finite
+label sum, not yet the compact `D0+abuv` factorization. A supplied nonempty
+joint is not an initializer. Bounded acceptance, approximate input errors,
+retries, other branches and encoded realization remain separate; no complete
+sampler or runtime exponent changes.
 
 ## aggregate-actual-gap
 

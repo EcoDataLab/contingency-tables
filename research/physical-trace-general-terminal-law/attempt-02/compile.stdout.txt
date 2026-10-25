@@ -1,0 +1,9 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean:122:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  ↑(inverseSupportAllowance r c cutoff) * ↑(Fintype.card (DefectJoint r c cutoff 7)) ≤
+    ↑(Fintype.card (Table r c)) * (↑(inverseSupportAllowance r c cutoff) * ↑D)
+but is expected to have type
+  ↑(inverseSupportAllowance r c ((m + n - 2) * (11 * dimensionAllowance))) *
+      ↑(Fintype.card (DefectJoint r c cutoff 7)) ≤
+    ↑(Fintype.card (Table r c)) * (↑(inverseSupportAllowance r c cutoff) * ↑D)

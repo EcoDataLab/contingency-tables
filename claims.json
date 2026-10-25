@@ -389,6 +389,72 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-inverse",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-inverse/attempt-02/verification.json",
+      "sha256": "00494992409c5299e51f3ffd1c74e8fff9ac0dbcdf98e014429e94f6e4bb7b7e",
+      "label": "Actual inverse joint construction and exhaustive recovery",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-support",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-support/attempt-01/verification.json",
+      "sha256": "34845e5be75a9330e1c1ad238c31200d78162279b450f4b8ba78a45253d0e95f",
+      "label": "Exact ordinary support/slack inverse label count",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-lower",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-lower/attempt-01/verification.json",
+      "sha256": "d719642f6b11217eba1075c5750441a2c7805d929c6231bd821e3f4df041f70d",
+      "label": "Derived positive shape allowance for every ordinary inverse fibre",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-count",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-count/attempt-05/verification.json",
+      "sha256": "7a4158fc16042abd438ad83bbb77888bd597896772b727f8bebfdc6c42ba9758",
+      "label": "Actual defect-joint denominator at the smaller scales",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-acceptance",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-acceptance/attempt-02/verification.json",
+      "sha256": "296f70706d839dcd41deab094528bd2ea75527eefff65358aec444cb2785b5cd",
+      "label": "Total clipped ideal partial-repair correction",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-terminal-law",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-terminal-law/attempt-03/verification.json",
+      "sha256": "ddc4f2d1999ad1c04329ed764b406b75c37dd47cd58ce5e6f26a24b44d26d7ad",
+      "label": "Derived ideal uniform ordinary output and positive new-scale success",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -819,15 +885,15 @@
     {
       "id": "physical-trace-walk",
       "title": "Scheduled finite-word sampling of defect and completion pairs",
-      "english_claim": "The ideal incoming and weighted-exit row equals the computed-reference trace. The literal frozen completion draws, list decisions, capped rational proposal and bounded exits use a proved common step width. An explicit natural schedule chooses the walk length, all local precisions and a fresh terminal completion bank. For every natural h, the resulting finite-word program has total variation at most 2^-h from uniform on pairs of an actual defect and its physical completion. The mixing allowance is the proved aggregate coefficient, not a supplied error premise. A separate actual-state counterexample proves that equal totals, both large lists, U>=2, L>=7 and p>=2 do not alone supply a starting defect. Stable positive-margin list filtering now has an ordered retained-index correspondence, exact total preservation, literal matrix-list zero restoration and exact uniform/TV transport. Recomputed reduced dimensions determine the sharper cutoff and actual branch guards. In the reference branch, those guards discharge the scale/count/large-list premises of the same checked finite-word schedule from an actual reduced defect start. The schedule output remains a reduced defect-labelled completion pair. A separately checked completion-retaining repair uses that exact input, recovers both source views from ordered labels and the repaired table, and produces a feasible ordinary table after the actual repaired-entry padding test. Re-padding recovers the same repaired matrix. The inverse-fibre count and corrected acceptance law remain to be proved before the uniform/TV restoration theorem completes the original-table sampling argument.",
+      "english_claim": "The ideal incoming and weighted-exit row equals the computed-reference trace. The literal frozen completion draws, list decisions, capped rational proposal and bounded exits use a proved common step width. An explicit natural schedule chooses the walk length, all local precisions and a fresh terminal completion bank. For every natural h, the resulting finite-word program has total variation at most 2^-h from uniform on pairs of an actual defect and its physical completion. The mixing allowance is the proved aggregate coefficient, not a supplied error premise. A separate actual-state counterexample proves that equal totals, both large lists, U>=2, L>=7 and p>=2 do not alone supply a starting defect. Stable positive-margin list filtering now has an ordered retained-index correspondence, exact total preservation, literal matrix-list zero restoration and exact uniform/TV transport. Recomputed reduced dimensions determine the sharper cutoff and actual branch guards. In the reference branch, those guards discharge the scale/count/large-list premises of the same checked finite-word schedule from an actual reduced defect start. The schedule output remains a reduced defect-labelled completion pair. A separately checked completion-retaining repair uses that exact input, recovers both source views from ordered labels and the repaired table, and produces a feasible ordinary table after the actual repaired-entry padding test. Re-padding recovers the same repaired matrix. A separately checked ideal correction now derives the inverse count and uniform successful masses. Its bounded-bit realization and composition with the approximate joint draw remain before uniform/TV restoration completes the original-table sampling argument.",
       "quantity": "TV to uniform defect and completion pairs ≤ 2⁻ʰ; explicit finite bit bank",
       "hypotheses": [
         "Equal-total finite natural margins; both computed large-line lists nonempty; U≥2, L≥7, p≥2 small cells; supplied actual defect start fixed before the fresh word. Any natural h, including zero. Original zero margins and singleton selected completion blocks are allowed. All schedule parameters are explicit natural formulas; reserved width is T·B+F(h+2).",
         "The filtered-list reference wrapper uses its actual computed reference tag, equal original totals and a supplied reduced defect start. It recomputes U=11d(m+n-2), L=7 on positive-margin list lengths; it does not preserve the original physical chain or branch.",
-        "The repair map allows arbitrary natural U,L when an actual defect/completion pair is given. Ordinary output requires every repaired large entry to be at least L. Its feasibility and recovery statements introduce no positivity, count or probability premise; the separate proposed acceptance lower bound needs positive reduced margins."
+        "The repair map allows arbitrary natural U,L when an actual defect/completion pair is given. Ordinary output requires every repaired large entry to be at least L. Its feasibility and recovery statements introduce no positivity, count or probability premise; the separately checked acceptance lower bound needs positive reduced margins."
       ],
       "limitations": [
-        "Ordinary compilation and full headline-closure audits with trusted imports; separate AI source review. The scheduled output retains a defect label. The repair map proves feasibility on padding success, not a uniform accepted-output law. Initialization and empty-support branches, inverse-fibre counting and acceptance, outer retries, other completion branches and encoded costs remain open. The compiled empty-support example makes a universal initialization shortcut impossible under the current hypotheses. No new complete sampler/runtime exponent, default-target Linux rebuild or Comparator acceptance."
+        "Ordinary compilation and full headline-closure audits with trusted imports; separate AI source review. The scheduled output retains a defect label. The ideal ordinary-output correction is checked separately; its finite-word realization and approximate-law composition remain open. Initialization and empty-support branches, outer retries, other completion branches and encoded costs remain open. The compiled empty-support example prevents a universal initialization shortcut under the current hypotheses. No new complete sampler/runtime exponent, default-target Linux rebuild or Comparator acceptance."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -1228,6 +1294,187 @@
         {
           "receipt": "physical-trace-general-repair",
           "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "physical-trace-general-correction",
+      "title": "Ideal uniform output from actual defect pairs",
+      "english_claim": "Explicit full-view inverses and ordinary support/slack tests give the exact successful fibre of the completion-retaining repair. Positive ordinary margins imply ell(X)>=c0=max[a*(n*a-1),b*(m*b-1)] for every table. Starting from uniform actual defect/completion pairs, the actual padding test and ideal rational correction give every ordinary table mass c0/Z and total success N*c0/Z. At U=11d(m+n-2),L=7, the actual marked-padding count proves Z<=2p(p-1)N. With m,n>=2 and a nonempty joint, success is positive, so accepted output is uniform.",
+      "quantity": "Successful point mass c0/Z; success ≥ c0/[2p(p−1)]",
+      "hypotheses": [
+        "Positive reduced row/column margins; m,n≥2; nonempty actual defect/completion type. Ideal uniform input on that joint. c0=max[a(na−1),b(mb−1)], p is the small-cell count. General inverse/law identities use L≥1; the stated positive-success bound uses U=11d(m+n−2), L=7."
+      ],
+      "limitations": [
+        "Ordinary Lean compilation and full assumption audits with trusted inputs; separate AI source review. Exact label-sum count, without the compact factorization or executable counter correspondence. Bounded coin, approximate scheduled input, initialization/branches, retries and encoded costs still require composition. No complete sampler or exponent change."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/general-defect-output.md",
+        "research/physical-trace-general-inverse/README.md",
+        "research/physical-trace-general-inverse/formal/ResearchPhysicalTraceJoin/GeneralInverse.lean",
+        "research/physical-trace-general-support/README.md",
+        "research/physical-trace-general-support/formal/ResearchPhysicalTraceJoin/GeneralInverseSupport.lean",
+        "research/physical-trace-general-lower/README.md",
+        "research/physical-trace-general-lower/formal/ResearchPhysicalTraceJoin/GeneralInverseLower.lean",
+        "research/physical-trace-general-count/README.md",
+        "research/physical-trace-general-count/formal/ResearchPhysicalTraceJoin/GeneralCount.lean",
+        "research/physical-trace-general-acceptance/README.md",
+        "research/physical-trace-general-acceptance/formal/ResearchPhysicalTraceJoin/GeneralAcceptance.lean",
+        "research/physical-trace-general-terminal-law/README.md",
+        "research/physical-trace-general-terminal-law/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.PhysicalTraceJoin.inverseDefectJoint_labels",
+          "module": "ResearchPhysicalTraceJoin.GeneralInverse",
+          "source": "research/physical-trace-general-inverse/formal/ResearchPhysicalTraceJoin/GeneralInverse.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.inverseDefectJoint_repair",
+          "module": "ResearchPhysicalTraceJoin.GeneralInverse",
+          "source": "research/physical-trace-general-inverse/formal/ResearchPhysicalTraceJoin/GeneralInverse.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.inverseLocalTest_of_preimage",
+          "module": "ResearchPhysicalTraceJoin.GeneralInverse",
+          "source": "research/physical-trace-general-inverse/formal/ResearchPhysicalTraceJoin/GeneralInverse.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.inverseFibreMap_bijective",
+          "module": "ResearchPhysicalTraceJoin.GeneralInverse",
+          "source": "research/physical-trace-general-inverse/formal/ResearchPhysicalTraceJoin/GeneralInverse.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.inverseSuccessfulRepair_output",
+          "module": "ResearchPhysicalTraceJoin.GeneralInverse",
+          "source": "research/physical-trace-general-inverse/formal/ResearchPhysicalTraceJoin/GeneralInverse.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.inverseLocalTest_iff_support",
+          "module": "ResearchPhysicalTraceJoin.GeneralInverseSupport",
+          "source": "research/physical-trace-general-support/formal/ResearchPhysicalTraceJoin/GeneralInverseSupport.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalRepairFibre_card_eq_supportCount",
+          "module": "ResearchPhysicalTraceJoin.GeneralInverseSupport",
+          "source": "research/physical-trace-general-support/formal/ResearchPhysicalTraceJoin/GeneralInverseSupport.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.repairFibreOutputEquiv",
+          "module": "ResearchPhysicalTraceJoin.GeneralInverseSupport",
+          "source": "research/physical-trace-general-support/formal/ResearchPhysicalTraceJoin/GeneralInverseSupport.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalOutput_card_eq_supportCount",
+          "module": "ResearchPhysicalTraceJoin.GeneralInverseSupport",
+          "source": "research/physical-trace-general-support/formal/ResearchPhysicalTraceJoin/GeneralInverseSupport.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.inverseSupportAllowance_le_count",
+          "module": "ResearchPhysicalTraceJoin.GeneralInverseLower",
+          "source": "research/physical-trace-general-lower/formal/ResearchPhysicalTraceJoin/GeneralInverseLower.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.inverseSupportAllowance_positive",
+          "module": "ResearchPhysicalTraceJoin.GeneralInverseLower",
+          "source": "research/physical-trace-general-lower/formal/ResearchPhysicalTraceJoin/GeneralInverseLower.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalRepairEncoding_injective",
+          "module": "ResearchPhysicalTraceJoin.GeneralCount",
+          "source": "research/physical-trace-general-count/formal/ResearchPhysicalTraceJoin/GeneralCount.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalOutputFibre_card_le",
+          "module": "ResearchPhysicalTraceJoin.GeneralCount",
+          "source": "research/physical-trace-general-count/formal/ResearchPhysicalTraceJoin/GeneralCount.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.actualShape_padded_count_le_twice",
+          "module": "ResearchPhysicalTraceJoin.GeneralCount",
+          "source": "research/physical-trace-general-count/formal/ResearchPhysicalTraceJoin/GeneralCount.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.actualShape_defectJoint_card_le",
+          "module": "ResearchPhysicalTraceJoin.GeneralCount",
+          "source": "research/physical-trace-general-count/formal/ResearchPhysicalTraceJoin/GeneralCount.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.PartialRepairCorrection.stationary_some",
+          "module": "ResearchPhysicalTraceJoin.GeneralAcceptance",
+          "source": "research/physical-trace-general-acceptance/formal/ResearchPhysicalTraceJoin/GeneralAcceptance.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalIdealCorrection_mass",
+          "module": "ResearchPhysicalTraceJoin.GeneralAcceptance",
+          "source": "research/physical-trace-general-acceptance/formal/ResearchPhysicalTraceJoin/GeneralAcceptance.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalIdealCorrection_mass_of_le",
+          "module": "ResearchPhysicalTraceJoin.GeneralAcceptance",
+          "source": "research/physical-trace-general-acceptance/formal/ResearchPhysicalTraceJoin/GeneralAcceptance.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalPartialFibreEquiv",
+          "module": "ResearchPhysicalTraceJoin.GeneralTerminalLaw",
+          "source": "research/physical-trace-general-terminal-law/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalInverseCount_eq_supportCount",
+          "module": "ResearchPhysicalTraceJoin.GeneralTerminalLaw",
+          "source": "research/physical-trace-general-terminal-law/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalCorrected_mass",
+          "module": "ResearchPhysicalTraceJoin.GeneralTerminalLaw",
+          "source": "research/physical-trace-general-terminal-law/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalCorrected_success",
+          "module": "ResearchPhysicalTraceJoin.GeneralTerminalLaw",
+          "source": "research/physical-trace-general-terminal-law/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalCorrected_uniform_proportions",
+          "module": "ResearchPhysicalTraceJoin.GeneralTerminalLaw",
+          "source": "research/physical-trace-general-terminal-law/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.actualShape_terminalCorrected_success_lower",
+          "module": "ResearchPhysicalTraceJoin.GeneralTerminalLaw",
+          "source": "research/physical-trace-general-terminal-law/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.actualShape_terminalCorrected_success_positive",
+          "module": "ResearchPhysicalTraceJoin.GeneralTerminalLaw",
+          "source": "research/physical-trace-general-terminal-law/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "physical-trace-general-inverse",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-support",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-lower",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-count",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-acceptance",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-terminal-law",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]
     },

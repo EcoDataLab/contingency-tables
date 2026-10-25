@@ -1,0 +1,8 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInverse.lean:224:6: error: Type mismatch
+  Eq.symm (inverseNaturalProfile_small r c U L X st i j hij).right
+has type
+  inverseColumnView (↑(inverseTarget r c U L X)) (↑(↑st).1) (↑(↑st).2) i j =
+    smallQ small B (inverseNaturalProfile r c U L X ↑st) i j
+but is expected to have type
+  (↑⟨(inverseRowView ↑Y ↑(↑st).1 ↑(↑st).2, inverseColumnView ↑Y ↑(↑st).1 ↑(↑st).2), ⋯⟩).2 i j =
+    B i j - inverseNaturalProfile r c U L X ↑st (⟨(i, j), hij⟩, true)
