@@ -1,15 +1,54 @@
 """The frozen fixture bridge preserves real hashes on Python 3.10."""
+from contextlib import contextmanager
 import hashlib
 import io
 from pathlib import Path
 import tempfile
+from types import ModuleType
 import unittest
-from unittest.mock import patch
 
 import test_comparator_observer as bridge
 
+_MISSING = object()
+
+
+@contextmanager
+def _without_file_digest(module=hashlib):
+    original = module.__dict__.pop("file_digest", _MISSING)
+    try:
+        yield
+    finally:
+        if original is _MISSING:
+            module.__dict__.pop("file_digest", None)
+        else:
+            module.file_digest = original
+
 
 class ComparatorHashCompatibilityTests(unittest.TestCase):
+    def test_absence_scope_restores_missing_none_and_present_values(self):
+        for initial in (_MISSING, None, hashlib.sha256):
+            for raises in (False, True):
+                with self.subTest(initial=initial, raises=raises):
+                    module = ModuleType("hash_scope_fixture")
+                    if initial is not _MISSING:
+                        module.file_digest = initial
+
+                    def exercise():
+                        with _without_file_digest(module):
+                            self.assertFalse(hasattr(module, "file_digest"))
+                            if raises:
+                                raise RuntimeError("scope exception")
+
+                    if raises:
+                        with self.assertRaisesRegex(RuntimeError, "scope exception"):
+                            exercise()
+                    else:
+                        exercise()
+                    if initial is _MISSING:
+                        self.assertFalse(hasattr(module, "file_digest"))
+                    else:
+                        self.assertIs(module.file_digest, initial)
+
     def test_streaming_hash_matches_known_vectors_and_native_binary_files(self):
         native = getattr(hashlib, "file_digest", None)
         vectors = [(b"", "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"),
@@ -55,8 +94,7 @@ class ComparatorHashCompatibilityTests(unittest.TestCase):
 
     def test_all_36_frozen_fixtures_pass_without_file_digest(self):
         before = [module.hashlib for module in bridge._HASH_MODULES]
-        with patch.object(hashlib, "file_digest", None, create=True):
-            del hashlib.file_digest
+        with _without_file_digest():
             suite = unittest.defaultTestLoader.loadTestsFromModule(bridge)
             self.assertEqual(suite.countTestCases(), 36)
             result = unittest.TestResult()
@@ -79,8 +117,7 @@ class ComparatorHashCompatibilityTests(unittest.TestCase):
                                  hashlib.sha256(b"abc").digest())
             raise RuntimeError("fixture exception")
 
-        with patch.object(hashlib, "file_digest", None, create=True):
-            del hashlib.file_digest
+        with _without_file_digest():
             suite = bridge._CompatibleFixtureSuite([unittest.FunctionTestCase(failure)])
             with self.assertRaisesRegex(RuntimeError, "fixture exception"):
                 suite.run(unittest.TestResult(), debug=True)
