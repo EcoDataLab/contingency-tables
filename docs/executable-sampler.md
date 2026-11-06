@@ -94,6 +94,13 @@ The whole-program composition and public contract passed ordinary Lean 4.34.1 co
 
 The new operational definitions are ordinary compiled Lean functions. Their semantic correspondence proofs can use noncomputable mathematical witnesses and standard classical axioms. This closes the ordinary list-program composition obligation. A composed encoded `Realizer`, charged machine-time theorem and new runtime exponent remain open. This checkpoint also does not extend historical hosted Linux builds or strict Comparator receipts. The existing complete encoded `d^17` sampler and its runtime certificate are unchanged.
 
+Strict Comparator can separately check this ordinary-function contract with the
+program, width and probability definitions fixed. That target needs its own
+statement/solution packaging, source closure and complete strict run. The
+encoded `Realizer` and charged-cost theorem are separate machine-model
+obligations. The currently running historical-sampler replay does not certify
+the newer contract.
+
 The [separate AI source/receipt review](../research/physical-trace-general-executable-sampler/AI-SOURCE-REVIEW.md) records the exact checked sources and semantic boundaries.
 
 The earlier [typed hybrid specification](hybrid-finite-word-sampler.md) describes the probability construction. [Component correspondences](sampler-code-correspondence.md) and the [source dependency replay](../research/repair-accept/INTEGRATION-REPLAY.md) record the interfaces reused here.

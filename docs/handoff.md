@@ -22,12 +22,15 @@ charged costs and strict Comparator acceptance remain open; no new
 spectral-gap or complete-runtime exponent is claimed here.
 
 The default `make lean` command now runs the preserved baseline and the
-current research tree together, with explicit d8, bounded-aspect squared and
+selected chain and sampler tree together, with explicit d8, bounded-aspect squared and
 complete-program audit endpoints. Its source plan and build-control tests
-passed; a fresh full run of this expanded entrypoint is still pending. The
+passed; a full run of this expanded entrypoint is in progress. The
 full Python/SciPy suite passed 468 tests without skips locally. A separate
 clean source clone passed the same suite with one explicit missing-formal-
-bootstrap skip; its SciPy and observer tests ran. The strict Comparator
+bootstrap skip; its SciPy and observer tests ran. The later
+[hosted follow-up](../reports/python-reliability-2026-11-06/hosted-followup.json)
+passed all four Python versions, including SciPy and the compatibility fixes.
+The strict Comparator
 observer repair passed its regression/review checks, and a new historical
 complete-sampler proof attempt is running. Acceptance remains pending. The earlier d8 and bounded-aspect d^6.5 results already have a
 [combined research rebuild](../research/aggregate-defect-trace/results/verification.json);

@@ -1,5 +1,12 @@
 # Python test environment verification
 
+The later [hosted follow-up](hosted-followup.json) at `dc50899` passed the full
+workflow on Python 3.10, 3.12, 3.13 and 3.14. Each lane ran 476 tests: 473
+passed and three were explicitly skipped (the formal-bootstrap check and two
+optional R checks). All SciPy tests ran. The earlier local receipts below
+retain their original sources and counts; the [compatibility repair history](../python310-comparator-repair-2026-11-06/README.md)
+preserves the intervening CI failures.
+
 The complete Python suite passed in both environments below. These are completed local runs of `make test`, with the real NumPy/SciPy backend required by the new launcher. No full test run was repeated to publish this receipt.
 
 | Environment | Python | NumPy | SciPy | Tests run | Passed | Skipped | Failures/errors | Test time |

@@ -6,7 +6,7 @@ and hybrid sampler. It reuses the existing verifier and public Lean sources.
 Each attempt has a new output directory; earlier evidence is never replaced.
 
 The default documented verification now runs both the preserved baseline and
-this current research tree in one fresh attempt:
+this selected chain and sampler tree in one fresh attempt:
 
 ```sh
 bash scripts/bootstrap_lean.sh
@@ -54,6 +54,13 @@ The current selection includes both general d8 and bounded-aspect squared
 chain theorems, the complete ordinary-program contract and the separate checked
 refinements. The manifest is authoritative for exact module and headline counts;
 intermediate modules are compiled once and reached through endpoint closures.
+
+The current selection does not yet include the separate explicit-runtime-degree
+packet, the total d9 chain endpoint or the initialization-obstruction endpoint.
+Those packets retain their own passing receipts. A source-only plan adding
+their published dependencies has been prepared; their combined compilation
+with this selection has not run. This limitation does not affect inclusion of
+the d8/aspect bounds or the complete ordinary sampler contract listed above.
 
 The output retains `source-plan.json`, source/object compilation records,
 diagnostics, the environment audit and imported-object inventory, and a new

@@ -171,7 +171,7 @@ bash scripts/bootstrap_lean.sh
 make lean
 ```
 
-`make lean` is the main ordinary verification path. In one fresh attempt it runs the preserved baseline and then rebuilds the current public research dependency tree, including the general d8 theorem, the bounded-aspect squared certificate and the complete ordinary sampler contract. It audits the selected endpoints and their complete dependency closures. [Replay instructions](research/repair-accept/INTEGRATION-REPLAY.md) describe its source manifest and evidence. A successful receipt from an older target does not verify this expanded scope.
+`make lean` is the main ordinary verification path. In one fresh attempt it runs the preserved baseline and then rebuilds the selected public chain and sampler dependency tree, including the general d8 theorem, the bounded-aspect squared certificate and the complete ordinary sampler contract. It audits the selected endpoints and their complete dependency closures. [Replay instructions](research/repair-accept/INTEGRATION-REPLAY.md) describe its source manifest and evidence, including checked packets not yet selected. A successful receipt from an older target does not verify this expanded scope.
 
 `make lean-baseline` (or bare `lake build Math115` in `formal/`) selects the historical baseline only. The [earlier Linux receipt](formal/results/linux-focused-5b4af40/verification.json) and [combined d8/aspect research receipt](research/aggregate-defect-trace/results/verification.json) retain those exact scopes. The [claims ledger](docs/claims-and-evidence.md), [Linux guide](docs/linux-verification.md) and [native Windows guide](docs/windows-verification.md) distinguish ordinary compilation, trusted dependency reuse and strict replay.
 
@@ -199,6 +199,6 @@ Uniform aggregate tables and conditional assignments of individual workers are d
 
 ## Attribution
 
-Original manuscripts and Lean library: OpenAI, pinned at `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`. Initial review: GPT-6.1 Sol working with Ben Gould. Follow-up research, code, and review use OpenAI Codex agents under EcoDataLab's direction. AI-generated arguments are subject to the same reproducibility and review requirements as any contribution. See [NOTICE](NOTICE).
+Original manuscripts and Lean library: OpenAI, pinned at `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`. A [6 November upstream recheck](reports/upstream-115-recheck-2026-11-06.json) found identical Git objects for the #115 manuscript, documentation, contingency-table source subtree and challenge files at the newer upstream head; the local pin is preserved. Initial review: GPT-6.1 Sol working with Ben Gould. Follow-up research, code, and review use OpenAI Codex agents under EcoDataLab's direction. AI-generated arguments are subject to the same reproducibility and review requirements as any contribution. See [NOTICE](NOTICE).
 
 Apache-2.0. Community contributions are welcome through issues and pull requests.
