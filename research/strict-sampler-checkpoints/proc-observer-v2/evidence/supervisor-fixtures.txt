@@ -1,0 +1,24 @@
+test_active_low_backing_disk_stops_only_owned_vm (__main__.SupervisorTests.test_active_low_backing_disk_stops_only_owned_vm) ... ok
+test_active_low_host_memory_stops_only_owned_vm (__main__.SupervisorTests.test_active_low_host_memory_stops_only_owned_vm) ... ok
+test_disk_profile_tampering_rejected_before_runtime_access (__main__.SupervisorTests.test_disk_profile_tampering_rejected_before_runtime_access) ... ok
+test_existing_compiler_spawns_nothing (__main__.SupervisorTests.test_existing_compiler_spawns_nothing) ... ok
+test_fixed_crlf_dispatch_once (__main__.SupervisorTests.test_fixed_crlf_dispatch_once) ... ok
+test_fixed_profile_private_drives_and_no_forwarding (__main__.SupervisorTests.test_fixed_profile_private_drives_and_no_forwarding) ... ok
+test_identity_observer_error_still_reaps_owned_vm (__main__.SupervisorTests.test_identity_observer_error_still_reaps_owned_vm) ... ok
+test_incomplete_and_unrelated_markers_refused (__main__.SupervisorTests.test_incomplete_and_unrelated_markers_refused) ... ok
+test_kill_fallback_uses_only_held_owned_handle (__main__.SupervisorTests.test_kill_fallback_uses_only_held_owned_handle) ... ok
+test_low_memory_spawns_nothing (__main__.SupervisorTests.test_low_memory_spawns_nothing) ... ok
+test_owned_outer_cap_cleanup (__main__.SupervisorTests.test_owned_outer_cap_cleanup) ... ok
+test_owned_overlay_growth_stops_only_owned_vm (__main__.SupervisorTests.test_owned_overlay_growth_stops_only_owned_vm) ... ok
+test_pending_native_audit_rejects_before_any_image_or_process_action (__main__.SupervisorTests.test_pending_native_audit_rejects_before_any_image_or_process_action) ... ok
+test_phase_reparse_does_not_reset_watchdog (__main__.SupervisorTests.test_phase_reparse_does_not_reset_watchdog) ... ok
+test_real_logger_prefix_and_bounded_tail (__main__.SupervisorTests.test_real_logger_prefix_and_bounded_tail) ... ok
+test_result_and_runtime_hash_conflicts_fail_closed (__main__.SupervisorTests.test_result_and_runtime_hash_conflicts_fail_closed) ... ok
+test_terminal_drain_conflict_persists_failure_instead_of_stale_pass (__main__.SupervisorTests.test_terminal_drain_conflict_persists_failure_instead_of_stale_pass) ... ok
+test_versioned_disk_limits_and_unchanged_virtual_capacity (__main__.SupervisorTests.test_versioned_disk_limits_and_unchanged_virtual_capacity) ... ok
+test_working_set_observer_error_still_reaps_owned_vm (__main__.SupervisorTests.test_working_set_observer_error_still_reaps_owned_vm) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.040s
+
+OK

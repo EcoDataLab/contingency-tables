@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralJoinedCode
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralJoinedCode] headlines [Math115.PhysicalTraceJoin.rawJoinedStep_eq, Math115.PhysicalTraceJoin.rawJoinedWalk_eq]

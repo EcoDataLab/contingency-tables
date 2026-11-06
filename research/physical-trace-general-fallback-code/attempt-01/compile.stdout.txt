@@ -1,0 +1,44 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralFallbackCode.lean:51:2: error: Type mismatch: After simplification, term
+  he
+ has type
+  @Eq MatrixCode (LatticeSampler.draw (((positiveMargins xs, positiveMargins ys), h), List.ofFn word))
+    (matrixCode
+      ↑(PhysicalBooleanSampler.draw (listMargin (positiveMargins xs)) (listMargin (positiveMargins ys)) ⋯
+          (CompletionOuterSchedule.walkCount
+            (CompletionOuterSchedule.physicalSmallCount (listMargin (positiveMargins xs))
+              (listMargin (positiveMargins ys)))
+            dimensionAllowance (CompletionOuterSchedule.physicalMassBase (listMargin (positiveMargins xs))) h)
+          (CompletionOuterSchedule.restartCount
+            (CompletionOuterSchedule.physicalSmallCount (listMargin (positiveMargins xs))
+              (listMargin (positiveMargins ys)))
+            h)
+          (CompletionOuterSchedule.stepPrecision
+            (CompletionOuterSchedule.physicalSmallCount (listMargin (positiveMargins xs))
+              (listMargin (positiveMargins ys)))
+            dimensionAllowance (CompletionOuterSchedule.physicalMassBase (listMargin (positiveMargins xs))) h)
+          (CompletionOuterSchedule.terminalPrecision
+            (CompletionOuterSchedule.physicalSmallCount (listMargin (positiveMargins xs))
+              (listMargin (positiveMargins ys)))
+            h)
+          word))
+but is expected to have type
+  @Eq MatrixCode (LatticeSampler.draw (((positiveMargins xs, positiveMargins ys), h), List.ofFn word))
+    (matrixCode
+      ↑(PhysicalBooleanSampler.draw (listMargin (positiveMargins xs)) (listMargin (positiveMargins ys)) ⋯
+          (CompletionOuterSchedule.walkCount
+            (CompletionOuterSchedule.physicalSmallCount (listMargin (positiveMargins xs))
+              (listMargin (positiveMargins ys)))
+            dimensionAllowance (CompletionOuterSchedule.physicalMassBase (listMargin (positiveMargins xs))) h)
+          (CompletionOuterSchedule.restartCount
+            (CompletionOuterSchedule.physicalSmallCount (listMargin (positiveMargins xs))
+              (listMargin (positiveMargins ys)))
+            h)
+          (CompletionOuterSchedule.stepPrecision
+            (CompletionOuterSchedule.physicalSmallCount (listMargin (positiveMargins xs))
+              (listMargin (positiveMargins ys)))
+            dimensionAllowance (CompletionOuterSchedule.physicalMassBase (listMargin (positiveMargins xs))) h)
+          (CompletionOuterSchedule.terminalPrecision
+            (CompletionOuterSchedule.physicalSmallCount (listMargin (positiveMargins xs))
+              (listMargin (positiveMargins ys)))
+            h)
+          word))

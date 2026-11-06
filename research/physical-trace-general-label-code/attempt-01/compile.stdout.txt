@@ -1,0 +1,83 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:61:56: error: unsolved goals
+q s t : ℕ
+⊢ (s, t) ∈ (List.range q).product (List.range q) ↔ s < q ∧ t < q
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:62:37: warning: This simp argument is unused:
+  List.mem_product
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [orderedLabelIndexPairs, List.mem_range]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:62:55: warning: This simp argument is unused:
+  List.mem_range
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [orderedLabelIndexPairs, List.mem_product]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:71:44: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:71:59: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:77:63: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:77:78: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:88:13: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:89:9: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:93:8: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:94:9: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:107:8: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:107:26: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:111:59: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:118:62: error(lean.unknownIdentifier): Unknown identifier `«e».symm`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:112:35: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U : ℕ
+s : Cells small
+hcat : smallCellCatalog ((List.ofFn r, List.ofFn c), U) = List.ofFn fun i => (↑(↑(e i)).1, ↑(↑(e i)).2)
+⊢ (if h : sorry < (PhysicalComputedProposal.computedCatalog r c U).length then
+          some (↑(↑(e ⟨sorry, h⟩)).1, ↑(↑(e ⟨sorry, h⟩)).2)
+        else none).getD
+      (0, 0) =
+    (↑(↑s).1, ↑(↑s).2)
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:119:4: warning: This simp argument is unused:
+  dite_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.getD_eq_getElem?_getD, List.getElem?_ofFn, («e».symm s).isLt, Option.getD_some,
+    Equiv.apply_symm_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:119:15: warning: This simp argument is unused:
+  Option.getD_some
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.getD_eq_getElem?_getD, List.getElem?_ofFn, («e».symm s).isLt, dite_true,
+    Equiv.apply_symm_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:119:33: warning: This simp argument is unused:
+  Equiv.apply_symm_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.getD_eq_getElem?_getD, List.getElem?_ofFn, («e».symm s).isLt, dite_true, Option.getD_some]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:125:51: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+a : DefectJoint r c U L
+⊢ some
+      ((smallCellCatalog ((List.ofFn r, List.ofFn c), U)).getD sorry (0, 0),
+        (smallCellCatalog ((List.ofFn r, List.ofFn c), U)).getD sorry (0, 0)) =
+    some
+      ((↑(↑(terminalRepairLabels r c U L a.fst).1).1, ↑(↑(terminalRepairLabels r c U L a.fst).1).2),
+        ↑(↑(terminalRepairLabels r c U L a.fst).2).1, ↑(↑(terminalRepairLabels r c U L a.fst).2).2)
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:128:13: warning: This simp argument is unused:
+  catalog_getD_actual
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [terminalOrderedLabelCode]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

@@ -13,16 +13,38 @@ receipts retain their narrower scope.
 
 ## physical-trace-hybrid-sampler
 
-The [all-input finite-word sampler](hybrid-finite-word-sampler.md) supplies
-its actual reduced start, feasible fallback and accuracy settings internally.
-Its flat word uses disjoint complete trial blocks. The dispatcher uses the
-new reference map on that computed branch, zero-bit deterministic output,
-and the checked legacy backend at its own scales elsewhere. Equal original
-natural-margin totals and natural t suffice for every-word feasibility and
-TV<=2^-t, including empty lists and zero margins. Eight additive modules and
-all selected headline closures compiled/audited; separate AI review passed.
-The typed map includes noncomputable semantic components. Encoded program
-correspondence, revised machine costs and strict Comparator remain separate.
+The [complete ordinary Lean sampler](executable-sampler.md) computes its
+branch, actual reduced start, fallback, schedules, corrected trials and zero
+restoration. `executableSampler_contract` ties its explicit raw program and
+computed width to a feasible table on every full word and uniform-word
+TV<=2^-t. Equal original totals and natural t suffice, including empty lists,
+zeros and t=0. The stronger chain is used on its recomputed reference branch;
+other branches retain their checked backends. Compilation, full assumption
+audits and separate AI review passed. Revised encoded realization, charged
+runtime and strict Comparator remain separate.
+
+## physical-trace-spanning-count
+
+The [spanning-label theorem](sampler-refinements.md#more-guaranteed-repair-labels)
+proves N(X)>=p-1 for every feasible positive-margin table, hence
+N(X)>=max(c0,p-1). It uses positive small donors without assuming surplus in
+large residual cells. The separate augmented-numerator law gives ideal success at least 1/(2p)
+and a checked fresh-retry error bound. The current raw coin still uses c0.
+
+## physical-trace-shape-retry
+
+The [shape-aware schedule](sampler-refinements.md#use-the-known-numerator-in-the-retry-schedule)
+keeps c0 and uses ceil(2p(p-1)/c0) as its reciprocal block. The requested
+accuracy is checked with no larger retry count or precision. This alternative
+is distinct from the installed linear schedule and from optimal runtime.
+
+## physical-trace-tight-reservation
+
+The [tighter completion bound and adapters](sampler-refinements.md#bound-completion-words-at-their-actual-residual-dimension)
+now reach the complete typed hybrid: its total reservation is no larger and
+its complete output law is exactly the current hybrid law. Uniform words
+belong to different sized domains. The current raw program still uses old
+widths; raw installation and machine-time analysis remain separate.
 
 ## physical-trace-linear-retry
 
@@ -36,15 +58,14 @@ in the [sampler guide](hybrid-finite-word-sampler.md).
 
 ## physical-trace-code-components
 
-The [executable component correspondences](sampler-code-correspondence.md)
-cover full reference initialization, raw rational-clock neighbor selection,
-terminal correction and retained-completion reconstruction. Their ordinary
-computational definitions agree pointwise with the typed maps on each
-stated valid input. The complete initializer needs no supplied table,
-start or labels. Terminal ordered labels and raw coarse-margin wrappers,
-then the whole accepted trace/trial/outer program, remain separate seams.
-All four packets compile and pass complete assumption audits and separate
-AI review. No additional probability error or runtime result is claimed.
+The [component correspondences](sampler-code-correspondence.md) now feed the
+[complete raw program](executable-sampler.md). Coarse margins, ordered labels,
+accepted steps, balanced exits, joined walks and terminal correction agree
+pointwise with their typed maps. The complete wrapper discharges the local
+valid-state and supplied-start interfaces from equal-total original lists.
+All successful packets have compilation and complete assumption audits,
+plus separate AI review. No additional probability error or machine-time
+result is inferred from a representation equality.
 
 ## physical-trace-walk
 

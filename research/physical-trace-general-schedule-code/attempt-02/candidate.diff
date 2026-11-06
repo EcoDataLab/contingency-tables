@@ -1,0 +1,23 @@
+--- initial.lean
++++ checked.lean
+@@ -119 +119 @@
+-    Fintype.card_subtype, Finset.card_eq_sum_ones, Finset.sum_filter]
++    Fintype.card_subtype, Finset.card_eq_sum_ones, Finset.sum_filter, Function.comp_apply]
+@@ -123 +123 @@
+-  simp only [rawScheduleLargeLines, List.map_ofFn, List.sum_ofFn, largeRowCount]
++  simp only [rawScheduleLargeLines, List.map_ofFn, List.sum_ofFn, largeRowCount, Function.comp_apply]
+@@ -127 +127 @@
+-  simp only [rawScheduleLargeLines, List.map_ofFn, List.sum_ofFn, largeColumnCount]
++  simp only [rawScheduleLargeLines, List.map_ofFn, List.sum_ofFn, largeColumnCount, Function.comp_apply]
+@@ -133,2 +133,2 @@
+-    rawScheduleDimension_eq, rawScheduleLargeLines_row_eq,
+-    rawScheduleLargeLines_column_eq, List.sum_ofFn,
++    rawScheduleDimension_eq, rawScheduleLargeLines_row_eq r U,
++    rawScheduleLargeLines_column_eq c U, List.sum_ofFn,
+@@ -222 +222,5 @@
+-  unfold rawPositiveTrialWordWidth rawPositiveOuterPrecision
++  change 0 < rawTerminalScheduleWordWidth (positiveMargins xs) (positiveMargins ys)
++    (positiveTraceCutoff xs ys) 7 (rawPositiveOuterPrecision xs ys t) + rawPositiveOuterPrecision xs ys t
++  have hk : 0 < rawPositiveOuterPrecision xs ys t := by
++    unfold rawPositiveOuterPrecision
++    omega

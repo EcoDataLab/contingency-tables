@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralTightWidth
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralTightWidth] headlines [Math115.PhysicalTraceJoin.tightStepWidth_le_uniform, Math115.PhysicalTraceJoin.tightUniformJoinedWord_split, Math115.PhysicalTraceJoin.tightUniformJoinedWord_law, Math115.PhysicalTraceJoin.tightUniformJoinedWord_same_law, Math115.PhysicalTraceJoin.tightTerminalCompletion_same_law, Math115.PhysicalTraceJoin.tightTerminalBankWidth_le_old, Math115.PhysicalTraceJoin.tightTerminalJoinedWord_law, Math115.PhysicalTraceJoin.tightTerminalJoinedWord_same_law]

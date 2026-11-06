@@ -1,12 +1,19 @@
-PYTHON ?= python3
+PYTHON ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 REPORT_DIR ?= .local/reports
+LEAN_MODE ?= --serial
 # Run directly from the checkout, including subprocesses that change directory.
 export PYTHONPATH := $(CURDIR)/src
 
 .PHONY: test audit verify sources sources-bundle crosscheck replay-mixtures \
-	sparse-example linear-example lean reports reports-local reports-publish claims claims-check
-test:
-	$(PYTHON) -m unittest discover -s tests -v
+	sparse-example linear-example lean lean-baseline lean-plan test-full test-core \
+	reports reports-local reports-publish claims claims-check
+test: test-full
+
+test-full:
+	$(PYTHON) scripts/run_python_tests.py
+
+test-core:
+	$(PYTHON) scripts/run_python_tests.py --core
 
 audit:
 	mkdir -p "$(REPORT_DIR)"
@@ -39,7 +46,13 @@ sources:
 	$(PYTHON) scripts/verify_sources.py
 
 lean:
-	bash scripts/verify_lean.sh focused
+	bash scripts/verify_main.sh "$(LEAN_MODE)"
+
+lean-baseline:
+	bash scripts/verify_lean.sh focused "$(LEAN_MODE)"
+
+lean-plan:
+	$(PYTHON) research/repair-accept/verify.py --scope integration-sampler --plan
 
 # Ordinary report reruns write local copies; publication generation is explicit.
 reports: reports-local

@@ -1,0 +1,8 @@
+--- initial.lean
++++ checked.lean
+@@ -20 +20 @@
+-open Math115.RationalClockStep
++open Math115.RationalClockStep Math115.PhysicalStationarySuccess
+@@ -255 +255 @@
+-          (fun d => completionLaw r c U L hr hc d.val hTerm) := by
++          (fun d : DefectVertices r c U L => completionLaw r c U L hr hc d.val hTerm) := by

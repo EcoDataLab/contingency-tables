@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralFallbackCode
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralFallbackCode] headlines [Math115.PhysicalTraceJoin.rawPositiveLegacyWordWidth_eq, Math115.PhysicalTraceJoin.rawPositiveLegacyReducedWordCode_eq, Math115.PhysicalTraceJoin.rawPositiveLegacyWordCode_eq, Math115.PhysicalTraceJoin.rawPositiveDeterministicWordCode_eq]

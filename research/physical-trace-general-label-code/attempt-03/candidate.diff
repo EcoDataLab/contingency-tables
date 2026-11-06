@@ -1,0 +1,51 @@
+--- initial.lean
++++ checked.lean
+@@ -22 +22 @@
+-  (List.range q).product (List.range q)
++  (List.range q).flatMap (fun s => (List.range q).map (fun t => (s,t)))
+@@ -62 +62,9 @@
+-  simp only [orderedLabelIndexPairs, List.mem_product, List.mem_range]
++  constructor
++  · intro h
++    obtain ⟨s',hs',hh⟩ := List.mem_flatMap.mp h
++    obtain ⟨t',ht',he⟩ := List.mem_map.mp hh
++    rcases Prod.mk.inj he with ⟨rfl,rfl⟩
++    exact ⟨List.mem_range.mp hs',List.mem_range.mp ht'⟩
++  · rintro ⟨hs,ht⟩
++    exact List.mem_flatMap.mpr ⟨s,List.mem_range.mpr hs,
++      List.mem_map.mpr ⟨t,List.mem_range.mpr ht,rfl⟩⟩
+@@ -71 +79 @@
+-      computedStateCode r c U L d.val),U),((e.symm s).val,(e.symm t).val)) = true ↔
++      computedStateCode r c U L d.val),U),(((e).symm s).val,((e).symm t).val)) = true ↔
+@@ -77 +85 @@
+-    repairLabelTest (((K,computedStateCode r c U L d.val),U),((e.symm s).val,(e.symm t).val))) hcat
++    repairLabelTest (((K,computedStateCode r c U L d.val),U),(((e).symm s).val,((e).symm t).val))) hcat
+@@ -88,2 +96,2 @@
+-      some ((e.symm (terminalRepairLabels r c U L d).1).val,
+-        (e.symm (terminalRepairLabels r c U L d).2).val) := by
++      some (((e).symm (terminalRepairLabels r c U L d).1).val,
++        ((e).symm (terminalRepairLabels r c U L d).2).val) := by
+@@ -93,2 +101,2 @@
+-      ⟨(e.symm (terminalRepairLabels r c U L d).1).isLt,
+-        (e.symm (terminalRepairLabels r c U L d).2).isLt⟩
++      ⟨((e).symm (terminalRepairLabels r c U L d).1).isLt,
++        ((e).symm (terminalRepairLabels r c U L d).2).isLt⟩
+@@ -103 +111,2 @@
+-        simpa only [Equiv.symm_apply_apply] using hp)
++        rw [(e).symm_apply_apply s, (e).symm_apply_apply t]
++        exact hp)
+@@ -107,2 +116,3 @@
+-      ((e.symm uv.1).val,(e.symm uv.2).val)) hl
+-    simpa only [Equiv.symm_apply_apply] using hi.symm
++      (((e).symm uv.1).val,((e).symm uv.2).val)) hl
++    rw [(e).symm_apply_apply s, (e).symm_apply_apply t] at hi
++    exact hi.symm
+@@ -111 +121 @@
+-    (smallCellCatalog ((List.ofFn r,List.ofFn c),U)).getD (e.symm s).val (0,0) =
++    (smallCellCatalog ((List.ofFn r,List.ofFn c),U)).getD ((e).symm s).val (0,0) =
+@@ -118,2 +128,3 @@
+-  simp only [List.getD_eq_getElem?_getD, List.getElem?_ofFn, (e.symm s).isLt,
+-    dite_true, Option.getD_some, Equiv.apply_symm_apply]
++  simp only [List.getD_eq_getElem?_getD, List.getElem?_ofFn, ((e).symm s).isLt,
++    dite_true, Option.getD_some]
++  exact congrArg (fun a : Cells small => (a.val.1.val,a.val.2.val)) ((e).apply_symm_apply s)

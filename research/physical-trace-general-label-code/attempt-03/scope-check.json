@@ -1,0 +1,12 @@
+{
+  "original_source_sha256": "9f7cc7df9f62664073739079b69a427488eed07601f168a73bfa70501747afe0",
+  "final_source_sha256": "3972fa17eb23d6449911e20999d92fbe778042a61c3f41fd842cc068511ed5a0",
+  "original_statements_unchanged": false,
+  "changed_headers": [
+    "orderedDefectTest_actual",
+    "orderedDefectLabelIndices_eq",
+    "catalog_getD_actual"
+  ],
+  "new_declarations": [],
+  "scope": "Literal headers compared. Changed qualifications or binder names require source review; definition bodies are reviewed separately."
+}

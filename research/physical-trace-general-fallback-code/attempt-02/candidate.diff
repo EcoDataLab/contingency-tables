@@ -1,0 +1,10 @@
+--- initial.lean
++++ checked.lean
+@@ -51,2 +51,5 @@
+-  simpa only [rawPositiveLegacyReducedWordCode, positiveLegacyReducedWord, filteredMargin,
+-    ofFn_listMargin] using he
++  have hleft : rawPositiveLegacyReducedWordCode xs ys h (List.ofFn word) =
++      Math115.LatticeSampler.draw
++        (((List.ofFn (filteredMargin xs),List.ofFn (filteredMargin ys)),h),List.ofFn word) := by
++    simp only [rawPositiveLegacyReducedWordCode, filteredMargin, ofFn_listMargin]
++  exact hleft.trans he

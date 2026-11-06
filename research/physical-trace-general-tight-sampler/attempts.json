@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralTightSampler",
+  "verified_attempt": "attempt-03",
+  "attempts": [
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "4995af10df14ee4e634b8e15f19035a0420f4c1c2d840d5a28c2b0ae4567eab1",
+      "compile_returncode": 1,
+      "compile_seconds": 106.09011891670525,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-03",
+      "source_sha256": "f7fe68844bf5a7957acbe857c8e99092cfc1d816291fa68492b831ebd4527ac4",
+      "compile_returncode": 0,
+      "compile_seconds": 45.35400287481025,
+      "audit_returncode": 0,
+      "audit_seconds": 338.14608012512326,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

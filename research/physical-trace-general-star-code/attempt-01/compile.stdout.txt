@@ -1,0 +1,57 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean:99:11: error: ambiguous term, use fully qualified name, possible interpretations [@PhysicalComputedProposal.stateCodeData,
+ @SmallGraphProfiles.stateCodeData]
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean:125:15: error(lean.unknownIdentifier): Unknown identifier `splitWordEquiv`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean:124:73: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+htotal : ∑ i, r i = ∑ j, c j
+b : BalancedVertices r c U L
+h : ℕ
+word : Fin (Nat.clog 2 (32 * dimensionAllowance ^ 2) + bits r c U L hr hc (↑b) h) → Bool
+⊢ rawStarStep (List.ofFn r) (List.ofFn c) U L dimensionAllowance h (computedStateCode r c U L ↑b) (List.ofFn word) =
+    computedStateCode r c U L (actualStep r c U L hr hc b h word)
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean:175:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  n ≥ 0
+  m ≥ 0
+  m - n ≥ 1
+  l ≥ 0
+  k ≥ 0
+  k - l ≤ -1
+  h ≥ 0
+  h - k ≥ 1
+  g ≥ 0
+  g - k ≥ 1
+  f ≥ 0
+  e ≥ 0
+  e - f - g ≥ 0
+  e - m ≥ 1
+  e - n ≥ 1
+  d ≥ 0
+  c ≥ 0
+  b ≥ 0
+  b - c ≤ -1
+  b - d ≤ -1
+  a ≥ 0
+  a - b ≥ 1
+where
+ a := ↑(rawFixedBlocks J q (List.ofFn word)).length
+ b := ↑i
+ c := ↑(List.ofFn fun i => List.ofFn ((wordBankEquiv q J) word i)).length
+ d := ↑J
+ e := ↑J * ↑q
+ f := ↑q * ↑i
+ g := ↑q
+ h := ↑(List.take q (List.drop (q * i) (List.ofFn word))).length
+ k := ↑j
+ l := ↑(List.ofFn ((wordBankEquiv q J) word ⟨i, ⋯⟩)).length
+ m := ↑↑⟨j + q * i, ⋯⟩
+ n := ↑↑⟨q * i + j, ⋯⟩
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean:234:50: error(lean.unknownIdentifier): Unknown identifier `prefixWord`
+
+Note: It is not possible to treat `prefixWord` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean:235:65: error(lean.unknownIdentifier): Unknown identifier `prefixWord`

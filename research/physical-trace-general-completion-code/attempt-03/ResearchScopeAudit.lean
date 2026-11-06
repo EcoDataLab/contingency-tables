@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralCompletionCode
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralCompletionCode] headlines [Math115.PhysicalTraceJoin.rawCoarseMargins_eq, Math115.PhysicalTraceJoin.rawCompletionBits_eq, Math115.PhysicalTraceJoin.rawCompletionResidual_eq, Math115.PhysicalTraceJoin.rawCompletionResidual_terminal, Math115.PhysicalTraceJoin.rawCompletionSource_terminal]

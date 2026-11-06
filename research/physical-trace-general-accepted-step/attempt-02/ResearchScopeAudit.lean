@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralAcceptedStep
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralAcceptedStep] headlines [Math115.PhysicalTraceJoin.rawIncomingAcceptedStep_eq, Math115.PhysicalTraceJoin.rawAcceptedWalk_eq_wordWalk]

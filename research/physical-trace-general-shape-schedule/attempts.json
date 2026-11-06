@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralShapeSchedule",
+  "verified_attempt": "attempt-04",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "3f48a9628b020b1cf910c3cc7d6d61ebd3aaa09fce68deb297f1e8cfd4aafa3f",
+      "compile_returncode": 1,
+      "compile_seconds": 39.91181974997744,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "fe1c14f70ce5bec50db4aa7a225d17025b8ed6fd00f3595ace031ebb1b1e8a82",
+      "compile_returncode": 1,
+      "compile_seconds": 19.643644374795258,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-03",
+      "source_sha256": "5599f928a11cd2dbd2c11ba5b5b703b4b5c50be4ec84ae440ace4d237b4aeeed",
+      "compile_returncode": 1,
+      "compile_seconds": 88.54253395786509,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-04",
+      "source_sha256": "4640b268fac4992cd865fef5f9bc76852c022c0f3fa428888f7c1bf43a2746c4",
+      "compile_returncode": 0,
+      "compile_seconds": 33.66720166709274,
+      "audit_returncode": 0,
+      "audit_seconds": 125.6165836667642,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

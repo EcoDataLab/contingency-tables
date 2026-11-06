@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralFallbackCode"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralFallbackCode",
+      "source": "research/physical-trace-general-fallback-code/formal/ResearchPhysicalTraceJoin/GeneralFallbackCode.lean",
+      "source_sha256": "4adf4741ae819a31cb5560bd37c56b8100da475cbd790e7105714d66c3c802b8",
+      "returncode": 0,
+      "seconds": 20.405535041820258,
+      "olean_sha256": "be94aecfce3ee787cbc566e9f612a9cd7253cb110c77d2495c162ea2b8bf45f2"
+    }
+  ],
+  "audit_seconds": 51.81543349986896,
+  "audit_sha256": "6ebe7ade8bcde2010a39df2976a1d71db56454d9c071f83311377902a2a90748",
+  "audit_driver_sha256": "ae994df0fb105a9e9fe6a3fa847349c4384d2cd6a4f9d606f36b9ee9492eee2a",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "b336f2b89bd1d124ac670e1763184ac8c262ce6aade551f379dc429a2f28964b",
+  "declaration_count": 12,
+  "theorem_count": 8,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.rawPositiveLegacyWordWidth_eq",
+      "closure_size": 4889,
+      "statement": "∀ (xs ys : List ℕ) (h : ℕ),\n  Math115.PhysicalTraceJoin.rawPositiveLegacyWordWidth xs ys h =\n    Math115.PhysicalTraceJoin.positiveLegacyWordWidth xs ys h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawPositiveLegacyReducedWordCode_eq",
+      "closure_size": 17094,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j) (h : ℕ)\n  (word : Fin (Math115.PhysicalTraceJoin.positiveLegacyWordWidth xs ys h) → Bool),\n  Math115.PhysicalTraceJoin.rawPositiveLegacyReducedWordCode xs ys h (List.ofFn word) =\n    OAI.ContingencyTables.DensePrograms.matrixCode\n      ↑(Math115.PhysicalTraceJoin.positiveLegacyReducedWord xs ys htotal h word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawPositiveLegacyWordCode_eq",
+      "closure_size": 17174,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j) (h : ℕ)\n  (word : Fin (Math115.PhysicalTraceJoin.positiveLegacyWordWidth xs ys h) → Bool),\n  Math115.PhysicalTraceJoin.rawPositiveLegacyWordCode xs ys h (List.ofFn word) =\n    OAI.ContingencyTables.DensePrograms.matrixCode ↑(Math115.PhysicalTraceJoin.positiveLegacyWord xs ys htotal h word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawPositiveDeterministicWordCode_eq",
+      "closure_size": 5396,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j)\n  (word : Fin 0 → Bool),\n  Math115.PhysicalTraceJoin.rawPositiveDeterministicWordCode xs ys (List.ofFn word) =\n    OAI.ContingencyTables.DensePrograms.matrixCode\n      ↑(Math115.PhysicalTraceJoin.positiveDeterministicWord xs ys htotal word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -653,6 +653,193 @@
       "commit_kind": "source_hashes_only",
       "status": "passed",
       "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-completion-code",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-completion-code/attempt-03/verification.json",
+      "sha256": "3f4ff447956e8a8849ebe91242879a11016f809a39ee7eb568c818850be4cb6a",
+      "label": "Computed completion requests",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-label-code",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-label-code/attempt-03/verification.json",
+      "sha256": "5ae884e800a275261016ed68d0a10e25aa5d2d62b3b2933b539789ed38dd926f",
+      "label": "Ordered defect labels from both stored views",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-schedule-code",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-schedule-code/attempt-02/verification.json",
+      "sha256": "e4bf31a2656bf77d15f079c531a78c84898722cecffc597d37d82b6a79dcb41b",
+      "label": "Computable stronger-chain schedules",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-accepted-step",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-accepted-step/attempt-02/verification.json",
+      "sha256": "2a0235fef8f7bc65ee6cce5e3b355ace6be5466ca40fa146077212e7b6ea2fa5",
+      "label": "Raw accepted incoming transition",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-star-code",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-star-code/attempt-03/verification.json",
+      "sha256": "3e48d4cb1ae1308ed984b98966bdf4782b7da3b009c00d14bcbc74e7d2e7246e",
+      "label": "Raw balanced-state exit",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-joined-code",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-joined-code/attempt-03/verification.json",
+      "sha256": "94d6be750d795113835a1c99f412398270fd71b284c9bb92dca3d95bfa5cf6ff",
+      "label": "Concrete joined step and walk",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-fallback-code",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-fallback-code/attempt-02/verification.json",
+      "sha256": "bf825b6d4afe6a273c16a7ad7fd750ba9ab1b36f312d5ba1e9e77841f48ccb6d",
+      "label": "Legacy and deterministic branch code",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-augmented-lower",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-augmented-lower/attempt-03/verification.json",
+      "sha256": "1e997f34857382abda87dc775473d9f7bfd2006e1b2a1da2aed330ffb180a0d9",
+      "label": "A spanning lower bound for inverse repair labels",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-shape-schedule",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-shape-schedule/attempt-04/verification.json",
+      "sha256": "df67462b6a17e8d97623f47e23b2107b6de8d6d02c2ef94da434d6b157c19318",
+      "label": "Shape-aware retry schedule",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-completion-tight-budget",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-completion-tight-budget/attempt-02/verification.json",
+      "sha256": "496b88655ff5ee6af963ca23e29b6a93516d85e32ed2a7accea84cecc51ed31e",
+      "label": "A tighter uniform completion-bit bound",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-trial-code",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-trial-code/attempt-03/verification.json",
+      "sha256": "943e872dc6e7d01315910935f6ce9e5c35be51d380cdb4e1a06105ea111388b3",
+      "label": "Complete corrected trial",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-program-code",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-program-code/attempt-03/verification.json",
+      "sha256": "de56718cd105ccc454dfa80778e0811ac9edce8212e24fe6f9c9299460c7b5a9",
+      "label": "Complete ordinary list sampler",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-tight-width",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-tight-width/attempt-03/verification.json",
+      "sha256": "82a97c58916930c3b92f1f013c7ce701ab37191576212dca80bad37f56efc8ef",
+      "label": "Shorter words with the same joined law",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-executable-sampler",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-executable-sampler/attempt-02/verification.json",
+      "sha256": "92d07cd9b0e8ddf23add9da6cc60f7a496255bd802cf0924a30be7dfd5e952f8",
+      "label": "Complete ordinary sampler contract",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-numerator-correction",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-numerator-correction/attempt-01/verification.json",
+      "sha256": "a96ee31fadc1a5f48a9526cb1b97e02c3c22b1c407b9293169e5b77599bd6b90",
+      "label": "Stronger inverse-fibre correction allowance",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-singleton-completion",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-singleton-completion/attempt-03/verification.json",
+      "sha256": "fb2291ccaf78418a4d62c5a0b0f1dc30720d84bd9f2e436182c697da08f48598",
+      "label": "Exact zero-bit singleton completion",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+    },
+    {
+      "id": "physical-trace-general-tight-sampler",
+      "format": "compiled_environment",
+      "path": "research/physical-trace-general-tight-sampler/attempt-03/verification.json",
+      "sha256": "08677cc41039e8a8ec5dcc82852e65a04c91aeb58f583770e77a6b010c130cd0",
+      "label": "Shorter complete typed sampler with the same law",
+      "commit": null,
+      "commit_kind": "source_hashes_only",
+      "status": "passed",
+      "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
     }
   ],
   "disjoint_component_scopes": [
@@ -661,17 +848,18 @@
   "claims": [
     {
       "id": "physical-trace-hybrid-sampler",
-      "title": "All-input finite-word sampler",
-      "english_claim": "An actual finite-word typed dispatcher uses the initialized and automatically scheduled stronger reference chain, zero-bit deterministic output, and the checked legacy backend for other branches. It supplies every-word ordinary-table feasibility and total variation at most 2^-t on the original ordered margins. The reference initializer and fallback are derived; fresh trial words and both accuracy settings are explicit.",
+      "title": "Complete ordinary Lean sampler",
+      "english_claim": "The ordinary rawHybridSamplerCode computes its branch, initialization, schedules, corrected retries, fallback and ordered zero restoration. For every equal-total pair of natural margin lists and natural t, its computed finite width and every-word output agree with a feasible table-valued sampler whose uniform-word total variation is at most 2^-t. The stronger chain is used on the recomputed reference branch.",
       "quantity": "Every-word feasible output; TV ≤ 2⁻ᵗ",
       "hypotheses": [
         "Any equal-total natural margin lists and natural precision t, including zeros and empty lists; uniform fair bits of the selected finite width."
       ],
       "limitations": [
-        "Typed finite-word map with noncomputable semantic components. The stronger chain is used on the recomputed reference branch; other shapes use deterministic output or the existing sampler at its own scales. Ordinary compilation and full assumption audits with separate AI review and trusted imports. Revised encoded program, charged runtime and strict Comparator acceptance remain open."
+        "Ordinary executable Lean code with a checked pointwise link to the mathematical sampler. Other branches retain deterministic output or the frozen backend at its own scales. The supplied full word may be enormous; this establishes no practical speedup. Revised encoded Realizer, charged runtime and strict Comparator acceptance remain open. Ordinary compilation and complete assumption audits, separate AI review, trusted compiler/imports."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
+        "docs/executable-sampler.md",
         "docs/hybrid-finite-word-sampler.md",
         "research/physical-trace-general-initialization/README.md",
         "research/physical-trace-general-initialization/formal/ResearchPhysicalTraceJoin/GeneralInitialization.lean",
@@ -688,7 +876,11 @@
         "research/physical-trace-general-complete-reference/README.md",
         "research/physical-trace-general-complete-reference/formal/ResearchPhysicalTraceJoin/GeneralCompleteReference.lean",
         "research/physical-trace-general-hybrid-sampler/README.md",
-        "research/physical-trace-general-hybrid-sampler/formal/ResearchPhysicalTraceJoin/GeneralHybridSampler.lean"
+        "research/physical-trace-general-hybrid-sampler/formal/ResearchPhysicalTraceJoin/GeneralHybridSampler.lean",
+        "research/physical-trace-general-program-code/README.md",
+        "research/physical-trace-general-program-code/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean",
+        "research/physical-trace-general-executable-sampler/README.md",
+        "research/physical-trace-general-executable-sampler/formal/ResearchPhysicalTraceJoin/GeneralExecutableSampler.lean"
       ],
       "headlines": [
         {
@@ -810,6 +1002,21 @@
           "name": "Math115.PhysicalTraceJoin.hybridWord_feasible",
           "module": "ResearchPhysicalTraceJoin.GeneralHybridSampler",
           "source": "research/physical-trace-general-hybrid-sampler/formal/ResearchPhysicalTraceJoin/GeneralHybridSampler.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawHybridWordWidth_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralProgramCode",
+          "source": "research/physical-trace-general-program-code/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawHybridSamplerCode_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralProgramCode",
+          "source": "research/physical-trace-general-program-code/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.executableSampler_contract",
+          "module": "ResearchPhysicalTraceJoin.GeneralExecutableSampler",
+          "source": "research/physical-trace-general-executable-sampler/formal/ResearchPhysicalTraceJoin/GeneralExecutableSampler.lean"
         }
       ],
       "evidence": [
@@ -843,6 +1050,14 @@
         },
         {
           "receipt": "physical-trace-general-hybrid-sampler",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-program-code",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-executable-sampler",
           "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]
@@ -915,15 +1130,217 @@
       ]
     },
     {
+      "id": "physical-trace-tight-reservation",
+      "title": "Same-law shorter complete typed sampler",
+      "english_claim": "The tight typed hybrid retains every branch, correction/retry parameter and fallback while reducing completion reservations. Its complete output law is exactly the existing hybrid law and its full width never increases. The separate zero-bit singleton backend also has an exact same-law theorem.",
+      "quantity": "Total reserved width ≤ old; identical complete output law",
+      "hypotheses": [
+        "Equal-total natural margin lists and natural t for the complete typed hybrid; uniform words in their respective finite domains. The singleton alternative separately requires both residual dimensions nonempty and one at most one."
+      ],
+      "limitations": [
+        "The current ordinary raw program still uses the old widths. The shorter typed sampler remains far above legacy reservations on the reported fixtures. No actual-bit inspection, timing, new machine-time exponent or strict Comparator acceptance is established."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/sampler-refinements.md",
+        "research/physical-trace-general-completion-tight-budget/README.md",
+        "research/physical-trace-general-completion-tight-budget/formal/ResearchPhysicalTraceJoin/GeneralCompletionTightBudget.lean",
+        "research/physical-trace-general-tight-width/README.md",
+        "research/physical-trace-general-tight-width/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean",
+        "research/physical-trace-general-singleton-completion/README.md",
+        "research/physical-trace-general-singleton-completion/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean",
+        "research/physical-trace-general-tight-sampler/README.md",
+        "research/physical-trace-general-tight-sampler/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.PhysicalTraceJoin.completionBits_le_rawTight",
+          "module": "ResearchPhysicalTraceJoin.GeneralCompletionTightBudget",
+          "source": "research/physical-trace-general-completion-tight-budget/formal/ResearchPhysicalTraceJoin/GeneralCompletionTightBudget.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawTightCompletionBits_le_old",
+          "module": "ResearchPhysicalTraceJoin.GeneralCompletionTightBudget",
+          "source": "research/physical-trace-general-completion-tight-budget/formal/ResearchPhysicalTraceJoin/GeneralCompletionTightBudget.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.tightTerminalJoinedWord_same_law",
+          "module": "ResearchPhysicalTraceJoin.GeneralTightWidth",
+          "source": "research/physical-trace-general-tight-width/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.tightStepWidth_le_uniform",
+          "module": "ResearchPhysicalTraceJoin.GeneralTightWidth",
+          "source": "research/physical-trace-general-tight-width/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.tightTerminalBankWidth_le_old",
+          "module": "ResearchPhysicalTraceJoin.GeneralTightWidth",
+          "source": "research/physical-trace-general-tight-width/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.completionDraw_eq_singleton",
+          "module": "ResearchPhysicalTraceJoin.GeneralSingletonCompletion",
+          "source": "research/physical-trace-general-singleton-completion/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.singletonCompletionDraw_same_law",
+          "module": "ResearchPhysicalTraceJoin.GeneralSingletonCompletion",
+          "source": "research/physical-trace-general-singleton-completion/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawCompletionResidual_singleton",
+          "module": "ResearchPhysicalTraceJoin.GeneralSingletonCompletion",
+          "source": "research/physical-trace-general-singleton-completion/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.tightHybridSampler_width_le_old",
+          "module": "ResearchPhysicalTraceJoin.GeneralTightSampler",
+          "source": "research/physical-trace-general-tight-sampler/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.tightHybridWordLaw_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralTightSampler",
+          "source": "research/physical-trace-general-tight-sampler/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.tightHybridWord_accuracy",
+          "module": "ResearchPhysicalTraceJoin.GeneralTightSampler",
+          "source": "research/physical-trace-general-tight-sampler/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "physical-trace-general-completion-tight-budget",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-tight-width",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-singleton-completion",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-tight-sampler",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "physical-trace-shape-retry",
+      "title": "Shape-aware retry schedule",
+      "english_claim": "With the same c0 numerator, the reciprocal block ceil(2p(p-1)/c0) supplies a dyadic retry/error budget with no larger attempts or precision than the linear schedule.",
+      "quantity": "K = ceil(2p(p−1)/c0); TV ≤ 2⁻ᵗ",
+      "hypotheses": [
+        "Computed positive-list reference branch. Equal totals and an actual start/fallback for the sampling law."
+      ],
+      "limitations": [
+        "Standalone alternative schedule; the assembled raw program retains its linear settings. The ceiling is the least integer product-cover certificate, not an optimal runtime or actual-success estimate."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/sampler-refinements.md",
+        "research/physical-trace-general-shape-schedule/README.md",
+        "research/physical-trace-general-shape-schedule/formal/ResearchPhysicalTraceJoin/GeneralShapeSchedule.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.PhysicalTraceJoin.positiveTraceShapeBlock_eq_ceiling",
+          "module": "ResearchPhysicalTraceJoin.GeneralShapeSchedule",
+          "source": "research/physical-trace-general-shape-schedule/formal/ResearchPhysicalTraceJoin/GeneralShapeSchedule.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.positiveTraceShapeBlock_success",
+          "module": "ResearchPhysicalTraceJoin.GeneralShapeSchedule",
+          "source": "research/physical-trace-general-shape-schedule/formal/ResearchPhysicalTraceJoin/GeneralShapeSchedule.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.positiveTraceShapeAttempts_le_linear",
+          "module": "ResearchPhysicalTraceJoin.GeneralShapeSchedule",
+          "source": "research/physical-trace-general-shape-schedule/formal/ResearchPhysicalTraceJoin/GeneralShapeSchedule.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.positiveTraceShapeScheduled_accuracy",
+          "module": "ResearchPhysicalTraceJoin.GeneralShapeSchedule",
+          "source": "research/physical-trace-general-shape-schedule/formal/ResearchPhysicalTraceJoin/GeneralShapeSchedule.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "physical-trace-general-shape-schedule",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
+      "id": "physical-trace-spanning-count",
+      "title": "Stronger correction success allowance",
+      "english_claim": "The spanning inverse-label count supplies C=max(c0,p-1). Generic finite-bit correction and retry laws are checked for this numerator; at the actual reference scales ideal success is at least 1/(2p) and the stated retry/error bound follows.",
+      "quantity": "N(X) ≥ max(c0,p−1); ideal success ≥ 1/(2p)",
+      "hypotheses": [
+        "Positive row/column margins and an actual feasible table for the count; actual reference scales, p≥2, nonempty large-line lists and an actual start/fallback for the sampling law."
+      ],
+      "limitations": [
+        "Checked law-level refinement with supplied h,k,R. The assembled raw program and automatic schedule still use c0. No new spectral-gap exponent or runtime claim."
+      ],
+      "evidence_class": "lean_theorem",
+      "sources": [
+        "docs/sampler-refinements.md",
+        "research/physical-trace-general-augmented-lower/README.md",
+        "research/physical-trace-general-augmented-lower/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean",
+        "research/physical-trace-general-numerator-correction/README.md",
+        "research/physical-trace-general-numerator-correction/formal/ResearchPhysicalTraceJoin/GeneralNumeratorCorrection.lean"
+      ],
+      "headlines": [
+        {
+          "name": "Math115.PhysicalTraceJoin.inverseSupportCount_spanning_lower",
+          "module": "ResearchPhysicalTraceJoin.GeneralAugmentedLower",
+          "source": "research/physical-trace-general-augmented-lower/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.augmentedInverseSupportAllowance_le_count",
+          "module": "ResearchPhysicalTraceJoin.GeneralAugmentedLower",
+          "source": "research/physical-trace-general-augmented-lower/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.terminalAugmentedNumerator_le_count",
+          "module": "ResearchPhysicalTraceJoin.GeneralNumeratorCorrection",
+          "source": "research/physical-trace-general-numerator-correction/formal/ResearchPhysicalTraceJoin/GeneralNumeratorCorrection.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.actualShape_terminalAugmented_success_lower",
+          "module": "ResearchPhysicalTraceJoin.GeneralNumeratorCorrection",
+          "source": "research/physical-trace-general-numerator-correction/formal/ResearchPhysicalTraceJoin/GeneralNumeratorCorrection.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.actualShape_terminalAugmentedRetry_accuracy",
+          "module": "ResearchPhysicalTraceJoin.GeneralNumeratorCorrection",
+          "source": "research/physical-trace-general-numerator-correction/formal/ResearchPhysicalTraceJoin/GeneralNumeratorCorrection.lean"
+        }
+      ],
+      "evidence": [
+        {
+          "receipt": "physical-trace-general-augmented-lower",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-numerator-correction",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        }
+      ]
+    },
+    {
       "id": "physical-trace-code-components",
       "title": "Executable stronger-sampler components",
-      "english_claim": "Ordinary computational initializer, raw neighbor proposal, terminal repair/correction and retained-completion reconstruction agree pointwise with their typed counterparts. The full initializer supplies its own fallback and searched labels; reconstruction removes the supplied full matrix. Remaining terminal labels and coarse-margin wrapper inputs retain their stated semantic interfaces.",
+      "english_claim": "Ordinary list/natural/Boolean components compute initialization, proposals, residual margins, labels, accepted steps, balanced exits, joined walks, terminal repair/correction, retries and zero restoration. Their checked pointwise equations compose into the all-input raw program.",
       "quantity": "Exact code correspondence on valid inputs; no added probability error",
       "hypotheses": [
         "Equal-total original lists and computed reference tag for initialization; actual encoded states, specified denominator/word widths, retained residual data and ordered repair labels as stated for the other components."
       ],
       "limitations": [
-        "Four executable component correspondences, not an assembled encoded hybrid. Raw label/coarse-margin wrappers, complete accepted walk/trial composition, machine realizer and charged costs remain separate. Ordinary compilation, full assumption audits, separate AI review; trusted compiler/imports."
+        "The local components retain their explicitly stated valid-state and word-width interfaces; the complete program discharges them from equal-total original lists. Its ordinary code correspondence is checked. A revised encoded Realizer and charged-cost theorem remain separate. Standard axioms with trusted compiler/imports and separate AI review."
       ],
       "evidence_class": "lean_theorem",
       "sources": [
@@ -935,7 +1352,23 @@
         "research/physical-trace-general-correction-code/README.md",
         "research/physical-trace-general-correction-code/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean",
         "research/physical-trace-general-joint-code/README.md",
-        "research/physical-trace-general-joint-code/formal/ResearchPhysicalTraceJoin/GeneralJointCode.lean"
+        "research/physical-trace-general-joint-code/formal/ResearchPhysicalTraceJoin/GeneralJointCode.lean",
+        "research/physical-trace-general-completion-code/README.md",
+        "research/physical-trace-general-completion-code/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean",
+        "research/physical-trace-general-label-code/README.md",
+        "research/physical-trace-general-label-code/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean",
+        "research/physical-trace-general-schedule-code/README.md",
+        "research/physical-trace-general-schedule-code/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean",
+        "research/physical-trace-general-accepted-step/README.md",
+        "research/physical-trace-general-accepted-step/formal/ResearchPhysicalTraceJoin/GeneralAcceptedStep.lean",
+        "research/physical-trace-general-star-code/README.md",
+        "research/physical-trace-general-star-code/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean",
+        "research/physical-trace-general-joined-code/README.md",
+        "research/physical-trace-general-joined-code/formal/ResearchPhysicalTraceJoin/GeneralJoinedCode.lean",
+        "research/physical-trace-general-fallback-code/README.md",
+        "research/physical-trace-general-fallback-code/formal/ResearchPhysicalTraceJoin/GeneralFallbackCode.lean",
+        "research/physical-trace-general-trial-code/README.md",
+        "research/physical-trace-general-trial-code/formal/ResearchPhysicalTraceJoin/GeneralTrialCode.lean"
       ],
       "headlines": [
         {
@@ -987,6 +1420,151 @@
           "name": "Math115.PhysicalTraceJoin.jointTerminalCorrectionCode_eq",
           "module": "ResearchPhysicalTraceJoin.GeneralJointCode",
           "source": "research/physical-trace-general-joint-code/formal/ResearchPhysicalTraceJoin/GeneralJointCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawCoarseMargins_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralCompletionCode",
+          "source": "research/physical-trace-general-completion-code/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawCompletionBits_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralCompletionCode",
+          "source": "research/physical-trace-general-completion-code/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawCompletionResidual_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralCompletionCode",
+          "source": "research/physical-trace-general-completion-code/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawCompletionResidual_terminal",
+          "module": "ResearchPhysicalTraceJoin.GeneralCompletionCode",
+          "source": "research/physical-trace-general-completion-code/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawCompletionSource_terminal",
+          "module": "ResearchPhysicalTraceJoin.GeneralCompletionCode",
+          "source": "research/physical-trace-general-completion-code/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.orderedDefectLabelIndices_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralLabelCode",
+          "source": "research/physical-trace-general-label-code/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.orderedDefectLabelCode_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralLabelCode",
+          "source": "research/physical-trace-general-label-code/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.jointAutoCorrectionCode_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralLabelCode",
+          "source": "research/physical-trace-general-label-code/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawUniformCompletionBits_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralScheduleCode",
+          "source": "research/physical-trace-general-schedule-code/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawScheduleSteps_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralScheduleCode",
+          "source": "research/physical-trace-general-schedule-code/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawTerminalScheduleWordWidth_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralScheduleCode",
+          "source": "research/physical-trace-general-schedule-code/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawPositiveWordWidth_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralScheduleCode",
+          "source": "research/physical-trace-general-schedule-code/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawPositiveTrialWordWidth_positive",
+          "module": "ResearchPhysicalTraceJoin.GeneralScheduleCode",
+          "source": "research/physical-trace-general-schedule-code/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawIncomingAcceptedStep_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralAcceptedStep",
+          "source": "research/physical-trace-general-accepted-step/formal/ResearchPhysicalTraceJoin/GeneralAcceptedStep.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawAcceptedWalk_eq_wordWalk",
+          "module": "ResearchPhysicalTraceJoin.GeneralAcceptedStep",
+          "source": "research/physical-trace-general-accepted-step/formal/ResearchPhysicalTraceJoin/GeneralAcceptedStep.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawBalancedTest_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralStarCode",
+          "source": "research/physical-trace-general-star-code/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawDyadicNeighborDraw_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralStarCode",
+          "source": "research/physical-trace-general-star-code/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawStarStep_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralStarCode",
+          "source": "research/physical-trace-general-star-code/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawStarTrial_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralStarCode",
+          "source": "research/physical-trace-general-star-code/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawStarExit_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralStarCode",
+          "source": "research/physical-trace-general-star-code/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawStarExit_eq_reserved",
+          "module": "ResearchPhysicalTraceJoin.GeneralStarCode",
+          "source": "research/physical-trace-general-star-code/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawJoinedStep_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralJoinedCode",
+          "source": "research/physical-trace-general-joined-code/formal/ResearchPhysicalTraceJoin/GeneralJoinedCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawJoinedWalk_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralJoinedCode",
+          "source": "research/physical-trace-general-joined-code/formal/ResearchPhysicalTraceJoin/GeneralJoinedCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawPositiveLegacyWordWidth_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralFallbackCode",
+          "source": "research/physical-trace-general-fallback-code/formal/ResearchPhysicalTraceJoin/GeneralFallbackCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawPositiveLegacyReducedWordCode_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralFallbackCode",
+          "source": "research/physical-trace-general-fallback-code/formal/ResearchPhysicalTraceJoin/GeneralFallbackCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawPositiveLegacyWordCode_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralFallbackCode",
+          "source": "research/physical-trace-general-fallback-code/formal/ResearchPhysicalTraceJoin/GeneralFallbackCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawPositiveDeterministicWordCode_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralFallbackCode",
+          "source": "research/physical-trace-general-fallback-code/formal/ResearchPhysicalTraceJoin/GeneralFallbackCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawTerminalCorrectedCode_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralTrialCode",
+          "source": "research/physical-trace-general-trial-code/formal/ResearchPhysicalTraceJoin/GeneralTrialCode.lean"
+        },
+        {
+          "name": "Math115.PhysicalTraceJoin.rawCorrectedTrial_eq",
+          "module": "ResearchPhysicalTraceJoin.GeneralTrialCode",
+          "source": "research/physical-trace-general-trial-code/formal/ResearchPhysicalTraceJoin/GeneralTrialCode.lean"
         }
       ],
       "evidence": [
@@ -1004,6 +1582,38 @@
         },
         {
           "receipt": "physical-trace-general-joint-code",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-completion-code",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-label-code",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-schedule-code",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-accepted-step",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-star-code",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-joined-code",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-fallback-code",
+          "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+        },
+        {
+          "receipt": "physical-trace-general-trial-code",
           "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
         }
       ]

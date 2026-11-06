@@ -34,6 +34,8 @@ class IntegrationPlanTests(unittest.TestCase):
             plan = verifier.integration_plan(ROOT)
         self.assertEqual(plan["status"], "planned_only")
         self.assertIn("ResearchPhysicalTraceJoin.GeneralHybridSampler", plan["audit_modules"])
+        self.assertIn("ResearchPhysicalTraceJoin.GeneralExecutableSampler", plan["audit_modules"])
+        self.assertIn("Math115.PhysicalTraceJoin.executableSampler_contract", plan["headlines"])
         available = set(plan["baseline_modules"]) | set(plan["trusted_external_imports"])
         self.assertFalse(set(plan["baseline_modules"]) &
                          {entry["module"] for entry in plan["compilation"]})

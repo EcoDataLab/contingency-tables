@@ -1,0 +1,21 @@
+{
+  "baseline_runtime_authentication_completed": true,
+  "baseline_runtime_freeze_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+  "comparator_acceptance_observed": false,
+  "configuration_sha256": "f07b7de6c97ba34702455ce9d54b41b5350f9230eff21e12360e6d4929237aa7",
+  "elapsed_seconds": 196.34415549994446,
+  "export_or_kernel_acceptance_observed": false,
+  "full_strict_acceptance": false,
+  "guest_phase": "repair",
+  "install_and_real_sandbox_preflight_completed": true,
+  "iso_sha256": "cd2c4b7145a3f7cbce2cdf4b197f97e91394a6bdb664d85e930dc76c8d7cbebd",
+  "limits": "Running observation only. Baseline runtime authentication completed; explicit memo normalization/fresh authentication/frozen repeated gates are pending. No complete proof/export/kernel/comparison receipt is claimed.",
+  "module_count": 679,
+  "observed_at": "2026-11-06T22:14:48.4819810Z",
+  "observer_sha256": "b5e8c0f95fdd5f6b9193c2b0537782b242d0fe0c269dae7b5a7a4c73a32cb1f0",
+  "required_complete_command_count": 1362,
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "source_scope": "historical retained679-module sampler; excludes newer research",
+  "status": "full_historical_sampler_attempt_running_acceptance_pending",
+  "supervisor_sha256": "b645e89fe2ddd3effcb3d39d3a31b7297eddee53c3ba1266270eb4907157321e"
+}

@@ -1,0 +1,39 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean:85:19: warning: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean:192:12: error: Tactic `rewrite` failed: motive is not type correct:
+  fun _a => _a * b = Fintype.card (RepairLargeRows r U) * b + a * b
+Error: Application type mismatch: The argument
+  r
+has type
+  Fin m → ℕ
+but is expected to have type
+  Fin _a → ℕ
+in the application
+  RepairLargeRows r
+
+Explanation: The rewrite tactic rewrites an expression 'e' using an equality 'a = b' by the following process. First, it looks for all 'a' in 'e'. Second, it tries to abstract these occurrences of 'a' to create a function 'm := fun _a => ...', called the *motive*, with the property that 'm a' is definitionally equal to 'e'. Third, we observe that 'congrArg' implies that 'm a = m b', which can be used with lemmas such as 'Eq.mpr' to change the goal. However, if 'e' depends on specific properties of 'a', then the motive 'm' might not typecheck.
+
+Possible solutions: use rewrite's 'occs' configuration option to limit which occurrences are rewritten, or use 'simp' or 'conv' mode, which have strategies for certain kinds of dependencies (these tactics can handle proofs and 'Decidable' instances whose types depend on the rewritten term, and 'simp' can apply user-defined '@[congr]' theorems as well).
+
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U : ℕ
+X : Table r c
+hr : ∀ (i : Fin m), 0 < r i
+hc : ∀ (j : Fin n), 0 < c j
+a : ℕ := Fintype.card (RepairSmallRows r U)
+b : ℕ := Fintype.card (RepairSmallColumns c U)
+p : ℕ := Fintype.card (Cells small)
+hinc : p + a * b = n * a + m * b
+ha : ¬a = 0
+root : RepairSmallRows r U
+hl :
+  n * a - 1 + Fintype.card (RepairLargeRows r U) * Fintype.card (RepairSmallColumns c U) ≤
+    Fintype.card (InverseSupportLabels r c U X)
+hcard : Fintype.card (RowSpanningParameters r c U X hr root) = n * a - 1
+hlarge : Fintype.card (RepairLargeRows r U) + a = m
+hn : 0 < n
+hna : 1 ≤ n * a
+⊢ m * b = Fintype.card (RepairLargeRows r U) * b + a * b

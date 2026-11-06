@@ -1,0 +1,31 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:111:8: error: Type mismatch: After simplification, term
+  hp
+ has type
+  repairLabelTest (((smallCellCatalog ((List.ofFn r, List.ofFn c), U), computedStateCode r c U L ↑d), U), st) = true
+but is expected to have type
+  repairLabelTest
+      (((smallCellCatalog ((List.ofFn r, List.ofFn c), U), computedStateCode r c U L ↑d), U), ↑(e.symm (e s)),
+        ↑(e.symm (e t))) =
+    true
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:116:4: error: Type mismatch: After simplification, term
+  Eq.symm hi
+ has type
+  (↑(e.symm (e s)), ↑(e.symm (e t))) =
+    (↑(e.symm (terminalRepairLabels r c U L d).1), ↑(e.symm (terminalRepairLabels r c U L d).2))
+but is expected to have type
+  st = (↑(e.symm (terminalRepairLabels r c U L d).1), ↑(e.symm (terminalRepairLabels r c U L d).2))
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:120:35: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U : ℕ
+s : Cells small
+hcat : smallCellCatalog ((List.ofFn r, List.ofFn c), U) = List.ofFn fun i => (↑(↑(e i)).1, ↑(↑(e i)).2)
+⊢ (↑(↑(e ⟨↑(e.symm s), ⋯⟩)).1, ↑(↑(e ⟨↑(e.symm s), ⋯⟩)).2) = (↑(↑s).1, ↑(↑s).2)
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralLabelCode.lean:127:33: warning: This simp argument is unused:
+  Equiv.apply_symm_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.getD_eq_getElem?_getD, List.getElem?_ofFn, ((e).symm s).isLt, dite_true, Option.getD_some]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

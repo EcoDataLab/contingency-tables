@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralCompletionTightBudget
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralCompletionTightBudget] headlines [Math115.PhysicalTraceJoin.completionBudget_totalReservedBits_mono, Math115.PhysicalTraceJoin.completionBits_le_rawTight, Math115.PhysicalTraceJoin.rawTightCompletionBits_le_old]

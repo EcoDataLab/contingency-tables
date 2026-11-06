@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralShapeSchedule"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralShapeSchedule",
+      "source": "research/physical-trace-general-shape-schedule/formal/ResearchPhysicalTraceJoin/GeneralShapeSchedule.lean",
+      "source_sha256": "4640b268fac4992cd865fef5f9bc76852c022c0f3fa428888f7c1bf43a2746c4",
+      "returncode": 0,
+      "seconds": 33.66720166709274,
+      "olean_sha256": "64e9be5c58c72d3c01c32b059c4f2b920efda7bb4b5adb55fe42fabd5074e4af"
+    }
+  ],
+  "audit_seconds": 125.6165836667642,
+  "audit_sha256": "5953e9b0b3d9c243bca7409cbd18f39f954d0a5131bb9d7906bc9f7b5676f661",
+  "audit_driver_sha256": "9ade434d537fb159cd2e52f57230476d874c876eb3e49a5339804be17e14b0c9",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "0a8453afab0a1e40e51d5469967c34d27627219fb38b22e4d8b242623d73f422",
+  "declaration_count": 41,
+  "theorem_count": 32,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.shapeCeiling_le_iff",
+      "closure_size": 1471,
+      "statement": "∀ (D c k : ℕ), 0 < c → (Math115.PhysicalTraceJoin.shapeCeiling D c ≤ k ↔ D ≤ k * c)",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceShapeBlock_eq_ceiling",
+      "closure_size": 6153,
+      "statement": "∀ (xs ys : List ℕ),\n  Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference →\n    Math115.PhysicalTraceJoin.positiveTraceShapeBlock xs ys =\n      Math115.PhysicalTraceJoin.shapeCeiling (Math115.PhysicalTraceJoin.positiveTraceOuterBlock xs ys)\n        (Math115.PhysicalTraceJoin.inverseSupportAllowance (Math115.PhysicalTraceJoin.filteredMargin xs)\n          (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceShapeBlock_le_iff",
+      "closure_size": 6154,
+      "statement": "∀ (xs ys : List ℕ),\n  Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference →\n    ∀ (k : ℕ),\n      Math115.PhysicalTraceJoin.positiveTraceShapeBlock xs ys ≤ k ↔\n        Math115.PhysicalTraceJoin.positiveTraceOuterBlock xs ys ≤\n          k *\n            Math115.PhysicalTraceJoin.inverseSupportAllowance (Math115.PhysicalTraceJoin.filteredMargin xs)\n              (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceShapeBlock_success",
+      "closure_size": 7807,
+      "statement": "∀ (xs ys : List ℕ),\n  Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference →\n    1 ≤\n      ↑(Math115.PhysicalTraceJoin.positiveTraceShapeBlock xs ys) *\n        Math115.PhysicalTraceJoin.positiveTraceCorrectionSuccess xs ys",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceShapeAttempts_le_linear",
+      "closure_size": 2447,
+      "statement": "∀ (xs ys : List ℕ) (t : ℕ),\n  Math115.PhysicalTraceJoin.positiveTraceShapeAttempts xs ys t ≤\n    Math115.PhysicalTraceJoin.positiveTraceLinearAttempts xs ys t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceShape_budget",
+      "closure_size": 13219,
+      "statement": "∀ (xs ys : List ℕ),\n  Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference →\n    ∀\n      (start :\n        Math115.PhysicalDefectTrace.DefectVertices (Math115.PhysicalTraceJoin.filteredMargin xs)\n          (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys) 7)\n      (t : ℕ),\n      (1 - Math115.PhysicalTraceJoin.positiveTraceCorrectionSuccess xs ys) ^\n            Math115.PhysicalTraceJoin.positiveTraceShapeAttempts xs ys t +\n          ↑(Math115.PhysicalTraceJoin.positiveTraceShapeAttempts xs ys t) *\n            (Math115.CompletionRetryBudget.dyadic (Math115.PhysicalTraceJoin.positiveTraceShapePrecision xs ys t) +\n              Math115.CompletionRetryBudget.dyadic (Math115.PhysicalTraceJoin.positiveTraceShapePrecision xs ys t)) ≤\n        Math115.CompletionRetryBudget.dyadic t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceShapeScheduled_accuracy",
+      "closure_size": 45627,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j)\n  (hb : Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference)\n  (start :\n    Math115.PhysicalDefectTrace.DefectVertices (Math115.PhysicalTraceJoin.filteredMargin xs)\n      (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys) 7)\n  (fallback :\n    OAI.ContingencyTables.Table (Math115.PhysicalTraceJoin.filteredMargin xs)\n      (Math115.PhysicalTraceJoin.filteredMargin ys))\n  (t : ℕ),\n  OAI.ContingencyTables.FirstSuccess.variation\n      (Math115.PhysicalTraceJoin.positiveTraceShapeScheduledLaw xs ys hb start fallback t)\n      OAI.ContingencyTables.FirstSuccess.uniformLaw ≤\n    Math115.CompletionRetryBudget.dyadic t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceShapeBlock_code",
+      "closure_size": 5682,
+      "statement": "∀ (xs ys : List ℕ),\n  Math115.PhysicalTraceJoin.shapeRetryBlockCode (Math115.PhysicalTraceJoin.positiveMargins xs)\n      (Math115.PhysicalTraceJoin.positiveMargins ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys) =\n    Math115.PhysicalTraceJoin.positiveTraceShapeBlock xs ys",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceShapeScheduleData_code",
+      "closure_size": 5694,
+      "statement": "∀ (xs ys : List ℕ) (t : ℕ),\n  Math115.PhysicalTraceJoin.shapeScheduleCodeData (Math115.PhysicalTraceJoin.positiveMargins xs)\n      (Math115.PhysicalTraceJoin.positiveMargins ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys) t =\n    (Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall (Math115.PhysicalTraceJoin.filteredMargin xs)\n            (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys))),\n      Math115.PhysicalTraceJoin.inverseSupportAllowance (Math115.PhysicalTraceJoin.filteredMargin xs)\n        (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys),\n      Math115.PhysicalTraceJoin.positiveTraceOuterBlock xs ys, Math115.PhysicalTraceJoin.positiveTraceLinearBlock xs ys,\n      Math115.PhysicalTraceJoin.positiveTraceShapeBlock xs ys,\n      Math115.PhysicalTraceJoin.positiveTraceLinearAttempts xs ys t,\n      Math115.PhysicalTraceJoin.positiveTraceShapeAttempts xs ys t,\n      Math115.PhysicalTraceJoin.positiveTraceLinearPrecision xs ys t,\n      Math115.PhysicalTraceJoin.positiveTraceShapePrecision xs ys t)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.shapeSchedule_fixture10",
+      "closure_size": 724,
+      "statement": "have xs := List.replicate 9 1 ++ [30000];\nMath115.PhysicalTraceJoin.positiveTraceBranch xs xs = Math115.PhysicalTraceJoin.TraceInputBranch.reference ∧\n  Math115.PhysicalTraceJoin.positiveTraceCutoff xs xs = 25938 ∧\n    Math115.PhysicalTraceJoin.shapeScheduleCodeData (Math115.PhysicalTraceJoin.positiveMargins xs)\n        (Math115.PhysicalTraceJoin.positiveMargins xs) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs xs) 10 =\n      (99, 801, 19404, 396, 25, 4356, 275, 25, 21)",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.shapeSchedule_fixture20",
+      "closure_size": 724,
+      "statement": "have xs := List.replicate 19 1 ++ [200000];\nMath115.PhysicalTraceJoin.positiveTraceBranch xs xs = Math115.PhysicalTraceJoin.TraceInputBranch.reference ∧\n  Math115.PhysicalTraceJoin.positiveTraceCutoff xs xs = 188518 ∧\n    Math115.PhysicalTraceJoin.shapeScheduleCodeData (Math115.PhysicalTraceJoin.positiveMargins xs)\n        (Math115.PhysicalTraceJoin.positiveMargins xs) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs xs) 10 =\n      (399, 7201, 317604, 1596, 45, 17556, 495, 27, 21)",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,12 @@
+--- initial.lean
++++ checked.lean
+@@ -66 +66,3 @@
+-  exact jointAutoCorrectionCode_eq r c U L hr hc _ k correctionWord
++  exact jointAutoCorrectionCode_eq r c U L hr hc
++    (⟨d,terminalCompletion r c U L hr hc d hTerm completionWord⟩ : DefectJoint r c U L)
++    k correctionWord
+@@ -107 +109,3 @@
+-  exact rawTerminalCorrectedCode_eq r c U L hr hc _ (h+2) k inner.2 outer.2
++  exact rawTerminalCorrectedCode_eq r c U L hr hc
++    (joinedWalkWord r c U L hr hc start (t+2) (t+2) J hExit T inner.1)
++    (h+2) k inner.2 outer.2

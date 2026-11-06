@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralCompletionTightBudget"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralCompletionTightBudget",
+      "source": "research/physical-trace-general-completion-tight-budget/formal/ResearchPhysicalTraceJoin/GeneralCompletionTightBudget.lean",
+      "source_sha256": "f728381e66805afcbb91886c886268d7d43218dc1a39d4e85bb9401aa11b6f0a",
+      "returncode": 0,
+      "seconds": 20.298275207635015,
+      "olean_sha256": "ea157a370f5c0e67d9514a94dcb0b6938e4027febffe43e81cfdab624fb5df53"
+    }
+  ],
+  "audit_seconds": 101.99627708410844,
+  "audit_sha256": "575fd5f3df2ca8aa4d3be918eb5d9409ea890c3dd1b1bbb142d3b9189b7b5d96",
+  "audit_driver_sha256": "113f6a0e1605751fff7b2e557dcee99e34b01d2524801c1fd5db56a93b096a0b",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "cbd53a245cd354f6dc6e990a05ffd72e07fd23d909858d662e7e874f4d747570",
+  "declaration_count": 23,
+  "theorem_count": 20,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.completionBudget_totalReservedBits_mono",
+      "closure_size": 4428,
+      "statement": "∀ (d p P M N h : ℕ),\n  p ≤ P →\n    M ≤ N →\n      Math115.CompletionRandomBudget.totalReservedBits d p M h ≤\n        Math115.CompletionRandomBudget.totalReservedBits d P N h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.completionBits_le_rawTight",
+      "closure_size": 10886,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (z : Math115.ReducedSmallChain.States r c U L) (h : ℕ),\n  Math115.LegacyPhysicalCompletion.bits r c U L hr hc z h ≤\n    Math115.PhysicalTraceJoin.rawTightCompletionBits (List.ofFn r) (List.ofFn c) U L h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawTightCompletionBits_le_old",
+      "closure_size": 742,
+      "statement": "∀ (rs cs : List ℕ) (U L h : ℕ),\n  Math115.PhysicalTraceJoin.rawTightCompletionBits rs cs U L h ≤\n    Math115.PhysicalTraceJoin.rawUniformCompletionBits rs cs U L h",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

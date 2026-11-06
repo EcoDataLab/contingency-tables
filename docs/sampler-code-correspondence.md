@@ -1,5 +1,10 @@
 # Executable components of the stronger sampler
 
+The [complete ordinary list-and-bit program](executable-sampler.md) now composes
+these components. This page records the initial component interfaces; later
+wrappers compute the labels and coarse margins internally and supply the
+accepted walk, corrected trial, retry and zero-restoration correspondence.
+
 Four checked pointwise correspondences connect ordinary computational
 list/natural/Boolean definitions to parts of the typed finite-word sampler.
 They preserve the existing mathematical operations for every valid encoded
@@ -27,14 +32,10 @@ padding test. The correction program preserves both padding failures and
 coin failures. Initialization uses the exact catalog order, including the
 complement convention for its second view.
 
-The remaining program assembly must compute the ordered defect labels and
-coarse completion margins from raw state codes, compose the accepted trace
-steps and fixed word slices, then connect the whole trial/retry/restoration
-program pointwise to the typed map. Existing `coarseRows_code` and
-`coarseColumns_code` lemmas already describe the relevant list margin
-operations and can be reused. A machine-language realizer and charged-cost
-composition follow that program correspondence; these packets establish
-neither a complete executable hybrid nor a runtime exponent.
+The later [complete program](executable-sampler.md) computes the ordered defect
+labels and coarse margins from raw state codes, composes the accepted trace
+and exact word slices, and identifies its output with the typed map. A
+machine-language realizer and charged-cost composition remain to be supplied.
 
 | Packet | Successful receipt |
 |---|---|

@@ -1,0 +1,19 @@
+test_cgroup_unavailable_remains_incomplete (__main__.Observer.test_cgroup_unavailable_remains_incomplete) ... ok
+test_complete_positive_overlap_still_aborts (__main__.Observer.test_complete_positive_overlap_still_aborts) ... ok
+test_eperm_invalidates_whole_sample (__main__.Observer.test_eperm_invalidates_whole_sample) ... ok
+test_esrch_invalidates_whole_sample (__main__.Observer.test_esrch_invalidates_whole_sample) ... ok
+test_five_second_watchdog_and_owned_cleanup (__main__.Observer.test_five_second_watchdog_and_owned_cleanup) ... ok
+test_hard_deadline_precedes_telemetry_grace (__main__.Observer.test_hard_deadline_precedes_telemetry_grace) ... ok
+test_only_valid_sample_resets_watchdog (__main__.Observer.test_only_valid_sample_resets_watchdog) ... ok
+test_partial_positive_overlap_aborts_immediately (__main__.Observer.test_partial_positive_overlap_aborts_immediately) ... ok
+test_permission_invalidates_whole_sample (__main__.Observer.test_permission_invalidates_whole_sample) ... ok
+test_readable_and_missing_pid_original_behavior (__main__.Observer.test_readable_and_missing_pid_original_behavior) ... ok
+test_scan_after_unknown_preserves_positive_overlap (__main__.Observer.test_scan_after_unknown_preserves_positive_overlap) ... ok
+test_short_unreadable_stage_never_reports_zero_or_partial (__main__.Observer.test_short_unreadable_stage_never_reports_zero_or_partial) ... ok
+test_transient_error_then_complete_recovery (__main__.Observer.test_transient_error_then_complete_recovery) ... ok
+test_unrelated_errors_still_abort (__main__.Observer.test_unrelated_errors_still_abort) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.028s
+
+OK

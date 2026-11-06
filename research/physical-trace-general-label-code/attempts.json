@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralLabelCode",
+  "verified_attempt": "attempt-03",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "9f7cc7df9f62664073739079b69a427488eed07601f168a73bfa70501747afe0",
+      "compile_returncode": 1,
+      "compile_seconds": 61.605309791862965,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "ce5c37248b398e3c49400beb3eda0e3c6369c6806444e94651ea19805ffdf340",
+      "compile_returncode": 1,
+      "compile_seconds": 30.9983274997212,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-03",
+      "source_sha256": "3972fa17eb23d6449911e20999d92fbe778042a61c3f41fd842cc068511ed5a0",
+      "compile_returncode": 0,
+      "compile_seconds": 39.43145454209298,
+      "audit_returncode": 0,
+      "audit_seconds": 52.52290462469682,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

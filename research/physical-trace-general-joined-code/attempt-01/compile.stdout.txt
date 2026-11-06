@@ -1,0 +1,33 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralJoinedCode.lean:87:45: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralJoinedCode.lean:92:66: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralJoinedCode.lean:108:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  rawIncomingAcceptedStep (List.ofFn r) (List.ofFn c) U L (denominator r c U) N hIn (computedStateCode r c U L ↑d)
+    (List.ofFn parts.1)
+in the target expression
+  rawCommonExit (List.ofFn r) (List.ofFn c) U L J hExit (computedStateCode r c U L ↑d)
+      (rawIncomingAcceptedStep (List.ofFn r) (List.ofFn c) U L (denominator r c U) N hIn (computedStateCode r c U L ↑d)
+        (List.ofFn ((splitWordEquiv (incomingWidth r c U L hr hc d N hIn) (commonExitWidth r c U L J hExit)) word).1))
+      (List.ofFn ((splitWordEquiv (incomingWidth r c U L hr hc d N hIn) (commonExitWidth r c U L J hExit)) word).2) =
+    computedStateCode r c U L ↑(boundedJoinedWord r c U L hr hc d N hIn J hExit word)
+
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+htotal : ∑ i, r i = ∑ j, c j
+d : DefectVertices r c U L
+N hIn J hExit : ℕ
+word : Fin (incomingWidth r c U L hr hc d N hIn + commonExitWidth r c U L J hExit) → Bool
+parts : (Fin (incomingWidth r c U L hr hc d N hIn) → Bool) × (Fin (commonExitWidth r c U L J hExit) → Bool) :=
+  (splitWordEquiv (incomingWidth r c U L hr hc d N hIn) (commonExitWidth r c U L J hExit)) word
+hi :
+  rawIncomingAcceptedStep (List.ofFn r) (List.ofFn c) U L (denominator r c U) N hIn (computedStateCode r c U L ↑d)
+      (List.ofFn parts.1) =
+    computedStateCode r c U L (incomingStep r c U L hr hc d N hIn parts.1)
+⊢ rawCommonExit (List.ofFn r) (List.ofFn c) U L J hExit (computedStateCode r c U L ↑d)
+      (rawIncomingAcceptedStep (List.ofFn r) (List.ofFn c) U L (denominator r c U) N hIn (computedStateCode r c U L ↑d)
+        (List.ofFn ((splitWordEquiv (incomingWidth r c U L hr hc d N hIn) (commonExitWidth r c U L J hExit)) word).1))
+      (List.ofFn ((splitWordEquiv (incomingWidth r c U L hr hc d N hIn) (commonExitWidth r c U L J hExit)) word).2) =
+    computedStateCode r c U L ↑(boundedJoinedWord r c U L hr hc d N hIn J hExit word)

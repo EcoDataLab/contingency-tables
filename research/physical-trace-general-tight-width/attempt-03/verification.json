@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralTightWidth"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralTightWidth",
+      "source": "research/physical-trace-general-tight-width/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean",
+      "source_sha256": "b1c0a3f8e1018f418839fac2ba669095daf0210bdf849eea87487bb49add403a",
+      "returncode": 0,
+      "seconds": 54.85264370916411,
+      "olean_sha256": "0137d91d816f4c2433977bf0236a8a5b90996f685ab664bb8d58138610d38c1a"
+    }
+  ],
+  "audit_seconds": 182.58958124974743,
+  "audit_sha256": "d5c482ce6c1e7811ebb64bee20398f7072f4541fcce03dd57f73c5dfc6e23764",
+  "audit_driver_sha256": "b0ec0056fe6e617b88d2807b94da0c134511baebefca792121d297efeeec22d3",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "c1000491d4b1e6e7ef8684c76133780f5dcd56d97cf38f73843e692d54c62d23",
+  "declaration_count": 43,
+  "theorem_count": 25,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.tightStepWidth_le_uniform",
+      "closure_size": 4859,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L N hIn J hExit : ℕ),\n  Math115.PhysicalTraceJoin.tightStepWidth r c U L N hIn J hExit ≤\n    Math115.PhysicalTraceJoin.uniformStepWidth r c U L N hIn J hExit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightUniformJoinedWord_split",
+      "closure_size": 11861,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (d : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N hIn J hExit : ℕ)\n  (word : Fin (Math115.PhysicalTraceJoin.tightStepWidth r c U L N hIn J hExit) → Bool),\n  Math115.PhysicalTraceJoin.tightUniformJoinedWord r c U L hr hc d N hIn J hExit word =\n    have activeWord := OAI.ContingencyTables.FirstSuccess.prefixWord ⋯ word;\n    have parts :=\n      (OAI.ContingencyTables.FairBits.splitWordEquiv (Math115.PhysicalTraceJoin.incomingWidth r c U L hr hc d N hIn)\n          (Math115.PhysicalTraceJoin.tightCommonExitWidth r c U L J hExit))\n        activeWord;\n    Math115.PhysicalTraceJoin.commonExitDraw r c U L hr hc d J hExit\n      (Math115.PhysicalTraceJoin.tightCommonExitWidth r c U L J hExit) ⋯\n      (Math115.RationalClockStep.incomingStep r c U L hr hc d N hIn parts.1) parts.2",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightUniformJoinedWord_law",
+      "closure_size": 11966,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (d : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N hIn J hExit : ℕ),\n  OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalTraceJoin.tightUniformJoinedWord r c U L hr hc d N hIn J hExit) =\n    Math115.PhysicalTraceJoin.actualJoinedLaw r c U L hr hc d N hIn J hExit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightUniformJoinedWord_same_law",
+      "closure_size": 11975,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (d : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N hIn J hExit : ℕ),\n  OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalTraceJoin.tightUniformJoinedWord r c U L hr hc d N hIn J hExit) =\n    OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalTraceJoin.uniformJoinedWord r c U L hr hc d N hIn J hExit)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightTerminalCompletion_same_law",
+      "closure_size": 43905,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (d : Math115.PhysicalDefectTrace.DefectVertices r c U L) (hTerm : ℕ),\n  OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalTraceJoin.tightTerminalCompletion r c U L hr hc d hTerm) =\n    OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalTraceJoin.terminalCompletion r c U L hr hc d hTerm)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightTerminalBankWidth_le_old",
+      "closure_size": 4865,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L N hIn J hExit T hTerm : ℕ),\n  Math115.PhysicalTraceJoin.tightTerminalBankWidth r c U L N hIn J hExit T hTerm ≤\n    Math115.PhysicalTraceJoin.terminalBankWidth r c U L N hIn J hExit T hTerm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightTerminalJoinedWord_law",
+      "closure_size": 43963,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N hIn J hExit T hTerm : ℕ),\n  OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalTraceJoin.tightTerminalJoinedWord r c U L hr hc start N hIn J hExit T hTerm) =\n    Math115.PhysicalTraceJoin.terminalJoinedLaw r c U L hr hc start N hIn J hExit T hTerm",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightTerminalJoinedWord_same_law",
+      "closure_size": 43980,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N hIn J hExit T hTerm : ℕ),\n  OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalTraceJoin.tightTerminalJoinedWord r c U L hr hc start N hIn J hExit T hTerm) =\n    OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalTraceJoin.terminalJoinedWord r c U L hr hc start N hIn J hExit T hTerm)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

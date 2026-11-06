@@ -1,0 +1,51 @@
+{
+  "candidate_layout": {
+    "adapter": "additional-owned-tools-directory/tested-runtime/no_rebuild_landrun.py",
+    "metadata": "additional-owned-tools-directory/anchored_metadata.py",
+    "planner": "additional-owned-tools-directory/tested-runtime/build_lean_serial.py",
+    "source/strict_serial_check.py": "additional-owned-tools-directory/tested-runtime/strict_serial_check.py",
+    "source/versioned_runner.py": "additional-owned-tools-directory/strict_sampler.py",
+    "source_freeze": "additional-owned-tools-directory/source-freeze.json"
+  },
+  "files": {
+    "adapter": {
+      "path": "research/strict-sampler-checkpoints/unused-cache-policy-v1/runner/tested-runtime/no_rebuild_landrun.py",
+      "sha256": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7"
+    },
+    "metadata": {
+      "path": "research/strict-sampler-checkpoints/versioned-guard-v2/source/anchored_metadata.py",
+      "sha256": "6eb447ff60a09d13bc134252e490bd99e7a15b92c7436a0db5a677269b91a3a5"
+    },
+    "normalization_helper": {
+      "path": "research/strict-sampler-checkpoints/hash-memo-normalization-v1/source/NormalizeMemos.lean",
+      "sha256": "a3bc73a5756b203788a14f848ec8d5e4362fd18cbeed9da3693fdb88ba6187cd"
+    },
+    "original_authenticator": {
+      "path": "research/strict-sampler-checkpoints/authentication-diagnostics-v1/delta/runner/authenticate_runtime.py",
+      "sha256": "742ec1105d5bb44a392046ec06ca5944a20989bc0cb5a037d2997b37def2b943"
+    },
+    "original_observer": {
+      "path": "research/strict-sampler-checkpoints/unused-cache-policy-v1/runner/tested-runtime/strict_serial_check.py",
+      "sha256": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e"
+    },
+    "original_runner": {
+      "path": "research/strict-sampler-checkpoints/authentication-diagnostics-v1/delta/runner/strict_sampler.py",
+      "sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6"
+    },
+    "planner": {
+      "path": "research/strict-sampler-checkpoints/unused-cache-policy-v1/runner/tested-runtime/build_lean_serial.py",
+      "sha256": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c"
+    },
+    "snapshots": {
+      "path": "research/strict-sampler-checkpoints/snapshot-comparison-v1/source/snapshots.py",
+      "sha256": "c875c20375a1bf3362ac836126c7ddb249b0669ef9b2af332691f89f6278a193"
+    },
+    "source_freeze": {
+      "path": "research/strict-sampler-checkpoints/unused-cache-policy-v1/runner/source-freeze.json",
+      "sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd"
+    }
+  },
+  "historical_failure": "../second-proof-failure-v1/",
+  "scope": "Exact public references; retained complete VM/media/source archive is not supplied by this packet.",
+  "source_archive_sha256": "47e864e49025da1e505c32ae1c5f23428ed900b1ecc64468cb72478095824a84"
+}

@@ -1,0 +1,22 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean:101:8: error: Ambiguous term
+  computedCellEquiv_catalog
+Possible interpretations:
+  PhysicalComputedProposal.computedCellEquiv_catalog : ∀ (r : Fin ?m.121 → ℕ) (c : Fin ?m.122 → ℕ) (U : ℕ),
+    cellCatalog (firstPaperSmall r c U) (PhysicalComputedProposal.computedCellEquiv r c U) =
+      PhysicalComputedProposal.computedCatalog r c U
+
+  SmallGraphProfiles.computedCellEquiv_catalog : ∀ (r : Fin ?m.121 → ℕ) (c : Fin ?m.122 → ℕ),
+    cellCatalog (FirstPaperPhysicalMarginal.paperSmall r c) (SmallGraphProfiles.computedCellEquiv r c) =
+      SmallGraphProfiles.computedCatalog r c
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean:142:2: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean:176:17: warning: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

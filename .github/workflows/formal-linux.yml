@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       scope:
-        description: 'focused: baseline; integration-sampler: stronger typed sampler and code components; full: original build; comparator: strict replay'
+        description: 'focused: baseline plus current chain/program; integration-sampler: same main verification; full: original build; comparator: strict replay'
         type: choice
         required: true
         default: focused
@@ -65,10 +65,10 @@ jobs:
                    "formal/default-audit-contract.json", "claims.json", "scripts/prepare_environment_audit.py",
                    "scripts/run_environment_audit.py"]]
           files += sorted((root / "formal").rglob("*.lean"))
-          if os.environ["VERIFY_SCOPE"] == "integration-sampler":
+          if os.environ["VERIFY_SCOPE"] in {"focused", "integration-sampler"}:
               manifest = root / "research/repair-accept/integration-sampler.json"
               files += [manifest, root / "research/repair-accept/verify.py",
-                        root / "scripts/build_lean_serial.py"]
+                        root / "scripts/build_lean_serial.py", root / "scripts/verify_main.sh"]
               files += [root / p for p in json.loads(manifest.read_text())["sources"].values()
                         if (root / p).is_file()]
           record = {
@@ -122,13 +122,9 @@ jobs:
           if [[ "$VERIFY_SCOPE" == comparator ]]; then
             timeout --signal=TERM --kill-after=60s 270m scripts/bootstrap_comparator.sh verify \
               2>&1 | tee .tools/linux-verification/verification.log
-          elif [[ "$VERIFY_SCOPE" == integration-sampler ]]; then
-            timeout --signal=TERM --kill-after=60s 180m scripts/verify_lean.sh focused "$VERIFY_MODE" \
-              2>&1 | tee .tools/linux-verification/baseline.log
-            python3 research/repair-accept/verify.py --scope integration-sampler --plan \
-              > .tools/linux-verification/integration-source-plan.json
-            timeout --signal=TERM --kill-after=60s 90m python3 research/repair-accept/verify.py \
-              --scope integration-sampler --output .local/integration-sampler-linux \
+          elif [[ "$VERIFY_SCOPE" == focused || "$VERIFY_SCOPE" == integration-sampler ]]; then
+            timeout --signal=TERM --kill-after=60s 270m bash scripts/verify_main.sh \
+              "$VERIFY_MODE" .local/main-lean-linux \
               2>&1 | tee .tools/linux-verification/verification.log
           else
             timeout --signal=TERM --kill-after=60s 270m scripts/verify_lean.sh "$VERIFY_SCOPE" "$VERIFY_MODE" \
@@ -155,8 +151,8 @@ jobs:
           if scope == "comparator":
               passed = passed and all(steps[key] == "success" for key in steps)
           claim = {
-              "focused": "Focused Lean compilation, named-axiom replay, and compiled-environment theorem/dependency audit; no Comparator replay.",
-              "integration-sampler": "Fresh focused baseline plus public integration-source compilation and selected endpoint/dependency-closure audit; trusted Mathlib bootstrap, no Comparator replay or new runtime claim.",
+              "focused": "Fresh focused baseline plus public research-source compilation, including d8/aspect-dependent squared bounds and the complete program contract, with selected endpoint/dependency-closure audit; trusted bootstrap, no Comparator or new runtime claim.",
+              "integration-sampler": "Main ordinary verification: fresh focused baseline plus current public chain/program sources and selected audits; trusted bootstrap, no Comparator or new runtime claim.",
               "full": "Original theorem-closure Lean compilation and printed-axiom audit only; no Comparator replay.",
               "comparator": "Original three theorems: strict sandboxed Comparator built-in-kernel replay; Nanoda disabled.",
           }[scope] if passed else "No successful verification claim for this run; inspect the failing step."
@@ -183,6 +179,13 @@ jobs:
             .local/integration-sampler-linux/*.lean
             .local/integration-sampler-linux/*.stdout.txt
             .local/integration-sampler-linux/*.stderr.txt
+            .local/main-lean-linux/*.json
+            .local/main-lean-linux/*.log
+            .local/main-lean-linux/integration/*.json
+            .local/main-lean-linux/integration/*.json.gz
+            .local/main-lean-linux/integration/*.lean
+            .local/main-lean-linux/integration/*.stdout.txt
+            .local/main-lean-linux/integration/*.stderr.txt
           include-hidden-files: true
           if-no-files-found: warn
           retention-days: 30

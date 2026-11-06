@@ -1,0 +1,25 @@
+--- initial.lean
++++ checked.lean
+@@ -81 +81,3 @@
+-    · have hroot : root.val = i.val := by simpa [source, hi, ← hi] using h
++    · have hroot : root.val = i.val := by
++        have h' : root.val = donor := by simpa only [source, hi, ite_true] using h
++        exact h'.trans hi.symm
+@@ -116,2 +118,3 @@
+-      (if w.1.val = columnPositiveRow r c U X hc w.2 then root.val else w.1.val) :=
+-    congrArg (fun z : InverseSupportLabels r c U X => z.val.1.val.1) he
++      (if w.1.val = columnPositiveRow r c U X hc w.2 then root.val else w.1.val) := by
++    have h := congrArg (fun z : InverseSupportLabels r c U X => z.val.1.val.1) he
++    simpa only [rowSpanningLabels, columnAttachmentLabels, apply_ite] using h
+@@ -158,0 +162 @@
++  change p - 1 ≤ inverseSupportCount r c U X
+@@ -164,2 +168,2 @@
+-    have hp : p = m * b := by simp only [ha, Nat.mul_zero, zero_mul, Nat.add_zero,
+-      Nat.zero_add] at hinc; exact hinc
++    have hp : p = m * b := by
++      simpa only [ha, Nat.mul_zero, zero_mul, Nat.add_zero, Nat.zero_add] using hinc
+@@ -187,2 +191,2 @@
+-      have hm : m * b = Fintype.card (RepairLargeRows r U) * b + a * b := by
+-        rw [← hlarge, Nat.add_mul]
++      have hm := congrArg (fun k : ℕ => k * b) hlarge
++      rw [Nat.add_mul] at hm

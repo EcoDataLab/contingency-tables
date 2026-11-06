@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralAugmentedLower
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralAugmentedLower] headlines [Math115.PhysicalTraceJoin.inverseSupportCount_spanning_lower, Math115.PhysicalTraceJoin.augmentedInverseSupportAllowance_le_count]

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralStarCode"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralStarCode",
+      "source": "research/physical-trace-general-star-code/formal/ResearchPhysicalTraceJoin/GeneralStarCode.lean",
+      "source_sha256": "356623d4d85fa60821a835f546077116e86dab339f3b17769a86c6e1b4da473b",
+      "returncode": 0,
+      "seconds": 56.34060383308679,
+      "olean_sha256": "3eeb13afbcd6bd15039adf81c1640a9f545ec45569519148bd062d935de2ef57"
+    }
+  ],
+  "audit_seconds": 63.06251670792699,
+  "audit_sha256": "7876c1de1d12bb2d2c0c8c585136dcdf8bc4b465ebb951c372b3cc6a19305b0f",
+  "audit_driver_sha256": "f8b5f9df78472d86795182ba163c122b9b4eac5afd518f6dab834b9b0961bbb3",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "fe63391a92c4995c483c0803fbbceafdbe2a6bd8f280f23ba88cf6490569a8e5",
+  "declaration_count": 48,
+  "theorem_count": 27,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.rawBalancedTest_eq",
+      "closure_size": 8468,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) (state : Math115.ReducedSmallChain.States r c U L),\n  OAI.ContingencyTables.ProfilePrograms.balancedTest\n        (Math115.PhysicalComputedProposal.computedStateCode r c U L state, U) =\n      true ↔\n    Math115.PhysicalDefectTrace.IsBalanced r c U L state",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawDyadicNeighborDraw_eq",
+      "closure_size": 10843,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (state : Math115.ReducedSmallChain.States r c U L)\n      (word : Fin (Nat.clog 2 (32 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 2)) → Bool),\n      Math115.PhysicalTraceJoin.rawDyadicNeighborDraw (List.ofFn r) (List.ofFn c) U\n          OAI.ContingencyTables.CompletionCounts.dimensionAllowance\n          (Math115.PhysicalComputedProposal.computedStateCode r c U L state) (List.ofFn word) =\n        Option.map (Math115.PhysicalComputedProposal.computedStateCode r c U L)\n          (Math115.PhysicalComputedProposal.computedProposal r c U L state word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawStarStep_eq",
+      "closure_size": 11365,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (h : ℕ)\n      (word :\n        Fin\n            (Nat.clog 2 (32 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 2) +\n              Math115.LegacyPhysicalCompletion.bits r c U L hr hc (↑b) h) →\n          Bool),\n      Math115.PhysicalTraceJoin.rawStarStep (List.ofFn r) (List.ofFn c) U L\n          OAI.ContingencyTables.CompletionCounts.dimensionAllowance h\n          (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑b) (List.ofFn word) =\n        Math115.PhysicalComputedProposal.computedStateCode r c U L\n          (Math115.PhysicalStarTrial.actualStep r c U L hr hc b h word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawStarTrial_eq",
+      "closure_size": 11377,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (h : ℕ)\n      (word :\n        Fin\n            (Nat.clog 2 (32 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 2) +\n              Math115.LegacyPhysicalCompletion.bits r c U L hr hc (↑b) h) →\n          Bool),\n      Math115.PhysicalTraceJoin.rawStarTrial (List.ofFn r) (List.ofFn c) U L\n          OAI.ContingencyTables.CompletionCounts.dimensionAllowance h\n          (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑b) (List.ofFn word) =\n        Option.map (fun e => Math115.PhysicalComputedProposal.computedStateCode r c U L ↑e)\n          (Math115.PhysicalStarTrial.actualTrial r c U L hr hc b h word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawStarExit_eq",
+      "closure_size": 11424,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (h : ℕ)\n      (entering : Math115.PhysicalDefectTrace.DefectVertices r c U L) (J : ℕ)\n      (word :\n        Fin\n            (J *\n              (Nat.clog 2 (32 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 2) +\n                Math115.LegacyPhysicalCompletion.bits r c U L hr hc (↑b) h)) →\n          Bool),\n      Math115.PhysicalTraceJoin.rawStarExit (List.ofFn r) (List.ofFn c) U L\n          OAI.ContingencyTables.CompletionCounts.dimensionAllowance h\n          (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑b)\n          (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑entering) J (List.ofFn word) =\n        Math115.PhysicalComputedProposal.computedStateCode r c U L\n          ↑(Math115.PhysicalStarRetry.flatExit r c U L hr hc b h entering J word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawStarExit_eq_reserved",
+      "closure_size": 11450,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (h : ℕ)\n      (entering : Math115.PhysicalDefectTrace.DefectVertices r c U L) (J N : ℕ)\n      (hN :\n        J *\n            (Nat.clog 2 (32 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance ^ 2) +\n              Math115.LegacyPhysicalCompletion.bits r c U L hr hc (↑b) h) ≤\n          N)\n      (word : Fin N → Bool),\n      Math115.PhysicalTraceJoin.rawStarExit (List.ofFn r) (List.ofFn c) U L\n          OAI.ContingencyTables.CompletionCounts.dimensionAllowance h\n          (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑b)\n          (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑entering) J (List.ofFn word) =\n        Math115.PhysicalComputedProposal.computedStateCode r c U L\n          ↑(Math115.PhysicalStarRetry.flatExit r c U L hr hc b h entering J\n              (OAI.ContingencyTables.FirstSuccess.prefixWord hN word))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

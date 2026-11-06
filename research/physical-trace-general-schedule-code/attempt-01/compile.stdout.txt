@@ -1,0 +1,38 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean:117:66: error: unsolved goals
+m : ℕ
+r : Fin m → ℕ
+U : ℕ
+⊢ ∑ i, ((fun v => if v < U then 1 else 0) ∘ r) i = ∑ a, if r a < U then 1 else 0
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean:122:65: error: unsolved goals
+m : ℕ
+r : Fin m → ℕ
+U : ℕ
+⊢ ∑ i, ((fun v => if U ≤ v then 1 else 0) ∘ r) i = ∑ i, if U ≤ r i then 1 else 0
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean:126:68: error: unsolved goals
+n : ℕ
+c : Fin n → ℕ
+U : ℕ
+⊢ ∑ i, ((fun v => if U ≤ v then 1 else 0) ∘ c) i = ∑ j, if U ≤ c j then 1 else 0
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean:131:41: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L h : ℕ
+⊢ CompletionRandomBudget.budgetCoefficient *
+      CompletionRandomBudget.combinedSize dimensionAllowance (∑ i, r i + L * (largeRowCount r U * largeRowCount c U))
+          h ^
+        85 =
+    CompletionRandomBudget.budgetCoefficient *
+      CompletionRandomBudget.combinedSize dimensionAllowance (∑ i, r i + L * (largeRowCount r U * largeColumnCount c U))
+          h ^
+        85
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean:134:4: warning: This simp argument is unused:
+  rawScheduleLargeLines_column_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [rawUniformCompletionBits, rawScheduleResidualMass, rawScheduleDimension_eq,
+    rawScheduleLargeLines_row_eq, List.sum_ofFn, uniformCompletionBits, residualMassBound]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean:223:2: error: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.

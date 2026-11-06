@@ -1,0 +1,62 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean:81:42: error: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean:83:19: warning: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean:117:4: error: Type mismatch
+  congrArg (fun z => (↑(↑z).1).1) he
+has type
+  (↑(↑(rowSpanningLabels r c U X hr root v)).1).1 = (↑(↑(columnAttachmentLabels r c U X hc root w)).1).1
+but is expected to have type
+  (if (↑v).2 = rowPositiveColumn r c U X hr (↑v).1 then ↑root else ↑(↑v).1) =
+    if ↑w.1 = columnPositiveRow r c U X hc w.2 then ↑root else ↑w.1
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean:164:27: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U : ℕ
+X : Table r c
+hr : ∀ (i : Fin m), 0 < r i
+hc : ∀ (j : Fin n), 0 < c j
+a : ℕ := Fintype.card (RepairSmallRows r U)
+b : ℕ := Fintype.card (RepairSmallColumns c U)
+p : ℕ := Fintype.card (Cells small)
+ha : a = 0
+hl : b * (m * b - 1) ≤ inverseSupportCount r c U X
+hinc : p = m * b
+⊢ p = m * b
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean:162:2: error: unsolved goals
+case pos
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U : ℕ
+X : Table r c
+hr : ∀ (i : Fin m), 0 < r i
+hc : ∀ (j : Fin n), 0 < c j
+a : ℕ := Fintype.card (RepairSmallRows r U)
+b : ℕ := Fintype.card (RepairSmallColumns c U)
+p : ℕ := Fintype.card (Cells small)
+hinc : p + a * b = n * a + m * b
+ha : a = 0
+hl : b * (m * b - 1) ≤ inverseSupportCount r c U X
+hp : p = m * b
+⊢ Fintype.card (Cells small) - 1 ≤ inverseSupportCount r c U X
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean:155:68: error: unsolved goals
+case neg
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U : ℕ
+X : Table r c
+hr : ∀ (i : Fin m), 0 < r i
+hc : ∀ (j : Fin n), 0 < c j
+a : ℕ := Fintype.card (RepairSmallRows r U)
+b : ℕ := Fintype.card (RepairSmallColumns c U)
+p : ℕ := Fintype.card (Cells small)
+hinc : p + a * b = n * a + m * b
+ha : ¬a = 0
+⊢ Fintype.card (Cells small) - 1 ≤ inverseSupportCount r c U X
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean:165:29: error: unexpected identifier; expected command

@@ -1,0 +1,66 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean:47:74: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+
+Note: It is not possible to treat `Fibre` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean:58:76: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  States r c U L
+of sort `Type` in the application
+  singletonCompletionDraw r c U L hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean:59:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean:67:77: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  States r c U L
+of sort `Type` in the application
+  singletonCompletionDraw r c U L hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean:71:47: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  States r c U L
+of sort `Type` in the application
+  singletonCompletionDraw r c U L hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean:75:10: error(lean.unknownIdentifier): Unknown identifier `mapLaw_constant`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean:68:41: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+z : States r c U L
+hs : (largeIndices (U, List.ofFn r)).length ≤ 1 ∨ (largeIndices (U, List.ofFn c)).length ≤ 1
+h : ℕ
+emptyWord : Fin 0 → Bool := fun i => i.elim0
+he : completionDraw r c U L hr hc z h = fun x => sorry
+⊢ mapLaw uniformLaw sorry = mapLaw uniformLaw fun x => sorry
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean:95:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean:109:41: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  States r c U L
+of sort `Type` in the application
+  singletonCompletionDraw r c U L hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralSingletonCompletion.lean:111:14: warning: declaration uses `sorry`

@@ -1,0 +1,18 @@
+--- initial.lean
++++ checked.lean
+@@ -56 +56 @@
+-  rw [computedCellEquiv_catalog] at he
++  rw [Math115.PhysicalComputedProposal.computedCellEquiv_catalog] at he
+@@ -58 +58 @@
+-    profileCode, computedCatalog] using he.symm
++    profileCode, Math115.PhysicalComputedProposal.computedCatalog] using he.symm
+@@ -64 +64 @@
+-  rw [computedCellEquiv_catalog] at he
++  rw [Math115.PhysicalComputedProposal.computedCellEquiv_catalog] at he
+@@ -66 +66 @@
+-    profileCode, computedCatalog] using he.symm
++    profileCode, Math115.PhysicalComputedProposal.computedCatalog] using he.symm
+@@ -72,0 +73 @@
++include hr in
+@@ -79,0 +81 @@
++include hc in

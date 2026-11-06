@@ -1,0 +1,8 @@
+{
+  "original_source_sha256": "a2c60cead228b82aa28ac27c792000f427344757495c53ed6e6921134967650a",
+  "final_source_sha256": "aed4ebddc2c7f60b8978bd351825cbfe06cc3135b22072cea4a5fedac904bd15",
+  "original_statements_unchanged": true,
+  "changed_headers": [],
+  "new_declarations": [],
+  "scope": "Literal headers compared. Changed qualifications or binder names require source review; definition bodies are reviewed separately."
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralCompletionCode"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralCompletionCode",
+      "source": "research/physical-trace-general-completion-code/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean",
+      "source_sha256": "ca8c81f2ce4bcdc4b52515213a1d95257ab272127ace8728126d183975f37ecf",
+      "returncode": 0,
+      "seconds": 43.36982958391309,
+      "olean_sha256": "5a6bac934a1b2f0624da9b6a858f5703638a8ea15f425378f5ee8bf2a6730fe7"
+    }
+  ],
+  "audit_seconds": 152.98993745772168,
+  "audit_sha256": "d88f738573641d90419f0654c60c618518aa3d50bda3bb9072195d7685e36f11",
+  "audit_driver_sha256": "27786fa4d0056369c4d41fc66c498e506195e2cea04f374bb01ccfaf42f9c089",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "ca84d1f2f276b66c4115b37232eb2fc048fbce3d7b187f8c5ee3a8157969d59e",
+  "declaration_count": 19,
+  "theorem_count": 13,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.rawCoarseMargins_eq",
+      "closure_size": 9736,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (z : Math115.ReducedSmallChain.States r c U L),\n  Math115.PhysicalTraceJoin.rawCoarseMargins (List.ofFn r) (List.ofFn c) U L\n      (Math115.PhysicalComputedProposal.computedStateCode r c U L z) =\n    (List.ofFn (Math115.LegacyPhysicalCompletion.coarseRows r c U L hr z),\n      List.ofFn (Math115.LegacyPhysicalCompletion.coarseColumns r c U L hc z))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawCompletionBits_eq",
+      "closure_size": 9771,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (z : Math115.ReducedSmallChain.States r c U L) (h : ℕ),\n  Math115.PhysicalTraceJoin.rawCompletionBits (List.ofFn r) (List.ofFn c) U L\n      (Math115.PhysicalComputedProposal.computedStateCode r c U L z) h =\n    Math115.LegacyPhysicalCompletion.bits r c U L hr hc z h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawCompletionResidual_eq",
+      "closure_size": 43795,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (z : Math115.ReducedSmallChain.States r c U L) (h N : ℕ)\n  (hN : Math115.LegacyPhysicalCompletion.bits r c U L hr hc z h ≤ N) (word : Fin N → Bool),\n  Math115.PhysicalTraceJoin.rawCompletionResidual (List.ofFn r) (List.ofFn c) U L\n      (Math115.PhysicalComputedProposal.computedStateCode r c U L z) h (List.ofFn word) =\n    OAI.ContingencyTables.DensePrograms.matrixCode\n      ↑((Math115.LegacyPhysicalCompletion.finiteFibreEquiv r c U L hr hc z)\n          (Math115.LegacyPhysicalCompletion.completionDraw r c U L hr hc z h\n            (OAI.ContingencyTables.FirstSuccess.prefixWord hN word)))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawCompletionResidual_terminal",
+      "closure_size": 43886,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (d : Math115.PhysicalDefectTrace.DefectVertices r c U L) (h : ℕ)\n  (word : Fin (Math115.PhysicalCompletionWidth.uniformCompletionBits r c U L h) → Bool),\n  Math115.PhysicalTraceJoin.rawCompletionResidual (List.ofFn r) (List.ofFn c) U L\n      (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑d) h (List.ofFn word) =\n    Math115.PhysicalTraceJoin.jointResidualMatrixCode r c U L hr hc\n      ⟨d, Math115.PhysicalTraceJoin.terminalCompletion r c U L hr hc d h word⟩",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawCompletionSource_terminal",
+      "closure_size": 43895,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (d : Math115.PhysicalDefectTrace.DefectVertices r c U L) (h : ℕ)\n  (word : Fin (Math115.PhysicalCompletionWidth.uniformCompletionBits r c U L h) → Bool),\n  Math115.PhysicalTraceJoin.rawCompletionSource (List.ofFn r) (List.ofFn c) U L\n      (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑d) h (List.ofFn word) =\n    Math115.PhysicalTraceJoin.terminalSourceMatrixCode r c U L\n      ⟨d, Math115.PhysicalTraceJoin.terminalCompletion r c U L hr hc d h word⟩",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

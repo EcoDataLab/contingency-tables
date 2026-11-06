@@ -1,14 +1,17 @@
 # Contingency tables: proofs and reference algorithms
 
-This open EcoDataLab project develops proofs and reference algorithms for [OpenAI result #115](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/115.md), including compiled inverse-gap bounds of [d⁸ for general shapes](docs/physical-defect-trace.md) and [d^6.5 for bounded-aspect rectangles](docs/aggregate-defect-trace.md). An [all-input finite-word sampler](docs/hybrid-finite-word-sampler.md) now uses the stronger chain in its reference branch, with initialization, a linear retry allowance, automatic accuracy settings, exact fresh-word retries and ordered zero restoration. This typed specification is checked; the existing complete encoded sampler still follows the earlier d¹⁷ route, and no smaller complete-runtime degree is established.
+This open EcoDataLab project develops proofs and reference algorithms for [OpenAI result #115](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/lean/docs/115.md), including compiled inverse-gap bounds of [d⁸ for general shapes](docs/physical-defect-trace.md) and [d^6.5 for bounded-aspect rectangles](docs/aggregate-defect-trace.md). A [complete ordinary Lean sampler](docs/executable-sampler.md) now connects the stronger chain to computed initialization, trials, retries, branch selection and zero restoration, with every-word feasibility and uniform-word error at most `2^-t`. The existing encoded machine still follows the earlier d¹⁷ route; the [complete reserved-bit comparison](docs/reservation-comparison.md) remains unfavorable on the tested fixtures, and no faster complete runtime is claimed.
 
 <!-- BEGIN GENERATED CLAIMS -->
 
 | Claim | Quantity and evidence | Assumptions and present limit |
 |---|---|---|
-| [All-input finite-word sampler](docs/claims-and-evidence.md#physical-trace-hybrid-sampler) | Every-word feasible output; TV ≤ 2⁻ᵗ; lean theorem | Any equal-total natural margin lists and natural precision t, including zeros and empty lists; uniform fair bits of the selected finite width. Typed finite-word map with noncomputable semantic components. The stronger chain is used on the recomputed reference branch; other shapes use deterministic output or the existing sampler at its own scales. Ordinary compilation and full assumption audits with separate AI review and trusted imports. Revised encoded program, charged runtime and strict Comparator acceptance remain open. |
+| [Complete ordinary Lean sampler](docs/claims-and-evidence.md#physical-trace-hybrid-sampler) | Every-word feasible output; TV ≤ 2⁻ᵗ; lean theorem | Any equal-total natural margin lists and natural precision t, including zeros and empty lists; uniform fair bits of the selected finite width. Ordinary executable Lean code with a checked pointwise link to the mathematical sampler. Other branches retain deterministic output or the frozen backend at its own scales. The supplied full word may be enormous; this establishes no practical speedup. Revised encoded Realizer, charged runtime and strict Comparator acceptance remain open. Ordinary compilation and complete assumption audits, separate AI review, trusted compiler/imports. |
 | [Linear outer retry allowance](docs/claims-and-evidence.md#physical-trace-linear-retry) | s ≥ 1/(4p); R ≤ 4p(t+1); lean theorem | Computed positive-list reference branch (p≥2). Equal original totals for sampling; natural requested precision t. An improvement to a proved outer retry allowance, not to the spectral-gap exponent or measured runtime. The reference construction uses this schedule; no new full bit-bank or machine-time exponent is extracted. |
-| [Executable stronger-sampler components](docs/claims-and-evidence.md#physical-trace-code-components) | Exact code correspondence on valid inputs; no added probability error; lean theorem | Equal-total original lists and computed reference tag for initialization; actual encoded states, specified denominator/word widths, retained residual data and ordered repair labels as stated for the other components. Four executable component correspondences, not an assembled encoded hybrid. Raw label/coarse-margin wrappers, complete accepted walk/trial composition, machine realizer and charged costs remain separate. Ordinary compilation, full assumption audits, separate AI review; trusted compiler/imports. |
+| [Same-law shorter complete typed sampler](docs/claims-and-evidence.md#physical-trace-tight-reservation) | Total reserved width ≤ old; identical complete output law; lean theorem | Equal-total natural margin lists and natural t for the complete typed hybrid; uniform words in their respective finite domains. The singleton alternative separately requires both residual dimensions nonempty and one at most one. The current ordinary raw program still uses the old widths. The shorter typed sampler remains far above legacy reservations on the reported fixtures. No actual-bit inspection, timing, new machine-time exponent or strict Comparator acceptance is established. |
+| [Shape-aware retry schedule](docs/claims-and-evidence.md#physical-trace-shape-retry) | K = ceil(2p(p−1)/c0); TV ≤ 2⁻ᵗ; lean theorem | Computed positive-list reference branch. Equal totals and an actual start/fallback for the sampling law. Standalone alternative schedule; the assembled raw program retains its linear settings. The ceiling is the least integer product-cover certificate, not an optimal runtime or actual-success estimate. |
+| [Stronger correction success allowance](docs/claims-and-evidence.md#physical-trace-spanning-count) | N(X) ≥ max(c0,p−1); ideal success ≥ 1/(2p); lean theorem | Positive row/column margins and an actual feasible table for the count; actual reference scales, p≥2, nonempty large-line lists and an actual start/fallback for the sampling law. Checked law-level refinement with supplied h,k,R. The assembled raw program and automatic schedule still use c0. No new spectral-gap exponent or runtime claim. |
+| [Executable stronger-sampler components](docs/claims-and-evidence.md#physical-trace-code-components) | Exact code correspondence on valid inputs; no added probability error; lean theorem | Equal-total original lists and computed reference tag for initialization; actual encoded states, specified denominator/word widths, retained residual data and ordered repair labels as stated for the other components. The local components retain their explicitly stated valid-state and word-width interfaces; the complete program discharges them from equal-total original lists. Its ordinary code correspondence is checked. A revised encoded Realizer and charged-cost theorem remain separate. Standard axioms with trusted compiler/imports and separate AI review. |
 | [Corrected reference-branch table law](docs/claims-and-evidence.md#physical-trace-corrected-reference) | TV ≤ (1−s)^R + R(2⁻ʰ+2⁻ᵏ), s=c0/[2p(p−1)]>0; lean theorem | Equal original natural-margin totals; the recomputed positive-list branch is reference. Supplied actual reduced defect start and feasible reduced fallback; supplied R,h,k. All dimensions, counts and U=11d(m+n−2), L=7 are on the filtered lists. This component packet retains supplied start, fallback and R,h,k. The later all-input finite-word sampler discharges those inputs and composes all branches. Revised encoded realization and charged costs remain open. Ordinary compilation and audits, separate AI source review, trusted imports; no new runtime exponent. |
 | [Same-chain bounded-aspect refinement](docs/claims-and-evidence.md#aggregate-actual-gap) | Inverse gap ≤ 34848 A^(3/2)d^(13/2); exact shape bound 34848d⁵(m+n−2)³; lean theorem | Finite ordered dimensions m,n≥2; natural margins; p≥2 small cells; nonempty positive defect support; U=11d(m+n−2), L=7; exact completion counts. A≥0 and (m+n−2)²≤Ad; fixed A for the d^6.5 asymptotic reading. The Lean aspect statement is squared. Same canonical proposal Q=4p−3 in both completion branches. Take the minimum with the earlier shape bound; thin shapes retain d⁸. All-input typed hybrid integration is checked separately; revised encoded machine/runtime integration remains open. |
 | [Actual rational defect trace](docs/claims-and-evidence.md#retained-defect-gap) | Inverse gap ≤ 431d⁸; shape bound 3872d⁶(m+n−2)²; lean theorem | Finite ordered dimensions m,n≥2; natural margins; at least two small cells and nonempty positive defect support. U=11d(m+n−2), L=7, d=10+(m+1)(n+1). Exact accepted completion counts. Rational changed chain: actual degree, conductances and normalization are compiled. Dyadic factor-two rounding remains reviewed mathematics. Revised encoded machine integration and runtime are open; baseline compiler/imports are trusted. |
@@ -114,22 +117,18 @@ Other results include sharp ordinary-table tail and mean bounds, a dense-compati
 
 ## Reproduce the Python tools
 
-Python 3.10 or newer is required. From the repository root, the core checks run directly from source without an installation:
+Python 3.10 or newer is required. The complete suite includes the real NumPy/SciPy worker-law backend. Install the test extra in an isolated environment:
 
 ```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install --only-binary=:all: -e '.[test]'
 make test
-# Or, without Make:
-PYTHONPATH=src python3 -m unittest discover -s tests -v
-```
-
-Both routes support a fresh source checkout without an editable install; tests requiring optional numerical libraries report explicit skips when those libraries are absent. For NumPy-dependent audits and research reports, install the research extra first:
-
-```sh
-python3 -m pip install -e '.[research]'
 make verify
 # Optional: download and verify the pinned upstream source files.
 make sources
 ```
+
+Make prefers the local virtual environment. The full test command fails when SciPy is missing or its lane is skipped. For intentional standard-library-only checks, use `make test-core`; that mode reports optional-library skips. The [Python environment guide](docs/python-environment.md) covers direct commands, supported interfaces, versions and edge cases. The [6 November reproduction](reports/python-reliability-2026-11-06/) records 468 local tests with no skips and a separate clean source/isolated-environment run with one explicit formal-bootstrap skip; the real SciPy tests ran in both.
 
 Saved mixture certificates replay using exact standard-library arithmetic. Replay reconstructs the current kernels and checks every rational witness, reporting any change from the historical producer's source bytes. Add `--require-producer-sources` to the replay script to require exact producer identity as well. Source verification downloads only files in the pinned manifest and checks their Git blob hashes; it does not execute upstream code. The [Python release receipt](reports/stage-close-verification.json) records the tested source hashes, optional dependencies, full verification command, and clean public-source archive run. It also preserves the hosted clean-checkout failure that led to the ledger fix. The [hosted Python receipt](reports/hosted-final-stage.json) records successful checks on Python 3.10, 3.12, and 3.13 at `df469a5`. The [environment-runner repair receipt](reports/environment-runner-fix/verification.json) records its local full-suite result and separate AI review. The [earlier stage receipt](reports/stage-verification.json) and [checkpoint receipt](reports/checkpoint-verification.json) retain their historical scopes.
 
@@ -169,26 +168,14 @@ Lean setup is separate and downloads several GiB of pinned dependencies:
 
 ```sh
 bash scripts/bootstrap_lean.sh
-bash scripts/verify_lean.sh standalone
-bash scripts/verify_lean.sh focused
+make lean
 ```
 
-The [claims and evidence ledger](docs/claims-and-evidence.md) and generated summary above bind each saved audit scope to its named declarations, source hashes, and receipt. The expanded default target includes the formerly separate component scopes and the proved sampler modules; its [current Linux receipt](formal/results/linux-focused-5b4af40/verification.json) binds the exact compiled target. Historical component receipts retain their original interfaces and must not be added again to the integrated audit count. Fresh compilation, dependency-cache reuse, and overlapping reproductions remain distinct. Saved historical receipts do not verify later source changes.
+`make lean` is the main ordinary verification path. In one fresh attempt it runs the preserved baseline and then rebuilds the current public research dependency tree, including the general d8 theorem, the bounded-aspect squared certificate and the complete ordinary sampler contract. It audits the selected endpoints and their complete dependency closures. [Replay instructions](research/repair-accept/INTEGRATION-REPLAY.md) describe its source manifest and evidence. A successful receipt from an older target does not verify this expanded scope.
 
-The [Linux](docs/linux-verification.md) and [native Windows](docs/windows-verification.md)
-guides give the commands and exact verification scopes. Strict Comparator
-verification remains open for the research sampler and original challenge;
-only the separate [tiny fixture](formal/results/strict-comparator-smoke/README.md)
-has passed the real sandbox, exporter, default kernel and comparison.
+`make lean-baseline` (or bare `lake build Math115` in `formal/`) selects the historical baseline only. The [earlier Linux receipt](formal/results/linux-focused-5b4af40/verification.json) and [combined d8/aspect research receipt](research/aggregate-defect-trace/results/verification.json) retain those exact scopes. The [claims ledger](docs/claims-and-evidence.md), [Linux guide](docs/linux-verification.md) and [native Windows guide](docs/windows-verification.md) distinguish ordinary compilation, trusted dependency reuse and strict replay.
 
-[Accelerated startup](research/strict-sampler-checkpoints/accelerated-plan-v1/)
-now passes authentication and planning in an 8 GiB VM. A
-[standalone metadata comparison](research/strict-sampler-checkpoints/snapshot-comparison-v1/)
-measured 25.65 seconds for the original traversal and 0.198 seconds for a
-candidate over all 131,021 admitted files; that candidate is not installed,
-and the full proof run remains unexecuted. The [status](docs/status.md) and
-[handoff](docs/handoff.md) retain prior failures, evidence boundaries and the
-remaining runtime and checking obligations.
+**Strict complete-sampler Comparator acceptance remains open.** The [current observer repair and replay](research/strict-sampler-checkpoints/proc-observer-v2/) preserves the latest failure, regression evidence and exact pending-run target. That target is the historical complete sampler; the newer ordinary program still needs its revised encoded Realizer. Only the separate [tiny fixture](formal/results/strict-comparator-smoke/README.md) has a retained full strict acceptance result. The [status](docs/status.md) and [handoff](docs/handoff.md) track fresh runs without upgrading setup or compilation to acceptance.
 
 ## A synthetic commuting example
 

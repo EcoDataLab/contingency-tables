@@ -9,9 +9,9 @@ every word returns a feasible ordinary table and the uniform-word output
 law is within 2^-t of uniform ordinary tables on the original ordered lists.
 
 The theorem identifies a typed map and its reserved finite bit bank. Parts
-of the typed map use noncomputable semantic constructions. The revised
-encoded program, its pointwise code correspondence, charged running time,
-and strict Comparator acceptance remain separate work. The existing
+of the typed map use noncomputable semantic constructions. The [complete ordinary list program](executable-sampler.md) now has a checked
+pointwise correspondence to this typed map. Its revised encoded machine,
+charged running time and strict Comparator acceptance remain separate work. The existing
 complete encoded d^17 sampler and its runtime certificate are unchanged.
 
 ## What the construction supplies
@@ -75,7 +75,9 @@ Both per-trial precisions are H. The geometric failure term is at most
 R * (terminalScheduleWordWidth(H) + H)
 ```
 
-bits. Early success may inspect fewer of the reserved bits.
+bits. The ordinary retry implementation maps all trial blocks before selecting
+the first successful result. This theorem establishes the returned value and
+reserved length, with no early-return or inspected-bit saving.
 
 | Quantity | Initial safe schedule | Refined schedule |
 |---|---|---|

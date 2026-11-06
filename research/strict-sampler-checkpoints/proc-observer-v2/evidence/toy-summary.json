@@ -1,0 +1,58 @@
+{
+  "authenticated_guest_members": 19,
+  "checker_installed": false,
+  "comparator_executed": false,
+  "config_sha256": "1b0fb155d72f090e43f937106f3987e565741b07875baea47c1e958706c67a96",
+  "guest_archive_sha256": "7a0c5e1a93f15baa7ea216c2a43e6c0ff087e07ad31a6ec28d8e12904145ff0f",
+  "host_status_label_scope_note": "Inherited startup_plan_reported_pass label; no startup/auth/plan evidence or claim. Actual authenticated toy diagnostic receipt governs.",
+  "iso_sha256": "ea6fac6965d5de2ec2695fa52052803cd8c0f12037073c9dea74f2968fa8b56e",
+  "kernel_replay_executed": false,
+  "observer_sha256": "b5e8c0f95fdd5f6b9193c2b0537782b242d0fe0c269dae7b5a7a4c73a32cb1f0",
+  "original_pid3555_denial_cause": "unknown",
+  "owned_qemu_reaped": true,
+  "proof_compilation_executed": false,
+  "qemu_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "raw_host_status_label": "startup_plan_reported_pass",
+  "retained_pins_after": {
+    "preflight-overlay.qcow2": "5bde6d27a87b66365f35c87e03144f914c864dda47beccc2b0734f3edfcef1b7",
+    "qemu/ucrt64/bin/qemu-img.exe": "b4ef313ad2bd5070e44a5cccb50d8c2529dd68303c44ef8926b4c5a38ca219ff",
+    "qemu/ucrt64/bin/qemu-system-x86_64.exe": "a812b50865ffcc7ddd43f9c33e9bb1ed7b3501c1f847ee99ede8d4b4a4a93742",
+    "stonking-server-cloudimg-amd64.img": "c93d013ac1116adf585bdd84d2e8b51039fc623fb8c6d33b70da4075c4934118",
+    "tool-bootstrap-overlay.qcow2": "da762be8cf147ef834961359511d3cf7cf5d47e04da2ed440f2c898befca9a91"
+  },
+  "scenarios": [
+    {
+      "incomplete_samples": 3,
+      "mode": "recover",
+      "owned_stop_returncode": null,
+      "sampled_toy_peak": 1,
+      "seconds": 3.2877854000000006,
+      "source_bound_receipt_sha256": "ab30ca24b51fb002d2c8ba26a36ed3621724eb6570f7e5d0cdd76baf18d97b03",
+      "telemetry_status": "sampled_owned_cgroup_with_incomplete_samples",
+      "valid_samples": 6
+    },
+    {
+      "incomplete_samples": 17,
+      "mode": "deny",
+      "owned_stop_returncode": 0,
+      "sampled_toy_peak": null,
+      "seconds": 5.068455,
+      "source_bound_receipt_sha256": "28b8c37766f02d9622f1881df280b5111f713e977ba57d54aff6b4cbed1c9311",
+      "telemetry_status": "unavailable_active_service",
+      "valid_samples": 0
+    },
+    {
+      "incomplete_samples": 0,
+      "mode": "overlap",
+      "owned_stop_returncode": 0,
+      "sampled_toy_peak": 2,
+      "seconds": 1.034897700000002,
+      "source_bound_receipt_sha256": "84db93641ad02806673e7268e156947cd81cec490c4ee4c634de80a28c757513",
+      "telemetry_status": "sampled_owned_cgroup",
+      "valid_samples": 1
+    }
+  ],
+  "status": "three_owned_toy_diagnostics_passed_no_proof",
+  "toy_only_classifier": true,
+  "vm_seconds": 39.487794199958444
+}

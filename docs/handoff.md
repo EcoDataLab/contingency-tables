@@ -1,27 +1,37 @@
 # Contributor handoff
 
-6 November 2026: the [all-input finite-word sampler](hybrid-finite-word-sampler.md)
-now derives its reference start, fallback, retry count and both precisions.
-It uses the stronger trace on the computed reduced reference branch,
-zero-bit deterministic output, and the existing checked sampler for the
-remaining shapes. For every equal-total natural margin pair and natural t,
-every finite word yields a feasible original table and uniform-word error
-is at most 2^-t, including zeros and empty dimensions. The improved correction
-allowance is s>=1/(4p); the actual schedule uses
-A=min(2p(p-1),4p), R=A(t+1), h=k=t+2+clog2 R. Its retries never exceed the
-initial safe schedule. Eight modules compiled and passed full assumption
-audits, with separate AI source/evidence review. The typed map retains
-noncomputable semantic components. Revised encoded execution, charged costs
-and strict Comparator acceptance remain open; no spectral-gap or complete
-runtime exponent changed.
+6 November 2026: the [complete ordinary Lean sampler](executable-sampler.md)
+now computes the full list-and-bit algorithm. `executableSampler_contract`
+connects its exact computed width and output to every-word feasibility and
+uniform-word TV at most 2^-t for all equal-total natural margin lists and
+natural t, including zeros and empty dimensions. Initialization, labels,
+coarse margins, accepted walk, retained completion, correction, retries,
+all branches and ordered zero restoration are supplied internally. Ordinary
+compilation, full assumption audits and separate AI source/evidence reviews
+passed. The pinned compiler and reused imports remain trusted.
 
-Four further [executable code correspondences](sampler-code-correspondence.md)
-now pass compilation, full assumption audits and separate AI review:
-initialization, raw neighbor selection, terminal correction and retained
-completion reconstruction. The full initializer is computed from the input
-lists; the retained source matrix is reconstructed from state and residual
-codes. Raw label/coarse-margin wrappers and complete program composition
-remain, followed by encoded realization and cost analysis.
+The actual raw program uses c0 and the linear schedule
+A=min(2p(p-1),4p), R=A(t+1), h=k=t+2+clog2 R. Its retry implementation maps
+all reserved trials before selecting the first success. The
+[reservation comparison](reservation-comparison.md) reports that its complete
+banks remain much larger than the legacy banks on the stated fixtures.
+[Further checked refinements](sampler-refinements.md) separately improve
+inverse-count bounds, shape-aware retries and completion reservations.
+Their installation boundaries are explicit. Revised encoded realization,
+charged costs and strict Comparator acceptance remain open; no new
+spectral-gap or complete-runtime exponent is claimed here.
+
+The default `make lean` command now runs the preserved baseline and the
+current research tree together, with explicit d8, bounded-aspect squared and
+complete-program audit endpoints. Its source plan and build-control tests
+passed; a fresh full run of this expanded entrypoint is still pending. The
+full Python/SciPy suite passed 468 tests without skips locally. A separate
+clean source clone passed the same suite with one explicit missing-formal-
+bootstrap skip; its SciPy and observer tests ran. The strict Comparator
+observer repair passed its regression/review checks, and a new historical
+complete-sampler proof attempt is running. Acceptance remains pending. The earlier d8 and bounded-aspect d^6.5 results already have a
+[combined research rebuild](../research/aggregate-defect-trace/results/verification.json);
+that receipt is distinct from the historical default target and Comparator.
 
 24 October 2026 checkpoint (superseded by the typed integration above): the [corrected reference-branch table law](corrected-reference-sampler.md)
 now connects the stronger trace to ordinary output on the original ordered
@@ -72,16 +82,14 @@ mathematical argument; the physical theorem still needs Lean formalization.
 
 Next integration tasks:
 
-1. Compose the checked computational initializer, raw neighbors and
-   retained repair/correction components into a full reference trial.
-   Finish ordered-label and raw coarse-margin wrappers; reuse existing
-   coarseRows_code/coarseColumns_code rather than reprove feasibility.
-2. Compose that pointwise code correspondence with the existing fresh-word
-   retry and ordered zero-restoration code. The typed all-branch accuracy
-   theorem can then transfer without repeating the probability argument.
-3. Supply a revised encoded realizer and charged-cost composition; compare
-   a concrete composed quantity with upstream. New-scale unit/no-small
-   algorithms can replace the current checked legacy fallback separately.
+1. Run the unified default verification path at the committed checkpoint,
+   with explicit d8, bounded-aspect and executable-contract audit endpoints.
+2. Preserve the passed complete Python/SciPy reproduction and address any
+   new concrete edge-case failures from fresh verification. Keep shorter-word and changed-acceptance
+   alternatives distinct from the installed raw program.
+3. Finish a strict Comparator run of its exact challenge target. Then supply
+   the revised encoded Realizer and charged-cost composition for the new chain;
+   ordinary program correspondence alone does not establish those layers.
 
 Keep the original compiled d¹⁷ route and its receipts distinct. It re-proves
 upstream's existential bounded-sampling statement. Both packed-trial cost

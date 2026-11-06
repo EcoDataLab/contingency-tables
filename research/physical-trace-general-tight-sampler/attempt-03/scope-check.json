@@ -1,0 +1,12 @@
+{
+  "original_source_sha256": "4995af10df14ee4e634b8e15f19035a0420f4c1c2d840d5a28c2b0ae4567eab1",
+  "final_source_sha256": "f7fe68844bf5a7957acbe857c8e99092cfc1d816291fa68492b831ebd4527ac4",
+  "original_statements_unchanged": true,
+  "changed_headers": [],
+  "new_declarations": [
+    "tightHybridSampler_deterministic",
+    "tightHybridSampler_legacy",
+    "tightHybridSampler_reference"
+  ],
+  "scope": "Literal headers compared. Changed qualifications or binder names require source review; definition bodies are reviewed separately."
+}
