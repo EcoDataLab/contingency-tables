@@ -104,6 +104,8 @@
   },
   "normal_suite_test_bridge": {
     "path": "tests/test_comparator_observer.py",
+    "source_commit": "d34ccab05d547b8da4a41d203a4f05f6c85d3b99",
+    "status": "historical_bridge_before_python310_adapter",
     "sha256": "7b643a9c55346de3f339d7756ad6c055f75521a349199aae1d46c370adb905a7"
   },
   "old_failed_attempt_unchanged": "../second-proof-failure-v1/",

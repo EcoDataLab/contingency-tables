@@ -1,0 +1,293 @@
+{
+  "schema": "python310-comparator-repair-v1",
+  "date": "2026-11-06",
+  "scope": "Python 3.10 compatibility of the normal-suite bridge to frozen offline Comparator fixtures; no live checker/runtime changes",
+  "hosted_failure": {
+    "run_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/42305845614",
+    "job_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/42305845614/job/128194814110",
+    "head_sha": "d34ccab05d547b8da4a41d203a4f05f6c85d3b99",
+    "job_id": 128194814110,
+    "job_name": "exact-tests (3.10)",
+    "run_conclusion": "failure",
+    "job_conclusion": "failure",
+    "python": "3.10.22",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "tests_run": 468,
+    "passed": 457,
+    "failures": 7,
+    "errors": 1,
+    "skipped": 3,
+    "unittest_seconds": 144.615,
+    "root_cause": "Frozen observer/supervisor fixture modules call hashlib.file_digest, which Python 3.10 lacks; seven observer assertion failures and one supervisor error share this AttributeError.",
+    "skips": [
+      "test_public_hybrid_closure_resolves_in_dependency_order_without_execution (test_research_integration_plan.IntegrationPlanTests) ... skipped 'Public source-plan check needs the normal pinned Lean/upstream/package bootstrap; no downloads in Python tests'",
+      "test_last_case_last_repetition_accepts_exact_r_seed_boundary (test_worker_library_benchmarks.WorkerLibraryBenchmarks) ... skipped 'optional Rscript unavailable'",
+      "test_r_real_api_and_small_fiber_readback (test_worker_library_benchmarks.WorkerLibraryBenchmarks) ... skipped 'optional Rscript unavailable'"
+    ],
+    "scipy_worker_library_tests_passed": 8,
+    "scipy_worker_preflight_tests_passed": 2,
+    "matrix_jobs": [
+      {
+        "id": 128194813690,
+        "name": "exact-tests (3.13)",
+        "conclusion": "cancelled"
+      },
+      {
+        "id": 128194814110,
+        "name": "exact-tests (3.10)",
+        "conclusion": "failure"
+      },
+      {
+        "id": 128194814132,
+        "name": "exact-tests (3.12)",
+        "conclusion": "cancelled"
+      },
+      {
+        "id": 128194814378,
+        "name": "exact-tests (3.14)",
+        "conclusion": "cancelled"
+      }
+    ],
+    "log": "hosted-failure-excerpt.log.gz"
+  },
+  "repair": {
+    "adapter": "Real hashlib.new/update in 1 MiB chunks for the freshly opened blocking binary streams used by the fixtures; delegates other hashlib attributes unchanged. No general nonblocking/seeked-stream file_digest equivalence claim.",
+    "activation": "Only when native hashlib.file_digest is absent. Applies only to five private fixture-loaded runtime module objects during their TestSuite.run. The global hashlib module is never modified by the bridge. ExitStack restores original module bindings after success or raised exception.",
+    "workflow": "fail-fast: false lets the independent Python lanes finish; dependency/test commands unchanged.",
+    "frozen_python_source_files_unchanged": 11,
+    "all_pinned_public_packet_files_verified": 25,
+    "frozen_runtime": "Frozen VM/runtime sources and source pins remain unchanged, including the guest Python 3.12 runtime.",
+    "historical_bridge_sha256": "7b643a9c55346de3f339d7756ad6c055f75521a349199aae1d46c370adb905a7",
+    "historical_workflow_sha256": "eb7ad625139dd2e92e29220f06d8ea757b9b52a52ef6a3c584b674e9004893a2",
+    "historical_manifest_sha256": "78149c3d7dfa0e2ef569d2b888a4c571da7b11dc21df475796d81ad4e2c6fc7a",
+    "public_manifest_annotation": "Only normal_suite_test_bridge.source_commit and historical status added; old bridge SHA and every frozen file hash retained. No earlier public exact-hash binding to the old manifest was found before annotation.",
+    "historical_python_receipt_unchanged": {
+      "path": "../python-reliability-2026-11-06/verification.json",
+      "sha256": "6987df774cd3471a6fa7a9c60ea1cfddcb4ae65e648aa24547654075c1a19c2d"
+    },
+    "official_api_reference": "https://docs.python.org/3.11/library/hashlib.html#hashlib.file_digest"
+  },
+  "local_validation": {
+    "python": "3.14.3",
+    "command": [
+      ".venv/bin/python",
+      "scripts/run_python_tests.py",
+      "-p",
+      "test_comparator*.py"
+    ],
+    "targeted_tests_run": 40,
+    "targeted_passed": 40,
+    "targeted_failures": 0,
+    "targeted_errors": 0,
+    "targeted_skipped": 0,
+    "unittest_seconds": 0.13,
+    "targeted_log": "repaired-targeted-tests.log.gz",
+    "forced_missing_api_comparison": {
+      "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+      "native_api_restored_after_simulation": true,
+      "fixture_module_bindings_restored": true,
+      "results": [
+        {
+          "bridge": "historical",
+          "tests_run": 36,
+          "failures": 7,
+          "errors": 1,
+          "skipped": 0,
+          "failure_ids": [
+            "strict_comparator_observer.Observer.test_complete_positive_overlap_still_aborts",
+            "strict_comparator_observer.Observer.test_five_second_watchdog_and_owned_cleanup",
+            "strict_comparator_observer.Observer.test_hard_deadline_precedes_telemetry_grace",
+            "strict_comparator_observer.Observer.test_only_valid_sample_resets_watchdog",
+            "strict_comparator_observer.Observer.test_partial_positive_overlap_aborts_immediately",
+            "strict_comparator_observer.Observer.test_short_unreadable_stage_never_reports_zero_or_partial",
+            "strict_comparator_observer.Observer.test_transient_error_then_complete_recovery"
+          ],
+          "error_ids": [
+            "strict_comparator_supervisor.SupervisorTests.test_pending_native_audit_rejects_before_any_image_or_process_action"
+          ]
+        },
+        {
+          "bridge": "repaired",
+          "tests_run": 36,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0,
+          "failure_ids": [],
+          "error_ids": []
+        }
+      ]
+    },
+    "comparison_logs": [
+      "historical-forced-missing-fixtures.log.gz",
+      "repaired-forced-missing-fixtures.log.gz"
+    ],
+    "actual_python310_local_execution": false,
+    "python310_validation_scope": "No Python 3.10 executable found on PATH. Forced API absence reproduces the eight hosted failure cases and repaired 36/36 success; an actual repaired Python 3.10 hosted rerun remains pending.",
+    "four_new_regressions": [
+      "Real SHA256 known vectors, multi-chunk binary files versus native API, bounded short reads, callable constructor and altered-byte sensitivity",
+      "Native API identity and fixture module bindings preserved outside scope",
+      "All 36 frozen offline tests pass with native file_digest absent; zero skips",
+      "Adapter bindings restore even when debug-mode suite execution raises"
+    ],
+    "workflow_syntax": [
+      {
+        "path": ".github/workflows/formal-linux.yml",
+        "sha256": "677a63e2cdb6b09dbe8802ddb009a6403f77097f3869a5cb3dc54e954d15073e",
+        "yaml_parsed": true,
+        "runs": [
+          {
+            "job": "verify",
+            "step_index": 1,
+            "command_sha256": "a6251047884901fe6ac807e4f0fd0474fb1df4a6a25d8fdd4be13fe8b795f757",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "verify",
+            "step_index": 2,
+            "command_sha256": "457dd02a84453747552682bbb91a721a5380ade03246c7b7b29e39316fd633bb",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "verify",
+            "step_index": 3,
+            "command_sha256": "38047f0b0f09c5d2cc66f9e037a0c57cac9abf46da752032c7f2bd38ca0e7ac2",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "verify",
+            "step_index": 4,
+            "command_sha256": "2b7080cb97ff148192d161022ccda16b96cb262df2751845fceb3698923ae071",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "verify",
+            "step_index": 5,
+            "command_sha256": "ea7eb724c251e6b41e21a48b0f9d5450046cc1cb611349b9b9020e930211fc78",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "verify",
+            "step_index": 6,
+            "command_sha256": "6b90477a54d2d287c5673527678d64eb189b23c5c90862ce4cc0121ca999d0e6",
+            "bash_n_returncode": 0
+          }
+        ],
+        "fail_fast": null
+      },
+      {
+        "path": ".github/workflows/tests.yml",
+        "sha256": "5ecfef341423967c01c9f5c4c34ffe4acd08db1c16f079d7ccf85886009c5031",
+        "yaml_parsed": true,
+        "runs": [
+          {
+            "job": "exact-tests",
+            "step_index": 2,
+            "command_sha256": "6a5de81a3bdf4c36ff21b04aa703e839b66e2cd880021eb86d049e61c35369c6",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "exact-tests",
+            "step_index": 3,
+            "command_sha256": "f8d695a456049b0d3853dd4fba135751af3908029c215bdc0e530f186a1e0153",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "exact-tests",
+            "step_index": 4,
+            "command_sha256": "444e3e73cf0421e8191da8b316890cca79d954ed7c57c13e4803a21a38c84e2f",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "exact-tests",
+            "step_index": 5,
+            "command_sha256": "e624d7803d0c0a14ca2ca50aa9bc4e687c1b08485a742020b63ebf5bda210463",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "exact-tests",
+            "step_index": 6,
+            "command_sha256": "abe4977b82b958133a2e802ba3276cf50523006256f029d714c7836dc698ff78",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "exact-tests",
+            "step_index": 7,
+            "command_sha256": "89a901153845f9dd64bd4e913c5a210c267564a939c0edded14f0d051aefd2bb",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "exact-tests",
+            "step_index": 8,
+            "command_sha256": "65186b495dee99da8f1d826b5e0637ba40cb80937f1156f19f009b2524114f8a",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "exact-tests",
+            "step_index": 9,
+            "command_sha256": "6c6a0ea05d3639e3c1fd4dae1e6a6f604a01232354f2cfef78a293d81b1bbc83",
+            "bash_n_returncode": 0
+          },
+          {
+            "job": "exact-tests",
+            "step_index": 10,
+            "command_sha256": "ec7dd24346dfa2e651d53e2dc8d3f6e95e44516283d3b1c4b76bdd97cf54fd63",
+            "bash_n_returncode": 0
+          }
+        ],
+        "fail_fast": false
+      }
+    ]
+  },
+  "source_sha256": {
+    ".github/workflows/tests.yml": "5ecfef341423967c01c9f5c4c34ffe4acd08db1c16f079d7ccf85886009c5031",
+    "research/strict-sampler-checkpoints/proc-observer-v2/manifest.json": "4c1da0311ecfb7eea1e6b938301f15cda279006c51ddbab88ea7df7cbca53bff",
+    "research/strict-sampler-checkpoints/proc-observer-v2/source/guest_entry.py": "766d040365448dd1bd3fade113355bfef1f7bf790142a31d202dd78442023620",
+    "research/strict-sampler-checkpoints/proc-observer-v2/source/install_sources.py": "0db14c9c68927fd312bdd80b46f32e0052d4dcc46f33d7b9ed37f7d17e59b526",
+    "research/strict-sampler-checkpoints/proc-observer-v2/source/live_diagnostic.py": "85a081dcdb2fde0fa299dd56afc46c605c267c2d9571ca54dfbbbbfe41388803",
+    "research/strict-sampler-checkpoints/proc-observer-v2/source/prepare_memos.py": "0b60be200d5abd065754be1da09f6d0d7b4bd9c6fc1439da5007de7763aa098d",
+    "research/strict-sampler-checkpoints/proc-observer-v2/source/strict_serial_check.py": "b5e8c0f95fdd5f6b9193c2b0537782b242d0fe0c269dae7b5a7a4c73a32cb1f0",
+    "research/strict-sampler-checkpoints/proc-observer-v2/source/test_observer.py": "262154b66576aa6db5e5c05b64d583781baeb387d3dc1e8f95eb44801fb78b7a",
+    "research/strict-sampler-checkpoints/proc-observer-v2/source/test_progress.py": "332ddce5e1f5e9bb48b6029f278ed0ace3d308395c68f655776829f13b6d6e52",
+    "research/strict-sampler-checkpoints/proc-observer-v2/source/test_supervisor.py": "d127da93fd369931383287c2f59d6c079b8417e8988f590d8a0ad77e393e36e9",
+    "research/strict-sampler-checkpoints/proc-observer-v2/source/toy_process.py": "05e992bedf3e79e0064fc16c2f818ebe1096122a071067019e7603163dfedd97",
+    "research/strict-sampler-checkpoints/proc-observer-v2/source/versioned_runner.py": "50b13329f7de7ba59f007cdc382aa317e2984d14104bda0bd37d1a9c9ecf78f3",
+    "research/strict-sampler-checkpoints/proc-observer-v2/source/vm_sampler_supervisor.py": "b645e89fe2ddd3effcb3d39d3a31b7297eddee53c3ba1266270eb4907157321e",
+    "tests/test_comparator_hash_compat.py": "7435ac80abf5cbcf5ecf745928c12f902842c0357094742c5a2318be3a3a3641",
+    "tests/test_comparator_observer.py": "48008b66489225980a88bbe046135773d1eb2b5935bb767c7c06e76efe8b99ae"
+  },
+  "artifacts": {
+    "hosted-failure-excerpt.log.gz": {
+      "sha256": "c0c089dccc8549d709c579955560bdb34db8ac01556e4bdae31cffbe0f55809c",
+      "uncompressed_sha256": "1f20938c08339bdec198fd5c000c8e9f8c56912691b8ff68eda4d76982dde781",
+      "bytes": 2513,
+      "uncompressed_bytes": 11295
+    },
+    "repaired-targeted-tests.log.gz": {
+      "sha256": "55f9263a32696791dd60a17c6618f97c89fe635a90ed06a0484f5fbd6a1ccf0d",
+      "uncompressed_sha256": "325a45012957886a9df966566214abd2631eb50caadfd4397f319ed1501f06cd",
+      "bytes": 1305,
+      "uncompressed_bytes": 6137
+    },
+    "historical-forced-missing-fixtures.log.gz": {
+      "sha256": "8561c2bb10ce22daa6bb351018326e6b82c9c6052dc1a645dd08cbd3bea72559",
+      "uncompressed_sha256": "0a71cebe89be57e25e540ddeec546dab4bc2fbfa7d96ddeeb3b44d2e880045a5",
+      "bytes": 2029,
+      "uncompressed_bytes": 12954
+    },
+    "repaired-forced-missing-fixtures.log.gz": {
+      "sha256": "5e77919ee34684ea165432a35bcefe7991be539dce571c34d5100eb26c8fa893",
+      "uncompressed_sha256": "d1b147f6e185958e609e7a86c15ba27edb0aa5b6e47f080de1d05be0e532781f",
+      "bytes": 1040,
+      "uncompressed_bytes": 5244
+    }
+  },
+  "sanitization": "Machine-specific checkout, runner-interpreter and temporary roots replaced by placeholders; hosted artifact is an explicitly selected excerpt. No private patch, setup transcripts, credentials or unrelated memo included.",
+  "limits": [
+    "No local full suite rerun after this targeted fix",
+    "No successful repaired hosted run claimed; canceled matrix lanes are not passes",
+    "No Lean/auditor/claims or canonical Makefile changes in this repair",
+    "Hash adapter supports these ordinary blocking binary fixture files; live acceptance/control/source checks remain unchanged",
+    "The earlier 468-test receipts and 125-entry historical source manifest remain unmodified"
+  ]
+}
