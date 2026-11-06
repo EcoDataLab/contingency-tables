@@ -17,7 +17,8 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install the complete test environment
-        run: python -m pip install --only-binary=:all: -e '.[test]'
+        run: |
+          python -m pip install --only-binary=:all: -e '.[test]'
       - name: Run all Python tests, including the SciPy random_table lane
         run: make PYTHON=python test
       - name: Check the saved claims and README summary
