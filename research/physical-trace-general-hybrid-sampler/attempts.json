@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralHybridSampler",
+  "verified_attempt": "attempt-02",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "b27b8c05cff4d4d9b9e7f712b895569823267d0c7c33a5e65472192a96547ae9",
+      "compile_returncode": 1,
+      "compile_seconds": 40.009005000349134,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "a8c0740ad70ce8698516b87caef0d191f3b319ce165c689ed8de1eaeb73bf818",
+      "compile_returncode": 0,
+      "compile_seconds": 35.32977033266798,
+      "audit_returncode": 0,
+      "audit_seconds": 170.11490491684526,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

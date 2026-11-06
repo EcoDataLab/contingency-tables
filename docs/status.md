@@ -1,6 +1,29 @@
 # Research status
 
-24 October 2026: the [corrected reference-branch table law](corrected-reference-sampler.md)
+6 November 2026: the [all-input finite-word sampler](hybrid-finite-word-sampler.md)
+now derives its reference start, fallback, retry count and both precisions.
+It uses the stronger trace on the computed reduced reference branch,
+zero-bit deterministic output, and the existing checked sampler for the
+remaining shapes. For every equal-total natural margin pair and natural t,
+every finite word yields a feasible original table and uniform-word error
+is at most 2^-t, including zeros and empty dimensions. The improved correction
+allowance is s>=1/(4p); the actual schedule uses
+A=min(2p(p-1),4p), R=A(t+1), h=k=t+2+clog2 R. Its retries never exceed the
+initial safe schedule. Eight modules compiled and passed full assumption
+audits, with separate AI source/evidence review. The typed map retains
+noncomputable semantic components. Revised encoded execution, charged costs
+and strict Comparator acceptance remain open; no spectral-gap or complete
+runtime exponent changed.
+
+Four further [executable code correspondences](sampler-code-correspondence.md)
+now pass compilation, full assumption audits and separate AI review:
+initialization, raw neighbor selection, terminal correction and retained
+completion reconstruction. The full initializer is computed from the input
+lists; the retained source matrix is reconstructed from state and residual
+codes. Raw label/coarse-margin wrappers and complete program composition
+remain, followed by encoded realization and cost analysis.
+
+24 October 2026 checkpoint (superseded by the typed integration above): the [corrected reference-branch table law](corrected-reference-sampler.md)
 now connects the stronger trace to ordinary output on the original ordered
 margin lists. The literal inverse counter, bounded coin and scheduled joint
 draw give whole-trial error `2^-h+2^-k`. Fresh independent retries and exact

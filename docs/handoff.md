@@ -1,6 +1,29 @@
 # Contributor handoff
 
-24 October 2026: the [corrected reference-branch table law](corrected-reference-sampler.md)
+6 November 2026: the [all-input finite-word sampler](hybrid-finite-word-sampler.md)
+now derives its reference start, fallback, retry count and both precisions.
+It uses the stronger trace on the computed reduced reference branch,
+zero-bit deterministic output, and the existing checked sampler for the
+remaining shapes. For every equal-total natural margin pair and natural t,
+every finite word yields a feasible original table and uniform-word error
+is at most 2^-t, including zeros and empty dimensions. The improved correction
+allowance is s>=1/(4p); the actual schedule uses
+A=min(2p(p-1),4p), R=A(t+1), h=k=t+2+clog2 R. Its retries never exceed the
+initial safe schedule. Eight modules compiled and passed full assumption
+audits, with separate AI source/evidence review. The typed map retains
+noncomputable semantic components. Revised encoded execution, charged costs
+and strict Comparator acceptance remain open; no spectral-gap or complete
+runtime exponent changed.
+
+Four further [executable code correspondences](sampler-code-correspondence.md)
+now pass compilation, full assumption audits and separate AI review:
+initialization, raw neighbor selection, terminal correction and retained
+completion reconstruction. The full initializer is computed from the input
+lists; the retained source matrix is reconstructed from state and residual
+codes. Raw label/coarse-margin wrappers and complete program composition
+remain, followed by encoded realization and cost analysis.
+
+24 October 2026 checkpoint (superseded by the typed integration above): the [corrected reference-branch table law](corrected-reference-sampler.md)
 now connects the stronger trace to ordinary output on the original ordered
 margin lists. The literal inverse counter, bounded coin and scheduled joint
 draw give whole-trial error `2^-h+2^-k`. Fresh independent retries and exact
@@ -49,17 +72,16 @@ mathematical argument; the physical theorem still needs Lean formalization.
 
 Next integration tasks:
 
-1. Construct a reduced defect start and feasible fallback. Use the actual
-   inverse construction and positive c0 with a feasible ordinary-table
-   construction; handle empty support explicitly.
-2. Choose R and the two trial precisions for a requested outer accuracy from
-   [the checked reference bound](corrected-reference-sampler.md). Realize
-   fresh retries as a finite-word program, then assemble the deterministic,
-   no-small and unit branches. Positive filtering, reference guards, the
-   literal inverse counter and exact zero restoration are now connected.
-3. Identify the revised encoded outer program and prove its charged costs.
-   Typed laws, program realization, machine time and strict Comparator
-   acceptance remain distinct. No newer complete-machine exponent is proved.
+1. Compose the checked computational initializer, raw neighbors and
+   retained repair/correction components into a full reference trial.
+   Finish ordered-label and raw coarse-margin wrappers; reuse existing
+   coarseRows_code/coarseColumns_code rather than reprove feasibility.
+2. Compose that pointwise code correspondence with the existing fresh-word
+   retry and ordered zero-restoration code. The typed all-branch accuracy
+   theorem can then transfer without repeating the probability argument.
+3. Supply a revised encoded realizer and charged-cost composition; compare
+   a concrete composed quantity with upstream. New-scale unit/no-small
+   algorithms can replace the current checked legacy fallback separately.
 
 Keep the original compiled d¹⁷ route and its receipts distinct. It re-proves
 upstream's existential bounded-sampling statement. Both packed-trial cost

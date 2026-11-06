@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralRawNeighbors",
+  "verified_attempt": "attempt-04",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "80e705aa0542f3153822ccd858e78ee21266895d16fcb696757cd31cc8acb74a",
+      "compile_returncode": 1,
+      "compile_seconds": 47.77199083333835,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "376ddf7dbcda30f2ccc5414c2fbaaf422a27ab913250139aa29ab0ff3dff6fdc",
+      "compile_returncode": 1,
+      "compile_seconds": 26.984984667040408,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-03",
+      "source_sha256": "7877663efd310236459b9c7bd88fc9499c565e859a2e96d0343fd291cb97c0be",
+      "compile_returncode": 1,
+      "compile_seconds": 32.74734295811504,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-04",
+      "source_sha256": "cd9d79a6430878889956f79613d2215f82c64804a57cb8dbe06f20006d5a3834",
+      "compile_returncode": 0,
+      "compile_seconds": 77.5513003342785,
+      "audit_returncode": 0,
+      "audit_seconds": 76.61512437509373,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

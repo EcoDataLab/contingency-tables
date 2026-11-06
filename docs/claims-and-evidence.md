@@ -11,6 +11,41 @@ bindings for the six Lean headlines in that earlier default target. It also pres
 claims and hypotheses from the hash-qualified ledger snapshot. Historical named
 receipts retain their narrower scope.
 
+## physical-trace-hybrid-sampler
+
+The [all-input finite-word sampler](hybrid-finite-word-sampler.md) supplies
+its actual reduced start, feasible fallback and accuracy settings internally.
+Its flat word uses disjoint complete trial blocks. The dispatcher uses the
+new reference map on that computed branch, zero-bit deterministic output,
+and the checked legacy backend at its own scales elsewhere. Equal original
+natural-margin totals and natural t suffice for every-word feasibility and
+TV<=2^-t, including empty lists and zero margins. Eight additive modules and
+all selected headline closures compiled/audited; separate AI review passed.
+The typed map includes noncomputable semantic components. Encoded program
+correspondence, revised machine costs and strict Comparator remain separate.
+
+## physical-trace-linear-retry
+
+The checked incidence identity `p+a*b=n*a+m*b` gives `p-1<=2*c0` and therefore
+`s>=1/(4p)`. The actual schedule chooses `A=min(2p(p-1),4p)`, `R=A(t+1)` and
+`h=k=t+2+clog2 R`. The block is at most 4p, attempts never exceed the earlier
+safe schedule, and the failure plus both accumulated draw errors fit 2^-t.
+This changes the outer retry allowance, not the spectral gap or a proved
+machine-time exponent. Exact statements, hypotheses and receipts are linked
+in the [sampler guide](hybrid-finite-word-sampler.md).
+
+## physical-trace-code-components
+
+The [executable component correspondences](sampler-code-correspondence.md)
+cover full reference initialization, raw rational-clock neighbor selection,
+terminal correction and retained-completion reconstruction. Their ordinary
+computational definitions agree pointwise with the typed maps on each
+stated valid input. The complete initializer needs no supplied table,
+start or labels. Terminal ordered labels and raw coarse-margin wrappers,
+then the whole accepted trace/trial/outer program, remain separate seams.
+All four packets compile and pass complete assumption audits and separate
+AI review. No additional probability error or runtime result is claimed.
+
 ## physical-trace-walk
 
 The [scheduled literal program](../research/physical-trace-schedule/) now
@@ -41,8 +76,9 @@ padding test, with fixed-label recovery and exact repadding. This map works
 at arbitrary natural scales when an actual input exists. The separately
 checked ideal correction below now supplies its inverse count and accepted
 output law. The corrected-reference claim below now composes the finite-word
-correction, fresh retries and original-table restoration. Initialization,
-other branches and encoded costs remain open.
+correction, fresh retries and original-table restoration. The later hybrid
+claim above supplies initialization, automatic budgets and all typed branches;
+revised encoded execution and costs remain open.
 
 Every linked module has ordinary compilation and full headline-closure
 audits with standard axioms and trusted imports. Separate AI source review
@@ -60,9 +96,10 @@ is charged before independent retries. Ordered positive filtering and the
 computed reference tag discharge positivity, cutoff and catalog guards;
 exact zero restoration adds no error. Equal original totals, a reduced actual
 defect start and feasible reduced fallback remain inputs; R,h,k are supplied.
-This is a typed finite-word trial and retry-law composition. Initialization,
-automatic outer budgets, other branches, encoded realization and charged
-costs remain open. All six new modules have ordinary compilation and full
+This historical component is a typed trial and retry-law composition. The
+later hybrid claim supplies initialization, automatic budgets, flat retry
+words and all typed branches; encoded realization and charged costs remain
+open. All six new modules have ordinary compilation and full
 assumption audits plus separate AI source review. Historical Linux and
 strict Comparator evidence are unchanged.
 
@@ -88,8 +125,8 @@ the compiler and reused imports remain trusted. The exact count is a finite
 label sum, not yet the compact `D0+abuv` factorization. A supplied nonempty
 joint is not an initializer. The subsequent corrected-reference claim composes
 bounded acceptance, approximate input errors, retries and zero restoration.
-Initialization, other branches and encoded realization remain separate; no
-complete sampler or runtime exponent changes.
+Initialization and all typed branches are now supplied by the later hybrid
+claim; revised encoded realization and runtime remain separate.
 
 ## aggregate-actual-gap
 

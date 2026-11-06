@@ -1,0 +1,36 @@
+--- initial.lean
++++ checked.lean
+@@ -14 +14 @@
+-open ProfilePrograms SmallGraphProfiles SmallContextCoordinates FirstPaperProfiles
++open ProfilePrograms SmallContextCoordinates FirstPaperProfiles
+@@ -22 +22 @@
+-  let j := StackAddition.value (List.ofFn word)
++  let j := OAI.MatchingFPRAS.StackAddition.value (List.ofFn word)
+@@ -48 +48,3 @@
+-  simp only [rawClockIntervalTrial, intervalWordTrial, intervalTrial, bitValue_eq_word]
++  let choose : ℕ → Option (Fin V) := fun j =>
++    if hj : j < V then some ⟨j, hj⟩ else none
++  exact congrArg choose (ProfilePrograms.bitValue_eq_word (precision V) word)
+@@ -52 +54,5 @@
+-  simp only [rawClockIndex, cappedIndex, rawClockIntervalTrial_eq]
++  have he : rawClockIntervalTrial V = intervalWordTrial V :=
++    funext (rawClockIntervalTrial_eq V)
++  unfold rawClockIndex cappedIndex
++  rw [he]
++  rfl
+@@ -72 +78 @@
+-      codeNeighbors (codeCheckData (computedCatalog r c U) (List.ofFn r) (List.ofFn c)
++      codeNeighbors (SmallGraphProfiles.codeCheckData (computedCatalog r c U) (List.ofFn r) (List.ofFn c)
+@@ -88 +94 @@
+-    (codeNeighbors (codeCheckData (computedCatalog r c U) (List.ofFn r) (List.ofFn c)
++    (codeNeighbors (SmallGraphProfiles.codeCheckData (computedCatalog r c U) (List.ofFn r) (List.ofFn c)
+@@ -96 +102 @@
+-    rawNeighborLookup (codeCheckData (computedCatalog r c U) (List.ofFn r) (List.ofFn c)
++    rawNeighborLookup (SmallGraphProfiles.codeCheckData (computedCatalog r c U) (List.ofFn r) (List.ofFn c)
+@@ -109 +115 @@
+-      (codeCheckData (computedCatalog r c U) (List.ofFn r) (List.ofFn c)
++      (SmallGraphProfiles.codeCheckData (computedCatalog r c U) (List.ofFn r) (List.ofFn c)
+@@ -112 +118,2 @@
+-  rw [rawClockNeighborDraw, rawClockIndex_eq]
++  unfold rawClockNeighborDraw
++  rw [rawClockIndex_eq]

@@ -1,0 +1,60 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean:98:23: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  l ≥ 0
+  k ≥ 0
+  g ≥ 0
+  g - k ≤ -1
+  f ≥ 0
+  f - g + k ≥ 0
+  f ≥ 0
+  e ≥ 0
+  d ≥ 0
+  d - l ≥ 1
+  b ≥ 0
+  b - e ≤ -1
+where
+ b := ↑↑(↑(terminalRepairLabels r c U L a.fst).2).1
+ d := ↑n
+ e := ↑m
+ f := ↑(((↑↑a.snd).1 i j +
+      if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).1).2 then 1
+      else 0) -
+    if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).2).2 then 1
+    else 0)
+ g := ↑(if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).1).2 then 1
+  else 0)
+ k := ↑(if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).2).2 then 1
+  else 0)
+ l := ↑↑(↑(terminalRepairLabels r c U L a.fst).2).2
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean:98:23: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  o ≥ 0
+  l ≥ 0
+  k ≥ 0
+  k - o ≥ 1
+  g ≥ 0
+  g - k ≤ -1
+  g - o ≤ -1
+  f ≥ 0
+  f - l ≤ -1
+  e ≥ 0
+  d ≥ 0
+  d - e ≤ -2
+  b ≥ 0
+  b - d + e ≥ 1
+  b ≥ 0
+where
+ b := ↑(((↑↑a.snd).1 i j +
+      if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).1).2 then 1
+      else 0) -
+    if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).2).2 then 1
+    else 0)
+ d := ↑(if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).1).2 then 1
+  else 0)
+ e := ↑(if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).2).2 then 1
+  else 0)
+ f := ↑↑(↑(terminalRepairLabels r c U L a.fst).2).1
+ g := ↑↑(↑(terminalRepairLabels r c U L a.fst).2).2
+ k := ↑n
+ l := ↑m
+ o := ↑↑(↑(terminalRepairLabels r c U L a.fst).1).2

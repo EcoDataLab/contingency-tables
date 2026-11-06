@@ -1,5 +1,11 @@
 # Corrected reference-branch table sampler
 
+This page records the October component checkpoint. The November
+[all-input finite-word sampler](hybrid-finite-word-sampler.md) now supplies
+initialization and automatic settings, realizes the flat retry word and
+covers all branches. The component statements below keep their original
+hypotheses and evidence scope.
+
 The reference branch connects the stronger trace to ordinary-table output:
 ordered positive-margin lists, the recomputed cutoff and branch guards,
 the scheduled joint draw, actual repair and padding test, a literal inverse

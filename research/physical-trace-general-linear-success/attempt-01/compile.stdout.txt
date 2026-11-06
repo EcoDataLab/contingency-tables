@@ -1,0 +1,38 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean:20:18: error(lean.unknownIdentifier): Unknown identifier `Cells`
+
+Note: It is not possible to treat `Cells` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean:37:14: error(lean.unknownIdentifier): Unknown identifier `Cells`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean:61:29: warning: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.mul_zero, Nat.add_zero, Nat.zero_add] at hcount
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean:61:53: warning: This simp argument is unused:
+  Nat.zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.mul_zero, zero_mul, Nat.add_zero] at hcount
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean:73:18: error(lean.unknownIdentifier): Unknown identifier `Cells`
+
+Note: It is not possible to treat `Cells` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean:81:27: error(lean.unknownIdentifier): Unknown identifier `Cells`
+
+Note: It is not possible to treat `Cells` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean:87:25: error(lean.unknownIdentifier): Unknown identifier `Cells`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean:89:21: error: Type mismatch
+  (positiveTraceReference_conditions xs ys hb).right.right.left
+has type
+  2 ≤
+    Fintype.card
+      (SmallContextCoordinates.Cells
+        (firstPaperSmall (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys)))
+but is expected to have type
+  2 ≤ p
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean:92:36: error: mod_cast has type
+  (1 : ℕ) < p
+but is expected to have type
+  (0 : ℤ) < Int.subNatNat p 1

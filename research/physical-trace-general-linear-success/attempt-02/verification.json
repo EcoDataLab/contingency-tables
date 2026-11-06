@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "71ea4ee9926e2e5248ab218261efb0c058f1b2cd",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralLinearSuccess"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralLinearSuccess",
+      "source": "research/physical-trace-general-linear-success/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean",
+      "source_sha256": "94e2c1a1cdc6e41c5a556e2bfc2c9e0711a0bf4974b553f62e550104b2479888",
+      "returncode": 0,
+      "seconds": 21.947800250258297,
+      "olean_sha256": "2876b861efde9933e1a405c57872cbad0645bb404424926f9e865d40aef55b7d"
+    }
+  ],
+  "audit_seconds": 39.698120874818414,
+  "audit_sha256": "4fbafa8bab78e7d22bb9872520a97c8808ca6a1eb45fb6f1b44704f503d2857d",
+  "audit_driver_sha256": "94fce26e87733568198dda74725d6078f99d47dacd7be4a2801be2a4702a868c",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "520042dc791c63c4e7224d9cea57a3117a5a84437c0c2454fb815b202692a188",
+  "declaration_count": 15,
+  "theorem_count": 15,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.smallCell_card_incidence",
+      "closure_size": 4022,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U : ℕ),\n  Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)) +\n      Fintype.card (Math115.PhysicalTraceJoin.RepairSmallRows r U) *\n        Fintype.card (Math115.PhysicalTraceJoin.RepairSmallColumns c U) =\n    n * Fintype.card (Math115.PhysicalTraceJoin.RepairSmallRows r U) +\n      m * Fintype.card (Math115.PhysicalTraceJoin.RepairSmallColumns c U)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.inverseSupportAllowance_twice",
+      "closure_size": 4154,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U : ℕ),\n  Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)) -\n      1 ≤\n    2 * Math115.PhysicalTraceJoin.inverseSupportAllowance r c U",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceCorrectionSuccess_linear",
+      "closure_size": 7843,
+      "statement": "∀ (xs ys : List ℕ),\n  Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference →\n    have p :=\n      Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall (Math115.PhysicalTraceJoin.filteredMargin xs)\n            (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys)));\n    1 / (4 * ↑p) ≤ Math115.PhysicalTraceJoin.positiveTraceCorrectionSuccess xs ys",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

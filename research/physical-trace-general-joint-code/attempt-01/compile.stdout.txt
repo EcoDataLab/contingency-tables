@@ -1,0 +1,118 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralJointCode.lean:59:55: error: Ambiguous term
+  computedCellEquiv_catalog
+Possible interpretations:
+  PhysicalComputedProposal.computedCellEquiv_catalog : ∀ (r : Fin ?m.82 → ℕ) (c : Fin ?m.83 → ℕ) (U : ℕ),
+    cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U) =
+      PhysicalComputedProposal.computedCatalog r c U
+
+  SmallGraphProfiles.computedCellEquiv_catalog : ∀ (r : Fin ?m.82 → ℕ) (c : Fin ?m.83 → ℕ),
+    cellCatalog (paperSmall r c) (SmallGraphProfiles.computedCellEquiv r c) = SmallGraphProfiles.computedCatalog r c
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralJointCode.lean:59:82: error: Ambiguous term
+  computedCatalog
+Possible interpretations:
+  PhysicalComputedProposal.computedCatalog : (Fin ?m.82 → ℕ) → (Fin ?m.83 → ℕ) → ℕ → List (ℕ × ℕ)
+
+  SmallGraphProfiles.computedCatalog : (Fin ?m.82 → ℕ) → (Fin ?m.83 → ℕ) → List (ℕ × ℕ)
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralJointCode.lean:58:72: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+a : DefectJoint r c U L
+⊢ (((smallCellCatalog ((List.ofFn r, List.ofFn c), U), computedStateCode r c U L ↑a.fst), largeIndices (U, List.ofFn r),
+        largeIndices (U, List.ofFn c)),
+      (U, 0), tableOutput (listedTable r c U L hr hc (↑a.fst) a.snd)) =
+    (((cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U), computedStateCode r c U L ↑a.fst),
+        largeIndices (U, List.ofFn r), largeIndices (U, List.ofFn c)),
+      (U, 0), tableOutput (listedTable r c U L hr hc (↑a.fst) a.snd))
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralJointCode.lean:92:19: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralJointCode.lean:92:19: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  if
+      List.idxOf (↑↑((largeOptionEquiv r U hr) i), ↑↑((largeOptionEquiv c U hc) j))
+          (cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U)) <
+        (cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U)).length then
+    ?m.180
+  else ?m.181
+in the target expression
+  (if
+        outputCellPosition
+            ((((cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U), computedStateCode r c U L ↑a.fst),
+                  largeIndices (U, List.ofFn r), largeIndices (U, List.ofFn c)),
+                (U, 0), tableOutput (listedTable r c U L hr hc (↑a.fst) a.snd)),
+              ↑↑((largeOptionEquiv r U hr) i), ↑↑((largeOptionEquiv c U hc) j)) <
+          ((((cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U), computedStateCode r c U L ↑a.fst),
+                          largeIndices (U, List.ofFn r), largeIndices (U, List.ofFn c)),
+                        (U, 0), tableOutput (listedTable r c U L hr hc (↑a.fst) a.snd)),
+                      ↑↑((largeOptionEquiv r U hr) i), ↑↑((largeOptionEquiv c U hc) j)).1.1.1.1.length then
+      outputSmallEntry
+        ((((cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U), computedStateCode r c U L ↑a.fst),
+              largeIndices (U, List.ofFn r), largeIndices (U, List.ofFn c)),
+            (U, 0), tableOutput (listedTable r c U L hr hc (↑a.fst) a.snd)),
+          ↑↑((largeOptionEquiv r U hr) i), ↑↑((largeOptionEquiv c U hc) j))
+    else
+      outputLargeEntry
+        ((((cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U), computedStateCode r c U L ↑a.fst),
+              largeIndices (U, List.ofFn r), largeIndices (U, List.ofFn c)),
+            (U, 0), tableOutput (listedTable r c U L hr hc (↑a.fst) a.snd)),
+          ↑↑((largeOptionEquiv r U hr) i), ↑↑((largeOptionEquiv c U hc) j))) =
+    (↑↑a.snd).1 ↑((largeOptionEquiv r U hr) i) ↑((largeOptionEquiv c U hc) j)
+
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+a : DefectJoint r c U L
+i : Option (Fin (tailCount r U))
+j : Option (Fin (tailCount c U))
+hs : small ↑((largeOptionEquiv r U hr) i) ↑((largeOptionEquiv c U hc) j) = false
+hnot :
+  (↑(↑((largeOptionEquiv r U hr) i), ↑((largeOptionEquiv c U hc) j)).1,
+      ↑(↑((largeOptionEquiv r U hr) i), ↑((largeOptionEquiv c U hc) j)).2) ∉
+    cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U)
+hpos :
+  List.idxOf
+      (↑(↑((largeOptionEquiv r U hr) i), ↑((largeOptionEquiv c U hc) j)).1,
+        ↑(↑((largeOptionEquiv r U hr) i), ↑((largeOptionEquiv c U hc) j)).2)
+      (cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U)) =
+    (cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U)).length
+hbad :
+  ¬List.idxOf (↑↑((largeOptionEquiv r U hr) i), ↑↑((largeOptionEquiv c U hc) j))
+        (cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U)) <
+      (cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U)).length
+⊢ (if
+        outputCellPosition
+            ((((cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U), computedStateCode r c U L ↑a.fst),
+                  largeIndices (U, List.ofFn r), largeIndices (U, List.ofFn c)),
+                (U, 0), tableOutput (listedTable r c U L hr hc (↑a.fst) a.snd)),
+              ↑↑((largeOptionEquiv r U hr) i), ↑↑((largeOptionEquiv c U hc) j)) <
+          ((((cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U), computedStateCode r c U L ↑a.fst),
+                          largeIndices (U, List.ofFn r), largeIndices (U, List.ofFn c)),
+                        (U, 0), tableOutput (listedTable r c U L hr hc (↑a.fst) a.snd)),
+                      ↑↑((largeOptionEquiv r U hr) i), ↑↑((largeOptionEquiv c U hc) j)).1.1.1.1.length then
+      outputSmallEntry
+        ((((cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U), computedStateCode r c U L ↑a.fst),
+              largeIndices (U, List.ofFn r), largeIndices (U, List.ofFn c)),
+            (U, 0), tableOutput (listedTable r c U L hr hc (↑a.fst) a.snd)),
+          ↑↑((largeOptionEquiv r U hr) i), ↑↑((largeOptionEquiv c U hc) j))
+    else
+      outputLargeEntry
+        ((((cellCatalog small (PhysicalComputedProposal.computedCellEquiv r c U), computedStateCode r c U L ↑a.fst),
+              largeIndices (U, List.ofFn r), largeIndices (U, List.ofFn c)),
+            (U, 0), tableOutput (listedTable r c U L hr hc (↑a.fst) a.snd)),
+          ↑↑((largeOptionEquiv r U hr) i), ↑↑((largeOptionEquiv c U hc) j))) =
+    (↑↑a.snd).1 ↑((largeOptionEquiv r U hr) i) ↑((largeOptionEquiv c U hc) j)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    i
+  has type
+    Option (Fin (tailCount r U))
+  but is expected to have type
+    Option (Fin ((largeIndices (U, List.ofFn r)).length - 1))
+  in the application
+    (largeOptionEquiv r U hr) i

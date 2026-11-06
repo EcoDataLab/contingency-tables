@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "71ea4ee9926e2e5248ab218261efb0c058f1b2cd",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralRetryWord"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralRetryWord",
+      "source": "research/physical-trace-general-retry-word/formal/ResearchPhysicalTraceJoin/GeneralRetryWord.lean",
+      "source_sha256": "23a7e75d4044a219bba5827e652789bba68b1702a3696b0f976b883426ad3477",
+      "returncode": 0,
+      "seconds": 17.31941350037232,
+      "olean_sha256": "f68c58da48a64b326a87b83b33718e21d899e9cc8e472c48981ac0c2e1c77b74"
+    }
+  ],
+  "audit_seconds": 129.68070149980485,
+  "audit_sha256": "3cdf55d1acfbbca80ebf1ef638ffcb4f772441d14f795e497db45e00214f7ac1",
+  "audit_driver_sha256": "eede8f6c1c927ad6fc49dc889b20d84a44a8a7566d6cd5d450b113434f30a0b4",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "be81ab7b4682b622750f308d2baaff17b027069678a537ae407e1b042d4a8538",
+  "declaration_count": 9,
+  "theorem_count": 6,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalCorrectedRetryWordLaw_eq",
+      "closure_size": 43966,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (h k : ℕ) (fallback : OAI.ContingencyTables.Table r c)\n  (R : ℕ),\n  Math115.PhysicalTraceJoin.terminalCorrectedRetryWordLaw r c U L hr hc start h k fallback R =\n    Math115.PhysicalTraceJoin.terminalCorrectedRetryLaw r c U L hr hc start h k fallback R",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalCorrectedRetryWord_accuracy_of_success",
+      "closure_size": 45284,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  [inst : Nonempty (Math115.PhysicalDefectTrace.DefectVertices r c U L)],\n  ∑ i, r i = ∑ j, c j →\n    2 ≤ U →\n      7 ≤ L →\n        2 ≤\n            Fintype.card\n              (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)) →\n          (∀ (i : Fin m), 0 < r i) →\n            (∀ (j : Fin n), 0 < c j) →\n              ∀ (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (h k : ℕ)\n                (fallback : OAI.ContingencyTables.Table r c) (R : ℕ),\n                ∀ s ≤ 1 - (Math115.PhysicalTraceJoin.terminalIdealCorrectedLaw r c U L).mass none,\n                  OAI.ContingencyTables.FirstSuccess.variation\n                      (Math115.PhysicalTraceJoin.terminalCorrectedRetryWordLaw r c U L hr hc start h k fallback R)\n                      OAI.ContingencyTables.FirstSuccess.uniformLaw ≤\n                    (1 - s) ^ R + ↑R * (Math115.CompletionRetryBudget.dyadic h + Math115.CompletionRetryBudget.dyadic k)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

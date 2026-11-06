@@ -1,0 +1,84 @@
+--- initial.lean
++++ checked.lean
+@@ -27,2 +27,2 @@
+-  matrixCode (fun i : Fin rs.length => fun j : Fin cs.length =>
+-    correctionRepairEntry A s t i.val j.val)
++  (List.range rs.length).map (fun i => (List.range cs.length).map (fun j =>
++    correctionRepairEntry A s t i j))
+@@ -32,2 +32,2 @@
+-  decide (∀ i : Fin rs.length, ∀ j : Fin cs.length,
+-    smallCellTest (((rs,cs),U),(i.val,j.val)) = false → L ≤ matrixEntry (A,(i.val,j.val)))
++  (List.range rs.length).all (fun i => (List.range cs.length).all (fun j =>
++    decide (smallCellTest (((rs,cs),U),(i,j)) = false → L ≤ matrixEntry (A,(i,j)))))
+@@ -36,3 +36,2 @@
+-  matrixCode (fun i : Fin rs.length => fun j : Fin cs.length =>
+-    matrixEntry (A,(i.val,j.val)) -
+-      (if smallCellTest (((rs,cs),U),(i.val,j.val)) then 0 else L))
++  (List.range rs.length).map (fun i => (List.range cs.length).map (fun j =>
++    matrixEntry (A,(i,j)) - (if smallCellTest (((rs,cs),U),(i,j)) then 0 else L)))
+@@ -74,0 +74,11 @@
++private lemma correction_map_range {A : Type} (N : ℕ) (f : ℕ → A) :
++    (List.range N).map f = List.ofFn (fun i : Fin N => f i.val) := by
++  apply List.ext_getElem
++  · simp only [List.length_map, List.length_range, List.length_ofFn]
++  · intro k hk hk'
++    simp only [List.getElem_map, List.getElem_range, List.getElem_ofFn]
++
++private lemma correction_nat_transfer (x y a b : ℕ)
++    (h : (x : ℤ) = (y : ℤ) + (b : ℤ) - (a : ℤ)) : (x + a) - b = y := by
++  omega
++
+@@ -80,3 +90,7 @@
+-  simp only [List.length_ofFn]
+-  apply congrArg matrixCode
+-  funext i j
++  rw [List.length_ofFn, List.length_ofFn, correction_map_range]
++  change List.ofFn _ = List.ofFn _
++  apply congrArg List.ofFn
++  funext i
++  rw [correction_map_range]
++  apply congrArg List.ofFn
++  funext j
+@@ -88 +102,8 @@
+-  split_ifs at h ⊢ <;> omega
++  have h' : (a.2.val.val.1 i j : ℤ) =
++      ((terminalRepairedTable r c U L a).val.val i j : ℤ) +
++        ((if i.val = (terminalRepairLabels r c U L a.1).2.val.1.val ∧
++          j.val = (terminalRepairLabels r c U L a.1).2.val.2.val then 1 else 0 : ℕ) : ℤ) -
++        ((if i.val = (terminalRepairLabels r c U L a.1).2.val.1.val ∧
++          j.val = (terminalRepairLabels r c U L a.1).1.val.2.val then 1 else 0 : ℕ) : ℤ) := by
++    simpa only [Nat.cast_ite, Nat.cast_one, Nat.cast_zero] using h
++  exact correction_nat_transfer _ _ _ _ h'
+@@ -93,2 +114,13 @@
+-  simp only [correctionPaddingTest, List.length_ofFn, decide_eq_true_eq,
+-    listedSmallCellTest_code, matrixEntry_code]
++  simp only [correctionPaddingTest, List.all_eq_true, List.mem_range,
++    List.length_ofFn, decide_eq_true_eq]
++  constructor
++  · intro h i j
++    have hz := h i.val i.isLt j.val j.isLt
++    simpa only [listedSmallCellTest_code, matrixEntry_code] using hz
++  · intro h i hi j hj
++    let ii : Fin m := ⟨i,hi⟩
++    let jj : Fin n := ⟨j,hj⟩
++    change smallCellTest (((List.ofFn r,List.ofFn c),U),(ii.val,jj.val)) = false →
++      L ≤ matrixEntry (matrixCode Y,(ii.val,jj.val))
++    rw [listedSmallCellTest_code, matrixEntry_code]
++    exact h ii jj
+@@ -101,3 +133,7 @@
+-  simp only [List.length_ofFn]
+-  apply congrArg matrixCode
+-  funext i j
++  rw [List.length_ofFn, List.length_ofFn, correction_map_range]
++  change List.ofFn _ = List.ofFn _
++  apply congrArg List.ofFn
++  funext i
++  rw [correction_map_range]
++  apply congrArg List.ofFn
++  funext j
+@@ -118 +154 @@
+-    simp only [hp, ite_true, terminalPartialRepair, dif_pos h, Option.map_some]
++    simp only [hp, ite_true, terminalPartialRepair, dite_eq_left h, Option.map_some]
+@@ -123 +159 @@
+-    simp only [hp, Bool.false_eq_true, ite_false, terminalPartialRepair, dif_neg h, Option.map_none]
++    simp only [hp, Bool.false_eq_true, ite_false, terminalPartialRepair, dite_eq_right h, Option.map_none]

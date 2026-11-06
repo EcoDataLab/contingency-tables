@@ -1,5 +1,12 @@
 # Zero-margin preprocessing and reduced trace preparation
 
+The subsequent [all-input finite-word sampler](hybrid-finite-word-sampler.md)
+now supplies the reduced reference initializer, automatic settings and
+complete typed branch dispatch on this preprocessing. Its
+[computational initializer correspondence](sampler-code-correspondence.md)
+also matches the exact ordered profile code. The component statements below
+retain their original hypotheses.
+
 24 October 2026. The [corrected reference-branch theorem](corrected-reference-sampler.md)
 now composes ordered positive filtering, recomputed scales and branch guards,
 the scheduled joint draw, literal inverse counting, bounded repair acceptance,

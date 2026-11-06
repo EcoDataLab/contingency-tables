@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "71ea4ee9926e2e5248ab218261efb0c058f1b2cd",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralHybridSampler"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralHybridSampler",
+      "source": "research/physical-trace-general-hybrid-sampler/formal/ResearchPhysicalTraceJoin/GeneralHybridSampler.lean",
+      "source_sha256": "a8c0740ad70ce8698516b87caef0d191f3b319ce165c689ed8de1eaeb73bf818",
+      "returncode": 0,
+      "seconds": 35.32977033266798,
+      "olean_sha256": "a61e4fc731cb77665928ec7f404177cede47674975f5b6105317673f0e6f01ad"
+    }
+  ],
+  "audit_seconds": 170.11490491684526,
+  "audit_sha256": "5b4ee9bd98d6d3fb0982663df94ac62196bfd83eda608acd3389aeb2376ee899",
+  "audit_driver_sha256": "e8cbccfccd4582026dde29efca9fd3014f4aa2d445a5d1d5d23b97018b771c4c",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "5f022486391ffdb8b2c79d35fbd455abefa65dd070470fc0d20f0e12a3c26432",
+  "declaration_count": 14,
+  "theorem_count": 11,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.hybridSampler_reference",
+      "closure_size": 44223,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j)\n  (hb : Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference)\n  (t : ℕ),\n  Math115.PhysicalTraceJoin.hybridSampler xs ys htotal t =\n    ⟨Math115.PhysicalTraceJoin.positiveReferenceWordWidth xs ys t,\n      Math115.PhysicalTraceJoin.positiveReferenceWord xs ys htotal hb t⟩",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.hybridWord_accuracy",
+      "closure_size": 45680,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j) (t : ℕ),\n  ↑(OAI.ContingencyTables.FirstSuccess.variation (Math115.PhysicalTraceJoin.hybridWordLaw xs ys htotal t)\n        OAI.ContingencyTables.FirstSuccess.uniformLaw) ≤\n    ↑(Math115.CompletionRetryBudget.dyadic t)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.hybridWord_feasible",
+      "closure_size": 44223,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j) (t : ℕ)\n  (bits : Fin (Math115.PhysicalTraceJoin.hybridSampler xs ys htotal t).fst → Bool),\n  OAI.ContingencyTables.HasMargins (↑((Math115.PhysicalTraceJoin.hybridSampler xs ys htotal t).snd bits))\n    (Math115.PhysicalTraceJoin.listMargin xs) (Math115.PhysicalTraceJoin.listMargin ys)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

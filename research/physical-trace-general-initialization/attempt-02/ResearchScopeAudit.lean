@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralInitialization
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralInitialization] headlines [Math115.PhysicalTraceJoin.initialization_inverseSupport_nonempty, Math115.PhysicalTraceJoin.initializationLabelSearch_isSome, Math115.PhysicalTraceJoin.positiveTraceDefect_nonempty, Math115.PhysicalTraceJoin.positiveTraceInitializedRetry_accuracy]

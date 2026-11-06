@@ -1,0 +1,15 @@
+--- initial.lean
++++ checked.lean
+@@ -31,0 +32,4 @@
++def bundledWordLaw {A : Type*} [Fintype A] [DecidableEq A]
++    (sampler : (q : ℕ) × ((Fin q → Bool) → A)) : RationalLaw A :=
++  mapLaw (uniformLaw (α := Fin sampler.1 → Bool)) sampler.2
++
+@@ -35,2 +39 @@
+-  mapLaw (uniformLaw (α := Fin (hybridSampler xs ys htotal t).1 → Bool))
+-    (hybridSampler xs ys htotal t).2
++  bundledWordLaw (hybridSampler xs ys htotal t)
+@@ -73,0 +77 @@
++    unfold bundledWordLaw
+@@ -79,0 +84 @@
++    change (variation (positiveReferenceWordLaw xs ys htotal hb t) _ : ℝ) ≤ _

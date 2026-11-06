@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "71ea4ee9926e2e5248ab218261efb0c058f1b2cd",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralCorrectionCode"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralCorrectionCode",
+      "source": "research/physical-trace-general-correction-code/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean",
+      "source_sha256": "e6b083d7f6caeeb56e272a42fdf6c2f8135b04610d69f235e3237909b6ae6467",
+      "returncode": 0,
+      "seconds": 22.70902566704899,
+      "olean_sha256": "1b4366398cc1e65e685dd65c5d1e802769331d694de7dd1951a7a8b1cb6acc5d"
+    }
+  ],
+  "audit_seconds": 117.03042695764452,
+  "audit_sha256": "ecf5258ef95e5dc9f9da6a16c3c153fe61ff12be785840694a58fce84eaffa0f",
+  "audit_driver_sha256": "00b244ea42fd9bce231c4d517ef06c43091b1f819b75d3d800e581b74df15c74",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "85db97f1c5f57f52fa635a2a04d3240785d5eeb0b4bb9d333e6b5a3e481385d4",
+  "declaration_count": 36,
+  "theorem_count": 25,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.correctionPartialRepairCode_eq",
+      "closure_size": 9956,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) (a : Math115.PhysicalTraceJoin.DefectJoint r c U L),\n  Math115.PhysicalTraceJoin.correctionPartialRepairCode (List.ofFn r) (List.ofFn c) U L\n      (Math115.PhysicalTraceJoin.terminalSourceMatrixCode r c U L a)\n      (Math115.PhysicalTraceJoin.terminalOrderedLabelCode r c U L a).1\n      (Math115.PhysicalTraceJoin.terminalOrderedLabelCode r c U L a).2 =\n    Option.map (fun X => OAI.ContingencyTables.DensePrograms.matrixCode ↑X)\n      (Math115.PhysicalTraceJoin.terminalPartialRepair r c U L a)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalCorrectionCode_eq",
+      "closure_size": 10654,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) (a : Math115.PhysicalTraceJoin.DefectJoint r c U L) (k : ℕ)\n  (bits : Fin k → Bool),\n  Math115.PhysicalTraceJoin.terminalCorrectionCode (List.ofFn r) (List.ofFn c) U L k\n      (Math115.PhysicalTraceJoin.terminalSourceMatrixCode r c U L a)\n      (Math115.PhysicalTraceJoin.terminalOrderedLabelCode r c U L a).1\n      (Math115.PhysicalTraceJoin.terminalOrderedLabelCode r c U L a).2 (List.ofFn bits) =\n    Option.map (fun X => OAI.ContingencyTables.DensePrograms.matrixCode ↑X)\n      (Math115.PhysicalTraceJoin.terminalBitCorrection r c U L k a bits)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,5 +1,5 @@
 name: Linux formal verification
-run-name: Linux ${{ inputs.scope || 'focused' }} verification at ${{ github.sha }}
+run-name: Linux ${{ inputs.scope || (startsWith(github.ref, 'refs/tags/verify-integration-') && 'integration-sampler') || 'focused' }} verification at ${{ github.sha }}
 
 # Explicit dispatch or verification tags only: the closure is expensive.
 # Comparator starts in a fresh job without previously compiled submitted proofs.
@@ -10,12 +10,13 @@ on:
   workflow_dispatch:
     inputs:
       scope:
-        description: 'focused: refinements; full: original theorem build; comparator: strict sandbox and replay'
+        description: 'focused: baseline; integration-sampler: stronger typed sampler and code components; full: original build; comparator: strict replay'
         type: choice
         required: true
         default: focused
         options:
           - focused
+          - integration-sampler
           - full
           - comparator
       build_mode:
@@ -35,7 +36,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 360
     env:
-      VERIFY_SCOPE: ${{ inputs.scope || 'focused' }}
+      VERIFY_SCOPE: ${{ inputs.scope || (startsWith(github.ref, 'refs/tags/verify-integration-') && 'integration-sampler') || 'focused' }}
       VERIFY_MODE: ${{ inputs.build_mode || '--serial' }}
       VERIFICATION_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
     defaults:
@@ -52,7 +53,7 @@ jobs:
         id: environment
         run: |
           set -euo pipefail
-          case "$VERIFY_SCOPE" in focused|full|comparator) ;; *) exit 2 ;; esac
+          case "$VERIFY_SCOPE" in focused|integration-sampler|full|comparator) ;; *) exit 2 ;; esac
           case "$VERIFY_MODE" in --serial|parallel) ;; *) exit 2 ;; esac
           test "$(id -u)" -ne 0
           test ! -d formal/.lake
@@ -64,6 +65,12 @@ jobs:
                    "formal/default-audit-contract.json", "claims.json", "scripts/prepare_environment_audit.py",
                    "scripts/run_environment_audit.py"]]
           files += sorted((root / "formal").rglob("*.lean"))
+          if os.environ["VERIFY_SCOPE"] == "integration-sampler":
+              manifest = root / "research/repair-accept/integration-sampler.json"
+              files += [manifest, root / "research/repair-accept/verify.py",
+                        root / "scripts/build_lean_serial.py"]
+              files += [root / p for p in json.loads(manifest.read_text())["sources"].values()
+                        if (root / p).is_file()]
           record = {
               "started_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
               "repository_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip(),
@@ -115,6 +122,14 @@ jobs:
           if [[ "$VERIFY_SCOPE" == comparator ]]; then
             timeout --signal=TERM --kill-after=60s 270m scripts/bootstrap_comparator.sh verify \
               2>&1 | tee .tools/linux-verification/verification.log
+          elif [[ "$VERIFY_SCOPE" == integration-sampler ]]; then
+            timeout --signal=TERM --kill-after=60s 180m scripts/verify_lean.sh focused "$VERIFY_MODE" \
+              2>&1 | tee .tools/linux-verification/baseline.log
+            python3 research/repair-accept/verify.py --scope integration-sampler --plan \
+              > .tools/linux-verification/integration-source-plan.json
+            timeout --signal=TERM --kill-after=60s 90m python3 research/repair-accept/verify.py \
+              --scope integration-sampler --output .local/integration-sampler-linux \
+              2>&1 | tee .tools/linux-verification/verification.log
           else
             timeout --signal=TERM --kill-after=60s 270m scripts/verify_lean.sh "$VERIFY_SCOPE" "$VERIFY_MODE" \
               2>&1 | tee .tools/linux-verification/verification.log
@@ -141,6 +156,7 @@ jobs:
               passed = passed and all(steps[key] == "success" for key in steps)
           claim = {
               "focused": "Focused Lean compilation, named-axiom replay, and compiled-environment theorem/dependency audit; no Comparator replay.",
+              "integration-sampler": "Fresh focused baseline plus public integration-source compilation and selected endpoint/dependency-closure audit; trusted Mathlib bootstrap, no Comparator replay or new runtime claim.",
               "full": "Original theorem-closure Lean compilation and printed-axiom audit only; no Comparator replay.",
               "comparator": "Original three theorems: strict sandboxed Comparator built-in-kernel replay; Nanoda disabled.",
           }[scope] if passed else "No successful verification claim for this run; inspect the failing step."
@@ -158,10 +174,15 @@ jobs:
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: math115-linux-${{ inputs.scope || 'focused' }}-${{ github.run_id }}-${{ github.run_attempt }}
+          name: math115-linux-${{ env.VERIFY_SCOPE }}-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
             .tools/linux-verification/
             .local/environment-audits/
+            .local/integration-sampler-linux/*.json
+            .local/integration-sampler-linux/*.json.gz
+            .local/integration-sampler-linux/*.lean
+            .local/integration-sampler-linux/*.stdout.txt
+            .local/integration-sampler-linux/*.stderr.txt
           include-hidden-files: true
           if-no-files-found: warn
           retention-days: 30

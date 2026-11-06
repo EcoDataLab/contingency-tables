@@ -1,0 +1,100 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralInitializationCode.lean:97:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  listedInitializationTransfer (List.ofFn ?r) (List.ofFn ?c) ?U ?L (matrixCode ↑?X) (↑?source.1, ↑?source.2)
+    (↑?receiver.1, ↑?receiver.2) (↑?i, ↑?j)
+in the target expression
+  listedInitializationTransfer (List.ofFn r) (List.ofFn c) U L (matrixCode ↑X)
+      ((↑(↑(↑st).2).1, ↑(↑(↑st).2).2).1, (↑(↑(↑st).1).1, ↑(↑(↑st).1).2).2) (↑(↑(↑st).2).1, ↑(↑(↑st).2).2)
+      (↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).1,
+        ↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).2) =
+    inverseNaturalProfile r c U L X ↑st ((PhysicalComputedProposal.computedCellEquiv r c U) i, false)
+
+case fst
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+X : Table r c
+st : InverseLocalLabels r c U L X
+hprofile :
+  physicalProfile (firstPaperSmall r c U) (capacity r c U L) r c L ↑(inverseDefectState r c U L X st) =
+    inverseNaturalProfile r c U L X ↑st
+i : Fin (PhysicalComputedProposal.computedCatalog r c U).length
+⊢ listedInitializationTransfer (List.ofFn r) (List.ofFn c) U L (matrixCode ↑X)
+      ((↑(↑(↑st).2).1, ↑(↑(↑st).2).2).1, (↑(↑(↑st).1).1, ↑(↑(↑st).1).2).2) (↑(↑(↑st).2).1, ↑(↑(↑st).2).2)
+      (↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).1,
+        ↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).2) =
+    inverseNaturalProfile r c U L X ↑st ((PhysicalComputedProposal.computedCellEquiv r c U) i, false)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    X
+  has type
+    Table r c
+  but is expected to have type
+    { X // HasMargins X r c }
+  in the application
+    ↑X
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralInitializationCode.lean:102:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  listedInitializationTransfer (List.ofFn ?r) (List.ofFn ?c) ?U ?L (matrixCode ↑?X) (↑?source.1, ↑?source.2)
+    (↑?receiver.1, ↑?receiver.2) (↑?i, ↑?j)
+in the target expression
+  U -
+      listedInitializationTransfer (List.ofFn r) (List.ofFn c) U L (matrixCode ↑X)
+        ((↑(↑(↑st).2).1, ↑(↑(↑st).2).2).1, (↑(↑(↑st).1).1, ↑(↑(↑st).1).2).2) (↑(↑(↑st).1).1, ↑(↑(↑st).1).2)
+        (↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).1,
+          ↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).2) =
+    inverseNaturalProfile r c U L X ↑st ((PhysicalComputedProposal.computedCellEquiv r c U) i, true)
+
+case snd
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+X : Table r c
+st : InverseLocalLabels r c U L X
+hprofile :
+  physicalProfile (firstPaperSmall r c U) (capacity r c U L) r c L ↑(inverseDefectState r c U L X st) =
+    inverseNaturalProfile r c U L X ↑st
+i : Fin (PhysicalComputedProposal.computedCatalog r c U).length
+⊢ U -
+      listedInitializationTransfer (List.ofFn r) (List.ofFn c) U L (matrixCode ↑X)
+        ((↑(↑(↑st).2).1, ↑(↑(↑st).2).2).1, (↑(↑(↑st).1).1, ↑(↑(↑st).1).2).2) (↑(↑(↑st).1).1, ↑(↑(↑st).1).2)
+        (↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).1,
+          ↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).2) =
+    inverseNaturalProfile r c U L X ↑st ((PhysicalComputedProposal.computedCellEquiv r c U) i, true)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    X
+  has type
+    Table r c
+  but is expected to have type
+    { X // HasMargins X r c }
+  in the application
+    ↑X
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralInitializationCode.lean:135:2: error: Type mismatch: After simplification, term
+  congrArg some he
+ has type
+  @Eq (Option (List ℕ × List ℕ))
+    (some
+      (listedInverseProfileCode (positiveMargins xs) (positiveMargins ys) (positiveTraceCutoff xs ys) 7 (matrixCode ↑X)
+        (↑(↑(↑st).1).1, ↑(↑(↑st).1).2) (↑(↑(↑st).2).1, ↑(↑(↑st).2).2)))
+    (some
+      (computedStateCode (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+        ↑(inverseDefectState (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7 X ⟨↑st, ⋯⟩)))
+but is expected to have type
+  @Eq (Option (List ℕ × List ℕ))
+    (some
+      (listedInverseProfileCode (positiveMargins xs) (positiveMargins ys) (positiveTraceCutoff xs ys) 7
+        (matrixCode ↑(positiveTraceFallback xs ys htotal))
+        (↑((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h).1.1,
+          ↑((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get
+                  h).1.2)
+        (↑((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h).2.1,
+          ↑((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get
+                  h).2.2)))
+    (some
+      (computedStateCode (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+        ↑(positiveTraceInitialStart xs ys htotal hb)))

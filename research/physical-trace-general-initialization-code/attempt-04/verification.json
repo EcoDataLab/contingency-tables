@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "71ea4ee9926e2e5248ab218261efb0c058f1b2cd",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralInitializationCode"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralInitializationCode",
+      "source": "research/physical-trace-general-initialization-code/formal/ResearchPhysicalTraceJoin/GeneralInitializationCode.lean",
+      "source_sha256": "b52e7601534d0e2d270ee5f0fe09b877f1e1d4d3918f79c1adbd5da0c651e9b0",
+      "returncode": 0,
+      "seconds": 30.46121604181826,
+      "olean_sha256": "5880136e30794bb4c3b494fccfe837bf951e3487f6feea2507ae88eaa09cf879"
+    }
+  ],
+  "audit_seconds": 47.24813720816746,
+  "audit_sha256": "a8bed784e664cc31eef70d6f97192e6cbce8fbe88950bdcc72dfc12831ef4aca",
+  "audit_driver_sha256": "da9cd60f2eb45a94246886e8b4ac2e4093159897dff8fe98ef966ed31a9ce084",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "9ee2ac418f1caaed9fb40ade2cf35b90c467ea7c197a9da5ee4bba3bce9a7f36",
+  "declaration_count": 19,
+  "theorem_count": 13,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.listedInverseProfileCode_inverseDefectState",
+      "closure_size": 10322,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) (X : OAI.ContingencyTables.Table r c)\n  (st : Math115.PhysicalTraceJoin.InverseLocalLabels r c U L X),\n  Math115.PhysicalTraceJoin.listedInverseProfileCode (List.ofFn r) (List.ofFn c) U L\n      (OAI.ContingencyTables.DensePrograms.matrixCode ↑X) (↑(↑(↑st).1).1, ↑(↑(↑st).1).2)\n      (↑(↑(↑st).2).1, ↑(↑(↑st).2).2) =\n    Math115.PhysicalComputedProposal.computedStateCode r c U L\n      ↑(Math115.PhysicalTraceJoin.inverseDefectState r c U L X st)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceFallbackCode_code",
+      "closure_size": 5008,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j),\n  Math115.PhysicalTraceJoin.positiveTraceFallbackCode xs ys =\n    OAI.ContingencyTables.DensePrograms.matrixCode ↑(Math115.PhysicalTraceJoin.positiveTraceFallback xs ys htotal)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceInitializationCode_initialStart",
+      "closure_size": 11002,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j)\n  (hb : Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference),\n  Math115.PhysicalTraceJoin.positiveTraceInitializationCode xs ys htotal =\n    some\n      (Math115.PhysicalComputedProposal.computedStateCode (Math115.PhysicalTraceJoin.filteredMargin xs)\n        (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys) 7\n        ↑(Math115.PhysicalTraceJoin.positiveTraceInitialStart xs ys htotal hb))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

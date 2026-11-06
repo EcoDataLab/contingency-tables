@@ -1,0 +1,43 @@
+--- initial.lean
++++ checked.lean
+@@ -13 +13 @@
+-open ProfilePrograms SmallGraphProfiles FirstPaperProfiles CompletionCounts
++open ProfilePrograms DensePrograms SmallGraphProfiles FirstPaperProfiles CompletionCounts
+@@ -14,0 +15 @@
++open FirstSuccess ResidualMixture SmallContextFibres
+@@ -31,4 +32,3 @@
+-  small st.1.1 st.1.2 && small st.2.1 st.2.2 && decide (st.1 ≠ st.2) &&
+-    if small st.2.1 st.1.2 then decide (0 < X.val st.2.1 st.1.2) else
+-      decide (smallRow small X.val st.2.1 < r st.2.1 ∧
+-        smallColumnView small X.val st.1.2 < c st.1.2)
++  small st.1.1 st.1.2 && small st.2.1 st.2.2 &&
++    listedInverseLabelTest (List.ofFn r) (List.ofFn c) U (matrixCode X.val)
++      (st.1.1.val,st.1.2.val) (st.2.1.val,st.2.2.val)
+@@ -78,4 +77,0 @@
+-  have hs := st.val.1.property
+-  have ht := st.val.2.property
+-  have hne : st.val.1.val ≠ st.val.2.val := fun he => st.property.1 (Subtype.ext he)
+-  have h := st.property.2
+@@ -83,3 +79,3 @@
+-  simp only [hs, ht, Bool.true_and, hne, decide_true]
+-  cases hh : firstPaperSmall r c U st.val.2.val.1 st.val.1.val.2 <;>
+-    simpa only [hh, Bool.false_eq_true, ite_false, ite_true, decide_eq_true_eq] using h
++  simp only [st.val.1.property, st.val.2.property, Bool.true_and]
++  rw [listedInverseLabelTest_code r c U X st.val.1 st.val.2]
++  exact decide_eq_true st.property
+@@ -105,6 +101,9 @@
+-  simp only [Bool.and_eq_true, decide_eq_true_eq] at ht
+-  refine ⟨(⟨st.1,ht.1.1.1⟩,⟨st.2,ht.1.1.2⟩), ?_⟩
+-  constructor
+-  · intro he
+-    exact ht.1.2 (congrArg Subtype.val he)
+-  · exact ht.2
++  simp only [Bool.and_eq_true] at ht
++  let s : Cells (firstPaperSmall r c U) := ⟨st.1,ht.1.1⟩
++  let t : Cells (firstPaperSmall r c U) := ⟨st.2,ht.1.2⟩
++  refine ⟨(s,t), ?_⟩
++  have hz := ht.2
++  change listedInverseLabelTest (List.ofFn r) (List.ofFn c) U (matrixCode X.val)
++    (s.val.1.val,s.val.2.val) (t.val.1.val,t.val.2.val) = true at hz
++  rw [listedInverseLabelTest_code r c U X s t] at hz
++  exact of_decide_eq_true hz

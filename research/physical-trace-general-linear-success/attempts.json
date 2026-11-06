@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralLinearSuccess",
+  "verified_attempt": "attempt-02",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "de30a4ba1d9ccafdd62cfc5cd2c2a23ea77c170baedf296b4a54e3af18575a75",
+      "compile_returncode": 1,
+      "compile_seconds": 47.738464042078704,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "94e2c1a1cdc6e41c5a556e2bfc2c9e0711a0bf4974b553f62e550104b2479888",
+      "compile_returncode": 0,
+      "compile_seconds": 21.947800250258297,
+      "audit_returncode": 0,
+      "audit_seconds": 39.698120874818414,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,33 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:47:63: error: unsolved goals
+V : ℕ
+word : Fin (precision V) → Bool
+⊢ (if hj : MatchingFPRAS.StackAddition.value (List.ofFn word) < V then
+      some ⟨MatchingFPRAS.StackAddition.value (List.ofFn word), hj⟩
+    else none) =
+    if hj : ↑((binaryWordEquiv (precision V)) word) < V then some ⟨↑((binaryWordEquiv (precision V)) word), hj⟩
+    else none
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:48:70: warning: This simp argument is unused:
+  bitValue_eq_word
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [rawClockIntervalTrial, intervalWordTrial, intervalTrial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:51:53: error: unsolved goals
+V N : ℕ
+word : Fin (N * precision V) → Bool
+he : rawClockIntervalTrial V = intervalWordTrial V
+⊢ CompletionBooleanRetry.flatRetry (fun block => Option.map some (intervalWordTrial V block)) none N word =
+    CompletionBooleanRetry.flatRetry (fun block => Option.map some (intervalWordTrial V block)) none N word
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:75:21: error(lean.unknownIdentifier): Unknown identifier `codeCheckData`
+
+Note: It is not possible to treat `codeCheckData` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:91:20: error(lean.unknownIdentifier): Unknown identifier `codeCheckData`
+
+Note: It is not possible to treat `codeCheckData` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:99:23: error(lean.unknownIdentifier): Unknown identifier `codeCheckData`
+
+Note: It is not possible to treat `codeCheckData` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:112:7: error(lean.unknownIdentifier): Unknown identifier `codeCheckData`
+
+Note: It is not possible to treat `codeCheckData` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.

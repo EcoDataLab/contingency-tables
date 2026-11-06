@@ -1,0 +1,65 @@
+<packet>/revisions/attempt-03/formal/ResearchPhysicalTraceJoin/GeneralInitializationCode.lean:142:14: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h).1
+in the target expression
+  (match
+      some
+        ((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h) with
+    | none => none
+    | some st =>
+      some
+        (listedInverseProfileCode (positiveMargins xs) (positiveMargins ys) (positiveTraceCutoff xs ys) 7
+          (matrixCode ↑(positiveTraceFallback xs ys htotal)) (↑st.1.1, ↑st.1.2) (↑st.2.1, ↑st.2.2))) =
+    some
+      (computedStateCode (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+        ↑(inverseDefectState (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7 X ⟨↑st, ⋯⟩))
+
+xs ys : List ℕ
+htotal : ∑ i, listMargin xs i = ∑ j, listMargin ys j
+hb : positiveTraceBranch xs ys = TraceInputBranch.reference
+X : Table (filteredMargin xs) (filteredMargin ys) := positiveTraceFallback xs ys htotal
+hg :
+  2 ≤ (positiveMargins xs).length ∧
+    2 ≤ (positiveMargins ys).length ∧
+      2 ≤ Fintype.card (Cells (firstPaperSmall (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys))) ∧
+        0 < (largeIndices (positiveTraceCutoff xs ys, List.ofFn (filteredMargin xs))).length ∧
+          0 < (largeIndices (positiveTraceCutoff xs ys, List.ofFn (filteredMargin ys))).length
+h : (initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).isSome = true
+st : InverseSupportLabels (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X :=
+  initializationSupportLabels (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X h
+he :
+  listedInverseProfileCode (List.ofFn (filteredMargin xs)) (List.ofFn (filteredMargin ys)) (positiveTraceCutoff xs ys) 7
+      (matrixCode ↑X) (↑(↑(↑⟨↑st, ⋯⟩).1).1, ↑(↑(↑⟨↑st, ⋯⟩).1).2) (↑(↑(↑⟨↑st, ⋯⟩).2).1, ↑(↑(↑⟨↑st, ⋯⟩).2).2) =
+    computedStateCode (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+      ↑(inverseDefectState (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7 X ⟨↑st, ⋯⟩)
+hsearch :
+  initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X =
+    some ((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h)
+hs1 :
+  ↑(↑st).1 = ((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h).1
+hs2 :
+  ↑(↑st).2 = ((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h).2
+hstart :
+  positiveTraceInitialStart xs ys htotal hb =
+    inverseDefectState (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7 X ⟨↑st, ⋯⟩
+⊢ (match
+      some
+        ((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h) with
+    | none => none
+    | some st =>
+      some
+        (listedInverseProfileCode (positiveMargins xs) (positiveMargins ys) (positiveTraceCutoff xs ys) 7
+          (matrixCode ↑(positiveTraceFallback xs ys htotal)) (↑st.1.1, ↑st.1.2) (↑st.2.1, ↑st.2.2))) =
+    some
+      (computedStateCode (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+        ↑(inverseDefectState (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7 X ⟨↑st, ⋯⟩))
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    positiveTraceFallback xs ys htotal
+  has type
+    Table (filteredMargin xs) (filteredMargin ys)
+  but is expected to have type
+    { X // HasMargins X (filteredMargin xs) (filteredMargin ys) }
+  in the application
+    ↑(positiveTraceFallback xs ys htotal)
