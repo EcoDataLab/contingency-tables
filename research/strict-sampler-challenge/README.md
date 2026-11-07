@@ -1,6 +1,6 @@
 # Separate strict sampler challenge — strict acceptance pending
 
-Current replay setup and the pending fresh historical-closure attempt are recorded in the [observer repair packet](../strict-sampler-checkpoints/proc-observer-v2/). The creation-time and earlier provisioning failures below remain preserved; later configuration/cache repairs and nine-module failure are linked from [current status](../../docs/status.md). No full sampler acceptance is claimed.
+The latest replay ended after 20 completed historical-closure modules when its Python checking helper exhausted memory. The [metadata lifetime repair](../strict-sampler-checkpoints/metadata-memory-v1/) preserves that failure and supplies an offline-tested repair; a complete repaired replay remains unrun. The [observer repair packet](../strict-sampler-checkpoints/proc-observer-v2/) and the creation-time and earlier provisioning failures below retain their original scopes. No full sampler acceptance is claimed.
 
 This corpus fixes the literal `Math115.PublicLatticeSampler.machine` while
 checking the revised bounded sampler against the original input encoding,

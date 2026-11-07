@@ -1,0 +1,15 @@
+--- research/strict-sampler-checkpoints/proc-observer-v2/source/prepare_memos.py
++++ metadata-memory-v1/source/prepare_memos.py
+@@ -2,10 +2,10 @@
+ import argparse,hashlib,importlib.util,json,os,shutil,stat,subprocess,sys,time
+ from pathlib import Path
+ ORIGINAL='4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6'
+-V2='50b13329f7de7ba59f007cdc382aa317e2984d14104bda0bd37d1a9c9ecf78f3'
++V2='b893f9af52bbe33c70eb883514a0e91ab50f7f1ed755c79202ef25625ee21e5f'
+ AUTH='742ec1105d5bb44a392046ec06ca5944a20989bc0cb5a037d2997b37def2b943'
+ HELPER='a3bc73a5756b203788a14f848ec8d5e4362fd18cbeed9da3693fdb88ba6187cd'
+-SNAPSHOT='c875c20375a1bf3362ac836126c7ddb249b0669ef9b2af332691f89f6278a193'
++SNAPSHOT='2e23b335d43cad6a637d1ff9b0b1e5ee4e5ee45b4cc1458c53f2ac8b96f8fa56'
+ SIDECAR='formal/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Field/Defs.olean.server.hash'
+ FACETS=('.olean','.olean.private','.olean.server','.ilean','.ir','.ir.sig','.o','.so')
+ def sha(path):

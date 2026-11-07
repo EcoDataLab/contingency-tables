@@ -1,0 +1,39 @@
+{
+  "archive_sha256": "36e9077367f035e3cf3aa8395f1185e17c1b2032c0336a2fad0de789e435d37a",
+  "authenticated_transport_members": 120,
+  "completed_modules": 20,
+  "export_kernel_comparator_reached": false,
+  "last_stage": {
+    "compiler_telemetry_status": "pending_owned_service",
+    "returncode": null,
+    "stage": "0020_module_build",
+    "status": "running",
+    "successful_compiler_samples": 0
+  },
+  "lease_release_verified": true,
+  "limits": "Recorded interrupted module command has no exit code. No mathematical/compiler failure inferred; current result is checker-helper OOM. Automatic archive capture may precede eventual guest service closure; enclosing VM termination closed all guest workers.",
+  "observed_date": "2026-11-06",
+  "oom_observation": "Guest kernel killed python3 PID2344:anonRSS9751912kB,fileRSS2512kB,totalVM9918700kB. PID matches owned proof helper.",
+  "original_five_pins_unchanged": true,
+  "owned_process_cleanup_verified": true,
+  "owned_qemu_reaped": true,
+  "passed_stages": 42,
+  "proof_phase_elapsed_seconds": 1739.4465336799622,
+  "proof_phase_returncode": -9,
+  "public_evidence_limit": "Sanitized summary and hashes of privately retained original receipts; full guest/host logs and archive are not republished here.",
+  "receipt_source_sha256": {
+    "collection_authentication": "f5e8cc346cc1423d8ada064fe2cfdbacb950874979d509f07d4d32a9ca323e7d",
+    "guest_phases": "93b1fb2b33dada3c64e5e332cc108aa3834e70c6aa4cab15ae5a69b5438f03f1",
+    "guest_proof_receipt": "6646521cb893ff6fae57a856da723fd93b69cfc757ee8b248880344ad755b654",
+    "guest_serial": "489088d52df8045688342b146eedf7739d4d544540da191df7c6d58408cabd3f",
+    "host_supervision": "bdce85f0058c7277b328532e285d5d480df390045e349b5f9d74b49586e013b0"
+  },
+  "recorded_failed_stages": 0,
+  "released_at": "2026-11-06T23:42:52.334Z",
+  "restored_raw_bytes": 65013660,
+  "scope": "Historical 679-module sampler only; source-only repair in this packet was not installed in this attempt.",
+  "source_archive_sha256": "47e864e49025da1e505c32ae1c5f23428ed900b1ecc64468cb72478095824a84",
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "status": "long04_proof_helper_killed_by_guest_oom_no_strict_acceptance",
+  "vm_elapsed_seconds": 2580.72273139999
+}

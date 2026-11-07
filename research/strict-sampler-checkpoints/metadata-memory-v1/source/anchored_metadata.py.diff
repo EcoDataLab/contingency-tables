@@ -1,0 +1,9 @@
+--- research/strict-sampler-checkpoints/versioned-guard-v2/source/anchored_metadata.py
++++ metadata-memory-v1/source/anchored_metadata.py
+@@ -61,4 +61,6 @@
+    require(set(out)==set(expected),'Incomplete selected-cache observations')
+    return out
+   finally:
++   # Break the recursive closure self-cycle before releasing the same FDs.
++   walk = None
+    for fd in reversed(opened):os.close(fd)

@@ -1,0 +1,10 @@
+--- research/strict-sampler-checkpoints/proc-observer-v2/source/versioned_runner.py
++++ metadata-memory-v1/source/versioned_runner.py
+@@ -4 +4 @@
+-Private version3 candidate: uninstalled; metadata v2 plus reviewed observer v2.
++Memory-repair candidate: unrun; metadata lifetime fix plus reviewed observer v2.
+@@ -26,2 +26,2 @@
+-METADATA_SHA = '6eb447ff60a09d13bc134252e490bd99e7a15b92c7436a0db5a677269b91a3a5'
+-GUARD_VERSION = "anchored-selected-cache-v2"
++METADATA_SHA = '55a3cef696f463fa4e9f54510498d61d99855275a95716431615299bc9b4cbde'
++GUARD_VERSION = "anchored-selected-cache-memory-v1"

@@ -30,9 +30,12 @@ clean source clone passed the same suite with one explicit missing-formal-
 bootstrap skip; its SciPy and observer tests ran. The later
 [hosted follow-up](../reports/python-reliability-2026-11-06/hosted-followup.json)
 passed all four Python versions, including SciPy and the compatibility fixes.
-The strict Comparator
-observer repair passed its regression/review checks, and a new historical
-complete-sampler proof attempt is running. Acceptance remains pending. The earlier d8 and bounded-aspect d^6.5 results already have a
+The latest strict historical-sampler replay completed 20 modules and 42 stages
+before Linux killed its Python checking helper for memory exhaustion. No Lean
+failure was recorded; export, kernel replay and Comparator were not reached.
+The [metadata lifetime repair](../research/strict-sampler-checkpoints/metadata-memory-v1/)
+removes a reproduced retention cycle in both snapshot helpers. Its focused
+offline tests pass; a complete repaired replay remains unrun. The earlier d8 and bounded-aspect d^6.5 results already have a
 [combined research rebuild](../research/aggregate-defect-trace/results/verification.json);
 that receipt is distinct from the historical default target and Comparator.
 
