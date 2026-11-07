@@ -1,0 +1,15 @@
+{
+  "replacements": [
+    {
+      "new": "COMPARATOR_ACCEPTANCE_MARKERS = (\n    \"Running Lean default kernel on solution.\",\n    \"Lean default kernel accepts the solution\",\n    \"Your solution is okay!\",\n)\n\ndef comparator_marker_summary(path: Path, chunk_size: int = 65536) -> str:\n    \"\"\"Bounded summary only; the complete raw stdout file remains authoritative.\"\"\"\n    if chunk_size < 1:\n        raise ValueError(\"Comparator scan chunk size must be positive\")\n    needles = tuple(marker.encode(\"ascii\") for marker in COMPARATOR_ACCEPTANCE_MARKERS)\n    found, carry = set(), b\"\"\n    overlap = max(map(len, needles)) - 1\n    with path.open(\"rb\") as stream:\n        while chunk := stream.read(chunk_size):\n            observed = carry + chunk\n            found.update(i for i, needle in enumerate(needles) if needle in observed)\n            carry = observed[-overlap:]\n    return \"\\n\".join(marker for i, marker in enumerate(COMPARATOR_ACCEPTANCE_MARKERS) if i in found)\n\nclass MeasuredRunner:\n",
+      "old": "class MeasuredRunner:\n"
+    },
+    {
+      "new": "        # CompletedProcess.stdout is a marker summary for Comparator only.\n        output = comparator_marker_summary(stdout_path) if label == \"unchanged_comparator\" else \"\"\n",
+      "old": "        output = stdout_path.read_text(errors=\"replace\") if label == \"unchanged_comparator\" else \"\"\n"
+    }
+  ],
+  "result_sha256": "ac38cc85c72e181b828b0395ef886d4e8218458d4c53c6ca4bada38220075f33",
+  "source": "research/strict-sampler-checkpoints/proc-observer-v2/source/strict_serial_check.py",
+  "source_sha256": "b5e8c0f95fdd5f6b9193c2b0537782b242d0fe0c269dae7b5a7a4c73a32cb1f0"
+}

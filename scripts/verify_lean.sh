@@ -21,7 +21,7 @@ mkdir -p "$TASK_ROOT/formal/results"
 
 audit_axioms() {
   local audit_file="$1" audit_output
-  audit_output="$("$ELAN_HOME/bin/lake" env lean "$audit_file")"
+  audit_output="$("$ELAN_HOME/bin/lake" env lean "$audit_file" 2>&1)"
   printf '%s\n' "$audit_output"
   printf '%s\n' "$audit_output" | python3 "$TASK_ROOT/scripts/check_lean_axioms.py" "$audit_file"
 }

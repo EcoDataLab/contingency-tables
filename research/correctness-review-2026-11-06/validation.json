@@ -1,0 +1,99 @@
+{
+  "artifacts_sha256": {
+    "validation/arithmetic.log.gz": "7c722e14c7ac539d0246b9c98d96bab725fb6becb471f119fa25a921c7315dda",
+    "validation/blocks.log.gz": "1fe2e8eb6a440625ab9ffc517a79a6a112957293a655a75ca371411d4e28079a",
+    "validation/completions.log.gz": "adf8b83ad82912b73e8896abccc07c5127fa1ff66aad76856eae3c0f2ffbc152",
+    "validation/full-tests.log.gz": "622a026f64d0342ffd6ee85369e95aba78db5f7f06d26ba2d408bacf83b9de55",
+    "validation/markov.log.gz": "09501f87d55fde5a72be5fc1709d9d4c6417b2abb37ae08ecf741e0ee5b54a34",
+    "validation/reports.log.gz": "ee6ec156a897bdc2a1335082ab0be7d9df96355d4f24f4b393aa98ac19696b74",
+    "validation/support.log.gz": "4d03a088e2634407d5fc991078146a63d758315bac8950d31a9ae43ab9d56386",
+    "validation/weighted.log.gz": "5345aae98f11d216b61068bde70e4e7befa9bb4d99c73d76182a77d73d5a76f1"
+  },
+  "claims_refresh_exit_code": 0,
+  "evidence_class": "AI source review, reproduced counterexamples and local finite checks",
+  "formatting_after_tests": "Display-only patches regenerated without context whitespace; runtime/helper/test bytes unchanged.",
+  "full_suite": {
+    "command": "make test",
+    "errors": 0,
+    "failures": 0,
+    "interpreter": "Python 3.14.3",
+    "log": "validation/full-tests.log.gz",
+    "native_R_regressions_executed": true,
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "skips": 0,
+    "tests_run": 541
+  },
+  "independent_oracles": {
+    "arithmetic": {
+      "exit_code": 0,
+      "log": "validation/arithmetic.log.gz",
+      "script": "arithmetic_oracles.py"
+    },
+    "blocks": {
+      "exit_code": 0,
+      "log": "validation/blocks.log.gz",
+      "script": "check_block_articulations.py"
+    },
+    "completions": {
+      "exit_code": 0,
+      "log": "validation/completions.log.gz",
+      "script": "check_completions_independent.py"
+    },
+    "markov": {
+      "exit_code": 0,
+      "log": "validation/markov.log.gz",
+      "script": "markov_independent_audit.py"
+    },
+    "reports": {
+      "exit_code": 0,
+      "log": "validation/reports.log.gz",
+      "script": "experiment_oracles.py"
+    },
+    "support": {
+      "exit_code": 0,
+      "log": "validation/support.log.gz",
+      "script": "extra_oracles.py"
+    },
+    "weighted": {
+      "exit_code": 0,
+      "log": "validation/weighted.log.gz",
+      "script": "weighted_oracle.py"
+    }
+  },
+  "limits": [
+    "Finite cases do not prove unrestricted correctness or absence of further bugs.",
+    "New exact worker quantiles are limited to totals at most1024; larger totals remain binary64.",
+    "Historical proof receipts and report bytes were preserved.",
+    "No fresh Lean aggregate build or strict Comparator replay was completed.",
+    "Native strict preparation and long-run memory measurements remain open."
+  ],
+  "recorded_utc": "2026-11-07T00:53:23.251624+00:00",
+  "review_baseline_commit": "7a7aa8ac8a7f80a870dbf1db1958feb2ce49b230",
+  "schema_version": 1,
+  "source_sha256": {
+    "experiments/commuting_backtest.py": "7182dc4e0402b590fcfd777a8e90a1f29cc97465a9bed707c84546e172737c2b",
+    "experiments/worker_library_benchmarks.py": "3ffd566b1a26bc45f737b7a6d909d80c8795569aa28bca2c8d89a5eb9c2d1025",
+    "research/correctness-review-2026-11-06/arithmetic_oracles.py": "97cc348dffeee6be4308828f832a7ca6a78cac98d41d4c47e1ddab4da10d891d",
+    "research/correctness-review-2026-11-06/check_block_articulations.py": "d490e6995ad9dc132493e08a4715fbb4a0e77b3f6bde9b245562869debceffda",
+    "research/correctness-review-2026-11-06/check_completions_independent.py": "6ffdf1c600a45a23751da2541db68bf16e949bf489a2f0e1ce9cce86b8bd467c",
+    "research/correctness-review-2026-11-06/experiment_oracles.py": "1b76e7a3dd2742d9995c450f282c959d1c287919a50d731d2d0618e6d591336d",
+    "research/correctness-review-2026-11-06/extra_oracles.py": "2ccf1444a034c9d2daa2c26e6d8359b08b6029c4675e38146d73581dd2e523d6",
+    "research/correctness-review-2026-11-06/markov_independent_audit.py": "c265bf027008ddd013368cca2c7d24524d38b9ffba6cadfe03c65e1516ee75f0",
+    "research/correctness-review-2026-11-06/weighted_oracle.py": "bae9fcfdaeaa656023b31fb1c3b3ded1144039570307eb28ebdfe01236a28730",
+    "research/strict-sampler-checkpoints/runtime-output-v1/manifest.json": "20ea063a480e7e90d97ee229ddab4db97a93a3be5e0eba61f21c2735f0424d93",
+    "research/strict-sampler-checkpoints/runtime-tail-v1/manifest.json": "e58754ed0748c97cb768e9cc94c1f82684009db251be724e62eebf3b27aab22a",
+    "scripts/run_environment_audit.py": "21e5e482ca97588a30107904a3525ba6adc187ebbcc7f8121cf7007263965239",
+    "scripts/verify_lean.sh": "262c4419adfc22e89e3fd1c0544cb840e4f2cad7c3fc4755fad02e71a16594b1",
+    "src/contingency115/block_sampler.py": "2c1b62a7209230ab2e0a614ea3056a4296cda6b611621e624541583d9a0a3982",
+    "src/contingency115/cactus.py": "5a47bef9f655ecddd62083f16c14e22d094116e5da1de0b44a8280e6b3b066e7",
+    "src/contingency115/tables.py": "1a5ccf05d7c217044dc91d65681e31fa155ae2bfb57c4e1429bf210b3f87e357",
+    "tests/test_adversarial_verification.py": "7c18acf816171bd6874b01c3fa0d63cc5f619392383cb12d81c5accd8cca410e",
+    "tests/test_block_zero_line_budget.py": "dc48bab15aed0d41e7e5709aad250ef86a8234d528ea54110de8c10ab413e75f",
+    "tests/test_cactus_rng_regression.py": "f1fd0d6ac8c30abad1301644e07e5c01df6bb8742417dfe6fe4462810094233e",
+    "tests/test_comparator_bounded_output.py": "555d39abb6ce5ebc47bb7914bcb82632f1d48c06449a0d9ec0f6b4712d91ef7f",
+    "tests/test_comparator_tail_boundary.py": "3d2a45cc95b5d5a80b21c0a3be2afec3aa11c4bbca33e0ff4a5d3c9f28d4ecc4",
+    "tests/test_experiment_quantile_serialization_regression.py": "4378e09b4be347374bc4cce1ca8d8f0873c92f9c31f46c2f0d3236626d4ed8f7",
+    "tests/test_weighted_integer_source_validation.py": "7b334b3dc780dd7334087ada47eb308637763b3a6574f7e2d1f0b68dbc45c5dc"
+  }
+}

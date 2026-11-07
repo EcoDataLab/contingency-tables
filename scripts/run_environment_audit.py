@@ -14,6 +14,7 @@ import os
 from pathlib import Path, PurePosixPath, PureWindowsPath
 import re
 import shutil
+import signal
 import subprocess
 import sys
 import time
@@ -297,13 +298,27 @@ def execute(argv: list[str], cwd: Path, env: dict, output: Path, label: str, tim
     stdout, stderr = output / (label + '.stdout'), output / (label + '.stderr')
     timed_out = False
     with stdout.open('wb') as out, stderr.open('wb') as err:
-        proc = subprocess.Popen(argv, cwd=cwd, env=env, stdout=out, stderr=err)
+        # A fresh POSIX session owns ordinary descendants as well as the
+        # compiler itself. Windows retains direct-child cleanup only.
+        proc = subprocess.Popen(argv, cwd=cwd, env=env, stdout=out, stderr=err,
+                                start_new_session=os.name == 'posix')
+        def stop_owned() -> int:
+            if os.name == 'posix':
+                try:
+                    os.killpg(proc.pid, signal.SIGKILL)
+                except ProcessLookupError:
+                    pass
+            else:
+                proc.kill()
+            return proc.wait()
         try:
             code = proc.wait(timeout=timeout)
         except subprocess.TimeoutExpired:
             timed_out = True
-            proc.kill()
-            code = proc.wait()
+            code = stop_owned()
+        except BaseException:
+            stop_owned()
+            raise
     return {'argv': argv, 'exit_code': code, 'timed_out': timed_out,
             'elapsed_seconds': time.monotonic() - start,
             'stdout_sha256': sha(stdout), 'stderr_sha256': sha(stderr)}
@@ -447,4 +462,8 @@ def main() -> int:
     return 0 if receipt['status'] == 'passed_compiled_environment_audit' else 1
 
 if __name__ == '__main__':
+    # Only the CLI owns signal policy. Imported callers keep their handlers.
+    def terminate_cli(signum, frame):
+        raise SystemExit(128 + signum)
+    signal.signal(signal.SIGTERM, terminate_cli)
     raise SystemExit(main())

@@ -489,10 +489,10 @@ def _prepare_rational_choice(masses: Sequence[int | Fraction]) -> tuple[int, ...
 
 
 def _draw_rational_choice(cumulative: tuple[int, ...], rng: RandomIntegerSource) -> int:
-    index = bisect_right(cumulative, rng.randrange(cumulative[-1]))
-    if index >= len(cumulative):
+    value = _integer(rng.randrange(cumulative[-1]), "RNG integer")
+    if value >= cumulative[-1]:
         raise AssertionError("RNG returned an integer outside the requested range")
-    return index
+    return bisect_right(cumulative, value)
 
 
 class ExactWeightedTableSampler:

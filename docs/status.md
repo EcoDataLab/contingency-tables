@@ -24,7 +24,10 @@ spectral-gap or complete-runtime exponent is claimed here.
 The default `make lean` command now runs the preserved baseline and the
 selected chain and sampler tree together, with explicit d8, bounded-aspect squared and
 complete-program audit endpoints. Its source plan and build-control tests
-passed; a full run of this expanded entrypoint is in progress. The
+passed. Its first full run was interrupted at a module boundary after 325 fully
+recorded baseline modules and a successful 326th compilation. The baseline audit
+and research integration stage did not run; complete aggregate verification
+remains open. The
 full Python/SciPy suite passed 468 tests without skips locally. A separate
 clean source clone passed the same suite with one explicit missing-formal-
 bootstrap skip; its SciPy and observer tests ran. The later
@@ -34,8 +37,13 @@ The latest strict historical-sampler replay completed 20 modules and 42 stages
 before Linux killed its Python checking helper for memory exhaustion. No Lean
 failure was recorded; export, kernel replay and Comparator were not reached.
 The [metadata lifetime repair](../research/strict-sampler-checkpoints/metadata-memory-v1/)
-removes a reproduced retention cycle in both snapshot helpers. Its focused
-offline tests pass; a complete repaired replay remains unrun. The earlier d8 and bounded-aspect d^6.5 results already have a
+removes a reproduced retention cycle in both snapshot helpers. A subsequent
+[independent correctness review](../research/correctness-review-2026-11-06/)
+also repairs weighted-input handling, shared budgets, small-total commuting
+quantiles, R serialization, audit cleanup and serial/output handling. New
+counterexamples and independent finite oracles supplement the existing tests.
+The [combined strict source candidate](../research/strict-sampler-checkpoints/runtime-output-v1/)
+has no fresh native preparation or complete repaired replay. The earlier d8 and bounded-aspect d^6.5 results already have a
 [combined research rebuild](../research/aggregate-defect-trace/results/verification.json);
 that receipt is distinct from the historical default target and Comparator.
 

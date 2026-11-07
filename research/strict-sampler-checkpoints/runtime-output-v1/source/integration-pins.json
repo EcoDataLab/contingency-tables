@@ -1,0 +1,11 @@
+{
+  "base_assembler": "research/strict-sampler-checkpoints/metadata-memory-v1/tools/prepare_candidate.py",
+  "base_assembler_sha256": "caac3d4f6c4094c1a2f3bd04fae29f1f88b59cca917e42316713f5a772a87c09",
+  "base_preparation_sha256": "0e0b4e57db7973209048655edcebb5f7171c3800aecbcfb5ee2be795abdfe078",
+  "base_runner_sha256": "b893f9af52bbe33c70eb883514a0e91ab50f7f1ed755c79202ef25625ee21e5f",
+  "preparation_sha256": "db9f887540332b0df44c4efee4821abccac74e5c240ccd484df31e42ea4b41da",
+  "runner_sha256": "81a44f3f41b841d66ae05ac3ddf769fccd959a5b83721488b9c15009eb353b31",
+  "supervisor_sha256": "b7c88cc5cd7fac1c9fe0412f91d0cc45cb53afb2b603370f60db8cea90abdf4d",
+  "tail_deriver": "research/strict-sampler-checkpoints/runtime-tail-v1/derive_supervisor.py",
+  "tail_deriver_sha256": "457a3a3a452e0f220e34bc4f1d4d9630db58384a172632573941fdc386e53985"
+}
