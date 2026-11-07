@@ -1,0 +1,23 @@
+{
+  "anchored_helper_sha256": "6eb447ff60a09d13bc134252e490bd99e7a15b92c7436a0db5a677269b91a3a5",
+  "baseline_runtime_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+  "config_sha256": "0a6b1b91c2a1ec89ede6f6a81254632d856c590c5d5dda6fa05bd666d3e5ad32",
+  "fresh_runtime_sha256": "b777e2f434af7744108690dbbd0ec790f022f78172028ee723fbba02f29b3f8e",
+  "host_collection_manifest_sha256": "293d07ebe94ff7c5873b5bfec689f61baa3a4143c9157e24cc84d6b2548c5c39",
+  "original_measured_runtime_sha256": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e",
+  "original_runner_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6",
+  "preparation_script_sha256": "4083a5bdab91e4dda4aaaa768caf7c42466a97c87d928c0f87d8ca53f64273f6",
+  "retained_pins_after": {
+    "preflight-overlay.qcow2": "5bde6d27a87b66365f35c87e03144f914c864dda47beccc2b0734f3edfcef1b7",
+    "qemu/ucrt64/bin/qemu-img.exe": "b4ef313ad2bd5070e44a5cccb50d8c2529dd68303c44ef8926b4c5a38ca219ff",
+    "qemu/ucrt64/bin/qemu-system-x86_64.exe": "a812b50865ffcc7ddd43f9c33e9bb1ed7b3501c1f847ee99ede8d4b4a4a93742",
+    "stonking-server-cloudimg-amd64.img": "c93d013ac1116adf585bdd84d2e8b51039fc623fb8c6d33b70da4075c4934118",
+    "tool-bootstrap-overlay.qcow2": "da762be8cf147ef834961359511d3cf7cf5d47e04da2ed440f2c898befca9a91"
+  },
+  "seed_sha256": "7139e67738c130640f574f94e6dfd359828bb7f566a67ae4abfcd0ba39df89bb",
+  "serial_sha256": "21a6c7a0a38a4899003d3a5c2320708c9ac768eb19429e7e4a167f8ae00a3677",
+  "source_archive_sha256": "47e864e49025da1e505c32ae1c5f23428ed900b1ecc64468cb72478095824a84",
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "source_inputs_sha256": "c24d7e8f0aa6f3b07d108b7a1e69aae46ea78da3d43dcd65beb5cf33a28e2967",
+  "versioned_runner_sha256": "1008cc3ba5afb129c5d54c8bc030207c8e72715d9b8a1546984e956f919768ca"
+}

@@ -1,0 +1,55 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:214:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:232:5: warning: Variable name `hd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:248:48: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:250:48: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:250:59: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:252:48: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:252:59: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:260:81: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:263:6: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:263:17: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:264:10: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:254:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:263:6: warning: This simp argument is unused:
+  dif_neg hd
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [tightHybridWordLaw, hybridWordLaw, tightHybridSampler, hybridSampler, dif_pos hb, bundledWordLaw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:263:17: warning: This simp argument is unused:
+  dif_pos hb
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [tightHybridWordLaw, hybridWordLaw, tightHybridSampler, hybridSampler, dif_neg hd, bundledWordLaw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:273:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean:268:8: error: (kernel) unknown constant 'Math115.PhysicalTraceJoin.tightHybridWordLaw_eq'

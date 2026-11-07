@@ -1,0 +1,72 @@
+{
+  "upstream_pin": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "bindings": {
+    "OAI.Combinatorics.ContingencyTables.Sampling.GreedyFeasibleTable": {
+      "source_sha256": "f85ec82c670ac4a301fec6e37f9eb4d4a2e9b04a03be422b53922fcf7c9913e7",
+      "olean_sha256": "786b2f1e5e880edfcf89d86c372dedeebbf0b28b38b77741eb42f3b03329dd47"
+    },
+    "OAI.Combinatorics.ContingencyTables.Sampling.GreedyCellMachine": {
+      "source_sha256": "2d271b657c82eec4dbd7caba6995f732dfbb1a446ddae621635fe0cda52cabb7",
+      "olean_sha256": "68f9fb8dabbcd74a09efa90970f1f50469ede86457faefbea22f95e0c965b595"
+    },
+    "OAI.Combinatorics.ContingencyTables.Sampling.GreedyRowMachine": {
+      "source_sha256": "fa9205f9ded535b0c8dfc1bcb5719858f20610732992b148605ef053bf6b7675",
+      "olean_sha256": "86dfd2d797b5ec5dcd75d9464045b19308e7bfae63148297e7cac975bd5eb4ce"
+    },
+    "OAI.Combinatorics.ContingencyTables.Sampling.GreedyTableMachine": {
+      "source_sha256": "d7943254c72bb975026177a4426569b74376534ebcb8d89647bd805436bcaf28",
+      "olean_sha256": "950f3e3e644240a69bb6c1decd4f2b9942130216194aa6c339a7034bcb3a6788"
+    },
+    "OAI.Combinatorics.ContingencyTables.Sampling.GreedyRowComplexity": {
+      "source_sha256": "d1232c286c8a315793b7ad803334ebcb1bf582934ee5f287171d275a3416ba1c",
+      "olean_sha256": "efc02c419ed8d87fc3564379217005879e3ca92bec1b45bab0512e29957dce12"
+    },
+    "OAI.Combinatorics.ContingencyTables.Sampling.GreedyTableComplexity": {
+      "source_sha256": "eaaa05f7e3fa320d4f851432f68a1dc1997865ac4e2453636e62f74623624f30",
+      "olean_sha256": "96ec72fd575778400869318d44e08770a8fe849840eb0e8c1eecb0a144da8c15"
+    },
+    "OAI.Combinatorics.MatchingCount.Sampling.Plan": {
+      "source_sha256": "e3638311d686cc665686dfb9c5fed0338c3d9e91e75a6d4e279469718bb4f8fc",
+      "olean_sha256": "51d41a2582a7fb2dee6a4fe9d99a5a46f21f71020e6137b5dba746522575aec0"
+    },
+    "OAI.Combinatorics.MatchingCount.Graphs.RemainingBags": {
+      "source_sha256": "817afe77f69da4bc28a953b500cee4260fd2f8e7a62bee727d53d3eb4f928917",
+      "olean_sha256": "12686396ecebe2e3457dbac87b56cbe252cba6dae6691fa582f7bb9569cf635a"
+    },
+    "OAI.Combinatorics.MatchingCount.Sampling.Sym2Order": {
+      "source_sha256": "f46e9460dfba5f081e778a01f871e72d71f39084f297e72753d1c3bb259b5ced",
+      "olean_sha256": "cafd324d73ed53cfd33074913dcd88c16ab58beae83b15b0845225c5d0049388"
+    },
+    "OAI.Combinatorics.MatchingCount.Sampling.DiscreteLadderSteps": {
+      "source_sha256": "fa0572a369c97015ffba97b81ba4a43b7d61153614ec0c8932dc0e8a5250d812",
+      "olean_sha256": "c843ca1cdb9b4941b636f9cc2d88ea9f0057dffedf3ef546c98b9332e7ee5f9c"
+    },
+    "OAI.Combinatorics.MatchingCount.Algorithm.OnlineScheduleNat": {
+      "source_sha256": "3fe7ad6f334b5c39889d35195cc45db2d49ce4c00396dae66a5fdd6a3f43d2ab",
+      "olean_sha256": "50b0f04e32193f915b9d5d6c24b896f40afea5828ba1a63e30330d7245f575e5"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.Codec": {
+      "source_sha256": "085a133a90c9737853f121ed008a7d50461d8057227052a53511348df9a4c4d9",
+      "olean_sha256": "16fa469d52f0b432c6e1292f50cb0d8c909c485d5acf5fd720727878af098fa9"
+    },
+    "OAI.Combinatorics.MatchingCount.Tapes.Parse": {
+      "source_sha256": "095fd2069725c1bc16105442e95b1d7799cf69d08dcd895aa601c8c3818df13e",
+      "olean_sha256": "09098ceda973865df0c9388452161ffa94579331d778b07f38b0ada6735ac9e5"
+    },
+    "OAI.Combinatorics.ContingencyTables.Sampling.GreedyPublicProgram": {
+      "source_sha256": "97d4e2cd6dba935aeb8bd830750190089787a0065667a16016b8898b8c0b7f5c",
+      "olean_sha256": "db172381e9e5384363dbdad4074ca5b52cdb7340f2223cf8bf9fad12cd3ff6bd"
+    },
+    "ResearchBounds.TreeDegreeBounds": {
+      "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf",
+      "olean_sha256": "6e50be11d6d84f05a46926df2cae970d1c2e160852318e100409432fba23c649",
+      "scope": "Existing exact privately compiled helper reused; published generic source unchanged."
+    },
+    "ResearchBounds.TreeArithmeticDegree": {
+      "source_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76",
+      "olean_sha256": "075d51285a6c2bb0afff64b9f9e0a2c2ddb783f2b052db6bcfa419247ebf4f9d",
+      "scope": "Existing exact privately compiled helper reused; published generic source unchanged."
+    }
+  },
+  "scope": "Fourteen thin pinned prerequisites freshly compiled privately; two existing exact degree helpers and trusted baseline/cache imports reused. No prerequisite source duplication."
+}

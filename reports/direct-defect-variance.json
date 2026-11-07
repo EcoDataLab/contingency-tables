@@ -1,0 +1,293 @@
+{
+  "checks": "passed",
+  "scope": "exact identities and generic-method obstruction; no new universal gap bound",
+  "physical": [
+    {
+      "rows": [
+        2,
+        2,
+        1
+      ],
+      "columns": [
+        2,
+        2,
+        1
+      ],
+      "U": 2,
+      "L": 7,
+      "states": 49,
+      "balanced": 5,
+      "defects": 44,
+      "completion_weights": [
+        15,
+        16,
+        17
+      ],
+      "neighbor_weight_ratios": [
+        "173/16",
+        "200/17",
+        "43/4",
+        "85/8"
+      ],
+      "exact_observables": [
+        {
+          "observable": 0,
+          "variance_w": "8003551/6300",
+          "variance_a": "3978700/2661",
+          "variance_S": "12936912502159/201910825800",
+          "star_energy": "325770113143/227633400",
+          "DD_energy": "48416/9",
+          "trace_energy": "1550336634743/227633400"
+        },
+        {
+          "observable": 1,
+          "variance_w": "50896/175",
+          "variance_a": "302712/887",
+          "variance_S": "692646460851/5608634050",
+          "star_energy": "1377054027/6323150",
+          "DD_energy": "432",
+          "trace_energy": "4108654827/6323150"
+        },
+        {
+          "observable": 2,
+          "variance_w": "1827",
+          "variance_a": "2153118/887",
+          "variance_S": "38311142997/1121726810",
+          "star_energy": "3026591289/1264630",
+          "DD_energy": "5786",
+          "trace_energy": "10343740469/1264630"
+        }
+      ]
+    },
+    {
+      "rows": [
+        3,
+        3,
+        1
+      ],
+      "columns": [
+        4,
+        2,
+        1
+      ],
+      "U": 2,
+      "L": 7,
+      "states": 49,
+      "balanced": 5,
+      "defects": 44,
+      "completion_weights": [
+        15,
+        16,
+        17
+      ],
+      "neighbor_weight_ratios": [
+        "183/17",
+        "202/17",
+        "87/8"
+      ],
+      "exact_observables": [
+        {
+          "observable": 0,
+          "variance_w": "34155071/25920",
+          "variance_a": "51228979/32976",
+          "variance_S": "1183687874587/17675366832",
+          "star_energy": "57369876577/38592504",
+          "DD_energy": "101009/18",
+          "trace_energy": "273936000829/38592504"
+        },
+        {
+          "observable": 1,
+          "variance_w": "216839/720",
+          "variance_a": "81126/229",
+          "variance_S": "31186541795/245491206",
+          "star_energy": "243588061/1072014",
+          "DD_energy": "452",
+          "trace_energy": "728138389/1072014"
+        },
+        {
+          "observable": 2,
+          "variance_w": "29995/16",
+          "variance_a": "573847/229",
+          "variance_S": "2930734087/81830402",
+          "star_energy": "882648931/357338",
+          "DD_energy": "5925",
+          "trace_energy": "2999876581/357338"
+        }
+      ]
+    },
+    {
+      "rows": [
+        2,
+        2,
+        2
+      ],
+      "columns": [
+        4,
+        2
+      ],
+      "U": 3,
+      "L": 1,
+      "states": 126,
+      "balanced": 6,
+      "defects": 120,
+      "completion_weights": [
+        1
+      ],
+      "neighbor_weight_ratios": [
+        "15",
+        "25"
+      ],
+      "exact_observables": [
+        {
+          "observable": 0,
+          "variance_w": "29992/135",
+          "variance_a": "29992/135",
+          "variance_S": "5272/675",
+          "star_energy": "144688/675",
+          "DD_energy": "9434/9",
+          "trace_energy": "852238/675"
+        },
+        {
+          "observable": 1,
+          "variance_w": "1811/30",
+          "variance_a": "1811/30",
+          "variance_S": "5779/150",
+          "star_energy": "546/25",
+          "DD_energy": "28",
+          "trace_energy": "1246/25"
+        },
+        {
+          "observable": 2,
+          "variance_w": "2794/5",
+          "variance_a": "2794/5",
+          "variance_S": "26/5",
+          "star_energy": "2768/5",
+          "DD_energy": "1404",
+          "trace_energy": "9788/5"
+        }
+      ]
+    }
+  ],
+  "generic_obstruction": [
+    {
+      "scope": "abstract graph, not a physical-table construction",
+      "p": 4,
+      "U": 2,
+      "balanced_centers": 5,
+      "defects_per_center": 12,
+      "full_degree_bound": 5,
+      "variance_B": "10",
+      "variance_D": "120",
+      "trace_energy": 4,
+      "transversal_constant_lower": "5/2",
+      "transversal_constant_upper": 60,
+      "defect_variance_over_energy": "30",
+      "normalized_inverse_gap_lower": "300"
+    },
+    {
+      "scope": "abstract graph, not a physical-table construction",
+      "p": 9,
+      "U": 2,
+      "balanced_centers": 7,
+      "defects_per_center": 72,
+      "full_degree_bound": 10,
+      "variance_B": "28",
+      "variance_D": "2016",
+      "trace_energy": 6,
+      "transversal_constant_lower": "14/3",
+      "transversal_constant_upper": 126,
+      "defect_variance_over_energy": "336",
+      "normalized_inverse_gap_lower": "6720"
+    },
+    {
+      "scope": "abstract graph, not a physical-table construction",
+      "p": 16,
+      "U": 2,
+      "balanced_centers": 9,
+      "defects_per_center": 240,
+      "full_degree_bound": 17,
+      "variance_B": "60",
+      "variance_D": "14400",
+      "trace_energy": 8,
+      "transversal_constant_lower": "15/2",
+      "transversal_constant_upper": 216,
+      "defect_variance_over_energy": "1800",
+      "normalized_inverse_gap_lower": "61200"
+    }
+  ],
+  "actual_quadratic_load": [
+    {
+      "p": 3,
+      "U": 4,
+      "L": 7,
+      "row_margin": 29,
+      "column_margins": [
+        3,
+        4,
+        80
+      ],
+      "completion_weight": 351,
+      "designated_repair_fiber_load": 6,
+      "accepted_balanced_degree_weight": "104/9",
+      "explanation": "exact nonempty p-by-2 completion block; no fiber enumeration"
+    },
+    {
+      "p": 10,
+      "U": 11,
+      "L": 7,
+      "row_margin": 92,
+      "column_margins": [
+        10,
+        11,
+        899
+      ],
+      "completion_weight": 706252528630,
+      "designated_repair_fiber_load": 90,
+      "accepted_balanced_degree_weight": "171",
+      "explanation": "exact nonempty p-by-2 completion block; no fiber enumeration"
+    },
+    {
+      "p": 100,
+      "U": 101,
+      "L": 7,
+      "row_margin": 902,
+      "column_margins": [
+        100,
+        101,
+        89999
+      ],
+      "completion_weight": 117153636917516583796621387797051628390052227330600948508229954618912327202960032055976508100138877256832516143466878670162134932178000,
+      "designated_repair_fiber_load": 9900,
+      "accepted_balanced_degree_weight": "18711",
+      "explanation": "exact nonempty p-by-2 completion block; no fiber enumeration"
+    }
+  ],
+  "one_small_column": {
+    "rows": [
+      3,
+      3,
+      3
+    ],
+    "columns": [
+      2,
+      3,
+      4
+    ],
+    "U": 3,
+    "L": 7,
+    "states": 24,
+    "balanced": 6,
+    "defects": 18,
+    "completion_weights": [
+      224,
+      225
+    ],
+    "contexts": 5,
+    "exact_repair_loads": [
+      2,
+      4
+    ],
+    "load_envelope": 4,
+    "transpose_graph_and_conductance_equivalence": "passed"
+  }
+}

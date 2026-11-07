@@ -1,0 +1,21 @@
+{
+  "only_changed_proof": "Math115.ComputedReferenceTrace.referenceTrace_canonical_P",
+  "all_other_source_and_statement_identical": true,
+  "attempts": [
+    {
+      "attempt": "01",
+      "source_sha256": "60c1b43af802b162ff7e22d5c5336aef90de5ff9e4f286b89c0d74d530110c21",
+      "source_unchanged_since_compile": true
+    },
+    {
+      "attempt": "02",
+      "source_sha256": "0bcfbccbae42e8b7417a7e6c329b3205ba3f53afee3d4a0512733623214695fc",
+      "source_unchanged_since_compile": true
+    },
+    {
+      "attempt": "03",
+      "source_sha256": "06402e7543c227ad1427872f94dc5889359f696ba308e820e6e9cfd92d3e4f97",
+      "source_unchanged_since_compile": true
+    }
+  ]
+}

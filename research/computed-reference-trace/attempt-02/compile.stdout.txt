@@ -1,0 +1,60 @@
+<packet>/revisions/attempt-02/formal/ResearchComputedReference/Trace.lean:201:2: error: Tactic `rfl` failed: [Error pretty printing: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.(invalid MessageData.lazy, missing context)]
+
+I J : Type u
+inst✝⁴ : Fintype I
+inst✝³ : Fintype J
+inst✝² : LinearOrder I
+inst✝¹ : LinearOrder J
+r : I → ℕ
+c : J → ℕ
+U L : ℕ
+href : Nonempty (LargeRows r U) ∧ Nonempty (LargeColumns c U)
+inst✝ : Nonempty (DefectVertices r c U L)
+hp : 2 ≤ Fintype.card (Cells (firstPaperSmall r c U))
+d e : DefectVertices r c U L
+⊢ ((if d = e then 0
+      else
+        1 / (2 * ↑(defectAllowance r c U)) *
+            (referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑d ↑e +
+              ∑ b,
+                referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑b ↑d *
+                    referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑b ↑e /
+                  ∑ d, referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑b ↑d) /
+          defectWeight r c U L d) +
+      if d = e then
+        1 -
+          ∑ z,
+            if d = z then 0
+            else
+              1 / (2 * ↑(defectAllowance r c U)) *
+                  (referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑d ↑z +
+                    ∑ b,
+                      referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑b ↑d *
+                          referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑b ↑z /
+                        ∑ d, referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑b ↑d) /
+                defectWeight r c U L d
+      else 0) =
+    (if d = e then 0
+      else
+        1 / (2 * ↑(defectAllowance r c U)) *
+            (referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑d ↑e +
+              ∑ x,
+                referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑x ↑d *
+                    referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑x ↑e /
+                  ∑ d, referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑x ↑d) /
+          defectWeight r c U L d) +
+      if d = e then
+        1 -
+          ∑ z,
+            if d = z then 0
+            else
+              1 / (2 * ↑(defectAllowance r c U)) *
+                  (referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑d ↑z +
+                    ∑ x,
+                      referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑x ↑d *
+                          referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑x ↑z /
+                        ∑ d, referenceConductance r c U L (Classical.choice ⋯) (Classical.choice ⋯) ↑x ↑d) /
+                defectWeight r c U L d
+      else 0

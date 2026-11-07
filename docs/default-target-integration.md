@@ -1,4 +1,8 @@
-# Default-target integration
+# Historical baseline integration
+
+This page records the October baseline integration and its exact Linux receipt.
+The current main command is `make lean`; its additional chain and sampler
+selection is described in the [integration replay guide](../research/repair-accept/INTEGRATION-REPLAY.md).
 
 The complete bounded-sampler theorem remains proved at the published `fe72b20` checkpoint: one fixed machine gives feasible output on every random tape and total variation error at most `2^-h` within uniformly polynomial time, for equal-total natural margins and numeric `h≥1`. Its [exact statement map and evidence](outer-sampler-compiler-checkpoint.md) include empty dimensions and zero margins.
 
@@ -31,4 +35,4 @@ bash scripts/verify_lean.sh focused --serial
 
 The focused workflow includes the compiled-environment audit. Preserve the complete logs, source/object hashes, import closure, statement types, axiom reports, and before/after inventories. Linux reproduction uses the same serial workflow and existing resource caps; serial execution limits concurrent compilers, not the memory used by one compiler. Official dependency caches and ordinary Lean/compiler inputs remain trusted. Passing Python checks does not verify these Lean targets.
 
-The numerical complete runtime degree and practical sampler performance remain unknown. Strict Comparator acceptance of this sampler still needs its own complete run; the [tested tiny fixture](../formal/results/strict-comparator-smoke/README.md) verifies only that fixture. Human mathematical review, benchmarks against matching target laws, and held-out application validation remain separate obligations in the [contributor handoff](handoff.md).
+The later [explicit-degree packet](composed-complexity.md#closed-explicit-degree-for-the-existing-public-machine) supplies a conservative numerical degree for this same machine. It has not established a smaller complete runtime degree than upstream. That packet is separate from the historical Linux receipt above. Strict Comparator acceptance of this sampler still needs its own complete run; the [tested tiny fixture](../formal/results/strict-comparator-smoke/README.md) verifies only that fixture. Current practical benchmarks, commuting backtests and outstanding human review are described in the [contributor handoff](handoff.md).

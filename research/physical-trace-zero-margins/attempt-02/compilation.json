@@ -1,0 +1,16 @@
+{
+  "returncode": 1,
+  "seconds": 53.961869542021304,
+  "stdout_sha256": "176b1ad5c61a55e11255c4eb1152ff3e5f0ec9f9840a7a12517fa60d1f5d7494",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_unchanged": true,
+  "source_sha256": "2252560b80815e20c38515bcefc9428a5112e8e33e4b61c565fcc29c1d7fc3b2",
+  "base_head": "25db2d582d90b07da41b79e4a103bbfc361e15bb",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "scope": "Failed ordinary compilation; no module verification or assumption audit.",
+  "public_diagnostics": {
+    "compile.stdout.txt": "445588ade8d09688539c8a1680baaaa91474c561a53a8e4be19bed443831b372",
+    "compile.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

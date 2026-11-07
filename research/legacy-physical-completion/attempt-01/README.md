@@ -1,0 +1,1 @@
+The first proof attempt hit the default heartbeat limit while using `exact_mod_cast` to transport the backend accuracy inequality. Replacing that tactic with the direct rational cast-order lemma compiled successfully in attempt-02. These diagnostics retain the failed attempt; they do not describe the final proof bytes. No dependency rebuild or compiler-memory increase was needed.

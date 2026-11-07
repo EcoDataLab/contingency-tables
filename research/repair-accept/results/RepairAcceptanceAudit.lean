@@ -1,0 +1,8 @@
+import RepairAcceptanceCoin
+import RepairAcceptanceThreshold
+import RepairAcceptanceLaw
+import Math115.AllSmallRepairFiber
+import RepairAcceptancePhysical
+import Math115.FiniteStarTrace
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [RepairAcceptanceCoin, RepairAcceptanceThreshold, RepairAcceptanceLaw, Math115.AllSmallRepairFiber, RepairAcceptancePhysical, Math115.FiniteStarTrace] headlines [Math115.AllSmallRepairFiber.reduced_repairTable_fiber_card, Math115.RepairAcceptancePhysical.physical_finiteBit_retry_variation, Math115.FiniteStarTrace.poincare_transfer]

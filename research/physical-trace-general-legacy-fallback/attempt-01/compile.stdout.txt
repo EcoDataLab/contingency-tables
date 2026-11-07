@@ -1,0 +1,32 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLegacyFallback.lean:82:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLegacyFallback.lean:83:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLegacyFallback.lean:104:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLegacyFallback.lean:111:63: error(lean.unknownIdentifier): Unknown identifier `mapLaw_constant`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralLegacyFallback.lean:111:56: error: unsolved goals
+xs ys : List ℕ
+htotal : ∑ i, listMargin xs i = ∑ j, listMargin ys j
+hb : positiveTraceBranch xs ys = TraceInputBranch.deterministic
+this : Nonempty (Table (listMargin xs) (listMargin ys)) := table_nonempty (listMargin xs) (listMargin ys) htotal
+X : Table (filteredMargin xs) (filteredMargin ys) := GreedyFeasibleTable.table (filteredMargin xs) (filteredMargin ys) ⋯
+⊢ restoreZeroMarginListsLaw xs ys (mapLaw uniformLaw fun x => X) = restoreZeroMarginListsLaw xs ys (pointLaw X)

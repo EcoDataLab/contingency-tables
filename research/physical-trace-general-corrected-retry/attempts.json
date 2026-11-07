@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralCorrectedRetry",
+  "verified_attempt": "attempt-01",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "9b4823603b9591be27d404e2fb7775c2e810572cef41856ba7b0590362a9dc55",
+      "compile_returncode": 0,
+      "compile_seconds": 17.033916749991477,
+      "audit_returncode": 0,
+      "audit_seconds": 93.28875329205766,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

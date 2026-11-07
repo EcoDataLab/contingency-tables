@@ -1,0 +1,31 @@
+<packet>/revisions/attempt-03/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean:105:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  o ≥ 0
+  l ≥ 0
+  k ≥ 0
+  k - o ≥ 1
+  g ≥ 0
+  g - l ≤ -1
+  f ≥ 0
+  e ≥ 0
+  e - f ≤ -1
+  d ≥ 0
+  d - e + f ≥ 0
+  d ≥ 0
+  b ≥ 0
+where
+ b := ↑(if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).1).2 then 1
+  else 0)
+ d := ↑(((↑↑a.snd).1 i j +
+      if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).1).2 then 1
+      else 0) -
+    if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).2).2 then 1
+    else 0)
+ e := ↑(if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).1).2 then 1
+  else 0)
+ f := ↑(if ↑i = ↑(↑(terminalRepairLabels r c U L a.fst).2).1 ∧ ↑j = ↑(↑(terminalRepairLabels r c U L a.fst).2).2 then 1
+  else 0)
+ g := ↑↑(↑(terminalRepairLabels r c U L a.fst).2).1
+ k := ↑n
+ l := ↑m
+ o := ↑↑(↑(terminalRepairLabels r c U L a.fst).2).2

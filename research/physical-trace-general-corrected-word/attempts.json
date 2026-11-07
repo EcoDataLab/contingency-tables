@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralCorrectedWord",
+  "verified_attempt": "attempt-09",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "c019e0c40ab4e77553f5a17bc5d4fd484627a7d19cc0b51223b636e4346da722",
+      "compile_returncode": 1,
+      "compile_seconds": 46.89454658282921,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "af68d85f19fec56d18b0737956c04e5921c6e5860e429efff0a5a1f143324624",
+      "compile_returncode": 1,
+      "compile_seconds": 46.12138608330861,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-03",
+      "source_sha256": "6bd58be7f281a0d0a97e003f11e0e1f8d02c2cf7225b5aadca60db4f0305d5fc",
+      "compile_returncode": 1,
+      "compile_seconds": 44.761839542072266,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-04",
+      "source_sha256": "046deda942a61a8ec993a66443ab4d8cdfd92dfc0567b9634c758628702131b2",
+      "compile_returncode": 1,
+      "compile_seconds": 141.62632566597313,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-05",
+      "source_sha256": "e9f99ecb7d02ec4e5a07d5da3d24f70bf455de6e61bbda524112d792eca17917",
+      "compile_returncode": 1,
+      "compile_seconds": 46.97311841696501,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-06",
+      "source_sha256": "a0db6b23c6c84c0f8854f98c295a2652503253bc11430229f88db1d57a3e473b",
+      "compile_returncode": 1,
+      "compile_seconds": 44.689960750285536,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-07",
+      "source_sha256": "806aa4dc89477b03f29be32cb77808933eef0dc7025ceaa75b145793ecda39f6",
+      "compile_returncode": 1,
+      "compile_seconds": 42.50598887493834,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-08",
+      "source_sha256": "75bbcc0326876513ee267ce19166b5272c6b8fe533d5ef049d757d3c4cd9e749",
+      "compile_returncode": 1,
+      "compile_seconds": 41.4629321671091,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-09",
+      "source_sha256": "72dd2a6d37c4aab91e12b2f9eb28ca6823cec3bbd932c5db6766d210b21ce3fe",
+      "compile_returncode": 0,
+      "compile_seconds": 15.437164374627173,
+      "audit_returncode": 0,
+      "audit_seconds": 92.46275066584349,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

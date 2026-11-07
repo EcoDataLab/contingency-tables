@@ -1,0 +1,8 @@
+--- initial.lean
++++ checked.lean
+@@ -17 +17 @@
+-open Math115.LegacyPhysicalCompletion Math115.PhysicalCompletionWidth
++open Math115.LegacyPhysicalCompletion Math115.PhysicalCompletionWidth Math115.PhysicalCompletionOracle
+@@ -47 +47 @@
+-def singletonCompletionDraw (z : States r c U L) (_word : Fin 0 → Bool) : Fibre r c U L z :=
++def singletonCompletionDraw (z : States r c U L) (_word : Fin 0 → Bool) : Math115.PhysicalStationarySuccess.Fibre r c U L z :=

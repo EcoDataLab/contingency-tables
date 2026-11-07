@@ -1,0 +1,647 @@
+{
+  "status": "compiled-and-focused-checked-exact-unconditional-reference-packed-trial",
+  "declaration": "Math115.ReferenceRuntimeNext.typed_actual_packedTrial",
+  "exact_original_realizer": "Math115.LatticeOuterProgram.packedTrialRealizer",
+  "all_input_scope": "every raw LatticeOuterProgram.PackedTrial tuple; arbitrary dimensions, cutoff/padding, catalogues, views, precision/schedule values, invalid rows, zero/short/extra words and all rejection/fallback paths",
+  "contract": "a natural-coefficient polynomial of degree at most K uniformly bounds the original charged tree-machine work plus original encoded Option MatrixCode output, evaluated at original input encoding weight",
+  "degree_decimal": "249569086149969927754465653530857316378662151100210635200859836899115394502462433742952346464893494918298349218830740503411950490371359547202234848664532691737852411594490630793354441329305157924334049610980689568025133584089872528423843231844695041473652053370821139768976712765532769803598329631937527257644643545333786414444514615499205181845594806221996072304130411642154202278059154591154845186413464438667829092073424522772982022332107776812250045880396804598645709356960800186404581118066277180403051396836632512938969750164048642049142739626451320875705881681967964561744998704271360",
+  "degree_decimal_digits": 591,
+  "degree_decimal_sha256": "457ad5344b27be3dbd554cb28dcf3bbd17e2735c8a6d69c610d3f07940e4aba4",
+  "degree_formula": "1259904 * 16236962784 * (1 + 288 * 504 * 211958712 * completionDrawDegree)",
+  "degree_components": {
+    "prepareTrial": 1259904,
+    "profileWalk": 12199682796582558701020431472379011374309723016488768812616461262878430516462983621905834360407048315144675590899661629294864970581053017811224060172015413211584159596727114517935294322664097235811837109649097996545870414588367457722049829882231989241738555454623119832403564124534809022132843617826514031543355356062528738150977154242986053677236005423066262040444791326483380941011134472122294978975118237987132787493761141011767768297506467776352330046103979923629526015683511020054782937237363762952201133896207225404489181293412875944827638025147017538335727100188688385,
+    "trialParametersOutput": 3,
+    "residualInputOutput": 635876136
+  },
+  "independent_size_bound": "original profileFold_weight gives final state degree3; currentParameters/withPrecision structural output bounds give trialParameters degree3; original residual Typed211958712 yields outputdegree635876136; terminal completion cost is dominated by the original walk cost",
+  "compiler_path": ".tools/elan/toolchains/leanprover--lean4---v4.34.1/bin/lean",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "compiler_version": "Lean4.34.1 arm64-apple-darwin24.6.0 commit5045d0056413266e57c625dcd7c365b10e377c52",
+  "own_modules": [
+    {
+      "module": "ReferenceRuntime.DecoderDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DecoderDegree.lean",
+      "source_sha256": "2b86c895c870cb76ecbb7b38e0310193cf1ce792be8af53d8cf761fa7450646a",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/DecoderDegree.olean",
+      "object_sha256": "01175e89179c526cdf5cffb543c143b00c2a8a7811c531ae6f2b080fd2da8096",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DecoderDegree.compilation.json",
+      "compile_receipt_sha256": "a60d68014c56461e4e0088d72c8337310c29f2dfd308c6677beb5cfb2a37f559",
+      "stdout_sha256": "422823b1a1cec363f532e72835361a3139d705a4b088f754c03d1a561f6f15c1",
+      "returncode": 0,
+      "compiler_seconds": 18.003,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 1
+    },
+    {
+      "module": "ReferenceRuntime.CompletionPrepareDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/CompletionPrepareDegree.lean",
+      "source_sha256": "9ac954ea1c26f95a79fb0dcd01fffc0bff64efd8956f37d5ef225c3231927280",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/CompletionPrepareDegree.olean",
+      "object_sha256": "4ecefd81971b88d319f3043477af0546a7b8ccc3bfcf615204b77eaa37845642",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_CompletionPrepareDegree.compilation.json",
+      "compile_receipt_sha256": "b2a07f771b13b89c9b8da84615e43725cf55b520542794f63cbc4070d5099323",
+      "stdout_sha256": "74f48dc778126596042fb0b44c6c56c01270efaaa8ad26c0b36cd6aab1db6c3f",
+      "returncode": 0,
+      "compiler_seconds": 15.975,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 1
+    },
+    {
+      "module": "ReferenceRuntime.DenseLayoutDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseLayoutDegree.lean",
+      "source_sha256": "bb246a35b8e926fa6e9ee508662a50eee2fbefbfcfece0ddae0c8049fc7f62ce",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/DenseLayoutDegree.olean",
+      "object_sha256": "892c637205d52c1640b513e8d0b6bd46f55e74306b7ef38d27c2b0dc5367f431",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DenseLayoutDegree.compilation.json",
+      "compile_receipt_sha256": "8b7523613d5c56163f94b3bf7bc739de7b1410f10e3450be96c7da3bfd044552",
+      "stdout_sha256": "ead8ea5c6adabb726e521ac8f4b19e919069949c870487c171573d6332d1558f",
+      "returncode": 0,
+      "compiler_seconds": 19.478,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 2
+    },
+    {
+      "module": "ReferenceRuntime.DenseWidthCoreDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseWidthCoreDegree.lean",
+      "source_sha256": "8d5029395a6c923886ecbcec6abd7ea90fa3475f9bf20b76439b5165543c80c8",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/DenseWidthCoreDegree.olean",
+      "object_sha256": "2a1d3abc69405f2f3499c9f5f7c036680cc041e881dea938ebd473a031de801e",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DenseWidthCoreDegree.compilation.json",
+      "compile_receipt_sha256": "2c3fa24ff0de7edbe09da620411576213e594dae3915cd0deb6702d45363ad59",
+      "stdout_sha256": "8887e7ef5682aa71371a861979f8177b239099e12e78f279cac6d38957be5c45",
+      "returncode": 0,
+      "compiler_seconds": 24.162,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 2
+    },
+    {
+      "module": "ReferenceRuntime.DenseTrialWidthDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseTrialWidthDegree.lean",
+      "source_sha256": "e1e395391910ca649711ba4cb813d090567699e793699b45d9faba8b76067720",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/DenseTrialWidthDegree.olean",
+      "object_sha256": "23a7de1290a94ef04a49b283eede23866e5c5c3c37e49a270c6cfab61f7c539e",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DenseTrialWidthDegree.compilation.json",
+      "compile_receipt_sha256": "0e3fc8002a38178d015b158491a8e8e5d51ad4665efc507bc45c7cdb45af59b3",
+      "stdout_sha256": "2b56a8363a780b2dc3497e117d5a80432bdd91f6dc932c08eeb6eaa1e879ae79",
+      "returncode": 0,
+      "compiler_seconds": 21.681,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 2
+    },
+    {
+      "module": "ReferenceRuntime.CanonicalBitCountDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/CanonicalBitCountDegree.lean",
+      "source_sha256": "bfa12a33e6977eb302543e8f0f6b5123a613bfa1ec26ad0b7cf51911c8489010",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/CanonicalBitCountDegree.olean",
+      "object_sha256": "4b4d5418fdfe9e9c9b5eb21614c563f48613c799070d171d9b7ba4fc24ee3a54",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_CanonicalBitCountDegree.compilation.json",
+      "compile_receipt_sha256": "c2b1ffa402a7333b5340c51de99b09d81598a887a0ff83a84538c5c595afdcb5",
+      "stdout_sha256": "19b37df158b0a9e49f71a8cdefd213febce91b1098468c9a2b57129e07ac94a4",
+      "returncode": 0,
+      "compiler_seconds": 15.791,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 1
+    },
+    {
+      "module": "ReferenceRuntime.DenseAcceptanceDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseAcceptanceDegree.lean",
+      "source_sha256": "a444fa4b53f6be3de8aed0f75fccac780e2aee59f7fa752ce748f25bebb62598",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/DenseAcceptanceDegree.olean",
+      "object_sha256": "31596c367a9f5249a718ac5d4148b2336177e7fbf239b6dfbf9c92f3b5506051",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DenseAcceptanceDegree.compilation.json",
+      "compile_receipt_sha256": "4e99cc49f898a22cf1cad6363fb4c8aa790168bcdb6d81a54d402ed3b082fe5d",
+      "stdout_sha256": "2368d6d9c857ab2224659d0761942ee501f83a64233d42f96087c6714d96ddf5",
+      "returncode": 0,
+      "compiler_seconds": 21.517,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 2
+    },
+    {
+      "module": "ReferenceRuntime.DenseExponentDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseExponentDegree.lean",
+      "source_sha256": "89f6fef81114a1a6f6bd2be9f7b90b4957c037e6f9bfd4e90b619ee1b8ae39e3",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/DenseExponentDegree.olean",
+      "object_sha256": "371d4caf41697b03f91289703e22c8ca1fae1fb5fb37e2c1d72d6f0733a2b56d",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DenseExponentDegree.compilation.json",
+      "compile_receipt_sha256": "fe0a765c9e1793aa19989bdbbdfc990ee278d395ad9ffce35ceec89705714642",
+      "stdout_sha256": "53b324bdea1e789781f00640bdfa1381e76ffbbafe7bc55d3b0d0250267435d3",
+      "returncode": 0,
+      "compiler_seconds": 17.201,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 2
+    },
+    {
+      "module": "ReferenceRuntime.DenseTransitionDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseTransitionDegree.lean",
+      "source_sha256": "ba13993f6110458ecee336385d040b95685ab46411ba5e21a71730bc7e82142b",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/DenseTransitionDegree.olean",
+      "object_sha256": "174ab7c68dd9530f9cdacf694a22019b681a8629ee654b587042e98fc43ccc6b",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DenseTransitionDegree.compilation.json",
+      "compile_receipt_sha256": "141b00ab6c38435db67b02403d3b1286c4d0b4c9fbdc2d21abe35f8935541fd7",
+      "stdout_sha256": "2112e0173800e7ece05dca3fae36f3780741529b4d845657a3523fc6aa462f46",
+      "returncode": 0,
+      "compiler_seconds": 20.118,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 5
+    },
+    {
+      "module": "ReferenceRuntime.DependentChunksDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DependentChunksDegree.lean",
+      "source_sha256": "4b056f67093c3bb58b64aa30679fbbfe355b86726b2131b745e24f50dd824c58",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/DependentChunksDegree.olean",
+      "object_sha256": "bab7c3a916d12980887ac5b50cedc734b687f5a8f743074a22a8c6bda49baa80",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DependentChunksDegree.compilation.json",
+      "compile_receipt_sha256": "03ca9d6c3b036e0fad0c64d1fe3fe49bcf5e52e711446e46fb843c4b031ffae5",
+      "stdout_sha256": "f5b994120b285d678153f91522328239f98402be1cec0421c8d87eee4a831b6b",
+      "returncode": 0,
+      "compiler_seconds": 14.763,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 1
+    },
+    {
+      "module": "ReferenceRuntime.DenseOffsetDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseOffsetDegree.lean",
+      "source_sha256": "f5d5018938a1aba7e3206f03f09f1992e01aeab38d923c9984fb74853ca4bad2",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/DenseOffsetDegree.olean",
+      "object_sha256": "62fb1b8858daac7379fff8333afac2d5b4053af52da77d2d411f53b9c3d1b2c5",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DenseOffsetDegree.compilation.json",
+      "compile_receipt_sha256": "52e12895c917b3ff9113ed820fa61319890ef248b4ef995505c53fb3dae2a44f",
+      "stdout_sha256": "4962090cedf890ed5ffacc5bc2f922abea1752aae0a3864913a362a3e5cbc6ce",
+      "returncode": 0,
+      "compiler_seconds": 25.965,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 2
+    },
+    {
+      "module": "ReferenceRuntime.DenseTrialConstructionDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseTrialConstructionDegree.lean",
+      "source_sha256": "5d016aeb619de3f20315c1595ce3df1362515da2d676a58078dabbc7875a184b",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/DenseTrialConstructionDegree.olean",
+      "object_sha256": "0f514827ddab403cbb4406561905fb8c18620984965bd79c8c126e25ad80ce5c",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DenseTrialConstructionDegree.compilation.json",
+      "compile_receipt_sha256": "9e8756d5d8606960a0ae0477dde9ef4d1ef3ed35dbb8686b78d0eeb400a8283d",
+      "stdout_sha256": "dbe6757d14460878f2585f446ae7c4460bab23ca0e09e38bda6d9cb9dc0c4f4b",
+      "returncode": 0,
+      "compiler_seconds": 31.435,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 1
+    },
+    {
+      "module": "ReferenceRuntime.CompletionReservationDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/CompletionReservationDegree.lean",
+      "source_sha256": "cb070243a60ce32cd86c2b76929fadb6e902b9daee0ef8023cbd8217a6a655ee",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/CompletionReservationDegree.olean",
+      "object_sha256": "b58db1934ab2ffc14dec8ebb71636c18f7e677d331ee0dacfe0481a6959a6346",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_CompletionReservationDegree.compilation.json",
+      "compile_receipt_sha256": "a320c671242c634d42e47ab5ce26b299a0bf64b572163eee1e38314e77f76e7f",
+      "stdout_sha256": "80b076f0ffc374b49c44a3746fa37675e1b5ac3bedc4515190cef21f8209f773",
+      "returncode": 0,
+      "compiler_seconds": 31.682,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 2
+    },
+    {
+      "module": "ReferenceRuntime.DenseDrawDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseDrawDegree.lean",
+      "source_sha256": "93ff60133bbe4ed3d081a5c450f731801af1303902254fe300772d3a2dd49bda",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/DenseDrawDegree.olean",
+      "object_sha256": "8b7c5cac9c4dee9172fed396e9cad0f119fa5c5a2f21546c407135cbc97eb9ae",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DenseDrawDegree.compilation.json",
+      "compile_receipt_sha256": "b971f01e77f4f65657acd786e8c616a7b1e3314281b01494ad11cb765a8bb929",
+      "stdout_sha256": "ff933a829879abb4e9b5da3957309e0a31c924237655648eb565ba9ec0402a16",
+      "returncode": 0,
+      "compiler_seconds": 43.467,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 2
+    },
+    {
+      "module": "ReferenceRuntime.CompletionDrawDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/CompletionDrawDegree.lean",
+      "source_sha256": "3f80174c2b098c558855441fd3d838a4da5d2688f784bb0f1957fe0ef2364d95",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/CompletionDrawDegree.olean",
+      "object_sha256": "7157ec06abacc3db9ead80cf6eaf4c59821a066eb87705185bcb0d8a1e392416",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_CompletionDrawDegree.compilation.json",
+      "compile_receipt_sha256": "bd596f30b4c582fba36380a5e2f6fca14112048f23fab56674cbb467aeeab213",
+      "stdout_sha256": "b00d92b3bd4a685772479b2dcac7856c056098bd669cc04a07ae70e94da7e372",
+      "returncode": 0,
+      "compiler_seconds": 39.011,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 2
+    },
+    {
+      "module": "ReferenceRuntime.OuterWordParsingDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/OuterWordParsingDegree.lean",
+      "source_sha256": "ebbfba8249734d2a86f5012bb3f0c50e7059665cf0e77f0e3c8ba2471cf0bf48",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/OuterWordParsingDegree.olean",
+      "object_sha256": "36e479a7d3c3bfa1da09ac84df94d02a4cbe4a37a39aef95497d9b648990d0ac",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_OuterWordParsingDegree.compilation.json",
+      "compile_receipt_sha256": "5b1de89f3b5be2686cfa6c1a82e4b4bf460753d09c65a462c4b20793f08cab31",
+      "stdout_sha256": "938b0e7b8a875ea850dc349cd97a92482fa1babd996f2b8ebadb196140cc0de0",
+      "returncode": 0,
+      "compiler_seconds": 30.074,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 1
+    },
+    {
+      "module": "ReferenceRuntime.ProfileStepDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/ProfileStepDegree.lean",
+      "source_sha256": "bfc2cc72ef9992976a16c4b514b90836adb6d0bb4289a568ef9c7446f02f92b6",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/ProfileStepDegree.olean",
+      "object_sha256": "a828cea133744674e234b1338a18cf79c50f27f74282adde43e59fa3d7ca1d9b",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_ProfileStepDegree.compilation.json",
+      "compile_receipt_sha256": "b10e181438e5ec468affedb00c9dc3ce4f879da5f661f1f072aeb7b8d867f750",
+      "stdout_sha256": "5304689a34e19f2d9ef33f69bd6d803b0a18833786e0caeadc1b98281f8358de",
+      "returncode": 0,
+      "compiler_seconds": 14.824,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 2
+    },
+    {
+      "module": "ReferenceRuntime.PackedTrialDegree",
+      "source": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/PackedTrialDegree.lean",
+      "source_sha256": "ce5fd794369db425d663746c65932f91d725208d12acc3be03215fcfe9a04e18",
+      "object": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/PackedTrialDegree.olean",
+      "object_sha256": "496c749e9c53a8023826a214cb83bc1304f8dadbfba494f131bf6445ac3d6999",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_PackedTrialDegree.compilation.json",
+      "compile_receipt_sha256": "216d6646afc93732dee1b831b0663b5e394698e8f875dd611298a1ce2e7b285e",
+      "stdout_sha256": "c53d0147f1307506e3b2401dabc4f59e645c49438ae31518cc79de0b1e6601ea",
+      "returncode": 0,
+      "compiler_seconds": 31.603,
+      "threads": 2,
+      "memory_mib": 8192,
+      "focused_checks": 3
+    }
+  ],
+  "focused_axiom_checks": [
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_decode",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DecoderDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_completionPrepare",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.CompletionPrepareDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_unflattenGrid",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseLayoutDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_flatToGridData",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseLayoutDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_gridCellWidth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseWidthCoreDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_offsetLengths",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseWidthCoreDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_denseTrialWidth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseTrialWidthDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_denseParameterBits",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseTrialWidthDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_canonicalBitCount",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.CanonicalBitCountDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_dyadicWordAccept",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseAcceptanceDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_axisWordStep",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseAcceptanceDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_denseComponent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseExponentDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_flatExponent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseExponentDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_denseFlatWordWalk",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseTransitionDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_flatMetropolisStep",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseTransitionDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_denseAdvance",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseTransitionDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_denseWalkWords",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseTransitionDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_denseWordChunks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseTransitionDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_dependentChunks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DependentChunksDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_scaledWord",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseOffsetDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_offsetMatrix",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseOffsetDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_denseTrialCompletion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseTrialConstructionDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_completionWordWidth",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.CompletionReservationDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_completionReservedWords",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.CompletionReservationDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_denseTrialCode",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseDrawDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_canonicalDenseDraw",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.DenseDrawDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_completionTrial",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.CompletionDrawDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_completionDraw",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.CompletionDrawDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_referencePrepareTrial",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.OuterWordParsingDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_actual_profileStep",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.ProfileStepDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_actual_profileWalk",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.ProfileStepDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.referenceTrialParameters_output",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.PackedTrialDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_referenceTrialCompletion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.PackedTrialDegree"
+    },
+    {
+      "declaration": "Math115.ReferenceRuntimeNext.typed_actual_packedTrial",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "module": "ReferenceRuntime.PackedTrialDegree"
+    }
+  ],
+  "own_module_count": 18,
+  "focused_axiom_check_count": 34,
+  "standard_axioms_only": true,
+  "reused_prerequisite_receipts": [
+    {
+      "path": ".local/further-gap/draw-runtime-next/input-normalization/final-audit-01/verification.json",
+      "sha256": "436452a02c55c08237572790166a15cead2b5f9a1f28e9831feba9379bff3b3b",
+      "ordinary_reused_dependency": true
+    },
+    {
+      "path": ".local/further-gap/draw-runtime-next/completion-output/verification.json",
+      "sha256": "97ea7cc41a4d5cf16723360d977e86f7e89f7c5461481310d56bdad6ba2195cc",
+      "ordinary_reused_dependency": true
+    },
+    {
+      "path": ".local/further-gap/draw-runtime-next/reference-metadata/verification.json",
+      "sha256": "4962affaca8012c4508db158bba555abdf559f4946fb4a8dc9b35b0a7ada1b3e",
+      "ordinary_reused_dependency": true
+    },
+    {
+      "path": ".local/further-gap/draw-runtime-next/unit-trial-cost/verification.json",
+      "sha256": "591386cecd4858b241b459f9a84ec4680d7c989c87a8a77a1b3c0cdb30911b53",
+      "ordinary_reused_dependency": true
+    },
+    {
+      "path": ".local/further-gap/draw-runtime-next/affine-mapwith/AffineMapWith_Audit.compilation.json",
+      "sha256": "2fe8fdf80e77be218dc39e1ccbe4a967f95d3610ae5237b22489f58f4a9c83cb",
+      "ordinary_reused_dependency": true
+    }
+  ],
+  "earlier_binding_receipts": [
+    "dependency-bindings.json",
+    "canonical-input-bindings.json",
+    "canonical-verification.json",
+    "dense-transition-verification.json"
+  ],
+  "source_review": {
+    "path": ".local/further-gap/draw-runtime-next/reference-trial-cost/SOURCE_REVIEW.md",
+    "sha256": "0764e3af9c34edec255f940a4812dbf0924080948acf7c3cccac5acf42da6988",
+    "scope": "independent source and ordinary saved endpoint evidence; no extra audit beyond existing reports"
+  },
+  "failed_attempts_retained": [
+    "attempts/decoder-01",
+    "attempts/dense-acceptance-01-failed"
+  ],
+  "boundary": "no original algorithm/codec changes, no desired-cost or valid-input premise, no dependency rebuild, no default/public machine measured-runtime or strict challenge acceptance claim; publicDraw/public-machine composition is a separate lane"
+}

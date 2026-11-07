@@ -1,0 +1,4 @@
+<repo>/<retry-source>/RetryRuntime/WordChunksDegree.lean:19:4: error: 'change' tactic failed, pattern
+  z.2.length / z.1 ≤ weight z
+is not definitionally equal to target
+  ((fun x => x.1 / x.2) ∘ fun a => ((List.length ∘ Prod.snd) a, a.1)) z ≤ eval (weight z) X

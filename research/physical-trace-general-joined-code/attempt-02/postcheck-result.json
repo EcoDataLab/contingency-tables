@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "stage": "post-audit-import-authentication",
+  "status": "failed",
+  "runner_returncode": 1,
+  "lean_compilation_returncode": 0,
+  "lean_environment_audit_returncode": 0,
+  "observed_error": "Imported object not in an accepted receipt: ResearchPhysicalTraceJoin.ZeroMarginCorrected",
+  "module": "ResearchPhysicalTraceJoin.ZeroMarginCorrected",
+  "cause": "Dependency configuration included the GeneralScheduleCode compiled-object ticket without all compiled-dependency tickets used by its successful run.",
+  "disposition": "Attempt preserved as compilation plus Lean-environment-audit success, with failed imported-object authentication; not a fully verified integration receipt. Fresh attempt-03 merges the full StarCode and ScheduleCode dependency configurations without weakening checks."
+}

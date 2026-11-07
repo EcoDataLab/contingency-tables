@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "f07188292e56ea3aeac8e40d1d27d8ade4a224d8",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.TracePreparation"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.TracePreparation",
+      "source": "research/physical-trace-preparation/formal/ResearchPhysicalTraceJoin/TracePreparation.lean",
+      "source_sha256": "c59da9d490d2a8ff204a6d82da7cffe921132698e615805b07656738fe5b928b",
+      "returncode": 0,
+      "seconds": 80.88688779156655,
+      "olean_sha256": "b65b682b241395ab877713adce11872925394476f25b34468c5d13c423b49251"
+    }
+  ],
+  "audit_seconds": 84.73105699988082,
+  "audit_sha256": "62b9b2318adce5966f1b8d2276ae0ee170e63dfd15dc98844dc651c6937685a9",
+  "audit_driver_sha256": "909a890b5f69c7f56191691563992105370921744ddf11dc9c2d7b005b88196f",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "fa6a07995fc82babb85ea8e0fb4b63403736e27fc5bb7ab9bcae67c2e241f529",
+  "declaration_count": 61,
+  "theorem_count": 31,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.traceCutoff_ofFn",
+      "closure_size": 1945,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ),\n  Math115.PhysicalTraceJoin.traceCutoff (List.ofFn r, List.ofFn c) = Math115.RetainedChainSquare.squareCutoff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.traceInputBranch_reference_iff",
+      "closure_size": 4897,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ),\n  Math115.PhysicalTraceJoin.traceInputBranch (List.ofFn r, List.ofFn c) =\n      Math115.PhysicalTraceJoin.TraceInputBranch.reference ↔\n    2 ≤ m ∧\n      2 ≤ n ∧\n        2 ≤\n            Fintype.card\n              (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c Math115.RetainedChainSquare.squareCutoff)) ∧\n          0 <\n              (OAI.ContingencyTables.ProfilePrograms.largeIndices\n                  (Math115.RetainedChainSquare.squareCutoff, List.ofFn r)).length ∧\n            0 <\n              (OAI.ContingencyTables.ProfilePrograms.largeIndices\n                  (Math115.RetainedChainSquare.squareCutoff, List.ofFn c)).length",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.traceInputBranch_noSmall_iff",
+      "closure_size": 5953,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ),\n  Math115.PhysicalTraceJoin.traceInputBranch (List.ofFn r, List.ofFn c) =\n      Math115.PhysicalTraceJoin.TraceInputBranch.noSmall ↔\n    2 ≤ m ∧\n      2 ≤ n ∧\n        Fintype.card\n            (OAI.ContingencyTables.SmallContextCoordinates.Cells\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c Math115.RetainedChainSquare.squareCutoff)) =\n          0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.deterministicBranch_pointLaw_uniform",
+      "closure_size": 7029,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (htotal : ∑ i, r i = ∑ j, c j),\n  Math115.PhysicalTraceJoin.traceInputBranch (List.ofFn r, List.ofFn c) =\n      Math115.PhysicalTraceJoin.TraceInputBranch.deterministic →\n    ∀ (X : OAI.ContingencyTables.Table r c),\n      OAI.ContingencyTables.FirstSuccess.pointLaw X = OAI.ContingencyTables.FirstSuccess.uniformLaw",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.traceBranch_retuning_fixture",
+      "closure_size": 588,
+      "statement": "Math115.PhysicalTraceJoin.traceCutoff ([0, 600, 600], [600, 600]) = 726 ∧\n  Math115.PhysicalTraceJoin.traceCutoff ([600, 600], [600, 600]) = 418 ∧\n    Math115.PhysicalTraceJoin.traceInputBranch ([0, 600, 600], [600, 600]) =\n        Math115.PhysicalTraceJoin.TraceInputBranch.unit ∧\n      Math115.PhysicalTraceJoin.traceInputBranch ([600, 600], [600, 600]) =\n        Math115.PhysicalTraceJoin.TraceInputBranch.noSmall",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

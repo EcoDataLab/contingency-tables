@@ -1,0 +1,73 @@
+--- pinned/strict_sampler.py
++++ anchored-guard-v2/runner/strict_sampler.py
+@@ -1,7 +1,10 @@
+ #!/usr/bin/env python3
+ """Separate strict sampler runner. Plan/execute need out-of-band frozen hashes.
+ 
+-This version is an unreviewed preparation artifact, not a launch authorization.
++Private version2 candidate: not installed or launch-authorized.
++Trusted supervisor maintains an exclusive quiet checking/cache context. The
++selected-cache traversal is anchored and preserves three leaf observations;
++it does not claim arbitrary transient race/error trace equivalence.
+ The tested runtime modules below are loaded only after their exact hash checks.
+ """
+ from __future__ import annotations
+@@ -20,6 +23,16 @@
+ import time
+ 
+ HERE = Path(__file__).resolve().parent
++METADATA_SHA = '6eb447ff60a09d13bc134252e490bd99e7a15b92c7436a0db5a677269b91a3a5'
++GUARD_VERSION = "anchored-selected-cache-v2"
++
++def load_metadata():
++    helper = HERE / "anchored_metadata.py"
++    require(sha(helper) == METADATA_SHA, "Anchored metadata implementation changed")
++    spec = importlib.util.spec_from_file_location("pinned_anchored_metadata_v2", helper)
++    module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
++    return module
++
+ SOURCE_SHA = "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd"
+ ASSETS = {"strict_serial_check.py": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e",
+           "no_rebuild_landrun.py": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7",
+@@ -386,6 +399,7 @@
+ class Guard:
+     def __init__(self, root, sources, tools, caches, serial, config_roots=(), config_files=None, system_executables=None, tool_aliases=None, config_provenance=None, config_stats=None, cache_roots=(), cache_states=None, external_owners=None, unused_cache_policy=None):
+         self.root, self.sources, self.tools, self.caches = root, sources, tools, caches
++        self._metadata_index = load_metadata().FrozenMetadataIndex(caches, require)
+         self.serial = serial
+         self.config_roots, self.config_files = config_roots, config_files or {}
+         self.system_executables = system_executables or {}
+@@ -424,6 +438,8 @@
+         # Complete cache set is checked at admission and before/after Comparator.
+         # At every serial stage all frozen cache entries retain their stat identity.
+         progress("guard_cache", "begin", rehash=rehash, files=len(self.caches))
++        observations = None if rehash else self._metadata_index.snapshot(
++            self.root, {name: item[1] for name, item in self.caches.items()})
+         _diag_files, _diag_bytes, _diag_root = 0, 0, None
+         _diag_root_files, _diag_root_bytes = 0, 0
+         for name, (digest, stat) in self.caches.items():
+@@ -435,9 +451,12 @@
+                     progress("guard_cache", "root_begin", root=_diag_current_root)
+                     _diag_root = _diag_current_root
+                     _diag_root_files, _diag_root_bytes = 0, 0
+-            path = relative(self.root, name)
+-            require(path.is_file(), "Trusted cache file vanished")
+-            current = path.stat()
++            if rehash:
++                path = relative(self.root, name)
++                require(path.is_file(), "Trusted cache file vanished")
++                current = path.stat()
++            else:
++                current = observations[name]
+             require((current.st_size, current.st_mtime_ns, current.st_ctime_ns, current.st_ino) == stat,
+                     "Trusted cache metadata changed: " + name)
+             if rehash:
+@@ -726,7 +745,7 @@
+         freeze, runtime = read(HERE / "source-freeze.json"), read(a.runtime_freeze)
+         modules, guard, descriptor, caches = admit(root, freeze, runtime, serial, parser)
+         # Keep all runtime controls and these helpers immutable during the run.
+-        for name in ("strict_sampler.py", "source-freeze.json"):
++        for name in ("strict_sampler.py", "source-freeze.json", "anchored_metadata.py"):
+             guard.add(HERE / name)
+         for name in ASSETS:
+             guard.add(HERE / "tested-runtime" / name)

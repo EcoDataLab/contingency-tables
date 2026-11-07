@@ -1,0 +1,83 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean:103:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ↑↑((positiveIndexEquiv ?xs) ?k)
+in the target expression
+  (fun k => ↑↑((positiveIndexEquiv xs) k)) i < (fun k => ↑↑((positiveIndexEquiv xs) k)) j
+
+xs : List ℕ
+i j : Fin (positiveMargins xs).length
+hij : i < j
+⊢ (fun k => ↑↑((positiveIndexEquiv xs) k)) i < (fun k => ↑↑((positiveIndexEquiv xs) k)) j
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean:118:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  List.getD ?m.72 ?n ?d
+in the target expression
+  (List.map (fun i => xs.getD i 0) (positiveIndices xs)).getD (↑k) 0 = xs.getD (positiveIndices xs)[↑k] 0
+
+xs : List ℕ
+k : Fin (positiveMargins xs).length
+hk : ↑k < (positiveIndices xs).length
+⊢ (List.map (fun i => xs.getD i 0) (positiveIndices xs)).getD (↑k) 0 = xs.getD (positiveIndices xs)[↑k] 0
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean:132:4: error: unsolved goals
+case pos
+a : ℕ
+xs : List ℕ
+ih : (positiveMargins xs).sum = xs.sum
+ha : 0 < a
+⊢ (List.filter (fun v => decide (0 < v)) xs).sum = xs.sum
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean:133:4: error: unsolved goals
+case neg
+xs : List ℕ
+ih : (positiveMargins xs).sum = xs.sum
+ha : ¬0 < 0
+⊢ (List.filter (fun v => decide (0 < v)) xs).sum = xs.sum
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean:132:33: warning: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [positiveMargins, ha]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean:135:29: warning: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [positiveMargins]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean:140:4: error: Type mismatch: After simplification, term
+  positiveMargins_sum xs
+ has type
+  (positiveMargins xs).sum = xs.sum
+but is expected to have type
+  (List.ofFn (listMargin (positiveMargins xs))).sum = (List.ofFn (listMargin xs)).sum
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean:221:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean:222:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean:233:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginLists.lean:234:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

@@ -1,0 +1,3 @@
+Admitted 679 source modules; no Lean/Lake/checker run.
+MATH115_STAT_GUARD_BEGIN
+MATH115_STAT_GUARD_END={"module_count": 679, "plan_call_elapsed_seconds": 81.6388873, "rehash": false, "runner_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6", "runtime_freeze_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4", "scope": "original plan admission followed by exact Guard.check(rehash=False); no proof/compiler/Comparator", "stat_guard_cap_seconds": 900, "stat_guard_elapsed_seconds": 26.62492389999997, "status": "exact_stat_guard_passed", "trusted_cache_files": 131021, "wrapper_sha256": "1a66f32fd33d89af74d56cd113ac55b554f3b0c21379bc6d7a27839a046ceb6f"}

@@ -1,0 +1,38 @@
+{
+  "attempted_failures": [
+    {
+      "module": "DivisionRuntime.Degree",
+      "command_threads": 2,
+      "memory_cap_mib": 4096,
+      "source_sha256": "f92f84883229446deb8dfbef05eee619b633dd3fa9f8f0696b208679d7a268f7",
+      "returncode": -6,
+      "seconds": 38.793,
+      "attempt": "import-greedy-4g",
+      "reason": "Interpreter import memory limit at M4096",
+      "diagnostics": "history/division-import-greedy-4g"
+    },
+    {
+      "module": "DivisionRuntime.Degree",
+      "command_threads": 2,
+      "memory_cap_mib": 4096,
+      "source_sha256": "caa5b5363c2a3bef89fe9596456ad5780c77a918338226c98c22beae5f16e5df",
+      "returncode": -6,
+      "seconds": 14.566,
+      "attempt": "minimal-imports-4g",
+      "reason": "Interpreter import memory limit at M4096",
+      "diagnostics": "history/division-minimal-imports-4g"
+    },
+    {
+      "module": "DivisionRuntime.Degree",
+      "command_threads": 2,
+      "memory_cap_mib": 8192,
+      "source_sha256": "caa5b5363c2a3bef89fe9596456ad5780c77a918338226c98c22beae5f16e5df",
+      "returncode": 1,
+      "seconds": 15.444,
+      "attempt": "minimal-imports-8g-elaboration",
+      "reason": "divStep pair/choose degree metavariables needed explicit degree-one annotations",
+      "diagnostics": "history/division-minimal-imports-8g-elaboration"
+    }
+  ],
+  "source_snapshot_boundary": "Observed failed source identities and diagnostics only; no invented source snapshots."
+}

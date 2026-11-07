@@ -1,0 +1,1 @@
+<workspace>/.local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/Seams.lean:1:0: error: object file '<workspace>/.local/further-gap/draw-runtime-next/unit-trial-cost/objects/InitialRuntime/InitialDegree.olean' of module InitialRuntime.InitialDegree does not exist

@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralScheduleCode
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralScheduleCode] headlines [Math115.PhysicalTraceJoin.rawUniformCompletionBits_eq, Math115.PhysicalTraceJoin.rawScheduleSteps_eq, Math115.PhysicalTraceJoin.rawTerminalScheduleWordWidth_eq, Math115.PhysicalTraceJoin.rawPositiveWordWidth_eq, Math115.PhysicalTraceJoin.rawPositiveTrialWordWidth_positive]

@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralTightWidth",
+  "verified_attempt": "attempt-03",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "d4c61a5227ed2fe841650e85cbab9ef50b20c2f32d3966d1cec4ba6ad792f852",
+      "compile_returncode": 1,
+      "compile_seconds": 127.44296820787713,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "f7c93fdc85d245607ed025ec3f0030082cc5967acb547bb742d7c9474f861e2c",
+      "compile_returncode": 1,
+      "compile_seconds": 40.9059030408971,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-03",
+      "source_sha256": "b1c0a3f8e1018f418839fac2ba669095daf0210bdf849eea87487bb49add403a",
+      "compile_returncode": 0,
+      "compile_seconds": 54.85264370916411,
+      "audit_returncode": 0,
+      "audit_seconds": 182.58958124974743,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

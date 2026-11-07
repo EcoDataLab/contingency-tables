@@ -1,0 +1,27 @@
+{
+  "status": "all regular guest archive members authenticated against emitted manifest",
+  "tar_gz_sha256": "7a0c5e1a93f15baa7ea216c2a43e6c0ff087e07ad31a6ec28d8e12904145ff0f",
+  "members": 19,
+  "uncompressed_bytes": 29665,
+  "files": {
+    "diagnostic-result.json": "290af43ef33d46ccf4e4c97b6d71c92dee1f5bf15b022002b33c1656ad03cfa7",
+    "diagnostic.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "diagnostic.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "install.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "install.stdout.log": "2b0934143ef558f9d621b9a07a7ab30d84db9fb3f8fac352281aebe1c3cdb3f9",
+    "phases.json": "21eb41a85b93ed1a5acc38be2ad55bae22bb24527583e5995da99c97b86bd48e",
+    "preflight.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "preflight.stdout.log": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b",
+    "resources.json": "2add1276f1e47a08f07332eb1027b8671d993cb257124f8f450167e17ca855b7",
+    "toy-diagnostic/deny/receipt.json": "28b8c37766f02d9622f1881df280b5111f713e977ba57d54aff6b4cbed1c9311",
+    "toy-diagnostic/deny/toy_deny.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "toy-diagnostic/deny/toy_deny.stdout.log": "116ba8ac96f61127400246403d20dceda723f2d5d4b3ed5c4e4d834250569768",
+    "toy-diagnostic/overlap/receipt.json": "84db93641ad02806673e7268e156947cd81cec490c4ee4c634de80a28c757513",
+    "toy-diagnostic/overlap/toy_overlap.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "toy-diagnostic/overlap/toy_overlap.stdout.log": "7f43b6269a3f8537e8869a5446f8acd67c1d945083818152014393317df59f6f",
+    "toy-diagnostic/recover/receipt.json": "ab30ca24b51fb002d2c8ba26a36ed3621724eb6570f7e5d0cdd76baf18d97b03",
+    "toy-diagnostic/recover/toy_recover.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "toy-diagnostic/recover/toy_recover.stdout.log": "83ae161cb46198308fb4238da5703b7e41a7dc31d40abfcf01a3f0d4412392d4",
+    "toy-diagnostic/result.json": "8af54ccf8e04498d48141ca14486c6d031090c2055cc84995772b7669ead56d9"
+  }
+}

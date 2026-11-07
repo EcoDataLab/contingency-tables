@@ -1,0 +1,37 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Mixing.lean:32:17: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Mixing.lean:33:50: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Mixing.lean:43:32: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Mixing.lean:44:45: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Mixing.lean:46:23: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Mixing.lean:48:15: warning: declaration uses `sorry`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Mixing.lean:54:55: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+inst✝ : Nonempty (DefectVertices r c U L)
+hp : 2 ≤ p
+d : DefectVertices r c U L
+⊢ ↑sorry / ∑ i, ↑sorry = weight r c U L ↑d / ∑ e, weight r c U L ↑e
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Mixing.lean:56:62: warning: This simp argument is unused:
+  Rat.cast_natCast
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [defectStationaryRat, Rat.cast_div, Rat.cast_sum, fibre_card_weight, defectWeight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Mixing.lean:57:4: warning: This simp argument is unused:
+  fibre_card_weight
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [defectStationaryRat, Rat.cast_div, Rat.cast_sum, Rat.cast_natCast, defectWeight]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/Mixing.lean:63:2: error: Type mismatch
+  defectStationaryRat_cast r c U L hr hc hp d
+has type
+  ↑(defectStationaryRat r c U L d) = (computedReferenceTrace r c U L hr hc hp).π d
+but is expected to have type
+  ↑((defectStationaryLaw r c U L).mass d) = (computedReferenceTrace r c U L hr hc hp).π d

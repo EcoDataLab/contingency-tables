@@ -1,0 +1,48 @@
+<packet>/revisions/attempt-04/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:34:0: warning: automatically included section variable(s) unused in theorem `Math115.PhysicalTraceJoin.zeroMarginMask_rectangle`:
+  [Fintype I]
+  [Fintype J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [Fintype J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+<packet>/revisions/attempt-04/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:80:79: warning: Possibly looping simp theorem: `Equiv.symm.eq_1`
+
+Note: Possibly caused by: `Equiv.invFun_as_coe` and `Equiv.symm`
+
+Hint: You can disable a simp theorem from the default simp set by passing `- theoremName` to `simp`.
+<packet>/revisions/attempt-04/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:80:4: error: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+<packet>/revisions/attempt-04/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:109:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-04/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:110:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-04/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:123:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-04/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:124:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

@@ -1,0 +1,42 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/ZeroMarginCorrected.lean:66:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/ZeroMarginCorrected.lean:67:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/ZeroMarginCorrected.lean:71:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/ZeroMarginCorrected.lean:80:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/ZeroMarginCorrected.lean:90:4: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/ZeroMarginCorrected.lean:53:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

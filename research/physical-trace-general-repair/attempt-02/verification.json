@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "fe2ab88379df10f768c468c968231aaec51bdd90",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralRepair"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralRepair",
+      "source": "research/physical-trace-general-repair/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean",
+      "source_sha256": "6c453e98e87b4635fce4fe1075208f3adc1ee388676aa77ab33ef15f2c2d3cd0",
+      "returncode": 0,
+      "seconds": 73.55690808407962,
+      "olean_sha256": "46c02867d4718546cb7a25f78973f798c0f5b2258c7c0645c3cffb8727f6f557"
+    }
+  ],
+  "audit_seconds": 197.93111429084092,
+  "audit_sha256": "46645368b87013d84bfcdc36ba8d9c35e5f1ee50c997c8cd001d0f3405092ad2",
+  "audit_driver_sha256": "5d48463a22bc48db6c875c8e64933631f6eb827a529cf32f4b62ab79583cd80c",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "b0ce4a97b6a733e9b756d016e8e9d57e619199884b837b2efd2561c4832f8a0d",
+  "declaration_count": 50,
+  "theorem_count": 31,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalRepair_labels_table_injective",
+      "closure_size": 8352,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  Function.Injective fun a =>\n    (Math115.PhysicalTraceJoin.terminalRepairLabels r c U L a.fst,\n      Math115.PhysicalTraceJoin.terminalRepairedTable r c U L a)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalRepairedTable_large_entry",
+      "closure_size": 8343,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) (a : Math115.PhysicalTraceJoin.DefectJoint r c U L) (i : Fin m)\n  (j : Fin n),\n  OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U i j = false →\n    ↑↑(Math115.PhysicalTraceJoin.terminalRepairedTable r c U L a) i j =\n      (↑↑a.snd).1 i j +\n        if\n            i = (↑(Math115.PhysicalTraceJoin.terminalRepairLabels r c U L a.fst).2).1 ∧\n              j = (↑(Math115.PhysicalTraceJoin.terminalRepairLabels r c U L a.fst).1).2 then\n          1\n        else 0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalRepairedJoint_table",
+      "closure_size": 9814,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) (a : Math115.PhysicalTraceJoin.DefectJoint r c U L),\n  Math115.PhysicalStationarySuccess.jointTable r c U L (Math115.PhysicalTraceJoin.terminalRepairedJoint r c U L a) =\n    ↑(Math115.PhysicalTraceJoin.terminalRepairedTable r c U L a)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalRepairOutput_entry",
+      "closure_size": 9855,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) (a : Math115.PhysicalTraceJoin.SuccessfulTerminalRepair r c U L)\n  (i : Fin m) (j : Fin n),\n  ↑(Math115.PhysicalTraceJoin.terminalRepairOutput r c U L a) i j =\n    ↑↑(Math115.PhysicalTraceJoin.terminalRepairedTable r c U L ↑a) i j -\n      if OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U i j = true then 0 else L",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalRepairOutput_successfulJoint",
+      "closure_size": 9887,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) (a : Math115.PhysicalTraceJoin.SuccessfulTerminalRepair r c U L),\n  Math115.PhysicalStationarySuccess.originalSuccessfulJoint r c U L\n      (Math115.PhysicalTraceJoin.terminalRepairOutput r c U L a) =\n    Math115.PhysicalTraceJoin.terminalSuccessfulJoint r c U L a",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "module": "RetryRuntime.ListSeed",
+    "source_sha256": "5710dbdcd7f069eabb17cefc219664e5c1a707572af1a37d45c026029bb9a63d",
+    "exit_code": 0,
+    "seconds": 16.973,
+    "olean_sha256": "b957f46808c29a688af3c83845f3af24c9357b141569378e266189fd632551bc",
+    "stdout": "evidence/compilation/RetryRuntime.ListSeed.stdout.txt",
+    "stderr": "evidence/compilation/RetryRuntime.ListSeed.stderr.txt"
+  },
+  {
+    "module": "RetryRuntime.ListRepeatDegree",
+    "source_sha256": "ad34899b9537dfb2ddb3f5c1ac3d8cb56b8c675fce0e0e8b2aa006dfdc505d66",
+    "exit_code": 0,
+    "seconds": 15.904,
+    "olean_sha256": "04f1b9cb145f6c28148e0e7310de158db83e65384c009c50a0666fa88462cb15",
+    "stdout": "evidence/compilation/RetryRuntime.ListRepeatDegree.stdout.txt",
+    "stderr": "evidence/compilation/RetryRuntime.ListRepeatDegree.stderr.txt"
+  },
+  {
+    "module": "RetryRuntime.WordChunkDegree",
+    "source_sha256": "b65d6dcff508a4a7e4976c5d727ee8731dadf014599c6f8972e2bd0db2cafaba",
+    "exit_code": 0,
+    "seconds": 25.411,
+    "olean_sha256": "4917185ae3b9b34aa0cf0cab5fd63c49be5e474b2214be71f8bc3e972b5109c8",
+    "stdout": "evidence/compilation/RetryRuntime.WordChunkDegree.stdout.txt",
+    "stderr": "evidence/compilation/RetryRuntime.WordChunkDegree.stderr.txt"
+  },
+  {
+    "module": "RetryRuntime.RangeDegree",
+    "source_sha256": "d85dc83fa2780ee03659544caa02b4cee6e3ab37052e8308860140e2627553e0",
+    "exit_code": 0,
+    "seconds": 21.706,
+    "olean_sha256": "a12b393706b923dd1b88f41f8e7a89b097058f52f9040005285c16c3a26de57f",
+    "stdout": "evidence/compilation/RetryRuntime.RangeDegree.stdout.txt",
+    "stderr": "evidence/compilation/RetryRuntime.RangeDegree.stderr.txt"
+  },
+  {
+    "module": "RetryRuntime.MapWithDegree",
+    "source_sha256": "e60425408f0bb385d03392a661cfa57efbb75f6d50562b3fab8749deca8e5f07",
+    "exit_code": 0,
+    "seconds": 16.459,
+    "olean_sha256": "ee3902939880a2be649721f5eb0be13cfed4adda0dc31a1c5a35d0bbc60367a7",
+    "stdout": "evidence/compilation/RetryRuntime.MapWithDegree.stdout.txt",
+    "stderr": "evidence/compilation/RetryRuntime.MapWithDegree.stderr.txt"
+  },
+  {
+    "module": "RetryRuntime.WordChunksDegree",
+    "source_sha256": "599011a40e0da48a243d85551c5397ce8430195a2084c48b072b1eff4c0c2157",
+    "exit_code": 0,
+    "seconds": 23.058,
+    "olean_sha256": "abb28889615b85f8df9df42139fc4b2da1271d5f849870ff29b82a666a5ea88a",
+    "stdout": "evidence/compilation/RetryRuntime.WordChunksDegree.stdout.txt",
+    "stderr": "evidence/compilation/RetryRuntime.WordChunksDegree.stderr.txt"
+  },
+  {
+    "module": "RetryRuntime.ActualRetryWordsDegree",
+    "source_sha256": "f99a096ec1364fb8cdef055c6b7209e9464321febe4baa44a4d27822e23a97df",
+    "exit_code": 0,
+    "seconds": 42.867,
+    "olean_sha256": "04c3fd597d90c1949d7a89f43cf67c2be763c44b9f46eeb8c3604b5cf1fe8a3d",
+    "stdout": "evidence/compilation/RetryRuntime.ActualRetryWordsDegree.stdout.txt",
+    "stderr": "evidence/compilation/RetryRuntime.ActualRetryWordsDegree.stderr.txt"
+  }
+]

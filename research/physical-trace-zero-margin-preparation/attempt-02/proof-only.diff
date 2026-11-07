@@ -1,0 +1,6 @@
+--- initial.lean
++++ checked.lean
+@@ -58 +58,2 @@
+-  rw [← ofFn_filteredMargin xs, largeIndices_ofFn_mem, filteredMargin_at_retained]
++  have hi := largeIndices_ofFn_mem (filteredMargin xs) U i
++  simpa only [ofFn_filteredMargin, filteredMargin_at_retained] using hi

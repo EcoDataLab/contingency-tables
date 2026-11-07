@@ -1,0 +1,1 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalStarRetry/Exit.lean:7:0: error: object file '<packet>/attempt-02/objects/ResearchComparison/LegacyPhysicalCompletion.olean' of module ResearchComparison.LegacyPhysicalCompletion does not exist

@@ -1,0 +1,62 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean:80:2: error: `simp` made no progress
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    T
+  has type
+    Table (fun i => r i + rowLargeCount (firstPaperSmall r c U) i * L) fun j =>
+      c j + columnLargeCount (firstPaperSmall r c U) j * L
+  but is expected to have type
+    { X //
+      HasMargins X (fun i => r i + rowLargeCount (firstPaperSmall r c U) i * L) fun j =>
+        c j + columnLargeCount (firstPaperSmall r c U) j * L }
+  in the application
+    ↑T
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean:92:62: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+Y : Fin m → Fin n → ℕ
+⊢ (∀ (i : Fin (List.ofFn r).length) (j : Fin (List.ofFn c).length),
+      smallCellTest (((List.ofFn r, List.ofFn c), U), ↑i, ↑j) = false → L ≤ matrixEntry (matrixCode Y, ↑i, ↑j)) ↔
+    ∀ (i : Fin m) (j : Fin n), firstPaperSmall r c U i j = false → L ≤ Y i j
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean:93:36: warning: This simp argument is unused:
+  List.length_ofFn
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [correctionPaddingTest, decide_eq_true_eq, listedSmallCellTest_code, matrixEntry_code]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean:94:4: warning: This simp argument is unused:
+  listedSmallCellTest_code
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [correctionPaddingTest, List.length_ofFn, decide_eq_true_eq, matrixEntry_code]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean:94:30: warning: This simp argument is unused:
+  matrixEntry_code
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [correctionPaddingTest, List.length_ofFn, decide_eq_true_eq, listedSmallCellTest_code]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean:101:2: error: `simp` made no progress
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    T
+  has type
+    Table (fun i => r i + rowLargeCount (firstPaperSmall r c U) i * L) fun j =>
+      c j + columnLargeCount (firstPaperSmall r c U) j * L
+  but is expected to have type
+    { X //
+      HasMargins X (fun i => r i + rowLargeCount (firstPaperSmall r c U) i * L) fun j =>
+        c j + columnLargeCount (firstPaperSmall r c U) j * L }
+  in the application
+    ↑T
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean:118:52: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCorrectionCode.lean:123:73: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead

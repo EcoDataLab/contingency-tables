@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralJoinedCode"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralJoinedCode",
+      "source": "research/physical-trace-general-joined-code/formal/ResearchPhysicalTraceJoin/GeneralJoinedCode.lean",
+      "source_sha256": "bc48b5440535585777dc2b34ca997bc8c78966b404d31173bdd6c8b329453952",
+      "returncode": 0,
+      "seconds": 79.7973722498864,
+      "olean_sha256": "ad313619ba985d2cf2dfc5a0b8092d214b0dd0c8ea7f7b1f71df3c8f383f4d91"
+    }
+  ],
+  "audit_seconds": 61.39982670918107,
+  "audit_sha256": "2fb0812a08f47b43f04e5b6236e97531178452e5e3ce11d5f9fed03bda6a0d59",
+  "audit_driver_sha256": "4e2b30a9ecbd159dbce8030d9df344a99d6627c4b8228374073d0a5d02f3723d",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "e4f135ab573e3f2d15b1b2426c9ed31eba9a5f0b84b354df3c0f7f7eefd0a769",
+  "declaration_count": 12,
+  "theorem_count": 6,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.rawJoinedStep_eq",
+      "closure_size": 12158,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (d : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N hIn J hExit : ℕ)\n      (word : Fin (Math115.PhysicalTraceJoin.uniformStepWidth r c U L N hIn J hExit) → Bool),\n      Math115.PhysicalTraceJoin.rawJoinedStep (List.ofFn r) (List.ofFn c) U L N hIn J hExit\n          (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑d) (List.ofFn word) =\n        Math115.PhysicalComputedProposal.computedStateCode r c U L\n          ↑(Math115.PhysicalTraceJoin.uniformJoinedWord r c U L hr hc d N hIn J hExit word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawJoinedWalk_eq",
+      "closure_size": 12183,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N hIn J hExit T : ℕ)\n      (word : Fin (T * Math115.PhysicalTraceJoin.uniformStepWidth r c U L N hIn J hExit) → Bool),\n      Math115.PhysicalTraceJoin.rawJoinedWalk (List.ofFn r) (List.ofFn c) U L N hIn J hExit T\n          (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑start) (List.ofFn word) =\n        Math115.PhysicalComputedProposal.computedStateCode r c U L\n          ↑(Math115.PhysicalTraceJoin.joinedWalkWord r c U L hr hc start N hIn J hExit T word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

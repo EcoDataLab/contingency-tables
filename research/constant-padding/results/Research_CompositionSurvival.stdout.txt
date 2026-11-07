@@ -1,0 +1,4 @@
+'Research.CompositionSurvival.tail_nbu' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Research.CompositionSurvival.tail_succ_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Research.CompositionSurvival.tail_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Research.CompositionSurvival.composition_reciprocal_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,5 @@
+--- metadata-memory-v1/runner
++++ runtime-output-v1/runner
+@@ -37 +37 @@
+-ASSETS = {"strict_serial_check.py": "b5e8c0f95fdd5f6b9193c2b0537782b242d0fe0c269dae7b5a7a4c73a32cb1f0",
++ASSETS = {"strict_serial_check.py": "ac38cc85c72e181b828b0395ef886d4e8218458d4c53c6ca4bada38220075f33",

@@ -8,7 +8,6 @@ the width; it makes no general polynomial-time weighted-sampling claim.
 
 from __future__ import annotations
 
-from bisect import bisect_right
 from collections import deque
 from dataclasses import dataclass
 from fractions import Fraction
@@ -17,7 +16,8 @@ import random
 from typing import Iterator, Sequence
 
 from .tables import (ComputationBudgetExceeded, InfeasibleTableError, ProductWeights,
-                     RandomIntegerSource, Table, TableProblem, ZeroMassError, _integer)
+                     RandomIntegerSource, Table, TableProblem, ZeroMassError,
+                     _draw_rational_choice, _integer)
 
 
 class NotCactusError(ValueError):
@@ -236,9 +236,12 @@ class CactusWeightedSampler:
                  max_cells: int = 100_000, max_cycle_edges: int = 100_000) -> None:
         if weights.shape != problem.shape:
             raise ValueError("activities and problem must have the same shape")
-        limits = (max_line_states, max_cell_value, max_weight_evaluations, max_stored_weight_bits)
-        for name, value in zip(("max_line_states", "max_cell_value", "max_weight_evaluations", "max_stored_weight_bits"), limits):
-            _integer(value, name, positive=True)
+        # Zero-state or zero-mass factors may need none of an exhausted shared
+        # allowance. The exact plan below still rejects any positive work.
+        limits = (max_line_states, max_weight_evaluations, max_stored_weight_bits)
+        for name, value in zip(("max_line_states", "max_weight_evaluations", "max_stored_weight_bits"), limits):
+            _integer(value, name)
+        _integer(max_cell_value, "max_cell_value", positive=True)
         self.problem, self.weights = problem, weights
         self.geometry = CactusTableSampler(problem, max_cells=max_cells, max_cycle_edges=max_cycle_edges)
         self.plan = CactusWeightPlan(0, 0, 0, 0)
@@ -339,6 +342,6 @@ class CactusWeightedSampler:
         parameters = []
         for line in self.lines:
             index = (0 if line.lower == line.upper else
-                     bisect_right(line.cumulative, source.randrange(line.cumulative[-1])))
+                     _draw_rational_choice(line.cumulative, source))
             parameters.append(line.lower + index)
         return self.geometry.from_coordinates(parameters)

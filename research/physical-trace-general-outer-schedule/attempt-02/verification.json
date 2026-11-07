@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "71ea4ee9926e2e5248ab218261efb0c058f1b2cd",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralOuterSchedule"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralOuterSchedule",
+      "source": "research/physical-trace-general-outer-schedule/formal/ResearchPhysicalTraceJoin/GeneralOuterSchedule.lean",
+      "source_sha256": "df75bbba4363e649ab6b397c9b72a1bd3dc4b532340fd977bb510e3abdc13138",
+      "returncode": 0,
+      "seconds": 16.26393949985504,
+      "olean_sha256": "69078f8599cbdb1a3e162c3591503e5c6fae9a3c4d44d7a52c5230ce58f0d69c"
+    }
+  ],
+  "audit_seconds": 80.26526079094037,
+  "audit_sha256": "2a0a2093f2317b13762eb1ed31a85aad28896cb213dfafca4d3144aec5bfdcad",
+  "audit_driver_sha256": "e1e0a6217d6eb9a19c7707e4e959707f96dfd7762eefc716a163b78b64758f43",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "cb0e8e76b004b23c0376784cb8223e586c4a4dcaa421ad2a16c0871d7a4ac1d7",
+  "declaration_count": 14,
+  "theorem_count": 10,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceCorrectionSuccess_bounds",
+      "closure_size": 13108,
+      "statement": "∀ (xs ys : List ℕ),\n  Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference →\n    ∀\n      (start :\n        Math115.PhysicalDefectTrace.DefectVertices (Math115.PhysicalTraceJoin.filteredMargin xs)\n          (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys) 7),\n      1 / ↑(Math115.PhysicalTraceJoin.positiveTraceOuterBlock xs ys) ≤\n          Math115.PhysicalTraceJoin.positiveTraceCorrectionSuccess xs ys ∧\n        Math115.PhysicalTraceJoin.positiveTraceCorrectionSuccess xs ys ≤ 1",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceOuter_budget",
+      "closure_size": 13181,
+      "statement": "∀ (xs ys : List ℕ),\n  Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference →\n    ∀\n      (start :\n        Math115.PhysicalDefectTrace.DefectVertices (Math115.PhysicalTraceJoin.filteredMargin xs)\n          (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys) 7)\n      (t : ℕ),\n      (1 - Math115.PhysicalTraceJoin.positiveTraceCorrectionSuccess xs ys) ^\n            Math115.PhysicalTraceJoin.positiveTraceOuterAttempts xs ys t +\n          ↑(Math115.PhysicalTraceJoin.positiveTraceOuterAttempts xs ys t) *\n            (Math115.CompletionRetryBudget.dyadic (Math115.PhysicalTraceJoin.positiveTraceOuterPrecision xs ys t) +\n              Math115.CompletionRetryBudget.dyadic (Math115.PhysicalTraceJoin.positiveTraceOuterPrecision xs ys t)) ≤\n        Math115.CompletionRetryBudget.dyadic t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceOuterScheduled_accuracy",
+      "closure_size": 45592,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j)\n  (hb : Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference)\n  (start :\n    Math115.PhysicalDefectTrace.DefectVertices (Math115.PhysicalTraceJoin.filteredMargin xs)\n      (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys) 7)\n  (fallback :\n    OAI.ContingencyTables.Table (Math115.PhysicalTraceJoin.filteredMargin xs)\n      (Math115.PhysicalTraceJoin.filteredMargin ys))\n  (t : ℕ),\n  OAI.ContingencyTables.FirstSuccess.variation\n      (Math115.PhysicalTraceJoin.positiveTraceOuterScheduledLaw xs ys hb start fallback t)\n      OAI.ContingencyTables.FirstSuccess.uniformLaw ≤\n    Math115.CompletionRetryBudget.dyadic t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

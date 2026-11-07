@@ -1,0 +1,5 @@
+--- initial.lean
++++ checked.lean
+@@ -13 +13 @@
+-open FirstSuccess ResidualMixture CompletionCounts
++open DensePrograms FirstSuccess ResidualMixture CompletionCounts

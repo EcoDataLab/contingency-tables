@@ -1,0 +1,103 @@
+{
+  "recorded_utc": "2026-11-06T23:10:35.804405+00:00",
+  "run": {
+    "id": 42308906382,
+    "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/42308906382",
+    "head_sha": "dc50899c4f4f136dc538dc0ec25de8368844a93a",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-06T23:00:55Z",
+    "updated_at": "2026-11-06T23:07:14Z"
+  },
+  "per_lane_tests": {
+    "run": 476,
+    "passed": 473,
+    "skipped": 3,
+    "failures": 0,
+    "errors": 0
+  },
+  "jobs": [
+    {
+      "job_id": 128205186852,
+      "job_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/42308906382/job/128205186852",
+      "name": "exact-tests (3.10)",
+      "conclusion": "success",
+      "versions": {
+        "python": "3.10.22",
+        "numpy": "2.2.6",
+        "scipy": "1.15.3"
+      }
+    },
+    {
+      "job_id": 128205187164,
+      "job_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/42308906382/job/128205187164",
+      "name": "exact-tests (3.13)",
+      "conclusion": "success",
+      "versions": {
+        "python": "3.13.18",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "job_id": 128205187211,
+      "job_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/42308906382/job/128205187211",
+      "name": "exact-tests (3.14)",
+      "conclusion": "success",
+      "versions": {
+        "python": "3.14.10",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1"
+      }
+    },
+    {
+      "job_id": 128205187499,
+      "job_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/42308906382/job/128205187499",
+      "name": "exact-tests (3.12)",
+      "conclusion": "success",
+      "versions": {
+        "python": "3.12.16",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1"
+      }
+    }
+  ],
+  "completed_steps": [
+    "full_tests",
+    "claims_check",
+    "audit",
+    "sources_bundle",
+    "crosscheck",
+    "mixture_replay",
+    "sparse_example",
+    "linear_example"
+  ],
+  "executed_in_each_lane": {
+    "frozen_comparator_fixtures": 36,
+    "hash_compatibility_regressions": 5,
+    "make_path_regressions": 3,
+    "scipy_worker_library_tests": 8,
+    "scipy_preflight_tests": 2,
+    "scipy_exact_benchmark_tests": 1
+  },
+  "skips": [
+    {
+      "test_id": "test_research_integration_plan.IntegrationPlanTests.test_public_hybrid_closure_resolves_in_dependency_order_without_execution",
+      "reason": "Public source-plan check needs the normal pinned Lean/upstream/package bootstrap; no downloads in Python tests"
+    },
+    {
+      "test_id": "test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_last_case_last_repetition_accepts_exact_r_seed_boundary",
+      "reason": "optional Rscript unavailable"
+    },
+    {
+      "test_id": "test_worker_library_benchmarks.WorkerLibraryBenchmarks.test_r_real_api_and_small_fiber_readback",
+      "reason": "optional Rscript unavailable"
+    }
+  ],
+  "mixture_producer_source_caveat": "Certificates verified while historical producer_sources_match=false remains explicit; this is not a claim that current sources match the archived producer.",
+  "prior_failures": [
+    "https://github.com/EcoDataLab/contingency-tables/actions/runs/42305845614",
+    "https://github.com/EcoDataLab/contingency-tables/actions/runs/42307905742"
+  ],
+  "scope": "Hosted Python and finite reproduction checks at the named commit. No SciPy skips. Two optional R checks and the source-plan test requiring a Lean bootstrap were skipped. Lean and strict Comparator verification remain separate."
+}

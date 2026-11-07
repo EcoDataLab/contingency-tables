@@ -1,0 +1,1 @@
+<repo>/research/constant-padding/formal/Research/ReciprocalZeroPhysical.lean:1:0: error: object file '<repo>/.local/further-gap/public-constant-v2/objects/Research/AcceptancePadding.olean' of module Research.AcceptancePadding does not exist

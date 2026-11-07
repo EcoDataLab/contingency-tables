@@ -1,0 +1,29 @@
+{
+  "files_sha256": {
+    "README.md": "5d9812755f0085017a014c99002cf0857713481bb1e2be0cbc5837564fe57308",
+    "derive_supervisor.py": "457a3a3a452e0f220e34bc4f1d4d9630db58384a172632573941fdc386e53985",
+    "source/supervisor-recipe.json": "6e75de654f1f811cabfd502e260ddcd493d64c0f479aaca0cd1ad5dc215bee47",
+    "source/supervisor.diff": "f8f16e84eedde03f5ecafd476794c2f65f6b334434df247671a3e450931d1e08",
+    "tests/test_tail_boundary.py": "9bd13d7b01a1190b58462fbf21fdd3b6e13ca19424f5b53304a72ccf7154c0dd"
+  },
+  "history_modified": false,
+  "independent_review": {
+    "path": "research/strict-sampler-checkpoints/runtime-output-v1/independent-review.md",
+    "reviewer": "separate_AI_agent",
+    "sha256": "18355db3a2362b359346ef2710bf8163b35ea96ef477b589462817837372502b",
+    "status": "passed_source_and_adversarial_offline_checks"
+  },
+  "native_execution_performed": false,
+  "normal_test_bridge": {
+    "path": "tests/test_comparator_tail_boundary.py",
+    "sha256": "3d2a45cc95b5d5a80b21c0a3be2afec3aa11c4bbca33e0ff4a5d3c9f28d4ecc4"
+  },
+  "offline_tests": {
+    "count": 19,
+    "python_3_10_missing_file_digest_simulation": "not_needed_no_file_digest_call",
+    "status": "passed_on_cpython_3.12_and_3.14"
+  },
+  "schema_version": 1,
+  "status": "additive_source_only_candidate_native_unrun",
+  "strict_acceptance": false
+}

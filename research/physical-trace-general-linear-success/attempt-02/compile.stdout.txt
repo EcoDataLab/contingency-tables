@@ -1,0 +1,14 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean:61:29: warning: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.mul_zero, Nat.add_zero, Nat.zero_add] at hcount
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralLinearSuccess.lean:61:53: warning: This simp argument is unused:
+  Nat.zero_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.mul_zero, zero_mul, Nat.add_zero] at hcount
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

@@ -1,0 +1,7 @@
+'Research.GrowthRefinement.doubled_growth_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Research.GrowthRefinement.shape_gap' depends on axioms: [propext]
+'Research.GrowthRefinement.bounded_aspect_gap_squared' depends on axioms: [propext]
+'Research.GrowthRefinement.shape_gap_width_square' depends on axioms: [propext]
+'Research.GrowthRefinement.bounded_aspect_gap_width_square' depends on axioms: [propext]
+'Research.GrowthRefinement.arbitrary_aspect_width_square' depends on axioms: [propext]
+'Research.GrowthRefinement.arbitrary_aspect_width_square_integer' depends on axioms: [propext, Quot.sound]

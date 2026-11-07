@@ -1,0 +1,23 @@
+--- initial.lean
++++ checked.lean
+@@ -9,0 +10 @@
++import OAI.Combinatorics.ContingencyTables.Rooted.LargeMarginSemantics
+@@ -109 +110,2 @@
+-  simp [traceInputBranch, List.length_ofFn]
++  simp only [traceInputBranch, List.length_ofFn]
++  split_ifs <;> simp_all <;> omega
+@@ -117,2 +119,2 @@
+-  simp [traceInputBranch, List.length_ofFn, traceSmallCatalog_length,
+-    traceBothLarge_ofFn, Nat.not_le, Nat.succ_le_iff, and_assoc]
++  simp only [traceInputBranch, List.length_ofFn, traceSmallCatalog_length]
++  split_ifs <;> simp_all [traceBothLarge_ofFn] <;> omega
+@@ -125 +127 @@
+-  · simp [traceInputBranch, List.length_ofFn, hm]; omega
++  · simp [traceInputBranch, List.length_ofFn, hm]
+@@ -127 +129 @@
+-  · simp [traceInputBranch, List.length_ofFn, hn]; omega
++  · simp [traceInputBranch, List.length_ofFn, hn]
+@@ -133 +135,2 @@
+-    simp [traceInputBranch, List.length_ofFn, hm, hn, traceSmallCatalog_length, hp, hne]
++    simp only [traceInputBranch, List.length_ofFn, traceSmallCatalog_length]
++    split_ifs <;> simp_all

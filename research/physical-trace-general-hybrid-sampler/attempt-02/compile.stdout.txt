@@ -1,0 +1,19 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralHybridSampler.lean:25:5: warning: Variable name `hd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralHybridSampler.lean:49:28: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralHybridSampler.lean:49:40: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralHybridSampler.lean:55:28: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralHybridSampler.lean:63:28: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralHybridSampler.lean:63:40: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralHybridSampler.lean:73:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

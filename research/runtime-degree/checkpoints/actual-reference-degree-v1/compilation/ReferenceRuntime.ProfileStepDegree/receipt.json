@@ -1,0 +1,33 @@
+{
+  "module": "ReferenceRuntime.ProfileStepDegree",
+  "command_threads": 2,
+  "memory_cap_mib": 8192,
+  "source_sha256": "bfc2cc72ef9992976a16c4b514b90836adb6d0bb4289a568ef9c7446f02f92b6",
+  "returncode": 0,
+  "seconds": 14.824,
+  "lean_path": [
+    ".local/further-gap/draw-runtime-next/reference-trial-cost/objects",
+    ".local/further-gap/draw-runtime-next/reference-metadata/objects",
+    ".local/further-gap/draw-runtime-next/repair-trial-cost/objects",
+    ".local/further-gap/draw-runtime-next/completion-output/objects",
+    ".local/further-gap/draw-runtime-next/unit-trial-cost/objects",
+    ".local/further-gap/draw-runtime-next/retry-cost/objects",
+    ".local/further-gap/draw-runtime-next/affine-mapwith/objects",
+    ".local/further-gap/draw-runtime-next/input-normalization/canonical-03/objects",
+    ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects",
+    ".local/further-gap/draw-runtime-next/division-cost/objects",
+    ".local/further-gap/draw-runtime-next/initial-degree/greedy-final-01/objects",
+    ".local/further-gap/draw-runtime-next/printer-next/objects",
+    ".local/further-gap/draw-runtime-next/objects",
+    "formal/.lake/build/lib/lean",
+    "formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "formal/.lake/packages/Qq/.lake/build/lib/lean",
+    "formal/.lake/packages/aesop/.lake/build/lib/lean",
+    "formal/.lake/packages/batteries/.lake/build/lib/lean",
+    "formal/.lake/packages/importGraph/.lake/build/lib/lean",
+    "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+    "formal/.lake/packages/plausible/.lake/build/lib/lean",
+    "formal/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ],
+  "olean_sha256": "a828cea133744674e234b1338a18cf79c50f27f74282adde43e59fa3d7ca1d9b"
+}

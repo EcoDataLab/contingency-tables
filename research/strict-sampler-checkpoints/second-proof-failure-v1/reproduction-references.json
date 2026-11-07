@@ -1,0 +1,28 @@
+{
+  "executed_preparation_protocol": "../hash-memo-normalization-v1/",
+  "limits": "Private VM ownership wrappers/images/child disk and complete raw archive omitted, hash-bound by provenance. No full independently reproducible VM claimed. Old collector generic scope says no proof execution attempted; that inherited sentence is incorrect for this attempt and is superseded by the authenticated proof receipt and this outcome.",
+  "prior_failure": "../first-proof-failure-v1/",
+  "profile": {
+    "accelerator": "whpx,kernel-irqchip=off",
+    "enclosing_proof_seconds": 8100,
+    "inner_proof_seconds": 7200,
+    "minimum_free_host_gib": 12,
+    "network": "no NIC",
+    "outer_vm_seconds": 12600,
+    "ram_mib": 10240,
+    "swap_bytes": 0,
+    "vcpus": 1
+  },
+  "unchanged_measured_runtime": "../unused-cache-policy-v1/runner/tested-runtime/strict_serial_check.py",
+  "unchanged_sources": {
+    "NormalizeMemos.lean": "../hash-memo-normalization-v1/source/NormalizeMemos.lean",
+    "anchored_metadata.py": "../versioned-guard-v2/source/anchored_metadata.py",
+    "authenticate_runtime.py": "../authentication-diagnostics-v1/delta/runner/authenticate_runtime.py",
+    "install_sources.py": "../snapshot-comparison-v1/source/install_sources.py",
+    "prepare_memos.py": "../hash-memo-normalization-v1/source/prepare_memos.py",
+    "seed_media.py": "../snapshot-comparison-v1/source/seed_media.py",
+    "snapshots.py": "../snapshot-comparison-v1/source/snapshots.py",
+    "versioned_runner.py": "../versioned-guard-v2/source/versioned_runner.py"
+  },
+  "unchanged_versioned_guard": "../versioned-guard-v2/"
+}

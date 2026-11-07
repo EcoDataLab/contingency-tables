@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.InitializationObstruction
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.InitializationObstruction] headlines [Math115.PhysicalTraceJoin.defects_isEmpty_of_zero_small_rows, Math115.PhysicalTraceJoin.obstruction_both_large, Math115.PhysicalTraceJoin.obstruction_two_small_cells, Math115.PhysicalTraceJoin.obstruction_no_defect_start]

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "19e4f3ffe5807f024d91a9f6063504f36a4587af",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralInverseLower"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralInverseLower",
+      "source": "research/physical-trace-general-lower/formal/ResearchPhysicalTraceJoin/GeneralInverseLower.lean",
+      "source_sha256": "9fd2ca995e5d33b6112a453be01bd3f978a3be702f29b2bb2eb500d27370b494",
+      "returncode": 0,
+      "seconds": 36.57210266729817,
+      "olean_sha256": "a0a2707a0a293e90abf4d1c1926ac5a04dcadc8ab5f0a1152e4c377525cfe619"
+    }
+  ],
+  "audit_seconds": 68.46555995941162,
+  "audit_sha256": "bbd7aff8074242c0f5d48330a2d68df5c804821bdc3772714def170515841097",
+  "audit_driver_sha256": "bb834c925d54e5c710d0c09743ae7a9f27a446e95b54245d56369628ce7962a1",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "54d664f0c4986b012dc4076e2a2dd12755fd1d3a39507f0b1a96bdcf087d966f",
+  "declaration_count": 40,
+  "theorem_count": 28,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.inverseSupportAllowance_le_count",
+      "closure_size": 5013,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U : ℕ) (X : OAI.ContingencyTables.Table r c),\n  (∀ (i : Fin m), 0 < r i) →\n    (∀ (j : Fin n), 0 < c j) →\n      Math115.PhysicalTraceJoin.inverseSupportAllowance r c U ≤ Math115.PhysicalTraceJoin.inverseSupportCount r c U X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.inverseSupportAllowance_positive",
+      "closure_size": 4585,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U : ℕ),\n  2 ≤ m →\n    2 ≤ n →\n      0 <\n          Fintype.card\n            (OAI.ContingencyTables.SmallContextCoordinates.Cells\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)) →\n        0 < Math115.PhysicalTraceJoin.inverseSupportAllowance r c U",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

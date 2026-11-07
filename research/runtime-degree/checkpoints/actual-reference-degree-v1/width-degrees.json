@@ -1,0 +1,18 @@
+{
+  "sliceRow": 96,
+  "layoutRow": 192,
+  "unflattenGrid": 222342,
+  "flatToGridData": 222342,
+  "completionParts": 78,
+  "exponentCellData": 78,
+  "gridCellWidth": 864,
+  "offsetLength": 1728,
+  "freeCells": 504,
+  "offsetLengths": 3011614704,
+  "fifthPower": 216,
+  "fiftiethPower": 279936,
+  "denseWidth": 1296,
+  "trialWalkBits": 10077696,
+  "trialWidth": 2008825309550304,
+  "denseParameterBits": 12052951857301824
+}

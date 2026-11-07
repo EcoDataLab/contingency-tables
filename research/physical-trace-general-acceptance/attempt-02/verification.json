@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "19e4f3ffe5807f024d91a9f6063504f36a4587af",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralAcceptance"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralAcceptance",
+      "source": "research/physical-trace-general-acceptance/formal/ResearchPhysicalTraceJoin/GeneralAcceptance.lean",
+      "source_sha256": "8bcdd1b2ca716af5dbd74ac58e1d335682cf1ffb49cebda629f34766eb1045e0",
+      "returncode": 0,
+      "seconds": 61.124233208596706,
+      "olean_sha256": "d1bd6e14f164fe5dc2bfe09a8545deb1793b34fc08723fa3892cbced60c2803c"
+    }
+  ],
+  "audit_seconds": 81.8806148339063,
+  "audit_sha256": "c77cfde464fe08133dd9a2c11fd06bcf57f7b0bee260d039f24b41054a4a8e21",
+  "audit_driver_sha256": "6ec7b920636ecd8d17ab3cca5ada062cff5c01efde6c015b0e459c58cc2f7ef9",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "1626adbc90de06a508b1c1fc4be6e9bd348c17242999632b72c244e23a2cd8ac",
+  "declaration_count": 25,
+  "theorem_count": 18,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.PartialRepairCorrection.stationary_some",
+      "closure_size": 6844,
+      "statement": "∀ {S : Type u_1} {A : Type u_2} [inst : Fintype S] [inst_1 : Fintype A] [inst_2 : Nonempty S] (f : S → Option A) (c : ℕ)\n  (a : A),\n  (OAI.ContingencyTables.FirstSuccess.bindLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n          (Math115.PhysicalTraceJoin.PartialRepairCorrection.row f c)).mass\n      (some a) =\n    ↑(min c (Math115.PhysicalTraceJoin.PartialRepairCorrection.fibreSize f a)) / ↑(Fintype.card S)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalIdealCorrection_mass",
+      "closure_size": 10367,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) [inst : Nonempty (Math115.PhysicalTraceJoin.DefectJoint r c U L)]\n  (c0 : ℕ) (X : OAI.ContingencyTables.Table r c),\n  (OAI.ContingencyTables.FirstSuccess.bindLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n          (Math115.PhysicalTraceJoin.terminalIdealCorrectionRow r c U L c0)).mass\n      (some X) =\n    ↑(min c0 (Math115.PhysicalTraceJoin.terminalInverseCount r c U L X)) /\n      ↑(Fintype.card (Math115.PhysicalTraceJoin.DefectJoint r c U L))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalIdealCorrection_mass_of_le",
+      "closure_size": 10368,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) [inst : Nonempty (Math115.PhysicalTraceJoin.DefectJoint r c U L)]\n  (c0 : ℕ) (X : OAI.ContingencyTables.Table r c),\n  c0 ≤ Math115.PhysicalTraceJoin.terminalInverseCount r c U L X →\n    (OAI.ContingencyTables.FirstSuccess.bindLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n            (Math115.PhysicalTraceJoin.terminalIdealCorrectionRow r c U L c0)).mass\n        (some X) =\n      ↑c0 / ↑(Fintype.card (Math115.PhysicalTraceJoin.DefectJoint r c U L))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

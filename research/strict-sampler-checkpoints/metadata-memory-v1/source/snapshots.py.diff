@@ -1,0 +1,9 @@
+--- research/strict-sampler-checkpoints/snapshot-comparison-v1/source/snapshots.py
++++ metadata-memory-v1/source/snapshots.py
+@@ -76,4 +76,6 @@
+             require(directory_identity(root.lstat())==directory_identity(os.fstat(rootfd)),'root namespace changed')
+             return out
+         finally:
++            # Break the recursive closure self-cycle before releasing the same FDs.
++            walk = None
+             for fd in reversed(opened):os.close(fd)

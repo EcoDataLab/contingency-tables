@@ -1,0 +1,47 @@
+--- initial.lean
++++ checked.lean
+@@ -80 +80,2 @@
+-  rw [rawTerminalScheduleWordWidth_eq]
++  erw [rawTerminalScheduleWordWidth_eq]
++  dsimp only
+@@ -84,3 +85,2 @@
+-    simp only [List.length_ofFn, terminalCorrectedRetryWordWidth, terminalCorrectedWordWidth,
+-      le_refl]
+-  rw [htake, wordChunks_ofFn hq word, FirstSuccessProgram.retry_ofFn]
++    exact (List.length_ofFn (f := word)).le
++  erw [htake, wordChunks_ofFn hq word, FirstSuccessProgram.retry_ofFn]
+@@ -95,2 +95,2 @@
+-  rw [htrial]
+-  rw [FirstSuccessProgram.wordRetry_map
++  erw [htrial]
++  erw [FirstSuccessProgram.wordRetry_map
+@@ -100 +100 @@
+-  rw [Math115.CompletionBooleanRetry.retryWords_eq_wordRetry]
++  erw [Math115.CompletionBooleanRetry.retryWords_eq_wordRetry]
+@@ -127 +127 @@
+-  rw [he]
++  erw [he]
+@@ -137 +137 @@
+-    simp only [rawHybridWordWidth, if_pos hd]
++    simp only [rawHybridWordWidth, ite_eq_left hd]
+@@ -140 +140 @@
+-    simp only [rawHybridWordWidth, if_neg hd, if_pos hb, rawPositiveWordWidth_eq]
++    simp only [rawHybridWordWidth, ite_eq_right hd, ite_eq_left hb, rawPositiveWordWidth_eq]
+@@ -142 +142 @@
+-    simp only [rawHybridWordWidth, if_neg hd, if_neg hb, rawPositiveLegacyWordWidth_eq]
++    simp only [rawHybridWordWidth, ite_eq_right hd, ite_eq_right hb, rawPositiveLegacyWordWidth_eq]
+@@ -165 +165 @@
+-  rw [dif_pos hs]
++  rw [dite_eq_left hs]
+@@ -167 +167 @@
+-  · rw [if_pos hd]
++  · rw [ite_eq_left hd]
+@@ -172 +172 @@
+-  rw [if_neg hd]
++  rw [ite_eq_right hd]
+@@ -174 +174 @@
+-  · rw [if_pos hb]
++  · rw [ite_eq_left hb]
+@@ -179 +179 @@
+-  · rw [if_neg hb]
++  · rw [ite_eq_right hb]

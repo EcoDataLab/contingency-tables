@@ -1,0 +1,4 @@
+Math115.ReferenceRuntimeNext.typed_denseTrialWidth : Typed trialWidthRealizer 2008825309550304
+'Math115.ReferenceRuntimeNext.typed_denseTrialWidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+Math115.ReferenceRuntimeNext.typed_denseParameterBits : Typed denseParameterBitsRealizer 12052951857301824
+'Math115.ReferenceRuntimeNext.typed_denseParameterBits' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,110 @@
+[
+  {
+    "module": "RetryRuntime.ActualRetryWordsDegree",
+    "source": "source/RetryRuntime/ActualRetryWordsDegree.lean",
+    "source_sha256": "f99a096ec1364fb8cdef055c6b7209e9464321febe4baa44a4d27822e23a97df",
+    "direct_imports": [
+      "RetryRuntime.WordChunksDegree",
+      "Math115.LatticeOuterProgram"
+    ]
+  },
+  {
+    "module": "RetryRuntime.ListRepeatDegree",
+    "source": "source/RetryRuntime/ListRepeatDegree.lean",
+    "source_sha256": "ad34899b9537dfb2ddb3f5c1ac3d8cb56b8c675fce0e0e8b2aa006dfdc505d66",
+    "direct_imports": [
+      "RetryRuntime.ListSeed",
+      "OAI.Combinatorics.MatchingCount.Tapes.Codec"
+    ]
+  },
+  {
+    "module": "RetryRuntime.ListSeed",
+    "source": "source/RetryRuntime/ListSeed.lean",
+    "source_sha256": "5710dbdcd7f069eabb17cefc219664e5c1a707572af1a37d45c026029bb9a63d",
+    "direct_imports": [
+      "InitialRuntime.GreedyDegree",
+      "OAI.Combinatorics.MatchingCount.Complexity.TreeChoiceCosts"
+    ]
+  },
+  {
+    "module": "RetryRuntime.MapWithDegree",
+    "source": "source/RetryRuntime/MapWithDegree.lean",
+    "source_sha256": "e60425408f0bb385d03392a661cfa57efbb75f6d50562b3fab8749deca8e5f07",
+    "direct_imports": [
+      "RetryRuntime.RangeDegree",
+      "PrinterRuntime.LinearCollections"
+    ]
+  },
+  {
+    "module": "RetryRuntime.RangeDegree",
+    "source": "source/RetryRuntime/RangeDegree.lean",
+    "source_sha256": "d85dc83fa2780ee03659544caa02b4cee6e3ab37052e8308860140e2627553e0",
+    "direct_imports": [
+      "RetryRuntime.ListRepeatDegree",
+      "OAI.Combinatorics.MatchingCount.Machines.TreeNaturalComb"
+    ]
+  },
+  {
+    "module": "RetryRuntime.WordChunkDegree",
+    "source": "source/RetryRuntime/WordChunkDegree.lean",
+    "source_sha256": "b65d6dcff508a4a7e4976c5d727ee8731dadf014599c6f8972e2bd0db2cafaba",
+    "direct_imports": [
+      "RetryRuntime.ListRepeatDegree"
+    ]
+  },
+  {
+    "module": "RetryRuntime.WordChunksDegree",
+    "source": "source/RetryRuntime/WordChunksDegree.lean",
+    "source_sha256": "599011a40e0da48a243d85551c5397ce8430195a2084c48b072b1eff4c0c2157",
+    "direct_imports": [
+      "RetryRuntime.WordChunkDegree",
+      "RetryRuntime.MapWithDegree",
+      "DivisionRuntime.Degree"
+    ]
+  },
+  {
+    "module": "DivisionRuntime.Degree",
+    "source": "source/DivisionRuntime/Degree.lean",
+    "source_sha256": "5e03bc8b825b6d0cbfecf77b6454db781ec2fe40c7ca55d644b94e3d9b4dff3c",
+    "direct_imports": [
+      "ResearchBounds.TreeArithmeticDegree",
+      "OAI.Combinatorics.MatchingCount.Complexity.TreePolynomialDivision",
+      "OAI.Combinatorics.MatchingCount.Machines.TreeNaturalComb"
+    ]
+  },
+  {
+    "module": "InitialRuntime.GreedyDegree",
+    "source": "source/InitialRuntime/GreedyDegree.lean",
+    "source_sha256": "cc32b1173db329ce4f94a4e0cd6a0c07b0833df96a57d4d3ca16b4e64079fe8f",
+    "direct_imports": [
+      "PrinterRuntime.LinearCollections",
+      "OAI.Combinatorics.ContingencyTables.Sampling.GreedyPublicProgram"
+    ]
+  },
+  {
+    "module": "PrinterRuntime.LinearCollections",
+    "source": "source/PrinterRuntime/LinearCollections.lean",
+    "source_sha256": "7839ffe7bb9c651e1497ff09f244b19455bc5c2cc1c095264e60c1a34c695eb0",
+    "direct_imports": [
+      "ResearchBounds.TreeArithmeticDegree",
+      "OAI.Combinatorics.MatchingCount.Machines.TreeFiniteCollections",
+      "OAI.Combinatorics.MatchingCount.Complexity.TreeChoiceCosts"
+    ]
+  },
+  {
+    "module": "ResearchBounds.TreeDegreeBounds",
+    "source": "source/ResearchBounds/TreeDegreeBounds.lean",
+    "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf",
+    "direct_imports": [
+      "OAI.Combinatorics.MatchingCount.Complexity.TreeCostMeasure"
+    ]
+  },
+  {
+    "module": "ResearchBounds.TreeArithmeticDegree",
+    "source": "source/ResearchBounds/TreeArithmeticDegree.lean",
+    "source_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76",
+    "direct_imports": [
+      "ResearchBounds.TreeDegreeBounds"
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "bf3b29f093c634ad5b27b336b79e4f0289b22480",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchComputedReference.Trace"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchComputedReference.Trace",
+      "source": "research/computed-reference-trace/formal/ResearchComputedReference/Trace.lean",
+      "source_sha256": "06402e7543c227ad1427872f94dc5889359f696ba308e820e6e9cfd92d3e4f97",
+      "returncode": 0,
+      "seconds": 52.31723391683772,
+      "olean_sha256": "55e31c1086bc6beac80c459f503445f3cccb87301ef9442b660a1fcacd063213"
+    }
+  ],
+  "audit_seconds": 89.12889833329245,
+  "audit_sha256": "9c371a6eced887765ede009f3f9ab142d936d4431d2b6b3edbaccca3ccc387b5",
+  "audit_driver_sha256": "3340ab1a020a591528f6b326e7bf42c44cd78b7d6ee55763fc5a06ceada5e440",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "ee6d0980393fb6f10f1c0214aecb5bf3a17d041c137ca833ab6a05b63e262e61",
+  "declaration_count": 34,
+  "theorem_count": 29,
+  "headlines": [
+    {
+      "name": "Math115.ComputedReferenceTrace.computedReferenceTrace_poincare_aggregate",
+      "closure_size": 30456,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  [inst : Nonempty (Math115.PhysicalDefectTrace.DefectVertices r c U L)],\n  2 ≤ U →\n    7 ≤ L →\n      ∀\n        (hp :\n          2 ≤\n            Fintype.card\n              (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n        (g : Math115.PhysicalDefectTrace.DefectVertices r c U L → ℝ),\n        (Math115.ComputedReferenceTrace.computedReferenceTrace r c U L hr hc hp).variance g ≤\n          32 *\n                ↑(Fintype.card\n                      (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                        (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U))) ^\n                  3 *\n              Math115.AggregateDefectTrace.aggregateCT r c U *\n            (Math115.ComputedReferenceTrace.computedReferenceTrace r c U L hr hc hp).energy g",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.ComputedReferenceTrace.computedReferenceTrace_transition",
+      "closure_size": 11668,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  [inst : Nonempty (Math115.PhysicalDefectTrace.DefectVertices r c U L)]\n  (hp :\n    2 ≤\n      Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n  (d e : Math115.PhysicalDefectTrace.DefectVertices r c U L),\n  d ≠ e →\n    have i₀ := (OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r U hr) none;\n    have j₀ := (OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c U hc) none;\n    (Math115.ComputedReferenceTrace.computedReferenceTrace r c U L hr hc hp).P d e =\n      (Math115.ComputedReferenceTrace.referenceDD r c U L i₀ j₀ d e +\n          ∑ b,\n            Math115.ComputedReferenceTrace.referenceCross r c U L i₀ j₀ b d *\n                Math115.ComputedReferenceTrace.referenceCross r c U L i₀ j₀ b e /\n              ∑ f, Math115.ComputedReferenceTrace.referenceCross r c U L i₀ j₀ b f) /\n        (2 * ↑(Math115.PhysicalDefectTrace.defectAllowance r c U) * Math115.PhysicalDefectTrace.defectWeight r c U L d)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.ComputedReferenceTrace.computedReferenceTrace_pi",
+      "closure_size": 11659,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  [inst : Nonempty (Math115.PhysicalDefectTrace.DefectVertices r c U L)]\n  (hp :\n    2 ≤\n      Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n  (d : Math115.PhysicalDefectTrace.DefectVertices r c U L),\n  (Math115.ComputedReferenceTrace.computedReferenceTrace r c U L hr hc hp).π d =\n    Math115.PhysicalDefectTrace.defectWeight r c U L d / ∑ e, Math115.PhysicalDefectTrace.defectWeight r c U L e",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.ComputedReferenceTrace.referenceTrace_canonical_P",
+      "closure_size": 11543,
+      "statement": "∀ {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J] (r : I → ℕ)\n  (c : J → ℕ) (U L : ℕ)\n  (href :\n    Nonempty (OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U) ∧\n      Nonempty (OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U))\n  [inst_4 : Nonempty (Math115.PhysicalDefectTrace.DefectVertices r c U L)]\n  (hp :\n    2 ≤\n      Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n  (d e : Math115.PhysicalDefectTrace.DefectVertices r c U L),\n  (Math115.ComputedReferenceTrace.referenceTrace r c U L (Classical.choice ⋯) (Classical.choice ⋯) hp).P d e =\n    (Math115.PhysicalDefectTrace.actualRationalTrace r c U L hp).P d e",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

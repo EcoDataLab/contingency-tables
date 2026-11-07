@@ -1,0 +1,40 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitializationCode.lean:76:2: error: Type mismatch: After simplification, term
+  congrArg (List.map f) (Eq.symm (PhysicalComputedProposal.computedCellEquiv_catalog r c U))
+ has type
+  @Eq (List ℕ) (List.map f (PhysicalComputedProposal.computedCatalog r c U))
+    (List.ofFn
+      (f ∘ fun i =>
+        (↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).1,
+          ↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).2)))
+but is expected to have type
+  @Eq (List ℕ) (List.map f (PhysicalComputedProposal.computedCatalog r c U))
+    (List.ofFn fun i =>
+      f
+        (↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).1,
+          ↑(↑((PhysicalComputedProposal.computedCellEquiv r c U) i)).2))
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitializationCode.lean:88:27: error: ambiguous term, use fully qualified name, possible interpretations [@PhysicalComputedProposal.stateCode,
+ @SmallGraphProfiles.stateCode]
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitializationCode.lean:135:2: error: Type mismatch: After simplification, term
+  congrArg some he
+ has type
+  @Eq (Option (List ℕ × List ℕ))
+    (some
+      (listedInverseProfileCode (positiveMargins xs) (positiveMargins ys) (positiveTraceCutoff xs ys) 7 (matrixCode ↑X)
+        (↑(↑(↑st).1).1, ↑(↑(↑st).1).2) (↑(↑(↑st).2).1, ↑(↑(↑st).2).2)))
+    (some
+      (computedStateCode (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+        ↑(inverseDefectState (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7 X ⟨↑st, ⋯⟩)))
+but is expected to have type
+  @Eq (Option (List ℕ × List ℕ))
+    (some
+      (listedInverseProfileCode (positiveMargins xs) (positiveMargins ys) (positiveTraceCutoff xs ys) 7
+        (matrixCode ↑(positiveTraceFallback xs ys ?htotal))
+        (↑((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h).1.1,
+          ↑((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get
+                  h).1.2)
+        (↑((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h).2.1,
+          ↑((initializationLabelSearch (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) X).get
+                  h).2.2)))
+    (some
+      (computedStateCode (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+        ↑(positiveTraceInitialStart xs ys htotal hb)))

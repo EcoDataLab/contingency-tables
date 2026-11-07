@@ -1,0 +1,41 @@
+{
+  "modules": [
+    {
+      "module": "CompleteDraw.Seams",
+      "private_receipt": "CompleteDraw_Seams.compilation.json",
+      "private_receipt_sha256": "37490e70672be2235ccf642ccfd950020cc90d3ce21589e9d0a4bf24411826d0",
+      "source_sha256": "4f02c59c3b89fc43ac8265cb8887c803eb60b1c0aa342bcc6b9db51746a20116",
+      "object_sha256": "1285dc740cf95e6382a7445e94e3d36a9c6b39ba911b8d3115cd6bf4631c6c03"
+    },
+    {
+      "module": "CompleteDraw.PublicBridge",
+      "private_receipt": "CompleteDraw_PublicBridge.compilation.json",
+      "private_receipt_sha256": "bcee0b2d69196b793bc6c243a1d2faf15258e5d50148b1648bb1079781e8047c",
+      "source_sha256": "af30b0ec3632bef514e475e286606388c7d5089dac2ec9297760be496ad5a62c",
+      "object_sha256": "98311172924f39a020fac8900917ce73eccbb03e8120f71ae2d12607144302bd"
+    },
+    {
+      "module": "CompleteDraw.FinalBinding",
+      "private_receipt": "CompleteDraw_FinalBinding.compilation.json",
+      "private_receipt_sha256": "2ca9e21af2c978e9190fdc7f2d149974ad7818dc873f95c3d25a7603e4bc5474",
+      "source_sha256": "da7baf26d81e0959b9d795f20b9552a32428170b3caa5559b76d14108a7d5920",
+      "object_sha256": "a050b479dfc86776edb540fafa86066d706c348557ab2bbc4fdeb1c3d938423a"
+    },
+    {
+      "module": "CompleteDraw.FixedMachineTheorem",
+      "private_receipt": "CompleteDraw_FixedMachineTheorem.compilation.json",
+      "private_receipt_sha256": "27e4750c8835f242dc9b38e4f1613042beaad0eb8485719e6c46f1fa95154c33",
+      "source_sha256": "34e65943767905e9bce4b0ccf88b8985d84a691ea06f50a1bc5ee569d2c0f672",
+      "object_sha256": "b099e243267870ec9da03bc697bc0f55c869bb3c4b7fdbb77b442ee6e93f1b7d"
+    },
+    {
+      "module": "CompleteDraw.Audit",
+      "private_receipt": "CompleteDraw_Audit.compilation.json",
+      "private_receipt_sha256": "4fa5ee49e9a22fc774a20f54efdba07467958feb45bda704ba9eb7432eaa1f72",
+      "source_sha256": "6113f5cbd727763070b89e9b0b24510c24a71ad241bdcd98c159a0bd584aa15f",
+      "object_sha256": "ffba260f7555fb5a405c39f31f02694819edf3a23a55c0bc594852c6eeb0d213"
+    }
+  ],
+  "private_verification_sha256": "ebb51dc8044bc2cd42d029961f1ca3aec6bacdff61bf72153897d31cbb2ca2ba",
+  "private_final_readback_sha256": "0b71525cdac9915042f0ea48b855b44e0cb1e3558a17ca3260b834436e9d89d4"
+}

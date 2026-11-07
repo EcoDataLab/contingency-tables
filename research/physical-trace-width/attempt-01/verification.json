@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "ef489fe5fdf5213604a4fa9e015d33fef9105fd7",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.Width"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.Width",
+      "source": "research/physical-trace-width/formal/ResearchPhysicalTraceJoin/Width.lean",
+      "source_sha256": "5226b9d3c67437b5482b073d858f30604391d9289537bf800355e604670a188e",
+      "returncode": 0,
+      "seconds": 38.76859816722572,
+      "olean_sha256": "114a14cf4fbaca9f75e83dfe9d0698a22f1f8a840791514d4b0cd24f6adf5be5"
+    }
+  ],
+  "audit_seconds": 104.80123929213732,
+  "audit_sha256": "48713a9db665237d960f21e48c8e50eef571f00492a138c3d8b4afa8e7c413d9",
+  "audit_driver_sha256": "8fd9b7f3ea5d8c7b7b606bee347d4e66af988aedf72dcd1efe5a822804582f0b",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "73bd343613316d8a3866dac4dc4d1d34be94165c38b4defd9d751d9706261c6e",
+  "declaration_count": 18,
+  "theorem_count": 8,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.balancedExitWidth_le_common",
+      "closure_size": 10830,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (J hExit : ℕ),\n  Math115.PhysicalTraceJoin.balancedExitWidth r c U L hr hc b J hExit ≤\n    Math115.PhysicalTraceJoin.commonExitWidth r c U L J hExit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.joinedWidth_le_uniform",
+      "closure_size": 10834,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (d : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N hIn J hExit : ℕ),\n  Math115.PhysicalTraceJoin.incomingWidth r c U L hr hc d N hIn +\n      Math115.PhysicalTraceJoin.commonExitWidth r c U L J hExit ≤\n    Math115.PhysicalTraceJoin.uniformStepWidth r c U L N hIn J hExit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.uniformJoinedWord_law",
+      "closure_size": 11895,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (d : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N hIn J hExit : ℕ),\n  OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalTraceJoin.uniformJoinedWord r c U L hr hc d N hIn J hExit) =\n    Math115.PhysicalTraceJoin.actualJoinedLaw r c U L hr hc d N hIn J hExit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.scheduledUniformJoinedWord_accuracy",
+      "closure_size": 44325,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    7 ≤ L →\n      ∀\n        (hp :\n          2 ≤\n            Fintype.card\n              (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n        (d : Math115.PhysicalDefectTrace.DefectVertices r c U L) (t : ℕ),\n        OAI.ContingencyTables.FirstSuccess.variation\n            (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n              (Math115.PhysicalTraceJoin.uniformJoinedWord r c U L hr hc d (t + 2) (t + 2)\n                (Math115.PhysicalStarBudget.attempts OAI.ContingencyTables.CompletionCounts.dimensionAllowance t)\n                (Math115.PhysicalStarBudget.precision OAI.ContingencyTables.CompletionCounts.dimensionAllowance t)))\n            (Math115.PhysicalTraceJoin.idealJoinedLaw r c U L hr hc hp d) ≤\n          Math115.CompletionRetryBudget.dyadic t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

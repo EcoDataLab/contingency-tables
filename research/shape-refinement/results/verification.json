@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "Math115.EffectiveWidthBound",
+    "Math115.ShapeDegreeBound",
+    "Math115.ShapeScalarScales",
+    "Math115.ReferenceEdgeAcceptance",
+    "Research.AcceptancePadding"
+  ],
+  "compilation": [
+    {
+      "module": "Math115.EffectiveWidthBound",
+      "source": "research/effective-width/formal/Math115/EffectiveWidthBound.lean",
+      "source_sha256": "73238cfc2aa621da5921b6fba02e9944c8cce94554e49ac3f5e2f6578704ea1f",
+      "returncode": 0,
+      "seconds": 21.88,
+      "olean_sha256": "a08a5e767658e3c734d5eb2fc781b798412872564271e157a8f52fbf5286c42b"
+    },
+    {
+      "module": "Math115.ShapeDegreeBound",
+      "source": "research/shape-refinement/formal/Math115/ShapeDegreeBound.lean",
+      "source_sha256": "0761f9e7503fdb0b72ceb7c34ce6d2e707afeb35901a96c37462eb99eee9c801",
+      "returncode": 0,
+      "seconds": 4.832,
+      "olean_sha256": "32136a8ce302f0a516d8a22bb9280d33deed758e02cabcbba12f0682208a4689"
+    },
+    {
+      "module": "Math115.ShapeScalarScales",
+      "source": "research/shape-refinement/formal/Math115/ShapeScalarScales.lean",
+      "source_sha256": "e62b6d88d9423149afdfdab9c04aeacc91636aff353aa578e94b0765c946c356",
+      "returncode": 0,
+      "seconds": 19.1,
+      "olean_sha256": "efbd5cbe529ce679164414d3301c515fcfe42d8f85c53bfb2677a445a2d09fbf"
+    },
+    {
+      "module": "Math115.ReferenceEdgeAcceptance",
+      "source": "formal/Math115/ReferenceEdgeAcceptance.lean",
+      "source_sha256": "3e9973e6c5b97356d1222fc301f4cf5dfd4865045b0b89ae25b4c3e5cf8f93b8",
+      "returncode": 0,
+      "seconds": 14.591,
+      "olean_sha256": "36833934ddb08641de659569ba48db4aaa6f7d139c6da58c6128bd867046cc7c"
+    },
+    {
+      "module": "Research.AcceptancePadding",
+      "source": "research/shape-refinement/formal/Research/AcceptancePadding.lean",
+      "source_sha256": "59773bb5f0e4053ff87bfa9810cb2e64a0592037ebe84b13ceb7dbeac9172726",
+      "returncode": 0,
+      "seconds": 15.581,
+      "olean_sha256": "7248b8a0a8435f322d4fd5583ee8d718691be443557196e52e51703aee9852ae"
+    },
+    {
+      "module": "ResearchAudit.EnvironmentAudit",
+      "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+      "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "returncode": 0,
+      "seconds": 2.48,
+      "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+    }
+  ],
+  "audit_seconds": 64.494,
+  "audit_sha256": "5c2828b1c11f07adaa66f1b4a43063882d5d2c94c7114145c2cf23edd7b765c5",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "c36a58379cd13156e73e576599dded9b4d0e919fc5d494219ee6adf72c8a03dd",
+  "declaration_count": 188,
+  "theorem_count": 150,
+  "headlines": [
+    {
+      "name": "Math115.ShapeDegreeBound.available_bound_le",
+      "closure_size": 1949,
+      "statement": "\u2200 (m n R C : \u2115),\n  2 \u2264 m \u2192\n    2 \u2264 n \u2192\n      R \u2264 m \u2192\n        C \u2264 n \u2192\n          2 \u2264 m * n - R * C \u2192\n            \u2200 (s t : Math115.ShapeDegreeBound.CellType),\n              Math115.ShapeDegreeBound.available m n R C s t \u2192\n                Math115.ShapeDegreeBound.bound m n R C s t \u2264 4 * (m * n - R * C) - 3"
+    },
+    {
+      "name": "Math115.ShapeDegreeBound.degreeEnvelope_le",
+      "closure_size": 2535,
+      "statement": "\u2200 (m n R C : \u2115),\n  2 \u2264 m \u2192\n    2 \u2264 n \u2192\n      R \u2264 m \u2192 C \u2264 n \u2192 2 \u2264 m * n - R * C \u2192 Math115.ShapeDegreeBound.degreeEnvelope m n R C \u2264 4 * (m * n - R * C) - 3"
+    },
+    {
+      "name": "Math115.ShapeScalarScales.proposal_rational_coefficient_le",
+      "closure_size": 11432,
+      "statement": "\u2200 (m n R C V : \u2115),\n  2 \u2264 m \u2192\n    2 \u2264 n \u2192\n      R \u2264 m \u2192\n        C \u2264 n \u2192\n          2 \u2264 m * n - R * C \u2192\n            2 \u2264 V \u2192\n              4 * \u2191(Math115.ShapeDegreeBound.proposalAllowance m n R C) *\n                  Math115.PhysicalRepairRefinement.refinedConstant (m * n - R * C) V \u2264\n                16 * \u2191(m * n - R * C) ^ 4 * \u2191V ^ 4"
+    },
+    {
+      "name": "Math115.ShapeScalarScales.proposal_dyadic_coefficient_le",
+      "closure_size": 11675,
+      "statement": "\u2200 (m n R C V : \u2115),\n  2 \u2264 m \u2192\n    2 \u2264 n \u2192\n      R \u2264 m \u2192\n        C \u2264 n \u2192\n          2 \u2264 m * n - R * C \u2192\n            2 \u2264 V \u2192\n              2 * \u2191(Math115.ShapeScalarScales.dyadicDenominator (Math115.ShapeDegreeBound.proposalAllowance m n R C)) *\n                  Math115.PhysicalRepairRefinement.refinedConstant (m * n - R * C) V \u2264\n                32 * \u2191(m * n - R * C) ^ 4 * \u2191V ^ 4"
+    },
+    {
+      "name": "Math115.ShapeScalarScales.guarded_padded_count_le_twice",
+      "closure_size": 10434,
+      "statement": "\u2200 {I : Type u_1} {J : Type u_2} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : DecidableEq I]\n  [inst_3 : DecidableEq J] (r : I \u2192 \u2115) (c : J \u2192 \u2115) (K : Finset (I \u00d7 J)) (L : \u2115),\n  (\u2200 p \u2208 K, Math115.ShapeScalarScales.guardedCutoff K.card L ((Fintype.card I - 1) * (Fintype.card J - 1)) \u2264 r p.1) \u2192\n    (\u2200 p \u2208 K, Math115.ShapeScalarScales.guardedCutoff K.card L ((Fintype.card I - 1) * (Fintype.card J - 1)) \u2264 c p.2) \u2192\n      Fintype.card\n          (OAI.ContingencyTables.Table (OAI.ContingencyTables.paddedRows r (OAI.ContingencyTables.largePadding K L))\n            (OAI.ContingencyTables.paddedColumns c (OAI.ContingencyTables.largePadding K L))) \u2264\n        2 * Fintype.card (OAI.ContingencyTables.Table r c)"
+    },
+    {
+      "name": "Math115.ShapeScalarScales.localDimension_conditions",
+      "closure_size": 1551,
+      "statement": "\u2200 (R C : \u2115),\n  14 \u2264 Math115.ShapeScalarScales.localDimension R C \u2227\n    R \u2264 Math115.ShapeScalarScales.localDimension R C \u2227\n      C \u2264 Math115.ShapeScalarScales.localDimension R C \u2227\n        (R - 1) * (C - 1) \u2264 Math115.ShapeScalarScales.localDimension R C - 1"
+    },
+    {
+      "name": "Research.AcceptancePadding.reference_edge_acceptance_block_floor",
+      "closure_size": 12656,
+      "statement": "\u2200 {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J] (r : I \u2192 \u2115)\n  (c : J \u2192 \u2115) (U L : \u2115) (B : I \u2192 J \u2192 \u2115)\n  (hB : \u2200 (i : I) (j : J), OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U i j = true \u2192 B i j = U)\n  (i\u2080 : OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U)\n  (j\u2080 : OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U),\n  3 * (Fintype.card { i // i \u2260 i\u2080 } * Fintype.card { j // j \u2260 j\u2080 }) \u2264\n      min (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U))\n          (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U)) *\n        L \u2192\n    (\u2200\n        (z :\n          OAI.ContingencyTables.SmallGraphProfiles.PhysicalStates\n            (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) B r c L)\n        (i : I) (j : J),\n        OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U i j = false \u2192\n          \u2211 k,\n              OAI.ContingencyTables.SmallGraphProfiles.residualRows\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) B r c L z k \u2264\n            B i j) \u2192\n      \u2200\n        (x y :\n          OAI.ContingencyTables.SmallGraphProfiles.PhysicalStates\n            (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) B r c L),\n        OAI.ContingencyTables.SmallGraphProfiles.physicalAdjacent r c U L B hB x y \u2192\n          \u2191(OAI.ContingencyTables.CompletionTranslation.blockCount\n                  (OAI.ContingencyTables.SmallGraphProfiles.referenceRows r c U L B i\u2080)\n                  (OAI.ContingencyTables.SmallGraphProfiles.referenceColumns r c U L B j\u2080) x) /\n              2 \u2264\n            \u2191(OAI.ContingencyTables.CompletionTranslation.acceptedCount\n                (OAI.ContingencyTables.SmallGraphProfiles.referenceRows r c U L B i\u2080)\n                (OAI.ContingencyTables.SmallGraphProfiles.referenceColumns r c U L B j\u2080) x y)"
+    },
+    {
+      "name": "Research.AcceptancePadding.reference_edge_acceptance_floorPadding",
+      "closure_size": 12666,
+      "statement": "\u2200 {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J] (r : I \u2192 \u2115)\n  (c : J \u2192 \u2115) (U : \u2115) (B : I \u2192 J \u2192 \u2115)\n  (hB : \u2200 (i : I) (j : J), OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U i j = true \u2192 B i j = U)\n  (i\u2080 : OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U)\n  (j\u2080 : OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U),\n  (\u2200\n      (z :\n        OAI.ContingencyTables.SmallGraphProfiles.PhysicalStates\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) B r c\n          (Research.AcceptancePadding.floorPadding\n            (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U))\n            (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U))))\n      (i : I) (j : J),\n      OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U i j = false \u2192\n        \u2211 k,\n            OAI.ContingencyTables.SmallGraphProfiles.residualRows\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) B r c\n              (Research.AcceptancePadding.floorPadding\n                (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U))\n                (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U)))\n              z k \u2264\n          B i j) \u2192\n    \u2200\n      (x y :\n        OAI.ContingencyTables.SmallGraphProfiles.PhysicalStates\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) B r c\n          (Research.AcceptancePadding.floorPadding\n            (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U))\n            (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U)))),\n      OAI.ContingencyTables.SmallGraphProfiles.physicalAdjacent r c U\n          (Research.AcceptancePadding.floorPadding\n            (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U))\n            (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U)))\n          B hB x y \u2192\n        \u2191(OAI.ContingencyTables.CompletionTranslation.blockCount\n                (OAI.ContingencyTables.SmallGraphProfiles.referenceRows r c U\n                  (Research.AcceptancePadding.floorPadding\n                    (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U))\n                    (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U)))\n                  B i\u2080)\n                (OAI.ContingencyTables.SmallGraphProfiles.referenceColumns r c U\n                  (Research.AcceptancePadding.floorPadding\n                    (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U))\n                    (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U)))\n                  B j\u2080)\n                x) /\n            2 \u2264\n          \u2191(OAI.ContingencyTables.CompletionTranslation.acceptedCount\n              (OAI.ContingencyTables.SmallGraphProfiles.referenceRows r c U\n                (Research.AcceptancePadding.floorPadding\n                  (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U))\n                  (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U)))\n                B i\u2080)\n              (OAI.ContingencyTables.SmallGraphProfiles.referenceColumns r c U\n                (Research.AcceptancePadding.floorPadding\n                  (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U))\n                  (Fintype.card (OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U)))\n                B j\u2080)\n              x y)"
+    },
+    {
+      "name": "Research.AcceptancePadding.floorPadding_budget",
+      "closure_size": 1547,
+      "statement": "\u2200 (R C : \u2115), 0 < R \u2192 0 < C \u2192 3 * ((R - 1) * (C - 1)) \u2264 min R C * Research.AcceptancePadding.floorPadding R C"
+    },
+    {
+      "name": "Research.AcceptancePadding.cutoff_budget",
+      "closure_size": 1551,
+      "statement": "\u2200 (m n R C : \u2115),\n  47 * (R * C) * Research.AcceptancePadding.floorPadding R C * ((m - 1) * (n - 1)) \u2264\n    32 * (Research.AcceptancePadding.cutoff m n R C + 1)"
+    },
+    {
+      "name": "Research.AcceptancePadding.bounded_aspect_gap",
+      "closure_size": 798,
+      "statement": "\u2200 (d t A p V U K : \u2115),\n  p \u2264 d \u2192 V \u2264 U \u2192 U \u2264 5 * d ^ 2 * t \u2192 t ^ 2 \u2264 A * d \u2192 K \u2264 16 * p ^ 4 * V ^ 4 \u2192 K \u2264 10000 * A ^ 2 * d ^ 14"
+    },
+    {
+      "name": "Research.AcceptancePadding.outerCutoff_budget",
+      "closure_size": 4014,
+      "statement": "\u2200 (m n R C d : \u2115),\n  2 \u2264 d \u2192\n    0 < R \u2192\n      0 < C \u2192\n        R \u2264 m \u2192\n          C \u2264 n \u2192\n            m * n \u2264 d \u2192\n              47 * (R * C) * Research.AcceptancePadding.floorPadding R C * ((m - 1) * (n - 1)) \u2264\n                32 * (Research.AcceptancePadding.outerCutoff m n d + 1)"
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "45e08ea37f98a82ede86d3007101d50c34b55fb5",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchWeightedExit.FirstSuccess"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchWeightedExit.FirstSuccess",
+      "source": "research/weighted-exit/formal/ResearchWeightedExit/FirstSuccess.lean",
+      "source_sha256": "aaefb6c127088465de51c20d4278583c1928eb1eacb863370f2f1eaeb9ebc9d7",
+      "returncode": 0,
+      "seconds": 25.060194625053555,
+      "olean_sha256": "4b5ea0b2305ea9049f5275e4b32f57ad12004d967a6d3acc4185597d805ef261"
+    }
+  ],
+  "audit_seconds": 79.01492120791227,
+  "audit_sha256": "ac218ed1c86d76b116243a1eaf3a37a310323562976b73e20192d4b00075d3e7",
+  "audit_driver_sha256": "e5df06ef69f23731560ace3d35c3713d99d331b39a4ddfc6a0fd794070706261",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "dcd0b56e3e9400b979949732ecaf68d06557b49c532917520a6423d8f7b188c4",
+  "declaration_count": 18,
+  "theorem_count": 17,
+  "headlines": [
+    {
+      "name": "Math115.WeightedExit.weighted_retry_mass",
+      "closure_size": 6564,
+      "statement": "∀ {X : Type u_1} {D : Type u_2} [inst : Fintype X] [inst_1 : Fintype D] [inst_2 : DecidableEq D]\n  (q : OAI.ContingencyTables.ResidualMixture.RationalLaw X) (trial : X → Option D)\n  (target : OAI.ContingencyTables.ResidualMixture.RationalLaw D) (a : ℚ),\n  (∀ (d : D), OAI.ContingencyTables.FirstSuccess.successMass q trial d = a * target.mass d) →\n    ∀ (fallback d : D) (J : ℕ),\n      (OAI.ContingencyTables.FirstSuccess.retryLaw q trial fallback J).mass d =\n        (1 - (1 - a) ^ J) * target.mass d + if d = fallback then (1 - a) ^ J else 0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.WeightedExit.star_retry_mass",
+      "closure_size": 6780,
+      "statement": "∀ {X : Type u_1} {D : Type u_2} [inst : Fintype X] [inst_1 : Fintype D] [inst_2 : DecidableEq D]\n  (q : OAI.ContingencyTables.ResidualMixture.RationalLaw X) (trial : X → Option D) (S : D → ℚ),\n  (∀ (d : D), 0 ≤ S d) →\n    0 < ∑ d, S d →\n      ∀ (ρ w : ℚ),\n        0 < w →\n          (∀ (d : D), OAI.ContingencyTables.FirstSuccess.successMass q trial d = ρ * S d / w) →\n            ∀ (fallback d : D) (J : ℕ),\n              (OAI.ContingencyTables.FirstSuccess.retryLaw q trial fallback J).mass d =\n                (1 - (1 - (ρ * ∑ e, S e) / w) ^ J) * (S d / ∑ e, S e) +\n                  if d = fallback then (1 - (ρ * ∑ e, S e) / w) ^ J else 0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.WeightedExit.flat_star_retry_variation",
+      "closure_size": 7604,
+      "statement": "∀ {X : Type u_1} {D : Type u_2} [inst : Fintype X] [inst_1 : Fintype D] [inst_2 : DecidableEq D]\n  [inst_3 : DecidableEq X] {k : ℕ} (draw : (Fin k → Bool) → X) (trial : X → Option D)\n  (q : OAI.ContingencyTables.ResidualMixture.RationalLaw X) (S : D → ℚ) (hS : ∀ (d : D), 0 ≤ S d) (hpos : 0 < ∑ d, S d)\n  (ρ w : ℚ),\n  0 < w →\n    (∀ (d : D), OAI.ContingencyTables.FirstSuccess.successMass q trial d = ρ * S d / w) →\n      ∀ (fallback : D) (J : ℕ) (δ : ℚ),\n        OAI.ContingencyTables.FirstSuccess.variation\n              (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw draw) q ≤\n            δ →\n          OAI.ContingencyTables.FirstSuccess.variation\n              (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n                (Math115.CompletionBooleanRetry.flatRetry (fun word => trial (draw word)) fallback J))\n              (Math115.WeightedExit.starLaw S hS hpos) ≤\n            (1 - (ρ * ∑ e, S e) / w) ^ J + ↑J * δ",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,10 @@
+{
+  "cpu_count": 1,
+  "disk_free_bytes": 64978530304,
+  "kernel_config_sha256": "3308dda04d2256cda69f228e7dd241803e4ae7a07da3fd782b3573b08eb30f86",
+  "kernel_release": "7.3.0-8-generic",
+  "mem_available_bytes": 7608401920,
+  "mem_total_bytes": 8321105920,
+  "swap_total_bytes": 0,
+  "systemd_version_output": "systemd 261 (261.3-0ubuntu3)\n+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +LIBARCHIVE\n"
+}

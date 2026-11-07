@@ -1,0 +1,10 @@
+--- initial.lean
++++ checked.lean
+@@ -11 +11 @@
+-open SmallGraphProfiles FirstPaperProfiles CompletionCounts
++open SmallGraphProfiles FirstPaperProfiles CompletionCounts SmallContextCoordinates
+@@ -92 +92,3 @@
+-  have hp1Q : (0 : ℚ) < p - 1 := by exact_mod_cast (show 1 < p by omega)
++  have hp1Q : (0 : ℚ) < p - 1 := by
++    have h : (1 : ℚ) < p := by exact_mod_cast (show 1 < p by omega)
++    linarith

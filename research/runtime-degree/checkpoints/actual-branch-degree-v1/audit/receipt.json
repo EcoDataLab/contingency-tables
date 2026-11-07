@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "stop_reason": null,
+  "elapsed_seconds": 81.6424224000657,
+  "owned_tree_empty": true,
+  "driver_sha256": "5af7815ca60fe23bd827e9b4975ba30aa58cc46790b96922f8eae1c74148e77a",
+  "stdout_sha256": "f90ae407649b2e5501089e9898df0c1263cb64fc8c1a31afc2c6fa47832ffd2e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "final_process_absent": true
+}

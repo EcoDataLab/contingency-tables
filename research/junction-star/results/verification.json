@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "source_sha256": "5c0a630edbf6b3f0ca8ebdaf208746a33fb006901e748368a3c8465ff2fc7579",
+  "olean_sha256": "8d25e99f4a99608123b864c509a75815fc65e39b436979d3931dde52def80f9c",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "baseline_verification_sha256": "593d339f0ff589cada6385c47aa9b03b88b6f41333e286d508bc9ba78eb4ef99",
+  "declarations": 23,
+  "theorems": 15,
+  "headlines": [
+    {
+      "name": "Research.JunctionStarBridge.starEnergy_eq_trace",
+      "closure_size": 8487,
+      "nonstandard_axioms": []
+    },
+    {
+      "name": "Research.JunctionStarBridge.center_square_identity",
+      "closure_size": 7233,
+      "nonstandard_axioms": []
+    },
+    {
+      "name": "Research.JunctionStarBridge.repairNoise_eq_sum",
+      "closure_size": 7444,
+      "nonstandard_axioms": []
+    },
+    {
+      "name": "Research.JunctionStarBridge.joint_noise_center_error",
+      "closure_size": 11231,
+      "nonstandard_axioms": []
+    },
+    {
+      "name": "Research.JunctionStarBridge.junction_energy_le_twelve_star",
+      "closure_size": 12177,
+      "nonstandard_axioms": []
+    }
+  ],
+  "seconds": 58.696,
+  "scope": "Fresh own-module compile and focused compiled-environment audit. Generic finite structural bridge only; table-specific labels/counts are not instantiated. Authenticated public aggregate objects reused; no dependency rebuild or general Poincare claim.",
+  "source_audit_sha256": "687509a47534ee678e048d2c697b277b9eedcdfde6f1e7b3e6c2c1d3ebdc8322",
+  "closure_axioms_sha256": "ee99c44082de2042288787fc6638c1f899a511dd3133c8b1822f00742988c16b",
+  "declarations_sha256": "793f2558d95ac388012676e0bc5ac23405de1fb81c073d9e070756a9db9347ef",
+  "evidence_projection": "Deduplicated full headline closure names/dependencies/axioms; owned exact types retained. Full original audit and import inventory remain local; no binaries/cache exported."
+}

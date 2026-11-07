@@ -1,0 +1,10 @@
+{
+  "bootstrap_bytes": 15769665536,
+  "free_disk_bytes": 56692387840,
+  "free_ram_bytes": 16760520704,
+  "processes": [],
+  "proof02_child_bytes": 874774528,
+  "proof03_exists": false,
+  "scope": "Read-only pre-staging measurements; prior child size covers only nine modules and does not bound the full closure.",
+  "utc": "2026-11-06T22:09:17.4891214Z"
+}

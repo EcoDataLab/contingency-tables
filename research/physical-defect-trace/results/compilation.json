@@ -1,0 +1,346 @@
+[
+  {
+    "module": "OAI.Combinatorics.ContingencyTables.Sampling.SmallPatternArithmetic",
+    "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Sampling/SmallPatternArithmetic.lean",
+    "source_sha256": "4a06e19abdba59247a616772b5da560ec85bbde9e8f55871c28671f5971ac590",
+    "returncode": 0,
+    "seconds": 30.743,
+    "olean_sha256": "8f32f7154b9eefdcdc2c17eb4ec4098e6245892d8aaa06491bfa3acea2bcdd7d"
+  },
+  {
+    "module": "Math115.ShapeDegreeBound",
+    "source": "research/shape-refinement/formal/Math115/ShapeDegreeBound.lean",
+    "source_sha256": "0761f9e7503fdb0b72ceb7c34ce6d2e707afeb35901a96c37462eb99eee9c801",
+    "returncode": 0,
+    "seconds": 5.039,
+    "olean_sha256": "32136a8ce302f0a516d8a22bb9280d33deed758e02cabcbba12f0682208a4689"
+  },
+  {
+    "module": "Math115.RetainedRoot",
+    "source": "research/retained-root/formal/Math115/RetainedRoot.lean",
+    "source_sha256": "7f904f3497583644121f0ffe39da6b1cdc5c9a2c52df17b7404bd6eabd34b742",
+    "returncode": 0,
+    "seconds": 5.037,
+    "olean_sha256": "f726fc5c6fbfe9c1247b73dd0254a1aeed22148d6fb9384944b35ccd8aca89f4"
+  },
+  {
+    "module": "Research.RetainedRootTransport",
+    "source": "research/retained-root/formal/Research/RetainedRootTransport.lean",
+    "source_sha256": "dc99d8cb80b193ff99a6e598d6f4d53274180f737f012522a078503e752f8f4b",
+    "returncode": 0,
+    "seconds": 13.57,
+    "olean_sha256": "30fb54398c9eccaa5c3d30388b11802b10f72686d5080686e85896e4494c0905"
+  },
+  {
+    "module": "Research.RetainedRootPhysical",
+    "source": "research/retained-root/formal/Research/RetainedRootPhysical.lean",
+    "source_sha256": "f984b845bd099d8a85e13c22c79b1ed7398f8d80d3523aaa52d8e69e24326528",
+    "returncode": 0,
+    "seconds": 13.478,
+    "olean_sha256": "a8e18a4ad3d8718a6012ed9e1943819b1044cecc601c5120aeb028f0d127a77c"
+  },
+  {
+    "module": "Research.RetainedRootShifts",
+    "source": "research/retained-root/formal/Research/RetainedRootShifts.lean",
+    "source_sha256": "c144c912222aa05ee070db5eeed8b361458dd8fbb49571d1ba2fa81ec59fcf48",
+    "returncode": 0,
+    "seconds": 14.931,
+    "olean_sha256": "7b93a02474fba393f084bc8b3a3b5a5c32af52bc60f1d65172bb29619d3fc0dc"
+  },
+  {
+    "module": "Research.RetainedRootNonnegative",
+    "source": "research/retained-root/formal/Research/RetainedRootNonnegative.lean",
+    "source_sha256": "0cab3f0cb943c70443d429f1d44bfaa96cd9ed6f4ac0a00782e7842a1c961e26",
+    "returncode": 0,
+    "seconds": 13.247,
+    "olean_sha256": "b849e54d808ffde6a670f9fa312ed890daa1b6c1fb8c0a15e9e7c7c283dd545c"
+  },
+  {
+    "module": "Research.ModeAnchor",
+    "source": "research/retained-root/formal/Research/ModeAnchor.lean",
+    "source_sha256": "b9e4c521fb60aaa5e2c95561c7e05d349b47f5c99829055694f0a2d6a923a22d",
+    "returncode": 0,
+    "seconds": 14.177,
+    "olean_sha256": "7c418563cdcb1e7b03cb1b4e56e69654db03879f40613f9867fce342ef1d2613"
+  },
+  {
+    "module": "Research.RetainedStencilSum",
+    "source": "research/retained-root/formal/Research/RetainedStencilSum.lean",
+    "source_sha256": "ae7704f53a24bbd655da5d26798d8e14f1f92d2d8a8c6be097c722da3a5fa396",
+    "returncode": 0,
+    "seconds": 4.506,
+    "olean_sha256": "a753b88f41c3fbb777954a92a3471389bcfed39f960aac9b2ff51c1dc073d167"
+  },
+  {
+    "module": "Research.ModeAnchorStencil",
+    "source": "research/retained-root/formal/Research/ModeAnchorStencil.lean",
+    "source_sha256": "e69e33e3c2e3828d122ee1184719759bb95b49bd226daf5a18e03b32879890a9",
+    "returncode": 0,
+    "seconds": 13.569,
+    "olean_sha256": "07a805f3c540edbd70d7696c18bc7d220fda41c615f3fbb2f9609581ea32c1f9"
+  },
+  {
+    "module": "Research.RetainedPhysicalCap",
+    "source": "research/retained-root/formal/Research/RetainedPhysicalCap.lean",
+    "source_sha256": "a6a4d45889077de8e27ff9ca94e4b8fe9fa4aa445675f76e751575b15b7717d7",
+    "returncode": 0,
+    "seconds": 13.907,
+    "olean_sha256": "aa57b09afdc590f10be949e34d40d70786a25d50e574b646449c7af2e7523f8c"
+  },
+  {
+    "module": "Research.RetainedPhysicalSupport",
+    "source": "research/retained-root/formal/Research/RetainedPhysicalSupport.lean",
+    "source_sha256": "907a6505681c74d60e83a43a5e4c886df553c17195614553828e23b1beea54c2",
+    "returncode": 0,
+    "seconds": 13.584,
+    "olean_sha256": "94a8c06e5c4f5b9403444b375c19c3da652b40466cabaf2f8b27f509e310e134"
+  },
+  {
+    "module": "Math115.RetainedRootSquare",
+    "source": "research/retained-root/formal/Math115/RetainedRootSquare.lean",
+    "source_sha256": "7169a4459f96fb32495a8366c81e755645648800f8426032c72ab4c694b5a244",
+    "returncode": 0,
+    "seconds": 5.518,
+    "olean_sha256": "8a5e63c36077a3645979956a6b9e32d51904430199acbbffa75ddbb1897e3054"
+  },
+  {
+    "module": "ResearchComparison.ResidualCap",
+    "source": "research/retained-root/formal/ResearchComparison/ResidualCap.lean",
+    "source_sha256": "8a6647e1ca1d0b3e0d88213f22e57488c7982b078dfe1949ad340065e64ab729",
+    "returncode": 0,
+    "seconds": 15.996,
+    "olean_sha256": "18b8ac437bd936bfcf9023cde87b8a18706f1e8d06dc0ea3b77e66413219eb4a"
+  },
+  {
+    "module": "Research.GrowthScalar",
+    "source": "research/retained-root/formal/Research/GrowthScalar.lean",
+    "source_sha256": "ead59d120b639d883ceb6cbc34e508b6b4656a7af2bc294d79a59bc5868bbded",
+    "returncode": 0,
+    "seconds": 4.257,
+    "olean_sha256": "14e77432411c03ea67e1fb3d7f1ee2a49a5a6e09c4d6701baeafa2ea2d58b586"
+  },
+  {
+    "module": "Research.PositiveSupport",
+    "source": "research/retained-root/formal/Research/PositiveSupport.lean",
+    "source_sha256": "899551b377826ae254d1132e7efc179789cfb3f477655199ca54b1e561ffa3c2",
+    "returncode": 0,
+    "seconds": 13.776,
+    "olean_sha256": "5a545bedac11cdf7c0ba53c3a699eb332928163d8949996e7d00a9b5303ab554"
+  },
+  {
+    "module": "Research.SpectralPath",
+    "source": "research/retained-root/formal/Research/SpectralPath.lean",
+    "source_sha256": "d7149dd1f1268ca147761d1bbca5b3a7edbd4579d50bd2c8873247433f9b5f39",
+    "returncode": 0,
+    "seconds": 15.027,
+    "olean_sha256": "804c39b5d1dd8efa1b06512cd5580021d509f71609f991465560d528e4c9e720"
+  },
+  {
+    "module": "Research.SpectralPrefix",
+    "source": "research/retained-root/formal/Research/SpectralPrefix.lean",
+    "source_sha256": "652efc31f2aebd9a641ca7ed549c1770ae7181cc652390a0eadb3b68a7df3ef0",
+    "returncode": 0,
+    "seconds": 13.961,
+    "olean_sha256": "4db08fda1d4f1d617614bf4229f26c93b36f0b28797555f22abc70db5c7393bb"
+  },
+  {
+    "module": "Research.SpectralRetained",
+    "source": "research/retained-root/formal/Research/SpectralRetained.lean",
+    "source_sha256": "b4d953bd67c698bcdd74d6828ebf4f408615388a7cafbc6b5c979dd4614e84a0",
+    "returncode": 0,
+    "seconds": 14.708,
+    "olean_sha256": "5cb72e22385c9a4bd8c11736a19024a0a783697d44202f3a14f1a0d673c05f65"
+  },
+  {
+    "module": "Math115.ReferenceEdgeAcceptance",
+    "source": "formal/Math115/ReferenceEdgeAcceptance.lean",
+    "source_sha256": "3e9973e6c5b97356d1222fc301f4cf5dfd4865045b0b89ae25b4c3e5cf8f93b8",
+    "returncode": 0,
+    "seconds": 14.694,
+    "olean_sha256": "36833934ddb08641de659569ba48db4aaa6f7d139c6da58c6128bd867046cc7c"
+  },
+  {
+    "module": "Research.AcceptancePadding",
+    "source": "research/shape-refinement/formal/Research/AcceptancePadding.lean",
+    "source_sha256": "59773bb5f0e4053ff87bfa9810cb2e64a0592037ebe84b13ceb7dbeac9172726",
+    "returncode": 0,
+    "seconds": 16.496,
+    "olean_sha256": "7248b8a0a8435f322d4fd5583ee8d718691be443557196e52e51703aee9852ae"
+  },
+  {
+    "module": "Research.WeightedIncidence",
+    "source": "research/constant-padding/formal/Research/WeightedIncidence.lean",
+    "source_sha256": "ee418b3450ecd799b3ca50ed1e13582f20aa7e39af3b3e569bd33c63eb416ee1",
+    "returncode": 0,
+    "seconds": 4.186,
+    "olean_sha256": "0e9d274518f14e48c34e6de505ada3c8b1da933afe6776a0ae97df57aa36f9f5"
+  },
+  {
+    "module": "Research.SurvivalConvolution",
+    "source": "research/constant-padding/formal/Research/SurvivalConvolution.lean",
+    "source_sha256": "c727ba56e6bc9c29df8bdebff2c7bffc4400c3a68be314faec363ef22875dbba",
+    "returncode": 0,
+    "seconds": 4.015,
+    "olean_sha256": "8ba825a9fc3d1e585567996356efd143a0813b1540e2a13a93b82827841fd31e"
+  },
+  {
+    "module": "Research.CompositionSurvival",
+    "source": "research/constant-padding/formal/Research/CompositionSurvival.lean",
+    "source_sha256": "beb210c1b51b8a5c4d2dc1e9fb50f60dd0a051d285ca93b152712c9411cb2f34",
+    "returncode": 0,
+    "seconds": 4.197,
+    "olean_sha256": "e01529720a693df94247be5cae0d6ea03a2937e49b4ac0712bdcdeb3f1c3e1e0"
+  },
+  {
+    "module": "Research.ReciprocalZero",
+    "source": "research/constant-padding/formal/Research/ReciprocalZero.lean",
+    "source_sha256": "934014bbc94997ac33f7f784c4cc7321153ad33f87c85dafceb81fa8ac6333c5",
+    "returncode": 0,
+    "seconds": 5.502,
+    "olean_sha256": "b749b47e1bbc61733f29b62003bd23f5777dbccb53592cca0c85ecd97ad19afb"
+  },
+  {
+    "module": "Research.ReciprocalZeroPhysical",
+    "source": "research/constant-padding/formal/Research/ReciprocalZeroPhysical.lean",
+    "source_sha256": "0d95bd552e99d02152d9622801b7f9cfaa7731ae24133151b17c4dd18c9259df",
+    "returncode": 0,
+    "seconds": 17.369,
+    "olean_sha256": "afc57589d0f796986d920768d598b038a0e74fb275fc4f6e0fa0a801afb21b59"
+  },
+  {
+    "module": "Research.ReciprocalCount",
+    "source": "research/physical-spectral/formal/Research/ReciprocalCount.lean",
+    "source_sha256": "968db28098395c86d27d4d7ea38f2f7269ca7b0615ff41b47c0e80500034f08f",
+    "returncode": 0,
+    "seconds": 4.738,
+    "olean_sha256": "4f93dba72446083de0f2df2c0c3a76eadc5d4c445a5ba24ab35b8a87e18e05d1"
+  },
+  {
+    "module": "Research.RetainedContextVariance",
+    "source": "research/physical-spectral/formal/Research/RetainedContextVariance.lean",
+    "source_sha256": "bdfac5de5cf3e985e60519036600da669c42a4de82fb424d63d76253ac4373aa",
+    "returncode": 0,
+    "seconds": 15.892,
+    "olean_sha256": "be864fb45844283114881c95aef81b5a3b088a778ba269a16b347547e5f58ac0"
+  },
+  {
+    "module": "Research.RetainedTransversalVariance",
+    "source": "research/physical-spectral/formal/Research/RetainedTransversalVariance.lean",
+    "source_sha256": "62bbf88c60da87c83facb4573071dacc6e3c8adb43fdf66a46cdfebdc0ec3dc1",
+    "returncode": 0,
+    "seconds": 14.089,
+    "olean_sha256": "3ff26aeff04a1e0824670e87739db8317a544cf3f826e9935bd8def226f4a805"
+  },
+  {
+    "module": "Research.RetainedRepairSquare",
+    "source": "research/physical-spectral/formal/Research/RetainedRepairSquare.lean",
+    "source_sha256": "9483e6367d384ff5959199707173b950652f909005859dfe6c9d715cec220740",
+    "returncode": 0,
+    "seconds": 14.704,
+    "olean_sha256": "8e89a59892348bff337499e649b8ef4c84fc18b5e672930e7f9bffad86f58a02"
+  },
+  {
+    "module": "Research.RetainedChainSquare",
+    "source": "research/physical-spectral/formal/Research/RetainedChainSquare.lean",
+    "source_sha256": "690b2c537d92030acf20a2f42cec3651f9eb1170f902f39b15a7020d86a6673a",
+    "returncode": 0,
+    "seconds": 14.425,
+    "olean_sha256": "fea40dc18bf993823404ac3bc58655f0329d87eb9d5cb58f6a5688738ff20546"
+  },
+  {
+    "module": "Research.RetainedChainSquareTotal",
+    "source": "research/physical-spectral/formal/Research/RetainedChainSquareTotal.lean",
+    "source_sha256": "a08beb335334980b538af2a97dbe277500df0f50f331741e678c503cbe6a0fba",
+    "returncode": 0,
+    "seconds": 21.914,
+    "olean_sha256": "b4a1d39ce243dcc61d6c3da3ec15d84280240b52ecf58df6f6f0bfde937b5958"
+  },
+  {
+    "module": "Math115.FiniteStarTrace",
+    "source": "research/repair-accept/formal/Math115/FiniteStarTrace.lean",
+    "source_sha256": "babb90906ea18622aa53a71df64f35bc2ffbafdc885cfcb5beab5aaa4c315fe0",
+    "returncode": 0,
+    "seconds": 17.987,
+    "olean_sha256": "d394a517304b7190c3a6681ba945d4fd6c301a11a91e3446e62c382f2f541e67"
+  },
+  {
+    "module": "Research.WeightedHarmonicTrace",
+    "source": "research/physical-defect-trace/formal/Research/WeightedHarmonicTrace.lean",
+    "source_sha256": "afead19468e408d9ef6c3469fdecfc4060698a98f01cfc1858aa7f842105af77",
+    "returncode": 0,
+    "seconds": 16.404,
+    "olean_sha256": "8235eeb0813e78a34b41ec706e5e3bbc50761d795465bffaf721e438cd0db58e"
+  },
+  {
+    "module": "Research.PhysicalTraceMargins",
+    "source": "research/physical-defect-trace/formal/Research/PhysicalTraceMargins.lean",
+    "source_sha256": "ae668f10683bd6d467f5812b3c2fa27709fad339aa9d236bb4a62ca3e0039eef",
+    "returncode": 0,
+    "seconds": 19.278,
+    "olean_sha256": "73c4eaaebb7fec32e1095ca6d738190497e934f99ebf7387c4f7c7ff73ba389b"
+  },
+  {
+    "module": "Research.PhysicalTraceGeometry",
+    "source": "research/physical-defect-trace/formal/Research/PhysicalTraceGeometry.lean",
+    "source_sha256": "8396372acda284a4a1ac155f572a930a8d1f101be5c7601023a4c52bcda7836e",
+    "returncode": 0,
+    "seconds": 17.833,
+    "olean_sha256": "717f6be86577a8870d93755bb85a0c74839ab5c9a4ca5e7c336caab2a2a45a76"
+  },
+  {
+    "module": "Research.PhysicalAcceptedConductance",
+    "source": "research/physical-defect-trace/formal/Research/PhysicalAcceptedConductance.lean",
+    "source_sha256": "cef44f4d5031d1219902bb85c57806be87ff74d01f2f04fcd4046a7a632222cc",
+    "returncode": 0,
+    "seconds": 26.714,
+    "olean_sha256": "7b1552b10980351f0bbb9551228fdfc5b81f1323b7cdc02c5b9f103cdd29bd25"
+  },
+  {
+    "module": "Research.PhysicalTraceIrreflexive",
+    "source": "research/physical-defect-trace/formal/Research/PhysicalTraceIrreflexive.lean",
+    "source_sha256": "28643dd815719eb26d7d86ee20092c0e70878b154944f7715ac6fdc306e90830",
+    "returncode": 0,
+    "seconds": 20.334,
+    "olean_sha256": "e6d7b31a2afee2bddc7287a69d3177fb2080d586ad94f707726263fb6db17a97"
+  },
+  {
+    "module": "Research.DefectCoordinateGeometry",
+    "source": "research/physical-defect-trace/formal/Research/DefectCoordinateGeometry.lean",
+    "source_sha256": "53a242f8e2109dfebe31144880afa94469d7d94c4d3eba76e1dd318a66254d17",
+    "returncode": 0,
+    "seconds": 17.407,
+    "olean_sha256": "a0e1357234b504b598a484358c4e0a732ff92e921444c480fab4217e8db824d8"
+  },
+  {
+    "module": "Research.PhysicalDefectDegree",
+    "source": "research/physical-defect-trace/formal/Research/PhysicalDefectDegree.lean",
+    "source_sha256": "6ceea40c8d116849eb5fb344acad20119c52daade2f0e9ed432ee4c82a645ba8",
+    "returncode": 0,
+    "seconds": 24.38,
+    "olean_sha256": "2b7141228c1131df3947c3fd7ea05113401f86e332b3240c388a1e81ff0eff0e"
+  },
+  {
+    "module": "Research.PhysicalDefectTrace",
+    "source": "research/physical-defect-trace/formal/Research/PhysicalDefectTrace.lean",
+    "source_sha256": "b7c7c04b1d5456a95147be6b80f37ccaf1aa742b4cce0c305cc29e858d4ef8c3",
+    "returncode": 0,
+    "seconds": 15.909,
+    "olean_sha256": "c833c8ad3de0ffbbfd5e65694ad5a04d6f6aa27928e19cb6441e523639b9ecfa"
+  },
+  {
+    "module": "Research.PhysicalDefectTraceFinal",
+    "source": "research/physical-defect-trace/formal/Research/PhysicalDefectTraceFinal.lean",
+    "source_sha256": "ebcb0fea5128dd42b978ddd70f0e896d603dd0fbdc97b186551d657a273c0463",
+    "returncode": 0,
+    "seconds": 16.469,
+    "olean_sha256": "5b76e30be7fd15972a64fe0127a334e8e1997d0950f23db28823603eda032f1e"
+  },
+  {
+    "module": "ResearchAudit.EnvironmentAudit",
+    "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+    "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "returncode": 0,
+    "seconds": 2.83,
+    "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+  }
+]

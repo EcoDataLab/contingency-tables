@@ -4,6 +4,8 @@ Default execution is offline and uses the small, checksum-pinned county table.
 --verify-source downloads only the fixed public Census inputs and verifies that
 they reproduce that table. There is no fitting, trajectory sampling, private
 input, full-fiber enumeration, or optional numerical-library dependency.
+Worker quantiles use an exact integer CDF for totals at most 1024 and the
+full-support binary64 CDF above that bound; reported worker masses are binary64.
 """
 from __future__ import annotations
 
@@ -35,6 +37,10 @@ MAX_DOWNLOAD_BYTES = 8_000_000
 MAX_UNCOMPRESSED_BYTES = 150_000_000
 MAX_SOURCE_RECORDS = 1_000_000
 MAX_SUPPORT = 1_000_000
+# In this domain every binomial coefficient has at most 1025 bits and the
+# hypergeometric support has at most 513 points. Exact CDF comparisons resolve
+# quantile ties that binary64 normalization cannot distinguish reliably.
+EXACT_QUANTILE_MAX_TOTAL = 1024
 TAIL = Fraction(1, 40)
 LAWS = ("uniform_aggregate_tables", "ordinary_conditional_worker")
 
@@ -271,6 +277,7 @@ def worker_distribution(rows, columns, *, max_support=MAX_SUPPORT):
 
 
 def numerical_quantile(lower: int, probabilities: list[float], p: Fraction) -> int:
+    """Inverse CDF of rounded masses; exact underlying-law ties are not certified."""
     target = float(p)
     cumulative = compensation = 0.0
     for i, probability in enumerate(probabilities):
@@ -286,6 +293,25 @@ def numerical_quantile(lower: int, probabilities: list[float], p: Fraction) -> i
     raise ArithmeticError("normalized CDF did not reach the requested quantile")
 
 
+def worker_quantile(rows, columns, lower: int, probabilities: list[float],
+                    p: Fraction) -> int:
+    """Least x with CDF(x)>=p; exact on the bounded small-total domain.
+
+    Larger inputs retain the full-support binary64 evaluator and its stated
+    rounding limitations. No tolerance is used to declare an exact CDF tie.
+    """
+    total, draws, successes = sum(rows), rows[0], columns[0]
+    if total > EXACT_QUANTILE_MAX_TOTAL:
+        return numerical_quantile(lower, probabilities, p)
+    denominator = math.comb(total, draws)
+    cumulative = 0
+    for x in range(lower, lower + len(probabilities)):
+        cumulative += math.comb(successes, x) * math.comb(total - successes, draws - x)
+        if cumulative * p.denominator >= p.numerator * denominator:
+            return x
+    raise ArithmeticError("exact worker CDF did not reach the requested quantile")
+
+
 def predict_from_margins(rows: tuple[int, int], columns: tuple[int, int]) -> dict:
     """The prediction API has no joint-table or published-cell argument."""
     lower, upper = feasible_range(rows, columns)
@@ -298,8 +324,11 @@ def predict_from_margins(rows: tuple[int, int], columns: tuple[int, int]) -> dic
                "variance": Fraction(size * size - 1, 12),
                "interval": (a, b), "interval_model_mass": (b - a + 1) / size}
     lo, probabilities, mean, variance, evidence = worker_distribution(rows, columns)
-    a = numerical_quantile(lo, probabilities, TAIL)
-    b = numerical_quantile(lo, probabilities, 1 - TAIL)
+    a = worker_quantile(rows, columns, lo, probabilities, TAIL)
+    b = worker_quantile(rows, columns, lo, probabilities, 1 - TAIL)
+    evidence["quantile_method"] = ("exact_integer_combinatorial_cdf"
+                                   if sum(rows) <= EXACT_QUANTILE_MAX_TOTAL else
+                                   "binary64_full_support_cdf")
     worker = {"mean": mean, "variance": variance, "interval": (a, b),
               "interval_model_mass": math.fsum(probabilities[a - lo:b - lo + 1]),
               "numerical_evidence": evidence}
@@ -420,12 +449,17 @@ def numerical_crosscheck(max_total: int = 12) -> dict:
                         if cumulative >= p:
                             exact_quantile = lower + offset
                             break
-                    mismatches += numerical_quantile(lower, probabilities, p) != exact_quantile
+                    mismatches += worker_quantile((row, total - row),
+                                                  (column, total - column),
+                                                  lower, probabilities, p) != exact_quantile
                 cases += 1
     if mismatches:
         raise AssertionError("worker quantiles differ from the exact small-case oracle")
     return {"oracle": "Exact rational comb(c1,x)*comb(N-c1,r1-x)/comb(N,r1)",
             "all_margins_total_at_most": max_total, "margin_cases": cases,
+            "quantile_method": ("exact_integer_combinatorial_cdf"
+                                if max_total <= EXACT_QUANTILE_MAX_TOTAL else
+                                "exact_small_total_and_binary64_large_total_cdf"),
             "central_interval_endpoint_mismatches": mismatches,
             "maximum_probability_absolute_error": maximum_probability_error}
 
@@ -506,7 +540,8 @@ def build_report(*, verify_download: bool = False, crosscheck_scipy: bool = Fals
             "maximum_normalization_residual": max(e["normalization_residual"] for e in evidence),
             "maximum_mean_error_against_exact_formula": max(e["mean_error_against_exact_formula"] for e in evidence),
             "maximum_variance_relative_error_against_exact_formula": max(e["variance_relative_error_against_exact_formula"] for e in evidence),
-            "precision_status": "Binary64 full-support recurrence, exact analytic means, exact small-case oracle; no formal large-case rounding/tail error certificate.",
+            "exact_quantile_maximum_total": EXACT_QUANTILE_MAX_TOTAL,
+            "precision_status": "Exact integer CDF quantiles for totals at most 1024; binary64 full-support recurrence for larger quantiles and all reported masses, exact analytic means, exact small-case oracle; no formal large-case rounding/tail error certificate.",
         },
         "summary": summaries,
         "coverage_interpretation": "Descriptive inclusion fraction over 100 overlapping cases from one released 5x5 joint. No independence assumption, calibration confidence interval, frequentist 95% guarantee, or application-wide validity claim.",

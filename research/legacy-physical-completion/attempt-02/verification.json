@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchComparison.LegacyPhysicalCompletion"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchComparison.LegacyPhysicalCompletion",
+      "source": "research/legacy-physical-completion/formal/ResearchComparison/LegacyPhysicalCompletion.lean",
+      "source_sha256": "6a05f58ea287a1e62a28eb6b5b61ad690c4e04735525223610be04cb4defa704",
+      "returncode": 0,
+      "seconds": 39.90036795893684,
+      "olean_sha256": "bec267518f61dd835a7af7206685513bb109b8fa1efb4da7c20e4ed0c1b95f9b"
+    }
+  ],
+  "audit_seconds": 156.77662300039083,
+  "audit_sha256": "2c17082b6bd4a73ec809a8564859d40d5dd450b6b0a5054de613bfc22c10a36b",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "c9652f4e741e47d6ba3bb2c5223679cb80dc81bad1c3816b02f9a7eb1ec35f9c",
+  "declaration_count": 36,
+  "theorem_count": 18,
+  "headlines": [
+    {
+      "name": "Math115.LegacyPhysicalCompletion.coarseRows_code",
+      "closure_size": 9027,
+      "statement": "\u2200 {m n : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115) (U L : \u2115)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length) {q : \u2115}\n  (e :\n    Fin q \u2243\n      OAI.ContingencyTables.SmallContextCoordinates.Cells\n        (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U))\n  (z : Math115.ReducedSmallChain.States r c U L),\n  List.ofFn (Math115.LegacyPhysicalCompletion.coarseRows r c U L hr z) =\n    OAI.ContingencyTables.ProfilePrograms.largePaddedMargins true\n      ((((OAI.ContingencyTables.SmallGraphProfiles.cellCatalog\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) e,\n              OAI.ContingencyTables.SmallGraphProfiles.viewList\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) e\n                (OAI.ContingencyTables.SmallGraphProfiles.physicalProfile\n                  (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)\n                  (Math115.ReducedSmallChain.capacity r c U L) r c L z)\n                false),\n            List.ofFn r, List.ofFn c),\n          U),\n        L)"
+    },
+    {
+      "name": "Math115.LegacyPhysicalCompletion.completionDraw_code",
+      "closure_size": 43783,
+      "statement": "\u2200 {m n : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115) (U L : \u2115)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (z : Math115.ReducedSmallChain.States r c U L) (h : \u2115)\n  (word : Fin (Math115.LegacyPhysicalCompletion.bits r c U L hr hc z h) \u2192 Bool),\n  Math115.LatticeSampler.draw\n      (((List.ofFn (Math115.LegacyPhysicalCompletion.coarseRows r c U L hr z),\n            List.ofFn (Math115.LegacyPhysicalCompletion.coarseColumns r c U L hc z)),\n          h),\n        List.ofFn word) =\n    OAI.ContingencyTables.DensePrograms.matrixCode\n      \u2191((Math115.LegacyPhysicalCompletion.finiteFibreEquiv r c U L hr hc z)\n          (Math115.LegacyPhysicalCompletion.completionDraw r c U L hr hc z h word))"
+    },
+    {
+      "name": "Math115.LegacyPhysicalCompletion.completionLaw_accuracy",
+      "closure_size": 43785,
+      "statement": "\u2200 {m n : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115) (U L : \u2115)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (z : Math115.ReducedSmallChain.States r c U L) (h : \u2115),\n  OAI.ContingencyTables.FirstSuccess.variation (Math115.LegacyPhysicalCompletion.completionLaw r c U L hr hc z h)\n      OAI.ContingencyTables.FirstSuccess.uniformLaw \u2264\n    Math115.CompletionRetryBudget.dyadic h"
+    },
+    {
+      "name": "Math115.LegacyPhysicalCompletion.oracleFamily_accuracy",
+      "closure_size": 43787,
+      "statement": "\u2200 {m n : \u2115} (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115) (U L : \u2115)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length) (h : \u2115)\n  (i : OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U)\n  (j : OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U) (z : Math115.ReducedSmallChain.States r c U L),\n  OAI.ContingencyTables.FirstSuccess.variation (Math115.LegacyPhysicalCompletion.oracleFamily r c U L hr hc h i j z)\n      OAI.ContingencyTables.FirstSuccess.uniformLaw \u2264\n    Math115.CompletionRetryBudget.dyadic h"
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

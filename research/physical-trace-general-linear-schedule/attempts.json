@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralLinearSchedule",
+  "verified_attempt": "attempt-01",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "77b020fe51f60e73c70ee6d1c1a03e0edd26c37a5f2f207e43cbe5351ba07306",
+      "compile_returncode": 0,
+      "compile_seconds": 28.917939416132867,
+      "audit_returncode": 0,
+      "audit_seconds": 149.44266441697255,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

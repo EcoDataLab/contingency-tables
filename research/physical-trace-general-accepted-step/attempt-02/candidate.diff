@@ -1,0 +1,9 @@
+--- initial.lean
++++ checked.lean
+@@ -123,0 +124,2 @@
++  have hread : rawBoolWord (N * Nat.clog 2 (denominator r c U))
++      (List.ofFn parts.1) = parts.1 := rawBoolWord_ofFn _ parts.1
+@@ -125 +127,2 @@
+-  rw [htake, rawBoolWord_ofFn, rawAcceptedCompletion_eq]
++  dsimp only
++  rw [htake, hread, rawAcceptedCompletion_eq]

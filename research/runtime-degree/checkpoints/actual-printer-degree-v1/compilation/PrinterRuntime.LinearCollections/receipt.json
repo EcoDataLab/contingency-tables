@@ -1,0 +1,8 @@
+{
+  "module": "PrinterRuntime.LinearCollections",
+  "source_sha256": "7839ffe7bb9c651e1497ff09f244b19455bc5c2cc1c095264e60c1a34c695eb0",
+  "exit_code": 0,
+  "seconds": 18.058,
+  "diagnostics": "attempts/7",
+  "olean_sha256": "9d556ba40f2ff470cfeaeff6988d285952a3619fee1418abdb7dce7217b624d9"
+}

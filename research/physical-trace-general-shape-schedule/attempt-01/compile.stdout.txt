@@ -1,0 +1,46 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralShapeSchedule.lean:260:6: error: Tactic `rewrite` failed: motive is not type correct:
+  fun _a =>
+    shapeScheduleCodeData _a (positiveMargins ys) (positiveTraceCutoff xs ys) t =
+      (Fintype.card (Cells (firstPaperSmall (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys))),
+        inverseSupportAllowance (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys),
+        positiveTraceOuterBlock xs ys, positiveTraceLinearBlock xs ys, positiveTraceShapeBlock xs ys,
+        positiveTraceLinearAttempts xs ys t, positiveTraceShapeAttempts xs ys t, positiveTraceLinearPrecision xs ys t,
+        positiveTraceShapePrecision xs ys t)
+Error: Application type mismatch: The argument
+  filteredMargin xs
+has type
+  Fin (positiveMargins xs).length → ℕ
+but is expected to have type
+  Fin _a.length → ℕ
+in the application
+  firstPaperSmall (filteredMargin xs)
+
+Explanation: The rewrite tactic rewrites an expression 'e' using an equality 'a = b' by the following process. First, it looks for all 'a' in 'e'. Second, it tries to abstract these occurrences of 'a' to create a function 'm := fun _a => ...', called the *motive*, with the property that 'm a' is definitionally equal to 'e'. Third, we observe that 'congrArg' implies that 'm a = m b', which can be used with lemmas such as 'Eq.mpr' to change the goal. However, if 'e' depends on specific properties of 'a', then the motive 'm' might not typecheck.
+
+Possible solutions: use rewrite's 'occs' configuration option to limit which occurrences are rewritten, or use 'simp' or 'conv' mode, which have strategies for certain kinds of dependencies (these tactics can handle proofs and 'Decidable' instances whose types depend on the rewritten term, and 'simp' can apply user-defined '@[congr]' theorems as well).
+
+xs ys : List ℕ
+t : ℕ
+⊢ shapeScheduleCodeData (positiveMargins xs) (positiveMargins ys) (positiveTraceCutoff xs ys) t =
+    (Fintype.card (Cells (firstPaperSmall (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys))),
+      inverseSupportAllowance (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys),
+      positiveTraceOuterBlock xs ys, positiveTraceLinearBlock xs ys, positiveTraceShapeBlock xs ys,
+      positiveTraceLinearAttempts xs ys t, positiveTraceShapeAttempts xs ys t, positiveTraceLinearPrecision xs ys t,
+      positiveTraceShapePrecision xs ys t)
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralShapeSchedule.lean:271:51: error: Tactic `decide` failed for proposition
+  let xs := List.replicate 9 1 ++ [30000];
+  positiveTraceBranch xs xs = TraceInputBranch.reference ∧
+    positiveTraceCutoff xs xs = 25938 ∧
+      shapeScheduleCodeData (positiveMargins xs) (positiveMargins xs) (positiveTraceCutoff xs xs) 10 =
+        (99, 801, 19404, 396, 25, 4356, 275, 25, 21)
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableOr`, `Bool.decEq`, `Classical.propDecidable`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, and `instDecidableEqTraceInputBranch`, reduction got stuck at the `Decidable` instance
+  Classical.choice ⋯
+
+Hint: Reduction got stuck on `Classical.choice`, which indicates that a `Decidable` instance is defined using classical reasoning, proving an instance exists rather than giving a concrete construction. The `decide` tactic works by evaluating a decision procedure via reduction, and it cannot make progress with such instances. This can occur due to the `open scoped Classical` command, which enables the instance `Classical.propDecidable`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralShapeSchedule.lean:277:56: error: maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information

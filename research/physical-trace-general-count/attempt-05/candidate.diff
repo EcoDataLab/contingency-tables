@@ -1,0 +1,17 @@
+--- initial.lean
++++ checked.lean
+@@ -14,0 +15 @@
++open SmallContextCoordinates
+@@ -38 +39,2 @@
+-  rw [DistinctRepairLabels, Fintype.card_subtype]
++  change Fintype.card {st : Cells small × Cells small // st.1 ≠ st.2} = _
++  rw [Fintype.card_subtype]
+@@ -113 +115 @@
+-  simpa only [K, large_padding_rows, large_padding_columns] using h
++  simpa only [K, PhysicalStationarySuccess.large_padding_rows, PhysicalStationarySuccess.large_padding_columns] using h
+@@ -118 +120 @@
+-    let p := Fintype.card (Cells (firstPaperSmall r c U))
++    let cellCount := Fintype.card (Cells (firstPaperSmall r c U))
+@@ -120 +122 @@
+-      2 * (p * (p - 1)) * Fintype.card (Table r c) := by
++      2 * (cellCount * (cellCount - 1)) * Fintype.card (Table r c) := by

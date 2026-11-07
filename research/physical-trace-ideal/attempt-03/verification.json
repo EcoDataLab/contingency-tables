@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "ef489fe5fdf5213604a4fa9e015d33fef9105fd7",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.Ideal"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.Ideal",
+      "source": "research/physical-trace-ideal/formal/ResearchPhysicalTraceJoin/Ideal.lean",
+      "source_sha256": "ab12403b36944a2c34b16618b3d902e397f58d20f19fcd485d8ac7cbe75c34c0",
+      "returncode": 0,
+      "seconds": 94.77176245907322,
+      "olean_sha256": "3ab90739f61e0b8ba0654cec11c59096c9e53f6a58523ec126b2f0e517ad358c"
+    }
+  ],
+  "audit_seconds": 126.63852691603824,
+  "audit_sha256": "eb5397b8faf442e075cf1484de0dc1f1487c8349929c0015173b134eef583168",
+  "audit_driver_sha256": "b1e667b5ddfa7dc6f3f35afa5953827fb49e9829fb035f0002763107df382215",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "7c3910223a1d1d99bf8683907e99c28fac4bd8c911fac02991b59c5f2cea5c27",
+  "declaration_count": 20,
+  "theorem_count": 12,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.idealJoinedLaw_mass_ne",
+      "closure_size": 15651,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀\n      (hp :\n        2 ≤\n          Fintype.card\n            (OAI.ContingencyTables.SmallContextCoordinates.Cells\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n      (d e : Math115.PhysicalDefectTrace.DefectVertices r c U L),\n      d ≠ e →\n        ↑((Math115.PhysicalTraceJoin.idealJoinedLaw r c U L hr hc hp d).mass e) =\n          (Math115.ComputedReferenceTrace.computedReferenceTrace r c U L hr hc hp).P d e",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.idealJoinedLaw_row",
+      "closure_size": 15654,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀\n      (hp :\n        2 ≤\n          Fintype.card\n            (OAI.ContingencyTables.SmallContextCoordinates.Cells\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n      (d e : Math115.PhysicalDefectTrace.DefectVertices r c U L),\n      ↑((Math115.PhysicalTraceJoin.idealJoinedLaw r c U L hr hc hp d).mass e) =\n        (Math115.ComputedReferenceTrace.computedReferenceTrace r c U L hr hc hp).P d e",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

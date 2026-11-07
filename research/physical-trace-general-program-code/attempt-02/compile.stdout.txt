@@ -1,0 +1,7 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:85:11: error: Function expected at
+  List.length_ofFn
+but this term has type
+  (List.ofFn ?m.108).length = ?m.106
+
+Note: Expected a function because this term is being applied to the argument
+  word

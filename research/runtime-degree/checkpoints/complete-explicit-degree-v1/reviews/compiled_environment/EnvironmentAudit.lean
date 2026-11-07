@@ -1,0 +1,6 @@
+import CompleteDraw.Seams
+import CompleteDraw.PublicBridge
+import CompleteDraw.FinalBinding
+import CompleteDraw.FixedMachineTheorem
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [CompleteDraw.Seams, CompleteDraw.PublicBridge, CompleteDraw.FinalBinding, CompleteDraw.FixedMachineTheorem] headlines [Math115.CompleteDrawNext.explicitPublicDegree, Math115.CompleteDrawNext.typed_actual_publicDraw, Math115.CompleteDrawNext.machineTime_public_explicit_degree, Math115.CompleteDrawNext.fixedMachineBoundedSampling_explicit_degree]

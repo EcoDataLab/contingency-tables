@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.Terminal
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.Terminal] headlines [Math115.PhysicalTraceJoin.defectStationaryJointLaw_uniform, Math115.PhysicalTraceJoin.terminalJoinedWord_law, Math115.PhysicalTraceJoin.terminalJoinedLaw_variation, Math115.PhysicalTraceJoin.scheduledTerminalJoinedWord_accuracy]

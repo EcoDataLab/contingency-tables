@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralExecutableSampler"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralExecutableSampler",
+      "source": "research/physical-trace-general-executable-sampler/formal/ResearchPhysicalTraceJoin/GeneralExecutableSampler.lean",
+      "source_sha256": "af65e53db2496fe028ba14cf836498a5bffae7cdeb2ba860cfa72e6c9e95bc6d",
+      "returncode": 0,
+      "seconds": 91.79748633364215,
+      "olean_sha256": "30e0d211fc20b906e8f1d7a9327105eaae7adb9af8b3f9dc97fafd38597630c2"
+    }
+  ],
+  "audit_seconds": 114.81279174983501,
+  "audit_sha256": "cb939bb334e259f5dad1cf69e9315f9e6179d041e9d1f862357dd708b51436d2",
+  "audit_driver_sha256": "fc6c30898e82472ebb204fe91e07e9f173636e2bde00d30dd0cfd90a6a48da8f",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "b262f38819368e992c99b5b2b02cb65bdd728db44b5761dd7448f376593117e0",
+  "declaration_count": 2,
+  "theorem_count": 2,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.executableSampler_contract",
+      "closure_size": 45911,
+      "statement": "∀ (xs ys : List ℕ) (hs : xs.sum = ys.sum) (t : ℕ),\n  have htotal := ⋯;\n  ∃ q sample,\n    q = Math115.PhysicalTraceJoin.rawHybridWordWidth xs ys t ∧\n      (∀ (word : Fin q → Bool),\n          Math115.PhysicalTraceJoin.rawHybridSamplerCode xs ys t (List.ofFn word) =\n            OAI.ContingencyTables.DensePrograms.matrixCode ↑(sample word)) ∧\n        ↑(OAI.ContingencyTables.FirstSuccess.variation\n              (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw sample)\n              OAI.ContingencyTables.FirstSuccess.uniformLaw) ≤\n          ↑(Math115.CompletionRetryBudget.dyadic t)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

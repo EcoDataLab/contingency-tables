@@ -1,0 +1,16 @@
+<packet>/revisions/attempt-04/formal/ResearchPhysicalStar/Trial.lean:48:33: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-04/formal/ResearchPhysicalStar/Trial.lean:50:33: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+<packet>/revisions/attempt-04/formal/ResearchPhysicalStar/Trial.lean:107:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/revisions/attempt-04/formal/ResearchPhysicalStar/Trial.lean:143:8: error: (kernel) unknown constant 'Math115.PhysicalStarTrial.actualStep_law'
+<packet>/revisions/attempt-04/formal/ResearchPhysicalStar/Trial.lean:174:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

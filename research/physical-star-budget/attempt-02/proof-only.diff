@@ -1,0 +1,12 @@
+--- initial.lean
++++ checked.lean
+@@ -15,0 +16 @@
++open Math115.ReducedSmallChain
+@@ -41 +42 @@
+-        pow_le_pow_right_of_le_one₀ hq0 hq1 (Nat.le_of_lt (Finset.mem_range.mp hi)))
++        pow_le_pow_of_le_one hq0 hq1 (Nat.le_of_lt (Finset.mem_range.mp hi)))
+@@ -46,0 +48 @@
++    ring
+@@ -84 +86 @@
+-    _ = dyadic (t + 2) := by simp [dyadic, div_pow]
++    _ = dyadic (t + 2) := by simp [dyadic]

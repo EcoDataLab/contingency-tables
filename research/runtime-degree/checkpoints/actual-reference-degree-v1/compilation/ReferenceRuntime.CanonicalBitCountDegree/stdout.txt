@@ -1,0 +1,2 @@
+Math115.ReferenceRuntimeNext.typed_canonicalBitCount : Typed canonicalBitCountRealizer 24105903714603648
+'Math115.ReferenceRuntimeNext.typed_canonicalBitCount' depends on axioms: [propext, Classical.choice, Quot.sound]

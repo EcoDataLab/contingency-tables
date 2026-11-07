@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "recorded_utc": "2026-10-11T19:14:43.237945+00:00",
+  "source_checkout_base_commit": "fcf18ac755862feb72db210ee6e86f8c3ddc1cf3",
+  "source_sha256": {
+    "claims.json": "f6b1d08c39322489c17fe922b2c038e7d5eb8fdeee8f7c982b491be99b0b458a",
+    "README.md": "695dd1eaad0fcaadcfcf256448991a22f6d215a4f7da3286e50c6e689eb56d28",
+    "docs/retained-root-spectrum.md": "9cf13838be7bd431ccdf249aca996cc024856c238b2f17b79413538d7c4ea468",
+    "docs/reciprocal-padding-growth.md": "9bc204cda69286e81fba3e145ca583bca2f4bd9fdb2543bfdc4649bb5299444b",
+    "docs/legacy-completion-backend.md": "d82ad6820b7e782fe1dfa2232631edb6f388a4ee5bb6d1b11df44b03ad47d072",
+    "docs/retained-spectrum-review.md": "bd19ada6dbacbeb431541275393b70080502d08189ec77094e82e9e7f7f3a364",
+    "docs/composed-complexity.md": "ff4c72a75f993e1fa53b832566dfb0876e428a93d9efa7dbfffe7dd6555b92bf",
+    "docs/handoff.md": "ecbf6ef6f5173b6582baf92c1c2c77f13674ab8b62ed9ed122e4f779e47f5f20",
+    "research/retained-root/README.md": "c421187f60e0c5259548b4f282bfe68282cabbde75926f7b636bccee5875eea5",
+    "research/repair-accept/verify.py": "ef0261910c125689321bd17674565402c2fdca495db838576be48f0e17415a57",
+    "src/contingency115/general_scales.py": "5fca977fdf0a9902735201503585c18d844e54eb898a3efb3afbc1ec61a7460a",
+    "tests/test_general_scales.py": "ff84edeb56af38aaff2af5459da30f8b21a631390f84909195c5ccc2421b0076",
+    "experiments/retained_spectrum.py": "4dba9a9da6785856f7db10828a4471f0da4855715041403d78d9a34aa021e672",
+    "experiments/reciprocal_padding_growth.py": "b9dcb416d78339f97e6c4a533d2b0ade87af7ccdde3c6ddb88364c011b0ff947"
+  },
+  "artifact_sha256": {
+    "research/retained-root/spectral-results/verification.json": "1079d928521518c8b4a07817a9813c06fd64886384fb13e59ec0e50aca6e3407",
+    "research/retained-root/spectral-results/audit.stdout.json.gz": "4f615559e7ba3178b42bcd064dcffe4e7bdbd826bd58d39097af2ed71e931ebb",
+    "research/retained-root/spectral-results/imported-objects.json.gz": "9162dae5f6c9e1dba9d188912c6b308f94d66fde63eecf6fa342bc741dfa2e88",
+    "reports/retained-spectrum.json": "c28ce08c9c663a732a484fdbba486ea308eda8235804805366d73484d9d8038e",
+    "reports/reciprocal-padding-growth.json": "3b0e5aa18f27c9873e64e71fbe58a5476b11651c264698316e691673f4598e06",
+    "reports/retained-spectrum-verify.log.gz": "9d28ce14bf7b69aae502321b9d22cc2408f15681a0fae93fe558a92d6ee1dde3"
+  },
+  "verification": {
+    "command": "make verify",
+    "exit_code": 0,
+    "python": "3.14.3",
+    "tests_run": 415,
+    "tests_passed": 406,
+    "tests_skipped": 9,
+    "skip": "Optional SciPy unavailable in the standard interpreter; the unchanged wrapper has its separate previous-checkpoint tests and hosted numerical lane.",
+    "other_checks": [
+      "archived finite audit",
+      "saved claims ledger",
+      "pinned source bundle",
+      "independent exact crosscheck",
+      "mathematical cycle-mixture certificate replay"
+    ],
+    "producer_drift": "The historical mixture producer differs after previous optimizations. Mathematical certificate replay passed; byte-identical historical generation is not claimed.",
+    "post_document_updates": "claims_ledger.py --check-readme and git diff --check passed; tested Python source unchanged."
+  },
+  "finite_experiments": [
+    {
+      "command": "python3 experiments/retained_spectrum.py --output .local/reports/retained-spectrum.json",
+      "status": "passed",
+      "scope": "450 exact rational Schur-complement PSD certificates on 150 fixed stencils, 3 validator negative controls, zero Xi and nonzero exterior corrections; no inference of the arbitrary-parameter theorem from finite checks.",
+      "replay": "byte-identical to published report"
+    },
+    {
+      "command": "PYTHONPATH=src python3 experiments/reciprocal_padding_growth.py --output .local/reports/reciprocal-padding-growth.json",
+      "status": "passed",
+      "scope": "1900 one-unit count comparisons, 5 normalized count checks, 7 padding paths, 3376 shape scalar cases, 5 independent DP checks of exact thin counts, 4 larger exact-formula thin cases and 7 rational weighted-tail lower certificates."
+    }
+  ],
+  "formal": {
+    "receipt": "research/retained-root/spectral-results/verification.json",
+    "status": "passed",
+    "headline_dependency_closures": 14,
+    "scope": "Fresh compilation of the 18 selected public additive modules and their complete declaration environment, including the full abstract spectral theorem. Standard Lean axioms only. Pinned compiler and baseline imports remain trusted. This is not a default-target rebuild, full physical graph theorem or strict Comparator acceptance.",
+    "old_receipt": "research/retained-root/results/verification.json",
+    "old_receipt_preserved": true
+  },
+  "review": {
+    "kind": "Separate AI agents reviewing AI-produced mathematics and source; no outside human review",
+    "note": "docs/retained-spectrum-review.md",
+    "findings": "Final spectral proof, actual kernel/support interfaces, reciprocal growth and scalar constants, legacy backend contract, and Python cutoff/coefficient changes passed review. The empty-completion case uses the new unit harmonic defect trace, not the old selected unitChain normalization."
+  },
+  "scope_limits": [
+    "431d^8 rational and862d^8 dyadic are reviewed ideal-defect inverse-gap allowances. They are not runtime powers or a complete compiled physical-chain theorem.",
+    "The sharper3872d^6(m+n-2)^2 expression has orderd^7 on a bounded-aspect class, including non-square tables.",
+    "The compiled abstract theorem proves Var <= [N(N+1)+2K] sum E from local assumptions, including zero stencil values; it assumes no spectral or Poincare conclusion.",
+    "The physical context, conditional-variance/edge ownership, repair and trace assembly remain separate from this public proof scope. Direct original-U dimension bounds do not require the reviewed effective-V graph equivalence.",
+    "The reciprocal one-unit count inequality and its full ordinary-table padding telescoping are reviewed mathematics with exact finite checks; their scalar consequence is compiled.",
+    "The frozen complete d17 sampler supplies mathematical arbitrary-margin completion availability at L7, using its own internal padding. The new physical/word adapter, adaptive fresh-word allocation, call cap and encoded outer integration remain open.",
+    "The complete compiled sampler re-proves the same upstream existential statement. Its reserved-bit upper allowance isS^170 versus upstreamS^1288 under the same size measure; numerical machine-time degrees and seven draw certificates remain open.",
+    "Historical pins, archived115 handoff, default-target1511 named-audit scope and prior receipts remain unchanged."
+  ],
+  "comparator": {
+    "observed_utc": "2026-10-11T18:48:51Z",
+    "status": "Authentication passed and produced runtime freeze; planning began. No full sampler rebuild or acceptance result.",
+    "runtime_freeze_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+    "configuration": "8 GiB, serial-build configuration, software-emulated Linux VM, no guest network; authentication cap5400s and plan cap3600s",
+    "scope": "One bounded startup/authentication-and-plan attempt. Full proof execution remains separate; prior failed attempts preserved."
+  }
+}

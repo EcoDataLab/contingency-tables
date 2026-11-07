@@ -1,0 +1,7 @@
+import Math115.EffectiveWidthBound
+import Math115.ShapeDegreeBound
+import Math115.ShapeScalarScales
+import Math115.ReferenceEdgeAcceptance
+import Research.AcceptancePadding
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [Math115.EffectiveWidthBound, Math115.ShapeDegreeBound, Math115.ShapeScalarScales, Math115.ReferenceEdgeAcceptance, Research.AcceptancePadding] headlines [Math115.ShapeDegreeBound.available_bound_le, Math115.ShapeDegreeBound.degreeEnvelope_le, Math115.ShapeScalarScales.proposal_rational_coefficient_le, Math115.ShapeScalarScales.proposal_dyadic_coefficient_le, Math115.ShapeScalarScales.guarded_padded_count_le_twice, Math115.ShapeScalarScales.localDimension_conditions, Research.AcceptancePadding.reference_edge_acceptance_block_floor, Research.AcceptancePadding.reference_edge_acceptance_floorPadding, Research.AcceptancePadding.floorPadding_budget, Research.AcceptancePadding.cutoff_budget, Research.AcceptancePadding.bounded_aspect_gap, Research.AcceptancePadding.outerCutoff_budget]

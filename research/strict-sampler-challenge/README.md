@@ -1,5 +1,7 @@
 # Separate strict sampler challenge — strict acceptance pending
 
+The latest replay ended after 20 completed historical-closure modules when its Python checking helper exhausted memory. The [metadata lifetime repair](../strict-sampler-checkpoints/metadata-memory-v1/) preserves that failure and supplies an offline-tested repair; a complete repaired replay remains unrun. The [observer repair packet](../strict-sampler-checkpoints/proc-observer-v2/) and the creation-time and earlier provisioning failures below retain their original scopes. No full sampler acceptance is claimed.
+
 This corpus fixes the literal `Math115.PublicLatticeSampler.machine` while
 checking the revised bounded sampler against the original input encoding,
 `OutputsTable`, finite fair-bit `tableMass`, time and uniform-law definitions.
@@ -132,9 +134,13 @@ submitted artifact drift; caches are completely authenticated before and
 after comparison. Compiler failures, incomplete telemetry, stale dependencies,
 missing kernel evidence or changed inputs fail closed.
 
-## Remaining replay gaps
+## Historical provisioning checkpoint (11 October 2026)
 
-The full strict workload is pending. The latest attempt passed source installation
+This section retains the earlier provisioning failures and then-proposed profile.
+Later configuration/cache repairs, the nine-module observer failure and the
+pending fresh replay are linked from the [current observer packet](../strict-sampler-checkpoints/proc-observer-v2/).
+
+At this earlier checkpoint, the full strict workload was pending. The attempt passed source installation
 and the actual non-root systemd/Landrun sandbox probes on Linux 7.3.0 with
 Landlock ABI 11, then failed runtime authentication before proof compilation.
 The published runner currently rejects `formal/.lake/config/5/lakefile.olean`
@@ -149,9 +155,9 @@ then recheck their exact identities throughout execution. The failing guest's
 configuration trace was not collected, so its slot must not be assigned to a
 particular package from a different host's cache. Allowing every file under
 `.lake/config` would weaken the fresh-proof requirement. This is a diagnosis
-and repair handoff; no configuration-cache repair or subsequent VM run was made.
+and repair handoff; at this checkpoint no configuration-cache repair or subsequent VM run had been made.
 
-The proposed standalone 8 GiB/four-CPU
+The then-proposed standalone 8 GiB/four-CPU
 profile is an unmeasured budget for this 679-module build; the passed 6 GiB tiny
 fixture does not establish its sufficiency. The earlier original 4 GiB run
 exhausted memory before comparison and remains preserved. Kernel `-M8192`

@@ -1,0 +1,100 @@
+[diag] Diagnostics
+  [reduction] unfolded reducible declarations (max: 84, num: 7):
+    [reduction] LargePairEnumeration.SmallView ↦ 84
+    [reduction] SmallContextFibres.BoundedProfile ↦ 65
+    [reduction] Profiles ↦ 56
+    [reduction] States ↦ 55
+    [reduction] PhysicalStates ↦ 55
+    [reduction] DecidableEq ↦ 52
+    [reduction] outParam ↦ 32
+  use `set_option diagnostics.threshold <num>` to control threshold for reporting counters
+<packet>/revisions/attempt-07/formal/ResearchRationalClock/Proposal.lean:248:8: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+[diag] Diagnostics
+  [reduction] unfolded declarations (max: 883430, num: 47):
+    [reduction] Fin.foldr ↦ 883430
+    [reduction] List.ofFn ↦ 883430
+    [reduction] Finset.univ ↦ 487762
+    [reduction] Fintype.elems ↦ 487762
+    [reduction] SProd.sprod ↦ 478108
+    [reduction] Multiset.ofList ↦ 443128
+    [reduction] Quot.lift ↦ 442480
+    [reduction] Multiset.map ↦ 245500
+    [reduction] Multiset.sum ↦ 239090
+    [reduction] Multiset.foldr ↦ 239089
+    [reduction] Finset.product ↦ 239054
+    [reduction] Multiset.bind ↦ 239054
+    [reduction] Multiset.join ↦ 239054
+    [reduction] Multiset.product ↦ 239054
+    [reduction] Finset.filter ↦ 172713
+    [reduction] Multiset.filter ↦ 172713
+    [reduction] Multiset ↦ 26205
+    [reduction] Quotient ↦ 26205
+    [reduction] Multiset.pmap ↦ 24675
+    [reduction] Decidable.rec ↦ 4693
+    [reduction] Nat.rec ↦ 4692
+    [reduction] Nat.clog ↦ 3128
+    [reduction] precision ↦ 3128
+    [reduction] Finset.pi ↦ 2111
+    [reduction] Multiset.pi ↦ 2111
+    [reduction] Multiset.rec ↦ 2111
+    [reduction] Multiset.recOn ↦ 2111
+    [reduction] Finset.map ↦ 1641
+    [reduction] Fintype.piFinset ↦ 1629
+    [reduction] HMul.hMul ↦ 1564
+    [reduction] Mul.mul ↦ 1564
+    [reduction] flatRetry ↦ 1071
+    [reduction] cappedIndex ↦ 1071
+    [reduction] cappedList ↦ 1071
+    [reduction] lookupIndex ↦ 1071
+    [reduction] Neg.neg ↦ 672
+    [reduction] HSub.hSub ↦ 624
+    [reduction] Sub.sub ↦ 624
+    [reduction] Eq.rec ↦ 578
+    [reduction] Add.add ↦ 440
+    [reduction] HAdd.hAdd ↦ 440
+    [reduction] Int.rec ↦ 184
+    [reduction] Rat.blt ↦ 48
+    [reduction] LE.le ↦ 39
+    [reduction] Finset.sum ↦ 36
+    [reduction] mapLaw ↦ 34
+    [reduction] LT.lt ↦ 22
+  [reduction] unfolded reducible declarations (max: 895449, num: 29):
+    [reduction] Nat.casesOn ↦ 895449
+    [reduction] Finset.val ↦ 803512
+    [reduction] List.casesOn ↦ 662056
+    [reduction] Quot.liftOn ↦ 657310
+    [reduction] Eq.ndrec ↦ 26785
+    [reduction] Eq.ndrecOn ↦ 26785
+    [reduction] PSigma.fst ↦ 26785
+    [reduction] Quot.rec ↦ 26785
+    [reduction] Quot.recOn ↦ 26785
+    [reduction] Decidable.casesOn ↦ 17627
+    [reduction] Bool.casesOn ↦ 4814
+    [reduction] Option.casesOn ↦ 2146
+    [reduction] Quot.hrecOn ↦ 2111
+    [reduction] Quotient.hrecOn ↦ 2111
+    [reduction] Int.casesOn ↦ 1256
+    [reduction] Quot.indep ↦ 1156
+    [reduction] PSigma.snd ↦ 578
+    [reduction] Rat.num ↦ 536
+    [reduction] LargePairEnumeration.SmallView ↦ 219
+    [reduction] SmallContextFibres.BoundedProfile ↦ 171
+    [reduction] inferInstance ↦ 160
+    [reduction] States ↦ 154
+    [reduction] PhysicalStates ↦ 154
+    [reduction] Profiles ↦ 147
+    [reduction] DecidableEq ↦ 135
+    [reduction] outParam ↦ 50
+    [reduction] RationalLaw.mass ↦ 32
+    [reduction] FunLike ↦ 30
+    [reduction] DefectVertices ↦ 27
+  [def_eq] heuristic for solving `f a =?= f b` (max: 127, num: 4):
+    [def_eq] ite ↦ 127
+    [def_eq] List.map ↦ 35
+    [def_eq] Multiset.map ↦ 35
+    [def_eq] Multiset.ofList ↦ 35
+  [reduction] Axioms (possibly imported non-exposed defs) that were tried to be unfolded (max: 903, num: 1):
+    [reduction] Classical.choice ↦ 903
+  use `set_option diagnostics.threshold <num>` to control threshold for reporting counters

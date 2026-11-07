@@ -1,0 +1,107 @@
+{
+  "contains_host_specific_wrappers": false,
+  "contains_native_objects": false,
+  "contains_raw_runtime_inventory": false,
+  "contains_vm_images": false,
+  "files": [
+    {
+      "bytes": 6499,
+      "path": "README.md",
+      "sha256": "bef25e7aef5bffca6b33ed9d68b24c727a42aef2d6525ee7b72079a319972cfc"
+    },
+    {
+      "bytes": 895,
+      "path": "cap-controls.diff",
+      "sha256": "82fe9214084b80b9407b44ffe1968d0be1d40ac520e157bde577bd424dd99c25"
+    },
+    {
+      "bytes": 341,
+      "path": "evidence/admitted-plan/plan.json",
+      "sha256": "6f95a195f568b3ab53493b4e2d534f69d0fa2cf7b6054f2b8d1a94c3f04f5d0c"
+    },
+    {
+      "bytes": 229126,
+      "path": "evidence/authenticate.stderr.log",
+      "sha256": "de302af5817c7fa51c48ec51a1fd1cbdf580d4573c9adbfbcf6f6df229a48467"
+    },
+    {
+      "bytes": 99,
+      "path": "evidence/authenticate.stdout.log",
+      "sha256": "ac22a5edf87ac0cde4fbfe0adbf2918a1a9ef22ac0bef5155543018fd31ca619"
+    },
+    {
+      "bytes": 0,
+      "path": "evidence/install.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2875,
+      "path": "evidence/install.stdout.log",
+      "sha256": "2b0934143ef558f9d621b9a07a7ab30d84db9fb3f8fac352281aebe1c3cdb3f9"
+    },
+    {
+      "bytes": 1296,
+      "path": "evidence/phases.json",
+      "sha256": "9dffa267f7bb79bf3d8489b12579f6a57d3fe6fe39e1871769ea2af9685d38a9"
+    },
+    {
+      "bytes": 151200,
+      "path": "evidence/plan.stderr.log",
+      "sha256": "b7ac24936e51cdfa5bd47fa0b46956ba464ed7133a2fb58e04e563f7b9b54613"
+    },
+    {
+      "bytes": 55,
+      "path": "evidence/plan.stdout.log",
+      "sha256": "37a21eb4568886966a95a595dd6d5323b13111d62f7bad9ebd1ccb47af2ffca1"
+    },
+    {
+      "bytes": 0,
+      "path": "evidence/preflight.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 276,
+      "path": "evidence/preflight.stdout.log",
+      "sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b"
+    },
+    {
+      "bytes": 642,
+      "path": "evidence/resources.json",
+      "sha256": "d919b813454921ee2ef40a0be172bda6f93c1651eec11934e7000f1a4ce66387"
+    },
+    {
+      "bytes": 262,
+      "path": "evidence/startup-result.json",
+      "sha256": "b41f7c2782733560e878006df5a6a0b16f7a201f1839a672db73141f4d45efbc"
+    },
+    {
+      "bytes": 3559,
+      "path": "guard-cost-assessment.json",
+      "sha256": "be2db04fe7b254c708a34b24f605a34d970fa3478b3d8ea3525ad01888a19fcc"
+    },
+    {
+      "bytes": 2878,
+      "path": "outcome.json",
+      "sha256": "ab6e197069ce152314792f534d0232aae352999a2ce1841620b595a2135f36d8"
+    },
+    {
+      "bytes": 6166,
+      "path": "provenance-bindings.json",
+      "sha256": "ad56c55cf51631c94c9e2a898a07711aef551ac6845b6270528bad6a9a8d4c78"
+    },
+    {
+      "bytes": 2292,
+      "path": "reproduction-references.json",
+      "sha256": "69e3ebe3d9e0f2dc768fb0eb539eaee436a526ef2c82f53cd966ae88a3de7ceb"
+    },
+    {
+      "bytes": 675,
+      "path": "verification.json",
+      "sha256": "f716d6f6e2c5842188007dd128421a298709f45ee2752cc97c574245fd62b921"
+    }
+  ],
+  "prior_failure_packets_unchanged": true,
+  "schema_version": 1,
+  "status": "passed_scoped_startup_and_plan_saved_evidence",
+  "strict_sampler_acceptance": false
+}

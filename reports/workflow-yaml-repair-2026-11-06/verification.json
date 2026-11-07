@@ -1,0 +1,173 @@
+{
+  "failed_run": {
+    "html_url": "https://github.com/EcoDataLab/contingency-tables/actions/runs/42304815295",
+    "head_sha": "95016355464ae4627a6805667fd4f8e8bba6cb08",
+    "status": "completed",
+    "conclusion": "failure",
+    "path": ".github/workflows/tests.yml",
+    "created_at": "2026-11-06T22:27:10Z",
+    "run_started_at": "2026-11-06T22:27:10Z"
+  },
+  "failed_run_job_count": 0,
+  "historical_workflow_sha256": "7217cfbcf3ba2fbdc76e8a9e194748805e9cb233478b113e021ba114a5a49c98",
+  "repaired_workflow_sha256": "eb7ad625139dd2e92e29220f06d8ea757b9b52a52ef6a3c584b674e9004893a2",
+  "historical_yaml_parse": {
+    "parsed": false,
+    "error_class": "Psych::SyntaxError",
+    "problem": "mapping values are not allowed in this context",
+    "context": null,
+    "line": 20,
+    "column": 54
+  },
+  "change": "Only the install step YAML representation changed: a plain scalar became a literal block scalar; shell command text unchanged.",
+  "only_expected_change_verified": true,
+  "validated_workflows": [
+    {
+      "path": ".github/workflows/formal-linux.yml",
+      "sha256": "677a63e2cdb6b09dbe8802ddb009a6403f77097f3869a5cb3dc54e954d15073e",
+      "parsed": true,
+      "runs": [
+        {
+          "job": "verify",
+          "step_index": 1,
+          "name": "Record the fresh environment and exact source inputs",
+          "shell": "bash",
+          "bash_n_returncode": 0,
+          "command_sha256": "a6251047884901fe6ac807e4f0fd0474fb1df4a6a25d8fdd4be13fe8b795f757"
+        },
+        {
+          "job": "verify",
+          "step_index": 2,
+          "name": "Require the actual strict Linux sandbox before downloading proof dependencies",
+          "shell": "bash",
+          "bash_n_returncode": 0,
+          "command_sha256": "457dd02a84453747552682bbb91a721a5380ade03246c7b7b29e39316fd633bb"
+        },
+        {
+          "job": "verify",
+          "step_index": 3,
+          "name": "Install the pinned Lean toolchain and trusted Mathlib cache locally",
+          "shell": "bash",
+          "bash_n_returncode": 0,
+          "command_sha256": "38047f0b0f09c5d2cc66f9e037a0c57cac9abf46da752032c7f2bd38ca0e7ac2"
+        },
+        {
+          "job": "verify",
+          "step_index": 4,
+          "name": "Build the pinned Comparator, exporter, and strict Landrun adapter",
+          "shell": "bash",
+          "bash_n_returncode": 0,
+          "command_sha256": "2b7080cb97ff148192d161022ccda16b96cb262df2751845fceb3698923ae071"
+        },
+        {
+          "job": "verify",
+          "step_index": 5,
+          "name": "Run the selected verification scope",
+          "shell": "bash",
+          "bash_n_returncode": 0,
+          "command_sha256": "ea7eb724c251e6b41e21a48b0f9d5450046cc1cb611349b9b9020e930211fc78"
+        },
+        {
+          "job": "verify",
+          "step_index": 6,
+          "name": "Record the outcome without upgrading the verification claim",
+          "shell": "bash",
+          "bash_n_returncode": 0,
+          "command_sha256": "6b90477a54d2d287c5673527678d64eb189b23c5c90862ce4cc0121ca999d0e6"
+        }
+      ]
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "sha256": "eb7ad625139dd2e92e29220f06d8ea757b9b52a52ef6a3c584b674e9004893a2",
+      "parsed": true,
+      "runs": [
+        {
+          "job": "exact-tests",
+          "step_index": 2,
+          "name": "Install the complete test environment",
+          "shell": "bash (Linux default)",
+          "bash_n_returncode": 0,
+          "command_sha256": "6a5de81a3bdf4c36ff21b04aa703e839b66e2cd880021eb86d049e61c35369c6"
+        },
+        {
+          "job": "exact-tests",
+          "step_index": 3,
+          "name": "Run all Python tests, including the SciPy random_table lane",
+          "shell": "bash (Linux default)",
+          "bash_n_returncode": 0,
+          "command_sha256": "f8d695a456049b0d3853dd4fba135751af3908029c215bdc0e530f186a1e0153"
+        },
+        {
+          "job": "exact-tests",
+          "step_index": 4,
+          "name": "Check the saved claims and README summary",
+          "shell": "bash (Linux default)",
+          "bash_n_returncode": 0,
+          "command_sha256": "444e3e73cf0421e8191da8b316890cca79d954ed7c57c13e4803a21a38c84e2f"
+        },
+        {
+          "job": "exact-tests",
+          "step_index": 5,
+          "name": "Replay the original finite audit",
+          "shell": "bash (Linux default)",
+          "bash_n_returncode": 0,
+          "command_sha256": "e624d7803d0c0a14ca2ca50aa9bc4e687c1b08485a742020b63ebf5bda210463"
+        },
+        {
+          "job": "exact-tests",
+          "step_index": 6,
+          "name": "Verify the preserved source bundle",
+          "shell": "bash (Linux default)",
+          "bash_n_returncode": 0,
+          "command_sha256": "abe4977b82b958133a2e802ba3276cf50523006256f029d714c7836dc698ff78"
+        },
+        {
+          "job": "exact-tests",
+          "step_index": 7,
+          "name": "Run the independent finite crosscheck",
+          "shell": "bash (Linux default)",
+          "bash_n_returncode": 0,
+          "command_sha256": "89a901153845f9dd64bd4e913c5a210c267564a939c0edded14f0d051aefd2bb"
+        },
+        {
+          "job": "exact-tests",
+          "step_index": 8,
+          "name": "Replay the exact mixture certificates without site packages",
+          "shell": "bash (Linux default)",
+          "bash_n_returncode": 0,
+          "command_sha256": "65186b495dee99da8f1d826b5e0637ba40cb80937f1156f19f009b2524114f8a"
+        },
+        {
+          "job": "exact-tests",
+          "step_index": 9,
+          "name": "Run the sparse commuting example",
+          "shell": "bash (Linux default)",
+          "bash_n_returncode": 0,
+          "command_sha256": "6c6a0ea05d3639e3c1fd4dae1e6a6f604a01232354f2cfef78a293d81b1bbc83"
+        },
+        {
+          "job": "exact-tests",
+          "step_index": 10,
+          "name": "Run the exact linear bounds example",
+          "shell": "bash (Linux default)",
+          "bash_n_returncode": 0,
+          "command_sha256": "ec7dd24346dfa2e651d53e2dc8d3f6e95e44516283d3b1c4b76bdd97cf54fd63"
+        }
+      ]
+    }
+  ],
+  "validation_tools": {
+    "ruby": "ruby 2.6.10p210 (2022-04-12 revision 67958) [universal.arm64e-darwin24]",
+    "psych": "3.1.0",
+    "bash": "GNU bash, version 3.2.57(1)-release (arm64-apple-darwin24)"
+  },
+  "validation_scope": "YAML parsing and bash -n for every run block in all checked-in workflow YAML files; commands not executed, no Python suite rerun, no hosted passing-run claim.",
+  "historical_source_matches_failed_commit": true,
+  "historical_source_url": "https://github.com/EcoDataLab/contingency-tables/blob/95016355464ae4627a6805667fd4f8e8bba6cb08/.github/workflows/tests.yml#L20",
+  "historical_python_receipt": {
+    "path": "../python-reliability-2026-11-06/verification.json",
+    "sha256": "6987df774cd3471a6fa7a9c60ea1cfddcb4ae65e648aa24547654075c1a19c2d",
+    "status": "Unchanged historical record of completed local Python runs; its original workflow hash is intentionally retained."
+  }
+}

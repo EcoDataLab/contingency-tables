@@ -1,0 +1,71 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:22:11: error(lean.unknownIdentifier): Unknown identifier `StackAddition.value`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:47:63: error: unsolved goals
+V : ℕ
+word : Fin (precision V) → Bool
+⊢ (if hj : sorry < V then some ⟨sorry, hj⟩ else none) =
+    if hj : ↑((binaryWordEquiv (precision V)) word) < V then some ⟨↑((binaryWordEquiv (precision V)) word), hj⟩
+    else none
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:48:13: warning: declaration uses `sorry`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:48:70: warning: This simp argument is unused:
+  bitValue_eq_word
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [rawClockIntervalTrial, intervalWordTrial, intervalTrial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:51:53: error: unsolved goals
+V N : ℕ
+word : Fin (N * precision V) → Bool
+⊢ CompletionBooleanRetry.flatRetry (fun block => Option.map some (rawClockIntervalTrial V block)) none N word =
+    CompletionBooleanRetry.flatRetry (fun block => Option.map some (intervalWordTrial V block)) none N word
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:52:41: warning: This simp argument is unused:
+  rawClockIntervalTrial_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [rawClockIndex, cappedIndex]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:82:33: error: Ambiguous term
+  codeNeighborStates
+Possible interpretations:
+  PhysicalComputedProposal.codeNeighborStates : (r : Fin ?m.87 → ℕ) →
+    (c : Fin ?m.88 → ℕ) → (U L : ℕ) → Fin ?m.89 ≃ Cells (firstPaperSmall r c U) → States r c U L → List (States r c U L)
+
+  SmallGraphProfiles.codeNeighborStates : (r : Fin ?m.87 → ℕ) →
+    (c : Fin ?m.88 → ℕ) →
+      Fin ?m.89 ≃ Cells (FirstPaperPhysicalMarginal.paperSmall r c) → PaperStates r c → List (PaperStates r c)
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:82:53: error: Ambiguous term
+  stateCodeData
+Possible interpretations:
+  PhysicalComputedProposal.stateCodeData : (r : Fin ?m.87 → ℕ) →
+    (c : Fin ?m.88 → ℕ) → (U L : ℕ) → Fin ?m.89 ≃ Cells (firstPaperSmall r c U) → States r c U L → ProfileCheckData
+
+  SmallGraphProfiles.stateCodeData : (r : Fin ?m.87 → ℕ) →
+    (c : Fin ?m.88 → ℕ) →
+      Fin ?m.89 ≃ Cells (FirstPaperPhysicalMarginal.paperSmall r c) → PaperStates r c → ProfileCheckData
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:83:4: error: Ambiguous term
+  computedCellEquiv_catalog
+Possible interpretations:
+  PhysicalComputedProposal.computedCellEquiv_catalog : ∀ (r : Fin ?m.87 → ℕ) (c : Fin ?m.88 → ℕ) (U : ℕ),
+    cellCatalog (firstPaperSmall r c U) (PhysicalComputedProposal.computedCellEquiv r c U) =
+      PhysicalComputedProposal.computedCatalog r c U
+
+  SmallGraphProfiles.computedCellEquiv_catalog : ∀ (r : Fin ?m.87 → ℕ) (c : Fin ?m.88 → ℕ),
+    cellCatalog (FirstPaperPhysicalMarginal.paperSmall r c) (SmallGraphProfiles.computedCellEquiv r c) =
+      SmallGraphProfiles.computedCatalog r c
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:82:2: error: Type mismatch: After simplification, term
+  he
+ has type
+  List.map (computedStateCode r c U L)
+      (List.filterMap
+        (PhysicalComputedProposal.decodeStateCode r c U L (PhysicalComputedProposal.computedCellEquiv r c U))
+        (codeNeighbors
+          (PhysicalComputedProposal.stateCodeData r c U L (PhysicalComputedProposal.computedCellEquiv r c U) x))) =
+    codeNeighbors (PhysicalComputedProposal.stateCodeData r c U L (PhysicalComputedProposal.computedCellEquiv r c U) x)
+but is expected to have type
+  List.map (computedStateCode r c U L)
+      (PhysicalComputedProposal.codeNeighborStates r c U L (PhysicalComputedProposal.computedCellEquiv r c U) x) =
+    codeNeighbors
+      (codeCheckData (PhysicalComputedProposal.computedCatalog r c U) (List.ofFn r) (List.ofFn c) U
+        (PhysicalComputedProposal.stateCode r c U L (PhysicalComputedProposal.computedCellEquiv r c U) x))
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:112:6: error: Failed to rewrite using equation theorems for `rawClockNeighborDraw`

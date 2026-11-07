@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "recorded_utc": "2026-10-11T20:48:31.792500+00:00",
+  "source_checkout_base_commit": "9f6482caff9e45c4c3ea07e4f199142ba52377b4",
+  "source_sha256": {
+    "claims.json": "f5da4c37f30b5abee45d1c34b97e8f4bce5bff7e213eef2810cd00dbd7a2bfe5",
+    "scripts/claims_ledger.py": "b0afc84de7a519376d27730280c4e655c8ec49e949f3290729bb14e80739fbf0",
+    "tests/test_claims_ledger.py": "b921aa971b32964a55f8831bb725bfe394c09c74d6bb56d7677ddb9883dc0532",
+    "research/repair-accept/verify.py": "17705d69ede74bdf1849cd5ea7153a0c03573e39a3e11101a6e8385bdcf4ab40",
+    "experiments/aggregate_incidence.py": "8aee2f552a8d963944b1dfed3e2c70923f54d92e4ace6e1a3b88c7597d4542c4",
+    "docs/aggregate-incidence.md": "34797cb9a7a31c878f022f50bd538cbac65df55eaedcfad6a26ef24096dd340c",
+    "docs/physical-defect-trace.md": "a0b319eb6a54903c4777938e385aa7d2a2fe77690feedc26da9f08a728a08d3c",
+    "docs/physical-defect-trace-review.md": "d7f42cee809eb60dc528ed2e59dd257b6f2f6306628c6228a047c3438e4e04d6",
+    "docs/zero-range-subclass.md": "3bc6446e5fc404a1733fd70fa90ef365fb2bcf5b0858db0d9ca742ba04733462"
+  },
+  "artifact_sha256": {
+    "research/physical-defect-trace/results/verification.json": "5a5a8e5589775639e005748bf7420a48e257b09d24844bcf2b48ab638a3056d7",
+    "research/runtime-degree/checkpoints/actual-branch-degree-v1/manifest.json": "a3f61956fa43a8f055cfb2e644147cbbb8efee01c0ec78cd2b341bcd83fa13a4",
+    "research/strict-sampler-checkpoints/accelerated-plan-v1/manifest.json": "7febe61181979cd3aedb0fb4d0601a9c7e6c03e3c26522c925c384d48477067f",
+    "reports/aggregate-incidence.json": "abc069e02f574ac8348c7714f6a648a9462c7e923c6ec3b570eb3cd39bb09c1a",
+    "reports/physical-defect-trace-clean-verify.log.gz": "818180ab5f259f278ef64c1f99fdc90528fea6d1fb4309a7e22445b1b2cb7bf9",
+    "reports/physical-defect-trace-final-targeted.log.gz": "9a2d09c9a70e2a46500df7b75de78d40e77632e12981a7d7d8a0d932dec7aba7"
+  },
+  "verification": {
+    "layout": "Clean explicit public-source export of the base commit plus this checkpoint; untracked application work and private research excluded.",
+    "python": "3.14.3",
+    "tests_run": 422,
+    "tests_passed": 413,
+    "tests_skipped": 9,
+    "skip": "Optional SciPy unavailable in this interpreter.",
+    "stages": [
+      {
+        "command": "make verify",
+        "exit_code": 0,
+        "tests_seconds": 124.191,
+        "scope": "Full Python suite, archived finite audit, claim checks, source bundle, independent crosscheck and exact mixture replay."
+      },
+      {
+        "command": "PYTHONPATH=src python3 -m unittest discover -s tests -p test_claims_ledger.py -v; make claims-check",
+        "exit_code": 0,
+        "tests_run": 29,
+        "tests_seconds": 8.03,
+        "scope": "Clean export after test-only fixture reuse, documentation edits and reproduction-path fix; all affected tests and final generated README check passed."
+      }
+    ],
+    "post_full_suite_changes": "Only test fixture reuse, documentation and relative reproduction-path handling changed. Production Python source and proved Lean source bytes stayed unchanged; no repeated full suite.",
+    "test_simplification": "The real ledger is validated once per claim-test class. Unrelated metadata mutations reuse copies of those validated scopes. Receipt mutations and all 15 compiled-receipt/source-integrity fixtures remain unpatched. Production source and release checks are unchanged; 24 duplicate large receipt replays removed.",
+    "producer_drift": "Historical mixture producer bytes differ after earlier optimizations; the current exact mathematical certificates replay successfully.",
+    "log_projection": "Published logs are lossless gzip copies; no path replacement was needed.",
+    "frozen_whitespace": "Staged whitespace inspection found only two terminal blank lines in byte-bound compiled sources and one original compiler-log line containing spaces. These three literal evidence findings are preserved; no mutable code whitespace error remained."
+  },
+  "formal": {
+    "receipt": "research/physical-defect-trace/results/verification.json",
+    "research_modules": 41,
+    "fresh_compilations": 43,
+    "selected_declarations": 1147,
+    "selected_theorems": 1011,
+    "headline_dependency_closures": 9,
+    "headline": "Math115.PhysicalDefectTrace.actualRationalTrace_poincare_d8",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay.",
+    "initial_attempt": "An earlier attempt was deliberately interrupted during helper compilation to correct two audit-headline namespace names; it produced no audit result. The successful second attempt freshly compiled the complete stated scope."
+  },
+  "runtime_degree": {
+    "packet": "research/runtime-degree/checkpoints/actual-branch-degree-v1",
+    "status": "passed",
+    "actual_realizer": "Math115.LatticeSamplerPreparation.bothLargeTestRealizer",
+    "degree": 1008,
+    "named_axiom_checks": 20,
+    "remaining_draw_certificates": 6,
+    "complete_runtime_degree": null,
+    "scope": "Ordinary native Windows compilation and transitive named axiom checks; exact program, all margin-list inputs and encoded output charged. This is not a complete draw degree, Linux/default-target run or Comparator acceptance."
+  },
+  "finite_experiment": {
+    "report": "reports/aggregate-incidence.json",
+    "status": "passed",
+    "contexts": 45,
+    "completed_assignments": 1856,
+    "large_crossings": 1064,
+    "scope": "Exact full reconstruction, fixed-label injectivity, child moments, degree and acceptance checks; not a universal theorem or measured mixing time."
+  },
+  "reviewed_mathematics": [
+    {
+      "document": "docs/aggregate-incidence.md",
+      "claim": "Rational inverse gap at most 15488 A^(3/2) d^(13/2) when (m+n-2)^2<=Ad; dyadic bound doubles it.",
+      "scope": "Reference and unit branches retain their distinct proposal normalizations. Full completed-table aggregation and physical Lean assembly remain open in this published packet. Prior 431d^8 bound remains a fallback."
+    },
+    {
+      "document": "docs/zero-range-subclass.md",
+      "claim": "Restricted two-column one-small-column unique-completion family has O(d^4) relaxation allowance.",
+      "scope": "Uses Morris complete-graph zero-range theorem with an unextracted constant; not Lean-formalized or a general bound. Exact independent sampling already exists for this family."
+    }
+  ],
+  "review": {
+    "kind": "Separate AI agents reviewing AI-generated mathematics and source-bound evidence. No human expert or outsider reproduction is claimed.",
+    "scope": "Actual d8 graph/normalization and fresh receipt, completed-table d6.5 argument and exact finite report, restricted zero-range comparison, and actual branch runtime certificate passed the stated reviews."
+  },
+  "comparator": {
+    "packet": "research/strict-sampler-checkpoints/accelerated-plan-v1",
+    "status": "Authenticated startup, admitted planning and a complete-cache metadata guard passed. Full proof compilation, export and comparison unexecuted.",
+    "guard_seconds": 26.625,
+    "unchanged_schedule_guard_projection_hours": 20.15,
+    "projection_is_full_run_measurement": false,
+    "strict_sampler_acceptance": false,
+    "warnings": "Both guest watchdog warnings and exact collection recovery are preserved. No checker replacement is admitted."
+  },
+  "upstream_check": {
+    "repository": "openai/math",
+    "pinned_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "compared_ref": "main",
+    "status": "identical",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "checked_date_utc": "2026-10-11"
+  },
+  "scope_limits": [
+    "431d^8 is an inverse-gap theorem for the actual ideal rational defect trace with explicit m,n>=2, p>=2 and nonempty positive defect support. It is not a complete sampler runtime.",
+    "Dyadic d8 and bounded-aspect d6.5 retain reviewed mathematical status; the latter uses a separately normalized unit trace.",
+    "The complete compiled sampler still uses the earlier d17 route and re-proves upstream's existential theorem. Reserved-bit allowances improve from S^1288 to S^170, while the complete numerical runtime remains unknown.",
+    "Historical default-target 1511 named audits and 22 headline closures keep their original Linux scope; overlapping research totals are not added to them."
+  ]
+}

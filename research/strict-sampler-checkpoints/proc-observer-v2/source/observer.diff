@@ -1,0 +1,62 @@
+--- pinned05df/strict_serial_check.py
++++ private-observer-v2/strict_serial_check.py
+@@ -217,14 +217,25 @@
+         pids = (cgroup / "cgroup.procs").read_text().split()
+     except OSError as error:
+         raise TelemetryUnavailable("Cannot read owned cgroup process list") from error
+-    matches = []
++    matches, incomplete = [], []
+     for value in pids:
+         try:
+             executable = (proc / value / "exe").resolve(strict=True)
+         except FileNotFoundError:
+-            continue  # Process exited between the cgroup and procfs reads.
++            continue  # Preserve the original already-exited-process behavior.
++        except (PermissionError, ProcessLookupError) as error:
++            incomplete.append({"pid": int(value), "error_type": type(error).__name__,
++                               "errno": error.errno, "filename": error.filename,
++                               "error": str(error)})
++            continue  # Finish identifying readable PIDs; never return a partial count.
+         if executable in executables:
+             matches.append(int(value))
++    if incomplete:
++        error = TelemetryUnavailable("Owned executable observations incomplete: " +
++                                     ", ".join(str(item["pid"]) for item in incomplete))
++        error.incomplete_executables = incomplete
++        error.observed_compiler_pids = matches
++        raise error
+     return matches
+ 
+ class MeasuredRunner:
+@@ -283,6 +294,22 @@
+                             observed = compiler_pids(cgroup, self.executables)
+                         except TelemetryUnavailable as error:
+                             entry["last_cgroup_read_error"] = str(error)
++                            entry["incomplete_compiler_samples"] = entry.get("incomplete_compiler_samples", 0) + 1
++                            entry["compiler_telemetry_status"] = "incomplete_owned_cgroup_sample"
++                            event = {"observed_unix": time.time(), "error": str(error),
++                                     "unknown_executables": getattr(error, "incomplete_executables", []),
++                                     "positively_observed_compiler_pids": getattr(error, "observed_compiler_pids", [])}
++                            events = entry.setdefault("incomplete_sample_events", [])
++                            if len(events) < 16:
++                                events.append(event)
++                            else:
++                                entry["omitted_incomplete_event_count"] = entry.get("omitted_incomplete_event_count", 0) + 1
++                            # Unknown processes never imply zero/no overlap. Preserve any
++                            # positively established overlap, including after an unreadable PID.
++                            if len(event["positively_observed_compiler_pids"]) > 1:
++                                entry["overlap_pids"] = event["positively_observed_compiler_pids"]
++                                raise CheckError("Observed overlapping heavy compilers in this run's own service")
++                            # Do not increment valid samples/peak or reset the existing watchdog.
+                         else:
+                             # Only an actual successful process-list read resets
+                             # the watchdog, including an observed empty group.
+@@ -304,6 +331,8 @@
+                     # measured compiler peak when no sample was possible.
+                     entry["compiler_telemetry_status"] = "unavailable_short_stage"
+                     entry["sampled_heavy_compiler_peak"] = None
++                elif unit and entry.get("incomplete_compiler_samples", 0):
++                    entry["compiler_telemetry_status"] = "sampled_owned_cgroup_with_incomplete_samples"
+         except BaseException:
+             if unit:
+                 # Stop only our exact randomly named unit, whose RuntimeMaxSec

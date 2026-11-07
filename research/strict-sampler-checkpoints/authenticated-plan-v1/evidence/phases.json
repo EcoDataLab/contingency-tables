@@ -1,0 +1,38 @@
+[
+  {
+    "stage": "install",
+    "status": "passed",
+    "returncode": 0,
+    "elapsed_seconds": 9.823383331298828,
+    "cap_seconds": 600,
+    "stdout_sha256": "2b0934143ef558f9d621b9a07a7ab30d84db9fb3f8fac352281aebe1c3cdb3f9",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "stage": "preflight",
+    "status": "passed",
+    "returncode": 0,
+    "elapsed_seconds": 3.6072380542755127,
+    "cap_seconds": 300,
+    "stdout_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "stage": "authenticate",
+    "status": "passed",
+    "returncode": 0,
+    "elapsed_seconds": 2583.6072957515717,
+    "cap_seconds": 5400,
+    "stdout_sha256": "ac22a5edf87ac0cde4fbfe0adbf2918a1a9ef22ac0bef5155543018fd31ca619",
+    "stderr_sha256": "de302af5817c7fa51c48ec51a1fd1cbdf580d4573c9adbfbcf6f6df229a48467"
+  },
+  {
+    "stage": "plan",
+    "status": "passed",
+    "returncode": 0,
+    "elapsed_seconds": 2142.3884625434875,
+    "cap_seconds": 3600,
+    "stdout_sha256": "37a21eb4568886966a95a595dd6d5323b13111d62f7bad9ebd1ccb47af2ffca1",
+    "stderr_sha256": "b7ac24936e51cdfa5bd47fa0b46956ba464ed7133a2fb58e04e563f7b9b54613"
+  }
+]

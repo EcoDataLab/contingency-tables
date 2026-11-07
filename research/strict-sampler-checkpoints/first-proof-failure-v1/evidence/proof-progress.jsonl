@@ -1,0 +1,4 @@
+{"completed_modules": 0, "completed_stages": 0, "last_stage": "original_linux_and_landrun_preflight", "last_status": "running", "observed_unix": 1791755331.4686313}
+{"completed_modules": 0, "completed_stages": 1, "last_stage": "original_linux_and_landrun_preflight", "last_status": "passed", "observed_unix": 1791755336.4718995}
+{"completed_modules": 0, "completed_stages": 1, "last_stage": "0000_dependencies_current", "last_status": "running", "observed_unix": 1791755341.4748735}
+{"completed_modules": 0, "completed_stages": 1, "last_stage": "0000_dependencies_current", "last_status": "failed", "observed_unix": 1791755341.7033439}

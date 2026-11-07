@@ -1,0 +1,1 @@
+Ordinary compilation and the assumption audit passed. The later imported-object authentication check failed; this attempt is not a complete verification pass. Exact stage results and compressed audit output are retained.

@@ -1,0 +1,12 @@
+<unit-source-root>/UnitRuntime/ProfileValidatorDegree.lean:22:24: error(lean.inferBinderTypeFailed): Failed to infer type of binder `s`
+
+Note: All parameter types and holes (e.g., `_`) in the header of a theorem are resolved before the proof is processed; information from the proof cannot be used to infer what these values should be
+<unit-source-root>/UnitRuntime/ProfileValidatorDegree.lean:27:46: error(lean.unknownIdentifier): Unknown identifier `typed_profileView`
+<unit-source-root>/UnitRuntime/ProfileValidatorDegree.lean:33:24: error(lean.unknownIdentifier): Unknown identifier `typed_profileView`
+<unit-source-root>/UnitRuntime/ProfileValidatorDegree.lean:49:59: error(lean.unknownIdentifier): Unknown identifier `typed_profileView`
+<unit-source-root>/UnitRuntime/ProfileValidatorDegree.lean:47:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<unit-source-root>/UnitRuntime/ProfileValidatorDegree.lean:53:6: error: (kernel) unknown constant 'Math115.UnitRuntimeNext.typed_profileLineData'

@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralBoundedCoin",
+  "verified_attempt": "attempt-03",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "672c4bce911467d75afaa8577b113502c66d658bff10b8721c552c13fc57737a",
+      "compile_returncode": 1,
+      "compile_seconds": 22.496054249815643,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "ff3f61f3c4710cb73462080e7f8aa7c0cc8b5d4228b1ec8cbae1085eab2c73db",
+      "compile_returncode": 1,
+      "compile_seconds": 31.684395958669484,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-03",
+      "source_sha256": "e4a099e087123070dfd9edf660b3d760952bebedd5d4e4eb36c8543b51f26aed",
+      "compile_returncode": 0,
+      "compile_seconds": 16.951323708985,
+      "audit_returncode": 0,
+      "audit_seconds": 27.92080504214391,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

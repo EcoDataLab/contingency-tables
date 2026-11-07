@@ -1,0 +1,30 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitialization.lean:33:14: error(lean.unknownIdentifier): Unknown identifier `smallRow`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitialization.lean:28:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'smallColumnView', which is 'noncomputable'
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitialization.lean:37:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'initializationLabelTest', which is 'noncomputable'
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitialization.lean:85:4: error: Type mismatch: After simplification, term
+  h
+ has type
+  0 < ↑X (↑(↑st).2).1 (↑(↑st).1).2
+but is expected to have type
+  (decide (↑(↑st).1 ≠ ↑(↑st).2) && decide (0 < ↑X (↑(↑st).2).1 (↑(↑st).1).2)) = true
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitialization.lean:83:36: warning: This simp argument is unused:
+  hne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hs, ht, Bool.true_and, decide_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitialization.lean:83:41: warning: This simp argument is unused:
+  decide_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hs, ht, Bool.true_and, hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitialization.lean:99:4: warning: declaration uses `sorry`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitialization.lean:149:4: error(lean.unknownIdentifier): Unknown identifier `RationalLaw`
+
+Note: It is not possible to treat `RationalLaw` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralInitialization.lean:160:4: error(lean.unknownIdentifier): Unknown identifier `variation`
+
+Note: It is not possible to treat `variation` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.

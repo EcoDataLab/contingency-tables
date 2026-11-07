@@ -1,0 +1,72 @@
+[
+  {
+    "module": "CompleteDraw.Seams",
+    "command_threads": 2,
+    "memory_cap_mib": 8192,
+    "source_sha256": "4f02c59c3b89fc43ac8265cb8887c803eb60b1c0aa342bcc6b9db51746a20116",
+    "returncode": 0,
+    "seconds": 34.744,
+    "lean_path": [
+      "existing authenticated helper/original object prefixes",
+      "pinned mathlib package object prefixes"
+    ],
+    "olean_sha256": "1285dc740cf95e6382a7445e94e3d36a9c6b39ba911b8d3115cd6bf4631c6c03",
+    "source": "source/CompleteDraw/Seams.lean"
+  },
+  {
+    "module": "CompleteDraw.PublicBridge",
+    "command_threads": 2,
+    "memory_cap_mib": 8192,
+    "source_sha256": "af30b0ec3632bef514e475e286606388c7d5089dac2ec9297760be496ad5a62c",
+    "returncode": 0,
+    "seconds": 36.944,
+    "lean_path": [
+      "existing authenticated helper/original object prefixes",
+      "pinned mathlib package object prefixes"
+    ],
+    "olean_sha256": "98311172924f39a020fac8900917ce73eccbb03e8120f71ae2d12607144302bd",
+    "source": "source/CompleteDraw/PublicBridge.lean"
+  },
+  {
+    "module": "CompleteDraw.FinalBinding",
+    "command_threads": 2,
+    "memory_cap_mib": 8192,
+    "source_sha256": "da7baf26d81e0959b9d795f20b9552a32428170b3caa5559b76d14108a7d5920",
+    "returncode": 0,
+    "seconds": 35.8,
+    "lean_path": [
+      "existing authenticated helper/original object prefixes",
+      "pinned mathlib package object prefixes"
+    ],
+    "olean_sha256": "a050b479dfc86776edb540fafa86066d706c348557ab2bbc4fdeb1c3d938423a",
+    "source": "source/CompleteDraw/FinalBinding.lean"
+  },
+  {
+    "module": "CompleteDraw.FixedMachineTheorem",
+    "command_threads": 2,
+    "memory_cap_mib": 8192,
+    "source_sha256": "34e65943767905e9bce4b0ccf88b8985d84a691ea06f50a1bc5ee569d2c0f672",
+    "returncode": 0,
+    "seconds": 31.98,
+    "lean_path": [
+      "existing authenticated helper/original object prefixes",
+      "pinned mathlib package object prefixes"
+    ],
+    "olean_sha256": "b099e243267870ec9da03bc697bc0f55c869bb3c4b7fdbb77b442ee6e93f1b7d",
+    "source": "source/CompleteDraw/FixedMachineTheorem.lean"
+  },
+  {
+    "module": "CompleteDraw.Audit",
+    "command_threads": 2,
+    "memory_cap_mib": 8192,
+    "source_sha256": "6113f5cbd727763070b89e9b0b24510c24a71ad241bdcd98c159a0bd584aa15f",
+    "returncode": 0,
+    "seconds": 44.764,
+    "lean_path": [
+      "existing authenticated helper/original object prefixes",
+      "pinned mathlib package object prefixes"
+    ],
+    "olean_sha256": "ffba260f7555fb5a405c39f31f02694819edf3a23a55c0bc594852c6eeb0d213",
+    "source": "source/CompleteDraw/Audit.lean"
+  }
+]

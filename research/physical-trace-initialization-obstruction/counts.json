@@ -1,0 +1,44 @@
+{
+  "evidence_class": "exact_finite_enumeration",
+  "fixtures": [
+    {
+      "rows": [
+        0,
+        4
+      ],
+      "columns": [
+        2,
+        2
+      ],
+      "U": 2,
+      "L": 7,
+      "small_cells": 2,
+      "large_rows": 1,
+      "large_columns": 2,
+      "physical_states": 1,
+      "defect_states": 0,
+      "physical_completions": 1,
+      "original_tables": 1
+    },
+    {
+      "rows": [
+        0,
+        4,
+        4
+      ],
+      "columns": [
+        4,
+        4
+      ],
+      "U": 2,
+      "L": 7,
+      "small_cells": 2,
+      "large_rows": 2,
+      "large_columns": 2,
+      "physical_states": 1,
+      "defect_states": 0,
+      "physical_completions": 19,
+      "original_tables": 5
+    }
+  ]
+}

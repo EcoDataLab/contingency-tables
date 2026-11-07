@@ -1,0 +1,16 @@
+<packet>/revisions/attempt-03/formal/ResearchPhysicalTraceJoin/GeneralShapeSchedule.lean:276:24: error: failed to synthesize
+  Decidable
+    (shapeScheduleCodeData (positiveMargins (List.replicate 9 1 ++ [30000]))
+        (positiveMargins (List.replicate 9 1 ++ [30000]))
+        (positiveTraceCutoff (List.replicate 9 1 ++ [30000]) (List.replicate 9 1 ++ [30000])) 10 =
+      (99, 801, 19404, 396, 25, 4356, 275, 25, 21))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/revisions/attempt-03/formal/ResearchPhysicalTraceJoin/GeneralShapeSchedule.lean:285:24: error: failed to synthesize
+  Decidable
+    (shapeScheduleCodeData (positiveMargins (List.replicate 19 1 ++ [200000]))
+        (positiveMargins (List.replicate 19 1 ++ [200000]))
+        (positiveTraceCutoff (List.replicate 19 1 ++ [200000]) (List.replicate 19 1 ++ [200000])) 10 =
+      (399, 7201, 317604, 1596, 45, 17556, 495, 27, 21))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

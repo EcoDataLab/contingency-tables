@@ -1,0 +1,14 @@
+{
+  "source_bytes_changed": false,
+  "diagnostic_path_role_substitutions": [
+    {
+      "source_prefix_role": "unit-owned-source-root",
+      "replacement": "<unit-source-root>"
+    },
+    {
+      "source_prefix_role": "repository-root",
+      "replacement": "<repo-root>"
+    }
+  ],
+  "receipt_projection": "Only module/source/object/compiler identity, exit, duration, threads and memory cap are retained; original command/search paths are referenced by immutable owner record hashes."
+}

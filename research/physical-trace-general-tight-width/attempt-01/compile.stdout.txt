@@ -1,0 +1,67 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:184:62: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+
+Note: It is not possible to treat `Fibre` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:190:39: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  DefectVertices r c U L
+of sort `Type` in the application
+  tightTerminalCompletion r c U L hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:188:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:196:39: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  DefectVertices r c U L
+of sort `Type` in the application
+  tightTerminalCompletion r c U L hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:194:8: error: (kernel) unknown constant 'Math115.PhysicalTraceJoin.tightTerminalCompletion_law'
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:216:37: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  DefectVertices r c U L
+of sort `Type` in the application
+  tightTerminalCompletion r c U L hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:227:40: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  DefectVertices r c U L
+of sort `Type` in the application
+  tightTerminalCompletion r c U L hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:243:43: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  DefectVertices r c U L
+of sort `Type` in the application
+  tightTerminalCompletion r c U L hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:245:53: error(lean.unknownIdentifier): Unknown identifier `Fibre`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:248:50: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  DefectVertices r c U L
+of sort `Type` in the application
+  tightTerminalCompletion r c U L hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:254:45: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  DefectVertices r c U L
+of sort `Type` in the application
+  tightTerminalCompletion r c U L hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralTightWidth.lean:218:8: error: (kernel) unknown constant 'Math115.PhysicalTraceJoin.tightTerminalCompletion_law'

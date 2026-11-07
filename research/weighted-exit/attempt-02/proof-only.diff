@@ -1,0 +1,7 @@
+--- attempt-01/FirstSuccess.lean
++++ attempt-02/FirstSuccess.lean
+@@ -57,0 +58 @@
++  letI : Nonempty D := ⟨fallback⟩
+@@ -102 +103 @@
+-  field_simp [ne_of_gt hpos, ne_of_gt hw] <;> ring
++  field_simp [ne_of_gt hpos, ne_of_gt hw]

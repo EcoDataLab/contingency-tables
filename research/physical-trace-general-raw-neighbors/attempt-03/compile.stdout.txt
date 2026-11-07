@@ -1,0 +1,28 @@
+<packet>/revisions/attempt-03/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean:50:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  MatchingFPRAS.StackAddition.value (List.ofFn word)
+in the target expression
+  (if hj : MatchingFPRAS.StackAddition.value (List.ofFn word) < V then
+      some ⟨MatchingFPRAS.StackAddition.value (List.ofFn word), hj⟩
+    else none) =
+    if hj : ↑((binaryWordEquiv (precision V)) word) < V then some ⟨↑((binaryWordEquiv (precision V)) word), hj⟩
+    else none
+
+V : ℕ
+word : Fin (precision V) → Bool
+hv : MatchingFPRAS.StackAddition.value (List.ofFn word) = ↑((binaryWordEquiv (precision V)) word)
+⊢ (if hj : MatchingFPRAS.StackAddition.value (List.ofFn word) < V then
+      some ⟨MatchingFPRAS.StackAddition.value (List.ofFn word), hj⟩
+    else none) =
+    if hj : ↑((binaryWordEquiv (precision V)) word) < V then some ⟨↑((binaryWordEquiv (precision V)) word), hj⟩
+    else none
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    word
+  has type
+    Fin (precision V) → Bool
+  but is expected to have type
+    Fin (Nat.clog 2 V) → Bool
+  in the application
+    List.ofFn word

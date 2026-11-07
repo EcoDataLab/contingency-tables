@@ -12,6 +12,7 @@ from dataclasses import asdict
 from fractions import Fraction
 import hashlib
 import json
+import re
 from math import floor, isfinite
 from pathlib import Path
 
@@ -238,12 +239,23 @@ def search_report(fixture_path, iterations):
     return report
 
 
-def replay_report(report, fixture_path, *, check_source_hashes=True):
-    """Reconstruct all matrices and verify all rational claims, without NumPy."""
+def replay_report(report, fixture_path, *, check_source_hashes=False):
+    """Verify all rational claims under current code; report producer drift.
+
+    Requiring original producer bytes is a separate reproduction constraint.
+    It does not substitute for reconstructing and checking the certificates.
+    """
     fixture, states, cycles, by_law = build_inputs(fixture_path)
     if report["schema_version"] != 1 or report["fixture"] != fixture["name"] or report["fixture_sha256"] != sha256(fixture_path):
         raise ValueError("fixture provenance mismatch")
-    if check_source_hashes and report["source_sha256"] != {path: sha256(ROOT / path) for path in SOURCE_PATHS}:
+    producer = report["source_sha256"]
+    if (not isinstance(producer, dict) or set(producer) != set(SOURCE_PATHS)
+            or any(not isinstance(value, str) or not re.fullmatch(r'[0-9a-f]{64}', value)
+                   for value in producer.values())):
+        raise ValueError("invalid producer source provenance")
+    current_sources = {path: sha256(ROOT / path) for path in SOURCE_PATHS}
+    producer_drift = sorted(path for path in SOURCE_PATHS if producer[path] != current_sources[path])
+    if check_source_hashes and producer_drift:
         raise ValueError("certificate producer sources have changed; rebuild or explicitly inspect the difference")
     if report["state_count"] != len(states) or report["state_order_sha256"] != hashlib.sha256(json.dumps(states, separators=(",", ":")).encode()).hexdigest():
         raise ValueError("state order mismatch")
@@ -297,7 +309,9 @@ def replay_report(report, fixture_path, *, check_source_hashes=True):
             raise ValueError("invalid improvement comparison")
         strict_comparisons += len(expected)
     return {"verified_gap_intervals": verified_cases, "verified_family_upper_bounds": verified_dual_bounds,
-            "verified_strict_improvements": strict_comparisons, "intervals": intervals}
+            "verified_strict_improvements": strict_comparisons, "intervals": intervals,
+            "producer_sources_match": not producer_drift, "producer_source_mismatches": producer_drift,
+            "verification_source_sha256": current_sources}
 
 
 def main():
@@ -305,18 +319,21 @@ def main():
     parser.add_argument("--fixture", type=Path, default=DEFAULT_FIXTURE)
     parser.add_argument("--output", type=Path, default=ROOT / "reports/cycle-mixtures.json")
     parser.add_argument("--replay", type=Path, help="check this saved certificate using exact arithmetic only")
+    parser.add_argument("--require-producer-sources", action="store_true",
+                        help="also require the historical producer's exact source bytes")
     parser.add_argument("--iterations", type=int, default=700)
     args = parser.parse_args()
     if args.iterations < 1:
         parser.error("--iterations must be positive")
     if args.replay:
-        result = replay_report(json.loads(args.replay.read_text()), args.fixture)
+        result = replay_report(json.loads(args.replay.read_text()), args.fixture,
+                               check_source_hashes=args.require_producer_sources)
     else:
         report = search_report(args.fixture, args.iterations)
         # A JSON round trip makes the stored witness, not in-memory tuples, the
         # subject of the independent exact replay step.
         encoded = json.dumps(report, indent=2) + "\n"
-        result = replay_report(json.loads(encoded), args.fixture)
+        result = replay_report(json.loads(encoded), args.fixture, check_source_hashes=True)
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(encoded)
     print(json.dumps(result, indent=2))

@@ -1,0 +1,8 @@
+<repo>/<retry-source>/RetryRuntime/WordChunkDegree.lean:37:30: error: Application type mismatch: The argument
+  List.length_take_le ?m.18 ?m.19
+has type
+  (List.take ?m.18 ?m.19).length ≤ ?m.18
+but is expected to have type
+  (List.take bank bits).length ≤ bits.length
+in the application
+  LE.le.trans (Nat.div_le_self (List.take bank bits).length width) (List.length_take_le ?m.18 ?m.19)

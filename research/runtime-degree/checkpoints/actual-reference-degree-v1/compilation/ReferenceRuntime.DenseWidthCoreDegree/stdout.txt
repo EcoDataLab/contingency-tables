@@ -1,0 +1,4 @@
+Math115.ReferenceRuntimeNext.typed_gridCellWidth : Typed gridCellWidthRealizer 864
+'Math115.ReferenceRuntimeNext.typed_gridCellWidth' depends on axioms: [propext, Classical.choice, Quot.sound]
+Math115.ReferenceRuntimeNext.typed_offsetLengths : Typed offsetLengthsRealizer 3011614704
+'Math115.ReferenceRuntimeNext.typed_offsetLengths' depends on axioms: [propext, Classical.choice, Quot.sound]

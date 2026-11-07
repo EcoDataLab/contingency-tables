@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralBoundedCoin
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralBoundedCoin] headlines [Math115.PhysicalTraceJoin.PartialRepairCorrection.finiteRow_variation, Math115.PhysicalTraceJoin.PartialRepairCorrection.finiteRow_bind_variation]

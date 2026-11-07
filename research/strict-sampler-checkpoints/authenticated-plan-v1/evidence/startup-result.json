@@ -1,0 +1,7 @@
+{
+  "status": "startup_authenticated_plan_passed",
+  "strict_execute_started": false,
+  "proof_compilation_started": false,
+  "comparator_invocation_started": false,
+  "runtime_freeze_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4"
+}

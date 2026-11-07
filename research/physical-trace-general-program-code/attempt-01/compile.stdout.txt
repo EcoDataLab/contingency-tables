@@ -1,0 +1,131 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:82:24: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+htotal : ∑ i, r i = ∑ j, c j
+start : DefectVertices r c U L
+h k : ℕ
+fallback : Table r c
+R : ℕ
+hq : 0 < terminalCorrectedWordWidth r c U L h k
+word : Fin (terminalCorrectedRetryWordWidth r c U L h k R) → Bool
+⊢ (List.ofFn word).length ≤ R * (terminalScheduleWordWidth r c U L h + k)
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:86:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  List.take (R * (terminalScheduleWordWidth r c U L h + k)) (List.ofFn word)
+in the target expression
+  (have q := terminalScheduleWordWidth r c U L h + k;
+    FirstSuccessProgram.retry
+      (fun z => rawCorrectedTrial (List.ofFn r) (List.ofFn c) U L (computedStateCode r c U L ↑start) h k z.2)
+      (((), matrixCode ↑fallback), wordChunks (q, List.take (R * q) (List.ofFn word)))) =
+    matrixCode ↑(terminalCorrectedRetryWord r c U L hr hc start h k fallback R word)
+
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+htotal : ∑ i, r i = ∑ j, c j
+start : DefectVertices r c U L
+h k : ℕ
+fallback : Table r c
+R : ℕ
+hq : 0 < terminalCorrectedWordWidth r c U L h k
+word : Fin (terminalCorrectedRetryWordWidth r c U L h k R) → Bool
+htake : List.take (R * (terminalScheduleWordWidth r c U L h + k)) (List.ofFn word) = List.ofFn word
+⊢ (have q := terminalScheduleWordWidth r c U L h + k;
+    FirstSuccessProgram.retry
+      (fun z => rawCorrectedTrial (List.ofFn r) (List.ofFn c) U L (computedStateCode r c U L ↑start) h k z.2)
+      (((), matrixCode ↑fallback), wordChunks (q, List.take (R * q) (List.ofFn word)))) =
+    matrixCode ↑(terminalCorrectedRetryWord r c U L hr hc start h k fallback R word)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    fallback
+  has type
+    Table r c
+  but is expected to have type
+    { X // HasMargins X r c }
+  in the application
+    ↑fallback
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:84:15: warning: This simp argument is unused:
+  List.length_ofFn
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [terminalCorrectedRetryWordWidth, terminalCorrectedWordWidth, le_refl]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:85:6: warning: This simp argument is unused:
+  le_refl
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.length_ofFn, terminalCorrectedRetryWordWidth, terminalCorrectedWordWidth]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:127:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  rawCorrectedRetryCode (positiveMargins xs) (positiveMargins ys) (positiveTraceCutoff xs ys) 7
+    (computedStateCode (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+      ↑(positiveTraceInitialStart xs ys htotal hb))
+    (positiveTraceLinearPrecision xs ys t) (positiveTraceLinearPrecision xs ys t)
+    (matrixCode ↑(positiveTraceFallback xs ys htotal)) (positiveTraceLinearAttempts xs ys t) (List.ofFn word)
+in the target expression
+  restoreZeroMarginMatrix xs ys
+      (rawCorrectedRetryCode (positiveMargins xs) (positiveMargins ys) (positiveTraceCutoff xs ys) 7
+        (computedStateCode (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+          ↑(positiveTraceInitialStart xs ys htotal hb))
+        (positiveTraceLinearPrecision xs ys t) (positiveTraceLinearPrecision xs ys t)
+        (matrixCode ↑(positiveTraceFallback xs ys htotal)) (positiveTraceLinearAttempts xs ys t) (List.ofFn word)) =
+    matrixCode ↑(positiveReferenceWord xs ys htotal hb t word)
+
+xs ys : List ℕ
+htotal : ∑ i, listMargin xs i = ∑ j, listMargin ys j
+hb : positiveTraceBranch xs ys = TraceInputBranch.reference
+t : ℕ
+word : Fin (positiveReferenceWordWidth xs ys t) → Bool
+hq :
+  0 <
+    terminalCorrectedWordWidth (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+      (positiveTraceLinearPrecision xs ys t) (positiveTraceLinearPrecision xs ys t)
+he :
+  rawCorrectedRetryCode (positiveMargins xs) (positiveMargins ys) (positiveTraceCutoff xs ys) 7
+      (computedStateCode (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+        ↑(positiveTraceInitialStart xs ys htotal hb))
+      (positiveTraceLinearPrecision xs ys t) (positiveTraceLinearPrecision xs ys t)
+      (matrixCode ↑(positiveTraceFallback xs ys htotal)) (positiveTraceLinearAttempts xs ys t) (List.ofFn word) =
+    matrixCode
+      ↑(terminalCorrectedRetryWord (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7 ⋯ ⋯
+          (positiveTraceInitialStart xs ys htotal hb) (positiveTraceLinearPrecision xs ys t)
+          (positiveTraceLinearPrecision xs ys t) (positiveTraceFallback xs ys htotal)
+          (positiveTraceLinearAttempts xs ys t) word)
+⊢ restoreZeroMarginMatrix xs ys
+      (rawCorrectedRetryCode (positiveMargins xs) (positiveMargins ys) (positiveTraceCutoff xs ys) 7
+        (computedStateCode (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7
+          ↑(positiveTraceInitialStart xs ys htotal hb))
+        (positiveTraceLinearPrecision xs ys t) (positiveTraceLinearPrecision xs ys t)
+        (matrixCode ↑(positiveTraceFallback xs ys htotal)) (positiveTraceLinearAttempts xs ys t) (List.ofFn word)) =
+    matrixCode ↑(positiveReferenceWord xs ys htotal hb t word)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    positiveTraceFallback xs ys htotal
+  has type
+    Table (filteredMargin xs) (filteredMargin ys)
+  but is expected to have type
+    { X // HasMargins X (filteredMargin xs) (filteredMargin ys) }
+  in the application
+    ↑(positiveTraceFallback xs ys htotal)
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:137:35: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:140:35: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:140:46: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:142:35: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:142:46: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:165:6: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:167:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:172:6: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:174:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean:179:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead

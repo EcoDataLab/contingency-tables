@@ -1,0 +1,3 @@
+import ResearchPhysicalStar.Trial
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalStar.Trial] headlines [Math115.PhysicalStarTrial.actualStep_law, Math115.PhysicalStarTrial.idealTrialLaw_mass_some, Math115.PhysicalStarTrial.idealTrialLaw_mass_some_cast, Math115.PhysicalStarTrial.actualTrialLaw_accuracy]

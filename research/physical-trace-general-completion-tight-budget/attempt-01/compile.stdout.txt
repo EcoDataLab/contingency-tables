@@ -1,0 +1,26 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCompletionTightBudget.lean:114:61: error: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCompletionTightBudget.lean:115:61: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 1
+where
+ a := ↑(largeIndices (U, List.ofFn r)).length
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCompletionTightBudget.lean:130:6: error: Function expected at
+  rawCompletionRequestDimension_eq r c U
+but this term has type
+  rawCompletionRequestDimension (List.ofFn r) (List.ofFn c) U = dimensionAllowance
+
+Note: Expected a function because this term is being applied to the argument
+  hr
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralCompletionTightBudget.lean:128:94: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+z : ReducedSmallChain.States r c U L
+h : ℕ
+⊢ bits r c U L hr hc z h ≤
+    have D := rawCompletionRequestDimension (List.ofFn r) (List.ofFn c) U;
+    totalReservedBits D D (rawScheduleResidualMass (List.ofFn r) (List.ofFn c) U L) h

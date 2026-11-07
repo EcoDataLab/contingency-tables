@@ -1,0 +1,73 @@
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean:56:6: error: Ambiguous term
+  computedCellEquiv_catalog
+Possible interpretations:
+  PhysicalComputedProposal.computedCellEquiv_catalog : ∀ (r : Fin ?m.45 → ℕ) (c : Fin ?m.46 → ℕ) (U : ℕ),
+    cellCatalog (firstPaperSmall r c U) (PhysicalComputedProposal.computedCellEquiv r c U) =
+      PhysicalComputedProposal.computedCatalog r c U
+
+  SmallGraphProfiles.computedCellEquiv_catalog : ∀ (r : Fin ?m.45 → ℕ) (c : Fin ?m.46 → ℕ),
+    cellCatalog (paperSmall r c) (SmallGraphProfiles.computedCellEquiv r c) = SmallGraphProfiles.computedCatalog r c
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean:54:45: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+z : States r c U L
+he :
+  List.ofFn (coarseRows r c U L hr z) =
+    largePaddedMargins true
+      ((((cellCatalog (firstPaperSmall r c U) (PhysicalComputedProposal.computedCellEquiv r c U),
+              viewList (firstPaperSmall r c U) (PhysicalComputedProposal.computedCellEquiv r c U)
+                (physicalProfile (firstPaperSmall r c U) (capacity r c U L) r c L z) false),
+            List.ofFn r, List.ofFn c),
+          U),
+        L)
+⊢ rawCoarseRows (List.ofFn r) (List.ofFn c) U L (computedStateCode r c U L z) = List.ofFn (coarseRows r c U L hr z)
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean:64:6: error: Ambiguous term
+  computedCellEquiv_catalog
+Possible interpretations:
+  PhysicalComputedProposal.computedCellEquiv_catalog : ∀ (r : Fin ?m.45 → ℕ) (c : Fin ?m.46 → ℕ) (U : ℕ),
+    cellCatalog (firstPaperSmall r c U) (PhysicalComputedProposal.computedCellEquiv r c U) =
+      PhysicalComputedProposal.computedCatalog r c U
+
+  SmallGraphProfiles.computedCellEquiv_catalog : ∀ (r : Fin ?m.45 → ℕ) (c : Fin ?m.46 → ℕ),
+    cellCatalog (paperSmall r c) (SmallGraphProfiles.computedCellEquiv r c) = SmallGraphProfiles.computedCatalog r c
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean:62:48: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+z : States r c U L
+he :
+  List.ofFn (coarseColumns r c U L hc z) =
+    largePaddedMargins false
+      ((((cellCatalog (firstPaperSmall r c U) (PhysicalComputedProposal.computedCellEquiv r c U),
+              complementValues
+                (U,
+                  viewList (firstPaperSmall r c U) (PhysicalComputedProposal.computedCellEquiv r c U)
+                    (physicalProfile (firstPaperSmall r c U) (capacity r c U L) r c L z) true)),
+            List.ofFn r, List.ofFn c),
+          U),
+        L)
+⊢ rawCoarseColumns (List.ofFn r) (List.ofFn c) U L (computedStateCode r c U L z) =
+    List.ofFn (coarseColumns r c U L hc z)
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean:76:31: error(lean.unknownIdentifier): Unknown identifier `hr`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean:75:47: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+z : States r c U L
+⊢ (rawCoarseRows (List.ofFn r) (List.ofFn c) U L (computedStateCode r c U L z)).length =
+    (largeIndices (U, List.ofFn r)).length
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean:83:34: error(lean.unknownIdentifier): Unknown identifier `hc`
+<packet>/revisions/attempt-02/formal/ResearchPhysicalTraceJoin/GeneralCompletionCode.lean:82:47: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+z : States r c U L
+⊢ (rawCoarseColumns (List.ofFn r) (List.ofFn c) U L (computedStateCode r c U L z)).length =
+    (largeIndices (U, List.ofFn c)).length

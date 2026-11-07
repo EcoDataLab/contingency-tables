@@ -1,0 +1,27 @@
+--- research/strict-sampler-checkpoints/proc-observer-v2/source/strict_serial_check.py
++++ runtime-output-v1/strict_serial_check.py
+@@ -239,0 +240,20 @@
++
++COMPARATOR_ACCEPTANCE_MARKERS = (
++    "Running Lean default kernel on solution.",
++    "Lean default kernel accepts the solution",
++    "Your solution is okay!",
++)
++
++def comparator_marker_summary(path: Path, chunk_size: int = 65536) -> str:
++    """Bounded summary only; the complete raw stdout file remains authoritative."""
++    if chunk_size < 1:
++        raise ValueError("Comparator scan chunk size must be positive")
++    needles = tuple(marker.encode("ascii") for marker in COMPARATOR_ACCEPTANCE_MARKERS)
++    found, carry = set(), b""
++    overlap = max(map(len, needles)) - 1
++    with path.open("rb") as stream:
++        while chunk := stream.read(chunk_size):
++            observed = carry + chunk
++            found.update(i for i, needle in enumerate(needles) if needle in observed)
++            carry = observed[-overlap:]
++    return "\n".join(marker for i, marker in enumerate(COMPARATOR_ACCEPTANCE_MARKERS) if i in found)
+@@ -360 +380,2 @@
+-        output = stdout_path.read_text(errors="replace") if label == "unchanged_comparator" else ""
++        # CompletedProcess.stdout is a marker summary for Comparator only.
++        output = comparator_marker_summary(stdout_path) if label == "unchanged_comparator" else ""

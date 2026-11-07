@@ -1,0 +1,26 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalCompletionWidth/Bound.lean:64:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ∑ i, residualRows (firstPaperSmall r c U) B r c L z ↑((largeOptionEquiv r U hr) i)
+in the target expression
+  ∑ i, residualRows (firstPaperSmall r c U) B r c L z ↑((largeOptionEquiv r U hr) i) =
+    ∑ i, residualRows (firstPaperSmall r c U) B r c L z i
+
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+z : States r c U L
+⊢ ∑ i, residualRows (firstPaperSmall r c U) B r c L z ↑((largeOptionEquiv r U hr) i) =
+    ∑ i, residualRows (firstPaperSmall r c U) B r c L z i
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    i
+  has type
+    Option (Fin (tailCount r U))
+  but is expected to have type
+    Option (Fin ((largeIndices (U, List.ofFn r)).length - 1))
+  in the application
+    (largeOptionEquiv r U hr) i
+<packet>/revisions/attempt-01/formal/ResearchPhysicalCompletionWidth/Bound.lean:86:77: error: unexpected token 'include'; expected 'lemma'

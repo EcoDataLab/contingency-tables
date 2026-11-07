@@ -1,0 +1,10 @@
+{
+  "original_source_sha256": "1447a8da99507486dafe204817d0e81b998d3380a598aa2c4f582e8930c778fb",
+  "final_source_sha256": "6206b5da1e2a44450c4b13678580b2ab443daff4acbd30855ed9d02750edb5c3",
+  "original_statements_unchanged": false,
+  "changed_headers": [
+    "singletonCompletionDraw"
+  ],
+  "new_declarations": [],
+  "scope": "Literal headers compared. Changed qualifications or binder names require source review; definition bodies are reviewed separately."
+}

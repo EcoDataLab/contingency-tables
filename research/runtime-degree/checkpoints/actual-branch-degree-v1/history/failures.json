@@ -1,0 +1,29 @@
+[
+  {
+    "attempt": 1,
+    "module": "DrawRuntime.RangeSeed",
+    "returncode": 1,
+    "source_sha256": "9b45bac2d5d80b6cfdcbd0489a6ce1977135806103af6c566a0b5f53dc455f08",
+    "source_public_path": "history/attempt-01/DrawRuntime.RangeSeed/source.lean",
+    "seconds": 313.8384324000217,
+    "status": "failed; later corrected without changing endpoint function/degree"
+  },
+  {
+    "attempt": 2,
+    "module": "DrawRuntime.BranchDegree",
+    "returncode": 1,
+    "source_sha256": "366379595149b7d0aa50275d9bfa9b01886d4710932c2339121ddc80815c8c7d",
+    "source_public_path": "history/attempt-02/DrawRuntime.BranchDegree/source.lean",
+    "seconds": 86.66449560003821,
+    "status": "failed; later corrected without changing endpoint function/degree"
+  },
+  {
+    "attempt": 3,
+    "module": "DrawRuntime.BranchDegree",
+    "returncode": 1,
+    "source_sha256": "63ad957f545b9ec551b3db5e63edcae506489e5800b94c1b87dfb45ec6d5395a",
+    "source_public_path": "history/attempt-03/DrawRuntime.BranchDegree/source.lean",
+    "seconds": 86.68164480000269,
+    "status": "failed; later corrected without changing endpoint function/degree"
+  }
+]

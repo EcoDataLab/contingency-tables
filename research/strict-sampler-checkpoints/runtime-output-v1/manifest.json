@@ -1,0 +1,33 @@
+{
+  "files_sha256": {
+    "README.md": "7e0af0f10e7c0e9b606dae7fbf9e15b81a1957662f62b045f7ab3eff07a16705",
+    "independent-review.md": "18355db3a2362b359346ef2710bf8163b35ea96ef477b589462817837372502b",
+    "prepare_candidate.py": "4f0dc544609cc19180e9c7931bf7321b63b13bd0521152681f75ada5779d0d7e",
+    "source/integration-pins.json": "f047f88039b63968f9fa913ddac1ca3f62d50283ff87e0b1532078494ede51cd",
+    "source/observer-recipe.json": "460da82f09c01091b017b49902487fb41313c06af415584fc11426fbb113b3d1",
+    "source/observer.diff": "9975050a7d0718c603903af64f27a5aadb8b3178ecbb5bbe04fd5cfb5137c5f3",
+    "source/preparation.diff": "566151dbe37e89d77549131fe6891a21d3263fc14677cf6064347d1caace93dd",
+    "source/runner.diff": "62b2667cd40f022f1b7ed97b6ff16117a66dd3d61e4cac2a5ab756f68e9f6f4d",
+    "tests/test_bounded_output.py": "bbee2e8e8513925be9e7f184ccb45403099978e7935d7105a7b3248757e6fadb"
+  },
+  "history_modified": false,
+  "independent_review": {
+    "path": "research/strict-sampler-checkpoints/runtime-output-v1/independent-review.md",
+    "reviewer": "separate_AI_agent",
+    "sha256": "18355db3a2362b359346ef2710bf8163b35ea96ef477b589462817837372502b",
+    "status": "passed_source_and_adversarial_offline_checks"
+  },
+  "native_execution_performed": false,
+  "normal_test_bridge": {
+    "path": "tests/test_comparator_bounded_output.py",
+    "sha256": "555d39abb6ce5ebc47bb7914bcb82632f1d48c06449a0d9ec0f6b4712d91ef7f"
+  },
+  "offline_tests": {
+    "count": 8,
+    "python_3_10_missing_file_digest_simulation": "passed_module_scoped_fixture_only",
+    "status": "passed_on_cpython_3.12_and_3.14"
+  },
+  "schema_version": 1,
+  "status": "additive_source_only_candidate_native_unrun",
+  "strict_acceptance": false
+}

@@ -1,0 +1,31 @@
+--- initial.lean
++++ checked.lean
+@@ -260 +260 @@
+-  rw [← ofFn_filteredMargin xs, ← ofFn_filteredMargin ys]
++  conv_lhs => rw [← ofFn_filteredMargin xs, ← ofFn_filteredMargin ys]
+@@ -264,0 +265,3 @@
++end
++
++set_option maxRecDepth 10000 in
+@@ -271,2 +274,8 @@
+-        (99,801,19404,396,25,4356,275,25,21) := by decide
+-
++        (99,801,19404,396,25,4356,275,25,21) := by
++  dsimp only
++  refine ⟨?_,?_,?_⟩
++  · decide
++  · decide
++  · rfl
++
++set_option maxRecDepth 10000 in
+@@ -277,3 +286,7 @@
+-        (399,7201,317604,1596,45,17556,495,27,21) := by decide
+-
+-end
++        (399,7201,317604,1596,45,17556,495,27,21) := by
++  dsimp only
++  refine ⟨?_,?_,?_⟩
++  · decide
++  · decide
++  · rfl
++

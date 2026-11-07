@@ -1,0 +1,3 @@
+'OAI.ContingencyTables.IntegerWeightedTransport.integer_root_leaf_transport_retained_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

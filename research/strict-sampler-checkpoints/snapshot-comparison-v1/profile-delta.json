@@ -1,0 +1,40 @@
+{
+  "baseline": "../accelerated-plan-v1/profile.json",
+  "outer_vm_wrapper_supplied": false,
+  "private_full_control_delta_sha256": "4f09fb9315ce6158b09feb21a157e52c16d70348966ab3c5bb26312da2b84414",
+  "private_manage_sha256": "bb2cf371ad529fae6202adfd1871f1c722c7b175652ff650905e37709f4ba66f",
+  "private_supervisor_sha256": "a72cb86ff8f374f15ea46fee3dfdf502225186c79e929faedcfb1602d0652a18",
+  "resource_changes": [
+    {
+      "component": "vm_sampler_supervisor.py",
+      "new": "\"guest_vcpus\": 1",
+      "old": "\"guest_vcpus\": 4"
+    },
+    {
+      "component": "vm_sampler_supervisor.py",
+      "new": "config[\"guest_vcpus\"] != 1",
+      "old": "config[\"guest_vcpus\"] != 4"
+    },
+    {
+      "component": "vm_sampler_supervisor.py",
+      "new": "\"-smp\", \"1\"",
+      "old": "\"-smp\", \"4\""
+    },
+    {
+      "component": "manage.py",
+      "new": "config['guest_vcpus']==1",
+      "old": "config['guest_vcpus']==4"
+    },
+    {
+      "component": "guest_entry.py",
+      "new": "resource['cpu_count']==1",
+      "old": "resource['cpu_count']==4"
+    },
+    {
+      "component": "make_seed.py",
+      "new": "'guest_vcpus':1",
+      "old": "'guest_vcpus':4"
+    }
+  ],
+  "scope": "All original RAM/disk/process/network/security floors retained. Snapshot source is an extra seed member; current exact guest entry/generator/wrapper supplied. Unique fresh cloud-init instance and owned child required."
+}

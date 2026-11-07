@@ -1,0 +1,40 @@
+{
+  "status": "bounded local default-enabled-GC lifetime/memory comparison",
+  "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "gc_thresholds_unchanged": [
+    2000,
+    10,
+    0
+  ],
+  "results": [
+    {
+      "source": "original-anchored_metadata.py",
+      "snapshots": 80,
+      "files_per_snapshot": 100,
+      "live_expected_maps": 80,
+      "traced_bytes_above_start": 8473628,
+      "traced_peak_bytes": 8489547,
+      "elapsed_seconds": 0.46940312488004565,
+      "collections_per_generation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "source": "anchored_metadata.py",
+      "snapshots": 80,
+      "files_per_snapshot": 100,
+      "live_expected_maps": 0,
+      "traced_bytes_above_start": 24812,
+      "traced_peak_bytes": 133499,
+      "elapsed_seconds": 0.4562547500245273,
+      "collections_per_generation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "limits": "100files/80snapshots, the interpreter recorded above; not productionRSS or exact proof of guestOOMcausality. Traceback/lifetime checks and output equivalence are separate fixtures. No active checker or Thor changes."
+}

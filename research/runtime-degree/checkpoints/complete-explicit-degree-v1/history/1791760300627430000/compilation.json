@@ -1,0 +1,31 @@
+{
+  "module": "CompleteDraw.PublicBridge",
+  "command_threads": 2,
+  "memory_cap_mib": 8192,
+  "source_sha256": "3164d3acc907cf39d25f2836abd17eaf4f1c14dcf3ec57f3d05dcc76afdff116",
+  "returncode": 1,
+  "seconds": 23.618,
+  "lean_path": [
+    ".local/further-gap/draw-runtime-next/complete-draw/objects",
+    ".local/further-gap/draw-runtime-next/reference-trial-cost/objects",
+    ".local/further-gap/draw-runtime-next/unit-trial-cost/objects",
+    ".local/further-gap/draw-runtime-next/repair-trial-cost/objects",
+    ".local/further-gap/draw-runtime-next/affine-mapwith/objects",
+    ".local/further-gap/draw-runtime-next/printer-next/objects",
+    ".local/further-gap/draw-runtime-next/initial-degree/local-initial-02/objects",
+    ".local/further-gap/draw-runtime-next/initial-degree/greedy-final-01/objects",
+    ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects",
+    ".local/further-gap/draw-runtime-next/retry-cost/objects",
+    ".local/further-gap/draw-runtime-next/objects",
+    ".local/checkpoint12/affine-degree-batch-staging-02/evidence/lib/lean",
+    "formal/.lake/build/lib/lean",
+    "formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean",
+    "formal/.lake/packages/Qq/.lake/build/lib/lean",
+    "formal/.lake/packages/aesop/.lake/build/lib/lean",
+    "formal/.lake/packages/batteries/.lake/build/lib/lean",
+    "formal/.lake/packages/importGraph/.lake/build/lib/lean",
+    "formal/.lake/packages/mathlib/.lake/build/lib/lean",
+    "formal/.lake/packages/plausible/.lake/build/lib/lean",
+    "formal/.lake/packages/proofwidgets/.lake/build/lib/lean"
+  ]
+}

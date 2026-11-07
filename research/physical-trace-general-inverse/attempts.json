@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralInverse",
+  "verified_attempt": "attempt-02",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "4b4c1f35ec482591f72c82ce77b5682e8314232be5045f3379385b058bf88a4d",
+      "compile_returncode": 1,
+      "compile_seconds": 152.18894320819527,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "eb5c24c8a90433ea15f8905baca5a04ddfca4d170d39ee320e888bc63f518242",
+      "compile_returncode": 0,
+      "compile_seconds": 81.2072106669657,
+      "audit_returncode": 0,
+      "audit_seconds": 123.5685252500698,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

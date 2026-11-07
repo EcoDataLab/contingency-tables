@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "ef489fe5fdf5213604a4fa9e015d33fef9105fd7",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.Walk"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.Walk",
+      "source": "research/physical-trace-walk/formal/ResearchPhysicalTraceJoin/Walk.lean",
+      "source_sha256": "a54f8e7e7dc0950ec8812093f47f297da9629f171c7a3b0ffbaeb4cfc18eec9f",
+      "returncode": 0,
+      "seconds": 44.653868583031,
+      "olean_sha256": "a97af250ec2596b89249adf73fa433bb582876ee6e6cd655349ae49d930f3387"
+    }
+  ],
+  "audit_seconds": 80.6424754159525,
+  "audit_sha256": "7a179b485f0fd95e65d9bb6c4969a963e4e13cd6c311341364e6128a1b8f578b",
+  "audit_driver_sha256": "1ca903a24b7e7c59cf5c983a59ce85442e33720b865e17c1c13e8229b6ccfc84",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "a47b951e6141e36fb84845cd00b3c8311e16b44f79faa212885f57dc63343330",
+  "declaration_count": 9,
+  "theorem_count": 4,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.flatWordWalk_law",
+      "closure_size": 6784,
+      "statement": "∀ {X : Type u_1} [inst : Fintype X] [inst_1 : DecidableEq X] {B : ℕ} (step : X → (Fin B → Bool) → X) (start : X)\n  (T : ℕ),\n  OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalTraceJoin.flatWordWalk step start T) =\n    OAI.ContingencyTables.FirstSuccess.walkLaw\n      (fun x => OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw (step x)) start\n      T",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.joinedWalkWord_law",
+      "closure_size": 11972,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N hIn J hExit T : ℕ),\n  OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n      (Math115.PhysicalTraceJoin.joinedWalkWord r c U L hr hc start N hIn J hExit T) =\n    OAI.ContingencyTables.FirstSuccess.walkLaw\n      (fun d => Math115.PhysicalTraceJoin.actualJoinedLaw r c U L hr hc d N hIn J hExit) start T",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.scheduledJoinedWalkWord_accuracy",
+      "closure_size": 44329,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    7 ≤ L →\n      ∀\n        (hp :\n          2 ≤\n            Fintype.card\n              (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n        (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (t T : ℕ),\n        OAI.ContingencyTables.FirstSuccess.variation\n            (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n              (Math115.PhysicalTraceJoin.joinedWalkWord r c U L hr hc start (t + 2) (t + 2)\n                (Math115.PhysicalStarBudget.attempts OAI.ContingencyTables.CompletionCounts.dimensionAllowance t)\n                (Math115.PhysicalStarBudget.precision OAI.ContingencyTables.CompletionCounts.dimensionAllowance t) T))\n            (OAI.ContingencyTables.FirstSuccess.walkLaw (Math115.PhysicalTraceJoin.idealJoinedLaw r c U L hr hc hp)\n              start T) ≤\n          ↑T * Math115.CompletionRetryBudget.dyadic t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

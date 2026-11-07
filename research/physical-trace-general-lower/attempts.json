@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralInverseLower",
+  "verified_attempt": "attempt-01",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "9fd2ca995e5d33b6112a453be01bd3f978a3be702f29b2bb2eb500d27370b494",
+      "compile_returncode": 0,
+      "compile_seconds": 36.57210266729817,
+      "audit_returncode": 0,
+      "audit_seconds": 68.46555995941162,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

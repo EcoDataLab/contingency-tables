@@ -1,0 +1,49 @@
+{
+  "files_sha256": {
+    "README.md": "3796e60a0f3baef4402e279a11b4b6835d4e768ad2be7ba35cf933248dae66d7",
+    "derived-sources.json": "fd8c25dee187ed26d7d3abacfaa519782572aa2305cd753462d836fa5ea08db2",
+    "evidence/default-gc-result.json": "26882a606567af98bed551f11a4ab3515a87b19eee6a6c000a51d53ccb77bf94",
+    "evidence/long04-terminal.json": "5afc03448c6c3ab94d4a9570faf3d530f848e20787c5589e4bce70b1be828ffd",
+    "independent-review.md": "5da85ed2c0f157861627d9a18206925a4f22d3b62c2f4bdeeb423e574c563e63",
+    "reproduction-references.json": "dfb67924f312b2f9bda83751853d928732b6ecdb0a77a1b6feb58f10b06de9f0",
+    "source/anchored_metadata.py": "55a3cef696f463fa4e9f54510498d61d99855275a95716431615299bc9b4cbde",
+    "source/anchored_metadata.py.diff": "9e97b93d45986180046ba86d6e7ae5a478dbd49abf61a0df935034c7f83c676f",
+    "source/prepare_memos.py.diff": "6f5b27c290bb0031e3ff948d2c97acefd301a58f52e149c188e234d4a68c88c6",
+    "source/snapshots.py": "2e23b335d43cad6a637d1ff9b0b1e5ee4e5ee45b4cc1458c53f2ac8b96f8fa56",
+    "source/snapshots.py.diff": "c8999f3546aa9ce7f21b713ab161d29a6528e8d705a12f3eb958f4dcf83add54",
+    "source/versioned_runner.py.diff": "280370bdf44789da93b1282626201618876759c3a5a60d7954fdd53a13e56328",
+    "tests/test_memory_fix.py": "52da9a0c3cdf6f8f1ad97863996becb2f038ee8e2d2bf6102f4d7840c479bafa",
+    "tools/default_gc_diagnostic.py": "f911a09b3da21ee4f3718fa7d933ba275e1770f9476708ec69fb2f25d45fa62d",
+    "tools/prepare_candidate.py": "caac3d4f6c4094c1a2f3bd04fae29f1f88b59cca917e42316713f5a772a87c09"
+  },
+  "independent_review": {
+    "native_preparation_or_retry_executed": false,
+    "path": "independent-review.md",
+    "status": "passed_source_fixtures_assembly"
+  },
+  "native_repaired_preparation_executed": false,
+  "native_repaired_strict_replay_executed": false,
+  "normal_suite_test_bridge": {
+    "path": "tests/test_comparator_metadata_memory.py",
+    "sha256": "c984728f66a46cf4db50185e7e8144dc8eaa049dd42356909582076e530a396b"
+  },
+  "schema_version": 1,
+  "scope": "Historical 679-module strict sampler; no submitted Lean source, observer, sandbox or cache-policy changes",
+  "status": "source_only_repair_native_preparation_and_retry_unrun",
+  "strict_acceptance": false,
+  "validation": {
+    "command": "python3 -B -m unittest discover -s tests -p test_comparator_metadata_memory.py -v",
+    "default_gc_diagnostic": {
+      "command": "python3 -B research/strict-sampler-checkpoints/metadata-memory-v1/tools/default_gc_diagnostic.py",
+      "files": 100,
+      "fixed_live_expected_maps": 0,
+      "original_live_expected_maps": 80,
+      "production_rss_or_sole_oom_causation_established": false,
+      "snapshots": 80,
+      "status": "passed_local_cpython_3.14.3_default_gc_enabled"
+    },
+    "includes": "lifetime/output/rejection/FD-cleanup, AST deltas, runtime/preparation pins, source assembly and tamper rejection",
+    "offline_test_count": 15,
+    "status": "passed"
+  }
+}

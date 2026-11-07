@@ -1,0 +1,11 @@
+'OAI.ContingencyTables.IntegerWeightedTransport.correctionKernel_eq_excess_moment_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'OAI.ContingencyTables.IntegerWeightedTransport.correctionKernel_truncate_eq_valid_moment_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.RetainedPhysicalCap.physical_correction_eq_moment_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Math115.RetainedPhysicalCap.physical_correction_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.RetainedPhysicalCap.physical_correction_le_adjacent' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,7 @@
+{
+  "original_source_sha256": "c1ee0954f94c9bbabeaaa83dcbedc0831c97d21a07cdc041412ce2b9dd494bf5",
+  "wordChunk_literal_DAG_equal_ignoring_whitespace": true,
+  "completeWordRows_literal_DAG_equal_ignoring_whitespace": true,
+  "wordChunks_literal_DAG_equal_after_named_helper_aliases": true,
+  "scope": "Syntactic source binding of thin helpers. Original import binding requires independent complete-import compilation."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "review_kind": "Separate AI saved-evidence publication review; no independent human or external reproduction",
+  "input_proposal_manifest_sha256": "e7b0883996b60959e7e26d1c684b739b636541da8709ffeef8198ad2de0136ff",
+  "published_manifest_sha256": "8bedf53a22dda744a1d413d7c6cdc2f6dd960b1daaa7588b3eb739f7ecc95f7c",
+  "checks": [
+    "All nineteen proposal file digests and byte counts matched before promotion",
+    "All four phase exits are zero in the sealed capture; runtime and admitted plan have matching bindings",
+    "Every guest stage stream is retained; seven host files were locally rehashed, the stopped guest disk was deliberately retained remotely",
+    "Public subset excludes raw runtime inventory, VM disk, host control scripts and private host paths",
+    "Published README and receipt state no full proof compilation, export, kernel replay or comparison"
+  ],
+  "edits_to_proposal": [
+    "Updated pending publication status and added this review link",
+    "Rephrased an internal retry-authorization sentence as an evidence limit"
+  ],
+  "new_execution": false,
+  "strict_sampler_acceptance": false
+}

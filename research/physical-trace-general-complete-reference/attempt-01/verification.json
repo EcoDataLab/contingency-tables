@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "71ea4ee9926e2e5248ab218261efb0c058f1b2cd",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralCompleteReference"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralCompleteReference",
+      "source": "research/physical-trace-general-complete-reference/formal/ResearchPhysicalTraceJoin/GeneralCompleteReference.lean",
+      "source_sha256": "fdb2fc1c42f664fb4d78eef167108e6f8b61c2cfa72eb58d0f8b63ac7975ae79",
+      "returncode": 0,
+      "seconds": 68.14514466701075,
+      "olean_sha256": "8cecfd57e4c914ea3b6d9631012671222dec440a0d0251587937d26e4f416723"
+    }
+  ],
+  "audit_seconds": 134.9125013751909,
+  "audit_sha256": "c11a53d9a33e73122c3aad3fcef252d6456a8caf424cf10c24a5130ac37ce378",
+  "audit_driver_sha256": "5354007b50bf696fe7c39233e73a3a2fb28b20edc197ac4add00c4a40de7ef84",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "198e5950c14744aa8f50505881e39a0e82a4aabc9424b67b59a32ee5aaae2f68",
+  "declaration_count": 8,
+  "theorem_count": 5,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveReferenceWord_law",
+      "closure_size": 44226,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j)\n  (hb : Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference)\n  (t : ℕ),\n  Math115.PhysicalTraceJoin.positiveReferenceWordLaw xs ys htotal hb t =\n    Math115.PhysicalTraceJoin.positiveTraceLinearScheduledLaw xs ys hb\n      (Math115.PhysicalTraceJoin.positiveTraceInitialStart xs ys htotal hb)\n      (Math115.PhysicalTraceJoin.positiveTraceFallback xs ys htotal) t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveReferenceWord_accuracy",
+      "closure_size": 45653,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j)\n  (hb : Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference)\n  (t : ℕ),\n  OAI.ContingencyTables.FirstSuccess.variation (Math115.PhysicalTraceJoin.positiveReferenceWordLaw xs ys htotal hb t)\n      OAI.ContingencyTables.FirstSuccess.uniformLaw ≤\n    Math115.CompletionRetryBudget.dyadic t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

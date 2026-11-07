@@ -1,0 +1,17 @@
+<repo>/.local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/DenseTransitionDegree.lean:83:106: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+Math115.ReferenceRuntimeNext.typed_denseFlatWordWalk :
+  Typed flatWordWalkRealizer 13225564983293436715415269745489623353636886812393638016
+'Math115.ReferenceRuntimeNext.typed_denseFlatWordWalk' depends on axioms: [propext, Classical.choice, Quot.sound]
+Math115.ReferenceRuntimeNext.typed_flatMetropolisStep :
+  Typed flatMetropolisStepRealizer 34423950414714324378978561272174540785214029824
+'Math115.ReferenceRuntimeNext.typed_flatMetropolisStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+Math115.ReferenceRuntimeNext.typed_denseAdvance :
+  Typed advanceRealizer 3304699239812575140381941882128755915380546863104
+'Math115.ReferenceRuntimeNext.typed_denseAdvance' depends on axioms: [propext, Classical.choice, Quot.sound]
+Math115.ReferenceRuntimeNext.typed_denseWalkWords :
+  Typed walkWordsRealizer 6609398479625150280763883764257511830761093726209
+'Math115.ReferenceRuntimeNext.typed_denseWalkWords' depends on axioms: [propext, Classical.choice, Quot.sound]
+Math115.ReferenceRuntimeNext.typed_denseWordChunks : Typed wordChunksRealizer 1544
+'Math115.ReferenceRuntimeNext.typed_denseWordChunks' depends on axioms: [propext, Classical.choice, Quot.sound]

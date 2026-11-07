@@ -1,0 +1,8 @@
+import Math115.ShapeDegreeBound
+import Math115.RetainedRoot
+import Research.RetainedRootTransport
+import Research.RetainedRootPhysical
+import Research.RetainedRootShifts
+import Research.RetainedRootNonnegative
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [Math115.ShapeDegreeBound, Math115.RetainedRoot, Research.RetainedRootTransport, Research.RetainedRootPhysical, Research.RetainedRootShifts, Research.RetainedRootNonnegative] headlines [Math115.RetainedRoot.interior_cap, Math115.RetainedRoot.endpoint_cap, Math115.RetainedRoot.fullCoefficient_bound, Math115.RetainedRoot.rational_uniform_d13, Math115.RetainedRoot.dyadic_uniform_d13, Math115.RetainedRoot.rational_uniform_d10, Math115.RetainedRoot.dyadic_uniform_d10, Math115.RetainedRootPhysical.adjacent_physical_leaf_transport_retained, Math115.RetainedRootPhysical.adjacent_physical_box_leaf_transport_retained, Math115.RetainedRootPhysical.retainedRootCoefficient_shift, OAI.ContingencyTables.IntegerWeightedTransport.retainedRootCoefficient_nonnegative_limit]

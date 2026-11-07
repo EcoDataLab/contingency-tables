@@ -1,0 +1,14 @@
+{
+  "status": "ordinary_compilation_and_named_audits_passed",
+  "publication_review": "passed; see review-status.json for separate source review and primary-agent publication scope",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "exact_retry_degree": 42914304,
+  "division_and_quotient_degree": 4,
+  "retry_named_axiom_reports": 25,
+  "division_named_axiom_reports": 6,
+  "observed_platform": "macOS arm64 fresh candidate compilation, authenticated preserved native import objects and existing official/pinned caches reused",
+  "reproduction_commands_executed": false,
+  "scope": "Exact original retryWords cost plus encoded output for every RetryData; conservative generic-composition upper allowance. No full draw/runtime degree, measured sampler latency, fresh Linux/default-target verification, exhaustive environment audit or strict Comparator acceptance."
+}

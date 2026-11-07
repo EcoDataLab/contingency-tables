@@ -1,0 +1,22 @@
+--- initial.lean
++++ checked.lean
+@@ -19,0 +20,9 @@
++
++private theorem outerCorrectionSuccessAtCutoff {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ)
++    (U : ℕ) (hU : U = 11 * dimensionAllowance (I := Fin m) (J := Fin n) * (m + n - 2))
++    [Nonempty (DefectVertices r c U 7)] (hr : ∀ i, 0 < r i) (hc : ∀ j, 0 < c j) :
++    let p := Fintype.card (Cells (firstPaperSmall r c U))
++    (inverseSupportAllowance r c U : ℚ) / ((2 * (p * (p - 1)) : ℕ) : ℚ) ≤
++      1 - (terminalIdealCorrectedLaw r c U 7).mass none := by
++  subst U
++  exact actualShape_terminalCorrected_success_lower r c hr hc
+@@ -53 +62,2 @@
+-  have hc0 := inverseSupportAllowance_positive r c U hb'.1 hb'.2.1 (by omega)
++  have hc0 := inverseSupportAllowance_positive (filteredMargin xs) (filteredMargin ys)
++    (positiveTraceCutoff xs ys) hb'.1 hb'.2.1 (by have hp := hb'.2.2.1; omega)
+@@ -65,4 +75 @@
+-      unfold positiveTraceCorrectionSuccess
+-      change (inverseSupportAllowance r c U : ℚ) / _ ≤ _
+-      subst U
+-      exact actualShape_terminalCorrected_success_lower r c
++      exact outerCorrectionSuccessAtCutoff r c U hscale

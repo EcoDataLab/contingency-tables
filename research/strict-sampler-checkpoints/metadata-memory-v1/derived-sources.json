@@ -1,0 +1,34 @@
+{
+  "source/prepare_memos.py": {
+    "reference": "previous_preparation",
+    "replacements": [
+      {
+        "new": "V2='b893f9af52bbe33c70eb883514a0e91ab50f7f1ed755c79202ef25625ee21e5f'",
+        "old": "V2='50b13329f7de7ba59f007cdc382aa317e2984d14104bda0bd37d1a9c9ecf78f3'"
+      },
+      {
+        "new": "SNAPSHOT='2e23b335d43cad6a637d1ff9b0b1e5ee4e5ee45b4cc1458c53f2ac8b96f8fa56'",
+        "old": "SNAPSHOT='c875c20375a1bf3362ac836126c7ddb249b0669ef9b2af332691f89f6278a193'"
+      }
+    ],
+    "sha256": "0e0b4e57db7973209048655edcebb5f7171c3800aecbcfb5ee2be795abdfe078"
+  },
+  "source/versioned_runner.py": {
+    "reference": "previous_candidate",
+    "replacements": [
+      {
+        "new": "Memory-repair candidate: unrun; metadata lifetime fix plus reviewed observer v2.",
+        "old": "Private version3 candidate: uninstalled; metadata v2 plus reviewed observer v2."
+      },
+      {
+        "new": "METADATA_SHA = '55a3cef696f463fa4e9f54510498d61d99855275a95716431615299bc9b4cbde'",
+        "old": "METADATA_SHA = '6eb447ff60a09d13bc134252e490bd99e7a15b92c7436a0db5a677269b91a3a5'"
+      },
+      {
+        "new": "GUARD_VERSION = \"anchored-selected-cache-memory-v1\"",
+        "old": "GUARD_VERSION = \"anchored-selected-cache-v2\""
+      }
+    ],
+    "sha256": "b893f9af52bbe33c70eb883514a0e91ab50f7f1ed755c79202ef25625ee21e5f"
+  }
+}

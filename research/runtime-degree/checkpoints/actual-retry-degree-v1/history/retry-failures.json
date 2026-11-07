@@ -1,0 +1,53 @@
+{
+  "attempted_failures": [
+    {
+      "module": "RetryRuntime.ListSeed",
+      "source_sha256": "5710dbdcd7f069eabb17cefc219664e5c1a707572af1a37d45c026029bb9a63d",
+      "exit_code": -6,
+      "seconds": 26.432,
+      "reason": "M4096 interpreter memory limit while loading reused imports; no object",
+      "diagnostics": "history/retry-1"
+    },
+    {
+      "module": "RetryRuntime.WordChunkDegree",
+      "source_sha256": "5ff6f7ce434e12add8af0f9eb70d52779f822a2471e2b078519d4fdca3fc0fa7",
+      "exit_code": 1,
+      "seconds": 15.396,
+      "reason": "Wrong List.length_take_le direction in supplied-prefix semantic lemma; repaired with min_le_right",
+      "diagnostics": "history/retry-4"
+    },
+    {
+      "module": "RetryRuntime.RangeDegree",
+      "source_sha256": "4aa46ecdcdd4fa1aa316425c17fdb1d3f5513fb1a982891b697e2b8d58a66d74",
+      "exit_code": 1,
+      "seconds": 18.883,
+      "reason": "Stale relocated typed_head namespace; repaired",
+      "diagnostics": "history/retry-6"
+    },
+    {
+      "module": "RetryRuntime.WordChunksDegree",
+      "source_sha256": "a346a33151ef93b9b5372895e6346b49a74d0e5fe9eb08a5c9be404f7ee255fc",
+      "exit_code": 1,
+      "seconds": 15.506,
+      "reason": "Unresolved List Bool codec metavariable in row helper; annotated",
+      "diagnostics": "history/retry-9"
+    },
+    {
+      "module": "RetryRuntime.WordChunksDegree",
+      "source_sha256": "d77cd16628a133eaacb2898661052742f8a79ecb395c0b3ab811804e4372bf58",
+      "exit_code": 1,
+      "seconds": 20.402,
+      "reason": "Missing explicit range-degree parameter and composition simplification; annotated",
+      "diagnostics": "history/retry-10"
+    },
+    {
+      "module": "RetryRuntime.WordChunksDegree",
+      "source_sha256": "bb0ccc4ddfd0ed5648e964749ec90eba424ba63cd6ab59cada3df258bc1743a2",
+      "exit_code": 1,
+      "seconds": 20.669,
+      "reason": "Polynomial.eval_X not reduced in length bound; simplified",
+      "diagnostics": "history/retry-11"
+    }
+  ],
+  "source_snapshot_boundary": "Failed candidate source hashes and full small diagnostics are retained. Failed source bytes were not snapshotted by the original runner and are not invented here."
+}

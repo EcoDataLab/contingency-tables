@@ -3,9 +3,10 @@
 from collections import defaultdict
 from fractions import Fraction
 from itertools import product
-from math import factorial
+from math import factorial, lcm
 import random
 import unittest
+from unittest.mock import patch
 
 from contingency115.tables import (ComputationBudgetExceeded, ExactTableSampler,
                                   ExactWeightedTableSampler, InfeasibleTableError,
@@ -40,6 +41,44 @@ class PrescribedRank:
 class ForbiddenRNG:
     def randrange(self, stop):
         raise AssertionError("no random draw is allowed before the exact calculation succeeds")
+
+
+class TraceRandom(random.Random):
+    def __init__(self, seed):
+        super().__init__(seed)
+        self.trace = []
+
+    def randrange(self, stop):
+        value = super().randrange(stop)
+        self.trace.append((stop, value))
+        return value
+
+
+def brute_weighted_sample(problem, weights, rng):
+    """Enumerated suffix-weight oracle, independent of the production DP/cache."""
+    candidates = brute_tables(problem)
+    rows = []
+    for i in range(problem.shape[0]):
+        masses = defaultdict(Fraction)
+        for table in candidates:
+            mass = Fraction(1)
+            for k in range(i, problem.shape[0]):
+                for j, value in enumerate(table[k]):
+                    mass *= weights.activities[k][j] ** value
+                    if weights.factorial_weight:
+                        mass /= factorial(value)
+            masses[table[i]] += mass
+        branches = sorted(row for row, mass in masses.items() if mass)
+        denominator = lcm(*(masses[row].denominator for row in branches))
+        integer_masses = [int(masses[row] * denominator) for row in branches]
+        rank = rng.randrange(sum(integer_masses))
+        for row, mass in zip(branches, integer_masses):
+            if rank < mass:
+                rows.append(row)
+                candidates = [table for table in candidates if table[i] == row]
+                break
+            rank -= mass
+    return tuple(rows)
 
 
 def exhaustive_random_law(sample):
@@ -211,6 +250,110 @@ class CompletionCountTests(unittest.TestCase):
 
 
 class WeightedLawTests(unittest.TestCase):
+    def test_prescribed_integer_boundaries_keep_unreduced_stops(self):
+        # All table masses are 16. Reducing by their common gcd would change
+        # root stop 48 to 3 and the deterministic second-row stop 4 to 1.
+        problem = TableProblem([2, 2], [2, 2])
+        sampler = ExactWeightedTableSampler(problem, ProductWeights([[2, 2], [2, 2]]))
+        for rank, first_row in ((0, (0, 2)), (15, (0, 2)), (16, (1, 1)),
+                                (31, (1, 1)), (32, (2, 0)), (47, (2, 0))):
+            class BoundaryRNG:
+                def __init__(self):
+                    self.requests = iter(((48, rank), (4, 3)))
+                    self.calls = 0
+
+                def randrange(inner, stop):
+                    expected_stop, value = next(inner.requests)
+                    self.assertEqual(stop, expected_stop)
+                    inner.calls += 1
+                    return value
+
+            rng = BoundaryRNG()
+            self.assertEqual(sampler.sample(rng), (first_row, tuple(2 - x for x in first_row)))
+            self.assertEqual(rng.calls, 2)
+
+    def test_seeded_rng_trace_matches_enumerated_suffix_oracle(self):
+        fixtures = [
+            TableProblem([2, 2], [1, 1, 2]),
+            TableProblem([2, 2], [1, 1, 2], upper_bounds=[[1, 1, 1], [1, 1, 2]],
+                         lower_bounds=[[0, 0, 1], [0, 0, 0]]),
+            TableProblem([1, 1, 1], [1, 2], upper_bounds=[[1, 1], [1, 1], [0, 1]]),
+        ]
+        for problem in fixtures:
+            for factorial_weight in (False, True):
+                for zero in (False, True):
+                    activities = [[Fraction(i + j + 1, j + 2)
+                                   for j in range(problem.shape[1])]
+                                  for i in range(problem.shape[0])]
+                    if zero:
+                        activities[0][0] = 0
+                    weights = ProductWeights(activities, factorial_weight)
+                    sampler = ExactWeightedTableSampler(problem, weights)
+                    actual, expected = TraceRandom(115), TraceRandom(115)
+                    with self.subTest(problem=problem, factorial=factorial_weight, zero=zero):
+                        self.assertEqual([sampler.sample(actual) for _ in range(30)],
+                                         [brute_weighted_sample(problem, weights, expected)
+                                          for _ in range(30)])
+                        self.assertEqual(actual.trace, expected.trace)
+
+    def test_choice_preparation_is_lazy_reused_and_sampler_local(self):
+        import contingency115.tables as tables
+
+        problem = TableProblem([2, 2], [2, 2])
+        weights = ProductWeights([[2, 2], [2, 2]])
+        sampler = ExactWeightedTableSampler(problem, weights)
+        with patch.object(tables, "_prepare_rational_choice",
+                          wraps=tables._prepare_rational_choice) as prepare:
+            sampler.normalizer()
+            sampler.probability(((0, 2), (2, 0)))
+            stats = sampler.stats
+            self.assertEqual(prepare.call_count, 0)
+            rng = TraceRandom(115)
+            sampler.sample(rng)
+            self.assertEqual(prepare.call_count, 2)
+            cached = dict(sampler._choices)
+            sampler.sample(TraceRandom(115))
+            self.assertEqual(prepare.call_count, 2)
+            self.assertEqual(sampler.stats, stats)
+            for state, choice in cached.items():
+                self.assertIs(sampler._choices[state], choice)
+                self.assertIsInstance(choice, tuple)
+            other = ExactWeightedTableSampler(problem, weights)
+            self.assertEqual(other._choices, {})
+
+    def test_zero_margin_rows_still_each_request_one_rng_integer(self):
+        sampler = ExactWeightedTableSampler(TableProblem([0, 0, 0], [0, 0]),
+                                            ProductWeights([[0, 0]] * 3, True))
+        rng = PrescribedRank(0, 1)
+        self.assertEqual(sampler.sample(rng), ((0, 0),) * 3)
+        self.assertEqual(rng.calls, 3)
+
+    def test_deterministic_rational_and_large_integer_stops_are_preserved(self):
+        for activity, stop in ((Fraction(3, 7), 3), (2**500, 2**500)):
+            sampler = ExactWeightedTableSampler(TableProblem([1], [1]), ProductWeights([[activity]]))
+            rng = PrescribedRank(stop - 1, stop)
+            self.assertEqual(sampler.sample(rng), ((1,),))
+            self.assertEqual(rng.calls, 1)
+            self.assertEqual(sampler._choices[sampler._engine.root], (stop,))
+            with self.assertRaisesRegex(AssertionError, "outside the requested range"):
+                sampler.sample(PrescribedRank(stop, stop))
+
+    def test_weighted_budget_failure_is_sticky_without_preparing_choices(self):
+        problem = TableProblem([3, 3], [3, 3])
+        weights = ProductWeights([[1, Fraction(1, 2)], [1, 1]], True)
+        for options in ({"max_states": 1}, {"max_transitions": 2}):
+            sampler = ExactWeightedTableSampler(problem, weights, **options)
+            for operation in (sampler.normalizer, lambda: sampler.sample(ForbiddenRNG()),
+                              sampler.normalizer):
+                with self.assertRaises(ComputationBudgetExceeded):
+                    operation()
+                self.assertEqual(sampler._choices, {})
+                self.assertFalse(sampler.stats["complete"])
+            stats = sampler.stats
+            with self.assertRaises(ComputationBudgetExceeded):
+                sampler.sample(ForbiddenRNG())
+            self.assertEqual(sampler.stats, stats)
+
     def test_worker_and_table_laws_are_different(self):
         problem = TableProblem([2, 2], [2, 2])
         tables = list(ExactTableSampler(problem).tables())
@@ -276,9 +419,11 @@ class WeightedLawTests(unittest.TestCase):
         self.assertEqual(zero.normalizer(), 0)
         with self.assertRaises(ZeroMassError):
             zero.sample(ForbiddenRNG())
+        self.assertEqual(zero._choices, {})
         infeasible = ExactWeightedTableSampler(TableProblem([1], [2]), ProductWeights([[1]]))
         with self.assertRaises(InfeasibleTableError):
             infeasible.sample(ForbiddenRNG())
+        self.assertEqual(infeasible._choices, {})
 
     def test_weighted_budgets_and_transpose(self):
         problem = TableProblem([2, 3], [2, 1, 2])

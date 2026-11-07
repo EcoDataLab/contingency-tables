@@ -1,0 +1,28 @@
+{
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "pinned_mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "imports": [
+    {
+      "module": "Math115.FiniteStarTrace",
+      "source": "research/repair-accept/formal/Math115/FiniteStarTrace.lean",
+      "source_sha256": "babb90906ea18622aa53a71df64f35bc2ffbafdc885cfcb5beab5aaa4c315fe0",
+      "olean_sha256": "d394a517304b7190c3a6681ba945d4fd6c301a11a91e3446e62c382f2f541e67"
+    },
+    {
+      "module": "Research.WeightedHarmonicTrace",
+      "source": "research/physical-defect-trace/formal/Research/WeightedHarmonicTrace.lean",
+      "source_sha256": "afead19468e408d9ef6c3469fdecfc4060698a98f01cfc1858aa7f842105af77",
+      "olean_sha256": "8235eeb0813e78a34b41ec706e5e3bbc50761d795465bffaf721e438cd0db58e"
+    },
+    {
+      "module": "ResearchAudit.EnvironmentAudit",
+      "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+      "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+    }
+  ],
+  "baseline_public_receipt": "research/aggregate-defect-trace/results/verification.json",
+  "baseline_public_receipt_sha256": "593d339f0ff589cada6385c47aa9b03b88b6f41333e286d508bc9ba78eb4ef99",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554"
+}

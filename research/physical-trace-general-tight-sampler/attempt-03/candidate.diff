@@ -1,0 +1,52 @@
+--- initial.lean
++++ checked.lean
+@@ -232 +232 @@
+-  if hd : positiveTraceBranch xs ys = .deterministic then
++  if _hd : positiveTraceBranch xs ys = .deterministic then
+@@ -243,0 +244,22 @@
++lemma tightHybridSampler_reference
++    (htotal : (∑ i,listMargin xs i) = ∑ j,listMargin ys j)
++    (hb : positiveTraceBranch xs ys = .reference) (t : ℕ) :
++    tightHybridSampler xs ys htotal t =
++      ⟨tightPositiveReferenceWordWidth xs ys t,tightPositiveReferenceWord xs ys htotal hb t⟩ := by
++  have hd : ¬positiveTraceBranch xs ys = .deterministic := by rw [hb]; decide
++  simp only [tightHybridSampler,dite_eq_right hd,dite_eq_left hb]
++
++lemma tightHybridSampler_deterministic
++    (htotal : (∑ i,listMargin xs i) = ∑ j,listMargin ys j)
++    (hd : positiveTraceBranch xs ys = .deterministic) (t : ℕ) :
++    tightHybridSampler xs ys htotal t = ⟨0,positiveDeterministicWord xs ys htotal⟩ := by
++  simp only [tightHybridSampler,dite_eq_left hd]
++
++lemma tightHybridSampler_legacy
++    (htotal : (∑ i,listMargin xs i) = ∑ j,listMargin ys j)
++    (hd : positiveTraceBranch xs ys ≠ .deterministic)
++    (hb : positiveTraceBranch xs ys ≠ .reference) (t : ℕ) :
++    tightHybridSampler xs ys htotal t =
++      ⟨positiveLegacyWordWidth xs ys t,positiveLegacyWord xs ys htotal t⟩ := by
++  simp only [tightHybridSampler,dite_eq_right hd,dite_eq_right hb]
++
+@@ -248 +270 @@
+-  · simp only [tightHybridSampler,hybridSampler,dif_pos hd,le_refl]
++  · simp only [tightHybridSampler,hybridSampler,dite_eq_left hd,le_refl]
+@@ -250 +272 @@
+-  · simp only [tightHybridSampler,hybridSampler,dif_neg hd,dif_pos hb]
++  · simp only [tightHybridSampler,hybridSampler,dite_eq_right hd,dite_eq_left hb]
+@@ -252 +274 @@
+-  · simp only [tightHybridSampler,hybridSampler,dif_neg hd,dif_neg hb,le_refl]
++  · simp only [tightHybridSampler,hybridSampler,dite_eq_right hd,dite_eq_right hb,le_refl]
+@@ -258,0 +281 @@
++  unfold tightHybridWordLaw hybridWordLaw
+@@ -260 +283,2 @@
+-  · simp only [tightHybridWordLaw,hybridWordLaw,tightHybridSampler,hybridSampler,dif_pos hd]
++  · rw [tightHybridSampler_deterministic xs ys htotal hd,
++      hybridSampler_deterministic xs ys htotal hd]
+@@ -262,2 +286,2 @@
+-  · simp only [tightHybridWordLaw,hybridWordLaw,tightHybridSampler,hybridSampler,
+-      dif_neg hd,dif_pos hb,bundledWordLaw]
++  · rw [tightHybridSampler_reference xs ys htotal hb,hybridSampler_reference xs ys htotal hb]
++    change tightPositiveReferenceWordLaw xs ys htotal hb t = positiveReferenceWordLaw xs ys htotal hb t
+@@ -265,2 +289 @@
+-  · simp only [tightHybridWordLaw,hybridWordLaw,tightHybridSampler,hybridSampler,
+-      dif_neg hd,dif_neg hb]
++  · rw [tightHybridSampler_legacy xs ys htotal hd hb,hybridSampler_legacy xs ys htotal hd hb]

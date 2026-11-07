@@ -1,0 +1,18 @@
+{
+  "actual_runtime_sha_and_plan_binding_match": true,
+  "all_stage_exit_codes_zero": true,
+  "guest_regular_archive_members_authenticated": 13,
+  "host_inventory_members": 8,
+  "host_members_downloaded_and_rehashed": 7,
+  "independent_public_reproduction": false,
+  "no_research_processes_at_collection": true,
+  "owned_qemu_reaped": true,
+  "preserved_pins_equal": true,
+  "prior_failure_packets_unchanged": true,
+  "public_exact_guest_files": 11,
+  "public_projected_guest_files": 1,
+  "status": "passed_saved_evidence_publication_review",
+  "strict_sampler_acceptance": false,
+  "submitted_build_initially_zero": true,
+  "publication_review": "publication-review.json"
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "Marked.Survivor",
+    "Marked.L2"
+  ],
+  "compilation": [
+    {
+      "module": "Marked.Survivor",
+      "source": "research/spaced-attempts/formal/Marked/Survivor.lean",
+      "source_sha256": "f9d0ea93a2a47181e2a6be3fc407cffb714ad781687c66a1be376fabc5f8ea86",
+      "returncode": 0,
+      "seconds": 19.56,
+      "olean_sha256": "39d10d829d94ece912d235557c497536706ba8238b05b6728458133796f906d6"
+    },
+    {
+      "module": "Marked.L2",
+      "source": "research/spaced-attempts/formal/Marked/L2.lean",
+      "source_sha256": "7f4c11a1c4352f6f6a594596f9405f1fa669b3f0ad9bb9fab6cd57979c3d926e",
+      "returncode": 0,
+      "seconds": 4.037,
+      "olean_sha256": "cbdf6438f7252f20899f3807bb3f8add06760bd57f12b9758f093308dfd15693"
+    },
+    {
+      "module": "ResearchAudit.EnvironmentAudit",
+      "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+      "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "returncode": 0,
+      "seconds": 3.149,
+      "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+    }
+  ],
+  "audit_seconds": 38.889,
+  "audit_sha256": "adce582e59460d9de18b4b3a1a7286edc11a4ecd2ffbb5ce08c8916f685eaa6f",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "e2ff6ce754b1733087fef355bd640793f5de86f145903391b29bd5728f09756e",
+  "declaration_count": 119,
+  "theorem_count": 82,
+  "headlines": [
+    {
+      "name": "Marked.Survivor.hybrid_bound",
+      "closure_size": 8790,
+      "statement": "\u2200 {X : Type u_1} {Y : Type u_2} [inst : Fintype X] [inst_1 : Fintype Y] (\u03c0 : X \u2192 \u211d) (K : X \u2192 X \u2192 \u211d) (A : X \u2192 Y \u2192 \u211d)\n  (y\u2080 : Y) (\u03b5 : \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    Marked.Survivor.IsMarkov K \u2192\n      Marked.Survivor.IsTerminal A \u2192\n        Marked.Survivor.bind \u03c0 K = \u03c0 \u2192\n          Marked.Survivor.SurvivorMixing \u03c0 K \u03b5 \u2192\n            \u2200 (R : \u2115) (\u03bc : X \u2192 \u211d),\n              (\u2200 (x : X), 0 \u2264 \u03bc x \u2227 \u03bc x \u2264 \u03c0 x) \u2192\n                Marked.Survivor.tv (Marked.Survivor.bind \u03bc (Marked.Survivor.output K A y\u2080 (R + 1)))\n                    (Marked.Survivor.bind \u03bc (Marked.Survivor.output (Marked.Survivor.refresh \u03c0) A y\u2080 (R + 1))) \u2264\n                  \u2191R * \u03b5"
+    },
+    {
+      "name": "Marked.Survivor.refresh_output_law",
+      "closure_size": 7346,
+      "statement": "\u2200 {X : Type u_1} {Y : Type u_2} [inst : Fintype X] [inst_1 : Fintype Y] (\u03c0 : X \u2192 \u211d) (A : X \u2192 Y \u2192 \u211d) (\u03bd : Y \u2192 \u211d) (y\u2080 : Y)\n  (s : \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    Marked.Survivor.IsProbability \u03bd \u2192\n      (Marked.Survivor.bind \u03c0 A = fun y => s * \u03bd y) \u2192\n        \u2200 (R : \u2115),\n          Marked.Survivor.bind \u03c0 (Marked.Survivor.output (Marked.Survivor.refresh \u03c0) A y\u2080 R) = fun y =>\n            (1 - (1 - s) ^ R) * \u03bd y + (1 - s) ^ R * Marked.Survivor.point y\u2080 y"
+    },
+    {
+      "name": "Marked.Survivor.burn_once_bound",
+      "closure_size": 8818,
+      "statement": "\u2200 {X : Type u_1} {Y : Type u_2} [inst : Fintype X] [inst_1 : Fintype Y] (\u03b1 \u03c0 : X \u2192 \u211d) (K : X \u2192 X \u2192 \u211d) (A : X \u2192 Y \u2192 \u211d)\n  (\u03bd : Y \u2192 \u211d) (y\u2080 : Y) (s \u03b5 : \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    Marked.Survivor.IsProbability \u03bd \u2192\n      Marked.Survivor.IsMarkov K \u2192\n        Marked.Survivor.IsTerminal A \u2192\n          Marked.Survivor.bind \u03c0 K = \u03c0 \u2192\n            (Marked.Survivor.bind \u03c0 A = fun y => s * \u03bd y) \u2192\n              s \u2264 1 \u2192\n                Marked.Survivor.SurvivorMixing \u03c0 K \u03b5 \u2192\n                  \u2200 (R : \u2115),\n                    Marked.Survivor.tv (Marked.Survivor.bind \u03b1 (Marked.Survivor.output K A y\u2080 (R + 1))) \u03bd \u2264\n                      Marked.Survivor.tv \u03b1 \u03c0 + (1 - s) ^ (R + 1) + \u2191R * \u03b5"
+    },
+    {
+      "name": "Marked.Survivor.dominated_centered_energy",
+      "closure_size": 7533,
+      "statement": "\u2200 {X : Type u_1} [inst : Fintype X] (\u03c0 g : X \u2192 \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    (\u2200 (x : X), 0 \u2264 g x \u2227 g x \u2264 1) \u2192 (Marked.Survivor.energy \u03c0 fun x => g x - Marked.Survivor.mean \u03c0 g) \u2264 1 / 4"
+    },
+    {
+      "name": "Marked.Survivor.survivor_mixing_of_centered_l2",
+      "closure_size": 7958,
+      "statement": "\u2200 {X : Type u_1} [inst : Fintype X] (\u03c0 : X \u2192 \u211d) (K : X \u2192 X \u2192 \u211d) (\u03c1 : \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    (\u2200 (x : X), 0 < \u03c0 x) \u2192\n      Marked.Survivor.IsMarkov K \u2192\n        Marked.Survivor.IsReversible \u03c0 K \u2192\n          0 \u2264 \u03c1 \u2192 Marked.Survivor.CenteredL2Contraction \u03c0 K \u03c1 \u2192 Marked.Survivor.SurvivorMixing \u03c0 K (\u03c1 / 4)"
+    },
+    {
+      "name": "Marked.Survivor.burn_once_l2_bound",
+      "closure_size": 9185,
+      "statement": "\u2200 {X : Type u_1} {Y : Type u_2} [inst : Fintype X] [inst_1 : Fintype Y] (\u03b1 \u03c0 : X \u2192 \u211d) (K : X \u2192 X \u2192 \u211d) (A : X \u2192 Y \u2192 \u211d)\n  (\u03bd : Y \u2192 \u211d) (y\u2080 : Y) (s \u03c1 : \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    (\u2200 (x : X), 0 < \u03c0 x) \u2192\n      Marked.Survivor.IsProbability \u03bd \u2192\n        Marked.Survivor.IsMarkov K \u2192\n          Marked.Survivor.IsTerminal A \u2192\n            Marked.Survivor.IsReversible \u03c0 K \u2192\n              (Marked.Survivor.bind \u03c0 A = fun y => s * \u03bd y) \u2192\n                0 \u2264 \u03c1 \u2192\n                  Marked.Survivor.CenteredL2Contraction \u03c0 K \u03c1 \u2192\n                    \u2200 (R : \u2115),\n                      Marked.Survivor.tv (Marked.Survivor.bind \u03b1 (Marked.Survivor.output K A y\u2080 (R + 1))) \u03bd \u2264\n                        Marked.Survivor.tv \u03b1 \u03c0 + (1 - s) ^ (R + 1) + \u2191R * (\u03c1 / 4)"
+    },
+    {
+      "name": "Marked.Survivor.spaced_terminal_bound",
+      "closure_size": 9188,
+      "statement": "\u2200 {X : Type u_1} {Y : Type u_2} [inst : Fintype X] [inst_1 : Fintype Y] (\u03b1 \u03c0 : X \u2192 \u211d) (K : X \u2192 X \u2192 \u211d) (A : X \u2192 Y \u2192 \u211d)\n  (\u03bd : Y \u2192 \u211d) (y\u2080 : Y) (s \u03c1 \u03b4\u2080 : \u211d),\n  Marked.Survivor.IsProbability \u03c0 \u2192\n    (\u2200 (x : X), 0 < \u03c0 x) \u2192\n      Marked.Survivor.IsProbability \u03bd \u2192\n        Marked.Survivor.IsMarkov K \u2192\n          Marked.Survivor.IsTerminal A \u2192\n            Marked.Survivor.IsReversible \u03c0 K \u2192\n              (Marked.Survivor.bind \u03c0 A = fun y => s * \u03bd y) \u2192\n                0 \u2264 \u03c1 \u2192\n                  Marked.Survivor.CenteredL2Contraction \u03c0 K \u03c1 \u2192\n                    Marked.Survivor.tv \u03b1 \u03c0 \u2264 \u03b4\u2080 \u2192\n                      \u2200 (R : \u2115),\n                        0 < R \u2192\n                          Marked.Survivor.tv (Marked.Survivor.bind \u03b1 (Marked.Survivor.output K A y\u2080 R)) \u03bd \u2264\n                            \u03b4\u2080 + (1 - s) ^ R + \u2191(R - 1) * (\u03c1 / 4)"
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

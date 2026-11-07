@@ -1,0 +1,99 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 3765,
+      "sha256": "386d3f9af31836f1d877d93f44fcaf864562aa81be471fb9a7e26cd3ef78e09f"
+    },
+    "evidence/collection-authentication.json": {
+      "bytes": 3043,
+      "sha256": "a0c65eaa6e2b5bd25bb9926723ef7206ca5a8b2cbbfc8f661526bc2ec9120459"
+    },
+    "evidence/memo-preparation/normalize_memos.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/memo-preparation/normalize_memos.stdout.log": {
+      "bytes": 30,
+      "sha256": "112e48ea660be218b36edab66fd03a7ca25896c108ce031810ca4a532dd647a3"
+    },
+    "evidence/memo-preparation/observe_first_dependencies.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/memo-preparation/observe_first_dependencies.stdout.log": {
+      "bytes": 36,
+      "sha256": "d06cb28a3ed52d43c3ad6eb46ab23fef149eaee5ef5a217e393a85990eaa6b9d"
+    },
+    "evidence/memo-preparation/receipt.json": {
+      "bytes": 9680,
+      "sha256": "259af70c7664c1ede1aea595c782cc66323de491ce1bc67689244a859f2ce533"
+    },
+    "evidence/memo-preparation/result.json.gz": {
+      "bytes": 217426,
+      "sha256": "c5995751d6eb523586d62120708b0c36f1473d1927abac5a834851030d8f0baf"
+    },
+    "evidence/memo-preparation/stable_dependencies_1.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/memo-preparation/stable_dependencies_1.stdout.log": {
+      "bytes": 36,
+      "sha256": "d06cb28a3ed52d43c3ad6eb46ab23fef149eaee5ef5a217e393a85990eaa6b9d"
+    },
+    "evidence/memo-preparation/stable_dependencies_2.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evidence/memo-preparation/stable_dependencies_2.stdout.log": {
+      "bytes": 36,
+      "sha256": "d06cb28a3ed52d43c3ad6eb46ab23fef149eaee5ef5a217e393a85990eaa6b9d"
+    },
+    "evidence/memo-result.json": {
+      "bytes": 585,
+      "sha256": "5756a3755aa4c89322c28f262771362c8f4acc72b3eb58e2554e05c9922b4555"
+    },
+    "evidence/phases.json": {
+      "bytes": 4366,
+      "sha256": "940bf6df68d1021588c1fea6f09e54831c1537b61ce6a2d7dcc6012d331da1a8"
+    },
+    "evidence/resources.json": {
+      "bytes": 643,
+      "sha256": "20d7111f19081890068549d84c7af2a727db6b7e2d06b7f5f77879e8497b407b"
+    },
+    "outcome.json": {
+      "bytes": 5476,
+      "sha256": "ed53c12b24d2f79a8329a345e0d9449af985e6a678bbf9a170b742d67d34caad"
+    },
+    "provenance-bindings.json": {
+      "bytes": 1873,
+      "sha256": "f56dd99ac47d911b63f0eed7760cd50e47e8c83e4cb0fcba4699358df53abe51"
+    },
+    "reproduction-references.json": {
+      "bytes": 1536,
+      "sha256": "44a25d2b5427fb0c78d5fcf966f67f5df0b788aba3b845a9727c7d5652d0499f"
+    },
+    "source/NormalizeMemos.lean": {
+      "bytes": 635,
+      "sha256": "a3bc73a5756b203788a14f848ec8d5e4362fd18cbeed9da3693fdb88ba6187cd"
+    },
+    "source/build_iso.py": {
+      "bytes": 2992,
+      "sha256": "3fa8b822abb9cb97493e76401223184d59c89f9ce77d96de7b9ca7f35a61df71"
+    },
+    "source/guest_entry.py": {
+      "bytes": 10110,
+      "sha256": "647e0c9df181d05348fc3cad014fc4c17d9e22327c5c8cdc22a5bc98caa508af"
+    },
+    "source/make_seed.py": {
+      "bytes": 4316,
+      "sha256": "94640c65442cbf2866a6ce1acdead7fe21ec2e6713a5a58c44dc84b2f022e8d9"
+    },
+    "source/prepare_memos.py": {
+      "bytes": 9251,
+      "sha256": "4083a5bdab91e4dda4aaaa768caf7c42466a97c87d928c0f87d8ca53f64273f6"
+    }
+  },
+  "manifest_self_excluded": true,
+  "schema_version": 1,
+  "scope": "Pre-admission normalization and two frozen dependency gates; no proof/kernel/Comparator"
+}

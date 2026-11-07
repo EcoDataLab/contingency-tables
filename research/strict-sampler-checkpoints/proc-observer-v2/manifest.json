@@ -1,0 +1,114 @@
+{
+  "complete_vm_reproduction_available": false,
+  "files": {
+    "README.md": {
+      "bytes": 7042,
+      "sha256": "921ec2f7c9f165a504440e1214d87757f9d40b2e4996bb1a67b590e1400b1152"
+    },
+    "evidence/observer-fixtures.txt": {
+      "bytes": 1699,
+      "sha256": "e736b1d412fe27ee6497f7898b73bbdb268890fc501e4620c4b6c90bc2a55b8b"
+    },
+    "evidence/prestage-resources.json": {
+      "bytes": 356,
+      "sha256": "7adb380746359f99ef3a466384d9c6225f34545737fefaad7bacabbce824e8c8"
+    },
+    "evidence/progress-fixtures.txt": {
+      "bytes": 495,
+      "sha256": "7564ceffbdec7a203261aba1e33c75a4caec414793bbf75047ec6d085816a67f"
+    },
+    "evidence/supervisor-fixtures.txt": {
+      "bytes": 2561,
+      "sha256": "17f3c0f6190cb72e546d36615b70b407cfd20186407cccf96f50fc6a82fe8e4c"
+    },
+    "evidence/toy-collection-authentication.json": {
+      "bytes": 2238,
+      "sha256": "cab407cc59487053646a45d86cbd5c682d0fc3f3356cc446555d48026cdcf155"
+    },
+    "evidence/toy-guest-evidence.tar.gz": {
+      "bytes": 6039,
+      "sha256": "7a0c5e1a93f15baa7ea216c2a43e6c0ff087e07ad31a6ec28d8e12904145ff0f"
+    },
+    "evidence/toy-summary.json": {
+      "bytes": 2707,
+      "sha256": "74a45fc7365829dc24575c1623f7102aaf6feb6f0fbd9f50b2a1ef44720ac3c4"
+    },
+    "independent-review.md": {
+      "bytes": 4320,
+      "sha256": "0351825393b52c87c35616245f5173f9718d29d45df55af4875ef6338c812478"
+    },
+    "outcome.json": {
+      "bytes": 1367,
+      "sha256": "6d8aaa8dfede55487a88917ee7edca9f5a0ed32efd27830a757e7c32ef8e979b"
+    },
+    "reproduction-references.json": {
+      "bytes": 2851,
+      "sha256": "58747954d64896d427867e2828c10595a0d1fc0a16b53b3849a6fa1c99822330"
+    },
+    "source/guest_entry.py": {
+      "bytes": 12436,
+      "sha256": "766d040365448dd1bd3fade113355bfef1f7bf790142a31d202dd78442023620"
+    },
+    "source/install_sources.py": {
+      "bytes": 4419,
+      "sha256": "0db14c9c68927fd312bdd80b46f32e0052d4dcc46f33d7b9ed37f7d17e59b526"
+    },
+    "source/integration.diff": {
+      "bytes": 1844,
+      "sha256": "5a28f4aee58a42d7ee6e42418ed842416d0708340578afc089b488f886c821a0"
+    },
+    "source/live_diagnostic.py": {
+      "bytes": 5614,
+      "sha256": "85a081dcdb2fde0fa299dd56afc46c605c267c2d9571ca54dfbbbbfe41388803"
+    },
+    "source/observer.diff": {
+      "bytes": 3916,
+      "sha256": "b9c7d93fb717adf03a7e81889ca34a877c34c3a85bd2371457f0aa9a6682f6f7"
+    },
+    "source/prepare_memos.py": {
+      "bytes": 9251,
+      "sha256": "0b60be200d5abd065754be1da09f6d0d7b4bd9c6fc1439da5007de7763aa098d"
+    },
+    "source/resource-profile.diff": {
+      "bytes": 5092,
+      "sha256": "b928f36cc2e87941bc5654328302f72918e9a482f707ee51cb7b152ffc5a14de"
+    },
+    "source/strict_serial_check.py": {
+      "bytes": 28938,
+      "sha256": "b5e8c0f95fdd5f6b9193c2b0537782b242d0fe0c269dae7b5a7a4c73a32cb1f0"
+    },
+    "source/test_observer.py": {
+      "bytes": 8119,
+      "sha256": "262154b66576aa6db5e5c05b64d583781baeb387d3dc1e8f95eb44801fb78b7a"
+    },
+    "source/test_progress.py": {
+      "bytes": 2193,
+      "sha256": "332ddce5e1f5e9bb48b6029f278ed0ace3d308395c68f655776829f13b6d6e52"
+    },
+    "source/test_supervisor.py": {
+      "bytes": 11004,
+      "sha256": "d127da93fd369931383287c2f59d6c079b8417e8988f590d8a0ad77e393e36e9"
+    },
+    "source/toy_process.py": {
+      "bytes": 966,
+      "sha256": "05e992bedf3e79e0064fc16c2f818ebe1096122a071067019e7603163dfedd97"
+    },
+    "source/versioned_runner.py": {
+      "bytes": 51036,
+      "sha256": "50b13329f7de7ba59f007cdc382aa317e2984d14104bda0bd37d1a9c9ecf78f3"
+    },
+    "source/vm_sampler_supervisor.py": {
+      "bytes": 27188,
+      "sha256": "b645e89fe2ddd3effcb3d39d3a31b7297eddee53c3ba1266270eb4907157321e"
+    }
+  },
+  "normal_suite_test_bridge": {
+    "path": "tests/test_comparator_observer.py",
+    "source_commit": "d34ccab05d547b8da4a41d203a4f05f6c85d3b99",
+    "status": "historical_bridge_before_python310_adapter",
+    "sha256": "7b643a9c55346de3f339d7756ad6c055f75521a349199aae1d46c370adb905a7"
+  },
+  "old_failed_attempt_unchanged": "../second-proof-failure-v1/",
+  "schema_version": 1,
+  "scope": "Observer/resource setup, historical toy diagnostic, offline regression fixtures, explicitly pending historical679-module strict replay. No strict sampler acceptance."
+}

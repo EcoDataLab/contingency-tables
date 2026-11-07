@@ -1,0 +1,77 @@
+--- historical-proof02/vm_sampler_supervisor.py
++++ observer-proof03/vm_sampler_supervisor.py
+@@ -20,7 +20,10 @@
+ 
+ GIB = 1024**3
+ ACTIVE_MEMORY_FLOOR = int(1.5 * GIB)
+-ACTIVE_DISK_FLOOR = 2 * GIB
++ACTIVE_DISK_FLOOR = 20 * GIB
++MIN_BACKING_FREE = 40 * GIB
++MAX_OWNED_OVERLAY = 16 * GIB
++RESOURCE_POLL_SECONDS = 1
+ EXPECTED = {
+     "stonking-server-cloudimg-amd64.img": "c93d013ac1116adf585bdd84d2e8b51039fc623fb8c6d33b70da4075c4934118",
+     "preflight-overlay.qcow2": "5bde6d27a87b66365f35c87e03144f914c864dda47beccc2b0734f3edfcef1b7",
+@@ -133,8 +136,8 @@
+     hashes = check_files(retained)
+     chain = image_info(retained, retained / "tool-bootstrap-overlay.qcow2")
+     check_bootstrap_chain(retained, chain)
+-    if shutil.disk_usage(retained).free < 80 * GIB:
+-        raise SupervisorError("Less than 80 GiB backing disk free")
++    if shutil.disk_usage(retained).free < MIN_BACKING_FREE:
++        raise SupervisorError("Less than versioned 40 GiB backing disk free")
+     run.mkdir()
+     overlay = run / "sampler-overlay.qcow2"
+     result = subprocess.run([str(retained / "qemu/ucrt64/bin/qemu-img.exe"), "create", "-f", "qcow2", "-F", "qcow2",
+@@ -148,7 +151,7 @@
+               "preserved_sha256": hashes, "bootstrap_backing_chain": chain,
+               "wall_clock_cap_seconds": CAP, "guest_vcpus": 1, "guest_ram_mib": 10240,
+               "minimum_available_host_bytes": int(min_memory_gib * GIB),
+-              "minimum_free_backing_disk_bytes": 80 * GIB,
++              "minimum_free_backing_disk_bytes": MIN_BACKING_FREE,
+               "network": "none; no NIC/forwarding/listeners/TAP/sharing",
+               "prepared_unix": time.time(), "preparation_stdout": result.stdout,
+               "supervisor_sha256": digest(__file__)}
+@@ -158,6 +161,8 @@
+     config["phase_caps_seconds"] = PHASE_CAPS
+     config["active_host_available_floor_bytes"] = ACTIVE_MEMORY_FLOOR
+     config["active_backing_disk_floor_bytes"] = ACTIVE_DISK_FLOOR
++    config["maximum_owned_overlay_bytes"] = MAX_OWNED_OVERLAY
++    config["resource_poll_seconds"] = RESOURCE_POLL_SECONDS
+     save(run / "supervisor-config.json", config)
+     print(json.dumps(config, indent=2))
+ 
+@@ -169,11 +174,13 @@
+         raise SupervisorError("Sampler resource/cap profile changed")
+     if config.get("phase_caps_seconds") != PHASE_CAPS:
+         raise SupervisorError("Phase caps changed")
++    if config.get("maximum_owned_overlay_bytes") != MAX_OWNED_OVERLAY or config.get("resource_poll_seconds") != RESOURCE_POLL_SECONDS:
++        raise SupervisorError("Versioned physical growth profile changed")
+     if config.get("active_host_available_floor_bytes") != ACTIVE_MEMORY_FLOOR or config.get("active_backing_disk_floor_bytes") != ACTIVE_DISK_FLOOR:
+         raise SupervisorError("Active resource stop floors changed")
+     if config["preserved_sha256"] != EXPECTED or config["minimum_available_host_bytes"] < 12 * GIB:
+         raise SupervisorError("Artifact pins or host memory gate changed")
+-    if config["minimum_free_backing_disk_bytes"] != 80 * GIB or config["supervisor_sha256"] != digest(__file__):
++    if config["minimum_free_backing_disk_bytes"] != MIN_BACKING_FREE or config["supervisor_sha256"] != digest(__file__):
+         raise SupervisorError("Disk gate or supervisor body changed")
+     if str(Path(sys.executable).resolve()) != config["python_executable"] or digest(sys.executable) != config["python_executable_sha256"]:
+         raise SupervisorError("Prepared host Python runtime changed")
+@@ -341,15 +348,15 @@
+                     # the final marker. Raw collection hash validation is later.
+                     if now - terminal >= 10:
+                         break
+-                if now - last_record >= 30:
++                if now - last_record >= RESOURCE_POLL_SECONDS:
+                     state.update(process_memory(process), elapsed_seconds=now-started,
+                                  host_available_bytes=available_memory(), host_free_disk_bytes=shutil.disk_usage(run).free,
+                                  serial_bytes_read=offset, serial_parser_tail_bytes=len(tail), overlay_bytes=overlay.stat().st_size)
+                     save(status, state)
+-                    if state["host_available_bytes"] < ACTIVE_MEMORY_FLOOR or state["host_free_disk_bytes"] < ACTIVE_DISK_FLOOR:
++                    if state["host_available_bytes"] < ACTIVE_MEMORY_FLOOR or state["host_free_disk_bytes"] < ACTIVE_DISK_FLOOR or state["overlay_bytes"] > MAX_OWNED_OVERLAY:
+                         state.update(status="active_host_resource_floor_reached",
+                                      active_host_available_floor_bytes=ACTIVE_MEMORY_FLOOR,
+-                                     active_backing_disk_floor_bytes=ACTIVE_DISK_FLOOR)
++                                     active_backing_disk_floor_bytes=ACTIVE_DISK_FLOOR, maximum_owned_overlay_bytes=MAX_OWNED_OVERLAY)
+                         break  # finally stops only this held, identified QEMU
+                     last_record = now
+                 # Drain an existing full chunk promptly. A large evidence stream

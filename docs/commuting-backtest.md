@@ -1,10 +1,11 @@
 # Public commuting joint-table hold-out backtest
 
 The margin-only conditional-worker law misses the held-out published cell in
-all 100 predefined Rhode Island cases. Uniform aggregate tables cover all 100,
-with much wider intervals. This is an empirical check of two probability laws
-on a fixed public case frame, not a sampler-performance experiment or a
-calibration guarantee. The complete observations, margins, intervals, errors,
+all 100 predefined Rhode Island cases. These cases overlap one released 5×5
+county table; they are not 100 independent trials. Uniform aggregate tables
+cover all 100, with much wider intervals. This is an empirical check of two
+probability laws on a fixed public case frame, not a sampler-performance
+experiment or a calibration guarantee. The complete observations, margins, intervals, errors,
 and numerical checks are retained in the
 [machine-readable report](../reports/commuting-backtest.json).
 
@@ -23,6 +24,70 @@ case means; large cases are not counted as more replications. The uniform
 intervals are about 63 times wider on average. Broad coverage alone does not
 show that uniform aggregate tables provide an accurate or scientifically
 appropriate commuting model.
+
+## Post hoc proper interval score
+
+The separate [scoring supplement](../reports/commuting-interval-score.json)
+adds the negatively oriented interval score from
+[Gneiting and Raftery (2007), section 6.2, equation 43](https://sites.stat.washington.edu/people/raftery/Research/PDF/Gneiting2007jasa.pdf).
+For published count `y` and interval `[l,u]`, it is
+
+```text
+ISα(l,u;y) = (u−l) + (2/α)(l−y) 1[y<l] + (2/α)(y−u) 1[y>u]
+α = 1/20; lower quantile = 1/40; upper quantile = 39/40
+```
+
+Lower is better. The score pays for width and adds 40 jobs of penalty per job
+outside the interval. Endpoint hits have no miss penalty. This combines
+sharpness and misses in one proper score for the stated central quantiles.
+Count-valued intervals still have width `u−l`, rather than their number of
+integer support points. Use nominal α = 0.05 even when discrete endpoints
+retain more than 95% model mass.
+
+| Post hoc primary cell score, 100 overlapping cases | Uniform aggregate tables | Ordinary conditional-worker law |
+| --- | ---: | ---: |
+| Mean interval score, jobs | 7,912.36 | 100,507.84 |
+| Width component, jobs | 7,912.36 | 124.64 |
+| Mean miss penalty, jobs | 0.00 | 100,383.20 |
+| Mean score / case total | 17.26% | 215.88% |
+
+These are unweighted case means. The normalized score divides by the known
+margin total in each case before averaging. It is a penalty score and can
+exceed 100%; it is not a job share or a coverage rate. Uniformity has the lower
+realized mean score here, despite paying for much wider intervals. Its zero
+miss penalty reflects this case frame's broad inclusion, not empirical
+calibration. Dependence does not prevent computing these descriptive scores,
+but no binomial confidence interval or independent-trial significance claim
+is attached to them.
+
+This score was added **after the outcomes were known**. It is a diagnostic
+supplement, not a prospectively selected primary endpoint. The frozen
+[protocol](../data/public-commuting/protocol.json), historical report, source
+artifacts, original coverage results, and predictions retain their original
+bytes. The supplement hashes the report it reads, validates the public
+snapshot, and replays all 400 primary quantile endpoints from margins before
+scoring. It uses exact rational score arithmetic and introduces no new data,
+fitting, or changes to either law.
+
+Only the primary FIPS-first cell is scored in this supplement. It uses the
+original inverse-CDF quantiles directly. Reversing a discrete interval through
+a decreasing affine map can change the canonical inverse-CDF endpoints when
+a tail falls exactly on a CDF jump. The other three cells and the intercounty
+metric retain their original coverage interpretation; this supplement does
+not add scores for those targets. A reflected endpoint can still be a valid
+quantile minimizer when discrete quantiles are nonunique; further scoring
+should state its endpoint convention explicitly.
+
+Five additional tests independently recompute every retained primary score,
+check the equivalent sum of two quantile losses, verify expected-score
+minimization on discrete fixtures including a tail-boundary atom, and reject
+wrong α semantics, changed endpoints, or changed observations. Replay without
+changing the original evidence:
+
+```sh
+python3 experiments/commuting_interval_score.py --output /private/tmp/commuting-interval-score-replay.json
+python3 -m unittest discover -s tests -p 'test_commuting*.py' -v
+```
 
 ## Public observation and provenance
 
@@ -252,3 +317,51 @@ margin-only worker law for this public case frame and shows how much wider the
 uniform intervals are. It does not validate either law across commuting
 applications, propagate uncertainty in Census disclosure processing, measure
 mode choice or commute distance, or produce VMT/emissions estimates.
+
+## Prospective distance-weighted comparison
+
+A concrete next law is a distance-weighted conditional-worker allocation on
+the same margin fiber. With public home/work distances `dij` in kilometers
+and a nonnegative decay parameter `β` in inverse kilometers, define
+
+```text
+Pβ(T | r,c,d) ∝ exp(−β Σij dij Tij) / Πij Tij!
+```
+
+This chooses the conditional-worker factorial base measure explicitly; it
+does not apply a distance tilt to the uniform aggregate-table law. At β = 0
+it recovers the existing worker baseline. In a 2×2 fiber the distance contrast
+is `Δd = d11+d22−d12−d21`, so its free-cell weights are the existing worker
+weights multiplied by `exp(−β Δd x)`. The observed joint must not enter the
+distance matrix, parameter choice, or prediction API.
+
+This is an **unrun proposal**, requiring new public covariates and a new
+prospective protocol. Before downloading or scoring the new held-out OD,
+freeze the following choices:
+
+1. Pin a public geometry or travel-cost source, geography vintage, hashes,
+   units, distance algorithm, and missing-data rules. Public geographic
+   representative points could support a geodesic sensitivity experiment,
+   but county-center separation is an approximation, and assigning within-
+   county distance zero would need an explicit modeling justification.
+   These distances would not measure actual traveled routes or commute VMT.
+2. Fix β externally or estimate it on a separately declared public training
+   panel, with its candidate values and selection criterion fixed before
+   training. Keep all overlapping 2×2 cases from a state/year table together
+   when separating training and evaluation; account for repeated geography
+   and time dependence when interpreting a multi-panel evaluation. Fitting
+   β to the present Rhode Island held-out joints would make them training
+   outcomes and cannot produce a new held-out validation result.
+3. Freeze evaluation states/years, case frame, exclusions, numerical budget,
+   nominal α and quantile convention, score aggregation, and comparison with
+   both existing baselines. Use the proper interval score as a prospective
+   endpoint alongside descriptive coverage and width. Build predictions
+   before reading evaluation outcomes, then retain every case and artifact.
+4. Check normalization and quantiles against independent finite-support
+   calculations, including β = 0 recovery. Record distance sensitivity and
+   numerical underflow, and distinguish an improvement in scores from
+   calibration or validation of the assumed travel-cost model.
+
+No distance data were acquired, β selected, or additional law scored in the
+present supplement. It leaves a reviewable next experiment without tuning
+a geographic explanation to the known test outcomes.

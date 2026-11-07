@@ -1,0 +1,79 @@
+{
+  "comparator_executed": false,
+  "default_kernel_replay_executed": false,
+  "export_executed": false,
+  "owned_qemu_reaped": true,
+  "owned_qemu_terminate_sent": true,
+  "phases": [
+    {
+      "cap_seconds": 600,
+      "elapsed_seconds": 1.60691237449646,
+      "returncode": 0,
+      "stage": "install",
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2b0934143ef558f9d621b9a07a7ab30d84db9fb3f8fac352281aebe1c3cdb3f9"
+    },
+    {
+      "cap_seconds": 300,
+      "elapsed_seconds": 0.4282679557800293,
+      "returncode": 0,
+      "stage": "preflight",
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b"
+    },
+    {
+      "cap_seconds": 5400,
+      "elapsed_seconds": 160.36155343055725,
+      "returncode": 0,
+      "stage": "authenticate",
+      "status": "passed",
+      "stderr_sha256": "40999427b369fa2185e7415508d33ba8e15f0ccb0c913a45e082a2972cb2c5e5",
+      "stdout_sha256": "ac22a5edf87ac0cde4fbfe0adbf2918a1a9ef22ac0bef5155543018fd31ca619"
+    },
+    {
+      "cap_seconds": 3600,
+      "elapsed_seconds": 112.7187774181366,
+      "returncode": 0,
+      "stage": "plan",
+      "status": "passed",
+      "stderr_sha256": "73dce78bf284c6e90a9e1a990968c9d636fbf78c3380fce4d7a3dbff5909d09f",
+      "stdout_sha256": "c0f6913d594ccb168d7656ddc129f308075f2703427cafcce688e654abddc9f4"
+    }
+  ],
+  "pinned_runner_replaced": false,
+  "preserved_pins_equal": true,
+  "process_inventory_clear_at_collection": true,
+  "profile": {
+    "acceleration": "whpx,kernel-irqchip=off",
+    "aggregate_benchmark_cap_seconds": 1800,
+    "cpu": "max",
+    "fresh_child_virtual_gib": 80,
+    "guest_ram_mib": 8192,
+    "guest_vcpus": 1,
+    "method_cap_seconds": 900,
+    "network": "none",
+    "phase_caps_seconds": {
+      "authenticate": 5400,
+      "collect": 600,
+      "install": 600,
+      "plan": 3600,
+      "preflight": 300
+    },
+    "swap": false,
+    "wall_clock_cap_seconds": 12600
+  },
+  "proof_compilation_executed": false,
+  "qemu_exit_code": 1,
+  "qemu_stderr_bytes": 0,
+  "recorded_soft_lockup_warnings": 0,
+  "retained_original_runner_unchanged": true,
+  "scope": "Completed actual versioned/original stat guards and complete identity equality under trusted-supervisor quiet-cache premise",
+  "serial_reconstruction_required": false,
+  "status": "original_and_versioned_guards_and_full_identities_passed",
+  "strict_sampler_acceptance": false,
+  "universal_race_error_equivalence": false,
+  "v2_executed_in_separate_owned_tools_directory": true,
+  "vm_elapsed_seconds": 373.95422319998033
+}

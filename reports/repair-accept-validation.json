@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-10-11T14:47:27.161350+00:00",
+  "scope": "Executable reference and exact finite experiment; mathematical error bound assumes independent fair words and a supplied endpoint mixing bound.",
+  "commands": [
+    {
+      "command": "make verify",
+      "status": "passed",
+      "tests_run": 350,
+      "passed": 349,
+      "skipped": 1,
+      "skip_reason": "Optional SciPy is unavailable in this Python environment.",
+      "test_seconds": 19.459
+    },
+    {
+      "command": "python3 experiments/defect_trace.py --output .local/repair-accept/trace-recheck.json",
+      "status": "passed",
+      "primary_fixtures": 8,
+      "exploratory_fixtures": 4
+    },
+    {
+      "command": "docs/repair-output.md Python example",
+      "status": "passed",
+      "scope": "API execution only; not a mixing certificate"
+    }
+  ],
+  "independent_review": {
+    "kind": "separate AI-agent code review",
+    "outcome": "No concrete correctness issues found in the new repair rule, budgets, RNG stream, scope checks, and fallback law. No outside human review."
+  },
+  "source_sha256": {
+    "src/contingency115/repair_accept.py": "7d2396dc981307fb5b99b19aa667b25d82f1d21c35a9b6893b0635d10d689d95",
+    "tests/test_repair_accept.py": "97834f0d67c6da808b1c7765b52bf6b7810a1a64981ec490736138f24cab1412",
+    "experiments/defect_trace.py": "0e94d1004fa37c40b29a6f995811b2bb6c847ccebde4661d5ef6849ac95dd72c",
+    "src/contingency115/ideal_chain.py": "5432398d088bbd93d473a56fababadfb9f50c807a38e230c222e8527fa23235b",
+    "src/contingency115/tables.py": "fd6923478d1dcd3c2fbc642307e8483c8d2248f02132b22e3fa21211af52d5ee"
+  }
+}

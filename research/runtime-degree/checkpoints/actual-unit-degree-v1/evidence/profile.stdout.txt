@@ -1,0 +1,16 @@
+'Math115.UnitRuntimeNext.typed_profileCodeEqual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.UnitRuntimeNext.typed_profileCodeDedup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.UnitRuntimeNext.typed_defectTest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.UnitRuntimeNext.typed_patternTest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.UnitRuntimeNext.typed_validMargins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Math115.UnitRuntimeNext.typed_profileTest' depends on axioms: [propext, Classical.choice, Quot.sound]
+Math115.UnitRuntimeNext.typed_profileCodeEqual :
+  Math115.DegreeBounds.Typed OAI.ContingencyTables.ProfilePrograms.profileCodeEqual 504
+Math115.UnitRuntimeNext.typed_profileCodeDedup :
+  Math115.DegreeBounds.Typed OAI.ContingencyTables.ProfilePrograms.profileCodeDedup 2036170
+Math115.UnitRuntimeNext.typed_defectTest :
+  Math115.DegreeBounds.Typed OAI.ContingencyTables.ProfilePrograms.defectTestRealizer 504
+Math115.UnitRuntimeNext.typed_validMargins (row : Bool) :
+  Math115.DegreeBounds.Typed (OAI.ContingencyTables.ProfilePrograms.validMarginsRealizer row) 124409592
+Math115.UnitRuntimeNext.typed_profileTest :
+  Math115.DegreeBounds.Typed OAI.ContingencyTables.ProfilePrograms.profileTestRealizer 746457552

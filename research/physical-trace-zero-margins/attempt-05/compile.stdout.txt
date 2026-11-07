@@ -1,0 +1,127 @@
+<packet>/revisions/attempt-05/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:34:0: warning: automatically included section variable(s) unused in theorem `Math115.PhysicalTraceJoin.zeroMarginMask_rectangle`:
+  [Fintype I]
+  [Fintype J]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [Fintype J] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+<packet>/revisions/attempt-05/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:78:87: error: unsolved goals
+case pos
+I : Type u_1
+J : Type u_2
+inst✝¹ : Fintype I
+inst✝ : Fintype J
+r : I → ℕ
+c : J → ℕ
+X : PositiveTable r c
+i : I
+j : J
+hi : 0 < r i
+hj : 0 < c j
+⊢ ↑(({ toFun := fun X => ⟨X, ⋯⟩, invFun := fun X => ↑X, left_inv := ⋯, right_inv := ⋯ }.trans
+              { toFun := rectangleRestrict (zeroMarginMask r c) (fun i => 0 < r i) (fun j => 0 < c j) ⋯ r c,
+                invFun := rectangleExtend (zeroMarginMask r c) (fun i => 0 < r i) (fun j => 0 < c j) ⋯ r c ⋯ ⋯,
+                left_inv := ⋯, right_inv := ⋯ }).invFun
+          X)
+      i j =
+    ↑X ⟨i, ⋯⟩ ⟨j, ⋯⟩
+
+case neg
+I : Type u_1
+J : Type u_2
+inst✝¹ : Fintype I
+inst✝ : Fintype J
+r : I → ℕ
+c : J → ℕ
+X : PositiveTable r c
+i : I
+j : J
+hi : 0 < r i
+hj : ¬0 < c j
+⊢ ↑(({ toFun := fun X => ⟨X, ⋯⟩, invFun := fun X => ↑X, left_inv := ⋯, right_inv := ⋯ }.trans
+              { toFun := rectangleRestrict (zeroMarginMask r c) (fun i => 0 < r i) (fun j => 0 < c j) ⋯ r c,
+                invFun := rectangleExtend (zeroMarginMask r c) (fun i => 0 < r i) (fun j => 0 < c j) ⋯ r c ⋯ ⋯,
+                left_inv := ⋯, right_inv := ⋯ }).invFun
+          X)
+      i j =
+    0
+
+case pos
+I : Type u_1
+J : Type u_2
+inst✝¹ : Fintype I
+inst✝ : Fintype J
+r : I → ℕ
+c : J → ℕ
+X : PositiveTable r c
+i : I
+j : J
+hi : ¬0 < r i
+hj : 0 < c j
+⊢ ↑(({ toFun := fun X => ⟨X, ⋯⟩, invFun := fun X => ↑X, left_inv := ⋯, right_inv := ⋯ }.trans
+              { toFun := rectangleRestrict (zeroMarginMask r c) (fun i => 0 < r i) (fun j => 0 < c j) ⋯ r c,
+                invFun := rectangleExtend (zeroMarginMask r c) (fun i => 0 < r i) (fun j => 0 < c j) ⋯ r c ⋯ ⋯,
+                left_inv := ⋯, right_inv := ⋯ }).invFun
+          X)
+      i j =
+    0
+
+case neg
+I : Type u_1
+J : Type u_2
+inst✝¹ : Fintype I
+inst✝ : Fintype J
+r : I → ℕ
+c : J → ℕ
+X : PositiveTable r c
+i : I
+j : J
+hi : ¬0 < r i
+hj : ¬0 < c j
+⊢ ↑(({ toFun := fun X => ⟨X, ⋯⟩, invFun := fun X => ↑X, left_inv := ⋯, right_inv := ⋯ }.trans
+              { toFun := rectangleRestrict (zeroMarginMask r c) (fun i => 0 < r i) (fun j => 0 < c j) ⋯ r c,
+                invFun := rectangleExtend (zeroMarginMask r c) (fun i => 0 < r i) (fun j => 0 < c j) ⋯ r c ⋯ ⋯,
+                left_inv := ⋯, right_inv := ⋯ }).invFun
+          X)
+      i j =
+    0
+<packet>/revisions/attempt-05/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:81:28: warning: This simp argument is unused:
+  rectangleExtend
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [zeroMarginEquiv, zeroMarginSupportedEquiv, rectangleCompletionEquiv, Equiv.symm, -Equiv.invFun_as_coe,
+    hi, hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-05/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:109:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-05/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:110:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-05/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:123:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/revisions/attempt-05/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean:124:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`

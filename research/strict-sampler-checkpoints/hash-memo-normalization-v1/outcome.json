@@ -1,0 +1,129 @@
+{
+  "all_other_runtime_fields_equal": true,
+  "authenticated_guest_members": 26,
+  "baseline_runtime_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+  "cache_entries": 131021,
+  "candidate_sha256": "1008cc3ba5afb129c5d54c8bc030207c8e72715d9b8a1546984e956f919768ca",
+  "comparator_executed": false,
+  "default_kernel_replay_executed": false,
+  "fresh_runtime_sha256": "b777e2f434af7744108690dbbd0ec790f022f78172028ee723fbba02f29b3f8e",
+  "guest_archive_sha256": "b67131463024d1e743c0fec91006f895d301fd659e5eb45d0edefeff858fc6fb",
+  "guest_raw_bytes": 64784992,
+  "helper_sha256": "a3bc73a5756b203788a14f848ec8d5e4362fd18cbeed9da3693fdb88ba6187cd",
+  "non_memo_inventory_unchanged": true,
+  "normalization_targets": 53484,
+  "normalized_memos": 53484,
+  "observed_command_delta": [
+    "formal/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Field/Defs.olean.server.hash"
+  ],
+  "original_runner_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6",
+  "owned_qemu_reaped": true,
+  "proof_module_builds": 0,
+  "qemu_exit_code": 1,
+  "qemu_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "request_sha256": "542b696fe2ccecb0a0a21eb4d3aa38ab3c99c0def54f6bf27451a4991251e0ed",
+  "runtime_content_changes": [
+    {
+      "after": "004e1b6cce2671ae3f0a3f8e64772b790656a5f12ea04aca06b7eba23e1adcc7",
+      "before": "570e877264b3296e9673ca35d5cdb90cf8c550d10fc46ef327865d60d5f030e4",
+      "path": "/trusted_cache_files_sha256/formal/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Algebra/Field/Defs.olean.server.hash"
+    },
+    {
+      "after": "f07c71002144b9c41654fe110275235a27b23d53bfd02a906449981cc5ab8472",
+      "before": "dce3d59bb2a242ee41c4365736f6b9d9498aac8f36141d0222b5e3393d3ac4f7",
+      "path": "/trusted_cache_files_sha256/formal/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/CategoryTheory/Presentable/SharplyLT/Lemmas.olean.private.hash"
+    },
+    {
+      "after": "81b334d30847532b3257aad20d02fcd24419c97665c675279fc77af1d22db6ba",
+      "before": "1fcb15056d55280251de965c1a500dff8f745d2f03964e032efed88390540258",
+      "path": "/trusted_cache_files_sha256/formal/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Geometry/Convex/Cone/DualFinite.olean.server.hash"
+    },
+    {
+      "after": "50340f74438c9cf139f24e327b5b4774b38f2f960ec15881f5d87b1b888571f8",
+      "before": "3944193156d87e1c527e11a94a5cb64e97c7915a3fcddfdbb91a67f3be7952e2",
+      "path": "/trusted_cache_files_sha256/formal/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/NumberTheory/LSeries/Convergence.olean.private.hash"
+    },
+    {
+      "after": "ac68b9b4602826f4dad60d0da814b0fefa7fb39004611e600970ed8a7592bd6e",
+      "before": "125397bf79e16003831537734ae45b562c102274a6ce465d57e262c22f5fdc38",
+      "path": "/trusted_cache_files_sha256/formal/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/RingTheory/SimpleModule/InjectiveProjective.olean.server.hash"
+    }
+  ],
+  "scope": "trusted package .hash preparation before new admission, no frozen guard exemptions",
+  "script_sha256": "4083a5bdab91e4dda4aaaa768caf7c42466a97c87d928c0f87d8ca53f64273f6",
+  "sidecar_after_normalization": {
+    "bytes_hex": "30303031343230353038333231333132",
+    "sha256": "004e1b6cce2671ae3f0a3f8e64772b790656a5f12ea04aca06b7eba23e1adcc7",
+    "stat": {
+      "st_ctime_ns": 1791757751893886400,
+      "st_dev": 64769,
+      "st_gid": 1000,
+      "st_ino": 1508764,
+      "st_mode": 33152,
+      "st_mtime_ns": 1791757751893886400,
+      "st_size": 16,
+      "st_uid": 1000
+    }
+  },
+  "sidecar_after_observed_command": {
+    "bytes_hex": "30303031343230353038333231333132",
+    "sha256": "004e1b6cce2671ae3f0a3f8e64772b790656a5f12ea04aca06b7eba23e1adcc7",
+    "stat": {
+      "st_ctime_ns": 1791757722369497100,
+      "st_dev": 64769,
+      "st_gid": 1000,
+      "st_ino": 1508764,
+      "st_mode": 33152,
+      "st_mtime_ns": 1791757722369497100,
+      "st_size": 16,
+      "st_uid": 1000
+    }
+  },
+  "sidecar_before_observed_command": {
+    "bytes_hex": "31343230353038333231333132",
+    "sha256": "570e877264b3296e9673ca35d5cdb90cf8c550d10fc46ef327865d60d5f030e4",
+    "stat": {
+      "st_ctime_ns": 1791581441665868915,
+      "st_dev": 64769,
+      "st_gid": 1000,
+      "st_ino": 1508764,
+      "st_mode": 33152,
+      "st_mtime_ns": 1791581441636014747,
+      "st_size": 13,
+      "st_uid": 1000
+    }
+  },
+  "sidecars_during_stability": [
+    {
+      "bytes_hex": "30303031343230353038333231333132",
+      "sha256": "004e1b6cce2671ae3f0a3f8e64772b790656a5f12ea04aca06b7eba23e1adcc7",
+      "stat": {
+        "st_ctime_ns": 1791757751893886400,
+        "st_dev": 64769,
+        "st_gid": 1000,
+        "st_ino": 1508764,
+        "st_mode": 33152,
+        "st_mtime_ns": 1791757751893886400,
+        "st_size": 16,
+        "st_uid": 1000
+      }
+    },
+    {
+      "bytes_hex": "30303031343230353038333231333132",
+      "sha256": "004e1b6cce2671ae3f0a3f8e64772b790656a5f12ea04aca06b7eba23e1adcc7",
+      "stat": {
+        "st_ctime_ns": 1791757751893886400,
+        "st_dev": 64769,
+        "st_gid": 1000,
+        "st_ino": 1508764,
+        "st_mode": 33152,
+        "st_mtime_ns": 1791757751893886400,
+        "st_size": 16,
+        "st_uid": 1000
+      }
+    }
+  ],
+  "snapshot_sha256": "c875c20375a1bf3362ac836126c7ddb249b0669ef9b2af332691f89f6278a193",
+  "status": "normalization_and_two_frozen_repeats_passed_no_proof_build",
+  "vm_seconds": 818.1092570000328
+}

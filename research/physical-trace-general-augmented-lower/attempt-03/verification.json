@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralAugmentedLower"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralAugmentedLower",
+      "source": "research/physical-trace-general-augmented-lower/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean",
+      "source_sha256": "e2072c4cea1923f0e73dbd8679a9e5373341b1df1e1c5d2467f41354f9f5b408",
+      "returncode": 0,
+      "seconds": 25.541469666175544,
+      "olean_sha256": "3d45df7836b8debcf5b670ea3c252a6ffb8435b46d8187a56a6b6cb5fe16cbf0"
+    }
+  ],
+  "audit_seconds": 32.51011075032875,
+  "audit_sha256": "4b3593db109abec38d49e1489c470fe77da93ce1f2583af26197b46a2c72ea0e",
+  "audit_driver_sha256": "4bca7810c67f086a663814648bf29d1f46ac15589cbc3c9ac6327fdbbfa5da3f",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "2a663fc7dc9c269d5d4e6b8afb6a50894f74e105643d74cd1e5598afbf66ad63",
+  "declaration_count": 32,
+  "theorem_count": 22,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.inverseSupportCount_spanning_lower",
+      "closure_size": 5346,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U : ℕ) (X : OAI.ContingencyTables.Table r c),\n  (∀ (i : Fin m), 0 < r i) →\n    (∀ (j : Fin n), 0 < c j) →\n      Fintype.card\n            (OAI.ContingencyTables.SmallContextCoordinates.Cells\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)) -\n          1 ≤\n        Math115.PhysicalTraceJoin.inverseSupportCount r c U X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.augmentedInverseSupportAllowance_le_count",
+      "closure_size": 5369,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U : ℕ) (X : OAI.ContingencyTables.Table r c),\n  (∀ (i : Fin m), 0 < r i) →\n    (∀ (j : Fin n), 0 < c j) →\n      Math115.PhysicalTraceJoin.augmentedInverseSupportAllowance r c U ≤\n        Math115.PhysicalTraceJoin.inverseSupportCount r c U X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

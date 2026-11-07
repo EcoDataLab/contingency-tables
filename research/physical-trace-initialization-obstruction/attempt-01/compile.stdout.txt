@@ -1,0 +1,22 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean:41:8: error: Type mismatch
+  Finset.single_le_sum (fun x x_1 => Nat.zero_le (?m.114 x)) (Finset.mem_univ j)
+has type
+  ?m.114 j ≤ ∑ x, ?m.114 x
+but is expected to have type
+  (if small i j = true then X i j else 0) ≤ ∑ k, if small i k = true then X i k else 0
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean:68:4: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+
+Note: It is not possible to treat `largeIndices` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean:72:4: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+
+Note: It is not possible to treat `largeIndices` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean:76:9: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+
+Note: It is not possible to treat `largeIndices` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean:77:11: error(lean.unknownIdentifier): Unknown identifier `largeIndices`
+
+Note: It is not possible to treat `largeIndices` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean:86:4: error: No goals to be solved
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean:86:4: error: No goals to be solved
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean:86:4: error: No goals to be solved
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean:86:4: error: No goals to be solved

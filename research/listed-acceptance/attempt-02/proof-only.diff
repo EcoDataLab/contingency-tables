@@ -1,0 +1,5 @@
+--- attempt-01/Decision.lean
++++ attempt-02/Decision.lean
+@@ -18 +18 @@
+-open Math115.ReducedSmallChain Math115.LegacyPhysicalCompletion
++open Math115.ReducedSmallChain Math115.LegacyPhysicalCompletion Math115.PhysicalStationarySuccess

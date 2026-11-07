@@ -1,0 +1,20 @@
+import Math115.ShapeDegreeBound
+import Math115.RetainedRoot
+import Research.RetainedRootTransport
+import Research.RetainedRootPhysical
+import Research.RetainedRootShifts
+import Research.RetainedRootNonnegative
+import Research.ModeAnchor
+import Research.RetainedStencilSum
+import Research.ModeAnchorStencil
+import Research.RetainedPhysicalCap
+import Research.RetainedPhysicalSupport
+import Math115.RetainedRootSquare
+import ResearchComparison.ResidualCap
+import Research.GrowthScalar
+import Research.PositiveSupport
+import Research.SpectralPath
+import Research.SpectralPrefix
+import Research.SpectralRetained
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [Math115.ShapeDegreeBound, Math115.RetainedRoot, Research.RetainedRootTransport, Research.RetainedRootPhysical, Research.RetainedRootShifts, Research.RetainedRootNonnegative, Research.ModeAnchor, Research.RetainedStencilSum, Research.ModeAnchorStencil, Research.RetainedPhysicalCap, Research.RetainedPhysicalSupport, Math115.RetainedRootSquare, ResearchComparison.ResidualCap, Research.GrowthScalar, Research.PositiveSupport, Research.SpectralPath, Research.SpectralPrefix, Research.SpectralRetained] headlines [Math115.RetainedRootPhysical.adjacent_physical_box_leaf_transport_retained, Math115.RetainedRootPhysical.retainedRootCoefficient_shift, OAI.ContingencyTables.IntegerWeightedTransport.retainedRootCoefficient_nonnegative_limit, Math115.RetainedPhysicalCap.physical_correction_le_adjacent, Math115.RetainedPhysicalSupport.positive_physical_support_diameter, Research.PositiveSupport.positive_support_restriction, Research.SpectralPath.exists_path_rayleigh_minimizer, Research.SpectralRetained.retained_spectral_variance_bound, Math115.RetainedRootSquare.tight_fullCoefficient_bound, Research.GrowthRefinement.doubled_growth_twice, Research.GrowthRefinement.shape_gap_width_square, Research.GrowthRefinement.bounded_aspect_gap_width_square, Research.GrowthRefinement.arbitrary_aspect_width_square_integer, Math115.LegacyResidualCap.all_state_l7_cap]

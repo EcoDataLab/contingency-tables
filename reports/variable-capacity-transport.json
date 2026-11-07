@@ -1,0 +1,105 @@
+{
+  "evidence": "exact finite bridge checks; no general theorem by exhaustion",
+  "cases": [
+    {
+      "rows": [
+        3,
+        2
+      ],
+      "columns": [
+        2,
+        2,
+        1
+      ],
+      "capacities": [
+        3,
+        3,
+        2,
+        3,
+        3,
+        2
+      ],
+      "states": 100,
+      "weighted_contexts": 62,
+      "positive_auxiliary_profiles": 45,
+      "literal_leaf_edge_occurrences": 60,
+      "owned_physical_edges": 60,
+      "graph_translation_auxiliary_repair_and_variable_owner_checks": "passed"
+    },
+    {
+      "rows": [
+        2,
+        2,
+        1
+      ],
+      "columns": [
+        3,
+        2
+      ],
+      "capacities": [
+        3,
+        3,
+        3,
+        3,
+        2,
+        2
+      ],
+      "states": 100,
+      "weighted_contexts": 56,
+      "positive_auxiliary_profiles": 45,
+      "literal_leaf_edge_occurrences": 66,
+      "owned_physical_edges": 66,
+      "graph_translation_auxiliary_repair_and_variable_owner_checks": "passed"
+    },
+    {
+      "rows": [
+        3,
+        3
+      ],
+      "columns": [
+        3,
+        2,
+        1
+      ],
+      "capacities": [
+        4,
+        3,
+        2,
+        4,
+        3,
+        2
+      ],
+      "states": 126,
+      "weighted_contexts": 82,
+      "positive_auxiliary_profiles": 64,
+      "literal_leaf_edge_occurrences": 71,
+      "owned_physical_edges": 71,
+      "graph_translation_auxiliary_repair_and_variable_owner_checks": "passed"
+    },
+    {
+      "rows": [
+        3,
+        2,
+        1
+      ],
+      "columns": [
+        3,
+        3
+      ],
+      "capacities": [
+        4,
+        4,
+        3,
+        3,
+        2,
+        2
+      ],
+      "states": 126,
+      "weighted_contexts": 74,
+      "positive_auxiliary_profiles": 52,
+      "literal_leaf_edge_occurrences": 92,
+      "owned_physical_edges": 92,
+      "graph_translation_auxiliary_repair_and_variable_owner_checks": "passed"
+    }
+  ]
+}

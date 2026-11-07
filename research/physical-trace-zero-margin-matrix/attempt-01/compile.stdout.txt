@@ -1,0 +1,9 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/ZeroMarginMatrix.lean:80:2: warning: Unused tactic linter: `change
+  (if 0 < xs.getD i.val 0 then
+      if 0 < ys.getD j.val 0 then
+        DensePrograms.matrixEntry (DensePrograms.matrixCode X.val, (retainedRank xs i.val, retainedRank ys j.val))
+      else 0
+    else 0) =
+    ((zeroMarginListEquiv xs ys).symm X).val i j` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`

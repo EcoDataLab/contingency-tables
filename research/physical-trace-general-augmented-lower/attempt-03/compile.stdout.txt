@@ -1,0 +1,3 @@
+<packet>/revisions/attempt-03/formal/ResearchPhysicalTraceJoin/GeneralAugmentedLower.lean:85:19: warning: Try `simp at h` instead of `simpa using h`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`

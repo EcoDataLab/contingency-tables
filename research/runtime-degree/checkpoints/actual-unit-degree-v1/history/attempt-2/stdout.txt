@@ -1,0 +1,101 @@
+<unit-source-root>/UnitRuntime/ExchangeDegree.lean:42:4: error: Tactic `apply` failed: could not unify the conclusion of `typed_boundedRange
+  (typed_composition typed_first typed_listLength_seed) X ?m.65`
+  Typed (composition (composition first listLength) range) (max (max 1 (2 * 1)) (3 * ?m.44))
+with the goal
+  Typed (composition (composition first listLength) range) 3
+
+Note: The full type of `typed_boundedRange (typed_composition typed_first typed_listLength_seed) X ?m.65` is
+  (∀ (a : List ?m.61 × ?m.58), (List.length ∘ Prod.fst) a ≤ eval (weight a) X) →
+    Typed (composition (composition first listLength) range) (max (max 1 (2 * 1)) (3 * ?m.44))
+
+⊢ Typed (composition (composition first listLength) range) 3
+<unit-source-root>/UnitRuntime/ExchangeDegree.lean:43:88: error: unsolved goals
+⊢ 1 ≤ ?m.44
+<unit-source-root>/UnitRuntime/ExchangeDegree.lean:69:20: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  g ≥ 0
+  f ≥ 0
+  e ≥ 0
+  d ≥ 0
+  d - g ≤ -2
+  c ≥ 0
+  c - f ≥ 1
+  b ≥ 0
+  b - c ≥ 0
+  b - e ≥ 0
+where
+ b := ↑(weight z)
+ c := ↑z.1.length
+ d := ↑z.1[a]
+ e := ↑(weight (z.1.getD a 0))
+ f := ↑(z, a).1.2.2
+ g := ↑((z, a).1.1.getD (z, a).2 0)
+<unit-source-root>/UnitRuntime/ExchangeDegree.lean:69:20: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  f - h ≤ -1
+  e ≥ 0
+  d ≥ 0
+  d - g ≤ -1
+  c ≥ 0
+  c - f ≥ 1
+  b ≥ 0
+  b - c ≥ 0
+  b - e ≥ 0
+where
+ b := ↑(weight z)
+ c := ↑z.1.length
+ d := ↑z.1[a]
+ e := ↑(weight (z.1.getD a 0))
+ f := ↑(z, a).1.2.1
+ g := ↑((z, a).1.1.getD (z, a).2 0)
+ h := ↑(z, a).1.2.2
+<unit-source-root>/UnitRuntime/ExchangeDegree.lean:69:20: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  g ≥ 1
+  f ≥ 0
+  f - h ≤ -1
+  e ≥ 0
+  d ≥ 0
+  d - g ≤ -3
+  c ≥ 0
+  c - f ≥ 1
+  b ≥ 0
+  b - c ≥ 0
+  b - e ≥ 0
+where
+ b := ↑(weight z)
+ c := ↑z.1.length
+ d := ↑z.1[a]
+ e := ↑(weight (z.1.getD a 0))
+ f := ↑(z, a).1.2.2
+ g := ↑((z, a).1.1.getD (z, a).2 0)
+ h := ↑(z, a).1.2.1
+<unit-source-root>/UnitRuntime/ExchangeDegree.lean:69:20: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  i ≥ 0
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  e ≥ 0
+  e - g ≤ -2
+  d ≥ 0
+  d - h ≤ -1
+  d - i ≤ -1
+  c ≥ 0
+  c - d ≥ 1
+  b ≥ 0
+  b - c ≥ 0
+  b - f ≥ 0
+where
+ b := ↑(weight z)
+ c := ↑z.1.length
+ d := ↑a
+ e := ↑z.1[a]
+ f := ↑(weight (z.1.getD a 0))
+ g := ↑((z, a).1.1.getD (z, a).2 0)
+ h := ↑(z, a).1.2.2
+ i := ↑(z, a).1.2.1

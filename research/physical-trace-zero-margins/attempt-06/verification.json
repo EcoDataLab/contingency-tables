@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "08bda6d397d6c734d0978c21480b8f12e4f588ad",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.ZeroMargins"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.ZeroMargins",
+      "source": "research/physical-trace-zero-margins/formal/ResearchPhysicalTraceJoin/ZeroMargins.lean",
+      "source_sha256": "d1929d43ba3de90388fe6c3744b82c59cdd319fd8045191b5afa430bfb06d12a",
+      "returncode": 0,
+      "seconds": 101.6434222087264,
+      "olean_sha256": "83bbdbec1aa6f2485e26fd197cc84ea0f2bb9ef516f56c763f095c2d997aa3bc"
+    }
+  ],
+  "audit_seconds": 157.2446667086333,
+  "audit_sha256": "4ae232c8cbc199c55727679ccfa31119ba3fe5b0e29783a34062b5bbcdfbb2f9",
+  "audit_driver_sha256": "d7aae3e28636c3f43610dccfbfb7651b936c0cecb2eb8d4697e2e251201b2b6f",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "a057a10e99aab2b8a1b7e6b85c40e44b6e02ceda2c2eca649eb91ef1b247b9b8",
+  "declaration_count": 36,
+  "theorem_count": 28,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.zeroMarginEquiv_restrict_entry",
+      "closure_size": 4480,
+      "statement": "∀ {I : Type u_1} {J : Type u_2} [inst : Fintype I] [inst_1 : Fintype J] (r : I → ℕ) (c : J → ℕ)\n  (X : OAI.ContingencyTables.Table r c) (i : Math115.PhysicalTraceJoin.PositiveRows r)\n  (j : Math115.PhysicalTraceJoin.PositiveColumns c), ↑((Math115.PhysicalTraceJoin.zeroMarginEquiv r c) X) i j = ↑X ↑i ↑j",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.zeroMarginEquiv_extend_entry",
+      "closure_size": 4479,
+      "statement": "∀ {I : Type u_1} {J : Type u_2} [inst : Fintype I] [inst_1 : Fintype J] (r : I → ℕ) (c : J → ℕ)\n  (X : Math115.PhysicalTraceJoin.PositiveTable r c) (i : I) (j : J),\n  ↑((Math115.PhysicalTraceJoin.zeroMarginEquiv r c).symm X) i j =\n    if hi : 0 < r i then if hj : 0 < c j then ↑X ⟨i, hi⟩ ⟨j, hj⟩ else 0 else 0",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.restoreZeroMarginsLaw_uniform",
+      "closure_size": 7016,
+      "statement": "∀ {I : Type u_1} {J : Type u_2} [inst : Fintype I] [inst_1 : Fintype J] (r : I → ℕ) (c : J → ℕ)\n  (htotal : ∑ i, r i = ∑ j, c j),\n  Math115.PhysicalTraceJoin.restoreZeroMarginsLaw r c OAI.ContingencyTables.FirstSuccess.uniformLaw =\n    OAI.ContingencyTables.FirstSuccess.uniformLaw",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.restoreZeroMarginsLaw_uniform_variation",
+      "closure_size": 7021,
+      "statement": "∀ {I : Type u_1} {J : Type u_2} [inst : Fintype I] [inst_1 : Fintype J] (r : I → ℕ) (c : J → ℕ)\n  (htotal : ∑ i, r i = ∑ j, c j)\n  (q : OAI.ContingencyTables.ResidualMixture.RationalLaw (Math115.PhysicalTraceJoin.PositiveTable r c)),\n  OAI.ContingencyTables.FirstSuccess.variation (Math115.PhysicalTraceJoin.restoreZeroMarginsLaw r c q)\n      OAI.ContingencyTables.FirstSuccess.uniformLaw =\n    OAI.ContingencyTables.FirstSuccess.variation q OAI.ContingencyTables.FirstSuccess.uniformLaw",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

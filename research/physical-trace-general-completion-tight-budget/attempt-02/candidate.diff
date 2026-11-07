@@ -1,0 +1,4 @@
+--- initial.lean
++++ checked.lean
+@@ -110,0 +111 @@
++include hr hc in

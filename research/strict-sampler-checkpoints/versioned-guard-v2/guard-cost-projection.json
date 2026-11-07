@@ -1,0 +1,7 @@
+{
+  "measured_original_whole_guard_seconds": 26.924304300000017,
+  "measured_v2_whole_guard_seconds": 1.1288377999999852,
+  "scope": "One observed whole stat-only call multiplied by complete-run call count; excludes compiler/export/kernel, hidden-object scans, full byte inventories and other work. Not a measured complete run or runtime theorem.",
+  "source_derived_complete_run_stat_guards": 2724,
+  "v2_guard_only_extrapolation_seconds": 3074.9541671999596
+}

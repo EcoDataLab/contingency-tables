@@ -1,0 +1,48 @@
+{
+  "archive_validation_layout": "Copy the byte-identical validator into this packet source directory in a fresh working copy; it resolves this packet evidence relative to itself.",
+  "archive_validator": "../snapshot-comparison-v1/source/validate_archive.py",
+  "auth_command_source": "../snapshot-comparison-v1/reproduction-references.json",
+  "auth_runner": "Unchanged original runner only; do not overwrite or change its authenticated SHA.",
+  "authenticator": "../authentication-diagnostics-v1/delta/runner/authenticate_runtime.py",
+  "authenticator_sha256": "742ec1105d5bb44a392046ec06ca5944a20989bc0cb5a037d2997b37def2b943",
+  "base_bindings": "../authentication-diagnostics-v1/base-reference.json",
+  "base_source_packet": "../unused-cache-policy-v1/",
+  "benchmark_argv": [
+    "python3",
+    "-I",
+    "<guest-tools>/guard-benchmark.py",
+    "--runner",
+    "<pinned-original-runner>",
+    "--candidate-runner",
+    "<additional-owned-v2-dir>/strict_sampler.py",
+    "--metrics",
+    "<fresh-owned-metrics>",
+    "--root",
+    "<checking-root>",
+    "--runtime-freeze",
+    "<actual-emitted-runtime>",
+    "--runtime-freeze-sha256",
+    "<actual-emitted-runtime-sha256>",
+    "--output",
+    "<fresh-plan-output>"
+  ],
+  "candidate_assets": "Guest entry copies exact source-freeze.json and three hash-pinned tested-runtime helpers from retained original runner to additional v2 directory after original authentication; all copied bytes are compared.",
+  "iso_builder": "build_iso.py using pycdlib1.16.0, exact source supplied",
+  "limits": "Portable source/profile/commands do not supply private outer VM supervision, retained images/bootstrap context, source archive or seed ISO. No independent full VM reproduction or full proof is claimed.",
+  "original_runner": "../authentication-diagnostics-v1/delta/runner/strict_sampler.py",
+  "original_runner_sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6",
+  "prior_standalone_snapshot": "../snapshot-comparison-v1/",
+  "seed_command": [
+    "python3",
+    "make_seed.py",
+    "--output",
+    "<fresh-seed-source>"
+  ],
+  "seed_layout": "Place current source files plus byte-identical referenced installer/media/authenticator together in a fresh owned working directory; create payload with referenced installation-manifest.json and retained bound sources.tar.gz. make_seed.py embeds v2 as strict_sampler.py in a separate guest tools directory.",
+  "source_archive_sha256": "47e864e49025da1e505c32ae1c5f23428ed900b1ecc64468cb72478095824a84",
+  "unchanged_helper_copies": {
+    "install_sources.py": "../snapshot-comparison-v1/source/install_sources.py",
+    "payload/installation-manifest.json": "../snapshot-comparison-v1/source/installation-manifest.json",
+    "seed_media.py": "../snapshot-comparison-v1/source/seed_media.py"
+  }
+}

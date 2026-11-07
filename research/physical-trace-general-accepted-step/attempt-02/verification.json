@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralAcceptedStep"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralAcceptedStep",
+      "source": "research/physical-trace-general-accepted-step/formal/ResearchPhysicalTraceJoin/GeneralAcceptedStep.lean",
+      "source_sha256": "58174a5ec9b176cebe7c5f141f83927610e4bc2de076e2074b6001e5c6c2adfa",
+      "returncode": 0,
+      "seconds": 33.4298502500169,
+      "olean_sha256": "fb8460951778e33f4f515e73d59fb100998246c844809a7c2f0b88d1b0f1edbe"
+    }
+  ],
+  "audit_seconds": 30.545048834290355,
+  "audit_sha256": "e3234d18b4ac832f7f33492d6f47d89b4560abf2ed01071bc1fbe699c1fd5b63",
+  "audit_driver_sha256": "f7f0436d385b8605ed520dda7ea9a46162cd27505e638e7beb50b03f8dcbb76d",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "30ee4bf26d2a61771e62654a53d785721f0442d9ac076f5a8172ac21b84dc78e",
+  "declaration_count": 19,
+  "theorem_count": 11,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.rawIncomingAcceptedStep_eq",
+      "closure_size": 11825,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (source : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N h : ℕ)\n      (word :\n        Fin\n            (N * Math115.RationalClockProposal.precision (Math115.RationalClockProposal.denominator r c U) +\n              Math115.LegacyPhysicalCompletion.bits r c U L hr hc (↑source) h) →\n          Bool),\n      Math115.PhysicalTraceJoin.rawIncomingAcceptedStep (List.ofFn r) (List.ofFn c) U L\n          (Math115.RationalClockProposal.denominator r c U) N h\n          (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑source) (List.ofFn word) =\n        Math115.PhysicalComputedProposal.computedStateCode r c U L\n          (Math115.RationalClockStep.incomingStep r c U L hr hc source N h word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawAcceptedWalk_eq_wordWalk",
+      "closure_size": 812,
+      "statement": "∀ {X : Type u_1} {B : ℕ} (encode : X → List ℕ × List ℕ) (step : X → (Fin B → Bool) → X)\n  (rawStep : List ℕ × List ℕ → List Bool → List ℕ × List ℕ),\n  (∀ (x : X) (word : Fin B → Bool), rawStep (encode x) (List.ofFn word) = encode (step x word)) →\n    ∀ (start : X) (T : ℕ) (words : Fin T → Fin B → Bool),\n      Math115.PhysicalTraceJoin.rawAcceptedWalk rawStep (encode start) (List.ofFn fun i => List.ofFn (words i)) =\n        encode (OAI.ContingencyTables.FirstSuccess.wordWalk step start T words)",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

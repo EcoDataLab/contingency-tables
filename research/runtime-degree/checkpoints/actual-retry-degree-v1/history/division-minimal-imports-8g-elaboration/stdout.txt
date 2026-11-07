@@ -1,0 +1,57 @@
+<repo>/<division-source>/DivisionRuntime/Degree.lean:42:2: error: Tactic `apply` failed: could not unify the conclusion of `typed_pair (typed_composition typed_second typed_first)`
+  Typed (pair (composition second first) ?m.29) (max (max (max 1 (1 * 1)) ?m.31) 1)
+with the goal
+  Typed
+    (pair (composition second first)
+      (choose
+        (composition
+          (pair
+            (composition
+              (pair (composition (composition (composition second second) second) double)
+                (composition first digitValue))
+              add)
+            (composition second first))
+          less)
+        (pair (composition (composition (composition second second) first) double)
+          (composition
+            (pair (composition (composition (composition second second) second) double) (composition first digitValue))
+            add))
+        (pair (composition (pair (composition (composition (composition second second) first) double) (constant 1)) add)
+          (composition
+            (pair
+              (composition
+                (pair (composition (composition (composition second second) second) double)
+                  (composition first digitValue))
+                add)
+              (composition second first))
+            subtract))))
+    1
+
+Note: The full type of `typed_pair (typed_composition typed_second typed_first)` is
+  Typed ?m.29 ?m.31 → Typed (pair (composition second first) ?m.29) (max (max (max 1 (1 * 1)) ?m.31) 1)
+
+⊢ Typed
+    (pair (composition second first)
+      (choose
+        (composition
+          (pair
+            (composition
+              (pair (composition (composition (composition second second) second) double)
+                (composition first digitValue))
+              add)
+            (composition second first))
+          less)
+        (pair (composition (composition (composition second second) first) double)
+          (composition
+            (pair (composition (composition (composition second second) second) double) (composition first digitValue))
+            add))
+        (pair (composition (pair (composition (composition (composition second second) first) double) (constant 1)) add)
+          (composition
+            (pair
+              (composition
+                (pair (composition (composition (composition second second) second) double)
+                  (composition first digitValue))
+                add)
+              (composition second first))
+            subtract))))
+    1

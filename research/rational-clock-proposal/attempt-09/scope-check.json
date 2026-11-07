@@ -1,0 +1,9 @@
+{
+  "original_source_sha256": "c38152e7b93422489c05a6ffdd4cc185622eeadef57520eabbdf119e41a49089",
+  "final_source_sha256": "b64561e8ce753f25d91c18eb00afb11a4a2c402194fe1c7d71da7981fdb9f0cd",
+  "original_statements_unchanged": true,
+  "new_declarations": [
+    "cappedList_variation_decidableEq"
+  ],
+  "scope": "Original declaration headers and hypotheses compared; new proof helpers listed. Mathematical definition bodies require the accompanying source review."
+}

@@ -1,0 +1,55 @@
+{
+  "checked_utc": "2026-11-06 23:11:25 UTC",
+  "pinned_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "observed_default_branch_commit": "4eaee87548250b2682affda7d05d947c05554bae",
+  "observed_commit_date": "2026-10-30T00:35:35Z",
+  "objects": [
+    {
+      "path": "lean/docs/115.md",
+      "type": "file",
+      "pinned_git_object": "1aa44edde15aa918b1f0773087ebfb3e98df810c",
+      "current_git_object": "1aa44edde15aa918b1f0773087ebfb3e98df810c",
+      "unchanged": true
+    },
+    {
+      "path": "lean/ComparatorChallenges/ContingencyTables.json",
+      "type": "file",
+      "pinned_git_object": "3679538ca2b993d66451e3f75dc18796c8570529",
+      "current_git_object": "3679538ca2b993d66451e3f75dc18796c8570529",
+      "unchanged": true
+    },
+    {
+      "path": "lean/ComparatorChallenges/ContingencyTables.lean",
+      "type": "file",
+      "pinned_git_object": "898c717347f72973521c92597d7aee9818eb13b4",
+      "current_git_object": "898c717347f72973521c92597d7aee9818eb13b4",
+      "unchanged": true
+    },
+    {
+      "path": "lean/OAI/Combinatorics/ContingencyTables",
+      "type": "dir",
+      "pinned_git_object": "9835a5a982b0d4a6de79f735a94fc36f0c33276d",
+      "current_git_object": "9835a5a982b0d4a6de79f735a94fc36f0c33276d",
+      "unchanged": true
+    },
+    {
+      "path": "preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026/main.pdf",
+      "type": "file",
+      "pinned_git_object": "3891b55db533313892a6ce0f95b3c65e81b18260",
+      "current_git_object": "3891b55db533313892a6ce0f95b3c65e81b18260",
+      "unchanged": true
+    }
+  ],
+  "method": "GitHub directory metadata at both exact commits; identical blob IDs for files and tree ID for the complete contingency-table source subtree. The repository-wide compare response was capped at 300 files and was not used to conclude absence of changes.",
+  "scope": "Only the five named inputs; no comparison of every external/shared dependency and no new build. The archived source bundle and pinned upstream commit are unchanged.",
+  "source_urls": [
+    "https://api.github.com/repos/openai/math/contents/lean/docs?ref=fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "https://api.github.com/repos/openai/math/contents/lean/ComparatorChallenges?ref=fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "https://api.github.com/repos/openai/math/contents/lean/OAI/Combinatorics?ref=fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "https://api.github.com/repos/openai/math/contents/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026?ref=fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "https://api.github.com/repos/openai/math/contents/lean/docs?ref=4eaee87548250b2682affda7d05d947c05554bae",
+    "https://api.github.com/repos/openai/math/contents/lean/ComparatorChallenges?ref=4eaee87548250b2682affda7d05d947c05554bae",
+    "https://api.github.com/repos/openai/math/contents/lean/OAI/Combinatorics?ref=4eaee87548250b2682affda7d05d947c05554bae",
+    "https://api.github.com/repos/openai/math/contents/preprints/Exact-Uniform-Sampling-of-Contingency-Tables-with-Arbitrary-Margins-September-24-2026?ref=4eaee87548250b2682affda7d05d947c05554bae"
+  ]
+}

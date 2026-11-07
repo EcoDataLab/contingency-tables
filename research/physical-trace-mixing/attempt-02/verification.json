@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "ef489fe5fdf5213604a4fa9e015d33fef9105fd7",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.Mixing"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.Mixing",
+      "source": "research/physical-trace-mixing/formal/ResearchPhysicalTraceJoin/Mixing.lean",
+      "source_sha256": "800fe9713c5a4a757bd5e7d5c5f8ddeefbb1d20c172cd898dc64d77e10401ea1",
+      "returncode": 0,
+      "seconds": 66.68163254112005,
+      "olean_sha256": "d875fcca12ab60db554e83b776777ccf8f76b0228d055f5f93e5cb485a4e219e"
+    }
+  ],
+  "audit_seconds": 187.23370087519288,
+  "audit_sha256": "ba045aafca3f43a230ba716ee1d8408538587bc562ee2891a71e74a1b4ef25f5",
+  "audit_driver_sha256": "a79468d7aa93f21903bda308760c467601d9dc6e5b45d38f541ec59345a65cdf",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "4411c47964f6b9c19630ad4833adafcc1fea68d079480a5cc8cda6b2aba15062",
+  "declaration_count": 27,
+  "theorem_count": 17,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.defectStationaryRat_cast",
+      "closure_size": 11727,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  [inst : Nonempty (Math115.PhysicalDefectTrace.DefectVertices r c U L)]\n  (hp :\n    2 ≤\n      Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n  (d : Math115.PhysicalDefectTrace.DefectVertices r c U L),\n  ↑(Math115.PhysicalTraceJoin.defectStationaryRat r c U L d) =\n    (Math115.ComputedReferenceTrace.computedReferenceTrace r c U L hr hc hp).π d",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.computedTrace_pi_lower",
+      "closure_size": 12924,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  [inst : Nonempty (Math115.PhysicalDefectTrace.DefectVertices r c U L)]\n  (hp :\n    2 ≤\n      Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n  (d : Math115.PhysicalDefectTrace.DefectVertices r c U L),\n  1 / Math115.PhysicalFiniteWalk.massAllowance r U L ≤\n    (Math115.ComputedReferenceTrace.computedReferenceTrace r c U L hr hc hp).π d",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.idealJoinedWalk_mixing",
+      "closure_size": 31151,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  [inst : Nonempty (Math115.PhysicalDefectTrace.DefectVertices r c U L)],\n  ∑ i, r i = ∑ j, c j →\n    2 ≤ U →\n      7 ≤ L →\n        ∀\n          (hp :\n            2 ≤\n              Fintype.card\n                (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                  (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)))\n          (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (T : ℕ),\n          ↑(OAI.ContingencyTables.FirstSuccess.variation\n                (OAI.ContingencyTables.FirstSuccess.walkLaw (Math115.PhysicalTraceJoin.idealJoinedLaw r c U L hr hc hp)\n                  start T)\n                (Math115.PhysicalTraceJoin.defectStationaryLaw r c U L)) ≤\n            Math115.PhysicalFiniteWalk.massAllowance r U L *\n              Real.exp (-↑T / Math115.PhysicalTraceJoin.aggregateMixingAllowance r c U)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.scheduledJoinedWalkWord_mixing",
+      "closure_size": 44985,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  [inst : Nonempty (Math115.PhysicalDefectTrace.DefectVertices r c U L)],\n  ∑ i, r i = ∑ j, c j →\n    2 ≤ U →\n      7 ≤ L →\n        2 ≤\n            Fintype.card\n              (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)) →\n          ∀ (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (t T : ℕ),\n            ↑(OAI.ContingencyTables.FirstSuccess.variation\n                  (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n                    (Math115.PhysicalTraceJoin.joinedWalkWord r c U L hr hc start (t + 2) (t + 2)\n                      (Math115.PhysicalStarBudget.attempts OAI.ContingencyTables.CompletionCounts.dimensionAllowance t)\n                      (Math115.PhysicalStarBudget.precision OAI.ContingencyTables.CompletionCounts.dimensionAllowance t)\n                      T))\n                  (Math115.PhysicalTraceJoin.defectStationaryLaw r c U L)) ≤\n              ↑T * ↑(Math115.CompletionRetryBudget.dyadic t) +\n                Math115.PhysicalFiniteWalk.massAllowance r U L *\n                  Real.exp (-↑T / Math115.PhysicalTraceJoin.aggregateMixingAllowance r c U)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

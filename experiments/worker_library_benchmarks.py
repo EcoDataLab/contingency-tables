@@ -243,6 +243,7 @@ def r_script(case, warmup, repetitions, seed):
     # All inserted values are validated integers. Base R only; no jsonlite.
     return f'''
 options(digits=17)
+integer_text <- function(x) paste(format(x, scientific=FALSE, trim=TRUE), collapse=",")
 clock <- function() as.numeric(Sys.time())
 for (k in seq_len({repetitions})) {{
   started <- clock()
@@ -265,9 +266,9 @@ for (k in seq_len({repetitions})) {{
   first <- vapply(draws, function(x) x[1,1], numeric(1))
   validation <- clock() - started
   cat("RUN", k-1L, {seed}+k-1L, setup, warming, drawing, validation, sep="\\t")
-  cat("\\nMETRIC\\t", paste(metrics, collapse=","), "\\nFIRST\\t", paste(first, collapse=","), "\\n", sep="")
+  cat("\\nMETRIC\\t", integer_text(metrics), "\\nFIRST\\t", integer_text(first), "\\n", sep="")
   if ({str(case.family == "exact_small_law").upper()}) {{
-    cat("TABLES\\t", paste(vapply(draws, function(x) paste(as.vector(t(x)), collapse=","), character(1)), collapse=";"), "\\n", sep="")
+    cat("TABLES\\t", paste(vapply(draws, function(x) integer_text(as.vector(t(x))), character(1)), collapse=";"), "\\n", sep="")
   }}
 }}
 '''

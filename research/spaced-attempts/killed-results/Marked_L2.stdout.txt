@@ -1,0 +1,7 @@
+<repo>/research/spaced-attempts/formal/Marked/L2.lean:181:17: warning: This simp argument is unused:
+  Nat.succ_eq_add_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Nat.add_sub_cancel]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

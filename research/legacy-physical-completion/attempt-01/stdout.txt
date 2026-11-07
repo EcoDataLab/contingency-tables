@@ -1,0 +1,14 @@
+<packet>/formal/ResearchComparison/LegacyPhysicalCompletion.lean:126:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/formal/ResearchComparison/LegacyPhysicalCompletion.lean:170:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/formal/ResearchComparison/LegacyPhysicalCompletion.lean:164:8: error: (kernel) unknown constant 'Math115.LegacyPhysicalCompletion.programTable_accuracy'

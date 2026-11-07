@@ -1,0 +1,10 @@
+{
+  "original_source_sha256": "b27b8c05cff4d4d9b9e7f712b895569823267d0c7c33a5e65472192a96547ae9",
+  "final_source_sha256": "a8c0740ad70ce8698516b87caef0d191f3b319ce165c689ed8de1eaeb73bf818",
+  "original_statements_unchanged": true,
+  "changed_headers": [],
+  "new_declarations": [
+    "bundledWordLaw"
+  ],
+  "scope": "Literal headers compared. Changed qualifications or binder names require source review; definition bodies are reviewed separately."
+}

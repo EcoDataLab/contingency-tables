@@ -1,0 +1,45 @@
+{
+  "evidence": "exact finite graph and count checks; bounded feasibility execution",
+  "scales": {
+    "U": 46,
+    "L": 2,
+    "small_cells": 5,
+    "effective_width": 2,
+    "degree_bound": 11,
+    "proposal_bits": 5,
+    "rational_inverse_gap": 88000,
+    "dyadic_inverse_gap": 128000,
+    "stationary_success_lower_bound": "1/25",
+    "completion_margin_bound": 50,
+    "local_completion_dimension": null
+  },
+  "states": 49,
+  "directed_edges_checked": 300,
+  "minimum_acceptance": "48/49",
+  "completion_weights": [
+    49,
+    50,
+    51
+  ],
+  "ordinary_count": 231,
+  "padded_count": 251,
+  "padded_ratio": "251/231",
+  "execution": {
+    "steps": 128,
+    "marks": 16,
+    "accepted": 1,
+    "fair_bits": 1552,
+    "planned_fair_bits": 68736,
+    "oracle_calls": 39,
+    "endpoint_accuracy": "unmeasured"
+  },
+  "full_table_recurrence_obstruction": {
+    "before": 33,
+    "after": 34,
+    "completion_block": [
+      1,
+      1
+    ]
+  },
+  "checks": "passed"
+}

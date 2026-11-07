@@ -1,0 +1,26 @@
+--- initial.lean
++++ checked.lean
+@@ -91 +91,4 @@
+-  have hd := (terminalJointDefect r c U L a).property.1
++  have hd : IsDefect a.2.val.val.1 a.2.val.val.2
++      (terminalRepairLabels r c U L a.1).1.val
++      (terminalRepairLabels r c U L a.1).2.val :=
++    (terminalJointDefect r c U L a).property.1
+@@ -94,2 +96,0 @@
+-  change (repairMatrix a.2.val.val.1 _ _ i j : ℤ) = _ at hx
+-  change (a.2.val.val.2 i j : ℤ) = _ at hq
+@@ -105 +106 @@
+-    (fun d e h => Subtype.ext (physicalProfile_injective small B r c L h))
++    (fun _ _ h => Subtype.ext (physicalProfile_injective small B r c L h))
+@@ -114,0 +116 @@
++  dsimp only at hl ht
+@@ -119,0 +122 @@
++    change (a.2.val.val.1 i j : ℤ) = (b.2.val.val.1 i j : ℤ)
+@@ -126,0 +130 @@
++    change (a.2.val.val.2 i j : ℤ) = (b.2.val.val.2 i j : ℤ)
+@@ -211 +215 @@
+-  rw [terminalRepairOutput, unpadSuccessfulJoint_val]
++  rw [terminalRepairOutput, PhysicalStationarySuccess.unpadSuccessfulJoint_val]
+@@ -222 +226 @@
+-    paddedTable small L (terminalRepairOutput r c U L a) =
++    Math115.PhysicalStateNonempty.paddedTable small L (terminalRepairOutput r c U L a) =

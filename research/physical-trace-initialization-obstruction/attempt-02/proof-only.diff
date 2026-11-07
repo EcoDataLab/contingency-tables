@@ -1,0 +1,13 @@
+--- initial.lean
++++ checked.lean
+@@ -9,0 +10 @@
++import OAI.Combinatorics.ContingencyTables.Rooted.LargeMarginProgram
+@@ -41 +42,2 @@
+-        Finset.single_le_sum (fun _ _ => Nat.zero_le _) (Finset.mem_univ j)
++        Finset.single_le_sum (f := fun k => if small i k then X i k else 0)
++          (fun _ _ => Nat.zero_le _) (Finset.mem_univ j)
+@@ -84,3 +86 @@
+-  intro i j hs
+-  fin_cases i <;> fin_cases j <;>
+-    norm_num [firstPaperSmall, obstructionRows, obstructionColumns] at hs ⊢
++  decide

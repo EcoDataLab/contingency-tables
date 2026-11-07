@@ -1,0 +1,6 @@
+--- initial.lean
++++ checked.lean
+@@ -224 +224,2 @@
+-    · exact (inverseNaturalProfile_small r c U L X st i j hij).2.symm
++    · simpa only [smallQ, hij, dite_eq_left] using
++        (inverseNaturalProfile_small r c U L X st i j hij).2.symm

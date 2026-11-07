@@ -183,7 +183,7 @@ class _ProductEngine:
             remaining = (budget.max_cycle_line_states_total - self.work["cycle_line_states"],
                          budget.max_cycle_weight_evaluations_total - self.work["cycle_weight_evaluations"],
                          budget.max_cycle_stored_weight_bits_total - self.work["cycle_stored_weight_bits"])
-            if min(remaining) <= 0:
+            if min(remaining) < 0:
                 raise ComputationBudgetExceeded("shared cycle preparation budget is exhausted")
             engine = CactusWeightedSampler(
                 block.problem, block.weights(self.weights), max_line_states=remaining[0],

@@ -1,0 +1,1 @@
+A missing SmallGraphProfiles namespace caused reference-identifier errors and downstream elaboration recovery. The next attempt adds that opening and exposes the existing completion equivalence explicitly. Recovery diagnostics mentioning sorry are compiler placeholders after errors, not source admissions.

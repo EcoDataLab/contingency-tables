@@ -1,0 +1,15 @@
+{
+  "module": "Research.JunctionStarBridge",
+  "source_sha256": "5c0a630edbf6b3f0ca8ebdaf208746a33fb006901e748368a3c8465ff2fc7579",
+  "source_unchanged": true,
+  "returncode": 0,
+  "seconds": 17.455,
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "olean_sha256": "8d25e99f4a99608123b864c509a75815fc65e39b436979d3931dde52def80f9c",
+  "controls": [
+    "-j2",
+    "-M8192",
+    "-DautoImplicit=false"
+  ],
+  "dependencies": "Reused authenticated prior objects; no dependency rebuild."
+}

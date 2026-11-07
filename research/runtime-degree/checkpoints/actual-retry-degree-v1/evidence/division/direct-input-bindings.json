@@ -1,0 +1,37 @@
+[
+  {
+    "module": "ResearchBounds.TreeDegreeBounds",
+    "source_path": "research/runtime-degree/checkpoints/generic-helpers-v1/ResearchBounds/TreeDegreeBounds.lean",
+    "source_sha256": "fd9a62620e3b640045845e973ae8d39a8101139e8330768c240962a8ff2a7adf",
+    "selected_olean_sha256": "6e50be11d6d84f05a46926df2cae970d1c2e160852318e100409432fba23c649",
+    "selected_object_role": "authenticated existing helper/baseline import"
+  },
+  {
+    "module": "ResearchBounds.TreeArithmeticDegree",
+    "source_path": "research/runtime-degree/checkpoints/generic-helpers-v1/ResearchBounds/TreeArithmeticDegree.lean",
+    "source_sha256": "361d29175d4e878235a1519884d288d3fe3cab234fce5313e35ff4603ff76f76",
+    "selected_olean_sha256": "075d51285a6c2bb0afff64b9f9e0a2c2ddb783f2b052db6bcfa419247ebf4f9d",
+    "selected_object_role": "authenticated existing helper/baseline import"
+  },
+  {
+    "module": "OAI.Combinatorics.MatchingCount.Complexity.TreePolynomialDivision",
+    "source_path": "upstream-pinned-source/OAI/Combinatorics/MatchingCount/Complexity/TreePolynomialDivision.lean",
+    "source_sha256": "f39445960a99be3e4fdb5f6dd0452fa15676bec46e7191c5167276fee9523c95",
+    "selected_olean_sha256": "d53a8b58ded155ba96d17aae5320d7b36b9bf7bf6c93c82fb3fc0f71a8ed29d4",
+    "selected_object_role": "authenticated existing helper/baseline import"
+  },
+  {
+    "module": "OAI.Combinatorics.MatchingCount.Arithmetic.TreeNatDivision",
+    "source_path": "upstream-pinned-source/OAI/Combinatorics/MatchingCount/Arithmetic/TreeNatDivision.lean",
+    "source_sha256": "9fa0f710ac05776313eaa0fb3cf823bd3fdfa1a7c9df7fa3d112e7425e3f5d2c",
+    "selected_olean_sha256": "18b9264d016d11bd55dd1880b3245bc913d09eaea752e48041f9690fad0f8455",
+    "selected_object_role": "authenticated existing helper/baseline import"
+  },
+  {
+    "module": "OAI.Combinatorics.MatchingCount.Machines.TreeNaturalComb",
+    "source_path": "upstream-pinned-source/OAI/Combinatorics/MatchingCount/Machines/TreeNaturalComb.lean",
+    "source_sha256": "a0b147e1478e586692e9faad05d18bc6831c41a8509e39b9b6494e913c0435e6",
+    "selected_olean_sha256": "41a2d62aa1337142796c074c02133104ebf41cad3abb1ea310d4be996f879366",
+    "selected_object_role": "authenticated existing helper/baseline import"
+  }
+]

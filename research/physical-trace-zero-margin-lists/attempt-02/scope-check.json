@@ -1,0 +1,10 @@
+{
+  "original_source_sha256": "62896cc7d06fb1b6bd743fe0f6c14ffa88552a6e02eae5c201b4d1dca0698523",
+  "final_source_sha256": "8c6b303ed16f6880cdf264c98b539caa51775a9bc12467cf8194684e23652b22",
+  "original_statements_unchanged": true,
+  "new_declarations": [
+    "ofFn_filteredMargin",
+    "ofFn_listMargin"
+  ],
+  "scope": "Original lemma/theorem/def headers and hypotheses compared; new helpers listed. Aliases and mathematical definition bodies require the accompanying source review."
+}

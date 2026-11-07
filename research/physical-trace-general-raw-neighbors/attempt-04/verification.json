@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "71ea4ee9926e2e5248ab218261efb0c058f1b2cd",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralRawNeighbors"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralRawNeighbors",
+      "source": "research/physical-trace-general-raw-neighbors/formal/ResearchPhysicalTraceJoin/GeneralRawNeighbors.lean",
+      "source_sha256": "cd9d79a6430878889956f79613d2215f82c64804a57cb8dbe06f20006d5a3834",
+      "returncode": 0,
+      "seconds": 77.5513003342785,
+      "olean_sha256": "ade9005e0a1686699bd9151ac80e6848ac72c64495fbebd263323969094813e9"
+    }
+  ],
+  "audit_seconds": 76.61512437509373,
+  "audit_sha256": "3de07444f72e51119e3715b227b8b3ad0839031e2152fe1524db4f703b377dc9",
+  "audit_driver_sha256": "4ca00aefc359328d34ad0fae059c6e9a7c1a2373e9f2062ee3ee96d9e0475c07",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "37adae8dd4bec5b1dbd25338b9dc821c074174a062cf6bc9b89061bd3a077b74",
+  "declaration_count": 11,
+  "theorem_count": 7,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.physicalNeighbors_map_computedStateCode",
+      "closure_size": 10822,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (x : Math115.ReducedSmallChain.States r c U L),\n      List.map (Math115.PhysicalComputedProposal.computedStateCode r c U L)\n          (Math115.RationalClockProposal.physicalNeighbors r c U L x) =\n        OAI.ContingencyTables.ProfilePrograms.codeNeighbors\n          (OAI.ContingencyTables.SmallGraphProfiles.codeCheckData\n            (Math115.PhysicalComputedProposal.computedCatalog r c U) (List.ofFn r) (List.ofFn c) U\n            (Math115.PhysicalComputedProposal.computedStateCode r c U L x))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawClockNeighborDraw_eq",
+      "closure_size": 11301,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (x : Math115.PhysicalDefectTrace.DefectVertices r c U L) (N : ℕ)\n      (word :\n        Fin (N * Math115.RationalClockProposal.precision (Math115.RationalClockProposal.denominator r c U)) → Bool),\n      Math115.PhysicalTraceJoin.rawClockNeighborDraw\n          (OAI.ContingencyTables.SmallGraphProfiles.codeCheckData\n            (Math115.PhysicalComputedProposal.computedCatalog r c U) (List.ofFn r) (List.ofFn c) U\n            (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑x))\n          (Math115.RationalClockProposal.denominator r c U) N word =\n        Option.map (Math115.PhysicalComputedProposal.computedStateCode r c U L)\n          (Math115.RationalClockProposal.physicalProposal r c U L x N word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

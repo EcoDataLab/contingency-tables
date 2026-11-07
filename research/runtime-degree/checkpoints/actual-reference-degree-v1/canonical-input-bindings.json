@@ -1,0 +1,49 @@
+{
+  "status": "frozen-A-source-object-and-selected-prefix-bindings-match",
+  "binding_manifest": ".local/further-gap/draw-runtime-next/input-normalization/frozen-bindings.json",
+  "binding_manifest_sha256": "b26ae149931c2b627583a5ded5d5cfe9cb687e3e4da38904d925e1c12328aeb7",
+  "selected_prefix": ".local/further-gap/draw-runtime-next/input-normalization/canonical-03/objects",
+  "bindings": [
+    {
+      "module": "InputNormalization.MaximalIndex",
+      "source": ".local/further-gap/draw-runtime-next/input-normalization/source/InputNormalization/MaximalIndex.lean",
+      "source_sha256": "c903cdfd4fcab7e9c5ddf855eaae22b8521e084ff1b2400e700961856a26f0cc",
+      "object": ".local/further-gap/draw-runtime-next/input-normalization/swap-01/objects/InputNormalization/MaximalIndex.olean",
+      "object_sha256": "fe716f9f02f8647c0e63c250f9a68593476cbcd3b9266911167db7c80548080b",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/input-normalization/swap-01/compilation.json"
+    },
+    {
+      "module": "InputNormalization.SwapEnvelope",
+      "source": ".local/further-gap/draw-runtime-next/input-normalization/source/InputNormalization/SwapEnvelope.lean",
+      "source_sha256": "b9881d0835b603118cc8d5d01e7be400cfea3622f3f2b6a679b4e08baa32757c",
+      "object": ".local/further-gap/draw-runtime-next/input-normalization/swap-01/objects/InputNormalization/SwapEnvelope.olean",
+      "object_sha256": "88fcfb6ae6570ff6b53fdcac38a2b7ee33882defafe8a5f8b559f6f644d7dcf0",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/input-normalization/swap-01/compilation.json"
+    },
+    {
+      "module": "InputNormalization.SwapDegree",
+      "source": ".local/further-gap/draw-runtime-next/input-normalization/source/InputNormalization/SwapDegree.lean",
+      "source_sha256": "56743941dfef7209b883c037aa6b8f52716fde5c44500a6936fcef2025a8a56a",
+      "object": ".local/further-gap/draw-runtime-next/input-normalization/swap-02/objects/InputNormalization/SwapDegree.olean",
+      "object_sha256": "71a79f2f6ba7d2681b387b436d5e62812595a7b84c1eff5f41c959ff0ae7e225",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/input-normalization/swap-02/compilation.json"
+    },
+    {
+      "module": "InputNormalization.PreparedDegree",
+      "source": ".local/further-gap/draw-runtime-next/input-normalization/source/InputNormalization/PreparedDegree.lean",
+      "source_sha256": "1774820a0b23220f9f1335600fb0543c6f8aea68a60a46a2c1edec1cd1ad7d82",
+      "object": ".local/further-gap/draw-runtime-next/input-normalization/prepared-01/objects/InputNormalization/PreparedDegree.olean",
+      "object_sha256": "207591bd8e29619dadf864994ae755123baa04c82bb4a71948d204aa342d7720",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/input-normalization/prepared-01/compilation.json"
+    },
+    {
+      "module": "InputNormalization.CanonicalDegree",
+      "source": ".local/further-gap/draw-runtime-next/input-normalization/source/InputNormalization/CanonicalDegree.lean",
+      "source_sha256": "fbb68b5fa679d8aee27acc3787c65bd23daa850dda3f5db2a2fcbb9efbdbcf09",
+      "object": ".local/further-gap/draw-runtime-next/input-normalization/canonical-03/objects/InputNormalization/CanonicalDegree.olean",
+      "object_sha256": "1431f9185e523241e65a8b449b7fbb69dabece0daa63b546f2c6c945e6795233",
+      "compile_receipt": ".local/further-gap/draw-runtime-next/input-normalization/canonical-03/compilation.json"
+    }
+  ],
+  "scope": "ordinary reuse of independently compiled normalization helpers; no dependency rebuild or frozen source modification"
+}

@@ -1,0 +1,38 @@
+--- initial.lean
++++ checked.lean
+@@ -76 +76 @@
+-  simpa only [cellCatalog, List.map_ofFn] using
++  simpa only [cellCatalog, List.map_ofFn, Function.comp_def] using
+@@ -88 +88 @@
+-  unfold computedStateCode stateCode
++  unfold computedStateCode Math115.PhysicalComputedProposal.stateCode
+@@ -97,2 +97,3 @@
+-    rw [listedInitializationTransfer_code]
+-    rfl
++    simpa only [inverseNaturalProfile, Bool.false_eq_true, ite_false, inverseRowView] using
++      listedInitializationTransfer_code r c U L X (st.val.2.val.1,st.val.1.val.2)
++        st.val.2.val (computedCellEquiv r c U i).val.1 (computedCellEquiv r c U i).val.2
+@@ -102,6 +103,5 @@
+-    rw [listedInitializationTransfer_code]
+-    change U - inverseColumnView (inverseTarget r c U L X).val st.val.1.val st.val.2.val
+-      (computedCellEquiv r c U i).val.1 (computedCellEquiv r c U i).val.2 =
+-      capacity r c U L (computedCellEquiv r c U i).val.1
+-        (computedCellEquiv r c U i).val.2 - _
+-    rw [capacity_small r c U L _ _ (computedCellEquiv r c U i).property]
++    have ht := listedInitializationTransfer_code r c U L X (st.val.2.val.1,st.val.1.val.2)
++      st.val.1.val (computedCellEquiv r c U i).val.1 (computedCellEquiv r c U i).val.2
++    simpa only [inverseNaturalProfile, ite_true, inverseColumnView,
++      capacity_small r c U L _ _ (computedCellEquiv r c U i).property] using
++        congrArg (fun q => U - q) ht
+@@ -134 +134,10 @@
+-  rw [positiveTraceFallbackCode_code]
++  dsimp only
++  rw [positiveTraceFallbackCode_code xs ys htotal]
++  have hs1 : st.val.1.val = ((initializationLabelSearch (filteredMargin xs)
++      (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h).1 := rfl
++  have hs2 : st.val.2.val = ((initializationLabelSearch (filteredMargin xs)
++      (filteredMargin ys) (positiveTraceCutoff xs ys) X).get h).2 := rfl
++  have hstart : positiveTraceInitialStart xs ys htotal hb =
++      inverseDefectState (filteredMargin xs) (filteredMargin ys) (positiveTraceCutoff xs ys) 7 X
++        ⟨st.val, (inverseLocalTest_iff_support _ _ _ _ (by decide) X st.val).mpr st.property⟩ := rfl
++  rw [hstart, ← hs1, ← hs2]

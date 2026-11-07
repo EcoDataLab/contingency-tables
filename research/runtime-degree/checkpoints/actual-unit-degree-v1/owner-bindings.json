@@ -1,0 +1,27 @@
+[
+  {
+    "owner": "reference-trial-cost",
+    "record": ".local/further-gap/draw-runtime-next/reference-trial-cost/ReferenceRuntime_DecoderDegree.compilation.json",
+    "record_sha256": "a60d68014c56461e4e0088d72c8337310c29f2dfd308c6677beb5cfb2a37f559"
+  },
+  {
+    "owner": "repair-trial-cost",
+    "record": ".local/further-gap/draw-runtime-next/repair-trial-cost/verification.json",
+    "record_sha256": "d0ad38fce88e98b17b8260731bec6927ec3a32cd185c53d2ee510b1408ecf5df"
+  },
+  {
+    "owner": "affine-mapwith",
+    "record": ".local/further-gap/draw-runtime-next/affine-mapwith/AffineMapWith_Degree.compilation.json",
+    "record_sha256": "86d0b8c8d9cfe0d0adcead3654d94d0152a7224c5d460604a4c31a2819713b7e"
+  },
+  {
+    "role": "authenticated-original-import-reuse",
+    "record": ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/import-02-receipt.json",
+    "record_sha256": "4b762df98a07aa80384bd42c43ad97f8a88412d9d7caa905d0b221f8a83a6c4e"
+  },
+  {
+    "role": "authenticated-original-import-reuse",
+    "record": ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/reuse-map.json",
+    "record_sha256": "a0fbc6641a573f46e3fbf50ec176297e54c7b23a18ca904cba5c9e53d388f27c"
+  }
+]

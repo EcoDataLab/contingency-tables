@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "date_utc": "2026-10-11",
+  "source_checkout_base_commit": "0aab9b96c8a3d6c93577eb9ae682ee93cc98cfca",
+  "source_sha256": {
+    "src/contingency115/defect_chain.py": "490cf0ddc436e7cb62a2d25d695c76014691011cf2818acf92468431a9638df8",
+    "src/contingency115/general_defect_chain.py": "2a39bba2c2a4421e9f25573e1994f00239151c8de8cf2c6505ddb3549d219e3d",
+    "src/contingency115/general_defect_terminal.py": "7baa850193a578dcac31c54981c22900a108c5c589658c1d260ce3a3ab96ce09",
+    "src/contingency115/general_scales.py": "f52da8faf0c92af8df6b875ca4ce13abc4ad2ef78dac441629bc4ec96a887f1e",
+    "src/contingency115/small_completion.py": "35590006e1ca6e3b175f6baf5bb22ecc1d8e43ce4e560d1f6359d5e8842a805c",
+    "src/contingency115/general_neighbors.py": "0140cc52a04245046651a2ede418b878d59603f3639f16ac0209e1dd36ea8521",
+    "tests/test_defect_chain.py": "5240b347402957cb59dbf13c1f88cc4d6dc5a10e28cef5ce992181484c911513",
+    "tests/test_general_defect_chain.py": "ed6d5896082718897068d608d5d7a755048b328b859222edf13d99c32cd02037",
+    "tests/test_general_defect_terminal.py": "b99771711e8fc5f54d96695479b35c6368aa4c591318ec5551cb5184f2b52426",
+    "tests/test_general_scales.py": "fb289eaee42731b9e2f23d451b1a310ce0fc340aebb42877bcf8d422854f0e20",
+    "tests/test_small_completion.py": "ccd6c2c06668006cf82e0d3cfce18fc674e2a4a049d0bde446463ca537d563f0",
+    "experiments/shape_defect.py": "2a13e4172ab6941fd53524b34e7a74b59bb8d9b77e0fdd6a364a8d714f43dd32",
+    "experiments/resolvent_rejection.py": "0b4389a4edf872e3afdcb24da855fc6f6471027d90bae5e1e64d83d483afd20e",
+    "research/spaced-attempts/formal/Marked/Survivor.lean": "f9d0ea93a2a47181e2a6be3fc407cffb714ad781687c66a1be376fabc5f8ea86",
+    "research/spaced-attempts/formal/Marked/L2.lean": "7f4c11a1c4352f6f6a594596f9405f1fa669b3f0ad9bb9fab6cd57979c3d926e",
+    "research/repair-accept/verify.py": "f96629c8bfbacb02af75e67e6ec765420484b49d8825ce987f0b6096735ed3cc"
+  },
+  "artifact_sha256": {
+    "reports/shape-defect.json": "057f5c4383990db7a80399e6eb3c3439864217ef7ffdb2afd010776db3d3463e",
+    "reports/resolvent-rejection.json": "e86bfdb76908f2ed18f025d0f2adf838ae69b0bb6db9520768095041b0805f97",
+    "reports/general-defect-verify.log.gz": "8e412c23d3643712199f1ca1241f51995d7f075da12c4f2e160c2daf64b3ea46",
+    "research/spaced-attempts/results/verification.json": "d662354f05243baac48b4af9da143bf0cbaffe8dc86344d27d35c3cf5176ffa3"
+  },
+  "verification": {
+    "command": "make verify",
+    "exit_code": 0,
+    "tests_run": 397,
+    "tests_passed": 396,
+    "tests_skipped": 1,
+    "skip": "optional SciPy dependency unavailable",
+    "other_checks": [
+      "archived finite audit",
+      "saved claims ledger",
+      "pinned source bundle",
+      "independent exact crosscheck",
+      "mathematical cycle-mixture certificate replay"
+    ],
+    "producer_drift": "Historical cycle-mixture producer sources differ after prior optimization; all current mathematical replay obligations passed. No byte-identical historical producer claim."
+  },
+  "finite_experiments": [
+    {
+      "command": "python3 experiments/shape_defect.py --output reports/shape-defect.json",
+      "exit_code": 0,
+      "scope": "Seven exact physical graphs and their type/degree bounds, compact proposal ownership, guarded scales and 351/381 padding witness; real small-completion/transition/terminal execution at 256 steps and 32 marks checks feasibility and counters, not endpoint accuracy."
+    },
+    {
+      "command": "python3 experiments/resolvent_rejection.py --output reports/resolvent-rejection.json",
+      "exit_code": 0,
+      "scope": "33 exact rational resolvent configurations, finite failure/output laws, randomized outputs and rare-hit/cold-start obstructions."
+    }
+  ],
+  "formal": {
+    "receipt": "research/spaced-attempts/results/verification.json",
+    "status": "fresh ordinary compilation and compiled-environment audit passed",
+    "headline": "Marked.Survivor.spaced_terminal_bound",
+    "headline_dependency_closures": 7,
+    "scope": "Finite real-kernel hybrid bound delta0+(1-s)^R+(R-1)rho/4 under explicit centered L2 contraction, positive reversible stationary probability, terminal subkernel and stationary successful output identity. Full headline closures retained; compiler and reused imports trusted. The stronger resolvent argument is not compiled here."
+  },
+  "review": {
+    "kind": "separate AI agents reviewing AI-produced research and implementation; no outside human review",
+    "degree_and_scales": "All six type bounds, Q<=4p-3, near-sharp weighted witness, guarded padding/local completion premises and fixed-block gap orders reviewed; no unresolved blocker. Constant weights do not imply an empty completion rectangle.",
+    "resolvent": "Full output-bias normalization, killed failure bound and unchanged-retry schedule reviewed; 25 independently constructed exact kernels and 500 finite schedules checked by reviewer.",
+    "bounded_components": "Source review and actual small-provider/step/terminal integration passed, including 544 adaptive finite-word branches on seven starts. Request ownership/zero capacity, unused precision allocation and malformed callback materialization were corrected before the final test pass.",
+    "resolvent_backend": "Separate source review passed; 1024 fixed-word comparisons verified identical execution in both bound modes. Certificate pairing, compatibility and preflight ordering checked.",
+    "scoped_lean": "Separate source and saved-artifact review verified the seven statements and closure records; new public-path compilation has its own receipt.",
+    "scale_helpers": "Classification and floor/ceiling arithmetic reviewed; both exact-report CLIs also reject -O before emitting evidence."
+  },
+  "scope_limits": [
+    "General inverse-gap exponent remains16; fixed-block d^8/d^(15/2) results require the explicitly guarded input class and are not runtime bounds.",
+    "General transition and terminal are bounded components, not a complete general outer sampler.",
+    "Arbitrary completion callbacks retain conditional-law and cooperative-cost contracts. The concrete provider covers at most2x2 or unique thin/empty rectangles within configured bounds.",
+    "New physical graph/scale assembly, the stronger resolvent lemma and approximation extension remain outside the compiled finite hybrid theorem.",
+    "No default-target rebuild, new complete encoded sampler, numerical bit-machine degree or strict Comparator run.",
+    "No giant certified schedule executed or practical mixing speed established."
+  ]
+}

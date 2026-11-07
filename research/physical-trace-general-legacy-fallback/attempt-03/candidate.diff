@@ -1,0 +1,5 @@
+--- initial.lean
++++ checked.lean
+@@ -16 +16 @@
+-open FirstSuccess ResidualMixture FairBits CompletionCounts
++open FirstSuccess ResidualMixture FairBits CompletionCounts PhysicalCompletionOracle

@@ -1,0 +1,13 @@
+{
+  "boundaries": [
+    "Actual imported pinned original relative() and original is_file()/stat() reference sequence",
+    "All frozen names and four-field identities compared exactly against admission and each other; no sampling",
+    "Original plan/authentication/Guard unchanged; shared exclusive lock and cold submitted tree/source pins retained",
+    "Candidate remains standalone; no atomic namespace or general concurrent-race/error equivalence claim",
+    "No approval for checker replacement or full proof execution"
+  ],
+  "prototype_review_sha256": "2a4e5c04025035093eebc4505a1231a735cc295a879e62777f492431fea9b719",
+  "prototype_sha256": "c875c20375a1bf3362ac836126c7ddb249b0669ef9b2af332691f89f6278a193",
+  "source_review_status": "Separate read-only source reviews passed standalone stable-Linux comparison; reviewers did not execute VM/benchmark.",
+  "wrapper_sha256": "2746ef7593240011ae12149f3934e2fa1a68c8f9d77139ab33747d677ec5d058"
+}

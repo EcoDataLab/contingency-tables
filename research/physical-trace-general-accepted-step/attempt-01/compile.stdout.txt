@@ -1,0 +1,42 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralAcceptedStep.lean:125:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  List.take (N * Nat.clog 2 (denominator r c U)) (List.ofFn word)
+in the target expression
+  (let proposalWidth := N * Nat.clog 2 (denominator r c U);
+    have candidate :=
+      rawClockNeighborDraw
+        (SmallGraphProfiles.codeCheckData (smallCellCatalog ((List.ofFn r, List.ofFn c), U)) (List.ofFn r) (List.ofFn c)
+          U (computedStateCode r c U L ↑source))
+        (denominator r c U) N (rawBoolWord proposalWidth (List.take proposalWidth (List.ofFn word)));
+    rawAcceptedCompletion (List.ofFn r) (List.ofFn c) U L (computedStateCode r c U L ↑source) candidate h
+      (List.drop proposalWidth (List.ofFn word))) =
+    computedStateCode r c U L (incomingStep r c U L hr hc source N h word)
+
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+htotal : ∑ i, r i = ∑ j, c j
+source : DefectVertices r c U L
+N h : ℕ
+word : Fin (N * precision (denominator r c U) + bits r c U L hr hc (↑source) h) → Bool
+parts : (Fin (N * precision (denominator r c U)) → Bool) × (Fin (bits r c U L hr hc (↑source) h) → Bool) :=
+  (splitWordEquiv (N * precision (denominator r c U)) (bits r c U L hr hc (↑source) h)) word
+hp :
+  rawClockNeighborDraw
+      (SmallGraphProfiles.codeCheckData (computedCatalog r c U) (List.ofFn r) (List.ofFn c) U
+        (computedStateCode r c U L ↑source))
+      (denominator r c U) N parts.1 =
+    Option.map (computedStateCode r c U L) (physicalProposal r c U L source N parts.1)
+htake : List.take (N * Nat.clog 2 (denominator r c U)) (List.ofFn word) = List.ofFn parts.1
+hdrop : List.drop (N * Nat.clog 2 (denominator r c U)) (List.ofFn word) = List.ofFn parts.2
+⊢ (let proposalWidth := N * Nat.clog 2 (denominator r c U);
+    have candidate :=
+      rawClockNeighborDraw
+        (SmallGraphProfiles.codeCheckData (smallCellCatalog ((List.ofFn r, List.ofFn c), U)) (List.ofFn r) (List.ofFn c)
+          U (computedStateCode r c U L ↑source))
+        (denominator r c U) N (rawBoolWord proposalWidth (List.take proposalWidth (List.ofFn word)));
+    rawAcceptedCompletion (List.ofFn r) (List.ofFn c) U L (computedStateCode r c U L ↑source) candidate h
+      (List.drop proposalWidth (List.ofFn word))) =
+    computedStateCode r c U L (incomingStep r c U L hr hc source N h word)

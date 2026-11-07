@@ -1,0 +1,176 @@
+{
+  "evidence": "exact finite weighted Markov checks; no sampling simulation",
+  "stationary": [
+    "1/2",
+    "1/3",
+    "1/6"
+  ],
+  "acceptance": [
+    "1/3",
+    "1/2",
+    "1"
+  ],
+  "stationary_success": "1/2",
+  "target": [
+    "1/3",
+    "1/3",
+    "1/3"
+  ],
+  "centered_eigenvalue": "1/2",
+  "counterexample": {
+    "stationary_start_unspaced_8_marks_output": [
+      "385/768",
+      "85/256",
+      "1/6"
+    ],
+    "TV": "43/256",
+    "incorrect_iid_exhaustion_bound": "1/256",
+    "infinite_one_step_output": [
+      "9/23",
+      "8/23",
+      "6/23"
+    ],
+    "infinite_one_step_TV": "5/69"
+  },
+  "cases": [
+    {
+      "initial": "stationary",
+      "marks": 1,
+      "spacing": 0,
+      "output": [
+        "2/3",
+        "1/6",
+        "1/6"
+      ],
+      "TV_target": "1/3",
+      "failure": "1/2",
+      "independent_stationary_failure": "1/2",
+      "hybrid_output_TV": "0",
+      "hybrid_bound": "0",
+      "largest_actual_block_TV": "0"
+    },
+    {
+      "initial": "stationary",
+      "marks": 2,
+      "spacing": 4,
+      "output": [
+        "97/192",
+        "1/4",
+        "47/192"
+      ],
+      "TV_target": "11/64",
+      "failure": "73/288",
+      "independent_stationary_failure": "1/4",
+      "hybrid_output_TV": "1/192",
+      "hybrid_bound": "1/64",
+      "largest_actual_block_TV": "1/192"
+    },
+    {
+      "initial": "stationary",
+      "marks": 8,
+      "spacing": 0,
+      "output": [
+        "385/768",
+        "85/256",
+        "1/6"
+      ],
+      "TV_target": "43/256",
+      "failure": "34955/1679616",
+      "independent_stationary_failure": "1/256",
+      "hybrid_output_TV": "127/768",
+      "hybrid_bound": "7/4",
+      "largest_actual_block_TV": "1/12"
+    },
+    {
+      "initial": "stationary",
+      "marks": 8,
+      "spacing": 1,
+      "output": [
+        "3546205/8957952",
+        "386185/1119744",
+        "774089/2985984"
+      ],
+      "TV_target": "221239/2985984",
+      "failure": "115295/13436928",
+      "independent_stationary_failure": "1/256",
+      "hybrid_output_TV": "217351/2985984",
+      "hybrid_bound": "7/8",
+      "largest_actual_block_TV": "1/24"
+    },
+    {
+      "initial": "stationary",
+      "marks": 8,
+      "spacing": 4,
+      "output": [
+        "6426370822415/18786186952704",
+        "1569395062295/4696546738176",
+        "6082235881109/18786186952704"
+      ],
+      "TV_target": "179826436459/18786186952704",
+      "failure": "121305835565/28179280429056",
+      "independent_stationary_failure": "1/256",
+      "hybrid_output_TV": "155365255531/18786186952704",
+      "hybrid_bound": "7/64",
+      "largest_actual_block_TV": "1/192"
+    },
+    {
+      "initial": "stationary",
+      "marks": 8,
+      "spacing": 8,
+      "output": [
+        "1695984374493031710175/5042878661150348673024",
+        "418769128606251354655/1260719665287587168256",
+        "1671817772232311544229/5042878661150348673024"
+      ],
+      "TV_target": "15024820776248819167/5042878661150348673024",
+      "failure": "29728198579375063325/7564317991725523009536",
+      "independent_stationary_failure": "1/256",
+      "hybrid_output_TV": "2575533227765163611/5042878661150348673024",
+      "hybrid_bound": "7/1024",
+      "largest_actual_block_TV": "1/3072"
+    },
+    {
+      "initial": "point0",
+      "burn": 4,
+      "marks": 8,
+      "spacing": 4,
+      "burn_TV": "1/32",
+      "output": [
+        "107157582553489/300578991243264",
+        "6139931544325/18786186952704",
+        "95182503980575/300578991243264"
+      ],
+      "TV_target": "6964585472401/300578991243264",
+      "initial_error_charged_once": true
+    },
+    {
+      "initial": "point1",
+      "burn": 4,
+      "marks": 8,
+      "spacing": 4,
+      "burn_TV": "1/24",
+      "output": [
+        "16588607412929/50096498540544",
+        "17813940504665/50096498540544",
+        "7846975311475/25048249270272"
+      ],
+      "TV_target": "1115107657817/50096498540544",
+      "initial_error_charged_once": true
+    },
+    {
+      "initial": "point2",
+      "burn": 4,
+      "marks": 8,
+      "spacing": 4,
+      "burn_TV": "5/96",
+      "output": [
+        "32131854112075/100192997081088",
+        "7846975311475/25048249270272",
+        "36673241723113/100192997081088"
+      ],
+      "TV_target": "3275576029417/100192997081088",
+      "initial_error_charged_once": true
+    }
+  ],
+  "checks": "survivor domination, centered variance, same-mass block bound, hybrid output/failure, initial burn error passed"
+}

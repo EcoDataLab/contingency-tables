@@ -1,0 +1,50 @@
+[
+  {
+    "module": "Math115.EffectiveWidthBound",
+    "source": "research/effective-width/formal/Math115/EffectiveWidthBound.lean",
+    "source_sha256": "73238cfc2aa621da5921b6fba02e9944c8cce94554e49ac3f5e2f6578704ea1f",
+    "returncode": 0,
+    "seconds": 21.88,
+    "olean_sha256": "a08a5e767658e3c734d5eb2fc781b798412872564271e157a8f52fbf5286c42b"
+  },
+  {
+    "module": "Math115.ShapeDegreeBound",
+    "source": "research/shape-refinement/formal/Math115/ShapeDegreeBound.lean",
+    "source_sha256": "0761f9e7503fdb0b72ceb7c34ce6d2e707afeb35901a96c37462eb99eee9c801",
+    "returncode": 0,
+    "seconds": 4.832,
+    "olean_sha256": "32136a8ce302f0a516d8a22bb9280d33deed758e02cabcbba12f0682208a4689"
+  },
+  {
+    "module": "Math115.ShapeScalarScales",
+    "source": "research/shape-refinement/formal/Math115/ShapeScalarScales.lean",
+    "source_sha256": "e62b6d88d9423149afdfdab9c04aeacc91636aff353aa578e94b0765c946c356",
+    "returncode": 0,
+    "seconds": 19.1,
+    "olean_sha256": "efbd5cbe529ce679164414d3301c515fcfe42d8f85c53bfb2677a445a2d09fbf"
+  },
+  {
+    "module": "Math115.ReferenceEdgeAcceptance",
+    "source": "formal/Math115/ReferenceEdgeAcceptance.lean",
+    "source_sha256": "3e9973e6c5b97356d1222fc301f4cf5dfd4865045b0b89ae25b4c3e5cf8f93b8",
+    "returncode": 0,
+    "seconds": 14.591,
+    "olean_sha256": "36833934ddb08641de659569ba48db4aaa6f7d139c6da58c6128bd867046cc7c"
+  },
+  {
+    "module": "Research.AcceptancePadding",
+    "source": "research/shape-refinement/formal/Research/AcceptancePadding.lean",
+    "source_sha256": "59773bb5f0e4053ff87bfa9810cb2e64a0592037ebe84b13ceb7dbeac9172726",
+    "returncode": 0,
+    "seconds": 15.581,
+    "olean_sha256": "7248b8a0a8435f322d4fd5583ee8d718691be443557196e52e51703aee9852ae"
+  },
+  {
+    "module": "ResearchAudit.EnvironmentAudit",
+    "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+    "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "returncode": 0,
+    "seconds": 2.48,
+    "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+  }
+]

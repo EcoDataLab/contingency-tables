@@ -1,0 +1,27 @@
+{
+  "kernel_warning_scope": "Both insertions were in the encoded collection stream after plan and stat timing; cause unestablished.",
+  "kernel_watchdog_messages": [
+    {
+      "message": "[  308.647758] watchdog: BUG: soft lockup - CPU#2 stuck for 22s! [swapper/2:0]",
+      "offset": 3586106
+    },
+    {
+      "message": "[  336.658516] watchdog: BUG: soft lockup - CPU#2 stuck for 48s! [swapper/2:0]",
+      "offset": 6962548
+    }
+  ],
+  "owned_qemu_terminate_sent": true,
+  "qemu_exit_code": 1,
+  "qemu_exit_scope": "Supervisor terminated its owned VM after collection and reaped it. Guest stages all returned zero; QEMU exit is not a clean guest shutdown receipt.",
+  "qemu_projection_method": "Replace only the executable host path prefix; retain the exact diagnostic tail and multiplicity.",
+  "qemu_stderr_projection": [
+    "<qemu-executable>: failed to get xsave state: No error",
+    "<qemu-executable>: failed to get xsave state: No error",
+    "<qemu-executable>: failed to get xsave state: No error",
+    "<qemu-executable>: failed to get xsave state: No error",
+    "<qemu-executable>: failed to get xsave state: No error",
+    "<qemu-executable>: failed to get xsave state: No error"
+  ],
+  "raw_qemu_stderr_sha256": "136de8df1fb75a3c2875fe4363a4f568753ddee3c96df71331d328b93d20b2ce",
+  "raw_serial_sha256": "6d9c38f83c3e2557a51580aeb79176200462fe0e88ce16f123e9c2ae647292d0"
+}

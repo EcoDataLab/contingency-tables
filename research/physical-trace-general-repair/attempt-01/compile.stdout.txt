@@ -1,0 +1,160 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean:98:18: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  f - g ≥ 1
+  e ≥ 0
+  e - h ≥ 1
+  d ≥ 0
+  b ≥ 0
+  b ≥ 0
+  b - d ≥ 1
+where
+ b := ↑((↑↑a.snd).2 i j)
+ d := ↑((↑↑a.snd).1 i j)
+ e := ↑n
+ f := ↑m
+ g := ↑↑(↑(terminalRepairLabels r c U L a.fst).2).1
+ h := ↑↑(↑(terminalRepairLabels r c U L a.fst).2).2
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean:105:9: warning: Variable name `d` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _d
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean:105:11: warning: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean:123:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) a).1
+in the target expression
+  ↑((↑↑a.snd).1 i j) =
+    (↑(↑↑(terminalRepairedTable r c U L a) i j) +
+        if i = (↑(terminalRepairLabels r c U L a.fst).2).1 ∧ j = (↑(terminalRepairLabels r c U L a.fst).2).2 then 1
+        else 0) -
+      if i = (↑(terminalRepairLabels r c U L a.fst).2).1 ∧ j = (↑(terminalRepairLabels r c U L a.fst).1).2 then 1 else 0
+
+case fst
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+a b : DefectJoint r c U L
+h :
+  (fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) a =
+    (fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) b
+hl :
+  ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) a).1 =
+    ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) b).1
+ht :
+  ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) a).2 =
+    ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) b).2
+i : Fin m
+j : Fin n
+ha :
+  ↑((↑↑a.snd).1 i j) =
+    (↑(↑↑(terminalRepairedTable r c U L a) i j) +
+        if i = (↑(terminalRepairLabels r c U L a.fst).2).1 ∧ j = (↑(terminalRepairLabels r c U L a.fst).2).2 then 1
+        else 0) -
+      if i = (↑(terminalRepairLabels r c U L a.fst).2).1 ∧ j = (↑(terminalRepairLabels r c U L a.fst).1).2 then 1 else 0
+hb :
+  ↑((↑↑b.snd).1 i j) =
+    (↑(↑↑(terminalRepairedTable r c U L b) i j) +
+        if i = (↑(terminalRepairLabels r c U L b.fst).2).1 ∧ j = (↑(terminalRepairLabels r c U L b.fst).2).2 then 1
+        else 0) -
+      if i = (↑(terminalRepairLabels r c U L b.fst).2).1 ∧ j = (↑(terminalRepairLabels r c U L b.fst).1).2 then 1 else 0
+⊢ ↑((↑((fun a => ↑a.snd) a)).1 i j) = ↑((↑((fun a => ↑a.snd) b)).1 i j)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    Z
+  has type
+    RowColumnPair (fun i => r i + rowLargeCount small i * L) fun j => c j + columnLargeCount small j * L
+  but is expected to have type
+    { Z //
+      (∀ (i : Fin m), ∑ j, Z.1 i j = r i + rowLargeCount small i * L) ∧
+        ∀ (j : Fin n), ∑ i, Z.2 i j = c j + columnLargeCount small j * L }
+  in the application
+    ↑Z
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean:130:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) a).1
+in the target expression
+  ↑((↑↑a.snd).2 i j) =
+    (↑(↑↑(terminalRepairedTable r c U L a) i j) +
+        if i = (↑(terminalRepairLabels r c U L a.fst).1).1 ∧ j = (↑(terminalRepairLabels r c U L a.fst).1).2 then 1
+        else 0) -
+      if i = (↑(terminalRepairLabels r c U L a.fst).2).1 ∧ j = (↑(terminalRepairLabels r c U L a.fst).1).2 then 1 else 0
+
+case snd
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+a b : DefectJoint r c U L
+h :
+  (fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) a =
+    (fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) b
+hl :
+  ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) a).1 =
+    ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) b).1
+ht :
+  ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) a).2 =
+    ((fun a => (terminalRepairLabels r c U L a.fst, terminalRepairedTable r c U L a)) b).2
+i : Fin m
+j : Fin n
+ha :
+  ↑((↑↑a.snd).2 i j) =
+    (↑(↑↑(terminalRepairedTable r c U L a) i j) +
+        if i = (↑(terminalRepairLabels r c U L a.fst).1).1 ∧ j = (↑(terminalRepairLabels r c U L a.fst).1).2 then 1
+        else 0) -
+      if i = (↑(terminalRepairLabels r c U L a.fst).2).1 ∧ j = (↑(terminalRepairLabels r c U L a.fst).1).2 then 1 else 0
+hb :
+  ↑((↑↑b.snd).2 i j) =
+    (↑(↑↑(terminalRepairedTable r c U L b) i j) +
+        if i = (↑(terminalRepairLabels r c U L b.fst).1).1 ∧ j = (↑(terminalRepairLabels r c U L b.fst).1).2 then 1
+        else 0) -
+      if i = (↑(terminalRepairLabels r c U L b.fst).2).1 ∧ j = (↑(terminalRepairLabels r c U L b.fst).1).2 then 1 else 0
+⊢ ↑((↑((fun a => ↑a.snd) a)).2 i j) = ↑((↑((fun a => ↑a.snd) b)).2 i j)
+
+Note: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.
+Full error:
+  Application type mismatch: The argument
+    Z
+  has type
+    RowColumnPair (fun i => r i + rowLargeCount small i * L) fun j => c j + columnLargeCount small j * L
+  but is expected to have type
+    { Z //
+      (∀ (i : Fin m), ∑ j, Z.1 i j = r i + rowLargeCount small i * L) ∧
+        ∀ (j : Fin n), ∑ i, Z.2 i j = c j + columnLargeCount small j * L }
+  in the application
+    ↑Z
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean:211:28: error: Ambiguous term
+  unpadSuccessfulJoint_val
+Possible interpretations:
+  PhysicalStationarySuccess.unpadSuccessfulJoint_val : ∀ (r : ?m.36 → ℕ) (c : ?m.37 → ℕ) (U L : ℕ)
+    (a : PhysicalStationarySuccess.SuccessfulJoint r c U L) (i : ?m.36) (j : ?m.37),
+    ↑(PhysicalStationarySuccess.unpadSuccessfulJoint r c U L a) i j =
+      ↑(PhysicalStationarySuccess.jointTable r c U L ↑a) i j - largePadding (large r c U) L i j
+
+  SmallGraphProfiles.unpadSuccessfulJoint_val : ∀ (r : ?m.36 → ℕ) (c : ?m.37 → ℕ)
+    (a : SmallGraphProfiles.SuccessfulJoint r c) (i : ?m.36) (j : ?m.37),
+    ↑(SmallGraphProfiles.unpadSuccessfulJoint r c a) i j =
+      ↑(SmallGraphProfiles.jointTable r c ↑a) i j - largePadding (paperLarge r c) (dimensionAllowance ^ 12) i j
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean:210:40: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+a : SuccessfulTerminalRepair r c U L
+i : Fin m
+j : Fin n
+⊢ ↑(PhysicalStationarySuccess.unpadSuccessfulJoint r c U L (terminalSuccessfulJoint r c U L a)) i j =
+    ↑↑(terminalRepairedTable r c U L ↑a) i j - if small i j = true then 0 else L
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralRepair.lean:222:4: error(lean.unknownIdentifier): Unknown identifier `paddedTable`
+
+Note: It is not possible to treat `paddedTable` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.

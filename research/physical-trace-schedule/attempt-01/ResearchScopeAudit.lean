@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.Schedule
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.Schedule] headlines [Math115.PhysicalTraceJoin.terminalGapCount_cast, Math115.PhysicalTraceJoin.terminalSchedule_error_budget, Math115.PhysicalTraceJoin.terminalScheduleWord_accuracy]

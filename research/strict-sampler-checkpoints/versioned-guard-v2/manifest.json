@@ -1,0 +1,83 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 6374,
+      "sha256": "f2a70d0131945fc7fd887d5278bf8b09a979eba6f2d477613f6ab04dcc76b22b"
+    },
+    "evidence/guest-evidence.tar.gz": {
+      "bytes": 5849188,
+      "sha256": "7dca5b653cfc1a91a18f0ec4d8b2aeb90d86fbc68013b203e7cc05066d70134d"
+    },
+    "evidence/guest-member-manifest.json": {
+      "bytes": 1579,
+      "sha256": "0078b5355aacb195b228c8afc00c404db096f38c29d95d95c6d5fcff06779fba"
+    },
+    "evidence/resources.json": {
+      "bytes": 642,
+      "sha256": "f29b35cdd34d2d598c3cb8a49403106e7dd1204bfe3ec1b9334d7d5eb32371f6"
+    },
+    "evidence/startup-result.json": {
+      "bytes": 385,
+      "sha256": "a5a56e232d096c15faee698318614a42fd7ddd6dd3135ea013dee2e76218b1d5"
+    },
+    "evidence/versioned-guard-comparison.json": {
+      "bytes": 1521,
+      "sha256": "e6c97162840e685e9df86ceb1e2911ca0b4a34f7ab8699039348b42b5aaf3b72"
+    },
+    "guard-cost-projection.json": {
+      "bytes": 462,
+      "sha256": "a665f3b363a67b4a0ce1a82f4a38df134027c6fd1c0835c9b30e86217fb0664e"
+    },
+    "outcome.json": {
+      "bytes": 2751,
+      "sha256": "22e89742f2da179b1ccfd7d5594e9e004fbc129fb5fdb28d16c634dca4de88e0"
+    },
+    "profile.json": {
+      "bytes": 423,
+      "sha256": "d56e27700439b084c0e02eb848add4af0bba605041575829160c078edb6a8f84"
+    },
+    "provenance-bindings.json": {
+      "bytes": 7653,
+      "sha256": "f62da61b7f641cd057e1de72521faf9cf474cd7c760d560b96f2310e2d62cf7c"
+    },
+    "reproduction-references.json": {
+      "bytes": 2817,
+      "sha256": "2f88b817cd31f810dc6c005d1c124abb1bb57e0e8466e059e297c6f00abd2903"
+    },
+    "review-and-contract.json": {
+      "bytes": 1645,
+      "sha256": "78267d6da590171f236d59f3159a4b703fd03dcbb18389eeb96a2bd81496d454"
+    },
+    "source/anchored_metadata.py": {
+      "bytes": 3652,
+      "sha256": "6eb447ff60a09d13bc134252e490bd99e7a15b92c7436a0db5a677269b91a3a5"
+    },
+    "source/build_iso.py": {
+      "bytes": 2727,
+      "sha256": "f68347ae01b58ebd124d1fbe6d34369011171267e6c3e5618473f55a0a36caf6"
+    },
+    "source/guard_benchmark.py": {
+      "bytes": 5632,
+      "sha256": "6b8a5a16e7f4c45aa74f1620572b33e5c00a321ee0bd36bed2f1f5dd75a0f209"
+    },
+    "source/guest_entry.py": {
+      "bytes": 8158,
+      "sha256": "7dbfbdca780a43f8b138f3c0d29184799641da2a094f64ffc86418746cae0009"
+    },
+    "source/make_seed.py": {
+      "bytes": 4049,
+      "sha256": "1bec5e7b66c3a2c88c62e08ae81647a2e4817d409198fae726478955cb9db5ba"
+    },
+    "source/runner.diff": {
+      "bytes": 4141,
+      "sha256": "f33e2dd6396e63c42133730842506cc05136ec0bc7787ce4a94f2f4cdb5969aa"
+    },
+    "source/versioned_runner.py": {
+      "bytes": 51020,
+      "sha256": "1008cc3ba5afb129c5d54c8bc030207c8e72715d9b8a1546984e956f919768ca"
+    }
+  },
+  "manifest_self_excluded": true,
+  "schema_version": 1,
+  "scope": "Authenticated actual original/versioned-v2 guards and complete identities under explicit quiet-cache contract; no proof/strict acceptance"
+}

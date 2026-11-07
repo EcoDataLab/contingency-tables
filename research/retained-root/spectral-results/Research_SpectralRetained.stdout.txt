@@ -1,0 +1,1 @@
+'Research.SpectralRetained.retained_spectral_variance_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,84 @@
+{
+  "admitted_plan_sha256": "6f95a195f568b3ab53493b4e2d534f69d0fa2cf7b6054f2b8d1a94c3f04f5d0c",
+  "comparator_executed": false,
+  "default_kernel_replay_executed": false,
+  "elapsed_vm_seconds": 4825.216934799915,
+  "evidence_class": "authenticated strict startup and plan admission; no full proof execution",
+  "export_executed": false,
+  "independent_public_reproduction": false,
+  "module_count": 679,
+  "owned_processes_closed": true,
+  "phases": [
+    {
+      "cap_seconds": 600,
+      "elapsed_seconds": 9.823383331298828,
+      "returncode": 0,
+      "stage": "install",
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "2b0934143ef558f9d621b9a07a7ab30d84db9fb3f8fac352281aebe1c3cdb3f9"
+    },
+    {
+      "cap_seconds": 300,
+      "elapsed_seconds": 3.6072380542755127,
+      "returncode": 0,
+      "stage": "preflight",
+      "status": "passed",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9ef0f13892d288ccdcb9c1b6d171ed01e452f85ca81361ae79cfbf3e57c1a01b"
+    },
+    {
+      "cap_seconds": 5400,
+      "elapsed_seconds": 2583.6072957515717,
+      "returncode": 0,
+      "stage": "authenticate",
+      "status": "passed",
+      "stderr_sha256": "de302af5817c7fa51c48ec51a1fd1cbdf580d4573c9adbfbcf6f6df229a48467",
+      "stdout_sha256": "ac22a5edf87ac0cde4fbfe0adbf2918a1a9ef22ac0bef5155543018fd31ca619"
+    },
+    {
+      "cap_seconds": 3600,
+      "elapsed_seconds": 2142.3884625434875,
+      "returncode": 0,
+      "stage": "plan",
+      "status": "passed",
+      "stderr_sha256": "b7ac24936e51cdfa5bd47fa0b46956ba464ed7133a2fb58e04e563f7b9b54613",
+      "stdout_sha256": "37a21eb4568886966a95a595dd6d5323b13111d62f7bad9ebd1ccb47af2ffca1"
+    }
+  ],
+  "preflight": {
+    "actual_systemd_and_landrun_probes": "passed",
+    "effective_capabilities": 0,
+    "kernel": "7.3.0-8-generic",
+    "landlock_abi": 11,
+    "uid": 1000
+  },
+  "preserved_five_pins_equal": true,
+  "profile": {
+    "acceleration": "QEMU TCG",
+    "fresh_child_virtual_gib": 80,
+    "guest_ram_mib": 8192,
+    "guest_vcpus": 4,
+    "nic": "none",
+    "phase_caps_seconds": {
+      "authenticate": 5400,
+      "collect": 600,
+      "install": 600,
+      "plan": 3600,
+      "preflight": 300
+    },
+    "swap": false,
+    "wall_clock_cap_seconds": 12600
+  },
+  "proof_compilation_executed": false,
+  "roots": [
+    "Math115.StrictSamplerStatement",
+    "Math115.StrictSamplerSolution"
+  ],
+  "runtime_freeze_sha256": "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+  "schema_version": 1,
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "status": "startup_authenticated_plan_passed",
+  "strict_sampler_acceptance": false,
+  "submitted_build_files_after_installation": 0
+}

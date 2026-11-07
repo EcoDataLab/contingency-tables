@@ -1,0 +1,10 @@
+<packet>/formal/ResearchWeightedExit/FirstSuccess.lean:60:22: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Nonempty D
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+<packet>/formal/ResearchWeightedExit/FirstSuccess.lean:102:46: warning: Unused tactic linter: `ring` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+<packet>/formal/ResearchWeightedExit/FirstSuccess.lean:102:46: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`

@@ -1,0 +1,31 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarBudget/Schedule.lean:41:8: error(lean.unknownIdentifier): Unknown identifier `pow_le_pow_right_of_le_one₀`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarBudget/Schedule.lean:44:37: error: unsolved goals
+A : ℕ
+hA : 0 < A
+q : ℚ := 1 - 1 / ↑A
+hAr : 0 < ↑A
+hAone : 1 ≤ ↑A
+hq0 : 0 ≤ q
+hq1 : q ≤ 1
+hs : ↑A * q ^ A ≤ ∑ i ∈ Finset.range A, q ^ i
+hg : (1 - q) * ∑ j ∈ Finset.range A, q ^ j + q ^ A = 1
+hm : (1 - q) * (↑A * q ^ A) ≤ (1 - q) * ∑ i ∈ Finset.range A, q ^ i
+⊢ ↑A - (↑A - 1) = 1
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarBudget/Schedule.lean:84:43: warning: This simp argument is unused:
+  div_pow
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [dyadic]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarBudget/Schedule.lean:117:37: error(lean.unknownIdentifier): Unknown identifier `capacity`
+
+Note: It is not possible to treat `capacity` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarBudget/Schedule.lean:117:56: error(lean.unknownIdentifier): Unknown identifier `capacity_small`
+
+Note: It is not possible to treat `capacity_small` as an implicitly bound variable here because the `autoImplicit` option is set to `false`.
+<packet>/revisions/attempt-01/formal/ResearchPhysicalStarBudget/Schedule.lean:123:83: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "19e4f3ffe5807f024d91a9f6063504f36a4587af",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralCount"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralCount",
+      "source": "research/physical-trace-general-count/formal/ResearchPhysicalTraceJoin/GeneralCount.lean",
+      "source_sha256": "6d6aaa9c07ba1795ff2ea6415d4c53294cd857ee7dd4db77b6e9e17a7e766286",
+      "returncode": 0,
+      "seconds": 44.83046616613865,
+      "olean_sha256": "af39bc31a520b5eabc0985f34dbd23034af5acb92c63a4baf74055412a8fce9a"
+    }
+  ],
+  "audit_seconds": 58.38143654214218,
+  "audit_sha256": "082b3f0a73a9d607403b599a270c6469f45a67b8dc3238e4df87720bf0273298",
+  "audit_driver_sha256": "b686d61a46135d729b351c4b7b0b3e1a0ba7eb9bc3fb53146ace3401d9dda53f",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "de993bfa5829cf430220d788170b88fafc79f483520618e2293b458e1961d9cb",
+  "declaration_count": 29,
+  "theorem_count": 11,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalRepairEncoding_injective",
+      "closure_size": 8357,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  Function.Injective (Math115.PhysicalTraceJoin.terminalRepairEncoding r c U L)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalOutputFibre_card_le",
+      "closure_size": 10440,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) (X : OAI.ContingencyTables.Table r c),\n  Fintype.card (Math115.PhysicalTraceJoin.TerminalOutputFibre r c U L X) ≤\n    Fintype.card\n        (OAI.ContingencyTables.SmallContextCoordinates.Cells\n          (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)) *\n      (Fintype.card\n          (OAI.ContingencyTables.SmallContextCoordinates.Cells\n            (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)) -\n        1)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.actualShape_padded_count_le_twice",
+      "closure_size": 11339,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ),\n  have U := 11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2);\n  Fintype.card\n      (OAI.ContingencyTables.Table\n        (fun i =>\n          r i +\n            OAI.ContingencyTables.PaddedCompletions.rowLargeCount\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) i *\n              7)\n        fun j =>\n        c j +\n          OAI.ContingencyTables.PaddedCompletions.columnLargeCount\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) j *\n            7) ≤\n    2 * Fintype.card (OAI.ContingencyTables.Table r c)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.actualShape_defectJoint_card_le",
+      "closure_size": 11853,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ),\n  have U := 11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2);\n  have cellCount :=\n    Fintype.card\n      (OAI.ContingencyTables.SmallContextCoordinates.Cells\n        (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U));\n  Fintype.card (Math115.PhysicalTraceJoin.DefectJoint r c U 7) ≤\n    2 * (cellCount * (cellCount - 1)) * Fintype.card (OAI.ContingencyTables.Table r c)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

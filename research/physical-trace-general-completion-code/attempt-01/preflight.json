@@ -1,0 +1,6 @@
+{
+  "stage": "direct_import_preflight",
+  "compiler_started": false,
+  "obstruction": "Missing direct import: OAI.Combinatorics.ContingencyTables.Machines.BinVectorProgram",
+  "repair": "Use already accepted DensePrograms.take_ofFn_prefix from DenseReservedWord."
+}

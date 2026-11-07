@@ -1,0 +1,74 @@
+[
+  {
+    "module": "OAI.Combinatorics.ContingencyTables.Machines.FairBits",
+    "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Machines/FairBits.lean",
+    "source_sha256": "ee6c8303b4a3e7a1b29367416b1a9fb7f522717743c7855763eb7bc20f42e60c",
+    "returncode": 0,
+    "seconds": 4.589,
+    "olean_sha256": "5b3cfdd57933c19767671a424acefa14b9758a2b85334b260bf4e102f819fe40"
+  },
+  {
+    "module": "OAI.Combinatorics.ContingencyTables.Transport.FiniteRationalThreshold",
+    "source": ".upstream/openai-math/lean/OAI/Combinatorics/ContingencyTables/Transport/FiniteRationalThreshold.lean",
+    "source_sha256": "3fd9e7c3fc338e91f5e7a9e59d0f228bce47dd3558351cc7c942963a6ab86e73",
+    "returncode": 0,
+    "seconds": 27.652,
+    "olean_sha256": "eab46a07fc427550f128df34e5c54fef6c3c811e269c0c7c8cad96930aae0023"
+  },
+  {
+    "module": "RepairAcceptanceCoin",
+    "source": "research/repair-accept/formal/RepairAcceptanceCoin.lean",
+    "source_sha256": "0fb0e05b32edba84bfa7c157e065ac729fe305722493ca108b270238510a58e0",
+    "returncode": 0,
+    "seconds": 1.801,
+    "olean_sha256": "a515ab28801cdaadb6e96a5cae202b26152cbc31e2ca0e97b73b878dd813312e"
+  },
+  {
+    "module": "RepairAcceptanceThreshold",
+    "source": "research/repair-accept/formal/RepairAcceptanceThreshold.lean",
+    "source_sha256": "49864105bddd99b12ff8ad54956819a06f033d6a7b33f42b9e17e4302974b0da",
+    "returncode": 0,
+    "seconds": 13.257,
+    "olean_sha256": "106196a6791beb40531dfa81097472bcb4bde039b54b4224b7d422258420755c"
+  },
+  {
+    "module": "RepairAcceptanceLaw",
+    "source": "research/repair-accept/formal/RepairAcceptanceLaw.lean",
+    "source_sha256": "75d2c2309525d69bd9e03da3882409dc11851f0c6e484fe06370bba8c0e5f379",
+    "returncode": 0,
+    "seconds": 13.793,
+    "olean_sha256": "0e484a1f9fd1f58a23513f8481941f6b9296f0ad441045d3557ed1c817c6dda8"
+  },
+  {
+    "module": "Math115.AllSmallRepairFiber",
+    "source": "research/repair-accept/formal/Math115/AllSmallRepairFiber.lean",
+    "source_sha256": "c35f5439cceaba3d7dd5b3c1a801da37470b61f837987642f86f1247704dbdb6",
+    "returncode": 0,
+    "seconds": 14.585,
+    "olean_sha256": "ac9bba90ce6855a1926da363718dae10f7948fe26987a17def4e224fdb37d864"
+  },
+  {
+    "module": "RepairAcceptancePhysical",
+    "source": "research/repair-accept/formal/RepairAcceptancePhysical.lean",
+    "source_sha256": "e721c279dd7c3e7282e3dfad772faaec1e5e7e2ba288bff6774ab9570df6d51d",
+    "returncode": 0,
+    "seconds": 13.686,
+    "olean_sha256": "770af084e721203e7bc1b6d46299418a070a669f66f0a2bd917c3b5eb6d5b923"
+  },
+  {
+    "module": "Math115.FiniteStarTrace",
+    "source": "research/repair-accept/formal/Math115/FiniteStarTrace.lean",
+    "source_sha256": "babb90906ea18622aa53a71df64f35bc2ffbafdc885cfcb5beab5aaa4c315fe0",
+    "returncode": 0,
+    "seconds": 15.906,
+    "olean_sha256": "d394a517304b7190c3a6681ba945d4fd6c301a11a91e3446e62c382f2f541e67"
+  },
+  {
+    "module": "ResearchAudit.EnvironmentAudit",
+    "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+    "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+    "returncode": 0,
+    "seconds": 3.003,
+    "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+  }
+]

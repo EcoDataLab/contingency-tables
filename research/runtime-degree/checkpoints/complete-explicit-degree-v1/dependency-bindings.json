@@ -1,0 +1,78 @@
+{
+  "role": "referenced accepted dependencies; not copied or rebuilt",
+  "imports": [
+    {
+      "module": "ResearchBounds.DrawAssemblyDegree",
+      "source_path": "research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/ResearchBounds/DrawAssemblyDegree.lean",
+      "source_sha256": "bcdf1628317e01795819a0452e6d9415ef83fb52bc3fe6db46196b26cfd27997",
+      "reused_object_sha256": "1a32f5ceb7745c3e7acef33dc8ac863db3ca1ed95264903796cd556dd7499ecb",
+      "reused_object_origin": ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects/ResearchBounds/DrawAssemblyDegree.olean"
+    },
+    {
+      "module": "CountBounds.TightWordCountDegreeV2",
+      "source_path": "research/runtime-degree/checkpoints/actual-count-draw-helpers-v1/CountBounds/TightWordCountDegreeV2.lean",
+      "source_sha256": "c5126ff6d85f624c9263460ec778739b144a5b5592167519bdf22a2bdeb835ef",
+      "reused_object_sha256": "2f8199c3ce326896ab0cf3d211369c3bc48786f2148e607649520161c84c9ec2",
+      "reused_object_origin": ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects/CountBounds/TightWordCountDegreeV2.olean"
+    },
+    {
+      "module": "PrinterRuntime.PrinterDegree",
+      "source_path": ".local/further-gap/draw-runtime-next/printer-next/source/PrinterRuntime/PrinterDegree.lean",
+      "source_sha256": "cfdb1af28a5df1d7f8b0bb93d6bd7077dd0d18d865346f15b1a5b432ed861bfb",
+      "reused_object_sha256": "a8e389892f8d89b3b0b0d2e1c44a000f311036545766efb16fcc0be2f7a587d2",
+      "reused_object_origin": ".local/further-gap/draw-runtime-next/printer-next/objects/PrinterRuntime/PrinterDegree.olean"
+    },
+    {
+      "module": "InitialRuntime.InitialDegree",
+      "source_path": ".local/further-gap/draw-runtime-next/initial-degree/source/InitialRuntime/InitialDegree.lean",
+      "source_sha256": "bdadd54060363a8bfec5bd8ecd9e37692c6dd14bf553fa492a8c15246a770b42",
+      "reused_object_sha256": "f2d26c091454f53acf75ecee7f33e985ef18aaa96168cbb9cf21dc5beace1239",
+      "reused_object_origin": ".local/further-gap/draw-runtime-next/initial-degree/local-initial-02/objects/InitialRuntime/InitialDegree.olean"
+    },
+    {
+      "module": "UnitRuntime.UnitPackedTrialDegree",
+      "source_path": ".local/further-gap/draw-runtime-next/unit-trial-cost/source/UnitRuntime/UnitPackedTrialDegree.lean",
+      "source_sha256": "81f35ab41e9ae26510cfa617ed92ba756d278792b3c2017d2bfe4bbd060a57c5",
+      "reused_object_sha256": "a0bee765d4d4b6a9ebe60beb00a54e730e017d73b48c1a6d4af5944dd987691d",
+      "reused_object_origin": ".local/further-gap/draw-runtime-next/unit-trial-cost/objects/UnitRuntime/UnitPackedTrialDegree.olean"
+    },
+    {
+      "module": "RetryRuntime.ActualRetryWordsDegree",
+      "source_path": ".local/further-gap/draw-runtime-next/retry-cost/source/RetryRuntime/ActualRetryWordsDegree.lean",
+      "source_sha256": "f99a096ec1364fb8cdef055c6b7209e9464321febe4baa44a4d27822e23a97df",
+      "reused_object_sha256": "04c3fd597d90c1949d7a89f43cf67c2be763c44b9f46eeb8c3604b5cf1fe8a3d",
+      "reused_object_origin": ".local/further-gap/draw-runtime-next/retry-cost/objects/RetryRuntime/ActualRetryWordsDegree.olean"
+    },
+    {
+      "module": "DrawRuntime.BranchDegree",
+      "source_path": ".local/further-gap/draw-runtime-next/source/DrawRuntime/BranchDegree.lean",
+      "source_sha256": "dbc0149be5f16046cacce5c5020307a808298662ce072eac39d20328eae30fd1",
+      "reused_object_sha256": "c0cd785734dac048595e565e3bd005b34d8be4ef6f7672c22ba4c50682ecc302",
+      "reused_object_origin": ".local/further-gap/draw-runtime-next/initial-degree/portable-imports/objects/DrawRuntime/BranchDegree.olean"
+    },
+    {
+      "module": "ResearchBounds.AffinePublicSamplerDegree",
+      "source_path": "research/runtime-degree/checkpoints/affine-public-sampler-degree-v1/ResearchBounds/AffinePublicSamplerDegree.lean",
+      "source_sha256": "6187c873840d492b4559229cc362a6476a7260fbc0b1077cc3805910d5919361",
+      "reused_object_sha256": "65464f38881b228dbfe3152b1e862d85891b368f0e1683e3862e2ef4307cbc98",
+      "reused_object_origin": ".local/checkpoint12/affine-degree-batch-staging-02/evidence/lib/lean/ResearchBounds/AffinePublicSamplerDegree.olean"
+    },
+    {
+      "module": "ReferenceRuntime.PackedTrialDegree",
+      "source_path": ".local/further-gap/draw-runtime-next/reference-trial-cost/source/ReferenceRuntime/PackedTrialDegree.lean",
+      "source_sha256": "ce5fd794369db425d663746c65932f91d725208d12acc3be03215fcfe9a04e18",
+      "reused_object_sha256": "496c749e9c53a8023826a214cb83bc1304f8dadbfba494f131bf6445ac3d6999",
+      "reused_object_origin": ".local/further-gap/draw-runtime-next/reference-trial-cost/objects/ReferenceRuntime/PackedTrialDegree.olean"
+    }
+  ],
+  "reference_public_target": "research/runtime-degree/checkpoints/actual-reference-degree-v1",
+  "existing_packet_targets": [
+    "research/runtime-degree/checkpoints/actual-count-draw-helpers-v1",
+    "research/runtime-degree/checkpoints/actual-branch-degree-v1",
+    "research/runtime-degree/checkpoints/actual-printer-degree-v1",
+    "research/runtime-degree/checkpoints/actual-initial-degree-v1",
+    "research/runtime-degree/checkpoints/actual-retry-degree-v1",
+    "research/runtime-degree/checkpoints/actual-unit-degree-v1",
+    "research/runtime-degree/checkpoints/affine-public-sampler-degree-v1"
+  ]
+}

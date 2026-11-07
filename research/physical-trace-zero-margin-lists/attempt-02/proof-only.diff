@@ -1,0 +1,24 @@
+--- initial.lean
++++ checked.lean
+@@ -29,0 +30,8 @@
++
++theorem ofFn_listMargin (xs : List ℕ) : List.ofFn (listMargin xs) = xs := by
++  change List.ofFn (fun i : Fin xs.length => xs[i.val]) = xs
++  exact List.ofFn_getElem
++
++theorem ofFn_filteredMargin (xs : List ℕ) :
++    List.ofFn (filteredMargin xs) = positiveMargins xs :=
++  ofFn_listMargin (positiveMargins xs)
+@@ -102,0 +111 @@
++  change (positiveIndexEquiv xs i).val.val < (positiveIndexEquiv xs j).val.val
+@@ -118 +127,3 @@
+-      rw [List.getD_eq_getElem (by simpa only [List.length_map] using hk), List.getElem_map]
++      rw [List.getD_eq_getElem
++        (l := (positiveIndices xs).map (fun i => xs.getD i 0)) (n := k.val) (d := 0)
++        (by simpa only [List.length_map] using hk), List.getElem_map]
+@@ -130,0 +142 @@
++    unfold positiveMargins at ih
+@@ -140 +152,2 @@
+-    simpa only [filteredMargin, listMargin, List.ofFn_getElem] using positiveMargins_sum xs
++    rw [ofFn_filteredMargin, ofFn_listMargin]
++    exact positiveMargins_sum xs

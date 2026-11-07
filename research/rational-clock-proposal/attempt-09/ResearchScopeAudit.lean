@@ -1,0 +1,3 @@
+import ResearchRationalClock.Proposal
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchRationalClock.Proposal] headlines [Math115.RationalClockProposal.cappedIndex_none, Math115.RationalClockProposal.physicalProposal_variation, Math115.RationalClockProposal.idealPhysicalProposalLaw_mass, Math115.RationalClockProposal.rational_clock_cast]

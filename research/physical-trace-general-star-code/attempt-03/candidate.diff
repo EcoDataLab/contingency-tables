@@ -1,0 +1,19 @@
+--- initial.lean
++++ checked.lean
+@@ -14,0 +15 @@
++open FirstSuccess ResidualMixture FairBits
+@@ -96 +97 @@
+-  have hd : stateCodeData r c U L (computedCellEquiv r c U) state =
++  have hd : Math115.PhysicalComputedProposal.stateCodeData r c U L (computedCellEquiv r c U) state =
+@@ -99,2 +100,2 @@
+-    unfold stateCodeData
+-    rw [computedCellEquiv_catalog]
++    unfold Math115.PhysicalComputedProposal.stateCodeData
++    rw [Math115.PhysicalComputedProposal.computedCellEquiv_catalog]
+@@ -103 +104 @@
+-  let data := stateCodeData r c U L (computedCellEquiv r c U) state
++  let data := Math115.PhysicalComputedProposal.stateCodeData r c U L (computedCellEquiv r c U) state
+@@ -140,0 +142 @@
++  unfold actualStep
+@@ -174,0 +177 @@
++      dsimp only

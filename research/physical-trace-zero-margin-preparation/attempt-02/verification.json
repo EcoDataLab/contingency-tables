@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "f07188292e56ea3aeac8e40d1d27d8ade4a224d8",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.ZeroMarginPreparation"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.ZeroMarginPreparation",
+      "source": "research/physical-trace-zero-margin-preparation/formal/ResearchPhysicalTraceJoin/ZeroMarginPreparation.lean",
+      "source_sha256": "97a54bea9f45150b74e110b69f71d88b6efe552c1895d4647745f4e0866e5dd5",
+      "returncode": 0,
+      "seconds": 123.92361387517303,
+      "olean_sha256": "ba044d2088d13b0dc9dcc21704ce0667c738c78a8021c7889613a70fc0b7b7e3"
+    }
+  ],
+  "audit_seconds": 265.56804654188454,
+  "audit_sha256": "5c4121c4983f6d02244bee4d721244a69c673c043eb3ce4a10c1a877f7a02604",
+  "audit_driver_sha256": "845565395da9a83d7228afb49c60efc9a64a81f48bd73a1551e3c7da10afc773",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "2d79f390e0304e843bc1cbb4aef8dd329fc91a386740d24a1efd0368302ec245",
+  "declaration_count": 18,
+  "theorem_count": 13,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.filteredSmallMask_entry",
+      "closure_size": 1936,
+      "statement": "∀ (xs ys : List ℕ) (U : ℕ) (i : Fin (Math115.PhysicalTraceJoin.positiveMargins xs).length)\n  (j : Fin (Math115.PhysicalTraceJoin.positiveMargins ys).length),\n  OAI.ContingencyTables.CompletionCounts.firstPaperSmall (Math115.PhysicalTraceJoin.filteredMargin xs)\n      (Math115.PhysicalTraceJoin.filteredMargin ys) U i j =\n    OAI.ContingencyTables.CompletionCounts.firstPaperSmall (Math115.PhysicalTraceJoin.listMargin xs)\n      (Math115.PhysicalTraceJoin.listMargin ys) U ↑((Math115.PhysicalTraceJoin.positiveIndexEquiv xs) i)\n      ↑((Math115.PhysicalTraceJoin.positiveIndexEquiv ys) j)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceReference_conditions",
+      "closure_size": 4923,
+      "statement": "∀ (xs ys : List ℕ),\n  Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference →\n    2 ≤ (Math115.PhysicalTraceJoin.positiveMargins xs).length ∧\n      2 ≤ (Math115.PhysicalTraceJoin.positiveMargins ys).length ∧\n        2 ≤\n            Fintype.card\n              (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall (Math115.PhysicalTraceJoin.filteredMargin xs)\n                  (Math115.PhysicalTraceJoin.filteredMargin ys)\n                  (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys))) ∧\n          0 <\n              (OAI.ContingencyTables.ProfilePrograms.largeIndices\n                  (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys,\n                    List.ofFn (Math115.PhysicalTraceJoin.filteredMargin xs))).length ∧\n            0 <\n              (OAI.ContingencyTables.ProfilePrograms.largeIndices\n                  (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys,\n                    List.ofFn (Math115.PhysicalTraceJoin.filteredMargin ys))).length",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceReferenceWord_accuracy",
+      "closure_size": 45065,
+      "statement": "∀ (xs ys : List ℕ),\n  ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j →\n    ∀ (hb : Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference)\n      (start :\n        Math115.PhysicalDefectTrace.DefectVertices (Math115.PhysicalTraceJoin.filteredMargin xs)\n          (Math115.PhysicalTraceJoin.filteredMargin ys) (Math115.PhysicalTraceJoin.positiveTraceCutoff xs ys) 7)\n      (h : ℕ),\n      ↑(OAI.ContingencyTables.FirstSuccess.variation\n            (OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n              (Math115.PhysicalTraceJoin.positiveTraceReferenceWord xs ys hb start h))\n            OAI.ContingencyTables.FirstSuccess.uniformLaw) ≤\n        ↑(Math115.CompletionRetryBudget.dyadic h)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceDeterministic_restored_uniform",
+      "closure_size": 7275,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j),\n  Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.deterministic →\n    ∀\n      (X :\n        OAI.ContingencyTables.Table (Math115.PhysicalTraceJoin.filteredMargin xs)\n          (Math115.PhysicalTraceJoin.filteredMargin ys)),\n      Math115.PhysicalTraceJoin.restoreZeroMarginListsLaw xs ys (OAI.ContingencyTables.FirstSuccess.pointLaw X) =\n        OAI.ContingencyTables.FirstSuccess.uniformLaw",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.positiveTraceBranch_retuning_fixture",
+      "closure_size": 619,
+      "statement": "Math115.PhysicalTraceJoin.positiveTraceInput [0, 600, 600] [600, 600] = ([600, 600], [600, 600]) ∧\n  Math115.PhysicalTraceJoin.positiveTraceCutoff [0, 600, 600] [600, 600] = 418 ∧\n    Math115.PhysicalTraceJoin.positiveTraceBranch [0, 600, 600] [600, 600] =\n      Math115.PhysicalTraceJoin.TraceInputBranch.noSmall",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

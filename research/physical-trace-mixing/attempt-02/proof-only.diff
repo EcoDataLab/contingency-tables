@@ -1,0 +1,5 @@
+--- initial.lean
++++ checked.lean
+@@ -19 +19 @@
+-open Math115.PhysicalStationaryLaw Math115.ComputedReferenceTrace
++open Math115.PhysicalStationarySuccess Math115.PhysicalStationaryLaw Math115.ComputedReferenceTrace

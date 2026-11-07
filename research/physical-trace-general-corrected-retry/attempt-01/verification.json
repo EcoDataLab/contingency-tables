@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "6eef213d620e747da92d61b89e8de1db2e0ae240",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralCorrectedRetry"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralCorrectedRetry",
+      "source": "research/physical-trace-general-corrected-retry/formal/ResearchPhysicalTraceJoin/GeneralCorrectedRetry.lean",
+      "source_sha256": "9b4823603b9591be27d404e2fb7775c2e810572cef41856ba7b0590362a9dc55",
+      "returncode": 0,
+      "seconds": 17.033916749991477,
+      "olean_sha256": "8d5f63f2d2230ac060bb10bfb67f3d25eecc175136807d225dbaa57c9637787a"
+    }
+  ],
+  "audit_seconds": 93.28875329205766,
+  "audit_sha256": "f369b258ac198d47b00c50f0d71854c82c33c079b33eb0a8a2bd82c8c7310dd1",
+  "audit_driver_sha256": "f4330d76259eedad987873b96024a325057edef3ae0754f164cd8ecfe6c78e02",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "b6c44596dbadafe2a142db7433d52eab0097e060d125cf858c877115d5ad4b07",
+  "declaration_count": 18,
+  "theorem_count": 9,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalCorrectedRetry_accuracy_of_success",
+      "closure_size": 45278,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hrLarge : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hcLarge : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  [inst : Nonempty (Math115.PhysicalDefectTrace.DefectVertices r c U L)],\n  ∑ i, r i = ∑ j, c j →\n    2 ≤ U →\n      7 ≤ L →\n        2 ≤\n            Fintype.card\n              (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U)) →\n          (∀ (i : Fin m), 0 < r i) →\n            (∀ (j : Fin n), 0 < c j) →\n              ∀ (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (h k : ℕ)\n                (fallback : OAI.ContingencyTables.Table r c) (R : ℕ),\n                ∀ s ≤ 1 - (Math115.PhysicalTraceJoin.terminalIdealCorrectedLaw r c U L).mass none,\n                  OAI.ContingencyTables.FirstSuccess.variation\n                      (Math115.PhysicalTraceJoin.terminalCorrectedRetryLaw r c U L hrLarge hcLarge start h k fallback R)\n                      OAI.ContingencyTables.FirstSuccess.uniformLaw ≤\n                    (1 - s) ^ R + ↑R * (Math115.CompletionRetryBudget.dyadic h + Math115.CompletionRetryBudget.dyadic k)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.actualShape_terminalCorrectedRetry_accuracy",
+      "closure_size": 45459,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ)\n  (hrLarge :\n    0 <\n      (OAI.ContingencyTables.ProfilePrograms.largeIndices\n          (11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2), List.ofFn r)).length)\n  (hcLarge :\n    0 <\n      (OAI.ContingencyTables.ProfilePrograms.largeIndices\n          (11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2), List.ofFn c)).length),\n  2 ≤ m →\n    2 ≤ n →\n      ∑ i, r i = ∑ j, c j →\n        2 ≤\n            Fintype.card\n              (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c\n                  (11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2)))) →\n          (∀ (i : Fin m), 0 < r i) →\n            (∀ (j : Fin n), 0 < c j) →\n              ∀\n                (start :\n                  Math115.PhysicalDefectTrace.DefectVertices r c\n                    (11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2)) 7)\n                (h k : ℕ) (fallback : OAI.ContingencyTables.Table r c) (R : ℕ),\n                OAI.ContingencyTables.FirstSuccess.variation\n                    (Math115.PhysicalTraceJoin.terminalCorrectedRetryLaw r c\n                      (11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2)) 7 hrLarge hcLarge\n                      start h k fallback R)\n                    OAI.ContingencyTables.FirstSuccess.uniformLaw ≤\n                  (1 -\n                        ↑(Math115.PhysicalTraceJoin.inverseSupportAllowance r c\n                              (11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2))) /\n                          ↑(2 *\n                              (Fintype.card\n                                  (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                                    (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c\n                                      (11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2)))) *\n                                (Fintype.card\n                                    (OAI.ContingencyTables.SmallContextCoordinates.Cells\n                                      (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c\n                                        (11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance *\n                                          (m + n - 2)))) -\n                                  1)))) ^\n                      R +\n                    ↑R * (Math115.CompletionRetryBudget.dyadic h + Math115.CompletionRetryBudget.dyadic k)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,31 @@
+--- initial.lean
++++ checked.lean
+@@ -59 +59,5 @@
+-  simp only [jointSourceData, jointResidualMatrixCode, computedCellEquiv_catalog, computedCatalog]
++  exact congrArg (fun K : List (ℕ × ℕ) =>
++    (((K,computedStateCode r c U L a.1.val),
++      (largeIndices (U,List.ofFn r),largeIndices (U,List.ofFn c))),
++      ((U,0),tableOutput (listedTable r c U L hr hc a.1.val a.2))))
++    (Math115.PhysicalComputedProposal.computedCellEquiv_catalog r c U).symm
+@@ -74 +78,2 @@
+-    (i : Option (Fin (tailCount r U))) (j : Option (Fin (tailCount c U))) :
++    (i : Option (Fin ((largeIndices (U,List.ofFn r)).length - 1)))
++    (j : Option (Fin ((largeIndices (U,List.ofFn c)).length - 1))) :
+@@ -79 +83,0 @@
+-  rw [jointSourceData_code]
+@@ -87 +91,8 @@
+-  have hbad : ¬ (cellCatalog small e).idxOf
++  have hbad : ¬ outputCellPosition
++      (jointSourceData (List.ofFn r) (List.ofFn c) U (computedStateCode r c U L a.1.val)
++        (jointResidualMatrixCode r c U L hr hc a),
++          ((largeOptionEquiv r U hr i).val.val,(largeOptionEquiv c U hc j).val.val)) <
++        (jointSourceData (List.ofFn r) (List.ofFn c) U (computedStateCode r c U L a.1.val)
++          (jointResidualMatrixCode r c U L hr hc a)).1.1.1.length := by
++    rw [jointSourceData_code]
++    change ¬ (cellCatalog small e).idxOf
+@@ -89 +100 @@
+-        (cellCatalog small e).length := by
++        (cellCatalog small e).length
+@@ -92 +103 @@
+-  rw [outputEntry, if_neg hbad]
++  rw [outputEntry, ite_eq_right hbad]

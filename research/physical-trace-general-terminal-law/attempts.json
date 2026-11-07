@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "module": "ResearchPhysicalTraceJoin.GeneralTerminalLaw",
+  "verified_attempt": "attempt-03",
+  "attempts": [
+    {
+      "attempt": "attempt-01",
+      "source_sha256": "8d8ea138c20a45885a848aa88d23133521b5f1fb2bcfe7c84e3aeb3391794e93",
+      "compile_returncode": 1,
+      "compile_seconds": 71.95149345928803,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-02",
+      "source_sha256": "cef7616a23a0f046d89ce4b76d247d567ba127a5d724a85a4471448fe7ad0227",
+      "compile_returncode": 1,
+      "compile_seconds": 31.40345129184425,
+      "status": "compilation_failed"
+    },
+    {
+      "attempt": "attempt-03",
+      "source_sha256": "bede661953abd4cf1d7ac86021efd763e5ae59d54a92bbcbd75fe819f66f891d",
+      "compile_returncode": 0,
+      "compile_seconds": 48.28046691697091,
+      "audit_returncode": 0,
+      "audit_seconds": 88.27698879176751,
+      "status": "passed"
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

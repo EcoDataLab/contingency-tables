@@ -1,0 +1,20 @@
+{
+  "candidate_runner_sha256": "1008cc3ba5afb129c5d54c8bc030207c8e72715d9b8a1546984e956f919768ca",
+  "helper_sha256": "6eb447ff60a09d13bc134252e490bd99e7a15b92c7436a0db5a677269b91a3a5",
+  "independent_review": "Separate read-only reviewer confirmed source/diff and bound fixture receipt under quiet-cache scope; reviewer did not execute tests/VM.",
+  "new_stat_only_loop": "Anchored frozen-name index, lstat/link predicate, following stat/type predicate, distinct following stat/final identity, root/parent namespace and directory-drift checks.",
+  "package_caches_sandbox_readonly": false,
+  "shared_transient_limit": "Old and new boundary guards can miss a deeper namespace substitution consumed by a child and restored before its next guard. Arbitrary same-user writers/hostile import-cache-mutating children are outside this quiet-cache guarantee.",
+  "source_fixture_count": 9,
+  "source_fixture_elapsed_seconds": 0.057,
+  "source_fixture_receipt_sha256": "1b1dd06529a1c9f34f855e821670a6dfa0249d7c6a273d32ba7bd9d6877bb988",
+  "source_fixture_scope": "Local temporary filesystem mutation/equality/order/cleanup and AST checks; no live cache/VM in those tests.",
+  "trusted_supervisor_quiet_cache": true,
+  "unchanged_verification": [
+    "admission/run/full inventory/root/absence/configuration/tool/source/hidden-object functions",
+    "Byte-identical Guard.check prefix before cache traversal",
+    "Original full-rehash leaf loop and admission/precomparison/postcomparison/final content boundaries"
+  ],
+  "universal_race_error_equivalence": false,
+  "wrapper_sha256": "6b8a5a16e7f4c45aa74f1620572b33e5c00a321ee0bd36bed2f1f5dd75a0f209"
+}

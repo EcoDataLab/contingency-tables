@@ -1,0 +1,20 @@
+[
+  {
+    "module": "InitialRuntime.GreedyDegree",
+    "source": "source/InitialRuntime/GreedyDegree.lean",
+    "source_sha256": "cc32b1173db329ce4f94a4e0cd6a0c07b0833df96a57d4d3ca16b4e64079fe8f",
+    "olean_sha256": "9bf16095d449376b6690ac490de922328055342260f74e20c55880f9f6a3172c"
+  },
+  {
+    "module": "DivisionRuntime.Degree",
+    "source": "source/DivisionRuntime/Degree.lean",
+    "source_sha256": "5e03bc8b825b6d0cbfecf77b6454db781ec2fe40c7ca55d644b94e3d9b4dff3c",
+    "olean_sha256": "a84f0a08cdf0d87dde72b119d873baa7f7652118400388a23559c3c587b1aa03"
+  },
+  {
+    "module": "PrinterRuntime.LinearCollections",
+    "source": "source/PrinterRuntime/LinearCollections.lean",
+    "source_sha256": "7839ffe7bb9c651e1497ff09f244b19455bc5c2cc1c095264e60c1a34c695eb0",
+    "olean_sha256": "9d556ba40f2ff470cfeaeff6988d285952a3619fee1418abdb7dce7217b624d9"
+  }
+]

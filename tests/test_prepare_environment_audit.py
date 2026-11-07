@@ -55,6 +55,30 @@ class DefaultContractTests(unittest.TestCase):
         # These are inclusion requests, not a guessed theorem inventory.
         self.assertEqual(sum(len(m['public_declarations']) for m in contract['modules']), 275)
 
+    def test_default_headlines_follow_evidence_scope_even_when_research_uses_math115_namespace(self):
+        document = json.loads((self.root / 'claims.json').read_text())
+        baseline = prepare.headlines(self.root)
+        selected = document['disjoint_component_scopes'][0]
+        default = next(r for r in document['receipts'] if r['id'] == selected)
+        research = {'id': 'research-selection-fixture', 'format': 'compiled_environment',
+                    'scope': 'synthetic additive research selection; no compiler claim'}
+        document['receipts'].append(research)
+        name = 'Math115.SharedNamespace.researchSelectionFixture'
+        claim = {'headlines': [{'name': name}],
+                 'evidence': [{'receipt': research['id'], 'scope': research['scope']}]}
+        document['claims'].append(claim)
+        path = self.root / 'claims.json'
+        path.write_text(json.dumps(document))
+        self.assertEqual(prepare.headlines(self.root), baseline)
+        # Scope selection, rather than the symbol namespace, controls inclusion.
+        claim['evidence'] = [{'receipt': selected, 'scope': default['scope']}]
+        path.write_text(json.dumps(document))
+        self.assertEqual(prepare.headlines(self.root), sorted([*baseline, name]))
+        claim['evidence'][0]['scope'] = 'unrelated scope'
+        path.write_text(json.dumps(document))
+        with self.assertRaisesRegex(ValueError, 'evidence scope differs'):
+            prepare.headlines(self.root)
+
     def test_contract_file_and_published_authorities_are_input_pinned(self):
         pins = prepare.contract_pins(self.root)
         self.assertEqual(len(pins), 4)
@@ -200,7 +224,10 @@ class DefaultContractTests(unittest.TestCase):
                    'formal/Math115/StandaloneAxiomAudit.lean': 'import Math115\n',
                    'formal/ResearchAudit/EnvironmentAudit.lean': 'import Lean\n',
                    'formal/lean-toolchain': 'leanprover/lean4:v4.34.1\n',
-                   'claims.json': json.dumps({'claims': [{'headlines': [{'name': 'Math115.Leaf.value'}]}]})}
+                   'claims.json': json.dumps({'receipts': [{'id': 'default', 'scope': 'synthetic default'}],
+                       'disjoint_component_scopes': ['default'],
+                       'claims': [{'headlines': [{'name': 'Math115.Leaf.value'}],
+                                   'evidence': [{'receipt': 'default', 'scope': 'synthetic default'}]}]})}
         for path, text in sources.items():
             p = root / path
             p.parent.mkdir(parents=True, exist_ok=True)

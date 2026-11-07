@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralScheduleCode"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralScheduleCode",
+      "source": "research/physical-trace-general-schedule-code/formal/ResearchPhysicalTraceJoin/GeneralScheduleCode.lean",
+      "source_sha256": "aed4ebddc2c7f60b8978bd351825cbfe06cc3135b22072cea4a5fedac904bd15",
+      "returncode": 0,
+      "seconds": 33.459957082755864,
+      "olean_sha256": "ca6a7c0b43d4f5623ff770aa12ebd8ea053f8f8afac8370645f00b5ec0da7e4e"
+    }
+  ],
+  "audit_seconds": 56.377657333854586,
+  "audit_sha256": "708d2e1e7089a3d9e77e307f6bf13dbec3e10d608184df74a9c7ab98469b180c",
+  "audit_driver_sha256": "b6f0f2755e62fa0166505618c26e6b77bdb3d8c2c4fae8ea600d527a7b1b458f",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "f55c6c047416f8f544001714476ee2cece8a3fc8ad5a69de4ad04d95ede7fc85",
+  "declaration_count": 82,
+  "theorem_count": 62,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.rawUniformCompletionBits_eq",
+      "closure_size": 2109,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L h : ℕ),\n  Math115.PhysicalTraceJoin.rawUniformCompletionBits (List.ofFn r) (List.ofFn c) U L h =\n    Math115.PhysicalCompletionWidth.uniformCompletionBits r c U L h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawScheduleSteps_eq",
+      "closure_size": 5678,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L h : ℕ),\n  Math115.PhysicalTraceJoin.rawScheduleSteps (List.ofFn r) (List.ofFn c) U L h =\n    Math115.PhysicalTraceJoin.terminalScheduleSteps r c U L h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawTerminalScheduleWordWidth_eq",
+      "closure_size": 5713,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L h : ℕ),\n  Math115.PhysicalTraceJoin.rawTerminalScheduleWordWidth (List.ofFn r) (List.ofFn c) U L h =\n    Math115.PhysicalTraceJoin.terminalScheduleWordWidth r c U L h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawPositiveWordWidth_eq",
+      "closure_size": 5745,
+      "statement": "∀ (xs ys : List ℕ) (t : ℕ),\n  Math115.PhysicalTraceJoin.rawPositiveWordWidth xs ys t = Math115.PhysicalTraceJoin.positiveReferenceWordWidth xs ys t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawPositiveTrialWordWidth_positive",
+      "closure_size": 1555,
+      "statement": "∀ (xs ys : List ℕ) (t : ℕ), 0 < Math115.PhysicalTraceJoin.rawPositiveTrialWordWidth xs ys t",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

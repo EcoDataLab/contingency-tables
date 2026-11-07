@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralSingletonCompletion
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralSingletonCompletion] headlines [Math115.PhysicalTraceJoin.coarseSingletonTable_subsingleton, Math115.PhysicalTraceJoin.completionDraw_eq_singleton, Math115.PhysicalTraceJoin.singletonCompletionDraw_same_law, Math115.PhysicalTraceJoin.rawCompletionResidual_singleton, Math115.PhysicalTraceJoin.rawSingletonCompletionCode_draw]

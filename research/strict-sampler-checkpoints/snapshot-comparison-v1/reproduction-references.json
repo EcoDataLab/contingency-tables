@@ -1,0 +1,73 @@
+{
+  "authentication_argv_template": [
+    "python3",
+    "-I",
+    "<runner>/authenticate_runtime.py",
+    "--root",
+    "<checking-root>",
+    "--runner",
+    "<runner>/strict_sampler.py",
+    "--output",
+    "<fresh-runtime>",
+    "--native-audit",
+    "<native-audit>",
+    "--lake-config-provenance",
+    "<independently-bound-config-provenance>",
+    "--lake-config-provenance-sha256",
+    "645f1f13d16c12eb421d86c379ac2b18f7a40170226e07558445afb0336860a0",
+    "--unused-cache-policy",
+    "<independently-bound-policy>",
+    "--unused-cache-policy-sha256",
+    "4a73417e7aee4941a395d09c645f3622404643a74999f57d144e5f8b8a489833",
+    "--diagnostics"
+  ],
+  "base_bindings": "../authentication-diagnostics-v1/base-reference.json",
+  "base_source_packet": "../unused-cache-policy-v1/",
+  "candidate_installed": false,
+  "challenge_source_packet": "../../strict-sampler-challenge/",
+  "control_delta": "profile-delta.json",
+  "iso_builder": "source/build_iso.py using pycdlib1.16.0; intended-layout standalone helper, private payload context required",
+  "limits": "Exact standalone source/profile/commands and compressed raw guest archive do not supply the private VM supervisor, seed ISO, retained images/bootstrap context or source archive. Reference packets and hashes bind those inputs; no independently reproducible full VM or proof execution is claimed.",
+  "outer_requirements": [
+    "exact retained checking context and source/configuration provenance",
+    "fresh cold submitted proof tree",
+    "real non-root PAM/systemd session and actual Landrun probes",
+    "owned bounded supervision and exact process cleanup",
+    "hash/byte readback of source/seed/control inputs and returned evidence"
+  ],
+  "plan_argv_template": [
+    "python3",
+    "-I",
+    "<guest-tools>/guard-benchmark.py",
+    "--runner",
+    "<pinned-original-runner>",
+    "--snapshot",
+    "<guest-tools>/snapshots.py",
+    "--metrics",
+    "<fresh-owned-metrics>",
+    "--root",
+    "<checking-root>",
+    "--runtime-freeze",
+    "<actual-emitted-runtime>",
+    "--runtime-freeze-sha256",
+    "e391c457d01020a0e384aa25af657417c127145be21695bd6d469bea418855d4",
+    "--output",
+    "<fresh-plan-output>"
+  ],
+  "profile": "profile.json",
+  "seed_generator_command": [
+    "python3",
+    "source/make_seed.py",
+    "--output",
+    "<fresh-seed-source>"
+  ],
+  "source_freeze_sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd",
+  "source_layout": "Place published generator/guest/install/media/wrapper/prototype bodies together; source/installation-manifest.json and privately retained bound sources.tar.gz go under payload. Embed wrapper/prototype at guest paths named by make_seed.py. Original authenticator is referenced unchanged.",
+  "source_packet": "../authentication-diagnostics-v1/",
+  "source_packet_manifest_sha256": "4da476ef2aeda96aa0c2b00479d2f84b0ad6c17e1b0036f0b865f070fbf6c759",
+  "unchanged_checker": true,
+  "unchanged_published_bodies": {
+    "delta/runner/authenticate_runtime.py": "742ec1105d5bb44a392046ec06ca5944a20989bc0cb5a037d2997b37def2b943",
+    "delta/runner/strict_sampler.py": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6"
+  }
+}

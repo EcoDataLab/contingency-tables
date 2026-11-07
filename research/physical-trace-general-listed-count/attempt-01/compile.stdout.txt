@@ -1,0 +1,35 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralListedCount.lean:104:15: warning: This simp argument is unused:
+  hv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Bool.false_eq_true, ite_false, ite_true, decide_eq_true_eq, matrixEntry_code, listedSmallRow_code,
+    listedSmallColumn_code, List.getD_eq_getElem?_getD, List.getElem?_ofFn, t.val.1.isLt, s.val.2.isLt, dite_true,
+    Option.getD_some, Fin.eta]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralListedCount.lean:124:4: error: invalid 'calc' step, left-hand side is
+  ∑ i, ∑ j, if InverseSupportTest r c U X (E i, E j) then 1 else 0 : ℕ
+but is expected to be
+  ∑ i,
+    ((fun s =>
+          ∑ i,
+            ((fun t =>
+                  if listedInverseLabelTest (List.ofFn r) (List.ofFn c) U (matrixCode ↑X) s t = true then 1 else 0) ∘
+                fun i => (↑(↑(E i)).1, ↑(↑(E i)).2))
+              i) ∘
+        fun i => (↑(↑(E i)).1, ↑(↑(E i)).2))
+      i : ℕ
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralListedCount.lean:121:43: warning: This simp argument is unused:
+  listedInverseLabelTest_code
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_ofFn, List.sum_ofFn, decide_eq_true_eq]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralListedCount.lean:121:72: warning: This simp argument is unused:
+  decide_eq_true_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_ofFn, List.sum_ofFn, listedInverseLabelTest_code]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

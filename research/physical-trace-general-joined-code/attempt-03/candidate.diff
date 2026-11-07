@@ -1,0 +1,17 @@
+--- initial.lean
++++ checked.lean
+@@ -87 +87 @@
+-    simp only [ht, ite_true, commonExitDraw, dif_pos hb]
++    simp only [ht, ite_true, commonExitDraw, dite_eq_left hb]
+@@ -92 +92 @@
+-    simp only [ht, Bool.false_eq_true, ite_false, commonExitDraw, dif_neg hb]
++    simp only [ht, Bool.false_eq_true, ite_false, commonExitDraw, dite_eq_right hb]
+@@ -108,2 +108,3 @@
+-  rw [hi]
+-  exact rawCommonExit_eq r c U L hr hc htotal d J hExit _
++  have hmap := congrArg (fun reached => rawCommonExit (List.ofFn r) (List.ofFn c)
++    U L J hExit (computedStateCode r c U L d.val) reached (List.ofFn parts.2)) hi
++  exact hmap.trans (rawCommonExit_eq r c U L hr hc htotal d J hExit _
+@@ -111 +112 @@
+-    (incomingStep r c U L hr hc d N hIn parts.1) parts.2
++    (incomingStep r c U L hr hc d N hIn parts.1) parts.2)

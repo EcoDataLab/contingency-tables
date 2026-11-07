@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "03500473de0e8be1c872eb64971941eabde22910",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalStar.Trial"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalStar.Trial",
+      "source": "research/physical-star-trial/formal/ResearchPhysicalStar/Trial.lean",
+      "source_sha256": "4d5ec3ec9729e60efeb3f29d154614f47a62554f6e0da98d849d1df0a6ab403c",
+      "returncode": 0,
+      "seconds": 95.6669494160451,
+      "olean_sha256": "24c554bd908d63cd8125981aff29ffcd61f407ad23ae76930915567957a7f67c"
+    }
+  ],
+  "audit_seconds": 222.29917800007388,
+  "audit_sha256": "0cf5e2bd35a40a85de291e47c44e34351d002ee5fea9c0a109ee650799981653",
+  "audit_driver_sha256": "8a5d9c6b63ee914a9afedbde92981a9aa55b864ae73647f8c034da9bdae0b80d",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "d61c50dcab2042c9c75ec1f6aa7da59a01f474c3e8d2a39a91f25fa7a639bbe7",
+  "declaration_count": 52,
+  "theorem_count": 23,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalStarTrial.actualStep_law",
+      "closure_size": 43805,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (h : ℕ),\n      OAI.ContingencyTables.FirstSuccess.mapLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n          (Math115.PhysicalStarTrial.actualStep r c U L hr hc b h) =\n        Math115.PhysicalCompletionOracle.referenceStepLaw r c U L\n          ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r U hr) none)\n          ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c U hc) none)\n          (Math115.LegacyPhysicalCompletion.oracleFamily r c U L hr hc h\n            ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r U hr) none)\n            ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c U hc) none))\n          ↑b",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalStarTrial.idealTrialLaw_mass_some",
+      "closure_size": 12090,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (e : Math115.PhysicalDefectTrace.DefectVertices r c U L),\n  (Math115.PhysicalStarTrial.idealTrialLaw r c U L hr hc b).mass (some e) =\n    Math115.PhysicalRationalKernel.proposalRat OAI.ContingencyTables.CompletionCounts.dimensionAllowance *\n        Math115.PhysicalStarTrial.crossRat r c U L hr hc b e /\n      Math115.PhysicalStarTrial.weightRat r c U L hr hc b",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalStarTrial.idealTrialLaw_mass_some_cast",
+      "closure_size": 12115,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (e : Math115.PhysicalDefectTrace.DefectVertices r c U L),\n  ↑((Math115.PhysicalStarTrial.idealTrialLaw r c U L hr hc b).mass (some e)) =\n    ↑(Math115.PhysicalRationalKernel.proposalRat OAI.ContingencyTables.CompletionCounts.dimensionAllowance) *\n        Math115.ComputedReferenceTrace.referenceCross r c U L\n          ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv r U hr) none)\n          ((OAI.ContingencyTables.SmallGraphProfiles.largeOptionEquiv c U hc) none) b e /\n      Math115.PhysicalDefectTrace.balancedWeight r c U L b",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalStarTrial.actualTrialLaw_accuracy",
+      "closure_size": 43818,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (b : Math115.PhysicalDefectTrace.BalancedVertices r c U L) (h : ℕ),\n      OAI.ContingencyTables.FirstSuccess.variation (Math115.PhysicalStarTrial.actualTrialLaw r c U L hr hc b h)\n          (Math115.PhysicalStarTrial.idealTrialLaw r c U L hr hc b) ≤\n        Math115.CompletionRetryBudget.dyadic h",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralProgramCode"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralProgramCode",
+      "source": "research/physical-trace-general-program-code/formal/ResearchPhysicalTraceJoin/GeneralProgramCode.lean",
+      "source_sha256": "3b258fcbb523d28cb7d87c24b7a2aa1f2f6760e0eb50f12121a5d48c80707345",
+      "returncode": 0,
+      "seconds": 53.376763875130564,
+      "olean_sha256": "73063daa88bc7fbc51b577052df226a612cf04b5a4f2e53fd6f947da2f6a2721"
+    }
+  ],
+  "audit_seconds": 189.2115254579112,
+  "audit_sha256": "0d25804bc8f3098bf9c4f78c08130361332303cd6b9818fa5788769d1067b482",
+  "audit_driver_sha256": "27b17321c3939c970a3565d87b795a329919d77d40f980dde2d37a0b177254c6",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "9c6a3dc5820d5941fb6915fdce6c79eb1482201ced46fc51cc0b2fbbc4417d98",
+  "declaration_count": 15,
+  "theorem_count": 10,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.rawCorrectedRetryCode_eq",
+      "closure_size": 44147,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length),\n  ∑ i, r i = ∑ j, c j →\n    ∀ (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (h k : ℕ)\n      (fallback : OAI.ContingencyTables.Table r c) (R : ℕ),\n      0 < Math115.PhysicalTraceJoin.terminalCorrectedWordWidth r c U L h k →\n        ∀ (word : Fin (Math115.PhysicalTraceJoin.terminalCorrectedRetryWordWidth r c U L h k R) → Bool),\n          Math115.PhysicalTraceJoin.rawCorrectedRetryCode (List.ofFn r) (List.ofFn c) U L\n              (Math115.PhysicalComputedProposal.computedStateCode r c U L ↑start) h k\n              (OAI.ContingencyTables.DensePrograms.matrixCode ↑fallback) R (List.ofFn word) =\n            OAI.ContingencyTables.DensePrograms.matrixCode\n              ↑(Math115.PhysicalTraceJoin.terminalCorrectedRetryWord r c U L hr hc start h k fallback R word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawPositiveReferenceWordCode_eq",
+      "closure_size": 44430,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j)\n  (hb : Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference)\n  (t : ℕ) (word : Fin (Math115.PhysicalTraceJoin.positiveReferenceWordWidth xs ys t) → Bool),\n  Math115.PhysicalTraceJoin.rawPositiveReferenceWordCode xs ys htotal t (List.ofFn word) =\n    OAI.ContingencyTables.DensePrograms.matrixCode\n      ↑(Math115.PhysicalTraceJoin.positiveReferenceWord xs ys htotal hb t word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawHybridWordWidth_eq",
+      "closure_size": 44267,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j) (t : ℕ),\n  Math115.PhysicalTraceJoin.rawHybridWordWidth xs ys t = (Math115.PhysicalTraceJoin.hybridSampler xs ys htotal t).fst",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawHybridSamplerCode_eq",
+      "closure_size": 44454,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j) (t : ℕ)\n  (word : Fin (Math115.PhysicalTraceJoin.hybridSampler xs ys htotal t).fst → Bool),\n  Math115.PhysicalTraceJoin.rawHybridSamplerCode xs ys t (List.ofFn word) =\n    OAI.ContingencyTables.DensePrograms.matrixCode ↑((Math115.PhysicalTraceJoin.hybridSampler xs ys htotal t).snd word)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

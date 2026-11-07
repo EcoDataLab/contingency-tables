@@ -1,0 +1,3 @@
+import ResearchPhysicalTraceJoin.GeneralJointCode
+import ResearchAudit.EnvironmentAudit
+#environment_audit prefixes [] modules [ResearchPhysicalTraceJoin.GeneralJointCode] headlines [Math115.PhysicalTraceJoin.jointSourceMatrixCode_eq, Math115.PhysicalTraceJoin.jointSourceMatrixCode_draw, Math115.PhysicalTraceJoin.jointTerminalCorrectionCode_eq]

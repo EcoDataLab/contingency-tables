@@ -1,0 +1,116 @@
+<packet>/formal/ResearchPhysicalStar/Trial.lean:35:23: error: Unknown identifier `largeOptionEquiv` at quotation precheck
+
+Note: You can use `set_option quotPrecheck false` to disable this check.
+<packet>/formal/ResearchPhysicalStar/Trial.lean:36:23: error: Unknown identifier `largeOptionEquiv` at quotation precheck
+
+Note: You can use `set_option quotPrecheck false` to disable this check.
+<packet>/formal/ResearchPhysicalStar/Trial.lean:37:23: error: Unknown identifier `referenceRows` at quotation precheck
+
+Note: You can use `set_option quotPrecheck false` to disable this check.
+<packet>/formal/ResearchPhysicalStar/Trial.lean:38:23: error: Unknown identifier `referenceColumns` at quotation precheck
+
+Note: You can use `set_option quotPrecheck false` to disable this check.
+<packet>/formal/ResearchPhysicalStar/Trial.lean:47:33: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+<packet>/formal/ResearchPhysicalStar/Trial.lean:49:33: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+<packet>/formal/ResearchPhysicalStar/Trial.lean:91:35: error: elaboration function for `_private.ResearchPhysicalStar.Trial.0.Math115.PhysicalStarTrial.termI₀` has not been implemented
+  i₀
+<packet>/formal/ResearchPhysicalStar/Trial.lean:99:35: error: elaboration function for `_private.ResearchPhysicalStar.Trial.0.Math115.PhysicalStarTrial.termI₀` has not been implemented
+  i₀
+<packet>/formal/ResearchPhysicalStar/Trial.lean:100:8: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (800000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+<packet>/formal/ResearchPhysicalStar/Trial.lean:108:29: error: elaboration function for `_private.ResearchPhysicalStar.Trial.0.Math115.PhysicalStarTrial.termI₀` has not been implemented
+  i₀
+<packet>/formal/ResearchPhysicalStar/Trial.lean:109:56: error: elaboration function for `_private.ResearchPhysicalStar.Trial.0.Math115.PhysicalStarTrial.termR₀` has not been implemented
+  R₀
+<packet>/formal/ResearchPhysicalStar/Trial.lean:108:81: error: unsolved goals
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+htotal : ∑ i, r i = ∑ j, c j
+b : BalancedVertices r c U L
+h : ℕ
+⊢ mapLaw uniformLaw (actualStep r c U L hr hc b h) = sorry
+<packet>/formal/ResearchPhysicalStar/Trial.lean:140:37: error: elaboration function for `_private.ResearchPhysicalStar.Trial.0.Math115.PhysicalStarTrial.termI₀` has not been implemented
+  i₀
+<packet>/formal/ResearchPhysicalStar/Trial.lean:147:5: error(lean.unknownIdentifier): Unknown identifier `physicalAdjacent`
+<packet>/formal/ResearchPhysicalStar/Trial.lean:148:19: error: elaboration function for `_private.ResearchPhysicalStar.Trial.0.Math115.PhysicalStarTrial.termR₀` has not been implemented
+  R₀
+<packet>/formal/ResearchPhysicalStar/Trial.lean:150:64: error: elaboration function for `_private.ResearchPhysicalStar.Trial.0.Math115.PhysicalStarTrial.termR₀` has not been implemented
+  R₀
+<packet>/formal/ResearchPhysicalStar/Trial.lean:153:22: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  BalancedVertices r c U L
+of sort `Type` in the application
+  crossRat r c U L hr
+<packet>/formal/ResearchPhysicalStar/Trial.lean:153:62: error: elaboration function for `_private.ResearchPhysicalStar.Trial.0.Math115.PhysicalStarTrial.termI₀` has not been implemented
+  i₀
+<packet>/formal/ResearchPhysicalStar/Trial.lean:158:23: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  BalancedVertices r c U L
+of sort `Type` in the application
+  weightRat r c U L hr
+<packet>/formal/ResearchPhysicalStar/Trial.lean:160:30: error: elaboration function for `_private.ResearchPhysicalStar.Trial.0.Math115.PhysicalStarTrial.termI₀` has not been implemented
+  i₀
+<packet>/formal/ResearchPhysicalStar/Trial.lean:159:14: warning: declaration uses `sorry`
+<packet>/formal/ResearchPhysicalStar/Trial.lean:167:39: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  BalancedVertices r c U L
+of sort `Type` in the application
+  crossRat r c U L hr
+<packet>/formal/ResearchPhysicalStar/Trial.lean:167:69: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  BalancedVertices r c U L
+of sort `Type` in the application
+  weightRat r c U L hr
+<packet>/formal/ResearchPhysicalStar/Trial.lean:166:27: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  BalancedVertices r c U L
+of sort `Type` in the application
+  idealTrialLaw r c U L hr
+<packet>/formal/ResearchPhysicalStar/Trial.lean:168:2: warning: Try this:
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+<packet>/formal/ResearchPhysicalStar/Trial.lean:182:51: error: elaboration function for `_private.ResearchPhysicalStar.Trial.0.Math115.PhysicalStarTrial.termI₀` has not been implemented
+  i₀
+<packet>/formal/ResearchPhysicalStar/Trial.lean:181:28: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  BalancedVertices r c U L
+of sort `Type` in the application
+  idealTrialLaw r c U L hr
+<packet>/formal/ResearchPhysicalStar/Trial.lean:191:72: error: Application type mismatch: The argument
+  hr
+has type
+  0 < (largeIndices (U, List.ofFn r)).length
+of sort `Prop` but is expected to have type
+  BalancedVertices r c U L
+of sort `Type` in the application
+  idealTrialLaw r c U L hr

@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "modules": [
+    "CompleteDraw.Seams",
+    "CompleteDraw.PublicBridge",
+    "CompleteDraw.FinalBinding",
+    "CompleteDraw.FixedMachineTheorem"
+  ],
+  "compilation": [
+    {
+      "module": "CompleteDraw.Seams",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/Seams.lean",
+      "source_sha256": "4f02c59c3b89fc43ac8265cb8887c803eb60b1c0aa342bcc6b9db51746a20116",
+      "returncode": 0,
+      "olean_sha256": "1285dc740cf95e6382a7445e94e3d36a9c6b39ba911b8d3115cd6bf4631c6c03",
+      "status": "reused_frozen_defining_compilation",
+      "fresh_build": false,
+      "original_receipt": ".local/further-gap/draw-runtime-next/complete-draw/CompleteDraw_Seams.compilation.json",
+      "original_receipt_sha256": "37490e70672be2235ccf642ccfd950020cc90d3ce21589e9d0a4bf24411826d0"
+    },
+    {
+      "module": "CompleteDraw.PublicBridge",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/PublicBridge.lean",
+      "source_sha256": "af30b0ec3632bef514e475e286606388c7d5089dac2ec9297760be496ad5a62c",
+      "returncode": 0,
+      "olean_sha256": "98311172924f39a020fac8900917ce73eccbb03e8120f71ae2d12607144302bd",
+      "status": "reused_frozen_defining_compilation",
+      "fresh_build": false,
+      "original_receipt": ".local/further-gap/draw-runtime-next/complete-draw/CompleteDraw_PublicBridge.compilation.json",
+      "original_receipt_sha256": "bcee0b2d69196b793bc6c243a1d2faf15258e5d50148b1648bb1079781e8047c"
+    },
+    {
+      "module": "CompleteDraw.FinalBinding",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/FinalBinding.lean",
+      "source_sha256": "da7baf26d81e0959b9d795f20b9552a32428170b3caa5559b76d14108a7d5920",
+      "returncode": 0,
+      "olean_sha256": "a050b479dfc86776edb540fafa86066d706c348557ab2bbc4fdeb1c3d938423a",
+      "status": "reused_frozen_defining_compilation",
+      "fresh_build": false,
+      "original_receipt": ".local/further-gap/draw-runtime-next/complete-draw/CompleteDraw_FinalBinding.compilation.json",
+      "original_receipt_sha256": "2ca9e21af2c978e9190fdc7f2d149974ad7818dc873f95c3d25a7603e4bc5474"
+    },
+    {
+      "module": "CompleteDraw.FixedMachineTheorem",
+      "source": ".local/further-gap/draw-runtime-next/complete-draw/source/CompleteDraw/FixedMachineTheorem.lean",
+      "source_sha256": "34e65943767905e9bce4b0ccf88b8985d84a691ea06f50a1bc5ee569d2c0f672",
+      "returncode": 0,
+      "olean_sha256": "b099e243267870ec9da03bc697bc0f55c869bb3c4b7fdbb77b442ee6e93f1b7d",
+      "status": "reused_frozen_defining_compilation",
+      "fresh_build": false,
+      "original_receipt": ".local/further-gap/draw-runtime-next/complete-draw/CompleteDraw_FixedMachineTheorem.compilation.json",
+      "original_receipt_sha256": "27e4750c8835f242dc9b38e4f1613042beaad0eb8485719e6c46f1fa95154c33"
+    }
+  ],
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "audit_file": "audit.stdout.json.gz",
+  "audit_sha256": "b0de261839e839721d0abc84bb86c447377a4ee1b2144f91d9d869daa14f5f66",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "f07232d05339d0c435dcd5916993fd257efdce285047cce8554a18c8bbeb2048",
+  "declaration_count": 19,
+  "theorem_count": 12,
+  "headlines": [
+    {
+      "name": "Math115.CompleteDrawNext.explicitPublicDegree",
+      "closure_size": 420,
+      "statement": "\u2115"
+    },
+    {
+      "name": "Math115.CompleteDrawNext.typed_actual_publicDraw",
+      "closure_size": 12491,
+      "statement": "Math115.DegreeBounds.Typed Math115.PublicLatticeSampler.publicDrawRealizer Math115.CompleteDrawNext.explicitDrawDegree"
+    },
+    {
+      "name": "Math115.CompleteDrawNext.machineTime_public_explicit_degree",
+      "closure_size": 14706,
+      "statement": "\u2203 C,\n  0 < C \u2227\n    \u2200 (m n : \u2115) (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115),\n      \u2211 i, r i = \u2211 j, c j \u2192\n        \u2200 (h : \u2115),\n          1 \u2264 h \u2192\n            Math115.PublicLatticeSampler.machineTime (OAI.ContingencyTables.Algorithms.encodeSamplingInput r c h) \u2264\n              C * OAI.ContingencyTables.Algorithms.samplingSize n r h ^ Math115.CompleteDrawNext.explicitPublicDegree"
+    },
+    {
+      "name": "Math115.CompleteDrawNext.fixedMachineBoundedSampling_explicit_degree",
+      "closure_size": 48401,
+      "statement": "\u2203 C,\n  0 < C \u2227\n    \u2200 (m n : \u2115) (r : Fin m \u2192 \u2115) (c : Fin n \u2192 \u2115),\n      \u2211 i, r i = \u2211 j, c j \u2192\n        \u2200 (h : \u2115),\n          1 \u2264 h \u2192\n            have input := OAI.ContingencyTables.Algorithms.encodeSamplingInput r c h;\n            have time :=\n              C * OAI.ContingencyTables.Algorithms.samplingSize n r h ^ Math115.CompleteDrawNext.explicitPublicDegree;\n            (\u2200 (bits : Fin time \u2192 Bool),\n                \u2203 X, OAI.ContingencyTables.Algorithms.OutputsTable Math115.PublicLatticeSampler.machine input bits \u2191X) \u2227\n              (\u2211 X,\n                    |OAI.ContingencyTables.Algorithms.tableMass Math115.PublicLatticeSampler.machine input time \u2191X -\n                        (\u2191(Fintype.card (OAI.ContingencyTables.Table r c)))\u207b\u00b9|) /\n                  2 \u2264\n                (2 ^ h)\u207b\u00b9"
+    }
+  ],
+  "audit_seconds": 115.607,
+  "scope": "Focused compiled-environment audit of four frozen final defining modules, reusing successful exact compilations and authenticated imports; four full headline closures. No default rebuild, fresh dependency build, platform portability or strict Comparator replay."
+}

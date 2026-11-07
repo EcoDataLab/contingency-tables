@@ -1,0 +1,54 @@
+{
+  "files": {
+    "adapter": {
+      "path": "research/strict-sampler-checkpoints/unused-cache-policy-v1/runner/tested-runtime/no_rebuild_landrun.py",
+      "sha256": "a296bcbdcbb313b0d43cc7237103fbd231df8dd3b5bfc7ffd9d7e289422be5a7"
+    },
+    "normalization_helper": {
+      "path": "research/strict-sampler-checkpoints/hash-memo-normalization-v1/source/NormalizeMemos.lean",
+      "sha256": "a3bc73a5756b203788a14f848ec8d5e4362fd18cbeed9da3693fdb88ba6187cd"
+    },
+    "observer": {
+      "path": "research/strict-sampler-checkpoints/proc-observer-v2/source/strict_serial_check.py",
+      "sha256": "b5e8c0f95fdd5f6b9193c2b0537782b242d0fe0c269dae7b5a7a4c73a32cb1f0"
+    },
+    "original_authenticator": {
+      "path": "research/strict-sampler-checkpoints/authentication-diagnostics-v1/delta/runner/authenticate_runtime.py",
+      "sha256": "742ec1105d5bb44a392046ec06ca5944a20989bc0cb5a037d2997b37def2b943"
+    },
+    "original_metadata": {
+      "path": "research/strict-sampler-checkpoints/versioned-guard-v2/source/anchored_metadata.py",
+      "sha256": "6eb447ff60a09d13bc134252e490bd99e7a15b92c7436a0db5a677269b91a3a5"
+    },
+    "original_observer": {
+      "path": "research/strict-sampler-checkpoints/unused-cache-policy-v1/runner/tested-runtime/strict_serial_check.py",
+      "sha256": "05df96db18964f76a109d72d876ba7c72f799782e1c54bad9f587cd213110e7e"
+    },
+    "original_runner": {
+      "path": "research/strict-sampler-checkpoints/authentication-diagnostics-v1/delta/runner/strict_sampler.py",
+      "sha256": "4ba0a3c42bee4f511909fc50ad33b00be2a5cc3cabecdd2b54ac08ec7970d1a6"
+    },
+    "original_snapshots": {
+      "path": "research/strict-sampler-checkpoints/snapshot-comparison-v1/source/snapshots.py",
+      "sha256": "c875c20375a1bf3362ac836126c7ddb249b0669ef9b2af332691f89f6278a193"
+    },
+    "planner": {
+      "path": "research/strict-sampler-checkpoints/unused-cache-policy-v1/runner/tested-runtime/build_lean_serial.py",
+      "sha256": "5dd644d68305af37343963e283e4b25efb95420896add41f8aa8fd6e2737a66c"
+    },
+    "previous_candidate": {
+      "path": "research/strict-sampler-checkpoints/proc-observer-v2/source/versioned_runner.py",
+      "sha256": "50b13329f7de7ba59f007cdc382aa317e2984d14104bda0bd37d1a9c9ecf78f3"
+    },
+    "previous_preparation": {
+      "path": "research/strict-sampler-checkpoints/proc-observer-v2/source/prepare_memos.py",
+      "sha256": "0b60be200d5abd065754be1da09f6d0d7b4bd9c6fc1439da5007de7763aa098d"
+    },
+    "source_freeze": {
+      "path": "research/strict-sampler-checkpoints/unused-cache-policy-v1/runner/source-freeze.json",
+      "sha256": "2a15fa398282a2825cc773b5e5110f8bacc4fbc2af9f28afb88f1b326c1b93bd"
+    }
+  },
+  "scope": "Source-only candidate assembly; complete retained image and historical source archive are not supplied.",
+  "source_archive_sha256": "47e864e49025da1e505c32ae1c5f23428ed900b1ecc64468cb72478095824a84"
+}

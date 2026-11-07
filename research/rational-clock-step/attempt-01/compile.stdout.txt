@@ -1,0 +1,28 @@
+<packet>/revisions/attempt-01/formal/ResearchRationalClockStep/Step.lean:168:15: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchRationalClockStep/Step.lean:170:15: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+<packet>/revisions/attempt-01/formal/ResearchRationalClockStep/Step.lean:184:15: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+<packet>/revisions/attempt-01/formal/ResearchRationalClockStep/Step.lean:184:2: error: unsolved goals
+case pos
+m n : ℕ
+r : Fin m → ℕ
+c : Fin n → ℕ
+U L : ℕ
+hr : 0 < (largeIndices (U, List.ofFn r)).length
+hc : 0 < (largeIndices (U, List.ofFn c)).length
+htotal : ∑ i, r i = ∑ j, c j
+hp : 2 ≤ Fintype.card (SmallContextCoordinates.Cells (firstPaperSmall r c U))
+x : DefectVertices r c U L
+y : States r c U L
+hne : ↑x ≠ y
+hxy : physicalAdjacent r c U L B ⋯ (↑x) y
+⊢ ↑(acceptedCount (referenceRows r c U L B ((largeOptionEquiv r U hr) none))
+          (referenceColumns r c U L B ((largeOptionEquiv c U hc) none)) (↑x) y) /
+      (↑2 * ↑(defectAllowance r c U) *
+        ↑(blockCount (referenceRows r c U L B ((largeOptionEquiv r U hr) none))
+            (referenceColumns r c U L B ((largeOptionEquiv c U hc) none)) ↑x)) =
+    ↑(acceptedCount (referenceRows r c U L B ((largeOptionEquiv r U hr) none))
+          (referenceColumns r c U L B ((largeOptionEquiv c U hc) none)) (↑x) y) /
+      (2 * ↑(defectAllowance r c U) *
+        ↑(blockCount (referenceRows r c U L B ((largeOptionEquiv r U hr) none))
+            (referenceColumns r c U L B ((largeOptionEquiv c U hc) none)) ↑x))
+<packet>/revisions/attempt-01/formal/ResearchRationalClockStep/Step.lean:186:15: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "19e4f3ffe5807f024d91a9f6063504f36a4587af",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralTerminalLaw"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralTerminalLaw",
+      "source": "research/physical-trace-general-terminal-law/formal/ResearchPhysicalTraceJoin/GeneralTerminalLaw.lean",
+      "source_sha256": "bede661953abd4cf1d7ac86021efd763e5ae59d54a92bbcbd75fe819f66f891d",
+      "returncode": 0,
+      "seconds": 48.28046691697091,
+      "olean_sha256": "a7a5633b33098bb221a5ab720b740de2efe8c0559e5b9418dd82b692977ee6f5"
+    }
+  ],
+  "audit_seconds": 88.27698879176751,
+  "audit_sha256": "6c6b6156495e6b994b1ea725ff030f8df407db093ca392411b94ac5320d3b806",
+  "audit_driver_sha256": "e35a5cd3aac5fe35d8d963a2baa5be845e0be462b5864e7b00ac8eb90d6cb089",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "d81150a24681489022153246bfe7d0e005f94238042b91a75aecb2e97af3df01",
+  "declaration_count": 28,
+  "theorem_count": 27,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalPartialFibreEquiv",
+      "closure_size": 9847,
+      "statement": "{m n : ℕ} →\n  (r : Fin m → ℕ) →\n    (c : Fin n → ℕ) →\n      (U L : ℕ) →\n        (X : OAI.ContingencyTables.Table r c) →\n          { a // Math115.PhysicalTraceJoin.terminalPartialRepair r c U L a = some X } ≃\n            Math115.PhysicalTraceJoin.TerminalOutputFibre r c U L X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalInverseCount_eq_supportCount",
+      "closure_size": 10881,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ),\n  1 ≤ L →\n    ∀ (X : OAI.ContingencyTables.Table r c),\n      Math115.PhysicalTraceJoin.terminalInverseCount r c U L X = Math115.PhysicalTraceJoin.inverseSupportCount r c U X",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalCorrected_mass",
+      "closure_size": 11316,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) [inst : Nonempty (Math115.PhysicalTraceJoin.DefectJoint r c U L)],\n  1 ≤ L →\n    (∀ (i : Fin m), 0 < r i) →\n      (∀ (j : Fin n), 0 < c j) →\n        ∀ (X : OAI.ContingencyTables.Table r c),\n          (OAI.ContingencyTables.FirstSuccess.bindLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n                  (Math115.PhysicalTraceJoin.terminalIdealCorrectionRow r c U L\n                    (Math115.PhysicalTraceJoin.inverseSupportAllowance r c U))).mass\n              (some X) =\n            ↑(Math115.PhysicalTraceJoin.inverseSupportAllowance r c U) /\n              ↑(Fintype.card (Math115.PhysicalTraceJoin.DefectJoint r c U L))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalCorrected_success",
+      "closure_size": 11638,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) [inst : Nonempty (Math115.PhysicalTraceJoin.DefectJoint r c U L)],\n  1 ≤ L →\n    (∀ (i : Fin m), 0 < r i) →\n      (∀ (j : Fin n), 0 < c j) →\n        1 -\n            (OAI.ContingencyTables.FirstSuccess.bindLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n                  (Math115.PhysicalTraceJoin.terminalIdealCorrectionRow r c U L\n                    (Math115.PhysicalTraceJoin.inverseSupportAllowance r c U))).mass\n              none =\n          ↑(Fintype.card (OAI.ContingencyTables.Table r c)) *\n              ↑(Math115.PhysicalTraceJoin.inverseSupportAllowance r c U) /\n            ↑(Fintype.card (Math115.PhysicalTraceJoin.DefectJoint r c U L))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.terminalCorrected_uniform_proportions",
+      "closure_size": 11640,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ) [inst : Nonempty (Math115.PhysicalTraceJoin.DefectJoint r c U L)],\n  1 ≤ L →\n    (∀ (i : Fin m), 0 < r i) →\n      (∀ (j : Fin n), 0 < c j) →\n        ∀ (X : OAI.ContingencyTables.Table r c),\n          have law :=\n            OAI.ContingencyTables.FirstSuccess.bindLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n              (Math115.PhysicalTraceJoin.terminalIdealCorrectionRow r c U L\n                (Math115.PhysicalTraceJoin.inverseSupportAllowance r c U));\n          law.mass (some X) = (1 - law.mass none) * OAI.ContingencyTables.ResidualMixture.uniformMass",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.actualShape_terminalCorrected_success_lower",
+      "closure_size": 12937,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ),\n  (∀ (i : Fin m), 0 < r i) →\n    (∀ (j : Fin n), 0 < c j) →\n      ∀\n        [inst :\n          Nonempty\n            (Math115.PhysicalTraceJoin.DefectJoint r c\n              (11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2)) 7)],\n        let cutoff := 11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2);\n        have cellCount :=\n          Fintype.card\n            (OAI.ContingencyTables.SmallContextCoordinates.Cells\n              (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c cutoff));\n        ↑(Math115.PhysicalTraceJoin.inverseSupportAllowance r c cutoff) / ↑(2 * (cellCount * (cellCount - 1))) ≤\n          1 -\n            (OAI.ContingencyTables.FirstSuccess.bindLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n                  (Math115.PhysicalTraceJoin.terminalIdealCorrectionRow r c cutoff 7\n                    (Math115.PhysicalTraceJoin.inverseSupportAllowance r c cutoff))).mass\n              none",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.actualShape_terminalCorrected_success_positive",
+      "closure_size": 12944,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ),\n  2 ≤ m →\n    2 ≤ n →\n      (∀ (i : Fin m), 0 < r i) →\n        (∀ (j : Fin n), 0 < c j) →\n          ∀\n            [inst :\n              Nonempty\n                (Math115.PhysicalTraceJoin.DefectJoint r c\n                  (11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2)) 7)],\n            let cutoff := 11 * OAI.ContingencyTables.CompletionCounts.dimensionAllowance * (m + n - 2);\n            0 <\n              1 -\n                (OAI.ContingencyTables.FirstSuccess.bindLaw OAI.ContingencyTables.FirstSuccess.uniformLaw\n                      (Math115.PhysicalTraceJoin.terminalIdealCorrectionRow r c cutoff 7\n                        (Math115.PhysicalTraceJoin.inverseSupportAllowance r c cutoff))).mass\n                  none",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

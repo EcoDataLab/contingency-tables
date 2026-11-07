@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "bec65a8eacac9a9d6b57b61585a8b1335b85d2be",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.InitializationObstruction"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.InitializationObstruction",
+      "source": "research/physical-trace-initialization-obstruction/formal/ResearchPhysicalTraceJoin/InitializationObstruction.lean",
+      "source_sha256": "c7415b073d83b5f19fc9ca330ada39010d4c8f0a7b7e4a401f788bf0e14e4aa8",
+      "returncode": 0,
+      "seconds": 114.21283924998716,
+      "olean_sha256": "44cc2c17d3cad5de01f746aa020bcd9d831dce7d25a9264752d3710b074cff84"
+    }
+  ],
+  "audit_seconds": 155.61484812526032,
+  "audit_sha256": "e57201c6380bb4d0b691a843fe40aec43f726cb09f5d21b895709a5b6456a2bb",
+  "audit_driver_sha256": "743d9c3a6a501a8692c26b42efd824da4484b62aa96f09a5fe98f970883ba76f",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "865551cd1990cc8bd3a085a4e1c9fbaad3bf095352bd933d5f717299882cdfd3",
+  "declaration_count": 15,
+  "theorem_count": 13,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.defects_isEmpty_of_zero_small_rows",
+      "closure_size": 10133,
+      "statement": "∀ {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J] (r : I → ℕ)\n  (c : J → ℕ) (U L : ℕ),\n  (∀ (i : I) (j : J), OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U i j = true → r i = 0) →\n    IsEmpty (Math115.PhysicalDefectTrace.DefectVertices r c U L)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.obstruction_both_large",
+      "closure_size": 636,
+      "statement": "0 <\n    (OAI.ContingencyTables.ProfilePrograms.largeIndices\n        (2, List.ofFn Math115.PhysicalTraceJoin.obstructionRows)).length ∧\n  0 <\n    (OAI.ContingencyTables.ProfilePrograms.largeIndices\n        (2, List.ofFn Math115.PhysicalTraceJoin.obstructionColumns)).length",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.obstruction_two_small_cells",
+      "closure_size": 4239,
+      "statement": "2 ≤\n  Fintype.card\n    (OAI.ContingencyTables.SmallContextCoordinates.Cells\n      (OAI.ContingencyTables.CompletionCounts.firstPaperSmall Math115.PhysicalTraceJoin.obstructionRows\n        Math115.PhysicalTraceJoin.obstructionColumns 2))",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.obstruction_no_defect_start",
+      "closure_size": 10201,
+      "statement": "¬Nonempty\n    (Math115.PhysicalDefectTrace.DefectVertices Math115.PhysicalTraceJoin.obstructionRows\n      Math115.PhysicalTraceJoin.obstructionColumns 2 7)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

@@ -1,0 +1,8 @@
+test_invalid_progress_fails_closed_and_resources_consistent (__main__.Progress.test_invalid_progress_fails_closed_and_resources_consistent) ... ok
+test_owned_receipt_progress_is_telemetry_not_acceptance (__main__.Progress.test_owned_receipt_progress_is_telemetry_not_acceptance) ... ok
+test_partial_json_keeps_prior_observation (__main__.Progress.test_partial_json_keeps_prior_observation) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.003s
+
+OK

@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_weaken",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_comp_pos",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_pair_same",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_comp_affine",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.affine_composition",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_choose",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_append",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.affine_append",
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_flatten",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.affine_flatten",
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.map_affine_weight",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.affine_map",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_map_affine",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.affine_flatMap",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_flatMapPoly_affine",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_fromBit",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.affine_fromBit",
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.affine_bits",
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.affine_natWord",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_actual_natWord",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_actual_printRow",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.affine_printRow",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.typed_actual_printMatrix",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.actual_printMatrix_polynomial",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  {
+    "name": "Math115.PrinterRuntimeNext.AffineOutput",
+    "axioms": []
+  }
+]

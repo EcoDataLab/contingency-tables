@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "Math115.ReferenceEdgeAcceptance",
+    "Research.AcceptancePadding",
+    "Research.WeightedIncidence",
+    "Research.SurvivalConvolution",
+    "Research.CompositionSurvival",
+    "Research.ReciprocalZero",
+    "Research.ReciprocalZeroPhysical"
+  ],
+  "compilation": [
+    {
+      "module": "Math115.ReferenceEdgeAcceptance",
+      "source": "formal/Math115/ReferenceEdgeAcceptance.lean",
+      "source_sha256": "3e9973e6c5b97356d1222fc301f4cf5dfd4865045b0b89ae25b4c3e5cf8f93b8",
+      "returncode": 0,
+      "seconds": 14.493,
+      "olean_sha256": "36833934ddb08641de659569ba48db4aaa6f7d139c6da58c6128bd867046cc7c"
+    },
+    {
+      "module": "Research.AcceptancePadding",
+      "source": "research/shape-refinement/formal/Research/AcceptancePadding.lean",
+      "source_sha256": "59773bb5f0e4053ff87bfa9810cb2e64a0592037ebe84b13ceb7dbeac9172726",
+      "returncode": 0,
+      "seconds": 15.38,
+      "olean_sha256": "7248b8a0a8435f322d4fd5583ee8d718691be443557196e52e51703aee9852ae"
+    },
+    {
+      "module": "Research.WeightedIncidence",
+      "source": "research/constant-padding/formal/Research/WeightedIncidence.lean",
+      "source_sha256": "ee418b3450ecd799b3ca50ed1e13582f20aa7e39af3b3e569bd33c63eb416ee1",
+      "returncode": 0,
+      "seconds": 4.088,
+      "olean_sha256": "0e9d274518f14e48c34e6de505ada3c8b1da933afe6776a0ae97df57aa36f9f5"
+    },
+    {
+      "module": "Research.SurvivalConvolution",
+      "source": "research/constant-padding/formal/Research/SurvivalConvolution.lean",
+      "source_sha256": "c727ba56e6bc9c29df8bdebff2c7bffc4400c3a68be314faec363ef22875dbba",
+      "returncode": 0,
+      "seconds": 4.113,
+      "olean_sha256": "8ba825a9fc3d1e585567996356efd143a0813b1540e2a13a93b82827841fd31e"
+    },
+    {
+      "module": "Research.CompositionSurvival",
+      "source": "research/constant-padding/formal/Research/CompositionSurvival.lean",
+      "source_sha256": "beb210c1b51b8a5c4d2dc1e9fb50f60dd0a051d285ca93b152712c9411cb2f34",
+      "returncode": 0,
+      "seconds": 4.316,
+      "olean_sha256": "e01529720a693df94247be5cae0d6ea03a2937e49b4ac0712bdcdeb3f1c3e1e0"
+    },
+    {
+      "module": "Research.ReciprocalZero",
+      "source": "research/constant-padding/formal/Research/ReciprocalZero.lean",
+      "source_sha256": "934014bbc94997ac33f7f784c4cc7321153ad33f87c85dafceb81fa8ac6333c5",
+      "returncode": 0,
+      "seconds": 5.337,
+      "olean_sha256": "b749b47e1bbc61733f29b62003bd23f5777dbccb53592cca0c85ecd97ad19afb"
+    },
+    {
+      "module": "Research.ReciprocalZeroPhysical",
+      "source": "research/constant-padding/formal/Research/ReciprocalZeroPhysical.lean",
+      "source_sha256": "0d95bd552e99d02152d9622801b7f9cfaa7731ae24133151b17c4dd18c9259df",
+      "returncode": 0,
+      "seconds": 14.933,
+      "olean_sha256": "afc57589d0f796986d920768d598b038a0e74fb275fc4f6e0fa0a801afb21b59"
+    },
+    {
+      "module": "ResearchAudit.EnvironmentAudit",
+      "source": "formal/ResearchAudit/EnvironmentAudit.lean",
+      "source_sha256": "21e645d67f4fb1c184fe0de4732c93fea02bfa3342226992620c84dc946f0cd1",
+      "returncode": 0,
+      "seconds": 2.373,
+      "olean_sha256": "3cd380f6882e4dc9b7f5856957c104fa377b21bdcbd1182309cf934d6ce12581"
+    }
+  ],
+  "audit_seconds": 80.252,
+  "audit_sha256": "4ac961fcdafee3647ed0c245a954e23f251f4033428a19345e172b25c55a8e4a",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "efc7f59742f760748970aea3e160b89e2118aa38db568f420f31eff1a2fdf895",
+  "declaration_count": 123,
+  "theorem_count": 116,
+  "headlines": [
+    {
+      "name": "Research.WeightedIncidence.product_weighted_incidence",
+      "closure_size": 5554,
+      "statement": "\u2200 {I : Type u_1} {J : Type u_2} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : DecidableEq I]\n  [inst_3 : DecidableEq J] {r : I \u2192 \u2115} {c : J \u2192 \u2115} (a : I) (s : J) (k : \u2115),\n  \u2211 X, \u2211 p, \u2191\u2191X a \u2191p.2 * \u2191\u2191X (\u2191p.1) s \u2264 \u2211 Y, \u2211 p, (\u2191\u2191Y a \u2191p.2 + 1) * (\u2191\u2191Y (\u2191p.1) s + 1)"
+    },
+    {
+      "name": "Research.WeightedIncidence.weighted_level_recurrence",
+      "closure_size": 6035,
+      "statement": "\u2200 {I : Type u_1} {J : Type u_2} [inst : Fintype I] [inst_1 : Fintype J] [DecidableEq I] [DecidableEq J] (r : I \u2192 \u2115)\n  (c : J \u2192 \u2115) (a : I) (s : J) (k : \u2115),\n  Fintype.card (Research.WeightedIncidence.Level r c a s k) * ((r a - k) * (c s - k)) \u2264\n    Fintype.card (Research.WeightedIncidence.Level r c a s (k + 1)) *\n      ((r a - (k + 1) + (Fintype.card J - 1)) * (c s - (k + 1) + (Fintype.card I - 1)))"
+    },
+    {
+      "name": "Research.SurvivalConvolution.finite_nbu_convolution",
+      "closure_size": 8798,
+      "statement": "\u2200 (F G : \u2115 \u2192 \u211d),\n  (\u2200 (k : \u2115), 0 \u2264 F k) \u2192\n    (\u2200 (k : \u2115), 0 \u2264 G k) \u2192\n      F 0 = 1 \u2192\n        (\u2200 (a b : \u2115), F (a + b) \u2264 F a * F b) \u2192\n          (\u2200 (a b : \u2115), G (a + b) \u2264 G a * G b) \u2192\n            \u2200 (n : \u2115),\n              0 < n \u2192\n                (\u2211 i \u2208 Finset.range n, F i) * \u2211 j \u2208 Finset.range n, G j \u2264\n                  (\u2211 k \u2208 Finset.range n, F k * G k) * (\u2211 i \u2208 Finset.range n, F i + \u2211 j \u2208 Finset.range n, G j - 1)"
+    },
+    {
+      "name": "Research.SurvivalConvolution.finite_nbu_reciprocal",
+      "closure_size": 8930,
+      "statement": "\u2200 (F G : \u2115 \u2192 \u211d),\n  (\u2200 (k : \u2115), 0 \u2264 F k) \u2192\n    (\u2200 (k : \u2115), 0 \u2264 G k) \u2192\n      F 0 = 1 \u2192\n        G 0 = 1 \u2192\n          (\u2200 (a b : \u2115), F (a + b) \u2264 F a * F b) \u2192\n            (\u2200 (a b : \u2115), G (a + b) \u2264 G a * G b) \u2192\n              \u2200 (n : \u2115),\n                0 < n \u2192\n                  1 / \u2211 k \u2208 Finset.range n, F k * G k \u2264\n                    1 / \u2211 i \u2208 Finset.range n, F i + 1 / \u2211 j \u2208 Finset.range n, G j -\n                      1 / ((\u2211 i \u2208 Finset.range n, F i) * \u2211 j \u2208 Finset.range n, G j)"
+    },
+    {
+      "name": "Research.CompositionSurvival.tail_nbu",
+      "closure_size": 7824,
+      "statement": "\u2200 (a q i j : \u2115),\n  Research.CompositionSurvival.tail a q (i + j) \u2264\n    Research.CompositionSurvival.tail a q i * Research.CompositionSurvival.tail a q j"
+    },
+    {
+      "name": "Research.CompositionSurvival.tail_sum",
+      "closure_size": 8453,
+      "statement": "\u2200 (a q : \u2115), \u2211 k \u2208 Finset.range (a + 1), Research.CompositionSurvival.tail a q k = (\u2191a + \u2191q + 1) / (\u2191q + 1)"
+    },
+    {
+      "name": "Research.CompositionSurvival.composition_reciprocal_bound",
+      "closure_size": 9637,
+      "statement": "\u2200 (a b q p n : \u2115),\n  a < n \u2192\n    b < n \u2192\n      1 / \u2211 k \u2208 Finset.range n, Research.CompositionSurvival.tail a q k * Research.CompositionSurvival.tail b p k \u2264\n        (\u2191q + 1) / (\u2191a + \u2191q + 1) + (\u2191p + 1) / (\u2191b + \u2191p + 1) - (\u2191q + 1) * (\u2191p + 1) / ((\u2191a + \u2191q + 1) * (\u2191b + \u2191p + 1))"
+    },
+    {
+      "name": "Research.ReciprocalZero.zero_count_times_convolution",
+      "closure_size": 9598,
+      "statement": "\u2200 {I : Type u_1} {J : Type u_2} [inst : Fintype I] [inst_1 : Fintype J] (r : I \u2192 \u2115) (c : J \u2192 \u2115) (a : I) (s : J),\n  2 \u2264 Fintype.card I \u2192\n    2 \u2264 Fintype.card J \u2192\n      \u2200 (n : \u2115),\n        \u2191(Fintype.card (Research.WeightedIncidence.Level r c a s 0)) *\n            \u2211 k \u2208 Finset.range n,\n              Research.CompositionSurvival.tail (r a) (Fintype.card J - 2) k *\n                Research.CompositionSurvival.tail (c s) (Fintype.card I - 2) k \u2264\n          \u2191(Fintype.card (OAI.ContingencyTables.Table r c))"
+    },
+    {
+      "name": "Research.ReciprocalZero.zero_entry_probability_reciprocal",
+      "closure_size": 10522,
+      "statement": "\u2200 {I : Type u_1} {J : Type u_2} [inst : Fintype I] [inst_1 : Fintype J] (r : I \u2192 \u2115) (c : J \u2192 \u2115) (a : I) (s : J),\n  2 \u2264 Fintype.card I \u2192\n    2 \u2264 Fintype.card J \u2192\n      \u2211 i, r i = \u2211 j, c j \u2192\n        \u2191(Fintype.card (Research.WeightedIncidence.Level r c a s 0)) /\n            \u2191(Fintype.card (OAI.ContingencyTables.Table r c)) \u2264\n          \u2191(Fintype.card J - 1) / (\u2191(r a) + \u2191(Fintype.card J - 1)) +\n              \u2191(Fintype.card I - 1) / (\u2191(c s) + \u2191(Fintype.card I - 1)) -\n            \u2191((Fintype.card J - 1) * (Fintype.card I - 1)) /\n              ((\u2191(r a) + \u2191(Fintype.card J - 1)) * (\u2191(c s) + \u2191(Fintype.card I - 1)))"
+    },
+    {
+      "name": "Research.ReciprocalZeroPhysical.accepted_half_seven",
+      "closure_size": 12166,
+      "statement": "\u2200 {I : Type u_1} {J : Type u_2} [inst : Fintype I] [inst_1 : Fintype J] (R : Option I \u2192 \u2115) (P : Option J \u2192 \u2115)\n  (D : Option I \u2192 Option J \u2192 \u2124),\n  Math115.CompletionAdjustment.Bounds D \u2192\n    \u2200 (L : \u2115),\n      7 \u2264 L \u2192\n        2 \u2264 Fintype.card (Option I) \u2192\n          2 \u2264 Fintype.card (Option J) \u2192\n            \u2211 i, R i = \u2211 j, P j \u2192\n              (\u2200 p \u2208 Math115.CompletionAdjustment.negative D, Fintype.card (Option J) * L \u2264 R p.1) \u2192\n                (\u2200 p \u2208 Math115.CompletionAdjustment.negative D, Fintype.card (Option I) * L \u2264 P p.2) \u2192\n                  Fintype.card (OAI.ContingencyTables.Table R P) \u2264\n                    2 * Fintype.card (OAI.ContingencyTables.CompletionTranslation.Accepted R P D)"
+    },
+    {
+      "name": "Research.ConstantPaddingAcceptance.reference_edge_acceptance_seven",
+      "closure_size": 13243,
+      "statement": "\u2200 {I J : Type u} [inst : Fintype I] [inst_1 : Fintype J] [inst_2 : LinearOrder I] [inst_3 : LinearOrder J] (r : I \u2192 \u2115)\n  (c : J \u2192 \u2115) (U L : \u2115) (B : I \u2192 J \u2192 \u2115)\n  (hB : \u2200 (i : I) (j : J), OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U i j = true \u2192 B i j = U)\n  (i\u2080 : OAI.ContingencyTables.SmallGraphProfiles.LargeRows r U)\n  (j\u2080 : OAI.ContingencyTables.SmallGraphProfiles.LargeColumns c U),\n  7 \u2264 L \u2192\n    (\u2200\n        (z :\n          OAI.ContingencyTables.SmallGraphProfiles.PhysicalStates\n            (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) B r c L)\n        (i : I) (j : J),\n        OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U i j = false \u2192\n          \u2211 k,\n              OAI.ContingencyTables.SmallGraphProfiles.residualRows\n                (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) B r c L z k \u2264\n            B i j) \u2192\n      \u2200\n        (x y :\n          OAI.ContingencyTables.SmallGraphProfiles.PhysicalStates\n            (OAI.ContingencyTables.CompletionCounts.firstPaperSmall r c U) B r c L),\n        OAI.ContingencyTables.SmallGraphProfiles.physicalAdjacent r c U L B hB x y \u2192\n          \u2191(OAI.ContingencyTables.CompletionTranslation.blockCount\n                  (OAI.ContingencyTables.SmallGraphProfiles.referenceRows r c U L B i\u2080)\n                  (OAI.ContingencyTables.SmallGraphProfiles.referenceColumns r c U L B j\u2080) x) /\n              2 \u2264\n            \u2191(OAI.ContingencyTables.CompletionTranslation.acceptedCount\n                (OAI.ContingencyTables.SmallGraphProfiles.referenceRows r c U L B i\u2080)\n                (OAI.ContingencyTables.SmallGraphProfiles.referenceColumns r c U L B j\u2080) x y)"
+    }
+  ],
+  "scope": "Fresh research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

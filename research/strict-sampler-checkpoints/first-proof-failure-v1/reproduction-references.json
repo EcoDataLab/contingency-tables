@@ -1,0 +1,26 @@
+{
+  "base": "../versioned-guard-v2/",
+  "candidate_runner": "../versioned-guard-v2/source/versioned_runner.py",
+  "execute_argv": [
+    "python3",
+    "-I",
+    "<additional-owned-v2-dir>/strict_sampler.py",
+    "--root",
+    "<checking-root>",
+    "--runtime-freeze",
+    "<actual-emitted-runtime>",
+    "--runtime-freeze-sha256",
+    "<actual-emitted-runtime-sha256>",
+    "--execute",
+    "--wall-seconds",
+    "7200",
+    "--output",
+    "<fresh-proof-output>"
+  ],
+  "helper": "../versioned-guard-v2/source/anchored_metadata.py",
+  "limits": "Outer host VM wrapper/images/seed/source archive remain private and digest-bound. Fresh cold source context and original authentication required. This is a minimal failure receipt, not a full reproducible VM.",
+  "unchanged_authenticator": "../authentication-diagnostics-v1/delta/runner/authenticate_runtime.py",
+  "unchanged_install_and_media": "../snapshot-comparison-v1/source/",
+  "unchanged_installation_manifest": "../snapshot-comparison-v1/source/installation-manifest.json",
+  "unchanged_original_runner": "../authentication-diagnostics-v1/delta/runner/strict_sampler.py"
+}

@@ -1,0 +1,155 @@
+{
+  "schema": "python-reliability-v1",
+  "date": "2026-11-06",
+  "scope": "Complete Python test environment and checkout-aware strict launcher; no sampler behavior change or formal build claim",
+  "source": {
+    "base_commit": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+    "state": "Completed working-tree source snapshot before checkpoint commit, based on a shallow local clone plus the current public changes; this is not a claim that the base commit alone contains the patch.",
+    "manifest": "source-manifest.json",
+    "manifest_sha256": "a84da8854552fcfc21bfb7eea55ff237f222803985b22a8c15fc6b0e35100f0d",
+    "manifest_entries": 125,
+    "manifest_scope": "Python files under src, tests, scripts and experiments; public observer fixture source Python files; Makefile, pyproject, Python CI workflow and environment guide. Each matched the fresh tested checkout byte-for-byte. This does not hash every non-Python asset read by tests."
+  },
+  "fresh_setup": {
+    "commands": [
+      [
+        "python3.12",
+        "-m",
+        "venv",
+        ".venv"
+      ],
+      [
+        ".venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-cache-dir",
+        "--only-binary=:all:",
+        "-e",
+        ".[test]"
+      ]
+    ],
+    "returncode": 0,
+    "seconds": 9.906508249696344,
+    "copied_existing_caches": false,
+    "excluded_cache_paths": [
+      ".venv",
+      ".tools",
+      ".upstream",
+      ".local",
+      "formal/.lake"
+    ],
+    "system_package_installs": false,
+    "log": "fresh-wheel-install.log.gz"
+  },
+  "runs": [
+    {
+      "id": "existing-full",
+      "command": [
+        "make",
+        "test"
+      ],
+      "cwd": "<checkout>",
+      "interpreter": "<checkout>/.venv/bin/python",
+      "versions": {
+        "python": "3.14.3",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1"
+      },
+      "returncode": 0,
+      "tests_run": 468,
+      "passed": 468,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "skip_details": [],
+      "unittest_seconds": 94.746,
+      "command_seconds": 95.53144737472758,
+      "scipy_real_library_tests_executed": 8,
+      "scipy_preflight_tests_executed": 2,
+      "observer_supervisor_progress_tests_executed": 36,
+      "log": "existing-full-tests.log.gz"
+    },
+    {
+      "id": "fresh-isolated",
+      "command": [
+        "make",
+        "test"
+      ],
+      "cwd": "<checkout>",
+      "interpreter": "<checkout>/.venv/bin/python",
+      "versions": {
+        "python": "3.12.8",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1"
+      },
+      "returncode": 0,
+      "tests_run": 468,
+      "passed": 467,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1,
+      "skip_details": [
+        "test_public_hybrid_closure_resolves_in_dependency_order_without_execution (test_research_integration_plan.IntegrationPlanTests.test_public_hybrid_closure_resolves_in_dependency_order_without_execution) ... skipped 'Public source-plan check needs the normal pinned Lean/upstream/package bootstrap; no downloads in Python tests'"
+      ],
+      "unittest_seconds": 103.989,
+      "command_seconds": 116.82125670835376,
+      "scipy_real_library_tests_executed": 8,
+      "scipy_preflight_tests_executed": 2,
+      "observer_supervisor_progress_tests_executed": 36,
+      "log": "fresh-full-tests.log.gz"
+    }
+  ],
+  "dependency_consistency": {
+    "existing_venv_pip_check": {
+      "returncode": 0,
+      "stdout": "No broken requirements found."
+    },
+    "fresh_venv_pip_check": {
+      "returncode": 0,
+      "stdout": "No broken requirements found."
+    }
+  },
+  "numerical_thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "sanitization": {
+    "<checkout>": "The relevant repository root, existing or fresh, without user or temporary directory names",
+    "<temporary-wheel-cache>": "Pip temporary build-wheel cache directory",
+    "projection": "Only completed test/install logs and structured results are projected; no private working patch, transcripts, unrelated memo, or cache content is included."
+  },
+  "artifacts": {
+    "existing-full-tests.log.gz": {
+      "sha256": "3f8c42d40c15eaca59773564151befdc797d7bc0cfb17d2cfa6a2769e84150d0",
+      "uncompressed_sha256": "22b8e0b58a690bcf8d79c5b5054b5810c95d458ea5dd6661ce00c768404e6bfc",
+      "bytes": 12411,
+      "uncompressed_bytes": 72022,
+      "format": "gzip UTF-8 text; machine roots replaced by documented placeholders"
+    },
+    "fresh-full-tests.log.gz": {
+      "sha256": "42c869f86b6fcacf1f7986a883b05d5cb74721b0bdd30e4f699830be205ce5ba",
+      "uncompressed_sha256": "90b37e62adb898c3f41c5ee0e966b9ca7f332e5fc9a99c8a971fe97d9d89ef31",
+      "bytes": 12497,
+      "uncompressed_bytes": 72153,
+      "format": "gzip UTF-8 text; machine roots replaced by documented placeholders"
+    },
+    "fresh-wheel-install.log.gz": {
+      "sha256": "d4018056d1a8561530b712e13c44979e1eeb1c45c20b5ef0f339e578469e4caf",
+      "uncompressed_sha256": "09a4d48c1704a037a8a01416373a2ddd7fc0be11efc55fc3634b21dba8717151",
+      "bytes": 600,
+      "uncompressed_bytes": 1828,
+      "format": "gzip UTF-8 text; machine roots replaced by documented placeholders"
+    }
+  },
+  "limitations": [
+    "Hosted CI matrix not executed locally",
+    "Fresh snapshot lacks pinned Lean/upstream caches; its sole explicit bootstrap-only skip is recorded",
+    "Python reference tools reject empty axes; Lean all-input program is separate",
+    "No arbitrary short-bit-word or encoded runtime theorem added",
+    "Dependency ranges are not a version lock"
+  ]
+}

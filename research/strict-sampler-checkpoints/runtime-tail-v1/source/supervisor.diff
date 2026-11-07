@@ -1,0 +1,40 @@
+--- research/strict-sampler-checkpoints/proc-observer-v2/source/vm_sampler_supervisor.py
++++ runtime-tail-v1/vm_sampler_supervisor.py
+@@ -242,3 +242,5 @@
+-    text = tail.decode("utf-8", errors="replace").replace("\r\n", "\n").replace("\r", "\n")
+-    text = re.sub(r"\x1b\][\s\S]*?(?:\x07|\x1b\\)", "", text)
+-    text = re.sub(r"\x1b\[[0-?]*[ -/]*[@-~]", "", text)
++    def normalize(raw):
++        text = raw.decode("utf-8", errors="replace").replace("\r\n", "\n").replace("\r", "\n")
++        text = re.sub(r"\x1b\][\s\S]*?(?:\x07|\x1b\\|\Z)", "", text)
++        return re.sub(r"\x1b\[[0-?]*[ -/]*[@-~]", "", text)
++    text = normalize(tail)
+@@ -260,2 +262,11 @@
+-    if phases:
+-        phase = phases[-1]
++    remembered = state.get("_retained_phase_events", [])
++    # The caller passes its previous retained tail followed by newly read bytes.
++    # Skip only the recognized events already processed in that retained prefix.
++    new_phases = phases[len(remembered):] if phases[:len(remembered)] == remembered else phases
++    if any(list(PHASE_CAPS).index(later) < list(PHASE_CAPS).index(earlier)
++           for earlier, later in zip(new_phases, new_phases[1:])):
++        raise SupervisorError("Guest phase moved backwards within serial batch")
++    if new_phases:
++        if state.get("guest_phase") and list(PHASE_CAPS).index(new_phases[0]) < list(PHASE_CAPS).index(state["guest_phase"]):
++            raise SupervisorError("Guest phase moved backwards at serial batch boundary")
++        phase = new_phases[-1]
+@@ -279 +290,13 @@
+-    return tail[-TAIL_LIMIT:]
++    if len(tail) <= TAIL_LIMIT:
++        retained = tail
++    else:
++        # Keep physical-line context, and never discard an active OSC opener.
++        start = len(tail) - TAIL_LIMIT + 1
++        for frame in re.finditer(rb"\x1b\][\s\S]*?(?:\x07|\x1b\\|\Z)", tail):
++            if frame.start() < start < frame.end():
++                raise SupervisorError("OSC frame crosses bounded serial-tail boundary")
++        context = b"\n" if tail[start - 1:start] in (b"\n", b"\r") else b"\x00"
++        retained = context + tail[start:]
++    state["_retained_phase_events"] = re.findall(
++        r"(?m)^MATH115_C11_STAGE=(install|preflight|authenticate|repair|proof|collect)\n", normalize(retained))
++    return retained

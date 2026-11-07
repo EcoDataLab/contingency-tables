@@ -1,0 +1,18 @@
+{
+  "acceleration": "whpx,kernel-irqchip=off",
+  "cpu": "max",
+  "fresh_child_virtual_gib": 80,
+  "guest_ram_mib": 8192,
+  "guest_vcpus": 4,
+  "machine": "pc-q35-11.1",
+  "nic": "none",
+  "phase_caps_seconds": {
+    "authenticate": 5400,
+    "collect": 600,
+    "install": 600,
+    "plan": 3600,
+    "preflight": 300
+  },
+  "swap": false,
+  "wall_clock_cap_seconds": 12600
+}

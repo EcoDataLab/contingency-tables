@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "upstream_commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+  "base_head": "0dc1aa752e48d8127fcb058e7311c6d1b5119d6b",
+  "compiler_version": "Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "compiler_sha256": "1b370cfcbf44e80d1b004ab1b1ab9a4c73951f9f7c242140bcff9bc577576554",
+  "modules": [
+    "ResearchPhysicalTraceJoin.GeneralTightSampler"
+  ],
+  "compilation": [
+    {
+      "module": "ResearchPhysicalTraceJoin.GeneralTightSampler",
+      "source": "research/physical-trace-general-tight-sampler/formal/ResearchPhysicalTraceJoin/GeneralTightSampler.lean",
+      "source_sha256": "f7fe68844bf5a7957acbe857c8e99092cfc1d816291fa68492b831ebd4527ac4",
+      "returncode": 0,
+      "seconds": 45.35400287481025,
+      "olean_sha256": "e1bcd1ade5cdbe718b244b74c18eb11f45bd35b85d69ea4a62e953e87654a2e4"
+    }
+  ],
+  "audit_seconds": 338.14608012512326,
+  "audit_sha256": "5ddf6f7fc03bc23589c26ab9eccb1b1a69d896ffd5ccb8ddf199b5d61829d4a2",
+  "audit_driver_sha256": "5ceee9dec1f0115d06740ee01e2f9b4f636b10472c9572dd5e161d51245d257c",
+  "imported_objects_file": "imported-objects.json.gz",
+  "imported_objects_sha256": "ee9488c62970c02caa48d8d537fff21eca03578fea50a3cc8218402f7d653919",
+  "declaration_count": 55,
+  "theorem_count": 36,
+  "headlines": [
+    {
+      "name": "Math115.PhysicalTraceJoin.tightTerminalCorrectedWordLaw_eq",
+      "closure_size": 44048,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (h k : ℕ),\n  Math115.PhysicalTraceJoin.tightTerminalCorrectedWordLaw r c U L hr hc start h k =\n    Math115.PhysicalTraceJoin.terminalCorrectedWordLaw r c U L hr hc start h k",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightTerminalCorrectedRetryWordLaw_eq",
+      "closure_size": 44054,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (h k : ℕ) (fallback : OAI.ContingencyTables.Table r c)\n  (R : ℕ),\n  Math115.PhysicalTraceJoin.tightTerminalCorrectedRetryWordLaw r c U L hr hc start h k fallback R =\n    Math115.PhysicalTraceJoin.terminalCorrectedRetryLaw r c U L hr hc start h k fallback R",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightTerminalCorrectedRetryWord_same_law",
+      "closure_size": 44060,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L : ℕ)\n  (hr : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn r)).length)\n  (hc : 0 < (OAI.ContingencyTables.ProfilePrograms.largeIndices (U, List.ofFn c)).length)\n  (start : Math115.PhysicalDefectTrace.DefectVertices r c U L) (h k : ℕ) (fallback : OAI.ContingencyTables.Table r c)\n  (R : ℕ),\n  Math115.PhysicalTraceJoin.tightTerminalCorrectedRetryWordLaw r c U L hr hc start h k fallback R =\n    Math115.PhysicalTraceJoin.terminalCorrectedRetryWordLaw r c U L hr hc start h k fallback R",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightTerminalCorrectedRetryWordWidth_le_old",
+      "closure_size": 4886,
+      "statement": "∀ {m n : ℕ} (r : Fin m → ℕ) (c : Fin n → ℕ) (U L h k R : ℕ),\n  Math115.PhysicalTraceJoin.tightTerminalCorrectedRetryWordWidth r c U L h k R ≤\n    Math115.PhysicalTraceJoin.terminalCorrectedRetryWordWidth r c U L h k R",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightPositiveReferenceWordWidth_le_old",
+      "closure_size": 4901,
+      "statement": "∀ (xs ys : List ℕ) (t : ℕ),\n  Math115.PhysicalTraceJoin.tightPositiveReferenceWordWidth xs ys t ≤\n    Math115.PhysicalTraceJoin.positiveReferenceWordWidth xs ys t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightPositiveReferenceWord_law",
+      "closure_size": 44326,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j)\n  (hb : Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference)\n  (t : ℕ),\n  Math115.PhysicalTraceJoin.tightPositiveReferenceWordLaw xs ys htotal hb t =\n    Math115.PhysicalTraceJoin.positiveReferenceWordLaw xs ys htotal hb t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightPositiveReferenceWord_accuracy",
+      "closure_size": 45730,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j)\n  (hb : Math115.PhysicalTraceJoin.positiveTraceBranch xs ys = Math115.PhysicalTraceJoin.TraceInputBranch.reference)\n  (t : ℕ),\n  OAI.ContingencyTables.FirstSuccess.variation\n      (Math115.PhysicalTraceJoin.tightPositiveReferenceWordLaw xs ys htotal hb t)\n      OAI.ContingencyTables.FirstSuccess.uniformLaw ≤\n    Math115.CompletionRetryBudget.dyadic t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.rawTightPositiveReferenceWordWidth_eq",
+      "closure_size": 5752,
+      "statement": "∀ (xs ys : List ℕ) (t : ℕ),\n  Math115.PhysicalTraceJoin.rawTightPositiveReferenceWordWidth xs ys t =\n    Math115.PhysicalTraceJoin.tightPositiveReferenceWordWidth xs ys t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightHybridSampler_width_le_old",
+      "closure_size": 44296,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j) (t : ℕ),\n  (Math115.PhysicalTraceJoin.tightHybridSampler xs ys htotal t).fst ≤\n    (Math115.PhysicalTraceJoin.hybridSampler xs ys htotal t).fst",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightHybridWordLaw_eq",
+      "closure_size": 44348,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j) (t : ℕ),\n  Math115.PhysicalTraceJoin.tightHybridWordLaw xs ys htotal t = Math115.PhysicalTraceJoin.hybridWordLaw xs ys htotal t",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "Math115.PhysicalTraceJoin.tightHybridWord_accuracy",
+      "closure_size": 45763,
+      "statement": "∀ (xs ys : List ℕ)\n  (htotal : ∑ i, Math115.PhysicalTraceJoin.listMargin xs i = ∑ j, Math115.PhysicalTraceJoin.listMargin ys j) (t : ℕ),\n  ↑(OAI.ContingencyTables.FirstSuccess.variation (Math115.PhysicalTraceJoin.tightHybridWordLaw xs ys htotal t)\n        OAI.ContingencyTables.FirstSuccess.uniformLaw) ≤\n    ↑(Math115.CompletionRetryBudget.dyadic t)",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Fresh additive research-module compilation and compiled-environment audit with trusted pinned compiler and reused baseline imports; not default-target rebuild or Comparator replay."
+}

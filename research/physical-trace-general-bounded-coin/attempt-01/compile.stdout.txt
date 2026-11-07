@@ -1,0 +1,1 @@
+<packet>/revisions/attempt-01/formal/ResearchPhysicalTraceJoin/GeneralBoundedCoin.lean:6:0: error: object file '<prepared-dependencies>/OAI/Combinatorics/ContingencyTables/Transport/FiniteRationalThreshold.olean' of module OAI.Combinatorics.ContingencyTables.Transport.FiniteRationalThreshold does not exist

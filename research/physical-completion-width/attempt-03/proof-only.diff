@@ -1,0 +1,29 @@
+--- initial.lean
++++ checked.lean
+@@ -61,9 +61,13 @@
+-  unfold coarseRows
+-  rw [(finSuccEquiv (tailCount r U)).sum_comp (listedRows r c U L B hr z)]
+-  unfold listedRows
+-  rw [(largeOptionEquiv r U hr).sum_comp
+-    (fun i : LargeRows r U => residualRows (firstPaperSmall r c U) B r c L z i.val)]
+-  exact sum_subtype_eq_of_zero (fun i => U ≤ r i)
+-    (residualRows (firstPaperSmall r c U) B r c L z)
+-    (physical_residual_row_zero r c U L B z
+-      (physical_paper_capacity _ r c _ L U dimension_le_allowance z))
++  calc
++    _ = ∑ i : Option (Fin (tailCount r U)), listedRows r c U L B hr z i :=
++      (finSuccEquiv (tailCount r U)).sum_comp (listedRows r c U L B hr z)
++    _ = ∑ i : LargeRows r U, residualRows (firstPaperSmall r c U) B r c L z i.val :=
++      (largeOptionEquiv r U hr).sum_comp
++        (fun i : LargeRows r U => residualRows (firstPaperSmall r c U) B r c L z i.val)
++    _ = _ := by
++      convert sum_subtype_eq_of_zero (fun i => U ≤ r i)
++        (residualRows (firstPaperSmall r c U) B r c L z)
++        (physical_residual_row_zero r c U L B z
++          (physical_paper_capacity _ r c _ L U dimension_le_allowance z)) using 1
++      congr 2
++      exact Subsingleton.elim _ _
+@@ -84,0 +89 @@
++include hc in
+@@ -87 +91,0 @@
+-include hc in
